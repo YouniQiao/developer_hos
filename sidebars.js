@@ -38,6 +38,10 @@ const sidebars = {
     'distribute/intro',
   ],
 
+  arktsSidebar: [
+    'arkts/intro',
+  ],
+
   ideSidebar: [
     'ide/intro',
   ],

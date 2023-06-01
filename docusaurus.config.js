@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Developer',
+  title: 'HarmonyOS Developer',
   tagline: 'Welcome',
   favicon: 'img/favicon.ico',
 
@@ -93,6 +93,12 @@ const config = {
             sidebarId: 'distributeSidebar',
             position: 'left',
             label: '分发',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'arktsSidebar',
+            position: 'right',
+            label: 'ArkTS',
           },
           {
             type: 'docSidebar',
