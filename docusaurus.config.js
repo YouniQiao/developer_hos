@@ -5,9 +5,9 @@ const code_themes = {
 
 /** @type {import('@docusaurus/types').Config} */
 const meta = {
-  title: 'HarmonyOS Developer',
-  tagline: '鸿蒙应用开发粉丝站',
-  url: 'https://developer.harmonyos.cool',
+  title: 'Dyte Docs',
+  tagline: 'Real-time audio & video SDKs, ready to launch 🚀',
+  url: 'https://docs.dyte.io',
   baseUrl: '/',
   favicon: '/favicon.ico',
   i18n: {
@@ -15,6 +15,186 @@ const meta = {
     locales: ['en'],
   },
 };
+
+/** @type {import('@docusaurus/plugin-content-docs').Options[]} */
+const docs = [
+  {
+    id: 'cli',
+    path: 'docs/cli',
+    routeBasePath: '/cli',
+  },
+  {
+    id: 'plugin-sdk',
+    path: 'docs/plugin-sdk',
+    routeBasePath: '/plugin-sdk',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+
+  // Web UI Kits
+  {
+    id: 'ui-kit',
+    path: 'docs/ui-kit',
+    routeBasePath: '/ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'react-ui-kit',
+    path: 'docs/react-ui-kit',
+    routeBasePath: '/react-ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'angular-ui-kit',
+    path: 'docs/angular-ui-kit',
+    routeBasePath: '/angular-ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+
+  // Web Core
+  {
+    id: 'web-core',
+    path: 'docs/web-core',
+    routeBasePath: '/web-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  // React Web Core
+  {
+    id: 'react-web-core',
+    path: 'docs/react-web-core',
+    routeBasePath: '/react-web-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+
+  // Mobile Core
+  {
+    id: 'android-core',
+    path: 'docs/android-core',
+    routeBasePath: '/android-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'flutter-core',
+    path: 'docs/flutter-core',
+    routeBasePath: '/flutter-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'ios-core',
+    path: 'docs/ios-core',
+    routeBasePath: '/ios-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'rn-core',
+    path: 'docs/rn-core',
+    routeBasePath: '/rn-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+
+  // Mobile Prebuilt SDKs
+  {
+    id: 'android',
+    path: 'docs/android',
+    routeBasePath: '/android',
+    versions: {
+      current: {
+        label: '0.14.x',
+      },
+    },
+  },
+  {
+    id: 'flutter',
+    path: 'docs/flutter',
+    routeBasePath: '/flutter',
+    versions: {
+      current: {
+        label: '0.7.x',
+      },
+    },
+  },
+  {
+    id: 'ios',
+    path: 'docs/ios',
+    routeBasePath: '/ios',
+    versions: {
+      current: {
+        label: '1.33.x',
+      },
+    },
+  },
+  {
+    id: 'react-native',
+    path: 'docs/react-native',
+    routeBasePath: '/react-native',
+    versions: {
+      current: {
+        label: '0.25.x',
+      },
+    },
+  },
+
+  // Web SDKs - Old
+  {
+    id: 'react',
+    path: 'docs/react',
+    routeBasePath: '/react',
+    versions: {
+      current: {
+        label: '0.37.0',
+      },
+    },
+  },
+  {
+    id: 'javascript',
+    path: 'docs/javascript',
+    routeBasePath: '/javascript',
+    versions: {
+      current: {
+        label: '0.37.0',
+      },
+    },
+  },
+];
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
@@ -50,8 +230,9 @@ const isDev = process.env.NODE_ENV === 'development';
 
 const { webpackPlugin } = require('./plugins/webpack-plugin.cjs');
 const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
+const docs_plugins = docs.map((doc) => create_doc_plugin(doc));
 
-const plugins = [tailwindPlugin, webpackPlugin];
+const plugins = [tailwindPlugin, ...docs_plugins, webpackPlugin];
 
 const fs = require('fs');
 const sdksHTML = fs.readFileSync('./src/snippets/sdks.html', 'utf-8');
@@ -66,23 +247,29 @@ const config = {
   themes: ['@docusaurus/theme-live-codeblock'],
   clientModules: [require.resolve('./src/client/define-ui-kit.js')],
 
-  scripts: [
-    {src: 'https://hm.baidu.com/hm.js?986441c2114752f739a5460119d91e01',  async: true}
-  ],
-
   presets: [
     [
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'docs/guides',
+          id: 'guides',
+          routeBasePath: '/guides',
           ...defaultSettings,
         },
         blog: false,
         theme: {
           customCss: [
             require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/api-reference.css'),
           ],
+        },
+        sitemap: {
+          ignorePatterns: ['/tags/**'],
+        },
+        googleTagManager: {
+          containerId: 'GTM-5FDFFSS',
         },
       }),
     ],
@@ -111,7 +298,7 @@ const config = {
         },
         items: [
           {
-            label: '核心技术理念',
+            label: 'SDKs',
             type: 'dropdown',
             className: 'dyte-dropdown',
             items: [
@@ -123,41 +310,58 @@ const config = {
             ],
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'designSidebar',
+            label: 'Guides',
+            to: 'guides/quickstart',
             position: 'left',
-            label: '设计',
+            className: 'new-badge',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'guideSidebar',
-            position: 'left',
-            label: '开发',
+            label: 'API Reference',
+            to: '/api/',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'apiSidebar',
-            position: 'left',
-            label: 'API参考',
+            label: 'Resources',
+            type: 'dropdown',
+            className: 'dyte-dropdown resources-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: resourcesHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'arktsSidebar',
-            position: 'right',
-            label: 'ArkTS',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'ideSidebar',
-            position: 'right',
-            label: 'DevEco Studio',
+            label: 'Support',
+            to: 'https://dyte.io/contact',
           },
 
-
+          {
+            type: 'search',
+            position: 'right',
+          },
+          {
+            label: 'Book a demo',
+            href: 'https://dyte.io/schedule-demo',
+            position: 'right',
+            className: 'navbar-book-demo',
+          },
+          {
+            label: 'Sign Up',
+            href: 'https://dev.dyte.io/register',
+            position: 'right',
+            className: 'dev-portal-signup dev-portal-link',
+          },
         ],
       },
       footer: {
-        
+        logo: {
+          href: '/',
+          src: '/logo/light.svg',
+          srcDark: '/logo/dark.svg',
+          alt: 'Dyte Docs',
+          height: '36px',
+        },
         links: [
           {
             title: 'Product',
@@ -215,7 +419,7 @@ const config = {
             ],
           },
         ],
-        copyright: 'Copyright © HarmonyOS Developer since 2023. Theme From Dyte.',
+        copyright: 'Copyright © Dyte since 2020. All rights reserved.',
       },
       prism: {
         theme: code_themes.light,
