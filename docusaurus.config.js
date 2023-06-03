@@ -11,8 +11,8 @@ const meta = {
   baseUrl: '/',
   favicon: '/favicon.ico',
   i18n: {
-    defaultLocale: 'zh',
-    locales: ['zh'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 };
 
