@@ -1,0 +1,144 @@
+---
+title: Events
+description: Local user events guide.
+sidebar_position: 2
+tags: [flutter-core, local-user, self]
+---
+
+# Local User - Events
+
+You can subscribe to various local user events. For subscribing:
+
+- Implement `DyteSelfEventsListener` to a class say `LocalUserListener`, and
+  listen to event from `DyteSelfEventsListener` by overriding them. This class
+  can be user to manage your state in the application.
+
+```dart
+class LocalUserListener extends DyteSelfEventsListener {
+
+  ...
+
+  @override
+  void onAudioDevicesUpdated() {
+    /// code to handle onAudioDevicesUpdated() event
+  }
+
+  ...
+}
+```
+
+- Now to subscribe, pass the instance of `LocalUserListener` class created above
+  to `addSelfEventsListener()` method of `dyteClient` instance as follows:
+
+```dart {2}
+dyteClient.addSelfEventsListener(LocalUserListener());
+```
+
+### Video update
+
+Triggered when the user starts / stops the video using `enableVideo` or
+`disableVideo`
+
+```dart
+@override
+void onVideoUpdate(bool videoEnabled) {
+  if(isVideoEnabled){
+    // Video is enabled, other users can see the video.
+  } else {
+    // Video is disabled, others users can't see the video.
+  }
+
+  //  or alternatively you can pass the bool through state as demonstrated in example app.
+}
+```
+
+### Audio update
+
+Triggered when the user starts / stops the audio using `enableAudio` or
+`disableAudio`
+
+```dart
+@override
+void onAudioUpdate(bool audioEnabled) {
+  if (audioEnabled) {
+      // audio is enabled, and other participants in room can hear local user
+    } else {
+      // audio is disabled, and other participants in room can not hear local user.
+    }
+
+  //  or alternatively you can pass the bool through state as demonstrated in example app.
+}
+```
+
+### Room disconnected update
+
+Triggered when the user is disconnected due to media or network errors
+
+```dart
+
+@override
+void onMeetingRoomDisconnected() {
+  // Display a notification to the user indicating that they have been disconnected from the meeting.
+
+}
+```
+
+### Proximity changed
+
+Triggered by any change in proximity, such as when the device is brought near or moved away from an earpiece, which triggers the display to turn on or off.
+
+```dart
+
+@override
+void onProximityChanged(bool isNear) {
+  // isNear
+  // if true, display should be turned off, as user might be speaking through ear piece
+  // if false, display should be tunred on, as user might be looking at display and listening through speaker/earphones.
+}
+
+```
+
+### Waitlist status
+
+When the waiting room feature is enabled for a meeting, you can use the `onWaitListStatusUpdate()` callback function to receive updates on waiting room status changes.
+
+```dart
+@override
+void onWaitListStatusUpdate(WaitListStatus waitListStatus) {
+  // waitListStatus
+  // if true, user is on the waitlist
+  // if false, user is not on waitlist
+}
+```
+
+## Webinar request
+
+When the local user receives a request to join the webinar, the `onWebinarPresentRequestReceived()` callback function is triggered. Similarly, when the local user stops presenting during the webinar, the `onStoppedPresenting()` callback function is triggered.
+
+```dart
+@override
+void onWebinarPresentRequestReceived() {
+  // Display an alert to the user, allowing them to accept or reject the request.
+
+
+}
+
+@override
+void onStoppedPresenting() {
+  // Display an alert to the user indicating that they are no longer presenting.
+}
+```
+
+## Local user removed
+
+When the local user is removed from the meeting, the `onRemovedFromMeeting()` callback is triggered.
+
+```dart
+
+@override
+void onRemovedFromMeeting() {
+  // Display an alert to the user indicating that they are no longer in the meeting.
+
+
+}
+```
