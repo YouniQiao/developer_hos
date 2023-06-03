@@ -85,19 +85,15 @@ export default function SDKsSection() {
         <link rel="prefetch" href="/static/landing-page/plugin-sdk-dark.png" />
       </Head>
       <div className="mx-auto max-w-7xl">
-        <div className="dyte-badge">SDKs</div>
+        <div className="dyte-badge">核心技术理念</div>
 
         <div className="sticky top-14 z-20 -mt-4 flex flex-col items-center gap-6 bg-secondary-1000 py-6 lg:flex-row lg:justify-between lg:py-0">
           <h2 className="my-0 text-center font-jakarta lg:text-3xl">
-            We support your tech stack!
+            鸿蒙生态应用的核心技术理念
           </h2>
 
           <div className="mx-auto flex h-20 w-full flex-1 items-center justify-center self-start lg:w-auto lg:justify-end">
-            <div className="inline-flex items-center rounded-lg bg-zinc-100 p-2 text-sm dark:bg-zinc-800 lg:text-base">
-              <Pill section="web" />
-              <Pill section="mobile" />
-              <Pill section="plugin" />
-            </div>
+           
           </div>
         </div>
 
@@ -107,7 +103,7 @@ export default function SDKsSection() {
           id="web"
         >
           <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Web</h3>
+            <h3 className="text-4xl font-semibold">一次开发，多端部署</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
               Interested to build using React, Angular or Web Components this
               section covers everything you need to know for creating live video
@@ -167,7 +163,7 @@ export default function SDKsSection() {
           id="mobile"
         >
           <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Mobile</h3>
+            <h3 className="text-4xl font-semibold">可分可合，自由流转</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
               Plan to build a video/voice solution for Android, React Native,
               iOS, or Flutter, check the docs here to understand how Dyte can
@@ -248,8 +244,8 @@ export default function SDKsSection() {
           data-section="plugin"
           id="plugin"
         >
-          <div className="flex flex-1 flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Plugin SDK</h3>
+          <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
+            <h3 className="text-4xl font-semibold">统一生态，原始智能</h3>
             <p className="text-sm leading-relaxed text-text-400 lg:max-w-sm">
               Add the most immersive, collaborative, and more human interaction
               right in your video and voice calls using Dyte&apos;s
@@ -328,12 +324,7 @@ export default function SDKsSection() {
           </div>
         </div> */}
       </div>
-      <div className="text-center text-text-400">
-        <p>
-          Don&apos;t see your tech stack here?{' '}
-          <Link href="https://dyte.io/contact">Contact Us</Link>
-        </p>
-      </div>
+      
     </section>
   );
 }
