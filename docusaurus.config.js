@@ -4,22 +4,28 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
+const plugins = [tailwindPlugin];
+const fs = require('fs');
+const sdksHTML = fs.readFileSync('./src/pages/sdks.html', 'utf-8');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'HarmonyOS Developer',
   tagline: 'Welcome',
   favicon: 'img/favicon.ico',
+  plugins,
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://developer.harmonyos.cool',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'YouniQiao', // Usually your GitHub org/user name.
+  projectName: 'developer_hos', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -46,14 +52,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/YouniQiao/developer_hos/tree/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/YouniQiao/developer_hos/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -67,18 +73,27 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',
+      },
       navbar: {
         title: 'HarmonyOS Developer',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Site Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'overviewSidebar',
-            position: 'left',
-            label: '概览',
+            label: '核心技术理念',
+            type: 'dropdown',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: sdksHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
           },
           {
             type: 'docSidebar',
@@ -94,9 +109,9 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'distributeSidebar',
+            sidebarId: 'apiSidebar',
             position: 'left',
-            label: '分发',
+            label: 'API参考',
           },
           {
             type: 'docSidebar',
@@ -119,25 +134,29 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: '概览',
-                to: '/docs/overview/intro',
+                label: '设计',
+                to: '/docs/design/intro',
+              },
+              {
+                label: '开放',
+                to: '/docs/guides/intro',
+              },
+              {
+                label: 'API参考',
+                to: '/docs/api/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Tools',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'ArkTS',
+                to: '/docs/arkts/intro',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'DevEco Studio',
+                to: '/docs/ide/intro',
               },
             ],
           },
@@ -145,13 +164,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'HarmonyOS官网',
+                href: 'https://www.harmonyos.com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HarmonyOS Developer. Built with Docusaurus. Theme from Dyte.`,
       },
       prism: {
         theme: lightCodeTheme,
