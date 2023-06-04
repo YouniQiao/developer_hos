@@ -176,10 +176,10 @@ export default function SDKsSection() {
             </p>
             <ul className="flex list-none flex-col gap-2 pl-0">
               <li>
-                <SDKLink href="android" Icon={KotlinIcon} label="服务按需组合为应用" />
+                <SDKLink href="/" Icon={KotlinIcon} label="服务按需组合为应用" />
               </li>
               <li>
-                <SDKLink href="ios" Icon={SwiftIcon} label="服务和应用统一上架" />
+                <SDKLink href="/" Icon={SwiftIcon} label="服务和应用统一上架" />
               </li>
             </ul>
             {/* <div className="flex flex-1 flex-col justify-end">
@@ -199,7 +199,7 @@ export default function SDKsSection() {
             <ul className="flex list-none flex-col gap-2 pl-0">
               <li>
                 <SDKLink
-                  href="android-core"
+                  href="/"
                   Icon={KotlinIcon}
                   label="跨端迁移"
                 />
@@ -208,7 +208,7 @@ export default function SDKsSection() {
                 <SDKLink
                   Icon={FlutterIcon}
                   label="多端协同"
-                  href="flutter-core"
+                  href="/"
                 />
               </li>
             </ul>
