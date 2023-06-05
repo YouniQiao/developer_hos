@@ -14,6 +14,21 @@ import {
 } from '../../icons';
 import Head from '@docusaurus/Head';
 import { useState } from 'react';
+import img001 from '/icons/001.png';
+import img002 from '/icons/002.png';
+import img003 from '/icons/003.png';
+import img004 from '/icons/004.png';
+import img005 from '/icons/005.png';
+import img006 from '/icons/006.png';
+import img007 from '/icons/007.png';
+import img008 from '/icons/008.png';
+import img009 from '/icons/009.png';
+import img010 from '/icons/010.png';
+import img011 from '/icons/011.png';
+import img012 from '/icons/012.png';
+import img013 from '/icons/013.png';
+import img014 from '/icons/014.png';
+import img015 from '/icons/015.png';
 
 function SDKLink({ href, Icon, label, disabled = false }) {
   return (
@@ -24,7 +39,7 @@ function SDKLink({ href, Icon, label, disabled = false }) {
       )}
       href={!disabled ? href : undefined}
     >
-      <Icon className="h-8 w-8" />
+      <img src={Icon}  height="34" width="34"/>
       {label}
     </Link>
   );
@@ -117,19 +132,19 @@ export default function SDKsSection() {
             <div>
               <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
                 <li>
-                  <SDKLink href="/" Icon={ReactIcon} label="多端UI适配" />
+                  <SDKLink href="/" Icon={img001} label="多端UI适配" />
                 </li>
                 <li>
                   <SDKLink
                     href="/"
-                    Icon={AngularIcon}
+                    Icon={img002}
                     label="事件交互归一"
                   />
                 </li>
                 <li>
                   <SDKLink
                     href="/"
-                    Icon={HTMLIcon}
+                    Icon={img003}
                     label="设备能力抽象"
                   />
                 </li>
@@ -143,13 +158,13 @@ export default function SDKsSection() {
             </p>
             <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
               <li>
-                <SDKLink href="/" Icon={JSIcon} label="多端双向预览" />
+                <SDKLink href="/" Icon={img004} label="多端双向预览" />
               </li>
               <li>
-                <SDKLink href="/" Icon={ReactIcon} label="分布式调试调优" />
+                <SDKLink href="/" Icon={img005} label="分布式调试调优" />
               </li>
               <li>
-                <SDKLink href="/" Icon={ReactIcon} label="多设备多入口分发" />
+                <SDKLink href="/" Icon={img006} label="多设备多入口分发" />
               </li>
             </ul>
           </div>
@@ -176,10 +191,10 @@ export default function SDKsSection() {
             </p>
             <ul className="flex list-none flex-col gap-2 pl-0">
               <li>
-                <SDKLink href="/" Icon={KotlinIcon} label="服务按需组合为应用" />
+                <SDKLink href="/" Icon={img007} label="服务按需组合为应用" />
               </li>
               <li>
-                <SDKLink href="/" Icon={SwiftIcon} label="服务和应用统一上架" />
+                <SDKLink href="/" Icon={img008} label="服务和应用统一上架" />
               </li>
             </ul>
             {/* <div className="flex flex-1 flex-col justify-end">
@@ -200,13 +215,13 @@ export default function SDKsSection() {
               <li>
                 <SDKLink
                   href="/"
-                  Icon={KotlinIcon}
+                  Icon={img009}
                   label="跨端迁移"
                 />
               </li>
               <li>
                 <SDKLink
-                  Icon={FlutterIcon}
+                  Icon={img010}
                   label="多端协同"
                   href="/"
                 />
@@ -233,10 +248,10 @@ export default function SDKsSection() {
             </p>
             <ul className="flex list-none flex-col gap-2 pl-0">
               <li>
-                <SDKLink href="/" Icon={KotlinIcon} label="多应用生态共享" />
+                <SDKLink href="/" Icon={img011} label="多应用生态共享" />
               </li>
               <li>
-                <SDKLink href="/" Icon={SwiftIcon} label="统一接入标准" />
+                <SDKLink href="/" Icon={img012} label="统一接入标准" />
               </li>
             </ul>
             {/* <div className="flex flex-1 flex-col justify-end">
@@ -257,20 +272,20 @@ export default function SDKsSection() {
               <li>
                 <SDKLink
                   href="/"
-                  Icon={KotlinIcon}
+                  Icon={img013}
                   label="服务能力开放"
                 />
               </li>
               <li>
                 <SDKLink
-                  Icon={FlutterIcon}
+                  Icon={img014}
                   label="应用能力开放"
                   href="/"
                 />
               </li>
               <li>
                 <SDKLink
-                  Icon={FlutterIcon}
+                  Icon={img015}
                   label="芯片能力开放"
                   href="/"
                 />

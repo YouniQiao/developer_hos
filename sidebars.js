@@ -34,8 +34,8 @@ const sidebars = {
       items: ['guides/tutorial-basics/create-a-document'],
     },
   ],
-  apiSidebar: [
-    'api/intro',
+  distributeSidebar: [
+    'distribute/intro',
   ],
 
   arktsSidebar: [

@@ -109,9 +109,9 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'apiSidebar',
+            sidebarId: 'distributeSidebar',
             position: 'left',
-            label: 'API参考',
+            label: '分发',
           },
           {
             type: 'docSidebar',
@@ -138,12 +138,12 @@ const config = {
                 to: '/docs/design/intro',
               },
               {
-                label: '开放',
+                label: '开发',
                 to: '/docs/guides/intro',
               },
               {
-                label: 'API参考',
-                to: '/docs/api/intro',
+                label: '分发',
+                to: '/docs/distribute/intro',
               },
             ],
           },
