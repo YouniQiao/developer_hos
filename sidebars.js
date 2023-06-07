@@ -27,11 +27,25 @@ const sidebars = {
   ],
   
   guideSidebar: [
-    'guides/intro',
     {
       type: 'category',
-      label: 'Tutorial',
-      items: ['guides/tutorial-basics/create-a-document'],
+      label: '重要说明',
+      items: [
+        'guides/notice/about-harmonyos',
+        'guides/notice/about-the-site',
+        'guides/notice/about-version-relationship',
+      ],
+    },
+    {
+      type: 'category',
+      label: '从这里开始',
+      items: [
+        'guides/startup/preparation',
+        'guides/startup/create-project-with-template',
+        'guides/startup/modify-ui-element',
+        'guides/startup/modify-code-logic',
+        'guides/startup/prepare-for-yiduo',
+      ],
     },
   ],
   distributeSidebar: [

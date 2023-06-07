@@ -21,7 +21,7 @@ export default function HeroSection() {
           </p>
           <div className="mt-8 flex flex-col gap-4 lg:flex-row">
             <Link
-              href="/docs/guides/intro"
+              href="/docs/guides/startup/preparation"
               className="rounded-sm bg-primary px-12 py-2.5 text-center font-semibold text-white hover:text-white"
             >
               快速开始
