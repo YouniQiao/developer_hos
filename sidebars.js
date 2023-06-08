@@ -59,7 +59,10 @@ const sidebars = {
   ideSidebar: [
     'ide/intro',
   ],
-   
+  
+  serviceSidebar: [
+    'service/intro',
+  ],
    
 };
 

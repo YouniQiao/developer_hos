@@ -125,6 +125,12 @@ const config = {
             position: 'right',
             label: 'DevEco Studio',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'serviceSidebar',
+            position: 'right',
+            label: 'DevEco Service',
+          },
         ],
       },
       footer: {
