@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HeroSection from '../components/HomepageFeatures/HeroSection';
 import SDKsSection from '../components/HomepageFeatures/SDKsSection';
+import ResourcesSection from '../components/HomepageFeatures/ResourcesSection';
 
 import styles from './index.module.css';
 
@@ -36,6 +37,13 @@ export default function Home() {
       <main>
         <HeroSection />
         <SDKsSection />
+
+        <div className="z-0 bg-secondary-800 dark:bg-secondary-900">
+        <ResourcesSection />
+        </div>
+
+
+
       </main>
     </Layout>
   );
