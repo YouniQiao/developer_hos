@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HeroSection from '../components/HomepageFeatures/HeroSection';
 import SDKsSection from '../components/HomepageFeatures/SDKsSection';
 import ResourcesSection from '../components/HomepageFeatures/ResourcesSection';
+import HelpSection from '../components/HomepageFeatures/HelpSection';
 
 import styles from './index.module.css';
 
@@ -42,7 +43,7 @@ export default function Home() {
         <ResourcesSection />
         </div>
 
-
+        <HelpSection className="-mb-48" />
 
       </main>
     </Layout>

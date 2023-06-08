@@ -164,6 +164,10 @@ const config = {
                 label: 'DevEco Studio',
                 to: '/docs/ide/intro',
               },
+              {
+                label: 'DevEco Service',
+                to: '/docs/service/intro',
+              },
             ],
           },
           {
