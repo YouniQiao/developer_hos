@@ -7,7 +7,7 @@ export default function ResourcesSection() {
     <section className="my-20 px-6">
       <div className="mx-auto max-w-5xl">
         <span className="dyte-badge">文档</span>
-        <h2 className="lg:text-3xl">官方的文档看着总是差那么点意思?</h2>
+        <h2 className="lg:text-3xl">现有的文档看着总是差那么点意思?</h2>
         <p className="text-text-400">
           我们参考官网已有的内容，加入一点我们的理解，重构了一份鸿蒙应用开发的文档。不妨来看看。 <br />
         </p>

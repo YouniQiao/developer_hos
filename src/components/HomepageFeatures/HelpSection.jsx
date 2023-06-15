@@ -15,7 +15,7 @@ export default function HelpSection({ className = '' }) {
         工欲善其事,必先利其器
         </h2>
         <p className="text-text-400" align="center">
-          开发鸿蒙应用的语言和IDE工具。 <br />
+          开发鸿蒙应用的语言和IDE工具使用指导。 <br />
         </p>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
