@@ -102,6 +102,24 @@ const config = {
             label: '设计',
           },
           {
+            type: 'dropdown',
+            position: 'left',
+            label: '开发',
+            items: [
+            {
+              type: 'docSidebar',
+              sidebarId: 'guideSidebar',
+              label: '应用开发',
+            },
+            {
+              type: 'docSidebar',
+              sidebarId: 'distributeSidebar',
+              label: '元服务开发',
+            },
+            // ... more items
+          ],
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'guideSidebar',
             position: 'left',
