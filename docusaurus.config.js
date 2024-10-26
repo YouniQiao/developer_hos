@@ -96,10 +96,9 @@ const config = {
             ],
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'designSidebar',
-            position: 'left',
+            href: 'https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445',
             label: '设计',
+            position: 'left',
           },
           {
             type: 'dropdown',
@@ -120,16 +119,9 @@ const config = {
           ],
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'guideSidebar',
-            position: 'left',
-            label: '开发',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'distributeSidebar',
-            position: 'left',
+            href: 'https://developer.huawei.com/consumer/cn/doc/app/agc-help-started-0000001146511331',
             label: '分发',
+            position: 'left',
           },
           {
             type: 'docSidebar',
