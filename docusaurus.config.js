@@ -130,17 +130,16 @@ const config = {
             label: 'ArkTS',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'ideSidebar',
-            position: 'right',
+            href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-tools-overview-V5',
             label: 'DevEco Studio',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'serviceSidebar',
             position: 'right',
-            label: 'DevEco Service',
           },
+          //{
+          //  type: 'docSidebar',
+          //  sidebarId: 'serviceSidebar',
+          //  position: 'right',
+          //  label: 'DevEco Service',
+          // },
         ],
       },
       footer: {
