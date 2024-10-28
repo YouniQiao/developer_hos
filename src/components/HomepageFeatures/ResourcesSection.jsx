@@ -6,10 +6,10 @@ export default function ResourcesSection() {
   return (
     <section className="my-20 px-6">
       <div className="mx-auto max-w-5xl">
-        <span className="dyte-badge">文档</span>
-        <h2 className="lg:text-3xl">现有的文档看着总是差那么点意思?</h2>
+        <span className="dyte-badge">开发者文档</span>
+        <h2 className="lg:text-3xl">现有的文档太多太复杂，不知道怎么看?</h2>
         <p className="text-text-400">
-          我们参考官网已有的内容，加入一点我们的理解，重构了一份鸿蒙应用开发的文档。不妨来看看。 <br />
+          我们做了个索引，并重写了其中一部分，并欢迎与我们一起改进优化。 <br />
         </p>
 
         <div className="no-underline-links mt-10 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">

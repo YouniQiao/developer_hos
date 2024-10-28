@@ -39,20 +39,20 @@ export default function HelpSection({ className = '' }) {
             DevEco Studio 是基于IntelliJ IDEA Community开源版本打造，为开发HarmonyOS应用和服务提供一站式的开发平台。
             </p>
             <Link
-              href="/docs/ide/intro"
+              href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-tools-overview-V5"
               className="text-primary dark:text-primary-100"
             >
               了解 DevEco Studio &rarr;
             </Link>
           </div>
-
+          
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
             <img src="/icons/service.png" alt="service" width="48" height="48" />
-            <h3 className="my-3">DevEco Service</h3>
+            <h3 className="my-3">DevEco Service（暂停）</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
             DevEco Service 是 HarmonyOS 开发者云端服务中心，汇聚了丰富的资源和服务，共建共享开发资源，并提供7×24小时远程实验室环境和多维度应用、设备测试服务。
             </p>
-            <Link href="/docs/service/intro" className="text-primary dark:text-primary-100">
+            <Link href="https://devecostudio.huawei.com/cn/" className="text-primary dark:text-primary-100">
               了解 DevEco Service &rarr;
             </Link>
           </div>

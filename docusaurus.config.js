@@ -112,10 +112,9 @@ const config = {
             },
             {
               type: 'docSidebar',
-              sidebarId: 'distributeSidebar',
+              sidebarId: 'atomicSidebar',
               label: '元服务开发',
             },
-            // ... more items
           ],
           },
           {
@@ -134,36 +133,34 @@ const config = {
             label: 'DevEco Studio',
             position: 'right',
           },
-          //{
-          //  type: 'docSidebar',
-          //  sidebarId: 'serviceSidebar',
-          //  position: 'right',
-          //  label: 'DevEco Service',
-          // },
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Main Docs',
             items: [
               {
                 label: '设计',
-                to: '/docs/design/intro',
+                href: 'https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445',
               },
               {
-                label: '开发',
-                to: '/docs/guides/intro',
+                label: '应用开发',
+                to: '/docs/guides/notice/about-harmonyos',
+              },
+              {
+                label: '元服务开发',
+                to: '/docs/atomic/intro',
               },
               {
                 label: '分发',
-                to: '/docs/distribute/intro',
+                href: 'https://developer.huawei.com/consumer/cn/doc/app/agc-help-started-0000001146511331',
               },
             ],
           },
           {
-            title: 'Tools',
+            title: 'Tools Docs',
             items: [
               {
                 label: 'ArkTS',
@@ -171,11 +168,7 @@ const config = {
               },
               {
                 label: 'DevEco Studio',
-                to: '/docs/ide/intro',
-              },
-              {
-                label: 'DevEco Service',
-                to: '/docs/service/intro',
+                href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-tools-overview-V5',
               },
             ],
           },
@@ -183,8 +176,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'HarmonyOS官网',
-                href: 'https://www.harmonyos.com',
+                label: 'HarmonyOS开发者官网',
+                href: 'https://developer.huawei.com/consumer/cn/',
               },
             ],
           },

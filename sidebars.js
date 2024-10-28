@@ -18,14 +18,6 @@ const sidebars = {
 
   // But you can create a sidebar manually
 
-  overviewSidebar: [
-    'overview/intro',
-  ],
-
-  designSidebar: [
-    'design/intro',
-  ],
-  
   guideSidebar: [
     {
       type: 'category',
@@ -48,20 +40,12 @@ const sidebars = {
       ],
     },
   ],
-  distributeSidebar: [
-    'distribute/intro',
+  atomicSidebar: [
+    'atomic/intro',
   ],
 
   arktsSidebar: [
     'arkts/intro',
-  ],
-
-  ideSidebar: [
-    'ide/intro',
-  ],
-  
-  serviceSidebar: [
-    'service/intro',
   ],
    
 };
