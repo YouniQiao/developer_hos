@@ -29,6 +29,10 @@ const sidebars = {
       ],
     },
     {
+      type: 'html',
+      value: '<hr>', 
+    },
+    {
       type: 'category',
       label: '从这里开始',
       items: [
@@ -46,6 +50,170 @@ const sidebars = {
 
   arktsSidebar: [
     'arkts/intro',
+    {
+      type: 'category',
+      label: '语法',
+      link: {
+        type: 'doc',
+        id: 'arkts/syntax/index',
+      },
+      items: [
+        'arkts/syntax/basics',
+        'arkts/syntax/function',
+        'arkts/syntax/class',
+        'arkts/syntax/interface',
+        'arkts/syntax/generic-type-and-function',
+        'arkts/syntax/null-safety',
+        'arkts/syntax/module',
+        'arkts/syntax/keyword',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ArkUI支持',
+      link: {
+        type: 'doc',
+        id: 'arkts/arkui/index',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'UI语法',
+          link: {
+            type: 'doc',
+            id: 'arkts/arkui/ui-syntax/index',
+          },
+          items: [
+            'arkts/arkui/ui-syntax/test',
+          ],
+        },
+        {
+          type: 'category',
+          label: '状态管理V1',
+          link: {
+            type: 'doc',
+            id: 'arkts/arkui/state-management/index',
+          },
+          items: [
+            'arkts/arkui/state-management/test',
+          ],
+        },
+        {
+          type: 'category',
+          label: '状态管理V2',
+          link: {
+            type: 'doc',
+            id: 'arkts/arkui/state-management-v2/index',
+          },
+          items: [
+            'arkts/arkui/state-management-v2/test',
+          ],
+        },
+        {
+          type: 'category',
+          label: '渲染控制',
+          link: {
+            type: 'doc',
+            id: 'arkts/arkui/rendering-control/index',
+          },
+          items: [
+            'arkts/arkui/rendering-control/if-else',
+            'arkts/arkui/rendering-control/foreach',
+            'arkts/arkui/rendering-control/lazy-foreach',
+            'arkts/arkui/rendering-control/content-slot',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: '类库',
+      link: {
+        type: 'doc',
+        id: 'arkts/library/index',
+      },
+      items: [
+        'arkts/library/test',
+      ],
+    },
+    {
+      type: 'category',
+      label: '并发',
+      link: {
+        type: 'doc',
+        id: 'arkts/concurrency/index',
+      },
+      items: [
+        'arkts/concurrency/test',
+      ],
+    },
+    {
+      type: 'category',
+      label: '模块化',
+      link: {
+        type: 'doc',
+        id: 'arkts/module/index',
+      },
+      items: [
+        'arkts/module/test',
+      ],
+    },
+    {
+      type: 'category',
+      label: '工具链',
+      link: {
+        type: 'doc',
+        id: 'arkts/toolchain/index',
+      },
+      items: [
+        'arkts/toolchain/test',
+      ],
+    },
+    {
+      type: 'category',
+      label: '跨语言交互',
+      link: {
+        type: 'doc',
+        id: 'arkts/cross-language/index',
+      },
+      items: [
+        'arkts/cross-language/test',
+      ],
+    },
+    {
+      type: 'category',
+      label: '编程规范',
+      link: {
+        type: 'doc',
+        id: 'arkts/specification/index',
+      },
+      items: [
+        'arkts/specification/test',
+      ],
+    },
+    {
+      type: 'category',
+      label: '从TypeScript迁移',
+      link: {
+        type: 'doc',
+        id: 'arkts/typescript/index',
+      },
+      items: [
+        'arkts/typescript/test',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'API Reference',
+      link: {
+        type: 'doc',
+        id: 'arkts/api/index',
+      },
+      items: [
+        'arkts/api/api-list',
+        'arkts/api/errorcode',
+      ],
+    },
   ],
    
 };
