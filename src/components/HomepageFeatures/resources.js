@@ -9,7 +9,7 @@ const RESOURCES = [
     duration: '3 min',
   },
   {
-    url: '/docs/guides/notice/about-harmonyos',
+    url: '/docs/guides/startup/preparation',
     type: '文档',
     title: '应用开发指南',
     description:
