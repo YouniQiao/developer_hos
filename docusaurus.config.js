@@ -147,11 +147,11 @@ const config = {
               },
               {
                 label: '应用开发',
-                to: '/docs/guides/notice/about-harmonyos',
+                to: '/docs/guides/startup/preparation',
               },
               {
                 label: '元服务开发',
-                to: '/docs/atomic/intro',
+                to: '/docs/atomic/startup/overview',
               },
               {
                 label: '分发',

@@ -20,32 +20,190 @@ const sidebars = {
 
   guideSidebar: [
     {
-      type: 'category',
-      label: '重要说明',
-      items: [
-        'guides/notice/about-harmonyos',
-        'guides/notice/about-the-site',
-        'guides/notice/about-version-relationship',
-      ],
+      type: 'html',
+      value: '<div style="text-indent: 4px;">入门</div>', 
     },
+    'guides/startup/preparation',
+    'guides/startup/quick-start',
+    'guides/startup/basic',
+    'guides/startup/system-capability',
+    'guides/startup/glossary',
+    
     {
       type: 'html',
-      value: '<hr>', 
+      value: '<div style="text-indent: 4px;"><hr>鸿蒙特征</div>', 
     },
+
     {
       type: 'category',
-      label: '从这里开始',
+      label: '一次开发多端部署',
+      link: {
+        type: 'doc',
+        id: 'guides/hmos/one-piece',
+      },
       items: [
-        'guides/startup/preparation',
-        'guides/startup/create-project-with-template',
-        'guides/startup/modify-ui-element',
-        'guides/startup/modify-code-logic',
-        'guides/startup/prepare-for-yiduo',
+        'guides/hmos/one-piece/basic-concepts',
+        'guides/hmos/one-piece/ui',
+        'guides/hmos/one-piece/project',
+        'guides/hmos/one-piece/page-development',
+        'guides/hmos/one-piece/function-development',
+        {
+          type: 'category',
+          label: '多设备应用开发',
+          link: {
+            type: 'doc',
+            id: 'guides/hmos/one-piece/multi-device',
+          },
+          items: [
+            'guides/hmos/one-piece/multi-device/foldable',
+            'guides/hmos/one-piece/multi-device/wearable',
+            'guides/hmos/one-piece/multi-device/tv',
+            'guides/hmos/one-piece/multi-device/car',
+            'guides/hmos/one-piece/multi-device/hicar',
+          ],
+        },
       ],
     },
+    'guides/hmos/hopping',
+    'guides/hmos/skelter',
+
+    {
+      type: 'html',
+      value: '<div style="text-indent: 4px;"><hr>应用架构</div>', 
+    },
+
+    'guides/architecture/overview',
+    'guides/architecture/layered',
+    'guides/architecture/modular',
+    'guides/architecture/navigation',
+    'guides/architecture/reuse',
+
+    {
+      type: 'html',
+      value: '<div style="text-indent: 4px;"><hr>开发</div>', 
+    },
+
+    {
+      type: 'category',
+      label: '基础框架能力',
+      link: {
+        type: 'doc',
+        id: 'guides/dev/framework',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'Ability Kit（程序框架服务）',
+          link: {
+            type: 'doc',
+            id: 'guides/dev/framework/ability-kit',
+          },
+          items: [
+            'guides/dev/framework/ability-kit/overview',
+          ],
+        },
+      ],
+    },
+
+    'guides/dev/system',
+    'guides/dev/media',
+    'guides/dev/graphics',
+    'guides/dev/services',
+    'guides/dev/ai',
+
+    {
+      type: 'html',
+      value: '<div style="text-indent: 4px;"><hr>测试</div>', 
+    },
+
+    'guides/test/overview',
+    'guides/test/ut',
+    'guides/test/test-service',
+
+    {
+      type: 'html',
+      value: '<div style="text-indent: 4px;"><hr>最佳实践</div>', 
+    },
+
+    'guides/practices/performance',
+    'guides/practices/security',
+
   ],
   atomicSidebar: [
-    'atomic/intro',
+    {
+      type: 'html',
+      value: '<div style="text-indent: 4px;">从这里开始</div>', 
+    },
+    'atomic/startup/overview',
+    'atomic/startup/basic',
+    'atomic/startup/glossary',
+    {
+      type: 'html',
+      value: '<div style="text-indent: 4px;"><hr>新开发元服务</div>', 
+    },
+    'atomic/develop/development-journey',
+    'atomic/develop/preparation',
+    'atomic/develop/first-service',
+    {
+      type: 'category',
+      label: '开放能力',
+      link: {
+        type: 'doc',
+        id: 'atomic/develop/capability',
+      },
+      items: [
+        'atomic/develop/capability/test',
+        
+      ],
+    },
+
+    {
+      type: 'html',
+      value: '<div style="text-indent: 4px;"><hr>迁移至元服务</div>', 
+    },
+    'atomic/migration/ascf',
+    'atomic/migration/new-project',
+    'atomic/migration/min-program',
+    'atomic/migration/others',
+    'atomic/migration/build',
+    'atomic/migration/debug',
+    {
+      type: 'category',
+      label: '开放能力',
+      link: {
+        type: 'doc',
+        id: 'atomic/migration/capability',
+      },
+      items: [
+        'atomic/migration/capability/network',
+        'atomic/migration/capability/bundle',
+        'atomic/migration/capability/canvas',
+      ],
+    },
+    'atomic/migration/command-line-tools',
+    {
+      type: 'category',
+      label: 'API参考',
+      link: {
+        type: 'doc',
+        id: 'atomic/migration/api-ref',
+      },
+      items: [
+        'atomic/migration/api-ref/framework',
+        'atomic/migration/api-ref/component',
+        'atomic/migration/api-ref/api',
+      ],
+    },
+
+
+    {
+      type: 'html',
+      value: '<div style="text-indent: 4px;"><hr>发布元服务</div>', 
+    },
+    'atomic/release/check',
+    'atomic/release/pack',
+    'atomic/release/filings',
+    'atomic/release/publish',
   ],
 
   arktsSidebar: [

@@ -34,7 +34,7 @@ export default function HelpSection({ className = '' }) {
 
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
             <img src="/icons/studio.png" alt="studio" width="48" height="48" />
-            <h3 className="my-3">DevEco Studio</h3>
+            <h3 className="my-3">DevEco Studio（官方）</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
             DevEco Studio 是基于IntelliJ IDEA Community开源版本打造，为开发HarmonyOS应用和服务提供一站式的开发平台。
             </p>
