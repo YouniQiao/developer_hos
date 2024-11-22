@@ -1,0 +1,58 @@
+<script>
+  function showMenu(menu) {
+    document.body.classList.remove('web', 'mobile');
+    document.body.classList.add(menu);
+  }
+
+  window.showMenu = showMenu;
+</script>
+<div class="sdks-dropdown flex max-w-lg flex-col rounded-2xl lg:min-w-[300px]">
+  <div class="flex flex-col bg-secondary-800 p-4 lg:flex-row">
+    <div class="flex flex-1 flex-col gap-8 rounded-xl bg-secondary-1000 p-6">
+      <a
+        data-dropdown-sdks-menu="web"
+        onfocus="document.body.setAttribute('data-sdk-menu', 'web')"
+        onmouseover="document.body.setAttribute('data-sdk-menu', 'web')"
+        class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+        href="/docs/guides/startup/preparation"
+      >
+        <div class="flex-shrink-0">
+          <img
+            src="/landing-page/sdk-icons/resources/web.svg"
+            class="h-6 w-6"
+          />
+        </div>
+        <div class="flex flex-col items-start justify-start gap-1">
+          <div class="text-base font-semibold">应用开发</div>
+          <p class="mb-0 text-left text-sm text-text-400">
+            开发原生鸿蒙应用。
+          </p>
+        </div>
+      </a>
+      <a
+        data-dropdown-sdks-menu="mobile"
+        onfocus="document.body.setAttribute('data-sdk-menu', 'mobile')"
+        onmouseover="document.body.setAttribute('data-sdk-menu', 'mobile')"
+        class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+        href="/docs/atomic/startup/overview"
+      >
+        <div class="flex-shrink-0">
+          <img
+            src="/landing-page/sdk-icons/resources/mobile.svg"
+            class="h-6 w-6"
+          />
+        </div>
+        <div class="flex flex-col items-start justify-start gap-1">
+          <div class="text-base font-semibold">元服务开发</div>
+          <p class="mb-0 text-left text-sm text-text-400">
+            开发更轻量形态的元服务。
+          </p>
+        </div>
+      </a>
+      
+    </div>
+    
+  </div>
+
+  
+</div>

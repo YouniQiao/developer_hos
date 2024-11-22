@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 const plugins = [tailwindPlugin];
 const fs = require('fs');
-const sdksHTML = fs.readFileSync('./src/pages/sdks.html', 'utf-8');
+const menuHTML = fs.readFileSync('./src/pages/menus.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -83,6 +83,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          /*
           {
             label: '核心技术理念',
             type: 'dropdown',
@@ -95,11 +96,26 @@ const config = {
               },
             ],
           },
+          */
           {
             href: 'https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445',
             label: '设计',
             position: 'left',
           },
+
+          {
+            label: '开发',
+            type: 'dropdown',
+            className: 'dyte-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: menuHTML,
+                className: 'dyte-dropdown',
+              },
+            ],
+          },
+          /*
           {
             type: 'dropdown',
             position: 'left',
@@ -117,6 +133,7 @@ const config = {
             },
           ],
           },
+          */
           {
             href: 'https://developer.huawei.com/consumer/cn/doc/app/agc-help-started-0000001146511331',
             label: '分发',
