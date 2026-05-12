@@ -1171,3 +1171,131 @@ article ol {
 article ul {
   list-style-type: disc;
 }
+
+/* ========================================
+   Android Developers 风格 Mega Menu
+   ======================================== */
+
+.navbar__link.mega-dropdown + .dropdown__menu {
+  padding: 0;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--docs-color-border);
+  border-top: none;
+  width: 100vw !important;
+  min-width: 100vw !important;
+  position: fixed !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: var(--ifm-navbar-height) !important;
+  /* 默认隐藏 */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+}
+
+/* 显示状态：hover 或 JS 触发 */
+.dropdown--hoverable:hover .navbar__link.mega-dropdown + .dropdown__menu,
+.dropdown--show .navbar__link.mega-dropdown + .dropdown__menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html[data-theme='dark'] .navbar__link.mega-dropdown + .dropdown__menu {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.mega-menu-panel {
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  padding: 0;
+}
+
+.mega-menu-group {
+  padding: 20px 16px;
+}
+
+.mega-menu-group + .mega-menu-group {
+  border-left: 1px solid var(--docs-color-border);
+}
+
+.mega-menu-heading {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--docs-color-text-100);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--docs-color-border);
+}
+
+.mega-menu-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--docs-color-text);
+  transition: background-color 0.15s ease;
+  margin-bottom: 2px;
+}
+
+.mega-menu-link:hover {
+  background-color: var(--docs-color-background-200);
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+}
+
+.mega-menu-link-icon {
+  font-size: 18px;
+  line-height: 1.4;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+}
+
+.mega-menu-link-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.mega-menu-link-desc {
+  font-size: 12px;
+  color: var(--docs-color-text-100);
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+/* 保留原 dyte-dropdown 样式兼容 */
+.navbar__link.mega-dropdown + .dropdown__menu .sdks-dropdown {
+  min-width: 300px;
+}
+
+/* 响应式 */
+@media (max-width: 996px) {
+  .navbar__link.mega-dropdown + .dropdown__menu {
+    min-width: auto;
+    width: auto;
+    position: absolute;
+  }
+  .mega-menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .mega-menu-group + .mega-menu-group {
+    border-left: none;
+    border-top: 1px solid var(--docs-color-border);
+  }
+}

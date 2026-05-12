@@ -1,0 +1,83 @@
+.docPage {
+  display: flex;
+  width: 100%;
+  flex: 1 0;
+}
+
+.docsWrapper {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+/* Tools Secondary Navigation Bar — mimics Android Studio subnav */
+.toolsSubNav {
+  position: relative;
+  z-index: 5;
+  background: var(--ifm-navbar-background-color);
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.toolsSubNavInner {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+/* DevEco Studio 标题行 */
+.toolsSubNavHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 0 8px 0;
+}
+
+.toolsSubNavTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ifm-font-color-base);
+  font-family: 'Plus Jakarta Sans', var(--ifm-font-family-base);
+}
+
+.toolsSubNavDesc {
+  font-size: 13px;
+  color: var(--ifm-font-color-secondary);
+}
+
+/* 标签导航容器 */
+.toolsSubNavTabs {
+  display: flex;
+  gap: 0;
+}
+
+.toolsSubNavItem {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ifm-font-color-secondary);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.toolsSubNavItem:hover {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  border-bottom-color: var(--ifm-color-emphasis-300);
+}
+
+.toolsSubNavItemActive {
+  color: var(--ifm-color-primary);
+  border-bottom-color: var(--ifm-color-primary);
+}
+
+.toolsSubNavItemActive:hover {
+  color: var(--ifm-color-primary);
+  border-bottom-color: var(--ifm-color-primary);
+}

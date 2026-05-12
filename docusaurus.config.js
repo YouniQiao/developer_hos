@@ -8,6 +8,10 @@ const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 const plugins = [tailwindPlugin];
 const fs = require('fs');
 const menuHTML = fs.readFileSync('./src/pages/menus.html', 'utf-8');
+const navEssentialsHTML = fs.readFileSync('./src/pages/nav-essentials.html', 'utf-8');
+const navDesignHTML = fs.readFileSync('./src/pages/nav-design.html', 'utf-8');
+const navDevecoHTML = fs.readFileSync('./src/pages/nav-deveco.html', 'utf-8');
+const navArktsHTML = fs.readFileSync('./src/pages/nav-arkts.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -39,7 +43,8 @@ const config = {
   },
 
   scripts: [
-    {src: 'https://hm.baidu.com/hm.js?986441c2114752f739a5460119d91e01',  async: true}
+    {src: 'https://hm.baidu.com/hm.js?986441c2114752f739a5460119d91e01',  async: true},
+    {src: '/js/mega-menu.js', async: true},
   ],
 
   presets: [
@@ -83,70 +88,67 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          /*
           {
-            label: '核心技术理念',
+            label: '基本知识',
             type: 'dropdown',
-            className: 'dyte-dropdown',
+            className: 'mega-dropdown',
             items: [
               {
                 type: 'html',
-                value: sdksHTML,
-                className: 'dyte-dropdown',
+                value: navEssentialsHTML,
+                className: 'mega-dropdown',
               },
             ],
           },
-          */
           {
-            href: 'https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445',
-            label: '设计',
-            position: 'left',
+            label: '设计和规划',
+            type: 'dropdown',
+            className: 'mega-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: navDesignHTML,
+                className: 'mega-dropdown',
+              },
+            ],
           },
-
           {
             label: '开发',
             type: 'dropdown',
-            className: 'dyte-dropdown',
+            className: 'mega-dropdown',
             items: [
               {
                 type: 'html',
                 value: menuHTML,
-                className: 'dyte-dropdown',
+                className: 'mega-dropdown',
               },
             ],
           },
-          /*
-          {
-            type: 'dropdown',
-            position: 'left',
-            label: '开发',
-            items: [
-            {
-              type: 'docSidebar',
-              sidebarId: 'guideSidebar',
-              label: '应用开发',
-            },
-            {
-              type: 'docSidebar',
-              sidebarId: 'atomicSidebar',
-              label: '元服务开发',
-            },
-          ],
-          },
-          */
           {
             href: 'https://developer.huawei.com/consumer/cn/doc/app/agc-help-started-0000001146511331',
             label: '分发',
             position: 'left',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'arktsSidebar',
-            position: 'right',
-            label: 'ArkTS',
+            href: 'https://developer.huawei.com/consumer/cn/community',
+            label: '社区',
+            position: 'left',
           },
           {
-            href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-tools-overview-V5',
+            label: 'ArkTS',
+            type: 'dropdown',
+            className: 'mega-dropdown',
+            position: 'right',
+            items: [
+              {
+                type: 'html',
+                value: navArktsHTML,
+                className: 'mega-dropdown',
+              },
+            ],
+          },
+          {
+            to: '/docs/tools/overview',
             label: 'DevEco Studio',
             position: 'right',
           },
@@ -185,7 +187,7 @@ const config = {
               },
               {
                 label: 'DevEco Studio',
-                href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-tools-overview-V5',
+                to: '/docs/tools/overview',
               },
             ],
           },
