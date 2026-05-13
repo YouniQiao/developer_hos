@@ -93,7 +93,7 @@ const config = {
           {
             label: '设计与规划',
             type: 'dropdown',
-            to: '/docs/design/overview',
+            to: '/docs/design/general-design-basics/design-concepts',
             className: 'mega-dropdown',
             items: [
               {

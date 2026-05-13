@@ -10,9 +10,9 @@ import styles from '@site/src/theme/DocPage/Layout/styles.module.css';
 const NAV_ITEMS = [
   {
     label: '设计指南',
-    path: '/docs/design/overview',
+    path: '/docs/design/general-design-basics/design-concepts',
     match: '/docs/design',
-    desc: 'HarmonyOS 完整设计规范索引',
+    desc: '设计理念、视觉风格、布局、动效',
   },
   {
     label: '架构',
