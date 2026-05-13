@@ -17,7 +17,7 @@ const navDevecoHTML = fs.readFileSync('./src/pages/nav-deveco.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'HarmonyOS Developer',
+  title: 'Developer',
   tagline: 'Welcome',
   favicon: 'img/favicon.ico',
   plugins,
@@ -84,10 +84,10 @@ const config = {
         defaultMode: 'dark',
       },
       navbar: {
-        title: 'HarmonyOS Developer',
+        title: 'Developer',
         logo: {
           alt: 'Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/favicon.ico',
         },
         items: [
           {
