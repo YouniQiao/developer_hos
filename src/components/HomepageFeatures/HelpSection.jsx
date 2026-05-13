@@ -25,7 +25,7 @@ export default function HelpSection({ className = '' }) {
             ArkTS是HarmonyOS优选的主力应用开发语言，其在TypeScript（简称TS）基础上做了进一步扩展，继承了TS的所有特性，是TS的超集。
             </p>
             <Link
-              href="/docs/arkts/intro"
+              href="https://arkts.cool/"
               className="text-primary dark:text-primary-100"
             >
               了解 ArkTS &rarr;

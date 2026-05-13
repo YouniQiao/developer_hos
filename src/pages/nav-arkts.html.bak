@@ -1,0 +1,128 @@
+<div class="mega-menu-panel">
+  <div class="mega-menu-grid">
+    <!-- 开始 -->
+    <div class="mega-menu-group">
+      <div class="mega-menu-heading">开始</div>
+      <a class="mega-menu-link" href="/docs/arkts/intro">
+        <span class="mega-menu-link-icon">📘</span>
+        <div>
+          <div class="mega-menu-link-title">初识 ArkTS</div>
+          <div class="mega-menu-link-desc">ArkTS 与 TypeScript 的关系、语言特性概述</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 语言基础 -->
+    <div class="mega-menu-group">
+      <div class="mega-menu-heading">语言基础</div>
+      <a class="mega-menu-link" href="/docs/arkts/syntax/">
+        <span class="mega-menu-link-icon">📝</span>
+        <div>
+          <div class="mega-menu-link-title">语法</div>
+          <div class="mega-menu-link-desc">基础类型、函数、类、接口、泛型、空安全、模块</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/library/">
+        <span class="mega-menu-link-icon">📚</span>
+        <div>
+          <div class="mega-menu-link-title">类库</div>
+          <div class="mega-menu-link-desc">标准库、内置对象与常用 API</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/concurrency/">
+        <span class="mega-menu-link-icon">⚡</span>
+        <div>
+          <div class="mega-menu-link-title">并发</div>
+          <div class="mega-menu-link-desc">TaskPool、Worker 并发模型</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/module/">
+        <span class="mega-menu-link-icon">🧩</span>
+        <div>
+          <div class="mega-menu-link-title">模块化</div>
+          <div class="mega-menu-link-desc">import/export 模块管理与共享</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- ArkUI 支持 -->
+    <div class="mega-menu-group">
+      <div class="mega-menu-heading">ArkUI 支持</div>
+      <a class="mega-menu-link" href="/docs/arkts/arkui/">
+        <span class="mega-menu-link-icon">🎨</span>
+        <div>
+          <div class="mega-menu-link-title">ArkUI 概览</div>
+          <div class="mega-menu-link-desc">声明式 UI、状态管理、渲染控制</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/arkui/ui-syntax/">
+        <span class="mega-menu-link-icon">🖼️</span>
+        <div>
+          <div class="mega-menu-link-title">UI 语法</div>
+          <div class="mega-menu-link-desc">声明式 UI 描述、组件化开发</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/arkui/state-management/">
+        <span class="mega-menu-link-icon">🔄</span>
+        <div>
+          <div class="mega-menu-link-title">状态管理 V1</div>
+          <div class="mega-menu-link-desc">@State、@Prop、@Link 等装饰器</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/arkui/state-management-v2/">
+        <span class="mega-menu-link-icon">🔁</span>
+        <div>
+          <div class="mega-menu-link-title">状态管理 V2</div>
+          <div class="mega-menu-link-desc">新版本状态管理与响应式能力</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/arkui/rendering-control/">
+        <span class="mega-menu-link-icon">🎬</span>
+        <div>
+          <div class="mega-menu-link-title">渲染控制</div>
+          <div class="mega-menu-link-desc">if/else、ForEach、LazyForEach</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 进阶 -->
+    <div class="mega-menu-group">
+      <div class="mega-menu-heading">进阶</div>
+      <a class="mega-menu-link" href="/docs/arkts/toolchain/">
+        <span class="mega-menu-link-icon">🔧</span>
+        <div>
+          <div class="mega-menu-link-title">工具链</div>
+          <div class="mega-menu-link-desc">编译器、构建工具、代码检查</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/cross-language/">
+        <span class="mega-menu-link-icon">🌐</span>
+        <div>
+          <div class="mega-menu-link-title">跨语言交互</div>
+          <div class="mega-menu-link-desc">与 C/C++、TS/JS 互操作</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/specification/">
+        <span class="mega-menu-link-icon">📏</span>
+        <div>
+          <div class="mega-menu-link-title">编程规范</div>
+          <div class="mega-menu-link-desc">代码风格、命名规范、最佳实践</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/typescript/">
+        <span class="mega-menu-link-icon">🔄</span>
+        <div>
+          <div class="mega-menu-link-title">从 TS 迁移</div>
+          <div class="mega-menu-link-desc">TypeScript 代码迁移到 ArkTS</div>
+        </div>
+      </a>
+      <a class="mega-menu-link" href="/docs/arkts/api/">
+        <span class="mega-menu-link-icon">📋</span>
+        <div>
+          <div class="mega-menu-link-title">API 参考</div>
+          <div class="mega-menu-link-desc">API 列表、错误码参考</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

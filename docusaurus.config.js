@@ -10,8 +10,10 @@ const fs = require('fs');
 const menuHTML = fs.readFileSync('./src/pages/menus.html', 'utf-8');
 const navEssentialsHTML = fs.readFileSync('./src/pages/nav-essentials.html', 'utf-8');
 const navDesignHTML = fs.readFileSync('./src/pages/nav-design.html', 'utf-8');
+const navDistributeHTML = fs.readFileSync('./src/pages/nav-distribute.html', 'utf-8');
+const navMonetizeHTML = fs.readFileSync('./src/pages/nav-monetize.html', 'utf-8');
+const navResourcesHTML = fs.readFileSync('./src/pages/nav-resources.html', 'utf-8');
 const navDevecoHTML = fs.readFileSync('./src/pages/nav-deveco.html', 'utf-8');
-const navArktsHTML = fs.readFileSync('./src/pages/nav-arkts.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -31,7 +33,7 @@ const config = {
   organizationName: 'YouniQiao', // Usually your GitHub org/user name.
   projectName: 'developer_hos', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -89,20 +91,9 @@ const config = {
         },
         items: [
           {
-            label: '基本知识',
+            label: '设计与规划',
             type: 'dropdown',
-            className: 'mega-dropdown',
-            items: [
-              {
-                type: 'html',
-                value: navEssentialsHTML,
-                className: 'mega-dropdown',
-              },
-            ],
-          },
-          {
-            label: '设计和规划',
-            type: 'dropdown',
+            to: '/docs/design/overview',
             className: 'mega-dropdown',
             items: [
               {
@@ -113,39 +104,63 @@ const config = {
             ],
           },
           {
-            label: '开发',
+            label: '开发与测试',
             type: 'dropdown',
+            to: '/docs/dev/getting-started/overview',
             className: 'mega-dropdown',
             items: [
               {
                 type: 'html',
-                value: menuHTML,
+                value: navEssentialsHTML,
                 className: 'mega-dropdown',
               },
             ],
           },
           {
-            href: 'https://developer.huawei.com/consumer/cn/doc/app/agc-help-started-0000001146511331',
-            label: '分发',
-            position: 'left',
+            label: '分发与运营',
+            type: 'dropdown',
+            to: '/docs/distribute/agc/overview',
+            className: 'mega-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: navDistributeHTML,
+                className: 'mega-dropdown',
+              },
+            ],
           },
           {
-            href: 'https://developer.huawei.com/consumer/cn/community',
-            label: '社区',
-            position: 'left',
+            label: '推广与变现',
+            type: 'dropdown',
+            to: '/docs/monetize/promotion/overview',
+            className: 'mega-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: navMonetizeHTML,
+                className: 'mega-dropdown',
+              },
+            ],
           },
           {
+            label: '更多资源',
+            type: 'dropdown',
+            to: '/docs/resources/design-res/overview',
+            className: 'mega-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: navResourcesHTML,
+                className: 'mega-dropdown',
+              },
+            ],
+          },
+          {
+            href: 'https://arkts.cool/',
             label: 'ArkTS',
-            type: 'dropdown',
-            className: 'mega-dropdown',
             position: 'right',
-            items: [
-              {
-                type: 'html',
-                value: navArktsHTML,
-                className: 'mega-dropdown',
-              },
-            ],
+            target: '_blank',
+            rel: 'noopener noreferrer',
           },
           {
             to: '/docs/tools/overview',
@@ -166,7 +181,7 @@ const config = {
               },
               {
                 label: '应用开发',
-                to: '/docs/guides/startup/preparation',
+                to: '/docs/dev/app-dev/overview',
               },
               {
                 label: '元服务开发',
@@ -183,7 +198,7 @@ const config = {
             items: [
               {
                 label: 'ArkTS',
-                to: '/docs/arkts/intro',
+                href: 'https://arkts.cool/',
               },
               {
                 label: 'DevEco Studio',

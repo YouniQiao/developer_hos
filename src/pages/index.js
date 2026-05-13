@@ -39,11 +39,15 @@ export default function Home() {
         <HeroSection />
         <SDKsSection />
 
+        {/* 暂时注释：现有的文档太多太复杂 区域
         <div className="z-0 bg-secondary-800 dark:bg-secondary-900">
         <ResourcesSection />
         </div>
+        */}
 
+        {/* 暂时注释：工欲善其事,必先利其器 区域
         <HelpSection className="-mb-48" />
+        */}
 
       </main>
     </Layout>
