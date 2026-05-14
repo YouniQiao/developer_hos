@@ -30,30 +30,9 @@ const sidebars = {
     label: '一次开发，多端部署',
     collapsed: true,
     items: [
-      {
-        type: 'category',
-        label: '一次开发，多端部署概览',
-        collapsed: true,
-        items: [
-          'dev/multi-device/bpta-multi-device-overview',
-        ],
-      },
-      {
-        type: 'category',
-        label: '从一个例子开始',
-        collapsed: true,
-        items: [
-          'dev/multi-device/bpta-multi-device-start',
-        ],
-      },
-      {
-        type: 'category',
-        label: '多设备体验设计',
-        collapsed: true,
-        items: [
-          'dev/multi-device/bpta-multi-device-design-principles',
-        ],
-      },
+      'dev/multi-device/bpta-multi-device-overview',
+      'dev/multi-device/bpta-multi-device-start',
+      'dev/multi-device/bpta-multi-device-design-principles',
       {
         type: 'category',
         label: '多设备界面开发',
@@ -64,77 +43,21 @@ const sidebars = {
             label: '多设备窗口形态',
             collapsed: true,
             items: [
-              {
-                type: 'category',
-                label: '窗口模式',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-device-window-mode',
-                ],
-              },
-              {
-                type: 'category',
-                label: '窗口方向',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-device-window-direction',
-                ],
-              },
-              {
-                type: 'category',
-                label: '窗口沉浸式',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-device-window-immersive',
-                ],
-              },
+              'dev/multi-device/bpta-multi-device-window-mode',
+              'dev/multi-device/bpta-multi-device-window-direction',
+              'dev/multi-device/bpta-multi-device-window-immersive',
             ],
           },
-          {
-            type: 'category',
-            label: '布局概述',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-multi-device-layout-overview',
-            ],
-          },
+          'dev/multi-device/bpta-multi-device-layout-overview',
           {
             type: 'category',
             label: '界面布局响应式变化',
             collapsed: true,
             items: [
-              {
-                type: 'category',
-                label: '响应式布局',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-device-responsive-layout',
-                ],
-              },
-              {
-                type: 'category',
-                label: '页面布局场景',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-device-page-layout',
-                ],
-              },
-              {
-                type: 'category',
-                label: '组件布局场景',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-device-component-layout',
-                ],
-              },
-              {
-                type: 'category',
-                label: '屏幕类型布局场景',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-device-screen-layout',
-                ],
-              },
+              'dev/multi-device/bpta-multi-device-responsive-layout',
+              'dev/multi-device/bpta-multi-device-page-layout',
+              'dev/multi-device/bpta-multi-device-component-layout',
+              'dev/multi-device/bpta-multi-device-screen-layout',
             ],
           },
           {
@@ -142,14 +65,7 @@ const sidebars = {
             label: '界面元素自适应变化',
             collapsed: true,
             items: [
-              {
-                type: 'category',
-                label: '自适应布局',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-device-adaptive-layout',
-                ],
-              },
+              'dev/multi-device/bpta-multi-device-adaptive-layout',
             ],
           },
           {
@@ -157,22 +73,8 @@ const sidebars = {
             label: '特殊界面布局场景',
             collapsed: true,
             items: [
-              {
-                type: 'category',
-                label: '折叠屏悬停态',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-folded-hover',
-                ],
-              },
-              {
-                type: 'category',
-                label: 'Web响应式布局',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-web-adaptation',
-                ],
-              },
+              'dev/multi-device/bpta-folded-hover',
+              'dev/multi-device/bpta-web-adaptation',
             ],
           },
           {
@@ -180,165 +82,32 @@ const sidebars = {
             label: '多设备交互',
             collapsed: true,
             items: [
-              {
-                type: 'category',
-                label: '多设备交互',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-interaction',
-                ],
-              },
+              'dev/multi-device/bpta-multi-interaction',
             ],
           },
-          {
-            type: 'category',
-            label: '多设备资源文件',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-multi-device-resource',
-            ],
-          },
+          'dev/multi-device/bpta-multi-device-resource',
           {
             type: 'category',
             label: '多设备界面开发案例',
             collapsed: true,
             items: [
-              {
-                type: 'category',
-                label: '多设备长视频界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-video-app',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备股票类界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-ticket-class',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备商务办公界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-business-office',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备音乐界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-music-app-overview',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备购物比价界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-shopping-price-comparison',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备旅行订票界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-travel-accommodation',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备地图导航界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-travel-navigation',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备便捷生活界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-convenient-life',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备银行理财界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-financial-app',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备社区评论界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-community-app',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备新闻阅读界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-news-read',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备移动支付界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-mobile-payment',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备即时通讯界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-communication-app',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备图片美化界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-picture-app',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备游戏界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi_game',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备设置界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/bpta-multi-settings-application-page',
-                ],
-              },
-              {
-                type: 'category',
-                label: '多设备短视频界面',
-                collapsed: true,
-                items: [
-                  'dev/multi-device/multi-short-video-app',
-                ],
-              },
+              'dev/multi-device/multi-video-app',
+              'dev/multi-device/multi-ticket-class',
+              'dev/multi-device/multi-business-office',
+              'dev/multi-device/bpta-multi-music-app-overview',
+              'dev/multi-device/multi-shopping-price-comparison',
+              'dev/multi-device/multi-travel-accommodation',
+              'dev/multi-device/multi-travel-navigation',
+              'dev/multi-device/multi-convenient-life',
+              'dev/multi-device/multi-financial-app',
+              'dev/multi-device/multi-community-app',
+              'dev/multi-device/multi-news-read',
+              'dev/multi-device/multi-mobile-payment',
+              'dev/multi-device/multi-communication-app',
+              'dev/multi-device/multi-picture-app',
+              'dev/multi-device/bpta-multi_game',
+              'dev/multi-device/bpta-multi-settings-application-page',
+              'dev/multi-device/multi-short-video-app',
             ],
           },
         ],
@@ -348,40 +117,12 @@ const sidebars = {
         label: '多设备功能开发',
         collapsed: true,
         items: [
-          {
-            type: 'category',
-            label: '多设备功能开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-multi-device-function',
-            ],
-          },
-          {
-            type: 'category',
-            label: '相机硬件差异',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-multi-device-camera',
-            ],
-          },
-          {
-            type: 'category',
-            label: '多设备适配屏幕差异',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-multi-device-screen-diff',
-            ],
-          },
+          'dev/multi-device/bpta-multi-device-function',
+          'dev/multi-device/bpta-multi-device-camera',
+          'dev/multi-device/bpta-multi-device-screen-diff',
         ],
       },
-      {
-        type: 'category',
-        label: '多设备工程部署与发布',
-        collapsed: true,
-        items: [
-          'dev/multi-device/bpta-multi-device-ide',
-        ],
-      },
+      'dev/multi-device/bpta-multi-device-ide',
     ],
   },
   {
@@ -389,43 +130,15 @@ const sidebars = {
     label: '自由流转',
     collapsed: true,
     items: [
-      {
-        type: 'category',
-        label: '自由流转概述',
-        collapsed: true,
-        items: [
-          'dev/multi-device/bpta-hopping',
-        ],
-      },
+      'dev/multi-device/bpta-hopping',
       {
         type: 'category',
         label: '跨端迁移',
         collapsed: true,
         items: [
-          {
-            type: 'category',
-            label: '应用接续概述',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-continue-cast',
-            ],
-          },
-          {
-            type: 'category',
-            label: '应用接续数据迁移',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-continue-data',
-            ],
-          },
-          {
-            type: 'category',
-            label: '常见接续最佳实践',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-application-continue-progess',
-            ],
-          },
+          'dev/multi-device/bpta-continue-cast',
+          'dev/multi-device/bpta-continue-data',
+          'dev/multi-device/bpta-application-continue-progess',
         ],
       },
       {
@@ -433,78 +146,15 @@ const sidebars = {
         label: '多端协同',
         collapsed: true,
         items: [
-          {
-            type: 'category',
-            label: '视频投播',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-vdeocast',
-            ],
-          },
-          {
-            type: 'category',
-            label: '音频投播',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-audio-cast',
-            ],
-          },
-          {
-            type: 'category',
-            label: '跨设备拖拽',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-distribute-drag-cast',
-            ],
-          },
-          {
-            type: 'category',
-            label: '统一拖拽',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-unified-drag-and-drop',
-            ],
-          },
-          {
-            type: 'category',
-            label: '跨设备剪贴板',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-distributed-pasteboard-cast',
-            ],
-          },
-          {
-            type: 'category',
-            label: '跨设备剪贴板常见场景',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-distributed-pasteboard',
-            ],
-          },
-          {
-            type: 'category',
-            label: '碰一碰链接分享',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-application-knock-video-share',
-            ],
-          },
-          {
-            type: 'category',
-            label: '碰一碰文件分享',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-application-knock-file-share',
-            ],
-          },
-          {
-            type: 'category',
-            label: '隔空传送快速分享',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-application-gesture-share',
-            ],
-          },
+          'dev/multi-device/bpta-vdeocast',
+          'dev/multi-device/bpta-audio-cast',
+          'dev/multi-device/bpta-distribute-drag-cast',
+          'dev/multi-device/bpta-unified-drag-and-drop',
+          'dev/multi-device/bpta-distributed-pasteboard-cast',
+          'dev/multi-device/bpta-distributed-pasteboard',
+          'dev/multi-device/bpta-application-knock-video-share',
+          'dev/multi-device/bpta-application-knock-file-share',
+          'dev/multi-device/bpta-application-gesture-share',
         ],
       },
       {
@@ -512,30 +162,9 @@ const sidebars = {
         label: '典型全场景协同开发案例',
         collapsed: true,
         items: [
-          {
-            type: 'category',
-            label: '办公编辑全场景协同最佳实践',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-collaboration-office',
-            ],
-          },
-          {
-            type: 'category',
-            label: '智能穿戴导航协同',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-smartwatchnavigation',
-            ],
-          },
-          {
-            type: 'category',
-            label: '内容编辑多设备协同',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-continue',
-            ],
-          },
+          'dev/multi-device/bpta-collaboration-office',
+          'dev/multi-device/bpta-smartwatchnavigation',
+          'dev/multi-device/bpta-continue',
         ],
       },
     ],
@@ -550,30 +179,9 @@ const sidebars = {
         label: '手机',
         collapsed: true,
         items: [
-          {
-            type: 'category',
-            label: '双折叠应用开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-foldable-guide',
-            ],
-          },
-          {
-            type: 'category',
-            label: '阔折叠应用开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-purax-guide',
-            ],
-          },
-          {
-            type: 'category',
-            label: '三折叠应用开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-matext-guide',
-            ],
-          },
+          'dev/multi-device/bpta-foldable-guide',
+          'dev/multi-device/bpta-purax-guide',
+          'dev/multi-device/bpta-matext-guide',
         ],
       },
       {
@@ -581,14 +189,7 @@ const sidebars = {
         label: '平板',
         collapsed: true,
         items: [
-          {
-            type: 'category',
-            label: '平板应用开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-pad-guide',
-            ],
-          },
+          'dev/multi-device/bpta-pad-guide',
         ],
       },
       {
@@ -596,22 +197,8 @@ const sidebars = {
         label: '电脑',
         collapsed: true,
         items: [
-          {
-            type: 'category',
-            label: '电脑应用开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-pc-guide',
-            ],
-          },
-          {
-            type: 'category',
-            label: 'MateBook Fold折叠电脑应用开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-mate-book-fold',
-            ],
-          },
+          'dev/multi-device/bpta-pc-guide',
+          'dev/multi-device/bpta-mate-book-fold',
         ],
       },
       {
@@ -619,22 +206,8 @@ const sidebars = {
         label: '穿戴',
         collapsed: true,
         items: [
-          {
-            type: 'category',
-            label: '智能穿戴应用开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-smartwatch',
-            ],
-          },
-          {
-            type: 'category',
-            label: '轻量级智能穿戴应用开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-lite-wearable-guide',
-            ],
-          },
+          'dev/multi-device/bpta-smartwatch',
+          'dev/multi-device/bpta-lite-wearable-guide',
         ],
       },
       {
@@ -642,19 +215,12 @@ const sidebars = {
         label: '智慧屏',
         collapsed: true,
         items: [
-          {
-            type: 'category',
-            label: 'MateTV智慧屏应用开发',
-            collapsed: true,
-            items: [
-              'dev/multi-device/bpta-matetv-guide',
-            ],
-          },
+          'dev/multi-device/bpta-matetv-guide',
         ],
       },
     ],
   },
-], atomicDevSidebar: [
+],tomicDevSidebar: [
     'dev/atomic-dev/overview',
   ],
   ndkDevSidebar: [
