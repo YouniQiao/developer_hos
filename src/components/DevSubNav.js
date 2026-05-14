@@ -46,7 +46,7 @@ const NAV_ITEMS = [
   },
   {
     label: '游戏开发',
-    path: '/docs/dev/game-dev/overview',
+    path: '/docs/dev/game-dev/games-center-introduction-0000002320553253',
     match: '/docs/dev/game-dev',
     desc: 'HarmonyOS 游戏开发指南',
   },
