@@ -1,6 +1,6 @@
 /**
  * Dev & Testing Secondary Navigation Bar
- * Items: 入门与准备 | 应用开发 | 元服务开发 | 游戏开发 | 行业解决方案 | 测试 | FAQ
+ * Items: 版本说明 | 入门与准备 | 应用开发 | 元服务开发 | NDK开发 | 游戏开发 | 行业解决方案 | 测试 | FAQ
  */
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
@@ -37,6 +37,12 @@ const NAV_ITEMS = [
     path: '/docs/dev/atomic-dev/overview',
     match: '/docs/dev/atomic-dev',
     desc: '轻量化元服务开发指南',
+  },
+  {
+    label: 'NDK开发',
+    path: '/docs/dev/ndk-dev/overview',
+    match: '/docs/dev/ndk-dev',
+    desc: 'Native 开发套件（NDK）开发指南',
   },
   {
     label: '游戏开发',
