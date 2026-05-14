@@ -1,6 +1,6 @@
 /**
  * Tools Secondary Navigation Bar
- * Mimics Android Studio's horizontal subnav: DevEco Studio 标题 + IDE 指南 | AI 编程 | 命令行工具
+ * Mimics Android Studio's horizontal subnav: 工具 标题 + DevEco Studio指南 | AI 编程 | 命令行工具
  */
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
@@ -9,7 +9,7 @@ import styles from '@site/src/theme/DocPage/Layout/styles.module.css';
 
 const NAV_ITEMS = [
   {
-    label: 'IDE 指南',
+    label: 'DevEco Studio指南',
     path: '/docs/tools/coding-debug',
     match: '/docs/tools/coding-debug',
     desc: '代码编辑、调试、构建、测试',
@@ -44,9 +44,9 @@ export default function ToolsSubNav() {
   return (
     <div className={styles.toolsSubNav}>
       <div className={styles.toolsSubNavInner}>
-        {/* DevEco Studio 标题行 */}
+        {/* 工具 标题行 */}
         <div className={styles.toolsSubNavHeader}>
-          <span className={styles.toolsSubNavTitle}>DevEco Studio</span>
+          <span className={styles.toolsSubNavTitle}>工具</span>
         </div>
         {/* 标签导航 */}
         <div className={styles.toolsSubNavTabs}>

@@ -164,7 +164,7 @@ const config = {
           },
           {
             to: '/docs/tools/overview',
-            label: 'DevEco Studio',
+            label: '工具',
             position: 'right',
           },
           {
