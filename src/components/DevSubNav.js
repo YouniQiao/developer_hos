@@ -5,7 +5,7 @@
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
 import Link from '@docusaurus/Link';
-import styles from '@site/src/theme/DocPage/Layout/styles.module.css';
+import styles from '@site/src/components/SubNav.module.css';
 
 const NAV_ITEMS = [
   {
