@@ -30,6 +30,9 @@ const sidebars = {
   atomicDevSidebar: [
     'dev/atomic-dev/overview',
   ],
+  ndkDevSidebar: [
+    'dev/ndk-dev/overview',
+  ],
   gameDevSidebar: [
     'dev/game-dev/overview',
   ],
