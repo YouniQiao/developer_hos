@@ -40,7 +40,7 @@ const NAV_ITEMS = [
   },
   {
     label: 'NDK开发',
-    path: '/docs/dev/ndk-dev/overview',
+    path: '/docs/dev/ndk-dev/ndk-development-overview',
     match: '/docs/dev/ndk-dev',
     desc: 'Native 开发套件（NDK）开发指南',
   },
