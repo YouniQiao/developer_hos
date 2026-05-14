@@ -167,6 +167,12 @@ const config = {
             label: 'DevEco Studio',
             position: 'right',
           },
+          {
+            href: 'https://github.com/YouniQiao/developer_hos/tree/master/docs',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
+          },
         ],
       },
       footer: {
