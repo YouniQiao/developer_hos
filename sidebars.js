@@ -399,12 +399,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '使用AI智能辅助编程',
-      link: { type: 'doc', id: 'tools/ai-assist/index' },
-      items: [],
-    },
-    {
-      type: 'category',
       label: '编写与调试应用',
       link: { type: 'doc', id: 'tools/coding-debug/index' },
       items: [],
@@ -421,28 +415,20 @@ const sidebars = {
       link: { type: 'doc', id: 'tools/test/index' },
       items: [],
     },
+  ],
+  aiAssistSidebar: [
     {
       type: 'category',
-      label: '优化应用性能',
-      link: { type: 'doc', id: 'tools/optimize/index' },
+      label: '使用AI智能辅助编程',
+      link: { type: 'doc', id: 'tools/ai-assist/index' },
       items: [],
     },
-    {
-      type: 'category',
-      label: '发布应用',
-      link: { type: 'doc', id: 'tools/publish/index' },
-      items: [],
-    },
+  ],
+  cliToolsSidebar: [
     {
       type: 'category',
       label: '命令行工具',
       link: { type: 'doc', id: 'tools/cli-tools/index' },
-      items: [],
-    },
-    {
-      type: 'category',
-      label: '应用体验建议',
-      link: { type: 'doc', id: 'tools/experience/index' },
       items: [],
     },
   ],
@@ -928,6 +914,9 @@ const sidebars = {
   ],
   monetizationSidebar: [
     'monetize/monetization/overview',
+  ],
+  releaseNotesSidebar: [
+    'dev/release-notes/overview',
   ],
    
 };

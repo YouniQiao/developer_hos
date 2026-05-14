@@ -9,6 +9,12 @@ import styles from '@site/src/theme/DocPage/Layout/styles.module.css';
 
 const NAV_ITEMS = [
   {
+    label: '版本说明',
+    path: '/docs/dev/release-notes/overview',
+    match: '/docs/dev/release-notes',
+    desc: 'HarmonyOS 版本更新与变更说明',
+  },
+  {
     label: '入门与准备',
     path: '/docs/dev/getting-started/overview',
     match: '/docs/dev/getting-started',
