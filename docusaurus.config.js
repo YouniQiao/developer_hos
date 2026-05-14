@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 const plugins = [tailwindPlugin];
@@ -21,6 +22,10 @@ const config = {
   tagline: 'Welcome',
   favicon: 'img/favicon.ico',
   plugins,
+  future: {
+    v4: true,
+    faster: true,
+  },
 
   // Set the production url of your site here
   url: 'https://developer.harmonyos.cool',
@@ -34,7 +39,11 @@ const config = {
   projectName: 'developer_hos', // Usually your repo name.
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
