@@ -28,7 +28,7 @@ const NAV_ITEMS = [
   },
   {
     label: '多设备开发',
-    path: '/docs/dev/multi-device/overview',
+    path: '/docs/dev/multi-device/bpta-multi-device-overview',
     match: '/docs/dev/multi-device',
     desc: '折叠屏、平板、手表等多设备适配',
   },
