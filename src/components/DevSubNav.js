@@ -52,7 +52,7 @@ const NAV_ITEMS = [
   },
   {
     label: '行业解决方案',
-    path: '/docs/dev/industry-solutions/overview',
+    path: '/docs/dev/industry-solutions/practice-auto-app-architecture-v1-0000001903742656',
     match: '/docs/dev/industry-solutions',
     desc: '各行业鸿蒙化解决方案',
   },
