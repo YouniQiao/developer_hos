@@ -1208,10 +1208,14 @@ html[data-theme='dark'] .navbar__link.mega-dropdown + .dropdown__menu {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
+/* ===== 紧凑 Mega Menu ===== */
 .mega-menu-panel {
   padding: 0;
   max-width: 1200px;
   margin: 0 auto;
+  max-height: 75vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .mega-menu-grid {
@@ -1222,7 +1226,7 @@ html[data-theme='dark'] .navbar__link.mega-dropdown + .dropdown__menu {
 }
 
 .mega-menu-group {
-  padding: 20px 16px;
+  padding: 12px 12px;
 }
 
 .mega-menu-group + .mega-menu-group {
@@ -1230,26 +1234,26 @@ html[data-theme='dark'] .navbar__link.mega-dropdown + .dropdown__menu {
 }
 
 .mega-menu-heading {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: var(--docs-color-text-100);
-  margin-bottom: 12px;
-  padding-bottom: 8px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
   border-bottom: 1px solid var(--docs-color-border);
 }
 
 .mega-menu-link {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  padding: 10px 8px;
-  border-radius: 8px;
+  gap: 6px;
+  padding: 5px 6px;
+  border-radius: 4px;
   text-decoration: none;
   color: var(--docs-color-text);
   transition: background-color 0.15s ease;
-  margin-bottom: 2px;
+  margin-bottom: 0;
 }
 
 .mega-menu-link:hover {
@@ -1258,25 +1262,36 @@ html[data-theme='dark'] .navbar__link.mega-dropdown + .dropdown__menu {
   color: var(--ifm-color-primary);
 }
 
+/* hover 时展开描述文字 */
+.mega-menu-link:hover .mega-menu-link-desc {
+  max-height: 1.5em;
+  opacity: 1;
+  margin-top: 1px;
+}
+
 .mega-menu-link-icon {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.4;
   flex-shrink: 0;
-  width: 24px;
+  width: 18px;
   text-align: center;
 }
 
 .mega-menu-link-title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 1.4;
 }
 
 .mega-menu-link-desc {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--docs-color-text-100);
-  line-height: 1.4;
-  margin-top: 2px;
+  line-height: 1.3;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease, opacity 0.2s ease, margin-top 0.2s ease;
+  margin-top: 0;
 }
 
 /* 保留原 dyte-dropdown 样式兼容 */
@@ -1297,6 +1312,12 @@ html[data-theme='dark'] .navbar__link.mega-dropdown + .dropdown__menu {
   .mega-menu-group + .mega-menu-group {
     border-left: none;
     border-top: 1px solid var(--docs-color-border);
+  }
+  /* 移动端描述始终可见 */
+  .mega-menu-link-desc {
+    max-height: 1.5em;
+    opacity: 1;
+    margin-top: 1px;
   }
 }
 
