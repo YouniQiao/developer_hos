@@ -64,8 +64,8 @@ const NAV_ITEMS = [
   },
   {
     label: 'FAQ',
-    path: '/docs/dev/faq/overview',
-    match: '/docs/dev/faq',
+    path: '/docs/FAQ/faqs-multi-device-scenario/faq-phone/faqs-purax/faqs-purax-1',
+    match: '/docs/FAQ',
     desc: '常见问题与解答',
   },
 ];
