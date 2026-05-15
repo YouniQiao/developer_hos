@@ -10,15 +10,15 @@ import styles from '@site/src/components/SubNav.module.css';
 const NAV_ITEMS = [
   {
     label: '推广',
-    path: '/docs/monetize/promotion/overview',
+    path: '/docs/monetize/promotion/ads-ggtfzstp-0000002285988928',
     match: '/docs/monetize/promotion',
-    desc: '应用推广、ASO优化与增长策略',
+    desc: '鲸鸿动能广告投放全流程指南',
   },
   {
     label: '变现',
-    path: '/docs/monetize/monetization/overview',
+    path: '/docs/monetize/monetization/fuwuyoushi-0000001132278777',
     match: '/docs/monetize/monetization',
-    desc: '广告变现、应用内购买与付费模式',
+    desc: '鲸鸿动能流量变现服务指南',
   },
 ];
 

@@ -141,7 +141,7 @@ const config = {
           {
             label: '推广与变现',
             type: 'dropdown',
-            to: '/docs/monetize/promotion/overview',
+            to: '/docs/monetize/promotion/ads-ggtfzstp-0000002285988928',
             className: 'mega-dropdown',
             items: [
               {
