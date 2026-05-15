@@ -1,8 +1,4 @@
 {
   "label": "Test Kit（应用测试服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-debug-optimize/test-kit"
-  }
+  "collapsed": true
 }

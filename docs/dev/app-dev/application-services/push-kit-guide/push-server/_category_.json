@@ -1,8 +1,4 @@
 {
   "label": "端云调试",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/push-kit-guide/push-server"
-  }
+  "collapsed": true
 }

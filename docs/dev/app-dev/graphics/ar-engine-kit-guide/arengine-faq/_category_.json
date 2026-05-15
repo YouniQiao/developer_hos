@@ -1,8 +1,4 @@
 {
   "label": "AR Engine常见问题",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "ArkGraphics 3D（方舟3D图形）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/arkgraphics-3d"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "Wear Engine常见问题",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq"
-  }
+  "collapsed": true
 }

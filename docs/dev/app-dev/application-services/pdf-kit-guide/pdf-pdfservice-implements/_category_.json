@@ -1,8 +1,4 @@
 {
   "label": "pdfService能力",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "气泡提示",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup"
-  }
+  "collapsed": true
 }

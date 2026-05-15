@@ -1,8 +1,4 @@
 {
   "label": "管理网页文件上传与下载",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkweb/web-manage-upload-download"
-  }
+  "collapsed": true
 }

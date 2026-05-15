@@ -1,8 +1,4 @@
 {
   "label": "应用间跳转",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection"
-  }
+  "collapsed": true
 }

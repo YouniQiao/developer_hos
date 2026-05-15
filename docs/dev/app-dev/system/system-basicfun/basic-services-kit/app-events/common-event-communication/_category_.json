@@ -1,8 +1,4 @@
 {
   "label": "使用公共事件进行进程间通信",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication"
-  }
+  "collapsed": true
 }

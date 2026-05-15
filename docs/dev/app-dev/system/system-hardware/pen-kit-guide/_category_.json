@@ -1,8 +1,4 @@
 {
   "label": "Pen Kit（手写笔服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-hardware/pen-kit-guide"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "CANN Kit（CANN异构计算框架服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "应用市场推荐",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/store-kit-guide/store-productview"
-  }
+  "collapsed": true
 }

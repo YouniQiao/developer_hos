@@ -1,8 +1,4 @@
 {
   "label": "本地搜索方案",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/intents-kit-guide/intents-search-rec"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "接入方案",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/intents-kit-guide/intents-search-rec/intents-search-rec-access-programme"
-  }
+  "collapsed": true
 }

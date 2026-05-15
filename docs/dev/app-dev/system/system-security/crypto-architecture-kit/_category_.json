@@ -1,8 +1,4 @@
 {
   "label": "Crypto Architecture Kit（加解密算法框架服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/crypto-architecture-kit"
-  }
+  "collapsed": true
 }

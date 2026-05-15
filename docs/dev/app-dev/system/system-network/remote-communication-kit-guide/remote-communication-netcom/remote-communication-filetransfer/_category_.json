@@ -1,8 +1,4 @@
 {
   "label": "文件上传下载",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-filetransfer"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "处理网页内容",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkweb/web-process-page-content"
-  }
+  "collapsed": true
 }

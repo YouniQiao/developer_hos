@@ -1,8 +1,4 @@
 {
   "label": "网络游戏登录",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network"
-  }
+  "collapsed": true
 }

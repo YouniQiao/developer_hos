@@ -1,8 +1,4 @@
 {
   "label": "使用动画",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation"
-  }
+  "collapsed": true
 }

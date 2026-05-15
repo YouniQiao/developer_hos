@@ -1,8 +1,4 @@
 {
   "label": "应用真实性证明",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation"
-  }
+  "collapsed": true
 }

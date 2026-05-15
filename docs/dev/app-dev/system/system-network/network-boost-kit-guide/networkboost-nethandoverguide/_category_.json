@@ -1,8 +1,4 @@
 {
   "label": "连接迁移（多网切换）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide"
-  }
+  "collapsed": true
 }

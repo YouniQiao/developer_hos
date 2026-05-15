@@ -1,8 +1,4 @@
 {
   "label": "XML生成、解析与转换",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion"
-  }
+  "collapsed": true
 }

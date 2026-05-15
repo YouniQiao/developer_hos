@@ -1,8 +1,4 @@
 {
   "label": "Spatial Recon Kit（空间建模服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/spatial-recon-kit-guide"
-  }
+  "collapsed": true
 }

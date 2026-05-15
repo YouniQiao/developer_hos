@@ -1,8 +1,4 @@
 {
   "label": "产品特性按需分发",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/store-kit-guide/store-moduleinstall"
-  }
+  "collapsed": true
 }

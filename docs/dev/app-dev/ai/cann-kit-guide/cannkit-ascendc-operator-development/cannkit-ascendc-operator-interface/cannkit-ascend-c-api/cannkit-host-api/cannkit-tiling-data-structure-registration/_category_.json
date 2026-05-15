@@ -1,8 +1,4 @@
 {
   "label": "Tiling数据结构注册",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development/cannkit-ascendc-operator-interface/cannkit-ascend-c-api/cannkit-host-api/cannkit-tiling-data-structure-registration"
-  }
+  "collapsed": true
 }

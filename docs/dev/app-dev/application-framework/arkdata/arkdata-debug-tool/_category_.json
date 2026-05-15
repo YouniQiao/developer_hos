@@ -1,8 +1,4 @@
 {
   "label": "arkdata数据库调试工具",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkdata/arkdata-debug-tool"
-  }
+  "collapsed": true
 }

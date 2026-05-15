@@ -1,8 +1,4 @@
 {
   "label": "数据防泄漏服务",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/data-protection-kit/dlp"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "平台券",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-platform-coupons"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "基于工程实现算子",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development/cannkit-custom-operator-development/cannkit-operator-implementation/cannkit-project-based-operator-development/cannkit-operator-based-on-engineering"
-  }
+  "collapsed": true
 }

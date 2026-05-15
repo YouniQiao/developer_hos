@@ -1,8 +1,4 @@
 {
   "label": "Native子进程开发指导",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/ability-kit/native-childprocess-development"
-  }
+  "collapsed": true
 }

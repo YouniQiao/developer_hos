@@ -1,8 +1,4 @@
 {
   "label": "管理网页交互",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkweb/web-manage-page-interaction"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "穿戴侧应用开发",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "密钥生成和转换规格",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec"
-  }
+  "collapsed": true
 }

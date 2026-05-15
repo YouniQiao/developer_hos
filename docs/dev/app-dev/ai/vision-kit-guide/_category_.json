@@ -1,8 +1,4 @@
 {
   "label": "Vision Kit（场景化视觉服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/vision-kit-guide"
-  }
+  "collapsed": true
 }

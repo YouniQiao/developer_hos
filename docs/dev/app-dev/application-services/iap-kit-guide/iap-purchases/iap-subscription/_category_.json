@@ -1,8 +1,4 @@
 {
   "label": "自动续期订阅商品购买",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription"
-  }
+  "collapsed": true
 }

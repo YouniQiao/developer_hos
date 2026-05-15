@@ -1,8 +1,4 @@
 {
   "label": "ArkWeb（方舟Web）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkweb"
-  }
+  "collapsed": true
 }

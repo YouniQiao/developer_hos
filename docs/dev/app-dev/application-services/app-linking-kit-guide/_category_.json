@@ -1,8 +1,4 @@
 {
   "label": "App Linking Kit（应用链接服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/app-linking-kit-guide"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "文本绘制与显示",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display"
-  }
+  "collapsed": true
 }

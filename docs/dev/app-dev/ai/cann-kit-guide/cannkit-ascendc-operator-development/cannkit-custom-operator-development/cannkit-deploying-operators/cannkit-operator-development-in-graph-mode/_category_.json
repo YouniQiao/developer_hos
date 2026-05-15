@@ -1,8 +1,4 @@
 {
   "label": "算子入图（GE图）开发",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development/cannkit-custom-operator-development/cannkit-deploying-operators/cannkit-operator-development-in-graph-mode"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "Car Kit（车服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-hardware/car-kit-guide"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "选择与保存用户文件",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file"
-  }
+  "collapsed": true
 }

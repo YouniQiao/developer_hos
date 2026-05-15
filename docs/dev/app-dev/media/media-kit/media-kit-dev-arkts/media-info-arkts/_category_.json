@@ -1,8 +1,4 @@
 {
   "label": "媒体信息查询",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/media-kit/media-kit-dev-arkts/media-info-arkts"
-  }
+  "collapsed": true
 }

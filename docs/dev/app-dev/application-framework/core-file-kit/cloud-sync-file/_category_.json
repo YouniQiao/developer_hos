@@ -1,8 +1,4 @@
 {
   "label": "端云文件协同",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/core-file-kit/cloud-sync-file"
-  }
+  "collapsed": true
 }

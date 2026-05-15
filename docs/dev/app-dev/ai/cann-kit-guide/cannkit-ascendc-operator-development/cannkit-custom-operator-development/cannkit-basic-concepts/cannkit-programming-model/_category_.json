@@ -1,8 +1,4 @@
 {
   "label": "编程模型",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development/cannkit-custom-operator-development/cannkit-basic-concepts/cannkit-programming-model"
-  }
+  "collapsed": true
 }

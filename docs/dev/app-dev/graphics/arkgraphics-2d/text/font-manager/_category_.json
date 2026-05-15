@@ -1,8 +1,4 @@
 {
   "label": "字体管理",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/arkgraphics-2d/text/font-manager"
-  }
+  "collapsed": true
 }

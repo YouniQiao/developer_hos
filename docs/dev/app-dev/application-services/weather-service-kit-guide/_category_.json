@@ -1,8 +1,4 @@
 {
   "label": "Weather Service Kit（天气服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/weather-service-kit-guide"
-  }
+  "collapsed": true
 }

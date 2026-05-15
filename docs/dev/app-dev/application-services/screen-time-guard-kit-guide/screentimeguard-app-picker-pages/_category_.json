@@ -1,8 +1,4 @@
 {
   "label": "应用选择页",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-app-picker-pages"
-  }
+  "collapsed": true
 }

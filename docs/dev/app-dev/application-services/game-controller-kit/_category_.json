@@ -1,8 +1,4 @@
 {
   "label": "Game Controller Kit（游戏控制器服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/game-controller-kit"
-  }
+  "collapsed": true
 }

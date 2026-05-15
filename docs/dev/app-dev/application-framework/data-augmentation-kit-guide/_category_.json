@@ -1,8 +1,4 @@
 {
   "label": "Data Augmentation Kit（数据增强服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/data-augmentation-kit-guide"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "基础组件",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components"
-  }
+  "collapsed": true
 }

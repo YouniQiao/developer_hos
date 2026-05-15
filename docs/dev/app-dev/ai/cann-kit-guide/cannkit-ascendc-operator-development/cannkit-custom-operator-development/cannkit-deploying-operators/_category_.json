@@ -1,8 +1,4 @@
 {
   "label": "算子部署",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development/cannkit-custom-operator-development/cannkit-deploying-operators"
-  }
+  "collapsed": true
 }

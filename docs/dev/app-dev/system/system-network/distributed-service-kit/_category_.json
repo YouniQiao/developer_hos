@@ -1,8 +1,4 @@
 {
   "label": "Distributed Service Kit（分布式管理服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/distributed-service-kit"
-  }
+  "collapsed": true
 }

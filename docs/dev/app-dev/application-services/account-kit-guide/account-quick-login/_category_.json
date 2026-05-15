@@ -1,8 +1,4 @@
 {
   "label": "登录",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/account-kit-guide/account-quick-login"
-  }
+  "collapsed": true
 }

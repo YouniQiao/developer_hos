@@ -1,8 +1,4 @@
 {
   "label": "在地图上绘制",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/map-kit-guide/map-drawing"
-  }
+  "collapsed": true
 }

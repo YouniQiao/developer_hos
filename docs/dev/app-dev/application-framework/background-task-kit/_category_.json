@@ -1,8 +1,4 @@
 {
   "label": "Background Tasks Kit（后台任务开发服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/background-task-kit"
-  }
+  "collapsed": true
 }

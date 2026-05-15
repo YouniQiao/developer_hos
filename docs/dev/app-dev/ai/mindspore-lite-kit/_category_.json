@@ -1,8 +1,4 @@
 {
   "label": "MindSpore Lite Kit（昇思推理框架服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/mindspore-lite-kit"
-  }
+  "collapsed": true
 }

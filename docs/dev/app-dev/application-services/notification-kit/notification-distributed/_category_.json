@@ -1,8 +1,4 @@
 {
   "label": "跨设备协同通知",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/notification-kit/notification-distributed"
-  }
+  "collapsed": true
 }

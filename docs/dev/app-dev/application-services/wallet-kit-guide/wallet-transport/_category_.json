@@ -1,8 +1,4 @@
 {
   "label": "接入交通卡",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/wallet-kit-guide/wallet-transport"
-  }
+  "collapsed": true
 }

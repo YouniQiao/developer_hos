@@ -1,8 +1,4 @@
 {
   "label": "加解密",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption"
-  }
+  "collapsed": true
 }

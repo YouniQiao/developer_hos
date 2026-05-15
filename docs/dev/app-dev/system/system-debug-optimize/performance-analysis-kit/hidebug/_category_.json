@@ -1,8 +1,4 @@
 {
   "label": "系统调试信息获取",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug"
-  }
+  "collapsed": true
 }

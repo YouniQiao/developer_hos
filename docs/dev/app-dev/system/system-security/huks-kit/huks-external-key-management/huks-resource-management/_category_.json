@@ -1,8 +1,4 @@
 {
   "label": "资源管理",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-resource-management"
-  }
+  "collapsed": true
 }

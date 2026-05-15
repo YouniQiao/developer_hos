@@ -1,8 +1,4 @@
 {
   "label": "管理组件拥有的状态",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state"
-  }
+  "collapsed": true
 }

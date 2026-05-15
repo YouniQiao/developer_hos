@@ -1,8 +1,4 @@
 {
   "label": "Desktop Extension Kit（桌面拓展服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide"
-  }
+  "collapsed": true
 }

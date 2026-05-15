@@ -1,8 +1,4 @@
 {
   "label": "签名/验签",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification"
-  }
+  "collapsed": true
 }

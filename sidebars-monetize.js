@@ -7047,10 +7047,5 @@ monetizationSidebar: [
 
 ],
 
-releaseNotesSidebar: [
-
-  'dev/release-notes/overview',
-
-],
 
 };

@@ -1,8 +1,4 @@
 {
   "label": "系统后台下载资源包",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-back"
-  }
+  "collapsed": true
 }

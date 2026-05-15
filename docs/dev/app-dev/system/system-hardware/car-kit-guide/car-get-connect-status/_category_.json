@@ -1,8 +1,4 @@
 {
   "label": "获取HiCar连接状态",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-hardware/car-kit-guide/car-get-connect-status"
-  }
+  "collapsed": true
 }

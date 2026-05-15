@@ -1,8 +1,4 @@
 {
   "label": "管理运动健康数据",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage"
-  }
+  "collapsed": true
 }

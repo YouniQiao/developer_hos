@@ -1,8 +1,4 @@
 {
   "label": "事件推荐方案",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/intents-kit-guide/intents-event-rec"
-  }
+  "collapsed": true
 }

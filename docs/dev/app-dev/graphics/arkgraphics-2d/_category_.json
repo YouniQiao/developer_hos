@@ -1,8 +1,4 @@
 {
   "label": "ArkGraphics 2D（方舟2D图形服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/arkgraphics-2d"
-  }
+  "collapsed": true
 }

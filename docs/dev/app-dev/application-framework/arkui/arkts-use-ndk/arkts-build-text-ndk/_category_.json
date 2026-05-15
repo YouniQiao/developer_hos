@@ -1,8 +1,4 @@
 {
   "label": "使用文本",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "华为账号登录（获取UnionID/OpenID）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login"
-  }
+  "collapsed": true
 }

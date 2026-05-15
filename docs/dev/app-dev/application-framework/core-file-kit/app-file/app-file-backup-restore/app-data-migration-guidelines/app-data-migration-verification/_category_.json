@@ -1,8 +1,4 @@
 {
   "label": "验证应用数据迁移",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-verification"
-  }
+  "collapsed": true
 }

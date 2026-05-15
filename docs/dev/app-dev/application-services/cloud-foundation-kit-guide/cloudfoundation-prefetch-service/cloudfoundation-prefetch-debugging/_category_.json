@@ -1,8 +1,4 @@
 {
   "label": "（可选）使用命令行工具调试周期性预加载",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-debugging"
-  }
+  "collapsed": true
 }

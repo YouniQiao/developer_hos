@@ -1,8 +1,4 @@
 {
   "label": "ArkTS编译工具链",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain"
-  }
+  "collapsed": true
 }

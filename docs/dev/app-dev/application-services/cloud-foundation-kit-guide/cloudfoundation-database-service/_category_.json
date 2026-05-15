@@ -1,8 +1,4 @@
 {
   "label": "云数据库",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "拉起三方支付收银台",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment"
-  }
+  "collapsed": true
 }

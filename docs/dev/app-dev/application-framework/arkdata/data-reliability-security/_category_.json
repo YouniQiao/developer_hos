@@ -1,8 +1,4 @@
 {
   "label": "数据可靠性与安全性",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkdata/data-reliability-security"
-  }
+  "collapsed": true
 }

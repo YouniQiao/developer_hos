@@ -1,8 +1,4 @@
 {
   "label": "跨设备互通NDK（C）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-servicendk"
-  }
+  "collapsed": true
 }

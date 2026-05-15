@@ -1,8 +1,4 @@
 {
   "label": "自定义组件冻结",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-freeze"
-  }
+  "collapsed": true
 }

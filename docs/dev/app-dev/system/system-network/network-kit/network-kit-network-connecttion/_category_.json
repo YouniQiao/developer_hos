@@ -1,8 +1,4 @@
 {
   "label": "连接网络",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion"
-  }
+  "collapsed": true
 }

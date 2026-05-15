@@ -1,8 +1,4 @@
 {
   "label": "多语言排序",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/localization-kit/i18n/i18n-sorting"
-  }
+  "collapsed": true
 }

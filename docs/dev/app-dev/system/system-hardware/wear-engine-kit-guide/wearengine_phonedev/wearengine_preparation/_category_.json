@@ -1,8 +1,4 @@
 {
   "label": "接入准备",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation"
-  }
+  "collapsed": true
 }

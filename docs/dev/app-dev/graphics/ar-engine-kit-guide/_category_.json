@@ -1,8 +1,4 @@
 {
   "label": "AR Engine（AR引擎服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/ar-engine-kit-guide"
-  }
+  "collapsed": true
 }

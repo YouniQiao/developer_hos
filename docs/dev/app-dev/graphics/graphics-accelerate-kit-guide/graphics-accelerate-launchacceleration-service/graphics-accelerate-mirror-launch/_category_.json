@@ -1,8 +1,4 @@
 {
   "label": "秒级启动",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-launchacceleration-service/graphics-accelerate-mirror-launch"
-  }
+  "collapsed": true
 }

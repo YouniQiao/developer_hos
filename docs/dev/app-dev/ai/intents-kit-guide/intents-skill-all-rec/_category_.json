@@ -1,8 +1,4 @@
 {
   "label": "技能调用方案",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec"
-  }
+  "collapsed": true
 }

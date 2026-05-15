@@ -1,8 +1,4 @@
 {
   "label": "密钥使用",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use"
-  }
+  "collapsed": true
 }

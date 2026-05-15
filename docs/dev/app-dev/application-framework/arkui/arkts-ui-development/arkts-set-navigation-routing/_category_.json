@@ -1,8 +1,4 @@
 {
   "label": "设置组件导航和页面路由",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing"
-  }
+  "collapsed": true
 }

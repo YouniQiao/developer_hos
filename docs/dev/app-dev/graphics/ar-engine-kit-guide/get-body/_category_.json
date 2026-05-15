@@ -1,8 +1,4 @@
 {
   "label": "人体骨骼点识别与跟踪",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/ar-engine-kit-guide/get-body"
-  }
+  "collapsed": true
 }

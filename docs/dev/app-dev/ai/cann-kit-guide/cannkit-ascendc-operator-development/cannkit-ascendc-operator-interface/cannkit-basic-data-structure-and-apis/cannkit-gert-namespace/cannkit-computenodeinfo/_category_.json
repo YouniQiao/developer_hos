@@ -1,8 +1,4 @@
 {
   "label": "ComputeNodeInfo",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development/cannkit-ascendc-operator-interface/cannkit-basic-data-structure-and-apis/cannkit-gert-namespace/cannkit-computenodeinfo"
-  }
+  "collapsed": true
 }

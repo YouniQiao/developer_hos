@@ -1,8 +1,4 @@
 {
   "label": "Network Boost Kit（网络加速服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/network-boost-kit-guide"
-  }
+  "collapsed": true
 }

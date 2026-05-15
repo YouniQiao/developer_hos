@@ -1,8 +1,4 @@
 {
   "label": "消息摘要计算开发指导",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-dev"
-  }
+  "collapsed": true
 }

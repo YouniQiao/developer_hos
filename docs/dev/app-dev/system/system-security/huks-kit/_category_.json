@@ -1,8 +1,4 @@
 {
   "label": "Universal Keystore Kit（密钥管理服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/huks-kit"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "AscendC算子开发",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development"
-  }
+  "collapsed": true
 }

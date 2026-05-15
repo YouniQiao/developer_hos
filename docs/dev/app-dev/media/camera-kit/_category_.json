@@ -1,8 +1,4 @@
 {
   "label": "Camera Kit（相机服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/camera-kit"
-  }
+  "collapsed": true
 }

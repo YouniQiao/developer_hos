@@ -1,8 +1,4 @@
 {
   "label": "空间管理",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide"
-  }
+  "collapsed": true
 }

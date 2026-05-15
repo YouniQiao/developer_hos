@@ -1,8 +1,4 @@
 {
   "label": "预加载",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-prefetch"
-  }
+  "collapsed": true
 }

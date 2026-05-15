@@ -1,8 +1,4 @@
 {
   "label": "多对多跨应用数据共享",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkdata/cross-app-data-share/many-to-many-data-share"
-  }
+  "collapsed": true
 }

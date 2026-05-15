@@ -1,8 +1,4 @@
 {
   "label": "PdfView预览组件",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements"
-  }
+  "collapsed": true
 }

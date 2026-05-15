@@ -1,8 +1,4 @@
 {
   "label": "启用数字商品服务",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-enabling"
-  }
+  "collapsed": true
 }

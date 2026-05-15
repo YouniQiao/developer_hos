@@ -1,8 +1,4 @@
 {
   "label": "实现流式请求",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-streamreq"
-  }
+  "collapsed": true
 }

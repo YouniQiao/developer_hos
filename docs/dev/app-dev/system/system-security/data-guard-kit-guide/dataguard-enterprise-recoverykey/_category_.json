@@ -1,8 +1,4 @@
 {
   "label": "企业恢复密钥",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey"
-  }
+  "collapsed": true
 }

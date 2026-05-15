@@ -1,8 +1,4 @@
 {
   "label": "命令行工具",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-debug-optimize/debugging-commands/command-line-utilities"
-  }
+  "collapsed": true
 }

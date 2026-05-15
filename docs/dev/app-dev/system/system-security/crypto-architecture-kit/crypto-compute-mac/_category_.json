@@ -1,8 +1,4 @@
 {
   "label": "消息认证码",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "音频通话",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/audio-kit/audio-call"
-  }
+  "collapsed": true
 }

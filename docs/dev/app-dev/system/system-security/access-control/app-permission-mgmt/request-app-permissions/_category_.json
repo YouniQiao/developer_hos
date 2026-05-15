@@ -1,8 +1,4 @@
 {
   "label": "申请应用权限",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions"
-  }
+  "collapsed": true
 }

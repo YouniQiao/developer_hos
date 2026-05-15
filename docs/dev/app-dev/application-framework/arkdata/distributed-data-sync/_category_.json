@@ -1,8 +1,4 @@
 {
   "label": "同应用跨设备数据同步（分布式）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkdata/distributed-data-sync"
-  }
+  "collapsed": true
 }

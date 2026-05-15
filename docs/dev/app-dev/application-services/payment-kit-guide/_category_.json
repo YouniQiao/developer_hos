@@ -1,8 +1,4 @@
 {
   "label": "Payment Kit（鸿蒙支付服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/payment-kit-guide"
-  }
+  "collapsed": true
 }

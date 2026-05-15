@@ -1,8 +1,4 @@
 {
   "label": "推送场景化消息",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/push-kit-guide/push-scenes"
-  }
+  "collapsed": true
 }

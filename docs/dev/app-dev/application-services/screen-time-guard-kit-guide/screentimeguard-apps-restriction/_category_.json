@@ -1,8 +1,4 @@
 {
   "label": "应用访问限制",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-apps-restriction"
-  }
+  "collapsed": true
 }

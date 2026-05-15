@@ -1,8 +1,4 @@
 {
   "label": "Media Kit（媒体服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/media-kit"
-  }
+  "collapsed": true
 }

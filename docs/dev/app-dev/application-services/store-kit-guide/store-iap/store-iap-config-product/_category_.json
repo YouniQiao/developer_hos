@@ -1,8 +1,4 @@
 {
   "label": "配置数字商品",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-config-product"
-  }
+  "collapsed": true
 }

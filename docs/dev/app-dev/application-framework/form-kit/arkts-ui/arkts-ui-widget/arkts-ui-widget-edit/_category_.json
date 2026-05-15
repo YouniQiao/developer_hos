@@ -1,8 +1,4 @@
 {
   "label": "ArkTS卡片编辑",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-edit"
-  }
+  "collapsed": true
 }

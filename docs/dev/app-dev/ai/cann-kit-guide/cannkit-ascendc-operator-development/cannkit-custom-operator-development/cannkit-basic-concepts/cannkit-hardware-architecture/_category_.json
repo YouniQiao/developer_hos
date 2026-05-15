@@ -1,8 +1,4 @@
 {
   "label": "硬件架构",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development/cannkit-custom-operator-development/cannkit-basic-concepts/cannkit-hardware-architecture"
-  }
+  "collapsed": true
 }

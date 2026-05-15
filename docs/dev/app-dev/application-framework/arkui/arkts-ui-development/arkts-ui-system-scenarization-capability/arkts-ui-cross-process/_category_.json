@@ -1,8 +1,4 @@
 {
   "label": "嵌入式组件",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-ui-cross-process"
-  }
+  "collapsed": true
 }

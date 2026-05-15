@@ -1,8 +1,4 @@
 {
   "label": "Enterprise Threat Protection Kit（企业威胁防护服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide"
-  }
+  "collapsed": true
 }

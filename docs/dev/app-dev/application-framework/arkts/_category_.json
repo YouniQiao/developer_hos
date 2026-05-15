@@ -1,8 +1,4 @@
 {
   "label": "ArkTS（方舟编程语言）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkts"
-  }
+  "collapsed": true
 }

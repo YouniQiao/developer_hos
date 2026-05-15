@@ -1,8 +1,4 @@
 {
   "label": "UI开发调试调优",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/ui-debug-optimize"
-  }
+  "collapsed": true
 }

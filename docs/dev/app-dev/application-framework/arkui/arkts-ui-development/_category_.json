@@ -1,8 +1,4 @@
 {
   "label": "UI开发 (ArkTS声明式开发范式)",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/arkts-ui-development"
-  }
+  "collapsed": true
 }

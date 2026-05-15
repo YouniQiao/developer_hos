@@ -1,8 +1,4 @@
 {
   "label": "Sensor Service Kit（传感器服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-hardware/sensor-service-kit"
-  }
+  "collapsed": true
 }

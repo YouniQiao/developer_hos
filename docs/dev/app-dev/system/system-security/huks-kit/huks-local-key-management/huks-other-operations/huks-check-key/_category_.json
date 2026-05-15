@@ -1,8 +1,4 @@
 {
   "label": "查询密钥是否存在",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-check-key"
-  }
+  "collapsed": true
 }

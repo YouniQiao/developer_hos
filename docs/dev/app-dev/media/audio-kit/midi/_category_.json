@@ -1,8 +1,4 @@
 {
   "label": "MIDI设备通信",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/audio-kit/midi"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "管理转化事件",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-trigger"
-  }
+  "collapsed": true
 }

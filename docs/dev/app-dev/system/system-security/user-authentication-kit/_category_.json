@@ -1,8 +1,4 @@
 {
   "label": "User Authentication Kit（用户认证服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/user-authentication-kit"
-  }
+  "collapsed": true
 }

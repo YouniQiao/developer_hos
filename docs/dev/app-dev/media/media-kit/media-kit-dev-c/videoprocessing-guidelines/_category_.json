@@ -1,8 +1,4 @@
 {
   "label": "视频处理",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines"
-  }
+  "collapsed": true
 }

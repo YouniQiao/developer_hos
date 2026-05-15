@@ -1,8 +1,4 @@
 {
   "label": "图像跟踪",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/ar-engine-kit-guide/get-image"
-  }
+  "collapsed": true
 }

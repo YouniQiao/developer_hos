@@ -1,8 +1,4 @@
 {
   "label": "Live View Kit（实况窗服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/live-view-kit-guide"
-  }
+  "collapsed": true
 }

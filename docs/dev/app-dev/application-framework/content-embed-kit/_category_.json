@@ -1,8 +1,4 @@
 {
   "label": "Content Embed Kit（内容嵌入服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/content-embed-kit"
-  }
+  "collapsed": true
 }

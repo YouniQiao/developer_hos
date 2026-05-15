@@ -1,8 +1,4 @@
 {
   "label": "Core Vision Kit（基础视觉服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/core-vision-kit-guide"
-  }
+  "collapsed": true
 }

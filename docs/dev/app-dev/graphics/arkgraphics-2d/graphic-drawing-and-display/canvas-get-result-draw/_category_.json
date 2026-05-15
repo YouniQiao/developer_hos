@@ -1,8 +1,4 @@
 {
   "label": "画布的获取与绘制结果的显示",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw"
-  }
+  "collapsed": true
 }

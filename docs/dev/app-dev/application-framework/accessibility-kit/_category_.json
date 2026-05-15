@@ -1,8 +1,4 @@
 {
   "label": "Accessibility Kit（无障碍服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/accessibility-kit"
-  }
+  "collapsed": true
 }

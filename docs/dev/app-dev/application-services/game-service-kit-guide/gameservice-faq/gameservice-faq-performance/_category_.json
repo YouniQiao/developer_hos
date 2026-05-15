@@ -1,8 +1,4 @@
 {
   "label": "游戏场景感知",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/game-service-kit-guide/gameservice-faq/gameservice-faq-performance"
-  }
+  "collapsed": true
 }

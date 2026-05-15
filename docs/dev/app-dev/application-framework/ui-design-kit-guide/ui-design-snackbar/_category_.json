@@ -1,8 +1,4 @@
 {
   "label": "即时操作",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/ui-design-kit-guide/ui-design-snackbar"
-  }
+  "collapsed": true
 }

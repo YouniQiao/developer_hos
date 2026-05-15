@@ -1,8 +1,4 @@
 {
   "label": "应用接入密码保险箱",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/passwordvault/passwordvault-apps"
-  }
+  "collapsed": true
 }

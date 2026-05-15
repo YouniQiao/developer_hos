@@ -1,8 +1,4 @@
 {
   "label": "使用HTTP缓存功能提升资源获取性能",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache"
-  }
+  "collapsed": true
 }

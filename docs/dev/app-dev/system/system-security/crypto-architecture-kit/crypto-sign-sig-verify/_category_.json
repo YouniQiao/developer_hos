@@ -1,8 +1,4 @@
 {
   "label": "签名验签",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify"
-  }
+  "collapsed": true
 }

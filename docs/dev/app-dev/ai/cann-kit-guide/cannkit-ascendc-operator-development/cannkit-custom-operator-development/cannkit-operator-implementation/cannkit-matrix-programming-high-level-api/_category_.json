@@ -1,8 +1,4 @@
 {
   "label": "矩阵编程（高阶API）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development/cannkit-custom-operator-development/cannkit-operator-implementation/cannkit-matrix-programming-high-level-api"
-  }
+  "collapsed": true
 }

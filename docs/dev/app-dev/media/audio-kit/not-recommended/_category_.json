@@ -1,8 +1,4 @@
 {
   "label": "OpenSL ES开发指导(不再推荐)",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/audio-kit/not-recommended"
-  }
+  "collapsed": true
 }

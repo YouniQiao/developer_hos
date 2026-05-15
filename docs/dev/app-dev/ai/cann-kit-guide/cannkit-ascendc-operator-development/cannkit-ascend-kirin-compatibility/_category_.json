@@ -1,8 +1,4 @@
 {
   "label": "AscendC昇腾到麒麟兼容性迁移指南",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/ai/cann-kit-guide/cannkit-ascendc-operator-development/cannkit-ascend-kirin-compatibility"
-  }
+  "collapsed": true
 }

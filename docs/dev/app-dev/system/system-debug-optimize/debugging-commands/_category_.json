@@ -1,8 +1,4 @@
 {
   "label": "调试命令",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-debug-optimize/debugging-commands"
-  }
+  "collapsed": true
 }

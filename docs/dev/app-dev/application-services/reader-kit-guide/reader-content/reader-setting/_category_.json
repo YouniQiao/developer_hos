@@ -1,8 +1,4 @@
 {
   "label": "修改阅读设置",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting"
-  }
+  "collapsed": true
 }

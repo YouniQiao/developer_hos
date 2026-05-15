@@ -1,8 +1,4 @@
 {
   "label": "本地化名称",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/localization-kit/i18n/i18n-name-localization"
-  }
+  "collapsed": true
 }

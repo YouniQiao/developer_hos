@@ -1,8 +1,4 @@
 {
   "label": "开发相机应用必选能力(ArkTS)",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory"
-  }
+  "collapsed": true
 }

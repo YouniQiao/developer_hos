@@ -1,8 +1,4 @@
 {
   "label": "Online Authentication Kit（在线认证服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/online-authentication-kit-guide"
-  }
+  "collapsed": true
 }

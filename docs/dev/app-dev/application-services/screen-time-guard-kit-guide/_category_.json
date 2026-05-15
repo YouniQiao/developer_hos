@@ -1,8 +1,4 @@
 {
   "label": "Screen Time Guard Kit（屏幕时间守护服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/screen-time-guard-kit-guide"
-  }
+  "collapsed": true
 }

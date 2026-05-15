@@ -1,8 +1,4 @@
 {
   "label": "提升HTTP传输性能",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "启动耗时事件",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/startup-duration-events"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "DRM Kit（数字版权保护服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/drm-kit"
-  }
+  "collapsed": true
 }

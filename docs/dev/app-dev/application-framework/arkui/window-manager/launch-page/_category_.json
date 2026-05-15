@@ -1,8 +1,4 @@
 {
   "label": "应用启动页的配置与使用",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/window-manager/launch-page"
-  }
+  "collapsed": true
 }

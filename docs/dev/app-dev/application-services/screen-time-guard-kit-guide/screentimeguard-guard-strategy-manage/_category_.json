@@ -1,8 +1,4 @@
 {
   "label": "守护策略管理",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage"
-  }
+  "collapsed": true
 }

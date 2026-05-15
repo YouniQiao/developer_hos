@@ -1,8 +1,4 @@
 {
   "label": "跨设备互通（ArkTS）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service"
-  }
+  "collapsed": true
 }

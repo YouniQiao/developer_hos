@@ -1,8 +1,4 @@
 {
   "label": "MDM Kit（企业设备管理服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-basicfun/mdm-kit"
-  }
+  "collapsed": true
 }

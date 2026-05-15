@@ -1,8 +1,4 @@
 {
   "label": "获取华为账号用户信息",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/account-kit-guide/account-get-user-info"
-  }
+  "collapsed": true
 }

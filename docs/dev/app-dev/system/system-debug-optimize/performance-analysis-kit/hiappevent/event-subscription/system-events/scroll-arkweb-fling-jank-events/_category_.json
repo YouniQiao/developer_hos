@@ -1,8 +1,4 @@
 {
   "label": "ArkWeb抛滑丢帧事件",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/scroll-arkweb-fling-jank-events"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "密码自动填充服务",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-security/passwordvault"
-  }
+  "collapsed": true
 }

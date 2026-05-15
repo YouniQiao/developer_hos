@@ -1,8 +1,4 @@
 {
   "label": "图形缓冲区",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/graphics/arkgraphics-2d/native-surface"
-  }
+  "collapsed": true
 }

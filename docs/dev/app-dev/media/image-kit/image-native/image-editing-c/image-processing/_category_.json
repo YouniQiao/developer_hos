@@ -1,8 +1,4 @@
 {
   "label": "使用ImageProcessing处理图片",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing"
-  }
+  "collapsed": true
 }

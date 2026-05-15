@@ -1,8 +1,4 @@
 {
   "label": "NFC",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/connectivity-kit/nfc"
-  }
+  "collapsed": true
 }

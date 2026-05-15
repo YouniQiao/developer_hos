@@ -1,8 +1,4 @@
 {
   "label": "Reader Kit（阅读服务）",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/reader-kit-guide"
-  }
+  "collapsed": true
 }

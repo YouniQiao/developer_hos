@@ -1,8 +1,4 @@
 {
   "label": "低功耗蓝牙",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble"
-  }
+  "collapsed": true
 }

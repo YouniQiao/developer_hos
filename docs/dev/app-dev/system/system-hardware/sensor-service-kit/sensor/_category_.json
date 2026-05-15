@@ -1,8 +1,4 @@
 {
   "label": "传感器",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-hardware/sensor-service-kit/sensor"
-  }
+  "collapsed": true
 }

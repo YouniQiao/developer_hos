@@ -1,8 +1,4 @@
 {
   "label": "使用AVScreenCapture录屏取码流(C/C++)",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer"
-  }
+  "collapsed": true
 }

@@ -1,8 +1,4 @@
 {
   "label": "免密支付接入",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay"
-  }
+  "collapsed": true
 }

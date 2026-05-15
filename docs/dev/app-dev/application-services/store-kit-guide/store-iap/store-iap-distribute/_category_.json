@@ -1,8 +1,4 @@
 {
   "label": "应用内分发数字商品",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute"
-  }
+  "collapsed": true
 }

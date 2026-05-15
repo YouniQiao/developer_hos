@@ -1,8 +1,4 @@
 {
   "label": "扩展外设基础驱动开发",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers"
-  }
+  "collapsed": true
 }

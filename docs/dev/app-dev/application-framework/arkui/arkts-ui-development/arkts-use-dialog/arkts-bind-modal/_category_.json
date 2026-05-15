@@ -1,8 +1,4 @@
 {
   "label": "绑定模态页面",
-  "collapsed": true,
-  "link": {
-    "type": "doc",
-    "id": "dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal"
-  }
+  "collapsed": true
 }
