@@ -172,7 +172,7 @@ const config = {
             rel: 'noopener noreferrer',
           },
           {
-            to: '/docs/tools/overview',
+            to: '/docs/tools/coding-debug/ide-tools-overview',
             label: '工具',
             position: 'right',
           },

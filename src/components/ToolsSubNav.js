@@ -10,33 +10,30 @@ import styles from '@site/src/components/SubNav.module.css';
 const NAV_ITEMS = [
   {
     label: 'DevEco Studio指南',
-    path: '/docs/tools/coding-debug',
+    path: '/docs/tools/coding-debug/ide-tools-overview',
     match: '/docs/tools/coding-debug',
-    desc: '代码编辑、调试、构建、测试',
+    desc: '开发环境搭建、编码调试、构建、性能优化、发布',
   },
   {
     label: 'AI 编程',
-    path: '/docs/tools/ai-assist',
+    path: '/docs/tools/ai-assist/ide-codegenie-releasenote',
     match: '/docs/tools/ai-assist',
-    desc: '智能问答、代码生成、页面生成',
+    desc: '智能问答、代码生成、页面生成、调优',
   },
   {
     label: '命令行工具',
     path: '/docs/tools/cli-tools',
     match: '/docs/tools/cli-tools',
-    desc: '命令行工具、发布应用、体验建议',
+    desc: 'codelinter、hstack、hvigorw、ohpm',
   },
 ];
 
 export default function ToolsSubNav() {
   const location = useLocation();
 
-  // Determine active item: match path prefix
   function isActive(item) {
     if (item.path === location.pathname) return true;
-    // Also match sub-pages
     if (location.pathname.startsWith(item.match + '/')) return true;
-    // Special case: overview page highlights first item
     if (location.pathname === '/docs/tools/overview' && item === NAV_ITEMS[0]) return true;
     return false;
   }
@@ -44,11 +41,9 @@ export default function ToolsSubNav() {
   return (
     <div className={styles.toolsSubNav}>
       <div className={styles.toolsSubNavInner}>
-        {/* 工具 标题行 */}
         <div className={styles.toolsSubNavHeader}>
           <span className={styles.toolsSubNavTitle}>工具</span>
         </div>
-        {/* 标签导航 */}
         <div className={styles.toolsSubNavTabs}>
           {NAV_ITEMS.map((item) => (
             <Link
