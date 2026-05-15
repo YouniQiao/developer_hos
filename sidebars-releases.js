@@ -4,9 +4,10 @@ const releaseNotesSidebar = [
   {
     type: 'category',
     label: "版本说明",
-    collapsed: true,
+    collapsed: false,
     items: [
-      { type: 'link', label: "所有HarmonyOS版本", href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-allversion' },
+      'dev/release-notes/overview',
+      { type: 'link', label: "所有HarmonyOS版本（官网）", href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-allversion' },
       {
         type: 'category',
         label: "HarmonyOS 6.1.1(24) Beta",
