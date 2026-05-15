@@ -1,0 +1,8 @@
+{
+  "label": "外部密钥管理扩展",
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "dev/app-dev/system/system-security/huks-kit/huks-external-key-management"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "应用数据备份恢复",
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "密钥证明",
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "分布式文件系统",
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "dev/app-dev/application-framework/core-file-kit/distributed-fs"
+  }
+}

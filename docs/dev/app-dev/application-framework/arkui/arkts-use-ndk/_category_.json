@@ -1,0 +1,8 @@
+{
+  "label": "UI开发 (基于NDK构建UI)",
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "dev/app-dev/application-framework/arkui/arkts-use-ndk"
+  }
+}

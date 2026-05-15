@@ -1,0 +1,8 @@
+{
+  "label": "模型部署",
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "dev/app-dev/ai/mindspore-lite-kit/deployment"
+  }
+}

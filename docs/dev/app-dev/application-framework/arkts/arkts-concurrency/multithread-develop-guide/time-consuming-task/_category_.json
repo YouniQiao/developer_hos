@@ -1,0 +1,8 @@
+{
+  "label": "耗时任务并发场景",
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task"
+  }
+}

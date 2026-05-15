@@ -1,0 +1,8 @@
+{
+  "label": "使用可变帧率能力定制不同内容的绘制帧率",
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "dev/app-dev/graphics/arkgraphics-2d/displaysync"
+  }
+}

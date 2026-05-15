@@ -1,0 +1,6 @@
+---
+title: "24h功耗器件分解统计事件"
+displayed_sidebar: appDevSidebar
+---
+
+# 24h功耗器件分解统计事件

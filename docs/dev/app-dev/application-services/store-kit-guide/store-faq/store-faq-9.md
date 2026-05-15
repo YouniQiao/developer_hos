@@ -1,0 +1,6 @@
+---
+title: "AppGallery Connect中可以配置多个订阅关键事件回调地址吗？"
+displayed_sidebar: appDevSidebar
+---
+
+# AppGallery Connect中可以配置多个订阅关键事件回调地址吗？

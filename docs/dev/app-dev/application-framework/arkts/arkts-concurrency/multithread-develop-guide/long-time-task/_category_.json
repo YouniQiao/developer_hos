@@ -1,0 +1,8 @@
+{
+  "label": "长时任务并发场景",
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/long-time-task"
+  }
+}
