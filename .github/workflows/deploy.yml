@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
 
@@ -18,22 +18,11 @@ jobs:
 
       - run: npm ci
 
-      - name: Setup swap (safety net)
-        run: |
-          sudo swapoff /swapfile 2>/dev/null || true
-          sudo rm -f /swapfile
-          sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
-          free -h
-
-      - name: Build
+      - name: Build (16GB MacBook)
         run: npx docusaurus build --no-minify
         env:
-          NODE_OPTIONS: '--max-old-space-size=3584 --expose-gc'
+          NODE_OPTIONS: '--max-old-space-size=8192'
           GENERATE_SOURCEMAP: 'false'
-          DOCUSAURUS_SSR_CONCURRENCY: '2'
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3
