@@ -23,17 +23,19 @@ jobs:
           # 清理可能残留的旧 swap
           sudo swapoff /swapfile 2>/dev/null || true
           sudo rm -f /swapfile
-          # 创建 4GB swap
-          sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+          # 创建 8GB swap（物理 7GB + swap 8GB = 15GB 虚拟内存）
+          sudo dd if=/dev/zero of=/swapfile bs=1M count=8192
           sudo chmod 600 /swapfile
           sudo mkswap /swapfile
           sudo swapon /swapfile
           free -h
 
       - name: Build
+        timeout-minutes: 300
         run: npx docusaurus build --no-minify
         env:
-          NODE_OPTIONS: '--max-old-space-size=6144'
+          NODE_OPTIONS: '--max-old-space-size=4096'
+          GENERATE_SOURCEMAP: 'false'
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3
