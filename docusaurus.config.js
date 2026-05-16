@@ -165,6 +165,13 @@ const config = {
             ],
           },
           {
+            href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-references/development-intro-api',
+            label: 'API参考',
+            position: 'right',
+            target: '_blank',
+            rel: 'noopener noreferrer',
+          },
+          {
             href: 'https://arkts.cool/',
             label: 'ArkTS',
             position: 'right',
