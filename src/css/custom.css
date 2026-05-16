@@ -1193,6 +1193,7 @@ article ul {
   visibility: hidden;
   opacity: 0;
   transform: translateY(-8px);
+  pointer-events: none;
   transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
 }
 
@@ -1202,6 +1203,7 @@ article ul {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto;
 }
 
 html[data-theme='dark'] .navbar__link.mega-dropdown + .dropdown__menu {
