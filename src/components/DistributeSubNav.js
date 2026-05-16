@@ -22,7 +22,7 @@ const NAV_ITEMS = [
   },
   {
     label: '服务分发',
-    path: '/docs/distribute/service-dist/overview',
+    path: '/docs/distribute/service-dist/华为服务号/huawei_business_touch-0000001054309149',
     match: '/docs/distribute/service-dist',
     desc: '元服务与原子化服务分发',
   },
