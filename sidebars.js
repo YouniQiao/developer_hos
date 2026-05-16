@@ -24,6 +24,7 @@ const releaseNotesSidebar = require('./sidebars-releases.js').releaseNotesSideba
 const faqSidebar = require('./sidebars-faq.js').faqSidebar;
 const contentDistSidebar = require('./sidebars-content-dist.js').contentDistSidebar;
 const serviceDistSidebar = require('./sidebars-service-dist.js').serviceDistSidebar;
+const appDistSidebar = require('./sidebars-app-dist.js').appDistSidebar;
 
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
@@ -1292,9 +1293,7 @@ const sidebars = {
   agcSidebar: [
     'distribute/agc/overview',
   ],
-  appDistSidebar: [
-    'distribute/app-dist/overview',
-  ],
+  appDistSidebar,
   serviceDistSidebar,
   contentDistSidebar,
   designResSidebar: [

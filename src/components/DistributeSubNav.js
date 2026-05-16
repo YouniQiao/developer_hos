@@ -16,7 +16,7 @@ const NAV_ITEMS = [
   },
   {
     label: '应用分发',
-    path: '/docs/distribute/app-dist/overview',
+    path: '/docs/distribute/app-dist/应用市场/x50101',
     match: '/docs/distribute/app-dist',
     desc: '应用上架、发布与分发流程',
   },
