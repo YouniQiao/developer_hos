@@ -28,7 +28,7 @@ const NAV_ITEMS = [
   },
   {
     label: '内容分发',
-    path: '/docs/distribute/content-dist/overview',
+    path: '/docs/distribute/content-dist/主题中心/beginner-guide-0000001054200638/introduction-0000001054201232',
     match: '/docs/distribute/content-dist',
     desc: '内容审核、素材管理与分发',
   },
