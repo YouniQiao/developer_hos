@@ -20,6 +20,10 @@ jobs:
 
       - name: Setup swap (for 13K+ docs build)
         run: |
+          # 清理可能残留的旧 swap
+          sudo swapoff /swapfile 2>/dev/null || true
+          sudo rm -f /swapfile
+          # 创建 4GB swap
           sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
           sudo chmod 600 /swapfile
           sudo mkswap /swapfile
