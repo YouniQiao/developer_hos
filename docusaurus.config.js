@@ -24,7 +24,7 @@ const config = {
   plugins,
   future: {
     v4: true,
-    faster: true,
+    faster: false,
   },
 
   // Set the production url of your site here
