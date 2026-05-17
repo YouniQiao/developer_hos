@@ -1559,7 +1559,7 @@ const faqSidebar = [
   },
   {
     "type": "category",
-    "label": "应用服务开发",
+    "label": "app-services开发",
     "collapsed": true,
     "items": [
       {

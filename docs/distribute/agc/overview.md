@@ -5,4 +5,4 @@ sidebar_position: 1
 
 # AppGallery Connect
 
-AppGallery Connect 为开发者提供一站式应用服务。
+AppGallery Connect 为开发者提供一站式app-services。

@@ -1,6 +1,6 @@
 ---
-title: "AppGallery Kit（应用市场服务）"
+title: "AppGallery Kit（app-market服务）"
 displayed_sidebar: appDevSidebar
 ---
 
-# AppGallery Kit（应用市场服务）
+# AppGallery Kit（app-market服务）

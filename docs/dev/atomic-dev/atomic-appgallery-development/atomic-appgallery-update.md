@@ -1,6 +1,6 @@
 ---
-title: "应用市场更新功能"
+title: "app-market更新功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-appgallery-update
 ---
 
-# 应用市场更新功能
+# app-market更新功能

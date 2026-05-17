@@ -22,7 +22,7 @@ const RESOURCES = [
     type: '文档',
     title: '分发指南（官方）',
     description:
-      '将鸿蒙应用上架到华为应用市场，实现一次接入、多设备多入口分发。',
+      '将鸿蒙应用上架到华为app-market，实现一次接入、多设备多入口分发。',
     image: '/landing-page/cover-distribute.jpg',
     duration: '5 min',
   },

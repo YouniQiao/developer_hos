@@ -381,7 +381,7 @@ const atomicSidebar = [
                       },
                       {
                         type: 'category',
-                        label: '可信应用服务',
+                        label: '可信app-services',
                         collapsed: true,
                         items: [
                           'dev/atomic-dev/atomic-devicesecurity-taas-dev/atomic-devicesecurity-taas-dev',

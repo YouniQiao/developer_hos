@@ -22,19 +22,19 @@ const NAV_ITEMS = [
   },
   {
     label: '应用分发',
-    path: '/docs/distribute/app-dist/应用市场/x50101',
+    path: '/docs/distribute/app-dist/app-market/x50101',
     match: '/docs/distribute/app-dist',
     desc: '应用上架、发布与分发流程',
   },
   {
     label: '服务分发',
-    path: '/docs/distribute/service-dist/华为服务号/huawei_business_touch-0000001054309149',
+    path: '/docs/distribute/service-dist/huawei-service-account/huawei_business_touch-0000001054309149',
     match: '/docs/distribute/service-dist',
     desc: '元服务与原子化服务分发',
   },
   {
     label: '内容分发',
-    path: '/docs/distribute/content-dist/主题中心/beginner-guide-0000001054200638/introduction-0000001054201232',
+    path: '/docs/distribute/content-dist/theme-center/beginner-guide-0000001054200638/introduction-0000001054201232',
     match: '/docs/distribute/content-dist',
     desc: '内容审核、素材管理与分发',
   },

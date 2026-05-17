@@ -13,11 +13,11 @@ const contentDistSidebar = [
         "label": "新手指南",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/主题中心/beginner-guide-0000001054200638/introduction-0000001054201232",
-          "distribute/content-dist/主题中心/beginner-guide-0000001054200638/cooperation-0000001056188886",
-          "distribute/content-dist/主题中心/beginner-guide-0000001054200638/settlement-guidance-0000001056348857",
-          "distribute/content-dist/主题中心/beginner-guide-0000001054200638/learn-guidance-0000001075527080",
-          "distribute/content-dist/主题中心/beginner-guide-0000001054200638/checkout-process-0000001055868899"
+          "distribute/content-dist/theme-center/beginner-guide-0000001054200638/introduction-0000001054201232",
+          "distribute/content-dist/theme-center/beginner-guide-0000001054200638/cooperation-0000001056188886",
+          "distribute/content-dist/theme-center/beginner-guide-0000001054200638/settlement-guidance-0000001056348857",
+          "distribute/content-dist/theme-center/beginner-guide-0000001054200638/learn-guidance-0000001075527080",
+          "distribute/content-dist/theme-center/beginner-guide-0000001054200638/checkout-process-0000001055868899"
         ]
       },
       {
@@ -30,22 +30,22 @@ const contentDistSidebar = [
             "label": "主题",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/harmonyos_6_1-0000002550712266",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-next6-0000002531251229",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-next-0000002371431700",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-upgrade-0000001160790879",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-upgrade11-0000001061349855",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-upgrade10-0000001061190123",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/harmonyos_6_1-0000002550712266",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-next6-0000002531251229",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-next-0000002371431700",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-upgrade-0000001160790879",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-upgrade11-0000001061349855",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-upgrade10-0000001061190123",
               {
                 "type": "category",
                 "label": "手机/折叠屏/平板主题规范区别(HarmonyOS 5.0及以上版本)",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/unfolded-themes-next-0000002472955166",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/pad-themes-next-0000002472635166",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/purax-themes-next-0000002505115171",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/pura_x_max-0000002581312329"
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/unfolded-themes-next-0000002472955166",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/pad-themes-next-0000002472635166",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/purax-themes-next-0000002505115171",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/pura_x_max-0000002581312329"
                 ]
               },
               {
@@ -53,15 +53,15 @@ const contentDistSidebar = [
                 "label": "手机/折叠屏/平板主题规范区别(HarmonyOS 4.x及以下版本)",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-0000001103278304/foldable-display-themes-0000001102979830",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-0000001103278304/tablet-themes-specification-0000001078779076",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-0000001103278304/outside-screen-0000001195255746"
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-0000001103278304/foldable-display-themes-0000001102979830",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-0000001103278304/tablet-themes-specification-0000001078779076",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-0000001103278304/outside-screen-0000001195255746"
                 ]
               },
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/specification91-0000001430986341",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-upgrade9-0000001061579745",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/popupwindow-0000001188503514",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-video-0000001061379764"
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/specification91-0000001430986341",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-upgrade9-0000001061579745",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/popupwindow-0000001188503514",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-video-0000001061379764"
             ]
           },
           {
@@ -69,8 +69,8 @@ const contentDistSidebar = [
             "label": "熄屏显示",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/aod-0000001054371157/aod-specification-0000001057549640",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/aod-0000001054371157/aod-video-0000001057311470"
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/aod-0000001054371157/aod-specification-0000001057549640",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/aod-0000001054371157/aod-video-0000001057311470"
             ]
           },
           {
@@ -83,19 +83,19 @@ const contentDistSidebar = [
                 "label": "基础概念",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/watch-face-introduction-0000001566918497",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-version-0000001252603441",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/watch-face-introduction-0000001566918497",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-version-0000001252603441",
                   {
                     "type": "category",
                     "label": "分辨率与能力集",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x466-capability-0000001881726154",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x454-capability-0000001580733885",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x280-capability-0000001592176765",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x194-capability-0000001591976781",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x408-capability-0000001933842793",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x286-capability-0000002507669002"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x466-capability-0000001881726154",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x454-capability-0000001580733885",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x280-capability-0000001592176765",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x194-capability-0000001591976781",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x408-capability-0000001933842793",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x286-capability-0000002507669002"
                     ]
                   }
                 ]
@@ -105,16 +105,16 @@ const contentDistSidebar = [
                 "label": "Theme Studio Pro使用指南",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/preparation-pro-0000001633687081",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/preparation-pro-0000001633687081",
                   {
                     "type": "category",
                     "label": "开始制作",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/constraints-pro-0000001633566545",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/watch-face-production-pro-0000001583647406",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/value-type-pro-0000001583966586",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/production-example-pro-0000001633927109"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/constraints-pro-0000001633566545",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/watch-face-production-pro-0000001583647406",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/value-type-pro-0000001583966586",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/production-example-pro-0000001633927109"
                     ]
                   },
                   {
@@ -122,16 +122,16 @@ const contentDistSidebar = [
                     "label": "高级功能",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/depth-of-field-pro-0000001633846453",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/color-customize-pro-0000001633687085",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/style-customize-pro-0000001583807170",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/gtwatch-diy-pro-0000001633566549"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/depth-of-field-pro-0000001633846453",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/color-customize-pro-0000001633687085",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/style-customize-pro-0000001583807170",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/gtwatch-diy-pro-0000001633566549"
                     ]
                   },
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/accessibility-pro-0000001583647410",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watch-face-preview-video-pro-0000001583966590",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watch-face-test-pro-0000001633927113",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watchface-faq-pro-0000001733080717"
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/accessibility-pro-0000001583647410",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watch-face-preview-video-pro-0000001583966590",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watch-face-test-pro-0000001633927113",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watchface-faq-pro-0000001733080717"
                 ]
               },
               {
@@ -139,33 +139,33 @@ const contentDistSidebar = [
                 "label": "Theme Studio使用指南",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/preparation-0000001574244245",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/preparation-0000001574244245",
                   {
                     "type": "category",
                     "label": "开始制作",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/start-production-0000001523804314/constraints-0000001580893701",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/start-production-0000001523804314/watch-face-production-0000001530133996",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/start-production-0000001523804314/value-type-0000001529974532"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/start-production-0000001523804314/constraints-0000001580893701",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/start-production-0000001523804314/watch-face-production-0000001530133996",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/start-production-0000001523804314/value-type-0000001529974532"
                     ]
                   },
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/production-example-0000001530293740",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/production-example-0000001530293740",
                   {
                     "type": "category",
                     "label": "高级功能",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/creative-function-0000001461308041/depth-of-field-0000001401719294",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/creative-function-0000001461308041/color-customize-0000001459125433",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/creative-function-0000001461308041/style-customize-0000001401559326",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/creative-function-0000001461308041/gtwatch-diy-0000001077565992"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/creative-function-0000001461308041/depth-of-field-0000001401719294",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/creative-function-0000001461308041/color-customize-0000001459125433",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/creative-function-0000001461308041/style-customize-0000001401559326",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/creative-function-0000001461308041/gtwatch-diy-0000001077565992"
                     ]
                   },
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/accessibility-0000001530453680",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/watch-face-preview-video-0000001207403536",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/watch-face-test-0000001252363479",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/watchface-faq-0000001174035539"
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/accessibility-0000001530453680",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/watch-face-preview-video-0000001207403536",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/watch-face-test-0000001252363479",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/watchface-faq-0000001174035539"
                 ]
               }
             ]
@@ -175,7 +175,7 @@ const contentDistSidebar = [
             "label": "字体",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/font-0000001054251175/font-specification-0000001055508440"
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/font-0000001054251175/font-specification-0000001055508440"
             ]
           },
           {
@@ -183,7 +183,7 @@ const contentDistSidebar = [
             "label": "壁纸",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/wallpaper-0000001054691151/wallpaper-specifications-0000001054789797"
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/wallpaper-0000001054691151/wallpaper-specifications-0000001054789797"
             ]
           },
           {
@@ -191,7 +191,7 @@ const contentDistSidebar = [
             "label": "动态壁纸",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/livewallpaper-0000001054851128/livewallpaper-specifications-0000001055029722"
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/livewallpaper-0000001054851128/livewallpaper-specifications-0000001055029722"
             ]
           },
           {
@@ -199,10 +199,10 @@ const contentDistSidebar = [
             "label": "视频铃声",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/video-ringtone-0000001054371158/video-ringtone-specifications-0000001054469755"
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/video-ringtone-0000001054371158/video-ringtone-specifications-0000001054469755"
             ]
           },
-          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/tablet-themes-0000001078650572",
+          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/tablet-themes-0000001078650572",
           {
             "type": "category",
             "label": "耳机弹窗",
@@ -213,20 +213,20 @@ const contentDistSidebar = [
                 "label": "耳机弹窗主题设计指导及规范",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-introduction-0000002396466992",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-introduction-0000002396466992",
                   {
                     "type": "category",
                     "label": "设计指导",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-bg-0000002429946741",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-type-0000002396307100",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-producticon-0000002396467004",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powercon-0000002429826785",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powerchargeicon-0000002429946753",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powernumber-0000002396307116",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-producttext-0000002396467016",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-operationtext-0000002429826797"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-bg-0000002429946741",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-type-0000002396307100",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-producticon-0000002396467004",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powercon-0000002429826785",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powerchargeicon-0000002429946753",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powernumber-0000002396307116",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-producttext-0000002396467016",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-operationtext-0000002429826797"
                     ]
                   },
                   {
@@ -234,9 +234,9 @@ const contentDistSidebar = [
                     "label": "预览文件",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-overview-0000002396512066",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-detail-0000002429991813",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-video-0000002396352166"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-overview-0000002396512066",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-detail-0000002429991813",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-video-0000002396352166"
                     ]
                   }
                 ]
@@ -253,18 +253,18 @@ const contentDistSidebar = [
                 "label": "百变卡片设计指导及规范",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-introduction-0000002429810857",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-introduction-0000002429810857",
                   {
                     "type": "category",
                     "label": "设计指导",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-type-0000002396307124",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-size-0000002396467028",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-label-0000002429826809",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-script-0000002429946777",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/rounded_corners-0000002581605065",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide--0000002505026369"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-type-0000002396307124",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-size-0000002396467028",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-label-0000002429826809",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-script-0000002429946777",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/rounded_corners-0000002581605065",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide--0000002505026369"
                     ]
                   },
                   {
@@ -277,9 +277,9 @@ const contentDistSidebar = [
                         "label": "封面图",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-overview-0000002396307140/themes-fa-spec-preview-overview1-0000002396467040",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-overview-0000002396307140/themes-fa-spec-preview-overview2-0000002429826821",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-overview-0000002396307140/themes-fa-spec-preview-overview3-0000002429946789"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-overview-0000002396307140/themes-fa-spec-preview-overview1-0000002396467040",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-overview-0000002396307140/themes-fa-spec-preview-overview2-0000002429826821",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-overview-0000002396307140/themes-fa-spec-preview-overview3-0000002429946789"
                         ]
                       },
                       {
@@ -287,12 +287,12 @@ const contentDistSidebar = [
                         "label": "详情图",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-detail-0000002396307148/themes-fa-spec-preview-detail1-0000002396467052",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-detail-0000002396307148/themes-fa-spec-preview-detail2-0000002429826833",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-detail-0000002396307148/themes-fa-spec-preview-detail3-0000002429946801"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-detail-0000002396307148/themes-fa-spec-preview-detail1-0000002396467052",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-detail-0000002396307148/themes-fa-spec-preview-detail2-0000002429826833",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-detail-0000002396307148/themes-fa-spec-preview-detail3-0000002429946801"
                         ]
                       },
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-video-0000002396307164"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-video-0000002396307164"
                     ]
                   }
                 ]
@@ -309,16 +309,16 @@ const contentDistSidebar = [
                 "label": "HarmonyOS 5.0及以上版本主题引擎规范",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-introduction-0000002279818389",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-introduction-0000002279818389",
                   {
                     "type": "category",
                     "label": "应用位置",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-lock-0000002244659534",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-home-0000002244819386",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-fa-0000002471234980",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-charging-0000002490002440"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-lock-0000002244659534",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-home-0000002244819386",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-fa-0000002471234980",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-charging-0000002490002440"
                     ]
                   },
                   {
@@ -326,65 +326,65 @@ const contentDistSidebar = [
                     "label": "基础功能",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-general-0000002504354839",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-text-0000002471394976",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-image-0000002504274921",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-image2-0000002471234986",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-video-0000002504354849",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-time-0000002471394986",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-datetime-0000002504274931",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-countdowntime-0000002471234998",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-imagenumber-0000002504354859",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-imageseries-0000002471394996",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-sourceimage-0000002504274941",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-mask-0000002471235010",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-groupimage-0000002504354869",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-figure-0000002471395006",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-pathutil-0000002504274953",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-swiper-0000002471235020",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-group-0000002504354879",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-button-0000002471395018",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-var-0000002504274963",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-globalvar-0000002471235030",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-vararray-0000002504354889",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-array-0000002471395028",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-exp-0000002504274983",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-stringexp-0000002471235050",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-command-0000002504354913",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-soundcommand-0000002471395052",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-visibilitycommand-0000002504274995",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-intentcommand-0000002471235064",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-videocommand-0000002504354923",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-variablecommand-0000002471395064",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-externcommand-0000002504275007",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-groupcommand-0000002471235074",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-cyclecommand-0000002504354935",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-refreshweather-0000002471395074",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-refreshhealthy-0000002504275017",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-stylecommand-0000002471235086",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-keepscreenon-0000002522202229",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-collaboration-0000002489842474",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-vibratecommand-0000002499411342",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/emotioncommand-0000002551079172",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/scenario_intentcommand-0000002550844196",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/swingcommand-0000002593875461",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-picmulti-0000002504354947",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-varspeedfun-0000002471395086",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-weather-0000002504275029",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-calendar-0000002531331269",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-mediacontroller-0000002471235098",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-healthy-0000002504354957",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-sysdata-0000002471395102",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-stepcount-0000002504275041",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-bluetoothbattery-0000002471235108",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/scenarios-0000002581443929",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-sensorbinder-0000002504354969",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-shake-0000002471395112",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-batterycharging-0000002504275053",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-framerate-0000002471235118",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-variableframerate-0000002504354979",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-microphone-0000002471395124",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-interactivehome-0000002504275063"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-general-0000002504354839",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-text-0000002471394976",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-image-0000002504274921",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-image2-0000002471234986",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-video-0000002504354849",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-time-0000002471394986",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-datetime-0000002504274931",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-countdowntime-0000002471234998",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-imagenumber-0000002504354859",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-imageseries-0000002471394996",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-sourceimage-0000002504274941",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-mask-0000002471235010",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-groupimage-0000002504354869",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-figure-0000002471395006",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-pathutil-0000002504274953",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-swiper-0000002471235020",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-group-0000002504354879",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-button-0000002471395018",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-var-0000002504274963",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-globalvar-0000002471235030",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-vararray-0000002504354889",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-array-0000002471395028",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-exp-0000002504274983",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-stringexp-0000002471235050",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-command-0000002504354913",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-soundcommand-0000002471395052",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-visibilitycommand-0000002504274995",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-intentcommand-0000002471235064",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-videocommand-0000002504354923",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-variablecommand-0000002471395064",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-externcommand-0000002504275007",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-groupcommand-0000002471235074",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-cyclecommand-0000002504354935",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-refreshweather-0000002471395074",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-refreshhealthy-0000002504275017",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-stylecommand-0000002471235086",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-keepscreenon-0000002522202229",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-collaboration-0000002489842474",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-vibratecommand-0000002499411342",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/emotioncommand-0000002551079172",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/scenario_intentcommand-0000002550844196",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/swingcommand-0000002593875461",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-picmulti-0000002504354947",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-varspeedfun-0000002471395086",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-weather-0000002504275029",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-calendar-0000002531331269",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-mediacontroller-0000002471235098",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-healthy-0000002504354957",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-sysdata-0000002471395102",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-stepcount-0000002504275041",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-bluetoothbattery-0000002471235108",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/scenarios-0000002581443929",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-sensorbinder-0000002504354969",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-shake-0000002471395112",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-batterycharging-0000002504275053",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-framerate-0000002471235118",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-variableframerate-0000002504354979",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-microphone-0000002471395124",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-interactivehome-0000002504275063"
                     ]
                   },
                   {
@@ -392,12 +392,12 @@ const contentDistSidebar = [
                     "label": "2D基础动效",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-alphaanimation-0000002504354989",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-positionanimation-0000002471395132",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-rotationanimation-0000002504275071",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-sizeanimation-0000002471235140",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-sourceanimation-0000002504354999",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-variableanimation-0000002471395144"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-alphaanimation-0000002504354989",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-positionanimation-0000002471395132",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-rotationanimation-0000002504275071",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-sizeanimation-0000002471235140",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-sourceanimation-0000002504354999",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-variableanimation-0000002471395144"
                     ]
                   },
                   {
@@ -405,13 +405,13 @@ const contentDistSidebar = [
                     "label": "2D高级动效",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-meshimagetrans-0000002471235150",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-meshimagesinmotion-0000002504355009",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-particleview-0000002471395152",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-dropphysicalview-0000002504275089",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-dealyunlock-0000002471235160",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-collisionworld-0000002522082247",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-fluids-0000002531251233"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-meshimagetrans-0000002471235150",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-meshimagesinmotion-0000002504355009",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-particleview-0000002471395152",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-dropphysicalview-0000002504275089",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-dealyunlock-0000002471235160",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-collisionworld-0000002522082247",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-fluids-0000002531251233"
                     ]
                   },
                   {
@@ -419,12 +419,12 @@ const contentDistSidebar = [
                     "label": "3D高级动效",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-3d-0000002504355019/themes-engine-next-3d-stereoview-0000002471395160",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-3d-0000002504355019/themes-engine-next-3d-multilayer-0000002490002442"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-3d-0000002504355019/themes-engine-next-3d-stereoview-0000002471395160",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-3d-0000002504355019/themes-engine-next-3d-multilayer-0000002490002442"
                     ]
                   },
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-longtake-0000002499571316",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-precautions-0000002504275099"
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-longtake-0000002499571316",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-precautions-0000002504275099"
                 ]
               },
               {
@@ -437,25 +437,25 @@ const contentDistSidebar = [
                     "label": "引擎介绍",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-overview-0000001054588463",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-update-0000001055348462",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/script_specifications-0000001055068447",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-common-attribute-0000001054789799",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-notes-0000001055508442"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-overview-0000001054588463",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-update-0000001055348462",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/script_specifications-0000001055068447",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-common-attribute-0000001054789799",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-notes-0000001055508442"
                     ]
                   },
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/engineupdatedescription-0000001081652457",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/engineupdatedescription-0000001081652457",
                   {
                     "type": "category",
                     "label": "应用位置",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/unlock-application-0000001305921217",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/livewallpaper-0000001073967005",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/interactivewallpaper-0000001170976217",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/widget-0000001245999755",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/widget-separate-0000001337881265",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/globalpersist-0000001205906063"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/unlock-application-0000001305921217",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/livewallpaper-0000001073967005",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/interactivewallpaper-0000001170976217",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/widget-0000001245999755",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/widget-separate-0000001337881265",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/globalpersist-0000001205906063"
                     ]
                   },
                   {
@@ -463,7 +463,7 @@ const contentDistSidebar = [
                     "label": "多机型适配",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/multi-type-adaptation1-0000001258263634/adapter-0000001186735768"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/multi-type-adaptation1-0000001258263634/adapter-0000001186735768"
                     ]
                   },
                   {
@@ -476,21 +476,21 @@ const contentDistSidebar = [
                         "label": "视图",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/text-0000001074068045",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/image-0000001073948153",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/apng-0000001252739922",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/dynamicimage-0000001074184128",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/video-0000001073497817",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/time-0000001074625954",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/datetime-0000001073760045",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/countdowntime-0000001074148056",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/imagenumber-0000001073657745",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/imageseries-0000001073865985",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/sourceimage-0000001073857910",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/mask-0000001074306368",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/groupimage-0000001074465986",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/geometricalfigue-0000001073988154",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/pathutil-0000001074068047"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/text-0000001074068045",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/image-0000001073948153",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/apng-0000001252739922",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/dynamicimage-0000001074184128",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/video-0000001073497817",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/time-0000001074625954",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/datetime-0000001073760045",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/countdowntime-0000001074148056",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/imagenumber-0000001073657745",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/imageseries-0000001073865985",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/sourceimage-0000001073857910",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/mask-0000001074306368",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/groupimage-0000001074465986",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/geometricalfigue-0000001073988154",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/pathutil-0000001074068047"
                         ]
                       },
                       {
@@ -498,8 +498,8 @@ const contentDistSidebar = [
                         "label": "组",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/group1-0000001073497551/group2-0000001074157102",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/group1-0000001073497551/virtualscreen-0000001073506861"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/group1-0000001073497551/group2-0000001074157102",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/group1-0000001073497551/virtualscreen-0000001073506861"
                         ]
                       },
                       {
@@ -507,9 +507,9 @@ const contentDistSidebar = [
                         "label": "控件",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/control-0000001073947889/button-0000001073666789",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/control-0000001073947889/slider-0000001073875027",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/control-0000001073947889/unlocker-0000001073866952"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/control-0000001073947889/button-0000001073666789",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/control-0000001073947889/slider-0000001073875027",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/control-0000001073947889/unlocker-0000001073866952"
                         ]
                       },
                       {
@@ -517,10 +517,10 @@ const contentDistSidebar = [
                         "label": "变量",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/variant-0000001074067773/variant-0000001074315406",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/variant-0000001074067773/globavariant-0000001074475028",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/variant-0000001074067773/vararray-0000001073997192",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/variant-0000001074067773/array-0000001074077081"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/variant-0000001074067773/variant-0000001074315406",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/variant-0000001074067773/globavariant-0000001074475028",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/variant-0000001074067773/vararray-0000001073997192",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/variant-0000001074067773/array-0000001074077081"
                         ]
                       },
                       {
@@ -528,8 +528,8 @@ const contentDistSidebar = [
                         "label": "表达式",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/expressions1-0000001073857640/expressions2-0000001073676327",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/expressions1-0000001073857640/stringexpression-0000001073884555"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/expressions1-0000001073857640/expressions2-0000001073676327",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/expressions1-0000001073857640/stringexpression-0000001073884555"
                         ]
                       },
                       {
@@ -537,19 +537,19 @@ const contentDistSidebar = [
                         "label": "命令",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/command-0000001073876488",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/soundcommand-0000001074324940",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/visibilitycommand-0000001074484560",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/intentcommand-0000001074006732",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/videocommand-0000001074086615",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/variablecommand-0000001073966727",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/externcommand-0000001074644528",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/groupcommand-0000001073778623",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/cyclecommand-0000001074166630",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/refreshweathercommand-0000001194207227",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/vibratecommand-0000001194207997",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/particlecommand-0000001197827299",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/collbodycommand-0000001236339954"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/command-0000001073876488",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/soundcommand-0000001074324940",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/visibilitycommand-0000001074484560",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/intentcommand-0000001074006732",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/videocommand-0000001074086615",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/variablecommand-0000001073966727",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/externcommand-0000001074644528",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/groupcommand-0000001073778623",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/cyclecommand-0000001074166630",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/refreshweathercommand-0000001194207227",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/vibratecommand-0000001194207997",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/particlecommand-0000001197827299",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/collbodycommand-0000001236339954"
                         ]
                       },
                       {
@@ -557,7 +557,7 @@ const contentDistSidebar = [
                         "label": "多语言",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/multilanguage-0000001073759793/picmultilanguage-0000001073876762"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/multilanguage-0000001073759793/picmultilanguage-0000001073876762"
                         ]
                       },
                       {
@@ -565,7 +565,7 @@ const contentDistSidebar = [
                         "label": "数学曲线",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/mathematicalcurve-0000001074306102/varspeedfun-0000001074007004"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/mathematicalcurve-0000001074306102/varspeedfun-0000001074007004"
                         ]
                       },
                       {
@@ -573,13 +573,13 @@ const contentDistSidebar = [
                         "label": "数据开放",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/bluetooth-battery-0000001615147322",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/weather-0000001079515110",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/calendar-0000001126131857",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/mediacontrol-0000001275775133",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/healthy-0000001278806637",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/system-data-0000001339911605",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/stepcount-0000001073516665"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/bluetooth-battery-0000001615147322",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/weather-0000001079515110",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/calendar-0000001126131857",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/mediacontrol-0000001275775133",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/healthy-0000001278806637",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/system-data-0000001339911605",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/stepcount-0000001073516665"
                         ]
                       },
                       {
@@ -587,17 +587,17 @@ const contentDistSidebar = [
                         "label": "适配功能",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/sensorbinder-0000001073778897",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/shake-0000001074484832",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/batterycharging-0000001074325216",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/vibrate-0000001074166910",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/framerate-0000001073676599",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/variableframerate-0000001074644802",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/multiscreens-0000001073884837",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/microphone-0000001215010418"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/sensorbinder-0000001073778897",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/shake-0000001074484832",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/batterycharging-0000001074325216",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/vibrate-0000001074166910",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/framerate-0000001073676599",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/variableframerate-0000001074644802",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/multiscreens-0000001073884837",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/adaptationfunction-0000001074147794/microphone-0000001215010418"
                         ]
                       },
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/edittext-0000001563365008"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/edittext-0000001563365008"
                     ]
                   },
                   {
@@ -605,13 +605,13 @@ const contentDistSidebar = [
                     "label": "2D基础动效",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/alphaanimation-0000001073980103",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/positionanimation-0000001074099995",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/rotationanimation-0000001073889866",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/sizeanimation-0000001074020110",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/sourcesanimation-0000001073792005",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/variableanimation-0000001074338322",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/timeanimation-0000001074180016"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/alphaanimation-0000001073980103",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/positionanimation-0000001074099995",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/rotationanimation-0000001073889866",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/sizeanimation-0000001074020110",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/sourcesanimation-0000001073792005",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/variableanimation-0000001074338322",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/timeanimation-0000001074180016"
                     ]
                   },
                   {
@@ -619,24 +619,24 @@ const contentDistSidebar = [
                     "label": "2D高级动效",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/collisionworld-0000001277995829",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/fluidsview-0000001194289627",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/emui11-0000001074184130",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/collisionworld-0000001277995829",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/fluidsview-0000001194289627",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/emui11-0000001074184130",
                       {
                         "type": "category",
                         "label": "网格化<MeshImage>",
                         "collapsed": true,
                         "items": [
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/meshimage-0000001074342444/meshimage-translation-0000001074502054",
-                          "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/meshimage-0000001074342444/meshimage-sinmotion-0000001074662024"
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/meshimage-0000001074342444/meshimage-translation-0000001074502054",
+                          "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/meshimage-0000001074342444/meshimage-sinmotion-0000001074662024"
                         ]
                       },
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/paint-0000001074333817",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/dropphysicalview-0000001074173881",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/vr-0000001073796119",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/delayunlock-0000001074662022",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/waterwallpaper-0000001073984221",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/particleview-0000001074104113"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/paint-0000001074333817",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/dropphysicalview-0000001074173881",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/vr-0000001073796119",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/delayunlock-0000001074662022",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/waterwallpaper-0000001073984221",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/particleview-0000001074104113"
                     ]
                   },
                   {
@@ -644,27 +644,27 @@ const contentDistSidebar = [
                     "label": "3D高级动效",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x3d-advanced-animation1-0000001305903669/stereoview-0000001079344334",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x3d-advanced-animation1-0000001305903669/multilayer-0000001074173883"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x3d-advanced-animation1-0000001305903669/stereoview-0000001079344334",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x3d-advanced-animation1-0000001305903669/multilayer-0000001074173883"
                     ]
                   },
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/oneshot-0000001214104994",
-                  "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/performance-optimization-0000001439870338",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/oneshot-0000001214104994",
+                  "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/performance-optimization-0000001439870338",
                   {
                     "type": "category",
                     "label": "创意场景",
                     "collapsed": true,
                     "items": [
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/press-extension-0000001089929217",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/biparticle-interaction-0000001089652821",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/steps-0000001077287070",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/vr-0000001096534881",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/multilayer-0000001096315121",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/accelerometer-sensing-0000001096395997",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/cool-charge-0000001096678797",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/shake-0000001077893764",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/perceived-time-0000001077542236",
-                      "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/ismusic-0000001180377564"
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/press-extension-0000001089929217",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/biparticle-interaction-0000001089652821",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/steps-0000001077287070",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/vr-0000001096534881",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/multilayer-0000001096315121",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/accelerometer-sensing-0000001096395997",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/cool-charge-0000001096678797",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/shake-0000001077893764",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/perceived-time-0000001077542236",
+                      "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/ismusic-0000001180377564"
                     ]
                   }
                 ]
@@ -676,9 +676,9 @@ const contentDistSidebar = [
             "label": "华为主题&表盘制作工具",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-tools-0000001104440212/themes-design-tools-0000001054531194",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-tools-0000001104440212/about-theme-studio-pro-0000001783220121",
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/themes-tools-0000001104440212/about-theme-studio-0000001104920048"
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-tools-0000001104440212/themes-design-tools-0000001054531194",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-tools-0000001104440212/about-theme-studio-pro-0000001783220121",
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-tools-0000001104440212/about-theme-studio-0000001104920048"
             ]
           },
           {
@@ -686,7 +686,7 @@ const contentDistSidebar = [
             "label": "带货短视频",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/development-tutorial-0000001054519376/short-video-0000001212373900/short-video-specification-0000001257133917"
+              "distribute/content-dist/theme-center/development-tutorial-0000001054519376/short-video-0000001212373900/short-video-specification-0000001257133917"
             ]
           }
         ]
@@ -696,23 +696,23 @@ const contentDistSidebar = [
         "label": "内容上架",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/主题中心/content-release-0000001054679366/content-listing-0000001054519978",
+          "distribute/content-dist/theme-center/content-release-0000001054679366/content-listing-0000001054519978",
           {
             "type": "category",
             "label": "审核规范",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-pricing-specifications-0000001096951357",
-              "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-security-0000001117436076",
+              "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-pricing-specifications-0000001096951357",
+              "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-security-0000001117436076",
               {
                 "type": "category",
                 "label": "内容审核规范",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/harmonyos5-content-information-test-0000002307551889",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/content-information-test-0000001057563280",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/design-elements-0000001057325102",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/resourceregistrationregulations-0000001835521984"
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/harmonyos5-content-information-test-0000002307551889",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/content-information-test-0000001057563280",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/design-elements-0000001057325102",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/resourceregistrationregulations-0000001835521984"
                 ]
               },
               {
@@ -720,15 +720,15 @@ const contentDistSidebar = [
                 "label": "测试审核规范",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/harmonyos5-theme-test-0000002318301165",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/harmonyos5-card-test-0000002402043997",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/widget-test-0000001458222628",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/aod-test-0000001056821215",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/sportwatch-test-0000001057059331",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/font-test-0000001056570904",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/wallpaper-test-0000001057539336",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/livewallpaper-test-0000001057818928",
-                  "distribute/content-dist/主题中心/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/videoringtone-test-0000001057258921"
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/harmonyos5-theme-test-0000002318301165",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/harmonyos5-card-test-0000002402043997",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/widget-test-0000001458222628",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/aod-test-0000001056821215",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/sportwatch-test-0000001057059331",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/font-test-0000001056570904",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/wallpaper-test-0000001057539336",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/livewallpaper-test-0000001057818928",
+                  "distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/videoringtone-test-0000001057258921"
                 ]
               }
             ]
@@ -738,11 +738,11 @@ const contentDistSidebar = [
             "label": "内容上传指南",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/content-release-0000001054679366/uploadguide-0000001054359939/themes-upload-0000001055029726",
-              "distribute/content-dist/主题中心/content-release-0000001054679366/uploadguide-0000001054359939/sportwatch-upload-0000001054469759",
-              "distribute/content-dist/主题中心/content-release-0000001054679366/uploadguide-0000001054359939/font-upload-0000001055188484",
-              "distribute/content-dist/主题中心/content-release-0000001054679366/uploadguide-0000001054359939/wallpaper-upload-0000001055348466",
-              "distribute/content-dist/主题中心/content-release-0000001054679366/uploadguide-0000001054359939/livewallpaper-upload-0000001055068451"
+              "distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/themes-upload-0000001055029726",
+              "distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/sportwatch-upload-0000001054469759",
+              "distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/font-upload-0000001055188484",
+              "distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/wallpaper-upload-0000001055348466",
+              "distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/livewallpaper-upload-0000001055068451"
             ]
           }
         ]
@@ -757,46 +757,46 @@ const contentDistSidebar = [
             "label": "版本功能特性介绍",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation31-0000001451415692",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation30-0000001467827549",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation29-0000001405211241",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation28-0000001302936976",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation27-0000001346748377",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation26-0000001291631441",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation25-0000001196070090",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation24-0000001176095250",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation23-0000001199534133",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation22-0000001144774530",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation21-0000001172333973",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation20-1-0000001123914610",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation20-0000001151247621",
-              "distribute/content-dist/主题中心/themes-developer-0000001151327367/funcation-0000001330008456/funcation19-0000001104887590"
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation31-0000001451415692",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation30-0000001467827549",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation29-0000001405211241",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation28-0000001302936976",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation27-0000001346748377",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation26-0000001291631441",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation25-0000001196070090",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation24-0000001176095250",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation23-0000001199534133",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation22-0000001144774530",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation21-0000001172333973",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation20-1-0000001123914610",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation20-0000001151247621",
+              "distribute/content-dist/theme-center/themes-developer-0000001151327367/funcation-0000001330008456/funcation19-0000001104887590"
             ]
           },
-          "distribute/content-dist/主题中心/themes-developer-0000001151327367/statements-0000001118032724",
-          "distribute/content-dist/主题中心/themes-developer-0000001151327367/verification-rule-0000001173432851"
+          "distribute/content-dist/theme-center/themes-developer-0000001151327367/statements-0000001118032724",
+          "distribute/content-dist/theme-center/themes-developer-0000001151327367/verification-rule-0000001173432851"
         ]
       },
-      "distribute/content-dist/主题中心/top-quality-category-recommendation-0000001054359347",
+      "distribute/content-dist/theme-center/top-quality-category-recommendation-0000001054359347",
       {
         "type": "category",
         "label": "开发者须知",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/主题中心/developer-notes-0000001054559367/complaint-rules-0000001055599215",
-          "distribute/content-dist/主题中心/developer-notes-0000001054559367/faq-0000001055159128",
-          "distribute/content-dist/主题中心/developer-notes-0000001054559367/designers-forum-0000001055279171",
-          "distribute/content-dist/主题中心/developer-notes-0000001054559367/management-specification-0000001321642033"
+          "distribute/content-dist/theme-center/developer-notes-0000001054559367/complaint-rules-0000001055599215",
+          "distribute/content-dist/theme-center/developer-notes-0000001054559367/faq-0000001055159128",
+          "distribute/content-dist/theme-center/developer-notes-0000001054559367/designers-forum-0000001055279171",
+          "distribute/content-dist/theme-center/developer-notes-0000001054559367/management-specification-0000001321642033"
         ]
       },
-      "distribute/content-dist/主题中心/protocol-0000001054239369",
+      "distribute/content-dist/theme-center/protocol-0000001054239369",
       {
         "type": "category",
         "label": "杂志锁屏",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/主题中心/zazhisuoping-0000001206441666/zazhisuoping-hz-0000001319133694",
-          "distribute/content-dist/主题中心/zazhisuoping-0000001206441666/zazhisuoping-scsh-0000001318654366"
+          "distribute/content-dist/theme-center/zazhisuoping-0000001206441666/zazhisuoping-hz-0000001319133694",
+          "distribute/content-dist/theme-center/zazhisuoping-0000001206441666/zazhisuoping-scsh-0000001318654366"
         ]
       },
       {
@@ -804,7 +804,7 @@ const contentDistSidebar = [
         "label": "铃声",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/主题中心/bell-0000001386428057/bell-partner-0000001336268078"
+          "distribute/content-dist/theme-center/bell-0000001386428057/bell-partner-0000001336268078"
         ]
       }
     ]
@@ -819,9 +819,9 @@ const contentDistSidebar = [
         "label": "新手指南",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/音频能力平台/新手指南/entry_guide-0000001077976896",
-          "distribute/content-dist/音频能力平台/新手指南/entry_introduction-0000001078105366",
-          "distribute/content-dist/音频能力平台/新手指南/techrequirement-0000001467064417"
+          "distribute/content-dist/audio-platform/新手指南/entry_guide-0000001077976896",
+          "distribute/content-dist/audio-platform/新手指南/entry_introduction-0000001078105366",
+          "distribute/content-dist/audio-platform/新手指南/techrequirement-0000001467064417"
         ]
       },
       {
@@ -829,10 +829,10 @@ const contentDistSidebar = [
         "label": "有声内容发布",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/音频能力平台/有声内容发布/import_audio-0000001100386317",
-          "distribute/content-dist/音频能力平台/有声内容发布/manage_audio-0000001077975726",
-          "distribute/content-dist/音频能力平台/有声内容发布/agreement-0000001078104194",
-          "distribute/content-dist/音频能力平台/有声内容发布/report-0000001078263798"
+          "distribute/content-dist/audio-platform/有声内容发布/import_audio-0000001100386317",
+          "distribute/content-dist/audio-platform/有声内容发布/manage_audio-0000001077975726",
+          "distribute/content-dist/audio-platform/有声内容发布/agreement-0000001078104194",
+          "distribute/content-dist/audio-platform/有声内容发布/report-0000001078263798"
         ]
       },
       {
@@ -840,7 +840,7 @@ const contentDistSidebar = [
         "label": "开发者须知",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/音频能力平台/开发者须知/faq-0000001078423772"
+          "distribute/content-dist/audio-platform/开发者须知/faq-0000001078423772"
         ]
       }
     ]
@@ -850,20 +850,20 @@ const contentDistSidebar = [
     "label": "教育中心",
     "collapsed": true,
     "items": [
-      "distribute/content-dist/教育中心/educenter-introduction-0000001124416711",
-      "distribute/content-dist/教育中心/educenter-apply-0000001058615913",
+      "distribute/content-dist/education-center/educenter-introduction-0000001124416711",
+      "distribute/content-dist/education-center/educenter-apply-0000001058615913",
       {
         "type": "category",
         "label": "内容管理",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/教育中心/educenter-content-0000001145356855/educenter-cource-0000001050782860",
-          "distribute/content-dist/教育中心/educenter-content-0000001145356855/educenter-uploadtask-0000001052357079",
-          "distribute/content-dist/教育中心/educenter-content-0000001145356855/educenter-importcourse-0000001211701354",
-          "distribute/content-dist/教育中心/educenter-content-0000001145356855/educenter-material-0000001174571148",
-          "distribute/content-dist/教育中心/educenter-content-0000001145356855/educenter-deliveryinfo-0000001074015274",
-          "distribute/content-dist/教育中心/educenter-content-0000001145356855/educenter-album-0000001098756880",
-          "distribute/content-dist/教育中心/educenter-content-0000001145356855/educenter-package-0000001145436887"
+          "distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-cource-0000001050782860",
+          "distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-uploadtask-0000001052357079",
+          "distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-importcourse-0000001211701354",
+          "distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-material-0000001174571148",
+          "distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-deliveryinfo-0000001074015274",
+          "distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-album-0000001098756880",
+          "distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-package-0000001145436887"
         ]
       },
       {
@@ -871,15 +871,15 @@ const contentDistSidebar = [
         "label": "商品促销活动",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/教育中心/educenter-campaign-activity-0000001098917026/educenter-single-campaign-0000001097579228"
+          "distribute/content-dist/education-center/educenter-campaign-activity-0000001098917026/educenter-single-campaign-0000001097579228"
         ]
       },
-      "distribute/content-dist/教育中心/educenter-basic-0000001050822889",
-      "distribute/content-dist/教育中心/educenter-report-0000001050782862",
-      "distribute/content-dist/教育中心/educenter-sandtest-0000001060204148",
-      "distribute/content-dist/教育中心/educenter-checklist-0000001059678993",
-      "distribute/content-dist/教育中心/educenter-agreements-0000001207441472",
-      "distribute/content-dist/教育中心/educenter-faq-0000001078744602"
+      "distribute/content-dist/education-center/educenter-basic-0000001050822889",
+      "distribute/content-dist/education-center/educenter-report-0000001050782862",
+      "distribute/content-dist/education-center/educenter-sandtest-0000001060204148",
+      "distribute/content-dist/education-center/educenter-checklist-0000001059678993",
+      "distribute/content-dist/education-center/educenter-agreements-0000001207441472",
+      "distribute/content-dist/education-center/educenter-faq-0000001078744602"
     ]
   },
   {
@@ -887,31 +887,31 @@ const contentDistSidebar = [
     "label": "华为视频百花号",
     "collapsed": true,
     "items": [
-      "distribute/content-dist/华为视频百花号/service-introduction-0000001270924713",
-      "distribute/content-dist/华为视频百花号/service-scene-0000001270684913",
+      "distribute/content-dist/huawei-video-baihua/service-introduction-0000001270924713",
+      "distribute/content-dist/huawei-video-baihua/service-scene-0000001270684913",
       {
         "type": "category",
         "label": "Content Connect API",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/华为视频百花号/Content Connect API/content-connect-api-version-0000001226445582",
+          "distribute/content-dist/huawei-video-baihua/Content Connect API/content-connect-api-version-0000001226445582",
           {
             "type": "category",
             "label": "接入指南",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/华为视频百花号/Content Connect API/接入指南/apply-permission-0000001270685973",
-              "distribute/content-dist/华为视频百花号/Content Connect API/接入指南/permission-introduction-0000001270805933"
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/接入指南/apply-permission-0000001270685973",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/接入指南/permission-introduction-0000001270805933"
             ]
           },
-          "distribute/content-dist/华为视频百花号/Content Connect API/common-definitions-0000001270685745",
-          "distribute/content-dist/华为视频百花号/Content Connect API/account-authorization-0000001270805725",
+          "distribute/content-dist/huawei-video-baihua/Content Connect API/common-definitions-0000001270685745",
+          "distribute/content-dist/huawei-video-baihua/Content Connect API/account-authorization-0000001270805725",
           {
             "type": "category",
             "label": "用户管理",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/华为视频百花号/Content Connect API/用户管理/get-manageable-users-0000001225967782"
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/用户管理/get-manageable-users-0000001225967782"
             ]
           },
           {
@@ -919,29 +919,29 @@ const contentDistSidebar = [
             "label": "视频管理",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/image-upload-0000001226447666",
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/video-upload-0000001270687833",
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/video-multipart-initialization-0000001270807809",
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/video-multipart-upload-0000001270927645",
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/video-multipart-combination-0000001226127738",
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/video-create-0000001226287686",
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/video-detail-0000001270647825",
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/video-list-0000001225967790",
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/video-delete-0000001226447674",
-              "distribute/content-dist/华为视频百花号/Content Connect API/视频管理/video-offline-0000001270687837"
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/image-upload-0000001226447666",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-upload-0000001270687833",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-multipart-initialization-0000001270807809",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-multipart-upload-0000001270927645",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-multipart-combination-0000001226127738",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-create-0000001226287686",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-detail-0000001270647825",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-list-0000001225967790",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-delete-0000001226447674",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-offline-0000001270687837"
             ]
           },
-          "distribute/content-dist/华为视频百花号/Content Connect API/algorithm-introduction-0000001270645741",
-          "distribute/content-dist/华为视频百花号/Content Connect API/upload-file-0000001225965698",
-          "distribute/content-dist/华为视频百花号/Content Connect API/response-introduction-0000001226445586",
-          "distribute/content-dist/华为视频百花号/Content Connect API/emoticons-0000001270925565"
+          "distribute/content-dist/huawei-video-baihua/Content Connect API/algorithm-introduction-0000001270645741",
+          "distribute/content-dist/huawei-video-baihua/Content Connect API/upload-file-0000001225965698",
+          "distribute/content-dist/huawei-video-baihua/Content Connect API/response-introduction-0000001226445586",
+          "distribute/content-dist/huawei-video-baihua/Content Connect API/emoticons-0000001270925565"
         ]
       },
-      "distribute/content-dist/华为视频百花号/specification-0000001270645005",
-      "distribute/content-dist/华为视频百花号/restrictions-0000001225964966",
-      "distribute/content-dist/华为视频百花号/service-terms-0000001226444862",
-      "distribute/content-dist/华为视频百花号/cooperation-0000001270685013",
-      "distribute/content-dist/华为视频百花号/terminology-0000001270804981"
+      "distribute/content-dist/huawei-video-baihua/specification-0000001270645005",
+      "distribute/content-dist/huawei-video-baihua/restrictions-0000001225964966",
+      "distribute/content-dist/huawei-video-baihua/service-terms-0000001226444862",
+      "distribute/content-dist/huawei-video-baihua/cooperation-0000001270685013",
+      "distribute/content-dist/huawei-video-baihua/terminology-0000001270804981"
     ]
   },
   {
@@ -949,29 +949,29 @@ const contentDistSidebar = [
     "label": "小艺输入法设计师平台",
     "collapsed": true,
     "items": [
-      "distribute/content-dist/小艺输入法设计师平台/businessprofile-0000001364206301",
-      "distribute/content-dist/小艺输入法设计师平台/cooperationmodel-0000001364087449",
-      "distribute/content-dist/小艺输入法设计师平台/orientation-0000001311048616",
-      "distribute/content-dist/小艺输入法设计师平台/billing-process-0000001364208669",
+      "distribute/content-dist/xiaoyi-ime-designer/businessprofile-0000001364206301",
+      "distribute/content-dist/xiaoyi-ime-designer/cooperationmodel-0000001364087449",
+      "distribute/content-dist/xiaoyi-ime-designer/orientation-0000001311048616",
+      "distribute/content-dist/xiaoyi-ime-designer/billing-process-0000001364208669",
       {
         "type": "category",
         "label": "内容上架",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/小艺输入法设计师平台/content-on-the-shelves-0000001363969673/content-listing-process-0000001364289837",
+          "distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-process-0000001364289837",
           {
             "type": "category",
             "label": "内容设计规范",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/小艺输入法设计师平台/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/emoticon-specification-0000001364089549",
-              "distribute/content-dist/小艺输入法设计师平台/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/skin-specification-0000001311370036",
-              "distribute/content-dist/小艺输入法设计师平台/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/skin2-specification-0000002390750545"
+              "distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/emoticon-specification-0000001364089549",
+              "distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/skin-specification-0000001311370036",
+              "distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/skin2-specification-0000002390750545"
             ]
           },
-          "distribute/content-dist/小艺输入法设计师平台/content-on-the-shelves-0000001363969673/neirongshenheguifan-0000001419878881",
-          "distribute/content-dist/小艺输入法设计师平台/content-on-the-shelves-0000001363969673/basic-content-requirements-0000001311210204",
-          "distribute/content-dist/小艺输入法设计师平台/content-on-the-shelves-0000001363969673/xieyi-0000001420885881"
+          "distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/neirongshenheguifan-0000001419878881",
+          "distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/basic-content-requirements-0000001311210204",
+          "distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/xieyi-0000001420885881"
         ]
       },
       {
@@ -984,24 +984,24 @@ const contentDistSidebar = [
             "label": "投诉处理规则",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/小艺输入法设计师平台/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/objective-0000001364211049",
-              "distribute/content-dist/小艺输入法设计师平台/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/lllegal-and-infringing-content-0000001311371976",
+              "distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/objective-0000001364211049",
+              "distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/lllegal-and-infringing-content-0000001311371976",
               {
                 "type": "category",
                 "label": "违规及侵权处理流程",
                 "collapsed": true,
                 "items": [
-                  "distribute/content-dist/小艺输入法设计师平台/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-handling-process-0000001363971609/violation-processing-process-0000001364291801",
-                  "distribute/content-dist/小艺输入法设计师平台/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-handling-process-0000001363971609/infringement-process-0000001364091785"
+                  "distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-handling-process-0000001363971609/violation-processing-process-0000001364291801",
+                  "distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-handling-process-0000001363971609/infringement-process-0000001364091785"
                 ]
               },
-              "distribute/content-dist/小艺输入法设计师平台/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-pandling-process-0000001364211453",
-              "distribute/content-dist/小艺输入法设计师平台/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/precautions-0000001311372392"
+              "distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-pandling-process-0000001364211453",
+              "distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/precautions-0000001311372392"
             ]
           }
         ]
       },
-      "distribute/content-dist/小艺输入法设计师平台/faq-0000001372485561"
+      "distribute/content-dist/xiaoyi-ime-designer/faq-0000001372485561"
     ]
   }
 ];
