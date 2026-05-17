@@ -28,5 +28,4 @@ docusaurus.config.distribute.js
 docusaurus.config.monetize.js
 docusaurus.config.tools.js
 docusaurus.config.misc.js
-sidebars-*.js
 scripts/build-all.sh
