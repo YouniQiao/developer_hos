@@ -1,7 +1,8 @@
 ---
-title: 元服务开发
+title: "元服务开发"
+sidebar_position: 1
 ---
 
 # 元服务开发
 
-元服务开发内容建设中...
+HarmonyOS 元服务（Atomic Service）开发指南。

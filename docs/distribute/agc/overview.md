@@ -1,7 +1,8 @@
 ---
-title: AppGallery Connect
+title: "AppGallery Connect"
+sidebar_position: 1
 ---
 
 # AppGallery Connect
 
-AppGallery Connect内容建设中...
+AppGallery Connect 为开发者提供一站式应用服务。

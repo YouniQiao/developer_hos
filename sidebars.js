@@ -25,6 +25,9 @@ const faqSidebar = require('./sidebars-faq.js').faqSidebar;
 const contentDistSidebar = require('./sidebars-content-dist.js').contentDistSidebar;
 const serviceDistSidebar = require('./sidebars-service-dist.js').serviceDistSidebar;
 const appDistSidebar = require('./sidebars-app-dist.js').appDistSidebar;
+const atomicSidebar = require('./sidebars-atomic.js').atomicSidebar;
+const agcSidebarFull = require('./sidebars-agc.js').agcSidebar;
+const xiaoyiSidebar = require('./sidebars-xiaoyi.js').xiaoyiSidebar;
 
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
@@ -232,9 +235,7 @@ const sidebars = {
       },
     ],
   },
-],tomicDevSidebar: [
-    'dev/atomic-dev/overview',
-  ],
+],atomicSidebar,
   ndkDevSidebar: [
     'dev/ndk-dev/ndk-development-overview',
     'dev/ndk-dev/create-with-ndk',
@@ -490,7 +491,7 @@ const sidebars = {
   faqSidebar: [
     'dev/faq/overview',
   ],
-  atomicSidebar: [
+  oldAtomicStartupSidebar: [
     {
       type: 'html',
       value: '<div style="text-indent: 4px;">从这里开始</div>', 
@@ -1290,9 +1291,8 @@ const sidebars = {
     'security/recommended-use-of-device-id',
     'security/arkweb-component-security',
   ],
-  agcSidebar: [
-    'distribute/agc/overview',
-  ],
+  agcSidebarFull,
+  xiaoyiSidebar,
   appDistSidebar,
   serviceDistSidebar,
   contentDistSidebar,

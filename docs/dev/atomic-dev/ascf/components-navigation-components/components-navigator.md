@@ -1,0 +1,6 @@
+---
+title: "navigator"
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-navigator
+---
+
+# navigator

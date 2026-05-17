@@ -18,3 +18,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Split build (local dev only, not for repo)
+docusaurus.base.js
+docusaurus.config.dev-app.js
+docusaurus.config.dev-adv.js
+docusaurus.config.design.js
+docusaurus.config.distribute.js
+docusaurus.config.monetize.js
+docusaurus.config.tools.js
+docusaurus.config.misc.js
+sidebars-*.js
+scripts/build-all.sh

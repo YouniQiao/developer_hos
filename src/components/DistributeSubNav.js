@@ -15,6 +15,12 @@ const NAV_ITEMS = [
     desc: 'AppGallery Connect 一站式服务平台',
   },
   {
+    label: '小艺开放平台',
+    path: '/docs/distribute/xiaoyi/overview',
+    match: '/docs/distribute/xiaoyi',
+    desc: '小艺智能体开发与开放平台',
+  },
+  {
     label: '应用分发',
     path: '/docs/distribute/app-dist/应用市场/x50101',
     match: '/docs/distribute/app-dist',
