@@ -819,9 +819,9 @@ const contentDistSidebar = [
         "label": "新手指南",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/audio-platform/新手指南/entry_guide-0000001077976896",
-          "distribute/content-dist/audio-platform/新手指南/entry_introduction-0000001078105366",
-          "distribute/content-dist/audio-platform/新手指南/techrequirement-0000001467064417"
+          "distribute/content-dist/audio-platform/beginner-guide/entry_guide-0000001077976896",
+          "distribute/content-dist/audio-platform/beginner-guide/entry_introduction-0000001078105366",
+          "distribute/content-dist/audio-platform/beginner-guide/techrequirement-0000001467064417"
         ]
       },
       {
@@ -829,10 +829,10 @@ const contentDistSidebar = [
         "label": "有声内容发布",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/audio-platform/有声内容发布/import_audio-0000001100386317",
-          "distribute/content-dist/audio-platform/有声内容发布/manage_audio-0000001077975726",
-          "distribute/content-dist/audio-platform/有声内容发布/agreement-0000001078104194",
-          "distribute/content-dist/audio-platform/有声内容发布/report-0000001078263798"
+          "distribute/content-dist/audio-platform/audio-content-publish/import_audio-0000001100386317",
+          "distribute/content-dist/audio-platform/audio-content-publish/manage_audio-0000001077975726",
+          "distribute/content-dist/audio-platform/audio-content-publish/agreement-0000001078104194",
+          "distribute/content-dist/audio-platform/audio-content-publish/report-0000001078263798"
         ]
       },
       {
@@ -840,7 +840,7 @@ const contentDistSidebar = [
         "label": "开发者须知",
         "collapsed": true,
         "items": [
-          "distribute/content-dist/audio-platform/开发者须知/faq-0000001078423772"
+          "distribute/content-dist/audio-platform/developer-notice/faq-0000001078423772"
         ]
       }
     ]
@@ -900,8 +900,8 @@ const contentDistSidebar = [
             "label": "接入指南",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/接入指南/apply-permission-0000001270685973",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/接入指南/permission-introduction-0000001270805933"
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/access-guide/apply-permission-0000001270685973",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/access-guide/permission-introduction-0000001270805933"
             ]
           },
           "distribute/content-dist/huawei-video-baihua/Content Connect API/common-definitions-0000001270685745",
@@ -911,7 +911,7 @@ const contentDistSidebar = [
             "label": "用户管理",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/用户管理/get-manageable-users-0000001225967782"
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/user-management/get-manageable-users-0000001225967782"
             ]
           },
           {
@@ -919,16 +919,16 @@ const contentDistSidebar = [
             "label": "视频管理",
             "collapsed": true,
             "items": [
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/image-upload-0000001226447666",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-upload-0000001270687833",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-multipart-initialization-0000001270807809",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-multipart-upload-0000001270927645",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-multipart-combination-0000001226127738",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-create-0000001226287686",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-detail-0000001270647825",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-list-0000001225967790",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-delete-0000001226447674",
-              "distribute/content-dist/huawei-video-baihua/Content Connect API/视频管理/video-offline-0000001270687837"
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/image-upload-0000001226447666",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-upload-0000001270687833",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-initialization-0000001270807809",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-upload-0000001270927645",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-combination-0000001226127738",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-create-0000001226287686",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-detail-0000001270647825",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-list-0000001225967790",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-delete-0000001226447674",
+              "distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-offline-0000001270687837"
             ]
           },
           "distribute/content-dist/huawei-video-baihua/Content Connect API/algorithm-introduction-0000001270645741",

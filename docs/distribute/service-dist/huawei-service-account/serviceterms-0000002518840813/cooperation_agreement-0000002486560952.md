@@ -1,6 +1,6 @@
 ---
-title: "huawei-service-account平台合作协议"
+title: "华为服务号平台合作协议"
 displayed_sidebar: serviceDistSidebar
 ---
 
-# huawei-service-account平台合作协议
+# 华为服务号平台合作协议

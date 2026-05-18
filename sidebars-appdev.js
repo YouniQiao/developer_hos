@@ -2,7 +2,7 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 module.exports = {
   appDevSidebar: [
-    'dev/app-dev/overview',
+    'dev/app-dev/getting-started/overview',
     {
       type: 'category',
       label: '应用框架',
@@ -119,6 +119,208 @@ module.exports = {
         {"type": "category", "label": "Neural Network Runtime Kit（Neural Network运行时服务）", "collapsed": true, "items": ["dev/app-dev/ai/neural-network-runtime-kit/neural-network-runtime-kit-introduction", "dev/app-dev/ai/neural-network-runtime-kit/neural-network-runtime-guidelines"], "link": {"type": "doc", "id": "dev/app-dev/ai/neural-network-runtime-kit"}},
         {"type": "category", "label": "Speech Kit（场景化语音服务）", "collapsed": true, "items": ["dev/app-dev/ai/speech-kit-guide/speech-production", "dev/app-dev/ai/speech-kit-guide/speech-textreader-guide", "dev/app-dev/ai/speech-kit-guide/speech-aicaption-guide"], "link": {"type": "doc", "id": "dev/app-dev/ai/speech-kit-guide"}},
         {"type": "category", "label": "Vision Kit（场景化视觉服务）", "collapsed": true, "items": ["dev/app-dev/ai/vision-kit-guide/vision-introduction", "dev/app-dev/ai/vision-kit-guide/vision-interactiveliveness", "dev/app-dev/ai/vision-kit-guide/vision-cardrecognition", "dev/app-dev/ai/vision-kit-guide/vision-documentscanner", "dev/app-dev/ai/vision-kit-guide/vision-imageanalyzer", "dev/app-dev/ai/vision-kit-guide/visionkit-personal-data"], "link": {"type": "doc", "id": "dev/app-dev/ai/vision-kit-guide"}},
+      ],
+    },
+    {
+      type: 'category',
+      label: '多设备开发',
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: '一次开发，多端部署',
+          collapsed: true,
+          items: [
+            'dev/app-dev/multi-device/bpta-multi-device-overview',
+            'dev/app-dev/multi-device/bpta-multi-device-start',
+            'dev/app-dev/multi-device/bpta-multi-device-design-principles',
+            {
+              type: 'category',
+              label: '多设备界面开发',
+              collapsed: true,
+              items: [
+                {
+                  type: 'category',
+                  label: '多设备窗口形态',
+                  collapsed: true,
+                  items: [
+                    'dev/app-dev/multi-device/bpta-multi-device-window-mode',
+                    'dev/app-dev/multi-device/bpta-multi-device-window-direction',
+                    'dev/app-dev/multi-device/bpta-multi-device-window-immersive',
+                  ],
+                },
+                'dev/app-dev/multi-device/bpta-multi-device-layout-overview',
+                {
+                  type: 'category',
+                  label: '界面布局响应式变化',
+                  collapsed: true,
+                  items: [
+                    'dev/app-dev/multi-device/bpta-multi-device-responsive-layout',
+                    'dev/app-dev/multi-device/bpta-multi-device-page-layout',
+                    'dev/app-dev/multi-device/bpta-multi-device-component-layout',
+                    'dev/app-dev/multi-device/bpta-multi-device-screen-layout',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '界面元素自适应变化',
+                  collapsed: true,
+                  items: [
+                    'dev/app-dev/multi-device/bpta-multi-device-adaptive-layout',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '特殊界面布局场景',
+                  collapsed: true,
+                  items: [
+                    'dev/app-dev/multi-device/bpta-folded-hover',
+                    'dev/app-dev/multi-device/bpta-web-adaptation',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '多设备交互',
+                  collapsed: true,
+                  items: [
+                    'dev/app-dev/multi-device/bpta-multi-interaction',
+                  ],
+                },
+                'dev/app-dev/multi-device/bpta-multi-device-resource',
+                {
+                  type: 'category',
+                  label: '多设备界面开发案例',
+                  collapsed: true,
+                  items: [
+                    'dev/app-dev/multi-device/multi-video-app',
+                    'dev/app-dev/multi-device/multi-ticket-class',
+                    'dev/app-dev/multi-device/multi-business-office',
+                    'dev/app-dev/multi-device/bpta-multi-music-app-overview',
+                    'dev/app-dev/multi-device/multi-shopping-price-comparison',
+                    'dev/app-dev/multi-device/multi-travel-accommodation',
+                    'dev/app-dev/multi-device/multi-travel-navigation',
+                    'dev/app-dev/multi-device/multi-convenient-life',
+                    'dev/app-dev/multi-device/multi-financial-app',
+                    'dev/app-dev/multi-device/multi-community-app',
+                    'dev/app-dev/multi-device/multi-news-read',
+                    'dev/app-dev/multi-device/multi-mobile-payment',
+                    'dev/app-dev/multi-device/multi-communication-app',
+                    'dev/app-dev/multi-device/multi-picture-app',
+                    'dev/app-dev/multi-device/bpta-multi_game',
+                    'dev/app-dev/multi-device/bpta-multi-settings-application-page',
+                    'dev/app-dev/multi-device/multi-short-video-app',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: '多设备功能开发',
+              collapsed: true,
+              items: [
+                'dev/app-dev/multi-device/bpta-multi-device-function',
+                'dev/app-dev/multi-device/bpta-multi-device-camera',
+                'dev/app-dev/multi-device/bpta-multi-device-screen-diff',
+              ],
+            },
+            'dev/app-dev/multi-device/bpta-multi-device-ide',
+          ],
+        },
+        {
+          type: 'category',
+          label: '自由流转',
+          collapsed: true,
+          items: [
+            'dev/app-dev/multi-device/bpta-hopping',
+            {
+              type: 'category',
+              label: '跨端迁移',
+              collapsed: true,
+              items: [
+                'dev/app-dev/multi-device/bpta-continue-cast',
+                'dev/app-dev/multi-device/bpta-continue-data',
+                'dev/app-dev/multi-device/bpta-application-continue-progess',
+              ],
+            },
+            {
+              type: 'category',
+              label: '多端协同',
+              collapsed: true,
+              items: [
+                'dev/app-dev/multi-device/bpta-vdeocast',
+                'dev/app-dev/multi-device/bpta-audio-cast',
+                'dev/app-dev/multi-device/bpta-distribute-drag-cast',
+                'dev/app-dev/multi-device/bpta-unified-drag-and-drop',
+                'dev/app-dev/multi-device/bpta-distributed-pasteboard-cast',
+                'dev/app-dev/multi-device/bpta-distributed-pasteboard',
+                'dev/app-dev/multi-device/bpta-application-knock-video-share',
+                'dev/app-dev/multi-device/bpta-application-knock-file-share',
+                'dev/app-dev/multi-device/bpta-application-gesture-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '典型全场景协同开发案例',
+              collapsed: true,
+              items: [
+                'dev/app-dev/multi-device/bpta-collaboration-office',
+                'dev/app-dev/multi-device/bpta-smartwatchnavigation',
+                'dev/app-dev/multi-device/bpta-continue',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '多端设备体验提升',
+          collapsed: true,
+          items: [
+            {
+              type: 'category',
+              label: '手机',
+              collapsed: true,
+              items: [
+                'dev/app-dev/multi-device/bpta-foldable-guide',
+                'dev/app-dev/multi-device/bpta-purax-guide',
+                'dev/app-dev/multi-device/bpta-matext-guide',
+              ],
+            },
+            {
+              type: 'category',
+              label: '平板',
+              collapsed: true,
+              items: [
+                'dev/app-dev/multi-device/bpta-pad-guide',
+              ],
+            },
+            {
+              type: 'category',
+              label: '电脑',
+              collapsed: true,
+              items: [
+                'dev/app-dev/multi-device/bpta-pc-guide',
+                'dev/app-dev/multi-device/bpta-mate-book-fold',
+              ],
+            },
+            {
+              type: 'category',
+              label: '穿戴',
+              collapsed: true,
+              items: [
+                'dev/app-dev/multi-device/bpta-smartwatch',
+                'dev/app-dev/multi-device/bpta-lite-wearable-guide',
+              ],
+            },
+            {
+              type: 'category',
+              label: '智慧屏',
+              collapsed: true,
+              items: [
+                'dev/app-dev/multi-device/bpta-matetv-guide',
+              ],
+            },
+          ],
+        },
       ],
     },
   ],};

@@ -1,6 +1,6 @@
 ---
-title: "game-center介绍"
+title: "游戏中心介绍"
 displayed_sidebar: appDistSidebar
 ---
 
-# game-center介绍
+# 游戏中心介绍

@@ -1,6 +1,6 @@
 ---
-title: "app-market更新功能"
+title: "应用市场更新功能"
 displayed_sidebar: appDevSidebar
 ---
 
-# app-market更新功能
+# 应用市场更新功能

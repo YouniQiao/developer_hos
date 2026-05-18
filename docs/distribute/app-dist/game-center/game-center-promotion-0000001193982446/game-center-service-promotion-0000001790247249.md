@@ -1,6 +1,6 @@
 ---
-title: "game-center服务推广"
+title: "游戏中心服务推广"
 displayed_sidebar: appDistSidebar
 ---
 
-# game-center服务推广
+# 游戏中心服务推广

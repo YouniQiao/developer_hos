@@ -1,6 +1,6 @@
 /**
  * Dev & Testing Secondary Navigation Bar
- * Items: 版本说明 | 入门与准备 | 应用开发 | 元服务开发 | NDK开发 | 游戏开发 | 行业解决方案 | 测试 | FAQ
+ * Items: 版本说明 | 应用开发 | 元服务开发 | NDK开发 | 游戏开发 | 行业解决方案 | 测试 | FAQ
  */
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
@@ -15,22 +15,10 @@ const NAV_ITEMS = [
     desc: 'HarmonyOS 版本更新与变更说明',
   },
   {
-    label: '入门与准备',
-    path: '/docs/dev/getting-started/overview',
-    match: '/docs/dev/getting-started',
-    desc: '开发环境搭建与快速入门',
-  },
-  {
     label: '应用开发',
-    path: '/docs/dev/app-dev/overview',
+    path: '/docs/dev/app-dev/getting-started/overview',
     match: '/docs/dev/app-dev',
     desc: '原生鸿蒙应用开发指南',
-  },
-  {
-    label: '多设备开发',
-    path: '/docs/dev/multi-device/bpta-multi-device-overview',
-    match: '/docs/dev/multi-device',
-    desc: '折叠屏、平板、手表等多设备适配',
   },
   {
     label: '元服务开发',
@@ -74,7 +62,8 @@ export default function DevSubNav() {
   const location = useLocation();
 
   function isActive(item) {
-    return location.pathname.startsWith(item.match);
+    const matches = Array.isArray(item.match) ? item.match : [item.match];
+    return matches.some(m => location.pathname.startsWith(m));
   }
 
   return (

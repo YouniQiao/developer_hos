@@ -1,6 +1,6 @@
 ---
-title: "huawei-service-account介绍"
+title: "华为服务号介绍"
 displayed_sidebar: serviceDistSidebar
 ---
 
-# huawei-service-account介绍
+# 华为服务号介绍
