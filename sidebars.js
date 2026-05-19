@@ -289,6 +289,7 @@ const sidebars = {
   ],
   gameDevSidebar,
   industrySolutionsSidebar,
+  experienceSuggestionsSidebar,
   testingSidebar,
   faqSidebar: [
     'dev/faq/overview',
@@ -639,7 +640,6 @@ const sidebars = {
       link: { type: 'doc', id: 'design/changelog/index' },
       items: [        'design/changelog/whats-new'],
     },
-    ...experienceSuggestionsSidebar,
   ],
   toolsSidebar,
   aiAssistSidebar,
