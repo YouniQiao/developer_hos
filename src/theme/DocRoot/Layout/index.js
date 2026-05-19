@@ -14,7 +14,8 @@ export default function LayoutWrapper(props) {
   const isDesignSection = location.pathname.startsWith('/docs/design')
     || location.pathname.startsWith('/docs/architecture')
     || location.pathname.startsWith('/docs/quality')
-    || location.pathname.startsWith('/docs/security');
+    || location.pathname.startsWith('/docs/security')
+    || location.pathname.startsWith('/docs/experience-suggestions');
   const isDevSection = location.pathname.startsWith('/docs/dev')
     || location.pathname.startsWith('/docs/FAQ');
   const isDistributeSection = location.pathname.startsWith('/docs/distribute');
