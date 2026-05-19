@@ -15,7 +15,6 @@ const navDistributeHTML = fs.readFileSync('./src/pages/nav-distribute.html', 'ut
 const navMonetizeHTML = fs.readFileSync('./src/pages/nav-monetize.html', 'utf-8');
 const navResourcesHTML = fs.readFileSync('./src/pages/nav-resources.html', 'utf-8');
 const navDevecoHTML = fs.readFileSync('./src/pages/nav-deveco.html', 'utf-8');
-const navExperienceHTML = fs.readFileSync('./src/pages/nav-experience.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -122,19 +121,6 @@ const config = {
               {
                 type: 'html',
                 value: navEssentialsHTML,
-                className: 'mega-dropdown',
-              },
-            ],
-          },
-          {
-            label: '体验建议',
-            type: 'dropdown',
-            to: '/docs/experience-suggestions/experience-suggestions-overview',
-            className: 'mega-dropdown',
-            items: [
-              {
-                type: 'html',
-                value: navExperienceHTML,
                 className: 'mega-dropdown',
               },
             ],
