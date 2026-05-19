@@ -28,7 +28,7 @@ const NAV_ITEMS = [
   },
   {
     label: '命令行工具',
-    path: '/docs/tools/cli-tools',
+    path: '/docs/tools/cli-tools/command-line-tools-overview',
     match: '/docs/tools/cli-tools',
     desc: 'codelinter、hstack、hvigorw、ohpm',
   },
