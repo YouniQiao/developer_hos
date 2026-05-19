@@ -32,6 +32,12 @@ const NAV_ITEMS = [
     match: '/docs/security',
     desc: '隐私保护、数据安全、代码混淆',
   },
+  {
+    label: '体验建议',
+    path: '/docs/experience-suggestions/experience-suggestions-overview',
+    match: '/docs/experience-suggestions',
+    desc: '兼容性、稳定性、性能、功耗、安全隐私、UX',
+  },
 ];
 
 export default function DesignSubNav() {
