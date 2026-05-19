@@ -1,10 +1,17 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const agcSidebar = [
   'distribute/agc/overview',
-  'distribute/agc/agc-help-releasenotes-0000002271020145',
-  'distribute/agc/agc-help-introduction-0000002270860209',
-  'distribute/agc/agc-help-workflow-0000002235741064',
-  'distribute/agc/agc-help-agcapi-overview-0000002235900876',
+  {
+    type: 'category',
+    label: '了解AppGallery Connect',
+    collapsed: true,
+    items: [
+      'distribute/agc/agc-help-releasenotes-0000002271020145',
+      'distribute/agc/agc-help-introduction-0000002270860209',
+      'distribute/agc/agc-help-workflow-0000002235741064',
+      'distribute/agc/agc-help-agcapi-overview-0000002235900876',
+    ],
+  },
   {
     type: 'category',
     label: '管理账号',
