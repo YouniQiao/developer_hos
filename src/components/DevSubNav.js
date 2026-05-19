@@ -45,12 +45,6 @@ const NAV_ITEMS = [
     desc: '各行业鸿蒙化解决方案',
   },
   {
-    label: '体验建议',
-    path: '/docs/dev/experience-suggestions/experience-suggestions-overview',
-    match: '/docs/dev/experience-suggestions',
-    desc: 'HarmonyOS 应用体验建议与规范',
-  },
-  {
     label: '测试',
     path: '/docs/dev/testing/overview',
     match: '/docs/dev/testing',
