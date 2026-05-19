@@ -16,6 +16,7 @@ const appDevSidebar = require('./sidebars-appdev.js').appDevSidebar;
 const gameDevSidebar = require('./sidebars-gamedev.js').gameDevSidebar;
 const industrySolutionsSidebar = require('./sidebars-industry.js').industrySolutionsSidebar;
 const experienceSuggestionsSidebar = require('./sidebars-experience-suggestions.js').experienceSuggestionsSidebar;
+const testingSidebar = require('./sidebars-testing.js').testingSidebar;
 const toolsSidebar = require('./sidebars-tools.js').toolsSidebar;
 const aiAssistSidebar = require('./sidebars-tools.js').aiAssistSidebar;
 const devecoTestingSidebar = require('./sidebars-tools.js').devecoTestingSidebar;
@@ -289,9 +290,7 @@ const sidebars = {
   gameDevSidebar,
   industrySolutionsSidebar,
   experienceSuggestionsSidebar,
-  testingSidebar: [
-    'dev/testing/overview',
-  ],
+  testingSidebar,
   faqSidebar: [
     'dev/faq/overview',
   ],
