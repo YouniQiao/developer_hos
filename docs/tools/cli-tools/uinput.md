@@ -1,6 +1,6 @@
 ---
-title: "概述"
+title: "uinput"
 displayed_sidebar: cliToolsSidebar
 ---
 
-# 概述
+# uinput

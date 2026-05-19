@@ -17,6 +17,7 @@ const gameDevSidebar = require('./sidebars-gamedev.js').gameDevSidebar;
 const industrySolutionsSidebar = require('./sidebars-industry.js').industrySolutionsSidebar;
 const toolsSidebar = require('./sidebars-tools.js').toolsSidebar;
 const aiAssistSidebar = require('./sidebars-tools.js').aiAssistSidebar;
+const devecoTestingSidebar = require('./sidebars-tools.js').devecoTestingSidebar;
 const cliToolsSidebar = require('./sidebars-tools.js').cliToolsSidebar;
 const promotionSidebar = require('./sidebars-promotion.js').promotionSidebar;
 const monetizationSidebar = require('./sidebars-monetization.js').monetizationSidebar;
@@ -641,6 +642,7 @@ const sidebars = {
   ],
   toolsSidebar,
   aiAssistSidebar,
+  devecoTestingSidebar,
   cliToolsSidebar,
   
   architectureSidebar: [

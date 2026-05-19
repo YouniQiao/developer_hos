@@ -1,6 +1,6 @@
 ---
-title: "概述"
+title: "hiprofiler"
 displayed_sidebar: cliToolsSidebar
 ---
 
-# 概述
+# hiprofiler

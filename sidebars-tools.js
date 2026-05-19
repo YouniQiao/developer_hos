@@ -2436,23 +2436,56 @@ aiAssistSidebar: [
 },
 
 'tools/ai-assist/ide-ocal-knowledge',
+],
 
+devecoTestingSidebar: [
+      'tools/deveco-testing/get-familiar',
+      'tools/deveco-testing/specialized-testing',
+      'tools/deveco-testing/publish-testing',
+      'tools/deveco-testing/exploratory-testing',
+      'tools/deveco-testing/regression-test',
+      'tools/deveco-testing/tool',
+      'tools/deveco-testing/faq',
 ],
 
 cliToolsSidebar: [
-
-  {
-
-    type: 'category',
-
-    label: '命令行工具',
-
-    link: { type: 'doc', id: 'tools/cli-tools/index' },
-
-    items: [],
-
-  },
-
+      'tools/cli-tools/command-line-tools-overview',
+      'tools/cli-tools/hdc',
+      'tools/cli-tools/aa-tool',
+      'tools/cli-tools/bm-tool',
+      'tools/cli-tools/packing-tool',
+      'tools/cli-tools/unpacking-tool',
+      'tools/cli-tools/packing-unpacking',
+      'tools/cli-tools/app-check-tool',
+      'tools/cli-tools/hap-sign-tool',
+      'tools/cli-tools/app-sign-tool',
+      'tools/cli-tools/cem-tool',
+      'tools/cli-tools/anm-tool',
+      'tools/cli-tools/edm-tool',
+      'tools/cli-tools/restool',
+      'tools/cli-tools/param-tool',
+      'tools/cli-tools/power-shell',
+      'tools/cli-tools/atm-tool',
+      'tools/cli-tools/network-cfg',
+      'tools/cli-tools/hilog',
+      'tools/cli-tools/hilog-tool',
+      'tools/cli-tools/hidumper',
+      'tools/cli-tools/hidumper-privacymanagerservice',
+      'tools/cli-tools/hitrace',
+      'tools/cli-tools/hiperf',
+      'tools/cli-tools/hiprofiler',
+      'tools/cli-tools/uinput',
+      'tools/cli-tools/toybox',
+      'tools/cli-tools/mediatool',
+      'tools/cli-tools/devicedebug-tool',
+      'tools/cli-tools/rawheap-translator',
+      'tools/cli-tools/network-netcopilot',
+      'tools/cli-tools/binary-sign-tool',
+      'tools/cli-tools/ide-commandline-get',
+      'tools/coding-debug/ide-code-linter',
+      'tools/coding-debug/ide-exception-stack-parsing-principle',
+      'tools/coding-debug/ide-hvigor-build-profile-app',
+      'tools/coding-debug/ide-ohpm-repo-overview',
 ],
 
 };

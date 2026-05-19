@@ -3,6 +3,7 @@
 
 const toolsSidebar = require('./sidebars-tools.js').toolsSidebar;
 const aiAssistSidebar = require('./sidebars-tools.js').aiAssistSidebar;
+const devecoTestingSidebar = require('./sidebars-tools.js').devecoTestingSidebar;
 const cliToolsSidebar = require('./sidebars-tools.js').cliToolsSidebar;
 const faqSidebar = require('./sidebars-faq.js').faqSidebar;
 
@@ -10,6 +11,7 @@ const faqSidebar = require('./sidebars-faq.js').faqSidebar;
 const sidebars = {
   toolsSidebar,
   aiAssistSidebar,
+  devecoTestingSidebar,
   cliToolsSidebar,
   faqSidebar,
 };
