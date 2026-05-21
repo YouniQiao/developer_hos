@@ -6,7 +6,16 @@ const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
 const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
-const plugins = [tailwindPlugin];
+const inlineCommentsFactory = require('./plugins/inline-comments');
+const plugins = [
+  tailwindPlugin,
+  [inlineCommentsFactory, {
+    repo: 'YouniQiao/developer_hos',
+    category: 'Inline Comments',
+    clientId: 'Ov23liKyrxXiGvlZQjCW',
+    clientSecret: '4991d19a761bae0800f2f8748978fd4fd9ba5a2e',
+  }],
+];
 const fs = require('fs');
 const menuHTML = fs.readFileSync('./src/pages/menus.html', 'utf-8');
 const navEssentialsHTML = fs.readFileSync('./src/pages/nav-essentials.html', 'utf-8');

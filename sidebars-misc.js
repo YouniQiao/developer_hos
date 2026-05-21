@@ -1,8 +1,9 @@
 // @ts-check
-// Sidebar for misc module (quality + security + architecture + atomic + resources + guides + overview)
+// Sidebar for misc module (quality + security + architecture + atomic + resources + guides + overview + experience-suggestions)
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
+  experienceSuggestionsSidebar: require('./sidebars-experience-suggestions.js').experienceSuggestionsSidebar,
   overviewSidebar: [
     'overview/index',
   ],

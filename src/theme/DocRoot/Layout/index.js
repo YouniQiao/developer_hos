@@ -1,5 +1,6 @@
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import Layout from '@theme-original/DocRoot/Layout';
 import ToolsSubNav from '@site/src/components/ToolsSubNav';
 import DesignSubNav from '@site/src/components/DesignSubNav';
@@ -7,6 +8,14 @@ import DevSubNav from '@site/src/components/DevSubNav';
 import DistributeSubNav from '@site/src/components/DistributeSubNav';
 import MonetizeSubNav from '@site/src/components/MonetizeSubNav';
 import ResourcesSubNav from '@site/src/components/ResourcesSubNav';
+import InlineComments from '@site/src/components/InlineComments';
+
+const IC_CONFIG = {
+  repoOwner: 'YouniQiao',
+  repoName: 'developer_hos',
+  category: 'Inline Comments',
+  clientId: 'Ov23liKyrxXiGvlZQjCW',
+};
 
 export default function LayoutWrapper(props) {
   const location = useLocation();
@@ -31,6 +40,16 @@ export default function LayoutWrapper(props) {
       {isMonetizeSection && <MonetizeSubNav />}
       {isResourcesSection && <ResourcesSubNav />}
       <Layout {...props} />
+      <BrowserOnly>
+        {() => (
+          <InlineComments
+            repoOwner={IC_CONFIG.repoOwner}
+            repoName={IC_CONFIG.repoName}
+            category={IC_CONFIG.category}
+            clientId={IC_CONFIG.clientId}
+          />
+        )}
+      </BrowserOnly>
     </>
   );
 }

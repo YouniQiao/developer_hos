@@ -1,3 +1,13 @@
+# Netlify 配置
 [build]
-  command = "echo 'Build handled by GitHub Actions — skipping'"
+  command = "/opt/local/bin/bash scripts/build-all.sh --clean"
   publish = "build"
+
+[functions]
+  directory = "netlify/functions"
+
+# OAuth 回调 → Netlify Function
+[[redirects]]
+  from = "/api/github/oauth/callback"
+  to = "/.netlify/functions/github-oauth-callback"
+  status = 200
