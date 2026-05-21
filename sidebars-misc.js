@@ -5,7 +5,7 @@
 const sidebars = {
   experienceSuggestionsSidebar: require('./sidebars-experience-suggestions.js').experienceSuggestionsSidebar,
   overviewSidebar: [
-    'overview/index',
+    'overview/intro',
   ],
   architectureSidebar: [
     'architecture/overview',
@@ -529,7 +529,7 @@ const sidebars = {
     'atomic/release/publish',
   ],
   guidesSidebar: [
-    'guides/overview',
+    'guides/startup/quick-start',
   ],
   designResSidebar: [
     'resources/design-res/overview',
