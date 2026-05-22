@@ -1,5 +1,6 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
-const qualitySidebar = [
+module.exports = {
+  qualitySidebar: [
     "quality/quality-overview",
     {
       type: "category",
@@ -431,5 +432,4 @@ const qualitySidebar = [
       ],
     },
   ],
-
-module.exports = { qualitySidebar };
+};

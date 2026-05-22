@@ -1,5 +1,6 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
-const designSidebar = [
+module.exports = {
+  designSidebar: [
     {
       type: 'category',
       label: '通用设计基础',
@@ -270,5 +271,4 @@ const designSidebar = [
       items: [        'design/changelog/whats-new'],
     },
   ],
-
-module.exports = { designSidebar };
+};

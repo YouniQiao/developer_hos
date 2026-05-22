@@ -1,5 +1,6 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
-const ndkDevSidebar = [
+module.exports = {
+  ndkDevSidebar: [
     'dev/ndk-dev/ndk-development-overview',
     'dev/ndk-dev/create-with-ndk',
     {
@@ -244,5 +245,6 @@ const ndkDevSidebar = [
         'dev/ndk-dev/cpu-features',
         'dev/ndk-dev/neon-guide',
       ],
-
-module.exports = { ndkDevSidebar };
+    },
+  ],
+};
