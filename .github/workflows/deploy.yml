@@ -18,8 +18,10 @@ jobs:
 
       - run: npm ci
 
-      - name: Build (modular, 16GB MacBook)
-        run: /opt/local/bin/bash scripts/build-all.sh --clean
+      - name: Build (full, 16GB MacBook)
+        run: |
+          ulimit -S -n 65536
+          npx docusaurus build --no-minify
         env:
           NODE_OPTIONS: '--max-old-space-size=8192'
           GENERATE_SOURCEMAP: 'false'
