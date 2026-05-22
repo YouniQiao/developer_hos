@@ -1,6 +1,6 @@
 # Netlify 配置
 [build]
-  command = "/opt/local/bin/bash scripts/build-all.sh --clean"
+  command = "npx docusaurus build --no-minify"
   publish = "build"
 
 [functions]
