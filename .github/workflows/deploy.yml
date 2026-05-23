@@ -33,13 +33,18 @@ jobs:
             echo "✅ node_modules up to date, skipped"
           fi
 
-      - name: Verify build exists
+      - name: Build (skip if fresh)
         run: |
-          if [ ! -f build/index.html ]; then
-            echo "❌ build/ 目录不存在，请先本地执行 npx docusaurus build --no-minify"
-            exit 1
+          if [ -f build/index.html ] && [ $(find build/index.html -mmin -120) ]; then
+            echo "✅ build/ 为 2 小时内产物，跳过构建"
+          else
+            echo "🔨 build/ 不存在或已过期，开始全量构建..."
+            ulimit -S -n 65536
+            npx docusaurus build --no-minify
           fi
-          echo "✅ build/ 已就绪，跳过构建"
+        env:
+          NODE_OPTIONS: '--max-old-space-size=8192'
+          GENERATE_SOURCEMAP: 'false'
 
       - name: Deploy to Netlify
         run: |
