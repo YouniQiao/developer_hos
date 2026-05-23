@@ -464,6 +464,48 @@
       "m": "HAD-W32"
     },
     {
+      "v": "6.1.0(23)",
+      "t": "Wearable",
+      "n": "HUAWEI WATCH Ultimate 2 非凡探索",
+      "m": ""
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Wearable",
+      "n": "HUAWEI WATCH ULTIMATE DESIGN 非凡大师 紫金款",
+      "m": ""
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Wearable",
+      "n": "HUAWEI WATCH 5",
+      "m": ""
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Lite Wearable",
+      "n": "HUAWEI WATCH GT 6",
+      "m": ""
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Lite Wearable",
+      "n": "HUAWEI WATCH GT 6 Pro",
+      "m": ""
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Lite Wearable",
+      "n": "HUAWEI WATCH FIT 4",
+      "m": ""
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Lite Wearable",
+      "n": "HUAWEI WATCH FIT 4 Pro",
+      "m": ""
+    },
+    {
       "v": "6.0.2(22)",
       "t": "Phone",
       "n": "Mate 60",
@@ -914,6 +956,24 @@
       "m": "HAD-W24 HAD-W32"
     },
     {
+      "v": "6.0.1(21)",
+      "t": "Wearable",
+      "n": "HUAWEI WATCH 5",
+      "m": ""
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Wearable",
+      "n": "HUAWEI WATCH Ultimate 2",
+      "m": ""
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Wearable",
+      "n": "HUAWEI WATCH ULTIMATE DESIGN",
+      "m": ""
+    },
+    {
       "v": "6.0.0(20)",
       "t": "Phone",
       "n": "Mate 60",
@@ -1328,6 +1388,24 @@
       "m": "LMR-AL10"
     },
     {
+      "v": "5.1.0(18)",
+      "t": "Wearable",
+      "n": "HUAWEI WATCH 5",
+      "m": ""
+    },
+    {
+      "v": "5.1.0(18)",
+      "t": "Lite Wearable",
+      "n": "HUAWEI Watch FIT FIT 4",
+      "m": ""
+    },
+    {
+      "v": "5.1.0(18)",
+      "t": "Lite Wearable",
+      "n": "HUAWEI Watch FIT FIT 4 Pro",
+      "m": ""
+    },
+    {
       "v": "5.0.5(17)",
       "t": "Phone",
       "n": "Mate 60",
@@ -1578,6 +1656,12 @@
       "t": "PC/2in1",
       "n": "MateBook Pro",
       "m": "HAD-W24 HAD-W32"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Lite Wearable",
+      "n": "HUAWEI Watch GT 5系列",
+      "m": ""
     }
   ]
 }

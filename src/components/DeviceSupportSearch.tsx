@@ -79,16 +79,13 @@ function SearchDeviceMode({ deviceIndex }: { deviceIndex: DeviceVersionMap[] }) 
   return (
     <div>
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
-        <div className="flex-1 relative">
-          <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
+        <div className="flex-1">
           <input
             type="text"
             placeholder="输入设备名称或型号代码…"
             value={query}
             onChange={e => setQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 bg-secondary-800 border border-secondary-700 rounded-lg text-sm focus:outline-none focus:border-primary text-white placeholder:text-text-400"
+            className="w-full px-4 py-2.5 bg-secondary-800 border border-secondary-700 rounded-lg text-sm focus:outline-none focus:border-primary text-white placeholder:text-text-400"
           />
         </div>
         <select
@@ -114,9 +111,9 @@ function SearchDeviceMode({ deviceIndex }: { deviceIndex: DeviceVersionMap[] }) 
                     </div>
                     <p className="text-xs text-text-400 font-mono truncate">{d.modelCodes}</p>
                   </div>
-                  <div className="flex flex-wrap gap-1.5 justify-end flex-shrink-0">
+                  <div className="flex flex-wrap gap-2 justify-end flex-shrink-0">
                     {d.versions.map(v => (
-                      <span key={v} className={`text-xs px-2 py-1 rounded font-mono ${
+                      <span key={v} className={`text-xs px-2 py-1 rounded font-mono whitespace-nowrap ${
                         v === d.versions[0] ? 'bg-primary/20 text-primary font-semibold' : 'bg-secondary-700 text-text-400'
                       }`}>
                         {v}
@@ -149,7 +146,7 @@ function BrowseVersionMode({ versionIndex }: { versionIndex: { version: string; 
   // Group by device type
   const grouped = useMemo(() => {
     const map = new Map<string, DeviceEntry[]>();
-    const typeOrder = ['Phone', 'Tablet', 'PC/2in1', 'TV'];
+    const typeOrder = ['Phone', 'Tablet', 'PC/2in1', 'TV', 'Wearable', 'Lite Wearable'];
     for (const d of selectedDevices) {
       if (!map.has(d.t)) map.set(d.t, []);
       map.get(d.t)!.push(d);
@@ -179,18 +176,20 @@ function BrowseVersionMode({ versionIndex }: { versionIndex: { version: string; 
         {selectedVersion} 共支持 {selectedDevices.length} 款设备
       </p>
 
-      <div className="space-y-6">
+      <div className="space-y-8">
         {grouped.map(group => (
           <div key={group.type}>
-            <h3 className="text-sm font-semibold mb-2 text-text-400 flex items-center gap-2">
-              <span className={`inline-block w-2 h-2 rounded-full ${
+            <h3 className="text-lg font-bold mt-4 mb-3 flex items-center gap-2">
+              <span className={`inline-block w-2.5 h-2.5 rounded-full ${
                 group.type === 'Phone' ? 'bg-blue-500' :
                 group.type === 'Tablet' ? 'bg-purple-500' :
                 group.type === 'PC/2in1' ? 'bg-emerald-500' :
-                'bg-amber-500'
+                group.type === 'TV' ? 'bg-amber-500' :
+                group.type === 'Wearable' ? 'bg-rose-500' :
+                'bg-teal-500'
               }`} />
               {group.type}
-              <span className="text-xs font-normal">({group.devices.length})</span>
+              <span className="text-xs font-normal text-text-400">({group.devices.length})</span>
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {group.devices.map((d, i) => (
@@ -210,7 +209,7 @@ function BrowseVersionMode({ versionIndex }: { versionIndex: { version: string; 
 // ---- Main Component ----
 
 function DeviceSupportSearchInner() {
-  const [mode, setMode] = useState<'search' | 'browse'>('search');
+  const [mode, setMode] = useState<'search' | 'browse'>('browse');
 
   const deviceIndex = useMemo(() => buildDeviceIndex(), []);
   const versionIndex = useMemo(() => buildVersionIndex(), []);
@@ -230,20 +229,20 @@ function DeviceSupportSearchInner() {
       {/* Mode toggle */}
       <div className="flex gap-2 mb-6 bg-secondary-800 rounded-lg p-1 w-fit">
         <button
-          onClick={() => setMode('search')}
-          className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-            mode === 'search' ? 'bg-primary text-white' : 'text-text-400 hover:text-white'
-          }`}
-        >
-          查设备
-        </button>
-        <button
           onClick={() => setMode('browse')}
           className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
             mode === 'browse' ? 'bg-primary text-white' : 'text-text-400 hover:text-white'
           }`}
         >
           查版本
+        </button>
+        <button
+          onClick={() => setMode('search')}
+          className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+            mode === 'search' ? 'bg-primary text-white' : 'text-text-400 hover:text-white'
+          }`}
+        >
+          查设备
         </button>
       </div>
 
