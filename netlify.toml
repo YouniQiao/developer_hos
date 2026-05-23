@@ -1,6 +1,6 @@
 # Netlify 配置
+# 构建由 GitHub Actions 负责，此处不再重复构建
 [build]
-  command = "npx docusaurus build --no-minify"
   publish = "build"
 
 [functions]
