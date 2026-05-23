@@ -33,13 +33,13 @@ jobs:
             echo "✅ node_modules up to date, skipped"
           fi
 
-      - name: Build (full, 16GB MacBook)
+      - name: Verify build exists
         run: |
-          ulimit -S -n 65536
-          npx docusaurus build --no-minify
-        env:
-          NODE_OPTIONS: '--max-old-space-size=8192'
-          GENERATE_SOURCEMAP: 'false'
+          if [ ! -f build/index.html ]; then
+            echo "❌ build/ 目录不存在，请先本地执行 npx docusaurus build --no-minify"
+            exit 1
+          fi
+          echo "✅ build/ 已就绪，跳过构建"
 
       - name: Deploy to Netlify
         run: |
