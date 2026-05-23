@@ -235,6 +235,10 @@ const config = {
                 label: 'DevEco Studio',
                 to: '/docs/tools/overview',
               },
+              {
+                label: 'API 变更查询',
+                to: '/docs/dev/release-notes/api-diff-search',
+              },
             ],
           },
           {
