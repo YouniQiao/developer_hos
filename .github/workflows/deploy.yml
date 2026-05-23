@@ -9,14 +9,29 @@ jobs:
   build-and-deploy:
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v4
+      - name: Fast checkout (self-hosted, incremental)
+        run: |
+          if [ -d .git ]; then
+            git fetch origin master --depth=1
+            git reset --hard origin/master
+          else
+            git clone --depth=1 --branch master \
+              https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git .
+          fi
 
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
-      - run: npm ci
+      - name: Install deps (only when lockfile changed)
+        run: |
+          if ! cmp -s package-lock.json /tmp/hos-lockfile 2>/dev/null; then
+            echo "📦 package-lock.json changed, installing..."
+            npm ci
+            cp package-lock.json /tmp/hos-lockfile
+          else
+            echo "✅ node_modules up to date, skipped"
+          fi
 
       - name: Build (full, 16GB MacBook)
         run: |
@@ -28,7 +43,10 @@ jobs:
 
       - name: Deploy to Netlify
         run: |
-          npx netlify-cli deploy \
+          if ! command -v netlify &> /dev/null; then
+            npm install -g netlify-cli
+          fi
+          netlify deploy \
             --prod \
             --dir=build \
             --functions=netlify/functions \
