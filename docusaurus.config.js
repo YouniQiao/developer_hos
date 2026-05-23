@@ -206,10 +206,8 @@ const config = {
           {
             title: 'Tools',
             items: [
-              {
-                label: 'API 变更查询',
-                to: '/docs/dev/release-notes/api-diff-search',
-              },
+              { label: 'API 变更查询', to: '/docs/dev/release-notes/api-diff-search' },
+              { label: '设备版本分布', to: '/docs/dev/release-notes/sdk-version-distribution' },
             ],
           },
           {

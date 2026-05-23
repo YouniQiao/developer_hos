@@ -6,6 +6,7 @@
 const { themes } = require('prism-react-renderer');
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
+const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 const fs = require('fs');
 const navEssentialsHTML = fs.readFileSync('./src/pages/nav-essentials.html', 'utf-8');
 const navDesignHTML = fs.readFileSync('./src/pages/nav-design.html', 'utf-8');
@@ -19,7 +20,7 @@ const config = {
   title: 'Developer',
   tagline: 'Welcome',
   favicon: 'img/favicon.ico',
-  plugins: [],
+  plugins: [tailwindPlugin],
   future: {
     v4: true,
     faster: true,
@@ -159,6 +160,7 @@ const config = {
             title: 'Tools',
             items: [
               { label: 'API 变更查询', to: '/docs/dev/release-notes/api-diff-search' },
+              { label: '设备版本分布', to: '/docs/dev/release-notes/sdk-version-distribution' },
             ],
           },
           {
