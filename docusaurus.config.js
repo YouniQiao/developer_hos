@@ -174,6 +174,11 @@ const config = {
             ],
           },
           {
+            to: '/update',
+            label: '更新记录与计划',
+            position: 'right',
+          },
+          {
             href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-references/development-intro-api',
             label: 'API参考',
             position: 'right',
@@ -209,6 +214,12 @@ const config = {
               { label: 'API 变更查询', to: '/docs/dev/release-notes/api-diff-search' },
               { label: '设备版本分布', to: '/docs/dev/release-notes/sdk-version-distribution' },
               { label: '设备支持查询', to: '/docs/dev/release-notes/device-support-search' },
+            ],
+          },
+          {
+            title: 'About',
+            items: [
+              { label: '更新记录与计划', to: '/update' },
             ],
           },
           {
