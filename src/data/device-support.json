@@ -1,0 +1,1583 @@
+{
+  "updateTime": "2026-04-30",
+  "devices": [
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 60",
+      "m": "BRA-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 60 Pro",
+      "m": "ALN-AL00 ALN-AL80"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 60 Pro+",
+      "m": "ALN-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 60 RS 非凡大师",
+      "m": "ALN-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 70",
+      "m": "CLS-AL00 CLS-AL30"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 70 Pro",
+      "m": "PLR-AL00 PLR-AL30"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 70 Pro 优享版",
+      "m": "PLR-AL50"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 70 Pro+",
+      "m": "PLR-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 70 RS 非凡大师",
+      "m": "PLU-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 70 Air",
+      "m": "SUP-AL90 SUP-AL90a"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 80",
+      "m": "VYG-AL00 VYG-AL30"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 80 Pro",
+      "m": "SGT-AL00 SGT-AL50"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 80 Pro Max",
+      "m": "SGT-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate 80 RS 非凡大师",
+      "m": "SGU-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 70",
+      "m": "ADY-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 70 北斗卫星消息版",
+      "m": "ADY-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 70 Pro",
+      "m": "HBN-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 70 Pro+",
+      "m": "HBN-AL10 HBN-AL80"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 70 Ultra",
+      "m": "HBP-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 80",
+      "m": "HED-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 80 Pro",
+      "m": "LMR-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 80 Pro+",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 80 Ultra",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 90",
+      "m": "KEE-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 90 Pro",
+      "m": "MLN-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura 90 Pro Max",
+      "m": "SCA-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura X",
+      "m": "VDE-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura X 典藏版",
+      "m": "VDE-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura X Max",
+      "m": "HOP-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pura X Max 典藏版",
+      "m": "HOP-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate X5",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate X5 典藏版",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate X6",
+      "m": "ICL-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate X6 典藏版",
+      "m": "ICL-AL20"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate X7",
+      "m": "DEL-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate X7 典藏版",
+      "m": "DEL-AL20"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate XT 非凡大师",
+      "m": "GRL-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Mate XTs 非凡大师",
+      "m": "GRL-AL20"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pocket 2",
+      "m": "LEM-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pocket 2 艺术定制版",
+      "m": "LEM-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "Pocket 2 优享版",
+      "m": "LEM-AL50"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 12",
+      "m": "BLK-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 12 Pro",
+      "m": "ADA-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 12 Ultra",
+      "m": "ADA-AL00U"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 12 Ultra 星耀版",
+      "m": "ADA-AL10U"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 13",
+      "m": "BLK-AL80"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 13 Pro",
+      "m": "MIS-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 14",
+      "m": "TLR-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 14 Pro",
+      "m": "MIA-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 14 Ultra",
+      "m": "MRT-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 14 活力版",
+      "m": "TYR-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 15",
+      "m": "PSN-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 15 pro",
+      "m": "KLE-AL00U"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova 15 Ultra",
+      "m": "SLY-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova Flip",
+      "m": "PSD-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "nova Flip S",
+      "m": "PSD-AL80"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "畅享 70X 尊享版",
+      "m": "BRE-AL80a"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "畅享 90 Plus",
+      "m": "JUY-AL50"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "畅享 90m Plus",
+      "m": "JUY-AL50"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Phone",
+      "n": "畅享 90 Pro Max",
+      "m": "CHZ-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Edge",
+      "m": "QXS-W00 QXS-W10 QXS-W20"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2025",
+      "m": "WEB-AL00 WEB-AL10 WEB-W00 WEB-W10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2023",
+      "m": "PCE-AL30 PCE-W30 PCE-W40"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2023 典藏版",
+      "m": "PCE-AL40"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Pro 12.2 英寸 2025",
+      "m": "MRDI-W00 MRDI-W10 MRDI-W20"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Pro 12.2 英寸 2024",
+      "m": "MRO-AL10 MRO-W00 MRO-W10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Pro 11 英寸 2024",
+      "m": "XYAO-W00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Mini 悦读版",
+      "m": "MLR-AL00"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Mini",
+      "m": "MLR-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad 11.5 2026款",
+      "m": "TXZ-W10 TXZ-W20 TXZ-AL10"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad 11.5 S 2025款",
+      "m": "SLG-W00 SLG-W30 SLG-W60"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad 11.5 S",
+      "m": "TGR-W00/W00G TGR-W10/W10G TGR-W20 TGR-W40"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Air 12英寸  2025",
+      "m": "LRT-W00 LRT-W20 LRT-W30"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "Tablet",
+      "n": "MatePad Air 12英寸  2024",
+      "m": "BKY-W00 BKY-W10 BKY-W20 BKY-W21"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "PC/2in1",
+      "n": "HUAWEI MateBook 14",
+      "m": "MNT-W54C"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "PC/2in1",
+      "n": "MateBook Fold 非凡大师",
+      "m": "HPR-W72"
+    },
+    {
+      "v": "6.1.0(23)",
+      "t": "PC/2in1",
+      "n": "MateBook Pro",
+      "m": "HAD-W32"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Phone",
+      "n": "Mate 60",
+      "m": "BRA-AL00"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Phone",
+      "n": "Mate 60 Pro",
+      "m": "ALN-AL00 ALN-AL80"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Phone",
+      "n": "Mate 70",
+      "m": "CLS-AL00"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Phone",
+      "n": "Mate 70 Pro",
+      "m": "PLR-AL00"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Phone",
+      "n": "Pura X",
+      "m": "VDE-AL00"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Phone",
+      "n": "Pura X 典藏版",
+      "m": "VDE-AL10"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Phone",
+      "n": "Mate X5",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Phone",
+      "n": "Mate X5 典藏版",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Phone",
+      "n": "Mate XT 非凡大师",
+      "m": "GRL-AL10D"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2025",
+      "m": "WEB-AL00 WEB-AL10 WEB-W00 WEB-W10"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "Tablet",
+      "n": "MatePad Pro 11 英寸 2024",
+      "m": "XYAO-W00"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "PC/2in1",
+      "n": "MateBook Fold 非凡大师",
+      "m": "HPR-W72"
+    },
+    {
+      "v": "6.0.2(22)",
+      "t": "PC/2in1",
+      "n": "MateBook Pro",
+      "m": "HAD-W32"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate 60",
+      "m": "BRA-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate 60 Pro",
+      "m": "ALN-AL00 ALN-AL80"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate 60 Pro+",
+      "m": "ALN-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate 60 RS 非凡大师",
+      "m": "ALN-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate 70",
+      "m": "CLS-AL00 CLS-AL30"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate 70 Pro",
+      "m": "PLR-AL00 PLR-AL30"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate 70 Pro 优享版",
+      "m": "PLR-AL50"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate 70 Pro+",
+      "m": "PLR-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate 70 RS 非凡大师",
+      "m": "PLU-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura 70",
+      "m": "ADY-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura 70 北斗卫星消息版",
+      "m": "ADY-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura 70 Pro",
+      "m": "HBN-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura 70 Pro+",
+      "m": "HBN-AL10 HBN-AL80"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura 70 Ultra",
+      "m": "HBP-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura 80",
+      "m": "HED-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura 80 Pro",
+      "m": "LMR-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura 80 Pro+",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura 80 Ultra",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura X",
+      "m": "VDE-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pura X 典藏版",
+      "m": "VDE-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate X5",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate X5 典藏版",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate X6",
+      "m": "ICL-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate X6 典藏版",
+      "m": "ICL-AL20"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate X7",
+      "m": "DEL-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate X7 典藏版",
+      "m": "DEL-AL20"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate XT 非凡大师",
+      "m": "GRL-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Mate XTs 非凡大师",
+      "m": "GRL-AL20"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pocket 2",
+      "m": "LEM-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pocket 2 艺术定制版",
+      "m": "LEM-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "Pocket 2 优享版",
+      "m": "LEM-AL50"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 12",
+      "m": "BLK-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 12 Pro",
+      "m": "ADA-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 12 Ultra",
+      "m": "ADA-AL00U"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 12 Ultra 星耀版",
+      "m": "ADA-AL10U"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 13",
+      "m": "BLK-AL80"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 13 Pro",
+      "m": "MIS-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 14",
+      "m": "TLR-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 14 Pro",
+      "m": "MIA-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 14 Ultra",
+      "m": "MRT-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 14 活力版",
+      "m": "TYR-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 15",
+      "m": "PSN-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 15 pro",
+      "m": "KLE-AL00U"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova 15 Ultra",
+      "m": "SLY-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova Flip",
+      "m": "PSD-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Phone",
+      "n": "nova Flip S",
+      "m": "PSD-AL80"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2025",
+      "m": "WEB-AL00 WEB-AL10 WEB-W00 WEB-W10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Pro 12.2 英寸 2025",
+      "m": "MRDI-W00 MRDI-W10 MRDI-W20"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Pro 12.2 英寸 2024",
+      "m": "MRO-AL10 MRO-W00 MRO-W10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Pro 11 英寸 2024",
+      "m": "XYAO-W00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2023",
+      "m": "PCE-AL30 PCE-W30 PCE-W40"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2023 典藏版",
+      "m": "PCE-AL40"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Mini 悦读版",
+      "m": "MLR-AL00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Mini",
+      "m": "MLR-AL10"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad 11.5 S 2025款",
+      "m": "SLG-W00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad 11.5 S 2025款",
+      "m": "SLG-W30"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad 11.5 S 2025款",
+      "m": "SLG-W60"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Air 12英寸  2025",
+      "m": "LRT-W00"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Air 12英寸  2025",
+      "m": "LRT-W20"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "Tablet",
+      "n": "MatePad Air 12英寸  2025",
+      "m": "LRT-W30"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "PC/2in1",
+      "n": "MateBook Fold 非凡大师",
+      "m": "HPR-W72"
+    },
+    {
+      "v": "6.0.1(21)",
+      "t": "PC/2in1",
+      "n": "MateBook Pro",
+      "m": "HAD-W24 HAD-W32"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate 60",
+      "m": "BRA-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate 60 Pro",
+      "m": "ALN-AL00 ALN-AL80"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate 60 Pro+",
+      "m": "ALN-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate 60 RS 非凡大师",
+      "m": "ALN-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate 70",
+      "m": "CLS-AL00 CLS-AL30"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate 70 Pro",
+      "m": "PLR-AL00 PLR-AL30"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate 70 Pro 优享版",
+      "m": "PLR-AL50"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate 70 Pro+",
+      "m": "PLR-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate 70 RS 非凡大师",
+      "m": "PLU-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura 70",
+      "m": "ADY-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura 70 北斗卫星消息版",
+      "m": "ADY-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura 70 Pro",
+      "m": "HBN-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura 70 Pro+",
+      "m": "HBN-AL10 HBN-AL80"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura 70 Ultra",
+      "m": "HBP-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura 80",
+      "m": "HED-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura 80 Pro",
+      "m": "LMR-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura 80 Pro+",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura 80 Ultra",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura X",
+      "m": "VDE-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pura X 典藏版",
+      "m": "VDE-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate X5",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate X5 典藏版",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate X6",
+      "m": "ICL-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate X6 典藏版",
+      "m": "ICL-AL20"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate X7",
+      "m": "DEL-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate X7 典藏版",
+      "m": "DEL-AL20"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Mate XT 非凡大师",
+      "m": "GRL-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pocket 2",
+      "m": "LEM-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pocket 2 艺术定制版",
+      "m": "LEM-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "Pocket 2 优享版",
+      "m": "LEM-AL50"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova 12",
+      "m": "BLK-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova 12 Pro",
+      "m": "ADA-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova 12 Ultra",
+      "m": "ADA-AL00U"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova 12 Ultra 星耀版",
+      "m": "ADA-AL10U"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova 13",
+      "m": "BLK-AL80"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova 13 Pro",
+      "m": "MIS-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova 14",
+      "m": "TLR-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova 14 Pro",
+      "m": "MIA-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova 14 Ultra",
+      "m": "MRT-AL10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova Flip",
+      "m": "PSD-AL00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Phone",
+      "n": "nova Flip S",
+      "m": "PSD-AL80"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2025",
+      "m": "WEB-AL00 WEB-AL10 WEB-W00 WEB-W10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Tablet",
+      "n": "MatePad Pro 12.2 英寸 2025",
+      "m": "MRDI-W00 MRDI-W10 MRDI-W20"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Tablet",
+      "n": "MatePad Pro 12.2 英寸 2024",
+      "m": "MRO-AL10 MRO-W00 MRO-W10"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Tablet",
+      "n": "MatePad Pro 11 英寸 2024",
+      "m": "XYAO-W00"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2023",
+      "m": "PCE-AL30 PCE-W30 PCE-W40"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2023 典藏版",
+      "m": "PCE-AL40"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "PC/2in1",
+      "n": "MateBook Fold 非凡大师",
+      "m": "HPR-W72"
+    },
+    {
+      "v": "6.0.0(20)",
+      "t": "PC/2in1",
+      "n": "MateBook Pro",
+      "m": "HAD-W24 HAD-W32"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "Phone",
+      "n": "Mate 60",
+      "m": "BRA-AL00"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "Phone",
+      "n": "Mate 60 Pro",
+      "m": "ALN-AL00 ALN-AL80"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "Phone",
+      "n": "Pura 80",
+      "m": "HED-AL00"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "Phone",
+      "n": "Pura 80 Pro",
+      "m": "LMR-AL00"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "Phone",
+      "n": "Pura 80 Pro+",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "Phone",
+      "n": "Pura 80 Ultra",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "Phone",
+      "n": "Mate XTs 非凡大师",
+      "m": "GRL-AL20"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "Tablet",
+      "n": "MatePad Edge",
+      "m": "QXS-W00 QXS-W10 QXS-W20"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "TV",
+      "n": "MateTV Pro 98英寸",
+      "m": "HD98EDIJ"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "TV",
+      "n": "MateTV Pro 85英寸",
+      "m": "HD8XEDIJ"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "TV",
+      "n": "MateTV Pro 75英寸",
+      "m": "HD75EDIJ"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "TV",
+      "n": "MateTV 98英寸",
+      "m": "HD98EDIH"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "TV",
+      "n": "MateTV 85英寸",
+      "m": "HD8XEDIH"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "TV",
+      "n": "MateTV 75英寸",
+      "m": "HD75EDIH"
+    },
+    {
+      "v": "5.1.1(19)",
+      "t": "TV",
+      "n": "MateTV 65英寸",
+      "m": "HD65EDIH"
+    },
+    {
+      "v": "5.1.0(18)",
+      "t": "Phone",
+      "n": "Mate 60",
+      "m": "BRA-AL00"
+    },
+    {
+      "v": "5.1.0(18)",
+      "t": "Phone",
+      "n": "Mate 60 Pro",
+      "m": "ALN-AL00 ALN-AL80"
+    },
+    {
+      "v": "5.1.0(18)",
+      "t": "Phone",
+      "n": "Pura 80 Pro",
+      "m": "LMR-AL00"
+    },
+    {
+      "v": "5.1.0(18)",
+      "t": "Phone",
+      "n": "Pura 80 Pro+",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "5.1.0(18)",
+      "t": "Phone",
+      "n": "Pura 80 Ultra",
+      "m": "LMR-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate 60",
+      "m": "BRA-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate 60 Pro",
+      "m": "ALN-AL00 ALN-AL80"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate 60 Pro+",
+      "m": "ALN-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate 60 RS 非凡大师",
+      "m": "ALN-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate 70",
+      "m": "CLS-AL00 CLS-AL30"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate 70 Pro",
+      "m": "PLR-AL00 PLR-AL30"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate 70 Pro 优享版",
+      "m": "PLR-AL50"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate 70 Pro+",
+      "m": "PLR-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate 70 RS 非凡大师",
+      "m": "PLU-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pura 70",
+      "m": "ADY-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pura 70 北斗卫星消息版",
+      "m": "ADY-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pura 70 Pro",
+      "m": "HBN-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pura 70 Pro+",
+      "m": "HBN-AL10 HBN-AL80"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pura 70 Ultra",
+      "m": "HBP-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pura X",
+      "m": "VDE-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pura X 典藏版",
+      "m": "VDE-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate X5",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate X5 典藏版",
+      "m": "ALT-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate X6",
+      "m": "ICL-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Mate X6 典藏版",
+      "m": "ICL-AL20"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pocket 2",
+      "m": "LEM-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pocket 2 艺术定制版",
+      "m": "LEM-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "Pocket 2 优享版",
+      "m": "LEM-AL50"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova 12",
+      "m": "BLK-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova 12 Pro",
+      "m": "ADA-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova 12 Ultra",
+      "m": "ADA-AL00U"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova 12 Ultra 星耀版",
+      "m": "ADA-AL10U"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova 13",
+      "m": "BLK-AL80"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova 13 Pro",
+      "m": "MIS-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova 14",
+      "m": "TLR-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova 14 Pro",
+      "m": "MIA-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova 14 Ultra",
+      "m": "MRT-AL10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Phone",
+      "n": "nova Flip",
+      "m": "PSD-AL00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2025",
+      "m": "WEB-AL00 WEB-AL10 WEB-W00 WEB-W10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Tablet",
+      "n": "MatePad Pro 12.2 英寸 2024",
+      "m": "MRO-AL10 MRO-W00 MRO-W10"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Tablet",
+      "n": "MatePad Pro 11 英寸 2024",
+      "m": "XYAO-W00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2023",
+      "m": "PCE-AL30 PCE-W30 PCE-W40"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Tablet",
+      "n": "MatePad Pro 13.2 英寸 2023 典藏版",
+      "m": "PCE-AL40"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Tablet",
+      "n": "MatePad Air 12 英寸 2025",
+      "m": "LRT-W00"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "Tablet",
+      "n": "MatePad 11.5 S 2025",
+      "m": "SLG-W50"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "PC/2in1",
+      "n": "MateBook Fold 非凡大师",
+      "m": "HPR-W72"
+    },
+    {
+      "v": "5.0.5(17)",
+      "t": "PC/2in1",
+      "n": "MateBook Pro",
+      "m": "HAD-W24 HAD-W32"
+    }
+  ]
+}
