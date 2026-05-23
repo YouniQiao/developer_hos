@@ -587,8 +587,6 @@ const releaseNotesSidebar = [
       "dev/release-notes/issue-report"
     ]
   },
-  "dev/release-notes/sdk-version-percentage",
-  "dev/release-notes/support-device",
   "dev/release-notes/doc-updates",
   "dev/release-notes/support"
 ];
