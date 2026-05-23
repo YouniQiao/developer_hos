@@ -96,8 +96,8 @@ export default function SDKsSection() {
   return (
     <section className="bg-secondary-1000 py-20 px-4" id="start-building">
       <Head>
-        <link rel="prefetch" href="/static/landing-page/plugin-sdk-light.png" />
-        <link rel="prefetch" href="/static/landing-page/plugin-sdk-dark.png" />
+        <link rel="prefetch" href="/landing-page/plugin-sdk-light.png" />
+        <link rel="prefetch" href="/landing-page/plugin-sdk-dark.png" />
       </Head>
       <div className="mx-auto max-w-7xl">
         <div className="dyte-badge">核心技术理念</div>

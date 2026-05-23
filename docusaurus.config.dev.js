@@ -156,9 +156,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '工具',
+            title: 'Tools',
             items: [
               { label: 'API 变更查询', to: '/docs/dev/release-notes/api-diff-search' },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              { label: 'HarmonyOS开发者官网', href: 'https://developer.huawei.com/consumer/cn/' },
             ],
           },
         ],

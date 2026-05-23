@@ -155,8 +155,8 @@
 
 @layer components {
   .noise-bg {
-    background-image: url('/static/landing-page/grid-light.svg'),
-      url('/static/landing-page/noise-light.png'),
+    background-image: url('/landing-page/grid-light.svg'),
+      url('/landing-page/noise-light.png'),
       linear-gradient(
         to bottom,
         transparent 40%,
@@ -166,8 +166,8 @@
   }
 
   html[data-theme='dark'] .noise-bg {
-    background-image: url('/static/landing-page/grid-dark.svg'),
-      url('/static/landing-page/noise-dark.png'),
+    background-image: url('/landing-page/grid-dark.svg'),
+      url('/landing-page/noise-dark.png'),
       linear-gradient(
         to bottom,
         transparent 40%,
