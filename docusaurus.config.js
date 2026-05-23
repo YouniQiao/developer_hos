@@ -204,37 +204,8 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Main Docs',
+            title: 'Tools',
             items: [
-              {
-                label: '设计',
-                href: 'https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445',
-              },
-              {
-                label: '应用开发',
-                to: '/docs/dev/app-dev/overview',
-              },
-              {
-                label: '元服务开发',
-                to: '/docs/atomic/startup/overview',
-              },
-              {
-                label: '分发',
-                href: 'https://developer.huawei.com/consumer/cn/doc/app/agc-help-started-0000001146511331',
-              },
-            ],
-          },
-          {
-            title: 'Tools Docs',
-            items: [
-              {
-                label: 'ArkTS',
-                href: 'https://arkts.cool/',
-              },
-              {
-                label: 'DevEco Studio',
-                to: '/docs/tools/overview',
-              },
               {
                 label: 'API 变更查询',
                 to: '/docs/dev/release-notes/api-diff-search',
