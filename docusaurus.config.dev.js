@@ -56,6 +56,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
           include: ['dev/release-notes/**', 'tools/**'],
+          exclude: ['**/img/**'],
           editUrl:
             'https://github.com/YouniQiao/developer_hos/tree/master/',
         },

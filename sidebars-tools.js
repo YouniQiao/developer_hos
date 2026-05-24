@@ -4,6 +4,19 @@ module.exports = {
 toolsSidebar: [
 
 {
+  type: 'category',
+  label: '版本说明',
+  collapsed: true,
+  items: [
+    'tools/coding-debug/release-notes/deveco-studio-611',
+    'tools/coding-debug/release-notes/deveco-studio-610',
+    'tools/coding-debug/release-notes/deveco-studio-602',
+    'tools/coding-debug/release-notes/deveco-studio-601',
+    'tools/coding-debug/release-notes/deveco-studio-600',
+  ],
+},
+
+{
 
   type: 'category',
 
@@ -2439,6 +2452,18 @@ aiAssistSidebar: [
 ],
 
 devecoTestingSidebar: [
+
+{
+  type: 'category',
+  label: '版本说明',
+  collapsed: true,
+  items: [
+    'tools/deveco-testing/release-notes/deveco-testing-610',
+    'tools/deveco-testing/release-notes/deveco-testing-602',
+    'tools/deveco-testing/release-notes/deveco-testing-601',
+    'tools/deveco-testing/release-notes/deveco-testing-600',
+  ],
+},
       'tools/deveco-testing/get-familiar',
       'tools/deveco-testing/specialized-testing',
       'tools/deveco-testing/publish-testing',
