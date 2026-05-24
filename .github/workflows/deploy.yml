@@ -5,6 +5,10 @@ on:
     branches: [master]
   workflow_dispatch:
 
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
 jobs:
   build-and-deploy:
     runs-on: self-hosted
@@ -23,31 +27,42 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps (only when lockfile changed)
+      - name: Install deps (only when needed)
         run: |
-          if ! cmp -s package-lock.json /tmp/hos-lockfile 2>/dev/null; then
-            echo "📦 package-lock.json changed, installing..."
+          if [ -d node_modules ] && cmp -s package-lock.json /tmp/hos-lockfile 2>/dev/null; then
+            echo "✅ node_modules up to date, skipped"
+          else
+            echo "📦 Installing dependencies..."
             npm ci
             cp package-lock.json /tmp/hos-lockfile
-          else
-            echo "✅ node_modules up to date, skipped"
           fi
 
-      - name: Build (skip if fresh)
+      - name: Build (skip if fresh AND source unchanged)
         run: |
-          if [ -f build/index.html ] && [ $(find build/index.html -mmin -120) ]; then
-            echo "✅ build/ 为 2 小时内产物，跳过构建"
+          CURRENT_SHA=$(git rev-parse HEAD)
+          if [ -f build/.build-success ] && [ -f build/.build-commit ] && \
+             [ "$(cat build/.build-commit)" = "$CURRENT_SHA" ] && \
+             [ $(find build/.build-success -mmin -120) ]; then
+            echo "✅ build/ 新鲜且源码未变 (${CURRENT_SHA:0:7})，跳过构建"
           else
-            echo "🔨 build/ 不存在或已过期，开始全量构建..."
+            echo "🔨 开始全量构建 (${CURRENT_SHA:0:7})..."
+            rm -rf build/
             ulimit -S -n 65536
             npx docusaurus build --no-minify
+            echo "$CURRENT_SHA" > build/.build-commit
+            touch build/.build-success
           fi
+        timeout-minutes: 45
         env:
           NODE_OPTIONS: '--max-old-space-size=8192'
           GENERATE_SOURCEMAP: 'false'
 
       - name: Deploy to Netlify
         run: |
+          if [ ! -f build/.build-success ]; then
+            echo "❌ 构建产物不完整，跳过部署"
+            exit 1
+          fi
           if ! command -v netlify &> /dev/null; then
             npm install -g netlify-cli
           fi
@@ -56,6 +71,7 @@ jobs:
             --dir=build \
             --functions=netlify/functions \
             --message "Deploy ${{ github.sha }}"
+        timeout-minutes: 15
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
