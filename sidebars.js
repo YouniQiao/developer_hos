@@ -82,9 +82,12 @@ const sidebars = {
   contentDistSidebar,
   designResSidebar: [
     'resources/design-res/overview',
+    'resources/design-res/harmonyos-symbol',
   ],
   sampleCodeSidebar: [
     'resources/sample-code/overview',
+    'resources/sample-code/sample-codes',
+    'resources/sample-code/harmonyos-code-workshop',
   ],
   templatesSdkSidebar: [
     'resources/templates-sdk/overview',
