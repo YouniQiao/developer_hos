@@ -42,7 +42,7 @@ jobs:
           CURRENT_SHA=$(git rev-parse HEAD)
           if [ -f build/.build-success ] && [ -f build/.build-commit ] && \
              [ "$(cat build/.build-commit)" = "$CURRENT_SHA" ] && \
-             [ $(find build/.build-success -mmin -120) ]; then
+             [ $(find build/.build-success -mmin -180) ]; then
             echo "✅ build/ 新鲜且源码未变 (${CURRENT_SHA:0:7})，跳过构建"
           else
             echo "🔨 开始全量构建 (${CURRENT_SHA:0:7})..."
@@ -52,7 +52,7 @@ jobs:
             echo "$CURRENT_SHA" > build/.build-commit
             touch build/.build-success
           fi
-        timeout-minutes: 45
+        timeout-minutes: 60
         env:
           NODE_OPTIONS: '--max-old-space-size=8192'
           GENERATE_SOURCEMAP: 'false'
@@ -71,7 +71,7 @@ jobs:
             --dir=build \
             --functions=netlify/functions \
             --message "Deploy ${{ github.sha }}"
-        timeout-minutes: 60
+        timeout-minutes: 90
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
