@@ -60,6 +60,37 @@ function readBreadcrumb() {
 }
 
 /**
+ * 返回顶部悬浮按钮
+ */
+function BackToTop() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setVisible(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <button
+      className={`${styles.backToTop} ${visible ? styles.backToTopVisible : ''}`}
+      onClick={scrollToTop}
+      title="返回顶部"
+      aria-label="返回顶部"
+    >
+      ↑
+    </button>
+  );
+}
+
+/**
  * 主组件：协调选中检测、评论管理、高亮渲染、侧边栏
  */
 export default function InlineComments({ repoOwner, repoName, category, clientId }) {
@@ -186,6 +217,8 @@ export default function InlineComments({ repoOwner, repoName, category, clientId
           <span className={styles.toggleBadge}>{totalComments}</span>
         )}
       </button>
+
+      <BackToTop />
 
       {sidebarOpen && (
         <>
