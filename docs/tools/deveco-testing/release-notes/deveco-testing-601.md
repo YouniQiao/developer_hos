@@ -1,8 +1,8 @@
 ---
-title: "HarmonyOS 6.0.1(21)"
+title: "DevEco Testing 6.0.1"
 ---
 
-# DevEco Testing 新增和增强特性
+# DevEco Testing 6.0.1
 
 当前为 DevEco Testing 最新版本说明文档，如需查看 DevEco Testing 其它历史版本的功能新增、变更情况，请在左侧文档目录中选择相应版本。
 

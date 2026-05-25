@@ -1,8 +1,8 @@
 ---
-title: "HarmonyOS 6.0.0(20)"
+title: "DevEco Studio 6.0.0"
 ---
 
-# DevEco Studio 新增和增强特性
+# DevEco Studio 6.0.0
 
 ## DevEco Studio 6.0.0 Release（6.0.0.878）兼容性配套关系
 

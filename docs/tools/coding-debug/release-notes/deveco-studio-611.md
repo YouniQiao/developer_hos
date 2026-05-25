@@ -1,8 +1,8 @@
 ---
-title: "HarmonyOS 6.1.1(24) Beta"
+title: "DevEco Studio 6.1.1"
 ---
 
-# DevEco Studio 新增和增强特性
+# DevEco Studio 6.1.1
 
 当前为DevEco Studio最新版本说明文档，如需查看DevEco Studio其它历史版本的功能新增、变更情况，请在左侧文档目录中选择相应版本。
 
