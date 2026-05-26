@@ -7,6 +7,8 @@ sidebar_label: 字体图标组件
 
 HarmonyOS 设计资源库，包含字体、图标、组件库、机框等丰富的设计素材，帮助设计师快速准确地完成 HarmonyOS 应用设计。
 
+![设计资源界面](./img/design-resource.png)
+
 ## 通用设计
 
 提供 HarmonyOS 设计语言的基础资源，包括字体、图标、登录组件等。

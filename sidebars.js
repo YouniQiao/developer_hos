@@ -90,10 +90,9 @@ const sidebars = {
     'resources/sample-code/harmonyos-code-workshop',
   ],
   templatesSdkSidebar: [
-    'resources/templates-sdk/overview',
-  ],
-  thirdPartyLibsSidebar: [
-    'resources/third-party-libs/overview',
+    'resources/templates-sdk/templates',
+    'resources/templates-sdk/components',
+    'resources/templates-sdk/sdk-libs',
   ],
   crossPlatformSidebar: [
     'resources/cross-platform/overview',

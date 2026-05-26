@@ -1,6 +1,6 @@
 /**
  * Resources Secondary Navigation Bar
- * Items: 设计资源 | 示例代码 | 模板&组件&SDK库 | 三方库 | 三方跨端框架
+ * Items: 设计资源 | 示例代码 | 模板&组件&SDK库 | 跨平台框架
  */
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
@@ -22,18 +22,12 @@ const NAV_ITEMS = [
   },
   {
     label: '模板&组件&SDK库',
-    path: '/docs/resources/templates-sdk/overview',
+    path: '/docs/resources/templates-sdk/templates',
     match: '/docs/resources/templates-sdk',
     desc: '开发模板、UI 组件与 SDK 库',
   },
   {
-    label: '三方库',
-    path: '/docs/resources/third-party-libs/overview',
-    match: '/docs/resources/third-party-libs',
-    desc: '社区第三方库推荐与指南',
-  },
-  {
-    label: '三方跨端框架',
+    label: '跨平台框架',
     path: '/docs/resources/cross-platform/overview',
     match: '/docs/resources/cross-platform',
     desc: 'Flutter/React Native 等跨端方案',

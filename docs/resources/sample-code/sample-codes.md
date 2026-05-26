@@ -7,6 +7,8 @@ sidebar_label: Sample Codes
 
 HarmonyOS 示例代码是华为官方提供的**代码示例库**，涵盖 HarmonyOS 应用开发的各个技术领域，帮助开发者通过实际代码快速理解和上手各类开发场景。
 
+> 访问 [HarmonyOS 示例代码官方页面](https://developer.huawei.com/consumer/cn/samples/) 浏览全部示例。
+
 ![示例代码页面](./img/sample-codes.png)
 
 ## 平台特点
@@ -31,4 +33,4 @@ HarmonyOS 示例代码是华为官方提供的**代码示例库**，涵盖 Harmo
 | 应用专项测试 | 自动化测试、性能测试示例 |
 | 开发工具 | DevEco Studio、hvigor 等工具使用 |
 
-> 访问 [HarmonyOS 示例代码官方页面](https://developer.huawei.com/consumer/cn/samples/) 浏览全部示例。
+

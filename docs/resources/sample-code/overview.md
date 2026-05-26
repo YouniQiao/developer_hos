@@ -7,6 +7,8 @@ sidebar_label: Codelabs
 
 HarmonyOS Codelabs 是华为官方提供的**互动式编程教程平台**，隶属于「开发者学堂」。通过分步详解与实操，帮助开发者快速掌握 HarmonyOS 应用开发的核心技能。
 
+> 访问 [HarmonyOS Codelabs 官方页面](https://developer.huawei.com/consumer/cn/codelabsPortal/serviceTypes) 浏览全部课程。
+
 ![Codelabs 页面](./img/codelabs.png)
 
 ## 平台特点
@@ -29,4 +31,4 @@ HarmonyOS Codelabs 是华为官方提供的**互动式编程教程平台**，隶
 | 基于 SqueezeNet 模型实现图像分类 | 60 分钟 | 初级 | AI、图像分类 |
 | 基于 AscendC 算子实现图像边缘检测 | 60 分钟 | 初级 | AscendC、AI、NPU |
 
-> 访问 [HarmonyOS Codelabs 官方页面](https://developer.huawei.com/consumer/cn/codelabsPortal/serviceTypes) 浏览全部课程。
+
