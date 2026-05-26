@@ -12,26 +12,30 @@ const releaseNotesSidebar = [
   {
     "type": "category",
     "label": "应用兼容性说明",
-    "collapsed": true,
+    "collapsed": false,
     "items": [
-      "dev/release-notes/app-compatibility-intro",
-      "dev/release-notes/app-compatibility-influence-factor",
       {
         "type": "category",
-        "label": "应用开发中的兼容性场景开发指导",
-        "collapsed": true,
+        "label": "理解兼容性",
         "items": [
-          {
-            "type": "category",
-            "label": "API兼容性保护和告警屏蔽",
-            "collapsed": true,
-            "items": [
-              "dev/release-notes/arkts-api-compatibility-warning-elim",
-              "dev/release-notes/c-api-compatibility-warning-elim",
-              "dev/release-notes/compatibility-warning-suppress"
-            ]
-          },
+          "dev/release-notes/app-compatibility-intro",
+          "dev/release-notes/app-compatibility-influence-factor"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "API 兼容性判断与保护",
+        "items": [
+          "dev/release-notes/arkts-api-compatibility-warning-elim",
+          "dev/release-notes/c-api-compatibility-warning-elim",
           "dev/release-notes/c-api-compatibility-warning",
+          "dev/release-notes/compatibility-warning-suppress"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "场景实战",
+        "items": [
           "dev/release-notes/app-compatibility-upgrade",
           "dev/release-notes/app-compatibility-third-har",
           "dev/release-notes/app-compatibility-share-hsp",
@@ -43,7 +47,7 @@ const releaseNotesSidebar = [
   {
     "type": "category",
     "label": "信息查询工具",
-    "collapsed": true,
+    "collapsed": false,
     "items": [
       "dev/release-notes/api-diff-search",
       "dev/release-notes/sdk-version-distribution",

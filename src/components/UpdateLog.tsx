@@ -7,6 +7,14 @@ interface UpdateItem {
 
 const updateRecords: UpdateItem[] = [
   {
+    date: '2026-05-26',
+    description: '增加更多资源菜单下内容，跨平台框架内容后续持续补充。',
+  },
+  {
+    date: '2026-05-26',
+    description: '刷新开发与测试-版本说明。',
+  },
+  {
     date: '2026-05-23',
     description: (
       <>
@@ -23,7 +31,6 @@ const updateRecords: UpdateItem[] = [
 ];
 
 const updatePlans: UpdateItem[] = [
-  { date: '2026-05-31', description: '开发与测试 → 版本说明' },
   { date: '2026-06-30', description: '设计与规划 → 设计指南 → 架构 → 质量 → 安全 → 体验建议' },
   { date: '后续', description: '当月更新下个月的计划。' },
 ];

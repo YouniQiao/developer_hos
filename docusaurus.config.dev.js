@@ -1,5 +1,5 @@
 // @ts-check
-// Dev Docusaurus config — only builds release-notes docs, keeps full site chrome.
+// Dev Docusaurus config — only builds 开发与测试 docs, keeps full site chrome.
 // Usage: npx docusaurus build --config docusaurus.config.dev.js --no-minify
 // Usage: npx docusaurus start --config docusaurus.config.dev.js --no-minify
 
@@ -55,7 +55,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['resources/**', 'tools/**'],
+          include: ['dev/release-notes/**', 'dev/testing/**'],
           exclude: ['**/img/**'],
           editUrl:
             'https://github.com/YouniQiao/developer_hos/tree/master/',

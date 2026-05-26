@@ -6,7 +6,7 @@ title: "所有HarmonyOS版本"
 
 HarmonyOS已面向开发者发布的所有版本清单如下：
 
-| HarmonyOS  开发者版本  （即API版本） | DevEco Studio  版本 | 发布时间 | 版本使用建议 | |
+| 原始API版本 | 即开发者版本 | IDE版本 | 发布时间 | 版本使用建议 |
 | --- | --- | --- | --- | --- |
 | 新开发应用 | 已开发应用 |
 | [6.1.1(24) Beta1](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-611) | DevEco Studio 6.1.1 Beta1 | 2026/04/30发布Beta版本 | 按需使用。  如需体验尝鲜6.1.1(24)带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜6.1.1(24)带来的新增特性，可使用此版本创建应用工程。 |
