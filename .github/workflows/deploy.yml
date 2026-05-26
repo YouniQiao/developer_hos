@@ -12,6 +12,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: self-hosted
+    env:
+      HTTP_PROXY: ''
+      HTTPS_PROXY: ''
     steps:
       - name: Fast checkout (self-hosted, incremental)
         run: |
@@ -75,5 +78,3 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          HTTP_PROXY: ''
-          HTTPS_PROXY: ''
