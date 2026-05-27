@@ -1,5 +1,6 @@
 ---
 title: "C API兼容性保护"
+displayed_sidebar: appCompatibilitySidebar
 ---
 
 # C API兼容性保护

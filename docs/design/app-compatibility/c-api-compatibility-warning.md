@@ -1,5 +1,6 @@
 ---
 title: "CAPI兼容性保护高阶用法"
+displayed_sidebar: appCompatibilitySidebar
 ---
 
 # CAPI兼容性保护高阶用法

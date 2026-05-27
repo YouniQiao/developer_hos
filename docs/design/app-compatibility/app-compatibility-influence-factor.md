@@ -1,5 +1,6 @@
 ---
 title: "影响应用兼容性的关键信息"
+displayed_sidebar: appCompatibilitySidebar
 ---
 
 # 影响应用兼容性的关键信息

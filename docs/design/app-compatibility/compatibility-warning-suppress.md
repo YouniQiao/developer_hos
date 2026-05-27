@@ -1,5 +1,6 @@
 ---
 title: "兼容性告警屏蔽"
+displayed_sidebar: appCompatibilitySidebar
 ---
 
 # 兼容性告警屏蔽

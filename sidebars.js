@@ -35,6 +35,7 @@ const agcSidebarFull = require('./sidebars-agc.js').agcSidebar;
 const xiaoyiSidebar = require('./sidebars-xiaoyi.js').xiaoyiSidebar;
 const ndkDevSidebar = require('./sidebars-ndk.js').ndkDevSidebar;
 const designSidebar = require('./sidebars-design.js').designSidebar;
+const appCompatibilitySidebar = require('./sidebars-compatibility.js').appCompatibilitySidebar;
 const qualitySidebar = require('./sidebars-quality.js').qualitySidebar;
 
 const sidebars = {
@@ -54,6 +55,7 @@ const sidebars = {
     'dev/faq/overview',
   ],
   designSidebar,
+  appCompatibilitySidebar,
   toolsSidebar,
   aiAssistSidebar,
   devecoTestingSidebar,

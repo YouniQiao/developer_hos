@@ -1,5 +1,6 @@
 ---
 title: "ArkTS API兼容性保护"
+displayed_sidebar: appCompatibilitySidebar
 ---
 
 # ArkTS API兼容性保护
