@@ -5,10 +5,13 @@ const { designSidebar } = require('./sidebars-design.js');
 const { appCompatibilitySidebar } = require('./sidebars-compatibility.js');
 const { releaseNotesSidebar } = require('./sidebars-releases.js');
 
+const { experienceSuggestionsSidebar } = require('./sidebars-experience-suggestions.js');
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   designSidebar,
   appCompatibilitySidebar,
+  experienceSuggestionsSidebar,
   releaseNotesSidebar,
   toolsSidebar,
   aiAssistSidebar,

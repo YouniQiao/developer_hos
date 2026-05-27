@@ -1,6 +1,6 @@
 /**
  * Design & Planning Secondary Navigation Bar
- * Items match mega menu categories: 设计指南 | 架构 | 质量 | 安全 | 应用兼容性
+ * Items match mega menu categories: 设计指南 | 架构 | 质量 | 安全 | 应用兼容性 | 体验建议
  */
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
@@ -37,6 +37,12 @@ const NAV_ITEMS = [
     path: '/docs/design/app-compatibility/app-compatibility-intro',
     match: '/docs/design/app-compatibility',
     desc: 'API兼容性判断与保护、场景实战',
+  },
+  {
+    label: '体验建议',
+    path: '/docs/experience-suggestions/experience-suggestions-overview',
+    match: '/docs/experience-suggestions',
+    desc: '兼容性、稳定性、性能、功耗、安全隐私、UX',
   },
 ];
 
