@@ -1,12 +1,15 @@
 // @ts-check
-// Dev sidebar — 版本说明 + 测试 (for fast local preview).
-const testingSidebar = require('./sidebars-testing.js').testingSidebar;
-const releaseNotesSidebar = require('./sidebars-releases.js').releaseNotesSidebar;
+// Dev sidebar — 工具 only (for fast local preview).
+const { toolsSidebar, aiAssistSidebar, devecoTestingSidebar, cliToolsSidebar, cloudDevSidebar, ohpmSidebar } = require('./sidebars-tools.js');
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  testingSidebar,
-  releaseNotesSidebar,
+  toolsSidebar,
+  aiAssistSidebar,
+  devecoTestingSidebar,
+  cliToolsSidebar,
+  cloudDevSidebar,
+  ohpmSidebar,
 };
 
 module.exports = sidebars;

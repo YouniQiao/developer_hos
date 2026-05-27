@@ -21,6 +21,8 @@ const toolsSidebar = require('./sidebars-tools.js').toolsSidebar;
 const aiAssistSidebar = require('./sidebars-tools.js').aiAssistSidebar;
 const devecoTestingSidebar = require('./sidebars-tools.js').devecoTestingSidebar;
 const cliToolsSidebar = require('./sidebars-tools.js').cliToolsSidebar;
+const ohpmSidebar = require('./sidebars-tools.js').ohpmSidebar;
+const cloudDevSidebar = require('./sidebars-tools.js').cloudDevSidebar;
 const promotionSidebar = require('./sidebars-promotion.js').promotionSidebar;
 const monetizationSidebar = require('./sidebars-monetization.js').monetizationSidebar;
 const releaseNotesSidebar = require('./sidebars-releases.js').releaseNotesSidebar;
@@ -56,6 +58,8 @@ const sidebars = {
   aiAssistSidebar,
   devecoTestingSidebar,
   cliToolsSidebar,
+  ohpmSidebar,
+  cloudDevSidebar,
   
   architectureSidebar: [
     'architecture/overview',

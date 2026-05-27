@@ -1,6 +1,6 @@
 /**
  * Tools Secondary Navigation Bar
- * Mimics Android Studio's horizontal subnav: 工具 标题 + DevEco Studio指南 | AI 编程 | 命令行工具
+ * Mimics Android Studio's horizontal subnav: 工具 标题 + DevEco Studio指南 | 端云一体化开发 | AI 编程 | DevEco Testing指南 | 命令行工具
  */
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
@@ -15,8 +15,14 @@ const NAV_ITEMS = [
     desc: '开发环境搭建、编码调试、构建、性能优化、发布',
   },
   {
+    label: '端云一体化开发',
+    path: '/docs/tools/end-cloud/agc-harmonyos-clouddev-overview',
+    match: '/docs/tools/end-cloud',
+    desc: '云函数、云对象、云数据库、端云一体化模板',
+  },
+  {
     label: 'AI 编程',
-    path: '/docs/tools/ai-assist/ide-codegenie-releasenote',
+    path: '/docs/tools/ai-assist/ide-codegenie',
     match: '/docs/tools/ai-assist',
     desc: '智能问答、代码生成、页面生成、调优',
   },
@@ -27,10 +33,16 @@ const NAV_ITEMS = [
     desc: '专项测试、上架预检、探索测试、回归测试',
   },
   {
+    label: 'ohpm包管理工具',
+    path: '/docs/tools/ohpm/ide-ohpm-system-platform',
+    match: '/docs/tools/ohpm',
+    desc: '三方依赖管理工具、ohpm-repo 私仓搭建',
+  },
+  {
     label: '命令行工具',
     path: '/docs/tools/cli-tools/command-line-tools-overview',
     match: '/docs/tools/cli-tools',
-    desc: 'codelinter、hstack、hvigorw、ohpm',
+    desc: 'codelinter、hstack、hvigorw',
   },
 ];
 

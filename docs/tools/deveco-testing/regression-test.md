@@ -1,28 +1,27 @@
 ---
 title: "回归测试"
-sidebar_label: "回归测试"
-description: "DevEco Testing - 回归测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing-regression-test
+displayed_sidebar: devecoTestingSidebar
 ---
+
 # 回归测试
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/66/v3/W5TTh-tgRYakIlHteTleOw/zh-cn_image_0000002492343756.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=C8315BE2354632CFD2D6A7486E6179B113BEB1BF1171A4ABCB8B3ACEEEB603C3 "点击放大")
+![](./img/zh-cn_image_0000002492343756.png)
 
 ## 回归测试
 
-**回归测试：**针对待测试应用的指定场景，支持通过构建自定义测试包，无需搭建环境即可执行测试用例。用例执行过程中提供实时投屏、步骤截图、步骤结果和测试用例执行日志展示，辅助开发者快速定位问题；此外，测试报告支持指标上报，辅助开发者了解应用的执行性能，助力开发者更高效地打造出高质量应用。
+<strong>回归测试：</strong>针对待测试应用的指定场景，支持通过构建自定义测试包，无需搭建环境即可执行测试用例。用例执行过程中提供实时投屏、步骤截图、步骤结果和测试用例执行日志展示，辅助开发者快速定位问题；此外，测试报告支持指标上报，辅助开发者了解应用的执行性能，助力开发者更高效地打造出高质量应用。
 
-**测试包构建**
+<strong>测试包构建</strong>
 
 回归测试的测试对象为应用的核心功能，用户可将应用核心功能的测试用例构建成多个可执行测试包，每个测试包中仅包含单个测试用例，便于观察到核心功能的每个小功能点的质量。
 
-测试执行前需先构建测试包，用户利用python的setuptools工具在工程（测试工程构建参考应用UI测试（基于Python））根目录下构建setup-regression.py、MANIFEST.in文件，setup-regression.py文件中声明用例，MANIFEST.in文件中声明脚本执行过程中需要用到的aw包、config文件夹下的配置文件及其他的资源文件。
+测试执行前需先构建测试包，用户利用python的setuptools工具在工程（测试工程构建参考[应用UI测试（基于Python）](./hypium-python-guidelines.md)）根目录下构建setup-regression.py、MANIFEST.in文件，setup-regression.py文件中声明用例，MANIFEST.in文件中声明脚本执行过程中需要用到的aw包、config文件夹下的配置文件及其他的资源文件。
 
 为方便用户构建测试包，DevEco Testing Hypium（PyCharm插件）已发布，用户可利用插件快速生成可执行测试包。具体操作步骤如下：
 
-**步骤一：**PyCharm中本地安装 DevEco Testing Hypium 插件，安装成功后重启IDE，导航栏中出现相关字样，即为安装成功。
+<strong>步骤一：</strong>PyCharm中本地安装 DevEco Testing Hypium 插件，安装成功后重启IDE，导航栏中出现相关字样，即为安装成功。
 
-**步骤二：**新建hypium工程，编写用例。以下为示例工程目录：
+<strong>步骤二：</strong>新建hypium工程，编写用例。以下为示例工程目录：
 
 ```
 HypiumTest
@@ -38,14 +37,14 @@ HypiumTest
  |     |    |----Example.py                     // Example测试用例文件，实际的测试逻辑代码
 ```
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/70/v3/-P3Nl9nVQsmjLP-RV38ovw/caution_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=3CAD709DA5CCD5D203C86EA3ED2C1277E3D8DEB791637E4FC7225CE125CB75BE) 
+![](./img/caution_3.0-zh-cn.png)
 
 在用例脚本中，请导入并使用hypium.advance.deveco\_testing.step中的Step方法标记步骤(from hypium.advance.deveco\_testing.step import Step)，否则回归测试过程中无法正确读取到测试步骤，并导致指标监控为空。
 
-**步骤三：**在工程根目录下创建setup-regression.py文件和MANIFEST.in文件（用户本地环境需预先安装setuptools模块），参考python的setuptools用法编写setup-regression.py，示例如下：
+<strong>步骤三：</strong>在工程根目录下创建setup-regression.py文件和MANIFEST.in文件（用户本地环境需预先安装setuptools模块），参考python的setuptools用法编写setup-regression.py，示例如下：
 
 ```
-from setuptools import setup 
+from setuptools import setup
 
  setup(
        name='hypiumTest',
@@ -57,7 +56,7 @@ from setuptools import setup
        )
 ```
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/7d/v3/fzzDGloDTm6J3TRQ3_xbUw/caution_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=5DCC24C789D6C07AFBF35EFB9A005644B460FD87CC13C26F4740B31C0A1A635F) 
+![](./img/caution_3.0-zh-cn.png)
 
 回归测试生成的可执行测试包中仅支持单用例（即单个json文件和json中指定的用例文件），编写setup-regression.py时需注意写法，否则会打包失败。
 
@@ -77,23 +76,23 @@ include resource/*
 include resource/images/*
 ```
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/79/v3/Q3RHdRLARnapt21vXHhFuw/notice_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=33DDAAB92162E7CE0A2A3C27217E379CDD1D5DCE775EB90953A780DA6E0C2021) 
+![](./img/notice_3.0-zh-cn.png)
 
 一定要确保用例所需要的 aw 和配置文件及其他资源全部都写到 MANIFEST.in 中，否则用例包无法正常执行。
 
-**步骤四：**在根目录下右键选择“DevEco Testing Hypium”-“生成测试服务包”，出现下图弹窗，选择“回归测试”，用户需填写待测试应用的名称及测试场景，信息填写完毕后点击“OK”即可在指定目录下查看测试包。
+<strong>步骤四：</strong>在根目录下右键选择“DevEco Testing Hypium”-“生成测试服务包”，出现下图弹窗，选择“回归测试”，用户需填写待测试应用的名称及测试场景，信息填写完毕后点击“OK”即可在指定目录下查看测试包。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d0/v3/3VO3n43XSJOw4bRa_zp1ag/zh-cn_image_0000002524503447.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=E5263B89F31C7F284E928C466E39A82A91B1377E0E40F547B82EC8B96BA65F36)
+![](./img/zh-cn_image_0000002524503447.png)
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/8e/v3/uy1G_mN9S4aThGblOrEcdA/zh-cn_image_0000002492343754.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=639BCFA084F0EA259D957A9F441639373B86E1F7ED26E67830C9F48DF205B133 "点击放大")
+![](./img/zh-cn_image_0000002492343754.png)
 
 生成回归测试测试包，打包好的测试包支持在回归测试服务中本地执行。
 
-**创建任务**
+<strong>创建任务</strong>
 
 进入DevEco Testing客户端，在左侧菜单栏选择“回归测试”，点击“回归测试”服务卡片，即进入任务创建界面。按需配置任务参数，点击创建任务即开始测试。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/68/v3/IMtENkGHTgKMTyesx3pE4Q/zh-cn_image_0000002492343752.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=0ABCC8C3613C7FB4F550AC4CAFC263F25665642633F861026B1A977F88D495BE "点击放大")
+![](./img/zh-cn_image_0000002492343752.png)
 
 配置服务参数：
 
@@ -105,25 +104,25 @@ include resource/images/*
 
 测试包路径：选择待测测试包，服务将对测试包中指定应用进行解析，并执行测试包中测试用例。
 
-**测试包详情：**
+<strong>测试包详情：</strong>
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d3/v3/tj4O3I_MQCOEIQp1DTaPIw/zh-cn_image_0000002538035122.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=1DC5403B1BFFA1E36352BFC1396BECB0EB61ADC8D9CA7E72DF6DF5348C774D08 "点击放大")
+![](./img/zh-cn_image_0000002538035122.png)
 
 点击查看测试包详情，即可查看测试包基本信息。
 
 参数配置完成后，点击“创建任务”即开始测试。
 
-**测试执行**
+<strong>测试执行</strong>
 
 任务创建后即进入测试执行页面，测试过程中，在测试页面可以看到设备实时投屏、设备截图、测试步骤结果上报以及指标数据上报。执行过程中如果脚本执行失败，任务会立刻停止，生成的报告中仅包含任务失败前的数据信息。手动停止查看报告时，报告中仅包含报告停止前的数据信息。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/42/v3/VLjr82mhTKeuPwqVagz_fw/zh-cn_image_0000002492343750.jpg?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=6DB479AAF5D5C983C8FC81A4CE2242E955AAF6FC7035C573BF5013D9DBA7DC04 "点击放大")
+![](./img/zh-cn_image_0000002492343750.jpg)
 
-**查看报告**
+<strong>查看报告</strong>
 
 测试完成后，将自动跳转到报告界面。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d1/v3/2sMDw4qDTpG-Jez0j_VXhg/zh-cn_image_0000002492343758.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=E0389CB88B3C0875CCF0A4FC0D30CA9BDFA67C6655F97D758953F88C4BA4240C "点击放大")
+![](./img/zh-cn_image_0000002492343758.png)
 
 任务信息：在报告的最上方可查看本次任务的应用信息，运行时间，环境参数和执行日志，点击“打开目录”按钮，可以导出html格式的报告文件。
 
@@ -139,6 +138,6 @@ include resource/images/*
 
 执行步骤&执行日志：该部分展示了测试用例执行的所有测试步骤、每一步的执行结果以及用例的执行日志，若某一步执行失败，则后续步骤不再执行。点击每一步，CPU使用率统计图中将会展示出该步骤执行过程中的CPU使用情况，同时该步骤对应的执行日志将会高亮显示。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/da/v3/k-wh2PmlR2agRjoG1Oi7yA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260519T051440Z&HW-CC-Expire=86400&HW-CC-Sign=DDAB782C5B994C4C3B57C39B3112825EE0C269A8137B2324093E52098ABB4E00) 
+![](./img/note_3.0-zh-cn.png)
 
 更多测试服务详情，请前往DevEco Testing客户端 -> 回归测试 -> 回归测试 -> 任务创建页 -> 测试指南中查询。

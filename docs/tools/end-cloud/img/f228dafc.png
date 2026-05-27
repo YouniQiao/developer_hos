@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="applicable-device" content="pc,mobile" />
+        <meta name="description" content="404"/>
+        <meta name="keywords" content="404"/>
+                <meta name="render:status_code" content="404"/>
+            <meta name="pageView" content=""/>
+            <meta name="bread_cloum" content=""/>
+            <meta name="platform" content=""/>
+            <meta name="classification" content=""/>
+            <meta name="robots" content="noindex, nofollow"/>
+    <base href="/" />
+        <title>404</title>
+            <link rel="stylesheet" href="allianceCmsResource/resource/HUAWEI_Developer_VUE/libs/global/common.css?v=1762141554323" type="text/css" >
+
+    <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/allianceCmsResource/resource/HUAWEI_Developer_VUE/images/favicon.ico"
+    />
+</head>
+<body data-personalized-infoId="3264993510401851" class="seo_main_page">
+      <h1 style='display:none' data-version="1762141554323">404</h1>
+<div id="0418538524185359">
+    <div></div>
+</div>
+<div class="cmsPageContent">
+        <div>
+            <div id='d118957a-76b0-4f73-b01e-0a53997e0853'>
+                <div></div>
+            </div>
+        </div>
+</div>
+<div id="8503649416245299">
+    <div></div>
+</div>
+        <script type="text/javascript"  src="allianceCmsResource/resource/HUAWEI_Developer_VUE/libs/global/vue.runtime.min.js?v=1762141554323"  ></script>
+        <script type="text/javascript"  src="allianceCmsResource/resource/HUAWEI_Developer_VUE/libs/global/cms-common.js?v=1762141554323"  ></script>
+        <script type="text/javascript"  src="allianceCmsResource/resource/HUAWEI_Developer_VUE/libs/global/require.js?v=1762141554323"  ></script>
+<script>
+    require.config({ baseUrl: "/", waitSeconds: 0, urlArgs: "v=1762141554323" });
+</script>
+<script>
+    window.Requirejs = require;
+    window.define = undefined;
+    var layerDataListStr = JSON.parse(decodeURIComponent("%7B%22uId%22%3A%228a93bfb1-98cd-41e0-8276-f7ffe293b7c9%22%2C%22innerHTML%22%3A%22parent-item%22%2C%22children%22%3A%5B%7B%22innerHTML%22%3A%22notFound%22%2C%22vueAppComponentType%22%3A%22%28...e%29%3D%3E%7Bconst%20t%3Dmi%28%29.createApp%28...e%29%2C%7Bmount%3An%7D%3Dt%3Breturn%20t.mount%3De%3D%3E%7Bconst%20o%3Dbi%28e%29%3Bif%28%21o%29return%3Bconst%20r%3Dt._component%3BT%28r%29%7C%7Cr.render%7C%7Cr.template%7C%7C%28r.template%3Do.innerHTML%29%2Co.innerHTML%3D%5C%22%5C%22%3Bconst%20s%3Dn%28o%2C%211%2Co%20instanceof%20SVGElement%29%3Breturn%20o%20instanceof%20Element%26%26%28o.removeAttribute%28%5C%22v-cloak%5C%22%29%2Co.setAttribute%28%5C%22data-v-app%5C%22%2C%5C%22%5C%22%29%29%2Cs%7D%2Ct%7D%22%2C%22gridPaintGroup%22%3Afalse%2C%22vueTplName%22%3A%22allianceCmsResource%2Fresource%2FHUAWEI_Developer_VUE%2Ftemplate%2FnotFound.js%22%2C%22gridPaint%22%3Afalse%2C%22uId%22%3A%22d118957a-76b0-4f73-b01e-0a53997e0853%22%2C%22vueTpl%22%3Atrue%2C%22vueAppComponentRawValue%22%3A%7B%22_lang%22%3A%22cn%22%2C%22_associationalWords%22%3A%5B%5D%2C%22_searchCardList%22%3A%5B%5D%2C%22_hideRecommend%22%3Atrue%2C%22_matedSearchKeys%22%3A%5B%5D%2C%22placeholder%22%3A%7B%22_eleId%22%3A%2247236593012982353%22%2C%22maxlength%22%3A30%2C%22_type%22%3A%22TextItem%22%2C%22value%22%3A%22%E4%BD%A0%E6%83%B3%E4%BA%86%E8%A7%A3...%22%7D%2C%22title%22%3A%7B%22_eleId%22%3A%2238862636458454425%22%2C%22maxlength%22%3A30%2C%22_type%22%3A%22TextItem%22%2C%22value%22%3A%22%E5%BE%88%E6%8A%B1%E6%AD%89%EF%BC%8C%E6%82%A8%E8%AE%BF%E9%97%AE%E7%9A%84%E9%A1%B5%E9%9D%A2%E4%B8%8D%E5%AD%98%E5%9C%A8%E3%80%82%22%7D%2C%22info%22%3A%7B%22_eleId%22%3A%229521029325515946%22%2C%22_type%22%3A%22RichHtmlItem%22%2C%22content%22%3A%22%E8%BE%93%E5%85%A5%E5%9C%B0%E5%9D%80%E6%9C%89%E8%AF%AF%E6%88%96%E8%AF%A5%E5%9C%B0%E5%9D%80%E5%B7%B2%E7%BB%8F%E5%88%A0%E9%99%A4%EF%BC%8C%E6%82%A8%E5%8F%AF%E4%BB%A5%3Ca%20href%3D%5C%22https%3A%2F%2Fdeveloper.huawei.com%2Fconsumer%2Fcn%2F%5C%22%20target%3D%5C%22_self%5C%22%3E%E5%9B%9E%E5%88%B0%E5%BC%80%E5%8F%91%E8%80%85%E8%81%94%E7%9B%9F%E5%AE%98%E7%BD%91%E9%A6%96%E9%A1%B5%3C%2Fa%3E%EF%BC%8C%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%B0%9D%E8%AF%95%E6%90%9C%E7%B4%A2%E6%9B%B4%E5%A4%9A%E6%9C%89%E8%B6%A3%E5%86%85%E5%AE%B9%E3%80%82%22%7D%7D%2C%22interactScript%22%3Afalse%2C%22children%22%3A%5B%5D%2C%22root%22%3Afalse%2C%22name%22%3A%22notFound%22%7D%5D%2C%22gridPaintGroup%22%3Afalse%2C%22root%22%3Atrue%2C%22name%22%3A%22%3Cb%3Eparent-item%3C%2Fb%3E%22%2C%22gridPaint%22%3Atrue%7D"));
+    var layerDataList = layerDataListStr.children;
+
+    for (var i = 0; i < layerDataList.length; i++) {
+        if (layerDataList[i].vueTplName) {
+            (function(){
+                var item = layerDataList[i]
+                var tplUrl=item.vueTplName;
+                if(tplUrl.indexOf('notice-list.js') > -1) {
+                    var noticeListUrl = "/allianceCmsResource/resource/HUAWEI_Developer_VUE/statistics/cn/bulletin/list.json"
+                    fetch(noticeListUrl).then(function(response) {
+                        Requirejs([tplUrl], function(){
+                            let curData = {
+                                'testData' : response,
+                                'pageSize': 10,
+                                'pageNum': 1,
+                                'curData': [],
+                                'curPage': 0,
+                                'skipNum': null,
+                                'activeClass': 0,
+                                'first': true,
+                                'last': false,
+                            }
+                            var content = window['notice-list'];
+                            var oDom = document.getElementById(item.uId);
+                            const app = Vue.createApp({
+                                ...content,
+                                data() {
+                                return curData
+                                },
+                            });
+                            cmscommon(app, "cn");
+                            app.mount(oDom.lastElementChild);
+                        });
+
+                    })
+                        
+                }else if(tplUrl.indexOf('notice-detail.js') > -1){
+                    var url = new URL(location.href);
+                    var bulletinId = url.searchParams.get('id');
+                    var noticeDetailUrl = "/allianceCmsResource/resource/HUAWEI_Developer_VUE/statistics/cn/bulletin/" + bulletinId + '.json';
+                    fetch(noticeDetailUrl).then(function(response) {
+                        Requirejs([tplUrl], function(){
+                            var noticeDetailContent = {
+                                    'noticeData': response
+                                }
+                            var content = window['notice-detail'];
+                            var oDom = document.getElementById(item.uId);
+                            const app = Vue.createApp({
+                                ...content,
+                                data() {
+                                return noticeDetailContent
+                                },
+                            });
+                            cmscommon(app, "cn");
+                            app.mount(oDom.lastElementChild);
+                        });
+                    }).catch(()=>{
+                        window.location.href = '/consumer/cn/404';
+                    })
+                }else{
+                    Requirejs([tplUrl], function(){
+                        var content = window[item.name];
+                        var rawValue = item.vueAppComponentRawValue;
+                        var oDom = document.getElementById(item.uId);
+                        const app = Vue.createApp({
+                            ...content,
+                            data() {
+                            return rawValue
+                            },
+                        });
+                        cmscommon(app, "cn");
+                        var mountedFun = app._component.mounted || function(){};
+                        app._component.mounted = function(){
+                            mountedFun.apply(this);
+                            changeSrc(oDom);
+                        }
+                        app.mount(oDom.lastElementChild);
+                    });
+                }
+            })()
+        }
+    }
+
+
+        try{
+            var generalList=[{url:'allianceCmsResource/resource/HUAWEI_Developer_VUE/template/header.js',uId:'0418538524185359'}];
+            generalList.forEach(function(item){
+                var url=item.url;
+                if(window.resourceVersion){
+                    url=item.url+'?v='+window.resourceVersion
+                }
+                var name = item.url.split('/').pop().split('.')[0];
+                var jsonUrl = "/allianceCmsResource/resource/HUAWEI_Developer_VUE/statistics/cn/head.json?v=1762141554323"
+                fetch(jsonUrl).then(function(response) {
+                    var headData = response;
+                    window.cms_cookiekey = (headData.data && headData.data.cookieVersion) ? headData.data.cookieVersion.value : '';     
+                    Requirejs([url], function() {
+                        var content = window[name];
+                        var oDom = document.getElementById(item.uId);
+                        const app = Vue.createApp({
+                            ...content,
+                            data() {
+                            return headData
+                            },
+                        });
+                        cmscommon(app, "cn");
+                        app.mount(oDom.lastElementChild);
+                    });
+                })
+            })
+        }catch(e){
+        }
+
+
+        try{
+            var generalList=[{url:'allianceCmsResource/resource/HUAWEI_Developer_VUE/template/footer.js',uId:'8503649416245299'}];
+            generalList.forEach(function(item){
+                var url=item.url;
+                if(window.resourceVersion){
+                    url=item.url+'?v='+window.resourceVersion
+                }
+                var name = item.url.split('/').pop().split('.')[0];
+                var jsonUrl = "/allianceCmsResource/resource/HUAWEI_Developer_VUE/statistics/cn/foot.json?v=1762141554323"
+                fetch(jsonUrl).then(function(response) {
+                    var fooData = response;
+                    Requirejs([url], function(){
+                        var content = window[name];
+                        var oDom = document.getElementById(item.uId);
+                        const app = Vue.createApp({
+                            ...content,
+                            data() {
+                            return fooData
+                            },
+                        });
+                        cmscommon(app, "cn");
+                        app.mount(oDom.lastElementChild);
+                    });
+                })
+            })
+        }catch(e){
+        }
+        
+        function fetch(fileName) {
+            const url = fileName
+            const request = new XMLHttpRequest()
+            request.open('GET', url, true)
+            request.responseType = 'json'
+            return new Promise((resolve, reject) => {
+            request.onload = () => {
+                if (request.status === 200) {
+                resolve(request.response)
+                } else {
+                reject(new Error(`cannot load "null"`))
+                }
+            }
+            request.send()
+            })
+        }
+
+         function loadImage(obj, url) {
+                obj.classList.add("asyncImg");
+                let img = new Image();
+                img.onload = function() {
+                  obj.src = url;
+                };
+                img.onerror = function() {
+                    return;
+                };
+                img.src = url;
+            }
+
+            function changeSrc(oDom) {
+                const imgTags = oDom.querySelectorAll('img');
+                imgTags.forEach( (img) => {
+                    if (img.src && img.getAttribute('webp-url')) {
+                        img.onload = function() {
+                            if (!(img.width > 0 && img.height > 0)) {
+                                let webpUrl = img.getAttribute('webp-url');
+                                img.setAttribute('webp-url', '');
+                                loadImage(img, webpUrl);
+                                return;
+                            } else {
+                                img.setAttribute('webp-url', '');
+                            }
+                        } 
+                    }
+                    if (img.src && img.getAttribute('async-url')) {
+                        let asyncUrl = img.getAttribute('async-url');
+                        img.setAttribute('async-url', '');
+                        loadImage(img, asyncUrl);
+                    }
+                }
+                );
+            }
+
+</script>
+</body>
+</html>

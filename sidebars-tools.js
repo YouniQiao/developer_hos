@@ -16,563 +16,58 @@ toolsSidebar: [
   ],
 },
 
-{
+// New "开发环境搭建" section for sidebars-tools.js
+// Generated: 2026-05-27
 
+{
   type: 'category',
-
-  label: '开发环境搭建',
-
-  collapsed: true,
-
+  label: '概览与安装',
+  collapsed: false,
   items: [
-
     'tools/coding-debug/ide-tools-overview',
-
     'tools/coding-debug/ide-software-install',
-
     'tools/coding-debug/ide-new-ui',
-
-{
-
-      type: 'category',
-
-      label: '工程创建',
-
-      collapsed: false,
-
-      items: [
-
-        'tools/coding-debug/ide-project-overview',
-
-        'tools/coding-debug/ide-project-structure',
-
-        'tools/coding-debug/ide-template',
-
-        'tools/coding-debug/ide-create-new-project',
-
-{
-
-          type: 'category',
-
-          label: '模块管理',
-
-          collapsed: true,
-
-          items: [
-
-            'tools/coding-debug/ide-add-new-module',
-
-            'tools/coding-debug/ide-import-module',
-
-{
-
-              type: 'category',
-
-              label: '开发发布和管理共享包',
-
-              collapsed: false,
-
-              items: [
-
-                'tools/coding-debug/ide-har',
-
-                'tools/coding-debug/ide-hsp',
-
-                'tools/coding-debug/ide-har-publish',
-
-                'tools/coding-debug/ide-har-import',
-
-              ]
-
-            },
-
-{
-
-              type: 'category',
-
-              label: 'ohpm-repo私仓搭建工具',
-
-              collapsed: true,
-
-              items: [
-
-                'tools/coding-debug/ide-ohpm-repo-overview',
-
-                'tools/coding-debug/ide-ohpm-repo-quickstart',
-
-                'tools/coding-debug/ide-ohpm-repo-configuration',
-
-                'tools/coding-debug/ide-ohpm-repo-log',
-
-{
-
-                  type: 'category',
-
-                  label: '相关命令',
-
-                  collapsed: true,
-
-                  items: [
-
-                    'tools/coding-debug/ide-ohpm-repo-help',
-
-                    'tools/coding-debug/ide-ohpm-repo-install',
-
-                    'tools/coding-debug/ide-ohpm-repo-start',
-
-                    'tools/coding-debug/ide-ohpm-repo-restart',
-
-                    'tools/coding-debug/ide-ohpm-repo-stop',
-
-                    'tools/coding-debug/ide-ohpm-repo--version',
-
-                    'tools/coding-debug/ide-ohpm-repo-encrypt_password',
-
-                    'tools/coding-debug/ide-ohpm-repo-pack',
-
-                    'tools/coding-debug/ide-ohpm-repo-deploy',
-
-                    'tools/coding-debug/ide-ohpm-repo-restore',
-
-                    'tools/coding-debug/ide-ohpm-repo-mirror_storage',
-
-                    'tools/coding-debug/ide-ohpm-repo-check_storage',
-
-                    'tools/coding-debug/ide-ohpm-repo-remove_instance',
-
-{
-
-                      type: 'category',
-
-                      label: '数据迁移相关命令',
-
-                      collapsed: true,
-
-                      items: [
-
-                        'tools/coding-debug/ide-ohpm-repo-export-pkginfo',
-
-                        'tools/coding-debug/ide-ohpm-repo-batch-download',
-
-                        'tools/coding-debug/ide-ohpm-repo-batch-publish',
-
-                        'tools/coding-debug/ide-ohpm-repo-export-userinfo',
-
-                        'tools/coding-debug/ide-ohpm-repo-import-userinfo',
-
-                        'tools/coding-debug/ide-ohpm-repo-export-pkgpermission',
-
-                        'tools/coding-debug/ide-ohpm-repo-import-pkgpermission',
-
-                      ]
-
-                    },
-
-                  ]
-
-                },
-
-{
-
-                  type: 'category',
-
-                  label: '部署指导',
-
-                  collapsed: false,
-
-                  items: [
-
-                    'tools/coding-debug/ide-ohpm-deploy-single-instance',
-
-                    'tools/coding-debug/ide-ohpm-deploy-multiple-instances',
-
-                  ]
-
-                },
-
-{
-
-                  type: 'category',
-
-                  label: '页面功能介绍',
-
-                  collapsed: true,
-
-                  items: [
-
-                    'tools/coding-debug/ide-ohpm-web-front-page',
-
-                    'tools/coding-debug/ide-ohpm-web-user-center',
-
-                    'tools/coding-debug/ide-ohpm-user-management',
-
-                    'tools/coding-debug/ide-ohpm-depot-management',
-
-                    'tools/coding-debug/ide-package-permission-management',
-
-                    'tools/coding-debug/ide-ohpm-certification',
-
-                    'tools/coding-debug/ide-ohpm-organization',
-
-                    'tools/coding-debug/ide-ohpm-repo-operation-log',
-
-                    'tools/coding-debug/ide-ohpm-system-settings',
-
-                  ]
-
-                },
-
-                'tools/coding-debug/ide-ohpm-repo-configuration-guide',
-
-                'tools/coding-debug/ide-ohpm-repo-faq',
-
-{
-
-                  type: 'category',
-
-                  label: '附录',
-
-                  collapsed: true,
-
-                  items: [
-
-                    'tools/coding-debug/ide-ohpm-repo-data-migration',
-
-{
-
-                      type: 'category',
-
-                      label: '版本升级',
-
-                      collapsed: false,
-
-                      items: [
-
-                        'tools/coding-debug/ide-upgrade-101_to_2xx',
-
-                        'tools/coding-debug/ide-upgrade-110_to_2xx',
-
-                        'tools/coding-debug/ide-upgrade-2xx_to_2xx',
-
-                      ]
-
-                    },
-
-{
-
-                      type: 'category',
-
-                      label: '自定义存储插件',
-
-                      collapsed: false,
-
-                      items: [
-
-                        'tools/coding-debug/ide-ohpm-repo-plugin-configuration',
-
-                        'tools/coding-debug/ide-ohpm-repo-template-file',
-
-                      ]
-
-                    },
-
-{
-
-                      type: 'category',
-
-                      label: '自定义认证插件',
-
-                      collapsed: false,
-
-                      items: [
-
-                        'tools/coding-debug/ide-custom-auth-plugin-configuration',
-
-                        'tools/coding-debug/ide-custom-auth-plugin-template',
-
-                      ]
-
-                    },
-
-                    'tools/coding-debug/ide-ohpm-repo-data-backup',
-
-                    'tools/coding-debug/ide-ohpm-repo-export-metadata',
-
-                    'tools/coding-debug/ide-interface-protocol',
-
-{
-
-                      type: 'category',
-
-                      label: '自定义元数据规则校验插件',
-
-                      collapsed: false,
-
-                      items: [
-
-                        'tools/coding-debug/ide-custom-metadata-rule-validation-config',
-
-                        'tools/coding-debug/ide-rule-verification-template-file',
-
-                      ]
-
-                    },
-
-                    'tools/coding-debug/ide-ohpm-dockerfile',
-
-                  ]
-
-                },
-
-              ]
-
-            },
-
-            'tools/coding-debug/ide-add-new-ability',
-
-            'tools/coding-debug/ide-add-page',
-
-            'tools/coding-debug/ide-apply-generated-icon',
-
-            'tools/coding-debug/ide-service-widget',
-
-            'tools/coding-debug/ide-insight-intent',
-
-{
-
-              type: 'category',
-
-              label: '端云一体化开发',
-
-              collapsed: true,
-
-              items: [
-
-                'tools/coding-debug/agc-harmonyos-clouddev-overview',
-
-{
-
-                  type: 'category',
-
-                  label: '开发准备',
-
-                  collapsed: false,
-
-                  items: [
-
-                    'tools/coding-debug/agc-harmonyos-clouddev-account',
-
-                    'tools/coding-debug/agc-harmonyos-clouddev-setup',
-
-                    'tools/coding-debug/agc-harmonyos-clouddev-createproject',
-
-                  ]
-
-                },
-
-{
-
-                  type: 'category',
-
-                  label: '开发端云工程',
-
-                  collapsed: false,
-
-                  items: [
-
-{
-
-                      type: 'category',
-
-                      label: '创建端云一体化开发工程',
-
-                      collapsed: false,
-
-                      items: [
-
-                        'tools/coding-debug/agc-harmonyos-create-appproject',
-
-                        'tools/coding-debug/agc-harmonyos-create-faproject',
-
-                        'tools/coding-debug/agc-harmonyos-project-migration',
-
-                      ]
-
-                    },
-
-{
-
-                      type: 'category',
-
-                      label: '开发云侧工程',
-
-                      collapsed: false,
-
-                      items: [
-
-{
-
-                          type: 'category',
-
-                          label: '开发云函数',
-
-                          collapsed: false,
-
-                          items: [
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-functionprocess',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-createfunc',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-funccoding',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-debugfunc',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-deployfunc',
-
-                          ]
-
-                        },
-
-{
-
-                          type: 'category',
-
-                          label: '开发云对象',
-
-                          collapsed: false,
-
-                          items: [
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-cloudobjprocess',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-createcloudobj',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-cloudobj-coding',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-debugcloudobj',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-deploycloudobj',
-
-                          ]
-
-                        },
-
-{
-
-                          type: 'category',
-
-                          label: '开发云数据库',
-
-                          collapsed: false,
-
-                          items: [
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-dbprocess',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-objecttype',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-dataentry',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-deploydatabase',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-modelclass',
-
-                          ]
-
-                        },
-
-                      ]
-
-                    },
-
-                    'tools/coding-debug/agc-harmonyos-clouddev-deploy',
-
-                    'tools/coding-debug/agc-harmonyos-clouddev-sync',
-
-{
-
-                      type: 'category',
-
-                      label: '开发端侧工程',
-
-                      collapsed: false,
-
-                      items: [
-
-{
-
-                          type: 'category',
-
-                          label: '在端侧调用云侧代码',
-
-                          collapsed: false,
-
-                          items: [
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-invokecloudfunc',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-invokecloudobj',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-invokeclouddatabase',
-
-                            'tools/coding-debug/agc-harmonyos-clouddev-invokecloudstorage',
-
-                          ]
-
-                        },
-
-                      ]
-
-                    },
-
-                  ]
-
-                },
-
-                'tools/coding-debug/agc-harmonyos-clouddev-console',
-
-                'tools/coding-debug/agc-harmonyos-clouddev-compile',
-
-                'tools/coding-debug/agc-harmonyos-clouddev-release',
-
-                'tools/coding-debug/agc-harmonyos-clouddev-faq',
-
-{
-
-                  type: 'category',
-
-                  label: '附录：云开发工程模板',
-
-                  collapsed: false,
-
-                  items: [
-
-                    'tools/coding-debug/agc-harmonyos-clouddev-emptyability',
-
-                  ]
-
-                },
-
-              ]
-
-            },
-
-          ]
-
-        },
-
-      ]
-
-    },
-
     'tools/coding-debug/ide-no-network',
-
-  ]
-
+  ],
 },
 
 {
+  type: 'category',
+  label: '工程创建',
+  collapsed: false,
+  items: [
+    'tools/coding-debug/ide-project-overview',
+    'tools/coding-debug/ide-project-structure',
+    'tools/coding-debug/ide-template',
+    'tools/coding-debug/ide-create-new-project',
+  ],
+},
+
+{
+  type: 'category',
+  label: '模块与共享包',
+  collapsed: true,
+  items: [
+    {
+      type: 'category',
+      label: 'HAR与HSP共享包',
+      collapsed: false,
+      items: [
+        'tools/coding-debug/ide-har',
+        'tools/coding-debug/ide-hsp',
+        'tools/coding-debug/ide-har-publish',
+        'tools/coding-debug/ide-har-import',
+      ],
+    },
+    'tools/coding-debug/ide-add-new-module',
+    'tools/coding-debug/ide-import-module',
+    'tools/coding-debug/ide-add-new-ability',
+    'tools/coding-debug/ide-add-page',
+    'tools/coding-debug/ide-apply-generated-icon',
+    'tools/coding-debug/ide-service-widget',
+    'tools/coding-debug/ide-insight-intent',
+  ],
+},{
 
   type: 'category',
 
@@ -1846,9 +1341,7 @@ toolsSidebar: [
 
         'tools/coding-debug/ide-log-postback',
 
-        'tools/coding-debug/ide-ohpm-version-rules',
-
-        'tools/coding-debug/agc-pac',
+        'tools/end-cloud/agc-pac',
 
       ]
 
@@ -2357,7 +1850,6 @@ aiAssistSidebar: [
   collapsed: true,
 
   items: [
-
     'tools/ai-assist/ide-code-generation',
 
     'tools/ai-assist/ide-project-ask',
@@ -2377,7 +1869,6 @@ aiAssistSidebar: [
   collapsed: true,
 
   items: [
-
     'tools/ai-assist/ide--code-generation',
 
     'tools/ai-assist/ide-code-modify',
@@ -2395,7 +1886,6 @@ aiAssistSidebar: [
   collapsed: true,
 
   items: [
-
     'tools/ai-assist/ide-edit-area-code-generation',
 
     'tools/ai-assist/ide-code-continuation',
@@ -2429,7 +1919,6 @@ aiAssistSidebar: [
   collapsed: true,
 
   items: [
-
     'tools/ai-assist/ide-agent-use',
 
     'tools/ai-assist/ide-agent-mcp',
@@ -2509,66 +1998,261 @@ cliToolsSidebar: [
       'tools/cli-tools/ide-command-line-codelinter',
       'tools/cli-tools/ide-command-line-hstack',
       'tools/cli-tools/ide-hvigor-commandline',
-{
-  type: 'category',
-  label: '三方依赖管理工具（ohpm）',
-  items: [
-      'tools/cli-tools/ohpm/ide-ohpm-cli',
-      'tools/cli-tools/ohpm/ide-ohpm-system-platform',
-      'tools/cli-tools/ohpm/ide-ohpmrc',
-      'tools/cli-tools/ohpm/ide-oh-package-json5',
-{
-        type: 'category',
-        label: '常用命令',
-        items: [
-          'tools/cli-tools/ohpm/commands/ide-ohpm-config',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-help',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-info',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-init',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-install',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-list',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-publish',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-uninstall',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-prepublish',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-unpublish',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-update',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-root',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-version',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-cache',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-run',
-          'tools/cli-tools/ohpm/commands/ide-ohpm--version',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-ping',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-clean',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-dist-tags',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-convert',
-          'tools/cli-tools/ohpm/commands/ide-ohpm-dependency-check',
-        ],
-},
-{
-        type: 'category',
-        label: '错误码',
-        items: [
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-config-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-info-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-install-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-list-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-publish-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-uninstall-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-unpublish-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-update-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-version-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-cache-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-run-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-ping-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-clean-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-dist-tags-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-convert-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-dependency-check-errorcode',
-          'tools/cli-tools/ohpm/errorcode/ide-ohpm-errorcode-universal',
-        ],
-},
-  ],
-},
 ],
 
+
+cloudDevSidebar: [
+  'tools/end-cloud/agc-harmonyos-clouddev-overview',
+  {
+    type: 'category',
+    label: '开发准备',
+    collapsed: false,
+    items: [
+      'tools/end-cloud/agc-harmonyos-clouddev-account',
+      'tools/end-cloud/agc-harmonyos-clouddev-setup',
+      'tools/end-cloud/agc-harmonyos-clouddev-createproject',
+    ],
+  },
+  {
+    type: 'category',
+    label: '开发端云工程',
+    collapsed: false,
+    items: [
+      {
+        type: 'category',
+        label: '创建端云一体化开发工程',
+        collapsed: false,
+        items: [
+          'tools/end-cloud/agc-harmonyos-create-appproject',
+          'tools/end-cloud/agc-harmonyos-create-faproject',
+          'tools/end-cloud/agc-harmonyos-project-migration',
+        ],
+      },
+      {
+        type: 'category',
+        label: '开发云侧工程',
+        collapsed: false,
+        items: [
+          {
+            type: 'category',
+            label: '开发云函数',
+            collapsed: false,
+            items: [
+              'tools/end-cloud/agc-harmonyos-clouddev-functionprocess',
+              'tools/end-cloud/agc-harmonyos-clouddev-createfunc',
+              'tools/end-cloud/agc-harmonyos-clouddev-funccoding',
+              'tools/end-cloud/agc-harmonyos-clouddev-debugfunc',
+              'tools/end-cloud/agc-harmonyos-clouddev-deployfunc',
+            ],
+          },
+          {
+            type: 'category',
+            label: '开发云对象',
+            collapsed: false,
+            items: [
+              'tools/end-cloud/agc-harmonyos-clouddev-cloudobjprocess',
+              'tools/end-cloud/agc-harmonyos-clouddev-createcloudobj',
+              'tools/end-cloud/agc-harmonyos-clouddev-cloudobj-coding',
+              'tools/end-cloud/agc-harmonyos-clouddev-debugcloudobj',
+              'tools/end-cloud/agc-harmonyos-clouddev-deploycloudobj',
+            ],
+          },
+          {
+            type: 'category',
+            label: '开发云数据库',
+            collapsed: false,
+            items: [
+              'tools/end-cloud/agc-harmonyos-clouddev-dbprocess',
+              'tools/end-cloud/agc-harmonyos-clouddev-objecttype',
+              'tools/end-cloud/agc-harmonyos-clouddev-dataentry',
+              'tools/end-cloud/agc-harmonyos-clouddev-deploydatabase',
+              'tools/end-cloud/agc-harmonyos-clouddev-modelclass',
+            ],
+          },
+        ],
+      },
+      'tools/end-cloud/agc-harmonyos-clouddev-deploy',
+      'tools/end-cloud/agc-harmonyos-clouddev-sync',
+      {
+        type: 'category',
+        label: '开发端侧工程',
+        collapsed: false,
+        items: [
+          {
+            type: 'category',
+            label: '在端侧调用云侧代码',
+            collapsed: false,
+            items: [
+              'tools/end-cloud/agc-harmonyos-clouddev-invokecloudfunc',
+              'tools/end-cloud/agc-harmonyos-clouddev-invokecloudobj',
+              'tools/end-cloud/agc-harmonyos-clouddev-invokeclouddatabase',
+              'tools/end-cloud/agc-harmonyos-clouddev-invokecloudstorage',
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  'tools/end-cloud/agc-harmonyos-clouddev-console',
+  'tools/end-cloud/agc-harmonyos-clouddev-compile',
+  'tools/end-cloud/agc-harmonyos-clouddev-release',
+  'tools/end-cloud/agc-harmonyos-clouddev-faq',
+  {
+    type: 'category',
+    label: '附录：云开发工程模板',
+    collapsed: false,
+    items: [
+      'tools/end-cloud/agc-harmonyos-clouddev-emptyability',
+    ],
+  },
+],
+ohpmSidebar: [
+    {
+      type: 'category',
+      label: 'ohpm 命令行工具',
+      items: [
+        'tools/ohpm/ide-ohpm-system-platform',
+        'tools/ohpm/ide-ohpmrc',
+        'tools/ohpm/ide-oh-package-json5',
+        {
+          type: 'category',
+          label: '常用命令',
+          items: [
+            'tools/ohpm/commands/ide-ohpm-config',
+            'tools/ohpm/commands/ide-ohpm-help',
+            'tools/ohpm/commands/ide-ohpm-info',
+            'tools/ohpm/commands/ide-ohpm-init',
+            'tools/ohpm/commands/ide-ohpm-install',
+            'tools/ohpm/commands/ide-ohpm-list',
+            'tools/ohpm/commands/ide-ohpm-publish',
+            'tools/ohpm/commands/ide-ohpm-uninstall',
+            'tools/ohpm/commands/ide-ohpm-prepublish',
+            'tools/ohpm/commands/ide-ohpm-unpublish',
+            'tools/ohpm/commands/ide-ohpm-update',
+            'tools/ohpm/commands/ide-ohpm-root',
+            'tools/ohpm/commands/ide-ohpm-version',
+            'tools/ohpm/commands/ide-ohpm-cache',
+            'tools/ohpm/commands/ide-ohpm-run',
+            'tools/ohpm/commands/ide-ohpm--version',
+            'tools/ohpm/commands/ide-ohpm-ping',
+            'tools/ohpm/commands/ide-ohpm-clean',
+            'tools/ohpm/commands/ide-ohpm-dist-tags',
+            'tools/ohpm/commands/ide-ohpm-convert',
+            'tools/ohpm/commands/ide-ohpm-dependency-check',
+          ],
+        },
+        {
+          type: 'category',
+          label: '错误码',
+          items: [
+            'tools/ohpm/errorcode/ide-ohpm-config-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-info-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-install-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-list-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-publish-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-uninstall-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-unpublish-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-update-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-version-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-cache-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-run-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-ping-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-clean-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-dist-tags-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-convert-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-dependency-check-errorcode',
+            'tools/ohpm/errorcode/ide-ohpm-errorcode-universal',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ohpm-repo 私仓搭建',
+      collapsed: false,
+      items: [
+        'tools/ohpm/repo/ide-ohpm-repo-overview',
+        'tools/ohpm/repo/ide-ohpm-repo-quickstart',
+        'tools/ohpm/repo/ide-ohpm-repo-configuration',
+        'tools/ohpm/repo/ide-ohpm-repo-log',
+        'tools/ohpm/repo/ide-ohpm-repo-commands',
+        {
+          type: 'category',
+          label: '部署指导',
+          collapsed: false,
+          items: [
+            'tools/ohpm/repo/ide-ohpm-deploy-single-instance',
+            'tools/ohpm/repo/ide-ohpm-deploy-multiple-instances',
+          ],
+        },
+        {
+          type: 'category',
+          label: '页面功能介绍',
+          collapsed: true,
+          items: [
+            'tools/ohpm/repo/ide-ohpm-web-front-page',
+            'tools/ohpm/repo/ide-ohpm-web-user-center',
+            'tools/ohpm/repo/ide-ohpm-user-management',
+            'tools/ohpm/repo/ide-ohpm-depot-management',
+            'tools/ohpm/repo/ide-package-permission-management',
+            'tools/ohpm/repo/ide-ohpm-certification',
+            'tools/ohpm/repo/ide-ohpm-organization',
+            'tools/ohpm/repo/ide-ohpm-repo-operation-log',
+            'tools/ohpm/repo/ide-ohpm-system-settings',
+          ],
+        },
+        'tools/ohpm/repo/ide-ohpm-repo-configuration-guide',
+        'tools/ohpm/repo/ide-ohpm-repo-faq',
+        {
+          type: 'category',
+          label: '附录',
+          collapsed: true,
+          items: [
+            'tools/ohpm/repo/ide-ohpm-repo-data-migration',
+            {
+              type: 'category',
+              label: '版本升级',
+              collapsed: false,
+              items: [
+                'tools/ohpm/repo/ide-upgrade-101_to_2xx',
+                'tools/ohpm/repo/ide-upgrade-110_to_2xx',
+                'tools/ohpm/repo/ide-upgrade-2xx_to_2xx',
+              ],
+            },
+            {
+              type: 'category',
+              label: '自定义存储插件',
+              collapsed: false,
+              items: [
+                'tools/ohpm/repo/ide-ohpm-repo-plugin-configuration',
+                'tools/ohpm/repo/ide-ohpm-repo-template-file',
+              ],
+            },
+            {
+              type: 'category',
+              label: '自定义认证插件',
+              collapsed: false,
+              items: [
+                'tools/ohpm/repo/ide-custom-auth-plugin-configuration',
+                'tools/ohpm/repo/ide-custom-auth-plugin-template',
+              ],
+            },
+            'tools/ohpm/repo/ide-ohpm-repo-data-backup',
+            'tools/ohpm/repo/ide-ohpm-repo-export-metadata',
+            'tools/ohpm/repo/ide-interface-protocol',
+            {
+              type: 'category',
+              label: '自定义元数据规则校验插件',
+              collapsed: false,
+              items: [
+                'tools/ohpm/repo/ide-custom-metadata-rule-validation-config',
+                'tools/ohpm/repo/ide-rule-verification-template-file',
+              ],
+            },
+            'tools/ohpm/repo/ide-ohpm-dockerfile',
+          ],
+        },
+      ],
+    },
+  ],
 };
