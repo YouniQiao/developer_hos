@@ -46,27 +46,27 @@ title: "创建服务卡片"
 [创建一个工程](./ide-create-new-project)后，可以通过如下方法进行创建卡片。
 
 1. 创建卡片包括如下两种方式：
-   * 选择模块（如entry模块）下的任意文件，单击菜单栏**File > New > Service Widget**，[按需选择卡片](#section6353219163116)。
-   * 选择模块（如entry模块）下的任意文件，单击**右键 > New > Service Widget**，[按需选择卡片](#section6353219163116)。
+   * 选择模块（如entry模块）下的任意文件，单击菜单栏<strong>File &gt; New &gt; Service Widget</strong>，[按需选择卡片](#section6353219163116)。
+   * 选择模块（如entry模块）下的任意文件，单击<strong>右键 &gt; New &gt; Service Widget</strong>，[按需选择卡片](#section6353219163116)。
 
    ![](./img/02157f9d.png)
 
    * API 11 Stage模型及以上，创建元服务工程或在元服务工程中创建模块时，不再默认创建卡片和EntryCard。
-2. 在**Choose a Template for Your Service Widget**界面中，选择卡片模板，单击**Next**。
+2. 在<strong>Choose a Template for Your Service Widget</strong>界面中，选择卡片模板，单击<strong>Next</strong>。
 
    ![](./img/e7140efc.png)
-3. 在**Configure Your Service Widget**界面中，配置卡片的基本信息，包括：
-   * **Service widget name**：卡片的名称，在同一个应用/元服务中，卡片名称不能重复，且只能包含大小写字母、数字和下划线。
-   * **Display name**：卡片预览面板上显示的卡片名称。仅API 11 及以上Stage工程支持配置该字段。
-   * **Description**：卡片的描述信息。
-   * **Language：**界面开发语言，可选择创建ArkTS/JS卡片。
-   * **Support dimension**：选择卡片的规格。部分卡片支持同时设置多种规格。首次创建卡片时，将默认生成一个EntryCard目录，用于存放卡片快照。
-   * **Default dimension**：在下拉框中可选择默认的卡片。
-   * **Ability name：**选择一个挂靠卡片的Form Ability，或者创建一个新的Form Ability。
-   * **Module name：**卡片所属的模块。
+3. 在<strong>Configure Your Service Widget</strong>界面中，配置卡片的基本信息，包括：
+   * <strong>Service widget name</strong>：卡片的名称，在同一个应用/元服务中，卡片名称不能重复，且只能包含大小写字母、数字和下划线。
+   * <strong>Display name</strong>：卡片预览面板上显示的卡片名称。仅API 11 及以上Stage工程支持配置该字段。
+   * <strong>Description</strong>：卡片的描述信息。
+   * <strong>Language：</strong>界面开发语言，可选择创建ArkTS/JS卡片。
+   * <strong>Support dimension</strong>：选择卡片的规格。部分卡片支持同时设置多种规格。首次创建卡片时，将默认生成一个EntryCard目录，用于存放卡片快照。
+   * <strong>Default dimension</strong>：在下拉框中可选择默认的卡片。
+   * <strong>Ability name：</strong>选择一个挂靠卡片的Form Ability，或者创建一个新的Form Ability。
+   * <strong>Module name：</strong>卡片所属的模块。
 
    ![](./img/db4596db.png)
-4. 单击**Finish**完成卡片的创建。创建完成后，工具会自动创建出卡片的布局文件，并在form\_config.json文件中写入服务卡片的属性字段，关于各字段的说明请参考[配置文件说明](../../../docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration)。
+4. 单击<strong>Finish</strong>完成卡片的创建。创建完成后，工具会自动创建出卡片的布局文件，并在form\_config.json文件中写入服务卡片的属性字段，关于各字段的说明请参考[配置文件说明](../../../docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration)。
 5. 卡片创建完成后，请根据开发指导，完成卡片的开发，详情请参考[服务卡片开发指南](../../../docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget)。
 
 ## 预览服务卡片
@@ -75,4 +75,4 @@ title: "创建服务卡片"
 
 ![](./img/0803e932.png)
 
-关于预览器的使用详细说明请参考[界面预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-01).
+关于预览器的使用详细说明请参考[界面预览](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-01).

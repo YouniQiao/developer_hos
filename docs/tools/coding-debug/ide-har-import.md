@@ -6,7 +6,7 @@ title: "引用及管理共享包"
 
 引用三方HAR，包括从ohpm仓库进行安装、从本地文件夹和本地压缩包中进行安装三种方式。
 
-* 引用ohpm仓中的HAR，首先需要设置三方HAR的仓库信息，DevEco Studio默认仓库地址为OpenHarmony三方库中心仓，如果您想设置自定义仓库，请在DevEco Studio的**Terminal**窗口执行如下命令进行设置（执行命令前，请确保已[将ohpm配置到环境变量中](./ide-environment-config#zh-cn_topic_0000001056725590_li1012418311835)，第一次配置环境变量后，需重启DevEco Studio）：
+* 引用ohpm仓中的HAR，首先需要设置三方HAR的仓库信息，DevEco Studio默认仓库地址为OpenHarmony三方库中心仓，如果您想设置自定义仓库，请在DevEco Studio的<strong>Terminal</strong>窗口执行如下命令进行设置（执行命令前，请确保已[将ohpm配置到环境变量中](./ide-environment-config#zh-cn_topic_0000001056725590_li1012418311835)，第一次配置环境变量后，需重启DevEco Studio）：
 
   ```
   ohpm config set registry your_registry1,your_registry2
@@ -15,8 +15,8 @@ title: "引用及管理共享包"
   说明：ohpm支持多个仓库地址，采用英文逗号分隔。
 
   支持通过如下方式配置三方包依赖信息：
-  + 方式一：在菜单栏点击**Tools >** **OHPM Index**，进入DevEco Studio内置的OpenHarmony开源中心仓，选择需要的三方包，详情请参考[使用OpenHarmony开源中心仓管理三方包](#section1579838153916)。仅支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。
-  + 方式二：在**Terminal**窗口中，切换到需要引入三方包的模块，如entry模块，执行如下命令安装三方包，DevEco Studio会自动在该模块的oh-package.json5中自动添加三方包依赖。
+  + 方式一：在菜单栏点击<strong>Tools &gt;</strong> <strong>OHPM Index</strong>，进入DevEco Studio内置的OpenHarmony开源中心仓，选择需要的三方包，详情请参考[使用OpenHarmony开源中心仓管理三方包](#section1579838153916)。仅支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。
+  + 方式二：在<strong>Terminal</strong>窗口中，切换到需要引入三方包的模块，如entry模块，执行如下命令安装三方包，DevEco Studio会自动在该模块的oh-package.json5中自动添加三方包依赖。
 
     ```
     cd path/to/your/project/entry
@@ -30,13 +30,13 @@ title: "引用及管理共享包"
     }
     ```
 
-    依赖设置完成后，需要执行**ohpm install**命令安装依赖包，依赖包会安装到该模块的oh\_modules目录下。
+    依赖设置完成后，需要执行<strong>ohpm install</strong>命令安装依赖包，依赖包会安装到该模块的oh\_modules目录下。
 
     ```
     ohpm install
     ```
 * 引用本地模块源码（该本地模块必须与宿主模块归属于同一个工程），如entry模块需要依赖foo模块的源码，有如下两种方式：
-  + 方式一：在**Terminal**窗口中，切换到需要引入本地模块源码的模块，即entry模块下，执行如下命令进行安装，并会在该模块下的oh-package.json5中自动添加依赖。
+  + 方式一：在<strong>Terminal</strong>窗口中，切换到需要引入本地模块源码的模块，即entry模块下，执行如下命令进行安装，并会在该模块下的oh-package.json5中自动添加依赖。
 
     ```
     cd path/to/your/project/entry
@@ -50,14 +50,14 @@ title: "引用及管理共享包"
     }
     ```
 
-    依赖设置完成后，需要执行**ohpm install**命令安装依赖包，模块foo的源码会安装在entry模块的oh\_modules目录下。
+    依赖设置完成后，需要执行<strong>ohpm install</strong>命令安装依赖包，模块foo的源码会安装在entry模块的oh\_modules目录下。
 
     ```
     ohpm install
     ```
 
 * 引用本地HAR/HSP包，有如下两种方式：
-  + 方式一：在**Terminal**窗口中，切换到需要引入本地HAR/HSP包的模块，如entry模块，执行如下命令进行安装，并会在oh-package.json5中自动添加依赖。以HAR/HSP包在工程根目录下为例，配置示例如下（实际配置时请以HAR/HSP包实际目录为准）：
+  + 方式一：在<strong>Terminal</strong>窗口中，切换到需要引入本地HAR/HSP包的模块，如entry模块，执行如下命令进行安装，并会在oh-package.json5中自动添加依赖。以HAR/HSP包在工程根目录下为例，配置示例如下（实际配置时请以HAR/HSP包实际目录为准）：
     - 引用HAR：
 
       ```
@@ -90,7 +90,7 @@ title: "引用及管理共享包"
       }
       ```
 
-依赖设置完成后，需要执行**ohpm install**命令安装依赖包，依赖包会安装在该模块的oh\_modules目录下。
+依赖设置完成后，需要执行<strong>ohpm install</strong>命令安装依赖包，依赖包会安装在该模块的oh\_modules目录下。
 
 ```
 ohpm install
@@ -120,17 +120,17 @@ ohpm install
 
 从DevEco Studio 6.0.0 Beta5版本开始，新增OHPM Index入口，提供OpenHarmony开源中心仓的高效筛选和管理能力，提升开发者选型开发效率，消减因软件信息不对称导致的选型使用风险，快速选择与定位所需的开源三方库。
 
-1. 在菜单栏点击**Tools >** **OHPM Index**，进入OpenHarmony开源中心仓。
-2. 在左侧搜索框可查询三方包名称，或点击目录树，根据分类查看不同分类下推荐的依赖包信息。选定所需要安装的三方包，点击右上角蓝色按钮**Install**进行安装。
+1. 在菜单栏点击<strong>Tools &gt;</strong> <strong>OHPM Index</strong>，进入OpenHarmony开源中心仓。
+2. 在左侧搜索框可查询三方包名称，或点击目录树，根据分类查看不同分类下推荐的依赖包信息。选定所需要安装的三方包，点击右上角蓝色按钮<strong>Install</strong>进行安装。
 
    ![](./img/817d852d.png)
-3. 安装过程中，如出现下方弹窗，点击**Add**按钮，将OpenHarmony中心仓地址添加到.ohpmrc文件中。
+3. 安装过程中，如出现下方弹窗，点击<strong>Add</strong>按钮，将OpenHarmony中心仓地址添加到.ohpmrc文件中。
 
    ![](./img/70e3a48d.png)
 4. 三方包安装完成后，在工程级oh-package.json5文件中可以看到已安装的三方包名称及版本信息，oh\_modules中将同时添加该三方包。
-5. 点击页面左上角![](./img/4062292d.png "点击放大")图标，展示当前已安装的三方包信息。若当前三方包非最新版本，可以点击右上角**Update**按钮，更新至最新版本；点击**Delete**按钮，可以删除当前已安装的三方包。
+5. 点击页面左上角![](./img/4062292d.png "点击放大")图标，展示当前已安装的三方包信息。若当前三方包非最新版本，可以点击右上角<strong>Update</strong>按钮，更新至最新版本；点击<strong>Delete</strong>按钮，可以删除当前已安装的三方包。
 
    ![](./img/33e9f5fe.png)
-6. 若对于已使用的三方包依赖存在推荐的同类三方包，可点击编辑界面中黄色灯泡图标，在弹框中选择**Replace selected with recommended library**，将当前依赖替换为推荐的三方包依赖；或选择**Replace all with recommended libraries**，一键替换当前文件中所有同类推荐三方包。
+6. 若对于已使用的三方包依赖存在推荐的同类三方包，可点击编辑界面中黄色灯泡图标，在弹框中选择<strong>Replace selected with recommended library</strong>，将当前依赖替换为推荐的三方包依赖；或选择<strong>Replace all with recommended libraries</strong>，一键替换当前文件中所有同类推荐三方包。
 
    ![](./img/4f5fbc2b.png)

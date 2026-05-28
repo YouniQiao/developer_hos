@@ -10,7 +10,7 @@ title: "添加Page"
 
 ## 操作步骤
 
-1. 在Stage工程中选中ets文件夹下的**pages**，单击鼠标右键，选择**New > Page**，当前提供如下Page类型：
+1. 在Stage工程中选中ets文件夹下的<strong>pages</strong>，单击鼠标右键，选择<strong>New &gt; Page</strong>，当前提供如下Page类型：
    * Empty Page：创建一个普通页面，展示基础的Hello World功能；
    * Map Page：创建一个地图页面，展示地图视图功能，当前仅支持在Phone和Car设备中使用；
    * Payment Page：创建一个支付页面，可以实现点击按钮唤起支付弹窗，当前仅支持在Phone和Car设备中使用；
@@ -21,6 +21,6 @@ title: "添加Page"
    ![](./img/c2fa3369.png)
 
    API 10工程中仅支持创建Page，展示基础的Hello World功能；如需使用场景化Page模板，请将工程切换为API 11及以上后进行开发。
-2. 输入Page name（由大小写字母、数字和下划线组成），单击**Finish**完成添加。
+2. 输入Page name（由大小写字母、数字和下划线组成），单击<strong>Finish</strong>完成添加。
 
    ![](./img/18070f73.png "点击放大")

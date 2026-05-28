@@ -8,15 +8,15 @@ title: "使用新UI"
 
 ## 开启或关闭新UI
 
-启动DevEco Studio时，将有弹窗提示是否启用新用户界面。点击**Enable and Restart**，将重启DevEco Studio开始体验新UI。
+启动DevEco Studio时，将有弹窗提示是否启用新用户界面。点击<strong>Enable and Restart</strong>，将重启DevEco Studio开始体验新UI。
 
 ![](./img/7a78e75e.png)
 
-此外，可以在菜单栏进入**File > Settings...**（macOS系统为**DevEco Studio > Preferences/Settings...**）**> Appearance & Behavior > New UI**，勾选**Enable new UI**，点击**Apply**，在弹窗中点击**Restart**重启完成后体验新UI。
+此外，可以在菜单栏进入<strong>File &gt; Settings...</strong>（macOS系统为<strong>DevEco Studio &gt; Preferences/Settings...</strong>）<strong>&gt; Appearance & Behavior &gt; New UI</strong>，勾选<strong>Enable new UI</strong>，点击<strong>Apply</strong>，在弹窗中点击<strong>Restart</strong>重启完成后体验新UI。
 
 ![](./img/8cac673b.png)
 
-如需切换回原有的经典UI，在界面左上角点击![](./img/3cc52158.png "点击放大")图标，进入**File > Settings...** （macOS系统为**DevEco Studio > Preferences/Settings...**）**> Appearance & Behavior > New UI**，取消勾选**Enable new UI**，点击**Apply**，在弹窗中点击**Restart**重启即可完成切换。
+如需切换回原有的经典UI，在界面左上角点击![](./img/3cc52158.png "点击放大")图标，进入<strong>File &gt; Settings...</strong> （macOS系统为<strong>DevEco Studio &gt; Preferences/Settings...</strong>）<strong>&gt; Appearance & Behavior &gt; New UI</strong>，取消勾选<strong>Enable new UI</strong>，点击<strong>Apply</strong>，在弹窗中点击<strong>Restart</strong>重启即可完成切换。
 
 ## 菜单栏体验变化
 
@@ -24,7 +24,7 @@ title: "使用新UI"
 
 ![](./img/b59b2ef7.png)
 
-如需将菜单栏展开并固定在主界面，可以在菜单栏进入**File > Settings... > Appearance & Behavior > Appearance** > **UI Options**中，勾选**Show main menu in a separate toolbar**，点击**Apply**在主界面固定显示菜单栏。
+如需将菜单栏展开并固定在主界面，可以在菜单栏进入<strong>File &gt; Settings... &gt; Appearance & Behavior &gt; Appearance</strong> &gt; <strong>UI Options</strong>中，勾选<strong>Show main menu in a separate toolbar</strong>，点击<strong>Apply</strong>在主界面固定显示菜单栏。
 
 ![](./img/d9ed3085.png)
 
@@ -34,7 +34,7 @@ title: "使用新UI"
 
 ![](./img/f0b47f4d.png)
 
-在菜单栏进入**File > Settings... > Appearance & Behavior > Appearance** > **Tool Windows，**勾选**Show tool window names**后点击**Apply**，或将鼠标放置于工具窗口区域右键选择**Show Tool Window Names**，选择在界面中展示各功能图标的名称。
+在菜单栏进入<strong>File &gt; Settings... &gt; Appearance & Behavior &gt; Appearance</strong> &gt; <strong>Tool Windows，</strong>勾选<strong>Show tool window names</strong>后点击<strong>Apply</strong>，或将鼠标放置于工具窗口区域右键选择<strong>Show Tool Window Names</strong>，选择在界面中展示各功能图标的名称。
 
 ![](./img/9d6c39c1.png)
 
@@ -46,4 +46,4 @@ title: "使用新UI"
 
 ![](./img/9e3c8a9e.png)
 
-更多新用户界面变化详情，请参见[new UI](https://www.jetbrains.com.cn/en-us/help/idea/2024.3/new-ui.html).
+更多新用户界面变化详情，请参见[new UI](`https://`www.jetbrains.com.cn/en-us/help/idea/2024.3/new-ui.html).

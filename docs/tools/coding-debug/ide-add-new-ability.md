@@ -18,8 +18,8 @@ Ability是应用/元服务所具备的能力的抽象，应用的一个Module可
 
 ### 在模块中添加UIAbility
 
-1. 选中对应的模块，单击鼠标右键，选择**New > Ability**。
-2. 设置Ability名称，选择是否在设备主屏幕上显示该功能的启动图标，单击**Finish**完成Ability创建。
+1. 选中对应的模块，单击鼠标右键，选择<strong>New &gt; Ability</strong>。
+2. 设置Ability名称，选择是否在设备主屏幕上显示该功能的启动图标，单击<strong>Finish</strong>完成Ability创建。
 
    ![](./img/862d0514.png)
 
@@ -27,16 +27,16 @@ Ability是应用/元服务所具备的能力的抽象，应用的一个Module可
 
 从DevEco Studio 6.1.0 Beta2版本开始，支持在API 23及以上Car设备工程的模块中添加RemoteNotificationAbility。
 
-1. 在工程中选中对应的模块，单击鼠标右键，选择**New > Extension Ability**，选择不同的场景类型 。当前仅Application工程支持创建Extension Ability。
+1. 在工程中选中对应的模块，单击鼠标右键，选择<strong>New &gt; Extension Ability</strong>，选择不同的场景类型 。当前仅Application工程支持创建Extension Ability。
    * 若创建的模块类型为HAP，支持创建如下Extension Ability：
-     + **EmbeddedUIExtensionAbility**：用于提供[跨进程界面嵌入](../../../docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/embeddeduiextensionability)的能力。
-     + **Backup****Ability**：用于提供[备份及恢复应用数据](../../../docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-overview)的能力。
-     + **WorkScheduler**：用于提供[延迟任务](../../../docs/dev/app-dev/application-framework/background-task-kit/work-scheduler)的相关能力。
-     + **RemoteNotificationAbility**：用于提供获取场景化消息数据和生命周期销毁的回调的通知能力，当前仅支持在Phone、Tablet、2in1、Car设备中使用。
-     + **Driver**：用于提供[驱动相关扩展框架](../../../docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/driverextensionability)。仅在当前工程的设备类型只含有2in1设备时，支持创建该类型。
+     + <strong>EmbeddedUIExtensionAbility</strong>：用于提供[跨进程界面嵌入](../../../docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/embeddeduiextensionability)的能力。
+     + <strong>BackupAbility</strong>：用于提供[备份及恢复应用数据](../../../docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-overview)的能力。
+     + <strong>WorkScheduler</strong>：用于提供[延迟任务](../../../docs/dev/app-dev/application-framework/background-task-kit/work-scheduler)的相关能力。
+     + <strong>RemoteNotificationAbility</strong>：用于提供获取场景化消息数据和生命周期销毁的回调的通知能力，当前仅支持在Phone、Tablet、2in1、Car设备中使用。
+     + <strong>Driver</strong>：用于提供[驱动相关扩展框架](../../../docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/driverextensionability)。仅在当前工程的设备类型只含有2in1设备时，支持创建该类型。
    * 若创建的模块类型为HAR或HSP，支持创建以下两种Extension Ability：
-     + **EmbeddedUIExtensionAbility**：用于提供[跨进程界面嵌入](../../../docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/embeddeduiextensionability)的能力。
-     + **WorkScheduler**：用于提供[延迟任务](../../../docs/dev/app-dev/application-framework/background-task-kit/work-scheduler)的相关能力。
+     + <strong>EmbeddedUIExtensionAbility</strong>：用于提供[跨进程界面嵌入](../../../docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/embeddeduiextensionability)的能力。
+     + <strong>WorkScheduler</strong>：用于提供[延迟任务](../../../docs/dev/app-dev/application-framework/background-task-kit/work-scheduler)的相关能力。
 
    ![](./img/b727cabd.png)
 2. 设置Ability名称，单击Finish完成Extension Ability创建。
@@ -47,21 +47,21 @@ Ability是应用/元服务所具备的能力的抽象，应用的一个Module可
 
 ### 创建Particle Ability
 
-1. 选中对应的模块，单击鼠标右键，选择**New > Ability** ，然后选择对应的Data Ability/Service Ability模板。
+1. 选中对应的模块，单击鼠标右键，选择<strong>New &gt; Ability</strong> ，然后选择对应的Data Ability/Service Ability模板。
 
    ![](./img/ca79ff0b.png)
 2. 根据选择的Ability模板，设置Ability的基本信息。
-   * **Ability name**：Ability类名称，由大小写字母、数字和下划线组成。
-   * **Language**：该Ability使用的开发语言。
-3. 单击**Finish**完成Ability的创建，可以在工程目录对应的模块中查看和编辑Ability。
+   * <strong>Ability name</strong>：Ability类名称，由大小写字母、数字和下划线组成。
+   * <strong>Language</strong>：该Ability使用的开发语言。
+3. 单击<strong>Finish</strong>完成Ability的创建，可以在工程目录对应的模块中查看和编辑Ability。
 
 ### 创建Feature Ability
 
-1. 选中对应的模块，单击鼠标右键，选择**New > Ability** ，然后选择对应的Page Ability模板。
+1. 选中对应的模块，单击鼠标右键，选择<strong>New &gt; Ability</strong> ，然后选择对应的Page Ability模板。
 
    ![](./img/6dda2407.png)
 2. 根据选择的Ability模板，设置Ability的基本信息。
-   * **Ability name**：Ability类名称，由大小写字母、数字和下划线组成。
-   * **Launcher ability**：表示该Ability在终端桌面上是否有启动图标，一个HAP可以有多个启动图标，来启动不同的FA。
-   * **Language**：该Ability使用的开发语言。
-3. 单击**Finish**完成Ability的创建，可以在工程目录对应的模块中查看和编辑Ability。
+   * <strong>Ability name</strong>：Ability类名称，由大小写字母、数字和下划线组成。
+   * <strong>Launcher ability</strong>：表示该Ability在终端桌面上是否有启动图标，一个HAP可以有多个启动图标，来启动不同的FA。
+   * <strong>Language</strong>：该Ability使用的开发语言。
+3. 单击<strong>Finish</strong>完成Ability的创建，可以在工程目录对应的模块中查看和编辑Ability。
