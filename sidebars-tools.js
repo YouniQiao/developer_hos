@@ -17,7 +17,7 @@ toolsSidebar: [
 {
     type: 'category',
     label: '工具使用入门',
-    collapsed: false,
+    collapsed: true,
     items: [
 'tools/coding-debug/ide-tools-overview',
 'tools/coding-debug/ide-software-install',
@@ -28,7 +28,7 @@ toolsSidebar: [
 {
     type: 'category',
     label: '管理工程及模块',
-    collapsed: false,
+    collapsed: true,
     items: [
 'tools/coding-debug/ide-project-overview',
 'tools/coding-debug/ide-project-structure',
@@ -62,7 +62,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '代码检查',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-realtime-check',
 'tools/coding-debug/ide-code-linter',
@@ -103,7 +103,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '概述',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-emulator-requirements',
 'tools/coding-debug/ide-emulator-devicetype',
@@ -113,7 +113,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '管理模拟器',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-emulator-create',
 'tools/coding-debug/ide-emulator-start-and-close'
@@ -135,7 +135,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '修改模拟器',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-emulator-customize-screen-configuration'
             ]
@@ -205,7 +205,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '开发者模式',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-developer-mode',
 'tools/coding-debug/developer-care'
@@ -219,7 +219,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '调试错误码',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-debug-errorcode-00401',
 'tools/coding-debug/ide-debug-errorcode-00402',
@@ -232,7 +232,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '日志与故障分析',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-setup-hilog',
 {
@@ -258,17 +258,17 @@ toolsSidebar: [
 {
         type: 'category',
         label: '开发自测试',
-        collapsed: false,
+        collapsed: true,
         items: [
 {
             type: 'category',
             label: '测试框架',
-            collapsed: false,
+            collapsed: true,
             items: [
 {
                 type: 'category',
                 label: '代码测试',
-                collapsed: false,
+                collapsed: true,
                 items: [
 'tools/coding-debug/ide-instrument-test',
 'tools/coding-debug/ide-local-test'
@@ -279,7 +279,7 @@ toolsSidebar: [
 {
                 type: 'category',
                 label: '测试框架错误码',
-                collapsed: false,
+                collapsed: true,
                 items: [
 'tools/coding-debug/ide-instrument-test-errorcode',
 'tools/coding-debug/ide-local-test-errorcode'
@@ -302,7 +302,7 @@ toolsSidebar: [
 {
                 type: 'category',
                 label: '附录',
-                collapsed: false,
+                collapsed: true,
                 items: [
 {
                     type: 'category',
@@ -339,7 +339,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '概述',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-hvigor-life-cycle',
 'tools/coding-debug/ide-hvigor-task-process',
@@ -349,7 +349,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '配置文件',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-hvigor-configuration-file-overview',
 'tools/coding-debug/ide-hvigor-set-options',
@@ -367,7 +367,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '配置多目标产物',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-customized-multi-targets-and-products-guides',
 'tools/coding-debug/ide-customized-multi-targets-and-products-sample'
@@ -384,12 +384,12 @@ toolsSidebar: [
 {
         type: 'category',
         label: '定制构建',
-        collapsed: false,
+        collapsed: true,
         items: [
 {
             type: 'category',
             label: '灵活定制编译选项',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-hvigor-compilation-options-customizing-guide',
 'tools/coding-debug/ide-hvigor-compilation-options-customizing-sample'
@@ -398,7 +398,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '获取自定义编译参数',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-hvigor-get-build-profile-para-guide',
 'tools/coding-debug/ide-hvigor-get-build-profile-para-sample'
@@ -407,7 +407,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '动态修改编译配置',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-hvigor-config-ohos-guide',
 'tools/coding-debug/ide-hvigor-config-ohos-sample'
@@ -431,14 +431,14 @@ toolsSidebar: [
 {
         type: 'category',
         label: '扩展构建能力',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-hvigor-task',
 'tools/coding-debug/ide-hvigor-plugin',
 {
             type: 'category',
             label: '扩展构建API',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-hvigor-api',
 'tools/coding-debug/ide-build-expanding-context',
@@ -452,7 +452,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '构建报错排查',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-hvigor-log',
 'tools/coding-debug/ide-hvigor-faqs',
@@ -486,7 +486,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: 'DevEco Profiler调优工具简介',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-profiler-layout',
 'tools/coding-debug/ide-profiler-session',
@@ -496,7 +496,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '使用Profiler进行性能调优',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-profiler-process',
 'tools/coding-debug/realtime-monitor',
@@ -506,7 +506,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '卡顿丢帧分析',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-insight-session-frame',
 'tools/coding-debug/ide-arkui-analysis',
@@ -516,7 +516,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '冷启动：Launch分析',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-insight-session-launch',
 'tools/coding-debug/ide-profiler-launch-case'
@@ -525,7 +525,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '内存泄露：Snapshot分析',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-snapshot-basic-operations',
 'tools/coding-debug/ide-arkts-memory-leak-analysis'
@@ -534,7 +534,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '基础内存：Allocation分析',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-insight-session-allocations-memory',
 'tools/coding-debug/ide-insight-session-allocations-data-filtering',
@@ -553,7 +553,7 @@ toolsSidebar: [
 {
         type: 'category',
         label: '附录',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/coding-debug/ide-graphics-profiler',
 'tools/coding-debug/ide-shortcut-key',
@@ -817,7 +817,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '预览规则@previewer',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide_value-for-local-initialization',
 'tools/coding-debug/ide_no-page-method-on-preview-component',
@@ -890,7 +890,7 @@ toolsSidebar: [
 {
             type: 'category',
             label: '兼容性规则@compatibility',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/coding-debug/ide-api-compatibility-check'
             ]
@@ -1035,94 +1035,71 @@ cliToolsSidebar: [
 
 cloudDevSidebar: [
 'tools/end-cloud/agc-harmonyos-clouddev-overview',
+'tools/end-cloud/agc-harmonyos-clouddev-prepare',
 {
     type: 'category',
-    label: '开发准备',
-    collapsed: false,
+    label: '创建端云一体化开发工程',
+    collapsed: true,
     items: [
-'tools/end-cloud/agc-harmonyos-clouddev-account',
-'tools/end-cloud/agc-harmonyos-clouddev-setup',
-'tools/end-cloud/agc-harmonyos-clouddev-createproject'
+'tools/end-cloud/agc-harmonyos-create-appproject',
+'tools/end-cloud/agc-harmonyos-create-faproject',
+'tools/end-cloud/agc-harmonyos-project-migration'
     ]
   },
 {
     type: 'category',
-    label: '开发端云工程',
-    collapsed: false,
+    label: '开发云侧工程',
+    collapsed: true,
     items: [
 {
         type: 'category',
-        label: '创建端云一体化开发工程',
-        collapsed: false,
+        label: '开发云函数',
+        collapsed: true,
         items: [
-'tools/end-cloud/agc-harmonyos-create-appproject',
-'tools/end-cloud/agc-harmonyos-create-faproject',
-'tools/end-cloud/agc-harmonyos-project-migration'
-        ]
-      },
-{
-        type: 'category',
-        label: '开发云侧工程',
-        collapsed: false,
-        items: [
-{
-            type: 'category',
-            label: '开发云函数',
-            collapsed: false,
-            items: [
 'tools/end-cloud/agc-harmonyos-clouddev-functionprocess',
 'tools/end-cloud/agc-harmonyos-clouddev-createfunc',
 'tools/end-cloud/agc-harmonyos-clouddev-funccoding',
 'tools/end-cloud/agc-harmonyos-clouddev-debugfunc',
 'tools/end-cloud/agc-harmonyos-clouddev-deployfunc'
-            ]
-          },
+        ]
+      },
 {
-            type: 'category',
-            label: '开发云对象',
-            collapsed: false,
-            items: [
+        type: 'category',
+        label: '开发云对象',
+        collapsed: true,
+        items: [
 'tools/end-cloud/agc-harmonyos-clouddev-cloudobjprocess',
 'tools/end-cloud/agc-harmonyos-clouddev-createcloudobj',
 'tools/end-cloud/agc-harmonyos-clouddev-cloudobj-coding',
 'tools/end-cloud/agc-harmonyos-clouddev-debugcloudobj',
 'tools/end-cloud/agc-harmonyos-clouddev-deploycloudobj'
-            ]
-          },
+        ]
+      },
 {
-            type: 'category',
-            label: '开发云数据库',
-            collapsed: false,
-            items: [
+        type: 'category',
+        label: '开发云数据库',
+        collapsed: true,
+        items: [
 'tools/end-cloud/agc-harmonyos-clouddev-dbprocess',
 'tools/end-cloud/agc-harmonyos-clouddev-objecttype',
 'tools/end-cloud/agc-harmonyos-clouddev-dataentry',
 'tools/end-cloud/agc-harmonyos-clouddev-deploydatabase',
 'tools/end-cloud/agc-harmonyos-clouddev-modelclass'
-            ]
-          }
         ]
-      },
+      }
+    ]
+  },
 'tools/end-cloud/agc-harmonyos-clouddev-deploy',
 'tools/end-cloud/agc-harmonyos-clouddev-sync',
 {
-        type: 'category',
-        label: '开发端侧工程',
-        collapsed: false,
-        items: [
-{
-            type: 'category',
-            label: '在端侧调用云侧代码',
-            collapsed: false,
-            items: [
+    type: 'category',
+    label: '开发端侧工程',
+    collapsed: true,
+    items: [
 'tools/end-cloud/agc-harmonyos-clouddev-invokecloudfunc',
 'tools/end-cloud/agc-harmonyos-clouddev-invokecloudobj',
 'tools/end-cloud/agc-harmonyos-clouddev-invokeclouddatabase',
 'tools/end-cloud/agc-harmonyos-clouddev-invokecloudstorage'
-            ]
-          }
-        ]
-      }
     ]
   },
 'tools/end-cloud/agc-harmonyos-clouddev-console',
@@ -1131,8 +1108,8 @@ cloudDevSidebar: [
 'tools/end-cloud/agc-harmonyos-clouddev-faq',
 {
     type: 'category',
-    label: '附录：云开发工程模板',
-    collapsed: false,
+    label: '附录',
+    collapsed: true,
     items: [
 'tools/end-cloud/agc-harmonyos-clouddev-emptyability'
     ]
@@ -1202,7 +1179,7 @@ ohpmSidebar: [
 {
     type: 'category',
     label: 'ohpm-repo 私仓搭建',
-    collapsed: false,
+    collapsed: true,
     items: [
 'tools/ohpm/repo/ide-ohpm-repo-overview',
 'tools/ohpm/repo/ide-ohpm-repo-quickstart',
@@ -1212,7 +1189,7 @@ ohpmSidebar: [
 {
         type: 'category',
         label: '部署指导',
-        collapsed: false,
+        collapsed: true,
         items: [
 'tools/ohpm/repo/ide-ohpm-deploy-single-instance',
 'tools/ohpm/repo/ide-ohpm-deploy-multiple-instances'
@@ -1245,7 +1222,7 @@ ohpmSidebar: [
 {
             type: 'category',
             label: '版本升级',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/ohpm/repo/ide-upgrade-101_to_2xx',
 'tools/ohpm/repo/ide-upgrade-110_to_2xx',
@@ -1255,7 +1232,7 @@ ohpmSidebar: [
 {
             type: 'category',
             label: '自定义存储插件',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/ohpm/repo/ide-ohpm-repo-plugin-configuration',
 'tools/ohpm/repo/ide-ohpm-repo-template-file'
@@ -1264,7 +1241,7 @@ ohpmSidebar: [
 {
             type: 'category',
             label: '自定义认证插件',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/ohpm/repo/ide-custom-auth-plugin-configuration',
 'tools/ohpm/repo/ide-custom-auth-plugin-template'
@@ -1276,7 +1253,7 @@ ohpmSidebar: [
 {
             type: 'category',
             label: '自定义元数据规则校验插件',
-            collapsed: false,
+            collapsed: true,
             items: [
 'tools/ohpm/repo/ide-custom-metadata-rule-validation-config',
 'tools/ohpm/repo/ide-rule-verification-template-file'

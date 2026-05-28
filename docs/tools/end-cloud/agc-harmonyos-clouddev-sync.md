@@ -1,10 +1,10 @@
 ---
 
-title: "（可选）同步云端代码至DevEco Studio工程"
+title: "同步云端代码至本地（可选）"
 displayed_sidebar: cloudDevSidebar
 ---
 
-# （可选）同步云端代码至DevEco Studio工程
+# 同步云端代码至本地（可选）
 
 DevEco Studio还支持您将AGC云端当前项目下的代码同步至本地工程，包括之前从本地部署到AGC云端的代码、以及在AGC云端编写的代码，以保证云端和本地的版本一致性，方便您的日常开发。
 

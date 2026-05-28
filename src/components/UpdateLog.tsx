@@ -7,6 +7,10 @@ interface UpdateItem {
 
 const updateRecords: UpdateItem[] = [
   {
+    date: '2026-05-28',
+    description: '增加工具菜单下内容，仍有部分断链，后续全站内容完善后统一处理。',
+  },
+  {
     date: '2026-05-26',
     description: '增加更多资源菜单下内容，跨平台框架内容后续持续补充。',
   },
