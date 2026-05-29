@@ -3,6 +3,8 @@ title: "CppCrash类问题案例"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-cppcrash
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # CppCrash类问题案例
 
 本文以列举常见案例方式介绍如何分析并修复CppCrash问题。阅读本文之前，建议开发者先阅读[应用崩溃问题检测方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-runtime-crash-detection)了解系统检测CppCrash问题的原理和机制，然后阅读[CppCrash类问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-cpp-way)了解分析CppCrash问题的一般步骤。
@@ -241,6 +243,7 @@ static napi_value Get(napi_env env, napi_callback_info info)
     return g_Values; // 还在使用已经回收的内存，导致崩溃
 }
 ```
+<SourceLink name="napi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/CppCrash/entry/src/main/cpp/napi_init.cpp#L20-L52" />
 
 JS侧通过Add接口添加数据，native侧以napi\_value保存到vector，JS侧通过get接口获取添加的数据，native侧将保存的napi\_value以数组形式返回回去，然后JS侧读取数据的属性。出现报错：Can not get Prototype on non ECMA Object。跨napi的napi\_value未使用napi\_ref保存，导致napi\_value失效。
 
@@ -260,6 +263,7 @@ static napi_value TriggerCrash(napi_env env, napi_callback_info info)
     return 0;
 }
 ```
+<SourceLink name="CppCrashCaseAnalyse5.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/CppCrash/entry/src/main/cpp/CppCrashCaseAnalyse5.cpp#L32-L37" />
 
 ![](./img/98d7a3f1.png)构造主动调用abort函数场景举例说明SIGABRT类崩溃问题如何分析。上图所示，LastFatalMessage是进程退出前的最后一条fatal级别日志，对于SIGABRT类崩溃问题其一般能提供程序主动异常终止的原因，对定位该类问题有很大帮助。从上往下跳过C库的调用栈，找到调用abort函数的调用栈（图中#02层调用栈），从这里结合LastFatalMessage进行分析。
 
@@ -277,6 +281,7 @@ static napi_value TriggerCrash(napi_env env, napi_callback_info info)
     return 0;
 }
 ```
+<SourceLink name="CppCrashCaseAnalyse6.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/CppCrash/entry/src/main/cpp/CppCrashCaseAnalyse6.cpp#L29-L38" />
 
 ![](./img/560170d0.png)
 
@@ -401,6 +406,7 @@ Tid:48552, Name:xxx
          // ...
      }
      ```
+<SourceLink name="CppCrashCaseAnalysis8.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/CppCrash/entry/src/main/cpp/CppCrashCaseAnalysis8.cpp#L25-L34" />
 
    通过持续追踪buf和bufSize的来源，最终确定buf实际大小与bufSize在连续拷贝后不匹配，bufSize大于实际buf大小导致越界读取。
 
@@ -466,6 +472,7 @@ lr:0000005615e4499c sp:0000007fc581cac0 pc:0000005615e449a8
        return 0;
    }
    ```
+<SourceLink name="CppCrashCaseAnalyse7.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/CppCrash/entry/src/main/cpp/CppCrashCaseAnalyse7.cpp#L31-L46" />
 2. 通过反汇编查看汇编指令，汇编指令片段如下:
 
    ```

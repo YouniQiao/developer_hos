@@ -4,6 +4,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-net
 format: md
 ---
 
+
+import SourceLink from '@site/src/components/SourceLink';
+
 # 网络连接安全配置
 
 ## 概述

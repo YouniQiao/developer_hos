@@ -3,6 +3,8 @@ title: "视频场景编解码低功耗规则"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-codec
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 视频场景编解码低功耗规则
 
 ## 规则
@@ -25,6 +27,7 @@ OH_AVCodec *videoDec = OH_VideoDecoder_CreateByMime(OH_AVCODEC_MIMETYPE_VIDEO_AV
 // Hard solution: Create H265 decoder
 OH_AVCodec *videoDecH = OH_VideoDecoder_CreateByMime(OH_AVCODEC_MIMETYPE_VIDEO_HEVC);
 ```
+<SourceLink name="VideoSceneEncoding.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/cpp/VideoSceneEncoding.cpp#L25-L33" />
 
 ## 调测验证
 

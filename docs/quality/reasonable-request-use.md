@@ -3,6 +3,8 @@ title: "后台上传下载合理使用"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-request-use
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 后台上传下载合理使用
 
 应用上传下载时，应使用系统服务，不要申请长时任务。
@@ -47,6 +49,7 @@ try {
   console.error(`Failedtorequesttheupload.err:${JSON.stringify(err)}`);
 }
 ```
+<SourceLink name="Upload.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseSoftware/entry/src/main/ets/pages/Upload.ets#L21-L50" />
 
 ### 下载
 
@@ -70,5 +73,6 @@ import { common } from '@kit.AbilityKit';
       console.error(`Failedtorequestthedownload.err:${JSON.stringify(err)}`);
     }
 ```
+<SourceLink name="Download.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseSoftware/entry/src/main/ets/pages/Download.ets#L21-L49" />
 
 有关上传下载相关接口的使用，详情可以参考[应用文件上传下载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-upload-download)。

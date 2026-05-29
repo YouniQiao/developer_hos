@@ -3,6 +3,8 @@ title: "应用闪屏解决方案"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-screen-flicker-solution
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 应用闪屏解决方案
 
 ## 概述
@@ -70,6 +72,7 @@ struct ClickError {
   }
 }
 ```
+<SourceLink name="ClickError.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ScreenFlickerSolution/entry/src/main/ets/pages/ClickError.ets#L17-L60" />
 
 **可能原因**
 
@@ -131,6 +134,7 @@ struct ClickError {
     }
   }
   ```
+<SourceLink name="ClickRight.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ScreenFlickerSolution/entry/src/main/ets/pages/ClickRight.ets#L17-L65" />
 
 运行效果如下图。
 
@@ -242,6 +246,7 @@ struct TabsContainer {
   }
 }
 ```
+<SourceLink name="TabsError.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ScreenFlickerSolution/entry/src/main/ets/pages/TabsError.ets#L17-L112" />
 
 **可能原因**
 
@@ -333,6 +338,7 @@ build() {
   .width('100%')
 }
 ```
+<SourceLink name="TabsRight.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ScreenFlickerSolution/entry/src/main/ets/pages/TabsRight.ets#L47-L126" />
 
 TabsAnimationEvent方法如下所示。
 
@@ -371,6 +377,7 @@ private startAnimateTo(duration: number, leftMargin: number, width: number) {
   });
 }
 ```
+<SourceLink name="TabsRight.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ScreenFlickerSolution/entry/src/main/ets/pages/TabsRight.ets#L130-L162" />
 
 运行效果如下图。
 
@@ -416,6 +423,7 @@ private getListView() {
   .edgeEffect(EdgeEffect.None)
 }
 ```
+<SourceLink name="PullToRefreshError.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ScreenFlickerSolution/entry/src/main/ets/pages/PullToRefreshError.ets#L215-L244" />
 
 **可能原因**
 
@@ -459,6 +467,7 @@ private getListView() {
   .edgeEffect(EdgeEffect.None)
 }
 ```
+<SourceLink name="PullToRefreshRight.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ScreenFlickerSolution/entry/src/main/ets/pages/PullToRefreshRight.ets#L215-L244" />
 
 运行效果如下图所示。
 

@@ -4,6 +4,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-cro
 format: md
 ---
 
+
+import SourceLink from '@site/src/components/SourceLink';
+
 # 加解密跨平台数据兼容性
 
 ## 概述

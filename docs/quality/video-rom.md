@@ -3,6 +3,8 @@ title: "视频场景ROM低功耗建议"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-rom
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 视频场景ROM低功耗建议
 
 ## 建议
@@ -26,6 +28,7 @@ fileIo.write(file.fd, str).then((writeLen: number) => {
   fileIo.closeSync(file);
 });
 ```
+<SourceLink name="VideoScenesROMRule.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/VideoScenesROMRule.ets#L26-L36" />
 
 ## 调测验证
 

@@ -4,6 +4,8 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-sta
 format: md
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 使用DevEco Studio静态检测编码规范
 
 ## 使用Clang-Tidy检测
@@ -212,6 +214,7 @@ class Foo {
 
 Foo.bar();
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/DevEcoStaticCheck/src/main/ets/pages/Index.ets#L21-L25" />
 
 在工程根目录下新建code-linter.json5文件，新增以下配置：
 
@@ -256,6 +259,7 @@ class foo {    //Here is an example of a naming style error, where foo is the in
   bar() {}
 }
 ```
+<SourceLink name="Index2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/DevEcoStaticCheck/src/main/ets/pages/Index2.ets#L21-L23" />
 
 在工程根目录下创建code-linter.json5文件，并添加以下配置：
 

@@ -3,6 +3,8 @@ title: "文件句柄泄漏类问题检测方法"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-file-handle-detection
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 文件句柄泄漏类问题检测方法
 
 ## 概述
@@ -86,6 +88,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-sta
      }
    }
    ```
+<SourceLink name="FdLeakDetection.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/ets/pages/FdLeakDetection.ets#L20-L66" />
 2. 尝试复现问题，然后点击一下上述代码对应的测试按钮，分析日志输出，看多了哪些句柄。如果句柄增加不明显，可以反复重复本步骤。
 
    ![](./img/85c1c997.png)

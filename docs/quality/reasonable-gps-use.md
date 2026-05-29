@@ -3,6 +3,8 @@ title: "GPS资源合理使用"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-gps-use
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # GPS资源合理使用
 
 无长时间任务的应用退到后台时，禁止使用定位服务。
@@ -54,3 +56,4 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="Gps.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Gps.ets#L6-L50" />

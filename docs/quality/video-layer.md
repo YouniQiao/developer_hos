@@ -3,6 +3,8 @@ title: "视频场景图层低功耗建议"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-layer
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 视频场景图层低功耗建议
 
 ## 建议
@@ -19,6 +21,7 @@ XComponent({ id: 'XComponentId', type: 'surface', libraryname: 'entry' })
   .width(360)
   .height(360)
 ```
+<SourceLink name="VideoSceneLayers.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/VideoSceneLayers.ets#L26-L28" />
 
 ## 调测验证
 

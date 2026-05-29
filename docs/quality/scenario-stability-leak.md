@@ -3,6 +3,8 @@ title: "资源泄漏类问题案例"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-leak
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 资源泄漏类问题案例
 
 本文按照[资源泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way)的流程展开，以实际案例的形式指导开发者如何从泄漏维测日志出发，分析、定位具体泄漏点。开发者可阅读[资源泄漏检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines)了解系统检测资源泄漏问题的机制与日志规格。
@@ -68,6 +70,7 @@ void DemoCase(int length)
     delete[] bitmapBuffer;
 }
 ```
+<SourceLink name="resource_leak.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L203-L217" />
 
 ### 分析思路
 

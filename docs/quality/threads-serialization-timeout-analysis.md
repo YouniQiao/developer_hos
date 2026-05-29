@@ -3,6 +3,8 @@ title: "跨线程序列化耗时问题分析"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-threads-serialization-timeout-analysis
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 跨线程序列化耗时问题分析
 
 ## 概述
@@ -135,6 +137,7 @@ function doDBOperations(info : BookDBInfo) {
   // ...
 }
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/CrossThreadSerializationDelay/entry/src/main/ets/pages/Index.ets#L21-L61" />
 
 通过序列化超时检测工具检测后，在Anomaly泳道可以看到序列化耗时超出默认阈值（8ms），达到260ms。
 

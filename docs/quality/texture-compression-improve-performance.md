@@ -3,6 +3,8 @@ title: "图片资源加载优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-texture-compression-improve-performance
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 图片资源加载优化
 
 ## 概述
@@ -98,6 +100,7 @@ filters：在filters属性中可配置method、files和exclude三个属性对象
     }
   }},
 ```
+<SourceLink name="build-profile.json5" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/TextureHypercompression/build-profile.json5#L17-L57" />
 
 配置项注意点：
 
@@ -300,6 +303,7 @@ build() {
   .backgroundColor('#F1F3F5')
 }
 ```
+<SourceLink name="OptimizeWebImagesUsingCDN.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/TextureHypercompression/entry/src/main/ets/pages/OptimizeWebImagesUsingCDN.ets#L19-L34" />
 
 ![](./img/a2aa030c.png)
 
@@ -327,6 +331,7 @@ Image(this.imageUrl)
   .height(200)
   .autoResize(true)
 ```
+<SourceLink name="UseAutoResizeToDownsampleTheImageComponent.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/TextureHypercompression/entry/src/main/ets/pages/UseAutoResizeToDownsampleTheImageComponent.ets#L29-L32" />
 
 ## 总结
 

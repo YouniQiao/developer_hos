@@ -3,6 +3,8 @@ title: "蓝牙资源合理使用"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-bluetooth-use
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 蓝牙资源合理使用
 
 无长时任务的应用退到后台时，不允许进行蓝牙扫描。
@@ -45,5 +47,6 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="Bluetooth.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Bluetooth.ets#L6-L45" />
 
 有关蓝牙相关接口的使用，详情可以参考[查找设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ble-development-guide)。

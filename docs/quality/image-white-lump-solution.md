@@ -3,6 +3,8 @@ title: "Image白块解决方案"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-image-white-lump-solution
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # Image白块解决方案
 
 ## 概述
@@ -65,6 +67,7 @@ export struct PageOne {
   }
 }
 ```
+<SourceLink name="PageOne.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PreHttpRequestUseFiles/entry/src/main/ets/pages/PageOne.ets#L16-L43" />
 
 ![](./img/90bcb225.png)
 
@@ -151,6 +154,7 @@ export struct PageOne {
      }
    }
    ```
+<SourceLink name="MainPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PreHttpRequestUseFiles/entry/src/main/ets/pages/MainPage.ets#L16-L83" />
 2. 在NetRequest.ets中定义网络请求httpRequest()，通过fileIo.access()检查文件是否存在，当文件存在时不再重复请求，并写入沙箱中。
 
    ```
@@ -196,6 +200,7 @@ export struct PageOne {
      outputStream.closeSync();
    }
    ```
+<SourceLink name="NetRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PreHttpRequestUseFiles/entry/src/main/ets/utils/NetRequest.ets#L16-L56" />
 3. 在子组件中通过在子页面的Image中传入被@StorageLink修饰的变量imageData进行数据刷新，图片送显。
 
    ```
@@ -228,6 +233,7 @@ export struct PageOne {
      }
    }
    ```
+<SourceLink name="PageOne.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PreHttpRequestUseFiles/entry/src/main/ets/pages/PageOne.ets#L16-L43" />
 
 ## 性能分析
 

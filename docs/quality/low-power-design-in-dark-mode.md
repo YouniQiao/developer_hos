@@ -3,6 +3,8 @@ title: "省电和深色模式下低功耗设计"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-low-power-design-in-dark-mode
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 省电和深色模式下低功耗设计
 
 ## 概述
@@ -160,6 +162,7 @@ export struct ArticleCardView {
   }
 }
 ```
+<SourceLink name="ArticleCardView.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LowPowerOfForegroundTask/entry/src/main/ets/pages/ArticleCardView.ets#L2-L59" />
 
 ### 功耗分析
 
@@ -272,6 +275,7 @@ export default class EntryAbility extends UIAbility {
   // ...
 }
 ```
+<SourceLink name="EntryAbility.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LowPowerOfForegroundTask/entry/src/main/ets/entryability/EntryAbility.ets#L8-L69" />
 
 * 停止一些冗余动效
 
@@ -368,6 +372,7 @@ export struct ArticleCardView {
   }
 }
 ```
+<SourceLink name="ArticleCardViewNew.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LowPowerOfForegroundTask/entry/src/main/ets/pages/ArticleCardViewNew.ets#L2-L81" />
 
 ### 功耗分析
 

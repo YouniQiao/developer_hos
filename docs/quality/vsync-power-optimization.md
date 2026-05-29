@@ -3,6 +3,8 @@ title: "Vsync低功耗优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-vsync-power-optimization
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # Vsync低功耗优化
 
 ## 概述
@@ -72,6 +74,7 @@ aboutToDisappear() {
   }
 }
 ```
+<SourceLink name="display_sync_example.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/display_sync_example.ets#L95-L105" />
 
 ```ts
 // 当组件不可见时，暂停DisplaySync对象
@@ -87,6 +90,7 @@ aboutToDisappear() {
   }
 })
 ```
+<SourceLink name="display_sync_example.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/display_sync_example.ets#L180-L191" />
 
 ### 修改效果
 

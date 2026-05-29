@@ -3,6 +3,8 @@ title: "音频资源合理使用"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-audio-use
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 音频资源合理使用
 
 无长时任务的应用退到后台时，禁止使用麦克风和扬声器。
@@ -35,6 +37,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="AudioRenderer.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/music/AudioRenderer.ets#L7-L51" />
 
 ### 播音场景（AVPlayer）
 
@@ -63,6 +66,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="AvPlayer.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/music/AvPlayer.ets#L13-L39" />
 
 ### 播音场景（OpenSL ES）
 
@@ -76,6 +80,7 @@ SLPlayItfplayItf=nullptr;
 (*pcmPlayerObject)->Destroy(pcmPlayerObject);
 (*engineObject)->Destroy(engineObject);
 ```
+<SourceLink name="OpenSL.cpp" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/cpp/OpenSL.cpp#L21-L28" />
 
 ### 播音场景（OHAudio）
 
@@ -89,6 +94,7 @@ ret=OH_AudioRenderer_Start(audioRenderer);
 // Stop playing the background scene
 ret=OH_AudioRenderer_Stop(audioRenderer);
 ```
+<SourceLink name="OpenSL.cpp" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/cpp/OpenSL.cpp#L37-L44" />
 
 ### 播音场景（SoundPool）
 
@@ -125,6 +131,7 @@ const SoundPool = async () => {
     })
 }
 ```
+<SourceLink name="AvPlayer.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/music/AvPlayer.ets#L6-L78" />
 
 有关音频播放开发相关接口的使用，详情可以参考[音频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback)。
 
@@ -156,5 +163,6 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="Recording.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/music/Recording.ets#L7-L57" />
 
 有关音频录制开发相关接口的使用，详情可以参考[音频录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording)。

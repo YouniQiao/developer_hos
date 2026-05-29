@@ -3,6 +3,8 @@ title: "静态场景低功耗规则"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-static-scenarios
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 静态场景低功耗规则
 
 ## 规则
@@ -27,6 +29,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-sta
      hilog.info(0x0000, 'Sample', 'Succeeded in obtaining data. x: ' + data.x + ' y: ' + data.y + ' z: ' + data.z);
    }, { interval: 200000000 });
    ```
+<SourceLink name="StaticScenesRule.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/StaticScenesRule.ets#L21-L26" />
 
 2. 在sensor频次需求较低的场景中，根据需要调整sensor.on()的interval属性，以改变上报频次。
 
@@ -35,11 +38,13 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-sta
      hilog.info(0x0000, 'Sample', 'Succeeded in obtaining data. x: ' + data.x + ' y: ' + data.y + ' z: ' + data.z);
    }, { interval: 200000000 });
    ```
+<SourceLink name="StaticScenesRule.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/StaticScenesRule.ets#L30-L32" />
 3. 不使用sensor资源时，使用以下接口进行解注册。
 
    ```
    sensor.off(sensor.SensorId.ACCELEROMETER);
    ```
+<SourceLink name="StaticScenesRule.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/StaticScenesRule.ets#L36-L36" />
 
 ## 案例分析
 

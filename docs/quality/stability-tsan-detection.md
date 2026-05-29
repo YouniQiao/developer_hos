@@ -3,6 +3,8 @@ title: "使用TSan检测线程问题"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-tsan-detection
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 使用TSan检测线程问题
 
 ## 原理概述
@@ -130,6 +132,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
+<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L6-L32" />
 
 **影响**
 
@@ -208,6 +211,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
+<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L36-L88" />
 
 **影响**
 
@@ -271,6 +275,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
+<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L92-L125" />
 
 **影响**
 
@@ -341,6 +346,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
+<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L129-L169" />
 
 **影响**
 
@@ -401,6 +407,7 @@ static napi_value Add(napi_env env, napi_callback_info info)
     ...
 }
 ```
+<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L173-L204" />
 
 **影响**
 
@@ -452,6 +459,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
+<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L208-L228" />
 
 **影响**
 

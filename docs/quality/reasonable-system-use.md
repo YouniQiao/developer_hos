@@ -3,6 +3,8 @@ title: "后台系统资源合理使用"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-system-use
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 后台系统资源合理使用
 
 无长时任务的应用退至后台后，应释放对应资源，避免阻止系统休眠。
@@ -34,6 +36,7 @@ runningLock.create('running_lock_test', runningLock.RunningLockType.BACKGROUND)
     console.error('create running lock failed, err: ' + err);
   });
 ```
+<SourceLink name="LockByApplication.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseSoftware/entry/src/main/ets/pages/LockByApplication.ets#L21-L37" />
 
 有关RunningLock开发相关接口的使用，详情可以参考[RunningLock锁](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-runninglock)。
 
@@ -62,3 +65,4 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="LockBySystem.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseSoftware/entry/src/main/ets/pages/LockBySystem.ets#L22-L65" />

@@ -4,6 +4,8 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-fil
 format: md
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 文件上传下载优化
 
 ## 概述
@@ -82,6 +84,7 @@ format: md
    import { BusinessError, zlib } from '@kit.BasicServicesKit';
    import { hilog } from '@kit.PerformanceAnalysisKit';
    ```
+<SourceLink name="ZipUploadPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/FileUploadAndDownloadSlow/entry/src/main/ets/pages/ZipUploadPage.ets#L17-L21" />
 2. 创建压缩上传相关类:
 
    ```
@@ -93,6 +96,7 @@ format: md
      // ...
    }
    ```
+<SourceLink name="ZipUploadPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/FileUploadAndDownloadSlow/entry/src/main/ets/pages/ZipUploadPage.ets#L25-L31" />
 3. 建立用于接收图库图片的临时文件夹，并将整个临时文件夹打包添加到待上传list内:
 
    ```
@@ -126,6 +130,7 @@ format: md
      }
    }
    ```
+<SourceLink name="ZipUploadPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/FileUploadAndDownloadSlow/entry/src/main/ets/pages/ZipUploadPage.ets#L42-L70" />
 
 ### 断点续传
 
@@ -159,6 +164,7 @@ format: md
    import { common } from '@kit.AbilityKit';
    import { BusinessError, request } from '@kit.BasicServicesKit';
    ```
+<SourceLink name="RequestUpload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/upload/RequestUpload.ets#L17-L18" />
 2. 创建相关上传类:
 
    ```
@@ -169,6 +175,7 @@ format: md
      // ...
    }
    ```
+<SourceLink name="RequestUpload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/upload/RequestUpload.ets#L30-L295" />
 3. 配置Config，创建后台上传任务:
 
    ```
@@ -209,11 +216,13 @@ format: md
      // ...
    }
    ```
+<SourceLink name="RequestUpload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/upload/RequestUpload.ets#L35-L290" />
 4. 任务开始:
 
    ```
    await this.backgroundTask.start();
    ```
+<SourceLink name="RequestUpload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/upload/RequestUpload.ets#L118-L118" />
 5. 任务暂停，可以暂停正在等待/正在运行/正在重试的任务:
 
    ```
@@ -229,6 +238,7 @@ format: md
      }
    }
    ```
+<SourceLink name="RequestUpload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/upload/RequestUpload.ets#L234-L247" />
 6. 任务继续，已暂停的任务可被resume恢复:
 
    ```
@@ -244,6 +254,7 @@ format: md
      }
    }
    ```
+<SourceLink name="RequestUpload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/upload/RequestUpload.ets#L251-L264" />
 
 ### 文件下载
 
@@ -287,6 +298,7 @@ Range: bytes=1024-
    import { common } from '@kit.AbilityKit';
    import { BusinessError, request } from '@kit.BasicServicesKit';
    ```
+<SourceLink name="RequestDownload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/download/RequestDownload.ets#L17-L18" />
 2. 创建下载类:
 
    ```
@@ -297,6 +309,7 @@ Range: bytes=1024-
      // ...
    }
    ```
+<SourceLink name="RequestDownload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/download/RequestDownload.ets#L35-L260" />
 3. 配置Config，创建后台下载任务:
 
    ```
@@ -328,11 +341,13 @@ Range: bytes=1024-
      }
    }
    ```
+<SourceLink name="RequestDownload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/download/RequestDownload.ets#L88-L116" />
 4. 任务开始:
 
    ```
    await downTask.start();
    ```
+<SourceLink name="RequestDownload.ets" url="https://gitcode.com/harmonyos_samples/upload-and-down-load/blob/master/features/uploadanddownload/src/main/ets/download/RequestDownload.ets#L108-L108" />
 
 ![](./img/399aaded.png)
 
@@ -367,6 +382,7 @@ Range: bytes=1024-
      return config;
    }
    ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/multi-file-download/blob/master/entry/src/main/ets/pages/Index.ets#L29-L41" />
 2. 创建多个文件下载监听实例。每个文件下载监听需配置下载参数，创建下载任务，注册任务监听，启动下载任务。多文件下载监听中，每个下载任务需注册独立的监听回调。示例中，通过封装自定义组件FileDownloadItem，在每个FileDownloadItem中创建各自的下载任务和监听回调，实现多文件下载监听。
 
    ```
@@ -381,6 +397,7 @@ Range: bytes=1024-
      }
    }, (item: request.agent.Config) => JSON.stringify(item))
    ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/multi-file-download/blob/master/entry/src/main/ets/pages/Index.ets#L157-L166" />
 3. 创建下载任务并注册相关监听。本例中，在每个 `FileDownloadItem` 中使用 `request.agent.create()` 创建下载任务。下载任务创建成功后，注册以下回调：下载完成、下载失败、进度更新、暂停、重新启动以及响应头数据。在相应的回调中，获取当前文件的下载状态等数据。
 
    ```
@@ -401,6 +418,7 @@ Range: bytes=1024-
      hilog.error(0x0000, TAG, 'create error:', err);
    });
    ```
+<SourceLink name="FileDownloadItem.ets" url="https://gitcode.com/harmonyos_samples/multi-file-download/blob/master/entry/src/main/ets/view/FileDownloadItem.ets#L155-L172" />
 
    ```
    private completedCallback = (progress: request.agent.Progress) => {
@@ -412,6 +430,7 @@ Range: bytes=1024-
      this.downloadCount--;
    }
    ```
+<SourceLink name="FileDownloadItem.ets" url="https://gitcode.com/harmonyos_samples/multi-file-download/blob/master/entry/src/main/ets/view/FileDownloadItem.ets#L56-L63" />
 4. 启动下载任务。本例在每个FileDownloadItem中使用task.start()方法启动各自的下载任务。此外，start()方法也可以启动一个已失败或已停止的下载任务，从上次的进度开始续传。
 
    ```
@@ -421,6 +440,7 @@ Range: bytes=1024-
      hilog.error(0x0000, TAG, 'task start error:', err);
    })
    ```
+<SourceLink name="FileDownloadItem.ets" url="https://gitcode.com/harmonyos_samples/multi-file-download/blob/master/entry/src/main/ets/view/FileDownloadItem.ets#L164-L168" />
 5. 管理下载任务。在每个FileDownloadItem中，根据下载任务的状态，使用task.pause()和task.resume()方法分别控制任务的暂停和恢复。
 
    ```
@@ -475,6 +495,7 @@ Range: bytes=1024-
      }
    }
    ```
+<SourceLink name="FileDownloadItem.ets" url="https://gitcode.com/harmonyos_samples/multi-file-download/blob/master/entry/src/main/ets/view/FileDownloadItem.ets#L180-L229" />
 
 ## 示例代码
 

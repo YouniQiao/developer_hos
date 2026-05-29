@@ -3,6 +3,8 @@ title: "JsLeakWatcher开发实践"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-js-leak-watcher
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # JsLeakWatcher开发实践
 
 ## 概述
@@ -76,6 +78,7 @@ ArkTS对象内存泄漏，通常会带来以下影响：
    ```
    import { jsLeakWatcher } from '@kit.PerformanceAnalysisKit';
    ```
+<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/PerformanceAnalysisTool/entry/src/main/ets/pages/Index.ets#L23-L23" />
 2. **JsLeakWatcher检测功能开启**
 
    ```
@@ -85,6 +88,7 @@ ArkTS对象内存泄漏，通常会带来以下影响：
      hilog.info(0x0000, 'testTag', `testJsLeakWatcher heapDumpFileName: ${filepath[1]}`);
    });
    ```
+<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/PerformanceAnalysisTool/entry/src/main/ets/pages/Index.ets#L38-L42" />
 
    调用enableLeakWatcher()并传递回调函数。
 3. **文件导出**
@@ -107,6 +111,7 @@ ArkTS对象内存泄漏，通常会带来以下影响：
    let config : Array<string> = [];
    jsLeakWatcher.enableLeakWatcher(false, config, () => {});
    ```
+<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/PerformanceAnalysisTool/entry/src/main/ets/pages/Index.ets#L48-L49" />
 5. **分析生成的文件**
    1. 将\*.rawheap文件导入IDE DevEco Studio执行解析：
 

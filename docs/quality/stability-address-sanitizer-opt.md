@@ -3,6 +3,8 @@ title: "地址越界类问题优化建议"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-opt
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 地址越界类问题优化建议
 
 ## 优化建议1：增加返回值校验
@@ -22,6 +24,7 @@ static std::string GetStringParam1(napi_env env, napi_value arg)
     return str;
 }
 ```
+<SourceLink name="napi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/napi_init.cpp#L24-L34" />
 
 建议：增加返回值校验。
 
@@ -45,6 +48,7 @@ static std::string GetStringParam2(napi_env env, napi_value arg)
     return str;
 }
 ```
+<SourceLink name="napi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/napi_init.cpp#L42-L59" />
 
 ## 优化建议2：异步任务传递this引用
 
@@ -76,6 +80,7 @@ void Run() {
     std::this_thread::sleep_for(std::chrono::milliseconds(1));
 }
 ```
+<SourceLink name="task_demo1.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/task_demo1.cpp#L29-L52" />
 
 建议：
 
@@ -89,11 +94,13 @@ void Run() {
    ```
    class Task2 : public std::enable_shared_from_this<Task2> {
    ```
+<SourceLink name="task_demo2.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/task_demo2.cpp#L29-L29" />
 2. 采用智能指针初始化对象。
 
    ```
    auto task = std::make_shared<Task2>();
    ```
+<SourceLink name="task_demo2.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/task_demo2.cpp#L55-L55" />
 3. lambda表达式中调用weak\_from\_this捕获this。
 
    ```
@@ -110,6 +117,7 @@ void Run() {
       }).detach();
    }
    ```
+<SourceLink name="task_demo2.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/task_demo2.cpp#L38-L49" />
 
 ![](./img/1ff711aa.png)
 
@@ -138,6 +146,7 @@ int Demo3()
     return 0;
 }
 ```
+<SourceLink name="address_sanitizer_case3.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_sanitizer_case3.cpp#L22-L37" />
 
 建议：
 
@@ -165,3 +174,4 @@ int Demo3()
        return 0;
    }
    ```
+<SourceLink name="address_sanitizer_case4.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_sanitizer_case4.cpp#L22-L39" />

@@ -3,6 +3,8 @@ title: "地址越界类问题分析方法"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-illegal-way
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 地址越界类问题分析方法
 
 ## 概述
@@ -130,6 +132,7 @@ int AddressOverflowCode(int argc)
     return stack_array[argc + 100]; // BOOM
 }
 ```
+<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L75-L80" />
 
 * 地址越界问题日志分析
 

@@ -3,6 +3,8 @@ title: "应用冷启动时延优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 应用冷启动时延优化
 
 ## 概述
@@ -263,6 +265,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="ColdStartSlow.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/ColdStartSlow.ets#L17-L47" />
 
 首先创建Launch分析录制，可以观察到整个启动时间较长。UI Ability OnForeground阶段在应用冷启动过程中耗时最多，达到了3.3秒。因此，需要重点分析该阶段的耗时。
 
@@ -331,6 +334,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="ColdStartSpeedOptimization.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/ColdStartSpeedOptimization.ets#L17-L57" />
 
 重新编译并运行程序，录制Launch过程。优化后，UI Ability OnForeground阶段的耗时显著缩短，如下图所示：
 
@@ -415,6 +419,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/Index.ets#L17-L49" />
 
 ```ts
 // NetRequest.ets
@@ -460,6 +465,7 @@ function transcodePixelMap(data: http.HttpResponse): void {
   }
 }
 ```
+<SourceLink name="NetRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/utils/NetRequest.ets#L2-L45" />
 
 ```ts
 // Calculator.ets
@@ -475,6 +481,7 @@ function computeTask(): number {
 
 export let number = computeTask();
 ```
+<SourceLink name="Calculator.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/utils/Calculator.ets#L2-L13" />
 
 【优化后】
 
@@ -524,6 +531,7 @@ export let number = computeTask();
      }
    }
    ```
+<SourceLink name="NetRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/utils/NetRequest.ets#L3-L44" />
 2. 在AbilityStage的onCreate()生命周期回调中发起网络请求。
 
    ```
@@ -542,6 +550,7 @@ export let number = computeTask();
      }
    }
    ```
+<SourceLink name="MyAbilityStage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/entryability/MyAbilityStage.ets#L17-L30" />
 3. 在首页 Index.ets 中展示请求获取的图片。
 
    ```
@@ -571,6 +580,7 @@ export let number = computeTask();
      }
    }
    ```
+<SourceLink name="NewIndex.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/NewIndex.ets#L17-L41" />
 
 使用Launch分析工具，对比优化前后启动性能。分析阶段从启动Ability（即H:void OHOS::AppExecFwk::MainThread::HandleLaunchAbility的开始点）到应用接收到网络数据返回后的首帧刷新（即H:ReceiveVsync dataCount:24Bytes now:timestamp expectedEnd:timestamp vsyncId:int的开始点）。
 
@@ -619,6 +629,7 @@ export let number = computeTask();
   }
 }
 ```
+<SourceLink name="module.json5" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/module.json5#L2-L55" />
 
 下面使用Launch分析对比优化前的startWindowIcon（4096像素\\*4096像素）及优化后的startWindowIcon（144像素\\*144像素）的启动性能。分析阶段的起点为Process Creating，阶段终点为First Frame - Render Phase，优化前后的启动耗时如下图：
 
@@ -661,6 +672,7 @@ export default class EntryAbility extends UIAbility {
   // ...
 }
 ```
+<SourceLink name="ReduceImport.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/ReduceImport.ets#L17-L31" />
 
 下面使用Launch分析，对优化import的模块前（模块数量15个）及优化import的模块后（移除不必要的模块剩余5个）的启动性能进行对比分析。分析的trace点为H:SourceTextModule::Evaluate，优化前后的启动耗时如下图：
 
@@ -758,6 +770,7 @@ export struct Index{
   }
 }
 ```
+<SourceLink name="NotRecommendDemo.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/NotRecommendDemo.ets#L17-L30" />
 
 ```ts
 // library/src/main/ets/components/mainpage/MainPage.ets
@@ -777,6 +790,7 @@ export struct MainPage {
   }
 }
 ```
+<SourceLink name="MainPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/library/src/main/ets/components/mainpage/MainPage.ets#L17-L32" />
 
 ```ts
 // entry/src/main/ets/pages/SecondPage.ets
@@ -803,6 +817,7 @@ struct SecondPage {
   }
 }
 ```
+<SourceLink name="SecondPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/SecondPage.ets#L17-L39" />
 
 ```ts
 // library/src/main/ets/components/mainpage/SubPage.ets
@@ -820,11 +835,13 @@ function computeTask(): number {
 computeTask();
 // ...
 ```
+<SourceLink name="SubPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/library/src/main/ets/components/mainpage/SubPage.ets#L2-L15" />
 
 ```json
 export { MainPage } from './src/main/ets/components/mainpage/MainPage'; // Cold start strong related files
 export { SubPage } from './src/main/ets/components/mainpage/SubPage'; // Non-cold start strong related files
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/library/Index.ets#L17-L18" />
 
 【优化方案一】
 
@@ -846,11 +863,13 @@ export { SubPage } from './src/main/ets/components/mainpage/SubPage'; // Non-col
    // library/IndexAppStart.ets
    export { MainPage } from './src/main/ets/components/mainpage/MainPage';
    ```
+<SourceLink name="IndexAppStart.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/library/IndexAppStart.ets#L2-L3" />
 
    ```
    // library/IndexOthers.ets
    export { SubPage } from './src/main/ets/components/mainpage/SubPage';
    ```
+<SourceLink name="IndexOthers.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/library/IndexOthers.ets#L2-L3" />
 2. 首页Index从IndexAppStart.ets导入MainPage。
 
    ```
@@ -874,6 +893,7 @@ export { SubPage } from './src/main/ets/components/mainpage/SubPage'; // Non-col
      }
    }
    ```
+<SourceLink name="ImportMainPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/ImportMainPage.ets#L17-L35" />
 3. 跳转后的页面SecondPage从IndexOthers.ets导入SubPage。
 
    ```
@@ -904,6 +924,7 @@ export { SubPage } from './src/main/ets/components/mainpage/SubPage'; // Non-col
      }
    }
    ```
+<SourceLink name="ImportSubPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/ImportSubPage.ets#L17-L42" />
 
 【优化方案二】
 
@@ -940,6 +961,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="ImportMainPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/ImportMainPage.ets#L17-L35" />
 
 ![](./img/22965df2.png)
 
@@ -1059,6 +1081,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="ColdStartSpeedOptimization.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/ColdStartSpeedOptimization.ets#L17-L57" />
 
 使用Launch分析，对比优化前同步执行耗时操作和优化后异步执行耗时操作的启动性能。分析范围从Process Creating到First Frame - Render Phase，优化前后的启动耗时如下图所示。
 
@@ -1134,6 +1157,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="EntryAbility.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/entryability/EntryAbility.ets#L17-L63" />
 
 下面使用Launch分析，对比优化前同步执行耗时操作和优化后异步执行耗时操作的启动性能。分析从Process Creating阶段开始，到First Frame - Render Phase阶段结束。优化前后的启动耗时如下图所示。
 
@@ -1201,6 +1225,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="ComputeTaskAsync.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/ComputeTaskAsync.ets#L17-L56" />
 
 下面使用Launch分析，对优化前同步执行耗时操作及优化后异步执行耗时操作的启动性能进行对比分析。分析阶段的起点Process Creating，阶段终点为First Frame - Render Phase。
 
@@ -1351,6 +1376,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="ScenariosExample.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppColdStart/entry/src/main/ets/pages/ScenariosExample.ets#L17-L131" />
 
 下面对比优化前后的启动性能。分析阶段从启动Ability开始，到首次解析Pixelmap后的第一个vsync结束。
 

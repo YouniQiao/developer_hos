@@ -4,6 +4,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-har
 format: md
 ---
 
+
+import SourceLink from '@site/src/components/SourceLink';
+
 # 应用安全编码实践
 
 ## 通用组件安全

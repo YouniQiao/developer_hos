@@ -3,6 +3,8 @@ title: "音乐播放场景低功耗规则"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-music-playback-scenarios
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 音乐播放场景低功耗规则
 
 ## 规则
@@ -27,6 +29,7 @@ audioRenderer!.setAudioEffectMode(audio.AudioEffectMode.EFFECT_NONE, (err: Busin
   }
 });
 ```
+<SourceLink name="MusicPlayRule.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/MusicPlayRule.ets#L21-L41" />
 
 设置音乐播放的usage类型为audio.StreamUsage.STREAM\_USAGE\_MUSIC，确保音乐类应用能使用系统低功耗方案。
 
@@ -56,6 +59,7 @@ audio.createAudioRenderer(audioRendererOptions, (err, data) => {
   }
 });
 ```
+<SourceLink name="MusicPlayRule.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/MusicPlayRule.ets#L22-L67" />
 
 设置音乐应用后台播放时，需指定播放位置。播控中心将利用这些信息展示进度，无需频繁更新进度条，从而避免增加binder负载。
 
@@ -102,6 +106,7 @@ async function setListener(): Promise<void> {
   });
 }
 ```
+<SourceLink name="MusicPlayRule.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/MusicPlayRule.ets#L27-L110" />
 
 ## 调测验证
 

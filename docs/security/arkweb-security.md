@@ -4,6 +4,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ark
 format: md
 ---
 
+
+import SourceLink from '@site/src/components/SourceLink';
+
 # ArkWeb组件安全开发
 
 ## 概述

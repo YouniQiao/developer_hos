@@ -3,6 +3,8 @@ title: "libuv使用规范及案例"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-libuv
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # libuv使用规范及案例
 
 ## 前言
@@ -33,6 +35,7 @@ typedef struct uv_fs_s uv_fs_t;
 typedef struct uv_work_s uv_work_t;
 typedef struct uv_random_s uv_random_t;
 ```
+<SourceLink name="libuvRequest.h" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LibuvDevelopment/entry/src/main/cpp/libuvRequest.h#L22-L31" />
 
 但是经过异步线程池的只有下面几种：
 
@@ -43,6 +46,7 @@ typedef struct uv_fs_s uv_fs_t;
 typedef struct uv_work_s uv_work_t;
 typedef struct uv_random_s uv_random_t;
 ```
+<SourceLink name="libuvRequestAsyn.h" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LibuvDevelopment/entry/src/main/cpp/libuvRequestAsyn.h#L22-L26" />
 
 在HarmonyOS中，使用频率最高的数据结构是uv\_work\_t，主要用于自定义异步任务请求。与之配套的接口是uv\_queue\_work，定义如下：
 
@@ -128,6 +132,7 @@ void CompleteCB(uv_work_t *work, int status) {
 }
     uv_queue_work(loop, work, ExecuteCB, CompleteCB);
 ```
+<SourceLink name="NapiTaskRunner.h" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LibuvDevelopment/entry/src/main/cpp/NapiTaskRunner.h#L88-L109" />
 
 这样可以减少对象的频繁申请和释放，降低开销。
 
@@ -160,6 +165,7 @@ typedef struct uv_fs_event_s uv_fs_event_t;
 typedef struct uv_fs_poll_s uv_fs_poll_t;
 typedef struct uv_signal_s uv_signal_t;
 ```
+<SourceLink name="libuvHandles.h" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LibuvDevelopment/entry/src/main/cpp/libuvHandles.h#L20-L38" />
 
 但是HarmonyOS中常见的Handles，主要有以下几个：
 
@@ -173,6 +179,7 @@ typedef struct uv_timer_s uv_timer_t;
 /* Handle used to represent communication between threads */
 typedef struct uv_async_s uv_async_t;
 ```
+<SourceLink name="libuvHandleNormal.h" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LibuvDevelopment/entry/src/main/cpp/libuvHandleNormal.h#L23-L30" />
 
 对于uv\_loop\_t的使用，不会出现严重问题。开发者在使用时，需在事件循环退出时正确释放事件循环中的资源，避免因事件循环无法退出导致资源泄露。如果开发者创建的事件循环不清楚上层业务如何使用，可以在退出时调用uv\_walk遍历事件循环上的Handles，并在回调中调用uv\_close将Handles从事件循环中移除。然后执行uv\_run，确保异步任务执行完毕。这样可以保证事件循环的正常退出，前提是此过程中没有其他业务向事件循环中添加任务。具体可参考[libuv中的事件循环](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/libuv#libuv中的事件循环)。
 
@@ -272,6 +279,7 @@ NapiTaskRunner::~NapiTaskRunner() {
     uv_close(reinterpret_cast<uv_handle_t*>(&asyncHandle), nullptr);
 }
 ```
+<SourceLink name="NapiTaskRunner.h" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LibuvDevelopment/entry/src/main/cpp/NapiTaskRunner.h#L40-L83" />
 
 将内存操作放在析构函数中执行是个好习惯，但开发者可能并未完全理解uv\_close的调用时序。当uv\_async\_t作为NapiTaskRunner的普通成员变量时，asyncHandle的生命周期与NapiTaskRunner保持一致。在析构函数中调用uv\_close将该句柄从事件循环中移除，但由于uv\_close是一个异步操作，调用后并不能立即完成整个移除过程。因此，当析构函数执行完毕后，asyncHandle会被释放。如果事件循环随后尝试操作该节点，将会导致崩溃。
 

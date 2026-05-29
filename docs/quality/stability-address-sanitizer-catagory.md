@@ -3,6 +3,8 @@ title: "地址越界经典问题类型"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-catagory
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 地址越界经典问题类型
 
 ## heap-use-after-free
@@ -32,6 +34,7 @@ int HeapUseAfterFree()
     return array[5];
 }
 ```
+<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L24-L29" />
 
 **ASan日志示例**
 
@@ -98,6 +101,7 @@ int StackUseAfterReturn(int argc)
     return ptr[argc];
 }
 ```
+<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L37-L51" />
 
 **ASan日志示例**
 
@@ -171,6 +175,7 @@ int HeapBufferOverflow()
     return buffer[1];
 }
 ```
+<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L59-L68" />
 
 **ASan日志示例**
 

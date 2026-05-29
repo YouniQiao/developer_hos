@@ -3,6 +3,8 @@ title: "传感器资源合理使用"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-sensor-use
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 传感器资源合理使用
 
 应用退至后台时，禁止使用传感器资源。若有正常业务需求，申请后台长时任务后，可在锁屏状态下获取传感器信息。
@@ -46,5 +48,6 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="Sensor.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Sensor.ets#L6-L37" />
 
 有关传感器开发相关接口的使用，详情可以参考[传感器开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines)。

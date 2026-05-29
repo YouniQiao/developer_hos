@@ -3,6 +3,8 @@ title: "组件嵌套优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-nesting-optimization
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 组件嵌套优化
 
 本文通过原理概念、优化场景和实践数据对比三个角度，详细介绍了组件嵌套的优化，着重从优化场景角度为开发者阐明组件嵌套的优化场景以及优化策略。
@@ -78,6 +80,7 @@ export struct example {
   }
 }
 ```
+<SourceLink name="segment1.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment1.ets#L2-L10" />
 
 自定义构建函数示例代码：
 
@@ -90,6 +93,7 @@ export function example1(){
   }
 }
 ```
+<SourceLink name="segment1.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment1.ets#L14-L20" />
 
 具体可以参考[优先使用@Builder方法代替自定义组件](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization#section18773182614502)。
 
@@ -124,6 +128,7 @@ export struct Example {
   }
 }
 ```
+<SourceLink name="segment2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment2.ets#L8-L22" />
 
 正例：
 
@@ -138,6 +143,7 @@ export struct FlowListStruct2 {
   }
 }
 ```
+<SourceLink name="segment2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment2.ets#L26-L35" />
 
 **动态设置自定义组件的属性**
 
@@ -186,6 +192,7 @@ class ColumnModifier implements AttributeModifier<ColumnAttribute> {
   }
 }
 ```
+<SourceLink name="segment2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment2.ets#L39-L81" />
 
 ### 选择合适的布局组件
 
@@ -226,6 +233,7 @@ export struct example {
   }
 }
 ```
+<SourceLink name="segment3.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment3.ets#L8-L25" />
 
 正例：
 
@@ -245,6 +253,7 @@ export struct example2 {
   }
 }
 ```
+<SourceLink name="segment3.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment3.ets#L28-L42" />
 
 ### 优先使用组件属性代替嵌套组件
 
@@ -276,6 +285,7 @@ struct StackNesting {
   }
 }
 ```
+<SourceLink name="segment3.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment3.ets#L46-L61" />
 
 正例：
 
@@ -299,6 +309,7 @@ struct OverlayExample {
   }
 }
 ```
+<SourceLink name="segment4.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment4.ets#L2-L20" />
 
 **使用****ColorMetrics****实现****颜色叠加**
 
@@ -348,6 +359,7 @@ struct ColorOverlayStackExample {
   }
 }
 ```
+<SourceLink name="segment5.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment5.ets#L2-L41" />
 
 正例：
 
@@ -408,6 +420,7 @@ struct ColorMetricsExample {
   }
 }
 ```
+<SourceLink name="segment6.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment6.ets#L2-L57" />
 
 ## 实践数据对比
 

@@ -3,6 +3,8 @@ title: "高效利用HWC的低功耗设计"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-utilize-hwc-efficiently
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 高效利用HWC的低功耗设计
 
 ## 概述
@@ -44,6 +46,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-uti
      }
    }
    ```
+<SourceLink name="ArkUISample.ets" url="https://gitcode.com/harmonyos_samples/UtilizeHWCEfficiently/blob/master/entry/src/main/ets/pages/ArkUISample.ets#L5-L20" />
 
    该内容将由系统根据组件定义及布局进行绘制，用户应用程序不感知具体的绘制过程。
 2. 应用自渲染内容。
@@ -177,6 +180,7 @@ struct VideoWithBlur {
     // ...
 }
 ```
+<SourceLink name="VideoWithBlur.ets" url="https://gitcode.com/harmonyos_samples/UtilizeHWCEfficiently/blob/master/entry/src/main/ets/pages/VideoWithBlur.ets#L26-L165" />
 
 **视频上方Image组件去除模糊效果**
 
@@ -226,6 +230,7 @@ struct NormalVideo {
     // ...
 }
 ```
+<SourceLink name="NormalVideo.ets" url="https://gitcode.com/harmonyos_samples/UtilizeHWCEfficiently/blob/master/entry/src/main/ets/pages/NormalVideo.ets#L24-L151" />
 
 去除模糊后的效果图如下所示。
 
@@ -288,6 +293,7 @@ struct WebWithBlur {
   }
 }
 ```
+<SourceLink name="WebWithBlur.ets" url="https://gitcode.com/harmonyos_samples/UtilizeHWCEfficiently/blob/master/entry/src/main/ets/pages/WebWithBlur.ets#L17-L102" />
 
 **Web组件上方TabBar控件去除模糊效果**
 
@@ -324,6 +330,7 @@ struct NormalWeb {
   }
 }
 ```
+<SourceLink name="NormalWeb.ets" url="https://gitcode.com/harmonyos_samples/UtilizeHWCEfficiently/blob/master/entry/src/main/ets/pages/NormalWeb.ets#L17-L102" />
 
 去除模糊后的效果图如下所示。
 
@@ -391,6 +398,7 @@ struct TransparentVideo {
     // ...
 }
 ```
+<SourceLink name="TransparentVideo.ets" url="https://gitcode.com/harmonyos_samples/UtilizeHWCEfficiently/blob/master/entry/src/main/ets/pages/TransparentVideo.ets#L24-L81" />
 
 **视频图层不透明**
 
@@ -431,6 +439,7 @@ struct OpaqueVideo {
     // ...
 }
 ```
+<SourceLink name="OpaqueVideo.ets" url="https://gitcode.com/harmonyos_samples/UtilizeHWCEfficiently/blob/master/entry/src/main/ets/pages/OpaqueVideo.ets#L24-L81" />
 
 设置视频不透明后的效果图如下所示。
 

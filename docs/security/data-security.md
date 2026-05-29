@@ -4,6 +4,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app
 format: md
 ---
 
+
+import SourceLink from '@site/src/components/SourceLink';
+
 # 应用数据安全
 
 ## 概述

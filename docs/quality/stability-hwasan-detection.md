@@ -3,6 +3,8 @@ title: "使用HWASan检测内存错误"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-hwasan-detection
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 使用HWASan检测内存错误
 
 HWASan的能力概述和检测原理可参考[地址越界检测能力概述](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-overview)以及[HWASan检测原理](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-principle#section187526511146)，适用于开发态调试压测场景。
@@ -175,6 +177,7 @@ int Run(int argc)
     return ptrEx[argc];
 }
 ```
+<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L166-L200" />
 
 **影响**
 
@@ -229,6 +232,7 @@ void HeapBufferUnderflowEx()
     free(buffer);
 }
 ```
+<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L209-L229" />
 
 **影响**
 
@@ -288,6 +292,7 @@ void DoubleFreeEx()
     free(p);
 }
 ```
+<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L238-L253" />
 
 **影响**
 

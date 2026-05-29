@@ -3,6 +3,8 @@ title: "UI组件性能优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # UI组件性能优化
 
 应用启动到UI页面展示过程包含框架初始化、页面加载和布局渲染三个步骤。其中页面加载和布局渲染的主要流程如下：
@@ -58,6 +60,7 @@ export struct CardList {
   }
 }
 ```
+<SourceLink name="segment.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/UI_Component_Performance_Optimization/entry/src/main/ets/segment/segment.ets#L25-L59" />
 
 对于该场景，可以考虑将创建播放器对象任务的时机延后。如，计算当前组件出现在页面中的位置，当子组件滑动到页面的三分之一处时再创建播放器对象并播放视频。此时，页面首次渲染时，不会出现主线程阻塞。示例代码如下：
 
@@ -100,6 +103,7 @@ export struct CardList {
   }
 }
 ```
+<SourceLink name="segment2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/UI_Component_Performance_Optimization/entry/src/main/ets/segment/segment2.ets#L27-L67" />
 
 例如在生命周期aboutToAppear中应该避免使用[@ohos.resourceManager (资源管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)的getXXXSync接口入参中直接使用资源信息，推荐使用资源id作为入参，推荐用法为：resourceManager.getStringSync($r('app.string.test').id)。 下面以[getStringSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getstringsync10)为例，测试一下这两种参数在方法中的使用是否会有耗时区别。
 
@@ -139,6 +143,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="segment3.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/UI_Component_Performance_Optimization/entry/src/main/ets/segment/segment3.ets#L17-L49" />
 
 可以通过[冷启动分析：Launch分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-launch-overview)工具抓取Trace，根据hiTraceMeter性能打点，查看耗时为1.956ms。
 
@@ -180,6 +185,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="segment4.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/UI_Component_Performance_Optimization/entry/src/main/ets/segment/segment4.ets#L17-L49" />
 
 可以通过[冷启动分析：Launch分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-launch-overview)工具抓取Trace，根据hiTraceMeter性能打点，查看耗时为0.071ms。
 
@@ -223,6 +229,7 @@ build() {
   .shadow(this.getShadow())
 }
 ```
+<SourceLink name="segment9.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/UI_Component_Performance_Optimization/entry/src/main/ets/segment/segment9.ets#L47-L69" />
 
 从该场景中可以看到，在应用开发中，当注册了大量冗余属性的组件需要在视图上批量展示时对性能有较大影响。此时，可以考虑采用[动态属性设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier)动态注册组件属性的方式，替换使用属性方法静态注册组件属性的方式。
 
@@ -327,6 +334,7 @@ struct Avatar {
   }
 }
 ```
+<SourceLink name="segment5.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/UI_Component_Performance_Optimization/entry/src/main/ets/segment/segment5.ets#L17-L103" />
 
 将方案改为采用AttributeModifier动态注册属性的方式，需要新增自定义类实现AttributeModifier接口，并修改Avatar组件的属性注册逻辑。具体改动代码如下：
 
@@ -402,6 +410,7 @@ struct Avatar {
   }
 }
 ```
+<SourceLink name="segment6.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/UI_Component_Performance_Optimization/entry/src/main/ets/segment/segment6.ets#L28-L99" />
 
 对于上述两种方案，逐渐增加注册的属性个数，通过DevEco Studio提供的Launch场景分析能力获取两个方案的页面加载耗时（PageRouterManager::LoadPage）和应用侧首帧耗时（First Frame - App Phase），对比如下：
 
@@ -530,6 +539,7 @@ struct UserCard {
   }
 }
 ```
+<SourceLink name="segment7.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/UI_Component_Performance_Optimization/entry/src/main/ets/segment/segment7.ets#L17-L95" />
 
 改用@Builder函数的方式代替自定义组件UserCard的方案，具体修改的代码如下:
 
@@ -574,6 +584,7 @@ export struct UserCardList {
   }
 }
 ```
+<SourceLink name="segment8.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/UI_Component_Performance_Optimization/entry/src/main/ets/segment/segment8.ets#L28-L66" />
 
 将组件数量从30个递增到3000个，通过profiler获取页面加载标签PageRouterManager::LoadPage和页面UI刷新任务标签UITaskScheduler::FlushTask的耗时，对比两种方案的耗时如下：
 

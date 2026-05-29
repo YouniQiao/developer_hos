@@ -3,6 +3,8 @@ title: "瀑布流加载丢帧优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-waterflow-performance-optimization
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 瀑布流加载丢帧优化
 
 ## 概述
@@ -45,6 +47,7 @@ build() {
   }
 }
 ```
+<SourceLink name="WaterFlowPage.ets" url="https://gitcode.com/harmonyos_samples/PageSlip/blob/master/entry/src/main/ets/pages/WaterFlowPage.ets#L76-L101" />
 
 示例代码使用LazyForEach进行数据懒加载，WaterFlow布局按需创建FlowItem组件，并在FlowItem滑出可视区域时回收，以降低内存占用。
 
@@ -118,6 +121,7 @@ WaterFlow({ footer: this.footStyle, scroller: this.waterFlowScroller }) {
   this.listDataCount = this.waterFlowListData.dataSource.totalCount();
 })
 ```
+<SourceLink name="WaterFlowView.ets" url="https://gitcode.com/harmonyos_samples/PageSlip/blob/master/entry/src/main/ets/view/WaterFlowView.ets#L129-L226" />
 
 ## 固定宽高
 
@@ -149,6 +153,7 @@ getTitleHeight(title: string) {
     CommonConstants.DESCRIPTION_THREE_LINES_HEIGHT : CommonConstants.DESCRIPTION_TWO_LINES_HEIGHT;
 }
 ```
+<SourceLink name="WaterFlowView.ets" url="https://gitcode.com/harmonyos_samples/PageSlip/blob/master/entry/src/main/ets/view/WaterFlowView.ets#L98-L106" />
 
 瀑布流卡片的高度 = imageHeight + titleHeight。
 

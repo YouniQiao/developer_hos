@@ -3,6 +3,8 @@ title: "点击完成时延分析"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-complete-delay-analysis
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 点击完成时延分析
 
 ## 完成时延优化概述
@@ -325,6 +327,7 @@ Tabs({ index: this.currentIndex }) {
   }
 })
 ```
+<SourceLink name="MainPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaDelayAnalysis/entry/src/main/ets/pages/MainPage.ets#L30-L68" />
 
 AudioPlayerService.ets相关代码如下
 
@@ -348,6 +351,7 @@ export class AudioPlayerService {
   // ...
 }
 ```
+<SourceLink name="AudioPlayerService.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaDelayAnalysis/entry/src/main/ets/components/AudioPlayerService.ets#L17-L61" />
 
 观察源代码发现AudioPlayerService调用getInstance创建单例对象耗费大量时间，随即又调用destroy方法销毁对象。优化方式如下：获取单例对象前，先判断单例对象是否被实例化，若没有实例化则直接跳过获取与销毁，避免实例对象的无效创建与销毁，参考如下代码。
 
@@ -368,6 +372,7 @@ Tabs({ index: this.currentIndex }) {
   }
 })
 ```
+<SourceLink name="MainPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaDelayAnalysis/entry/src/main/ets/pages/MainPage.ets#L30-L68" />
 
 优化后AudioPlayerService.ets代码如下：
 
@@ -394,6 +399,7 @@ export class AudioPlayerService {
   // ...
 }
 ```
+<SourceLink name="AudioPlayerService.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaDelayAnalysis/entry/src/main/ets/components/AudioPlayerService.ets#L18-L62" />
 
 ### Frame主线程泳道分析异常
 
@@ -536,6 +542,7 @@ struct TabsPositiveExample {
   }
 }
 ```
+<SourceLink name="page1.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaDelayAnalysis/entry/src/main/ets/pages/page1.ets#L17-L72" />
 
 ![](./img/b3b45cb5.png "点击放大")
 
@@ -563,6 +570,7 @@ struct TabsNegativeExample {
   }
 }
 ```
+<SourceLink name="page2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaDelayAnalysis/entry/src/main/ets/pages/page2.ets#L17-L36" />
 
 ![](./img/2f1a8517.png "点击放大")
 

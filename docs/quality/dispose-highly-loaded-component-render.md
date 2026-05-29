@@ -3,6 +3,8 @@ title: "高负载场景分帧渲染"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-dispose-highly-loaded-component-render
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 高负载场景分帧渲染
 
 ## 概述
@@ -79,6 +81,7 @@ export struct TransitionScene {
   }
 }
 ```
+<SourceLink name="TestCode.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/FramedRendering/entry/src/main/ets/view/TestCode.ets#L5-L23" />
 
 这段代码里，在组件即将出现时回调aboutToAppear()接口，将数据放入productData中，并通过瀑布流加载。编译运行后，可以通过Trace图看到，转场动画的首帧耗时21ms左右，这是因为在点击进入页面时将数据全部放入瀑布流，在235970帧中需要计算每个子组件的尺寸，导致了响应时间增长。
 
@@ -167,6 +170,7 @@ struct TransitionScene {
     })
   }
 ```
+<SourceLink name="TransitionScene.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/FramedRendering/entry/src/main/ets/view/TransitionScene.ets#L24-L93" />
 
 在这段代码中，aboutToAppear()接口中并没有一次性加载全部数据，而是将数据拆分，在帧回调中分成2次进行加载，编译运行后，通过Trace图可以看到，动画首帧的耗时是12ms。相较于优化前的代码，不再是首帧占据大量的时间，而是将耗时分摊到了后面的动画帧中。当数据量更大时，可以将数据进行更多次拆分，将不会直接出现在屏幕上的数据放到第二帧或者第三帧中进行加载，降低首帧的响应时延。
 
@@ -234,6 +238,7 @@ export struct DateItemView {
   }
 }
 ```
+<SourceLink name="TestCode.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/FramedRendering/entry/src/main/ets/view/TestCode.ets#L29-L55" />
 
 在上面的代码中，通过组件复用，在ItemView的aboutToReuse()接口中，将一个月的数据直接设置到状态变量monthItem中，这样下面的Flex就会收到状态变量变更的消息通知，从而刷新组件中的数据。编译运行后，进入日历页面，然后滑动列表到最底端，分析下图。
 
@@ -274,6 +279,7 @@ export struct DateItemView {
   // ...
 }
 ```
+<SourceLink name="DateItemView.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/FramedRendering/entry/src/main/ets/view/DateItemView.ets#L29-L182" />
 
 然后，在监听中添加更新数据的代码。这里将每个月的数据更新拆分开来，第一步用来更新月份数据和计算总的执行步骤，最后一步将计数数据清空， 方便下一次数据的写入，其余需要执行步骤的多少根据每次加载数据量会有所改变。
 
@@ -306,6 +312,7 @@ if (this.temp.length > 0) {
   }
 }
 ```
+<SourceLink name="DateItemView.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/FramedRendering/entry/src/main/ets/view/DateItemView.ets#L79-L105" />
 
 最后，在aboutToReuse接口中将数据放入数组中，用于帧回调中开始执行数据更新。
 
@@ -316,6 +323,7 @@ aboutToReuse(params: Record<string, Object>): void {
   hiTraceMeter.finishTrace('reuse_' + (params.monthItem as Month).month, 1);
 }
 ```
+<SourceLink name="DateItemView.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/FramedRendering/entry/src/main/ets/view/DateItemView.ets#L52-L56" />
 
 分析下面trace图，在211618中，开始调用aboutToReuse接口，由于只是将数据放入一个temp数组中，并没有更新复用组件中的数据，所以这一帧并没有发生延长现象。
 

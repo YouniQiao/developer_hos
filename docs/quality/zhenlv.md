@@ -3,6 +3,8 @@ title: "帧率问题分析"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-zhenlv
 ---
 
+import SourceLink from '@site/src/components/SourceLink';
+
 # 帧率问题分析
 
 帧率问题指的是应用在运行时，画面刷新频率未能达到流畅体验的标准，导致用户感受到卡顿或延迟。
@@ -320,6 +322,7 @@ function ActionButtonBuilder() {
   // ...
 }
 ```
+<SourceLink name="DiscoverView.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaFramePractice/entry/src/main/ets/components/DiscoverView.ets#L17-L72" />
 
 ## 常见丢帧问题
 
@@ -383,6 +386,7 @@ struct AnimationDemo1 {
   }
 }
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaFramePractice/entry/src/main/ets/pages/Index.ets#L17-L65" />
 
 使用Frame Profiler录制Trace，可以看到动画帧率为63fps，而当前设备支持120Hz的刷新率。
 
@@ -427,6 +431,7 @@ struct AnimationDemo2 {
   }
 }
 ```
+<SourceLink name="page2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaFramePractice/entry/src/main/ets/pages/page2.ets#L17-L51" />
 
 使用Frame Profiler录制优化后的Trace，动画帧率提升至116.9fps。
 
@@ -501,6 +506,7 @@ struct ChildComponent {
   }
 }
 ```
+<SourceLink name="page3.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaFramePractice/entry/src/main/ets/pages/page3.ets#L17-L77" />
 
 使用Frame Profiler进行录制，直接查看应用侧的Trace数据，具体分析步骤请参见前面的丢帧问题分析思路章节。
 
@@ -533,6 +539,7 @@ struct ChildComponent {
   }
 }
 ```
+<SourceLink name="page4.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PerformanceAnalysis/BptaFramePractice/entry/src/main/ets/pages/page4.ets#L17-L33" />
 
 再次使用Frame Profiler进行录制，可以看到丢帧问题已经解决。
 

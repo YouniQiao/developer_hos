@@ -1388,3 +1388,45 @@ html[data-theme='dark'] .source-link:hover {
   background: var(--ifm-color-emphasis-200);
   border-color: var(--ifm-color-primary-light);
 }
+
+/* ========================================
+   MergedTable — 合并单元格表格
+   ======================================== */
+.merged-table-wrapper {
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.merged-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.merged-table th,
+.merged-table td {
+  padding: 8px 14px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  text-align: left;
+  vertical-align: top;
+}
+
+.merged-table thead th {
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.merged-table tbody th {
+  background: var(--ifm-color-emphasis-0);
+  font-weight: 600;
+}
+
+.merged-table tbody tr:nth-child(even) {
+  background: var(--ifm-color-emphasis-0);
+}
+
+html[data-theme='dark'] .merged-table th,
+html[data-theme='dark'] .merged-table td {
+  border-color: var(--ifm-color-emphasis-200);
+}
