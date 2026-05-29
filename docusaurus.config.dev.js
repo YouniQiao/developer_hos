@@ -22,8 +22,6 @@ const config = {
   favicon: 'img/favicon.ico',
   plugins: [tailwindPlugin],
   future: {
-    v4: true,
-    faster: true,
   },
 
   url: 'https://developer.harmonyos.cool',
@@ -55,7 +53,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['design/**', 'dev/release-notes/**', 'tools/**', 'experience-suggestions/**'],
+          include: ['design/**', 'architecture/**', 'quality/**', 'security/**/*.md', 'experience-suggestions/**'],
           exclude: ['**/img/**'],
           editUrl:
             'https://github.com/YouniQiao/developer_hos/tree/master/',

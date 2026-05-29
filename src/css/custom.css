@@ -1338,3 +1338,53 @@ html[data-theme='dark'] .navbar__link.mega-dropdown + .dropdown__menu {
 .header-github-link:hover::before {
   background-color: var(--ifm-link-color);
 }
+
+/* ========================================
+   SourceLink — 代码块右下角源码标签
+   ======================================== */
+.source-link-wrapper {
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 12px 4px;
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  text-decoration: none;
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
+}
+
+.source-link:hover {
+  color: var(--ifm-color-primary);
+  background: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-primary-light);
+  text-decoration: none;
+}
+
+.source-link-icon {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+html[data-theme='dark'] .source-link {
+  color: var(--ifm-color-emphasis-500);
+  background: var(--ifm-color-emphasis-0);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+html[data-theme='dark'] .source-link:hover {
+  color: var(--ifm-color-primary-light);
+  background: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-primary-light);
+}
