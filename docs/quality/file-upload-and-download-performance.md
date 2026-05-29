@@ -1,6 +1,7 @@
 ---
 title: "文件上传下载优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-file-upload-and-download-performance
+format: md
 ---
 
 # 文件上传下载优化
@@ -252,7 +253,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-fil
 
 HTTP协议中的Range字段允许服务器发送部分HTTP消息到客户端，用于请求部分数据。
 
-Range的格式通常是Range: <unit>=<start>-<end>，其中<unit>表示范围所采用的单位，通常是字节（bytes），<start> 和 <end> 表示请求的起始字节和结束字节的位置。
+Range的格式通常是`Range: <unit>=<start>-<end>`，其中`<unit>`表示范围所采用的单位，通常是字节（bytes），`<start>` 和 `<end>` 表示请求的起始字节和结束字节的位置。
 
 Range语法如下:
 

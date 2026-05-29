@@ -1,5 +1,6 @@
 ---
 title: "ArkWeb组件安全开发"
+format: md
 sidebar_position: 9
 ---
 
@@ -42,6 +43,7 @@ sidebar_position: 9
 
 
 
+```ts
 import { webview } from '@kit.ArkWeb';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
@@ -389,6 +391,7 @@ Web({ src: 'www.huawei.com', controller: this.controller })
 ```ts
 import { webview } from '@kit.ArkWeb';
 
+```ts
 @Entry
 @Component
 struct WebComponent {
@@ -406,6 +409,7 @@ event.handler.handleConfirm();
 }
 ```
 
+```
 <SourceLink name="OnSslErrorEventReceive.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/OnSslErrorEventReceive.ets#L17-L33" />
 
 **【正例】**
@@ -519,6 +523,7 @@ hilog.error(0x0000, 'ArkWebSecurity', `ErrorCode: ${error.code}`);
 
 
 
+```ts
 
 import { webview } from '@kit.ArkWeb';
 import { hilog } from '@kit.PerformanceAnalysisKit';
@@ -550,6 +555,7 @@ controller: this.controller,
 }
 }
 
+```
 <SourceLink name="JavaScriptProxy.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/JavaScriptProxy.ets#L17-L45" />
 
 ### 避免在onOverrideUrlLoading中进行页面加载
@@ -568,6 +574,7 @@ controller: this.controller,
 
 
 
+```ts
 import { webview } from '@kit.ArkWeb';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
@@ -860,6 +867,7 @@ video.play();
 import { webview } from '@kit.ArkWeb';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { abilityAccessCtrl, common } from '@kit.AbilityKit';
+```ts
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 @Entry
@@ -913,6 +921,7 @@ event.request.deny();
 }
 ```
 
+```
 <SourceLink name="PermissionRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/PermissionRequest.ets#L17-L70" />
 
 ### 务必在onGeolocationShow函数中显式通知用户进行授权
@@ -1226,6 +1235,7 @@ Web({ src: this.unknownUrl, controller: this.controller })
 **【反例】**
 
 
+```ts
 
 
 
@@ -1246,6 +1256,7 @@ Web({ src: this.untrustedURL + '?token=' + this.accessToken, controller: this.we
 }
 }
 
+```
 <SourceLink name="LoadURLWithSensitiveData.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/LoadURLWithSensitiveData.ets#L17-L32" />
 
 ### 应用通过postMessage接口向网页传送敏感数据时，务必指定接收该消息的URI

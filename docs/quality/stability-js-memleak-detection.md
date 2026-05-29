@@ -1,6 +1,7 @@
 ---
 title: "JS内存泄漏问题检测方法"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-js-memleak-detection
+format: md
 ---
 
 # JS内存泄漏问题检测方法
@@ -48,7 +49,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-sta
 
 ### 节点属性与引用链
 
-在“Snapshot”的“Statistics”页签和“Comparison”页签中，所有实例对象节点展开后会显示“<fields>”以及“<references>”，这两项节点分别代表该实例对象的属性以及该实例对象的引用链信息。
+在“Snapshot”的“Statistics”页签和“Comparison”页签中，所有实例对象节点展开后会显示“`<fields>`”以及“`<references>`”，这两项节点分别代表该实例对象的属性以及该实例对象的引用链信息。
 
 在“Snapshot”的More区域则展示“Fields”和“References”两个页签，分别代表Detail区域所选择对象的属性以及引用链信息，方便快捷查看所选中对象的属性等详细信息，而不需要跳转至对应对象。
 

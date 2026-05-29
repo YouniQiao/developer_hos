@@ -1,6 +1,7 @@
 ---
 title: "使用DevEco Studio静态检测编码规范"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ide-static-detection
+format: md
 ---
 
 # 使用DevEco Studio静态检测编码规范
@@ -21,7 +22,7 @@ DevEco Studio集成了开源的Clang-Tidy。
 
 配置参考文档：
 
-<https://clang.llvm.org/extra/clang-tidy/#using-clang-tidy>
+https://clang.llvm.org/extra/clang-tidy/#using-clang-tidy
 
 **DevEco Studio默认检查规则**
 

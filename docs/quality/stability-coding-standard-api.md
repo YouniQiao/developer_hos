@@ -1,6 +1,7 @@
 ---
 title: "易错API的使用规范"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-api
+format: 'md'
 ---
 
 # 易错API的使用规范
@@ -1425,13 +1426,13 @@ MessageSequence类中的读写方法：
 
 **【最佳实践】**
 
-sendMessageRequest(code: number, data: MessageSequence, reply: MessageSequence, options: MessageOption): Promise<RequestResult>
+``sendMessageRequest(code: number, data: MessageSequence, reply: MessageSequence, options: MessageOption): Promise<RequestResult>``
 
 在使用上述方法时，确保在promise的.finally回调中释放不再需要的对象，并且确保promise的.then或.catch回调中的逻辑先于释放对象的操作。
 
 ![](./img/59927a7f.png)
 
-sendMessageRequest(code: number, data: MessageSequence, reply: MessageSequence, options: MessageOption, callback: AsyncCallback<RequestResult>): void
+`sendMessageRequest(code: number, data: MessageSequence, reply: MessageSequence, options: MessageOption, callback: AsyncCallback<RequestResult>): void`
 
 在使用此方法时，必须在AsyncCallback回调中获取业务数据后才能释放。
 

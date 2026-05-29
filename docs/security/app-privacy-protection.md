@@ -185,6 +185,7 @@ Logger.info(`request permissions result: ${JSON.stringify(data)}`);
 
    复制
 
+```ts
 let requestInfo: geoLocationManager.LocationRequest = {
 'priority': geoLocationManager.LocationRequestPriority.FIRST_FIX,
 'scenario': geoLocationManager.LocationRequestScenario.UNSET,
@@ -219,10 +220,12 @@ Logger.error(`geoLocation getCurrentLocation: error: ${JSON.stringify(error)}`)
 
 
 
+```ts
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import Logger from '../utils/Logger';
 
+```ts
 @Entry
 @Component
 struct PickerDemo {
@@ -251,6 +254,7 @@ Logger.error(`PhotoViewPicker.select failed with err: ${JSON.stringify(err)}`)
 }
 }
 
+```
 <SourceLink name="PickerDemo.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/PickerDemo.ets#L17-L66" />
 
 ### 动态申请敏感权限
@@ -291,6 +295,7 @@ Logger.error(`PhotoViewPicker.select failed with err: ${JSON.stringify(err)}`)
 
 
 
+```ts
 
 // string.json
 {
@@ -301,6 +306,7 @@ Logger.error(`PhotoViewPicker.select failed with err: ${JSON.stringify(err)}`)
 }
 ]
 }
+```
 ```
 
 在扫码组件的点击事件中动态申请相机权限。

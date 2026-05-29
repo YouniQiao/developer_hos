@@ -228,6 +228,7 @@ hilog.error(0x0000, 'Index', 'requestPermissionsFromUser err:' + JSON.stringify(
 
 
 
+```ts
 // The permission setting dialog box is displayed.
 private openPermissionsSetting(): void {
 let atManager = abilityAccessCtrl.createAtManager();
@@ -249,6 +250,7 @@ hilog.error(0x0000, 'Index', 'data:' + JSON.stringify(err));
 });
 }
 
+```
 <SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L126-L145" />
 
 ## 功能被禁用处理方式
@@ -273,6 +275,7 @@ hilog.error(0x0000, 'Index', 'data:' + JSON.stringify(err));
 
 
 
+```ts
 // Obtain current location switch status and pull up the global switch to set the pop-up box.
 isLocationToggle(): void {
 let atManager = abilityAccessCtrl.createAtManager();
@@ -329,6 +332,7 @@ hilog.error(0x0000, 'Index', 'Promise getCurrentLocation err:' + JSON.stringify(
 })
 }
 
+```
 <SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L218-L272" />
 
 ## 示例代码

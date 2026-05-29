@@ -1,5 +1,6 @@
 ---
 title: "网络连接安全配置"
+format: md
 sidebar_position: 7
 ---
 
@@ -72,6 +73,7 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
 
 
 
+```json
 {
 "network-security-config": {
 ... ...
