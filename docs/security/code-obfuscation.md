@@ -6,7 +6,7 @@ format: md
 
 # 应用代码混淆
 
-#### 概述
+## 概述
 
 代码混淆技术可以增加代码的复杂性和模糊性，从而提高攻击者分析代码的难度。代码混淆有以下几个方面的作用：
 
@@ -17,7 +17,7 @@ format: md
 
 针对工程源码的混淆提高破解难度，缩短类和成员名称，减小应用大小。
 
-#### 混淆开启
+## 混淆开启
 
 从DevEco Studio版本4.0 Beta1开始，hvigor插件提供代码混淆功能。开启混淆的条件如下：
 
@@ -35,8 +35,9 @@ format: md
     }
   },
   ```
+<SourceLink name="build-profile.json5" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/build-profile.json5#L12-L23" />
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/bb/v3/hN0izdOhSTWvHbmMMJ5eOA/caution_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T072154Z&HW-CC-Expire=86400&HW-CC-Sign=F21712E9D5406C08D89A26A2AB0F50C47EFE53C2343942443EDDDE3D94584B55)
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/bb/v3/hN0izdOhSTWvHbmMMJ5eOA/caution_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080659Z&HW-CC-Expire=86400&HW-CC-Sign=59BEF04289CB7E17D20420E403CC7D015013E424F4B018DD81EF814CEB0C0E4B)
 
 enable默认为false，默认不开启代码混淆功能。
 
@@ -52,31 +53,31 @@ enable默认为false，默认不开启代码混淆功能。
 
 <strong>图1</strong> DevEco Studio选择release编译模式
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/cc/v3/1b9lSyGwQ969DR1OI0Byzw/zh-cn_image_0000002194010408.png?HW-CC-KV=V1&HW-CC-Date=20260529T072154Z&HW-CC-Expire=86400&HW-CC-Sign=CD5F8345C6AD04B80E18DFBF16900CFF44F24E5A5A9E568E9A3A446E67CDF7CA "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/cc/v3/1b9lSyGwQ969DR1OI0Byzw/zh-cn_image_0000002194010408.png?HW-CC-KV=V1&HW-CC-Date=20260529T080659Z&HW-CC-Expire=86400&HW-CC-Sign=20B219424F364B3B270BA5A1D531CD59FDBF078F1A5788B8AA7DEE0498B3FA17 "点击放大")
 
 <strong>图2</strong> DevEco Studio指定模块编译
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/c4/v3/QOgdrCA8RESXMPZuK30USQ/zh-cn_image_0000002229336225.png?HW-CC-KV=V1&HW-CC-Date=20260529T072154Z&HW-CC-Expire=86400&HW-CC-Sign=B76310AB13101777B3DC730B745ED182E9FE91D2B75BDC59D965EE2FBDA85638 "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/c4/v3/QOgdrCA8RESXMPZuK30USQ/zh-cn_image_0000002229336225.png?HW-CC-KV=V1&HW-CC-Date=20260529T080659Z&HW-CC-Expire=86400&HW-CC-Sign=691E793A17ECCDDB6553961968E06F3EBFED2A731EE5BE1B8ECB36B62B65EDA5 "点击放大")
 
-#### 混淆配置能力
+## 混淆配置能力
 
-#### [h2]编译选项
+### 编译选项
 
 若按照上述编译流程开启代码混淆，在DevEco Studio 5.0.3.600之前的版本，默认仅混淆参数名和局部变量名。从DevEco Studio 5.0.3.600版本起，默认启用四项推荐的混淆选项：-enable-property-obfuscation、-enable-toplevel-obfuscation、-enable-filename-obfuscation和-enable-export-obfuscation。开发者可以根据需要进一步修改混淆配置。
 
 如果在流水线开启混淆并使用release构建模式，在编译参数加上 -p buildMode=release -p debuggable=false。
 
-#### [h2]混淆配置
+### 混淆配置
 
 在每个模块下都能找到build-profile.json5文件，如下图所示。可以在此文件中配置是否开启混淆及混淆配置文件。
 
 <strong>图3</strong> 编译配置文件
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/2c/v3/P1WpDQFEQzGGhGFvAXTbnw/zh-cn_image_0000002229336217.png?HW-CC-KV=V1&HW-CC-Date=20260529T072154Z&HW-CC-Expire=86400&HW-CC-Sign=DD70805E274AF86452CD7F472ABFD1FC2CEA5648B1714A1E598B8C6AF567ADE1 "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/2c/v3/P1WpDQFEQzGGhGFvAXTbnw/zh-cn_image_0000002229336217.png?HW-CC-KV=V1&HW-CC-Date=20260529T080659Z&HW-CC-Expire=86400&HW-CC-Sign=71C2AF233B0E5675439AA75F48640CEC3093782033D62BC85FEDF3FB446D3A0C "点击放大")
 
 新建工程时，每个模块下都有obfuscation-rules.txt文件，用于配置混淆。
 
 <strong>图4</strong> 混淆配置文件
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/10/v3/VVgjVzSLRbCjNuIGcY20Gg/zh-cn_image_0000002229336209.png?HW-CC-KV=V1&HW-CC-Date=20260529T072154Z&HW-CC-Expire=86400&HW-CC-Sign=BFF6BD0C560CA77EF49985D9BE07AFE8674FB7B331220B44EB0BCFFACA4344FE "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/10/v3/VVgjVzSLRbCjNuIGcY20Gg/zh-cn_image_0000002229336209.png?HW-CC-KV=V1&HW-CC-Date=20260529T080659Z&HW-CC-Expire=86400&HW-CC-Sign=8CF1DC49BF3245EA3D5CEB16B80E7777732EBA873F7D95D063C219DD368AB2FA "点击放大")
 
 在上图中，obfuscation-rules.txt文件中添加了-enable-property-obfuscation和-enable-toplevel-obfuscation开关，表示已启用属性混淆和顶层作用域名称混淆。
 
@@ -112,11 +113,11 @@ DevEco Studio混淆现有选项及功能描述如下：
 * - 混淆选项开启较少；开启-enable-property-obfuscation、-enable-toplevel-obfuscation、-enable-export-obfuscation、-enable-filename-obfuscation选项。
 * - 源码名称与系统白名单、语言白名单重名；添加后缀避开白名单。
 
-#### [h2]混淆规则合并策略
+### 混淆规则合并策略
 
 在编译一个模块时，生效的混淆规则是当前编译模块混淆规则和依赖模块混淆规则的合并结果。具体规则请参考：[混淆规则合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)。
 
-#### 查看混淆结果
+## 查看混淆结果
 
 开发人员在编译模块的build目录中可找到编译和混淆生成的缓存文件、名称映射表及系统API白名单文件。
 
@@ -126,25 +127,25 @@ DevEco Studio混淆现有选项及功能描述如下：
   + - 系统API白名单文件：systemApiCache.json，记录SDK接口与属性名称。
 
   <strong>图5</strong> DevEco Studio编译产物与缓存文件
-  ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/e9/v3/SA_vlXgZT0ap6yqDXxJReA/zh-cn_image_0000002194010432.png?HW-CC-KV=V1&HW-CC-Date=20260529T072154Z&HW-CC-Expire=86400&HW-CC-Sign=C102EF3075729FF4AC3417CF23D380EDB278DA44424E499DE49A11776DE5A901)
+  ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/e9/v3/SA_vlXgZT0ap6yqDXxJReA/zh-cn_image_0000002194010432.png?HW-CC-KV=V1&HW-CC-Date=20260529T080659Z&HW-CC-Expire=86400&HW-CC-Sign=D0AA18267AFDF9E3C81372DE1F9A0580303A02C97F038098C4CBC8AC3E763ABC)
 
-#### 调试
+## 调试
 
 代码经过混淆工具处理后，名称会发生更改，这可能导致运行时崩溃堆栈日志难以理解，因为堆栈与源代码不完全一致。如果未保留调试信息，行号及名称更改将导致无法准确定位问题。此外，启用-enable-property-obfuscation、-enable-toplevel-obfuscation等选项后，代码混淆可能会引发运行时崩溃或功能性错误。开发人员需要还原报错堆栈，排查并配置白名单以确保功能正常。
 
-#### [h2]函数调用栈还原
+### 函数调用栈还原
 
 经过混淆的应用程序中代码名称会发生更改，因此报错栈与源码不完全一致，crash时打印的报错栈会难以理解，如何处理请参考[报错栈还原](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide#报错栈还原)。
 
-#### [h2]反混淆工具hstack
+### 反混淆工具hstack
 
 hstack需要将Node.js配置到环境变量中，详细使用说明请参考[堆栈解析工具（hstack）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-hstack)。
 
-#### [h2]常见报错案例
+### 常见报错案例
 
 请参考[ArkGuard混淆常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-questions)。
 
-#### 使用第三方加固
+## 使用第三方加固
 
 在HarmonyOS提供的代码混淆能力之外，开发者还可以使用第三方安全厂商提供的高级混淆和加固能力。多家安全加固厂商已经启动了HarmonyOS开发，开发者可以根据需求选择这些安全厂商的服务。开发者需要与第三方安全厂商自行沟通合作方式和范围，本文档不做详细说明。具体的官方与第三方代码混淆能力的关系如下：
 
@@ -173,6 +174,6 @@ hstack需要将Node.js配置到环境变量中，详细使用说明请参考[堆
 
 6、不允许对系统库使用hook技术，此方法影响应用市场对应用的纯净安全进行审核。
 
-#### 示例代码
+## 示例代码
 
 * [应用安全示例代码](https://gitcode.com/harmonyos_samples/BestPracticeSnippets/tree/master/Privacy)

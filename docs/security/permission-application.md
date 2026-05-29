@@ -6,7 +6,7 @@ format: md
 
 # 应用权限申请
 
-#### 概述
+## 概述
 
 在HarmonyOS开发中，应用访问如相机、麦克风、位置、图库等系统资源或系统能力时，需通过[系统Picker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-picker)、[安全控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-component-overview)、[授权使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview)等方式来访问，以确保用户隐私安全。在申请权限授权过程中需严格遵循HarmonyOS[应用安全隐私体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-privacy-experience-standards)，同时符合UX体验设计，以提供合理且用户友好的交互体验。本文将从以下五个方面，介绍应用申请权限时的注意事项：
 
@@ -16,7 +16,7 @@ format: md
 * 向用户申请授权
 * 功能被禁用处理方式
 
-#### 优先使用系统Picker或者安全控件
+## 优先使用系统Picker或者安全控件
 
 系统通过提供系统Picker和安全控件两种方式，使得应用能够便捷地访问系统资源。这两种方法均依赖于系统的独立进程来实现，当应用拉起系统Picker或展示安全控件时，必须依赖用户的主动操作来获取资源或结果。这一流程避免了应用额外申请权限，同时，由于用户的积极参与，进一步增强了用户隐私和安全的保护。
 
@@ -43,7 +43,7 @@ format: md
    * 推荐方案（无需申请权限）：仅是需要拉起系统相机拍摄一张照片、录制一段视频，可直接使用[CameraPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-camerapicker)，无需申请相机权限。
    * 申请权限方案：开发一个相机应用（或是在应用内开发相机模块）时，需按[相机开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)在开发前做好申请权限的准备。
 
-#### 权限申请时机
+## 权限申请时机
 
 为了应用发挥完整功能，需要访问系统特定资源，这些资源的访问需要获得相应权限许可。在应用进行权限申请时，选择合适的申请时机是提升用户体验和保护用户隐私安全的关键。具体包括两点：
 
@@ -57,9 +57,9 @@ format: md
 * 核心原则：尊重用户选择权，不应强制授予权限。
 * 实施策略：如果用户拒绝了某项权限申请，应用不应再次弹窗请求该权限。应在页面的适当位置添加明确的提示，指导用户开启权限或退出当前需要该权限的场景，直到用户重新触发时再引导其完成授权。例如，权限申请被拒绝后，按钮上方显示提示文字，具体效果见下图：
 
-  ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/24/v3/pVwK9gNjSP6mjnz--FzDug/zh-cn_image_0000002194010136.png?HW-CC-KV=V1&HW-CC-Date=20260529T072155Z&HW-CC-Expire=86400&HW-CC-Sign=E8C4E077E1484416A936AB6D74EBC454E865215CA2387F377D15598F7AEE0D26 "点击放大")
+  ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/24/v3/pVwK9gNjSP6mjnz--FzDug/zh-cn_image_0000002194010136.png?HW-CC-KV=V1&HW-CC-Date=20260529T080700Z&HW-CC-Expire=86400&HW-CC-Sign=FA1D4080AC1206456E3A63F1E5E843C0F9AC2447ADA779AE73A97798C7010C73 "点击放大")
 
-#### 明确声明原因
+## 明确声明原因
 
 请求应用权限时，增强用户信任并减少拒绝风险的关键在于清晰说明。通过对话框或提示信息，向用户解释为何需要权限，或说明数据如何被使用，即明确声明原因。
 
@@ -84,7 +84,7 @@ format: md
 
   解释：此示例清晰地说明了应用为何需要位置信息（展示您的当前位置信息），并承诺了信息的使用范围及用途（仅用于本应用的展示），确保了信息的保密性，符合规范且易于用户理解。
 
-  ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d7/v3/EoMTW84rRLixaeqOeeMmKg/zh-cn_image_0000002193850544.png?HW-CC-KV=V1&HW-CC-Date=20260529T072155Z&HW-CC-Expire=86400&HW-CC-Sign=A2F146ADA4F30895C52B4E526B9CECD8C8F4A842F588D1AE613FD121E287AF10 "点击放大")
+  ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d7/v3/EoMTW84rRLixaeqOeeMmKg/zh-cn_image_0000002193850544.png?HW-CC-KV=V1&HW-CC-Date=20260529T080700Z&HW-CC-Expire=86400&HW-CC-Sign=39CB257FE99531031AE3BA7FD4B517641C604E2EB465032F09D54635BBFFBBA8 "点击放大")
 
 * 正例2
 
@@ -111,13 +111,13 @@ format: md
 
   解释：此示例同样过于笼统，没有具体说明相机权限将用于哪些功能，用户难以判断权限请求的合理性，也不符合规范。
 
-#### 向用户申请授权
+## 向用户申请授权
 
 在配置文件中声明user\_grant类型权限后，还需向用户请求授权。只有经过用户允许，才能获得该权限。在此过程中，应确保符合UX体验设计，为用户提供良好的体验，避免出现二次弹框或要求用户手动到设置中开启权限。
 
 当用户触发需要使用权限的场景时，首先需要判断当前是否已经授权，如果已经授权，则可以直接访问目标操作，否则需要向用户申请授权。调用[requestPermissionsFromUser()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissionsfromuser9)方法可以向用户申请授权，通过判断返回结果authResults字段为0则表示用户已经授权，则可以继续访问目标操作，authResults字段为-1则表示用户没有授权，这时需要判断返回结果的dialogShownResults，当结果为true表示有弹框表明已经向用户展示请求授权的弹窗但是用户拒绝了授权，那应用需要在页面内合适的位置添加提示语引导用户开启权限或者退出该场景，dialogShownResults结果为false表示当前应用没有被授权且没有向用户展示请求授权的弹框，那应用可以调用[requestPermissionOnSetting()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissiononsetting12)方法直接拉起权限设置弹框，引导用户授予权限。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/ac/v3/O4ZImW8sRpG9VFdm-R67mQ/notice_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T072155Z&HW-CC-Expire=86400&HW-CC-Sign=F157437C0D7FC926E56CEBCA17D2FA7F527A16F0BB35AB6EA686BAB3BA4465D9)
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/ac/v3/O4ZImW8sRpG9VFdm-R67mQ/notice_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080700Z&HW-CC-Expire=86400&HW-CC-Sign=ECB9358D3136A1D9DDE3BA8D0A1A1D387D68F4FFADE50342243CCB2574EF425D)
 
 在调用requestPermissionOnSetting()方法前，需先调用requestPermissionsFromUser()方法。
 
@@ -129,11 +129,11 @@ format: md
 2. 本次使用允许：点击后将会对应用授予临时的权限，详情请参考[向用户申请单次授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/one-time-authorization)，若临时权限被取消，再次调用requestPermissionsFromUser()方法将会拉起该权限设置弹框；
 3. 不允许：点击后应用无法获取该权限，且再次调用requestPermissionsFromUser()方法无法拉起该权限设置弹框。
 
-   ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/37/v3/cgzArya5Sa6ijipOqU_akw/zh-cn_image_0000002194010128.png?HW-CC-KV=V1&HW-CC-Date=20260529T072155Z&HW-CC-Expire=86400&HW-CC-Sign=5DE4A4E1B482BE0CA9732DF1F473AF82A35FC1B5FD75BB94F58DD59084D520E1 "点击放大")
+   ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/37/v3/cgzArya5Sa6ijipOqU_akw/zh-cn_image_0000002194010128.png?HW-CC-KV=V1&HW-CC-Date=20260529T080700Z&HW-CC-Expire=86400&HW-CC-Sign=9FC263BBADB7C298E1520063BC54D18465A552678861D0E63D86B2EE365F6D72 "点击放大")
 
 具体流程图如下：
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/f9/v3/FMLAb_qLQFatbXA0Qsy0Hg/zh-cn_image_0000002267532549.jpg?HW-CC-KV=V1&HW-CC-Date=20260529T072155Z&HW-CC-Expire=86400&HW-CC-Sign=17F1D5EFE98C264AA00397797E70887AD1AD4AD857BE3170DE013D05D7A31B68 "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/f9/v3/FMLAb_qLQFatbXA0Qsy0Hg/zh-cn_image_0000002267532549.jpg?HW-CC-KV=V1&HW-CC-Date=20260529T080700Z&HW-CC-Expire=86400&HW-CC-Sign=7647317FE760D1DAF6E70B487086CDFE26F68821A6495DF1D992766A1DE79B42 "点击放大")
 
 <strong>示例代码</strong>
 
@@ -172,6 +172,7 @@ checkPermissionGrant(): void {
   }
 }
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L149-L179" />
 
 向用户申请授权。
 
@@ -209,6 +210,7 @@ requestPermissions(): void {
   }
 }
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L183-L214" />
 
 引导用户授权。
 
@@ -234,12 +236,13 @@ private openPermissionsSetting(): void {
   });
 }
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L126-L145" />
 
-#### 功能被禁用处理方式
+## 功能被禁用处理方式
 
 用户可以在系统设置中，打开超级隐私模式或者关闭相机、麦克风、位置的全局开关，此时，即使应用已经被授权相关权限，也不能完成访问目标的操作。应用需要检测到这种状态，并通过适当的方式（如拉起全局开关的弹窗或一段描述性文字引导用户开启全局开关等）来提醒用户并辅助开启对应的全局开关。所以需要在调用接口前判断全局开关是否被关闭，如果全局开关被关闭，则需要调用[requestGlobalSwitch()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestglobalswitch12)方法来打开它，之后才能继续调用所需的接口，具体流程图如下：
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/87/v3/Rg82unesTf2QgLsyE1kLiQ/zh-cn_image_0000002267612717.jpg?HW-CC-KV=V1&HW-CC-Date=20260529T072155Z&HW-CC-Expire=86400&HW-CC-Sign=AEB0EEABDC3A90F57D0B33F221DE3AAF1A1C374E35BA6DF5CFA313E787FFE3DE "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/87/v3/Rg82unesTf2QgLsyE1kLiQ/zh-cn_image_0000002267612717.jpg?HW-CC-KV=V1&HW-CC-Date=20260529T080700Z&HW-CC-Expire=86400&HW-CC-Sign=B08CF93A22AA24269EF53A1C8E433E281095879C5F9D89B6745980E58F994324 "点击放大")
 
 以下为判断各全局开关是否打开的方法：
 
@@ -310,7 +313,8 @@ getLocation(): void {
   })
 }
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L218-L272" />
 
-#### 示例代码
+## 示例代码
 
 * [实现权限申请功能](https://gitcode.com/harmonyos_samples/PermissionApplication)

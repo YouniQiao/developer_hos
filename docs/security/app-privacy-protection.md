@@ -6,7 +6,7 @@ format: md
 
 # 应用隐私保护
 
-#### 概述
+## 概述
 
 移动终端及其相关业务（如移动支付、终端云）的普及，使用户隐私保护的重要性更加突出。隐私保护尊重个人权利、增加用户信任、确保个人信息安全，也是法律法规的要求。个人信息泄露和滥用可能导致个人诈骗、身份盗用、恶意广告等不良后果。
 
@@ -18,7 +18,7 @@ format: md
 2. [隐私保护的原则](#section137983974814)。
 3. 隐私保护的措施：隐私保护的一些建议和方法，以及隐私保护的一些[最佳实践](#section182128512489)。
 
-#### 隐私保护的原则
+## 隐私保护的原则
 
 应用开发者在产品设计阶段应考虑用户隐私保护，提高应用安全性。HarmonyOS应用开发需遵从隐私保护规则，应用上架时，应用市场将根据规则校验，不满足条件则无法上架。应遵循以控制力、透明度和数据最小化为核心的隐私保护原则：
 
@@ -41,7 +41,7 @@ format: md
 
    如果应用面向未成年人，或通过用户年龄数据识别出未成年人，开发者应根据目标市场的相关法律，专门分析未成年人个人数据保护问题，并在收集未成年人数据前征得监护人同意。
 
-#### 隐私保护常用方法
+## 隐私保护常用方法
 
 下面我们列举了应用隐私保护的一些常用方法。
 
@@ -63,11 +63,11 @@ format: md
 
    存储敏感数据应该进行加密处理，具体可以参考《[应用数据安全](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-data-security)》。
 
-#### 隐私保护最佳实践
+## 隐私保护最佳实践
 
 下面介绍一些隐私保护的最佳实践，开发者可以参考这些实践解决应用的隐私保护问题。
 
-#### [h2]使用隐私声明获取用户同意
+### 使用隐私声明获取用户同意
 
 安装或使用应用程序时，应用程序可能请求访问敏感权限，如相机、麦克风、通讯录、位置等。应用程序需通过隐私声明弹窗，事先说明授权目的和使用方式，确保用户全面了解个人数据的使用情况。
 
@@ -81,9 +81,9 @@ format: md
 
 例如在[“HMOS世界”](https://gitcode.com/harmonyos_samples/hmosworld)中使用了隐私声明的弹窗，具体实现可以参考代码[SafePage.ets](https://gitcode.com/harmonyos_samples/hmosworld/blob/master/HMOSWorld/Application/products/phone/src/main/ets/pages/SafePage.ets)。应用首次启动后，会弹出该弹窗，当应用获得用户授权同意后，应用才能开始正常使用。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/6a/v3/2MHnp6hrR_CvyS7XhEs0mQ/zh-cn_image_0000002194010840.png?HW-CC-KV=V1&HW-CC-Date=20260529T072150Z&HW-CC-Expire=86400&HW-CC-Sign=843E314D89BE57C62E624BBD96B932AACDFBD52C100B7582D4342052A44A1B21 "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/6a/v3/2MHnp6hrR_CvyS7XhEs0mQ/zh-cn_image_0000002194010840.png?HW-CC-KV=V1&HW-CC-Date=20260529T080345Z&HW-CC-Expire=86400&HW-CC-Sign=1465151E3478C1356ECF073AAA4261536CFA2D427EC0E7D422CF10A16F796893 "点击放大")
 
-#### [h2]减少应用的位置信息访问权限
+### 减少应用的位置信息访问权限
 
 限制应用的位置信息访问权限，保护个人隐私。
 
@@ -108,7 +108,7 @@ format: md
 
 <strong>图1</strong> 权限申请弹窗
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d8/v3/K0LoQIS5R5iYPpZMDe9aZA/zh-cn_image_0000002193851252.png?HW-CC-KV=V1&HW-CC-Date=20260529T072150Z&HW-CC-Expire=86400&HW-CC-Sign=28F3E8B0895B52D5C5974A15428D6C7A7F9AF1A8E91AEB8E3346804F5AD86EAF "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d8/v3/K0LoQIS5R5iYPpZMDe9aZA/zh-cn_image_0000002193851252.png?HW-CC-KV=V1&HW-CC-Date=20260529T080345Z&HW-CC-Expire=86400&HW-CC-Sign=0B65F9DA873DB891130B6223BCC1A68339188EE9CBCD760D389B54B24664F58C "点击放大")
 
 接下来介绍模糊位置申请的实现方法：
 
@@ -134,6 +134,7 @@ format: md
      }
    }
    ```
+<SourceLink name="module.json5" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/module.json5#L2-L82" />
 2. 在需要使用位置信息的代码块中，动态申请 ohos.permission.APPROXIMATELY\_LOCATION权限。
 
    ```
@@ -154,6 +155,7 @@ format: md
            Logger.info(`request permissions result: ${JSON.stringify(data)}`);
          })
    ```
+<SourceLink name="ApproximatelyLocationDemo.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/ApproximatelyLocationDemo.ets#L29-L69" />
 3. 获取位置信息的接口相同，但模糊定位和精确定位的返回结果精确度不同。
 
    ```
@@ -171,18 +173,19 @@ format: md
      Logger.error(`geoLocation getCurrentLocation: error: ${JSON.stringify(error)}`)
    });
    ```
+<SourceLink name="ApproximatelyLocationDemo.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/ApproximatelyLocationDemo.ets#L86-L100" />
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/c7/v3/vyZYEGM1T9mO3py_f1vSdQ/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T072150Z&HW-CC-Expire=86400&HW-CC-Sign=00E738F310354413BB60C807AD1CCB4F3384103305298C4D142ED90F4901480C)
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/c7/v3/vyZYEGM1T9mO3py_f1vSdQ/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080345Z&HW-CC-Expire=86400&HW-CC-Sign=D7C6648FB0E466A02E9680BFB6261A9A2688CDF25BB211B30F564CC133ABF35B)
 
 权限的申请具体可以参考：[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
 
-#### [h2]减少使用存储权限
+### 减少使用存储权限
 
 应用获取“存储”权限后，能够读取手机内部存储上的所有文件，包括所有照片，这会带来隐私风险：它可能在用户不知情的情况下，分析文件和图片，泄露用户隐私。
 
 用户往往不愿意授予应用对其所有照片和视频的访问权限。因此，HarmonyOS在API9版本之后引入了Picker选择器，以满足用户正常的数据访问需求，同时最小化应用的数据泄露风险。通过减少授权范围，降低授权的颗粒度，例如用户在发送图片时，仅允许应用访问用户选择的图片。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/bc/v3/swa_-GfRTPqOL5ycoVLgrw/zh-cn_image_0000002193851256.png?HW-CC-KV=V1&HW-CC-Date=20260529T072150Z&HW-CC-Expire=86400&HW-CC-Sign=AFF22B79790BA94ED89C7D96126E186DA83857CF65C43FC441046FB22CE563D6 "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/bc/v3/swa_-GfRTPqOL5ycoVLgrw/zh-cn_image_0000002193851256.png?HW-CC-KV=V1&HW-CC-Date=20260529T080345Z&HW-CC-Expire=86400&HW-CC-Sign=7394BD1B54F87C24D2DF6B7AB08193E3F1C824C84D1C31E7B9CB2AB741268261 "点击放大")
 
 示例代码如下：
 
@@ -219,8 +222,9 @@ struct PickerDemo {
   }
 }
 ```
+<SourceLink name="PickerDemo.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/PickerDemo.ets#L17-L66" />
 
-#### [h2]动态申请敏感权限
+### 动态申请敏感权限
 
 敏感权限涉及访问个人数据（如：照片、通讯录、日历、本机号码、短信等）和操作敏感能力（如：相机、麦克风等）的权限，所以对于敏感权限的申请需要特别注意。
 
@@ -249,6 +253,7 @@ struct PickerDemo {
   }
 }
 ```
+<SourceLink name="module.json5" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/module.json5#L3-L83" />
 
 ```
 // string.json
@@ -276,8 +281,9 @@ accessManager.requestPermissionsFromUser(this.getUIContext().getHostContext(), [
     }
   })
 ```
+<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/Index.ets#L37-L55" />
 
-#### 总结与回顾
+## 总结与回顾
 
 本文主要介绍了隐私保护的重要性，列举了隐私保护的一些常见做法，并详细介绍了隐私保护的几个最佳实践：
 
@@ -288,6 +294,6 @@ accessManager.requestPermissionsFromUser(this.getUIContext().getHostContext(), [
 
 请注意，这些HarmonyOS隐私最佳实践适用于常见场景，具体实施策略应根据应用的特定需求和法律法规要求调整。你应该根据应用类型和用户定位，结合适用的隐私法规采取全面且具体的隐私保护措施。
 
-#### 示例代码
+## 示例代码
 
 * [应用隐私保护实现](https://gitcode.com/harmonyos_samples/BestPracticeSnippets/tree/master/AppPrivacyProtection)

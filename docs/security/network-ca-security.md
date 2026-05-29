@@ -6,7 +6,7 @@ format: md
 
 # 网络连接安全配置
 
-#### 概述
+## 概述
 
 应用与服务器之间的数据传输需确保安全，保护数据的机密性和完整性，防止敏感数据被窃取和篡改。推荐使用传输层安全协议（TLS）保护数据安全。
 
@@ -14,9 +14,9 @@ format: md
 
 本文介绍如何配置CA证书以进行合法性校验，避免应用或云侧服务器的安全风险。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/e/v3/4G8AT7eHQhCg_e_sOiu10Q/zh-cn_image_0000002457689021.png?HW-CC-KV=V1&HW-CC-Date=20260529T072156Z&HW-CC-Expire=86400&HW-CC-Sign=4B192483BC42724BD1EF5CA62694CE8F825695FB4B196791FF88F4F17CED22F8 "点击放大")
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/e/v3/4G8AT7eHQhCg_e_sOiu10Q/zh-cn_image_0000002457689021.png?HW-CC-KV=V1&HW-CC-Date=20260529T080701Z&HW-CC-Expire=86400&HW-CC-Sign=08A0F0FD0FD4072B6E5928FAEBBC1451C750A0E8697614509982003EDD480000 "点击放大")
 
-#### 配置CA证书对服务器进行合法性校验
+## 配置CA证书对服务器进行合法性校验
 
 当应用通过TLS协议连接服务器时，服务器会提供证书链来证明其身份，应用需要使用可信的CA（证书颁发机构）证书对服务器证书链进行合法性校验。
 
@@ -40,13 +40,13 @@ format: md
 * 应用需支持通过企业代理服务器访问应用服务器，可信任企业MDM系统或设备管理员用户手动安装[CA证书](#section12518142215236)。然而，设备管理员用户可能通过代理工具抓取应用网络数据，建议在应用层实施安全防护，如对敏感数据进行二次加密或签名。
 * 对于需要较高网络安全的应用（如金融支付、银行类应用），配置CA证书后，通过[SSL Pinning方式](#section4337175511234)绑定服务器证书的公钥，以增强安全性。
 
-#### 网络连接安全配置
+## 网络连接安全配置
 
-#### [h2]配置信任系统预置的CA证书
+### 配置信任系统预置的CA证书
 
 面向互联网用户提供服务的应用，通常只需信任系统预置的CA证书。[Network Kit（网络服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit)和[Remote Communication Kit（远场通信服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-kit-guide)的HTTPS连接已默认信任系统预置的CA证书。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/94/v3/e8avOyFTQJWMpsgiiXBQ5w/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T072156Z&HW-CC-Expire=86400&HW-CC-Sign=3AE02A9C0700BCCBEAFB55C608FC258F74BC6EA9BAB130EBF6BF1BF3D7E94B54)
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/94/v3/e8avOyFTQJWMpsgiiXBQ5w/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080701Z&HW-CC-Expire=86400&HW-CC-Sign=EEF7FE65580E6FE3A35695E6350752A54AF155239A569932442F9F01CE95C6A7)
 
 系统Network Kit和Remote Communication Kit的HTTPS连接默认信任系统预置的CA证书和用户安装的CA证书，可[配置不信任用户安装的CA证书](#section11935814273)提升安全性。
 
@@ -59,8 +59,9 @@ format: md
 ```
 curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
 ```
+<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L21-L21" />
 
-#### [h2]配置不信任用户安装的CA证书
+### 配置不信任用户安装的CA证书
 
 <strong>Network Kit和Remote Communication Kit配置不信任用户安装的CA证书</strong>：在src/main/resources/base/profile/network\_config.json[配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request#配置证书校验)中进行配置。
 
@@ -73,8 +74,9 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
   "trust-current-user-ca": false  // Configure whether to trust the CA certificate installed by the current user. The default value is true
 }
 ```
+<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L30-L36" />
 
-#### [h2]配置信任应用管理的CA证书
+### 配置信任应用管理的CA证书
 
 如果应用服务器使用企业内部自建的CA证书，可以在Hap包中预置这些CA证书，并配置信任。
 
@@ -108,6 +110,7 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
     }
   }
   ```
+<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L45-L70" />
 
   Network Kit也支持在发起HTTPS请求的代码中[指定信任的CA证书路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http#httprequestoptions)：
 
@@ -125,6 +128,7 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
     // ...
   })
   ```
+<SourceLink name="NetworkTrust.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NetworkTrust.ets#L26-L37" />
 
   Remote Communication Kit也支持在代码中[指定信任的CA证书路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-rcp#certificateauthority)：
 
@@ -138,8 +142,9 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
   // Use the security configuration in the session creation
   const sessionWithSecurityConfig = rcp.createSession({ requestConfiguration: { security: securityConfig } });
   ```
+<SourceLink name="NetworkTrust.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NetworkTrust.ets#L46-L53" />
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/ba/v3/fmOxFPWYQ6eWyutWOJrKcw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T072156Z&HW-CC-Expire=86400&HW-CC-Sign=77696701254AB8523EFFA8BDD531BE98697A726F595A98B53598695F1CB97DD1)
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/ba/v3/fmOxFPWYQ6eWyutWOJrKcw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080701Z&HW-CC-Expire=86400&HW-CC-Sign=FCB1100BB3A5CF85F9E97B05B867CF8319C963B248101D2CD0F3787AFA013426)
 
 系统Network Kit和Remote Communication Kit在完成上述配置后，HTTPS连接仍信任系统预置的CA证书和用户安装的CA证书。如需提升安全性，可[配置不信任用户安装的CA证书](#section11935814273)。
 
@@ -148,8 +153,9 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
   ```
   curl_easy_setopt(curl, CURLOPT_CATH, "/data/storage/el1/bundle/entry/resources/resfile/domainCaCert");
   ```
+<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L78-L78" />
 
-#### [h2]配置信任用户安装的CA证书
+### 配置信任用户安装的CA证书
 
 用户安装的CA证书可信度较低，除以下场景外，建议应用不信任用户安装的CA证书：
 
@@ -158,13 +164,13 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
    <strong>注意：</strong>在商用发布的应用版本中应该不信任用户安装的CA证书。
 2. 面向2B企业应用的场景，应用需支持通过企业代理服务器访问应用服务器。设备需通过企业的MDM系统或设备管理员用户手工安装CA证书，并保存在目录：<strong>/data/certificates/user\_cacerts/0</strong>。
 
-#### [h2]配置SSL Pinning证书锁定
+### 配置SSL Pinning证书锁定
 
 应用默认信任系统预置的CA证书。如果预置的CA颁发了不可信证书，应用将面临攻击风险。对于需要高网络安全的应用，如金融支付和银行类应用，可以通过配置SSL Pinning证书锁定方式，仅信任指定服务器证书的公钥。
 
 配置SSL Pinning支持两种方式。如果服务器域名固定，建议采用静态SSL Pinning。否则，采用动态SSL Pinning。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/8e/v3/SKE90YYoRrucm4g--fyoxQ/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T072156Z&HW-CC-Expire=86400&HW-CC-Sign=5F6EDF79D6050EEB4DACCEBE8AD23FF4F6951EA62986386846A4DB5904E01F45)
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/8e/v3/SKE90YYoRrucm4g--fyoxQ/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080701Z&HW-CC-Expire=86400&HW-CC-Sign=E19030BC684DAE2F9648A7512A46D00DF81F322697D2C43D6E92EB0313718F31)
 
 SSL Pinning要求应用云侧服务器证书的公钥不能变化。如果公钥发生变化，需要修改应用内配置的证书公钥，否则应用的网络连接将失败。因此，建议SSL Pinning配置始终包含至少一个备用公钥。
 
@@ -199,6 +205,7 @@ SSL Pinning要求应用云侧服务器证书的公钥不能变化。如果公钥
      }
    }
    ```
+<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L87-L109" />
 
    具体可参考配置指导的[“证书锁定”](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request#证书锁定)章节。
 2. 通过在代码中动态设置进行动态SSL Pinning配置：
@@ -215,6 +222,7 @@ SSL Pinning要求应用云侧服务器证书的公钥不能变化。如果公钥
         }
       ]
      ```
+<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L118-L126" />
 
      具体可参考配置指导的[“certificatePinning”参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http#httprequestoptions)。
    * Remote Communication Kit配置动态SSL Pinning：
@@ -235,5 +243,6 @@ SSL Pinning要求应用云侧服务器证书的公钥不能变化。如果公钥
      };
      const resp = await session.fetch(request);
      ```
+<SourceLink name="NetworkTrust.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NetworkTrust.ets#L63-L76" />
 
      具体可参考配置指导的[“certificatePinning”参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-rcp#securityconfiguration)。

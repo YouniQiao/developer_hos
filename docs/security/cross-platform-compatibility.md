@@ -6,7 +6,7 @@ format: md
 
 # 加解密跨平台数据兼容性
 
-#### 概述
+## 概述
 
 为确保数据安全，数据传输过程中需进行加解密操作。实现加密和解密操作在不同环境下的互操作性和跨平台数据的兼容性也极为关键。这一目标受以下两方面影响：
 
@@ -15,7 +15,7 @@ format: md
 
 本文从[数据编码格式差异](#section1152116421582)以及[加解密算法使用差异](#section61961942185518)两个方面来深入分析加解密失败的可能原因，并提供相应的解决方案，避免跨平台加解密失败，帮助开发者在HarmonyOS平台上高效、准确地完成加解密任务，实现跨平台数据兼容性。
 
-#### 加解密开发步骤
+## 加解密开发步骤
 
 加解密通常遵循以下流程：
 
@@ -35,7 +35,7 @@ format: md
    * 加密后得到密文数据。
    * 可以将密文存储在文件或数据库中，或通过网络传输给接收方。
 
-#### 数据编码格式差异
+## 数据编码格式差异
 
 加解密操作常跨平台进行，例如服务端加密的数据需在移动设备上解密。HarmonyOS平台的加解密API要求密钥和待处理数据为Uint8Array格式。因此，需将Uint8Array字节数据与其他编码格式数据互相转换，确保编码格式一致。
 
@@ -58,6 +58,7 @@ format: md
     return textDecoder.decodeToString(input);
   }
   ```
+<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L267-L278" />
 
 * Base64编码格式字符串与Uint8Array类型的转换
 
@@ -78,6 +79,7 @@ format: md
     return base64Helper.encodeToStringSync(input);
   }
   ```
+<SourceLink name="DataConversion.ets" url="https://gitcode.com/HarmonyOS_Samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L281-L292" />
 
 * 16进制编码格式字符串与Uint8Array类型的转换
 
@@ -97,8 +99,9 @@ format: md
     return hexString;
   }
   ```
+<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L295-L309" />
 
-#### 加解密算法使用差异
+## 加解密算法使用差异
 
 不同平台支持相同的算法，但加解密算法在使用时可能存在差异，这些差异可能导致加解密无法跨平台正常工作。
 
@@ -108,7 +111,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
 2. 在HarmonyOS平台上，默认支持SM2算法。需要注意的是，HarmonyOS仅支持ASN.1格式的数据（如密钥和密文）。因此，SM2算法在跨平台加解密时，需要进行原始裸数据与ASN.1格式数据的转换，包括密钥格式转换和密文格式转换，具体可参考[SM2加解密](#section48982572218)。
 3. HarmonyOS平台在初始化加解密引擎时，需要传入固定的参数，参数格式可参考[加解密算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encrypt-decrypt-spec)。以AES为例，详细分析密钥长度使用问题和偏移量参数的设置问题，具体可参考[AES加解密](#section848458172418)。
 
-#### [h2]SM2加解密
+### SM2加解密
 
 [SM2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#sm2)，是一种基于椭圆曲线的公钥密码算法。
 
@@ -147,6 +150,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
     }
   }
   ```
+<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L38-L61" />
 
   同理，可通过[使用密钥参数生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#使用密钥参数生成-3)SM2私钥。
 
@@ -170,6 +174,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
     }
   }
   ```
+<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L71-L89" />
 
 * SM2密文格式转换
 
@@ -248,6 +253,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
     }
   }
   ```
+<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L205-L264" />
 
   同理，HarmonyOS平台生成的C1C3C2顺序的ASN.1格式密文在其他平台使用时，需要先解码为C1C3C2的裸密文。
 
@@ -278,8 +284,9 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
     return primal_data;
   }
   ```
+<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L170-L195" />
 
-#### [h2]AES加解密
+### AES加解密
 
 [AES](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-key-generation-conversion-spec#aes)（Advanced Encryption Standard），最常见的对称加密算法。
 
@@ -314,6 +321,6 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
   | CBC、CTR、OFB、CFB | iv长度为16字节。 | - |
   | GCM | 加解密参数iv，长度为1~16字节，常用为12字节。  加解密参数add，长度为0~INT\_MAX字节，常用为16字节。  加解密参数authTag，长度为16字节。 | 在GCM模式下，需要从加密后的数据中取出末尾16字节，作为解密时初始化的认证信息。 |
 
-#### 示例代码
+## 示例代码
 
 * [基于cryptoFramework实现加解密功能](https://gitcode.com/harmonyos_samples/crypto-collection)

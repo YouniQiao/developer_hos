@@ -6,15 +6,15 @@ format: md
 
 # 应用安全编码实践
 
-#### 通用组件安全
+## 通用组件安全
 
-#### [h2]不涉及对外交互的应用组件应设置exported属性为false
+### 不涉及对外交互的应用组件应设置exported属性为false
 
 应用程序内部使用的组件必须设置为不可见，以防止其他应用程序调用。
 
 不对外交互的应用组件应显式设置exported属性为false，防止遗漏和错误配置。这可避免内部接口被恶意应用利用，导致信息泄露、功能异常或应用拒绝服务等问题。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/18/v3/J_kogGJfQWuUoSpYsTkBOg/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T072307Z&HW-CC-Expire=86400&HW-CC-Sign=56ADD3DB78E6B5E08F7A3DAC9E1F455346FF36791E1760C3F0FFE312A6A330BC)
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/18/v3/J_kogGJfQWuUoSpYsTkBOg/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080658Z&HW-CC-Expire=86400&HW-CC-Sign=4A2E0F5DECDB9597E41314FE581AA598F268E76187F789A8742669B646253776)
 
 当应用组件的exported属性设置为false时，使用DevEco Studio启动调试或运行应用/服务，或通过命令行拉起时，会出现安装HAP错误，提示“error: failed to start ability. error: ability visible false deny request”。系统安全权限不允许拉起exported属性设置为false的应用/服务。建议在调试阶段将exported属性设置为true，正式上架发布时再设置为false。
 
@@ -48,7 +48,7 @@ PrivacyAbility 是一个不对外交互的组件，但设置exported属性为tru
 ]
 ```
 
-#### [h2]对外交互的应用组件应设置合理的访问权限
+### 对外交互的应用组件应设置合理的访问权限
 
 应用程序组件不仅在内部使用，还需要与外部进行交互。以下情况表明组件是对外交互的：
 
@@ -97,7 +97,7 @@ PrivacyAbility 是一个不对外交互的组件，但设置exported属性为tru
 ]
 ```
 
-#### [h2]建议隐式启动应用组件时避免携带个人数据
+### 建议隐式启动应用组件时避免携带个人数据
 
 隐式want是通过action条件匹配的方式来筛选组件，凡是满足条件的应用组件都有被启动的可能。如果携带个人数据，则恶意应用有可能劫持携带的个人数据。应用程序如果要携带个人数据，需要显式指定目标应用组件（bundle名、ability名）或者将个人数据匿名化。示例中的context的获取方式请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
 
@@ -120,6 +120,7 @@ import { Want } from '@kit.AbilityKit';
       hilog.error(0x0000, 'privacy', 'startAbility  with error message: ' + err.message + ', error code: ' + err.code);
     }
 ```
+<SourceLink name="NoInfoJumpTo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/NoInfoJumpTo.ets#L22-L46" />
 
 通过示例代码中的action："ability.want.test" 可以隐式启动组件。如果恶意应用也声明了相同的action，隐式调用时将显示一个列表供用户选择。如果用户选择了恶意应用，该应用可能会获取传递的敏感信息。
 
@@ -144,10 +145,11 @@ import { Want } from '@kit.AbilityKit';
       hilog.error(0x0000, 'privacy', 'startAbility  with error message: ' + err.message + ', error code: ' + err.code);
     }
 ```
+<SourceLink name="NoInfoJumpTo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NoInfoJumpTo.ets#L22-L48" />
 
 这里显式指定了需要拉起的应用组件的bundleName和abilityName，只会拉起指定的目标组件。
 
-#### [h2]避免涉及口令输入的应用界面可以被截屏或录屏
+### 避免涉及口令输入的应用界面可以被截屏或录屏
 
 口令输入界面包含账号密码输入框和输入法弹出框。在用户输入口令时，应禁止截屏或录屏操作。如果恶意软件获得授权，窃取用户账号和密码，便可能在其他设备上登录，导致用户隐私泄露。
 
@@ -202,10 +204,11 @@ struct Index {
   }
 }
 ```
+<SourceLink name="PrivacyMode.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/PrivacyMode.ets#L21-L59" />
 
-#### 公共事件安全
+## 公共事件安全
 
-#### [h2]避免使用携带个人数据未设置权限的动态公共事件
+### 避免使用携带个人数据未设置权限的动态公共事件
 
 不同应用程序可以通过公共事件进行进程间通信。如果公共事件的发送权限设置不当，并且携带个人数据，任何应用都可能读取这些个人数据，导致用户数据泄露。
 
@@ -231,6 +234,7 @@ function publishEventWithData() {
   })
 }
 ```
+<SourceLink name="PublicSafeInfo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/PublicSafeInfo.ets#L22-L37" />
 
 发送了一个包含联系人数据的公共事件，但未设置接收方所需的权限。
 
@@ -255,10 +259,11 @@ function publishEventWithData() {
   })
 }
 ```
+<SourceLink name="PublicSafeInfo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/PublicSafeInfo.ets#L22-L38" />
 
 通过subscriberPermissions字段设置接收权限，发布者要求订阅者具有“ohos.permission.READ\_CONTACTS”权限，才能接收携带联系人数据的公共事件。
 
-#### [h2]建议对涉及敏感功能的公共事件进行访问权限控制
+### 建议对涉及敏感功能的公共事件进行访问权限控制
 
 应用支持订阅自定义公共事件，并在接收到事件后执行相应功能。订阅公共事件时，需通过publisherPermission设置接收权限。若未设置权限，任意应用可发送同名自定义公共事件，可能导致接收应用拒绝服务或敏感功能泄露。
 
@@ -303,6 +308,7 @@ try {
   hilog.error(0x0000, 'privacy', `createSubscriber failed, code is ${err.code}, message is ${err.message}`);
 }
 ```
+<SourceLink name="PublicSensitive.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/PublicSensitive.ets#L22-L56" />
 
 <strong>正确示例:</strong>
 
@@ -344,6 +350,7 @@ try {
   hilog.error(0x0000, 'privacy', `createSubscriber failed, code is ${err.code}, message is ${err.message}`);
 }
 ```
+<SourceLink name="PublicSensitive.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/PublicSensitive.ets#L22-L57" />
 
 常见敏感功能和对外提供的公共事件存在利用风险。建议对涉及这些情况的公共事件设置权限保护。
 
@@ -355,9 +362,9 @@ try {
 
 <strong>例外情况：</strong>必须对外提供且无利用风险的应用公共事件，可以不设置权限。
 
-#### WebView安全
+## WebView安全
 
-#### [h2]避免加载不安全的URL或页面
+### 避免加载不安全的URL或页面
 
 Web组件或WebController均可以加载URL或页面。如果加载的URL或页面被攻击者控制，可能会加载恶意JS代码，从而调用ArkTS开放的敏感JS接口，获取用户个人数据或对应用进行攻击。
 
@@ -410,10 +417,11 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="WebUrlSafe.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/WebUrlSafe.ets#L21-L63" />
 
 <strong>例外：</strong>如果应用本身是提供URL加载能力的，譬如浏览器等，可以例外。但是要注意，如果应用也提供了敏感的JS接口，要注意防范可能的被恶意调用的风险。
 
-#### [h2]避免加载不可信的JavaScript脚本
+### 避免加载不可信的JavaScript脚本
 
 WebController提供了runJavaScript()和runJavaScriptExt()函数用于异步执行JavaScript脚本，并通过回调方式返回脚本执行的结果。以runJavaScript为例：
 
@@ -447,6 +455,7 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="RunJavaScript.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/RunJavaScript.ets#L22-L49" />
 
 加载的index.html文件内容如下：
 
@@ -465,6 +474,7 @@ Hello world!
 </script>
 </html>
 ```
+<SourceLink name="index.html" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/resources/rawfile/index.html#L9-L21" />
 
 如果加载的脚本内容不可信，可能会导致恶意JavaScript代码的加载，引发XSS攻击。若Web组件注册了敏感的JavaScript接口，恶意代码还可能调用这些接口，进一步影响应用的安全性。
 
@@ -509,6 +519,7 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="RunJavaScriptTrustList.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/RunJavaScriptTrustList.ets#L22-L56" />
 
 <strong>错误示例：</strong>
 
@@ -543,8 +554,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="RunJavaScriptTrustList.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/RunJavaScriptTrustList.ets#L22-L50" />
 
-#### [h2]避免将mixedMode属性配置成All
+### 避免将mixedMode属性配置成All
 
 mixedMode设置是否允许加载超文本传输协议（HTTP）和超文本传输安全协议（HTTPS）混合内容，默认不允许加载HTTP和HTTPS混合内容。支持三种模式，其中All是允许混合内容加载，存在中间人攻击的风险，默认不允许配置成All。
 
@@ -566,12 +578,13 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="MixedMode.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/MixedMode.ets#L22-L35" />
 
 应该去掉此配置项，或者选择MixedMode.None模式。
 
 <strong>例外：</strong>对于提供特定业务的应用可以例外，例如浏览器。
 
-#### [h2]避免在SSL校验出错时继续加载页面
+### 避免在SSL校验出错时继续加载页面
 
 onSslErrorEventReceive()回调函数用于通知用户加载资源时发生SSL错误。
 
@@ -597,6 +610,7 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="OnSslErrorEventReceive.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/OnSslErrorEventReceive.ets#L22-L39" />
 
 <strong>错误示例：</strong>
 
@@ -618,12 +632,13 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="OnSslErrorEventReceive.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/OnSslErrorEventReceive.ets#L22-L37" />
 
 如果在SSL校验出错时直接调用handleConfirm()函数，页面将忽略SSL错误并继续加载，从而导致中间人攻击等风险。
 
 <strong>例外：</strong>对于浏览器等用于加载URL的应用可以例外，但需要在页面显式告知用户待加载页面存在安全风险。
 
-#### [h2]避免在用户同意前返回位置信息
+### 避免在用户同意前返回位置信息
 
 geolocationAccess开关用于配置是否开启地理位置权限，默认开启。onGeolocationShow()回调函数用于通知用户收到地理位置信息获取请求。H5页面请求获取地理位置信息时，Web组件通过上述两个API进行配置。
 
@@ -663,6 +678,7 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="GeolocationAccess.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/GeolocationAccess.ets#L22-L53" />
 
 <strong>错误示例：</strong>
 
@@ -688,10 +704,11 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="GeolocationAccess.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/GeolocationAccess.ets#L22-L41" />
 
 在使用位置权限的场景中，不能直接返回位置信息。必须先明确告知用户并获得其同意后，才能返回位置信息。
 
-#### [h2]避免注册返回含有全局认证凭据的JavaScriptProxy
+### 避免注册返回含有全局认证凭据的JavaScriptProxy
 
 在HarmonyOS中，可以使用Web组件加载H5等页面。同时Web组件可以通过JavaScriptProxy()方法或者通过WebController的registerJavaScriptProxy()方法向H5提供JS接口，供H5访问。
 
@@ -740,6 +757,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="JavaScriptProxy.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/JavaScriptProxy.ets#L22-L60" />
 
 H5攻击界面：
 
@@ -761,6 +779,7 @@ Hello js call ets interface!
 </body>
 </html>
 ```
+<SourceLink name="H5CallETS.html" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/resources/rawfile/H5CallETS.html#L22-L37" />
 
 提供了一个ST接口，用于H5调用以获取全局认证凭据。如果H5存在漏洞，攻击者可能获取此ST并冒充用户访问云服务上的个人数据，进行恶意操作。
 
@@ -837,6 +856,7 @@ struct Index {
   }
 }
 ```
+<SourceLink name="TrustListCheck.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/TrustListCheck.ets#L22-L84" />
 
 2. 使用URL库进行URL格式化，准确获取URL各字段值并校验是否在业务预置的白名单内。
 
@@ -905,12 +925,13 @@ struct Index {
   }
 }
 ```
+<SourceLink name="UrlListCheck.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/UrlListCheck.ets#L22-L84" />
 
 <strong>第二种方法：</strong>针对H5页面申请一个新的H5Token，并严格限定此H5Token可以调用的云服务业务接口在最小范围内。
 
-#### 数据传递安全
+## 数据传递安全
 
-#### [h2]建议对跨信任边界传入的Want进行合法性判断
+### 建议对跨信任边界传入的Want进行合法性判断
 
 攻击者可能向指定应用Ability发送空的Want或携带恶意数据。如果应用接收这些Want，却没有进行合法性判断，可能会导致应用业务逻辑被篡改、数据泄露或财产损失。因此，应对外部传入的Want内容进行合法性判断。
 
@@ -944,6 +965,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="CheckWantOne.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/CheckWantOne.ets#L23-L46" />
 
 2. 使用Want的数据前，进行try...catch异常捕获，以防止应用崩溃，并且可以定位问题。
 
@@ -992,6 +1014,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
+<SourceLink name="CheckWantTwo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/CheckWantTwo.ets#L22-L64" />
 
 应用获取外部不可信Want的方式有很多种，例如：
 
@@ -1014,10 +1037,11 @@ onConnect(want: Want): rpc.RemoteObject;
 onDisconnect(want: Want): void;
 onReconnect(want: Want): void;
 ```
+<SourceLink name="WantScene.ts" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/WantScene.ts#L26-L40" />
 
-#### 数据存储安全
+## 数据存储安全
 
-#### [h2]避免直接使用不可信数据来拼接SQL语句
+### 避免直接使用不可信数据来拼接SQL语句
 
 SQL注入是指对用户输入数据的合法性没有判断或过滤不严。攻击者可以传入特定内容，将应用事先定义好的语句变成含义完全不同的SQL语句，导致信息泄露或数据篡改。
 
@@ -1066,10 +1090,11 @@ function exesql(sql: string) {
   }
 }
 ```
+<SourceLink name="UntrustedDataToSQL.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/UntrustedDataToSQL.ets#L22-L57" />
 
 如果直接使用用户输入作为查询参数，恶意用户可以输入类似“1' OR 'a' = 'a”的字符串，导致 SQL 语句变为select \* from book where name='1' OR 'a' = 'a'，从而引发 SQL 注入攻击。因此，禁止直接使用外部输入作为查询字符串的一部分，或者在拼接 SQL 语句之前，对外部输入进行字符校验。
 
-#### [h2]避免将个人数据存放到剪贴板中
+### 避免将个人数据存放到剪贴板中
 
 剪贴板是指操作系统提供的一个暂存数据并提供共享的模块，也称为数据中转站。剪贴板在后台起作用，存放在内存里。
 
@@ -1079,7 +1104,7 @@ function exesql(sql: string) {
 
 <strong>例外：</strong>如果是用户自己主动以剪切板作为中转，拷贝数据，则不受此规则约束。
 
-#### [h2]避免使用未校验的外部数据拼接文件路径
+### 避免使用未校验的外部数据拼接文件路径
 
 HarmonyOS系统对文件存储进行了沙箱隔离。内部存储的文件仅应用程序有权限读取，且仅限于本应用的内部存储目录。若需读取外部共享存储，则必须添加读取权限。
 
@@ -1098,10 +1123,11 @@ function readFile(fileName: string) {
   }
 }
 ```
+<SourceLink name="UntrustedDataToSQL.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/UntrustedDataToSQL.ets#L66-L76" />
 
-#### 配置安全
+## 配置安全
 
-#### [h2]建议正确设置发布版本应用调试属性
+### 建议正确设置发布版本应用调试属性
 
 "debug"属性是为了方便开发人员对应用进行调试，但对于正式发布版本，如果应用设置为可调试模式，方便了攻击者对应用进行更深入的分析调试，不利于对应用的保护，因此要求正式版本须设置为不可调试模式。
 
@@ -1161,7 +1187,7 @@ function readFile(fileName: string) {
 }
 ```
 
-#### [h2]建议发布的软件包进行代码混淆
+### 建议发布的软件包进行代码混淆
 
 鸿蒙应用软件包（HAP、HAR、HSP）可以被反编译。配置代码混淆，增加攻击者分析代码的难度。
 
@@ -1191,7 +1217,7 @@ function readFile(fileName: string) {
 
 在应用源码工程obfuscation-rules.txt文件中，按照应用业务的需求配置和开启混淆规则。
 
-#### [h2]建议应用使用的依赖库处于最新状态
+### 建议应用使用的依赖库处于最新状态
 
 应用通常依赖外部第三方库和系统SDK来完成特定任务。及时更新这些依赖项，可增强应用的安全性。
 
@@ -1200,27 +1226,27 @@ function readFile(fileName: string) {
 * 对于SDK等第一方依赖项，当前SDK已嵌入DevEco Studio中，无需额外下载配置，请使用DevEco Studio最新版本。
 * 对于第三方依赖项，请检查您的应用所用库的网站，并安装所有可用的更新和安全补丁。
 
-#### 应用签名安全
+## 应用签名安全
 
-#### [h2]避免正式版本应用使用debug调试签名
+### 避免正式版本应用使用debug调试签名
 
 在HarmonyOS应用打包时，可以选择debug和release两种模式。debug模式的应用便于开发者进行调试。然而，在正式发布版本中，若应用设置为可调试模式，将增加攻击者分析调试应用的风险，不利于应用的安全保护。因此，正式发布的应用必须使用release模式并禁止使用debug签名。
 
 注意：DevEco Studio默认编译的hap应用为debug模式，不可直接用于商用版本。
 
-#### [h2]建议应用需保证签名完整性
+### 建议应用需保证签名完整性
 
 应用签名是保障应用完整性的关键。若因版本更新需对应用进行资源裁剪或字节调整，修改后必须重新签名，否则会破坏签名完整性。
 
 禁止应用破坏签名后上架或者直接预装到版本中。
 
-#### [h2]建议应用在申请应用证书时不使用个人信息
+### 建议应用在申请应用证书时不使用个人信息
 
 应用签名必须申请签名证书。申请证书时需要输入开发者信息和公司信息。该证书是应用的身份标识和认证凭据。签名时，证书会嵌入到应用包，成为应用包数据结构的一部分。开发者可以通过公开的API或读取应用包数据结构获取应用证书信息。
 
 如果在证书信息中填写了姓名、工号等个人信息，将导致信息泄露，并可能引发质疑。证书信息应填写公司或团队名称，而不是个人信息。
 
-#### [h2]建议应用软件应包含的签名信息需要真实有效
+### 建议应用软件应包含的签名信息需要真实有效
 
 预置应用软件必须包含真实有效的签名信息。对于非开源鸿蒙官方应用，不得使用开源鸿蒙公开证书，也不得使用与产品无关的签名信息，例如Demo等。应用开发者、公司和部门信息必须真实有效，不得为网址、乱码等无效信息。签名证书应正确标识开发者身份，包括企业名称、组织、省市和国家等信息，不得包含与主体无关的信息。
 

@@ -6,9 +6,9 @@ format: md
 
 # ArkWeb组件安全开发
 
-#### 概述
+## 概述
 
-#### [h2]目标
+### 目标
 
 本文旨在指导应用开发者在Hybrid混合应用开发模式下安全地使用ArkWeb组件。Hybrid混合开发指，开发者通过Web H5技术构建可动态加载与渲染的页面（如商品推广、隐私政策等），并通过应用内置的ArkWeb组件进行展示。同时，开发者可依托[JSBridge](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-ndk-jsbridge)的能力，让Web页面能够方便地使用应用原生功能，例如获取地理位置、调用摄像头甚至移动支付等功能。
 
@@ -16,17 +16,17 @@ format: md
 
 因此，本文基于大量真实漏洞案例，为应用开发者提供了若干关于ArkWeb安全开发的最佳实践，涵盖[安全的Web资源访问](#section37021234194614)、[恰当的权限管控](#section18547133101712)、[确保敏感数据传输安全](#section74092496444)三种典型开发场景，以系统性提升应用的整体安全水平。
 
-#### [h2]适用范围
+### 适用范围
 
 本文适用于采用ArkWeb组件进行混合开发的应用，包括加载动态H5页面、JSBridge调用原生能力等场景。
 
 注：纯网页浏览、资源搜索等需要访问全网内容的场景（例如开发浏览器应用）不受本文限制。
 
-#### 安全的Web资源访问
+## 安全的Web资源访问
 
 遵循以下最佳实践使用ArkWeb进行Web资源访问，能够提升Web运行环境的可信度，保护应用的关键业务和数据。
 
-#### [h2]设置允许加载白名单来限制ArkWeb组件加载的网页内容
+### 设置允许加载白名单来限制ArkWeb组件加载的网页内容
 
 <strong>【描述】</strong>
 
@@ -86,8 +86,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="SetURLTrustList.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/SetURLTrustList.ets#L17-L62" />
 
-#### [h2]避免将不可信域名配置到允许加载白名单
+### 避免将不可信域名配置到允许加载白名单
 
 <strong>【描述】</strong>
 
@@ -129,8 +130,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="SetURLTrustList.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/SetURLTrustList.ets#L17-L44" />
 
-#### [h2]加载外部来源的脚本或资源时，务必对不可信内容进行安全校验或过滤
+### 加载外部来源的脚本或资源时，务必对不可信内容进行安全校验或过滤
 
 <strong>【描述】</strong>
 
@@ -165,6 +167,7 @@ Web({ src: $rawfile('index.html'), controller: this.controller })
     }
   })
 ```
+<SourceLink name="LoadURL.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/LoadURL.ets#L29-L47" />
 
 index.html内容如下：
 
@@ -182,6 +185,7 @@ Hello world!
 </script>
 </html>
 ```
+<SourceLink name="index.html" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/resources/rawfile/index.html#L18-L29" />
 
 <strong>【正例】</strong>
 
@@ -212,8 +216,9 @@ Web({ src: $rawfile('index.html'), controller: this.controller })
     }
   })
 ```
+<SourceLink name="LoadURL.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/LoadURL.ets#L29-L53" />
 
-#### [h2]若要在onInterceptRequest中加载本地文件，务必校验文件URL，以防止本地数据被窃取
+### 若要在onInterceptRequest中加载本地文件，务必校验文件URL，以防止本地数据被窃取
 
 <strong>【描述】</strong>
 
@@ -291,8 +296,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="OnInterceptRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/OnInterceptRequest.ets#L17-L80" />
 
-#### [h2]避免在允许跨域访问的本地文件目录中包含敏感资源
+### 避免在允许跨域访问的本地文件目录中包含敏感资源
 
 <strong>【描述】</strong>
 
@@ -304,7 +310,7 @@ ArkWeb默认不允许跨域访问本地文件资源，除非使用[setPathAllowi
 
 若设置了允许跨域访问本地文件目录，可能会让攻击者访问本地文件，导致敏感资源泄露，并发起“应用克隆攻击”。
 
-#### [h2]避免HTTP与HTTPS混合内容加载
+### 避免HTTP与HTTPS混合内容加载
 
 <strong>【描述】</strong>
 
@@ -320,6 +326,7 @@ ArkWeb默认不允许跨域访问本地文件资源，除非使用[setPathAllowi
 Web({ src: 'www.huawei.com', controller: this.controller })
   .mixedMode(MixedMode.All)
 ```
+<SourceLink name="MixedMode.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/MixedMode.ets#L26-L27" />
 
 <strong>【正例】</strong>
 
@@ -327,8 +334,9 @@ Web({ src: 'www.huawei.com', controller: this.controller })
 Web({ src: 'www.huawei.com', controller: this.controller })
   .mixedMode(MixedMode.None)
 ```
+<SourceLink name="MixedMode.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/MixedMode.ets#L26-L27" />
 
-#### [h2]避免在SSL校验出错时继续加载页面
+### 避免在SSL校验出错时继续加载页面
 
 <strong>【描述】</strong>
 
@@ -361,6 +369,7 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="OnSslErrorEventReceive.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/OnSslErrorEventReceive.ets#L17-L33" />
 
 <strong>【正例】</strong>
 
@@ -407,8 +416,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="OnSslErrorEventReceive.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/OnSslErrorEventReceive.ets#L17-L57" />
 
-#### [h2]正式Release版本务必关闭ArkWeb的网页调试功能
+### 正式Release版本务必关闭ArkWeb的网页调试功能
 
 <strong>【描述】</strong>
 
@@ -427,18 +437,19 @@ try {
   hilog.error(0x0000, 'ArkWebSecurity', `ErrorCode: ${error.code}`);
 }
 ```
+<SourceLink name="WebDebug.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/WebDebug.ets#L26-L30" />
 
-#### 恰当的权限管控
+## 恰当的权限管控
 
 遵循以下最佳实践，确保ArkWeb运行时满足最小特权原则，仅授予受信任的Web页面所需权限。
 
-#### [h2]注册JavaScriptProxy接口时，务必同时设置允许调用白名单检查调用接口的页面身份
+### 注册JavaScriptProxy接口时，务必同时设置允许调用白名单检查调用接口的页面身份
 
 <strong>【描述】</strong>
 
 [JavaScriptProxy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#javascriptproxy12)接口，尤其是访问敏感资源的接口，务必在调用前通过白名单来检查调用页面的合法性，以满足最小特权原则。建议开发者在注册JavaScriptProxy时，通过设置permission参数配置允许调用接口白名单。完成配置后，当Web侧调用该JavaScriptProxy接口时，ArkWeb会对调用页面的URL进行检查，仅符合白名单要求的URL的请求才会被允许，其余请求将被拦截。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/55/v3/ztIjndPKRq2YsgnvoLpovA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T072313Z&HW-CC-Expire=86400&HW-CC-Sign=E366E5C19F9E99C2CA4C5AA93220610176819CDD8B7D21BB682612F0C5CD5A5A)
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/55/v3/ztIjndPKRq2YsgnvoLpovA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080704Z&HW-CC-Expire=86400&HW-CC-Sign=7E2769AFEB38C0D84F71707C6C7DA33F6DD9C26C576DE18F379CB91D55F897A3)
 
 避免利用[onPageBegin()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onpagebegin)等生命周期函数自行实现接口白名单校验，务必统一通过permission参数进行控制。
 
@@ -448,7 +459,7 @@ try {
 
 参考文档：[如何建立应用侧与H5侧的交互通道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-page-app-function-invoking#如何建立应用侧与h5侧的交互通道)
 
-#### [h2]注册JavaScriptProxy接口时遵循最小必要原则
+### 注册JavaScriptProxy接口时遵循最小必要原则
 
 <strong>【描述】</strong>
 
@@ -491,8 +502,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="JavaScriptProxy.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/JavaScriptProxy.ets#L17-L45" />
 
-#### [h2]避免在onOverrideUrlLoading中进行页面加载
+### 避免在onOverrideUrlLoading中进行页面加载
 
 <strong>【描述】</strong>
 
@@ -531,8 +543,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="OnOverrideUrlLoading.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/OnOverrideUrlLoading.ets#L17-L41" />
 
-#### [h2]避免使用getUrl/getOriginalUrl函数获取URL进行调用白名单校验
+### 避免使用getUrl/getOriginalUrl函数获取URL进行调用白名单校验
 
 <strong>【描述】</strong>
 
@@ -555,6 +568,7 @@ if (url === 'https://www.huawei.com') {
   hilog.error(0x0000, 'ArkWebSecurity', 'Not allowed to execute: ' + cmd);
 }
 ```
+<SourceLink name="GetURL.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/GetURL.ets#L29-L35" />
 
 <strong>【正例】</strong>
 
@@ -567,8 +581,9 @@ if (url === 'https://www.huawei.com') {
   hilog.error(0x0000, 'ArkWebSecurity', 'Not allowed to execute: ' + cmd);
 }
 ```
+<SourceLink name="GetURL.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/GetURL.ets#L29-L35" />
 
-#### [h2]避免在JavaScriptProxy中提供页面加载功能
+### 避免在JavaScriptProxy中提供页面加载功能
 
 <strong>【描述】</strong>
 
@@ -620,8 +635,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="Redirection.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/Redirection.ets#L17-L54" />
 
-#### [h2]避免在JavaScriptProxy中提供脚本执行功能
+### 避免在JavaScriptProxy中提供脚本执行功能
 
 <strong>【描述】</strong>
 
@@ -677,8 +693,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="RunJavaScript.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/RunJavaScript.ets#L17-L59" />
 
-#### [h2]务必在onPermissionRequest函数中显式通知用户进行授权
+### 务必在onPermissionRequest函数中显式通知用户进行授权
 
 <strong>【描述】</strong>
 
@@ -726,6 +743,7 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="PermissionRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/PermissionRequest.ets#L17-L50" />
 
 index.html内容如下：
 
@@ -759,6 +777,7 @@ index.html内容如下：
 </body>
 </html>
 ```
+<SourceLink name="index.html" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/resources/rawfile/index.html#L33-L60" />
 
 <strong>【正例】</strong>
 
@@ -818,8 +837,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="PermissionRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/PermissionRequest.ets#L17-L70" />
 
-#### [h2]务必在onGeolocationShow函数中显式通知用户进行授权
+### 务必在onGeolocationShow函数中显式通知用户进行授权
 
 <strong>【描述】</strong>
 
@@ -850,6 +870,7 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="GeolocationShow.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/GeolocationShow.ets#L17-L33" />
 
 <strong>【正例】</strong>
 
@@ -886,8 +907,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="GeolocationShow.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/GeolocationShow.ets#L17-L47" />
 
-#### [h2]避免未经检查拼接和执行Web侧传递的JavaScript内容
+### 避免未经检查拼接和执行Web侧传递的JavaScript内容
 
 <strong>【描述】</strong>
 
@@ -916,6 +938,7 @@ this.controller.runJavaScript(
     }
   });
 ```
+<SourceLink name="RunJavaScript2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/RunJavaScript2.ets#L35-L49" />
 
 <strong>【正例】</strong>
 
@@ -968,6 +991,7 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="RunJavaScript2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/RunJavaScript2.ets#L17-L63" />
 
 index.html内容如下：
 
@@ -985,12 +1009,13 @@ Hello world!
 </script>
 </html>
 ```
+<SourceLink name="index.html" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/resources/rawfile/index.html#L18-L29" />
 
-#### 确保敏感数据的传输安全
+## 确保敏感数据的传输安全
 
 遵循以下最佳实践，确保应用与Web网页安全地进行数据传递，提升应用安全性，同时为用户提供隐私安全保障。
 
-#### [h2]避免直接向Web页面追加认证Cookie
+### 避免直接向Web页面追加认证Cookie
 
 <strong>【描述】</strong>
 
@@ -1032,6 +1057,7 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="SetCookies.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/SetCookies.ets#L17-L42" />
 
 <strong>【正例】</strong>
 
@@ -1074,8 +1100,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="SetCookies.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/SetCookies.ets#L17-L53" />
 
-#### [h2]避免将用户敏感信息直接拼接到URL中进行加载
+### 避免将用户敏感信息直接拼接到URL中进行加载
 
 <strong>【描述】</strong>
 
@@ -1105,8 +1132,9 @@ struct WebComponent {
   }
 }
 ```
+<SourceLink name="LoadURLWithSensitiveData.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/LoadURLWithSensitiveData.ets#L17-L32" />
 
-#### [h2]应用通过postMessage接口向网页传送敏感数据时，务必指定接收该消息的URI
+### 应用通过postMessage接口向网页传送敏感数据时，务必指定接收该消息的URI
 
 <strong>【描述】</strong>
 
@@ -1123,10 +1151,11 @@ this.ports = this.controller.createWebMessagePorts();
 this.controller.postMessage('__init_port__', [this.ports[0]], '*');
 this.ports[1].postMessageEvent('Post message event to html');
 ```
+<SourceLink name="PostMessage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/PostMessage.ets#L42-L44" />
 
 <strong>【正例】</strong>
 
 ```
 this.ports = this.controller.createWebMessagePorts();
 this.controller.postMessage('__init_port__', [this.ports[0]], this.url_in_whitelist);
-```
+```<SourceLink name="PostMessage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/PostMessage.ets#L42-L43" />
