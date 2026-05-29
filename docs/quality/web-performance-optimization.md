@@ -1,5 +1,8 @@
 ---
-title: Web性能优化
+title: "Web性能优化"
+source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-performance-optimization
 ---
 
 # Web性能优化
+
+* **[Web加载性能优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-develop-optimization)**

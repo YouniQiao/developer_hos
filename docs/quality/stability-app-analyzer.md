@@ -1,6 +1,8 @@
 ---
-title: 应用体检
+title: "应用体检"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-analyzer
 ---
 
 # 应用体检
+
+应用体检请参考：[应用与元服务体检](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer)。
