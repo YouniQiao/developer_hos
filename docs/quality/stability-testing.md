@@ -1,0 +1,8 @@
+---
+title: "稳定性测试"
+source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-testing
+---
+
+# 稳定性测试
+
+* **[使用DevEco Testing进行稳定性测试](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-deveco-testing)**

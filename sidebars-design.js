@@ -4,12 +4,10 @@ module.exports = {
     {
       type: 'category',
       label: '通用设计基础',
-      link: { type: 'doc', id: 'design/general-design-basics/index' },
       items: [        'design/general-design-basics/design-concepts',
         {
           type: 'category',
           label: '视觉风格',
-          link: { type: 'doc', id: 'design/general-design-basics/visual-design/index' },
           items: [          'design/general-design-basics/visual-design/color',
           'design/general-design-basics/visual-design/font',
           'design/general-design-basics/visual-design/app-icon',
@@ -18,7 +16,6 @@ module.exports = {
         {
           type: 'category',
           label: '布局',
-          link: { type: 'doc', id: 'design/general-design-basics/layout/index' },
           items: [          'design/general-design-basics/layout/layout-basics',
           'design/general-design-basics/layout/responsive-structure',
           'design/general-design-basics/layout/responsive-method'],
@@ -26,7 +23,6 @@ module.exports = {
         {
           type: 'category',
           label: '动效',
-          link: { type: 'doc', id: 'design/general-design-basics/animation/index' },
           items: [          'design/general-design-basics/animation/overview',
           'design/general-design-basics/animation/principles',
           'design/general-design-basics/animation/attributes',
@@ -40,12 +36,10 @@ module.exports = {
     {
       type: 'category',
       label: '控件',
-      link: { type: 'doc', id: 'design/components/index' },
       items: [        'design/components/overview',
         {
           type: 'category',
           label: '导航类',
-          link: { type: 'doc', id: 'design/components/navigation/index' },
           items: [          'design/components/navigation/bottom-tab',
           'design/components/navigation/chips-group',
           'design/components/navigation/title-bar',
@@ -54,7 +48,6 @@ module.exports = {
         {
           type: 'category',
           label: '展示类',
-          link: { type: 'doc', id: 'design/components/view-components/index' },
           items: [          'design/components/view-components/text',
           'design/components/view-components/divider',
           'design/components/view-components/subheader',
@@ -74,7 +67,6 @@ module.exports = {
         {
           type: 'category',
           label: '操作类',
-          link: { type: 'doc', id: 'design/components/control-components/index' },
           items: [          'design/components/control-components/button',
           'design/components/control-components/select',
           'design/components/control-components/toggle-button',
@@ -87,7 +79,6 @@ module.exports = {
         {
           type: 'category',
           label: '输入类',
-          link: { type: 'doc', id: 'design/components/input-components/index' },
           items: [          'design/components/input-components/text-input',
           'design/components/input-components/search',
           'design/components/input-components/counter',
@@ -96,7 +87,6 @@ module.exports = {
         {
           type: 'category',
           label: '选择类',
-          link: { type: 'doc', id: 'design/components/selection-components/index' },
           items: [          'design/components/selection-components/checkbox',
           'design/components/selection-components/toggle-switch',
           'design/components/selection-components/radio',
@@ -108,7 +98,6 @@ module.exports = {
         {
           type: 'category',
           label: '容器类',
-          link: { type: 'doc', id: 'design/components/container-components/index' },
           items: [          'design/components/container-components/list',
           'design/components/container-components/dialog',
           'design/components/container-components/bind-sheet'],
@@ -117,7 +106,6 @@ module.exports = {
     {
       type: 'category',
       label: '人机交互',
-      link: { type: 'doc', id: 'design/hmi/index' },
       items: [        'design/hmi/overview',
         'design/hmi/touchscreen',
         'design/hmi/cursor',
@@ -128,7 +116,6 @@ module.exports = {
         {
           type: 'category',
           label: '常用交互',
-          link: { type: 'doc', id: 'design/hmi/scenes/index' },
           items: [          'design/hmi/scenes/drag',
           'design/hmi/scenes/selection'],
         },
@@ -137,11 +124,9 @@ module.exports = {
     {
       type: 'category',
       label: '系统特性&能力',
-      link: { type: 'doc', id: 'design/system-features/index' },
       items: [        {
           type: 'category',
           label: '系统特性',
-          link: { type: 'doc', id: 'design/system-features/features/index' },
           items: [          'design/system-features/features/navigation-bar',
           'design/system-features/features/notification',
           'design/system-features/features/live-view',
@@ -155,7 +140,6 @@ module.exports = {
         {
           type: 'category',
           label: '系统能力',
-          link: { type: 'doc', id: 'design/system-features/capabilities/index' },
           items: [          'design/system-features/capabilities/share',
           'design/system-features/capabilities/huawei-id',
           'design/system-features/capabilities/huawei-pay',
@@ -169,12 +153,10 @@ module.exports = {
     {
       type: 'category',
       label: '元服务设计',
-      link: { type: 'doc', id: 'design/atomic-service-design/index' },
       items: [        'design/atomic-service-design/overview',
         {
           type: 'category',
           label: '元服务基本要素',
-          link: { type: 'doc', id: 'design/atomic-service-design/basic-elements/index' },
           items: [          'design/atomic-service-design/basic-elements/basic-info',
           'design/atomic-service-design/basic-elements/service-card'],
         },
@@ -182,7 +164,6 @@ module.exports = {
         {
           type: 'category',
           label: '设计原则',
-          link: { type: 'doc', id: 'design/atomic-service-design/design-principles/index' },
           items: [          'design/atomic-service-design/design-principles/universal-friendly',
           'design/atomic-service-design/design-principles/lightweight',
           'design/atomic-service-design/design-principles/concise',
@@ -191,19 +172,16 @@ module.exports = {
         {
           type: 'category',
           label: '最佳设计实践',
-          link: { type: 'doc', id: 'design/atomic-service-design/best-practices/index' },
           items: [          'design/atomic-service-design/best-practices/accounts'],
         }],
     },
     {
       type: 'category',
       label: '针对多设备设计',
-      link: { type: 'doc', id: 'design/multi-device-design/index' },
       items: [        'design/multi-device-design/phone',
         {
           type: 'category',
           label: '折叠屏',
-          link: { type: 'doc', id: 'design/multi-device-design/folding-screen/index' },
           items: [          'design/multi-device-design/folding-screen/design-principles',
           'design/multi-device-design/folding-screen/foldable',
           'design/multi-device-design/folding-screen/trifold',
@@ -213,7 +191,6 @@ module.exports = {
         {
           type: 'category',
           label: '电脑',
-          link: { type: 'doc', id: 'design/multi-device-design/2in1/index' },
           items: [          'design/multi-device-design/2in1/concept',
           'design/multi-device-design/2in1/window',
           'design/multi-device-design/2in1/app-design',
@@ -224,7 +201,6 @@ module.exports = {
         {
           type: 'category',
           label: '智能穿戴',
-          link: { type: 'doc', id: 'design/multi-device-design/wearable/index' },
           items: [          'design/multi-device-design/wearable/overview',
           'design/multi-device-design/wearable/application-architecture',
           'design/multi-device-design/wearable/human-machine-interaction',
@@ -235,7 +211,6 @@ module.exports = {
     {
       type: 'category',
       label: '应用设计最佳实践',
-      link: { type: 'doc', id: 'design/app-design-practices/index' },
       items: [        'design/app-design-practices/overview',
         'design/app-design-practices/media-entertainment',
         'design/app-design-practices/social-communication',
@@ -254,7 +229,6 @@ module.exports = {
     {
       type: 'category',
       label: '应用 UX 体验标准',
-      link: { type: 'doc', id: 'design/ux-standards/index' },
       items: [        'design/ux-standards/overview',
         'design/ux-standards/general-ux',
         'design/ux-standards/large-screen-ux',
@@ -267,7 +241,6 @@ module.exports = {
     {
       type: 'category',
       label: '变更说明',
-      link: { type: 'doc', id: 'design/changelog/index' },
       items: [        'design/changelog/whats-new'],
     },
   ],

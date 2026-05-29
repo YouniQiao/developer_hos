@@ -62,9 +62,8 @@ export default function MergedTable({
                     key={ci}
                     rowSpan={c.rowSpan || undefined}
                     colSpan={c.colSpan || undefined}
-                  >
-                    {c.text}
-                  </Tag>
+                    dangerouslySetInnerHTML={{ __html: c.text }}
+                  />
                 );
               })}
             </tr>

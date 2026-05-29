@@ -3,7 +3,50 @@ title: 菜单
 sidebar_label: 菜单
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/menu-0000001957001877
 ---
-
 # 菜单
 
-> 来源：[华为开发者官网](https://developer.huawei.com/consumer/cn/doc/design-guides/menu-0000001957001877)
+一种临时性弹出窗口，用于展示用户可执行的操作。开发相关描述请参考 [Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu) 文档。
+
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213459.87645213886481713801185716806669:50001231000000:2800:A807A268D5C0D1108FE300E639A09B04E3B7B54C15975C16AB6D687344AAD1B6.jpg "点击放大")
+
+### 如何使用
+
+**菜单项中不显示与当前内容无关的项。**菜单顺序：最常用菜单项放在菜单顶部依次排列。**菜单的通用基础构成元素**通过 [MenuItemOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menuitem#menuitemoptions对象说明) 进行配置，选中状态及选中图标可通过 [Selected](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menuitem#selected) 进行配置。**多级菜单**的展开样式可通过 [subMenuExpandingMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu#submenuexpandingmode12) 进行配置。**长按悬浮菜单**通过 [bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8) 进行调用。
+
+**基础样式**
+
+|  |  |
+| --- | --- |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213459.51710626883043434918898822923694:50001231000000:2800:EFAFCFFC3305FDEBE2B977FBE265AD4F46B5B1D5205550D88EE7BDDDCF2C52B7.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.48299066858520998895321330576264:50001231000000:2800:F7E516FE1AAA80D7BC18F840F10B668A059A2F5C6BCADE5112F898DA10FC7D29.png "点击放大") |
+| **普通菜单** | **带图标样式菜单** |
+|  |  |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.90032641889807848734108121321190:50001231000000:2800:2DB31448D64E0F1AE4CE528A7D51D0B5498CC098F98A945034B852643A43E5A3.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.58762885209659504681698309552718:50001231000000:2800:FDE921F1E2513CAFFAB8D94F4837DBB1F8A15A051EACD2A9363BC7BB511828F5.png "点击放大") |
+| **带标题样式菜单** | **多级菜单-原地展开类型** |
+|  |  |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.49751632561577074978433022935263:50001231000000:2800:92BF6008BF21A503BABB3B9465E0A932CD11B5549790AB6DD37FB64755C8B0AE.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.53372070118522653064532179355566:50001231000000:2800:F7BB42B05175DEF8CBF849B7E2DB0CF7F82BD0F89761312E792E5A39BD00B175.png "点击放大") |
+| **多级菜单-层叠类型** | **长按悬浮菜单** |
+|  |  |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.63158714765669818324476395500567:50001231000000:2800:FF6EF5F038F210A4136C21A2165917D9B673C8150052513BD294B7FA322E6AC2.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.86865588256215906287782214570387:50001231000000:2800:042438165B439263BF14296F707996109EBF42F047905570D0E627AB018BBB17.png "点击放大") |
+| **多级菜单-上下文** | **指向型菜单** |
+
+### 响应式布局
+
+**手机**
+
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.62794322146019929260359349238540:50001231000000:2800:3E579BD86970F488975B2B343115C6C6F57ADC6B18B5602405F35FDCB3946DD2.png "点击放大")
+
+泛手机统一宽度为固定 224vp
+
+**电脑设备**
+
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213501.19682370621457192200940601779803:50001231000000:2800:088A982BEA842589E802A9F3409C0A1C3E5CBDF9DD51027AB1CF06AC499F82AA.png "点击放大")
+
+电脑菜单宽度根据内容自适应，默认最小宽度 224vp，可配置菜单最小宽度，但不得低于 64vp
+
+### 开发文档
+
+[Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu)
+
+[bindMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindmenu)
+
+[bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu8)

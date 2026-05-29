@@ -2,6 +2,7 @@
 title: "UI组件性能优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization
 ---
+import MergedTable from '@site/src/components/MergedTable';
 
 import SourceLink from '@site/src/components/SourceLink';
 
@@ -193,10 +194,15 @@ struct Index {
 
 **表1** 耗时统计
 
-| 写法 | 耗时情况 |
-| --- | --- |
-| 资源信息为参数：getStringSync($r('app.string.app\_name')) | 1.956ms |
-| 资源ID为参数：getStringSync($r('app.string.app\_name').id) | 0.071ms |
+<MergedTable
+  headers={['第1列', '第2列', '第3列']}
+  rows={[
+    ['  ', { text: '静态注册属性', colSpan: 4 }, { text: '动态注册属性', colSpan: 4 }],
+    ['注册的属性个数', '6个', '12个', '18个', '24个', '6个', '12个', '18个', '24个'],
+    ['PageRouterManager::LoadPage', '639ms900μs', '668ms624μs', '719ms139μs', '764ms437μs', '640ms989μs', '662ms112μs', '705ms407μs', '717ms294μs'],
+    ['First Frame - App Phase', '45ms554μs', '45ms638μs', '52ms918μs', '52ms643μs', '44ms603μs', '43ms923μs', '46ms709μs', '46ms355μs']
+  ]}
+/>
 
 可得出结论：参数为资源信息时比参数为资源ID值时耗时更多。所以当需要使用类似方法时，使用资源ID值作为参数更优，可有效减少自定义组件生命周期耗时。
 
