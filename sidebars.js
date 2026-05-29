@@ -77,6 +77,7 @@ const sidebars = {
     'security/code-obfuscation',
     'security/permission-application',
     'security/network-ca-security',
+    'security/cross-platform-compatibility',
     'security/device-id',
     'security/arkweb-security',
   ],
