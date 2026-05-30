@@ -8,7 +8,7 @@ const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 const fs = require('fs');
-const navMonetizeHTML = fs.readFileSync('./src/pages/nav-monetize.html', 'utf-8');
+const navDistributeHTML = fs.readFileSync('./src/pages/nav-distribute.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -81,7 +81,7 @@ const config = {
             to: '/docs/distribute/agc/overview',
             className: 'mega-dropdown',
             items: [
-              { type: 'html', value: navMonetizeHTML, className: 'mega-dropdown' },
+              { type: 'html', value: navDistributeHTML, className: 'mega-dropdown' },
             ],
           },
           {
