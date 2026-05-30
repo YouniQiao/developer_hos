@@ -1,6 +1,10 @@
 ---
 title: "业务总则"
 displayed_sidebar: monetizationSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk-rule-total-0000001597142081
 ---
 
-# 业务总则
+
+* AGD Pro服务致力于构建一个优质的应用变现平台，为发布商提供优质的广告内容，让广告主的广告获得有效的展示，让平台健康、可持续发展，以期实现不断良性循环的三赢局面。我们所有的政策规范都是为这一主旨服务。
+* 平台承诺平台的一切行为和规范政策都完全遵守当地的适用法律、法规的限制。发布商在履行自身职责的过程中，也必须遵守相关的法律、法规的规定。因此，接入AGD Pro服务的应用/快应用需在华为应用市场上架，并符合[应用审核](https://developer.huawei.com/consumer/cn/doc/app/50104-overview)要求。
+* 我们注重保护数据安全和用户的隐私安全。任何用户数据的获取和传递，都应获取用户的许可，在未获取许可的情况，我们将不会获取和传递用户数据；同时，在数据传输的过程中采用多种技术加密手段保证数据的安全。
