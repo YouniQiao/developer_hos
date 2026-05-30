@@ -3,4 +3,7 @@ title: "DependentQualLang"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-dependentquallang-0000002271000661
 ---
 
-# DependentQualLang
+| 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
+| --- | --- | --- | --- |
+| language | O | String | 资质的语言类型。  取值范围：   * zh\_CN：中文 * en\_US：英文 * ru\_RU：俄语 |
+| description | O | String | 资质的描述信息。 |

@@ -3,4 +3,7 @@ title: "PermissionLanguage"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-permissionlanguage-0000002585575019
 ---
 
-# PermissionLanguage
+| 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
+| --- | --- | --- | --- |
+| language | M | String | 权限的语言类型。  取值范围：   * zh：中文 * en：英文 * ru：俄语 |
+| desc | O | String(256) | 权限的描述信息。 |

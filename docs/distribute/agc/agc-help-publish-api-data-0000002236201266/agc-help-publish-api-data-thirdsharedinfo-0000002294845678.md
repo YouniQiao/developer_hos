@@ -3,4 +3,13 @@ title: "ThirdSharedInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-thirdsharedinfo-0000002294845678
 ---
 
-# ThirdSharedInfo
+| 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
+| --- | --- | --- | --- |
+| name | O | String(100) | 第三方名称。 |
+| purpose | O | String(500) | 使用目的。 |
+| personalType | O | String(500) | 涉及个人信息的种类。 |
+| officialPrivacyUrl | O | String(1024) | 第三方的官网链接和隐私政策链接。 |
+| serviceType | O | String(100) | 共享信息的服务类型。 |
+| scene | O | String(200) | 使用场景。 |
+| shareType | O | String(100) | 共享方式。 |
+| dataItems | O | `List&lt;[DataItem](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-dataitem-0000002328924933)>` | 第三方数据信息。  数组长度不超过200。 |

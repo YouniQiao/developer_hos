@@ -3,4 +3,12 @@ title: "PhoneVerifyCode"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-phoneverifycode-0000002273617149
 ---
 
-# PhoneVerifyCode
+手机验证码信息类。
+
+#### Parameters
+
+| Name | Type | Description |
+| --- | --- | --- |
+| kind | 'phone' | 标识当前的验证码类型为手机类型。 |
+| phoneNumber | string | 手机号码。 |
+| countryCode | string | 国家码，例如中国：“86”。 |

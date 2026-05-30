@@ -3,4 +3,41 @@ title: "Overview"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-overview-0000002273617145
 ---
 
-# Overview
+#### Interface Summary
+
+| **Interface** | Description |
+| --- | --- |
+| [Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-token-0000002238618016) | AGC网关的Access Token结果信息。 |
+| [TokenResult](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-tokenresult-0000002238777828) | 已登录用户的Access Token结果信息。 |
+| [SignInResult](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-signinresult-0000002273777081) | 登录结果信息。 |
+| [PhoneVerifyCode](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-phoneverifycode-0000002273617149) | 手机验证码信息类。 |
+| [EmailVerifyCode](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-emailverifycode-0000002238618020) | Email验证码信息类。 |
+| [VerifyCodeParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-verifycodeparam-0000002238777832) | 获取验证码的相关参数类。 |
+| [PhoneCredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-phonecredentialinfo-0000002273777085) | 手机方式的凭证信息。 |
+| [EmailCredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-emailcredentialinfo-0000002273617153) | Email方式的凭证信息。 |
+| [HwIdCredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-hwidcredentialinfo-0000002238618024) | 华为账号方式的凭证信息。 |
+| [SelfBuildCredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-selfbuildcredentialinfo-0000002238777836) | 自有账号方式的凭证信息。 |
+| [SignInParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-signinparam-0000002273777089) | 登录操作的参数类。 |
+| [PhoneInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-phoneinfo-0000002273617157) | 手机号码信息类，用于更新用户当前手机号码信息的操作。 |
+| [EmailInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-emailinfo-0000002238618028) | Email账号信息类，用于更新用户当前Email账号信息的操作。 |
+| [PasswordInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-passwordinfo-0000002238777840) | 更新密码操作相关的密码信息类。 |
+| [Auth](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-auth-0000002273777093) | AGC认证服务接口，使用auth获取服务。 |
+| [AuthUser](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-authuser-0000002273781645) | 当前登录的用户信息。 |
+| [AuthUserExtra](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-authuserextra-0000002238782368) | 用户的Extra信息。 |
+| [VerifyCodeResult](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-verifycoderesult-0000002238622564) | 验证码申请结果信息。 |
+
+#### Types Summary
+
+| Type | Description |
+| --- | --- |
+| [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689) | 凭证信息类型。 |
+| [ProviderType](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-providertype-0000002273781649) | 渠道方式类型。 |
+| [UserProfileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-userprofileinfo-0000002238782372) | 个人账户信息。 |
+
+#### Enums Summary
+
+| Enums | Description |
+| --- | --- |
+| [VerifyCodeAction](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-verifycodeaction-0000002238622568) | 验证码行为枚举类。 |
+| [Region](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-region-0000002273621693) | 存储地枚举类。 |
+| [AGCAuthError](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-agcautherror-0000002273781653) | 异常行为枚举类。 |

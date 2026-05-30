@@ -3,4 +3,9 @@ title: "DomainInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-domain-api-data-domaininfo-0000002272582405
 ---
 
-# DomainInfo
+| 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
+| --- | --- | --- | --- |
+| type | M | String(32) | 域名类型。  取值范围：   * httpRequest：httpRequest服务器域名 * upload：upload服务器域名 * download：download服务器域名 * webSocket：webSocket服务器域名 * webView：webView业务域名 |
+| value | M | String(128) | 完整的域名。例如：  https://huawei.com:8080 |
+| errorCode | O | Integer(32) | 非法原因错误码。  新增、修改域名时如果域名不合法，返回失败原因，调用接口新增修改域名配置时无需传入。 |
+| errorMsg | O | String(128) | 非法原因错误描述。  新增、修改域名时如果域名不合法，返回失败原因，调用接口新增修改域名配置时无需传入。 |
