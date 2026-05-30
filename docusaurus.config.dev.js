@@ -48,7 +48,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['monetize/**'],
+          include: ['distribute/**'],
           exclude: ['**/img/**'],
           editUrl:
             'https://github.com/YouniQiao/developer_hos/tree/master/',
@@ -76,9 +76,9 @@ const config = {
         },
         items: [
           {
-            label: '推广与变现',
+            label: '分发与运营',
             type: 'dropdown',
-            to: '/docs/monetize/promotion/ads-ggtfzstp-0000002285988928',
+            to: '/docs/distribute/agc/overview',
             className: 'mega-dropdown',
             items: [
               { type: 'html', value: navMonetizeHTML, className: 'mega-dropdown' },
