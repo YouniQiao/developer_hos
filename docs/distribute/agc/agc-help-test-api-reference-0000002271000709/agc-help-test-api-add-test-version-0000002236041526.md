@@ -30,14 +30,14 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
-| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\${JWT}*вҖқгҖӮJWTдёә[йҖҡиҝҮService Accountж–№ејҸиҺ·еҸ–жҺҲжқғ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)дёӯиҺ·еҸ–зҡ„йүҙжқғд»ӨзүҢгҖӮ |
+| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{JWT}`*вҖқгҖӮJWTдёә[йҖҡиҝҮService Accountж–№ејҸиҺ·еҸ–жҺҲжқғ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)дёӯиҺ·еҸ–зҡ„йүҙжқғд»ӨзүҢгҖӮ |
 
 **APIе®ўжҲ·з«Ҝж–№ејҸпјҡ**
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
 | client\_id | M | String | е®ўжҲ·з«ҜIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[еҲӣе»әAPIе®ўжҲ·з«Ҝ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)гҖӮ |
-| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\${access\_token}*вҖқгҖӮaccess\_tokenдёә[иҺ·еҸ–Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)дёӯиҺ·еҸ–зҡ„access\_tokenгҖӮ |
+| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{access\_token}`*вҖқгҖӮaccess\_tokenдёә[иҺ·еҸ–Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)дёӯиҺ·еҸ–зҡ„access\_tokenгҖӮ |
 
 **OAuthе®ўжҲ·з«Ҝж–№ејҸпјҡ**
 

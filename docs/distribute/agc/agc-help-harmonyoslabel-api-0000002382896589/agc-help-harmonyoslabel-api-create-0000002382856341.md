@@ -32,7 +32,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyo
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
-| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\${JWT}*вҖқгҖӮJWTдёә[йҖҡиҝҮService Accountж–№ејҸиҺ·еҸ–жҺҲжқғ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-authorize-0000002553919617#section104621343151212)дёӯиҺ·еҸ–зҡ„йүҙжқғд»ӨзүҢгҖӮ |
+| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{JWT}`*вҖқгҖӮJWTдёә[йҖҡиҝҮService Accountж–№ејҸиҺ·еҸ–жҺҲжқғ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-authorize-0000002553919617#section104621343151212)дёӯиҺ·еҸ–зҡ„йүҙжқғд»ӨзүҢгҖӮ |
 | appId | M | Integer(64) | еә”з”ЁIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)гҖӮ |
 | productId | M | String | йЎ№зӣ®IDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)гҖӮ |
 
@@ -41,7 +41,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyo
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
 | client\_id | M | String | е®ўжҲ·з«ҜIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[еҲӣе»әAPIе®ўжҲ·з«Ҝ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-authorize-0000002553919617#section14162113625516)гҖӮ |
-| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\${access\_token}*вҖқгҖӮaccess\_tokenдёә[иҺ·еҸ–Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section12242154616187)дёӯиҺ·еҸ–зҡ„access\_tokenгҖӮ |
+| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{access\_token}`*вҖқгҖӮaccess\_tokenдёә[иҺ·еҸ–Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section12242154616187)дёӯиҺ·еҸ–зҡ„access\_tokenгҖӮ |
 | appId | M | Integer(64) | еә”з”ЁIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)гҖӮ |
 | productId | M | String | йЎ№зӣ®IDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)гҖӮ |
 

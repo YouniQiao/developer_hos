@@ -21,5 +21,5 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-internal
      1. 菜单栏选择“Build > Build Hap(s)/APP(s) > Build Hap(s)”。
      2. 等待编译构建。构建完成，在各模块的“build > default > outputs > default”目录下，获取到XXX-signed.hap文件。
    * 编译HSP包（仅支持应用内HSP包）
-     1. 选中待编译共享包模块，菜单栏选择“Build > Make Module \\${libraryName}”。
+     1. 选中待编译共享包模块，菜单栏选择“Build > Make Module \\$`{libraryName}`”。
      2. 等待编译构建。构建完成，在共享包模块的“build > default > outputs > default”目录下，获取到\*.hsp文件。

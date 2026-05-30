@@ -10,8 +10,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-
 | screenShots | O | `List&lt;String(300)>` | 应用截屏地址。  多个地址以英文逗号隔开，最多不超过10个地址，最少不少于3个地址。  注意：  作为输入参数是相对地址，作为查询结果是完整地址。 |
 | banner | O | String(300) | 高清大图地址。  注意：  作为输入参数是相对地址，作为查询结果是完整地址。 |
 | showType | O | Integer | 截图展现方式。  取值范围：   * 0：竖屏 * 1：横屏 |
-| introVideos | O | `List&lt;String(300)>` | 介绍视频。  Json字符串格式，含有**videoUrl**、**frameUrl**两个字段，数组长度最多5个。  示例："introVideos": ["{\"frameUrl\":\"https://\*\*.cn:18445/FileServer/D11.jpeg\",\"videoUrl\":\"https://\*.\*.cn:18445/82C.mp4\"}" ] |
-| rcmdVideos | O | `List&lt;String(300)>` | 推荐视频。  Json字符串格式，含有**videoUrl**、**frameUrl**两个字段。数组长度最多5个。  示例："rcmdVideos": ["{\"frameUrl\":\"https://\*.\*.cn:18445/5D7.jpeg\",\"videoUrl\":\"https://\*.\*.cn:18445/97A.mp4\"}" |
+| introVideos | O | `List&lt;String(300)>` | 介绍视频。  Json字符串格式，含有**videoUrl**、**frameUrl**两个字段，数组长度最多5个。  示例："introVideos": ["`````{\"frameUrl\":\"https://\*\*.cn:18445/FileServer/D11.jpeg\",\"videoUrl\":\"https://\*.\*.cn:18445/82C.mp4\"}`````" ] |
+| rcmdVideos | O | `List&lt;String(300)>` | 推荐视频。  Json字符串格式，含有**videoUrl**、**frameUrl**两个字段。数组长度最多5个。  示例："rcmdVideos": ["`````{\"frameUrl\":\"https://\*.\*.cn:18445/5D7.jpeg\",\"videoUrl\":\"https://\*.\*.cn:18445/97A.mp4\"}`````" |
 | promoGraphics | O | `List&lt;String(300)>` | 宣传图片地址。  多个地址以英文逗号隔开，最多不超过10个地址。  注意：  作为输入参数是相对地址，作为查询结果是完整地址。 |
 | rcmdPics | O | String(2560) | 推荐图片地址。  多个地址以英文逗号隔开，最多不超过10个地址。 |
 | videoShowType | O | Integer | 视频展现方式。  取值范围：   * 0：竖屏 * 1：横屏 |

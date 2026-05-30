@@ -33,7 +33,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | client\_id | M | String | 客户端ID。 |
-| Authorization | M | String | 认证信息。  格式：Authorization: Bearer *\\${access\_token}* |
+| Authorization | M | String | 认证信息。  格式：Authorization: Bearer *\\$`{access\_token}`* |
 | appId | M | String(32) | 应用ID。  获取方法参考[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 |
 
 #### [h2]Query
@@ -88,7 +88,7 @@ Content-Type: application/json
 Authorization: Bearer ******
 appId: 1******57
 {
-  "feedback": "{\"feedbackId\":\"\",\"questionnaireId\":\"xxx\",\"userId\":xxx\,\"teamId\":xxx,\"teamName\":\"\",\"appId\":\"xxx\",\"recordId\":\"\",\"action\":\"submit\",\"extInfo\":\"\",\"agreePrivacy\":1,\"enrollAppIds\":\"xxx\",\"enrollAppNames\":\"\",\"status\":0,\"createTime\":,\"details\":[{\"questionId\":\"xxx\",\"questionNo\":1,\"optionId\":\"xxx\",\"optionNo\":2,\"valueType\":0},{\"xxx\"},{\"xxx\"}]}",
+  "feedback": "`{\"feedbackId\":\"\",\"questionnaireId\":\"xxx\",\"userId\":xxx\,\"teamId\":xxx,\"teamName\":\"\",\"appId\":\"xxx\",\"recordId\":\"\",\"action\":\"submit\",\"extInfo\":\"\",\"agreePrivacy\":1,\"enrollAppIds\":\"xxx\",\"enrollAppNames\":\"\",\"status\":0,\"createTime\":,\"details\":[{\"questionId\":\"xxx\",\"questionNo\":1,\"optionId\":\"xxx\",\"optionNo\":2,\"valueType\":0}`,`{\"xxx\"}`,`{\"xxx\"}`]}",
   "expectedRating": 1,
   "ratingRule": 1,
   "childFlag": 0

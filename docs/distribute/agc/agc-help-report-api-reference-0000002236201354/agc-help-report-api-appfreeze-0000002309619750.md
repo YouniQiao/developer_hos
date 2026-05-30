@@ -29,7 +29,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-report-a
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | client\_id | M | String | 客户端ID。 |
-| Authorization | M | String | 认证信息。  格式：Authorization: Bearer *\\${access\_token}* |
+| Authorization | M | String | 认证信息。  格式：Authorization: Bearer *\\$`{access\_token}`* |
 
 ![](../img/agc-help-report-api-appfreeze-0000002309619750_1.png)
 

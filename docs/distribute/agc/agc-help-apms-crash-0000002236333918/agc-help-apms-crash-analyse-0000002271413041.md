@@ -122,7 +122,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-cra
 
        下面给出内存数值换算及解读分析示例（内存单位：KB，换算公式：1GB = 1024 × 1024KB ≈ 1000000KB）。
 
-       例如，页面显示内存数值为：\{"memAvailable":"4901888","memFree":"1333348","zramUsed":"212336","memTotal":"11873884","swapCached":"1676","cached":"4720464"}
+       例如，页面显示内存数值为：`"memAvailable":"4901888","memFree":"1333348","zramUsed":"212336","memTotal":"11873884","swapCached":"1676","cached":"4720464"}`
 
        解读分析：
 
@@ -183,7 +183,7 @@ Error name:Error Error message:Internal error. UI execution context not found. E
   DevEco Studio是HarmonyOS应用的官方开发工具，在构建应用（尤其是Release包）时，会自动生成符号表文件，具体配置和路径如下。
 
   + 构建配置：需确保项目的build-profile.json5或模块的build.json5中“开启符号表生成”开关处于开启状态（默认已开启，无需额外配置）。
-  + 生成路径：构建完成后，符号表文件会自动生成在项目的“build/outputs/hap”目录下，与HarmonyOS应用HAP安装包同级，文件命名格式通常为：{模块名}-{编译类型}-symbols.zip，例如entry-release-symbols.zip。
+  + 生成路径：构建完成后，符号表文件会自动生成在项目的“build/outputs/hap”目录下，与HarmonyOS应用HAP安装包同级，文件命名格式通常为：`{模块名}`-`{编译类型}`-symbols.zip，例如entry-release-symbols.zip。
 
     解压后可获得对应架构（如arm64-v8a、armeabi-v7a）的符号表文件，文件格式通常为“.sym”或“.so”，具体取决于编译模式。
 * 方式二：从HAP包中提取（适用于已完成构建的HAP）

@@ -34,7 +34,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-r
 | --- | --- | --- | --- |
 | uid | M | Integer | 开发者子账号ID。  使用子账号登录后，请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)获取Developer ID。 |
 | teamId | M | Integer | 开发者主账号ID。  使用主账号登录后，请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)获取Developer ID。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\${JWT}*”。JWT为[通过Service Account方式获取授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-regist-by-api-developprocess-0000002382838597#section144411716143212)中获取的鉴权令牌。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-regist-by-api-developprocess-0000002382838597#section144411716143212)中获取的鉴权令牌。 |
 
 **API客户端方式**
 
@@ -43,7 +43,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-r
 | uid | M | Integer | 开发者子账号ID。  使用子账号登录后，请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)获取Developer ID。 |
 | teamId | M | Integer | 开发者主账号ID。  使用主账号登录后，请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)获取Developer ID。 |
 | client\_id | M | String | 客户端ID，获取方法请参见[创建API客户端](https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-regist-by-api-developprocess-0000002382838597#section112481434183417)时生成的“ID”。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer \\${access\_token}”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section12242154616187)中获取的access\_token。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer \\$`{access\_token}`”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section12242154616187)中获取的access\_token。 |
 
 #### [h2]Body
 

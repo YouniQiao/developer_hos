@@ -431,7 +431,7 @@ Content-Type: application/json; charset=utf-8
 | --- | --- |
 | 承载协议 | HTTPS POST |
 | 接口方向 | 开发者服务器 -> 华为服务器 |
-| 接口URL | https://*{domain}*/api/oauth2/v1/token   * 中国站点的domain：connect-api.cloud.huawei.com * 德国站点的domain：connect-api-dre.cloud.huawei.com * 新加坡站点的domain：connect-api-dra.cloud.huawei.com * 俄罗斯站点的domain：connect-api-drru.cloud.huawei.com 注意：  本接口使用的domain必须是项目设置的数据处理位置对应的domain，例如：项目设置数据处理位置为中国，那么本接口中的domain必须使用“connect-api.cloud.huawei.com”； |
+| 接口URL | https://*`{domain}`*/api/oauth2/v1/token   * 中国站点的domain：connect-api.cloud.huawei.com * 德国站点的domain：connect-api-dre.cloud.huawei.com * 新加坡站点的domain：connect-api-dra.cloud.huawei.com * 俄罗斯站点的domain：connect-api-drru.cloud.huawei.com 注意：  本接口使用的domain必须是项目设置的数据处理位置对应的domain，例如：项目设置数据处理位置为中国，那么本接口中的domain必须使用“connect-api.cloud.huawei.com”； |
 | 数据格式 | 请求：Content-Type: application/json  响应：Content-Type: application/json |
 
 #### [h2]请求参数

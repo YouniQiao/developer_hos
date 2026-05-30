@@ -1,6 +1,5 @@
 /**
- * App Distribution Sidebar — from 'app' catalog
- * 262 documents (app-market/game-center/app-services)
+ * App Distribution Sidebar — from app catalog
  */
 const appDistSidebar = [
   {
@@ -20,20 +19,7 @@ const appDistSidebar = [
             "label": "应用审核指南",
             "collapsed": true,
             "items": [
-              "distribute/app-dist/app-market/x50000/x50104/x50104-overview",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-01",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-02",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-03",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-04",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-05",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-06",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-07",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-08",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-09",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-10",
-              "distribute/app-dist/app-market/x50000/x50104/x50104-11",
-              "distribute/app-dist/app-market/x50000/x50104/x50115",
-              "distribute/app-dist/app-market/x50000/x50104/x50117"
+              "distribute/app-dist/app-market/x50000/x50104/x50104-overview"
             ]
           },
           {
@@ -41,18 +27,7 @@ const appDistSidebar = [
             "label": "元服务审核指南",
             "collapsed": true,
             "items": [
-              "distribute/app-dist/app-market/x50000/x50129/x50129-overview",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-01",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-02",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-03",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-04",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-05",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-06",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-07",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-08",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-09",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-11",
-              "distribute/app-dist/app-market/x50000/x50129/x50129-10"
+              "distribute/app-dist/app-market/x50000/x50129/x50129-overview"
             ]
           },
           "distribute/app-dist/app-market/x50000/x80301",
@@ -106,8 +81,7 @@ const appDistSidebar = [
             ]
           },
           "distribute/app-dist/app-market/x50000/x50166",
-          "distribute/app-dist/app-market/x50000/x50130",
-          "distribute/app-dist/app-market/x50000/x50000-FAQ"
+          "distribute/app-dist/app-market/x50000/x50130"
         ]
       },
       "distribute/app-dist/app-market/privacy-label",
@@ -121,7 +95,6 @@ const appDistSidebar = [
           "distribute/app-dist/app-market/help-greenapp/x50123"
         ]
       },
-      "distribute/app-dist/app-market/TabletDevice",
       "distribute/app-dist/app-market/x50113",
       "distribute/app-dist/app-market/x50116",
       {
@@ -602,5 +575,4 @@ const appDistSidebar = [
     ]
   }
 ];
-
 module.exports = { appDistSidebar };
