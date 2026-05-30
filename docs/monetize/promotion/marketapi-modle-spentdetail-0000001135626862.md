@@ -1,6 +1,17 @@
 ---
 title: "SpentDetail"
 displayed_sidebar: promotionSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-spentdetail-0000001135626862
 ---
-
 # SpentDetail
+
+| 参数 | 必选(M)/可选(O) | 类型 | 描述 |
+| --- | --- | --- | --- |
+| time | M | String | 明细消耗日期。 |
+| appId | M | String | APPID。 |
+| appName | M | String | APP名称。  最大长度20。 |
+| totalMoney | M | double | 总消耗。 |
+| cashCostMoney | M | double | 现金消耗金额。 |
+| giftCostMoney | M | double | 赠送金消耗金额。 |
+| exchangeCostMoney | M | double | 置换金消耗金额。 |
+| starCouponCostMoney | M | double | 耀星券消耗金额。 |

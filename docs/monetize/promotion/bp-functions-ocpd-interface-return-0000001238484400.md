@@ -1,6 +1,212 @@
 ---
 title: "回传用户行为数据接口"
 displayed_sidebar: promotionSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-return-0000001238484400
 ---
-
 # 回传用户行为数据接口
+
+## 功能介绍
+
+此接口用于回传开发者上传的用户在推广应用内的行为数据。
+
+## 使用约束
+
+接口调用者的角色：账号持有者、管理员、App管理员、运营。
+
+## 接口原型
+
+|  |  |
+| --- | --- |
+| 承载协议 | HTTPS POST |
+| 接口方向 | 开发者服务器-&gt;推广平台服务端 |
+| 接口URL | https://connect-api.cloud.huawei.com/api/datasource/v1/track/activate |
+| 数据格式 | 请求消息：Content-Type: application/json  响应消息：Content-Type: application/json |
+
+## 请求参数
+
+### Header
+
+| 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
+| --- | --- | --- | --- |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-token-0000001238324536)中获取的access\_token。 |
+| charset | O | String | 编码格式。  如果需要在华为应用市场应用推广平台的任务列表中展示“付费金额”字段，则请求头中请携带<strong>charset</strong>字段值为<strong>utf-8</strong>。 |
+
+### Body
+
+| 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
+| --- | --- | --- | --- |
+| appId | M | String(32) | 应用ID，您的应用ID需要使用<strong>直客账号</strong>参考[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694)获取。 |
+| deviceIdType | M | String | 用户标识ID类型。  取值范围：   - OAID - IMEI\_MD5 |
+| deviceId | M | String (128) | 用户标识ID。   - 如果用户标识ID为OAID，则请填写OAID原值。OAID原值为小写，请勿转换大小写，否则会导致转化数据无法匹配。 注意：  如原值为全0，填写格式为00000000-0000-0000-0000-000000000000；如原值为空/null，直接回传即可。 - 如果用户标识ID为IMEI\_MD5，则请填写IMEI的MD5值。 |
+| actionTime | M | Long | 用户在推广应用内的行为UTC时间戳，精确到毫秒。  示例：1593608299858 |
+| actionType | M | String(64) | 用户发生的标准行为。  当前回传的是字符串格式的数字。  取值范围：   - 1：应用激活 - 2：启动应用 - 3：次日留存 说明：  次日留存指用户激活应用起的第2天启动应用；N日留存指用户激活应用起的第（N+1）天启动应用；目前多日留存仅支持数据回传，暂不支持作为单目标投放。 - 31：2日留存 - 32：3日留存 - 33：4日留存 - 34：5日留存 - 35：6日留存 - 36：7日留存 - 37：14日留存 - 4：首次付费、每次付费 说明：  全部付费量回传到回传值“4”，由系统自动拆分“首次付费量”和“每次付费量”两个指标，分别用于“首次付费”目标和“每次付费”目标的投放。“首次付费量”按自然日对用户去重。  例：一个用户推广下载后在T日付费2次，则T日的首次付费量为1。 - 5：提交表单 - 6：授信 - 7：注册 - 9：线索收集页面访问 - 10：老客激活 - 11：完件 - 12：支用 - 13：还款 - 14：申请 - 18：下单 - 21：预约 - 101：关键行为1 - 102：关键行为2 说明：  “首日ROI”与“7日ROI”目标投放需要回传注册行为、付费行为和对应付费金额，付费金额回传请参见[actionParam](#ZH-CN_TOPIC_0000001362028993__p20993112715207)。  “激活-首日ROI”目标投放需回传激活行为、注册行为、付费行为和对应付费金额。 |
+| missType | O | String(1) | 此次记录是否为补报记录。非必填项，一般请求中无需有此字段。因为服务器故障导致字段未正常上报，次日或之后请使用此字段。   - Y：补报 - 不传此参数或设为空字符串：非补报   说明：  此字段为Y时，请使用actionTime字段填写转化实际发生时间。比如5号补报4号的转化数据，actionTime字段应该填写4号转化实际发生的时间，这样转化数据才会正确展示在4号的任务报表上。 |
+| callBack | M | String(1024) | 回传时callBack参数中间的B大写，否则接口报错。  请回传通过对接归因方案获取的callBack原值，勿进行urlencode。 |
+| customAction | O | String(64) | 自定义行为名称。 |
+| actionParam | O | String(10240) | 用户行为属性。   - 基于回传的用户行为数据识别用户行为时，此字段用于回传用户行为属性，即行为名称和行为属性。 格式为数组，数组里为json字符串，示例如下：     ```   [\{'name':'预约时间','value':1\},\{'name':'预约时间','value':2\}]   ``` - oCPD投放“激活-首日ROI”目标时使用，此字段用于回传首日付费金额。请在<strong>value</strong>值中回传首日付费金额，单位是“元”。 格式为数组，数组里为json字符串，示例如下：     ```   [\{'name':'付费金额','value':8\}]   ```     注意：  - oCPD投放激活-首日ROI出价需要同时回传“应用激活”、“首日付费行为”和“首日付费金额”。   - 如果同一天多次回传付费金额，华为应用市场应用推广平台的任务列表中“付费金额”字段值显示为多次回传金额的总和。   - 当前激活-首日ROI计算逻辑是：付费金额回传时，如果不是补报，就按照回传时间计算ROI；如果是补报，就按照<strong>actionTime</strong>字段计算ROI。付费金额是按照调用回传接口时间统计显示。 |
+
+## 请求示例
+
+- 回传激活应用示例代码如下
+
+  ```
+  POST https://connect-api.cloud.huawei.com/api/datasource/v1/track/activate
+  Content-type: application/json
+  Authorization: Bearer ***
+  client_id:***
+
+  {
+      "actionType": "1",
+      "actionTime":1593608299858,
+      "deviceIdType": "OAID",
+      "appId": "10** **05",
+      "callBack": "security:4053FFBAAE7109AE51C6DF9A:D0A9FB392680FE8F2BD82C1215873DF84A6C5F5EEE3CBCCA4D56F65F8A08E9DC481BC0BBBDAA0666FD30B8D07CD21A", 
+      "deviceId":"f85f3056-f209-4fc3-a317-aeea** **f08c"
+  }
+  ```
+
+- 激活-首日ROI转化目标回传首日付费行为和首日付费金额的示例代码如下：
+
+  ```
+  POST https://connect-api.cloud.huawei.com/api/datasource/v1/track/activate
+  Content-type: application/json
+  Authorization: Bearer ***
+  client_id:***
+
+  {
+      "actionType": "4",
+      "actionTime":1593608299858,
+      "deviceIdType": "OAID",
+      "appId": "10** **05",
+      "callBack": "security:4053FFBAAE7109AE51C6DF9A:D0A9FB392680FE8F2BD82C1215873DF84A6C5F5EEE3CBCCA4D56F65F8A08E9DC481BC0BBBDAA0666FD30B8D07CD21A",
+      "deviceId":"f85f3056-f209-4fc3-a317-aeea** **f08c",
+      "actionParam":"[{'name':'付费金额','value':8}]"
+  }
+  ```
+
+## 响应参数
+
+| 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
+| --- | --- | --- | --- |
+| code | M | Integer(32) | 返回码，0表示成功，参考[错误码](#ZH-CN_TOPIC_0000001362028993__zh-cn_topic_0000001136506888_p204069215318)。 |
+| msg | O | String | 返回码描述信息。 |
+
+<strong>错误码</strong>
+
+| 错误码（errorCode） | 错误描述（errorMsg） |
+| --- | --- |
+| 136183813 | 回传用户行为数据的数据源不存在。  数据回传需要有对应数据源，出现此错误可能的原因有：   - 账户内没有创建数据源。 - 不是直客账户创建的数据源和API客户端。 - 投放的应用不在对应创建数据源的直客账户内。 - 请求中appid不对，需要纯数字格式。 |
+| 136183814 | 回传用户行为数据的应用不在允许清单内。 |
+| 136183815 | 回传用户行为数据的请求参数错误。 |
+| 136183816 | 请求为非归因数据，出现此错误的原因为：请求中callBack为0。 |
+| 136183817 | 回传行为不存在，出现此错误的原因为：actionType字段传值错误。 |
+| 136183818 | 回传数据归因不匹配，出现此错误可能的原因为：   - 请求中callBack参数错误。 - 请求中appId与callBack不匹配。 - 请求中deviceId与callBack不匹配。 |
+| 136183819 | 回传数据重复。 |
+| 136183820 | 内部错误。 |
+
+## 响应示例
+
+```
+{
+    "code": 136183815,
+    "msg": "The deviceIdType parameter is invalid."
+}
+```
+
+## 调用示例
+
+```
+“Curl”
+curl -X POST https://connect-api.cloud.huawei.com/api/datasource/v1/track/activate  -H "Authorization:Bearer ***" -H "client_id:***" -H "Content-type: application/json" -d '{"appId":"10***68","deviceIdType":"OAID","deviceId":"12345678","actionTime":1593608299858,"actionType":"1","callBack":"0"}'
+```
+
+```
+“Java”
+/**
+ * 上传用户在应用内的行为数据
+ * @param token 认证信息
+ * @throws InvocationTargetException
+ * @throws IllegalAccessException
+ */
+public static void uploadAdvBehavior(String token) throws InvocationTargetException, IllegalAccessException {
+ /** 应用ID*/
+ String appId = "10***68";
+ 
+ /** 用户标识Id类型 取值范围: OAID*/
+ String deviceIdType = "OAID";
+ 
+ /** 用户标识Id.即OAID */
+ String deviceId = "12345678";
+ 
+ /** 行为时间戳，UTC时间 */
+ Long actionTime = 1593608299858L;
+ 
+ /** 用户发生的标准行为  */
+ String actionType = "1";
+ 
+ /** callback匹配参数 call_back callback任务请求匹配标记 必填，按监测传递参数回传,如果非任务归因回传，则填0，系统生成callback不含0 */
+String callBack = "security:3745353132324336313339453544343842344531373435413534384442313232:5DDD0F5A81CBEBD543C07631F1A3CCB2FEABE4A4A802526D25FC88F2B56F3494D383390DB993D140EE597B06837CC585051";
+ 
+ /**  新建上传用户在应用内行为数据的请求条件，并插入数据 */
+ UploadAdvBehaviorReq reqInfo = new UploadAdvBehaviorReq();
+ reqInfo.setAppId(appId);
+ reqInfo.setDeviceIdType(deviceIdType);
+ reqInfo.setDeviceId(deviceId);
+ reqInfo.setActionTime(actionTime);
+ reqInfo.setActionType(actionType);
+ 
+ reqInfo.setCallBack(callBack);
+ 
+ /** 发送请求 */
+ UpLoadAdvBehaviorReport.upLoadAdvBehavior(domain, clientId, token, reqInfo);
+}
+ 
+/**
+ * 上传用户在应用内的行为数据
+ *
+ * @author xxxxxxxxx
+ * @since 2020-07-01
+ */
+public class UpLoadAdvBehaviorReport {
+ 
+    public static void upLoadAdvBehavior(String domain, String clientId, String token, UploadAdvBehaviorReq req)
+            throws InvocationTargetException, IllegalAccessException {
+ 
+        try {
+            /** 新建POST请求 */
+            HttpPost post = new HttpPost(domain + "/datasource/v1/track/activate");
+ 
+            /** 设置Header认证信息 */
+            post.setHeader("Authorization", "Bearer " + token);
+            post.setHeader("client_id", clientId);
+ 
+            /** 组装请求Body，使用JSON格式携带查询信息 */
+            String reqStr = JSON.toJSONString(req);
+            StringEntity entity = new StringEntity(reqStr, Charset.forName("UTF-8"));
+            entity.setContentEncoding("UTF-8");
+            entity.setContentType("application/json");
+ 
+            /** 设置请求Body */
+            post.setEntity(entity);
+ 
+            /** 发送请求 */
+            CloseableHttpClient httpClient = HttpClients.createDefault();
+            CloseableHttpResponse httpResponse = httpClient.execute(post);
+ 
+            /** 处理返回参数 */
+            int statusCode = httpResponse.getStatusLine().getStatusCode();
+            if (statusCode == HttpStatus.SC_OK) {
+                BufferedReader br =
+                        new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent(), Consts.UTF_8));
+                String result = br.readLine();
+ 
+                JSONObject object = JSON.parseObject(result);
+                System.out.println(object);
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+```

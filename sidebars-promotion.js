@@ -4696,7 +4696,6 @@ promotionSidebar: [
 
                         'monetize/promotion/marketapi-adtask17-0000001135467036',
 
-                        'monetize/promotion/marketapi-adtask18-0000001135626826',
 
                         'monetize/promotion/marketapi-adtask19-0000001181826427',
 
@@ -5322,7 +5321,6 @@ promotionSidebar: [
 
             'monetize/promotion/bp-news-hmcase-0000002552817447',
 
-            'monetize/promotion/bp-news-newyear-0000002518447694',
 
             'monetize/promotion/bp-news-change-0000002501656294',
 
@@ -5900,7 +5898,6 @@ promotionSidebar: [
 
         },
 
-        'monetize/promotion/bpos-campaigns-0000001328837534',
 
         'monetize/promotion/bpos-bonus-0000001379677873',
 
@@ -6032,79 +6029,6 @@ promotionSidebar: [
 
     'monetize/promotion/preload-cn-introduction-0000001064287331',
 
-{
-
-      type: 'category',
-
-      label: '预装增值服务平台操作指南',
-
-      collapsed: true,
-
-      items: [
-
-        'monetize/promotion/preload-dl-0000002544805425',
-
-{
-
-          type: 'category',
-
-          label: '查看预装数据服务',
-
-          collapsed: true,
-
-          items: [
-
-            'monetize/promotion/preload-tab-0000002513338994',
-
-            'monetize/promotion/preload-effect-0000002544938961',
-
-            'monetize/promotion/preload-rqhx-0000002544858971',
-
-          ]
-
-        },
-
-{
-
-          type: 'category',
-
-          label: '申请预装促激活服务',
-
-          collapsed: true,
-
-          items: [
-
-{
-
-              type: 'category',
-
-              label: '促激活Push申请',
-
-              collapsed: true,
-
-              items: [
-
-                'monetize/promotion/preload-push-time-0000002513338996',
-
-                'monetize/promotion/preload-push-hdfa-0000002544938963',
-
-                'monetize/promotion/preload-push-hdxxcx-0000002544874473',
-
-              ]
-
-            },
-
-          ]
-
-        },
-
-        'monetize/promotion/preload-zh-0000002544937071',
-
-        'monetize/promotion/preload-role-0000002545107377',
-
-      ]
-
-    },
 
     'monetize/promotion/preload-cn-operation-0000001064207391',
 

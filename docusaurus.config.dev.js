@@ -1,5 +1,5 @@
 // @ts-check
-// Dev Docusaurus config — only builds 开发与测试 docs, keeps full site chrome.
+// Dev Docusaurus config — only builds 推广与变现 docs, keeps minimal chrome.
 // Usage: npx docusaurus build --config docusaurus.config.dev.js --no-minify
 // Usage: npx docusaurus start --config docusaurus.config.dev.js --no-minify
 
@@ -8,12 +8,7 @@ const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 const fs = require('fs');
-const navEssentialsHTML = fs.readFileSync('./src/pages/nav-essentials.html', 'utf-8');
-const navDesignHTML = fs.readFileSync('./src/pages/nav-design.html', 'utf-8');
-const navDistributeHTML = fs.readFileSync('./src/pages/nav-distribute.html', 'utf-8');
 const navMonetizeHTML = fs.readFileSync('./src/pages/nav-monetize.html', 'utf-8');
-const navResourcesHTML = fs.readFileSync('./src/pages/nav-resources.html', 'utf-8');
-const navDevecoHTML = fs.readFileSync('./src/pages/nav-deveco.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -53,7 +48,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['design/**', 'architecture/**', 'quality/**', 'security/**/*.md', 'experience-suggestions/**'],
+          include: ['monetize/**'],
           exclude: ['**/img/**'],
           editUrl:
             'https://github.com/YouniQiao/developer_hos/tree/master/',
@@ -81,48 +76,12 @@ const config = {
         },
         items: [
           {
-            label: '设计与规划',
-            type: 'dropdown',
-            to: '/docs/design/general-design-basics/design-concepts',
-            className: 'mega-dropdown',
-            items: [
-              { type: 'html', value: navDesignHTML, className: 'mega-dropdown' },
-            ],
-          },
-          {
-            label: '开发与测试',
-            type: 'dropdown',
-            to: '/docs/dev/app-dev/getting-started/overview',
-            className: 'mega-dropdown',
-            items: [
-              { type: 'html', value: navEssentialsHTML, className: 'mega-dropdown' },
-            ],
-          },
-          {
-            label: '分发与运营',
-            type: 'dropdown',
-            to: '/docs/distribute/agc/overview',
-            className: 'mega-dropdown',
-            items: [
-              { type: 'html', value: navDistributeHTML, className: 'mega-dropdown' },
-            ],
-          },
-          {
             label: '推广与变现',
             type: 'dropdown',
             to: '/docs/monetize/promotion/ads-ggtfzstp-0000002285988928',
             className: 'mega-dropdown',
             items: [
               { type: 'html', value: navMonetizeHTML, className: 'mega-dropdown' },
-            ],
-          },
-          {
-            label: '更多资源',
-            type: 'dropdown',
-            to: '/docs/resources/design-res/overview',
-            className: 'mega-dropdown',
-            items: [
-              { type: 'html', value: navResourcesHTML, className: 'mega-dropdown' },
             ],
           },
           {
@@ -144,30 +103,11 @@ const config = {
             target: '_blank',
             rel: 'noopener noreferrer',
           },
-          {
-            to: '/docs/tools/coding-debug/ide-tools-overview',
-            label: '工具',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/YouniQiao/developer_hos/tree/master/docs',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
-          },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Tools',
-            items: [
-              { label: 'API 变更查询', to: '/docs/dev/release-notes/api-diff-search' },
-              { label: '设备版本分布', to: '/docs/dev/release-notes/sdk-version-distribution' },
-              { label: '设备支持查询', to: '/docs/dev/release-notes/device-support-search' },
-            ],
-          },
           {
             title: 'About',
             items: [

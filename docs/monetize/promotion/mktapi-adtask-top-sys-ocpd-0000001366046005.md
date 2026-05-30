@@ -1,6 +1,176 @@
 ---
 title: "精选推荐-系统投放-OCPD任务"
 displayed_sidebar: promotionSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/promotion/mktapi-adtask-top-sys-ocpd-0000001366046005
 ---
-
 # 精选推荐-系统投放-OCPD任务
+
+## 功能介绍
+
+创建“精选推荐-系统投放-OCPD”推广任务。
+
+## 使用约束
+
+接口调用者的角色：账号持有者、管理员、App管理员、运营。
+
+## 接口原型
+
+|  |  |
+| --- | --- |
+| 承载协议 | HTTPS POST |
+| 接口方向 | 开发者服务器-&gt;推广平台服务端 |
+| 接口URL | https://connect-api.cloud.huawei.com/api/marketing-api/v2/ad/task |
+| 数据格式 | 请求消息：Content-Type: application/json  响应消息：Content-Type: application/json |
+
+## 请求参数
+
+### Header
+
+| 参数 | 必选(M)/可选(O) | 类型 | 描述 |
+| --- | --- | --- | --- |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section103mcpsimp)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
+
+![](./img/caution_3.0-zh-cn_a17e6829b352.png) 
+
+- 若您为直客，请直接使用您的开发者账号创建API客户端和获取Access Token。
+- 若您为客户投放伙伴，需要使用<strong>客户投放伙伴主账号</strong>创建API客户端和获取Access Token。
+
+### Body
+
+| 参数 | 必选(M)/可选(O) | 类型 | 描述 |
+| --- | --- | --- | --- |
+| appId | M | String | 关联APP信息，填写联盟的ID，从[查询APP列表](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-queryappinfo-0000001181826439)中获取[allianceAppId](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-appinfo-0000001135626852#ZH-CN_TOPIC_0000001741282932__zh-cn_topic_0000001104833782_p4415152544620)字段。  不以C开头的纯数字，例如101386125。 |
+| taskType | M | String | 任务类型。  本场景下固定配置为<strong>243728192482956951（即精选推荐）</strong>。 |
+| deliveryMode | M | String | 投放模式。  本场景下固定配置为<strong>0</strong> <strong>（即系统投放）</strong>。 |
+| trafficScenarios | O | List&lt;Integer&gt; | 流量场景。  本场景下固定配置为<strong>1（即应用市场</strong> <strong>）</strong>。  枚举值说明如下：   - 1：应用市场。表示投放到华为应用市场及精选流量。 |
+| pricingType | M | String | 计费类型。  本场景下固定配置为<strong>OCPD</strong>。  枚举值说明如下：   - OCPD：系统智能调价，按下载次数计费 |
+| taskName | M | String | 推广任务名称。  最长50个字符，不能包含如下特殊字符：  &lt;>$#`;^ |
+| customerId | O | String | 授权合作伙伴投放时必须携带，该字段请使用<strong>投放操作账户</strong>登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)后在“我的账号信息”中查看到“华为账号”。 |
+| budget | M | String | 每日预算，限制每天的花费。每天消耗超过本预算后，系统将会停止推广，第二天再推广。  请填写整数，最低为100￥，最高为10，000，000￥（允许为0，代表不限制日预算）。  修改后的日预算金额，不能低于当前已消费金额的105%，以整数为单位向上取整。 |
+| startDate | M | String | 投放开始日期。  格式为：YYYY-MM-DD  此日期的00:00开始投放，未设置表示立即开始。 |
+| endDate | M | String | 投放结束日期。  格式为：YYYY-MM-DD  此日期的23:59结束投放。  说明：  结束日期和开始日期必须同时设置或者同时不设置，不设置的场景下表示会一直投放，直到余额用完。 |
+| deliveryHours | M | List&lt;[DeliveryHour](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-deliveryhour-0000001181826453)&gt; | 投放时段。  允许为空数组。 |
+| conversionBehavior | O | String | 归因目标。  格式为数字，1代表激活，7代表注册。 |
+| regions | M | String | 投放区域，使用ISO国家码。  默认中国CN。多个区域用逗号分隔。  isPositiveRegion为Y时，此字段必填。 |
+| isPositiveRegion | M | String | 是否正向选择区域。  国内投放填写为Y。  取值范围：   - Y：是，表示投放在region范围内，此时对应字段regions生效。 - N：否，表示投放在region范围外的其他国家。 - All：表示在所有国家投放，regions不生效。 |
+| deliveryPrice | M | Double | 通投出价。  取值范围：[2,10000]  单位：元 |
+| attributionMode | O | Integer | 记录行为监测归因方式。  不携带默认取值0。  取值范围：   - 0：无归因监测 - 1：自定义监测 - 2：华为分析监测   该字段创建后不支持修改。  当归因方式选择0或2时，各监测链接url不需要填写。 |
+| impAdMonitorReportUrl | O | String | 精准曝光上报监控链接。  格式如下，其中key需要您自定义，value为应用推广支持的宏参数，取值请参见[宏参数列表](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-macro-para-0000001454518626)。   ``` https://xxx.xxx.xxx/xxx?key1=value1&key2=value2 ``` |
+| clickAdMonitorReportUrl | O | String | 点击上报监控链接。  格式和样例参考[impAdMonitorReportUrl](#ZH-CN_TOPIC_0000001741282728__zh-cn_topic_0000001130006454_p24321722553)参数。 |
+| downloadAdMonitorReportUrl | O | String | 下载上报监控链接。  格式和样例参考[impAdMonitorReportUrl](#ZH-CN_TOPIC_0000001741282728__zh-cn_topic_0000001130006454_p24321722553)参数。 |
+| installAdMonitorReportUrl | O | String | 安装上报监控链接。  格式和样例参考[impAdMonitorReportUrl](#ZH-CN_TOPIC_0000001741282728__zh-cn_topic_0000001130006454_p24321722553)参数。 |
+| channelPkgId | O | String | 智能分包ID。 |
+| subTasks | O | List&lt;[CreateSubTask](#ZH-CN_TOPIC_0000001741282728__zh-cn_topic_0000001130006454_p38869282174)&gt; | 子任务。 |
+| physChannelPkgId | O | String | 物理渠道包ID。 |
+| installExp | O | Integer | 是否支持应用秒开。  取值范围：   - 0：不支持秒开/关闭秒开 - 1：开启秒开 |
+| campaignId | O | String | 计划Id；campaignId存在时表示用户选择已有草稿计划；否则取campaignInfo创建计划 |
+| campaignInfo | O |  | 创建计划请求体 |
+
+<strong>CreateSubTask</strong>
+
+![](./img/caution_3.0-zh-cn_168fa13abbe8.png) 
+
+此类型任务的子任务数上限为10。
+
+| 参数 | 必选(M)/可选(O) | 类型 | 描述 |
+| --- | --- | --- | --- |
+| subTaskName | M | String | 子任务名称。 |
+| subTaskPrice | M | Double | 子任务出价。  取值范围：[4,10000]  单位：元 |
+| subTaskRtaId | O | String | RTAID。 |
+| conversionBehaviorId | M | String | 归因目标ID。  格式为数字，1代表激活，7代表注册。 |
+| conversionExcludeBehaviorId | O | String | 排除目标行为ID。  本字段需开通白名单，请联系华为运营。 |
+
+<strong>CreateCampaignInfo</strong>
+
+创建计划请求体
+
+| 参数 | 必选(M)/可选(O) | 类型 | 描述 |
+| --- | --- | --- | --- |
+| campaignName | M | String | 计划名称。 |
+| buyMode | M | Integer | 采买模式：  1：竞价；2：合约 |
+| marketingGoal | M | Integer | 营销目标：  1：应用推广 |
+| adNetwork | M | Integer | 网络类型：  1：应用市场推广网络 |
+| type | M | Integer | 计划类型：  1：应用市场推广 |
+| dailyBudget | M | Double | 计划日预算，单位：元。保留小数后2位，不限制使用默认值0.00，范围是[500,999999998]。 |
+
+## 请求示例
+
+```
+POST https://connect-api.cloud.huawei.com/api/marketing-api/v2/ad/task 
+client_id: *** 
+Authorization: Bearer ***
+Content-Type: application/json 
+
+{
+    "appId": "300158591",
+    "taskType": "243728192482956951",
+    "deliveryMode": "0",
+    "trafficScenarios": [
+        1
+    ],
+    "pricingType": "OCPD",
+    "taskName": "精选推荐_系统投放_oCPD_2021712_9_5",
+    "budget": "166",
+    "startDate": "2021-07-12",
+    "endDate": "2021-07-13",
+    "deliveryPrice": "11",
+    "conversionBehavior": "1",
+    "regions": "CN",
+    "isPositiveRegion": "Y",
+    "subTasks": [
+        {
+            "subTaskName": "子任务22",
+            "subTaskPrice": "12.00",
+            "subTaskRtaId": "rtaId",
+            "conversionBehaviorId": "1",
+            "conversionExcludeBehaviorId": "test02"
+        }
+    ],
+    "impAdMonitorReportUrl": "https://www.example.com?taskId=__AID__&taskName=__AID_NAME__&appid=__APP_ID__&appName=__APP_NAME__&channelId=__CHANNEL_ID__&channelName=__CHANNEL_NAME__&groupId=__GROUP_ID__&groupName=__GROUP_NAME__&oaid=__OAID__&action=__ACTION_TYPE__&timestamp=__TS__&callBack=__CALLBACK__",
+    "clickAdMonitorReportUrl": "https://www.example.com?taskId=__AID__&taskName=__AID_NAME__&appid=__APP_ID__&appName=__APP_NAME__&channelId=__CHANNEL_ID__&channelName=__CHANNEL_NAME__&groupId=__GROUP_ID__&groupName=__GROUP_NAME__&oaid=__OAID__&action=__ACTION_TYPE__&timestamp=__TS__&callBack=__CALLBACK__",
+    "downloadAdMonitorReportUrl": "https://www.example.com?taskId=__AID__&taskName=__AID_NAME__&appid=__APP_ID__&appName=__APP_NAME__&channelId=__CHANNEL_ID__&channelName=__CHANNEL_NAME__&groupId=__GROUP_ID__&groupName=__GROUP_NAME__&oaid=__OAID__&action=__ACTION_TYPE__&timestamp=__TS__&callBack=__CALLBACK__",
+    "installAdMonitorReportUrl": "https://www.example.com?taskId=__AID__&taskName=__AID_NAME__&appid=__APP_ID__&appName=__APP_NAME__&channelId=__CHANNEL_ID__&channelName=__CHANNEL_NAME__&groupId=__GROUP_ID__&groupName=__GROUP_NAME__&oaid=__OAID__&action=__ACTION_TYPE__&timestamp=__TS__&callBack=__CALLBACK__",
+    "channelPkgId": "200000397",
+    "deliveryHours": [
+        {
+            "day": "Monday",
+            "startHMs": "0330",
+            "endHMs": "1630"
+        } 
+    ],
+    "campaignInfo": { 
+        "adNetwork": 1, 
+        "buyMode": 1, 
+        "campaignName": "计划名称", 
+        "dailyBudget": 1000.00, 
+        "marketingGoal": 1, 
+        "type": 1 
+    }
+}
+```
+
+## 响应参数
+
+| 参数 | 必选(M)/可选(O) | 类型 | 描述 |
+| --- | --- | --- | --- |
+| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| msg | M | String | 返回描述。 |
+| taskId | O | Long | 推广任务唯一ID。 |
+
+## 响应示例
+
+```
+{   
+  "code": 20770001,
+  "msg": "success",
+  "taskId": 39
+}
+```
+
+## 调用示例
+
+```
+“Curl”
+curl -X POST https://connect-api.cloud.huawei.com/api/marketing-api/v2/ad/task -H 'client_id: ***' -H 'Authorization: Bearer ***' -H 'Content-Type: application/json' -d '{"appId":"300158591","taskType":"243728192482956951","deliveryMode":"0","pricingType":"OCPD","taskName":"精选推荐_系统投放_oCPD_2021712_9_5","budget":"166","startDate":"2021-07-12","endDate":"2021-07-13","deliveryPrice":"11","conversionBehavior":"1","regions":"CN","isPositiveRegion":"Y","subTasks":[{"subTaskName":"子任务22","subTaskPrice":"12.00","subTaskRtaId":"rtaId","conversionBehaviorId":"1","conversionExcludeBehaviorId":"test02"}],"impAdMonitorReportUrl":"https://www.example.com?taskId=__AID__&taskName=__AID_NAME__&appid=__APP_ID__&appName=__APP_NAME__&channelId=__CHANNEL_ID__&channelName=__CHANNEL_NAME__&groupId=__GROUP_ID__&groupName=__GROUP_NAME__&oaid=__OAID__&action=__ACTION_TYPE__&timestamp=__TS__&callBack=__CALLBACK__","clickAdMonitorReportUrl":"https://www.example.com?taskId=__AID__&taskName=__AID_NAME__&appid=__APP_ID__&appName=__APP_NAME__&channelId=__CHANNEL_ID__&channelName=__CHANNEL_NAME__&groupId=__GROUP_ID__&groupName=__GROUP_NAME__&oaid=__OAID__&action=__ACTION_TYPE__&timestamp=__TS__&callBack=__CALLBACK__","downloadAdMonitorReportUrl":"https://www.example.com?taskId=__AID__&taskName=__AID_NAME__&appid=__APP_ID__&appName=__APP_NAME__&channelId=__CHANNEL_ID__&channelName=__CHANNEL_NAME__&groupId=__GROUP_ID__&groupName=__GROUP_NAME__&oaid=__OAID__&action=__ACTION_TYPE__&timestamp=__TS__&callBack=__CALLBACK__","installAdMonitorReportUrl":"https://www.example.com?taskId=__AID__&taskName=__AID_NAME__&appid=__APP_ID__&appName=__APP_NAME__&channelId=__CHANNEL_ID__&channelName=__CHANNEL_NAME__&groupId=__GROUP_ID__&groupName=__GROUP_NAME__&oaid=__OAID__&action=__ACTION_TYPE__&timestamp=__TS__&callBack=__CALLBACK__","channelPkgId":"200000397","deliveryHours":[{"day":"Monday","startHMs":"0330","endHMs":"1630"}]}'
+```

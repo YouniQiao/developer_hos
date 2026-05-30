@@ -1430,3 +1430,24 @@ html[data-theme='dark'] .merged-table th,
 html[data-theme='dark'] .merged-table td {
   border-color: var(--ifm-color-emphasis-200);
 }
+
+/* MergeTable component styles */
+.merge-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.merge-table th,
+.merge-table td {
+  border: 1px solid var(--ifm-table-border-color);
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+.merge-table th {
+  background-color: var(--ifm-table-head-background);
+  font-weight: bold;
+}
+.merge-table tbody tr:nth-child(2n) {
+  background-color: var(--ifm-table-stripe-background);
+}

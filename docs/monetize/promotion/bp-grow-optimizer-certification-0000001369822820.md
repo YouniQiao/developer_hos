@@ -1,6 +1,22 @@
 ---
 title: "增长优化师认证"
 displayed_sidebar: promotionSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-grow-optimizer-certification-0000001369822820
 ---
-
 # 增长优化师认证
+
+![](./img/0000000000011111111.20250123103510.01460254538303747170169246214227:50001231000000:2800:DE2A24FA4CBE3C7052839046ABBEE25ED8F4C622DCEAE655FA0CBE452EC30CD7_bf7953e8f69d.jpg)
+
+![](./img/0000000000011111111.20250123103510.95037352632236121315229469890620:50001231000000:2800:AD3FCCD8B217FD25ACC0CC9521B115B317287935B8252C0505AB2AF704B9AC11_1ad20f800ea8.png)
+
+![](./img/0000000000011111111.20250123103510.35671614013648350700306205185093:50001231000000:2800:20B8B2794BB98CF444F40CD20554687E22DF3876A79DC7CEA4DBF70F9D06E8D7_f2823e3f83f9.png)
+
+![](./img/0000000000011111111.20250123103510.41000116462678443657301526581919:50001231000000:2800:7C82BD72D120ED52F2609321715672B7F6239639993A0321267425AD3027DA2A_c082010ad606.jpg)
+
+## 优化师认证课程入口
+
+<strong>[初级优化师课程](https://developer.huawei.com/consumer/cn/training/dev-cert-detail/101665626990093226)</strong> <strong>| [中级优化师课程](https://developer.huawei.com/consumer/cn/training/dev-cert-detail/101665658172470741)</strong>
+
+## 优化师认证考试入口
+
+<strong>[初级优化师考试](https://developer.huawei.com/consumer/cn/training/exam-detail/101665642973081018?relationId=101724926398766788&authDetailId=101665626990093226&isDeveloperAuthExam=1)</strong> <strong>| [中级优化师考试](https://developer.huawei.com/consumer/cn/training/exam-detail/101665643792421024?relationId=101725610990339699&authDetailId=101665658172470741&isDeveloperAuthExam=1)</strong>
