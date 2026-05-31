@@ -74,7 +74,7 @@ jobs:
             --dir=build \
             --functions=netlify/functions \
             --message "Deploy ${{ github.sha }}"
-        timeout-minutes: 90
+        timeout-minutes: 360
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
