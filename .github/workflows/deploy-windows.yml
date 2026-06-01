@@ -54,7 +54,7 @@ jobs:
           }
 
       - name: Build (cached)
-        timeout-minutes: 60
+        timeout-minutes: 120
         env:
           NODE_OPTIONS: '--max-old-space-size=8192'
           GENERATE_SOURCEMAP: 'false'
