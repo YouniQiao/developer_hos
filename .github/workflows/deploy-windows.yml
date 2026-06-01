@@ -1,0 +1,99 @@
+name: Deploy to Netlify (Windows)
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-windows
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: [self-hosted, Windows]
+    env:
+      HTTP_PROXY: ''
+      HTTPS_PROXY: ''
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - name: Checkout (incremental)
+        run: |
+          if (Test-Path .git) {
+            git fetch origin master --depth=1
+            git reset --hard origin/master
+          } else {
+            git clone --depth=1 --branch master `
+              "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" .
+          }
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps (cached)
+        run: |
+          $lockHash = (Get-FileHash package-lock.json).Hash
+          $cacheFile = "$env:TEMP\hos-lockfile-hash"
+          $needInstall = $true
+          if (Test-Path node_modules) {
+            $cachedHash = Get-Content $cacheFile -ErrorAction SilentlyContinue
+            if ($cachedHash -eq $lockHash) {
+              Write-Host "node_modules up to date, skipped"
+              $needInstall = $false
+            }
+          }
+          if ($needInstall) {
+            Write-Host "Installing dependencies..."
+            npm ci
+            $lockHash | Out-File $cacheFile -NoNewline
+          }
+
+      - name: Build (cached)
+        timeout-minutes: 60
+        env:
+          NODE_OPTIONS: '--max-old-space-size=8192'
+          GENERATE_SOURCEMAP: 'false'
+        run: |
+          $currentSha = git rev-parse HEAD
+          $buildMarker = "build\.build-success"
+          $commitFile = "build\.build-commit"
+          $skipBuild = $false
+
+          if ((Test-Path $buildMarker) -and (Test-Path $commitFile)) {
+            $cachedSha = Get-Content $commitFile
+            $age = [DateTime]::Now - (Get-Item $buildMarker).LastWriteTime
+            if ($cachedSha -eq $currentSha -and $age.TotalMinutes -lt 180) {
+              Write-Host "build/ fresh and source unchanged ($($currentSha.Substring(0,7))), skip"
+              $skipBuild = $true
+            }
+          }
+
+          if (-not $skipBuild) {
+            Write-Host "Building ($($currentSha.Substring(0,7)))..."
+            if (Test-Path build) { Remove-Item build -Recurse -Force }
+            npx docusaurus build --no-minify
+            $currentSha | Out-File $commitFile -NoNewline
+            New-Item $buildMarker -Force | Out-Null
+          }
+
+      - name: Deploy to Netlify
+        timeout-minutes: 360
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          if (-not (Test-Path "build\.build-success")) {
+            Write-Error "Build artifacts incomplete"
+            exit 1
+          }
+          if (-not (Get-Command netlify -ErrorAction SilentlyContinue)) {
+            npm install -g netlify-cli
+          }
+          netlify deploy `
+            --prod `
+            --dir=build `
+            --functions=netlify/functions `
+            --message "Deploy ${{ github.sha }}"
