@@ -12,6 +12,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: [self-hosted, Windows]
+    env:
+      http_proxy: ${{ secrets.PROXY_URL }}
+      https_proxy: ${{ secrets.PROXY_URL }}
     defaults:
       run:
         shell: powershell
