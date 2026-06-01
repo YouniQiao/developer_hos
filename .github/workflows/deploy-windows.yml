@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout (incremental)
         run: |
+          # Enable long path support for Windows (260+ char paths)
+          git config --global core.longpaths true
           if (Test-Path .git) {
             git fetch origin master --depth=1
             git reset --hard origin/master
