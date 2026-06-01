@@ -1,6 +1,19 @@
 ---
 title: "测试并发布知识库"
+displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/test-and-publish-the-knowledge-base-0000002471264281
 ---
 
 # 测试并发布知识库
+
+文档类型的知识要等待数据校验完成后才能上架
+
+![](./img/ee00f1e60dd8.png)
+
+可以点击知识名称查看知识详情
+
+![](./img/bb77abd955ce.png)
+
+等待后端处理完成可以点击知识列表的上架
+
+![](./img/1290f518a5ae.png)

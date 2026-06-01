@@ -10,13 +10,13 @@ import styles from '@site/src/components/SubNav.module.css';
 const NAV_ITEMS = [
   {
     label: 'AppGallery Connect',
-    path: '/docs/distribute/agc/overview',
+    path: '/docs/distribute/agc/agc-help-releasenotes-0000002271020145',
     match: '/docs/distribute/agc',
     desc: 'AppGallery Connect 一站式服务平台',
   },
   {
     label: '小艺开放平台',
-    path: '/docs/distribute/xiaoyi/overview',
+    path: '/docs/distribute/xiaoyi/update1-0000001238499957',
     match: '/docs/distribute/xiaoyi',
     desc: '小艺智能体开发与开放平台',
   },

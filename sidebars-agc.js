@@ -1,6 +1,5 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const agcSidebar = [
-  'distribute/agc/overview',
   {
     type: 'category',
     label: '了解AppGallery Connect',

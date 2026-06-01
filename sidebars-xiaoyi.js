@@ -1,19 +1,16 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const xiaoyiSidebar = [
-  'distribute/xiaoyi/overview',
   'distribute/xiaoyi/update1-0000001238499957',
   {
     type: 'category',
     label: '业务介绍',
     collapsed: true,
     items: [
-      'distribute/xiaoyi/service-introduction-0000001238386681/service-introduction-0000001238386681',
       {
         type: 'category',
         label: '小艺开放平台',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/harmonyos-service-0000001238266717/harmonyos-service-0000001238266717',
           'distribute/xiaoyi/harmonyos-service-0000001238266717/introduction-0000001193306784',
           'distribute/xiaoyi/harmonyos-service-0000001238266717/strength-0000001193466742',
           'distribute/xiaoyi/harmonyos-service-0000001238266717/function-0000001238386683',
@@ -26,14 +23,12 @@ const xiaoyiSidebar = [
     label: '鸿蒙智能体',
     collapsed: true,
     items: [
-      'distribute/xiaoyi/developer-guide-0000002469667881/developer-guide-0000002469667881',
       'distribute/xiaoyi/developer-guide-0000002469667881/quick-start-0000002469548009',
       {
         type: 'category',
         label: '开发智能体',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/developing-intelligent-agents-0000002435989592/developing-intelligent-agents-0000002435989592',
           'distribute/xiaoyi/developing-intelligent-agents-0000002435989592/differences-in-arrangement-modes-0000002471344117',
           'distribute/xiaoyi/developing-intelligent-agents-0000002435989592/base-info-0000002444908490',
           'distribute/xiaoyi/developing-intelligent-agents-0000002435989592/privacy-policy-0000002477617042',
@@ -44,7 +39,6 @@ const xiaoyiSidebar = [
             label: '编排-能力拓展',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/ability-expansion-function-introduction-0000002437625858',
               'distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/a2a-basic-configuration-0000002437785686',
               'distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/a2a-output-settings-0000002471344121',
               'distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/open-claw-base-0000002518704040',
@@ -60,7 +54,6 @@ const xiaoyiSidebar = [
                 label: '插件',
                 collapsed: true,
                 items: [
-                  'distribute/xiaoyi/plug-in-2-0000002471344133/plug-in-2-0000002471344133',
                   'distribute/xiaoyi/plug-in-2-0000002471344133/plugin-parameter-setting-0000002493084596',
                   'distribute/xiaoyi/plug-in-2-0000002471344133/plugin-card-0000002525044573',
                   'distribute/xiaoyi/plug-in-2-0000002471344133/plugin-debug-0000002525183123',
@@ -73,7 +66,6 @@ const xiaoyiSidebar = [
                 label: '工作流/工作流配置',
                 collapsed: true,
                 items: [
-                  'distribute/xiaoyi/workflow-configuration-5-0000002471264261/workflow-configuration-5-0000002471264261',
                   'distribute/xiaoyi/workflow-configuration-5-0000002471264261/workflow-setting-0000002549367139',
                   'distribute/xiaoyi/workflow-configuration-5-0000002471264261/workflow-card-0000002517687350',
                   'distribute/xiaoyi/workflow-configuration-5-0000002471264261/workflow-text-card-0000002517847268',
@@ -85,7 +77,6 @@ const xiaoyiSidebar = [
                 label: '触发器',
                 collapsed: true,
                 items: [
-                  'distribute/xiaoyi/trigger-0000002437625878/trigger-0000002437625878',
                   'distribute/xiaoyi/trigger-0000002437625878/trigger-common-0000002492963588',
                   'distribute/xiaoyi/trigger-0000002437625878/trigger-webhook-0000002525203283',
                 ],
@@ -103,7 +94,6 @@ const xiaoyiSidebar = [
             label: '调试与预览',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/real-machine-testing-0000002471344145/real-machine-testing-0000002471344145',
               'distribute/xiaoyi/real-machine-testing-0000002471344145/list-of-user-groups-for-real-machine-testing-0000002471264273',
               'distribute/xiaoyi/real-machine-testing-0000002471344145/use-real-machine-testing-0000002437625890',
             ],
@@ -117,7 +107,6 @@ const xiaoyiSidebar = [
         label: '开发知识库',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/develop-a-knowledge-base-0000002435989624/develop-a-knowledge-base-0000002435989624',
           'distribute/xiaoyi/develop-a-knowledge-base-0000002435989624/create-a-knowledge-base-0000002471344153',
           'distribute/xiaoyi/develop-a-knowledge-base-0000002435989624/test-and-publish-the-knowledge-base-0000002471264281',
           'distribute/xiaoyi/develop-a-knowledge-base-0000002435989624/add-knowledge-base-in-intelligent-agents-0000002437625898',
@@ -128,14 +117,12 @@ const xiaoyiSidebar = [
         label: '开发工作流',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/development-workflow-0000002435989628/development-workflow-0000002435989628',
           'distribute/xiaoyi/development-workflow-0000002435989628/create-workflow-0000002471344157',
           {
             type: 'category',
             label: '工作流节点说明',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/workflow-node-description-0000002437785730/workflow-node-description-0000002437785730',
               'distribute/xiaoyi/workflow-node-description-0000002437785730/start-nodes-0000002471344161',
               'distribute/xiaoyi/workflow-node-description-0000002437785730/end-nodes-0000002478973886',
               'distribute/xiaoyi/workflow-node-description-0000002437785730/large-model-node-0000002471264289',
@@ -163,20 +150,17 @@ const xiaoyiSidebar = [
         label: '开发插件',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/develop-plug-ins-0000002435989648/develop-plug-ins-0000002435989648',
           'distribute/xiaoyi/develop-plug-ins-0000002435989648/plug-in-classification-0000002471344177',
           {
             type: 'category',
             label: 'MCP插件',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/mcp-plugin-0000002437785774/mcp-plugin-0000002437785774',
               {
                 type: 'category',
                 label: '创建插件',
                 collapsed: true,
                 items: [
-                  'distribute/xiaoyi/create-plugin-0000002471344201/create-plugin-0000002471344201',
                   'distribute/xiaoyi/create-plugin-0000002471344201/mcp-plugin-par-0000002525597351',
                   'distribute/xiaoyi/create-plugin-0000002471344201/mcp-plugin-import-0000002493437678',
                 ],
@@ -190,7 +174,6 @@ const xiaoyiSidebar = [
             label: '云插件',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/cloud-plug-in-0000002471344189/cloud-plug-in-0000002471344189',
               'distribute/xiaoyi/cloud-plug-in-0000002471344189/create-plugin-0000002471264325',
               'distribute/xiaoyi/cloud-plug-in-0000002471344189/create-tools-0000002437625946',
               'distribute/xiaoyi/cloud-plug-in-0000002471344189/testing-and-publishing-plugins-0000002437785770',
@@ -202,7 +185,6 @@ const xiaoyiSidebar = [
             label: '端插件',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/end-plug-in-0000002471264313/end-plug-in-0000002471264313',
               'distribute/xiaoyi/end-plug-in-0000002471264313/create-side-plug-in-0000002437625930',
               'distribute/xiaoyi/end-plug-in-0000002471264313/endpoint-plugin-configuration-0000002437785762',
               {
@@ -210,7 +192,6 @@ const xiaoyiSidebar = [
                 label: '端侧应用实现',
                 collapsed: true,
                 items: [
-                  'distribute/xiaoyi/end-side-application-implementation-0000002471344185/end-side-application-implementation-0000002471344185',
                   'distribute/xiaoyi/end-side-application-implementation-0000002471344185/plugin-to-terminal--configuration-0000002471264317',
                   'distribute/xiaoyi/end-side-application-implementation-0000002471344185/corresponding-code-implementation-of-plug-in-tools-0000002437625938',
                 ],
@@ -224,7 +205,6 @@ const xiaoyiSidebar = [
             label: '其他创建插件方式',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/other-ways-to-create-plugins-0000002471344197/other-ways-to-create-plugins-0000002471344197',
               'distribute/xiaoyi/other-ways-to-create-plugins-0000002471344197/plugins-based-on-existing-intent-conversions-0000002471264329',
               'distribute/xiaoyi/other-ways-to-create-plugins-0000002471344197/file-import-generates-cloud-plugin-0000002437625950',
             ],
@@ -236,14 +216,12 @@ const xiaoyiSidebar = [
         label: '开发卡片',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/development-card-0000002435989672/development-card-0000002435989672',
           'distribute/xiaoyi/development-card-0000002435989672/create-new-card-0000002471344205',
           {
             type: 'category',
             label: '自定义卡片编辑',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/custom-card-editing-0000002471264337/custom-card-editing-0000002471264337',
               'distribute/xiaoyi/custom-card-editing-0000002471264337/edit-component-0000002437625958',
               'distribute/xiaoyi/custom-card-editing-0000002471264337/create-new-variable-0000002437785782',
               'distribute/xiaoyi/custom-card-editing-0000002471264337/example-of-using-custom-cards-0000002471344209',
@@ -252,7 +230,6 @@ const xiaoyiSidebar = [
                 label: '事件配置',
                 collapsed: true,
                 items: [
-                  'distribute/xiaoyi/additional-information-0000002471264341/additional-information-0000002471264341',
                   'distribute/xiaoyi/additional-information-0000002471264341/multi-jump-0000002485633457',
                   'distribute/xiaoyi/additional-information-0000002471264341/send-message-0000002452553680',
                   'distribute/xiaoyi/additional-information-0000002471264341/set-variable-0000002485753413',
@@ -271,7 +248,6 @@ const xiaoyiSidebar = [
                 label: '音视频组件用法',
                 collapsed: true,
                 items: [
-                  'distribute/xiaoyi/audio-video-component-0000002437625962/audio-video-component-0000002437625962',
                   'distribute/xiaoyi/audio-video-component-0000002437625962/component-usage-0000002453655260',
                   'distribute/xiaoyi/audio-video-component-0000002437625962/audio-style1-0000002486894569',
                   'distribute/xiaoyi/audio-video-component-0000002437625962/audio-style2-0000002486934625',
@@ -296,13 +272,11 @@ const xiaoyiSidebar = [
         label: '小艺罗盘',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/commissioning-space-0000002512393840/commissioning-space-0000002512393840',
           {
             type: 'category',
             label: '评测',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/review-0000002512394302/review-0000002512394302',
               'distribute/xiaoyi/review-0000002512394302/evaluation-set-0000002544815783',
               'distribute/xiaoyi/review-0000002512394302/evaluation-commission-0000002513135882',
               'distribute/xiaoyi/review-0000002512394302/evaluation-task-0000002513295812',
@@ -313,7 +287,6 @@ const xiaoyiSidebar = [
             label: '观测',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/observe-0000002521675110/observe-0000002521675110',
               'distribute/xiaoyi/observe-0000002521675110/operations-dashboard-0000002552835075',
             ],
           },
@@ -324,7 +297,6 @@ const xiaoyiSidebar = [
         label: '上架审核规范',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/audit-specifications-0000002469548113/audit-specifications-0000002469548113',
           'distribute/xiaoyi/audit-specifications-0000002469548113/agent-information-0000002471344217',
           'distribute/xiaoyi/audit-specifications-0000002469548113/agent-security-0000002437625978',
           'distribute/xiaoyi/audit-specifications-0000002469548113/agent-function-0000002437785802',
@@ -348,20 +320,17 @@ const xiaoyiSidebar = [
     label: '鸿蒙Agent通信协议接入方案',
     collapsed: true,
     items: [
-      'distribute/xiaoyi/agent2agent-0000002498656261/agent2agent-0000002498656261',
       'distribute/xiaoyi/agent2agent-0000002498656261/agent2agent-comments-0000002500412353',
       {
         type: 'category',
         label: '鸿蒙Agent通信协议消息指令定义',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/agent2agent-define-0000002467293060/agent2agent-define-0000002467293060',
           {
             type: 'category',
             label: '消息指令定义',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/agent2agent-definition-0000002500439093/agent2agent-definition-0000002500439093',
               'distribute/xiaoyi/agent2agent-definition-0000002500439093/initialize-initialized-0000002537681161',
               'distribute/xiaoyi/agent2agent-definition-0000002500439093/message-stream-0000002505761434',
               'distribute/xiaoyi/agent2agent-definition-0000002500439093/tasks-cancel-0000002537561193',
@@ -375,7 +344,6 @@ const xiaoyiSidebar = [
             label: '消息参数说明',
             collapsed: true,
             items: [
-              'distribute/xiaoyi/agent2agent-parameter-desc-0000002467479802/agent2agent-parameter-desc-0000002467479802',
               'distribute/xiaoyi/agent2agent-parameter-desc-0000002467479802/query-data-0000002537691281',
               'distribute/xiaoyi/agent2agent-parameter-desc-0000002467479802/response-data-0000002505931382',
             ],
@@ -392,7 +360,6 @@ const xiaoyiSidebar = [
     label: '智能体数字商品支付服务配置以及使用指导',
     collapsed: true,
     items: [
-      'distribute/xiaoyi/digital-product-payment-0000002537601305/digital-product-payment-0000002537601305',
       'distribute/xiaoyi/digital-product-payment-0000002537601305/service-introduction-0000002537853869',
       'distribute/xiaoyi/digital-product-payment-0000002537601305/service-configuration-0000002537721283',
       'distribute/xiaoyi/digital-product-payment-0000002537601305/service-debug-0000002513652200',
@@ -401,7 +368,6 @@ const xiaoyiSidebar = [
         label: '交互接口说明',
         collapsed: true,
         items: [
-          'distribute/xiaoyi/interaction-interface-0000002505801554/interaction-interface-0000002505801554',
           'distribute/xiaoyi/interaction-interface-0000002505801554/order-notification-0000002537601307',
           'distribute/xiaoyi/interaction-interface-0000002505801554/privilege-query-0000002537721285',
         ],
@@ -414,7 +380,6 @@ const xiaoyiSidebar = [
     label: '意图框架',
     collapsed: true,
     items: [
-      'distribute/xiaoyi/intents-kit-0000001677103865/intents-kit-0000001677103865',
       'distribute/xiaoyi/intents-kit-0000001677103865/intents-kit-white-paper-0000001855842156',
       'distribute/xiaoyi/intents-kit-0000001677103865/intents-ai-distribution-characteristic-0000001901922213',
       'distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713',
@@ -427,7 +392,6 @@ const xiaoyiSidebar = [
     label: '服务条款',
     collapsed: true,
     items: [
-      'distribute/xiaoyi/terms_conditions-0000001193795972/terms_conditions-0000001193795972',
       'distribute/xiaoyi/terms_conditions-0000001193795972/harmonyos_agreement-0000001238515921',
       'distribute/xiaoyi/terms_conditions-0000001193795972/service_assurance-0000001193316036',
       'distribute/xiaoyi/terms_conditions-0000001193795972/protocol-variation-0000001323720125',
@@ -440,7 +404,6 @@ const xiaoyiSidebar = [
     label: '补充链接文档',
     collapsed: true,
     items: [
-      'distribute/xiaoyi/addlinkage-0000001240069905/addlinkage-0000001240069905',
       'distribute/xiaoyi/addlinkage-0000001240069905/account-binding-0000001240149967',
       'distribute/xiaoyi/addlinkage-0000001240069905/oauth-0000001240070027',
       'distribute/xiaoyi/addlinkage-0000001240069905/connent-data-synchronization-0000001194950100',
