@@ -80,7 +80,7 @@ jobs:
 
           if (-not $skipBuild) {
             Write-Host "Building ($($currentSha.Substring(0,7)))..."
-            if (Test-Path build) { Remove-Item build -Recurse -Force }
+            if (Test-Path build) { cmd /c "rmdir /s /q build" }
             npx docusaurus build --no-minify
             $currentSha | Out-File $commitFile -NoNewline
             New-Item $buildMarker -Force | Out-Null
