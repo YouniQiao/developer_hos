@@ -31,6 +31,8 @@ export default function MergeTable({ headers, rows, className = '' }) {
       )}
       <tbody>
         {rows.map((row, ri) => {
+          // Guard against null/undefined rows (SSR edge case)
+          if (row == null) return null;
           const cells = [];
           let ci = 0;
           // Skip cells consumed by rowspan from previous rows

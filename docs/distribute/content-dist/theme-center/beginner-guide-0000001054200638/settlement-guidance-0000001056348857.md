@@ -4,7 +4,6 @@ displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/settlement-guidance-0000001056348857
 ---
 
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 入驻指导
