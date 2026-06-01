@@ -78,7 +78,7 @@ const config = {
           {
             label: '分发与运营',
             type: 'dropdown',
-            to: '/docs/distribute/agc/overview',
+            to: '/docs/distribute/agc/agc-help-introduction-0000002270860209',
             className: 'mega-dropdown',
             items: [
               { type: 'html', value: navDistributeHTML, className: 'mega-dropdown' },
