@@ -61,6 +61,8 @@ jobs:
         env:
           NODE_OPTIONS: '--max-old-space-size=8192'
           GENERATE_SOURCEMAP: 'false'
+          CI: 'true'
+          DOCUSAURUS_IGNORE_SSG_WARNINGS: 'true'
         run: |
           $currentSha = git rev-parse HEAD
           $buildMarker = "build\.build-success"
