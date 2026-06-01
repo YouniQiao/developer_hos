@@ -14,6 +14,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 <strong>任务竞争力诊断</strong>会针对所有持续运行超过一天的任务，以前一天的数据进行竞争力诊断计算。诊断功能会基于<strong>主任务</strong>（通投任务）和<strong>子任务</strong>的出价、相对于任务整体的预算、单任务下载获取能力与定向能力等多个维度进行诊断。
 
-![](./img/0000000000011111111.20251117124631.33405662352621597992226000061197:50001231000000:2800:7EA561CB90E74FDF6B2C74DB1AC4DBCED46A0E0B4F1FC58664B1B0AE4C8EF18A_7f8e31eca786.png) 
+![](./img/0000000000011111111.20251117124631.33405662352621597992226000061197_50001231000000_2800_7EA561CB90E74FDF6B2C74DB1AC4DBCED46A0E0B4F1FC58664B1B0AE4C8EF18A_7f8e31eca786.png) 
 
 当前此功能仅支持诊断CPD以及oCPD任务。

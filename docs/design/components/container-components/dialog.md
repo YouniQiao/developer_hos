@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-00
 
 弹出框是一种模态窗口，在弹出框消失之前，用户无法操作其他界面内容，是一种对用户在进行界面交互过程中干扰性比较强的控件。通常弹出框用来展示用户当前需要执行的操作或必须关注的信息，其他情况不建议使用弹出框，可考虑应用内通知等其他非模态窗口控件。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150815.10068659158986972253949226062603:50001231000000:2800:7BFEBC4DE3026738B970AA906D2C76EE0AC810EAEB1729E1B546A53E71932526.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150815.10068659158986972253949226062603_50001231000000_2800_7BFEBC4DE3026738B970AA906D2C76EE0AC810EAEB1729E1B546A53E71932526.jpg "点击放大")
 
 弹出框的内容通常是不同控件进行组合布局。如：文本 (可带格式，如缩进，链接，粗体等)、列表、输入框、网格、图标或图片。HarmonyOS NEXT 中提供了系统默认风格的通用弹出框控件，布局样式可参考 [AdvancedDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-dialog) 组件，开发者也可以完全自定义弹出框，可参考 [CustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-custom-dialog-box) 控件。
 
@@ -17,11 +17,11 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-00
 
 |  |  |
 | --- | --- |
-| **选择类弹出框**  弹框中以列表或网格的形式提供可选择的内容，选择一项或多项。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.83470677600364209679237755110518:50001231000000:2800:24A6791ADDB7C51B5DDD239D5AE98651C085735FEB16B9CE7233D97DF155B906.png "点击放大") |
-| **带图形弹出框**  必要时可通过图形化方式展现确认框，以便用户更好理解或认同确认内容。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.20148177975614353610524103235901:50001231000000:2800:8CF887567871B57C02B37C3C13A474CDAA9DA6C37B0623B534788AA14CD063E1.png "点击放大") |
-| **带输入弹出框**  需要用户输入内容时使用。无输入内容时，确认按钮置灰。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.81936690146512286290315946996865:50001231000000:2800:07EA7DFADCD5F5CE4500309A30CCD92FAF1A840CAC7E07EC76AE46479D0DE5BC.png "点击放大") |
-| **信息弹出框**  操作未正确执行 (如网络错误、电池电量过低)，或未正确操作时 (如指纹录入)，反馈的错误或提示信息。尽量在弹框中给出解决问题的选项、入口或帮助链接。选择查看内容详情时，如查看文件详情。或是需要在继续操作前了解的信息，如权限提示框。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.92958481776249512556714258070428:50001231000000:2800:AB2481D0D137053B137D70B2CA23256C9018F807528211160E325FA099229079.png "点击放大") |
-| **操作确认弹出框**  触发一个将产生严重后果的不可逆操作时。如删除、重置、取消编辑、停止等。  触发的操作包含一些需用户知道的影响，或关联设置项状态会产生变化时。如允许开发设置、允许 USB 调试、设置无密码锁屏会关闭指纹校验等。触发的操作需满足某些前提条件时，显示解决前提条件的推荐确认框。如开启应用锁才能关联指纹、先安装某应用才能进行操作等。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.62999275147547718671820686973411:50001231000000:2800:517FF49238E8245E09D653E9190B34E905F0A29A42763E83DD44151A44385BA4.png "点击放大") |
+| **选择类弹出框**  弹框中以列表或网格的形式提供可选择的内容，选择一项或多项。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.83470677600364209679237755110518_50001231000000_2800_24A6791ADDB7C51B5DDD239D5AE98651C085735FEB16B9CE7233D97DF155B906.png "点击放大") |
+| **带图形弹出框**  必要时可通过图形化方式展现确认框，以便用户更好理解或认同确认内容。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.20148177975614353610524103235901_50001231000000_2800_8CF887567871B57C02B37C3C13A474CDAA9DA6C37B0623B534788AA14CD063E1.png "点击放大") |
+| **带输入弹出框**  需要用户输入内容时使用。无输入内容时，确认按钮置灰。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.81936690146512286290315946996865_50001231000000_2800_07EA7DFADCD5F5CE4500309A30CCD92FAF1A840CAC7E07EC76AE46479D0DE5BC.png "点击放大") |
+| **信息弹出框**  操作未正确执行 (如网络错误、电池电量过低)，或未正确操作时 (如指纹录入)，反馈的错误或提示信息。尽量在弹框中给出解决问题的选项、入口或帮助链接。选择查看内容详情时，如查看文件详情。或是需要在继续操作前了解的信息，如权限提示框。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.92958481776249512556714258070428_50001231000000_2800_AB2481D0D137053B137D70B2CA23256C9018F807528211160E325FA099229079.png "点击放大") |
+| **操作确认弹出框**  触发一个将产生严重后果的不可逆操作时。如删除、重置、取消编辑、停止等。  触发的操作包含一些需用户知道的影响，或关联设置项状态会产生变化时。如允许开发设置、允许 USB 调试、设置无密码锁屏会关闭指纹校验等。触发的操作需满足某些前提条件时，显示解决前提条件的推荐确认框。如开启应用锁才能关联指纹、先安装某应用才能进行操作等。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.62999275147547718671820686973411_50001231000000_2800_517FF49238E8245E09D653E9190B34E905F0A29A42763E83DD44151A44385BA4.png "点击放大") |
 
 ### 组件规则
 
@@ -29,9 +29,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-00
 
 |  |  |
 | --- | --- |
-| 基**础构成**  弹出框由三部分区域构成：标题区、操作按钮区以及内容区。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.01855509989009459878450729190604:50001231000000:2800:CC41A0E651158E6CB7E936EC2815AC83B38013F46E7DB677A19039F3664F8801.png "点击放大") |
-| **标题区**  纯标题 (单/双行标题） | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.29123549200478664530820687032575:50001231000000:2800:A79A8F2CBADE00A92629A907B211886889A7A36176276D4DC5F0948AD32B72CC.png "点击放大") |
-| **按钮操作区**  默认按钮宽度不超过弹框宽度，按钮左右布局。按钮组合数量超过三个及以上时，按钮改为上下布局，布局顺序由左至右修改为从下至上。  在需要强调的场景下，按钮可使用带蓝色背景填充的效果，强调按钮支持模块自定义。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150817.91875963233253775438542214618871:50001231000000:2800:D3369DD26503B383AB297B88726EF2E6BB03199FCC60D925F297BED93B458236.png "点击放大") |
+| 基**础构成**  弹出框由三部分区域构成：标题区、操作按钮区以及内容区。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.01855509989009459878450729190604_50001231000000_2800_CC41A0E651158E6CB7E936EC2815AC83B38013F46E7DB677A19039F3664F8801.png "点击放大") |
+| **标题区**  纯标题 (单/双行标题） | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150816.29123549200478664530820687032575_50001231000000_2800_A79A8F2CBADE00A92629A907B211886889A7A36176276D4DC5F0948AD32B72CC.png "点击放大") |
+| **按钮操作区**  默认按钮宽度不超过弹框宽度，按钮左右布局。按钮组合数量超过三个及以上时，按钮改为上下布局，布局顺序由左至右修改为从下至上。  在需要强调的场景下，按钮可使用带蓝色背景填充的效果，强调按钮支持模块自定义。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150817.91875963233253775438542214618871_50001231000000_2800_D3369DD26503B383AB297B88726EF2E6BB03199FCC60D925F297BED93B458236.png "点击放大") |
 
 ## 视觉规则
 
@@ -63,7 +63,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-00
 
 弹窗默认附带模糊材质效果，使用 COMPONENT\_ULTRA\_THICK，可参考 [backgroundBlurStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) 接口枚举类型。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150817.88508905234000770082800759964942:50001231000000:2800:BC2E07600074A8581EB41A12723767F00D4B36C71D1402B3A0A4CA7B4857B708.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150817.88508905234000770082800759964942_50001231000000_2800_BC2E07600074A8581EB41A12723767F00D4B36C71D1402B3A0A4CA7B4857B708.png "点击放大")
 
 ### 设备差异
 
@@ -71,13 +71,13 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-00
 
 电脑设备的控件整体设计风格相较于移动端，使用更小的圆角。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150817.48628469592793908060176500215072:50001231000000:2800:E8B789EA8124E6D81911F1F9B90DC7743829F4C319F5B57615A77533D972B3CF.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150817.48628469592793908060176500215072_50001231000000_2800_E8B789EA8124E6D81911F1F9B90DC7743829F4C319F5B57615A77533D972B3CF.png "点击放大")
 
 在 电脑设备中弹出框会自带阴影，分为获焦态与失焦态，用来区分当前操作的窗口层级。
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150817.99051778715281303867538281084065:50001231000000:2800:E36DC8C61812658763434721CCE1AF12AEA9AF3F4468EEF6775203B8A24ACC14.png "点击放大")**获焦弹出框** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.19396551042338245652398498202607:50001231000000:2800:0ABEC6807A12B4B2EC003320AE922C5C7D349D9B23609432704D551A01157E4A.png "点击放大")**失焦弹出框** |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150817.99051778715281303867538281084065_50001231000000_2800_E36DC8C61812658763434721CCE1AF12AEA9AF3F4468EEF6775203B8A24ACC14.png "点击放大")**获焦弹出框** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.19396551042338245652398498202607_50001231000000_2800_0ABEC6807A12B4B2EC003320AE922C5C7D349D9B23609432704D551A01157E4A.png "点击放大")**失焦弹出框** |
 
 ### 布局规则
 
@@ -91,38 +91,38 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-00
 
 |  |  |
 | --- | --- |
-| **手机竖屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.62517624193371149780926701189635:50001231000000:2800:A880D2B35158C8235551694183A7659C314D85056EC9151E3570CAC4652E89C0.png "点击放大") |
+| **手机竖屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.62517624193371149780926701189635_50001231000000_2800_A880D2B35158C8235551694183A7659C314D85056EC9151E3570CAC4652E89C0.png "点击放大") |
 |  |  |
-| **手机横屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.17014455759738257231418537854268:50001231000000:2800:11DCE3A3AAEDC15462BDF6787EA1735138086F056E830D708B949519CBB72CF4.png "点击放大") |
+| **手机横屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.17014455759738257231418537854268_50001231000000_2800_11DCE3A3AAEDC15462BDF6787EA1735138086F056E830D708B949519CBB72CF4.png "点击放大") |
 
 ## 折叠设备
 
 |  |  |
 | --- | --- |
-| **折叠屏竖屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.05449350207830244746877813187729:50001231000000:2800:29B8F6C21E3253AE894109ADAC27F262FEB4AA62D2B2FD033722A36CB9505BBB.png "点击放大") |
+| **折叠屏竖屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.05449350207830244746877813187729_50001231000000_2800_29B8F6C21E3253AE894109ADAC27F262FEB4AA62D2B2FD033722A36CB9505BBB.png "点击放大") |
 |  |  |
-| **折叠屏横屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.17256414695520705361915928555244:50001231000000:2800:6984B47BB38E36C186706E3079D5A428EB81AD1B45E8BB94772AE40F60A85911.png "点击放大") |
+| **折叠屏横屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.17256414695520705361915928555244_50001231000000_2800_6984B47BB38E36C186706E3079D5A428EB81AD1B45E8BB94772AE40F60A85911.png "点击放大") |
 
 ## 平板设备
 
 |  |  |
 | --- | --- |
-| **平板竖屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.85299451474622189004238443784729:50001231000000:2800:8F184568766D90742052E3F96410FC131B6A2AF46CA79DA46FE9F1639C3641F1.png "点击放大") |
+| **平板竖屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.85299451474622189004238443784729_50001231000000_2800_8F184568766D90742052E3F96410FC131B6A2AF46CA79DA46FE9F1639C3641F1.png "点击放大") |
 |  |  |
-| **平板横屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.15542049946991100957918658893202:50001231000000:2800:B87267E60DB00D5AD47ECF07C831BDC3DB0EBC9D02CE59E5996D1360653E05B4.png "点击放大") |
+| **平板横屏效果** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150818.15542049946991100957918658893202_50001231000000_2800_B87267E60DB00D5AD47ECF07C831BDC3DB0EBC9D02CE59E5996D1360653E05B4.png "点击放大") |
 
 ## 电脑设备
 
 |  |  |
 | --- | --- |
-| 弹出框最大高度= 0.9\*窗口内容层  应用弹出框位置在窗口内容层区域居中显示  桌面弹出框位置在桌面区域居中显示 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.71298356010062707430243736995381:50001231000000:2800:1FF5C642B62E221C017C6F24601643C2FFD8BD3920CBCEDD6CE18536E52B7766.png "点击放大") |
+| 弹出框最大高度= 0.9\*窗口内容层  应用弹出框位置在窗口内容层区域居中显示  桌面弹出框位置在桌面区域居中显示 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.71298356010062707430243736995381_50001231000000_2800_1FF5C642B62E221C017C6F24601643C2FFD8BD3920CBCEDD6CE18536E52B7766.png "点击放大") |
 
 ## 穿戴设备
 
 |  |  |
 | --- | --- |
-| 智能穿戴的弹出框是一种全屏模态窗口，对用户在进行界面交互过程中干扰性比较强。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.69184168295540885974165580758289:50001231000000:2800:594D83D7EEB295258947E2E3777FDB3DF349BE74AFC4AB461E4B4C13D3E75CAA.png "点击放大") |
-| 弹出框支持三种布局样式，包括仅描述文本、标题+描述文本及图标+描述文本。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.29542715335012601510108572194086:50001231000000:2800:46FDD33DFBF6740549BBDCD38473A63C85F19C357FD2B56E24699E042D95FE23.png "点击放大")![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.32677232203902551265303986687369:50001231000000:2800:3C12CCD7A1DC57C21C98A131202BFF499B42243E70BA73555146826042046EA3.png "点击放大") |
+| 智能穿戴的弹出框是一种全屏模态窗口，对用户在进行界面交互过程中干扰性比较强。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.69184168295540885974165580758289_50001231000000_2800_594D83D7EEB295258947E2E3777FDB3DF349BE74AFC4AB461E4B4C13D3E75CAA.png "点击放大") |
+| 弹出框支持三种布局样式，包括仅描述文本、标题+描述文本及图标+描述文本。 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.29542715335012601510108572194086_50001231000000_2800_46FDD33DFBF6740549BBDCD38473A63C85F19C357FD2B56E24699E042D95FE23.png "点击放大")![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.32677232203902551265303986687369_50001231000000_2800_3C12CCD7A1DC57C21C98A131202BFF499B42243E70BA73555146826042046EA3.png "点击放大") |
 
 ## 响应式布局
 
@@ -136,19 +136,19 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-00
 
 当屏幕设备基于默认手机 360vp 宽度缩小或拉伸时，同样基于上述计算规则进行自适应，当最大宽度达到 400vp 时不再继续响应伸缩
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.71483378957224838146047429344677:50001231000000:2800:F009F8ED62E35EA20B7DDCD7236F8E7CBC84103BA64B3E8389A84A643FC1DB99.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150819.71483378957224838146047429344677_50001231000000_2800_F009F8ED62E35EA20B7DDCD7236F8E7CBC84103BA64B3E8389A84A643FC1DB99.png "点击放大")
 
 分屏显示弹窗
 
 当弹窗出现在分屏场景下时，弹窗默认以当前窗口总体宽度减去当前设备两侧 Margin 为显示宽度
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150820.99646213471132875364276615028108:50001231000000:2800:4154DBB46D0823B9EEBE4690E1D91F642235E2E5986D79ADBA71BCCCC3AD73EB.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150820.99646213471132875364276615028108_50001231000000_2800_4154DBB46D0823B9EEBE4690E1D91F642235E2E5986D79ADBA71BCCCC3AD73EB.png "点击放大")
 
 **电脑设备**
 
 电脑弹出框宽度固定，不跟随父窗口变化而改变尺寸。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150820.85467496682129173878498255173967:50001231000000:2800:998699C43D4F9AE85955C2EC4972E3C82BE44EFA32A4938CE001FEEF6DBF8D45.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250820150820.85467496682129173878498255173967_50001231000000_2800_998699C43D4F9AE85955C2EC4972E3C82BE44EFA32A4938CE001FEEF6DBF8D45.png "点击放大")
 
 ### 开发文档
 

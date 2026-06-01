@@ -19,14 +19,14 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touch
 
 | **手势** | 基础定义 | 图例 | **手机** | **Pad** | 电脑 | **穿戴** |
 | --- | --- | --- | --- | --- | --- | --- |
-| **点击** | **单次点击某个元素激活控件或者激活功能** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.79246369780526548592193261759607:50001231000000:2800:66CF482888AB59EB82AF6F12693E3E251F795F4540BDEA8C053EE9E03CA80F26.jpg "点击放大") | ✅ | ✅ | ✅ | ✅ |
-| **长按** | **长按某个元素提示额外的控制或功能** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.00722127681466426235746111671304:50001231000000:2800:39B18FB3F7840D6FE95416274F5299B320831BBB7B77F0FD2A6B514A9DADC5D8.jpg "点击放大") | ✅ | ✅ | ✅ | ✅ |
-| **拖拽** | **拖拽某个元素移动元素** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.09495070639039036843844231341435:50001231000000:2800:80DF13C4A77DF5E0ADD4C8FEB6BF6B82C217C12A883A380B7FB21624263F054D.jpg "点击放大") | ✅ | ✅ | ✅ | 不涉及 |
-| **滑动** | **滑动以滚动或平移界面内容** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.81077011744901843124714868811671:50001231000000:2800:9454616B44CB5DD07E504C238143356F3512BDDA9D1BDEEAF5635507BE5ED7F8.jpg "点击放大") | ✅ | ✅ | ✅ | ✅ |
-| **双击** | **双击放大/缩小内容** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.24168045677554112911346166869316:50001231000000:2800:C72414B03CE09E7EA097611BE17C9FD44FA21B2162923CECA5AD65220938B818.jpg "点击放大") | ✅ | ✅ | ✅ | 不涉及 |
-| **捏合** | **捏合缩放内容** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.38879302118800737459443578792386:50001231000000:2800:CCF661AC41EB8105D73F10221ECA489D2E9C86568F80B63AA9AD113735FE5A50.jpg "点击放大") | ✅ | ✅ | ✅ | ✅ |
-| **旋转** | **旋转选中内容** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.53560930927793484221671804275560:50001231000000:2800:D6BCA7F7E58905ED1D9F328C3DDD2B69BA3E3C07F31EA1123C816C1CCA201E94.png "点击放大") | ✅ | ✅ | ✅ | 不涉及 |
-| **敲击** | **指关节敲击截屏** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.28337703002294910118933111684578:50001231000000:2800:32D6FF6C2AEE1A0EA009C8F12FE82C7620CE5CB13682823A971476FC32033DBE.jpg "点击放大") | ✅ | ✅ | 不涉及 | 不涉及 |
+| **点击** | **单次点击某个元素激活控件或者激活功能** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.79246369780526548592193261759607_50001231000000_2800_66CF482888AB59EB82AF6F12693E3E251F795F4540BDEA8C053EE9E03CA80F26.jpg "点击放大") | ✅ | ✅ | ✅ | ✅ |
+| **长按** | **长按某个元素提示额外的控制或功能** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.00722127681466426235746111671304_50001231000000_2800_39B18FB3F7840D6FE95416274F5299B320831BBB7B77F0FD2A6B514A9DADC5D8.jpg "点击放大") | ✅ | ✅ | ✅ | ✅ |
+| **拖拽** | **拖拽某个元素移动元素** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.09495070639039036843844231341435_50001231000000_2800_80DF13C4A77DF5E0ADD4C8FEB6BF6B82C217C12A883A380B7FB21624263F054D.jpg "点击放大") | ✅ | ✅ | ✅ | 不涉及 |
+| **滑动** | **滑动以滚动或平移界面内容** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.81077011744901843124714868811671_50001231000000_2800_9454616B44CB5DD07E504C238143356F3512BDDA9D1BDEEAF5635507BE5ED7F8.jpg "点击放大") | ✅ | ✅ | ✅ | ✅ |
+| **双击** | **双击放大/缩小内容** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.24168045677554112911346166869316_50001231000000_2800_C72414B03CE09E7EA097611BE17C9FD44FA21B2162923CECA5AD65220938B818.jpg "点击放大") | ✅ | ✅ | ✅ | 不涉及 |
+| **捏合** | **捏合缩放内容** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.38879302118800737459443578792386_50001231000000_2800_CCF661AC41EB8105D73F10221ECA489D2E9C86568F80B63AA9AD113735FE5A50.jpg "点击放大") | ✅ | ✅ | ✅ | ✅ |
+| **旋转** | **旋转选中内容** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.53560930927793484221671804275560_50001231000000_2800_D6BCA7F7E58905ED1D9F328C3DDD2B69BA3E3C07F31EA1123C816C1CCA201E94.png "点击放大") | ✅ | ✅ | ✅ | 不涉及 |
+| **敲击** | **指关节敲击截屏** | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.28337703002294910118933111684578_50001231000000_2800_32D6FF6C2AEE1A0EA009C8F12FE82C7620CE5CB13682823A971476FC32033DBE.jpg "点击放大") | ✅ | ✅ | 不涉及 | 不涉及 |
 
 各设备的基础手势
 
@@ -62,14 +62,14 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touch
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.48391244220439064454796373349033:50001231000000:2800:37E678B1A2F9C23BB845F815CBF587E0174D661BA42815478D13AE9A89C4FA58.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.90001330275370961261465616090374:50001231000000:2800:B589838604E2BF5F77747DA06E27C891843F12C75D27E5BA4ED30D7F6F40A769.jpg "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.48391244220439064454796373349033_50001231000000_2800_37E678B1A2F9C23BB845F815CBF587E0174D661BA42815478D13AE9A89C4FA58.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.90001330275370961261465616090374_50001231000000_2800_B589838604E2BF5F77747DA06E27C891843F12C75D27E5BA4ED30D7F6F40A769.jpg "点击放大") |
 | 长按选择文本 | 长按图片 |
 
 **4.长按对象激活二级详情页**
 
 长按对象进入对应的功能详情页面，属于一种浅层级的轻交互，例如长按控制中心图标打开详情页。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.77215765174142533191682451184950:50001231000000:2800:6B172DB65EF5A458ED455FD737D17879824779A0345454BC6A1460E417CBB168.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162008.77215765174142533191682451184950_50001231000000_2800_6B172DB65EF5A458ED455FD737D17879824779A0345454BC6A1460E417CBB168.jpg "点击放大")
 
 ## 拖拽
 
@@ -81,7 +81,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touch
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.09119467735049611475746388039201:50001231000000:2800:FA065B3E820787F853D08FE61ADDCFE2EAAE1AC0A97BD9CDB65E7019CE93E081.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.09119467735049611475746388039201_50001231000000_2800_FA065B3E820787F853D08FE61ADDCFE2EAAE1AC0A97BD9CDB65E7019CE93E081.png "点击放大") |
 
 ## 滑动
 
@@ -98,7 +98,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touch
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.51294633031481591961587551897655:50001231000000:2800:76D751BB6FA082A529D5CED2F1526DF954C9D0607663764A65E50373C308322D.png "点击放大") | **左滑配置删除图标**   * 一个应用内删除的图标相同 * 向左短滑出现删除图标   **右滑可定义次重要功能**   * 右滑可定义一个功能，最多配置一个按键 * 向右短滑拉出按钮 * 右滑可一步快滑删除 |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.51294633031481591961587551897655_50001231000000_2800_76D751BB6FA082A529D5CED2F1526DF954C9D0607663764A65E50373C308322D.png "点击放大") | **左滑配置删除图标**   * 一个应用内删除的图标相同 * 向左短滑出现删除图标   **右滑可定义次重要功能**   * 右滑可定义一个功能，最多配置一个按键 * 向右短滑拉出按钮 * 右滑可一步快滑删除 |
 
 列表横滑出现操作项
 
@@ -110,13 +110,13 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touch
 
 双击放大图片，再次双击缩小图片。大图如地图绘图软件可配置多次双击放大，双击一次放大一个尺寸。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.73204204876731207387482761111356:50001231000000:2800:42339E95693F13722B05735BBFCA223243435E55117DF8BA2B8FEA0A0D3B2DF3.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.73204204876731207387482761111356_50001231000000_2800_42339E95693F13722B05735BBFCA223243435E55117DF8BA2B8FEA0A0D3B2DF3.jpg "点击放大")
 
 **2.双击播放长视频**
 
 双击播放或暂停长视频，短视频场景中双击通常为点赞事件。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.93817759395788298641534377438978:50001231000000:2800:476A2A5739D38F32CFBCA2961B8E6BD8A2D395090DCC21DE87FBC1A56D064E6A.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.93817759395788298641534377438978_50001231000000_2800_476A2A5739D38F32CFBCA2961B8E6BD8A2D395090DCC21DE87FBC1A56D064E6A.jpg "点击放大")
 
 **3.双击跳转至下一个未读信息**
 
@@ -132,7 +132,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touch
 
 捏合缩放画面，例如捏合缩放图片、相机取景界面捏合缩放画面、地图捏合缩放画面、浏览器界面捏合缩放图文画面。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.07836166050231428623004754653026:50001231000000:2800:EA53394BF04463ABD843C8C746F4B6E3BA1E61495CB4FAA381A1751A94C256CC.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.07836166050231428623004754653026_50001231000000_2800_EA53394BF04463ABD843C8C746F4B6E3BA1E61495CB4FAA381A1751A94C256CC.jpg "点击放大")
 
 **2.捏合缩放宫格**
 
@@ -148,7 +148,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touch
 
 在手机、平板、电脑触屏交互中，避免使用系统导航手势定义非系统功能。系统导航手势为系统级全局生效手势，例在任何页面通过单指底部边缘上滑能够回到桌面。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.97825141519113217052859719595557:50001231000000:2800:7183CB77DD5FDD05A903E00807E50FEE11367120959CD4C0CEDF5C3BD799F05E.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.97825141519113217052859719595557_50001231000000_2800_7183CB77DD5FDD05A903E00807E50FEE11367120959CD4C0CEDF5C3BD799F05E.jpg "点击放大")
 
 手机系统导航手势示意图
 
@@ -156,7 +156,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touch
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.01267856270644912419868984288573:50001231000000:2800:5739003D199C428D4680B73CE8D3F8170DCB2F1C58D858CDF8870BF08988A691.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.40579269639975304844902693551422:50001231000000:2800:3FA037A430634C21BBF515AF3F74DF9A002EAB4F98188DF02EB3E634BC86602B.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.01267856270644912419868984288573_50001231000000_2800_5739003D199C428D4680B73CE8D3F8170DCB2F1C58D858CDF8870BF08988A691.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251209162009.40579269639975304844902693551422_50001231000000_2800_3FA037A430634C21BBF515AF3F74DF9A002EAB4F98188DF02EB3E634BC86602B.png "点击放大") |
 | 不要使用二次返回手势挽留用户 | 游戏场景避免误操作 |
 
 系统导航手势在普通屏幕尺寸下如直板机折叠屏上为边缘手势，在大屏幕尺寸下如平板和电脑 上能通过三指非精准手势回桌面、切换多任务、快切应用，下表为多设备系统导航手势汇总。

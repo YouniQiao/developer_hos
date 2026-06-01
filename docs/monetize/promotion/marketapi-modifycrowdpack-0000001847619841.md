@@ -31,7 +31,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-m
 | client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section103mcpsimp)。 |
 | Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
 
-![](./img/0000000000011111111.20251117124652.85224901385957828233598944956614:50001231000000:2800:8EC924222C424F8A994DAB4CC2F5289728F1863150D8703243F67949C782C67E_3d1c05bd1b9f.png) 
+![](./img/0000000000011111111.20251117124652.85224901385957828233598944956614_50001231000000_2800_8EC924222C424F8A994DAB4CC2F5289728F1863150D8703243F67949C782C67E_3d1c05bd1b9f.png) 
 
 - 若您为直客，请直接使用您的开发者账号创建API客户端和获取Access Token。
 

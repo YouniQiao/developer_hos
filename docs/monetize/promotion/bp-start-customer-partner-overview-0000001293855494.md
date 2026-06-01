@@ -21,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-cu
 
 客户投放伙伴体系示意图如下图所示。
 
-![](./img/0000000000011111111.20260226163838.22472099442279052864772917436892:50001231000000:2800:03B6D06928535EB81CE04EE714A513CEA2458D37B1146EE54A002F611E015AEA_fcedb8ccfef1.png "点击放大")
+![](./img/0000000000011111111.20260226163838.22472099442279052864772917436892_50001231000000_2800_03B6D06928535EB81CE04EE714A513CEA2458D37B1146EE54A002F611E015AEA_fcedb8ccfef1.png "点击放大")
 
 具体说明如下表所示。
 
@@ -41,7 +41,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-cu
 
 下面会针对从客户投放伙伴主账户、客户投放伙伴子账户和投放操作账户三种账户分别展开说明。
 
-![](./img/0000000000011111111.20260226163838.26466873958825801429838720691311:50001231000000:2800:410348FAB6133867E953715242F4C8147075A549C03F1DADF57A187C01F3D253_cf2efaa12536.png) 
+![](./img/0000000000011111111.20260226163838.26466873958825801429838720691311_50001231000000_2800_410348FAB6133867E953715242F4C8147075A549C03F1DADF57A187C01F3D253_cf2efaa12536.png) 
 
 - 客户投放伙伴相关的介绍和操作，具体请参见[视频课程](https://developer.huawei.com/consumer/cn/training/course/video/C101678331706327247)。
 - 对于直客账号如果需要客户投放伙伴推广，则授权投放操作账户。具体授权操作请参见[(可选)授权客户投放伙伴管理账户](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-authorize-0000001346774281)。

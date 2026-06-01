@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/datapanel
 
 将传统数据转换成可视化的图形，把隐藏在数据中的信息以更加直观、友好、视觉化的方式直接展现于用户面前，提升用户获取数据信息的效率。环形进度数据开发相关能力请参考 [DataPanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-datapanel) 文档，图标类数据开发相关能力请参考 [Gauge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-gauge) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.95806152948583122543293459369879:50001231000000:2800:3F068AEE9516DF2A82DD198EE8D3B5F70FE6E96B941E33FF3127D93AF86B1CD1.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.95806152948583122543293459369879_50001231000000_2800_3F068AEE9516DF2A82DD198EE8D3B5F70FE6E96B941E33FF3127D93AF86B1CD1.jpg "点击放大")
 
 ### 如何使用
 
@@ -23,20 +23,20 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/datapanel
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.32096997935170988383486580320580:50001231000000:2800:47EA516E87D6962BA88355BB590DB92E5F3ECFA1BCDE6D1B41834BD008180C75.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.14065705480116740754610277087455:50001231000000:2800:5D5893337A86488BDFF342A513B7EBDDCFCE670D584C940949DAD74B55BCF135.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.34029391225763236140849090628073:50001231000000:2800:3151456DAEBC2DCC92278A8E940C5BC8109FAA38CEF7BDA6D86946EF692AD639.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.62221864185154546331645956576662:50001231000000:2800:DBE6804A0A03A43AA6626A34BA75C397C04ED6CD3DDE1822D5362F30D0A04B84.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.32096997935170988383486580320580_50001231000000_2800_47EA516E87D6962BA88355BB590DB92E5F3ECFA1BCDE6D1B41834BD008180C75.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.14065705480116740754610277087455_50001231000000_2800_5D5893337A86488BDFF342A513B7EBDDCFCE670D584C940949DAD74B55BCF135.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.34029391225763236140849090628073_50001231000000_2800_3151456DAEBC2DCC92278A8E940C5BC8109FAA38CEF7BDA6D86946EF692AD639.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.62221864185154546331645956576662_50001231000000_2800_DBE6804A0A03A43AA6626A34BA75C397C04ED6CD3DDE1822D5362F30D0A04B84.png "点击放大") |
 | **进度形** | **占比形** | **范围形** | **线形** |
 
 在进行设计时，数据条的线条宽度应与屏幕尺寸相适应，避免过粗或过细。也可以根据数据含义使用渐变色等视觉效果，增强数据可读性和色彩的细腻程度。当存在多条数据线时，应为每条线分配独特的颜色，避免混淆。
 
 |  |  |
 | --- | --- |
-| **进度类**  进度类有两个场景。一种是加载进度类，在数据有无明显进度加载时使用，如获取网络数据时的加载；另一种是实时进度类，在数据有明显进度加载时使用，如安装包的下载。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.14596626259864443519990328578091:50001231000000:2800:DAB3FD2F4529ABAB06EC09A6AAC6CD32BC7997B5CC1F44AE6F25AD54CFA7FC32.png "点击放大") |
+| **进度类**  进度类有两个场景。一种是加载进度类，在数据有无明显进度加载时使用，如获取网络数据时的加载；另一种是实时进度类，在数据有明显进度加载时使用，如安装包的下载。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.14596626259864443519990328578091_50001231000000_2800_DAB3FD2F4529ABAB06EC09A6AAC6CD32BC7997B5CC1F44AE6F25AD54CFA7FC32.png "点击放大") |
 |  |  |
-| **占比类**  占比类适合在有多个数据总和时使用，可突出数据总和后各个数据的占比，从而突出表现各自份额。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.11577186966648414952107379497953:50001231000000:2800:47870BDB423D2DC384D3DFA67AE6E9EE4F32719F20BEC3057DBFB525C5CA2B70.png "点击放大") |
+| **占比类**  占比类适合在有多个数据总和时使用，可突出数据总和后各个数据的占比，从而突出表现各自份额。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.11577186966648414952107379497953_50001231000000_2800_47870BDB423D2DC384D3DFA67AE6E9EE4F32719F20BEC3057DBFB525C5CA2B70.png "点击放大") |
 |  |  |
-| **范围类**  范围类适用于显示一定数值范围内的某个具体数值或实际进度情况。数值环的两侧可分别指示数据范围的最小值和最大值。范围类控件调用 [Gauge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-gauge) 组件来实现。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.15933939704082962828166537658977:50001231000000:2800:0C57B8C0290AF1004DDC7CB8E32738D9E467E1C5140287264B21E4D4368B2025.png "点击放大") |
+| **范围类**  范围类适用于显示一定数值范围内的某个具体数值或实际进度情况。数值环的两侧可分别指示数据范围的最小值和最大值。范围类控件调用 [Gauge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-gauge) 组件来实现。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.15933939704082962828166537658977_50001231000000_2800_0C57B8C0290AF1004DDC7CB8E32738D9E467E1C5140287264B21E4D4368B2025.png "点击放大") |
 |  |  |
-| **线形数据条**  控件默认通过蒙层剪裁的方式对占比数据整体进行剪裁，提供 4vp 小圆角，满足正常场景下的显示。  针对不同高度两侧数据极小时，如上图右侧，均属于正常现象，当开发者修改圆角大小或数据条高度时，两侧数据会被挤压显示控件，数据正常现象，若不可接受可撑高数据条或缩小圆角解决。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.93497249424417391894427385295327:50001231000000:2800:FE492EF291956678DEFB9B5E6A252A041E7FBEF577121877A79F2145FAA0F6F6.png "点击放大") |
+| **线形数据条**  控件默认通过蒙层剪裁的方式对占比数据整体进行剪裁，提供 4vp 小圆角，满足正常场景下的显示。  针对不同高度两侧数据极小时，如上图右侧，均属于正常现象，当开发者修改圆角大小或数据条高度时，两侧数据会被挤压显示控件，数据正常现象，若不可接受可撑高数据条或缩小圆角解决。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.93497249424417391894427385295327_50001231000000_2800_FE492EF291956678DEFB9B5E6A252A041E7FBEF577121877A79F2145FAA0F6F6.png "点击放大") |
 
 ### 界面布局
 
@@ -50,19 +50,19 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/datapanel
 
 横屏左右布局时：左右分别减去 48vp 边距后，在剩余区域内按比例等分，在等分较窄的一边里，对比宽 (w) 和高 (h)，数值较小的为短边。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.31081175004336862834248907501333:50001231000000:2800:13637AA51DE0BD21734D43C40D6FDF96427B1113F3736C1B9F416E23076B223F.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213442.31081175004336862834248907501333_50001231000000_2800_13637AA51DE0BD21734D43C40D6FDF96427B1113F3736C1B9F416E23076B223F.jpg "点击放大")
 
 短边规则可以根据屏幕的面积大小，来提供更为合理的响应式布局。
 
 如同为手机竖屏情况下，针对屏幕小的手机会缩小上半部分圈的大小，让下半部分的内容展示出更多。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213443.36091292419303715269078511466097:50001231000000:2800:2F7B9DE54D0E17393F3DD1099D82ED54B2892C1B21919972B1FDC917F691E512.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213443.36091292419303715269078511466097_50001231000000_2800_2F7B9DE54D0E17393F3DD1099D82ED54B2892C1B21919972B1FDC917F691E512.jpg "点击放大")
 
 线性数据条在不同的容器内通过控制展示高度、宽度以及圆角属性，设计出更符合界面布局风格的控件样式。
 
 |  |  |  |
 | --- | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213443.01087740924581546858591143041226:50001231000000:2800:701FD8250A6F9F1B12870D8987B62904CD398AF62DA7533955D32C220BD2FE1B.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213443.67733390583368292822708202611768:50001231000000:2800:F040C3642AD4C20469A73BDE2986011B764D4887FF573F2582340827BB458DD1.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213443.16518577681663249199973125235748:50001231000000:2800:E3742257BC111C714A6653C813221954C8DF72EE1696DA7694C95649462C7EFA.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213443.01087740924581546858591143041226_50001231000000_2800_701FD8250A6F9F1B12870D8987B62904CD398AF62DA7533955D32C220BD2FE1B.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213443.67733390583368292822708202611768_50001231000000_2800_F040C3642AD4C20469A73BDE2986011B764D4887FF573F2582340827BB458DD1.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213443.16518577681663249199973125235748_50001231000000_2800_E3742257BC111C714A6653C813221954C8DF72EE1696DA7694C95649462C7EFA.png "点击放大") |
 | 大卡片或全屏中使用场景 | 小卡片中较高数据条场景 | 小卡片中缩小数据条场景 |
 
 ### 开发文档

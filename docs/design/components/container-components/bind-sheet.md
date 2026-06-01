@@ -9,7 +9,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet
 
 半模态面板是一种介于模态窗口和非模态窗口之间的设计元素，常用于需要用户注意但不完全阻断用户操作的场景。半模态面板应允许用户通过点击面板外部区域或特定的关闭按钮来关闭，且面板内的操作应尽量简化，避免复杂的交互流程。半模态的使用在手机端、平板及电脑设备中都极为广泛，在 HarmonyOS NEXT 中的半模态窗口会跟随设备屏幕和应用窗口的展示比例进行适当的布局适配，为用户提供最佳的使用体验。开发指导链接：详情可参照 [BindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#bindsheet) 相关文档介绍。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.46356877460626188040092412940073:50001231000000:2800:3B02BC486992849C6AC62B56A438CCBA705B3DE21D809D93B3485EAA240AED8D.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.46356877460626188040092412940073_50001231000000_2800_3B02BC486992849C6AC62B56A438CCBA705B3DE21D809D93B3485EAA240AED8D.jpg "点击放大")
 
 ### 如何使用
 
@@ -21,7 +21,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.33293088105932872468318172267365:50001231000000:2800:444691221BF048E7A32BC47B8C661C72CB68E14A2AF82256EEB2E0D13E4A0CF5.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.11045470404110450697028875560163:50001231000000:2800:8ADA84E9B101F27BAC4D73AB8F18785F1E49D3E52519B65A3FE331C678CC36E6.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.33293088105932872468318172267365_50001231000000_2800_444691221BF048E7A32BC47B8C661C72CB68E14A2AF82256EEB2E0D13E4A0CF5.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.11045470404110450697028875560163_50001231000000_2800_8ADA84E9B101F27BAC4D73AB8F18785F1E49D3E52519B65A3FE331C678CC36E6.png "点击放大") |
 | **模态型** | **非模态型** |
 
 ### 构成
@@ -34,9 +34,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet
 
 |  |  |
 | --- | --- |
-| **竖屏显示**  1、操作提示 (在面板尺寸包含多档位时自动显示)  2、标题 (业务可配置)  3、内容区 (可显示为 1-3 个档位)  4、遮罩  5、关闭按钮 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.04410621767641144214601221436887:50001231000000:2800:E57436B1BE7A7EF768609C8E562B2E6A143B69044FC4D167D0969D8737E720DC.png "点击放大") |
+| **竖屏显示**  1、操作提示 (在面板尺寸包含多档位时自动显示)  2、标题 (业务可配置)  3、内容区 (可显示为 1-3 个档位)  4、遮罩  5、关闭按钮 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.04410621767641144214601221436887_50001231000000_2800_E57436B1BE7A7EF768609C8E562B2E6A143B69044FC4D167D0969D8737E720DC.png "点击放大") |
 |  |  |
-| **横屏显示**  1、标题 (业务可配置)  2、内容区  3、遮罩  4、关闭按钮 (默认显示) | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.52628034346681560443976743907823:50001231000000:2800:68748CA8F20806C441DA0B5FE0D541C9F223108B433F2CBEB41BAB7CC29FE0F8.png "点击放大") |
+| **横屏显示**  1、标题 (业务可配置)  2、内容区  3、遮罩  4、关闭按钮 (默认显示) | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.52628034346681560443976743907823_50001231000000_2800_68748CA8F20806C441DA0B5FE0D541C9F223108B433F2CBEB41BAB7CC29FE0F8.png "点击放大") |
 
 **居中面板**
 
@@ -44,7 +44,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet
 
 |  |  |
 | --- | --- |
-| **横、竖屏**  1、标题 (业务可配置)  2、内容区 (没有档位切换)  3、遮罩  4、关闭按钮 (默认显示) | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.62570332774525215940818636923546:50001231000000:2800:822892A69606793C2869479D3151C95E85DA3C386661248956BD5CC96C0D46B1.png "点击放大") |
+| **横、竖屏**  1、标题 (业务可配置)  2、内容区 (没有档位切换)  3、遮罩  4、关闭按钮 (默认显示) | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.62570332774525215940818636923546_50001231000000_2800_822892A69606793C2869479D3151C95E85DA3C386661248956BD5CC96C0D46B1.png "点击放大") |
 
 **跟手面板**
 
@@ -52,7 +52,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet
 
 |  |  |
 | --- | --- |
-| **横、竖屏**  1、标题 (业务可配置)  2、内容区 (没有档位切换)  3、关闭按钮 (默认显示)  4、箭头 (自动指向触发位置) | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.91499502045785323472628316719239:50001231000000:2800:BE630E9AA43C83560A585F8FD6BEC8A584F22248F382E9D36AB6EC6DD14900E0.png "点击放大") |
+| **横、竖屏**  1、标题 (业务可配置)  2、内容区 (没有档位切换)  3、关闭按钮 (默认显示)  4、箭头 (自动指向触发位置) | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.91499502045785323472628316719239_50001231000000_2800_BE630E9AA43C83560A585F8FD6BEC8A584F22248F382E9D36AB6EC6DD14900E0.png "点击放大") |
 
 ### 交互规则
 
@@ -66,23 +66,23 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet
 * Medium：60%屏幕/窗口高度
 * Free：可完全自定义展示高度
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.22882665244140198723651244006438:50001231000000:2800:55CCC6E770C79C51E0E4F0D5DDA66B027D61CF19200289A75D91DA3B3D3FFA66.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.22882665244140198723651244006438_50001231000000_2800_55CCC6E770C79C51E0E4F0D5DDA66B027D61CF19200289A75D91DA3B3D3FFA66.png "点击放大")
 
 **底部面板的滑动响应优先级**
 
 |  |  |
 | --- | --- |
-| **在内容区域滑动时**  1.内容处于最顶部 (内容不可滚动时以此状态处理)  上滑时，优先向上扩展面板档位，如无档位可扩展，则滚动内容  下滑时，优先向下收缩面板档位，如无档位可收缩，则关闭面板  2.内容处于中间位置 (可上下滚动)  上/下滑时，优先滚动内容，直至页面内容到达底部/顶部  3.内容处于底部位置 (内容可滚动时)  上滑时，呈现内容区域回弹效果，不切换档位  下滑时，滚动内容直至到达顶部 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.29955426507162401009305194654589:50001231000000:2800:5348FE498228EC0E651DD153F199C8C7231DB28A2D03AB6BBC835994DE9D8502.png "点击放大") |
+| **在内容区域滑动时**  1.内容处于最顶部 (内容不可滚动时以此状态处理)  上滑时，优先向上扩展面板档位，如无档位可扩展，则滚动内容  下滑时，优先向下收缩面板档位，如无档位可收缩，则关闭面板  2.内容处于中间位置 (可上下滚动)  上/下滑时，优先滚动内容，直至页面内容到达底部/顶部  3.内容处于底部位置 (内容可滚动时)  上滑时，呈现内容区域回弹效果，不切换档位  下滑时，滚动内容直至到达顶部 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.29955426507162401009305194654589_50001231000000_2800_5348FE498228EC0E651DD153F199C8C7231DB28A2D03AB6BBC835994DE9D8502.png "点击放大") |
 |  |  |
-| **在标题栏区域滑动时**  1.上滑时  短滑向上切换至相邻较大档位  长滑可跨档位直接切换至最大状态  2.下滑时  短滑向下切换至相邻较小档位  长滑可跨档位直接关闭面板 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.49425045523991611907631768826355:50001231000000:2800:AEC5C9EEC3968FA5D79B989ED6FC2722A2A90D70D2C562E18451909656FCECAD.png "点击放大") |
+| **在标题栏区域滑动时**  1.上滑时  短滑向上切换至相邻较大档位  长滑可跨档位直接切换至最大状态  2.下滑时  短滑向下切换至相邻较小档位  长滑可跨档位直接关闭面板 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163654.49425045523991611907631768826355_50001231000000_2800_AEC5C9EEC3968FA5D79B989ED6FC2722A2A90D70D2C562E18451909656FCECAD.png "点击放大") |
 
 **面板的跳转**
 
 |  |  |
 | --- | --- |
-| **同一面板内页面转换**  标题栏：左侧显示页面层级信息  切换动效：面板不变，内容自右往左刷新  返回手势：逐级回退至上一步，直到关闭面板  关闭按钮：直接关闭整个面板 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.67390948100874186195835574869841:50001231000000:2800:C7DF1E87BA51AD12F9A6DDBA4A623C64CE4C0BBFA501FBEA471C59649E664965.png "点击放大") |
+| **同一面板内页面转换**  标题栏：左侧显示页面层级信息  切换动效：面板不变，内容自右往左刷新  返回手势：逐级回退至上一步，直到关闭面板  关闭按钮：直接关闭整个面板 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.67390948100874186195835574869841_50001231000000_2800_C7DF1E87BA51AD12F9A6DDBA4A623C64CE4C0BBFA501FBEA471C59649E664965.png "点击放大") |
 |  |  |
-| **多重面板**  标题栏：显示新面板的标题，与之前面板无关  切换动效：从底部弹出新的面板  返回手势：先响应上层面板，逐级回退直到关闭上层面板，再操作下层面板  关闭按钮：先关闭上层面板，再关闭下层面板 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.11169789460082292826502492500713:50001231000000:2800:BB0D30C0CB63454C21BF3B513867DEC9DBB9980A3DA150FD6E82E92F2817B31A.png "点击放大") |
+| **多重面板**  标题栏：显示新面板的标题，与之前面板无关  切换动效：从底部弹出新的面板  返回手势：先响应上层面板，逐级回退直到关闭上层面板，再操作下层面板  关闭按钮：先关闭上层面板，再关闭下层面板 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.11169789460082292826502492500713_50001231000000_2800_BB0D30C0CB63454C21BF3B513867DEC9DBB9980A3DA150FD6E82E92F2817B31A.png "点击放大") |
 
 ### 视觉规则
 
@@ -106,7 +106,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.77439402093886765031931896272873:50001231000000:2800:B590BCBDFCB991CD6618DFF854D623EA41EEECB67CBE930CDD2AF67B7F0FFAE4.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.52349422765918472603713009600390:50001231000000:2800:99760122CC4BE1EADB2FFFEF319FBF34259F254267FFA0AC7AE72C32AF19E80A.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.77439402093886765031931896272873_50001231000000_2800_B590BCBDFCB991CD6618DFF854D623EA41EEECB67CBE930CDD2AF67B7F0FFAE4.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.52349422765918472603713009600390_50001231000000_2800_99760122CC4BE1EADB2FFFEF319FBF34259F254267FFA0AC7AE72C32AF19E80A.png "点击放大") |
 | 单行标题 | 双行标题 |
 
 ### 半模态比例与显示布局
@@ -117,12 +117,12 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet
 
 |  |  |  |
 | --- | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.53878496652497570913525281500212:50001231000000:2800:1A92D425399A1DCD72A8164821551D549CF6437966F986ACCD018DAB80D2F311.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.37879173796795725609237927572631:50001231000000:2800:BEC72C323D839B12D6CF0A61E0991BD4E87D14F596A890B7031D2425D87D3F2A.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.74518688800572635509896877808414:50001231000000:2800:5E93257B487EEA567C71001A0F82A553D4BE93569CA79DC45B4A95579DDFBBBD.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.53878496652497570913525281500212_50001231000000_2800_1A92D425399A1DCD72A8164821551D549CF6437966F986ACCD018DAB80D2F311.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.37879173796795725609237927572631_50001231000000_2800_BEC72C323D839B12D6CF0A61E0991BD4E87D14F596A890B7031D2425D87D3F2A.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.74518688800572635509896877808414_50001231000000_2800_5E93257B487EEA567C71001A0F82A553D4BE93569CA79DC45B4A95579DDFBBBD.png "点击放大") |
 | **Size-Regular**  默认最大尺寸高度距离信号栏保持 8vp 间距 | **Size-Medium**  高度为屏幕高度的 60% | **Size-Free**  可自定义半模态高度尺寸或据内容高度自适应 |
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.56618869542500471498679623800148:50001231000000:2800:12ED015EB7B9A2717136D56AF828FB663C6569E3730B005C740BF2A0481BC1EE.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.56618869542500471498679623800148_50001231000000_2800_12ED015EB7B9A2717136D56AF828FB663C6569E3730B005C740BF2A0481BC1EE.png "点击放大") |
 | 手机横屏时保持宽度 480vp 最大宽度，高度距离屏幕顶部 8vp 安全间距 |
 
 **平板通用尺寸规格**
@@ -131,20 +131,20 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.88595759701474034565918199256031:50001231000000:2800:547525BCEB9640DC75394B69F57A6C8118EBD261381F4F9223CE43D3B2320F6B.png "点击放大") | |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.88595759701474034565918199256031_50001231000000_2800_547525BCEB9640DC75394B69F57A6C8118EBD261381F4F9223CE43D3B2320F6B.png "点击放大") | |
 | 半模态默认高度为 560vp，宽度默认为 480vp，背景覆盖蒙层 | |
 |  |  |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.41525783406784515600521575859049:50001231000000:2800:E5C7F3B00FC225A644331EC4AEE45B85341A83EAC883DAD84E8EAD8423E153B0.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.56469336526254162669822532230737:50001231000000:2800:A32E6E7D5A1F1A3C22072A3F986214A5D818F429F363D883E03F5C7D9660B8E1.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.41525783406784515600521575859049_50001231000000_2800_E5C7F3B00FC225A644331EC4AEE45B85341A83EAC883DAD84E8EAD8423E153B0.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163655.56469336526254162669822532230737_50001231000000_2800_A32E6E7D5A1F1A3C22072A3F986214A5D818F429F363D883E03F5C7D9660B8E1.png "点击放大") |
 | 半模态最小高度为 320vp | 半模态最大高度为屏幕短边的 90% 高度 |
 |  |  |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163656.17511803968647730674838347254529:50001231000000:2800:B89E1BBA3C5C6488401CE24E4DBA149C2DFDDF3617D0E9D5A3027A9F476EF22C.png "点击放大") | |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163656.17511803968647730674838347254529_50001231000000_2800_B89E1BBA3C5C6488401CE24E4DBA149C2DFDDF3617D0E9D5A3027A9F476EF22C.png "点击放大") | |
 | 半模态内容在更大屏幕上可以选择使用 Popup 容器承载，容器宽度保持默认 400vp，高度与半模态形式规格一致。半模态的尖角始终与指向目标保持 8vp 间距。 | |
 
 **电脑设备**
 
 在电脑设备中半模态的最大高度规则始终保持为窗口高度的90%，跟随窗口高度拉伸。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163656.98541582401409883332142066436206:50001231000000:2800:24F844920714D6D14E38FD89DECF95C1BF5342FFECE39E4C0E1CF29640C81D8E.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251120163656.98541582401409883332142066436206_50001231000000_2800_24F844920714D6D14E38FD89DECF95C1BF5342FFECE39E4C0E1CF29640C81D8E.png "点击放大")
 
 ### 开发文档
 

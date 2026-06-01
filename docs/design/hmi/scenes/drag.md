@@ -47,7 +47,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 
 |  |  |
 | --- | --- |
-| 拖拽的流程为发起拖拽、拖拽中、释放拖拽三个阶段。用户可通过多种输入源发起拖拽，不同输入源的拖拽操作会有一定差异。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.15313997262470043286874650362204:50001231000000:2800:64A512E88850209664BF4E5115F1D2D95E9D148F67AFE4624BA1219453AF549B.png "点击放大") |
+| 拖拽的流程为发起拖拽、拖拽中、释放拖拽三个阶段。用户可通过多种输入源发起拖拽，不同输入源的拖拽操作会有一定差异。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.15313997262470043286874650362204_50001231000000_2800_64A512E88850209664BF4E5115F1D2D95E9D148F67AFE4624BA1219453AF549B.png "点击放大") |
 
 ### 发起拖拽
 
@@ -59,10 +59,10 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 
 |  |  |
 | --- | --- |
-| **选中对象**  文本类对象需要先进入选中态后才能发起拖拽。内容类对象长按即可直接选中发起拖拽。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.87009745492565319002006722772822:50001231000000:2800:66A76A1D2154876B29DB3C89FF1BDDD6CCCB198EFCBB4C4B318026A6D99E7929.png "点击放大") |
-| **长按浮起**  长按拖拽对象浮起可拖拽对象的预览图，并伴随着震动反馈。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.76725727754227549703794966254662:50001231000000:2800:0DF35F1B61E04DE739DC5966BDD40C15E4AE167EE5B09378E2D90BD107CEF666.png "点击放大") |
+| **选中对象**  文本类对象需要先进入选中态后才能发起拖拽。内容类对象长按即可直接选中发起拖拽。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.87009745492565319002006722772822_50001231000000_2800_66A76A1D2154876B29DB3C89FF1BDDD6CCCB198EFCBB4C4B318026A6D99E7929.png "点击放大") |
+| **长按浮起**  长按拖拽对象浮起可拖拽对象的预览图，并伴随着震动反馈。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.76725727754227549703794966254662_50001231000000_2800_0DF35F1B61E04DE739DC5966BDD40C15E4AE167EE5B09378E2D90BD107CEF666.png "点击放大") |
 | **长按悬浮菜单和拖拽的关系**  1.长按内容浮起  长按后移动可直接发起拖拽  2.预览内容可中断  一直长按会出现预览内容，在预览内容出现前可被打断。  3.一直长按可出现预览菜单，不抬手对预览内容可直接发起拖拽，抬手后也可以直接发起拖拽。 |  |
-| **移动发起拖拽**  移动后完成发起拖拽的行为，原对象灰显 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.17895491731050176656873840106644:50001231000000:2800:CB36787153E18145B0D59AB1132881D1F428007EC205B87B1758C1C06E72A40E.png "点击放大") |
+| **移动发起拖拽**  移动后完成发起拖拽的行为，原对象灰显 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.17895491731050176656873840106644_50001231000000_2800_CB36787153E18145B0D59AB1132881D1F428007EC205B87B1758C1C06E72A40E.png "点击放大") |
 
 **拖拽对象的显示缩放规则**
 
@@ -71,7 +71,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 |  |  |  |
 | --- | --- | --- |
 | **对象不缩放跟手移动** | **对象缩放** | **对象插入文本光标下位移** |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.61943716284967053555351490875755:50001231000000:2800:01D4D16CFBDA45ADEF6DE14E345A8002D5D83A5783E3DED7B99A18DAE579ACCB.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.84633239972890163794578506134133:50001231000000:2800:A267B4BD5877454143BD93A1AA52A0D1B27F47476EC913C9647F9DDEA49D09AA.png "点击放大") |  |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.61943716284967053555351490875755_50001231000000_2800_01D4D16CFBDA45ADEF6DE14E345A8002D5D83A5783E3DED7B99A18DAE579ACCB.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.84633239972890163794578506134133_50001231000000_2800_A267B4BD5877454143BD93A1AA52A0D1B27F47476EC913C9647F9DDEA49D09AA.png "点击放大") |  |
 | 对象不需要缩放的场景下，对象保持原大小，拖拽交互时跟手移动。 | 对象较大时，需等比例缩放 | 光标在拖拽对象的上方显示  手指在拖拽对象的顶部居中的位置 |
 
 **多个对象拖出**
@@ -83,7 +83,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 
 |  |  |
 | --- | --- |
-|  | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.70519627863716275717267004895946:50001231000000:2800:CA3A8EF781A07B833152DDE07834EF20B81B82CB4F0137AD719CC8DA2F860663.png "点击放大") |
+|  | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.70519627863716275717267004895946_50001231000000_2800_CA3A8EF781A07B833152DDE07834EF20B81B82CB4F0137AD719CC8DA2F860663.png "点击放大") |
 | 多选聚拢效果 | 多选聚合带有数量角标 |
 
 **云端文件处理**
@@ -96,9 +96,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| **选中对象**  文本类对象需要先进入选中态后才能发起拖拽。内容类对象按住即可直接选中发起拖拽。 | | | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.53412419725428021976836853333324:50001231000000:2800:BF58A151B1230C2861D6883CBB4F1FCD30512E4F5D5A267FCAC2BC03566F6BEA.png "点击放大") |
-| **移动拖拽**  选中对象后，移动即可拖拽，原对象显示灰色。 | | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.60233518667341385005478681885442:50001231000000:2800:DF773E494C27479850DF32DC86F475D4C46C7C0EC390B9BA838C23C6E4B4E1F4.jpg "点击放大") | |
-| **丢手选中态保留**  浮起选中内容后直接丢手，选中状态保留。  复制拖拽后，原元素选中状态保留。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.61708972119454043623529660747679:50001231000000:2800:59ABE50CA0BA13CCE5D0A8F81ACABF1AD4998CBF5CA08EB6121F0A2736557986.png "点击放大") | | |
+| **选中对象**  文本类对象需要先进入选中态后才能发起拖拽。内容类对象按住即可直接选中发起拖拽。 | | | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215617.53412419725428021976836853333324_50001231000000_2800_BF58A151B1230C2861D6883CBB4F1FCD30512E4F5D5A267FCAC2BC03566F6BEA.png "点击放大") |
+| **移动拖拽**  选中对象后，移动即可拖拽，原对象显示灰色。 | | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.60233518667341385005478681885442_50001231000000_2800_DF773E494C27479850DF32DC86F475D4C46C7C0EC390B9BA838C23C6E4B4E1F4.jpg "点击放大") | |
+| **丢手选中态保留**  浮起选中内容后直接丢手，选中状态保留。  复制拖拽后，原元素选中状态保留。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.61708972119454043623529660747679_50001231000000_2800_59ABE50CA0BA13CCE5D0A8F81ACABF1AD4998CBF5CA08EB6121F0A2736557986.png "点击放大") | | |
 
 **多个元素拖拽**
 
@@ -108,7 +108,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.87288646546109816256295740541183:50001231000000:2800:70B78CFE37B1AA31C359D0698225CAAEB18D744C1F324AA0D8B7768C490BEB2F.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.78443584735234097666455802385788:50001231000000:2800:3B55377108C2EAE274EE048AAFC6D68C57F5B7AB611FC2644DF8332B5A8B58EC.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.87288646546109816256295740541183_50001231000000_2800_70B78CFE37B1AA31C359D0698225CAAEB18D744C1F324AA0D8B7768C490BEB2F.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.78443584735234097666455802385788_50001231000000_2800_3B55377108C2EAE274EE048AAFC6D68C57F5B7AB611FC2644DF8332B5A8B58EC.png "点击放大") |
 | 多选对象默认聚拢右上角显示拖拽数量角标 | 应用可配置桌不聚拢直接拖拽，拖拽状态显示在角标下方 |
 
 ### 拖拽中
@@ -131,16 +131,16 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.17620863490093704317671171158726:50001231000000:2800:4097043EE6333D14244E3E2E248BBD6D96CBB0125D41FC54687F55C381CD49CA.png "点击放大") |  |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.17620863490093704317671171158726_50001231000000_2800_4097043EE6333D14244E3E2E248BBD6D96CBB0125D41FC54687F55C381CD49CA.png "点击放大") |  |
 | 多指滚屏 |  |
 
 **拖拽抵达边缘可触发滚屏**
 
 |  |  |
 | --- | --- |
-| 拖拽抵达页面边缘后可触发滚屏 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.94521497823804280197856022325688:50001231000000:2800:5A97FBFAB459D03E3695DA28EADACC7D981474FF2EFB3B75736A2A1D7BB0CAFF.png "点击放大") |
-| 当拖拽对象进入文本编辑界面时，当光标处于屏幕可见区域的第一行或者最后一行时，用户继续往上或往下挪动，页面往下或往上滚动以便用户插入光标的位置。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.36168216059276524024127578104464:50001231000000:2800:443C1943ABFAD89751399F5FCA9A7DFAB1E96FBE72CE3E3B9DFDB7FEB964DD1C.png "点击放大") |
-| **移动拖拽**  将对象拖拽至相应的区域后，右上角角标状态基于实际状态进行切换，提示用户状态的变化。有移动、复制的单个或多个的状态。若该区域不接收拖拽或因格式问题无法接收当前拖拽的对象，则呈现为移动状态。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.20724653922662028282172395335787:50001231000000:2800:2F13A03858E1C1BA834091B998C4625DD513C55F384532AC00ACF3EA53DB811E.png "点击放大") |
+| 拖拽抵达页面边缘后可触发滚屏 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.94521497823804280197856022325688_50001231000000_2800_5A97FBFAB459D03E3695DA28EADACC7D981474FF2EFB3B75736A2A1D7BB0CAFF.png "点击放大") |
+| 当拖拽对象进入文本编辑界面时，当光标处于屏幕可见区域的第一行或者最后一行时，用户继续往上或往下挪动，页面往下或往上滚动以便用户插入光标的位置。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.36168216059276524024127578104464_50001231000000_2800_443C1943ABFAD89751399F5FCA9A7DFAB1E96FBE72CE3E3B9DFDB7FEB964DD1C.png "点击放大") |
+| **移动拖拽**  将对象拖拽至相应的区域后，右上角角标状态基于实际状态进行切换，提示用户状态的变化。有移动、复制的单个或多个的状态。若该区域不接收拖拽或因格式问题无法接收当前拖拽的对象，则呈现为移动状态。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215618.20724653922662028282172395335787_50001231000000_2800_2F13A03858E1C1BA834091B998C4625DD513C55F384532AC00ACF3EA53DB811E.png "点击放大") |
 
 ## 鼠标拖拽中
 

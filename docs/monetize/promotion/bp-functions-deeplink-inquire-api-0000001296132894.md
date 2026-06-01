@@ -13,7 +13,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 接口调用者的角色：账号持有者、管理员、App管理员、运营。
 
-![](./img/0000000000011111111.20251117124646.94722006804483811889682712390627:50001231000000:2800:19887E055D0711F46E8B6E6571EA08A3110855F774E16ADDA3C7E82F40C0D9DA_32769364e6c7.png) 
+![](./img/0000000000011111111.20251117124646.94722006804483811889682712390627_50001231000000_2800_19887E055D0711F46E8B6E6571EA08A3110855F774E16ADDA3C7E82F40C0D9DA_32769364e6c7.png) 
 
 - 用户已关闭限制广告标识符开关。
 - 仅用户首次打开通过配置延迟Deeplink任务下载的应用时才可以发起接口调用。
@@ -37,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 | client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)。 |
 | Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-token-0000001238324536)中获取的access\_token。 |
 
-![](./img/0000000000011111111.20251117124646.41333127305596089673466427173064:50001231000000:2800:23B936F8355B8F6F3F0E650FD7B622C989BFC4BEE80D8DDBAF43BAAF3DEC4FFD_e57bd6d73bfe.png) 
+![](./img/0000000000011111111.20251117124646.41333127305596089673466427173064_50001231000000_2800_23B936F8355B8F6F3F0E650FD7B622C989BFC4BEE80D8DDBAF43BAAF3DEC4FFD_e57bd6d73bfe.png) 
 
 - 若您为直客，请直接使用您的开发者账号创建API客户端和获取Access Token。
 - 若您为客户投放伙伴，需要使用<strong>客户投放伙伴主账户</strong>创建API客户端和获取Access Token。

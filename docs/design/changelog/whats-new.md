@@ -160,9 +160,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/whats-new
 2. [HarmonyOS 3.1/4.0](https://developer.huawei.com/consumer/cn/doc/design-guides-V1/overview-0000001053563071-V1) 版本不支持全站搜索，支持使用文档包内搜索。
    * 文档包内搜索框入口位于导航栏上方
 
-   ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260209103803.79789656876888960490397152330466:50001231000000:2800:89287D31D0857F3E444FEFAE54F32C81ECA58F5890F2FEA7160A517253B20096.png "点击放大")
+   ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260209103803.79789656876888960490397152330466_50001231000000_2800_89287D31D0857F3E444FEFAE54F32C81ECA58F5890F2FEA7160A517253B20096.png "点击放大")
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260209103803.16897046187353886190472982868425:50001231000000:2800:583B4E9FA2055B15E78C488ACEFB0B0929CB1ABC4E693F81A6B9889E71F833A4.png)
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260209103803.16897046187353886190472982868425_50001231000000_2800_583B4E9FA2055B15E78C488ACEFB0B0929CB1ABC4E693F81A6B9889E71F833A4.png)
 
 **变更原因**：为解决官网全站搜索场景下搜索结果重复项多的问题（存在多个版本相同内容搜索结果），开发者联盟官网优化搜索机制，已归档版本不支持全站搜索。
 

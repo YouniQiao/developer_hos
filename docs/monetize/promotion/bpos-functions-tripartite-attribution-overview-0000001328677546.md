@@ -29,7 +29,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functi
    | [Kochava](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565) | 否 | / |
    | [Sizmek](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-sizmek-0000001328517630) | 是 | [Sizmek](https://advertising.amazon.com/en-us/solutions/products/sizmek-ad-suite?ref_=a20m_us_hnav_lng_en_us)官网 |
 
-   ![](./img/0000000000011111111.20250123103532.71818030566916411343035813630025:50001231000000:2800:F2AB53D2A8FFEE43FD48E962D5FE8BCCA922D47EABA92E77279837C8A06223CD_097bfb5737ce.png) 
+   ![](./img/0000000000011111111.20250123103532.71818030566916411343035813630025_50001231000000_2800_F2AB53D2A8FFEE43FD48E962D5FE8BCCA922D47EABA92E77279837C8A06223CD_097bfb5737ce.png) 
 
    - 如果您后期修改了关联分析工具中的曝光/点击监测链接，您需要重新对任意一个指标进行手动测试，测试成功后新的曝光/点击监测链接才生效，其他的指标启用状态，与修改链接前保持一致。
    - 如果您使用的监测链接未包含Referrer参数（例如：af\_ref=\_\_REFERRER\_\_），请重新在三方监测平台拷贝监测链接并填入鲸鸿动能广告。
@@ -42,6 +42,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functi
 
    您在上传广告创意时，系统将会自动关联到创意中的曝光/点击监测链接（自动关联的链接不要修改，避免影响跟踪数据）。
 
-   ![](./img/0000000000011111111.20250123103532.24833124444562720313401039863521:50001231000000:2800:3346C585056AC547C21F12970B4983C5FB1A001D1A55C489129BC84C8294E202_3edd7911ba34.png) 
+   ![](./img/0000000000011111111.20250123103532.24833124444562720313401039863521_50001231000000_2800_3346C585056AC547C21F12970B4983C5FB1A001D1A55C489129BC84C8294E202_3edd7911ba34.png) 
 
    如果您后期修改了关联分析工具中的曝光/点击监测链接，投放网络为展示广告的任务，修改后的监测链接将自动同步到任务中；投放网络为应用市场的任务，您需要编辑任务，进入到创意，重新点击“提交”，此时监测链接生效。

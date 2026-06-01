@@ -17,7 +17,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
    - 如果Cursor为空，表示没有相应延迟Deeplink信息，可能的原因请参考如下说明。
    - 如果Cursor不为空，您可以使用Cursor.getString(0)获取延迟Deeplink信息。
 
-     ![](./img/0000000000011111111.20251117124644.41654294500096393846761454906867:50001231000000:2800:CBAD3899F9E3B3CBAC8F6A6829AA0ED794CEA404929BD97763D29918A32A6B51_0a6b2bf206ad.png) 
+     ![](./img/0000000000011111111.20251117124644.41654294500096393846761454906867_50001231000000_2800_CBAD3899F9E3B3CBAC8F6A6829AA0ED794CEA404929BD97763D29918A32A6B51_0a6b2bf206ad.png) 
 
      - 应用只能查询其自身的延迟Deeplink信息，延迟Deeplink信息在应用市场客户端保存有效期为7天。
      - 用户手动清空华为应用市场缓存，会造成延迟Deeplink数据的缺失。
