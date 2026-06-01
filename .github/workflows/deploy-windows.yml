@@ -12,6 +12,7 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: [self-hosted, Windows]
+    timeout-minutes: 360
     env:
       http_proxy: ${{ secrets.PROXY_URL }}
       https_proxy: ${{ secrets.PROXY_URL }}
@@ -20,6 +21,7 @@ jobs:
         shell: powershell
     steps:
       - name: Checkout (incremental)
+        timeout-minutes: 360
         run: |
           # Enable long path support for Windows (260+ char paths)
           git config --global core.longpaths true
@@ -36,6 +38,7 @@ jobs:
           node-version: '20'
 
       - name: Install deps (cached)
+        timeout-minutes: 360
         run: |
           $lockHash = (Get-FileHash package-lock.json).Hash
           $cacheFile = "$env:TEMP\hos-lockfile-hash"
@@ -54,7 +57,7 @@ jobs:
           }
 
       - name: Build (cached)
-        timeout-minutes: 120
+        timeout-minutes: 360
         env:
           NODE_OPTIONS: '--max-old-space-size=8192'
           GENERATE_SOURCEMAP: 'false'
