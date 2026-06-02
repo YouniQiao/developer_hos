@@ -22,7 +22,7 @@ const NAV_ITEMS = [
   },
   {
     label: '元服务开发',
-    path: '/docs/dev/atomic-dev/overview',
+    path: '/docs/dev/atomic-dev/ascf/ascf-overview',
     match: '/docs/dev/atomic-dev',
     desc: '轻量化元服务开发指南',
   },

@@ -31,6 +31,7 @@ const config = {
 
   onBrokenLinks: 'warn',
   markdown: {
+    format: 'md',
     hooks: {
       onBrokenMarkdownLinks: 'warn',
       onBrokenMarkdownImages: 'warn',
@@ -151,19 +152,6 @@ const config = {
             ],
           },
           {
-            label: 'DevEco Studio',
-            type: 'dropdown',
-            to: '/docs/tools/overview',
-            className: 'mega-dropdown',
-            items: [
-              {
-                type: 'html',
-                value: navDevecoHTML,
-                className: 'mega-dropdown',
-              },
-            ],
-          },
-          {
             to: '/update',
             label: '更新记录与计划',
             position: 'right',
@@ -172,6 +160,26 @@ const config = {
             href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-references/development-intro-api',
             label: 'API参考',
             position: 'right',
+            target: '_blank',
+            rel: 'noopener noreferrer',
+          },
+          {
+            href: 'https://arkts.cool/',
+            label: 'ArkTS',
+            position: 'right',
+            target: '_blank',
+            rel: 'noopener noreferrer',
+          },
+          {
+            to: '/docs/tools/coding-debug/ide-tools-overview',
+            label: '工具',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/YouniQiao/developer_hos/tree/master/docs',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },

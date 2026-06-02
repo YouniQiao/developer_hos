@@ -41,7 +41,7 @@ SECTIONS = {
     },
     "atomic": {
         "catalog_name": "atomic-guides",
-        "local_dir": "docs/atomic",
+        "local_dir": "docs/dev/atomic-dev",
         "catalog_obj": "atomic-service-definition",
         "source_prefix": "https://developer.huawei.com/consumer/cn/doc/atomic-guides/",
         "flat": False,
