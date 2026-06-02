@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/menu-0000
 
 一种临时性弹出窗口，用于展示用户可执行的操作。开发相关描述请参考 [Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213459.87645213886481713801185716806669_50001231000000_2800_A807A268D5C0D1108FE300E639A09B04E3B7B54C15975C16AB6D687344AAD1B6.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/A807A268D5C0.jpg "点击放大")
 
 ### 如何使用
 
@@ -17,29 +17,29 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/menu-0000
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213459.51710626883043434918898822923694_50001231000000_2800_EFAFCFFC3305FDEBE2B977FBE265AD4F46B5B1D5205550D88EE7BDDDCF2C52B7.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.48299066858520998895321330576264_50001231000000_2800_F7E516FE1AAA80D7BC18F840F10B668A059A2F5C6BCADE5112F898DA10FC7D29.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/EFAFCFFC3305.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/F7E516FE1AAA.png "点击放大") |
 | **普通菜单** | **带图标样式菜单** |
 |  |  |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.90032641889807848734108121321190_50001231000000_2800_2DB31448D64E0F1AE4CE528A7D51D0B5498CC098F98A945034B852643A43E5A3.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.58762885209659504681698309552718_50001231000000_2800_FDE921F1E2513CAFFAB8D94F4837DBB1F8A15A051EACD2A9363BC7BB511828F5.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/2DB31448D64E.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/FDE921F1E251.png "点击放大") |
 | **带标题样式菜单** | **多级菜单-原地展开类型** |
 |  |  |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.49751632561577074978433022935263_50001231000000_2800_92BF6008BF21A503BABB3B9465E0A932CD11B5549790AB6DD37FB64755C8B0AE.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.53372070118522653064532179355566_50001231000000_2800_F7BB42B05175DEF8CBF849B7E2DB0CF7F82BD0F89761312E792E5A39BD00B175.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/92BF6008BF21.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/F7BB42B05175.png "点击放大") |
 | **多级菜单-层叠类型** | **长按悬浮菜单** |
 |  |  |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.63158714765669818324476395500567_50001231000000_2800_FF6EF5F038F210A4136C21A2165917D9B673C8150052513BD294B7FA322E6AC2.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.86865588256215906287782214570387_50001231000000_2800_042438165B439263BF14296F707996109EBF42F047905570D0E627AB018BBB17.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/FF6EF5F038F2.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/042438165B43.png "点击放大") |
 | **多级菜单-上下文** | **指向型菜单** |
 
 ### 响应式布局
 
 **手机**
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213500.62794322146019929260359349238540_50001231000000_2800_3E579BD86970F488975B2B343115C6C6F57ADC6B18B5602405F35FDCB3946DD2.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/3E579BD86970.png "点击放大")
 
 泛手机统一宽度为固定 224vp
 
 **电脑设备**
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213501.19682370621457192200940601779803_50001231000000_2800_088A982BEA842589E802A9F3409C0A1C3E5CBDF9DD51027AB1CF06AC499F82AA.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/088A982BEA84.png "点击放大")
 
 电脑菜单宽度根据内容自适应，默认最小宽度 224vp，可配置菜单最小宽度，但不得低于 64vp
 

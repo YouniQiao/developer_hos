@@ -15,7 +15,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 - 推广主包信息 \{ "channel":"0","callback":"security:xxxxx ","taskid":"xxxxx" ,"subTaskId":"xxxxx","RTAID":"xxxxx"\}
 - 其余非客户设置乱码可忽略
 
-![](./img/0000000000011111111.20251201101510.84377802452865227884143196915224_50001231000000_2800_2BECE35F9D234560D149FD79D1A6EC505A36BAB96ECEC9D23C004A4570F27BD8_dab14ecdbe58.png) 
+![](./img/dab14ecdbe58.png) 
 
 trackId为空的部分，包含一定的低版本应用市场推广量。
 

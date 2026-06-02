@@ -39,12 +39,12 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-
 
 1. 获取协作者华为账号的鲸鸿动能广告账户ID：使用未注册过鲸鸿动能广告账户的华为账号登录[鲸鸿动能广告平台](https://ads.huawei.com/usermgtportal/home/index.html#/)，复制右上角的账户ID。
 
-   ![](./img/0000000000011111111.20250909115211.87822449350747210908042622229368_50001231000000_2800_1240719D506417EF093C75D1C09A63DB67888E9CFD4C9E5B20AED610CA699405_798c32f89ab7.png "点击放大")
+   ![](./img/798c32f89ab7.png "点击放大")
 
 2. 登录[服务商平台](https://ads.huawei.com/ag/html/index.html#/account/collaborators)，点击“<strong>账号管理</strong>”&gt;“<strong>协作者管理</strong>”&gt;“<strong>添加协作者</strong>”。
 3. 选择<strong>角色类型</strong>，每次只能添加一种角色，输入鲸鸿动能广告账户ID。
 
-   ![](./img/0000000000011111111.20250909115211.94982545485358110439418133681832_50001231000000_2800_9245DDAA46532032F022B224DF8A5FBCB31E19722AB5FBA8995D31A81BB9EA74_f6dcccd980ce.png)
+   ![](./img/f6dcccd980ce.png)
 
 4. 分配账户，具体请参考[管理协作者](#ZH-CN_TOPIC_0000001379837549__section15695171611183)。
 
@@ -52,7 +52,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-
 
 账户持有者可以查看协作者列表，对协作者进行成员分配、查看、编辑、删除等操作。
 
-![](./img/0000000000011111111.20250909115211.32454948400476061161120626418741_50001231000000_2800_3E5EEC4DED14D4472764EFE2D58E66A4F25E8A95B9FEDED7F5F37CCEBCC57051_76da7cb37909.png)
+![](./img/76da7cb37909.png)
 
 - <strong>成员分配</strong>：服务商/子客服务商可以将下一级的账户分配给每个角色（观察员、财务、操作员），此时每个角色拥有账户的不同权限，具体请参考[角色权限](#ZH-CN_TOPIC_0000001379837549__table488mcpsimp)。
 - <strong>查看成员数量</strong>：点击每个协作者的成员数量列，您可以看到其管理的账户ID和企业名称。

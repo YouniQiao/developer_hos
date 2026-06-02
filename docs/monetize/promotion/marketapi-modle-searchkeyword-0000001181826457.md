@@ -5,7 +5,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-m
 ---
 # SearchkeyWord
 
-![](./img/0000000000011111111.20251117124649.30679295168071192272541428743361_50001231000000_2800_07242593074DD80DE2B427C31E8D0C0E6AE7D3122A994C1987E3299E03A57338_be29a47a5d57.png) 
+![](./img/be29a47a5d57.png) 
 
 - 关键词删除场景：
   - subTaskId非空时，keyword、matchType、price非必填。

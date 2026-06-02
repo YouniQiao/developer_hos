@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/subheader
 
 用来组织界面内容，根据层级将其划成区块，并概括该区块内容。子标题样式及属性配置信息请参考 [SubHeader](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-subheader) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213427.38784093552574201216767382245141_50001231000000_2800_9DAE51EFC67C81978AAB929EEBFA915F07A01FE60F22DE34D4F01913FBC30DEB.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/9DAE51EFC67C.jpg "点击放大")
 
 ### 如何使用
 
@@ -27,7 +27,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/subheader
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213427.89662670437280081658987139737742_50001231000000_2800_DF8DC4C658868C66705354C32021F8EA0F5D859DACC9E84AA5920B004C1AFB5E.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213427.93041847242879883351203983133218_50001231000000_2800_D4D080C12AF8E4A4249E1E448C62D9CD0CDA876085C1DEB0F8B06CF4D1875A03.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/DF8DC4C65886.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/D4D080C12AF8.png "点击放大") |
 | 列表子标题示意图 | 内容子标题示意图 |
 
 **默认样式**
@@ -36,24 +36,24 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/subheader
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213427.75447936213271481601417432010731_50001231000000_2800_18388DB6915A604D440337F80401476934EFDC1E043EF19F2FF50E67C4414AFA.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213427.84357848542805064294718637582397_50001231000000_2800_0D826A940C15DDC187CA34AEE759F54AD16FADA874D8518171AA0C2583DA4DDC.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/18388DB6915A.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0D826A940C15.png "点击放大") |
 | **左侧元素**  左侧一般为展示文本内容，分为主标题和辅助标题两种，均可单独使用。 | **右侧元素**  右侧多为功能性元素，以执行操作行为为主，主要通过点击事件激活对应的跳转和命令执行行为。 |
 
 **布局规则**
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213427.08708658221809169821766500165976_50001231000000_2800_703813381454795C2134D18721992CA6CCA7FC0AA70DFB77AEB90549B6214D33.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213428.87035686564809279042937496498527_50001231000000_2800_395CAAC464917658EE83CDB4AC760C313F7B9CAB9657CACDEA554139EEDC50E2.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/703813381454.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/395CAAC46491.png "点击放大") |
 | 列表子标题默认与文本对齐，可能出现内容直接显示在界面中或出现在卡片组合内。无论哪种出现方式，列表子标题始终与文本保持对齐。 | 在无卡片背板的界面中，子标题默认与文本左右对齐，按照设备默认 margin 进行布局。 |
 |  |  |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213428.31429895790640148839427255697369_50001231000000_2800_720F5F59C1A1F27D32438FBE566DFE452C5942327B1D8AAA86DEA3BFCC1AF23D.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213428.43638307010889928136690815174517_50001231000000_2800_ECD22449C2E4D1F943A608507CB2AA6441F8AE54422AAED64BFB0ADB1EFC2C3D.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/720F5F59C1A1.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/ECD22449C2E4.png "点击放大") |
 | 内容子标题始终与界面宫格、卡片、图片边缘对齐。当内容子标题出现在多个宫格组合上方时，默认与宫格左侧对齐处理。 | 若内容子标题使用在卡片场景内，默认左右预留 12vp 间距。 |
 
 **穿戴设备****子标题**
 
 用来组织界面内容，根据层级将其划成区块，并概括该区块内容。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213428.80960115520256535980390863802513_50001231000000_2800_5736E1EA41E6DD1C66EFB3937F428180336F940DEEA62CF130C57D8DF489A5A5.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/5736E1EA41E6.png "点击放大")
 
 **视觉规则**
 
@@ -61,9 +61,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/subheader
 
 · 文字为15vp。超长文本状态下，先换行（建议最多 3 行），放不下 缩小 3 级；再放不下就截断。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213428.11376155590976573494607948777064_50001231000000_2800_505F83F6E0E5AAB43F417C8DEDBB6F013497A3873A1AA930EEFFAD62242A79F9.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/505F83F6E0E5.png "点击放大")
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213428.20036811576526496311292094738112_50001231000000_2800_CD0DB46D96FDAE9646FB021EC60AB494BAF985F4836B4C13B64105F64BF23F99.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/CD0DB46D96FD.png "点击放大")
 
 ### 开发文档
 

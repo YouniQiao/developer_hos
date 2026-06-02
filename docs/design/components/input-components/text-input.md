@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textinput
 
 文本框允许用户输入文本、选择文本。支持输入文本、数字或者混合格式的数据。单行文本输入类组件相关能力请参考 [TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput) 文档，多行场景请参考 [TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213502.53230563332296969441549590086316_50001231000000_2800_FD06E9D4BB5AE5017146CA2A904D84B0921E9F430F20D3C15B1C92752DA6AEEB.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/FD06E9D4BB5A.jpg "点击放大")
 
 ### 如何使用
 
@@ -23,7 +23,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textinput
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213502.88796669263711552668175601688372_50001231000000_2800_0BD3DACFB7AE52AD775C3E9C05B89C33374E251C02910DFF8C5EB8BEE60C63A3.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213502.10651929609695065310490593703523_50001231000000_2800_83D3FCBD01A439166239BFB01AB2D7FD3AE2F66AE1966EBE1945B75E9EBF769A.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213502.23364149516261709792077029387326_50001231000000_2800_348564733EE2FB55B07145979FDF512A2E3BDCE07B5006C5754A115E60FC73ED.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213502.78315747574765753949020148311056_50001231000000_2800_624BD402EB58EC3B86C80A9A7F2C289532AE7A826095C948D50E2D53F9F565B5.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0BD3DACFB7AE.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/83D3FCBD01A4.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/348564733EE2.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/624BD402EB58.png "点击放大") |
 | 单行文本框 | 多行文本框 | 全宽文本框 | 内联输入框 |
 
 ### 文本框样式
@@ -32,27 +32,27 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textinput
 
 |  |  |
 | --- | --- |
-| **单行文本框**  输入小文本块使用单行文本框，支持显示带图标、带单位、带\*号标记必填项、带自动推荐、带帮助文本、带错误信息、字符计数器、格式化输入功能等样式。  当文本输入光标到达输入区域最右边，框中内容会自动向左推挤。  当文本长度超过文本框宽度时，可在输入框横滑文本，不出现光标。  进行有默认推荐文本的操作时 (新建文件夹、另存、重命名等)，初始状态文本全选，方便删除。若直接保存导致名称重复，使用错误提示。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.39721373501654971247236776640918_50001231000000_2800_C059A0E84947EFEC1B652045BC960471FFB3296E04D40502B099ED08FCB5F146.png "点击放大") |
+| **单行文本框**  输入小文本块使用单行文本框，支持显示带图标、带单位、带\*号标记必填项、带自动推荐、带帮助文本、带错误信息、字符计数器、格式化输入功能等样式。  当文本输入光标到达输入区域最右边，框中内容会自动向左推挤。  当文本长度超过文本框宽度时，可在输入框横滑文本，不出现光标。  进行有默认推荐文本的操作时 (新建文件夹、另存、重命名等)，初始状态文本全选，方便删除。若直接保存导致名称重复，使用错误提示。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/C059A0E84947.png "点击放大") |
 |  |  |
-| **多行文本框**  使用场景：适用于容纳大量文本的紧凑布局。  框体高度分为固定和可扩展两种：  1.框体高度可扩展。如短信输入框，高度随输入的文字扩展，最大达到 10 行后，新输入的文字换行形成新的一行，已有文本向上移动，文本可垂直滚动，滚动时显示滚动条。  2.框体高度固定。默认初始时以多行文本框的样式显示，高度固定。文本高度超过框体高度时，继续输入文字，新输入的文字换行形成新的一行，文本可垂直滚动，滚动时显示滚动条。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.56853887348306817626846025949222_50001231000000_2800_3D215FCEE47E9DF5A71F567E1C98490538B42C98E6FE22BF3CE073720A7489AA.png "点击放大") |
+| **多行文本框**  使用场景：适用于容纳大量文本的紧凑布局。  框体高度分为固定和可扩展两种：  1.框体高度可扩展。如短信输入框，高度随输入的文字扩展，最大达到 10 行后，新输入的文字换行形成新的一行，已有文本向上移动，文本可垂直滚动，滚动时显示滚动条。  2.框体高度固定。默认初始时以多行文本框的样式显示，高度固定。文本高度超过框体高度时，继续输入文字，新输入的文字换行形成新的一行，文本可垂直滚动，滚动时显示滚动条。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/3D215FCEE47E.png "点击放大") |
 |  |  |
-| **全宽文本框**  适合固定多行的输入。  文本可以显示多行，不以框体或线性形式呈现。  文本可有多种样式：不同字体、大小，颜色；粗体、斜体、加下划线等。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.00867318420228253876746376697036_50001231000000_2800_8361BA858D281C825EC7D630EF557A8F3A47D3ACB63F11FC61688F0CC41EEF50.png "点击放大") |
+| **全宽文本框**  适合固定多行的输入。  文本可以显示多行，不以框体或线性形式呈现。  文本可有多种样式：不同字体、大小，颜色；粗体、斜体、加下划线等。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/8361BA858D28.png "点击放大") |
 |  |  |
-| **带图标的文本框**  右侧图标直接作用于文本内容。常用图标有显示隐藏、清除文本、语音输入、发送验证码。  清除文本图标在输入文本后出现；显示隐藏图标、其他图标可根据业务场景需要常驻。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.20417800292342425303080447026451_50001231000000_2800_CF434DC1A29E35464272D21C3266F10851451077109E0E965542AC218D893B70.png "点击放大") |
+| **带图标的文本框**  右侧图标直接作用于文本内容。常用图标有显示隐藏、清除文本、语音输入、发送验证码。  清除文本图标在输入文本后出现；显示隐藏图标、其他图标可根据业务场景需要常驻。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/CF434DC1A29E.png "点击放大") |
 |  |  |
-| **错误类型**  用户输入错误时，系统给出实时提示，帮助用户修正错误。输入存在错误时，可在输入框下方显示错误信息，说明如何修复。  场景如下：格式不对，如邮件格式、超出输入长度、字符不合法，如用户名中不允许使用某些字段、与已有项重复，已有文件名等。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.91319038332147720318795217381593_50001231000000_2800_5C17CDB10CDEC61413DDE089874E19EE7E5B9B6A852B179DE9412F6EFAD59C34.png "点击放大") |
+| **错误类型**  用户输入错误时，系统给出实时提示，帮助用户修正错误。输入存在错误时，可在输入框下方显示错误信息，说明如何修复。  场景如下：格式不对，如邮件格式、超出输入长度、字符不合法，如用户名中不允许使用某些字段、与已有项重复，已有文件名等。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/5C17CDB10CDE.png "点击放大") |
 |  |  |
-| **字符计数器**  若文本框有最大字符长度的限制时，可以使用字符计数器。字符计数器放置在框体内或下划线下方。  文本默认右对齐，显示已输入的字符和字符限制之间的比例 (格式为：已输入字符/字符限制)。  若用户输入刚好达到最大字符长度，字符计数器和框体不变红；若用户继续超长输入计数器和框体抖动变红。  密码输入不使用字符计数器。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.25233041104951912845371195105545_50001231000000_2800_42BCB0892B884A18BF9EE39A9AE3F03E54E462D0B4DA1DBB2790404AF989421A.png "点击放大") |
+| **字符计数器**  若文本框有最大字符长度的限制时，可以使用字符计数器。字符计数器放置在框体内或下划线下方。  文本默认右对齐，显示已输入的字符和字符限制之间的比例 (格式为：已输入字符/字符限制)。  若用户输入刚好达到最大字符长度，字符计数器和框体不变红；若用户继续超长输入计数器和框体抖动变红。  密码输入不使用字符计数器。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/42BCB0892B88.png "点击放大") |
 |  |  |
-| **密码的显示与隐藏**  隐藏密码：与账号相关或具有很强的私密性要求的情况下，需要默认使用掩码来显示密码。  明示密码：需要对外提供公共服务时 (共享 WLAN 热点供他人使用) ，或使用公共服务时 (如：咖啡店提供的 WLAN 热点密码) 用到的密码，用户需要直观的查看密码，并在设备上进行输入密码，此时密码使用明文。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.73859575158119764297755746550868_50001231000000_2800_5E224F97BACC2B5557B306861D01DBDFA564253EB2F42CF02F2A81309ABC6A39.png "点击放大") |
+| **密码的显示与隐藏**  隐藏密码：与账号相关或具有很强的私密性要求的情况下，需要默认使用掩码来显示密码。  明示密码：需要对外提供公共服务时 (共享 WLAN 热点供他人使用) ，或使用公共服务时 (如：咖啡店提供的 WLAN 热点密码) 用到的密码，用户需要直观的查看密码，并在设备上进行输入密码，此时密码使用明文。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/5E224F97BACC.png "点击放大") |
 
 **电脑设备**
 
 |  |  |
 | --- | --- |
-| **单行文本框**  输入小文本块使用单行文本框，支持显示带图标、带单位、带\*号标记必填项、带自动推荐、带帮助文本、带错误信息、字符计数器、格式化输入功能等样式。  在 2in1 设备中，单行文本框使用小圆角底板，以体现设备风格。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.85138849896483386558717376604689_50001231000000_2800_92738D0EE12B9E092661A1A541B7B96D799007D1CF54D9E5BD6A52151FC52B50.png "点击放大") |
-| **多行文本框**  使用场景：适用于容纳大量文本的紧凑布局。  框体高度分为固定和可扩展两种：  1.框体高度可扩展。如短信输入框，高度随输入的文字扩展，最大达到 10 行后，新输入的文字换行形成新的一行，已有文本向上移动，文本可垂直滚动，滚动时显示滚动条。  2.框体高度固定。默认初始时以多行文本框的样式显示，高度固定。文本高度超过框体高度时，继续输入文字，新输入的文字换行形成新的一行，文本可垂直滚动，滚动时显示滚动条。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.85062288781199497015578608035758_50001231000000_2800_3383FBC2751754675847811BDA6BE7472AC327B926665BFF45E1CA81528B651F.png "点击放大") |
-| **内联输入样式**  在宫格列表场景中，文本框和图标图片组合呈现时使用，如：文件管理器和桌面图标重命名。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.04931939179185743799248292011689_50001231000000_2800_A4C8F0C949FA558F76D5437759301B02BECE6BC9D811E93FF6EFC571EA705236.png "点击放大") |
+| **单行文本框**  输入小文本块使用单行文本框，支持显示带图标、带单位、带\*号标记必填项、带自动推荐、带帮助文本、带错误信息、字符计数器、格式化输入功能等样式。  在 2in1 设备中，单行文本框使用小圆角底板，以体现设备风格。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/92738D0EE12B.png "点击放大") |
+| **多行文本框**  使用场景：适用于容纳大量文本的紧凑布局。  框体高度分为固定和可扩展两种：  1.框体高度可扩展。如短信输入框，高度随输入的文字扩展，最大达到 10 行后，新输入的文字换行形成新的一行，已有文本向上移动，文本可垂直滚动，滚动时显示滚动条。  2.框体高度固定。默认初始时以多行文本框的样式显示，高度固定。文本高度超过框体高度时，继续输入文字，新输入的文字换行形成新的一行，文本可垂直滚动，滚动时显示滚动条。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/3383FBC27517.png "点击放大") |
+| **内联输入样式**  在宫格列表场景中，文本框和图标图片组合呈现时使用，如：文件管理器和桌面图标重命名。 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/A4C8F0C949FA.png "点击放大") |
 
 **内联输入的单/多行文本的使用规则**
 
@@ -60,19 +60,19 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textinput
 
 根据文本宽度和高度定义编辑态时的文本框宽度和高度。单行文本支持超长展示。默认文本全部选中，不显示光标，可直接输入。再次点击取消选中文本时，显示光标。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.95740315884883325695154980048012_50001231000000_2800_9D76452BABBA8E40218EA0DDB881941FDB3F31DDC461AECC92022E9E6C3B282C.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/9D76452BABBA.png "点击放大")
 
 **多行文本**
 
 点击文本框后多行显示文本，默认选中全部文本，不显示光标。支持应用自定义内联文本框的最大高度值，超出最大高度时，文本框右侧生成滑动条。点击任意处，取消选中文本，显示光标，方向键可移动光标。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213503.30460646985976576353852075694735_50001231000000_2800_1E2A4399125DAD99D011E6A2703A1044DC5DA440821D4AE417E91E2ACC972897.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/1E2A4399125D.png "点击放大")
 
 **穿戴设备文本框**
 
 文本框允许用户输入文本、选择文本。支持输入文本、数字或者混合格式的数据。支持多行文本显示。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213504.79152608317531755507862907806231_50001231000000_2800_2BB911AA1D718BD4FFBB679E636EF08762B406845815AB62638AD9E4BA7CB462.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/2BB911AA1D71.png "点击放大")
 
 ### 开发文档
 

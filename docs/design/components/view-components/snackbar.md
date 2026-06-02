@@ -9,7 +9,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component
 
 开发文档请参阅 [HDS SnackBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdssnackbar) 文档。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165643.76299400403243205843469377771036_50001231000000_2800_4E8A965654D2507A8E0272B0897E65650FB2536322DD7D936C38255BE1E984B7.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/4E8A965654D2.png "点击放大")
 
 ### 如何使用
 
@@ -19,7 +19,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165643.97694138343426215683212370672282_50001231000000_2800_46F3C92352A7B444B2FBD76ACC6620332EDEEC1B8859D6A79C4383CB5221C304.png) | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165643.66383615584969441156259732188441_50001231000000_2800_2BD29FC2A949F662DAD256B8AACB8A03BC398D4F5F2AFD28CDF486BD49EE2800.png) |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/46F3C92352A7.png) | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/2BD29FC2A949.png) |
 | 定时关闭模式 | 常驻模式 |
 
 **视觉规则**
@@ -30,7 +30,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component
 
 **采用投影增强组件的空间感****。**即时操作组件以悬浮态存在时，通常使用投影强调信息层级，避免与页面过度融合。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165643.73046316631755026522703072760396_50001231000000_2800_51D9568240F826C6D24B5D39F0738AB58338BD0C412E9ECF3F9D9E48C0873F31.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/51D9568240F8.png "点击放大")
 
 **跟随系统色彩模式**
 
@@ -38,7 +38,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165644.35021213643243738487149133264520_50001231000000_2800_4B9F979037F04E926D37BF41E0CC978BDFA98BD3F0BD7B82F1393F7FB1FBCF12.png "点击放大")  系统浅色模式 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165644.31140138774396113972719568879818_50001231000000_2800_11F5FE4B09A9E74B4FBC4A35A90E36701EB67872EA383C7F2CEAC6388A47B2B3.png "点击放大")  系统深色模式 |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/4B9F979037F0.png "点击放大")  系统浅色模式 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/11F5FE4B09A9.png "点击放大")  系统深色模式 |
 
 **布局规则**
 
@@ -48,11 +48,11 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165644.64893603350636881882756770283370_50001231000000_2800_452B2E5BCE6119B757C902B8BC84B72DF66E88D37C6B458A44FB51A3E020002C.png "点击放大")  弹出位置距离底部导航条 92 vp | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165644.29235012538451219013830296721180_50001231000000_2800_AD273589FFFBF786BB9B1C9320BE88DEEF3AD91BD08A35CF2B9EC1461F9135F1.png "点击放大")  存在底部页签的场景建议弹出位置距离底部页签 16 vp |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/452B2E5BCE61.png "点击放大")  弹出位置距离底部导航条 92 vp | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/AD273589FFFB.png "点击放大")  存在底部页签的场景建议弹出位置距离底部页签 16 vp |
 
 **手机横屏**
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165644.29904108347422065316023114659420_50001231000000_2800_774232E46E6D66F3F014AF4E8A1F7C79303B6EA6051F456472C57F14BE23EED8.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/774232E46E6D.png "点击放大")
 
 手机横屏情况下，宽度默认最大400 vp
 
@@ -62,13 +62,13 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165645.90695899453402819197007554806467_50001231000000_2800_8B62A89A39AC86D7CE56FA4D4851C9928EDAA447CB9CED430745461D1D75982B.png "点击放大")  平板横屏 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165645.79844896940027845195302124212462_50001231000000_2800_A76E59C99703900307A2BD221B7830058B235457CF4622581E6A8E50C7F64793.png "点击放大")  平板竖屏 |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8B62A89A39AC.png "点击放大")  平板横屏 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/A76E59C99703.png "点击放大")  平板竖屏 |
 
 **电脑****设备**
 
 在电脑设备上圆角、投影规格与手机有差异，同时默认会提供一圈描边用于提升识别性。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251212165645.72990442396539925756427285484414_50001231000000_2800_E76B0317C9075324A039379C793B9EA079CB360F959E2604CDECEB8BA5ADE058.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/E76B0317C907.png "点击放大")
 
 ### 开发文档
 

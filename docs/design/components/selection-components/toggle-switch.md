@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toggleswi
 
 通过开关，开启或关闭某个功能。开发相关描述请参考 [Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle#toggletype枚举说明) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213508.62479834172573419079347052786837_50001231000000_2800_92D440C58826EA94622EA0FA7821680497E0D755A14200DAACB329608CEA5BDA.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/92D440C58826.jpg "点击放大")
 
 ### 如何使用
 
@@ -25,27 +25,27 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toggleswi
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213508.86274873743911073962481700210175_50001231000000_2800_4AEE8C074845BBC5DD2A83D5D6CED3A0D4B857FE58C945A6928B9F3B3D7C9600.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213508.07527315823975804021645369157583_50001231000000_2800_79A7D17670B1B8515122680B3399CDCFFA97DF6D54BE6E742DE4564F7E0247BB.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/4AEE8C074845.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/79A7D17670B1.png "点击放大") |
 | **默认开启状态** | **默认关闭状态** |
 |  |  |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213508.47923264748249318650324213753893_50001231000000_2800_27DE56B07778D6FEADA3485AED09E8EEEE553DD30E9AD687326E158B4D99EC5E.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213508.91799946532782808009944882695462_50001231000000_2800_BFA8431AB8AD587C4D5D942E9EB12828B177DA54A35179065BD07237C4C87CD1.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/27DE56B07778.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/BFA8431AB8AD.png "点击放大") |
 | **自定义圆角和颜色等参数** | **自定义尺寸和颜色等参数** |
 
 **穿戴设备开关**
 
 通过开关，开启或关闭某个功能。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213508.09562935425300183636418248257245_50001231000000_2800_BC47232515D995606BB96A9B36175B0BC1AED8688410B59F9E39F01ABAA3F43C.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/BC47232515D9.png "点击放大")
 
 **视觉规则**
 
 圆形表：
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213509.06342506360927819522866682891036_50001231000000_2800_40E7C1DAAFA67E8CA51DD5062724AA5A90BDCAFFAE2EC5D49F74B3E334985C39.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/40E7C1DAAFA6.png "点击放大")
 
 方形表：
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213509.64605428159284021149634007419172_50001231000000_2800_F842A9519B7B5D515C7ED3C17FDF2144459D12F76032AC2B5116EF3D0BE387C4.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/F842A9519B7B.png "点击放大")
 
 ### 开发文档
 

@@ -14,7 +14,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidel
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 8.1.1 | 圆形屏边距 |
-| 标准描述 | | 为避免文本与按钮在屏幕内截断与难以点击，设置安全边距，建议圆形屏应用使用文本居中对齐：  元素距离屏幕左侧间距 26vp  元素距离屏幕右侧间距 26vp  元素距离屏幕顶部间距 20vp  元素距离屏幕底部间距 6vp  长页面滑动到底部的边距 40vp  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110172808.12423805033914598760088142648085_50001231000000_2800_66AA8897477E6E23CDA5F0A367123211C0B51DA827716517C24B7A6F9F7B13E9.png "点击放大") |
+| 标准描述 | | 为避免文本与按钮在屏幕内截断与难以点击，设置安全边距，建议圆形屏应用使用文本居中对齐：  元素距离屏幕左侧间距 26vp  元素距离屏幕右侧间距 26vp  元素距离屏幕顶部间距 20vp  元素距离屏幕底部间距 6vp  长页面滑动到底部的边距 40vp  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/66AA8897477E.png "点击放大") |
 | 测试方法 | | 应用在支持的所有设备类型上打开，获取应用上下左右的间距信息，观察间距是否满足要求。 |
 | 判定标准 | | 应用全屏情况下，观察关键交互功能是否避让安全间距 |
 | 标准等级 | | 必须 |
@@ -25,7 +25,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidel
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 8.1.2 | 方形屏边距 |
-| 标准描述 | | 为避免文本与按钮在屏幕内截断与难以点击，设置安全边距，建议方形屏应用使用文本左对齐：  元素距离屏幕左侧间距 12vp  元素距离屏幕右侧间距 12vp  元素距离屏幕顶部间距 12vp  元素距离屏幕底部间距 6vp  长页面滑动到底部的边距 36vp。  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110172808.53017476572441019335822446056595_50001231000000_2800_1E780950D681E1A4B8120613BA0E4AFA3F13A862DCD2790F55076A9F100B9182.png "点击放大") |
+| 标准描述 | | 为避免文本与按钮在屏幕内截断与难以点击，设置安全边距，建议方形屏应用使用文本左对齐：  元素距离屏幕左侧间距 12vp  元素距离屏幕右侧间距 12vp  元素距离屏幕顶部间距 12vp  元素距离屏幕底部间距 6vp  长页面滑动到底部的边距 36vp。  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/1E780950D681.png "点击放大") |
 | 测试方法 | | 应用在支持的所有设备类型上打开，获取应用上下左右的间距信息，观察间距是否满足要求。 |
 | 判定标准 | | 应用全屏情况下，观察关键交互功能是否避让安全间距 |
 | 标准等级 | | 必须 |
@@ -38,7 +38,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidel
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 8.2.1 | 圆形屏导航点 |
-| 标准描述 | | 页面有不同的子类别，内容一屏显示不截断，为了保证页面导航清晰，使用Swiper导航点。如图示，横向布局页面使用横向导航点，纵向布局页面使用竖向导航点。  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110172808.28919558537229249743696645903008_50001231000000_2800_2312CA6CFB32A2E23A65780080C0385CE4EB2E23B7965A1C2CB6988970E445C2.png "点击放大") |
+| 标准描述 | | 页面有不同的子类别，内容一屏显示不截断，为了保证页面导航清晰，使用Swiper导航点。如图示，横向布局页面使用横向导航点，纵向布局页面使用竖向导航点。  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/2312CA6CFB32.png "点击放大") |
 | 测试方法 | | 应用在支持的所有设备类型上打开，获取应用上下切屏场景，观察横/纵向Swiper导航点是否满足要求。 |
 | 判定标准 | | 应用初始进入和切屏情况下，观察页面是否有Swiper导航点，点的数量与页面数量一一对应，且能同步切换。 |
 | 标准等级 | | 必须 |
@@ -49,7 +49,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidel
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 8.2.2 | 方形屏导航点 |
-| 标准描述 | | 页面有不同的子类别，内容一屏显示不截断，为了保证页面导航清晰，使用Swiper导航点。如图示，横向布局页面使用横向导航点，纵向布局页面使用竖向导航点。  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110172808.13924460656726435415019910662536_50001231000000_2800_1925321EBE5282CCEC83E33B75B37EC941B224016907F0DF08BD14CED73E2F53.png "点击放大")  纵向导航点：垂直居中，宽度5vp，间隔4vp，主焦点长度14vp，边距为2vp。  横向导航点：水平居中，高度5vp，间隔4vp，主焦点长度10vp，边距为6vp。 |
+| 标准描述 | | 页面有不同的子类别，内容一屏显示不截断，为了保证页面导航清晰，使用Swiper导航点。如图示，横向布局页面使用横向导航点，纵向布局页面使用竖向导航点。  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/1925321EBE52.png "点击放大")  纵向导航点：垂直居中，宽度5vp，间隔4vp，主焦点长度14vp，边距为2vp。  横向导航点：水平居中，高度5vp，间隔4vp，主焦点长度10vp，边距为6vp。 |
 | 测试方法 | | 应用在支持的所有设备类型上打开，获取应用上下切屏场景，观察横/纵向Swiper导航点是否满足要求。 |
 | 判定标准 | | 应用初始进入和切屏情况下，观察页面是否有Swiper导航点，点的数量与页面数量一一对应，且能同步切换。 |
 | 标准等级 | | 必须 |
@@ -62,7 +62,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidel
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 8.3 | 圆形屏列表缩放 |
-| 标准描述 | | 页面有2个以上长列表时，使用缩放效果。  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110172808.30273026422011875715888340129617_50001231000000_2800_FDD9805CDF6B41475E601F53823DB6D489D84F12BCB5C656E18281C9BAFC32E7.png "点击放大") |
+| 标准描述 | | 页面有2个以上长列表时，使用缩放效果。  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/FDD9805CDF6B.png "点击放大") |
 | 测试方法 | | 应用在支持的所有设备类型上打开，获取应用长列表场景，观察列表缩放能力是否满足要求。 |
 | 判定标准 | | 中心列表缩放固定位108%  其余列表距离中心点越远，缩放值越小。 |
 | 标准等级 | | 必须 |
@@ -75,7 +75,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidel
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 8.4 | 应用图标 |
-| 标准描述 | | 智能穿戴应用图标需适配为圆形，不分层，周围各添加1px内间距，整体尺寸为152px\*152px  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110172808.01163643765409622645463891667240_50001231000000_2800_0A3D503E96E7800EE3AC0C9A62B6A2F9CF33A3DC122C942AD40A89EC9A7018EC.png "点击放大") |
+| 标准描述 | | 智能穿戴应用图标需适配为圆形，不分层，周围各添加1px内间距，整体尺寸为152px\*152px  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0A3D503E96E7.png "点击放大") |
 | 测试方法 | | 获取应用列表、消息通知内图标形状和尺寸信息，观察应用图标在设备上的显示效果。 |
 | 判定标准 | | 应用图标显示正常，图标显示完整。无明显的模糊、拉伸、压缩、锯齿等情况。 |
 | 标准等级 | | 必须 |

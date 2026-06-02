@@ -5,7 +5,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-m
 ---
 # SearchkeyWordDetail
 
-![](./img/0000000000011111111.20251117124649.36785006591478698823670400782684_50001231000000_2800_ADA57E6C0E2E2C8D1D08D02993B0A6DB1DDF5EEB51D273BAC98D78AAC4C3682E_4422621bdd28.png) 
+![](./img/4422621bdd28.png) 
 
 该对象仅为兼容历史数据，后续该模型会删除。
 

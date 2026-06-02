@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bottomtab
 
 移动设备中最常见的应用级导航控件，开发相关描述请参考 [Tabs/BottomTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs) 文档。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101808.30145331958844600873078355626958_50001231000000_2800_310832CB549AD7F5532D4EC1CD5672D6868D2C8619F9EE95B2711EB092382834.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/310832CB549A.png "点击放大")
 
 ### 如何使用
 
@@ -15,13 +15,13 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bottomtab
 
 **避让系统导航条。**在 HarmonyOS Next 的系统界面底部会固定显示导航条，因此，在自定义底部页签样式的时候需注意避让导航条区域，避免应用的文本或图标信息与导航条重叠。控件在默认情况下会避让导航条，底部页签组件整体高度会扩展至导航条区域，但底部页签的按键热区与导航条热区互相独立。底部页签默认高度为 48vp，如果开发者需要自定义底部页签的样式和结构，可以通过 [expandSafeArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area) 了解能力规格。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101808.44158517214199908196939945732292_50001231000000_2800_B753F779C2958AF27E46FF11E0FCA447BD9A408C9781534C404D77BD6D489487.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/B753F779C295.png "点击放大")
 
 **避免大量的使用页签数量。**通常情况下一个应用程序会包含 3-5 个同等重要的功能模块，这些模块之间彼此互斥。过多页签数量会增加复杂度并缩减单个页签的可点击区域，造成基础功能上的使用障碍，同时增加用户的认知复杂度。一般情况选择 4 个以下页签数量，针对特征性的运营设计可以使用 4+1 的模式进行自定义，即四个基础功能页签和一个运营性页签。
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101808.15732639337207693485943376220799_50001231000000_2800_4A797945B13F46C5D17CAF885126C1413213AAE5DBF35EA1FA0B3D52ABD89124.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101808.80329818125612583307532264678422_50001231000000_2800_752F497052D9D1F21D004E28344FD8CB84BDE04ABF9CC67730E59F8E65EFDAF7.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/4A797945B13F.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/752F497052D9.png "点击放大") |
 | **默认页签样式**  图标大小默认为 24\*24vp | **自定义运营页签样式**  图标居中对齐显示，保证上下安全间距为 4vp |
 
 **页签标签应使用简洁的文字或图标表达，让用户一目了然。**被激活的页签应有明确的视觉反馈，如使用品牌高亮色显示，或增加激活动效提升设计细节和品质感。避免在页签中放置次要或高级功能入口，以免分散用户注意力，对于未激活的页签应当弱化展示效果，通过降低透明度或者将颜色置灰来对图标和文本进行处理。在文本的处理上要减少字符串的使用，在 2-4 个字符串以内明确概述页签的功能，英文和多语言场景下尽量使用一个单词或一个词组来展示。
@@ -59,7 +59,7 @@ HDS 底部页签控件开发相关描述请参阅 [HDS Tabs](https://developer.h
 
 在底部页签中，背板模糊作为独立视觉层级存在，与内容层形成悬浮空间关系，适用于页面内容与底部页签产生交叠的场景。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101808.05990718196725455453911597900681_50001231000000_2800_7B52A90DC00D58C60E40A3F2387FF273C9122BC1A3CAE24F2F31E99B86868B92.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/7B52A90DC00D.png "点击放大")
 
 **通过提亮压暗增强色彩活力。**底部页签的背板模糊默认带有提亮压暗属性，能够激发色彩活力，提高背板通透度。
 
@@ -73,7 +73,7 @@ HDS 底部页签控件开发相关描述请参阅 [HDS Tabs](https://developer.h
 
 渐变模糊与页面内容的融合度更高，通过弱化视觉边界，以延展页面空间，但渐变模糊会增高页签占用面积、降低页签内容可读性，因此仅适用于部分特定场景。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101808.31704869452203130215186370285921_50001231000000_2800_AF3C7D7CB87B5C8DF8C48CD8BB695EE64A5F642BD2A63AF69140CBF3E3C0B403.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/AF3C7D7CB87B.png "点击放大")
 
 ### 布局规则
 
@@ -85,19 +85,19 @@ HDS 底部页签控件开发相关描述请参阅 [HDS Tabs](https://developer.h
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101808.92015155897398017486684680829959_50001231000000_2800_BCC67C4C4A8C7D863529E9E3C6DC5CCCFA85FB164E385B7143204B3B9160A66B.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101808.68057050484286690150393750859719_50001231000000_2800_5FDF2C49F8F0499DA220A44BA32485C6C6602C62A72970D458EC884152E1DD82.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/BCC67C4C4A8C.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/5FDF2C49F8F0.png "点击放大") |
 
 **左右结构**
 
 在一些特殊场景下，例如手机进入横屏状态，此时的屏幕显示区域处于高度较矮、宽度较宽的场景时，为了更有效的利用可展示区域，底部页签可以修改为左右布局来进行展示。可以查阅底部页签的 [LayoutMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#layoutmode10) 接口进行了解，配置其样式为 HORIZONTAL。需要注意，当布局修改为左右布局时，文本会从默认的 10vp 放大为 12vp，从而达到文本与图标视觉上的协调性。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101808.19686830561187861541679177691477_50001231000000_2800_08CAC84BF62DB229CAFBA800E4E6EFB84B8DF2A59AC3FCD158657E3384C21C46.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/08CAC84BF62D.png "点击放大")
 
 **分栏布局跟随导航结构**
 
 在业务的实际使用场景下会出现应用使用分栏布局进行适配，此时底部页签需要跟随应用导航结构明确展示层级，使用跟随应用的一级分栏，避免底部页签的展示始终凌驾于全量界面之上。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101809.55409052444119830200997136265148_50001231000000_2800_7C91DFAE8A3FE72C95AA35D86B82FAEF8C66F1635D207C3E9377A445A393E019.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/7C91DFAE8A3F.png "点击放大")
 
 ## 平板设备
 
@@ -105,13 +105,13 @@ HDS 底部页签控件开发相关描述请参阅 [HDS Tabs](https://developer.h
 
 平板横屏情况下，底部页签可以通过 Tabs 组件的 [Vertical](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#vertical) 属性配置为竖状侧边导航，侧边导航固定在页面左侧。也可以通过动态配置规则，基于屏幕断点规则，当断点属于 840vp 以下时使用底部页签，在 840vp 以上时使用侧边页签。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101809.83701094502500977441570723197548_50001231000000_2800_92EA11D4C6605A61A2D35F7D33ECBABC2A0264CE62DFE3F1FA8FA35D049997D6.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/92EA11D4C660.png "点击放大")
 
 **使用分割线区隔内容**
 
 基于应用的场景和规则，如果需要明确区分页签与内容区的边界时，可以使用分割线来进行区分，通过 [divider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#divider10) 接口进行配置。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250919101809.95248491867912454909002661059219_50001231000000_2800_E1A40A384D3CBD183DFD9E5B8F7E9B22755A00B9E7B60EC9CB252E434F445100.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/E1A40A384D3C.png "点击放大")
 
 ### 开发文档
 

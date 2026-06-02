@@ -5,7 +5,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/practices
 ---
 # 概述
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185316.91668645367313560741300840893812_50001231000000_2800_8E5C66E490998572B457D60650994FD1D1038085BB6C126BB3049DC8C95C14B0.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8E5C66E49099.png "点击放大")
 
 随着终端设备形态日益多样化，应用设计需要考虑界面能适配不同的屏幕尺寸、屏幕方向和设备类型。同时还需要保持多设备体验的连续性，改善多端独立的设计、尽可能降低开发者的工作量和维护成本。基于此 Harmony OS 为设计师提供了面向多设备的设计指南，让设计师在进行多端设计时有一套科学的方法，最大限度地减少设计的工作量，保障多端设计在一定程度的一致性。同时 Harmony OS 也提供了对应的技术能力，帮助开发者快速地进行多端应用设计。
 
@@ -35,7 +35,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/practices
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185316.89597529443604232538073512870263_50001231000000_2800_D823EFC2557E0E299A5E28C1613A92E4D5594E59E1D706CFE45F041EEE8BDDF7.jpg "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/D823EFC2557E.jpg "点击放大") |
 
 **底部导航条适配**
 
@@ -43,7 +43,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/practices
 
 沉浸式页面，例如全屏播放视频、游戏、阅读等场景下，超过 2 秒自动隐藏底部导航条，从底部上滑或从顶部下滑可触发恢复显示底部导航条。导航条适配规范&开发指南，请参阅 [系统特性 - 导航条](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-develop-apply-immersive-effects)。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185316.75094477088483557055697098432219_50001231000000_2800_8DCA7B55AA6331212DBF7ED03D8BC6502DE59571E0FA9611137EC1A0B46A7C10.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8DCA7B55AA63.png "点击放大")
 
 ## 横竖屏&挖孔适配
 
@@ -59,7 +59,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/practices
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185316.60924163720165018709650924985037_50001231000000_2800_FDF1823A2C833E92BB2DB02519B29CB965FC389086D3999AB88F44A7061D59ED.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/FDF1823A2C83.png "点击放大") |
 
 ## 多窗适配
 
@@ -71,7 +71,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/practices
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185317.64844434467792911244696448406447_50001231000000_2800_ABF985CE968BE0331028A0C19816E7C8DB541EC0B7F2ED87C8CA6A9053791AD3.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/ABF985CE968B.png "点击放大") |
 
 ## 弹出框适配
 
@@ -109,7 +109,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185317.89412439297160594542437820462867_50001231000000_2800_76A4214A4903BF294222CCC6CBB61A687AF93478EE45F78F67F56A6262A1CB43.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/76A4214A4903.png "点击放大") |
 
 ## 入口图标
 
@@ -117,7 +117,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185317.78267215667693011070649996290019_50001231000000_2800_B63E87486954257DBD9AB3EBF377E000A733E052C481CB49CBE3476EB447FCE0.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/B63E87486954.png "点击放大") |
 
 ## 广告图
 
@@ -129,7 +129,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185317.22253590805195297077345728595833_50001231000000_2800_521BB3B82C8032E7CBE7AF33621CC76C1E198813D23D0C3560A2CA8490D33318.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/521BB3B82C80.png "点击放大") |
 
 **沉浸广告**
 
@@ -139,13 +139,13 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185318.52327345814896740235364291225858_50001231000000_2800_C6B8F2AC16DA5CD115C8281C4D245D374C00D6BFD8653383BAC1B62784DD13AA.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/C6B8F2AC16DA.png "点击放大") |
 
 金融理财、生活服务等类型的应用也经常使用沉浸广告图打造更好的营销氛围。需要考虑为多端提供一个适宜的沉浸广告高度，避免在宽屏设备上等比放大导致整个广告过高，导致首屏的信息量过少。
 
 折叠屏和平板横屏时，建议沉浸广告图不超过 0.5 倍的屏幕高度，平板竖屏时建议沉浸广告图不超过 0.4 倍的屏幕高度。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185318.48440120038509189457145638299904_50001231000000_2800_523E229C2D348040791B1864BE077A1D25DA2523E9F74B61DCE01340E57101EE.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/523E229C2D34.png "点击放大")
 
 ## 列表
 
@@ -153,41 +153,41 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 在宽屏设备上，为避免结构过于单调且信息量过少，可通过重复布局来改善页面的浏览舒适度和使用效率。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185319.86644496647741098054355293046203_50001231000000_2800_635F8CCF3149CFA198500FED823B59325A8C41951B2ADA8F8E54292E23E5CA98.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/635F8CCF3149.png "点击放大")
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185319.97218168182434887522198132036662_50001231000000_2800_834848DDB4636C233B6375F3B7C4E0A104F9D1B2D7826BD3A90B30AEA34ABEF9.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/834848DDB463.png "点击放大")
 
 **列表的挪移布局**
 
 列表结构中的大视频或单张大图片，在宽屏设备上也可以通过图文挪移布局来避免视频或图片显示过大。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185319.76202823370858719814208584384716_50001231000000_2800_E5A0B4FF1CD11E9EB139D8BE7A4AF2A7D9EF3214D7A0A9232090E8EA2E0AF88E.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/E5A0B4FF1CD1.png "点击放大")
 
 **列表变瀑布流或宫格**
 
 可以通过从列表到宫格或瀑布流的布局变化，带来宽屏设备上更舒适的增值阅读体验。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185319.93526189370550497902323432378353_50001231000000_2800_05C7F2C8BC4845CAD0322A14E76255DA4A9107FCFFBDC80F51EB71B035E951ED.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/05C7F2C8BC48.png "点击放大")
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185319.16133939246712879873707299620570_50001231000000_2800_C3BF64EAFFDF80821A4AEC01FA6ADE583B0896BB018D9CFD44A44A86CEB1E968.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/C3BF64EAFFDF.png "点击放大")
 
 ## 卡片
 
 手机上的单列的卡片，在宽屏设备上，通过分栏 + 瀑布流/宫格布局的方式进行显示适配，提升浏览效率且提供舒适布局。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185320.69279842095994590506834929151786_50001231000000_2800_2FDDA8F6AF888B3CA4A11D5892C3A68D43ADA399B3A96190D54D8376B7440643.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/2FDDA8F6AF88.png "点击放大")
 
 ## 详情大图
 
 在宽屏设备上，页面内的大图可以通过延伸布局或挪移布局进行适配。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185320.83900716369291460539364269307695_50001231000000_2800_8EED8A873D572C5DE3BC18D1FF839FD06D5EFD31B6BD48C70DED30EEA06E4ABA.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8EED8A873D57.png "点击放大")
 
 ## 内容模块
 
 同一个设备上，也可以根据多个模块的内容尺寸进行自适应的挪移布局。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185320.96048735115542789082591743137389_50001231000000_2800_A741A77C75EA61B1B10F27E7B4652050FBF1D749440D1D7F18249BC43F351685.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/A741A77C75EA.png "点击放大")
 
 ### 增值体验
 
@@ -205,7 +205,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185321.05645054894604633014548651331431_50001231000000_2800_93E8B06533FF8CEC519F84109D5DA5D2BA6E29B2459EA2B50DA567FCDCF4E4E2.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/93E8B06533FF.png "点击放大") |
 
 **沉浸浏览**
 
@@ -213,7 +213,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185321.34616026495524712064326111065996_50001231000000_2800_3D17A48CBE9FAD4612DDBB6983FF5730E3E0E1D07B287839DD50FB3A39576A9A.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/3D17A48CBE9F.png "点击放大") |
 
 **沉浸观影**
 
@@ -225,7 +225,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185321.52531925171829256547323309797143_50001231000000_2800_16346E0CEAD209DC20327491AF68A597E060D0BA85FF26932A1B18AA683231B0.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/16346E0CEAD2.png "点击放大") |
 
 ## 高效体验
 
@@ -239,7 +239,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 分栏设计规范，请参阅[响应式应用架构](https://developer.huawei.com/consumer/cn/doc/design-guides/design-responsive-layout-structure-0000001748539684)。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185321.90600836745451109044448479756606_50001231000000_2800_B08D91E57EBCE55AEDE05FE802A74AFAEFA1FDC2B74C10E9BC48E5B63641618D.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/B08D91E57EBC.png "点击放大")
 
 **应用内分屏**
 
@@ -247,7 +247,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 此类场景下，建议通过页面内的“分屏”按钮触发任务分屏。形成分屏后，“分屏”按钮自动切换为“全屏”按钮，点击“全屏”按钮，即退出另一侧的分屏任务，让当前焦点所在的任务回到全屏。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185322.54843916603432159877896067026826_50001231000000_2800_DAA93B9ADB6FD011EDD794B496664D90AE046094E871182D272953C46135777A.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/DAA93B9ADB6F.png "点击放大")
 
 **缩放**
 
@@ -257,9 +257,9 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 双指缩放的设计规范，请参阅[人机交互 - 手势](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touchscreen-0000001928273206)。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185322.11749954975039205811572541773515_50001231000000_2800_6CC35AEE8F2119BD9E621CDE6AE27DE70FBD2C2AECFCB72B2B9F6D0964DD2E6B.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/6CC35AEE8F21.png "点击放大")
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185323.54335293130074416264986370607529_50001231000000_2800_1F8C75971272D712626296CD540D5180E4445E8A0CE47BF8EACACF0E7C2D8C7C.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/1F8C75971272.png "点击放大")
 
 ## 轻交互
 
@@ -267,17 +267,17 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 简单的新建、筛选、添加、浏览，或临时的支付、登录、设置等页面，可以通过浅层窗口避免在宽屏设备上大幅度的页面跳转带来的体验中断。应用可根据自身业务诉求考虑需要调用半模态控件的场景，并选择适合的半模态控件，从而达到浅层窗口的体验。可根据业务特性，采用以下三种浅层窗口样式中的一种。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185323.74772643027129727741931136127172_50001231000000_2800_2CA203A2C326AEBCA7CDCD9691422CF0D4F3F206218AAA8F1B3DBC84F964C093.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/2CA203A2C326.png "点击放大")
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185323.57832994749663984096416308467615_50001231000000_2800_94674B34C96D13D35B9FF42513444F990A059A7DBB7A349B7E269064F3985C86.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/94674B34C96D.png "点击放大") |
 
 **侧边面板**
 
 除浅层窗口外，在购物、浏览图片、浏览短视频、查看长视频等场景，可通过侧边面板实现边看边评、边看边买等便捷任务处理的轻交互体验。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185323.68151631988491165844060119607881_50001231000000_2800_772B3E9895F27092C02AC5C013AF0E5B90595E370F174AB923985B0E02843788.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/772B3E9895F2.png "点击放大")
 
 **长按预览**
 
@@ -287,7 +287,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 |  |
 | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185323.34508405248165385151189148087600_50001231000000_2800_11074CE2D19374EC943AFEDB4AE2316D7DBA195D63DA1370BEE3C483F89A4D9A.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/11074CE2D193.png "点击放大") |
 
 ## 跟手交互
 
@@ -303,7 +303,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 3 ) 跟手的弹框默认和触发按钮左右居中对齐，无法居中对齐时靠近边缘对齐。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185323.40632291032657602571618645733001_50001231000000_2800_2F90F53357CDDD9715E48F345B4ADED3ED441419C87187CCBEB41895EE46FD6E.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/2F90F53357CD.png "点击放大")
 
 ## 折叠屏悬停
 
@@ -311,7 +311,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 悬停态时，中间弯折区域难以操作且显示内容会变形，因此建议页面内容进行折痕区避让适配。建议上半屏内容由中线向上避让 16vp (3 毫米)、下半屏内容由中线向下避让 40vp (7 毫米)。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030185324.12110028286169755793750507502350_50001231000000_2800_8409AE69DD43F9012D83232FCDDF50DDC7D5BF77A5BC2D7D78C8B4629B27B312.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8409AE69DD43.png "点击放大")
 
 悬停态若触发应用内的弹出框、半模态等操作型控件，建议交互型控件在下半屏显示；若触发跟随上下文的控件，例如菜单等，建议跟随触发元素的位置显示。控件高度需要根据悬停态的屏幕尺寸进行最大高度的适配。
 

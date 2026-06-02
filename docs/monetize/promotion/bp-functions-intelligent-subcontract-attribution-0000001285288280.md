@@ -10,7 +10,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 1. 构造Uri对象：uriString为“content://com.huawei.appmarket.commondata/item/5”。
 2. 调用ContentResolver.query接口，第1个参数传入Uri对象，第4个参数传入应用包名。
 
-   ![](./img/0000000000011111111.20251117124640.11560116434532877772803144174863_50001231000000_2800_6A7C1419B0BC0B022CBF032DAC9FB9AC33542DA03C6B3D74C4AD9A606671FD75_3796298005f7.png) 
+   ![](./img/3796298005f7.png) 
 
    使用该接口将涉及contentResolver的获取，ContentResolver对象会与应用市场进行通信，部分场景下将被识别为关联启动，请您注意如下。
 
@@ -37,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
      | INDEX\_TRACKID | 4 | 应用推广的归因信息。  归因信息trackId（json结构，可扩展），当前包含：  - channel：由开发者运营在华为投放系统针对推广任务绑定的智能分包渠道号，如"channel12345"。 - callback：回传参数，用于oCPD对接，如"security:CD40F6\*\*\*\*\*C7A9F4"。 - taskid：任务ID，如"200052202"。 - subTaskId：子任务ID，如"200037037"。 - RTAID：RTAID，如"123556"。 可能获取到的归因信息种类请参考[FAQ](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804#section6680148121416)。 |
      | INDEX\_REFERRER\_EX | 5 | 下载链接地址中设置的referrer参数。 |
 
-     ![](./img/0000000000011111111.20251117124640.59524627108043553760624502747536_50001231000000_2800_97E0131C5C4C8C9FACD9FB54510D7F4D942B695209764D4FECE83A42C95200BD_614804ff839e.png) 
+     ![](./img/614804ff839e.png) 
 
      INDEX\_TRACKID和INDEX\_REFERRER\_EX参数只有在10.5.0.300及以上版本的应用市场客户端才支持。
 4. 取出INDEX\_TRACKID对应的归因结果json字符串后可以反序列化为`HashMap<String, String>`，请参见[示例代码](#section16515926192215)。
@@ -45,7 +45,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
    建议您不要在客户端处理归因字符串，将归因字符串上报服务端，在服务端进行解析处理。
 5. 完成客户端新版本开发后，打包新版本应用进行调测，详情请参考[功能调试](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-debug-0000001284968724)。
 
-   ![](./img/0000000000011111111.20251117124640.32542177979143765848509402397251_50001231000000_2800_9CD9EC79DEE5AA98E65DDC743E0FEEB403F973643C7ECD79B8B9A57BD14BA0EC_37f7e6917020.png) 
+   ![](./img/37f7e6917020.png) 
 
    首次对接测试智能分包，老版本应用不具备查询能力，推广位下载APP（调测从推广位下载APP，请参考[FAQ](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804#section5850152919125)）后请直接使用**adb install -r** ***xxx*****.apk**（您的新版本安装包）进行升级，切勿卸载后再安装，否则会导致归因信息丢失。
 

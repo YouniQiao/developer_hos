@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-inter
 
 为了让应用在全场景多设备上都能获得一致自然的交互体验，需要为不同交互状态下的各种输入设备设计适合的交互方式。在传统的开发模式中需要为不同的输入设备进行适配开发，工作量巨大。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260205170808.17699526271382135962129281892319_50001231000000_2800_AFFE96E2F5D6CC250504CFF4DD5490C671A32A8A307949A98FDED959F984736F.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/AFFE96E2F5D6.png "点击放大")
 
 针对这一问题，HarmonyOS 提出了交互事件归一，旨在保证全场景下应用交互体验一致性的同时，大幅降低设计和开发的工作量。交互事件归一是一种适配多设备输入的交互响应框架，通过将不同设备的交互行为转化为同一个交互事件，保证控件在不同交互场景下的体验一致性。开发者只需要调用所需的交互事件接口，无需为每个输入设备单独适配，从而大幅简化开发流程。
 
@@ -18,7 +18,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-inter
 | **触屏手指输入**  触屏双指捏合 | **键盘+鼠标输入**  键盘 Ctrl 键+鼠标滚轮 | **键盘输入**  键盘 Ctrl 键+“+/-”键 | **触控板输入**  触控板双指捏合 |
 |  |  |  |  |
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260205170808.45739856367490839183984242325310_50001231000000_2800_3A2A8C602B7B0C98B7AC6740FE439617F63A71AC88ABD19963C74ACC8BE95BD2.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/3A2A8C602B7B.png "点击放大")
 
 ### 交互规范
 
@@ -84,7 +84,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-inter
 
 用户通过长按进行某些快捷操作，如长按视频倍速播放等。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260205170808.30939961283126132264501822746341_50001231000000_2800_E88002FED879462DDA324BF6AC68F7B38B69CDEC6D421A4147EB7963CA76B432.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/E88002FED879.jpg "点击放大")
 
 | 输入设备/方式 | 交互行为 |
 | --- | --- |
@@ -102,7 +102,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-inter
 
 某个元素上显示弹出菜单或快捷方式菜单。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260205170809.70794878227775713278585509292445_50001231000000_2800_8B1C9873CE198C9B801F65211A6841DA87B35E85777D6BC3029E76DEB258859C.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8B1C9873CE19.jpg "点击放大")
 
 | 输入设备/方式 | 交互行为 |
 | --- | --- |
@@ -124,7 +124,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-inter
 
 移动某个元素位置或者移动某个元素用于发送等。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260205170809.16050125483089962636538600897702_50001231000000_2800_63144D14265E385B9368602C2A59B86E8EBF304BA97330FF603ABB9BAB1299FE.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/63144D14265E.jpg "点击放大")
 
 | 输入设备/方式 | 交互行为 |
 | --- | --- |
@@ -142,7 +142,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-inter
 
 滚动列表或页面。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260205170809.24885517910938685215808613990195_50001231000000_2800_16D5A6958520F6473A7F8169705CFC7D5AC36266A4DD8B4928E6A21CBC689A1A.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/16D5A6958520.jpg "点击放大")
 
 | 输入设备/方式 | 交互行为 |
 | --- | --- |
@@ -162,7 +162,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-inter
 
 将一个页面切换至下一个页面或快速滚动页面。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260205170809.16116456909935677760972478816248_50001231000000_2800_BE0EC55E1AD43E1FA631CF8D2C0D9F833284D484ECF91BC4924FE1FEEFB15575.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/BE0EC55E1AD4.jpg "点击放大")
 
 | 输入设备/方式 | 交互行为 |
 | --- | --- |
@@ -182,7 +182,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-inter
 
 查看图片或浏览页面时调整对象大小
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260205170809.57653161067288300208193616955833_50001231000000_2800_573D9CCE9D7F99FB7F15E8C7A7635A9D214FC336EDB64A8B1CCF57B9A20661E0.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/573D9CCE9D7F.jpg "点击放大")
 
 | 输入设备/方式 | 交互行为 |
 | --- | --- |
@@ -219,4 +219,4 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-inter
 
 如用户有自定义响应的需求，也可根据开发文档中提供的接口做相应的修改。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260205170810.82238170994724542396293537417903_50001231000000_2800_BF0B94F3C14C65720F9B69283E6292A6920B72985C7D9A31FEFF05E9846D5FCE.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/BF0B94F3C14C.png "点击放大")

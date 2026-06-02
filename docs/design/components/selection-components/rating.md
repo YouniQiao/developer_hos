@@ -9,7 +9,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/rating-00
 
 表示用户使用感受的衡量标准条。开发相关描述请参考 [Rating](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-rating) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213509.96002098259440425656270120206859_50001231000000_2800_E2151CE701016BBAE397CC5BD9C5935CD3B4345838D5E7832C5B5E301AE443BD.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/E2151CE70101.jpg "点击放大")
 
 ### 如何使用
 
@@ -21,7 +21,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/rating-00
 
 **根据使用场景设定滑动步幅。**评分反馈的分数与选择元素的数量有直接关系，在默认规格中，评分步幅按照 0.5 为基础值为一个单位，即每一次滑动元素递增的
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213509.27704107136083296838395277334838_50001231000000_2800_BAA95260D0E77249E7C60F0108C799BFBAB34A09872C28325DDE16F887A5FA74.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/BAA95260D0E7.png "点击放大")
 
 |  |  |  |  |
 | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/rating-00
 
 | **可操作评分条** | **不可操作评分条** |
 | --- | --- |
-| 用于如应用商店、购物场景、应用/功能的评分。也可以横向滑动对内容进行评分，跟手滑动状态变化，支持步长为整颗星星。 | 不可操作评分条仅用于评价量化展示。  ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213510.13013900069659435263510513544483_50001231000000_2800_3B236083893CDA64F62185F5765742E79027CC89B5568C484A410992CEBE914C.png "点击放大") |
+| 用于如应用商店、购物场景、应用/功能的评分。也可以横向滑动对内容进行评分，跟手滑动状态变化，支持步长为整颗星星。 | 不可操作评分条仅用于评价量化展示。  ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/3B236083893C.png "点击放大") |
 
 ### 开发文档
 

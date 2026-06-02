@@ -5,7 +5,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-m
 ---
 # Condition
 
-![](./img/0000000000011111111.20251117124649.02618687180877967371748045282885_50001231000000_2800_FAD5E5E22D991095989F5C1DAA497241749D74DE7F368F8B991B94C7B0ADA12F_57922974999f.png) 
+![](./img/57922974999f.png) 
 
 部分标签枚举值过多，无法一一列举，如果您有需求可以联系华为行业运营提供。
 

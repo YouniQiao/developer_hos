@@ -17,4 +17,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 素材设计规避区域说明如下图所示。
 
-![](./img/0000000000011111111.20251117124640.78643743325672444239526406786477_50001231000000_2800_E72C72FAA006B16FDC35FA1DE02BF559B169DBCF9FEFACB897D48098F2927DF2_c2b3313eaf9f.png)
+![](./img/c2b3313eaf9f.png)

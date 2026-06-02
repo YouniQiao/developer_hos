@@ -17,7 +17,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/specific-op
 - 礼包（有码）：以串码（兑换码）形式向用户派发礼包，用户领取后获得一个串码，根据使用说明在应用（游戏）中兑换获取福利。
 - 第三方卡券：以串码（兑换码）形式向用户派发卡券（如京东E卡），用户领取后根据使用说明在第三方应用中兑换获取福利
 
-  ![](./img/0000000000011111111.20211126150203.25234513526697928315940296822313_50521125084658_2800_F5D2BFC9746787F6F97F1730D57A70AB56DD95ABB3B84D47BC15D0C041DB4054_6b91651912d7.png)
+  ![](./img/6b91651912d7.png)
 
 说明：
 
@@ -31,7 +31,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/specific-op
 
 创建路径：AppGallery Connect &gt; 我的应用 &gt; 应用类型 &gt; 运营 &gt; 活动管理 &gt; 活动管理 &gt; 新建活动。
 
-![](./img/0000000000011111111.20211126150203.48263848312146359518189200492762_50521125084658_2800_FD796090141E97A95A9A84F34E94E7AC5BD0D8F0C87F4ED829558345AAD685CB_bc964549430f.png)
+![](./img/bc964549430f.png)
 
 <strong>活动类型</strong>：共7种，具体类型活动请参考[具体类型活动示例](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/activity-examples-0000001176965771)。
 

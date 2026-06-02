@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/swiper-00
 
 导航点是用于界面设计中的常用导航类控件，通常用于展示多个视图、界面内容之间的切换关系。通过导航点可以直观的告诉用户当前内容的数量，且指示当前内容所处位置。导航点导航的内容都是处于同等重要的位置。开发相关描述请参考 [Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213424.77663447176424854947486044325178_50001231000000_2800_60998E4509F9753815D99FC90777B0B032631061F1104EB9D2813ABDB578FF5C.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/60998E4509F9.png "点击放大")
 
 ### 如何使用
 
@@ -29,25 +29,25 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/swiper-00
 
 用于页面数量较少的场景。圆点个数代表界面数量，高亮点指示当前页面所处位置。当鼠标移动到导航点上悬停时，导航点左右侧出现切换箭头，并且导航点整体呈现悬停效果，增加悬浮态背板。当移动到指向箭头上时，箭头会增加背板悬浮态效果。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213425.36060225519631683201360563896259_50001231000000_2800_3908DA723FF0F91FDE759AF49843A21970416D924EBC6E585C5CE4E40938F531.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/3908DA723FF0.png "点击放大")
 
 **数字导航点**
 
 用于页面数量较多的场景，让用户清晰的知道目前所看内容的位置。前置位数字为当前所在的页数信息，后置位数字为总体页数信息。当鼠标移动到数字上悬停时，数字导航点左右侧出现切换箭头。当移动到指向箭头上时，箭头会增加背板悬浮态效果。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213425.65361319329687881451448753993932_50001231000000_2800_43B6D64D2751642DC397F140B3B1CD7A35913ADF86560FA847CEB9A915362D58.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/43B6D64D2751.png "点击放大")
 
 **切换箭头**
 
 用于左右滑动查看内容，用户对内容数量无需感知的场景。例如图库查看图片页，应用商店详情页。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213425.81818841697480108536827022561414_50001231000000_2800_C91479F7B006CF269E70E729D8206ACADB9FD4BE78BFE71065441C567E1ACAF4.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/C91479F7B006.png "点击放大")
 
 **智能穿戴****导航点**
 
 导航点用来指示当前界面所处的位置，在智能手表导航逻辑上综合了一般底部导航和轮播导航的优势，位于内容下方，以小圆点为构成样式。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213425.56365063368091487498204487974471_50001231000000_2800_96EAF139CCB55C6E21342F3D23189CE27C29FB25C301BA4C62225C7C6919E6B2.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/96EAF139CCB5.png "点击放大")
 
 使用方式：
 
@@ -55,7 +55,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/swiper-00
 2. 导航点不做默认播放，当用户左右滑动时，则应直接展现相应的页面，或者刷新当前的页面。
 3. 导航点数量与横向切屏页面数量相同，单屏需做导航点数量限制。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213425.34153786297832039074958984846943_50001231000000_2800_E135A6C4440F79C0891132CB746E6E25F31B77A83E082361858EDB690E9E1DA0.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/E135A6C4440F.png "点击放大")
 
 ### 开发文档
 

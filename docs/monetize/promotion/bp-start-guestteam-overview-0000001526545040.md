@@ -11,7 +11,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-gu
 
   直客账户可在线升级为直客管理者账户，快速构建直客团队账户体系。
 
-  ![](./img/0000000000011111111.20260303164833.64130639177925697535745626800644_50001231000000_2800_ECFF9EF738D5C905D27B63DA0645B9E163D11C266DA6C88ABEA88AF15E27C3B0_2925460d6fbb.png) 
+  ![](./img/2925460d6fbb.png) 
 
   直客账户升级为直客管理者账户后，不支持再回退为直客账户。账户升级不影响直客账户原有的功能和权限。
 - 管理高效
@@ -25,7 +25,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-gu
 
 直客团队体系角色示意图如下图所示。
 
-![](./img/0000000000011111111.20260303164833.32467420790288800275419369359052_50001231000000_2800_B4CDA0F8D62105759D4A2DF4FC11AE77600AF7FEC83D8A47E14ECF7F2D6153AB_a2ff9711fffd.png "点击放大")
+![](./img/a2ff9711fffd.png "点击放大")
 
 具体说明如下表所示。
 

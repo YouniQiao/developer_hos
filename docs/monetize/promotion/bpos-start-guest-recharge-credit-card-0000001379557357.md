@@ -20,7 +20,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-
 
 ## 操作流程
 
-![](./img/0000000000011111111.20250909115212.38237496986778884758352912980278_50001231000000_2800_D8A5A201335740912AA093833AF17AD63D979C406574C959E5C61E920712D759_16a4219b5d82.png)
+![](./img/16a4219b5d82.png)
 
 ## 操作步骤
 
@@ -36,7 +36,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-
 
    如果您是新注册的企业开发者，在您未开通付费服务时，系统会提示签署付费服务协议。完成协议签署后补充付费服务相关信息并保存。
 
-   ![](./img/0000000000011111111.20250909115212.29127679943507488271831800932333_50001231000000_2800_1340E16A0142801CE90526D204AF9382107BF453D07428070BB92AD75A7D8A74_9e38a7364fb2.png)
+   ![](./img/9e38a7364fb2.png)
 
    - <strong>企业名称</strong>：请填写与您鲸鸿动能广告账户一致的企业名称。
    - <strong>地址</strong>：请填写与您鲸鸿动能广告账户一致的企业地址。
@@ -48,25 +48,25 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-
 
       若出现添加失败的提示，请再次点击“添加付款方式”重新添加。
 
-      ![](./img/0000000000011111111.20250909115212.89029880262095303671924975254292_50001231000000_2800_FAD7A98127F10F781BC9031ACFD14226A28A945C4FB36A9BB339D97F3AB1FA63_06e63ec6f527.png)
+      ![](./img/06e63ec6f527.png)
 
       - <strong>卡号</strong>：请填写您的企业信用卡卡号。
       - <strong>持卡人</strong>：请填写与您鲸鸿动能广告账户一致的企业名称。
    3. 返回[华为开发者联盟管理中心](https://developer.huawei.com/consumer/cn/console#/serviceCards/)，此时您在界面上看到的“<strong>开启</strong>”，即为已成功绑定信用卡，即可登录[鲸鸿动能广告平台](https://ads.huawei.com/ppsdspportal/index.html#/home)进行广告投放。
 
-      ![](./img/0000000000011111111.20250909115212.89496793717343383423784072459427_50001231000000_2800_62C05DD154C4E18BE1E47D79AEC332ECC15CAD250CC7AC36244B8FA40B51C501_ad9535893a1b.png)
+      ![](./img/ad9535893a1b.png)
 
 ## 查看信用卡扣费详情
 
 登录[华为开发者联盟管理中心](https://developer.huawei.com/consumer/cn/console#/serviceCards/)&gt;“<strong>我的账户</strong>”&gt;“<strong>后付费账户</strong>”，选择一条交易ID，点击“<strong>下载</strong>”后会出现弹窗展示密码，复制密码，查看下载的订单详情时需输入方可查看。
 
-![](./img/0000000000011111111.20250909115213.12269129077152300215789149310450_50001231000000_2800_862B79ECDA8F3F83F00BBF27FFBA0BBF72A828D43AD9F39B59F077FEA7618448_392fa2b3dcff.png)
+![](./img/392fa2b3dcff.png)
 
 ## 解绑信用卡
 
 1. 登录[华为开发者联盟管理中心](https://developer.huawei.com/consumer/cn/console#/serviceCards/)&gt;“<strong>我的账户</strong>”&gt;“<strong>后付费账户</strong>”，点击右上角的“<strong>解绑信用卡</strong>”。
 
-   ![](./img/0000000000011111111.20250909115213.29294923889675474738414829888697_50001231000000_2800_260A26386AA7BA405BB3F247FC57E27FB4D4A6FF844A6840D875E5C5B178AFC8_72bb76db857d.png)
+   ![](./img/72bb76db857d.png)
 
 2. 跳转至支付界面，点击<strong>“授权并登录”，</strong>进入银行卡管理页面，点击“<strong>解绑</strong>”。
 3. 解绑成功后，返回[华为开发者联盟管理中心](https://developer.huawei.com/consumer/cn/console#/serviceCards/)，可以看到右上角的卡片状态为：“<strong>失效</strong>”。

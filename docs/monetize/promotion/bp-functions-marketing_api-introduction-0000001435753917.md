@@ -19,7 +19,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 Marketing API只支持API客户端方式访问，在访问前您需获取服务端授权，包括创建API客户端和获取访问API的Access Token，具体参见[获取API客户端授权](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section1679462873111)。
 
-![](./img/0000000000011111111.20260303164840.51244444084638904388401875534845_50001231000000_2800_D292A331C627BA3B3D53D58F38068CE3036D01D71CAA2A394B4FBE3EF9B6DBC5_beb55de544c0.png) 
+![](./img/beb55de544c0.png) 
 
 - 若您为直客，请直接使用您的开发者账号创建API客户端和获取Access Token。
 - 若您为客户投放伙伴，需要使用<strong>客户投放伙伴主账户</strong>创建API客户端和获取Access Token。

@@ -7,7 +7,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/prize-creat
 
 （1）华为优惠券：图示
 
-![](./img/0000000000011111111.20211126150204.49505884759178487859395849809552_50521125084658_2800_0B0484992CCEEEC3BE8F8DA62DC5CF99478D272AEB85977C2DEC1AB5A7CB84F9_7f5db5cf99e2.png)
+![](./img/7f5db5cf99e2.png)
 
 <strong>配置说明表：</strong>
 
@@ -37,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/prize-creat
 
 （2）礼包（有码）：图示
 
-![](./img/0000000000011111111.20211126150204.63094695094188335586835087668790_50521125084658_2800_B3D383AF9D3CC840DD7547357B6342493AC7D0E2B1AD5801824F18B74245900C_6a3e61502f05.png)
+![](./img/6a3e61502f05.png)
 
 <strong>配置说明表：</strong>
 
@@ -54,7 +54,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/prize-creat
 
 （3）第三方卡券：图示
 
-![](./img/0000000000011111111.20211126150204.60265332771542536164563982402689_50521125084658_2800_5C8385938F06EB0B251590BA20935E02DF29BCF382BFA33726CD82D679C0EACB_61d7e9234d37.png)
+![](./img/61d7e9234d37.png)
 
 <strong>配置说明表</strong>：
 

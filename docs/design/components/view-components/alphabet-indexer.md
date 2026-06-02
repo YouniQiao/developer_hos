@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/alphabeti
 
 索引条主要针对按字母顺序排序的列表进行快速定位。用于快速精确定位，如：联系人列表 (查找联系人)、天气、世界时钟 (添加城市)。开发相关描述请参考 [AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer) 文档。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154036.25842478444930449232575501536593_50001231000000_2800_D8324E1945AE067065D5953678EC076022E37596F8067BD8A403D8B063BEEA47.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/D8324E1945AE.png "点击放大")
 
 ### 如何使用
 
@@ -15,7 +15,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/alphabeti
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154037.71739272743718063944261099458502_50001231000000_2800_B66AADED63802C3CE09C535FF67A5FD08D8541629366DAF948832A30321DB544.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154037.73481736470440761371151366823874_50001231000000_2800_2EE4376D270885E9D29FB1BA9809C40D02DCCCB9B86393AC8DFEDD2FAB8AD50C.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/B66AADED6380.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/2EE4376D2708.png "点击放大") |
 | 纯首字母索引浮层 | 多项索引浮层 |
 
 ### 组件规则
@@ -24,7 +24,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/alphabeti
 
 索引条控件主要由索引项、索引浮层和检索内容区域为主。其中索引项一般为英文字母，用来进行选择，切换对应选后会对内容区进行筛选，做到快速定位。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154038.29226008062089406479169171638705_50001231000000_2800_68A5AF371463ED09205D38344304099688921033D86D98319D8A2A67993A04B1.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/68A5AF371463.png "点击放大")
 
 |  |  |  |
 | --- | --- | --- |
@@ -38,7 +38,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/alphabeti
 
 当设备处于横屏下时，例如手机设备，或是当应用窗口处于分屏场景时，由于可展示的应用高度不够，字母索引可以以间隔方式显示字母。 通过使用 [autoCollapse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer#autocollapse11) 接口能力可以实现动态判断。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154038.41348510724153305976193380817585_50001231000000_2800_9D8CED52E2F35373DCBFB709510895418A673886EBBBB2B42F3DE2D81E6C66C9.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/9D8CED52E2F3.png "点击放大")
 
 ### 设备差异
 
@@ -46,14 +46,14 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/alphabeti
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154038.73478932511872552776055759514888_50001231000000_2800_79D5541022515BFCE43E5AAB067140A6C3EE7E021B4AA83B6DC28CF9330B91B7.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154039.26776883270065889583090129222780_50001231000000_2800_ACAD9E8EF3102A03C0CDFBF1699C906EF4C279B3675ED584786603F58DCC30D9.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/79D554102251.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/ACAD9E8EF310.png "点击放大") |
 | 索引条的位置需要在界面中可以自由布局，通常情况下建议在界面中保持居中位置。在 HarmonyOS 应用中通常会将界面中的信号栏和底部工具栏/底部页签高度去除掉，然后居中展示。 | 若顶部的内容还包含子页签等其他组合组件，字母索引起始位置可以考虑基于顶部组件高度提供一个默认间距，固定显示。 |
 
 ## 穿戴设备
 
 索引条是快速定位列表内容的操作条。用于快速精确定位，如联系人列表查找联系人。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154039.03564988249737032526518892122795_50001231000000_2800_BEC5353C834ABD9AA24DC3E9716E34EAE07021CAD5EDFCFE968AD09B910DD236.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/BEC5353C834A.png "点击放大")
 
 **使用规则**
 
@@ -64,21 +64,21 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/alphabeti
 * 多语言情况下，整圆状态下超过 30 个字符时，可隐藏一些字符并以“.”显示，焦点处于此位置时，气泡显示被隐藏的多个字符。
 * 多语言情况下，一些语言需要切换至字母索引时，本地语言末尾有一个字母，点击或滑动可切换至字母语言；切换至字母索引时，字母索引上方有一个本地语言字符，点击或获得可切换至本地语言。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154039.27873024023250969274011340249419_50001231000000_2800_EF52B17B1DE7DAE55F7C1AB29CDC8597FA37A9812923ED86986C77C42F126006.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/EF52B17B1DE7.png "点击放大")
 
 方形表：
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154039.67268550598073372930919706726257_50001231000000_2800_84F5E8678F08F0748740B1EBC6249DC1DBBF9E8C2B2DE724C01B9E4681461BED.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/84F5E8678F08.png "点击放大")
 
 **视觉规则**
 
 圆形表：
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154039.94929275212021017057366220879359_50001231000000_2800_BF30BF768432DEFA8E045279A2A45CF6C72621DFA32FA835628F1911A63DDF10.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/BF30BF768432.png "点击放大")
 
 方形表：
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250825154039.40780039721518042331648636050351_50001231000000_2800_BD02ABCFC72F323CC92073F5948DB59693B66E2D02420F81020F7379CEAFB6B7.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/BD02ABCFC72F.png "点击放大")
 
 ### 开发文档
 

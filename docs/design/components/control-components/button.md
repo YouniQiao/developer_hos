@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-00
 
 一种常用控件，点击可触发对应操作。开发相关描述请参考 [Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213449.40999747680680629940462818315923_50001231000000_2800_AAA4C809B5DD637CF9025A91AC98A2CAE3514605B2858FE875AE3217DF218615.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/AAA4C809B5DD.jpg "点击放大")
 
 ### 如何使用
 
@@ -19,23 +19,23 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-00
 
 强调按钮是一种常见的按钮形式，点击执行操作。在界面上很突出，用于强调当前操作。典型场景：弹出框、界面底部按钮。例如：保存、支付、订阅、安装。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213449.63182668872608367564185794196835_50001231000000_2800_4B5F0303D67AE96660626846F4960D7931CC3A3C0EC32536F3AD49DAB37A4591.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/4B5F0303D67A.png "点击放大")
 
 **普通按钮用于一般界面操作。**清晰的背板可以明确的指示用户可操作的区域。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213450.56872354634388404460386523569296_50001231000000_2800_0A953D34B4B55706CE49ED116E441512197841AB73F33A35D6C72F9B31E56768.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0A953D34B4B5.png "点击放大")
 
 **文本按钮为纯文本按钮，点击执行操作，可最大限度减少按钮对内容的干扰。**界面内容区 (跟随内容)、弹出框的操作按钮：需使用强调色蓝色，以便用户找到。
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213450.87391560041600022088354683341326_50001231000000_2800_2BA03BBA6692B28A699713254BD5B10C28050E257F6472C94ADF958EAB0D5FB6.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213450.42951079195053213039930846962301_50001231000000_2800_6A5DAAAB6669E375FAC3FF2D7C27B95DAA37414EDAE7A18B89A088E8100DB2FA.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/2BA03BBA6692.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/6A5DAAAB6669.png "点击放大") |
 
 **在显示区域受到限制时，使用图标按钮可以节省空间，让用户对当前界面内容执行快速操作。**在以下场景较为常见：标题栏/工具栏、控制中心、悬浮显示在内容上
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213450.15133823496548542232000979453352_50001231000000_2800_0DEBE33331D86E846A1DF2BE12713A478D312BD32DEA5A50A2C1548046D06626.jpg "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213450.10909929399913231150968412514544_50001231000000_2800_0631FF9502578189452E9B17B605B54D453A44BAC6BAAF29B718786ECA6AF900.jpg "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0DEBE33331D8.jpg "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0631FF950257.jpg "点击放大") |
 | **带容器的图标按钮** | **普通图标按钮** |
 
 **强调按钮、普通按钮、文字按钮都可以使用等待状态。等待状态用于表达正在执行或加载的过程，操作执行完成或加载完成，则进入下一界面。**
@@ -48,7 +48,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-00
 
 按钮样式请使用控件子样式来书写，不要直接给控件写参数，以下参数均已落地在控件中，子样式接口能力参照 [ButtonStyleMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttonstylemode11枚举说明) **和** [ButtonRole](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttonrole12枚举说明) 介绍文档。可通过接口能力实现不同的按钮风格。例如：可通过修改[通用属性 borderRadius](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderradius) 实现电脑中的小圆角风格，详见电脑 部分。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213450.96472848702687042777203750383028_50001231000000_2800_9CC632E930343F209E2C97CFB645AE33976232E4CD20289F32B8EFA5F4F07C80.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/9CC632E93034.png "点击放大")
 
 **所有按钮都支持两种尺寸。**按钮控件提供了两种尺寸接口，NORMAL 和 SMALL，分别对应设计规范普通按钮和小按钮，尺寸接口能力参照 [controlSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#controlsize11枚举说明) 介绍文档。
 
@@ -56,28 +56,28 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-00
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213450.50135051400654797130129729163570_50001231000000_2800_D3238C71F458BBFDF8FE8942C0CDBC4CCF5CE5058A97BE8055FA26636973E45C.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213450.84833414773803507418538552450287_50001231000000_2800_DAAC84B46834C1342C5E95044404DB6D7ADA32614006FAF8AE9030F953AD860E.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/D3238C71F458.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/DAAC84B46834.png "点击放大") |
 | 默认样式 | 多态 |
 
 **普通按钮**
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213450.97540853465383794462468041204418_50001231000000_2800_5EB47A37C5979FA1E321CC5640567881B184D8FD8E289943C3A05E0810D36B3F.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.23962062670055649145317137195333_50001231000000_2800_651D211BFB997AD39DA2AB31AA3B024AE83083D59C24BD7504D473019E09A3A1.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/5EB47A37C597.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/651D211BFB99.png "点击放大") |
 | **默认样式** | **多态** |
 
 **文字按钮**
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.62927392515186096477539401107783_50001231000000_2800_615836374652814496A671D37D4E7E797F88C7B915612BE7645DE8B97618DB7C.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.51705610029136183822756521504126_50001231000000_2800_E1D445F952AAB064DFDA6C163E8CA6EFAA6EFD7B67543075CC8ADAE6F1E16CEF.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/615836374652.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/E1D445F952AA.png "点击放大") |
 | 默认样式 | 多态 |
 
 **圆形按钮**
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.94901198243603729456716115764129_50001231000000_2800_CFE6D9DD2CAEDD07D9AC5F3FE1713064DE7BAF90E82B4DA0070B97F89C67AD32.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.00759558342976481287557334207581_50001231000000_2800_A60505B06DA593A2D76662FDB55E14A7F52203AE030EE7FF41A504A7AE26F719.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/CFE6D9DD2CAE.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/A60505B06DA5.png "点击放大") |
 | **默认样式** | **多态** |
 
 **电脑设备**
@@ -88,7 +88,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-00
 
 |  |  |  |
 | --- | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.21624241396290215318524000515788_50001231000000_2800_82501C188E31D0B02A97BCAF132E9BC61003079EBC87C603D36695A79CB3388B.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.02841653464920352272909220015485_50001231000000_2800_C4B0E25E0D18029C3CEB632D1F335447A4A78468C3281C83592354EB0482C2C4.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.97923212010486211349260293368435_50001231000000_2800_ACD615D1563E5CC694ADB33A8E40363D9ED7173296F3DA18EE584644F49E0377.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/82501C188E31.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/C4B0E25E0D18.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/ACD615D1563E.png "点击放大") |
 
 **普通按钮**
 
@@ -96,13 +96,13 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-00
 
 |  |  |  |
 | --- | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.36751765738696424062700165608822_50001231000000_2800_23D4B6006AA5CFA8A0CBF1CFFE87BF004A8813B619495BB225BB18C92C7C7C12.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.53900432673427794496024282690952_50001231000000_2800_6DF56B64BECF1026F2CF15FC844B94EEAC156E269B9F52B9F235D34F1897B603.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.99027916388673212190256872013855_50001231000000_2800_4FDE1EE14BF157E32EC9B7F2C86C4C81470F957A03AC439226607D66C92E0811.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/23D4B6006AA5.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/6DF56B64BECF.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/4FDE1EE14BF1.png "点击放大") |
 
 **文字按钮**
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213451.50685623633946708667734566577175_50001231000000_2800_F96B3D1D5AB133FCEF9460B8059663224797C8DE903C61AAE2F3FA1BAD4A15D9.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.51262965031534696633554246765726_50001231000000_2800_7CE5490B69E9551293056FB693392DCFCE2246B7B71315BDB36E2BF6D25E271E.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/F96B3D1D5AB1.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/7CE5490B69E9.png "点击放大") |
 
 **智能穿戴**
 
@@ -116,13 +116,13 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-00
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.84759645521127702707364303560621_50001231000000_2800_80F7BB2AE54451C0083B5666C9DCCFA63EC459BAA0A5E592380D8EAFADF76D37.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.81144800737222809037967537088454_50001231000000_2800_9F3F78DB446328757AB76C1A446B45FC9BEC11CA91C680731AE03CD1FCE53D13.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/80F7BB2AE544.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/9F3F78DB4463.png "点击放大") |
 
 **普通按钮**
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.42950783512663672802378142174320_50001231000000_2800_BC728331790227DE0B83073447DD05E6ACC5E964C1E2EDE57F1885D2825192F1.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.79888648956002973424169471702769_50001231000000_2800_83E2EE930CC82680C2E7DFDE2F8C28C2FFA0FD34C67ECAF73D7DCF49C1720055.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/BC7283317902.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/83E2EE930CC8.png "点击放大") |
 |  | 不可用状态，背板不变，仅文本不透明度变为 40%。 |
 
 **胶囊、文本、圆形按钮**
@@ -131,9 +131,9 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-00
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.24307996056933181135441131365235_50001231000000_2800_C6101CFC062F40F6EBF5C9066C5241D2FAFB91EBD7B46749B8C2839701B97BE2.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.10323859882803719007232349292948_50001231000000_2800_9865C1B5FD7E972B085FF24C3A36416218202E774030BDB7D636E9E83C94E064.png "点击放大") |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.94729217017975238436300586675048_50001231000000_2800_B13F572751A63F3E2F48CB893E90A21FB52B587DBF7901CD90D2FA13E5798DF8.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.59716029755885724996622715640979_50001231000000_2800_5D7700BB252E80D0CFD35B40A5CA7A2AEB1C625871806E46F842CAE6817B9152.png "点击放大") |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.32698891788421090965063284620654_50001231000000_2800_CE263635F128DE0A81E5001D22664EBC3C239C27CA78A1A87C1C69C86D25A8F4.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.27979566358094413357528420183780_50001231000000_2800_26218F4B29D16156A608FC930C7438E803453328B17EB530C1FA558332FF1E78.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/C6101CFC062F.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/9865C1B5FD7E.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/B13F572751A6.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/5D7700BB252E.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/CE263635F128.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/26218F4B29D1.png "点击放大") |
 
 ### 响应式布局
 
@@ -143,43 +143,43 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-00
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.13297305222874533967657209820915_50001231000000_2800_A643D9C946A58C4CAA7B91CC44FA6B372CA504508897BA686788254867B52E5F.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.89616603544346018986762334785241_50001231000000_2800_67757572BB038F9DA25018DDF997015FD9753381802ADFB8A630408925701EA0.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/A643D9C946A5.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/67757572BB03.png "点击放大") |
 | **单按钮&双按钮布局** | **三个以上按钮布局** |
 
 **手机横屏**
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.16511064746893520944804817594896_50001231000000_2800_570B7CCCAC4BE934E40E3CD56A806091ED45620D93F7C2C71F62C36C62BF49A0.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213452.72365149591379928125937784384384_50001231000000_2800_C4BD02323515B2420D39D0B1DE8D5C6C234F1DD9A306BBA52B60AF813035BE06.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/570B7CCCAC4B.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/C4BD02323515.png "点击放大") |
 | 单个按钮在横竖屏切换时最大扩展到 448vp  双按钮，左右布局，两者间距 12vp，总体宽度与 448vp 齐平  3 个以上按钮上下排列，按钮上下间隔与竖屏一致，间距保持 12vp | 在半模态中使用遵循同样规格  半模态最大宽度 480vp 的场景下，按钮两边距离半模态保留左右各 16vp 间距，使按钮宽度与全屏显示宽度保持一致手机竖屏 |
 
 **折叠屏及平板**
 
 在更大屏幕上，按钮保持最大 448vp 的宽度，不再跟随屏幕伸缩而改变宽度。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213453.13124339061770018917366504070013_50001231000000_2800_CBBD83832801A3230B98DC2DDCE05D70323015BC32BBCDD560C4D8E172280B69.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/CBBD83832801.png "点击放大")
 
 在半模态等窗口化场景下保持同样规则，基于容器的宽度减去两侧 16vp 间距，保持最大 448vp 按钮宽度。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213453.33825236966492366563314370185744_50001231000000_2800_BDA23311875BCD297BF0C6E38CADE8FBC5EEFD89A27236F08AE74623D38BB372.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/BDA23311875B.png "点击放大")
 
 **智能穿戴**
 
 单个按钮优先使用圆形按钮，如需悬浮或更清晰表达按钮含义时，用弧形按钮。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213453.89483036276418882903493570182771_50001231000000_2800_04161F52FE52EE72DA01B46264650A4448AF6D1FA12884AA6071D7FA5CE3F9E0.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/04161F52FE52.png "点击放大")
 
 多个按钮可使用胶囊按钮，按钮根据内容在最大、最小宽度内自适应。（多个按钮时，按钮长度需相等）
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213453.63850371220681847504514739352038_50001231000000_2800_385D1ADB5F22E2DCFB49E6782455C65099F655D0FAFFD17C4FCEC14EF35CA7C7.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/385D1ADB5F22.png "点击放大")
 
 文本按钮（混排）
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213453.46644864397796324451624858436711_50001231000000_2800_7CDB1EA35B8A32A0FED70D4D10343FAF605CFC3A9154869F8FA812B54EF4FC2D.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/7CDB1EA35B8A.png "点击放大")
 
 通用弹出框布局
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213453.82297390712097085971569359906425_50001231000000_2800_D758E7C4DDD9B5BE565C948CF326B4157C3D3CEDE8034B47878009625D142D7B.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/D758E7C4DDD9.png "点击放大")
 
 ### 开发文档
 

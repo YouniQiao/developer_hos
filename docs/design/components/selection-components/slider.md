@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/slider-00
 
 滑动条是一种常见的移动端的进度控制类控件，用于在界面中选择一个数值或调节某个设置。它通常由一个长条形的轨道和一个可以沿轨道滑动的拖动块组成。拖动块的位置代表了当前选择的数值，滑动条可以是水平或垂直方向的。开发相关文档请参考 [Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213510.12593664566652095843057597613512_50001231000000_2800_0C9F1F95C3A3F3180C08A7D45CDE1A3AD612784980B7AFCA11C25879668608B9.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0C9F1F95C3A3.jpg "点击放大")
 
 ### 如何使用
 
@@ -21,7 +21,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/slider-00
 
 |  |  |  |
 | --- | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213510.77988537711954890499092634607944_50001231000000_2800_F1D79C201275C316F229C234209ACD5C8C55CC65280EC13C3872CF0B6107FA23.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213510.36699920268713254614361855821915_50001231000000_2800_BC5D99D6320159A00B93CD34224D3778A9D40A1FCA40EC8B4A0482412FAE74DF.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213510.98468036960320238697588287998197_50001231000000_2800_D4B07A4442D800E4CDBE1BA721024494E90989DB91A598CB3607E9EA52EC0C7B.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/F1D79C201275.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/BC5D99D63201.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/D4B07A4442D8.png "点击放大") |
 | **Slider**  无手柄样式，多用于较密集进度调节的场景，或用于降低界面元素复杂度时使用。 | **OutSetSlider**  用于界面轻量化展示，可用于音乐播放、视频播放等等。 | **InSetSlider**  用于强调性场景使用，可以直观的感受到参数调节反馈，如音量、亮度、色彩饱和度以及字体大小等。 |
 
 ### 定制化场景
@@ -32,7 +32,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/slider-00
 
 |  |  |  |
 | --- | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213510.03732141716239128355025701529072_50001231000000_2800_929B48D6A5BAFC929533735D7D93C9511EBE73B8C7411588D948E288E683C87E.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213510.65980861959494266423008810693246_50001231000000_2800_14C02D198F26986B6948FAA69812834852DCE6BD451C2FD145B9D91A3EBCF38B.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213510.09292797919046107159623802381011_50001231000000_2800_7A4ECADF2952056A522985E39B633C8347320A86842C59E505D57AC785692978.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/929B48D6A5BA.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/14C02D198F26.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/7A4ECADF2952.png "点击放大") |
 | **LinearGradient**  使用渐变色定义滑动条的背景色。 | **Shape**  同时自定义滑动条整体的圆角，搭配滑块的圆角一同使用。 | **Image**  可用于个性化定制资源。 |
 
 ### 常用组合类型
@@ -63,14 +63,14 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/slider-00
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213510.51946491812293536694583599726831_50001231000000_2800_BEAF720B2C1FEF3A1517FDB5A3E5F241D60BD4177D74318E4994C3BC8B821072.jpg "点击放大") |  |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213511.43571213925386805972359869659642_50001231000000_2800_B6D2729BD2022EB637E10B3583DF413F9C8CB558562800682261967D6FC9318F.jpg "点击放大") |  |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/BEAF720B2C1F.jpg "点击放大") |  |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/B6D2729BD202.jpg "点击放大") |  |
 
 **智能穿戴滑动条**
 
 用来快速调节设置值，如音量、亮度、色彩饱和度。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213511.98819887018068295853926950403446_50001231000000_2800_C0636FBC0D135AE2FC72FE8BAE49ABAEA09DC566FF0297EEDC74B77070F19B05.png "点击放大")![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213511.56688977976804812508290816548675_50001231000000_2800_AE62D70594F74817804381E3F60BF41E8E4EA17DADBA6D9440DBC6BF42D82922.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/C0636FBC0D13.png "点击放大")![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/AE62D70594F7.png "点击放大")
 
 **如何使用**
 
@@ -78,7 +78,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/slider-00
 
 · 对于档位变化的调节（如字体大小），整体控件独占界面，任何区域均可连续滑动, 支持通过表冠滚动调节，每次滑动或滚动调节一个档位；上下图标区域支持点击每次点击变化增减一个档位。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213511.68265777853624466308101407187382_50001231000000_2800_667F00281E86C33152366FE041398354798611FD6EB5B07F092234CA32E75EA8.png "点击放大")![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213511.91120249458220659893209994594564_50001231000000_2800_CBC2A69A4D211ACE168A9772722CFC78C38AFE6CB4AF66EF03A67B693B5C33C6.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/667F00281E86.png "点击放大")![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/CBC2A69A4D21.png "点击放大")
 
 ### 开发文档
 

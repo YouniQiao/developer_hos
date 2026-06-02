@@ -9,7 +9,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-
 
 为了更好的服务广告主，避免出现因充值不及时而影响广告投放的情况，您可以使用线上充值功能，线上充值完成后，现金实时到账。
 
-![](./img/0000000000011111111.20250909115211.95603264913395743092182995833645_50001231000000_2800_24FCA5191F2F6A810E8A985DDEF081E8DF0E644418054FC49793CE3C0332C5BB_0d1f87722484.png) 
+![](./img/0d1f87722484.png) 
 
 如果您需要使用此功能，需要申请[特性](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/addtongxing-0000001128278195)。
 
@@ -48,9 +48,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-
 
    提交工单后请等待审核，审核结果将通过工单向您反馈，审核通过后即可使用线上充值功能。
 5. 线上充值功能申请成功后，您需要在鲸鸿动能广告进行充值。
-   1. 点击“![](./img/0000000000011111111.20250909115211.50300605279820635412141908954215_50001231000000_2800_99AB97394BEE020B9A1F70781AC40442EB6420117F9FAEFC15B3AF75085E6C5A_9744a4982548.png "点击放大")”&gt;“<strong>充值</strong>”。
+   1. 点击“![](./img/9744a4982548.png "点击放大")”&gt;“<strong>充值</strong>”。
 
-      ![](./img/0000000000011111111.20250909115211.72092749544416115352925765688848_50001231000000_2800_E06047C652300C9D44737E4B5E4C889F6165B6704695D73AE66135B8E7E62366_5e943defe5d5.png "点击放大")
+      ![](./img/5e943defe5d5.png "点击放大")
 
       - 充值类型：选择“线上充值“。
       - 主要投放区域：选择“主要投放区域“。
@@ -64,6 +64,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-
 
 ## 银行卡管理
 
-- <strong>添加银行卡</strong>：点击![](./img/0000000000011111111.20250909115211.81394940958959195118193732816982_50001231000000_2800_021AFDE3074517D77AADE142A9BAC49F799F9DB5DC94319D44FFBFECA35FB628_b657661a7809.png "点击放大")&gt;“<strong>充值</strong>”，选择“<strong>线上充值</strong>“，点击页面右下角“<strong>查询我的银行卡</strong>“即可进入银行卡管理页面。点击“<strong>添加付款方式</strong>“并设置银行卡信息。注意：充值的银行卡名称必须和账户实名认证的企业名称相同。
-- <strong>查询银行卡</strong>：点击![](./img/0000000000011111111.20250909115211.89178805541189281321041340794689_50001231000000_2800_98EAC44182ECF2B80EBCEBE6EA7370E6E4C2F21DE3E09119B819F8E8CCC28D6A_47c5e35f7fe6.png "点击放大")&gt;“<strong>充值</strong>”，选择<strong>“线上充值“</strong>，点击页面右下角“<strong>查询我的银行卡</strong>“即可进入银行卡管理页面，查看银行卡。
-- <strong>解绑银行卡</strong>：点击![](./img/0000000000011111111.20250909115211.47586111241119162944937750557987_50001231000000_2800_77841566FFA826B5FD04B876BAE2C3C9B8E56DE49DDCDE0CAA1CEE1D4282ADFA_445def618d1c.png "点击放大")&gt;“<strong>充值</strong>”，选择“<strong>线上充值</strong>“，点击页面右下角“<strong>查询我的银行卡</strong>“即可进入银行卡管理页面，点击某张银行卡对应的“<strong>解除</strong>”。
+- <strong>添加银行卡</strong>：点击![](./img/b657661a7809.png "点击放大")&gt;“<strong>充值</strong>”，选择“<strong>线上充值</strong>“，点击页面右下角“<strong>查询我的银行卡</strong>“即可进入银行卡管理页面。点击“<strong>添加付款方式</strong>“并设置银行卡信息。注意：充值的银行卡名称必须和账户实名认证的企业名称相同。
+- <strong>查询银行卡</strong>：点击![](./img/47c5e35f7fe6.png "点击放大")&gt;“<strong>充值</strong>”，选择<strong>“线上充值“</strong>，点击页面右下角“<strong>查询我的银行卡</strong>“即可进入银行卡管理页面，查看银行卡。
+- <strong>解绑银行卡</strong>：点击![](./img/445def618d1c.png "点击放大")&gt;“<strong>充值</strong>”，选择“<strong>线上充值</strong>“，点击页面右下角“<strong>查询我的银行卡</strong>“即可进入银行卡管理页面，点击某张银行卡对应的“<strong>解除</strong>”。

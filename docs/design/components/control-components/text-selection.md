@@ -9,7 +9,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textselec
 
 选中的文本以高亮的文字块呈现，通过手柄来调整文本的选择范围。操作菜单置于文本之上。开发相关描述请参考 [bindSelectionMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor#bindselectionmenu)和 [SelectionMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-selectionmenu) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213501.51684604860217717961858440230750_50001231000000_2800_29B8888E4A77AD953D9FA81D3899A2AB87572F3BDED00651AF8C3D182DDEB0D5.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/29B8888E4A77.jpg "点击放大")
 
 ### 如何使用
 
@@ -29,21 +29,21 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textselec
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213501.46162641714454467955317151365746_50001231000000_2800_8832367444E470A2F96FF51CC44882F5DECE12C0666C31068501422C2EEEDA46.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213501.08050735198329512627605329567799_50001231000000_2800_00E2F9B6B1CEA7E87FF99C1B37E572908618F65BA4DA242DFC6267BF67F4C32C.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/8832367444E4.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/00E2F9B6B1CE.png "点击放大") |
 | 文本选择菜单 | 点击”更多“图标出现二级菜单 |
 
 **电脑设备**
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213501.23174445973059980871707258034731_50001231000000_2800_DF5E73D4B9CD9DE9EDFC8756A6819EFC121F29ABD8512AA760AF37FDC29108B5.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213501.13855547099636951994662320274925_50001231000000_2800_C67C817FFD22A94ED48A76B9A6AC29CC99D64F14A3992CFE4EC61F08E3F7EB1F.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/DF5E73D4B9CD.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/C67C817FFD22.png "点击放大") |
 | 文本二级菜单 | 带字体编辑的文本选择 |
 
 **设备差异**
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213502.33098381226851972019827970418272_50001231000000_2800_B60F072B883BB9E5F7C819F4E3384650DC4E02A703C55FDC227E3F7FFAA27076.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213502.32680122049220024957124098076816_50001231000000_2800_FEBCC83FAAEA41A34DF11472E642FB88C415D142C45C8E217001EB65721C0B80.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/B60F072B883B.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/FEBCC83FAAEA.png "点击放大") |
 | **触控操作** | **鼠标操作** |
 
 |  |  |  |  |

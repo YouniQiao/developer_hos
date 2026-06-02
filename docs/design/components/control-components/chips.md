@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/chips-000
 
 一种块状的入口，可展示当前内容页签，也可包含图片和文本。常用于展示收件人，例如：邮件收件人或信息收件人。开发相关描述请参考 [Chip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213455.97069110448452216569005505677087_50001231000000_2800_53D5D94CB349631C9D7D6A85978E0EAD920E1E1CEBC0BA655F229BA97AF1C493.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/53D5D94CB349.jpg "点击放大")
 
 ### 如何使用
 
@@ -21,7 +21,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/chips-000
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213455.96989902150140976575675476237265_50001231000000_2800_A19021730D46C4CDDB9F1CBFA081114C7D297494A956A79D2661DB8A4F1D4425.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213455.19942589407928678610507849403932_50001231000000_2800_69C5E3761CE6D65C10F4D75032B06CA34FB73FB48EA1A3A832B800FC45E6F06B.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/A19021730D46.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/69C5E3761CE6.png "点击放大") |
 | **页签类型** | **筛选类型** |
 
 ### 视觉规则
@@ -30,10 +30,10 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/chips-000
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213455.28047665306186421514844061784673_50001231000000_2800_9A5CDE2ED9FB14E04F672DCB00E0F2139776894D8AC1C1AC3C965B0A22CEAE98.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213455.26907527745839066803605498318982_50001231000000_2800_EB612E1E581FF974747E20484BBF3B71BEF81F350C4E4F6C9A05E36D863A3719.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/9A5CDE2ED9FB.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/EB612E1E581F.png "点击放大") |
 | **基础样式** | **可配置元素** |
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213456.17288132431889005032516901173586_50001231000000_2800_DCF0CEA05243057F8760C966CD99F6EC840791B874D29573D2AC691CD250FC5D.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/DCF0CEA05243.png "点击放大")
 
 不定义最小和最大宽度，组件宽度由内部组成元素的宽度决定，文本内容不可为空，组件仅允许横向拓展宽度，不允许换行
 
@@ -45,7 +45,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/chips-000
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213456.30099868311777660484819087920803_50001231000000_2800_DD0D901D2DBB342F983FF0CF05AB7F47AE689312BAAA4B7A07BA3882A3675569.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213456.10504921004473068436076791635796_50001231000000_2800_05ABBA12C2C3ECCA361355B1C217A2E4B47EBC72B2E3AEF48781CBE2B528B4A0.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/DD0D901D2DBB.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/05ABBA12C2C3.png "点击放大") |
 | **页签类型** | **筛选类型** |
 
 ### 开发文档

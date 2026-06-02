@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/divider-0
 
 分隔器主要用于区分不同内容元素和组别，可用于列表或界面布局。分割线相关基础属性配置参考 [Divider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-divider) 文档。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250819105550.37617872242100269474110279333438_50001231000000_2800_0D93D83B7148C30E0970651F3962067E3828589FC49B2AD491F85C0797A1F071.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0D93D83B7148.png "点击放大")
 
 ### 如何使用
 
@@ -15,7 +15,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/divider-0
 
 |  |  |
 | --- | --- |
-| 使用分割线区分列表布局 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250819105550.46576773390620797275864947557738_50001231000000_2800_675FF7138D2EBBF12B01386F97E30BD5FF4FDDFA47B0EC41A42F12376DE3AAB9.png "点击放大") |
+| 使用分割线区分列表布局 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/675FF7138D2E.png "点击放大") |
 
 **不要影响层级结构。**无论使用分割线还是分隔条，应避免将该组件展示在内容的最上方或最下方。分隔器作为区分内容的组件，如果内容相邻的布局没有可区分的内容，则不展示。
 
@@ -23,21 +23,21 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/divider-0
 
 |  |  |
 | --- | --- |
-| 分割线默认使用 1px 高度 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250819105550.16845569829765416551967914356416_50001231000000_2800_30356CF2B19EEFB2280EC7FDBDCCBC77C8CB46324A1541C8FFC6A6C980F57BA1.png "点击放大") |
+| 分割线默认使用 1px 高度 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/30356CF2B19E.png "点击放大") |
 
 **智能穿戴****分隔器**
 
 分隔不同内容块/内容元素。可用于列表或界面布局。分为分割条和分割线。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250819105550.82393874900659689410037018541586_50001231000000_2800_0A6B3F5B25C28220D95FB9656F3BE17233599935E11E9830DE6F8A7443134AA4.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0A6B3F5B25C2.png "点击放大")
 
 **分割条**
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250819105550.07562875641172579843185107125835_50001231000000_2800_CE572C5CFA5CBEA844673A09EC8985E018422FD5A539EB60541C2BB32B32AB2C.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/CE572C5CFA5C.png "点击放大")
 
 **分割线**
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250819105550.81273498445534975470675206178649_50001231000000_2800_8AEC82678A8A2D9B560C660C838404FC9D439EB3B64730D66C2B52976B5A5C5E.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8AEC82678A8A.png "点击放大")
 
 ### 开发文档
 

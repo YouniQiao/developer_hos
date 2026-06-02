@@ -9,6 +9,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 在影子投放模式下，开发者选择目标应用，系统锁定目标应用后一位的位置，系统根据开发者设定最高目标出价，精准计算跟随目标竞品的出价，合理消耗预算。
 
-![](./img/0000000000011111111.20251117124625.23174196253862685127939156327923_50001231000000_2800_3768DEC58201C3D884C77A006883CDF625CA378757C028B4008EEB9AE64A257A_25ae28806d9d.png) 
+![](./img/25ae28806d9d.png) 
 
 影子投放相关介绍、使用技巧及优秀案例，请参见[视频课程](https://developer.huawei.com/consumer/cn/training/course/video/C101678343872865783)。

@@ -26,7 +26,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
   因为定向人群投放更精准，用户付费意愿高，所以相比通用人群方式投放，ROI提升明显如下图所示。
 
-  ![](./img/0000000000011111111.20251117124641.84025339421748636697757328936062_50001231000000_2800_7F2F0E6D3581421761E7B4F84409623FA4886086244002EE9451A5131E2D4B24_3ec20af0465f.png)
+  ![](./img/3ec20af0465f.png)
 - 成功案例二
 
   某租房买房应用圈定高意向人群，进行定向投放。
@@ -39,4 +39,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
   定向投放后深度成本降低82%，深度转化率提升6~7倍，如下图所示。
 
-  ![](./img/0000000000011111111.20251117124641.58864918637536767013912721464669_50001231000000_2800_591A4BC2BF8B44E38CE4CA8AC4AB7772C2A311425D2FD0F7D36B414DA90ADFB2_844514a520f8.png)
+  ![](./img/844514a520f8.png)

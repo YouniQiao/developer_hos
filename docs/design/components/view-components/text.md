@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/text-0000
 
 文本控件用于呈现一段信息，可以任意布局在界面中，并可作为段落文本用于界面功能中。文本基础属性设置参考 [Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text) 文档，富文本规格参考 [RichText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richtext) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213425.36652559977765863570466216999917_50001231000000_2800_585627862EE792FF9A1B83D4CD9405C3450D05D50E3E06D9DF6219E179E3BCFB.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/585627862EE7.jpg "点击放大")
 
 ### 如何使用
 
@@ -19,7 +19,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/text-0000
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213426.22975143839259934357319330990097_50001231000000_2800_4FBF6B1041B75D5AA920ACE9AE089D5E8853C3A1143F30509019EECCEE1667EF.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213426.94816542376150062752567382399640_50001231000000_2800_E70FB69151243747D197198B0D16CF4A318F4745558EB348B395119BA8173E64.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/4FBF6B1041B7.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/E70FB6915124.png "点击放大") |
 | 文本在系统界面中的使用属于基本设计元素，可以调整文本的对齐方式、大小、字重等属性，进行排版布局 | 文本可以通过修饰字体样式、间距等参数，进行多样化的排版设计 |
 
 **文本超长滚动规格**
@@ -28,7 +28,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/text-0000
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213426.79721639328401120650191001151922_50001231000000_2800_DED994249B0D69A407D1B788BA7E619F7A2F1A79441EB3CA92BE96992DB6F02B.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213426.47095335401267932211163906988830_50001231000000_2800_45986D1123FB0DB3AEA4017B9F995D1C00D802E05E36E08AC67485F8F48A356E.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/DED994249B0D.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/45986D1123FB.png "点击放大") |
 | 文本超长需要滚动时不可换行，渐隐区域从文本消失位置算起向前扩展 16vp，透明度从 0% 到 100% 进行渐变 | 不同界面布局中可能存在不同对齐方式，但文本渐隐始终计算文本区域，文本以外的 Margin、Padding 等间距均不计入渐隐范围 |
 
 ### 开发文档

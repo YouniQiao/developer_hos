@@ -14,4 +14,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 例如：想跟TA环游世界，选择我更精彩。
 
-![](./img/0000000000011111111.20260303164840.21628065878838711009775211772654_50001231000000_2800_B8A4BFFD5BA069834C345BA831B87103B7E97571EB449ABE02EEA7FBBA1987ED_fcfb16e16239.png "点击放大")
+![](./img/fcfb16e16239.png "点击放大")

@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/radio-000
 
 单选是一种只能用于在互斥选项中进行选择的控件。开发相关描述请参考 [Radio](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-radio) 文档。
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213509.08426255387171806778120703423653_50001231000000_2800_6BCA5D2FC7E91C95B1FC079F40F44A9676E0614B33C6651DCA61436463AE151C.jpg "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/6BCA5D2FC7E9.jpg "点击放大")
 
 ### 使用场景
 
@@ -23,10 +23,10 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/radio-000
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213509.01932797110177329795218246157347_50001231000000_2800_300BF616F6860E1871633F282EFAC10B050556A411FD83A0DE155F425C382E27.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213509.50837018460733313680538876181917_50001231000000_2800_3D2E8D6B8C420A16D27AAB1F1D2AABA3E5754AEBF21BABBA49C51BCC93141D3C.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/300BF616F686.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/3D2E8D6B8C42.png "点击放大") |
 | **默认 TICK 选中状态** | **默认 TICK 未选中状态** |
 |  |  |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213509.73179993840423973765742742774060_50001231000000_2800_2592546832DD2DC853972C07A1C88C2951F7394BC264D6F4CDB811227D638615.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619213509.83908682904551881301700186914082_50001231000000_2800_ECA562E18F9B1B37AB9EF97784985D2148DED5275663C21363C49434851AD01D.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/2592546832DD.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/ECA562E18F9B.png "点击放大") |
 | **DOT 默认样式** | **CUSTOM 自定义样式** |
 
 ### 开发文档

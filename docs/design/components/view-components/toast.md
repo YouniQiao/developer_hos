@@ -7,7 +7,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toast-000
 
 用于在屏幕底部或中部显示一个操作的轻量级反馈。开发相关能力请参照 [PromptAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#showtoast) 文档中的 showToast 用法。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170634.05680488513036251454507841810260_50001231000000_2800_D70CD811A109BCAF6A2957248CE18262FDF8F927531FF0527AD3250F60702E95.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/D70CD811A109.jpg "点击放大")
 
 ### 如何使用
 
@@ -23,7 +23,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toast-000
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170634.40304700091091321397135475217676_50001231000000_2800_EB2F3F9ED868F4A27FB6E1DA6127336B16267B2DF2E0671FA58394389490CE9C.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170634.19688989560073471485774793077389_50001231000000_2800_99F99B881CC157E25508FAFA18D9069B86396320D232C413EB4DAA4D250A8497.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/EB2F3F9ED868.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/99F99B881CC1.png "点击放大") |
 | 底部提示 | 指定位置提示 |
 
 ### 布局规则
@@ -36,36 +36,36 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toast-000
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170634.99516615787513482481378363697569_50001231000000_2800_424663AC7AA74A3E4F7B32141409588C5941FFF168936E4CB1A87EFCC997DDD3.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170634.48814469327543995067521431394753_50001231000000_2800_2A30E75889468D3A23364FCD85FF81252384A0C2DC10F1A6565590B4ADEA09BE.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/424663AC7AA7.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/2A30E7588946.png "点击放大") |
 | **手机竖屏**  默认宽度：基于文本宽度自适应 | **手机竖屏**  最大宽度：屏幕宽度-两侧 Margin |
 
 **跟随系统色彩模式**
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.97446629775785633374283080108776_50001231000000_2800_05AFB3B192EC46B8FEC8AF32414557537FFC8A14F87EE18136E60DE0BDCC5472.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.28772751884703206814552801254611_50001231000000_2800_67827C1039F6E46BB93CC4A7B729D6F9E4AD29B8B0957B040E43CED53A3C881C.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/05AFB3B192EC.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/67827C1039F6.png "点击放大") |
 | **浅色模式** | **深色模式** |
 
 **距离窗口底部默认高度**
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.43160761193321724367973317846073_50001231000000_2800_58A8140F9D86B6DC7773E8B54B705591A03466313A8EEB7645CB7E4397FD196B.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.07263155379623456286757804899497_50001231000000_2800_DB7FDA943158AF93ED4F8F49AD3DBB7AB78BB78032C20B191E2A70B58C6363BB.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/58A8140F9D86.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/DB7FDA943158.png "点击放大") |
 | 弹出位置距离底部 80vp  单行情况高度为 36vp | 当底部有导航条时  弹出位置距离虚拟导航栏顶部 80vp |
 
 **手机横屏规格**
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.45527814818105839999193344562090_50001231000000_2800_A8E85B71B6C5D00836B7A536AB9DF8E0BED02FDD009153C42AD6C810976AA314.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/A8E85B71B6C5.png "点击放大")
 
 **平板**
 
 **平板竖屏**
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.05762806581451707062456604571805_50001231000000_2800_3B64641BF8EE6527320AB2BB620253544A640B21144774213F6518C53D14B967.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/3B64641BF8EE.png "点击放大")
 
 **平板横屏**
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.22433662226541372751284683709506_50001231000000_2800_F21B5729BA0943A8EE9C1363E520B54756BF1D03617F2ED0A089FC5B85D2C866.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/F21B5729BA09.png "点击放大")
 
 **电脑设备**
 
@@ -75,14 +75,14 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toast-000
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.25470553222036082952298621502017_50001231000000_2800_BB914C4A1F5A5838D5A2CF0301A097931EC5C3BE0B5C8E3EC0000CA2F6B9B3A4.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.28713731642268203322218336557305_50001231000000_2800_62081D100A4CDE26E4584025E4FB296A3CBEA17752B22368396181E8B774C52A.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/BB914C4A1F5A.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/62081D100A4C.png "点击放大") |
 | 浅色模式 | 深色模式 |
 
 **智能穿戴即时反馈**
 
 用于在屏幕中部显示一个操作的轻量级反馈。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.01822451860059679534672954645314_50001231000000_2800_8334EC6236EFE6BB54E991F8BFF7904B01B72B3D6E0DB1A98D78DD82DBA026C1.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8334EC6236EF.png "点击放大")
 
 **视觉规则**
 
@@ -90,7 +90,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toast-000
 
 · 文本超长规则：先换行，默认最多3行（特殊情况可更多行）；放不下则缩小3级，再放不下则用“...”截断。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260210170635.75222026778059629916209058826893_50001231000000_2800_6424604B6E14514D5EB4D964C3D91A9B4543FDAA0326054FEE4F6AB891E6D6DE.jpg "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/6424604B6E14.jpg "点击放大")
 
 ### 开发文档
 

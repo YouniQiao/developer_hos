@@ -11,7 +11,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 ## 使用约束
 
-![](./img/0000000000011111111.20251117124642.89188610500129101495753273218159_50001231000000_2800_CC832136BC85D2B609EC4D81C2E1F507FC82F4B92F5CF87154C88066546C3928_65a5606ff058.png) 
+![](./img/65a5606ff058.png) 
 
 如您的服务器对某些请求IP存在限制，需要开通IP允许清单，请联系运营提供。
 

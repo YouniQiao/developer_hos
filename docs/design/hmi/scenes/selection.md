@@ -11,7 +11,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215619.37386263884354749123500909746134_50001231000000_2800_72AF116D9E16B302B88FE86A5EBB398D68E021720D5B8F7E91422E0A443F82D3.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215619.51835429267026855348798532846292_50001231000000_2800_AC3C8C723C17B1F281C26A7393B153527BB21B12259A928EF3D27B823C36CDC9.png "点击放大") |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/72AF116D9E16.png "点击放大") | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/AC3C8C723C17.png "点击放大") |
 | 内容类控件 | 文本类控件 |
 
 ### 发起框选
@@ -60,8 +60,8 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 
 |  |  |
 | --- | --- |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215619.99523563340621568734554048541551_50001231000000_2800_E0463C3940568D2E6912210F2EB934B819C340DF313A9B4A8FCEEF14228749D0.png "点击放大")  加选 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215620.45974444274531603143844091256365_50001231000000_2800_3CD7A42B283E62DF60A445FC2C93CDCB1422BF6424FC58C4F41E25578E802063.png "点击放大")  加选完成 |
-| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215620.66045030649783391823615256060152_50001231000000_2800_768238AE13385C3284FE3097725E3FBAE2AD3F3C58F42F89E50E3B5E193528AD.png "点击放大")  减选 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215620.78437624846433203511547968943107_50001231000000_2800_0BE8CF1CB36EF7089B9959D759F6F2A157A75A9D4355BF2BCF9A0FE656213B5B.png "点击放大")  减选完成 |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/E0463C394056.png "点击放大")  加选 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/3CD7A42B283E.png "点击放大")  加选完成 |
+| ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/768238AE1338.png "点击放大")  减选 | ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0BE8CF1CB36E.png "点击放大")  减选完成 |
 
 ## 走焦加减选
 
@@ -89,7 +89,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scene
 
 ## 框选底板位置
 
-![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619215620.44941061212315043831707717810004_50001231000000_2800_01553F809A2021D29247D20469CBB41684B1C2E02CD763BE0BDB5ADE260A3BA3.png "点击放大")
+![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/01553F809A20.png "点击放大")
 
 与光标上边缘，左边缘各留 1 vp
 

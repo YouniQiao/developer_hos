@@ -32,11 +32,11 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus
 
 选中态和获焦态为两个状态，单选和多选场景下的选中态和获焦态互不冲突。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172202.90326275584136099018469535972237_50001231000000_2800_7ABBC7AC26743F0F80F0990C89A55ADB2C98C1E99F45895E8DAB128A63EB9811.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/7ABBC7AC2674.png "点击放大")
 
 单选选中态和获焦态可同时存在
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172202.28949179936602352244050717882006_50001231000000_2800_60A0F04C61C4017DC90B546F072F8766D57046319CAB810FD7F57F6BFEC92823.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/60A0F04C61C4.png "点击放大")
 
 多选选中态和获焦态可同时存在
 
@@ -52,7 +52,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172202.65700192820142517483236008886037_50001231000000_2800_058B40A3A874214984846A3B960F1AC7A3D2983DD9B93EA488389949378804FD.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172202.46936175144242689685150109475197_50001231000000_2800_975FD3DF1485B5B371FE9CE664C5904CFA47E2720B27E07B3359483FA9F76927.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/058B40A3A874.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/975FD3DF1485.png "点击放大") |
 | 层级优先 | 内容优先 |
 
 ### 可遍历所有可获焦元素
@@ -67,7 +67,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus
 
 焦点默认为全局遍历所有可获得焦点的界面元素，以保证功能的完整性。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172202.18254319742438152096658767670380_50001231000000_2800_5F3A4611904FFFB00BF2E47EF1F9E30F5E2F3FA888CB6814471B4D1D48C9AA55.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/5F3A4611904F.png "点击放大")
 
 ## 绝对走焦顺序
 
@@ -77,7 +77,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus
 4. 提供两种操作次序：正序和反序。当使用键盘时， Tab 键移动至下一个焦点， Shift + Tab 键移动至上一个焦点。车机旋钮右旋至下一个焦点，左旋至上一个焦点。
 5. 一般来说，首尾相连。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172202.15622777109763266475863644308195_50001231000000_2800_7EA293C6F4654793E05198378A3D183E749A234F032CD0A18A3DFEBE653C9B5B.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/7EA293C6F465.png "点击放大")
 
 ## 相对走焦顺序
 
@@ -89,13 +89,13 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus
 
 **正序**
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172202.00986677508744554645008931225938_50001231000000_2800_CFC9B8CAA3727A1A380358BDA966D8DDE3E0CB277B1E256F22E0C52BA565EC54.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/CFC9B8CAA372.png "点击放大")
 
 图 1 在位置 A 上按方向右键，在该方向的下一行寻找可用焦点 B，没有其他可用焦点走到 B 上。图 2 在位置 A 上按方向右键，往下一行寻找可用焦点 B ，在位置 A 上按方向下键，往下方找可用焦点 B 和 C ，按从左到右原则走到 B 上。
 
 **反序**
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172202.58497361565260737071269499527294_50001231000000_2800_5725031B69A1C02A12A6B61042B758E76DE4CC9FE7B127CE19A3B6E52A8EEEB5.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/5725031B69A1.png "点击放大")
 
 在位置 9 上按键，在方向的下一行寻找可用焦点 (4/5/2/6)，在候选焦点中按垂直优先和从右到左原则 2>6>5>4，则位置 2 获焦。
 
@@ -107,7 +107,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus
 
 |  |  |
 | --- | --- |
-| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172202.09335392181247980496491352145863_50001231000000_2800_303AE4F449B1B070D344EB530DE1FC1B2978820F3FF6EAAB1BF61DD15F97822D.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172203.79902879960766292086424025399917_50001231000000_2800_89C2F43A1BF29E6860BBDA6E237C1FA61001402657D444827505C2CD6AF90D34.png "点击放大") |
+| ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/303AE4F449B1.png "点击放大") | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/89C2F43A1BF2.png "点击放大") |
 | 按 Tab 键在焦点组间快速移动 | 没有配置焦点组，按 Tab 遍历所有元素 |
 
 **绝对顺序和相对顺序结合**
@@ -116,7 +116,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus
 2. 当只有部分内容配置了焦点组时，按 Tab 键按照默认顺序遍历未配置焦点组的元素。
 3. 没有特殊定义，按 Tab 优先以控件内部区域顺序走焦，其次响应控件间顺序走焦。
 
-![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251121172203.32757497683254964353553693226130_50001231000000_2800_B63A7F95E74F03BBB63198F519F50EB05358869B0BA53C0ED391FCB5DF3F7AA3.png "点击放大")
+![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/B63A7F95E74F.png "点击放大")
 
 ### 焦点的默认显示/触发消失/位置记忆
 
