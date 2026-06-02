@@ -1,6 +1,6 @@
 ---
-title: 获取License
-displayed_sidebar: gameDevSidebar
+title: "获取License"
+original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pga-license-preparation-0000002084021550
 ---
 
-# 获取License
+使用PGA之前需要先申请License，请联系运营（QQ：2851508860）进行申请。

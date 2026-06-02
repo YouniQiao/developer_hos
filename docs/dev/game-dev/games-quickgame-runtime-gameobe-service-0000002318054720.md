@@ -1,6 +1,12 @@
 ---
-title: 联机对战
-displayed_sidebar: gameDevSidebar
+title: "联机对战"
+original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-gameobe-service-0000002318054720
 ---
 
-# 联机对战
+## 简介
+
+联机对战服务为多人联机游戏提供了房间管理、玩家匹配、队伍管理、消息通信等功能，具备优质的联网和服务端能力。您的游戏只需要接入SDK即可快速实现多人联机对战，提升游戏体验，并降低游戏开发成本。联机对战服务主要适用于回合制（棋牌类）、实时对战（休闲对战、MOBA、FPS类）等类型游戏。
+
+## 接入指引
+
+请参考[联机对战接入指导](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-flowchart-overview-js-0000002395190477)完成联机对战服务的接入工作。

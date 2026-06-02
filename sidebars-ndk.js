@@ -200,16 +200,6 @@ module.exports = {
           ],
         },
         'dev/ndk-dev/rawfile-guidelines',
-        {
-          type: 'category',
-          label: '线程调度',
-          collapsed: true,
-          items: [
-            'dev/ndk-dev/qos-guidelines',
-            'dev/ndk-dev/gewu-ndk-api-guidelines',
-          ],
-        },
-        'dev/ndk-dev/purgeable-memory-guidelines',
         'dev/ndk-dev/native-bundle-guidelines',
       ],
     },

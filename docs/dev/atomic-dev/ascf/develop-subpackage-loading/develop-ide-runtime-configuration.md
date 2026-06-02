@@ -3,4 +3,6 @@ title: "IDE本地运行时配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-ide-runtime-configuration
 ---
 
-# IDE本地运行时配置
+IDE本地运行时，需要手动开启Deploy Multi Hap并且勾选分包的Module，构建工具会自动将分包安装到手机中运行。
+
+![](./img/b970f605.png "点击放大")

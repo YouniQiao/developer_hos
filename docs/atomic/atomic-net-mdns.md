@@ -1,0 +1,172 @@
+---
+title: "MDNS管理"
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-net-mdns
+---
+
+## 简介
+
+MDNS即多播DNS（Multicast DNS），提供局域网内的本地服务添加、移除、发现、解析等能力。
+
+* 本地服务：局域网内服务的提供方，比如打印机、扫描仪等。
+
+MDNS管理的典型场景有：
+
+* 管理本地服务，通过对本地服务的创建，删除和解析等，管理本地服务。
+* 发现本地服务，通过DiscoveryService对象，对指定类型的本地服务状态变化进行监听。
+
+![](./img/49782313.png)
+
+为了保证应用的运行效率，大部分API调用都是异步的，对于异步调用的API均提供了callback和Promise两种方式，以下示例均采用callback函数，更多方式可以查阅[MDNS管理-API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-mdns)。
+
+以下分别介绍具体开发方式。
+
+![](./img/11c6678d.png)
+
+在本文档的示例中，通过this.context来获取UIAbilityContext，其中this代表继承自UIAbility的UIAbility实例。如需在页面中使用UIAbilityContext提供的能力，请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+
+## 管理本地服务
+
+1. 设备连接WiFi。
+2. 从@kit.NetworkKit里导入mdns、错误码、featureAbility以及common命名空间。
+
+   ```
+   // 从@kit.NetworkKit中导入mdns命名空间。
+   import { mdns } from '@kit.NetworkKit';
+   import { BusinessError } from '@kit.BasicServicesKit';
+   import { featureAbility, common } from '@kit.AbilityKit';
+   ```
+3. 调用addLocalService方法，添加本地服务。
+
+   ```
+   let context: common.UIAbilityContext = this.getUIContext().getHostContext() as common.UIAbilityContext;
+
+   // 建立LocalService对象。
+   let localServiceInfo: mdns.LocalServiceInfo = {
+     serviceType: "_print._tcp",
+     serviceName: "servicename",
+     port: 5555,
+     host: {
+       address: "10.14.**.**"
+     },
+     serviceAttribute: [{key: "111", value: [1]}]
+   }
+
+   // addLocalService添加本地服务。
+   mdns.addLocalService(context, localServiceInfo).then((data: mdns.LocalServiceInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   ```
+4. 通过resolveLocalService方法，解析本地网络的IP地址（非必要，根据需求使用）。
+
+   ```
+    // resolveLocalService解析本地服务对象（非必要，根据需求使用）。
+    mdns.resolveLocalService(context, localServiceInfo).then((data: mdns.LocalServiceInfo) => {
+    console.info(JSON.stringify(data));
+    });
+   ```
+5. 通过removeLocalService方法，移除本地服务。
+
+   ```
+   // removeLocalService移除本地服务。
+   mdns.removeLocalService(context, localServiceInfo).then((data: mdns.LocalServiceInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   ```
+
+## 发现本地服务
+
+1. 设备连接WiFi。
+2. 从@kit.NetworkKit里导入mdns的命名空间。
+
+   ```
+   // 从@kit.NetworkKit中导入mdns命名空间。
+   import { common, featureAbility, UIAbility } from '@kit.AbilityKit';
+   import { mdns } from '@kit.NetworkKit';
+   import { BusinessError } from '@kit.BasicServicesKit';
+   import { window } from '@kit.ArkUI';
+   ```
+3. 创建DiscoveryService对象，用于发现指定服务类型的MDNS服务。
+
+   ```
+   // 构造单例对象。
+   export class GlobalContext {
+     private constructor() {}
+     private static instance: GlobalContext;
+     private _objects = new Map<string, Object>();
+
+     public static getContext(): GlobalContext {
+       if (!GlobalContext.instance) {
+         GlobalContext.instance = new GlobalContext();
+       }
+       return GlobalContext.instance;
+     }
+
+     getObject(value: string): Object | undefined {
+       return this._objects.get(value);
+     }
+
+     setObject(key: string, objectClass: Object): void {
+       this._objects.set(key, objectClass);
+     }
+   }
+
+   // Stage模型获取context。
+   class EntryAbility extends UIAbility {
+     value:number = 0;
+     onWindowStageCreate(windowStage: window.WindowStage): void{
+       GlobalContext.getContext().setObject("value", this.value);
+     }
+   }
+
+   let context = GlobalContext.getContext().getObject("value") as common.UIAbilityContext;
+
+   // 创建DiscoveryService对象，用于发现指定服务类型的MDNS服务。
+   let serviceType = "_print._tcp";
+   let discoveryService = mdns.createDiscoveryService(context, serviceType);
+   ```
+4. 订阅MDNS服务发现相关状态变化。
+
+   ```
+   // 订阅MDNS服务发现相关状态变化。
+   discoveryService.on('discoveryStart', (data: mdns.DiscoveryEventInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   discoveryService.on('discoveryStop', (data: mdns.DiscoveryEventInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   discoveryService.on('serviceFound', (data: mdns.LocalServiceInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   discoveryService.on('serviceLost', (data: mdns.LocalServiceInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   ```
+5. 启动搜索局域网内的MDNS服务。
+
+   ```
+   // 启动搜索局域网内的MDNS服务。
+   discoveryService.startSearchingMDNS();
+   ```
+6. 停止搜索局域网内的MDNS服务。
+
+   ```
+   // 停止搜索局域网内的MDNS服务。
+   discoveryService.stopSearchingMDNS();
+   ```
+7. 取消订阅的MDNS服务。
+
+   ```
+   // 取消订阅的MDNS服务。
+   discoveryService.off('discoveryStart', (data: mdns.DiscoveryEventInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   discoveryService.off('discoveryStop', (data: mdns.DiscoveryEventInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   discoveryService.off('serviceFound', (data: mdns.LocalServiceInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   discoveryService.off('serviceLost', (data: mdns.LocalServiceInfo) => {
+     console.info(JSON.stringify(data));
+   });
+   ```

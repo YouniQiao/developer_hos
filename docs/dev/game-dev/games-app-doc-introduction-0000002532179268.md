@@ -1,6 +1,21 @@
 ---
-title: 文档导读
-displayed_sidebar: gameDevSidebar
+title: "文档导读"
+original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-app-doc-introduction-0000002532179268
+has_merged_cells: true
 ---
 
-# 文档导读
+华为游戏服务提供游戏适配指导、服务集成支持、性能优化方案等，助力开发者高效构建HarmonyOS APP游戏。
+
+| 任务 | 简介 | 文档 | |
+| --- | --- | --- | --- |
+| 游戏适配HarmonyOS 5.0及以上/OpenHarmony系统 | HarmonyOS 5.0及以上/OpenHarmony系统可以实现跨终端无缝体检，确保游戏在全场景下的兼容性和稳定性。 | * [游戏的系统适配](https://developer.huawei.com/consumer/cn/doc/games-guides/games-adapt-platform-0000002252371802) * [游戏的多终端适配](https://developer.huawei.com/consumer/cn/doc/games-guides/game-center-access-0000002358833174) | |
+| 游戏集成华为服务 | 应用服务支持开发者集成登录、支付等核心功能，快速构建完整的游戏体验。 | 应用服务 | * [基础游戏服务（必选）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-login-service-0000002252490820) * [应用内支付服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-iap-service-0000002255698130) * [广告服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-ads-service-0000002290315297) * [推送服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-push-service-0000002255595068) |
+| 创新特性能够高效构建极致游戏体验的创新玩法，帮助游戏实现跨设备无缝协同、智能下载资源包等全场景智慧体验。 | 创新特性 | * [Game Controller Kit](https://developer.huawei.com/consumer/cn/doc/games-guides/games-controller-0000002290331481) * [近场快传](https://developer.huawei.com/consumer/cn/doc/games-guides/games-nearby-0000002255611268) * [资源包后台下载](https://developer.huawei.com/consumer/cn/doc/games-guides/games-resourse-service-0000002252508222) * [碰一碰](https://developer.huawei.com/consumer/cn/doc/games-guides/games-share-0000002284803108) |
+| 多人联机具备低延时通信、多平台适配等特点，帮助开发者快速构建多人在线互动的游戏体验。 | 多人联机 | * [游戏多媒体](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-0000002252508214) * [联机对战](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gameobe-0000002287198513) |
+| 游戏性能分析与提升 | 游戏性能影响玩家的游戏体验。  华为游戏服务提供专业的性能分析工具，实时监测内存占用、CPU/GPU使用率等关键指标，帮助开发者定位性能瓶颈，提升游戏流畅度，降低设备发热和耗电。 | * [游戏性能诊断（HiSmartPerf）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-tool-0000002287085461) * [游戏场景感知](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gameperformance-0000002287198517) * [花瓣游戏加速器（PGA）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-pga-0000002252405176) * [二进制优化服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-0000002287085465) * [花瓣游戏数据驱动（PGD）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-pgd-0000002516029213) * [AILOD](https://developer.huawei.com/consumer/cn/doc/games-guides/games-ailod-0000002483909242) * [游戏性能管理（GPM）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-improve-performance-gpm-0000002252508218) * [性能监测服务（APMS）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-apms-service-0000002287198521) | |
+| 游戏预约 | 游戏预约功能可以提前营造游戏热度，吸引更多潜在用户，提升游戏首发时的下载量。 | [游戏预约](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-pre-order-0000002318682790) | |
+| 游戏内测 | 游戏内测功能可以验证游戏对华为手机适配情况，收集真实用户反馈推动迭代优化，同时为评分评级及首发推广资源提供重要参考。 | [游戏内测](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-early-access-0000002286057056) | |
+| 游戏发布 | 华为游戏服务提供发布工具进行游戏审核，助力开发者高效完成游戏上线，同时为游戏上线初期争取更高的曝光量与下载量。 | [游戏发布](https://developer.huawei.com/consumer/cn/doc/games-guides/games-relesase-appgallery-0000002290270041) | |
+| 游戏维护 | 游戏发布后，开发者可以持续维护游戏，例如更新游戏信息、升级游戏版本等，提升用户活跃度，保障游戏长期稳定运行。 | [游戏维护](https://developer.huawei.com/consumer/cn/doc/games-guides/games-maintain-0000002382203965) | |
+| 游戏运营 | 游戏运营贯穿游戏的整个生命周期。  华为游戏服务提供运营工具和数据支持，助力开发者精准制定运营策略，提升用户留存率和满意度。 | * [活动管理](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-setup-activities-0000002320626353) * [社区管理](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-community-operation-0000002285999096) * [互动评论](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-interaction-comments-0000002320645993) * [游戏道具商城](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-prop-mall-0000002363562394) * [在玩服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-playing-service-0000002318522966) * [游戏大事件](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-all-0000002285953798) * [内容创作管理](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-column-operation-0000002320758549) * [游戏分析](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-data-operation-0000002320626373) | |
+| 问卷服务 | 华为游戏服务提供问卷服务，适用于品类运营、联合推广等场景，助力开发者更好地了解用户需求，优化产品体验，提升服务质量。 | [问卷服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-questionnaire-0000002286057040) | |

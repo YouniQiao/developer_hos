@@ -1,6 +1,123 @@
 ---
-title: 范围语音
-displayed_sidebar: gameDevSidebar
+title: "范围语音"
+original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rangeroom-csharp-0000002393266941
 ---
 
-# 范围语音
+“范围语音”指在一个范围语音房间内，玩家通过设置语音接收范围和不断上报更新自身和其他玩家位置信息，与一定空间距离内的其他玩家进行实时语音通话。为了保证范围语音房间内语音清晰，玩家最多只能听到离自己最近的14个其他玩家的声音。
+
+![](./img/b95a414e.png)
+
+![](./img/f6b2022a.png)
+
+* 在语音接收范围内，声音可达，超出则无法接收到。
+* 为了增强音频的沉浸感，打造更加真实的声音效果，建议您将范围语音配合着[3D音效](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-spatialsound-csharp-0000002359547082)一起使用。
+
+## 接口调用流程
+
+下图主要介绍范围语音配合3D音效使用时的接口调用流程，接口详情请参见[API参考](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-gamemediaengine-csharp-native-0000002392723521)文档。
+
+![](./img/ed83d88c.png)
+
+## 前提条件
+
+* 您已[集成游戏多媒体基础SDK和实时语音模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
+* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
+
+## 加入范围语音房间
+
+实现范围语音前，需先加入范围语音房间，具体请参见[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073#section4450837143111)。
+
+## 设置语音接收范围
+
+语音接收范围主要用于限制房间内收听者对音频的最大接收距离（空间距离），根据收听者与发声者的位置信息，收听者可收听到一定范围内的声音。
+
+您可以调用[GameMediaEngine.SetAudioRecvRange](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-gamemediaengine-csharp-native-0000002392723521#section2046905453214)方法如下设置语音接收范围。
+
+```
+engine.SetAudioRecvRange(Integer.parseInt(number), new OpenHarmonyJSCallback(args => {
+    OpenHarmonyJSObject data = args[0];
+    int result = data.Get<int>("data");
+    // 处理业务逻辑
+    if (result == 0) {
+    } else {
+    }
+}));
+```
+
+## 更新/清理位置
+
+进入房间后，在范围语音场景下，玩家通常需要先更新一下自身在世界坐标系中的坐标和朝向信息。当自身或其他玩家位置等信息不断发生变化时，可通过接口持续上报变更。同时，还可以根据场景变化，清理指定或全部玩家的位置缓存信息。
+
+### 更新自身位置
+
+1. 构建自身位置信息。
+
+   ```
+   float forward = 11.0F;
+   float right = 12.0F;
+   float up = 13.0F;
+   PlayerPosition playerPosition = new PlayerPosition(forward, right, up);
+
+   float[] axisForward = new float[3];
+   axisForward[0] = 0;
+   axisForward[1] = 1.0F;
+   axisForward[2] = 0;
+
+   float[] axisRight = new float[3];
+   axisRight[0] = 1.0F;
+   axisRight[1] = 0;
+   axisRight[2] = 0;
+
+   float[] axisUp = new float[3];
+   axisUp[0] = 0;
+   axisUp[1] = 0;
+   axisUp[2] = 1.0F;
+
+   Axis axis = new Axis(axisForward, axisRight, axisUp);
+   SelfPosition selfPosition = new SelfPosition();
+   selfPosition.setPosition(playerPosition);
+   selfPosition.setAxis(axis);
+   ```
+2. 调用[GameMediaEngine.UpdateSelfPosition](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-gamemediaengine-csharp-native-0000002392723521#section148617163535)方法设置自身的位置（即坐标和方向）信息。
+
+   ```
+   int result = hwRtcEngine.UpdateSelfPosition(selfPosition);
+   ```
+
+### 更新其他玩家位置
+
+1. 构建其他玩家位置信息。
+
+   ```
+   List<RemotePlayerPosition> positionList = new ArrayList<>();
+
+   String openId1 = "user1";
+   RemotePlayerPosition remotePlayerPosition1 = new RemotePlayerPosition();
+   remotePlayerPosition1.setOpenId(openId1);
+   remotePlayerPosition1.setPosition(new PlayerPosition(10.0F, 11.1F, 12.2F));
+   positionList.add(remotePlayerPosition1);
+
+   String openId2 = "user2";
+   RemotePlayerPosition remotePlayerPosition2 = new RemotePlayerPosition();
+   remotePlayerPosition2.setOpenId(openId2);
+   remotePlayerPosition2.setPosition(new PlayerPosition(15.0F, 16.1F, 18.2F));
+   positionList.add(remotePlayerPosition2);
+   ```
+2. 调用[GameMediaEngine.UpdateRemotePosition](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-gamemediaengine-csharp-native-0000002392723521#section15307152145220)方法更新其他玩家的位置信息。
+
+   ```
+   int result = mHwRtcEngine.UpdateRemotePosition(positionList);
+   ```
+
+### 清理玩家位置信息
+
+* 调用[GameMediaEngine.ClearRemotePlayerPosition](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-gamemediaengine-csharp-native-0000002392723521#section176391319105516)方法可清理指定玩家的位置信息。例如，清理已离开房间的其他玩家位置缓存信息。
+
+  ```
+  mHwRtcEngine.ClearRemotePlayerPosition(openId);
+  ```
+* 调用[GameMediaEngine.ClearAllRemotePositions](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-gamemediaengine-csharp-native-0000002392723521#section696372315414)方法可清理其他所有玩家的位置信息。例如，当重新开始一局游戏时，清理其他所有人的位置缓存信息。
+
+  ```
+  mHwRtcEngine.ClearAllRemotePositions();
+  ```

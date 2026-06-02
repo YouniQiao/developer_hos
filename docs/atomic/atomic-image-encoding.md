@@ -1,0 +1,47 @@
+---
+title: "图片编码"
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-encoding
+---
+
+图片编码指将PixelMap编码成不同格式的存档图片（当前仅支持打包为JPEG、WebP 和 PNG格式），用于后续处理，如保存、传输等。
+
+## 开发步骤
+
+1. 创建图像编码ImagePacker对象。
+
+   ```
+   // 导入相关模块包
+   import image from '@ohos.multimedia.image';
+   const imagePackerApi = image.createImagePacker();
+   ```
+2. 设置编码输出流和编码参数。
+
+   format为图像的编码格式；quality为图像质量，范围从0-100，100为最佳质量。
+
+   ```
+   let packOpts : image.PackingOption = { format:"image/jpeg", quality:98 };
+   ```
+3. 创建PixelMap对象或创建ImageSource对象。
+4. 进行图片编码，可保存编码后的图片。
+
+   方法一：通过PixelMap进行编码。
+
+   ```
+   import {BusinessError} from '@ohos.base'
+   imagePackerApi.packToData(pixelMap, packOpts).then( (data : ArrayBuffer) => {
+       // data 为打包获取到的文件流，写入文件保存即可得到一张图片
+   }).catch((error : BusinessError) => {
+       console.error('Failed to pack the image. And the error is: ' + error);
+   })
+   ```
+
+   方法二：通过imageSource进行编码。
+
+   ```
+   import {BusinessError} from '@ohos.base'
+   imagePackerApi.packToData(imageSource, packOpts).then( (data : ArrayBuffer) => {
+       // data 为打包获取到的文件流，写入文件保存即可得到一张图片
+   }).catch((error : BusinessError) => {
+       console.error('Failed to pack the image. And the error is: ' + error);
+   });
+   ```

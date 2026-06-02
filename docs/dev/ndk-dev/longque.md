@@ -1,0 +1,6 @@
+---
+title: "Longque-JS-API"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/longque
+---
+
+* **[Longque-JS-API使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-longque-js-api)**

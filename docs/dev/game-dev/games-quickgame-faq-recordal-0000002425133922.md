@@ -1,6 +1,13 @@
 ---
-title: 核准（备案）
-displayed_sidebar: gameDevSidebar
+title: "核准（备案）"
+original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-recordal-0000002425133922
 ---
 
-# 核准（备案）
+## 仅需在华为接入商核准（备案）快游戏，还是所有接入商都要核准（备案）？
+
+每个接入商都要单独核准（备案），例如在华为接入商核准（备案）快游戏成功后，还可以在其它接入商接入快游戏。
+
+## 快游戏核准（备案）审核需要多久？
+
+* 华为平台初审需要3~5个工作日。
+* 各省/市的通信管理局终审需要2~20个工作日，具体以实际审核时间为准。审核结果以邮件/短信形式通知。

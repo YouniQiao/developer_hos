@@ -1,0 +1,7 @@
+---
+title: "OpenMP支持"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp
+---
+
+* **[OpenMP简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp-overview)**
+* **[OpenMP应用构建和运行指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp-guideline)**

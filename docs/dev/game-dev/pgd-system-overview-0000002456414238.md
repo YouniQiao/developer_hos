@@ -1,6 +1,14 @@
 ---
-title: System概述
-displayed_sidebar: gameDevSidebar
+title: "System概述"
+original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-system-overview-0000002456414238
 ---
 
-# System概述
+System（系统）是PGD架构中处理游戏逻辑的核心组件。系统负责在每个游戏循环中对符合特定条件的实体进行处理，实现游戏的各种功能逻辑，如移动、碰撞检测、伤害计算等。
+
+## 核心特性
+
+* 生命周期管理：完整的系统初始化、更新和销毁流程。
+* 查询集成：与Query系统无缝集成，高效处理实体数据。
+* 层次化组织：支持系统集合和嵌套管理。
+* 性能监控：内置性能分析和调试工具。
+* 灵活架构：支持多种系统类型和自定义扩展。

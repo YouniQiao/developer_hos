@@ -1,18 +1,11 @@
 // @ts-check
-// Dev sidebar — 仅分发与运营 (for fast local preview).
-const { agcSidebar } = require('./sidebars-agc.js');
-const { appDistSidebar } = require('./sidebars-app-dist.js');
-const { contentDistSidebar } = require('./sidebars-content-dist.js');
-const { serviceDistSidebar } = require('./sidebars-service-dist.js');
-const { xiaoyiSidebar } = require('./sidebars-xiaoyi.js');
+// Dev sidebar — 仅新搬迁的 4 个 section (for fast local preview).
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  agcSidebarFull: agcSidebar,
-  appDistSidebar,
-  contentDistSidebar,
-  serviceDistSidebar,
-  xiaoyiSidebar,
+  atomicSidebar: require('./sidebars-atomic.js').atomicSidebar,
+  ndkDevSidebar: require('./sidebars-ndk.js').ndkDevSidebar,
+  gameDevSidebar: require('./sidebars-gamedev.js').gameDevSidebar,
 };
 
 module.exports = sidebars;

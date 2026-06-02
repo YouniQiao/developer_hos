@@ -1,6 +1,21 @@
 ---
-title: 游戏多媒体
-displayed_sidebar: gameDevSidebar
+title: "游戏多媒体"
+original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-gamemme-service-0000002317894888
 ---
 
-# 游戏多媒体
+## 简介
+
+游戏多媒体服务是华为游戏中心推出的一款快速实现游戏内语音对讲和即时通讯的服务。您只需集成**游戏多媒体服务SDK**，即可为您的快游戏提供**实时信令收发**、**实时语音对讲**能力，降低开发难度，提升玩家的游戏体验。
+
+## 实时信令RTM
+
+游戏多媒体SDK提供了稳定可靠、低延时、高并发的实时信令（Real-time Messaging，RTM）服务，支持通过华为RTN网络实时发送和接收消息。您的快游戏接入实时信令服务后：
+
+* **客户端**将实现点对点消息收发、频道订阅、频道消息收发以及RTM连接状态监听等能力，可用于实现实时通信、全局聊天、游戏通知、指令同步等功能。
+* **服务端**将实现点对点消息以及频道消息发送能力，可用于发送游戏公告、消息通知等游戏使用场景。
+
+详细接入流程请参考[实时信令接入指导](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rtm-connection-minigame-0000002393266949)。
+
+## 语音消息
+
+游戏多媒体SDK提供了录制/播放语音消息、上传/下载语音文件的能力，支持玩家在游戏内录制一段语音消息并将录制文件上传至云端，其他玩家通过云端的录制文件ID下载并播放该语音内容。详细接入流程请参考[语音消息接入指导](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-record-play-audio-msg-minigame-0000002359547158)。

@@ -1,6 +1,122 @@
 ---
-title: 获取Token（项目级）
-displayed_sidebar: gameDevSidebar
+title: "获取Token（项目级）"
+original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-appendix-token-0000002304569840
 ---
 
-# 获取Token（项目级）
+## 功能介绍
+
+获取有效的Client ID以及Client Secret后，在您的服务器中编写一段调用此接口的代码来获取Access Token，然后在初始化客户端SDK时即可携带该Access Token进行身份验证。
+
+## 接口原型
+
+|  |  |
+| --- | --- |
+| 承载协议 | HTTPS POST |
+| 接口方向 | 开发者服务器 -\&gt; 华为服务器 |
+| 接口URL | https://connect-drcn.hispace.dbankcloud.cn/agc/apigw/oauth2/v1/token |
+| 数据格式 | 请求：Content-Type: application/json  响应：Content-Type: application/json |
+
+## 请求参数
+
+请求参数以JSON格式传入，包含参数如下。
+
+| 参数名称 | 必选(M)/可选(O) | 数据类型 | 参数说明 |
+| --- | --- | --- | --- |
+| client\_id | M | String(256) | 客户端ID，具体获取请参见[准备游戏信息](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-gameinformation-0000002304472612)。 |
+| client\_secret | M | String(2048) | 客户端密钥，具体获取请参见[准备游戏信息](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-gameinformation-0000002304472612)。 |
+| grant\_type | M | String(256) | 固定传入“client\_credentials”。 |
+
+## 请求示例
+
+```
+POST /agc/apigw/oauth2/v1/token
+Host: connect-drcn.hispace.dbankcloud.cn
+Content-Type: application/json
+{
+   "grant_type":"client_credentials",
+   "client_id":"26********20",
+   "client_secret":"************************"
+}
+```
+
+## 响应参数
+
+返回值为JSON格式的字符串，包含参数如下。
+
+| 参数名称 | 必选(M)/可选(O) | 数据类型 | 参数说明 |
+| --- | --- | --- | --- |
+| access\_token | O | String | 认证Token，用于AppGallery Connect API接口调用。  此参数只在获取成功时返回。 |
+| expires\_in | O | Long | access\_token的有效期，单位秒。您需要在过期时间到达时重新调用本接口获取新的access\_token。  有效期为48小时，如果在有效期内再次调用接口获取access\_token时，新老access\_token都是有效的。  此参数只在获取成功时返回。 |
+| ret | O | String(100) | 获取Token失败时的错误信息，包含错误码及描述信息的JSON字符串，格式为\&#123;"code":*retcode*, "msg": "*description*"\&#125;，retcode为错误码，description为错误码描述信息。 |
+
+## 响应示例
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+{
+    "access_token": "eyJhbGciOiJIUzU****************",
+    "expires_in": 172800,
+    "ret":{
+        "code":0,
+        "msg": "success"
+    }
+}
+```
+
+## 调用示例
+
+```
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import org.apache.http.Consts;
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+
+public class GetToken {
+    private static final String DOMAIN = "https://connect-drcn.hispace.dbankcloud.cn";
+
+    public static String getToken() {
+        String token = null;
+        try {
+            HttpPost post = new HttpPost(DOMAIN + "/agc/apigw/oauth2/v1/token");
+
+            JSONObject keyString = new JSONObject();
+            keyString.put("client_id", "4033*****056");
+            keyString.put("client_secret", "0B5FF4AC919*****6551C26E08C5B07D0FD9");
+            keyString.put("grant_type", "client_credentials");
+
+            StringEntity entity = new StringEntity(keyString.toString(), Charset.forName("UTF-8"));
+            entity.setContentEncoding("UTF-8");
+            entity.setContentType("application/json");
+            post.setEntity(entity);
+
+            CloseableHttpClient httpClient = HttpClients.createDefault();
+            HttpResponse response = httpClient.execute(post);
+            int statusCode = response.getStatusLine().getStatusCode();
+            if (statusCode == HttpStatus.SC_OK) {
+
+                BufferedReader br =
+                    new BufferedReader(new InputStreamReader(response.getEntity().getContent(), Consts.UTF_8));
+                String result = br.readLine();
+                JSONObject object = JSON.parseObject(result);
+                token = object.getString("access_token");
+            }
+
+            post.releaseConnection();
+            httpClient.close();
+        } catch (Exception e) {
+
+        }
+        return token;
+    }
+}
+```

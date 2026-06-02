@@ -1,14 +1,11 @@
 // @ts-check
-// Dev Docusaurus config — only builds 推广与变现 docs, keeps minimal chrome.
+// Dev Docusaurus config — only builds newly migrated sections: ASCF, NDK, Game, Atomic.
 // Usage: npx docusaurus build --config docusaurus.config.dev.js --no-minify
-// Usage: npx docusaurus start --config docusaurus.config.dev.js --no-minify
 
 const { themes } = require('prism-react-renderer');
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
-const fs = require('fs');
-const navDistributeHTML = fs.readFileSync('./src/pages/nav-distribute.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -29,6 +26,7 @@ const config = {
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'warn',
     },
   },
 
@@ -48,7 +46,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['distribute/**'],
+          include: [
+            'dev/atomic-dev/**',
+            'dev/ndk-dev/**',
+            'dev/game-dev/**',
+            'atomic/**',
+          ],
           exclude: ['**/img/**'],
           editUrl:
             'https://github.com/YouniQiao/developer_hos/tree/master/',
@@ -76,32 +79,29 @@ const config = {
         },
         items: [
           {
-            label: '分发与运营',
-            type: 'dropdown',
-            to: '/docs/distribute/agc/agc-help-introduction-0000002270860209',
-            className: 'mega-dropdown',
-            items: [
-              { type: 'html', value: navDistributeHTML, className: 'mega-dropdown' },
-            ],
+            to: '/docs/atomic/atomic-service-definition',
+            label: '元服务开发',
+            position: 'left',
+          },
+          {
+            to: '/docs/dev/atomic-dev/ascf/ascf-overview',
+            label: 'ASCF框架',
+            position: 'left',
+          },
+          {
+            to: '/docs/dev/ndk-dev/ndk-development-overview',
+            label: 'NDK开发',
+            position: 'left',
+          },
+          {
+            to: '/docs/dev/game-dev/games-center-introduction-0000002320553253',
+            label: '游戏开发',
+            position: 'left',
           },
           {
             to: '/update',
             label: '更新记录与计划',
             position: 'right',
-          },
-          {
-            href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-references/development-intro-api',
-            label: 'API参考',
-            position: 'right',
-            target: '_blank',
-            rel: 'noopener noreferrer',
-          },
-          {
-            href: 'https://arkts.cool/',
-            label: 'ArkTS',
-            position: 'right',
-            target: '_blank',
-            rel: 'noopener noreferrer',
           },
         ],
       },
