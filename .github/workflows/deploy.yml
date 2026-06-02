@@ -15,6 +15,7 @@ jobs:
     env:
       HTTP_PROXY: ''
       HTTPS_PROXY: ''
+      CACHE_DIR: ${{ github.workspace }}/../_docusaurus_cache
     steps:
       - name: Fast checkout (self-hosted, incremental)
         run: |
@@ -30,14 +31,37 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps (only when needed)
+      - name: Restore build caches (MDX + Rspack)
+        run: |
+          mkdir -p "$CACHE_DIR"
+          if [ -d "$CACHE_DIR/.docusaurus" ]; then
+            rm -rf .docusaurus
+            cp -r "$CACHE_DIR/.docusaurus" .docusaurus
+            echo "♻️  .docusaurus restored ($(du -sh .docusaurus | cut -f1))"
+          else
+            echo "🆕 no .docusaurus cache yet (first run)"
+          fi
+
+      - name: Install deps (only when needed — preserve bundler cache)
         run: |
           if [ -d node_modules ] && cmp -s package-lock.json /tmp/hos-lockfile 2>/dev/null; then
             echo "✅ node_modules up to date, skipped"
+            # Restore bundler cache even when skipping npm ci (safety net)
+            if [ -d "$CACHE_DIR/bundler-cache" ] && [ ! -d node_modules/.cache/webpack ]; then
+              mkdir -p node_modules/.cache
+              cp -r "$CACHE_DIR/bundler-cache"/* node_modules/.cache/
+              echo "♻️  bundler cache restored"
+            fi
           else
             echo "📦 Installing dependencies..."
             npm ci
             cp package-lock.json /tmp/hos-lockfile
+            # Restore bundler cache that npm ci just wiped
+            if [ -d "$CACHE_DIR/bundler-cache" ]; then
+              mkdir -p node_modules/.cache
+              cp -r "$CACHE_DIR/bundler-cache"/* node_modules/.cache/
+              echo "♻️  bundler cache restored after npm ci"
+            fi
           fi
 
       - name: Build (skip if fresh AND source unchanged)
@@ -55,10 +79,25 @@ jobs:
             echo "$CURRENT_SHA" > build/.build-commit
             touch build/.build-success
           fi
-        timeout-minutes: 60
+        timeout-minutes: 360
         env:
           NODE_OPTIONS: '--max-old-space-size=8192'
           GENERATE_SOURCEMAP: 'false'
+
+      - name: Save build caches (on success)
+        if: success()
+        run: |
+          mkdir -p "$CACHE_DIR"
+          if [ -d .docusaurus ]; then
+            rm -rf "$CACHE_DIR/.docusaurus"
+            cp -r .docusaurus "$CACHE_DIR/.docusaurus"
+            echo "💾 .docusaurus cache saved ($(du -sh .docusaurus | cut -f1))"
+          fi
+          if [ -d node_modules/.cache ]; then
+            rm -rf "$CACHE_DIR/bundler-cache"
+            cp -r node_modules/.cache "$CACHE_DIR/bundler-cache"
+            echo "💾 bundler cache saved ($(du -sh node_modules/.cache | cut -f1))"
+          fi
 
       - name: Deploy to Netlify
         run: |
