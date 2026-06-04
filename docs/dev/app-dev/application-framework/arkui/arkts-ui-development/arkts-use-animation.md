@@ -1,6 +1,14 @@
 ---
 title: "使用动画"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-animation
 ---
 
-# 使用动画
+* **[动画概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation)**
+* **[属性动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-attribute)**
+* **[转场动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-transition)**
+* **[粒子动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-particle-animation)**
+* **[组件动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-component-animation)**
+* **[动画曲线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-curve)**
+* **[动画衔接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-smoothing)**
+* **[动画效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-effects)**
+* **[帧动画（ohos.animator）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animator)**

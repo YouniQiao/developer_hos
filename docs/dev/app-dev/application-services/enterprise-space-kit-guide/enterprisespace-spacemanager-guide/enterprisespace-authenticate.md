@@ -1,6 +1,43 @@
 ---
-title: "企业账号认证"
 displayed_sidebar: appDevSidebar
+title: "企业账号认证"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-authenticate
 ---
 
-# 企业账号认证
+## 场景介绍
+
+从6.1.0(23)开始，支持企业认证的能力。
+
+Enterprise Space Kit为企业应用提供企业账号认证的能力。在企业空间初始化阶段，实现企业用户的账号认证。
+
+## 接口说明
+
+详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#authenticate)。
+
+| 接口名 | 描述 |
+| --- | --- |
+| [authenticate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#authenticate)(enterpriseAuthInfo: [WorkspaceDomainInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#workspacedomaininfo), credential: Uint8Array): Promise<[AuthResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#authresult)> | 企业账号认证并返回结果。使用Promise异步回调。 |
+
+## 开发步骤
+
+1. 导入Enterprise Space Kit模块。
+
+   ```
+   import { spaceManager } from '@kit.EnterpriseSpaceKit';
+   ```
+2. 调用[authenticate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#authenticate)接口，进行企业账号认证。
+
+   ```
+   try {
+     const enterpriseAuthInfo: spaceManager.WorkspaceDomainInfo = {
+       domain: 'testDomain', // 域名。
+       workspaceName: 'testAccountName', // 工作空间域账号名称。
+       serverConfigId: 'testServerConfigId' // 工作空间所属域的服务器配置标识符。
+     };
+     const credential = new Uint8Array([0, 0, 0, 0, 0, 0, 0, 0])
+     const authResult: spaceManager.AuthResult = await spaceManager.authenticate(enterpriseAuthInfo, credential);
+     console.info(`Succeeded in authenticating. Auth result is: ` + JSON.stringify(authResult));
+   } catch (err) {
+     console.error(`Failed to authenticate. Code: ${err.code}, message: ${err.message}`);
+   }
+   ```

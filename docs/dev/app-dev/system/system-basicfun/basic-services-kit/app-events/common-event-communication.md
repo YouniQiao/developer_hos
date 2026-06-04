@@ -1,6 +1,13 @@
 ---
-title: "使用公共事件进行进程间通信"
 displayed_sidebar: appDevSidebar
+title: "使用公共事件进行进程间通信"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-communication
 ---
 
-# 使用公共事件进行进程间通信
+* **[公共事件简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-overview)**
+* **[动态订阅公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-subscription)**
+* **[取消动态订阅公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-unsubscription)**
+* **[发布公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-publish)**
+* **[订阅公共事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-common-event-subscription)**
+* **[取消订阅公共事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-common-event-unsubscription)**
+* **[发布公共事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-common-event-publish)**

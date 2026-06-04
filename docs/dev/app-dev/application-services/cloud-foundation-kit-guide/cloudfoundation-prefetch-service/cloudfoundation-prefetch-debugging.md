@@ -1,6 +1,8 @@
 ---
-title: "（可选）使用命令行工具调试周期性预加载"
 displayed_sidebar: appDevSidebar
+title: "（可选）使用命令行工具调试周期性预加载"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-debugging
 ---
 
-# （可选）使用命令行工具调试周期性预加载
+* **[调试周期性预加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-commandtool-debug)**
+* **[错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-commandtool-errorcode)**

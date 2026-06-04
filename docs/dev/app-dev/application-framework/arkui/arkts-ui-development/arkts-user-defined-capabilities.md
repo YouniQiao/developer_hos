@@ -1,6 +1,10 @@
 ---
 title: "使用自定义能力"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-capabilities
 ---
 
-# 使用自定义能力
+* **[自定义能力概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined)**
+* **[自定义组合](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-composition)**
+* **[自定义节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-nodes)**
+* **[自定义绘制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-draw)**
+* **[Modifier机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modifier)**

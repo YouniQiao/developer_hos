@@ -1,6 +1,7 @@
 ---
-title: "按需加载模块是否支持单独上架应用市场或单独更新？"
 displayed_sidebar: appDevSidebar
+title: "按需加载模块是否支持单独上架应用市场或单独更新？"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-28
 ---
 
-# 按需加载模块是否支持单独上架应用市场或单独更新？
+不支持，上架是整个.app包，包括基础包和功能包。

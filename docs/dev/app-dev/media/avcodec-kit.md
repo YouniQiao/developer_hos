@@ -1,6 +1,11 @@
 ---
-title: "AVCodec Kit（音视频编解码服务）"
 displayed_sidebar: appDevSidebar
+title: "AVCodec Kit（音视频编解码服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-kit
 ---
 
-# AVCodec Kit（音视频编解码服务）
+* **[AVCodec Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-kit-intro)**
+* **[AVCodec支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats)**
+* **[音视频编解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-codec)**
+* **[媒体数据封装与解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-muxing-demuxing)**
+* **[AVCodec Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-avcodec-kit-faq)**

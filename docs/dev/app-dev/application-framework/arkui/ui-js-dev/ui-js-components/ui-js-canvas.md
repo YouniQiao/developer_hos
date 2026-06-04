@@ -1,6 +1,9 @@
 ---
 title: "Canvas开发指导"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-canvas
 ---
 
-# Canvas开发指导
+* **[Canvas对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-canvas)**
+* **[CanvasRenderingContext2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-canvasrenderingcontext2d)**
+* **[Path2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-path2d)**
+* **[OffscreenCanvasRenderingContext2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-offscreencanvas)**

@@ -1,6 +1,12 @@
 ---
-title: "Screen Time Guard Kit（屏幕时间守护服务）"
 displayed_sidebar: appDevSidebar
+title: "Screen Time Guard Kit（屏幕时间守护服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screen-time-guard-kit-guide
 ---
 
-# Screen Time Guard Kit（屏幕时间守护服务）
+* **[Screen Time Guard Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-introduction)**
+* **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-preparations)**
+* **[用户授权管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-interface-call-auth)**
+* **[应用选择页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-app-picker-pages)**
+* **[守护策略管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-guard-strategy-manage)**
+* **[应用访问限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-apps-restriction)**

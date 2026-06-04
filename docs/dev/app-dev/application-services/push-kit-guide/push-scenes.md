@@ -1,6 +1,9 @@
 ---
-title: "推送场景化消息"
-displayed_sidebar: appDevSidebar
+title: "Push Scenes"
 ---
 
-# 推送场景化消息
+import SourceLink from '@site/src/components/SourceLink';
+
+# Push Scenes
+
+本文档内容请参考华为官方文档。

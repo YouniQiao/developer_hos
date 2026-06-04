@@ -1,6 +1,7 @@
 ---
 title: "即时操作"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar
 ---
 
-# 即时操作
+* **[设置常驻通知弹窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar-resident-notification)**
+* **[设置定时通知弹窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar-scheduled-notification)**

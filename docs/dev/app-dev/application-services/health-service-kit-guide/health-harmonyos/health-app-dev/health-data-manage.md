@@ -1,6 +1,10 @@
 ---
-title: "管理运动健康数据"
 displayed_sidebar: appDevSidebar
+title: "管理运动健康数据"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-data-manage
 ---
 
-# 管理运动健康数据
+* **[读取运动健康采样数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-samplepoint-manage)**
+* **[读取锻炼记录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-exercisesequence-manage)**
+* **[读取健康记录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-healthsequence-manage)**
+* **[实时三环数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-three-ring-read)**

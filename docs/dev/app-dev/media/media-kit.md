@@ -1,6 +1,9 @@
 ---
-title: "Media Kit（媒体服务）"
 displayed_sidebar: appDevSidebar
+title: "Media Kit（媒体服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit
 ---
 
-# Media Kit（媒体服务）
+* **[Media Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro)**
+* **[媒体开发指导(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-dev--arkts)**
+* **[媒体开发指导(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-dev--c)**

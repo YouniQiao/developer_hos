@@ -1,6 +1,7 @@
 ---
-title: "Access Token和Refresh Token的有效时长是多久"
 displayed_sidebar: appDevSidebar
+title: "Access Token和Refresh Token的有效时长是多久"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-10
 ---
 
-# Access Token和Refresh Token的有效时长是多久
+Access Token的有效时长是1个小时，Refresh Token的有效时长是180天。

@@ -1,6 +1,8 @@
 ---
 title: "菜单"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-menu
 ---
 
-# 菜单
+* **[菜单概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-menu-overview)**
+* **[菜单控制（Menu）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-menu)**
+* **[不依赖UI组件的全局菜单 (openMenu)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-uicontext-menu)**

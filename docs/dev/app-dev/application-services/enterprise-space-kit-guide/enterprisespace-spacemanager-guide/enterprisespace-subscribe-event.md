@@ -1,6 +1,43 @@
 ---
-title: "订阅空间事件"
 displayed_sidebar: appDevSidebar
+title: "订阅空间事件"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-subscribe-event
 ---
 
-# 订阅空间事件
+## 场景介绍
+
+Enterprise Space Kit为应用提供订阅空间事件的能力，当前支持订阅空间切换事件。应用订阅空间切换事件后，当空间切换时，会告知应用，并执行应用自定义的动作。
+
+## 接口说明
+
+详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#subscribeevent)。
+
+| 接口名 | 描述 |
+| --- | --- |
+| [subscribeEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#subscribeevent)(eventId: [EventType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#eventtype)[], callback: AsyncCallback<[EventData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#eventdata)>): number | 订阅空间事件，在相关事件触发时，通知应用侧。使用callback异步回调。 |
+
+## 开发步骤
+
+1. 导入Enterprise Space Kit模块和相关依赖模块。
+
+   ```
+   import { spaceManager } from '@kit.EnterpriseSpaceKit';
+   import { BusinessError } from '@kit.BasicServicesKit';
+   ```
+2. 调用[subscribeEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#subscribeevent)接口，设置订阅空间事件，并查看打印信息。
+
+   ```
+   try {
+     const subscribeId = spaceManager.subscribeEvent([spaceManager.EventType.EVENT_WORKSPACE_SWITCHED],
+       (error: BusinessError, data: spaceManager.EventData) => {
+         if (error) {
+           console.error(`error info:${error?.code}, err message:${error?.message}`);
+         } else {
+           console.info(`event: ${data.event},currentWorkSpaceId: ${data.currentWorkspaceId}`);
+         }
+       });
+     console.info(`Succeeded in subscribing event. subscribeId: ${subscribeId}`);
+   } catch (err) {
+     console.error(`Failed to subscribe event. Code: ${err.code}, message: ${err.message}`);
+   }
+   ```

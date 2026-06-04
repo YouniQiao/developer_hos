@@ -1,6 +1,8 @@
 ---
 title: "提升可翻译性"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-translation
 ---
 
-# 提升可翻译性
+* **[避免硬编码与拼接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-hard-coding-concatenate)**
+* **[提供翻译场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-translation-scene)**
+* **[支持单复数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-singular-plural)**

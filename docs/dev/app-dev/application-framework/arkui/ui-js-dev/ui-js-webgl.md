@@ -1,6 +1,6 @@
 ---
 title: "WebGL"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-webgl
 ---
 
-# WebGL
+* **[使用WebGL绘制图形](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/webgl-2d-guidelines)**

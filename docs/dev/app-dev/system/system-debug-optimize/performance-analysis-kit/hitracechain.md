@@ -1,6 +1,8 @@
 ---
 title: "分布式调用链跟踪"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain
 ---
 
-# 分布式调用链跟踪
+* **[HiTraceChain介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-intro)**
+* **[使用HiTraceChain打点（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-guidelines-arkts)**
+* **[使用HiTraceChain打点（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-guidelines-ndk)**

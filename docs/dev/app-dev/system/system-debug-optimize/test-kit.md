@@ -1,6 +1,7 @@
 ---
-title: "Test Kit（应用测试服务）"
 displayed_sidebar: appDevSidebar
+title: "Test Kit（应用测试服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-kit
 ---
 
-# Test Kit（应用测试服务）
+* **[Test Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-kit-overview)**

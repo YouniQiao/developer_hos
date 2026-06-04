@@ -1,6 +1,6 @@
 ---
 title: "ArkTS锁屏卡片"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-lockscreen-form
 ---
 
-# ArkTS锁屏卡片
+* **[锁屏卡片开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-lockscreen-form-development)**

@@ -1,6 +1,10 @@
 ---
 title: "底部页签"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs
 ---
 
-# 底部页签
+* **[设置页签栏的分割线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-split-line)**
+* **[设置页签栏的模糊样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-fuzzy-style)**
+* **[设置页签的图标出血样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-icon-bleed-substyle)**
+* **[设置侧边栏半屏居中对齐样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-sidebar-alignment-substyle)**
+* **[设置页签栏的悬浮样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-bar-floating)**

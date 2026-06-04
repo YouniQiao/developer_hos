@@ -1,6 +1,11 @@
 ---
-title: "使用ImageProcessing处理图片"
 displayed_sidebar: appDevSidebar
+title: "使用ImageProcessing处理图片"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-processing
 ---
 
-# 使用ImageProcessing处理图片
+* **[图片缩放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-scaling)**
+* **[图片动态元数据生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-dynamic-metadata-generation)**
+* **[图片色彩空间转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-csc)**
+* **[单层HDR图片转换双层](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-single-to-dual)**
+* **[双层HDR图片转换单层](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-dual-to-single)**

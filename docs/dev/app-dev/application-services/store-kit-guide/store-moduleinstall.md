@@ -1,6 +1,8 @@
 ---
-title: "产品特性按需分发"
 displayed_sidebar: appDevSidebar
+title: "产品特性按需分发"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-moduleinstall
 ---
 
-# 产品特性按需分发
+* **[产品特性按需分发(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-moduleinstall_arkts)**
+* **[产品特性按需分发(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-moduleinstall_c)**

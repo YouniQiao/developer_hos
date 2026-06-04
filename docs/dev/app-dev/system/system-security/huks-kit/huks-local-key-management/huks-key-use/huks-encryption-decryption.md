@@ -1,6 +1,8 @@
 ---
 title: "加密/解密"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption
 ---
 
-# 加密/解密
+* **[加密/解密介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-overview)**
+* **[加解密(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-arkts)**
+* **[加解密(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-ndk)**

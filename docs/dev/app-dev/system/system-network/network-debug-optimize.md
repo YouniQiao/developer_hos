@@ -1,6 +1,6 @@
 ---
 title: "网络调试调优"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-debug-optimize
 ---
 
-# 网络调试调优
+* **[使用网络领航员进行网络模拟](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-navigator)**

@@ -1,6 +1,9 @@
 ---
 title: "选择与保存用户文件"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-save-user-file
 ---
 
-# 选择与保存用户文件
+* **[选择用户文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file)**
+* **[保存用户文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file)**
+* **[授权持久化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission)**
+* **[授权持久化(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileshare-guidelines)**

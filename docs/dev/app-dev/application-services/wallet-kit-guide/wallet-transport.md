@@ -1,6 +1,12 @@
 ---
-title: "接入交通卡"
 displayed_sidebar: appDevSidebar
+title: "接入交通卡"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport
 ---
 
-# 接入交通卡
+* **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-overview)**
+* **[云侧准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-cloud)**
+* **[交通卡开通](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-operation)**
+* **[交通卡充值](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-recharge)**
+* **[交通卡更新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-update)**
+* **[交通卡删卡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-delete)**

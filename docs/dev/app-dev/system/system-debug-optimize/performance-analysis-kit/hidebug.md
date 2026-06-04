@@ -1,6 +1,9 @@
 ---
-title: "系统调试信息获取"
 displayed_sidebar: appDevSidebar
+title: "系统调试信息获取"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug
 ---
 
-# 系统调试信息获取
+* **[HiDebug能力概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines)**
+* **[HiDebug接口使用示例(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines-arkts)**
+* **[HiDebug接口使用示例(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines-ndk)**

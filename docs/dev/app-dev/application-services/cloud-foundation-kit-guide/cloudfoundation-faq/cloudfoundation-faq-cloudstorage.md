@@ -1,6 +1,9 @@
 ---
-title: "云存储"
 displayed_sidebar: appDevSidebar
+title: "云存储"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-cloudstorage
 ---
 
-# 云存储
+* **[使用云存储上传文件失败，提示“404:Product does not exist”](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-1)**
+* **[使用云存储上传文件失败，app日志提示“"state":65”，upload进程日志提示“403 Forbidden”](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-2)**
+* **[调用云存储业务接口失败，app日志提示“"state":65”，upload进程日志提示“404 Not Found”](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-6)**

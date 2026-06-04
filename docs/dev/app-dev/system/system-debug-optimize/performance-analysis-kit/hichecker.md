@@ -1,6 +1,6 @@
 ---
 title: "检测模式"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hichecker
 ---
 
-# 检测模式
+* **[使用HiChecker检测问题（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hichecker-guidelines-arkts)**

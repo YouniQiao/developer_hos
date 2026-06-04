@@ -1,6 +1,8 @@
 ---
-title: "商户提供的回调通知接口在Payment Kit生产环境需要加网络允许清单吗？如何验证提供的回调地址Payment Kit服务器访问是否正常？"
 displayed_sidebar: appDevSidebar
+title: "商户提供的回调通知接口在Payment Kit生产环境需要加网络允许清单吗？如何验证提供的回调地址Payment Kit服务器访问是否正常？"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-16
 ---
 
-# 商户提供的回调通知接口在Payment Kit生产环境需要加网络允许清单吗？如何验证提供的回调地址Payment Kit服务器访问是否正常？
+1. 回调通知当前未做网络允许清单限制，不需要在华为支付添加网络允许清单。
+2. 商户提供的回调地址，保证在公网环境下可正常访问即可。

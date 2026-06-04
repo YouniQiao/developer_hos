@@ -1,6 +1,8 @@
 ---
 title: "绑定模态页面"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bind-modal
 ---
 
-# 绑定模态页面
+* **[绑定模态页面概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-overview)**
+* **[绑定半模态页面（bindSheet）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sheet-page)**
+* **[绑定全模态页面（bindContentCover）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-contentcover-page)**

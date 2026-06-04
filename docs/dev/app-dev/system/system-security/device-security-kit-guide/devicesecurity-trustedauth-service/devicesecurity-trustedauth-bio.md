@@ -1,6 +1,8 @@
 ---
 title: "生物特征绑定、认证与解绑"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-bio
 ---
 
-# 生物特征绑定、认证与解绑
+* **[开通生物特征认证能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-enablebio)**
+* **[生物特征认证交易](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-verifybybio)**
+* **[关闭指定生物类型认证能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-del-bio)**

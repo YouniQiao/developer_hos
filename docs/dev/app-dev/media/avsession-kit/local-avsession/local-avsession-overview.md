@@ -1,6 +1,77 @@
 ---
-title: "本地媒体会话概述"
 displayed_sidebar: appDevSidebar
+title: "本地媒体会话概述"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/local-avsession-overview
 ---
 
-# 本地媒体会话概述
+## 交互过程
+
+本地媒体会话的数据源均在设备本地，交互过程如图所示。
+
+![](./img/1ce9446a.png)
+
+此过程中涉及两大角色，媒体会话提供方和媒体会话控制方。
+
+![](./img/63c817cd.png)
+
+媒体会话控制方为系统应用，三方应用可以成为媒体会话提供方。
+
+本地媒体会话中，媒体会话提供方通过媒体会话管理器和媒体会话控制方进行信息交互：
+
+1. 媒体会话提供方通过AVSessionManager创建AVSession对象。
+2. 媒体会话提供方通过AVSession对象，设置会话元数据（媒体ID、标题、媒体时长等）、会话播放属性（播放状态、播放倍速、播放位置等）等。
+3. 媒体会话控制方通过AVSessionManager创建AVSessionController对象。
+4. 媒体会话控制方通过AVSessionController对象可以监听对应会话元数据变化、播放属性变化等。
+5. 媒体会话控制方通过AVSessionController对象还可以向媒体会话发送控制命令。
+6. 媒体会话提供方通过AVSession对象可以监听来自媒体会话控制方的控制命令，例如：“play”播放、“playNext”播放下一首、“fastForward”快进、 “setSpeed”设置播放倍速等。
+
+## 媒体会话管理器
+
+媒体会话管理器（AVSessionManager），提供了管理AVSession的能力，可以创建AVSession、创建AVSessionController、发送系统控制事件，也支持对AVSession的状态进行监听。
+
+实际上，AVSessionManager与AVSession、AVSessionController对象不同，并不是一个具体的对象，它是媒体会话的根命名域。在实际编程过程中，可以通过如下方式引入：
+
+```
+import { avSession as AVSessionManager } from '@kit.AVSessionKit';
+```
+
+
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/LocalAVSessionOverview/entry/src/main/ets/pages/Index.ets#L17-L19" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+
+
+根命名域中的所有方法都可以作为AVSessionManager的方法。
+
+例如，媒体会话提供方通过AVSessionManager创建媒体会话的示例如下所示：
+
+![](./img/c3dec573.png)
+
+以下示例代码仅展示创建AVSession对象的接口调用，应用在真正使用时，需要确保AVSession对象实例在应用后台播放业务活动期间一直存在，避免被系统回收、释放，导致后台发声时被系统管控。
+
+```
+import { avSession as AVSessionManager } from '@kit.AVSessionKit';
+@Entry
+@Component
+struct Index {
+  @State message: string = 'hello world';
+
+  build() {
+    Column() {
+      Text(this.message)
+        .onClick(async () => {
+          // 创建session。
+          let context = this.getUIContext().getHostContext() as Context;
+          let session: AVSessionManager.AVSession = await AVSessionManager.createAVSession(context, 'SESSION_NAME', 'audio');
+          console.info(`session create done : sessionId : ${session.sessionId}`);
+        })
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
+```
+
+
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/LocalAVSessionOverview/entry/src/main/ets/pages/Index.ets#L16-L39" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+
+
+更多关于AVSessionManager的方法，请参考API文档：[模块描述](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession)。

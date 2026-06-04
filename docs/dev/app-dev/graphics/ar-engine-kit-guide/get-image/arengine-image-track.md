@@ -1,6 +1,728 @@
 ---
-title: "图像跟踪（ArkTS）"
 displayed_sidebar: appDevSidebar
+title: "图像跟踪（ArkTS）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-image-track
 ---
 
-# 图像跟踪（ArkTS）
+本章节给出了关键开发步骤，完整代码可以参考[示例代码](https://gitcode.com/HarmonyOS_Samples/arengine_samplecode_clientdemo_arkts)。
+
+## 约束与限制
+
+从5.1.0(18)开始，图像跟踪能力支持部分Phone、部分Tablet设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持图像跟踪特性（[ARENGINE\_FEATURE\_TYPE\_IMAGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arfeaturetype)）。
+
+## 接口说明
+
+图像识别主要依赖[ARAugmentedImageDatabase](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabase)、[ARImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arimage)，以下接口为图像识别相关接口。详细接口和说明，请参考[AR Engine API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine)。
+
+| 接口名 | 描述 |
+| --- | --- |
+| [arEngine.createARAugmentedImageDatabase](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arenginecreatearaugmentedimagedatabase) | 创建一个增强型图像数据库。 |
+| [ARAugmentedImageDatabase.deserialize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabasedeserialize) | 将增强图像数据库数据反序列化为一个新的增强图像数据库对象。 |
+| [ARAugmentedImageDatabase.serialize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabaseserialize) | 将增强图像数据库序列化为一个缓冲区。 |
+| [ARAugmentedImageDatabase.addImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabaseaddimage) | 将图像添加到图像数据库，并输出对应图像的索引。 |
+| [ARAugmentedImageDatabase.getImageCount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabasegetimagecount) | 获取图像数据库中图像的数量。 |
+| [ARAugmentedImageDatabase.getCapacity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabasegetcapacity) | 可以添加的最大图像数量。 |
+| [ARAugmentedImageDatabase.getImageAddMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabasegetimageaddmode) | 获取图片添加模式。 |
+| [ARAugmentedImageDatabase.setImageAddMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabasesetimageaddmode) | 设置图片添加模式。 |
+| [ARAugmentedImageDatabase.release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabaserelease) | 释放增强图像数据库对象[ARAugmentedImageDatabase](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimagedatabase)占用的内存。 |
+| [ARImage.release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arimagerelease) | 释放相机视频流帧对象[ARImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arimage)占用的内存。 |
+| [ARAugmentedImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#araugmentedimage) | 表示可被追踪的增强图像对象。 |
+
+## 开发步骤
+
+AR Engine仅输出识别到的平面数据。为便于用户观察，可使用AGP（Ark Graphics Platform）渲染引擎或者[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)绘制识别的平面。关于AGP的介绍可以查看[ArkGraphics 3D简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-overview)和[AGP引擎](https://gitcode.com/openharmony/graphic_graphic_3d)。
+
+对于使用ArkTS的任何AR应用，首先需要创建一个AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)，用于管理AR Engine的系统状态。AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)的创建可以参考[管理AR会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession)章节。
+
+### 创建UI页面
+
+首先创建一个初始UI页面“ARImage.ets”，设置两个按钮，用于实现“添加本地图片”和“读取本地数据库”两个功能，分别命名“ARImageByAdd.ets”和“ARImageByDatabase.ets”。并配置路由进行页面间跳转，页面路由配置详细可查看[组件导航(Navigation) (推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)。
+
+### ARImage页面
+
+```
+// ARImage.ets
+// 导入图片模块
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
+
+@Builder
+export function ARImageBuilder(): void {
+  ARImage();
+}
+
+@Component
+struct ARImage {
+  pageInfo: NavPathStack = new NavPathStack();
+
+  // UI配置
+  build(): void {
+    NavDestination() {
+      Column() {
+        Button('选择本地图片', { type: ButtonType.Normal, stateEffect: true })
+          .borderRadius(8)
+          .width('50%')
+          .height('5%')
+          .onClick(async () => {
+            await this.chooseImageToTrack();
+          })
+
+        Button('加载本地数据库', { type: ButtonType.Normal, stateEffect: true })
+          .borderRadius(8)
+          .width('50%')
+          .height('5%')
+          .onClick(() => {
+            this.loadDatabaseToTrack();
+          })
+      }
+      .justifyContent(FlexAlign.SpaceEvenly)
+      .width('100%')
+      .height('100%')
+    }
+    .onReady((context: NavDestinationContext) => {
+      this.pageInfo = context.pathStack;
+    })
+    .hideTitleBar(true)
+    .hideBackButton(true)
+    .hideToolBar(true)
+  }
+
+  // 选择本地图片模式
+  private async chooseImageToTrack(): Promise<void> {
+    try {
+      let photoOption: photoAccessHelper.PhotoSelectOptions = new photoAccessHelper.PhotoSelectOptions();
+      photoOption.MIMEType = photoAccessHelper.PhotoViewMIMETypes.IMAGE_TYPE;
+      photoOption.maxSelectNumber = 50; // 默认值
+      photoOption.isEditSupported = false;
+      let photoPicker: photoAccessHelper.PhotoViewPicker = new photoAccessHelper.PhotoViewPicker();
+
+      await photoPicker.select(photoOption).then((photoResult) => {
+        if (photoResult.photoUris.length > 0 && photoResult.photoUris[0].length > 0) {
+          this.pageInfo.pushDestinationByName('ARImageByAdd', photoResult.photoUris).catch((error: BusinessError) => {
+            console.error(`[pushDestinationByName]failed. Code: ${error.code}.`);
+          });
+        }
+      }).catch((error: BusinessError) => {
+        // ...
+      })
+    } catch (error) {
+      console.error(`Failed to select by photoPicker. Code: ${error.code}.`);
+    }
+  }
+
+  // 加载本地数据库模式
+  private loadDatabaseToTrack(): void {
+    this.pageInfo.pushDestinationByName('ARImageByDatabase', null).catch((error: BusinessError) => {
+      console.error(`[pushDestinationByName]failed. Code: ${error.code}.`);
+    });
+  }
+}
+```
+
+### ARImageByAdd页面
+
+加载本地图片模式。
+
+1. 选择本地图片进行图像识别能力所需要导入的模块如下：
+
+   ```
+   // ARImageByAdd.ets
+
+   import { arEngine, ARView, arViewController } from '@kit.AREngine';
+   import { Node, Scene } from '@kit.ArkGraphics3D';
+   import { collections } from '@kit.ArkTS';
+   import { BusinessError } from '@kit.BasicServicesKit';
+   import { fileIo } from '@kit.CoreFileKit';
+   import { image } from '@kit.ImageKit';
+   ```
+2. 配置页面路由信息，定义数据库dataBase。
+
+   ```
+   // ARImageByAdd.ets
+
+   // 页面路由
+   @Builder
+   export function ARImageByAddBuilder(): void {
+     ARImageByAdd();
+   }
+
+   let dataBase: arEngine.ARAugmentedImageDatabase;
+   ```
+3. 在设备界面上显示图片添加情况，无可用图片则弹窗提示，加载AR场景。
+
+   ```
+   // ARImageByAdd.ets
+
+   @Component
+   struct ARImageByAdd {
+     pageInfo: NavPathStack = new NavPathStack();
+     private imagePathArray: string[] = [];
+     private isProgramExits: boolean = false;
+     private isSaveDatabase: boolean = false;
+     @State arContext?: arViewController.ARViewContext = undefined;
+     @State context: Context = this.getUIContext().getHostContext() as Context;
+     @State totalImageCounts: number = this.imagePathArray.length;
+     @State addFailedImageCounts: number = 0;
+     @State succeedImageCounts: number = 0;
+     @State addFailedMessage: string[] = [];
+
+     build(): void {
+       NavDestination() {
+         RelativeContainer() {
+           Column() {
+             Text(`添加图片进度：${this.succeedImageCounts + this.addFailedImageCounts} / ${this.totalImageCounts}`)
+             Text(`添加成功数量：${this.succeedImageCounts}`)
+             Text(`添加失败数量：${this.addFailedImageCounts}`)
+
+             if (this.addFailedMessage) {
+               ForEach(this.addFailedMessage, (item: string) => {
+                 Text(`${item}`)
+                   .fontColor(Color.Red)
+               })
+             }
+           }
+           .visibility(this.addFailedImageCounts + this.succeedImageCounts < this.totalImageCounts ? Visibility.Visible :
+           Visibility.None)
+           .foregroundColor(Color.Red)
+           .zIndex(1)
+           .alignRules({
+             center: { anchor: '__container__', align: VerticalAlign.Center },
+             middle: { anchor: '__container__', align: HorizontalAlign.Center }
+           })
+
+           if (this.arContext) {
+             ARView({ context: this.arContext })
+               .height('100%')
+               .width('100%')
+               .alignRules({
+                 center: { anchor: '__container__', align: VerticalAlign.Center },
+                 middle: { anchor: '__container__', align: HorizontalAlign.Center }
+               })
+           }
+         }
+       }
+       // 创建数据库，加载本地缓存，初始化AR场景，创建AR会话
+       .onAppear(async () => {
+         await arEngine.createARAugmentedImageDatabase()
+           .then(async (arDataBase) => {
+             dataBase = arDataBase;
+
+             await this.addImage(dataBase).then(() => {
+               if (this.addFailedImageCounts === this.totalImageCounts) {
+                 this.showDialog('请添加有效图片。');
+               }
+               this.initARView();
+             })
+           })
+           .catch((error: BusinessError) => {
+             console.error(`Failed to create AR Augmented Database.Code is ${error.code}, message is ${error.message}`);
+           });
+       })
+       .onWillDisappear(async () => {
+         await this.stopARView();
+       })
+       .onShown(() => {
+         this.resumeARView();
+       })
+       .onHidden(() => {
+         this.pauseARView();
+       })
+       .onReady((context: NavDestinationContext) => {
+         this.pageInfo = context.pathStack;
+         this.imagePathArray = context.pathInfo.param as string[];
+         this.totalImageCounts = this.imagePathArray.length;
+       })
+       .hideTitleBar(true)
+       .hideBackButton(true)
+       .hideToolBar(true)
+     }
+
+     // 初始化AR场景，创建AR会话
+     private initARView(): void {
+       Scene.load().then((scene: Scene) => {
+         let viewContext: arViewController.ARViewContext = new arViewController.ARViewContext();
+         viewContext.scene = scene;
+         viewContext.callback = new ARViewCallbackImpl();
+         viewContext.config = {
+           type: arEngine.ARType.IMAGE, // 使用图像跟踪模式
+           planeFindingMode: arEngine.ARPlaneFindingMode.HORIZONTAL_AND_VERTICAL,
+           powerMode: arEngine.ARPowerMode.NORMAL,
+           semanticMode: arEngine.ARSemanticMode.NONE,
+           poseMode: arEngine.ARPoseMode.GRAVITY,
+           depthMode: arEngine.ARDepthMode.AUTOMATIC,
+           meshMode: arEngine.ARMeshMode.DISABLED,
+           focusMode: arEngine.ARFocusMode.AUTO
+         };
+         viewContext.init().then(() => {
+           this.arContext = viewContext;
+           console.info('Succeeded in initializing ARView.');
+         }).catch((err: BusinessError) => {
+           console.error(`Failed to init ARView. Code is ${err.code}, message is ${err.message}.`);
+         });
+       }).catch((err: BusinessError) => {
+         console.error(`Failed to load scene. Code is ${err.code}, message is ${err.message}.`);
+       });
+     }
+
+     private async stopARView(): Promise<void> {
+       if (!this.arContext) {
+         return;
+       }
+       try {
+         this.isProgramExits = true;
+         if (this.isSaveDatabase) {
+           saveBufferToLocal(dataBase, this.context);
+         }
+
+         await dataBase.release();
+         await this.arContext?.destroy();
+       } catch (error) {
+         const err: BusinessError = error as BusinessError;
+         console.error(`Failed to stop context. Code is ${err.code}, message is ${err.message}`);
+       }
+     }
+
+     private resumeARView(): void {
+       // ...
+     }
+     private pauseARView(): void {
+       // ...
+     }
+
+     // 异步执行添加图片的任务
+     async addImage(dataBase: arEngine.ARAugmentedImageDatabase): Promise<void> {
+       for (let index = 0; index < this.totalImageCounts; index++) {
+         const imagePath: string = this.imagePathArray[index];
+         let file: fileIo.File;
+         try {
+             file = fileIo.openSync(imagePath, fileIo.OpenMode.READ_ONLY);
+         } catch (error) {
+           const err: BusinessError = error as BusinessError;
+           console.error(`Failed to open image. Code is ${err.code}, message is ${err.message}`);
+           this.addFailedImageCounts += 1;
+           continue;
+         }
+         let imageName: string = file.name;
+         const imageSourceApi: image.ImageSource = image.createImageSource(file.fd);
+         try {
+           fileIo.closeSync(file);
+         } catch (error) {
+           const err: BusinessError = error as BusinessError;
+           console.error(`Failed to closeSync. Code: ${err.code}.`);
+           this.addFailedImageCounts += 1;
+           continue;
+         }
+         const imageInfo: image.ImageInfo = imageSourceApi.getImageInfoSync(0);
+         if (!imageInfo) {
+           console.error('Failed to obtain the image pixel map information.');
+           this.addFailedImageCounts += 1;
+           continue;
+         }
+         const opts: image.DecodingOptions = {
+           editable: true,
+           desiredPixelFormat: image.PixelMapFormat.RGBA_8888,
+           desiredSize: { width: imageInfo.size.width, height: imageInfo.size.height }
+         }
+         let pixelMap: image.PixelMap = imageSourceApi.createPixelMapSync(opts);
+
+         if (this.isProgramExits) {
+           break;
+         }
+
+         await dataBase.addImage(imageName, pixelMap, 10).then((result: arEngine.ARAddAugmentedImageResult) => {
+           console.info(`The imageResult: ${result.index} ${result.stateReason}.`);
+           if (result.stateReason !== arEngine.ARAddAugmentedImageReason.NONE) {
+             this.addFailedImageCounts += 1;
+             this.addFailedMessage.push('失败图片名：' + imageName + '失败原因：' + errcode.get(result.stateReason) + ' ');
+           } else {
+             this.succeedImageCounts += 1;
+           }
+         }).catch(() => {
+           this.addFailedImageCounts += 1;
+         })
+
+         await imageSourceApi.release();
+         await pixelMap.release();
+       }
+     }
+
+     // 自定义的弹窗提示
+     showDialog(msg: string): void {
+       this.getUIContext().showAlertDialog(
+         {
+           title: '警告',
+           message: msg,
+           autoCancel: true,
+           alignment: DialogAlignment.Center,
+           offset: { dx: 0, dy: -20 },
+           gridCount: 3,
+           transition: TransitionEffect
+             .asymmetric(TransitionEffect.OPACITY
+               .animation({ duration: 1000, curve: Curve.Sharp })
+               .combine(TransitionEffect
+                 .scale({ x: 1.5, y: 1.5 })
+                 .animation({ duration: 1000, curve: Curve.Sharp })
+               ),
+             TransitionEffect.OPACITY
+               .animation({ duration: 100, curve: Curve.Smooth })
+               .combine(TransitionEffect.scale({ x: 0.5, y: 0.5 })
+                 .animation({ duration: 100, curve: Curve.Smooth })
+               )
+             ),
+           buttons: [{
+             enabled: true,
+             defaultFocus: true,
+             style: DialogButtonStyle.HIGHLIGHT,
+             value: '退出',
+             action: () => {
+               console.info('Callback when the second button is clicked.');
+               this.pageInfo.pop();
+               return;
+             }
+           }]
+         })
+       }
+     }
+   ```
+4. 退出应用时，缓存图片特征到本地。
+
+   ```
+   // ARImageByAdd.ets
+
+   async function saveBufferToLocal(dataBase: arEngine.ARAugmentedImageDatabase, context: Context): Promise<void> {
+     let filesDir: string = context.filesDir;
+     let file: fileIo.File;
+     try {
+       file = fileIo.openSync(filesDir + '/test.bin', fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE | fileIo.OpenMode.TRUNC);
+     } catch (e) {
+         // ...
+     }
+     let buf: ArrayBuffer;
+     try {
+       buf = await dataBase.serialize();
+     } catch (error) {
+       // ...
+       return;
+     }
+     try {
+       let writeLen: number = fileIo.writeSync(file.fd, buf);
+       Logger.info(`The length of buffer is: ${writeLen}.`);
+     } catch (error) {
+       const err: BusinessError = error as BusinessError;
+       Logger.error(`Failed to write database. Code is ${err.code}, message is ${err.message}.`);
+     }
+     try {
+       fileIo.closeSync(file);
+     } catch (error) {
+       // ...
+     }
+   }
+   ```
+5. 调用[ARViewCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcallback)，使用其中的[onFrameUpdate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcallbackonframeupdate)方法进行帧数据更新，识别到目标图像则打印日志。
+
+   ```
+   // ARImageByAdd.ets
+
+   class ARViewCallbackImpl extends arViewController.ARViewCallback {
+     onAnchorAdd(ctx: arViewController.ARViewContext, node: Node, anchor: arEngine.ARAnchor): void {
+       // ...
+     }
+
+     onAnchorUpdate(ctx: arViewController.ARViewContext, node: Node, anchor: arEngine.ARAnchor): void {
+       // ...
+     }
+
+     onFrameUpdate(ctx: arViewController.ARViewContext, sysBootTs: number): void {
+       if (!ctx.session || !dataBase) {
+         return;
+       }
+
+       let session: arEngine.ARSession = ctx.session; // 获取AR会话
+
+       try {
+         let imageNumber: number = dataBase.getImageCount();
+         console.info(`The number of images in the database is ${imageNumber}.`);
+
+         let imageCapacity: number = dataBase.getCapacity();
+         console.info(`The dataBase image capacity is: ${imageCapacity}.`);
+
+         let trackable: arEngine.ARTrackable[] = session.getAllTrackables(arEngine.ARTrackableType.AUGMENTED_IMAGE);
+
+         console.info(`The image trackable size: ${trackable.length}.`);
+         for (let i = 0; i < trackable.length; ++i) {
+           if (trackable[i].type === arEngine.ARTrackableType.AUGMENTED_IMAGE) {
+             let arimage: arEngine.ARAugmentedImage = trackable[i] as arEngine.ARAugmentedImage;
+             if (arEngine.ARTrackingState.TRACKING !== arimage.state) {
+               continue;
+             }
+             let centerPose: arEngine.ARPose = arimage.getPose();
+             console.info(`The image width: ${arimage.extendX}, height: ${arimage.extendZ}, pose: ${centerPose.getMatrix()}.`); // 打印目标图像的信息
+           }
+         }
+
+       } catch (error) {
+         const err: BusinessError = error as BusinessError;
+         console.error(`Failed to got image count. Code is ${err.code}, message is ${err.message}`);
+       }
+     }
+   }
+
+   // 图像添加失败原因
+   const errcode: collections.Map<number, string> = new collections.Map<number, string>([
+     [0, 'success'],
+     [1, 'size not match'],
+     [2, 'too bright or too dark'],
+     [3, 'image color is relatively single'],
+     [4, 'other error']
+   ])
+   ```
+
+### ARImageByDatabase页面
+
+加载本地数据库模式。
+
+1. 选择本地数据库进行图像识别能力所需要导入的模块如下：
+
+   ```
+   // ARImageByDatabase.ets
+
+   import { arEngine, ARView, arViewController } from '@kit.AREngine';
+   import { Node, Scene } from '@kit.ArkGraphics3D';
+   import { BusinessError } from '@kit.BasicServicesKit';
+   import { fileIo, ReadOptions } from '@kit.CoreFileKit';
+   ```
+2. 配置页面路由信息，定义数据库dataBase。
+
+   ```
+   // ARImageByDatabase.ets
+
+   // 页面路由
+   @Builder
+   export function ARImageByDatabaseBuilder(): void {
+     ARImageByDatabase();
+   }
+
+   let dataBase: arEngine.ARAugmentedImageDatabase;
+   ```
+3. 加载AR场景，加载图像数据库，无可用数据库则弹窗提示。
+
+   ```
+   // ARImageByDatabase.ets
+
+   @Component
+   struct ARImageByDatabase {
+     pageInfo: NavPathStack = new NavPathStack();
+     @State arContext?: arViewController.ARViewContext = undefined;
+     @State context: Context = this.getUIContext().getHostContext() as Context;
+
+     build() {
+       NavDestination() {
+         RelativeContainer() {
+           if (this.arContext) {
+             ARView({ context: this.arContext })
+               .height('100%')
+               .width('100%')
+               .alignRules({
+                 center: { anchor: '__container__', align: VerticalAlign.Center },
+                 middle: { anchor: '__container__', align: HorizontalAlign.Center }
+               })
+           }
+         }
+       }
+       // 创建数据库，加载本地缓存，初始化AR场景，创建AR会话
+       .onAppear(() => {
+         arEngine.createARAugmentedImageDatabase()
+           .then((arDataBase) => {
+             dataBase = arDataBase;
+
+             try {
+               let databaseBuffer: ArrayBuffer = ReadBuffer(this.context);
+               dataBase.deserialize(databaseBuffer).then(() => {
+                 this.initARView();
+               })
+             } catch (error) {
+               const err: BusinessError = error as BusinessError;
+               console.error(`Failed to init context. Code is ${err.code}, message is ${err.message}.`);
+               this.showDialog('请添加有效图片。');
+             }
+           })
+           .catch((error: BusinessError) => {
+             console.error(`Failed to create AR Augmented Database.Code is ${error.code}, message is ${error.message}`);
+           });
+       })
+       .onWillDisappear(async () => {
+         await this.stopARView();
+       })
+       .onShown(() => {
+         this.resumeARView();
+       })
+       .onHidden(() => {
+         this.pauseARView();
+       })
+       .onReady((context: NavDestinationContext) => {
+         this.pageInfo = context.pathStack;
+       })
+       .hideTitleBar(true)
+       .hideBackButton(true)
+       .hideToolBar(true)
+     }
+
+     // 初始化AR场景，创建AR会话
+     private initARView(): void {
+       Scene.load().then((scene: Scene) => {
+         let context: arViewController.ARViewContext = new arViewController.ARViewContext();
+         context.scene = scene;
+         context.callback = new ARViewCallbackImpl();
+         context.config = {
+           type: arEngine.ARType.IMAGE, // 使用图像跟踪模式
+           planeFindingMode: arEngine.ARPlaneFindingMode.HORIZONTAL_AND_VERTICAL,
+           powerMode: arEngine.ARPowerMode.NORMAL,
+           semanticMode: arEngine.ARSemanticMode.NONE,
+           poseMode: arEngine.ARPoseMode.GRAVITY,
+           depthMode: arEngine.ARDepthMode.AUTOMATIC,
+           meshMode: arEngine.ARMeshMode.ENABLE
+         };
+         context.init().then(() => {
+           this.arContext = context;
+           console.info('Succeeded in initializing ARView.');
+         }).catch((err: BusinessError) => {
+           console.error(`Failed to init context. Code is ${err.code}, message is ${err.message}.`);
+         });
+       }).catch((err: BusinessError) => {
+         console.error(`Failed to load scene. Code is ${err.code}, message is ${err.message}.`);
+       });
+     }
+
+     private async stopARView(): Promise<void> {
+       if (!this.arContext) {
+         return;
+       }
+       try {
+         await dataBase.release();
+         await this.arContext?.destroy();
+       } catch (error) {
+         const err: BusinessError = error as BusinessError;
+         console.error(`Failed to stop context. Code is ${err.code}, message is ${err.message}`);
+       }
+     }
+
+     private resumeARView(): void {
+       // ...
+     }
+     private pauseARView(): void {
+       // ...
+     }
+
+     // 自定义的弹窗提示
+     showDialog(msg: string): void {
+       this.getUIContext().showAlertDialog(
+         {
+           title: '警告',
+           message: msg,
+           autoCancel: true,
+           alignment: DialogAlignment.Center,
+           offset: { dx: 0, dy: -20 },
+           gridCount: 3,
+           transition: TransitionEffect
+             .asymmetric(TransitionEffect.OPACITY
+               .animation({ duration: 1000, curve: Curve.Sharp })
+               .combine(TransitionEffect
+                 .scale({ x: 1.5, y: 1.5 })
+                 .animation({ duration: 1000, curve: Curve.Sharp })
+               ),
+             TransitionEffect.OPACITY
+               .animation({ duration: 100, curve: Curve.Smooth })
+               .combine(TransitionEffect.scale({ x: 0.5, y: 0.5 })
+                 .animation({ duration: 100, curve: Curve.Smooth })
+               )
+             ),
+           buttons: [{
+             enabled: true,
+             defaultFocus: true,
+             style: DialogButtonStyle.HIGHLIGHT,
+             value: '退出',
+             action: () => {
+               console.info('Callback when the second button is clicked.');
+               this.pageInfo.pop();
+               return;
+             }
+           }]
+         })
+       }
+     }
+   ```
+4. 读取本地数据库缓存文件的方法。
+
+   ```
+   // ARImageByDatabase.ets
+
+   function ReadBuffer(context: Context): ArrayBuffer {
+     let filesDir: string = context.filesDir;
+     let srcFile: fileIo.File;
+     try {
+       srcFile = fileIo.openSync(filesDir + '/test.bin', fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+       const fileStat: fileIo.Stat = fileIo.statSync(srcFile.fd);
+       // 读取源文件的内容并写入目标文件
+       let readSize: number = 0;
+       let buf: ArrayBuffer = new ArrayBuffer(fileStat.size);
+       let readOptions: ReadOptions = {
+         offset: readSize,
+         length: fileStat.size
+       }
+       let readLen: number = fileIo.readSync(srcFile.fd, buf, readOptions);
+       console.info(`The length of buffer is: ${readLen}.`);
+       fileIo.closeSync(srcFile);
+       return buf;
+     } catch (e) {
+       // ...
+     }
+   }
+   ```
+5. 调用[ARViewCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcallback)，使用其中的[onFrameUpdate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcallbackonframeupdate)方法进行帧数据更新，识别到目标图像则打印日志。
+
+   ```
+   // ARImageByDatabase.ets
+
+   class ARViewCallbackImpl extends arViewController.ARViewCallback {
+     onAnchorAdd(ctx: arViewController.ARViewContext, node: Node, anchor: arEngine.ARAnchor): void {
+       // ...
+     }
+
+     onAnchorUpdate(ctx: arViewController.ARViewContext, node: Node, anchor: arEngine.ARAnchor): void {
+       // ...
+     }
+
+     onFrameUpdate(ctx: arViewController.ARViewContext, sysBootTs: number): void {
+       if (!ctx.session || !dataBase) {
+         return;
+       }
+
+       let session: arEngine.ARSession = ctx.session;
+
+       try {
+         let imageNumber: number = dataBase.getImageCount();
+         console.info(`The number of images in the database is ${imageNumber}.`);
+
+         let imageCapacity: number = dataBase.getCapacity();
+         console.info(`The dataBase image capacity = ${imageCapacity}.`);
+
+         let trackable: arEngine.ARTrackable[] = session.getAllTrackables(arEngine.ARTrackableType.AUGMENTED_IMAGE);
+
+         console.info(`The image trackable size: ${trackable.length}.`);
+         for (let i = 0; i < trackable.length; ++i) {
+           if (trackable[i].type === arEngine.ARTrackableType.AUGMENTED_IMAGE) {
+             let arimage: arEngine.ARAugmentedImage = trackable[i] as arEngine.ARAugmentedImage;
+             if (arEngine.ARTrackingState.TRACKING !== arimage.state) {
+               continue;
+             }
+             let centerPose: arEngine.ARPose = arimage.getPose();
+             console.info(`The image width: ${arimage.extendX}, height: ${arimage.extendZ}, pose: ${centerPose.getMatrix()}.`); // 打印目标图像的信息
+           }
+         }
+
+       } catch (error) {
+         const err: BusinessError = error as BusinessError;
+         console.error(`Failed to got image count. Code is ${err.code}, message is ${err.message}.`);
+       }
+     }
+   }
+   ```

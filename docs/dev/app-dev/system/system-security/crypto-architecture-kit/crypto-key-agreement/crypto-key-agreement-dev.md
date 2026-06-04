@@ -1,6 +1,12 @@
 ---
-title: "密钥协商开发指导"
 displayed_sidebar: appDevSidebar
+title: "密钥协商开发指导"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-dev
 ---
 
-# 密钥协商开发指导
+* **[使用ECDH进行密钥协商(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-ecdh)**
+* **[使用ECDH进行密钥协商(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-ecdh-ndk)**
+* **[使用X25519进行密钥协商(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-x25519)**
+* **[使用X25519进行密钥协商(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-x25519-ndk)**
+* **[使用DH进行密钥协商(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-dh)**
+* **[使用DH进行密钥协商(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-using-dh-ndk)**

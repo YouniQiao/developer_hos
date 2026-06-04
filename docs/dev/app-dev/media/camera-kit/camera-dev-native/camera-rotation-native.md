@@ -1,6 +1,9 @@
 ---
-title: "相机旋转"
-displayed_sidebar: appDevSidebar
+title: "Camera Rotation Native"
 ---
 
-# 相机旋转
+import SourceLink from '@site/src/components/SourceLink';
+
+# Camera Rotation Native
+
+本文档内容请参考华为官方文档。

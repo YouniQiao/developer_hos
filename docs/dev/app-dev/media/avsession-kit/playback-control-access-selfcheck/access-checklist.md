@@ -1,6 +1,9 @@
 ---
-title: "应用接入播控检查项详细说明"
 displayed_sidebar: appDevSidebar
+title: "应用接入播控检查项详细说明"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-checklist
 ---
 
-# 应用接入播控检查项详细说明
+* **[基础播控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control)**
+* **[快捷播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/quick-playback)**
+* **[音视频投播](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcastpicker)**

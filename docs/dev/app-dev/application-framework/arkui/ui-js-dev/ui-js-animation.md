@@ -1,6 +1,7 @@
 ---
 title: "动效开发指导"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animation
 ---
 
-# 动效开发指导
+* **[CSS动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animation-css)**
+* **[JS动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animation-js)**

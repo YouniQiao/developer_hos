@@ -1,6 +1,16 @@
 ---
-title: "Scenario Fusion Kit（融合场景服务）"
 displayed_sidebar: appDevSidebar
+title: "Scenario Fusion Kit（融合场景服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-kit-guide
 ---
 
-# Scenario Fusion Kit（融合场景服务）
+* **[Scenario Fusion Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction)**
+* **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-preparations)**
+* **[场景化Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button)**
+* **[场景化Input](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-input)**
+* **[场景化API](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-information-attribute)**
+* **[文件路径转换API](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-path-conversion)**
+* **[智能填充服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligent-filling)**
+* **[Scenario Fusion Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-frequently-asked-questions)**
+* **[个人数据处理说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-personal-data)**
+* **[附录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-appendix)**

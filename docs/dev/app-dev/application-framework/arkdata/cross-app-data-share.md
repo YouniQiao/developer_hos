@@ -1,6 +1,8 @@
 ---
 title: "跨应用数据共享"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cross-app-data-share
 ---
 
-# 跨应用数据共享
+* **[跨应用数据共享概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-share-overview)**
+* **[一对多跨应用数据共享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/one-to-many-data-share)**
+* **[多对多跨应用数据共享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/many-to-many-data-share)**

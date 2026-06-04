@@ -1,6 +1,9 @@
 ---
 title: "可信应用服务"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-dev
 ---
 
-# 可信应用服务
+* **[安全摄像头场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera)**
+* **[安全地理位置场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securelocation)**
+* **[安全图像压缩、裁剪场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-secimage-process)**
+* **[签名验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-verify)**

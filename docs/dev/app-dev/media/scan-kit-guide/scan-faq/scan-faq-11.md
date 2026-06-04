@@ -1,6 +1,13 @@
 ---
-title: "通过字节数组生成码图无法识别"
 displayed_sidebar: appDevSidebar
+title: "通过字节数组生成码图无法识别"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-11
 ---
 
-# 通过字节数组生成码图无法识别
+**问题现象**
+
+Scan Kit识别该码图内容显示为乱码，无法解析。
+
+**解决措施**
+
+通过字节数组生成码图，Scan Kit识别该码图内容显示为乱码，这种字节数组需要专门的解码器解析，例如地铁闸机。

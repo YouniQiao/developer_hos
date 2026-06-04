@@ -1,6 +1,13 @@
 ---
 title: "故障检测"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-analysis
 ---
 
-# 故障检测
+* **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-detection-overview)**
+* **[崩溃检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crash-detection)**
+* **[AddrSanitizer（地址越界）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-guidelines)**
+* **[AppFreeze（应用冻屏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)**
+* **[Resource Leak（资源泄漏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines)**
+* **[任务超时检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines)**
+* **[App Killed（应用终止）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appkilled-guidelines)**
+* **[通用日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/general-log)**

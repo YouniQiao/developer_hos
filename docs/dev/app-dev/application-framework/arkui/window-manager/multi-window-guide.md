@@ -1,6 +1,7 @@
 ---
 title: "智慧多窗应用开发指南"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-guide
 ---
 
-# 智慧多窗应用开发指南
+* **[智慧多窗简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro)**
+* **[应用适配智慧多窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-adapt)**

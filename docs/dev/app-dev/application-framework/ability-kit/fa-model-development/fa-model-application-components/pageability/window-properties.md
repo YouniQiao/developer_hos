@@ -1,6 +1,6 @@
 ---
 title: "窗口属性"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-properties
 ---
 
-# 窗口属性
+具体获取窗口实例、设置窗口属性的接口描述及示例见[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-fa)。

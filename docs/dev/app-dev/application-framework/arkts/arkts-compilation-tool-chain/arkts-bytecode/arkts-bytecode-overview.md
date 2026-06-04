@@ -1,6 +1,11 @@
 ---
 title: "方舟字节码概述"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-overview
 ---
 
-# 方舟字节码概述
+方舟字节码文件是ArkTS/TS/JS源码编译后的二进制产物。本章节介绍方舟字节码文件的各个部分，以帮助开发者深入了解字节码文件内容，进行字节码的分析和修改。
+
+* [方舟字节码文件格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format)：介绍字节码文件中包含的各个部分的结构信息，以及各种结构的存储方式和映射关系。
+* [方舟字节码基本原理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-fundamentals)：介绍字节码中构成指令的重要概念和具体的指令格式及含义，帮助开发者了解方舟字节码指令，进行指令相关的特性开发工作。
+* [方舟字节码函数命名规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-function-name)：介绍字节码文件中函数名字的字符串的命名规则。
+* [编译期自定义修改方舟字节码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/customize-bytecode-during-compilation)：介绍如何修改字节码文件的内容。

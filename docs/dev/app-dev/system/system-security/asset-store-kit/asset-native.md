@@ -1,6 +1,12 @@
 ---
-title: "Asset Store Kit开发指导(C/C++)"
 displayed_sidebar: appDevSidebar
+title: "Asset Store Kit开发指导(C/C++)"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native
 ---
 
-# Asset Store Kit开发指导(C/C++)
+* **[新增关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-add)**
+* **[删除关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-remove)**
+* **[更新关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-update)**
+* **[查询关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-query)**
+* **[管理群组关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-group-access-control)**
+* **[同步（备份恢复）关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-sync)**

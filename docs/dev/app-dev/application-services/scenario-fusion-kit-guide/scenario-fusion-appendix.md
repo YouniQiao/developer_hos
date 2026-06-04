@@ -1,6 +1,9 @@
 ---
-title: "附录"
-displayed_sidebar: appDevSidebar
+title: "Scenario Fusion Appendix"
 ---
 
-# 附录
+import SourceLink from '@site/src/components/SourceLink';
+
+# Scenario Fusion Appendix
+
+本文档内容请参考华为官方文档。

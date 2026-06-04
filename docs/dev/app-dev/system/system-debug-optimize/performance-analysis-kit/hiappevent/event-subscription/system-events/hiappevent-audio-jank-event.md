@@ -1,6 +1,9 @@
 ---
-title: "音频卡顿事件"
 displayed_sidebar: appDevSidebar
+title: "音频卡顿事件"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-audio-jank-event
 ---
 
-# 音频卡顿事件
+* **[音频卡顿事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-audio-jank-event)**
+* **[订阅音频卡顿事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-audio-jank-event-arkts)**
+* **[订阅音频卡顿事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-audio-jank-event-c)**

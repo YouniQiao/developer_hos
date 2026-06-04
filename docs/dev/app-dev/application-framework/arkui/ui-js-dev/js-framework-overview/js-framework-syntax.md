@@ -1,6 +1,8 @@
 ---
 title: "语法"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax
 ---
 
-# 语法
+* **[HML语法参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-hml)**
+* **[CSS语法参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-css)**
+* **[JS语法参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-js)**

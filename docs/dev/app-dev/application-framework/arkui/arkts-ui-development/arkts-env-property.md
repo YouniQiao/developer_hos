@@ -1,6 +1,6 @@
 ---
 title: "学习响应式环境变量"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-env-property
 ---
 
-# 学习响应式环境变量
+* **[@Env：环境变量](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-env-system-property)**

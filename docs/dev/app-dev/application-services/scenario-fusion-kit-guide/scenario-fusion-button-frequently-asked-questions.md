@@ -1,6 +1,9 @@
 ---
-title: "Scenario Fusion Kit常见问题"
 displayed_sidebar: appDevSidebar
+title: "Scenario Fusion Kit常见问题"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-frequently-asked-questions
 ---
 
-# Scenario Fusion Kit常见问题
+* **[单击快速验证手机号按钮，无法拉起页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-1)**
+* **[打开应用功能跳转第三方应用失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-2)**
+* **[剪贴板粘贴框遮挡智能填充选择框](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-3)**

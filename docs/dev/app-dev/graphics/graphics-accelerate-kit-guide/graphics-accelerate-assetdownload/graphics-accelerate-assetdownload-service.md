@@ -1,6 +1,13 @@
 ---
-title: "资源包后台下载"
 displayed_sidebar: appDevSidebar
+title: "资源包后台下载"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-service
 ---
 
-# 资源包后台下载
+* **[业务概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-introduction)**
+* **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-prepare)**
+* **[系统后台下载资源包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back)**
+* **[应用前台下载资源包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-fore)**
+* **[系统后台切应用前台接续下载资源包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-fore)**
+* **[发布资源包下载任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-release)**
+* **[查看资源包分发数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-data)**

@@ -1,6 +1,9 @@
 ---
-title: "管理运动健康数据"
-displayed_sidebar: appDevSidebar
+title: "Health Wearable Data Manage"
 ---
 
-# 管理运动健康数据
+import SourceLink from '@site/src/components/SourceLink';
+
+# Health Wearable Data Manage
+
+本文档内容请参考华为官方文档。

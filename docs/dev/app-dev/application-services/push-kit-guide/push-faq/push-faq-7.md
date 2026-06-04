@@ -1,6 +1,7 @@
 ---
-title: "应用内通话消息来电横幅问题"
 displayed_sidebar: appDevSidebar
+title: "应用内通话消息来电横幅问题"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-7
 ---
 
-# 应用内通话消息来电横幅问题
+详情请参见[Call Service Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-faq)。

@@ -1,6 +1,9 @@
 ---
-title: "游戏启动加速服务"
-displayed_sidebar: appDevSidebar
+title: "Graphics Accelerate Launchacceleration Service"
 ---
 
-# 游戏启动加速服务
+import SourceLink from '@site/src/components/SourceLink';
+
+# Graphics Accelerate Launchacceleration Service
+
+本文档内容请参考华为官方文档。

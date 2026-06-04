@@ -1,6 +1,7 @@
 ---
 title: "列表"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-list-item-card
 ---
 
-# 列表
+* **[设置附带横滑的列表样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-set-hds-slide-horizon-listitem)**
+* **[设置列表卡片样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-set-listitem-style)**

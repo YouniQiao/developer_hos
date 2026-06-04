@@ -1,6 +1,6 @@
 ---
 title: "管理数据对象的状态"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-data-object-state-management
 ---
 
-# 管理数据对象的状态
+* **[@Track装饰器：class对象属性级更新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-track)**

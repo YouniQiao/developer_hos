@@ -1,6 +1,10 @@
 ---
 title: "按钮与选择"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-form-selection
 ---
 
-# 按钮与选择
+* **[按钮与选择组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-forms-overview)**
+* **[按钮 (Button)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-button)**
+* **[弧形按钮 (ArcButton)(圆形屏幕推荐使用)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-advanced-components-arcbutton)**
+* **[单选框 (Radio)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-radio-button)**
+* **[切换按钮 (Toggle)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-switch)**

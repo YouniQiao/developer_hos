@@ -1,6 +1,10 @@
 ---
 title: "消息认证码"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac
 ---
 
-# 消息认证码
+* **[消息认证码计算介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac-overview)**
+* **[消息认证码计算HMAC(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-hmac)**
+* **[消息认证码计算HMAC(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-hmac-ndk)**
+* **[消息认证码计算CMAC(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-cmac)**
+* **[消息认证码计算CMAC(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-cmac-ndk)**

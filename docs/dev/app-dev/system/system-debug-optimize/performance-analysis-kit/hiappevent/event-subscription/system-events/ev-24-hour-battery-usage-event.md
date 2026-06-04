@@ -1,6 +1,9 @@
 ---
-title: "24h功耗器件分解统计事件"
-displayed_sidebar: appDevSidebar
+title: "Ev 24 Hour Battery Usage Event"
 ---
 
-# 24h功耗器件分解统计事件
+import SourceLink from '@site/src/components/SourceLink';
+
+# Ev 24 Hour Battery Usage Event
+
+本文档内容请参考华为官方文档。

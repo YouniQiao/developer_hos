@@ -1,6 +1,15 @@
 ---
-title: "运行应用时报“XXX Read timed out”异常"
 displayed_sidebar: appDevSidebar
+title: "运行应用时报“XXX Read timed out”异常"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-4
 ---
 
-# 运行应用时报“XXX Read timed out”异常
+**问题现象**
+
+运行应用时报“XXX Read timed out”异常。
+
+![](./img/a0296fe2.png)
+
+**解决措施**
+
+出现此错误，是因为云侧没有启动云函数实例，卸载应用重新安装即可。

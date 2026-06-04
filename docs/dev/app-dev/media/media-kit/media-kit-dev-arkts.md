@@ -1,6 +1,9 @@
 ---
-title: "媒体开发指导(ArkTS)"
-displayed_sidebar: appDevSidebar
+title: "Media Kit Dev Arkts"
 ---
 
-# 媒体开发指导(ArkTS)
+import SourceLink from '@site/src/components/SourceLink';
+
+# Media Kit Dev Arkts
+
+本文档内容请参考华为官方文档。

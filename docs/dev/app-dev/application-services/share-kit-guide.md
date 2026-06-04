@@ -1,6 +1,13 @@
 ---
-title: "Share Kit（分享服务）"
 displayed_sidebar: appDevSidebar
+title: "Share Kit（分享服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-kit-guide
 ---
 
-# Share Kit（分享服务）
+* **[Share Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-introduction)**
+* **[Share Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-terminology)**
+* **[Share Kit体验规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-precautions)**
+* **[系统分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-share)**
+* **[碰一碰分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share)**
+* **[隔空传送](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share)**
+* **[Share Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq)**

@@ -1,6 +1,8 @@
 ---
 title: "气泡提示"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-popup
 ---
 
-# 气泡提示
+* **[气泡提示概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-overview)**
+* **[气泡提示（Popup）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-popup)**
+* **[不依赖UI组件的全局气泡提示 (openPopup)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-uicontext-popup)**

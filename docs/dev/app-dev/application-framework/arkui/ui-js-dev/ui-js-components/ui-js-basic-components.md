@@ -1,6 +1,20 @@
 ---
 title: "基础组件"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-basic-components
 ---
 
-# 基础组件
+* **[text开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-text)**
+* **[input开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-input)**
+* **[button开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-button)**
+* **[picker开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-picker)**
+* **[image开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-images)**
+* **[image-animator开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-image-animator)**
+* **[rating开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-rating)**
+* **[slider开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-slider)**
+* **[chart开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-chart)**
+* **[switch开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-switch)**
+* **[toolbar开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-toolbar)**
+* **[menu开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-menu)**
+* **[marquee开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-marquee)**
+* **[qrcode开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-qrcode)**
+* **[search开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-search)**

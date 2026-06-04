@@ -1,6 +1,9 @@
 ---
-title: "管理AR会话介绍"
 displayed_sidebar: appDevSidebar
+title: "管理AR会话介绍"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession-conversion
 ---
 
-# 管理AR会话介绍
+在开发AR应用之前，需调用AR会话接口创建一个独立的AR会话，供后续操作与管理使用。在整个AR应用生命周期中，AR会话扮演着至关重要的角色。
+
+在进行后续功能开发前，请确保已创建一个可用的AR会话。

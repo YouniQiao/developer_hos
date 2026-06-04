@@ -1,6 +1,10 @@
 ---
 title: "视效"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect
 ---
 
-# 视效
+* **[点光源效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-point-light)**
+* **[按压阴影](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-color)**
+* **[双边边缘流光](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-double-edge-streamer)**
+* **[背景流光](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-streamer)**
+* **[自带背景的双边流光](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-streamer-with-mask)**

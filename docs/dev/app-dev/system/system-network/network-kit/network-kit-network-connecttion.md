@@ -1,6 +1,8 @@
 ---
 title: "连接网络"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit-network-connecttion
 ---
 
-# 连接网络
+* **[管理网络连接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-connection-manager)**
+* **[管理网络连接(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-netmanager-guidelines)**
+* **[连接VPN](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-vpnextension)**

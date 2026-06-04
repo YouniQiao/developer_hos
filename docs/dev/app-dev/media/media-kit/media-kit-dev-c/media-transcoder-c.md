@@ -1,6 +1,9 @@
 ---
-title: "视频转码"
-displayed_sidebar: appDevSidebar
+title: "Media Transcoder C"
 ---
 
-# 视频转码
+import SourceLink from '@site/src/components/SourceLink';
+
+# Media Transcoder C
+
+本文档内容请参考华为官方文档。

@@ -1,6 +1,16 @@
 ---
-title: "采样数据"
 displayed_sidebar: appDevSidebar
+title: "采样数据"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-samplepoint
 ---
 
-# 采样数据
+* **[日常活动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-daily-activities)**
+* **[心率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-heart-rate)**
+* **[血氧](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-blood-oxygen)**
+* **[压力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-pressure)**
+* **[体温](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-body-temperature)**
+* **[血压](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-blood-pressure)**
+* **[体重](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-weight)**
+* **[身高](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-height)**
+* **[情绪](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-emotion)**
+* **[心率变异性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-heart-rate-variability)**

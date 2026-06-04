@@ -1,6 +1,8 @@
 ---
 title: "密钥生成和转换"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion
 ---
 
-# 密钥生成和转换
+* **[密钥生成与转换介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion-overview)**
+* **[密钥生成和转换规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion-spec)**
+* **[密钥生成和转换开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion-dev)**

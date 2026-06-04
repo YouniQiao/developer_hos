@@ -1,6 +1,8 @@
 ---
-title: "媒体数据封装与解析"
 displayed_sidebar: appDevSidebar
+title: "媒体数据封装与解析"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-muxing-demuxing
 ---
 
-# 媒体数据封装与解析
+* **[媒体数据封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-muxer)**
+* **[媒体数据解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)**

@@ -1,6 +1,12 @@
 ---
-title: "录制"
 displayed_sidebar: appDevSidebar
+title: "录制"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-recording-c
 ---
 
-# 录制
+* **[使用AVRecorder录制音频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avrecorder-for-audio-recording)**
+* **[使用AVRecorder录制视频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avrecorder-for-video-recording)**
+* **[使用AVScreenCapture录屏取码流(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avscreencapture-for-buffer)**
+* **[使用AVScreenCapture录屏写文件(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avscreencapture-for-file)**
+* **[使用AVScreenCapture实现窗口级录屏(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avscreencapture-for-file-with-window)**
+* **[屏幕录制支持矩形区域录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-supports-rectangular-area-recording)**

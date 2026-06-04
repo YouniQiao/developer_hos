@@ -1,6 +1,14 @@
 ---
-title: "密钥使用"
 displayed_sidebar: appDevSidebar
+title: "密钥使用"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-use
 ---
 
-# 密钥使用
+* **[密钥使用介绍及通用流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-use-overview)**
+* **[加密/解密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption)**
+* **[签名/验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification)**
+* **[密钥协商](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement)**
+* **[密钥派生](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-derivation)**
+* **[访问控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-identity-authentication)**
+* **[HMAC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac)**
+* **[CMAC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac)**

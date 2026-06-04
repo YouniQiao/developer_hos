@@ -1,6 +1,13 @@
 ---
 title: "数据可靠性与安全性"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security
 ---
 
-# 数据可靠性与安全性
+* **[数据可靠性与安全性概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security-overview)**
+* **[数据库备份与恢复 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore)**
+* **[数据库备份与恢复 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-backup-and-restore)**
+* **[数据库加密 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-encryption)**
+* **[数据库加密 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-data-encryption)**
+* **[基于设备分类和数据分级的访问控制 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control-by-device-and-data-level)**
+* **[基于设备分类和数据分级的访问控制 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-access-control-by-device-and-data-level)**
+* **[E类加密数据库的使用 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/encrypted-estore-guidelines)**

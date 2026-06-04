@@ -1,6 +1,11 @@
 ---
 title: "方舟字节码"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode
 ---
 
-# 方舟字节码
+* **[方舟字节码概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-overview)**
+* **[方舟字节码文件格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format)**
+* **[方舟字节码基本原理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-fundamentals)**
+* **[方舟字节码函数命名规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-function-name)**
+* **[编译期自定义修改方舟字节码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/customize-bytecode-during-compilation)**
+* **[方舟字节码生成常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/es2abc-faq)**

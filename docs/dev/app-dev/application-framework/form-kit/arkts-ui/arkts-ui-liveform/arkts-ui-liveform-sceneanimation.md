@@ -1,6 +1,7 @@
 ---
 title: "场景动效类型互动卡片"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation
 ---
 
-# 场景动效类型互动卡片
+* **[场景动效类型互动卡片概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-overview)**
+* **[场景动效类型互动卡片开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-development)**

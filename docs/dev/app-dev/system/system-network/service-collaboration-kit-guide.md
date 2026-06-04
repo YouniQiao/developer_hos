@@ -1,6 +1,11 @@
 ---
-title: "Service Collaboration Kit（协同服务）"
 displayed_sidebar: appDevSidebar
+title: "Service Collaboration Kit（协同服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/service-collaboration-kit-guide
 ---
 
-# Service Collaboration Kit（协同服务）
+* **[Service Collaboration Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaborationkit-introduction)**
+* **[跨设备互通（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service)**
+* **[跨设备互通NDK（C）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-servicendk)**
+* **[跨设备互通（RichEditor控件）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-richeditor-title)**
+* **[Service Collaboration Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-faq)**

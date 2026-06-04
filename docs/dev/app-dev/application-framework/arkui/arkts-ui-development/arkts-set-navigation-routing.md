@@ -1,6 +1,9 @@
 ---
 title: "设置组件导航和页面路由"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-set-navigation-routing
 ---
 
-# 设置组件导航和页面路由
+* **[组件导航和页面路由概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-introduction)**
+* **[组件导航(Navigation) (推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)**
+* **[页面路由 (@ohos.router)(不推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing)**
+* **[Router切换Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-router-to-navigation)**

@@ -1,6 +1,9 @@
 ---
-title: "游戏渲染加速服务"
-displayed_sidebar: appDevSidebar
+title: "Graphics Accelerate Rendering"
 ---
 
-# 游戏渲染加速服务
+import SourceLink from '@site/src/components/SourceLink';
+
+# Graphics Accelerate Rendering
+
+本文档内容请参考华为官方文档。

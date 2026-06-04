@@ -1,6 +1,11 @@
 ---
-title: "绘制效果"
 displayed_sidebar: appDevSidebar
+title: "绘制效果"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drawing-effect
 ---
 
-# 绘制效果
+* **[绘制效果概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drawing-effect-overview)**
+* **[基础绘制效果（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-drawing-effect-arkts)**
+* **[复杂绘制效果（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-drawing-effect-arkts)**
+* **[基础绘制效果（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-drawing-effect-c)**
+* **[复杂绘制效果（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-drawing-effect-c)**

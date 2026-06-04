@@ -1,6 +1,11 @@
 ---
 title: "Remote Communication Kit（远场通信服务）"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-kit-guide
 ---
 
-# Remote Communication Kit（远场通信服务）
+* **[Remote Communication Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-introduction)**
+* **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-preparations)**
+* **[使用HTTP协议进行网络通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcom)**
+* **[提升HTTP传输性能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-hpp)**
+* **[URPC场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-urpc)**
+* **[Remote Communication Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-glossary)**

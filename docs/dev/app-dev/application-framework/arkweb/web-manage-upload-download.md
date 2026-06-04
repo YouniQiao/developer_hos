@@ -1,6 +1,7 @@
 ---
 title: "管理网页文件上传与下载"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-manage-upload-download
 ---
 
-# 管理网页文件上传与下载
+* **[使用Web组件上传文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-file-upload)**
+* **[使用Web组件的下载能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-download)**

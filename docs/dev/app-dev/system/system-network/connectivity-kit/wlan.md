@@ -1,6 +1,9 @@
 ---
 title: "WLAN"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wlan
 ---
 
-# WLAN
+* **[WLAN服务开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wlan-overview)**
+* **[P2P模式开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/p2p-development-guide)**
+* **[STA模式开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sta-development-guide)**
+* **[Wi-Fi扫描开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-development-guide)**

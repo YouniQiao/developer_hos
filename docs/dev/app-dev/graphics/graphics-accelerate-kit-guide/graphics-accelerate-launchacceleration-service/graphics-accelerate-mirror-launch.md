@@ -1,6 +1,9 @@
 ---
-title: "秒级启动"
 displayed_sidebar: appDevSidebar
+title: "秒级启动"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-mirror-launch
 ---
 
-# 秒级启动
+* **[业务概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-introduction)**
+* **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-prepare)**
+* **[实现游戏启动加速](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-development)**

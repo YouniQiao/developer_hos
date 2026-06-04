@@ -1,6 +1,11 @@
 ---
 title: "其他操作"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-other-operations
 ---
 
-# 其他操作
+* **[查询密钥是否存在](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-check-key)**
+* **[获取密钥属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-obtain-key-properties)**
+* **[密钥导出](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-export-key)**
+* **[查询密钥别名集](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-list-aliases)**
+* **[加密导出导入密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-wrap-key)**
+* **[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key)**

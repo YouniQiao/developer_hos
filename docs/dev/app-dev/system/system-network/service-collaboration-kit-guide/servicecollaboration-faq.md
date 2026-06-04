@@ -1,6 +1,6 @@
 ---
 title: "Service Collaboration Kit常见问题"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-faq
 ---
 
-# Service Collaboration Kit常见问题
+* **[接入跨设备互通控件后，设备选择列表没有周围设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-faq-1)**

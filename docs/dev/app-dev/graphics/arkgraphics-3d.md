@@ -1,6 +1,11 @@
 ---
-title: "ArkGraphics 3D（方舟3D图形）"
 displayed_sidebar: appDevSidebar
+title: "ArkGraphics 3D（方舟3D图形）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-3d
 ---
 
-# ArkGraphics 3D（方舟3D图形）
+* **[ArkGraphics 3D简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-overview)**
+* **[ArkGraphics 3D场景搭建以及管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-scene)**
+* **[ArkGraphics 3D资源创建以及使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-resource)**
+* **[ArkGraphics 3D场景动画控制以及管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-animation)**
+* **[ArkGraphics Editor插件及编辑器的下载与安装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-editor)**

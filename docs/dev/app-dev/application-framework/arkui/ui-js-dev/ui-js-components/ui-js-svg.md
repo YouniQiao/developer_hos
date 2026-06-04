@@ -1,6 +1,9 @@
 ---
 title: "svg开发指导"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-svg
 ---
 
-# svg开发指导
+* **[基础知识](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-overview)**
+* **[绘制图形](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-graphics)**
+* **[绘制路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-path)**
+* **[绘制文本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-text)**

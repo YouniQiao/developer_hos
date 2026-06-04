@@ -1,6 +1,7 @@
 ---
-title: "同一用户重复签约，会生成多笔签约吗？"
 displayed_sidebar: appDevSidebar
+title: "同一用户重复签约，会生成多笔签约吗？"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-7
 ---
 
-# 同一用户重复签约，会生成多笔签约吗？
+同一个商户号、使用同一个华为支付账号、使用同一套签约模板时，多次重复签约时只会生成一笔签约。

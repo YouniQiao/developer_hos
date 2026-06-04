@@ -1,6 +1,7 @@
 ---
-title: "应用迁移后，JWT密钥验签错误自查方法"
 displayed_sidebar: appDevSidebar
+title: "应用迁移后，JWT密钥验签错误自查方法"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-22
 ---
 
-# 应用迁移后，JWT密钥验签错误自查方法
+若应用需进行商户主体迁移，则原有应用相关的[JWT参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-jwt-description)需同步更新。

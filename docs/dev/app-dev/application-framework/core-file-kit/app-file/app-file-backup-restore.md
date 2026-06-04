@@ -1,6 +1,10 @@
 ---
 title: "应用数据备份恢复"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-restore
 ---
 
-# 应用数据备份恢复
+* **[应用数据备份恢复概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-overview)**
+* **[应用接入数据备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension)**
+* **[应用数据备份恢复验证指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-dataclone)**
+* **[应用克隆适配指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-clone)**
+* **[设备升级应用数据迁移适配指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-guidelines)**

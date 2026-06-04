@@ -1,6 +1,6 @@
 ---
 title: "应用账号"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-account
 ---
 
-# 应用账号
+* **[管理应用账号](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/manage-application-account)**

@@ -1,6 +1,9 @@
 ---
-title: "媒体信息查询"
-displayed_sidebar: appDevSidebar
+title: "Media Info C"
 ---
 
-# 媒体信息查询
+import SourceLink from '@site/src/components/SourceLink';
+
+# Media Info C
+
+本文档内容请参考华为官方文档。

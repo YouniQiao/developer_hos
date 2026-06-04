@@ -1,6 +1,13 @@
 ---
 title: "使用文本"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-text
 ---
 
-# 使用文本
+* **[文本概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-introduction)**
+* **[文本显示 (Text/Span)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-display)**
+* **[文本输入 (TextInput/TextArea/Search)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input)**
+* **[富文本编辑（RichEditor）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-richeditor)**
+* **[图标小符号 (SymbolGlyph/SymbolSpan)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-symbol)**
+* **[属性字符串（StyledString/MutableStyledString）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-styled-string)**
+* **[图文混排](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-image-layout)**
+* **[管理软键盘](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-manage-keyboard)**

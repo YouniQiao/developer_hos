@@ -1,6 +1,9 @@
 ---
-title: "图片编辑和处理"
-displayed_sidebar: appDevSidebar
+title: "Image Editing Arkts"
 ---
 
-# 图片编辑和处理
+import SourceLink from '@site/src/components/SourceLink';
+
+# Image Editing Arkts
+
+本文档内容请参考华为官方文档。

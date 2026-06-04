@@ -1,6 +1,10 @@
 ---
-title: "通用收银台接入"
 displayed_sidebar: appDevSidebar
+title: "通用收银台接入"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-connect
 ---
 
-# 通用收银台接入
+* **[业务规则说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction)**
+* **[混合支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-mix)**
+* **[纯外部支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-external)**
+* **[拉起三方支付收银台](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment)**

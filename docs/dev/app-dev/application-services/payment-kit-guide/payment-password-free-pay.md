@@ -1,6 +1,9 @@
 ---
-title: "免密支付接入"
 displayed_sidebar: appDevSidebar
+title: "免密支付接入"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-password-free-pay
 ---
 
-# 免密支付接入
+* **[免密代扣说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-password-free-pay-overview)**
+* **[支付并签约场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign)**
+* **[签约代扣场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-withhold-process)**

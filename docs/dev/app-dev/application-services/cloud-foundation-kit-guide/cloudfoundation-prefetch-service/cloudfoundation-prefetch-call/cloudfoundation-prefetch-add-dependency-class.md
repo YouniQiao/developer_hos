@@ -1,6 +1,8 @@
 ---
-title: "添加预加载依赖类"
 displayed_sidebar: appDevSidebar
+title: "添加预加载依赖类"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-add-dependency-class
 ---
 
-# 添加预加载依赖类
+* **[预加载工具类](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-tool-class)**
+* **[预加载实现类](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-implementation-class)**

@@ -1,6 +1,10 @@
 ---
-title: "XEngine Kit常见问题"
 displayed_sidebar: appDevSidebar
+title: "XEngine Kit常见问题"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq
 ---
 
-# XEngine Kit常见问题
+* **[创建特性实例失败如何处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-1)**
+* **[超分和自适应VRS特性是否可以同时使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-2)**
+* **[自适应VRS深度附件使用说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-3)**
+* **[空域AI超分的输出颜色附件是否需要通过OH\_NativeBuffer创建](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-4)**

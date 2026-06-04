@@ -1,6 +1,7 @@
 ---
 title: "常驻任务并发场景"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resident-task
 ---
 
-# 常驻任务并发场景
+* **[常驻任务并发场景简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resident-task-overview)**
+* **[常驻任务开发指导 (Worker)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resident-task-guide)**

@@ -1,6 +1,7 @@
 ---
 title: "CMAC"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac
 ---
 
-# CMAC
+* **[CMAC(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac-arkts)**
+* **[CMAC(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac-native)**

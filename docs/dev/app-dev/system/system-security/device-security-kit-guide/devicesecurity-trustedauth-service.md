@@ -1,6 +1,10 @@
 ---
 title: "数字盾服务"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-service
 ---
 
-# 数字盾服务
+* **[数字盾服务概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-overview)**
+* **[数字盾密码管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-pwdmng)**
+* **[交易信息密码认证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-verifybypwd)**
+* **[生物特征绑定、认证与解绑](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-bio)**
+* **[数字盾签名密钥备份与恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-backupdata)**

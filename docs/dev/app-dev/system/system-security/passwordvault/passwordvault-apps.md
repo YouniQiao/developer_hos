@@ -1,6 +1,10 @@
 ---
 title: "应用接入密码保险箱"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-apps
 ---
 
-# 应用接入密码保险箱
+* **[快速适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation)**
+* **[自动保存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autosave)**
+* **[自动填充](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill)**
+* **[自定义布局下的适配建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-adaptation-in-custom-layout)**
+* **[系统可适配的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-special-scenarios)**

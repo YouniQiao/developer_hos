@@ -1,6 +1,7 @@
 ---
 title: "插值器动画"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-interpolator-animation
 ---
 
-# 插值器动画
+* **[动画动效](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-dynamic-effects)**
+* **[动画帧](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-frame)**

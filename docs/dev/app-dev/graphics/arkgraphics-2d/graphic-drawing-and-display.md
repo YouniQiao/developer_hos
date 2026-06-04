@@ -1,6 +1,11 @@
 ---
-title: "图形绘制与显示"
 displayed_sidebar: appDevSidebar
+title: "图形绘制与显示"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-drawing-and-display
 ---
 
-# 图形绘制与显示
+* **[图形绘制与显示开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-drawing-overview)**
+* **[画布的获取与绘制结果的显示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw)**
+* **[画布操作及状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-operation-state)**
+* **[绘制效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drawing-effect)**
+* **[图元绘制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/primitive-drawing)**

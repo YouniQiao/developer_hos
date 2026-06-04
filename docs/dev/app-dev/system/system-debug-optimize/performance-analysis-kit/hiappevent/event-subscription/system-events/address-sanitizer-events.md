@@ -1,6 +1,9 @@
 ---
-title: "地址越界事件"
 displayed_sidebar: appDevSidebar
+title: "地址越界事件"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-events
 ---
 
-# 地址越界事件
+* **[地址越界事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events)**
+* **[订阅地址越界事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-arkts)**
+* **[订阅地址越界事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-ndk)**

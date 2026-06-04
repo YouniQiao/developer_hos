@@ -1,6 +1,7 @@
 ---
 title: "跨设备互通（ArkTS）"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service
 ---
 
-# 跨设备互通（ArkTS）
+* **[跨设备互通特性简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service-overview)**
+* **[跨设备互通开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-dev-guides)**

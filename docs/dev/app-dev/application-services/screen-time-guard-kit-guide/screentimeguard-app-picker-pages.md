@@ -1,6 +1,9 @@
 ---
-title: "应用选择页"
 displayed_sidebar: appDevSidebar
+title: "应用选择页"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-app-picker-pages
 ---
 
-# 应用选择页
+* **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-app-picker-overview)**
+* **[拉起应用选择页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-app-picker)**
+* **[拉起许可应用跳转页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-app-form)**

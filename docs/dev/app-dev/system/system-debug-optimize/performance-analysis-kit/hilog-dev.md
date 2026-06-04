@@ -1,6 +1,8 @@
 ---
-title: "日志打印"
 displayed_sidebar: appDevSidebar
+title: "日志打印"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-dev
 ---
 
-# 日志打印
+* **[使用HiLog打印日志（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-guidelines-arkts)**
+* **[使用HiLog打印日志（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-guidelines-ndk)**

@@ -1,6 +1,12 @@
 ---
 title: "处理网页内容"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-process-page-content
 ---
 
-# 处理网页内容
+* **[使用Web组件打印前端页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-print)**
+* **[使用Web组件保存前端页面为PDF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-createpdf)**
+* **[使用Web组件的PDF文档预览能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-pdf-preview)**
+* **[网页中安全区域计算和避让适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-safe-area-insets)**
+* **[使用Web组件菜单处理网页内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu)**
+* **[使用Web组件与系统剪贴板交互处理网页内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-clipboard)**
+* **[使用Web组件的智能分词能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-data-detector)**

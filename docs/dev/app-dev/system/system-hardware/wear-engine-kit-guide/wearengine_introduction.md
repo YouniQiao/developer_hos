@@ -1,6 +1,8 @@
 ---
-title: "Wear Engine Kit简介"
 displayed_sidebar: appDevSidebar
+title: "Wear Engine Kit简介"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_introduction
 ---
 
-# Wear Engine Kit简介
+* **[业务简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-business_introduction)**
+* **[场景介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scene_introduction)**

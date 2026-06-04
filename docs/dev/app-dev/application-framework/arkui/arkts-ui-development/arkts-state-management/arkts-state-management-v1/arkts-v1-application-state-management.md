@@ -1,6 +1,10 @@
 ---
 title: "管理应用拥有的状态"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-application-state-management
 ---
 
-# 管理应用拥有的状态
+* **[管理应用拥有的状态概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-application-state-management-overview)**
+* **[LocalStorage：页面级UI状态存储](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)**
+* **[AppStorage：应用全局的UI状态存储](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)**
+* **[PersistentStorage：持久化存储UI状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)**
+* **[Environment：设备环境查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment)**

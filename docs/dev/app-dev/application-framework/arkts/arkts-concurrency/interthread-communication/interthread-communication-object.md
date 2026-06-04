@@ -1,6 +1,12 @@
 ---
 title: "线程间通信对象"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-object
 ---
 
-# 线程间通信对象
+* **[线程间通信对象概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serializable-overview)**
+* **[普通对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/normal-object)**
+* **[容器类对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/container-object)**
+* **[ArrayBuffer对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arraybuffer-object)**
+* **[SharedArrayBuffer对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/shared-arraybuffer-object)**
+* **[Transferable对象 (NativeBinding对象)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transferabled-object)**
+* **[Sendable对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-object)**

@@ -1,6 +1,11 @@
 ---
 title: "线程间通信场景"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-guide
 ---
 
-# 线程间通信场景
+* **[使用TaskPool执行独立的耗时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/independent-time-consuming-task)**
+* **[使用TaskPool执行多个耗时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-time-consuming-tasks)**
+* **[TaskPool任务与宿主线程通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-communicates-with-mainthread)**
+* **[Worker和宿主线程的即时消息通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-communicates-with-mainthread)**
+* **[Worker同步调用宿主线程的接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-invoke-mainthread-interface)**
+* **[多级Worker间高性能消息通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-postmessage-sendable)**

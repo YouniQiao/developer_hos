@@ -1,6 +1,15 @@
 ---
-title: "Scan Kit（统一扫码服务）"
 displayed_sidebar: appDevSidebar
+title: "Scan Kit（统一扫码服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-kit-guide
 ---
 
-# Scan Kit（统一扫码服务）
+* **[Scan Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-introduction)**
+* **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-config-agc)**
+* **[接入“扫码直达”服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-directservice)**
+* **[默认界面扫码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-scanbarcode)**
+* **[自定义界面扫码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-customscan)**
+* **[图像识码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-imagerecognition)**
+* **[码图生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-generate)**
+* **[Scan Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq)**
+* **[个人数据处理说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-personal-data)**

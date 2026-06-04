@@ -1,6 +1,10 @@
 ---
 title: "应用多线程开发实践"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-guide
 ---
 
-# 应用多线程开发实践
+* **[应用多线程开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-overview)**
+* **[耗时任务并发场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task)**
+* **[长时任务并发场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/long-time-task)**
+* **[常驻任务并发场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resident-task)**
+* **[应用多线程开发实践案例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-case)**

@@ -1,6 +1,14 @@
 ---
 title: "网络"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-network
 ---
 
-# 网络
+* **[Connectivity Kit（短距通信服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit)**
+* **[Distributed Service Kit（分布式管理服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-service-kit)**
+* **[NearLink Kit（星闪服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-kit-guide)**
+* **[Network Kit（网络服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit)**
+* **[Network Boost Kit（网络加速服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-boost-kit-guide)**
+* **[Remote Communication Kit（远场通信服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-kit-guide)**
+* **[Service Collaboration Kit（协同服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/service-collaboration-kit-guide)**
+* **[Telephony Kit（蜂窝通信服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-kit)**
+* **[网络调试调优](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-debug-optimize)**

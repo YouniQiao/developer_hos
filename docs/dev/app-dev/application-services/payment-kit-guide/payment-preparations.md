@@ -1,6 +1,9 @@
 ---
-title: "开发准备"
-displayed_sidebar: appDevSidebar
+title: "Payment Preparations"
 ---
 
-# 开发准备
+import SourceLink from '@site/src/components/SourceLink';
+
+# Payment Preparations
+
+本文档内容请参考华为官方文档。

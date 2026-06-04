@@ -1,6 +1,6 @@
 ---
 title: "压缩与解压"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/compress
 ---
 
-# 压缩与解压
+* **[压缩与解压](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deflate-and-inflate)**

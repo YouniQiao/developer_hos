@@ -1,6 +1,22 @@
 ---
-title: "音视频编解码"
 displayed_sidebar: appDevSidebar
+title: "音视频编解码"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-codec
 ---
 
-# 音视频编解码
+* **[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)**
+* **[音频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-encoding)**
+* **[音频编码同步模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-audio-encoding)**
+* **[音频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-decoding)**
+* **[音频解码同步模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-audio-decoding)**
+* **[视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding)**
+* **[视频编码同步模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-video-encoding)**
+* **[时域可分层视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-temporal-scalability)**
+* **[B帧视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-b-frame)**
+* **[典型场景的视频编码配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-configuration-typical-scenarios)**
+* **[ROI视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-roi)**
+* **[视频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding)**
+* **[视频解码同步模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-video-decoding)**
+* **[视频可变帧率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-variable-refreshrate)**
+* **[Audio Vivid能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid)**
+* **[HDR Vivid能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-capability)**

@@ -1,6 +1,8 @@
 ---
 title: "语言与用户偏好"
-displayed_sidebar: appDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-language-user-preferences
 ---
 
-# 语言与用户偏好
+* **[系统语言与区域](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-system-language-region)**
+* **[应用偏好语言](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-preferred-language)**
+* **[用户偏好](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-user-preferences)**
