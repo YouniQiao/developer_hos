@@ -81,7 +81,7 @@ jobs:
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=8192'
+          NODE_OPTIONS: '--max-old-space-size=14336'
           GENERATE_SOURCEMAP: 'false'
 
       - name: Save build caches (on success)
