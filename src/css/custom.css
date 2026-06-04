@@ -1451,3 +1451,49 @@ html[data-theme='dark'] .merged-table td {
 .merge-table tbody tr:nth-child(2n) {
   background-color: var(--ifm-table-stripe-background);
 }
+
+/* SourceLink — 代码块右下角源码跳转链接 */
+.source-link-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.source-link:hover {
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-emphasis-200);
+  text-decoration: none;
+}
+
+.source-link-icon {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+[data-theme='dark'] .source-link {
+  color: var(--ifm-color-emphasis-500);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .source-link:hover {
+  color: var(--ifm-color-primary-lighter);
+  border-color: var(--ifm-color-primary-lighter);
+  background: rgba(255, 255, 255, 0.1);
+}

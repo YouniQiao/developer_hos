@@ -2,7 +2,6 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 module.exports = {
   testingSidebar: [
-    'dev/testing/overview',
     'dev/testing/app-testing-overview',
     {
       type: 'category',

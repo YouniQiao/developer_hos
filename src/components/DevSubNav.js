@@ -46,7 +46,7 @@ const NAV_ITEMS = [
   },
   {
     label: '测试',
-    path: '/docs/dev/testing/overview',
+    path: '/docs/dev/testing/app-testing-overview',
     match: '/docs/dev/testing',
     desc: '应用测试工具与方法',
   },

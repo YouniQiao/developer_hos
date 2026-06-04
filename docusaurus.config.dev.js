@@ -1,5 +1,5 @@
 // @ts-check
-// Dev Docusaurus config — only builds newly migrated sections: ASCF, NDK, Game, Atomic.
+// Dev Docusaurus config — builds all 6 app-dev sections (应用框架/系统/媒体/图形/应用服务/AI).
 // Usage: npx docusaurus build --config docusaurus.config.dev.js --no-minify
 
 const { themes } = require('prism-react-renderer');
@@ -53,14 +53,18 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars-dev.js'),
+          sidebarPath: require.resolve('./sidebars-appdev-dev.js'),
           include: [
-            'dev/atomic-dev/**',
-            'dev/ndk-dev/**',
-            'dev/game-dev/**',
-            'atomic/**',
+            'dev/app-dev/getting-started/**',
+            'dev/app-dev/application-framework/**',
+            'dev/app-dev/system/**',
+            'dev/app-dev/media/**',
+            'dev/app-dev/graphics/**',
+            'dev/app-dev/application-services/**',
+            'dev/app-dev/ai/**',
+            'dev/app-dev/multi-device/**',
           ],
-          exclude: ['**/img/**'],
+          exclude: ['**/img/**', '**/_category_**'],
           editUrl:
             'https://github.com/YouniQiao/developer_hos/tree/master/',
         },

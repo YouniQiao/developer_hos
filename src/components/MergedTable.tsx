@@ -1,68 +1,79 @@
 import React from 'react';
 
 interface CellData {
-  text: string;
-  rowSpan?: number;
-  colSpan?: number;
-  header?: boolean;
+  content: string;
+  rowspan?: number;
+  colspan?: number;
 }
 
-/**
- * 合并单元格表格组件。
- * 用法：
- * <MergedTable
- *   headers={['类别', 'API', '说明']}
- *   rows={[
- *     [
- *       { text: '基础通信', rowSpan: 2 },
- *       { text: 'fetch()' },
- *       { text: '支持GET/POST' },
- *     ],
- *     [
- *       { text: 'POST请求' },
- *       { text: '发送数据' },
- *     ],
- *   ]}
- * />
- *
- * 普通文本单元格可直接用字符串代替 { text: '...' }：
- *   ['A', { text: 'B', rowSpan: 2 }, 'C']
- */
-export default function MergedTable({
-  headers,
-  rows,
-}: {
-  headers: string[];
-  rows: (string | CellData)[][];
-}) {
-  // 规范化单元格数据
-  const normalize = (cell: string | CellData): CellData =>
-    typeof cell === 'string' ? { text: cell } : cell;
+interface MergedTableProps {
+  headers: CellData[][];
+  rows: CellData[][];
+  caption?: string;
+}
 
+export default function MergedTable({ headers, rows, caption }: MergedTableProps): JSX.Element {
   return (
-    <div className="merged-table-wrapper">
-      <table className="merged-table">
-        <thead>
-          <tr>
-            {headers.map((h, i) => (
-              <th key={i}>{h}</th>
+    <div style={{ overflowX: 'auto', margin: '16px 0' }}>
+      <table style={{
+        width: '100%',
+        borderCollapse: 'collapse',
+        fontSize: '14px',
+        lineHeight: '1.6',
+      }}>
+        {caption && (
+          <caption style={{
+            captionSide: 'top',
+            fontWeight: 600,
+            marginBottom: 8,
+            textAlign: 'left',
+          }}>
+            {caption}
+          </caption>
+        )}
+        {headers.length > 0 && (
+          <thead>
+            {headers.map((row, i) => (
+              <tr key={`h-${i}`}>
+                {row.map((cell, j) => {
+                  if (!cell || Object.keys(cell).length === 0) return null;
+                  return (
+                    <th
+                      key={`h-${i}-${j}`}
+                      rowSpan={cell.rowspan || 1}
+                      colSpan={cell.colspan || 1}
+                      style={{
+                        border: '1px solid #dfe2e5',
+                        padding: '8px 12px',
+                        backgroundColor: '#f6f8fa',
+                        fontWeight: 600,
+                        textAlign: 'left',
+                        verticalAlign: 'top',
+                      }}
+                      dangerouslySetInnerHTML={{ __html: cell.content }}
+                    />
+                  );
+                })}
+              </tr>
             ))}
-          </tr>
-        </thead>
+          </thead>
+        )}
         <tbody>
-          {rows.map((row, ri) => (
-            <tr key={ri}>
-              {row.map((cell, ci) => {
-                const c = normalize(cell);
-                // rowSpan=0 表示被上方合并吃掉，跳过
-                if (c.rowSpan === 0 || c.colSpan === 0) return null;
-                const Tag = c.header ? 'th' : 'td';
+          {rows.map((row, i) => (
+            <tr key={`r-${i}`}>
+              {row.map((cell, j) => {
+                if (!cell || Object.keys(cell).length === 0) return null;
                 return (
-                  <Tag
-                    key={ci}
-                    rowSpan={c.rowSpan || undefined}
-                    colSpan={c.colSpan || undefined}
-                    dangerouslySetInnerHTML={{ __html: c.text }}
+                  <td
+                    key={`r-${i}-${j}`}
+                    rowSpan={cell.rowspan || 1}
+                    colSpan={cell.colspan || 1}
+                    style={{
+                      border: '1px solid #dfe2e5',
+                      padding: '8px 12px',
+                      verticalAlign: 'top',
+                    }}
+                    dangerouslySetInnerHTML={{ __html: cell.content }}
                   />
                 );
               })}
