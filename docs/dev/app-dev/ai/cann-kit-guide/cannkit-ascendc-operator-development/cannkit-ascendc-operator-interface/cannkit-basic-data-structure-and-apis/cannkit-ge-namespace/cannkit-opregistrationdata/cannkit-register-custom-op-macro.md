@@ -1,6 +1,21 @@
 ---
-title: "REGISTER_CUSTOM_OP宏"
 displayed_sidebar: appDevSidebar
+title: "REGISTER_CUSTOM_OP宏"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-register-custom-op-macro
 ---
 
-# REGISTER_CUSTOM_OP宏
+## 宏功能
+
+按指定名称注册算子。
+
+## 宏原型
+
+```
+REGISTER_CUSTOM_OP(name)
+```
+
+## 参数说明
+
+| 参数 | 输入/输出 | 说明 |
+| --- | --- | --- |
+| name | 输入 | 算子类型名称。 |

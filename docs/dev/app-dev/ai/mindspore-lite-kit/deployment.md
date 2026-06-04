@@ -1,6 +1,8 @@
 ---
-title: "模型部署"
 displayed_sidebar: appDevSidebar
+title: "模型部署"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deployment
 ---
 
-# 模型部署
+* **[使用MindSpore Lite进行模型推理 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-guidelines)**
+* **[使用MindSpore Lite进行端侧训练 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-train-guidelines)**

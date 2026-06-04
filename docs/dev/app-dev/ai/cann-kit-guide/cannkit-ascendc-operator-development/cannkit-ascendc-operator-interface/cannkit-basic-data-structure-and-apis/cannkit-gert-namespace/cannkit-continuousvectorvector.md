@@ -1,6 +1,12 @@
 ---
-title: "ContinuousVectorVector"
 displayed_sidebar: appDevSidebar
+title: "ContinuousVectorVector"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector
 ---
 
-# ContinuousVectorVector
+* **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector-introduction)**
+* **[Init](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector-init)**
+* **[Add](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector-add)**
+* **[Get](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-get)**
+* **[GetSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector-getsize)**
+* **[GetOverHeadLength](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoverheadlength)**

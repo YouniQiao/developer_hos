@@ -1,6 +1,10 @@
 ---
-title: "TBuf"
 displayed_sidebar: appDevSidebar
+title: "TBuf"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbuf
 ---
 
-# TBuf
+* **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbuf-overview)**
+* **[构造函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbuf-constructor)**
+* **[Get](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tbuf-get)**
+* **[GetWithOffset](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getwithoffset)**

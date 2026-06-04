@@ -1,6 +1,10 @@
 ---
-title: "调测功能介绍"
 displayed_sidebar: appDevSidebar
+title: "调测功能介绍"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-functions
 ---
 
-# 调测功能介绍
+* **[Tiling调测功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tiling-tuning)**
+* **[CPU孪生调试功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-cpu-twin-debugging)**
+* **[Simulator性能仿真功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-simulator-performance-simulation)**
+* **[更多功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-more-functions)**

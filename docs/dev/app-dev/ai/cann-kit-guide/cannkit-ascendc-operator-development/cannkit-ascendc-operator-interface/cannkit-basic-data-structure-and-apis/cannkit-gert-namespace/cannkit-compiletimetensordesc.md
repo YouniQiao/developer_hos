@@ -1,6 +1,16 @@
 ---
-title: "CompileTimeTensorDesc"
 displayed_sidebar: appDevSidebar
+title: "CompileTimeTensorDesc"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc
 ---
 
-# CompileTimeTensorDesc
+* **[构造函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-constructor)**
+* **[GetDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getdatatype)**
+* **[GetFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getformat)**
+* **[GetOriginFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getoriginformat)**
+* **[GetStorageFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getstorageformat)**
+* **[GetExpandDimsType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-getexpanddimstype)**
+* **[SetDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-setdatatype)**
+* **[SetStorageFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-setstorageformat)**
+* **[SetOriginFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-setoriginformat)**
+* **[SetExpandDimsType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiletimetensordesc-setexpanddimstype)**

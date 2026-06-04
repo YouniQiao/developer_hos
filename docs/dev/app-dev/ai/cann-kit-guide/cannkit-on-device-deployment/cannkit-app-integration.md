@@ -1,6 +1,9 @@
 ---
-title: "App集成"
 displayed_sidebar: appDevSidebar
+title: "App集成"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-app-integration
 ---
 
-# App集成
+* **[创建项目](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-creating-a-project)**
+* **[配置项目NAPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compiling-the-napi)**
+* **[集成模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-integration-model)**

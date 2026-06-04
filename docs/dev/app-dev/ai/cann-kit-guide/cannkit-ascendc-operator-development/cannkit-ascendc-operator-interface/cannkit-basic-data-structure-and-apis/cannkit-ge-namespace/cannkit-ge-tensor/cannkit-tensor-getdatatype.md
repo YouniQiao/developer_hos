@@ -1,6 +1,9 @@
 ---
-title: "GetDataType"
-displayed_sidebar: appDevSidebar
+title: Cannkit Tensor Getdatatype
 ---
 
-# GetDataType
+import SourceLink from '@site/src/components/SourceLink';
+
+# Cannkit Tensor Getdatatype
+
+本文档内容请参考华为官方文档。

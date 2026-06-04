@@ -1,6 +1,9 @@
 ---
-title: "AttrValue"
 displayed_sidebar: appDevSidebar
+title: "AttrValue"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-attrvalue
 ---
 
-# AttrValue
+* **[构造函数和析构函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-attrvalue-construction-and-destructor)**
+* **[CreateFrom](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-createfrom)**
+* **[GetValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getvalue)**

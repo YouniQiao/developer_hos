@@ -1,6 +1,9 @@
 ---
-title: "接入方案"
-displayed_sidebar: appDevSidebar
+title: "Intents Skill All Rec Access Programme"
 ---
 
-# 接入方案
+import SourceLink from '@site/src/components/SourceLink';
+
+# Intents Skill All Rec Access Programme
+
+本文档内容请参考华为官方文档。

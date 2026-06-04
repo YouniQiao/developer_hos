@@ -1,6 +1,8 @@
 ---
-title: "AscendC算子接口"
 displayed_sidebar: appDevSidebar
+title: "AscendC算子接口"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascendc-operator-interface
 ---
 
-# AscendC算子接口
+* **[AscendC API](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascend-c-api)**
+* **[基础数据结构和接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-data-structure-and-apis)**

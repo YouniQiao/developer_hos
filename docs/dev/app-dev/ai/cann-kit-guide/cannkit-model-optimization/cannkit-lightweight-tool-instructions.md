@@ -1,6 +1,14 @@
 ---
-title: "模型轻量化"
 displayed_sidebar: appDevSidebar
+title: "模型轻量化"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-lightweight-tool-instructions
 ---
 
-# 模型轻量化
+* **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-lightweight-tool-overview)**
+* **[无训练量化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-no-training-and-quantization)**
+* **[插件式量化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-plugin-based-quantization)**
+* **[Transformer结构量化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-large-language-model)**
+* **[网络结构搜索训练](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-network-structure-search-training)**
+* **[模型轻量化示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-examples)**
+* **[常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-size-reduction-faqs)**
+* **[模型收益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-benefits)**

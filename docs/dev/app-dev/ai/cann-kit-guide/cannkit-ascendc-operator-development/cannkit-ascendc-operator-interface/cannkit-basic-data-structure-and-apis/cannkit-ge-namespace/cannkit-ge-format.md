@@ -1,6 +1,9 @@
 ---
-title: "Format"
-displayed_sidebar: appDevSidebar
+title: Cannkit Ge Format
 ---
 
-# Format
+import SourceLink from '@site/src/components/SourceLink';
+
+# Cannkit Ge Format
+
+本文档内容请参考华为官方文档。

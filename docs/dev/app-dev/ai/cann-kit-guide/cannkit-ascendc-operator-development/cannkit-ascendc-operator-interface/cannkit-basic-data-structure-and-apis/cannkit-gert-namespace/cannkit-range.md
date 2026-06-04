@@ -1,6 +1,13 @@
 ---
-title: "Range"
 displayed_sidebar: appDevSidebar
+title: "Range"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-range
 ---
 
-# Range
+* **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-range-introduction)**
+* **[构造函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-range-constructor)**
+* **[operator==](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-range-operator)**
+* **[SetMin](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setmin)**
+* **[SetMax](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setmax)**
+* **[GetMin](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getmin)**
+* **[GetMax](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getmax)**

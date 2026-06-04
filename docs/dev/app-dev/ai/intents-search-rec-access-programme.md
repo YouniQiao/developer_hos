@@ -1,0 +1,7 @@
+---
+title: "接入方案"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec-access-programme
+---
+
+* **[功能搜索方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-function-search)**
+* **[内容搜索方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-content-search)**

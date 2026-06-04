@@ -1,6 +1,8 @@
 ---
-title: "Agent Framework Kit（智能体框架服务）"
 displayed_sidebar: appDevSidebar
+title: "Agent Framework Kit（智能体框架服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/harmony-agent-framework-kit-guide
 ---
 
-# Agent Framework Kit（智能体框架服务）
+* **[Agent Framework Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-introduction)**
+* **[通过Function组件拉起智能体](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-function)**

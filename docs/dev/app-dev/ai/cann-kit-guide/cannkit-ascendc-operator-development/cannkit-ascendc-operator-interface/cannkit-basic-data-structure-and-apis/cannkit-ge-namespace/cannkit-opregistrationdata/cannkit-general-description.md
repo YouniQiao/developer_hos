@@ -1,6 +1,17 @@
 ---
-title: "总体说明"
 displayed_sidebar: appDevSidebar
+title: "总体说明"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-general-description
 ---
 
-# 总体说明
+开发人员完成自定义算子的实现代码后，需要进行适配插件的开发将基于第三方框架的算子映射成适配AI处理器的算子，可调用REGISTER\_CUSTOM\_OP宏实现算子转换。在调用REGISTER\_CUSTOM\_OP宏时，以REGISTER\_CUSTOM\_OP开始，以“.”链接FrameworkType、OriginOpType、ParseParamsFn等接口。
+
+例如：
+
+```
+REGISTER_CUSTOM_OP("OpType")
+   .FrameworkType(TENSORFLOW)
+   .OriginOpType("OriginOpType")
+   .ParseParamsByOperatorFn(ParseParamFunc)
+   .ImplyType(ImplyType::TVM);
+```

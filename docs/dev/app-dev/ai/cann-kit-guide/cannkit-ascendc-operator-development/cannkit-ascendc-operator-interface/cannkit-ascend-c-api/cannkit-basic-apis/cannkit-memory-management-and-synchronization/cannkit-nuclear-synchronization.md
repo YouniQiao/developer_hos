@@ -1,6 +1,7 @@
 ---
-title: "核内同步"
 displayed_sidebar: appDevSidebar
+title: "核内同步"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-nuclear-synchronization
 ---
 
-# 核内同步
+* **[PipeBarrier(ISASI)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-pipebarrier)**

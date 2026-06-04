@@ -1,6 +1,9 @@
 ---
-title: "更多样例"
-displayed_sidebar: appDevSidebar
+title: Scalar Ternaryinstructions More Examples
 ---
 
-# 更多样例
+import SourceLink from '@site/src/components/SourceLink';
+
+# Scalar Ternaryinstructions More Examples
+
+本文档内容请参考华为官方文档。

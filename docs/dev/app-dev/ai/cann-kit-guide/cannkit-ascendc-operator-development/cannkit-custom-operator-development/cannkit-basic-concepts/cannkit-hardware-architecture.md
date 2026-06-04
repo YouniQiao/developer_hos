@@ -1,6 +1,10 @@
 ---
-title: "硬件架构"
 displayed_sidebar: appDevSidebar
+title: "硬件架构"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hardware-architecture
 ---
 
-# 硬件架构
+* **[基本架构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-architecture)**
+* **[计算单元](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-computing-unit)**
+* **[存储单元](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storage-unit)**
+* **[控制单元](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-control-unit)**

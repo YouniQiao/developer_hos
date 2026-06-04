@@ -1,6 +1,9 @@
 ---
-title: "构造函数和析构函数"
-displayed_sidebar: appDevSidebar
+title: Cannkit Operator Construction And Destructor
 ---
 
-# 构造函数和析构函数
+import SourceLink from '@site/src/components/SourceLink';
+
+# Cannkit Operator Construction And Destructor
+
+本文档内容请参考华为官方文档。

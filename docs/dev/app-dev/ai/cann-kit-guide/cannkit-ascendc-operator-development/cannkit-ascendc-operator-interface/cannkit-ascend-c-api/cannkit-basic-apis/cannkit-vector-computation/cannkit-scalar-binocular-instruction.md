@@ -1,6 +1,14 @@
 ---
-title: "标量双目指令"
 displayed_sidebar: appDevSidebar
+title: "标量双目指令"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-instruction
 ---
 
-# 标量双目指令
+* **[Adds](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-adds)**
+* **[Muls](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-muls)**
+* **[Maxs](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-maxs)**
+* **[Mins](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-mins)**
+* **[ShiftLeft](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-shiftleft)**
+* **[ShiftRight](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-shiftright)**
+* **[LeakyRelu](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocular-leakyrelu)**
+* **[更多样例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-binocularinstructions)**

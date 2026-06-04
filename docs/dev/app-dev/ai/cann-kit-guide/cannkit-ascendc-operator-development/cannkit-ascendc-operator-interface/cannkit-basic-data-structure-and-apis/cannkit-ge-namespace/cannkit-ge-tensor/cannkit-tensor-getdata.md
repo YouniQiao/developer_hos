@@ -1,6 +1,9 @@
 ---
-title: "GetData"
-displayed_sidebar: appDevSidebar
+title: Cannkit Tensor Getdata
 ---
 
-# GetData
+import SourceLink from '@site/src/components/SourceLink';
+
+# Cannkit Tensor Getdata
+
+本文档内容请参考华为官方文档。

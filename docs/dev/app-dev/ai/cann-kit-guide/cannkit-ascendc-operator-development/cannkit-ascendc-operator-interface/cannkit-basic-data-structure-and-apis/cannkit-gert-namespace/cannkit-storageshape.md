@@ -1,6 +1,14 @@
 ---
-title: "StorageShape"
 displayed_sidebar: appDevSidebar
+title: "StorageShape"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape
 ---
 
-# StorageShape
+* **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape-introduction)**
+* **[构造函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape-constructor)**
+* **[GetOriginShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoriginshape)**
+* **[GetStorageShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getstorageshape)**
+* **[MutableOriginShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutableoriginshape)**
+* **[MutableStorageShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutablestorageshape)**
+* **[operator==](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape-operatora)**
+* **[operator!=](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-storageshape-operatorb)**

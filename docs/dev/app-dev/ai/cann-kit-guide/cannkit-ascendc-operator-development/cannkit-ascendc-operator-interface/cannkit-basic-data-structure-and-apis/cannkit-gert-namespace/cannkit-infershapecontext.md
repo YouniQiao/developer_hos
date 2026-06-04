@@ -1,6 +1,12 @@
 ---
-title: "InferShapeContext"
 displayed_sidebar: appDevSidebar
+title: "InferShapeContext"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext
 ---
 
-# InferShapeContext
+* **[GetInputShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getinputshape)**
+* **[GetInputTensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getinputtensor)**
+* **[GetOptionalInputShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getoptionalinputshape)**
+* **[GetRequiredInputTensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getrequiredinputtensor)**
+* **[GetRequiredInputShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getrequiredinputshape)**
+* **[GetOutputShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-infershapecontext-getoutputshape)**

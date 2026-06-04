@@ -1,6 +1,10 @@
 ---
-title: "高阶API"
 displayed_sidebar: appDevSidebar
+title: "高阶API"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-advanced-apis
 ---
 
-# 高阶API
+* **[矩阵相乘](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul)**
+* **[数学库](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-math)**
+* **[激活函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-activation)**
+* **[数据填充](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-high-data-filling)**

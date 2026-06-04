@@ -1,6 +1,8 @@
 ---
-title: "Tiling数据结构注册"
 displayed_sidebar: appDevSidebar
+title: "Tiling数据结构注册"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tiling-data-structure-registration
 ---
 
-# Tiling数据结构注册
+* **[TilingData结构定义](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingdata-structure-definition)**
+* **[TilingData结构注册](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tilingdata-structure-registration)**

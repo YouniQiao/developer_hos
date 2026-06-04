@@ -1,6 +1,11 @@
 ---
-title: "ShapeAndType"
 displayed_sidebar: appDevSidebar
+title: "ShapeAndType"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeandtype
 ---
 
-# ShapeAndType
+* **[构造函数和析构函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeandtype-construction-and-destructor)**
+* **[SetShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setshape)**
+* **[GetShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeandtype-getshape)**
+* **[SetType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-settype)**
+* **[GetDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeandtype-getdatatype)**

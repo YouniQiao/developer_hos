@@ -1,6 +1,10 @@
 ---
-title: "Host API"
 displayed_sidebar: appDevSidebar
+title: "Host API"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-host-api
 ---
 
-# Host API
+* **[原型注册与管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-prototype-registration-and-management)**
+* **[Tiling数据结构注册](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tiling-data-structure-registration)**
+* **[平台信息获取PlatformAscendC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-platformascendc)**
+* **[内部关联接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-platformascendc-internal-associated)**

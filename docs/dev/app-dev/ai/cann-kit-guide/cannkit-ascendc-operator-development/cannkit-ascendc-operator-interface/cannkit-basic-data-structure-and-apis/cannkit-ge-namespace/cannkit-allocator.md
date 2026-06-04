@@ -1,6 +1,10 @@
 ---
-title: "Allocator"
 displayed_sidebar: appDevSidebar
+title: "Allocator"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-allocator
 ---
 
-# Allocator
+* **[构造函数和析构函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-allocator-construction-and-destructor)**
+* **[Malloc](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-malloc)**
+* **[Free](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-allocator-free)**
+* **[MallocAdvise](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mallocadvise)**

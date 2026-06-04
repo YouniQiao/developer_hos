@@ -1,6 +1,8 @@
 ---
-title: "矩阵相乘"
 displayed_sidebar: appDevSidebar
+title: "矩阵相乘"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul
 ---
 
-# 矩阵相乘
+* **[Matmul](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul1)**
+* **[Matmul Tiling](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul-tiling-class)**

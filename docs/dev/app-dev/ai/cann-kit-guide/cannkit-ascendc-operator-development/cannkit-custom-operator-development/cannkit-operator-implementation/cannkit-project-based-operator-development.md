@@ -1,6 +1,10 @@
 ---
-title: "工程化算子开发"
 displayed_sidebar: appDevSidebar
+title: "工程化算子开发"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-project-based-operator-development
 ---
 
-# 工程化算子开发
+* **[工程化算子开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-overview-of-engineering-operator)**
+* **[创建算子工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-creating-an-operator-project)**
+* **[基于工程实现算子](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-based-on-engineering)**
+* **[算子编译安装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compilation-and-deployment)**

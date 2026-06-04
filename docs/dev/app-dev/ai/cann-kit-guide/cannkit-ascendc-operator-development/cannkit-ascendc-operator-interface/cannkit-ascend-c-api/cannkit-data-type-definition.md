@@ -1,6 +1,11 @@
 ---
-title: "数据类型定义"
 displayed_sidebar: appDevSidebar
+title: "数据类型定义"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-type-definition
 ---
 
-# 数据类型定义
+* **[LocalTensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-localtensor)**
+* **[GlobalTensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-globaltensor)**
+* **[ShapeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-shapeinfo)**
+* **[UnaryRepeatParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-unaryrepeatparams)**
+* **[BinaryRepeatParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-binaryrepeatparams)**

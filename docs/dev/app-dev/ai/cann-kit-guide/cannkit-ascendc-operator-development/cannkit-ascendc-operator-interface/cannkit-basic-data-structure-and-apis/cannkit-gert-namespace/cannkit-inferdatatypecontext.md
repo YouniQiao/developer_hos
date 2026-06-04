@@ -1,6 +1,11 @@
 ---
-title: "InferDataTypeContext"
 displayed_sidebar: appDevSidebar
+title: "InferDataTypeContext"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-inferdatatypecontext
 ---
 
-# InferDataTypeContext
+* **[GetInputDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getinputdatatype)**
+* **[GetOptionalInputDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoptionalinputdatatype)**
+* **[GetRequiredInputDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getrequiredinputdatatype)**
+* **[GetOutputDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getoutputdatatype)**
+* **[SetOutputDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setoutputdatatype)**

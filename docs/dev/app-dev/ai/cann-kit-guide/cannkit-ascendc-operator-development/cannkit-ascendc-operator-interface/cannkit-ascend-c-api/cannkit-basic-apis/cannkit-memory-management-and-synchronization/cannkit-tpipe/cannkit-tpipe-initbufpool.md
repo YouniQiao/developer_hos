@@ -1,6 +1,9 @@
 ---
-title: "InitBufPool"
-displayed_sidebar: appDevSidebar
+title: Cannkit Tpipe Initbufpool
 ---
 
-# InitBufPool
+import SourceLink from '@site/src/components/SourceLink';
+
+# Cannkit Tpipe Initbufpool
+
+本文档内容请参考华为官方文档。

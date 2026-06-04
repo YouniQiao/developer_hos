@@ -1,6 +1,9 @@
 ---
-title: "AscendC算子开发"
 displayed_sidebar: appDevSidebar
+title: "AscendC算子开发"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascendc-operator-development
 ---
 
-# AscendC算子开发
+* **[自定义算子开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-custom-operator-development)**
+* **[AscendC算子接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascendc-operator-interface)**
+* **[AscendC昇腾到麒麟兼容性迁移指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-ascend-kirin-compatibility)**

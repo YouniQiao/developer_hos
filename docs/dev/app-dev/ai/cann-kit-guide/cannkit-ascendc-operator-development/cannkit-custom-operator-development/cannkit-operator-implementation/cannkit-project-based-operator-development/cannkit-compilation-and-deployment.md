@@ -1,6 +1,8 @@
 ---
-title: "算子编译安装"
 displayed_sidebar: appDevSidebar
+title: "算子编译安装"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-compilation-and-deployment
 ---
 
-# 算子编译安装
+* **[算子工程编译](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-project-compilation)**
+* **[算子包安装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-package-deployment)**

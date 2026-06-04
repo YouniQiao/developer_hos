@@ -1,6 +1,35 @@
 ---
-title: "SetSubgraphBuilder"
 displayed_sidebar: appDevSidebar
+title: "SetSubgraphBuilder"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-setsubgraphbuilder
 ---
 
-# SetSubgraphBuilder
+## 函数功能
+
+设置指定子图构建的函数对象。
+
+## 函数原型
+
+```
+void SetSubgraphBuilder(const char_t *ir_name, uint32_t index, const SubgraphBuilder &builder);
+```
+
+## 参数说明
+
+| 参数名 | 输入/输出 | 描述 |
+| --- | --- | --- |
+| ir\_name | 输入 | 子图名称。 |
+| index | 输入 | 动态个数子图场景（子图数量不固定），标识子图的序号。 |
+| builder | 输入 | 子图构建的函数对象。 |
+
+## 返回值
+
+无
+
+## 异常处理
+
+无
+
+## 约束说明
+
+无

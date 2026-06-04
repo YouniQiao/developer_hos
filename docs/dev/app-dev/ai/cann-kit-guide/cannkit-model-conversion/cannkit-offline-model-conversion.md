@@ -1,6 +1,9 @@
 ---
-title: "离线模型转换"
 displayed_sidebar: appDevSidebar
+title: "离线模型转换"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-offline-model-conversion
 ---
 
-# 离线模型转换
+* **[模型转换前准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-preparing-for-model-conversion)**
+* **[模型转换示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-model-conversion-example)**
+* **[OMG参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-overall-parameter)**

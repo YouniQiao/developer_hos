@@ -1,6 +1,8 @@
 ---
-title: "OpAICoreDef"
 displayed_sidebar: appDevSidebar
+title: "OpAICoreDef"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-opaicoredef
 ---
 
-# OpAICoreDef
+* **[SetTiling](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-settiling)**
+* **[AddConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-addconfig)**

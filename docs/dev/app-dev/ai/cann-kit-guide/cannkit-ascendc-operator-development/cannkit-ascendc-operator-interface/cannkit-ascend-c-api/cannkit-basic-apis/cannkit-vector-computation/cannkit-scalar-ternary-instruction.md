@@ -1,6 +1,8 @@
 ---
-title: "标量三目指令"
 displayed_sidebar: appDevSidebar
+title: "标量三目指令"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-scalar-ternary-instruction
 ---
 
-# 标量三目指令
+* **[Axpy](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-axpy)**
+* **[更多样例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scalar-ternaryinstructions-more-examples)**

@@ -1,6 +1,29 @@
 ---
-title: "OriginOpType"
 displayed_sidebar: appDevSidebar
+title: "OriginOpType"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-originoptype
 ---
 
-# OriginOpType
+## 函数功能
+
+设置原始模型的算子类型或算子类型列表。
+
+## 函数原型
+
+![](./img/f09ebe7d.png)
+
+数据类型为string的接口后续版本会废弃，建议使用数据类型为非string的接口。
+
+```
+OpRegistrationData &OriginOpType(const std::vector<ge::AscendString> &ori_op_type_list);
+OpRegistrationData &OriginOpType(const char_t *ori_op_type);
+OpRegistrationData &OriginOpType(const std::initializer_list<std::string> &ori_optype_list);
+OpRegistrationData &OriginOpType(const std::string &ori_optype);
+```
+
+## 参数说明
+
+| 参数 | 输入/输出 | 说明 |
+| --- | --- | --- |
+| ori\_op\_type\_list/ori\_optype\_list | 输入 | 原始模型算子类型列表 |
+| ori\_op\_type/ori\_optype | 输入 | 原始模型算子类型 |

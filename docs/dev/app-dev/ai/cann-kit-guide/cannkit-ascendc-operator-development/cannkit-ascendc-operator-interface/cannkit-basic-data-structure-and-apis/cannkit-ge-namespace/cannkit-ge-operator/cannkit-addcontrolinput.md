@@ -1,6 +1,35 @@
 ---
-title: "AddControlInput"
 displayed_sidebar: appDevSidebar
+title: "AddControlInput"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-addcontrolinput
 ---
 
-# AddControlInput
+## 函数功能
+
+添加算子的控制边，控制边目前只是控制算子的执行顺序。
+
+## 函数原型
+
+```
+Operator &AddControlInput(const Operator &src_oprt);
+```
+
+## 参数说明
+
+| 参数名 | 输入/输出 | 描述 |
+| --- | --- | --- |
+| src\_oprt | 输入 | 控制边对应的源算子。 |
+
+## 返回值
+
+| 类型 | 描述 |
+| --- | --- |
+| Operator& | 算子对象本身。 |
+
+## 异常处理
+
+无
+
+## 约束说明
+
+无

@@ -1,6 +1,9 @@
 ---
-title: "算子调试调优"
 displayed_sidebar: appDevSidebar
+title: "算子调试调优"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-usage-of-the-commissioning-tool
 ---
 
-# 算子调试调优
+* **[算子调试概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-tools)**
+* **[数据准备和配置说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-data-preparation-and-configuration)**
+* **[调测功能介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-commissioning-functions)**

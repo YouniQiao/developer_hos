@@ -1,6 +1,48 @@
 ---
-title: "GetAddr"
 displayed_sidebar: appDevSidebar
+title: "GetAddr"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-memblock-getaddr
 ---
 
-# GetAddr
+## 函数功能
+
+* 获取只读的device内存地址。
+* 获取可读写的device内存地址。
+
+## 函数原型
+
+* 获取只读的device内存地址场景：
+
+  ```
+  const void *GetAddr() const
+  ```
+* 获取可读写的device内存地址场景：
+
+  ```
+  void *GetAddr()
+  ```
+
+## 参数说明
+
+无
+
+## 返回值
+
+* 获取只读的device内存地址场景：
+
+  | 类型 | 描述 |
+  | --- | --- |
+  | void\* | 只读的device内存地址。 |
+* 获取可读写的device内存地址场景：
+
+  | 类型 | 描述 |
+  | --- | --- |
+  | void\* | 可读写的device内存地址。 |
+
+## 异常处理
+
+无
+
+## 约束说明
+
+无

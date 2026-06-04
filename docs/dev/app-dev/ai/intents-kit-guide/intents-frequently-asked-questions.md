@@ -1,6 +1,9 @@
 ---
-title: "常见问题"
-displayed_sidebar: appDevSidebar
+title: "Intents Frequently Asked Questions"
 ---
 
-# 常见问题
+import SourceLink from '@site/src/components/SourceLink';
+
+# Intents Frequently Asked Questions
+
+本文档内容请参考华为官方文档。
