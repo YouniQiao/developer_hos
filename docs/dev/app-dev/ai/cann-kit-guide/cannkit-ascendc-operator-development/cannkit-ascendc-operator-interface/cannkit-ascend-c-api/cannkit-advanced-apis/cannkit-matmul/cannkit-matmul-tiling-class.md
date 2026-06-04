@@ -1,9 +1,0 @@
----
-displayed_sidebar: appDevSidebar
-title: "Matmul Tiling"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul-tiling-class
----
-
-* **[使用说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul-tiling-usage-description)**
-* **[构造函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matmul-tiling-constructor)**
-* **[TCubeTiling结构体](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tcubetiling-structure)**

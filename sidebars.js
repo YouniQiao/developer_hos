@@ -14,7 +14,6 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const appDevSidebar = require('./sidebars-appdev.js').appDevSidebar;
 const gameDevSidebar = require('./sidebars-gamedev.js').gameDevSidebar;
-const industrySolutionsSidebar = require('./sidebars-industry.js').industrySolutionsSidebar;
 const experienceSuggestionsSidebar = require('./sidebars-experience-suggestions.js').experienceSuggestionsSidebar;
 const testingSidebar = require('./sidebars-testing.js').testingSidebar;
 const toolsSidebar = require('./sidebars-tools.js').toolsSidebar;
@@ -48,7 +47,6 @@ const sidebars = {
   atomicSidebar,
   ndkDevSidebar,
   gameDevSidebar,
-  industrySolutionsSidebar,
   experienceSuggestionsSidebar,
   testingSidebar,
   faqSidebar: [

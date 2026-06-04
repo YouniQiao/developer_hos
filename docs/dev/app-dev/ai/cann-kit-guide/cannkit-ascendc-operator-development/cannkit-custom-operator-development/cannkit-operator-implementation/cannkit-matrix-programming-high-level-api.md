@@ -1,8 +1,0 @@
----
-displayed_sidebar: appDevSidebar
-title: "矩阵编程（高阶API）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matrix-programming-high-level-api
----
-
-* **[基础知识](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-knowledge)**
-* **[矩阵编程算子实现](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-matrix-programming-operator)**

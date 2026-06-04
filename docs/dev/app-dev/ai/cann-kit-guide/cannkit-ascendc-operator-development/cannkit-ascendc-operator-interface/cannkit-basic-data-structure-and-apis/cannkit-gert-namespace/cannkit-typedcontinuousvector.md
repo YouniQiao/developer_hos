@@ -1,9 +1,0 @@
----
-displayed_sidebar: appDevSidebar
-title: "TypedContinuousVector"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-typedcontinuousvector
----
-
-* **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-typedcontinuousvector-introduction)**
-* **[MutableData](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-mutabledata)**
-* **[GetData](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-typedcontinuousvector-getdata)**

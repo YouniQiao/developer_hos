@@ -1,9 +1,0 @@
----
-displayed_sidebar: appDevSidebar
-title: "基于工程实现算子"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-based-on-engineering
----
-
-* **[算子原型定义实现](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-prototype-definition)**
-* **[Kernel侧算子实现](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operator-implementation-on-the)**
-* **[Host侧Tiling实现](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-tiling-implementation-on-the-host)**

@@ -1,9 +1,0 @@
----
-displayed_sidebar: appDevSidebar
-title: "编程API"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-programming-apis
----
-
-* **[接口概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-api-overview)**
-* **[基础API](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-programmingapi-basic-apis)**
-* **[高阶API](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-high-level-apis)**

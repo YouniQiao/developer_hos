@@ -1,9 +1,0 @@
----
-displayed_sidebar: appDevSidebar
-title: "OperatorFactory"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-operatorfactory
----
-
-* **[CreateOperator](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-createoperator)**
-* **[GetOpsTypeList](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-getopstypelist)**
-* **[IsExistOp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-isexistop)**

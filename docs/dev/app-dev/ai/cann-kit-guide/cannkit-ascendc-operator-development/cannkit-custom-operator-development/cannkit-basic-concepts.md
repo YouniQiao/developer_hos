@@ -1,9 +1,0 @@
----
-displayed_sidebar: appDevSidebar
-title: "基本概念"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-basic-concepts
----
-
-* **[硬件架构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-hardware-architecture)**
-* **[编程模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-programming-model)**
-* **[编程API](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-programming-apis)**

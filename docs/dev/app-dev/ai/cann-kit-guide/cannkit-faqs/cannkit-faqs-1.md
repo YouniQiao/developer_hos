@@ -1,7 +1,0 @@
----
-displayed_sidebar: appDevSidebar
-title: "判断模型能否在手机上运行？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-faqs-1
----
-
-通过调用接口[HMS\_HiAICompatibility\_CheckFromFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_hiaicompatibility_checkfromfile)或者[HMS\_HiAICompatibility\_CheckFromBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_hiaicompatibility_checkfrombuffer)，传入编译后的模型文件或者模型buffer，如果返回“HIAI\_COMPATIBILITY\_COMPATIBLE”表示兼容性检查通过，模型可以在手机上运行。

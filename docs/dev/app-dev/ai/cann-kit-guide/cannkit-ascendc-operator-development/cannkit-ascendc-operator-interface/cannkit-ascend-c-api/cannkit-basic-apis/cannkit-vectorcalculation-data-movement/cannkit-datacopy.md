@@ -1,8 +1,0 @@
----
-displayed_sidebar: appDevSidebar
-title: "DataCopy"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-datacopy
----
-
-* **[普通数据搬运](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-common-data-movement)**
-* **[随路格式转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-channel-associated-format-conversion)**

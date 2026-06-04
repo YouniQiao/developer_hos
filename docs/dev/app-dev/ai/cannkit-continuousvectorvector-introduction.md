@@ -1,8 +1,0 @@
----
-title: "简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-continuousvectorvector-introduction
----
-
-在内存中开辟一块连续的空间，用于存储数据的描述信息以及实际的数据元素，元素类型为ContinuousVector结构。不支持动态扩容。
-
-本类的描述信息包括：用于存放数据的内存空间的总容量capacity\_、当前存放的实际元素数量size\_及各个数据元素相对于ContinuousVectorVector结构首地址的偏移量offset\_。
