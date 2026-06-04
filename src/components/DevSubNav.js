@@ -1,6 +1,6 @@
 /**
  * Dev & Testing Secondary Navigation Bar
- * Items: 版本说明 | 应用开发 | 元服务开发 | NDK开发 | 游戏开发 | 行业解决方案 | 测试 | FAQ
+ * Items: 版本说明 | 应用开发 | 元服务开发 | NDK开发 | 游戏开发 | 测试 | FAQ
  */
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
@@ -37,12 +37,6 @@ const NAV_ITEMS = [
     path: '/docs/dev/game-dev/games-center-introduction-0000002320553253',
     match: '/docs/dev/game-dev',
     desc: 'HarmonyOS 游戏开发指南',
-  },
-  {
-    label: '行业解决方案',
-    path: '/docs/dev/industry-solutions/practice-auto-app-architecture-v1-0000001903742656',
-    match: '/docs/dev/industry-solutions',
-    desc: '各行业鸿蒙化解决方案',
   },
   {
     label: '测试',
