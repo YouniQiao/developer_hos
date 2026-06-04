@@ -1,6 +1,25 @@
 ---
 title: "如何检测当前相机服务的状态"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-4
 ---
 
-# 如何检测当前相机服务的状态
+设置状态回调以返回相机状态。
+
+```
+import { camera } from '@kit.CameraKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+const context = AppStorage.get("context") as UIContext;
+let cameraManager = camera.getCameraManager(context.getHostContext()!);
+cameraManager.on('cameraStatus', (err: BusinessError, cameraStatusInfo: camera.CameraStatusInfo) => {
+  console.log(`camera : ${cameraStatusInfo.camera.cameraId}`);
+  console.log(`status: ${cameraStatusInfo.status}`);
+});
+```
+
+相机状态：CameraStatus
+
+CameraStatus是一个枚举，表示相机状态。
+
+**参考链接**
+
+[CameraStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#camerastatus)

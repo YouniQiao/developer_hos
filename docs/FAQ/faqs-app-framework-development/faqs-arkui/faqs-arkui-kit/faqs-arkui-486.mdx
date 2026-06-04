@@ -1,0 +1,88 @@
+---
+title: "自定义组件内定义方法报错，出现异常的原因"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-486
+---
+import MergedTable from "@site/src/components/MergedTable";
+
+
+**问题现象**
+
+@Component中定义一些框架的方法与开发者在@Component中定义的方法重名，导致框架中的方法被override，可能会导致出现报错“is not callable”或应用异常。
+
+**解决措施**
+
+为避免出现开发者在自定义组件中定义的方法跟自定义组件框架的方法重名，导致运行时异常，开发者可参考如下表格，凡是在表格中被列出来的，开发者需要将其定义成不同的名字，以防止运行时功能异常。
+
+<MergedTable
+  headers={[
+    [{content: "<p>自定义组件已定义的方法或属性名</p>", colspan: 4}],
+  ]}
+  rows={[
+    [{content: "<p>isRenderInProgress</p>"}, {content: "<p>isInitialRenderDone</p>"}, {content: "<p>runReuse_</p>"}, {content: "<p>paramsGenerator_</p>"}],
+    [{content: "<p>watchedProps</p>"}, {content: "<p>recycleManager_</p>"}, {content: "<p>hasBeenRecycled_</p>"}, {content: "<p>preventRecursiveRecycle_</p>"}],
+    [{content: "<p>delayRecycleNodeRerender</p>"}, {content: "<p>delayRecycleNodeRerenderDeep</p>"}, {content: "<p>defaultConsume_</p>"}, {content: "<p>reconnectConsume_</p>"}],
+    [{content: "<p>providedVars_</p>"}, {content: "<p>dirtyElementIdsNeedsUpdateSynchronously_</p>"}, {content: "<p>localStoragebackStore_</p>"}, {content: "<p>ownObservedPropertiesStore__</p>"}],
+    [{content: "<p>get ownObservedPropertiesStore_</p>"}, {content: "<p>obtainOwnObservedProperties</p>"}, {content: "<p>get localStorage_</p>"}, {content: "<p>set localStorage_</p>"}],
+    [{content: "<p>get isViewV2()</p>"}, {content: "<p>aboutToBeDeleted</p>"}, {content: "<p>aboutToBeDeletedInternal</p>"}, {content: "<p>purgeDeleteElmtId</p>"}],
+    [{content: "<p>purgeVariableDependenciesOnElmtIdOwnFunc</p>"}, {content: "<p>debugInfoStateVars</p>"}, {content: "<p>initAllowComponentFreeze</p>"}, {content: "<p>setActiveInternal</p>"}],
+    [{content: "<p>onActiveInternal</p>"}, {content: "<p>onInactiveInternal</p>"}, {content: "<p>purgeVariableDependenciesOnElmtId</p>"}, {content: "<p>initialRender</p>"}],
+    [{content: "<p>rerender</p>"}, {content: "<p>updateRecycleElmtId</p>"}, {content: "<p>updateStateVars</p>"}, {content: "<p>initialRenderView</p>"}],
+    [{content: "<p>UpdateElement</p>"}, {content: "<p>delayCompleteRerender</p>"}, {content: "<p>flushDelayCompleteRerender</p>"}, {content: "<p>forceRerenderNode</p>"}],
+    [{content: "<p>collectElementsNeedToUpdateSynchronously</p>"}, {content: "<p>viewPropertyHasChanged</p>"}, {content: "<p>uiNodeNeedUpdateV2</p>"}, {content: "<p>performDelayedUpdate</p>"}],
+    [{content: "<p>declareWatch</p>"}, {content: "<p>addProvidedVar</p>"}, {content: "<p>findProvidePU__</p>"}, {content: "<p>initializeConsume</p>"}],
+    [{content: "<p>reconnectToConsume</p>"}, {content: "<p>disconnectedConsume</p>"}, {content: "<p>markElemenDirtyById</p>"}, {content: "<p>updateDirtyElements</p>"}],
+    [{content: "<p>observeComponentCreation</p>"}, {content: "<p>observeComponentCreation2</p>"}, {content: "<p>getOrCreateRecycleManager</p>"}, {content: "<p>getRecycleManager</p>"}],
+    [{content: "<p>hasRecycleManager</p>"}, {content: "<p>initRecycleManager</p>"}, {content: "<p>rebuildUpdateFunc</p>"}, {content: "<p>observeRecycleComponentCreation</p>"}],
+    [{content: "<p>aboutToReuseInternal</p>"}, {content: "<p>stopRecursiveRecycle</p>"}, {content: "<p>aboutToRecycleInternal</p>"}, {content: "<p>recycleSelf</p>"}],
+    [{content: "<p>isRecycled</p>"}, {content: "<p>UpdateLazyForEachElements</p>"}, {content: "<p>createStorageLink</p>"}, {content: "<p>createStorageProp</p>"}],
+    [{content: "<p>createLocalStorageLink</p>"}, {content: "<p>createLocalStorageProp</p>"}, {content: "<p>debugInfoView</p>"}, {content: "<p>debugInfoViewInternal</p>"}],
+    [{content: "<p>debugInfoDirtyDescendantElementIds</p>"}, {content: "<p>debugInfoDirtyDescendantElementIdsInternal</p>"}, {content: "<p>__mkRepeatAPI</p>"}, {content: "<p>reuseOrCreateNewComponent</p>"}],
+    [{content: "<p>dirtDescendantElementIds_</p>"}, {content: "<p>monitorIdsDelayedUpdate</p>"}, {content: "<p>monitorIdsDelayedUpdateForAddMonitor_</p>"}, {content: "<p>computedIdsDelayedUpdate</p>"}],
+    [{content: "<p>recyclePoolV2_</p>"}, {content: "<p>resetStateVarsOnReuse</p>"}, {content: "<p>aboutToReuseInternals</p>"}, {content: "<p>aboutToRecycleInternal</p>"}],
+    [{content: "<p>freezeRecycledComponent</p>"}, {content: "<p>unfreezeReusedComponent</p>"}, {content: "<p>getOrCreateRecyclePool</p>"}, {content: "<p>getRecyclePool</p>"}],
+    [{content: "<p>hasRecyclePool</p>"}, {content: "<p>cleanupRecycledElmtId</p>"}, {content: "<p>get isViewV2</p>"}, {content: "<p>purgeDeleteElmtId</p>"}],
+    [{content: "<p>aboutToBeDeletedInternal</p>"}, {content: "<p>initialRenderView</p>"}, {content: "<p>resetMonitorsOnReuse</p>"}, {content: "<p>resetComputed</p>"}],
+    [{content: "<p>resetConsumer</p>"}, {content: "<p>observeComponentCreation2</p>"}, {content: "<p>initParam</p>"}, {content: "<p>updateParam</p>"}],
+    [{content: "<p>resetParam</p>"}, {content: "<p>uiNodeNeedUpdateV2</p>"}, {content: "<p>updateDirtyElements</p>"}, {content: "<p>UpdateElement</p>"}],
+    [{content: "<p>getViewV2ChildById</p>"}, {content: "<p>addDelayedMonitorIdsForAddMonitor</p>"}, {content: "<p>addDelayedComputedIds</p>"}, {content: "<p>setActiveInternal</p>"}],
+    [{content: "<p>performDelayedUpdate</p>"}, {content: "<p>findProvidePU__</p>"}, {content: "<p>get localStorage_()</p>"}, {content: "<p>reuseOrCreateNewComponent</p>"}],
+    [{content: "<p>debugInfoDirtDescendantElementIdsInternal</p>"}, {content: "<p>debugInfoStateVars</p>"}, {content: "<p>__mkRepeatAPI</p>"}, {content: "<p>debugInfoView</p>"}],
+    [{content: "<p>debugInfoViewInternal</p>"}, {content: "<p>debugInfoDirtDescendantElementIds</p>"}, {content: "<p>observeRecycleComponentCreation</p>"}, {content: "<p>debugInfo__</p>"}],
+    [{content: "<p>recycleSelf</p>"}, {content: "<p>finalizeConstruction</p>"}, {content: "<p>hasBeenRecycled_</p>"}, {content: "<p>paramsGenerator_</p>"}],
+    [{content: "<p>inactiveComponents_</p>"}, {content: "<p>get isReusable_()</p>"}, {content: "<p>compareNumber</p>"}, {content: "<p>currentlyRenderedElmtIdStack_</p>"}],
+    [{content: "<p>dirtDescendantElementIds_</p>"}, {content: "<p>dirtRetakenElementIds_</p>"}, {content: "<p>parent_</p>"}, {content: "<p>renderingPaused</p>"}],
+    [{content: "<p>isDeleting_</p>"}, {content: "<p>isCompFreezeAllowed_</p>"}, {content: "<p>prebuildFuncQueues</p>"}, {content: "<p>propertyChangedFuncQueues</p>"}],
+    [{content: "<p>extraInfo_</p>"}, {content: "<p>__isBlockRecycleOrReuse__</p>"}, {content: "<p>elmtIdsDelayedUpdate_</p>"}, {content: "<p>prebuildPhase_</p>"}],
+    [{content: "<p>isPrebuilding_</p>"}, {content: "<p>prebuildingElmtId_</p>"}, {content: "<p>doRecycle</p>"}, {content: "<p>doReuse</p>"}],
+    [{content: "<p>nativeViewPartialUpdate</p>"}, {content: "<p>create</p>"}, {content: "<p>createRecycle</p>"}, {content: "<p>markNeedUpdate</p>"}],
+    [{content: "<p>syncInstanceId</p>"}, {content: "<p>restoreInstanceId</p>"}, {content: "<p>getInstanceId</p>"}, {content: "<p>markStatic</p>"}],
+    [{content: "<p>finishUpdateFunc</p>"}, {content: "<p>setCardId</p>"}, {content: "<p>getCardId</p>"}, {content: "<p>elmtIdExists</p>"}],
+    [{content: "<p>isLazyItemRender</p>"}, {content: "<p>isFirstRender</p>"}, {content: "<p>findChildByIdForPreview</p>"}, {content: "<p>resetRecycleCustomNode</p>"}],
+    [{content: "<p>queryNavDestinationInfo</p>"}, {content: "<p>queryNavigationInfo</p>"}, {content: "<p>queryRouterPageInfo</p>"}, {content: "<p>getUIContext</p>"}],
+    [{content: "<p>sendStateInfo</p>"}, {content: "<p>getUniqueId</p>"}, {content: "<p>setIsV2</p>"}, {content: "<p>getDialogController</p>"}],
+    [{content: "<p>allowReusableV2Descendant</p>"}, {content: "<p>id__()</p>"}, {content: "<p>updateId</p>"}, {content: "<p>scheduleDelayedUpdate</p>"}],
+    [{content: "<p>get elmtIdsDelayedUpdate</p>"}, {content: "<p>setParent</p>"}, {content: "<p>getParent</p>"}, {content: "<p>removeChild</p>"}],
+    [{content: "<p>aboutToBeDeleted</p>"}, {content: "<p>isDeleting</p>"}, {content: "<p>setDeleting</p>"}, {content: "<p>setDeleteStatusRecursively</p>"}],
+    [{content: "<p>isCompFreezeAllowed</p>"}, {content: "<p>setActiveCount</p>"}, {content: "<p>getChildViewV2ForElmtId</p>"}, {content: "<p>purgeVariableDependenciesOnElmtIdOwnFunc</p>"}],
+    [{content: "<p>debugInfo__</p>"}, {content: "<p>debugInfoRegisteredElmtIds</p>"}, {content: "<p>debugInfoElmtIds</p>"}, {content: "<p>dumpStateVars</p>"}],
+    [{content: "<p>debugInfoStateVars</p>"}, {content: "<p>isViewActive</p>"}, {content: "<p>purgeVariableDependenciesOnElmtId</p>"}, {content: "<p>initialRender</p>"}],
+    [{content: "<p>rerender</p>"}, {content: "<p>get isViewV2</p>"}, {content: "<p>updateRecycleElmtId</p>"}, {content: "<p>updateStateVars</p>"}],
+    [{content: "<p>UpdateElement</p>"}, {content: "<p>dumpReport</p>"}, {content: "<p>forceCompleteRerender</p>"}, {content: "<p>__ClearAllRecycle__PUV2ViewBase__Internal</p>"}],
+    [{content: "<p>forceRerenderNode</p>"}, {content: "<p>hasNodeUpdateFunc</p>"}, {content: "<p>pauseRendering</p>"}, {content: "<p>restoreRendering</p>"}],
+    [{content: "<p>forEachUpdateFunction</p>"}, {content: "<p>getNodeById</p>"}, {content: "<p>getCurrentlyRenderedElmtId</p>"}, {content: "<p>debugInfoViewHierarchy</p>"}],
+    [{content: "<p>debugInfoUpdateFuncByElmtId</p>"}, {content: "<p>debugInfoUpdateFuncByElmtIdInternal</p>"}, {content: "<p>debugInfoInactiveComponents</p>"}, {content: "<p>__mkRepeatAPI</p>"}],
+    [{content: "<p>findViewInHierarchy</p>"}, {content: "<p>onDumpInfo</p>"}, {content: "<p>printDFXHeader</p>"}, {content: "<p>processOnDumpCommands</p>"}],
+    [{content: "<p>traverseChildDoRecycleOrReuse</p>"}, {content: "<p>processPropertyChangedFuncQueue</p>"}, {content: "<p>setPrebuildPhase</p>"}, {content: "<p>isNeedBuildPrebuildCmd</p>"}],
+    [{content: "<p>prebuildComponent</p>"}, {content: "<p>isEnablePrebuildInMultiFrame</p>"}, {content: "<p>ifElseBranchUpdateFunctionDirtyRetaken</p>"}, {content: "<p>onDumpInspector</p>"}],
+    [{content: "<p>prebuildPhase_</p>"}, {content: "<p>activeCount_</p>"}, {content: "<p>isView_</p>"}, {content: "<p>childrenWeakrefMap_</p>"}],
+    [{content: "<p>builderNodeWeakrefMap_</p>"}, {content: "<p>updateFuncByElmtId</p>"}, {content: "<p>id_</p>"}, {content: "<p>shareLocalStorage_</p>"}],
+    [{content: "<p>__parentViewBuildNode__</p>"}, {content: "<p>__enableBuilderNodeConsume__</p>"}, {content: "<p>__elmtId2Repeat___</p>"}, {content: "<p>arkThemeScopeManager</p>"}],
+    [{content: "<p>ifElseBranchUpdateFunctionDirtyRetaken</p>"}, {content: "<p>forceCompleteRerender</p>"}, {content: "<p>forceRerenderNode</p>"}, {content: "<p>purgeDeleteElmtId</p>"}],
+    [{content: "<p>findProvidePU__</p>"}, {content: "<p>id__()</p>"}, {content: "<p>debugInfo__()</p>"}, {content: "<p>debugInfoElmtId</p>"}],
+    [{content: "<p>getChildById</p>"}, {content: "<p>addChild</p>"}, {content: "<p>setParentBuilderNode__</p>"}, {content: "<p>addChildBuilderNode</p>"}],
+    [{content: "<p>propagateToChildrenToConnected</p>"}, {content: "<p>removeChildBuilderNode</p>"}, {content: "<p>clearChildBuilderNode</p>"}, {content: "<p>propagateToChildrenToDisconnected</p>"}],
+    [{content: "<p>purgeDeletedElmtIds</p>"}, {content: "<p>updateStateVarsOfChildByElmtId</p>"}, {content: "<p>createOrGetNode</p>"}, {content: "<p>ifElseBranchUpdateFunction</p>"}],
+    [{content: "<p>setArkThemeScopeManager</p>"}, {content: "<p>onWillApplyThemeInternally</p>"}, {content: "<p>getShareLocalStorage</p>"}, {content: "<p>setShareLocalStorage</p>"}],
+    [{content: "<p>propagateToChildren</p>"}, {content: "<p>setActiveInternal</p>"}, {content: ""}, {content: ""}],
+  ]}
+/>

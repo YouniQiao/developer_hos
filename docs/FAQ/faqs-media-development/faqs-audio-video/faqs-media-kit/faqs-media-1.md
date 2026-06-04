@@ -1,6 +1,22 @@
 ---
 title: "使用AVPlayer播放器概率性报错5400104、5400103要怎么处理"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-1
 ---
 
-# 使用AVPlayer播放器概率性报错5400104、5400103要怎么处理
+**问题现象**
+
+5400103：媒体与其他模块（图形、音频、网络、HDI、相机）的数据交互出现问题，可能与服务器限流有关。
+
+5400104：网络超时或访问其他模块超时。默认网络超时时间是15秒，从开始缓存事件上报时开始计时，超时后将上报该错误信息。
+
+**解决措施**
+
+1. 确认网络连接是否正常。
+2. 销毁当前实例，并重新创建。如果重新创建失败，则停止相关操作。
+3. 尝试优化流所对应的服务器限流情况，以规避系统播放器的严格条件。
+
+**参考链接**
+
+[错误码5400103](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-media#section5400103-出现io错误)
+
+[错误码5400104](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-media#section5400104-操作超时)

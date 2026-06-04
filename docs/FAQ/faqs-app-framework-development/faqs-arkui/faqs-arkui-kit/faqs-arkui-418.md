@@ -1,6 +1,13 @@
 ---
 title: "使用Navigation，页面从A->B->C->D，D直接调用popToName到A，不会触发B、C的onPop是什么原因"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-418
 ---
 
-# 使用Navigation，页面从A-&gt;B-&gt;C-&gt;D，D直接调用popToName到A，不会触发B、C的onPop是什么原因
+**问题描述**
+
+页面从A->B->C->D，D直接调用popToName到A，会不会触发B、C的onPop。
+
+**解决措施**
+
+* 仅按push的反序返回时会触发onPop。以A->B->C->D为例，仅如下的pop操作会触发对应页面的onPop回调：D->C，C->B，B->A，popToName属于跨级返回，会跳过中间页面栈而不触发其生命周期回调，这与逐级pop的机制不同。
+* 自API15起，推荐开发者使用[onResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination#onresult15)处理返回场景的路由参数。

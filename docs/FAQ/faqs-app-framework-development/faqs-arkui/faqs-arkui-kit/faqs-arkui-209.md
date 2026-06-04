@@ -1,6 +1,14 @@
 ---
 title: "ArkUI有没有在组件刷新后的回调事件"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-209
 ---
 
-# ArkUI有没有在组件刷新后的回调事件
+当组件状态变量改变时，会刷新组件。具体分为以下两种情况：
+
+1. 如果是组件的属性刷新，可以将属性存储为状态变量，并使用@Watch监听状态变量的变化。
+
+2. 如果是组件大小变化，可以通过onSizeChange()，监听到组件区域的变化。
+
+**参考链接**
+
+[状态变量变化监听](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management-watch-monitor)

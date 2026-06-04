@@ -1,6 +1,13 @@
 ---
 title: "如何定义一个具有任意键的对象"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-141
 ---
 
-# 如何定义一个具有任意键的对象
+可使用Record类型，有几个属性就对应几个类型参数，参考代码如下：
+
+```
+const asd: Record<string, number | string> = {
+  'name': 'xc',
+  'age': 29
+}
+```

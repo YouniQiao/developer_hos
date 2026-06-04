@@ -1,6 +1,6 @@
 ---
 title: "用户更新app后是否还会弹出权限申请弹窗"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-2
 ---
 
-# 用户更新app后是否还会弹出权限申请弹窗
+当应用通过应用市场更新后，系统不会对用户已授权的权限重复弹出申请窗口。

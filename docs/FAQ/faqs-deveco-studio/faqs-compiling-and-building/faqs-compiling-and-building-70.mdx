@@ -1,0 +1,50 @@
+---
+title: "如何进行DevEco Studio编译构建初步性能分析"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-70
+---
+import MergedTable from "@site/src/components/MergedTable";
+
+
+Build Analyzer工具显示编译构建的重要信息，帮助开发者分析和排查性能问题。
+
+构建完成后，通过以下方式打开Build Analyzer窗口：
+
+* 在底部的工具栏区域，单击Build Analyzer窗口进行查看。
+* 在左侧边栏单击![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/1e/v3/1y51U20nSHKKJblQG6ezNw/zh-cn_image_0000002229758897.png?HW-CC-KV=V1&HW-CC-Date=20260603T050231Z&HW-CC-Expire=86400&HW-CC-Sign=E96855BFFA78F558A84523C83A4705EA353A6EA4EBE541B993F754FFB6D36E4C)，打开Build Analyzer窗口。
+* 完成构建后首次打开Build Analyzer时，窗口显示构建分析概览，如下图所示：
+
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/9e/v3/B8CB7CaXTDW6FZkiTwdaLQ/zh-cn_image_0000002229604409.png?HW-CC-KV=V1&HW-CC-Date=20260603T050231Z&HW-CC-Expire=86400&HW-CC-Sign=77D2BF83DC40602D2547144C4B0F53C887A59330F80DC34EE6B29E9AA58E320F "点击放大")
+
+如需查看构建任务时间图谱，从下拉菜单中点击Tasks，默认进入时间图谱界面。该界面分块显示构建历史记录、构建任务时长图谱、构建日志及日志详情信息，如下图所示：
+
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/5e/v3/ftwjt_o7SeK7zSbg8Od4ZA/zh-cn_image_0000002194159012.png?HW-CC-KV=V1&HW-CC-Date=20260603T050231Z&HW-CC-Expire=86400&HW-CC-Sign=69C81AC2B36B12AFD5AEFFC558019F94ECE67AE243DEA5E37EB9903F4094A7F2 "点击放大")
+
+事件信息：
+
+<MergedTable
+  rows={[
+    [{content: "<p>事件</p>"}, {content: "<p>子事件</p>"}, {content: "<p>业务</p>"}],
+    [{content: "<p>CompileResource</p>"}, {content: ""}, {content: "<p>资源编译</p>"}],
+    [{content: "<p>PackageHap</p>"}, {content: ""}, {content: "<p>打包工具</p>"}],
+    [{content: "<p>SignHap</p>"}, {content: ""}, {content: "<p>签名工具</p>"}],
+    [{content: "<p>BuildNativeWithCmake</p>"}, {content: ""}, {content: "<p>cpp编译工具链</p>"}],
+    [{content: "<p>CompileArkTS</p>", rowspan: 13}, {content: "<p>watchChangedFiles</p>"}, {content: "<p>ArkUI</p>"}],
+    [{content: "<p>invalidCachePlugin</p>"}, {content: "<p>编译构建</p>"}],
+    [{content: "<p>oh-resolve</p>"}, {content: "<p>编译构建</p>"}],
+    [{content: "<p>moduleInfoMetaPlugin</p>"}, {content: "<p>编译构建</p>"}],
+    [{content: "<p>commonjs</p>"}, {content: "<p>编译构建</p>"}],
+    [{content: "<p>语言和类型编译器</p>"}, {content: "<p>ArkUI</p> <p>语言和类型编译器</p>"}],
+    [{content: "<p>ArkUI</p>"}, {content: "<p>ArkUI</p>"}],
+    [{content: "<p>buildInstrument</p>"}, {content: "<p>测试框架</p>"}],
+    [{content: "<p>模块化，es2abc</p>"}, {content: "<p>模块化，es2abc</p> <p>语言和类型编译器</p>"}],
+    [{content: "<p>编译构建</p>"}, {content: "<p>编译构建</p>"}],
+    [{content: "<p>编译构建</p>"}, {content: "<p>编译构建</p>"}],
+    [{content: "<p>ignorePlugin：编译构建工具</p>"}, {content: "<p>编译构建</p>"}],
+    [{content: "<p>api范式</p>"}, {content: "<p>api范式</p>"}],
+    [{content: ""}, {content: "<p>commonPlugin：编译构建工具</p>"}, {content: "<p>编译构建</p>"}],
+  ]}
+/>
+
+参考链接：
+
+[分析构建性能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-analyzer)

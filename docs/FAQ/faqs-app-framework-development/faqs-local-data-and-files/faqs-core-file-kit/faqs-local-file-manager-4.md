@@ -1,6 +1,33 @@
 ---
 title: "如何解决文件的中文乱码问题"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-4
 ---
 
-# 如何解决文件的中文乱码问题
+读取文件内容的buffer数据后，通过TextDecoder对文件内容进行解码。
+
+```
+import { util } from '@kit.ArkTS';
+import { fileIo } from '@kit.CoreFileKit';
+
+// In the utility class, retrieve the Context from the Entry Ability and save it to AppStore, then use AppStore to retrieve it in the utility class
+let context = AppStorage.get("context") as UIContext;
+// Create a file to write Chinese characters
+let filePath = context.getHostContext()!.filesDir + "/test0.txt";
+let file = fileIo.openSync(filePath, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+// Write a paragraph of content to a file
+let writeLen = fileIo.writeSync(file.fd, "Hello, world");
+fileIo.closeSync(file);
+console.info(`GarbledCnCharacters The length of str is: ${writeLen}`);
+let stream = fileIo.createStreamSync(filePath, "r+");
+let buffer = new ArrayBuffer(4096);
+stream.readSync(buffer);
+// Set the encoding format to "utf-8"
+let textDecoder = util.TextDecoder.create('utf-8', { ignoreBOM: true });
+// Retrieve the corresponding text after decoding the input
+let readString = textDecoder.decodeToString(new Uint8Array(buffer), { stream: false });
+console.info(`GarbledCnCharacters read content is:${readString}`);
+```
+
+**参考链接**
+
+[TextDecoder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#textdecoder)

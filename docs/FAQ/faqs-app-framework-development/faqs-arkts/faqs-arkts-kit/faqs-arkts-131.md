@@ -1,6 +1,6 @@
 ---
 title: "Array的长度上限是多少"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-131
 ---
 
-# Array的长度上限是多少
+ECMAScript标准中定义的是2^32-1，超过该值会抛出‘RangeError’。

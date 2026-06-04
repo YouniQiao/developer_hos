@@ -1,6 +1,6 @@
 ---
 title: "系统文件管理器支持的最长文件名是多少"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-10
 ---
 
-# 系统文件管理器支持的最长文件名是多少
+支持的最长文件名是255字节。

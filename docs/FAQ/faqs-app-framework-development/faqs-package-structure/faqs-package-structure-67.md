@@ -1,6 +1,6 @@
 ---
 title: "HAP包中的“--BEGIN CERTIFICATE--”是什么格式的数据"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-67
 ---
 
-# HAP包中的“--BEGIN CERTIFICATE--”是什么格式的数据
+证书签名时，支持DER和PEM的格式，“--BEGIN CERTIFICATE--”是DER格式的数据，可以直接使用。

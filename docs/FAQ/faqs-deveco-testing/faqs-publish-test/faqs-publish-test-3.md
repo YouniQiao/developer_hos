@@ -1,6 +1,12 @@
 ---
 title: "测试报告中，为什么会批量出现待检测项"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-publish-test-3
 ---
 
-# 测试报告中，为什么会批量出现待检测项
+由于测试任务内部异常，偶现任务终止的情况。请查看【测试报告-执行日志】，如果应用信息为空，请重新创建任务并执行测试。
+
+![](./img/c8327791.png)
+
+该问题由应用信息未完全解析导致。再次创建任务时，请等待右侧应用信息加载完成，再进行创建，即可解决该问题。
+
+![](./img/b6580281.png "点击放大")

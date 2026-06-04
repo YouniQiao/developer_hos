@@ -1,6 +1,6 @@
 ---
 title: "测试报告中，所有规则检测均异常，异常原因提示“arklayout存储失败”，该如何处理？"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ux-publish-test-4
 ---
 
-# 测试报告中，所有规则检测均异常，异常原因提示“arklayout存储失败”，该如何处理？
+非debug签名无法获取对应arklayout布局树信息，请安装应用的debug签名版本重启手机后重新测试。

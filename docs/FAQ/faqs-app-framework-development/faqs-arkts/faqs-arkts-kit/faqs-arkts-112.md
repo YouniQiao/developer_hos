@@ -1,6 +1,62 @@
 ---
 title: "如何判断对象的类型"
-displayed_sidebar: faqSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-112
 ---
 
-# 如何判断对象的类型
+在代码开发中，如果需要对对象的类型做判断，调用不同类的方法，可以使用instanceof进行判断来得知对象的类型，参考代码如下：
+
+```
+class BaseClass {
+  value: number = 0;
+
+  printf() {
+    console.info('base value:' + this.value);
+  }
+
+  setValue(val: number) {
+    this.value = val;
+  }
+}
+
+class AClass extends BaseClass {
+  value: number = 1;
+
+  setValue(val: number) {
+    this.value = val;
+  }
+
+  getValue(): number {
+    return this.value;
+  }
+}
+
+class BClass extends BaseClass {
+  value: number = 2;
+
+  setValue(val: number) {
+    this.value = val;
+  }
+}
+
+function printValue(base: BaseClass) {
+  base.printf();
+  let flag = base instanceof AClass;
+  console.info('printValue flag:' + flag);
+  if (flag) {
+    let val = (base as AClass).getValue();
+    console.info('printValue val:' + val);
+  }
+}
+
+@Entry
+@Component
+struct DetermineObjectType {
+  aboutToAppear(): void {
+    printValue(new AClass());
+    printValue(new BClass());
+  }
+
+  build() {
+  }
+}
+```
