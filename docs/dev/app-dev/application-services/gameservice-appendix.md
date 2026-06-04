@@ -1,0 +1,8 @@
+---
+displayed_sidebar: appDevSidebar
+title: "附录"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-appendix
+---
+
+* **[配置回调地址](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-address)**
+* **[获取游戏密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-key)**

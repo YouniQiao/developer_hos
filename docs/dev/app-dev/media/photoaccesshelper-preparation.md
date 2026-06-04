@@ -1,0 +1,64 @@
+---
+displayed_sidebar: appDevSidebar
+title: "开发准备"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation
+---
+
+应用需获取相册管理模块实例，才能访问和修改相册中的媒体数据。相册管理模块涉及用户个人数据信息，应用需向用户申请读写权限，以保证功能的正常运行。使用相册管理模块接口时，如无其他注明，默认在工程代码的pages/index.ets或其他自定义的ets文件中使用。
+
+## 获取相册管理模块实例
+
+应用需要通过上下文[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage)和接口[getPhotoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-f#photoaccesshelpergetphotoaccesshelper)，获取相册管理模块实例，用于访问和修改相册中的媒体数据信息，如图片和视频。
+
+**开发步骤**
+
+1. 导入photoAccessHelper模块以使用相册管理模块相关接口。
+2. 通过getUIContext().getHostContext()获取应用上下文。
+3. 获取相册管理模块实例。
+
+```
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
+import { common } from '@kit.AbilityKit';
+
+// 此处获取的photoAccessHelper实例为全局对象，后续文档中使用到的地方默认为使用此处获取的对象，如未添加此段代码报未定义的错误请自行添加。
+// 请在组件内获取context，确保this.getUiContext().getHostContext()返回结果为UIAbilityContext
+@Entry
+@Component
+struct Index {
+  @State outputText: string = '支持的类型为：\n';
+
+  build() {
+    Row() {
+      Button('example').onClick(async () => {
+        let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+        let phAccessHelper = photoAccessHelper.getPhotoAccessHelper(context);
+      }).width('100%')
+    }
+    .height('90%')
+  }
+}
+```
+
+
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MediaLibraryKit/ResourceUsageSample/entry/src/main/ets/pages/Index.ets#L16-L37" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+
+
+## 申请相册管理模块功能相关权限
+
+相册管理模块的读写操作需要相应权限，在申请权限前，请保证符合[权限使用的基本原则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限使用的基本原则)。涉及的权限如下表。
+
+| 权限名 | 说明 | 授权方式 |
+| --- | --- | --- |
+| ohos.permission.READ\_IMAGEVIDEO | 允许应用读取媒体库的图片和视频媒体文件信息。 | user\_grant |
+| ohos.permission.WRITE\_IMAGEVIDEO | 允许应用读写媒体库的图片和视频媒体文件信息。 | user\_grant |
+| ohos.permission.MEDIA\_LOCATION | 允许应用访问用户媒体文件中的地理位置信息。 | user\_grant |
+
+以上权限的授权方式均为user\_grant（用户授权），即开发者在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置对应的权限后，需要使用接口[abilityAccessCtrl.requestPermissionsFromUser](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissionsfromuser9)去校验当前用户是否已授权。如果已授权，应用可以直接访问和修改目标对象；否则需要弹框向用户申请授权。
+
+**开发步骤**
+
+上述权限ohos.permission.READ\_IMAGEVIDEO和ohos.permission.WRITE\_IMAGEVIDEO为受控权限，通常是不允许三方应用申请的。如果有特殊场景需要使用，请提供相关申请材料到AppGallery Connect申请相应权限证书。申请前请参考[受限开放权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions)，确保应用符合可申请的场景。然后再参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)，完成受限开放权限的申请。
+
+![](./img/eaa24aba.png)
+
+即使用户曾经授予权限，应用在调用受此权限保护的接口前，也应该先检查是否有权限。不能把之前授予的状态持久化，因为用户在动态授予后还可以通过“设置”取消应用的权限。

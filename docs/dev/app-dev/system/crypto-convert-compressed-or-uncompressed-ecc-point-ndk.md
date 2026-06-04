@@ -1,0 +1,82 @@
+---
+title: "使用ECC压缩/非压缩点格式转换(C/C++)"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-convert-compressed-or-uncompressed-ecc-point-ndk
+---
+
+支持将压缩/非压缩的点数据，转换为Point对象，用于密钥对象生成；也支持将Point对象转换为压缩/非压缩的点数据。
+
+ECC的算法规格请查看[非对称密钥生成和转换规格：ECC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#ecc)。
+
+通过传入字符串参数format，可指定获取的点数据格式。如果获取压缩格式，则指定format为："COMPRESSED"；获取非压缩格式，则指定format为："UNCOMPRESSED"。
+
+## 指定非压缩点数据转换为压缩点数据
+
+1. 指定uint8\_t类型的ECC非压缩点数据，调用[OH\_CryptoEcPoint\_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-key-h#oh_cryptoecpoint_create)，构造[OH\_CryptoEcPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymkeyapi-oh-cryptoecpoint)对象，用于生成点数据。
+2. 调用[OH\_CryptoEcPoint\_Encode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-key-h#oh_cryptoecpoint_encode)，获取压缩点数据。
+
+```
+#include "CryptoArchitectureKit/crypto_architecture_kit.h"
+
+OH_Crypto_ErrCode doTestEccPointUncompressedToCompressed()
+{
+    uint8_t pk[] = {
+        4, 143, 39, 57, 249, 145, 50, 63, 222, 35, 70, 178, 121, 202, 154, 21, 146, 129, 75, 76, 63, 8, 195, 157, 111,
+        40, 217, 215, 148, 120, 224, 205, 82, 83, 92, 185, 21, 211, 184, 5, 19, 114, 33, 86, 85, 228, 123, 242, 206,
+        200, 98, 178, 184, 130, 35, 232, 45, 5, 202, 189, 11, 46, 163, 156, 152
+    };
+    Crypto_DataBlob pkData = {pk, sizeof(pk)};
+    OH_CryptoEcPoint *point = nullptr;
+    OH_Crypto_ErrCode ret = OH_CryptoEcPoint_Create("NID_brainpoolP256r1", &pkData, &point);
+    if (ret != CRYPTO_SUCCESS) {
+        return ret;
+    }
+    Crypto_DataBlob returnPointBlobData = {0};
+    ret = OH_CryptoEcPoint_Encode(point, "COMPRESSED", &returnPointBlobData);
+    if (ret != CRYPTO_SUCCESS) {
+        OH_CryptoEcPoint_Destroy(point);
+        return ret;
+    }
+    OH_Crypto_FreeDataBlob(&returnPointBlobData);
+    OH_CryptoEcPoint_Destroy(point);
+    return ret;
+}
+```
+
+
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/CryptoArchitectureKit/KeyGenerationConversion/ECCCompressPublicKeyFormatConversion/entry/src/main/cpp/types/project/compressedPointData.cpp#L16-L42" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：compressedPointData.cpp</a></div>
+
+
+## 指定压缩点数据获取密钥对象
+
+1. 指定uint8\_t类型的ECC压缩点数据，调用[OH\_CryptoEcPoint\_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-key-h#oh_cryptoecpoint_create)，构造[OH\_CryptoEcPoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymkeyapi-oh-cryptoecpoint)对象，用于生成点数据。
+2. 调用[OH\_CryptoEcPoint\_Encode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-key-h#oh_cryptoecpoint_encode)，获取非压缩点数据。
+
+```
+#include "CryptoArchitectureKit/crypto_architecture_kit.h"
+
+OH_Crypto_ErrCode doTestEccPointCompressedToPoint()
+{
+    uint8_t pk[] = {
+        2, 143, 39, 57, 249, 145, 50, 63, 222, 35, 70, 178, 121, 202, 154, 21, 146, 129, 75, 76, 63, 8, 195, 157, 111,
+        40, 217, 215, 148, 120, 224, 205, 82
+    };
+    Crypto_DataBlob pkData = {pk, sizeof(pk)};
+    OH_CryptoEcPoint *point = nullptr;
+    OH_Crypto_ErrCode ret = OH_CryptoEcPoint_Create("NID_brainpoolP256r1", &pkData, &point);
+    if (ret != CRYPTO_SUCCESS) {
+        return ret;
+    }
+    Crypto_DataBlob returnPointBlobData = {0};
+    ret = OH_CryptoEcPoint_Encode(point, "UNCOMPRESSED", &returnPointBlobData);
+    if (ret != CRYPTO_SUCCESS) {
+        OH_CryptoEcPoint_Destroy(point);
+        return ret;
+    }
+    OH_Crypto_FreeDataBlob(&returnPointBlobData);
+    OH_CryptoEcPoint_Destroy(point);
+    return ret;
+}
+```
+
+
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/CryptoArchitectureKit/KeyGenerationConversion/ECCCompressPublicKeyFormatConversion/entry/src/main/cpp/types/project/getKeyObject.cpp#L16-L41" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：getKeyObject.cpp</a></div>

@@ -1,0 +1,9 @@
+---
+displayed_sidebar: appDevSidebar
+title: "开发准备"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-preparations
+---
+
+* **[申请账号权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions)**
+* **[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)**
+* **[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)**

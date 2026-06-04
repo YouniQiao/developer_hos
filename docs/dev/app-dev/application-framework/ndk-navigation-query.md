@@ -1,0 +1,105 @@
+---
+title: "使用导航类组件"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-navigation-query
+---
+
+NDK提供一系列[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture#navigation整体架构)和[页面路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing)状态查询接口，开发者可以通过[OH\_ArkUI\_GetNavDestinationName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationname)、[OH\_ArkUI\_GetNavDestinationParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationparam)、[OH\_ArkUI\_GetNavDestinationState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationstate)、[OH\_ArkUI\_GetNavigationId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavigationid)、[OH\_ArkUI\_GetNavDestinationIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationindex)等查询页面的状态、索引、名称等信息，并根据查询结果进行对应的操作，如显示不同的页面信息。
+
+本文提供页面状态查询开发指导，查询之前需要先接入ArkTS页面，具体请参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)。
+
+## 查询页面信息
+
+查询页面信息，需要先确保目标节点已作为子节点挂载到页面中，若节点未挂载则操作会失败，例如在[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)生命周期中查询不到对应信息。页面详细生命周期以及组件挂载生命周期参考[页面生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navdestination#页面生命周期)。开发者可以根据查询到的页面信息加载不同的页面组件。
+
+本示例仅展示核心功能代码，完整示例请参考[NDK使用页面查询接口示例](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NDKNavigation)。
+
+1. 查询当前页面名称。
+
+   使用[OH\_ArkUI\_GetNavDestinationName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationname)可以查询NavDestination页面名称。router页面名称可以通过[OH\_ArkUI\_GetRouterPageName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getrouterpagename)接口查询。
+
+   ```
+   // 获取页面名称
+   char pageName[NUM_50];
+   int32_t bufferLen = 0;
+   OH_ArkUI_GetNavDestinationName(node, pageName, NUM_50, &bufferLen);
+   ```
+
+   
+
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/NDKNavigation/entry/src/main/cpp/QueryNavigation.h#L82-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：QueryNavigation.h</a></div>
+
+2. 查询页面跳转参数。
+
+   使用[OH\_ArkUI\_GetNavDestinationParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationparam)可以查询[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)页面跳转参数。
+
+   ```
+   // 获取页面跳转参数
+   napi_value param = OH_ArkUI_GetNavDestinationParam(node);
+   napi_value nameVal = nullptr;
+   napi_get_named_property(env, param, "name", &nameVal);
+   size_t len = 0;
+   napi_get_value_string_utf8(env, nameVal, nullptr, 0, &len);
+   std::unique_ptr<char[]> viewName = std::make_unique<char[]>(len + 1);
+   napi_get_value_string_utf8(env, nameVal, viewName.get(), len + 1, &len);
+   ArkUI_NodeHandle targetNode = nullptr;
+   std::string view = viewName.get();
+   if (view == "QueryNavigation") {
+       InitNavigationNode(column, pageName);
+   } else if (view == "QueryRouter") {
+       InitRouterNode(column);
+   }
+   nativeApi->addChild(node, column);
+   ```
+
+   
+
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/NDKNavigation/entry/src/main/cpp/QueryNavigation.h#L88-L105" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：QueryNavigation.h</a></div>
+
+
+## 查询页面状态
+
+使用[OH\_ArkUI\_GetNavDestinationState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationstate)可以查询当前占位组件所属的NavDestination页面状态。router页面可以通过[OH\_ArkUI\_GetRouterPageState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getrouterpagestate)接口查询，根据查询结果进行对应的适配，如设置组件visible属性、视频播放状态。
+
+本示例仅展示核心功能代码，完整示例请参考[NDK使用页面查询接口示例](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NDKNavigation)。
+
+```
+ArkUI_NodeHandle targetNode = nullptr;
+OH_ArkUI_NodeUtils_GetAttachedNodeHandleById("navDestinationState", &targetNode);
+auto entry = NativeEntry::GetInstance();
+entry->ReportError(targetNode, "event clicked");
+ArkUI_NavDestinationState state;
+OH_ArkUI_GetNavDestinationState(targetNode, &state);
+if (state == NUM_8) {
+    entry->SetColor(targetNode, 0x80808080);
+} else if (state == NUM_9) {
+    entry->SetColor(targetNode, 0xFF000000);
+}
+```
+
+
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/NDKNavigation/entry/src/main/cpp/EntryModule.cpp#L70-L82" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryModule.cpp</a></div>
+
+
+## 查询页面栈信息
+
+使用[OH\_ArkUI\_GetNavDestinationIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationindex)可以查询当前占位组件所属NavDestination在栈中的位置。router页面状态可以通过[OH\_ArkUI\_GetRouterPageIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getrouterpageindex)接口查询。根据返回的页面栈信息，可在应用开发中实现DFX功能，例如性能监控与用户行为分析等参数的收集，用于数据上报和分析。
+
+本示例仅展示核心功能代码，完整示例请参考[NDK使用页面查询接口示例](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NDKNavigation)。
+
+```
+char navigationId[NUM_50];
+int32_t bufferLen = 0;
+OH_ArkUI_GetNavigationId(handle, navigationId, NUM_50, &bufferLen);
+
+char name[NUM_50];
+int32_t nameLen = OH_ArkUI_GetNavDestinationName(handle, name, NUM_50, &nameLen);
+
+int32_t index = -1;
+OH_ArkUI_GetNavDestinationIndex(handle, &index);
+OH_LOG_Print(LOG_APP, LOG_ERROR, 0xFF00, "NAPI",
+             "navigation id: %{public}s, name: %{public}s, index: %{public}d, error: %{public}s",
+             navigationId, name, index, info.c_str());
+```
+
+
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/NDKNavigation/entry/src/main/cpp/EntryModule.cpp#L88-L101" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryModule.cpp</a></div>
