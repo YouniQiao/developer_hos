@@ -1,7 +1,9 @@
 ---
 title: "SDK命令行工具简介"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # SDK命令行工具简介
 

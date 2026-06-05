@@ -1,7 +1,9 @@
 ---
 title: "混淆加固"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 混淆加固
 

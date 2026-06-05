@@ -4,6 +4,7 @@ title: "环境准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment
 ---
 
+
 * **[导入Sample时，提示连接Gitee超时](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-2)**
 * **[导入Sample时，提示SSL证书校验错误](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-3)**
 * **[下载HarmonyOS SDK时提示网络连接错误](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-4)**

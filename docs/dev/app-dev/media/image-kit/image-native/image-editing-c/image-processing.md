@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用ImageProcessing处理图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-processing
+format: md
 ---
+
 
 * **[图片缩放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-scaling)**
 * **[图片动态元数据生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-dynamic-metadata-generation)**

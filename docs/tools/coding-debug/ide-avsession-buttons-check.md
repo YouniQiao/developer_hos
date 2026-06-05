@@ -1,7 +1,9 @@
 ---
 title: "@correctness/avsession-buttons-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/avsession-buttons-check
 

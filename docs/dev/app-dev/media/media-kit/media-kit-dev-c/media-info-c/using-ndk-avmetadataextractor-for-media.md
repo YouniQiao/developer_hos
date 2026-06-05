@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVMetadataExtractor获取元数据(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avmetadataextractor-for-media
+format: md
 ---
+
 
 使用AVMetadataExtractor可以实现从原始媒体资源中获取元数据，本开发指导将以获取一个媒体资源的元数据作为示例，向开发者讲解AVMetadataExtractor元数据相关功能。
 

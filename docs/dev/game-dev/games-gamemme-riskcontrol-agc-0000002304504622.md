@@ -1,7 +1,9 @@
 ---
 title: "在AGC控制台人工送检"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-agc-0000002304504622
+format: md
 ---
+
 
 除自动送检方式外，游戏多媒体服务还提供了在AGC控制台进行人工送检的方式，支持手动批量上传文本消息聊天内容进行内容检测。
 

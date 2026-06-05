@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "查询深度冻结豁免名单"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-lockdown-exemption-apps
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为应用提供查询深度冻结豁免名单的能力。当
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getLockdownExemptionApps](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#getlockdownexemptionapps)(workspaceId?: number): Promise<string[]> | 查询深度冻结豁免名单。使用Promise异步回调。 |
+| [getLockdownExemptionApps](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#getlockdownexemptionapps)(workspaceId?: number): Promise\<string[]\> | 查询深度冻结豁免名单。使用Promise异步回调。 |
 
 ## 开发步骤
 

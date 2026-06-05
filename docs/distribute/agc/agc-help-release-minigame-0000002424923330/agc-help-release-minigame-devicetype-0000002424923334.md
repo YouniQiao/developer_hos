@@ -1,7 +1,9 @@
 ---
 title: "选择设备类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-devicetype-0000002424923334
+format: md
 ---
+
 
 请为小游戏选择发布设备，在小游戏成功上架至华为应用市场后，玩家可以在支持的设备上体验小游戏。
 

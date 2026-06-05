@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取Push Token"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -39,8 +41,8 @@ Push Token一般情况不会变化，仅下列场景会导致之前的Push Token
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicegettoken-1)(): Promise<string> | 以Promise形式获取Push Token。 |
-| [deleteToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicedeletetoken-1)(): Promise<void> | 以Promise形式删除Push Token。 |
+| [getToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicegettoken-1)(): Promise\<string\> | 以Promise形式获取Push Token。 |
+| [deleteToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicedeletetoken-1)(): Promise\<void\> | 以Promise形式删除Push Token。 |
 
 ## 获取Push Token
 

@@ -2,7 +2,9 @@
 title: "适配功能：充电状态&lt;BatteryCharging&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-batterycharging-0000002504275053
+format: md
 ---
+
 
 # 适配功能：充电状态&lt;BatteryCharging&gt;
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基本准备工作"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-basic-preparation
+format: md
 ---
+
 
 在开始应用开发前，需要先完成以下准备工作。
 

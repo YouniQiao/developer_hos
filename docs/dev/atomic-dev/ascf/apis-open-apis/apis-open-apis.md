@@ -1,7 +1,9 @@
 ---
 title: "开放接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-open-apis
+format: md
 ---
+
 
 * **[账号](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-account)**
 * **[授权](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization)**

@@ -1,7 +1,9 @@
 ---
 title: "属性动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-attribute
+format: md
 ---
+
 
 * **[属性动画概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-animation-overview)**
 * **[实现属性动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-animation-apis)**

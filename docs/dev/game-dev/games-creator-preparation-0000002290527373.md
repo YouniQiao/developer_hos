@@ -1,7 +1,9 @@
 ---
 title: "适配准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-creator-preparation-0000002290527373
+format: md
 ---
+
 
 ## 工具准备
 

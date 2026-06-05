@@ -1,7 +1,9 @@
 ---
 title: "分享"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-share-0000002351933669
+format: md
 ---
+
 
 开发者可以在快游戏中接入分享能力，从而借助用户的分享行为获取更多的曝光和流量。[系统分享](#section3416154174220)可以将内容通过手机中其他的应用进行分享，[第三方分享](#section6397525105613)可以将内容通过第三方平台（例如微信等）进行分享，[碰一碰分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share)/[隔空传送](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share)可以将内容通过碰一碰/隔空传送的方式进行分享。
 

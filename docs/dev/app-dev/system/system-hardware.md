@@ -1,7 +1,9 @@
 ---
 title: "硬件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-hardware
+format: md
 ---
+
 
 * **[Car Kit（车服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-kit-guide)**
 * **[Driver Development Kit（驱动开发服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driver-development-kit)**

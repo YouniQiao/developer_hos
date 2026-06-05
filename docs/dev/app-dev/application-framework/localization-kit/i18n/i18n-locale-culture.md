@@ -1,7 +1,9 @@
 ---
 title: "区域ID与文化习惯划分"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-locale-culture
+format: md
 ---
+
 
 ## 功能介绍
 

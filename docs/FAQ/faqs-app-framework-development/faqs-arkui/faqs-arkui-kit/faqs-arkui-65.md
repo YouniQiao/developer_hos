@@ -4,6 +4,7 @@ title: "SideBarContainer如何设置controlButton属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-65
 ---
 
+
 SideBarContainer组件提供侧边栏显示和隐藏功能。通过controlButton属性设置侧边栏控制按钮。参考代码如下：
 
 ```

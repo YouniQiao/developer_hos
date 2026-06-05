@@ -4,6 +4,7 @@ title: "Windows x86模拟器三方C/C++库使用限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-25
 ---
 
+
 x86模拟器支持已x86化的C/C++三方库调试运行，未x86化的三方库开发者可以参考[tpc\_c\_cplusplus](https://gitcode.com/openharmony-sig/tpc_c_cplusplus)。
 
 目前已经x86化的三方库如下：

@@ -2,7 +2,9 @@
 
 title: "打包测试"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 打包测试
 

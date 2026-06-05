@@ -2,7 +2,9 @@
 title: "预约有奖"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-reservation-0000001657694701
+format: md
 ---
+
 
 # 预约有奖
 

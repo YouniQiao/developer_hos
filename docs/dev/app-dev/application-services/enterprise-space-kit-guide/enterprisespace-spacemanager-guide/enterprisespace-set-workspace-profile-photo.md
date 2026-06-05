@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置工作空间资料照片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-workspace-profile-photo
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ Enterprise Space Kit为应用提供设置工作空间资料照片的能力。所
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setWorkspaceProfilePhoto](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspaceprofilephoto)(workspaceId: number, photo: string): Promise<void> | 设置工作空间资料照片。使用Promise异步回调。 |
+| [setWorkspaceProfilePhoto](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspaceprofilephoto)(workspaceId: number, photo: string): Promise\<void\> | 设置工作空间资料照片。使用Promise异步回调。 |
 
 ## 开发步骤
 

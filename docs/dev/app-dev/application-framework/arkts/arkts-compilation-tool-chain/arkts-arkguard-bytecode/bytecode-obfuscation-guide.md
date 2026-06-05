@@ -1,7 +1,9 @@
 ---
 title: "ArkGuard字节码混淆开启指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-guide
+format: md
 ---
+
 
 ![](./img/2c175c07.png)
 
@@ -35,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/byte
 
   
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTSCompilationToolchain/ArkGuardForBytecodeObfuscation/ArkGuardBytecodeObfuscation/entry/build-profile.json5#L34-L47" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：build-profile.json5</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTSCompilationToolchain/ArkGuardForBytecodeObfuscation/ArkGuardBytecodeObfuscation/entry/build-profile.json5#L34-L47" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：build-profile.json5</a></div>
 
 
   在files字段对应的混淆配置文件obfuscation-rules.txt中进行选项配置，需要手动修改，启用以下混淆项：
@@ -108,7 +110,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/byte
 
   
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTSCompilationToolchain/ArkGuardForBytecodeObfuscation/ArkGuardBytecodeObfuscation/entry/build-profile.json5#L35-L48" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：build-profile.json5</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTSCompilationToolchain/ArkGuardForBytecodeObfuscation/ArkGuardBytecodeObfuscation/entry/build-profile.json5#L35-L48" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：build-profile.json5</a></div>
 
 * obfuscation.txt
 
@@ -145,7 +147,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/byte
 
       
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTSCompilationToolchain/ArkGuardForBytecodeObfuscation/ArkGuardBytecodeObfuscation/entry/src/main/ets/bytecodeobfuscation/BytecodeObfuscation.ts#L233-L241" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：BytecodeObfuscation.ts</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTSCompilationToolchain/ArkGuardForBytecodeObfuscation/ArkGuardBytecodeObfuscation/entry/src/main/ets/bytecodeobfuscation/BytecodeObfuscation.ts#L233-L241" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：BytecodeObfuscation.ts</a></div>
 
 
       ```
@@ -159,7 +161,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/byte
 
       
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTSCompilationToolchain/ArkGuardForBytecodeObfuscation/ArkGuardBytecodeObfuscation/entry/src/main/ets/bytecodeobfuscation/BytecodeObfuscation.ts#L243-L250" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：BytecodeObfuscation.ts</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTSCompilationToolchain/ArkGuardForBytecodeObfuscation/ArkGuardBytecodeObfuscation/entry/src/main/ets/bytecodeobfuscation/BytecodeObfuscation.ts#L243-L250" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：BytecodeObfuscation.ts</a></div>
 
    2. 若代码中使用点语法访问未在ArkTS/TS/JS代码中定义的字段，比如访问native实现的so库，字段固定的json文件与数据库等场景：
 
@@ -172,13 +174,13 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/byte
 
    1. 若构建HSP模块，它会提供接口及其属性给其它模块调用，因此需要将对外接口使用-keep-global-name来保留、将对外暴露的class/interface等语法中的属性使用-keep-property-name保留。
    2. 若构建HAR模块并发布给其他模块使用的场景，要在HAR模块中的obfuscation-rules.txt文件中将对外接口使用-keep-global-name来保留、将对外暴露的class/interface等语法中的属性使用-keep-property-name保留。
-   3. 若在代码中引用so库的api，如import { napiA } from 'library.so'；需要使用-keep-global-name napiA保留so接口名称。
+   3. 若在代码中引用so库的api，如import \{ napiA \} from 'library.so'；需要使用-keep-global-name napiA保留so接口名称。
    4. 验证应用功能以及模块被依赖时的接口调用功能，排查遗漏的场景。若应用出现功能异常，可依据混淆后的报错栈，在模块的 **build/default/[...]/release/obfuscation/** 目录下查阅 **nameCache.json**（名称映射表）、**config.json**（混淆项与白名单）等产物，按[查看混淆效果](#查看混淆效果)对照定位源码行；并按需使用-keep-global-name、-keep-property-name等进行保留。
 4. 待上述选项应用适配成功后，开启-enable-filename-obfuscation选项。此选项开启后以下场景需要适配：
 
    1. 若代码中有动态import语句，如const path = './filePath'; import (path)，会出现文件引用失败的情况，需要使用-keep-file-name，filePath来保留这个文件名。
    2. 若应用中有描述路由表信息的[routerMap配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#routermap标签)，其中的pageSourceFile字段标记页面在模块的路径，需要使用-keep-file-name来保留这个路径。
-   3. 若代码中有传入ohmUrl进行页面跳转，如router.pushUrl({url: '@bundle:com.example.routerPage/Library/Index'})，使用-keep-file-name来保留这个路径。
+   3. 若代码中有传入ohmUrl进行页面跳转，如router.pushUrl(\{url: '@bundle:com.example.routerPage/Library/Index'\})，使用-keep-file-name来保留这个路径。
    4. 验证应用功能，排查遗漏的场景。若应用出现功能异常，且报错栈中的路径为混淆后的路径，可以在模块中的build/default/[...]/release/obfuscation/nameCache.json文件中查询到原始路径，进而找到源码文件。另外，[插件hstack](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-hstack)支持自动还原混淆后的报错栈。在定位到需要保留的路径后，使用-keep-file-name来保留此路径。
 
 ## 说明

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "宿主应用发起分享"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-map-creation
+format: md
 ---
+
 
 * **[宿主应用接入模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-mode)**
 * **[通过分享面板发起分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-mobilephone-app-share)**

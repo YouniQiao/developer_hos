@@ -1,7 +1,9 @@
 ---
 title: "dialog开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-dialog
+format: md
 ---
+
 
 dialog组件用于创建自定义弹窗，通常用来展示用户当前需要或用户必须关注的信息或操作。具体用法请参考[dialog API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-dialog)。
 

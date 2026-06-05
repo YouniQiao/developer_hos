@@ -1,7 +1,9 @@
 ---
 title: "UX测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-uxtest-0000002289534109
+format: md
 ---
+
 
 云测试提供应用或元服务在真机设备上的UX测试功能，支持检测的问题类别包括基础体验、系统特性适配、视觉风格、动效、大屏体验等。
 

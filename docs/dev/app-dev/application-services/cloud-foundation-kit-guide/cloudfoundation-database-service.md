@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "云数据库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-service
+format: md
 ---
+
 
 * **[新增对象类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-object)**
 * **[新增存储区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-zone)**

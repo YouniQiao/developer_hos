@@ -1,7 +1,9 @@
 ---
 title: "典型应用场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-scenario-0000002236492400
+format: md
 ---
+
 
 当您开通并使用了AGC云函数、云数据库、APMS等服务时，云监控可以帮助您监测这些服务的运行状况，主要在以下场景帮助您监控资源：
 

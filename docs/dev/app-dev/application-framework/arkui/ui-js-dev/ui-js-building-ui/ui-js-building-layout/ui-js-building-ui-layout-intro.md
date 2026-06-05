@@ -1,7 +1,9 @@
 ---
 title: "布局说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-intro
+format: md
 ---
+
 
 设备的基准宽度为720px（px为逻辑像素，非物理像素），实际显示效果会根据实际屏幕宽度进行缩放。
 

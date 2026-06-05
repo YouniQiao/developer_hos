@@ -1,7 +1,9 @@
 ---
 title: "按钮与选择"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-form-selection
+format: md
 ---
+
 
 * **[按钮与选择组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-forms-overview)**
 * **[按钮 (Button)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-button)**

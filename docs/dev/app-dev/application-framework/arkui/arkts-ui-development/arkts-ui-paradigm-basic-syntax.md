@@ -1,7 +1,9 @@
 ---
 title: "学习UI范式基本语法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-paradigm-basic-syntax
+format: md
 ---
+
 
 * **[基本语法概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-basic-syntax-overview)**
 * **[UI装饰器总览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-decorator-overview)**

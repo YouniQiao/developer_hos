@@ -2,7 +2,9 @@
 title: "基础人群定向（应用推广任务人群定向功能）"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-base-target-0000001328677542
+format: md
 ---
+
 # 基础人群定向（应用推广任务人群定向功能）
 
 ## 创建应用市场展示广告基础定向条件

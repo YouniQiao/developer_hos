@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "权限设置Button"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-permissiononsetting
+format: md
 ---
+
 
 ## 场景介绍
 

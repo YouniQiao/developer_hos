@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用内分发数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute
+format: md
 ---
+
 
 * **[展示数字商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-query)**
 * **[购买数字商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-purchase)**

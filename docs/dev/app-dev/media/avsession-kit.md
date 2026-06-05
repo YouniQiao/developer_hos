@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AVSession Kit（音视频播控服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-kit
+format: md
 ---
+
 
 * **[AVSession Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-overview)**
 * **[本地媒体会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/local-avsession)**

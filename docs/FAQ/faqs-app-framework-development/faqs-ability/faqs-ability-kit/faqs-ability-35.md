@@ -1,7 +1,9 @@
 ---
 title: "ExtensionAbility如何与主进程通信"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-35
+format: md
 ---
+
 
 实现步骤：
 

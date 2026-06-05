@@ -1,7 +1,9 @@
 ---
 title: "应用数据备份恢复"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-restore
+format: md
 ---
+
 
 * **[应用数据备份恢复概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-overview)**
 * **[应用接入数据备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension)**

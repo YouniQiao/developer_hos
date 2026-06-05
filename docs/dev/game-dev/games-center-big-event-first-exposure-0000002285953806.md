@@ -1,7 +1,9 @@
 ---
 title: "首曝"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-first-exposure-0000002285953806
+format: md
 ---
+
 
 首曝是指游戏首次向玩家发布PV、实机视频等内容。
 

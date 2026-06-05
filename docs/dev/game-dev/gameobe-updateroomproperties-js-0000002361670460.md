@@ -1,7 +1,9 @@
 ---
 title: "更新房间信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-updateroomproperties-js-0000002361670460
+format: md
 ---
+
 
 通过本章的指导开发，您可实现对房间的信息（如房间名称、房主ID、房间是否私有化、自定义房间属性、房间是否锁定等）进行更新操作。
 

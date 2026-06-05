@@ -1,7 +1,9 @@
 ---
 title: "如何通过resourceManager获取rawFile路径下的文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-111
+format: md
 ---
+
 
 **解决方案**
 

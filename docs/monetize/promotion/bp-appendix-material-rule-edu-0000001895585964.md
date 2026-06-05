@@ -2,7 +2,9 @@
 title: "教育"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-edu-0000001895585964
+format: md
 ---
+
 # 教育
 
 ## 法律法规审核规范

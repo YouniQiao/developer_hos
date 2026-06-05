@@ -1,7 +1,9 @@
 ---
 title: "应用接入快捷栏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/desktop-quickbar-extension-guide
+format: md
 ---
+
 
 从6.0.2(22)开始，支持应用接入快捷栏。
 
@@ -27,18 +29,18 @@ Desktop Extension Kit相关API仅在2in1设备上生效。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getCustomCategories](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagergetcustomcategories)(context: common.Context): Promise<CustomCategory[]> | 获取所有在快捷栏菜单定义的分组。 |
-| [addCustomCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanageraddcustomcategory)(context: common.Context, categoryName: string): Promise<CustomCategory> | 添加快捷栏菜单分组。 |
-| [updateCustomCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerupdatecustomcategory)(context: common.Context, category: CustomCategory): Promise<void> | 更新快捷栏菜单分组。 |
-| [deleteCustomCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerdeletecustomcategory)(context: common.Context, categoryId: number): Promise<void> | 删除快捷栏菜单分组。 |
-| [getTasksFromCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagergettasksfromcategory)(context: common.Context, categoryId: number): Promise<QuickTask[]> | 获取某个快捷栏菜单的分组下的所有任务。 |
-| [addQuickTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanageraddquicktask)(context: common.Context, categoryId: number, taskInfo: QuickTaskInfo): Promise<QuickTask> | 添加快捷栏菜单任务。 |
-| [updateQuickTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerupdatequicktask)(context: common.Context, task: QuickTask): Promise<void> | 更新快捷栏菜单任务。 |
-| [deleteQuickTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerdeletequicktask)(context: common.Context, taskId: number): Promise<void> | 删除快捷栏菜单任务。 |
-| [addQuickBarGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanageraddquickbargroup)(context: common.Context, group: QuickBarGroup): Promise<void> | 增加快捷栏分组。 |
-| [deleteQuickBarGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerdeletequickbargroup)(context: common.Context, groupKey: string): Promise<void> | 删除快捷栏分组。 |
-| [getQuickBarGroups](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagergetquickbargroups)(context: common.Context): Promise<QuickBarGroup[]> | 获取所有分组信息。 |
-| [setWindowToGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagersetwindowtogroup)(context: common.Context, windowid:string, groupKey?: string): Promise<void> | 给分组增加窗口。 |
+| [getCustomCategories](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagergetcustomcategories)(context: common.Context): Promise\<CustomCategory[]\> | 获取所有在快捷栏菜单定义的分组。 |
+| [addCustomCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanageraddcustomcategory)(context: common.Context, categoryName: string): Promise\<CustomCategory\> | 添加快捷栏菜单分组。 |
+| [updateCustomCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerupdatecustomcategory)(context: common.Context, category: CustomCategory): Promise\<void\> | 更新快捷栏菜单分组。 |
+| [deleteCustomCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerdeletecustomcategory)(context: common.Context, categoryId: number): Promise\<void\> | 删除快捷栏菜单分组。 |
+| [getTasksFromCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagergettasksfromcategory)(context: common.Context, categoryId: number): Promise\<QuickTask[]\> | 获取某个快捷栏菜单的分组下的所有任务。 |
+| [addQuickTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanageraddquicktask)(context: common.Context, categoryId: number, taskInfo: QuickTaskInfo): Promise\<QuickTask\> | 添加快捷栏菜单任务。 |
+| [updateQuickTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerupdatequicktask)(context: common.Context, task: QuickTask): Promise\<void\> | 更新快捷栏菜单任务。 |
+| [deleteQuickTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerdeletequicktask)(context: common.Context, taskId: number): Promise\<void\> | 删除快捷栏菜单任务。 |
+| [addQuickBarGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanageraddquickbargroup)(context: common.Context, group: QuickBarGroup): Promise\<void\> | 增加快捷栏分组。 |
+| [deleteQuickBarGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagerdeletequickbargroup)(context: common.Context, groupKey: string): Promise\<void\> | 删除快捷栏分组。 |
+| [getQuickBarGroups](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagergetquickbargroups)(context: common.Context): Promise\<QuickBarGroup[]\> | 获取所有分组信息。 |
+| [setWindowToGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/desktop-quickbar-extension-manager#quickbarmanagersetwindowtogroup)(context: common.Context, windowid:string, groupKey?: string): Promise\<void\> | 给分组增加窗口。 |
 
 ## 快捷栏菜单分组
 

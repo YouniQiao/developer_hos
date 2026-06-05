@@ -2,7 +2,9 @@
 title: "查询定向字典"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-targeting7-0000001286343134
+format: md
 ---
+
 # 查询定向字典
 
 您通过本接口可以查询定向字典。

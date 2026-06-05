@@ -4,6 +4,7 @@ title: "ArkTS实现多Worker实例"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-103
 ---
 
+
 实现多Worker并进行消息传递，使用registerGlobalCallObject方法传递对象及调用函数，获取缓冲区。注意：callGlobalCallObjectMethod方法在主线程中运行。
 
 1. 在MultipleWorkerInstances.ets文件中调用自定义函数。

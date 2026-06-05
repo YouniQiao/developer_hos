@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "省市区选择器Input"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-input-zone-selectors
+format: md
 ---
+
 
 ## 场景介绍
 

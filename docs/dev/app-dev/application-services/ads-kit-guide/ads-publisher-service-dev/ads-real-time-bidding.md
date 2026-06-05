@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "实时竞价"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-real-time-bidding
+format: md
 ---
+
 
 ## 场景介绍
 

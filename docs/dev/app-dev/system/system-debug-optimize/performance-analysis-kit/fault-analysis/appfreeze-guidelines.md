@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AppFreeze（应用冻屏）检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines
+format: md
 ---
+
 
 ## 简介
 

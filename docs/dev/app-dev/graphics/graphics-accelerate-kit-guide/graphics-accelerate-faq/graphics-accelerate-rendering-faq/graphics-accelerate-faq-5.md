@@ -1,7 +1,9 @@
 ---
 title: "集成ABR后，从游戏引擎获取到的Native纹理内容为空，该如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-5
+format: md
 ---
+
 
 **现象描述**
 

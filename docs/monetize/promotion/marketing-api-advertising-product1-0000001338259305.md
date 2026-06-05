@@ -2,7 +2,9 @@
 title: "创建推广产品"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-product1-0000001338259305
+format: md
 ---
+
 # 创建推广产品
 
 您通过本接口可以推广产品。
@@ -45,7 +47,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | dest\_url | string | 是 | 落地页地址，最长2048，以```https://开头和http://开`头``。  当推广产品用于创建ads商品广告（campaign\_type=CAMPAIGN\_TYPE\_SHOPPING时）时，该字段可填写 \{targetUrlMobile\}。 |
+  | dest\_url | string | 是 | 落地页地址，最长2048，以```https://开头和http://开`头``。  当推广产品用于创建ads商品广告（campaign\_type=CAMPAIGN\_TYPE\_SHOPPING时）时，该字段可填写 \\{targetUrlMobile\\}。 |
 
   - <strong>请求示例</strong>
 

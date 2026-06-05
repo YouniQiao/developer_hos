@@ -2,7 +2,9 @@
 title: "华为账号中心"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/huawei-account-center-0000001227791701
+format: md
 ---
+
 # 华为账号中心
 
 支持查看、修改华为账号信息，具体可参考[华为账号信息设置](https://developer.huawei.com/consumer/cn/doc/start/account-management-0000001052865467)。

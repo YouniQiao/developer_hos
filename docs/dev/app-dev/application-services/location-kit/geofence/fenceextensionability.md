@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "云侧围栏开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fenceextensionability
+format: md
 ---
+
 
 ## 概述
 
@@ -48,7 +50,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fenc
 
 | 接口 | 描述 |
 | --- | --- |
-| onFenceStatusChange(transition: geoLocationManager.GeofenceTransition, additions: Record<string, string>): void | 接收系统通知的地理围栏事件，根据围栏事件类型和数据进行相应处理。 |
+| onFenceStatusChange(transition: geoLocationManager.GeofenceTransition, additions: Record\<string, string\>): void | 接收系统通知的地理围栏事件，根据围栏事件类型和数据进行相应处理。 |
 | onDestroy(): void | 接收FenceExtensionAbility的销毁事件并处理，会在FenceExtensionAbility销毁前回调。 |
 
 ## 开发步骤

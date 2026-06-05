@@ -1,7 +1,9 @@
 ---
 title: "测试屏幕朗读功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-screen-reader
+format: md
 ---
+
 
 屏幕朗读可以使用户无需查看屏幕即可与设备进行互动，视障用户在使用设备时可能需要依赖屏幕朗读来获取更便捷的操作体验。
 

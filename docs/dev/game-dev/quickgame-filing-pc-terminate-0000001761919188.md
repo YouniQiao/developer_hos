@@ -1,7 +1,9 @@
 ---
 title: "注销核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-terminate-0000001761919188
+format: md
 ---
+
 
 ## 注销主体
 

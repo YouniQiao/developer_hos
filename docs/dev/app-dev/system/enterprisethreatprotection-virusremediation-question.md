@@ -1,7 +1,9 @@
 ---
 title: "Enterprise Threat Protection Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-question
+format: md
 ---
+
 
 ## Enterprise Threat Protection Kit权限获取失败
 

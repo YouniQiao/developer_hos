@@ -1,7 +1,9 @@
 ---
 title: "ArkTS卡片界面开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-page-overview
+format: md
 ---
+
 
 ArkTS卡片开发采用通用[ArkTS语言](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/learning-arkts)，开发者可以使用[ArkTS声明式开发范式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-development-overview)开发ArkTS卡片页面。
 

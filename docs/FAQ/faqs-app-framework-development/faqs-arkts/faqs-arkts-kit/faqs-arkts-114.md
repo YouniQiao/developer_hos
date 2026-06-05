@@ -4,6 +4,7 @@ title: "混淆后的映射文件具体在哪个路径下"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-114
 ---
 
+
 1. obfuscation.txt：打包后放置混淆规则的 consumer-rules.txt 文件。
 
    目录：build/default/intermediates/obfuscation/default/obfuscation.txt

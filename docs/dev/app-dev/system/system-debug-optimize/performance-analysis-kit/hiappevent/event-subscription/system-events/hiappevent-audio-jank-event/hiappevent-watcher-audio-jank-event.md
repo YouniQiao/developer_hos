@@ -1,7 +1,9 @@
 ---
 title: "音频卡顿事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-audio-jank-event
+format: md
 ---
+
 
 ## 简介
 

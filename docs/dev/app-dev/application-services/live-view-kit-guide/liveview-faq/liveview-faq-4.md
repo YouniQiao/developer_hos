@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "关于实况窗模板使用的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-4
+format: md
 ---
+
 
 ## 采用进度可视化模板并且indicatorType为INDICATOR\_TYPE\_OVERLAY时，图片较宽，无法完全覆盖进度条
 

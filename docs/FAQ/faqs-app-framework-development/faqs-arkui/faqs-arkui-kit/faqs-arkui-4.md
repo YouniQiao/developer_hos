@@ -4,6 +4,7 @@ title: "如何在长按手势回调方法里获取手指触摸点的坐标"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-4
 ---
 
+
 使用[组合手势](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-combined-gestures)的顺序识别，当长按手势事件结束后触发拖动手势事件。在手势回调方法里获取event（[GestureEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)类型）的fingerList（[FingerInfo[]](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#fingerinfo8对象说明)类型），获取到localX和localY数值，表示相对于当前组件元素原始区域左上角的坐标位置。可参考如下代码：
 
 ```

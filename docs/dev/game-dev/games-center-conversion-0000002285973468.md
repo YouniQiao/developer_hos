@@ -1,7 +1,9 @@
 ---
 title: "用户支付价格（含税）换算原则"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-conversion-0000002285973468
+format: md
 ---
+
 
 * 如果您设置的是“含税”类型的“汇率换算基准价格”，则用户支付价格（含税）保持现有计算规则：
   + 用户支付价格（含税）=汇率换算基准价格（含税）\*汇率

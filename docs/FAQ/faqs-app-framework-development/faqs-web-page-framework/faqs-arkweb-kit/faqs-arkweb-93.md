@@ -4,6 +4,7 @@ title: "Web组件的内存占用与内存回收机制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-93
 ---
 
+
 * web组件的内存占用：
 
   由于web组件是一个重量级组件，属于基础平台，web组件依赖的so文件（Shared Object）有约200M，web组件在加载页面过程中会进行html、JS、CSS解析、DOM树生成、渲染、合成、送显、音视频播放等多方面的工作，

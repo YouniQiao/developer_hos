@@ -4,6 +4,7 @@ title: "编译报错“The 'tag' keyword is not allowed for 'version' at 'xxx/oh
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-149
 ---
 
+
 **错误描述**
 
 oh-package.json5文件中的version字段不能包含tag标签。

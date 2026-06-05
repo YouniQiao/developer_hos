@@ -4,6 +4,7 @@ title: "预览报错“Node service error detected.Reinstall DevEco Studio to fi
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-5
 ---
 
+
 **问题现象**
 
 预览启动失败，PreviewerLog窗口显示错误信息：“Node service error detected.Reinstall DevEco Studio to fix the error.”。

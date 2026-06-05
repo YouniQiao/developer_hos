@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Push Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq
+format: md
 ---
+
 
 * **[如何处理推送消息时遇到的问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-1)**
 * **[关于云侧接口推送成功但设备收不到推送消息的问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-2)**

@@ -4,6 +4,7 @@ title: "如何自定义Video组件控制栏样式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-97
 ---
 
+
 1. 通过设置属性controls为false关闭默认控制栏。
 2. 设置Video组件的controller。
 3. 通过ArkTS实现自定义的控制栏，并通过VideoController控制视频播放。

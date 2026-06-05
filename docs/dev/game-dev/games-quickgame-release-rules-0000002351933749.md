@@ -2,7 +2,9 @@
 title: "上架前自检"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-release-rules-0000002351933749
 has_merged_cells: true
+format: md
 ---
+
 
 为减少提交上架审核被驳回的概率，请参考上架前自检CheckList进行自检，检查通过后，再前往AppGallery Connect上架快游戏。
 

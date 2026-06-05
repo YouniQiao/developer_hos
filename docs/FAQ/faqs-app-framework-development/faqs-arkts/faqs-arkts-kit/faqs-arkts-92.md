@@ -1,7 +1,9 @@
 ---
 title: "如何进行base64编码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-92
+format: md
 ---
+
 
 可使用util中的Base64Helper()方法进行base64编码，参考代码如下：
 

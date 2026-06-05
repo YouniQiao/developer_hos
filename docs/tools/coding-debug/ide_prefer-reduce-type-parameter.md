@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-reduce-type-parameter"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-reduce-type-parameter
 

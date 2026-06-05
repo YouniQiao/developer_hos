@@ -2,7 +2,9 @@
 title: "查询转化跟踪目标"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking1-0000001286023238
+format: md
 ---
+
 # 查询转化跟踪目标
 
 您通过本接口可以查询转化跟踪目标，需要向运营申请转化指标权限。
@@ -32,7 +34,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>必选</strong> | <strong>描述</strong> |
   | product\_unique\_flag | string | 否 | 推广产品的唯一标识，应用是包名，网页是URL链接 最大长度是2048位。 |
-  | effect\_name | string | 否 | 转换指标名称，最大长度255位，满足正则校验^[\w\u4e00-\u9fa5\_]\{1,20\}$。 |
+  | effect\_name | string | 否 | 转换指标名称，最大长度255位，满足正则校验^[\w\u4e00-\u9fa5\_]\\{1,20\\}$。 |
   | effect\_type | string | 否 | 转化目标，取值见[转化目标](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section125615641916)枚举值。 |
   | product\_type | string | 否 | 推广产品，取值见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)枚举值。 |
 

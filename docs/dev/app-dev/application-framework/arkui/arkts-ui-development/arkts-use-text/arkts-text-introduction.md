@@ -1,7 +1,9 @@
 ---
 title: "文本概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-introduction
+format: md
 ---
+
 
 文本包含用户输入的信息、呈现的文本内容和小图标，这些元素共同构建了用户与系统间的交互界面，提升了操作的便捷性与信息展示的直观性。
 

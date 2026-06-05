@@ -1,7 +1,9 @@
 ---
 title: "Native侧实现文件访问"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-native-side
+format: md
 ---
+
 
 ## 概述
 

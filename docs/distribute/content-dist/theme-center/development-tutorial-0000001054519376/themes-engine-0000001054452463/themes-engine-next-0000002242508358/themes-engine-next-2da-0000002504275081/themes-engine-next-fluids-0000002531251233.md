@@ -2,7 +2,9 @@
 title: "2D流体动效&lt;FluidsComponent&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-fluids-0000002531251233
+format: md
 ---
+
 
 # 2D流体动效&lt;FluidsComponent&gt;
 

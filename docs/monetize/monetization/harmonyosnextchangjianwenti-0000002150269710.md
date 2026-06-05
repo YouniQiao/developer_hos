@@ -2,7 +2,9 @@
 title: "常见问题"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/harmonyosnextchangjianwenti-0000002150269710
+format: md
 ---
+
 
 
 **Q1：****测试ID是什么？**

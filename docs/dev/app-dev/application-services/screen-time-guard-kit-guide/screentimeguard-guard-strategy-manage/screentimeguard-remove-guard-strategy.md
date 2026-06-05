@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "删除策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-remove-guard-strategy
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -29,7 +31,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [removeGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#removeguardstrategy)(strategyName: string): Promise<void> | 删除管控策略。 |
+| [removeGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#removeguardstrategy)(strategyName: string): Promise\<void\> | 删除管控策略。 |
 
 ## 开发前提
 

@@ -1,7 +1,9 @@
 ---
 title: "数字盾服务概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-overview
+format: md
 ---
+
 
 数字盾服务通过可信用户交互（TUI, Trusted User Interface）为金融应用的大额转账交易提供端到端安全防护，其主要利用了TUI以下核心功能：
 

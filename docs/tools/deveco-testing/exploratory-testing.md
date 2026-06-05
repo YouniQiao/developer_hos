@@ -1,7 +1,9 @@
 ---
 title: "探索测试"
 displayed_sidebar: devecoTestingSidebar
+format: md
 ---
+
 
 # 探索测试
 

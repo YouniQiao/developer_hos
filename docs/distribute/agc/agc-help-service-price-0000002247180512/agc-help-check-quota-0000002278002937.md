@@ -1,7 +1,9 @@
 ---
 title: "查看免费配额的使用情况"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-check-quota-0000002278002937
+format: md
 ---
+
 
 免费试用时，您可以在AppGallery Connect查询免费配额的使用情况，避免因配额用尽导致业务中断。
 

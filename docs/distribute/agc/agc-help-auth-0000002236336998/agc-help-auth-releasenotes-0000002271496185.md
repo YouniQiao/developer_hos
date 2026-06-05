@@ -1,7 +1,9 @@
 ---
 title: "SDK版本更新说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-releasenotes-0000002271496185
+format: md
 ---
+
 
 | 版本号 | 发布时间 | 更新说明 |
 | --- | --- | --- |

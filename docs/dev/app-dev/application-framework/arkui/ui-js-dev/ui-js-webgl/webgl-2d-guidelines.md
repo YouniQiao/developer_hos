@@ -1,7 +1,9 @@
 ---
 title: "使用WebGL绘制图形"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/webgl-2d-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 

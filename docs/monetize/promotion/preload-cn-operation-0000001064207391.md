@@ -2,7 +2,9 @@
 title: "预装操作指南"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/preload-cn-operation-0000001064207391
+format: md
 ---
+
 # 预装操作指南
 
 ## 1.注册-认证开发者

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "小游戏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-preparation)**

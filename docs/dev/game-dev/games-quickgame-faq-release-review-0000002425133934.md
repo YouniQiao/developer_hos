@@ -1,7 +1,9 @@
 ---
 title: "上架审核"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-release-review-0000002425133934
+format: md
 ---
+
 
 ## 提交审核
 

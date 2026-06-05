@@ -4,6 +4,7 @@ title: "hilog日志导致应用性能异常如何定位优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-63
 ---
 
+
 如果发现hilog导致应用性能异常，一般有三个原因：
 
 **原因一**
@@ -18,7 +19,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 日志打印参数初始化耗时长。
 
-例如存在日志接口入参调用函数代码: hilog.debug(0xd010, 'testTag', 'map info: %{public}s', mapToJson(this.paramsMap)), 这行日志打印代码中，需要先执行mapToJson(this.paramsMap)获取日志参数字符串，此函数可能有耗时操作，从而使hilog.debug接口耗时变长。
+例如存在日志接口入参调用函数代码: hilog.debug(0xd010, 'testTag', 'map info: %\{public\}s', mapToJson(this.paramsMap)), 这行日志打印代码中，需要先执行mapToJson(this.paramsMap)获取日志参数字符串，此函数可能有耗时操作，从而使hilog.debug接口耗时变长。
 
 **解决方法**
 

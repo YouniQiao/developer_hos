@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取企业应用访问令牌"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-access-token
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为企业应用提供获取企业应用访问令牌的能力
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getAccessToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#getaccesstoken)(businessParams: Record<string, string>): Promise<Uint8Array> | 获取企业应用令牌并返回结果。使用Promise异步回调。 |
+| [getAccessToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#getaccesstoken)(businessParams: Record\<string, string\>): Promise\<Uint8Array\> | 获取企业应用令牌并返回结果。使用Promise异步回调。 |
 
 ## 开发步骤
 

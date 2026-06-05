@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/default-param-last"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/default-param-last
 

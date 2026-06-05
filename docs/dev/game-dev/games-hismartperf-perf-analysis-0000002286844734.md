@@ -1,7 +1,9 @@
 ---
 title: "性能分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-perf-analysis-0000002286844734
+format: md
 ---
+
 
 ## CPU Counter统计
 

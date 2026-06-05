@@ -1,7 +1,9 @@
 ---
 title: "更新个性化设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-items-pers-update
+format: md
 ---
+
 
 对于已通过审核、个性化设置状态为“已上架”的个性化设置，开发者可进行更新个性化设置的操作。
 

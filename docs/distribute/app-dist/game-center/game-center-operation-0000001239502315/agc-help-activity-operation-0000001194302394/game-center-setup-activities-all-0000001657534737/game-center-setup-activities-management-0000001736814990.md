@@ -2,7 +2,9 @@
 title: "管理已创建活动"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-management-0000001736814990
+format: md
 ---
+
 
 # 管理已创建活动
 

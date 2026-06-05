@@ -2,7 +2,9 @@
 title: "介绍"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-introduction-0000002429810857
+format: md
 ---
+
 
 # 介绍
 

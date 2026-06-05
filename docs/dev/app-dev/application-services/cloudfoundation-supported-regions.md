@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "支持的国家/地区"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-supported-regions
+format: md
 ---
+
 
 * Phone、Tablet、PC/2in1、TV设备仅支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。
 * Wearable设备支持以下国家/地区。

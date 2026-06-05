@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/space-before-function-paren"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/space-before-function-paren
 

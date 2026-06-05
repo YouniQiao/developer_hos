@@ -1,7 +1,9 @@
 ---
 title: "Launch模板基本操作"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Launch模板基本操作
 

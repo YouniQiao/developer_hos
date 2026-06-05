@@ -1,7 +1,9 @@
 ---
 title: "Content Embed Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-faq
+format: md
 ---
+
 
 ## 如何根据需求选择链接或嵌入模式来创建OE文档
 

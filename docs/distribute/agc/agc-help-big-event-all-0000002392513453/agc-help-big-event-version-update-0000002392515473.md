@@ -1,7 +1,9 @@
 ---
 title: "大版本更新"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-version-update-0000002392515473
+format: md
 ---
+
 
 大版本更新是指已上架游戏的重要更新版本，如上线新玩法、新地图等。
 

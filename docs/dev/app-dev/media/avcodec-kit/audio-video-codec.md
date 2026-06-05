@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音视频编解码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-codec
+format: md
 ---
+
 
 * **[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)**
 * **[音频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-encoding)**

@@ -2,7 +2,9 @@
 title: "AppsFlyer"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-appsflyer-0000001328357950
+format: md
 ---
+
 # AppsFlyer
 
 ## 概述

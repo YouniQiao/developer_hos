@@ -1,7 +1,9 @@
 ---
 title: "界面布局"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 界面布局
 

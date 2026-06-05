@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "pdfService能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfservice-implements
+format: md
 ---
+
 
 * **[打开和保存PDF文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-open-document)**
 * **[添加、删除PDF页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-delete-page)**

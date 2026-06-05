@@ -2,7 +2,9 @@
 title: "编辑计划"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-campaign3-0000001338495013
+format: md
 ---
+
 # 编辑计划
 
 您通过本接口可以编辑计划状态、计划名称、计划日预算。

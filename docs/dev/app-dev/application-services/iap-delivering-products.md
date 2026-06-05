@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "权益发放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-products
+format: md
 ---
+
 
 ## 场景介绍
 

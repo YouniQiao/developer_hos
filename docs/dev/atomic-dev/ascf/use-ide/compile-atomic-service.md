@@ -1,7 +1,9 @@
 ---
 title: "编译元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/compile-atomic-service
+format: md
 ---
+
 
 开发者点击右上角运行按钮，就可以自动编译运行元服务。重新构建也会重新编译元服务。
 

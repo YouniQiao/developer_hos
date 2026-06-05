@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ArkGraphics 3D（方舟3D图形）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-3d
+format: md
 ---
+
 
 * **[ArkGraphics 3D简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-overview)**
 * **[ArkGraphics 3D场景搭建以及管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-scene)**

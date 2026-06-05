@@ -2,7 +2,9 @@
 title: "投放推荐任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-recommend-0000001328517618
+format: md
 ---
+
 # 投放推荐任务
 
 ## 概述

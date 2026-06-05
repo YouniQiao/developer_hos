@@ -2,7 +2,9 @@
 title: 设计原则
 sidebar_label: 设计原则
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-principles-0000001957023989
+format: md
 ---
+
 # 设计原则
 
 ### 折叠屏形态

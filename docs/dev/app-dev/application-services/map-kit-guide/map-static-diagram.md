@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "静态图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-static-diagram
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,8 +21,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [StaticMapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-staticmap#staticmapoptions) | 用于描述静态图属性。 |
-| [getMapImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-staticmap#getmapimage)(options: [StaticMapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-staticmap#staticmapoptions)): Promise<[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)> | 根据提供的参数创建静态图。 |
-| [getMapImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-staticmap#getmapimage-1)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), options: [StaticMapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-staticmap#staticmapoptions)): Promise<[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)> | 根据提供的参数创建静态图。支持上传Context上下文。 |
+| [getMapImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-staticmap#getmapimage)(options: [StaticMapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-staticmap#staticmapoptions)): Promise[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 根据提供的参数创建静态图。 |
+| [getMapImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-staticmap#getmapimage-1)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), options: [StaticMapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-staticmap#staticmapoptions)): Promise[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 根据提供的参数创建静态图。支持上传Context上下文。 |
 
 ## 开发步骤
 

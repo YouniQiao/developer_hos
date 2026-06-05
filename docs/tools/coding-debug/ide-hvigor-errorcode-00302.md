@@ -1,7 +1,9 @@
 ---
 title: "脚本错误码"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 脚本错误码
 

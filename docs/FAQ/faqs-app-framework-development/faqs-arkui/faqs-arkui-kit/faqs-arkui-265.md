@@ -1,7 +1,9 @@
 ---
 title: "如何实现点击输入框时会拉起软键盘，点击Button时软键盘关闭"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-265
+format: md
 ---
+
 
 可以通过调用输入法服务 @kit.IMEKit 的 stopInputSession()方法来隐藏软键盘。示例代码如下：
 

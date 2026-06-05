@@ -4,6 +4,7 @@ title: "ArkTS是否支持解构"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-80
 ---
 
+
 ArkTS是静态类型语言，不支持解构。解构是基于结构兼容性的动态特性，要求解构声明中的名称与解构对象的属性名称一致。
 
 * 不支持解构赋值：ArkTS不支持解构赋值，可使用其他方法替代，如使用临时变量。

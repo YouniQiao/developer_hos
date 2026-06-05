@@ -1,7 +1,9 @@
 ---
 title: "FAQ"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-faq-0000002254916526
+format: md
 ---
+
 
 #### 云调试是否收费？收费策略是什么？
 

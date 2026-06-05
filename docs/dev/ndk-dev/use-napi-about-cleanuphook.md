@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API接口注册和使用环境清理钩子"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-cleanuphook
+format: md
 ---
+
 
 ## 简介
 

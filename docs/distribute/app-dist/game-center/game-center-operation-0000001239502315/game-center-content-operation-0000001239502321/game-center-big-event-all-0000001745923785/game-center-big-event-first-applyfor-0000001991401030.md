@@ -2,7 +2,9 @@
 title: "首发"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-big-event-first-applyfor-0000001991401030
+format: md
 ---
+
 
 # 首发
 

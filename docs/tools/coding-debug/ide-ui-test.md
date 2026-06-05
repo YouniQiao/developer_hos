@@ -1,7 +1,9 @@
 ---
 title: "黑盒覆盖率测试"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 黑盒覆盖率测试
 
@@ -175,7 +177,7 @@ coverage-filter.json5文件包含以下参数。
   + 对于DevEco Studio的覆盖率测试引擎来说，只会统计方法内的语句，方法外的语句都不会被统计覆盖率。
     - 方法内，如果某行存在可执行代码，则这一整行会被视为可执行代码行（+1）。
     - 方法内，如果某行只包含标点符号<strong>&#123;</strong>，会被视为可执行行（+1）。
-    - 方法内，如果某行只包含标点符号<strong>}</strong>、<strong>})</strong> 或<strong>});</strong> ，会被视为非可执行行（+0）。
+    - 方法内，如果某行只包含标点符号<strong>\}</strong>、<strong>\})</strong> 或<strong>\});</strong> ，会被视为非可执行行（+0）。
 
     ![](./img/note_3.0-zh-cn.png)
 

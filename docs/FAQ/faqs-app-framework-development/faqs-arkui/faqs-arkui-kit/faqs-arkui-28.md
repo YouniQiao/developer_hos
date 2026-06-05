@@ -4,6 +4,7 @@ title: "如何设置分组列表的圆角和间距"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-28
 ---
 
+
 通过[ListItemGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-listitemgroup)中的ListItemGroupStyle设置分组列表的圆角，List的[space](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#接口)设置间距。可参考如下代码：
 
 ```

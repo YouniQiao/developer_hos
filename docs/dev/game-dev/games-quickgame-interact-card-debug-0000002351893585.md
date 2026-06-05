@@ -1,7 +1,9 @@
 ---
 title: "打包测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-interact-card-debug-0000002351893585
+format: md
 ---
+
 
 ## 准备工作
 

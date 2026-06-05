@@ -4,6 +4,7 @@ title: "是否支持开发者自行管理线程数量"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-69
 ---
 
+
 ArkTS 侧不支持，而 Native 侧没有限制。
 
 **线程上限：**

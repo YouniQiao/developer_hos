@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Function Flow Runtime任务伙伴(C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-job-partner-cpp
+format: md
 ---
+
 
 ## 概述
 

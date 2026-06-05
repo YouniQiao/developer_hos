@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ABR功能开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-abr
+format: md
 ---
+
 
 ## 业务流程
 

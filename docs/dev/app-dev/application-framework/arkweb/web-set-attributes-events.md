@@ -1,7 +1,9 @@
 ---
 title: "设置基本属性和事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-set-attributes-events
+format: md
 ---
+
 
 * **[User-Agent开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-default-useragent)**
 * **[管理Cookie及数据存储](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-cookie-and-data-storage-mgmt)**

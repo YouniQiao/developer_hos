@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/adjacent-overload-signatures"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/adjacent-overload-signatures
 

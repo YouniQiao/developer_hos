@@ -1,7 +1,9 @@
 ---
 title: "画布"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-canvas
+format: md
 ---
+
 
 canvas组件提供了绘制界面，开发者可以在上面任意绘制。具体步骤如下：
 

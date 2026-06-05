@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "下载云侧文件至本地"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-download-file
+format: md
 ---
+
 
 文件上传至云侧后，开发者可以将云侧文件下载到本地设备中。
 

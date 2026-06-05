@@ -4,6 +4,7 @@ title: "如何查询应用当前CPU占用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-14
 ---
 
+
 目前有两种方式查询当前CPU占用：
 
 在代码中查询：

@@ -1,7 +1,9 @@
 ---
 title: "游戏侵权投诉方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-infringement-complaint-0000002320764101
+format: md
 ---
+
 
 在华为应用市场/游戏中心上架的游戏均是由个人开发者或企业开发者提供的，为了保护您的版权、隐私、商标、专利等合法权益，华为应用市场制定侵权投诉通知和反通知方案，具体流程如下：
 

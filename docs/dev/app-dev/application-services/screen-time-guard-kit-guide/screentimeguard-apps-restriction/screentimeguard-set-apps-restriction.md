@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置应用访问限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-set-apps-restriction
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -23,7 +25,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setAppsRestriction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#setappsrestriction)(appInfo: [AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo), restrictionType: [RestrictionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#restrictiontype)): Promise<void> | 根据传入的应用token数组和限制类型（禁用/允许清单），确定是否限制对应应用的访问。 |
+| [setAppsRestriction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#setappsrestriction)(appInfo: [AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo), restrictionType: [RestrictionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#restrictiontype)): Promise\<void\> | 根据传入的应用token数组和限制类型（禁用/允许清单），确定是否限制对应应用的访问。 |
 
 ![](./img/1c7f5ea2.png)
 

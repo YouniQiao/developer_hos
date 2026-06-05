@@ -1,7 +1,9 @@
 ---
 title: "analyticsReportData"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-report-api-data-analyticsreportdata-0000002434328984
+format: md
 ---
+
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |

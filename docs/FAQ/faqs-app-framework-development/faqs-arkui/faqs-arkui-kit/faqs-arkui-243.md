@@ -4,6 +4,7 @@ title: "如何解决点击子组件模块区域会触发父组件的点击事件
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-243
 ---
 
+
 **问题现象**
 
 当enabled的值为false时，点击Button按钮会触发父组件的点击事件。

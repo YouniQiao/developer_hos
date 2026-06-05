@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-array-constructor"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-array-constructor
 

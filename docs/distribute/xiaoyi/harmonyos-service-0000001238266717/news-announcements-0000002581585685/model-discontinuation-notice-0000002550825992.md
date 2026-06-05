@@ -2,7 +2,9 @@
 title: "大模型下线通知"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/model-discontinuation-notice-0000002550825992
+format: md
 ---
+
 
 # 大模型下线通知
 

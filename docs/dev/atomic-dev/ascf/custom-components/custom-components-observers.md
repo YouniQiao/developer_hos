@@ -1,7 +1,9 @@
 ---
 title: "数据监听器observers"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-observers
+format: md
 ---
+
 
 数据监听器用于监听和响应任何属性和数据字段的变化。
 

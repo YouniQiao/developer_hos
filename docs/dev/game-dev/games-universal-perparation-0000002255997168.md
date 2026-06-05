@@ -1,7 +1,9 @@
 ---
 title: "适配准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-perparation-0000002255997168
+format: md
 ---
+
 
 ## 知识准备
 

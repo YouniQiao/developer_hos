@@ -1,7 +1,9 @@
 ---
 title: "项目json配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/project-json-config
+format: md
 ---
+
 
 通过项目配置文件可以配置编译行为，方便开发者使用编译工具。
 

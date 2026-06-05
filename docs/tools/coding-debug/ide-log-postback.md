@@ -1,7 +1,9 @@
 ---
 title: "日志上传"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 日志上传
 

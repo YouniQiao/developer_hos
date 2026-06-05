@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "关于通知消息被频控的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-5
+format: md
 ---
+
 
 为了给用户提供更好的消息通知体验，营造清朗网络空间，Push Kit设置了多条频控规则。若消息超出规则限制，超出的消息将会被**丢弃**，直到**次日恢复**。
 

@@ -1,7 +1,9 @@
 ---
 title: "如何实现汉字转拼音"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-11
+format: md
 ---
+
 
 可以通过Transliterator将汉字转成拼音。
 

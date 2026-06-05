@@ -4,6 +4,7 @@ title: "如何提高代码混淆率"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-89
 ---
 
+
 **问题描述**
 
 闭源库如何确保其闭源性和安全性？
@@ -18,4 +19,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 
 1：属性混淆、导出内容混淆和顶层作用域混淆等选项未开启。
 
-2：若上述主要混淆选项均已开启，但混淆比例仍较低，可能是因为定义的变量、属性名、函数名或方法名与系统白名单中的名称重叠，导致未被混淆。建议在名称中添加前缀或后缀，以避开系统白名单。系统白名单的缓存路径为：build/cache/{...}/release/obfuscation/systemApiCache.json。
+2：若上述主要混淆选项均已开启，但混淆比例仍较低，可能是因为定义的变量、属性名、函数名或方法名与系统白名单中的名称重叠，导致未被混淆。建议在名称中添加前缀或后缀，以避开系统白名单。系统白名单的缓存路径为：build/cache/\{...\}/release/obfuscation/systemApiCache.json。

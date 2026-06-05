@@ -1,7 +1,9 @@
 ---
 title: "解散队伍"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-dismissgroup-csharp-0000002361510664
+format: md
 ---
+
 
 当游戏未开始时，队长可以解散当前所处的队伍。
 

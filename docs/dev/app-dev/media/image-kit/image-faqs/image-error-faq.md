@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Image Kit异常处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-error-faq
+format: md
 ---
+
 
 [Image Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-overview)提供**ArkTS接口**和**C接口**。在遇到特殊情况时（例如输入参数无效、内存不足或函数无法处理请求等），系统会通过异常（ArkTS）或错误码（C接口）来反馈错误。开发者需要在应用层合理捕获和处理这些错误，以避免应用崩溃或出现未定义行为。在[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)中给出了Image Kit错误码对应的错误信息、可能原因、处理步骤。但由于部分场景引发错误的原因较为复杂，还需要开发者结合日志进一步定位。例如：401参数错误，可能是函数入参存在问题，也可能是由于缺少特定的文件读写权限导致无法访问或修改图片文件（Image Kit不感知权限，表现为传入文件异常的参数错误）。
 
@@ -14,8 +16,8 @@ ArkTS接口调用时，如果传入的参数不符合要求，或者底层执行
 
 | 接口形态 | 示例API | 处理方式 |
 | --- | --- | --- |
-| **Promise异步接口** | getImageInfo(): Promise<ImageInfo>、modifyImageProperty(key: PropertyKey, value: string): Promise<void> | 使用await+try/catch，或promise.catch捕获BusinessError。 |
-| **AsyncCallback异步接口** | getImageInfo(callback: AsyncCallback<ImageInfo>): void | 使用回调函数[AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback)的参数获取BusinessError。 |
+| **Promise异步接口** | getImageInfo(): Promise\<ImageInfo\>、modifyImageProperty(key: PropertyKey, value: string): Promise\<void\> | 使用await+try/catch，或promise.catch捕获BusinessError。 |
+| **AsyncCallback异步接口** | getImageInfo(callback: AsyncCallback\<ImageInfo\>): void | 使用回调函数[AsyncCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#asynccallback)的参数获取BusinessError。 |
 | **同步接口** | getImageInfoSync(): ImageInfo | 使用try/catch捕获同步BusinessError。 |
 
 1. AsyncCallback异步接口示例。

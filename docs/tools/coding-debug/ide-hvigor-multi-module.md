@@ -1,7 +1,9 @@
 ---
 title: "多模块管理"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 多模块管理
 

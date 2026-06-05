@@ -2,7 +2,9 @@
 title: "视图：路径解析&lt;PathUtil&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-pathutil-0000002504274953
+format: md
 ---
+
 
 # 视图：路径解析&lt;PathUtil&gt;
 

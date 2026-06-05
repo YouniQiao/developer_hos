@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "超级桌面应用接入分布式相机"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-superlauncher-camera-distributed
+format: md
 ---
+
 
 ## 场景介绍
 

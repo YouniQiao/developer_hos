@@ -4,6 +4,7 @@ title: "如何在Native侧访问应用包内Rawfile资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-22
 ---
 
+
 **解决措施**
 
 使用Native Rawfile接口操作Rawfile目录和文件，可以访问应用包内的资源。

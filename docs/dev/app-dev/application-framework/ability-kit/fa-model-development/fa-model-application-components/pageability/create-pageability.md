@@ -1,7 +1,9 @@
 ---
 title: "创建PageAbility"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-pageability
+format: md
 ---
+
 
 通过DevEco Studio开发平台创建PageAbility时，DevEco Studio会在app.js/app.ets中默认生成onCreate()和onDestroy()方法，其他方法需要开发者自行实现。接口说明参见[PageAbility的生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-lifecycle)，创建PageAbility示例如下：
 

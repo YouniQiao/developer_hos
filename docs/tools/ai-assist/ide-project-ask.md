@@ -1,7 +1,9 @@
 ---
 title: "工程问答"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 工程问答
 

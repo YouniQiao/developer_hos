@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "申请推送场景化消息权益"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right
+format: md
 ---
+
 
 ## 场景化消息权益简介
 

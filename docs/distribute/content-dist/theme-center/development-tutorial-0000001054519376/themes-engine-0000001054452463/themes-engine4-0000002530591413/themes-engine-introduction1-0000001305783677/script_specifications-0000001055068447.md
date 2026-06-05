@@ -2,7 +2,9 @@
 title: "脚本规范"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/script_specifications-0000001055068447
+format: md
 ---
+
 
 # 脚本规范
 

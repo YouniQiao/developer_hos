@@ -2,7 +2,9 @@
 title: 靠近发现
 sidebar_label: 靠近发现
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/i-connect-0000002354482789
+format: md
 ---
+
 # 靠近发现
 
 用户可通过设备靠近，进行设备间的连接或协助新设备快速启用。可发现设备范围包括华为终端设备，鸿蒙智联设备以及开源鸿蒙 (OH) 智能生态设备。

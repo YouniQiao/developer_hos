@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图像跟踪"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-image
+format: md
 ---
+
 
 * **[图像跟踪介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-image-track-conversion)**
 * **[图像跟踪（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-image-track)**

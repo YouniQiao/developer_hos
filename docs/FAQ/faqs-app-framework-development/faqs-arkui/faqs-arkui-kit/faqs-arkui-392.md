@@ -4,6 +4,7 @@ title: "如何实现加载svga动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-392
 ---
 
+
 **问题描述**
 
 在应用中存在多个页面会使用svga播放图片、动效、动画等。请问HarmonyOS怎么加载svga动画？

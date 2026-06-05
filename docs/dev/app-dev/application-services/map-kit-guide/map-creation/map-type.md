@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "切换地图类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-type
+format: md
 ---
+
 
 ## 场景介绍
 

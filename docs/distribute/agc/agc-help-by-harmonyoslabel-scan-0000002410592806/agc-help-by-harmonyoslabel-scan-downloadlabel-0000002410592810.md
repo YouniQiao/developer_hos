@@ -1,7 +1,9 @@
 ---
 title: "下载标签"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-scan-downloadlabel-0000002410592810
+format: md
 ---
+
 
 1. 在标签服务的“HarmonyOS标签”列表中，对已生效的扫一扫标签点击“查看”。
 

@@ -2,7 +2,9 @@
 title: "Huawei Analytics跟踪"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads_gongjujiance_hayy-0000001458624748
+format: md
 ---
+
 # Huawei Analytics跟踪
 
 ![](./img/notice_3.0-zh-cn_8ce47bc9dc62.png) 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "数字信封密钥(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-import-envelop-key-ndk
+format: md
 ---
+
 
 从API 23开始支持[数字信封](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview#数字信封导入)特性。
 

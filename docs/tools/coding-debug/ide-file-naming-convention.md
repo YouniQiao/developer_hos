@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/file-naming-convention"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/file-naming-convention
 

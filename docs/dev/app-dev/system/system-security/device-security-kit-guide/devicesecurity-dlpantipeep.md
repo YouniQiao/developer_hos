@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "防窥保护"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-dlpantipeep
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -43,14 +45,14 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| isDlpAntiPeepSwitchOn(): Promise<boolean> | 检查是否打开防窥保护。 |
-| on(type: 'dlpAntiPeep', callback: Callback<DlpAntiPeepStatus>): void | 订阅防窥保护状态通知。 |
-| off(type: 'dlpAntiPeep', callback?: Callback<DlpAntiPeepStatus>): void | 解除订阅防窥保护状态通知。 |
+| isDlpAntiPeepSwitchOn(): Promise\<boolean\> | 检查是否打开防窥保护。 |
+| on(type: 'dlpAntiPeep', callback: Callback\<DlpAntiPeepStatus\>): void | 订阅防窥保护状态通知。 |
+| off(type: 'dlpAntiPeep', callback?: Callback\<DlpAntiPeepStatus\>): void | 解除订阅防窥保护状态通知。 |
 | getDlpAntiPeepInfo(): DlpAntiPeepStatus | 获取当前应用的窥视状态。 |
 | passDlpAntiPeepInfo(): void | 直到手机锁屏或应用退出前一直会返回非窥视状态。 |
-| setAntiPeepMaskLayer(windowId: number): Promise<void> | 拉起系统级窗口蒙层遮盖。 |
-| requestAntiPeepOptions(context: Context): Promise<AntiPeepOptionsResult> | 拉起设置弹框请求用户打开防窥保护开关。 |
-| publishAntiPeepInformation(): Promise<void> | 发布防窥保护提示信息。 |
+| setAntiPeepMaskLayer(windowId: number): Promise\<void\> | 拉起系统级窗口蒙层遮盖。 |
+| requestAntiPeepOptions(context: Context): Promise\<AntiPeepOptionsResult\> | 拉起设置弹框请求用户打开防窥保护开关。 |
+| publishAntiPeepInformation(): Promise\<void\> | 发布防窥保护提示信息。 |
 
 ## 开发步骤
 

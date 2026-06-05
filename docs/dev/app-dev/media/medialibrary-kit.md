@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Media Library Kit（媒体文件管理服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-kit
+format: md
 ---
+
 
 * **[Media Library Kit 简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview)**
 * **[使用Picker选择媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker)**

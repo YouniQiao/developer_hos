@@ -4,6 +4,7 @@ title: "报错“ENOENT: no such file or directory, uv_cwd”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-186
 ---
 
+
 **问题现象**
 
 先构建一次项目，然后强制删除项目后手动恢复再重新构建，出现类似如下报错：

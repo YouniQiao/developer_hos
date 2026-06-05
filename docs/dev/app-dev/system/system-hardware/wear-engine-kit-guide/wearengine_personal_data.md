@@ -1,7 +1,9 @@
 ---
 title: "个人数据处理说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_personal_data
+format: md
 ---
+
 
 华为是数据处理者，不是数据控制者，数据使用目的和方式由用户自己决定。
 

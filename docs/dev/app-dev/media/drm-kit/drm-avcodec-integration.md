@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基于AVCodec播放DRM节目(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-avcodec-integration
+format: md
 ---
+
 
 ## 功能介绍
 

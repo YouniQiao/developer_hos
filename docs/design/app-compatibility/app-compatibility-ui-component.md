@@ -1,7 +1,9 @@
 ---
 title: "UI自定义组件兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
+format: md
 ---
+
 
 # UI自定义组件兼容性指导
 

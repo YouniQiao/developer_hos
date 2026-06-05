@@ -1,7 +1,9 @@
 ---
 title: "应用升级过程代码开发注意事项"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-precautions
+format: md
 ---
+
 
 ## 区分升级场景和克隆场景
 

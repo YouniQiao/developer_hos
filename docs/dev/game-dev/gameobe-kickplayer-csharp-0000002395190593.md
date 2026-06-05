@@ -1,7 +1,9 @@
 ---
 title: "移除房间内玩家"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-kickplayer-csharp-0000002395190593
+format: md
 ---
+
 
 在房间中，如果房主不希望某个玩家参与到联机游戏中，可以将指定玩家踢出房间。
 

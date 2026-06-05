@@ -1,7 +1,9 @@
 ---
 title: "AGCAuthError"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-agcautherror-0000002273781653
+format: md
 ---
+
 
 异常行为枚举类。
 

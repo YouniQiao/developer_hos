@@ -1,7 +1,9 @@
 ---
 title: "如何读取相册中的图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-10
+format: md
 ---
+
 
 使用photoAccessHelper.PhotoSelectOptions接口读取相册中的图片
 

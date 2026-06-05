@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "商户入网和获取商户号"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-merc-regist-apply
+format: md
 ---
+
 
 华为支付当前仅支持商户接入，在开发前需要先完成[华为支付商户入网](https://developer.huawei.com/consumer/cn/doc/pay-docs/hwzf-jieruliucheng-0000001251448455)。
 

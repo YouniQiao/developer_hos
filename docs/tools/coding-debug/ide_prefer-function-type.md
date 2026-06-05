@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-function-type"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-function-type
 

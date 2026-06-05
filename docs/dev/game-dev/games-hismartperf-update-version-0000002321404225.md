@@ -1,7 +1,9 @@
 ---
 title: "版本升级"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-update-version-0000002321404225
+format: md
 ---
+
 
 若打开工具时未升级工具版本，您可以在“版本升级”页面进行升级。
 

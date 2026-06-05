@@ -1,7 +1,9 @@
 ---
 title: "元服务商品及服务收录规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-inclusion
+format: md
 ---
+
 
 ## 规范目的与适用范围
 

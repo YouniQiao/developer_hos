@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVScreenCapture录屏写文件(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avscreencapture-for-file
+format: md
 ---
+
 
 屏幕录制主要为主屏幕录屏功能。
 

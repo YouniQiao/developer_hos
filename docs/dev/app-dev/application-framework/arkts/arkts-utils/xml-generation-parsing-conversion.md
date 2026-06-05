@@ -1,7 +1,9 @@
 ---
 title: "XML生成、解析与转换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-generation-parsing-conversion
+format: md
 ---
+
 
 * **[XML概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-overview)**
 * **[XML生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-generation)**

@@ -2,7 +2,9 @@
 title: "SearchkeyWord"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-searchkeyword-0000001181826457
+format: md
 ---
+
 # SearchkeyWord
 
 ![](./img/be29a47a5d57.png) 

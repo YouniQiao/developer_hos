@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "分享图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-image
+format: md
 ---
+
 
 图片类型分享支持将一张或多张图片分享到目标设备/目标应用。
 

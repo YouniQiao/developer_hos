@@ -1,7 +1,9 @@
 ---
 title: "拉起指定应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/directional-redirection
+format: md
 ---
+
 
 * **[拉起指定应用概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup-overview)**
 * **[（可选）使用canOpenLink判断应用是否可访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canopenlink)**

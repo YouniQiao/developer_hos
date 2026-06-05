@@ -1,7 +1,9 @@
 ---
 title: "ohpm uninstall错误码"
 displayed_sidebar: ohpmSidebar
+format: md
 ---
+
 
 # ohpm uninstall错误码
 

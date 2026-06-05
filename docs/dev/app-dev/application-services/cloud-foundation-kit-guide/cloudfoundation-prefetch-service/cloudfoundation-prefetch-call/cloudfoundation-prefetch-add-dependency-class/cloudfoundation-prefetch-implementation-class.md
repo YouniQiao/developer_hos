@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "预加载实现类"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-implementation-class
+format: md
 ---
+
 
 在“entry/src/main/ets/prefetchUtil”目录下新增PrefetchUtil.ets和PrefetchWrapper.ets。
 

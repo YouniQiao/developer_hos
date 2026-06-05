@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/method-signature-style"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/method-signature-style
 

@@ -1,7 +1,9 @@
 ---
 title: "前台帧率"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-frame-rate
+format: md
 ---
+
 
 # 前台帧率
 

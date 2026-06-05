@@ -1,7 +1,9 @@
 ---
 title: "典型应用场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-applicationscenarios-0000002395190461
+format: md
 ---
+
 
 ## 满足多种游戏玩法
 

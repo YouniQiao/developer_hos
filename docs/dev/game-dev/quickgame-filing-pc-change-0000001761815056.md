@@ -1,7 +1,9 @@
 ---
 title: "变更核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-change-0000001761815056
+format: md
 ---
+
 
 ## 变更核准（备案）
 

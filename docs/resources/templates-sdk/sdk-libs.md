@@ -1,7 +1,9 @@
 ---
 title: SDK 库
 sidebar_label: SDK 库
+format: md
 ---
+
 
 # SDK 库
 

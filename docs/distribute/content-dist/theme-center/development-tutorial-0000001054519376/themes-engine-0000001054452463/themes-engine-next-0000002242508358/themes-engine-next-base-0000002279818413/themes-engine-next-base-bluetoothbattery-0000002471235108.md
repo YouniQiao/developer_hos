@@ -2,7 +2,9 @@
 title: "数据开放：蓝牙耳机数据开放&lt; BluetoothBattery&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-bluetoothbattery-0000002471235108
+format: md
 ---
+
 
 # 数据开放：蓝牙耳机数据开放&lt; BluetoothBattery&gt;
 

@@ -1,7 +1,9 @@
 ---
 title: "介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-overview
+format: md
 ---
+
 
 * **[组件模板与数据绑定](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-template)**
 * **[组件 hxml 的 slot](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-hxml-slot)**

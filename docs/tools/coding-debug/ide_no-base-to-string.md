@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-base-to-string"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-base-to-string
 

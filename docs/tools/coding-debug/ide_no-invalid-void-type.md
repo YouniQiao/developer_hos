@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-invalid-void-type"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-invalid-void-type
 

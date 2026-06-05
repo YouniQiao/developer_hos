@@ -1,7 +1,9 @@
 ---
 title: "@previewer/no-page-method-on-preview-component"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @previewer/no-page-method-on-preview-component
 

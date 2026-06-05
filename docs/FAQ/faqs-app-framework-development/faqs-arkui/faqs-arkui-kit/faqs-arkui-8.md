@@ -4,6 +4,7 @@ title: "如何给UI组件设置不同情况下的属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-8
 ---
 
+
 使用if/else条件渲染设置组件属性值。具体可参考示例代码：
 
 ```

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-overview
+format: md
 ---
+
 
 Wallet Kit中的交通卡服务提供了开通新卡、在线充值、卡片更新和删卡的开放能力。由于交通卡的实际发行方是交通卡公司，所以开发者的app想要实现上述功能，需要：
 

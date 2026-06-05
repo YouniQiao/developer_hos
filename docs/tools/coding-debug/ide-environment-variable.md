@@ -1,7 +1,9 @@
 ---
 title: "Terminal环境变量说明"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Terminal环境变量说明
 

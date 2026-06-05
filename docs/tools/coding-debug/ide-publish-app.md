@@ -1,7 +1,9 @@
 ---
 title: "发布应用"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 发布应用
 

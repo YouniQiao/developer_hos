@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自动续期订阅说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions
+format: md
 ---
+
 
 订阅是指用户在购买自动续期订阅商品后，可以在一段时间访问App的增值功能或内容，并且会在订阅周期结束后自动续期（自动购买下一期服务）的能力。如果期间用户取消订阅，则订阅在当期结束后将不再自动续期。
 

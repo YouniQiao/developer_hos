@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "启动文件扫描任务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-start-task
+format: md
 ---
+
 
 ## 场景介绍
 

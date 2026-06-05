@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Provider管理介绍及规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-provider-management-overview
+format: md
 ---
+
 
 HUKS提供外部密钥管理扩展能力（简称Ukey Extension）注册和注销接口。三方驱动HAP检测到Ukey存在时，调用Provider注册接口，将驱动HAP应用提供的外部密钥管理能力注册到系统中来。当检测到所有Ukey被拔出时，通过调用Provider注销接口，将其提供的外部密钥管理能力从系统中注销。
 

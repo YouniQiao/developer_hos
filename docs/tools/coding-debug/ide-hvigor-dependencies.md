@@ -1,7 +1,9 @@
 ---
 title: "添加依赖项"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 添加依赖项
 

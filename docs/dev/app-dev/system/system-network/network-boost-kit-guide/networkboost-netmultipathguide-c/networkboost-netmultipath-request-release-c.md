@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "多网发起和释放(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-request-release-c
+format: md
 ---
+
 
 从6.0.2(22)开始，支持多网发起和释放。
 

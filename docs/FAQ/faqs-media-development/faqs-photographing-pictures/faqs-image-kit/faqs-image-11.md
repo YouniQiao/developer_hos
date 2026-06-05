@@ -4,6 +4,7 @@ title: "如何把ImageReceiver收到的视频帧数据保存到本地"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-11
 ---
 
+
 如示例代码所示，保存接收到的前3帧数据，可根据业务需求进行调整。
 
 ```

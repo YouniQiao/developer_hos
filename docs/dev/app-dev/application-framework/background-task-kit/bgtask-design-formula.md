@@ -1,7 +1,9 @@
 ---
 title: "Background Tasks Kit接入规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bgtask-design-formula
+format: md
 ---
+
 
 ## 接入规范
 

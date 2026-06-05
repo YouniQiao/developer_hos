@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用PhotoPicker推荐图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/smart-photopicker
+format: md
 ---
+
 
 应用在调用PhotoPicker接口时，如果配置了PhotoPicker图片推荐参数，当设备中有满足图片推荐参数的图片，且设备中的图片已经分析完成时，PhotoPicker界面除了展示全量的图片外，还会展示符合条件的推荐图片供用户参考选择，从而缩短用户筛选图片的时间。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AVCodec支持的格式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats
+format: md
 ---
+
 
 音视频的编解码能力以及文件格式封装和解封装能力的支持情况，在不同平台存在能力和规格的差异。开发者可以通过[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)来获取实际的支持情况和规格情况。
 

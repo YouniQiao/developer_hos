@@ -2,7 +2,9 @@
 title: "使用日预算自动调整模板创建"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-create-daily-budget-0000001309230222
+format: md
 ---
+
 # 使用日预算自动调整模板创建
 
 ## 前提条件

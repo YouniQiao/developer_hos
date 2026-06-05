@@ -1,7 +1,9 @@
 ---
 title: "ArkTS卡片开发（推荐）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui
+format: md
 ---
+
 
 * **[ArkTS卡片概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-form-overview)**
 * **[创建ArkTS卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)**

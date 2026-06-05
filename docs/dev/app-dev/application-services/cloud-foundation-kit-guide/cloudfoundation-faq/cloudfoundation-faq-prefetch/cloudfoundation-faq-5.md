@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何通过应用侧日志定位预加载问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-5
+format: md
 ---
+
 
 预加载的日志进程为“clouddevelopproxy”，日志过滤选择“No filters”。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "扩展屏投播开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-extended-screen
+format: md
 ---
+
 
 通过本节开发指导，可在系统镜像投屏后，获取投屏设备信息，实现扩展屏模式的投播，实现双屏协作的能力。
 
@@ -39,9 +41,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avse
 
 | 接口 | 说明 |
 | --- | --- |
-| getAllCastDisplays(): Promise<Array<CastDisplayInfo>>; | 获取当前系统中所有支持扩展屏投播的显示设备。 |
-| on(type: 'castDisplayChange', callback: Callback<CastDisplayInfo>): void; | 设置扩展屏投播显示设备变化的监听事件。 |
-| off(type: 'castDisplayChange', callback?: Callback<CastDisplayInfo>): void; | 取消扩展屏投播显示设备变化事件监听，关闭后，不再进行该事件回调。 |
+| getAllCastDisplays(): Promise\<Array<CastDisplayInfo\>>; | 获取当前系统中所有支持扩展屏投播的显示设备。 |
+| on(type: 'castDisplayChange', callback: Callback\<CastDisplayInfo\>): void; | 设置扩展屏投播显示设备变化的监听事件。 |
+| off(type: 'castDisplayChange', callback?: Callback\<CastDisplayInfo\>): void; | 取消扩展屏投播显示设备变化事件监听，关闭后，不再进行该事件回调。 |
 
 ## 开发步骤
 

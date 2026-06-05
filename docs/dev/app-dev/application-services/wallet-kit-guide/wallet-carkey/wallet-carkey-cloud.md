@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "云侧开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey-cloud
+format: md
 ---
+
 
 ## Wallet Kit服务云侧接入基本信息配置
 

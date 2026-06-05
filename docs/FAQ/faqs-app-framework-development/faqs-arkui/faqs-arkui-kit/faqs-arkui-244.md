@@ -4,6 +4,7 @@ title: "当子组件触发触摸事件时，如果父组件也设置了触摸事
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-244
 ---
 
+
 **问题现象**
 
 当子组件触发触摸事件时，如果父组件也设置了触摸事件，父组件同样会触发。

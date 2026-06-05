@@ -2,7 +2,9 @@
 title: "关于华为AppGallery Connect与隐私的声明"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agcprivacystatement
+format: md
 ---
+
 # 关于华为AppGallery Connect与隐私的声明
 
 点击下载[关于华为AppGallery Connect与隐私的声明](https://terms-drcn.platform.dbankcloud.cn/agreementservice/developer/getAgreementTemplate?agrType=1165&country=cn&language=zh_cn&version=2024090601)。

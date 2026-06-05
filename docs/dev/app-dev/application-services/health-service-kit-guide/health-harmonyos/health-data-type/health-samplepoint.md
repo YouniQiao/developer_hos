@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "采样数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-samplepoint
+format: md
 ---
+
 
 * **[日常活动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-daily-activities)**
 * **[心率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-heart-rate)**

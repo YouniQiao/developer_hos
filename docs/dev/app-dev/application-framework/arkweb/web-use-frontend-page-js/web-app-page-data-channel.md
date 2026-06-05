@@ -1,7 +1,9 @@
 ---
 title: "建立应用侧与前端页面数据通道"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-app-page-data-channel
+format: md
 ---
+
 
 前端页面和应用侧之间可以用[createWebMessagePorts()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#createwebmessageports)接口创建消息端口来实现两端的通信。
 

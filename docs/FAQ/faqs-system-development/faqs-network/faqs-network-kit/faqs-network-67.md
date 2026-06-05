@@ -1,7 +1,9 @@
 ---
 title: "如何监听判断VPN类型网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-67
+format: md
 ---
+
 
 VPN类型可使用getNetCapabilities方法获取到bearerTypes，当[bearerTypes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#netbeartype)的值是4时表示使用了VPN。需要权限：ohos.permission.INTERNET、ohos.permission.GET\_NETWORK\_INFO。
 

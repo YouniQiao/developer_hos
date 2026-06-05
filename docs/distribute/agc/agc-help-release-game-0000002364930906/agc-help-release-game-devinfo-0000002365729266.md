@@ -1,7 +1,9 @@
 ---
 title: "配置开发者服务信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-devinfo-0000002365729266
+format: md
 ---
+
 
 填写开发者服务信息，方便玩家咨询或反馈游戏相关问题。
 

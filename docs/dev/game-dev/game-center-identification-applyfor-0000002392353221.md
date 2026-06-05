@@ -1,7 +1,9 @@
 ---
 title: "版署实名认证申请"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/game-center-identification-applyfor-0000002392353221
+format: md
 ---
+
 
 按照国家新闻出版署《关于开展网络游戏防沉迷实名认证系统接口对接工作的通知》，各游戏出版运营企业均须在2021年6月1日前完成国家新闻出版署的实名认证系统的接入。
 

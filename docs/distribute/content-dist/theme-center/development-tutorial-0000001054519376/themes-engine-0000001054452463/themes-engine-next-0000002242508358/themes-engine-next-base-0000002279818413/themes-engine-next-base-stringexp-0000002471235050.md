@@ -2,7 +2,9 @@
 title: "表达式：字符串表达式&lt;StringExpression&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-stringexp-0000002471235050
+format: md
 ---
+
 
 # 表达式：字符串表达式&lt;StringExpression&gt;
 
@@ -51,7 +53,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine
 | strLastIndexOf(str1, str2) | 字符串str2在字符串str1zhong 最后出现的位置，索引从0开始，例如：str\_LastIndexOf('hello','l')=3，返回“3”，如果目标字符串没有出现则返回“-1” |
 | strContains(str1,str2) | 字符串str1中是否包含字符串str2，包含则返回"true"，否则返回"false"。例如： strContains('hello','he')=true ，返回"true" |
 | strReplaceAll(str1,str2,str3) | 将str1中所有的str2替换为str3 ,例如（strReplaceAll('hello','e','i')＝”hillo“ |
-| preciseeval(str,数值/数值型变量) | 计算str的值，其中第一位是字符串/字符串变量型/数字表达式函数的计算公式，第二位为数值/数值型变量标识保留的小数位数，例如： preciseeval({1/3},3)=0.333，返回数值字符串“0.333”。注意使用preciseeval运算符则其后不能使用其他的运算符和+连接符 |
+| preciseeval(str,数值/数值型变量) | 计算str的值，其中第一位是字符串/字符串变量型/数字表达式函数的计算公式，第二位为数值/数值型变量标识保留的小数位数，例如： preciseeval(\{1/3\},3)=0.333，返回数值字符串“0.333”。注意使用preciseeval运算符则其后不能使用其他的运算符和+连接符 |
 | formatDate('format',@time\_sys) | 返回指定格式的时间字符串，时间为此刻的系统时间，如：formatDate('yyyy-MM-dd hh:mm:ss',@time\_sys)=“2019-08-23 19:15:10”，具体能够转换的时间和日期的格式可以参考系统日期占位符 |
 | plus(a,b) | 返回a和b的和的整数值，其中a和b可以为字符串/字符串变量或者数值/数值变量/返回数值的字符串函数，例如：plus(3,3)=6，返回“6” |
 | ifelse(x1,y1,x2,y2,...,xn,yn,z) | if (x1!=0) return y1; elseif(x2 !=0) return y2;...; else return z。从x1开始判断，若存在xi不等于0，则返回yi，否则一直往后判断，都不满足条件则最终返回z。xi为数字表达式，yi、z为返回的字符串结果，可以是字符串/字符串变量/字符串函数 |

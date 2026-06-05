@@ -2,7 +2,9 @@
 title: "位移动画&lt;PositionAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2d-positionanimation-0000002471395132
+format: md
 ---
+
 
 # 位移动画&lt;PositionAnimation&gt;
 

@@ -1,7 +1,9 @@
 ---
 title: "发送服务端消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sendtoserver-csharp-0000002395350497
+format: md
 ---
+
 
 如需实现客户端与实时服务器的交互，可通过发送消息给实时服务器的方式来实现。
 

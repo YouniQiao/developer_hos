@@ -1,7 +1,9 @@
 ---
 title: "隔离三方SDK代码"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-2dx-isolate-third-library-0000002296285206
+format: md
 ---
+
 
 由于当前部分游戏常用的SDK不支持在HarmonyOS 5.0及以上系统上运行，因此适配HarmonyOS 5.0及以上系统的第一步是进行SDK隔离（拆分），去掉不支持的SDK。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "非对称密钥生成和转换规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec
+format: md
 ---
+
 
 当前章节说明系统支持的算法及其对应规格。密钥生成指定规格的方式有两种：
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "免密代扣说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-password-free-pay-overview
+format: md
 ---
+
 
 免密代扣包括支付并签约以及签约代扣场景。
 

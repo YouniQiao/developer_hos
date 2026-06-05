@@ -1,7 +1,9 @@
 ---
 title: "角色权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-role-permissions
+format: md
 ---
+
 
 1.登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“用户与访问”。
 

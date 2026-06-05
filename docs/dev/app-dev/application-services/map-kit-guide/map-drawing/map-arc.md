@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "弧线"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-arc
+format: md
 ---
+
 
 ## 场景介绍
 

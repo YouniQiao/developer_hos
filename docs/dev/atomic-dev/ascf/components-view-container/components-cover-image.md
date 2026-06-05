@@ -1,7 +1,9 @@
 ---
 title: "cover-image"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-cover-image
+format: md
 ---
+
 
 覆盖在系统组件之上的图片。
 

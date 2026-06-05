@@ -1,7 +1,9 @@
 ---
 title: "hjs"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/hjs
+format: md
 ---
+
 
 hjs是ASCF框架的一套脚本语言，结合hxml一起来构建页面。
 

@@ -1,7 +1,9 @@
 ---
 title: "分析APP FREEZE问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-crash-appfreeze-analyse-0000002236493746
+format: md
 ---
+
 
 用户在使用应用时会出现点击没反应、应用无响应等情况，其超过一定时间限制后即被定义为应用无响应（APP FREEZE）。OS操作系统提供了检测应用无响应的机制，并可生成APP FREEZE日志供应用开发分析。
 

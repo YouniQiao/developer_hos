@@ -1,7 +1,9 @@
 ---
 title: "批量导出门店"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-batch-export
+format: md
 ---
+
 
 1. 在服务直达主界面，选择“门店管理”页签，根据门店状态或门店名称/编码筛选出需要导出的门店。
 

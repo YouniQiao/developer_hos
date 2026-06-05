@@ -4,6 +4,7 @@ title: "输入华为账号后，未出现“允许”按钮，浏览器界面无
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-3
 ---
 
+
 **问题现象**
 
 使用浏览器登录华为账号后，如果账号已实名认证但未出现授权的“允许”按钮，界面也未跳转或提示。

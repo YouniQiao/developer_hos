@@ -2,7 +2,9 @@
 title: "接入视频流广告"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-video-flow-0000001397733821
+format: md
 ---
+
 
 
 #### 创建AdsContext对象

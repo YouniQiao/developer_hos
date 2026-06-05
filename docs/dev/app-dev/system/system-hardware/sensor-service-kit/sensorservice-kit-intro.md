@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Sensor Service Kit开发简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensorservice-kit-intro
+format: md
 ---
+
 
 ## 使用场景
 

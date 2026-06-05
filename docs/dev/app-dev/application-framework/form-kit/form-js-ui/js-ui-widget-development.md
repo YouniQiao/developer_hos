@@ -1,7 +1,9 @@
 ---
 title: "JS卡片开发指导（Stage模型）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-ui-widget-development
+format: md
 ---
+
 
 Stage模型是从API version 9开始支持，目前主推且会长期演进的模型。该模型采用面向对象的方式，将应用组件以类接口的形式开放给开发者，可以进行派生，利于扩展能力。
 
@@ -13,8 +15,8 @@ FormExtensionAbility类拥有如下API接口，具体的API介绍详见[@ohos.ap
 | --- | --- |
 | onAddForm(want: Want): formBindingData.FormBindingData | 卡片提供方接收创建卡片的通知接口。 |
 | onCastToNormalForm(formId: string): void | 卡片提供方接收临时卡片转常态卡片的通知接口。 |
-| onUpdateForm(formId: string, wantParams?: Record<string, Object>): void | 卡片提供方接收更新卡片的通知接口。 |
-| onChangeFormVisibility(newStatus: Record<string, number>): void | 卡片提供方接收修改可见性的通知接口。 |
+| onUpdateForm(formId: string, wantParams?: Record\<string, Object\>): void | 卡片提供方接收更新卡片的通知接口。 |
+| onChangeFormVisibility(newStatus: Record\<string, number\>): void | 卡片提供方接收修改可见性的通知接口。 |
 | onFormEvent(formId: string, message: string): void | 卡片提供方接收处理卡片事件的通知接口。 |
 | onRemoveForm(formId: string): void | 卡片提供方接收销毁卡片的通知接口。 |
 | onConfigurationUpdate(newConfig: Configuration): void | 当系统配置更新时调用。 |
@@ -23,10 +25,10 @@ formProvider类部分API接口如下，具体的API介绍详见[@ohos.app.form.f
 
 | 接口名 | 描述 |
 | --- | --- |
-| setFormNextRefreshTime(formId: string, minute: number, callback: AsyncCallback<void>): void | 设置指定卡片的下一次更新时间，使用callback异步回调。 |
-| setFormNextRefreshTime(formId: string, minute: number): Promise<void> | 设置指定卡片的下一次更新时间，使用Promise异步回调。 |
-| updateForm(formId: string, formBindingData: formBindingData.FormBindingData, callback: AsyncCallback<void>): void | 更新指定的卡片，使用callback异步回调。 |
-| updateForm(formId: string, formBindingData: formBindingData.FormBindingData): Promise<void> | 更新指定的卡片，使用Promise异步回调。 |
+| setFormNextRefreshTime(formId: string, minute: number, callback: AsyncCallback\<void\>): void | 设置指定卡片的下一次更新时间，使用callback异步回调。 |
+| setFormNextRefreshTime(formId: string, minute: number): Promise\<void\> | 设置指定卡片的下一次更新时间，使用Promise异步回调。 |
+| updateForm(formId: string, formBindingData: formBindingData.FormBindingData, callback: AsyncCallback\<void\>): void | 更新指定的卡片，使用callback异步回调。 |
+| updateForm(formId: string, formBindingData: formBindingData.FormBindingData): Promise\<void\> | 更新指定的卡片，使用Promise异步回调。 |
 
 formBindingData类部分API接口如下，具体的API介绍详见[@ohos.app.form.formBindingData (卡片数据绑定类)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formbindingdata)。
 
@@ -62,7 +64,7 @@ Stage卡片开发，即基于[Stage模型](https://developer.huawei.com/consumer
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L15-L23" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：JsCardFormAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L15-L23" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：JsCardFormAbility.ets</a></div>
 
 2. 在JsCardFormAbility.ets中，实现FormExtension生命周期接口。
 
@@ -159,7 +161,7 @@ Stage卡片开发，即基于[Stage模型](https://developer.huawei.com/consumer
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L24-L147" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：JsCardFormAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L24-L147" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：JsCardFormAbility.ets</a></div>
 
 
 ![](./img/b4baa351.png)
@@ -197,7 +199,7 @@ FormExtensionAbility不能常驻后台，即在卡片生命周期回调函数中
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/module.json5#L15-L70" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：module.json5</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/module.json5#L15-L70" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：module.json5</a></div>
 
 2. 卡片的具体配置信息。在上述FormExtensionAbility的元信息（"metadata"配置项）中，可以指定卡片具体配置信息的资源索引。例如当resource指定为$profile:form\_jscard\_config时，会使用开发视图的resources/base/profile/目录下的form\_jscard\_config.json作为卡片profile配置文件。内部字段结构说明如下表所示。
 
@@ -303,7 +305,7 @@ export default class JsCardFormAbility extends FormExtensionAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L25-L144" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：JsCardFormAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L25-L144" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：JsCardFormAbility.ets</a></div>
 
 
 且需要适配onRemoveForm卡片删除通知接口，在其中实现卡片实例数据的删除。
@@ -341,7 +343,7 @@ export default class JsCardFormAbility extends FormExtensionAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L26-L145" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：JsCardFormAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L26-L145" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：JsCardFormAbility.ets</a></div>
 
 
 具体的持久化方法可以参考[轻量级数据存储开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence-overview)。
@@ -386,7 +388,7 @@ export default class JsCardFormAbility extends FormExtensionAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L27-L146" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：JsCardFormAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L27-L146" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：JsCardFormAbility.ets</a></div>
 
 
 ### 开发卡片页面
@@ -649,7 +651,7 @@ export default class JsCardFormAbility extends FormExtensionAbility {
 
   
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/entryability/EntryAbility.ets#L15-L80" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/entryability/EntryAbility.ets#L15-L80" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>
 
 * 在FormExtensionAbility中接收message事件并获取参数，代码导入请参考[创建卡片FormExtensionAbility](#创建卡片formextensionability)中的导入模块。
 
@@ -678,4 +680,4 @@ export default class JsCardFormAbility extends FormExtensionAbility {
 
   
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L28-L143" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：JsCardFormAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L28-L143" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：JsCardFormAbility.ets</a></div>

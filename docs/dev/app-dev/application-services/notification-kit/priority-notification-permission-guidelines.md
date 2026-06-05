@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "申请优先通知权益"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/priority-notification-permission-guidelines
+format: md
 ---
+
 
 当用户终端收到携带[priorityNotificationType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest)字段的通知消息时，系统会将其识别为优先通知并优先显示。
 

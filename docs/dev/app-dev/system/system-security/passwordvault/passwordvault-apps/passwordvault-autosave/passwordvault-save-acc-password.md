@@ -1,7 +1,9 @@
 ---
 title: "账号密码保存"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-save-acc-password
+format: md
 ---
+
 
 密码保险箱在应用的登录、注册、修改密码等场景中具备自动保存用户名和密码的能力。
 

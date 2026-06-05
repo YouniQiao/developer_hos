@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "多应用管控"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm
+format: md
 ---
+
 
 ## 概述
 

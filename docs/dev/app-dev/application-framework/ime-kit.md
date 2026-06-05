@@ -1,7 +1,9 @@
 ---
 title: "IME Kit（输入法开发服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit
+format: md
 ---
+
 
 * **[IME Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-intro)**
 * **[实现一个输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)**

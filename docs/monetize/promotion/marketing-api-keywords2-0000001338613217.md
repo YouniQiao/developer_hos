@@ -2,7 +2,9 @@
 title: "关键词出价修改"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-keywords2-0000001338613217
+format: md
 ---
+
 # 关键词出价修改
 
 您通过本接口可以批量修改关键词的出价信息。

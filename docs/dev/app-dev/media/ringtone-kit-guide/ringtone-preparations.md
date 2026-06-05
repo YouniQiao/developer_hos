@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置铃声"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-preparations
+format: md
 ---
+
 
 1. 导入ringtone模块和相关公共模块。
 

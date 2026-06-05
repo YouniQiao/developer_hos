@@ -1,7 +1,9 @@
 ---
 title: "打包拆包工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # 打包拆包工具
 

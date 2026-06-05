@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVRecorder录制音频(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avrecorder-for-recording
+format: md
 ---
+
 
 使用[AVRecorder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avrecorder)可以实现音频录制功能，本开发指导将以“开始录制-暂停录制-恢复录制-停止录制”的一次流程为例，向开发者讲解AVRecorder音频录制相关功能。
 

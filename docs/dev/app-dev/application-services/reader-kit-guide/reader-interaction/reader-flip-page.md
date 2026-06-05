@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "手动触发翻页"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-flip-page
+format: md
 ---
+
 
 Reader Kit的交互能力已经集成了手指点击和触摸滑动翻页，如果开发者需要增加其它翻页场景时（如：耳机播控翻页），可使用手动翻页接口实现自定义翻页场景。
 

@@ -2,7 +2,9 @@
 title: "违规及侵权处理措施"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/violation-and-infringement-pandling-process-0000001364211453
+format: md
 ---
+
 
 # 违规及侵权处理措施
 

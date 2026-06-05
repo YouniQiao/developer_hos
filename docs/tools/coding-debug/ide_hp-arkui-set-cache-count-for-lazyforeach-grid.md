@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-set-cache-count-for-lazyforeach-grid"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-set-cache-count-for-lazyforeach-grid
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "新增存储区"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-zone
+format: md
 ---
+
 
 此章节以建立一个“存储区名称”为“QuickStartDemo”的存储区举例说明。
 

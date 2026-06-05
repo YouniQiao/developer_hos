@@ -1,7 +1,9 @@
 ---
 title: "专项测试"
 displayed_sidebar: devecoTestingSidebar
+format: md
 ---
+
 
 # 专项测试
 

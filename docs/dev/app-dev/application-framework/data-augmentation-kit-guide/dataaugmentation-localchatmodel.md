@@ -1,7 +1,9 @@
 ---
 title: "端侧问答模型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-localchatmodel
+format: md
 ---
+
 
 ## 概述
 
@@ -26,8 +28,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
 | 接口名 | 描述 |
 | --- | --- |
-| [init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#init)(): Promise<boolean> | 初始化端侧问答模型，负责拉起模型管理应用。 |
-| [chat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#chat)(info: [QuestionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#questioninfo), config: [Config](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#config), callback: AsyncCallback<[Answer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#answer)>): Promise<void> | 与端侧模型进行交互，实现端侧模型的问答功能。 |
+| [init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#init)(): Promise\<boolean\> | 初始化端侧问答模型，负责拉起模型管理应用。 |
+| [chat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#chat)(info: [QuestionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#questioninfo), config: [Config](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#config), callback: AsyncCallback[Answer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-localchatmodel-api#answer)): Promise\<void\> | 与端侧模型进行交互，实现端侧模型的问答功能。 |
 
 ![](./img/8d3a2d0f.png)
 

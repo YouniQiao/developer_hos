@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "打开和保存PDF文档"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-open
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,8 +16,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-
 
 | 接口名 | 描述 |
 | --- | --- |
-| [loadDocument](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#loaddocument)(path: string, password?: string, initPageIndex?: number, onProgress?: Callback<number>): Promise<pdfService.ParseResult> | 加载PDF文档。 |
-| [saveDocument](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#savedocument)(path: string, onProgress?: Callback<number>): Promise<number> | 保存PDF文档，使用Promise异步回调。 |
+| [loadDocument](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#loaddocument)(path: string, password?: string, initPageIndex?: number, onProgress?: Callback\<number\>): Promise\<pdfService.ParseResult\> | 加载PDF文档。 |
+| [saveDocument](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#savedocument)(path: string, onProgress?: Callback\<number\>): Promise\<number\> | 保存PDF文档，使用Promise异步回调。 |
 
 ## 示例代码
 

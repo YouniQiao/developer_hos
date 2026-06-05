@@ -1,7 +1,9 @@
 ---
 title: "ArkTS卡片概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-form-overview
+format: md
 ---
+
 
 以下内容介绍基于ArkTS声明式开发范式语言开发卡片。
 

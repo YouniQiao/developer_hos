@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自动补全地址表单所在地区"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-autocomplete
+format: md
 ---
+
 
 在填写地址表单场景时，当应用使用了所在地区的省市区选择器，需要开发者对表单中的地址字段进行开发。
 

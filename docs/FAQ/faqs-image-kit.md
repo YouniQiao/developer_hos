@@ -4,6 +4,7 @@ title: "图片处理（Image）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-kit
 ---
 
+
 * **[通过PixelMap\_CreatePixelMap创建的对象，内存在ArkTS侧和Native侧是否共享](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-1)**
 * **[如何从图库选择图片并上传到服务器](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-22)**
 * **[如何设置图片的高斯模糊效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-2)**

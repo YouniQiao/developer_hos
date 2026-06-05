@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "隐私管理服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-privacy
+format: md
 ---
+
 
 隐私管理服务为使用[标准化隐私声明托管服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-0000002316794885)的应用/元服务提供查询隐私链接、查询隐私签署状态、撤销同意记录和拉起标准化隐私弹框请求用户同意功能。
 
@@ -71,7 +73,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stor
 | [getAppPrivacyMgmtInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-privacymanager#privacymanagergetappprivacymgmtinfo)(): [AppPrivacyMgmtInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-privacymanager#appprivacymgmtinfo) | 查询隐私链接信息接口，用于查询隐私链接信息。 |
 | [getAppPrivacyResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-privacymanager#privacymanagergetappprivacyresult)(): [AppPrivacyResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-privacymanager#appprivacyresult)[] | 查询隐私签署状态接口，用于查询隐私签署状态信息。 |
 | [disableService](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-privacymanager#privacymanagerdisableservice)():void | 撤销同意记录接口，用于撤销隐私签署同意记录。 |
-| [requestAppPrivacyConsent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-privacymanager#privacymanagerrequestappprivacyconsent)(context:common.UIAbilityContext):Promise<[ConsentResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-privacymanager#consentresult)> | 请求用户同意接口，用于开发者需要主动拉起标准化隐私弹框。 |
+| [requestAppPrivacyConsent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-privacymanager#privacymanagerrequestappprivacyconsent)(context:common.UIAbilityContext):Promise[ConsentResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-privacymanager#consentresult) | 请求用户同意接口，用于开发者需要主动拉起标准化隐私弹框。 |
 
 ## 开发步骤
 
@@ -180,7 +182,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stor
 
 | 事件名称 | 值 | 描述 |
 | --- | --- | --- |
-| [COMMON\_EVENT\_PRIVACY\_STATE\_CHANGED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/commoneventmanager-definitions#common_event_privacy_state_changed11) | usual.event.PRIVACY\_STATE\_CHANGED | 隐私弹框签署结果公共事件，事件携带数据如下：  {  'resultType': privacyResultType,  'appIndex': appIndex  }  其中：  - privacyResultType：  1：同意完整模式  0：未同意  - appIndex：分身索引 |
+| [COMMON\_EVENT\_PRIVACY\_STATE\_CHANGED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/commoneventmanager-definitions#common_event_privacy_state_changed11) | usual.event.PRIVACY\_STATE\_CHANGED | 隐私弹框签署结果公共事件，事件携带数据如下：  \{  'resultType': privacyResultType,  'appIndex': appIndex  \}  其中：  - privacyResultType：  1：同意完整模式  0：未同意  - appIndex：分身索引 |
 
 公共事件接收示例（无应用分身场景）：
 

@@ -1,7 +1,9 @@
 ---
 title: "如何获取网络类型：Wi-Fi，3G，4G等"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-5
+format: md
 ---
+
 
 先通过[getNetCapabilities](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectiongetnetcapabilities)去获取网络的类型，判断默认网络是Wi-Fi还是蜂窝。
 

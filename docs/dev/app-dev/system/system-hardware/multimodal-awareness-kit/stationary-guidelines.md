@@ -1,7 +1,9 @@
 ---
 title: "Stationary开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stationary-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -35,15 +37,15 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stat
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(activity: ActivityType, event: ActivityEvent, reportLatencyNs: number, callback: Callback<ActivityResponse>): void | 订阅设备状态，结果通过callback返回。 |
-| once(activity: ActivityType, callback: Callback<ActivityResponse>): void | 查询设备状态，结果通过callback返回。 |
-| off(activity: ActivityType, event: ActivityEvent, callback?: Callback<ActivityResponse>): void | 取消订阅设备状态。 |
+| on(activity: ActivityType, event: ActivityEvent, reportLatencyNs: number, callback: Callback\<ActivityResponse\>): void | 订阅设备状态，结果通过callback返回。 |
+| once(activity: ActivityType, callback: Callback\<ActivityResponse\>): void | 查询设备状态，结果通过callback返回。 |
+| off(activity: ActivityType, event: ActivityEvent, callback?: Callback\<ActivityResponse\>): void | 取消订阅设备状态。 |
 
 ## 约束与限制
 
 设备需要支持加速度传感器。
 
-目前只提供了算法框架，api接口测试框架的调用返回结果为:data={"type":3,"value":-1};
+目前只提供了算法框架，api接口测试框架的调用返回结果为:data=\{"type":3,"value":-1\};
 
 如需相对静止和绝对静止能力，则具体算法需要开发者自己在device\_status/libs/src/algorithm实现，可参考案例如下：
 

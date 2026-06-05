@@ -1,9 +1,11 @@
 ---
 title: "当应用发生故障时，如何获取系统日志"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-16
+format: md
 ---
 
-使用faultLogger.query(faultType: FaultType, callback: AsyncCallback<Array<FaultLogInfo>)接口获取故障日志。FaultType是枚举类型，可选值如下：
+
+使用faultLogger.query(faultType: FaultType, callback: AsyncCallback\<Array<FaultLogInfo\>)接口获取故障日志。FaultType是枚举类型，可选值如下：
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |

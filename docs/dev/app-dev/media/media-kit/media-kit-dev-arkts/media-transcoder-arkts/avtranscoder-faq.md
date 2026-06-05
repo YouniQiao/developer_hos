@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "转码常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avtranscoder-faq
+format: md
 ---
+
 
 ## 应用发送视频进行转码，音频编码格式为什么变化
 

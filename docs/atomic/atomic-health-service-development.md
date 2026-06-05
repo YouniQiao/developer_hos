@@ -1,7 +1,9 @@
 ---
 title: "运动健康"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-health-service-development
+format: md
 ---
+
 
 * **[Health Service Kit简介](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-service-kit-ability-as)**
 * **[接入流程](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-application-access-as)**

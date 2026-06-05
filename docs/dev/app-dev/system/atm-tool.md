@@ -1,7 +1,9 @@
 ---
 title: "atm工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/atm-tool
+format: md
 ---
+
 
 Access Token Manager (程序访问控制管理工具，简称atm工具)，是用于查询应用进程的权限、使用类型等信息的工具，为开发者提供了根据tokenid、包名、进程名等信息进行访问控制管理的能力。
 
@@ -35,11 +37,11 @@ atm dump [-h] [-d [-p <permission-name>]] [-t [-i <token-id>] [-b <bundle-name>]
 | --- | --- |
 | -h | 帮助信息。 |
 | -d | 必选参数，查询系统中所有的权限定义。 |
-| -d -p <permission-name> | 可选参数，通过权限名，查询权限定义。 |
+| -d -p \<permission-name\> | 可选参数，通过权限名，查询权限定义。 |
 | -t | 必选参数，查询系统中所有应用进程信息。 |
-| -t -i <token-id> | 可选参数，通过应用进程的tokenid，查询该应用的基本信息以及对应的[GrantStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#grantstatus)。 |
-| -t -b <bundle-name> | 可选参数，通过应用进程的包名bundle-name，查询该应用的基本信息以及对应的[GrantStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#grantstatus)。 |
-| -t -n <process-name> | 可选参数，通过应用进程的进程名process-name，查询该应用的基本信息以及对应的[GrantStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#grantstatus)。 |
+| -t -i \<token-id\> | 可选参数，通过应用进程的tokenid，查询该应用的基本信息以及对应的[GrantStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#grantstatus)。 |
+| -t -b \<bundle-name\> | 可选参数，通过应用进程的包名bundle-name，查询该应用的基本信息以及对应的[GrantStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#grantstatus)。 |
+| -t -n \<process-name\> | 可选参数，通过应用进程的进程名process-name，查询该应用的基本信息以及对应的[GrantStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#grantstatus)。 |
 
 示例：
 

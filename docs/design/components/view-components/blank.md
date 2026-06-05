@@ -2,7 +2,9 @@
 title: 空白
 sidebar_label: 空白
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/blank-0000001956815485
+format: md
 ---
+
 # 空白
 
 空白填充组件，在容器主轴方向上，空白填充组件具有自动填充容器空余部分的能力。仅当父组件为 Row/Column/Flex 时生效。开发相关能力请参考 [Blank](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-blank) 文档。

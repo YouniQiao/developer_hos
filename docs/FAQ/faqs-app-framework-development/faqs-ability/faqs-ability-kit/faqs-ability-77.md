@@ -4,6 +4,7 @@ title: "应用、元服务和卡片是什么关系"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-77
 ---
 
+
 元服务是一种应用，没有图标，支持免安装启动。
 
 应用和元服务不能共享包名，必须分别打包；元服务和应用之间是独立的，也不能共享 entry 模块。

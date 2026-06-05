@@ -2,7 +2,9 @@
 title: "命令：全景换肤&lt; StyleCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-stylecommand-0000002471235086
+format: md
 ---
+
 
 # 命令：全景换肤&lt; StyleCommand&gt;
 

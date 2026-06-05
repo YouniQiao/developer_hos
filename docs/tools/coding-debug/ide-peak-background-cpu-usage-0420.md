@@ -1,7 +1,9 @@
 ---
 title: "后台CPU占用峰值"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 后台CPU占用峰值
 

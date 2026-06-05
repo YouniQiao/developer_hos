@@ -2,7 +2,9 @@
 title: "创建应用市场合约广告"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/contract-ad-shown-on-ag-0000001294223968
+format: md
 ---
+
 # 创建应用市场合约广告
 
 ## 概述

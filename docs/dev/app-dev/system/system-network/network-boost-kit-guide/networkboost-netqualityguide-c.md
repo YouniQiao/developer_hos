@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "网络质量 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netqualityguide-c
+format: md
 ---
+
 
 * **[网络质量评估 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback-c)**
 * **[网络场景识别 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-scenecallback-c)**

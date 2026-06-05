@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-service-price-overview-0000002247364616
+format: md
 ---
+
 
 AppGallery Connect为您提供的服务分为免费和收费两种类别：
 

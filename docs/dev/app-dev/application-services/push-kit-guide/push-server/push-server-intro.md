@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "端云调试概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-server-intro
+format: md
 ---
+
 
 [推送场景化消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-scenes-send)章节中囊括了Push Kit的所有推送场景，每个推送场景的开发可大致分为两大步骤：
 

@@ -1,7 +1,9 @@
 ---
 title: "剪贴板服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pasteboard
+format: md
 ---
+
 
 * **[申请访问剪贴板权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)**
 * **[使用剪贴板进行复制粘贴](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-pasteboard-to-copy-and-paste)**

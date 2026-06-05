@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何主动通过手势缩放变焦比"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-14
+format: md
 ---
+
 
 **问题现象**
 

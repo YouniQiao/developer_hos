@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Driver Development Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driverdevelopment-overview
+format: md
 ---
+
 
 Driver Development Kit（驱动开发套件）为外设驱动开发者提供高效、安全、丰富的扩展外设驱动开发解决方案ArkTS-API和C-API，支持外设驱动开发者为消费者带来外设即插即用的极致体验。
 

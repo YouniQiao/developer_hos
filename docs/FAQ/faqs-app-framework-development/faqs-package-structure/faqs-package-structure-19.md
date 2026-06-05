@@ -4,6 +4,7 @@ title: "HAP/HAR/HSP的关系是什么？是否都可以声明注册Ability和Pag
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-19
 ---
 
+
 **HAP：应用安装和运行的基本单元**。支持在配置文件中声明abilities、extensionAbilities组件，支持在配置文件中声明pages页面。
 
 主要使用场景：

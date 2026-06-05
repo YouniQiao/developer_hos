@@ -1,7 +1,9 @@
 ---
 title: "模拟器错误码"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 模拟器错误码
 

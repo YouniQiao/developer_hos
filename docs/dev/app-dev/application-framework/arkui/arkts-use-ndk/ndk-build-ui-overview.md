@@ -1,7 +1,9 @@
 ---
 title: "基于NDK构建UI概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-ui-overview
+format: md
 ---
+
 
 ArkUI开发框架提供了一系列[NDK接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview)，能够在应用中使用C和C++代码构建UI界面，这些接口包括UI组件创建、UI树操作、属性设置和事件监听等。面向通用UI界面开发场景，建议使用ArkTS代码和ArkUI声明式开发框架。然而，如果需要实现以下一个或多个目标，那么ArkUI NDK接口就能派上用场：
 

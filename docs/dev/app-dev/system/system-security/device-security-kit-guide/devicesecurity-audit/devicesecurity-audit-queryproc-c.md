@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "进程信息查询场景（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-queryproc-c
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -4,6 +4,7 @@ title: "ArkTS层调用Native层接口时的线程相关问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-14
 ---
 
+
 **问题详情**
 
 1. ArkTS层按钮点击后，调用Native层接口时，Native层代码是否在主线程中执行？

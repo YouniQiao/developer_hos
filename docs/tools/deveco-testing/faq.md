@@ -1,7 +1,9 @@
 ---
 title: "常见问题"
 displayed_sidebar: devecoTestingSidebar
+format: md
 ---
+
 
 # 常见问题
 

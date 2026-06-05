@@ -2,7 +2,9 @@
 title: "素材管理"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-material-0000001174571148
+format: md
 ---
+
 
 # 素材管理
 

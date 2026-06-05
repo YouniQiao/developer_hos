@@ -1,7 +1,9 @@
 ---
 title: "@performance/typed-array-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/typed-array-check
 

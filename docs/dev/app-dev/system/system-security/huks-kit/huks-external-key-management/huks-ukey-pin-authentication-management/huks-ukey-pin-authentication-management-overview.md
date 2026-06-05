@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Ukey PIN码认证介绍及规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-pin-authentication-management-overview
+format: md
 ---
+
 
 PIN（Personal Identification Number）码是Ukey设备的安全访问凭证，采用“硬件设备+PIN码”的双因子认证模式。用户必须同时拥有物理Ukey设备和正确的PIN码才能访问设备内的密钥材料。
 

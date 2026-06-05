@@ -2,7 +2,9 @@
 title: "命令：线性振动&lt;VibrateCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-vibratecommand-0000002499411342
+format: md
 ---
+
 
 # 命令：线性振动&lt;VibrateCommand&gt;
 

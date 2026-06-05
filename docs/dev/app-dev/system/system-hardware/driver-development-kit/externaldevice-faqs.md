@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/externaldevice-faqs
+format: md
 ---
+
 
 ## 编译或运行时无法找到头文件
 

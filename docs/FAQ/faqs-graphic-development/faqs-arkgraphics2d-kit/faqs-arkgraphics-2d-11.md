@@ -4,6 +4,7 @@ title: "OpenGL同一个上下文在多线程中使用问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-11
 ---
 
+
 **问题现象**
 
 在主线程中初始化EGL环境并创建上下文，然后在单独的子线程中处理渲染，这会导致黑屏。

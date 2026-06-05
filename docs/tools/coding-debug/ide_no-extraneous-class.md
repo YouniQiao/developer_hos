@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-extraneous-class"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-extraneous-class
 

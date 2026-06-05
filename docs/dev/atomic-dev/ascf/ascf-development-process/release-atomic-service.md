@@ -1,7 +1,9 @@
 ---
 title: "发布元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-atomic-service
+format: md
 ---
+
 
 发布元服务的基本流程如下：
 

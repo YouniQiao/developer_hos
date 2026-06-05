@@ -1,7 +1,9 @@
 ---
 title: "版本变更说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-release-note
+format: md
 ---
+
 
 * **[ASCF运行时](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-note-ascf-runtime)**
 * **[ASCF Plugin](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-note-ascf-plugin)**

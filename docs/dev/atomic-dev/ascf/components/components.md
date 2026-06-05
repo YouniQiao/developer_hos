@@ -1,7 +1,9 @@
 ---
 title: "组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components
+format: md
 ---
+
 
 * **[视图容器](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-view-container)**
 * **[基础内容](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-basic-components)**

@@ -4,6 +4,7 @@ title: "如何实现直播评论场景中顶部渐变遮罩效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-343
 ---
 
+
 1. 开发者可使用overlay在当前组件上添加遮罩。
 2. 通过linearGradient可设置颜色渐变效果。
 3. 使用blendMode让当前浮层与List混合。

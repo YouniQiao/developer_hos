@@ -2,7 +2,9 @@
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-introduction-0000001348573101
+format: md
 ---
+
 # 业务介绍
 
 为了帮助开发者提升推广任务的转化效果，华为应用市场应用推广平台推出延迟Deeplink功能，精准定位推广内容。

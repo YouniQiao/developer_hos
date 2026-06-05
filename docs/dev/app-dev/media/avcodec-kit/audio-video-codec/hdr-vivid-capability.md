@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "HDR Vivid能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-capability
+format: md
 ---
+
 
 * **[HDR Vivid视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-player)**
 * **[HDR Vivid视频录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-recorder)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "按需加载场景中加载动态模块失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-2
+format: md
 ---
+
 
 **问题现象**
 

@@ -2,7 +2,9 @@
 title: "审核时间"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-audittime-0000001894803096
+format: md
 ---
+
 # 审核时间
 
 1. 审核周期为素材提交后的1个工作日。

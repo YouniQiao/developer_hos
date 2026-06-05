@@ -2,7 +2,9 @@
 title: "电量充电图标"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-guide-powerchargeicon-0000002429946753
+format: md
 ---
+
 
 # 电量充电图标
 

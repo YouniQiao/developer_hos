@@ -1,7 +1,9 @@
 ---
 title: "转场动画概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-transition-overview
+format: md
 ---
+
 
 转场动画用于对即将出现或消失的组件施加动画效果，始终显示的组件应使用[属性动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-animation-overview)。转场动画旨在简化开发者对组件消失节点的管理，如果使用属性动画实现组件转场，开发者需在动画结束回调中手动删除组件节点。此外，动画结束前已删除的节点可能重新出现，因此需在回调中增加对节点状态的判断逻辑。
 

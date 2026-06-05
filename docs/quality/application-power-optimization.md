@@ -1,7 +1,9 @@
 ---
 title: "应用功耗优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-power-optimization
+format: md
 ---
+
 
 # 应用功耗优化
 

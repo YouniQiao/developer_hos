@@ -1,7 +1,9 @@
 ---
 title: "注册/注销Provider(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-registration-and-unregistration-ndk
+format: md
 ---
+
 
 从API 22开始，huksExternalCrypto提供Provider注册和注销功能接口。
 
@@ -238,5 +240,5 @@ static napi_value unregisterProvider(napi_env env, napi_callback_info info)
 ```
 de, &ret);
     return ret;
-}
+\}
 ```

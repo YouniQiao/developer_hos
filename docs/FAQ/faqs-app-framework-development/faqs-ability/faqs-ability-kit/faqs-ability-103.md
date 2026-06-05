@@ -1,7 +1,9 @@
 ---
 title: "如何设置应用自动重启"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-103
+format: md
 ---
+
 
 可以通过ApplicationContext.restartApp实现，具体请参考示例代码：
 

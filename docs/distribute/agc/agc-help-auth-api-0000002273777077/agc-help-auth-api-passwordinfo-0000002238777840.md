@@ -1,7 +1,9 @@
 ---
 title: "PasswordInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-passwordinfo-0000002238777840
+format: md
 ---
+
 
 更新密码操作相关的密码信息类。
 

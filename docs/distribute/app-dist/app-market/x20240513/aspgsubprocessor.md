@@ -2,7 +2,9 @@
 title: "Aspeigel SE的子数据处理者"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/aspgsubprocessor
+format: md
 ---
+
 # ASPIEGEL SE的子数据处理者
 
 | 分类 | 序号 | 实体名称 | 公司所在地 | 描述信息 |

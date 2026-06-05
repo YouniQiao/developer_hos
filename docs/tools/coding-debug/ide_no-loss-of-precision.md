@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-loss-of-precision"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-loss-of-precision
 

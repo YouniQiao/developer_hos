@@ -1,7 +1,9 @@
 ---
 title: "如何在Native侧调用ArkTS侧异步方法，并获取异步计算结果到Native侧"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-32
+format: md
 ---
+
 
 该场景可以通过在Native侧获取ArkTS侧的Promise对象来实现。具体步骤如下：
 
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
   3. 在Native接口实现中，使用napi\_call\_function接口执行ArkTS侧传入的callback回调，获取Promise对象。
   4. 通过napi\_get\_named\_property接口获取 Promise 对象的then和catch属性。
   5. 通过napi\_create\_function接口将上述定义的then和catch属性的 C++ 回调方法转换为 ArkTS 函数对象。
-  6. 通过napi\_call\_function接口执行then和catch属性对应的 ArkTS 函数对象，处理异步计算结果和异常信息。类似于在 ArkTS 侧调用“promise.then(() => {})和promise.catch(() => {})”。
+  6. 通过napi\_call\_function接口执行then和catch属性对应的 ArkTS 函数对象，处理异步计算结果和异常信息。类似于在 ArkTS 侧调用“promise.then(() => \{\})和promise.catch(() => \{\})”。
 
 具体可参考以下示例代码：
 

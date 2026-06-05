@@ -1,7 +1,9 @@
 ---
 title: "Localization Kit（本地化开发服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/localization-kit
+format: md
 ---
+
 
 * **[国际化和本地化概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-l10n)**
 * **[应用国际化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n)**

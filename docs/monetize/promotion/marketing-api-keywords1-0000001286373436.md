@@ -2,7 +2,9 @@
 title: "查询关键词"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-keywords1-0000001286373436
+format: md
 ---
+
 # 查询关键词
 
 您通过本接口可以查询关键词信息，包括关键词和否词信息。

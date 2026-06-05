@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/explicit-function-return-type"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/explicit-function-return-type
 

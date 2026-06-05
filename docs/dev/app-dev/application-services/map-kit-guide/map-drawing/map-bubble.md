@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "气泡"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-bubble
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -25,7 +27,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [BubbleParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#bubbleparams) | 气泡参数。 |
-| [addBubble](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addbubble)(params: [mapCommon.BubbleParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#bubbleparams)): Promise<[Bubble](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-bubble)> | 在地图上添加气泡。 |
+| [addBubble](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addbubble)(params: [mapCommon.BubbleParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#bubbleparams)): Promise[Bubble](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-bubble) | 在地图上添加气泡。 |
 | [Bubble](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-bubble) | 气泡，支持更新和查询相关属性。 |
 
 ## 开发步骤

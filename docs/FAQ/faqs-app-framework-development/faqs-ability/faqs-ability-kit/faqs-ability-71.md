@@ -4,6 +4,7 @@ title: "如何获取App版本号，版本名，屏幕分辨率等信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-71
 ---
 
+
 1. 通过@kit.AbilityKit中的bundleManager模块查询bundleInfo，其中包含App版本号和版本名。
 
    ```

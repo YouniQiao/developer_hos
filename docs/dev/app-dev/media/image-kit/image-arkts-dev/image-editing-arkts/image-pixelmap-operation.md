@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用PixelMap完成位图操作"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation
+format: md
 ---
+
 
 当需要对目标图片中的部分区域进行处理时，可以使用位图操作功能。此功能常用于图片美化等操作。
 

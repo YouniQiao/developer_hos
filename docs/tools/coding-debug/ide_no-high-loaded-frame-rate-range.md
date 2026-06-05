@@ -1,7 +1,9 @@
 ---
 title: "@performance/no-high-loaded-frame-rate-range"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/no-high-loaded-frame-rate-range
 

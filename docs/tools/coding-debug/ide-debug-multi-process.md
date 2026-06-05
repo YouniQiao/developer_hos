@@ -1,7 +1,9 @@
 ---
 title: "多进程调试"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 多进程调试
 

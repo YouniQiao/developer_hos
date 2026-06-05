@@ -1,7 +1,9 @@
 ---
 title: "打包快游戏"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-packing-0000002351893525
+format: md
 ---
+
 
 ## Cocos Creator
 

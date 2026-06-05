@@ -2,7 +2,9 @@
 title: "业务概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-interact-card-overview-0000002351893581
 has_merged_cells: true
+format: md
 ---
+
 
 创新互动卡片聚焦即点即用，解决用户碎片化的娱乐需求，支持玩家在桌面卡片上完成游戏内容的互动，为用户带来更多的创新交互玩法。
 

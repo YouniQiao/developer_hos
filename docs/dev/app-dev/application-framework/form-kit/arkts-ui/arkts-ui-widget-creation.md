@@ -1,7 +1,9 @@
 ---
 title: "创建ArkTS卡片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation
+format: md
 ---
+
 
 ArkTS卡片有两种创建卡片包的方式。开发者在开发过程中任选其一即可。
 

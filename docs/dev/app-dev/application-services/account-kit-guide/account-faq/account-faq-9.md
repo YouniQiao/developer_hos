@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "OpenID和UnionID的格式说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9
+format: md
 ---
+
 
 ## 长度
 

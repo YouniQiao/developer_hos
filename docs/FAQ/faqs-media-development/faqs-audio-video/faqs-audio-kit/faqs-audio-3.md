@@ -4,6 +4,7 @@ title: "OpenSL ES音频录制示例调用崩溃"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-3
 ---
 
+
 **问题现象**
 
 OpenSL ES音频录制接口调用失败，程序崩溃。报错日志信息如下：

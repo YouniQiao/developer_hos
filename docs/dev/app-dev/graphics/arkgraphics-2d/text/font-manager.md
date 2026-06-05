@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "字体管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/font-manager
+format: md
 ---
+
 
 * **[使用主题字体（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme-font-arkts)**
 * **[自定义字体的注册和使用（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/custom-font-arkts)**

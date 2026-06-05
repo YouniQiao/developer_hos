@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ROI视频编码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-roi
+format: md
 ---
+
 
 ## 基础概念
 

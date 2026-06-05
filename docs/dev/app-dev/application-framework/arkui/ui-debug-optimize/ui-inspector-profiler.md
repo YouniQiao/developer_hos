@@ -1,7 +1,9 @@
 ---
 title: "UI调优"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler
+format: md
 ---
+
 
 本章节主要介绍UI的dump和调优能力，用于提高开发效率和优化开发者体验。
 
@@ -89,7 +91,7 @@ hdc shell hidumper -s WindowManagerService -a '-a'
   + State variables：根节点状态变量。从下面的信息可以看到Page下有状态变量@State 'message'[0]的具体信息：
     - [0]代表状态变量id。
     - Owned by @Component 'Page'[4]：当前状态变量属于组件'Page'[4],[4]为自定义组件id。
-    - Sync peers：当前状态变量的同步对象，即@State message改变会通知@Link 'message'[-1] <@Component 'Child'[7]>刷新。
+    - Sync peers：当前状态变量的同步对象，即@State message改变会通知@Link 'message'[-1] \<@Component 'Child'[7]\>刷新。
     - dependencies：
       * variable assignment affects elmtIds：状态变量改变会触发的组件的刷新。例如，@State message的改变会触发Text[6]的刷新。
       * Dependent elements：当前状态变量和其同步对象的关联组件。

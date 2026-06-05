@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "跨设备连接UIAbility开发指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilityconnectmanager-guidelines
+format: md
 ---
+
 
 ## 简介
 
@@ -80,13 +82,13 @@ hidumper -s 4700 -a "buscenter -l remote_device_info"
 | --- | --- |
 | createAbilityConnectionSession(serviceName: string, context: Context, peerInfo: PeerInfo, connectOptions: ConnectOptions): number; | 创建应用间的会话。 |
 | destroyAbilityConnectionSession(sessionId: number): void; | 销毁应用间的会话。 |
-| connect(sessionId: number): Promise<ConnectResult>; | source侧进行ability的连接。 |
-| acceptConnect(sessionId: number, token: string): Promise<void>; | sink侧进行ability的连接。 |
+| connect(sessionId: number): Promise\<ConnectResult\>; | source侧进行ability的连接。 |
+| acceptConnect(sessionId: number, token: string): Promise\<void\>; | sink侧进行ability的连接。 |
 | disconnect(sessionId: number): void; | 断开ability的连接。 |
-| on(type: 'connect' | 'disconnect' | 'receiveMessage' | 'receiveData', sessionId: number, callback: Callback<EventCallbackInfo>): void | 监听事件。 |
-| off(type: 'connect' | 'disconnect' | 'receiveMessage' | 'receiveData', sessionId: number, callback?: Callback<EventCallbackInfo>): void | 取消事件的监听。 |
-| sendMessage(sessionId: number, msg: string): Promise<void>; | 发送文本信息。 |
-| sendData(sessionId: number, data: ArrayBuffer): Promise<void>; | 发送ArrayBuffer字节流。 |
+| on(type: 'connect' | 'disconnect' | 'receiveMessage' | 'receiveData', sessionId: number, callback: Callback\<EventCallbackInfo\>): void | 监听事件。 |
+| off(type: 'connect' | 'disconnect' | 'receiveMessage' | 'receiveData', sessionId: number, callback?: Callback\<EventCallbackInfo\>): void | 取消事件的监听。 |
+| sendMessage(sessionId: number, msg: string): Promise\<void\>; | 发送文本信息。 |
+| sendData(sessionId: number, data: ArrayBuffer): Promise\<void\>; | 发送ArrayBuffer字节流。 |
 
 ### 开发步骤
 

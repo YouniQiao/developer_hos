@@ -1,7 +1,9 @@
 ---
 title: "支持触控板输入事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-touchpad
+format: md
 ---
+
 
 ![](./img/aa46eed0.png)
 

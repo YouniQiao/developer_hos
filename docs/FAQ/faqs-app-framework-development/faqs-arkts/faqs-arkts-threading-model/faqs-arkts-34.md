@@ -1,7 +1,9 @@
 ---
 title: "在多线程并发场景中，如何实现安全访问同一块共享内存"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-34
+format: md
 ---
+
 
 可以使用SharedArrayBuffer对象实现。SharedArrayBuffer对象存储的数据在同时被修改时，必须通过Atomics原子操作确保其同步性，即下一个操作必须在上一个操作完成后才能开始。代码示例：
 

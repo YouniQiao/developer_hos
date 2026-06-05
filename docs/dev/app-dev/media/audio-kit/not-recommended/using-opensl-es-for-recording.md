@@ -2,9 +2,11 @@
 displayed_sidebar: appDevSidebar
 title: "使用OpenSL ES开发音频录制功能(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-opensl-es-for-recording
+format: md
 ---
 
-OpenSL ES全称为Open Sound Library for Embedded Systems，是一个嵌入式、跨平台、免费的音频处理库。为嵌入式移动多媒体设备上的应用开发者提供标准化、高性能、低延迟的API。HarmonyOS的Native API基于[Khronos Group](https://www.khronos.org/)开发的[OpenSL ES](https://www.khronos.org/opensles/) 1.0.1 API 规范实现，开发者可以通过<OpenSLES.h>和<OpenSLES\_OpenHarmony.h>在HarmonyOS上使用相关API。
+
+OpenSL ES全称为Open Sound Library for Embedded Systems，是一个嵌入式、跨平台、免费的音频处理库。为嵌入式移动多媒体设备上的应用开发者提供标准化、高性能、低延迟的API。HarmonyOS的Native API基于[Khronos Group](https://www.khronos.org/)开发的[OpenSL ES](https://www.khronos.org/opensles/) 1.0.1 API 规范实现，开发者可以通过\<OpenSLES.h\>和\<OpenSLES\_OpenHarmony.h\>在HarmonyOS上使用相关API。
 
 ## 使用OHAudio替代OpenSL ES
 
@@ -48,7 +50,7 @@ OpenSL ES中提供了以下的接口，HarmonyOS当前仅实现了部分[接口]
   + SLresult (\*GetRecordState) (SLRecordItf self,SLuint32 \*pState)
 * **HarmonyOS上支持的BufferQueue接口：**
 
-  以下接口需引入<OpenSLES\_OpenHarmony.h>使用。
+  以下接口需引入\<OpenSLES\_OpenHarmony.h\>使用。
 
   | 接口 | 说明 |
   | --- | --- |

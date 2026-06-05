@@ -1,7 +1,9 @@
 ---
 title: "ArkTS模块化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime-module
+format: md
 ---
+
 
 * **[模块化运行简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-principle)**
 * **[动态加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import)**

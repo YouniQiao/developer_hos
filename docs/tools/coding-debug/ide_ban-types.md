@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/ban-types"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/ban-types
 

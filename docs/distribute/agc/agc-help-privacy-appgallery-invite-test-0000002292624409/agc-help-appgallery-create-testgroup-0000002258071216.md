@@ -1,7 +1,9 @@
 ---
 title: "创建测试群组"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-appgallery-create-testgroup-0000002258071216
+format: md
 ---
+
 
 在创建测试版本前，您需要提前确定需要参与测试的用户。测试用户在AGC中以测试群组的形式来管理，您可以将测试用户添加到测试群组中，在发布测试版本时选择分发到指定的测试群组。
 

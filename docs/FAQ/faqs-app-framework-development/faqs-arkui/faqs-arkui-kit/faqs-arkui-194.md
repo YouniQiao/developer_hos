@@ -4,6 +4,7 @@ title: "如何锁定设备竖屏，使得窗口不随屏幕旋转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-194
 ---
 
+
 使用setPreferredOrientation方法锁定竖屏，设置orientation为window.Orientation.PORTRAIT。参考代码如下：
 
 ```

@@ -1,7 +1,9 @@
 ---
 title: "@performance/monitor-invisible-area-in-image-animation"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/monitor-invisible-area-in-image-animation
 

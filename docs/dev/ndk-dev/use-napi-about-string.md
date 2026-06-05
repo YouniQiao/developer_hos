@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API接口创建和获取string值"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-string
+format: md
 ---
+
 
 ## 简介
 

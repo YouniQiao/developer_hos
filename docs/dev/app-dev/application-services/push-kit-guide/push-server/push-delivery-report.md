@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "（可选）推送报告"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-delivery-report
+format: md
 ---
+
 
 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，点击“开发与服务”，在项目列表中找到您的项目，通过“增长 > 推送服务 > 推送报告”，您可以在“推送报告”中查看推送消息详情和推送用户详情。
 

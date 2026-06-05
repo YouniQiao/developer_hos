@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "会话管理(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management
+format: md
 ---
+
 
 相机使用预览、拍照、录像、元数据功能前，均需要创建相机会话。
 

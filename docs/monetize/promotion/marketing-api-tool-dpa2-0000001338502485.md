@@ -2,7 +2,9 @@
 title: "查询商品库筛选条件取值"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa2-0000001338502485
+format: md
 ---
+
 # 查询商品库筛选条件取值
 
 您通过本接口查询商品库筛选条件。
@@ -94,7 +96,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
     HTTPS/1.1 200 OK
 
-    \{
+    \\{
 
     ```
         "code": "200",

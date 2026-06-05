@@ -4,6 +4,7 @@ title: "Native侧如何合理管控对象的生命周期"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-80
 ---
 
+
 **解决措施**
 
 在进行Node-API调用时，引擎堆中的对象的句柄（handle）会作为napi\_value返回，这些句柄控制对象的生命周期。对象句柄与一个scope相关联，默认scope的生命周期与native方法调用的生命周期一致。因此，这些句柄关联的对象在native方法调用期间保持存活状态。

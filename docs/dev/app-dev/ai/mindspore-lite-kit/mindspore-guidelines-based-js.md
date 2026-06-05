@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite实现图像分类（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-js
+format: md
 ---
+
 
 ## 场景说明
 
@@ -26,9 +28,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mind
 
 | 接口名 | 描述 |
 | --- | --- |
-| loadModelFromFile(model: string, context?: Context): Promise<Model> | 从路径加载模型。 |
+| loadModelFromFile(model: string, context?: Context): Promise\<Model\> | 从路径加载模型。 |
 | getInputs(): MSTensor[] | 获取模型的输入。 |
-| predict(inputs: MSTensor[]): Promise<MSTensor[]> | 推理模型。 |
+| predict(inputs: MSTensor[]): Promise\<MSTensor[]\> | 推理模型。 |
 | getData(): ArrayBuffer | 获取张量的数据。 |
 | setData(inputArray: ArrayBuffer): void | 设置张量的数据。 |
 
@@ -110,7 +112,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mind
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MindSporeLiteKit/MindSporeLiteArkTSDemo/entry/src/main/ets/pages/model.ets#L16-L48" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：model.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MindSporeLiteKit/MindSporeLiteArkTSDemo/entry/src/main/ets/pages/model.ets#L16-L48" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：model.ets</a></div>
 
 
 ### 实现图像输入和预处理，并执行推理
@@ -324,7 +326,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mind
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MindSporeLiteKit/MindSporeLiteArkTSDemo/entry/src/main/ets/pages/Index.ets#L16-L351" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MindSporeLiteKit/MindSporeLiteArkTSDemo/entry/src/main/ets/pages/Index.ets#L16-L351" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 
 ### 调测验证

@@ -1,7 +1,9 @@
 ---
 title: "Node-API常见问题汇总"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-questions
+format: md
 ---
+
 
 * **[Node-API常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-faqs)**
 * **[稳定性相关问题汇总](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-stability)**

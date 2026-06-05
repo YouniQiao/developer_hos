@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ContentType使用场景说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-appendix
+format: md
 ---
+
 
 华为账号昵称
 

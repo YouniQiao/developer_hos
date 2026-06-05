@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Push Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-kit-introduction
+format: md
 ---
+
 
 Push Kit（推送服务）是华为提供的消息推送平台，建立了从云端到终端的消息推送通道。所有HarmonyOS应用可通过集成Push Kit，实现向应用实时推送消息，使消息易见，构筑良好的用户关系，提升用户的感知度和活跃度。
 

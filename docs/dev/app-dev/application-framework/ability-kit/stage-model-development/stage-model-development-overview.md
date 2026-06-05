@@ -1,7 +1,9 @@
 ---
 title: "Stage模型开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development-overview
+format: md
 ---
+
 
 ## 基本概念
 

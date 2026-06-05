@@ -1,7 +1,9 @@
 ---
 title: "受限开放权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions
+format: md
 ---
+
 
 ## 申请方式
 

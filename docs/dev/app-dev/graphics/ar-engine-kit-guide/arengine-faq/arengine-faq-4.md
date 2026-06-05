@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "某些特殊场景下（如附近存在磁场干扰、手机发烫或扫描到重复纹理等），出现平面漂移或者位姿数据跳变现象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-4
+format: md
 ---
+
 
 ## 现象描述
 

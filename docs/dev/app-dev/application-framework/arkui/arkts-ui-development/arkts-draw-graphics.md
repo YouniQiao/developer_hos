@@ -1,7 +1,9 @@
 ---
 title: "几何图形绘制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-draw-graphics
+format: md
 ---
+
 
 * **[几何图形绘制概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shape-overview)**
 * **[绘制几何图形 (Shape)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-geometric-shape-drawing)**

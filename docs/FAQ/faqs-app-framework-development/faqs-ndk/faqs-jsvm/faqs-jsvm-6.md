@@ -4,6 +4,7 @@ title: "如何解决Finalizer方法中执行JS代码崩溃问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-6
 ---
 
+
 **问题现象**
 
 崩溃的调用栈如下：

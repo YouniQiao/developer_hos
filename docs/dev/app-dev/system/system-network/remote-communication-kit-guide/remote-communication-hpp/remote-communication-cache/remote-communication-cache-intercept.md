@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义缓存拦截器"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cache-intercept
+format: md
 ---
+
 
 从6.0.0(20)开始，支持自定义缓存拦截器。
 

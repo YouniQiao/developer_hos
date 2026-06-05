@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图元绘制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/primitive-drawing
+format: md
 ---
+
 
 * **[图元绘制概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/primitive-drawing-overview)**
 * **[几何形状绘制（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geometric-shape-drawing-arkts)**

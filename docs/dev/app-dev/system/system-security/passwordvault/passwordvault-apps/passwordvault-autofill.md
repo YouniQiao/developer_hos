@@ -1,7 +1,9 @@
 ---
 title: "自动填充"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill
+format: md
 ---
+
 
 * **[账号密码填充](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-acc-password)**
 * **[强密码填充](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-strong-password)**

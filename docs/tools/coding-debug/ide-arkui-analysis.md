@@ -1,7 +1,9 @@
 ---
 title: "ArkUI分析"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # ArkUI分析
 

@@ -4,6 +4,7 @@ title: "如何使HSP包版本号统一"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-34
 ---
 
+
 **问题场景**
 
 当多个业务团队各自开发各自的模块时，确保每个团队的HSP版本号一致较为困难。即使初始版本号一致，如果某个团队后续升级了版本号，其他未修改代码的团队也需重新升级版本号并重新打包。

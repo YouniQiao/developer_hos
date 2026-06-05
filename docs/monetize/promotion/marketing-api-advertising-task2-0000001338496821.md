@@ -2,7 +2,9 @@
 title: "查询任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-task2-0000001338496821
+format: md
 ---
+
 # 查询任务
 
 您通过本接口查询任务。

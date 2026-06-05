@@ -1,7 +1,9 @@
 ---
 title: "ECS Converter概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-converter-overview-0000002494439226
+format: md
 ---
+
 
 ## 功能介绍
 

@@ -4,6 +4,7 @@ title: "使用NAPI扩展TS接口时，常用属性和实现接口的基本用法
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-21
 ---
 
+
 1. env是使用NAPI的模块化编程，注册模块后，通过回调函数调用。
 
    ```

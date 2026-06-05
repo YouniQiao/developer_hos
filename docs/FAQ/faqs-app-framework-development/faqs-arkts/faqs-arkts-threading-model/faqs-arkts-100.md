@@ -1,7 +1,9 @@
 ---
 title: "如何对异步方法进行插桩/替换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-100
+format: md
 ---
+
 
 开发者可通过Aspect类封装提供切面能力的接口，用于对类方法进行前后插桩或替换实现，其中[addBefore()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#addbefore11)方法可在指定的类对象的原方法执行前插入一个函数，[replace()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#replace11)方法可将指定类的原方法替换为另一个函数。
 

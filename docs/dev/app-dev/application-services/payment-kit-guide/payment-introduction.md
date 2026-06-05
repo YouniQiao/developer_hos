@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Payment Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-introduction
+format: md
 ---
+
 
 Payment Kit（鸿蒙支付服务）提供了方便、安全和快捷的支付方式，助力开发者在商户应用/元服务中快速实现支付功能。
 

@@ -2,7 +2,9 @@
 title: "否定关键词管理列表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/negative-keyword-lists-0000001174605089
+format: md
 ---
+
 # 否定关键词管理列表
 
 ## 概述

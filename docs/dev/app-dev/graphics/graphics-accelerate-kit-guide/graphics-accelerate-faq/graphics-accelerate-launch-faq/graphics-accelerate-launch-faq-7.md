@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "秒级启动后，游戏出现类似UIContent is nullptr报错导致登录等异常，应该如何排查"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-7
+format: md
 ---
+
 
 ![](./img/371f8f9f.png)
 

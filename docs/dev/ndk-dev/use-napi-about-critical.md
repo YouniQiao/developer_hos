@@ -1,7 +1,9 @@
 ---
 title: "使用扩展的Node-API接口创建和销毁临界区作用域及访问字符串内容"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-critical
+format: md
 ---
+
 
 Node-API扩展接口napi\_open\_critical\_scope用于打开临界区作用域，napi\_close\_critical\_scope用于关闭临界区作用域。
 

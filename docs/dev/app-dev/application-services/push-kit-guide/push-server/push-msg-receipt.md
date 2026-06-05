@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "（可选）开发消息回执"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt
+format: md
 ---
+
 
 ## 场景介绍
 

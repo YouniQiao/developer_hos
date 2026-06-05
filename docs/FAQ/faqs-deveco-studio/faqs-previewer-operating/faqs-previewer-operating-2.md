@@ -4,6 +4,7 @@ title: "预览功能使用过程中，可能无法使用帮助菜单压缩日志
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-2
 ---
 
+
 **问题现象**
 
 当同时预览多个工程时，点击帮助菜单中的“压缩日志”按钮，可能会因日志文件被占用而无法压缩。

@@ -2,7 +2,9 @@
 title: "8. 违规获取个人信息"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-08
+format: md
 ---
+
 # 8. 违规获取个人信息
 
 * 重点整治非服务所必需或无合理场景，通过积分、奖励、优惠等方式欺骗误导用户提供身份证号码及个人生物特征信息的行为。

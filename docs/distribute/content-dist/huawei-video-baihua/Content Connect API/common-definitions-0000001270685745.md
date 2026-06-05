@@ -2,7 +2,9 @@
 title: "公共定义"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/common-definitions-0000001270685745
+format: md
 ---
+
 
 # 公共定义
 

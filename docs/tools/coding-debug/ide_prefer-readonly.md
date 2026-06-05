@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-readonly"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-readonly
 

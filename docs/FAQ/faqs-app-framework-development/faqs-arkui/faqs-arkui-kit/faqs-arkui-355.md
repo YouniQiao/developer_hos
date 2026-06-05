@@ -1,7 +1,9 @@
 ---
 title: "汉字转拼音如何去掉声调符号"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-355
+format: md
 ---
+
 
 可以使用“Any-Latn”将汉字内容转写为拼音，再使用“Latin-ASCII”去除声调符号。示例代码如下：
 

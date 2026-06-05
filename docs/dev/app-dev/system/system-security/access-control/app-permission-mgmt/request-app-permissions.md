@@ -1,7 +1,9 @@
 ---
 title: "申请应用权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-app-permissions
+format: md
 ---
+
 
 * **[选择申请权限的方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode)**
 * **[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)**

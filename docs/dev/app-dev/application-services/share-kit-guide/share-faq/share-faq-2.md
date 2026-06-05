@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "分享数据类型不支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq-2
+format: md
 ---
+
 
 **现象描述：**
 

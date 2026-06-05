@@ -1,7 +1,9 @@
 ---
 title: "基础内容"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-basic-components
+format: md
 ---
+
 
 * **[icon](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-icon)**
 * **[progress](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-progress)**

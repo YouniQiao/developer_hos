@@ -1,7 +1,9 @@
 ---
 title: "系统能力适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-creator-system-0000002318337730
+format: md
 ---
+
 
 本文介绍Cocos Creator 2.X游戏如何适配系统能力。
 

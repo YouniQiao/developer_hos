@@ -2,7 +2,9 @@
 title: "AssociatedApp"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_associatedapp-0000001294717601
+format: md
 ---
+
 
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |

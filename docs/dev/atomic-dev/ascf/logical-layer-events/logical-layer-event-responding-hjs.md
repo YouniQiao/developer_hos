@@ -1,7 +1,9 @@
 ---
 title: "使用hjs函数响应事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-event-responding-hjs
+format: md
 ---
+
 
 使用hjs函数处理事件时，hjs函数接受2个参数，第一个是event对象，event除了有上述打印的event结构中基本的属性外，还具有一个instance属性；第二个参数是ownerInstance，和event.instance一样是一个ComponentDescriptor对象。
 

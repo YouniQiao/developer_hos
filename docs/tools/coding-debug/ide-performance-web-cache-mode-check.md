@@ -1,7 +1,9 @@
 ---
 title: "@performance/web-cache-mode-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/web-cache-mode-check
 

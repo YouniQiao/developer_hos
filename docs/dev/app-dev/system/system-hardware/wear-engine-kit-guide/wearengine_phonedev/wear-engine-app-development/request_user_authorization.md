@@ -1,7 +1,9 @@
 ---
 title: "请求用户授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request_user_authorization
+format: md
 ---
+
 
 为保护用户隐私，Wear Engine的API需要用户授权才可以正常访问。建议开发者在用户首次调用Wear Engine开放能力的时候执行本章节操作。
 

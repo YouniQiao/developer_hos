@@ -1,7 +1,9 @@
 ---
 title: "应用数据迁移适配指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-adaptation
+format: md
 ---
+
 
 ## 环境准备
 
@@ -136,7 +138,7 @@ APK应用沙箱目录与备份恢复目录映射关系见下表中所示：
 
 | APK应用沙箱目录 | 备份恢复目录示例 | 备份恢复目录获取方式 |
 | --- | --- | --- |
-| /data/user\_de/{userId}/{APK包名}/ | /data/storage/el1/base/.backup/restore/{APK包名}/de/ | this.context.area = contextConstant.AreaMode.EL1;  let deSourcePath = this.context.backupDir + "restore/{APK包名}/de/" |
-| /data/user/{userId}/{APK包名}/ | /data/storage/el2/base/.backup/restore/{APK包名}/ce/ | this.context.area = contextConstant.AreaMode.EL2;  let ceSourcePath = this.context.backupDir + "restore/{APK包名}/ce/" |
-| /data/media/{userId}/Android/data/{APK包名}/ | /data/storage/el2/base/.backup/restore/{APK包名}/A/data/ | this.context.area = contextConstant.AreaMode.EL2;  let dataSourcePath = this.context.backupDir + "restore/{APK包名}/A/data/" |
-| /data/media/{userId}/Android/obb/{APK包名}/ | /data/storage/el2/base/.backup/restore/{APK包名}/A/obb/ | this.context.area = contextConstant.AreaMode.EL2;  let obbSourcePath = this.context.backupDir + "restore/{APK包名}/A/obb/" |
+| /data/user\_de/\{userId\}/\{APK包名\}/ | /data/storage/el1/base/.backup/restore/\{APK包名\}/de/ | this.context.area = contextConstant.AreaMode.EL1;  let deSourcePath = this.context.backupDir + "restore/\{APK包名\}/de/" |
+| /data/user/\{userId\}/\{APK包名\}/ | /data/storage/el2/base/.backup/restore/\{APK包名\}/ce/ | this.context.area = contextConstant.AreaMode.EL2;  let ceSourcePath = this.context.backupDir + "restore/\{APK包名\}/ce/" |
+| /data/media/\{userId\}/Android/data/\{APK包名\}/ | /data/storage/el2/base/.backup/restore/\{APK包名\}/A/data/ | this.context.area = contextConstant.AreaMode.EL2;  let dataSourcePath = this.context.backupDir + "restore/\{APK包名\}/A/data/" |
+| /data/media/\{userId\}/Android/obb/\{APK包名\}/ | /data/storage/el2/base/.backup/restore/\{APK包名\}/A/obb/ | this.context.area = contextConstant.AreaMode.EL2;  let obbSourcePath = this.context.backupDir + "restore/\{APK包名\}/A/obb/" |

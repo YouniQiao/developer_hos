@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Ads Kit（广告服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-kit-guide
+format: md
 ---
+
 
 * **[Ads Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-introduction)**
 * **[Ads Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-kit-glossary)**

@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API调用返回值为promise的ArkTS方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-method-promise
+format: md
 ---
+
 
 ## 场景介绍
 

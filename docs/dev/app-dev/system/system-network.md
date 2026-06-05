@@ -1,7 +1,9 @@
 ---
 title: "网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-network
+format: md
 ---
+
 
 * **[Connectivity Kit（短距通信服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit)**
 * **[Distributed Service Kit（分布式管理服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-service-kit)**

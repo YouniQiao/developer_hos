@@ -1,7 +1,9 @@
 ---
 title: "@performance/reuse-date-instances-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/reuse-date-instances-check
 

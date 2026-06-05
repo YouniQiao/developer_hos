@@ -1,7 +1,9 @@
 ---
 title: "批量添加商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-import-0000002320646001
+format: md
 ---
+
 
 ## 批量添加数字商品
 

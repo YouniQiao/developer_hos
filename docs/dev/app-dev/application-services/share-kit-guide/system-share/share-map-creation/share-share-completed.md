@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取分享结果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-share-completed
+format: md
 ---
+
 
 ## 场景介绍
 

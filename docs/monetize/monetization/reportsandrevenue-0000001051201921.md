@@ -2,7 +2,9 @@
 title: "报表与收入"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/reportsandrevenue-0000001051201921
+format: md
 ---
+
 
 
 * **[数据报表](https://developer.huawei.com/consumer/cn/doc/monetize/report-0000001051321848)**

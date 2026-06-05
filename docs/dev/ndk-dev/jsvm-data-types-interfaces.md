@@ -1,7 +1,9 @@
 ---
 title: "JSVM-API 支持的数据类型和接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-data-types-interfaces
+format: md
 ---
+
 
 ## JSVM-API 的数据类型
 

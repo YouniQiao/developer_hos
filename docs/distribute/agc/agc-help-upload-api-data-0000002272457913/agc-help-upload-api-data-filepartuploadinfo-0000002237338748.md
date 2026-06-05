@@ -1,7 +1,9 @@
 ---
 title: "FilePartUploadInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-data-filepartuploadinfo-0000002237338748
+format: md
 ---
+
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |

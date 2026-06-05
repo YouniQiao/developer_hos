@@ -1,7 +1,9 @@
 ---
 title: "添加、删除和获取放通应用列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-unrestricted-app-list
+format: md
 ---
+
 
 ![](./img/ed12ada6.png)
 
@@ -17,9 +19,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file
 
 | 接口名 | 描述 |
 | --- | --- |
-| [addUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#addunrestrictedapplicationlist)(appIds: Array<string>, userId?: number): Promise<void> | 使用Promise方式添加放通应用列表。 |
-| [removeUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#removeunrestrictedapplicationlist)(appIds: Array<string>, userId?: number): Promise<void> | 使用Promise方式删除放通应用列表。 |
-| [getUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getunrestrictedapplicationlist)(userId?: number): Promise<Array<string>> | 使用Promise方式获取放通应用列表。 |
+| [addUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#addunrestrictedapplicationlist)(appIds: Array\<string\>, userId?: number): Promise\<void\> | 使用Promise方式添加放通应用列表。 |
+| [removeUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#removeunrestrictedapplicationlist)(appIds: Array\<string\>, userId?: number): Promise\<void\> | 使用Promise方式删除放通应用列表。 |
+| [getUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getunrestrictedapplicationlist)(userId?: number): Promise\<Array<string\>> | 使用Promise方式获取放通应用列表。 |
 
 ## 开发步骤
 

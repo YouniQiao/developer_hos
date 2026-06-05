@@ -4,6 +4,7 @@ title: "如何在调用处实现接口中的方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-142
 ---
 
+
 示例代码如下：
 
 ```

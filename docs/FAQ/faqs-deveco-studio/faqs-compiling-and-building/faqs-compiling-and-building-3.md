@@ -1,7 +1,9 @@
 ---
 title: "编译告警“The re-export name 'xx' need to be marked as type”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-3
+format: md
 ---
+
 
 **问题现象**
 

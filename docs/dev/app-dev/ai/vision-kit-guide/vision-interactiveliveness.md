@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "人脸活体检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-interactiveliveness
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -37,8 +39,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/visi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [startLivenessDetection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/vision-interactive-liveness#startlivenessdetection)(config: InteractiveLivenessConfig): Promise<boolean> | 跳转到人脸活体检测页面的入口 |
-| [getInteractiveLivenessResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/vision-interactive-liveness#getinteractivelivenessresult)(): Promise<InteractiveLivenessResult> | 获取人脸活体检测的结果。使用Promise异步回调 |
+| [startLivenessDetection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/vision-interactive-liveness#startlivenessdetection)(config: InteractiveLivenessConfig): Promise\<boolean\> | 跳转到人脸活体检测页面的入口 |
+| [getInteractiveLivenessResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/vision-interactive-liveness#getinteractivelivenessresult)(): Promise\<InteractiveLivenessResult\> | 获取人脸活体检测的结果。使用Promise异步回调 |
 
 ## 开发步骤
 

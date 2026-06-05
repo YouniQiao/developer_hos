@@ -2,7 +2,9 @@
 title: 电商购物类
 sidebar_label: 电商购物类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples5-0000001930419478
+format: md
 ---
+
 # 电商购物类
 
 购物、买菜等服务类型的应用或业务场景，旨在让用户享受高效的浏览和互动。这类场景的核心是浏览商品、商品比价、直播购，因此，在大屏设备上可以向用户展示更多的商品选择，提供更轻便高效的交互体验。此类应用有如下特点：

@@ -1,7 +1,9 @@
 ---
 title: "svg动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-svg
+format: md
 ---
+
 
 为svg组件添加动画效果。
 

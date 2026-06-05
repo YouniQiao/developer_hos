@@ -1,7 +1,9 @@
 ---
 title: "slider开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-slider
+format: md
 ---
+
 
 slider为滑动条组件，用来快速调节音量、亮度等。具体用法请参考[slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-slider)。
 

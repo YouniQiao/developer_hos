@@ -1,7 +1,9 @@
 ---
 title: "蓝牙服务开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bluetooth-overview
+format: md
 ---
+
 
 ## 概述
 

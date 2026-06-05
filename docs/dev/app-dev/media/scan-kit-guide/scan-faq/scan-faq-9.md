@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义界面扫码黑屏现象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-9
+format: md
 ---
+
 
 **问题现象**
 

@@ -1,7 +1,9 @@
 ---
 title: "设置HDC鉴权密钥"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-set-hdc-authentication-key
+format: md
 ---
+
 
 ![](./img/876931ac.png)
 
@@ -17,7 +19,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setHdcAuthenticationKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#sethdcauthenticationkey)(devType: AuthenticateDeviceType, keyType: AuthenticateKeyType, key: Uint8Array): Promise<void> | 使用Promise方式设置上下位机间的HDC鉴权密钥。 |
+| [setHdcAuthenticationKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#sethdcauthenticationkey)(devType: AuthenticateDeviceType, keyType: AuthenticateKeyType, key: Uint8Array): Promise\<void\> | 使用Promise方式设置上下位机间的HDC鉴权密钥。 |
 
 ## 开发步骤
 

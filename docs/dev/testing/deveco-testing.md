@@ -1,7 +1,9 @@
 ---
 title: "DevEco Testing"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing
+format: md
 ---
+
 
 * **[快速上手](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-familiar)**
 * **[专项测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing)**

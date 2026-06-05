@@ -2,7 +2,9 @@
 title: "字体设计指导及规范"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/font-specification-0000001055508440
+format: md
 ---
+
 
 # 字体设计指导及规范
 

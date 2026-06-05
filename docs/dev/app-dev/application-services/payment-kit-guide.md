@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Payment Kit（鸿蒙支付服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-kit-guide
+format: md
 ---
+
 
 * **[Payment Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-introduction)**
 * **[接入规范学习](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-access-specifications)**

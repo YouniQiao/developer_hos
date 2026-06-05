@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅或取消订阅KIA文件拷贝、重命名和压缩事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-kia-event
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,12 +16,12 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file
 
 | 接口名 | 描述 |
 | --- | --- |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#onkiacopy)(type: 'kiaCopy', callback: Callback<string>): void | 订阅KIA拷贝事件，需在业务初始化时注册。当用户拷贝KIA文件时会触发回调。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#offkiacopy)(type: 'kiaCopy', callback?: Callback<string>): void | 取消订阅KIA拷贝事件。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#onkiarename)(type: 'kiaRename', callback: Callback<string>): void | 订阅KIA重命名事件，需在业务初始化时注册。当用户重命名KIA文件时会触发回调。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#offkiarename)(type: 'kiaRename', callback?: Callback<string>): void | 取消订阅KIA重命名事件。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#onkiacompress)(type: 'kiaCompress', callback: Callback<string>): void | 订阅KIA压缩事件，需在业务初始化时注册。当用户压缩KIA文件时会触发回调。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#offkiacompress)(type: 'kiaCompress', callback?: Callback<string>): void | 取消订阅KIA压缩事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#onkiacopy)(type: 'kiaCopy', callback: Callback\<string\>): void | 订阅KIA拷贝事件，需在业务初始化时注册。当用户拷贝KIA文件时会触发回调。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#offkiacopy)(type: 'kiaCopy', callback?: Callback\<string\>): void | 取消订阅KIA拷贝事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#onkiarename)(type: 'kiaRename', callback: Callback\<string\>): void | 订阅KIA重命名事件，需在业务初始化时注册。当用户重命名KIA文件时会触发回调。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#offkiarename)(type: 'kiaRename', callback?: Callback\<string\>): void | 取消订阅KIA重命名事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#onkiacompress)(type: 'kiaCompress', callback: Callback\<string\>): void | 订阅KIA压缩事件，需在业务初始化时注册。当用户压缩KIA文件时会触发回调。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#offkiacompress)(type: 'kiaCompress', callback?: Callback\<string\>): void | 取消订阅KIA压缩事件。 |
 
 ## 开发步骤
 

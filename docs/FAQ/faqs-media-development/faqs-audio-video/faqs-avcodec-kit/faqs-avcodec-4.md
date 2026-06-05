@@ -4,6 +4,7 @@ title: "如何获取系统支持的编解码能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avcodec-4
 ---
 
+
 提供两种方法来获取音视频编解码能力实例：
 
 方式一：通过OH\_AVCodec\_GetCapability获取系统推荐的音视频编解码器能力实例。该接口的推荐策略与OH\_XXX\_CreateByMime系列接口一致。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "环境Mesh识别介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-mesh-conversion
+format: md
 ---
+
 
 AR Engine可以实时计算并输出当前画面中的环境网格数据，可用于处理虚实遮挡等应用场景。
 

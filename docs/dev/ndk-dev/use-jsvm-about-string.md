@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API接口创建和获取string值"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-string
+format: md
 ---
+
 
 ## 简介
 

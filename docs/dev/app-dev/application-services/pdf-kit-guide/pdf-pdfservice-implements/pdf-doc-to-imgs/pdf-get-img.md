@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "转换指定页面或指定区域为图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-get-img
+format: md
 ---
+
 
 ## 场景介绍
 

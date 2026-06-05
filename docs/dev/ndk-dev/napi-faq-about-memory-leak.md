@@ -1,7 +1,9 @@
 ---
 title: "内存泄漏相关问题汇总"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-memory-leak
+format: md
 ---
+
 
 ## 当前是否有机制来检查是否有泄漏的napi\_ref
 

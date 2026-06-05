@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入交通卡"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-overview)**
 * **[云侧准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-cloud)**

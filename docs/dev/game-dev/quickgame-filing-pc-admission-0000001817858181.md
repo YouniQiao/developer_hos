@@ -1,7 +1,9 @@
 ---
 title: "新增接入"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-admission-0000001817858181
+format: md
 ---
+
 
 在华为云核准（备案）系统中接入已在其它接入商核准（备案）成功的快游戏。操作步骤如下：
 

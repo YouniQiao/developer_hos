@@ -2,7 +2,9 @@
 title: "使用创意预审库"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/creative-pre-review-user-guide-0000001880927934
+format: md
 ---
+
 # 使用创意预审库
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)。

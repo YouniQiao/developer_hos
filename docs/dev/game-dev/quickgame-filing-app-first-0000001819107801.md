@@ -1,7 +1,9 @@
 ---
 title: "首次核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-first-0000001819107801
+format: md
 ---
+
 
 ## 前提条件
 

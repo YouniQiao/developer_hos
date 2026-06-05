@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "心率变异性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-heart-rate-variability
+format: md
 ---
+
 
 此数据记录用户在某时刻的心率变异性数据。
 

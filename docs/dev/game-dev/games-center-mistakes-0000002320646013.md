@@ -2,7 +2,9 @@
 title: "常见错误说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-mistakes-0000002320646013
 has_merged_cells: true
+format: md
 ---
+
 
 | **字段** | **错误提示语** | **原因说明** |
 | --- | --- | --- |

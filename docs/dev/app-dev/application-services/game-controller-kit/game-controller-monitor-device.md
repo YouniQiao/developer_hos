@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "监听设备上下线（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-monitor-device
+format: md
 ---
+
 
 ## 功能介绍
 

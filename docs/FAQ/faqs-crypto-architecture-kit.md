@@ -4,6 +4,7 @@ title: "加解密算法（Crypto Architecture）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-kit
 ---
 
+
 * **[如何获取应用签名证书的hash值](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-2)**
 * **[如何使用服务端下发的RSA公钥（字符串）对明文数据进行加密](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-3)**
 * **[ECC算法是否支持secp256r1](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-5)**

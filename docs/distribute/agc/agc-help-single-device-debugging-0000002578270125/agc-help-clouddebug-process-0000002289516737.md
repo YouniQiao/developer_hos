@@ -1,7 +1,9 @@
 ---
 title: "调试流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-process-0000002289516737
+format: md
 ---
+
 
 本章节介绍单机调试流程。
 

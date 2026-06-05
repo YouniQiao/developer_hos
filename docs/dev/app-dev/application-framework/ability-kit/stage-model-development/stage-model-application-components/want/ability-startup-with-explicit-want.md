@@ -1,7 +1,9 @@
 ---
 title: "使用显式Want启动应用组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-startup-with-explicit-want
+format: md
 ---
+
 
 在应用使用场景中，当用户在应用内点击某个按钮时，经常需要拉起指定UIAbility组件来完成某些特定任务。在启动UIAbility时，指定了abilityName和bundleName参数，可以使用显式Want方式启动UIAbility。
 

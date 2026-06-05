@@ -1,7 +1,9 @@
 ---
 title: "24h功耗器件分解统计事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-battery-usage-event
+format: md
 ---
+
 
 ## 简介
 
@@ -37,27 +39,27 @@ params字段说明
 | bundle\_name | string | 应用名称。 |
 | begin\_time | number | 采集开始时间，单位为ms。 |
 | end\_time | number | 采集结束时间，单位为ms。 |
-| foreground\_usage | Array<number> | 每小时前台使用时长，单位为ms。 |
-| background\_usage | Array<number> | 每小时后台使用时长，单位为ms。 |
-| cpu\_foreground\_energy | Array<number> | 每小时CPU器件前台耗电量预估值，单位为mAs。 |
-| cpu\_background\_energy | Array<number> | 每小时CPU器件后台耗电量预估值，单位为mAs。 |
-| gpu\_foreground\_energy | Array<number> | 每小时GPU器件前台耗电量预估值，单位为mAs。 |
-| gpu\_background\_energy | Array<number> | 每小时GPU器件后台耗电量预估值，单位为mAs。 |
-| ddr\_foreground\_energy | Array<number> | 每小时DDR器件前台耗电量预估值，单位为mAs。 |
-| ddr\_background\_energy | Array<number> | 每小时DDR器件后台耗电量预估值，单位为mAs。 |
-| display\_foreground\_energy | Array<number> | 每小时display器件前台耗电量预估值，单位为mAs。 |
-| display\_background\_energy | Array<number> | 每小时display器件后台耗电量预估值，单位为mAs。 |
-| audio\_foreground\_energy | Array<number> | 每小时audio器件前台耗电量预估值，单位为mAs。 |
-| audio\_background\_energy | Array<number> | 每小时audio器件后台耗电量预估值，单位为mAs。 |
-| modem\_foreground\_energy | Array<number> | 每小时modem器件前台耗电量预估值，单位为mAs。 |
-| modem\_background\_energy | Array<number> | 每小时modem器件后台耗电量预估值，单位为mAs。 |
-| rom\_foreground\_energy | Array<number> | 每小时rom器件前台耗电量预估值，单位为mAs。 |
-| rom\_background\_energy | Array<number> | 每小时rom器件后台耗电量预估值，单位为mAs。 |
-| wifi\_foreground\_energy | Array<number> | 每小时wifi器件前台耗电量预估值，单位为mAs。 |
-| wifi\_background\_energy | Array<number> | 每小时wifi器件后台耗电量预估值，单位为mAs。 |
-| sensor\_foreground\_energy | Array<number> | 每小时sensor器件前台耗电量预估值，单位为mAs。  说明：从API version 22开始，支持该属性。 |
-| sensor\_background\_energy | Array<number> | 每小时sensor器件后台耗电量预估值，单位为mAs。  说明：从API version 22开始，支持该属性。 |
-| gps\_foreground\_energy | Array<number> | 每小时gps器件前台耗电量预估值，单位为mAs。  说明：从API version 22开始，支持该属性。 |
-| gps\_background\_energy | Array<number> | 每小时gps器件后台耗电量预估值，单位为mAs。  说明：从API version 22开始，支持该属性。 |
-| others\_foreground\_energy | Array<number> | 每小时其他器件前台耗电量预估值，单位为mAs。 |
-| others\_background\_energy | Array<number> | 每小时其他器件后台耗电量预估值，单位为mAs。 |
+| foreground\_usage | Array\<number\> | 每小时前台使用时长，单位为ms。 |
+| background\_usage | Array\<number\> | 每小时后台使用时长，单位为ms。 |
+| cpu\_foreground\_energy | Array\<number\> | 每小时CPU器件前台耗电量预估值，单位为mAs。 |
+| cpu\_background\_energy | Array\<number\> | 每小时CPU器件后台耗电量预估值，单位为mAs。 |
+| gpu\_foreground\_energy | Array\<number\> | 每小时GPU器件前台耗电量预估值，单位为mAs。 |
+| gpu\_background\_energy | Array\<number\> | 每小时GPU器件后台耗电量预估值，单位为mAs。 |
+| ddr\_foreground\_energy | Array\<number\> | 每小时DDR器件前台耗电量预估值，单位为mAs。 |
+| ddr\_background\_energy | Array\<number\> | 每小时DDR器件后台耗电量预估值，单位为mAs。 |
+| display\_foreground\_energy | Array\<number\> | 每小时display器件前台耗电量预估值，单位为mAs。 |
+| display\_background\_energy | Array\<number\> | 每小时display器件后台耗电量预估值，单位为mAs。 |
+| audio\_foreground\_energy | Array\<number\> | 每小时audio器件前台耗电量预估值，单位为mAs。 |
+| audio\_background\_energy | Array\<number\> | 每小时audio器件后台耗电量预估值，单位为mAs。 |
+| modem\_foreground\_energy | Array\<number\> | 每小时modem器件前台耗电量预估值，单位为mAs。 |
+| modem\_background\_energy | Array\<number\> | 每小时modem器件后台耗电量预估值，单位为mAs。 |
+| rom\_foreground\_energy | Array\<number\> | 每小时rom器件前台耗电量预估值，单位为mAs。 |
+| rom\_background\_energy | Array\<number\> | 每小时rom器件后台耗电量预估值，单位为mAs。 |
+| wifi\_foreground\_energy | Array\<number\> | 每小时wifi器件前台耗电量预估值，单位为mAs。 |
+| wifi\_background\_energy | Array\<number\> | 每小时wifi器件后台耗电量预估值，单位为mAs。 |
+| sensor\_foreground\_energy | Array\<number\> | 每小时sensor器件前台耗电量预估值，单位为mAs。  说明：从API version 22开始，支持该属性。 |
+| sensor\_background\_energy | Array\<number\> | 每小时sensor器件后台耗电量预估值，单位为mAs。  说明：从API version 22开始，支持该属性。 |
+| gps\_foreground\_energy | Array\<number\> | 每小时gps器件前台耗电量预估值，单位为mAs。  说明：从API version 22开始，支持该属性。 |
+| gps\_background\_energy | Array\<number\> | 每小时gps器件后台耗电量预估值，单位为mAs。  说明：从API version 22开始，支持该属性。 |
+| others\_foreground\_energy | Array\<number\> | 每小时其他器件前台耗电量预估值，单位为mAs。 |
+| others\_background\_energy | Array\<number\> | 每小时其他器件后台耗电量预估值，单位为mAs。 |

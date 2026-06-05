@@ -4,6 +4,7 @@ title: "编译报错“The reason and usedScene attributes are mandatory for use
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-158
 ---
 
+
 **错误描述**
 
 针对Hap模块，配置user\_grant权限时必须包含reason和usedScene属性。

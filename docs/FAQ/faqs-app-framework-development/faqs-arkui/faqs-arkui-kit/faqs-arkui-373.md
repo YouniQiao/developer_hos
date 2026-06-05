@@ -4,6 +4,7 @@ title: "窗口Orientation枚举值8~10或12和枚举值13~16的区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-373
 ---
 
+
 1. 窗口设置8~10或12，会跟随传感器自动旋转，且受控制中心的旋转开关控制。
 2. 窗口设置13~16，会临时旋转到指定方向（如：13会临时旋转到竖屏），之后跟随传感器自动旋转，受控制中心的旋转开关控制，且可旋转方向受系统判定。
 

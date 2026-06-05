@@ -1,7 +1,9 @@
 ---
 title: "C# SDK使用指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-developing-csharp-0000002395190517
+format: md
 ---
+
 
 * **[接口调用流程](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-flowchart-overview-csharp-0000002361670476)**
 * **[集成SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-csharp-0000002395350421)**

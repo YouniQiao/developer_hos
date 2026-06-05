@@ -4,6 +4,7 @@ title: "HarmonyOS应用自动化签名时提示“Unsupported restricted ACL per
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-5
 ---
 
+
 **问题现象**
 
 在对HarmonyOS应用工程中，勾选“Automatically generate signature”时，提示“Unsupported restricted ACL permission exist in the configuration”报错信息。

@@ -1,7 +1,9 @@
 ---
 title: "小游戏（快游戏）FAQ"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-0000002458772633
+format: md
 ---
+
 
 * **[核准（备案）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-recordal-0000002425133922)**
 * **[账号](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754)**

@@ -4,6 +4,7 @@ title: "在HSP/HAR包中支持导出C/C++的Native方法吗？如果不支持，
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-70
 ---
 
+
 支持在HSP/HAR包中导出C/C++的Native方法。
 
 **参考链接**

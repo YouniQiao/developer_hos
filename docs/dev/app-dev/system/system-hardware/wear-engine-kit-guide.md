@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Wear Engine Kit（穿戴服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wear-engine-kit-guide
+format: md
 ---
+
 
 * **[Wear Engine Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_introduction)**
 * **[手机侧应用开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_phonedev)**

@@ -2,7 +2,9 @@
 title: "SpentDetail"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-spentdetail-0000001135626862
+format: md
 ---
+
 # SpentDetail
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "游戏秒级启动场景中闪屏播放与游戏音频恢复不同步，应该如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-9
+format: md
 ---
+
 
 在游戏秒级启动场景中，进入前台后，系统会立即恢复引擎（resume），游戏内部音频也会被同时恢复，若此时ArkTS层仍在播放闪屏动画，则导致“画面仍在闪屏，声音提前播放”的不同步问题。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-mv-overview
+format: md
 ---
+
 
 从6.0.0(20)版本开始，新增支持顶点标记的Vulkan平台能力。
 

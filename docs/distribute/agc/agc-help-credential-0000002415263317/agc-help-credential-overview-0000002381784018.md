@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-credential-overview-0000002381784018
+format: md
 ---
+
 
 使用模拟器调试时，若应用/元服务需访问Cloud Foundation Kit等开放服务，需在AGC云侧注册调试凭据，以保护应用/元服务对华为开放服务的访问。
 

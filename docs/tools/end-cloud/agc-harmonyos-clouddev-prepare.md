@@ -2,7 +2,9 @@
 
 title: "开发准备"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 开发准备
 

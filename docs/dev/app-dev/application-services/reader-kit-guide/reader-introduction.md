@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Reader Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-introduction
+format: md
 ---
+
 
 Reader Kit（阅读服务）为开发者提供多种格式电子书的解析、排版、阅读交互能力，开发者可以借助Reader Kit的能力和组件快速构建书籍阅读能力。
 

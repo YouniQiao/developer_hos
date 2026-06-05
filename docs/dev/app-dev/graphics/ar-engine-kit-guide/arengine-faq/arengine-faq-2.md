@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "摄像头被遮挡一段时间后再放开，输出的位姿有跳变"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-2
+format: md
 ---
+
 
 ## 现象描述
 

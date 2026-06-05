@@ -1,7 +1,9 @@
 ---
 title: "如何实现护眼模式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-480
+format: md
 ---
+
 
 **解决措施**
 

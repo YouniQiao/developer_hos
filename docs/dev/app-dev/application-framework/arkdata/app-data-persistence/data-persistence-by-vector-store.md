@@ -1,7 +1,9 @@
 ---
 title: "通过向量数据库实现数据持久化 (ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-vector-store
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -60,7 +62,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 | WHERE | 从一个或多个表中获取数据的条件。 | 是 |
 | LIMIT | 返回数据的限制。 | 是 |
 | ORDER BY | 基于一列或多列排序。 | 是 |
-| ORDER BY 向量距离 | <->是L2距离，<=>是余弦距离。 | 是 |
+| ORDER BY 向量距离 | \<-\>是L2距离，\<=\>是余弦距离。 | 是 |
 | GROUP BY | 对相同的数据进行分组。 | 是 |
 | HAVING | 过滤聚合函数的结果。 | 是 |
 | INDEXED BY | 查询时必须使用特定索引。 | 是 |
@@ -85,8 +87,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 | 比较运算 | ==、=、!=、>、>=、<、<= | 是 |
 | 逻辑运算 | AND、BETWEEN、EXISTS、IN、NOT IN、NOT、OR、IS NULL、IS、IS NOT、LIKE、GLOB | 是 |
 | 字符串拼接运算 | || | 是 |
-| 位运算 | &、|、~、<<、>> | 是 |
-| 向量距离运算 | <->、<=> | 是，支持在聚合函数max和min中使用 |
+| 位运算 | &、|、~、\<<、\>> | 是 |
+| 向量距离运算 | \<-\>、\<=\> | 是，支持在聚合函数max和min中使用 |
 
 ### 时间&日期
 
@@ -121,13 +123,13 @@ SQL语句中的函数，如下所示：
 
 | 接口名称 | 描述 |
 | --- | --- |
-| getRdbStore(context: Context, config: StoreConfig): Promise<RdbStore> | 用户可以根据自己的需求配置StoreConfig参数获得RdbStore对象，通过调用RdbStore接口执行数据操作。 |
-| execute(sql: string, txId: number, args?: Array<ValueType>): Promise<ValueType> | 执行包含指定参数的SQL语句，语句中的各种表达式和操作符之间的关系操作符号(例如=、>、<)不超过1000个。 |
-| querySql(sql: string, bindArgs?: Array<ValueType>):Promise<ResultSet> | 根据指定SQL语句查询数据库中的数据，语句中的各种表达式和操作符之间的关系操作符号(例如=、>、<)不超过1000个。 |
-| beginTrans(): Promise<number> | 在开始执行SQL语句之前，开始事务。 |
-| commit(txId : number):Promise<void> | 提交已经执行的SQL语句，跟beginTrans配合使用。 |
-| rollback(txId : number):Promise<void> | 回滚已经执行的SQL语句，跟beginTrans配合使用。 |
-| deleteRdbStore(context: Context, config: StoreConfig): Promise<void> | 删除数据库。 |
+| getRdbStore(context: Context, config: StoreConfig): Promise\<RdbStore\> | 用户可以根据自己的需求配置StoreConfig参数获得RdbStore对象，通过调用RdbStore接口执行数据操作。 |
+| execute(sql: string, txId: number, args?: Array\<ValueType\>): Promise\<ValueType\> | 执行包含指定参数的SQL语句，语句中的各种表达式和操作符之间的关系操作符号(例如=、>、<)不超过1000个。 |
+| querySql(sql: string, bindArgs?: Array\<ValueType\>):Promise\<ResultSet\> | 根据指定SQL语句查询数据库中的数据，语句中的各种表达式和操作符之间的关系操作符号(例如=、>、<)不超过1000个。 |
+| beginTrans(): Promise\<number\> | 在开始执行SQL语句之前，开始事务。 |
+| commit(txId : number):Promise\<void\> | 提交已经执行的SQL语句，跟beginTrans配合使用。 |
+| rollback(txId : number):Promise\<void\> | 回滚已经执行的SQL语句，跟beginTrans配合使用。 |
+| deleteRdbStore(context: Context, config: StoreConfig): Promise\<void\> | 删除数据库。 |
 | isVectorSupported(): boolean | 判断系统是否提供向量数据库能力。 |
 
 ## 开发步骤
@@ -150,7 +152,7 @@ SQL语句中的函数，如下所示：
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L16-L42" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L16-L42" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 2. 若支持向量数据库则需要获取一个RdbStore。通过getRdbStore接口创建数据库，并执行建表操作。
 
@@ -185,7 +187,7 @@ SQL语句中的函数，如下所示：
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L23-L54" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L23-L54" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 3. 获取到RdbStore后，调用execute接口插入数据。
 
@@ -209,7 +211,7 @@ SQL语句中的函数，如下所示：
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L56-L66" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L56-L66" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 4. 获取到RdbStore后，调用execute接口修改或删除数据。示例代码如下：
 
@@ -238,7 +240,7 @@ SQL语句中的函数，如下所示：
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L68-L89" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L68-L89" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 5. 获取到RdbStore后，调用querySql方法查找数据，返回一个ResultSet结果集。
 
@@ -300,7 +302,7 @@ SQL语句中的函数，如下所示：
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L91-L139" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L91-L139" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 6. 创建视图并执行查询。示例代码如下：
 
@@ -318,7 +320,7 @@ SQL语句中的函数，如下所示：
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L141-L151" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L141-L151" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 7. ‌使用向量索引进行查询，提升查询效率。
 
@@ -350,8 +352,8 @@ SQL语句中的函数，如下所示：
 
    | 类型 | 计算符号 | 备注说明 |
    | --- | --- | --- |
-   | L2 | <-> | 欧式距离。 |
-   | COSINE | <=> | 余弦距离。 |
+   | L2 | \<-\> | 欧式距离。 |
+   | COSINE | \<=\> | 余弦距离。 |
 
    **表3** 扩展语法参数(parameter)
 
@@ -364,7 +366,7 @@ SQL语句中的函数，如下所示：
 
    * 删除索引的时候需要指定表名称，即Drop Index table.index\_name。
    * 随表一起创建的索引不能删除，如建表时创建的主键。
-   * 向量索引的命中条件。必须是ORDER BY + LIMIT类型的查询，ORDER BY只有一个排序条件，这个条件是向量距离条件；ORDER BY与DESC连用，不会使用向量索引；查询距离度量与创建索引时的度量需要保持一致，例如创建向量索引时使用L2，在查询时使用<->进行度量才可以命中索引。
+   * 向量索引的命中条件。必须是ORDER BY + LIMIT类型的查询，ORDER BY只有一个排序条件，这个条件是向量距离条件；ORDER BY与DESC连用，不会使用向量索引；查询距离度量与创建索引时的度量需要保持一致，例如创建向量索引时使用L2，在查询时使用\<-\>进行度量才可以命中索引。
 
    示例代码如下：
 
@@ -390,7 +392,7 @@ SQL语句中的函数，如下所示：
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L153-L171" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L153-L171" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 8. 手动回收索引删除产生的磁盘碎片。从API version 20 开始支持此功能。
 
@@ -424,7 +426,7 @@ SQL语句中的函数，如下所示：
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L173-L180" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L173-L180" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 9. 配置数据老化功能。当应用的数据需要经常清理时，可以按时间或空间配置数据老化策略，从而实现数据的自动化清理。
 
@@ -470,7 +472,7 @@ SQL语句中的函数，如下所示：
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L182-L189" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L182-L189" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 10. 配置数据压缩功能。该功能在建表时配置，可以压缩数据类型为text的列数据。
 
@@ -497,7 +499,7 @@ SQL语句中的函数，如下所示：
 
     
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L191-L198" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L191-L198" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>
 
 11. 删除数据库。
 
@@ -515,4 +517,4 @@ SQL语句中的函数，如下所示：
 
     
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L200-L208" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：vectorStoreCTUD.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/VectorStore/entry/src/main/ets/pages/crud/vectorStoreCTUD.ets#L200-L208" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：vectorStoreCTUD.ets</a></div>

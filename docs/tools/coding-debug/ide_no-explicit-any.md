@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-explicit-any"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-explicit-any
 

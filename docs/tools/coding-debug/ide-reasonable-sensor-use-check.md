@@ -1,7 +1,9 @@
 ---
 title: "@performance/reasonable-sensor-use-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/reasonable-sensor-use-check
 

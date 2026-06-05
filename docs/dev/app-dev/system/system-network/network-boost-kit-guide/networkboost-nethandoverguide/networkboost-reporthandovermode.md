@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "迁移模式设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-reporthandovermode
+format: md
 ---
+
 
 ## 场景介绍
 

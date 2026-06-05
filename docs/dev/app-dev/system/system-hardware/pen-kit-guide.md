@@ -1,7 +1,9 @@
 ---
 title: "Pen Kit（手写笔服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-kit-guide
+format: md
 ---
+
 
 * **[Pen Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-introduction)**
 * **[手写功能开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-features)**

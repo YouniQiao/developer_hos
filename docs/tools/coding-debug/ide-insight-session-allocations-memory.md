@@ -1,7 +1,9 @@
 ---
 title: "内存分析介绍"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 内存分析介绍
 

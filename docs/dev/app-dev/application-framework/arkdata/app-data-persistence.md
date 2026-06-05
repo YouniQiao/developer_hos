@@ -1,7 +1,9 @@
 ---
 title: "应用数据持久化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence
+format: md
 ---
+
 
 * **[应用数据持久化概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence-overview)**
 * **[通过用户首选项实现数据持久化 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-preferences)**

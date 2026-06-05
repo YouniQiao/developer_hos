@@ -1,7 +1,9 @@
 ---
 title: "生成签名证书"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-sign-0000002351893601
+format: md
 ---
+
 
 1. [打开项目](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-open-0000002317894968)进入工具主界面后，在顶部菜单栏选择“工具 &gt; 生成证书”。
 

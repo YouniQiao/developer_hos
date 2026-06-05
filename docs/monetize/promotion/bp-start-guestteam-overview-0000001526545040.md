@@ -2,7 +2,9 @@
 title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guestteam-overview-0000001526545040
+format: md
 ---
+
 # 概述
 
 ## 直客团队体系特点

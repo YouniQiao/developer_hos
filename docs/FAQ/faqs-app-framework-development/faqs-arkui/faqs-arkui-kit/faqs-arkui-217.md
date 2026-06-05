@@ -4,6 +4,7 @@ title: "Image组件是否有缓存机制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-217
 ---
 
+
 1. Image的缓存策略
 
 Image模块提供了三级Cache机制，解码后内存图片缓存、解码前数据缓存、物理磁盘缓存。在加载图片时会逐级查找，如果在Cache中找到之前加载过的图片则提前返回对应的结果。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "低功耗音频播放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-saving-for-playback
+format: md
 ---
+
 
 从API version 11开始支持低功耗音频播放。
 

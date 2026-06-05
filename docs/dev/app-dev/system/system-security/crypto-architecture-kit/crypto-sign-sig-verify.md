@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "签名验签"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify
+format: md
 ---
+
 
 * **[签名验签介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview)**
 * **[签名验签开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-dev)**

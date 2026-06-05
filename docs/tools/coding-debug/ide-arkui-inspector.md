@@ -1,7 +1,9 @@
 ---
 title: "布局分析"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 布局分析
 

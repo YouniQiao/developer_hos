@@ -1,7 +1,9 @@
 ---
 title: "批量导出商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-batch-export
+format: md
 ---
+
 
 1. 在服务直达主界面，选择“商品直达”页签，根据商品状态或商品名称筛选出需要导出的商品。
 

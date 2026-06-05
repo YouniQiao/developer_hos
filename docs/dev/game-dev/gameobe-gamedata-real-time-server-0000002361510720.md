@@ -1,7 +1,9 @@
 ---
 title: "消息通信"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-gamedata-real-time-server-0000002361510720
+format: md
 ---
+
 
 您可以使用ActionArgs.SDK相关方法实现一些消息管理的业务逻辑，包括发送消息给客户端、请求补帧等使用场景。
 

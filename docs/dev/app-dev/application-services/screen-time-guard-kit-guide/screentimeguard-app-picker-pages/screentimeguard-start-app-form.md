@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "拉起许可应用跳转页"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-app-form
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -28,7 +30,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [startAppForm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-app-picker#startappform)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), appSelection: [guardService.AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo), appSubTitle: string, displayTrustApp: boolean): Promise<void> | 拉起许可应用跳转页。 |
+| [startAppForm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-app-picker#startappform)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), appSelection: [guardService.AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo), appSubTitle: string, displayTrustApp: boolean): Promise\<void\> | 拉起许可应用跳转页。 |
 
 ## 开发前提
 

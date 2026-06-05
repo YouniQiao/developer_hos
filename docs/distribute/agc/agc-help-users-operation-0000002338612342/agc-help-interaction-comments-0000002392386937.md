@@ -1,7 +1,9 @@
 ---
 title: "互动评论"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-comments-0000002392386937
+format: md
 ---
+
 
 用户可对应用进行评分并发表评论，您可以对用户评论进行查看、回复、删除等管理操作，以增强与用户的互动，第一时间了解用户反馈，解决用户问题并监控舆情。
 

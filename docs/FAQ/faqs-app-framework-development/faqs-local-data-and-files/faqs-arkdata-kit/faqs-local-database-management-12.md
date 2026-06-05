@@ -4,6 +4,7 @@ title: "如何读取本地/预制数据库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-12
 ---
 
+
 **解决措施**
 
 1. 将db文件推送到数据存储沙箱路径：/data/app/el2/100/database/(bundleName)/entry/rdb/。实现方式为使用文件管理接口打开本地数据库，读取其内容并写入沙箱路径下的db文件中。

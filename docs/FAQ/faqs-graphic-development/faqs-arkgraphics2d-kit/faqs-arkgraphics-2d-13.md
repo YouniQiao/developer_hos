@@ -4,6 +4,7 @@ title: "一个EGLSurface支持同时显屏和输出到编码器吗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-13
 ---
 
+
 不支持EglSurface同时用于显屏和编码器输出。
 
 **原因分析**

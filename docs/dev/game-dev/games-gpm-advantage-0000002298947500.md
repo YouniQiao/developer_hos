@@ -1,7 +1,9 @@
 ---
 title: "产品优势"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-advantage-0000002298947500
+format: md
 ---
+
 
 ## 全面的数据采集
 

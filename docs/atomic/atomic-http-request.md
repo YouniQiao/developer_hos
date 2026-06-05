@@ -1,7 +1,9 @@
 ---
 title: "HTTP数据请求"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-http-request
+format: md
 ---
+
 
 ## 场景介绍
 

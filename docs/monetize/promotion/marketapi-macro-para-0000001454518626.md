@@ -2,7 +2,9 @@
 title: "监测链接的宏参数说明"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-macro-para-0000001454518626
+format: md
 ---
+
 # 监测链接的宏参数说明
 
 <strong>监测链接的定义格式如下：</strong>

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "登录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-quick-login
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-quick-login-overview)**
 * **[华为账号一键登录（获取手机号和UnionID/OpenID）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login)**

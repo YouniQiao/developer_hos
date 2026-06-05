@@ -1,7 +1,9 @@
 ---
 title: "Page"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-page
+format: md
 ---
+
 
 ASCF框架中，可以[使用page注册页面](#使用page注册页面)，也可以[使用Component注册页面](#使用component注册页面)。
 

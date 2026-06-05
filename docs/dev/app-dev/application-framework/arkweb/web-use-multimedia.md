@@ -1,7 +1,9 @@
 ---
 title: "使用网页多媒体"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-use-multimedia
+format: md
 ---
+
 
 * **[在Web中打开摄像头和麦克风](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-rtc)**
 * **[托管网页中的媒体播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-takeovers-web-media)**

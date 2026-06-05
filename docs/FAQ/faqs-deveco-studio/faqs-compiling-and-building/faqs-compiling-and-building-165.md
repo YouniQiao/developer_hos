@@ -4,6 +4,7 @@ title: "编译报错“In FormExtensionAbility, metadata must contain an object 
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-165
 ---
 
+
 **错误描述**
 
 在FormExtensionAbility中，metadata必须包含一个对象，名称设置为“ohos.extension.form”，资源设置为二级资源引用。

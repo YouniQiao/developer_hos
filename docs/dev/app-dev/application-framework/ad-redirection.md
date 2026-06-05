@@ -1,7 +1,9 @@
 ---
 title: "广告跳转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ad-redirection
+format: md
 ---
+
 
 ## 概述
 

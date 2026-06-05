@@ -1,7 +1,9 @@
 ---
 title: "应用共享目录配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file-configuration
+format: md
 ---
+
 
 从API version 23开始，系统新增支持共享目录配置功能。在[应用文件分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file)场景中，开发者可配置共享目录范围，防止应用敏感数据泄露。
 

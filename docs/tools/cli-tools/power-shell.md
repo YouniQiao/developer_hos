@@ -1,7 +1,9 @@
 ---
 title: "power-shell工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # power-shell工具
 

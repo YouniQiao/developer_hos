@@ -1,7 +1,9 @@
 ---
 title: "代码开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-code-development-0000002361670588
+format: md
 ---
+
 
 * **[接入流程](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-flowchart-real-time-server-0000002395350533)**
 * **[消息通信](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-gamedata-real-time-server-0000002361510720)**

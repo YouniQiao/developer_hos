@@ -2,7 +2,9 @@
 title: "接入应用榜单广告"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-ranking-0000001397853729
+format: md
 ---
+
 
 
 #### 创建AdsContext对象

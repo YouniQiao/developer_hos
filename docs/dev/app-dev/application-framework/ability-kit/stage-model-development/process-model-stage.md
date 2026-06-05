@@ -1,7 +1,9 @@
 ---
 title: "进程模型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage
+format: md
 ---
+
 
 ## 概述
 

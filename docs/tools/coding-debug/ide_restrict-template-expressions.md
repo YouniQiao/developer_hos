@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/restrict-template-expressions"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/restrict-template-expressions
 

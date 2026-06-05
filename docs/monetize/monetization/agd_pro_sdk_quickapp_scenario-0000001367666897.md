@@ -2,7 +2,9 @@
 title: "典型应用场景"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_quickapp_scenario-0000001367666897
+format: md
 ---
+
 
 
 快应用接入AGD Pro服务的SDK方式大致如下：

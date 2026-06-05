@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-preparation
+format: md
 ---
+
 
 * **[申请位置权限开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-permission-guidelines)**
 * **[申请开放能力权限指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-apply-open-capability)**

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-implied-eval"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-implied-eval
 

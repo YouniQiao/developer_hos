@@ -4,6 +4,7 @@ title: "HarmonyOS Next系统属于大端还是小端"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-117
 ---
 
+
 属于小端序，可以通过以下代码验证：
 
 ```

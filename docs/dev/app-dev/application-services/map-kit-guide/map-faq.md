@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Map Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq
+format: md
 ---
+
 
 * **[地图不显示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-1)**
 * **[siteId参数如何获取](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-2)**

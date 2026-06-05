@@ -1,7 +1,9 @@
 ---
 title: "使用LLDB调试命令"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 使用LLDB调试命令
 

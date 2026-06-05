@@ -4,6 +4,7 @@ title: "aboutToReuse使用入参params刷新UI崩溃"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-476
 ---
 
+
 **问题描述**
 
 当一个可复用的自定义组件从复用缓存中重新加入到节点树时，触发aboutToReuse生命周期回调，并将组件的构造参数传递给aboutToReuse。

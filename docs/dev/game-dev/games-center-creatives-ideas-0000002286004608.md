@@ -1,7 +1,9 @@
 ---
 title: "魔方创意"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-creatives-ideas-0000002286004608
+format: md
 ---
+
 
 魔方创意是一个在线制作、轻松上手、简单轻量的设计网站，为您提升营销物料的内容质量和传播频次。魔方创意支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计运营活动的可视化H5落地页，高效解决内容生产问题，大大节省了沟通、设计和人力成本。
 

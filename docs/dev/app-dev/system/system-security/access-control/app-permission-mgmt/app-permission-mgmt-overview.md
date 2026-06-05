@@ -1,7 +1,9 @@
 ---
 title: "应用权限管控概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview
+format: md
 ---
+
 
 ## 简介
 

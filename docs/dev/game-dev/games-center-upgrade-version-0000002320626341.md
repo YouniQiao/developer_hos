@@ -1,7 +1,9 @@
 ---
 title: "升级版本"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-upgrade-version-0000002320626341
+format: md
 ---
+
 
 应用上架后，如果您需要修改应用的分发国家、修改软件包等，需在AppGallery Connect中提交新版本给华为进行审核。审核通过后，用户将在华为应用市场搜索到最新的应用版本。
 

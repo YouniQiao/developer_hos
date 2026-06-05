@@ -2,7 +2,9 @@
 title: "视图：文本&lt;Text&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-text-0000002471394976
+format: md
 ---
+
 
 # 视图：文本&lt;Text&gt;
 

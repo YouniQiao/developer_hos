@@ -1,7 +1,9 @@
 ---
 title: "下发测试任务"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-distribute-testing-tasks-0000002408324497
+format: md
 ---
+
 
 在AppGallery Connect近场测试服务界面，选择您需要测试的近场服务，对测试手机下发测试任务，使测试手机接收近场服务推送的内容。
 

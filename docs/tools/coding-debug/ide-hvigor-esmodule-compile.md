@@ -1,7 +1,9 @@
 ---
 title: "模块化编译"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 模块化编译
 

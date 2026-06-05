@@ -2,7 +2,9 @@
 title: "推广统计"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-tuiguangtongji-0000001901067241
+format: md
 ---
+
 # 推广统计
 
 ## 一级服务商账户

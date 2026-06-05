@@ -4,6 +4,7 @@ title: "模拟器在后台放置一段时间后会卡在加载状态，CPU占用
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-20
 ---
 
+
 **问题描述**
 
 ![](./img/4d2a9b2f.png)

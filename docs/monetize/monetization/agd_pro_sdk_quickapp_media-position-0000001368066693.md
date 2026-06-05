@@ -2,7 +2,9 @@
 title: "创建媒体和展示位"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_quickapp_media-position-0000001368066693
+format: md
 ---
+
 
 
 #### 前提条件

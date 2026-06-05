@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "高性能GPU排序"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-high-performance-gpu-sorting
+format: md
 ---
+
 
 从6.0.0(20) 版本开始，新增高性能GPU排序特性。
 

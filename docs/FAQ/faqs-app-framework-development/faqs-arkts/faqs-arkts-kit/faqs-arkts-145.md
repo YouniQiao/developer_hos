@@ -1,7 +1,9 @@
 ---
 title: "如何在Index.ets中导出默认导出的对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-145
+format: md
 ---
+
 
 **问题现象**
 
@@ -16,7 +18,7 @@ export default new AppInterfaces() as AppInterfaces;
 export AppInterfaces from './src/main/ets/api/AppInterfaces';
 ```
 
-报错提示：Cannot find name 'AppInterfaces'. <ArkTSCheck>
+报错提示：Cannot find name 'AppInterfaces'. \<ArkTSCheck\>
 
 **解决措施**
 

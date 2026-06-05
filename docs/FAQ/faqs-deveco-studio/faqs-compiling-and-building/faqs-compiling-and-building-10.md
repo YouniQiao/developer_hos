@@ -4,6 +4,7 @@ title: "编译报错“Failed to get a resolved OhmUrl by filepath xx”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-10
 ---
 
+
 * **场景一：**
 
   **问题现象**
@@ -74,7 +75,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 
   如果hvigor\_ignore\_xxxxx所在的模块是一个har模块，需要排查oh-package.json5中是否存在“"packageType": "InterfaceHar"”，如果存在，请删除“"packageType": "InterfaceHar"”。
 
-  如果hvigor\_ignore\_xxxxx所在的模块是一个hsp模块，需要排查${模块路径}\build\default\cache\default\default@CompileArkTS\esmodule\${debug/release}\filesInfo.txt文件中是否存在hvigor\_ignore\_xxxxx路径，如果存在，可将hvigor\_ignore\_xxxxx路径所在的模块或包添加到当前编译模块oh-package.json5的dependencies中临时规避。
+  如果hvigor\_ignore\_xxxxx所在的模块是一个hsp模块，需要排查$\{模块路径\}\build\default\cache\default\default@CompileArkTS\esmodule\$\{debug/release\}\filesInfo.txt文件中是否存在hvigor\_ignore\_xxxxx路径，如果存在，可将hvigor\_ignore\_xxxxx路径所在的模块或包添加到当前编译模块oh-package.json5的dependencies中临时规避。
 * **场景六：**
 
   **问题现象**

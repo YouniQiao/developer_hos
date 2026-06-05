@@ -1,7 +1,9 @@
 ---
 title: "@performance/reasonable-gps-use-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/reasonable-gps-use-check
 

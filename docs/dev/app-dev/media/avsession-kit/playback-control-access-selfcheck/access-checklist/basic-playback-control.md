@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基础播控"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control
+format: md
 ---
+
 
 ## 媒体封面
 

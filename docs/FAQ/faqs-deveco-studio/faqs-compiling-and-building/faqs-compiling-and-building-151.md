@@ -4,6 +4,7 @@ title: "编译报错“The name of the 'xxx' module must be a string, but receiv
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-151
 ---
 
+
 **错误描述**
 
 模块名称必须是字符串类型。

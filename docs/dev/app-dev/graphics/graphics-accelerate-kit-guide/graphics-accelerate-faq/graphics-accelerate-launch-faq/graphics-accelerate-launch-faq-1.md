@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过加载内存镜像启动的游戏会全屏显示来电提醒，应该如何避免"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-1
+format: md
 ---
+
 
 没有通过加载内存镜像启动的游戏，用户在游戏期间来电，来电提醒悬浮在手机正上方。
 

@@ -2,7 +2,9 @@
 title: 轻量高效
 sidebar_label: 轻量高效
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001939183197
+format: md
 ---
+
 # 轻量高效
 
 ### 导航清晰，入口明确

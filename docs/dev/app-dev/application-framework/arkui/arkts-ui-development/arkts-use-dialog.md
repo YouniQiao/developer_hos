@@ -1,7 +1,9 @@
 ---
 title: "使用弹窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-dialog
+format: md
 ---
+
 
 * **[弹窗概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-overview)**
 * **[弹出框 (Dialog)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-dialogs)**

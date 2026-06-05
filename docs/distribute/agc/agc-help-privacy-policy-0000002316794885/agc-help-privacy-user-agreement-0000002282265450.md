@@ -1,7 +1,9 @@
 ---
 title: "配置用户协议"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-user-agreement-0000002282265450
+format: md
 ---
+
 
 配置的用户协议会在首次使用HarmonyOS应用/元服务时弹框展示。
 

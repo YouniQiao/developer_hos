@@ -4,6 +4,7 @@ title: "应用测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test
 ---
 
+
 * **[升级DevEco Studio后执行测试任务失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-2)**
 * **[运行测试用例时，结果树始终处于加载状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-3)**
 * **[出现“container is not running”错误](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-4)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开通推送服务权益"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-push-service
+format: md
 ---
+
 
 若开发者需要通过push云侧创建、更新和结束实况窗，在开通实况窗权益前，开发者需要首先为项目开通“推送服务”权益，详情请参见[开通推送服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-config-setting)。
 

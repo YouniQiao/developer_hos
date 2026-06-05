@@ -1,7 +1,9 @@
 ---
 title: "如何保存网络图片到相册"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-21
+format: md
 ---
+
 
 可以使用安全控件中的保存控件，省去权限申请和权限请求等环节，获得临时授权，保存对应图片。需要申请的权限为：ohos.permission.INTERNET。参考代码如下：
 

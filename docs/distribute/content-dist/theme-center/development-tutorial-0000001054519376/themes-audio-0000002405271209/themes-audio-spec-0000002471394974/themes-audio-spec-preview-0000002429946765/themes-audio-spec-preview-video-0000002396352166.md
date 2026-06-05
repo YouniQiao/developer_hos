@@ -2,7 +2,9 @@
 title: "预览视频"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-preview-video-0000002396352166
+format: md
 ---
+
 
 # 预览视频
 

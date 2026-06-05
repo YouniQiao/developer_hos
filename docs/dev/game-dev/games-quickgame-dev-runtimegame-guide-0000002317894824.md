@@ -1,7 +1,9 @@
 ---
 title: "接入流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-dev-runtimegame-guide-0000002317894824
+format: md
 ---
+
 
 ## 准备开发环境
 

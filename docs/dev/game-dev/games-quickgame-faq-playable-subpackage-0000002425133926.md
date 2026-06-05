@@ -1,7 +1,9 @@
 ---
 title: "试玩分包"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-playable-subpackage-0000002425133926
+format: md
 ---
+
 
 ## 如何使用快游戏开发者工具进行试玩调试？
 

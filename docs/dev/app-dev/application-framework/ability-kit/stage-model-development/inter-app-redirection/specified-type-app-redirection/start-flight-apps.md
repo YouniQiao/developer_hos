@@ -1,7 +1,9 @@
 ---
 title: "拉起航班类应用（startAbilityByType）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-flight-apps
+format: md
 ---
+
 
 本章节介绍如何拉起航班类应用扩展面板。
 

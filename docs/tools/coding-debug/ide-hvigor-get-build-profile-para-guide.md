@@ -1,7 +1,9 @@
 ---
 title: "能力说明"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 能力说明
 

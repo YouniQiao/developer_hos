@@ -1,7 +1,9 @@
 ---
 title: "高性能Protobuf解析"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-high-performance-protobuf-parsing
+format: md
 ---
+
 
 # 高性能Protobuf解析
 
@@ -253,4 +255,4 @@ TurboTransProtobuf在跨线程数据传输方面采用了以下优化策略：
 
 ## 示例代码
 
-<SourceLink name="基于TurboTransProtobuf实现高性能Protobuf解析" url="https://gitcode.com/HarmonyOS_Samples/turbo-trans-protobuf/tree/master" />
+\<SourceLink name="基于TurboTransProtobuf实现高性能Protobuf解析" url="https://gitcode.com/HarmonyOS_Samples/turbo-trans-protobuf/tree/master" /\>

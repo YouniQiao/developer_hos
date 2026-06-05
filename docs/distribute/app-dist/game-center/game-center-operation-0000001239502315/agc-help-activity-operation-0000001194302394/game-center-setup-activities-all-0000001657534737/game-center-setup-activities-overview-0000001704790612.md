@@ -2,7 +2,9 @@
 title: "概述"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-overview-0000001704790612
+format: md
 ---
+
 
 # 概述
 

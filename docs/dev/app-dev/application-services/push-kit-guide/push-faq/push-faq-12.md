@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何更换回执服务器证书的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-12
+format: md
 ---
+
 
 * 场景1：新旧证书均为商用CA签发证书或自签证书但CA未改变。
 

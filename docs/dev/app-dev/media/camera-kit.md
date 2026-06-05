@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Camera Kit（相机服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-kit
+format: md
 ---
+
 
 * **[Camera Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-overview)**
 * **[申请相机开发的权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)**

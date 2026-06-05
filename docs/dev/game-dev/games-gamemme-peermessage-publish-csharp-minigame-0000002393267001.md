@@ -1,7 +1,9 @@
 ---
 title: "点对点消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-peermessage-publish-csharp-minigame-0000002393267001
+format: md
 ---
+
 
 游戏多媒体RTM功能允许向指定接收者发送点对点消息，以实现不同客户端之间的消息传递。RTM点对点消息可以用于多人游戏中的实时通信，例如在线合作游戏、多人对战游戏或社交游戏，从而增强玩家之间的互动和沟通。当前支持发送文本和二进制两种类型的消息。
 

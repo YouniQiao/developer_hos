@@ -1,7 +1,9 @@
 ---
 title: "双向绑定"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-event-bidirectional-binding
+format: md
 ---
+
 
 在部分场景中，需要在用户输入的同时改变service层对应的字段值，此时可以使用引擎提供的双向绑定能力，例如：
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "调用周期性预加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-periodicprefetch
+format: md
 ---
+
 
 在项目的EntryAbility.ets文件中导入预加载实现类[PrefetchWrapper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-implementation-class#prefetchwrapper)，并在onCreate中调用PrefetchWrapper的doPeriodicPrefetch方法。方法内部会先调用[registerPrefetchTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-cloudresprefetch#registerprefetchtask)方法注册周期性预加载任务，12小时后将调用[getPrefetchResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-cloudresprefetch#getprefetchresult)获取周期性预加载数据。
 

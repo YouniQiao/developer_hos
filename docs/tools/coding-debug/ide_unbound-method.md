@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/unbound-method"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/unbound-method
 

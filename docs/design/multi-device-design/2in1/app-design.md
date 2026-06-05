@@ -2,7 +2,9 @@
 title: 应用设计
 sidebar_label: 应用设计
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/app-design-0000002353509845
+format: md
 ---
+
 # 应用设计
 
 应用窗口的内容区作为展示信息的空间，需要根据业务类型合理选择布局、控件元素和响应式布局。

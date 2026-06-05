@@ -1,7 +1,9 @@
 ---
 title: "创建全网态服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-petalmap-create-formalstate-service-0000002373994560
+format: md
 ---
+
 
 ![](../img/agc-help-petalmap-create-formalstate-service-0000002373994560_0.png)
 
@@ -64,14 +66,14 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-petalmap
 | 配置项 | 说明 |
 | --- | --- |
 | 服务名称 | 用户在花瓣地图搜索POI后，POI详情窗口关联的元服务卡片上展示的按钮名称，不超过4个字符。 |
-| 跳转参数 | * 第一个输入框：填写元服务自定义跳转参数名称，不允许为空，至少包含一个字符。 * 第二个输入框：填写元服务自定义跳转参数值，需要以\{"key1":"value1","key2":"value2"}格式填写，不允许为空。 |
+| 跳转参数 | * 第一个输入框：填写元服务自定义跳转参数名称，不允许为空，至少包含一个字符。 * 第二个输入框：填写元服务自定义跳转参数值，需要以\\{"key1":"value1","key2":"value2"\}格式填写，不允许为空。 |
 | 跳转指定页面 | 是否需要拼接POI位置标识进行页面跳转，默认为“否”。   * 选择“是”时：跳转链接将拼接所选POI的位置标识，跳转至指定页面。 * 选择“否”时：跳转链接不会拼接所选POI的位置标识，所有POI点位均根据配置的“跳转参数”跳转至统一目标页面。 说明：  如果您选择“是”，请确保所选的POI已配置“位置标识”。否则，将无法通过区分POI实现指定页面的跳转。 |
 
 下文根据“跳转指定页面”配置项的不同取值提供示例。
 
 * “跳转指定页面”选择“是”时
 
-  以“跳转参数”第一个输入框的值为params，第二个输入框的值为\{"path":"ScenicSpotSimpleDetail","from":"hwmap","param":"4"}，服务关联POI的位置标识为A001为例，花瓣地图会将此处配置的跳转参数传递给元服务。示例代码如下：
+  以“跳转参数”第一个输入框的值为params，第二个输入框的值为\\{"path":"ScenicSpotSimpleDetail","from":"hwmap","param":"4"\}，服务关联POI的位置标识为A001为例，花瓣地图会将此处配置的跳转参数传递给元服务。示例代码如下：
 
   ```
   FullScreenLaunchComponent({
@@ -102,7 +104,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-petalmap
   ```
 * “跳转指定页面”选择“否”时
 
-  以“跳转参数”第一个输入框的值为params，第二个输入框的值为\{"path":"ScenicSpotSimpleDetail","from":"hwmap","param":"4"}为例，花瓣地图会将此处配置的跳转参数传递给元服务。示例代码如下：
+  以“跳转参数”第一个输入框的值为params，第二个输入框的值为\\{"path":"ScenicSpotSimpleDetail","from":"hwmap","param":"4"\}为例，花瓣地图会将此处配置的跳转参数传递给元服务。示例代码如下：
 
   ```
   FullScreenLaunchComponent({

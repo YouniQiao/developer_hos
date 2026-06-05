@@ -4,6 +4,7 @@ title: "hilog日志如何落盘存储"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-1
 ---
 
+
 运行命令：hilog -w start -f ckTest -l 1M -n 5 -m zlib -j 11
 
 文件保存在目录：/data/log/hilog/

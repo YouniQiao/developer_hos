@@ -1,7 +1,9 @@
 ---
 title: "自定义节点常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-node-faq
+format: md
 ---
+
 
 本文档介绍自定义节点的常见问题并提供参考。
 

@@ -2,7 +2,9 @@
 title: "查询商品库动态模板"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa8-0000001338383021
+format: md
 ---
+
 # 查询商品库动态模板
 
 您通过本接口可以查询商品库动态模板。

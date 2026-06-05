@@ -1,7 +1,9 @@
 ---
 title: "如何判断当前网络的IP地址版本是多少"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-71
+format: md
 ---
+
 
 使用[NetAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#netaddress)类获取当前网络的地址信息，NetAddress类的family属性用于指定IP地址的版本，family属性的值为1表示IPv4，为2表示IPv6 。
 

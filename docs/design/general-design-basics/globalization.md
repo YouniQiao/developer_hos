@@ -2,7 +2,9 @@
 title: 全球化
 sidebar_label: 全球化
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-globalization-0000001748539688
+format: md
 ---
+
 # 全球化
 
 产品和应用要在全球发布，需考虑全球化流程，即**“**国际化**”**和**“**本地化**”**。

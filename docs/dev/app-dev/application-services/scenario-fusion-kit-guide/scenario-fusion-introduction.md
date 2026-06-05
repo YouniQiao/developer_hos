@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Scenario Fusion Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction
+format: md
 ---
+
 
 Scenario Fusion Kit（融合场景服务）基于ArkUI框架组件开发，提供跨多个子系统融合的场景化组件，降低开发者接入复杂度，确保鸿蒙生态体验统一。ArkUI一行核心代码启用，智能推荐输入建议，复杂表单一键填充。Scenario Fusion Kit通过完善应用/元服务的系统开发能力，进一步丰富鸿蒙生态，满足开发者在HarmonyOS系统下的服务闭环诉求。
 

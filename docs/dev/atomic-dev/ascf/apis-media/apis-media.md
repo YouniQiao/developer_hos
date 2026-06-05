@@ -1,7 +1,9 @@
 ---
 title: "媒体"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-media
+format: md
 ---
+
 
 * **[地图](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-map)**
 * **[图片](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-image)**

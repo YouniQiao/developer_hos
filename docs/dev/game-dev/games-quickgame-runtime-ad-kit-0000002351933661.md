@@ -1,7 +1,9 @@
 ---
 title: "广告"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-ad-kit-0000002351933661
+format: md
 ---
+
 
 鲸鸿动能流量变现服务（以下简称“流量变现服务）是华为推出的一项广告服务，依托华为强大的终端平台和数据能力，帮助您实现广告流量变现。接入广告服务后，您可以在游戏内向用户展示精准的、精美的以及高价值的广告内容，并从中获得对应的广告收益。接入广告服务服务的流程如下：
 

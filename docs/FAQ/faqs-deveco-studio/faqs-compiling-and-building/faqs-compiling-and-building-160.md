@@ -4,6 +4,7 @@ title: "编译报错“CMake task execution failed”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-160
 ---
 
+
 **错误描述**
 
 CMake任务执行时提示“CMake task execution failed”错误信息。

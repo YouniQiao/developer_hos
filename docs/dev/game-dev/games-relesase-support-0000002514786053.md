@@ -1,7 +1,9 @@
 ---
 title: "游戏发布技术支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-relesase-support-0000002514786053
+format: md
 ---
+
 
 当您在游戏上架过程中遇到问题时，可以按照以下顺序寻求帮助。
 

@@ -1,7 +1,9 @@
 ---
 title: "CPU活动分析"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # CPU活动分析
 

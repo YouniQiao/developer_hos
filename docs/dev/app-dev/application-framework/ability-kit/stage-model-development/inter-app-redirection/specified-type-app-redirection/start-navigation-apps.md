@@ -1,7 +1,9 @@
 ---
 title: "拉起导航类应用（startAbilityByType）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-navigation-apps
+format: md
 ---
+
 
 本章节介绍如何拉起导航类应用扩展面板。
 
@@ -21,11 +23,11 @@ startAbilityByType接口中type字段为navigation，支持路线规划、导航
   | originName | string | 否 | 起点名称。 |
   | originLatitude | number | 否 | 起点纬度。 |
   | originLongitude | number | 否 | 起点经度。 |
-  | originPoiIds | Record<number, string> | 否 | 起点POI ID列表，当前仅支持传入花瓣地图、高德地图、百度地图的POI ID。 |
+  | originPoiIds | Record\<number, string\> | 否 | 起点POI ID列表，当前仅支持传入花瓣地图、高德地图、百度地图的POI ID。 |
   | destinationName | string | 否 | 终点名称。 |
   | destinationLatitude | number | 是 | 终点纬度。 |
   | destinationLongitude | number | 是 | 终点经度。 |
-  | destinationPoiIds | Record<number, string> | 否 | 终点POI ID列表，当前仅支持传入花瓣地图、高德地图、百度地图的POI ID。 |
+  | destinationPoiIds | Record\<number, string\> | 否 | 终点POI ID列表，当前仅支持传入花瓣地图、高德地图、百度地图的POI ID。 |
   | vehicleType | number | 否 | 交通出行工具，取值：0-驾车，1-步行，2-骑行，3-公交。 |
 * 导航场景
 
@@ -35,7 +37,7 @@ startAbilityByType接口中type字段为navigation，支持路线规划、导航
   | destinationName | string | 否 | 终点名称。 |
   | destinationLatitude | number | 是 | 终点纬度。 |
   | destinationLongitude | number | 是 | 终点经度。 |
-  | destinationPoiIds | Record<number, string> | 否 | 终点POI ID列表，当前仅支持传入花瓣地图、高德地图、百度地图的POI ID。 |
+  | destinationPoiIds | Record\<number, string\> | 否 | 终点POI ID列表，当前仅支持传入花瓣地图、高德地图、百度地图的POI ID。 |
 * 位置搜索场景
 
   | 参数名 | 类型 | 必填 | 说明 |

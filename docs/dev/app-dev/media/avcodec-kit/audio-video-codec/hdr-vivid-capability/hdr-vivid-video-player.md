@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "HDR Vivid视频播放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-player
+format: md
 ---
+
 
 开发者可以调用本模块的Native API接口，实现在视频播放中支持HDR Vivid标准。
 

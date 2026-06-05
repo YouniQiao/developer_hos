@@ -1,7 +1,9 @@
 ---
 title: "白盒性能测试框架使用指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perftest-guideline
+format: md
 ---
+
 
 ## 简介
 
@@ -40,14 +42,14 @@ PerfTest服务端负责白盒性能测试框架的主要功能处理，包含以
 
 1. 定义测试性能指标列表
 
-   定义所需测试的性能指标列表metrics，类型为Array<PerfMetric>，其中[PerfMetric](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-perftest#perfmetric)为框架支持采集的性能指标枚举。
+   定义所需测试的性能指标列表metrics，类型为Array\<PerfMetric\>，其中[PerfMetric](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-perftest#perfmetric)为框架支持采集的性能指标枚举。
 
    ```
    let metrics: Array<PerfMetric> = [PerfMetric.DURATION, PerfMetric.CPU_USAGE]; // 定义待测指标
    ```
 2. 定义被测代码段和环境复位代码段
 
-   被测代码段actionCode是一个类型为Callback<Callback<boolean>>的回调函数，框架在测试期间会自动调用此回调函数，并采集性能数据。执行结束时需调用入参Callback<boolean>函数通知框架执行完成，否则会导致代码段执行超时。例如测试Utils.CalculateTest方法性能时，通过调用finish(true)通知框架代码段执行完成。
+   被测代码段actionCode是一个类型为Callback\<Callback<boolean\>>的回调函数，框架在测试期间会自动调用此回调函数，并采集性能数据。执行结束时需调用入参Callback\<boolean\>函数通知框架执行完成，否则会导致代码段执行超时。例如测试Utils.CalculateTest方法性能时，通过调用finish(true)通知框架代码段执行完成。
 
    ```
    let actionCode: Callback<Callback<boolean>> = async (finish: Callback<boolean>) => { // 定义被测代码段

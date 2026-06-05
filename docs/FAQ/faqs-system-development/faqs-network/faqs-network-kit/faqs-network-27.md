@@ -4,6 +4,7 @@ title: "http请求执行的线程是否可控"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-27
 ---
 
+
 **问题现象**
 
 三方应用发起http请求时，其执行任务的线程是否可控？

@@ -4,6 +4,7 @@ title: "HarmonyOS编译构建时如何指定编译架构信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-57
 ---
 
+
 **问题现象**
 
 webrtc gn里面通过binary\_prefix来区分不同架构下的编译工具。HarmonyOS系统如何设置target指定架构信息？

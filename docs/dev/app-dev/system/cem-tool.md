@@ -1,7 +1,9 @@
 ---
 title: "cem工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cem-tool
+format: md
 ---
+
 
 Common Event Manager（公共事件管理工具， 简称cem）是实现公共事件信息打印、发布公共事件等功能的工具，为开发者提供基本的公共事件调试和测试能力，例如打印所有公共事件订阅者、已发送公共事件和接收者、模拟发布公共事件等。
 

@@ -2,7 +2,9 @@
 title: "命令：场景感知跳转命令&lt;ScenarioIntentCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/scenario_intentcommand-0000002550844196
+format: md
 ---
+
 
 # 命令：场景感知跳转命令&lt;ScenarioIntentCommand&gt;
 

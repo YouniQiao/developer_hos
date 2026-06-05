@@ -1,7 +1,9 @@
 ---
 title: "Web组件如何访问本地的资源文件，并添加查询参数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-39
+format: md
 ---
+
 
 本地资源文件应存放在模块的“src/main/resources/rawfile”文件夹下，可通过 $rawfile('文件名') 访问。
 

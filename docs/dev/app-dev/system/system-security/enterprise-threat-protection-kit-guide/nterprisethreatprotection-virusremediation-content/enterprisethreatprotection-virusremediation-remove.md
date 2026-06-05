@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文件隔离删除"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-remove
+format: md
 ---
+
 
 ## 基本概念
 
@@ -20,7 +22,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ente
 
 | 接口 | 描述 |
 | --- | --- |
-| removeIsolatedFile(id: string): Promise<void> | 对指定隔离ID的文件进行删除。删除后无法恢复。 |
+| removeIsolatedFile(id: string): Promise\<void\> | 对指定隔离ID的文件进行删除。删除后无法恢复。 |
 
 ## 开发步骤
 

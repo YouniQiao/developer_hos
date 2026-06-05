@@ -1,7 +1,9 @@
 ---
 title: "存储数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-data-storage
+format: md
 ---
+
 
 每个元服务都可以有自己的本地缓存，可以通过以下接口对本地缓存进行读写和清理。
 

@@ -1,7 +1,9 @@
 ---
 title: "密钥协商"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement
+format: md
 ---
+
 
 * **[密钥协商介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-overview)**
 * **[密钥协商(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-arkts)**

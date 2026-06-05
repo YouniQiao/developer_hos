@@ -2,7 +2,9 @@
 title: "前提条件"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/prerequisites-for-review-0000002072037042
+format: md
 ---
+
 
 # 前提条件
 

@@ -2,7 +2,9 @@
 title: "回退版本"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-rolling-back-0000001239365229
+format: md
 ---
+
 
 # 回退版本
 

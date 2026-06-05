@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-faq-0000001295973262
+format: md
 ---
+
 # FAQ
 
 ## 客户端查询延迟Deeplink对手机设备是否有要求，是否仅支持华为手机？

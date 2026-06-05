@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AR Engine常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq
+format: md
 ---
+
 
 * **[获取检测平面的二维顶点数组时报错：“plane is nullptr!”，返回错误码：401](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-1)**
 * **[摄像头被遮挡一段时间后再放开，输出的位姿有跳变](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-2)**

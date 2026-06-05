@@ -1,7 +1,9 @@
 ---
 title: "自定义组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components
+format: md
 ---
+
 
 * **[介绍](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-overview)**
 * **[组件之间通信](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-communication)**

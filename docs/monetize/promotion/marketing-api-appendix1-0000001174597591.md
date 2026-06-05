@@ -2,7 +2,9 @@
 title: "枚举值"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591
+format: md
 ---
+
 # 枚举值
 
 ## 计划/任务/创意操作状态

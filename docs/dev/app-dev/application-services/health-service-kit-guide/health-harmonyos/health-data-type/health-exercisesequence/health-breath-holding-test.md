@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "潜水闭气测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-breath-holding-test
+format: md
 ---
+
 
 潜水闭气测试相关锻炼记录类型如下：
 

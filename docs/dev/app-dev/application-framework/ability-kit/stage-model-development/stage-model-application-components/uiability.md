@@ -1,7 +1,9 @@
 ---
 title: "UIAbility组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability
+format: md
 ---
+
 
 * **[UIAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-overview)**
 * **[UIAbility组件生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle)**

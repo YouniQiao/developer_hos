@@ -1,7 +1,9 @@
 ---
 title: "设置定时通知弹窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar-scheduled-notification
+format: md
 ---
+
 
 ## 场景介绍
 

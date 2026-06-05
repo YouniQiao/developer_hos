@@ -2,7 +2,9 @@
 title: "SlotInfo"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-slotinfo-0000001135467066
+format: md
 ---
+
 # SlotInfo
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

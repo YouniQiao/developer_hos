@@ -1,7 +1,9 @@
 ---
 title: "ArkData（方舟数据管理）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkdata
+format: md
 ---
+
 
 * **[ArkData简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-mgmt-overview)**
 * **[标准化数据定义](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-definition)**

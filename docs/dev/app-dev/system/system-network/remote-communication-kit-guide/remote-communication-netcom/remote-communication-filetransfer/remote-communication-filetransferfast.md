@@ -1,7 +1,9 @@
 ---
 title: "快速实现上传下载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-filetransferfast
+format: md
 ---
+
 
 Remote Communication Kit 结合 Core File Kit 可以实现基于文件、目录、对象的快速上传和下载功能。 Remote Communication Kit 提供了远程通信的功能，包括远程连接、数据传输等 API 接口。而 Core File Kit 则提供了文件管理的功能，包括文件读取、写入等 API 接口。结合起来使用，可以通过 Remote Communication Kit 实现文件、目录、对象的远程传输，并且由于 Core File Kit 的高效文件处理能力，可以实现快速的上传和下载功能。
 

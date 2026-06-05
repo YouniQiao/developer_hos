@@ -4,6 +4,7 @@ title: "如何使用Swiper组件实现下拉刷新"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-251
 ---
 
+
 Swiper组件用于创建滑块视图容器，可以使用Refresh组件实现下拉刷新效果。
 
 ```

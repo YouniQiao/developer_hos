@@ -1,7 +1,9 @@
 ---
 title: "媒体展示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-media-display
+format: md
 ---
+
 
 * **[显示图片 (Image)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-graphics-display)**
 * **[视频播放 (Video)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-video-player)**

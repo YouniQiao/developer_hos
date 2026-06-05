@@ -4,6 +4,7 @@ title: "编译报错“JS heap out of memory”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-1
 ---
 
+
 **问题现象**
 
 编译构建时，出现报错“JS heap out of memory”。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "云侧服务准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-server-connect
+format: md
 ---
+
 
 Payment Kit服务提供了支付系统相关的一系列API接口。为减少API接口的接入工作量，提供了相应java版本的Maven依赖用于云侧服务对接。
 

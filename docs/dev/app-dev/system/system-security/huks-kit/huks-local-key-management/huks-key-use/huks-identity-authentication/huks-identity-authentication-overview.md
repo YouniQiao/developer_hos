@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "用户身份认证访问控制简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-identity-authentication-overview
+format: md
 ---
+
 
 HUKS提供了完备的密钥访问控制能力，以保证存储在HUKS中的密钥被合法正确地访问：
 

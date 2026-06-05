@@ -1,7 +1,9 @@
 ---
 title: "tabs开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-component-tabs
+format: md
 ---
+
 
 tabs是一种常见的界面导航结构。通过页签容器，用户可以快捷地访问应用的不同模块。具体用法请参考[tabs API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-tabs)。
 
@@ -145,7 +147,7 @@ export default {
 
 ![](./img/7b3e24a2.png)
 
-tabs子组件仅支持一个[<tab-bar>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-tab-bar)和一个[<tab-content>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-tab-content)。
+tabs子组件仅支持一个[\<tab-bar\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-tab-bar)和一个[\<tab-content\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-tab-content)。
 
 ## 场景示例
 

@@ -4,6 +4,7 @@ title: "Navigation如何设置默认页"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-409
 ---
 
+
 **问题描述**
 
 初始横屏时，Navigation会分栏显示，由于此时没有页面在路由栈中，分栏右侧无内容显示，如何为右侧增加一个默认页。

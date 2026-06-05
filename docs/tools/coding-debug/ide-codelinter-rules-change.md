@@ -1,7 +1,9 @@
 ---
 title: "规则变更说明"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 规则变更说明
 

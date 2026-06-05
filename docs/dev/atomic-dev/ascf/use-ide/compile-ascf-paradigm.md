@@ -1,7 +1,9 @@
 ---
 title: "基于三方框架（uni-app，Taro等）编译为ASCF范式"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/compile-ascf-paradigm
+format: md
 ---
+
 
 当前已有部分三方框架支持通过ASCF框架，将工程编译为元服务。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "传感器开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-overview
+format: md
 ---
+
 
 ## 传感器类型
 

@@ -1,7 +1,9 @@
 ---
 title: "准备工作"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-preparations-realtime-server-0000002395190633
+format: md
 ---
+
 
 联机对战服务提供了实时服务器SDK，可用于服务端代码的开发。
 

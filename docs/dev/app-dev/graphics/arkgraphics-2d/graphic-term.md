@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图形开发术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-term
+format: md
 ---
+
 
 ## BlendMode
 

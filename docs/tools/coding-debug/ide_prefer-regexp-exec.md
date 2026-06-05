@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-regexp-exec"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-regexp-exec
 

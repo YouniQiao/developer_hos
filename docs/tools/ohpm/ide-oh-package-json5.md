@@ -1,7 +1,9 @@
 ---
 title: "oh-package.json5"
 displayed_sidebar: ohpmSidebar
+format: md
 ---
+
 
 # oh-package.json5
 

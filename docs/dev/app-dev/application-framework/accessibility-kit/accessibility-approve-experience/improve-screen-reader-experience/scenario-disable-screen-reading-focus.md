@@ -1,7 +1,9 @@
 ---
 title: "禁用屏幕朗读焦点的场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-disable-screen-reading-focus
+format: md
 ---
+
 
 ## 设计场景
 

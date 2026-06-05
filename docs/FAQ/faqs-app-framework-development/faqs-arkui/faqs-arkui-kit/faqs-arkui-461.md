@@ -4,6 +4,7 @@ title: "AppStorage里面存储数据，如何保证不会有内存泄漏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-461
 ---
 
+
 **问题描述**
 
 在entryability里用AppStorage存储数据，'当需要访问数据时进行读取会存在内存泄漏吗？

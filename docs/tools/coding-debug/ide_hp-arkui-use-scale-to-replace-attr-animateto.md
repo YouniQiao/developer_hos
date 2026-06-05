@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-use-scale-to-replace-attr-animateto"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-use-scale-to-replace-attr-animateto
 

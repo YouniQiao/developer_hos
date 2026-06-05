@@ -1,7 +1,9 @@
 ---
 title: "如何获取系统版本号"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-10
+format: md
 ---
+
 
 可通过[@ohos.deviceInfo (设备信息)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-device-info)模块，查询设备信息。
 

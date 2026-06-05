@@ -2,7 +2,9 @@
 title: "打包正式版本"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-build-formal-0000002317894976
 has_merged_cells: true
+format: md
 ---
+
 
 ## 准备工作
 

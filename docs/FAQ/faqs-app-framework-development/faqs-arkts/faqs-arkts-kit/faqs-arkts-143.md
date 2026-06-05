@@ -4,6 +4,7 @@ title: "ArkTS语言与ArkUI框架、HarmonyOS SDK/API的关系"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-143
 ---
 
+
 * **ArkTS和ArkUI的架构关系：**
 
   在HarmonyOS应用开发生态中，ArkTS与ArkUI构成了基础编程语言与上层UI框架的协同体系：

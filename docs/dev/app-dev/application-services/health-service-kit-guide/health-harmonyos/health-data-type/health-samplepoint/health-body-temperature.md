@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "体温"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-body-temperature
+format: md
 ---
+
 
 ## 体温
 

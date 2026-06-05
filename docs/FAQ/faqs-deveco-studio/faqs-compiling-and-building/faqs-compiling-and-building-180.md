@@ -4,6 +4,7 @@ title: "构建HSP模块时报错“Ohos BundleTool [Error]: hsp has home ability
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-180
 ---
 
+
 **问题现象**
 
 构建HSP模块时出现以下错误：Ohos BundleTool [Error]: hsp 包含 home 能力；Ohos BundleTool [Error]: CompressEntrance::main 校验失败。
@@ -23,7 +24,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 2. 排查HSP模块依赖的HAR模块的module.json5文件。如果入口Ability配置了HAR，则：
    1. 若为本地源码依赖，删除上述配置后重新构建，或移除HSP中对该模块的依赖。
    2. 若为第三方包依赖，需删除对应配置并重新发布，更新依赖版本后重新构建。
-   3. 如果第三方包依赖无法重新发布，可以通过Hvigor自定义插件在HSP模块中增加自定义任务，删除build/${productName}/intermediates/package/${targetName}/module.json中的入口 Ability 相关配置，然后重新构建。
+   3. 如果第三方包依赖无法重新发布，可以通过Hvigor自定义插件在HSP模块中增加自定义任务，删除build/$\{productName\}/intermediates/package/$\{targetName\}/module.json中的入口 Ability 相关配置，然后重新构建。
 
       ```
       // HSP module hvigorfile.ts

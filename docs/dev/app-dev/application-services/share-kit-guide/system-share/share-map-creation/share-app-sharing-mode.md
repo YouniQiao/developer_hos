@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "配置目标应用名单（仅对企业应用开放）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-sharing-mode
+format: md
 ---
+
 
 ## 场景介绍
 

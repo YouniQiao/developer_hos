@@ -1,7 +1,9 @@
 ---
 title: "半模态样式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-half-modal-style
+format: md
 ---
+
 
 ## 场景介绍
 

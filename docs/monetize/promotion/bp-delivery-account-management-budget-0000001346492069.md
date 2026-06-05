@@ -2,7 +2,9 @@
 title: "设置账户日预算"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-account-management-budget-0000001346492069
+format: md
 ---
+
 # 设置账户日预算
 
 - 概览页-日预算模块

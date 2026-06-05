@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API接口进行primitive类相关开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-primitive
+format: md
 ---
+
 
 ## 简介
 

@@ -1,7 +1,9 @@
 ---
 title: "图片开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-overview
+format: md
 ---
+
 
 图片框架提供图片编解码能力，为Image组件及图库等应用提供支撑，其解码结果可以传给Image组件进行显示。
 

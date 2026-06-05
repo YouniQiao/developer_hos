@@ -1,7 +1,9 @@
 ---
 title: "配置支持设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-devicetype-0000002398650613
+format: md
 ---
+
 
 发布时，您可以为游戏配置分发至多种设备，默认发布设备为您创建游戏时选择的设备类型，您可以根据实际情况进行修改。
 

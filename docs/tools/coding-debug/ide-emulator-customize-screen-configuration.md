@@ -1,7 +1,9 @@
 ---
 title: "自定义屏幕配置"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 自定义屏幕配置
 

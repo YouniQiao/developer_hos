@@ -4,6 +4,7 @@ title: "编译报错“module.json5 file not found.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-150
 ---
 
+
 **错误描述**
 
 未找到module.json5文件。

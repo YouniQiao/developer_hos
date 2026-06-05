@@ -1,7 +1,9 @@
 ---
 title: "应用声明支持智慧多窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-support
+format: md
 ---
+
 
 当应用需要智慧多窗的能力时，可以通过在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中对应标签添加相关字段声明支持。
 

@@ -4,6 +4,7 @@ title: "导入历史数据失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-2
 ---
 
+
 **问题现象**
 
 使用其他版本的DevEco Studio导出的Profiler深度分析任务文件（.insight 文件）时，可能会遇到异常。

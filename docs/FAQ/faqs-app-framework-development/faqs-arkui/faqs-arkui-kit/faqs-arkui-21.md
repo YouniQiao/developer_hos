@@ -4,6 +4,7 @@ title: "如何加载和使用自定义字体"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-21
 ---
 
+
 1. 字体管理中[@ohos.font (注册自定义字体)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-font)。
 2. 设置对应文本的字体家族。可参考以下代码：
 

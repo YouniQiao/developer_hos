@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用VideoProcessingEngine完成图片超分"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-processing-arkts
+format: md
 ---
+
 
 本模块提供图片细节增强的[ArkTS接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-videoprocessingengine)，通过调用本模块，可以实现图片内容的清晰度增强及缩放功能，处理后的数据可以用于送显和输出。
 

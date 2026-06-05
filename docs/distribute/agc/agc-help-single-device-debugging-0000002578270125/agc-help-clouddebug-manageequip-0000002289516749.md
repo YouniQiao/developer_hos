@@ -1,7 +1,9 @@
 ---
 title: "管理设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-manageequip-0000002289516749
+format: md
 ---
+
 
 当您成功申请到调试设备后，您可在“我的信息”页签下查看或释放您的调试设备。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取发票抬头"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-select-invoice-title
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -29,7 +31,7 @@ Wearable、TV设备暂不支持使用获取发票抬头功能。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [selectInvoiceTitle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-invoiceassistant#selectinvoicetitle)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)): Promise<[InvoiceTitle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-invoiceassistant#invoicetitle)> | 调用该方法打开发票抬头选择页面，使用Promise异步回调返回选择的发票抬头。 |
+| [selectInvoiceTitle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-invoiceassistant#selectinvoicetitle)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)): Promise[InvoiceTitle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-invoiceassistant#invoicetitle) | 调用该方法打开发票抬头选择页面，使用Promise异步回调返回选择的发票抬头。 |
 
 ![](./img/a0680906.png)
 

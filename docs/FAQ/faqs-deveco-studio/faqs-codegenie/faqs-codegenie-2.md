@@ -4,6 +4,7 @@ title: "点击CodeGenie顶部栏的新建会话、历史记录等快捷按钮后
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-codegenie-2
 ---
 
+
 **问题现象**
 
 CodeGenie使用过程中，点击顶部栏新建会话、历史记录、Agent配置等快捷按钮后无反应。

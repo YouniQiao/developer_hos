@@ -1,7 +1,9 @@
 ---
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-preparations
+format: md
 ---
+
 
 ## 环境准备
 

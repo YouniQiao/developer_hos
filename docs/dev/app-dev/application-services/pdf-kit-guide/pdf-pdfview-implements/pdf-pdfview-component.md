@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "预览PDF文档"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-component
+format: md
 ---
+
 
 PDF Kit提供了丰富的PDF文档预览能力，比如：
 

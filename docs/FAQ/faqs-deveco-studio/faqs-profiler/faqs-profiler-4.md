@@ -4,6 +4,7 @@ title: "开启多线程开关后应用性能劣化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-4
 ---
 
+
 **问题现象**
 
 在进行DevEco Testing稳定性压测后，性能测试显示性能下降。

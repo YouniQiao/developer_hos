@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "日志中频繁打印BusinessError: The Worker instance is not running, maybe worker is terminated when PostMessage错误信息，应该如何排查"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-5
+format: md
 ---
+
 
 该错误通常是由于Worker线程崩溃或被终止导致。
 

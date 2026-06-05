@@ -4,6 +4,7 @@ title: "如何解决编译报错“Could not resolve 'xxx' from”，但'xxx'目
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-120
 ---
 
+
 **问题现象**
 
 编译报错：“Could not resolve 'xxx' from”，但'xxx'目录存在，目录下存在Index文件。

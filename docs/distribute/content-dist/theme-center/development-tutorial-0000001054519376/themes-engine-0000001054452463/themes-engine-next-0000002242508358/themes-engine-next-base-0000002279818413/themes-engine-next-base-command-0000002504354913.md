@@ -2,7 +2,9 @@
 title: "命令：基础命令&lt;Command&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-command-0000002504354913
+format: md
 ---
+
 
 # 命令：基础命令&lt;Command&gt;
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "引入对象类型文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-file
+format: md
 ---
+
 
 ## 约束与限制
 

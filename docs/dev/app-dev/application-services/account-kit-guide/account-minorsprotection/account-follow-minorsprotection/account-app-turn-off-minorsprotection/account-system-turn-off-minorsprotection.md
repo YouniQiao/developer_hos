@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "关闭系统的未成年人模式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-system-turn-off-minorsprotection
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -30,8 +32,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/acco
 | 接口名 | 描述 |
 | --- | --- |
 | [getMinorsProtectionInfoSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#getminorsprotectioninfosync)(): [MinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#minorsprotectioninfo) | 同步接口，获取系统未成年人模式的开启状态，以及年龄段信息。 |
-| [getMinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#getminorsprotectioninfo)(): Promise<[MinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#minorsprotectioninfo)> | 异步接口，获取系统未成年人模式的开启状态，以及年龄段信息。 |
-| [leadToTurnOffMinorsMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#leadtoturnoffminorsmode)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)): Promise<void> | 调用该方法进行关闭系统未成年人模式流程。 |
+| [getMinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#getminorsprotectioninfo)(): Promise[MinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#minorsprotectioninfo) | 异步接口，获取系统未成年人模式的开启状态，以及年龄段信息。 |
+| [leadToTurnOffMinorsMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#leadtoturnoffminorsmode)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)): Promise\<void\> | 调用该方法进行关闭系统未成年人模式流程。 |
 
 ![](./img/561e25ab.png)
 

@@ -4,6 +4,7 @@ title: "预览流黑屏但无报错信息该怎么解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-10
 ---
 
+
 **可能原因**
 
 * 未正确获取相机权限的情况下，进行相机初始化和相机输入流获取等操作。

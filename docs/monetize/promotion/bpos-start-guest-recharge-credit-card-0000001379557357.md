@@ -2,7 +2,9 @@
 title: "企业信用卡后付费"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-credit-card-0000001379557357
+format: md
 ---
+
 # 企业信用卡后付费
 
 ## 概述

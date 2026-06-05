@@ -1,7 +1,9 @@
 ---
 title: "从ArkWeb组件升级为AtomicServiceEnhancedWeb"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/web-upgraded-to-atomicserviceweb
+format: md
 ---
+
 
 AtomicServiceEnhancedWeb后续将不再支持[registerJavaScriptProxy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#registerjavascriptproxy)、[runJavaScript](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascript)等接口。若需要Web组件加载的网页中调用ArkTS开发的元服务页面的对象方法，可通过JS SDK提供的接口获取相关数据。若JS SDK接口无法满足需求，还可通过传参的方式，ArkTS开发的元服务页面执行对象方法后获取结果，将结果传递给Web组件加载的网页中。
 

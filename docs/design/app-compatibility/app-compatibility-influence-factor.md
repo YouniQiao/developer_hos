@@ -1,7 +1,9 @@
 ---
 title: "影响应用兼容性的关键信息"
 displayed_sidebar: appCompatibilitySidebar
+format: md
 ---
+
 
 # 影响应用兼容性的关键信息
 

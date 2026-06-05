@@ -2,7 +2,9 @@
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-physical-subcontract-introduction-0000001341160241
+format: md
 ---
+
 # 业务介绍
 
 物理分包功能使用之前可以先通过[渠道包的业务介绍](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/channel-commonpkg-introduction-0000001131803558)了解渠道包的概念和分类。

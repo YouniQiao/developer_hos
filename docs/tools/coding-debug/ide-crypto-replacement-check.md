@@ -1,7 +1,9 @@
 ---
 title: "@performance/crypto-replacement-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/crypto-replacement-check
 

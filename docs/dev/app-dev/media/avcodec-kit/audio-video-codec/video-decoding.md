@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "视频解码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding
+format: md
 ---
+
 
 视频解码是多媒体处理的核心环节，功能是将压缩的视频码流解码为原始像素数据。视频解码支持同步模式与异步模式两种运行机制，两者主要区别为buffer获取方式的同异步之分，开发者可根据自身业务选择适合的接口调用模式。
 

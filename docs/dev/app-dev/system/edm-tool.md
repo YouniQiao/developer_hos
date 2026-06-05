@@ -1,7 +1,9 @@
 ---
 title: "edm工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/edm-tool
+format: md
 ---
+
 
 Enterprise Device Manager（企业设备管理工具，简称为edm），为设备管理应用提供调试和测试能力，例如激活企业设备管理拓展能力、解除激活企业设备管理拓展能力。
 
@@ -90,9 +92,9 @@ disable-admin success.
 
 **处理步骤**
 
-1、如果当前使用的命令是enable-admin，请补充-n <bundle-name>和-a <ability-name>参数。
+1、如果当前使用的命令是enable-admin，请补充-n \<bundle-name\>和-a \<ability-name\>参数。
 
-2、如果当前使用的命令是disable-admin，请补充-n <bundle-name>参数。
+2、如果当前使用的命令是disable-admin，请补充-n \<bundle-name\>参数。
 
 ### error: -n, --bundle-name option requires an argument
 
@@ -136,7 +138,7 @@ disable-admin success.
 
 请确认参数是否在参数列表中。
 
-### error: -n <bundle-name> is expected
+### error: -n \<bundle-name\> is expected
 
 **错误描述**
 
@@ -148,9 +150,9 @@ disable-admin success.
 
 **处理步骤**
 
-请补充-n <bundle-name>。
+请补充-n \<bundle-name\>。
 
-### error: -a <ability-name> is expected
+### error: -a \<ability-name\> is expected
 
 **错误描述**
 
@@ -162,7 +164,7 @@ disable-admin success.
 
 **处理步骤**
 
-请补充-a <ability-name>。
+请补充-a \<ability-name\>。
 
 ### 9200003 error: the administrator ability component is invalid
 

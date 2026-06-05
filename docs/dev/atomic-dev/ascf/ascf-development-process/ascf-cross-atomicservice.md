@@ -1,7 +1,9 @@
 ---
 title: "开发兼容模式元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-cross-atomicservice
+format: md
 ---
+
 
 元服务兼容模式，是ASCF框架基于容器化方式运行提供的能力，支持在“即享”App或负一屏中运行元服务的兼容模式，使元服务运行在任意版本的HarmonyOS系统上。
 

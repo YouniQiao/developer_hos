@@ -1,7 +1,9 @@
 ---
 title: "应用权限组列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-group-list
+format: md
 ---
+
 
 ## 使用须知
 

@@ -1,7 +1,9 @@
 ---
 title: "开发流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-development-process
+format: md
 ---
+
 
 * **[在DevEco Studio中开发](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/use-ide)**
 * **[开发兼容模式元服务](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-cross-atomicservice)**

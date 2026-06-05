@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/one-var-declaration-per-line"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/one-var-declaration-per-line
 

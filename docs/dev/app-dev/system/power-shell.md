@@ -1,7 +1,9 @@
 ---
 title: "power-shell工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-shell
+format: md
 ---
+
 
 power-shell是实现设备电源状态转换等功能的工具，为开发者提供基本的设备电源状态调试能力，例如：熄屏、唤醒、设置电源模式等。
 
@@ -103,7 +105,7 @@ power-shell timeout
 
 | 参数 | 参数说明 |
 | --- | --- |
-| -o <time> | 必选参数，设置自动熄屏时间。[time]单位为毫秒。 |
+| -o \<time\> | 必选参数，设置自动熄屏时间。[time]单位为毫秒。 |
 | -r | 必选参数，恢复到当前系统设置中的自动熄屏时间。 |
 
 示例：

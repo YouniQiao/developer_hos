@@ -1,7 +1,9 @@
 ---
 title: "打开文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-open
+format: md
 ---
+
 
 ## 基本概念
 
@@ -17,7 +19,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ente
 
 | 接口 | 描述 |
 | --- | --- |
-| openFile(path: string): Promise<number> | 获取指定路径文件的文件描述符fd。 |
+| openFile(path: string): Promise\<number\> | 获取指定路径文件的文件描述符fd。 |
 
 ## 开发步骤
 

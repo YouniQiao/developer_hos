@@ -1,7 +1,9 @@
 ---
 title: "服务卡片规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-card-spec
+format: md
 ---
+
 
 鸿蒙公域流量场给开发者提供多种卡片模板供开发者在配置时选择，开发者可根据素材选择不同的模板。
 

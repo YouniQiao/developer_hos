@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/dot-notation"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/dot-notation
 

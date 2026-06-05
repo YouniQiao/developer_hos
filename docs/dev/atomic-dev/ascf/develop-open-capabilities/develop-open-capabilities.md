@@ -1,7 +1,9 @@
 ---
 title: "开放能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-open-capabilities
+format: md
 ---
+
 
 当应用需要使用开放能力时，为正常调试运行应用，需要预先添加公钥指纹。添加公钥指纹的步骤如下。
 

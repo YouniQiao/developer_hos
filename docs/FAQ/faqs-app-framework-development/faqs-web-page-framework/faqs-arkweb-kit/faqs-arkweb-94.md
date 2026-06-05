@@ -4,6 +4,7 @@ title: "Web页面切换软键盘意外弹出"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-94
 ---
 
+
 **问题描述**
 
 在富文本组件的文字输入部分，点击插入图片按钮并切换到相册选择界面时，软键盘意外弹出。

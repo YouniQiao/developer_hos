@@ -1,7 +1,9 @@
 ---
 title: "navigator"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-navigator
+format: md
 ---
+
 
 页面链接，通过组件的方式进行页面跳转。
 

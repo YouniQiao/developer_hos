@@ -1,7 +1,9 @@
 ---
 title: "@security/no-unsafe-aes"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-unsafe-aes
 

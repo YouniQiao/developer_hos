@@ -2,7 +2,9 @@
 title: "工具下载与使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-releasenotes-tool-0000002317894812
 has_merged_cells: true
+format: md
 ---
+
 
 ## 快游戏开发者工具
 

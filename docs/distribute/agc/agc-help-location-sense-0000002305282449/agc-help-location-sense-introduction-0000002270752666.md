@@ -1,7 +1,9 @@
 ---
 title: "业务介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-introduction-0000002270752666
+format: md
 ---
+
 
 近场服务旨在通过HarmonyOS手机用户（以下简称用户）的位置，经由小艺建议、花瓣地图等消息渠道精准推荐用户所需的服务，从而帮助开发者提升用户转化率和满意度。
 

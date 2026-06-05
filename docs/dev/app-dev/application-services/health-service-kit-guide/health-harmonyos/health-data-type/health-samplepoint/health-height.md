@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "身高"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-height
+format: md
 ---
+
 
 此数据记录用户在某时刻的身高数据。
 

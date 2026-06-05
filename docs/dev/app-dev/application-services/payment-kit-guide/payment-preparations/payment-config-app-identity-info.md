@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "端侧应用配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-app-identity-info
+format: md
 ---
+
 
 可下载并参考[示例代码-客户端](https://gitcode.com/HarmonyOS_Samples/payment-kit-sample-code-clientdemo-arkts)，以此来快速的完成商户端侧应用开发环境的构建。
 

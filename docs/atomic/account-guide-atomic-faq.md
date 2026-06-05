@@ -1,7 +1,9 @@
 ---
 title: "Account Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-faq
+format: md
 ---
+
 
 ## 1001500001 应用指纹证书校验失败的可能原因和解决办法
 

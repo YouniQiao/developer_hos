@@ -1,7 +1,9 @@
 ---
 title: "Modifier机制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modifier
+format: md
 ---
+
 
 * **[自定义扩展能力概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-modifier)**
 * **[内容修改器 (ContentModifier)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-attributes-content-modifier)**

@@ -1,7 +1,9 @@
 ---
 title: "添加交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-interactions
+format: md
 ---
+
 
 添加交互可以通过在组件上关联事件实现。本节将介绍如何用div、text、image组件关联click事件，构建一个如下图所示的点赞按钮。
 

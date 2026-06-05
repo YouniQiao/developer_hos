@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "滑动丢帧事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-scroll-jank-event
+format: md
 ---
+
 
 ## 简介
 

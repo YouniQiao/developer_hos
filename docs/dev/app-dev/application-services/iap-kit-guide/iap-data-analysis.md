@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "收益分析和报告"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-data-analysis
+format: md
 ---
+
 
 ## 自助结算
 

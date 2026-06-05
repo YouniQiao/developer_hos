@@ -2,7 +2,9 @@
 title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-advanced-target-overview-0000001379677865
+format: md
 ---
+
 # 概述
 
 ![](./img/53ea65e49103.png) 

@@ -1,7 +1,9 @@
 ---
 title: "应用源声分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-source-voice-analysis-0000002338445526
+format: md
 ---
+
 
 应用源声分析为您展示来自各个渠道和维度的用户声音反馈，帮助您更有效地分析应用的舆情数据，评估问题风险，并及时解决问题。
 

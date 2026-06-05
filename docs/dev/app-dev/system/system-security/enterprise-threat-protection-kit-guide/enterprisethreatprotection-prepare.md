@@ -1,7 +1,9 @@
 ---
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-prepare
+format: md
 ---
+
 
 ## 申请资质
 

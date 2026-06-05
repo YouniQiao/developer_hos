@@ -1,7 +1,9 @@
 ---
 title: "通过Call调用实现多端协同"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-cross-device-interaction
+format: md
 ---
+
 
 Call调用是[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)能力的扩展，它为UIAbility提供一种能够被外部调用并与外部进行通信的能力。Call调用支持前台与后台两种启动方式，使UIAbility既能被拉起到前台展示UI，也可以在后台被创建并运行。通过建立跨进程通信（IPC）链路，它在调用方与被调用方间构建起数据通道。当在分布式场景下使用时，Call调用可以跨设备发起，使得一个设备上的应用能够将任务迁移至另一个设备上的UIAbility继续执行，从而完成跨端迁移。
 
@@ -45,11 +47,11 @@ Call功能主要接口如下表所示。具体的API详见[Caller](https://devel
 
 | 接口名 | 描述 |
 | --- | --- |
-| startAbilityByCall(want: Want): Promise<Caller> | 启动指定UIAbility并获取其Caller通信接口，默认为后台启动，通过配置want可实现前台启动，详见[startAbilityByCall](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startabilitybycall)接口说明。AbilityContext与ServiceExtensionContext均支持该接口。 |
+| startAbilityByCall(want: Want): Promise\<Caller\> | 启动指定UIAbility并获取其Caller通信接口，默认为后台启动，通过配置want可实现前台启动，详见[startAbilityByCall](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startabilitybycall)接口说明。AbilityContext与ServiceExtensionContext均支持该接口。 |
 | on(method: string, callback: CalleeCallBack): void | 通用组件Callee注册method对应的callback方法。 |
 | off(method: string): void | 通用组件Callee解注册method的callback方法。 |
-| call(method: string, data: rpc.Parcelable): Promise<void> | 向通用组件Callee发送约定序列化数据。 |
-| callWithResult(method: string, data: rpc.Parcelable): Promise<rpc.MessageSequence> | 向通用组件Callee发送约定序列化数据，并将Callee返回的约定序列化数据带回。 |
+| call(method: string, data: rpc.Parcelable): Promise\<void\> | 向通用组件Callee发送约定序列化数据。 |
+| callWithResult(method: string, data: rpc.Parcelable): Promise\<rpc.MessageSequence\> | 向通用组件Callee发送约定序列化数据，并将Callee返回的约定序列化数据带回。 |
 | release(): void | 释放通用组件的Caller通信接口。 |
 | on(type: "release", callback: OnReleaseCallback): void | 注册通用组件通信断开监听通知。 |
 

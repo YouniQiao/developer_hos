@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ProxyConfiguration：定制代理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customproxyconfig
+format: md
 ---
+
 
 ## 场景介绍
 

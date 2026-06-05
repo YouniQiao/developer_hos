@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "查询应用内快捷方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-getshortcut
+format: md
 ---
+
 
 ![](./img/d2a65c1c.png)
 
@@ -32,7 +34,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appg
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getPinShortcutInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagergetpinshortcutinfos)(): Promise<[PinShortcutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#pinshortcutinfo)[]> | 查询桌面快捷方式列表。 |
+| [getPinShortcutInfos](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagergetpinshortcutinfos)(): Promise[PinShortcutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#pinshortcutinfo)[] | 查询桌面快捷方式列表。 |
 
 ## 开发步骤
 

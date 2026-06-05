@@ -4,6 +4,7 @@ title: "如何使用后缀为so.x.y类型的so库，例如libxxx.so.3.1、libxxx
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-36
 ---
 
+
 **问题现象：**
 
 使用系统的工具链编译 OpenCV 3.1.0 的共享库文件（.so）。由于生成的共享库文件后缀为 .so.x.y.z，无法直接用于应用包。

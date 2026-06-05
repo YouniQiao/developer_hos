@@ -2,7 +2,9 @@
 title: "一方数据回传"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-others-0000002586173947
+format: md
 ---
+
 # 一方数据回传
 
 ## 业务介绍
@@ -35,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
    | --- | --- | --- | --- |
    | <strong>参数名称</strong> | <strong>类型</strong> | <strong>参数说明</strong> | <strong>必选/</strong> <strong>可选</strong> |
    | callBack | String  (1024) | 一方数据回传量原值填写：third。（固定，仅支持小写）回传时callBack参数中间的B大写，否则接口报错。  注意：  回传外部数据时勿影响到正常华为应用市场应用推广渠道数据的归因回传。应用市场推广回传通过对接归因方案获取的callBack原值，勿进行urlencode。 | 必选 |
-   | actionParam | String  (10240) | 用户行为属性填写一方数据回传样本来源的推广平台，辅助算法优化。  <strong>actionParam=[\{'name':'</strong> <strong>推广平台','value':'</strong> <strong>华为鲸鸿动能/</strong> <strong>巨量引擎/</strong> <strong>腾讯广告……'\}]</strong>  说明：  “推广平台”的“value”可填写：华为鲸鸿动能、巨量引擎、腾讯广告、百度营销、磁力引擎、阿里妈妈、爱奇艺广告、B站花火、小红书蒲公英、知乎知+、美团广告、其他。 | 必选 |
+   | actionParam | String  (10240) | 用户行为属性填写一方数据回传样本来源的推广平台，辅助算法优化。  <strong>actionParam=[\\{'name':'</strong> <strong>推广平台','value':'</strong> <strong>华为鲸鸿动能/</strong> <strong>巨量引擎/</strong> <strong>腾讯广告……'\\}]</strong>  说明：  “推广平台”的“value”可填写：华为鲸鸿动能、巨量引擎、腾讯广告、百度营销、磁力引擎、阿里妈妈、爱奇艺广告、B站花火、小红书蒲公英、知乎知+、美团广告、其他。 | 必选 |
 4. 一方数据回传示例（来源巨量引擎的授信行为）：
 
    ```

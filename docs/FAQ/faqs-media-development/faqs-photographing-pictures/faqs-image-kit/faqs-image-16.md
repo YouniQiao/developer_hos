@@ -4,6 +4,7 @@ title: "如何将图片压缩到指定大小以下"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-16
 ---
 
+
 **问题详情：**
 
 目前仅支持通过质量压缩来减小图片大小，尚未提供其他压缩方法将图片压缩到指定大小，例如将PixelMap压缩至30 KB。

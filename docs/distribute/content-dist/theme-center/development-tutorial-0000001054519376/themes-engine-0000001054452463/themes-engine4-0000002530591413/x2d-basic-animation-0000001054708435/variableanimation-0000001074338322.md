@@ -2,7 +2,9 @@
 title: "变量动画&lt;VariableAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/variableanimation-0000001074338322
+format: md
 ---
+
 
 # 变量动画&lt;VariableAnimation&gt;
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "发起HTTP请求，获取响应"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netinit
+format: md
 ---
+
 
 * **[发送网络请求（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netsend-arkts)**
 * **[取消网络请求（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcancle-arkts)**

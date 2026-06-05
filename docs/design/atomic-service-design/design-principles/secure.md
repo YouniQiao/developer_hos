@@ -2,7 +2,9 @@
 title: 安全可靠
 sidebar_label: 安全可靠
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900584166
+format: md
 ---
+
 # 安全可靠
 
 感知到的安全是积极体验的驱动力，应提供给用户一个可感知、可控制、易使用的安全体验。

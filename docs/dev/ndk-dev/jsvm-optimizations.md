@@ -1,7 +1,9 @@
 ---
 title: "JSVM通用调优实践"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-optimizations
+format: md
 ---
+
 
 ## JSVM调用结构
 

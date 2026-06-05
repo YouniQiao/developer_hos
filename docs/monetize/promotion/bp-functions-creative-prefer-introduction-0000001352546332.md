@@ -2,7 +2,9 @@
 title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-creative-prefer-introduction-0000001352546332
+format: md
 ---
+
 # 功能介绍
 
 当一个任务设置多组创意后，开发者可选择以优选模式或轮播模式展示创意。

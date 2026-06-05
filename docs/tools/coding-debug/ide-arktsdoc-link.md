@@ -1,7 +1,9 @@
 ---
 title: "{@link}"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # `&#123;@link&#125;`
 

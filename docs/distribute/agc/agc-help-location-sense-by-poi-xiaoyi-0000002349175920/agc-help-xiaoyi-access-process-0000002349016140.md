@@ -1,7 +1,9 @@
 ---
 title: "接入流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-xiaoyi-access-process-0000002349016140
+format: md
 ---
+
 
 基于您创建近场服务时选择的服务开放范围，近场服务形态分为测试态和全网态两种。测试态服务用于服务正式上线前的调测，服务申请提交后不需要人工审核直接上线。调测完成后，您即可创建全网态服务并提交服务上线申请，华为运营人员审核通过后，服务将正式上线。
 

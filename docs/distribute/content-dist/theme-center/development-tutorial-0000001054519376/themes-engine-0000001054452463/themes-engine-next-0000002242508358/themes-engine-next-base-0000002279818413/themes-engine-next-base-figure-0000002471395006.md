@@ -2,7 +2,9 @@
 title: "视图：几何图形&lt;Geometrical figue&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-figure-0000002471395006
+format: md
 ---
+
 
 # 视图：几何图形&lt;Geometrical figue&gt;
 

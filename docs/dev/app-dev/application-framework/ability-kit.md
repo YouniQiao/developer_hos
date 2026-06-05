@@ -1,7 +1,9 @@
 ---
 title: "Ability Kit（程序框架服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-kit
+format: md
 ---
+
 
 * **[Ability Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitykit-overview)**
 * **[应用模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-models)**

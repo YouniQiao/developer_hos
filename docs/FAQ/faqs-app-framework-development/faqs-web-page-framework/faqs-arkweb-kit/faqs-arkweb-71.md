@@ -1,7 +1,9 @@
 ---
 title: "如何适配网页内播放器全屏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-71
+format: md
 ---
+
 
 在工程中的module.json5配置文件中添加网络访问权限ohos.permission.INTERNET。
 

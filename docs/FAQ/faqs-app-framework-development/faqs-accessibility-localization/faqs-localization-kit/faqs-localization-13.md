@@ -1,7 +1,9 @@
 ---
 title: "如何将文件转换成字符串"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-13
+format: md
 ---
+
 
 1. 获取resources/rawfile目录下对应的rawfile文件内容。
 2. 调用util模块的TextDecoder将字节数组解码为字符串。

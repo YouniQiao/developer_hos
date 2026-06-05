@@ -1,7 +1,9 @@
 ---
 title: "Performance Analysis Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-overview
+format: md
 ---
+
 
 Performance Analysis Kit（性能分析服务）为开发者提供应用事件、日志、跟踪分析工具，可观测应用运行时状态，用于行为分析、故障分析、安全分析、统计分析，帮助开发者持续改进应用体验。
 

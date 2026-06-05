@@ -1,7 +1,9 @@
 ---
 title: "开发者选项"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 开发者选项
 

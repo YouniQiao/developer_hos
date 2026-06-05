@@ -4,6 +4,7 @@ title: "NAPI执行上层回调时，如何获取env"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-29
 ---
 
+
 libuv处理方式是在注册JS回调时保存env。在callback中从env中获取对应的JS线程的loop，再调用libuv接口抛JS任务到loop中执行。
 
 napi\_create\_thread\_safe\_function函数调用时会触发参数中的napi\_threadsafe\_function\_call\_js函数，该函数可以获取env在js线程中执行，参考以下方式：

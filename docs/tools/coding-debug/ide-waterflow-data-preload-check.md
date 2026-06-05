@@ -1,7 +1,9 @@
 ---
 title: "@performance/waterflow-data-preload-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/waterflow-data-preload-check
 

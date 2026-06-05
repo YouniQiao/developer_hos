@@ -1,7 +1,9 @@
 ---
 title: "分析构建过程"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 分析构建过程
 

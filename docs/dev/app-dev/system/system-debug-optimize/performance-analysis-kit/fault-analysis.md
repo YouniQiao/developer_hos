@@ -1,7 +1,9 @@
 ---
 title: "故障检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-analysis
+format: md
 ---
+
 
 * **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-detection-overview)**
 * **[崩溃检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crash-detection)**

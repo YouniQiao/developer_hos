@@ -4,6 +4,7 @@ title: "编译报错“Method setProperty validate failed in hvigorfile.ts”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-139
 ---
 
+
 **错误描述**
 
 setProperty方法在hvigorfile.ts中校验失败。

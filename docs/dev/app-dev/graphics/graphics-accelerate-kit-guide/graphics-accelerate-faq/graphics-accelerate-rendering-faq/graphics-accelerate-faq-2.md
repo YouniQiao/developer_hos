@@ -1,7 +1,9 @@
 ---
 title: "开启超帧外插模式后运动物体边缘出现严重拖影现象，可能的原因是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-2
+format: md
 ---
+
 
 由于外插模式需要标记模板缓冲（Stencil Buffer）的第8位用于区分静态物体和动态物体，即静态物体模板值第8位标记成0，动态物体模板值第8位标记成1，模板缓冲的低7位模板值开发者可自行设置。如果标记错误或漏标记，可能会在动态物体边缘产生严重的拖影现象。
 
@@ -63,7 +65,7 @@ Shader "Standard_with_stencil"
 
 * 团结引擎URP管线
 
-  在每个有DepthOnly或DepthNormals的Pass中，即出现Tags {"LightMode" = "DepthOnly" }或Tags {"LightMode" = "DepthNormals" }的Pass，配置模板值。
+  在每个有DepthOnly或DepthNormals的Pass中，即出现Tags \{"LightMode" = "DepthOnly" \}或Tags \{"LightMode" = "DepthNormals" \}的Pass，配置模板值。
 * 团结引擎Build-in管线
 
-  在每个有ForwardBase或ForwardAdd的Pass中，即出现Tags {"LightMode" = "ForwardBase" }或Tags {"LightMode" = "ForwardAdd" }的Pass，配置模板值。
+  在每个有ForwardBase或ForwardAdd的Pass中，即出现Tags \{"LightMode" = "ForwardBase" \}或Tags \{"LightMode" = "ForwardAdd" \}的Pass，配置模板值。

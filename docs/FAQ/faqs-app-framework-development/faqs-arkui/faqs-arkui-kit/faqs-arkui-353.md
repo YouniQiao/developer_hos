@@ -4,6 +4,7 @@ title: "Toggle组件响应点击后会立即渲染并回调，如何实现点击
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-353
 ---
 
+
 使用hitTestBehavior和setTimeout解决。示例代码如下：
 
 ```

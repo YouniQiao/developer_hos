@@ -4,6 +4,7 @@ title: "使用0x八位颜色设置渐变透明度为什么与#八位资源颜色
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-245
 ---
 
+
 HarmonyOS支持0x开头加八位或六位的写法。当透明度设为00时，前两位透明度不再借位，即0x00333333等于0x333333，相当于没有设置透明度，因此没有透明效果。建议使用rgba方式明确颜色。参考代码如下：
 
 ```

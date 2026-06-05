@@ -1,7 +1,9 @@
 ---
 title: "Buffer与FastBuffer"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/buffer
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -28,7 +30,7 @@ Buffer模块各接口使用详见：[@ohos.buffer](https://developer.huawei.com/
 
 FastBuffer是一种高性能二进制数据容器，专为固定长度字节序列的存储与处理设计，相比Buffer，它在效率和读写速度上具有显著优势。
 
-当构造FastBuffer的入参为number | FastBuffer | Uint8Array | ArrayBuffer | Array<number> | string时，推荐使用FastBuffer处理大量二进制数据，如图片处理和文件接收上传等。
+当构造FastBuffer的入参为number | FastBuffer | Uint8Array | ArrayBuffer | Array\<number\> | string时，推荐使用FastBuffer处理大量二进制数据，如图片处理和文件接收上传等。
 
 FastBuffer模块的核心功能包括：
 

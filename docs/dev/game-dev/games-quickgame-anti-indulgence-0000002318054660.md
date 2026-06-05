@@ -1,7 +1,9 @@
 ---
 title: "防沉迷"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-anti-indulgence-0000002318054660
+format: md
 ---
+
 
 根据国家新闻出版署的最新规定，所有网络游戏企业仅可在周五、周六、周日和法定节假日每日20时至21时向未成年人提供1小时网络游戏服务，其他时间均不得以任何形式向未成年人提供网络游戏服务。
 

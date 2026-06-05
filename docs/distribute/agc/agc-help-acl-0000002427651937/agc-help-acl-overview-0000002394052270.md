@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-acl-overview-0000002394052270
+format: md
 ---
+
 
 ACL权限即允许普通应用使用ACL方式跨级别申请的system\_basic权限，又名受限开放权限。关于每个ACL权限的介绍、可用场景及其建议方案，请参考[受限开放权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions)。
 

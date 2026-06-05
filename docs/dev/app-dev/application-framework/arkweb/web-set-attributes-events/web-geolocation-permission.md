@@ -1,7 +1,9 @@
 ---
 title: "管理位置权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-geolocation-permission
+format: md
 ---
+
 
 从API version 9开始，支持Web组件的[GeolocationPermissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-geolocationpermissions)类和[onGeolocationShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#ongeolocationshow)方法对网页进行位置权限管理。更多信息请参见[应用数据安全](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-data-security)。
 

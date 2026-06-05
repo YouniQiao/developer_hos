@@ -2,7 +2,9 @@
 title: "Kochava"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565
+format: md
 ---
+
 # Kochava
 
 ## 概述

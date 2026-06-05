@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-type-alias"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-type-alias
 

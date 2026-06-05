@@ -2,7 +2,9 @@
 title: "预览视频"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-preview-video-0000002396307164
+format: md
 ---
+
 
 # 预览视频
 

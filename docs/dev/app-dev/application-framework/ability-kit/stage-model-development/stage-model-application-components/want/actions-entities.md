@@ -1,7 +1,9 @@
 ---
 title: "常见action与entities（不推荐使用）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/actions-entities
+format: md
 ---
+
 
 ![](./img/0c735854.png)
 

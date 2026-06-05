@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入调试功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-test
+format: md
 ---
+
 
 应用归因服务为开发者提供接入调试能力，支持开发者在接入过程中进行自助调试，通过调用调试接口验证接入的准确性及归因结果回传等基础能力，从而提升接入效率。
 
@@ -23,9 +25,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stor
 
 | 接口名 | 描述 |
 | --- | --- |
-| validateSource(adSourceInfo: AdSourceInfo, publicKey: string): Promise<void> | 验证归因来源接口，用于媒体App/分发平台验证adSourceInfo入参的合法性。 |
-| setPostback(postbackInfo: PostbackInfo): Promise<void> | 设置归因结果回传接口，用于应用生态伙伴：  - 验证triggerData是否合法。  - 设置调试使用的回传数据。 |
-| flushPostbacks(adTechId: string): Promise<void> | 主动、实时触发归因结果回传接口，用于应用生态伙伴验证接收及处理回传的逻辑是否正确。 |
+| validateSource(adSourceInfo: AdSourceInfo, publicKey: string): Promise\<void\> | 验证归因来源接口，用于媒体App/分发平台验证adSourceInfo入参的合法性。 |
+| setPostback(postbackInfo: PostbackInfo): Promise\<void\> | 设置归因结果回传接口，用于应用生态伙伴：  - 验证triggerData是否合法。  - 设置调试使用的回传数据。 |
+| flushPostbacks(adTechId: string): Promise\<void\> | 主动、实时触发归因结果回传接口，用于应用生态伙伴验证接收及处理回传的逻辑是否正确。 |
 
 ## 开发步骤
 

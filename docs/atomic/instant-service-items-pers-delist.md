@@ -1,7 +1,9 @@
 ---
 title: "下架个性化设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-pers-delist
+format: md
 ---
+
 
 1. 对于已通过审核、服务状态为“已上架”的个性化设置，开发者可进行下架个性化设置的操作。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "取消用户授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-revoke-user-auth
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -23,8 +25,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [revokeUserAuth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#revokeuserauth)(): Promise<void> | 取消用户授权访问Screen Time Guard Kit的相关管控接口。 |
-| [getUserAuthStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#getuserauthstatus)(): Promise<[AuthStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#authstatus)> | 获取用户授权状态。 |
+| [revokeUserAuth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#revokeuserauth)(): Promise\<void\> | 取消用户授权访问Screen Time Guard Kit的相关管控接口。 |
+| [getUserAuthStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#getuserauthstatus)(): Promise[AuthStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#authstatus) | 获取用户授权状态。 |
 
 ## 开发步骤
 

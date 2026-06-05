@@ -1,7 +1,9 @@
 ---
 title: "首发"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-first-applyfor-0000002320553305
+format: md
 ---
+
 
 首发是指从未公开运营过的新游戏，首次面向用户公开正式运营。
 

@@ -4,6 +4,7 @@ title: "编译报错“Error: open 'xxxlibimage_transcoder_shared.dll' failed”
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-181
 ---
 
+
 **问题现象**
 
 Windows下编译工程出现错误，提示“Error: open 'xxx\deveco-studio\sdk\default\hms\toolchains\lib\libimage\_transcoder\_shared.dll' failed”，加载dll失败。

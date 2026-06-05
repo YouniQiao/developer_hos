@@ -2,7 +2,9 @@
 title: "查询子任务数据报表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-sub-data-0000001346813333
+format: md
 ---
+
 # 查询子任务数据报表
 
 ## 操作步骤

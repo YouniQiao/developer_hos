@@ -1,7 +1,9 @@
 ---
 title: "企业类应用可用权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-enterprise-apps
+format: md
 ---
+
 
 以下权限面向企业类应用开放。
 

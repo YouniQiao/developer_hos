@@ -2,7 +2,9 @@
 title: "成功案例"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-shadow-delivery-success-0000001285301922
+format: md
 ---
+
 # 成功案例
 
 启用影子投放任务后，有效实现挖掘跨品类新客群，了解潜在用户新属性，最终寻找潜在目标人群。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Audio Vivid解码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-audiodecoder
+format: md
 ---
+
 
 获取解封装后的数据，送入解码器中，使用解码器获取PCM和Metadata元数据。详细的API请参考[AudioCodec模块](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audiocodec)。
 

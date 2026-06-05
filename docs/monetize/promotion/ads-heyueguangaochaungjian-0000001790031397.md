@@ -2,7 +2,9 @@
 title: "创建合约广告"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-heyueguangaochaungjian-0000001790031397
+format: md
 ---
+
 # 创建合约广告
 
 ## 投放流程

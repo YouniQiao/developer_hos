@@ -1,7 +1,9 @@
 ---
 title: "@correctness/audio-pause-or-mute-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/audio-pause-or-mute-check
 

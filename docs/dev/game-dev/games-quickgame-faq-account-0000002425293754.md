@@ -1,7 +1,9 @@
 ---
 title: "账号"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754
+format: md
 ---
+
 
 ## 调用登录接口
 

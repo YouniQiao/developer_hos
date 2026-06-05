@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "购买数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-purchase
+format: md
 ---
+
 
 ## 场景介绍
 

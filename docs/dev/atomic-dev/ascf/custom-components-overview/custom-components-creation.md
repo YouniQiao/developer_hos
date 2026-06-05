@@ -1,7 +1,9 @@
 ---
 title: "创建自定义组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-creation
+format: md
 ---
+
 
 和page类似，自定义组件也由json、hxml、css、js四类文件组成。
 

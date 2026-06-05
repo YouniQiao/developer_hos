@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音频编创开发概述(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite
+format: md
 ---
+
 
 从API version 22开始，支持音频编创（[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)）功能。音频编创是一款提供专业级音频效果处理的开发接口，旨在帮助开发者高效构建各种音频创作应用。该套件提供高品质、低延迟、智能化的音频处理能力，集成了降噪、均衡器、人声分离等丰富音效功能。开发者可以根据具体的应用场景，轻松地将所需音频功能集成到应用中。
 

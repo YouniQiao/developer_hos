@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "分享内容直达应用界面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-pc-phones-sandbox
+format: md
 ---
+
 
 从6.0.0(20)版本开始，沙箱接收能力支持PC/2in1设备；从6.1.0(23)版本开始，新增支持Tablet设备。
 

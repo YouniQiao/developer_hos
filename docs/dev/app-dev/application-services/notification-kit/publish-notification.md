@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "发布通知"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/publish-notification
+format: md
 ---
+
 
 * **[发布文本类型通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-notification)**
 * **[发布进度条类型通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/progress-bar-notification)**

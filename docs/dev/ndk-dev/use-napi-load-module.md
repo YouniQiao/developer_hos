@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API接口在主线程中进行模块加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -1,7 +1,9 @@
 ---
 title: "本地调试"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-local-debugging-realtime-server-0000002395350541
+format: md
 ---
+
 
 实时服务器支持本地调试模式，建议您先在本地完成代码调试，再部署到现网生产环境。
 

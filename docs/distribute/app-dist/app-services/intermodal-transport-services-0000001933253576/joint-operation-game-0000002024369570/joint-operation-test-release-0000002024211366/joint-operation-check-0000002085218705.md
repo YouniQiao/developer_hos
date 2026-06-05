@@ -2,7 +2,9 @@
 title: "开发后自检"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-check-0000002085218705
+format: md
 ---
+
 
 # 开发后自检
 

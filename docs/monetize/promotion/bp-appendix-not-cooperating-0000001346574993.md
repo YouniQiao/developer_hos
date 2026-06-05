@@ -2,7 +2,9 @@
 title: "推广不合作应用类型"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-not-cooperating-0000001346574993
+format: md
 ---
+
 # 推广不合作应用类型
 
 华为应用市场推广服务暂不合作应用类型如下表所示：

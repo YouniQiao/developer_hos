@@ -1,7 +1,9 @@
 ---
 title: "@performance/object-creation-check（已下线）"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/object-creation-check（已下线）
 

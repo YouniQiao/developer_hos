@@ -1,7 +1,9 @@
 ---
 title: "设备连接Wi-Fi后，如何获取当前设备的IP地址"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-4
+format: md
 ---
+
 
 使用wifiManager模块获取ipInfo，然后转换为IP常用格式，注意wifiManager.getIpInfo()接口需要权限ohos.permission.GET\_WIFI\_INFO。
 

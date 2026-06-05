@@ -1,7 +1,9 @@
 ---
 title: "@performance/update-state-var-between-animatetos-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/update-state-var-between-animatetos-check
 

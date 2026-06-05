@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过App Linking应用链接拉起指定应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp
+format: md
 ---
+
 
 ## 场景介绍
 

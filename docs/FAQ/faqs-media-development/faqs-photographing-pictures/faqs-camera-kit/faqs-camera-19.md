@@ -4,6 +4,7 @@ title: "如何实现拍照预览onPreviewFrame回调"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-19
 ---
 
+
 使用双路预览实现onPreviewFrame回调，设置previewOutput2接收连续数据，示例代码如下，在示例代码中保存接收到的前三帧数据，也可以通过业务需要调整：
 
 ```

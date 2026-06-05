@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-introduction
+format: md
 ---
+
 
 习惯推荐是HarmonyOS学习用户的行为习惯后做出的主动预测推荐。
 

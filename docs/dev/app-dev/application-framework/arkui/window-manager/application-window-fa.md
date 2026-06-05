@@ -1,7 +1,9 @@
 ---
 title: "管理应用窗口（FA模型）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-fa
+format: md
 ---
+
 
 ## 基本概念
 
@@ -28,18 +30,18 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appl
 
 | 实例名 | 接口名 | 描述 |
 | --- | --- | --- |
-| window静态方法 | createWindow(config: Configuration, callback: AsyncCallback<Window>): void | 创建子窗口。  -config：创建窗口时的参数。 |
+| window静态方法 | createWindow(config: Configuration, callback: AsyncCallback\<Window\>): void | 创建子窗口。  -config：创建窗口时的参数。 |
 | window静态方法 | findWindow(name: string): Window | 查找name所对应的窗口。 |
-| Window | setUIContent(path: string, callback: AsyncCallback<void>): void | 根据当前工程中某个页面的路径为窗口加载具体的页面内容。  其中path为要加载到窗口中的页面内容的路径，在FA模型下该路径需添加到工程的config.json文件中。 |
-| Window | moveWindowTo(x: number, y: number, callback: AsyncCallback<void>): void | 移动当前窗口位置。 |
-| Window | setWindowBrightness(brightness: number, callback: AsyncCallback<void>): void | 设置屏幕亮度值。 |
-| Window | resize(width: number, height: number, callback: AsyncCallback<void>): void | 改变当前窗口大小。 |
-| Window | setWindowLayoutFullScreen(isLayoutFullScreen: boolean): Promise<void> | 设置主窗口或子窗口的布局是否为沉浸式布局。true表示沉浸式布局；false表示非沉浸式布局。 |
-| Window | setWindowSystemBarEnable(names: Array<'status'|'navigation'>): Promise<void> | 设置主窗口状态栏、底部导航（根据用户设置，可表现为导航条或三键导航栏）的可见模式，状态栏和底部导航通过status控制、navigation参数无效果。  例如，该参数设置为['status', 'navigation']，则全部显示；设置为[]，则不显示。 |
-| Window | setWindowSystemBarProperties(systemBarProperties: SystemBarProperties): Promise<void> | 设置窗口内导航栏、状态栏属性。  systemBarProperties：导航栏、状态栏的属性集合。 |
-| Window | showWindow(callback: AsyncCallback<void>): void | 显示当前窗口。 |
-| Window | on(type: 'touchOutside', callback: Callback<void>): void | 开启本窗口区域外的点击事件的监听。 |
-| Window | destroyWindow(callback: AsyncCallback<void>): void | 销毁当前窗口。 |
+| Window | setUIContent(path: string, callback: AsyncCallback\<void\>): void | 根据当前工程中某个页面的路径为窗口加载具体的页面内容。  其中path为要加载到窗口中的页面内容的路径，在FA模型下该路径需添加到工程的config.json文件中。 |
+| Window | moveWindowTo(x: number, y: number, callback: AsyncCallback\<void\>): void | 移动当前窗口位置。 |
+| Window | setWindowBrightness(brightness: number, callback: AsyncCallback\<void\>): void | 设置屏幕亮度值。 |
+| Window | resize(width: number, height: number, callback: AsyncCallback\<void\>): void | 改变当前窗口大小。 |
+| Window | setWindowLayoutFullScreen(isLayoutFullScreen: boolean): Promise\<void\> | 设置主窗口或子窗口的布局是否为沉浸式布局。true表示沉浸式布局；false表示非沉浸式布局。 |
+| Window | setWindowSystemBarEnable(names: Array\<'status'|'navigation'\>): Promise\<void\> | 设置主窗口状态栏、底部导航（根据用户设置，可表现为导航条或三键导航栏）的可见模式，状态栏和底部导航通过status控制、navigation参数无效果。  例如，该参数设置为['status', 'navigation']，则全部显示；设置为[]，则不显示。 |
+| Window | setWindowSystemBarProperties(systemBarProperties: SystemBarProperties): Promise\<void\> | 设置窗口内导航栏、状态栏属性。  systemBarProperties：导航栏、状态栏的属性集合。 |
+| Window | showWindow(callback: AsyncCallback\<void\>): void | 显示当前窗口。 |
+| Window | on(type: 'touchOutside', callback: Callback\<void\>): void | 开启本窗口区域外的点击事件的监听。 |
+| Window | destroyWindow(callback: AsyncCallback\<void\>): void | 销毁当前窗口。 |
 
 ## 设置应用子窗口
 

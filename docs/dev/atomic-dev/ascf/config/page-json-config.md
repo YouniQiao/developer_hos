@@ -1,7 +1,9 @@
 ---
 title: "页面json配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/page-json-config
+format: md
 ---
+
 
 每一个ASCF框架页面也可以使用 .json 文件来对本页面的窗口表现进行配置。页面中配置项在当前页面会覆盖 app.json 的 window 中相同的配置项。文件内容为一个 JSON 对象，包含如下属性。
 

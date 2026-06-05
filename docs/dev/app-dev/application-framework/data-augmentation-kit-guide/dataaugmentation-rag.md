@@ -1,7 +1,9 @@
 ---
 title: "RAG"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-rag
+format: md
 ---
+
 
 * **[RAG概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-overview)**
 * **[知识问答](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-development)**

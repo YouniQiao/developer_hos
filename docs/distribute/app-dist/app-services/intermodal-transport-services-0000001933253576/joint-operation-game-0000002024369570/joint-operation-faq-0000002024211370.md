@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-faq-0000002024211370
+format: md
 ---
+
 
 # FAQ
 

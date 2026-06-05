@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "申请验证获取正式权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-verification
+format: md
 ---
+
 
 完成[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)后，审核通过的权限为测试权限，有100个用户数量的限制。为解除用户数的限制，应用开发完成后，在上架之前，请按照以下步骤提交验证申请，以获取正式权限。完成验证后，您的应用可支持正式大规模商用。
 

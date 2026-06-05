@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发相机应用基础能力(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dev-native
+format: md
 ---
+
 
 * **[预览(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-preview)**
 * **[预览流二次处理(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-preview-imagereceiver)**

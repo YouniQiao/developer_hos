@@ -1,7 +1,9 @@
 ---
 title: "JSVM-API常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-frequently-questions
+format: md
 ---
+
 
 ## 定位方法
 

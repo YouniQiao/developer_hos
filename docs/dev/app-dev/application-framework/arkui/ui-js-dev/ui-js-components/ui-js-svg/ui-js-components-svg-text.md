@@ -1,7 +1,9 @@
 ---
 title: "绘制文本"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-text
+format: md
 ---
+
 
 svg组件还可以绘制文本。
 

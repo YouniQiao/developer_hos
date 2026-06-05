@@ -1,7 +1,9 @@
 ---
 title: "CPU特性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cpu-features
+format: md
 ---
+
 
 CPU特性是CPU提供的一些硬件扩展。开发者可以通过调用指令，设置特殊寄存器来使用这些CPU特性，例如ARMv7a架构上的VFP-v32d32、NEON、IDIV、AES等CPU特性。很多CPU特性是可选的，不同厂商的CPU通常有不同的特性。
 

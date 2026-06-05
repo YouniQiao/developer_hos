@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "功能一步达场景方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-one-step
+format: md
 ---
+
 
 ## 方案概述
 
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inte
 | --- | --- | --- | --- | --- | --- | --- |
 | **Input** | 功能页面标识 | pageId | 是 | 具体功能的标识，开发者自定义。 | string | 1、2、3… |
 | **Output** | 结果码 | code | 是 | 意图调用的结果码。 | number | 0：成功  其他：失败（需提前与华为侧协商，不支持自定义） |
-| **Output** | 结果体 | result | 是 | 意图调用返回的数据，如果无数据则返回空。 | Record<string, Object> | 详见意图调用示例代码。 |
+| **Output** | 结果体 | result | 是 | 意图调用返回的数据，如果无数据则返回空。 | Record\<string, Object\> | 详见意图调用示例代码。 |
 
 ## 意图声明
 

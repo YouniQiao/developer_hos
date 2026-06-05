@@ -2,7 +2,9 @@
 title: "查询分析工具提供商"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking2-0000001286343126
+format: md
 ---
+
 # 查询分析工具提供商
 
 您通过本接口可以查询分析工具提供商。

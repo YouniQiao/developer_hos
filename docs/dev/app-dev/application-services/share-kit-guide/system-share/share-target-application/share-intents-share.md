@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "共享联系人信息到分享推荐区"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-intents-share
+format: md
 ---
+
 
 通过意图框架服务，目标应用可以将联系人信息共享到分享推荐区。参考：[习惯推荐-接入方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-access-programme)。
 

@@ -1,7 +1,9 @@
 ---
 title: "GPU活动分析"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # GPU活动分析
 

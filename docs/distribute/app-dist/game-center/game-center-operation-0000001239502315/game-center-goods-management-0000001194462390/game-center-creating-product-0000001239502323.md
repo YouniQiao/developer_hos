@@ -2,7 +2,9 @@
 title: "创建应用内商品"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-creating-product-0000001239502323
+format: md
 ---
+
 
 # 创建应用内商品
 

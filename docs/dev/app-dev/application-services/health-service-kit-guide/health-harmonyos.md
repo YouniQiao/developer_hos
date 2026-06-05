@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发接入"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-harmonyos
+format: md
 ---
+
 
 * **[数据开放总览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-overview)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-preparations)**

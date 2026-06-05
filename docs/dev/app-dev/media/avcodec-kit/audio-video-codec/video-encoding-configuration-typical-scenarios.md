@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "典型场景的视频编码配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-configuration-typical-scenarios
+format: md
 ---
+
 
 此文档描述了AVCodec视频编码能力在不同应用场景下的推荐配置参数，供开发者根据实际应用场景进行视频编码应用的开发。
 

@@ -1,7 +1,9 @@
 ---
 title: "商家直接接入鉴权方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-merchant-authentication
+format: md
 ---
+
 
 企业开发者接入服务直达的鉴权方式为Service Account鉴权。服务账号（Service Account）是一种可实现服务器与服务器之间接口鉴权的账号，在华为开发者联盟的[API Console](https://developer.huawei.com/consumer/cn/console/api/myApi)上创建服务账号，可根据返回的公私钥在业务应用中生成鉴权令牌，调用支持此类鉴权的华为公开API。
 

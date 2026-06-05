@@ -1,7 +1,9 @@
 ---
 title: "如何在Native侧获取APP版本信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-24
+format: md
 ---
+
 
 Native侧目前没有获取APP版本信息的接口。如需获取APP版本信息，可以在ArkTS侧获取，然后传递到Native侧。
 

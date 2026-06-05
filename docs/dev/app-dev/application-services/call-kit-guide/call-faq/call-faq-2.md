@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "来电横幅通知头像无法显示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-faq-2
+format: md
 ---
+
 
 **问题现象**
 

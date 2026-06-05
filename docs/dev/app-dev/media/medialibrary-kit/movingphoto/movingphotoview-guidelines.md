@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用MovingPhotoView播放动态照片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/movingphotoview-guidelines
+format: md
 ---
+
 
 系统提供了MovingPhotoView组件，在一些社交类、图库类应用中，可用于播放动态照片文件。
 

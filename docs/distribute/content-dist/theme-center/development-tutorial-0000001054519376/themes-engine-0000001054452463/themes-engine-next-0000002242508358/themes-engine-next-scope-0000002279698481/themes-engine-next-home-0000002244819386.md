@@ -2,7 +2,9 @@
 title: "桌面&lt;Wallpaper&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-home-0000002244819386
+format: md
 ---
+
 
 # 桌面&lt;Wallpaper&gt;
 

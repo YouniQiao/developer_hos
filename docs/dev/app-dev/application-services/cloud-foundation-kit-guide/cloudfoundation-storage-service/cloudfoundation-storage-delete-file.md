@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "删除云侧文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-delete-file
+format: md
 ---
+
 
 当云侧文件不需要时，开发者可以在应用客户端删除云侧的文件。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Intents Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-introduction
+format: md
 ---
+
 
 Intents Kit（意图框架服务）是HarmonyOS级的意图标准体系 ，意图连接了应用/元服务内的业务功能。
 

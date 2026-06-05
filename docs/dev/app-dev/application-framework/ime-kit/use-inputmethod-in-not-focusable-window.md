@@ -1,7 +1,9 @@
 ---
 title: "不可获焦窗口中输入框与输入法交互指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-inputmethod-in-not-focusable-window
+format: md
 ---
+
 
 ## 场景介绍
 

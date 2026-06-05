@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "动态轨迹"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-dyntrajectories
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [TraceOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#traceoverlayparams) | 动态轨迹参数。 |
-| [addTraceOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addtraceoverlay)(params: [mapCommon.TraceOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#traceoverlayparams), markers?: Array<[Marker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-marker)>): Promise<[TraceOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-traceoverlay)> | 绘制动态轨迹。 |
+| [addTraceOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addtraceoverlay)(params: [mapCommon.TraceOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#traceoverlayparams), markers?: Array[Marker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-marker)): Promise[TraceOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-traceoverlay) | 绘制动态轨迹。 |
 | [Marker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-marker) | 动态轨迹的一组标记。 |
 | [TraceOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-traceoverlay) | 动态轨迹，支持暂停和删除等功能。 |
 

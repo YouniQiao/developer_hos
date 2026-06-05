@@ -1,7 +1,9 @@
 ---
 title: "全屏启动元服务组件（FullScreenLaunchComponent）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fullscreencomponent
+format: md
 ---
+
 
 FullScreenLaunchComponent允许开发者以全屏方式拉起元服务，使得应用能够提供更友好的用户体验。
 

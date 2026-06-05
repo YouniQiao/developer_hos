@@ -4,6 +4,7 @@ title: "在Native侧如何精准获取ArkTS侧传入的字符串长度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-1
 ---
 
+
 **问题现象**
 
 在Native侧，转换ArkTS侧的字符串到char[]数组时无法准确获取字符串长度。频繁使用NAPI\_AUTO\_LENGTH宏定义会增加内存开销，影响性能。

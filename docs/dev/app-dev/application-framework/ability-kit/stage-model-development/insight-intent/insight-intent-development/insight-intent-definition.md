@@ -1,7 +1,9 @@
 ---
 title: "意图开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-definition
+format: md
 ---
+
 
 开发者可以通过如下两种方式来定义意图：
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Enterprise Space Kit（企业数字空间服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprise-space-kit-guide
+format: md
 ---
+
 
 * **[Enterprise Space Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-preparations)**

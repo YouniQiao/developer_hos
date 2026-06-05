@@ -1,7 +1,9 @@
 ---
 title: "管理应用拥有的状态概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-application-state-management-overview
+format: md
 ---
+
 
 在管理组件拥有的状态章节中介绍的装饰器仅能在页面内，即一个组件树上共享状态变量。如果开发者要实现应用级的，或者多个页面的状态数据共享，就需要用到应用级别的状态管理的概念。ArkTS根据不同特性，提供了多种应用状态管理的能力：
 

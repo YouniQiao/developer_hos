@@ -1,7 +1,9 @@
 ---
 title: "使用ASan检测内存错误"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 使用ASan检测内存错误
 

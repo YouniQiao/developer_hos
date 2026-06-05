@@ -1,7 +1,9 @@
 ---
 title: "多语种场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-multilingual
+format: md
 ---
+
 
 ## 设计场景
 

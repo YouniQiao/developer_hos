@@ -2,7 +2,9 @@
 title: "2. 超范围收集个人信息"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-02
+format: md
 ---
+
 # 2. 超范围收集个人信息
 
 * 重点整治APP、SDK非服务所必需或无合理应用场景，特别是在静默状态下或后台运行时，超范围收集个人信息。

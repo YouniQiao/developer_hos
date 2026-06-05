@@ -4,6 +4,7 @@ title: "如何修改bindPopup绑定的弹窗圆角大小和箭头颜色"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-349
 ---
 
+
 通过radius参数调整圆角大小，但箭头颜色需通过popupColor间接设置。示例代码如下：
 
 ```

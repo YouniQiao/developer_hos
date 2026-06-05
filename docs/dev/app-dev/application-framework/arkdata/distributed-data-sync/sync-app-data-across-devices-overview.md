@@ -1,7 +1,9 @@
 ---
 title: "同应用跨设备数据同步概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sync-app-data-across-devices-overview
+format: md
 ---
+
 
 ## 场景介绍
 

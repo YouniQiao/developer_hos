@@ -1,7 +1,9 @@
 ---
 title: "应用接入数据备份恢复"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension
+format: md
 ---
+
 
 应用接入数据备份恢复需要通过BackupExtensionAbility实现。
 
@@ -14,10 +16,10 @@ BackupExtensionAbility是[Stage模型](https://developer.huawei.com/consumer/cn/
 | 接口名 | 描述 |
 | --- | --- |
 | onBackup(): void | 数据备份准备阶段，迁移备份数据前回调。 |
-| onBackupEx(backupInfo: string): string | Promise<string> | 数据备份准备阶段，迁移备份数据前回调，支持传递备份信息和返回备份结果。 |
+| onBackupEx(backupInfo: string): string | Promise\<string\> | 数据备份准备阶段，迁移备份数据前回调，支持传递备份信息和返回备份结果。 |
 | onRestore(bundleVersion: BundleVersion): void | 数据恢复阶段，备份数据迁移完成后回调。 |
-| onRestoreEx(bundleVersion: BundleVersion, restoreInfo: string): string | Promise<string> | 数据恢复阶段，备份数据迁移完成后回调，支持传递恢复信息和返回恢复结果。 |
-| onRelease(scenario: number): Promise<void> | 备份或恢复完成时的特殊处理，备份或恢复完成时回调。  **说明**：从API version 20开始支持该接口。 |
+| onRestoreEx(bundleVersion: BundleVersion, restoreInfo: string): string | Promise\<string\> | 数据恢复阶段，备份数据迁移完成后回调，支持传递恢复信息和返回恢复结果。 |
+| onRelease(scenario: number): Promise\<void\> | 备份或恢复完成时的特殊处理，备份或恢复完成时回调。  **说明**：从API version 20开始支持该接口。 |
 
 ## 约束与限制
 
@@ -138,7 +140,7 @@ BackupExtensionAbility是[Stage模型](https://developer.huawei.com/consumer/cn/
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/CoreFile/FileBackupExtension/entry/src/main/ets/common/BackupExtension.ets#L16-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：BackupExtension.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/CoreFile/FileBackupExtension/entry/src/main/ets/common/BackupExtension.ets#L16-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：BackupExtension.ets</a></div>
 
 4. 从API 20开始，开发者如需在应用备份恢复完成后执行一些特殊操作，例如清理备份或恢复时应用创建的临时文件，可以在BackupExtension.ets文件中自定义类继承的BackupExtensionAbility，通过重写其onRelease方法，当备份或恢复完成时，会执行onRelease方法以执行开发者自定义的行为。
 
@@ -184,7 +186,7 @@ BackupExtensionAbility是[Stage模型](https://developer.huawei.com/consumer/cn/
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/CoreFile/FileBackupExtension/entry/src/main/ets/common/BackupExtension.ets#L17-L88" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：BackupExtension.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/CoreFile/FileBackupExtension/entry/src/main/ets/common/BackupExtension.ets#L17-L88" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：BackupExtension.ets</a></div>
 
 
 ### 元数据资源配置文件说明

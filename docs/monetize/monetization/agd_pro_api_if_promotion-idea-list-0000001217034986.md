@@ -2,7 +2,9 @@
 title: "推广创意列表"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_promotion-idea-list-0000001217034986
+format: md
 ---
+
 
 
 ![](./img/agd_pro_api_if_promotion-idea-list-0000001217034986_0.png)

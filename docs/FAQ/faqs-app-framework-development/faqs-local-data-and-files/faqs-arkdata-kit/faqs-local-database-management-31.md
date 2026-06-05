@@ -4,6 +4,7 @@ title: "首选项错误码：code:'401' err: Error: Parameter error. The type of
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-31
 ---
 
+
 优先排查value长度。如果value值为字符串类型，请使用UTF-8编码格式。value值可以为空，不为空时长度不超过8192个字节。
 
 Parameter error问题的原因包括：参数值超出有效范围、参数类型不匹配、必填参数缺失等。

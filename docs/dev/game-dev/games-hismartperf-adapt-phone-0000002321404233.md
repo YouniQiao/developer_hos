@@ -1,7 +1,9 @@
 ---
 title: "HiSmartPerf适配机型"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-adapt-phone-0000002321404233
+format: md
 ---
+
 
 HiSmartPerf的连接设备优先推荐如下机型：
 

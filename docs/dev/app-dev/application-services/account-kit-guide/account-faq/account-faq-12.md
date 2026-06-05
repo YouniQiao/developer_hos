@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ID Token的使用场景与使用方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-12
+format: md
 ---
+
 
 ID Token是OIDC（[OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html)）协议相对于OAuth 2.0协议扩展的一个用户身份凭证。
 

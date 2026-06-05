@@ -4,6 +4,7 @@ title: "编译报错“useNormalizedOHMUrl can be true only when Compatible SDK 
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-142
 ---
 
+
 **错误描述**
 
 仅当兼容SDK版本为5.0.0(12)及以上版本时，useNormalizedOHMUrl才可以设置为true。

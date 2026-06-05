@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "附录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-appendix
+format: md
 ---
+
 
 * **[通知内容管理细则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-detail-rules)**
 * **[通知违规处罚标准](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-punishment-standards)**

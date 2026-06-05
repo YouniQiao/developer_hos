@@ -2,7 +2,9 @@
 title: "未成年人保护"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/protection-of-minors-0000002471344233
+format: md
 ---
+
 
 # 未成年人保护
 

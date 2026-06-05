@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "DnsConfiguration：定制DNS"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customdnsconfig
+format: md
 ---
+
 
 ## 场景介绍
 

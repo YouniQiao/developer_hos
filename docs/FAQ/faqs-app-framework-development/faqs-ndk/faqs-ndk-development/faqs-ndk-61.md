@@ -1,7 +1,9 @@
 ---
 title: "传入自定义类型对象到Native侧时，index.d.ts文件如何声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-61
+format: md
 ---
+
 
 此处以testCb为例
 

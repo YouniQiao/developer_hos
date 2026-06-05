@@ -1,7 +1,9 @@
 ---
 title: "@cross-device-app-dev/immersive-effect-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @cross-device-app-dev/immersive-effect-check
 

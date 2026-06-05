@@ -1,7 +1,9 @@
 ---
 title: "@performance/gif-hardware-decoding-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/gif-hardware-decoding-check
 

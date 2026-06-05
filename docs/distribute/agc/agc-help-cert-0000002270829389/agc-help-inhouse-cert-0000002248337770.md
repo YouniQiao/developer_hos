@@ -1,7 +1,9 @@
 ---
 title: "申请In-house发布证书"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-inhouse-cert-0000002248337770
+format: md
 ---
+
 
 在发布In-house应用时，您需要使用In-house发布证书和In-house发布Profile手动签名后，才能编译构建正式发布包。请参考本文档申请并下载In-house发布证书。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Wallet Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-introduction
+format: md
 ---
+
 
 Wallet Kit（钱包服务）集成了终端“芯-端-云”全栈技术的开放能力，可实现车钥匙、交通卡的凭证电子化。让用户能够轻松地将车钥匙和交通卡保存在手机中，以便在适当的时间使用。
 

@@ -1,7 +1,9 @@
 ---
 title: "底部页签"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs
+format: md
 ---
+
 
 * **[设置页签栏的分割线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-split-line)**
 * **[设置页签栏的模糊样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-fuzzy-style)**

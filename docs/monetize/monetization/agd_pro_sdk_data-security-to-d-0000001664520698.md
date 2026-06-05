@@ -2,7 +2,9 @@
 title: "SDK合规使用指南"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_data-security-to-d-0000001664520698
+format: md
 ---
+
 
 
 《中华人民共和国个人信息保护法》自2021年11月1日起正式施行后，监管部门、各行业参与方和终端消费者越来越关注用户的隐私保护问题。为了有效治理App违规收集使用个人信息的现象，监管部门也陆续出台相关标准规范。

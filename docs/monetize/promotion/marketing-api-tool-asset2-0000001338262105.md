@@ -2,7 +2,9 @@
 title: "查询素材"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-asset2-0000001338262105
+format: md
 ---
+
 # 查询素材
 
 您通过本接口可以查询素材。

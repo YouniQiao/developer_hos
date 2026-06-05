@@ -2,7 +2,9 @@
 title: "场景处理"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_scenario-handle-0000001262378977
+format: md
 ---
+
 
 
 #### 广告过滤与处理

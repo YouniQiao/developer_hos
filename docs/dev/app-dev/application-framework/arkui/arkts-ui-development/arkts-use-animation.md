@@ -1,7 +1,9 @@
 ---
 title: "使用动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-animation
+format: md
 ---
+
 
 * **[动画概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation)**
 * **[属性动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-attribute)**

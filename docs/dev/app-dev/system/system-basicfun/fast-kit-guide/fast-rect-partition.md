@@ -1,7 +1,9 @@
 ---
 title: "使用RectPartition求解矩形划分"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-rect-partition
+format: md
 ---
+
 
 矩形划分求解器（Rectangular Partition Solver）用于解决矩形划分问题。其接收若干个彼此不相交的矩形作为输入（主要关注这些矩形共同定义的区域的并集），计算出覆盖相同区域的矩形划分方案，并使输出的矩形数量尽可能少（但不保证最优）。形如下方示意图。
 

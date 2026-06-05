@@ -1,7 +1,9 @@
 ---
 title: "无网络环境下使用同步方法获取网络状态报错"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-66
+format: md
 ---
+
 
 在无网环境中调用同步方法请求时，无法解析nethandle对应的内容，方法执行时会报错。可以使用try-catch语句捕获并处理报错信息。参考代码如下：
 

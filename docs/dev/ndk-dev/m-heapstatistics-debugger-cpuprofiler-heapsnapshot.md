@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API接口进行JavaScript代码调试调优"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/m-heapstatistics-debugger-cpuprofiler-heapsnapshot
+format: md
 ---
+
 
 ## 简介
 

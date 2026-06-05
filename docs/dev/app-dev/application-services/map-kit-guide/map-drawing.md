@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "在地图上绘制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-drawing
+format: md
 ---
+
 
 * **[标记](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-marker)**
 * **[折线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-polyline)**

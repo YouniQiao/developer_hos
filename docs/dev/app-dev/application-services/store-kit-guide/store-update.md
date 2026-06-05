@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用市场更新功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-update
+format: md
 ---
+
 
 应用市场更新功能为已上架应用提供版本检测、显示更新提醒能力。开发者使用应用市场更新功能可以在应用内提醒用户及时更新到最新版本。
 
@@ -33,8 +35,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stor
 
 | 接口名 | 描述 |
 | --- | --- |
-| [checkAppUpdate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagercheckappupdate)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)): Promise<[CheckUpdateResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#checkupdateresult)> | 检查更新接口，用于检测当前是否有新版本。 |
-| [showUpdateDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagershowupdatedialog)(context:[common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)): Promise<[ShowUpdateResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#showupdateresultcode)> | 显示升级对话框接口，用于提示用户进行升级。 |
+| [checkAppUpdate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagercheckappupdate)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)): Promise[CheckUpdateResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#checkupdateresult) | 检查更新接口，用于检测当前是否有新版本。 |
+| [showUpdateDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#updatemanagershowupdatedialog)(context:[common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)): Promise[ShowUpdateResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-updatemanager#showupdateresultcode) | 显示升级对话框接口，用于提示用户进行升级。 |
 
 ## 开发步骤
 

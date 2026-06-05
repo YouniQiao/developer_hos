@@ -4,6 +4,7 @@ title: "如何解决编译报错“ Error: 'icon' value `$media:icons` invalid v
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-122
 ---
 
+
 **问题现象**
 
 编译报错。

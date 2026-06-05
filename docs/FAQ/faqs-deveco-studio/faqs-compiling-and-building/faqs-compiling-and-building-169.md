@@ -1,7 +1,9 @@
 ---
 title: "如何快速关闭工程中所有字节码HAR配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-169
+format: md
 ---
+
 
 **解决措施**
 

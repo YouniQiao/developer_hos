@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "高亮显示PDF文档"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-highlight
+format: md
 ---
+
 
 PDF文档在预览时，可以对页面的矩形区域或文本设置高亮显示，高亮颜色可以自定义。
 

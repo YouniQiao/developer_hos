@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用HiLog打印日志（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-guidelines-arkts
+format: md
 ---
+
 
 在应用开发过程中，可在关键代码处输出日志信息。在运行应用后，通过查看日志信息来分析应用执行情况（如应用是否正常运行、代码运行时序、运行逻辑分支是否正常等）。
 
@@ -35,11 +37,11 @@ debug版本应用下，setMinLogLevel()和setLogLevel()函数均不生效。
 * **tag**：用于指定日志标识，可以为任意字符串，建议标识调用所在的类或者业务行为。tag最多为31字节，超出后会截断。不建议使用中文字符，可能出现乱码或者对齐问题。
 * **level**：用于指定日志级别。取值见[LogLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hilog#loglevel)。
 * **prefer**：用于指定偏好策略。取值见[PreferStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hilog#preferstrategy21)。
-* **format**：格式字符串，用于日志的格式化输出。日志打印的格式化参数需按照“%{private flag}specifier”的格式打印。
+* **format**：格式字符串，用于日志的格式化输出。日志打印的格式化参数需按照“%\{private flag\}specifier”的格式打印。
 
   | 隐私标识符（private flag） | 说明 |
   | --- | --- |
-  | private | 表示日志打印结果不可见，输出结果为<private>。 |
+  | private | 表示日志打印结果不可见，输出结果为\<private\>。 |
   | public | 表示日志打印结果可见，明文显示参数。 |
   | 无 | 缺省值默认为private，日志打印结果不可见。 |
 
@@ -47,9 +49,9 @@ debug版本应用下，setMinLogLevel()和setLogLevel()函数均不生效。
   | --- | --- | --- |
   | d/i | 支持打印number和bigint类型。 | 123 |
   | s | 支持打印string、undefined、boolean和null类型。 | "123" |
-  | o/O | 支持打印object、undefined和null类型。  从API version 20开始，支持该能力。 | { 'name': "Jack", 'age': 22 } |
+  | o/O | 支持打印object、undefined和null类型。  从API version 20开始，支持该能力。 | \{ 'name': "Jack", 'age': 22 \} |
 
-  格式字符串中可以设置多个参数，例如格式字符串为“%{public}s World”，“%{public}s”表示参数类型为string的变参标识，具体取值在args中定义。
+  格式字符串中可以设置多个参数，例如格式字符串为“%\{public\}s World”，“%\{public\}s”表示参数类型为string的变参标识，具体取值在args中定义。
 
   debug应用无隐私管控机制，使用上述任意隐私标识符打印日志，都可明文显示参数。
 * **args**：可以为0个或多个参数，是格式字符串中参数类型对应的参数列表。参数的数量、类型必须与格式字符串中的标识一一对应。
@@ -141,7 +143,7 @@ debug版本应用下，setMinLogLevel()和setLogLevel()函数均不生效。
    '%{public}s World %{public}d'
    ```
 
-   其中变参"%{public}s"为公共的字符串，"%{public}d"为公共的整型数。
+   其中变参"%\{public\}s"为公共的字符串，"%\{public\}d"为公共的整型数。
 
    如果要输出对象，格式字符串为：
 
@@ -149,7 +151,7 @@ debug版本应用下，setMinLogLevel()和setLogLevel()函数均不生效。
    'peter is %{public}o'
    ```
 
-   其中变参"%{public}o"为公共的对象
+   其中变参"%\{public\}o"为公共的对象
 4. 在真机上运行该工程，单击应用/服务界面上的“Next”按钮。
 5. 在DevEco Studio的底部，切换到“Log”窗口，设置日志的过滤条件。
 

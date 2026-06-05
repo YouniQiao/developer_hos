@@ -2,7 +2,9 @@
 title: "查询版位底价"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot3-0000001338501433
+format: md
 ---
+
 # 查询版位底价
 
 您通过本接口可以查询DSP版位底价。

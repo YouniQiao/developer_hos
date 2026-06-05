@@ -1,7 +1,9 @@
 ---
 title: "新建元服务卡片"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-create-page
+format: md
 ---
+
 
 1. 在元服务中新建一张卡片。
    * 在“**Project**”窗口，在“**entry**”模块目录右键选择“**New &gt; Service Widget &gt; Dynamic Widget**”，进入卡片模板选择界面，如下图所示：

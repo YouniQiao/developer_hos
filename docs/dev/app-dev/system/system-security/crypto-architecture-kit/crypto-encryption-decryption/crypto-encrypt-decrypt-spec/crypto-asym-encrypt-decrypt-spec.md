@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "非对称密钥加解密算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec
+format: md
 ---
+
 
 本章说明系统支持的算法及其规格。
 

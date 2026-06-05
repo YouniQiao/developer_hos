@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取华为账号用户信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-user-info
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-user-info-overview)**
 * **[获取头像昵称](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-avatar-nickname)**

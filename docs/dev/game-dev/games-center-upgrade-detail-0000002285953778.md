@@ -1,7 +1,9 @@
 ---
 title: "更新应用信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-upgrade-detail-0000002285953778
+format: md
 ---
+
 
 若您想提升应用的下载转化率和市场曝光度，建议您时常更新在架应用详情。您无需更换软件包，通过升级同版本的方式即可更新应用的基本信息。升级审核通过后，应用详情更新成功。
 

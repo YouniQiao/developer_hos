@@ -1,7 +1,9 @@
 ---
 title: "canvas"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-canvas
+format: md
 ---
+
 
 画布组件，用于自定义绘制图形。
 

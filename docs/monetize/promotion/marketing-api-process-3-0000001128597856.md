@@ -2,7 +2,9 @@
 title: "客户端申请Marketing API权限"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-3-0000001128597856
+format: md
 ---
+
 # 客户端申请Marketing API权限
 
 ![](./img/note_3.0-zh-cn_4539873852c7.png) 

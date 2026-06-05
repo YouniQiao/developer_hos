@@ -1,7 +1,9 @@
 ---
 title: "如何检测当前相机服务的状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-4
+format: md
 ---
+
 
 设置状态回调以返回相机状态。
 

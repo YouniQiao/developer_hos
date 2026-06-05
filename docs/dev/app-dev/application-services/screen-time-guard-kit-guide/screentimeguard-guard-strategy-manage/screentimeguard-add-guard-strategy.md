@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "添加策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-add-guard-strategy
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -34,7 +36,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [addGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#addguardstrategy)(guardStrategy: [GuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#guardstrategy)): Promise<void> | 添加屏幕时间管控策略。 |
+| [addGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#addguardstrategy)(guardStrategy: [GuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#guardstrategy)): Promise\<void\> | 添加屏幕时间管控策略。 |
 
 ## 开发前提
 

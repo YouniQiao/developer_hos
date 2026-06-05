@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "流场图层"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-flow-field
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [FlowFieldOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#flowfieldoverlayparams) | 流场覆盖物参数。 |
-| [addFlowFieldOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addflowfieldoverlay)(params: mapCommon.[FlowFieldOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#flowfieldoverlayparams)): Promise<[FlowFieldOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-flowfieldoverlay)> | 新增流场覆盖物。 |
+| [addFlowFieldOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addflowfieldoverlay)(params: mapCommon.[FlowFieldOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#flowfieldoverlayparams)): Promise[FlowFieldOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-flowfieldoverlay) | 新增流场覆盖物。 |
 | [FlowFieldOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-flowfieldoverlay) | 流场覆盖物管理对象。 |
 
 ## 开发步骤

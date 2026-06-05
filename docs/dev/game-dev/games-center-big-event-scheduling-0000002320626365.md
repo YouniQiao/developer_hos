@@ -1,7 +1,9 @@
 ---
 title: "定档"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-scheduling-0000002320626365
+format: md
 ---
+
 
 定档是指游戏确定正式上线档期。
 

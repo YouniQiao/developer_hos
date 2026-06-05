@@ -1,7 +1,9 @@
 ---
 title: "错误码"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-errorcode-0000002271000681
+format: md
 ---
+
 
 | 错误码（errorCode） | 错误描述（errorMsg） |
 | --- | --- |

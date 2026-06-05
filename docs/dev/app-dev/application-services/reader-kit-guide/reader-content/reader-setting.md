@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "修改阅读设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting
+format: md
 ---
+
 
 * **[自定义字体](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-font)**
 * **[自定义页面背景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-background)**

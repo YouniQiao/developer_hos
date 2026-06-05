@@ -2,7 +2,9 @@
 title: 金融理财类
 sidebar_label: 金融理财类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples6-0000001793536905
+format: md
 ---
+
 # 金融理财类
 
 金融理财类应用的目的是让用户更加便捷地办理金融业务。常见的有银行理财，股票，基金等类型的应用和业务场景，核心场景有数据查看、交易、财经资讯阅读等。

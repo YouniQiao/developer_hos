@@ -1,7 +1,9 @@
 ---
 title: "方案设计"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-develop-state-design
+format: md
 ---
+
 
 ## 多团队开发场景
 

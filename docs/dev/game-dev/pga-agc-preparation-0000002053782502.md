@@ -1,7 +1,9 @@
 ---
 title: "AGC控制台准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pga-agc-preparation-0000002053782502
+format: md
 ---
+
 
 ## 注册开发者账号
 

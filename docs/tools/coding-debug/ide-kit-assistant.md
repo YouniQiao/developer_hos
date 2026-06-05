@@ -1,7 +1,9 @@
 ---
 title: "快速插入场景化代码片段"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 快速插入场景化代码片段
 

@@ -1,7 +1,9 @@
 ---
 title: "规则总览"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 规则总览
 

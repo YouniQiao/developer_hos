@@ -2,7 +2,9 @@
 title: "应用内支付服务"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-pay-0000002060488817
+format: md
 ---
+
 
 # 应用内支付服务
 

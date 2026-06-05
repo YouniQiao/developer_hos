@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取游戏密钥"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-key
+format: md
 ---
+
 
 在开发者服务器加签或验签时，请开发者前往AppGallery Connect获取游戏私钥或游戏公钥。
 

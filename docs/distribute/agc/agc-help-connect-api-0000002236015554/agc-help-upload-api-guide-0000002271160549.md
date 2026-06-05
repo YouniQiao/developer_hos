@@ -1,7 +1,9 @@
 ---
 title: "Upload Management API指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-guide-0000002271160549
+format: md
 ---
+
 
 应用信息填写完整后，您需要准备应用的相关文件，例如APP软件包，以及应用的图标、介绍图片、视频文件等。您通过Upload Management API可以将上传应用文件改为服务器对服务器上传，相对于AppGallery Connect中上传文件的上传速度更快，且不受您个人设备所在网络的限制。
 

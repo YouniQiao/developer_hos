@@ -2,7 +2,9 @@
 title: "网格化-水波纹&lt;MeshImage-SinMotion&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/meshimage-sinmotion-0000001074662024
+format: md
 ---
+
 
 # 网格化-水波纹&lt;MeshImage-SinMotion&gt;
 

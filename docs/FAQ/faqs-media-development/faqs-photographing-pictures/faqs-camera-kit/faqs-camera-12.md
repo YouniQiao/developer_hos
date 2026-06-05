@@ -4,6 +4,7 @@ title: "如何避免预览流产生畸变"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-12
 ---
 
+
 使用下列代码获取设备支持的宽和高，然后根据手机屏幕的宽高设置最合适的预览流分辨率，并使surface和XComponent的宽高一致。
 
 ```

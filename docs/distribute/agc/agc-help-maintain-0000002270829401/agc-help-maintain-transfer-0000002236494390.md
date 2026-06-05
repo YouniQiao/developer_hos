@@ -1,7 +1,9 @@
 ---
 title: "转移应用/元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-transfer-0000002236494390
+format: md
 ---
+
 
 应用转移是指将AppGallery Connect中的应用（含游戏）从一个账号转移到另一个账号进行维护。
 

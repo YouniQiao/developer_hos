@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "地图选点Button"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-selecting-point
+format: md
 ---
+
 
 ## 场景介绍
 

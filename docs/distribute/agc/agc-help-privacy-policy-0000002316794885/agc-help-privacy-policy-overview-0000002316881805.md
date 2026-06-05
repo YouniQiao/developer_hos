@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-overview-0000002316881805
+format: md
 ---
+
 
 发布应用/元服务时，您需要提供隐私政策，以便用户了解应用的数据收集和使用情况。
 

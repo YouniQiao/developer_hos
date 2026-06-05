@@ -1,7 +1,9 @@
 ---
 title: "组件启动规则（FA模型）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules-fa
+format: md
 ---
+
 
 启动组件是指一切启动或连接应用组件的行为：
 

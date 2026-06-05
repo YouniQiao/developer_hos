@@ -2,7 +2,9 @@
 title: "智能体数字商品支付服务介绍"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/service-introduction-0000002537853869
+format: md
 ---
+
 
 # 智能体数字商品支付服务介绍
 

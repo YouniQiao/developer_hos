@@ -1,7 +1,9 @@
 ---
 title: "运行调试元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/debug-ascf-code
+format: md
 ---
+
 
 完成元服务开发后，开发者可以根据需要，选择使用以下其中一种方式运行元服务。
 

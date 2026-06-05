@@ -1,7 +1,9 @@
 ---
 title: "接入报点预测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-point-prediction-c
+format: md
 ---
+
 
 从6.0.0(20)开始，报点预测新增C API接口。
 

@@ -1,7 +1,9 @@
 ---
 title: "设置扬声器播放音量"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-setvolume-csharp-0000002393266933
+format: md
 ---
+
 
 进入语音房间后，玩家如果希望控制房间音量，可通过设置扬声器播放音量实现，房间中任意玩家的声音都按设置的音量大小通过扬声器播出。
 

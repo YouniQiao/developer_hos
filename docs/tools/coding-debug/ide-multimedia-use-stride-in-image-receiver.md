@@ -1,7 +1,9 @@
 ---
 title: "@correctness/multimedia-use-stride-in-image-receiver"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/multimedia-use-stride-in-image-receiver
 

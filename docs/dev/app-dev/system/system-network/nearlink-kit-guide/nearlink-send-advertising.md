@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "发送星闪广播"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-send-advertising
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -12,10 +14,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/near
 
 | 接口名 | 描述 |
 | --- | --- |
-| [startAdvertising](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-advertising#startadvertising)(advertisingParams: AdvertisingParams): Promise<number> | 启动星闪广播。 |
-| [stopAdvertising](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-advertising#stopadvertising)(advertisingId: number): Promise<void> | 停止星闪广播。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-advertising#on-advertisingstatechange)(type: 'advertisingStateChange', callback: Callback<AdvertisingStateChangeInfo>): void | 订阅星闪广播状态变化事件。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-advertising#off-advertisingstatechange)(type: 'advertisingStateChange', callback?: Callback<AdvertisingStateChangeInfo>): void | 取消订阅星闪广播状态变化事件。 |
+| [startAdvertising](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-advertising#startadvertising)(advertisingParams: AdvertisingParams): Promise\<number\> | 启动星闪广播。 |
+| [stopAdvertising](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-advertising#stopadvertising)(advertisingId: number): Promise\<void\> | 停止星闪广播。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-advertising#on-advertisingstatechange)(type: 'advertisingStateChange', callback: Callback\<AdvertisingStateChangeInfo\>): void | 订阅星闪广播状态变化事件。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-advertising#off-advertisingstatechange)(type: 'advertisingStateChange', callback?: Callback\<AdvertisingStateChangeInfo\>): void | 取消订阅星闪广播状态变化事件。 |
 
 ## 开发步骤
 

@@ -4,6 +4,7 @@ title: "Native侧如何引入头文件deviceinfo.h"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-44
 ---
 
+
 **问题现象：**
 
 在C++文件中，参照官方指导文档，引入#include "deviceinfo.h"头文件后，编译时仍提示无法找到该头文件，日志提示未链接deviceinfo库。

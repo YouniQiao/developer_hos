@@ -2,7 +2,9 @@
 title: "通用合规要求"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-universal-0000001894803116
+format: md
 ---
+
 # 通用合规要求
 
 ## 授权及证明资质规范

@@ -1,7 +1,9 @@
 ---
 title: "运行调试元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-running-debugging
+format: md
 ---
+
 
 * 完成元服务开发后，可以通过DevEco Studio UI界面预览功能，可以查看UI界面效果，随时调整界面UI布局。详情请参见[界面预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer)。
 * 如需对元服务进行签名，可以使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)或[手动方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)完成签名。详情请参见[服务签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。

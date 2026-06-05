@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "SSAP服务端"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-ssap-server-connect
+format: md
 ---
+
 
 提供SSAP（SparkLink Service Access Protocol）服务端相关的连接、数据传输和服务管理功能。
 
@@ -20,10 +22,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/near
 | --- | --- |
 | [createServer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#createserver)(): Server | 创建ssap服务端实例。 |
 | [addService](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#addservice)(service: Service): void | 服务端添加服务。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#onconnectionstatechange)(type: 'connectionStateChange', callback: Callback<ConnectionChangeState>): void | 订阅连接状态变化事件。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#on-propertyread)(type: 'propertyRead', callback: Callback<PropertyReadRequest>): void | 订阅客户端的读属性请求事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#onconnectionstatechange)(type: 'connectionStateChange', callback: Callback\<ConnectionChangeState\>): void | 订阅连接状态变化事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#on-propertyread)(type: 'propertyRead', callback: Callback\<PropertyReadRequest\>): void | 订阅客户端的读属性请求事件。 |
 | [sendResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#sendresponse)(response: ServerResponse): void | 回复客户端读/写请求。 |
-| [notifyPropertyChanged](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#notifypropertychanged)(address: string, property: Property): Promise<void> | 通知客户端属性值更新。 |
+| [notifyPropertyChanged](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#notifypropertychanged)(address: string, property: Property): Promise\<void\> | 通知客户端属性值更新。 |
 
 ## 开发步骤
 

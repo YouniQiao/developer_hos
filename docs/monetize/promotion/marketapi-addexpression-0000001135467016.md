@@ -2,7 +2,9 @@
 title: "新增交并差计算定向"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-addexpression-0000001135467016
+format: md
 ---
+
 # 新增交并差计算定向
 
 ## 功能介绍
@@ -30,7 +32,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-a
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
 | client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\\{access\_token\\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
 
 ![](./img/caution_3.0-zh-cn_32d67214b895.png) 
 

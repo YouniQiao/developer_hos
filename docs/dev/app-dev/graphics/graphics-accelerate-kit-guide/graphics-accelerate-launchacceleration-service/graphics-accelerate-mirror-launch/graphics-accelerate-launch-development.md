@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "实现游戏启动加速"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-development
+format: md
 ---
+
 
 ## 业务流程
 

@@ -1,7 +1,9 @@
 ---
 title: 应用开发
 displayed_sidebar: appDevSidebar
+format: md
 ---
+
 
 # 应用开发
 

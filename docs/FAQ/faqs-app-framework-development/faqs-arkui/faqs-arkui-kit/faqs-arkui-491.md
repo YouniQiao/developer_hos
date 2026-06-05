@@ -1,7 +1,9 @@
 ---
 title: "如何实现三键导航的监听与避让"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-491
+format: md
 ---
+
 
 **解决措施**
 

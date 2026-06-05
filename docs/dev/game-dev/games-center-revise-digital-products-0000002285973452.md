@@ -1,7 +1,9 @@
 ---
 title: "修改数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-revise-digital-products-0000002285973452
+format: md
 ---
+
 
 在商品管理新增商品后，您可以根据需要修改商品的基本信息或价格。您还可以对商品设置促销价格，以提高商品购买量。
 

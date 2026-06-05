@@ -4,6 +4,7 @@ title: "编译报错“The service widget file contains one or more references t
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-135
 ---
 
+
 **错误描述**
 
 服务卡片文件包含一个或多个HSP模块的引用。

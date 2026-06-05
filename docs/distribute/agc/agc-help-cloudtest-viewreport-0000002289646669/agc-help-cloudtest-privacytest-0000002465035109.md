@@ -1,7 +1,9 @@
 ---
 title: "隐私测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-privacytest-0000002465035109
+format: md
 ---
+
 
 云测试提供应用或元服务在真机设备上的隐私测试能力，支持检测隐私政策的选择和同意、隐私保护能力、隐私通知、向第三方披露和收集等方面隐私问题，从而规范应用全生命周期的隐私行为。
 

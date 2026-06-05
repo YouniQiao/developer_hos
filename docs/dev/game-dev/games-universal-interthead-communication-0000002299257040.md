@@ -1,7 +1,9 @@
 ---
 title: "线程模型及线程间通信"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-interthead-communication-0000002299257040
+format: md
 ---
+
 
 线程间通信指的是并发多线程间存在的数据交换行为。由于ArkTS语言兼容TS/JS，其运行时的实现与其它所有的JS引擎一样，都是基于Actor内存隔离的并发模型提供并发能力。
 

@@ -1,7 +1,9 @@
 ---
 title: "设置数字盾密码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -21,7 +23,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [enableTrustedAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#enabletrustedauthentication)(challenge: Uint8Array, pwdInfo: PasswordInfo, label: TUILable): Promise<AuthInfo> | 创建数字盾密码 |
+| [enableTrustedAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#enabletrustedauthentication)(challenge: Uint8Array, pwdInfo: PasswordInfo, label: TUILable): Promise\<AuthInfo\> | 创建数字盾密码 |
 
 ## 开通数字盾界面介绍
 

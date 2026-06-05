@@ -1,7 +1,9 @@
 ---
 title: "端到端验证"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/e2e-verification
+format: md
 ---
+
 
 应用适配完成并[上架到华为应用市场](https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseharmony-0000001933963166)之后，开发者需要模拟终端用户将终端设备从HarmonyOS升级到HarmonyOS NEXT的场景，端到端验证应用数据迁移结果。
 

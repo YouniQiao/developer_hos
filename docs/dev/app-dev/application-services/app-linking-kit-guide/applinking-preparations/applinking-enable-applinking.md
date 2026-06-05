@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开通App Linking服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-enable-applinking
+format: md
 ---
+
 
 首次使用App Linking服务前，需要先开通此服务。如果已经开通，可跳过本章节。
 

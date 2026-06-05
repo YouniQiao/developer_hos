@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "睡眠"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-sleeprecord
+format: md
 ---
+
 
 ## 夜间睡眠
 

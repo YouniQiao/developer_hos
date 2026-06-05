@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-access-introduction
+format: md
 ---
+
 
 方案根据不同场景可选择不同接入方式，具体如下：
 

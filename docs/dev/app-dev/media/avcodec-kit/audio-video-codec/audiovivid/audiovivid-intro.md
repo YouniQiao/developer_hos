@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Audio Vivid能力介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-intro
+format: md
 ---
+
 
 Audio Vivid（菁彩三维声）是全球首个基于AI技术的音频编解码标准，由世界超高清视频产业联盟（UWA联盟）与数字音视频编解码技术标准工作组（AVS）联合制定，共同发布。包含音频PCM数据以及元数据的音频格式，相比传统立体声音源，Audio Vivid包含音频内容源的元数据信息，能够还原物理和感知世界中的真实听感，打造极致的沉浸式听觉体验。
 

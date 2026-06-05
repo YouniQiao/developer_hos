@@ -1,7 +1,9 @@
 ---
 title: "Uint8Array类型和String以及hex如何互相转换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-91
+format: md
 ---
+
 
 Uint8Array类型和String以及hex实现互相转换，可参考如下代码：
 

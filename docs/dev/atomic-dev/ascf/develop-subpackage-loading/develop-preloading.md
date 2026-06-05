@@ -1,7 +1,9 @@
 ---
 title: "预加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-preloading
+format: md
 ---
+
 
 开发者可以通过配置预加载，由系统自动下载和安装可能需要的分包模块，从而提升进入后续模块的速度。
 

@@ -1,7 +1,9 @@
 ---
 title: "业务介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-introduction-0000002270974725
+format: md
 ---
+
 
 **AppGallery Connect API**是一套RESTful API，通过这些API，您可以无需登录**AppGallery Connect**即可定制AppGallery Connect提供的服务，或是实现流程自动化，从而提升工作效率。
 

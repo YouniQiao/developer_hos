@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "阻止系统闲时进入睡眠开发指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/runninglock-dev
+format: md
 ---
+
 
 ## 场景介绍
 

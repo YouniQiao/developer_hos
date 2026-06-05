@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Basic Services Kit（基础服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-services-kit
+format: md
 ---
+
 
 * **[Basic Services Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-services-kit-overview)**
 * **[进程线程通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-events)**

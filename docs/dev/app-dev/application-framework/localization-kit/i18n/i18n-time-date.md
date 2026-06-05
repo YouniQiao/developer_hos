@@ -1,7 +1,9 @@
 ---
 title: "时间日期国际化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-time-date
+format: md
 ---
+
 
 ## 使用场景
 

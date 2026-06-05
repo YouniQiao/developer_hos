@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Scan Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq
+format: md
 ---
+
 
 * **[如何添加“扫码直达”服务的快速入口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-1)**
 * **[扫码直达跳转失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-2)**

@@ -1,7 +1,9 @@
 ---
 title: "Native如何调ArkTS的方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-30
+format: md
 ---
+
 
 1. 在index.d.ts文件中提供 ArkTS 接口方法。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用访问限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-apps-restriction
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-apps-restriction-overview)**
 * **[设置应用访问限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-set-apps-restriction)**

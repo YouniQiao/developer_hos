@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "挑战值签名"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature
+format: md
 ---
+
 
 ## 背景
 

@@ -1,7 +1,9 @@
 ---
 title: "选择和同意"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-user-consent
+format: md
 ---
+
 
 # 选择和同意
 

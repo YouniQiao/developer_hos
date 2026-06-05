@@ -2,7 +2,9 @@
 title: "视图：串联图片&lt;ImageSeries&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-imageseries-0000002471394996
+format: md
 ---
+
 
 # 视图：串联图片&lt;ImageSeries&gt;
 

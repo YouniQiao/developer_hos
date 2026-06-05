@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅24h功耗器件分解统计事件（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-battery-usage-arkts
+format: md
 ---
+
 
 ## 接口说明
 

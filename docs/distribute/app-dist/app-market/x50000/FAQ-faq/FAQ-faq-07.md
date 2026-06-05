@@ -2,7 +2,9 @@
 title: "7. 下载分发行为"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-07
+format: md
 ---
+
 # 7. 下载分发行为
 
 * 重点整治通过“偷梁换柱”、“移花接木”等方式欺骗误导用户下载APP，特别是具有分发功能的移动应用程序欺骗误导用户下载非用户所自愿下载APP的行为。

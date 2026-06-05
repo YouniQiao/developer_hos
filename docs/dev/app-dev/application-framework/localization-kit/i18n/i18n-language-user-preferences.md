@@ -1,7 +1,9 @@
 ---
 title: "语言与用户偏好"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-language-user-preferences
+format: md
 ---
+
 
 * **[系统语言与区域](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-system-language-region)**
 * **[应用偏好语言](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-preferred-language)**

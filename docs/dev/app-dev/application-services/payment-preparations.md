@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-preparations
+format: md
 ---
+
 
 * **[商户入网和获取商户号](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-merc-regist-apply)**
 * **[（可选）特定场景配置操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-product-configuration)**

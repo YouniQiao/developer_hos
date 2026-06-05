@@ -1,7 +1,9 @@
 ---
 title: "使用Hypium实现ArkWeb自动化测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-hypium-autotests
+format: md
 ---
+
 
 ## 概述
 

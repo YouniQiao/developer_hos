@@ -1,7 +1,9 @@
 ---
 title: "network-cfg工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # network-cfg工具
 

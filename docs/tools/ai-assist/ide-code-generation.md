@@ -1,7 +1,9 @@
 ---
 title: "知识问答"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 知识问答
 

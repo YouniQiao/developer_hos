@@ -2,7 +2,9 @@
 title: "分发分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-anaiyze-app-usage-0000002350464692
 has_merged_cells: true
+format: md
 ---
+
 
 您可以在“分发分析”页签下查看HarmonyOS应用的使用情况数据：
 

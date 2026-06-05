@@ -1,7 +1,9 @@
 ---
 title: "查看多端设备预览效果"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 查看多端设备预览效果
 

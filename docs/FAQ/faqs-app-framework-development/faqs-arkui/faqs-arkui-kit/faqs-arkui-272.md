@@ -1,7 +1,9 @@
 ---
 title: "如何实现跨文件组件复用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-272
+format: md
 ---
+
 
 在应用开发中，需要使用相同功能和样式的ArkUI组件，例如购物页面中会使用相同样式的Button按钮和Text组件。常用的方法是抽取公共样式或封装成自定义组件，放入公共组件库中，以减少冗余代码。
 

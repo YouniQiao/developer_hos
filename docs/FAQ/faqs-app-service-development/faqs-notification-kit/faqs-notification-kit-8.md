@@ -4,6 +4,7 @@ title: "调用notificationManager.publish发布通知失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit-8
 ---
 
+
 **问题现象**
 
 发布通知后，未生成错误日志信息，通知栏中未显示通知。

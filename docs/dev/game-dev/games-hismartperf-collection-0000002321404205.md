@@ -1,7 +1,9 @@
 ---
 title: "采集性能数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-collection-0000002321404205
+format: md
 ---
+
 
 ## 前提条件
 

@@ -1,7 +1,9 @@
 ---
 title: "按压阴影"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-color
+format: md
 ---
+
 
 ## 场景介绍
 

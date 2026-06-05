@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "管理数据源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-datasource-manage
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,9 +18,9 @@ DataSourceId在插入数据源信息时由平台生成，无法更改。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [insertDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoreinsertdatasource)(dataSource: [DataSourceBase](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasourcebase)): Promise<string> | 插入数据源，入参为数据源基类[DataSourceBase](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasourcebase)。 |
-| [readDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddatasource)(request: [DataSourceReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasourcereadrequest)): Promise<[DataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasource)[]> | 查询数据源，通过[DataSourceReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasourcereadrequest)设置查询条件，可按DataSourceId/包名/设备UniqueId查询数据源。 |
-| [updateDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoreupdatedatasource)(dataSource: [DataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasource)): Promise<void> | 更新数据源，其中数据源的dataSourceId和uniqueId字段无法更新。 |
+| [insertDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoreinsertdatasource)(dataSource: [DataSourceBase](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasourcebase)): Promise\<string\> | 插入数据源，入参为数据源基类[DataSourceBase](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasourcebase)。 |
+| [readDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddatasource)(request: [DataSourceReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasourcereadrequest)): Promise[DataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasource)[] | 查询数据源，通过[DataSourceReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasourcereadrequest)设置查询条件，可按DataSourceId/包名/设备UniqueId查询数据源。 |
+| [updateDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoreupdatedatasource)(dataSource: [DataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#datasource)): Promise\<void\> | 更新数据源，其中数据源的dataSourceId和uniqueId字段无法更新。 |
 
 ## 开发前检查
 

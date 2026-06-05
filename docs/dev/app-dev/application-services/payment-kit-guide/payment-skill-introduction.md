@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入Skill说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-skill-introduction
+format: md
 ---
+
 
 鸿蒙支付服务接入Skill是一套面向开发者/外部商户接入的能力，基于Payment Kit文档沉淀标准流程与关键校验点，将“文档阅读”转化为“任务清单执行”，帮助开发者更快完成鸿蒙支付服务接入的能力。
 

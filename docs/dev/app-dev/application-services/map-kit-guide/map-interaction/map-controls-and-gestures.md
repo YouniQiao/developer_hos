@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "手势交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-controls-and-gestures
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -3,7 +3,9 @@ displayed_sidebar: cliToolsSidebar
 title: 应用签名工具（app-sign-tool）
 sidebar_position: 31
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/app-sign-tool
+format: md
 ---
+
 
 # 应用签名工具（app-sign-tool）
 

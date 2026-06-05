@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "初始化全局应用上下文"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-initialize-context
+format: md
 ---
+
 
 ## 约束与限制
 

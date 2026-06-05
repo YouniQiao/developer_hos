@@ -1,7 +1,9 @@
 ---
 title: "API"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis
+format: md
 ---
+
 
 * **[基础](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-basis)**
 * **[路由](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-router)**

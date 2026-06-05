@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/space-before-blocks"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/space-before-blocks
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "分享详情页关闭分享面板"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-sec-panel-back
+format: md
 ---
+
 
 从分享详情页返回分享面板时，可通过设置resultCode值为特定的[ShareAbilityResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#shareabilityresultcode)，以告知分享面板做出不同的处理，具体处理方式如下：
 

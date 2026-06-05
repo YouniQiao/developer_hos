@@ -1,7 +1,9 @@
 ---
 title: "管理数据对象的状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v2-manage-data-object-state
+format: md
 ---
+
 
 * **[@ObservedV2装饰器和@Trace装饰器：类属性变化观测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)**
 * **[@Monitor装饰器：状态变量修改异步监听](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor)**

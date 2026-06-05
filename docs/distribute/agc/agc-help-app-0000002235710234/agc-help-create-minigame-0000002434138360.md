@@ -1,7 +1,9 @@
 ---
 title: "创建小游戏"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-minigame-0000002434138360
+format: md
 ---
+
 
 APP ID是应用开发与发布的关键要素，是识别应用的唯一标识。如需在华为应用市场发布小游戏，或者使用AppGallery Connect提供的各类服务，首先要创建小游戏，从而为小游戏生成一个独一无二的APP ID。
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/return-await"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/return-await
 

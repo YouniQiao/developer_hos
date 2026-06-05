@@ -1,7 +1,9 @@
 ---
 title: "渲染控制概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-overview
+format: md
 ---
+
 
 ArkUI通过[自定义组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components)的[build()函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#build函数)和[@Builder装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)中的声明式UI描述语句构建相应的UI。在声明式描述语句中开发者除了使用系统组件外，还可以使用渲染控制组件来辅助UI的构建，这些渲染控制组件包括控制组件是否显示的条件渲染组件和基于数组数据快速生成组件的循环渲染组件。
 

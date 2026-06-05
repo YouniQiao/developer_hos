@@ -4,9 +4,10 @@ title: "Static Library模块中src/main/cpp目录下的文件未打包进HAR"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-23
 ---
 
+
 **问题现象**
 
-点击**Build > Make Module ${libraryName}**编译构建生成HAR后，发现构建产物中未出现cpp目录下的文件。
+点击**Build > Make Module $\{libraryName\}**编译构建生成HAR后，发现构建产物中未出现cpp目录下的文件。
 
 ![](./img/c17efde0.png)
 

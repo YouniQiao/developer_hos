@@ -1,7 +1,9 @@
 ---
 title: "启用认证方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-enable-authentication-method-0000002383148278
+format: md
 ---
+
 
 开通认证服务后，您可以进入“认证方式”页签，点击需要启用的认证方式所在行的“启用”。
 

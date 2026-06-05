@@ -2,7 +2,9 @@
 title: "关联广告账户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/manager-associated-0000001126403164
+format: md
 ---
+
 # 关联广告账户
 
 1. <strong>在经理账户中关联现有广告账户</strong>。

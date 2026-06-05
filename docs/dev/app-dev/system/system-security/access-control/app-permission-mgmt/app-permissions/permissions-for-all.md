@@ -1,7 +1,9 @@
 ---
 title: "开放权限（系统授权）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all
+format: md
 ---
+
 
 此列表内所有权限均为系统授权（system\_grant）的开放权限，面向所有应用开放。
 

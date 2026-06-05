@@ -1,7 +1,9 @@
 ---
 title: "应用多线程开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-overview
+format: md
 ---
+
 
 在ArkTS应用开发中，不同业务场景需要不同的并发能力和任务类型。
 

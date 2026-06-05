@@ -1,7 +1,9 @@
 ---
 title: "HiSmartPerf Device性能使用指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/smartperf-guidelines
+format: md
 ---
+
 
 ## 工具简介
 

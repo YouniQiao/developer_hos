@@ -2,7 +2,9 @@
 title: "锁屏&lt;Lockscreen&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-lock-0000002244659534
+format: md
 ---
+
 
 # 锁屏&lt;Lockscreen&gt;
 

@@ -1,7 +1,9 @@
 ---
 title: "业务介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-introduction-0000002304472608
+format: md
 ---
+
 
 * **[业务概述](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-overview-0000002338546393)**
 * **[图说游戏多媒体](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-pic-0000002304507138)**

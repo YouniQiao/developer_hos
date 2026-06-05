@@ -1,7 +1,9 @@
 ---
 title: "进入全屏模式后隐藏状态栏，退出全屏模式如何显示状态栏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-360
+format: md
 ---
+
 
 **问题描述**
 

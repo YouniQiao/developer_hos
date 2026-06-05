@@ -1,7 +1,9 @@
 ---
 title: "耗时任务并发场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task
+format: md
 ---
+
 
 * **[耗时任务并发场景简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task-overview)**
 * **[CPU密集型任务开发指导 (TaskPool和Worker)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cpu-intensive-task-development)**

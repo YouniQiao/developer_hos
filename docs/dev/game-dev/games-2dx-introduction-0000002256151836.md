@@ -1,7 +1,9 @@
 ---
 title: "使用Cocos2d-x概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-2dx-introduction-0000002256151836
+format: md
 ---
+
 
 本文主要介绍基于Cocos2d-x架构的游戏适配HarmonyOS 5.0及以上系统的适配方案。
 

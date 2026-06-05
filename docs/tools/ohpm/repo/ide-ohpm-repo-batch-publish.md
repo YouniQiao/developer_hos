@@ -1,6 +1,8 @@
 ---
 title: "ohpm-repo batch_publish"
+format: md
 ---
+
 
 # ohpm-repo batch\_publish
 

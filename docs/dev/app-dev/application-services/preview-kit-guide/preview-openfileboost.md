@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文件打开加速（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost
+format: md
 ---
+
 
 从5.0.3(15)版本开始，新增文件打开加速功能。提供注册和取消注册接口，应用可以注册一系列回调，文件打开加速服务通过调用回调接口向应用推荐文件进行预加载动作。
 

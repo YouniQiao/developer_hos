@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "创建视频解码器和NativeWindow初始化并行"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/parallel-decoding-nativewindow
+format: md
 ---
+
 
 ## 场景介绍
 

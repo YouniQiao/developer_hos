@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "资源管理介绍及规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-resource-management-overview
+format: md
 ---
+
 
 约定外部密钥管理扩展（例如Ukey）中使用resourceId唯一标识资源。该resourceId目前支持通过[查询证书操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certificatemanagerdialogopenauthorizedialog22)返回。每个证书链对应1个resourceId。应用拿到resourceId后，需要[打开资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-open-close-resource-ndk#打开资源)，然后才可以进行后续密钥操作。操作完成后需要[关闭资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-open-close-resource-ndk#关闭资源)。
 

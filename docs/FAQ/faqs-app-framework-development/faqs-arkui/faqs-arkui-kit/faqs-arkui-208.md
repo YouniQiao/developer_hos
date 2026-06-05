@@ -1,7 +1,9 @@
 ---
 title: "是否有处理'9图'（又称'draw9patch'、'.9图'、'点9图'等）的平替方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-208
+format: md
 ---
+
 
 Image组件提供与点九图相同功能的API设置，通过设置resizable属性来配置ResizableOptions，即图像拉伸时的大小调整选项。ResizableOptions的参数slice包含top、left、bottom和right四个属性，分别表示图片在上下左右四个方向拉伸时保持不变的距离。
 

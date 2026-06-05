@@ -1,7 +1,9 @@
 ---
 title: "拨打电话"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-call
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -36,13 +38,13 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/tele
 | 接口名 | 描述 |
 | --- | --- |
 | hasVoiceCapability(): boolean; | 判断是否具有语音功能，默认false。  -true：是  -false：否 |
-| makeCall(phoneNumber: string, callback: AsyncCallback<void>): void; | 转到拨号屏幕，显示被叫号码。 |
+| makeCall(phoneNumber: string, callback: AsyncCallback\<void\>): void; | 转到拨号屏幕，显示被叫号码。 |
 
 observer模块为开发者提供订阅和取消订阅通话业务状态的功能。具体API说明详见[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-observer)。
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type: 'callStateChange', options: { slotId: number }, callback: Callback<{ state: CallState, number: string }>): void; | 监听通话状态变化。 |
+| on(type: 'callStateChange', options: \{ slotId: number \}, callback: Callback\<\{ state: CallState, number: string \}\>): void; | 监听通话状态变化。 |
 
 ## 开发步骤
 

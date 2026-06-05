@@ -4,6 +4,7 @@ title: "编译报错“File 'string.json' is missing the required property 'stri
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-147
 ---
 
+
 **错误描述**
 
 资源文件“string.json”缺少必需属性“string”。

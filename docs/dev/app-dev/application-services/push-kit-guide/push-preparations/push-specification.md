@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "学习Push Kit接入规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-specification
+format: md
 ---
+
 
 为维护华为通知生态秩序，保障用户合法权益和良好的使用体验，根据现行法律法规及[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/20209)、[《华为推送服务使用协议》](https://developer.huawei.com/consumer/cn/doc/app/20213)、[《应用审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50104)、[《元服务审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50129)，特制定本规范。
 

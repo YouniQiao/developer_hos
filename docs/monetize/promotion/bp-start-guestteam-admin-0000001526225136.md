@@ -2,7 +2,9 @@
 title: "直客管理者账户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guestteam-admin-0000001526225136
+format: md
 ---
+
 # 直客管理者账户
 
 ## 直客账户升级直客管理者账户

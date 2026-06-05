@@ -2,7 +2,9 @@
 title: "文档导读"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-app-doc-introduction-0000002532179268
 has_merged_cells: true
+format: md
 ---
+
 
 华为游戏服务提供游戏适配指导、服务集成支持、性能优化方案等，助力开发者高效构建HarmonyOS APP游戏。
 

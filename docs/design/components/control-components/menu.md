@@ -2,7 +2,9 @@
 title: 菜单
 sidebar_label: 菜单
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/menu-0000001957001877
+format: md
 ---
+
 # 菜单
 
 一种临时性弹出窗口，用于展示用户可执行的操作。开发相关描述请参考 [Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu) 文档。

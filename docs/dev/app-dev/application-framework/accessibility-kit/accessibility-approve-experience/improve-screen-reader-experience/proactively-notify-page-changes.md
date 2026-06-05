@@ -1,7 +1,9 @@
 ---
 title: "主动通知页面变化的场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/proactively-notify-page-changes
+format: md
 ---
+
 
 ## 设计场景
 

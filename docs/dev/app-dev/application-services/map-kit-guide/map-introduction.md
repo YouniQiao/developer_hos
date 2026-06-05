@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Map Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-introduction
+format: md
 ---
+
 
 Map Kit（地图服务）为开发者提供强大而便捷的地图能力，助力全球开发者实现个性化显示地图、位置搜索和路径规划等功能，轻松完成地图构建工作。您可以轻松地在HarmonyOS应用/元服务中集成地图相关的功能，全方位提升用户体验。
 

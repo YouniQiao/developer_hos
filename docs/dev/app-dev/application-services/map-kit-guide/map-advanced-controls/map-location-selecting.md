@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "地点选取"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-selecting
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -29,7 +31,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [LocationChoosingOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#locationchoosingoptions) | 地点选取的参数。 |
-| [chooseLocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#chooselocation)(context: common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), options: [LocationChoosingOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#locationchoosingoptions)): Promise<[LocationChoosingResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#locationchoosingresult)> | 地点选取。 |
+| [chooseLocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#chooselocation)(context: common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), options: [LocationChoosingOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#locationchoosingoptions)): Promise[LocationChoosingResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#locationchoosingresult) | 地点选取。 |
 | [LocationChoosingResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#locationchoosingresult) | 地点选取的返回结果。 |
 
 ## 开发步骤

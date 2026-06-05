@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置云存储配置项"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-config
+format: md
 ---
+
 
 ## 约束与限制
 

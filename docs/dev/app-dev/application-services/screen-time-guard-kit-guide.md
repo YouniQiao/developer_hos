@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Screen Time Guard Kit（屏幕时间守护服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screen-time-guard-kit-guide
+format: md
 ---
+
 
 * **[Screen Time Guard Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-preparations)**

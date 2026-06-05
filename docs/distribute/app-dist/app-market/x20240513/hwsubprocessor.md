@@ -2,7 +2,9 @@
 title: "华为软件技术有限公司的子数据处理者"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/hwsubprocessor
+format: md
 ---
+
 # 华为软件技术有限公司的子数据处理者
 
 | 分类 | 序号 | 实体名称 | 公司所在地 | 描述信息 |

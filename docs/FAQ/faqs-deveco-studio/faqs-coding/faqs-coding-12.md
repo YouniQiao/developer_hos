@@ -4,6 +4,7 @@ title: "编辑功能失效，提示“ArkTS language service terminated due to m
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-12
 ---
 
+
 **问题现象**
 
 场景1：多次执行git pull或切分支等大量修改代码的操作时，编辑器的Node进程内存峰值超过上限（默认为8GB），来不及回收内存导致OOM，编辑功能失效，弹窗提示“ArkTS language service terminated due to memory constraints.”。

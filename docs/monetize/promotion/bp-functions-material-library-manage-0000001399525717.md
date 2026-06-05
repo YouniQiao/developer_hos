@@ -2,7 +2,9 @@
 title: "管理素材库"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-material-library-manage-0000001399525717
+format: md
 ---
+
 # 管理素材库
 
 素材库内素材支持删除、修改名称、预览等操作，请参考如下操作进行管理。

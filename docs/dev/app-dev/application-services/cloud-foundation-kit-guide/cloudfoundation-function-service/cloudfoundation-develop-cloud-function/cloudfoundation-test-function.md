@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "测试函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-test-function
+format: md
 ---
+
 
 ![](./img/150d0e2f.png)
 

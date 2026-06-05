@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义界面扫码如何增加重试机制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-17
+format: md
 ---
+
 
 **问题现象**
 

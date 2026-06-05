@@ -1,7 +1,9 @@
 ---
 title: "端云数据同步云侧环境部署指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-with-cloud
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -198,7 +200,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
   建议应用提供端内导出功能。
 * 如何确保用户知晓数据管理权利
 
-  请在应用隐私声明中说明数据存储至云空间的目的和范围，可参考如下内容（开发者可自行调整）：为了{用户体验描述}，通过华为云空间在已登录华为账号的设备间同步{数据项名称}等数据。您可以在“设置-云空间”里管理同步功能和存储在云空间的数据。
+  请在应用隐私声明中说明数据存储至云空间的目的和范围，可参考如下内容（开发者可自行调整）：为了\{用户体验描述\}，通过华为云空间在已登录华为账号的设备间同步\{数据项名称\}等数据。您可以在“设置-云空间”里管理同步功能和存储在云空间的数据。
 
 ## 常见问题
 
@@ -206,7 +208,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
 在“开发与服务”页面，点击左下角“全部功能”按钮展开所有菜单，找到“构建 > 云空间服务”，可将其锁定到左侧导航树，便于后续查找使用。
 
-### 日志出现报错信息：{"schedule":2,"code":1,"details":{}}
+### 日志出现报错信息：\{"schedule":2,"code":1,"details":\{\}\}
 
 可能原因及解决方案：
 

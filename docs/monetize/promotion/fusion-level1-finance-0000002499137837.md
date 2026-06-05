@@ -2,7 +2,9 @@
 title: "财务管理"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-level1-finance-0000002499137837
+format: md
 ---
+
 # 财务管理
 
 服务商平台财务管理包含：充值开票、充值记录、转账记录。

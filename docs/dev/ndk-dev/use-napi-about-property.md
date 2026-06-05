@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API接口设置ArkTS对象的属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property
+format: md
 ---
+
 
 ## 简介
 

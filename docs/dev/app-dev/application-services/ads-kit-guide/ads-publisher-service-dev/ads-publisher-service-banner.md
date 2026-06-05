@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "横幅广告"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-banner
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -20,7 +22,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-
 
 | 接口名 | 描述 |
 | --- | --- |
-| [AutoAdComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-autoadcomponent)({adParam: advertising.AdRequestParams, adOptions: advertising.AdOptions, displayOptions: advertising.AdDisplayOptions, interactionListener: advertising.AdInteractionListener}) | 展示广告，通过AdRequestParams、AdOptions进行广告请求参数设置，通过AdDisplayOptions进行广告展示参数设置，通过AdInteractionListener监听广告状态回调。 |
+| [AutoAdComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-autoadcomponent)(\{adParam: advertising.AdRequestParams, adOptions: advertising.AdOptions, displayOptions: advertising.AdDisplayOptions, interactionListener: advertising.AdInteractionListener\}) | 展示广告，通过AdRequestParams、AdOptions进行广告请求参数设置，通过AdDisplayOptions进行广告展示参数设置，通过AdInteractionListener监听广告状态回调。 |
 
 ## 开发步骤
 

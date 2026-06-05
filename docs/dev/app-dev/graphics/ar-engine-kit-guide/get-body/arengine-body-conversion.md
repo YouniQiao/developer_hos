@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "人体骨骼点识别与跟踪介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-body-conversion
+format: md
 ---
+
 
 AR Engine提供骨骼关键点识别的能力，检测场景中是否存在人体，识别之后输出人体20个骨骼关键点坐标。
 

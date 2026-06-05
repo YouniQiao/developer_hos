@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "媒体数据解析"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer
+format: md
 ---
+
 
 开发者可以调用本模块的Native API接口，完成媒体数据的解封装相关操作，即从比特流数据中取出音频、视频、字幕等媒体sample，获得DRM相关信息。
 

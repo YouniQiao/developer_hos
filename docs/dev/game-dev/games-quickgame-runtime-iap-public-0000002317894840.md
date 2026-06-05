@@ -1,7 +1,9 @@
 ---
 title: "沙盒测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-iap-public-0000002317894840
+format: md
 ---
+
 
 沙盒测试允许您在接入应用内支付服务联调过程中无需真实支付即可完成端到端的测试。
 

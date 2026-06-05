@@ -2,7 +2,9 @@
 title: "PGD Systems组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-editor-systems-0000002494261300
 has_merged_cells: true
+format: md
 ---
+
 
 PGD Systems组件为系统操作模块。
 

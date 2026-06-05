@@ -2,7 +2,9 @@
 title: "AppGallery Connect付费服务协议"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/paidservice
+format: md
 ---
+
 # AppGallery Connect付费服务协议
 
 点击下载[AppGallery Connect付费服务协议](https://terms-drcn.platform.dbankcloud.cn/agreementservice/developer/getAgreementTemplate?agrType=1108&country=cn&language=zh_cn&version=2022101901)。

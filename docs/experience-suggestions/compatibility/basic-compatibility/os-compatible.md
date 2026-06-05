@@ -1,7 +1,9 @@
 ---
 title: "OS兼容"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/os-compatible
+format: md
 ---
+
 
 # OS兼容
 

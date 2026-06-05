@@ -1,7 +1,9 @@
 ---
 title: "加密导出导入密钥介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-wrap-key-overview
+format: md
 ---
+
 
 为支持应用在卸载后仍能保留密钥，从API 20开始，HUKS新增了加密导出密钥与加密导入密钥的功能。
 

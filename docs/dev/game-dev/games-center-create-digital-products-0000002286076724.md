@@ -1,7 +1,9 @@
 ---
 title: "创建数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-create-digital-products-0000002286076724
+format: md
 ---
+
 
 您可以通过华为商品管理系统（PMS）将您的应用商品信息托管在华为侧，方便您的应用商品价格国际化管理，助力您的应用进行全球化推广。
 

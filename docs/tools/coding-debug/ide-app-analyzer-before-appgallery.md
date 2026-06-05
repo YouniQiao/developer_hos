@@ -1,7 +1,9 @@
 ---
 title: "上架前体检"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 上架前体检
 

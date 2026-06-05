@@ -2,7 +2,9 @@
 title: "其他"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-others-0000001936745633
+format: md
 ---
+
 # 其他
 
 ## 短视频

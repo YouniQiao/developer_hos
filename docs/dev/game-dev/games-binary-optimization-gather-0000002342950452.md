@@ -1,7 +1,9 @@
 ---
 title: "执行二进制插桩"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-gather-0000002342950452
+format: md
 ---
+
 
 ![](./img/2ccc7537.png)
 

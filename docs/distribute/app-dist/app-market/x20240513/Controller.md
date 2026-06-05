@@ -2,7 +2,9 @@
 title: "华为分析数据保护协议"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/controller
+format: md
 ---
+
 # 华为分析数据保护协议
 
 点击下载[华为分析数据保护协议](https://terms-drcn.platform.dbankcloud.cn/agreementservice/developer/getAgreementTemplate?agrType=1194&country=cn&language=zh_cn&version=2022020801)。

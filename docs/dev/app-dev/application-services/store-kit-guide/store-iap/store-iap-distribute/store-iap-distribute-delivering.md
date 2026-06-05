@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "发放数字商品权益"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-delivering
+format: md
 ---
+
 
 ## 场景介绍
 

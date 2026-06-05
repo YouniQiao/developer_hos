@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/triple-slash-reference"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/triple-slash-reference
 

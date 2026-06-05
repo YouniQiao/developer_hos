@@ -4,6 +4,7 @@ title: "构建报错“proxy data is duplicated”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-112
 ---
 
+
 **问题现象**
 
 打包APP时，出现“uri datashareproxy://bundleName/\*\* in proxy data is duplicated”的提示。

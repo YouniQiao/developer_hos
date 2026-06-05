@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "高精几何重建（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-volume-measurement
+format: md
 ---
+
 
 本章节给出了关键开发步骤，完整代码可以参考[示例代码](https://gitcode.com/harmonyos_samples/arengine_-sample-code_-clientdemo_cpp)。
 

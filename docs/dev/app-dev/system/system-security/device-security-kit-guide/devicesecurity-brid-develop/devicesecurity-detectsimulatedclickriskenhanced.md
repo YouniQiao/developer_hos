@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "模拟点击增强检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-detectsimulatedclickriskenhanced
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -41,7 +43,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| detectSimulatedClickRiskEnhanced(params:SimulatedClickDetectionEnhancedRequest):Promise<string> | 模拟点击增强检测 |
+| detectSimulatedClickRiskEnhanced(params:SimulatedClickDetectionEnhancedRequest):Promise\<string\> | 模拟点击增强检测 |
 
 ## 开发步骤
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "发起星闪扫描"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-start-scan
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -12,10 +14,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/near
 
 | 接口名 | 描述 |
 | --- | --- |
-| [startScan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-scan#startscan)(filters: Array<ScanFilters>, options?: ScanOptions): Promise<void> | 启动星闪扫描。 |
-| [stopScan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-scan#stopscan)(): Promise<void> | 停止星闪扫描。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-scan#on-devicefound)(type: 'deviceFound', callback: Callback<Array<ScanResults>>): void | 订阅扫描结果。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-scan#off-devicefound)(type: 'deviceFound', callback?: Callback<Array<ScanResults>>): void | 取消订阅扫描结果。 |
+| [startScan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-scan#startscan)(filters: Array\<ScanFilters\>, options?: ScanOptions): Promise\<void\> | 启动星闪扫描。 |
+| [stopScan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-scan#stopscan)(): Promise\<void\> | 停止星闪扫描。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-scan#on-devicefound)(type: 'deviceFound', callback: Callback\<Array<ScanResults\>>): void | 订阅扫描结果。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-scan#off-devicefound)(type: 'deviceFound', callback?: Callback\<Array<ScanResults\>>): void | 取消订阅扫描结果。 |
 
 ## 开发步骤
 

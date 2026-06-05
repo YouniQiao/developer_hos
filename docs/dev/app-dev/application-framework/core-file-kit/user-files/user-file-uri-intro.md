@@ -1,7 +1,9 @@
 ---
 title: "用户文件URI介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro
+format: md
 ---
+
 
 用户文件URI是文件的唯一标识，在对用户文件进行访问与修改等操作时往往都会使用到URI，不建议开发者解析URI中的片段用于业务代码开发，不同类型的URI使用方式将在下文详细介绍。
 
@@ -20,14 +22,14 @@ URI类型可以归纳为文档类URI和媒体文件URI两类
 
 **文档类URI的格式类型为：**
 
-'file://docs/storage/Users/currentUser/<relative\_path>/test.txt'
+'file://docs/storage/Users/currentUser/\<relative\_path\>/test.txt'
 
 **其中各个字段表示的含义为：**
 
 | URI字段 | 说明 |
 | --- | --- |
 | 'file://docs/storage/Users/currentUser/' | 文件管理器的根目录。 |
-| '<relative\_path>/' | 文件在根目录下的相对路径。例如：'Download/'和'Documents/'。 |
+| '\<relative\_path\>/' | 文件在根目录下的相对路径。例如：'Download/'和'Documents/'。 |
 | 'test.txt' | 用户文件系统中存储的文件名，支持的文件类型为文件管理器支持的所有类型，以文件管理器为准。例如txt、jpg、mp4和mp3等格式的文件。 |
 
 ### 文档类URI获取方式
@@ -47,15 +49,15 @@ URI类型可以归纳为文档类URI和媒体文件URI两类
 
 图片URI格式：
 
-* 'file://media/Photo/<id>/IMG\_datetime\_0001/displayName.jpg'
+* 'file://media/Photo/\<id\>/IMG\_datetime\_0001/displayName.jpg'
 
 视频URI格式：
 
-* 'file://media/Photo/<id>/VID\_datetime\_0001/displayName.mp4'
+* 'file://media/Photo/\<id\>/VID\_datetime\_0001/displayName.mp4'
 
 音频URI格式：
 
-* 'file://media/Audio/<id>/AUD\_datetime\_0001/displayName.mp3'
+* 'file://media/Audio/\<id\>/AUD\_datetime\_0001/displayName.mp3'
 
 **其中各个字段表示的含义为：**
 
@@ -64,7 +66,7 @@ URI类型可以归纳为文档类URI和媒体文件URI两类
 | 'file://media' | 表示这个URI是媒体文件。 |
 | 'Photo' | 表示这个URI是媒体文件中的图片或者视频类文件。 |
 | 'Audio' | 表示这个URI是媒体文件中的音频类文件。 |
-| '<id>' | 表示在数据库中多个表中处理后的值，并不是指表中的file\_id列，注意请不要使用此id去数据库中查询具体文件。 |
+| '\<id\>' | 表示在数据库中多个表中处理后的值，并不是指表中的file\_id列，注意请不要使用此id去数据库中查询具体文件。 |
 | 'IMG\_datetime\_0001' | 表示图片文件在用户文件系统中存储的文件名去掉后缀剩下的部分。 |
 | 'VID\_datetime\_0001' | 表示视频文件在用户文件系统中存储的文件名去掉后缀剩下的部分。 |
 | 'AUD\_datetime\_0001' | 表示音频文件在用户文件系统中存储的文件名去掉后缀剩下的部分。 |
@@ -175,4 +177,4 @@ async function uriGetAssets(context: common.UIAbilityContext): Promise<string> {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/CoreFile/UserFile/UserFileURI/entry/src/main/ets/pages/Index.ets#L16-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/CoreFile/UserFile/UserFileURI/entry/src/main/ets/pages/Index.ets#L16-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>

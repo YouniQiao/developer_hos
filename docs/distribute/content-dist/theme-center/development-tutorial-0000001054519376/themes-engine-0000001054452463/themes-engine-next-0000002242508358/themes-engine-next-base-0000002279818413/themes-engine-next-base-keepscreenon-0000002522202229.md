@@ -2,7 +2,9 @@
 title: "命令：自定义亮屏时间&lt;KeepScreenOnCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-keepscreenon-0000002522202229
+format: md
 ---
+
 
 # 命令：自定义亮屏时间&lt;KeepScreenOnCommand&gt;
 

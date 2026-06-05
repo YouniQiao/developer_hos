@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Enterprise Data Guard Kit（企业数据保护服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-guard-kit-guide
+format: md
 ---
+
 
 * **[Enterprise Data Guard Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-preparations)**

@@ -1,7 +1,9 @@
 ---
 title: "配置版权信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-copyright-0000002278981450
+format: md
 ---
+
 
 按照法律法规要求，应用上架需要提供相应的资质文档，具体要求请参见[应用资质审核要求](https://developer.huawei.com/consumer/cn/doc/app/80301)。
 

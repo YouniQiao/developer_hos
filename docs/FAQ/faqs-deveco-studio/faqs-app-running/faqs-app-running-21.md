@@ -4,6 +4,7 @@ title: "模拟器应用运行时崩溃退出"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-21
 ---
 
+
 **问题现象**
 
 应用在模拟器启动调试或运行过程中异常退出。

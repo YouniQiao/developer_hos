@@ -2,7 +2,9 @@
 title: "创建卸载召回任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-create-0000001366712640
+format: md
 ---
+
 # 创建卸载召回任务
 
 ## 背景信息

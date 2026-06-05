@@ -1,7 +1,9 @@
 ---
 title: "使用Picker选择媒体库资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-medialibrary-photoviewpicker
+format: md
 ---
+
 
 用户有时需要分享图片、视频等用户文件，开发者可以通过特定接口拉起系统图库，用户自行选择待分享的资源，然后最终分享出去。此接口本身无需申请权限，目前适用于界面UIAbility，使用窗口组件触发。具体使用方式如下：
 

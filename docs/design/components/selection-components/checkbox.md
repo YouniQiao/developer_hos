@@ -2,7 +2,9 @@
 title: 勾选
 sidebar_label: 勾选
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/checkbox-0000001957012561
+format: md
 ---
+
 # 勾选
 
 勾选用于表示用户同意该项的描述，明确接受该选项被选中。常见的场景如：USB 连接界面的“不再提示”，图片发送时的选中状态等。单个选项独自使用时请参考 [Checkbox](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-checkbox) 文档，多个选项之间有父子级关系请参考 [CheckboxGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-checkboxgroup) 文档。

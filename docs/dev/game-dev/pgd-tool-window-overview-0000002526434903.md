@@ -1,7 +1,9 @@
 ---
 title: "Relationship Window概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-window-overview-0000002526434903
+format: md
 ---
+
 
 Relationship Window是一套专为PGD设计的可视化调试与分析工具。该工具包含以下特性：
 

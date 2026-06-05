@@ -4,6 +4,7 @@ title: "模拟器播放本地音频文件偶现卡顿"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-6
 ---
 
+
 **问题现象**
 
 在某些场景下，模拟器播放音频文件时可能出现卡顿。

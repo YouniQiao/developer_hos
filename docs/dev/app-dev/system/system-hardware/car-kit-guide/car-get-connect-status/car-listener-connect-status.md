@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "监听HiCar的连接状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-listener-connect-status
+format: md
 ---
+
 
 ## 场景介绍
 

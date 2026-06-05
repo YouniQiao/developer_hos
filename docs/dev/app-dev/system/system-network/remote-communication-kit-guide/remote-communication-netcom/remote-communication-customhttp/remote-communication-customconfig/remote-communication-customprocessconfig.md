@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ProcessingConfiguration：定制处理行为"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customprocessconfig
+format: md
 ---
+
 
 ## 场景介绍
 

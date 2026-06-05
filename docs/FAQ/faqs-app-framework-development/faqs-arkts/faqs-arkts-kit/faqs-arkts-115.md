@@ -1,7 +1,9 @@
 ---
 title: "如何获取对象的所有方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-115
+format: md
 ---
+
 
 可以使用Object.getOwnPropertyNames获取所有方法的字符串数组。注意，获取对象的原型prototype需要文件后缀为.ts。参考代码如下：
 

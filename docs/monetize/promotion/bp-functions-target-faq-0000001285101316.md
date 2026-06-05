@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-faq-0000001285101316
+format: md
 ---
+
 # FAQ
 
 ## 创建人群定向计划是否会减少任务的曝光？

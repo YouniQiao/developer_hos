@@ -2,7 +2,9 @@
 title: "可见性命令&lt;VisibilityCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/visibilitycommand-0000001074484560
+format: md
 ---
+
 
 # 可见性命令&lt;VisibilityCommand&gt;
 

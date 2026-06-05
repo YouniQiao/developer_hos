@@ -1,7 +1,9 @@
 ---
 title: "编译期自定义修改方舟字节码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/customize-bytecode-during-compilation
+format: md
 ---
+
 
 如果开发者希望自定义修改方舟字节码文件的内容，可以使用ArkTS编译工具链提供的方法自定义修改方舟字节码文件。
 

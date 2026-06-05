@@ -1,7 +1,9 @@
 ---
 title: "hilogtool"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool
+format: md
 ---
+
 
 ## 使用场景
 
@@ -89,7 +91,7 @@ hilogtool parse --input xxx --output xxx --dict xxx
 
 若缺少数据字典，会导致部分日志解析失败；重启设备可以重新生成该数据字典。
 
-2.落盘的hilog日志文件默认格式为hilog\.\d{3}\.\d{8}-\d{6}\.gz$，若开发过程中使用了hilog -w start -f xxx 命令自定义了落盘文件名，可能导致日志无法被正常解析，需要升级hilogtool工具至1.0.0b版本及以上，才支持解析自定义文件名的hilog日志。
+2.落盘的hilog日志文件默认格式为hilog\.\d\{3\}\.\d\{8\}-\d\{6\}\.gz$，若开发过程中使用了hilog -w start -f xxx 命令自定义了落盘文件名，可能导致日志无法被正常解析，需要升级hilogtool工具至1.0.0b版本及以上，才支持解析自定义文件名的hilog日志。
 
 ## 常用解析命令示例
 

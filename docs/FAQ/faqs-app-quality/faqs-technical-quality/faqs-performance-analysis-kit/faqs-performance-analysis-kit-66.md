@@ -4,6 +4,7 @@ title: "在docker或者wsl系统中，无USB设备节点，hdc执行后无返回
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-66
 ---
 
+
 **问题现象**
 
 1. 运行hdc命令没有任何回显或存在Connect server failed.

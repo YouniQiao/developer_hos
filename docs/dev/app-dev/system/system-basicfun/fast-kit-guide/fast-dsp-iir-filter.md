@@ -1,7 +1,9 @@
 ---
 title: "使用DSP进行二阶IIR滤波"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-dsp-iir-filter
+format: md
 ---
+
 
 二阶IIR滤波器用于音频和信号处理中的滤波操作，例如实现低通、高通或带通滤波。
 

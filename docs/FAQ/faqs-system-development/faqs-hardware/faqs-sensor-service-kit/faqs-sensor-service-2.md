@@ -1,7 +1,9 @@
 ---
 title: "如何读取运动传感器比如加速度传感器"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-sensor-service-2
+format: md
 ---
+
 
 1. 导入sensor（传感器）模块：
 

@@ -4,6 +4,7 @@ title: "httpRequest.request请求https接口ssl证书验证失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-41
 ---
 
+
 **问题现象**
 
 https接口httpRequest.request请求报错：“SSL peer certificate or SSH remote key was not OK”。

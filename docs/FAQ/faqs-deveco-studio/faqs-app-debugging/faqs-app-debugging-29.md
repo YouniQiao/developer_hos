@@ -4,6 +4,7 @@ title: "应用自动签名失败，提示“calibrate the system time and sign a
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-29
 ---
 
+
 **问题现象**
 
 应用在进行自动签名时，签名失败，提示“The signature does not take effect or has expired. The current system time may be inaccurate. Please calibrate the system time and sign again.”

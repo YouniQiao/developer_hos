@@ -2,7 +2,9 @@
 title: "AccountDailyBudget"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-accountdailybudget-0000001195432366
+format: md
 ---
+
 # AccountDailyBudget
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

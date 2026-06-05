@@ -1,7 +1,9 @@
 ---
 title: "门店管理流程说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-process
+format: md
 ---
+
 
 商家可通过开放接口对门店信息进行全生命周期管理，包括创建、更新和删除操作。所有变更均需经过平台审核。接口调用流程如下：
 

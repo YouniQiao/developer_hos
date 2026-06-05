@@ -1,7 +1,9 @@
 ---
 title: "运行态功耗检测"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-power-consumption-runtime-analysis
+format: md
 ---
+
 
 # 运行态功耗检测
 

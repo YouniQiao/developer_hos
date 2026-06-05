@@ -1,7 +1,9 @@
 ---
 title: "应用数据持久化概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence-overview
+format: md
 ---
+
 
 应用数据持久化是指应用将内存中的数据通过文件或数据库的形式保存到设备上。内存中的数据形态通常是任意的数据结构或数据对象，存储介质上的数据形态可能是文本、数据库、二进制文件等。
 

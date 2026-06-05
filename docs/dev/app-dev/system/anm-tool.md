@@ -1,7 +1,9 @@
 ---
 title: "anm工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/anm-tool
+format: md
 ---
+
 
 Advanced Notification Manager（通知管理工具，简称anm）是实现通知打印、设置通知参数等功能的工具，为开发者提供基本的通知调试和测试能力，例如打印已发布通知详细信息、设置通知缓存个数、使能通知等。
 
@@ -64,9 +66,9 @@ anm setting [<options>]
 | --- | --- |
 | -c/--recent-count | 设置保存在内存中的最近通知的最大个数。 |
 | -e/--enable-notification | 设置通知使能开关。 |
-| -k/--collaboration-switch | 设置通知是否支持跨设备协同至指定类型设备。  anm setting -k <deviceType>:<status>  **说明：** 从API version 18开始，新增支持该命令参数。  deviceType表示需要指定的设备类型。取值范围包括：wearable（智能穿戴设备）、litewearable（轻量级智能穿戴设备）、headset（可穿戴式音频设备）。  status表示需要指定的跨设备协同开关状态。取值为0表示开关为关闭状态，取值为1表示开关为打开状态。 |
-| -b/--collaboration-switch-bundle | 设置指定应用的通知是否支持跨设备协同至指定类型设备。  anm setting -b <deviceType>:<bundleName>:<uid>:<status>  **说明：** 从API version 18开始，新增支持该命令参数。  deviceType表示需要指定的设备类型。取值范围包括：wearable（智能穿戴设备）、litewearable（轻量级智能穿戴设备）、headset（可穿戴式音频设备）。  status表示需要指定的跨设备协同开关状态。取值为0表示开关为关闭状态，取值为1表示开关为打开状态。 |
-| -o/--collaboration-switch-slot | 设置指定渠道的通知是否支持通知跨设备协同至指定类型设备。  anm setting -o <deviceType>:<slotType>:<status>  **说明：** 从API version 18开始，新增支持该命令参数。  deviceType表示需要指定的设备类型。取值范围包括：wearable（智能穿戴设备）、litewearable（轻量级智能穿戴设备）、headset（可穿戴式音频设备）。  slotType表示需要指定的通知渠道类型。 取值范围参考[SlotType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#slottype)。  status表示需要指定的跨设备协同开关状态。取值为0表示开关为关闭状态，取值为1表示开关为打开状态。 |
+| -k/--collaboration-switch | 设置通知是否支持跨设备协同至指定类型设备。  anm setting -k \<deviceType\>:\<status\>  **说明：** 从API version 18开始，新增支持该命令参数。  deviceType表示需要指定的设备类型。取值范围包括：wearable（智能穿戴设备）、litewearable（轻量级智能穿戴设备）、headset（可穿戴式音频设备）。  status表示需要指定的跨设备协同开关状态。取值为0表示开关为关闭状态，取值为1表示开关为打开状态。 |
+| -b/--collaboration-switch-bundle | 设置指定应用的通知是否支持跨设备协同至指定类型设备。  anm setting -b \<deviceType\>:\<bundleName\>:\<uid\>:\<status\>  **说明：** 从API version 18开始，新增支持该命令参数。  deviceType表示需要指定的设备类型。取值范围包括：wearable（智能穿戴设备）、litewearable（轻量级智能穿戴设备）、headset（可穿戴式音频设备）。  status表示需要指定的跨设备协同开关状态。取值为0表示开关为关闭状态，取值为1表示开关为打开状态。 |
+| -o/--collaboration-switch-slot | 设置指定渠道的通知是否支持通知跨设备协同至指定类型设备。  anm setting -o \<deviceType\>:\<slotType\>:\<status\>  **说明：** 从API version 18开始，新增支持该命令参数。  deviceType表示需要指定的设备类型。取值范围包括：wearable（智能穿戴设备）、litewearable（轻量级智能穿戴设备）、headset（可穿戴式音频设备）。  slotType表示需要指定的通知渠道类型。 取值范围参考[SlotType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#slottype)。  status表示需要指定的跨设备协同开关状态。取值为0表示开关为关闭状态，取值为1表示开关为打开状态。 |
 | -h/--help | 帮助信息。 |
 
 **示例**：

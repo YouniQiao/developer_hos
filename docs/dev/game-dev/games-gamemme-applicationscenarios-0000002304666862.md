@@ -1,7 +1,9 @@
 ---
 title: "典型应用场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-applicationscenarios-0000002304666862
+format: md
 ---
+
 
 ## 对战开黑
 

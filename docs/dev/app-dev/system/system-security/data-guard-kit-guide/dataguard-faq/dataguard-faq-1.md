@@ -1,7 +1,9 @@
 ---
 title: "Enterprise Data Guard Kit权限获取失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-faq-1
+format: md
 ---
+
 
 **问题现象**
 

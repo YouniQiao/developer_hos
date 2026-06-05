@@ -2,7 +2,9 @@
 title: "查看自定义投放规则的运行数据"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-check-0000001309070270
+format: md
 ---
+
 # 查看自定义投放规则的运行数据
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，点击【工具】页签，投放辅助--点击“自定义投放规则”，进入“自定义投放规则”页面。![](./img/992af5d735f9.png "点击放大")

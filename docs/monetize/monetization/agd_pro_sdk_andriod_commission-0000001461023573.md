@@ -2,7 +2,9 @@
 title: "接入调试"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573
+format: md
 ---
+
 
 
 在接入AGD Pro服务调试过程中，请根据需要配置对应屏蔽规则，以及基于测试状态的展示位进行调试。

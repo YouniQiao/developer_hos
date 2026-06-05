@@ -1,7 +1,9 @@
 ---
 title: "取消接入"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-cancel-0000001801205680
+format: md
 ---
+
 
 取消接入将在工信部删除快游戏在华为接入商的核准（备案）信息，若快游戏服务还需使用，建议在新的接入商完成核准（备案）后再取消接入，否则快游戏可能会被通管局清理。操作步骤如下：
 

@@ -1,7 +1,9 @@
 ---
 title: "常用事件使用方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-event-usage
+format: md
 ---
+
 
 在组件中绑定一个事件处理函数，如bindtap="handleTap"。
 

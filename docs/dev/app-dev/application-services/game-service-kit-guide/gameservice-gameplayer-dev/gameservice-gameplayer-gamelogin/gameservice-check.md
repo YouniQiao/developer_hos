@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发后自检"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-check
+format: md
 ---
+
 
 为减少提交审核后被驳回的概率，请参考如下自检CheckList进行自检。
 

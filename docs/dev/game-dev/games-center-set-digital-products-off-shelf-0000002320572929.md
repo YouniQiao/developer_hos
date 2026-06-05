@@ -1,7 +1,9 @@
 ---
 title: "下架/重新上架数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-set-digital-products-off-shelf-0000002320572929
+format: md
 ---
+
 
 当商品提交审核并通过后，则被开放购买，如需停止该商品的对外售卖，可选择下架该数字商品。
 

@@ -4,6 +4,7 @@ title: "模拟器启动后，设备无法识别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-8
 ---
 
+
 **问题现象**
 
 场景一：调试运行时，如果安装HAP失败，提示“Device not found or connected”，请检查设备是否已正确连接。

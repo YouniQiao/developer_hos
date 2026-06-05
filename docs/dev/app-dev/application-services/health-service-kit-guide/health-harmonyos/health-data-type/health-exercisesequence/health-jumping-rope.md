@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "跳绳"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-jumping-rope
+format: md
 ---
+
 
 跳绳相关锻炼记录类型如下：
 

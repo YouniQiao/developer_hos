@@ -1,7 +1,9 @@
 ---
 title: "开启功能开关"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901
+format: md
 ---
+
 
 在游戏多媒体服务管理页面，游戏多媒体服务可以灵活控制[语音转文本](#section157881245131518)、[安全加固](#section92517364165)以及[内容检测](#section17288256144510)功能的开启或关闭。
 

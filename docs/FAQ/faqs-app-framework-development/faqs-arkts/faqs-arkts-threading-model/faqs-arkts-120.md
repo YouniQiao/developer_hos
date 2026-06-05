@@ -1,7 +1,9 @@
 ---
 title: "如何使用TaskPool在子线程调用对象成员函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-120
+format: md
 ---
+
 
 通过将对象Sendable化来使用对象中的方法。具体可参考如下示例代码：
 

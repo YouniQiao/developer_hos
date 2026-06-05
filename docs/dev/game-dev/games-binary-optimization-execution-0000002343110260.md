@@ -1,7 +1,9 @@
 ---
 title: "执行二进制优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-execution-0000002343110260
+format: md
 ---
+
 
 1. 调用[获取Token](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-binary-optimization-obtain-token-0000002408001421)接口。
 2. （可选）首次优化，或本次游戏版本较上次版本的改动较大时，调用[获取文件上传地址](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-binary-optimization-obtain-url-0000002407881309)接口获取profile文件的上传地址，并根据上传地址调用[上传单个文件](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-binary-optimization-upload-files-0000002374401756)接口上传profile文件。

@@ -1,7 +1,9 @@
 ---
 title: "启动时内存分析"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 启动时内存分析
 

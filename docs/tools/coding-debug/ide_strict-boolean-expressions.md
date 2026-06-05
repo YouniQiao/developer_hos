@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/strict-boolean-expressions"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/strict-boolean-expressions
 

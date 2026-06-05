@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "配置数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-config-product
+format: md
 ---
+
 
 * **[数字商品介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product)**
 * **[通过AppGallery Connect配置数字商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product-agc)**

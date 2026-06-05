@@ -4,11 +4,12 @@ title: "如何在命令行使用ohpm"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-9
 ---
 
+
 ![](./img/d1b70f79.png)
 
 安装node.js 18.x及以上版本，并配置环境变量。
 
-ohpm 默认解压路径为：DevEco Studio 中默认安装位置：<DevEco Studio 安装目录>\tools\ohpm；命令行工具中默认安装位置：<Command Line Tools 安装目录>/command-line-tools/ohpm。
+ohpm 默认解压路径为：DevEco Studio 中默认安装位置：\<DevEco Studio 安装目录\>\tools\ohpm；命令行工具中默认安装位置：\<Command Line Tools 安装目录\>/command-line-tools/ohpm。
 
 **问题现象****1**
 

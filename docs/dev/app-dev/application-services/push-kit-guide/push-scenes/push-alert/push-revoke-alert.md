@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "撤回通知消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-revoke-alert
+format: md
 ---
+
 
 当推送的通知消息内容有误或者存在违规情况时，可能会引起用户投诉或监管部门处罚等不良后果。Push Kit为您提供消息撤回功能，降低此类推送可能造成的影响。
 

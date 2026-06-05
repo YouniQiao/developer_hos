@@ -1,7 +1,9 @@
 ---
 title: "组件扩展"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend-components
+format: md
 ---
+
 
 * **[组件扩展概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend-components-overview)**
 * **[@Builder装饰器：自定义构建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)**

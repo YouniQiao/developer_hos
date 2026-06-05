@@ -2,7 +2,9 @@
 title: "展示位状态说明"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_appd_display-position-status-0000001461022605
+format: md
 ---
+
 
 
 展示位提交后，受展示位的配置、审核等因素的影响，展示状态有所不同，如下表：

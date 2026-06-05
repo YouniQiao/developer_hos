@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "潜水闭气训练"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-breath-holding-train
+format: md
 ---
+
 
 潜水闭气训练相关锻炼记录类型如下：
 

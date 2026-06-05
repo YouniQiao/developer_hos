@@ -2,7 +2,9 @@
 title: "推广统计"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-level2-statistics-0000002466178466
+format: md
 ---
+
 # 推广统计
 
 原客户投放伙伴子账户的数据管理界面，整合升级后入口为：服务商管理平台——推广统计——消耗统计，可查看维度不变。

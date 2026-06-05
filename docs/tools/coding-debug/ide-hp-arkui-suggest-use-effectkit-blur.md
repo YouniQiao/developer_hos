@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-suggest-use-effectkit-blur"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-suggest-use-effectkit-blur
 

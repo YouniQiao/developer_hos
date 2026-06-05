@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "手动数据同步"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-cloudsync
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heal
 
 | 权限 | 权限描述 |
 | --- | --- |
-| <https://www.huawei.com/healthkit/huaweihealthdata.cloudsync> | 允许触发华为运动健康应用同步个人数据到云（基于华为运动健康应用的数据同步管理设置）。 |
+| https://www.huawei.com/healthkit/huaweihealthdata.cloudsync | 允许触发华为运动健康应用同步个人数据到云（基于华为运动健康应用的数据同步管理设置）。 |
 
 ![](./img/ecfe589f.png)
 
@@ -24,7 +26,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heal
 
 | 接口名 | 描述 |
 | --- | --- |
-| [syncAll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoresyncall)(): Promise<void> | 用户主动触发数据同步。 |
+| [syncAll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoresyncall)(): Promise\<void\> | 用户主动触发数据同步。 |
 
 ## 开发前检查
 

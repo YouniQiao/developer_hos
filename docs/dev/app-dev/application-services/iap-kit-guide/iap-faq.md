@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "IAP Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq
+format: md
 ---
+
 
 * **[AppGallery Connect中可以配置多个关键事件通知接收地址吗？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-2)**
 * **[AppGallery Connect获取的IAP公钥最大长度是多少？便于用户存储设置的最大长度是多少？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-3)**

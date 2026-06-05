@@ -4,6 +4,7 @@ title: "ohpm publish在本地Git bash环境下一直报错“the content of priv
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-10
 ---
 
+
 **问题描述**
 
 在本地Git Bash环境下使用ohpm publish命令时，一直报错“the content of private key in the key\_path error”。但在DevEco Studio中不会出现此问题，DevEco Studio会提示输入密码。当前使用的ohpm版本为1.5，环境变量已配置。

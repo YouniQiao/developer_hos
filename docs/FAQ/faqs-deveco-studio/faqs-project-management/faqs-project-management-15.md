@@ -4,6 +4,7 @@ title: "如何解决Windows系统使用DevEco Studio时SDK卸载失败，报“U
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-15
 ---
 
+
 **问题描述**
 
 Windows系统使用DevEco Studio时，SDK卸载失败，提示错误信息。

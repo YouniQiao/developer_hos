@@ -1,7 +1,9 @@
 ---
 title: "应用间跳转实践概览"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inter-application-redirection
+format: md
 ---
+
 
 ## 概述
 

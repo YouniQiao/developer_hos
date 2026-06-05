@@ -1,7 +1,9 @@
 ---
 title: "配置超参"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-hyperparam
+format: md
 ---
+
 
 ## 功能介绍
 

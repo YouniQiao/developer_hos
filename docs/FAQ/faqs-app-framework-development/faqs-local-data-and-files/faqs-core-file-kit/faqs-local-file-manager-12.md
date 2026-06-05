@@ -1,7 +1,9 @@
 ---
 title: "怎么获取应用已使用的缓存大小，如何使用API清理缓存"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-12
+format: md
 ---
+
 
 **解决措施**
 

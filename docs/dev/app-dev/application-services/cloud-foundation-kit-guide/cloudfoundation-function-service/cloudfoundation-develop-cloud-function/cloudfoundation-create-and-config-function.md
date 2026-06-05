@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "创建函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-create-and-config-function
+format: md
 ---
+
 
 ## 创建函数
 

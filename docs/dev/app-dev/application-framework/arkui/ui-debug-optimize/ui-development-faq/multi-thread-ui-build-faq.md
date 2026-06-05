@@ -1,7 +1,9 @@
 ---
 title: "UI并行化常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-ui-build-faq
+format: md
 ---
+
 
 ## 如何获取和使用支持多线程调用的NDK接口
 

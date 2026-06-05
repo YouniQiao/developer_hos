@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "附录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-appendix
+format: md
 ---
+
 
 * **[地图数据版权声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-privacy)**
 * **[支持的语言](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-language)**

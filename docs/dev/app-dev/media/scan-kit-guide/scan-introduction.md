@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Scan Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-introduction
+format: md
 ---
+
 
 Scan Kit（统一扫码服务）作为软硬协同的系统级扫码服务，创新性地推出了更简单的“扫码直达”接入能力。只需少量的接入工作，无需在应用中开发专门的扫码模块，即可通过系统级扫码入口实现扫码到应用的跳转。同时还为开发者提供了面向各种场景的码图识别和生成能力。
 

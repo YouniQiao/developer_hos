@@ -1,7 +1,9 @@
 ---
 title: "ArkTS（方舟编程语言）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts
+format: md
 ---
+
 
 * **[ArkTS简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-overview)**
 * **[ArkTS基础类库](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-utils)**

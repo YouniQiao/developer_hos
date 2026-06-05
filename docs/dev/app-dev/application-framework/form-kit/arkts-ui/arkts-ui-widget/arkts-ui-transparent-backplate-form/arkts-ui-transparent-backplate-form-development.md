@@ -1,7 +1,9 @@
 ---
 title: "背板透明卡片开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-transparent-backplate-form-development
+format: md
 ---
+
 
 从API version 22开始，Form Kit提供卡片背板元素透明显示的能力，满足更丰富的UI设计以及美观诉求。
 

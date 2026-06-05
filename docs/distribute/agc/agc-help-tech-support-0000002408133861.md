@@ -1,7 +1,9 @@
 ---
 title: "技术支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-tech-support-0000002408133861
+format: md
 ---
+
 
 当您使用AppGallery Connect遇到问题时，可以按照以下顺序寻求帮助。
 

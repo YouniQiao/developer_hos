@@ -4,6 +4,7 @@ title: "执行命令卡在起daemon的日志上或编译报错“ReferenceError,
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-183
 ---
 
+
 **问题现象**
 
 流水线或命令行中执行命令后在起daemon的日志上：
@@ -48,6 +49,6 @@ Command Line Tools自带的Node.js的路径为Command Line Tools安装路径/com
 
 ![](./img/bba26d24.png "点击放大")
 
-3.将自定义的Node.js版本升级为与DevEco Studio或Command Line Tools自带的Node.js版本一致。通过上述路径运行node -v查看版本，然后在Node.js官方网站中下载对应版本。下载地址为：<https://nodejs.org/dist/v18.20.1/>。
+3.将自定义的Node.js版本升级为与DevEco Studio或Command Line Tools自带的Node.js版本一致。通过上述路径运行node -v查看版本，然后在Node.js官方网站中下载对应版本。下载地址为：https://nodejs.org/dist/v18.20.1/。
 
 ![](./img/d0ea5b07.png)

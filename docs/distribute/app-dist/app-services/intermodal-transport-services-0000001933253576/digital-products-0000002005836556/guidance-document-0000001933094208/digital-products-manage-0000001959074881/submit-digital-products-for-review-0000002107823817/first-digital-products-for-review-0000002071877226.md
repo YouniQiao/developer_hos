@@ -2,7 +2,9 @@
 title: "首次提交数字商品或新增数字商品类型"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/first-digital-products-for-review-0000002071877226
+format: md
 ---
+
 
 # 首次提交数字商品或新增数字商品类型
 

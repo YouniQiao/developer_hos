@@ -2,7 +2,9 @@
 title: "Sizmek"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-sizmek-0000001328517630
+format: md
 ---
+
 # Sizmek
 
 ## 概述

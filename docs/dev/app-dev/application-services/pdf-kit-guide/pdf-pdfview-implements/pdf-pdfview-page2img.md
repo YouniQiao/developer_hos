@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "PDF缩略图转换为图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-page2img
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -12,7 +14,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getPagePixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#getpagepixelmap)(pageIndex: number, isSync?: boolean): Promise<image.PixelMap> | 获取对应PDF页面的缩略图，使用Promise异步回调。 |
+| [getPagePixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#getpagepixelmap)(pageIndex: number, isSync?: boolean): Promise\<image.PixelMap\> | 获取对应PDF页面的缩略图，使用Promise异步回调。 |
 
 ## 示例代码
 

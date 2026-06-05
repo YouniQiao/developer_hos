@@ -1,7 +1,9 @@
 ---
 title: "STA模式开发指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sta-development-guide
+format: md
 ---
+
 
 ## 简介
 

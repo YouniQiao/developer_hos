@@ -4,6 +4,7 @@ title: "NDK开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-development
 ---
 
+
 * **[在Native侧如何精准获取ArkTS侧传入的字符串长度](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-1)**
 * **[在Native侧如何处理ArkTS侧传入的字符串被截断的异常场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-2)**
 * **[如何对多个C++源文件中接口进行导出声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-3)**

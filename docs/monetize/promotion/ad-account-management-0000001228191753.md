@@ -2,7 +2,9 @@
 title: "广告账号管理"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ad-account-management-0000001228191753
+format: md
 ---
+
 # 广告账号管理
 
 支持查看、修改鲸鸿动能广告账户联系人信息，提交后鲸鸿动能广告平台会进行审核，审核通过，则信息更新成功。

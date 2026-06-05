@@ -4,6 +4,7 @@ title: "同层渲染场景下控件使能沉浸光感效果变透明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-100
 ---
 
+
 **问题现象**
 
 同层渲染场景下将ArkUI的控件设置沉浸光感效果时，发现控件背景变透明。

@@ -1,7 +1,9 @@
 ---
 title: "快游戏核准（备案）指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-filing-guide-0000002318138840
+format: md
 ---
+
 
 * **[快游戏核准（备案）指南概述](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-introduction-0000001806446261)**
 * **[核准（备案）准备](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-preparation-0000001806446265)**

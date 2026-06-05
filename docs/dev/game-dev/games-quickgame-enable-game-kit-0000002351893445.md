@@ -1,7 +1,9 @@
 ---
 title: "打开API开关"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-game-kit-0000002351893445
+format: md
 ---
+
 
 您需在AppGallery Connect控制台打开对应服务的API开关：
 

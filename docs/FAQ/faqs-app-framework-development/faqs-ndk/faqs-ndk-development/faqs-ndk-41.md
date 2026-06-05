@@ -1,9 +1,11 @@
 ---
 title: "ArkTS侧如何接收Native侧的键值对进行修改并返回到Native侧"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-41
+format: md
 ---
 
-1. 使用具体类型如 Record<string, number> 或 Map<string, number> 接收并修改数据。
+
+1. 使用具体类型如 Record\<string, number\> 或 Map\<string, number\> 接收并修改数据。
 2. 在ArkTS侧的函数中返回修改后的数据，在Native层通过napi\_call\_function可以获取到修改的数据。
 3. 在Native侧，目前只能使用napi\_set\_property对对象的属性进行设置。
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-nullish-coalescing"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-nullish-coalescing
 

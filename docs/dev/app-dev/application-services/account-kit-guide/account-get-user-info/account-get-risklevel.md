@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取风险等级"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-introduction)**
 * **[通过华为账号一键登录获取用户风险等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-byquicklogin)**

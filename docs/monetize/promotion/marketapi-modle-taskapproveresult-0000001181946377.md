@@ -2,7 +2,9 @@
 title: "TaskApproveResult"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-taskapproveresult-0000001181946377
+format: md
 ---
+
 # TaskApproveResult
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

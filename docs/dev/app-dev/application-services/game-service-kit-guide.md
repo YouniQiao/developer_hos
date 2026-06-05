@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Game Service Kit（游戏服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-service-kit-guide
+format: md
 ---
+
 
 * **[Game Service Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-introduction)**
 * **[基础游戏服务（必选）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-dev)**

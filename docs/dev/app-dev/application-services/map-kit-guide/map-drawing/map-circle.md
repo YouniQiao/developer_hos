@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "圆形"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-circle
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [MapCircleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapcircleoptions) | 圆形参数。 |
-| [addCircle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addcircle)(options: [mapCommon.MapCircleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapcircleoptions)): Promise<[MapCircle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcircle)> | 在地图上添加一个圆，指定圆心经纬度和圆的半径，用于表示某个位置的周边范围。 |
+| [addCircle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addcircle)(options: [mapCommon.MapCircleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapcircleoptions)): Promise[MapCircle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcircle) | 在地图上添加一个圆，指定圆心经纬度和圆的半径，用于表示某个位置的周边范围。 |
 | [MapCircle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcircle) | 圆形，支持更新和查询相关属性。 |
 
 ## 开发步骤

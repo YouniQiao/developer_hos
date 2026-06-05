@@ -2,7 +2,9 @@
 title: 气泡提示
 sidebar_label: 气泡提示
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/popup-0000001956975269
+format: md
 ---
+
 # 气泡提示
 
 通过临时弹出指向性气泡提示用户当前如何操作。开发相关能力请参考 [Popup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup) 文档。

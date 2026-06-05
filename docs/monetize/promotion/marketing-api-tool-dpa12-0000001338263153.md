@@ -2,7 +2,9 @@
 title: "批量下架商品"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa12-0000001338263153
+format: md
 ---
+
 # 批量下架商品
 
 您通过本接口可以批量下架商品。

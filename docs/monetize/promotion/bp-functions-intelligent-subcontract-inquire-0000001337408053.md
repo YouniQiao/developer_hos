@@ -2,7 +2,9 @@
 title: "查询任务数据报表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-inquire-0000001337408053
+format: md
 ---
+
 # 查询任务数据报表
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，选择“报表”。

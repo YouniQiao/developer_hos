@@ -1,7 +1,9 @@
 ---
 title: "自定义性能脚本测试（基于Python）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hypium-perf-python-guidelines
+format: md
 ---
+
 
 ## **概述**
 

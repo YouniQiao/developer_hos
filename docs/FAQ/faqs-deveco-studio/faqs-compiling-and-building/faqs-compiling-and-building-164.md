@@ -4,6 +4,7 @@ title: "编译报错“The metadata field in FormExtensionAbility cannot be left
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-164
 ---
 
+
 **错误描述**
 
 FormExtensionAbility中的metadata字段必须非空且不为数组。

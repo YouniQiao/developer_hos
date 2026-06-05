@@ -2,7 +2,9 @@
 title: 分段按钮
 sidebar_label: 分段按钮
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/segmentbutton-0000001929853292
+format: md
 ---
+
 # 分段按钮
 
 分段按钮用于对内容进行组别分类。也可以在多个选项中激活一个或多个按钮的控件。开发相关描述请参考 [SegmentButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbutton) 文档。

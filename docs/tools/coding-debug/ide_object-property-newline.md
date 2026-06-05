@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/object-property-newline"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/object-property-newline
 

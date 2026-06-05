@@ -1,7 +1,9 @@
 ---
 title: "构建布局"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-build-layout
+format: md
 ---
+
 
 * **[线性布局 (Row/Column)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-linear)**
 * **[层叠布局 (Stack)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-stack-layout)**

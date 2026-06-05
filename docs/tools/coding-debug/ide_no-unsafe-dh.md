@@ -1,7 +1,9 @@
 ---
 title: "@security/no-unsafe-dh"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-unsafe-dh
 

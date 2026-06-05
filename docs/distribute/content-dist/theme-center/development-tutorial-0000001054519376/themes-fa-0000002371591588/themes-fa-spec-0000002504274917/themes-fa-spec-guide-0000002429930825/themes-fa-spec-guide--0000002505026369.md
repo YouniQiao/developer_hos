@@ -2,7 +2,9 @@
 title: "功能要求"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-guide--0000002505026369
+format: md
 ---
+
 
 # 功能要求
 

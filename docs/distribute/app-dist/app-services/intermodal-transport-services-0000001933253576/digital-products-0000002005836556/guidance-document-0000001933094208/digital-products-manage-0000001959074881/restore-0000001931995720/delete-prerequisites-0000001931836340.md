@@ -2,7 +2,9 @@
 title: "前提条件"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/delete-prerequisites-0000001931836340
+format: md
 ---
+
 
 # 前提条件
 

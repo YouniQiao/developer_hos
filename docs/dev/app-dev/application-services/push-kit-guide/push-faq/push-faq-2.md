@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "关于云侧接口推送成功但设备收不到推送消息的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-2
+format: md
 ---
+
 
 云侧消息下发成功后，可能会因为消息频控、通知开关未打开等原因，导致端侧消息未展示。
 

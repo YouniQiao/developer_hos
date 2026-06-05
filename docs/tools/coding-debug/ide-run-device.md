@@ -1,7 +1,9 @@
 ---
 title: "使用本地真机运行应用"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 使用本地真机运行应用
 

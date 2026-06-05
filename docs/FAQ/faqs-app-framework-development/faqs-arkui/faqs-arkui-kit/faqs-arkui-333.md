@@ -4,6 +4,7 @@ title: "一个自定义组件内某一时机批量刷新多个@State修饰的状
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-333
 ---
 
+
 **问题现象**
 
 例如，一个自定义的Component包含20个由@State修饰的变量，每个@State变量都支持值更新操作，批量修改时会调用每个State的更新接口。这种批量更新操作可能引发组件频繁刷新，需要评估其对性能的影响。

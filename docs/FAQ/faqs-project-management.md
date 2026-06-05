@@ -4,6 +4,7 @@ title: "工程管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management
 ---
 
+
 * **[工程检查报错，提示“Incorrect settings found in the build-profile.json5 file”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-2)**
 * **[环境诊断、创建工程/模块界面全部显示空白](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-3)**
 * **[打开历史工程，报错提示“Install failed FetchPackageInfo: hypium failed”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-4)**

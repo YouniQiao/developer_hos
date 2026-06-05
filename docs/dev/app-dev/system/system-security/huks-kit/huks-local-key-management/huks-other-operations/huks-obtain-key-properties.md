@@ -1,7 +1,9 @@
 ---
 title: "获取密钥属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-obtain-key-properties
+format: md
 ---
+
 
 * **[获取密钥属性(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-obtain-key-properties-arkts)**
 * **[获取密钥属性(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-obtain-key-properties-ndk)**

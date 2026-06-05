@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过Push Kit更新实况窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-update-by-push
+format: md
 ---
+
 
 ## 场景介绍
 

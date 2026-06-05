@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通知内容管理细则"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-detail-rules
+format: md
 ---
+
 
 ## 目的
 

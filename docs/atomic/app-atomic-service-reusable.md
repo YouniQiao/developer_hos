@@ -1,7 +1,9 @@
 ---
 title: "应用和元服务可复用设计"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/app-atomic-service-reusable
+format: md
 ---
+
 
 我们提供了两种可复用设计模式来帮助开发者实现应用和元服务间的代码或者功能复用：
 

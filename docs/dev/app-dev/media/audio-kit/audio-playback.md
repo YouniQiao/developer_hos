@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音频播放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback
+format: md
 ---
+
 
 * **[音频播放开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview)**
 * **[推荐使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)**

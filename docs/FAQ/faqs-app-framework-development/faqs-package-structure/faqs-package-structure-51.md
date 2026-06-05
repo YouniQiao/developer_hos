@@ -4,6 +4,7 @@ title: "使用hdc命令安装release HAP包到设备时上报“INSTALL_FAILED_A
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-51
 ---
 
+
 **问题现象**
 
 release HAP包用hdc命令安装到手机上时报错："INSTALL\_FAILED\_APP\_SOURCE\_NOT\_TRUSTED"。

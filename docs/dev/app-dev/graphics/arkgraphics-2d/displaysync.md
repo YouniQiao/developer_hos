@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用可变帧率能力定制不同内容的绘制帧率"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync
+format: md
 ---
+
 
 * **[可变帧率简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-overview)**
 * **[请求动画绘制帧率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-animation)**

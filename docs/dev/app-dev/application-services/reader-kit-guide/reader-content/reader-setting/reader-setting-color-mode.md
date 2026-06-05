@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "适配深、浅色模式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-color-mode
+format: md
 ---
+
 
 当应用需要根据设备的深、浅色模式变化动态切换主题时，开发者可通过UIAbility的onConfigurationUpdate回调判断模式的变化，然后设置模式对应的字体颜色及背景色。
 

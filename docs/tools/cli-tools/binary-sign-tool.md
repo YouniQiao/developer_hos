@@ -1,7 +1,9 @@
 ---
 title: "二进制签名工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # 二进制签名工具
 

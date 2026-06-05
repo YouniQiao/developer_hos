@@ -2,7 +2,9 @@
 title: "使用图片自适应衍生功能"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-draw-tools-derivative-0000001348803252
+format: md
 ---
+
 # 使用图片自适应衍生功能
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)。

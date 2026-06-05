@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/keyword-spacing"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/keyword-spacing
 

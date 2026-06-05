@@ -1,7 +1,9 @@
 ---
 title: "新增接入"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-admission-0000001787451480
+format: md
 ---
+
 
 ## 前提条件
 

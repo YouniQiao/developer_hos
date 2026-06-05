@@ -1,7 +1,9 @@
 ---
 title: "User Authentication Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-overview
+format: md
 ---
+
 
 User Authentication Kit（用户认证服务）提供了基于用户在设备本地注册的锁屏口令、人脸和指纹来认证用户身份的能力。
 

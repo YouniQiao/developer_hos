@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用模型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-application-model
+format: md
 ---
+
 
 ## 概述
 

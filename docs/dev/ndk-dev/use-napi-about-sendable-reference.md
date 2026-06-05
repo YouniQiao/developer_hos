@@ -1,7 +1,9 @@
 ---
 title: "使用扩展的Node-API接口创建对ArkTS对象的Sendable强引用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-sendable-reference
+format: md
 ---
+
 
 HarmonyOS的API提供进程内跨ArkTS线程共享的强引用能力。相较于napi\_ref，napi\_sendable\_ref支持跨ArkTS线程操作，但同时也存在一些限制。
 

@@ -2,7 +2,9 @@
 title: 文本
 sidebar_label: 文本
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/text-0000001956975261
+format: md
 ---
+
 # 文本
 
 文本控件用于呈现一段信息，可以任意布局在界面中，并可作为段落文本用于界面功能中。文本基础属性设置参考 [Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text) 文档，富文本规格参考 [RichText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richtext) 文档。

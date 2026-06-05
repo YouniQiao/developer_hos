@@ -1,7 +1,9 @@
 ---
 title: "ArkTS跨语言交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-cross-language-interaction
+format: md
 ---
+
 
 除了支持使用ArkTS开发外，开发者还可以通过Node-API实现ArkTS与C/C++(Native)的跨语言交互能力。
 

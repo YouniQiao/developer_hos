@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文本绘制与显示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/draw-text-display
+format: md
 ---
+
 
 * **[简单文本绘制与显示（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/simple-text-arkts)**
 * **[复杂文本绘制与显示（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-text-arkts)**

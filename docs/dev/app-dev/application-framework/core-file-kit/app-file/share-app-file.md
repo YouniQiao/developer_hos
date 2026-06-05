@@ -1,7 +1,9 @@
 ---
 title: "应用文件分享"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file
+format: md
 ---
+
 
 应用文件分享是应用之间通过分享URI（Uniform Resource Identifier）进行文件共享的过程。
 
@@ -21,7 +23,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/shar
 
 文件URI的格式：
 
-格式为：file://<bundleName>/<path>
+格式为：file://\<bundleName\>/\<path\>
 
 * file：文件URI的标志。
 * bundleName：该文件资源的属主。

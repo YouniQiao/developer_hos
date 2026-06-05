@@ -2,8 +2,10 @@
 title: 键盘
 sidebar_label: 键盘
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-keyboard-0000001928070488
+format: md
 ---
-{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用<MergedTable>组件还原 */}
+
+\{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 键盘
 

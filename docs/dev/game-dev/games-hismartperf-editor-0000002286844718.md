@@ -1,7 +1,9 @@
 ---
 title: "Editor"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-editor-0000002286844718
+format: md
 ---
+
 
 * **[准备工作](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-preparation-0000002286788020)**
 * **[设置采集要求](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-setting-0000002321517289)**

@@ -4,6 +4,7 @@ title: "是否支持模块的动态加载？如何实现"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-70
 ---
 
+
 当前不支持动态加载设备侧的二进制包。可以使用动态import进行异步加载，以实现类似Class.forName()的反射效果。
 
 示例如下，hap动态导入harlibrary，并调用静态成员函数staticAdd()、实例成员函数instanceAdd()和全局方法addHarlibrary()。

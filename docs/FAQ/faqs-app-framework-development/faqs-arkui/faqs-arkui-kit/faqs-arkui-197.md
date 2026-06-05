@@ -4,6 +4,7 @@ title: "如何监听窗口大小的变化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-197
 ---
 
+
 **问题现象**
 
 监听窗口大小的变化。

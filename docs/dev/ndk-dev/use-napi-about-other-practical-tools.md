@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API其他实用接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-other-practical-tools
+format: md
 ---
+
 
 ## 简介
 

@@ -1,7 +1,9 @@
 ---
 title: "manifest配置文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-manifest-0000002351944509
+format: md
 ---
+
 
 ## manifestж–Үд»¶
 

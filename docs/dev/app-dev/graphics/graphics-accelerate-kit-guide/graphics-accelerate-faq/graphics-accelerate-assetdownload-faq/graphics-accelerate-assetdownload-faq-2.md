@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "集成游戏资源加速ExtensionAbility方法，未配置游戏资源加速ExtensionAbility组件类型信息，导致功能未生效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-2
+format: md
 ---
+
 
 未配置游戏资源加速ExtensionAbility组件类型信息将出现如下异常日志：
 

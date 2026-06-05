@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过配置Configuration优化传输性能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cpo
+format: md
 ---
+
 
 ## 约束与限制
 

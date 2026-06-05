@@ -1,7 +1,9 @@
 ---
 title: "访问应用文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-app-file-access
+format: md
 ---
+
 
 应用需要对应用文件目录下的应用文件进行查看、创建、读写、删除、复制、获取属性等访问操作，下文介绍具体方法。
 

@@ -1,7 +1,9 @@
 ---
 title: "ArkTS API兼容性保护"
 displayed_sidebar: appCompatibilitySidebar
+format: md
 ---
+
 
 # ArkTS API兼容性保护
 
@@ -220,7 +222,7 @@ export struct TextComponentAdapter {
    - minApiVersion表示API最低引入版本，由系统类型和版本号组成，当且仅当系统类型为OpenHarmony时可省略。
    - 在OpenHarmony工程中使用时，minApiVersion字段不支持填写HarmonyOS。
 
-   例如：@Available(\{minApiVersion: '22'\})、@Available(\{minApiVersion: 'OpenHarmony 22'\})、@Available(\{minApiVersion: 'HarmonyOS 6.0.2'\})
+   例如：@Available(\\{minApiVersion: '22'\\})、@Available(\\{minApiVersion: 'OpenHarmony 22'\\})、@Available(\\{minApiVersion: 'HarmonyOS 6.0.2'\\})
 2. ****@Available声明周期****
 
    源码级注解，仅参与编译过程。

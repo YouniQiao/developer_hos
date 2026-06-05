@@ -1,7 +1,9 @@
 ---
 title: "小游戏（快游戏）案例"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-case-0000002318064148
+format: md
 ---
+
 
 ## 使用qg.downloadFile下载和解压远程压缩文件失败
 

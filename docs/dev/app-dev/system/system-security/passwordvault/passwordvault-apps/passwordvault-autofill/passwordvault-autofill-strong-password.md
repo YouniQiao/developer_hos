@@ -1,7 +1,9 @@
 ---
 title: "强密码填充"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-strong-password
+format: md
 ---
+
 
 密码保险箱可以在用户需要输入一个新密码时，自动生成一个高强度的密码。用户选择使用生成的强密码时可以将这个密码填充到新密码输入框。
 

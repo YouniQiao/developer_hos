@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文本转语音"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/texttospeech-guide
+format: md
 ---
+
 
 Core Speech Kit支持将一篇不超过10000字符数的中英文文本（简体中文、繁体中文、数字、英文）合成为语音，并以选定音色进行播报。
 

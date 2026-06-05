@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "录制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-recording-c
+format: md
 ---
+
 
 * **[使用AVRecorder录制音频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avrecorder-for-audio-recording)**
 * **[使用AVRecorder录制视频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avrecorder-for-video-recording)**

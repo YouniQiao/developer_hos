@@ -2,7 +2,9 @@
 title: 隐私
 sidebar_label: 隐私
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/privacy-0000001929972682
+format: md
 ---
+
 # 隐私
 
 |  |  |

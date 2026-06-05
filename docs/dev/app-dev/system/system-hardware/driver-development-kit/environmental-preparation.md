@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "环境准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/environmental-preparation
+format: md
 ---
+
 
 ## 开发工具及配置
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "更改地图位置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-camera
+format: md
 ---
+
 
 ## 场景介绍
 

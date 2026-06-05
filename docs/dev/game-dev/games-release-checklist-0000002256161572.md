@@ -1,7 +1,9 @@
 ---
 title: "上架前自检"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-release-checklist-0000002256161572
+format: md
 ---
+
 
 ## 自检CheckList
 

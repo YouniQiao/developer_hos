@@ -1,7 +1,9 @@
 ---
 title: "自定义关系"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-relation-definition-0000002498341248
+format: md
 ---
+
 
 IGenericRelation和IEntityRelation两个关系接口，可自行选择实现。
 

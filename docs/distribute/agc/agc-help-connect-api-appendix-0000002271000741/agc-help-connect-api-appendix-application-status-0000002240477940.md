@@ -1,7 +1,9 @@
 ---
 title: "应用状态说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-application-status-0000002240477940
+format: md
 ---
+
 
 Publishing API中涉及使用**releaseType**字段标识**应用状态**，在不同**releaseType**字段值即应用的**发布方式**。
 

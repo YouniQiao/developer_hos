@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "MindSpore Lite Kit（昇思推理框架服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-kit
+format: md
 ---
+
 
 * **[MindSpore Lite Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-kit-introduction)**
 * **[使用MindSpore Lite进行模型转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-converter-guidelines)**

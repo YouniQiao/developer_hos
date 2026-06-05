@@ -1,7 +1,9 @@
 ---
 title: "UI开发调试调优"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-debug-optimize
+format: md
 ---
+
 
 * **[UI稳定性故障调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-stability)**
 * **[UI显示异常调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-debug)**

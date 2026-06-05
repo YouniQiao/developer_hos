@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "人脸跟踪（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-face
+format: md
 ---
+
 
 ## 约束与限制
 

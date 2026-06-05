@@ -1,7 +1,9 @@
 ---
 title: "画中画开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-overview
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -31,10 +33,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipw
 | 接口名 | 描述 |
 | --- | --- |
 | isPiPEnabled(): boolean | 判断当前系统是否开启画中画功能。 |
-| create(config: PiPConfiguration): Promise<PiPController> | 创建画中画控制器。 |
-| create(config: PiPConfiguration, contentNode: typeNode.XComponent): Promise<PiPController> | 使用typeNode创建画中画控制器。 |
-| startPiP(): Promise<void> | 启动画中画。 |
-| stopPiP(): Promise<void> | 停止画中画。 |
+| create(config: PiPConfiguration): Promise\<PiPController\> | 创建画中画控制器。 |
+| create(config: PiPConfiguration, contentNode: typeNode.XComponent): Promise\<PiPController\> | 使用typeNode创建画中画控制器。 |
+| startPiP(): Promise\<void\> | 启动画中画。 |
+| stopPiP(): Promise\<void\> | 停止画中画。 |
 | setAutoStartEnabled(enable: boolean): void | 设置是否需要在应用退后台时自动启动画中画，true表示需要自动启动，false表示不需要自动启动。 |
 | updateContentSize(width: number, height: number): void | 当媒体源切换时，向画中画控制器更新媒体源尺寸信息。 |
 | on(type: 'stateChange', callback: (state: PiPState, reason: string) => void): void | 开启画中画生命周期状态的监听。 |
@@ -43,8 +45,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipw
 | off(type: 'controlPanelActionEvent'): void | 关闭画中画控制面板控件动作事件的监听。推荐使用off('controlEvent')来关闭画中画控制面板控件动作事件的监听。 |
 | updatePiPControlStatus(controlType: PiPControlType, status: PiPControlStatus): void | 更新画中画控制面板控件状态。 |
 | setPiPControlEnabled(controlType: PiPControlType, enabled: boolean): void | 设置控制面板控件使能状态。 |
-| on(type: 'controlEvent', callback: CallBack<ControlEventParam>): void | 开启画中画控制面板控件动作事件的监听。 |
-| off(type: 'controlEvent', callback?: CallBack<ControlEventParam>): void | 关闭画中画控制面板控件动作事件的监听。 |
+| on(type: 'controlEvent', callback: CallBack\<ControlEventParam\>): void | 开启画中画控制面板控件动作事件的监听。 |
+| off(type: 'controlEvent', callback?: CallBack\<ControlEventParam\>): void | 关闭画中画控制面板控件动作事件的监听。 |
 
 以下是画中画功能的常用NDK接口，更多接口及使用参考[oh\_window\_pip.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-window-pip-h)。
 

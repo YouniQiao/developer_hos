@@ -1,7 +1,9 @@
 ---
 title: "cem工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # cem工具
 

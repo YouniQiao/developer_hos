@@ -1,7 +1,9 @@
 ---
 title: "下载工具包"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-download-tool-0000002377028329
+format: md
 ---
+
 
 使用工具包需先下载并安装最新版本华为游戏性能调优工具HiSmartPerf-Editor，安装步骤请参见[安装工具](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/smartperf-tool-preparation-0000001530990002#section1730316482118)，安装完成后打开，在[其他工具](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/smartperf-tool-others-0000001543310926)获取二进制优化工具包。
 

@@ -2,7 +2,9 @@
 title: "使用内容风控服务连接器"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/content-moderation-service-prep-connector-create
 has_merged_cells: true
+format: md
 ---
+
 
 1. 请参照指导[创建官方连接器](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/cloud-function-official-connector-0000002219452452)，创建内容风控服务连接器
 

@@ -1,7 +1,9 @@
 ---
 title: "上架预检"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/publish-testing
+format: md
 ---
+
 
 ![](./img/dabc8db8.png "点击放大")
 

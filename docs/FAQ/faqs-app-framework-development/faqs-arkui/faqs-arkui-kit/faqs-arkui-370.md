@@ -4,6 +4,7 @@ title: "如何实现沉浸式页面（包括沉浸式状态栏、沉浸式导航
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-370
 ---
 
+
 **解决措施**
 
 沉浸式页面开发分为以下两步：

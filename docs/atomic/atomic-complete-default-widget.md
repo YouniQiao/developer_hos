@@ -1,7 +1,9 @@
 ---
 title: "构建元服务页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-complete-default-widget
+format: md
 ---
+
 
 下面我们将构建元服务的两个页面，并按预定的业务逻辑，实现页面间跳转。
 

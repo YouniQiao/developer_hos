@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "车控"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey-control
+format: md
 ---
+
 
 数字车钥匙开通完成后，车主APP可以通过车控指令远程控制车辆的开门等操作。
 

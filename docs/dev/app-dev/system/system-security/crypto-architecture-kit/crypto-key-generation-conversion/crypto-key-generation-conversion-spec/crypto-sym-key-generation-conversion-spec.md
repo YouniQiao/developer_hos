@@ -1,7 +1,9 @@
 ---
 title: "对称密钥生成和转换规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-key-generation-conversion-spec
+format: md
 ---
+
 
 当前章节将说明系统目前支持的算法及其对应的规格。
 

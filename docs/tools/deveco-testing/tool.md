@@ -1,7 +1,9 @@
 ---
 title: "实用工具"
 displayed_sidebar: devecoTestingSidebar
+format: md
 ---
+
 
 # 实用工具
 

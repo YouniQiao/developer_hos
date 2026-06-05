@@ -4,6 +4,7 @@ title: "C++工程编译导致电脑卡顿的处理建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-12
 ---
 
+
 **问题现象**
 
 在编译大型C++工程时，由于CPU占用率较高，可能会导致电脑卡顿和反应迟缓。

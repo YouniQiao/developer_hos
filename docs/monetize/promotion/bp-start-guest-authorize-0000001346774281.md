@@ -2,7 +2,9 @@
 title: "(可选)授权客户投放伙伴管理账户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-authorize-0000001346774281
+format: md
 ---
+
 # (可选)授权客户投放伙伴管理账户
 
 ![](./img/5f54506b23cb.png) 

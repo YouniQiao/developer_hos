@@ -1,7 +1,9 @@
 ---
 title: "基础耗时：Time分析"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 基础耗时：Time分析
 

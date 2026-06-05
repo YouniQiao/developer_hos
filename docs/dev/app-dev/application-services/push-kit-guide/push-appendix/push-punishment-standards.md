@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通知违规处罚标准"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-punishment-standards
+format: md
 ---
+
 
 ## 违规分类、违规行为及违规处罚标准
 

@@ -1,7 +1,9 @@
 ---
 title: "关闭指定生物类型认证能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-del-bio
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -22,7 +24,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [disableTrustedBioAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#disabletrustedbioauthentication)(authID: bigint, authType: [AuthType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#authtype)): Promise<void> | 解绑指定生物类型认证能力 |
+| [disableTrustedBioAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#disabletrustedbioauthentication)(authID: bigint, authType: [AuthType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#authtype)): Promise\<void\> | 解绑指定生物类型认证能力 |
 
 ## 开发步骤
 

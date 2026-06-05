@@ -1,7 +1,9 @@
 ---
 title: "在应用程序中使用画中画功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-pipwindow
+format: md
 ---
+
 
 * **[画中画开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-overview)**
 * **[使用XComponent实现画中画功能开发（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-xcomponent)**

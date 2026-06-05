@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "引导用户绑卡场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-partner-bindcard
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -54,7 +56,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/paym
 
 | 接口名 | 描述 |
 | --- | --- |
-| requestBindCard(context: common.UIAbilityContext | common.UIExtensionContext): Promise<BindCardResult> | 拉起用户绑卡页面。 |
+| requestBindCard(context: common.UIAbilityContext | common.UIExtensionContext): Promise\<BindCardResult\> | 拉起用户绑卡页面。 |
 
 ## 开发步骤
 

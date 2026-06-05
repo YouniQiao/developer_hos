@@ -1,7 +1,9 @@
 ---
 title: "使用HiLog打印日志是否有长度限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-58
+format: md
 ---
+
 
 使用HiLog进行日志打印时，最多支持4096字节，超出部分将被截断。
 

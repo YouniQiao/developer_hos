@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取用户动作开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/motion-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -18,8 +20,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/moti
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type:'operatingHandChanged',callback:Callback<OperatingHandStatus>):void; | 订阅操作手感知，操作手结果通过callback返回。 |
-| off(type: 'operatingHandChanged', callback?: Callback<OperatingHandStatus>): void; | 取消订阅操作手感知。 |
+| on(type:'operatingHandChanged',callback:Callback\<OperatingHandStatus\>):void; | 订阅操作手感知，操作手结果通过callback返回。 |
+| off(type: 'operatingHandChanged', callback?: Callback\<OperatingHandStatus\>): void; | 取消订阅操作手感知。 |
 | getRecentOperatingHandStatus(): OperatingHandStatus; | 获取最新的操作手状态。 |
 
 ### 需要权限
@@ -109,8 +111,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/moti
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type:'holdingHandChanged',callback:Callback<HoldingHandStatus>): void; | 订阅握持手感知，感知结果通过callback返回。 |
-| off(type: 'holdingHandChanged', callback?: Callback<HoldingHandStatus>): void; | 取消订阅握持手感知。 |
+| on(type:'holdingHandChanged',callback:Callback\<HoldingHandStatus\>): void; | 订阅握持手感知，感知结果通过callback返回。 |
+| off(type: 'holdingHandChanged', callback?: Callback\<HoldingHandStatus\>): void; | 取消订阅握持手感知。 |
 
 ### 需要权限
 

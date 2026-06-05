@@ -4,6 +4,7 @@ title: "console.log和hilog的区别，如何选择使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-24
 ---
 
+
 * console.log是对hilog日志系统的封装，采用默认参数。日志业务领域为A0c0d0，日志TAG为JSApp，日志级别为info。
 * hilog日志打印时包含四部分：日志业务领域、日志TAG、日志级别和日志内容。开发者可以自定义设置日志业务领域、日志TAG和日志级别。
 * console主要用于应用开发的调试阶段。

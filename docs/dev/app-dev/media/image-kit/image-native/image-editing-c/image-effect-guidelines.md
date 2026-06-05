@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用ImageEffect编辑图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-effect-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 

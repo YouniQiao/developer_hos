@@ -1,7 +1,9 @@
 ---
 title: "PreviewChecker检测规则"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # PreviewChecker检测规则
 

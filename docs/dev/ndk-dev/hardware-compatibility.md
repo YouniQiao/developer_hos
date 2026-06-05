@@ -1,7 +1,9 @@
 ---
 title: "硬件兼容性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hardware-compatibility
+format: md
 ---
+
 
 * **[硬件兼容性简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hw-guide)**
 * **[HarmonyOS ABI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ohos-abi)**

@@ -1,7 +1,9 @@
 ---
 title: "避免硬编码与拼接"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-hard-coding-concatenate
+format: md
 ---
+
 
 ## 使用场景
 

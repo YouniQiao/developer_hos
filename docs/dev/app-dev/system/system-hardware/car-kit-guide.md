@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Car Kit（车服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-kit-guide
+format: md
 ---
+
 
 * **[Car Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-preparations)**

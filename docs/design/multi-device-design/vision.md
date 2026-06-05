@@ -2,7 +2,9 @@
 title: 智慧屏
 sidebar_label: 智慧屏
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/vision-0000002321377950
+format: md
 ---
+
 # 智慧屏
 
 智慧屏作为家居场景下的核心设备，采用了自然简单，符合直觉的设计原则，让全家人轻松简单的使用智慧屏。努力为家庭用户带来更加智慧、沉浸、无缝的娱乐体验。

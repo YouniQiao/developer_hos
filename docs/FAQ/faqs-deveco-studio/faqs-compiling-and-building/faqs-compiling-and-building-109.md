@@ -4,6 +4,7 @@ title: "构建报错“Duplicated files found in module xxx. This may cause unex
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-109
 ---
 
+
 **问题现象**
 
 编译构建时，出现错误信息“Duplicated files found in module xxx. This may cause unexpected errors at runtime”。

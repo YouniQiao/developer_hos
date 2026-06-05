@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-shadow-delivery-faq-0000001337457121
+format: md
 ---
+
 # FAQ
 
 ## 如何判断影子投放成功？

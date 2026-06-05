@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Cloud Foundation Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-introduction
+format: md
 ---
+
 
 Cloud Foundation Kit（云开发服务）可以按需为应用提供云函数、云数据库、云存储、预加载等云端服务。应用运行所需的服务器和环境均可由云端平台提供，开发者只需关注应用的业务逻辑，而无需关心基础设施（例如：服务器、操作系统、容器等）。
 

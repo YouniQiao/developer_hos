@@ -1,7 +1,9 @@
 ---
 title: "批量变更子服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-batch-update
+format: md
 ---
+
 
 在子服务状态为“已上架”、“草稿”、“审核驳回”、“已冻结”、“已下架”状态时，开发者可以通过“批量变更”操作更新子服务信息并发起审核。
 

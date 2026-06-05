@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "关于实况窗生命周期的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-3
+format: md
 ---
+
 
 ## 如何实现“App关闭时，自动关闭构建的实况窗”
 

@@ -2,7 +2,9 @@
 title: "计算受众人群"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-advanced-target-calculate-audience-0000001379958193
+format: md
 ---
+
 # 计算受众人群
 
 ## 概述

@@ -1,7 +1,9 @@
 ---
 title: "@security/no-unsafe-3des"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-unsafe-3des
 

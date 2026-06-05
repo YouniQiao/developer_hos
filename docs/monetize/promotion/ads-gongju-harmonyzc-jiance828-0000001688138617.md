@@ -2,7 +2,9 @@
 title: "专属监测工具跟踪"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-gongju-harmonyzc-jiance828-0000001688138617
+format: md
 ---
+
 # 专属监测工具跟踪
 
 ## 基本原理
@@ -25,7 +27,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-gongju-
 
 接口示例：
 
-<strong>https://www.advertiser.com/feedback?</strong>param1=param1\_value&param2=param2\_value&content\_id=\{content\_id\}&adgroup\_id=\{adgroup\_id\}&campaign\_id=\{campaign\_id\}&oaid=\{oaid\}&trace\_time=\{trace\_time\}&callback=\{callback\}&corp\_id=\{ corp\_id \}&app\_id=\{ app\_id \}
+<strong>https://www.advertiser.com/feedback?</strong>param1=param1\_value&param2=param2\_value&content\_id=\\{content\_id\\}&adgroup\_id=\\{adgroup\_id\\}&campaign\_id=\\{campaign\_id\\}&oaid=\\{oaid\\}&trace\_time=\\{trace\_time\\}&callback=\\{callback\\}&corp\_id=\\{ corp\_id \\}&app\_id=\\{ app\_id \\}
 
 其中加粗部分URL由广告主提供的小程序path地址，红色字体即为广告主提供的小程序path中的参数，并且广告主定义参数不能与下述定义的参数名称相同，灰色部分参数为鲸鸿动能根据您账号配置拼接在上，无需手工填写。
 

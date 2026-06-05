@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "1001502003 输入参数值无效的可能原因和解决办法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-22
+format: md
 ---
+
 
 **问题现象**
 

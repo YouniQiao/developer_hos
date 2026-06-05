@@ -1,7 +1,9 @@
 ---
 title: "开通内容风控服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/content-moderation-service-prep-enable
+format: md
 ---
+
 
 如果您未开通内容风控服务，将无法使用该服务对文本和图片进行安全合规审核。因此，在创建内容风控服务官方连接器之前，您需要先开通内容风控服务。如果已经开通，可跳过本步骤。
 

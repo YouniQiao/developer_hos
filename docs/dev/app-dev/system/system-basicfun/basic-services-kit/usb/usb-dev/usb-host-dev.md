@@ -1,7 +1,9 @@
 ---
 title: "USB Host模式开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-host-dev
+format: md
 ---
+
 
 * **[USB设备管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicemanager)**
 * **[USB控制传输](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/controltransfer)**

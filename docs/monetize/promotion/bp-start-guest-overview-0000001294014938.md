@@ -2,7 +2,9 @@
 title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-overview-0000001294014938
+format: md
 ---
+
 # 概述
 
 目前仅支持企业开发者作为直客在华为应用市场应用推广平台申请注册。

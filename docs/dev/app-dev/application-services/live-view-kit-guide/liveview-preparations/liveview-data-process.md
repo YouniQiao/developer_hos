@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置数据处理位置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-data-process
+format: md
 ---
+
 
 若开发者要[通过Push Kit更新实况窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-update-by-push)，需要设置默认数据处理位置为“中国”，否则可能导致推送消息无法正常下发，从而影响通过Push Kit更新实况窗的功能。
 

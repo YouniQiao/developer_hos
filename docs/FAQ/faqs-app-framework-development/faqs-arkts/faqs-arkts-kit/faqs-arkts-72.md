@@ -1,7 +1,9 @@
 ---
 title: "如何使用AOP接口实现重复插桩或替换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-72
+format: md
 ---
+
 
 AOP提供的接口支持方法插桩或替换。
 

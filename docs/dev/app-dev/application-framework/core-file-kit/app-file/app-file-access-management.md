@@ -1,7 +1,9 @@
 ---
 title: "应用文件访问与管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access-management
+format: md
 ---
+
 
 * **[应用文件访问(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)**
 * **[应用文件访问(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileio-guidelines)**

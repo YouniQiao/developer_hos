@@ -1,7 +1,9 @@
 ---
 title: "企业服务信息来去电页面显示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-sersvice-display
+format: md
 ---
+
 
 从6.1.1(24)版本开始，新增支持企业服务信息来去电页面显示。
 
@@ -20,7 +22,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call
 | 接口名 | 描述 |
 | --- | --- |
 | [queryNumberIdentifySwitchState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-numberldentify#querynumberidentifyswitchstate) (context: Context):SwitchState | 查询陌生号码与信息识别总开关状态以及调用该接口的应用号码识别开关状态。 |
-| [onQueryBusinessServiceData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-callerinfoquery-extension-ability#onquerybusinessservicedata)(phoneNumber: string): Promise<Array<BusinessServiceData>> | 查询企业服务信息。 |
+| [onQueryBusinessServiceData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-callerinfoquery-extension-ability#onquerybusinessservicedata)(phoneNumber: string): Promise\<Array<BusinessServiceData\>> | 查询企业服务信息。 |
 
 ## 申请接入
 

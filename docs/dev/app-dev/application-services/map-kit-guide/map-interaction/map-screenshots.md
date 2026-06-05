@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "地图截图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-screenshots
+format: md
 ---
+
 
 本章节将向您介绍如何实现地图截图功能。
 
@@ -16,7 +18,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 
 | 接口名 | 描述 |
 | --- | --- |
-| [snapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#snapshot)(): Promise<[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)> | 地图截图。 |
+| [snapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#snapshot)(): Promise[image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 地图截图。 |
 
 ## 开发步骤
 

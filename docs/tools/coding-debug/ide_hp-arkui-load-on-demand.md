@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-load-on-demand"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-load-on-demand
 

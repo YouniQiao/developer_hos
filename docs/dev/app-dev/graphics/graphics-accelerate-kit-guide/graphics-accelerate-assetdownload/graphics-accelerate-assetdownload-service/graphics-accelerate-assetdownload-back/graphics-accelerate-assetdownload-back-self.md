@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "extension协同下载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-self
+format: md
 ---
+
 
 从5.1.1(19)版本开始，新增extension协同下载。
 
@@ -30,9 +32,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/grap
 
 | 接口名 | 描述 |
 | --- | --- |
-| [onDownloadWithAppControl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-extensionability#ondownloadwithappcontrol)(requestType: ContentRequestType, manifestUrl: string, assetAccelerationExtensionInfo: AssetAccelerationExtensionInfo): Promise<boolean> | 安装应用、更新应用、设备闲时，执行该方法，触发extension协同下载，如果有资源包下载任务则返回true，否则返回false。使用Promise异步回调。 |
+| [onDownloadWithAppControl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-extensionability#ondownloadwithappcontrol)(requestType: ContentRequestType, manifestUrl: string, assetAccelerationExtensionInfo: AssetAccelerationExtensionInfo): Promise\<boolean\> | 安装应用、更新应用、设备闲时，执行该方法，触发extension协同下载，如果有资源包下载任务则返回true，否则返回false。使用Promise异步回调。 |
 | [reportDownloadProgress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanagerreportdownloadprogress)(progressInfo: AppDownloadProgress): void | 上报应用自身下载器中的下载进度信息。 |
-| [onExtensionWillTerminate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-extensionability#onextensionwillterminate)(error?: BusinessError<void>): Promise<void> | 在资源加速ExtensionAbility生命周期即将结束时、调度异常退出后，执行该方法，通知关闭资源包后台下载。建议在该方法中执行资源清理等操作。请避免耗时操作。使用Promise异步回调。 |
+| [onExtensionWillTerminate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-extensionability#onextensionwillterminate)(error?: BusinessError\<void\>): Promise\<void\> | 在资源加速ExtensionAbility生命周期即将结束时、调度异常退出后，执行该方法，通知关闭资源包后台下载。建议在该方法中执行资源清理等操作。请避免耗时操作。使用Promise异步回调。 |
 
 ## 开发步骤
 

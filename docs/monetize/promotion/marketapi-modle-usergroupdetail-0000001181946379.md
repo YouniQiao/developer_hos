@@ -2,7 +2,9 @@
 title: "UserGroupDetail"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-usergroupdetail-0000001181946379
+format: md
 ---
+
 # UserGroupDetail
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

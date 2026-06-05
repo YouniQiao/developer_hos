@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "密钥生成和转换开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion-dev
+format: md
 ---
+
 
 * **[随机生成对称密钥(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-sym-key-randomly)**
 * **[随机生成对称密钥(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-sym-key-randomly-ndk)**

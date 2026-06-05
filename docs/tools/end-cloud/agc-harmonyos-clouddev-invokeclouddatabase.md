@@ -2,7 +2,9 @@
 
 title: "在端侧访问云数据库"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 在端侧访问云数据库
 

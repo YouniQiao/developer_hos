@@ -2,8 +2,10 @@
 title: 焦点导航
 sidebar_label: 焦点导航
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus-0000001748650376
+format: md
 ---
-{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用<MergedTable>组件还原 */}
+
+\{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 焦点导航
 

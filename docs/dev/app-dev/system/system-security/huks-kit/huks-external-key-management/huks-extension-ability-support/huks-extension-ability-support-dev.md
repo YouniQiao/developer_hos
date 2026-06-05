@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "CryptoExtensionAbility适配开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-ability-support-dev
+format: md
 ---
+
 
 ## 适配指导
 
@@ -421,7 +423,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks
    }
    ```
 
-   （11）onEnumCertificates在Ukey签名验签操作中用于枚举证书列表。应用身份可以在params中由[HUKS\_EXT\_CRYPTO\_TAG\_UID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huksexternalcrypto#huksexternalcryptotag)参数携带。当调用成功时，返回值中的resultCode成员设置为0，返回值中的certs成员包含证书列表（类型为Array<[HuksCryptoExtensionCertInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoextensionability#hukscryptoextensioncertinfo)>）。调用失败时，resultCode携带错误码信息。
+   （11）onEnumCertificates在Ukey签名验签操作中用于枚举证书列表。应用身份可以在params中由[HUKS\_EXT\_CRYPTO\_TAG\_UID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huksexternalcrypto#huksexternalcryptotag)参数携带。当调用成功时，返回值中的resultCode成员设置为0，返回值中的certs成员包含证书列表（类型为Array[HuksCryptoExtensionCertInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoextensionability#hukscryptoextensioncertinfo)）。调用失败时，resultCode携带错误码信息。
 
    ```
    onEnumCertificates(params: Array<huksExternalCrypto.HuksExternalCryptoParam>): Promise<HuksCryptoExtensionResult> {

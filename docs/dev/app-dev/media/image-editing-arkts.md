@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图片编辑和处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-editing-arkts
+format: md
 ---
+
 
 * **[使用PixelMap完成图像变换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-transformation)**
 * **[使用PixelMap完成位图操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation)**

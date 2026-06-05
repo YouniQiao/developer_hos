@@ -2,7 +2,9 @@
 title: "帐号授权"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/account-authorization-0000001270805725
+format: md
 ---
+
 
 # 帐号授权
 

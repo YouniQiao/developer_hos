@@ -2,7 +2,9 @@
 
 title: "创建并配置函数"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 创建并配置函数
 

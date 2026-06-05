@@ -1,7 +1,9 @@
 ---
 title: "GPM技术支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-technical-support-0000002332867033
+format: md
 ---
+
 
 当您接入游戏性能管理服务遇到问题时，可以按照以下顺序寻求帮助。
 

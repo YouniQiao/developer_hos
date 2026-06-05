@@ -4,6 +4,7 @@ title: "如何在Native侧集成三方库Curl，并进行HTTP数据请求"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-31
 ---
 
+
 可以将Curl移植到HarmonyOS，并在Native侧开发时直接使用Curl的C++库实现。具体的移植方法请参考相关链接。
 
 具体使用步骤如下：

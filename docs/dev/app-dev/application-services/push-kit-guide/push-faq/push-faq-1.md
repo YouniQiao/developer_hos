@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何处理推送消息时遇到的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-1
+format: md
 ---
+
 
 当使用REST API接口进行消息推送时，您可能遇到一些问题，请按照如下思路进行处理：
 

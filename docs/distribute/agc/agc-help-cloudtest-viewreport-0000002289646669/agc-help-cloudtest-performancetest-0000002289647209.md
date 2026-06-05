@@ -1,7 +1,9 @@
 ---
 title: "性能测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-performancetest-0000002289647209
+format: md
 ---
+
 
 云测试提供的性能测试在真机设备上完成性能数据的采集，并深入分析应用或元服务性能薄弱点，支持检测冷启动时延、应用内操作时延、音视频操作时延、界面显示、内存占用、CPU占用等关键性能指标。
 

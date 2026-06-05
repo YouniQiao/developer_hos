@@ -2,7 +2,9 @@
 title: 拍摄美化类
 sidebar_label: 拍摄美化类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples3-0000001746498074
+format: md
 ---
+
 # 拍摄美化类
 
 拍摄美化场景主要包括拍摄、图片视频浏览以及图片视频的美化编辑等。拍摄美化类的应用通常有修图、加水印、加文本、特效处理等功能。在用户进行图像处理后，可以增强图片的观赏性和分享性。

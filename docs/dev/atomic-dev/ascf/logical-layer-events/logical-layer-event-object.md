@@ -1,7 +1,9 @@
 ---
 title: "事件对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-event-object
+format: md
 ---
+
 
 当组件触发事件时，逻辑层绑定的处理函数会收到一个事件对象。对象中包含以下字段：
 

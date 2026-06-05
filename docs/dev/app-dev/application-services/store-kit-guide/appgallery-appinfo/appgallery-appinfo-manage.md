@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过AppGallery Connect动态管理应用图标"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-appinfo-manage
+format: md
 ---
+
 
 通过图标管理服务，开发者可以在不升级应用版本的情况下，通过AGC页面动态管理应用的个性化图标，并在应用侧实现应用图标动态切换。
 

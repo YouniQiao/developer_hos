@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API判断给定的两个JS value是否严格相等"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-strict-equals
+format: md
 ---
+
 
 ## 简介
 

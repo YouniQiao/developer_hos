@@ -2,7 +2,9 @@
 title: "添加创意标签"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-creative-label-add-0000001352386492
+format: md
 ---
+
 # 添加创意标签
 
 1. 创建或修改推广任务时，若该任务支持推广创意功能，勾选“编辑辅助创意”。

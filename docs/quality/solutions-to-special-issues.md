@@ -1,7 +1,9 @@
 ---
 title: "专项问题解决方案"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-solutions-to-special-issues
+format: md
 ---
+
 
 # 专项问题解决方案
 

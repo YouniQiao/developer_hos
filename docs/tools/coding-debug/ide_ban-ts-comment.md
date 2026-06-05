@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/ban-ts-comment"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/ban-ts-comment
 

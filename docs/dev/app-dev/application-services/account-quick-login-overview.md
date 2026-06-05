@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-quick-login-overview
+format: md
 ---
+
 
 Account Kit提供了[华为账号一键登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login)、[华为账号登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-button)、[静默登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-silent-login)等多种登录方式，其中华为账号一键登录**仅支持企业开发者**使用，华为账号登录和静默登录**既支持企业开发者也支持个人开发者**使用，应用可根据实际场景选择使用其中一种或多种方式进行账号登录。
 

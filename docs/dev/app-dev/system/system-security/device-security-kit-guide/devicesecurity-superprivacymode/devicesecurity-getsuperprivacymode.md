@@ -1,7 +1,9 @@
 ---
 title: "查询当前状态场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-getsuperprivacymode
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -29,7 +31,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getSuperPrivacyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-superprivacymode-api#getsuperprivacymode)() : Promise<[SuperPrivacyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-superprivacymode-api#superprivacymode)> | 查询当前超级隐私模式状态 |
+| [getSuperPrivacyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-superprivacymode-api#getsuperprivacymode)() : Promise[SuperPrivacyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-superprivacymode-api#superprivacymode) | 查询当前超级隐私模式状态 |
 
 ## 开发步骤
 

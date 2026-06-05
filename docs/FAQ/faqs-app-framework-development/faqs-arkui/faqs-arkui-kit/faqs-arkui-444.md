@@ -4,6 +4,7 @@ title: "Scroll嵌套外层滚动容器滚动，如何设置nestedScroll，实现
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-444
 ---
 
+
 **问题背景**
 
 Scroll外面嵌套一个滚动容器，想要实现Scroll先滚动，达到顶部或者底部之后，外面的滚动容器再滚动，该如何设置nestedScroll。

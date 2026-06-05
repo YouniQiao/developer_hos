@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用开发者申请资质说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-application-qualifications
+format: md
 ---
+
 
 ## 个人开发者接入资质审核要求
 

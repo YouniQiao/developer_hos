@@ -1,7 +1,9 @@
 ---
 title: "js"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-js
+format: md
 ---
+
 
 支持ES6的module标准，使用import引入js依赖，同时支持CommonJs规范，使用require引入js依赖。
 

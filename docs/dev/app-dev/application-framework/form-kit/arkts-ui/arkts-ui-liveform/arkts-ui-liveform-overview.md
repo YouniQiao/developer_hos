@@ -1,7 +1,9 @@
 ---
 title: "互动卡片概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-overview
+format: md
 ---
+
 
 从API version 20开始，支持互动卡片。互动卡片提供卡片动效能力，例如卡片破框动效，丰富信息提醒、浅层交互功能，显著提升用户体验。
 

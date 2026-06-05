@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "保护密码类数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-scenario1
+format: md
 ---
+
 
 ![](./img/7639596d.png)
 

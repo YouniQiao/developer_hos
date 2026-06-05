@@ -1,7 +1,9 @@
 ---
 title: "卡片自动居中的场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-card-automatically-centered
+format: md
 ---
+
 
 ## 设计场景
 

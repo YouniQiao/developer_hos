@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/require-await"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/require-await
 

@@ -2,7 +2,9 @@
 title: "变量：全局变量&lt;GlobalVariable&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-globalvar-0000002471235030
+format: md
 ---
+
 
 # 变量：全局变量&lt;GlobalVariable&gt;
 

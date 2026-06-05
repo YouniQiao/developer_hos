@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AVScreenCapture录屏自定义场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avscreencapture-c-custom-scenarios
+format: md
 ---
+
 
 AVScreenCapture支持应用完成场景化的自定义配置，具体配置可参考下述指导。
 

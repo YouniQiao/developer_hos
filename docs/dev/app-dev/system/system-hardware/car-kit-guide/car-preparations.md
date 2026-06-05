@@ -1,7 +1,9 @@
 ---
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-preparations
+format: md
 ---
+
 
 应用在使用Car Kit能力前，开发者需要完成的配置：配置编译模式、配置权限、配置能力。
 

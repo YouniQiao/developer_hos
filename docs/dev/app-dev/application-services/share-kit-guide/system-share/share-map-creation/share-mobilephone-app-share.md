@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过分享面板发起分享"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-mobilephone-app-share
+format: md
 ---
+
 
 ## 接口说明
 
@@ -12,9 +14,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/shar
 | --- | --- | --- |
 | SharedData | [constructor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#constructor)(record: [SharedRecord](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#sharedrecord)) | SharedData构造函数 |
 | SharedData | [addRecord](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#addrecord)(record: [SharedRecord](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#sharedrecord)): void | 添加分享记录 |
-| SharedData | [getRecords](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#getrecords)(): Array<[SharedRecord](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#sharedrecord)> | 获取分享记录 |
+| SharedData | [getRecords](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#getrecords)(): Array[SharedRecord](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#sharedrecord) | 获取分享记录 |
 | ShareController | [constructor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#constructor-1)(data: [SharedData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#shareddata)) | ShareController构造函数 |
-| ShareController | [show](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#show)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), options: [ShareControllerOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#sharecontrolleroptions)): Promise<void> | 显示分享面板 |
+| ShareController | [show](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#show)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), options: [ShareControllerOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#sharecontrolleroptions)): Promise\<void\> | 显示分享面板 |
 | ShareController | [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#ondismiss)(event: 'dismiss', callback: () => void): void | 注册分享面板关闭事件监听 |
 | ShareController | [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-system-share#offdismiss)(event: 'dismiss', callback: () => void): void | 取消分享面板关闭事件监听 |
 

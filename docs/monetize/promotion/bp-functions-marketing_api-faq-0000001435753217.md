@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-marketing_api-faq-0000001435753217
+format: md
 ---
+
 # FAQ
 
 ## 为什么创建API客户端时报错403？
@@ -15,7 +17,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 查询方式为：使用投放操作账户登陆[华为应用市场应用推广平台](https://developer.huawei.com/consumer/cn/service/apcs/app/home.html)，在“我的账号信息”中查看到的“华为账号”就是customerId。
 
-## 查询统计报表接口返回\{"code":20770003,"msg":"too many effective tasks"\}的原因是什么？
+## 查询统计报表接口返回\\{"code":20770003,"msg":"too many effective tasks"\\}的原因是什么？
 
 原因为请求体中没有添加过滤条件，请添加过滤条件后查看返回是否正常。
 
@@ -27,7 +29,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 当前接口一次返回记录数不能超过1000个，超过的话要通过增加过滤条件减少返回记录数。
 
-## 调用查询搜索类推广任务统计报表接口，返回\{"code": 20770003,"msg": "task list empty after filter"\}的原因是什么？
+## 调用查询搜索类推广任务统计报表接口，返回\\{"code": 20770003,"msg": "task list empty after filter"\\}的原因是什么？
 
 此返回报错是因为查询的推广任务为影子投放或OCPD任务，目前查询搜索类推广任务统计报表接口暂不支持影子投放任务和OCPD任务数据查询。
 

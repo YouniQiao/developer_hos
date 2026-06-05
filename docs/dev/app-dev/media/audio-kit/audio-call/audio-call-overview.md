@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音频通话开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-overview
+format: md
 ---
+
 
 常用的音频通话模式包括VoIP通话和蜂窝通话。
 

@@ -1,7 +1,9 @@
 ---
 title: "删除数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-delete-0000002286076748
+format: md
 ---
+
 
 如果您想将冗余的商品从商品列表中去除，您可以选择删除该商品。
 

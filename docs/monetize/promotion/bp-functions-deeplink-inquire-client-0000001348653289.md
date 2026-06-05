@@ -2,7 +2,9 @@
 title: "通过客户端查询(方式一)"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-inquire-client-0000001348653289
+format: md
 ---
+
 # 通过客户端查询(方式一)
 
 ## 开发步骤

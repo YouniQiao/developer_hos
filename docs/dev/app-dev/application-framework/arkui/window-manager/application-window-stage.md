@@ -1,7 +1,9 @@
 ---
 title: "管理应用窗口（Stage模型）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage
+format: md
 ---
+
 
 ## 基本概念
 
@@ -26,22 +28,22 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appl
 
 | 实例名 | 接口名 | 描述 |
 | --- | --- | --- |
-| WindowStage | getMainWindow(callback: AsyncCallback<Window>): void | 获取WindowStage实例下的主窗口。  此接口仅可在Stage模型下使用。 |
-| WindowStage | loadContent(path: string, callback: AsyncCallback<void>): void | 为当前WindowStage的主窗口加载具体页面。  其中path为要加载到窗口中的页面内容的路径，该路径需添加到工程的main\_pages.json文件中。  此接口仅可在Stage模型下使用。 |
-| WindowStage | createSubWindow(name: string, callback: AsyncCallback<Window>): void | 创建子窗口。  此接口仅可在Stage模型下使用。 |
-| WindowStage | on(eventType: 'windowStageEvent', callback: Callback<WindowStageEventType>): void | 开启WindowStage生命周期变化的监听。  此接口仅可在Stage模型下使用。 |
-| window静态方法 | createWindow(config: Configuration, callback: AsyncCallback<Window>): void | 创建子窗口或者系统窗口。  -config：创建窗口时的参数。 |
-| Window | setUIContent(path: string, callback: AsyncCallback<void>): void | 根据当前工程中某个页面的路径为窗口加载具体的页面内容。  其中path为要加载到窗口中的页面内容的路径，在Stage模型下该路径需添加到工程的main\_pages.json文件中。 |
-| Window | setWindowBrightness(brightness: number, callback: AsyncCallback<void>): void | 设置屏幕亮度值。 |
-| Window | setWindowTouchable(isTouchable: boolean, callback: AsyncCallback<void>): void | 设置窗口是否为可触状态。true表示可触；false表示不可触。 |
-| Window | moveWindowTo(x: number, y: number, callback: AsyncCallback<void>): void | 移动当前窗口位置。 |
-| Window | resize(width: number, height: number, callback: AsyncCallback<void>): void | 改变当前窗口大小。 |
-| Window | setWindowLayoutFullScreen(isLayoutFullScreen: boolean): Promise<void> | 设置主窗口或子窗口的布局是否为沉浸式布局。true表示沉浸式布局；false表示非沉浸式布局。 |
-| Window | setWindowSystemBarEnable(names: Array<'status'|'navigation'>): Promise<void> | 设置主窗口状态栏、底部导航（根据用户设置，可表现为导航条或三键导航栏）的可见模式，状态栏和底部导航通过status控制、navigation参数无效果。  例如，该参数设置为['status', 'navigation']，则全部显示；设置为[]，则不显示。 |
-| Window | setWindowSystemBarProperties(systemBarProperties: SystemBarProperties): Promise<void> | 设置窗口内导航栏、状态栏属性。  systemBarProperties：导航栏、状态栏的属性集合。 |
-| Window | showWindow(callback: AsyncCallback<void>): void | 显示当前窗口。 |
-| Window | on(type: 'touchOutside', callback: Callback<void>): void | 开启本窗口区域外的点击事件的监听。 |
-| Window | destroyWindow(callback: AsyncCallback<void>): void | 销毁当前窗口。 |
+| WindowStage | getMainWindow(callback: AsyncCallback\<Window\>): void | 获取WindowStage实例下的主窗口。  此接口仅可在Stage模型下使用。 |
+| WindowStage | loadContent(path: string, callback: AsyncCallback\<void\>): void | 为当前WindowStage的主窗口加载具体页面。  其中path为要加载到窗口中的页面内容的路径，该路径需添加到工程的main\_pages.json文件中。  此接口仅可在Stage模型下使用。 |
+| WindowStage | createSubWindow(name: string, callback: AsyncCallback\<Window\>): void | 创建子窗口。  此接口仅可在Stage模型下使用。 |
+| WindowStage | on(eventType: 'windowStageEvent', callback: Callback\<WindowStageEventType\>): void | 开启WindowStage生命周期变化的监听。  此接口仅可在Stage模型下使用。 |
+| window静态方法 | createWindow(config: Configuration, callback: AsyncCallback\<Window\>): void | 创建子窗口或者系统窗口。  -config：创建窗口时的参数。 |
+| Window | setUIContent(path: string, callback: AsyncCallback\<void\>): void | 根据当前工程中某个页面的路径为窗口加载具体的页面内容。  其中path为要加载到窗口中的页面内容的路径，在Stage模型下该路径需添加到工程的main\_pages.json文件中。 |
+| Window | setWindowBrightness(brightness: number, callback: AsyncCallback\<void\>): void | 设置屏幕亮度值。 |
+| Window | setWindowTouchable(isTouchable: boolean, callback: AsyncCallback\<void\>): void | 设置窗口是否为可触状态。true表示可触；false表示不可触。 |
+| Window | moveWindowTo(x: number, y: number, callback: AsyncCallback\<void\>): void | 移动当前窗口位置。 |
+| Window | resize(width: number, height: number, callback: AsyncCallback\<void\>): void | 改变当前窗口大小。 |
+| Window | setWindowLayoutFullScreen(isLayoutFullScreen: boolean): Promise\<void\> | 设置主窗口或子窗口的布局是否为沉浸式布局。true表示沉浸式布局；false表示非沉浸式布局。 |
+| Window | setWindowSystemBarEnable(names: Array\<'status'|'navigation'\>): Promise\<void\> | 设置主窗口状态栏、底部导航（根据用户设置，可表现为导航条或三键导航栏）的可见模式，状态栏和底部导航通过status控制、navigation参数无效果。  例如，该参数设置为['status', 'navigation']，则全部显示；设置为[]，则不显示。 |
+| Window | setWindowSystemBarProperties(systemBarProperties: SystemBarProperties): Promise\<void\> | 设置窗口内导航栏、状态栏属性。  systemBarProperties：导航栏、状态栏的属性集合。 |
+| Window | showWindow(callback: AsyncCallback\<void\>): void | 显示当前窗口。 |
+| Window | on(type: 'touchOutside', callback: Callback\<void\>): void | 开启本窗口区域外的点击事件的监听。 |
+| Window | destroyWindow(callback: AsyncCallback\<void\>): void | 销毁当前窗口。 |
 
 ## 设置应用主窗口
 
@@ -105,7 +107,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateMainWindow/entry/src/main/ets/entryability/EntryAbility.ets#L16-L59" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateMainWindow/entry/src/main/ets/entryability/EntryAbility.ets#L16-L59" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>
 
 
 ## 设置应用子窗口
@@ -249,7 +251,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateSubWindow/entry/src/main/ets/entryability/EntryAbility.ets#L16-L116" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateSubWindow/entry/src/main/ets/entryability/EntryAbility.ets#L16-L116" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>
 
 
 另外，也可以在某个page页面通过点击按钮创建子窗口，整体示例代码如下：
@@ -280,7 +282,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateSubWindow2/entry/src/main/ets/entryability/EntryAbility.ets#L16-L39" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateSubWindow2/entry/src/main/ets/entryability/EntryAbility.ets#L16-L39" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>
 
 
 ```
@@ -407,7 +409,7 @@ struct Index {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateSubWindow2/entry/src/main/ets/pages/Index.ets#L15-L136" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateSubWindow2/entry/src/main/ets/pages/Index.ets#L15-L136" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 
 ```
@@ -432,7 +434,7 @@ struct SubWindow {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateSubWindow2/entry/src/main/ets/pages/SubWindow.ets#L16-L35" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：SubWindow.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateSubWindow2/entry/src/main/ets/pages/SubWindow.ets#L16-L35" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：SubWindow.ets</a></div>
 
 
 ## 体验窗口沉浸式能力
@@ -525,7 +527,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/SetWindowSystemBarEnable/entry/src/main/ets/entryability/EntryAbility.ets#L16-L82" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/SetWindowSystemBarEnable/entry/src/main/ets/entryability/EntryAbility.ets#L16-L82" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>
 
 
 ## 设置全局悬浮窗（受限开放）
@@ -621,7 +623,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateFloatWindow/entry/src/main/ets/entryability/EntryAbility.ets#L16-L79" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/CreateFloatWindow/entry/src/main/ets/entryability/EntryAbility.ets#L16-L79" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>
 
 
 ## 监听窗口不可交互与可交互事件
@@ -676,4 +678,4 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/ListenWindowStage/entry/src/main/ets/entryability/EntryAbility.ets#L16-L65" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ArkUIWindowSamples/ListenWindowStage/entry/src/main/ets/entryability/EntryAbility.ets#L16-L65" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>

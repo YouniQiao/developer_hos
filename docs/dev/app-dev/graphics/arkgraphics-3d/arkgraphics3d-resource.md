@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ArkGraphics 3D资源创建以及使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-resource
+format: md
 ---
+
 
 * **[创建并使用材质资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-resource-material)**
 * **[创建并使用图片资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-resource-image)**

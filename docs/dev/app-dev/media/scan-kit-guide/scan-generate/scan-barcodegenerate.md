@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过文本生成码图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-barcodegenerate
+format: md
 ---
+
 
 ## 基本概念
 
@@ -33,8 +35,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan
 
 | 接口名 | 接口描述 |
 | --- | --- |
-| [createBarcode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-generatebarcode#generatebarcodecreatebarcode)(content: string, options: [CreateOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-generatebarcode#createoptions)): Promise<image.[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)> | 码图生成接口，返回生成的码图，类型为image.PixelMap，可以使用Image组件渲染成图片。使用Promise异步回调。 |
-| [createBarcode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-generatebarcode#generatebarcodecreatebarcode-1)(content: string, options: CreateOptions, callback: AsyncCallback<image.PixelMap>): void | 码图生成接口，返回生成的码图，类型为image.PixelMap，可以使用Image组件渲染成图片。使用callback异步回调。 |
+| [createBarcode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-generatebarcode#generatebarcodecreatebarcode)(content: string, options: [CreateOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-generatebarcode#createoptions)): Promiseimage.[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 码图生成接口，返回生成的码图，类型为image.PixelMap，可以使用Image组件渲染成图片。使用Promise异步回调。 |
+| [createBarcode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-generatebarcode#generatebarcodecreatebarcode-1)(content: string, options: CreateOptions, callback: AsyncCallback\<image.PixelMap\>): void | 码图生成接口，返回生成的码图，类型为image.PixelMap，可以使用Image组件渲染成图片。使用callback异步回调。 |
 
 ## 开发步骤
 

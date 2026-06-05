@@ -1,7 +1,9 @@
 ---
 title: "JS卡片开发指导（FA模型）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/widget-development-fa
+format: md
 ---
+
 
 FA模型从API version 7开始支持，已经不再主推。该应用模型通过导出匿名对象、固定入口文件的方式指定应用组件，开发者无法进行派生，不利于扩展能力。建议使用新的Stage模型进行开发。
 
@@ -14,21 +16,21 @@ FormAbility生命周期接口如下：
 | onCreate(want: Want): formBindingData.FormBindingData | 卡片提供方接收创建卡片的通知接口。 |
 | onCastToNormal(formId: string): void | 卡片提供方接收临时卡片转常态卡片的通知接口。 |
 | onUpdate(formId: string): void | 卡片提供方接收更新卡片的通知接口。 |
-| onVisibilityChange(newStatus: Record<string, number>): void | 卡片提供方接收修改可见性的通知接口。 |
+| onVisibilityChange(newStatus: Record\<string, number\>): void | 卡片提供方接收修改可见性的通知接口。 |
 | onEvent(formId: string, message: string): void | 卡片提供方接收处理卡片事件的通知接口。 |
 | onDestroy(formId: string): void | 卡片提供方接收销毁卡片的通知接口。 |
 | onAcquireFormState?(want: Want): formInfo.FormState | 卡片提供方接收查询卡片状态的通知接口。 |
-| onShare?(formId: string): {[key: string]: any} | 卡片提供方接收卡片分享的通知接口。 |
-| onShareForm?(formId: string): Record<string, Object> | 卡片提供方接收卡片分享的通知接口。推荐使用该接口替代onShare接口。如果实现了该接口，onShare将不再被回调。 |
+| onShare?(formId: string): \{[key: string]: any\} | 卡片提供方接收卡片分享的通知接口。 |
+| onShareForm?(formId: string): Record\<string, Object\> | 卡片提供方接收卡片分享的通知接口。推荐使用该接口替代onShare接口。如果实现了该接口，onShare将不再被回调。 |
 
 FormProvider类有如下API接口，具体的API介绍详见[@ohos.app.form.formProvider (formProvider)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider)。
 
 | 接口名 | 描述 |
 | --- | --- |
-| setFormNextRefreshTime(formId: string, minute: number, callback: AsyncCallback<void>): void; | 设置指定卡片的下一次更新时间，使用callback异步回调。 |
-| setFormNextRefreshTime(formId: string, minute: number): Promise<void>; | 设置指定卡片的下一次更新时间，以promise方式返回。 |
-| updateForm(formId: string, formBindingData: formBindingData.FormBindingData,callback: AsyncCallback<void>): void; | 更新指定的卡片，使用callback异步回调。 |
-| updateForm(formId: string, formBindingData: FormBindingData): Promise<void>; | 更新指定的卡片，以promise方式返回。 |
+| setFormNextRefreshTime(formId: string, minute: number, callback: AsyncCallback\<void\>): void; | 设置指定卡片的下一次更新时间，使用callback异步回调。 |
+| setFormNextRefreshTime(formId: string, minute: number): Promise\<void\>; | 设置指定卡片的下一次更新时间，以promise方式返回。 |
+| updateForm(formId: string, formBindingData: formBindingData.FormBindingData,callback: AsyncCallback\<void\>): void; | 更新指定的卡片，使用callback异步回调。 |
+| updateForm(formId: string, formBindingData: FormBindingData): Promise\<void\>; | 更新指定的卡片，以promise方式返回。 |
 
 FormBindingData类有如下API接口，具体的API介绍详见[@ohos.app.form.formBindingData (卡片数据绑定类)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formbindingdata)。
 

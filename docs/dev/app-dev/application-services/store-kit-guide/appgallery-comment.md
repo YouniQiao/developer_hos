@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用评论服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-comment
+format: md
 ---
+
 
 通过应用评论服务，用户无需进入应用市场应用详情页，可以直接在应用内进行评论。
 
@@ -35,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appg
 
 | 接口名 | 描述 |
 | --- | --- |
-| [showCommentDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-commentmanager#commentmanagershowcommentdialog)(context: common.UIExtensionContext | common.UIAbilityContext): Promise<void> | 拉起应用评论弹窗，用户可以在应用内评论应用。 |
+| [showCommentDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-commentmanager#commentmanagershowcommentdialog)(context: common.UIExtensionContext | common.UIAbilityContext): Promise\<void\> | 拉起应用评论弹窗，用户可以在应用内评论应用。 |
 
 ## 开发步骤
 

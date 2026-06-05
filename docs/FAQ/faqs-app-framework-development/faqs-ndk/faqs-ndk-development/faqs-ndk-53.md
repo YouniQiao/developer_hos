@@ -1,7 +1,9 @@
 ---
 title: "Native侧如何获取ArkTS侧类实例"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-53
+format: md
 ---
+
 
 在ArkTS创建一个类并传递给Native侧，Native侧通过napi\_call\_function接口调用ArkTS侧的类函数。
 

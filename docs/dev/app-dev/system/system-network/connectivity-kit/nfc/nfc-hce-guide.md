@@ -1,7 +1,9 @@
 ---
 title: "HCE卡模拟开发指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc-hce-guide
+format: md
 ---
+
 
 ## 简介
 
@@ -38,9 +40,9 @@ NFC卡模拟完整的API说明以及实例代码请参考：[NFC卡模拟接口]
 | isDefaultService(elementName: ElementName, type: CardType): boolean | 从API version 9开始支持 | 判断指定的应用是否为指定业务类型的默认应用。 |
 | start(elementName: ElementName, aidList: string[]): void | 从API version 9开始支持 | 启动HCE业务功能。包括设置当前应用为前台优先，动态注册AID列表。 |
 | stop(elementName: ElementName): void | 从API version 9开始支持 | 停止HCE业务功能。包括取消APDU数据接收的订阅、退出当前应用前台优先、释放动态注册的AID列表。 |
-| on(type: 'hceCmd', callback: AsyncCallback<number[]>): void | 从API version 8开始支持 | 订阅回调，用于接收对端读卡设备发送的APDU数据。 |
-| transmit(response: number[]): Promise<void> | 从API version 9开始支持 | 发送APDU数据到对端读卡设备。 |
-| off(type: 'hceCmd', callback?: AsyncCallback<number[]>): void | 从API version 18开始支持 | 取消APDU数据接收的订阅。 |
+| on(type: 'hceCmd', callback: AsyncCallback\<number[]\>): void | 从API version 8开始支持 | 订阅回调，用于接收对端读卡设备发送的APDU数据。 |
+| transmit(response: number[]): Promise\<void\> | 从API version 9开始支持 | 发送APDU数据到对端读卡设备。 |
+| off(type: 'hceCmd', callback?: AsyncCallback\<number[]\>): void | 从API version 18开始支持 | 取消APDU数据接收的订阅。 |
 
 ## 开发准备
 

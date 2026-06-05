@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "高精几何重建介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-volume-measurement-conversion
+format: md
 ---
+
 
 AR Engine高精几何重建用于识别空间中的立方体物体或者嵌入式立方体空间，计算出被识别物体或空间的长、宽、高以及体积。体积测量可以用于测量立方体体积以及嵌入式空间的大小。
 

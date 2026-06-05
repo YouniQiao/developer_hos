@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "多目标识别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-object-detection
+format: md
 ---
+
 
 ## 适用场景
 

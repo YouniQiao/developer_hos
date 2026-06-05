@@ -1,7 +1,9 @@
 ---
 title: "创建DataAbility"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-dataability
+format: md
 ---
+
 
 实现DataAbility中Insert、Query、Update、Delete接口的业务内容。保证能够满足数据库存储业务的基本需求。BatchInsert与ExecuteBatch接口已经在系统中实现遍历逻辑，依赖Insert、Query、Update、Delete接口逻辑，来实现数据的批量处理。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图形缓冲区"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-surface
+format: md
 ---
+
 
 * **[NativeBuffer开发指导 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-buffer-guidelines)**
 * **[NativeImage开发指导 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-image-guidelines)**

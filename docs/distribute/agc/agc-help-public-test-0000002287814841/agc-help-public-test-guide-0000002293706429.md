@@ -1,7 +1,9 @@
 ---
 title: "测试流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-public-test-guide-0000002293706429
+format: md
 ---
+
 
 您可以将应用上架至华为应用市场，面向全网用户招募测试用户来测试您的应用。具体测试流程如下：
 

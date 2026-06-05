@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "锻炼记录数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-exercisesequence
+format: md
 ---
+
 
 * **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-exercisesequence-summary)**
 * **[跑步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-running)**

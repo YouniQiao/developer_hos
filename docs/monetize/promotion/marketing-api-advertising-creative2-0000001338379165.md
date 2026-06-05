@@ -2,7 +2,9 @@
 title: "查询创意"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-creative2-0000001338379165
+format: md
 ---
+
 # 查询创意
 
 您通过本接口可以查询创意的列表数据。

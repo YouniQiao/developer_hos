@@ -2,7 +2,9 @@
 title: "AdCreative"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-adcreative-0000001225503661
+format: md
 ---
+
 # AdCreative
 
 | <strong>参数</strong> | <strong>必选(M)/可选(O)</strong> | <strong>类型</strong> | <strong>描述</strong> |

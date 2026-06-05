@@ -4,6 +4,7 @@ title: "环境检查时显示ohpm registry access不通过"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-10
 ---
 
+
 ohpm registry access不通过可能有以下几种情况：
 
 **问题现象****1**

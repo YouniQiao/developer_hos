@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成位图操作"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pixelmap-c
+format: md
 ---
+
 
 创建位图，获取位图的宽、高、pixelFormat、alphaType、rowStride信息、对位图进行操作以及释放位图实例。
 

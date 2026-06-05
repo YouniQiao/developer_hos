@@ -2,7 +2,9 @@
 title: "管理订阅组"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-managing-subscription-group-0000001243784855
+format: md
 ---
+
 
 # 管理订阅组
 

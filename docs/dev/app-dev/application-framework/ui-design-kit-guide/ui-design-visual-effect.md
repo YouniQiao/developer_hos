@@ -1,7 +1,9 @@
 ---
 title: "视效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect
+format: md
 ---
+
 
 * **[点光源效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-point-light)**
 * **[按压阴影](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-color)**

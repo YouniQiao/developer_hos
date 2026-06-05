@@ -1,7 +1,9 @@
 ---
 title: "@security/no-cycle"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-cycle
 

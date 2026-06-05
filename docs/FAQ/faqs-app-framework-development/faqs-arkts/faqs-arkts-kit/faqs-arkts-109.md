@@ -4,6 +4,7 @@ title: "ModuleManager模块加载流程是什么样的"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-109
 ---
 
+
 napi\_module结构体包含模块注册所需的信息，具体定义如下：
 
 ```

@@ -4,6 +4,7 @@ title: "用户目录下没有.npmrc文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-121
 ---
 
+
 **问题现象**
 
 新建项目时出现错误：Error: The hvigor depends on the npmrc file. Configure the npmrc file first. 请先配置npmrc文件。

@@ -1,7 +1,9 @@
 ---
 title: "列表与网格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-list-and-grid
+format: md
 ---
+
 
 * **[列表与网格概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-list-grid-development-overview)**
 * **[创建列表 (List)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-list)**

@@ -4,6 +4,7 @@ title: "TextInput组件获取焦点的几种场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-13
 ---
 
+
 * 场景一：TextInput[主动获焦/失焦](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-focus-event#主动获焦失焦)。
 
   调用focusControl.requestFocus接口可以主动让焦点转移至参数指定的组件上。可参考如下代码：

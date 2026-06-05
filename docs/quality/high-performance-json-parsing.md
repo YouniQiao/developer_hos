@@ -1,7 +1,9 @@
 ---
 title: "高性能JSON解析"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-high-performance-json-parsing
+format: md
 ---
+
 
 # 高性能JSON解析
 
@@ -257,4 +259,4 @@ TurboTransJSON库在大文件解析方面采用了以下技术：
 
 ## 示例代码
 
-<SourceLink name="基于TurboTransJSON实现高性能JSON解析" url="https://gitcode.com/HarmonyOS_Samples/TurboTransJSON" />
+\<SourceLink name="基于TurboTransJSON实现高性能JSON解析" url="https://gitcode.com/HarmonyOS_Samples/TurboTransJSON" /\>

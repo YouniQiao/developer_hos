@@ -4,6 +4,7 @@ title: "如何主动关闭CPU访问窗口缓冲区数据降低功耗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-14
 ---
 
+
 当前操作系统的窗口缓冲区默认使用CPU访问，这具有良好的兼容性，但GPU访问窗口缓冲区的能效更高，而使用CPU访问的能效开销较大。如果开发者确定应用不需要CPU访问，可以手动关闭该功能，以提高应用的能效。
 
 **问题现象**

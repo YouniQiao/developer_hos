@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "推送后台消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-background
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -82,7 +84,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push
    }
    ```
 
-   * uri：固定格式为 datashareproxy://{bundleName}/PushMessage，请将 **{bundleName}** 替换为开发者应用的bundleName，PushMessage为固定名称，请勿随意更改。
+   * uri：固定格式为 datashareproxy://\{bundleName\}/PushMessage，请将 **\{bundleName\}** 替换为开发者应用的bundleName，PushMessage为固定名称，请勿随意更改。
    * requiredWritePermission：固定值为 **ohos.permission.WRITE\_PRIVACY\_PUSH\_DATA**，Push Kit需要使用该权限往数据库里写入后台消息数据。
    * metadata：扩展配置，name固定值为**dataProperties**，resource固定格式为 **$profile:文件名称**，文件名称固定为**PushMessage**。
 5. 在项目中现有的UIAbility类（以PushMessageAbility为例）的onCreate()中，调用[receiveMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicereceivemessage)()方法接收后台消息。注意，您仅能使用UIAbility接收后台消息。

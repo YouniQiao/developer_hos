@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "支付并签约场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -43,8 +45,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/paym
 
 | 接口名 | 描述 |
 | --- | --- |
-| requestPayment(context:common.UIAbilityContext, orderStr: string): Promise<void>; | 拉起Payment Kit支付收银台。 |
-| requestPayment(context:common.UIAbilityContext, orderStr: string, callback: AsyncCallback<void>): void; | 拉起Payment Kit支付收银台。 |
+| requestPayment(context:common.UIAbilityContext, orderStr: string): Promise\<void\>; | 拉起Payment Kit支付收银台。 |
+| requestPayment(context:common.UIAbilityContext, orderStr: string, callback: AsyncCallback\<void\>): void; | 拉起Payment Kit支付收银台。 |
 
 ## 开发步骤
 

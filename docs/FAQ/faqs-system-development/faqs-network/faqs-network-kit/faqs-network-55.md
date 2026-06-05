@@ -4,6 +4,7 @@ title: "如何使用Charles工具抓包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-55
 ---
 
+
 ![](./img/71ec9d2e.png)
 
 1. 配置环境时，在Charles弹出的窗口中选择Allow，以确保与手机连接。
@@ -47,7 +48,7 @@ Charles具体使用步骤如下：
       ![](./img/1d398f04.png "点击放大")
    2. 导入系统根证书到手机。
 
-      方式一：点击 Charles 顶部菜单栏“Help” -> 选择“SSL Proxying” -> 点击“Install Charles Root Certificate on a Mobile Device or Remote Browser” -> 在手机的自带浏览器中访问 <http://chls.pro/ssl> -> 点击“立即下载”，将证书下载至手机内存中。
+      方式一：点击 Charles 顶部菜单栏“Help” -> 选择“SSL Proxying” -> 点击“Install Charles Root Certificate on a Mobile Device or Remote Browser” -> 在手机的自带浏览器中访问 http://chls.pro/ssl -> 点击“立即下载”，将证书下载至手机内存中。
 
       ![](./img/4beec544.png "点击放大")
 

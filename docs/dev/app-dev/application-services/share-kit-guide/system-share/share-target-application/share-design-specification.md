@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "目标应用设计规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-design-specification
+format: md
 ---
+
 
 本章节主要介绍目标应用接入系统分享面板时，所涉及的设计规范要求。具体参见：[设计指南-分享方式区](https://developer.huawei.com/consumer/cn/doc/design-guides/share-0000001957076313#section132401520173711)
 

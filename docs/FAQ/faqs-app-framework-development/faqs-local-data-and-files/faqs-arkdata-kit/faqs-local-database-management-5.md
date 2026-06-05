@@ -4,6 +4,7 @@ title: "关于数据库存储的位置，以及存储的区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-5
 ---
 
+
 **问题现象**
 
 * 使用ArkTS建立的数据库，数据存储的位置是哪里？即database.db文件位于何处？

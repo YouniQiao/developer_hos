@@ -1,7 +1,9 @@
 ---
 title: "应用市场更新功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-appgallery-update
+format: md
 ---
+
 
 应用市场更新功能为元服务开发者提供监听/取消监听元服务更新检查功能，实现当元服务有/无新版本时提醒元服务开发者的能力，并且在有新版本时能实现自动下载并通知开发者。
 

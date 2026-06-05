@@ -2,7 +2,9 @@
 title: "适配功能：传感器&lt;SensorBinder&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-sensorbinder-0000002504354969
+format: md
 ---
+
 
 # 适配功能：传感器&lt;SensorBinder&gt;
 

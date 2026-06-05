@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Share Kit（分享服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-kit-guide
+format: md
 ---
+
 
 * **[Share Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-introduction)**
 * **[Share Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-terminology)**

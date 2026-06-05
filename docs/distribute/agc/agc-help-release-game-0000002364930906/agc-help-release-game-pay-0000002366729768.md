@@ -1,7 +1,9 @@
 ---
 title: "配置应用内资费"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-pay-0000002366729768
+format: md
 ---
+
 
 若游戏涉及付费，要求按照业务场景选择游戏内的资费类型，用于标识玩家在游戏内的付费类型。
 

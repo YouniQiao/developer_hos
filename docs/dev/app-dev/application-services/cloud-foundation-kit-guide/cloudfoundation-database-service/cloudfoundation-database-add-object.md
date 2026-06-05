@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "新增对象类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-object
+format: md
 ---
+
 
 开发者需要基于AGC控制台创建对象类型。
 

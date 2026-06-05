@@ -4,6 +4,7 @@ title: "执行sync过程中修改Hvigor及plugin版本导致build init"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-34
 ---
 
+
 **问题现象**
 
 在配置Hvigor和hvigor-ohos-plugin的版本号后，点击Sync。如果之后再次修改了版本号，会导致重复下载引发版本冲突，表现为build init报错及日志刷屏。

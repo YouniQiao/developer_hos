@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "数字商品服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-introduction)**
 * **[接入流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-preparations)**

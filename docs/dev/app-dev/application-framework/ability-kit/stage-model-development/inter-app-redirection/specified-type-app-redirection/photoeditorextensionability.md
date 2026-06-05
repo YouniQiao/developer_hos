@@ -1,7 +1,9 @@
 ---
 title: "拉起图片编辑类应用（startAbilityByType）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoeditorextensionability
+format: md
 ---
+
 
 ## 使用场景
 
@@ -20,7 +22,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/phot
 | **接口名** | **描述** |
 | --- | --- |
 | onStartContentEditing(uri: string, want:Want, session: UIExtensionContentSession):void | 可以执行读取原始图片、加载页面等操作。 |
-| saveEditedContentWithImage(pixeMap: image.PixelMap, option: image.PackingOption): Promise<AbilityResult> | 传入编辑过的图片的PixelMap对象并保存。 |
+| saveEditedContentWithImage(pixeMap: image.PixelMap, option: image.PackingOption): Promise\<AbilityResult\> | 传入编辑过的图片的PixelMap对象并保存。 |
 
 ## 图片编辑类应用实现图片编辑页面
 

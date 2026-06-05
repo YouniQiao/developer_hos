@@ -1,7 +1,9 @@
 ---
 title: "拉起快递类应用（startAbilityByType）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-express-apps
+format: md
 ---
+
 
 本章节介绍如何拉起快递类应用扩展面板。
 

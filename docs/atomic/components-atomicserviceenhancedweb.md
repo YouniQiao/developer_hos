@@ -1,7 +1,9 @@
 ---
 title: "AtomicServiceEnhancedWeb组件参考"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/components-atomicserviceenhancedweb
+format: md
 ---
+
 
 为开发者提供满足定制化诉求的Web高阶组件，屏蔽ArkWeb组件中无需关注的接口，并提供JS扩展能力。
 

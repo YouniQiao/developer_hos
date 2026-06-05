@@ -3,7 +3,9 @@ displayed_sidebar: cliToolsSidebar
 title: 获取命令行工具
 sidebar_position: 50
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-commandline-get
+format: md
 ---
+
 
 # 获取命令行工具
 

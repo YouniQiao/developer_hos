@@ -1,7 +1,9 @@
 ---
 title: "查看和导出日志"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-viewlog-0000002289629825
+format: md
 ---
+
 
 云调试服务支持在线查看和导出日志，通过获取设备运行期间的系统日志、应用日志，帮助用户定位问题。
 

@@ -1,7 +1,9 @@
 ---
 title: "礼包"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-gift-0000002458772637
+format: md
 ---
+
 
 ## 兑换直达礼包签名在服务器侧验证不通过，应该如何处理？
 

@@ -1,7 +1,9 @@
 ---
 title: "创建测试态POI"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-regist-testsate-poi-0000002423306402
+format: md
 ---
+
 
 在您的全网态服务上线之前，您可以创建测试态POI来替代信标设备，并使用自有真机验证测试态服务的出卡效果。
 

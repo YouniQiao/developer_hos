@@ -1,7 +1,9 @@
 ---
 title: "查询已订阅频道列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-getrtmsubscribedchannelinfo-minigame-0000002393266969
+format: md
 ---
+
 
 当订阅若干频道后，可通过查询已订阅的频道列表信息，查看频道的订阅情况。
 

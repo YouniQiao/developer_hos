@@ -1,7 +1,9 @@
 ---
 title: "（可选）使用canOpenLink判断应用是否可访问"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canopenlink
+format: md
 ---
+
 
 ## 使用场景
 

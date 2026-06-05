@@ -1,7 +1,9 @@
 ---
 title: "标准化数据类型 (ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-descriptors
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -165,8 +167,8 @@ utd.json5文件需要在类型为entry的HAP中配置。
 | belongsTo(type: string): boolean | 判断当前标准化数据类型是否归属于指定的标准化数据类型，true表示归属，false表示不归属。 |
 | isLowerLevelType(type: string): boolean | 判断当前标准化数据类型是否是指定标准化数据类型的低层级类型，true表示低层级，false表示非低层级。 |
 | isHigherLevelType(type: string): boolean | 判断当前标准化数据类型是否是指定标准化数据类型的高层级类型，true表示高层级，false表示非高层级。 |
-| getUniformDataTypesByFilenameExtension(filenameExtension: string, belongsTo?: string): Array<string> | 根据给定的文件后缀名和所归属的标准化数据类型查询标准化数据类型ID列表。 |
-| getUniformDataTypesByMIMEType(mimeType: string, belongsTo?: string): Array<string> | 根据给定的MIME类型和所归属的标准化数据类型查询标准化数据类型ID列表。 |
+| getUniformDataTypesByFilenameExtension(filenameExtension: string, belongsTo?: string): Array\<string\> | 根据给定的文件后缀名和所归属的标准化数据类型查询标准化数据类型ID列表。 |
+| getUniformDataTypesByMIMEType(mimeType: string, belongsTo?: string): Array\<string\> | 根据给定的MIME类型和所归属的标准化数据类型查询标准化数据类型ID列表。 |
 
 ## 如何查询媒体类文件归属类型
 
@@ -182,7 +184,7 @@ utd.json5文件需要在类型为entry的HAP中配置。
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L16-L20" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L16-L20" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 2. 针对“.mp3”文件扩展名，使用getUniformDataTypesByFilenameExtension()方法获取对应UTD数据类型，并打印对应UTD数据类型的具体属性。
 3. 针对“audio/mp3”MIMEType，使用getUniformDataTypesByMIMEType()查询对应UTD数据类型，并打印对应UTD数据类型的具体属性。
@@ -241,7 +243,7 @@ utd.json5文件需要在类型为entry的HAP中配置。
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L22-L70" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L22-L70" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 
 ## 如何通过文件后缀获取对应的MIMEType列表
@@ -258,7 +260,7 @@ utd.json5文件需要在类型为entry的HAP中配置。
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L16-L20" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L16-L20" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 2. 针对“.ts”文件后缀，使用getUniformDataTypesByFilenameExtension()方法获取对应UTD数据类型。
 3. 针对UTD数据类型，使用getTypeDescriptor()方法查询对应的MIMEType列表。
@@ -281,7 +283,7 @@ utd.json5文件需要在类型为entry的HAP中配置。
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L73-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L73-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 
 ## 如何通过MIMEType获取对应的后缀列表
@@ -298,7 +300,7 @@ utd.json5文件需要在类型为entry的HAP中配置。
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L16-L20" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L16-L20" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 2. 针对“text/plain”MIMEType，使用getUniformDataTypesByMIMEType()方法获取对应UTD数据类型。
 3. 针对UTD数据类型，使用getTypeDescriptor()方法查询对应的MIMEType列表。
@@ -321,4 +323,4 @@ utd.json5文件需要在类型为entry的HAP中配置。
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L91-L105" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/Udmf/UniformDataTypeDescriptors/entry/src/main/ets/pages/Index.ets#L91-L105" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>

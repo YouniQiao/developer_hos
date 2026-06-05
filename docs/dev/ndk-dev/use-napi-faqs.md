@@ -1,7 +1,9 @@
 ---
 title: "Node-API常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-faqs
+format: md
 ---
+
 
 ## 稳定性
 

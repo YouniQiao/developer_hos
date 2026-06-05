@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Cloud Foundation Kit（云开发服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloud-foundation-kit-guide
+format: md
 ---
+
 
 * **[Cloud Foundation Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-preparations)**

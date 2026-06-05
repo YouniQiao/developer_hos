@@ -1,7 +1,9 @@
 ---
 title: "首次核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-first-0000001761656100
+format: md
 ---
+
 
 在华为云核准（备案）系统中首次核准（备案）主体信息和快游戏信息。操作步骤如下：
 

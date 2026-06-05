@@ -1,7 +1,9 @@
 ---
 title: "端云数据同步关系型数据库端侧开发指导 (ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-cloud-sync-of-rdb-store
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -29,12 +31,12 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
 | 接口名称 | 描述 |
 | --- | --- |
-| getRdbStore(context: Context, config: StoreConfig): Promise<RdbStore> | 指定context和config，创建并得到指定类型的RdbStore数据库。 |
-| setDistributedTables(tables: Array<string>, type?: DistributedType, config?: DistributedConfig): Promise<void> | 设置分布式数据库表。 |
-| on(event: 'dataChange', type: SubscribeType, observer: Callback<Array<string>>| Callback<Array<ChangeInfo>>): void | 注册数据库的数据变更的事件监听。当分布式数据库或本地数据库中的数据发生更改时，将调用回调。 |
-| off(event:'dataChange', type: SubscribeType, observer?: Callback<Array<string>>| Callback<Array<ChangeInfo>>): void | 取消数据变更的事件监听。 |
-| cloudSync(mode: SyncMode, tables: string[], progress: Callback<ProgressDetails>, callback: AsyncCallback<void>): void | 手动执行对指定表的端云同步。 |
-| setCloudStrategy(strategy: StrategyType, param?: Array<commonType.ValueType>): Promise<void> | 设置应用自身的云同步策略，若未设置，则执行全局策略setGlobalCloudStrategy，全局策略若未设置，默认使用WIFI和蜂窝策略。 |
+| getRdbStore(context: Context, config: StoreConfig): Promise\<RdbStore\> | 指定context和config，创建并得到指定类型的RdbStore数据库。 |
+| setDistributedTables(tables: Array\<string\>, type?: DistributedType, config?: DistributedConfig): Promise\<void\> | 设置分布式数据库表。 |
+| on(event: 'dataChange', type: SubscribeType, observer: Callback\<Array<string\>>| Callback\<Array<ChangeInfo\>>): void | 注册数据库的数据变更的事件监听。当分布式数据库或本地数据库中的数据发生更改时，将调用回调。 |
+| off(event:'dataChange', type: SubscribeType, observer?: Callback\<Array<string\>>| Callback\<Array<ChangeInfo\>>): void | 取消数据变更的事件监听。 |
+| cloudSync(mode: SyncMode, tables: string[], progress: Callback\<ProgressDetails\>, callback: AsyncCallback\<void\>): void | 手动执行对指定表的端云同步。 |
+| setCloudStrategy(strategy: StrategyType, param?: Array\<commonType.ValueType\>): Promise\<void\> | 设置应用自身的云同步策略，若未设置，则执行全局策略setGlobalCloudStrategy，全局策略若未设置，默认使用WIFI和蜂窝策略。 |
 
 ## 开发步骤
 

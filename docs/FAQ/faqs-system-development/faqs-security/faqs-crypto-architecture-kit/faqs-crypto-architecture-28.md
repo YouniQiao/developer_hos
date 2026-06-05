@@ -1,7 +1,9 @@
 ---
 title: "在进行aes加密的时候，如何把字符串转换成Key对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-28
+format: md
 ---
+
 
 可参考如下代码：
 

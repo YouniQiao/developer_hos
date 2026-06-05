@@ -1,7 +1,9 @@
 ---
 title: "ASCF运行时"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-note-ascf-runtime
+format: md
 ---
+
 
 ## 1.0.23
 

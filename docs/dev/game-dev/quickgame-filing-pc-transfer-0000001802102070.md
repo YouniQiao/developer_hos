@@ -1,7 +1,9 @@
 ---
 title: "转移核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-transfer-0000001802102070
+format: md
 ---
+
 
 ![](./img/bbd47331.png)
 

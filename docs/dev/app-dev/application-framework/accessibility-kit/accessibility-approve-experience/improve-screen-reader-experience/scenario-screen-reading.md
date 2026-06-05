@@ -1,7 +1,9 @@
 ---
 title: "标注屏幕朗读内容的场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-screen-reading
+format: md
 ---
+
 
 ## 设计场景
 

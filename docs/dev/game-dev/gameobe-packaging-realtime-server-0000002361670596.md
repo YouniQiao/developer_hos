@@ -1,7 +1,9 @@
 ---
 title: "编译打包"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-packaging-realtime-server-0000002361670596
+format: md
 ---
+
 
 运行如下命令，将index.ts文件编译为index.js文件。
 

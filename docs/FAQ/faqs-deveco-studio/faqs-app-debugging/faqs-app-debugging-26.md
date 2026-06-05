@@ -4,6 +4,7 @@ title: "如何使用DevEco Studio进行C/C++代码断点调试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-26
 ---
 
+
 **问题现象**
 
 在DevEco Studio上的C/C++代码处打断点，调试运行时断点不生效。

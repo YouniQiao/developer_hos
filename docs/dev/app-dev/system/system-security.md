@@ -1,7 +1,9 @@
 ---
 title: "安全"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-security
+format: md
 ---
+
 
 * **[程序访问控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control)**
 * **[密码自动填充服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault)**

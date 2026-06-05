@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "播放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-playback-c
+format: md
 ---
+
 
 * **[使用AVPlayer播放音频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-playback)**
 * **[使用AVPlayer播放视频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-video-playback)**

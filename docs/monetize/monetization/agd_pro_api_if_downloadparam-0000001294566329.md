@@ -2,7 +2,9 @@
 title: "DownloadParam"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_downloadparam-0000001294566329
+format: md
 ---
+
 
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |

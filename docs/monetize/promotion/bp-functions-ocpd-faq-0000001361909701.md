@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-faq-0000001361909701
+format: md
 ---
+
 # FAQ
 
 ## 所有下发的数据都是应用商店推广的用户数据么？
@@ -93,18 +95,18 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 当前深度转化次数是遗留字段。CPD任务的深度转化次数，仅展示2021.11.16之前的历史数据，最新的数据在对应的字段中查看。oCPD任务的深度转化次数，和oCPD任务所选目标相关，如果oCPD目标是激活，则深度转化次数等于激活量。
 
-## 回传后接口报错\{"code":136183818,"msg":"The xxx is mismatch."\} 的原因是什么？
+## 回传后接口报错\\{"code":136183818,"msg":"The xxx is mismatch."\\} 的原因是什么？
 
 回传后接口报错不匹配的情况有3种，对应的原因和解决方案如下：
 
-1. 接口报错\{"code":136183818,"msg":"The callBack is mismatch."\} ：
+1. 接口报错\\{"code":136183818,"msg":"The callBack is mismatch."\\} ：
    1. 华为侧没有获取到用户设备的OAID，会导致无法匹配，一般您使用智能分包做归因时，会遇到这种情况。
    2. 如果您采用曝光归因（即把转化用户的OAID与曝光监测链接收到的OAID做匹配），可能出现这种情况。如您确定使用了曝光归因，可以联系对应的华为运营经理来解决。
    3. 暂不支持出端设备的归因（魅族，移动联通合约机除外）。
-2. 接口报错\{"code":136183818,"msg":"The deviceId is mismatch."\} :
+2. 接口报错\\{"code":136183818,"msg":"The deviceId is mismatch."\\} :
 
    回传的转化信息中，callBack可以匹配上，但是OAID和用户下载时的OAID无法匹配。原因可能是用户下载之后重置了OAID，这类报错属于正常情况。如果比例过大超过5%，请联系对应的华为运营经理协助排查。
-3. 接口报错\{"code":136183818,"msg":"The appId is mismatch."\} ：
+3. 接口报错\\{"code":136183818,"msg":"The appId is mismatch."\\} ：
 
    您回传转化所使用的API客户端所属的账户，和你上传APP的账户不一致。请使用上传APP的账户创建API客户端后，用该API客户端进行数据回传。
 

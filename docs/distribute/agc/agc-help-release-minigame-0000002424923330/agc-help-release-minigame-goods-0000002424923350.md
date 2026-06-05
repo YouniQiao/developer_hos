@@ -1,7 +1,9 @@
 ---
 title: "添加数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-goods-0000002424923350
+format: md
 ---
+
 
 数字商品类型分为消耗型、非消耗型、自动续期订阅、非续期订阅。
 

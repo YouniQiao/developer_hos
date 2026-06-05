@@ -1,7 +1,9 @@
 ---
 title: "加解密算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encrypt-decrypt-spec
+format: md
 ---
+
 
 * **[对称密钥加解密算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-encrypt-decrypt-spec)**
 * **[非对称密钥加解密算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec)**

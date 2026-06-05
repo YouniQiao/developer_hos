@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-unnecessary-qualifier"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-unnecessary-qualifier
 

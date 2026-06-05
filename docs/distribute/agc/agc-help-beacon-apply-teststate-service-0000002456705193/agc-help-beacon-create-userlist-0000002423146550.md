@@ -1,7 +1,9 @@
 ---
 title: "创建测试用户"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-create-userlist-0000002423146550
+format: md
 ---
+
 
 在对近场服务进行自有真机测试前，您需要先准备好参与测试的用户账号。
 

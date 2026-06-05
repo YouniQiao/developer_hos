@@ -1,7 +1,9 @@
 ---
 title: "删除设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-delete-device-0000002248111074
+format: md
 ---
+
 
 当后续不再使用某个已注册的设备时，您可以将该设备从列表中删除。
 

@@ -1,7 +1,9 @@
 ---
 title: "switch开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-switch
+format: md
 ---
+
 
 switch为开关选择器，切换开启或关闭状态。具体用法请参考[switch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-switch)。
 

@@ -1,7 +1,9 @@
 ---
 title: "anm工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # anm工具
 

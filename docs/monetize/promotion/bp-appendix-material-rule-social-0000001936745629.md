@@ -2,7 +2,9 @@
 title: "社交"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-social-0000001936745629
+format: md
 ---
+
 # 社交
 
 ## 社交&网络直播行业通用审核规范

@@ -1,7 +1,9 @@
 ---
 title: "目标拍摄跟踪开发指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-tracking-guide
+format: md
 ---
+
 
 从API version 20开始，支持使用机械体设备控制器，提供更丰富的拍摄体验，如目标跟踪和自动构图等专业功能，支持第三方应用。
 
@@ -13,17 +15,17 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type: 'attachStateChange', callback: Callback<AttachStateChangeInfo>): void | 注册attachStateChange事件的回调监听，等待连接状态变化。  **说明**：从API version 20开始支持。 |
-| off(type: 'attachStateChange', callback?: Callback<AttachStateChangeInfo>): void | 取消注册attachStateChange事件的回调监听。  **说明**：从API version 20开始支持。 |
+| on(type: 'attachStateChange', callback: Callback\<AttachStateChangeInfo\>): void | 注册attachStateChange事件的回调监听，等待连接状态变化。  **说明**：从API version 20开始支持。 |
+| off(type: 'attachStateChange', callback?: Callback\<AttachStateChangeInfo\>): void | 取消注册attachStateChange事件的回调监听。  **说明**：从API version 20开始支持。 |
 | getAttachedMechDevices(): MechInfo[] | 获取已连接的机械体设备列表。  **说明**：从API version 20开始支持。 |
 | setCameraTrackingEnabled(isEnabled: boolean): void | 启用或禁用摄像头跟踪。  **说明**：从API version 20开始支持。 |
 | getCameraTrackingEnabled(): boolean | 检查是否启用了摄像头跟踪。  **说明**：从API version 20开始支持。 |
-| on(type: 'trackingStateChange', callback: Callback<TrackingEventInfo>): void | 注册trackingStateChange事件的回调监听。  **说明**：从API version 20开始支持。 |
-| off(type: 'trackingStateChange', callback?: Callback<TrackingEventInfo>): void | 取消注册trackingStateChange事件的回调监听。  **说明**：从API version 20开始支持。 |
+| on(type: 'trackingStateChange', callback: Callback\<TrackingEventInfo\>): void | 注册trackingStateChange事件的回调监听。  **说明**：从API version 20开始支持。 |
+| off(type: 'trackingStateChange', callback?: Callback\<TrackingEventInfo\>): void | 取消注册trackingStateChange事件的回调监听。  **说明**：从API version 20开始支持。 |
 | setCameraTrackingLayout(trackingLayout: CameraTrackingLayout): void | 设置摄像头跟踪布局。  **说明**：从API version 20开始支持。 |
 | getCameraTrackingLayout(): CameraTrackingLayout | 获取此机械设备摄像头跟踪布局。  **说明**：从API version 20开始支持。 |
-| on(type: 'rotationAxesStatusChange', callback: Callback<RotationAxesStateChangeInfo>): void | 注册rotationAxesStatusChange事件的回调监听。  **说明**：从API version 20开始支持。 |
-| off(type: 'rotationAxesStatusChange', callback?: Callback<RotationAxesStateChangeInfo>): void | 取消注册rotationAxesStatusChange事件的回调监听。  **说明**：从API version 20开始支持。 |
+| on(type: 'rotationAxesStatusChange', callback: Callback\<RotationAxesStateChangeInfo\>): void | 注册rotationAxesStatusChange事件的回调监听。  **说明**：从API version 20开始支持。 |
+| off(type: 'rotationAxesStatusChange', callback?: Callback\<RotationAxesStateChangeInfo\>): void | 取消注册rotationAxesStatusChange事件的回调监听。  **说明**：从API version 20开始支持。 |
 
 ## 开发步骤
 
@@ -46,7 +48,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L16-L18" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：ApiTestPage.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L16-L18" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：ApiTestPage.ets</a></div>
 
 2. 获取已连接的机械体列表。
 
@@ -79,7 +81,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L179-L204" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：ApiTestPage.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L179-L204" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：ApiTestPage.ets</a></div>
 
 3. 监听设备的连接状态变化，以便及时响应。
 
@@ -102,7 +104,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/AttachStateChangeCallbackRegister.ets#L72-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：AttachStateChangeCallbackRegister.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/AttachStateChangeCallbackRegister.ets#L72-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：AttachStateChangeCallbackRegister.ets</a></div>
 
 4. 处理设备的连接与断开的事件。
 
@@ -122,7 +124,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/AttachStateChangeCallbackRegister.ets#L22-L34" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：AttachStateChangeCallbackRegister.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/AttachStateChangeCallbackRegister.ets#L22-L34" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：AttachStateChangeCallbackRegister.ets</a></div>
 
 5. 取消连接状态的监听。
 
@@ -133,7 +135,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/AttachStateChangeCallbackRegister.ets#L108-L111" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：AttachStateChangeCallbackRegister.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/AttachStateChangeCallbackRegister.ets#L108-L111" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：AttachStateChangeCallbackRegister.ets</a></div>
 
 
 ### 控制设备目标跟踪拍摄
@@ -162,7 +164,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L330-L346" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：ApiTestPage.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L330-L346" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：ApiTestPage.ets</a></div>
 
 2. 监听相机跟踪状态的变化。
 
@@ -190,7 +192,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L400-L420" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：ApiTestPage.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L400-L420" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：ApiTestPage.ets</a></div>
 
 3. 处理跟踪状态变化事件。
 
@@ -233,7 +235,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L25-L60" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：ApiTestPage.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L25-L60" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：ApiTestPage.ets</a></div>
 
 4. 取消跟踪状态变化的监听。
 
@@ -247,7 +249,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L445-L451" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：ApiTestPage.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/MechanicKit/MechanicManagerSample/entry/src/main/ets/pages/ApiTestPage.ets#L445-L451" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：ApiTestPage.ets</a></div>
 
 
 ### 调试验证

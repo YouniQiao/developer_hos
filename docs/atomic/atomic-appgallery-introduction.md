@@ -1,7 +1,9 @@
 ---
 title: "AppGallery Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-appgallery-introduction
+format: md
 ---
+
 
 AppGallery Kit（应用市场服务）提供应用市场业务的对外开放能力，可以更好地支持元服务的能力。
 

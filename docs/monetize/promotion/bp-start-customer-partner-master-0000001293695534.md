@@ -2,7 +2,9 @@
 title: "客户投放伙伴主账户（一级服务商）"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-customer-partner-master-0000001293695534
+format: md
 ---
+
 # 客户投放伙伴主账户（一级服务商）
 
 ## 账号注册

@@ -4,6 +4,7 @@ title: "如何在Native侧跨模块访问资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-23
 ---
 
+
 **解决措施**
 
 可以通过createModuleContext(moduleName)接口创建同应用中不同模块的上下文。获取到resourceManager对象后，使用 Native Rawfile 接口在 Native 侧操作 Rawfile 目录和文件，实现跨模块资源访问。

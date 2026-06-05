@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "播控特性简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-overview
+format: md
 ---
+
 
 使用媒体播控，可以简单高效地将音视频投放到其他HarmonyOS设备上播放，如在手机上播放的音视频，可以投到2in1设备上继续播放。
 

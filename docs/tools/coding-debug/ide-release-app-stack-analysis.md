@@ -1,7 +1,9 @@
 ---
 title: "堆栈轨迹分析"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 堆栈轨迹分析
 

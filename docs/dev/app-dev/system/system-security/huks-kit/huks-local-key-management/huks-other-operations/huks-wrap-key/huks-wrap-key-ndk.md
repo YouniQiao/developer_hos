@@ -1,7 +1,9 @@
 ---
 title: "加密导出导入密钥(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-wrap-key-ndk
+format: md
 ---
+
 
 从API 20开始，支持加密导出导入密钥。
 

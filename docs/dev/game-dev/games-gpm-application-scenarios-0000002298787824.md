@@ -1,7 +1,9 @@
 ---
 title: "典型应用场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-application-scenarios-0000002298787824
+format: md
 ---
+
 
 ## 自定义场景分析
 

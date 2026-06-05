@@ -4,6 +4,7 @@ title: "如何解决编译报错“Error: the name 'XXX' can only contain [a-zA-
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-124
 ---
 
+
 **问题现象**
 
 编译报错：文件名只能包含大小写字母、数字、下划线。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-preparations
+format: md
 ---
+
 
 * **[基本准备工作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-base)**
 * **[开通推送服务权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-push-service)**

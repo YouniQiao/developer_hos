@@ -1,7 +1,9 @@
 ---
 title: "使用Cocos Creator概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-creator-introduction-0000002290792033
+format: md
 ---
+
 
 使用Cocos Creator **2.4.15**及以上版本或Cocos Creator **3.8.6**及以上版本开发的游戏均支持适配HarmonyOS 5.0及以上平台。
 

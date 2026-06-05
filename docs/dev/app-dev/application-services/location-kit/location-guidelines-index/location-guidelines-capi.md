@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取设备的位置信息开发指导(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-guidelines-capi
+format: md
 ---
+
 
 ## 场景介绍
 

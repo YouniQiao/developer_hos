@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "准备证书"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config
+format: md
 ---
+
 
 开发者接入华为支付开放API接口，需要通过证书来对请求内容及响应内容做签名和验证签名，以保证请求的安全性和可靠性。
 

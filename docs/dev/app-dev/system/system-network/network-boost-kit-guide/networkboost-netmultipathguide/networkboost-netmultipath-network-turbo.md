@@ -1,7 +1,9 @@
 ---
 title: "多网并发网络加速"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-network-turbo
+format: md
 ---
+
 
 ## 概述
 

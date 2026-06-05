@@ -1,7 +1,9 @@
 ---
 title: "基本转换步骤"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-converter-step-0000002494439228
+format: md
 ---
+
 
 ## 第一步：选择目录
 

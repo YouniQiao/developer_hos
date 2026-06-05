@@ -1,7 +1,9 @@
 ---
 title: "Worker线程内存如何共享"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-66
+format: md
 ---
+
 
 Worker底层采用Actor模型，线程间隔离，内存不共享。要实现内存共享，可以传输SharedArrayBuffer对象。
 

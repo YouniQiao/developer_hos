@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "适配相机旋转角度(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-angle-adaptation-native
+format: md
 ---
+
 
 屏幕处于不同的屏幕状态时，原始图像需旋转不同的角度，以确保图像在合适的方向显示，效果如图所示。
 

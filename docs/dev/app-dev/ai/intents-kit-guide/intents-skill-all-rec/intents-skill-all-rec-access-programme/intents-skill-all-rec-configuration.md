@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "任务执行类场景方案（配置文件接入方式）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-configuration
+format: md
 ---
+
 
 ## 方案概述
 

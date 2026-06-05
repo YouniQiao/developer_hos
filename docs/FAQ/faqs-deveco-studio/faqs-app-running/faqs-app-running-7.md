@@ -4,6 +4,7 @@ title: "模拟器时间与系统时间不一致"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-7
 ---
 
+
 **问题现象**
 
 模拟器运行一段时间后，显示的时间可能与系统当前时间不同步。

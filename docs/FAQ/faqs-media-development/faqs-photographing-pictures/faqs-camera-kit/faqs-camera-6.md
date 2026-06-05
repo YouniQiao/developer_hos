@@ -1,7 +1,9 @@
 ---
 title: "如何读取相机的预览图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-6
+format: md
 ---
+
 
 开发步骤：
 

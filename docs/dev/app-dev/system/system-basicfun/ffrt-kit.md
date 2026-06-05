@@ -1,7 +1,9 @@
 ---
 title: "Function Flow Runtime Kit（任务并发调度服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-kit
+format: md
 ---
+
 
 * **[Function Flow Runtime Kit概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-overview)**
 * **[Function Flow Runtime并发范式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-paradigm)**

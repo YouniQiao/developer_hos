@@ -4,6 +4,7 @@ title: "编译初始化报错“resource busy or locked, open 'xxxoutputsbuild-l
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-132
 ---
 
+
 **问题现象**
 
 在升级DevEco Studio至5.0.3.403版本后，打开旧工程时，可能会遇到以下错误：resource busy or locked, open 'xxx\outputs\build-logs\build.log'。

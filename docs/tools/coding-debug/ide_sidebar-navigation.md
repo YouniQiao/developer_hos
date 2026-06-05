@@ -1,7 +1,9 @@
 ---
 title: "@cross-device-app-dev/sidebar-navigation"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @cross-device-app-dev/sidebar-navigation
 

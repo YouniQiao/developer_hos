@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "后台播放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-background-scene
+format: md
 ---
+
 
 实际应用中，大多数音视频都有后台播放的需求，本指南将详细讲解如何实现后台长时间播放的方法。
 

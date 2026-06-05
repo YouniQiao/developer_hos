@@ -1,7 +1,9 @@
 ---
 title: "Online Authentication Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-introduction
+format: md
 ---
+
 
 Online Authentication Kit（在线认证服务）遵循FIDO（Fast Identity Online）、FIDO2、IIFAA（互联网可信认证联盟）和SOTER标准免密认证规范，提供免密身份认证的移动端能力。用户应用接入FIDO、FIDO2、IFAA或SOTER服务器后，可以使用相应的移动端能力，用生物特征（例如指纹、3D人脸）代替密码，实现免密登录、免密支付等业务场景。
 

@@ -4,6 +4,7 @@ title: "Tabs如何设置页面margin，使得边距空白跟随页面滑动"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-442
 ---
 
+
 **问题背景**
 
 为Tabs设置了外边距，但在页签滑动时边距没有跟随页面滑动。

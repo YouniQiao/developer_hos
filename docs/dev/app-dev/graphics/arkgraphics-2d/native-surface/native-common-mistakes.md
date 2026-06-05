@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图形缓冲区常见稳定性问题 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-common-mistakes
+format: md
 ---
+
 
 本文档主要针对NativeWindow、NativeBuffer和NativeImage开发过程中的常见问题进行说明，帮助开发者及时避免或定位对应问题，提高应用稳定性。
 

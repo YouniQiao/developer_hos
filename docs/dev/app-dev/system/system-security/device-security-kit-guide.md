@@ -1,7 +1,9 @@
 ---
 title: "Device Security Kit（设备安全服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-security-kit-guide
+format: md
 ---
+
 
 * **[Device Security Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-introduction)**
 * **[服务配额](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-quota)**

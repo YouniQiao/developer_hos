@@ -1,7 +1,9 @@
 ---
 title: "base64字符串如何转为图片并保存"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-3
+format: md
 ---
+
 
 可以通过[buffer.from](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-buffer#bufferfrom)的方法，将base64编码格式的字符串创建为新的Buffer对象，接着用[fileIo.writeSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fileio#fileiowritesync)方法将转换好的Buffer对象写入文件。
 

@@ -2,7 +2,9 @@
 title: "成功案例"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-success-0000001282644285
+format: md
 ---
+
 # 成功案例
 
 ## 客户需求

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取天气数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-getweather
+format: md
 ---
+
 
 通过开发者提供的经纬度数据，获取天气数据，比如：实况数据、预警数据。
 

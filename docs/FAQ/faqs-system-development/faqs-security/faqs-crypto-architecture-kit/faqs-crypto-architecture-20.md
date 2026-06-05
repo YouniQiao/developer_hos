@@ -1,7 +1,9 @@
 ---
 title: "如何对公钥和私钥进行加解密"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-20
+format: md
 ---
+
 
 使用 `@kit.CryptoArchitectureKit` 提供的密码学能力，可实现非对称加密中“公钥加密、私钥解密”的典型场景。
 

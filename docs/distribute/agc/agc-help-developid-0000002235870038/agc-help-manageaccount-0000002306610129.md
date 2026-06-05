@@ -1,7 +1,9 @@
 ---
 title: "管理团队账号"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129
+format: md
 ---
+
 
 当您的企业有多个人员需要共同维护您的应用时，如果允许所有职员都使用账号持有者登录，那么任何人都有随意创建和修改的权限，必然会导致管理混乱和安全风险。此时您可以组建一个团队，邀请别的账号加入您的团队，并为其分配不同的角色和权限。
 

@@ -2,7 +2,9 @@
 title: "脚本设计"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-guide-script-0000002429946777
+format: md
 ---
+
 
 # 脚本设计
 

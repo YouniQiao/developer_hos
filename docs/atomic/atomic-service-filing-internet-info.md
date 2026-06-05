@@ -1,7 +1,9 @@
 ---
 title: "新增互联网信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-internet-info
+format: md
 ---
+
 
 在华为云核准（备案）系统中已核准（备案）的主体下新增元服务信息。操作步骤如下：
 

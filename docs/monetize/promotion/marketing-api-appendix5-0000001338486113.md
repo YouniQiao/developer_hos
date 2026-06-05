@@ -2,7 +2,9 @@
 title: "参数描述说明"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix5-0000001338486113
+format: md
 ---
+
 # 参数描述说明
 
 ## 修改限额约束

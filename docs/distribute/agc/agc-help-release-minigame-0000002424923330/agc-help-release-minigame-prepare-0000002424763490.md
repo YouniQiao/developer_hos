@@ -1,7 +1,9 @@
 ---
 title: "准备工作"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-prepare-0000002424763490
+format: md
 ---
+
 
 提前了解小游戏的上架规则，并提前准备小游戏素材，有助于快速通过小游戏上架审核。
 

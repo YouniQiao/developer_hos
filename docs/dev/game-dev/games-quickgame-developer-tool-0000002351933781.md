@@ -1,7 +1,9 @@
 ---
 title: "快游戏开发者工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-developer-tool-0000002351933781
+format: md
 ---
+
 
 * **[版本更新说明](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-releasenotes-0000002317894960)**
 * **[工具下载](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-download-0000002351893589)**

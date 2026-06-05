@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "预加载工具类"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-tool-class
+format: md
 ---
+
 
 在“entry/src/main/ets/common”目录下新增GlobalContext.ets和PreferenceUtil.ets。
 

@@ -1,7 +1,9 @@
 ---
 title: "C#（Native）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-record-play-audio-msg-csharp-native-0000002359707070
+format: md
 ---
+
 
 ![](./img/f9da52e1.png)
 

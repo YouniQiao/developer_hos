@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "群组密钥(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-arkts
+format: md
 ---
+
 
 从API 23开始，HUKS支持群组密钥功能。群组密钥支持的HUKS密钥操作及详细介绍参考[群组密钥介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)，本文档以[AES/CBC/PKCS7加解密](#aescbcpkcs7加解密)、[X25519非对称密钥协商](#x25519非对称密钥协商)、[PBKDF2派生密钥](#pbkdf2派生密钥)为例展示群组密钥使用方法。
 

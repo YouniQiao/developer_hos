@@ -1,7 +1,9 @@
 ---
 title: "抓包/调试权限常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/faqs-permissions-debug
+format: md
 ---
+
 
 ## ohos.permission.kernel.NET\_RAW权限使用说明
 

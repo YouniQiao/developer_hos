@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "MindSpore Lite Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-kit-introduction
+format: md
 ---
+
 
 ## 使用场景
 

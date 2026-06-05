@@ -1,7 +1,9 @@
 ---
 title: "开发意图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-development
+format: md
 ---
+
 
 * **[意图开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-definition)**
 * **[使用配置文件开发意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-config-development)**

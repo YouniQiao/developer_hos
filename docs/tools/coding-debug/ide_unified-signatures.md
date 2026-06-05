@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/unified-signatures"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/unified-signatures
 

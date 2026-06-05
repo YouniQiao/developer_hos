@@ -4,6 +4,7 @@ title: "程序框架（Ability）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-kit
 ---
 
+
 * **[如何获取设备屏幕方向的状态变化通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-1)**
 * **[如何使用AbilityStage的生命周期函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-2)**
 * **[如何在UIAbility调用terminateSelf()后设置不保留最近任务列表中的快照](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-4)**

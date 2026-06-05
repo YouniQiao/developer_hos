@@ -11,10 +11,10 @@ concurrency:
 
 jobs:
   build-and-deploy:
-    runs-on: [self-hosted, macos]
+    runs-on: [self-hosted, linux, x64]
     env:
-      HTTP_PROXY: ''
-      HTTPS_PROXY: ''
+      HTTP_PROXY: 'http://127.0.0.1:7890'
+      HTTPS_PROXY: 'http://127.0.0.1:7890'
       CACHE_DIR: ${{ github.workspace }}/../_docusaurus_cache
     steps:
       - name: Fast checkout (self-hosted, incremental)

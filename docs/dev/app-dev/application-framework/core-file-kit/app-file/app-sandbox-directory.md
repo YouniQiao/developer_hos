@@ -1,7 +1,9 @@
 ---
 title: "应用沙箱目录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory
+format: md
 ---
+
 
 应用沙箱是一种以安全防护为目的的隔离机制，避免数据受到恶意路径穿越访问。在这种沙箱的保护机制下，应用可见的目录范围即为“应用沙箱目录”。
 
@@ -104,13 +106,13 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-
 
 在应用沙箱路径下读写文件，经过映射转换，实际读写的是真实物理路径中的应用文件，应用沙箱路径与真实物理路径对应关系如下表所示。
 
-其中<USERID>为当前用户ID，从100开始递增，<EXTENSIONPATH>为moduleName-extensionName。应用是否以Extension独立沙箱运行可参考[ExtensionAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)。
+其中\<USERID\>为当前用户ID，从100开始递增，\<EXTENSIONPATH\>为moduleName-extensionName。应用是否以Extension独立沙箱运行可参考[ExtensionAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)。
 
 | 应用沙箱路径 | 物理路径 |
 | --- | --- |
-| /data/storage/el1/bundle | 应用安装包目录：  /data/app/el1/bundle/public/<PACKAGENAME> |
-| /data/storage/el1/base | 应用el1级别加密数据目录：  - 非独立沙箱运行的应用：/data/app/el1/<USERID>/base/<PACKAGENAME>  - 以独立沙箱运行的Extension应用： /data/app/el1/<USERID>/base/+extension-<EXTENSIONPATH>+<PACKAGENAME> |
-| /data/storage/el2/base | 应用el2级别加密数据目录：  - 非独立沙箱运行的应用：/data/app/el2/<USERID>/base/<PACKAGENAME>  - 以独立沙箱运行的Extension应用： /data/app/el2/<USERID>/base/+extension-<EXTENSIONPATH>+<PACKAGENAME> |
-| /data/storage/el1/database | 应用el1级别加密数据库目录：  - 非独立沙箱运行的应用：/data/app/el1/<USERID>/database/<PACKAGENAME>  - 以独立沙箱运行的Extension应用：/data/app/el1/<USERID>/database/+extension-<EXTENSIONPATH>+<PACKAGENAME> |
-| /data/storage/el2/database | 应用el2级别加密数据库目录：  - 非独立沙箱运行的应用：/data/app/el2/<USERID>/database/<PACKAGENAME>  - 以独立沙箱运行的Extension应用：/data/app/el2/<USERID>/database/+extension-<EXTENSIONPATH>+<PACKAGENAME> |
-| /data/storage/el2/distributedfiles | 应用el2加密级别有账号分布式数据融合目录：  - 物理目录：/mnt/hmdfs/<USERID>/account/merge\_view/data/<PACKAGENAME> |
+| /data/storage/el1/bundle | 应用安装包目录：  /data/app/el1/bundle/public/\<PACKAGENAME\> |
+| /data/storage/el1/base | 应用el1级别加密数据目录：  - 非独立沙箱运行的应用：/data/app/el1/\<USERID\>/base/\<PACKAGENAME\>  - 以独立沙箱运行的Extension应用： /data/app/el1/\<USERID\>/base/+extension-\<EXTENSIONPATH\>+\<PACKAGENAME\> |
+| /data/storage/el2/base | 应用el2级别加密数据目录：  - 非独立沙箱运行的应用：/data/app/el2/\<USERID\>/base/\<PACKAGENAME\>  - 以独立沙箱运行的Extension应用： /data/app/el2/\<USERID\>/base/+extension-\<EXTENSIONPATH\>+\<PACKAGENAME\> |
+| /data/storage/el1/database | 应用el1级别加密数据库目录：  - 非独立沙箱运行的应用：/data/app/el1/\<USERID\>/database/\<PACKAGENAME\>  - 以独立沙箱运行的Extension应用：/data/app/el1/\<USERID\>/database/+extension-\<EXTENSIONPATH\>+\<PACKAGENAME\> |
+| /data/storage/el2/database | 应用el2级别加密数据库目录：  - 非独立沙箱运行的应用：/data/app/el2/\<USERID\>/database/\<PACKAGENAME\>  - 以独立沙箱运行的Extension应用：/data/app/el2/\<USERID\>/database/+extension-\<EXTENSIONPATH\>+\<PACKAGENAME\> |
+| /data/storage/el2/distributedfiles | 应用el2加密级别有账号分布式数据融合目录：  - 物理目录：/mnt/hmdfs/\<USERID\>/account/merge\_view/data/\<PACKAGENAME\> |

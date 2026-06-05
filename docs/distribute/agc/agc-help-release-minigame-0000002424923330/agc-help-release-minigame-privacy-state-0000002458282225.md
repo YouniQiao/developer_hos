@@ -1,7 +1,9 @@
 ---
 title: "配置隐私声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-privacy-state-0000002458282225
+format: md
 ---
+
 
 发布小游戏时，您需要提供隐私政策，便于玩家了解小游戏收集、使用隐私数据的情况。
 

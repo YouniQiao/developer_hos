@@ -2,7 +2,9 @@
 title: "使用创意洞察功能"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-creative-insight-use-0000001348968532
+format: md
 ---
+
 # 使用创意洞察功能
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)。

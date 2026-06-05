@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用相机预配置(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preconfig-native
+format: md
 ---
+
 
 相机预配置（Preconfig），对常用的场景和分辨率进行了预配置集成，可简化开发相机应用流程，提高应用的开发效率。
 

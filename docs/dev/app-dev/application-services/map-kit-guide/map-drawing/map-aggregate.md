@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "点聚合"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-aggregate
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -29,7 +31,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [ClusterOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#clusteroverlayparams) | 点聚合参数。 |
-| [addClusterOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addclusteroverlay)(params: [mapCommon.ClusterOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#clusteroverlayparams)): Promise<[ClusterOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-clusteroverlay)> | 聚合接口，支持节点聚合能力。 |
+| [addClusterOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addclusteroverlay)(params: [mapCommon.ClusterOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#clusteroverlayparams)): Promise[ClusterOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-clusteroverlay) | 聚合接口，支持节点聚合能力。 |
 | [ClusterOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-clusteroverlay) | 点聚合，支持更新和查询相关属性。 |
 
 ## 开发步骤

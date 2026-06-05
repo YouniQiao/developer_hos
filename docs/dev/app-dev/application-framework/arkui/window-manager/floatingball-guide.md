@@ -1,7 +1,9 @@
 ---
 title: "全局闪控球开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/floatingball-guide
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -28,16 +30,16 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/floa
 | 接口名 | 描述 |
 | --- | --- |
 | isFloatingBallEnabled(): boolean | 判断当前设备是否支持闪控球功能。 |
-| create(config: FloatingBallConfiguration): Promise<FloatingBallController> | 创建闪控球控制器。 |
-| startFloatingBall(params: FloatingBallParams): Promise<void> | 启动闪控球。 |
-| updateFloatingBall(params: FloatingBallParams): Promise<void> | 更新闪控球。 |
-| stopFloatingBall(): Promise<void> | 停止闪控球。 |
-| on(type: 'stateChange', callback: Callback<FloatingBallState>): void | 开启闪控球生命周期状态的监听。 |
-| off(type: 'stateChange', callback?: Callback<FloatingBallState>): void | 关闭闪控球生命周期状态的监听。 |
-| on(type: 'click', callback: Callback<void>): void | 开启闪控球点击事件的监听。 |
-| off(type: 'click', callback?: Callback<void>): void | 关闭闪控球点击事件的监听。 |
-| getFloatingBallWindowInfo(): Promise<FloatingBallWindowInfo> | 获取闪控球窗口信息。 |
-| restoreMainWindow(want: Want): Promise<void> | 恢复应用主窗口，加载指定页面。 |
+| create(config: FloatingBallConfiguration): Promise\<FloatingBallController\> | 创建闪控球控制器。 |
+| startFloatingBall(params: FloatingBallParams): Promise\<void\> | 启动闪控球。 |
+| updateFloatingBall(params: FloatingBallParams): Promise\<void\> | 更新闪控球。 |
+| stopFloatingBall(): Promise\<void\> | 停止闪控球。 |
+| on(type: 'stateChange', callback: Callback\<FloatingBallState\>): void | 开启闪控球生命周期状态的监听。 |
+| off(type: 'stateChange', callback?: Callback\<FloatingBallState\>): void | 关闭闪控球生命周期状态的监听。 |
+| on(type: 'click', callback: Callback\<void\>): void | 开启闪控球点击事件的监听。 |
+| off(type: 'click', callback?: Callback\<void\>): void | 关闭闪控球点击事件的监听。 |
+| getFloatingBallWindowInfo(): Promise\<FloatingBallWindowInfo\> | 获取闪控球窗口信息。 |
+| restoreMainWindow(want: Want): Promise\<void\> | 恢复应用主窗口，加载指定页面。 |
 
 ## 交互方式
 
@@ -255,7 +257,7 @@ public static onClickUpdateFloatingBall(
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/FloatingBall/entry/src/main/ets/util/Utils.ts#L16-L154" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Utils.ts</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/FloatingBall/entry/src/main/ets/util/Utils.ts#L16-L154" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Utils.ts</a></div>
 
 
 ```
@@ -437,7 +439,7 @@ struct Index {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/FloatingBall/entry/src/main/ets/pages/Index.ets#L16-L192" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/FloatingBall/entry/src/main/ets/pages/Index.ets#L16-L192" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 
 ## 示例代码

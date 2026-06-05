@@ -4,6 +4,7 @@ title: "编译报错“Invalid tag 'xxx' at 'xxx/xxx.json5'.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-148
 ---
 
+
 **错误描述**
 
 在xxx/xxx.json5文件中存在无效的tag标签“xxx”。

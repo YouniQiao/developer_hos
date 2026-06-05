@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-overview-0000002283343885
+format: md
 ---
+
 
 证书是由AppGallery Connect颁发的数字证书，用于验证应用的身份和签名。通过证书，验证应用身份，可以确保应用由合法开发者发布；对应用签名，可以确保应用的完整性和来源的可靠性。证书格式为.cer，包含公钥、证书指纹（即证书的摘要信息）等信息。
 

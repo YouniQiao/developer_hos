@@ -4,6 +4,7 @@ title: "如何获取设备的CPU信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-22
 ---
 
+
 可以通过以下命令来查看CPU信息：
 
 ```

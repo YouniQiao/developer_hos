@@ -4,6 +4,7 @@ title: "使用napi_run_script_path接口执行包内abc文件的使用限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-65
 ---
 
+
 **问题现象**
 
 1. 通过这个API执行的abc文件运行在哪个JS上下文，是否可以与主线程进行交互？

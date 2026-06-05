@@ -1,7 +1,9 @@
 ---
 title: "PhoneVerifyCode"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-phoneverifycode-0000002273617149
+format: md
 ---
+
 
 手机验证码信息类。
 

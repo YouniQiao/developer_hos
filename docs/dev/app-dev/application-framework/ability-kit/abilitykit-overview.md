@@ -1,7 +1,9 @@
 ---
 title: "Ability Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitykit-overview
+format: md
 ---
+
 
 Ability Kit（程序框架服务）提供了应用程序开发和运行的应用模型。开发者可以基于应用模型，实现不同类型的应用组件，更加简单高效地完成应用生命周期管理、组件间交互、进程线程管理等业务逻辑，无需关注底层实现细节。
 

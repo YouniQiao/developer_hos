@@ -1,7 +1,9 @@
 ---
 title: "帧率"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate
+format: md
 ---
+
 
 # 帧率
 

@@ -4,6 +4,7 @@ title: "如何在一个模块中使用另一个模块中编译出来的so"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-72
 ---
 
+
 **问题场景**
 
 在a module的Native侧集成b module编译出来的so，可以按照以下步骤操作：
@@ -18,7 +19,7 @@ cmake
 
 add\_library(b SHARED IMPORTED)
 
-set\_target\_properties(b PROPERTIES IMPORTED\_LOCATION ${CMAKE\_SOURCE\_DIR}/path/to/b/libb.so)
+set\_target\_properties(b PROPERTIES IMPORTED\_LOCATION $\{CMAKE\_SOURCE\_DIR\}/path/to/b/libb.so)
 
 target\_link\_libraries(a b)
 
@@ -35,10 +36,10 @@ target\_link\_libraries(a b)
 
 1. 在HAR/HSP模块的build-profile.json5中，指定buildOption/nativeLib/headerPath为接口文件目录。
 
-   buildOption: { nativeLib: { headerPath: "src/main/cpp/include" } }
+   buildOption: \{ nativeLib: \{ headerPath: "src/main/cpp/include" \} \}
 2. 调用方依赖HAR或HSP包。
 
-   // oh-package.json dependencies: { curl: "1.0.0" }
+   // oh-package.json dependencies: \{ curl: "1.0.0" \}
 3. 调用方配置CMake链接SO，格式为 packageName::soName。
 
    target\_link\_libraries(entry PUBLIC curl::curl)

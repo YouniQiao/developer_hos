@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Core Speech Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-speech-introduction
+format: md
 ---
+
 
 Core Speech Kit（基础语音服务）集成了语音类基础AI能力，包括文本转语音（TextToSpeech）及语音识别（SpeechRecognizer）能力，便于用户与设备进行互动，实现将实时输入的语音与文本之间相互转换。
 

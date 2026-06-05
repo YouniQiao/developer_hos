@@ -4,6 +4,7 @@ title: "如何保持屏幕常亮"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-196
 ---
 
+
 获取窗口实例对象后，调用setWindowKeepScreenOn方法可设置屏幕是否常亮。
 
 ```

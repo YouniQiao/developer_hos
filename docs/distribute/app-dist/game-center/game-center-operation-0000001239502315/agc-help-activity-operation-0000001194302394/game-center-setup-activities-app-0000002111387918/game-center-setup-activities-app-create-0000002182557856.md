@@ -2,7 +2,9 @@
 title: "创建活动"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-app-create-0000002182557856
+format: md
 ---
+
 
 # 创建活动
 

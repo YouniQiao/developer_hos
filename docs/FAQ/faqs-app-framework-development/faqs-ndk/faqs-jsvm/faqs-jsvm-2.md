@@ -4,6 +4,7 @@ title: "如何自排查_Bool类型没有找到的编译问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-2
 ---
 
+
 **问题现象**
 
 构建HAP工程时，编译工具报错：“error: unknown type name '\_Bool'”，找不到\_Bool类型错误，如下所示：

@@ -4,6 +4,7 @@ title: "如何使用AbilityStage的生命周期函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-2
 ---
 
+
 DevEco Studio默认工程未包含AbilityStage。若需使用AbilityStage功能，可手动创建AbilityStage文件。具体步骤如下：
 
 1. 在工程Module对应的ets目录下，右键选择“New > Directory”，新建一个目录，命名为myabilitystage。

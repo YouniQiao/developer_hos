@@ -1,7 +1,9 @@
 ---
 title: "数据防泄漏服务开发指导(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dlp-guidelines-ndk
+format: md
 ---
+
 
 数据防泄漏（Data Loss Prevention，DLP）是系统提供的系统级的数据防泄漏解决方案，提供跨设备的文件的权限管理、加密存储、授权访问等能力。
 

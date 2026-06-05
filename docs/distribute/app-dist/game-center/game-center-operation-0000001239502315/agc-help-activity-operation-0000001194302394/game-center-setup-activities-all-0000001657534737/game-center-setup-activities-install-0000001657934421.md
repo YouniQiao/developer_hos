@@ -2,7 +2,9 @@
 title: "安装有奖"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-install-0000001657934421
+format: md
 ---
+
 
 # 安装有奖
 

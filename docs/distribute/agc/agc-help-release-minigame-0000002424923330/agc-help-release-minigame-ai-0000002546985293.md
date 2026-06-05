@@ -1,7 +1,9 @@
 ---
 title: "配置AI功能声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-ai-0000002546985293
+format: md
 ---
+
 
 按照法律法规要求，应用程序在上架或者上线审核时，应用程序服务提供者应说明是否提供人工智能生成合成服务。详细内容参见[人工智能生成合成内容标识常见问题](https://developer.huawei.com/consumer/cn/doc/app/50111-10)。
 

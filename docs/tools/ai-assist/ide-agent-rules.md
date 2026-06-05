@@ -1,7 +1,9 @@
 ---
 title: "规则（Rules）配置"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 规则（Rules）配置
 

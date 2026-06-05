@@ -4,6 +4,7 @@ title: "导入Sample时，提示连接Gitee超时"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-2
 ---
 
+
 **问题现象**
 
 导入Sample时，如果连接gitee.com的443端口超时，会提示“Failed to connect to gitee.com port 443: Time out”。

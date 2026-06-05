@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API接口进行ArrayBuffer相关开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-arraybuffer
+format: md
 ---
+
 
 ## 简介
 

@@ -4,6 +4,7 @@ title: "Native侧如何通过char指针构造ArrayBuffer数组"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-59
 ---
 
+
 可以通过napi\_create\_arraybuffer接口实现。
 
 ```

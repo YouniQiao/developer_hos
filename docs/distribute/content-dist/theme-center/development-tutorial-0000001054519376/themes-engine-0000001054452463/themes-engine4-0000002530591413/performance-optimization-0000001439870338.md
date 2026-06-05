@@ -2,7 +2,9 @@
 title: "性能优化"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/performance-optimization-0000001439870338
+format: md
 ---
+
 
 # 性能优化
 

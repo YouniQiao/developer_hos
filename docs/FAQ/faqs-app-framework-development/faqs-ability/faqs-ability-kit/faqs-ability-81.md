@@ -4,6 +4,7 @@ title: "如何查询应用进程的pid信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-81
 ---
 
+
 可以通过以下两种方式获取：
 
 * 方式一：通过以下命令查询应用进程信息。

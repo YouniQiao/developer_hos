@@ -1,7 +1,9 @@
 ---
 title: "创建NDK工程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-with-ndk
+format: md
 ---
+
 
 下面通过DevEco Studio的NDK工程模板，来演示如何创建一个NDK工程。
 

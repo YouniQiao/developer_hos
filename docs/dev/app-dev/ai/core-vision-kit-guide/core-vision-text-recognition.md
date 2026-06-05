@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通用文字识别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-text-recognition
+format: md
 ---
+
 
 ## 适用场景
 

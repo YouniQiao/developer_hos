@@ -1,7 +1,9 @@
 ---
 title: "示例代码"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-demo-0000002238448026
+format: md
 ---
+
 
 为了帮助您更好的开发，我们提供了AppGallery Connect API示例代码。您可以参考Demo工程中的示例代码编写您的应用程序。
 

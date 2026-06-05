@@ -1,7 +1,9 @@
 ---
 title: "JSVM-API调试&定位"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-debugger-cpuprofiler-heapsnapshot
+format: md
 ---
+
 
 JSVM，即标准JS引擎，是严格遵守ECMAScript规范的JavaScript代码执行引擎。详情参考：[JSVM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm)。
 

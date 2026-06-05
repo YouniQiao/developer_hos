@@ -1,7 +1,9 @@
 ---
 title: "Node-API典型使用场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-scenarios
+format: md
 ---
+
 
 * **[使用Node-API接口进行异步任务开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-asynchronous-task)**
 * **[使用Node-API接口进行线程安全开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety)**

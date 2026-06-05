@@ -1,7 +1,9 @@
 ---
 title: "@correctness/redundant-dependency-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/redundant-dependency-check
 

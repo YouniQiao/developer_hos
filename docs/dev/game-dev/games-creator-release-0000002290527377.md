@@ -1,7 +1,9 @@
 ---
 title: "构建发布工程"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-creator-release-0000002290527377
+format: md
 ---
+
 
 完成游戏适配后，需从Cocos Creator引擎中构建发布工程。此处以Cocos Creator 2.4.15引擎为例。
 

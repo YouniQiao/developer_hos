@@ -1,7 +1,9 @@
 ---
 title: "后台硬件资源使用"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-hardware
+format: md
 ---
+
 
 # 后台硬件资源使用
 

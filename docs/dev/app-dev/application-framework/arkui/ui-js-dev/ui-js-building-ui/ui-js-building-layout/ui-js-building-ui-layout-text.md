@@ -1,7 +1,9 @@
 ---
 title: "添加标题行和文本区域"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-text
+format: md
 ---
+
 
 实现标题和文本区域最常用的是基础组件text。text组件用于展示文本，可以设置不同的属性和样式，文本内容需要写在标签内容区，完整属性和样式信息请参考[text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-text)。在页面中插入标题和文本区域的示例如下：
 

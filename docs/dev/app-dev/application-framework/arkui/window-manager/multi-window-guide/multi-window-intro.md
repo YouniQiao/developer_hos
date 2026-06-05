@@ -1,7 +1,9 @@
 ---
 title: "智慧多窗简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro
+format: md
 ---
+
 
 智慧多窗是一种多任务处理解决方案，它允许用户在同一时间、同一屏幕上以悬浮窗、分屏或全景多窗的方式同时运行多个应用窗口。在智慧多窗的显示模式下，用户可以根据自己的需求，合理安排应用窗口的位置和大小。
 

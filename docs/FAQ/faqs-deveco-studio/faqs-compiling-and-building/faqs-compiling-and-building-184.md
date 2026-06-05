@@ -4,6 +4,7 @@ title: "编译报错“Cannot read properties of undefined (reading 'split')”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-184
 ---
 
+
 * 场景一：
 
   **问题现象**

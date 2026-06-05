@@ -2,7 +2,9 @@
 title: 即时操作
 sidebar_label: 即时操作
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component_snackbar-0000002340726169
+format: md
 ---
+
 # 即时操作
 
 即时操作组件位于屏幕底部或固定位置，用于提供操作结果反馈、状态变更提示或轻量级通知。该组件支持自动关闭或手动关闭功能，确保不影响页面其他操作。

@@ -1,7 +1,9 @@
 ---
 title: "@security/no-unsafe-dsa-key"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-unsafe-dsa-key
 

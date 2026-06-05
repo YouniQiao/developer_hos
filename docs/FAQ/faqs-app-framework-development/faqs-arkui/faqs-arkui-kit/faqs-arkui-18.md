@@ -1,7 +1,9 @@
 ---
 title: "如何解决Web与List的嵌套滑动冲突"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-18
+format: md
 ---
+
 
 可以设置组件的hitTestBehavior来避免这种情况，参考代码如下：
 

@@ -1,7 +1,9 @@
 ---
 title: "如何使用ErrorManager捕获异常"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-60
+format: md
 ---
+
 
 ErrorManager提供错误观察器的注册和注销。
 

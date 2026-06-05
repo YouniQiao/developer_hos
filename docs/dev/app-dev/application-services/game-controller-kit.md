@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Game Controller Kit（游戏控制器服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-kit
+format: md
 ---
+
 
 * **[Game Controller Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-introduction)**
 * **[监听设备上下线（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-monitor-device)**

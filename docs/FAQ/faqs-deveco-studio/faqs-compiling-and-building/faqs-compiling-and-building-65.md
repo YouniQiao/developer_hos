@@ -4,6 +4,7 @@ title: "如何定制构建多目标产物"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-65
 ---
 
+
 **问题场景：**
 
 根据不同的部署环境、目标人群和运行环境，定制构建多目标产物，将同一应用定制为不同版本。

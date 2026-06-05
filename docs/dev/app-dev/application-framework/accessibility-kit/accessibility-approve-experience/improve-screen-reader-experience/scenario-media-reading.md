@@ -1,7 +1,9 @@
 ---
 title: "插画/视频/动画的播报场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-media-reading
+format: md
 ---
+
 
 ## 开发实例1
 

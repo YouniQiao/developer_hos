@@ -1,7 +1,9 @@
 ---
 title: "元服务程序包基础知识"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-package-basics
+format: md
 ---
+
 
 元服务的程序包结构与传统[应用程序包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-stage)相同，也是以App Pack（.app）形式发布到应用市场。
 

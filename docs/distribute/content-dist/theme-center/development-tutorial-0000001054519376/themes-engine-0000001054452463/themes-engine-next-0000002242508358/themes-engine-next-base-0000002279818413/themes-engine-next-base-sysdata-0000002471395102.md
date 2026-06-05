@@ -2,7 +2,9 @@
 title: "数据开放：系统数据开放"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-sysdata-0000002471395102
+format: md
 ---
+
 
 # 数据开放：系统数据开放
 

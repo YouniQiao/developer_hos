@@ -2,8 +2,10 @@
 title: 应用状态栏接入
 sidebar_label: 应用状态栏接入
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/statusbar-0000002319710910
+format: md
 ---
-{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用<MergedTable>组件还原 */}
+
+\{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 应用接入状态栏
 

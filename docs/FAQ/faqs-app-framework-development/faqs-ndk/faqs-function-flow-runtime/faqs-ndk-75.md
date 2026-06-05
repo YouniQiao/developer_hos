@@ -4,6 +4,7 @@ title: "Native侧的napi_env是否支持延迟调用或者异步调用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-75
 ---
 
+
 **问题现象**
 
 1. 对于同一个ArkTS线程对应的c++对象，将env保存起来，并在一段时间后使用，是否存在潜在问题？

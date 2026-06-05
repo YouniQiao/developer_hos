@@ -4,6 +4,7 @@ title: "如何避免使用AppAnalyzer后使用git提示需要版本化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-11
 ---
 
+
 **问题现象**
 
 1. 使用AppAnalyzer进行应用/元服务体检后，使用git提示需要版本化。

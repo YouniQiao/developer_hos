@@ -1,7 +1,9 @@
 ---
 title: "如何获取底部手势横条的高度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-249
+format: md
 ---
+
 
 可以使用window的[getWindowAvoidArea()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-uiextension#getwindowavoidarea)方法获取内容规避区域，需设置type为AvoidAreaType.TYPE\_NAVIGATION\_INDICATOR。
 

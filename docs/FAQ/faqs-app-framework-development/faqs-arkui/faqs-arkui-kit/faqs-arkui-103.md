@@ -4,6 +4,7 @@ title: "Button组件如何设置渐变背景色"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-103
 ---
 
+
 将Button的默认背景色设置为全透明，以确保渐变颜色正常显示。参考代码如下：
 
 ```

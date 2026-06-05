@@ -1,7 +1,9 @@
 ---
 title: "组队匹配"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-groupmatch-js-0000002395190489
+format: md
 ---
+
 
 * **[创建队伍](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-creategroup-js-0000002361670448)**
 * **[加入队伍](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-joingroup-js-0000002395350389)**

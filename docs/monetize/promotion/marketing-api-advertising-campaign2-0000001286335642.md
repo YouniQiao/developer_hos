@@ -2,7 +2,9 @@
 title: "查询计划"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-campaign2-0000001286335642
+format: md
 ---
+
 # 查询计划
 
 您通过本接口查询计划。

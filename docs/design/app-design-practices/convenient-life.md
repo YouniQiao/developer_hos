@@ -2,7 +2,9 @@
 title: 便捷生活类
 sidebar_label: 便捷生活类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/convenient-life-0000001957252465
+format: md
 ---
+
 # 便捷生活类
 
 便捷生活类场景主要包括点餐、观影、看攻略等。此类场景在宽屏上可以让用户拥有更高效和流畅的使用体验。

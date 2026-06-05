@@ -4,6 +4,7 @@ title: "如何实现页面加载的loading效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-233
 ---
 
+
 使用Stack堆叠组件和LoadingProgress加载组件实现页面首次加载时的等待效果。参考代码如下：
 
 ```

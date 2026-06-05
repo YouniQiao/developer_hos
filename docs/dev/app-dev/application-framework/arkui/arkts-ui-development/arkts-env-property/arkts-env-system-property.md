@@ -1,7 +1,9 @@
 ---
 title: "@Env：环境变量"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-env-system-property
+format: md
 ---
+
 
 在多设备开发的场景中，开发者可以使用[@Env](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-env-system-property)装饰器监听系统环境变量的改变，并根据系统环境变量来进行相应的场景判断，以减少不同设备间的适配逻辑和重复开发。
 

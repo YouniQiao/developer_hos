@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "申请相机开发的权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation
+format: md
 ---
+
 
 相机应用开发的主要流程包含开发准备、设备输入、会话管理、预览、拍照和录像等。
 

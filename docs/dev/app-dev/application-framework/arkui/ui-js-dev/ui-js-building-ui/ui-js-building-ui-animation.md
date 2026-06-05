@@ -1,7 +1,9 @@
 ---
 title: "动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-animation
+format: md
 ---
+
 
 动画分为[静态动画](#静态动画)和[连续动画](#连续动画)。
 

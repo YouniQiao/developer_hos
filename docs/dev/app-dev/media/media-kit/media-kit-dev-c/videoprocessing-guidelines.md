@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "视频处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/videoprocessing-guidelines
+format: md
 ---
+
 
 * **[视频缩放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/generate-super-resolution-video)**
 * **[视频动态元数据生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/generate-video-dynamic-metadata)**

@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-no-state-var-access-in-loop"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-no-state-var-access-in-loop
 

@@ -1,7 +1,9 @@
 ---
 title: "国家码"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-countrycode-0000002236201362
+format: md
 ---
+
 
 | 站点 | 国家或地区（中文） | 国家码  两位字母 |
 | --- | --- | --- |

@@ -2,7 +2,9 @@
 title: "变量：自定义变量&lt;Var&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-var-0000002504274963
+format: md
 ---
+
 
 # 变量：自定义变量&lt;Var&gt;
 

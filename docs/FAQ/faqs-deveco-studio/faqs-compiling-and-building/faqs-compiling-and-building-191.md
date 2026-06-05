@@ -4,6 +4,7 @@ title: "新建工程/模块无法加载ets目录下的资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-191
 ---
 
+
 **问题现象**
 
 新建工程，通过ImageBitmap或其他组件使用src/main/ets目录中的本地图片无法加载。

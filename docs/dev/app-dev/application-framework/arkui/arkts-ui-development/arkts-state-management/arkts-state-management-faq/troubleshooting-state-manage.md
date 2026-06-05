@@ -1,7 +1,9 @@
 ---
 title: "状态变量改变不触发组件刷新问题常用定位方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/troubleshooting-state-manage
+format: md
 ---
+
 
 在声明式UI编程框架中，状态管理的主要职责是：当状态变量改变时，触发其关联组件的刷新。所以在使用状态变量的过程中，最常见的问题就是组件不刷新。本文主要针对开发者在使用状态变量时遇到的不刷新问题，阐述以下两个方面。
 

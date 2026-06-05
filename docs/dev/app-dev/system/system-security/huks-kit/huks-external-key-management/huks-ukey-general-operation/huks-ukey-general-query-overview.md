@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通用查询介绍及规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-query-overview
+format: md
 ---
+
 
 HUKS提供属性查询接口，支持从外部密钥管理执行通用查询操作，例如Ukey设备信息、PIN码信息等。
 

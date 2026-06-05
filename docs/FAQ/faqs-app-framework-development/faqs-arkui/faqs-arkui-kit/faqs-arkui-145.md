@@ -4,6 +4,7 @@ title: "控制中心的下拉背景实时模糊是如何实现的"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-145
 ---
 
+
 实时模糊，就是通过状态变量实时改变模糊值。实现模糊可以通过组件的通用属性[backdropBlur](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backdropblur)来设置组件的模糊效果。参考代码如下：
 
 ```

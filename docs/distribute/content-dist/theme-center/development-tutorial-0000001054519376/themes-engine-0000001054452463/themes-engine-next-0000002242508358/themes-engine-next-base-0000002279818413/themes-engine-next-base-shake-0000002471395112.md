@@ -2,7 +2,9 @@
 title: "适配功能：摇一摇&lt;Shake&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-shake-0000002471395112
+format: md
 ---
+
 
 # 适配功能：摇一摇&lt;Shake&gt;
 

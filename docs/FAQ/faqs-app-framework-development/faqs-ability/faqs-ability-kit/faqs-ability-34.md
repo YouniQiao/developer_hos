@@ -4,6 +4,7 @@ title: "多个UIAbility是运行在一个进程还是多个进程中？三方应
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-34
 ---
 
+
 **PC/2in1设备**
 
 * 不同模块的UIAbility运行在不同的进程中。

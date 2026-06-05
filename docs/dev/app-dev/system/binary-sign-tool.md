@@ -1,7 +1,9 @@
 ---
 title: "二进制签名工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/binary-sign-tool
+format: md
 ---
+
 
 Binary Sign Tool（二进制签名工具），用于对二进制文件进行代码签名，支持通过命令行的方式对标准ELF文件进行代码签名或打印已签名ELF的权限、证书信息。
 

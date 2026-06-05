@@ -1,7 +1,9 @@
 ---
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-prepare
+format: md
 ---
+
 
 在阅读本章节前，请先参考“[元服务开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation)”完成基本准备工作，再继续进行以下开发活动。
 

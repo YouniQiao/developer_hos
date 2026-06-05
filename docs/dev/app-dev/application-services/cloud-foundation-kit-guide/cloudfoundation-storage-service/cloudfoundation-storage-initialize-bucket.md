@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "初始化存储实例"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-initialize-bucket
+format: md
 ---
+
 
 ## 约束与限制
 

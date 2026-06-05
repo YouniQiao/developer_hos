@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过延迟链接跳转至应用详情页"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -2,7 +2,9 @@
 title: "创建推广任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ha-create-task-0000001348575585
+format: md
 ---
+
 # 创建推广任务
 
 在创建推广任务时归因方式选择“华为分析监测”，并使用HA数据回传。

@@ -4,6 +4,7 @@ title: "如何管理JSVM_CallbackStruct生命周期"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-1
 ---
 
+
 **问题现象**
 
 1. 使用 OH\_JSVM\_CreateFunction 创建的 JavaScript 函数在调用时导致应用崩溃。

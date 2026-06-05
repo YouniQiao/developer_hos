@@ -1,7 +1,9 @@
 ---
 title: "如何解决第三方包require语句报错"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-125
+format: md
 ---
+
 
 **问题现象**
 

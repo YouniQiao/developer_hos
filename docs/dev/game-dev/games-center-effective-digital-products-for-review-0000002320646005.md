@@ -1,7 +1,9 @@
 ---
 title: "提交已生效类型的数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-effective-digital-products-for-review-0000002320646005
+format: md
 ---
+
 
 ## **提交单个数字商品**
 

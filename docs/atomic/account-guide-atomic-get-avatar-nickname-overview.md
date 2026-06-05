@@ -1,7 +1,9 @@
 ---
 title: "获取头像昵称概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-avatar-nickname-overview
+format: md
 ---
+
 
 当元服务需要获取用户头像昵称时，可使用下述能力：
 

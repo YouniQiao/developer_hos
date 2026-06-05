@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "来电横幅无法拉起"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-faq-1
+format: md
 ---
+
 
 **问题现象**
 

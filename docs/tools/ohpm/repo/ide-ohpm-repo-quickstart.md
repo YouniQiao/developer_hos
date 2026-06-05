@@ -1,6 +1,8 @@
 ---
 title: "快速开始"
+format: md
 ---
+
 
 # 快速开始
 
@@ -173,7 +175,7 @@ ohpm install @ohos/lottie --registry <配置的ohpm-repo私仓服务地址>/repo
 
      动态共享包HSP包不能直接发布在ohpm-repo内，需要先转换为.tgz包，转换方法见：[编译HSP模块](./ide-hsp#section1833373964217)。TGZ包的发布流程同HAR一致。
 
-     执行 ''ohpm publish ``<TGZ包路径>``'' 命令发布TGZ包，`< TGZ 包路径>` 指向的文件后缀需为.tgz文件的具体路径。例如执行以下命令：
+     执行 ''ohpm publish ``<TGZ包路径>``'' 命令发布TGZ包，`\< TGZ 包路径\>` 指向的文件后缀需为.tgz文件的具体路径。例如执行以下命令：
 
      ```
      ohpm config set publish_registry <ohpm-repo私仓管理地址>/repos/ohpm

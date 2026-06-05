@@ -1,7 +1,9 @@
 ---
 title: "IPC Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-overview
+format: md
 ---
+
 
 ## 基本概念
 

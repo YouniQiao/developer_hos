@@ -1,7 +1,9 @@
 ---
 title: "分析Ability页面切换"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-performance-ability-switch-0000002236493750
+format: md
 ---
+
 
 “Ability页面切换”页面为开发者提供Ability页面切换耗时的整体分布、应用版本Top5分布、设备Top5分布与出现慢切换的页面列表等指标查询能力，帮助开发者发现应用中Ability页面切换慢的问题。
 

@@ -1,7 +1,9 @@
 ---
 title: "动画帧"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-frame
+format: md
 ---
+
 
 ## 请求动画帧
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "增强连接开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/linkenhance_development-guide
+format: md
 ---
+
 
 ## 简介
 

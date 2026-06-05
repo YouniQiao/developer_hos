@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-non-null-asserted-optional-chain"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-non-null-asserted-optional-chain
 

@@ -1,7 +1,9 @@
 ---
 title: "UI开发 (兼容JS的类Web开发范式)概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-overview
+format: md
 ---
+
 
 兼容JS的类Web开发范式的方舟开发框架，采用经典的[兼容JS的类Web开发范式API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkui-js-full-comp)、CSS、JavaScript三段式开发方式。使用HML标签文件进行布局搭建，使用CSS文件进行样式描述，使用JavaScript文件进行逻辑处理。UI组件与数据之间通过单向数据绑定的方式建立关联，当数据发生变化时，UI界面自动触发更新。此种开发方式更接近Web前端开发者的使用习惯，快速将已有的Web应用改造成方舟开发框架应用。主要适用于界面较为简单的中小型应用开发。
 

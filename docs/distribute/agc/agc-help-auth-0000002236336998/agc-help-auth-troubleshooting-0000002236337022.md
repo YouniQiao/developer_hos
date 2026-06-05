@@ -1,7 +1,9 @@
 ---
 title: "异常处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-troubleshooting-0000002236337022
+format: md
 ---
+
 
 在某些情况下，程序无法按预想的情况正常执行，而是会发生异常。您可以根据[AGCAuthError](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-agcautherror-0000002273781653)实例对象或者AGCError实例对象返回的错误码定制实现自己的异常处理方案，给用户带来更友好体验。
 

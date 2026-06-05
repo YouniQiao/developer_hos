@@ -1,7 +1,9 @@
 ---
 title: "如何从图库选择图片并上传到服务器"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-22
+format: md
 ---
+
 
 上传图片到服务器需要申请网络权限：ohos.permission.INTERNET。
 

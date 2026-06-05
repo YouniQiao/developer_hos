@@ -1,7 +1,9 @@
 ---
 title: "如何读取rawfile中的xml文件并转化为string类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-3
+format: md
 ---
+
 
 使用resourceManager的getRawFileContent接口获取xml数据。使用util工具函数中的decodeToString接口将数据转化为string类型。
 

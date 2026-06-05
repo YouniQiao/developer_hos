@@ -4,6 +4,7 @@ title: "使用Canvas如何实现部分区域镂空的效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-346
 ---
 
+
 1. 利用[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvas)绘制镂空圆形；
 2. 使用Stack组件在需要透明展示的区域上叠加。
 

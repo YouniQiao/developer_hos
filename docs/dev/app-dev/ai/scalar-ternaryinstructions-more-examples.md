@@ -1,7 +1,9 @@
 ---
 title: "更多样例"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scalar-ternaryinstructions-more-examples
+format: md
 ---
+
 
 ## 样例模板
 

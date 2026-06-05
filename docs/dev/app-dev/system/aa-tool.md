@@ -1,7 +1,9 @@
 ---
 title: "aa工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool
+format: md
 ---
+
 
 Ability assistant（Ability助手，简称为aa），是用于启动应用和启动测试用例的工具，为开发者提供基本的应用调试和测试能力，例如启动应用组件、强制停止进程、打印应用组件相关信息等。
 
@@ -337,7 +339,7 @@ aa test -b <bundleName> [-m <module-name>] [-p <package-name>] [-s class <test-c
 | -s size | 可选参数，指定要执行用例的用例规模。 |
 | -s testType | 可选参数，指定要执行用例的用例类型。 |
 | -s timeout | 可选参数，测试用例执行的超时时间（单位ms），默认为5000。 |
-| -s <any-key> | 可选参数，任意键值对。 |
+| -s \<any-key\> | 可选参数，任意键值对。 |
 | -w | 可选参数，指定测试运行时间（单位ms）。 |
 | -D | 可选参数，调试模式。 |
 
@@ -451,7 +453,7 @@ aa appdebug -b <bundleName> [-p]
 | --- | --- | --- |
 | -h/--help | - | 帮助信息。 |
 | -b/--bundlename | bundleName | 为指定应用设置等待调试状态。设置时，不会进行包名合法化的校验。 |
-| -p/--persist | - | 可选参数；持久化标志位，加入该参数，代表持续设置应用为等待调试状态，无论重启设备、重装应用都可以持续生效；不加入该参数，代表等待调试状态仅可以在重启设备前生效一次。需要和-b参数组合使用，例如：aa appdebug -b <bundleName> -p。 |
+| -p/--persist | - | 可选参数；持久化标志位，加入该参数，代表持续设置应用为等待调试状态，无论重启设备、重装应用都可以持续生效；不加入该参数，代表等待调试状态仅可以在重启设备前生效一次。需要和-b参数组合使用，例如：aa appdebug -b \<bundleName\> -p。 |
 | -c/--cancel | - | 取消等待调试状态。 |
 | -g/--get | - | 获取等待调试状态的应用包名和持久化信息。 |
 

@@ -4,6 +4,7 @@ title: "如何实现两层Tab嵌套滑动的效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-135
 ---
 
+
 **问题描述**
 
 在一级Tabs组件下嵌套二级Tabs时，如果二级Tabs的第一个页面左滑或最后一个页面右滑不能切换一级Tabs标签，可以采取以下方法解决：

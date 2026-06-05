@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何解决证书链不完整？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-14
+format: md
 ---
+
 
 如果开发者提供的证书在IAP服务内置信任库中查询不到，则该证书不被IAP信任，需要构造完整的信任链以被IAP信任。
 

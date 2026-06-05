@@ -1,7 +1,9 @@
 ---
 title: "HarmonyOS 5.0及以上"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332
+format: md
 ---
+
 
 HarmonyOS 5.0及以上的游戏如需实现实时语音、实时信令、语音消息、效果音播放、语音转文本功能，可以集成游戏多媒体服务SDK。该SDK仅支持基于Stage应用模型进行应用开发，具体请参见[应用模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-models#应用模型的构成要素)。
 

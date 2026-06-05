@@ -1,7 +1,9 @@
 ---
 title: "组件复用迁移"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-reusable
+format: md
 ---
+
 
 本文档主要介绍组件复用从V1向V2的迁移，涉及如下装饰器。
 

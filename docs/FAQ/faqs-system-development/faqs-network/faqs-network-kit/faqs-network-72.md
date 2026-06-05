@@ -4,6 +4,7 @@ title: "多种网络同时连接时如何优先使用wifi网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-72
 ---
 
+
 **问题现象**
 
 使用video组件加载网络视频，发现使用蓝牙网络时视频加载较慢，而WiFi网络较快，需要优先使用WiFi网络。

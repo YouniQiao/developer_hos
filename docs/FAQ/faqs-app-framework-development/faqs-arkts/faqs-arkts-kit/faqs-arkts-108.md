@@ -4,7 +4,8 @@ title: "如何通过key获取对象值"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-108
 ---
 
-ArkTS中不支持通过索引访问字段，要使用索引的话可以考虑Record<key, value>，参考代码如下：
+
+ArkTS中不支持通过索引访问字段，要使用索引的话可以考虑Record\<key, value\>，参考代码如下：
 
 ```
 class Student {

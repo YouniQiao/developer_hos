@@ -1,7 +1,9 @@
 ---
 title: "video"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-video
+format: md
 ---
+
 
 用于播放视频文件并控制其播放状态的组件。
 

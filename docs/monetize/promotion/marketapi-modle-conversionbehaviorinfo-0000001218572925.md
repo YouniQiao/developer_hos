@@ -2,7 +2,9 @@
 title: "ConversionBehaviorInfo"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-conversionbehaviorinfo-0000001218572925
+format: md
 ---
+
 # ConversionBehaviorInfo
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

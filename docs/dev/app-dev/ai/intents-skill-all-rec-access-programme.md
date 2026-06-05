@@ -1,7 +1,9 @@
 ---
 title: "接入方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-access-programme
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-access-introduction)**
 * **[任务执行类场景方案（配置文件接入方式）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-configuration)**

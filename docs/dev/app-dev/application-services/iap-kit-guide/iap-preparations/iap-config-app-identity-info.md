@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "配置应用身份信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-app-identity-info
+format: md
 ---
+
 
 ## bundleName配置
 

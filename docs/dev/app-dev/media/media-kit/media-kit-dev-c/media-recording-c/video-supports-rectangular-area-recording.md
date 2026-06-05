@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "屏幕录制支持矩形区域录制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-supports-rectangular-area-recording
+format: md
 ---
+
 
 ## 基础概念
 

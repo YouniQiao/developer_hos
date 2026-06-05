@@ -1,7 +1,9 @@
 ---
 title: "告警通知"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-alarm-notice-0000002240103334
+format: md
 ---
+
 
 由于告警级别不同，系统发送告警通知时的接收人角色不同，故三种级别的告警通知信息会有所不同。
 

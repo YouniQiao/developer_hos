@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "时域AI超分"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-ai-temporal-upscaling
+format: md
 ---
+
 
 从6.0.0(20) 版本开始，新增支持OpenGL ES协议。
 

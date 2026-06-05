@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "游戏接入秒级启动后无法热更应该如何处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-10
+format: md
 ---
+
 
 **问题原因**：秒级启动是基于游戏上次退出的状态下进行的镜像恢复，因此往往会跳过游戏引擎启动过程中的一些场景，例如游戏资源加载和游戏资源更新环节。
 

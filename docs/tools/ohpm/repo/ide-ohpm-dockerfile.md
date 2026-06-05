@@ -1,6 +1,8 @@
 ---
 title: "基于Dockerfile部署ohpm-repo私仓"
+format: md
 ---
+
 
 # 基于Dockerfile部署ohpm-repo私仓
 

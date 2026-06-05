@@ -4,6 +4,7 @@ title: "如何获取Text组件中文字的宽度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-57
 ---
 
+
 使用@ohos.measure中的measureText()方法计算指定文本单行布局下的宽度。具体可参考如下代码：
 
 ```

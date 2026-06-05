@@ -1,7 +1,9 @@
 ---
 title: "Cpp Crash（进程崩溃）检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines
+format: md
 ---
+
 
 ## 简介
 
@@ -768,7 +770,7 @@ Registers:
 
 | 原始栈帧内容 | 标准化后栈帧内容 |
 | --- | --- |
-| #02 pc 0005ae00 /system/lib/platformsdk/libace\_napi.z.so(panda::JSValueRef ArkNativeFunctionCallBack<true>(panda::JsiRuntimeCallInfo\*)+272)(bc1c64aabbe5c7d4db2282a6137443e1) | /system/lib/platformsdk/libace\_napi.z.so(panda::JSValueRef ArkNativeFunctionCallBack<true>(panda::JsiRuntimeCallInfo\*)+272) |
+| #02 pc 0005ae00 /system/lib/platformsdk/libace\_napi.z.so(panda::JSValueRef ArkNativeFunctionCallBack\<true\>(panda::JsiRuntimeCallInfo\*)+272)(bc1c64aabbe5c7d4db2282a6137443e1) | /system/lib/platformsdk/libace\_napi.z.so(panda::JSValueRef ArkNativeFunctionCallBack\<true\>(panda::JsiRuntimeCallInfo\*)+272) |
 
 按以下步骤处理：
 
@@ -778,7 +780,7 @@ b. 去除PC偏移和BuildID；
 
 c. 保留文件路径（如 /system/lib/platformsdk/libace\_napi.z.so）；
 
-d. 保留函数完整签名（如 panda::JSValueRef ArkNativeFunctionCallBack<true>(panda::JsiRuntimeCallInfo\*)+272)，括号内的内容，含类名、函数名、参数，包括 const、参数类型等，若日志中已解析）。
+d. 保留函数完整签名（如 panda::JSValueRef ArkNativeFunctionCallBack\<true\>(panda::JsiRuntimeCallInfo\*)+272)，括号内的内容，含类名、函数名、参数，包括 const、参数类型等，若日志中已解析）。
 
 若Native栈帧存在仅有二进制文件名而没有函数名时，可选择保留PC的偏移值与文件路径：
 
@@ -865,7 +867,7 @@ onPageShow (sample|sample|1.0.0|src/main/ets/pages/Index.ts:381:36)
 
 | 原始故障线程栈 | 最终聚类特征（调用顺序从上到下） |
 | --- | --- |
-| #00 pc 000e8400 /system/lib/ld-musl-arm.so.1  (raise+176)(a40044d0acb68107cfc4adb5049c0725)  #01 pc 00008cdc /data/storage/el1bundle/libs/arm64/libsample.so  (8b74cdc906ea6b2eba95d891bc91c72a)  #02 pc 0005ae00 /system/lib/platformsdk/libace\_napi.z.so  (panda::JSValueRef ArkNativeFunctionCallBack<true>(panda::JsiRuntimeCallInfo\*)+272)(bc1c64aabbe5c7d4db2282a6137443e1)  #03 pc 00de3efc /system/lib/module/arkcompiler/stub.an(RTStub\_PushCallArgsAndDispatchNative+44)  #04 pc 00448dd4 /system/lib/module/arkcompiler/stub.an(BCStub\_HandleCallthis0Imm8V8StwCopy+372)  #05 at triggerCrash (sample|sample|1.0.0|src/main/ets/pages/CppCrash.ts:49:25)  #06 at onPageShow (sample|sample|1.0.0|src/main/ets/pages/Index.ts:381:36)  #07 pc 001e5c8c /system/lib/platformsdk/libark\_jsruntime.so(ce0b05d90b9fae02e7abf8e9f1e5a0f3) | 00008cdc /data/storage/el1bundle/libs/arm64/libsample.so  triggerCrash (sample|sample|1.0.0|src/main/ets/pages/CppCrash.ts:49:25)  onPageShow (sample|sample|1.0.0|src/main/ets/pages/Index.ts:381:36) |
+| #00 pc 000e8400 /system/lib/ld-musl-arm.so.1  (raise+176)(a40044d0acb68107cfc4adb5049c0725)  #01 pc 00008cdc /data/storage/el1bundle/libs/arm64/libsample.so  (8b74cdc906ea6b2eba95d891bc91c72a)  #02 pc 0005ae00 /system/lib/platformsdk/libace\_napi.z.so  (panda::JSValueRef ArkNativeFunctionCallBack\<true\>(panda::JsiRuntimeCallInfo\*)+272)(bc1c64aabbe5c7d4db2282a6137443e1)  #03 pc 00de3efc /system/lib/module/arkcompiler/stub.an(RTStub\_PushCallArgsAndDispatchNative+44)  #04 pc 00448dd4 /system/lib/module/arkcompiler/stub.an(BCStub\_HandleCallthis0Imm8V8StwCopy+372)  #05 at triggerCrash (sample|sample|1.0.0|src/main/ets/pages/CppCrash.ts:49:25)  #06 at onPageShow (sample|sample|1.0.0|src/main/ets/pages/Index.ts:381:36)  #07 pc 001e5c8c /system/lib/platformsdk/libark\_jsruntime.so(ce0b05d90b9fae02e7abf8e9f1e5a0f3) | 00008cdc /data/storage/el1bundle/libs/arm64/libsample.so  triggerCrash (sample|sample|1.0.0|src/main/ets/pages/CppCrash.ts:49:25)  onPageShow (sample|sample|1.0.0|src/main/ets/pages/Index.ts:381:36) |
 
 开发者通过比对多份故障日志提取出的聚类特征，对Cpp Crash故障问题进行分类统计。
 
@@ -886,7 +888,7 @@ onPageShow (sample|sample|1.0.0|src/main/ets/pages/Index.ts:381:36)
 
 **编译选项开启方法**
 
-以Cmake为例，在CMakeList.txt中添加set(CMAKE\_CXX\_FLAGS "${CMAKE\_CXX\_FLAGS} -fno-omit-frame-pointer -funwind-tables")。
+以Cmake为例，在CMakeList.txt中添加set(CMAKE\_CXX\_FLAGS "$\{CMAKE\_CXX\_FLAGS\} -fno-omit-frame-pointer -funwind-tables")。
 
 ### 应用发生SIGPIPE异常退出
 

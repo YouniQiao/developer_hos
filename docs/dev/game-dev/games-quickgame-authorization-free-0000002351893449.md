@@ -1,7 +1,9 @@
 ---
 title: "设置配置项"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-authorization-free-0000002351893449
+format: md
 ---
+
 
 ## 配置免授权登录
 

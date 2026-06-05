@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "打开APP Button"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-launchapp
+format: md
 ---
+
 
 ## 场景介绍
 

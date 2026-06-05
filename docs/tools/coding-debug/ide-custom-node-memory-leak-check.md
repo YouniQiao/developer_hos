@@ -1,7 +1,9 @@
 ---
 title: "@performance/custom-node-memory-leak-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/custom-node-memory-leak-check
 

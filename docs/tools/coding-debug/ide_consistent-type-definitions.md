@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/consistent-type-definitions"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/consistent-type-definitions
 

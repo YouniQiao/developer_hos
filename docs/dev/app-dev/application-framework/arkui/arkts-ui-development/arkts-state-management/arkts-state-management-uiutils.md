@@ -1,7 +1,9 @@
 ---
 title: "辅助接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-uiutils
+format: md
 ---
+
 
 * **[getTarget接口：获取状态管理框架代理前的原始对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-gettarget)**
 * **[makeObserved接口：将非观察数据变为可观察数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)**

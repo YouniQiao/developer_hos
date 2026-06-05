@@ -1,7 +1,9 @@
 ---
 title: "屏幕管理开发术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-terminology
+format: md
 ---
+
 
 屏幕管理开发主要围绕逻辑屏和物理屏两个核心概念进行。
 

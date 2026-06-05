@@ -1,7 +1,9 @@
 ---
 title: "UI显示异常调试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-debug
+format: md
 ---
+
 
 本章节主要介绍UI显示异常问题的调试方法，并结合案例讲解具体的解决步骤。
 

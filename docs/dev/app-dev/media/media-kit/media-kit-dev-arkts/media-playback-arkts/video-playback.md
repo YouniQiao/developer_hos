@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVPlayer播放视频(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback
+format: md
 ---
+
 
 当前提供两种视频播放开发的方案：
 

@@ -2,7 +2,9 @@
 title: "SDK隐私声明"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_data-security-0000001192665648
+format: md
 ---
+
 
 
 AGD Pro服务是由华为软件技术有限公司（以下简称“我们”或“华为”）面向应用开发者（以下简称“开发者”）提供安全可靠的用户认证系统开放能力及服务。

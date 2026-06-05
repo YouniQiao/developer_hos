@@ -1,7 +1,9 @@
 ---
 title: "PGD/OOP混合模式概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-hybrid-overview-0000002498501230
+format: md
 ---
+
 
 PGD混合模式用于桥接GameObject与Entity，实现游戏对象的高效复用。它负责统一管理Prefab、以及对应的Entity，支持开发者使用PGD框架对GameObject数据进行高效处理。主要涉及以下模块：
 

@@ -1,7 +1,9 @@
 ---
 title: "Function Flow Runtime C API"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-api-guideline-c
+format: md
 ---
+
 
 ## 任务管理
 
@@ -35,7 +37,7 @@ typedef struct {
 
 **描述**
 
-ffrt\_dependence\_t作用等同C++的dependence，ffrt\_deps\_t作用等同C++的std::vector<dependence>。
+ffrt\_dependence\_t作用等同C++的dependence，ffrt\_deps\_t作用等同C++的std::vector\<dependence\>。
 
 **样例**
 

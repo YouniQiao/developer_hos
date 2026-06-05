@@ -1,7 +1,9 @@
 ---
 title: "如何监听系统公共事件，如熄屏、亮屏、开机等"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit-5
+format: md
 ---
+
 
 CES（Common Event Service，公共事件服务）为应用程序提供订阅、发布和退订公共事件的能力。可以通过订阅系统公共事件来监听熄屏、亮屏和开机事件。开机事件使用“COMMON\_EVENT\_BOOT\_COMPLETED”来监听。
 

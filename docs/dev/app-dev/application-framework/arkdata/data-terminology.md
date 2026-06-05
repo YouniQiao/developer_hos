@@ -1,7 +1,9 @@
 ---
 title: "ArkData术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-terminology
+format: md
 ---
+
 
 ## WAL模式
 

@@ -1,7 +1,9 @@
 ---
 title: "如何使用SM3算法进行消息鉴别码计算"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-24
+format: md
 ---
+
 
 1. 设置算法，通过createMac接口生成消息鉴别码实例。
 2. 接收对称密钥，通过init接口初始化Mac。

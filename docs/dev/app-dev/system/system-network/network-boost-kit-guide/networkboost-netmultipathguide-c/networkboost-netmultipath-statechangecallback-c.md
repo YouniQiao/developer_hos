@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "多网状态监听(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-statechangecallback-c
+format: md
 ---
+
 
 从6.0.2(22)开始，支持多网状态监听。
 

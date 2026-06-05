@@ -1,7 +1,9 @@
 ---
 title: "集成SDK"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-csharp-0000002395350421
+format: md
 ---
+
 
 为了方便Unity开发者接入联机对战服务相关API，我们提供了C# SDK，支持实现匹配组局、消息同步、掉线重连、录像回放等功能。
 

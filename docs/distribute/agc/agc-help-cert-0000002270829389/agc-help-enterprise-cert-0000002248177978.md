@@ -1,7 +1,9 @@
 ---
 title: "申请企业应用发布证书"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-cert-0000002248177978
+format: md
 ---
+
 
 企业应用指为解决和支持企业内部各种业务需求而设计的软件工具和技术解决方案。 企业应用无需上架华为应用市场，可通过企业MDM应用以及离线安装器分发安装。
 

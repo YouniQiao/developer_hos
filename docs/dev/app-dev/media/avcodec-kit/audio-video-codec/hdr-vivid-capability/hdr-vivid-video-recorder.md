@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "HDR Vivid视频录制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-recorder
+format: md
 ---
+
 
 开发者可以调用本模块的Native API接口，实现在视频录制中支持HDR Vivid标准。
 

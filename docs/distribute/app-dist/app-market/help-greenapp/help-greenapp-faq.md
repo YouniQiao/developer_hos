@@ -2,7 +2,9 @@
 title: "绿色应用检测认证FAQ"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/help-greenapp-faq
+format: md
 ---
+
 # 华为绿色应用检测认证FAQ
 
 **[问题一]软件绿色联盟应用体验标准5.0是什么？**

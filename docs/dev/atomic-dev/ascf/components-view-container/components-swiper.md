@@ -1,7 +1,9 @@
 ---
 title: "swiper"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-swiper
+format: md
 ---
+
 
 滑块视图容器。其中只可放置swiper-item组件，否则会导致未定义的行为。
 

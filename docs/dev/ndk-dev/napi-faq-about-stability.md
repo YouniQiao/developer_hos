@@ -1,7 +1,9 @@
 ---
 title: "稳定性相关问题汇总"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-stability
+format: md
 ---
+
 
 ## 应用运行过程中出现高概率闪退怎么进行定位解决
 

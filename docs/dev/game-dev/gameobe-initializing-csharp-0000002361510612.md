@@ -1,7 +1,9 @@
 ---
 title: "初始化SDK"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-csharp-0000002361510612
+format: md
 ---
+
 
 进入房间前，需要先完成初始化联机对战SDK。
 

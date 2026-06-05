@@ -4,6 +4,7 @@ title: "如何申请多个长时任务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-4
 ---
 
+
 **问题现象**
 
 应用在后台运行多个任务，需申请多个长时任务。

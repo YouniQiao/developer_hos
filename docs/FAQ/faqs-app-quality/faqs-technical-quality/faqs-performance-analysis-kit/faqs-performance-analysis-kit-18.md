@@ -4,6 +4,7 @@ title: "如何查看应用是否为系统应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-18
 ---
 
+
 1. 连接设备。
 2. 执行以下命令打印日志（Bundle Name获取参考：[bundleManager.getBundleInfoForSelf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforself)）：
 

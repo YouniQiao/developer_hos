@@ -2,7 +2,9 @@
 title: "创建计划"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-campaign1-0000001338366185
+format: md
 ---
+
 # 创建计划
 
 您通过本接口创建计划。

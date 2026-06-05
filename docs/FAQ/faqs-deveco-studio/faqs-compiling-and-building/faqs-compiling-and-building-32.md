@@ -4,6 +4,7 @@ title: "编译报错“(is the command line too long?)”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-32
 ---
 
+
 **问题现象**
 
 Native工程编译报错，出现告警和报错信息。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "商户号绑定AppID"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-binding-appid-to-merc
+format: md
 ---
+
 
 ![](./img/541c0375.png)
 

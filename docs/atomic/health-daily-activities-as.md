@@ -1,7 +1,9 @@
 ---
 title: "日常活动"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-daily-activities-as
+format: md
 ---
+
 
 此数据记录用户在一小段时间内的日常活动数据。
 

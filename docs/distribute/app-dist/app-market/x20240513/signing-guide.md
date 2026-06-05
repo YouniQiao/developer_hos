@@ -2,7 +2,9 @@
 title: "AppGallery Connect 协议签署指南"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/signing-guide
+format: md
 ---
+
 # AppGallery Connect 协议签署指南
 
 ## **1、分发服务**

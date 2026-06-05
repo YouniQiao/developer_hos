@@ -2,7 +2,9 @@
 title: "商品管理国家/地区、语言、币种列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-countries-overview-0000002320771745
 has_merged_cells: true
+format: md
 ---
+
 
 ## 国家/地区、语言、币种
 

@@ -1,7 +1,9 @@
 ---
 title: "@security/no-unsafe-rsa-key"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-unsafe-rsa-key
 

@@ -2,7 +2,9 @@
 title: "删除应用"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-deleting-0000001239645257
+format: md
 ---
+
 
 # 删除应用
 

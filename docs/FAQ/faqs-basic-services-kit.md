@@ -4,6 +4,7 @@ title: "基础服务（Basics Service）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-basic-services-kit
 ---
 
+
 * **[如何获取系统时间戳](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-1)**
 * **[是否支持获取用户手机上所有的App列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-6)**
 * **[eventId一样时，Emitter多次调用on是否能注册多个回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-7)**

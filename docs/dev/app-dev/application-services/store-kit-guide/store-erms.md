@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "生态查询服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-erms
+format: md
 ---
+
 
 ## 场景介绍
 

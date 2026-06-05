@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "人体跟踪与骨骼关键点识别（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-body
+format: md
 ---
+
 
 ## 约束与限制
 

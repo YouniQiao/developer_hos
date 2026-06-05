@@ -1,7 +1,9 @@
 ---
 title: "特殊文本识别跳转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/special-text-recognition-redirection
+format: md
 ---
+
 
 ## 概述
 

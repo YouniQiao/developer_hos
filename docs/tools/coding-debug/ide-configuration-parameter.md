@@ -1,7 +1,9 @@
 ---
 title: "DevEco Studio配置参数列表"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # DevEco Studio配置参数列表
 

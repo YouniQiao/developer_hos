@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Core Vision Kit（基础视觉服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-kit-guide
+format: md
 ---
+
 
 * **[Core Vision Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction)**
 * **[通用文字识别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-text-recognition)**

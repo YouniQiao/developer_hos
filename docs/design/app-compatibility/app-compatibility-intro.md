@@ -1,7 +1,9 @@
 ---
 title: "关于应用兼容性的介绍"
 displayed_sidebar: appCompatibilitySidebar
+format: md
 ---
+
 
 # 关于应用兼容性的介绍
 

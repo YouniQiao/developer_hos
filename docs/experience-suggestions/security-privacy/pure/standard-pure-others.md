@@ -1,7 +1,9 @@
 ---
 title: "其他"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-others
+format: md
 ---
+
 
 # 其他
 

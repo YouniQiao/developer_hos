@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Audio Vivid解封装"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-avdemuxer
+format: md
 ---
+
 
 获取到Audio Vivid封装的mp4文件后，先调用解封装相关接口，选中音频轨，读取每一帧Audio Vivid，送入解码器中（可参考[Audio Vivid解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-audiodecoder)）。详细的API请参考[AVDemuxer模块](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avdemuxer)。
 

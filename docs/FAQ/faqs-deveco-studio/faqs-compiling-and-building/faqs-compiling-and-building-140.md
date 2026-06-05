@@ -4,6 +4,7 @@ title: "编译报错“Cannot resolved import statement”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-140
 ---
 
+
 **错误描述**
 
 在编译过程中，提示“Cannot resolved import statement”错误信息。

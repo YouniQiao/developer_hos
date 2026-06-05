@@ -1,7 +1,9 @@
 ---
 title: "应用UI生成"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 应用UI生成
 

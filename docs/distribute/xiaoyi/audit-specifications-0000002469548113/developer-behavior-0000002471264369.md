@@ -2,7 +2,9 @@
 title: "开发者行为"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/developer-behavior-0000002471264369
+format: md
 ---
+
 
 # 开发者行为
 

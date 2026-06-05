@@ -4,6 +4,7 @@ title: "本地化开发（Localization）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-kit
 ---
 
+
 * **[如何读取rawfile中的xml文件并转化为string类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-3)**
 * **[如何获取resource目录下的资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-4)**
 * **[如何将Resource资源对象转成string类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-7)**

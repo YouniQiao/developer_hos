@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVImageGenerator提取视频指定时间图像(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avimagegenerator
+format: md
 ---
+
 
 使用[AVImageGenerator](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avimagegenerator)可以实现从原始媒体资源中获取视频指定时间的缩略图，本开发指导将以获取一个视频资源的缩略图作为示例，向开发者讲解AVImageGenerator相关功能。
 

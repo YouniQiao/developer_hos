@@ -2,7 +2,9 @@
 title: "关联账号组"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-associated-group-0000002521616574
+format: md
 ---
+
 
 # 关联账号组
 

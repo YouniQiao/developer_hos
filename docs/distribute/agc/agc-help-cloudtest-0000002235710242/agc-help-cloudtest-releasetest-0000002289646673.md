@@ -1,7 +1,9 @@
 ---
 title: "上架测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-releasetest-0000002289646673
+format: md
 ---
+
 
 上架测试按照应用市场应用上架的标准进行测试，为您的应用上架提供质量保证。上架测试可对应用进行兼容性测试、稳定性测试、性能测试、功耗测试、UX测试和隐私测试。
 

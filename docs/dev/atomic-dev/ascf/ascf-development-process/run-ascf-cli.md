@@ -1,7 +1,9 @@
 ---
 title: "使用ASCF命令行工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/run-ascf-cli
+format: md
 ---
+
 
 ASCF为开发者提供了命令行工具，可用于控制ASCF工具的调试功能以及转换和编译行为。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "游戏登录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-gamelogin
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-introduction)**
 * **[网络游戏登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-network)**

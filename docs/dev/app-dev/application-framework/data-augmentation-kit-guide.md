@@ -1,7 +1,9 @@
 ---
 title: "Data Augmentation Kit（数据增强服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-kit-guide
+format: md
 ---
+
 
 * **[Data Augmentation Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-introduction)**
 * **[知识加工](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-knowledge-processing)**

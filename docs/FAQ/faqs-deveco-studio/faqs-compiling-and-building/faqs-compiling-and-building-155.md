@@ -4,6 +4,7 @@ title: "编译报错“Cannot depend on HAP modules outside of this project”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-155
 ---
 
+
 **错误描述**
 
 不要依赖项目外部的HAP模块。

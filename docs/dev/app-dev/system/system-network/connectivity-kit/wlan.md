@@ -1,7 +1,9 @@
 ---
 title: "WLAN"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wlan
+format: md
 ---
+
 
 * **[WLAN服务开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wlan-overview)**
 * **[P2P模式开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/p2p-development-guide)**

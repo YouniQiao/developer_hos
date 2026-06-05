@@ -2,7 +2,9 @@
 title: 按钮
 sidebar_label: 按钮
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-0000001929683228
+format: md
 ---
+
 # 按钮
 
 一种常用控件，点击可触发对应操作。开发相关描述请参考 [Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button) 文档。

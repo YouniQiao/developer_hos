@@ -2,7 +2,9 @@
 title: "获取Token"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-token-0000001238324536
+format: md
 ---
+
 # 获取Token
 
 ## 功能介绍
@@ -49,7 +51,7 @@ Content-Type: application/json
 | --- | --- | --- | --- |
 | access\_token | O | String | 认证Token，用于接口调用。  此参数只在获取成功时返回。 |
 | expires\_in | O | Long | access\_token的有效期，单位秒。您需要在过期时间到达时重新调用本接口获取新的access\_token。  此参数只在获取成功时返回。 |
-| ret | O | String(100) | 获取Token失败时的错误信息，包含错误码及描述信息的JSON字符串，格式为\{"code":*retcode*, "msg": "*description*"\}，retcode为错误码，description为错误码描述信息。 |
+| ret | O | String(100) | 获取Token失败时的错误信息，包含错误码及描述信息的JSON字符串，格式为\\{"code":*retcode*, "msg": "*description*"\\}，retcode为错误码，description为错误码描述信息。 |
 
 ## 响应示例
 

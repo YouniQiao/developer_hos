@@ -1,7 +1,9 @@
 ---
 title: "通过resourceManager.getStringResource接口获取HSP资源文件报“Resource id invalid”错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-18
+format: md
 ---
+
 
 **问题现象**
 

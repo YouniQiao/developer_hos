@@ -4,6 +4,7 @@ title: "如何在Native侧获取屏幕亮度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-10
 ---
 
+
 **问题详情**
 
 如何在native层获取屏幕亮度，请提供代码示例。

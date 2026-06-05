@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "新增系统服务进程不可访问后台用户数据路径列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-add-restricted-access-process-list
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为应用提供新增系统服务进程不可访问后台用
 
 | 接口名 | 描述 |
 | --- | --- |
-| [addRestrictedAccessBackgroundUserdataProcessList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#addrestrictedaccessbackgrounduserdataprocesslist)(userData: [UserDataEnum](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#userdataenum), processName: string, disallowPaths?: string[]): Promise<void> | 新增系统服务进程不可访问后台用户数据路径列表。使用Promise异步回调。 |
+| [addRestrictedAccessBackgroundUserdataProcessList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#addrestrictedaccessbackgrounduserdataprocesslist)(userData: [UserDataEnum](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#userdataenum), processName: string, disallowPaths?: string[]): Promise\<void\> | 新增系统服务进程不可访问后台用户数据路径列表。使用Promise异步回调。 |
 
 ## 开发步骤
 

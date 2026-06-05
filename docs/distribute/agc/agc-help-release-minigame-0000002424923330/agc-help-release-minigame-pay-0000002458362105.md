@@ -1,7 +1,9 @@
 ---
 title: "选择游戏内资费"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-pay-0000002458362105
+format: md
 ---
+
 
 若小游戏涉及付费，要求按照业务场景选择小游戏内的资费类型，用于标识玩家在小游戏内的付费类型。
 

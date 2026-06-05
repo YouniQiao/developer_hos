@@ -1,7 +1,9 @@
 ---
 title: "CPU高负载事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-cpu-usage-high-event
+format: md
 ---
+
 
 ## 简介
 
@@ -31,7 +33,7 @@ configEventPolicy接口说明
 
 | 接口名 | 描述 |
 | --- | --- |
-| configEventPolicy(policy: EventPolicy): Promise<void> | 事件的自定义配置参数策略。  **说明**：从API version 22开始，支持该接口。 |
+| configEventPolicy(policy: EventPolicy): Promise\<void\> | 事件的自定义配置参数策略。  **说明**：从API version 22开始，支持该接口。 |
 
 configEventPolicy接口参数设置
 

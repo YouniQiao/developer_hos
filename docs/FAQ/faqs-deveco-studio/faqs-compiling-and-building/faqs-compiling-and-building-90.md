@@ -4,6 +4,7 @@ title: "HarmonyOS  NDK上的llvm是否有更改，一些中间产物能否复用
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-90
 ---
 
+
 **问题描述**
 
 HarmonyOS NDK上的llvm是否有更改，一些中间产物能否复用？

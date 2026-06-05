@@ -1,7 +1,9 @@
 ---
 title: "本地查看"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-localview-0000002321517293
+format: md
 ---
+
 
 测试报告生成并保存到本地后，支持在报告列表中点击并在报告详情页查看相关数据。
 

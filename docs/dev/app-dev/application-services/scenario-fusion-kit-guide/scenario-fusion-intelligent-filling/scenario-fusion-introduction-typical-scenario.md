@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "典型场景展示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-typical-scenario
+format: md
 ---
+
 
 如下展示两种智能填充的典型场景。
 

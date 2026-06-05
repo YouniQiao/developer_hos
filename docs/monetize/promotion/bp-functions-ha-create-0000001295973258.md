@@ -2,7 +2,9 @@
 title: "新建数据源"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ha-create-0000001295973258
+format: md
 ---
+
 # 新建数据源
 
 ## 前提条件

@@ -4,6 +4,7 @@ title: "使用AVPlayer播放器概率性报错5400104、5400103要怎么处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-1
 ---
 
+
 **问题现象**
 
 5400103：媒体与其他模块（图形、音频、网络、HDI、相机）的数据交互出现问题，可能与服务器限流有关。

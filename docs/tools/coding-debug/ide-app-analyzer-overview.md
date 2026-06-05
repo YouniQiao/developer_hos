@@ -1,7 +1,9 @@
 ---
 title: "体检概述"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 体检概述
 

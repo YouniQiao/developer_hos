@@ -1,7 +1,9 @@
 ---
 title: "@performance/init-list-component"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/init-list-component
 

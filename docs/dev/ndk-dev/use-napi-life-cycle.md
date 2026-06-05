@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API接口进行生命周期相关开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-life-cycle
+format: md
 ---
+
 
 ## 简介
 

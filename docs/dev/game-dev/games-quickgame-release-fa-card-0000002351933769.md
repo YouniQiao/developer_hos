@@ -1,7 +1,9 @@
 ---
 title: "发布上架"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-release-fa-card-0000002351933769
+format: md
 ---
+
 
 在真机设备上反复验证功能后，您可以正式在AGC控制台上架元服务，并分发至服务中心，为用户提供对应的游戏服务。
 

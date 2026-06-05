@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc
+format: md
 ---
+
 
 请优先[开通地图服务](#开通地图服务)后，再参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作，然后再继续进行以下开发活动。
 

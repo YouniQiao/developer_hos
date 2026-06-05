@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-preparations
+format: md
 ---
+
 
 * **[注册企业账号](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-config-agc)**
 * **[管理归因角色](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-register)**

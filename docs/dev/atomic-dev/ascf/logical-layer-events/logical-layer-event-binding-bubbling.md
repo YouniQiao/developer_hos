@@ -1,7 +1,9 @@
 ---
 title: "事件绑定和冒泡"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-event-binding-bubbling
+format: md
 ---
+
 
 事件绑定的写法和组件的属性相同。
 

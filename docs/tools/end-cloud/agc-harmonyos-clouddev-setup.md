@@ -2,7 +2,9 @@
 
 title: "搭建开发环境"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 搭建开发环境
 

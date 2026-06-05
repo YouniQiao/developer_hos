@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Share Kit术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-terminology
+format: md
 ---
+
 
 ## Content area内容预览区
 

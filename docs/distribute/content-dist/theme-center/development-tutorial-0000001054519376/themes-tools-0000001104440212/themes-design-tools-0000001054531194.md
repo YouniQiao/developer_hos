@@ -2,7 +2,9 @@
 title: "制作工具下载"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-design-tools-0000001054531194
+format: md
 ---
+
 
 # 制作工具下载
 

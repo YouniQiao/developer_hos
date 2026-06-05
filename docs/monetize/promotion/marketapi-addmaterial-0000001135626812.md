@@ -2,7 +2,9 @@
 title: "新增素材"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-addmaterial-0000001135626812
+format: md
 ---
+
 # 新增素材
 
 ## 功能介绍
@@ -20,7 +22,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-a
 | --- | --- |
 | 承载协议 | HTTPS POST |
 | 接口方向 | 开发者服务器-&gt;推广平台服务端 |
-| 接口URL | https://connect-api.cloud.huawei.com/api/marketing-api/v2/material?customerId=\{customerId\} |
+| 接口URL | https://connect-api.cloud.huawei.com/api/marketing-api/v2/material?customerId=\\{customerId\\} |
 | 数据格式 | 请求消息：Content-Type: application/json  响应消息：Content-Type: application/json |
 
 ## 请求参数
@@ -30,7 +32,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-a
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
 | client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\\{access\_token\\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
 
 ![](./img/caution_3.0-zh-cn_5028b30a8082.png) 
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Screen Time Guard Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-introduction
+format: md
 ---
+
 
 在应用安全隐私保护前提下，为开发者提供屏幕使用时间管控、应用使用限制等开放能力，满足不同用户对时间管理多样化诉求，更好的服务终端用户。
 

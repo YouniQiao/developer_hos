@@ -1,7 +1,9 @@
 ---
 title: "查看检测结果"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-result-0000002304664338
+format: md
 ---
+
 
 实时语音、实时信令文本消息和语音消息内容送检后，您可在AGC控制台查看到疑似违规的检测结果，并可根据使用需要下载录音或导出文本消息内容进行人工复审，以确保风控的审核准确率。
 

@@ -2,7 +2,9 @@
 title: "ocpx赔付汇总报表查询"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-ocpxpeifuhuizonbaobiaochaxun-0000001925852801
+format: md
 ---
+
 # ocpx赔付汇总报表查询
 
 【简介】广告主通过广告主ID、任务ID查询Ocpx结算报表数据。

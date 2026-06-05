@@ -1,7 +1,9 @@
 ---
 title: "ohpm dependency-check"
 displayed_sidebar: ohpmSidebar
+format: md
 ---
+
 
 # ohpm dependency-check
 

@@ -4,9 +4,10 @@ title: "视频预览分辨率设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-17
 ---
 
+
 **问题现象**
 
-旋转手机，预览画面中物品高度变化明显，画面畸变。代码中的预览分辨率：previewProfile {"format":1003,"size":{"width":3200,"height":2400}}，XComponent的surfaceWidth: 3200, surfaceHeight: 2400。
+旋转手机，预览画面中物品高度变化明显，画面畸变。代码中的预览分辨率：previewProfile \{"format":1003,"size":\{"width":3200,"height":2400\}\}，XComponent的surfaceWidth: 3200, surfaceHeight: 2400。
 
 ```
 XComponent({

@@ -1,7 +1,9 @@
 ---
 title: "如何解析JSON字符串为实例对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-75
+format: md
 ---
+
 
 **问题背景**：
 

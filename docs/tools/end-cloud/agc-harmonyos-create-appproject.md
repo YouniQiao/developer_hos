@@ -2,7 +2,9 @@
 
 title: "创建HarmonyOS应用工程"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 创建HarmonyOS应用工程
 

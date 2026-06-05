@@ -2,7 +2,9 @@
 title: "服务号入驻规范"
 displayed_sidebar: serviceDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/content_specification-0000001053325353
+format: md
 ---
+
 
 # 服务号入驻规范
 

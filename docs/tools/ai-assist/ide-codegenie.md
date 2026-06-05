@@ -1,7 +1,9 @@
 ---
 title: "工具概述"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 工具概述
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "PdfView预览组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-implements
+format: md
 ---
+
 
 * **[预览PDF文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-component)**
 * **[打开和保存PDF文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-open)**

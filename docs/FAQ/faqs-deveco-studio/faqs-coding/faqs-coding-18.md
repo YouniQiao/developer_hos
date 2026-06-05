@@ -4,6 +4,7 @@ title: "DevEco Studio上使用ArcList组件时编辑器提示“The default syst
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-18
 ---
 
+
 **问题现象**
 
 使用ArcList组件时，编辑器报错，错误信息如下：

@@ -1,7 +1,9 @@
 ---
 title: "Web渲染和布局"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-render-layout
+format: md
 ---
+
 
 * **[Web组件渲染模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-render-mode)**
 * **[Web组件大小自适应页面内容布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-fit-content)**

@@ -1,7 +1,9 @@
 ---
 title: "快游戏服务卡片"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-dev-fa-card-0000002458772641
+format: md
 ---
+
 
 ## 如何查看华为手机的HarmonyOS版本号？
 

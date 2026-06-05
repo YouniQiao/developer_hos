@@ -1,7 +1,9 @@
 ---
 title: "ABR进行Buffer分辨率调整引起其他Pass渲染效果异常，该如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-4
+format: md
 ---
+
 
 **现象描述**
 

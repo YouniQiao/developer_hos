@@ -2,7 +2,9 @@
 title: 下拉按钮
 sidebar_label: 下拉按钮
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/select-0000001957001873
+format: md
 ---
+
 # 下拉按钮
 
 下拉按钮可让用户在多个选项之间选择。开发相关描述请参考 [Select](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select) 文档。

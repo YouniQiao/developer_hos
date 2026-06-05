@@ -1,7 +1,9 @@
 ---
 title: "SDK隐私声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-sdksecurity-0000002236496854
+format: md
 ---
+
 
 认证服务是由华为软件技术有限公司（注册地：江苏省南京市雨花台区软件大道101号）（以下简称“我们”或“华为”）面向应用开发者（以下简称“开发者”）提供安全可靠的用户认证系统开放能力及服务。
 

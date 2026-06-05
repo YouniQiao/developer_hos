@@ -2,7 +2,9 @@
 title: "接入要求"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-access-0000002024211358
+format: md
 ---
+
 
 # 接入要求
 

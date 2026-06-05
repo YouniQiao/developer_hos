@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "配置应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-config-app
+format: md
 ---
+
 
 接入数字商品服务前，需要先完成应用的bundleName配置和应用身份信息配置。
 

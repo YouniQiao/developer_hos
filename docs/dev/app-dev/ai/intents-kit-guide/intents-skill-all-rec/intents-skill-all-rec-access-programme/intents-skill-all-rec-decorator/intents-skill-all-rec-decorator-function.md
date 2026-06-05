@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基于函数的装饰器方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-function
+format: md
 ---
+
 
 ## 概述
 
@@ -75,7 +77,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inte
    | intentVersion | string | 是 | 意图的版本号，用于兼容性管理。 |
    | displayName | string | 是 | 意图的展示名称，用于界面显示，最大长度：64。 |
    | llmDescription | string | 否 | 意图的描述，详细描述该意图可实现的能力，便于大模型理解并调用。 |
-   | parameters | Record<string, object> | 否 | 意图参数定义，描述参数类型以及含义。 |
+   | parameters | Record\<string, object\> | 否 | 意图参数定义，描述参数类型以及含义。 |
 
    为便于大模型理解和调用，相关参数定义需要遵照[自定义意图相关信息定义规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-specification)进行设定。
 3. 装饰器的添加方式：装饰器可以直接手动添加，同时也支持一键生成装饰器，建议使用后者，此方式需要安装相应插件，详细步骤如下。

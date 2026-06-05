@@ -1,7 +1,9 @@
 ---
 title: "获取指定房间信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-getroom-csharp-0000002393266925
+format: md
 ---
+
 
 进入语音房间后，您可通过获取全部房间信息，实现房间信息页面展示功能。如需实现定时刷新房间信息功能，可自行通过轮询调用接口实现。
 

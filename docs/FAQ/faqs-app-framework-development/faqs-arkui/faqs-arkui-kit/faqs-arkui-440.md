@@ -4,6 +4,7 @@ title: "如何给Swiper组件添加节流，控制Swiper的切换频率"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-440
 ---
 
+
 **问题描述**
 
 Swiper组件可以添加节流么，快速滑动的话容易造成页面卡顿，请问如何添加节流控制Swiper的切换频率？

@@ -1,7 +1,9 @@
 ---
 title: "实践说明"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 实践说明
 

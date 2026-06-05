@@ -2,7 +2,9 @@
 title: 索引条
 sidebar_label: 索引条
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/alphabetindexer-0000001956975265
+format: md
 ---
+
 # 索引条
 
 索引条主要针对按字母顺序排序的列表进行快速定位。用于快速精确定位，如：联系人列表 (查找联系人)、天气、世界时钟 (添加城市)。开发相关描述请参考 [AlphabetIndexer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-alphabet-indexer) 文档。

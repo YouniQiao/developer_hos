@@ -1,7 +1,9 @@
 ---
 title: "访问DataAbility"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-dataability
+format: md
 ---
+
 
 访问DataAbility需导入基础依赖包，以及获取与DataAbility子模块通信的URI字符串。
 

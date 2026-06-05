@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-dupe-class-members"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-dupe-class-members
 

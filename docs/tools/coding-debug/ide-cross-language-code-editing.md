@@ -1,7 +1,9 @@
 ---
 title: "跨语言代码编辑"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 跨语言代码编辑
 

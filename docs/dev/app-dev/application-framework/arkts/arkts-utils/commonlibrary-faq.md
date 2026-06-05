@@ -1,7 +1,9 @@
 ---
 title: "基础库常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/commonlibrary-faq
+format: md
 ---
+
 
 ## 解析大文件xml发生内存溢出（Out of Memory）
 
@@ -22,8 +24,8 @@ libxml2库支持的回调函数主要如下所示：
 | --- | --- | --- |
 | startDocument | 文档开始时 | 初始化环境，分配资源。 |
 | endDocument | 文档结束时 | 释放资源，打印统计信息。 |
-| startElement | 读到开始标签（如<tag>） | 获取标签名及其属性。 |
-| endElement | 读到结束标签（如</tag>） | 处理标签结束逻辑，如出栈。 |
+| startElement | 读到开始标签（如\<tag\>） | 获取标签名及其属性。 |
+| endElement | 读到结束标签（如\</tag\>） | 处理标签结束逻辑，如出栈。 |
 | characters | 读到标签间的文本内容 | 处理文本数据（注意可能被多次调用）。 |
 
 代码示例：

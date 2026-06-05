@@ -1,7 +1,9 @@
 ---
 title: "如何判断是否为主线程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-68
+format: md
 ---
+
 
 通过Process获取当前的进程号和线程号。如果二者相同，表示当前执行环境为主线程。
 

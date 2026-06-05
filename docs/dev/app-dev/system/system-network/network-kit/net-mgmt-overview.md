@@ -1,7 +1,9 @@
 ---
 title: "Network Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-mgmt-overview
+format: md
 ---
+
 
 Network Kit（网络服务）主要提供以下功能：
 

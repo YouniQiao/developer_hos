@@ -1,7 +1,9 @@
 ---
 title: "发布准备工作"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-prepare-0000002306311921
+format: md
 ---
+
 
 发布应用前，请详细了解华为应用市场的审核要求与上架规则，并提前准备发布所需的文件与资源，以便您能顺利、快速通过发布审核流程。
 

@@ -1,7 +1,9 @@
 ---
 title: "SelfBuildCredentialInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-selfbuildcredentialinfo-0000002238777836
+format: md
 ---
+
 
 自有账号方式的凭证信息。
 

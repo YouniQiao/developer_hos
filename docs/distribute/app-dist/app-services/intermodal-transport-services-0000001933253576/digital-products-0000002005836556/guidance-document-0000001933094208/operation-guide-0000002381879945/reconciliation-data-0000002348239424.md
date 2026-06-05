@@ -2,7 +2,9 @@
 title: "获取对账结算数据"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/reconciliation-data-0000002348239424
+format: md
 ---
+
 
 # 获取对账结算数据
 

@@ -1,7 +1,9 @@
 ---
 title: "Web组件的生命周期"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-event-sequence
+format: md
 ---
+
 
 ## 概述
 

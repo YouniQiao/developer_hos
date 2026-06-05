@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "上传指定文件至云侧"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-upload-file
+format: md
 ---
+
 
 开发者可以快速将本地设备上的文件上传至云侧，上传完后，可以前往AppGallery Connect的“云存储”页面，查看上传的文档内容。
 

@@ -2,7 +2,9 @@
 title: "编辑任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-task3-0000001338377353
+format: md
 ---
+
 # 编辑任务
 
 您通过本接口可以编辑任务。

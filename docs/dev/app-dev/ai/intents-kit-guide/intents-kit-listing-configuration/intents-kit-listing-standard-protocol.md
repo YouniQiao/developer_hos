@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "意图标准协议上架指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-kit-listing-standard-protocol
+format: md
 ---
+
 
 该配置需开发者完成自测后，先将携有对应意图信息的App在AppGallery Connect（以下简称AGC）完成应用上架，具体操作步骤参见[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)。
 

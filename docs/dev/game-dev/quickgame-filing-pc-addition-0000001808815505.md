@@ -1,7 +1,9 @@
 ---
 title: "新增互联网信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-addition-0000001808815505
+format: md
 ---
+
 
 在华为云核准（备案）系统中已核准（备案）的主体下新增快游戏信息。操作步骤如下：
 

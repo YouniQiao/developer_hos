@@ -1,7 +1,9 @@
 ---
 title: "edm工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # edm工具
 

@@ -1,7 +1,9 @@
 ---
 title: "@performance/js-code-cache-by-precompile-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/js-code-cache-by-precompile-check
 

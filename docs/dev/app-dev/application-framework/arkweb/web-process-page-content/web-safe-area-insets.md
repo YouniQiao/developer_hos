@@ -1,7 +1,9 @@
 ---
 title: "网页中安全区域计算和避让适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-safe-area-insets
+format: md
 ---
+
 
 早期设备屏幕多为矩形，应用界面能够完整展示。随着全面屏、刘海屏等异形屏幕的普及，屏幕边缘可能出现圆角、摄像头或系统导航条，导致界面部分被遮挡。
 
@@ -72,12 +74,12 @@ struct WebComponent {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkWeb/ProcessWebPageCont/entry/src/main/ets/pages/CalcAdjustSafeArea.ets#L15-L32" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CalcAdjustSafeArea.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkWeb/ProcessWebPageCont/entry/src/main/ets/pages/CalcAdjustSafeArea.ets#L15-L32" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CalcAdjustSafeArea.ets</a></div>
 
 
 ## 设置网页在可视窗口中的布局方式
 
-viewport-fit用于设置网页在可视窗口中的布局方式，是<meta name="viewport">标签的一个属性。设置方式如下：
+viewport-fit用于设置网页在可视窗口中的布局方式，是<meta name="viewport" />标签的一个属性。设置方式如下：
 
 ```
 <meta name='viewport' content='viewport-fit=cover'>

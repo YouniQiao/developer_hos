@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "正地理编码与逆地理编码开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geocode-guidelines
+format: md
 ---
+
 
 ## 场景概述
 
@@ -20,8 +22,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geoc
 | 接口名 | 功能描述 |
 | --- | --- |
 | [isGeocoderAvailable(): boolean](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanagerisgeocoderavailable) | 判断地理编码与逆地理编码服务是否可用。 |
-| [getAddressesFromLocation(request: ReverseGeoCodeRequest, callback: AsyncCallback<Array<GeoAddress>>): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanagergetaddressesfromlocation) | 调用逆地理编码服务，将坐标转换为地理描述，使用callback回调异步返回结果。 |
-| [getAddressesFromLocationName(request: GeoCodeRequest, callback: AsyncCallback<Array<GeoAddress>>): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanagergetaddressesfromlocationname) | 调用地理编码服务，将地理描述转换为具体坐标，使用callback回调异步返回结果。 |
+| [getAddressesFromLocation(request: ReverseGeoCodeRequest, callback: AsyncCallback\<Array<GeoAddress\>>): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanagergetaddressesfromlocation) | 调用逆地理编码服务，将坐标转换为地理描述，使用callback回调异步返回结果。 |
+| [getAddressesFromLocationName(request: GeoCodeRequest, callback: AsyncCallback\<Array<GeoAddress\>>): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanagergetaddressesfromlocationname) | 调用地理编码服务，将地理描述转换为具体坐标，使用callback回调异步返回结果。 |
 
 ## 开发步骤
 

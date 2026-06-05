@@ -4,6 +4,7 @@ title: "如何更改TextInput密码输入模式下passwordIcon的大小、颜色
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-356
 ---
 
+
 使用Stack容器作为父容器，子组件使用Image组件自定义passwordIcon。通过该方式可调整Image组件的位置、大小和颜色。示例代码如下：
 
 ```

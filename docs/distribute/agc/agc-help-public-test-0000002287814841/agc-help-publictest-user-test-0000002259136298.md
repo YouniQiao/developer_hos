@@ -1,7 +1,9 @@
 ---
 title: "用户参与测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publictest-user-test-0000002259136298
+format: md
 ---
+
 
 测试版本发布、且到达测试时间后，用户便可以参与公开测试。AGC提供了多种参与测试的方式。
 

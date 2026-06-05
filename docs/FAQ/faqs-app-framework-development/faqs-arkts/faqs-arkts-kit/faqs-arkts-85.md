@@ -4,6 +4,7 @@ title: "如何通过Index获取ArrayList中的元素"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-85
 ---
 
+
 * 方式一：
 
   JS语法基础中可以通过数组元素的下标直接访问数组中的对象。示例如下：

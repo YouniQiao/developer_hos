@@ -1,7 +1,9 @@
 ---
 title: "常见问题与异常处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-faqs
+format: md
 ---
+
 
 ## 应用数据迁移暂停
 

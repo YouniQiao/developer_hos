@@ -1,7 +1,9 @@
 ---
 title: "工具下载"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-download-0000002351893589
+format: md
 ---
+
 
 ![](./img/69c73c82.png)
 

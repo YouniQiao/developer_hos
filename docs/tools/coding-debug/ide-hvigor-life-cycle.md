@@ -1,7 +1,9 @@
 ---
 title: "构建系统生命周期"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 构建系统生命周期
 

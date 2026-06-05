@@ -2,7 +2,9 @@
 title: 导航条
 sidebar_label: 导航条
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/navigation-0000001957075737
+format: md
 ---
+
 # 导航条
 
 导航条是 HarmonyOS 系统的典型特征，是手势导航等重要功能的提示入口，是应用必须适配的要求。

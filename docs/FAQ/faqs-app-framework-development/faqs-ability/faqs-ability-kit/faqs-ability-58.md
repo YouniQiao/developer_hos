@@ -1,7 +1,9 @@
 ---
 title: "如何拉起浏览器应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-58
+format: md
 ---
+
 
 开发者可以通过在 want 参数中隐式指定 action 为 ohos.want.action.viewData 来启动浏览器应用，并在 want的 uri 参数中配置要打开的网页链接。此时，系统将启动设备上的默认浏览器。如果设备上存在多个浏览器应用，并且希望用户能够自行选择要使用的浏览器，需要在 parameters 中设置 ohos.ability.params.showDefaultPicker 为 true。具体代码如下所示。
 

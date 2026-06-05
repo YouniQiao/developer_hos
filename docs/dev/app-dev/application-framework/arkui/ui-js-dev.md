@@ -1,7 +1,9 @@
 ---
 title: "UI开发 (兼容JS的类Web开发范式)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-dev
+format: md
 ---
+
 
 * **[UI开发 (兼容JS的类Web开发范式)概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-overview)**
 * **[框架说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-overview)**

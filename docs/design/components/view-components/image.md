@@ -2,8 +2,10 @@
 title: 图片
 sidebar_label: 图片
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/image-0000001956975273
+format: md
 ---
-{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用<MergedTable>组件还原 */}
+
+\{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 图片
 

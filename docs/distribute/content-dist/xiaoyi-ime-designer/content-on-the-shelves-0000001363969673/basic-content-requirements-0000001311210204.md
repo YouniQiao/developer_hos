@@ -2,7 +2,9 @@
 title: "打包自测说明"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/basic-content-requirements-0000001311210204
+format: md
 ---
+
 
 # 打包自测说明
 

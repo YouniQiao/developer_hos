@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自动续期订阅商品购买"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription
+format: md
 ---
+
 
 * **[自动续期订阅说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions)**
 * **[接入自动续期订阅](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-subscription)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "产品特性按需分发(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-moduleinstall_arkts
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -37,11 +39,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stor
 | [getInstalledModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanagergetinstalledmodule)(moduleName: string): [InstalledModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#installedmodule) | 查询模块安装信息接口。 |
 | [createModuleInstallRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallprovidercreatemoduleinstallrequest)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | [common.ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)): [ModuleInstallRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallrequest) | 创建按需加载请求对象。 |
 | [addModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallrequestaddmodule)(moduleName: string): [ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#returncode) | 添加要按需加载的模块名。 |
-| [fetchModules](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanagerfetchmodules)(moduleInstallRequest: [ModuleInstallRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallrequest)): Promise<[ModuleInstallSessionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallsessionstate)> | 按需加载请求接口，异步返回结果。 |
+| [fetchModules](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanagerfetchmodules)(moduleInstallRequest: [ModuleInstallRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallrequest)): Promise[ModuleInstallSessionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallsessionstate) | 按需加载请求接口，异步返回结果。 |
 | [cancelTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanagercanceltask)(taskId: string): [ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#returncode) | 取消下载任务接口。 |
 | [showCellularDataConfirmation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanagershowcellulardataconfirmation)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | [common.ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext), taskId: string): [ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#returncode) | 流量提醒弹窗接口。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanageronmoduleinstallstatus)(type: 'moduleInstallStatus', callback: Callback<[ModuleInstallSessionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallsessionstate)>, timeout: number): void | 监听当前应用下载任务的进度。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanageroffmoduleinstallstatus)(type: 'moduleInstallStatus', callback?: Callback<[ModuleInstallSessionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallsessionstate)>): void | 取消监听当前应用下载任务的进度。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanageronmoduleinstallstatus)(type: 'moduleInstallStatus', callback: Callback[ModuleInstallSessionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallsessionstate), timeout: number): void | 监听当前应用下载任务的进度。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanageroffmoduleinstallstatus)(type: 'moduleInstallStatus', callback?: Callback[ModuleInstallSessionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallsessionstate)): void | 取消监听当前应用下载任务的进度。 |
 
 ## 开发步骤
 
@@ -346,7 +348,7 @@ entry中主要实现如下：
    hdc install entry.hap
    ```
 2. 打开[开发者调试模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)：进入设置 -> 机型 -> 关于手机，连续点击软件版本7次，弹出“开启“开发者模式””，点击“确认开启”。
-3. [访问设备沙箱路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer#section48216711204)，在[应用el2级别加密数据目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)下，创建cache/moduleinstall/<ModuleName>目录（这里<ModuleName>是AModulelib），将模块调试包AModulelib.hsp上传至对应模块目录下（请确保模块调试包文件应有读写权限）。
+3. [访问设备沙箱路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer#section48216711204)，在[应用el2级别加密数据目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)下，创建cache/moduleinstall/\<ModuleName\>目录（这里\<ModuleName\>是AModulelib），将模块调试包AModulelib.hsp上传至对应模块目录下（请确保模块调试包文件应有读写权限）。
 
    ![](./img/e225b61a.png)
 4. 按照[创建按需加载的请求实例](#创建按需加载的请求实例)、[请求按需加载的接口](#请求按需加载模块)或[使用动态模块](#使用动态模块)，无需改动参数即可安装好模块调试包。监听到安装成功后，对应模块目录下的文件会被自动删除。

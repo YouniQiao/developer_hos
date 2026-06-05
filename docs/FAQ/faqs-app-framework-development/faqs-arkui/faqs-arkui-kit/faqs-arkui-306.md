@@ -4,6 +4,7 @@ title: "如何识别双击手势时忽视单击手势"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-306
 ---
 
+
 使用组合手势GestureGroup的互斥识别。双击事件应置于单击事件之前，互斥识别按排列顺序进行。如果单击事件在前，则只会识别单击事件。参考代码如下：
 
 ```

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "发送网络请求（C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netsend-c
+format: md
 ---
+
 
 ## 约束与限制
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取解密硬盘数据的企业恢复密钥"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-getkeyfordecryptdata
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -18,7 +20,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reco
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getEnterpriseRecoveryKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getenterpriserecoverykey)(userId: number): Promise<[EnterpriseRecoveryKeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#enterpriserecoverykeyinfo)> | 使用Promise方式获取恢复密钥。 |
+| [getEnterpriseRecoveryKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getenterpriserecoverykey)(userId: number): Promise[EnterpriseRecoveryKeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#enterpriserecoverykeyinfo) | 使用Promise方式获取恢复密钥。 |
 
 ## 开发步骤
 

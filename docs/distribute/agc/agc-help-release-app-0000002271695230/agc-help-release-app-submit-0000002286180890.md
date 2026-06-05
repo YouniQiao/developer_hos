@@ -1,7 +1,9 @@
 ---
 title: "提交审核"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-submit-0000002286180890
+format: md
 ---
+
 
 完成所有应用信息和版本信息的配置后，您即可将应用提交至华为方进行发布审核。
 

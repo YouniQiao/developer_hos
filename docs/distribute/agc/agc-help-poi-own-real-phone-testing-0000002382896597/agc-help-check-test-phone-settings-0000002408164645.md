@@ -1,7 +1,9 @@
 ---
 title: "检查测试手机设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-check-test-phone-settings-0000002408164645
+format: md
 ---
+
 
 测试近场服务之前需要您开启手机相关权限，并且添加“小艺建议”到桌面，以便接收近场测试推送内容。
 

@@ -4,6 +4,7 @@ title: "方舟UI框架（ArkUI）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-kit
 ---
 
+
 * **[Image组件加载的图片，如何缓解图片在缩放时的锯齿问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-1)**
 * **[如何对手势事件进行限流防止连续识别，例如500ms内不允许点击事件重复触发？如何对多个手势进行统一限流](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-394)**
 * **[如何实现防截屏功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-3)**

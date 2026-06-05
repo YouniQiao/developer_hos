@@ -1,7 +1,9 @@
 ---
 title: "申请授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-permissions
+format: md
 ---
+
 
 应用需要获取用户的隐私信息或使用系统能力时，例如获取位置信息、使用相机拍摄照片或录制视频等，需要向用户申请授权。
 

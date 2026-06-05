@@ -1,7 +1,9 @@
 ---
 title: "接入方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-access-programme
+format: md
 ---
+
 
 ## 方案概述
 

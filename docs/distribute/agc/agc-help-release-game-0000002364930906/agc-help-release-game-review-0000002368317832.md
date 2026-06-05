@@ -1,7 +1,9 @@
 ---
 title: "配置应用审核信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-review-0000002368317832
+format: md
 ---
+
 
 审核人员需要测试您的游戏。
 

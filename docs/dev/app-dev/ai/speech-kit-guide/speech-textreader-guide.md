@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "朗读控件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-textreader-guide
+format: md
 ---
+
 
 ## 适用场景
 
@@ -18,8 +20,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spee
 
 | 接口名 | 描述 |
 | --- | --- |
-| [init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-textreader-api#init)(context: [common.BaseContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-basecontext), readParams: [ReaderParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-textreader-api#readerparam)): Promise<void> | 初始化TextReader。 |
-| [start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-textreader-api#start)(readInfoList: [ReadInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-textreader-api#readinfo)[], articleId?: string): Promise<void> | 启动TextReader。 |
+| [init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-textreader-api#init)(context: [common.BaseContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-basecontext), readParams: [ReaderParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-textreader-api#readerparam)): Promise\<void\> | 初始化TextReader。 |
+| [start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-textreader-api#start)(readInfoList: [ReadInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-textreader-api#readinfo)[], articleId?: string): Promise\<void\> | 启动TextReader。 |
 | on(type: string, callback: function): void | 注册所有事件回调，具体事件类型详见[API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/speech-textreader-api)。 |
 
 ## 开发步骤

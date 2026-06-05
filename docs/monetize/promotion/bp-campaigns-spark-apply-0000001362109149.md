@@ -2,7 +2,9 @@
 title: "星火计划2026报名流程"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-campaigns-spark-apply-0000001362109149
+format: md
 ---
+
 # 星火计划2026报名流程
 
 ## 直客报名流程

@@ -1,7 +1,9 @@
 ---
 title: "物料准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-touch-scan-material-0000002410432942
+format: md
 ---
+
 
 1. 准备碰扫合一标签物料，建议如下。
 

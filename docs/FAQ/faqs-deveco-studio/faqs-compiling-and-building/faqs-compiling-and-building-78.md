@@ -4,6 +4,7 @@ title: "DevEco Studio编译报“Operation not permitted”无权限错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-78
 ---
 
+
 **问题描述**
 
 DevEco Studio安装完成后一直报Operation not permitted无权限，具体报错如下所示：

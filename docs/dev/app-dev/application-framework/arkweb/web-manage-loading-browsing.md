@@ -1,7 +1,9 @@
 ---
 title: "管理网页加载与浏览记录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-manage-loading-browsing
+format: md
 ---
+
 
 * **[使用Web组件加载页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-page-loading-with-web-components)**
 * **[管理页面跳转及浏览记录导航](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-redirection-and-browsing-history-mgmt)**

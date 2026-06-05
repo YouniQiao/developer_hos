@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "撤回语音播报消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-revoke-extend-noti
+format: md
 ---
+
 
 ## 场景介绍
 

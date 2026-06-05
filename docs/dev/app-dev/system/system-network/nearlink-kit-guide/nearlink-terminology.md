@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "NearLink Kit术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-terminology
+format: md
 ---
+
 
 ## D
 

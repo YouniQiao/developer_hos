@@ -2,7 +2,9 @@
 title: "版本更新说明"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/engineupdatedescription-0000001081652457
+format: md
 ---
+
 
 # 版本更新说明
 

@@ -1,7 +1,9 @@
 ---
 title: "携带参数拉起ASCF元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-open-atomicservice-with-parameters
+format: md
 ---
+
 
 ASCF元服务是使用ASCF框架开发的元服务，无法像ArkTS语言开发的元服务一样自定义接收want参数。ASCF规定了一套标准：需要拉起方按照固定的参数格式（Want.parameters.ascfPara）进行传参，ASCF才能接收到want参数并传递给页面。
 

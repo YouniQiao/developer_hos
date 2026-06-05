@@ -1,7 +1,9 @@
 ---
 title: "探索测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/exploratory-testing
+format: md
 ---
+
 
 ![](./img/3ac23fe6.png "点击放大")
 

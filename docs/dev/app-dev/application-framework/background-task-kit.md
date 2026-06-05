@@ -1,7 +1,9 @@
 ---
 title: "Background Tasks Kit（后台任务开发服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-kit
+format: md
 ---
+
 
 * **[Background Tasks Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview)**
 * **[短时任务(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transient-task)**

@@ -1,7 +1,9 @@
 ---
 title: "自己的引擎游戏的系统适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-adapt-universal-engine-0000002290377053
+format: md
 ---
+
 
 * **[使用自己的引擎概述](https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-introduction-0000002256254902)**
 * **[适配准备](https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-perparation-0000002255997168)**

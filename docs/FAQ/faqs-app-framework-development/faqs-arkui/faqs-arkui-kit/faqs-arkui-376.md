@@ -4,6 +4,7 @@ title: "如何实现ArkUI组件字符串变量拼接"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-376
 ---
 
+
 **问题现象**
 
 例如：在Text组件中如何实现字符串与变量的拼接功能？

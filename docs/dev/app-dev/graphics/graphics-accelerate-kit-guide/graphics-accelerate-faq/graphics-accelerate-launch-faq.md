@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "游戏启动加速服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq
+format: md
 ---
+
 
 * **[通过加载内存镜像启动的游戏会全屏显示来电提醒，应该如何避免](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-1)**
 * **[游戏上划退出后，场景切换阶段存在振动，应该如何避免](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-2)**

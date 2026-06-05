@@ -2,7 +2,9 @@
 
 title: "(可选）一键生成Model Class"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # (可选）一键生成Model Class
 

@@ -1,7 +1,9 @@
 ---
 title: "界面镜像伪本地化测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pseudo-i18n-testing-mirror
+format: md
 ---
+
 
 ## 使用场景
 

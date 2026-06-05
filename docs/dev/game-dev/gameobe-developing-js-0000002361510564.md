@@ -1,7 +1,9 @@
 ---
 title: "JS SDK使用指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-developing-js-0000002361510564
+format: md
 ---
+
 
 * **[接口调用流程](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-flowchart-overview-js-0000002395190477)**
 * **[集成SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-js-0000002361670432)**

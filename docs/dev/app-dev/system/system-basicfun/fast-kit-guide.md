@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "FAST Kit（算法加速服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-kit-guide
+format: md
 ---
+
 
 * **[FAST Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-introduction)**
 * **[使用SegmentMap查询维护区间信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-segment-map)**

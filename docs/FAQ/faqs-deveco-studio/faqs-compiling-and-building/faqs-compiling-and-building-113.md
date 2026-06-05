@@ -4,6 +4,7 @@ title: "编译报错“Init keystore failed: parseAlgParameters failed: ObjectId
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-113
 ---
 
+
 **问题现象**
 
 编译构建时，出现错误：Init keystore failed: parseAlgParameters failed: ObjectIdentifier()
@@ -27,4 +28,4 @@ hap-sign-tool: error: ACCESS_ERROR, code: 109. Details:   Init keystore failed
 
 命令：java -version
 
-也可以使用DevEco Studio内部自带的JDK17，路径为${DevEco Studio}/jbr
+也可以使用DevEco Studio内部自带的JDK17，路径为$\{DevEco Studio\}/jbr

@@ -1,7 +1,9 @@
 ---
 title: "GC垃圾回收"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gc-introduction
+format: md
 ---
+
 
 GC（全称 Garbage Collection），即垃圾回收。在计算机领域，GC是指识别并释放内存中的不再使用的对象，以回收内存空间。目前广泛使用的编程语言实现的GC算法主要分为两大类：引用计数和对象追踪（即Tracing GC）。
 

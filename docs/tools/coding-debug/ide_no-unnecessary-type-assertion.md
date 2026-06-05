@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-unnecessary-type-assertion"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-unnecessary-type-assertion
 

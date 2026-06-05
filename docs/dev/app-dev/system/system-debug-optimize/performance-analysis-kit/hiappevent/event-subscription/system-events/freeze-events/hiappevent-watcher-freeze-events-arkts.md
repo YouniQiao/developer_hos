@@ -1,7 +1,9 @@
 ---
 title: "订阅应用冻屏事件（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events-arkts
+format: md
 ---
+
 
 ## 简介
 

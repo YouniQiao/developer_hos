@@ -1,7 +1,9 @@
 ---
 title: "hdc"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # hdc
 

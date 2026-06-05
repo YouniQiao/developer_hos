@@ -1,7 +1,9 @@
 ---
 title: "mk转换CMake（可选）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-2dx-mk-convert-cmake-0000002296283530
+format: md
 ---
+
 
 HarmonyOS 5.0及以上工程使用Deveco Studio进行开发，以Hvigor作为构建工具，其C++部分通过CMake构建。如果当前游戏工程已经使用CMake构建，可跳过本章节。
 

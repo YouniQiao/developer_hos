@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "小游戏支付"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-pay
+format: md
 ---
+
 
 小游戏接入基础游戏服务的小游戏支付API后，支持在小游戏内提供付费商品，玩家可以在小游戏内进行购买。
 
@@ -28,8 +30,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game
 
 | 接口名 | 描述 |
 | --- | --- |
-| [init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerinit-1)(context: common.UIAbilityContext, callback: AsyncCallback<void>): void | 游戏初始化接口，使用默认的上下文信息，通过callback回调获取返回值。 |
-| [miniGamePay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerminigamepay)(context: common.Context, parameter: PurchaseParameter): Promise<CreatePurchaseResult> | 小游戏支付接口，通过Promise对象获取返回值。 |
+| [init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerinit-1)(context: common.UIAbilityContext, callback: AsyncCallback\<void\>): void | 游戏初始化接口，使用默认的上下文信息，通过callback回调获取返回值。 |
+| [miniGamePay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerminigamepay)(context: common.Context, parameter: PurchaseParameter): Promise\<CreatePurchaseResult\> | 小游戏支付接口，通过Promise对象获取返回值。 |
 
 ## 开发步骤
 

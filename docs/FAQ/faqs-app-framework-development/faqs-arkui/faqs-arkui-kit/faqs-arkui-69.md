@@ -4,6 +4,7 @@ title: "父组件如何与孙子组件进行状态同步"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-69
 ---
 
+
 * 方式一（推荐）：使用@Provider和@Consumer装饰器。在父组件中使用@Provider，在孙子组件中使用@Consumer，实现双向数据绑定。
 
 1. 在父组件中使用子组件，并通过@Provider提供reviewVote参数，实现跨级传递到孙子组件。

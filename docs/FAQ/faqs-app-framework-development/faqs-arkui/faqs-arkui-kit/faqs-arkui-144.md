@@ -4,6 +4,7 @@ title: "ArkUI组件的字符串中如何实现字符串变量拼接"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-144
 ---
 
+
 **问题现象**
 
 ArkUI组件的字符串中如何实现字符串变量拼接，结合限定词目录的资源文件，例如语言切换时候，字符串内容自动跟随切换。例如Text()组件如何实现字符串变量的拼接功能？

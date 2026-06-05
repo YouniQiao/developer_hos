@@ -1,7 +1,9 @@
 ---
 title: "调测调优"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-debug-optimize
+format: md
 ---
+
 
 * **[Performance Analysis Kit（性能分析服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit)**
 * **[Test Kit（应用测试服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-kit)**

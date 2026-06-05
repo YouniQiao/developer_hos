@@ -2,7 +2,9 @@
 title: "视图：图片&lt;Image&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-image-0000002504274921
+format: md
 ---
+
 
 # 视图：图片&lt;Image&gt;
 

@@ -2,7 +2,9 @@
 title: "真机测试"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/list-of-user-groups-for-real-machine-testing-0000002471264273
+format: md
 ---
+
 
 # 真机测试
 

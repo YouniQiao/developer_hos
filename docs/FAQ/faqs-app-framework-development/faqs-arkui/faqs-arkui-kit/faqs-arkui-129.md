@@ -1,7 +1,9 @@
 ---
 title: "UI布局默认是多少vp为基准，以达到不同机器自适应"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-129
+format: md
 ---
+
 
 无论屏幕分辨率或密度如何，组件的视觉效果保持一致。
 

@@ -2,7 +2,9 @@
 title: "分析平台接入鲸鸿动能广告平台及referrer归因"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/tracking-fenxipintai-0000001262289582
+format: md
 ---
+
 # 分析平台接入鲸鸿动能广告平台及referrer归因
 
 分析平台接入时需按照鲸鸿动能广告平台支持的归因模式进行接入，鲸鸿动能广告平台分为自归因与非自归因:
@@ -38,7 +40,7 @@ referrer归因是鲸鸿动能广告平台新增的归因方案，根据不同的
 
     INDEX\_REFERRER进行URL解码后格式：
 
-    \{"reportCount":-1,"contentId":"58803091","slotId":"h7jrvnsy3m","adType":3,"referrer":"huaweiadsglobal\_202109011137240191891","channel":"huaweiadsglobal"\}
+    \\{"reportCount":-1,"contentId":"58803091","slotId":"h7jrvnsy3m","adType":3,"referrer":"huaweiadsglobal\_202109011137240191891","channel":"huaweiadsglobal"\\}
   - <strong>从应用市场获取referrer参数技术指导：</strong>
 
     分析工具在端侧从华为应用市场获取referrer参数，详情参考[referrer参数获取](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agdlink-analysis-refer-0000001117762116)。

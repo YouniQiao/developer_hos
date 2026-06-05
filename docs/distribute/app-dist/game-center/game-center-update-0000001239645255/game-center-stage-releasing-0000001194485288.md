@@ -2,7 +2,9 @@
 title: "分阶段发布"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-stage-releasing-0000001194485288
+format: md
 ---
+
 
 # 分阶段发布
 

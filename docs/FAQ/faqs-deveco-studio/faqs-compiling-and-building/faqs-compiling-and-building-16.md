@@ -4,6 +4,7 @@ title: "应用/服务的启动界面信息缺失，提示“Schema validate fail
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-16
 ---
 
+
 **问题现象**
 
 在工程同步或编译构建时，出现“Schema validate failed”的错误提示。

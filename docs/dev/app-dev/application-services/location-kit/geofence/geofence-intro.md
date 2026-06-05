@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "地理围栏简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-intro
+format: md
 ---
+
 
 地理围栏（GeoFence）是一种基于地理位置的技术，它允许开发者设定特定的地理区域，在用户进入、离开或驻留在这个特定区域的时候，可以把该地理围栏事件（进入/离开/驻留）通知应用，应用在接收到这些事件时完成后面的业务逻辑，以达到提醒用户的目的。
 

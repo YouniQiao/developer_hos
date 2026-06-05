@@ -1,7 +1,9 @@
 ---
 title: "hvigor-config.json5文件"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # hvigor-config.json5文件
 

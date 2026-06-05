@@ -1,7 +1,9 @@
 ---
 title: "窗口开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-overview
+format: md
 ---
+
 
 ## 窗口模块的定义
 

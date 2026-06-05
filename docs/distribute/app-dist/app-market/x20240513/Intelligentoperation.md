@@ -2,7 +2,9 @@
 title: "华为智能运营服务协议"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/intelligentoperation
+format: md
 ---
+
 # 华为智能运营服务协议
 
 点击下载[华为智能运营服务协议](https://terms1.hicloud.com/agreementservice/developer/getAgreementTemplate?agrType=1179&country=cn&language=zh_cn&version=2021092201)。

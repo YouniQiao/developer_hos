@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "企业联系人信息来去电页面显示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-contact-display
+format: md
 ---
+
 
 本功能仅供企业应用开发者接入。
 
@@ -18,9 +20,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call
 
 | 接口名 | 描述 |
 | --- | --- |
-| [onQueryCallerInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-callerinfoquery-extension-ability#onquerycallerinfo)(phoneNumber: string)：Promise<CallerInfo> | 查询联系人信息接口。 |
+| [onQueryCallerInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-callerinfoquery-extension-ability#onquerycallerinfo)(phoneNumber: string)：Promise\<CallerInfo\> | 查询联系人信息接口。 |
 | [queryNumberIdentifySwitchState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-numberldentify#querynumberidentifyswitchstate) (context: Context):SwitchState | 查询陌生号码与信息识别总开关状态以及调用该接口的应用号码识别开关状态。 |
-| [isSupportEnterpriseNumberIdentify](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-numberldentify#issupportenterprisenumberidentify)(context: Context): Promise<boolean> | 查询是否已开通企业来电显示权限。 |
+| [isSupportEnterpriseNumberIdentify](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-numberldentify#issupportenterprisenumberidentify)(context: Context): Promise\<boolean\> | 查询是否已开通企业来电显示权限。 |
 
 ## 申请接入
 

@@ -1,7 +1,9 @@
 ---
 title: "ArkTS卡片页面刷新"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-interaction
+format: md
 ---
+
 
 * **[ArkTS卡片页面刷新概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-interaction-overview)**
 * **[ArkTS卡片主动刷新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-active-refresh)**

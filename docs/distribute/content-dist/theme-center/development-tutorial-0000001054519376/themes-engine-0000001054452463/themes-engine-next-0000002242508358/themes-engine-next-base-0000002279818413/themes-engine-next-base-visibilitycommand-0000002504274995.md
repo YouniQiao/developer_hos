@@ -2,7 +2,9 @@
 title: "命令：可见性命令&lt;VisibilityCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-visibilitycommand-0000002504274995
+format: md
 ---
+
 
 # 命令：可见性命令&lt;VisibilityCommand&gt;
 

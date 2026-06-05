@@ -4,6 +4,7 @@ title: "编译报错“Schema validate failed”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-17
 ---
 
+
 **问题现象**
 
 DevEco Studio编译时出现“Schema validate failed”错误。

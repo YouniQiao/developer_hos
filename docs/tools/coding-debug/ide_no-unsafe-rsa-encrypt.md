@@ -1,7 +1,9 @@
 ---
 title: "@security/no-unsafe-rsa-encrypt"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-unsafe-rsa-encrypt
 

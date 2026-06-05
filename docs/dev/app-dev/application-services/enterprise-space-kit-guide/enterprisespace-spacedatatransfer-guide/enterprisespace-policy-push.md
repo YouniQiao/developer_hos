@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "配置空间互传单双通策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-policy-push
+format: md
 ---
+
 
 ## 场景介绍
 

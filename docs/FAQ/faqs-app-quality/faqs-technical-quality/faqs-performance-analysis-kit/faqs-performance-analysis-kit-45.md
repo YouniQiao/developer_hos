@@ -4,6 +4,7 @@ title: "如何通过hdc命令拉起指定的UIAbility"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-45
 ---
 
+
 使用命令拉起指定UIAbility：
 
 ```

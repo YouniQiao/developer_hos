@@ -1,6 +1,8 @@
 ---
 title: "DevEco Studio 6.0.0(20)"
+format: md
 ---
+
 
 # DevEco Studio 版本说明 — 6.0.0(20)
 

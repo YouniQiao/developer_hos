@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "鲸鸿动能Ads Kit个人数据处理说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/description-of-personal-data
+format: md
 ---
+
 
 此文档针对华为作为最终用户数据控制者，对用户的数据处理进行说明，包括：
 

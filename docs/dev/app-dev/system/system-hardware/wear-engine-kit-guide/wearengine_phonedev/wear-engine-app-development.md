@@ -1,7 +1,9 @@
 ---
 title: "应用开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wear-engine-app-development
+format: md
 ---
+
 
 * **[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)**
 * **[请求用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request_user_authorization)**

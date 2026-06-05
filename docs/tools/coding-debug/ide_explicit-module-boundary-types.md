@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/explicit-module-boundary-types"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/explicit-module-boundary-types
 

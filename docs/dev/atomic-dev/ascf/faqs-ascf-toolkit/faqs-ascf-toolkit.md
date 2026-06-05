@@ -1,7 +1,9 @@
 ---
 title: "ASCF Toolkit"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-ascf-toolkit
+format: md
 ---
+
 
 * **[转换小程序源码时报错Output path is error](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-toolkit-output-path-error)**
 * **[路径不可用报错](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-toolkit-path-received-undefined)**

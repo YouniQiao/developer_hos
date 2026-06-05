@@ -2,7 +2,9 @@
 title: "广告账户管理"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ad_account_management-0000002530543790
+format: md
 ---
+
 # 广告账户管理
 
 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，在顶部菜单栏点击【工具】页签，确认推广范围为“应用市场应用推广”。选择“账户辅助”—— “广告账户管理”。

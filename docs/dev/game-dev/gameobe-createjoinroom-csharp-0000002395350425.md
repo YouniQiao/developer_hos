@@ -1,7 +1,9 @@
 ---
 title: "创建房间"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-createjoinroom-csharp-0000002395350425
+format: md
 ---
+
 
 房间，是玩家进行对战的载体。因此，创建一个房间是开始游戏联机对战的前提。玩家成功创建一个对战房间后，即成为该房间的房主，并自动加入到该房间。需要注意的是，一个房间不建议长期循环使用，否则可能会被强制解散。
 

@@ -4,6 +4,7 @@ title: "在本地模拟器中卸载应用显示成功，但实际未卸载成功
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-4
 ---
 
+
 **问题现象**
 
 通过桌面菜单卸载应用，显示卸载成功，但实际上未卸载。

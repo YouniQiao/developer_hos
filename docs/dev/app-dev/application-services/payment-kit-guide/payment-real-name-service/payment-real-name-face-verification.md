@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "人脸核身实人验证场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-face-verification
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -65,7 +67,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/paym
 
 | 接口名 | 描述 |
 | --- | --- |
-| startFaceVerification(context: common.UIAbilityContext | common.UIExtensionContext, preVerifyId: string): Promise<string>; | 拉起用户人脸核身实人验证（人脸验证）页面。 |
+| startFaceVerification(context: common.UIAbilityContext | common.UIExtensionContext, preVerifyId: string): Promise\<string\>; | 拉起用户人脸核身实人验证（人脸验证）页面。 |
 
 ## 开发步骤
 

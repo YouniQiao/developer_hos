@@ -1,7 +1,9 @@
 ---
 title: "动态内存峰值占用"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 动态内存峰值占用
 

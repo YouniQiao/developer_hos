@@ -2,7 +2,9 @@
 title: "视频分段上传初始化"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/video-multipart-initialization-0000001270807809
+format: md
 ---
+
 
 # 视频分段上传初始化
 

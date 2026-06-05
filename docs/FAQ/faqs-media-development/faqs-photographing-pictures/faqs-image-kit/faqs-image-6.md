@@ -1,7 +1,9 @@
 ---
 title: "如何将相册选择的图片生成PixelMap"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-6
+format: md
 ---
+
 
 方法一：
 

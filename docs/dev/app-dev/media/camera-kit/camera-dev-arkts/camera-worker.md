@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "在Worker线程中使用相机(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-worker
+format: md
 ---
+
 
 [Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)主要作用是为应用程序提供一个多线程的运行环境，可满足应用程序在执行过程中与主线程分离，在后台线程中运行一个脚本进行耗时操作，极大避免类似计算密集型或高延迟的任务阻塞主线程的运行。
 
@@ -125,7 +127,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
    ```
 3. 创建worker线程文件，配置worker。
 
-   DevEco Studio支持一键生成Worker，在对应的{moduleName}目录下任意位置，点击鼠标右键 > New > Worker，即可自动生成Worker的模板文件及配置信息，无需再手动在build-profile.json5中进行相关配置。
+   DevEco Studio支持一键生成Worker，在对应的\{moduleName\}目录下任意位置，点击鼠标右键 > New > Worker，即可自动生成Worker的模板文件及配置信息，无需再手动在build-profile.json5中进行相关配置。
 
    CameraWorker.ets实现参考：
 

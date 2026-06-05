@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用SoundPool播放短音频(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-soundpool-for-playback
+format: md
 ---
+
 
 使用[SoundPool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#soundpool)（音频池）提供的接口，可以实现低时延短音播放。
 

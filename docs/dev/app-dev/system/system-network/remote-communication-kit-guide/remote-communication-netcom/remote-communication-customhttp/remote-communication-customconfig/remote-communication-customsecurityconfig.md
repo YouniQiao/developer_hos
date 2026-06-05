@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "SecurityConfiguration：定制安全传输行为"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customsecurityconfig
+format: md
 ---
+
 
 ## 场景介绍
 

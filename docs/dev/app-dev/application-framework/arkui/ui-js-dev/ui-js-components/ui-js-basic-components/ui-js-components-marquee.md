@@ -1,7 +1,9 @@
 ---
 title: "marquee开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-marquee
+format: md
 ---
+
 
 marquee为跑马灯组件，用于展示一段单行滚动的文字。具体用法请参考[marquee](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-marquee)。
 

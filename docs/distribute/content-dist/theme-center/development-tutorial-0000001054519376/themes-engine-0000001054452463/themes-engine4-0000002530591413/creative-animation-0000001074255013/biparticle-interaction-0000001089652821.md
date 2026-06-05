@@ -2,7 +2,9 @@
 title: "双粒子互动"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/biparticle-interaction-0000001089652821
+format: md
 ---
+
 
 # 双粒子互动
 

@@ -1,7 +1,9 @@
 ---
 title: "HarmonyOS 5.0及以上"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voicetotext-harmonyos-0000002338511705
+format: md
 ---
+
 
 ## 前提条件
 

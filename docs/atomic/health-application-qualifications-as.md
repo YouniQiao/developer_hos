@@ -1,7 +1,9 @@
 ---
 title: "应用开发者申请资质说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-application-qualifications-as
+format: md
 ---
+
 
 ## 个人开发者接入资质审核要求
 

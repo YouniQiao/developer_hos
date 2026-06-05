@@ -1,7 +1,9 @@
 ---
 title: "分阶段发布"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-stage-releasing-0000002286057064
+format: md
 ---
+
 
 ![](./img/fcf59a56.png)
 

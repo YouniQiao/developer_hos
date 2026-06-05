@@ -2,7 +2,9 @@
 title: "关键词状态修改"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-keywords3-0000001338413333
+format: md
 ---
+
 # 关键词状态修改
 
 您通过本接口可以批量修改同类型关键词的状态。

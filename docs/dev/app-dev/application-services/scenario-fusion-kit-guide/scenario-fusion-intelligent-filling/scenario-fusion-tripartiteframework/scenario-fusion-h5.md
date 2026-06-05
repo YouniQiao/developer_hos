@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "H5接入智能填充"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-h5
+format: md
 ---
+
 
 本章节介绍在ArkWeb的Web组件加载H5文件如何实现智能填充功能。
 

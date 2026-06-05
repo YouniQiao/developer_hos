@@ -1,7 +1,9 @@
 ---
 title: "二进制优化服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-0000002287085465
+format: md
 ---
+
 
 * **[业务介绍](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-overview-0000002377148237)**
 * **[下载工具包](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-download-tool-0000002377028329)**

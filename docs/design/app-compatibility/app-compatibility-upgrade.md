@@ -1,7 +1,9 @@
 ---
 title: "应用升级targetSDKVersion兼容低版本指导"
 displayed_sidebar: appCompatibilitySidebar
+format: md
 ---
+
 
 # 应用升级targetSDKVersion兼容低版本指导
 

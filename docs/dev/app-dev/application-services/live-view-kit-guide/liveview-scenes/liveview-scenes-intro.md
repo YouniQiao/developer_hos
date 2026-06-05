@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发实况窗须知"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-scenes-intro
+format: md
 ---
+
 
 当前实况窗场景请参见[实况窗支持对接的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction#实况窗支持对接的场景)。针对所有开放的场景，我们为开发者提供了实况窗[场景节点设计参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-design-formula#场景节点设计要求)，开发者可以根据参考设计场景内节点的数量与内容。
 

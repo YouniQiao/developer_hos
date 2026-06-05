@@ -4,6 +4,7 @@ title: "内存占用率过高导致DevEco Studio无法正常运行"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-3
 ---
 
+
 **问题现象****一**
 
 在Profiler数据分析过程中，如果DevEco Studio卡顿或停止响应，并显示“Low Memory”告警，说明内存不足。

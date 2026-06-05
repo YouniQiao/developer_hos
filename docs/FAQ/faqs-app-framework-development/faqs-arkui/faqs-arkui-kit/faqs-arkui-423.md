@@ -4,6 +4,7 @@ title: "Navigation跨模块跳转报错"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-423
 ---
 
+
 **问题描述**
 
 Navigation路由到子模块报错，跨包跳转时失败，该怎么定位和分析。

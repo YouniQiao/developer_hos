@@ -1,7 +1,9 @@
 ---
 title: "应用文件概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-overview
+format: md
 ---
+
 
 应用文件包括应用安装文件、应用资源文件和应用缓存文件，文件所有者是应用。
 

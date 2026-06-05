@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/member-delimiter-style"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/member-delimiter-style
 
@@ -62,7 +64,7 @@ type Options = {
 
 * multilineDetection：枚举类型，判断多行的依据，可取值如下：
   + brackets：默认值，表示interface/type alias中存在换行，即视为多行。
-  + last-member：表示interface/type alias的最后一个成员与右括号（“}”）处于同一行，则视为单行。
+  + last-member：表示interface/type alias的最后一个成员与右括号（“\}”）处于同一行，则视为单行。
 * overrides：对象类型，可以针对interface/type alias进行差异化配置，支持以下两种属性：
   + interface：对象类型，可以对interface进行差异化配置，配置方式同multiline/singleline。
   + typeLiteral：对象类型，可以对type alias进行差异化配置，配置方式同multiline/singleline。

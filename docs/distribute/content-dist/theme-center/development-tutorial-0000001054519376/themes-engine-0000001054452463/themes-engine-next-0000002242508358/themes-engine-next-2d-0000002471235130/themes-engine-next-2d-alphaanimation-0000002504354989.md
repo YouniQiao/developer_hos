@@ -2,7 +2,9 @@
 title: "透明度动画&lt;AlphaAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2d-alphaanimation-0000002504354989
+format: md
 ---
+
 
 # 透明度动画&lt;AlphaAnimation&gt;
 

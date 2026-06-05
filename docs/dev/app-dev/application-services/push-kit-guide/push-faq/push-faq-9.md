@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用处于后台时应用内如何接收消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-9
+format: md
 ---
+
 
 应用处于后台时仅有如下两个场景可以在应用内接收消息：
 

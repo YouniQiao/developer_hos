@@ -2,7 +2,9 @@
 title: "素材管理"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-asset1-0000001286182150
+format: md
 ---
+
 # 素材管理
 
 您通过本接口可以创建素材。
@@ -22,7 +24,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | file\_token | string | 是 | 文件上传凭证，详见[获取文件上传凭证](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-asset5-0000001338581865)。 |
   | file | File | 是 | 文件内容。  注：文件上限为50M。 |
-  | asset\_name | string | 是 | 素材名称，不为空且长度不超过100，不能包含”’”,”\”,”\{”,”\}”,”%”,”\*”,”^”,”#”,”&lt;”,”&gt;”,”|”特殊字符。 |
+  | asset\_name | string | 是 | 素材名称，不为空且长度不超过100，不能包含”’”,”\”,”\\{”,”\\}”,”%”,”\*”,”^”,”#”,”&lt;”,”&gt;”,”|”特殊字符。 |
 
   - <strong>请求示例</strong>
 

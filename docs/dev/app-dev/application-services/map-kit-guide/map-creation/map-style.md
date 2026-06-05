@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "显示自定义地图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-style
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -17,7 +19,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [CustomMapStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#custommapstyleoptions) | 自定义样式参数。 |
-| [setCustomMapStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#setcustommapstyle)(customMapStyleOptions: [mapCommon.CustomMapStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#custommapstyleoptions)): Promise<void> | 将地图样式修改为自定义样式。 |
+| [setCustomMapStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#setcustommapstyle)(customMapStyleOptions: [mapCommon.CustomMapStyleOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#custommapstyleoptions)): Promise\<void\> | 将地图样式修改为自定义样式。 |
 
 ## 开发步骤
 

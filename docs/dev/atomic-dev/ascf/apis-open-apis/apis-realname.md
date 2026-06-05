@@ -1,7 +1,9 @@
 ---
 title: "实名"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-realname
+format: md
 ---
+
 
 ## has.startRealNameVerification
 

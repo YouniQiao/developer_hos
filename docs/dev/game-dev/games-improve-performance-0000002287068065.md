@@ -1,7 +1,9 @@
 ---
 title: "游戏性能分析与提升"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-improve-performance-0000002287068065
+format: md
 ---
+
 
 * **[游戏性能诊断（HiSmartPerf）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-tool-0000002287085461)**
 * **[游戏场景感知](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gameperformance-0000002287198517)**

@@ -2,7 +2,9 @@
 title: "视图：帧解锁视图&lt;SourceImage&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-sourceimage-0000002504274941
+format: md
 ---
+
 
 # 视图：帧解锁视图&lt;SourceImage&gt;
 

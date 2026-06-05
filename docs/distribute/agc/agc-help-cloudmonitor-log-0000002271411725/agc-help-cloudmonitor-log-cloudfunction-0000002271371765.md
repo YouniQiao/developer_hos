@@ -1,7 +1,9 @@
 ---
 title: "云函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-log-cloudfunction-0000002271371765
+format: md
 ---
+
 
 云监控提供的日志服务功能可呈现和查询云函数的业务日志和接入日志两种日志类型，具体说明如下表所示。
 

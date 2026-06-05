@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-suggest-cache-avplayer"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-suggest-cache-avplayer
 

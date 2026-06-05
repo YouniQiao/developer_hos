@@ -2,7 +2,9 @@
 title: "游戏内测"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-early-access-0000002286057056
 has_merged_cells: true
+format: md
 ---
+
 
 游戏内测是您验证游戏对华为手机适配情况，获取游戏数据情况来改进游戏的关键环节，同时内测数据也是用来确定游戏评分评级与首发推广资源的重要参考依据。因此强烈建议您对游戏进行内测。
 

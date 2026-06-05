@@ -2,7 +2,9 @@
 title: "查看相关数据"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-bonus-global_ocpd-report-0000001626648992
+format: md
 ---
+
 # 查看相关数据
 
 ## 查看子任务数据报表

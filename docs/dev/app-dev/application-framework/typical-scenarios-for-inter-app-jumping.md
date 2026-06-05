@@ -1,7 +1,9 @@
 ---
 title: "应用间跳转典型场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/typical-scenarios-for-inter-app-jumping
+format: md
 ---
+
 
 * **[应用间跳转实践概览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inter-application-redirection)**
 * **[社交分享跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/social-sharing-redirection)**

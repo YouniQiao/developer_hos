@@ -1,7 +1,9 @@
 ---
 title: "服务直达支持元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service
+format: md
 ---
+
 
 * **[概览](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-overview)**
 * **[角色权限](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-role-permissions)**

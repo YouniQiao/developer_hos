@@ -1,7 +1,9 @@
 ---
 title: "ComponentLookup"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-lookup-component-0000002483642397
+format: md
 ---
+
 
 ComponentLookup为world中的查询管理器，可以获取已经创建好的Lookup查询。
 

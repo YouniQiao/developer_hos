@@ -2,7 +2,9 @@
 title: "配置-内容合规"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/content-compliance-0000002477777024
+format: md
 ---
+
 
 # 配置-内容合规
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "网络游戏登录概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-network-introduction
+format: md
 ---
+
 
 网络游戏是指需要联网的游戏。
 

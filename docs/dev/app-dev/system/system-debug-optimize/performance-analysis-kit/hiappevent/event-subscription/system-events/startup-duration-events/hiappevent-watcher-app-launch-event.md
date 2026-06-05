@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "启动耗时事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-launch-event
+format: md
 ---
+
 
 ## 简介
 

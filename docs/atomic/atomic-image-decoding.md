@@ -1,7 +1,9 @@
 ---
 title: "图片解码"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-decoding
+format: md
 ---
+
 
 图片解码指将所支持格式的图片文件解码成PixelMap，以便在应用或系统中显示或处理图片。当前支持的图片文件格式包括JPEG、PNG、GIF、WebP、BMP、SVG、ICO、DNG、HEIF。不同硬件设备的支持情况可能不同 。
 

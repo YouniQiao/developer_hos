@@ -2,7 +2,9 @@
 title: "组：视图组&lt;Group&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-group-0000002504354879
+format: md
 ---
+
 
 # 组：视图组&lt;Group&gt;
 

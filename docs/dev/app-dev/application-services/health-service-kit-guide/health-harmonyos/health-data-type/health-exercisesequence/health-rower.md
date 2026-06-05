@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "划船机"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-rower
+format: md
 ---
+
 
 ## 划船机
 

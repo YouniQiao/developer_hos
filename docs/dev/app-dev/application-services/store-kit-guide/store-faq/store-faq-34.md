@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "按需加载场景中，是否支持同时存在多个任务？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-34
+format: md
 ---
+
 
 不支持，同一应用同时只能存在一个按需分发任务。
 

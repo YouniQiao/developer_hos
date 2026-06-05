@@ -1,7 +1,9 @@
 ---
 title: "设置embed模式的侧边栏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-sidebar-enbed-mode
+format: md
 ---
+
 
 ## 场景介绍
 

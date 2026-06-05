@@ -1,7 +1,9 @@
 ---
 title: "下架服务卡片（FormKit）"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit-remove
+format: md
 ---
+
 
 1. 对于已通过审核、服务状态为“已上架”的FormKit卡，开发者可点击“下架”进行下架FormKit卡的操作。
 

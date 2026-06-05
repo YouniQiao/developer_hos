@@ -1,7 +1,9 @@
 ---
 title: "JS（小游戏）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-record-play-audio-msg-minigame-0000002359547158
+format: md
 ---
+
 
 ![](./img/038ab9a6.png)
 

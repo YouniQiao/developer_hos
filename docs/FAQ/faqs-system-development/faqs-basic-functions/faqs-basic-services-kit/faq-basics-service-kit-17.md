@@ -4,6 +4,7 @@ title: "如何获取设备支持的API的版本号"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-17
 ---
 
+
 可以通过设备信息模块deviceInfo查询，常见的版本号获取方式如下：
 
 * 系统软件API版本：deviceInfo.sdkApiVersion。

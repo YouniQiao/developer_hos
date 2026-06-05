@@ -4,6 +4,7 @@ title: "打包体积大如何配置优化包体积问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-100
 ---
 
+
 **问题描述**
 
 程序包当前打包后的体积为16MB，远超预期。

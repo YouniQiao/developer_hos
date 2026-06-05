@@ -1,7 +1,9 @@
 ---
 title: "配置版号信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-version-0000002401837705
+format: md
 ---
+
 
 根据法律法规，要求游戏上架时提供对应的游戏版号材料。
 

@@ -1,7 +1,9 @@
 ---
 title: "停止PageAbility"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stop-pageability
+format: md
 ---
+
 
 停止PageAbility通过featureAbility中的terminateSelf接口实现。
 

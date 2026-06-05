@@ -1,7 +1,9 @@
 ---
 title: "伙伴设备与HarmonyOS设备互通的开发指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/partneragent-life-application-guide
+format: md
 ---
+
 
 ## 简介
 

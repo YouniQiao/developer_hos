@@ -2,7 +2,9 @@
 title: "游戏预约魔方创意"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-pre-order-0000002023298502
+format: md
 ---
+
 
 # 游戏预约魔方创意
 

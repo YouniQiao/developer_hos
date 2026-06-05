@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "按需加载成功后，跳转动态模块页面失败？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-faq-36
+format: md
 ---
+
 
 **问题现象**
 

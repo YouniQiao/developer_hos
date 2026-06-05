@@ -1,7 +1,9 @@
 ---
 title: "处理网页内容"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-process-page-content
+format: md
 ---
+
 
 * **[使用Web组件打印前端页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-print)**
 * **[使用Web组件保存前端页面为PDF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-createpdf)**

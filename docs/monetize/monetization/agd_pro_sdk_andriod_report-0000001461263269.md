@@ -2,7 +2,9 @@
 title: "查看收益报表"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_report-0000001461263269
+format: md
 ---
+
 
 
 待集成AGD Pro SDK的应用正式上线后，即可通过数据报表查看对应的广告收益。

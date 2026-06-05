@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "转换整个PDF文档为图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-convert-img
+format: md
 ---
+
 
 ## 场景介绍
 

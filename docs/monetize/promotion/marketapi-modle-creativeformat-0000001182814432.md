@@ -2,7 +2,9 @@
 title: "CreativeFormat"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-creativeformat-0000001182814432
+format: md
 ---
+
 # CreativeFormat
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

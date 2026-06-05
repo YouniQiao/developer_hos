@@ -1,7 +1,9 @@
 ---
 title: "频道消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rtm-channelmessage-csharp-native-0000002393227133
+format: md
 ---
+
 
 * **[订阅与取消订阅频道](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channel-subscribe-csharp-native-0000002359707022)**
 * **[发布与接收频道消息](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channelmessage-publish-csharp-native-0000002393266985)**

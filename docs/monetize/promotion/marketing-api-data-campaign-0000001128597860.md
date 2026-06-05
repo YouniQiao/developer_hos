@@ -2,7 +2,9 @@
 title: "计划数据"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-data-campaign-0000001128597860
+format: md
 ---
+
 # 计划数据
 
 您通过本接口获取计划维度的基本投放数据，包括花费、点击量、点击均价等。

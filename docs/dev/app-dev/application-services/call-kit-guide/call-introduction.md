@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Call Service Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-introduction
+format: md
 ---
+
 
 Call Service Kit（通话服务）是HarmonyOS为开发者提供的应用内通话管理服务。
 

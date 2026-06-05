@@ -2,7 +2,9 @@
 title: 碰一碰
 sidebar_label: 碰一碰
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/onehop-0000002354602581
+format: md
 ---
+
 # 碰一碰
 
 用户可通过设备间碰一碰，快速进行超近场分享。当前支持手机与手机、手机与电脑进行碰一碰分享。手机设备之间碰一碰可通过设备顶部碰一碰实现，手机与电脑则通过手机顶部轻触屏幕实现分享。关于碰一碰分享的开发适配指南，请参阅 [Share Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-introduction)。

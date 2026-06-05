@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "展示应用详情页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-loadproduct
+format: md
 ---
+
 
 ## 场景介绍
 

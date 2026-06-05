@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "位图操作"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation-native
+format: md
 ---
+
 
 ![](./img/c6e6e746.png)
 

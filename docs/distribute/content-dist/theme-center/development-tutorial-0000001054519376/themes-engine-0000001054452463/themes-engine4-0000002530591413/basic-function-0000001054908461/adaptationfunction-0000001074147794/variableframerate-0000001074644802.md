@@ -2,7 +2,9 @@
 title: "可变帧率&lt;VariableFramerate&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/variableframerate-0000001074644802
+format: md
 ---
+
 
 # 可变帧率&lt;VariableFramerate&gt;
 

@@ -4,6 +4,7 @@ title: "如何在Native侧释放ArkTS对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-82
 ---
 
+
 使用napi\_wrap接口时，如果最后一个参数result不为nullptr，需在适当时机调用napi\_remove\_wrap函数删除创建的napi\_ref对象。
 
 ```

@@ -4,6 +4,7 @@ title: "环境诊断、创建工程/模块界面全部显示空白"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-3
 ---
 
+
 **问题现象**
 
 打开环境诊断界面，选择工程或模块模板时，界面显示为空；工程预览界面同样为空。
@@ -52,11 +53,11 @@ JCEF文件缺失，可能被杀毒软件误删除。
 
 JCEF文件缺失，可能被杀毒软件误删除，导致JCEF进程无法拉起，查看这两个文件是否还存在，如果不存在，则需要重新安装DevEco Studio。
 
-${DevEco Studio安装目录}/jbr/bin/server/jvm.dll
+$\{DevEco Studio安装目录\}/jbr/bin/server/jvm.dll
 
 ![](./img/9b80dbfa.png)
 
-${DevEco Studio安装目录}/jbr/bin/chrome\_elf.dll
+$\{DevEco Studio安装目录\}/jbr/bin/chrome\_elf.dll
 
 ![](./img/de91358c.png "点击放大")
 

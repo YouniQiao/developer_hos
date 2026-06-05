@@ -1,7 +1,9 @@
 ---
 title: "账号"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-account-development
+format: md
 ---
+
 
 * **[Account Kit简介](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-introduction)**
 * **[华为账号登录管理细则](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-detailedrules)**

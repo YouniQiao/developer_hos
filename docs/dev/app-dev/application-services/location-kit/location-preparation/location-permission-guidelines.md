@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "申请位置权限开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-permission-guidelines
+format: md
 ---
+
 
 ## 场景概述
 

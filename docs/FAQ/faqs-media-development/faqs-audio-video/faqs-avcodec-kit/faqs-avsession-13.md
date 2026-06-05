@@ -4,6 +4,7 @@ title: "如何进行视频压缩"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-13
 ---
 
+
 **问题现象**
 
 视频压缩处理是影音娱乐类应用中的典型场景之一，如上传、发送或保存视频时存在大小限制，需要对视频进行压缩，保证视频质量及大小满足用户需要。

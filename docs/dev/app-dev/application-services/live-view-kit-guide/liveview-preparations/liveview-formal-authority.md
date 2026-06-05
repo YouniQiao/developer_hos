@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "申请实况窗正式权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-formal-authority
+format: md
 ---
+
 
 当开发者已对调测设备的实况窗业务进行了充分的调试，确认设计方案和功能体验均符合[《实况窗设计规范》](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-design-formula)，可提交申请正式权限。提交后实况窗将对开发者的方案设计、功能体验进行评审与验收。开发者将会在7个工作日内收到评审结果。
 

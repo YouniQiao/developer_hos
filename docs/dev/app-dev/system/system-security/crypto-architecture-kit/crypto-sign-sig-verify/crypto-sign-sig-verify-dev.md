@@ -1,7 +1,9 @@
 ---
 title: "签名验签开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-dev
+format: md
 ---
+
 
 * **[使用RSA密钥对（PKCS1模式）签名验签(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pkcs1)**
 * **[使用RSA密钥对签名验签 (PKCS1模式)(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pkcs1-ndk)**

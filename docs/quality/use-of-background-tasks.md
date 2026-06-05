@@ -1,7 +1,9 @@
 ---
 title: "后台任务合理使用"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-tasks
+format: md
 ---
+
 
 # 后台任务合理使用
 

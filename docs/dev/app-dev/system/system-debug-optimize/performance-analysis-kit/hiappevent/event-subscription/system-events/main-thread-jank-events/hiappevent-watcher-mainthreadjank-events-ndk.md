@@ -1,7 +1,9 @@
 ---
 title: "订阅主线程超时事件（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-ndk
+format: md
 ---
+
 
 ## 简介
 

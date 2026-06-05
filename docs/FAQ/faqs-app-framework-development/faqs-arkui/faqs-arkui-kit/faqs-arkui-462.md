@@ -4,6 +4,7 @@ title: "AppStorage存了对象之后里面的值取不出来，什么原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-462
 ---
 
+
 **问题描述**
 
 AppStorage存的数据取不出来，存储包含字符串数组的对象时会出现异常。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文件预览"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filepreview
+format: md
 ---
+
 
 当前Preview Kit的文件预览能力采用拉起新窗口的方式来实现，在新的窗口中展示需要预览的文件，并按照统一设计的界面进行展示，如果开发者需要使用Preview Kit的文件预览能力，需要注意以下事项：
 
@@ -19,13 +21,13 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/prev
 
 | 接口名 | 描述 |
 | --- | --- |
-| openPreview(context: Context, file: PreviewInfo, info?: DisplayInfo): Promise<void> | 打开预览功能。通过传入单个文件预览信息以及悬浮窗口属性信息，打开预览窗口。1秒内重复调用无效。使用Promise方式异步返回结果。 |
-| openPreview(context: Context, file: PreviewInfo, info: DisplayInfo, callback: AsyncCallback<void>): void | 打开预览功能。通过传入单个文件预览信息以及悬浮窗口属性信息，打开预览窗口。1秒内重复调用无效。传入callback进行异步回调。 |
-| openPreview(context: Context, files: Array<PreviewInfo>, index?: number): Promise<void> | 打开预览功能。通过传入多个文件预览信息以及选择展示的文件信息下标，打开预览窗口。1秒内重复调用无效。使用Promise方式异步返回结果。仅移动端可用。 |
-| canPreview(context: Context, uri: string): Promise<boolean> | 根据文件的uri判断文件是否可预览。  - 当传入支持的文件类型（图片、视频、音频、文本、html）并且文件存在时，会返回true。  - 当传入不可预览的文件uri时，返回false。 |
-| hasDisplayed(context: Context): Promise<boolean> | 判断预览窗口是否已经存在。预览窗口是单例的形式。  - 如果预览窗口已经打开过并且没关闭，那会返回true。  - 如果没打开或者打开后已关闭，那将返回false。 |
-| closePreview(context: Context): Promise<void> | 关闭预览窗口，仅当预览窗口存在时起效。 |
-| loadData(context: Context, file: PreviewInfo): Promise<void> | 加载预览文件信息。仅当预览窗口存在时生效。100毫秒内重复调用无效。  - 传入可预览文件时展示对应预览界面。  - 传入不可预览文件显示不支持预览界面。 |
+| openPreview(context: Context, file: PreviewInfo, info?: DisplayInfo): Promise\<void\> | 打开预览功能。通过传入单个文件预览信息以及悬浮窗口属性信息，打开预览窗口。1秒内重复调用无效。使用Promise方式异步返回结果。 |
+| openPreview(context: Context, file: PreviewInfo, info: DisplayInfo, callback: AsyncCallback\<void\>): void | 打开预览功能。通过传入单个文件预览信息以及悬浮窗口属性信息，打开预览窗口。1秒内重复调用无效。传入callback进行异步回调。 |
+| openPreview(context: Context, files: Array\<PreviewInfo\>, index?: number): Promise\<void\> | 打开预览功能。通过传入多个文件预览信息以及选择展示的文件信息下标，打开预览窗口。1秒内重复调用无效。使用Promise方式异步返回结果。仅移动端可用。 |
+| canPreview(context: Context, uri: string): Promise\<boolean\> | 根据文件的uri判断文件是否可预览。  - 当传入支持的文件类型（图片、视频、音频、文本、html）并且文件存在时，会返回true。  - 当传入不可预览的文件uri时，返回false。 |
+| hasDisplayed(context: Context): Promise\<boolean\> | 判断预览窗口是否已经存在。预览窗口是单例的形式。  - 如果预览窗口已经打开过并且没关闭，那会返回true。  - 如果没打开或者打开后已关闭，那将返回false。 |
+| closePreview(context: Context): Promise\<void\> | 关闭预览窗口，仅当预览窗口存在时起效。 |
+| loadData(context: Context, file: PreviewInfo): Promise\<void\> | 加载预览文件信息。仅当预览窗口存在时生效。100毫秒内重复调用无效。  - 传入可预览文件时展示对应预览界面。  - 传入不可预览文件显示不支持预览界面。 |
 
 ## 开发步骤
 

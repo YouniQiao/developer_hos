@@ -1,7 +1,9 @@
 ---
 title: "如何实现二维数组的懒加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-292
+format: md
 ---
+
 
 通过HashMap存储二维数组数据，并利用ListGroup组件实现分组懒加载，其中HashMap的键为分组标题，值为对应分组的数据源。示例代码如下：
 

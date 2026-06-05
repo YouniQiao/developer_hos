@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-use-grid-layout-options"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-use-grid-layout-options
 

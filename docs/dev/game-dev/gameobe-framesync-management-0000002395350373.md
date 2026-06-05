@@ -1,7 +1,9 @@
 ---
 title: "帧同步管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-framesync-management-0000002395350373
+format: md
 ---
+
 
 一般来说，高帧率能提供更流畅和更逼真的游戏画面，但同时也会增加对端测的游戏运行性能要求。然而，对于一些画面刷新率不高的游戏，则不需要那么高的帧率。因此，联机对战服务提供了帧同步管理功能，支持您根据游戏使用需要对帧率进行修改设置。同时，还提供了自主选择是否开启录像以保存游戏内数据的功能。
 

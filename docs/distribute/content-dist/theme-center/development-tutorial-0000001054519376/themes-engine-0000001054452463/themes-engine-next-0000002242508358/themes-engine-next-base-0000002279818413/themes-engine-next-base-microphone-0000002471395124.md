@@ -2,7 +2,9 @@
 title: "适配功能：麦克风音量感知&lt;Microphone&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-microphone-0000002471395124
+format: md
 ---
+
 
 # 适配功能：麦克风音量感知&lt;Microphone&gt;
 

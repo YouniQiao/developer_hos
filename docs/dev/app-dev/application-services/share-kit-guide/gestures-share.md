@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "隔空传送"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-overview)**
 * **[打开设备侧隔空传送开关](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-open)**

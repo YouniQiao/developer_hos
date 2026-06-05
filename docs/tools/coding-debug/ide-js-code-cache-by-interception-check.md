@@ -1,7 +1,9 @@
 ---
 title: "@performance/js-code-cache-by-interception-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/js-code-cache-by-interception-check
 

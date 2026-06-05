@@ -1,7 +1,9 @@
 ---
 title: "多工程构建"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 多工程构建
 

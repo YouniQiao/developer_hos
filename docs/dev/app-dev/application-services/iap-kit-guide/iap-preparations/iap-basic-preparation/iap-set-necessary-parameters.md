@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "（可选）配置应用内购买服务参数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-set-necessary-parameters
+format: md
 ---
+
 
 ## 配置订单/订阅通知接收地址
 

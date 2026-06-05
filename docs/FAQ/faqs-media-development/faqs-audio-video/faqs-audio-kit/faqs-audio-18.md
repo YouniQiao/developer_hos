@@ -4,6 +4,7 @@ title: "如何在录制采集音频时获取麦克风的音量大小"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-18
 ---
 
+
 **问题现象**
 
 使用AVRecorder或者AudioCapturer录制音频时，如何实时获取麦克风的音量大小。

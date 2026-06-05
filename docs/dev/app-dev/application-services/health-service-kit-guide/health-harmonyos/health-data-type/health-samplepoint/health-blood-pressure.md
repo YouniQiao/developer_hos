@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "血压"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-blood-pressure
+format: md
 ---
+
 
 此数据记录用户在某时刻的血压数据。
 

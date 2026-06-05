@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "扫码直达跳转失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-2
+format: md
 ---
+
 
 **问题现象**
 

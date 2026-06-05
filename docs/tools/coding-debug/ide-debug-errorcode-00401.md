@@ -1,7 +1,9 @@
 ---
 title: "运行配置错误码"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 运行配置错误码
 
@@ -565,7 +567,7 @@ FA工程模型不支持debugLine。
 
 <strong>处理步骤</strong>
 
-在运行/调试配置面板取消勾选<strong>[Enable DebugLine](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-debug-configurations#section21619254511)</strong>。
+在运行/调试配置面板取消勾选\<strong\>[Enable DebugLine](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-debug-configurations#section21619254511)</strong>。
 
 #### 00401029 获取SDK版本失败
 

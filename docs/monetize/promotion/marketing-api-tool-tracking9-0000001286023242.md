@@ -2,7 +2,9 @@
 title: "查询关联关系分析密钥"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking9-0000001286023242
+format: md
 ---
+
 # 查询关联关系分析密钥
 
 您通过本接口可以查询关联关系分析密钥。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "跨设备互通特性简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service-overview
+format: md
 ---
+
 
 对于API 6.0.0(20)之前版本，仅支持匹配跨端拍照、文档扫描、图库选择器；对于API 6.0.0(20)及之后版本，支持匹配跨端拍照、文档扫描、图库选择器、视频选择器、图片和视频选择器；从API 6.1.0(23)开始，TV、Phone、Tablet或PC/2in1设备可调用具备如下能力的远程设备：支持拍照、扫描及图库（图片与视频）能力的Phone和Tablet，支持图库（图片与视频）能力的PC/2in1设备。
 

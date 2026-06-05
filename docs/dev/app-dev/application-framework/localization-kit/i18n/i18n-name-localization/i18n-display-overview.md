@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-display-overview
+format: md
 ---
+
 
 本地化是指将语言、地区、脚本、时区、历法和日期等区域性元素按照本地的语言习惯显示。
 

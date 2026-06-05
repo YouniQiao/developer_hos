@@ -4,6 +4,7 @@ title: "Swiper如何自定义导航点高度位置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-393
 ---
 
+
 **问题描述**
 
 [Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper)组件内置[indicator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#indicator)UI样式有宽高，不支持自定义修改。

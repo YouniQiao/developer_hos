@@ -1,7 +1,9 @@
 ---
 title: "缓存读写"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-cache-real-time-server-0000002361670592
+format: md
 ---
+
 
 您可以使用ActionArgs.SDK相关方法实现一些缓存读写的业务逻辑，包括设置、获取以及删除缓存信息等使用场景。
 

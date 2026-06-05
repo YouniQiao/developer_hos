@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "阅读进度通知"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-progress
+format: md
 ---
+
 
 当页面展示时，会通过页面展示回调接口返回页面渲染信息。页面渲染信息提供用于阅读进度跳转的domPos及resourceIndex属性，开发者可将属性缓存到数据库当中，用于阅读进度的恢复。
 

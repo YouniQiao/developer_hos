@@ -4,6 +4,7 @@ title: "如何在ArkTS侧监听Native侧日志信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-64
 ---
 
+
 **问题现象**
 
 通过ArkTS侧向Native侧注册日志监听接口，当在Native侧任一业务中调用日志接口时，日志将通过回调上报给ArkTS侧。是否可以提供一个示例？

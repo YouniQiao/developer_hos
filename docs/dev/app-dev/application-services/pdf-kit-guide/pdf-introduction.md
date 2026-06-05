@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "PDF Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-introduction
+format: md
 ---
+
 
 PDF Kit（PDF服务）包含pdfService和PdfView组件。
 

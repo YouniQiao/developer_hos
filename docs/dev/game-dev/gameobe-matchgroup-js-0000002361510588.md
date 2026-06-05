@@ -1,7 +1,9 @@
 ---
 title: "队伍匹配"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-matchgroup-js-0000002361510588
+format: md
 ---
+
 
 玩家还可以先组建队伍，然后通过发起组队匹配的方式，并根据自定义规则中设置的等级、胜率等属性进行择优匹配。此种方式主要适用于好友组队开黑等玩法。
 

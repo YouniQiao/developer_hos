@@ -2,7 +2,9 @@
 title: "评论与评分"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/comment-management-0000002246992933
+format: md
 ---
+
 
 # 评论与评分
 

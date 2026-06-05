@@ -1,7 +1,9 @@
 ---
 title: "FrameNode的isAttached接口是否可以判断FrameNode节点出现在屏幕上"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-459
+format: md
 ---
+
 
 FrameNode的isAttached接口原本设计是节点是否被挂载到主节点树上，与其是否出现在屏幕上无关，不在屏幕上的节点也可能已挂载到主树上（例如用ForEach构建List场景），不建议使用该接口进行判断。
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-require-imports"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-require-imports
 

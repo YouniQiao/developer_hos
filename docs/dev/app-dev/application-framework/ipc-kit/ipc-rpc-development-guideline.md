@@ -1,7 +1,9 @@
 ---
 title: "IPC与RPC通信开发指导(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-development-guideline
+format: md
 ---
+
 
 ## 场景介绍
 

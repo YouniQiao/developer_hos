@@ -2,7 +2,9 @@
 title: 数据可视化
 sidebar_label: 数据可视化
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/datapanel-0000001956815481
+format: md
 ---
+
 # 数据可视化
 
 将传统数据转换成可视化的图形，把隐藏在数据中的信息以更加直观、友好、视觉化的方式直接展现于用户面前，提升用户获取数据信息的效率。环形进度数据开发相关能力请参考 [DataPanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-datapanel) 文档，图标类数据开发相关能力请参考 [Gauge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-gauge) 文档。

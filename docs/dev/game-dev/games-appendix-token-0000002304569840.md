@@ -1,7 +1,9 @@
 ---
 title: "获取Token（项目级）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-appendix-token-0000002304569840
+format: md
 ---
+
 
 ## 功能介绍
 

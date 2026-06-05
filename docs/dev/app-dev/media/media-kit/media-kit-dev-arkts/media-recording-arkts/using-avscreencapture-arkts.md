@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVScreenCaptureRecorder录屏写文件(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avscreencapture-arkts
+format: md
 ---
+
 
 屏幕录制主要为主屏幕录屏功能。
 

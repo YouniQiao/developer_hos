@@ -2,7 +2,9 @@
 title: "BatchAddSubTaskAM"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-batchaddsubtask-0000001228012377
+format: md
 ---
+
 # BatchAddSubTaskAM
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

@@ -4,6 +4,7 @@ title: "项目工程中怎样配置Native的版本"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-55
 ---
 
+
 在工程级build-profile.json5的app.products中如下进行配置：
 
 ```

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "XEngine Kit（GPU加速引擎服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-guide
+format: md
 ---
+
 
 * **[XEngine Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-preparations)**

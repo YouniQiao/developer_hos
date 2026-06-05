@@ -2,7 +2,9 @@
 title: "使用模板制图功能"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-draw-tools-template-0000001349122800
+format: md
 ---
+
 # 使用模板制图功能
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)。

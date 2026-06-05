@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "调用函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-function
+format: md
 ---
+
 
 ## 约束与限制
 
@@ -95,4 +97,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/clou
    let returnValue = value.result;
    ```
 
-   value为步骤2中调用call()方法返回的cloudFunction.FunctionResult对象，返回值为云函数body返回的值，以[测试函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-test-function)时返回的结果为例，value.result = {"simple":"example"}。
+   value为步骤2中调用call()方法返回的cloudFunction.FunctionResult对象，返回值为云函数body返回的值，以[测试函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-test-function)时返回的结果为例，value.result = \{"simple":"example"\}。

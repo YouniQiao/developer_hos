@@ -2,7 +2,9 @@
 title: "数据查看"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-management-data-view-0000001328837518
+format: md
 ---
+
 # 数据查看
 
 支持服务商和子客服务商查看自己账户下关联账户的消耗：

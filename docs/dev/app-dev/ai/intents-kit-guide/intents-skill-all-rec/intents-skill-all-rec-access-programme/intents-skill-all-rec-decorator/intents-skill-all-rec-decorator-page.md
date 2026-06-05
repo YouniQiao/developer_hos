@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基于Page的装饰器方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-page
+format: md
 ---
+
 
 ## 概述
 
@@ -88,7 +90,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inte
    | intentVersion | string | 是 | 意图的版本号，用于兼容性管理。 |
    | displayName | string | 是 | 意图的展示名称，用于界面显示，最大长度：64。 |
    | llmDescription | string | 否 | 意图的描述，详细描述该意图可实现的能力，便于大模型理解并调用。 |
-   | parameters | Record<string, object> | 否 | 意图参数定义，描述参数类型以及含义。 |
+   | parameters | Record\<string, object\> | 否 | 意图参数定义，描述参数类型以及含义。 |
    | uiAbility | string | 否 | 页面依赖的UiAbility名，如果不传递默认使用EntryAbility。 |
    | pagePath | string | 是 | Navigation组件所在页面的路径，路径基于Module的根目录的相对路径。 |
    | navDestinationName | string | 否 | Navigation子页面名称，如果不填写，则跳转到pagePath指定的页面。 |

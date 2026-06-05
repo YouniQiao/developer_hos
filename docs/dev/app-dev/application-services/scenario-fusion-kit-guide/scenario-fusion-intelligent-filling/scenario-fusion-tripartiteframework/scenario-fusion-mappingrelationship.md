@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "H5/三方框架和HarmonyOS配置项映射关系"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-mappingrelationship
+format: md
 ---
+
 
 ## H5 autocomplete和HarmonyOS的ContentType的映射关系
 

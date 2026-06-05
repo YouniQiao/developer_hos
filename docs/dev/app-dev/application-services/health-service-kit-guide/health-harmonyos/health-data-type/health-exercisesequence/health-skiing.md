@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "滑雪"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-skiing
+format: md
 ---
+
 
 ## 冬季两项
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "管理归因角色"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-register
+format: md
 ---
+
 
 应用生态伙伴通过应用归因服务云端管理台注册归因角色及配置信息，包括：角色、名称、回传地址（用于接收归因结果回传的URL）、公钥。注册成功后平台生成归因角色ID。
 

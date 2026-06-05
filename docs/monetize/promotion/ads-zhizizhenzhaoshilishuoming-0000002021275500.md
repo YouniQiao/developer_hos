@@ -2,7 +2,9 @@
 title: "资质法律依据与示例"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-zhizizhenzhaoshilishuoming-0000002021275500
+format: md
 ---
+
 # 资质法律依据与示例
 
 ## 《计算机软件著作权登记证书》

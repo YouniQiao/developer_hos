@@ -1,7 +1,9 @@
 ---
 title: "卡片规格"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/widget-specifications
+format: md
 ---
+
 
 # 卡片规格
 

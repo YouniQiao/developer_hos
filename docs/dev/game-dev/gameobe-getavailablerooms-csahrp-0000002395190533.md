@@ -1,7 +1,9 @@
 ---
 title: "获取可加入房间列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-getavailablerooms-csahrp-0000002395190533
+format: md
 ---
+
 
 除通过房间ID加入房间外，玩家还可以通过获取当前可加入的房间列表，选择加入其中某一个房间。
 

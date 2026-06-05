@@ -1,7 +1,9 @@
 ---
 title: "文件访问与处置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-content
+format: md
 ---
+
 
 * **[启动应用目录文件扫描任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-scan)**
 * **[打开文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-open)**

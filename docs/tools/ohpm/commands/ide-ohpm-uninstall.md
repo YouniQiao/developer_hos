@@ -1,7 +1,9 @@
 ---
 title: "ohpm uninstall"
 displayed_sidebar: ohpmSidebar
+format: md
 ---
+
 
 # ohpm uninstall
 

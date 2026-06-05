@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "系统分享"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-share
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-share-overview)**
 * **[宿主应用发起分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-map-creation)**

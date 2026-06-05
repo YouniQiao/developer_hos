@@ -1,7 +1,9 @@
 ---
 title: "上传软件包"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-upload-pkg-0000002458362097
+format: md
 ---
+
 
 上传用于小游戏测试或正式上架的软件包后，AppGallery Connect会对软件包自动检测合法性，您可以根据报告或者错误码修复软件包问题。
 

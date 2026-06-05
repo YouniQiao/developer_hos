@@ -1,7 +1,9 @@
 ---
 title: "UI稳定性故障调试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-stability
+format: md
 ---
+
 
 * **[UI稳定性故障分析概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-guide)**
 * **[UI相关应用崩溃常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-crash-issues)**

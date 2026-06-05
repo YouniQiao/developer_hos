@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开通推送服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-config-setting
+format: md
 ---
+
 
 在开通推送服务前，请先参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”创建项目和应用工程。
 

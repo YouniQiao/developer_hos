@@ -1,7 +1,9 @@
 ---
 title: "开发指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-development-guide
+format: md
 ---
+
 
 ASCF框架支持采用类似小程序开发技术开发元服务，详情请参考[ASCF框架概述](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-overview)。在开始开发前，请先确保已[获取并安装ASCF插件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-plugin)。
 

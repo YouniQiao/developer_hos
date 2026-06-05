@@ -2,7 +2,9 @@
 title: "社区管理"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-community-operation-0000001194305462
+format: md
 ---
+
 
 # 社区管理
 

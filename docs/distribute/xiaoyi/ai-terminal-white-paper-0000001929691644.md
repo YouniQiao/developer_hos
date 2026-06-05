@@ -2,7 +2,9 @@
 title: "AI终端白皮书"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/ai-terminal-white-paper-0000001929691644
+format: md
 ---
+
 
 # AI终端白皮书
 

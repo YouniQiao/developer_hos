@@ -2,7 +2,9 @@
 title: "下架应用"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-removing-0000001194165316
+format: md
 ---
+
 
 # 下架应用
 

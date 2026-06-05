@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "压力管控(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-system-pressure
+format: md
 ---
+
 
 从API version 20开始，相机框架提供对系统压力等级的监听。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "地址越界事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events
+format: md
 ---
+
 
 ## 概述
 
@@ -29,7 +31,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiap
 
 | 接口名 | 描述 |
 | --- | --- |
-| [configEventPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventconfigeventpolicy22) (policy: EventPolicy): Promise<void> | 设置地址越界事件策略参数接口，支持开启地址越界事件的页面切换日志采集。 |
+| [configEventPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventconfigeventpolicy22) (policy: EventPolicy): Promise\<void\> | 设置地址越界事件策略参数接口，支持开启地址越界事件的页面切换日志采集。 |
 
 ### configEventPolicy接口参数设置说明
 

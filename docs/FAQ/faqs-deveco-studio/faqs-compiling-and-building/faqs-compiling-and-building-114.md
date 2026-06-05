@@ -4,6 +4,7 @@ title: "编译报错“generate SignerBlock failed”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-114
 ---
 
+
 **问题现象**
 
 编译构建时，出现错误：生成 SignerBlock 失败。

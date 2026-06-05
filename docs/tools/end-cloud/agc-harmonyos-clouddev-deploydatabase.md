@@ -2,7 +2,9 @@
 
 title: "部署云数据库"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 部署云数据库
 

@@ -1,7 +1,9 @@
 ---
 title: "游戏预约（APP）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-pre-order-applyfor-0000002286057048
+format: md
 ---
+
 
 游戏预约指在游戏首发前进行宣传，配合游戏论坛、资讯的持续更新曝光，保证首发前的游戏热度，为正式首发凝聚力量。当用户对游戏感兴趣时会选择预约游戏，在游戏首发后，华为游戏中心会给已预约的用户发送通知，这些用户会有较高概率转化成游戏玩家，因此我们强烈推荐您使用游戏预约。游戏预约流程如下：
 

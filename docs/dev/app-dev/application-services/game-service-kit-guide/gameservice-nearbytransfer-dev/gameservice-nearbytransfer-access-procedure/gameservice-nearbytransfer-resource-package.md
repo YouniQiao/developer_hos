@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "传输资源包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-resource-package
+format: md
 ---
+
 
 游戏近场快传支持已安装游戏的玩家间传输游戏内资源包，节省玩家下载资源包所需的流量和时间。
 
@@ -55,26 +57,26 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game
 
 | 接口名 | 描述 |
 | --- | --- |
-| [create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfercreate)(createParameters: CreateParameters): Promise<CreateResult> | 创建游戏近场快传服务。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferonconnectnotify)(type: 'connectNotify', callback: Callback<ConnectNotification>): void | 订阅连接通知事件。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferoffconnectnotify)(type: 'connectNotify', callback?: Callback<ConnectNotification>): void | 取消订阅连接通知事件。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferondiscovery)(type: 'discovery', callback: Callback<DiscoveryResult>): void | 订阅发现结果事件。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferoffdiscovery)(type: 'discovery', callback?: Callback<DiscoveryResult>): void | 取消订阅发现结果事件。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferonreceivepackageinfo)(type: 'receivePackageInfo', callback: Callback<PackageInfo>): void | 订阅收到包信息事件。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferoffreceivepackageinfo)(type: 'receivePackageInfo', callback?: Callback<PackageInfo>): void | 取消订阅收到包信息事件。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferontransfernotify)(type: 'transferNotify', callback: Callback<TransferNotification>): void | 订阅传输通知事件。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferofftransfernotify)(type: 'transferNotify', callback?: Callback<TransferNotification>): void | 取消订阅传输通知事件。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferonerror)(type: 'error', callback: Callback<ReturnResult>): void | 订阅错误事件。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferofferror)(type: 'error', callback?: Callback<ReturnResult>): void | 取消订阅错误事件。 |
-| [publishNearbyGame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferpublishnearbygame)(): Promise<void> | 发布近场快传服务。 |
-| [autoBindNearbyGame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferautobindnearbygame)(): Promise<void> | 自动绑定近场快传服务。 |
-| [discoveryNearbyGame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdiscoverynearbygame)(): Promise<void> | 发现近场快传服务。 |
-| [bindNearbyGame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferbindnearbygame)(bindParameters: BindParameters): Promise<void> | 绑定指定近场快传服务。 |
-| [acceptCollaboration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferacceptcollaboration)(acceptParameters: Record<string, object>): Promise<void> | 接受协同。 |
-| [sendPackageInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfersendpackageinfo)(packageInfo: PackageInfo): Promise<void> | 接收端发送自身文件信息。 |
-| [replyPackageInfoResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferreplypackageinforesult)(packageInfoResult: PackageInfoResult): Promise<void> | 上报包信息对比结果。 |
-| [transferPackageData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfertransferpackagedata)(packageData: PackageData): Promise<void> | 传输包数据。 |
-| [destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdestroy)(): Promise<void> | 销毁游戏近场快传服务。 |
+| [create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfercreate)(createParameters: CreateParameters): Promise\<CreateResult\> | 创建游戏近场快传服务。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferonconnectnotify)(type: 'connectNotify', callback: Callback\<ConnectNotification\>): void | 订阅连接通知事件。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferoffconnectnotify)(type: 'connectNotify', callback?: Callback\<ConnectNotification\>): void | 取消订阅连接通知事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferondiscovery)(type: 'discovery', callback: Callback\<DiscoveryResult\>): void | 订阅发现结果事件。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferoffdiscovery)(type: 'discovery', callback?: Callback\<DiscoveryResult\>): void | 取消订阅发现结果事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferonreceivepackageinfo)(type: 'receivePackageInfo', callback: Callback\<PackageInfo\>): void | 订阅收到包信息事件。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferoffreceivepackageinfo)(type: 'receivePackageInfo', callback?: Callback\<PackageInfo\>): void | 取消订阅收到包信息事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferontransfernotify)(type: 'transferNotify', callback: Callback\<TransferNotification\>): void | 订阅传输通知事件。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferofftransfernotify)(type: 'transferNotify', callback?: Callback\<TransferNotification\>): void | 取消订阅传输通知事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferonerror)(type: 'error', callback: Callback\<ReturnResult\>): void | 订阅错误事件。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferofferror)(type: 'error', callback?: Callback\<ReturnResult\>): void | 取消订阅错误事件。 |
+| [publishNearbyGame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferpublishnearbygame)(): Promise\<void\> | 发布近场快传服务。 |
+| [autoBindNearbyGame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferautobindnearbygame)(): Promise\<void\> | 自动绑定近场快传服务。 |
+| [discoveryNearbyGame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdiscoverynearbygame)(): Promise\<void\> | 发现近场快传服务。 |
+| [bindNearbyGame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferbindnearbygame)(bindParameters: BindParameters): Promise\<void\> | 绑定指定近场快传服务。 |
+| [acceptCollaboration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferacceptcollaboration)(acceptParameters: Record\<string, object\>): Promise\<void\> | 接受协同。 |
+| [sendPackageInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfersendpackageinfo)(packageInfo: PackageInfo): Promise\<void\> | 接收端发送自身文件信息。 |
+| [replyPackageInfoResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferreplypackageinforesult)(packageInfoResult: PackageInfoResult): Promise\<void\> | 上报包信息对比结果。 |
+| [transferPackageData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfertransferpackagedata)(packageData: PackageData): Promise\<void\> | 传输包数据。 |
+| [destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdestroy)(): Promise\<void\> | 销毁游戏近场快传服务。 |
 
 ## 接入步骤
 

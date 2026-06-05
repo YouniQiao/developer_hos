@@ -1,7 +1,9 @@
 ---
 title: "后台软件资源合理使用"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-software-resources
+format: md
 ---
+
 
 # 后台软件资源合理使用
 

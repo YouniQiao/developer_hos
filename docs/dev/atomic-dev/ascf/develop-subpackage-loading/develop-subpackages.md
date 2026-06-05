@@ -1,7 +1,9 @@
 ---
 title: "分包"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-subpackages
+format: md
 ---
+
 
 假设应用根目录文件组织如下：
 

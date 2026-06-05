@@ -2,7 +2,9 @@
 title: "查询符合条件的商品数量"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa10-0000001286502750
+format: md
 ---
+
 # 查询符合条件的商品数量
 
 您通过本接口可以查询符合条件的商品数量。

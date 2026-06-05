@@ -1,7 +1,9 @@
 ---
 title: "增量构建"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 增量构建
 

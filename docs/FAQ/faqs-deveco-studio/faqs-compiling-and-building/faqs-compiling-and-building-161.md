@@ -4,6 +4,7 @@ title: "编译报错“Duplicate 'routerMap' object names detected.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-161
 ---
 
+
 **错误描述**
 
 routerMap配置中存在重复名称。

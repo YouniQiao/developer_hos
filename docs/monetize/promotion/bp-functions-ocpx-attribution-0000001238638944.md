@@ -2,7 +2,9 @@
 title: "对接归因"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-attribution-0000001238638944
+format: md
 ---
+
 # 对接归因
 
 根据需要选择您的归因对接方案，建议您优先使用监测链接进行对接。

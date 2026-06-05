@@ -2,7 +2,9 @@
 title: 应用架构
 sidebar_label: 应用架构
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/application-architecture-0000002202799801
+format: md
 ---
+
 # 应用架构
 
 应用需遵循一定的系统规范进行应用架构、应用导航的设计。

@@ -1,7 +1,9 @@
 ---
 title: "分层架构设计"
 sidebar_position: 2
+format: md
 ---
+
 
 # 分层架构设计
 

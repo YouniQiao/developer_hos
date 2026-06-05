@@ -4,6 +4,7 @@ title: "测试报告中，所有检测项均异常，异常原因提示“the ux
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ux-publish-test-2
 ---
 
+
 若出现该场景，请前往DevEco Testing客户端-设置-问题反馈，或通过[华为开发者联盟-在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)，提交该场景信息（测试服务名称+异常任务信息+问题描述+问题截图），以便于研发团队进一步分析。
 
 客户端提交反馈时，需开启日志上传功能。通过华为开发者联盟提单时，请附上工具日志。

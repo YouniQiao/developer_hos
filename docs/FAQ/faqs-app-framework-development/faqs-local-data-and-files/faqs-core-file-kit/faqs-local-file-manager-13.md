@@ -4,6 +4,7 @@ title: "Hash.hash是否支持同步接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-13
 ---
 
+
 **解决措施**
 
 [@ohos.file.hash](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-hash)提供文件哈希处理能力。

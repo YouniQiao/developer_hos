@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取设备的位置信息开发指导(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-guidelines
+format: md
 ---
+
 
 ## 场景概述
 

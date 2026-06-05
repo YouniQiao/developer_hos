@@ -1,7 +1,9 @@
 ---
 title: "progress"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-progress
+format: md
 ---
+
 
 进度条。
 

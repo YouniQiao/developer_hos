@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-empty-function"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-empty-function
 

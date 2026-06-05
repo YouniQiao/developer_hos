@@ -1,7 +1,9 @@
 ---
 title: "拉起指定应用概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup-overview
+format: md
 ---
+
 
 本章节主要介绍如何通过应用链接跳转的方式拉起指定应用。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "App Linking Kit（应用链接服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-kit-guide
+format: md
 ---
+
 
 * **[App Linking Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-preparations)**

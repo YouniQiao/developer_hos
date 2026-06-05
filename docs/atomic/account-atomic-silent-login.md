@@ -1,7 +1,9 @@
 ---
 title: "登录"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-silent-login
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -1,7 +1,9 @@
 ---
 title: "如何判断蜂窝信号强度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-telephony-1
+format: md
 ---
+
 
 可以通过radio.getSignalInformation()接口获取蜂窝信号强度，具体步骤如下：
 

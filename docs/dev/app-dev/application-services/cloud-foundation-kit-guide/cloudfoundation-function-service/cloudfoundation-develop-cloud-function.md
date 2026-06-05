@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发云函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-develop-cloud-function
+format: md
 ---
+
 
 * **[开发函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-develop-function)**
 * **[创建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-create-and-config-function)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基于Link的装饰器方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-link
+format: md
 ---
+
 
 ## 概述
 
@@ -93,9 +95,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inte
    | displayName | string | 是 | 意图的展示名称，用于界面显示，最大长度：64。 |
    | llmDescription | string | 否 | 意图的描述，详细描述该意图可实现的能力，便于大模型理解并调用，接入自定义意图时，该字段必选。 |
    | uri | string | 是 | Link跳转uri。 |
-   | parameters | Record<string, object > | 否 | 意图参数定义，描述参数类型以及含义。 |
+   | parameters | Record\<string, object \> | 否 | 意图参数定义，描述参数类型以及含义。 |
    | paramMappings | LinkIntentParamMapping[] | 否 | Link的参数映射，定义了意图入参与uri拼接参数的映射关系，如果需要参数映射或者需要添加wantParams，需要使用该字段。 |
-   | result | Record<string, object > | 否 | 意图执行返回结果定义。 |
+   | result | Record\<string, object \> | 否 | 意图执行返回结果定义。 |
 
    LinkIntentParamMapping结构如下表：
 

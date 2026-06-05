@@ -1,7 +1,9 @@
 ---
 title: "Node-API跨语言调用"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-using-napi-interaction-0000002411166425
+format: md
 ---
+
 
 HarmonyOS Node-API是基于Node.js 12.x LTS的[Node-API](https://nodejs.org/docs/latest-v12.x/api/n-api.html)规范扩展开发的机制，为开发者提供了ArkTS/JS与C/C++模块之间的交互能力。它提供了一组稳定的、跨平台的API，可以在不同的操作系统上使用。
 

@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API实现JS与C/C++语言交互开发流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process
+format: md
 ---
+
 
 使用JSVM-API实现跨语言交互，首先需按其机制注册和加载模块。
 

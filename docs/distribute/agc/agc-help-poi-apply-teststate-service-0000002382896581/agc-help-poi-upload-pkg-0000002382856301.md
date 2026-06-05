@@ -1,7 +1,9 @@
 ---
 title: "上传已注册意图的软件包"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-poi-upload-pkg-0000002382856301
+format: md
 ---
+
 
 ![](../img/agc-help-poi-upload-pkg-0000002382856301_0.png)
 

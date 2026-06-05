@@ -1,7 +1,9 @@
 ---
 title: "填写联系方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-contact-0000002424923354
+format: md
 ---
+
 
 若账号归属地为中国大陆，请填写小游戏负责人的联系方式，方便华为审核人员与您沟通小游戏上架的审核问题。
 

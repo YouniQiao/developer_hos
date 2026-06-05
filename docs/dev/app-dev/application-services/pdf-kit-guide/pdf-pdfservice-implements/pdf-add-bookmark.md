@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "添加、删除书签"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-bookmark
+format: md
 ---
+
 
 PDF Kit支持添加和删除PDF文档书签。
 

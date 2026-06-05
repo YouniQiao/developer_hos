@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "按需加载场景中，用户在加载指定模块后是否可以卸载，然后重新发起请求？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-30
+format: md
 ---
+
 
 可以卸载指定模块后重新调用[fetchModules](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanagerfetchmodules)接口发起按需加载请求。
 

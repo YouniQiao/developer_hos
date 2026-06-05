@@ -2,7 +2,9 @@
 title: "评估器"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/evaluation-commission-0000002513135882
+format: md
 ---
+
 
 # 评估器
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/space-infix-ops"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/space-infix-ops
 

@@ -2,7 +2,9 @@
 title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/overview-appchuhuo-0000001227874747
+format: md
 ---
+
 # 概述
 
 如果您希望提升您应用的活跃度，让更多的用户使用您的应用，或者您希望对应用内的某个活动进行推广，可以使用鲸鸿动能广告提供的应用促活广告。

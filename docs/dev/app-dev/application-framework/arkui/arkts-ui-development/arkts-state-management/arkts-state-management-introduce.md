@@ -1,7 +1,9 @@
 ---
 title: "状态管理原理介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-introduce
+format: md
 ---
+
 
 本文将介绍状态管理的基本原理。状态管理的核心逻辑是处理状态变量、自定义组件和系统组件之间的绑定关系。其工作流程可以概括为两个核心阶段：收集依赖和触发更新。
 

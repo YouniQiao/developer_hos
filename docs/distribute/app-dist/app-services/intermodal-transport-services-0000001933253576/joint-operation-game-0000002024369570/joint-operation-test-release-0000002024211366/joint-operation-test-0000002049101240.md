@@ -2,7 +2,9 @@
 title: "应用测试"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-test-0000002049101240
+format: md
 ---
+
 
 # 应用测试
 

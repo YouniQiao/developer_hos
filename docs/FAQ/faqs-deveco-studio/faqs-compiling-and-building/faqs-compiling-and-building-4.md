@@ -4,6 +4,7 @@ title: "编译报错“Cannot find module XXX or its corresponding type declarat
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-4
 ---
 
+
 * **场景一：**
 
   **问题现象**

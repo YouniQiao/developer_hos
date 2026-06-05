@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "高尔夫"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-golf
+format: md
 ---
+
 
 ## 高尔夫练习场
 

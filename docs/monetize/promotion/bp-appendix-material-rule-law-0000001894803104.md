@@ -2,7 +2,9 @@
 title: "法律法规规范"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-law-0000001894803104
+format: md
 ---
+
 # 法律法规规范
 
 基于广告法及《互联网广告管理暂行办法》等规定对广告内容及行为做出如下基本合规要求。

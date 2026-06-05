@@ -1,7 +1,9 @@
 ---
 title: "弹窗概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-overview
+format: md
 ---
+
 
 弹窗一般指打开应用时自动弹出或者用户行为操作时弹出的UI界面，用于短时间内展示用户需关注的信息或待处理的操作。
 

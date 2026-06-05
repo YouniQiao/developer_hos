@@ -1,7 +1,9 @@
 ---
 title: "本地密钥管理基础概念"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-concepts
+format: md
 ---
+
 
 在使用通用密钥库完成应用开发前，开发者需要了解以下相关概念，以下概念将贯穿整个开发过程。
 

@@ -2,7 +2,9 @@
 title: "应用市场应用推广评测"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-promotion-evaluation-0000001379837553
+format: md
 ---
+
 # 应用市场应用推广评测
 
 ## 概述

@@ -4,6 +4,7 @@ title: "如何理解AspectRatio对布局的影响"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-371
 ---
 
+
 aspectRatio在布局中发挥两个主要作用：
 
 * 第一个作用是和其他属性一起共同计算组件的约束以测量尺寸。

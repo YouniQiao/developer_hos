@@ -1,7 +1,9 @@
 ---
 title: "地址流转至车机"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-address-hop
+format: md
 ---
+
 
 将手机应用的地址文本流转至车机指定地图应用的能力。
 

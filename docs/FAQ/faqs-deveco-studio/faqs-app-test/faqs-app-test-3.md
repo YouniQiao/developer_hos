@@ -4,6 +4,7 @@ title: "运行测试用例时，结果树始终处于加载状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-3
 ---
 
+
 **问题现象**
 
 如果多个模块（如entry和feature模块）同时依赖HSP，在设备上先运行entry和HSP模块，再执行feature模块下的测试用例时，任务结果树会一直处于加载状态，无法正常完成。

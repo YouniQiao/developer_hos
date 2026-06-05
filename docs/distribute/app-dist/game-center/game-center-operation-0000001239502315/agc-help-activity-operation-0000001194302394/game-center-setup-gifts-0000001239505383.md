@@ -2,7 +2,9 @@
 title: "礼包管理"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-gifts-0000001239505383
+format: md
 ---
+
 
 # 礼包管理
 

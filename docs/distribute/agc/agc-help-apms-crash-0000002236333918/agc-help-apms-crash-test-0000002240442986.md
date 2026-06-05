@@ -1,7 +1,9 @@
 ---
 title: "测试崩溃实现"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-crash-test-0000002240442986
+format: md
 ---
+
 
 通常应用程序崩溃出现的概率较小，您没必要等待崩溃出现来确定崩溃模块是否正常工作。您可以在测试应用时手动制造一个崩溃，然后在AGC上查看崩溃上报情况，以测试崩溃模块是否正常运行。
 

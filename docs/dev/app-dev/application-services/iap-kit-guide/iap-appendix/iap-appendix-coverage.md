@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "华为IAP范围覆盖"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-appendix-coverage
+format: md
 ---
+
 
 IAP已支持全球多个国家或地区，为当地的消费者和商户提供安全、便捷、高效的支付服务。
 

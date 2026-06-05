@@ -1,7 +1,9 @@
 ---
 title: "如何在ArkTS中实现运行时注解的能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-77
+format: md
 ---
+
 
 可以使用TS三方库reflect-metadata获得类似Java运行时注解的功能。参考[reflect-metadata](https://gitcode.com/openharmony-tpc/openharmony_tpc_samples/tree/master/reflect-metadata#https://gitee.com/openharmony-tpc/docs/blob/master/OpenHarmony_har_usage.md)
 

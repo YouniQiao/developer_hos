@@ -1,7 +1,9 @@
 ---
 title: "ArkTS是否支持调用js文件中的方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-146
+format: md
 ---
+
 
 **问题描述**
 

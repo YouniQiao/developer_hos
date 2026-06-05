@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "查询设备安全模式(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-securitymode
+format: md
 ---
+
 
 ## 场景介绍
 

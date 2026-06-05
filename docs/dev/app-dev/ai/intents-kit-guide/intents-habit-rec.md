@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "习惯推荐方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-introduction)**
 * **[场景体验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-scene-experience)**

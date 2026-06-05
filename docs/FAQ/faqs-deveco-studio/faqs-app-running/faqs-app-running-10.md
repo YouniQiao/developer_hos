@@ -4,6 +4,7 @@ title: "在Windows电脑上启动模拟器，提示未开启Hyper-V"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-10
 ---
 
+
 **问题现象**一
 
 启动模拟器时，如果未开启Hyper-V，或在虚拟环境中使用模拟器，会弹窗提示“Hyper-V not enabled”。

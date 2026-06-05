@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "查看资源包分发数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-data
+format: md
 ---
+
 
 资源包下载任务正式发布后，开发者可以前往AppGallery Connect查看资源包分发情况。
 

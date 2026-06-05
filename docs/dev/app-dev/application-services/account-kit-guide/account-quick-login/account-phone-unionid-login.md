@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "华为账号一键登录（获取手机号和UnionID/OpenID）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login
+format: md
 ---
+
 
 ## 概述
 
@@ -30,7 +32,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/acco
 ## 约束与限制
 
 1. 应用满足《[常见类型移动互联网应用程序必要个人信息范围规定](http://www.cac.gov.cn/2021-03/22/c_1617990997054277.htm)》中使用手机号的必要业务场景。
-2. 使用华为账号一键登录功能用户必须同意[《华为账号用户认证协议》](https://privacy.consumer.huawei.com/legal/id/authentication-terms.htm?code=CN&language=zh-CN)，当用户点击[《华为账号用户认证协议》](https://privacy.consumer.huawei.com/legal/id/authentication-terms.htm?code=CN&language=zh-CN)，系统浅色模式下应用需跳转到如下链接<https://privacy.consumer.huawei.com/legal/id/authentication-terms.htm?code=CN&language=zh-CN>，系统深色模式下跳转到<https://privacy.consumer.huawei.com/legal/id/authentication-terms.htm?code=CN&language=zh-CN&bgmode=black>。
+2. 使用华为账号一键登录功能用户必须同意[《华为账号用户认证协议》](https://privacy.consumer.huawei.com/legal/id/authentication-terms.htm?code=CN&language=zh-CN)，当用户点击[《华为账号用户认证协议》](https://privacy.consumer.huawei.com/legal/id/authentication-terms.htm?code=CN&language=zh-CN)，系统浅色模式下应用需跳转到如下链接https://privacy.consumer.huawei.com/legal/id/authentication-terms.htm?code=CN&language=zh-CN，系统深色模式下跳转到https://privacy.consumer.huawei.com/legal/id/authentication-terms.htm?code=CN&language=zh-CN&bgmode=black。
 3. 应用在用户同意后获取到手机号，需要根据自身业务场景判断使用的方式，必要时增加其他安全验证手段，比如对二次放号的判断。
 4. 华为账号一键登录服务当前仅限中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）用户可用。
 5. 华为账号一键登录支持Phone、Tablet、PC/2in1设备。并且从5.1.1(19)版本开始，新增支持TV设备。
@@ -109,12 +111,12 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/acco
 | --- | --- |
 | [createAuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#createauthorizationwithhuaweiidrequest)(): [AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest) | 获取授权接口，通过[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)传入一键登录的scope：quickLoginAnonymousPhone，即可在授权结果中获取到用户的匿名手机号和Authorization Code。 |
 | [constructor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#constructor)(context?: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)) | 创建授权请求Controller。 |
-| [executeRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#executerequest-1)(request: [AuthenticationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationrequest)): Promise<[AuthenticationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationresponse)> | 通过Promise方式执行授权操作。 |
+| [executeRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#executerequest-1)(request: [AuthenticationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationrequest)): Promise[AuthenticationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationresponse) | 通过Promise方式执行授权操作。 |
 | [LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button#loginwithhuaweiidbutton) | 华为账号Button登录组件。  该组件仅纯文本样式支持华为账号一键登录功能。开发者可以通过调整按钮的大小、圆角等参数以适配HarmonyOS应用登录界面。如果仍然不能满足开发者的诉求，可以使用[Style](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#style)的BUTTON\_CUSTOM值定义按钮的文字颜色和背景色。 |
-| [onClickLoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#onclickloginwithhuaweiidbutton-1)(callback: AsyncCallback<[HuaweiIDCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#huaweiidcredential)>): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 注册华为账号一键登录按钮的结果回调。 |
+| [onClickLoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#onclickloginwithhuaweiidbutton-1)(callback: AsyncCallback[HuaweiIDCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#huaweiidcredential)): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 注册华为账号一键登录按钮的结果回调。 |
 | [setAgreementStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#setagreementstatus-1)(agreementStatus: [AgreementStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#agreementstatus)): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 设置协议状态方法。用户未同意协议前设置协议状态为NOT\_ACCEPTED，用户同意协议后设置协议状态为ACCEPTED，才可以完成华为账号登录。 |
-| [onClickEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#onclickevent-1)(callback: AsyncCallback<[ClickEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#clickevent)>): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 注册华为账号一键登录按钮的点击事件回调。 |
-| [continueLogin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#continuelogin)(callback: AsyncCallback<void>): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 用户点击协议弹框的同意并登录按钮结果回调。 |
+| [onClickEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#onclickevent-1)(callback: AsyncCallback[ClickEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#clickevent)): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 注册华为账号一键登录按钮的点击事件回调。 |
+| [continueLogin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#continuelogin)(callback: AsyncCallback\<void\>): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 用户点击协议弹框的同意并登录按钮结果回调。 |
 
 ![](./img/8b7d2250.png)
 

@@ -1,7 +1,9 @@
 ---
 title: "HiSmartPerf技术支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-support-0000002286788044
+format: md
 ---
+
 
 使用游戏性能调优工具遇到问题时，可以按照以下顺序寻求帮助。
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-unnecessary-boolean-literal-compare"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-unnecessary-boolean-literal-compare
 

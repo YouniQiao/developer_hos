@@ -1,7 +1,9 @@
 ---
 title: "代码生成"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 代码生成
 

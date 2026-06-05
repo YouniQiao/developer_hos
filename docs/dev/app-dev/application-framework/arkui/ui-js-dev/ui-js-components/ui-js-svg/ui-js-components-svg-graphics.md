@@ -1,9 +1,11 @@
 ---
 title: "绘制图形"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-graphics
+format: md
 ---
 
-svg组件可以用来绘制常见图形和线段，如矩形（<rect>）、圆形（<circle>）、线条(<line>）等，具体支持图形样式还请参考[svg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-svg)组件。
+
+svg组件可以用来绘制常见图形和线段，如矩形（\<rect\>）、圆形（\<circle\>）、线条(\<line\>）等，具体支持图形样式还请参考[svg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-svg)组件。
 
 在本场景中，绘制各种图形拼接成一个小房子。
 

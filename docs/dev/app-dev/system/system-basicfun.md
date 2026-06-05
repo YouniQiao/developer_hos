@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基础功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-basicfun
+format: md
 ---
+
 
 * **[Basic Services Kit（基础服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-services-kit)**
 * **[Desktop Extension Kit（桌面拓展服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/status-bar-extension-kit-guide)**

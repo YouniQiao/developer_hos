@@ -1,7 +1,9 @@
 ---
 title: "声明权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions
+format: md
 ---
+
 
 应用在申请权限时，需在项目的配置文件中逐个声明所需权限，否则无法获取授权，并可能导致应用上架申请被驳回。
 
@@ -65,7 +67,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/decl
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/RequestUserAuthorization/entry/src/main/module.json5#L16-L106" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：module.json5</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/RequestUserAuthorization/entry/src/main/module.json5#L16-L106" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：module.json5</a></div>
 
 
 ## 权限使用理由的文案内容规范
@@ -120,5 +122,5 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/decl
    **样例**：用于获取通话状态和移动网络信息，用于安全运营和统计计费服务。
 2. 如果是申请其他权限组中的权限，系统将使用权限组内当前被申请的第一个子权限的使用理由，作为该权限组的使用理由进行展示。组内的排序固定按照权限管理内排列的权限组数组顺序。
 
-   举例说明：权限组A = {权限A, 权限B, 权限C}；申请传入的权限是{权限C, 权限B}，界面将展示权限B的权限使用理由。
+   举例说明：权限组A = \{权限A, 权限B, 权限C\}；申请传入的权限是\{权限C, 权限B\}，界面将展示权限B的权限使用理由。
 3. 如果应用内多包申请的权限名称相同，但权限使用理由不一致，系统返回的权限申请详细信息[ReqPermissionDetail](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-bundleinfo#reqpermissiondetail)中只会显示一个权限申请理由。优先级从高到低为：entry类型HAP、feature类型HAP、应用内HSP。

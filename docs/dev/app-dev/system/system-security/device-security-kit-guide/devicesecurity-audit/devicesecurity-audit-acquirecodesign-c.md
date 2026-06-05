@@ -1,7 +1,9 @@
 ---
 title: "代码签名信息查询场景（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-acquirecodesign-c
+format: md
 ---
+
 
 从6.1.1(24)开始，新增提供文件代码签名信息查询接口，可以获取设备上已签名的文件签名信息。
 
@@ -67,6 +69,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
    }
    ```
  = nullptr;
-       }
-   }
+       \}
+   \}
    ```

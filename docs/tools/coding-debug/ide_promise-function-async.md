@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/promise-function-async"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/promise-function-async
 

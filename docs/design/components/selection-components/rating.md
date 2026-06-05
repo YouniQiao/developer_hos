@@ -2,8 +2,10 @@
 title: 评分条
 sidebar_label: 评分条
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/rating-0000001929853906
+format: md
 ---
-{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用<MergedTable>组件还原 */}
+
+\{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 评分条
 

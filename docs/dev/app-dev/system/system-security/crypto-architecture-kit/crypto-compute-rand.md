@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "随机数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-rand
+format: md
 ---
+
 
 * **[安全随机数生成(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-random-number)**
 * **[安全随机数生成(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-random-number-ndk)**

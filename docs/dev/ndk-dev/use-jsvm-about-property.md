@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API接口设置JavaScript对象的属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-property
+format: md
 ---
+
 
 ## 简介
 

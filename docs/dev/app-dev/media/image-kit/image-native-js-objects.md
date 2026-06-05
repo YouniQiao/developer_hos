@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图片开发指导(依赖JS对象)(不再推荐)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-native-js-objects
+format: md
 ---
+
 
 * **[图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-native)**
 * **[图片编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding-native)**

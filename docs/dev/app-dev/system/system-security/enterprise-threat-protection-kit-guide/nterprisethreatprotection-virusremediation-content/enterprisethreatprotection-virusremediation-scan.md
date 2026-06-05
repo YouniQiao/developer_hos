@@ -1,7 +1,9 @@
 ---
 title: "启动应用目录文件扫描任务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-scan
+format: md
 ---
+
 
 ## 基本概念
 

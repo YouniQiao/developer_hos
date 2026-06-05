@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/func-call-spacing"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/func-call-spacing
 

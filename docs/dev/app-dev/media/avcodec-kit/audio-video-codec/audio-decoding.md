@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音频解码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-decoding
+format: md
 ---
+
 
 开发者可以调用本模块的Native API接口，完成音频解码，即将媒体数据解码为PCM码流。
 

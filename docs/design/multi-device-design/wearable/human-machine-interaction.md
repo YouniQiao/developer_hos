@@ -2,7 +2,9 @@
 title: 人机交互
 sidebar_label: 人机交互
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/human-machine-interaction-0000002167648022
+format: md
 ---
+
 # 人机交互
 
 ### **表冠**

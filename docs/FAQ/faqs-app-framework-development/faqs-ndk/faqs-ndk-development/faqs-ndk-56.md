@@ -4,6 +4,7 @@ title: "如何跨Hap模块调用C++ API"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-56
 ---
 
+
 **问题现象**
 
 开发者在使用Native Module进行C++开发时，若需在C++ NativeSDK Module A中调用C++ NativeSDK Module B中的代码，并支持源码调试，应按照以下步骤配置依赖关系：

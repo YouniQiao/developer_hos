@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅到系统未成年人模式开启了，这个时候应用要怎么处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-14
+format: md
 ---
+
 
 如果应用处于后台，可以在应用切换至前台时进行页面内容的刷新。开发者可自行关注应用后台行为是否需要中断，例如是否需要中断后台播放的音视频内容等，避免未成年人绕过限制，继续访问非适龄内容。
 

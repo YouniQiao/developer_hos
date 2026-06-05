@@ -1,7 +1,9 @@
 ---
 title: "调试意图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-debug
+format: md
 ---
+
 
 ## 概述
 

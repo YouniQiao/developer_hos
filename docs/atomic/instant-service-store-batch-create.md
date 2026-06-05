@@ -1,7 +1,9 @@
 ---
 title: "批量创建门店"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-batch-create
+format: md
 ---
+
 
 1. 在服务直达主界面，选择“门店管理”页签，点击“批量新建”。
 

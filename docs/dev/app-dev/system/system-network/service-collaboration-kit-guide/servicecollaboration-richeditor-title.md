@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "跨设备互通（RichEditor控件）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-richeditor-title
+format: md
 ---
+
 
 富文本控件[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor)已集成跨设备互通能力。在Tablet或PC/2in1设备上，用户可通过其右键菜单调用Phone的相机、扫描及图库（访问图片）功能。
 

@@ -4,6 +4,7 @@ title: "如何将ListItem的swipeAction滑动效果恢复到初始状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-277
 ---
 
+
 使用 ListScroller 提供的 closeAllSwipeActions() 方法恢复滑动效果，示例代码如下：
 
 ```

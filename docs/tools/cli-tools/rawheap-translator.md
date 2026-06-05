@@ -1,7 +1,9 @@
 ---
 title: "rawheap-translator工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # rawheap-translator工具
 

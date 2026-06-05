@@ -1,7 +1,9 @@
 ---
 title: "多网建议监听"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-recommendcallback
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -13,8 +15,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/netw
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type: 'multiPathRecommendation', callback: Callback<MultiPathRecommendationInfo>): void | 订阅多网建议信息变化。 |
-| off(type: 'multiPathRecommendation', callback?: Callback<MultiPathRecommendationInfo>): void | 取消订阅多网建议信息变化。 |
+| on(type: 'multiPathRecommendation', callback: Callback\<MultiPathRecommendationInfo\>): void | 订阅多网建议信息变化。 |
+| off(type: 'multiPathRecommendation', callback?: Callback\<MultiPathRecommendationInfo\>): void | 取消订阅多网建议信息变化。 |
 
 ## 开发步骤
 

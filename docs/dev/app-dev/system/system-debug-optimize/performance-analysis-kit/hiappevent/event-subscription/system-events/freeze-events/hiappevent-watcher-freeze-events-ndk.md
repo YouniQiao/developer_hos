@@ -1,7 +1,9 @@
 ---
 title: "订阅应用冻屏事件（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events-ndk
+format: md
 ---
+
 
 ## 简介
 

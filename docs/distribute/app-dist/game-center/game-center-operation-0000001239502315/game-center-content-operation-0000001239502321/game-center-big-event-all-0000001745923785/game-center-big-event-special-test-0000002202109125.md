@@ -2,7 +2,9 @@
 title: "测试（内测）"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-big-event-special-test-0000002202109125
+format: md
 ---
+
 
 # 测试（内测）
 

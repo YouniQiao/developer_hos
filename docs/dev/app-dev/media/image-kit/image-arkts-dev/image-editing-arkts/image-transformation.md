@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用PixelMap完成图像变换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-transformation
+format: md
 ---
+
 
 图片处理指对PixelMap进行相关的操作，如获取图片信息、裁剪、缩放、偏移、旋转、翻转、设置透明度、读写像素数据等。图片处理主要包括图像变换、[位图操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation)，本文介绍图像变换。
 

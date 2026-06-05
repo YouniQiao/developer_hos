@@ -2,7 +2,9 @@
 title: "快速集成"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_demo-0000001461263141
+format: md
 ---
+
 
 
 #### 快速集成SDK指引

@@ -1,7 +1,9 @@
 ---
 title: "编译报错智能分析"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 编译报错智能分析
 

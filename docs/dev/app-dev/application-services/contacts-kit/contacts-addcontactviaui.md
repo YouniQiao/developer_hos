@@ -2,14 +2,16 @@
 displayed_sidebar: appDevSidebar
 title: "使用picker管理联系人"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-addcontactviaui
+format: md
 ---
+
 
 ## 接口说明
 
 | 接口名 | 描述 |
 | --- | --- |
-| addContactViaUI(context: Context, contact: Contact): Promise<number> | 调用新建联系人接口，打开新建联系人UI界面，新建完成。使用Promise异步回调。 |
-| saveToExistingContactViaUI(context: Context, contact: Contact): Promise<number> | 调用保存至已有联系人接口，选择联系人UI界面并完成编辑。使用Promise异步回调。 |
+| addContactViaUI(context: Context, contact: Contact): Promise\<number\> | 调用新建联系人接口，打开新建联系人UI界面，新建完成。使用Promise异步回调。 |
+| saveToExistingContactViaUI(context: Context, contact: Contact): Promise\<number\> | 调用保存至已有联系人接口，选择联系人UI界面并完成编辑。使用Promise异步回调。 |
 
 ## 使用picker新建联系人
 

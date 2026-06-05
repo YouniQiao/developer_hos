@@ -1,7 +1,9 @@
 ---
 title: "快速适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation
+format: md
 ---
+
 
 密码自动填充服务依托ArkUI [TextInput 组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)为开发者提供的一系列登录场景相关控件，密码保险箱帮助开发者快速集成自动填充等功能，仅需在界面上使用ArkUI标准控件，开发者即可通过密码保险箱的便捷登录，让用户快速上手应用功能。
 

@@ -1,7 +1,9 @@
 ---
 title: HarmonyOS 代码工坊
 sidebar_label: HarmonyOS 代码工坊
+format: md
 ---
+
 
 # HarmonyOS 代码工坊
 

@@ -4,6 +4,7 @@ title: "Native调试堆栈可视化功能并行栈视图显示空白"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-56
 ---
 
+
 **问题现象**
 
 使用Native调试堆栈可视化功能时，如果在任意两个页签之间来回切换，可能会遇到并行栈视图界面显示为空白的情况。

@@ -1,7 +1,9 @@
 ---
 title: "游戏核心模块适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-works-0000002290527401
+format: md
 ---
+
 
 * **[生命周期适配](https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-uiability-lifecycle-0000002333176745)**
 * **[线程模型及线程间通信](https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-interthead-communication-0000002299257040)**

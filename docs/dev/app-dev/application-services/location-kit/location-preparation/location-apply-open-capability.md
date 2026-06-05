@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "申请开放能力权限指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-apply-open-capability
+format: md
 ---
+
 
 ## 开放能力申请准备
 

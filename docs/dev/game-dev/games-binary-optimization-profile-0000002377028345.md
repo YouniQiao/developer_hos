@@ -1,7 +1,9 @@
 ---
 title: "采集profile数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-profile-0000002377028345
+format: md
 ---
+
 
 ## 前提条件
 

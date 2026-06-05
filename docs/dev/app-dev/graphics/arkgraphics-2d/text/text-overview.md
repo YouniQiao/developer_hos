@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文本开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-overview
+format: md
 ---
+
 
 应用在开发和布局时，经常需要针对文本元素和内容进行排版、测量、绘制和显示等。字体引擎开发框架提供了一系列接口能力用于支持应用布局文本和管理字体。
 

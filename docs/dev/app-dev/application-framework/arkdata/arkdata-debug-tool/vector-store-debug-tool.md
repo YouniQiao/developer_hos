@@ -1,7 +1,9 @@
 ---
 title: "vector-store数据库调试工具指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vector-store-debug-tool
+format: md
 ---
+
 
 当前开发者在使用vector-store数据库进行开发调试和定位问题时，无法查看数据库文件中的内容信息，如元数据和用户数据等。
 
@@ -25,7 +27,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vect
 
   | 参数 | 参数值类型 | 描述 |
   | --- | --- | --- |
-  | -t | 字符串 | 数据库类型，进入到对应的数据库调试工具， 取值范围：{preference\_kv, preference\_xml, vector}。 |
+  | -t | 字符串 | 数据库类型，进入到对应的数据库调试工具， 取值范围：\{preference\_kv, preference\_xml, vector\}。 |
   | -f | 字符串 | 数据库文件全路径，包含文件名， 路径不能以‘/’结尾。 |
   | -h | 不涉及 | 打印程序帮助信息。 |
 
@@ -80,7 +82,7 @@ vector-store调试工具支持的命令如下表所示：
 | --- | --- |
 | .help | 显示帮助信息。 |
 | .q | .quit | 退出数据库交互模式。 |
-| .mode <table|print> | 设置输出模式， 默认是table。 |
+| .mode \<table|print\> | 设置输出模式， 默认是table。 |
 | .table | 列出所有表名。 |
 | .index | 列出所有索引名称。 |
 | .schema | 列出表的schemas。 |

@@ -1,7 +1,9 @@
 ---
 title: "离线部署模拟器"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 离线部署模拟器
 

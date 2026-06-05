@@ -4,6 +4,7 @@ title: "应用探索测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test
 ---
 
+
 * **[测试过程中，为什么测试页面截图会出现页面切换状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-1)**
 * **[测试过程中，控件语义识别中的“XXX的项”、“XXX的列”应如何理解](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-2)**
 * **[查看应用探索测试报告时，报告加载卡顿的原因是什么](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-3)**

@@ -1,7 +1,9 @@
 ---
 title: "配置隐私标签信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-privacy-tag-0000002367539634
+format: md
 ---
+
 
 游戏发布设备类型包括手机、平板、PC/2in1、智慧屏时，要求配置隐私标签信息。
 

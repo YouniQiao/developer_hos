@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "判断应用是否被系统分享拉起"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-launch-param
+format: md
 ---
+
 
 从5.1.0(18)版本开始，支持应用判断是否被系统分享拉起。
 

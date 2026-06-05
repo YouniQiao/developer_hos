@@ -1,7 +1,9 @@
 ---
 title: "应用稳定性体验建议"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-stability
+format: md
 ---
+
 
 # 应用稳定性体验建议
 

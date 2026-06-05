@@ -1,7 +1,9 @@
 ---
 title: "线程模型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thread-model-fa
+format: md
 ---
+
 
 [FA模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#fa模型)下的线程主要有如下三类：
 

@@ -1,7 +1,9 @@
 ---
 title: "托管代码到实时服务器"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-codehosting-realtime-server-0000002361510732
+format: md
 ---
+
 
 代码开发及本地调试完成后，需将代码托管到联机对战的实时服务器上。同时，在实时服务器的运行过程中，您还可以随时在AGC控制台查看服务器的运行日志。
 

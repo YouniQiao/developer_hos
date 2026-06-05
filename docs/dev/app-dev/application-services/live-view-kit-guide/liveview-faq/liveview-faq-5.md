@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "关于实况窗数量约束的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-5
+format: md
 ---
+
 
 1. 创建实况时的id约束：
 

@@ -2,7 +2,9 @@
 title: "状态码"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix4-0000001285852392
+format: md
 ---
+
 # 状态码
 
 |  |  |

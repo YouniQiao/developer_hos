@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVTranscoder实现视频转码(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avtranscoder-for-transcodering
+format: md
 ---
+
 
 从API version 20开始支持使用NDK接口（C/C++）实现视频转码。
 

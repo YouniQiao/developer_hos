@@ -2,7 +2,9 @@
 title: "成功案例"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-success-0000001284982350
+format: md
 ---
+
 # 成功案例
 
 ## 客户需求

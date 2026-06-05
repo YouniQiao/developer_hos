@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置工作空间状态栏图标"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-workspace-status_bar_icon
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为应用提供设置工作空间图标。所有工作空间
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setWorkspaceStatusBarIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspacestatusbaricon)(statusBarIcon: [StatusBarIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#statusbaricon), workspaceId?: number): Promise<void> | 设置工作空间状态栏图标。使用Promise异步回调。 |
+| [setWorkspaceStatusBarIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspacestatusbaricon)(statusBarIcon: [StatusBarIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#statusbaricon), workspaceId?: number): Promise\<void\> | 设置工作空间状态栏图标。使用Promise异步回调。 |
 
 ## 开发步骤
 

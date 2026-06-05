@@ -4,6 +4,7 @@ title: "ArkTS类的方法是否支持重载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-45
 ---
 
+
 ArkTS支持TS中的重载，包括多个重载签名及一个实现签名。函数签名仅在编译期进行类型检查，不保留到运行时。
 
 ArkTS不支持多个函数体的重载。示例如下：

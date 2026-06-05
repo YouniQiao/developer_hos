@@ -2,7 +2,9 @@
 title: "开发者群组使用细则"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-developer-group-0000002534833595
+format: md
 ---
+
 
 # 开发者群组使用细则
 

@@ -4,6 +4,7 @@ title: "通过RdbStore.query()获取resultSet对象，出现resultSet的rowCount
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-11
 ---
 
+
 查询失败，返回结果为-1。
 
 以下是一种可能的情况：

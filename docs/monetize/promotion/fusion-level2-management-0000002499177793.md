@@ -2,7 +2,9 @@
 title: "账号管理"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-level2-management-0000002499177793
+format: md
 ---
+
 # 账号管理
 
 账号管理包含账户信息、发票信息、操作日志、消息设置等入口。

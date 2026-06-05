@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "选择发票抬头Button"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-invoice-title
+format: md
 ---
+
 
 ## 场景介绍
 

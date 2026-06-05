@@ -2,7 +2,9 @@
 title: "管理推广任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-master-0000001294213644
+format: md
 ---
+
 # 管理推广任务
 
 ## 前提条件

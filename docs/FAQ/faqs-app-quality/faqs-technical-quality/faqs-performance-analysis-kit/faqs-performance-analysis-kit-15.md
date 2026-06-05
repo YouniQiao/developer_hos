@@ -4,6 +4,7 @@ title: "如何查询应用堆内存的已分配内存大小和堆内存的空闲
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-15
 ---
 
+
 目前有两种方法可以查询当前CPU占用，如下：
 
 在代码中查询：

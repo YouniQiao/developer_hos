@@ -1,7 +1,9 @@
 ---
 title: "订阅主线程超时事件（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-arkts
+format: md
 ---
+
 
 ## 简介
 

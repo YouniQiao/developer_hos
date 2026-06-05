@@ -1,7 +1,9 @@
 ---
 title: "开发第一个元服务概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-start-overview
+format: md
 ---
+
 
 本文档适用于HarmonyOS元服务开发的初学者。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "添加滤镜效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-filter
+format: md
 ---
+
 
 为3DGS模型渲染画面添加风格化滤镜，包括：复古滤镜、漫画风格、黑白bit效果、颜色编辑。
 

@@ -4,6 +4,7 @@ title: "性能分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler
 ---
 
+
 * **[Profiler分析任务录制失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-1)**
 * **[导入历史数据失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-2)**
 * **[内存占用率过高导致DevEco Studio无法正常运行](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-3)**

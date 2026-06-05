@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅华为账号的登录/登出事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-login-state
+format: md
 ---
+
 
 ## 场景介绍
 

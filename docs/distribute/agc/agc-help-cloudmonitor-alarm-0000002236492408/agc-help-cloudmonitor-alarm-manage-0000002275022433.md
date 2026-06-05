@@ -1,7 +1,9 @@
 ---
 title: "管理告警"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-alarm-manage-0000002275022433
+format: md
 ---
+
 
 创建告警后，您可以在告警管理主界面查询告警、修改告警状态，以及对告警进行编辑、删除等操作。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用与系统实现未成年人模式联动"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-follow-minorsprotection
+format: md
 ---
+
 
 * **[应用与系统联动切换未成年人模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-system-minorsprotection)**
 * **[应用内开启未成年人模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-app-turn-on-minorsprotection)**

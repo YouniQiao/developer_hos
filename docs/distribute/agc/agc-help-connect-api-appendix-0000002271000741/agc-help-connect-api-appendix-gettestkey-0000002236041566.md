@@ -1,7 +1,9 @@
 ---
 title: "获取验签公钥"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-gettestkey-0000002236041566
+format: md
 ---
+
 
 当华为服务器向开发者服务器发送带有签名字符串的通知消息时，开发者服务器可以使用验签公钥对通知消息进行验签，验签公钥需提前从AppGallery Connect获取。
 

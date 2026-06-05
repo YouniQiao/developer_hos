@@ -2,7 +2,9 @@
 title: "视图：日期&lt;DateTime&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-datetime-0000002504274931
+format: md
 ---
+
 
 # 视图：日期&lt;DateTime&gt;
 

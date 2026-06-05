@@ -1,7 +1,9 @@
 ---
 title: 字体图标组件
 sidebar_label: 字体图标组件
+format: md
 ---
+
 
 # 字体图标组件
 

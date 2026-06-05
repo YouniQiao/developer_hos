@@ -2,7 +2,9 @@
 title: "申请客户端ID"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-2-0000001174597583
+format: md
 ---
+
 # 申请客户端ID
 
 Marketing API 采用OAuth2.0授权码模式（authorization code）进行授权认证，所有接口均通过请求头中传递的授权令牌（access\_token）来进行身份认证和鉴权。

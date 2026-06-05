@@ -2,7 +2,9 @@
 title: "删除商品库"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa6-0000001286343138
+format: md
 ---
+
 # 删除商品库
 
 您通过本接口可以删除商品库。

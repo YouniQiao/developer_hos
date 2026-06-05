@@ -1,7 +1,9 @@
 ---
 title: "hdc命令失败错误码"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # hdc命令失败错误码
 

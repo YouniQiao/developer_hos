@@ -1,7 +1,9 @@
 ---
 title: "主线程耗时操作优化"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-time-optimization-of-the-main-thread
+format: md
 ---
+
 
 # 主线程耗时操作优化
 
@@ -1233,4 +1235,4 @@ export class Item {
 
 ## 示例代码
 
-<SourceLink name="主线程耗时操作优化指导" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/tree/master/AvoidTimeComsume" />
+\<SourceLink name="主线程耗时操作优化指导" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/tree/master/AvoidTimeComsume" /\>

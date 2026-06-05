@@ -1,7 +1,9 @@
 ---
 title: "生物特征认证交易"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-verifybybio
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -23,8 +25,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [procContentAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#proccontentauthentication)(challenge: Uint8Array, authID: bigint, authMsg: AuthReqParams, label: TUILable): Promise<AuthToken> | 交易信息处理接口 |
-| [getBiometricAuthToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#getbiometricauthtoken)(operType: OperateType, tuiAuthToken: Uint8Array, bioAuthToken: Uint8Array): Promise<AuthToken> | 获取生物特征交易认证的authToken信息 |
+| [procContentAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#proccontentauthentication)(challenge: Uint8Array, authID: bigint, authMsg: AuthReqParams, label: TUILable): Promise\<AuthToken\> | 交易信息处理接口 |
+| [getBiometricAuthToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#getbiometricauthtoken)(operType: OperateType, tuiAuthToken: Uint8Array, bioAuthToken: Uint8Array): Promise\<AuthToken\> | 获取生物特征交易认证的authToken信息 |
 
 ## 生物特征认证交易界面介绍
 

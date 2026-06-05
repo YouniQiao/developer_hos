@@ -2,7 +2,9 @@
 title: "授信账户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-credit-0000001379837545
+format: md
 ---
+
 # 授信账户
 
 ## 概述

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "CA证书开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-ca-certs-guidelines
+format: md
 ---
+
 
 ![](./img/b9bedffe.png)
 
@@ -30,9 +32,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cert
 | --- | --- | --- |
 | certificateManager | installUserTrustedCertificateSync(cert: Uint8Array, certScope: CertScope) : CMResult18+ | 安装用户CA证书。 |
 | certificateManager | uninstallUserTrustedCertificateSync(certUri: string) : void18+ | 删除用户CA证书。 |
-| certificateManager | getAllUserTrustedCertificates(): Promise<CMResult> | 获取当前用户和设备公共位置的所有用户根CA证书列表。 |
-| certificateManager | getAllUserTrustedCertificates(scope: CertScope): Promise<CMResult>18+ | 根据证书的位置获取用户根CA证书列表。 |
-| certificateManager | getUserTrustedCertificate(certUri: string): Promise<CMResult> | 获取用户根CA证书的详细信息。 |
+| certificateManager | getAllUserTrustedCertificates(): Promise\<CMResult\> | 获取当前用户和设备公共位置的所有用户根CA证书列表。 |
+| certificateManager | getAllUserTrustedCertificates(scope: CertScope): Promise\<CMResult\>18+ | 根据证书的位置获取用户根CA证书列表。 |
+| certificateManager | getUserTrustedCertificate(certUri: string): Promise\<CMResult\> | 获取用户根CA证书的详细信息。 |
 | certificateManager | getCertificateStorePath(property: CertStoreProperty): string18+ | 获取证书的存储路径。 |
 
 ## 开发步骤
@@ -130,7 +132,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cert
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/samples/CertManagerUserCASample.ets#L15-L88" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CertManagerUserCASample.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/samples/CertManagerUserCASample.ets#L15-L88" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CertManagerUserCASample.ets</a></div>
 
 4. 获取系统CA证书路径、用户CA证书路径。应用可以直接通过该路径访问CA证书。
 
@@ -169,4 +171,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cert
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/samples/CertManagerGetCAPathSample.ets#L16-L47" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CertManagerGetCAPathSample.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/samples/CertManagerGetCAPathSample.ets#L16-L47" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CertManagerGetCAPathSample.ets</a></div>

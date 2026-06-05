@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图像跟踪介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-image-track-conversion
+format: md
 ---
+
 
 AR Engine可以检测场景中是否存在用户提供的图像，识别之后输出图像的位姿。
 

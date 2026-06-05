@@ -2,7 +2,9 @@
 title: "产品文本"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-guide-producttext-0000002396467016
+format: md
 ---
+
 
 # 产品文本
 

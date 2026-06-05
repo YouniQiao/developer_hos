@@ -1,7 +1,9 @@
 ---
 title: "AddrSanitizer（地址越界）检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-guidelines
+format: md
 ---
+
 
 ## 简介
 

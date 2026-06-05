@@ -1,7 +1,9 @@
 ---
 title: "三方库适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-adapt-third-library-0000002255894096
+format: md
 ---
+
 
 三方库一般是软件作者为了发布方便、替换方便或者二次开发的目的，而发布的一组可以单独于应用程序进行compile time或者runtime链接的二进制可重定位目标码文件。从本质上来说库是一种可执行代码的二进制形式，由于不同操作系统的本质不同，因此库的二进制是不兼容的。因此需要针对不同的操作系统对三方库进行编译。
 

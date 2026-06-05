@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "受限开放能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-open-capabilities
+format: md
 ---
+
 
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation)**
 * **[媒体资源使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-resource-guidelines)**

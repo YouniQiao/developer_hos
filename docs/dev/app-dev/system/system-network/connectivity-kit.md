@@ -1,7 +1,9 @@
 ---
 title: "Connectivity Kit（短距通信服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit
+format: md
 ---
+
 
 * **[Connectivity Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit-intro)**
 * **[蓝牙](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bluetooth)**

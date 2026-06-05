@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "运动跟踪介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-pose-conversion
+format: md
 ---
+
 
 AR Engine通过获取终端设备摄像头数据，结合图像特征和惯性传感器（IMU），计算设备位置（沿x、y、z轴方向位移）和姿态（绕x、y、z轴旋转），实现6自由度（6DoF）运动跟踪能力。
 

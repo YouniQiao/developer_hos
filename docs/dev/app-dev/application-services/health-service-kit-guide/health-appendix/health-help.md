@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何获取帮助"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-help
+format: md
 ---
+
 
 建议优先查找官方文档，快速获取所需指导。查阅文档后，仍不能解决的问题，可以通过以下方式进行反馈。
 

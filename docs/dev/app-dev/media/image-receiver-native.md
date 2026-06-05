@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图片接收"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-receiver-native
+format: md
 ---
+
 
 ![](./img/1208b467.png)
 

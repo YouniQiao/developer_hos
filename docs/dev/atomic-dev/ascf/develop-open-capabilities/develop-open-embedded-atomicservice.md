@@ -1,7 +1,9 @@
 ---
 title: "打开半屏元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-open-embedded-atomicservice
+format: md
 ---
+
 
 ASCF框架提供[open-embedded-atomicservice](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-open-embedded-atomicservice)组件，允许ASCF框架开发的元服务以半屏形式嵌入式拉起另一个元服务。
 

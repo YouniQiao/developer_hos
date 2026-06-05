@@ -1,9 +1,11 @@
 ---
 title: "如何获取指定bundleFlags的Ability信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-72
+format: md
 ---
 
-bundleManager.getBundleInfoForSelf :getBundleInfoForSelf(bundleFlags: number): Promise<BundleInfo>;
+
+bundleManager.getBundleInfoForSelf :getBundleInfoForSelf(bundleFlags: number): Promise\<BundleInfo\>;
 
 根据给定的bundleFlags，异步获取当前应用的BundleInfo，返回结果使用Promise形式。参考示例代码如下：
 

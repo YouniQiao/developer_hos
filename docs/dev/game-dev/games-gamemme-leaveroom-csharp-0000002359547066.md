@@ -1,7 +1,9 @@
 ---
 title: "离开房间"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-leaveroom-csharp-0000002359547066
+format: md
 ---
+
 
 进入房间后，不论是否已进入游戏中，房间内玩家均可离开房间。
 

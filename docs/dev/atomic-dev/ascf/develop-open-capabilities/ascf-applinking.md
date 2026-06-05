@@ -1,7 +1,9 @@
 ---
 title: "获取元服务链接"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-applinking
+format: md
 ---
+
 
 可以使用AppLinking生成短链，通过短链生成二维码，然后扫码打开元服务并进入指定页面，详细配置请参考：[使用App Linking跳转到元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking)。
 

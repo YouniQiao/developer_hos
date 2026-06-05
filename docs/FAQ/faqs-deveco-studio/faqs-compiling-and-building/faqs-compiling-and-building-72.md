@@ -1,7 +1,9 @@
 ---
 title: "如何获取BuildProfile中的值"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-72
+format: md
 ---
+
 
 生成 BuildProfile 文件后，可以通过相对路径在代码中引入该文件。例如，在 HAR 模块的 Index.ets 文件中使用该文件：
 

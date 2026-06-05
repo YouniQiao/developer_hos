@@ -1,7 +1,9 @@
 ---
 title: "数据可靠性与安全性概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security-overview
+format: md
 ---
+
 
 ## 功能场景
 
@@ -41,8 +43,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
 数据库在备份时，会将当前的数据库备份在指定的文件中，后续对数据库的操作不会影响备份的数据库文件。只有当恢复指定数据库文件时，才会将备份的数据库文件覆盖当前数据库，实现数据的回滚。
 
-* 键值型数据库备份路径：/data/service/el1(el2)/public/database/...{appId}/kvdb/backup/...{storeId}
-* 关系型数据库备份路径：/data/app/el1(el2)/100/database/...{bundlename}/rdb
+* 键值型数据库备份路径：/data/service/el1(el2)/public/database/...\{appId\}/kvdb/backup/...\{storeId\}
+* 关系型数据库备份路径：/data/app/el1(el2)/100/database/...\{bundlename\}/rdb
 
 ### 数据库加密机制
 

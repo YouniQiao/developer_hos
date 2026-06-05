@@ -1,7 +1,9 @@
 ---
 title: "场景动效类型互动卡片概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-overview
+format: md
 ---
+
 
 从API version 20开始，场景动效类型互动卡片支持在特定场景下触发互动卡片的特有效果。例如，开发者可以选择将动效渲染区域扩展到卡片自身的渲染区域之外，营造“破框”效果。
 

@@ -2,7 +2,9 @@
 title: "子客服务商注册"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-sub-service-provider-register-0000001328357934
+format: md
 ---
+
 # 子客服务商注册
 
 ## 概述

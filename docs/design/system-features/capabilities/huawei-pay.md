@@ -2,7 +2,9 @@
 title: 华为支付
 sidebar_label: 华为支付
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/huaweipay-0000002054558905
+format: md
 ---
+
 # 华为支付
 
 华为支付是一种方便、安全和快捷的支付方式。

@@ -1,7 +1,9 @@
 ---
 title: "ohpm dependency-check错误码"
 displayed_sidebar: ohpmSidebar
+format: md
 ---
+
 
 # ohpm dependency-check错误码
 

@@ -1,7 +1,9 @@
 ---
 title: "Online Authentication Kit（在线认证服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/online-authentication-kit-guide
+format: md
 ---
+
 
 * **[Online Authentication Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-preparation)**

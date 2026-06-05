@@ -4,6 +4,7 @@ title: "如何使用Record"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-98
 ---
 
+
 构造一个对象类型，其属性键为“Keys” ，其属性值为“Type”，可用于将一种类型的属性映射到另一种类型。
 
 示例如下：

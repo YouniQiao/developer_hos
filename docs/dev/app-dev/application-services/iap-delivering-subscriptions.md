@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "权益发放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-subscriptions
+format: md
 ---
+
 
 ## 对生效中的订阅发放权益
 

@@ -2,7 +2,9 @@
 title: "分析工具管理"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/analytics-association-0000001227791699
+format: md
 ---
+
 # 分析工具管理
 
 ## 概述

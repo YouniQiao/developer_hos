@@ -4,6 +4,7 @@ title: "armeabi-v7a是否支持Neon指令扩展"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-91
 ---
 
+
 **问题描述**
 
 使用CMake编译现有工程为armeabi-v7a架构时出现问题。
@@ -30,4 +31,4 @@ D:/DeveloperTools/Huawei/SDK/default/base/native/llvm/lib/clang/15.0.4/include/a
 },
 ```
 
-引入头文件#include <arm\_neon.h>
+引入头文件#include \<arm\_neon.h\>

@@ -1,7 +1,9 @@
 ---
 title: "vocReportData"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-report-api-data-vocreportdata-0000002497658249
+format: md
 ---
+
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |

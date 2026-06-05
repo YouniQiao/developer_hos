@@ -2,7 +2,9 @@
 title: "内容创作管理"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-column-operation-0000001877404878
+format: md
 ---
+
 
 # 内容创作管理
 

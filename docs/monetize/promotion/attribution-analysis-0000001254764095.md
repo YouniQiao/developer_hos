@@ -2,7 +2,9 @@
 title: "归因分析"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/attribution-analysis-0000001254764095
+format: md
 ---
+
 # 归因分析
 
 ![](./img/note_3.0-zh-cn_f9c4f28663e0.png) 

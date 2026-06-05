@@ -1,7 +1,9 @@
 ---
 title: "如何获取ArkTS状态管理框架代理前的原始对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-367
+format: md
 ---
+
 
 使用getTarget接口获取状态管理框架代理前的原始对象。
 

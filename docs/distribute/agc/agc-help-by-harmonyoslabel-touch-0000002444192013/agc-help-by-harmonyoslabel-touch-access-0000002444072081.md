@@ -1,7 +1,9 @@
 ---
 title: "接入流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-touch-access-0000002444072081
+format: md
 ---
+
 
 | **序号** | **步骤** | **详情** |
 | --- | --- | --- |

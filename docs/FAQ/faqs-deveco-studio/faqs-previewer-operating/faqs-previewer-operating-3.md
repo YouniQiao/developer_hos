@@ -4,13 +4,14 @@ title: "预览告警“@Consume/@Link decorated property <propertyName> not init
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-3
 ---
 
+
 **问题现象**
 
 启动预览后，预览窗口显示白屏，上方出现错误信息：“Preview failed. View details in the PreviewerLog window.”
 
 ![](./img/bb362b85.png "点击放大")
 
-此时，PreviewerLog 窗口显示如下告警信息：“@Consume/@Link 装饰的属性 \_<propertyName>\_未初始化。”
+此时，PreviewerLog 窗口显示如下告警信息：“@Consume/@Link 装饰的属性 \_\<propertyName\>\_未初始化。”
 
 ![](./img/ed85abd1.png)
 

@@ -1,7 +1,9 @@
 ---
 title: "如何模拟点击事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-379
+format: md
 ---
+
 
 模拟点击事件是指在程序中通过代码模拟触摸操作，模拟用户在界面上的点击行为，常用于自动化测试或绕过UI限制的场景。例如，使用onTouch触发按钮外区域的触摸事件，通过BuilderNode的方法传递touchEvent事件，从而实现模拟点击按钮的[TapGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-tapgesture)手势点击事件。
 

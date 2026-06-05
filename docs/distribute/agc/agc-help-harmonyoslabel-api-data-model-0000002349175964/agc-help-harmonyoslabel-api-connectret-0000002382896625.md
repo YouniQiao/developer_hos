@@ -1,7 +1,9 @@
 ---
 title: "ConnectRet"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-connectret-0000002382896625
+format: md
 ---
+
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |

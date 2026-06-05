@@ -1,7 +1,9 @@
 ---
 title: "UI开发常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-development-faq
+format: md
 ---
+
 
 * **[Navigation动画常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-animation-faq)**
 * **[自定义节点常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-node-faq)**

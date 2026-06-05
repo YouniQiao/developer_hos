@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "相机旋转角度的术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native
+format: md
 ---
+
 
 在适配相机旋转角度中涉及设备方向、镜头角度、屏幕显示角度等多个术语，开发者可以了解相关概念，帮助理解框架的运作机制。
 

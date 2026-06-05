@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "微距能力设置(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-macro
+format: md
 ---
+
 
 从API version 19开始，支持设置微距能力。微距能力是指通过光学设计与算法优化，实现近距离对焦并清晰捕捉微小物体细节的相机功能。
 

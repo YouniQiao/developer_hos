@@ -1,7 +1,9 @@
 ---
 title: "签名配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/configuring-signature
+format: md
 ---
+
 
 元服务签名配置的方式根据开发方式分为三种：DevEco Studio，命令行工具以及ASCF助手。
 

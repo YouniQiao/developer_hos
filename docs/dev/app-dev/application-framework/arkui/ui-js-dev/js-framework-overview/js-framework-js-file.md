@@ -1,7 +1,9 @@
 ---
 title: "app.js"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-js-file
+format: md
 ---
+
 
 ## 应用生命周期
 

@@ -2,7 +2,9 @@
 title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-lending-industry-introduction-0000001965455890
+format: md
 ---
+
 # 功能介绍
 
 ## 功能简介

@@ -1,7 +1,9 @@
 ---
 title: "创建ServiceAbility"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-serviceability
+format: md
 ---
+
 
 1. 创建ServiceAbility。
 

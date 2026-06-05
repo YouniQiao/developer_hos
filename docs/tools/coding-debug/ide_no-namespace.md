@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-namespace"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-namespace
 

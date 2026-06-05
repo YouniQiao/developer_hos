@@ -1,7 +1,9 @@
 ---
 title: "智慧调优"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 智慧调优
 

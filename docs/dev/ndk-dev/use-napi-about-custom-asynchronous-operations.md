@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API进行自定义异步操作相关开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-custom-asynchronous-operations
+format: md
 ---
+
 
 ## 简介
 

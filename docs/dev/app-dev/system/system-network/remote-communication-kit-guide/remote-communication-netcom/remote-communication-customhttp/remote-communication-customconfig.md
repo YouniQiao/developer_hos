@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Configuration：高效实现定制功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customconfig
+format: md
 ---
+
 
 * **[DnsConfiguration：定制DNS](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customdnsconfig)**
 * **[TransferConfiguration：定制数据传输](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customtranferconfig)**

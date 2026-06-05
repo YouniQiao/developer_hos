@@ -1,7 +1,9 @@
 ---
 title: "EmailInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-emailinfo-0000002238618028
+format: md
 ---
+
 
 Email账号信息类，用于更新用户当前Email账号信息的操作。
 

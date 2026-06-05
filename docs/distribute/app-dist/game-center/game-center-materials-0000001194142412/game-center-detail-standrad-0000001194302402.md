@@ -2,7 +2,9 @@
 title: "详情页素材规范及示例"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-detail-standrad-0000001194302402
+format: md
 ---
+
 
 # 详情页素材规范及示例
 

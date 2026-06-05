@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "日历服务实践案例"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-practice-developer
+format: md
 ---
+
 
 ## 场景介绍
 

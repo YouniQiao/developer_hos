@@ -4,6 +4,7 @@ title: "编译报错“In the form_config.json file, if the value of the updateE
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-40
 ---
 
+
 **问题现象**
 
 在form\_config.json文件中，如果updateEnabled字段的值为true，则updateDuration和scheduleUpdateTime字段不能同时为空。

@@ -1,7 +1,9 @@
 ---
 title: "UI Design Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-introduction
+format: md
 ---
+
 
 UI Design Kit（UI设计套件）是华为提供的符合HarmonyOS Design System规范的UI界面开发套件集合。通过提供多样式的扩展组件、丰富的光影效果，支撑开发者高效构建高端精致的界面（参见[HarmonyOS设计理念](https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445)），确保应用在HarmonyOS全场景设备上达成一致的视觉体验与设计品质，遵循[HarmonyOS设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/general_overview-0000001929599380)。
 

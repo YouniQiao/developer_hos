@@ -1,7 +1,9 @@
 ---
 title: "跨应用数据共享概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-share-overview
+format: md
 ---
+
 
 ## 功能简介
 

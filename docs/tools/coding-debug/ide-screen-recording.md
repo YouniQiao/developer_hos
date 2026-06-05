@@ -1,7 +1,9 @@
 ---
 title: "录屏"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 录屏
 

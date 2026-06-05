@@ -1,7 +1,9 @@
 ---
 title: "eqeqeq"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # eqeqeq
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "退款"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-refund
+format: md
 ---
+
 
 当[用户申请退款](#用户申请退款)时，对于非游戏类应用，开发者可以在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)上审核退款订单，实现用户的退款。
 

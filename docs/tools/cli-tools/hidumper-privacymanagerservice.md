@@ -1,7 +1,9 @@
 ---
 title: "PrivacyManagerService"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # PrivacyManagerService
 

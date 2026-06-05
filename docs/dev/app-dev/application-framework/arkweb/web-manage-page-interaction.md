@@ -1,7 +1,9 @@
 ---
 title: "管理网页交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-manage-page-interaction
+format: md
 ---
+
 
 * **[Web组件嵌套滚动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-nested-scrolling)**
 * **[Web页面显示内容滚动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-content-scrolling)**

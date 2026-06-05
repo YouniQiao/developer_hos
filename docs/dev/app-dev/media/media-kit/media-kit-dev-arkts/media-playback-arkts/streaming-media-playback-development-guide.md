@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVPlayer播放流媒体(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/streaming-media-playback-development-guide
+format: md
 ---
+
 
 本开发指导将介绍如何使用[AVPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avplayer)开发流媒体直播和点播功能。示例展示如何完整播放流媒体视频，实现端到端的流媒体资源播放。
 

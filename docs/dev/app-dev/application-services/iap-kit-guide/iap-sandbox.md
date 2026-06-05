@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "沙盒测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-sandbox
+format: md
 ---
+
 
 沙盒测试允许开发者在接入华为应用内支付调测过程中对订单进行虚拟支付。
 

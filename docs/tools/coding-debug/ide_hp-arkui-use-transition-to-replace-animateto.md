@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-use-transition-to-replace-animateto"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-use-transition-to-replace-animateto
 

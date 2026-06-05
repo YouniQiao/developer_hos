@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "系统后台切应用前台接续下载资源包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-fore
+format: md
 ---
+
 
 系统后台静默下载过程中启动游戏，应用前台将接管系统后台下载任务，资源包下载任务将在应用前台接续执行。
 

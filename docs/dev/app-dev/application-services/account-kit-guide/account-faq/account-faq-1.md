@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "1001500001 应用指纹证书校验失败的可能原因和解决办法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-1
+format: md
 ---
+
 
 **问题现象**
 

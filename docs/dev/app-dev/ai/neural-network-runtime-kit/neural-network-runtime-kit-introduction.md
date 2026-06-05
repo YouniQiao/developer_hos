@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Neural Network Runtime Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/neural-network-runtime-kit-introduction
+format: md
 ---
+
 
 ## 使用场景
 

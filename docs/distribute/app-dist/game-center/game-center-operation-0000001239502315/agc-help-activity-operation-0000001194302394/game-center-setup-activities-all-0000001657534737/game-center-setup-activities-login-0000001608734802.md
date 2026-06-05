@@ -2,7 +2,9 @@
 title: "登录有奖"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-login-0000001608734802
+format: md
 ---
+
 
 # 登录有奖
 

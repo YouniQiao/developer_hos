@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "管理用户授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-litewearable-add-permissions
+format: md
 ---
+
 
 ## 场景介绍
 

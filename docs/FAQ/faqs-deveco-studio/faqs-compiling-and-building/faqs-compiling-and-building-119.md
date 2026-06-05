@@ -4,6 +4,7 @@ title: "编译报错“The useNormalizedOHMUrl settings of packages xxx and the 
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-119
 ---
 
+
 **问题现象**
 
 编译时出现错误：“packages xxx的useNormalizedOHMUrl设置与项目useNormalizedOHMUrl: xxx不匹配”。

@@ -4,6 +4,7 @@ title: "应用能否指定使用某一网络来发请求"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-32
 ---
 
+
 **问题现象**
 
 发网络请求时，指定使用Wi-Fi或蜂窝数据。

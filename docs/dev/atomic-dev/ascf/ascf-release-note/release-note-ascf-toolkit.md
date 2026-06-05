@@ -1,7 +1,9 @@
 ---
 title: "ASCF Toolkit"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-note-ascf-toolkit
+format: md
 ---
+
 
 ## 1.0.17
 

@@ -2,7 +2,9 @@
 title: "智能分包跟踪"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/asds-zhinengfenbao-0000001814202574
+format: md
 ---
+
 # 智能分包跟踪
 
 ## 功能介绍
@@ -220,11 +222,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/asds-zhinen
 
 A：推广分包信息
 
-\{reportCount:xxx,contentid:xxx,channelid:xxx,referrer:xxx,channel:xxx,taskid:xxx,campaignid:xxx,corpid:xxx,rtaid:xxx,callback:xxx\}
+\\{reportCount:xxx,contentid:xxx,channelid:xxx,referrer:xxx,channel:xxx,taskid:xxx,campaignid:xxx,corpid:xxx,rtaid:xxx,callback:xxx\\}
 
 推广主包信息（不包含channelid参数）
 
-\{reportCount:xxx,contentid:xxx ,referrer:xxx,channel:xxx,taskid:xxx,campaignid:xxx,corpid:xxx,rtaid:xxx,callback:xxx\}
+\\{reportCount:xxx,contentid:xxx ,referrer:xxx,channel:xxx,taskid:xxx,campaignid:xxx,corpid:xxx,rtaid:xxx,callback:xxx\\}
 
 其余情况为非鲸鸿动能推广场景。
 

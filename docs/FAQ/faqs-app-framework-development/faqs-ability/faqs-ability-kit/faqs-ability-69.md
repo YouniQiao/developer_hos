@@ -4,6 +4,7 @@ title: "如何禁用窗口的全屏显示功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-69
 ---
 
+
 在module.json5文件中配置abilities的supportWindowMode字段，用于指定窗口显示模式。
 
 fullscreen表示支持全屏显示，split表示支持分屏显示，floating表示支持窗口化显示。

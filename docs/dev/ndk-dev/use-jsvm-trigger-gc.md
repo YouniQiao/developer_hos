@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API感知JSVM引擎生命周期管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-trigger-gc
+format: md
 ---
+
 
 ## 简介
 

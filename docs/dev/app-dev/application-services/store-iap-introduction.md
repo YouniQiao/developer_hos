@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-introduction
+format: md
 ---
+
 
 数字商品服务为开发者提供便捷高效的数字商品服务接入流程和交互体验，让开发者聚焦应用本身的业务能力，助力开发者商业变现。数字商品服务提供基础的数字商品交易能力，保障用户交易的完成，并对应用内的数字商品交易能力可用性、商品价值和商品质量进行审核。本服务能帮助开发者实现统一的数字商品分发体验和营销宣传（包括在应用内的商品展示和销售，以及在应用市场内的商品分发等）、统一管理数字商品的定价和优惠、查询用户的商品权益、完成数字商品的售后服务等一系列服务。
 

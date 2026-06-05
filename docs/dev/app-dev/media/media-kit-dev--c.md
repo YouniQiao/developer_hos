@@ -1,7 +1,9 @@
 ---
 title: "媒体开发指导(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-dev--c
+format: md
 ---
+
 
 * **[播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-playback-c)**
 * **[录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-recording-c)**

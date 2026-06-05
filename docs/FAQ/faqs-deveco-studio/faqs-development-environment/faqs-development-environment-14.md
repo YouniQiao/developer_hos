@@ -4,6 +4,7 @@ title: "自动签名时提示“The signature does not take effect or has expire
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-14
 ---
 
+
 **问题描述**
 
 自动生成签名失败。

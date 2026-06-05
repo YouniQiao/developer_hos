@@ -4,6 +4,7 @@ title: "应用从远程服务器下载文件的下载路径"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-8
 ---
 
+
 应用仅能保存文件到“应用文件目录”下。根据使用规范和注意事项选择子目录。
 
 **参考链接**

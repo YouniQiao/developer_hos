@@ -1,7 +1,9 @@
 ---
 title: "如何实现字符串编解码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-19
+format: md
 ---
+
 
 TextEncoder用于将字符串编码为字节数组，支持utf-8、utf-16le/be等编码格式。
 

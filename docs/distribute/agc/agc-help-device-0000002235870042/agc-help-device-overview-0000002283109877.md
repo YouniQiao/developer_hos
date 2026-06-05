@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-device-overview-0000002283109877
+format: md
 ---
+
 
 进行调试和指定设备发布时，可以将HarmonyOS应用/元服务安装到指定的设备上。为了保证安全性，待安装的设备需要在AppGallery Connect上进行[注册](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-device-0000002283189937)。每个账号每年最多可以注册100个设备。
 

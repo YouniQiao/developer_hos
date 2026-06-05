@@ -1,7 +1,9 @@
 ---
 title: "表单组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-form-components
+format: md
 ---
+
 
 * **[button](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-button)**
 * **[checkbox](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-checkbox)**

@@ -1,7 +1,9 @@
 ---
 title: "hdc"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc
+format: md
 ---
+
 
 hdc（HarmonyOS Device Connector）是提供给开发人员的命令行调试工具，用于与设备进行交互调试、数据传输、日志查看以及应用安装等操作。该工具支持在Windows/Linux/MacOS系统上运行，为开发者提供高效，便捷的设备调试能力。
 
@@ -71,7 +73,7 @@ hdc支持USB和无线两种连接调试方式。在设备的设置>系统>开发
      export PATH={DevEco Studio}/sdk/default/openharmony/toolchains:$PATH
      ```
 
-     其中{DevEco Studio}需替换为DevEco Studio实际安装目录的绝对路径，例如/home/DevEco-Studio。
+     其中\{DevEco Studio\}需替换为DevEco Studio实际安装目录的绝对路径，例如/home/DevEco-Studio。
    * 编辑完成后，单击Esc键退出编辑模式，输入“:wq”并且单击Enter键保存。
    * 请执行以下命令，使配置的环境变量生效。
 
@@ -768,7 +770,7 @@ hdc file send [-a|-sync|-z|-m|-cwd path|-b bundlename] SOURCE DEST
 | 参数名 | 说明 |
 | --- | --- |
 | SOURCE | 本地待传输的文件路径。 |
-| DEST | 远程目标文件路径。  从API version 21开始，媒体库文件支持通过hdc进行部分操作（低版本使用会提示[Fail]Error opening file: ...）。  媒体库文件路径：/mnt/data/<uid>/media\_fuse/Photo/目录及其子目录，<uid>为当前用户的id。  通过hdc对媒体库操作指导参见[mediatool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mediatool#hdc命令)。 |
+| DEST | 远程目标文件路径。  从API version 21开始，媒体库文件支持通过hdc进行部分操作（低版本使用会提示[Fail]Error opening file: ...）。  媒体库文件路径：/mnt/data/\<uid\>/media\_fuse/Photo/目录及其子目录，\<uid\>为当前用户的id。  通过hdc对媒体库操作指导参见[mediatool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mediatool#hdc命令)。 |
 | -a | 保留文件修改时间戳。 |
 | -sync | 只传输文件mtime有更新的文件。  mtime（modified timestamp）：修改后的时间戳。 |
 | -z | 通过LZ4格式压缩传输，此功能未开放，请勿使用。 |
@@ -813,7 +815,7 @@ hdc file recv [-a|-sync|-z|-m|-cwd path|-b bundlename] DEST SOURCE
 | 参数名 | 说明 |
 | --- | --- |
 | SOURCE | 本地待接收的文件路径。 |
-| DEST | 远程待传输的文件路径。  从API version 21开始，媒体库文件支持通过hdc进行部分操作（低版本使用会提示[Fail]Error opening file: ...）。  媒体库文件路径：/mnt/data/<uid>/media\_fuse/Photo/目录及其子目录，<uid>为当前用户的id。  媒体库操作更多信息参见[mediatool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mediatool#hdc命令)。 |
+| DEST | 远程待传输的文件路径。  从API version 21开始，媒体库文件支持通过hdc进行部分操作（低版本使用会提示[Fail]Error opening file: ...）。  媒体库文件路径：/mnt/data/\<uid\>/media\_fuse/Photo/目录及其子目录，\<uid\>为当前用户的id。  媒体库操作更多信息参见[mediatool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mediatool#hdc命令)。 |
 | -a | 保留文件修改时间戳。 |
 | -sync | 只传输文件mtime有更新的文件。  mtime（modified timestamp）：修改后的时间戳。 |
 | -z | 通过LZ4格式压缩传输，此功能未开放，请勿使用。 |
@@ -856,8 +858,8 @@ FileTransfer finish, Size:xxx, File...
 | 命令 | 说明 |
 | --- | --- |
 | fport ls | 列出所有端口转发任务。 |
-| fport localnode remotenode | 设置正向端口转发任务：监听“电脑端端口”(localnode)请求并转发到“设备端端口”(remotenode)。任务格式为<转发类型>:<转发端口>，如"tcp:1234"。 |
-| rport remotenode localnode | 设置反向端口转发任务：监听“设备端端口”(remotenode)请求并转发到“电脑端端口”(localnode)。任务格式为<转发类型>:<转发端口>，如"tcp:1234"。 |
+| fport localnode remotenode | 设置正向端口转发任务：监听“电脑端端口”(localnode)请求并转发到“设备端端口”(remotenode)。任务格式为\<转发类型\>:\<转发端口\>，如"tcp:1234"。 |
+| rport remotenode localnode | 设置反向端口转发任务：监听“设备端端口”(remotenode)请求并转发到“电脑端端口”(localnode)。任务格式为\<转发类型\>:\<转发端口\>，如"tcp:1234"。 |
 | fport rm taskstr | 删除指定的端口转发任务。 |
 
 ![](./img/cb7e539a.png)

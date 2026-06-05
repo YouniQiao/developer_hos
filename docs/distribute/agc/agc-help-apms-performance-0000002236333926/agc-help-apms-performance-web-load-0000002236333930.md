@@ -1,7 +1,9 @@
 ---
 title: "分析Web页面加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-performance-web-load-0000002236333930
+format: md
 ---
+
 
 “Web页面加载”页面为开发者提供应用内Web页面加载耗时情况，帮助开发者快速掌握应用内Web页面的加载性能数据。
 

@@ -1,7 +1,9 @@
 ---
 title: "查询频道信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-getrtmchannelinfo-csharp-native-0000002359707030
+format: md
 ---
+
 
 订阅频道的过程中，如需查看指定频道的详细信息，如订阅玩家数量、玩家信息（RTM连接状态、属性等），可通过查询频道信息获取。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "热力图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-heat
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [HeatmapParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#heatmapparams) | 热力图参数。 |
-| [addHeatmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addheatmap)(params: [mapCommon.HeatmapParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#heatmapparams)): Promise<[Heatmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-heatmap)> | 新增热力图。 |
+| [addHeatmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addheatmap)(params: [mapCommon.HeatmapParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#heatmapparams)): Promise[Heatmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-heatmap) | 新增热力图。 |
 | [Heatmap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-heatmap) | 热力图，支持修改和删除热力图，例如：支持设置颜色、设置透明度等。 |
 
 ## 开发步骤

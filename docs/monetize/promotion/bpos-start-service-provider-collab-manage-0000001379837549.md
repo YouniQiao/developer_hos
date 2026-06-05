@@ -2,7 +2,9 @@
 title: "协作者管理"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-service-provider-collab-manage-0000001379837549
+format: md
 ---
+
 # 协作者管理
 
 ## 概述

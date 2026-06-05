@@ -1,7 +1,9 @@
 ---
 title: "Device"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-device-0000002286844738
+format: md
 ---
+
 
 手机/平板设备成功连接电脑端的HiSmartPerf-Editor后，将自动安装HiSmartPerf-Device工具。工具操作简单，支持采集游戏基础的性能指标，例如FPS、功耗、温度、负载等。若想快速了解游戏的整体性能状况，建议优先考虑 HiSmartPerf-Device工具测试游戏性能。
 

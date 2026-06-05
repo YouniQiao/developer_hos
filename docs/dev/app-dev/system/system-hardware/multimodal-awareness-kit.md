@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Multimodal Awareness Kit（多模态融合感知服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimodal-awareness-kit
+format: md
 ---
+
 
 * **[Multimodal Awareness Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimodalawareness-kit-intro)**
 * **[Stationary开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stationary-guidelines)**

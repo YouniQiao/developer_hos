@@ -1,7 +1,9 @@
 ---
 title: "管理服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-manage-service-0000002323711885
+format: md
 ---
+
 
 * 服务状态包括草稿、审核中、审核驳回、已上线、已下线5种状态。状态流转图如下：
 

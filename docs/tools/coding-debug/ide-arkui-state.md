@@ -1,7 +1,9 @@
 ---
 title: "查看ArkUI状态变量"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 查看ArkUI状态变量
 

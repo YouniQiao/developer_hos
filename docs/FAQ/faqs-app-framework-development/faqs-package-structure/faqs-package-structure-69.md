@@ -4,12 +4,13 @@ title: "如何在应用内共享HSP"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-69
 ---
 
+
 如需在应用内共享HSP，请将HSP共享包上传至私仓。动态共享包HSP不能直接发布在私仓内，需要先转换为.tgz包。请按以下操作编译生成\*.tgz包。
 
 1. 将编译模式设为release。
 
    ![](./img/b454bc52.png "点击放大")
-2. 选中HSP模块的根目录，点击Build > Make Module {libraryName}，启动构建。
+2. 选中HSP模块的根目录，点击Build > Make Module \{libraryName\}，启动构建。
 
    ![](./img/84b57e0e.png "点击放大")
 3. 构建完成后，build目录下生成HSP包产物，其中.tgz用来上传至私仓（请参考[将三方库发布到 ohpm-repo](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo-quickstart#zh-cn_topic_0000001792256157_将三方库发布到ohpm-repo)）。

@@ -1,7 +1,9 @@
 ---
 title: "@version"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @version
 

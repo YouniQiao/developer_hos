@@ -1,7 +1,9 @@
 ---
 title: "分布式文件系统"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-fs
+format: md
 ---
+
 
 * **[分布式文件系统概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-fs-overview)**
 * **[设置分布式文件数据等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/set-security-label)**

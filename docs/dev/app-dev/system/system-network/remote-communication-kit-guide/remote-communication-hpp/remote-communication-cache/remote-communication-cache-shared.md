@@ -1,7 +1,9 @@
 ---
 title: "Session间缓存共享"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cache-shared
+format: md
 ---
+
 
 从6.0.0(20)开始，支持Session间缓存共享。
 
@@ -120,5 +122,5 @@ Session间缓存共享能力支持Phone、2in1、Tablet、Wearable、TV设备。
    console.info(`The current number of cache entries is: ${cacheState.count}`);
    console.info(`The current cache hit count is: ${cacheState.hitCount}`);
    ```
-${cacheState.hitCount}`);
+$\{cacheState.hitCount\}`);
    ```

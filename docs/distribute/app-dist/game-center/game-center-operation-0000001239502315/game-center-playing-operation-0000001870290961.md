@@ -2,7 +2,9 @@
 title: "在玩服务管理"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-playing-operation-0000001870290961
+format: md
 ---
+
 
 # 在玩服务管理
 

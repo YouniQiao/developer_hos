@@ -1,7 +1,9 @@
 ---
 title: "硬件兼容性简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hw-guide
+format: md
 ---
+
 
 使用C/C++开发HarmonyOS应用原生库时，需要感知到硬件特性；HarmonyOS系统会运行在多种架构、多厂商的设备上，对于使用了HarmonyOS原生库的应用，如何保证其在不同设备上的兼容性以及体验的一致性是一个很大的挑战。
 

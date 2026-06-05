@@ -1,7 +1,9 @@
 ---
 title: "提交审核"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-submit-0000002424763510
+format: md
 ---
+
 
 完成游戏信息和版本信息的配置后，即可提交上架审核。
 

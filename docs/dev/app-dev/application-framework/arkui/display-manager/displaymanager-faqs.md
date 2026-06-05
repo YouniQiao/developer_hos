@@ -1,7 +1,9 @@
 ---
 title: "屏幕开发常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaymanager-faqs
+format: md
 ---
+
 
 ## 三折叠设备中，调用on('FoldDisplayModeChange')监听接口获取到的FoldDisplayMode值为5代表什么含义
 

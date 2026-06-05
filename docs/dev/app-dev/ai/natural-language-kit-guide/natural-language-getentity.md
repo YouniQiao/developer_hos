@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "实体抽取"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/natural-language-getentity
+format: md
 ---
+
 
 ## 适用场景
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "上传软件包时提示“上传的软件包与声明支持设备不一致”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-4
+format: md
 ---
+
 
 **问题现象**
 

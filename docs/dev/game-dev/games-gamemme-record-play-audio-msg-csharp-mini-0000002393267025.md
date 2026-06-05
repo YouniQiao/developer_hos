@@ -1,7 +1,9 @@
 ---
 title: "C#（小游戏）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-record-play-audio-msg-csharp-mini-0000002393267025
+format: md
 ---
+
 
 ## 前提条件
 

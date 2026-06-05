@@ -1,7 +1,9 @@
 ---
 title: "提交审核"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-submit-0000002408726077
+format: md
 ---
+
 
 完成应用信息和版本信息的所有配置项后，您可以将游戏提交至审核人员。
 

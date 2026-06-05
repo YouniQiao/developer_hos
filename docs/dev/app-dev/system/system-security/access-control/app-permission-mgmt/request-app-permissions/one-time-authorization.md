@@ -1,7 +1,9 @@
 ---
 title: "向用户申请单次授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/one-time-authorization
+format: md
 ---
+
 
 基于授权最小化原则，防止应用获取和滥用用户数据。针对部分应用敏感权限，在弹窗向用户申请授权时，新增“允许本次使用”的授权选项。
 

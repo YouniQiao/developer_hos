@@ -2,7 +2,9 @@
 title: "ImageInfo"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-model-imageinfo-0000002360425730
+format: md
 ---
+
 # ImageInfo
 
 | <strong>参数</strong> | <strong>必</strong> <strong>选</strong> <strong>(M)/</strong> <strong>可</strong> <strong>选</strong> <strong>(O)</strong> | <strong>类型</strong> | <strong>描述</strong> |

@@ -1,7 +1,9 @@
 ---
 title: "查询频道历史消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-getrtmchannelhistorymsg-csharpnative-0000002359547130
+format: md
 ---
+
 
 游戏多媒体实时信令功能支持查询频道历史消息，如果发送频道消息时设置支持缓存历史消息，则云侧只保存查询时近7日内的频道历史消息，最多可获取100条历史消息记录。
 

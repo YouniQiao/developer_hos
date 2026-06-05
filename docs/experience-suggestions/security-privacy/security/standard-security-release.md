@@ -1,7 +1,9 @@
 ---
 title: "存储安全"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-release
+format: md
 ---
+
 
 # 存储安全
 

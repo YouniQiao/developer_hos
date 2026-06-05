@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "单击快速验证手机号按钮，无法拉起页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-1
+format: md
 ---
+
 
 **现象描述**
 

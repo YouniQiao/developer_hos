@@ -4,6 +4,7 @@ title: "点击Device Manager，提示“找不到应用程序”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-18
 ---
 
+
 **问题现象**
 
 点击Device Manager进行登录授权时，如果提示“找不到应用程序”，则无法打开浏览器登录。

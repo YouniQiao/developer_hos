@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取系统服务进程不可访问的后台用户数据状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-restricted-access-status
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为应用提供获取系统服务进程管控不可访问后
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getRestrictedAccessBackgroundUserdataStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#getrestrictedaccessbackgrounduserdatastatus)(userData: [UserDataEnum](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#userdataenum)): Promise<boolean> | 获取系统服务进程管控不可访问后台用户数据的状态。使用Promise异步回调。 |
+| [getRestrictedAccessBackgroundUserdataStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#getrestrictedaccessbackgrounduserdatastatus)(userData: [UserDataEnum](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#userdataenum)): Promise\<boolean\> | 获取系统服务进程管控不可访问后台用户数据的状态。使用Promise异步回调。 |
 
 ## 开发步骤
 

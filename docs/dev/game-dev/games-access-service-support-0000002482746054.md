@@ -1,7 +1,9 @@
 ---
 title: "华为服务技术支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-access-service-support-0000002482746054
+format: md
 ---
+
 
 当您在集成华为服务过程中遇到问题时，可以按照以下顺序寻求帮助。
 

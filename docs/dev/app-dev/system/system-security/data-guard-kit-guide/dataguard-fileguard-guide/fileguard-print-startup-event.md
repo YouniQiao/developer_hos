@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅或取消订阅打印服务启动事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-print-startup-event
+format: md
 ---
+
 
 ![](./img/25219093.png)
 
@@ -18,8 +20,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file
 
 | 接口名 | 描述 |
 | --- | --- |
-| [onPrintStartup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#onprintstartup)(callback: Callback<void>): void | 订阅打印服务启动事件。 |
-| [offPrintStartup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#offprintstartup)(callback?: Callback<void>): void | 取消订阅打印服务启动事件。 |
+| [onPrintStartup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#onprintstartup)(callback: Callback\<void\>): void | 订阅打印服务启动事件。 |
+| [offPrintStartup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#offprintstartup)(callback?: Callback\<void\>): void | 取消订阅打印服务启动事件。 |
 
 ## 开发步骤
 

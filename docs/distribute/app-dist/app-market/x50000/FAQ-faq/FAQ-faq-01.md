@@ -2,7 +2,9 @@
 title: "1. 违规收集个人信息"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-01
+format: md
 ---
+
 # 1. 违规收集个人信息
 
 * 重点整治APP、SDK未告知用户收集个人信息的目的、方式、范围且未经用户同意，私自收集用户个人信息的行为。

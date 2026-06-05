@@ -4,6 +4,7 @@ title: "选择测试包后报错提示“应用解析异常，请稍后重试”
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-10
 ---
 
+
 在生成可执行测试包时，如果应用名在测试设备上解析失败，请检查打包时填写的应用名是否正确，并确认设备上是否已安装该应用。
 
 如果未填写应用名或应用名错误，请重新生成测试包并创建测试任务。

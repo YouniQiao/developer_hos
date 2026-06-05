@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发者使用Account Kit的登录能力的管理细则"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-detailedrules
+format: md
 ---
+
 
 为了保护用户隐私信息，确保用户获得良好的登录体验，根据[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/app/20209)、[《应用审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50104)、[《元服务审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50129)等相关协议条款及现行法律法规，平台制定了华为账号登录管理细则，使用华为账号登录的应用请遵照执行，具体要求如下：
 

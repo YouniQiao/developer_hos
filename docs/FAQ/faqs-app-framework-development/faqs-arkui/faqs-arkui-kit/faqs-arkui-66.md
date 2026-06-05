@@ -1,7 +1,9 @@
 ---
 title: "如何监听屏幕旋转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-66
+format: md
 ---
+
 
 可以使用媒体查询接口监听屏幕旋转。参考代码如下：
 

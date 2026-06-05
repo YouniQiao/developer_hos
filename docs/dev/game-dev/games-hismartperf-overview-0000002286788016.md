@@ -1,7 +1,9 @@
 ---
 title: "业务介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-overview-0000002286788016
+format: md
 ---
+
 
 |  |  |
 | --- | --- |

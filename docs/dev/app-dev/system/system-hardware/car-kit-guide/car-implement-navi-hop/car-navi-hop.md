@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "导航流转至车机"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-navi-hop
+format: md
 ---
+
 
 ## 场景介绍
 

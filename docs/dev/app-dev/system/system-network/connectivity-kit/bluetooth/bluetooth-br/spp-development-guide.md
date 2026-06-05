@@ -1,7 +1,9 @@
 ---
 title: "连接和传输数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spp-development-guide
+format: md
 ---
+
 
 ## 简介
 

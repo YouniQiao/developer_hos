@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过API异步获取系统信息属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-asyn-system-info
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -18,7 +20,7 @@ Scenario Fusion Kit提供获取系统信息属性API，调用该接口可以获�
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getSystemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-atomicservice#getsysteminfo)(properties?: Array<[SystemInfoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-atomicservice#systeminfotype)>): Promise<[SystemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-atomicservice#systeminfo)> | 获取系统信息属性的方法，支持获取设备、网络状态、屏幕、语言、主题等系统信息的请求对象，包含请求参数。 |
+| [getSystemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-atomicservice#getsysteminfo)(properties?: Array[SystemInfoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-atomicservice#systeminfotype)): Promise[SystemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-atomicservice#systeminfo) | 获取系统信息属性的方法，支持获取设备、网络状态、屏幕、语言、主题等系统信息的请求对象，包含请求参数。 |
 
 ## 开发步骤
 

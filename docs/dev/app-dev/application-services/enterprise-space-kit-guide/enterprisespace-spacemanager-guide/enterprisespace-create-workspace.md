@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "创建工作空间"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-create-workspace
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ Enterprise Space Kit为应用提供创建工作空间的能力。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [createWorkspace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#createworkspace)(localName: string, workspaceType: [WorkspaceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#workspacetype), params?: [CreateWorkspaceParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#createworkspaceparams)): Promise<[WorkspaceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#workspaceinfo)> | 创建工作空间并返回结果。使用Promise异步回调。 |
+| [createWorkspace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#createworkspace)(localName: string, workspaceType: [WorkspaceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#workspacetype), params?: [CreateWorkspaceParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#createworkspaceparams)): Promise[WorkspaceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#workspaceinfo) | 创建工作空间并返回结果。使用Promise异步回调。 |
 
 ## 开发步骤
 

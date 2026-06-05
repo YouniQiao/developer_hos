@@ -1,7 +1,9 @@
 ---
 title: "配置隐私声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-privacy-state-0000002278878296
+format: md
 ---
+
 
 发布应用时，您需要提供隐私政策，便于用户了解应用的数据收集和使用情况。
 

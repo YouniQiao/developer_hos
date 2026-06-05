@@ -1,7 +1,9 @@
 ---
 title: "系统适配技术支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-adapt-support-0000002514906059
+format: md
 ---
+
 
 当您在系统适配过程中遇到问题时，可以按照以下顺序寻求帮助。
 

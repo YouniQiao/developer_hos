@@ -4,6 +4,7 @@ title: "如何实现PixelMap和base64的相互转换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-15
 ---
 
+
 PixelMap是无压缩的位图对象，包含像素数据以及基本的图片信息（如图片尺寸、像素密度、像素格式等）。
 
 Base64编码是一种将二进制数据转换为ASCII字符串的编码方式，用于存储、传输。一般不会对PixelMap做Base64编码，而是将PixelMap编码成Uint8Array后，再对文件的二进制数据进行Base64编码。

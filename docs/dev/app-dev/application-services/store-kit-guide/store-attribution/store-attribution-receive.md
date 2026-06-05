@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "归因结果回传"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-receive
+format: md
 ---
+
 
 应用归因将满足隐私要求的归因结果，回传给开发者、获胜的分发平台以及分发平台配置的归因监测平台。归因结果回传详细信息请参考[归因结果回传](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-rest-receive)。分发平台/开发者/归因监测平台需按照回传接口的要求完成相应的接口实现。
 

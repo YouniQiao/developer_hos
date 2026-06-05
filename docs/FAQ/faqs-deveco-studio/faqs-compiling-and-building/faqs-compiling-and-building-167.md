@@ -4,6 +4,7 @@ title: "编译报错“Duplicate 'Module-Abilities' object names detected.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-167
 ---
 
+
 **错误描述**
 
 Module-Abilities对象名称重复。

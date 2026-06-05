@@ -1,7 +1,9 @@
 ---
 title: "扫描工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-check-tool
+format: md
 ---
+
 
 ## 简介
 
@@ -75,7 +77,7 @@ java -jar app_check_tool.jar --input ./test.app --out-path ./test --stat-duplica
 | --- | --- | --- |
 | md5 | String | 相同文件的MD5值。 |
 | size | int | 相同文件的大小。单位为Byte。 |
-| files | Vector<String> | 相同文件名的对应路径。 |
+| files | Vector\<String\> | 相同文件名的对应路径。 |
 
 ## 扫描超出指定大小的文件示例
 
@@ -189,7 +191,7 @@ java -jar app_check_tool.jar --input ./test.app --out-path ./test --stat-suffix 
 | param | String | 扫描程序传入参数。 |
 | startTime | String | 任务开始时间。 |
 | stopTime | String | 任务结束时间。 |
-| pathList | Vector<String> | 多个HAP、HSP包的路径。 |
+| pathList | Vector\<String\> | 多个HAP、HSP包的路径。 |
 | result | Struct | 各类型文件大小占比统计结果字段信息，具体内容参考表9。 |
 
 **表9 各类型文件大小占比统计结果字段信息**

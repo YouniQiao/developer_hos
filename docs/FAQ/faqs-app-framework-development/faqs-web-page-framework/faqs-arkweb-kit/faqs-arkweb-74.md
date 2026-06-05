@@ -1,7 +1,9 @@
 ---
 title: "如何使用Web组件下载pdf文件并展示给用户"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-74
+format: md
 ---
+
 
 **问题场景**
 

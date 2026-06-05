@@ -1,7 +1,9 @@
 ---
 title: "跨设备互通开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-dev-guides
+format: md
 ---
+
 
 跨设备互通提供相机、扫描以及图库（图片和视频）的跨设备调用能力，例如：Tablet或PC/2in1设备可以调用Phone的相机、扫描、图库等功能。从API 6.1.0(23)开始，TV、Phone、Tablet或PC/2in1设备可调用具备如下能力的远程设备：支持拍照、扫描及图库（图片与视频）能力的Phone和Tablet，支持图库（图片与视频）能力的PC/2in1设备。
 

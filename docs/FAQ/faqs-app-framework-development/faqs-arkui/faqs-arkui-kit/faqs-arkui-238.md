@@ -4,6 +4,7 @@ title: "在屏幕底部的组件的响应区域是否存在遮挡"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-238
 ---
 
+
 **问题现象**
 
 创建窗口并加载自定义键盘后，发现底部按钮下半部分无法响应点击事件。

@@ -4,6 +4,7 @@ title: "模拟器上部分视频无法正常播放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-37
 ---
 
+
 **问题现象**
 
 在模拟器播放视频时，可能会遇到视频有声音但无画面，或者播放卡顿的问题。

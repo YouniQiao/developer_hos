@@ -4,27 +4,28 @@ title: "如何在Native侧往用户目录写临时文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-11
 ---
 
+
 **问题详情**
 
 应用目录中，用户可以将临时文件写入以下目录。请查看native层写文件的代码示例：
 
 cpp
 
-#include <stdio.h>
+#include \<stdio.h\>
 
-void writeTempFile(const char\* path, const char\* content) {
+void writeTempFile(const char\* path, const char\* content) \{
 
 FILE\* file = fopen(path, "w");
 
-if (file != NULL) {
+if (file != NULL) \{
 
 fprintf(file, "%s", content);
 
 fclose(file);
 
-}
+\}
 
-}
+\}
 
 可写入临时文件的目录包括：
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-introduction
+format: md
 ---
+
 
 当应用需要获取用户风险等级时，可使用Account Kit提供的获取用户风险等级能力，用于以下恶意场景识别：
 

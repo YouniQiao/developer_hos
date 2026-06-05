@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/type-annotation-spacing"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/type-annotation-spacing
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取支持的编解码能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs
+format: md
 ---
+
 
 因来源、编解码协议及设备能力的不同，导致不同设备上可用的编解码器及其能力存在差异。
 

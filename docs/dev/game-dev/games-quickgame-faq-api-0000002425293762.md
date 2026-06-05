@@ -1,7 +1,9 @@
 ---
 title: "API"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-api-0000002425293762
+format: md
 ---
+
 
 ## 帧率
 

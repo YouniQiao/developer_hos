@@ -1,7 +1,9 @@
 ---
 title: "代码智能解读"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 代码智能解读
 

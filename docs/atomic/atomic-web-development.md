@@ -1,7 +1,9 @@
 ---
 title: "Web"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-web-development
+format: md
 ---
+
 
 * **[Web组件概述](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomicserviceweb-guidelines)**
 * **[AtomicServiceEnhancedWeb组件开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-guides/develop-atomicserviceenhancedweb)**

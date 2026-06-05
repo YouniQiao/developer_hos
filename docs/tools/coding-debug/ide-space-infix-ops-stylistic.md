@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/space-infix-ops"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/space-infix-ops
 

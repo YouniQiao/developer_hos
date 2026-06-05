@@ -1,7 +1,9 @@
 ---
 title: "@correctness/listen-default-network-change"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/listen-default-network-change
 

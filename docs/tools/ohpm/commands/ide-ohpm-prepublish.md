@@ -1,7 +1,9 @@
 ---
 title: "ohpm prepublish"
 displayed_sidebar: ohpmSidebar
+format: md
 ---
+
 
 # ohpm prepublish
 

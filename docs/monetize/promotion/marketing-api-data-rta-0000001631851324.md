@@ -2,7 +2,9 @@
 title: "通过RTA实验ID查询"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-data-rta-0000001631851324
+format: md
 ---
+
 # 通过RTA实验ID查询
 
 您通过本接口通过RTA实验ID查询报表。
@@ -50,11 +52,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
   Authorization:Bearer CgB6e3x9ERGComr9dENxZX22iBk+mLuf1yGtQVPUjPJUMrstfKlqpdXk+kfHU9J8ZJ/soYIZHZzT446GeSYumluQuhsK7jvz4kz1Bkms4CLI/rE=
 
-  \{
+  \\{
 
   "advertiser\_id": "381061631473395584",
 
-  "filtering": \{
+  "filtering": \\{
 
   "adgroup\_ids": [
 
@@ -88,7 +90,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
   "placement\_name": "wsw"
 
-  \},
+  \\},
 
   "page": 1,
 
@@ -100,7 +102,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
   "is\_abroad": true
 
-  \}
+  \\}
 - <strong>响应参数</strong>
 
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |

@@ -2,7 +2,9 @@
 title: "链路测试"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-test-0000001352018577
+format: md
 ---
+
 # 链路测试
 
 通过链路测试，可以对监测链接、数据回传进行联调测试。

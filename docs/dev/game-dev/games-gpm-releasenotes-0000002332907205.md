@@ -1,7 +1,9 @@
 ---
 title: "版本更新说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-releasenotes-0000002332907205
+format: md
 ---
+
 
 ## AGC控制台
 

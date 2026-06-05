@@ -2,7 +2,9 @@
 title: "修改定向包"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-targeting3-0000001286183190
+format: md
 ---
+
 # 修改定向包
 
 您通过本接口可以修改定向包。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "发送语音播报消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-extend-noti
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API接口进行array相关开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-array
+format: md
 ---
+
 
 ## 简介
 

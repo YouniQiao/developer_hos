@@ -1,7 +1,9 @@
 ---
 title: "如何判断应用程序是否安装"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-62
+format: md
 ---
+
 
 为了应用A能判断设备上是否已安装应用B并决定是否引导用户下载应用B，需进行以下配置：
 

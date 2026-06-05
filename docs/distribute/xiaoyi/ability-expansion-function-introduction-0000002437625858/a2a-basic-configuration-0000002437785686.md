@@ -2,7 +2,9 @@
 title: "A2A基础配置"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/a2a-basic-configuration-0000002437785686
+format: md
 ---
+
 
 # A2A基础配置
 

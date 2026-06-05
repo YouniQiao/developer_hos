@@ -1,7 +1,9 @@
 ---
 title: "自有账号"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-login-self-0000002271496193
+format: md
 ---
+
 
 如果您已经自行构建了认证系统，您可以通过自有账号来对接认证服务，让您的用户可以使用自有账号进行AppGallery Connect身份验证。
 

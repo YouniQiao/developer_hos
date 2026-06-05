@@ -4,6 +4,7 @@ title: "ArkUI-X工程编译报错“The ArkUI-X project's structure has been cha
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-28
 ---
 
+
 **问题现象**
 
 使用DevEco Studio 4.0.0.700及以上版本打开ArkUI-X历史工程时，工程同步或构建会提示“ERROR: The ArkUI-X project's structure has been changed. Migrate and adapt the project as instructed in FAQs.”。

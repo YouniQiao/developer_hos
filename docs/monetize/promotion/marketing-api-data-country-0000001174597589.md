@@ -2,7 +2,9 @@
 title: "国家/地区数据"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-data-country-0000001174597589
+format: md
 ---
+
 # 国家/地区数据
 
 您通过本接口查询计划或任务国家维度统计报表，包括各个国家的花费、点击量、点击均价等。
@@ -69,7 +71,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
   Authorization:Bearer CgB6e3x9ERGComr9dENxZX22iBk+mLuf1yGtQVPUjPJUMrstfKlqpdXk+kfHU9J8ZJ/soYIZHZzT446GeSYumluQuhsK7jvz4kz1Bkms4CLI/rE=
 
-  \{
+  \\{
 
   "start\_date": "2021-07-06",
 
@@ -79,11 +81,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
   "time\_granularity": "STAT\_TIME\_GRANULARITY\_DAILY",
 
-  "filtering": \{
+  "filtering": \\{
 
   "other\_filter\_type": "CREATIVE"
 
-  \},
+  \\},
 
   "page": 1,
 
@@ -91,7 +93,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
   "order\_type": "asc"
 
-  \}
+  \\}
 - <strong>响应参数</strong>
 
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |

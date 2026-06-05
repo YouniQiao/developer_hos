@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "连接迁移(多网并发)（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipathguide-c
+format: md
 ---
+
 
 * **[业务场景设置(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-setscenedesc-c)**
 * **[多网状态监听(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-statechangecallback-c)**

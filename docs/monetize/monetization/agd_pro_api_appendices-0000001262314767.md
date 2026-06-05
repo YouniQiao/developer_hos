@@ -2,7 +2,9 @@
 title: "附录"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_appendices-0000001262314767
+format: md
 ---
+
 
 
 * **[推广创意列表](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_promotion-idea-list-0000001217034986)**

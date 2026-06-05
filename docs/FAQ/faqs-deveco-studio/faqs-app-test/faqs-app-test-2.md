@@ -4,6 +4,7 @@ title: "升级DevEco Studio后执行测试任务失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-2
 ---
 
+
 **问题现象**
 
 升级DevEco Studio后，打开先前创建的工程并执行测试框架任务时遇到失败。

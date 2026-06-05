@@ -1,7 +1,9 @@
 ---
 title: "资源限定与访问"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-resource-restriction
+format: md
 ---
+
 
 ## 资源限定词
 

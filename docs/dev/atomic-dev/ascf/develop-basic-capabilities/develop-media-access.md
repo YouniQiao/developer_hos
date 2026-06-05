@@ -1,7 +1,9 @@
 ---
 title: "访问媒体文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-media-access
+format: md
 ---
+
 
 开发者可以使用[has.chooseImage](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-image#haschooseimage)选择图片，从而访问媒体库资源。
 

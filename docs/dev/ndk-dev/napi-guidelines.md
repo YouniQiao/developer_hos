@@ -1,7 +1,9 @@
 ---
 title: "Node-API开发规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines
+format: md
 ---
+
 
 ## 获取JS传入参数及其数量
 

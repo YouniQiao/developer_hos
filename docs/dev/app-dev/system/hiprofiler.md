@@ -1,7 +1,9 @@
 ---
 title: "hiprofiler"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiprofiler
+format: md
 ---
+
 
 ## Hiprofiler简介
 
@@ -274,10 +276,10 @@ CONFIG
 | 参数名字 | 类型 | 参数含义 | 详细介绍 |
 | --- | --- | --- | --- |
 | report\_sysmem\_vmem\_info | bool | 是否读取虚拟内存数据。 | 从/proc/vmstat节点读取内存数据。 |
-| report\_process\_mem\_info | bool | 是否获取进程详细内存数据，如rss\_shmem，rss\_file，vm\_swap等。 | 从/proc/${pid}/stat节点读取内存数据。 |
-| report\_smaps\_mem\_info | bool | 是否获取进程smaps内存信息。 | 从/proc/${pid}/smaps节点获取进程smaps内存数据。 |
+| report\_process\_mem\_info | bool | 是否获取进程详细内存数据，如rss\_shmem，rss\_file，vm\_swap等。 | 从/proc/$\{pid\}/stat节点读取内存数据。 |
+| report\_smaps\_mem\_info | bool | 是否获取进程smaps内存信息。 | 从/proc/$\{pid\}/smaps节点获取进程smaps内存数据。 |
 | report\_gpu\_mem\_info | bool | 是否获取进程GPU使用情况。 | 读取/proc/gpu\_memory节点数据。 |
-| parse\_smaps\_rollup | bool | 是否从smaps\_rollup节点读取smaps统计数据。 | 读取/proc/{pid}/smaps\_rollup节点的smaps统计数据，相比使用report\_smaps\_mem\_info参数调优服务性能会更好（如CPU，内存使用优化）。 |
+| parse\_smaps\_rollup | bool | 是否从smaps\_rollup节点读取smaps统计数据。 | 读取/proc/\{pid\}/smaps\_rollup节点的smaps统计数据，相比使用report\_smaps\_mem\_info参数调优服务性能会更好（如CPU，内存使用优化）。 |
 
 内存信息包含如下：
 

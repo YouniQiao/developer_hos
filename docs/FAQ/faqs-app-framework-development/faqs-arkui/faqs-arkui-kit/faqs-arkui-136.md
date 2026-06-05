@@ -4,6 +4,7 @@ title: "Grid组件的scrollBar是否支持自定义"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-136
 ---
 
+
 Grid组件的默认滑动条scrollBar不支持自定义样式。
 
 可以通过隐藏默认滑动条并绑定ScrollBar组件来满足该场景。参考代码如下：

@@ -1,7 +1,9 @@
 ---
 title: "HMAC加密报错：Error message:convertSymKey key failed!"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-22
+format: md
 ---
+
 
 **问题场景**
 

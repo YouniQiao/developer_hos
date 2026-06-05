@@ -1,7 +1,9 @@
 ---
 title: "音频播放"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-audio-play-0000002351893457
+format: md
 ---
+
 
 快游戏中使用 InnerAudioContext 播放音频。通过[qg.createInnerAudioContext()](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-quickgame-runtime-audio-0000002366156904#section855144817217)可以获取到全局唯一的 InnerAudioContext 实例。支持的属性和方法请参见[音频](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-quickgame-runtime-audio-0000002366156904)。
 

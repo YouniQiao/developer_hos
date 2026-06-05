@@ -1,7 +1,9 @@
 ---
 title: "配置隐私声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-privacy-state-0000002401219281
+format: md
 ---
+
 
 游戏要求提供隐私声明网站，便于玩家了解游戏收集、使用隐私数据的情况。
 

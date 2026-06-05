@@ -2,7 +2,9 @@
 title: "数据开放：天气数据开放&lt;Weather&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-weather-0000002504275029
+format: md
 ---
+
 
 # 数据开放：天气数据开放&lt;Weather&gt;
 

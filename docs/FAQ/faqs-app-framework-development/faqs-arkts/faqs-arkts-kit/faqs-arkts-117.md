@@ -4,6 +4,7 @@ title: "如何在ArkTS中使用闭包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-117
 ---
 
+
 **问题描述**
 
 ArkTS是否支持TypeScript中的闭包函数？

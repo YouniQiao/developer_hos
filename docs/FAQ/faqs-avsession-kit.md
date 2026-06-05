@@ -4,6 +4,7 @@ title: "音视频播控（AVSession）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-kit
 ---
 
+
 * **[如何响应播控中心的播放模式切换](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-1)**
 * **[应用如何更新进度条](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-2)**
 * **[为什么接入播控后，播控中心部分按钮是灰色的，不可点击](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-3)**

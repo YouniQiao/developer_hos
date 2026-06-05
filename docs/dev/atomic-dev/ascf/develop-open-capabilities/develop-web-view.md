@@ -1,7 +1,9 @@
 ---
 title: "开发web-view组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-web-view
+format: md
 ---
+
 
 web-view用于在元服务中嵌入网页内容，它作为一个容器，能够将网页内容直接集成到元服务的界面中，使得用户可以在不离开元服务的情况下浏览网页，为用户提供无缝的浏览体验。
 

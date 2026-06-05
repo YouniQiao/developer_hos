@@ -1,6 +1,8 @@
 ---
 title: FAQ
+format: md
 ---
+
 
 # FAQ
 

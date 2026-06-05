@@ -1,7 +1,9 @@
 ---
 title: "ArkData简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-mgmt-overview
+format: md
 ---
+
 
 ## 功能介绍
 

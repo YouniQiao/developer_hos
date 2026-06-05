@@ -1,7 +1,9 @@
 ---
 title: "产品优势"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-advantages-0000002343110232
+format: md
 ---
+
 
 ## 过程安全可靠
 

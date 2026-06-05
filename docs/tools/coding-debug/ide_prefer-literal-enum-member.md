@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-literal-enum-member"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-literal-enum-member
 

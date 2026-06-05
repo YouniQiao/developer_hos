@@ -2,7 +2,9 @@
 title: "天气数据刷新命令&lt;RefreshWeatherCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/refreshweathercommand-0000001194207227
+format: md
 ---
+
 
 # 天气数据刷新命令&lt;RefreshWeatherCommand&gt;
 

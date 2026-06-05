@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "识别平面语义（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-semantics
+format: md
 ---
+
 
 ## 约束与限制
 

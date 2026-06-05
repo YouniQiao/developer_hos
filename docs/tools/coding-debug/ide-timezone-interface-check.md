@@ -1,7 +1,9 @@
 ---
 title: "@performance/timezone-interface-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/timezone-interface-check
 

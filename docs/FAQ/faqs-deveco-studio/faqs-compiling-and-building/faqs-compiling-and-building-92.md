@@ -4,6 +4,7 @@ title: "arm64，armv7，x86_64 三种架构的适用范围"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-92
 ---
 
+
 **问题描述**
 
 创建的 Native C++ 项目，默认支持三种架构：arm64、armv7 和 x86\_64。这些架构，分别用在什么地方？

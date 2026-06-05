@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "拉起收银台无反应或报错？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-5
+format: md
 ---
+
 
 该情况一般属于入参格式存在问题，还请根据支付的回调信息进行定位，请检查以下注意事项：
 

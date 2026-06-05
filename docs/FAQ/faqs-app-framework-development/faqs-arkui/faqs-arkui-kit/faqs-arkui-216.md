@@ -1,7 +1,9 @@
 ---
 title: "如何使用iconfont"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-216
+format: md
 ---
+
 
 使用iconfont时，开发者需先获取字体库的ttf文件，再通过 `font.registerFont` 接口注册。在 `Text` 上使用对应的 unicode 编码即可。参考代码如下：
 

@@ -2,7 +2,9 @@
 title: "鸿蒙应用"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/hongmengyuanshengyingyong-0000002150427782
+format: md
 ---
+
 
 
 #### 鸿蒙应用

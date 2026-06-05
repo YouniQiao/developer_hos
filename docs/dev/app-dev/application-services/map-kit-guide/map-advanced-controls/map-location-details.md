@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "地点详情展示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-details
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -25,7 +27,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [LocationQueryOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#locationqueryoptions) | 查询地点详情的参数。 |
-| [queryLocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#querylocation)(context: common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), options: [LocationQueryOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#locationqueryoptions)): Promise<void> | 查询地点详情。 |
+| [queryLocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#querylocation)(context: common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), options: [LocationQueryOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#locationqueryoptions)): Promise\<void\> | 查询地点详情。 |
 
 ## 开发步骤
 

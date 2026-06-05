@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "领券场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-promotion-claim-coupon
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -56,7 +58,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/paym
 
 | 接口名 | 描述 |
 | --- | --- |
-| startPromotionEntryDialog(mercNo: string, offset?: number): Promise<UserAction>; | 拉起活动入口组件。 |
+| startPromotionEntryDialog(mercNo: string, offset?: number): Promise\<UserAction\>; | 拉起活动入口组件。 |
 
 ## 开发步骤
 

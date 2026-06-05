@@ -1,7 +1,9 @@
 ---
 title: "小游戏（快游戏）技术支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-support-0000002482746056
+format: md
 ---
+
 
 当您遇到问题时，可以按照以下顺序寻求帮助。
 

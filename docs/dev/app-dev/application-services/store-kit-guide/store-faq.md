@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AppGallery Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq
+format: md
 ---
+
 
 * **[AppGallery Connect中可以配置多个订阅关键事件回调地址吗？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-9)**
 * **[AppGallery Connect获取的IAP公钥最大长度是多少？便于用户存储设置的最大长度是多少？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-10)**

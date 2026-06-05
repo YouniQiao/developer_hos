@@ -1,7 +1,9 @@
 ---
 title: "运动联动管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-litewearable-sport-linkage-manage
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -20,10 +22,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heal
 | [pause](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutpause)(): void | 暂停运动联动。 |
 | [resume](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutresume)(): void | 恢复运动联动。 |
 | [stop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutstop)(): void | 停止运动联动。 |
-| [onData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutondata)(dataType: undefined, listener: Callback<[SampleReal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#samplereal)[]>): void | 订阅数据。 |
-| [offData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutoffdata)(dataType: undefined, listener?: Callback<[SampleReal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#samplereal)[]>): void | 解订阅数据。 |
+| [onData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutondata)(dataType: undefined, listener: Callback[SampleReal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#samplereal)[]): void | 订阅数据。 |
+| [offData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutoffdata)(dataType: undefined, listener?: Callback[SampleReal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#samplereal)[]): void | 解订阅数据。 |
 | [sendData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutsenddata)(sampleReal: [SampleReal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#samplereal)[]): void | 下发融合数据。 |
-| [readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#healthstorereaddata)<T extends ExerciseSequence>(request: exercisesequencereadrequest, callback: Callback<T[]>): void | 查询最新一条锻炼记录。 |
+| [readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#healthstorereaddata)\<T extends ExerciseSequence\>(request: exercisesequencereadrequest, callback: Callback\<T[]\>): void | 查询最新一条锻炼记录。 |
 | [saveData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#healthstoresavedata)(exerciseSequence: ExerciseSequence): void | 保存锻炼记录。 |
 
 ## 开发前检查

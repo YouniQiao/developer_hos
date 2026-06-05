@@ -2,7 +2,9 @@
 title: "SubTaskDetailExt"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-subtaskdetailext-0000001182370048
+format: md
 ---
+
 # SubTaskDetailExt
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

@@ -4,6 +4,7 @@ title: "如何通过C接口使用网络相关功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-66
 ---
 
+
 以下模块提供了C接口：自定义DNS解析、证书校验、WebSocket。
 
 对于未直接提供C接口的模块，可以通过AKI机制调用ArkTS接口。

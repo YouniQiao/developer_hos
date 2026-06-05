@@ -1,7 +1,9 @@
 ---
 title: "如何申请精确定位"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-location-kit-1
+format: md
 ---
+
 
 **问题场景**
 

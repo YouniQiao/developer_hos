@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取重置锁屏密码的企业恢复密钥"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-getkeyforresetpin
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,9 +16,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reco
 
 | 接口名 | 描述 |
 | --- | --- |
-| [verifyUserIdentityEnterprise](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuseridentityenterprise)(userId: number, userType: number, pinCode: string): Promise<void> | 使用Promise方式验证用户锁屏密码。 |
-| [verifyUserByDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog)(userId: number): Promise<void> | 通过Dialog弹框验证用户锁屏密码。 |
-| [getEnterpriseRecoveryKeyForResettingPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getenterpriserecoverykeyforresettingpin)(userId: number, userType: number): Promise<[EnterpriseRecoveryKeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#enterpriserecoverykeyinfo)> | 使用Promise方式获取用于重置锁屏密码的企业恢复密钥。 |
+| [verifyUserIdentityEnterprise](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuseridentityenterprise)(userId: number, userType: number, pinCode: string): Promise\<void\> | 使用Promise方式验证用户锁屏密码。 |
+| [verifyUserByDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog)(userId: number): Promise\<void\> | 通过Dialog弹框验证用户锁屏密码。 |
+| [getEnterpriseRecoveryKeyForResettingPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getenterpriserecoverykeyforresettingpin)(userId: number, userType: number): Promise[EnterpriseRecoveryKeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#enterpriserecoverykeyinfo) | 使用Promise方式获取用于重置锁屏密码的企业恢复密钥。 |
 
 ## 开发步骤
 

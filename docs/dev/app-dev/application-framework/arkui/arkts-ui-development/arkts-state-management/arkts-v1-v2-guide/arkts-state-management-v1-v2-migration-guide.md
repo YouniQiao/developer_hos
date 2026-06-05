@@ -1,7 +1,9 @@
 ---
 title: "状态管理V1向V2迁移场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-v1-v2-migration-guide
+format: md
 ---
+
 
 * **[组件内状态变量迁移](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-inner-component)**
 * **[数据对象状态变量迁移](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-inner-class)**

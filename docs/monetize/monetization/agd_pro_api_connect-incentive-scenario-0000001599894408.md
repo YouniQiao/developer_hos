@@ -2,7 +2,9 @@
 title: "对接激励场景解决方案"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_connect-incentive-scenario-0000001599894408
+format: md
 ---
+
 
 
 #### 前提条件

@@ -1,7 +1,9 @@
 ---
 title: "拉起邮件类应用（mailto方式）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps-by-mailto
+format: md
 ---
+
 
 ## 使用场景
 

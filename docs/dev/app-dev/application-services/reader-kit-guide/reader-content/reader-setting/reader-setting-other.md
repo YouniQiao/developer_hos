@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "修改翻页方式、字体大小及行间距"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-other
+format: md
 ---
+
 
 当应用需要支持修改默认的翻页方式、字体大小、行间距时，开发者可通过[ReaderSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#readersetting)的flipMode、fontSize、lineHeight属性，实现对翻页方式、字体大小、行间距的实时修改。
 

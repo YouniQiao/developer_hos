@@ -4,6 +4,7 @@ title: "如何播放PCM格式的音频"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-21
 ---
 
+
 **问题现象**
 
 使用AVPlayer播放AudioCapturer录制的PCM格式音频时，发生异常错误。

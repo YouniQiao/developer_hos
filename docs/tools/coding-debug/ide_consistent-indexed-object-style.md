@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/consistent-indexed-object-style"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/consistent-indexed-object-style
 

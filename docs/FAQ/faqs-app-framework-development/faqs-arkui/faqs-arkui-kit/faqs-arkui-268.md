@@ -4,6 +4,7 @@ title: "List的下拉加载如何回滚到当前展示位置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-268
 ---
 
+
 **需求描述：**
 
 List组件顶部下拉刷新时，期望数据加载后仍保持刷新前可见的首项元素位置。

@@ -1,7 +1,9 @@
 ---
 title: "如何判断App的启动来源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-99
+format: md
 ---
+
 
 通过startAbility()启动应用时，want参数中的parameters属性可以携带拉起方的信息。系统在parameters中提供了一些预置的key，例如，可以通过ohos.aafwk.param.callerBundleName获取拉起方的BundleName。
 

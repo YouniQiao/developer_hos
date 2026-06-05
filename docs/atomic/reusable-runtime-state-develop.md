@@ -2,7 +2,9 @@
 title: "开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-runtime-state-develop
 has_merged_cells: true
+format: md
 ---
+
 
 在用户实际使用应用的过程中，可能会遇到需要通过另外一个元服务承载服务的情况。考虑到跳转打开新的元服务对用户使用体验的影响，可以使用嵌入式拉起元服务的方式来实现这种效果。
 

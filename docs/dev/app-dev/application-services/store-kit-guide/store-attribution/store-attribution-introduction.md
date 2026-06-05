@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-introduction
+format: md
 ---
+
 
 应用归因服务是华为提供的不依赖用户标识符的端侧归因能力。
 

@@ -2,7 +2,9 @@
 title: "关联应用"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/related-applications-0000002437785706
+format: md
 ---
+
 
 # 关联应用
 

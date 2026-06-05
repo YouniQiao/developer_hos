@@ -1,6 +1,8 @@
 ---
 title: "ohpm-repo mirror_storage"
+format: md
 ---
+
 
 # ohpm-repo mirror\_storage
 
@@ -41,7 +43,7 @@ ohpm-repo mirror_storage <source_sftp> <target_sftp> <target> [options]
 
 * 类型：String
 * 必填参数
-* 格式： [``<@scope>``/]`<pkg>`[``<@version>``] 或 @all
+* 格式： [``<@scope>``/]`\<pkg\>`[``<@version>``] 或 @all
 * 说明： `<@scope>`和`<@version>`是可选的， `<pkg>`是包名。
 
 必须在mirror\_storage命令后配置`<target>`参数，指定满足条件的包；或使用@all指定所有包。

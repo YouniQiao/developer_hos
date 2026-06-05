@@ -1,7 +1,9 @@
 ---
 title: "兼容性告警屏蔽"
 displayed_sidebar: appCompatibilitySidebar
+format: md
 ---
+
 
 # 兼容性告警屏蔽
 
@@ -9,7 +11,7 @@ displayed_sidebar: appCompatibilitySidebar
 
 ## 通过注解屏蔽
 
-注解可以添加在变量声明、类型声明、函数声明、命名空间声明、注解声明、结构体成员、类成员、接口成员上，消除内部或自身产生的告警，注解语句为@SuppressWarnings(\{ rules: [SuppressWarningsType.COMPATIBILITY] \})。
+注解可以添加在变量声明、类型声明、函数声明、命名空间声明、注解声明、结构体成员、类成员、接口成员上，消除内部或自身产生的告警，注解语句为@SuppressWarnings(\\{ rules: [SuppressWarningsType.COMPATIBILITY] \\})。
 
 ****使用示例：****
 

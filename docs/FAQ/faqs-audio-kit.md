@@ -4,6 +4,7 @@ title: "音频（Audio）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-kit
 ---
 
+
 * **[如何后台播放音乐](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-1)**
 * **[创建多个视频组件无法播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-2)**
 * **[OpenSL ES音频录制示例调用崩溃](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-3)**

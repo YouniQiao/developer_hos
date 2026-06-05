@@ -1,6 +1,8 @@
 ---
 title: "常见问题FAQ"
+format: md
 ---
+
 
 # 常见问题FAQ
 

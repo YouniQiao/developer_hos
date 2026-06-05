@@ -1,7 +1,9 @@
 ---
 title: "System窗口"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-window-system-0000002526440151
+format: md
 ---
+
 
 ## 功能介绍
 

@@ -1,7 +1,9 @@
 ---
 title: "访问网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-network-access
+format: md
 ---
+
 
 ## 配置服务器域名
 

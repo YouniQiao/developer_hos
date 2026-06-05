@@ -1,7 +1,9 @@
 ---
 title: "快速入门"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-editor-quick-0000002526540937
+format: md
 ---
+
 
 通过如下示例简单演示PGD Editor的使用。
 

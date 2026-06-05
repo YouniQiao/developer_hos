@@ -1,7 +1,9 @@
 ---
 title: "技能（Skills）配置"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 技能（Skills）配置
 

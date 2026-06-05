@@ -1,7 +1,9 @@
 ---
 title: "注销核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-terminate-0000001834051117
+format: md
 ---
+
 
 ## 前提条件
 

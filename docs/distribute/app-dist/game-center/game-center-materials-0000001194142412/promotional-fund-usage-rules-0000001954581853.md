@@ -2,7 +2,9 @@
 title: "鸿飞计划推广金使用规则"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/promotional-fund-usage-rules-0000001954581853
+format: md
 ---
+
 
 # 鸿飞计划推广金使用规则
 

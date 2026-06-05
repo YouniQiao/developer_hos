@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-introduction
+format: md
 ---
+
 
 从6.0.1(21)版本开始，新增小游戏相关能力。
 

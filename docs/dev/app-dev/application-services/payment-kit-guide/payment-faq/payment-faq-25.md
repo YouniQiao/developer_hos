@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "收银台支付报错“应用信息校验不通过，请联系商家处理”？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-25
+format: md
 ---
+
 
 1. 检查网络是否正常。
 2. 检查是否[配置应用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-app-identity-info#配置应用属性)，确认appId配置是否有调整。

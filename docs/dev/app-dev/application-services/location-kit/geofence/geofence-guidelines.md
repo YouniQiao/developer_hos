@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "端侧GNSS围栏开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-guidelines
+format: md
 ---
+
 
 目前端侧仅支持构建圆形围栏，并且依赖GNSS芯片的地理围栏功能，仅在室外开阔区域才能准确识别用户进出围栏事件。
 
@@ -14,8 +16,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geof
 
 | 接口名 | 功能描述 |
 | --- | --- |
-| [addGnssGeofence(fenceRequest: GnssGeofenceRequest): Promise<number>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanageraddgnssgeofence12) | 添加一个GNSS地理围栏，并订阅地理围栏事件。使用Promise异步回调。 |
-| [removeGnssGeofence(geofenceId: number): Promise<void>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanagerremovegnssgeofence12) | 删除一个GNSS地理围栏，并取消订阅该地理围栏事件。使用Promise异步回调。 |
+| [addGnssGeofence(fenceRequest: GnssGeofenceRequest): Promise\<number\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanageraddgnssgeofence12) | 添加一个GNSS地理围栏，并订阅地理围栏事件。使用Promise异步回调。 |
+| [removeGnssGeofence(geofenceId: number): Promise\<void\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanagerremovegnssgeofence12) | 删除一个GNSS地理围栏，并取消订阅该地理围栏事件。使用Promise异步回调。 |
 
 ## 开发步骤
 

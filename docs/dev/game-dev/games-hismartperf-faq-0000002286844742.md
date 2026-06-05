@@ -1,7 +1,9 @@
 ---
 title: "HiSmartPerf FAQ"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-faq-0000002286844742
+format: md
 ---
+
 
 ## 如何解决一直显示“正在连接采集器”
 

@@ -1,7 +1,9 @@
 ---
 title: "构建用户界面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui
+format: md
 ---
+
 
 * **[组件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-component)**
 * **[构建布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-layout)**

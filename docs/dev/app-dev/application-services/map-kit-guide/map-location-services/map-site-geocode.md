@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "地理编码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-site-geocode
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -17,10 +19,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 
 | 接口名 | 描述 |
 | --- | --- |
-| [geocode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocode)(geocodeParams: [GeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocodeparams)): Promise<[GeocodeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocoderesult)> | 正地理编码。 |
-| [geocode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocode-1)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), geocodeParams: [GeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocodeparams)): Promise<[GeocodeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocoderesult)> | 正地理编码。支持上传Context上下文。 |
-| [reverseGeocode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocode)(reverseGeocodeParams: [ReverseGeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocodeparams)): Promise<[ReverseGeocodeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocoderesult)> | 逆地理编码。 |
-| [reverseGeocode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocode-1)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), reverseGeocodeParams: [ReverseGeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocodeparams)): Promise<[ReverseGeocodeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocoderesult)> | 逆地理编码。支持上传Context上下文。 |
+| [geocode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocode)(geocodeParams: [GeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocodeparams)): Promise[GeocodeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocoderesult) | 正地理编码。 |
+| [geocode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocode-1)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), geocodeParams: [GeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocodeparams)): Promise[GeocodeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocoderesult) | 正地理编码。支持上传Context上下文。 |
+| [reverseGeocode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocode)(reverseGeocodeParams: [ReverseGeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocodeparams)): Promise[ReverseGeocodeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocoderesult) | 逆地理编码。 |
+| [reverseGeocode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocode-1)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), reverseGeocodeParams: [ReverseGeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocodeparams)): Promise[ReverseGeocodeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocoderesult) | 逆地理编码。支持上传Context上下文。 |
 | [GeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocodeparams) | 正地理编码的参数。 |
 | [GeocodeResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#geocoderesult) | 正地理编码的结果。 |
 | [ReverseGeocodeParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-site#reversegeocodeparams) | 逆地理编码的参数。 |

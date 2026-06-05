@@ -1,7 +1,9 @@
 ---
 title: "互动评论"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-interaction-comments-0000002320645993
+format: md
 ---
+
 
 为了提供更加便利、优质的服务，进一步优化用户体验，互动评论已经迁移到应用市场统一开放平台AppGallery Connect，进入AppGallery Connect，选择您需要查看的应用即可进入互动评论界面。
 

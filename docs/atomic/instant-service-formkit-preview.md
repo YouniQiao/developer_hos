@@ -1,7 +1,9 @@
 ---
 title: "预览服务卡片（FormKit）"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit-preview
+format: md
 ---
+
 
 1. 在服务卡片（FormKit）界面，选择“草稿”或“待审核”卡片，点击提交预览，即可在负一屏探索流看到此卡，并进行预览测试。
 

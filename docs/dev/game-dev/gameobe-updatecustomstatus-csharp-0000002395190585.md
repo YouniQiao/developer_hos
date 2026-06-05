@@ -1,7 +1,9 @@
 ---
 title: "更新玩家自定义状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-updatecustomstatus-csharp-0000002395190585
+format: md
 ---
+
 
 通过对玩家的自定义状态进行更新，可用于实现房间内玩家准备和取消准备等功能。
 

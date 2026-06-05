@@ -4,6 +4,7 @@ title: "Worker和TaskPool的线程数量是否有限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-28
 ---
 
+
 TaskPool会动态调整线程数量，不支持手动设置。只需将任务添加到线程池，确保高优先级任务及时执行。
 
 Worker的线程个数最多为64个。如果超出此限制，创建将失败。

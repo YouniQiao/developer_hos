@@ -1,7 +1,9 @@
 ---
 title: "如何使用SM3算法生成散列值"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-29
+format: md
 ---
+
 
 调用[cryptoFramework.createMd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoframework#cryptoframeworkcreatemd)方法，传入SM3，可参考如下代码：
 

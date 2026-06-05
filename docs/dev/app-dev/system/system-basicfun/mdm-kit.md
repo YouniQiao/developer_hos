@@ -1,7 +1,9 @@
 ---
 title: "MDM Kit（企业设备管理服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit
+format: md
 ---
+
 
 * **[MDM Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-intro)**
 * **[MDM Kit开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-guide)**

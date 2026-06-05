@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音频录制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording
+format: md
 ---
+
 
 * **[音频录制开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording-overview)**
 * **[推荐使用OHAudio开发音频录制功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording)**

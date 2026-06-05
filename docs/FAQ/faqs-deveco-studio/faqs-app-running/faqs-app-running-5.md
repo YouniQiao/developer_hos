@@ -4,6 +4,7 @@ title: "运行工程到本地模拟器，提示“Failed to get the device apiVe
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-5
 ---
 
+
 **问题现象**
 
 本地模拟器启动后，运行工程到模拟器，提示“Failed to get the device apiVersion”。

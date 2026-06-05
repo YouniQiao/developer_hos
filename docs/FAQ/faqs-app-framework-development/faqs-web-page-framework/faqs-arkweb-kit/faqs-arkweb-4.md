@@ -4,6 +4,7 @@ title: "onInterceptRequest拦截URL并自定义HTML文件，页面加载失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-4
 ---
 
+
 **问题现象**
 
 当使用onInterceptRequest拦截页面Web的src链接后返回自定义HTML时，如果自定义HTML文件中的script标签内容未加载，需要检查脚本路径和加载方式。

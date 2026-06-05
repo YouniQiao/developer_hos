@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "密钥证明介绍及算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-attestation-overview
+format: md
 ---
+
 
 HUKS为密钥提供合法性证明能力，主要应用于非对称密钥的公钥的证明。
 
@@ -55,8 +57,8 @@ ApplicationIDType类型取值说明：
 
 | type（OID）取值 | value取值说明 |
 | --- | --- |
-| 1.3.6.1.4.1.2011.2.376.2.1.3.1 | 样例：{appId:"xxx", bundleName:"xxx", appIdentifier:"xxx", appMode:"xxx"}  其中appIdentifier、appMode从API 20开始支持。 |
-| 1.3.6.1.4.1.2011.2.376.2.1.3.2 | 样例：{processName:"xxx", APL:"system\_basic | system\_core"}  APL为[系统服务等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限机制中的基本概念)。 |
+| 1.3.6.1.4.1.2011.2.376.2.1.3.1 | 样例：\{appId:"xxx", bundleName:"xxx", appIdentifier:"xxx", appMode:"xxx"\}  其中appIdentifier、appMode从API 20开始支持。 |
+| 1.3.6.1.4.1.2011.2.376.2.1.3.2 | 样例：\{processName:"xxx", APL:"system\_basic | system\_core"\}  APL为[系统服务等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限机制中的基本概念)。 |
 
 密钥证明过程如下：
 

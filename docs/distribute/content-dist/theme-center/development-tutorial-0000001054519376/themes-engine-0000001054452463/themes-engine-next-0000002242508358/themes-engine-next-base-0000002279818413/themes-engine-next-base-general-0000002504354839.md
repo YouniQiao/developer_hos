@@ -2,7 +2,9 @@
 title: "视图：通用属性"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-general-0000002504354839
+format: md
 ---
+
 
 # 视图：通用属性
 

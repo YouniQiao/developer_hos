@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用内快捷方式加桌返回401错误码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-faq-32
+format: md
 ---
+
 
 **问题现象**
 

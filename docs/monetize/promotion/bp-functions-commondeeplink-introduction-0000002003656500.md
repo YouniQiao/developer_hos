@@ -2,7 +2,9 @@
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-commondeeplink-introduction-0000002003656500
+format: md
 ---
+
 # 业务介绍
 
 ![](./img/5df290c719c5.png)

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "点注释"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-annotation
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -24,10 +26,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [PointAnnotationParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#pointannotationparams) | 点注释参数。 |
-| [addPointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addpointannotation)(params: [mapCommon.PointAnnotationParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#pointannotationparams)): Promise<[PointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-pointannotation)> | 在地图上添加点注释。 |
+| [addPointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addpointannotation)(params: [mapCommon.PointAnnotationParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#pointannotationparams)): Promise[PointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-pointannotation) | 在地图上添加点注释。 |
 | [PointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-pointannotation) | 点注释，支持更新和查询相关属性。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onpointannotationclick)(type: 'pointAnnotationClick', callback: Callback<[PointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-pointannotation)>): void | 设置点注释点击事件监听器。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#offpointannotationclick)(type: 'pointAnnotationClick', callback?: Callback<[PointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-pointannotation)>): void | 取消监听点注释点击事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onpointannotationclick)(type: 'pointAnnotationClick', callback: Callback[PointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-pointannotation)): void | 设置点注释点击事件监听器。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#offpointannotationclick)(type: 'pointAnnotationClick', callback?: Callback[PointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-pointannotation)): void | 取消监听点注释点击事件。 |
 
 ## 开发步骤
 

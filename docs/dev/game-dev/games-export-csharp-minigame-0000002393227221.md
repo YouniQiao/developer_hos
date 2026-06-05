@@ -1,7 +1,9 @@
 ---
 title: "C#（小游戏）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-export-csharp-minigame-0000002393227221
+format: md
 ---
+
 
 ## 前提条件
 

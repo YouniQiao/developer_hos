@@ -2,7 +2,9 @@
 title: "视图：遮罩&lt;Mask&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-mask-0000002471235010
+format: md
 ---
+
 
 # 视图：遮罩&lt;Mask&gt;
 

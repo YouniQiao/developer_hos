@@ -1,7 +1,9 @@
 ---
 title: "意图注册"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-regist-intents-beacon-0000002410006612
+format: md
 ---
+
 
 1. 确认需要使用的意图之后，工程中右击“entry”目录，选择“New > Insight Intent”新建意图。
 

@@ -1,7 +1,9 @@
 ---
 title: "recommended推荐规则清单"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # recommended推荐规则清单
 

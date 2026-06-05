@@ -1,7 +1,9 @@
 ---
 title: "规格错误码"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 规格错误码
 

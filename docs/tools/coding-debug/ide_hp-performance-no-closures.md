@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-performance-no-closures"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-performance-no-closures
 

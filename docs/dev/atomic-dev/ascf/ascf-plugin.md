@@ -1,7 +1,9 @@
 ---
 title: "获取ASCF插件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-plugin
+format: md
 ---
+
 
 ## 在DevEco Studio中使用
 

@@ -1,7 +1,9 @@
 ---
 title: "上传版号材料"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-version-0000002424763506
+format: md
 ---
+
 
 根据法律法规，要求小游戏上架时提供对应的小游戏版号材料。
 

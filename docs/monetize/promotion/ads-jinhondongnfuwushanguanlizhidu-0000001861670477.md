@@ -2,7 +2,9 @@
 title: "鲸鸿动能服务商管理制度"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-jinhondongnfuwushanguanlizhidu-0000001861670477
+format: md
 ---
+
 # 鲸鸿动能服务商管理制度
 
 <strong>生效日期：2026年4月1日</strong>

@@ -4,6 +4,7 @@ title: "Grid如何实现拖拽功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-211
 ---
 
+
 1. 通过editMode(true)属性设置Grid进入编辑模式，该模式下可拖拽内部GridItem。
 2. 在onItemDragStart回调中设置拖拽过程中显示的图片。
 3. 在onItemDrop中获取拖拽起始位置和拖拽插入位置，并在onItemDrop中完成交换数组位置动作。

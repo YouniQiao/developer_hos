@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用SegmentMap查询维护区间信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-segment-map
+format: md
 ---
+
 
 FAST Kit提供Segment Map用于查询维护区间信息，实现数据序列区间段的快速更新和快速查询。线段表（Segment Map）是一种用于高效处理区间段信息的数据结构，适用于需要频繁对数据序列的某个区间段进行统计或修改的场景。其典型操作包括单点修改、区间修改、区间查询等。
 

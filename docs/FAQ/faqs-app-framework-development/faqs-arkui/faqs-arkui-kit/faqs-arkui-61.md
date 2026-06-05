@@ -4,6 +4,7 @@ title: "Image无法使用bindContextMenu"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-61
 ---
 
+
 Image组件默认启用长按拖拽功能，会与bindContextMenu的长按弹出菜单冲突，需显式设置draggable(false)来禁用拖拽。参考代码如下：
 
 ```

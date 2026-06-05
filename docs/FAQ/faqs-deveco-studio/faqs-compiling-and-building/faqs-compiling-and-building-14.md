@@ -4,6 +4,7 @@ title: "JDK版本不匹配导致编译失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-14
 ---
 
+
 **问题现象**
 
 通过命令行方式构建HarmonyOS应用或元服务过程中出现构建失败，现象如下图所示。

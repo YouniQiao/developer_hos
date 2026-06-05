@@ -1,7 +1,9 @@
 ---
 title: "意图调用"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-call-intents-beacon-0000002443485897
+format: md
 ---
+
 
 您需要实现InsightIntentExecutor，并在对应回调中实现打开落地页（即点击小艺建议卡片跳转的界面）的能力。
 

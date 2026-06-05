@@ -4,6 +4,7 @@ title: ".h文件中uint8_t无法使用如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-16
 ---
 
+
 **解决措施**
 
 1. 在CPP导入头文件修改如下：

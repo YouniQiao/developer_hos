@@ -1,7 +1,9 @@
 ---
 title: "查找设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-discovery-development-guide
+format: md
 ---
+
 
 ## 简介
 

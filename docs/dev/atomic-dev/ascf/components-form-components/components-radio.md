@@ -1,7 +1,9 @@
 ---
 title: "radio"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-radio
+format: md
 ---
+
 
 单选按钮。
 

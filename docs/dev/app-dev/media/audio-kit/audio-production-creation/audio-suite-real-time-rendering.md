@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "实时渲染(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-real-time-rendering
+format: md
 ---
+
 
 从API version 22开始，[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)给开发者提供音频实时渲染能力，即音频实时播放时可进行自定义音效（仅支持均衡器节点）。例如，可以使用均衡器中预置的音效，改变音乐的风格。
 
@@ -18,7 +20,7 @@ target_link_libraries(sample PUBLIC libohaudio.so libohaudiosuite.so)
 
 ### 添加头文件
 
-开发者通过引入头文件<[native\_audio\_suite\_base.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h)>、<[native\_audio\_suite\_engine.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-engine-h)>、<[native\_audiostreambuilder.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h)>和<[native\_audiorenderer.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiorenderer-h)>使用音频编创和音频播放相关API。
+开发者通过引入头文件[native\_audio\_suite\_base.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h)、[native\_audio\_suite\_engine.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-engine-h)、[native\_audiostreambuilder.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h)和[native\_audiorenderer.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiorenderer-h)使用音频编创和音频播放相关API。
 
 ```
 #include <ohaudiosuite/native_audio_suite_base.h>

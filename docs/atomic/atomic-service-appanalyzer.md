@@ -1,7 +1,9 @@
 ---
 title: "使用元服务体检工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-appanalyzer
+format: md
 ---
+
 
 应用与元服务体检工具（AppAnalyzer）是DevEco Studio面向开发人员提供的元服务体检工具，可以在开发阶段快速对元服务的质量和体验好坏打分。
 

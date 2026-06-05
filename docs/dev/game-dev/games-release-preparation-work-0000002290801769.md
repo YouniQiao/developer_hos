@@ -1,7 +1,9 @@
 ---
 title: "准备工作"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-release-preparation-work-0000002290801769
+format: md
 ---
+
 
 提前了解游戏的上架规则，并提前准备游戏素材，有助于快速通过游戏上架审核。
 

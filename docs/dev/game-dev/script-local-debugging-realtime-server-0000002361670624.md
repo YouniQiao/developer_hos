@@ -1,7 +1,9 @@
 ---
 title: "脚本示例"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/script-local-debugging-realtime-server-0000002361670624
+format: md
 ---
+
 
 在本地实时服务器[代码调试](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-local-debugging-realtime-server-0000002395350541#ZH-CN_TOPIC_0000002395350541__li1747133282214)环节，您可以在解压后的实时服务器SDK的目录中，创建client.js和server.js脚本，自行实现调用[GOBERTS.localServerMethodRoute](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-localservermethodroute-server-ts-0000002395356097)接口，完成[SDK初始化](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-localservermethodroute-server-ts-0000002395356097#section98321185316)、[查询房间列表](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-localservermethodroute-server-ts-0000002395356097#section1359195983413)和[加入房间](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-localservermethodroute-server-ts-0000002395356097#section979417124212)等操作。
 

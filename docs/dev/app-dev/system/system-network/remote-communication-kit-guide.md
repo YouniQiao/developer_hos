@@ -1,7 +1,9 @@
 ---
 title: "Remote Communication Kit（远场通信服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-kit-guide
+format: md
 ---
+
 
 * **[Remote Communication Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-preparations)**

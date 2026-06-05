@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "快速验证手机号Button"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-getphonenumber
+format: md
 ---
+
 
 ## 场景介绍
 

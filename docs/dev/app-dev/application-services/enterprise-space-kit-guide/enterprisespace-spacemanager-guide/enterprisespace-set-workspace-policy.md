@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置工作空间策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-workspace-policy
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为应用提供设置工作空间策略的能力。从6.0.2(
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setWorkspacePolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspacepolicy)(key: string, value: number, workspaceId?: number): Promise<void> | 设置工作空间策略。使用Promise异步回调。 |
+| [setWorkspacePolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspacepolicy)(key: string, value: number, workspaceId?: number): Promise\<void\> | 设置工作空间策略。使用Promise异步回调。 |
 
 ## 开发步骤
 

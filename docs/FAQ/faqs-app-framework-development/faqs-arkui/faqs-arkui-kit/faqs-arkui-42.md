@@ -4,6 +4,7 @@ title: "在使用Canvas的场景中，如何主动控制组件刷新UI"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-42
 ---
 
+
 Canvas组件最终的显示内容分两种：
 
 一是组件的通用属性包括背景色、边框等渲染属性，这些属性可以通过状态变量驱动更新。

@@ -1,7 +1,9 @@
 ---
 title: "保护需要用户认证的密码类数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-scenario2
+format: md
 ---
+
 
 ![](./img/3b8f7141.png)
 

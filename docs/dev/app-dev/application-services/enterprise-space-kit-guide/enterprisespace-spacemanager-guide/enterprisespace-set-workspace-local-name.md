@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置空间本地名称"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-workspace-local-name
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为应用提供设置工作空间本地名称（即工作空
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setWorkspaceLocalName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspacelocalname)(localName: string, workspaceId?: number): Promise<void> | 设置工作空间本地名称。使用Promise异步回调。 |
+| [setWorkspaceLocalName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspacelocalname)(localName: string, workspaceId?: number): Promise\<void\> | 设置工作空间本地名称。使用Promise异步回调。 |
 
 ## 开发步骤
 

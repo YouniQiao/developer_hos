@@ -1,7 +1,9 @@
 ---
 title: "加入房间"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073
+format: md
 ---
+
 
 当不同的玩家加入同一语音房间内，即可互相发送/接收实时音频数据。目前，游戏多媒体服务支持加入[小队语音房间](#section5143529157)、[国战语音房间](#section4240941141118)和[范围语音房间](#section4450837143111)。
 

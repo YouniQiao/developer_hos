@@ -1,7 +1,9 @@
 ---
 title: "USB服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb
+format: md
 ---
+
 
 * **[开发USB服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-dev)**
 * **[开发USB串口通信服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-serial-dev)**

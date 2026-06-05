@@ -1,7 +1,9 @@
 ---
 title: "AppGallery Connect API"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-agcapi-overview-0000002235900876
+format: md
 ---
+
 
 您不仅可以登录AppGallery Connect使用相关功能，还可以通过AppGallery Connect API定制AppGallery Connect提供的能力，实现流程自动化，提高您的工作效率。
 

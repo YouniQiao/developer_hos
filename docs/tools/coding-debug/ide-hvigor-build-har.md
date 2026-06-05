@@ -1,7 +1,9 @@
 ---
 title: "构建HAR"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 构建HAR
 

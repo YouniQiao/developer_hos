@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Account Kit（华为账号服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-kit-guide
+format: md
 ---
+
 
 * **[Account Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-introduction)**
 * **[开发者使用Account Kit的登录能力的管理细则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-detailedrules)**

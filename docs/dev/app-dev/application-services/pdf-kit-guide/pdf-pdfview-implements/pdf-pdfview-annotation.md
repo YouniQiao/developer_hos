@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "批注"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-annotation
+format: md
 ---
+
 
 进入批注模式，目前支持高亮、下划线和删除线类型批注。
 

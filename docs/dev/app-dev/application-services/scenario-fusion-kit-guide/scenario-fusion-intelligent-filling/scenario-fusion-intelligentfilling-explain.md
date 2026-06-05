@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "推荐数据源及推荐逻辑说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-explain
+format: md
 ---
+
 
 智能填充将从华为账号、剪贴板、最近日程、联系人和历史表单输入获取数据，以提供填充建议。
 

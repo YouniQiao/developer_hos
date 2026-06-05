@@ -1,7 +1,9 @@
 ---
 title: "同应用端云数据同步概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-cloud-sync-overview
+format: md
 ---
+
 
 ## 场景介绍
 

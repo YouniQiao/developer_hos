@@ -1,7 +1,9 @@
 ---
 title: "企业恢复密钥"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-enterprise-recoverykey
+format: md
 ---
+
 
 * **[获取解密硬盘数据的企业恢复密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-getkeyfordecryptdata)**
 * **[获取重置锁屏密码的企业恢复密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-getkeyforresetpin)**

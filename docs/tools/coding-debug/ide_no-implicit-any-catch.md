@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-implicit-any-catch"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-implicit-any-catch
 

@@ -1,7 +1,9 @@
 ---
 title: "批量任务管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-store-batch-tasks
+format: md
 ---
+
 
 1. 进入“门店管理”页签， 点击任务管理。
 

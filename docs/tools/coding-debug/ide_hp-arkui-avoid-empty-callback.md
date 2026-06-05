@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-avoid-empty-callback"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-avoid-empty-callback
 

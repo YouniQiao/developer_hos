@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "游戏渲染加速服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-rendering-faq
+format: md
 ---
+
 
 * **[超帧和ABR支持的图形API有哪些](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-1)**
 * **[Kit支持的设备类型有哪些](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-6)**

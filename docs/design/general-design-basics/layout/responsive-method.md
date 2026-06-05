@@ -2,7 +2,9 @@
 title: 响应式布局方法
 sidebar_label: 响应式布局方法
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-responsive-layout-method-0000001795698449
+format: md
 ---
+
 # 响应式布局方法
 
 当窗口容器大小发生变化时，界面元素需要自动变化以适应容器大小的变化。

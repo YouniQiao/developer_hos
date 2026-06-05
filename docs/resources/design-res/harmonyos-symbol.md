@@ -1,7 +1,9 @@
 ---
 title: HarmonyOS Symbol
 sidebar_label: HarmonyOS Symbol
+format: md
 ---
+
 
 # HarmonyOS Symbol
 

@@ -1,7 +1,9 @@
 ---
 title: "近场联机"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-game-nearby-playing-0000002351933705
+format: md
 ---
+
 
 近场联机服务为无网专区小游戏提供了在无网环境（如飞机、高铁）通过蓝牙实现联机对战的功能。您的游戏只需要接入近场联机服务即可快速实现无网联机对战，提升玩家游戏体验，并降低游戏开发成本。
 

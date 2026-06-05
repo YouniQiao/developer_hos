@@ -1,7 +1,9 @@
 ---
 title: "UI Design Kit（UI设计套件）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-kit-guide
+format: md
 ---
+
 
 * **[UI Design Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-introduction)**
 * **[图标处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-icon-process)**

@@ -1,7 +1,9 @@
 ---
 title: "工具配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pga-tools-preparation-0000002089781453
+format: md
 ---
+
 
 ## 本地工具配置
 

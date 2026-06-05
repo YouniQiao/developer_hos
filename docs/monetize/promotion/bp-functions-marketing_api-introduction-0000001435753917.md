@@ -2,7 +2,9 @@
 title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-marketing_api-introduction-0000001435753917
+format: md
 ---
+
 # 功能介绍
 
 您可以使用Marketing API创建投放任务，也可以查询华为应用市场应用推广平台中的推广任务统计报表和搜索类推广任务统计报表数据。

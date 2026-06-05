@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "宿主应用接入模式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-mode
+format: md
 ---
+
 
 为应对开发者接入系统分享能力时的不同诉求，Share Kit支持两种宿主应用接入模式。
 

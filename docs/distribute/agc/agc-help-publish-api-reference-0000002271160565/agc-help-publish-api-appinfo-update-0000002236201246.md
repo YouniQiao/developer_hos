@@ -1,7 +1,9 @@
 ---
 title: "更新应用基本信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-appinfo-update-0000002236201246
+format: md
 ---
+
 
 #### 功能介绍
 
@@ -80,7 +82,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-
 | testUserName | O | String(128) | 应用审核信息的测试账号用户名。  说明：  如果存在需要登录后才可使用的功能，需要提供测试账号用户名。 |
 | testUserPassword | O | String(128) | 应用审核信息的测试账号密码。  说明：  如果存在需要登录后才可使用的功能，需要提供测试账号密码。 |
 | appRemark | O | String(300) | 应用审核信息的备注。  提供有助于审核人员更准确、高效测试您应用的额外信息，比如在审核时需要的特别设置等。 |
-| selfTestVideos | O | String(2000) | 应用审核信息的自测文件。  格式为JSON字符串，示例：\{"objectId1":"文件名1","objectId2":"文件名2"...}  说明：  **objectId**的获取流程：先调用[获取上传文件地址](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-url-0000002236201294)接口，然后调用[上传文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-file-0000002271160621)接口上传文件，最后得到[获取上传文件地址](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-url-0000002236201294)接口返回的**objectId**。  最多可上传5个自测视频，总大小不超过500MB。  注意：  * 此字段只支持元服务。 * 元服务需要与设备联动时，此参数必填。 |
+| selfTestVideos | O | String(2000) | 应用审核信息的自测文件。  格式为JSON字符串，示例：\\{"objectId1":"文件名1","objectId2":"文件名2"...\}  说明：  **objectId**的获取流程：先调用[获取上传文件地址](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-url-0000002236201294)接口，然后调用[上传文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-file-0000002271160621)接口上传文件，最后得到[获取上传文件地址](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-url-0000002236201294)接口返回的**objectId**。  最多可上传5个自测视频，总大小不超过500MB。  注意：  * 此字段只支持元服务。 * 元服务需要与设备联动时，此参数必填。 |
 | appReviewPhoneInfo | O | [AppReviewContact](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appreviewcontact-0000002505438989) | 应用负责人的手机号信息。用于沟通审核问题。 |
 | appReviewEmailInfo | O | [AppReviewContact](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appreviewcontact-0000002505438989) | 应用负责人的邮箱账号信息。用于接收上架审核结果，应用整改或下架通知。 |
 | appReviewName | O | String(256) | 应用负责人的姓名。 |

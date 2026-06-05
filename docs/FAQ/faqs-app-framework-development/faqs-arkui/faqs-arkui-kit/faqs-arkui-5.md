@@ -4,6 +4,7 @@ title: "如何自定义Tabs页签导航栏及其对齐方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-5
 ---
 
+
 可以自定义页签，并设置页签的对齐方式。具体操作可参考代码：
 
 ```

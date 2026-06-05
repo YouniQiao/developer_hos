@@ -1,7 +1,9 @@
 ---
 title: "申请运动健康服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-apply-as
+format: md
 ---
+
 
 申请运动健康服务前，请先参考[应用开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation)，确认开发环境并完成[创建项目](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048)、[创建元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-atomic-service-0000002247795706)、[添加公钥指纹](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation#section53459230820)等基本准备工作，再继续进行以下开发活动。
 

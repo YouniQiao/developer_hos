@@ -4,6 +4,7 @@ title: "任务出现超时未结束是什么原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-stability-basic-quality-test-1
 ---
 
+
 请检查电脑的睡眠设置。如果未设置为“从不睡眠”，可能会导致任务超时未完成。
 
 在Windows中设置电源选项：打开控制面板，选择电源选项，点击更改计划设置，选择使计算机进入睡眠状态，设置为“从不”，然后保存修改。

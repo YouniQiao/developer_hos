@@ -1,7 +1,9 @@
 ---
 title: "@performance/datashare-query-unrelease-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/datashare-query-unrelease-check
 

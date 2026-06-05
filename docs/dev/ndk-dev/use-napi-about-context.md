@@ -1,7 +1,9 @@
 ---
 title: "使用扩展的Node-API接口在当前线程中创建、切换和销毁上下文环境"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-context
+format: md
 ---
+
 
 在应用被拉起时，应用的主线程即为一个ArkTS线程，该线程中存在一个由系统管理的上下文环境，当ArkTS需要和C/C++交互时，在C/C++侧，napi\_env即代表该上下文环境，每个上下文环境中存在着独立的globalThis对象。
 

@@ -1,7 +1,9 @@
 ---
 title: "弱网感知判决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-weaksignaljudge
+format: md
 ---
+
 
 通过[网络质量评估](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback)和[网络场景识别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-scenecallback)章节，弱网感知判决可归纳为3种方式获取：
 

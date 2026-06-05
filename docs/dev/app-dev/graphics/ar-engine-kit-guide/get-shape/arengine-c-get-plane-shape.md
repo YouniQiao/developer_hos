@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "识别目标形状（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-plane-shape
+format: md
 ---
+
 
 ## 约束与限制
 

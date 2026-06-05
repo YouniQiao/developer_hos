@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "标准化事件及应用归因签名"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-attribution-appendix-triger
+format: md
 ---
+
 
 ## 标准转化事件信息
 
@@ -98,7 +100,7 @@ export class SignUtil {
 
 ![](./img/38489896.png)
 
-其中import {AegRsaSign} from "@hw-agconnect/petal-aegis" ， 使用AegRsaSign.ohAegSignRSAWithPSSTextBase64生成签名，使用方法如下:
+其中import \{AegRsaSign\} from "@hw-agconnect/petal-aegis" ， 使用AegRsaSign.ohAegSignRSAWithPSSTextBase64生成签名，使用方法如下:
 
 执行安装命令：ohpm i @hw-agconnect/petal-aegis
 

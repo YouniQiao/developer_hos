@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "情绪"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-emotion
+format: md
 ---
+
 
 此数据记录用户在某时刻的情绪数据。
 

@@ -1,7 +1,9 @@
 ---
 title: "cover-view"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-cover-view
+format: md
 ---
+
 
 覆盖在系统组件之上的文本视图。
 

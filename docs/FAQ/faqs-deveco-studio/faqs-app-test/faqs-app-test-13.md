@@ -4,6 +4,7 @@ title: "录制成功但回放效果不符合预期"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-13
 ---
 
+
 **问题现象**
 
 录制成功但回放效果不符合预期，未按照录制时的操作正确回放。

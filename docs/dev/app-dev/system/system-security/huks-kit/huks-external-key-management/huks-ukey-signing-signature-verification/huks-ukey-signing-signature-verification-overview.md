@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "签名/验签介绍及算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-signing-signature-verification-overview
+format: md
 ---
+
 
 Ukey PIN码认证之后，应用可以通过resourceId操作对应密钥执行签名操作。该能力通过HUKS提供的三段式接口实现，应用指定相应的算法参数即可(包括算法类型，目的，填充，摘要等)。
 

@@ -1,7 +1,9 @@
 ---
 title: "使用WebNativeMessagingExtensionAbility组件实现浏览器扩展和应用通信场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-native-messaging
+format: md
 ---
+
 
 ## 概述
 

@@ -4,6 +4,7 @@ title: "ArkTS中this的常用场景及使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-55
 ---
 
+
 在ArkTS中，this 用于类中访问对象属性和方法，或在自定义组件的回调中使用UIContext.getHostContext(this)。
 
 * 类中使用 this，this 实际指向实例化后的对象。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取设备位姿（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-pose
+format: md
 ---
+
 
 本章节给出了关键开发步骤，完整代码可以参考[示例代码](https://gitcode.com/HarmonyOS_Samples/arengine_samplecode_clientdemo_arkts)。
 

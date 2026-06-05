@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "事件订阅简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/event-subscription-overview
+format: md
 ---
+
 
 ## 事件介绍
 

@@ -2,7 +2,9 @@
 title: "更新指导"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-update-0000001055348462
+format: md
 ---
+
 
 # 更新指导
 

@@ -2,7 +2,9 @@
 title: "APK游戏接入"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-access-view-0000001239185215
+format: md
 ---
+
 
 # APK游戏接入
 

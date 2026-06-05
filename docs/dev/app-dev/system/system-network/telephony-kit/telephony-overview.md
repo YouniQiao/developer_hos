@@ -1,7 +1,9 @@
 ---
 title: "Telephony Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-overview
+format: md
 ---
+
 
 Telephony Kit（蜂窝通信服务）提供一系列API帮助开发者开发通信类应用，包括：
 

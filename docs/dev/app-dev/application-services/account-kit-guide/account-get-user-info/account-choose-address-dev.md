@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取收货地址"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-choose-address-dev
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -30,7 +32,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/acco
 
 | 接口名 | 描述 |
 | --- | --- |
-| [chooseAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-choose-address#chooseaddress)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)): Promise<[AddressInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-choose-address#addressinfo)> | 拉起收货地址管理页面并返回用户所选择的收货地址。 |
+| [chooseAddress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-choose-address#chooseaddress)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)): Promise[AddressInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-choose-address#addressinfo) | 拉起收货地址管理页面并返回用户所选择的收货地址。 |
 
 ![](./img/f2df25d0.png)
 

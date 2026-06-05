@@ -1,7 +1,9 @@
 ---
 title: "端云文件协同概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloud-sync-file-overview
+format: md
 ---
+
 
 端云文件协同为应用开发提供端云一体的统一文件系统能力，为用户和应用提供一致的文件同步与跨端访问体验。
 

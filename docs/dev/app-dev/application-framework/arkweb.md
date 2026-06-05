@@ -1,7 +1,9 @@
 ---
 title: "ArkWeb（方舟Web）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb
+format: md
 ---
+
 
 * **[ArkWeb简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-component-overview)**
 * **[ArkWeb进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web_component_process)**

@@ -4,6 +4,7 @@ title: "OpenGL无法正常渲染某些分辨率YUV数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-8
 ---
 
+
 **问题现象**
 
 在特定分辨率下的YUV数据（例如668×352），通过OpenGL渲染时，图像会出现失真。

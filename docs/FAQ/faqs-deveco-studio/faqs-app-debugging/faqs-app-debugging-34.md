@@ -4,6 +4,7 @@ title: "Native调试无法与lldb-server连接"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-34
 ---
 
+
 **问题现象：**Native调试长时间没有启动，最后DevEco Studio超时报错"Attach request timeout after 600000 milliseconds"或Native调试启动后报错"Failed to connect port"。
 
 ![](./img/312ee879.jpg)

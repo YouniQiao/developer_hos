@@ -2,7 +2,9 @@
 title: "查询渠道包投放数据报表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-physical-subcontract-inquire-0000001341040345
+format: md
 ---
+
 # 查询渠道包投放数据报表
 
 1. 登录[华为应用市场应用推广平台](https://developer.huawei.com/consumer/cn/service/apcs/app/home.html)，选择“报表”。

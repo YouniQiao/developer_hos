@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取云侧文件列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-list-files
+format: md
 ---
+
 
 开发者可以获取指定云侧目录下所有的文件信息，包括文件存储目录、文件名称等。
 

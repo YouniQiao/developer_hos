@@ -4,6 +4,7 @@ title: "虚拟机打开时，一直报错“无法打开libQt5Network.5.dylib，
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-16
 ---
 
+
 **问题描述**
 
 按教程创建虚拟机后，虚拟机无法打开。虚拟机打开时，一直报错“无法打开libQt5Network.5.dylib，因为Apple无法检查其是否包含恶意软件”。已在设置/隐私中反复同意打开，但问题仍然存在。

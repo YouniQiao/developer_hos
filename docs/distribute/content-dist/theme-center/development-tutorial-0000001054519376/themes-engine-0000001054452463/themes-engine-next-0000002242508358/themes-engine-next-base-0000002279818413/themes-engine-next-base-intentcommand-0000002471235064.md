@@ -2,7 +2,9 @@
 title: "命令：意图命令&lt;IntentCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-intentcommand-0000002471235064
+format: md
 ---
+
 
 # 命令：Intent命令&lt;IntentCommand&gt;
 

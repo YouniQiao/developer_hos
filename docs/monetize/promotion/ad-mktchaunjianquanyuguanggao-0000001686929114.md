@@ -2,7 +2,9 @@
 title: "通过Marketing API创建全域智投广告"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ad-mktchaunjianquanyuguanggao-0000001686929114
+format: md
 ---
+
 # 通过Marketing API创建全域智投广告
 
 ## 功能简介

@@ -2,7 +2,9 @@
 title: "资源上架规范"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/resourceregistrationregulations-0000001835521984
+format: md
 ---
+
 
 # 资源上架规范
 

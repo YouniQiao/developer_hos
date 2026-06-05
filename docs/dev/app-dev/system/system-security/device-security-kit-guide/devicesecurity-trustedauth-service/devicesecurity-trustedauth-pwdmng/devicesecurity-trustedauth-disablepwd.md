@@ -1,7 +1,9 @@
 ---
 title: "关闭数字盾服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-disablepwd
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -23,7 +25,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [disableTrustedAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#disabletrustedauthentication)(challenge: Uint8Array, needAuth: boolean, authID: bigint, label: TUILable): Promise<AuthToken> | 关闭数字盾服务 |
+| [disableTrustedAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#disabletrustedauthentication)(challenge: Uint8Array, needAuth: boolean, authID: bigint, label: TUILable): Promise\<AuthToken\> | 关闭数字盾服务 |
 
 ## 关闭数字盾服务界面介绍
 

@@ -4,6 +4,7 @@ title: "从包管理的角度，保证代码安全的措施有哪些"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-4
 ---
 
+
 * 编译：编译时，HAR和HSP支持代码混淆。
 * 打包：打包时为每个HSP/HAP单独签名，签名后的应用才允许安装。
 * 安装：终端设备上的应用市场用于安装和卸载应用，不支持其他安装方式。

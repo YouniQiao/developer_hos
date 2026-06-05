@@ -1,7 +1,9 @@
 ---
 title: "HTTP接口如何设置Cookie"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-7
+format: md
 ---
+
 
 HttpRequestOptions中的header是一个Object类型，可以直接在header里设置cookie。调用httpRequest.request()需要申请权限：ohos.permission.INTERNET。使用时，httpRequest.request()接口中的“EXAMPLE\_URL”需要替换成实际请求地址。参考代码如下：
 

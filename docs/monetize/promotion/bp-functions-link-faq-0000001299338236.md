@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-faq-0000001299338236
+format: md
 ---
+
 # FAQ
 
 ## 华为监测链接发送服务提供哪些用户行为数据？

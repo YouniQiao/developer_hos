@@ -1,7 +1,9 @@
 ---
 title: "创建全网态服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-xiaoyi-create-formalstate-service-0000002349016144
+format: md
 ---
+
 
 当您的应用/元服务已上架，并且使用自有真机测试通过，您就可以创建全网态近场服务。
 

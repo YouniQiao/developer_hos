@@ -1,7 +1,9 @@
 ---
 title: "组件布局"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development
+format: md
 ---
+
 
 * **[布局概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-overview)**
 * **[构建布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-build-layout)**

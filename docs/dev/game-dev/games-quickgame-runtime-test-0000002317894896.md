@@ -2,7 +2,9 @@
 title: "测试快游戏"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-test-0000002317894896
 has_merged_cells: true
+format: md
 ---
+
 
 ## 运行快游戏
 

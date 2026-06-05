@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何获取图片的旋转角度信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-rotate-faq
+format: md
 ---
+
 
 ## 图片旋转角度介绍
 

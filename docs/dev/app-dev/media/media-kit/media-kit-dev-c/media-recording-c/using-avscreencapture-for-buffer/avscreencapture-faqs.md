@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "录屏常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avscreencapture-faqs
+format: md
 ---
+
 
 ## 录屏启动报错AV\_SCREEN\_CAPTURE\_ERR\_OPERATE\_NOT\_PERMIT
 

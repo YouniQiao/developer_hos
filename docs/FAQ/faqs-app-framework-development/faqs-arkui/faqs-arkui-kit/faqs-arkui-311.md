@@ -4,6 +4,7 @@ title: "绑定类型的组件和ForEach的正确连用方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-311
 ---
 
+
 **问题现象**
 
 bindSheet和ForEach合用的问题，$$this.isShow会弹出两次半模态，如果是this.isShow，则半模态弹出的次数是数组的长度数，如何确保ForEach中每个item的点击事件仅触发对应项的弹窗显示，而不影响其他项。

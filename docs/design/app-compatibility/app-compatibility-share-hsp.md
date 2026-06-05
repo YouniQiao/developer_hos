@@ -1,7 +1,9 @@
 ---
 title: "应用集成「集成态hsp」的兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
+format: md
 ---
+
 
 # 应用集成"集成态hsp"的兼容性指导
 

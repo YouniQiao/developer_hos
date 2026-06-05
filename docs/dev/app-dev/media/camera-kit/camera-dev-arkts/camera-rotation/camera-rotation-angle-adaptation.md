@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "适配相机旋转角度(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-angle-adaptation
+format: md
 ---
+
 
 屏幕处于不同的屏幕状态时，原始图像需旋转不同的角度，以确保图像在合适的方向显示，效果如图所示。
 
@@ -173,7 +175,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/RotationDisplayCamera/camera/src/main/ets/cameramanagers/PhotoManager.ets#L319-L330" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：PhotoManager.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/RotationDisplayCamera/camera/src/main/ets/cameramanagers/PhotoManager.ets#L319-L330" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：PhotoManager.ets</a></div>
 
 2. 应用将拍照角度写入[PhotoCaptureSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#photocapturesetting).rotation。
 3. 其余参数的配置及拍照，可参考[拍照开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting)。
@@ -205,7 +207,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/came
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/RotationDisplayCamera/camera/src/main/ets/cameramanagers/VideoManager.ets#L347-L358" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：VideoManager.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/RotationDisplayCamera/camera/src/main/ets/cameramanagers/VideoManager.ets#L347-L358" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：VideoManager.ets</a></div>
 
 2. 在[AVRecorder.prepare](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avrecorder#prepare9)后使用[updateRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avrecorder#updaterotation12)设置录像角度。
 3. 其余参数的配置及启动录像，可参考[录像开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-recording)。
@@ -231,7 +233,7 @@ async getVideoRotationAndUpdate(videoOutput: camera.VideoOutput, deviceDegree: n
 
 ## 计算设备旋转角度
 
-当前可通过调用[once(type: SensorId.GRAVITY, callback: Callback<GravityResponse>)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor#gravity9-1)获取一次重力传感器在x、y、z三个方向上的数据，计算得出设备旋转角度deviceDegree，示例如下所示。
+当前可通过调用[once(type: SensorId.GRAVITY, callback: Callback\<GravityResponse\>)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor#gravity9-1)获取一次重力传感器在x、y、z三个方向上的数据，计算得出设备旋转角度deviceDegree，示例如下所示。
 
 如果无法获得重力传感器数据，需要申请重力传感器权限ohos.permission.ACCELEROMETER。权限申请请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)，如何获取传感器数据请参考[传感器开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines)。
 

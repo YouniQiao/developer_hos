@@ -2,7 +2,9 @@
 title: "游戏道具商城"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-prop-mall-0000002302937820
+format: md
 ---
+
 
 # 游戏道具商城
 

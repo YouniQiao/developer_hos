@@ -2,7 +2,9 @@
 title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/overview-guangaoshenheguifan-0000001188925990
+format: md
 ---
+
 # 概述
 
 |  |  |

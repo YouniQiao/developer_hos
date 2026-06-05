@@ -1,7 +1,9 @@
 ---
 title: "Core File Kit（文件基础服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-file-kit
+format: md
 ---
+
 
 * **[Core File Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-file-kit-intro)**
 * **[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file)**

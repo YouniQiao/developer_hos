@@ -2,7 +2,9 @@
 title: "设置采集要求"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-setting-0000002321517289
 has_merged_cells: true
+format: md
 ---
+
 
 ## 设置采集参数
 

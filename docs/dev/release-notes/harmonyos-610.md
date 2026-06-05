@@ -1,6 +1,8 @@
 ---
 title: "HarmonyOS 6.1.0(23)"
+format: md
 ---
+
 
 # HarmonyOS 6.1.0(23)
 

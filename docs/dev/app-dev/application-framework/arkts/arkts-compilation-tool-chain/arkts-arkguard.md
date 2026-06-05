@@ -1,7 +1,9 @@
 ---
 title: "ArkGuard源码混淆工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-arkguard
+format: md
 ---
+
 
 * **[ArkGuard源码混淆工具概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-overview)**
 * **[ArkGuard混淆原理及功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)**

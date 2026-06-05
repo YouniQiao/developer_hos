@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过字节数组生成码图无法识别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-11
+format: md
 ---
+
 
 **问题现象**
 

@@ -1,7 +1,9 @@
 ---
 title: "图标类型设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-icon-type
+format: md
 ---
+
 
 ## 场景介绍
 

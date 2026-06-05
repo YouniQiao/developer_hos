@@ -1,7 +1,9 @@
 ---
 title: "查看HiTraceMeter日志"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-view
+format: md
 ---
+
 
 ## 通过DevEco Studio可视化界面查看
 

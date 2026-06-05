@@ -4,6 +4,7 @@ title: "如何生成UUID的字符串"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-20
 ---
 
+
 使用util工具的generateRandomUUID函数可以生成字符串类型的UUID，示例如下：
 
 ```

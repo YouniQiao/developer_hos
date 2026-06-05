@@ -1,7 +1,9 @@
 ---
 title: "so信息可视化"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # so信息可视化
 

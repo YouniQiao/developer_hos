@@ -1,7 +1,9 @@
 ---
 title: "POI分类"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-poi-classification-query-0000002395746324
+format: md
 ---
+
 
 为了方便开发者更准确地定位POI的分类，以下列举出POI的一级分类和二级分类，供开发者参考：
 

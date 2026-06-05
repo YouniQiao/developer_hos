@@ -1,7 +1,9 @@
 ---
 title: "查询星闪开关状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-getstate
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,8 +16,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/near
 | 接口名 | 描述 |
 | --- | --- |
 | [getState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-manager#getstate)(): NearlinkState | 主动查询星闪开关状态。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-manager#on-statechange)(type: 'stateChange', callback: Callback<NearlinkState>): void | 订阅星闪开关状态变化事件。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-manager#off-statechange)(type: 'stateChange', callback?: Callback<NearlinkState>): void | 取消订阅星闪开关状态变化事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-manager#on-statechange)(type: 'stateChange', callback: Callback\<NearlinkState\>): void | 订阅星闪开关状态变化事件。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-manager#off-statechange)(type: 'stateChange', callback?: Callback\<NearlinkState\>): void | 取消订阅星闪开关状态变化事件。 |
 
 ## 开发步骤
 

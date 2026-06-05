@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "收银台报错“服务暂不可用，请稍后重试”？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-11
+format: md
 ---
+
 
 1. 检查网络是否正常。
 2. 检查[orderStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#orderstr)入参格式、字段值（如merc\_no、app\_id、auth\_id等）是否正确，auth\_id是否归属于merc\_no(即公私钥对以及商户是否匹配）。

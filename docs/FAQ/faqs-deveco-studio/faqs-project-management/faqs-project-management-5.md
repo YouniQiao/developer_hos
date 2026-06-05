@@ -4,6 +4,7 @@ title: "如何使用DevEco Studio中的ArkTS代码模板"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-5
 ---
 
+
 使用代码模板可以提高开发效率。在DevEco Studio中，可以通过“File \> Settings \> Editor \> Live Templates”查看现有模板并新增自定义模板。
 
 ![](./img/d1d96b5b.png "点击放大")

@@ -1,7 +1,9 @@
 ---
 title: "消息认证码计算介绍及算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac-overview
+format: md
 ---
+
 
 MAC（Message Authentication Code，消息认证码）可以对消息进行完整性校验，通过使用双方共享的密钥，识别出信息伪装篡改等行为。
 

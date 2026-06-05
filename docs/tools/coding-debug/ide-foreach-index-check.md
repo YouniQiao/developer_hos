@@ -1,7 +1,9 @@
 ---
 title: "@performance/foreach-index-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/foreach-index-check
 

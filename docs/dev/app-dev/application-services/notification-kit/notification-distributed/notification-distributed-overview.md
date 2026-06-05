@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "跨设备协同通知概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-distributed-overview
+format: md
 ---
+
 
 跨设备协同通知旨在以手机为中心，实现与手表等其他设备的通知消息协同交互。典型场景如下：
 

@@ -4,6 +4,7 @@ title: "如何实现相机关闭"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-9
 ---
 
+
 实现相机关闭的参考代码如下：
 
 ```

@@ -4,6 +4,7 @@ title: "如何在Native侧构建一个ArkTS对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-45
 ---
 
+
 1. 调用接口napi\_create\_object创建对象。
 
    ```

@@ -1,7 +1,9 @@
 ---
 title: "开通服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enable-0000002338511697
+format: md
 ---
+
 
 首次使用游戏多媒体服务前，需要先开通此服务。如果您已经开通，可跳过本步骤。
 

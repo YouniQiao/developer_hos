@@ -1,7 +1,9 @@
 ---
 title: "如何将ArrayBuffer转成string"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-90
+format: md
 ---
+
 
 可以通过util.TextDecoder.create()方法创建一个实例，再通过[decodeToString()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#decodetostring12)方法进行转换。
 

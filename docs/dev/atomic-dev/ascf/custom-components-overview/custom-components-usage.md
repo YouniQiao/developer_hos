@@ -1,7 +1,9 @@
 ---
 title: "使用自定义组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-usage
+format: md
 ---
+
 
 在页面的 json 文件中进行引用声明，即在 usingComponents 字段下设置标签名及对应的组件路径。
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-unsafe-argument"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-unsafe-argument
 

@@ -1,7 +1,9 @@
 ---
 title: "如何选择文件保存路径"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-5
+format: md
 ---
+
 
 官网中保存用户文件提供的方法是FilePicker需要拉起系统应用，再由用户选择具体路径保存文件的，参考文档：[保存用户文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file)。
 

@@ -2,7 +2,9 @@
 title: "华为服务号介绍"
 displayed_sidebar: serviceDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/huawei_business_touch-0000001054309149
+format: md
 ---
+
 
 # 华为服务号介绍
 

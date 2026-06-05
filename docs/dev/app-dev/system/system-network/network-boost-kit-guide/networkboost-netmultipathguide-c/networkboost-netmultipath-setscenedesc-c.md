@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "业务场景设置(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-setscenedesc-c
+format: md
 ---
+
 
 从6.0.2(22)开始，支持业务场景设置。
 

@@ -1,7 +1,9 @@
 ---
 title: 组件
 sidebar_label: 组件
+format: md
 ---
+
 
 # 组件
 

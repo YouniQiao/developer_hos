@@ -2,7 +2,9 @@
 title: "跟手粒子&lt;ParticleView&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2da-particleview-0000002471395152
+format: md
 ---
+
 
 # 跟手粒子&lt;ParticleView&gt;
 

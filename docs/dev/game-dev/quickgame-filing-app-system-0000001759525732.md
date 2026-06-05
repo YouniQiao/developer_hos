@@ -1,7 +1,9 @@
 ---
 title: "在华为云App核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-system-0000001759525732
+format: md
 ---
+
 
 * **[首次核准（备案）](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-first-0000001819107801)**
 * **[新增互联网信息](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-addition-0000001834211037)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Function Flow Runtime Kit概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-overview
+format: md
 ---
+
 
 ## 简介
 

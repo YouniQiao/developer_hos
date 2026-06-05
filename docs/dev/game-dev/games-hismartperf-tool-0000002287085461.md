@@ -1,7 +1,9 @@
 ---
 title: "游戏性能诊断（HiSmartPerf）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-tool-0000002287085461
+format: md
 ---
+
 
 * **[业务介绍](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-overview-0000002286788016)**
 * **[版本更新说明](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-releasenotes-0000002321517285)**

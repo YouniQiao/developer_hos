@@ -2,7 +2,9 @@
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-introduction-0000001285262204
+format: md
 ---
+
 # 业务介绍
 
 为满足开发者精细化的推广需求，华为应用市场应用推广平台在千人千面的推荐算法上，推出人群定向功能。创建定向包有5种方式，具体如下。

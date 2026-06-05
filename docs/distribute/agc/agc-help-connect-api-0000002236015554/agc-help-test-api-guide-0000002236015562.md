@@ -1,7 +1,9 @@
 ---
 title: "Testing API指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-guide-0000002236015562
+format: md
 ---
+
 
 在正式发布前，您通过Testing API可以对HarmonyOS应用/元服务版本进行测试，还可以先邀请部分测试用户进行体验，并收集用户的使用意见。
 

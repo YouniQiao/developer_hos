@@ -2,7 +2,9 @@
 title: "查询智能分包列表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-cxzhinengfenbaoliebiao-0000001926859329
+format: md
 ---
+
 # 查询智能分包列表
 
 【简介】通过此接口可以查询智能分包列表

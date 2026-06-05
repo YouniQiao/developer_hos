@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-useless-constructor"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-useless-constructor
 

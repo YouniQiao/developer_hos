@@ -2,7 +2,9 @@
 title: "调测流程"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-commondeeplink-test-0000002039774721
+format: md
 ---
+
 # 调测流程
 
 1. 通过创建搜索投放任务进行调测，创建任务时需注意以下几点：

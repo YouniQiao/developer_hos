@@ -1,7 +1,9 @@
 ---
 title: "GPU counter"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-gpu-counter-0000002286844730
+format: md
 ---
+
 
 GPU counter是GPU硬件内部的计数，当前仅支持采集GPU Type为**ARMG76**、**G78**、**Maleoon**的数据项，不同**GPU Type**的华为手机将采集到不同的GPU counter数据项。您在测试报告查看数据项时，可以组合勾选GPU counter数据项，同时支持选择时间展示间隔（默认1s）。
 

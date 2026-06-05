@@ -1,7 +1,9 @@
 ---
 title: "Frame分析"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Frame分析
 

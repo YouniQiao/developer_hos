@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-suggest-use-get-anonymousid-async"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-suggest-use-get-anonymousid-async
 

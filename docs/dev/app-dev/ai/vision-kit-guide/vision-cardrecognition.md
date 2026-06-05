@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "卡证识别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-cardrecognition
+format: md
 ---
+
 
 从6.1.1(24)开始，新增支持对港澳居民来往内地通行证、台湾居民来往大陆通行证的识别。
 

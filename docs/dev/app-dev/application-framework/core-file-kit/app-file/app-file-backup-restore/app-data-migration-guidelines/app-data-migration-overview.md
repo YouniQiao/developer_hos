@@ -1,7 +1,9 @@
 ---
 title: "应用数据迁移功能介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-overview
+format: md
 ---
+
 
 ## 使用场景
 

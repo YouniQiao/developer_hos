@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "外部密钥管理扩展"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-external-key-management
+format: md
 ---
+
 
 * **[外部密钥管理扩展简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-external-hardware-key-management-overview)**
 * **[Provider管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-provider-management)**

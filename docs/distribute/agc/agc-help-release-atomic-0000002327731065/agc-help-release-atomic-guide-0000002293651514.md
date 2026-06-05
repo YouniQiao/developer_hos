@@ -1,7 +1,9 @@
 ---
 title: "发布指引"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-guide-0000002293651514
+format: md
 ---
+
 
 为了给用户提供良好、安全、可靠的应用体验，在元服务正式发布到华为应用市场前，我们会审核您提交的所有信息，请了解发布元服务的要求、需要提供的信息，以便尽可能顺利通过发布审核。
 

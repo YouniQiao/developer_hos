@@ -4,6 +4,7 @@ title: "TextInput按压态背景色如何修改"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-124
 ---
 
+
 可以使用动态属性进行设置。自定义class实现AttributeModifier接口，并给组件设置.attributeModifier()进行绑定即可。参考代码如下：
 
 ```

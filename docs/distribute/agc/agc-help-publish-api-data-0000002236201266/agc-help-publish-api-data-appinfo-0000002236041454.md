@@ -1,7 +1,9 @@
 ---
 title: "AppInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appinfo-0000002236041454
+format: md
 ---
+
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-
 | privacyPolicy | M | String(255) | 隐私政策声明的网页地址。  该网址会在应用的详情页面添加隐私政策跳转，可帮助用户清楚地了解您如何处理敏感的用户数据和设备数据。  隐私政策必须完整说明您的应用如何收集、使用和分享用户数据，包含但不限于如下情况建议提供：   * 面向儿童的App。 * 包含账户注册或需要访问用户的现有账户，或由法律另行规定。 * 对于收集用户或设备相关数据的App。 |
 | appNetType | O | Integer | 应用联网类型。  取值范围：   * 1：单机 * 2：网游   默认值：1  说明：  此参数只支持游戏类应用。 |
 | publishCountry | O | String(2048) | 应用发布国家的国家码。  多个国家以英文逗号分隔。  示例：CN,DE,MC |
-| contentRate | O | String(256) | 应用分级。  Json格式。  示例：\{"HW":"3+"}。 |
+| contentRate | O | String(256) | 应用分级。  Json格式。  示例：\\{"HW":"3+"\}。 |
 | appTariffType | O | String(16) | 应用内付费道具类型。  取值范围：   * 1：激活收费 * 2：道具收费 * 3：关卡收费 * 4：购买虚拟币 * 5：部分章节收费（图书阅读类） * 6：其他的 * 7：课程收费 * 8：会员收费   返回多个表示具备多个类型，例如“1,2,3”。 |
 | publicationNumber | O | String(50) | 版号信息。 |
 | developerNameCn | O | String(64) | 开发者中文名称。  HarmonyOS应用和元服务此字段不支持修改。 |
@@ -33,7 +35,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-
 | onShelfVersionCode | O | Integer(64) | 在架版本**versionCode**，对应软件包中的**versionCode**。 |
 | onShelfVersionId | O | String(32) | 在架版本版本ID。 |
 | shareLink | O | String(1024) | 分享链接。  仅查询场景返回。 |
-| sensitivePermissionDesc | O | String(2048) | 敏感权限说明。  此字段仅用于查询。  格式为JSON格式的字符串。  格式：\{"权限名称1":"权限描述1","权限名称2":"权限描述2"...} |
+| sensitivePermissionDesc | O | String(2048) | 敏感权限说明。  此字段仅用于查询。  格式为JSON格式的字符串。  格式：\\{"权限名称1":"权限描述1","权限名称2":"权限描述2"...\} |
 | familyShareTag | O | Integer | 是否可以家庭共享。  取值范围：   * 0：不可以 * 1：可以   只有分发区域包含中国大陆的应用返回1。 |
 | deviceTypes | M | `List&lt;[DeviceTypeInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-devicetypeinfo-0000002236201270)>` | 应用的设备类型信息。  数组长度不超过6。 |
 | restrictedPermissionVideo | O | String | HarmonyOS应用受限权限使用说明视频在文件服务器中的对象ID。  此字段仅用于查询。 |
@@ -57,7 +59,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-
 | testUserName | O | String(128) | 应用审核信息的测试账号用户名。 |
 | testUserPassword | O | String(128) | 应用审核信息的测试账号密码。 |
 | appRemark | O | String(300) | 应用审核信息的备注。 |
-| selfTestVideos | O | String(2000) | 应用审核信息的自测文件。  格式为JSON字符串，示例：\{"objectId1":"文件名1","objectId2":"文件名2"...}  说明：  此字段只支持元服务。 |
+| selfTestVideos | O | String(2000) | 应用审核信息的自测文件。  格式为JSON字符串，示例：\\{"objectId1":"文件名1","objectId2":"文件名2"...\}  说明：  此字段只支持元服务。 |
 | appReviewPhoneInfo | O | [AppReviewContact](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appreviewcontact-0000002505438989) | 应用负责人的手机号信息。 |
 | appReviewEmailInfo | O | [AppReviewContact](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appreviewcontact-0000002505438989) | 应用负责人的邮箱账号信息。 |
 | appReviewName | O | String(256) | 应用负责人的姓名。 |

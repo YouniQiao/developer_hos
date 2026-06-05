@@ -1,7 +1,9 @@
 ---
 title: "Stage模型应用配置文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/config-file-stage
+format: md
 ---
+
 
 应用配置文件中包含应用配置信息、应用组件信息、权限信息、开发者自定义信息等，这些信息在编译构建、分发和运行阶段分别提供给编译工具、应用市场和操作系统使用。
 

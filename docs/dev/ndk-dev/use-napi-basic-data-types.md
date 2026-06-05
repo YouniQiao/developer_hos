@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API接口创建基本数据类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-basic-data-types
+format: md
 ---
+
 
 ## 简介
 

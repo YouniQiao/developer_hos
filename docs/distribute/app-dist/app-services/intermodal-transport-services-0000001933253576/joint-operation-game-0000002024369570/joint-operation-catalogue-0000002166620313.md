@@ -2,7 +2,9 @@
 title: "文档导读"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-catalogue-0000002166620313
+format: md
 ---
+
 
 # 文档导读
 

@@ -1,7 +1,9 @@
 ---
 title: "Network Boost Kit（网络加速服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-boost-kit-guide
+format: md
 ---
+
 
 * **[Network Boost Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-preparations)**

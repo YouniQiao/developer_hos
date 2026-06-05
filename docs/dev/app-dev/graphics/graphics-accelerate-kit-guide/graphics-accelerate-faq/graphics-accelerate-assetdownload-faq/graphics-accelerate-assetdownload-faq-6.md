@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "是否可以仅接入下载ExtensionAbility，而不改写原先在游戏引擎内部的下载逻辑或下载中间件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-6
+format: md
 ---
+
 
 可以，支持仅接入下载ExtensionAbility。
 

@@ -1,7 +1,9 @@
 ---
 title: "调试场景说明"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 调试场景说明
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Spatial Recon Kit（空间建模服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-kit-guide
+format: md
 ---
+
 
 * **[Spatial Recon Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-introduction)**
 * **[Spatial Recon Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-glossary)**

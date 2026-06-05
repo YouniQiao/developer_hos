@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Location Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-kit-intro
+format: md
 ---
+
 
 ## Location Kit开发概述
 

@@ -1,7 +1,9 @@
 ---
 title: "组合场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-multicomponent
+format: md
 ---
+
 
 ## 设计场景
 

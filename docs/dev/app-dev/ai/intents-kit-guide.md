@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Intents Kit（意图框架服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-kit-guide
+format: md
 ---
+
 
 * **[Intents Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-introduction)**
 * **[Intents Kit接入流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-access-flow)**

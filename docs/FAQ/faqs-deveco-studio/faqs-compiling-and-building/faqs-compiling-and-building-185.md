@@ -4,6 +4,7 @@ title: "升级react-native-openharmony编译出错"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-185
 ---
 
+
 **问题现象**
 
 升级react-native-openharmony编译出错，类似如下报错：

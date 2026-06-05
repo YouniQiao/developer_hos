@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Payment Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq
+format: md
 ---
+
 
 * **[接入开发时，请求参数的签名、结果验签在什么场景使用？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-1)**
 * **[Payment Kit的签名公私钥怎么获取？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-2)**

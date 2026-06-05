@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "签名/验签(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-signing-signature-verification-arkts
+format: md
 ---
+
 
 当前指导提供以下示例，供开发者参考完成签名、验签开发：
 

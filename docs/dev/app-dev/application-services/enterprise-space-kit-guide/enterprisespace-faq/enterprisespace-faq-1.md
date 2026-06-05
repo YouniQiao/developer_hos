@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "编译失败，该如何解决？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-faq-1
+format: md
 ---
+
 
 **问题现象**
 

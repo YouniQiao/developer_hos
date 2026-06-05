@@ -4,6 +4,7 @@ title: "本地数据库管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkdata-kit
 ---
 
+
 * **[如何将PixelMap的数据存储到数据库中](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-3)**
 * **[多个相同BundleName的HAP包，使用preference数据如何共享](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-4)**
 * **[关于数据库存储的位置，以及存储的区别](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-5)**

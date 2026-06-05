@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "多网配额查询(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-getmultipathquota-c
+format: md
 ---
+
 
 从6.0.2(22)开始，支持多网配额查询。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发相机应用基础能力(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dev-arkts
+format: md
 ---
+
 
 * **[通过系统相机拍照和录像(CameraPicker)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-picker)**
 * **[预览(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preview)**

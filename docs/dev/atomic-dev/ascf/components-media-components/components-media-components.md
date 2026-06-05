@@ -1,7 +1,9 @@
 ---
 title: "媒体组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-media-components
+format: md
 ---
+
 
 * **[image](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-image)**
 * **[video](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-video)**

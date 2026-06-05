@@ -4,6 +4,7 @@ title: "CPP编译报错“A 'unknown type name' error has occurred”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-117
 ---
 
+
 **问题现象**
 
 在编译HarmonyOS C++ 项目时，报错提示“A 'unknown type name' error has occurred”。

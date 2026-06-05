@@ -4,6 +4,7 @@ title: "如何全局存储WebController"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-60
 ---
 
+
 **问题场景：**
 
 需要全局存储多个WebController对象，目前使用将Map存入AppStorage的方式不生效。

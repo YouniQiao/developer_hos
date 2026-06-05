@@ -1,7 +1,9 @@
 ---
 title: "应用多线程开发实践案例"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-case
+format: md
 ---
+
 
 * **[批量数据写数据库场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/batch-database-operations-guide)**
 * **[业务模块并发加载场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/concurrent-loading-modules-guide)**

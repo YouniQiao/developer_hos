@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "启动策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-guard-strategy
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -32,8 +34,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [startGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#startguardstrategy)(strategyName: string): Promise<void> | 根据策略名称，启动其管控策略。 |
-| [onStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-timeguardextensionability#onstart)(strategyName: string): Promise<void> | 在策略启动时执行特定逻辑。 |
+| [startGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#startguardstrategy)(strategyName: string): Promise\<void\> | 根据策略名称，启动其管控策略。 |
+| [onStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-timeguardextensionability#onstart)(strategyName: string): Promise\<void\> | 在策略启动时执行特定逻辑。 |
 
 ## 开发前提
 

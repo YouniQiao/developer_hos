@@ -1,7 +1,9 @@
 ---
 title: "手写功能开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-features
+format: md
 ---
+
 
 * **[接入手写套件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-suite)**
 * **[接入报点预测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-point-prediction)**

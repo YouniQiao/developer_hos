@@ -2,7 +2,9 @@
 title: "创建媒体及展示位"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_creat-media-display-position-0000001246432546
+format: md
 ---
+
 
 
 ![](./img/agd_pro_api_creat-media-display-position-0000001246432546_0.png)

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "骨骼点检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-skeleton-detection
+format: md
 ---
+
 
 ## 适用场景
 

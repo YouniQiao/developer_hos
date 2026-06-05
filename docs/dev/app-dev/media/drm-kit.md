@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "DRM Kit（数字版权保护服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-kit
+format: md
 ---
+
 
 * **[DRM Kit 简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-overview)**
 * **[数字版权保护(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-arkts-dev-guide)**

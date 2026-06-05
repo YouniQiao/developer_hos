@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开票"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-invoicing
+format: md
 ---
+
 
 ## 用户申请开发票
 

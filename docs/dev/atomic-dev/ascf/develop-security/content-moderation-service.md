@@ -1,7 +1,9 @@
 ---
 title: "内容风控服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/content-moderation-service
+format: md
 ---
+
 
 内容风控服务接口用于对终端用户提交的文本或图片内容进行合规性检查的服务，如识别暴力、色情等违法的信息，有效协助用户进行风险预警和违法内容拦截。
 

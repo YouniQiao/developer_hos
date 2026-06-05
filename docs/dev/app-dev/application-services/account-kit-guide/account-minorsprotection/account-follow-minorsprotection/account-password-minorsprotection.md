@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用内调整未成年人模式设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-password-minorsprotection
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -26,8 +28,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/acco
 | 接口名 | 描述 |
 | --- | --- |
 | [getMinorsProtectionInfoSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#getminorsprotectioninfosync)(): [MinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#minorsprotectioninfo) | 同步接口，获取系统未成年人模式的开启状态，以及年龄段信息。 |
-| [getMinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#getminorsprotectioninfo)(): Promise<[MinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#minorsprotectioninfo)> | 异步接口，获取系统未成年人模式的开启状态，以及年龄段信息。 |
-| [verifyMinorsProtectionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#verifyminorsprotectioncredential)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)): Promise<boolean> | 调用该方法拉起验证未成年人模式密码页面。 |
+| [getMinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#getminorsprotectioninfo)(): Promise[MinorsProtectionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#minorsprotectioninfo) | 异步接口，获取系统未成年人模式的开启状态，以及年龄段信息。 |
+| [verifyMinorsProtectionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#verifyminorsprotectioncredential)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)): Promise\<boolean\> | 调用该方法拉起验证未成年人模式密码页面。 |
 
 ![](./img/0134d7db.png)
 

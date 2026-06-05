@@ -2,7 +2,9 @@
 title: "上传文件"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/maketpai-uploadfile-0000002039733017
+format: md
 ---
+
 # 上传文件
 
 ## 功能介绍

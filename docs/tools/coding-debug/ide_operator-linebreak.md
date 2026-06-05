@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/operator-linebreak"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/operator-linebreak
 

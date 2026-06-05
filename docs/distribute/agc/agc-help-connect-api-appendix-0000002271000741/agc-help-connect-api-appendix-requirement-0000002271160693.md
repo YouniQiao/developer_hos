@@ -1,7 +1,9 @@
 ---
 title: "应用文件要求"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-requirement-0000002271160693
+format: md
 ---
+
 
 在上传应用文件到AppGallery Connect时，对于文件的类型、大小等有相关限制，如下表所示。
 

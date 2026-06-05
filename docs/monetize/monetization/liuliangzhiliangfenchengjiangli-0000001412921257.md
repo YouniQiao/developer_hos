@@ -2,7 +2,9 @@
 title: "优质媒体阶梯分成激励"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/liuliangzhiliangfenchengjiangli-0000001412921257
+format: md
 ---
+
 
 
 优质媒体额外分成激励指针对接入流量变现服务平台的优质媒体实施的月度激励政策，以此增加优质媒体流量收益，促进媒体在流量变现服务平台的流量生态建设。

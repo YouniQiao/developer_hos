@@ -4,6 +4,7 @@ title: "如何实现折叠屏折叠态不适配旋转，展示态适配旋转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-362
 ---
 
+
 1. 在module.json5添加属性"orientation": "unspecified"。
 
    ```

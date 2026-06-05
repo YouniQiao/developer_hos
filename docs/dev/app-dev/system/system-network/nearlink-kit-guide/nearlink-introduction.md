@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "NearLink Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-introduction
+format: md
 ---
+
 
 NearLink Kit（星闪服务）提供一种低功耗、高速率的短距离通信服务，支持星闪设备之间的连接、数据交互。
 

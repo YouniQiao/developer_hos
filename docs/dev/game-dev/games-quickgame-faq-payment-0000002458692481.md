@@ -1,7 +1,9 @@
 ---
 title: "支付"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-payment-0000002458692481
+format: md
 ---
+
 
 ## 调用支付接口
 

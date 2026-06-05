@@ -4,6 +4,7 @@ title: "应用调试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging
 ---
 
+
 * **[调试过程中无法添加断点](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-1)**
 * **[真机设备连接后，在DevEco Studio中无法识别设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-3)**
 * **[真机设备连接后，执行“hdc list targets”命令结果为“[Empty]”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-32)**

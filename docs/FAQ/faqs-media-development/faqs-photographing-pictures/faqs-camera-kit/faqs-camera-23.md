@@ -4,6 +4,7 @@ title: "如何实现前置镜头的录像镜像功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-23
 ---
 
+
 录像的前置镜头录像，需要开启镜像功能，调用[enableMirror()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-videooutput#enablemirror15)可以启用/关闭镜像录像。
 
 启用镜像录像前需要先通过[isMirrorSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-videooutput#ismirrorsupported15)查询是否支持录像镜像功能，示例代码如下：

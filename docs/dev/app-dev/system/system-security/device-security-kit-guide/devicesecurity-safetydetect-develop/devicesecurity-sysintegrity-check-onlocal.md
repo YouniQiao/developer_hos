@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "本地系统完整性检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-sysintegrity-check-onlocal
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -43,7 +45,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [checkSysIntegrityOnLocal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#checksysintegrityonlocal)(): Promise<string> | 检测系统完整性 |
+| [checkSysIntegrityOnLocal](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#checksysintegrityonlocal)(): Promise\<string\> | 检测系统完整性 |
 
 ## 开发步骤
 

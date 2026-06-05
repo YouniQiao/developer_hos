@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AVCodec Kit（音视频编解码服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-kit
+format: md
 ---
+
 
 * **[AVCodec Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-kit-intro)**
 * **[AVCodec支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats)**

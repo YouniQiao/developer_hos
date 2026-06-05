@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义界面扫码如何实现扫码框"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-15
+format: md
 ---
+
 
 **问题现象**
 

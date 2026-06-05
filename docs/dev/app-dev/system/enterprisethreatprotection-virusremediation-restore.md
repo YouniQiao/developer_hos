@@ -1,7 +1,9 @@
 ---
 title: "文件隔离恢复"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-restore
+format: md
 ---
+
 
 ## 基本概念
 
@@ -17,7 +19,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ente
 
 | 接口 | 描述 |
 | --- | --- |
-| restoreIsolatedFile(id: string): Promise<string> | 对指定隔离ID的文件进行恢复并获得恢复路径。 |
+| restoreIsolatedFile(id: string): Promise\<string\> | 对指定隔离ID的文件进行恢复并获得恢复路径。 |
 
 ## 开发步骤
 

@@ -1,7 +1,9 @@
 ---
 title: "UI测试框架使用指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uitest-guidelines
+format: md
 ---
+
 
 ## 概述
 
@@ -597,9 +599,9 @@ export default function abilityTest() {
 | --- | --- | --- |
 | help | - | 显示UITest工具能够支持的命令信息。 |
 | screenCap | [-p] [-d] | 截图。  各参数代表的含义请参考[获取截图](#获取截图)。 |
-| dumpLayout | [-p] <-i | -a | -b | -w | -m | -d> | 获取控件树。  各参数代表的含义请参考[获取控件树](#获取控件树)。 |
-| uiRecord | <record | read> | 录制界面操作。  **record** ：开始录制，将当前界面操作记录到'/data/local/tmp/record.csv'，结束录制操作使用Ctrl+C结束录制。  **read** ：读取并且打印录制数据。  各参数代表的含义请参考[录制界面操作](#录制界面操作)。 |
-| uiInput | <help | click | doubleClick | longClick | fling | swipe | drag | dircFling | inputText | keyEvent | text> | 注入UI模拟操作。  各参数代表的含义请参考[注入UI模拟操作](#注入ui模拟操作)。 |
+| dumpLayout | [-p] \<-i | -a | -b | -w | -m | -d\> | 获取控件树。  各参数代表的含义请参考[获取控件树](#获取控件树)。 |
+| uiRecord | \<record | read\> | 录制界面操作。  **record** ：开始录制，将当前界面操作记录到'/data/local/tmp/record.csv'，结束录制操作使用Ctrl+C结束录制。  **read** ：读取并且打印录制数据。  各参数代表的含义请参考[录制界面操作](#录制界面操作)。 |
+| uiInput | \<help | click | doubleClick | longClick | fling | swipe | drag | dircFling | inputText | keyEvent | text\> | 注入UI模拟操作。  各参数代表的含义请参考[注入UI模拟操作](#注入ui模拟操作)。 |
 | --version | - | 获取当前UITest工具版本信息。 |
 | start-daemon | - | 拉起UITest测试进程。 |
 
@@ -607,8 +609,8 @@ export default function abilityTest() {
 
 | 参数 | 二级参数 | 说明 |
 | --- | --- | --- |
-| -p | <savePath> | 指定存储路径和文件名，只支持存放在'/data/local/tmp/'下。默认存储路径：'/data/local/tmp'，文件名：'时间戳 + .png'。 |
-| -d | <displayId> | 多屏场景下，获取指定ID屏幕下的截图。  **说明：** 从API version 20开始支持该命令。 |
+| -p | \<savePath\> | 指定存储路径和文件名，只支持存放在'/data/local/tmp/'下。默认存储路径：'/data/local/tmp'，文件名：'时间戳 + .png'。 |
+| -d | \<displayId\> | 多屏场景下，获取指定ID屏幕下的截图。  **说明：** 从API version 20开始支持该命令。 |
 
 ```
 # 存储路径：/data/local/tmp，文件名：时间戳 + .png。
@@ -621,13 +623,13 @@ hdc shell uitest screenCap -p /data/local/tmp/1.png
 
 | 参数 | 二级参数 | 说明 |
 | --- | --- | --- |
-| -p | <savePath> | 指定存储路径和文件名，只支持存放在'/data/local/tmp/'下。默认存储路径：'/data/local/tmp'，文件名：'时间戳 + .json'。 |
+| -p | \<savePath\> | 指定存储路径和文件名，只支持存放在'/data/local/tmp/'下。默认存储路径：'/data/local/tmp'，文件名：'时间戳 + .json'。 |
 | -i | - | 不过滤不可见控件，也不做窗口合并。 |
 | -a | - | 保存控件的BackgroundColor、Content、FontColor、FontSize、extraAttrs属性数据。  **说明** ：默认不保存上述属性数据， **-a和-i不可同时使用。** |
-| -b | <bundleName> | 获取指定包名对应目标窗口的控件树信息。 |
-| -w | <windowId> | 获取指定ID目标窗口的控件树信息。  **说明:**  可通过hidumper工具[获取应用窗口信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#获取应用窗口信息), 包含应用对应窗口的id。 |
-| -m | <true|false> | 指定在获取控件树信息时是否合并窗口信息。true表示合并窗口信息，false表示不合并窗口信息，不设置时默认为true。 |
-| -d | <displayId> | 多屏场景下，获取指定ID屏幕下的控件树。  **说明：**  1. 从API version 20开始支持该命令。  2. 可通过hidumper工具[获取应用窗口信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#获取应用窗口信息)，包含应用对应窗口的DisplayId。 |
+| -b | \<bundleName\> | 获取指定包名对应目标窗口的控件树信息。 |
+| -w | \<windowId\> | 获取指定ID目标窗口的控件树信息。  **说明:**  可通过hidumper工具[获取应用窗口信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#获取应用窗口信息), 包含应用对应窗口的id。 |
+| -m | \<true|false\> | 指定在获取控件树信息时是否合并窗口信息。true表示合并窗口信息，false表示不合并窗口信息，不设置时默认为true。 |
+| -d | \<displayId\> | 多屏场景下，获取指定ID屏幕下的控件树。  **说明：**  1. 从API version 20开始支持该命令。  2. 可通过hidumper工具[获取应用窗口信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#获取应用窗口信息)，包含应用对应窗口的DisplayId。 |
 
 ```
 # 指定存储路径和文件名，存放在/data/local/tmp/下。
@@ -644,9 +646,9 @@ hdc shell uitest dumpLayout -p /data/local/tmp/1.json
 
 | 参数 | 二级参数 | 说明 |
 | --- | --- | --- |
-| -W | <true/false> | 录制过程中是否保存操作坐标对应的控件信息到/data/local/tmp/record.csv文件中。true表示保存控件信息，false表示仅记录坐标信息，不设置时默认为true。  **说明：** 从API version 20开始支持该命令。 |
+| -W | \<true/false\> | 录制过程中是否保存操作坐标对应的控件信息到/data/local/tmp/record.csv文件中。true表示保存控件信息，false表示仅记录坐标信息，不设置时默认为true。  **说明：** 从API version 20开始支持该命令。 |
 | -l | - | 在每次操作后保存当前布局信息，文件保存路径：/data/local/tmp/layout\_录制启动时间戳\_操作序号.json。  **说明：** 从API version 20开始支持该命令。 |
-| -c | <true/false> | 是否将录制到的操作事件信息打印到控制台，true表示打印，false表示打印，不设置时默认为true。  **说明：** 从API version 20开始支持该命令。 |
+| -c | \<true/false\> | 是否将录制到的操作事件信息打印到控制台，true表示打印，false表示打印，不设置时默认为true。  **说明：** 从API version 20开始支持该命令。 |
 
 ```
 # 将当前界面操作记录到/data/local/tmp/record.csv，结束录制操作使用Ctrl+C结束录制。

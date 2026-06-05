@@ -1,7 +1,9 @@
 ---
 title: "Content Embed Kit术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology
+format: md
 ---
+
 
 本文介绍Content Embed Kit相关术语。
 

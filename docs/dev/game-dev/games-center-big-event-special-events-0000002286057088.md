@@ -1,7 +1,9 @@
 ---
 title: "特别活动"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-special-events-0000002286057088
+format: md
 ---
+
 
 特别活动是指游戏内的亮点活动。
 

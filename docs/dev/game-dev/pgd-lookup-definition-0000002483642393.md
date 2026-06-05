@@ -1,7 +1,9 @@
 ---
 title: "定义Lookup组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-lookup-definition-0000002483642393
+format: md
 ---
+
 
 ## 基本Lookup组件
 

@@ -1,7 +1,9 @@
 ---
 title: "Rawfile开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawfile-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用证书凭据开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-private-credential-guidelines
+format: md
 ---
+
 
 ![](./img/2d9c1a1e.png)
 
@@ -30,22 +32,22 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cert
 
 | 实例名 | 接口名 | 描述 |
 | --- | --- | --- |
-| certificateManager | installPrivateCertificate(keystore: Uint8Array, keystorePwd: string, certAlias: string, callback: AsyncCallback<CMResult>) : void | 使用callback方式安装应用证书凭据。 |
-| certificateManager | installPrivateCertificate(keystore: Uint8Array, keystorePwd: string, certAlias: string) : Promise<CMResult> | 使用Promise方式安装应用证书凭据。 |
-| certificateManager | installPrivateCertificate(keystore: Uint8Array, keystorePwd: string, certAlias: string, level: AuthStorageLevel) : Promise<CMResult>18+ | 使用Promise方式安装应用证书凭据，并指定凭据的存储级别。 |
-| certificateManager | getPrivateCertificate(keyUri: string, callback: AsyncCallback<CMResult>) : void | 使用callback方式获取应用证书凭据。 |
-| certificateManager | getPrivateCertificate(keyUri: string) : Promise<CMResult> | 使用Promise方式获取应用证书凭据。 |
-| certificateManager | uninstallPrivateCertificate(keyUri: string, callback: AsyncCallback<void>) : void | 使用callback方式卸载应用证书凭据。 |
-| certificateManager | uninstallPrivateCertificate(keyUri: string) : Promise<void> | 使用Promise方式卸载应用证书凭据。 |
-| certificateManager | init(authUri: string, spec: CMSignatureSpec, callback: AsyncCallback<CMHandle>) : void | 使用callback方式进行签名验签的初始化操作。 |
-| certificateManager | init(authUri: string, spec: CMSignatureSpec) : Promise<CMHandle> | 使用Promise方式进行签名验签的初始化操作。 |
-| certificateManager | update(handle: Uint8Array, data: Uint8Array, callback: AsyncCallback<void>) : void | 使用callback方式对待签名、验签的数据进行更新操作。 |
-| certificateManager | update(handle: Uint8Array, data: Uint8Array) : Promise<void> | 使用Promise方式对待签名、验签的数据进行更新操作。 |
-| certificateManager | finish(handle: Uint8Array, callback: AsyncCallback<CMResult>) : void | 使用callback方式完成数据的签名操作。 |
-| certificateManager | finish(handle: Uint8Array, signature: Uint8Array, callback: AsyncCallback<CMResult>) : void | 使用callback方式完成数据的签名操作。 |
-| certificateManager | finish(handle: Uint8Array, signature?: Uint8Array) : Promise<CMResult> | 使用Promise方式完成数据的签名、验签操作。 |
-| certificateManager | abort(handle: Uint8Array, callback: AsyncCallback<void>) : void | 使用callback方式中止签名、验签操作。 |
-| certificateManager | abort(handle: Uint8Array) : Promise<void> | 使用Promise方式中止签名、验签操作。 |
+| certificateManager | installPrivateCertificate(keystore: Uint8Array, keystorePwd: string, certAlias: string, callback: AsyncCallback\<CMResult\>) : void | 使用callback方式安装应用证书凭据。 |
+| certificateManager | installPrivateCertificate(keystore: Uint8Array, keystorePwd: string, certAlias: string) : Promise\<CMResult\> | 使用Promise方式安装应用证书凭据。 |
+| certificateManager | installPrivateCertificate(keystore: Uint8Array, keystorePwd: string, certAlias: string, level: AuthStorageLevel) : Promise\<CMResult\>18+ | 使用Promise方式安装应用证书凭据，并指定凭据的存储级别。 |
+| certificateManager | getPrivateCertificate(keyUri: string, callback: AsyncCallback\<CMResult\>) : void | 使用callback方式获取应用证书凭据。 |
+| certificateManager | getPrivateCertificate(keyUri: string) : Promise\<CMResult\> | 使用Promise方式获取应用证书凭据。 |
+| certificateManager | uninstallPrivateCertificate(keyUri: string, callback: AsyncCallback\<void\>) : void | 使用callback方式卸载应用证书凭据。 |
+| certificateManager | uninstallPrivateCertificate(keyUri: string) : Promise\<void\> | 使用Promise方式卸载应用证书凭据。 |
+| certificateManager | init(authUri: string, spec: CMSignatureSpec, callback: AsyncCallback\<CMHandle\>) : void | 使用callback方式进行签名验签的初始化操作。 |
+| certificateManager | init(authUri: string, spec: CMSignatureSpec) : Promise\<CMHandle\> | 使用Promise方式进行签名验签的初始化操作。 |
+| certificateManager | update(handle: Uint8Array, data: Uint8Array, callback: AsyncCallback\<void\>) : void | 使用callback方式对待签名、验签的数据进行更新操作。 |
+| certificateManager | update(handle: Uint8Array, data: Uint8Array) : Promise\<void\> | 使用Promise方式对待签名、验签的数据进行更新操作。 |
+| certificateManager | finish(handle: Uint8Array, callback: AsyncCallback\<CMResult\>) : void | 使用callback方式完成数据的签名操作。 |
+| certificateManager | finish(handle: Uint8Array, signature: Uint8Array, callback: AsyncCallback\<CMResult\>) : void | 使用callback方式完成数据的签名操作。 |
+| certificateManager | finish(handle: Uint8Array, signature?: Uint8Array) : Promise\<CMResult\> | 使用Promise方式完成数据的签名、验签操作。 |
+| certificateManager | abort(handle: Uint8Array, callback: AsyncCallback\<void\>) : void | 使用callback方式中止签名、验签操作。 |
+| certificateManager | abort(handle: Uint8Array) : Promise\<void\> | 使用Promise方式中止签名、验签操作。 |
 
 ## 开发步骤
 
@@ -149,4 +151,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cert
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/pages/CertManagerGuidelines.ets#L17-L163" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CertManagerGuidelines.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/pages/CertManagerGuidelines.ets#L17-L163" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CertManagerGuidelines.ets</a></div>

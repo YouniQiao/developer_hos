@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "预加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-service
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-overview)**
 * **[开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-devprocess)**

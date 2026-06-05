@@ -4,6 +4,7 @@ title: "如何移除页面上Video组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-187
 ---
 
+
 **问题现象**
 
 ForEach刷新UI，数组中的Video组件移除了，但屏幕上还有之前的Video组件占着屏幕。

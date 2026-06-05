@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Test Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-kit-overview
+format: md
 ---
+
 
 ## 能力范围
 

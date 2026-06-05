@@ -2,7 +2,9 @@
 title: 鼠标
 sidebar_label: 鼠标
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-mouse-0000001930021626
+format: md
 ---
+
 # 鼠标
 
 鼠标是一种典型的指向型输入设备，具备像素级的输入精度。它非常适合用于对交互精度有较高要求的生产力应用场景，或是用于与布局较为密集的界面进行交互。

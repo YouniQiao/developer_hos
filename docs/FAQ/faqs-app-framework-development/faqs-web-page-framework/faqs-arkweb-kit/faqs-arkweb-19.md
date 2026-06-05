@@ -4,6 +4,7 @@ title: "Web组件加载某个页面，出现白屏、页面显示不出来，如
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-19
 ---
 
+
 使用Web组件时确认以下条件：
 
 1. 若加载在线页面，需确保手机联网且网络畅通。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用入门"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-gettingstart
+format: md
 ---
+
 
 ## 示例代码
 

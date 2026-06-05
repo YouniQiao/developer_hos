@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Audio Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-kit-intro
+format: md
 ---
+
 
 Audio Kit（音频服务）旨在提供场景化的音频播放和录制接口，助力开发者迅速构建音频高清采集及沉浸式播放能力。
 

@@ -4,6 +4,7 @@ title: "Webview焦点如何适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-14
 ---
 
+
 1. 应用可通过HTML标准接口监听当前流媒体播放状态，响应停流操作并刷新UX界面。
 2. 应用可配置mediaOptions属性实现自动恢复播放。若应用自身实现播放按钮UI，需监听视频播放状态来刷新UI按钮界面。resumeInterval的默认值为0，表示不续播，可配置范围为0~60，0表示不续播，60表示被打断60秒以内能恢复播放。audioExclusive的默认值为true，表示独占播放。一个应用内，配置为false时，可并发播放。
 

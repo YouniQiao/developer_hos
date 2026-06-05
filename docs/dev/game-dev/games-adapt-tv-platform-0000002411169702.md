@@ -1,7 +1,9 @@
 ---
 title: "适配智慧屏设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-adapt-tv-platform-0000002411169702
+format: md
 ---
+
 
 新一代华为智慧屏TV实现了与手机/平板共平台、共系统能力，成为了一款超大尺寸的手机/平板，进一步增强了智慧屏“巨幕手机”生态差异化的竞争力。
 

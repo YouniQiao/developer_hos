@@ -4,6 +4,7 @@ title: "el1与el2文件之间的区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-14
 ---
 
+
 三级目录el1/和el2/：代表不同文件加密类型。
 
 el1（设备级加密区）：设备开机后可访问的数据区。

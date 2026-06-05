@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "穿戴设备模板化通知"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device_notification
+format: md
 ---
+
 
 手机侧应用向穿戴设备发送通知，并在穿戴设备上按模板显示，支持穿戴设备收到通知后同步振动或响铃（跟随穿戴设备系统设置）。执行成功后，穿戴设备上会显示下图所示通知界面。
 

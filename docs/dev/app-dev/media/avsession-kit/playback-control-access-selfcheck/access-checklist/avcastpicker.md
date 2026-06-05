@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音视频投播"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcastpicker
+format: md
 ---
+
 
 针对音视频类应用，播控中心提供系统级设备切换、投播能力选择入口，提供音视频发声设备统一投播组件。应用通过接入统一投播组件，可以实现在应用内及系统播控中心，将应用音视频资源通过Cast+协议/DLNA协议投播到远端设备。应用需先按自检要求接入[基础播控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control)，才可正常接入音视频投播组件。
 
@@ -21,7 +23,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avca
    如不显示，排查是否按自检要求正确适配了[基础播控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control)。
 2. 双端设备联网后，是否可以在应用内及播控中心显示可投播设备列表。
 
-   如不显示，排查是否设置了setExtras({requireAbilityList: ['url-cast']})，具体参考[投播开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide)。
+   如不显示，排查是否设置了setExtras(\{requireAbilityList: ['url-cast']\})，具体参考[投播开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide)。
 3. 点击可投播设备后，对端设备是否可以正常播放。
 
    如对端黑屏/不显示播放内容，应用自排查是否正确设置了资源链接，正确调用prepare及start接口，具体参考[投播开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide)。

@@ -2,7 +2,9 @@
 title: "创建任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-task1-0000001286337462
+format: md
 ---
+
 # 创建任务
 
 您通过本接口创建任务。

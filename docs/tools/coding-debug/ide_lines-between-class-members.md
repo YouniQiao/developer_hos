@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/lines-between-class-members"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/lines-between-class-members
 

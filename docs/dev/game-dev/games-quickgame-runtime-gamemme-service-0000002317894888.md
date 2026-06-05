@@ -1,7 +1,9 @@
 ---
 title: "游戏多媒体"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-gamemme-service-0000002317894888
+format: md
 ---
+
 
 ## 简介
 

@@ -1,7 +1,9 @@
 ---
 title: "form"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-form
+format: md
 ---
+
 
 表单。用于提交组件内的用户输入的[switch](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-switch)、[input](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-input)、[checkbox](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-checkbox)、[slider](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-slider)、[radio](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-radio)、[picker](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker)。
 

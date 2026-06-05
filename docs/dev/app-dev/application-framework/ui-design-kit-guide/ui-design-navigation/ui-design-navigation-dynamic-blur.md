@@ -1,7 +1,9 @@
 ---
 title: "设置动态模糊样式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-dynamic-blur
+format: md
 ---
+
 
 ## 场景介绍
 

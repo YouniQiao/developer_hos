@@ -1,7 +1,9 @@
 ---
 title: "使用嵌入式用户身份认证控件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-auth-icon
+format: md
 ---
+
 
 提供应用界面上展示的人脸、指纹认证图标，功能包括：
 

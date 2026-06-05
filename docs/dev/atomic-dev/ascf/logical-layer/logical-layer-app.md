@@ -1,7 +1,9 @@
 ---
 title: "App"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app
+format: md
 ---
+
 
 每个ASCF框架元服务都需要在 app.js 中调用App方法注册ASCF框架（并且仅能调用一次），并绑定生命周期回调函数、添加错误监听函数等。在Object参数中可以定义生命周期回调、全局数据、全局方法等。
 

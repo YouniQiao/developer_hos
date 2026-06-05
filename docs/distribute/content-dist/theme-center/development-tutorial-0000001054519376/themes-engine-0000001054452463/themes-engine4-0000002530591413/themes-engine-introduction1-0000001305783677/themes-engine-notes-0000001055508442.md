@@ -2,7 +2,9 @@
 title: "注意事项"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-notes-0000001055508442
+format: md
 ---
+
 
 # 注意事项
 

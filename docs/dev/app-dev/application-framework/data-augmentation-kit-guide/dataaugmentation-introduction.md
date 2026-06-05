@@ -1,7 +1,9 @@
 ---
 title: "Data Augmentation Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-introduction
+format: md
 ---
+
 
 Data Augmentation Kit（数据增强套件）提供知识库、知识检索、RAG（检索增强生成）、端侧问答模型能力，打造个性化智慧数据平台，实现个性化智慧体验。
 

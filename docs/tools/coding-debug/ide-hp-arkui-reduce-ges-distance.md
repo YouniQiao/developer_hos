@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-reduce-pangesture-distance"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-reduce-pangesture-distance
 

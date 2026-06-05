@@ -1,7 +1,9 @@
 ---
 title: "Device Certificate Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit-intro
+format: md
 ---
+
 
 Device Certificate Kit（设备证书服务）面向应用开发者，提供了[证书算法库](#证书算法库)和[证书管理](#证书管理)的能力。
 

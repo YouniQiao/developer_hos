@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "选择收货地址Button"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-ship-to
+format: md
 ---
+
 
 ## 场景介绍
 

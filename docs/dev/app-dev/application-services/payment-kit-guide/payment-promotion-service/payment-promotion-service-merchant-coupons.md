@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "商家券场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-promotion-service-merchant-coupons
+format: md
 ---
+
 
 ## 场景介绍
 

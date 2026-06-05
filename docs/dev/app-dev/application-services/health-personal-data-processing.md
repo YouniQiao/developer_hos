@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-personal-data-processing
+format: md
 ---
+
 
 最后修改时间： 2024/5/16
 

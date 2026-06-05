@@ -1,7 +1,9 @@
 ---
 title: "自定义玩家属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channelplayerprop-csharp-native-0000002359547122
+format: md
 ---
+
 
 游戏多媒体实时信令功能支持设置频道内玩家自定义属性，例如状态、位置、心情等。同时，还支持监听频道内其他玩家属性的变更，及时感知频道内其他玩家属性的修改。
 

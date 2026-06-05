@@ -4,6 +4,7 @@ title: "如何设置仅文字输入的键盘，即屏蔽键盘中AI功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-492
 ---
 
+
 简单键盘是不具有任何智能功能的键盘。在EntryAbility.ets文件的onWindowStageCreate方法中调用[inputMethod.setSimpleKeyboardEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod#inputmethodsetsimplekeyboardenabled20)(true)，即可启用简单键盘模式。相关代码如下：
 
 ```

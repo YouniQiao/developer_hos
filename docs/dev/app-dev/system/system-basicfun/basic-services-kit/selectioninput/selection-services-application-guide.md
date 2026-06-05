@@ -2,19 +2,21 @@
 displayed_sidebar: appDevSidebar
 title: "实现一个划词扩展能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/selection-services-application-guide
+format: md
 ---
+
 
 ## 接口说明
 
 | 名称 | 描述 |
 | --- | --- |
-| [on(type: 'selectionCompleted', callback: Callback<SelectionInfo>): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#selectionmanageronselectioncompleted) | 订阅划词完成事件，使用callback回调函数。 |
-| [getSelectionContent(): Promise<string>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#getselectioncontent) | 获取选中文本的内容。 |
-| [createPanel(ctx: Context, info: PanelInfo): Promise<Panel>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#createpanel) | 创建划词面板。 |
-| [show(): Promise<void>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#show) | 显示面板。 |
-| [hide(): Promise<void>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#hide) | 隐藏面板。 |
-| [startMoving(): Promise<void>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#startmoving) | 使当前划词面板可以随鼠标拖动。 |
-| [moveToGlobalDisplay(x: number, y: number): Promise<void>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#movetoglobaldisplay) | 移动划词面板至屏幕指定位置。 |
+| [on(type: 'selectionCompleted', callback: Callback\<SelectionInfo\>): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#selectionmanageronselectioncompleted) | 订阅划词完成事件，使用callback回调函数。 |
+| [getSelectionContent(): Promise\<string\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#getselectioncontent) | 获取选中文本的内容。 |
+| [createPanel(ctx: Context, info: PanelInfo): Promise\<Panel\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#createpanel) | 创建划词面板。 |
+| [show(): Promise\<void\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#show) | 显示面板。 |
+| [hide(): Promise\<void\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#hide) | 隐藏面板。 |
+| [startMoving(): Promise\<void\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#startmoving) | 使当前划词面板可以随鼠标拖动。 |
+| [moveToGlobalDisplay(x: number, y: number): Promise\<void\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#movetoglobaldisplay) | 移动划词面板至屏幕指定位置。 |
 
 上述接口为本文档用到的核心接口，如需了解划词服务的全量接口，请参考[selectionInput.SelectionExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionextensionability)接口文档获取接口详细描述。
 
@@ -115,7 +117,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sele
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/ets/models/SelectionModel.ets#L16-L81" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：SelectionModel.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/ets/models/SelectionModel.ets#L16-L81" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：SelectionModel.ets</a></div>
 
 3. 在[SelectionExtAbility.ets](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/DocsSample/SelectionService/SelectionAppSample/entry/src/main/ets/selectionextability/SelectionExtAbility.ets)文件中，开发者可实现扩展能力类。该类需要继承[SelectionExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionextensionability)，用于划词扩展生命周期的管理。
 
@@ -265,7 +267,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sele
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/ets/selectionextability/SelectionExtAbility.ets#L16-L128" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：SelectionExtAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/ets/selectionextability/SelectionExtAbility.ets#L16-L128" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：SelectionExtAbility.ets</a></div>
 
 5. 在[MenuPanel.ets](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/DocsSample/SelectionService/SelectionAppSample/entry/src/main/ets/pages/MenuPanel.ets)文件中，开发者可根据业务内容自主实现菜单面板的显示效果，例如提供翻译、查询、扩写等按钮。并且可以通过绑定点击事件，弹出不同的主面板，以展示不同的内容。本示例仅提供了一个简单的点击按钮，用于展示如何弹出主面板。
 
@@ -365,7 +367,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sele
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/ets/pages/MenuPanel.ets#L16-L108" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：MenuPanel.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/ets/pages/MenuPanel.ets#L16-L108" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：MenuPanel.ets</a></div>
 
 6. 在[MainPanel.ets](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/DocsSample/SelectionService/SelectionAppSample/entry/src/main/ets/pages/MainPanel.ets)文件中，开发者可根据业务场景，自行实现主面板的显示效果。本示例仅提供了一个简单的展示划词内容的主面板，具体的业务侧功能需要开发者自行实现。
 
@@ -411,7 +413,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sele
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/ets/pages/MainPanel.ets#L16-L54" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：MainPanel.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/ets/pages/MainPanel.ets#L16-L54" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：MainPanel.ets</a></div>
 
 7. 配置[main\_pages.json](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/DocsSample/SelectionService/SelectionAppSample/entry/src/main/resources/base/profile/main_pages.json)文件。
 
@@ -440,7 +442,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sele
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/module.json5#L50-L59" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：module.json5</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/SelectionService/SelectionAppSample/entry/src/main/module.json5#L50-L59" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：module.json5</a></div>
 
 9. 配置签名。
 

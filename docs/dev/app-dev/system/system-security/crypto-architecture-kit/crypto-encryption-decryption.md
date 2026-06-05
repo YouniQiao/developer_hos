@@ -1,7 +1,9 @@
 ---
 title: "加解密"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encryption-decryption
+format: md
 ---
+
 
 * **[加解密介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encryption-decryption-overview)**
 * **[加解密算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encrypt-decrypt-spec)**

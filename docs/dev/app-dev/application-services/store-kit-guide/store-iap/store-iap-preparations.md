@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-application-access
+format: md
 ---
+
 
 ![](./img/2149b695.png)
 

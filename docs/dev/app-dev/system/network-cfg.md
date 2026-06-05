@@ -1,7 +1,9 @@
 ---
 title: "network-cfg工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-cfg
+format: md
 ---
+
 
 network-cfg是为开发人员提供的用于设置网络相关参数的工具（其中"cfg"为"config"的缩写），例如给Wi-Fi设置代理等。
 

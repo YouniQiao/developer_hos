@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "创建Wallet Kit服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations
+format: md
 ---
+
 
 请先参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作和指纹配置，再继续以下开发活动。
 

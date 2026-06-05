@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API接口处理异步操作"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-promise
+format: md
 ---
+
 
 ## 简介
 

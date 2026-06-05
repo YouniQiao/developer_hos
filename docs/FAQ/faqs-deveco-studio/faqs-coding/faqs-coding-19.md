@@ -4,6 +4,7 @@ title: "为什么ArkTS API接口注释中@since版本看起来比接口实际引
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-19
 ---
 
+
 **问题现象**
 
 在DevEco Studio中查看ArkTS API的接口注释，或鼠标悬停在ArkTS API调用处时，发现某些接口标注的@since版本较高（例如@since 20），但实际这些接口在更早的版本（如API 19）就已经存在。

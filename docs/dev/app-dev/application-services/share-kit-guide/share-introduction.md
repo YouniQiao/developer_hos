@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Share Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-introduction
+format: md
 ---
+
 
 Share Kit（分享服务）为应用提供文本、图片、视频等内容跨应用、跨端分享能力。
 

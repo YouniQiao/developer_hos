@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "安全相机(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-secure-photo
+format: md
 ---
+
 
 安全相机主要为银行等有活体检测等安全诉求的应用提供，安全相机的使用需要加密算法框架及可信应用服务。
 

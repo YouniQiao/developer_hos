@@ -1,7 +1,9 @@
 ---
 title: "使用扩展的Node-API接口创建对ArkTS对象的强引用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-strong-reference
+format: md
 ---
+
 
 HarmonyOS提供的API优化了强引用的创建效率，保留了Node-API的强引用特性，相较于napi\_ref，napi\_strong\_ref具有更快的创建效率。
 

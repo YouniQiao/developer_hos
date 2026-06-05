@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "轨迹绑路"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-navi-snap
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -15,8 +17,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [SnapToRoadsParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsparams) | 轨迹绑路的参数。 |
-| [snapToRoads](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroads)(params: [SnapToRoadsParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsparams)): Promise<[SnapToRoadsResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsresult)> | 轨迹绑路。 |
-| [snapToRoads](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroads-1)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), params: [SnapToRoadsParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsparams)): Promise<[SnapToRoadsResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsresult)> | 轨迹绑路。支持传入Context上下文。 |
+| [snapToRoads](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroads)(params: [SnapToRoadsParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsparams)): Promise[SnapToRoadsResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsresult) | 轨迹绑路。 |
+| [snapToRoads](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroads-1)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), params: [SnapToRoadsParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsparams)): Promise[SnapToRoadsResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsresult) | 轨迹绑路。支持传入Context上下文。 |
 | [SnapToRoadsResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-navi-api#snaptoroadsresult) | 轨迹绑路的结果。 |
 
 ## 开发步骤

@@ -1,7 +1,9 @@
 ---
 title: "游戏大事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-all-0000002285953798
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-overview-0000002320626361)**
 * **[大版本更新](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-version-update-0000002286057084)**

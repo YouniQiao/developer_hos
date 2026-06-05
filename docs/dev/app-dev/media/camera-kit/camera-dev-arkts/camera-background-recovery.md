@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "相机启动恢复实践(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-background-recovery
+format: md
 ---
+
 
 当前示例提供完整的相机应用从后台切换至前台启动恢复的流程介绍，方便开发者了解完整的接口调用顺序。
 

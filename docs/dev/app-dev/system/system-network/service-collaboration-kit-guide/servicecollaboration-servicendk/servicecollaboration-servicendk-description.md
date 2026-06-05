@@ -1,7 +1,9 @@
 ---
 title: "跨设备互通NDK特性概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-servicendk-description
+format: md
 ---
+
 
 跨设备互通提供相机、扫描以及图库（图片和视频）的跨设备调用能力，TV、Tablet或PC/2in1设备可以调用Phone的相机、扫描、图库等功能。
 

@@ -1,7 +1,9 @@
 ---
 title: "应用跳转陌生号码和信息识别页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-app-redirection
+format: md
 ---
+
 
 从6.1.0(23)版本开始，新增支持从应用直接跳转到“电话 > 更多 > 设置 > 陌生号码和信息识别"。
 

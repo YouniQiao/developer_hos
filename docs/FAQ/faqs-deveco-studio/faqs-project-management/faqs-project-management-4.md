@@ -4,6 +4,7 @@ title: "打开历史工程，报错提示“Install failed FetchPackageInfo: hyp
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-4
 ---
 
+
 **问题现象**
 
 在DevEco Studio打开历史工程，依赖安装不成功，报错信息为“Install failed FetchPackageInfo: hypium failed”。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Image Kit（图片处理服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-kit
+format: md
 ---
+
 
 * **[Image Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-overview)**
 * **[图片开发指导(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-arkts-dev)**

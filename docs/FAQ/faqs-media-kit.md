@@ -4,6 +4,7 @@ title: "媒体（Media ）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-kit
 ---
 
+
 * **[使用AVPlayer播放器概率性报错5400104、5400103要怎么处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-1)**
 * **[系统播放器AVPlayer支持的流媒体协议与功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-2)**
 * **[如何实现使用AVPlayer播放音频的过程中打断当前播放去播放另一个音频](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-3)**

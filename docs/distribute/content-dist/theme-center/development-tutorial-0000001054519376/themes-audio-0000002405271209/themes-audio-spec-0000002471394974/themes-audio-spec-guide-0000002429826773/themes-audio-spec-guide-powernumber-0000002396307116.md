@@ -2,7 +2,9 @@
 title: "电量数值"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-guide-powernumber-0000002396307116
+format: md
 ---
+
 
 # 电量数值
 

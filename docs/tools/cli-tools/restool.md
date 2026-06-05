@@ -1,7 +1,9 @@
 ---
 title: "restoolе·Ҙе…·"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # restoolе·Ҙе…·
 

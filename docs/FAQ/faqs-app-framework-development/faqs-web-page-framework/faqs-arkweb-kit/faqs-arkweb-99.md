@@ -4,6 +4,7 @@ title: "Web使用vh适配网页被缩小"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-99
 ---
 
+
 **问题现象**
 
 ArkWeb加载的前端页面中使用vh单位进行网页自适应适配时，页面出现异常缩小。

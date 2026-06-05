@@ -1,7 +1,9 @@
 ---
 title: "获取手机号概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phone-overview
+format: md
 ---
+
 
 当元服务需要获取用户手机号时，可通过调用Scenario Fusion Kit提供的Button组件，引导用户完成手机号授权。
 

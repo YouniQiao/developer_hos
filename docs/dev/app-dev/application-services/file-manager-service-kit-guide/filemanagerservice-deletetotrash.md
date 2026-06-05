@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "删除文件到回收站"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-deletetotrash
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -12,7 +14,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file
 
 | 接口名 | 描述 |
 | --- | --- |
-| [deleteToTrash](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/filemanagerservice-arkts-filemanagerservice#filemanagerservicedeletetotrash)(uri: string): Promise<string> | 删除指定文件到回收站，并返回文件删除到回收站后的uri。使用Promise异步回调。 |
+| [deleteToTrash](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/filemanagerservice-arkts-filemanagerservice#filemanagerservicedeletetotrash)(uri: string): Promise\<string\> | 删除指定文件到回收站，并返回文件删除到回收站后的uri。使用Promise异步回调。 |
 
 ## 示例代码
 

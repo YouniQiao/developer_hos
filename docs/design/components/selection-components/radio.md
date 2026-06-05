@@ -2,7 +2,9 @@
 title: 单选框
 sidebar_label: 单选框
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/radio-0000001929853288
+format: md
 ---
+
 # 单选框
 
 单选是一种只能用于在互斥选项中进行选择的控件。开发相关描述请参考 [Radio](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-radio) 文档。

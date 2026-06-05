@@ -2,7 +2,9 @@
 title: "查询创意关联信息列表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-creative-associated1-0000001128438072
+format: md
 ---
+
 # 查询创意关联信息列表
 
 您通过本接口查询创意关联数据，查询结果按照创建的时间倒序排列。
@@ -35,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
   Authorization:Bearer CgB6e3x9ERGComr9dENxZX22iBk+mLuf1yGtQVPUjPJUMrstfKlqpdXk+kfHU9J8ZJ/soYIZHZzT446GeSYumluQuhsK7jvz4kz1Bkms4CLI/rE=
 
-  \{
+  \\{
 
   "is\_abroad": true,
 
@@ -45,7 +47,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
   "adgroup\_ids":["50028149","50028148"]
 
-  \}
+  \\}
 - <strong>响应字段</strong>
 
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |

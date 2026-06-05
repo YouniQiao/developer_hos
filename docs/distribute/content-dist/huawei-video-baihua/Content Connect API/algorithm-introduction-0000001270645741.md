@@ -2,7 +2,9 @@
 title: "算法介绍"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/algorithm-introduction-0000001270645741
+format: md
 ---
+
 
 # 算法介绍
 

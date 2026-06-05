@@ -1,7 +1,9 @@
 ---
 title: "网络质量评估 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback-c
+format: md
 ---
+
 
 ## 场景介绍
 

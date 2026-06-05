@@ -1,7 +1,9 @@
 ---
 title: "数字盾签名密钥备份与恢复"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-backupdata
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -36,8 +38,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [importData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#importdata)(data: ArrayBuffer, authID: bigint): Promise<void> | 导入数据（即与HUKS签名验签时使用的加密密钥信息） |
-| [exportData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#exportdata)(authID: bigint, label: TUILable): Promise<ArrayBuffer> | 导出数据（即与HUKS签名验签时使用的加密密钥信息） |
+| [importData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#importdata)(data: ArrayBuffer, authID: bigint): Promise\<void\> | 导入数据（即与HUKS签名验签时使用的加密密钥信息） |
+| [exportData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#exportdata)(authID: bigint, label: TUILable): Promise\<ArrayBuffer\> | 导出数据（即与HUKS签名验签时使用的加密密钥信息） |
 
 ## 开发步骤
 

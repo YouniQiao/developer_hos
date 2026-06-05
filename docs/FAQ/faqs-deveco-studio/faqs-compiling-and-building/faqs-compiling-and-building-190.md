@@ -4,6 +4,7 @@ title: "历史问题报错：“hvigor ERROR: Error: EINVAL: invalid argument, m
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-190
 ---
 
+
 **问题现象**
 
 构建报错：“hvigor ERROR: Error: EINVAL: invalid argument, mkdir ‘D:xxx\yyy\zzz\D:’”

@@ -2,7 +2,9 @@
 title: 社交通讯类
 sidebar_label: 社交通讯类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples2-0000001793536901
+format: md
 ---
+
 # 社交通讯类
 
 社交通讯类场景主要包括社交动态、IM 对话、通话、会议等类型的应用和场景。此类场景旨在让用户享受高效的浏览和互动交互。需要避免因为部分元素显示过大，导致大屏幕上交互效率降低。建议重点关注首页、详情页、对话页、通话页等，有针对性地适配以提高用户体验。

@@ -4,6 +4,7 @@ title: "使用模拟器发起HTTPS请求时如何安装数字证书"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-27
 ---
 
+
 **问题现象**
 
 在使用网络代理发送HTTPS请求时，需要安装网站服务器的数字证书。

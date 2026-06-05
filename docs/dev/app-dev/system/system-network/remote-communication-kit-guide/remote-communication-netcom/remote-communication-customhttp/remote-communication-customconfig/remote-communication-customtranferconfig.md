@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "TransferConfiguration：定制数据传输"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customtranferconfig
+format: md
 ---
+
 
 ## 场景介绍
 

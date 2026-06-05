@@ -2,7 +2,9 @@
 title: "引擎介绍"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-introduction-0000002279818389
+format: md
 ---
+
 
 # 引擎介绍
 

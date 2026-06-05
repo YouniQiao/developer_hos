@@ -4,6 +4,7 @@ title: "并发场景下AES加密失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-universal-keystore-3
 ---
 
+
 **原因**
 
 使用HUKS重复导入相同的密钥时，[huks.importKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksimportkeyitem9)会判断密钥是否存在。如果存在，会删除并重新生成密钥，这可能导致其他线程的init操作失败。

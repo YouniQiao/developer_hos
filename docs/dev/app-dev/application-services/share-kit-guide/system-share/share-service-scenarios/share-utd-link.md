@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "分享链接"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-link
+format: md
 ---
+
 
 ## 分享App Linking直达应用
 

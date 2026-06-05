@@ -1,7 +1,9 @@
 ---
 title: "HiTraceChain介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-intro
+format: md
 ---
+
 
 ## 简介
 

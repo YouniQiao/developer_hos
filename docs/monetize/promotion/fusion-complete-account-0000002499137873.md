@@ -2,7 +2,9 @@
 title: "进入认证中心完成开户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-complete-account-0000002499137873
+format: md
 ---
+
 # 进入认证中心完成开户
 
 以选择开通应用市场应用推广一级服务商为例，勾选完推广类型、签署协议后，您只需要在认证中心完成实名认证，并补充开票信息即可。

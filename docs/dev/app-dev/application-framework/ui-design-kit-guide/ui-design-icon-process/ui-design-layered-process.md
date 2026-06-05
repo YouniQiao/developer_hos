@@ -1,7 +1,9 @@
 ---
 title: "（推荐）分层图标处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-layered-process
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -1,7 +1,9 @@
 ---
 title: "Instrument Test"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Instrument Test
 

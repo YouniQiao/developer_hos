@@ -2,7 +2,9 @@
 title: 进度条
 sidebar_label: 进度条
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/progress-0000001929656644
+format: md
 ---
+
 # 进度条
 
 进度条是一种常见的移动端的进度控制类控件，用于在界面中告知用户 App 在载入内容或执行长时间操作时未卡死。无明确进度条 (HarmonyOS 特征动效) 请参考 [LoadingProgress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-loadingprogress) 文档，有明确进度条参照 [Progress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-progress) 文档。

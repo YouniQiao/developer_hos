@@ -4,6 +4,7 @@ title: "如何查看触摸热区范围"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-307
 ---
 
+
 通过自定义方式设置responseRegion属性值，参考代码如下：
 
 ```

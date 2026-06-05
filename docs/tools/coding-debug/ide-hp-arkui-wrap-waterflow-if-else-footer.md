@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-wrap-waterflow-if-else-footer（已下线）"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-wrap-waterflow-if-else-footer（已下线）
 

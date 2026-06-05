@@ -1,7 +1,9 @@
 ---
 title: "上传软件包"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-upload-pkg-0000002277983368
+format: md
 ---
+
 
 您需要先上传待发布的正式版本，以便在发布时能选择到对应的版本。上传时，AppGallery Connect会对上传的包进行合法性检测，同时还提供了上架自检功能来助您提高应用审核通过率。
 

@@ -1,7 +1,9 @@
 ---
 title: "首次核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-first
+format: md
 ---
+
 
 在华为云核准（备案）系统中首次核准（备案）主体信息和元服务信息。操作步骤如下：
 

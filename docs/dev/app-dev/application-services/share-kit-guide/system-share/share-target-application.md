@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "目标应用处理分享内容"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-target-application
+format: md
 ---
+
 
 * **[应用内处理分享内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-interface-description)**
 * **[分享详情页处理分享内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-sec-panel)**

@@ -4,6 +4,7 @@ title: "安装HAP时提示“compatibleSdkVersion and releaseType of the app do 
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-22
 ---
 
+
 **问题现象**
 
 在启动调试或运行应用/服务时，安装HAP出现错误，提示“compatibleSdkVersion和releaseType与设备上的apiVersion和releaseType不匹配。”

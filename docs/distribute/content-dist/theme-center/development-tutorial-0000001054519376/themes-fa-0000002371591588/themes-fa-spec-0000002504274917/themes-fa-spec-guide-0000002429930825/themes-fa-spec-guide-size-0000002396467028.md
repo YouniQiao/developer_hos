@@ -2,7 +2,9 @@
 title: "卡片规格"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-guide-size-0000002396467028
+format: md
 ---
+
 
 # 卡片规格
 

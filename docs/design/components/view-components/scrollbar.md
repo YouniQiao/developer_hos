@@ -2,7 +2,9 @@
 title: 滚动条
 sidebar_label: 滚动条
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/scrollbar-0000001956815473
+format: md
 ---
+
 # 滚动条
 
 滚动条控件用于显示当前界面视图所在位置，并提供滚动视图时动态展示位置变化进度的功能。滚动条通常出现在内容区域大于实际可视区域时，允许用户垂直或水平滚动查看其余内容的场景。开发能力相关请参考 [ScrollBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-scrollbar) 文档。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "XEngine Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq
+format: md
 ---
+
 
 * **[创建特性实例失败如何处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-1)**
 * **[超分和自适应VRS特性是否可以同时使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-2)**

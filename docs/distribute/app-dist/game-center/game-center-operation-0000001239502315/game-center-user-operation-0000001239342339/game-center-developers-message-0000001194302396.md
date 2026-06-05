@@ -2,7 +2,9 @@
 title: "开发者的话"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-developers-message-0000001194302396
+format: md
 ---
+
 
 # 开发者的话
 

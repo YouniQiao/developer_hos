@@ -1,7 +1,9 @@
 ---
 title: "顶部窗口控制条避让适配智慧多窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-controlbar-adapt
+format: md
 ---
+
 
 顶部窗口控制条是应用窗口处于智慧多窗模式下，应用顶部的操作横条 ![](./img/f150c37f.png) 。
 

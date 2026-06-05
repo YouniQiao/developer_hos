@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "事件推荐方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-introduction)**
 * **[场景体验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-scene-experience)**

@@ -1,7 +1,9 @@
 ---
 title: "添加留言区域"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-comment
+format: md
 ---
+
 
 留言框的功能为：用户输入留言后点击完成，留言区域即显示留言内容。用户点击右侧的删除按钮可删除当前留言内容并重新输入。
 

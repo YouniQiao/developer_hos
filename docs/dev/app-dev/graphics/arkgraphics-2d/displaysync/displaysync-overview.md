@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "可变帧率简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-overview
+format: md
 ---
+
 
 随着设备屏幕的不断演进，当前主流设备采用LTPO屏幕，此类屏幕支持在多个档位之间切换屏幕帧率。
 

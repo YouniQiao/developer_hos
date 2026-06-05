@@ -1,7 +1,9 @@
 ---
 title: "开发快游戏"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-dev-runtimegame-0000002351933637
+format: md
 ---
+
 
 * **[接入流程](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-dev-runtimegame-guide-0000002317894824)**
 * **[开发环境准备](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-environment-preparation-0000002351893453)**

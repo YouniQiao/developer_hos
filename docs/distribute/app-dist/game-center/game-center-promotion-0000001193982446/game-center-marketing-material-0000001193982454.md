@@ -2,7 +2,9 @@
 title: "营销素材管理"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-marketing-material-0000001193982454
+format: md
 ---
+
 
 # 营销素材管理
 

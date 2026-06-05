@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用接入播控自检"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-selfcheck
+format: md
 ---
+
 
 * **[应用接入播控自检表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-checklist)**
 * **[应用接入播控检查项详细说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-checklist)**

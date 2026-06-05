@@ -4,6 +4,7 @@ title: "如何实现Tabs页签导航栏切换时，下划线也随之滑动"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-17
 ---
 
+
 可通过SubTabBarStyle子页签样式实现该效果，具体参考如下代码：
 
 ```

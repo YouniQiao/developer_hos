@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "支持的国家/地区"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-appendix-region
+format: md
 ---
+
 
 | 国家/地区 | 英文名称 |
 | --- | --- |

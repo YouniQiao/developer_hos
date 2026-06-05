@@ -2,7 +2,9 @@
 title: "业务介绍"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-introduction-0000001124416711
+format: md
 ---
+
 
 # 业务介绍
 

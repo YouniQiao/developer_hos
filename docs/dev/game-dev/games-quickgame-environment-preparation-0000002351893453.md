@@ -1,7 +1,9 @@
 ---
 title: "开发环境准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-environment-preparation-0000002351893453
+format: md
 ---
+
 
 ## 硬件要求
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-string-starts-ends-with"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-string-starts-ends-with
 

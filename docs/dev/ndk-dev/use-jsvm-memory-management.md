@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API进行内存管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-memory-management
+format: md
 ---
+
 
 ## 简介
 

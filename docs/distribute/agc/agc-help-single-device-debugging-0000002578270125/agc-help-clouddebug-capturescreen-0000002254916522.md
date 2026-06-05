@@ -1,7 +1,9 @@
 ---
 title: "调试截屏"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-capturescreen-0000002254916522
+format: md
 ---
+
 
 云调试服务支持在调试过程中实时对设备进行截屏。当您在调试应用过程中需要保存特殊场景的信息时，可以通过截屏功能保存场景界面，以便您定位问题。
 

@@ -1,7 +1,9 @@
 ---
 title: "ProvisionInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-provisioninfo-0000002236041514
+format: md
 ---
+
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |

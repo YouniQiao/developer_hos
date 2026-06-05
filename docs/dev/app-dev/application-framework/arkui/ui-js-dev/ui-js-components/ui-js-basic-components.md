@@ -1,7 +1,9 @@
 ---
 title: "基础组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-basic-components
+format: md
 ---
+
 
 * **[text开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-text)**
 * **[input开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-input)**

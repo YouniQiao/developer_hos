@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Image Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-faqs
+format: md
 ---
+
 
 * **[如何处理HEIF图片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heif-adapter-faq)**
 * **[如何获取图片的旋转角度信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-rotate-faq)**

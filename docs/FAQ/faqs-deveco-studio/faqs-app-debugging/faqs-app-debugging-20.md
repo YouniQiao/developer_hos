@@ -4,6 +4,7 @@ title: "修改代码后使用Hot Reload不支持情况说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-20
 ---
 
+
 **问题现象**
 
 执行热重载过程中，如果当前修改不支持热重载，控制台会打印蓝色重启链接，提示重新安装并重启。

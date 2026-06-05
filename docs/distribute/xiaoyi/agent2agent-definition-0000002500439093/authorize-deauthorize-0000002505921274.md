@@ -2,7 +2,9 @@
 title: "授权登录/解授权"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/authorize-deauthorize-0000002505921274
+format: md
 ---
+
 
 # 授权登录/解授权
 
@@ -88,6 +90,6 @@ Agent Client获取Agent Server解除授权响应：
 }
 ```
 
-此外，如果返回给用户的正文中需要提示账号登录才能返回处理结果，可以用**“**superlink://vassistant?hwIdAuth=phone&appId=\{\{智能体账号绑定中配置的APP ID\}\}&agentId=\{\{智能体的agentId\}\}”作为markdown中提示文本的超链接返回。
+此外，如果返回给用户的正文中需要提示账号登录才能返回处理结果，可以用**“**superlink://vassistant?hwIdAuth=phone&appId=\\{\\{智能体账号绑定中配置的APP ID\\}\\}&agentId=\\{\\{智能体的agentId\\}\\}”作为markdown中提示文本的超链接返回。
 
 agentLoginSessionId要返回给APP客户端侧，APP客户端侧要把该字段持久化到本地，在后续agent client向agent server发起建链请求时，可以使用该字段作为用户已登录凭证。

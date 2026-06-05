@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "显示我的位置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -21,9 +23,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | [setMyLocationEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#setmylocationenabled)(myLocationEnabled: boolean): void | “我的位置”图层功能开关，默认使用系统的连续定位能力显示用户位置。开关打开后，“我的位置”按钮默认显示在地图的右下角。点击“我的位置”按钮，将会在屏幕中心显示当前定位，以蓝色圆点的形式呈现。 |
 | [setMyLocationControlsEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#setmylocationcontrolsenabled)(enabled: boolean): void | 设置是否启用“我的位置”按钮。只显示按钮，在不开启“我的位置”图层功能的情况下，点击按钮没反应。 |
 | [setMyLocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#setmylocation)(location: [geoLocationManager.Location](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#location)): void | 设置“我的位置”坐标。  如果不使用Map Kit提供的默认定位行为，可以通过[Location Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/location-api)获取用户位置后，传给Map Kit。 |
-| [setMyLocationStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#setmylocationstyle)(style: [mapCommon.MyLocationStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mylocationstyle)): Promise<void> | 设置“我的位置”样式。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmylocationbuttonclick)(type: 'myLocationButtonClick', callback: Callback<void>): void | 监听“我的位置”按钮点击事件。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#offmylocationbuttonclick)(type: 'myLocationButtonClick', callback?: Callback<void>): void | 取消监听“我的位置”按钮点击事件。 |
+| [setMyLocationStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#setmylocationstyle)(style: [mapCommon.MyLocationStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mylocationstyle)): Promise\<void\> | 设置“我的位置”样式。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmylocationbuttonclick)(type: 'myLocationButtonClick', callback: Callback\<void\>): void | 监听“我的位置”按钮点击事件。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#offmylocationbuttonclick)(type: 'myLocationButtonClick', callback?: Callback\<void\>): void | 取消监听“我的位置”按钮点击事件。 |
 
 ## 开发步骤
 

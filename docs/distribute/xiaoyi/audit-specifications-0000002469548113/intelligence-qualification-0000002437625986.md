@@ -2,7 +2,9 @@
 title: "智能体资质"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/intelligence-qualification-0000002437625986
+format: md
 ---
+
 
 # 智能体资质
 

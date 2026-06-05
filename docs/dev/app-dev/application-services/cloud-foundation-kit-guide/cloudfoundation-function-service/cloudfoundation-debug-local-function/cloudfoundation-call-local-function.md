@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "调用本地云函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-local-function
+format: md
 ---
+
 
 ## 约束与限制
 

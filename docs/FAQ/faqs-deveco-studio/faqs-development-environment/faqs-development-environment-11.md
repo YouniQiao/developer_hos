@@ -4,9 +4,10 @@ title: "流水线场景使用命令行工具sdkmgr下载Linux SDK失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-11
 ---
 
+
 **问题现象**
 
-在Linux上使用命令行工具sdkmgr时，如果提示“Failed to request URL <https://devecostudio-dre.op.hicloud.com/sdkmanager/v5/hos/getSdkList>”。
+在Linux上使用命令行工具sdkmgr时，如果提示“Failed to request URL https://devecostudio-dre.op.hicloud.com/sdkmanager/v5/hos/getSdkList”。
 
 ![](./img/2757c7c3.png)
 

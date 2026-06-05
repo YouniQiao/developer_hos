@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "读取健康记录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-healthsequence-manage
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heal
 
 | 接口名 | 描述 |
 | --- | --- |
-| [readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddata-2)<T extends [HealthSequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthsequence)>(request: [HealthSequenceReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthsequencereadrequest)): Promise<T[]> | 查询最新一条健康记录。 |
+| [readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddata-2)\<T extends [HealthSequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthsequence)\>(request: [HealthSequenceReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthsequencereadrequest)): Promise\<T[]\> | 查询最新一条健康记录。 |
 
 ![](./img/86d82394.png)
 

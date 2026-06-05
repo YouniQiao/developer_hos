@@ -2,7 +2,9 @@
 title: "查询应用详情"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-product4-0000001286339298
+format: md
 ---
+
 # 查询应用详情
 
 您通过本接口可以查询应用详情。

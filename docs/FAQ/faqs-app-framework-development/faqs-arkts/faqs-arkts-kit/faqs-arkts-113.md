@@ -4,6 +4,7 @@ title: "如何在ArkTS使用Reflect正确绑定this指针"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-113
 ---
 
+
 参考以下示例代码，注意只有对象的get/set方法才能绑定this指针。
 
 ```

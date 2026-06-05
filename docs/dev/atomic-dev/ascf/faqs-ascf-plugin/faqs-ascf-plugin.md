@@ -1,7 +1,9 @@
 ---
 title: "ASCF Plugin"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-ascf-plugin
+format: md
 ---
+
 
 * **[在DevEco Studio中找不到创建ASCF元服务项目模板](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-plugin-template-not-found)**
 * **[在DevEco Studio调试运行ASCF元服务的时候报错](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-plugin-debugging-error)**

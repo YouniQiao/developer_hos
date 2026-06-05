@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "坐标纠偏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-convert-coordinate
+format: md
 ---
+
 
 ## 坐标系知识介绍
 
@@ -27,7 +29,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | --- | --- |
 | [mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype) | 坐标系类型。 |
 | [convertCoordinateSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-functions#convertcoordinatesync)(fromType: [mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype), toType: [mapCommon.CoordinateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatetype), location: [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng)): [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 坐标转换，将WGS84坐标系转换为GCJ02坐标系。 |
-| [rectifyCoordinate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-functions#rectifycoordinate)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), locations: Array<[mapCommon.CoordinateLatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatelatlng)>): Promise<Array<[mapCommon.CoordinateLatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatelatlng)>> | 坐标纠偏。 |
+| [rectifyCoordinate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-functions#rectifycoordinate)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), locations: Array[mapCommon.CoordinateLatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatelatlng)): PromiseArray<[mapCommon.CoordinateLatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#coordinatelatlng)> | 坐标纠偏。 |
 | [mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng) | 经纬度对象。 |
 
 ## 开发步骤

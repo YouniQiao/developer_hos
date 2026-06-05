@@ -2,7 +2,9 @@
 
 title: "部署函数"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 部署函数
 

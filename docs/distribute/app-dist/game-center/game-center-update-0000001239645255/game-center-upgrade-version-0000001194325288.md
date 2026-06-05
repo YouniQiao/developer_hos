@@ -2,7 +2,9 @@
 title: "升级应用版本"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-upgrade-version-0000001194325288
+format: md
 ---
+
 
 # 升级应用版本
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "视频色彩空间转换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-csc
+format: md
 ---
+
 
 开发者可以调用本模块提供的[C API接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-videoprocessing)，实现HDR2SDR、HDR2HDR、SDR2SDR、SDR2HDR的色彩空间转换。
 

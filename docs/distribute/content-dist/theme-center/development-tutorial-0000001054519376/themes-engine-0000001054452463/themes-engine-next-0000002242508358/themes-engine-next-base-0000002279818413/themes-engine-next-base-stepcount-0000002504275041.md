@@ -2,7 +2,9 @@
 title: "数据开放：步数&lt;StepCount&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-stepcount-0000002504275041
+format: md
 ---
+
 
 # 数据开放：步数&lt;StepCount&gt;
 

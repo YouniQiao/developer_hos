@@ -1,7 +1,9 @@
 ---
 title: "发布上架"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-interact-card-release-0000002318054800
+format: md
 ---
+
 
 打包测试通过后，前往AGC控制台发布上架，为用户提供创新互动卡片服务。
 

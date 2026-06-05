@@ -2,7 +2,9 @@
 
 title: "通用云开发模板"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 通用云开发模板
 

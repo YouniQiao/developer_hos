@@ -4,6 +4,7 @@ title: "Text组件设置maxLines后如何确定文本是否被隐藏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-156
 ---
 
+
 可以通过measureTextSize来判断Text文本的高度是否超出maxLines设置的高度进行判断。参考代码如下：
 
 ```

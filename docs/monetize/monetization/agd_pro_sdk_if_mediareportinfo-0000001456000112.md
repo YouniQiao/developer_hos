@@ -2,7 +2,9 @@
 title: "MediaReportInfo"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_if_mediareportinfo-0000001456000112
+format: md
 ---
+
 
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |

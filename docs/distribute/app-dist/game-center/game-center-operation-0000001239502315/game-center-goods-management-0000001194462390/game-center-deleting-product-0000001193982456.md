@@ -2,7 +2,9 @@
 title: "删除/还原应用内商品"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-deleting-product-0000001193982456
+format: md
 ---
+
 
 # 删除/还原应用内商品
 

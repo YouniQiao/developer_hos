@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "交通卡更新"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-update
+format: md
 ---
+
 
 交通卡的更新可以用在更新卡片有效期等卡内数据的场景，其过程分为：卡片展示、生成更新业务订单和发起更新三个步骤，整体流程如下图，相关接口定义请参照[钱包服务API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-wallettransitcard)。
 

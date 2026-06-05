@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-includes"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-includes
 

@@ -1,7 +1,9 @@
 ---
 title: "游戏运营"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-operation-0000002286057072
+format: md
 ---
+
 
 * **[活动运营](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-agc-help-operation-0000002320553293)**
 * **[用户运营](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-user-operation-0000002320626369)**

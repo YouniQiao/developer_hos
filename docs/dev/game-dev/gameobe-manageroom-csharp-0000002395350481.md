@@ -1,7 +1,9 @@
 ---
 title: "管理房间"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-manageroom-csharp-0000002395350481
+format: md
 ---
+
 
 * **[接口调用流程](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-flowchart-roommanagement-csharp-0000002361510672)**
 * **[更新玩家自定义状态](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-updatecustomstatus-csharp-0000002395190585)**

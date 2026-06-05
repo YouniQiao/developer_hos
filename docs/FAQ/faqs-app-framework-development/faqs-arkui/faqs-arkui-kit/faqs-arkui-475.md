@@ -4,6 +4,7 @@ title: "如何实现Tabs高度自适应内容"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-475
 ---
 
+
 可以给Tabs设置height('auto')。参考示例如下：
 
 ```

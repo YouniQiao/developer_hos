@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "分段式拍照(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-deferred-capture
+format: md
 ---
+
 
 分段式拍照是相机的重要功能之一，即应用下发拍照任务后，系统将分多阶段上报不同质量的图片。
 

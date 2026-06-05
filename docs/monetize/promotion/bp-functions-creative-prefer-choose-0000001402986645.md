@@ -2,7 +2,9 @@
 title: "选择创意优选"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-creative-prefer-choose-0000001402986645
+format: md
 ---
+
 # 选择创意优选
 
 1. 创建或修改推广任务时，若该任务支持推广创意功能，勾选“编辑辅助创意”。

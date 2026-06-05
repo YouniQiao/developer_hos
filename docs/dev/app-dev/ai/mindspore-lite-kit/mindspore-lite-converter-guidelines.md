@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite进行模型转换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-converter-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -39,7 +41,7 @@ MindSpore Lite AI模型部署流程是：
 2. 取[MindSpore Lite源码](https://gitcode.com/openharmony/third_party_mindspore)。MindSpore Lite完整源码位于：mindspore-src/source/。
 3. 执行编译。
 
-   如要获取支持转换PyTorch模型的转换工具，编译前需要先export MSLITE\_ENABLE\_CONVERT\_PYTORCH\_MODEL=on && export LIB\_TORCH\_PATH="/home/user/libtorch"。转换前加入libtorch的环境变量：export LD\_LIBRARY\_PATH="/home/user/libtorch/lib:${LD\_LIBRARY\_PATH}"。用户可以下载CPU版本libtorch后解压到/home/user/libtorch的目录下。
+   如要获取支持转换PyTorch模型的转换工具，编译前需要先export MSLITE\_ENABLE\_CONVERT\_PYTORCH\_MODEL=on && export LIB\_TORCH\_PATH="/home/user/libtorch"。转换前加入libtorch的环境变量：export LD\_LIBRARY\_PATH="/home/user/libtorch/lib:$\{LD\_LIBRARY\_PATH\}"。用户可以下载CPU版本libtorch后解压到/home/user/libtorch的目录下。
 
    ```
    cd mindspore-src/source/
@@ -56,7 +58,7 @@ MindSpore Lite AI模型部署流程是：
 export LD_LIBRARY_PATH=${PACKAGE_PATH}/tools/converter/lib:${LD_LIBRARY_PATH}
 ```
 
-其中，${PACKAGE\_PATH}对应为编译或下载得到的MindSpore Lite发布件解压后的路径。
+其中，$\{PACKAGE\_PATH\}对应为编译或下载得到的MindSpore Lite发布件解压后的路径。
 
 ## 参数说明
 

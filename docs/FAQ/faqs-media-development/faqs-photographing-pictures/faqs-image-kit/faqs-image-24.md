@@ -4,6 +4,7 @@ title: "如何对GIF图片进行压缩"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-24
 ---
 
+
 * **方案一**
 
   可使用[packToDataFromPixelmapSequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagepacker#packtodatafrompixelmapsequence18)接口保存GIF图片，然后调整PixelMap的宽高或者减少帧数对GIF图片进行压缩。

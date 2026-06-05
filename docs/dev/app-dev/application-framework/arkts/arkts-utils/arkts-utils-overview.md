@@ -1,7 +1,9 @@
 ---
 title: "ArkTS基础类库概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-utils-overview
+format: md
 ---
+
 
 ArkTS基础类库是一个功能齐全的API集合，设计了一系列关键且实用的功能模块。
 

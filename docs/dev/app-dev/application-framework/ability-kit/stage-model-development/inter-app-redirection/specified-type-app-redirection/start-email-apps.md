@@ -1,7 +1,9 @@
 ---
 title: "拉起邮件类应用（startAbilityByType）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps
+format: md
 ---
+
 
 本章节介绍如何拉起邮件类应用扩展面板。
 

@@ -1,7 +1,9 @@
 ---
 title: "@returns"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @returns
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通用查询(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-query-arkts
+format: md
 ---
+
 
 从API 22开始，huksExternalCrypto提供通用查询功能接口。该接口可以用于从UKey中获取设备标识、App标识以及其他通用属性信息，完成属性查询操作。具体的场景介绍请参考[获取属性介绍及规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-query-overview)。
 

@@ -1,7 +1,9 @@
 ---
 title: "更新玩家自定义属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-updatecustomproperties-csharp-0000002361670548
+format: md
 ---
+
 
 通过更新玩家的自定义属性，可用于实现玩家自定义信息（如玩家昵称、等级等）的更新。
 

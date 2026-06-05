@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "监听游戏手柄的轴和按键事件（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-monitor-pad
+format: md
 ---
+
 
 ![](./img/ff5966f1.png)
 

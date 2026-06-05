@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "折线"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-polyline
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -21,7 +23,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [MapPolylineOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappolylineoptions) | 折线参数。 |
-| [addPolyline](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addpolyline)(options: [mapCommon.MapPolylineOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappolylineoptions)): Promise<[MapPolyline](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mappolyline)> | 在地图上添加一条折线。 |
+| [addPolyline](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addpolyline)(options: [mapCommon.MapPolylineOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappolylineoptions)): Promise[MapPolyline](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mappolyline) | 在地图上添加一条折线。 |
 | [MapPolyline](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mappolyline) | 折线，支持更新和查询相关属性。 |
 
 ## 开发步骤

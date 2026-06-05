@@ -1,7 +1,9 @@
 ---
 title: "适配常见问题"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-faq
+format: md
 ---
+
 
 # 适配常见问题
 

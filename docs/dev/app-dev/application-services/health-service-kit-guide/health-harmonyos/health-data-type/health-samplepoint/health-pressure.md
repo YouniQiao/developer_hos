@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "压力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-pressure
+format: md
 ---
+
 
 此数据记录用户在某一刻的压力数据，每一条数据都代表该时刻的压力状态。
 

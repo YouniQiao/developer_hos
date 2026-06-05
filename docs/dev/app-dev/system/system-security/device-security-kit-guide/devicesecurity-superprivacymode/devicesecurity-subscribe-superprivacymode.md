@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅状态改变事件场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-subscribe-superprivacymode
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -31,8 +33,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type: 'superPrivacyModeChange', callback: Callback<[SuperPrivacyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-superprivacymode-api#superprivacymode)>): void | 订阅超级隐私模式状态改变事件 |
-| off(type: 'superPrivacyModeChange', callback?: Callback<[SuperPrivacyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-superprivacymode-api#superprivacymode)>): void | 取消订阅超级隐私模式状态改变事件 |
+| on(type: 'superPrivacyModeChange', callback: Callback[SuperPrivacyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-superprivacymode-api#superprivacymode)): void | 订阅超级隐私模式状态改变事件 |
+| off(type: 'superPrivacyModeChange', callback?: Callback[SuperPrivacyMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-superprivacymode-api#superprivacymode)): void | 取消订阅超级隐私模式状态改变事件 |
 
 ## 开发步骤
 

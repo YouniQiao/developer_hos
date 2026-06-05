@@ -4,6 +4,7 @@ title: "编译报错“The required attribute module-srcPath is missing”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-137
 ---
 
+
 **错误描述**
 
 缺少必需属性：module-srcPath。

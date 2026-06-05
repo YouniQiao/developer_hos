@@ -1,7 +1,9 @@
 ---
 title: "截屏"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 截屏
 

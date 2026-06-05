@@ -2,7 +2,9 @@
 title: "使用空白规则创建"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-create-blank-0000001362109145
+format: md
 ---
+
 # 使用空白规则创建
 
 ## 前提条件

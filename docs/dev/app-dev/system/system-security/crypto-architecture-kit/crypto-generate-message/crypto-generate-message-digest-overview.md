@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "消息摘要计算介绍及算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-overview
+format: md
 ---
+
 
 消息摘要算法是一种能将任意长度的输入消息，通过特定运算生成固定长度摘要的算法。消息摘要算法也被称为哈希算法或单向散列算法。
 

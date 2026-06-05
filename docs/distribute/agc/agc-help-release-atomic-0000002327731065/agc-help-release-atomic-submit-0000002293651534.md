@@ -1,7 +1,9 @@
 ---
 title: "提交审核"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-submit-0000002293651534
+format: md
 ---
+
 
 完成所有应用信息和版本信息的配置后，您即可将元服务提交至华为方进行发布审核。
 

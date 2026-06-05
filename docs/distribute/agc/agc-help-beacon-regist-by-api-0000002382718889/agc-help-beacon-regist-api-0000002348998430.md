@@ -1,7 +1,9 @@
 ---
 title: "同步设备信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-regist-api-0000002348998430
+format: md
 ---
+
 
 #### 功能介绍
 
@@ -93,7 +95,7 @@ Authorization: Bearer ***
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-api-connectret-0000002349158198) | 包含返回码及描述信息的JSON字符串，格式为\{"code":*retcode*, "msg": "*description*"}，retcode为返回码，description为返回码描述信息。返回码请参见[错误码](https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-api-errorcode-0000002382718897)。 |
+| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-api-connectret-0000002349158198) | 包含返回码及描述信息的JSON字符串，格式为\\{"code":*retcode*, "msg": "*description*"\}，retcode为返回码，description为返回码描述信息。返回码请参见[错误码](https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-api-errorcode-0000002382718897)。 |
 
 #### 响应示例
 

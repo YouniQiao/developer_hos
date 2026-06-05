@@ -1,7 +1,9 @@
 ---
 title: "获取服务端授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661
+format: md
 ---
+
 
 要发起一个基本的AppGallery Connect API调用，您需要先获得AppGallery Connect服务端的授权。目前您可以通过以下方式获得授权：
 
@@ -406,7 +408,7 @@ Content-Type: application/json
 | --- | --- | --- | --- |
 | access\_token | O | String | 认证Token，用于AppGallery Connect API接口调用。  说明：  此参数只在获取成功时返回。 |
 | expires\_in | O | Long | access\_token的有效期。  单位：秒  您需要在过期时间到达时重新调用本接口获取新的access\_token。有效期为48小时，如果在有效期内再次调用接口获取access\_token时，新老access\_token都是有效的。  说明：  此参数只在获取成功时返回。 |
-| ret | O | String(100) | 获取Token失败时的错误信息，包含错误码及描述信息的JSON字符串。  格式：\{"code":*retcode*, "msg": "*description*"}  其中：retcode为错误码，description为错误码描述信息。 |
+| ret | O | String(100) | 获取Token失败时的错误信息，包含错误码及描述信息的JSON字符串。  格式：\\{"code":*retcode*, "msg": "*description*"\}  其中：retcode为错误码，description为错误码描述信息。 |
 
 #### [h2]响应示例
 
@@ -465,7 +467,7 @@ Content-Type: application/json
 | --- | --- | --- | --- |
 | access\_token | O | String | 认证Token，用于AppGallery Connect API接口调用。  说明：  此参数只在获取成功时返回。 |
 | expires\_in | O | Long | access\_token的有效期。  单位：秒  您需要在过期时间到达时重新调用本接口获取新的access\_token。有效期为48小时，如果在有效期内再次调用接口获取access\_token时，新老access\_token都是有效的。  说明：  此参数只在获取成功时返回。 |
-| ret | O | String(100) | 获取Token失败时的错误信息，包含错误码及描述信息的JSON字符串。  格式：\{"code":*retcode*, "msg": "*description*"}  其中：retcode为错误码，description为错误码描述信息。 |
+| ret | O | String(100) | 获取Token失败时的错误信息，包含错误码及描述信息的JSON字符串。  格式：\\{"code":*retcode*, "msg": "*description*"\}  其中：retcode为错误码，description为错误码描述信息。 |
 
 #### [h2]响应示例
 

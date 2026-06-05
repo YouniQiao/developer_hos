@@ -2,7 +2,9 @@
 title: "表达式：数字表达式&lt;Expression&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-exp-0000002504274983
+format: md
 ---
+
 
 # 表达式：数字表达式&lt;Expression&gt;
 

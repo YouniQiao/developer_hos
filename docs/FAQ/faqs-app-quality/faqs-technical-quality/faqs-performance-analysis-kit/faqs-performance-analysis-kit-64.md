@@ -4,6 +4,7 @@ title: "解决hdc执行返回command not found"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-64
 ---
 
+
 **问题现象**
 
 在命令行工具中hdc执行返回command not found提示命令未找到。

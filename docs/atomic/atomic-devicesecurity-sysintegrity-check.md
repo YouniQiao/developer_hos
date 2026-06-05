@@ -1,7 +1,9 @@
 ---
 title: "系统完整性检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-sysintegrity-check
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -2,7 +2,9 @@
 title: "自测验收"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_test-online-0000001382413621
+format: md
 ---
+
 
 
 在正式以SDK方式接入AGD Pro服务前，您需要对集成后业务进行自测，自测完成后再提交给华为验收。

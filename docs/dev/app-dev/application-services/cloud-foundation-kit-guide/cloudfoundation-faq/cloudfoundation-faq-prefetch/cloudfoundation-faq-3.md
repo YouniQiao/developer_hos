@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "运行应用时提示“appid **** is not in white list, to skip”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-3
+format: md
 ---
+
 
 **问题现象**
 

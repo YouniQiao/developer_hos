@@ -1,7 +1,9 @@
 ---
 title: "视图容器"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-view-container
+format: md
 ---
+
 
 * **[movable-area](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-area)**
 * **[movable-view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-view)**

@@ -1,7 +1,9 @@
 ---
 title: "不同包类型的源码混淆建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-practice
+format: md
 ---
+
 
 不同包类型的用途和构建流程存在差异，对不同包类型使用混淆时，开发者需要注意不同事项。本文针对[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)、[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)和[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)三种包类型，分别提供混淆建议，帮助开发者高效使用混淆。简要对应关系如下：**HAP**为应用安装与运行的功能模块，适用于**应用端功能开发与发布**；**HAR**为静态共享包，适用于**组件化、能力沉淀与多模块/多工程复用**；**HSP**为应用内动态共享包，适用于**同一应用内多模块在运行时共享代码与资源**。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "停止策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-stop-guard-strategy
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -33,8 +35,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [stopGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#stopguardstrategy)(strategyName: string): Promise<void> | 根据策略名称，停止其管控策略。 |
-| [onStop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-timeguardextensionability#onstop)(strategyName: string): Promise<void> | 在策略结束时执行特定逻辑。 |
+| [stopGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#stopguardstrategy)(strategyName: string): Promise\<void\> | 根据策略名称，停止其管控策略。 |
+| [onStop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-timeguardextensionability#onstop)(strategyName: string): Promise\<void\> | 在策略结束时执行特定逻辑。 |
 
 ## 开发前提
 

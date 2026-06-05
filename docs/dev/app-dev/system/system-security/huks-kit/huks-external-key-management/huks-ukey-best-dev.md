@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Ukey流程示例指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-best-dev
+format: md
 ---
+
 
 ## 开发模式选择
 

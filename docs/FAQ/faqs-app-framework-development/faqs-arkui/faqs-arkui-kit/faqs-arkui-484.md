@@ -4,6 +4,7 @@ title: "如何实现当长按触发成功后，移出组件取消当前长按手
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-484
 ---
 
+
 当前长按手势的规格为：触发成功后不会判断移动是否超出组件范围。如需实现该场景，可以结合onTouch判断手指位置是否在组件内自定义长按手势的业务逻辑是否执行。示例如下：
 
 ```

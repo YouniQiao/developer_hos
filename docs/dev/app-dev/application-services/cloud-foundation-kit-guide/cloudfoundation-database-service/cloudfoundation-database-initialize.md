@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "初始化数据库访问"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-initialize
+format: md
 ---
+
 
 ## 约束与限制
 

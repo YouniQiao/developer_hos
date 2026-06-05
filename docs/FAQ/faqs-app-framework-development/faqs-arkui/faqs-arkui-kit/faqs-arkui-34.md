@@ -1,7 +1,9 @@
 ---
 title: "如何监听当前屏幕的横竖屏状态？如何实现页面跟随屏幕横竖屏自动旋转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-34
+format: md
 ---
+
 
 应用可以使用 display.on 监听屏幕状态的变化。
 

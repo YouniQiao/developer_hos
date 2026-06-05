@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自适应VRS"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-adaptive-vrs
+format: md
 ---
+
 
 XEngine Kit提供自适应VRS功能，其通过合理分配画面的计算资源，视觉无损降低渲染频次，使不同的渲染图像使用不同的渲染速率，能够有效提高渲染性能。
 

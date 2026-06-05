@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API实现跨语言交互开发流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process
+format: md
 ---
+
 
 使用Node-API实现跨语言交互，首先需要按照Node-API的机制实现模块的注册和加载等相关动作。
 

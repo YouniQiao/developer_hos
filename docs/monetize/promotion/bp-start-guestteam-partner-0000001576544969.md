@@ -2,7 +2,9 @@
 title: "直客协作者账户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guestteam-partner-0000001576544969
+format: md
 ---
+
 # 直客协作者账户
 
 ## 前提条件

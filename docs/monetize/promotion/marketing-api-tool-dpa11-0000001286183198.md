@@ -2,7 +2,9 @@
 title: "批量更新商品价格"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa11-0000001286183198
+format: md
 ---
+
 # 批量更新商品价格
 
 您通过本接口可以批量更新商品价格。

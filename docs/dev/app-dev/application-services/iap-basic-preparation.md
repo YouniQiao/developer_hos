@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基本准备工作"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-basic-preparation
+format: md
 ---
+
 
 * **[开通商户服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service)**
 * **[创建项目和应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-create-project-and-application)**

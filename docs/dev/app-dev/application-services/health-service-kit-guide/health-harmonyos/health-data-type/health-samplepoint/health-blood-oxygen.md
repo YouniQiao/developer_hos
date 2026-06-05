@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "血氧"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-blood-oxygen
+format: md
 ---
+
 
 жӯӨж•°жҚ®и®°еҪ•з”ЁжҲ·еңЁжҹҗж—¶еҲ»зҡ„иЎҖж°§пјҢжҜҸдёҖжқЎж•°жҚ®йғҪд»ЈиЎЁиҜҘж—¶еҲ»зҡ„иЎҖж°§еҖјгҖӮжҜҸжқЎж•°жҚ®дёҚиғҪеӯҳеңЁдәӨеҸүпјҢеҗҺдёҖжқЎж•°жҚ®зҡ„ејҖе§Ӣж—¶й—ҙеә”иҜҘеӨ§дәҺжҲ–зӯүдәҺеүҚдёҖжқЎж•°жҚ®зҡ„з»“жқҹж—¶й—ҙгҖӮ
 

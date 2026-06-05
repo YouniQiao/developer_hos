@@ -1,7 +1,9 @@
 ---
 title: "debug启动调试"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # debug启动调试
 

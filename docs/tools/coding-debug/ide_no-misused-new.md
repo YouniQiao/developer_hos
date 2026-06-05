@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-misused-new"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-misused-new
 

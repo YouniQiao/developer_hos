@@ -2,7 +2,9 @@
 title: "JS（小游戏）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-minigame-0000002393266905
 has_merged_cells: true
+format: md
 ---
+
 
 游戏多媒体JS SDK提供了实时信令、语音消息和语音转文本功能，支持Cocos Creator、Laya等主流游戏引擎。
 

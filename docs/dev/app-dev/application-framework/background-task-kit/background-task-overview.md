@@ -1,7 +1,9 @@
 ---
 title: "Background Tasks Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview
+format: md
 ---
+
 
 ## 功能介绍
 

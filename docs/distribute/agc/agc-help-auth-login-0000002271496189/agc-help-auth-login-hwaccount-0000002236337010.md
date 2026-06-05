@@ -1,7 +1,9 @@
 ---
 title: "华为账号"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-login-hwaccount-0000002236337010
+format: md
 ---
+
 
 您可以在应用中集成华为账号认证方式，让您的用户可以使用自己的华为账号进行AppGallery Connect身份验证。
 

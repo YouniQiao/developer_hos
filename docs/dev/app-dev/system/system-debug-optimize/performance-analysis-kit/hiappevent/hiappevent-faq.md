@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "HiAppEvent常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-faq
+format: md
 ---
+
 
 ## 查不到已通过HiAppEvent订阅的事件内容
 

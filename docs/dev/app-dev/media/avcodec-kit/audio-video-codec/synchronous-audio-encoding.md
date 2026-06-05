@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音频编码同步模式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-audio-encoding
+format: md
 ---
+
 
 从API version 20开始，支持音频编码同步模式。
 

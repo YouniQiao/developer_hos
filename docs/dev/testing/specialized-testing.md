@@ -1,7 +1,9 @@
 ---
 title: "专项测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing
+format: md
 ---
+
 
 ![](./img/2f811444.png "点击放大")
 

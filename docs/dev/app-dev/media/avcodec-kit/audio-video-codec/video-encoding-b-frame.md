@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "B帧视频编码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-b-frame
+format: md
 ---
+
 
 从API version 20开始，支持B帧视频编码。
 

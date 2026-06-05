@@ -4,6 +4,7 @@ title: "hdc无法安装包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-72
 ---
 
+
 **问题现象**
 
 1. hdc list targets只显示一台手机连接，但执行hdc install安装命令还是报错：[Fail]ExecuteCommand need connect-key? please confirm a device by help info。

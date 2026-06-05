@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "（可选）特定场景配置操作"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-product-configuration
+format: md
 ---
+
 
 如涉及以下场景，需提前完成相关产品的开通或配置操作。如不涉及，请直接跳转[下一章节](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-agc)。
 

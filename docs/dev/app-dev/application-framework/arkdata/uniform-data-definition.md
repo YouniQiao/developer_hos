@@ -1,7 +1,9 @@
 ---
 title: "标准化数据定义"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-definition
+format: md
 ---
+
 
 * **[标准化数据定义概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unified-data-definition-overview)**
 * **[标准化数据类型 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-descriptors)**

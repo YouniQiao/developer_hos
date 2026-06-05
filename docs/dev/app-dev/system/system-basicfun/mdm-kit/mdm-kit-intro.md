@@ -1,7 +1,9 @@
 ---
 title: "MDM Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-intro
+format: md
 ---
+
 
 ## 业务介绍
 

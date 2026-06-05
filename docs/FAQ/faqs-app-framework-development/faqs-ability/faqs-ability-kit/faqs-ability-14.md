@@ -1,7 +1,9 @@
 ---
 title: "如何获取当前应用程序缓存目录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-14
+format: md
 ---
+
 
 使用Context.cacheDir获取应用程序的缓存目录。代码示例如下：
 

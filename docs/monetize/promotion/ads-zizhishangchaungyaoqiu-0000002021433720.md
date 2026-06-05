@@ -2,7 +2,9 @@
 title: "资质文件规范性要求"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-zizhishangchaungyaoqiu-0000002021433720
+format: md
 ---
+
 # 资质文件规范性要求
 
 ## 《营业执照》上传要求解读

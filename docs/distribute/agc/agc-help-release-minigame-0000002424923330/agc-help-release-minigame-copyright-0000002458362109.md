@@ -1,7 +1,9 @@
 ---
 title: "上传版权材料"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-copyright-0000002458362109
+format: md
 ---
+
 
 根据法律法规，要求小游戏上架时提供对应的小游戏版权材料。
 

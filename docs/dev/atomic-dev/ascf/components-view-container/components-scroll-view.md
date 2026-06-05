@@ -1,7 +1,9 @@
 ---
 title: "scroll-view"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-scroll-view
+format: md
 ---
+
 
 可滚动视图区域，相当于web中设置了overflow属性的div元素。
 

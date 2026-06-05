@@ -1,7 +1,9 @@
 ---
 title: "在多模块工程中，如何获取har/hsp中的rawfile资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-14
+format: md
 ---
+
 
 har模块中的资源可以通过[@ohos.resourceManager (资源管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)获取，hsp中的资源可以通过application的[application.createModuleContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-application#applicationcreatemodulecontext)接口创建相应模块的context，再通过resourceManager获取。
 

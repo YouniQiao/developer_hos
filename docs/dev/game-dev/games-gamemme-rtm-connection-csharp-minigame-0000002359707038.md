@@ -1,7 +1,9 @@
 ---
 title: "监听RTM连接状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rtm-connection-csharp-minigame-0000002359707038
+format: md
 ---
+
 
 当玩家登录、登出或者网络连接发生变化时，RTM连接状态会发生改变。因此，为了保证消息收发顺畅，需实时监听RTM的连接状态变化，确保RTM处于连接状态。
 

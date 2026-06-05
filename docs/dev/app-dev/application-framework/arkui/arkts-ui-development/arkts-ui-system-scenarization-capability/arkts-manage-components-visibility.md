@@ -1,7 +1,9 @@
 ---
 title: "感知组件可见性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-manage-components-visibility
+format: md
 ---
+
 
 ## 概述
 

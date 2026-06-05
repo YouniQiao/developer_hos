@@ -2,7 +2,9 @@
 title: "前置要求"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_prerequisite-0000001354663501
+format: md
 ---
+
 
 
 AGD Pro服务SDK支持信息流、视频流、Banner、应用榜单、开屏、插屏、激励视频等多种样式；媒体可在不同场景下选择合适的广告类型进行展示。

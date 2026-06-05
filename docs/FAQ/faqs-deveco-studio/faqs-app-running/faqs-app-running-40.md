@@ -4,6 +4,7 @@ title: "设备管理获取模板数据提示网络异常，下载模拟器镜像
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-40
 ---
 
+
 **问题现象**
 
 * **场景一**：设备管理获取模板数据失败，错误提示：“Network request failed. Verify your network connection and Emulator is available in your country/region.”

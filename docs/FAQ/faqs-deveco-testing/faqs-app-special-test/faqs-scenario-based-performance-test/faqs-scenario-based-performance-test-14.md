@@ -4,6 +4,7 @@ title: "时延类指标出现负数是什么原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-14
 ---
 
+
 **响应时延**
 
 -2：起始点错误

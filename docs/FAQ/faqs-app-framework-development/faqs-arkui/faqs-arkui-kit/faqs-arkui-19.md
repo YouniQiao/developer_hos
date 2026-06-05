@@ -4,6 +4,7 @@ title: "如何解决两层Tabs出现滑动冲突的情况"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-19
 ---
 
+
 通过给外层Tabs设置scrollable(false)实现两层Tabs嵌套底部导航+顶部导航的组合，参考代码如下：
 
 ```

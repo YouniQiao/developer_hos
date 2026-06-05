@@ -2,7 +2,9 @@
 title: 窗口框架
 sidebar_label: 窗口框架
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/window-0000002321868010
+format: md
 ---
+
 # 窗口框架
 
 窗口是系统中各个应用的载体，用户通过窗口对应用内容进行查看和交互。在电脑上，窗口可作为一个单独对象进行查看和操作，通常支持打开、关闭、调整尺寸，支持最小化、最大化和分屏显示。

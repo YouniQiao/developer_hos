@@ -2,7 +2,9 @@
 title: "业务介绍"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_overview-0000001237823225
+format: md
 ---
+
 
 
 #### 业务概述

@@ -1,7 +1,9 @@
 ---
 title: "Relation概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-relation-overview-0000002498501224
+format: md
 ---
+
 
 Relation是用于表示实体与目标的关系，在PGD中可通过该模块自定义关系。
 

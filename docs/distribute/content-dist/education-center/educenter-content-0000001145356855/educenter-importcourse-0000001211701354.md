@@ -2,7 +2,9 @@
 title: "导入课程信息管理"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-importcourse-0000001211701354
+format: md
 ---
+
 
 # 导入课程信息管理
 

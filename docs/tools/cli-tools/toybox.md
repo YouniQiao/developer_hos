@@ -1,7 +1,9 @@
 ---
 title: "toybox"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # toybox
 

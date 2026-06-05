@@ -1,7 +1,9 @@
 ---
 title: "发布指引"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-guide-0000002372998230
+format: md
 ---
+
 
 为了给玩家提供良好、安全、可靠的游戏体验，在游戏正式上架到华为应用市场前，华为工作人员会审核提交的游戏信息。
 

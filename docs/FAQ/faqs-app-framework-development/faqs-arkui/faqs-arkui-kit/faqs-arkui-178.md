@@ -4,6 +4,7 @@ title: "如何实现上下切换的页面间跳转动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-178
 ---
 
+
 使用pageTransition函数实现页面转场效果。通过PageTransitionEnter和PageTransitionExit指定页面进入和退出的动画效果。将slide属性设置为SlideEffect.Bottom，页面入场时从下方滑入，出场时滑出到下方，从而实现上下切换效果。参考代码如下：
 
 ```

@@ -1,7 +1,9 @@
 ---
 title: "公共错误码"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-commonerror-0000002553016832
+format: md
 ---
+
 
 | 错误码（errorCode） | 错误描述（errorMsg） |
 | --- | --- |

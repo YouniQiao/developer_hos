@@ -1,7 +1,9 @@
 ---
 title: "填写游戏审核信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-review-0000002458362113
+format: md
 ---
+
 
 若小游戏的部分功能限制玩家通过身份验证后才能使用，例如，登录权限、在线购买，请为上架审核员提供测试账号，以便审核人员使用测试账号测试受限功能。
 

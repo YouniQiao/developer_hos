@@ -1,7 +1,9 @@
 ---
 title: "注册模拟器调试凭据"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-credential-0000002415343501
+format: md
 ---
+
 
 应用/元服务在模拟器中启动时，该模拟器下会生成调试凭据并输出到日志，您需要将生成的调试凭据注册到AGC云侧，才可在模拟器中调试应用/元服务。
 

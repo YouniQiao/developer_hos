@@ -1,7 +1,9 @@
 ---
 title: "创建元服务工程"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-create-project
+format: md
 ---
+
 
 1. 若首次打开**DevEco Studio**，请选择**Create Project**开始创建一个新工程。如果已经打开了一个工程，请在菜单栏选择**File** &gt; **New** &gt; **Create Project**来创建一个新工程。选择**Atomic Service**元服务开发，选择模板，单击**Next**进行下一步配置。
 

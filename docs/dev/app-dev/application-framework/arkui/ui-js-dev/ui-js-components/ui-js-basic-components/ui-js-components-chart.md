@@ -1,7 +1,9 @@
 ---
 title: "chart开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-chart
+format: md
 ---
+
 
 chart为图表组件，用于呈现线形图、柱状图和量规图界面。具体用法请参考[chart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-chart)。
 

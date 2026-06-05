@@ -1,7 +1,9 @@
 ---
 title: "快游戏开发者工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-developer-tool-0000002425133930
+format: md
 ---
+
 
 ## 如何使用工具自带的adb
 

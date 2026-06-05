@@ -1,7 +1,9 @@
 ---
 title: "个人数据处理说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-personal-data-0000002349021728
+format: md
 ---
+
 
 此章节针对华为作为最终用户数据处理者，您作为最终用户数据控制者的数据处理进行说明，包括：
 

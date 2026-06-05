@@ -1,7 +1,9 @@
 ---
 title: "NDK工程构建概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-overview
+format: md
 ---
+
 
 HarmonyOS NDK默认使用CMake作为构建系统，随包提供了符合HarmonyOS工具链的基础配置文件[hmos.toolchain.cmake](#hmostoolchaincmake简介)，用于预定义CMake变量来简化开发者配置。
 

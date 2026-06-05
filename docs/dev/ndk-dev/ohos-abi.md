@@ -1,7 +1,9 @@
 ---
 title: "HarmonyOS ABI"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ohos-abi
+format: md
 ---
+
 
 HarmonyOS系统支持丰富的设备形态，支持多种架构指令集，支持多种操作系统内核；HarmonyOS遵循“OHOS”ABI定义，保持与社区ABI的一致性。
 

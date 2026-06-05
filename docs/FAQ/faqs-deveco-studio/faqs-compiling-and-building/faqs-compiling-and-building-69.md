@@ -4,6 +4,7 @@ title: "如何解决编译报错“Property xxx does not exist on type 'typeof B
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-69
 ---
 
+
 **问题场景一：**
 
 编译时未出现异常，但编译构建失败，提示“Property xxx does not exist on type 'typeof BuildProfile'”，使用了自定义参数BuildProfile。

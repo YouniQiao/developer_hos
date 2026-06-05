@@ -1,7 +1,9 @@
 ---
 title: "打印表达式"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 打印表达式
 

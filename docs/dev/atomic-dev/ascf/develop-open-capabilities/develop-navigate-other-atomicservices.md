@@ -1,7 +1,9 @@
 ---
 title: "跳转"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-navigate-other-atomicservices
+format: md
 ---
+
 
 ## 跳转到元服务
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-non-null-assertion"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-non-null-assertion
 

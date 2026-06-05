@@ -2,7 +2,9 @@
 title: "游戏首发"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-first-applyfor-0000001239502317
+format: md
 ---
+
 
 # 游戏首发
 

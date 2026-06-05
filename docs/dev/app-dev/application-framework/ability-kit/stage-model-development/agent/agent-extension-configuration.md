@@ -1,7 +1,9 @@
 ---
 title: "AgentExtensionAbility配置文件说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agent-extension-configuration
+format: md
 ---
+
 
 [AgentCard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-agentcard)作为Agent的“名片”，主要用于描述Agent的能力。AgentCard的详细配置信息需要通过agent\_config.json配置文件来承载。
 

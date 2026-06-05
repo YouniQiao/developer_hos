@@ -1,7 +1,9 @@
 ---
 title: "版本更新说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-releasenotes-0000002395350361
+format: md
 ---
+
 
 ![](./img/bcbf7cf8.png)
 

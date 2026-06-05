@@ -4,6 +4,7 @@ title: "如何配置oh-package.json5动态依赖"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-48
 ---
 
+
 oh-package.json5文件中：
 
 * dependencies（生产依赖）：声明生产依赖，即代码中需要导入的HarmonyOS三方库，用于编译和运行阶段。

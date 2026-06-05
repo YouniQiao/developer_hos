@@ -4,6 +4,7 @@ title: "如何实现字体渐变效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-385
 ---
 
+
 **问题现象**
 
 当通过linearGradient设置渐变时，默认是背景色的渐变，而非文字渐变的效果。应该如何实现文字渐变？

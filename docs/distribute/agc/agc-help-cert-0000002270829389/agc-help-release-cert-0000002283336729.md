@@ -1,7 +1,9 @@
 ---
 title: "申请发布证书"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-cert-0000002283336729
+format: md
 ---
+
 
 在发布阶段，您需要使用发布证书和发布Profile重新手动签名后，才能编译构建正式发布包。请参考本文档申请并下载发布证书，手动签名的完整操作请参考[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)。
 

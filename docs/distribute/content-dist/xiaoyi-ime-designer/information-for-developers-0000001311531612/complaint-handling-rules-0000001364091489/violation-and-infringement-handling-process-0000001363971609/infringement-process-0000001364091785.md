@@ -2,7 +2,9 @@
 title: "侵权处理流程"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/infringement-process-0000001364091785
+format: md
 ---
+
 
 # 侵权处理流程
 

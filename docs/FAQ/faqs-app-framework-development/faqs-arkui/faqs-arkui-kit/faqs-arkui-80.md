@@ -4,6 +4,7 @@ title: "如何一键清空TextInput、TextArea组件内容"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-80
 ---
 
+
 通过将状态变量绑定到TextInput或TextArea的text属性，点击清空按钮时更新状态变量为空字符串即可实现内容清除。参考代码如下：
 
 ```

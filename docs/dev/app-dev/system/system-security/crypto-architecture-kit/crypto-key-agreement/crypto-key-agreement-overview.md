@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "密钥协商介绍及算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-overview
+format: md
 ---
+
 
 为了避免恶意第三方获取到保密信息，密钥本身是不可以直接在设备间传输的。一般情况下，会采取密钥协商的方式，安全地在双方（或多方）间共享密钥。密钥协商只会传输密钥的公钥部分，私钥仍存留在设备内，以保护数据的安全性和机密性。
 

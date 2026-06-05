@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通行密钥身份认证（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-passkey-cpp
+format: md
 ---
+
 
 ## 接口说明
 

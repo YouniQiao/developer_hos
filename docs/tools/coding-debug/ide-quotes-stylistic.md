@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/quotes"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/quotes
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开放匿名设备标识服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/oaid-service
+format: md
 ---
+
 
 ## 获取OAID信息
 
@@ -41,8 +43,8 @@ OAID会在下述场景中发生变化：
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getOAID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-oaid#identifiergetoaid)(): Promise<string> | 获取OAID，通过Promise异步返回结果。 |
-| [getOAID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-oaid#identifiergetoaid-1)(callback: AsyncCallback<string>): void | 获取OAID，通过Callback异步回调返回值。 |
+| [getOAID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-oaid#identifiergetoaid)(): Promise\<string\> | 获取OAID，通过Promise异步返回结果。 |
+| [getOAID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-oaid#identifiergetoaid-1)(callback: AsyncCallback\<string\>): void | 获取OAID，通过Callback异步回调返回值。 |
 
 ![](./img/3ea41250.png)
 

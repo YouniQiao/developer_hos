@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-personal-data
+format: md
 ---
+
 
 此文档针对华为作为最终用户数据处理者，开发者作为最终用户数据控制者的数据处理进行说明，包括：
 

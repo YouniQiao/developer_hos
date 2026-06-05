@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Beacon（蓝牙信标设备）方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-beacon-scheme
+format: md
 ---
+
 
 根据与华为方锁定的场景选择的Beacon（蓝牙信标设备）方案对应步骤详情参考：
 

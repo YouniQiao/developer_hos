@@ -1,7 +1,9 @@
 ---
 title: "添加图片区域"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-image
+format: md
 ---
+
 
 添加图片区域通常用[image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-image)组件来实现，使用的方法和[text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-text)组件类似。
 

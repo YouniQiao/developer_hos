@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "穿戴设备传感器获取"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device_sensor
+format: md
 ---
+
 
 ![](./img/74470867.png)
 

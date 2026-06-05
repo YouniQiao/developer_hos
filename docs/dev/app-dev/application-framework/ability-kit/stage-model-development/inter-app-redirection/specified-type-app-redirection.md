@@ -1,7 +1,9 @@
 ---
 title: "拉起指定类型的应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specified-type-app-redirection
+format: md
 ---
+
 
 * **[拉起指定类型的应用概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-intent-panel)**
 * **[拉起导航类应用（startAbilityByType）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-navigation-apps)**

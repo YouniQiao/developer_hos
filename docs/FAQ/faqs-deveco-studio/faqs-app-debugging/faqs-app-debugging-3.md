@@ -4,6 +4,7 @@ title: "真机设备连接后，在DevEco Studio中无法识别设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-3
 ---
 
+
 **问题现象**
 
 调试运行时，安装HAP失败并提示“设备未找到或未连接”；或DevEco Studio设备列表显示“No device”（未识别设备）。

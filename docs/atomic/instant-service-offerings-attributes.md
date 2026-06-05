@@ -1,7 +1,9 @@
 ---
 title: "商品属性说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-attributes
+format: md
 ---
+
 
 商品属性是描述商品特征的核心信息，其结构由商品所属类目决定，不同类目对应不同的属性集合。开发者在创建更新商品时，仅可传入当前类目下定义的合法属性。商品属性分为公共属性和类目特有属性：公共属性适用于所有类目；类目特有属性则针对特定类目定义。此外，属性还分为商品级属性和SKU级属性，分别用于描述商品整体信息和具体规格（SKU）的差异化信息。开发者在调用接口时，需依据类目属性定义准确传入对应属性值，确保数据合规与展示正确。
 

@@ -4,6 +4,7 @@ title: "如何控制CustomDialog显示层级"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-325
 ---
 
+
 **问题现象**
 
 在A页面弹出一个CustomDialog，若Dialog未关闭时从A页面跳转到B页面，此时会发现在A页面弹出的Dialog会出现在B页面的层级上方。请问有什么方式可以让页面B盖住Dialog？

@@ -2,7 +2,9 @@
 title: 设计原则
 sidebar_label: 设计原则
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/animation-design-principles-0000001750237392
+format: md
 ---
+
 # 设计原则
 
 在设计动效过程中，要清楚地理解动效在系统中承载的作用，动效能体现页面的流畅过渡、对象的明确提示、元素的层级关系、产品的品牌印象等。动效要始终围绕操作符合用户心理预期，物体运动符合真实世界，元素表现形态凸显产品的品牌与调性。

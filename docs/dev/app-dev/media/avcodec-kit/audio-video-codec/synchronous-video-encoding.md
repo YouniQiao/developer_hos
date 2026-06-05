@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "视频编码同步模式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-video-encoding
+format: md
 ---
+
 
 从API version 20开始，支持视频编码同步模式。
 

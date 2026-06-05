@@ -2,7 +2,9 @@
 title: "接入插屏广告"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-insert-screen-0000001347773930
+format: md
 ---
+
 
 
 #### 创建AdsContext对象

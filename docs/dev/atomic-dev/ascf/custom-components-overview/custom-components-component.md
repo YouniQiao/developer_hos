@@ -1,7 +1,9 @@
 ---
 title: "Component"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-component
+format: md
 ---
+
 
 开发者可以调用Component指定自定义组件的属性、数据、方法、生命周期函数等。
 

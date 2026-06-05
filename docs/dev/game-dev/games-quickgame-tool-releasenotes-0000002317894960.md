@@ -1,7 +1,9 @@
 ---
 title: "版本更新说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-releasenotes-0000002317894960
+format: md
 ---
+
 
 ## Windows
 

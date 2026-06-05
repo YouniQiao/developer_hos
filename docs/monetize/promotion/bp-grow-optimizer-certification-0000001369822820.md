@@ -2,7 +2,9 @@
 title: "增长优化师认证"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-grow-optimizer-certification-0000001369822820
+format: md
 ---
+
 # 增长优化师认证
 
 ![](./img/bf7953e8f69d.jpg)

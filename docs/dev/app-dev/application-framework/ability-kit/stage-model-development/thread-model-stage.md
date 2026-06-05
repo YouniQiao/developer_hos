@@ -1,7 +1,9 @@
 ---
 title: "线程模型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thread-model-stage
+format: md
 ---
+
 
 线程是操作系统进行运算调度的基本单位，是[进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage)中的执行流，共享进程的资源。一个进程可以包含多个线程。
 
@@ -29,7 +31,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thre
 
 * TaskPool自行管理线程数量，其生命周期由TaskPool统一管理。[Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)线程的生命周期由开发者自行维护。
 * 同一线程中存在多个组件，例如UIAbility组件和UI组件都存在于主线程中。在Stage模型中目前主要使用[EventHub](#使用eventhub进行线程内通信)进行数据通信。
-* 执行hdc shell命令，进入设备的shell命令行。在shell命令行中，执行ps -p <pid> -T命令，可以查看指定应用进程的线程信息。其中，<pid>为需要指定的应用进程的[进程ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage)。
+* 执行hdc shell命令，进入设备的shell命令行。在shell命令行中，执行ps -p \<pid\> -T命令，可以查看指定应用进程的线程信息。其中，\<pid\>为需要指定的应用进程的[进程ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage)。
 
 ## 使用EventHub进行线程内通信
 

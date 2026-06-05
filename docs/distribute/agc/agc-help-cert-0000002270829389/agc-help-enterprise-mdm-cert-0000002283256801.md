@@ -1,7 +1,9 @@
 ---
 title: "申请企业MDM应用发布证书"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-mdm-cert-0000002283256801
+format: md
 ---
+
 
 MDM（Mobile Device Management，移动设备管理）是一种企业级的IT应用解决方案，用于管理并保护公司设备上的数据和应用程序。MDM可以通过集中管理、远程配置和监控来保障设备和数据的安全性和稳定性。它广泛应用于企业和政府机构，以确保员工和客户使用的设备和数据受到保护，实现企业高效管理、安全使用设备。
 

@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-crash-overview-0000002531131751
+format: md
 ---
+
 
 异常管理通过实时采集与分析应用运行指标，实现性能异常的实时发现、即时告警和关键信息呈现，帮助开发者及时捕获崩溃、报错、无响应等异常事件（当前支持监测CPP CRASH、JS ERROR、OOM、PROCESS KILL、APP FREEZE、RESOURCE LEAK六大指标，指标释义见下表），缩短问题识别与排查周期，保障应用稳定运行。
 

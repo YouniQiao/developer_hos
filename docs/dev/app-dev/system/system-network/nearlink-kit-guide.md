@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "NearLink Kit（星闪服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-kit-guide
+format: md
 ---
+
 
 * **[NearLink Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-introduction)**
 * **[NearLink Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-terminology)**

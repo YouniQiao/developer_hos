@@ -4,6 +4,7 @@ title: "如何强制重启设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-30
 ---
 
+
 可以通过以下几种方法重启设备。
 
 * 方式1：长按电源键，然后点击重启。

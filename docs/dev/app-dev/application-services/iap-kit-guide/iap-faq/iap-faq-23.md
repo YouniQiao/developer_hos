@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自动续期订阅商品，A切换B且立即生效时，新订阅有效期的组成"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-23
+format: md
 ---
+
 
 订阅在发生切换且立即生效时，原订阅的剩余权益价值会自动按照比例，折算并叠加至新订阅。所以，切换后订阅有效期的组成 = 原订阅剩余权益的折算时间 + 新订阅原本的周期时间。
 

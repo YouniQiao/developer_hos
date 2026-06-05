@@ -1,7 +1,9 @@
 ---
 title: "使用自己的引擎概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-introduction-0000002256254902
+format: md
 ---
+
 
 对于使用自研引擎的游戏，适配HarmonyOS 5.0及以上系统需搭建HarmonyOS工程框架、适配核心模块（包括渲染、窗口管理和文件系统等）、适配三方库。若游戏其他模块（如音频、视频）涉及平台层依赖，也需进行相应适配。
 

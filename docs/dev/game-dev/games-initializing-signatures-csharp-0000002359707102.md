@@ -1,7 +1,9 @@
 ---
 title: "C#"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-initializing-signatures-csharp-0000002359707102
+format: md
 ---
+
 
 为了提升服务的安全性，防止非法用户冒用合法的openId接入游戏多媒体服务，游戏多媒体服务SDK支持通过验签的方式校验玩家身份。在您的服务端，您需要通过游戏ID、游戏密钥、玩家openId等信息计算出游戏签名，然后发送给游戏客户端。客户端在游戏多媒体SDK初始化时传入签名，并完成验签。
 

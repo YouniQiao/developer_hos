@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入“扫码直达”服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-directservice
+format: md
 ---
+
 
 ![](./img/b6026fc0.png)
 

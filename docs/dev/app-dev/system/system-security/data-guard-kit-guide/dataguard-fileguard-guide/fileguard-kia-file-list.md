@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置KIA文件列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-kia-file-list
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,8 +16,8 @@ Enterprise Data Guard Kit为应用提供设置KIA文件列表的能力，Harmony
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setKiaFilelist](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#setkiafilelist)(filelist: string, callback: AsyncCallback<void>): void | 使用Callback方式设置KIA文件列表。 |
-| [setKiaFilelist](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#setkiafilelist-1)(filelist: string): Promise<void> | 使用Promise方式设置KIA文件列表。 |
+| [setKiaFilelist](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#setkiafilelist)(filelist: string, callback: AsyncCallback\<void\>): void | 使用Callback方式设置KIA文件列表。 |
+| [setKiaFilelist](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#setkiafilelist-1)(filelist: string): Promise\<void\> | 使用Promise方式设置KIA文件列表。 |
 
 ## 开发步骤
 

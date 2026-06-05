@@ -1,7 +1,9 @@
 ---
 title: "svg开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-svg
+format: md
 ---
+
 
 * **[基础知识](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-overview)**
 * **[绘制图形](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-graphics)**

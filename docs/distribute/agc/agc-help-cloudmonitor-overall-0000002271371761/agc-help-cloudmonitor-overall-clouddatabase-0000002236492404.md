@@ -1,7 +1,9 @@
 ---
 title: "云数据库"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-overall-clouddatabase-0000002236492404
+format: md
 ---
+
 
 监控云数据库的使用情况，关键指标有查询、写入、删除、事务、安全规则命中数、连接数和订阅关系数。指标以今昨对比图、折线图、列表的形式来统计。
 

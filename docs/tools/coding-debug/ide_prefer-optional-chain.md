@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-optional-chain"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-optional-chain
 

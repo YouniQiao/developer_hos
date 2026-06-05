@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "数字版权保护(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-arkts-dev-guide
+format: md
 ---
+
 
 开发者可以调用DRM Kit的ArkTS接口实现DRM证书管理、DRM许可证管理、DRM节目授权、DRM节目解密等数字版权保护功能。
 

@@ -1,7 +1,9 @@
 ---
 title: "栅格布局"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-grid
+format: md
 ---
+
 
 栅格布局容器根节点，使用grid-row与grid-col进行栅格布局。API具体描述请参考[grid-container](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-grid-container)。
 

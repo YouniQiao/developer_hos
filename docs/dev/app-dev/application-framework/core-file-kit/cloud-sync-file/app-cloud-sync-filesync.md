@@ -1,7 +1,9 @@
 ---
 title: "端云文件协同适配指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-cloud-sync-filesync
+format: md
 ---
+
 
 为方便开发者使用端云文件协同的文件缓存、同步等能力，此篇指南介绍了环境准备、文件同步和文件缓存，并且在指南的最后提供了完整的应用工程示例。
 
@@ -34,10 +36,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-
 
 | 接口名 | 描述 | 注意事项 |
 | --- | --- | --- |
-| [FileSync.on(event: 'progress', callback: Callback<SyncProgress>): void](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#onprogress12) | 云盘同步对象添加同步过程事件监听 | 添加监听的对象和触发同步的对象不要混用 |
-| [FileSync.off(event: 'progress', callback?: Callback<SyncProgress>): void](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#offprogress12) | 云盘同步对象移除'progress'类型的指定callback回调 | 移除事件监听前，保证要先添加事件监听 |
-| [FileSync.start(): Promise<void>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#start12) | 异步方法启动云盘端云同步 | 添加监听的对象和触发同步的对象保持一致。  **使用约束**：该异步接口仅支持有限并发，调用频率过高会导致整机异常。 |
-| [FileSync.stop(): Promise<void>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#stop12) | 异步方法停止云盘端云同步 | 移除监听的对象和停止同步的对象保持一致 |
+| [FileSync.on(event: 'progress', callback: Callback\<SyncProgress\>): void](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#onprogress12) | 云盘同步对象添加同步过程事件监听 | 添加监听的对象和触发同步的对象不要混用 |
+| [FileSync.off(event: 'progress', callback?: Callback\<SyncProgress\>): void](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#offprogress12) | 云盘同步对象移除'progress'类型的指定callback回调 | 移除事件监听前，保证要先添加事件监听 |
+| [FileSync.start(): Promise\<void\>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#start12) | 异步方法启动云盘端云同步 | 添加监听的对象和触发同步的对象保持一致。  **使用约束**：该异步接口仅支持有限并发，调用频率过高会导致整机异常。 |
+| [FileSync.stop(): Promise\<void\>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#stop12) | 异步方法停止云盘端云同步 | 移除监听的对象和停止同步的对象保持一致 |
 
 ### 示例代码
 
@@ -122,10 +124,10 @@ struct Index {
 
 | 接口名 | 描述 | 注意事项 |
 | --- | --- | --- |
-| [CloudFileCache.on(event: 'progress', callback: Callback<DownloadProgress>): void](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#onprogress11) | 添加云盘文件缓存过程事件监听 | 添加监听的对象和触发缓存的对象不要混用 |
-| [CloudFileCache.off(event: 'progress', callback?: Callback<DownloadProgress>): void](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#offprogress11) | 云盘文件缓存对象移除'progress'类型的指定callback回调 | 移除事件监听前，保证要先添加事件监听 |
-| [CloudFileCache.start(uri: string): Promise<void>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#start11) | 异步方法启动云盘文件缓存 | 添加监听的对象和触发缓存的对象保持一致。  **使用约束**：该异步接口仅支持有限并发，最大并发数不超过10，调用超过此限制会导致整机异常。如果云盘文件缓存数超过10，建议使用批量下载接口[startbatch](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#startbatch20) |
-| [CloudFileCache.stop(uri: string, needClean?: boolean): Promise<void>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#stop11) | 异步方法停止云盘文件缓存 | 移除监听的对象和停止缓存的对象保持一致 |
+| [CloudFileCache.on(event: 'progress', callback: Callback\<DownloadProgress\>): void](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#onprogress11) | 添加云盘文件缓存过程事件监听 | 添加监听的对象和触发缓存的对象不要混用 |
+| [CloudFileCache.off(event: 'progress', callback?: Callback\<DownloadProgress\>): void](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#offprogress11) | 云盘文件缓存对象移除'progress'类型的指定callback回调 | 移除事件监听前，保证要先添加事件监听 |
+| [CloudFileCache.start(uri: string): Promise\<void\>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#start11) | 异步方法启动云盘文件缓存 | 添加监听的对象和触发缓存的对象保持一致。  **使用约束**：该异步接口仅支持有限并发，最大并发数不超过10，调用超过此限制会导致整机异常。如果云盘文件缓存数超过10，建议使用批量下载接口[startbatch](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#startbatch20) |
+| [CloudFileCache.stop(uri: string, needClean?: boolean): Promise\<void\>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#stop11) | 异步方法停止云盘文件缓存 | 移除监听的对象和停止缓存的对象保持一致 |
 | [CloudFileCache.cleanFileCache(uri: string): void](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-cloudsync.md#cleanfilecache20) | 同步方法删除文件缓存 | 不允许对正在上传的文件进行释放缓存 |
 
 ### 示例代码
@@ -221,8 +223,8 @@ struct Index {
 
 | 接口名 | 描述 | 注意事项 |
 | --- | --- | --- |
-| [setxattrSync(path: string, key: string, value: string): Promise<void>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-fs.md#fileiosetxattrsync12) | 设置文件或目录的扩展属性 | path为沙箱内文件或目录，沙箱根路径：/data/storage/el2/cloud，key需要以user.开头，且长度需小于256字节 |
-| [getxattrSync(path: string, key: string): Promise<string>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-fs.md#fileiogetxattrsync12) | 获取文件或目录的扩展属性 | path为沙箱内文件或目录，沙箱根路径：/data/storage/el2/cloud，key需要以user.开头，且长度需小于256字节 |
+| [setxattrSync(path: string, key: string, value: string): Promise\<void\>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-fs.md#fileiosetxattrsync12) | 设置文件或目录的扩展属性 | path为沙箱内文件或目录，沙箱根路径：/data/storage/el2/cloud，key需要以user.开头，且长度需小于256字节 |
+| [getxattrSync(path: string, key: string): Promise\<string\>](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-core-file-kit/js-apis-file-fs.md#fileiogetxattrsync12) | 获取文件或目录的扩展属性 | path为沙箱内文件或目录，沙箱根路径：/data/storage/el2/cloud，key需要以user.开头，且长度需小于256字节 |
 
 ### 示例代码
 

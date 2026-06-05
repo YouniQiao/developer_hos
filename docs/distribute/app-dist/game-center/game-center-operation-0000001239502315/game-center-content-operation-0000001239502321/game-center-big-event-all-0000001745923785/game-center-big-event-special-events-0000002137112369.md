@@ -2,7 +2,9 @@
 title: "特别活动"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-big-event-special-events-0000002137112369
+format: md
 ---
+
 
 # 特别活动
 

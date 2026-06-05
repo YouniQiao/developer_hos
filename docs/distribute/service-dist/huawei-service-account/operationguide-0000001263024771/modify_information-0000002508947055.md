@@ -2,7 +2,9 @@
 title: "修改服务号基本信息"
 displayed_sidebar: serviceDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/modify_information-0000002508947055
+format: md
 ---
+
 
 # 修改服务号基本信息
 

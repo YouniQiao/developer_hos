@@ -1,7 +1,9 @@
 ---
 title: "版本更新说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-releasenotes-0000002338511693
+format: md
 ---
+
 
 ## µ£Ćµ¢░ńēłµ£¼
 

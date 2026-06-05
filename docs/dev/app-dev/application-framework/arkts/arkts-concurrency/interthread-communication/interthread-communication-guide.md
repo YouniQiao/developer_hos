@@ -1,7 +1,9 @@
 ---
 title: "线程间通信场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-guide
+format: md
 ---
+
 
 * **[使用TaskPool执行独立的耗时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/independent-time-consuming-task)**
 * **[使用TaskPool执行多个耗时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-time-consuming-tasks)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-ai-overview
+format: md
 ---
+
 
 从6.0.0(20)版本开始，新增支持AI超帧能力。
 

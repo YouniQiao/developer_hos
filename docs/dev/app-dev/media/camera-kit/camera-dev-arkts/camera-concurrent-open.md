@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "多摄同开(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-concurrent-open
+format: md
 ---
+
 
 从API version 18开始支持多摄同开，即应用同时开启前置/后置相机进行预览和录像（前置/后置相机同时拍照功能待开放）。
 

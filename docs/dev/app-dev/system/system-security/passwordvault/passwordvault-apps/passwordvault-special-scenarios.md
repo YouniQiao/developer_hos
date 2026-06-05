@@ -1,7 +1,9 @@
 ---
 title: "系统可适配的场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-special-scenarios
+format: md
 ---
+
 
 考虑到实际场景的多样性，除了上述接入示例中的场景外，密码保险箱针对部分场景的非标准场景进行了适配，可支持使用邮箱、手机号作为用户名登录、注册的场景。
 

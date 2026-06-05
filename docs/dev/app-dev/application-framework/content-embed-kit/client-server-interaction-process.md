@@ -1,7 +1,9 @@
 ---
 title: "客户端和服务端交互流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/client-server-interaction-process
+format: md
 ---
+
 
 [OE](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oe)框架采用ExtensionAbility机制进行扩展，主要架构元素包括：[OE Extension](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oe-extension)和[OE SA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oe-sa)。外部依赖元素包括：[AMS](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#ams)和[BMS](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#bms)。
 

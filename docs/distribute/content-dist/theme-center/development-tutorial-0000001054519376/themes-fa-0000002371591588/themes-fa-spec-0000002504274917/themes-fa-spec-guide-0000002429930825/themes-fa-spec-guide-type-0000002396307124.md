@@ -2,7 +2,9 @@
 title: "分类定义"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-guide-type-0000002396307124
+format: md
 ---
+
 
 # 分类定义
 

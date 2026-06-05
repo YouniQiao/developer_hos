@@ -1,7 +1,9 @@
 ---
 title: "camera"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-camera
+format: md
 ---
+
 
 系统相机，支持拍摄、录像功能。
 

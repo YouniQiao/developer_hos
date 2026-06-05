@@ -1,7 +1,9 @@
 ---
 title: "配置代理"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 配置代理
 

@@ -2,7 +2,9 @@
 title: "单卡-大卡"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-preview-overview2-0000002429826821
+format: md
 ---
+
 
 # 单卡-大卡
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "未成年人模式开启后USB断连如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-13
+format: md
 ---
+
 
 开发者可以进入设置-系统-开发者选项，点击USB调试开关，会校验健康使用设备密码，校验成功后可解除开发者调试模式限制。
 

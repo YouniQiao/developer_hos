@@ -1,7 +1,9 @@
 ---
 title: "数据对比"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-comparison-0000002286788028
+format: md
 ---
+
 
 在游戏开发过程中，通常我们需要不断优化代码，或快速定位游戏性能异常等问题。因此，游戏性能调优服务提供了游戏性能数据对比功能，您可以在云端通过对比查看多个测试报告，更加直观地了解游戏代码优化前后及应用在不同设备上的性能差异，或者根据异常性能数据快速定位问题。当然，您还可以通过与竞品游戏进行数据对比，以了解性能差异与优化方向。
 

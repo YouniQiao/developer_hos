@@ -1,7 +1,9 @@
 ---
 title: "服务管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-console-servicemanagement-0000002361510560
+format: md
 ---
+
 
 在服务管理页面，联机对战提供了当前服务状态展示、服务关闭及接入安全加固开启/关闭等功能。
 

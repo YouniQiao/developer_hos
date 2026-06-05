@@ -4,6 +4,7 @@ title: "应用使用API如何在不同系统版本设备上做兼容性保护判
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-18
 ---
 
+
 **问题描述**
 
 例如，应用某个特性使用了6.0.0(20)版本的API，那么在低版本设备（如5.0.0(17)版本）上如何做兼容性保护？

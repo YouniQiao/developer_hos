@@ -1,7 +1,9 @@
 ---
 title: "生命周期"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-lifecycle
+format: md
 ---
+
 
 ## 应用生命周期
 

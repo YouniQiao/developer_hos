@@ -4,6 +4,7 @@ title: "通用属性width是否支持设置变量"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-191
 ---
 
+
 通用属性width支持设置变量。
 
 ```

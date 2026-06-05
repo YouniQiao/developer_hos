@@ -4,6 +4,7 @@ title: "如何修改代码工程所支持的C++语言版本"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-9
 ---
 
+
 **问题详情**
 
 如何修改C++语言版本？当前支持的C++标准有哪些？
@@ -26,7 +27,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
   + 在CMakelists.txt文件中设置版本。
 
-    set(NATIVERENDER\_ROOT\_PATH ${CMAKE\_CURRENT\_SOURCE\_DIR})
+    set(NATIVERENDER\_ROOT\_PATH $\{CMAKE\_CURRENT\_SOURCE\_DIR\})
 
     # 添加以下行
 

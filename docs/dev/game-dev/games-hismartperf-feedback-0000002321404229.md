@@ -1,7 +1,9 @@
 ---
 title: "问题反馈"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-feedback-0000002321404229
+format: md
 ---
+
 
 在使用游戏性能调优工具过程中遇到问题，您可以直接在工具中反馈问题或者提出对工具的建议。
 

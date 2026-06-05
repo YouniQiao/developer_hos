@@ -1,7 +1,9 @@
 ---
 title: "加入队伍"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-joingroup-csharp-0000002361510660
+format: md
 ---
+
 
 当队伍成功创建后，其他玩家可以从队长那里获得队伍ID，然后加入到该队伍中并参与游戏。
 

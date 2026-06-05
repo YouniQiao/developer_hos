@@ -1,7 +1,9 @@
 ---
 title: "C#（Native）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-playlocalaudioclip-csharp-native-0000002359547166
+format: md
 ---
+
 
 ## 前提条件
 

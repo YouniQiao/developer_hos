@@ -4,6 +4,7 @@ title: "Profiler分析任务录制失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-1
 ---
 
+
 **问题现象**
 
 单击Profiler深度分析任务的启动录制按钮后，录制失败。

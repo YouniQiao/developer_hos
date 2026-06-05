@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义界面扫码同时调用本地图片识码时，应用概率性自动退出"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-18
+format: md
 ---
+
 
 **问题现象**
 

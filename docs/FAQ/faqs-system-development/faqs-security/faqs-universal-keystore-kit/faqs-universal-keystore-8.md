@@ -4,6 +4,7 @@ title: "如何使用用户自定义的PIN码（6到16位）进行密钥解锁"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-universal-keystore-8
 ---
 
+
 支持该能力，使用PIN时需将HUKS\_TAG\_USER\_AUTH\_TYPE属性设置为HUKS\_USER\_AUTH\_TYPE\_PIN。
 
 对于密钥验证，只支持锁屏密码和生物特征验证，支持密钥的用户身份认证和访问控制。

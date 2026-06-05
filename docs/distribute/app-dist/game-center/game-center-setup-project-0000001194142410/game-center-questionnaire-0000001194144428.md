@@ -2,7 +2,9 @@
 title: "问卷服务"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-questionnaire-0000001194144428
+format: md
 ---
+
 
 # 问卷服务
 

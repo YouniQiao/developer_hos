@@ -1,7 +1,9 @@
 ---
 title: "学习UI范式状态管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management
+format: md
 ---
+
 
 * **[状态管理概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview)**
 * **[状态管理术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-glossary)**

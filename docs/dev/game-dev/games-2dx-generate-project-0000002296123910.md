@@ -1,7 +1,9 @@
 ---
 title: "生成HarmonyOS 5.0及以上工程"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-2dx-generate-project-0000002296123910
+format: md
 ---
+
 
 HarmonyOS 5.0及以上的HAP包需要通过DevEco工程构建，因此您需要为游戏生成对应的DevEco工程。
 

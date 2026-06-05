@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "显示地图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-presenting
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口 | 接口描述 |
 | --- | --- |
 | [mapCommon.MapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapoptions) | 提供Map组件初始化的属性。 |
-| [MapComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-mapcomponent#mapcomponent)(mapOptions: [mapCommon.MapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapoptions), mapCallback: AsyncCallback<[map.MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)>) | 地图组件。 |
+| [MapComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-mapcomponent#mapcomponent)(mapOptions: [mapCommon.MapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapoptions), mapCallback: AsyncCallback[map.MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)) | 地图组件。 |
 | [map.MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller) | 地图组件的主要功能入口类，用来操作地图，与地图有关的所有方法从此处接入。它所承载的工作包括：地图类型切换（如标准地图、空地图）、改变地图状态（中心点坐标和缩放级别）、添加点标记（Marker）、绘制几何图形（如MapPolyline、MapPolygon、MapCircle）、监听各类事件等。 |
 
 ## 开发步骤

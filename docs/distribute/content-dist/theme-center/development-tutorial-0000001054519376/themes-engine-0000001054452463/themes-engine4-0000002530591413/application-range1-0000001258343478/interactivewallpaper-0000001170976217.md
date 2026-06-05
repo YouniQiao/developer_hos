@@ -2,7 +2,9 @@
 title: "可交互桌面&lt;CommonWallpaper&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/interactivewallpaper-0000001170976217
+format: md
 ---
+
 
 # 可交互桌面&lt;CommonWallpaper&gt;
 

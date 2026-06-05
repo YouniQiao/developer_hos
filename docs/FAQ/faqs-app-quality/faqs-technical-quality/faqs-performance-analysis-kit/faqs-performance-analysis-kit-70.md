@@ -4,6 +4,7 @@ title: "Macbook(ARM芯片)HDC无法连接设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-70
 ---
 
+
 **问题现象**
 
 Macbook(ARM芯片)系统上执行"hdc list targets"命令后结果为：[Empty]。

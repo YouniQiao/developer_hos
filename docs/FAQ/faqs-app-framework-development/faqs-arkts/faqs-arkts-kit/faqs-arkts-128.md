@@ -1,7 +1,9 @@
 ---
 title: "如何指定对象某些属性参与序列化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-128
+format: md
 ---
+
 
 可以通过[JSON.stringify()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-json#jsonstringify)方法实现，stringify(value: Object, replacer?: (number | string)[] | null, space?: string | number): string中，当replacer为数组时，只有包含在这个数组中的属性名才会被序列化到最终的JSON字符串中；当参数为null或者未提供时，则对象所有的属性都会被序列化。
 

@@ -1,7 +1,9 @@
 ---
 title: "事件监听"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-listener-real-time-server-0000002395350537
+format: md
 ---
+
 
 您可以使用GameServer相关方法监听客户端的相关事件，包括监听客户端的房间创建/销毁、帧同步开始/停止、客户端发送给实时服务器消息等事件。
 

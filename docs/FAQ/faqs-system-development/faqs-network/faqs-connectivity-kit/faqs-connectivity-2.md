@@ -1,7 +1,9 @@
 ---
 title: "如何扫描Wi-Fi列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-2
+format: md
 ---
+
 
 使用wifiManager.getScanInfoList方法获取扫描Wi-Fi结果，需要权限：ohos.permission.GET\_WIFI\_INFO。参考代码如下：
 

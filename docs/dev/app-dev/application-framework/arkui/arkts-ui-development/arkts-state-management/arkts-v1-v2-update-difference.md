@@ -1,7 +1,9 @@
 ---
 title: "状态管理V1和V2更新机制差异"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-update-difference
+format: md
 ---
+
 
 ## V1状态管理演进到V2状态管理背景
 

@@ -1,7 +1,9 @@
 ---
 title: "加入房间"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-joinroom-csharp-0000002361510616
+format: md
 ---
+
 
 当房主创建好房间后，其他玩家通过获取并传入房间ID或房间短码，即可加入到该房间中。此种方式主要适用于棋牌、格斗等游戏的好友约战游戏玩法。
 

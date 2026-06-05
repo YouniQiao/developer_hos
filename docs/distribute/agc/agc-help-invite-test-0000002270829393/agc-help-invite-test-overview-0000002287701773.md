@@ -1,7 +1,9 @@
 ---
 title: "业务介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-invite-test-overview-0000002287701773
+format: md
 ---
+
 
 在正式版本发布之前，您可以选择特定用户群组来测试您的应用，以收集测试用户的反馈意见，助您提前发现问题，及时修复和优化版本体验。
 

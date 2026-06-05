@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用“华为账号登录”按钮登录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-button
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -48,7 +50,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/acco
 | 接口名 | 描述 |
 | --- | --- |
 | [LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button#loginwithhuaweiidbutton) | 华为账号Button登录组件。  当前该组件支持Icon类型按钮、纯文本按钮、Icon和文本混合按钮，如果仍然不能满足开发者的诉求，可以使用[Style](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#style)的BUTTON\_CUSTOM值定义按钮的文字颜色和背景色。 |
-| [onClickLoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#onclickloginwithhuaweiidbutton-1)(callback: AsyncCallback<[HuaweiIDCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#huaweiidcredential)>): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 注册华为账号登录按钮的登录事件结果回调。使用callback异步回调。 |
+| [onClickLoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#onclickloginwithhuaweiidbutton-1)(callback: AsyncCallback[HuaweiIDCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#huaweiidcredential)): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 注册华为账号登录按钮的登录事件结果回调。使用callback异步回调。 |
 | [setAgreementStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#setagreementstatus-1)(agreementStatus: [AgreementStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#agreementstatus)): [LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 设置协议状态方法。如果需要用户同意协议才能完成华为账号登录，请先设置协议状态为NOT\_ACCEPTED，当用户同意协议后设置协议状态为ACCEPTED，才可以完成华为账号登录。 |
 
 ![](./img/b74d8597.png)

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Natural Language Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/natural-language-introduction
+format: md
 ---
+
 
 Natural Language Kit（自然语言理解服务）提供了多项文本语义理解相关的基础能力，帮助开发者更好地处理和分析文本数据。具体包括以下几个方面：
 

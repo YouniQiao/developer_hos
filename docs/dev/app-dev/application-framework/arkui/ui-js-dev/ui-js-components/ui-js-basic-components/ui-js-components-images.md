@@ -1,7 +1,9 @@
 ---
 title: "image开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-images
+format: md
 ---
+
 
 image是图片组件，用来渲染展示图片。具体用法请参考[image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-image)组件。
 

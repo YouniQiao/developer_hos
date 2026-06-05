@@ -1,7 +1,9 @@
 ---
 title: "Sendable对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-object
+format: md
 ---
+
 
 * **[Sendable对象简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)**
 * **[Sendable使用规则与约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-constraints)**

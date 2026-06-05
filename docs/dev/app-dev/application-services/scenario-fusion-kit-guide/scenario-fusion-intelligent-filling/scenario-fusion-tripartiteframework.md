@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "三方框架+H5接入智能填充"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-tripartiteframework
+format: md
 ---
+
 
 * **[H5接入智能填充](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-h5)**
 * **[React Native框架+H5接入智能填充](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-reactnative)**

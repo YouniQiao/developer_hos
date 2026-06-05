@@ -1,7 +1,9 @@
 ---
 title: "应用设备状态检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-develop
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -42,7 +44,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getDeviceToken(): Promise<string>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-deviceverify-api#getdevicetoken) | 获取本设备的DeviceToken |
+| [getDeviceToken(): Promise\<string\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-deviceverify-api#getdevicetoken) | 获取本设备的DeviceToken |
 | [checkDeviceToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-deviceverify-checkdevicetoken) | 验证deviceToken |
 | [getDeviceStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-deviceverify-getdevicestatus) | 查询设备标记状态 |
 | [setDeviceStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-deviceverify-updatedevicestatus) | 更新设备标记状态 |

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "智能填充服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligent-filling
+format: md
 ---
+
 
 * **[智能填充概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-to-smart-fill)**
 * **[典型场景展示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-typical-scenario)**

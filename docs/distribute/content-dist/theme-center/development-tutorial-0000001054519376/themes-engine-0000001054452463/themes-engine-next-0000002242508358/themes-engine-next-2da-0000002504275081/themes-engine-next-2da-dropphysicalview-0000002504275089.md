@@ -2,7 +2,9 @@
 title: "下落动效&lt;DropPhysicalView&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2da-dropphysicalview-0000002504275089
+format: md
 ---
+
 
 # 下落动效&lt;DropPhysicalView&gt;
 

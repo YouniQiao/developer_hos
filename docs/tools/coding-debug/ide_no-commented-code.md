@@ -1,7 +1,9 @@
 ---
 title: "@security/no-commented-code"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-commented-code
 

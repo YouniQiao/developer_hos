@@ -1,7 +1,9 @@
 ---
 title: "公共事件简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-overview
+format: md
 ---
+
 
 CES（Common Event Service，公共事件服务）为应用程序提供订阅、发布、退订公共事件的能力。
 

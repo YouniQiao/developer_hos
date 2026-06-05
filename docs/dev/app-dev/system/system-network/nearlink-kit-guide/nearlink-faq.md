@@ -1,7 +1,9 @@
 ---
 title: "NearLink Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-faq
+format: md
 ---
+
 
 ## 连续进行数据传输时数据发送失败的问题
 

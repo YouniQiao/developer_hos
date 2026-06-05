@@ -1,7 +1,9 @@
 ---
 title: "日志打印"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-log-real-time-server-0000002361510728
+format: md
 ---
+
 
 您可以使用ActionArgs.SDK相关方法实现一些日志管理的业务逻辑，包括打印日志信息等使用场景。
 

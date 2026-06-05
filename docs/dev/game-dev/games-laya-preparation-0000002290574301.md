@@ -1,7 +1,9 @@
 ---
 title: "适配准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-preparation-0000002290574301
+format: md
 ---
+
 
 ## 引擎适配准备
 

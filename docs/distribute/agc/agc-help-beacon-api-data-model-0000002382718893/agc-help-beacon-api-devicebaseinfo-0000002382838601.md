@@ -1,7 +1,9 @@
 ---
 title: "DeviceBaseInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-api-devicebaseinfo-0000002382838601
+format: md
 ---
+
 
 | **参数** | **必选(M)/****可选(O)** | **参数类型** | **描述** |
 | --- | --- | --- | --- |

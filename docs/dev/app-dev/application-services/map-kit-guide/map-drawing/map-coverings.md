@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "覆盖物"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-coverings
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [ImageOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#imageoverlayparams) | 覆盖物参数。 |
-| [addImageOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addimageoverlay)(params: [mapCommon.ImageOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#imageoverlayparams)): Promise<[ImageOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-imageoverlay)> | 为地图增加覆盖物。 |
+| [addImageOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addimageoverlay)(params: [mapCommon.ImageOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#imageoverlayparams)): Promise[ImageOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-imageoverlay) | 为地图增加覆盖物。 |
 | [ImageOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-imageoverlay) | 覆盖物，支持更新和查询相关属性。 |
 
 ## 开发步骤

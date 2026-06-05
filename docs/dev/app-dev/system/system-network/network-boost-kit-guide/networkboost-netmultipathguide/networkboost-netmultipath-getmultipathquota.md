@@ -1,7 +1,9 @@
 ---
 title: "多网配额查询"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-getmultipathquota
+format: md
 ---
+
 
 ## 场景介绍
 

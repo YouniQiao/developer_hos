@@ -4,4 +4,5 @@ title: "测试过程中，控件语义识别中的“XXX的项”、“XXX的列
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-2
 ---
 
+
 当前应用页面元素包括菜单、频道、列表等。AI模型会自动将相似元素归类为测试等价类。对于同一列表中的多个元素，均视为同一类项。

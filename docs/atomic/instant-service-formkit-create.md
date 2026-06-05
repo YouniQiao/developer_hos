@@ -1,7 +1,9 @@
 ---
 title: "创建服务卡片（FormKit）"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit-create
+format: md
 ---
+
 
 1. 在服务直达主界面，选择“服务卡片（FormKit）”页签，点击“新建”。
 

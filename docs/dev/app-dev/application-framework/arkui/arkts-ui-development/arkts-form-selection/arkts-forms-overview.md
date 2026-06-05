@@ -1,7 +1,9 @@
 ---
 title: "按钮与选择组件概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-forms-overview
+format: md
 ---
+
 
 按钮与选择组件用于构建页面的基础元素，如按钮、开关。开发者可以根据实际应用场景选择合适的按钮与选择组件进行界面开发。
 

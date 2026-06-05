@@ -1,7 +1,9 @@
 ---
 title: "坚盾守护模式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-secure-shield-mode
+format: md
 ---
+
 
 坚盾守护模式提供给高安全需求用户的系统级别安全模式。该模式通过限制设备基础功能，增强安全性，有效抵御远程攻击面的针对性攻击。
 
@@ -36,7 +38,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-
 * 排查前端代码是否存在WebAssembly相关接口调用，WebAssembly用于在Web上运行C/C++等低级语言编译代码，坚盾守护模式下无法调用。
 * 排查前端代码是否存在WebGL相关接口调用，WebGL提供3D图形绘制能力。在坚盾守护模式下，相关接口无法调用。
 * 排查是否有在线显示PDF的功能场景，坚盾守护模式下无法在线显示PDF，例如通过loadUrl加载PDF链接。
-* 排查HTML页面是否存在<math>标签嵌入的MathML语法，坚盾守护模式下，MathML语法无法解析，导致显示异常。
+* 排查HTML页面是否存在\<math\>标签嵌入的MathML语法，坚盾守护模式下，MathML语法无法解析，导致显示异常。
 * 排查前端代码是否存在SpeechRecognition（语音识别）、SpeechSynthesis（语音合成）等接口调用，坚盾守护模式下，相关接口无法调用。
 * 排查前端代码是否存在RTCDataChannel/createDataChannel等接口调用，该类接口属于WebRTC API，用于建立双向数据通道，实现对等端之间的实时数据交换。坚盾守护模式下，相关接口无法调用。
 * 排查前端代码是否存在MediaDevices.getUserMedia接口调用，该接口用于请求访问流媒体设备，如摄像头和麦克风。在坚盾守护模式下，相关接口调用会抛出异常：“can't use getUserMedia on advancedSecurityMode!”

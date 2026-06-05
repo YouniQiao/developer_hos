@@ -1,7 +1,9 @@
 ---
 title: "联机对战"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-gameobe-service-0000002318054720
+format: md
 ---
+
 
 ## 简介
 

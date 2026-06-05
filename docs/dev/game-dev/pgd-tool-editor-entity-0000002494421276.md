@@ -1,7 +1,9 @@
 ---
 title: "PGD Entity组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-editor-entity-0000002494421276
+format: md
 ---
+
 
 PGD Entity为实体操作模块，开发者可以通过可视化方式操作实体。
 

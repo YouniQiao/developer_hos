@@ -2,7 +2,9 @@
 title: "产品小图标"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-guide-producticon-0000002396467004
+format: md
 ---
+
 
 # 产品小图标
 

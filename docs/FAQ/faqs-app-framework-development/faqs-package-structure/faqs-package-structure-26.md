@@ -1,7 +1,9 @@
 ---
 title: "如何获取当前HAP的BundleName"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-26
+format: md
 ---
+
 
 使用bundleManager模块的getBundleInfoForSelf接口获取所有信息。
 

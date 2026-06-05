@@ -1,7 +1,9 @@
 ---
 title: "BatchProcessor实体修改批处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-batch-processor-0000002450562832
+format: md
 ---
+
 
 BatchProcessor用于对已有实体进行批量修改操作，包括添加/移除组件和标签。
 

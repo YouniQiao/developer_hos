@@ -1,7 +1,9 @@
 ---
 title: "转场动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-transition
+format: md
 ---
+
 
 * **[转场动画概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-transition-overview)**
 * **[出现/消失转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-enter-exit-transition)**

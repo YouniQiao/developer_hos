@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804
+format: md
 ---
+
 # FAQ
 
 ## 为什么智能分包渠道乱码，非设置的渠道号？
@@ -11,8 +13,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 
 ## INDEX\_TRACKID中获取到的归因信息分别有哪几种？
 
-- 推广分包信息 \{ "channel":"xxxxx","callback":"security:xxxxx ","taskid":"xxxxx","subTaskId":"xxxxx","RTAID":"xxxxx"\}
-- 推广主包信息 \{ "channel":"0","callback":"security:xxxxx ","taskid":"xxxxx" ,"subTaskId":"xxxxx","RTAID":"xxxxx"\}
+- 推广分包信息 \\{ "channel":"xxxxx","callback":"security:xxxxx ","taskid":"xxxxx","subTaskId":"xxxxx","RTAID":"xxxxx"\\}
+- 推广主包信息 \\{ "channel":"0","callback":"security:xxxxx ","taskid":"xxxxx" ,"subTaskId":"xxxxx","RTAID":"xxxxx"\\}
 - 其余非客户设置乱码可忽略
 
 ![](./img/dab14ecdbe58.png) 

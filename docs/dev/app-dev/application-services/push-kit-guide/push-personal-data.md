@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-personal-data
+format: md
 ---
+
 
 Weather Service Kit基于调用方提供的位置信息查询对应位置的天气预报数据，不主动采集用户的位置信息。
 

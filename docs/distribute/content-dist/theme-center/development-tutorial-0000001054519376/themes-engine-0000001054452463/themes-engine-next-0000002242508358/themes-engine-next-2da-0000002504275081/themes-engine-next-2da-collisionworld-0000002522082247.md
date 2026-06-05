@@ -2,7 +2,9 @@
 title: "2D物理碰撞&lt;CollisionWorld&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2da-collisionworld-0000002522082247
+format: md
 ---
+
 
 # 2D物理碰撞&lt;CollisionWorld&gt;
 

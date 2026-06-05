@@ -1,7 +1,9 @@
 ---
 title: "配置文件概述"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 配置文件概述
 

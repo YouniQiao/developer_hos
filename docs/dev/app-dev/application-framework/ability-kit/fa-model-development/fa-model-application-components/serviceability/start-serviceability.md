@@ -1,7 +1,9 @@
 ---
 title: "启动ServiceAbility"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-serviceability
+format: md
 ---
+
 
 ServiceAbility的启动与其他Ability并无区别，应用开发者可以在PageAbility中通过featureAbility的startAbility接口拉起ServiceAbility，在ServiceAbility中通过particleAbility的startAbility接口拉起ServiceAbility。ServiceAbility的启动规则详见[FA模型组件启动规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules-fa)章节。
 

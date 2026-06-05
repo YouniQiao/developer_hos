@@ -1,7 +1,9 @@
 ---
 title: "构建任务说明"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 构建任务说明
 

@@ -2,7 +2,9 @@
 title: "命令：变量命令&lt;VariableCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-variablecommand-0000002471395064
+format: md
 ---
+
 
 # 命令：变量命令&lt;VariableCommand&gt;
 

@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API实现ArkTS/JS与C/C++语言交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-napi-interaction-with-cpp
+format: md
 ---
+
 
 * **[Node-API简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-introduction)**
 * **[Node-API接口返回状态码介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi_status_introduction)**

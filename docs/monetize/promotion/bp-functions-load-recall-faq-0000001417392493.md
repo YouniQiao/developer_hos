@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-faq-0000001417392493
+format: md
 ---
+
 # FAQ
 
 ## 卸载召回专区是否有通投任务？

@@ -4,6 +4,7 @@ title: "har包的libc++版本与工程不一致时，程序如何兼容"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-78
 ---
 
+
 **问题现象**
 
 har包的libc++和工程的libc++版本不一致的情况是隔离的吗？还是不能共存，只能使用一个？

@@ -1,6 +1,8 @@
 ---
 title: "日志"
+format: md
 ---
+
 
 # 日志
 

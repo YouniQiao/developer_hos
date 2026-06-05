@@ -1,7 +1,9 @@
 ---
 title: "预览子服务卡"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-items-preview
+format: md
 ---
+
 
 1. 在子服务直达界面，按服务状态选择“草稿”或“待审核的”卡片，点击提交预览。
 

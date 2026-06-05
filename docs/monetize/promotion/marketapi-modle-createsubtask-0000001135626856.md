@@ -2,7 +2,9 @@
 title: "CreateSubTask"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-createsubtask-0000001135626856
+format: md
 ---
+
 # CreateSubTask
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

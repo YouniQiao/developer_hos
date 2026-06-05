@@ -1,7 +1,9 @@
 ---
 title: "ArkTS中Worker线程、TaskPool线程如何与宿主线程通信"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-36
+format: md
 ---
+
 
 Worker通过PostMessage向父线程发送任务。TaskPool通过sendData向父线程发送消息，触发任务。
 

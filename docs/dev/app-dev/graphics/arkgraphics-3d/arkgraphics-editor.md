@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ArkGraphics Editor插件及编辑器的下载与安装"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-editor
+format: md
 ---
+
 
 3D编辑器ArkGraphics Editor提供3D模型、动画、ShaderGraph等核心编辑能力，可供设计师、开发者快速接入使用。支持通过拖拽等操作，利用3D编辑器可视化能力，完成3D场景开发，3D设计效果所见即所得。无需代码编写，支持从PC到移动端设备的快速流转， 可大幅提升3D应用开发效率。
 

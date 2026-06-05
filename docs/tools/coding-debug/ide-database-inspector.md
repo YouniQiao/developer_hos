@@ -1,7 +1,9 @@
 ---
 title: "数据库调试"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 数据库调试
 

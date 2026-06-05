@@ -1,7 +1,9 @@
 ---
 title: "C#（小游戏）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-minigame-0000002359706946
+format: md
 ---
+
 
 游戏多媒体C# SDK提供了实时信令、语音消息和语音转文本功能，支持团结游戏开发引擎，可发布到华为快游戏、微信小游戏平台。
 

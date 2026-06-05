@@ -4,6 +4,7 @@ title: "如何实现Scroll、List单边回弹效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-316
 ---
 
+
 1. [Scroll组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)：在onDidScroll里获取currentOffset().yOffset来控制单边回弹效果；
 
 2. [List组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)：在onDidScroll里获取currentOffset().yOffset来控制，还可以通过onScrollIndex实现单边回弹效果。

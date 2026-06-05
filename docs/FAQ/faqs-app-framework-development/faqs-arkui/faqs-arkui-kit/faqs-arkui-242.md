@@ -1,7 +1,9 @@
 ---
 title: "如何获取手机屏幕信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-242
+format: md
 ---
+
 
 可参考如下代码，获取了屏幕的宽和高，Display实例的所有属性见文档：[@ohos.display (屏幕属性)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display)。
 

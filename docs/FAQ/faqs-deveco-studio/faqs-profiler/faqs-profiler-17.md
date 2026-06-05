@@ -4,6 +4,7 @@ title: "指标检测值无法点击拉起profiler"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-17
 ---
 
+
 **问题现象**
 
 报告详情页，指标检测值无法点击，如下图：

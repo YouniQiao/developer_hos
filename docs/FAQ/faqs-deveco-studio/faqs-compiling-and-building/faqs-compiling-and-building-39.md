@@ -4,6 +4,7 @@ title: "编译报错“Only one default card can be configured in the form_confi
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-39
 ---
 
+
 **问题现象**
 
 DevEco Studio编译失败。提示：Only one default card can be configured in the form\_config.json file。

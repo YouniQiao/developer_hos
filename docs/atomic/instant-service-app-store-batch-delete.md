@@ -1,7 +1,9 @@
 ---
 title: "批量删除门店"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-store-batch-delete
+format: md
 ---
+
 
 1. 在“门店管理”页签，点击批量删除。
 

@@ -1,7 +1,9 @@
 ---
 title: "使用限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-restrictions-0000002304472628
+format: md
 ---
+
 
 本章节将为您详细介绍游戏多媒体服务在设备、配额方面的限制，这些限制可能会根据实际情况随时更新，请您注意文档变化。
 

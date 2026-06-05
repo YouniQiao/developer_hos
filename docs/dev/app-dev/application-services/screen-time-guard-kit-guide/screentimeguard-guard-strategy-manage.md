@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "守护策略管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-guard-strategy-manage
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-guard-strategy-manage-overview)**
 * **[添加策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-add-guard-strategy)**

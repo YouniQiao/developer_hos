@@ -1,7 +1,9 @@
 ---
 title: "在长按拖拽排序的场景下，如何实现自定义长按拖拽onItemDragStart的开始触发时长"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-310
+format: md
 ---
+
 
 在Grid组件中，onItemDragStart事件的默认触发时长为170毫秒，但当前版本不支持直接修改该参数。可以通过自定义Grid，通过设置长按手势LongPressGesture中的duration参数，来实现自定义长按拖拽的开始触发时长，参考代码如下：
 

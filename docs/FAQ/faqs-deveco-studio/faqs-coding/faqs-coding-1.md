@@ -4,6 +4,7 @@ title: "编辑器自动联想、跳转等功能失效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-1
 ---
 
+
 **问题现象**
 
 DevEco Studio上代码自动联想、跳转等功能失效。

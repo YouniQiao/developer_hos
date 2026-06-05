@@ -1,7 +1,9 @@
 ---
 title: "@compatibility/api-compatibility-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @compatibility/api-compatibility-check
 

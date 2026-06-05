@@ -2,7 +2,9 @@
 title: "关联账号组"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-associated-group-0000002552782474
 has_merged_cells: true
+format: md
 ---
+
 
 开发者及其关联公司在使用华为数字商品及联运服务时，需关联账号组。
 

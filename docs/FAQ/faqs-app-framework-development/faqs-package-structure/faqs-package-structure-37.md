@@ -4,6 +4,7 @@ title: "HAR如何转换为HSP"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-37
 ---
 
+
 [HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)转为[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)主要是通过修改配置文件实现。具体步骤如下：
 
 1. 在HAR的module.json5中，将type字段的值改为“shared”，并配置deliveryWithInstall字段为“true”。

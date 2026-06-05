@@ -2,7 +2,9 @@
 title: "网格化-位移&lt;MeshImage-Translation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/meshimage-translation-0000001074502054
+format: md
 ---
+
 
 # 网格化-位移&lt;MeshImage-Translation&gt;
 

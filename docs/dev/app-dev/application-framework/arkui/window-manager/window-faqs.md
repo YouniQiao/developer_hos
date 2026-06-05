@@ -1,7 +1,9 @@
 ---
 title: "窗口开发常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-faqs
+format: md
 ---
+
 
 ## 如何在应用A启动过程中拉起另一个应用B
 

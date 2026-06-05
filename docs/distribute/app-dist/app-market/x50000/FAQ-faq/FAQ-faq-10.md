@@ -2,7 +2,9 @@
 title: "11.​​​​​​ 个人信息保护合规性检测服务介绍"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-10
+format: md
 ---
+
 # 11.​​​​​​ 个人信息保护合规性检测服务介绍
 
 ## 11.1 个人信息保护合规性检测介绍

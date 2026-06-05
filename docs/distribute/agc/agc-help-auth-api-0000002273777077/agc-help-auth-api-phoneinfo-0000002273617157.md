@@ -1,7 +1,9 @@
 ---
 title: "PhoneInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-phoneinfo-0000002273617157
+format: md
 ---
+
 
 手机号码信息类，用于更新用户当前手机号码信息的操作。
 

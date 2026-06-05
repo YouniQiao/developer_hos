@@ -1,7 +1,9 @@
 ---
 title: "知识问答"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-development
+format: md
 ---
+
 
 知识问答是通过检索增强生成（RAG）技术，从数据源中精准提取信息并生成答案的智能交互方式。可用于企业客服、医疗辅助、IT支持等领域。
 
@@ -23,9 +25,9 @@ RAG关键接口如下表所示，具体API说明详见[API参考](https://develo
 
 | 接口名 | 描述 |
 | --- | --- |
-| abstract [streamChat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#streamchat)(query: string, callback: Callback<[LLMStreamAnswer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#llmstreamanswer)>): Promise<[LLMRequestInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#llmrequestinfo)> | 继承ChatLLM类实现大模型客户端时需要实现的函数。RAG在检索前的问题预处理、检索后的回答生成时，会调用这个函数与大语言模型交互。 |
-| [createRagSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#createragsession)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), config: [Config](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#config)): Promise<[RagSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#ragsession)> | 获得一个会话用于进行知识问答。不支持多线程调用。 |
-| [streamRun](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#streamrun)(question: string, config: [RunConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#runconfig), callback: AsyncCallback<[Stream](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#stream)>): Promise<number> | 知识问答接口，传入问题以及问答配置项。当RAG生成问题结果时，触发callback回调函数来流式传递数据。支持的长度为1000个字符内（UTF-8下一个汉字占3个字符）。不支持多线程调用。 |
+| abstract [streamChat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#streamchat)(query: string, callback: Callback[LLMStreamAnswer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#llmstreamanswer)): Promise[LLMRequestInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#llmrequestinfo) | 继承ChatLLM类实现大模型客户端时需要实现的函数。RAG在检索前的问题预处理、检索后的回答生成时，会调用这个函数与大语言模型交互。 |
+| [createRagSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#createragsession)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), config: [Config](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#config)): Promise[RagSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#ragsession) | 获得一个会话用于进行知识问答。不支持多线程调用。 |
+| [streamRun](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#streamrun)(question: string, config: [RunConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#runconfig), callback: AsyncCallback[Stream](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#stream)): Promise\<number\> | 知识问答接口，传入问题以及问答配置项。当RAG生成问题结果时，触发callback回调函数来流式传递数据。支持的长度为1000个字符内（UTF-8下一个汉字占3个字符）。不支持多线程调用。 |
 
 ## 开发准备
 

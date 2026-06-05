@@ -1,7 +1,9 @@
 ---
 title: "降级到免费档套餐"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-downgrade-plan-0000002247204812
+format: md
 ---
+
 
 升级到按量付费档套餐后，您也可以选择降级，将付费档关闭，仅使用免费配额。
 

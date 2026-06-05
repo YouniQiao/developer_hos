@@ -1,7 +1,9 @@
 ---
 title: "FAQ"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-invite-test-faq-0000002363660365
+format: md
 ---
+
 
 #### 申请邀请测试，应用需要先备案吗？
 

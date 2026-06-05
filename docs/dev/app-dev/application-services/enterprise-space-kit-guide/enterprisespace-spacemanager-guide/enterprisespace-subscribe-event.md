@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅空间事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-subscribe-event
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ Enterprise Space Kit为应用提供订阅空间事件的能力，当前支持订
 
 | 接口名 | 描述 |
 | --- | --- |
-| [subscribeEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#subscribeevent)(eventId: [EventType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#eventtype)[], callback: AsyncCallback<[EventData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#eventdata)>): number | 订阅空间事件，在相关事件触发时，通知应用侧。使用callback异步回调。 |
+| [subscribeEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#subscribeevent)(eventId: [EventType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#eventtype)[], callback: AsyncCallback[EventData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#eventdata)): number | 订阅空间事件，在相关事件触发时，通知应用侧。使用callback异步回调。 |
 
 ## 开发步骤
 

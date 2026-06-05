@@ -1,7 +1,9 @@
 ---
 title: "动态属性设置常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-modifier-faq
+format: md
 ---
+
 
 本文档介绍动态属性设置的常见问题并提供参考。
 

@@ -4,6 +4,7 @@ title: "如何解决编译报错“Indexed access is not supported for fields(ar
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-126
 ---
 
+
 **问题现象**
 
 动态调用类或接口的字段会导致编译报错：Indexed access is not supported for fields (arkts-no-props-by-index)。

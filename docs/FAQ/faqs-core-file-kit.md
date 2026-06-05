@@ -4,6 +4,7 @@ title: "本地文件管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-core-file-kit
 ---
 
+
 * **[如何使用Zip模块解压项目目录rawfile中的文件至应用的沙箱目录中](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-1)**
 * **[如何实现文件不存在则创建文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-3)**
 * **[如何解决文件的中文乱码问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-4)**

@@ -1,7 +1,9 @@
 ---
 title: "extension调试"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # extension调试
 

@@ -1,7 +1,9 @@
 ---
 title: "分布式数据对象跨设备数据同步 (ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-of-distributed-data-object
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -116,21 +118,21 @@ dataObject['parents']['mom'] = "amy"; // 不支持的修改
 | --- | --- |
 | create(context: Context, source: object): DataObject | 创建并得到一个分布式数据对象实例。 |
 | genSessionId(): string | 创建一个sessionId，可作为分布式数据对象的sessionId。 |
-| setSessionId(sessionId: string, callback: AsyncCallback<void>): void | 设置同步的sessionId，当可信组网中有多个设备时，多个设备间的对象如果设置为同一个sessionId，就能自动同步。 |
-| setSessionId(callback: AsyncCallback<void>): void | 退出所有已加入的session。 |
-| on(type: 'change', callback: (sessionId: string, fields: Array<string>) => void): void | 监听分布式数据对象的数据变更。 |
-| off(type: 'change', callback?: (sessionId: string, fields: Array<string>) => void): void | 取消监听分布式数据对象的数据变更。 |
+| setSessionId(sessionId: string, callback: AsyncCallback\<void\>): void | 设置同步的sessionId，当可信组网中有多个设备时，多个设备间的对象如果设置为同一个sessionId，就能自动同步。 |
+| setSessionId(callback: AsyncCallback\<void\>): void | 退出所有已加入的session。 |
+| on(type: 'change', callback: (sessionId: string, fields: Array\<string\>) => void): void | 监听分布式数据对象的数据变更。 |
+| off(type: 'change', callback?: (sessionId: string, fields: Array\<string\>) => void): void | 取消监听分布式数据对象的数据变更。 |
 | on(type: 'status', callback: (sessionId: string, networkId: string, status: 'online' | 'offline' ) => void): void | 监听分布式数据对象的上下线。 |
 | off(type: 'status', callback?: (sessionId: string, networkId: string, status: 'online' |'offline' ) => void): void | 取消监听分布式数据对象的上下线。 |
-| save(deviceId: string, callback: AsyncCallback<SaveSuccessResponse>): void | 保存分布式数据对象。 |
-| revokeSave(callback: AsyncCallback<RevokeSaveSuccessResponse>): void | 撤回保存的分布式数据对象。 |
-| bindAssetStore(assetKey: string, bindInfo: BindInfo, callback: AsyncCallback<void>): void | 绑定融合资产。 |
+| save(deviceId: string, callback: AsyncCallback\<SaveSuccessResponse\>): void | 保存分布式数据对象。 |
+| revokeSave(callback: AsyncCallback\<RevokeSaveSuccessResponse\>): void | 撤回保存的分布式数据对象。 |
+| bindAssetStore(assetKey: string, bindInfo: BindInfo, callback: AsyncCallback\<void\>): void | 绑定融合资产。 |
 | setAsset(assetKey: string, uri: string): void | 设置单个资产。 |
-| setAssets(assetKey: string, uris: Array<string>): void | 设置资产数组。 |
-| on(type: 'change', callback: DataObserver<void>): void | 监听分布式对象的数据变更。 |
-| off(type: 'change', callback?: DataObserver<void>): void | 删除分布式对象数据变更监听的回调实例。 |
-| on(type: 'status', callback: StatusObserver<void>): void | 监听分布式对象的状态变更。 |
-| off(type: 'status', callback?: StatusObserver<void>): void | 删除分布式对象状态变更监听的回调实例。 |
+| setAssets(assetKey: string, uris: Array\<string\>): void | 设置资产数组。 |
+| on(type: 'change', callback: DataObserver\<void\>): void | 监听分布式对象的数据变更。 |
+| off(type: 'change', callback?: DataObserver\<void\>): void | 删除分布式对象数据变更监听的回调实例。 |
+| on(type: 'status', callback: StatusObserver\<void\>): void | 监听分布式对象的状态变更。 |
+| off(type: 'status', callback?: StatusObserver\<void\>): void | 删除分布式对象状态变更监听的回调实例。 |
 
 ## 开发步骤
 
@@ -329,7 +331,7 @@ export default class EntryAbility extends UIAbility {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataObject/CrossDeviceMigration/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets#L16-L181" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryBackupAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataObject/CrossDeviceMigration/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets#L16-L181" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryBackupAbility.ets</a></div>
 
 
 ### 在多端协同中使用分布式数据对象
@@ -492,4 +494,4 @@ function getRemoteDeviceId() {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataObject/CrossDeviceCollaboration/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets#L16-L141" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryBackupAbility.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataObject/CrossDeviceCollaboration/entry/src/main/ets/entrybackupability/EntryBackupAbility.ets#L16-L141" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryBackupAbility.ets</a></div>

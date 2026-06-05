@@ -1,7 +1,9 @@
 ---
 title: "通过预建连接提升HTTP传输性能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-pre-connect
+format: md
 ---
+
 
 ## 概述
 

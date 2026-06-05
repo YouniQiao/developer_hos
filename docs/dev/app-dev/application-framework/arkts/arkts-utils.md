@@ -1,7 +1,9 @@
 ---
 title: "ArkTS基础类库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-utils
+format: md
 ---
+
 
 * **[ArkTS基础类库概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-utils-overview)**
 * **[XML生成、解析与转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-generation-parsing-conversion)**

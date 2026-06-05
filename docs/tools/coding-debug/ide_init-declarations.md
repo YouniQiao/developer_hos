@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/init-declarations"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/init-declarations
 

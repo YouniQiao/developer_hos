@@ -1,7 +1,9 @@
 ---
 title: "架构概览"
 sidebar_position: 1
+format: md
 ---
+
 
 # 架构概览
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通行密钥身份认证（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-passkey-arkts
+format: md
 ---
+
 
 ## 接口说明
 
@@ -10,10 +12,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onli
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getClientCapabilities](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#getclientcapabilities)(context: common.Context): Promise<Map<[ClientCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#clientcapability), boolean>> | 查询当前设备支持的客户端能力列表。 |
-| [getPlatformAuthenticators](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#getplatformauthenticators)(context: common.Context): Promise<Array<[AuthenticatorMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#authenticatormetadata)>> | 查询当前设备支持的平台认证器能力列表（人脸、指纹、PIN码）。 |
-| [register](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#register)(context: common.Context, options: [CredentialCreationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#credentialcreationoptions), tokenBinding?: [TokenBinding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#tokenbinding)): Promise<[PublicKeyAttestationCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#publickeyattestationcredential)> | 进行通行密钥的注册。 |
-| [authenticate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#authenticate)(context: common.Context, options: [CredentialRequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#credentialrequestoptions), tokenBinding?: [TokenBinding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#tokenbinding)): Promise<[PublicKeyAssertionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#publickeyassertioncredential)> | 进行通行密钥的认证。 |
+| [getClientCapabilities](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#getclientcapabilities)(context: common.Context): Promise\<Map<[ClientCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#clientcapability), boolean\>> | 查询当前设备支持的客户端能力列表。 |
+| [getPlatformAuthenticators](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#getplatformauthenticators)(context: common.Context): PromiseArray<[AuthenticatorMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#authenticatormetadata)> | 查询当前设备支持的平台认证器能力列表（人脸、指纹、PIN码）。 |
+| [register](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#register)(context: common.Context, options: [CredentialCreationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#credentialcreationoptions), tokenBinding?: [TokenBinding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#tokenbinding)): Promise[PublicKeyAttestationCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#publickeyattestationcredential) | 进行通行密钥的注册。 |
+| [authenticate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#authenticate)(context: common.Context, options: [CredentialRequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#credentialrequestoptions), tokenBinding?: [TokenBinding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#tokenbinding)): Promise[PublicKeyAssertionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-passkey-api#publickeyassertioncredential) | 进行通行密钥的认证。 |
 
 ## 开发步骤
 

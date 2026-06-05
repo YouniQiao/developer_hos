@@ -4,6 +4,7 @@ title: "如何将内容直接复制到剪贴板"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-308
 ---
 
+
 通过[@ohos.pasteboard（剪贴板）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard)模块提供的管理系统剪贴板能力，可以为系统复制、粘贴功能提供支持。系统剪贴板支持对文本、HTML、URI、Want、PixelMap等内容的操作。
 
 示例如下：

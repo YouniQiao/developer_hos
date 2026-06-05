@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-exercisesequence-summary
+format: md
 ---
+
 
 用户一段持续时间的锻炼记录数据，由运动类型、应用信息、时间范围、关联的详情数据、关联的统计数据等组成，如跑步、跳绳等锻炼记录。
 

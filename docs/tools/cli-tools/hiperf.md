@@ -1,7 +1,9 @@
 ---
 title: "hiperf"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # hiperf
 

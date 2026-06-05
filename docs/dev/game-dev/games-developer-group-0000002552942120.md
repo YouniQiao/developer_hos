@@ -1,7 +1,9 @@
 ---
 title: "开发者群组使用细则"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-developer-group-0000002552942120
+format: md
 ---
+
 
 本文约定了开发者及其关联公司在使用华为数字商品及联运服务（以下简称“服务”）时，通过开发者群组使用服务和开展活动的具体规则。
 

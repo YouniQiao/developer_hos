@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Audio Kit（音频服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-kit
+format: md
 ---
+
 
 * **[Audio Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-kit-intro)**
 * **[使用合适的音频流类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-and-sourcetype)**

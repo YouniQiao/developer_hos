@@ -1,7 +1,9 @@
 ---
 title: "单用户查询"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-single-user-query-0000002332911097
+format: md
 ---
+
 
 您可在此处查看用户维度的性能数据，支持设置时间跨度，具体用户ID，指标范围及机型、版本等条件筛选过滤数据。同时每条数据提供详情页展示详细性能数据。
 

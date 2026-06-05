@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-limit-refresh-scope（已下线）"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-limit-refresh-scope（已下线）
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Map Kit（地图服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-kit-guide
+format: md
 ---
+
 
 * **[Map Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)**

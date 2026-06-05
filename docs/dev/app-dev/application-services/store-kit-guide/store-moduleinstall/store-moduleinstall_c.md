@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "产品特性按需分发(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-moduleinstall_c
+format: md
 ---
+
 
 ## 场景介绍
 

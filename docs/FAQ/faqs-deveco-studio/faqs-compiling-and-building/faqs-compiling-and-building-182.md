@@ -1,7 +1,9 @@
 ---
 title: "推包调试报错“Error message:cannot find record '&XXX/src/main/ets/YYY&x.y.z', please check the request path.'ZZZ.abc'.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-182
+format: md
 ---
+
 
 **问题现象**
 

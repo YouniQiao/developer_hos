@@ -4,6 +4,7 @@ title: "自定义键盘如何设置可与输入框贴边"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-490
 ---
 
+
 自定义键盘可以通过自定义弹窗来实现，自定义弹窗默认位置会和底部保持距离，可以通过设置offset来实现贴边，设置keyboardAvoidDistance来实现和键盘贴边。参考代码：
 
 ```

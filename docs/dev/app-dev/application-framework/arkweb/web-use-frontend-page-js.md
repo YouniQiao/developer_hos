@@ -1,7 +1,9 @@
 ---
 title: "在应用中使用前端页面JavaScript"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-use-frontend-page-js
+format: md
 ---
+
 
 * **[应用侧调用前端页面函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-app-frontend-page-function-invoking)**
 * **[前端页面调用应用侧函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-page-app-function-invoking)**

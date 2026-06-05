@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-ffrt-no-use-std"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-ffrt-no-use-std
 

@@ -1,7 +1,9 @@
 ---
 title: "@correctness/v1-state-object-member-used-in-function-parameter-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/v1-state-object-member-used-in-function-parameter-check
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Weather Service Kit（天气服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-kit-guide
+format: md
 ---
+
 
 * **[Weather Service Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-preparations)**

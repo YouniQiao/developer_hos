@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "游泳"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-swim
+format: md
 ---
+
 
 ## 开放水域游泳
 

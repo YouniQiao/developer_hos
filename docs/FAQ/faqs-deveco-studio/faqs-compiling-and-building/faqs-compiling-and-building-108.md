@@ -4,6 +4,7 @@ title: "构建报错'Cannot read properties of undefined(reading 'XXX')'"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-108
 ---
 
+
 请先根据XXX的值从以下场景排查，没解决问题再参考最终方案。
 
 * **场景一：**

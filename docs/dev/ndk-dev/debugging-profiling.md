@@ -1,7 +1,9 @@
 ---
 title: "调试和性能分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debugging-profiling
+format: md
 ---
+
 
 * **[调试和性能分析概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-performance-profiling-overview)**
 * **[C/C++内存错误检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-asan)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自动切换摄像头实践(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-auto-switch
+format: md
 ---
+
 
 应用适配折叠屏时，在简单UX交互场景下，如人脸识别场景推荐使用相机镜头自动切换能力。在有多个前置镜头的折叠设备上，应用使能自动切换镜头能力后，系统能够自动完成镜头切换、会话配置，在不同的折叠状态下，可自动切换到当前可使用的前置镜头，避免前置镜头被折入内部导致黑屏。
 

@@ -1,7 +1,9 @@
 ---
 title: "@performance/start-window-icon-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/start-window-icon-check
 

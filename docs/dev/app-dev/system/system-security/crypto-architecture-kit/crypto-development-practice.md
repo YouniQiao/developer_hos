@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "跨平台数据兼容实践指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-development-practice
+format: md
 ---
+
 
 开发者可以参考以下开发实践，学习相关场景开发，在HarmonyOS平台上更高效、准确地开发加解密的功能。
 

@@ -4,6 +4,7 @@ title: "关系型数据库RDB支持哪些搜索能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-23
 ---
 
+
 SQL查询：SQLite 支持标准的 SQL 查询语法，可以执行 SELECT、INSERT、UPDATE、DELETE 等操作。
 
 索引：SQLite 允许在列上创建索引，以提高查询性能。可以使用 CREATE INDEX 语句在 SQLite 中创建索引。

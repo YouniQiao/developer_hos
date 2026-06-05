@@ -2,7 +2,9 @@
 title: "参数说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-setup-activities-param-0000002320553297
 has_merged_cells: true
+format: md
 ---
+
 
 ## 奖品素材
 

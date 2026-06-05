@@ -1,7 +1,9 @@
 ---
 title: "通过用户首选项实现数据持久化 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preferences-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 

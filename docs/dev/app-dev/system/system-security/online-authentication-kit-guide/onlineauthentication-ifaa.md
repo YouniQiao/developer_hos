@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "IFAA免密身份认证"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-ifaa
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -48,8 +50,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onli
 
 | 接口名 | 描述 |
 | --- | --- |
-| [register](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-ifaa-api#register)(registerData: Uint8Array): Promise<Uint8Array> | 开通指定用户的指定生物信息类型（指纹/3D人脸）的IFAA免密身份认证能力。 |
-| [auth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-ifaa-api#auth)(authToken: Uint8Array, authData: Uint8Array): Promise<Uint8Array> | 使用指定用户的生物信息类型进行IFAA免密身份认证。 |
+| [register](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-ifaa-api#register)(registerData: Uint8Array): Promise\<Uint8Array\> | 开通指定用户的指定生物信息类型（指纹/3D人脸）的IFAA免密身份认证能力。 |
+| [auth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-ifaa-api#auth)(authToken: Uint8Array, authData: Uint8Array): Promise\<Uint8Array\> | 使用指定用户的生物信息类型进行IFAA免密身份认证。 |
 | [deregisterSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-ifaa-api#deregistersync)(deregisterData: Uint8Array): void | 注销指定用户指定生物信息类型（指纹/3D人脸）的IFAA免密身份认证能力。 |
 | [getAnonymousIdSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-ifaa-api#getanonymousidsync)(userToken: Uint8Array): Uint8Array | 获取移动端设备标识ID。 |
 

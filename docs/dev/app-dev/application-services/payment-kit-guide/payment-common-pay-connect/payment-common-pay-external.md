@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "纯外部支付场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-external
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -73,9 +75,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/paym
 
 | 接口名 | 描述 |
 | --- | --- |
-| cashierPicker(context: common.UIAbilityContext, paymentInfo: PaymentInfo): Promise<PickerResult> | 拉起Payment Kit通用收银台（不含华为支付）。 |
-| requestPayment(context: common.UIAbilityContext, orderStr: string, payload: string): Promise<PayResult> | 跳转三方支付收银台。 |
-| pay(payInfo: string): Promise<void>; | 拉起三方支付收银台。 |
+| cashierPicker(context: common.UIAbilityContext, paymentInfo: PaymentInfo): Promise\<PickerResult\> | 拉起Payment Kit通用收银台（不含华为支付）。 |
+| requestPayment(context: common.UIAbilityContext, orderStr: string, payload: string): Promise\<PayResult\> | 跳转三方支付收银台。 |
+| pay(payInfo: string): Promise\<void\>; | 拉起三方支付收银台。 |
 | handlePayCallback(want: Want): boolean; | 三方支付结果回调同步华为支付收银台。 |
 
 ## 开发步骤

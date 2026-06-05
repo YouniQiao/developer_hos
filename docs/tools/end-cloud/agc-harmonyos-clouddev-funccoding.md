@@ -2,7 +2,9 @@
 
 title: "开发函数"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 开发函数
 

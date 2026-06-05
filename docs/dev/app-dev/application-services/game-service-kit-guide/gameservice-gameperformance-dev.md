@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "游戏场景感知（可选）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-dev
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-config-agc)**

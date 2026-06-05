@@ -1,7 +1,9 @@
 ---
 title: "应用文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file
+format: md
 ---
+
 
 * **[应用文件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-overview)**
 * **[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)**

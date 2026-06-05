@@ -2,7 +2,9 @@
 title: "视图：数字图片&lt;ImageNumber&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-imagenumber-0000002504354859
+format: md
 ---
+
 
 # 视图：数字图片&lt;ImageNumber&gt;
 

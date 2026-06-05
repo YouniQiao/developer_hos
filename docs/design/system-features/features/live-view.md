@@ -2,7 +2,9 @@
 title: 实况窗
 sidebar_label: 实况窗
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861
+format: md
 ---
+
 # 实况窗
 
 实况窗是一种帮助用户聚焦进行中任务、方便快速查看和即时处理的消息提醒。包含卡片态、胶囊态、沉浸态。

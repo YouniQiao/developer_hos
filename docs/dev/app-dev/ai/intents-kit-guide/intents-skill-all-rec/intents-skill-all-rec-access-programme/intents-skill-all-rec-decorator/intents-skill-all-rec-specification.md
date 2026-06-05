@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义意图相关信息定义规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-specification
+format: md
 ---
+
 
 Intents Kit支持开发者自定义意图，开发者可通过在其代码上添加自然语言装饰器接入，装饰器中相关信息建议参考以下规范，以便于大模型更好的理解和分发调用。
 

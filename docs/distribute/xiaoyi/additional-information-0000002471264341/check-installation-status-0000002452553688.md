@@ -2,7 +2,9 @@
 title: "查询应用安装状态"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/check-installation-status-0000002452553688
+format: md
 ---
+
 
 # 查询应用安装状态
 

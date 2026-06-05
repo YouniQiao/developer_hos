@@ -1,7 +1,9 @@
 ---
 title: "获取文件URI"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-get-file-url
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -13,8 +15,8 @@ Enterprise Data Guard Kit为应用提供获取文件路径信息的能力，该�
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getFileUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getfileuri)(path: string, callback: AsyncCallback<[FilePathInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#filepathinfo)>): void | 使用Callback方式获取文件路径信息。 |
-| [getFileUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getfileuri-1)(path: string): Promise<[FilePathInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#filepathinfo)> | 使用Promise方式获取文件路径信息。 |
+| [getFileUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getfileuri)(path: string, callback: AsyncCallback[FilePathInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#filepathinfo)): void | 使用Callback方式获取文件路径信息。 |
+| [getFileUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getfileuri-1)(path: string): Promise[FilePathInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#filepathinfo) | 使用Promise方式获取文件路径信息。 |
 
 ## 开发步骤
 

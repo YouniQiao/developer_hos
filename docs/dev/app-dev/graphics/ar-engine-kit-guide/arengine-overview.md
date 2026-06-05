@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AR Engine简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-overview
+format: md
 ---
+
 
 AR Engine（AR引擎服务）是一个用于在HarmonyOS上构建增强现实应用的引擎，提供了运动跟踪、环境跟踪等空间计算能力。
 

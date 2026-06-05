@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "户外探险"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-adventures
+format: md
 ---
+
 
 户外探险相关锻炼记录类型如下：
 

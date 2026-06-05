@@ -1,7 +1,9 @@
 ---
 title: "UI相关应用崩溃常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-crash-issues
+format: md
 ---
+
 
 本文档收集整理了一些常见的会导致应用崩溃的ArkUI API错误用法，旨在帮助开发者了解这些会导致应用崩溃问题的错误用法，从而避免在实际应用开发过程中犯类似错误。
 

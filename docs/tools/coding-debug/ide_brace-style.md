@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/brace-style"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/brace-style
 

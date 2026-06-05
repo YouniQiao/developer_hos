@@ -4,6 +4,7 @@ title: "DevEco Studio启动报错：“Scan files to index fail”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-16
 ---
 
+
 **问题现象**
 
 在DevEco Studio上打开项目工程时，启动缓慢，且一会儿后报错：“Scan files to index fail”。

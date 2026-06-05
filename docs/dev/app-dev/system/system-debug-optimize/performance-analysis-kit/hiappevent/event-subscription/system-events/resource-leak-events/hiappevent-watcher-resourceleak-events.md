@@ -1,7 +1,9 @@
 ---
 title: "资源泄漏事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events
+format: md
 ---
+
 
 ## 简介
 
@@ -26,11 +28,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiap
 
 | 接口名 | 描述 |
 | --- | --- |
-| setEventConfig(name: string, config: Record<string, ParamType>): Promise<void> | 设置资源泄漏日志规格参数，name应为资源泄漏事件名称常量hiappevent.event.RESOURCE\_OVERLIMIT。**仅支持js内存泄漏类型。**  **说明**：从API version 20开始，支持该接口。 |
+| setEventConfig(name: string, config: Record\<string, ParamType\>): Promise\<void\> | 设置资源泄漏日志规格参数，name应为资源泄漏事件名称常量hiappevent.event.RESOURCE\_OVERLIMIT。**仅支持js内存泄漏类型。**  **说明**：从API version 20开始，支持该接口。 |
 
 ### 参数设置
 
-开发者可以使用HiAppEvent提供的接口，在Record<string, ParamType>中设置RESOURCE\_OVERLIMIT的日志和回调事件规格。具体参数说明如下：
+开发者可以使用HiAppEvent提供的接口，在Record\<string, ParamType\>中设置RESOURCE\_OVERLIMIT的日志和回调事件规格。具体参数说明如下：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
@@ -67,7 +69,7 @@ hiAppEvent.setEventConfig(hiappEvent.event.RESOURCE_OVERLIMIT, configParams);
 
 | 接口名 | 描述 |
 | --- | --- |
-| [configEventPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventconfigeventpolicy22) (policy: EventPolicy): Promise<void> | 设置资源泄漏事件策略参数接口，支持开启资源泄漏事件的页面切换日志采集。 |
+| [configEventPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventconfigeventpolicy22) (policy: EventPolicy): Promise\<void\> | 设置资源泄漏事件策略参数接口，支持开启资源泄漏事件的页面切换日志采集。 |
 
 ### configEventPolicy接口参数设置说明
 
@@ -163,4 +165,4 @@ hiAppEvent.configEventPolicy(switchLogPolicy).then(() => {
 
 | 接口名 | 描述 |
 | --- | --- |
-| setEventParam(params: Record<string, ParamType>, domain: string, name?: string): Promise<void> | 事件自定义参数设置方法。  **说明**：从API version 20开始，支持该接口。 |
+| setEventParam(params: Record\<string, ParamType\>, domain: string, name?: string): Promise\<void\> | 事件自定义参数设置方法。  **说明**：从API version 20开始，支持该接口。 |

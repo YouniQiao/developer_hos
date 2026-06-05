@@ -4,6 +4,7 @@ source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-rec
 format: md
 ---
 
+
 # 设备标识使用推荐
 
 ## 概述

@@ -2,7 +2,9 @@
 title: 新闻阅读类
 sidebar_label: 新闻阅读类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples4-0000001746657290
+format: md
 ---
+
 # 新闻阅读类
 
 新闻阅读类应用，本质是信息的聚合。首页、详情页、阅读小说类页面是此类应用的典型核心场景。在宽屏设备中，首页需要进行延伸布局、重复布局等适配，以确保浏览效率更高；详情页使用左右布局往往能获得更舒适的阅读方式，达到边看边评的效果。阅读小说类页面适配时， 页面布局能够根据屏幕尺寸自动调整，保证用户在不同设备的阅读体验。

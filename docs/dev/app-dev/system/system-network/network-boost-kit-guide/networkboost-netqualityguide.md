@@ -1,7 +1,9 @@
 ---
 title: "网络质量"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netqualityguide
+format: md
 ---
+
 
 * **[网络质量评估](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback)**
 * **[网络场景识别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-scenecallback)**

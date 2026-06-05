@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "区划选择"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-division
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -45,7 +47,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [DistrictSelectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#districtselectoptions) | 区划选择页面初始选项。 |
-| [selectDistrict](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#selectdistrict)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), options: [DistrictSelectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#districtselectoptions)): Promise<[DistrictSelectResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#districtselectresult)> | 调出区划选择页面。 |
+| [selectDistrict](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#selectdistrict)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), options: [DistrictSelectOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#districtselectoptions)): Promise[DistrictSelectResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#districtselectresult) | 调出区划选择页面。 |
 | [DistrictSelectResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-scenemap#districtselectresult) | 区划选择结果。 |
 
 ## 开发步骤

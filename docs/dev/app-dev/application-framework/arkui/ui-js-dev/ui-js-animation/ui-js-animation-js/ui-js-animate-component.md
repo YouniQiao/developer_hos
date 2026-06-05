@@ -1,7 +1,9 @@
 ---
 title: "组件动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-component
+format: md
 ---
+
 
 еңЁз»„д»¶дёҠеҲӣе»әе’ҢиҝҗиЎҢеҠЁз”»зҡ„еҝ«жҚ·ж–№ејҸгҖӮе…·дҪ“з”Ёжі•иҜ·еҸӮиҖғ[йҖҡз”Ёж–№жі•](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-methods)гҖӮ
 

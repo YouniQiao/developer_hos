@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-performance-no-dynamic-cls-func"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-performance-no-dynamic-cls-func
 

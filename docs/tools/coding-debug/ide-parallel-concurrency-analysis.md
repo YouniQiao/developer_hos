@@ -1,7 +1,9 @@
 ---
 title: "并行并发：Concurrency分析"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 并行并发：Concurrency分析
 

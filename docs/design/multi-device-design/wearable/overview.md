@@ -2,7 +2,9 @@
 title: 概述
 sidebar_label: 概述
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/wearable-overview-0000002197410498
+format: md
 ---
+
 # 概述
 
 智能穿戴已经成为继手机之后，用户生活中极为重要的贴身辅助设备，是我们的生活助手，健康管家，亦是运动教练。

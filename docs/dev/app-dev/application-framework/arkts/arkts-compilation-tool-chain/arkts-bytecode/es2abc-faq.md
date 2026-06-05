@@ -1,7 +1,9 @@
 ---
 title: "方舟字节码生成常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/es2abc-faq
+format: md
 ---
+
 
 ## 字节码生成流程
 
@@ -33,11 +35,11 @@ The size of programs is expected to be 434, but is 432
 
 查看工程和har包的build-profile.json5文件中的“compatibleSdkVersionStage”字段，将工程中的“compatibleSdkVersionStage”字段调整至大于或者等于har包中的版本。
 
-## 编译时报Field {&harname/Index&1.0.0.moduleRecordIdx} has different value错误
+## 编译时报Field \{&harname/Index&1.0.0.moduleRecordIdx\} has different value错误
 
 **问题现象**
 
-编译时报Field {&harname/Index&1.0.0.moduleRecordIdx} has different value错误
+编译时报Field \{&harname/Index&1.0.0.moduleRecordIdx\} has different value错误
 
 ```
 hvigor Finished :entry:default@DoNativeStrip... after 258 ms

@@ -2,7 +2,9 @@
 title: "配置监测链接"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-configure-0000001351658397
+format: md
 ---
+
 # 配置监测链接
 
 ## 操作步骤

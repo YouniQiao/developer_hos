@@ -4,6 +4,7 @@ title: "web组件访问过程中的illegal、fraud、risk和warning这4个风险
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-79
 ---
 
+
 * illegal、fraud 禁止访问，没有继续浏览的按钮。
 * risk 禁止访问，有继续浏览的按钮。
 * warning web内核不会主动拦截，仅展示警告提示，不提供继续访问的按钮。

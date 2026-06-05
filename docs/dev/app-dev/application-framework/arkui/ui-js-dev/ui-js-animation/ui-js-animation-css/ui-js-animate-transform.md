@@ -1,7 +1,9 @@
 ---
 title: "transform样式动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-transform
+format: md
 ---
+
 
 设置transform属性对组件进行旋转、缩放、移动和倾斜。
 

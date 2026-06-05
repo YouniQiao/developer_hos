@@ -2,7 +2,9 @@
 title: "命令：运动健康数据刷新命令&lt;RefreshHealthyCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-refreshhealthy-0000002504275017
+format: md
 ---
+
 
 # 命令：运动健康数据刷新命令&lt;RefreshHealthyCommand&gt;
 

@@ -1,7 +1,9 @@
 ---
 title: "分阶段发布（7天内自动更新）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-phased-releasing-7day-0000002488439705
+format: md
 ---
+
 
 ![](./img/5fdbf1b6.png)
 

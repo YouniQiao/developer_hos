@@ -1,7 +1,9 @@
 ---
 title: "获取位置信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-location-retrieval
+format: md
 ---
+
 
 位置子系统使用多种定位技术提供服务，如GNSS定位、基站定位、WLAN/蓝牙定位（基站定位、WLAN/蓝牙定位后续统称“网络定位技术”）；通过这些定位技术，无论用户设备在室内或是户外，都可以准确地确定设备位置。
 

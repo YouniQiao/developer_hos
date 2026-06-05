@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "篮球"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-basketball
+format: md
 ---
+
 
 篮球相关锻炼记录类型如下：
 

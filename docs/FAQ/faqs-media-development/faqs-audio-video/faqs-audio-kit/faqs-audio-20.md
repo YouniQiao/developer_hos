@@ -4,6 +4,7 @@ title: "如何在AVRecorder录制WAV格式的音频文件时正确配置AVRecord
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-20
 ---
 
+
 **问题现象**
 
 使用AVRecorder录制WAV格式音频时，发生异常错误。

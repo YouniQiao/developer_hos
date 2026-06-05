@@ -1,7 +1,9 @@
 ---
 title: "安全"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-security-development
+format: md
 ---
+
 
 * **[密钥管理](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-huks-guidelines)**
 * **[在线认证](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-online-auth-development)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "加载3DGS模型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-load
+format: md
 ---
+
 
 ## 适用场景
 
@@ -18,7 +20,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spat
 
 | 接口名 | 描述 |
 | --- | --- |
-| static loadGSNode(scene: [Scene](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene), params: [GSImportSettings](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gsimportsettings), parent?: [Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-nodes#node)): Promise<[GSNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gsnode)> | 加载3DGS模型。 |
+| static loadGSNode(scene: [Scene](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene), params: [GSImportSettings](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gsimportsettings), parent?: [Node](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-nodes#node)): Promise[GSNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gsnode) | 加载3DGS模型。 |
 
 ## 开发步骤
 

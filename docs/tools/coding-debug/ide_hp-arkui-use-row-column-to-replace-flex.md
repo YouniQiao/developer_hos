@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-use-row-column-to-replace-flex"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-use-row-column-to-replace-flex
 

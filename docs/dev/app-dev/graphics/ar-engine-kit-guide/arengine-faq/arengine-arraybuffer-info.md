@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "数据类型转换说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arraybuffer-info
+format: md
 ---
+
 
 在开发AR应用时，部分数据类型需要转换才能使用，以下进行汇总及示例。
 

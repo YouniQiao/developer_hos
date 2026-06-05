@@ -2,7 +2,9 @@
 title: "意图框架白皮书"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/intents-kit-white-paper-0000001855842156
+format: md
 ---
+
 
 # 意图框架白皮书
 

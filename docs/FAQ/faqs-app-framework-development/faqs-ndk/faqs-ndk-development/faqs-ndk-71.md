@@ -4,6 +4,7 @@ title: "多so相互依赖场景下如何解耦"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-71
 ---
 
+
 **问题现象**
 
 A模块包含a.so，B模块包含b.so。a.so调用b.so的函数，b.so也调用a.so的函数。按照正常编译步骤，无论先编译哪个so，都会编译失败。
@@ -14,7 +15,7 @@ A模块包含a.so，B模块包含b.so。a.so调用b.so的函数，b.so也调用a
 
 1. 修改代码和CMakeLists.txt文件，利用Native侧dlopen方法编译出liba.so和libb.so。生成的.so文件位于build/default/intermediates/cmake/default/obj目录下。
 
-   （注意一定要用extern "C" {}括起来、不然不能识别到对应的函数导致编译出错）
+   （注意一定要用extern "C" \{\}括起来、不然不能识别到对应的函数导致编译出错）
 
    ```
    // a.cpp

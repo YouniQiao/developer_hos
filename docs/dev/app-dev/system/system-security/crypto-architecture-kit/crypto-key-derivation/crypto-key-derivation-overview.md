@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "密钥派生介绍及算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-derivation-overview
+format: md
 ---
+
 
 在密码学中，密钥派生函数（Key derivation function，KDF）使用伪随机函数从诸如主密码或密码的秘密值中派生出一个或多个密钥。
 

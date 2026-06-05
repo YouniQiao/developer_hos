@@ -1,7 +1,9 @@
 ---
 title: "获取房间最新信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-geroomdetail-csharp-0000002361510676
+format: md
 ---
+
 
 本章将指导您实现获取房间最新信息的功能。
 

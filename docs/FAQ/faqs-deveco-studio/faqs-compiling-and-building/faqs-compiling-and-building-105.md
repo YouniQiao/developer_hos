@@ -4,6 +4,7 @@ title: "编译报错“no such file or directory, realpath 'xxx'”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-105
 ---
 
+
 **问题现象**
 
 DevEco Studio编译时出现错误，提示“no such file or directory, realpath 'xxx'”错误信息。![](./img/045ca6d9.png)

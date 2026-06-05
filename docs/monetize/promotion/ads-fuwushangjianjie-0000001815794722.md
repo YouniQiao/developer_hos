@@ -2,7 +2,9 @@
 title: "服务商体系简介"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-fuwushangjianjie-0000001815794722
+format: md
 ---
+
 # 服务商体系简介
 
 ## 概述

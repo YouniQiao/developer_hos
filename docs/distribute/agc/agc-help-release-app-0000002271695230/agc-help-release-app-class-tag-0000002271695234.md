@@ -1,7 +1,9 @@
 ---
 title: "配置应用分类、标签"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-class-tag-0000002271695234
+format: md
 ---
+
 
 用户会通过应用市场上的类别来发现他们想要的应用，设置的类别将影响到应用的曝光度。
 

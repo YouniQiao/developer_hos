@@ -2,7 +2,9 @@
 title: "4. 定向推送行为"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-04
+format: md
 ---
+
 # 4. 定向推送行为
 
 * 重点整治APP、SDK未以显著方式标示且未经用户同意，将收集到的用户搜索、浏览记录、使用习惯等个人信息，用于定向推送或广告精准营销，且未提供关闭该功能选项的行为。

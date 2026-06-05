@@ -4,6 +4,7 @@ title: "编译报错“The reason attribute are mandatory for user_grant permiss
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-159
 ---
 
+
 **错误描述**
 
 针对Har和Hsp模块，配置user\_grant权限时必须包含reason属性。

@@ -2,7 +2,9 @@
 title: "线下充值"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-offline-0000001328517610
+format: md
 ---
+
 # 线下充值
 
 ## 操作流程

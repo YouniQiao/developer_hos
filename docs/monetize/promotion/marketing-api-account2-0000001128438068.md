@@ -2,7 +2,9 @@
 title: "获取用户信息"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-account2-0000001128438068
+format: md
 ---
+
 # 获取用户信息
 
 调用该API接口，可以在您登录鲸鸿动能广告平台后查询并展示您的华为账号的基本信息。
@@ -30,7 +32,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
   Cache-Control: no-store
 
-  \{"displayName":"137\*\*\*\*\*\*38","openID":"MDFAMTAzODA3NDJANWNiaYTZiaZWNkYTcxOWFlY2E4N2M3ZDZmMDJkMGM4MGRAMjBjZWNlN2YyMGFmZGIxZWRmOTg3MDI2Nzk1OGEyY2IwMmE0MjAwYjA1ZGY3ZGUxNmJjN2Qw","headPictureURL":"https://upfile-drcn.platform.hicloud.com/FileServer/image/b.0610086200300000245.20200521231532.PwhgOVhUxTCLzd8vfvjVKnx9bmWtlUBG.1000.66140D63E80FF9D81F381F49462E30FF90C37B86EDD06CCAFF19CFC3C3C98921.png"\}
+  \\{"displayName":"137\*\*\*\*\*\*38","openID":"MDFAMTAzODA3NDJANWNiaYTZiaZWNkYTcxOWFlY2E4N2M3ZDZmMDJkMGM4MGRAMjBjZWNlN2YyMGFmZGIxZWRmOTg3MDI2Nzk1OGEyY2IwMmE0MjAwYjA1ZGY3ZGUxNmJjN2Qw","headPictureURL":"https://upfile-drcn.platform.hicloud.com/FileServer/image/b.0610086200300000245.20200521231532.PwhgOVhUxTCLzd8vfvjVKnx9bmWtlUBG.1000.66140D63E80FF9D81F381F49462E30FF90C37B86EDD06CCAFF19CFC3C3C98921.png"\\}
 
   ==========================================================================================================
 

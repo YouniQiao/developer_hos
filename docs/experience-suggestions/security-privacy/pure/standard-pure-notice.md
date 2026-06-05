@@ -1,7 +1,9 @@
 ---
 title: "恶意弹窗"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-notice
+format: md
 ---
+
 
 # 恶意弹窗
 

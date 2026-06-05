@@ -1,7 +1,9 @@
 ---
 title: "代码开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/coding
+format: md
 ---
+
 
 * **[代码开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/develop-code-overview)**
 * **[C/C++标准库](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/c-cpp)**

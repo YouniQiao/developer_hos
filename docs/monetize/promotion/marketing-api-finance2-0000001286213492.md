@@ -2,7 +2,9 @@
 title: "查询账户充值记录"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-finance2-0000001286213492
+format: md
 ---
+
 # 查询账户充值记录
 
 ![](./img/note_3.0-zh-cn_14d3955a6ee1.png) 

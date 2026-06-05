@@ -4,6 +4,7 @@ title: "模拟器无法连接网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-26
 ---
 
+
 **问题现象**
 
 开发者在模拟器中开启WLAN选项并连接到VirtWifi后，仍无法访问网站。

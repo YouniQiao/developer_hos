@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "媒体开发概览"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimedia-development-overview
+format: md
 ---
+
 
 HarmonyOS提供丰富的一站式媒体业务开放能力，开发者能够在系统上快速开发主流的媒体业务，满足常规高频使用场景，并提供优秀的性能表现。
 

@@ -1,7 +1,9 @@
 ---
 title: "创建项目"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048
+format: md
 ---
+
 
 项目是资源、应用的组织实体。资源包括服务器、数据库、存储，以及您的应用、终端用户的数据等。在您使用部分服务时，您是数据的控制者，数据将按照您[设置的数据处理位置](https://developer.huawei.com/consumer/cn/doc/app/agc-help-data-location-0000002277923065)来存储在指定区域。
 

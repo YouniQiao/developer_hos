@@ -2,7 +2,9 @@
 title: 设计概述
 sidebar_label: 设计概述
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/concept-0000002353669657
+format: md
 ---
+
 # 设计概述
 
 电脑融合了屏幕触摸和键鼠的交互手段，保持便携性的同时能充分发挥设备生产力，帮助用户高效完成任务。

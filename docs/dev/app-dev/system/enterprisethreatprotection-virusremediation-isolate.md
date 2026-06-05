@@ -1,7 +1,9 @@
 ---
 title: "文件隔离"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-isolate
+format: md
 ---
+
 
 ## 基本概念
 
@@ -17,7 +19,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ente
 
 | 接口 | 描述 |
 | --- | --- |
-| isolateThreatFile(path: string): Promise<string> | 对指定路径文件进行隔离并获得隔离ID。 |
+| isolateThreatFile(path: string): Promise\<string\> | 对指定路径文件进行隔离并获得隔离ID。 |
 
 ## 开发步骤
 

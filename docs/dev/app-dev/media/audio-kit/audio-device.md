@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音频设备路由管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-device
+format: md
 ---
+
 
 * **[查询和监听音频输入设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-input-device-management)**
 * **[查询和监听音频输出设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-management)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "视频编码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding
+format: md
 ---
+
 
 视频编码是多媒体处理流程中的重要环节，功能是将未压缩的视频数据压缩成视频码流，旨在降低原始视频数据的大小以便存储或传输。视频编码支持同步模式与异步模式两种运行机制，两者主要区别为buffer获取方式的同异步之分，开发者可根据自身业务选择适合的接口调用模式。
 

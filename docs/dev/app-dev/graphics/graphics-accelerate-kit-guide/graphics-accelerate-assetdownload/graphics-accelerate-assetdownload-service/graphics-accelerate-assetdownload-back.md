@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "系统后台下载资源包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back
+format: md
 ---
+
 
 * **[extension系统托管下载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-system)**
 * **[extension协同下载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-self)**

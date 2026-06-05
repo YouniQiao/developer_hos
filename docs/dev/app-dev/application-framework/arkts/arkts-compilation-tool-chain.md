@@ -1,7 +1,9 @@
 ---
 title: "ArkTS编译工具链"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-compilation-tool-chain
+format: md
 ---
+
 
 * **[ArkTS编译工具链概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/compilation-tool-chain-overview)**
 * **[方舟字节码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode)**

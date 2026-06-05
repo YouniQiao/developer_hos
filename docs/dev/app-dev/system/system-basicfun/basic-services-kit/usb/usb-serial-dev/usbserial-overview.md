@@ -1,7 +1,9 @@
 ---
 title: "USB串口通信服务开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usbserial-overview
+format: md
 ---
+
 
 ## 简介
 

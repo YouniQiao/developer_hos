@@ -1,7 +1,9 @@
 ---
 title: "升级兼容"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/upgrade-compatible
+format: md
 ---
+
 
 # 升级兼容
 

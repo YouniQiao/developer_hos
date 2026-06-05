@@ -1,7 +1,9 @@
 ---
 title: "@correctness/image-interpolation-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/image-interpolation-check
 

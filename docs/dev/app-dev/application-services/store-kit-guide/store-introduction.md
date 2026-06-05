@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AppGallery Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-introduction
+format: md
 ---
+
 
 AppGallery Kit（应用市场服务）提供应用市场业务的对外开放能力，可以更好地支持应用的下载、推荐和分发等场景以提高在应用市场上的曝光度，以及为开发者提供便捷高效的数字商品服务的接入流程和交互体验，助力开发者商业变现。
 

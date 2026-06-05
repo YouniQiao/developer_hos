@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "分享时提示“您选择的文件不支持分享”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq-3
+format: md
 ---
+
 
 **现象描述：**
 

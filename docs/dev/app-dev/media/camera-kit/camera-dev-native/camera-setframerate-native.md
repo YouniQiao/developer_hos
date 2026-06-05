@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "动态调整预览帧率(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-setframerate-native
+format: md
 ---
+
 
 动态调整帧率是直播、视频等场景下控制预览效果的重要能力之一。应用可通过此能力，显式地控制流输出帧率，以适应不同帧率下的业务目标。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Audio Vivid能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid
+format: md
 ---
+
 
 * **[Audio Vivid能力介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-intro)**
 * **[Audio Vivid解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-avdemuxer)**

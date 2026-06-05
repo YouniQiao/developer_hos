@@ -2,7 +2,9 @@
 title: "政策介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-bonus-global_ocpd-overview-0000001627128700
+format: md
 ---
+
 # 政策介绍
 
 全域场景涵盖众多华为合作媒体，能有效扩大推广覆盖，是提升获量的必选手段。为降低开发者的试错成本，放心出价，全域推荐oCPD任务在推广初期提供成本保障能力，帮助任务快速起量。

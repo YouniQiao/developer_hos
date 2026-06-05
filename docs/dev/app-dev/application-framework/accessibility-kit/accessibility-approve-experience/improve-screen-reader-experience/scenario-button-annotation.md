@@ -1,7 +1,9 @@
 ---
 title: "按钮标注场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-button-annotation
+format: md
 ---
+
 
 ## 设计场景
 

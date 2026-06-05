@@ -2,7 +2,9 @@
 title: "Condition"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-condition-0000001181946369
+format: md
 ---
+
 # Condition
 
 ![](./img/57922974999f.png) 
@@ -53,7 +55,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-m
 | consume\_spender\_dev | O | String | 是否剁手党。  取值范围：   - 1：是 |
 | mobile\_entertainment\_pref\_dev | O | String | 手机娱乐偏好。  取值范围：   - 1：音乐爱好者 - 2：视频爱好者 - 3：短视频爱好者 - 4：电子书爱好者 - 5：听书爱好者 - 6：夜拍爱好者 - 7：旅游爱好者 - 8：摄影爱好者 - 9：自拍达人 - 10：运动爱好者 - 11：手游重度 - 12：社交达人 - 13：漫画迷二次元 |
 | app\_type\_installed\_v2\_dev | O | String | 已安装APP分类。  <strong>说明：</strong>此字段枚举值约120个，无法一一列举。如果您有需求可以联系华为行业运营提供。  示例：游戏\_角色扮演\_动作、应用\_运动健康\_运动 |
-| jnt\_oprn\_iap\_30dy\_pay\_amt\_up | O | String | 游戏累计支付金额。  取值范围：   - 0\_5：(0,5] - 5\_10：(5,10] - 10\_20：(10,20] - 20\_50：(20,50] - 50\_100：(50,100] - 100\_500：(100,500] - 500\_1000：(500,1000] - 1000\_2000：(1000,2000] - 2000+\}：(2000,+∞) |
+| jnt\_oprn\_iap\_30dy\_pay\_amt\_up | O | String | 游戏累计支付金额。  取值范围：   - 0\_5：(0,5] - 5\_10：(5,10] - 10\_20：(10,20] - 20\_50：(20,50] - 50\_100：(50,100] - 100\_500：(100,500] - 500\_1000：(500,1000] - 1000\_2000：(1000,2000] - 2000+\\}：(2000,+∞) |
 | travel\_lover\_flag | O | String | 是否是旅游爱好者。  取值范围：   - 1：是 |
 | not\_actived\_seg\_dev | O | String | APP当前安装未活跃。  取值范围：   - 7：近7天未活跃 - 15：近15天未活跃 - 30：近30天未活跃 - 60：近60天未活跃 - 90+：近90天未活跃 - 180+：近180天未活跃 - 90：近90天未活跃（上报天数&gt;=85） - 180：近180天未活跃（上报天数&gt;=170） |
 | game\_play\_pref\_dev | O | String | 游戏属性偏好。  <strong>说明：</strong>此字段枚举值约76个，无法一一列举。如果您有需求可以联系华为行业运营提供。  示例：迷宫、机甲、战棋 |

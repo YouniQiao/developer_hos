@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "File Manager Service Kit（文件管理服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-manager-service-kit-guide
+format: md
 ---
+
 
 * **[File Manager Service Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-introduction)**
 * **[删除文件到回收站](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-deletetotrash)**

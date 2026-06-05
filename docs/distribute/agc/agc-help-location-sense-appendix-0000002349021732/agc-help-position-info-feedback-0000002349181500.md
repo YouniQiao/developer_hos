@@ -1,7 +1,9 @@
 ---
 title: "如何反馈位置信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-position-info-feedback-0000002349181500
+format: md
 ---
+
 
 当您注册信标或者POI位置时，如果提示**未查询到想要的位置信息**或者平台匹配的**位置信息有误**，您可通过花瓣地图或邮件两种方式反馈需要增加的位置。
 

@@ -1,7 +1,9 @@
 ---
 title: "常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/faqs-usb
+format: md
 ---
+
 
 ## 手机USB连接个人电脑时使用usbManager.getDevices获取的设备列表为空
 

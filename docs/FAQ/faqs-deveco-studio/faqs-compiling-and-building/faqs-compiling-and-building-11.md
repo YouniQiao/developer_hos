@@ -4,6 +4,7 @@ title: "编译报错“Property xxx does not exist on type 'typeof BuildProfile'
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-11
 ---
 
+
 **问题现象****1**
 
 使用自定义参数BuildProfile时，编译过程中未出现异常，但编译构建失败，提示“Property xxx does not exist on type 'typeof BuildProfile'”。

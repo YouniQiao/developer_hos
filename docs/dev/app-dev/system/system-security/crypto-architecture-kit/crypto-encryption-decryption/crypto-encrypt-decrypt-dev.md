@@ -1,7 +1,9 @@
 ---
 title: "加解密开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encrypt-decrypt-dev
+format: md
 ---
+
 
 * **[使用AES对称密钥（GCM模式）加解密(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-gcm)**
 * **[使用AES对称密钥（GCM模式）加解密(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-gcm-ndk)**

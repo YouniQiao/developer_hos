@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkts-no-use-any-export-current"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkts-no-use-any-export-current
 

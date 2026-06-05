@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "File Manager Service Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-introduction
+format: md
 ---
+
 
 File Manager Service Kit（文件管理服务）为开发者提供文件管理相关能力，开发者通过File Manager Service Kit完成文件删除到回收站、获取文件图标、解析文件快捷方式等功能，满足用户对文件管理的多样性诉求。
 

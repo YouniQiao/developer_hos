@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "优化PDF文档切换体验"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-switch-optimize
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-
 
 | 接口名 | 描述 |
 | --- | --- |
-| [loadDocument](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#loaddocument)(path: string, password?: string, initPageIndex?: number, onProgress?: Callback<number>): Promise<pdfService.ParseResult> | 加载PDF文档。 |
+| [loadDocument](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#loaddocument)(path: string, password?: string, initPageIndex?: number, onProgress?: Callback\<number\>): Promise\<pdfService.ParseResult\> | 加载PDF文档。 |
 | [setPageFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#setpagefit)(pageFit: pdfService.PageFit): void | 设置页面的适配模式。 |
 
 ## 示例代码

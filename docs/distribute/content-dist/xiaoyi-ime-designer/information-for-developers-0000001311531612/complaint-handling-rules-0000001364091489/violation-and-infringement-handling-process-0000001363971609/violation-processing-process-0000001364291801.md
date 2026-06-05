@@ -2,7 +2,9 @@
 title: "违规处理流程"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/violation-processing-process-0000001364291801
+format: md
 ---
+
 
 # 违规处理流程
 

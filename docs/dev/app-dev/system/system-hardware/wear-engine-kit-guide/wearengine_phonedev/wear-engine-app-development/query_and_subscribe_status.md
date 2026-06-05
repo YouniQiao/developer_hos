@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "状态查询与订阅"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_and_subscribe_status
+format: md
 ---
+
 
 ![](./img/48644d18.png)
 
@@ -83,7 +85,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/quer
      + “佩戴状态”字段：EVENT\_WEAR\_STATUS\_CHANGED。
      + “心率告警”字段：EVENT\_HEART\_RATE\_ALARM。
      + “设备模式”字段：EVENT\_POWER\_MODE\_CHANGED。
-   * 通过[Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback)<[MonitorEventData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#monitoreventdata)>对象，返回设备状态的订阅结果。
+   * 通过[Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback)[MonitorEventData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#monitoreventdata)对象，返回设备状态的订阅结果。
 
    ```
    // 步骤3 获取MonitorClient对象

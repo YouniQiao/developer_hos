@@ -1,7 +1,9 @@
 ---
 title: "滑动过程流畅"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 滑动过程流畅
 

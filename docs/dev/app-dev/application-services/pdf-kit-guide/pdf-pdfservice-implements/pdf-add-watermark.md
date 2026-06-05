@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "添加、删除水印"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-watermark
+format: md
 ---
+
 
 对指定页面添加水印，包括文本水印或图片水印。
 

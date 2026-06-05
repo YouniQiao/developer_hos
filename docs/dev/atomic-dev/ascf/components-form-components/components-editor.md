@@ -1,7 +1,9 @@
 ---
 title: "editor"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-editor
+format: md
 ---
+
 
 富文本编辑器组件，可以对图片、文字进行编辑。
 

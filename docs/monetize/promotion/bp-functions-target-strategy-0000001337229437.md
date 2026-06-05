@@ -2,7 +2,9 @@
 title: "创建定向包"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-strategy-0000001337229437
+format: md
 ---
+
 # 创建定向包
 
 ## 进入定向管理页面

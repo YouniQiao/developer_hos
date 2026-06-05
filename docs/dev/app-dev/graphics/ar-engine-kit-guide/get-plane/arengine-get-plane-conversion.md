@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "平面识别介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-plane-conversion
+format: md
 ---
+
 
 AR Engine可以检测环境中的水平和竖直平面（如地面、墙面等），并识别平面边界。
 

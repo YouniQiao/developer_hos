@@ -1,7 +1,9 @@
 ---
 title: "应用集成三方库（har包）的兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
+format: md
 ---
+
 
 # 应用集成三方库（har包）的兼容性指导
 

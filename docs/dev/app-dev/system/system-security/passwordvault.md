@@ -1,7 +1,9 @@
 ---
 title: "密码自动填充服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault
+format: md
 ---
+
 
 * **[密码自动填充服务概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-overview)**
 * **[应用接入密码保险箱](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-apps)**

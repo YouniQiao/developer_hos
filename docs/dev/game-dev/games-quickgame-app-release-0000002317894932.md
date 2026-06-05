@@ -1,7 +1,9 @@
 ---
 title: "提交上架申请"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-app-release-0000002317894932
+format: md
 ---
+
 
 ## 准备资质文件
 

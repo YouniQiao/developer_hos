@@ -1,7 +1,9 @@
 ---
 title: "Web组件中如何通过手势滑动返回上一个Web页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-10
+format: md
 ---
+
 
 重写onBackPress函数，自定义返回逻辑，通过WebViewController提供的两种接口：accessBackward或accessStep(-1)，都可以实现对web页面是否可以后退情况的判断，进而对web页面进行返回操作。参考代码如下：
 

@@ -1,7 +1,9 @@
 ---
 title: "C/C++标准库机制概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/c-cpp-overview
+format: md
 ---
+
 
 HarmonyOS NDK提供业界标准库[libc标准库](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/musl)、[c++标准库](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cpp)，本文用于介绍C/C++标准库在HarmonyOS中的机制，开发者了解这些机制有助于在NDK开发过程中避免相关问题。
 

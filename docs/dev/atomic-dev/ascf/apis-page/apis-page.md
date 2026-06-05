@@ -1,7 +1,9 @@
 ---
 title: "界面"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-page
+format: md
 ---
+
 
 * **[交互](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-interaction)**
 * **[导航栏](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-navigation)**

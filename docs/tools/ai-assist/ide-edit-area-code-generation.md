@@ -1,7 +1,9 @@
 ---
 title: "编辑区对话"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 编辑区对话
 

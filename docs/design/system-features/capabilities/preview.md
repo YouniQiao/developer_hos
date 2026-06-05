@@ -2,7 +2,9 @@
 title: 预览
 sidebar_label: 预览
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/preview-0000001957112409
+format: md
 ---
+
 # 预览
 
 “预览”功能通常指编辑详细文档内容之前，能先快速浏览或查看其内容。提供该系统级文件预览框架和能力，建立统一的“一步预览”体验。适用场景包含：

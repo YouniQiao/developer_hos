@@ -1,7 +1,9 @@
 ---
 title: "取消匹配"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-cancelmatch-csharp-0000002361670540
+format: md
 ---
+
 
 当玩家发起匹配后，中途若需要停止匹配，可以调用取消匹配接口来完成取消匹配的操作。
 

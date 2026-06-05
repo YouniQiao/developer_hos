@@ -1,7 +1,9 @@
 ---
 title: "Web加载的H5页面跳转后，如何避免原有页面注册的资源被清空"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-42
+format: md
 ---
+
 
 使用[runJavaScript](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascript)加载JS，是运行时注入，页面跳转后失效，可能会出现跳转后注册资源被清空的情况，使用[javaScriptOnDocumentStart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#javascriptondocumentstart11)注入JS是文档初始化时注入，适用于页面跳转场景，就不会出现H5跳转注册资源被清空的情况。
 

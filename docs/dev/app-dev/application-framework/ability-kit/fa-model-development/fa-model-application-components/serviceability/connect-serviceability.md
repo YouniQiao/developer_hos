@@ -1,7 +1,9 @@
 ---
 title: "连接ServiceAbility"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connect-serviceability
+format: md
 ---
+
 
 如果ServiceAbility需要与PageAbility或其他应用的ServiceAbility进行交互，则须创建用于连接的Connection。ServiceAbility支持其他Ability通过[connectAbility()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-ability-featureability#featureabilityconnectability7)方法与其进行连接。PageAbility的connectAbility()方法定义在[featureAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-ability-featureability)中，ServiceAbility的connectAbility()方法定义在[particleAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-ability-particleability)中。连接ServiceAbility的规则详见[组件启动规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules-fa)章节。在使用connectAbility()处理回调时，需要传入目标Service的[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)与[IAbilityConnection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-ability-connectoptions)的实例。[IAbilityConnection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-ability-connectoptions)提供了以下方法供开发者实现。
 

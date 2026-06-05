@@ -4,6 +4,7 @@ title: "onUnhandledException与onException回调分别什么时候触发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-37
 ---
 
+
 * [onUnhandledException](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-errorobserver#errorobserveronunhandledexception)：当异常未被任何try/catch或onException处理时触发，如用于记录崩溃日志或上报未知错误。
 * [onException](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-errorobserver#errorobserveronexception10)：在任务或异步操作中主动抛出异常时，系统会触发 onException 回调，例如网络请求失败、数据解析错误等。
 

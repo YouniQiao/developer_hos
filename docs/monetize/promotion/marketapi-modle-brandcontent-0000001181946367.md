@@ -2,7 +2,9 @@
 title: "BrandContent"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-brandcontent-0000001181946367
+format: md
 ---
+
 # BrandContent
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

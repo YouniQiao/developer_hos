@@ -1,7 +1,9 @@
 ---
 title: "新增互联网信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-addition-0000001834211037
+format: md
 ---
+
 
 ## 前提条件
 

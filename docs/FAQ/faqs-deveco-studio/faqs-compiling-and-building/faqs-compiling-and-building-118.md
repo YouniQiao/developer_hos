@@ -4,6 +4,7 @@ title: "编译报错“The path XX is not writable. please choose a new location
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-118
 ---
 
+
 **问题现象**
 
 在Mac上，通过打开DMG文件中的DevEco Studio图标启动DevEco Studio时，如果构建报错“The path XX is not writable. please choose a new location”，请选择一个新的位置。

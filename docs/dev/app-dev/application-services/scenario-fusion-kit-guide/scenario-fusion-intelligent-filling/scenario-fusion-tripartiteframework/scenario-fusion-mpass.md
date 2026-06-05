@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "mPaas框架+H5接入智能填充"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-mpass
+format: md
 ---
+
 
 ![](./img/44991ce1.png)
 

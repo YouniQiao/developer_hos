@@ -1,7 +1,9 @@
 ---
 title: "hiprofiler"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # hiprofiler
 

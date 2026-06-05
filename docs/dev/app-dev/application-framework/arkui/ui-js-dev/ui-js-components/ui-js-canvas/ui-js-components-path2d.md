@@ -1,7 +1,9 @@
 ---
 title: "Path2D对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-path2d
+format: md
 ---
+
 
 路径对象，支持通过对象的接口进行路径的描述，并通过Canvas的[stroke](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d#stroke-1)接口进行绘制。具体请参考[Path2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-path2d)。
 

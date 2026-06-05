@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Agent Framework Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-introduction
+format: md
 ---
+
 
 Agent Framework Kit（智能体框架服务）提供了拉起指定智能体的能力。
 

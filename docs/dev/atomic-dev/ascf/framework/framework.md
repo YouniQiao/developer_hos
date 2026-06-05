@@ -1,7 +1,9 @@
 ---
 title: "框架"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/framework
+format: md
 ---
+
 
 * **[文件结构](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/file-structure)**
 * **[配置](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/config)**

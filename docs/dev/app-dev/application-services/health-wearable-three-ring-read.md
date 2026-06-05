@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "实时三环数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-three-ring-read
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -24,7 +26,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heal
 
 | 接口名 | 描述 |
 | --- | --- |
-| [readActivityReport](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice#workoutreadactivityreport)(): Promise<[ActivityReport](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice#activityreport)> | 读取实时三环数据。 |
+| [readActivityReport](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice#workoutreadactivityreport)(): Promise[ActivityReport](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice#activityreport) | 读取实时三环数据。 |
 
 ## 开发前检查
 

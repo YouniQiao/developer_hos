@@ -1,7 +1,9 @@
 ---
 title: "开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-develop-state-develop
+format: md
 ---
+
 
 下面通过单团队、元服务分包和应用支持按需加载开发场景详细介绍一下开发态代码复用的开发流程：
 

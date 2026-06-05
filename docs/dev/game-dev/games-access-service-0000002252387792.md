@@ -1,7 +1,9 @@
 ---
 title: "集成华为服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-access-service-0000002252387792
+format: md
 ---
+
 
 * **[应用服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-access-introduction-0000002256144912)**
 * **[创新特性](https://developer.huawei.com/consumer/cn/doc/games-guides/games-development-0000002348656318)**

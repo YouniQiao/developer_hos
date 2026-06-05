@@ -1,7 +1,9 @@
 ---
 title: "@copyright"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @copyright
 

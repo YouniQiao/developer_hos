@@ -1,7 +1,9 @@
 ---
 title: "HML语法参考"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-hml
+format: md
 ---
+
 
 HML是一套类HTML的标记语言，通过组件，事件构建出页面的内容。页面具备数据绑定、事件绑定、列表渲染、条件渲染和逻辑控制等高级能力。
 
@@ -134,8 +136,8 @@ export default {
 
 冒泡事件绑定包括：
 
-* 绑定冒泡事件：on:{event}.bubble。on:{event}等价于on:{event}.bubble。
-* 绑定并阻止冒泡事件向上冒泡：grab:{event}.bubble。grab:{event}等价于grab:{event}.bubble。
+* 绑定冒泡事件：on:\{event\}.bubble。on:\{event\}等价于on:\{event\}.bubble。
+* 绑定并阻止冒泡事件向上冒泡：grab:\{event\}.bubble。grab:\{event\}等价于grab:\{event\}.bubble。
 
   ![](./img/bce2c06d.png)
 
@@ -184,8 +186,8 @@ Touch触摸类事件支持捕获，捕获阶段位于冒泡阶段之前，捕获
 
 捕获事件绑定包括：
 
-* 绑定捕获事件：on:{event}.capture。
-* 绑定并阻止事件向下传递：grab:{event}.capture。
+* 绑定捕获事件：on:\{event\}.capture。
+* 绑定并阻止事件向下传递：grab:\{event\}.capture。
 * 示例
 
   ```
@@ -350,7 +352,7 @@ export default {
 
 ## 逻辑控制块
 
-<block>控制块使得循环渲染和条件渲染变得更加灵活；block在构建时不会被当作真实的节点编译。注意block标签只支持for和if属性。
+\<block\>控制块使得循环渲染和条件渲染变得更加灵活；block在构建时不会被当作真实的节点编译。注意block标签只支持for和if属性。
 
 ```
 <!-- xxx.hml -->

@@ -1,7 +1,9 @@
 ---
 title: "在线匹配"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-matchplayer-js-0000002361510576
+format: md
 ---
+
 
 玩家个人通过发起在线匹配的方式，根据自定义规则中设置的等级、胜率等属性进行择优匹配。例如，当100个玩家选择了某一类型的游戏模式（比如排位赛等）进行匹配时，服务器根据这100个玩家的等级和胜率等自定义条件，为玩家进行匹配。
 

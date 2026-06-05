@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-devprocess
+format: md
 ---
+
 
 开发预加载，总体流程如下：
 

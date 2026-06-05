@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅音频卡顿事件（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-audio-jank-event-arkts
+format: md
 ---
+
 
 ## 接口说明
 

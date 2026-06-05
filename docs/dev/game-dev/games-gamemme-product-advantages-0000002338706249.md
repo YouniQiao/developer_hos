@@ -1,7 +1,9 @@
 ---
 title: "产品优势"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-product-advantages-0000002338706249
+format: md
 ---
+
 
 ## 游戏场景全覆盖
 

@@ -4,6 +4,7 @@ title: "如何实现下拉刷新和上滑加载的效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-235
 ---
 
+
 使用[onTouch事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#ontouch)，在putDownPullUpRefresh方法里判断触摸事件是否满足下拉刷新和上滑加载的条件，同时使用条件渲染判断是否显示刷新和加载的布局。
 
 参考代码如下：

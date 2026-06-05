@@ -1,7 +1,9 @@
 ---
 title: "C#（Native）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-csharp-native-0000002393227065
+format: md
 ---
+
 
 调用相关接口需要先完成初始化，初始化是通过创建实例来实现的。
 

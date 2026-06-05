@@ -1,7 +1,9 @@
 ---
 title: "输入设备开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputdevice-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,10 +21,10 @@ import { inputDevice } from '@kit.InputKit';
 
 | 接口名称 | 描述 |
 | --- | --- |
-| getDeviceList(): Promise<Array<number>> | 获取输入设备列表。 |
-| getKeyboardType(deviceId: number): Promise<KeyboardType> | 获取输入设备的键盘类型。 |
-| on(type: "change", listener: Callback<DeviceListener>): void | 监听输入设备的热插拔事件。 |
-| off(type: "change", listener?: Callback<DeviceListener>): void | 取消监听输入设备的热插拔事件。 |
+| getDeviceList(): Promise\<Array<number\>> | 获取输入设备列表。 |
+| getKeyboardType(deviceId: number): Promise\<KeyboardType\> | 获取输入设备的键盘类型。 |
+| on(type: "change", listener: Callback\<DeviceListener\>): void | 监听输入设备的热插拔事件。 |
+| off(type: "change", listener?: Callback\<DeviceListener\>): void | 取消监听输入设备的热插拔事件。 |
 
 ## 虚拟键盘弹出检测
 
@@ -103,4 +105,4 @@ struct Index {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/InputKit/ArkTSInputDevice/entry/src/main/ets/pages/Index.ets#L16-L131" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/InputKit/ArkTSInputDevice/entry/src/main/ets/pages/Index.ets#L16-L131" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>

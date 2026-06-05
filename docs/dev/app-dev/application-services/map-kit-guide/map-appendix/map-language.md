@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "支持的语言"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-language
+format: md
 ---
+
 
 ## 地图组件支持语言
 

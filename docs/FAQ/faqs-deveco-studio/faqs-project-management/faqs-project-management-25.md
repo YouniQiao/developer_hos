@@ -4,6 +4,7 @@ title: "ExternalCpp视图中显示SDK的系统API"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-25
 ---
 
+
 **问题现象**
 
 ExternalCpp视图中显示SDK的系统API。

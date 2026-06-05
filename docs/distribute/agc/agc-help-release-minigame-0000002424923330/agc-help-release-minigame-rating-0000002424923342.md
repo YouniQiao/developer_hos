@@ -1,7 +1,9 @@
 ---
 title: "配置内容分级"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-rating-0000002424923342
+format: md
 ---
+
 
 内容分级用于标识小游戏适宜的年龄分级，年龄分级在应用市场的游戏详情页向玩家展示，帮助玩家找到适合其年龄段的小游戏，从而为未成年人玩家打造纯净的游戏环境。
 

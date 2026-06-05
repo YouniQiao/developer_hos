@@ -4,6 +4,7 @@ title: "DevEco Studio AppAnalyzer-安装Python依赖错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-10
 ---
 
+
 **问题现象**
 
 安装Python依赖报错。
@@ -18,7 +19,7 @@ pip配置问题。
 
 1. 修改pip配置。
 
-   pip的配置文件位于用户根目录下的：~/.pip/pip.conf（Windows路径为：C:\Users\<UserName>\pip\pip.ini\*）。 开发者可以配置如下内容：
+   pip的配置文件位于用户根目录下的：~/.pip/pip.conf（Windows路径为：C:\Users\\<UserName\>\pip\pip.ini\*）。 开发者可以配置如下内容：
 
    ```
    [global]

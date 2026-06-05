@@ -2,7 +2,9 @@
 title: "位移动画&lt;PositionAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/positionanimation-0000001074099995
+format: md
 ---
+
 
 # 位移动画&lt;PositionAnimation&gt;
 

@@ -4,6 +4,7 @@ title: "如何解决子组件全屏后margin不会生效的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-32
 ---
 
+
 父组件全屏显示，子组件默认撑满。设置左右margin值后，子组件可能会超出屏幕范围。可以使用`constraintSize`属性限制子组件的最大宽高。参考代码如下：
 
 ```

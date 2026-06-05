@@ -4,6 +4,7 @@ title: "编译报错“Property 'XX' does not exist on type 'typeof BuildProfile
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-42
 ---
 
+
 **问题现象**
 
 本地HSP模块对外提供的接口中使用了未在HAP中定义的自定义参数BuildProfileFields。HAP引用了HSP中的该接口，导致编译失败，提示“Property 'XX' does not exist on type 'typeof BuildProfile'”。

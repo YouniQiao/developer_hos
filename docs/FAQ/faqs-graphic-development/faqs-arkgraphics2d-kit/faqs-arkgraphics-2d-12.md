@@ -4,6 +4,7 @@ title: "关于GL_TEXTURE_2D和GL_TEXTURE_EXTERNAL_OES纹理类型的选择问题
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-12
 ---
 
+
 **问题现象**
 
 在读取相册视频、解封装、解码和OpenGL处理过程中，解码后的数据通过NativeImage中对应的生产者端NativeWindow接收，NativeImage与OpenGL纹理绑定。但测试发现，解码输出的内容并未更新到OpenGL纹理，即未能获取到OpenGL纹理数据。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "App Linking Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-introduction
+format: md
 ---
+
 
 App Linking Kit（应用链接服务）提供了一系列增强的链接特性。
 

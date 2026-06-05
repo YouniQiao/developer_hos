@@ -2,7 +2,9 @@
 title: "在华为开发者联盟完成实名认证"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-1-0000001174557683
+format: md
 ---
+
 # 在华为开发者联盟完成实名认证
 
 在使用Marketing API前，需要先使用已经完成[实名认证](https://developer.huawei.com/consumer/cn/doc/start/itrna-0000001076878172)的华为开发者账号获取OAuth2.0授权令牌（access\_token）。您可以使用任意已完成实名认证的华为账号，包括您的鲸鸿动能广告的华为账号或者其它华为账号。

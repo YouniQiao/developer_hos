@@ -4,6 +4,7 @@ title: "ValuesBucket是否有可动态添加字段的方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-48
 ---
 
+
 **解决措施**
 
 ValuesBucket的实现如下：

@@ -1,7 +1,9 @@
 ---
 title: "社交分享跳转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/social-sharing-redirection
+format: md
 ---
+
 
 ## 概述
 
@@ -402,7 +404,7 @@ struct Index {
 * 用户被错误跳转到不适合的下载或支持页面。
 * 错误的文件提供（如直接提供APK下载而非对应平台软件）。
 
-通过UserAgent中的{OSName}字段识别HarmonyOS系统，同时通过UserAgent中的{OSName}和{OSVersion}字段识别HarmonyOS系统及版本。
+通过UserAgent中的\{OSName\}字段识别HarmonyOS系统，同时通过UserAgent中的\{OSName\}和\{OSVersion\}字段识别HarmonyOS系统及版本。
 
 ```
 function matchHarmonyOS() {

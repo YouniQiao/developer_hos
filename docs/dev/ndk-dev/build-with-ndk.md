@@ -1,7 +1,9 @@
 ---
 title: "构建NDK工程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk
+format: md
 ---
+
 
 * **[NDK工程构建概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-overview)**
 * **[使用DevEco Studio模板构建NDK工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-ide)**

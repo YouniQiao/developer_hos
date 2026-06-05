@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "已连接对端设备查询"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_query_connected_devices
+format: md
 ---
+
 
 Wear Engine提供查询用户在穿戴侧已连接的对端设备列表的接口。
 

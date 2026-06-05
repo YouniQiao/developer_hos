@@ -4,6 +4,7 @@ title: "Web开发（ArkWeb）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-kit
 ---
 
+
 * **[Web组件的onLoadIntercept返回结果是否影响onInterceptRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-2)**
 * **[为什么Web组件的onKeyEvent键盘事件不生效](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-3)**
 * **[onInterceptRequest拦截URL并自定义HTML文件，页面加载失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-4)**

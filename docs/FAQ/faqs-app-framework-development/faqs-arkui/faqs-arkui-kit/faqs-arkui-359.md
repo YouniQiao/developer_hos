@@ -4,6 +4,7 @@ title: "在深色模式切换下如何适配状态栏颜色"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-359
 ---
 
+
 **问题描述**
 
 在深色模式下，状态栏颜色与背景色对比度不足，导致内容难以辨认。

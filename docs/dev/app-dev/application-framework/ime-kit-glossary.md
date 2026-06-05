@@ -1,7 +1,9 @@
 ---
 title: "输入法开发服务术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-glossary
+format: md
 ---
+
 
 ## B
 

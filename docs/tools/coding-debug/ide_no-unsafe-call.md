@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-unsafe-call"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-unsafe-call
 

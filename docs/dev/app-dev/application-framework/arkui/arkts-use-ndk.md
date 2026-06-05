@@ -1,7 +1,9 @@
 ---
 title: "UI开发 (基于NDK构建UI)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-ndk
+format: md
 ---
+
 
 * **[基于NDK构建UI概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-ui-overview)**
 * **[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)**

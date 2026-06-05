@@ -1,7 +1,9 @@
 ---
 title: "元服务开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-development
+format: md
 ---
+
 
 * **[元服务开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation)**
 * **[元服务框架开发](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-framework-development)**

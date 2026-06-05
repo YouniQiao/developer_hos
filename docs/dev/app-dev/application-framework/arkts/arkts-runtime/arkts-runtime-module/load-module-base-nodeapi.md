@@ -1,7 +1,9 @@
 ---
 title: "基于Node-API加载模块"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/load-module-base-nodeapi
+format: md
 ---
+
 
 Node-API中有多种方式支持开发者在C++侧加载工程内模块及文件。推荐使用napi\_load\_module\_with\_info接口。
 

@@ -1,7 +1,9 @@
 ---
 title: "@performance/lottie-animation-destroy-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/lottie-animation-destroy-check
 

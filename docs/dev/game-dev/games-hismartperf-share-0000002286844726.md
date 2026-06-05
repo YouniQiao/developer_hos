@@ -1,7 +1,9 @@
 ---
 title: "分享报告"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-share-0000002286844726
+format: md
 ---
+
 
 工具支持在本地或云端分享测试报告。
 

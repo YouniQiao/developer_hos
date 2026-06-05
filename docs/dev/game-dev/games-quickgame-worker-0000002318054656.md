@@ -1,7 +1,9 @@
 ---
 title: "多线程Worker"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-worker-0000002318054656
+format: md
 ---
+
 
 ## 场景介绍
 

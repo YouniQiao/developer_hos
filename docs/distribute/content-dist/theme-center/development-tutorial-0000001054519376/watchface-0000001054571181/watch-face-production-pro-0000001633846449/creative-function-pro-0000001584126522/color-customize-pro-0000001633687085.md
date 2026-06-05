@@ -2,7 +2,9 @@
 title: "颜色自定义"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/color-customize-pro-0000001633687085
+format: md
 ---
+
 
 # 颜色自定义
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "搜索关键字"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-search
+format: md
 ---
+
 
 预览PDF文档时，可以对页面的关键词（英文字符不区分大小写）进行搜索并高亮显示，同时使用[setSearchIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#setsearchindex)方法高亮显示指定的搜索结果。
 
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-
 
 | 接口名 | 描述 |
 | --- | --- |
-| [searchKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#searchkey)(text: string, listener: Callback<number>): void | 搜索文本并返回匹配的总数。 |
+| [searchKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#searchkey)(text: string, listener: Callback\<number\>): void | 搜索文本并返回匹配的总数。 |
 | [clearSearch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#clearsearch)(): void | 清除搜索文本的高亮，等价于搜索空字符串 。 |
 | [setSearchIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#setsearchindex)(index: number): void | 设置搜索匹配结果的索引，页面会跳转到索引对应搜索结果处。 |
 | [getSearchIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#getsearchindex)(): number | 获取当前命中搜索关键字匹配结果的索引，执行搜索接口后默认命中索引为0。 |

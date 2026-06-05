@@ -1,7 +1,9 @@
 ---
 title: "消耗型/非消耗型/非续期订阅商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-promotion-non-subscription-0000002285973460
+format: md
 ---
+
 
 在HarmonyOS应用数字商品服务中，针对消耗型/非消耗型/非续期订阅商品，支持您设置两种订阅优惠类型，包含自定义人群促销、设置商品的临时价格调整计划。
 

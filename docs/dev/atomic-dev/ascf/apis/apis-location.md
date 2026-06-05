@@ -1,7 +1,9 @@
 ---
 title: "位置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-location
+format: md
 ---
+
 
 ## has.openLocation
 

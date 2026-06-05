@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "登山"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-mountain-hike
+format: md
 ---
+
 
 登山相关锻炼记录类型如下：
 

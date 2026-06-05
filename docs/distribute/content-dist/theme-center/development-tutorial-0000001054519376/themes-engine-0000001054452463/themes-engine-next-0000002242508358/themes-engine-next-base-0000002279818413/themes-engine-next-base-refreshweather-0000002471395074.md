@@ -2,7 +2,9 @@
 title: "命令：天气数据刷新命令&lt;RefreshWeatherCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-refreshweather-0000002471395074
+format: md
 ---
+
 
 # 命令：天气数据刷新命令&lt;RefreshWeatherCommand&gt;
 

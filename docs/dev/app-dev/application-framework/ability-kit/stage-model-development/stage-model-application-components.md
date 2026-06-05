@@ -1,7 +1,9 @@
 ---
 title: "Stage模型应用组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-application-components
+format: md
 ---
+
 
 * **[应用/组件级配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-component-configuration-stage)**
 * **[UIAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability)**

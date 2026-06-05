@@ -1,7 +1,9 @@
 ---
 title: "开发者自验证"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/self-verification
+format: md
 ---
+
 
 ## 简介
 
@@ -13,20 +15,20 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/self
 
 ### 应用沙箱数据准备
 
-请自行构造APK应用沙箱数据，并将构造好的APK应用沙箱数据按指定格式打包成“{APK包名}.zip”。
+请自行构造APK应用沙箱数据，并将构造好的APK应用沙箱数据按指定格式打包成“\{APK包名\}.zip”。
 
 ![](./img/ea6e6e8c.png)
 
-在打包‘{APK包名}.zip’文件时，必须使用UTF-8编码格式进行压缩，否则压缩中文命名的文件时，文件名会出现乱码。
+在打包‘\{APK包名\}.zip’文件时，必须使用UTF-8编码格式进行压缩，否则压缩中文命名的文件时，文件名会出现乱码。
 
-| **APK应用沙箱目录** | {APK包名}.zip目录 |
+| **APK应用沙箱目录** | \{APK包名\}.zip目录 |
 | --- | --- |
-| /data/user\_de/{userId}/{APK包名}/ | {APK包名}/de |
-| /data/user/{userId}/{APK包名}/ | {APK包名}/ce |
-| /data/media/{userId}/Android/data/{APK包名}/ | {APK包名}/A/data |
-| /data/media/{userId}/Android/obb/{APK包名}/ | {APK包名}/A/obb |
+| /data/user\_de/\{userId\}/\{APK包名\}/ | \{APK包名\}/de |
+| /data/user/\{userId\}/\{APK包名\}/ | \{APK包名\}/ce |
+| /data/media/\{userId\}/Android/data/\{APK包名\}/ | \{APK包名\}/A/data |
+| /data/media/\{userId\}/Android/obb/\{APK包名\}/ | \{APK包名\}/A/obb |
 
-打包好的“{APK包名}.zip”解压后，要满足包含一个“APK包名”根目录，根目录下包含对应沙箱目录文件夹，文件结构如下。
+打包好的“\{APK包名\}.zip”解压后，要满足包含一个“APK包名”根目录，根目录下包含对应沙箱目录文件夹，文件结构如下。
 
 ```
 ─com.demo.demo
@@ -37,12 +39,12 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/self
     └─de
 ```
 
-1. 将打包好的“{APK包名}.zip”推送到外部存储设备（U盘或者移动硬盘），连接终端设备和外部存储设备。
+1. 将打包好的“\{APK包名\}.zip”推送到外部存储设备（U盘或者移动硬盘），连接终端设备和外部存储设备。
 
    ![](./img/e12a1556.png)
 
    当前终端设备支持识别NTFS格式的外部存储设备，请使用NTFS格式的外部存储设备连接终端设备。
-2. 在终端设备中，打开“文件管理”应用，长按选中外部存储设备中的“{APK包名}.zip”。
+2. 在终端设备中，打开“文件管理”应用，长按选中外部存储设备中的“\{APK包名\}.zip”。
 
    ![](./img/4de4e5dd.png)
 

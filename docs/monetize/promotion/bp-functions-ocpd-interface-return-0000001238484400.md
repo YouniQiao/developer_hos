@@ -2,7 +2,9 @@
 title: "回传用户行为数据接口"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-return-0000001238484400
+format: md
 ---
+
 # 回传用户行为数据接口
 
 ## 功能介绍
@@ -29,7 +31,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-token-0000001238324536)中获取的access\_token。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\\{access\_token\\}”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-token-0000001238324536)中获取的access\_token。 |
 | charset | O | String | 编码格式。  如果需要在华为应用市场应用推广平台的任务列表中展示“付费金额”字段，则请求头中请携带<strong>charset</strong>字段值为<strong>utf-8</strong>。 |
 
 ### Body

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "配置签名"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-sign
+format: md
 ---
+
 
 在DevEco Studio上，参考[创建一个新的工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)和[配置调试签名（自动签名）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)完成工程应用的创建及签名配置，从而确保能顺利完成项目的编译与开发。
 

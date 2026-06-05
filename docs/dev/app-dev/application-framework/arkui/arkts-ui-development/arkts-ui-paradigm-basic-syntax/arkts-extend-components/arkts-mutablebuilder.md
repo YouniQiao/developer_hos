@@ -1,7 +1,9 @@
 ---
 title: "mutableBuilder：实现全局@Builder动态更新"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-mutablebuilder
+format: md
 ---
+
 
 当在一个自定义组件内使用多个全局[@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)函数实现UI的不同效果时，代码维护将变得非常困难，且页面不够整洁。此时，可以使用[wrapBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrapbuilder)封装全局@Builder。但是wrapBuilder不支持动态切换@Builder，引入[mutableBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mutablebuilder)实现全局@Builder的动态切换。
 

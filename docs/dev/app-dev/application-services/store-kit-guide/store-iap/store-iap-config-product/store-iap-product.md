@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "数字商品介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product
+format: md
 ---
+
 
 数字商品服务为接入应用内购买的应用提供了[展示数字商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-query)、[购买数字商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-purchase)、[发放数字商品权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-delivering)的功能。
 

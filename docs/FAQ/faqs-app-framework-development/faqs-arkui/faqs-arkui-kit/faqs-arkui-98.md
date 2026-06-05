@@ -4,6 +4,7 @@ title: "如何设置组件不同状态下的样式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-98
 ---
 
+
 使用多态样式，在组件的StateStyles接口中，定义组件不同状态下的样式。参考代码如下：
 
 ```

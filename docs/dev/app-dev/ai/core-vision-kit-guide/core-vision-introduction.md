@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Core Vision Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction
+format: md
 ---
+
 
 Core Vision Kit（基础视觉服务）提供了机器视觉相关的基础能力，例如通用文字识别（即OCR，Optical Character Recognition，也称为光学字符识别）、人脸检测、人脸比对以及主体分割等能力。
 

@@ -1,7 +1,9 @@
 ---
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/prerequisites
+format: md
 ---
+
 
 应用在开发用户身份认证功能时，需要先了解以下流程，并根据实际需求参考对应指导开发。
 

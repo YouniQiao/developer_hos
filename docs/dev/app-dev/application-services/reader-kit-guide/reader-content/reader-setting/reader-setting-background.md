@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义页面背景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-background
+format: md
 ---
+
 
 当应用需要支持自定义背景时，开发者可通过[ReaderSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#readersetting)的themeColor及themeBgImg属性，实现对阅读内容自定义背景色及背景图片的实时修改。
 

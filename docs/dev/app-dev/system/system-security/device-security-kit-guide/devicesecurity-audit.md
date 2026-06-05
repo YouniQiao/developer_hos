@@ -1,7 +1,9 @@
 ---
 title: "安全审计"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit
+format: md
 ---
+
 
 * **[单客户端订阅场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts-suevent)**
 * **[多客户端订阅场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts)**

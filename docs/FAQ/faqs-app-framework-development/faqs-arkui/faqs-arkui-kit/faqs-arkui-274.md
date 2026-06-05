@@ -4,6 +4,7 @@ title: "如何完成挖孔屏的适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-274
 ---
 
+
 1. 使用setWindowLayoutFullScreen和setWindowSystemBarEnable将窗口设置为全屏并隐藏顶部状态栏。
 
    ```

@@ -4,6 +4,7 @@ title: "工程编译告警提示“ArkTS:WARN: For details about ArkTS syntax er
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-30
 ---
 
+
 **问题现象**
 
 工程构建时，出现ArkTS语法告警提示，详情请参见FAQ。

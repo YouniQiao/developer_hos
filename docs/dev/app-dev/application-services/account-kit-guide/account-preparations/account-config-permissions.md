@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "申请账号权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions
+format: md
 ---
+
 
 请参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”章节，创建应用、使用DevEco Studio创建应用工程。
 

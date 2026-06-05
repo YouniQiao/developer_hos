@@ -1,7 +1,9 @@
 ---
 title: "主题设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-theme
+format: md
 ---
+
 
 * **[应用深浅色适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-dark-light-color-adaptation)**
 * **[设置应用内主题换肤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme_skinning)**

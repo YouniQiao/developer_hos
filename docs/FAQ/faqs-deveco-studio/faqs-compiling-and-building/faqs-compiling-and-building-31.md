@@ -4,6 +4,7 @@ title: "编译报错“ninja: error: mkdir(xxx): No such file or directory”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-31
 ---
 
+
 **问题现象**
 
 Native工程编译时出现以下告警和报错信息。

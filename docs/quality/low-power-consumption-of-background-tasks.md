@@ -1,7 +1,9 @@
 ---
 title: "后台任务低功耗"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-low-power-consumption-of-background-tasks
+format: md
 ---
+
 
 # 后台任务低功耗
 

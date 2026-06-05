@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "投播开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide
+format: md
 ---
+
 
 系统提供了音视频发声设备统一投播组件AVCastPicker，作为播控中心系统级设备切换、投播能力选择入口。应用通过接入统一投播组件，可以实现在应用内及系统播控中心，将音视频资源通过Cast+协议/DLNA协议投播到远端设备。
 
@@ -38,16 +40,16 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dist
 
 | 接口类 | 接口 | 说明 |
 | --- | --- | --- |
-| AVSession | setAVMetadata(data: AVMetadata, callback: AsyncCallback<void>): void | 配置媒体信息，包括ID、标题、作者以及DRM类型等。 |
+| AVSession | setAVMetadata(data: AVMetadata, callback: AsyncCallback\<void\>): void | 配置媒体信息，包括ID、标题、作者以及DRM类型等。 |
 | AVSession | on(type: 'outputDeviceChange', callback: (state: ConnectionState, device: OutputDeviceInfo) => void): void | 注册设备变化的回调，同时包含了设备的连接状态。 |
-| AVSession | getAVCastController(callback: AsyncCallback<AVCastController>): void | 获取远端投播时的控制接口。 |
-| AVCastController | sendControlCommand(command: AVCastControlCommand, callback: AsyncCallback<void>): void | 投播会话的控制接口，用于进行投播中的各种播控指令。 |
-| AVCastController | prepare(item: AVQueueItem, callback: AsyncCallback<void>): void | 准备播放，进行资源加载和缓冲，不会触发真正的播放。 |
-| AVCastController | start(item: AVQueueItem, callback: AsyncCallback<void>): void | 开始播放媒体资源。 |
-| AVCastController | processMediaKeyResponse(assetId: string, response: Uint8Array): Promise<void> | 提供DRM资源所需的秘钥。 |
+| AVSession | getAVCastController(callback: AsyncCallback\<AVCastController\>): void | 获取远端投播时的控制接口。 |
+| AVCastController | sendControlCommand(command: AVCastControlCommand, callback: AsyncCallback\<void\>): void | 投播会话的控制接口，用于进行投播中的各种播控指令。 |
+| AVCastController | prepare(item: AVQueueItem, callback: AsyncCallback\<void\>): void | 准备播放，进行资源加载和缓冲，不会触发真正的播放。 |
+| AVCastController | start(item: AVQueueItem, callback: AsyncCallback\<void\>): void | 开始播放媒体资源。 |
+| AVCastController | processMediaKeyResponse(assetId: string, response: Uint8Array): Promise\<void\> | 提供DRM资源所需的秘钥。 |
 | AVCastController | on(type: 'keyRequest', callback: KeyRequestCallback): void | 注册DRM秘钥请求的回调。 |
-| AVCastController | on(type: 'playbackStateChange', filter: Array<string> | 'all', callback: (state: AVPlaybackState) => void): void | 注册播放状态变化的回调。 |
-| AVCastController | on(type: 'mediaItemChange', callback: Callback<AVQueueItem>): void | 注册当前播放内容更新的回调，返回当前播放的内容的信息。 |
+| AVCastController | on(type: 'playbackStateChange', filter: Array\<string\> | 'all', callback: (state: AVPlaybackState) => void): void | 注册播放状态变化的回调。 |
+| AVCastController | on(type: 'mediaItemChange', callback: Callback\<AVQueueItem\>): void | 注册当前播放内容更新的回调，返回当前播放的内容的信息。 |
 
 ## 开发步骤
 

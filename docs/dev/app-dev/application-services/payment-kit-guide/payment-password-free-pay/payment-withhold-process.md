@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "签约代扣场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-withhold-process
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -46,8 +48,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/paym
 
 | 接口名 | 描述 |
 | --- | --- |
-| requestContract(context: common.UIAbilityContext, contractStr: string): Promise<void>; | 拉起Payment Kit签约收银台。 |
-| requestContract(context: common.UIAbilityContext, contractStr: string, callback: AsyncCallback<void>): void; | 拉起Payment Kit签约收银台。 |
+| requestContract(context: common.UIAbilityContext, contractStr: string): Promise\<void\>; | 拉起Payment Kit签约收银台。 |
+| requestContract(context: common.UIAbilityContext, contractStr: string, callback: AsyncCallback\<void\>): void; | 拉起Payment Kit签约收银台。 |
 
 ## 开发步骤
 

@@ -2,7 +2,9 @@
 title: "推荐受众人群"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/audience-recommendation-0000001201005640
+format: md
 ---
+
 # 推荐受众人群
 
 ## 概述

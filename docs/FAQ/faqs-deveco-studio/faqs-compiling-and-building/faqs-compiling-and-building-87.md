@@ -4,6 +4,7 @@ title: "编译报错：platform/OHOS to use this system, please post your config
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-87
 ---
 
+
 **问题描述**
 
 在编译C++库时出现多条警告。

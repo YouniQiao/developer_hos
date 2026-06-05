@@ -2,7 +2,9 @@
 title: "否定词绑定计划或任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-keywords4-0000001338532793
+format: md
 ---
+
 # 否定词绑定计划或任务
 
 您通过本接口可以将否定词对计划和任务进行绑定。

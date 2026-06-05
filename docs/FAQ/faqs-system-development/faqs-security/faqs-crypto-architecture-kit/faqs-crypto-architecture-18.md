@@ -1,7 +1,9 @@
 ---
 title: "如何将公钥转为十六进制或者base64进制数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-18
+format: md
 ---
+
 
 公钥转为十六进制或Base64编码数据，参考代码如下：
 

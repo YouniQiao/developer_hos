@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "上传至华为CDN的资源包文件支持哪些格式类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-1
+format: md
 ---
+
 
 华为CDN场景下，游戏资源包支持的格式类型如下：
 

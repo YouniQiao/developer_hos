@@ -1,7 +1,9 @@
 ---
 title: "基于服务账号生成鉴权令牌"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-token
+format: md
 ---
+
 
 ![](./img/114db86a.png)
 

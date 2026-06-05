@@ -1,7 +1,9 @@
 ---
 title: "CPU trace"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-cpu-trace-0000002321517301
+format: md
 ---
+
 
 CPU trace展示CPU调度、频点、进程线程时间片、绘帧、perf等数据的性能功耗，展示方式为泳道图，支持图形用户界面GUI操作、分析数据。
 

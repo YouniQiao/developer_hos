@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "内容搜索方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-content-search
+format: md
 ---
+
 
 ## 方案概述
 

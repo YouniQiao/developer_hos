@@ -1,7 +1,9 @@
 ---
 title: "Pen Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-introduction
+format: md
 ---
+
 
 Pen Kit（手写笔服务）是华为提供的一套手写套件，提供笔刷效果、笔迹编辑、报点预测、一笔成形、全局取色和手写交互的功能。Pen Kit可以为产品带来优质手写体验，为您创造更多的手写应用场景。
 

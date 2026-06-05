@@ -1,7 +1,9 @@
 ---
 title: "预览数据模拟"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 预览数据模拟
 

@@ -1,7 +1,9 @@
 ---
 title: "基础能力开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-basic-capability-development
+format: md
 ---
+
 
 * **[网络](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-network-development)**
 * **[数据](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-database)**

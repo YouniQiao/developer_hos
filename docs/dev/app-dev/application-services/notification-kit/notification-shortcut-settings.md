@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用内通知设置快捷入口开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-shortcut-settings
+format: md
 ---
+
 
 ## 使用场景
 

@@ -4,6 +4,7 @@ title: "如何正确地在CMakeLists.txt文件中配置头文件搜索路径"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-43
 ---
 
+
 请按照以下示例进行配置：
 
 **例1****：**
@@ -14,7 +15,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
 CMakeLists.txt配置头文件搜索路径：
 
-include\_directories(${NATIVERENDER\_ROOT\_PATH}/include)
+include\_directories($\{NATIVERENDER\_ROOT\_PATH\}/include)
 
 cpp文件中引用头文件:
 
@@ -28,7 +29,7 @@ cpp文件中引用头文件:
 
 CMakeLists.txt配置头文件搜索路径：
 
-include\_directories(${NATIVERENDER\_ROOT\_PATH})
+include\_directories($\{NATIVERENDER\_ROOT\_PATH\})
 
 cpp文件中引用头文件:
 
@@ -42,7 +43,7 @@ cpp文件中引用头文件:
 
 CMakeLists.txt配置头文件搜索路径：
 
-include\_directories(${NATIVERENDER\_ROOT\_PATH}/include)
+include\_directories($\{NATIVERENDER\_ROOT\_PATH\}/include)
 
 cpp文件中引用头文件:
 
@@ -56,7 +57,7 @@ cpp文件中引用头文件:
 
 CMakeLists.txt配置头文件搜索路径:
 
-include\_directories(${NATIVERENDER\_ROOT\_PATH}/include/test)
+include\_directories($\{NATIVERENDER\_ROOT\_PATH\}/include/test)
 
 cpp文件中引用头文件:
 

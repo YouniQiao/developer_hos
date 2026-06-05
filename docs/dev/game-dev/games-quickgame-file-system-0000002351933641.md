@@ -1,7 +1,9 @@
 ---
 title: "文件系统"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-file-system-0000002351933641
+format: md
 ---
+
 
 文件系统是华为快游戏提供的一套以游戏和用户维度隔离的存储以及一套相应的管理接口。通过qg全局对象可以获取到全局唯一的文件系统管理器，所有文件系统的管理操作通过qg调用，相关接口[qg.getFileSystemManager()](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-quickgame-runtime-file-0000002399676805#section10341171144119)。
 

@@ -1,7 +1,9 @@
 ---
 title: "调试命令"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debugging-commands
+format: md
 ---
+
 
 * **[SDK命令行工具简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/command-line-tools-overview)**
 * **[hdc](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)**

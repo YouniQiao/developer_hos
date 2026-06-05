@@ -1,7 +1,9 @@
 ---
 title: "输入法安全模式介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-security
+format: md
 ---
+
 
 为了保护用户数据安全，系统增加了输入法安全模式功能，包括基础模式和完整体验模式。在基础模式下，输入法扩展无法调用任何可能涉及访问或泄漏用户隐私数据的系统能力；而在完整体验模式下，则没有该限制。
 

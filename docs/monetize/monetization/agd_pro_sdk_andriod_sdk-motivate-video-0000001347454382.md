@@ -2,7 +2,9 @@
 title: "接入激励视频广告"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-motivate-video-0000001347454382
+format: md
 ---
+
 
 
 #### 创建AdsContext对象

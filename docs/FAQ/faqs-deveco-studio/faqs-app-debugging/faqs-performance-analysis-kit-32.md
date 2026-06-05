@@ -4,6 +4,7 @@ title: "真机设备连接后，执行“hdc list targets”命令结果为“[E
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-32
 ---
 
+
 **问题现象**
 
 执行hdc list targets命令后返回空列表[Empty]，设备未正常识别。
@@ -65,7 +66,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 二、清除设备告警。
 
-1. 打开本地注册表（regedit），导航至：计算机\HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{88bae032-5a81-49f0-bc3d-a4ff138216d6}。
+1. 打开本地注册表（regedit），导航至：计算机\HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Control\Class\\{88bae032-5a81-49f0-bc3d-a4ff138216d6\}。
 2. 在右侧列表中找到【UpperFilters】键，右键点击并选择修改，清空所有字符数据（建议在清空前备份数据）。最后，刷新或插拔设备，或重启PC，即可正常显示。
 
    ![](./img/82a97901.png "点击放大")

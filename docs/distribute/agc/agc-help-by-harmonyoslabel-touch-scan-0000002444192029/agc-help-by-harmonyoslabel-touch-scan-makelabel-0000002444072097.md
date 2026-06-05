@@ -1,7 +1,9 @@
 ---
 title: "制作标签"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-touch-scan-makelabel-0000002444072097
+format: md
 ---
+
 
 “碰扫合一”标签制作分为[NFC标签烧录](#section2362204119448)和[HarmonyOS标签数据下载及设计](#section2359405496)。
 

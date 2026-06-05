@@ -2,7 +2,9 @@
 title: "查询版位"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot1-0000001338581861
+format: md
 ---
+
 # 查询版位
 
 您通过本接口可以查询版位信息。

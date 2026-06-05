@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文件打印（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-print-file
+format: md
 ---
+
 
 ## HarmonyOS提供的两种打印方式
 

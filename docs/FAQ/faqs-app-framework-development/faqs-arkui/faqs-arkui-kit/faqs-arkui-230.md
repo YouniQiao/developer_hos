@@ -4,6 +4,7 @@ title: "Component如何监听应用前后台切换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-230
 ---
 
+
 应用的前后台生命周期与页面和组件无关，组件仅能感知aboutToAppear和aboutToDisappear事件。若组件需要感知应用的前后台切换，可以使用[ApplicationContext.on('applicationStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextonapplicationstatechange10)注册对当前应用前后台状态变化的监听。也可以设置一个应用前后台状态的变量。在UIAbility中对应的生命周期函数中更改此变量，并在组件中监听AppStorage状态变量的变化，执行相应的逻辑。
 
 参考代码如下：

@@ -1,7 +1,9 @@
 ---
 title: "查看应用关键指标"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-keyindex-0000002236332564
+format: md
 ---
+
 
 [应用分析总览](#section106851042192815)为您提供应用的分析总览数据；[应用分析概览](#section17943125854315)提供单个应用的关键KPI指标概览。
 

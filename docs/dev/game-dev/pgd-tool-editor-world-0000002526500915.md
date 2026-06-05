@@ -1,7 +1,9 @@
 ---
 title: "PGD World组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-editor-world-0000002526500915
+format: md
 ---
+
 
 PGD World组件为World管理模块。
 

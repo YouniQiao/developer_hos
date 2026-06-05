@@ -1,7 +1,9 @@
 ---
 title: "返回的html里包含数学公式，怎么合理渲染到页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-97
+format: md
 ---
+
 
 HarmonyOS目前没有提供专门的数学公式渲染组件，可以使用WebView组件来加载支持数学公式渲染的网页。
 

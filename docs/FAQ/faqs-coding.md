@@ -4,6 +4,7 @@ title: "代码编辑"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding
 ---
 
+
 * **[编辑器自动联想、跳转等功能失效](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-1)**
 * **[DevEco Studio中是否有一键检查未引用资源的功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-2)**
 * **[在DevEco Studio中提交代码时，如何自动格式化修改过的代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-3)**

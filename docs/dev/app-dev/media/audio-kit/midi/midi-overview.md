@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "OH_MIDI概述(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/midi-overview
+format: md
 ---
+
 
 ## MIDI简介
 

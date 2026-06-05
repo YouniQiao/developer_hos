@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "多边形"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-polygon
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [MapPolygonOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappolygonoptions) | 多边形参数。 |
-| [addPolygon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addpolygon)(options: [mapCommon.MapPolygonOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappolygonoptions)): Promise<[MapPolygon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mappolygon)> | 在地图上添加一个多边形。 |
+| [addPolygon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addpolygon)(options: [mapCommon.MapPolygonOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mappolygonoptions)): Promise[MapPolygon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mappolygon) | 在地图上添加一个多边形。 |
 | [MapPolygon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mappolygon) | 多边形，支持更新和查询相关属性。 |
 
 ## 开发步骤

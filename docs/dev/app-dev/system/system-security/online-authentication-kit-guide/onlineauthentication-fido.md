@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "FIDO免密身份认证"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-fido
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -58,10 +60,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onli
 
 | 接口名 | 描述 |
 | --- | --- |
-| [discover](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#discover)(context: common.Context): Promise<[DiscoveryData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#discoverydata)> | 发现设备的认证能力，返回当前设备软件支持的认证器数据。 |
-| [checkPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#checkpolicy)(context: common.Context, uafRequest: [UAFMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#uafmessage)): Promise<void> | 检测用户策略的开启状态。 |
-| [processUAFOperation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#processuafoperation)(context: common.Context, uafRequest: [UAFMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#uafmessage), channelBindings?: [ChannelBinding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#channelbinding)): Promise<[UAFMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#uafmessage)> | 用户UAF操作接口，处理UAF协议消息。 |
-| [notifyUAFResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#notifyuafresult)(context: common.Context, uafResponse: [UAFMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#uafmessage)): Promise<void> | 开通结果通知接口。 |
+| [discover](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#discover)(context: common.Context): Promise[DiscoveryData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#discoverydata) | 发现设备的认证能力，返回当前设备软件支持的认证器数据。 |
+| [checkPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#checkpolicy)(context: common.Context, uafRequest: [UAFMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#uafmessage)): Promise\<void\> | 检测用户策略的开启状态。 |
+| [processUAFOperation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#processuafoperation)(context: common.Context, uafRequest: [UAFMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#uafmessage), channelBindings?: [ChannelBinding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#channelbinding)): Promise[UAFMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#uafmessage) | 用户UAF操作接口，处理UAF协议消息。 |
+| [notifyUAFResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#notifyuafresult)(context: common.Context, uafResponse: [UAFMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-fido-api#uafmessage)): Promise\<void\> | 开通结果通知接口。 |
 
 ## 开发步骤
 

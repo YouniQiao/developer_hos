@@ -4,6 +4,7 @@ title: "编译报错“The local dependency below in module %s is invalid”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-143
 ---
 
+
 **错误描述**
 
 模块内添加本地依赖项无效。

@@ -1,7 +1,9 @@
 ---
 title: "Domain Management API指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-domain-api-guide-0000002236041402
+format: md
 ---
+
 
 针对元服务管控访问域名的范围，您可以调用Domain Management API配置域名信息。
 

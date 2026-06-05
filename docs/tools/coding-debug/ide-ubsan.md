@@ -1,7 +1,9 @@
 ---
 title: "使用UBSan检测未定义行为"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 使用UBSan检测未定义行为
 

@@ -4,6 +4,7 @@ title: "在建立好TCPSocket之后，如何将复合类型结构转换为ArrayB
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-58
 ---
 
+
 可将复合类型结构转换为字符串后使用如下方法转为ArrayBuffer，参考代码如下：
 
 ```

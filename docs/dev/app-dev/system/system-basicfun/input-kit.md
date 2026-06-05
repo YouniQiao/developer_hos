@@ -1,7 +1,9 @@
 ---
 title: "Input Kit（多模输入服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/input-kit
+format: md
 ---
+
 
 * **[Input Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/input-overview)**
 * **[输入设备开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputdevice-guidelines)**

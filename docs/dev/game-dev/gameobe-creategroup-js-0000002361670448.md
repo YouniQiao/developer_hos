@@ -1,7 +1,9 @@
 ---
 title: "创建队伍"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-creategroup-js-0000002361670448
+format: md
 ---
+
 
 队伍，是一个游戏对局的基本单元，玩家可通过组队的形式跟别的队伍进行PK。当玩家成功创建一个队伍时，即成为该队伍的队长，并默认自动加入到该队伍中。
 

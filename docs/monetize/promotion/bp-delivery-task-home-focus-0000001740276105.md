@@ -2,7 +2,9 @@
 title: "投放首页焦点图任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-home-focus-0000001740276105
+format: md
 ---
+
 # 投放首页焦点图任务
 
 ## 背景信息

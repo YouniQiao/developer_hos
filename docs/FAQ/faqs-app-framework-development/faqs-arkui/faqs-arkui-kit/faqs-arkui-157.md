@@ -4,6 +4,7 @@ title: "如何实现类似keyframes的效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-157
 ---
 
+
 可以通过设置动画的延迟播放时间（delay）或在onFinish回调中启动新动画来实现类似效果。参考代码如下：
 
 ```

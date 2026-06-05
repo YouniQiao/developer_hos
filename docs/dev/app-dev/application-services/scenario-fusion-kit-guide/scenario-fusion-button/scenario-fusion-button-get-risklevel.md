@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取手机号和风险等级Button"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-get-risklevel
+format: md
 ---
+
 
 ## 场景介绍
 

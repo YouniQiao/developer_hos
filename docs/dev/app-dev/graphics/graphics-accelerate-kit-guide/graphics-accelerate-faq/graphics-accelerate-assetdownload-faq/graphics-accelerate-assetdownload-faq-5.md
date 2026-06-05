@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何解析华为CDN场景下manifestUrl对应的xml文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-5
+format: md
 ---
+
 
 推荐使用[@ifbear/fast-xml-parser](https://ohpm.openharmony.cn/#/cn/detail/@ifbear%2Ffast-xml-parser)。
 

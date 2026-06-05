@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "若游戏无HarmonyOS 4及以下系统包时，是否可以不配置APP ID映射关系？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-1
+format: md
 ---
+
 
 不可以。
 

@@ -1,7 +1,9 @@
 ---
 title: "视频编解码宽高、跨距与裁剪信息说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-dimension-guide
+format: md
 ---
+
 
 ## 概述
 

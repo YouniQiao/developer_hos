@@ -1,7 +1,9 @@
 ---
 title: "NFC服务开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc-overview
+format: md
 ---
+
 
 ## 概述
 

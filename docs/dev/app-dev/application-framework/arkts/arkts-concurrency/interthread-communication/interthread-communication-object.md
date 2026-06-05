@@ -1,7 +1,9 @@
 ---
 title: "线程间通信对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-object
+format: md
 ---
+
 
 * **[线程间通信对象概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serializable-overview)**
 * **[普通对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/normal-object)**

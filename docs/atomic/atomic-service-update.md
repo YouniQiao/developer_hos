@@ -1,7 +1,9 @@
 ---
 title: "元服务更新"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-update
+format: md
 ---
+
 
 在上传发布新版本的元服务后，系统将会在不同时机采用不同的方式去检查用户安装的元服务是否有可用的最新版本，并尝试下载更新最新的元服务包。
 

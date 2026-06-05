@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用接入播控自检表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-checklist
+format: md
 ---
+
 
 如接入AVSession，请按照下表根据应用的业务场景接入，应用上架前请根据此表格自检，以确保应用的体验。
 

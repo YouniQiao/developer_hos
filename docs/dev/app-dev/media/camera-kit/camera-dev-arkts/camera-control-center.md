@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "相机控制器(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-control-center
+format: md
 ---
+
 
 从API version 20开始，相机框架通过相机控制器，为应用在直播场景提供美颜、虚化等能力。
 

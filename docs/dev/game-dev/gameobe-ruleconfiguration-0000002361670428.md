@@ -2,7 +2,9 @@
 title: "配置匹配规则"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-ruleconfiguration-0000002361670428
 has_merged_cells: true
+format: md
 ---
+
 
 ## 匹配机制
 

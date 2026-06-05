@@ -4,6 +4,7 @@ title: "如何在Native侧直接使用其他模块的ArkTS方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-20
 ---
 
+
 **问题详情**
 
 在ArkTS侧已经定义了接口，但未实现对应的NDK接口。当使用C++代码实现业务逻辑时，可以直接使用已有的ArkTS接口。

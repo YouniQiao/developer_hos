@@ -1,7 +1,9 @@
 ---
 title: "如何获取状态栏和导航栏高度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-202
+format: md
 ---
+
 
 获取系统状态栏和导航栏等规避区域。使用系统提供的 getWindowAvoidArea 获取系统规避区域。返回值中的 topRect.height 即为系统状态栏的高度，单位为 px。参考代码如下：
 

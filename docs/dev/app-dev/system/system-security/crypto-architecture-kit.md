@@ -1,7 +1,9 @@
 ---
 title: "Crypto Architecture Kit（加解密算法框架服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit
+format: md
 ---
+
 
 * **[Crypto Architecture Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro)**
 * **[密钥生成和转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion)**

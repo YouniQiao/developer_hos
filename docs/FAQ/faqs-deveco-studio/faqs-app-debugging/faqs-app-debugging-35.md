@@ -4,6 +4,7 @@ title: "DevEco Studio安装HAP时报错“FileTransfer Failed: Error while Deplo
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-35
 ---
 
+
 **问题现象**
 
 DevEco Studio安装HAP时报错“FileTransfer Failed: Error while Deploy Hap”。

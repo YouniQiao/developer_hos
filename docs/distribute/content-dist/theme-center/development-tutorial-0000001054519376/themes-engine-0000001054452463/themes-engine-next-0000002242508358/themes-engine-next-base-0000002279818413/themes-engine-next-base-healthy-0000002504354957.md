@@ -2,7 +2,9 @@
 title: "数据开放：运动健康数据开放&lt;Healthy&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-healthy-0000002504354957
+format: md
 ---
+
 
 # 数据开放：运动健康数据开放&lt;Healthy&gt;
 

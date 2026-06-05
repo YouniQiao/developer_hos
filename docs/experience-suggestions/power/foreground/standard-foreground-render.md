@@ -1,7 +1,9 @@
 ---
 title: "前台绘制渲染"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-render
+format: md
 ---
+
 
 # 前台绘制渲染
 

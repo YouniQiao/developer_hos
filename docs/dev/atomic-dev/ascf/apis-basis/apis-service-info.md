@@ -1,7 +1,9 @@
 ---
 title: "元服务信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-service-info
+format: md
 ---
+
 
 ## has.getServiceInfoSync
 

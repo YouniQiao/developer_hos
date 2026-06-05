@@ -1,7 +1,9 @@
 ---
 title: "使用Node-API接口从异步线程向ArkTS线程投递指定优先级和入队方式的任务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-call-threadsafe-function-with-priority
+format: md
 ---
+
 
 Node-API中的napi\_call\_threadsafe\_function\_with\_priority接口的功能是从异步线程向ArkTS线程投递指定优先级和入队方式的任务，底层队列会根据任务的优先级和入队方式来处理任务。
 

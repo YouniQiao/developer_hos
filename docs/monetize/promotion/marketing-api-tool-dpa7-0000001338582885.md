@@ -2,7 +2,9 @@
 title: "查询商品库入库失败记录"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa7-0000001338582885
+format: md
 ---
+
 # 查询商品库入库失败记录
 
 您通过本接口可以查询商品库入库失败记录。

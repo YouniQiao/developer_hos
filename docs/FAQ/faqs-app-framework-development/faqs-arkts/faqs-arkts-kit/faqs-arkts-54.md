@@ -4,6 +4,7 @@ title: "ArkTS中globalThis无法使用该如何替换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-54
 ---
 
+
 ArkTS不支持动态更改对象布局，也不支持全局作用域和globalThis。请参考以下替换方案：
 
 1. 通过单例map做中转：

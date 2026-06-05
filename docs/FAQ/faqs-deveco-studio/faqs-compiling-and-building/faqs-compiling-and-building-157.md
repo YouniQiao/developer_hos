@@ -4,6 +4,7 @@ title: "编译报错“Unrecognized archive format in parameterFile”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-157
 ---
 
+
 **错误描述**
 
 parameterFile中包含无法识别的格式。

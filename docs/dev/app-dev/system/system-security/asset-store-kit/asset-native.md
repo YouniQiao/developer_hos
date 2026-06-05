@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Asset Store Kit开发指导(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native
+format: md
 ---
+
 
 * **[新增关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-add)**
 * **[删除关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-remove)**

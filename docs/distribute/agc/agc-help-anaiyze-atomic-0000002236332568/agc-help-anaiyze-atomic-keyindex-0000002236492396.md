@@ -1,7 +1,9 @@
 ---
 title: "查看元服务关键指标"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-atomic-keyindex-0000002236492396
+format: md
 ---
+
 
 [元服务分析总览](#section106851042192815)为您提供元服务的分析总览数据；[元服务分析概览](#section17943125854315)提供单个元服务的关键KPI指标概览。
 

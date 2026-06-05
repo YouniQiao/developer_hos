@@ -1,7 +1,9 @@
 ---
 title: "如何写har包的编译脚本"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-64
+format: md
 ---
+
 
 在har包目录下的hvigorfile.ts文件中编写代码如下：
 

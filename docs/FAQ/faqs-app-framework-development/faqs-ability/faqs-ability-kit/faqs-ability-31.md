@@ -4,6 +4,7 @@ title: "两个UIAbility之间可通过哪些方法实现数据传递"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-31
 ---
 
+
 两个UIAbility之间数据传递的方法如下，建议优先采用排序在前的方法。
 
 * 方法一：调用startAbility接口启动另一个UIAbility时，通过wantInfo添加启动参数。也可以使用startAbilityForResult接口，获取被调用方UIAbility在关闭时返回的信息。

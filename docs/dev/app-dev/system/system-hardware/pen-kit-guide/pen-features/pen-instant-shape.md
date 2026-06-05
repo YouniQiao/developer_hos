@@ -1,7 +1,9 @@
 ---
 title: "接入一笔成形"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-instant-shape
+format: md
 ---
+
 
 接入一笔成形功能，可以传入手写笔迹的点位信息、通过手写笔/手指在屏幕上停顿一定的时间后触发此功能，触发功能后将自动识别当前绘制的图形，并生成对应的图像信息。
 

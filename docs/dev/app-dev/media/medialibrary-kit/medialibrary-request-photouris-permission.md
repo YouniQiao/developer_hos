@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设备升级继承媒体文件访问权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-request-photouris-permission
+format: md
 ---
+
 
 应用在HarmonyOS 3.1 Release API 9及更低版本运行时，有图片/视频访问权限，并在应用内记录对应的图片/视频文件路径或uri，在进入应用特定界面时，可实时访问图片/视频显示内容。
 

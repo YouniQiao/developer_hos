@@ -1,7 +1,9 @@
 ---
 title: "容器组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-container-components
+format: md
 ---
+
 
 * **[list开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-list)**
 * **[dialog开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-dialog)**

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "性能检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perf-detection
+format: md
 ---
+
 
 ## 启动耗时事件检测
 

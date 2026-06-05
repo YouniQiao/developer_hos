@@ -4,6 +4,7 @@ title: "编译异常，无具体错误日志，难以定位问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-136
 ---
 
+
 **问题现象**
 
 出现Failed to execute es2abc错误，但未提供具体的错误日志，导致问题难以定位和分析。

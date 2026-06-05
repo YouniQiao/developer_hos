@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "是否可以终止已发布的下载任务，例如游戏出现问题时是否能够及时关闭"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-8
+format: md
 ---
+
 
 能够及时关闭。
 

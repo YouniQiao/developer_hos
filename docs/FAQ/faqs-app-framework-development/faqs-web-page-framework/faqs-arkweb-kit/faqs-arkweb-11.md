@@ -4,6 +4,7 @@ title: "WebView中，双向交互可以使用JSBridge技术，也可以使用端
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-11
 ---
 
+
 **场景描述**
 
 1. 通过WebMessagePort可以进行消息的发送以及接收。

@@ -1,7 +1,9 @@
 ---
 title: "如何使用服务端下发的RSA公钥（字符串）对明文数据进行加密"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-3
+format: md
 ---
+
 
 将服务器下发的RSA公钥字符串赋值给`pubKeyStr`，即可实现。具体代码参考如下：
 

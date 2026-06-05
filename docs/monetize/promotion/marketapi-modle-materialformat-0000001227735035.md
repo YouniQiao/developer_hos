@@ -2,7 +2,9 @@
 title: "MaterialFormat"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-materialformat-0000001227735035
+format: md
 ---
+
 # MaterialFormat
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

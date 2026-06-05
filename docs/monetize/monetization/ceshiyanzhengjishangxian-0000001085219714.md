@@ -2,7 +2,9 @@
 title: "测试验证及上线"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/ceshiyanzhengjishangxian-0000001085219714
+format: md
 ---
+
 
 
 商业上架前需进行广告的测试验证，包括媒体自测和鲸鸿动能验收两个步骤。

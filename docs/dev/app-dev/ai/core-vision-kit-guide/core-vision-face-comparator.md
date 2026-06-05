@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "人脸比对"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-face-comparator
+format: md
 ---
+
 
 ## 适用场景
 

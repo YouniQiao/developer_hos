@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-throw-literal"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-throw-literal
 

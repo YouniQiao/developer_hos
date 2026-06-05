@@ -2,7 +2,9 @@
 title: "制作实例"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/production-example-0000001530293740
+format: md
 ---
+
 
 # 制作实例
 

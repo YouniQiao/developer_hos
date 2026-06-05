@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "附录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-appendix
+format: md
 ---
+
 
 ## AR Engine深度估计功能技术局限性及免责声明
 

@@ -1,7 +1,9 @@
 ---
 title: "分包加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-subpackage-loading
+format: md
 ---
+
 
 当ASCF元服务体积较大时，可以使用ASCF元服务的分包加载功能。简单来说，就是将项目中的所有页面及资源通过配置规则划分到多个单独的分包文件中，运行时单独下载，加快页面渲染。对ASCF元服务进行分包，可以优化其首次启动的加载时间，以及更好的管理和解耦各个模块功能。
 

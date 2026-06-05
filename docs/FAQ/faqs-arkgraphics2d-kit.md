@@ -4,6 +4,7 @@ title: "2D图形（ArkGraphics 2D）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics2d-kit
 ---
 
+
 * **[如何使用EGL绘制自定义动画？请提供一个简单示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-1)**
 * **[多线程调用OH\_Drawing\_CreateFontCollection崩溃](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-3)**
 * **[EGL绘制是否支持多线程？如何在多线程的场景下同时操作一块buffer进行图形绘制](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-6)**

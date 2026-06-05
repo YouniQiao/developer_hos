@@ -4,6 +4,7 @@ title: "关于emitter、eventHub的使用场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-68
 ---
 
+
 Emitter提供跨线程事件的发送和处理功能，包括事件的持续订阅、单次订阅、取消订阅及事件队列的发送。
 
 1. 订阅事件

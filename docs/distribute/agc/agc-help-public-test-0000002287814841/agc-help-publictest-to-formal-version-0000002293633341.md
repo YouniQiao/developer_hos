@@ -1,7 +1,9 @@
 ---
 title: "测试版本转正式版本"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publictest-to-formal-version-0000002293633341
+format: md
 ---
+
 
 公开测试版本在经过充分测试后，若已达到正式发布的标准，您可以直接将该版本推进为正式版本。推进版本会自动上架，无需重复提交华为审核。
 

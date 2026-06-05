@@ -2,7 +2,9 @@
 title: "创建oCPD任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-create-ocpd-0000001282723545
+format: md
 ---
+
 # 创建oCPD任务
 
 ## 前提条件

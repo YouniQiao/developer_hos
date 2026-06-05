@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发实况窗场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-scenes
+format: md
 ---
+
 
 * **[开发实况窗须知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-scenes-intro)**
 * **[构建本地实况窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-create-locally)**

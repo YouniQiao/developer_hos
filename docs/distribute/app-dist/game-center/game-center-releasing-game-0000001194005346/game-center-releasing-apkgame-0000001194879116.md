@@ -2,7 +2,9 @@
 title: "APK游戏上架"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-releasing-apkgame-0000001194879116
+format: md
 ---
+
 
 # APK游戏上架
 

@@ -1,7 +1,9 @@
 ---
 title: "屏幕管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-manager
+format: md
 ---
+
 
 * **[屏幕管理简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaymanager-overview)**
 * **[使用OH\_DisplayManager实现屏幕基础信息查询和状态监听 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-display-manager)**

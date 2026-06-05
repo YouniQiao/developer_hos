@@ -4,6 +4,7 @@ title: "DevEco Studio在登录授权时无法弹出浏览器窗口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-7
 ---
 
+
 **问题现象**
 
 在DevEco Studio中点击登录、帮助文档时，无法弹出浏览器窗口。

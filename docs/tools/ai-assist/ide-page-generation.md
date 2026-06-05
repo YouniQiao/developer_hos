@@ -1,7 +1,9 @@
 ---
 title: "页面生成"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 页面生成
 

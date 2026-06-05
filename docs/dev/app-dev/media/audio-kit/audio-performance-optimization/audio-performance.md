@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "提升音频性能体验"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-performance
+format: md
 ---
+
 
 在各种终端设备的使用过程中，对于音频相关功能的体验，用户在不同场景下，有多方面的核心性能诉求，包含流畅度、响应速度、省电等，典型的场景如下：
 

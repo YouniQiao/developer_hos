@@ -1,7 +1,9 @@
 ---
 title: "同应用跨设备数据同步（分布式）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-data-sync
+format: md
 ---
+
 
 * **[同应用跨设备数据同步概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sync-app-data-across-devices-overview)**
 * **[键值型数据库跨设备数据同步 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-of-kv-store)**

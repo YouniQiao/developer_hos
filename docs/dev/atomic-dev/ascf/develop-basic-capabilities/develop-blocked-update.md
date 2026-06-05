@@ -1,7 +1,9 @@
 ---
 title: "阻断式更新"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-blocked-update
+format: md
 ---
+
 
 如果希望在用户使用元服务过程中进行版本更新，可以使用阻断式更新的方式进行更新。使用[监听元服务更新检查接口](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#updatemanageroncheckforupdate)，然后在[监听元服务新版本下载完成事件接口](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#updatemanageronupdateready)的回调函数中调用[重启元服务接口](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#updatemanagerapplyupdate)的方式触发更新。
 

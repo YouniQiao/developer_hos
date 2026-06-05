@@ -1,7 +1,9 @@
 ---
 title: "DevEco Profiler术语"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # DevEco Profiler术语
 

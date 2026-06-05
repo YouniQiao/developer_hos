@@ -1,7 +1,9 @@
 ---
 title: "AGC控制台准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-dev-quickgame-preparation-0000002318054640
+format: md
 ---
+
 
 * **[注册开发者账号](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-registration-account-0000002351933629)**
 * **[创建项目和快游戏](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-create-quickgame-0000002317894816)**

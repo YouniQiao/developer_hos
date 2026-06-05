@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "打开设备侧隔空传送开关"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-open
+format: md
 ---
+
 
 使用隔空传送功能前，需要先打开隔空传送开关。
 

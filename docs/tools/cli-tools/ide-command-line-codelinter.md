@@ -1,7 +1,9 @@
 ---
 title: "代码检查工具（codelinter）"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # 代码检查工具（codelinter）
 

@@ -2,7 +2,9 @@
 title: "登录并获取access_token"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-4-0000001128438066
+format: md
 ---
+
 # 登录并获取access\_token
 
 1. 通过API获取授权码拼接地址
@@ -113,4 +115,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
 
      Cache-Control: no-store
 
-     \{"access\_token":"CgB6e3x9WivoFhhdEA9nppR\/Tl1eye1OC0c\/a8VH17m\/AYq0yFfgaY6KRbpMmFAq+pg\/YngjAC+p16prtz\/YThC\*\*\*\*\*\*zKv2bY\/ZNYWtbpHMOSjJw==", "expires\_in":3600, "refresh\_token": "CF13G0sRaGybtYt7SIyeUILNORtTFwMgz4ao5C7j7vtgLPt6ogmXKjdI8RS\/YlyS71z4\*\*\*\*\*\*MnOrRlmNK0KhdOUNWd+qVLLRsEEHkqRIKpuAkPvL8=", "scope":"https:\/\/ads.cloud.huawei.com\/promotion openid","token\_type":"Bearer"\}
+     \\{"access\_token":"CgB6e3x9WivoFhhdEA9nppR\/Tl1eye1OC0c\/a8VH17m\/AYq0yFfgaY6KRbpMmFAq+pg\/YngjAC+p16prtz\/YThC\*\*\*\*\*\*zKv2bY\/ZNYWtbpHMOSjJw==", "expires\_in":3600, "refresh\_token": "CF13G0sRaGybtYt7SIyeUILNORtTFwMgz4ao5C7j7vtgLPt6ogmXKjdI8RS\/YlyS71z4\*\*\*\*\*\*MnOrRlmNK0KhdOUNWd+qVLLRsEEHkqRIKpuAkPvL8=", "scope":"https:\/\/ads.cloud.huawei.com\/promotion openid","token\_type":"Bearer"\\}

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Push Kit（推送服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-kit-guide
+format: md
 ---
+
 
 * **[Push Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-kit-introduction)**
 * **[使用入门](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-gettingstart)**

@@ -2,7 +2,9 @@
 title: "查看账户信息"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-account-management-check-0000001293889870
+format: md
 ---
+
 # 查看账户信息
 
 投放端右上角，点击账户名称旁的下拉框，可以查看账户基本信息：账户ID和登录账户的UPID信息。

@@ -2,7 +2,9 @@
 title: "意图分类节点"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/intent-classification-node-0000002437625914
+format: md
 ---
+
 
 # 意图分类节点
 

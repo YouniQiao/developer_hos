@@ -2,7 +2,9 @@
 
 title: "添加数据条目"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 添加数据条目
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "传输安装包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-installation-package
+format: md
 ---
+
 
 游戏近场快传支持已安装游戏的玩家通过碰一碰或隔空传送将游戏安装包传输给未安装游戏的玩家，实现游戏传播效率的提升。
 
@@ -45,10 +47,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game
 
 | 接口名 | 描述 |
 | --- | --- |
-| [create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfercreate)(createParameters: CreateParameters): Promise<CreateResult> | 创建游戏近场快传服务。 |
-| [onRemoteInstallationInfoNotify](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferonremoteinstallationinfonotify)(callback: Callback<RemoteInstallationInfo>): void | 订阅远程安装信息事件。 |
-| [offRemoteInstallationInfoNotify](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferoffremoteinstallationinfonotify)(callback?: Callback<RemoteInstallationInfo>): void | 取消订阅远程安装信息事件。 |
-| [destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdestroy)(): Promise<void> | 销毁游戏近场快传服务。 |
+| [create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfercreate)(createParameters: CreateParameters): Promise\<CreateResult\> | 创建游戏近场快传服务。 |
+| [onRemoteInstallationInfoNotify](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferonremoteinstallationinfonotify)(callback: Callback\<RemoteInstallationInfo\>): void | 订阅远程安装信息事件。 |
+| [offRemoteInstallationInfoNotify](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferoffremoteinstallationinfonotify)(callback?: Callback\<RemoteInstallationInfo\>): void | 取消订阅远程安装信息事件。 |
+| [destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdestroy)(): Promise\<void\> | 销毁游戏近场快传服务。 |
 
 ## 接入步骤
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用间消息通信"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_p2p_communication
+format: md
 ---
+
 
 ## 约束与限制
 

@@ -1,7 +1,9 @@
 ---
 title: "拉起文件处理类应用（startAbility）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-processing-apps-startup
+format: md
 ---
+
 
 ## 使用场景
 
@@ -23,7 +25,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file
 | --- | --- | --- | --- |
 | uri | string | 是 | 表示待打开文件的URI路径，一般配合type使用。  uri格式为：file://bundleName/path  - file：文件URI的标志。  - bundleName：该文件资源的属主。  - path：文件资源在应用沙箱中的路径。 |
 | type | string | 否 | 表示打开文件的类型，推荐使用[UTD类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-descriptors)，比如：'general.plain-text'、'general.image'。目前也可以兼容使用[MIME type类型](https://www.iana.org/assignments/media-types/media-types.xhtml?utm_source=ld246.com)，如：'text/xml' 、 'image/\*'等。  **说明：**  1. type为可选字段，如果不传type，系统会尝试根据uri后缀名判断文件类型进行匹配；如果传入type，必须确保与uri的文件类型一致，否则会导致无法匹配到合适的应用。文件后缀与文件类型的映射关系参见[Uniform Type Descriptor(UTD)预置列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-list)。  2. 不支持传\*/\*。 |
-| parameters | Record<string, Object> | 否 | 表示由系统定义，由开发者按需赋值的自定义参数，文件打开场景请参考表2。 |
+| parameters | Record\<string, Object\> | 否 | 表示由系统定义，由开发者按需赋值的自定义参数，文件打开场景请参考表2。 |
 | flags | number | 否 | 表示处理方式，文件打开场景请参考表3。 |
 | action | string | 是 | 表示要执行的通用操作。文件打开场景固定值：'ohos.want.action.viewData' ，表示查看数据的操作。 |
 

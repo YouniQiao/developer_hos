@@ -1,7 +1,9 @@
 ---
 title: "堆栈解析工具（hstack）"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # 堆栈解析工具（hstack）
 

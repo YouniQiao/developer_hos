@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVPlayer播放视频(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-video-playback
+format: md
 ---
+
 
 使用[AVPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer)可以实现端到端播放原始媒体资源，本开发指导将以完整地播放一个视频作为示例，向开发者讲解AVPlayer视频播放相关功能。
 

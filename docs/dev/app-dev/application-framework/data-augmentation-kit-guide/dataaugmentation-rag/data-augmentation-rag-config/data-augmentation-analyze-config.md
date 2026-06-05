@@ -1,7 +1,9 @@
 ---
 title: "配置分析过程模板"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-analyze-config
+format: md
 ---
+
 
 ## 功能介绍
 
@@ -9,17 +11,17 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
 可供配置的8个分析过程模板如下：
 
-* {text}是核心内容占位符，用于动态替换RAG执行过程中的文本信息。
+* \{text\}是核心内容占位符，用于动态替换RAG执行过程中的文本信息。
 * 仅有thoughtStart、thoughtFinishCoreference、thoughtFinishExtraction三个参数对应模板可使用占位符，且只有第一个占位符会动态替换文本。
 * 支持占位符的模板可选择不放占位符，即不会进行内容替换。
 
 | 模板参数名 | 参数名含义 | 占位符 | 占位符替换内容 | 模板文本（含占位符）长度限制 |
 | --- | --- | --- | --- | --- |
-| thoughtStart | 思考过程开始 | {text} | 输出用户问题 | 600字节 |
+| thoughtStart | 思考过程开始 | \{text\} | 输出用户问题 | 600字节 |
 | thoughtStartCoreference | 指代消除开始 | 不支持占位符 | 不涉及 | 600字节 |
-| thoughtFinishCoreference | 指代消除结束 | {text} | 输出指代消除结果 | 600字节 |
+| thoughtFinishCoreference | 指代消除结束 | \{text\} | 输出指代消除结果 | 600字节 |
 | thoughtStartExtraction | 实体提取开始 | 不支持占位符 | 不涉及 | 600字节 |
-| thoughtFinishExtraction | 实体提取结束 | {text} | 输出实体提取结果 | 600字节 |
+| thoughtFinishExtraction | 实体提取结束 | \{text\} | 输出实体提取结果 | 600字节 |
 | thoughtStartRetrieval | 知识检索开始 | 不支持占位符 | 不涉及 | 600字节 |
 | thoughtFinishRetrieval | 知识检索结束 | 不支持占位符 | 不涉及 | 600字节 |
 | thoughtFinish | 思考过程结束 | 不支持占位符 | 不涉及 | 600字节 |

@@ -1,7 +1,9 @@
 ---
 title: "适配流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/adaptation-process
+format: md
 ---
+
 
 适配流程包括：适配准备、应用适配、开发者自验证、应用上架和端到端验证。
 
@@ -31,10 +33,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/adap
 
 | 备份恢复目录 |
 | --- |
-| /data/storage/el1/base/.backup/restore/{APK包名}/de/ |
-| /data/storage/el2/base/.backup/restore/{APK包名}/ce/ |
-| /data/storage/el2/base/.backup/restore/{APK包名}/A/data/ |
-| /data/storage/el2/base/.backup/restore/{APK包名}/A/obb/ |
+| /data/storage/el1/base/.backup/restore/\{APK包名\}/de/ |
+| /data/storage/el2/base/.backup/restore/\{APK包名\}/ce/ |
+| /data/storage/el2/base/.backup/restore/\{APK包名\}/A/data/ |
+| /data/storage/el2/base/.backup/restore/\{APK包名\}/A/obb/ |
 
 HarmonyOS应用沙箱目录请参考[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
 

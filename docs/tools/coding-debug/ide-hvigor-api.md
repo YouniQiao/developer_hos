@@ -1,7 +1,9 @@
 ---
 title: "基础构建能力"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 基础构建能力
 
@@ -150,7 +152,7 @@ const hvigorVersion = hvigor.getHvigorVersion();
 
 #### configEvaluated
 
-configEvaluated(fn: (HvigorConfig) =&gt; {}): void
+configEvaluated(fn: (HvigorConfig) =&gt; \{\}): void
 
 添加一个config文件评估完成的回调函数。
 
@@ -160,7 +162,7 @@ configEvaluated(fn: (HvigorConfig) =&gt; {}): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fn | ([HvigorConfig](#section7253174081515)) =&gt; {} | 是 | 一个入参为空或者为hvigorConfig的方法 |
+| fn | ([HvigorConfig](#section7253174081515)) =&gt; \{\} | 是 | 一个入参为空或者为hvigorConfig的方法 |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -178,7 +180,7 @@ hvigor.configEvaluated(hvigorConfig => {
 
 #### beforeNodeEvaluate
 
-beforeNodeEvaluate(fn: (HvigorNode) =&gt; {}): void
+beforeNodeEvaluate(fn: (HvigorNode) =&gt; \{\}): void
 
 为所有的node添加一个node评估前的回调函数。
 
@@ -188,7 +190,7 @@ beforeNodeEvaluate(fn: (HvigorNode) =&gt; {}): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fn | ([HvigorNode](#section14832104719474)) =&gt; {} | 是 | 一个入参为空或者为HvigorNode的方法 |
+| fn | ([HvigorNode](#section14832104719474)) =&gt; \{\} | 是 | 一个入参为空或者为HvigorNode的方法 |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -206,7 +208,7 @@ hvigor.beforeNodeEvaluate(hvigorNode => {
 
 #### afterNodeEvaluate
 
-afterNodeEvaluate(fn: (HvigorNode) =&gt; {}): void
+afterNodeEvaluate(fn: (HvigorNode) =&gt; \{\}): void
 
 为所有的node添加一个node评估后的回调函数。
 
@@ -216,7 +218,7 @@ afterNodeEvaluate(fn: (HvigorNode) =&gt; {}): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fn | ([HvigorNode](#section14832104719474)) =&gt; {} | 是 | 一个入参为空或者为HvigorNode的方法 |
+| fn | ([HvigorNode](#section14832104719474)) =&gt; \{\} | 是 | 一个入参为空或者为HvigorNode的方法 |
 
 <strong>示例：</strong>注册afterNodeEvaluate hook。
 
@@ -229,7 +231,7 @@ hvigor.afterNodeEvaluate(hvigorNode => {
 
 #### nodesInitialized
 
-nodesInitialized(fn: (Hvigor) =&gt; {}): void
+nodesInitialized(fn: (Hvigor) =&gt; \{\}): void
 
 添加一个node初始化完成的回调函数。
 
@@ -239,7 +241,7 @@ nodesInitialized(fn: (Hvigor) =&gt; {}): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fn | ([Hvigor](#section64891890155)) =&gt; {} | 是 | 一个入参为空或者为Hvigor对象的方法 |
+| fn | ([Hvigor](#section64891890155)) =&gt; \{\} | 是 | 一个入参为空或者为Hvigor对象的方法 |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -257,7 +259,7 @@ hvigor.nodesInitialized(() => {
 
 #### nodesEvaluated
 
-nodesEvaluated(fn: (Hvigor) =&gt; {}): void
+nodesEvaluated(fn: (Hvigor) =&gt; \{\}): void
 
 添加hvigor配置阶段完成之后执行的回调函数，此函数在配置阶段结束之前使用方可有效。在配置阶段中接口使用场景例如节点插件上下文信息延迟获取、任务延迟注册等。添加的回调函数是以队列的形式存储，遵循先进先出原则，先添加的回调会先被执行。
 
@@ -267,7 +269,7 @@ nodesEvaluated(fn: (Hvigor) =&gt; {}): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fn | ([Hvigor](#section64891890155)) =&gt; {} | 是 | 一个入参为空或者为Hvigor对象的方法 |
+| fn | ([Hvigor](#section64891890155)) =&gt; \{\} | 是 | 一个入参为空或者为Hvigor对象的方法 |
 
 <strong>示例：</strong>工程节点获取子节点插件上下文信息。
 
@@ -286,7 +288,7 @@ hvigor.nodesEvaluated(() => {
 
 #### taskGraphResolved
 
-taskGraphResolved(fn: (Hvigor) =&gt; {}): void
+taskGraphResolved(fn: (Hvigor) =&gt; \{\}): void
 
 添加一个任务图解析完毕的回调函数。
 
@@ -296,7 +298,7 @@ taskGraphResolved(fn: (Hvigor) =&gt; {}): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fn | ([Hvigor](#section64891890155)) =&gt; {} | 是 | 一个入参为空或者为Hvigor对象的方法 |
+| fn | ([Hvigor](#section64891890155)) =&gt; \{\} | 是 | 一个入参为空或者为Hvigor对象的方法 |
 
 <strong>示例：</strong>添加一个任务图解析完毕的回调函数。
 
@@ -309,7 +311,7 @@ hvigor.taskGraphResolved(() => {
 
 #### buildFinished
 
-buildFinished(fn: (BuildResult) =&gt; {}): void
+buildFinished(fn: (BuildResult) =&gt; \{\}): void
 
 添加一个构建结束的回调函数。
 
@@ -319,7 +321,7 @@ buildFinished(fn: (BuildResult) =&gt; {}): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fn | ([BuildResult](#section1476618469121)) =&gt; {} | 是 | 一个入参为空或者为BuildResult对象的方法 |
+| fn | ([BuildResult](#section1476618469121)) =&gt; \{\} | 是 | 一个入参为空或者为BuildResult对象的方法 |
 
 <strong>示例：</strong>获取构建结束的信息，如果是异常结束则打印出信息。
 
@@ -1641,7 +1643,7 @@ export default {
 
 #### beforeNodeEvaluate
 
-beforeNodeEvaluate(fn: (HvigorNode) =&gt; {}): void
+beforeNodeEvaluate(fn: (HvigorNode) =&gt; \{\}): void
 
 为当前的node添加一个node评估前的回调函数。
 
@@ -1651,7 +1653,7 @@ beforeNodeEvaluate(fn: (HvigorNode) =&gt; {}): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fn | ([HvigorNode](#section14832104719474)) =&gt; {} | 是 | 一个入参为空或者为HvigorNode的方法 |
+| fn | ([HvigorNode](#section14832104719474)) =&gt; \{\} | 是 | 一个入参为空或者为HvigorNode的方法 |
 
 <strong>示例：</strong>为名称为entry的node注册一个beforeNodeEvaluate hook并打印出node的信息。
 
@@ -1670,7 +1672,7 @@ hvigor.nodesInitialized(() => {
 
 #### afterNodeEvaluate
 
-afterNodeEvaluate(fn: (HvigorNode) =&gt; {}): void
+afterNodeEvaluate(fn: (HvigorNode) =&gt; \{\}): void
 
 为当前的node添加一个node评估后的回调函数。
 
@@ -1680,7 +1682,7 @@ afterNodeEvaluate(fn: (HvigorNode) =&gt; {}): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fn | ([HvigorNode](#section14832104719474)) =&gt; {} | 是 | 一个入参为空或者为HvigorNode的方法 |
+| fn | ([HvigorNode](#section14832104719474)) =&gt; \{\} | 是 | 一个入参为空或者为HvigorNode的方法 |
 
 <strong>示例：</strong>为名称为entry的node注册一个afterNodeEvaluate hook并打印出node的信息。
 

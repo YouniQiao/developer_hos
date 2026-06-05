@@ -1,7 +1,9 @@
 ---
 title: "管理游戏大事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-management-0000002285953810
+format: md
 ---
+
 
 创建游戏大事件后，可以对已创建的游戏大事件进行查看、编辑等操作。游戏大事件列表“操作”列提供编辑、删除、撤销、下线等操作，“任务状态”列可以查看大事件当前的状态。
 

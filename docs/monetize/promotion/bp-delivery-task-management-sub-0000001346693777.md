@@ -2,7 +2,9 @@
 title: "管理子任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-sub-0000001346693777
+format: md
 ---
+
 # 管理子任务
 
 ## 操作步骤

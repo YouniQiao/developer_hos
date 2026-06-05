@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "ArkGraphics 2D（方舟2D图形服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-2d
+format: md
 ---
+
 
 * **[ArkGraphics 2D简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics2d-introduction)**
 * **[使用可变帧率能力定制不同内容的绘制帧率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync)**

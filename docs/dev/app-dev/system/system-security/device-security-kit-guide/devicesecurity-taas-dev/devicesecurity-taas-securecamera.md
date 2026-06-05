@@ -1,7 +1,9 @@
 ---
 title: "安全摄像头场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -49,10 +51,10 @@ function getSecureCameraDevice(cameraManager: camera.CameraManager): camera.Came
 
 | 接口名 | 描述 |
 | --- | --- |
-| [createAttestKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#createattestkey)(options: AttestOptions): Promise<void> | 创建证明密钥。 |
-| [initializeAttestContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#initializeattestcontext)(userData: string, options: AttestOptions): Promise<AttestReturnResult> | 初始化证明会话。 |
-| [finalizeAttestContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#finalizeattestcontext)(options: AttestOptions): Promise<void> | 结束证明会话。 |
-| [destroyAttestKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#destroyattestkey)(): Promise<void> | 销毁证明密钥。 |
+| [createAttestKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#createattestkey)(options: AttestOptions): Promise\<void\> | 创建证明密钥。 |
+| [initializeAttestContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#initializeattestcontext)(userData: string, options: AttestOptions): Promise\<AttestReturnResult\> | 初始化证明会话。 |
+| [finalizeAttestContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#finalizeattestcontext)(options: AttestOptions): Promise\<void\> | 结束证明会话。 |
+| [destroyAttestKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#destroyattestkey)(): Promise\<void\> | 销毁证明密钥。 |
 
 ## 开发步骤
 

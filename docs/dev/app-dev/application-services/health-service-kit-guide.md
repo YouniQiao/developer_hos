@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Health Service Kit（运动健康服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-service-kit-guide
+format: md
 ---
+
 
 * **[Health Service Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-service-kit-ability)**
 * **[接入流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-application-access)**

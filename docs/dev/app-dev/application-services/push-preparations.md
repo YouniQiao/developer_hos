@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-preparations
+format: md
 ---
+
 
 * **[学习Push Kit接入规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-specification)**
 * **[开通推送服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-config-setting)**

@@ -1,7 +1,9 @@
 ---
 title: "向用户推送信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-push-info
+format: md
 ---
+
 
 开发者可以通过推送服务，向用户推送信息。
 

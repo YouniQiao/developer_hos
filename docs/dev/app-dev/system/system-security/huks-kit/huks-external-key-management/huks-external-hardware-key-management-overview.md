@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "外部密钥管理扩展简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-external-hardware-key-management-overview
+format: md
 ---
+
 
 HUKS提供统一的Ability扩展接口，驱动HAP可基于此实现外部密钥管理扩展，注册、注销自定义的硬件密钥管理模块，满足金融领域Ukey证书的浏览器双向SSL认证等场景的身份认证需求。
 

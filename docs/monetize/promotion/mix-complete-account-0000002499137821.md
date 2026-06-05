@@ -2,7 +2,9 @@
 title: "进入认证中心完成开户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/mix-complete-account-0000002499137821
+format: md
 ---
+
 # 进入认证中心完成开户
 
 进入认证中心后，您需补充与所选推广范围相关的开户信息。具体如下：

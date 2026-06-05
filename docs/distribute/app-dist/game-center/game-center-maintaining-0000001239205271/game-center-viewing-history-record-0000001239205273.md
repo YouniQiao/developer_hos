@@ -2,7 +2,9 @@
 title: "版本历史记录"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-viewing-history-record-0000001239205273
+format: md
 ---
+
 
 # 版本历史记录
 

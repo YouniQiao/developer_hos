@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-creative-label-faq-0000001352066896
+format: md
 ---
+
 # FAQ
 
 ## 修改创意标签，是否会触发审核？

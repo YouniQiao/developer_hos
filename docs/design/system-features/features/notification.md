@@ -2,7 +2,9 @@
 title: 通知
 sidebar_label: 通知
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217
+format: md
 ---
+
 # 通知
 
 通知旨在让用户以合适的方式及时获得有用的新消息，帮助用户高效地处理任务。

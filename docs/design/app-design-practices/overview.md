@@ -2,7 +2,9 @@
 title: 概述
 sidebar_label: 概述
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/practices-overview-0000001746498066
+format: md
 ---
+
 # 概述
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8E5C66E49099.png "点击放大")

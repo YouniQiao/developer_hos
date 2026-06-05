@@ -4,6 +4,7 @@ title: "短距通信（Connectivity）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-kit
 ---
 
+
 * **[三方应用如何获取蓝牙MAC地址](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-1)**
 * **[如何扫描Wi-Fi列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-2)**
 * **[USE\_BLUETOOTH 和 ACCESS\_BLUETOOTH的区别是什么](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-3)**

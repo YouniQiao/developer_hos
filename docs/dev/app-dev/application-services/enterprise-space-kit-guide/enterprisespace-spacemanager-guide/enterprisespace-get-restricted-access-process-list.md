@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取不可访问后台用户数据的系统服务进程列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-restricted-access-process-list
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为应用提供获取通过接口[addRestrictedAccessBackgro
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getRestrictedAccessBackgroundUserdataProcessList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#getrestrictedaccessbackgrounduserdataprocesslist)(userData: [UserDataEnum](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#userdataenum)): Promise<ProcessConfigInfo[]> | 获取不可访问后台用户数据的系统服务进程列表。使用Promise异步回调。 |
+| [getRestrictedAccessBackgroundUserdataProcessList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#getrestrictedaccessbackgrounduserdataprocesslist)(userData: [UserDataEnum](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#userdataenum)): Promise\<ProcessConfigInfo[]\> | 获取不可访问后台用户数据的系统服务进程列表。使用Promise异步回调。 |
 
 ## 开发步骤
 

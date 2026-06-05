@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "推送卡片刷新消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-form-update
+format: md
 ---
+
 
 ## 场景介绍
 

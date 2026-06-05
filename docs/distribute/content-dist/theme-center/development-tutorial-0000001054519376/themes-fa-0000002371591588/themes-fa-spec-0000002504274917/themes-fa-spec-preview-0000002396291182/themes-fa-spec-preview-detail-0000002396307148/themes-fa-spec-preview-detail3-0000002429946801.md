@@ -2,7 +2,9 @@
 title: "卡片套装"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-preview-detail3-0000002429946801
+format: md
 ---
+
 
 # 卡片套装
 

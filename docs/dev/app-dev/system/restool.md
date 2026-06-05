@@ -1,7 +1,9 @@
 ---
 title: "restool工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restool
+format: md
 ---
+
 
 ## 简介
 
@@ -77,7 +79,7 @@ Locale匹配规则：Locale匹配需满足以下三条规则。
 | thread | integer | --thread | 请参考--thread的说明。 |
 | ignoreResourcePattern | string[] | --ignored-file | 请参考--ignored-file的说明。 |
 | ignoreResourcePathPattern | string[] | --ignored-path | 请参考--ignored-path的说明。 |
-| qualifiersConfig | object | --target-config | 指定选择编译的参数配置，格式为json，支持的字段与--target-config的配置类型一致，字段类型为字符串数组，表示一个配置类型下可以配置多个值。举例说明：{"Locale":["zh\_CN","en\_US"], "Device":["phone"]}等同于--target-config的配置Locale[zh\_CN,en\_US];Device[phone]。  **说明：**  从API version 23开始，支持该字段。 |
+| qualifiersConfig | object | --target-config | 指定选择编译的参数配置，格式为json，支持的字段与--target-config的配置类型一致，字段类型为字符串数组，表示一个配置类型下可以配置多个值。举例说明：\{"Locale":["zh\_CN","en\_US"], "Device":["phone"]\}等同于--target-config的配置Locale[zh\_CN,en\_US];Device[phone]。  **说明：**  从API version 23开始，支持该字段。 |
 
 **--compressed-config参数说明**
 
@@ -384,7 +386,7 @@ JSON中xxx节点为空object或空数组。
 
 **可能原因**
 
-JSON中对应节点为空，如object配置为{}，或数组配置为[]。
+JSON中对应节点为空，如object配置为\{\}，或数组配置为[]。
 
 **处理步骤**
 
@@ -1085,7 +1087,7 @@ id\_defined.json中资源类型type的取值不在["boolean","color","float","id
 
 **错误信息**
 
-Invalid ID value 'xxx' in the id\_defined.json file. It should be a hexadecimal string, match the pattern ^0[xX][0-9a-fA-F]{8}, and be in the scope [0x01000000,0x06FFFFFF] or [0x08000000,0xFFFFFFFF].
+Invalid ID value 'xxx' in the id\_defined.json file. It should be a hexadecimal string, match the pattern ^0[xX][0-9a-fA-F]\{8\}, and be in the scope [0x01000000,0x06FFFFFF] or [0x08000000,0xFFFFFFFF].
 
 **错误描述**
 

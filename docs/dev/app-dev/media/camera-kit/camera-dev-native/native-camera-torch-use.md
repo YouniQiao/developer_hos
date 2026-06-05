@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "手电筒使用(C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-torch-use
+format: md
 ---
+
 
 通过操作设备启用手电筒功能，可使设备的手电筒保持常亮状态。
 

@@ -1,7 +1,9 @@
 ---
 title: "提升屏幕朗读无障碍体验"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/improve-screen-reader-experience
+format: md
 ---
+
 
 * **[标注屏幕朗读内容的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-screen-reading)**
 * **[禁用屏幕朗读焦点的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-disable-screen-reading-focus)**

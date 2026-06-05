@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite进行模型推理 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -273,7 +275,7 @@ int GenerateInputDataWithRandom(OH_AI_TensorHandleArray inputs) {
    )
    ```
 
-   * 使用ohos-sdk交叉编译，需要指定CMake的工具链路径，即：-DCMAKE\_TOOLCHAIN\_FILE="/{sdkPath}/native/build/cmake/ohos.toolchain.cmake"。
+   * 使用ohos-sdk交叉编译，需要指定CMake的工具链路径，即：-DCMAKE\_TOOLCHAIN\_FILE="/\{sdkPath\}/native/build/cmake/ohos.toolchain.cmake"。
 
      其中，sdkPath为DevEco Studio安装目录下的SDK路径，可在DevEco Studio工程界面，点击**File** > **Settings...** > **HarmonyOS SDK**，查看**Location**获取。
    * 工具链默认编译64位的程序，如果要编译32位，需要添加：-DOHOS\_ARCH="armeabi-v7a"。

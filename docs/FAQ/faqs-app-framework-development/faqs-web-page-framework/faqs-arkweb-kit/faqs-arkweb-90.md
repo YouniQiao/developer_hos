@@ -4,6 +4,7 @@ title: "ArkWeb组件是否支持深拷贝"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-90
 ---
 
+
 **问题描述**
 
 ArkWeb组件支持深拷贝。将ArkWeb组件A深拷贝给ArkWeb组件B后，即使A组件关闭或从路由栈中退出，B仍可继续使用A中的资源。

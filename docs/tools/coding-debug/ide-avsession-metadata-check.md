@@ -1,7 +1,9 @@
 ---
 title: "@correctness/avsession-metadata-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/avsession-metadata-check
 

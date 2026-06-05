@@ -4,6 +4,7 @@ title: "编译报错“CMake Error: The following variables are used in this pro
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-33
 ---
 
+
 **问题现象**
 
 Native工程使用find\_path时出现报错。因find\_path未在CMAKE\_SYSROOT限定路径中找到目标文件而触发该报错。

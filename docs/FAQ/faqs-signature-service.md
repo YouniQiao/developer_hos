@@ -4,6 +4,7 @@ title: "签名服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service
 ---
 
+
 * **[登录超时说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-1)**
 * **[已实名认证，登录时还是提示用户需要进行实名认证](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-2)**
 * **[输入华为账号后，未出现“允许”按钮，浏览器界面无跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-3)**

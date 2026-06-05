@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Camera Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-overview
+format: md
 ---
+
 
 开发者通过调用Camera Kit（相机服务）提供的接口可以开发相机应用，应用通过访问和操作相机硬件，实现基础操作，如预览、拍照和录像；还可以通过接口组合完成更多操作，如控制闪光灯和曝光时间、对焦或调焦等。
 

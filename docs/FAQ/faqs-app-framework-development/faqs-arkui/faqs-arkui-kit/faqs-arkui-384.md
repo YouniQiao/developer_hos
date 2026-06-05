@@ -4,6 +4,7 @@ title: "如何解决组件消失动画偏移闪烁"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-384
 ---
 
+
 **问题描述**
 
 运行下面demo，点击使色块消失时，会突然出现在左上角闪烁。

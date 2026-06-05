@@ -2,7 +2,9 @@
 title: 概述
 sidebar_label: 概述
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001938867005
+format: md
 ---
+
 # 概述
 
 在万物互联时代，人均持有设备量不断攀升，设备和场景的多样性，使服务开发变得更加复杂、服务入口更加丰富。在此趋势下，应用开发者和用户迫切需要一种新的服务提供方式，使应用的开发更简单，服务的获取和使用更便捷。为此，HarmonyOS 提供了基于元服务的便捷服务。

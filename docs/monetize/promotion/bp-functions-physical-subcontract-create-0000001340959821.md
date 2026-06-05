@@ -2,7 +2,9 @@
 title: "新建物理分包任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-physical-subcontract-create-0000001340959821
+format: md
 ---
+
 # 新建物理分包任务
 
 ## 前提条件

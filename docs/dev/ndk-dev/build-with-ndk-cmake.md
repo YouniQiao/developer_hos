@@ -1,7 +1,9 @@
 ---
 title: "使用命令行CMake构建NDK工程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-cmake
+format: md
 ---
+
 
 在很多复杂应用工程中，C++代码工程是通过CMake等构建系统以命令行方式来编译构建的，接下来介绍如何把已有的CMake工程切换到HarmonyOS工具链中，从而使用命令行CMake构建该工程。
 

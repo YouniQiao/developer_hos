@@ -1,7 +1,9 @@
 ---
 title: "测试（内测）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-special-test-0000002320553313
+format: md
 ---
+
 
 测试是指游戏在华为平台开启测试。
 

@@ -4,6 +4,7 @@ title: "运行时提示“Hdc server port XXXX has been used”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-19
 ---
 
+
 **问题现象**
 
 在设备中运行HAP时，提示“Hdc server port XXXX已被使用。请配置环境变量‘OHOS\_HDC\_SERVER\_PORT’并重启DevEco Studio。”

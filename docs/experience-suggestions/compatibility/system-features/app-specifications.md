@@ -1,7 +1,9 @@
 ---
 title: "应用规格"
 source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-specifications
+format: md
 ---
+
 
 # 应用规格
 

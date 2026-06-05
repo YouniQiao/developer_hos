@@ -4,6 +4,7 @@ title: "编译报错“The permission under requestPermissions must be a value t
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-163
 ---
 
+
 **错误描述**
 
 requestPermissions下的权限必须是SDK中预定义的值，或在definePermissions中定义的自定义值。

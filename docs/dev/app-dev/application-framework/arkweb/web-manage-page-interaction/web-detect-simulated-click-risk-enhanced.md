@@ -1,7 +1,9 @@
 ---
 title: "Web应用模拟点击检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-detect-simulated-click-risk-enhanced
+format: md
 ---
+
 
 从API version 23开始，新增支持Web应用模拟点击检测。
 

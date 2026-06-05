@@ -2,7 +2,9 @@
 title: "投放图文合约任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-brand-recommend-0000001286501346
+format: md
 ---
+
 # 投放图文合约任务
 
 ## 背景信息

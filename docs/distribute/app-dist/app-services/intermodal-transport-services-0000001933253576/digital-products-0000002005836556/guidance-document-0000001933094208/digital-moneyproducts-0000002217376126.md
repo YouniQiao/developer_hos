@@ -2,7 +2,9 @@
 title: "付费下载应用"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/digital-moneyproducts-0000002217376126
+format: md
 ---
+
 
 # 付费下载应用
 

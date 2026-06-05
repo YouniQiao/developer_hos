@@ -1,7 +1,9 @@
 ---
 title: "@correctness/audio-interrupt-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/audio-interrupt-check
 

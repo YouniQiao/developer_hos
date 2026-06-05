@@ -4,6 +4,7 @@ title: "如何获取应用签名证书的hash值"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-2
 ---
 
+
 * “应用指纹”signatureInfo.fingerprint是应用签名证书（.cer文件）的SHA-256哈希值，当前支持获取本应用的指纹。示例代码如下：
 
   ```

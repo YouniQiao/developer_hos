@@ -1,7 +1,9 @@
 ---
 title: "使用Laya引擎概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-introduction-0000002290745125
+format: md
 ---
+
 
 本文主要介绍基于Laya架构的游戏适配HarmonyOS 5.0及以上系统的适配方案。
 

@@ -4,6 +4,7 @@ title: "编译打包CPU架构设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-86
 ---
 
+
 **问题描述**
 
 在编译打包时，若需移除v7a，可以参考以下配置文档。

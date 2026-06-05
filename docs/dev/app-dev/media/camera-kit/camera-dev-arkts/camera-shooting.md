@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "拍照(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting
+format: md
 ---
+
 
 ## 概述
 

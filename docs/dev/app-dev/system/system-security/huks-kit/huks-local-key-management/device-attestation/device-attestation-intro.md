@@ -1,7 +1,9 @@
 ---
 title: "应用真实性证明简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-intro
+format: md
 ---
+
 
 您可以利用应用真实性证明能力在服务器验证来自应用的请求，具体包括验证请求是否源自真实应用、真实设备，以及请求内容是否未经篡改。
 

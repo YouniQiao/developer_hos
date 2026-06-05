@@ -1,7 +1,9 @@
 ---
 title: "如何实现列表既可以左右滑、又可以上下滑动"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-250
+format: md
 ---
+
 
 实现列表的上下、左右滑动，参考代码如下：
 

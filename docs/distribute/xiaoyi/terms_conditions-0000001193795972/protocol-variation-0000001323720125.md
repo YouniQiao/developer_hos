@@ -2,7 +2,9 @@
 title: "协议变更点"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/protocol-variation-0000001323720125
+format: md
 ---
+
 
 # 协议变更点
 

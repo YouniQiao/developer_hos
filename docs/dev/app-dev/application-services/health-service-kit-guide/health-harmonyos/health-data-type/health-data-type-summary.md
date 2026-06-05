@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "概要"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-type-summary
+format: md
 ---
+
 
 运动健康服务提供了一系列运动和健康数据类型，主要分三组：
 

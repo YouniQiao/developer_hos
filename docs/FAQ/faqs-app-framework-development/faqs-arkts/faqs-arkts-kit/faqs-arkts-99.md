@@ -1,7 +1,9 @@
 ---
 title: "如何通过AOP统计方法执行时间"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-99
+format: md
 ---
+
 
 为了统计执行时间，可以使用addBefore记录开始时间，使用addAfter记录结束时间。
 

@@ -2,7 +2,9 @@
 title: "概述"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/50104
+format: md
 ---
+
 # 应用审核指南
 
 ## 概述

@@ -2,7 +2,9 @@
 title: "搜索广告投放指南"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-chaunjiansousuoguangaozhiyin-0000001773394785
+format: md
 ---
+
 # 搜索广告投放指南
 
 ## <strong>Q</strong> <strong>：如何在鲸鸿动能投放搜索广告？</strong>

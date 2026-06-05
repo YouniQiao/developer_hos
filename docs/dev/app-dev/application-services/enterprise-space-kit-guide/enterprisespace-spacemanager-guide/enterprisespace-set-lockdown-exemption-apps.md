@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置深度冻结豁免名单"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-lockdown-exemption-apps
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为企业应用提供设置深度冻结豁免名单的能力
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setLockdownExemptionApps](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setlockdownexemptionapps)(appIds: string[], workspaceId?: number): Promise<void> | 设置深度冻结豁免名单。使用Promise异步回调。 |
+| [setLockdownExemptionApps](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setlockdownexemptionapps)(appIds: string[], workspaceId?: number): Promise\<void\> | 设置深度冻结豁免名单。使用Promise异步回调。 |
 
 ## 开发步骤
 

@@ -1,7 +1,9 @@
 ---
 title: "验证匿名证书链"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-verifycertchain
+format: md
 ---
+
 
 为防止第三方伪造数据，端侧和云侧在对数据进行验签之前，必须先验证匿名证书链的正确性。端侧对匿名证书链的校验处理接口，请参考“[证书链校验器对象的创建和校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-cerchainvalidator-object)”。云侧对匿名证书链的校验处理接口，请参考“[设备真实性证明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation)”的服务器端开发章节。
 

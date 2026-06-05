@@ -1,7 +1,9 @@
 ---
 title: "申请调试设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-applyequip-0000002254916518
+format: md
 ---
+
 
 单机调试场景下，每次申请一台设备进行调试，以验证应用在指定机型上的表现。
 

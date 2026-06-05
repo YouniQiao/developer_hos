@@ -1,7 +1,9 @@
 ---
 title: "游戏性能管理（GPM）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-improve-performance-gpm-0000002252508218
+format: md
 ---
+
 
 * **[业务介绍](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-overview-0000002332867021)**
 * **[版本更新说明](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-releasenotes-0000002332907205)**

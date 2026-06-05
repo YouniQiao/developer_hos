@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "命中检测介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arworld-conversion
+format: md
 ---
+
 
 AR Engine通过命中检测（Hit Testing）技术，将终端设备屏幕上的兴趣点映射为现实环境中的兴趣点。命中检测以现实环境中的兴趣点为源，发出一条射线连接到摄像头所在位置，返回射线与平面、稀疏点云、Mesh的交点。
 

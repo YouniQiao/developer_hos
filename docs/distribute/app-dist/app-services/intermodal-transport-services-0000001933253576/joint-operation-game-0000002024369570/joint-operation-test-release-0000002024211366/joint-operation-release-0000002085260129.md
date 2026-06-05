@@ -2,7 +2,9 @@
 title: "提交上架"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-release-0000002085260129
+format: md
 ---
+
 
 # 提交上架
 

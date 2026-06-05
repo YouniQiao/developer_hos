@@ -2,7 +2,9 @@
 title: "管理商品营销"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-managing-product-marketing-0000001198744990
+format: md
 ---
+
 
 # 管理商品营销
 

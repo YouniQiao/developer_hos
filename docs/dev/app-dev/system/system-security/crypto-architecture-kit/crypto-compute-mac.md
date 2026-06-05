@@ -1,7 +1,9 @@
 ---
 title: "消息认证码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac
+format: md
 ---
+
 
 * **[消息认证码计算介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac-overview)**
 * **[消息认证码计算HMAC(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-hmac)**

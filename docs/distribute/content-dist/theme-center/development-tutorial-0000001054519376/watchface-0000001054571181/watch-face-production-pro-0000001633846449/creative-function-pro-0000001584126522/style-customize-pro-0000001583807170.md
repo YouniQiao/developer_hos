@@ -2,7 +2,9 @@
 title: "样式自定义"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/style-customize-pro-0000001583807170
+format: md
 ---
+
 
 # 样式自定义
 

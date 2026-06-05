@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开通相关服务和配置参数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-config-agc
+format: md
 ---
+
 
 请先参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作及指纹配置，再继续进行以下开发活动。
 

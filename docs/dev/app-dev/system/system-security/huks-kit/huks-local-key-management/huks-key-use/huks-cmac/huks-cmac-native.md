@@ -1,7 +1,9 @@
 ---
 title: "CMAC(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac-native
+format: md
 ---
+
 
 CMAC是基于对称密钥分组加密算法的消息认证码（Cipher-based Message Authentication Code），目前支持3DES加密算法的消息认证方法。
 

@@ -2,7 +2,9 @@
 title: "视图：视图切换&lt;Swiper&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-swiper-0000002471235020
+format: md
 ---
+
 
 # 视图：视图切换&lt;Swiper&gt;
 

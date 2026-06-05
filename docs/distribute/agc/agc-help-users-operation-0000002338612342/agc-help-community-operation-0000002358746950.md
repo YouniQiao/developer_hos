@@ -1,7 +1,9 @@
 ---
 title: "社区管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-community-operation-0000002358746950
+format: md
 ---
+
 
 华为游戏中心社区是以用户为核心，内容为引导，不断聚集更多热爱游戏的玩家，实现玩家与玩家，玩家与开发者的交流互动阵地。我们诚邀各位开发者一起来加入游戏社区的运营，为玩家提供更多的内容、创建社区活动和进行互动，共同建立一个受玩家喜爱的游戏社区。
 

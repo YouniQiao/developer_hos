@@ -1,7 +1,9 @@
 ---
 title: "获取当前发言玩家列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enablespeakersdetection-harmonyos-0000002393621545
+format: md
 ---
+
 
 通过本章的开发指导，您可实现获取房间内当前发言玩家列表以及对应的音量分贝的功能。
 

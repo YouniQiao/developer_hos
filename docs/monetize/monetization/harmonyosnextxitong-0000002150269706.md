@@ -2,7 +2,9 @@
 title: "HarmonyOS NEXT系统"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/harmonyosnextxitong-0000002150269706
+format: md
 ---
+
 
 
 * **[鸿蒙应用](https://developer.huawei.com/consumer/cn/doc/monetize/hongmengyuanshengyingyong-0000002150427782)**

@@ -1,7 +1,9 @@
 ---
 title: "生成并配置证书指纹"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-certificate-fingerprint-0000002541510397
+format: md
 ---
+
 
 证书指纹可以保证快游戏的完整性和安全性。在快应用IDE中生成，并在AGC控制台进行配置。下载快应用IDE请[前往快应用IDE下载页](https://developer.huawei.com/consumer/cn/doc/Tools-Library/quickapp-ide-download-0000001101172926#section8185184915)。
 

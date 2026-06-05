@@ -1,7 +1,9 @@
 ---
 title: "绑定模态页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bind-modal
+format: md
 ---
+
 
 * **[绑定模态页面概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-overview)**
 * **[绑定半模态页面（bindSheet）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sheet-page)**

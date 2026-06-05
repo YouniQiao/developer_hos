@@ -1,7 +1,9 @@
 ---
 title: 模板
 sidebar_label: 模板
+format: md
 ---
+
 
 # 模板
 

@@ -4,6 +4,7 @@ title: "如何设置沉浸式状态栏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-214
 ---
 
+
 1. 获取应用主窗口。通过getMainWindow接口获取应用主窗口。
 2. 实现沉浸式效果。有以下两种方式：
    * 方式一：调用setWindowSystemBarEnable接口，设置导航栏、状态栏不显示，从而达到沉浸式效果。

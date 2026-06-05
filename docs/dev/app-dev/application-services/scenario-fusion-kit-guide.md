@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Scenario Fusion Kit（融合场景服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-kit-guide
+format: md
 ---
+
 
 * **[Scenario Fusion Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-preparations)**

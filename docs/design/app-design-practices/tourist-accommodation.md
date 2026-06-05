@@ -2,7 +2,9 @@
 title: 旅游住宿类
 sidebar_label: 旅游住宿类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/tourist-accommodation-0000001957241545
+format: md
 ---
+
 # 旅游住宿类
 
 旅游住宿、订票类场景通常包含火车/飞机订票，订酒店，查询票务信息等核心功能，围绕此核心功能，此类场景旨在让用户拥有流畅沉浸的用户体验，提供更轻便高效的交互体验。

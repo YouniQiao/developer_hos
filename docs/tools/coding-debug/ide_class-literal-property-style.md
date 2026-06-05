@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/class-literal-property-style"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/class-literal-property-style
 

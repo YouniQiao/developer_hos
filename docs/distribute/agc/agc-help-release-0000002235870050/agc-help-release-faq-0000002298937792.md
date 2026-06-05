@@ -1,7 +1,9 @@
 ---
 title: "FAQ"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-faq-0000002298937792
+format: md
 ---
+
 
 #### 如何查看应用上架状态？应用上架状态有哪些？
 

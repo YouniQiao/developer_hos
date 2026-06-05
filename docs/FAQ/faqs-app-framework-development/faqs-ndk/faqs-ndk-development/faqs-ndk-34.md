@@ -4,6 +4,7 @@ title: "Native工程中如何使用其他三方so库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-34
 ---
 
+
 1.将编译好的so库放到Native工程的entry/libs/arm64-v8a/目录下，并将so库对应的头文件放到entry/src/main/cpp目录层级下（可以在cpp目录下增加一个文件夹专门存放三方so库的头文件）。
 
 2.在CMakeLists.txt文件中链入so库。

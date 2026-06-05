@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "验证应用请求真实性集成设计实践"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-practice
+format: md
 ---
+
 
 本文档提供了验证应用请求真实性的集成设计方案实践。
 

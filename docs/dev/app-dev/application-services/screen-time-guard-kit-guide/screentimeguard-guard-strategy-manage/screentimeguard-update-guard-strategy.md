@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "修改策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-update-guard-strategy
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -28,7 +30,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [updateGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#updateguardstrategy)(strategyName: string, guardStrategy: [GuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#guardstrategy)): Promise<void> | 修改屏幕时间管控策略。 |
+| [updateGuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#updateguardstrategy)(strategyName: string, guardStrategy: [GuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#guardstrategy)): Promise\<void\> | 修改屏幕时间管控策略。 |
 
 ## 开发前提
 

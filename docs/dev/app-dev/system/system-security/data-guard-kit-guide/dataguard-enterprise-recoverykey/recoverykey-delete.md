@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "删除企业恢复密钥"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-delete
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reco
 
 | 接口名 | 描述 |
 | --- | --- |
-| [deleteEnterpriseRecoveryKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#deleteenterpriserecoverykey)(userId: number, signature: Uint8Array): Promise<number> | 使用Promise方式删除企业恢复密钥相关数据。 |
+| [deleteEnterpriseRecoveryKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#deleteenterpriserecoverykey)(userId: number, signature: Uint8Array): Promise\<number\> | 使用Promise方式删除企业恢复密钥相关数据。 |
 
 ## 开发步骤
 

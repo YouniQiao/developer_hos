@@ -4,6 +4,7 @@ title: "已实名认证，登录时还是提示用户需要进行实名认证"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-2
 ---
 
+
 **问题现象**
 
 登录授权模拟器时，若提示华为账号需要实名制认证，请在账号中心检查账号状态。若状态显示“已实名”，请核对相关信息。

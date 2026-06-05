@@ -2,7 +2,9 @@
 title: "电量类型"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-guide-type-0000002396307100
+format: md
 ---
+
 
 # 电量类型
 

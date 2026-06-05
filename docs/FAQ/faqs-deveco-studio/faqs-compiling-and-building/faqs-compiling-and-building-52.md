@@ -4,6 +4,7 @@ title: "如何给新增的module在线签名"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-52
 ---
 
+
 操作步骤：
 
 1. 连接真机设备，确保[DevEco Studio与真机设备已连接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)，真机连接成功后如下图所示：

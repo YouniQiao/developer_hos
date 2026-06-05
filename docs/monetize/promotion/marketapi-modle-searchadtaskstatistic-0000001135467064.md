@@ -2,7 +2,9 @@
 title: "SearchAdTaskStatistic"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-searchadtaskstatistic-0000001135467064
+format: md
 ---
+
 # SearchAdTaskStatistic
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |

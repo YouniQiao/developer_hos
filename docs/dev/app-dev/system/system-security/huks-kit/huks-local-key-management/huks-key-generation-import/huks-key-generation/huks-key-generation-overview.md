@@ -1,7 +1,9 @@
 ---
 title: "密钥生成介绍及算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview
+format: md
 ---
+
 
 当业务需要使用HUKS生成随机密钥，并由HUKS进行安全保存时，可以调用HUKS的接口生成密钥。
 

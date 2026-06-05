@@ -2,7 +2,9 @@
 title: "调试事件上报"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_event-report-0000001262218943
+format: md
 ---
+
 
 
 广告曝光和用户点击后，您都需要将相关事件上报到AG。

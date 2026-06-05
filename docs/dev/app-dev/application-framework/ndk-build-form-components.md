@@ -1,7 +1,9 @@
 ---
 title: "构建表单组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-form-components
+format: md
 ---
+
 
 ArkUI NDK提供了多种表单组件，包括[按钮（Button）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-button)、滑动条[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)、[切换按钮（Toggle）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-switch)、复选框[Checkbox](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-checkbox)、复选框组[CheckboxGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-checkboxgroup)和[单选框（Radio）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-radio-button)。这些组件是用户交互的基础元素，可以用于构建丰富的表单界面。
 

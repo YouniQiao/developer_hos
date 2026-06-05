@@ -2,8 +2,10 @@
 title: 大屏应用 UX 体验标准
 sidebar_label: 大屏应用 UX 体验标准
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-large-screen-0000001807707561
+format: md
 ---
-{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用<MergedTable>组件还原 */}
+
+\{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 大屏应用 UX 体验标准
 

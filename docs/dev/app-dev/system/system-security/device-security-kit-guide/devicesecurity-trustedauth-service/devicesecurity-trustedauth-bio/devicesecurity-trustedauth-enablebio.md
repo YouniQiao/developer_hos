@@ -1,7 +1,9 @@
 ---
 title: "开通生物特征认证能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-enablebio
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -23,8 +25,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [trustedAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthentication)(challenge: Uint8Array, authID: bigint, label: TUILable): Promise<[AuthToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#authtoken)> | 数字盾密码认证 |
-| [getBiometricAuthToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#getbiometricauthtoken)(operType: [OperateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#operatetype), tuiAuthToken: Uint8Array, bioAuthToken: Uint8Array): Promise<AuthToken> | 获取生物特征绑定完成后生成的authToken信息 |
+| [trustedAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthentication)(challenge: Uint8Array, authID: bigint, label: TUILable): Promise[AuthToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#authtoken) | 数字盾密码认证 |
+| [getBiometricAuthToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#getbiometricauthtoken)(operType: [OperateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#operatetype), tuiAuthToken: Uint8Array, bioAuthToken: Uint8Array): Promise\<AuthToken\> | 获取生物特征绑定完成后生成的authToken信息 |
 
 ## 开通生物特征认证能力界面介绍
 

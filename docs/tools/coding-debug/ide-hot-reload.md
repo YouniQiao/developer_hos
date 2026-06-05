@@ -1,7 +1,9 @@
 ---
 title: "Hot Reload"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Hot Reload
 

@@ -2,7 +2,9 @@
 title: "更新在架应用详情"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-upgrade-detail-0000001239525221
+format: md
 ---
+
 
 # 更新在架应用详情
 

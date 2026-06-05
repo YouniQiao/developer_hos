@@ -1,7 +1,9 @@
 ---
 title: "稳定性测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-stabilitytest-0000002254933876
+format: md
 ---
+
 
 稳定性测试通过长时间遍历测试和随机测试，检测应用或元服务是否存在崩溃、冻屏、内存泄漏、进（线）程限制、文件资源限制等稳定性问题。
 

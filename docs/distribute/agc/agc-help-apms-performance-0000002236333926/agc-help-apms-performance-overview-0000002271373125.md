@@ -1,7 +1,9 @@
 ---
 title: "查看应用指标概览数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-performance-overview-0000002271373125
+format: md
 ---
+
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。
 2. 在项目列表中找到您的项目，在项目下的应用列表中点击您的应用/元服务。

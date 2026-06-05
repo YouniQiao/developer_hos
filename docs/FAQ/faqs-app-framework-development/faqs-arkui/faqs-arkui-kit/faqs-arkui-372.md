@@ -4,6 +4,7 @@ title: "如何设置customspan不同位置的点击事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-372
 ---
 
+
 CustomSpan 是最小单位的组件。若需实现特定功能，建议在多个 CustomSpan 上分别进行。如果必须在同一 CustomSpan 上实现，可从点击事件回调的 ClickEvent 中，根据属性判断实际点击位置，从而做出差异化响应。示例代码如下：
 
 ```

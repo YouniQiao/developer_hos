@@ -4,6 +4,7 @@ title: "Native侧如何获取ArkTS侧的应用包名"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-17
 ---
 
+
 **问题详情**
 
 ArkTS侧调用Native开放的接口时，如何在Native侧获取TS侧应用包名？

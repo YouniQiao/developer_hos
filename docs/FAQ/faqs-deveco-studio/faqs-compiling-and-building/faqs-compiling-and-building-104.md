@@ -1,7 +1,9 @@
 ---
 title: "如何在构建任务中执行shell脚本"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-104
+format: md
 ---
+
 
 在hvigorfile.ts文件中执行如下示例：
 

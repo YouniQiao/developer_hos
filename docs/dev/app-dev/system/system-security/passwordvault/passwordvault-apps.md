@@ -1,7 +1,9 @@
 ---
 title: "应用接入密码保险箱"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-apps
+format: md
 ---
+
 
 * **[快速适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation)**
 * **[自动保存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autosave)**

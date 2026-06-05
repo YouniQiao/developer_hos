@@ -1,7 +1,9 @@
 ---
 title: "ServiceAbility组件配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-configuration
+format: md
 ---
+
 
 与PageAbility类似，ServiceAbility的相关配置在config.json配置文件的"module"对象的"abilities"对象中，与PageAbility的区别在于"type"属性及"backgroundModes"属性。
 

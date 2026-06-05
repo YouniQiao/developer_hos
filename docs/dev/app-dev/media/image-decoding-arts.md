@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图片解码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-arts
+format: md
 ---
+
 
 * **[使用ImageSource完成图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)**
 * **[使用ImageSource完成多图对象解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-picture-decoding)**

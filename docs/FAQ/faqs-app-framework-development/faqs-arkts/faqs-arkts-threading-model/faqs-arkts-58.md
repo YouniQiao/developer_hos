@@ -1,7 +1,9 @@
 ---
 title: "TaskPool线程内存如何共享"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-58
+format: md
 ---
+
 
 TaskPool 底层采用 Actor 模型，线程间隔离，不共享内存。可以通过传输 SharedArrayBuffer 对象实现内存共享。
 

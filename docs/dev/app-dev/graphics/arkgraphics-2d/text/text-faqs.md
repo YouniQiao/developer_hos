@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文本开发常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-faqs
+format: md
 ---
+
 
 ## 如何对找不到字形的字符进行显示优化
 

@@ -2,7 +2,9 @@
 title: "功能调试"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-debug-0000001348812981
+format: md
 ---
+
 # 功能调试
 
 ## 前提条件

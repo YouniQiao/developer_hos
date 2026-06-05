@@ -2,7 +2,9 @@
 title: "FixPositionContent"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-fixpositioncontent-0000001135467070
+format: md
 ---
+
 # FixPositionContent
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

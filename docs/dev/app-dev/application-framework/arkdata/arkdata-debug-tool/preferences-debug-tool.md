@@ -1,7 +1,9 @@
 ---
 title: "preferences数据库调试工具指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preferences-debug-tool
+format: md
 ---
+
 
 当前开发者在使用preferences数据库进行开发调试和定位问题时，无法查看数据库文件中的内容信息，如元数据和用户数据等。
 
@@ -27,7 +29,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pref
 
   | 参数 | 参数值类型 | 描述 |
   | --- | --- | --- |
-  | -t | 字符串 | 数据库类型，进入到对应的数据库调试工具， 取值范围：{preference\_kv, preference\_xml, vector}。 |
+  | -t | 字符串 | 数据库类型，进入到对应的数据库调试工具， 取值范围：\{preference\_kv, preference\_xml, vector\}。 |
   | -f | 字符串 | 数据库文件全路径，包含文件名， 路径不能以‘/’结尾。 |
   | -p | 整型 | 数据库pagesize，数据库开库配置参数，代表存储的单页大小，默认值32，可取值为是4、8、16、32、64。 |
   | -c | 整型 | 数据库cacheSize，数据库开库配置参数，即bufferPoolSize，代表内存缓存池大小， 默认值2048，可取值为2048和4096。 |
@@ -100,9 +102,9 @@ preference\_kv和preference\_xml调试工具支持的命令如下表所示：
 | --- | --- |
 | .help | 显示帮助信息。 |
 | .q | .quit | 退出数据库交互模式。 |
-| get key:{key name} | 根据指定的key查询数据库。 |
-| put key:{key name}  value:{value} | 插入指定的键值对到数据库或者更新键值对。输入需要两行，第一行输入key，使用“key:”作为关键字，第二行输入value，使用“value:”作为关键字。  例如：put key:123  value:345 |
-| delete key:{key name} | 删除指定键值对。  例如：delete key:123 |
+| get key:\{key name\} | 根据指定的key查询数据库。 |
+| put key:\{key name\}  value:\{value\} | 插入指定的键值对到数据库或者更新键值对。输入需要两行，第一行输入key，使用“key:”作为关键字，第二行输入value，使用“value:”作为关键字。  例如：put key:123  value:345 |
+| delete key:\{key name\} | 删除指定键值对。  例如：delete key:123 |
 | delete | 删除表内所有内容。 |
 | scan | 全表查询。  \*\*说明：\*\*preference\_xml支持全表查询，preference\_kv不支持全表查询。 |
 

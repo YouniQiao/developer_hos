@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "本地媒体会话"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/local-avsession
+format: md
 ---
+
 
 * **[本地媒体会话概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/local-avsession-overview)**
 * **[媒体会话提供方(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avsession-developer)**

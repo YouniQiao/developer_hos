@@ -1,7 +1,9 @@
 ---
 title: "checkbox-group"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-checkbox-group
+format: md
 ---
+
 
 多项选择器，内部由多个checkbox组成。
 

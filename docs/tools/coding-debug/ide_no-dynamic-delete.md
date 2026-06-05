@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-dynamic-delete"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-dynamic-delete
 

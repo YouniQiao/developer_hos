@@ -1,7 +1,9 @@
 ---
 title: "认领核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-claim-0000001900078324
+format: md
 ---
+
 
 ## 前提条件
 

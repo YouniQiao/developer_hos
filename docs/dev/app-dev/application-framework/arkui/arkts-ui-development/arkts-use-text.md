@@ -1,7 +1,9 @@
 ---
 title: "使用文本"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-text
+format: md
 ---
+
 
 * **[文本概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-introduction)**
 * **[文本显示 (Text/Span)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-display)**

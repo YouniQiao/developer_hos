@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "生理周期"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-menstrualcycle
+format: md
 ---
+
 
 记录用户在女性生理周期时间段（默认28天）内一天的身体状态，每一条数据代表该女性用户当天的状态。
 

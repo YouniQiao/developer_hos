@@ -1,7 +1,9 @@
 ---
 title: "SDK命令行工具简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/command-line-tools-overview
+format: md
 ---
+
 
 当前SDK中包含了开发者在开发应用过程中需要使用的多种工具，可以实现日志查看、应用安装、启动测试等功能。
 

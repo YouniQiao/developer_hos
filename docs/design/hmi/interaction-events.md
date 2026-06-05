@@ -2,7 +2,9 @@
 title: 交互事件归一
 sidebar_label: 交互事件归一
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-interaction-events-0000001795531217
+format: md
 ---
+
 # 交互事件归一
 
 为了让应用在全场景多设备上都能获得一致自然的交互体验，需要为不同交互状态下的各种输入设备设计适合的交互方式。在传统的开发模式中需要为不同的输入设备进行适配开发，工作量巨大。

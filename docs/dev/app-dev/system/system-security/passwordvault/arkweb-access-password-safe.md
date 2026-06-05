@@ -2,13 +2,15 @@
 displayed_sidebar: appDevSidebar
 title: "网页接入密码保险箱"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-access-password-safe
+format: md
 ---
+
 
 网页中的登录表单，登录成功后，用户可将用户名和密码保存到系统密码保险箱中。再次打开该网页时，密码保险箱可以提供用户名、密码的自动填充。
 
 ## 手机使用场景
 
-以下以<https://developer.huawei.com/>网站为例：
+以下以https://developer.huawei.com/网站为例：
 
 1. 在网站中输入用户名、密码，登录成功后，ArkWeb会提示将用户名和密码保存到密码保险箱中。
 
@@ -30,7 +32,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkw
 
 ## 2in1使用场景
 
-以下以<https://developer.huawei.com/>网站为例：
+以下以https://developer.huawei.com/网站为例：
 
 1. 在网站中输入用户名、密码，登陆成功后，ArkWeb会提示将用户名和密码保存到密码保险箱中。
 
@@ -57,8 +59,8 @@ ArkWeb使用Chromium智能算法，自动识别网页中的用户名、密码元
 
 ### 推荐的密码登录表单
 
-1. 使用静态的登录页面或登录表单元素，而不是通过js脚本在页面中动态插入<form>、<input>等表单元素。
-2. 用户名密码输入框均使用<input>元素实现，并集成在同一个<form>内，默认可编辑，登录场景有且最多有一个type="password"类型的<input>元素。
+1. 使用静态的登录页面或登录表单元素，而不是通过js脚本在页面中动态插入\<form\>、<input />等表单元素。
+2. 用户名密码输入框均使用<input />元素实现，并集成在同一个\<form\>内，默认可编辑，登录场景有且最多有一个type="password"类型的<input />元素。
 3. 点击按钮触发登录，登录成功后，应当触发跳转到新的页面。
 4. 用户名框携带autocomplete=“username”，携带id或name属性，并采用如下建议的值，便于算法推断用户名元素：
 
@@ -128,7 +130,7 @@ ArkWeb使用Chromium智能算法，自动识别网页中的用户名、密码元
    const char* const kWeakWords[] = {"id", "login", "mail"};
    ```
 5. 登录场景，密码框携带autocomplete=“current-password”。
-6. 用户名框下面紧挨密码框，中间不要插入其他<input>元素（包括不可见的<input>）。
+6. 用户名框下面紧挨密码框，中间不要插入其他<input />元素（包括不可见的<input />）。
 7. 静态页面中的用户名密码框不可见，则需要确保在静态页面中就存在，而不是跳转页面时插入密码表单。
 
 【案例1】：
@@ -141,12 +143,12 @@ ArkWeb使用Chromium智能算法，自动识别网页中的用户名、密码元
 
 ### 不支持自动填充的密码登录表单类型
 
-1. 初始页面内无用户名密码表单元素，点击登录跳转页面后，新增非<form>类型的用户名密码表单。
+1. 初始页面内无用户名密码表单元素，点击登录跳转页面后，新增非\<form\>类型的用户名密码表单。
 2. 密码输入框携带了autocomplete=“new-password”属性。
 3. 用户名输入框type="number"，验证码输入框type="number"，无密码输入框。
-4. 用户名和密码元素中间存在其他<input>元素，算法推断出的用户名元素，不符合用户预期。
-5. 网页通过javascript脚本，变更了<input>元素的焦点或者修改<input>元素的value。
-6. 用户名<input>元素上id、name、label内容中匹配到如下密码类型标识：
+4. 用户名和密码元素中间存在其他<input />元素，算法推断出的用户名元素，不符合用户预期。
+5. 网页通过javascript脚本，变更了<input />元素的焦点或者修改<input />元素的value。
+6. 用户名<input />元素上id、name、label内容中匹配到如下密码类型标识：
 
    ```
    const char* const kNegativeLatin[] = {
@@ -180,7 +182,7 @@ ArkWeb使用Chromium智能算法，自动识别网页中的用户名、密码元
        "கடவுச்சொல்", "పాస్వర్డ్", "รหัสผ่าน", "пароль",
        "پاسورڈ", "mậtkhẩu", "פּאַראָל", "ọrọigbaniwọle"};
    ```
-7. 用户名<input>元素的autocomplete="one-time-code"或者"cc-\*"，或者id、name属性上能正则匹配到如下one-time-code或者信用卡标识：
+7. 用户名<input />元素的autocomplete="one-time-code"或者"cc-\*"，或者id、name属性上能正则匹配到如下one-time-code或者信用卡标识：
 
    ```
    inline constexpr char16_t kOneTimePwdRe[] =
@@ -198,4 +200,4 @@ ArkWeb使用Chromium智能算法，自动识别网页中的用户名、密码元
        // "city") and needs to be handled carefully.
        u"|\\bcid\\b|cccid";
    ```
-8. 页面加载完成，<input>的type属性不是"password"，点击登录才变成"password"类型。
+8. 页面加载完成，<input />的type属性不是"password"，点击登录才变成"password"类型。

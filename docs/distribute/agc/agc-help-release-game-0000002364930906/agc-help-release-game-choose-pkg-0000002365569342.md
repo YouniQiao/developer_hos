@@ -1,7 +1,9 @@
 ---
 title: "选取软件包版本"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-choose-pkg-0000002365569342
+format: md
 ---
+
 
 请选择待发布的游戏软件包，并设置是否加密游戏软件包。
 

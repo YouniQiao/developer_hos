@@ -2,7 +2,9 @@
 title: "线上充值"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-online-0000001379958177
+format: md
 ---
+
 # 线上充值
 
 ## 概述

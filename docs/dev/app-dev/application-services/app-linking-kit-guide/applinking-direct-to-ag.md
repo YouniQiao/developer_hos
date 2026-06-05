@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过直达应用市场能力跳转至应用市场下载详情页"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag
+format: md
 ---
+
 
 ## 场景介绍
 

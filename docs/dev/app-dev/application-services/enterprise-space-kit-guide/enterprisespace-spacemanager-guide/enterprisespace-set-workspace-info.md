@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置工作空间信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-workspace-info
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ Enterprise Space Kit为应用提供设置工作空间信息的能力。在企业
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setWorkspaceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspaceinfo)(workspaceId: number, domainInfo: [WorkspaceDomainInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#workspacedomaininfo)): Promise<void> | 设置工作空间信息。使用Promise异步回调。 |
+| [setWorkspaceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#setworkspaceinfo)(workspaceId: number, domainInfo: [WorkspaceDomainInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#workspacedomaininfo)): Promise\<void\> | 设置工作空间信息。使用Promise异步回调。 |
 
 ## 开发步骤
 

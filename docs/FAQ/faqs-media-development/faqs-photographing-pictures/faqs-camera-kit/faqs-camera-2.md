@@ -1,7 +1,9 @@
 ---
 title: "如何获取前置摄像头的预览图像"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-2
+format: md
 ---
+
 
 获取前置摄像头预览图像示例代码如下：
 

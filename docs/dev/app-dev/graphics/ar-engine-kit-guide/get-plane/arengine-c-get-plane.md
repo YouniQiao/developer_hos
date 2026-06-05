@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "检测环境中的平面（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-plane
+format: md
 ---
+
 
 ## 概要
 

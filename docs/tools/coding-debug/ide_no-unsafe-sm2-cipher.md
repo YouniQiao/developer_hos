@@ -1,7 +1,9 @@
 ---
 title: "@security/no-unsafe-sm2-cipher"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-unsafe-sm2-cipher
 

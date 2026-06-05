@@ -1,7 +1,9 @@
 ---
 title: "组件扩展概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend-components-overview
+format: md
 ---
+
 
 ArkUI使用@Builder装饰器为开发者提供代码精简方案。该装饰器通过模块化封装简化UI开发流程，并衍生出@BuilderParam、@LocalBuilder装饰器和wrapBuilder机制，构成可复用的UI结构体系。
 

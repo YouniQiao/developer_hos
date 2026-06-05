@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "涉诈剧本检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-fraudriskdetection
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -39,7 +41,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| detectFraudRisk(params: FraudDetectionRequest): Promise<string> | 涉诈剧本检测。 |
+| detectFraudRisk(params: FraudDetectionRequest): Promise\<string\> | 涉诈剧本检测。 |
 
 ## 开发步骤
 

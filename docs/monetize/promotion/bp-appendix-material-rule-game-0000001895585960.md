@@ -2,7 +2,9 @@
 title: "游戏"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-game-0000001895585960
+format: md
 ---
+
 # 游戏
 
 ## 游戏行业通用规范

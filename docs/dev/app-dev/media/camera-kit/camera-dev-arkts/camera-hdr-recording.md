@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "HDR Vivid相机录像(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-hdr-recording
+format: md
 ---
+
 
 HarmonyOS支持调用接口，录制HDR Vivid视频，可以拍出层次表现更细腻、光影细节更丰富的画面，提升画面质感，呈现更卓越的视觉效果。
 

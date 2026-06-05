@@ -2,7 +2,9 @@
 title: "命令：声音命令&lt;SoundCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-soundcommand-0000002471395052
+format: md
 ---
+
 
 # 命令：声音命令&lt;SoundCommand&gt;
 

@@ -4,6 +4,7 @@ title: "Tabs如何禁止点击切换，以及禁止滑动内容页切换TabConte
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-472
 ---
 
+
 **问题描述**
 
 当点击一个Tabs时，怎么禁止点击切换TabContent，因为业务场景当未登录时候，不允许切换，点击后跳转登录界面。

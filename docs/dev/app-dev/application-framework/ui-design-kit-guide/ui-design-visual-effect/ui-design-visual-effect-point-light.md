@@ -1,7 +1,9 @@
 ---
 title: "点光源效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-point-light
+format: md
 ---
+
 
 ## 场景介绍
 

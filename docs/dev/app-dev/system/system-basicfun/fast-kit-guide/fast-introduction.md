@@ -1,7 +1,9 @@
 ---
 title: "FAST Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-introduction
+format: md
 ---
+
 
 FAST Kit（算法加速服务）以理论计算机为基础、面向开发者提供算法加速能力。当前开放线段表、矩形划分求解器与数字信号处理（DSP）接口，支撑应用的开发体验和用户体验提升。
 

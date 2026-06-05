@@ -2,7 +2,9 @@
 title: "视图：时间&lt;Time&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-time-0000002471394986
+format: md
 ---
+
 
 # 视图：时间&lt;Time&gt;
 

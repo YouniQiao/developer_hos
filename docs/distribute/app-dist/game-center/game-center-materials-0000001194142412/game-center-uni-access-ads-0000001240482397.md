@@ -2,7 +2,9 @@
 title: "联运游戏接入流量变现服务"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-uni-access-ads-0000001240482397
+format: md
 ---
+
 
 # 联运游戏接入流量变现服务
 

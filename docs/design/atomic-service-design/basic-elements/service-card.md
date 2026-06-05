@@ -2,7 +2,9 @@
 title: 服务卡片
 sidebar_label: 服务卡片
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001939144821
+format: md
 ---
+
 # 服务卡片
 
 为了给用户提供便捷、智能的服务体验，每个元服务都可选配置服务卡片。卡片作为服务的轻量承载，需要做到易用可见、智能可选和多端可变。

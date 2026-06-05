@@ -1,7 +1,9 @@
 ---
 title: "如何实现http并行下载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-49
+format: md
 ---
+
 
 使用上传下载模块进行下载。最多支持4个任务同时下载。
 

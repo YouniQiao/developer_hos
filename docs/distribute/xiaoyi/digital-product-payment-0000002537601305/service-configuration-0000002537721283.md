@@ -2,7 +2,9 @@
 title: "智能体数字商品支付服务配置"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/service-configuration-0000002537721283
+format: md
 ---
+
 
 # **智能体数字商品支付服务配置**
 
@@ -36,7 +38,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/service/service-confi
 
 **markdown样例：**
 
-<span> 研究次数已用完啦~ [订购](superlink://vassistant?startmode=cashierpage&parameters=\{"agentid":"xxx","transBuffer" : "自定义透传参数"\}) 后继续体验<br/></span>
+<span> 研究次数已用完啦~ [订购](superlink://vassistant?startmode=cashierpage&parameters=\\{"agentid":"xxx","transBuffer" : "自定义透传参数"\\}) 后继续体验<br/></span>
 
 **字段含义：**
 

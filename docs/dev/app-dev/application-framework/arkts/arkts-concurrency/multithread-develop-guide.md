@@ -1,7 +1,9 @@
 ---
 title: "应用多线程开发实践"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-guide
+format: md
 ---
+
 
 * **[应用多线程开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multithread-develop-overview)**
 * **[耗时任务并发场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task)**

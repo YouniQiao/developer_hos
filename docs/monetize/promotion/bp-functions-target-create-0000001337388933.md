@@ -2,7 +2,9 @@
 title: "新建人群定向任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-create-0000001337388933
+format: md
 ---
+
 # 新建人群定向任务
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，点击“推广”页签。

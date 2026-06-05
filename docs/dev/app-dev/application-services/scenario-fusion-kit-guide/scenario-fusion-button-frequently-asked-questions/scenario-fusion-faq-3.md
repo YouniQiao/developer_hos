@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "剪贴板粘贴框遮挡智能填充选择框"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-3
+format: md
 ---
+
 
 **现象描述**
 

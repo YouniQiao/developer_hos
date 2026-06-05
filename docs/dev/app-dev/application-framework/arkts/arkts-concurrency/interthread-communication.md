@@ -1,7 +1,9 @@
 ---
 title: "并发线程间通信"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication
+format: md
 ---
+
 
 * **[ArkTS线程间通信概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-overview)**
 * **[线程间通信对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-object)**

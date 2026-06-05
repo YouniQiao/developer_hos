@@ -4,6 +4,7 @@ title: "如何实现swiper根据内容高度随滑动距离变动的效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-397
 ---
 
+
 可通过[onContentDidScroll()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#oncontentdidscroll12)监听Swiper页面滑动事件来实现，示例代码如下：
 
 ```

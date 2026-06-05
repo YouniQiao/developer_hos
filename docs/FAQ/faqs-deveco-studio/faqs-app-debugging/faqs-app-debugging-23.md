@@ -4,6 +4,7 @@ title: "安装HAP时提示“error: failed to start ability”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-23
 ---
 
+
 **问题现象**
 
 启动调试或运行应用/服务时，如果安装HAP出错，提示“error: failed to start ability. error: ability visible false deny request”，请检查应用的可见性设置。

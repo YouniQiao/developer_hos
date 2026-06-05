@@ -1,7 +1,9 @@
 ---
 title: "进程模型概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-fa
+format: md
 ---
+
 
 系统的进程模型如下图所示：
 

@@ -1,7 +1,9 @@
 ---
 title: "如何实现crash堆栈抓取、crash回调"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-19
+format: md
 ---
+
 
 可以使用faultLogger.querySelfFaultLog获取故障日志，该方法可以捕获 C++ 程序故障、JS 程序故障和应用程序卡死故障。通过此方法，可以获取故障进程的进程 ID、故障进程的用户 ID、故障类型、日志生成时的秒级时间戳、故障原因、故障模块、故障摘要和故障日志全文。请参考以下示例代码：
 

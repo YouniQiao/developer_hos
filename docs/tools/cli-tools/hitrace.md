@@ -1,7 +1,9 @@
 ---
 title: "hitrace"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # hitrace
 

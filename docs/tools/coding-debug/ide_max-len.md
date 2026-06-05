@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/max-len"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/max-len
 

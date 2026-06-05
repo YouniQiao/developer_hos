@@ -2,7 +2,9 @@
 title: "步骤4 创建服务号"
 displayed_sidebar: serviceDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/create_service_account-0000002508942747
+format: md
 ---
+
 
 # 步骤4 创建服务号
 

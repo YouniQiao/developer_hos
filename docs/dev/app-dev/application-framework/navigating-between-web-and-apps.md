@@ -1,7 +1,9 @@
 ---
 title: "Web和应用的跳转与拉起"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/navigating-between-web-and-apps
+format: md
 ---
+
 
 ## 概述
 

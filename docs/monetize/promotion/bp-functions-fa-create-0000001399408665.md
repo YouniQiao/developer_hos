@@ -2,7 +2,9 @@
 title: "创建万能卡片推广任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-fa-create-0000001399408665
+format: md
 ---
+
 # 创建万能卡片推广任务
 
 1. 登录[华为应用市场应用推广平台](https://developer.huawei.com/consumer/cn/service/apcs/app/home.html)，点击右上角“管理中心”，进入“管理中心”页面。

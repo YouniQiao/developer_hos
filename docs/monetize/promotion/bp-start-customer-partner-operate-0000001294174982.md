@@ -2,7 +2,9 @@
 title: "投放操作账户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-customer-partner-operate-0000001294174982
+format: md
 ---
+
 # 投放操作账户
 
 ## 前提条件

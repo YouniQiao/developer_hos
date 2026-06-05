@@ -2,7 +2,9 @@
 
 title: "调试函数"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 调试函数
 

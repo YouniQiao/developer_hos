@@ -2,7 +2,9 @@
 title: "创建创意"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-creative1-0000001338498645
+format: md
 ---
+
 # 创建创意
 
 您通过本接口可以创建创意。
@@ -37,11 +39,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-a
   | images | Struct4[] | 否 | 图片列表信息 最多十张。  根据版位元素creative\_size\_element\_name为image的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）；  当campaign\_type=CAMPAIGN\_TYPE\_SHOPPING时不填写。 |
   | icon | Struct4 | 否 | icon信息。  根据版位元素creative\_size\_element\_name为icon的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）；  当campaign\_type=CAMPAIGN\_TYPE\_SHOPPING时不填写。 |
   | video | Struct4 | 否 | 视频信息。  根据版位元素creative\_size\_element\_name为video的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）；  当campaign\_type=CAMPAIGN\_TYPE\_SHOPPING时不填写。 |
-  | title | Struct5 | 否 | 文案。  根据版位元素creative\_size\_element\_name为title的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）；  使用动态词包；  亚非拉和欧洲站点取值：  \{Location\}\{Date\}\{Gender\}  俄罗斯站点取值：  \{место\}\{Дата\}\{пол\}。 |
+  | title | Struct5 | 否 | 文案。  根据版位元素creative\_size\_element\_name为title的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）；  使用动态词包；  亚非拉和欧洲站点取值：  \\{Location\\}\\{Date\\}\\{Gender\\}  俄罗斯站点取值：  \\{место\\}\\{Дата\\}\\{пол\\}。 |
   | description | Struct5 | 否 | 描述。  根据版位元素creative\_size\_element\_name为description的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）。 |
-  | corporate | Struct5 | 否 | 品牌名称。  根据版位元素creative\_size\_element\_name为corporate\_name的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）；  支持通配符填写 取值如下：\{brandName\}。 |
-  | landing\_page | Struct6 | 否 | 落地页信息。  根据版位元素creative\_size\_element\_name为landing\_page\_url的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）。  支持通配符，由运营配置项控制，目前取值如下：  \{targetUrlMobile\}移动端H5商品落地页  \{brandUrlMobile\}移动端H5品牌落地页 |
-  | deeplink | Struct7 | 否 | 应用直达地址。  根据版位元素creative\_size\_element\_name为deeplink\_url的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）。仅当任务中的推广产品为ANDROID\_APP时可填写。定向中installed\_apps\_struct不为空，此参数必填，not\_installed\_apps\_struct不为空，此参数选填。  支持通配符，由运营配置项控制，目前取值如下：  \{targetUrlAndroidApp\}商品详情页  \{dspHuimaiDeeplink\}商品热卖页  \{dspProductAggLink\}商品会场页 |
+  | corporate | Struct5 | 否 | 品牌名称。  根据版位元素creative\_size\_element\_name为corporate\_name的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）；  支持通配符填写 取值如下：\\{brandName\\}。 |
+  | landing\_page | Struct6 | 否 | 落地页信息。  根据版位元素creative\_size\_element\_name为landing\_page\_url的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）。  支持通配符，由运营配置项控制，目前取值如下：  \\{targetUrlMobile\\}移动端H5商品落地页  \\{brandUrlMobile\\}移动端H5品牌落地页 |
+  | deeplink | Struct7 | 否 | 应用直达地址。  根据版位元素creative\_size\_element\_name为deeplink\_url的规则填写（约束见[查询版位元素](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965)）。仅当任务中的推广产品为ANDROID\_APP时可填写。定向中installed\_apps\_struct不为空，此参数必填，not\_installed\_apps\_struct不为空，此参数选填。  支持通配符，由运营配置项控制，目前取值如下：  \\{targetUrlAndroidApp\\}商品详情页  \\{dspHuimaiDeeplink\\}商品热卖页  \\{dspProductAggLink\\}商品会场页 |
   | impression\_monitor\_url | Struct8 | 否 | 展示监控地址，取值详见[查询分析工具关联关系](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking4-0000001338383009)。 |
   | click\_monitor\_url | Struct8 | 否 | 点击监控地址，取值详见[查询分析工具关联关系](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking4-0000001338383009)。 |
   | service\_card\_id | string | 否 | 服务卡片ID。  当campaign\_type = CAMPAIGN\_TYPE\_DISPLAY和creative\_size\_sub\_type = SERVICE\_CARD必填；  来源负一屏，会进行合法性校验。 |

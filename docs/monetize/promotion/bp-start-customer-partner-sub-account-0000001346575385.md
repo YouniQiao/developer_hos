@@ -2,7 +2,9 @@
 title: "客户投放伙伴子账户（子客服务商）"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-customer-partner-sub-account-0000001346575385
+format: md
 ---
+
 # 客户投放伙伴子账户（子客服务商）
 
 ## 前提条件

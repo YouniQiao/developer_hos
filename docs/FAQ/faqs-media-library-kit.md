@@ -4,6 +4,7 @@ title: "媒体文件管理（Media Library）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-kit
 ---
 
+
 * **[如何监听文件或文件目录的变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-1)**
 * **[截屏图片保存在系统哪个目录下](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-2)**
 * **[base64字符串如何转为图片并保存](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-3)**

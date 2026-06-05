@@ -1,7 +1,9 @@
 ---
 title: "CMake构建工程配置HarmonyOS编译工具链"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/toolchain-cmake-build-project
+format: md
 ---
+
 
 ## 概述
 

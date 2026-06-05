@@ -1,7 +1,9 @@
 ---
 title: "HarmonyOS标签开发流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-usage-0000002382896621
+format: md
 ---
+
 
 您可以使用HarmonyOS标签服务API实现批量创建和查询HarmonyOS NEXT应用标签或元服务标签。
 

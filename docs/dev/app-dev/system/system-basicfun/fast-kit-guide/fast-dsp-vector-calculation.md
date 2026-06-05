@@ -1,7 +1,9 @@
 ---
 title: "使用DSP进行向量计算"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-dsp-vector-calculation
+format: md
 ---
+
 
 数字信号处理（DSP）中的向量计算功能，用于对实值向量和复数数据进行高效的统计运算、数学运算和格式转换。当开发者需要对传感器数据、音频信号或其他数值序列进行最大值查找、求和、点积、复数格式转换等计算时，可以使用向量计算接口。
 
@@ -230,5 +232,5 @@ FAST_ErrorCode strided_access_demo() {
 }
 ```
 n FAST_ERROR_CODE_SUCCESS;
-}
+\}
 ```

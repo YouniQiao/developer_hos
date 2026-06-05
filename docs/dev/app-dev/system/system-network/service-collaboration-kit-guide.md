@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Service Collaboration Kit（协同服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/service-collaboration-kit-guide
+format: md
 ---
+
 
 * **[Service Collaboration Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaborationkit-introduction)**
 * **[跨设备互通（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service)**

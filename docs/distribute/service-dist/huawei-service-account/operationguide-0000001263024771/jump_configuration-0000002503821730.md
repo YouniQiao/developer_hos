@@ -2,7 +2,9 @@
 title: "跳转配置"
 displayed_sidebar: serviceDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/jump_configuration-0000002503821730
+format: md
 ---
+
 
 # 跳转配置
 
@@ -26,7 +28,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/service/jump_configur
 
 步骤2：设置自定义参数
 
-参数可选，如不填参数默认跳转到元服务首页；如果已选元服务已实现打开目标页功能，请联系对应元服务开发负责人提供具体参数，样例：\{"demo.result":1234 \}。
+参数可选，如不填参数默认跳转到元服务首页；如果已选元服务已实现打开目标页功能，请联系对应元服务开发负责人提供具体参数，样例：\\{"demo.result":1234 \\}。
 
 步骤3：嵌入式跳转元服务兼容性确认
 
@@ -42,7 +44,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/service/jump_configur
 
 步骤2：设置自定义参数
 
-参数可选，如不填参数默认跳转到元服务首页；如果已选元服务已实现打开目标页功能，请联系对应元服务开发负责人提供具体参数，样例：\{"demo.result":1234 \}。
+参数可选，如不填参数默认跳转到元服务首页；如果已选元服务已实现打开目标页功能，请联系对应元服务开发负责人提供具体参数，样例：\\{"demo.result":1234 \\}。
 
 ## 跳转图文素材
 

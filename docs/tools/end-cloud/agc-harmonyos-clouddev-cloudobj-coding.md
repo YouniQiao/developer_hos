@@ -2,7 +2,9 @@
 
 title: "开发云对象"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 开发云对象
 

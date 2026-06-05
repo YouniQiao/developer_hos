@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Health Service Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs
+format: md
 ---
+
 
 ## 读取今天的日常活动数据统计，与运动健康App页面数据不一致
 

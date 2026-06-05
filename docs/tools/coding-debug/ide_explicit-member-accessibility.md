@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/explicit-member-accessibility"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/explicit-member-accessibility
 

@@ -4,6 +4,7 @@ title: "编译报错“Duplicated files found in module entry. This may cause un
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-107
 ---
 
+
 **问题现象**
 
 编译构建时，报错“Duplicated files found in module entry. This may cause unexpected errors at runtime”。

@@ -1,7 +1,9 @@
 ---
 title: "服务商接入鉴权方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-provider-authentication
+format: md
 ---
+
 
 服务商代理商家元服务接入服务直达前，需先**[与商家建立授权关系](https://developer.huawei.com/consumer/cn/doc/SPPartnerCenter-develop-Guides/fa_sp_template-authorization-0000001606839553)**。授权权限集中须包含 “应用开发与发布管理” 或 “服务集成与开发” 权限之一，方可代理该商家进行元服务的接入与配置。
 

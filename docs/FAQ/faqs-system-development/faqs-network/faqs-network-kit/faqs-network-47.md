@@ -4,6 +4,7 @@ title: "http请求如何以表单形式进行传输"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-47
 ---
 
+
 1. 在HTTP协议消息头中，使用Content-Type来表示媒体类型信息，设置该参数值为“application/x-www-form-urlencoded”。
 
    ```

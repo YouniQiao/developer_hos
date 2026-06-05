@@ -2,7 +2,9 @@
 title: 基础信息
 sidebar_label: 基础信息
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900384976
+format: md
 ---
+
 # 基础信息
 
 每个元服务有独立的图标、名称。基础信息将根据场景在元服务市场、元服务面板等界面展示。

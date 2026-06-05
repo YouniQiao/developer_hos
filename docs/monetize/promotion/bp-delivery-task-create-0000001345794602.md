@@ -2,7 +2,9 @@
 title: "投放创意任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-create-0000001345794602
+format: md
 ---
+
 # 投放创意任务
 
 ## 背景信息

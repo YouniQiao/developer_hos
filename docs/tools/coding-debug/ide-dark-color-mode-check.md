@@ -1,7 +1,9 @@
 ---
 title: "@performance/dark-color-mode-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/dark-color-mode-check
 

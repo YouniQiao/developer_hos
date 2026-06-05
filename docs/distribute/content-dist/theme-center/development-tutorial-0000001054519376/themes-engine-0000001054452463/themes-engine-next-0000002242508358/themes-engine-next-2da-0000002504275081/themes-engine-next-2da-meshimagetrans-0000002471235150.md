@@ -2,7 +2,9 @@
 title: "网格化-位移&lt;MeshImage-Translation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2da-meshimagetrans-0000002471235150
+format: md
 ---
+
 
 # 网格化-位移&lt;MeshImage-Translation&gt;
 

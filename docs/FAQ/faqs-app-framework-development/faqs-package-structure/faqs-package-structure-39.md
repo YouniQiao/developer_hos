@@ -4,6 +4,7 @@ title: "如何实现跨模块的页面跳转功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-39
 ---
 
+
 在业务体系庞大或复杂的情况下，会将业务拆分成多个子业务模块，每个子业务模块为一个HAR/HSP。在该场景下，存在从主业务入口跳转到不同子页面模块，或从一个子业务模块A页面跳转到另一个子业务模块B页面的需求。例如，从应用首页跳转到登录子业务模块页面。针对该场景，有以下三种解决方案：
 
 * 方案一：使用router的命名路由接口router.pushNamedRoute()跳转。
@@ -38,7 +39,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
        }
      }
      ```
-  2. 在Login模块的入口文件Index.ets中导出自定义组件。export { LoginPage } from './src/main/ets/pages/loginPage';
+  2. 在Login模块的入口文件Index.ets中导出自定义组件。export \{ LoginPage \} from './src/main/ets/pages/loginPage';
   3. 在入口模块的oh-package.json5文件中添加对Login模块的依赖项。
 
      ```

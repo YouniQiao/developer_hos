@@ -4,6 +4,7 @@ title: "如何在App启动时让各种权限弹窗的申请自动弹出"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-92
 ---
 
+
 将requestPermissionsFromUser接口放到EntryAbility.ets文件的loadContent回调中，参考代码如下：
 
 ```

@@ -1,7 +1,9 @@
 ---
 title: "自定义组件生命周期（推荐）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-new-lifecycle
+format: md
 ---
+
 
 ## 概述
 

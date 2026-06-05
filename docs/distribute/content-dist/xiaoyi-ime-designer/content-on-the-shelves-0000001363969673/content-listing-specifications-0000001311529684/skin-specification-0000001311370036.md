@@ -2,7 +2,9 @@
 title: "（鸿蒙4.3及以下）皮肤规范"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/skin-specification-0000001311370036
+format: md
 ---
+
 
 # （鸿蒙4.3及以下）皮肤规范
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "邀请组队"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-group
+format: md
 ---
+
 
 ## 注册碰一碰事件
 

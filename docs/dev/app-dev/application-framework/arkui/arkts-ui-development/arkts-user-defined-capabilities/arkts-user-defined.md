@@ -1,7 +1,9 @@
 ---
 title: "自定义能力概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined
+format: md
 ---
+
 
 ## 自定义能力分层
 

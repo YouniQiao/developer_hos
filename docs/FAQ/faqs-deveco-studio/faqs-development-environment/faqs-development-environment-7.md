@@ -4,6 +4,7 @@ title: "如何配置DevEco Studio的代理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-7
 ---
 
+
 DevEco Studio开发环境依赖于网络环境，需要连接上网络才能确保工具的正常使用。
 
 如果使用个人或家庭网络，无需设置代理信息；企业网络受限时，需设置DevEco Studio的代理信息。

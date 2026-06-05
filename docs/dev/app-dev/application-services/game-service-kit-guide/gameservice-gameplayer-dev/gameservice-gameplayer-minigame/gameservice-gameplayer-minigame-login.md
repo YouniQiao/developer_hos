@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "小游戏登录（必选）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-login
+format: md
 ---
+
 
 小游戏接入基础游戏服务的小游戏登录API后，支持玩家使用华为账号快速进入游戏，且小游戏的华为账号实名认证、未成年人防沉迷功能由基础游戏服务实现。
 
@@ -28,10 +30,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game
 
 | 接口名 | 描述 |
 | --- | --- |
-| [init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerinit-1)(context: common.UIAbilityContext, callback: AsyncCallback<void>): void | 游戏初始化接口，使用默认的上下文信息，通过callback回调获取返回值。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayeronminigameaddictionprevented)(type: 'miniGameAddictionPrevented', callback: Callback<string>): void | 小游戏防沉迷事件监听接口，通过callback回调获取小游戏防沉迷事件结果。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayeroffminigameaddictionprevented)(type: 'miniGameAddictionPrevented', callback?: Callback<string>): void | 取消小游戏防沉迷事件监听接口。 |
-| [miniGameLogin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerminigamelogin)(context: common.Context, loginParam: MiniGameLoginParam): Promise<MiniGamePlayer> | 小游戏登录接口，通过Promise对象获取返回值。 |
+| [init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerinit-1)(context: common.UIAbilityContext, callback: AsyncCallback\<void\>): void | 游戏初始化接口，使用默认的上下文信息，通过callback回调获取返回值。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayeronminigameaddictionprevented)(type: 'miniGameAddictionPrevented', callback: Callback\<string\>): void | 小游戏防沉迷事件监听接口，通过callback回调获取小游戏防沉迷事件结果。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayeroffminigameaddictionprevented)(type: 'miniGameAddictionPrevented', callback?: Callback\<string\>): void | 取消小游戏防沉迷事件监听接口。 |
+| [miniGameLogin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerminigamelogin)(context: common.Context, loginParam: MiniGameLoginParam): Promise\<MiniGamePlayer\> | 小游戏登录接口，通过Promise对象获取返回值。 |
 
 ## 开发步骤
 

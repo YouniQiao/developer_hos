@@ -1,7 +1,9 @@
 ---
 title: "Performance Analysis Kit（性能分析服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit
+format: md
 ---
+
 
 * **[Performance Analysis Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-overview)**
 * **[故障检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-analysis)**

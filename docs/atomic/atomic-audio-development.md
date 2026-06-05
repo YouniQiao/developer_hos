@@ -1,7 +1,9 @@
 ---
 title: "音视频"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-audio-development
+format: md
 ---
+
 
 元服务音视频的开发方式与应用音视频的开发方式相同，针对元服务，Media Kit（媒体服务）当前仅开放支持以下功能：
 

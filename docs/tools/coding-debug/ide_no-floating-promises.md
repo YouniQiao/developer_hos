@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-floating-promises"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-floating-promises
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Neural Network Runtime对接AI推理框架开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/neural-network-runtime-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 

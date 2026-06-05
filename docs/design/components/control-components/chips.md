@@ -2,7 +2,9 @@
 title: 操作块
 sidebar_label: 操作块
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/chips-0000001929842624
+format: md
 ---
+
 # 操作块
 
 一种块状的入口，可展示当前内容页签，也可包含图片和文本。常用于展示收件人，例如：邮件收件人或信息收件人。开发相关描述请参考 [Chip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chip) 文档。

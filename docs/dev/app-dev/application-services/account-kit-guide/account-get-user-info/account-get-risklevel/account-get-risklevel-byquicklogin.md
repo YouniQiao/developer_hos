@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过华为账号一键登录获取用户风险等级"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-byquicklogin
+format: md
 ---
+
 
 ## 场景介绍
 

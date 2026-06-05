@@ -1,7 +1,9 @@
 ---
 title: "开发应用沉浸式效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-develop-apply-immersive-effects
+format: md
 ---
+
 
 ## 概述
 

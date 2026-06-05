@@ -1,7 +1,9 @@
 ---
 title: "@performance/number-init-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/number-init-check
 

@@ -2,8 +2,10 @@
 title: 半模态面板
 sidebar_label: 半模态面板
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet-0000001956852753
+format: md
 ---
-{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用<MergedTable>组件还原 */}
+
+\{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 半模态面板
 

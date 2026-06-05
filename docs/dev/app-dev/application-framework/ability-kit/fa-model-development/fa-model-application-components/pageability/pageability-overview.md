@@ -1,7 +1,9 @@
 ---
 title: "PageAbility组件概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-overview
+format: md
 ---
+
 
 PageAbility是包含UI、提供展示UI能力的应用组件，主要用于与用户交互。
 

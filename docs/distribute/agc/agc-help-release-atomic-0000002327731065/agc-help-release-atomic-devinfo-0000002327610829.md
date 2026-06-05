@@ -1,7 +1,9 @@
 ---
 title: "配置开发者服务信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-devinfo-0000002327610829
+format: md
 ---
+
 
 您作为开发者的相关信息将面向元服务发布区域的用户公开，其中客服联系方式可能会提供给用户，用于咨询相关问题。
 

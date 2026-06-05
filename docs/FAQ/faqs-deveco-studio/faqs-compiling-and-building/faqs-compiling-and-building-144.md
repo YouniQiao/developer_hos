@@ -4,6 +4,7 @@ title: "编译报错“There are some dependency names that are inconsistent wit
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-144
 ---
 
+
 **错误描述**
 
 依赖名称与包名称不匹配。

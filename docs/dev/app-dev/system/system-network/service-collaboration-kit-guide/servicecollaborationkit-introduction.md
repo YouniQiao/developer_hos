@@ -1,7 +1,9 @@
 ---
 title: "Service Collaboration Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaborationkit-introduction
+format: md
 ---
+
 
 Service Collaboration Kit（协同服务）提供了同账号下多端设备协同的能力。
 

@@ -1,7 +1,9 @@
 ---
 title: "Provisioning API指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-guide-0000002271000601
+format: md
 ---
+
 
 您可以通过Provisioning API管理证书、Profile以及设备等，相比在AppGallery Connect页面中手动管理提升您的工作效率。
 

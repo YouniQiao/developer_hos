@@ -2,7 +2,9 @@
 title: "隐私声明"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk-rule-privacy-0000001546302136
+format: md
 ---
+
 
 
 1. AGD Pro服务为了向用户投放更加精准的个性化广告，可能收集以下用户信息：

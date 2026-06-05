@@ -1,7 +1,9 @@
 ---
 title: "ArkTS容器类库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/containers
+format: md
 ---
+
 
 * **[容器类库概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/container-overview)**
 * **[线性容器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/linear-container)**

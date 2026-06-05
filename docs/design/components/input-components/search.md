@@ -2,7 +2,9 @@
 title: 搜索框
 sidebar_label: 搜索框
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/search-0000001956852741
+format: md
 ---
+
 # 搜索框
 
 提供用户搜索内容的输入区域。通过搜索，可以快速的找到并定位到想要的内容。搜索框还可以结合搜索历史记录，输入自动补全，语音输入等功能，方便用户快速输入查询。搜索框可以和业务功能放在一起使用，例如扫一扫。在搜索框有输入内容的时候，可以点击搜索框内的清除按钮，一键清除输入。开发能力相关可参考 [Search](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-search) 文档。

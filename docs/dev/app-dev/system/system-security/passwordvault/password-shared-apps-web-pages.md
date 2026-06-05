@@ -1,7 +1,9 @@
 ---
 title: "应用与网页共用账号密码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/password-shared-apps-web-pages
+format: md
 ---
+
 
 ## 简介
 

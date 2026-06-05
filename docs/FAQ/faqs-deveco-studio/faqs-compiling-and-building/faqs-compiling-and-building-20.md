@@ -4,6 +4,7 @@ title: "编译报错“please check deviceType or distroFilter/distributionFilte
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-20
 ---
 
+
 **问题现象**
 
 HarmonyOS DevEco Studio编译时出现错误，提示如下之一：

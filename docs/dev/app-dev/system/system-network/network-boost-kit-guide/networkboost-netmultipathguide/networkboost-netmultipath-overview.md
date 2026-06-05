@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-overview
+format: md
 ---
+
 
 从6.0.0(20)版本开始，支持连接迁移（多网并发）功能。
 

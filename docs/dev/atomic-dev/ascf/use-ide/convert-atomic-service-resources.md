@@ -1,7 +1,9 @@
 ---
 title: "导入小程序资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/convert-atomic-service-resources
+format: md
 ---
+
 
 开发者可以通过导入小程序的资源，来构建元服务。
 

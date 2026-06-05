@@ -1,7 +1,9 @@
 ---
 title: "param工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # param工具
 

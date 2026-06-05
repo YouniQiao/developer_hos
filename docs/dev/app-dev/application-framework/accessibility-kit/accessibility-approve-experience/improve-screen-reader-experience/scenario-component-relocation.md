@@ -1,7 +1,9 @@
 ---
 title: "控件位置调整场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-component-relocation
+format: md
 ---
+
 
 ## 设计场景
 

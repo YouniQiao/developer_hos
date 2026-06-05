@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "媒体会话提供方(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avsession-developer
+format: md
 ---
+
 
 音视频应用在实现音视频功能的同时，需要作为媒体会话提供方接入媒体会话，在媒体会话控制方（例如播控中心）中展示媒体相关信息，并响应媒体会话控制方下发的播控命令。
 
@@ -19,19 +21,19 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
 | 接口名 | 说明 |
 | --- | --- |
-| createAVSession(context: Context, tag: string, type: AVSessionType, callback: AsyncCallback<AVSession>): void10+ | 创建媒体会话。  一个UIAbility只能存在一个媒体会话，重复创建会失败。 |
-| setAVMetadata(data: AVMetadata, callback: AsyncCallback<void>): void10+ | 设置媒体会话元数据。 |
-| setAVPlaybackState(state: AVPlaybackState, callback: AsyncCallback<void>): void10+ | 设置媒体会话播放状态。 |
-| setLaunchAbility(ability: WantAgent, callback: AsyncCallback<void>): void10+ | 设置启动UIAbility。 |
-| getController(callback: AsyncCallback<AVSessionController>): void10+ | 获取当前会话自身控制器。 |
-| getOutputDevice(callback: AsyncCallback<OutputDeviceInfo>): void10+ | 获取播放设备相关信息。 |
-| activate(callback: AsyncCallback<void>): void10+ | 激活媒体会话。 |
-| deactivate(callback: AsyncCallback<void>): void10+ | 禁用当前会话。 |
-| destroy(callback: AsyncCallback<void>): void10+ | 销毁媒体会话。 |
-| setAVQueueItems(items: Array<AVQueueItem>, callback: AsyncCallback<void>): void 10+ | 设置媒体播放列表。 |
-| setAVQueueTitle(title: string, callback: AsyncCallback<void>): void10+ | 设置媒体播放列表名称。 |
-| dispatchSessionEvent(event: string, args: {[key: string]: Object}, callback: AsyncCallback<void>): void10+ | 设置会话内自定义事件。 |
-| setExtras(extras: {[key: string]: Object}, callback: AsyncCallback<void>): void10+ | 设置键值对形式的自定义媒体数据包。 |
+| createAVSession(context: Context, tag: string, type: AVSessionType, callback: AsyncCallback\<AVSession\>): void10+ | 创建媒体会话。  一个UIAbility只能存在一个媒体会话，重复创建会失败。 |
+| setAVMetadata(data: AVMetadata, callback: AsyncCallback\<void\>): void10+ | 设置媒体会话元数据。 |
+| setAVPlaybackState(state: AVPlaybackState, callback: AsyncCallback\<void\>): void10+ | 设置媒体会话播放状态。 |
+| setLaunchAbility(ability: WantAgent, callback: AsyncCallback\<void\>): void10+ | 设置启动UIAbility。 |
+| getController(callback: AsyncCallback\<AVSessionController\>): void10+ | 获取当前会话自身控制器。 |
+| getOutputDevice(callback: AsyncCallback\<OutputDeviceInfo\>): void10+ | 获取播放设备相关信息。 |
+| activate(callback: AsyncCallback\<void\>): void10+ | 激活媒体会话。 |
+| deactivate(callback: AsyncCallback\<void\>): void10+ | 禁用当前会话。 |
+| destroy(callback: AsyncCallback\<void\>): void10+ | 销毁媒体会话。 |
+| setAVQueueItems(items: Array\<AVQueueItem\>, callback: AsyncCallback\<void\>): void 10+ | 设置媒体播放列表。 |
+| setAVQueueTitle(title: string, callback: AsyncCallback\<void\>): void10+ | 设置媒体播放列表名称。 |
+| dispatchSessionEvent(event: string, args: \{[key: string]: Object\}, callback: AsyncCallback\<void\>): void10+ | 设置会话内自定义事件。 |
+| setExtras(extras: \{[key: string]: Object\}, callback: AsyncCallback\<void\>): void10+ | 设置键值对形式的自定义媒体数据包。 |
 | getOutputDeviceSync(): OutputDeviceInfo10+ | 使用同步方法获取当前输出设备信息。 |
 
 ## 开发步骤
@@ -84,7 +86,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/CreateAVSession.ets#L16-L88" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CreateAVSession.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/CreateAVSession.ets#L16-L88" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CreateAVSession.ets</a></div>
 
 2. 跟随媒体信息的变化，及时设置媒体会话信息。需要设置的媒体会话信息主要包括：
 
@@ -194,7 +196,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/SetAVSessionInformation.ets#L16-L180" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：SetAVSessionInformation.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/SetAVSessionInformation.ets#L16-L180" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：SetAVSessionInformation.ets</a></div>
 
 3. 设置用于被媒体会话控制方拉起的UIAbility。当用户操作媒体会话控制方的界面时，例如点击播控中心的卡片，可以拉起此处配置的UIAbility。
 
@@ -243,7 +245,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/WantAgent.ets#L16-L63" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：WantAgent.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/WantAgent.ets#L16-L63" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：WantAgent.ets</a></div>
 
 4. 设置一个即时的自定义会话事件，以供媒体控制方接收到事件后进行相应的操作。
 
@@ -290,7 +292,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/DispatchSessionEvent.ets#L16-L88" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：DispatchSessionEvent.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/DispatchSessionEvent.ets#L16-L88" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：DispatchSessionEvent.ets</a></div>
 
 5. 设置与当前会话相关的自定义媒体数据包，以供媒体控制方接收到事件后进行相应的操作。
 
@@ -336,7 +338,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/SetExtras.ets#L16-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：SetExtras.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/SetExtras.ets#L16-L87" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：SetExtras.ets</a></div>
 
 6. 注册播控命令事件监听，便于响应用户通过媒体会话控制方，例如播控中心，下发的播控命令。
 
@@ -448,7 +450,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/FixedPlaybackControlCommands.ets#L16-L210" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：FixedPlaybackControlCommands.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/FixedPlaybackControlCommands.ets#L16-L210" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：FixedPlaybackControlCommands.ets</a></div>
 
 
    6.2 高级播控事件的监听。
@@ -520,7 +522,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/AdvancedPlaybackControlEvents.ets#L16-L131" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：AdvancedPlaybackControlEvents.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/AdvancedPlaybackControlEvents.ets#L16-L131" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：AdvancedPlaybackControlEvents.ets</a></div>
 
 7. 获取当前媒体会话自身的控制器，与媒体会话对应进行通信交互。
 
@@ -575,7 +577,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/GetController.ets#L16-L100" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：GetController.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/GetController.ets#L16-L100" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：GetController.ets</a></div>
 
 8. 音视频应用在退出，并且不需要继续播放时，及时取消监听以及销毁媒体会话释放资源。
 
@@ -619,7 +621,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/Off.ets#L16-L58" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Off.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/Off.ets#L16-L58" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Off.ets</a></div>
 
 
    销毁媒体会话示例代码如下所示：
@@ -663,4 +665,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usin
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/Destroy.ets#L16-L80" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Destroy.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/LocalAVSession/AVSessionProvider/entry/src/main/ets/pages/Destroy.ets#L16-L80" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Destroy.ets</a></div>

@@ -1,7 +1,9 @@
 ---
 title: "want参数解析"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-want-parameter-parsing
+format: md
 ---
+
 
 Want参数是应用组件间通信的核心载体对象，作用为启动目标应用/元服务并传递信息。
 

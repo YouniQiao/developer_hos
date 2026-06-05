@@ -1,7 +1,9 @@
 ---
 title: "耗时任务并发场景简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task-overview
+format: md
 ---
+
 
 耗时任务是指需要较长时间执行的任务，如果在UI主线程执行，可能导致应用卡顿、掉帧或响应延迟。典型的耗时任务包括CPU密集型任务、I/O密集型任务和同步任务。
 

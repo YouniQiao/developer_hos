@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVMetadataExtractor提取音视频元数据信息(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avmetadataextractor
+format: md
 ---
+
 
 使用[AVMetadataExtractor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avmetadataextractor)可以实现从原始媒体资源中获取元数据。本指南将以获取一个媒体资源的元数据作为示例，向开发者讲解AVMetadataExtractor元数据相关功能。
 

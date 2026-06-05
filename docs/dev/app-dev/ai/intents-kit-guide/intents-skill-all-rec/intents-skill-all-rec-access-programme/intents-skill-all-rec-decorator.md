@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "任务执行类场景方案（装饰器接入方式）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator
+format: md
 ---
+
 
 * **[方案概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-overview)**
 * **[基于Link的装饰器方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-link)**

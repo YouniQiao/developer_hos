@@ -1,7 +1,9 @@
 ---
 title: "图片编码"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-encoding
+format: md
 ---
+
 
 图片编码指将PixelMap编码成不同格式的存档图片（当前仅支持打包为JPEG、WebP 和 PNG格式），用于后续处理，如保存、传输等。
 

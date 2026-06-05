@@ -1,7 +1,9 @@
 ---
 title: "智慧化数据检索-ArkTS"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-retrieval
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -84,8 +86,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
 | 接口名称 | 描述 |
 | --- | --- |
-| [retrieval.getRetriever](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#getretriever)(config: [RetrievalConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrievalconfig)): Promise<[Retriever](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retriever)> | 创建并获取检索器。 |
-| [retrieveRdb](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrieverdb)(query: string, condition: [RetrievalCondition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrievalcondition)): Promise<[RdbRecords](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#rdbrecords)> | 给定检索条件（包含query分词、召回条件、重排策略），检索召回满足条件的数据。 |
+| [retrieval.getRetriever](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#getretriever)(config: [RetrievalConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrievalconfig)): Promise[Retriever](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retriever) | 创建并获取检索器。 |
+| [retrieveRdb](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrieverdb)(query: string, condition: [RetrievalCondition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrievalcondition)): Promise[RdbRecords](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#rdbrecords) | 给定检索条件（包含query分词、召回条件、重排策略），检索召回满足条件的数据。 |
 
 ## 开发步骤
 

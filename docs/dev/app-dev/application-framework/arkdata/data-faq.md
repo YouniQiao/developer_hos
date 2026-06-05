@@ -1,7 +1,9 @@
 ---
 title: "ArkData常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-faq
+format: md
 ---
+
 
 ## 如何查看关系型数据库详细的SQL执行异常信息
 
@@ -115,7 +117,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 **处理步骤：**
 
 1. 确认问题时间点附近，是否可正则搜索到关键日志：Error.\*unrecognized token|Error.\*syntax error|Error.\*incomplete input。
-   * 是：SQL语句需要拼写完整；触发器语句中不要存在RETURN关键字；SQL语句开头不要包含注释；SQL语句包含in时，括号中的匹配值必须传?占位符或者具体的值，不要传空值；SQL中的表名或字段名附近，不要存在{、}或$等特殊字符。
+   * 是：SQL语句需要拼写完整；触发器语句中不要存在RETURN关键字；SQL语句开头不要包含注释；SQL语句包含in时，括号中的匹配值必须传?占位符或者具体的值，不要传空值；SQL中的表名或字段名附近，不要存在\{、\}或$等特殊字符。
    * 否：转下一步。
 2. 确认问题时间点附近，是否可正则搜索到关键日志：Error.\*no such table|Error.\*no such column。
    * 是：建表或添加字段之后再操作数据库；进行加固，重新创建丢失的表或添加字段。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "扩展外设专项驱动开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-driver-development
+format: md
 ---
+
 
 * **[开发适用USB协议的设备驱动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-ddk-guidelines)**
 * **[开发适用HID协议的设备驱动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hid-ddk-guidelines)**

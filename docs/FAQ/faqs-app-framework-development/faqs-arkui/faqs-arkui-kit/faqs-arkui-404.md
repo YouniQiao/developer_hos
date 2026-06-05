@@ -4,6 +4,7 @@ title: "Navigation组件中，NavDestination页面是否可以缓存，下次入
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-404
 ---
 
+
 **问题描述**
 
 NavDestination是否有缓存页面的功能，每次pushStack后都要刷新页面。

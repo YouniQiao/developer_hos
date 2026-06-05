@@ -1,6 +1,8 @@
 ---
 title: "DevEco Testing 6.0.0(20)"
+format: md
 ---
+
 
 # DevEco Testing 版本说明 — 6.0.0(20)
 

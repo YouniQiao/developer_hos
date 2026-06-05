@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "实名信息验证/授权场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-verification
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -66,8 +68,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/paym
 
 | 接口名 | 描述 |
 | --- | --- |
-| startRealNameVerification(context: common.UIAbilityContext | common.UIExtensionContext, preVerifyId: string): Promise<string>; | 拉起用户实名信息验证页面。 |
-| startRealNameAuth(context: common.UIAbilityContext | common.UIExtensionContext): Promise<string>; | 拉起用户实名信息授权页面。 |
+| startRealNameVerification(context: common.UIAbilityContext | common.UIExtensionContext, preVerifyId: string): Promise\<string\>; | 拉起用户实名信息验证页面。 |
+| startRealNameAuth(context: common.UIAbilityContext | common.UIExtensionContext): Promise\<string\>; | 拉起用户实名信息授权页面。 |
 
 ## 开发步骤
 

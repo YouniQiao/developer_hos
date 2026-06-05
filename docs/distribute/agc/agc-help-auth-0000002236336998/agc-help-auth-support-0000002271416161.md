@@ -1,7 +1,9 @@
 ---
 title: "技术支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-support-0000002271416161
+format: md
 ---
+
 
 当您集成AGC相关服务遇到问题时，可以按照以下顺序寻求帮助。
 

@@ -4,6 +4,7 @@ title: "程序访问控制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control
 ---
 
+
 * **[权限申请被拒绝后，再次申请权限，是否出现申请权限弹窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-1)**
 * **[用户更新app后是否还会弹出权限申请弹窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-2)**
 * **[请求精准定位权限申请注意事项](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-3)**

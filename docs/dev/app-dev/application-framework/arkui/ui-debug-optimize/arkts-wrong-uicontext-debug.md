@@ -1,7 +1,9 @@
 ---
 title: "UI上下文异常调试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrong-uicontext-debug
+format: md
 ---
+
 
 本指导主要介绍如何解决因使用无效的[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)导致文本显示异常的问题。当开发者使用了已失效的UIContext对象（通常是因为对应的UI实例已被销毁），可能导致后续UI操作无效。此类问题常见于多窗口场景。从API version 12开始，该问题也见于调用[setSupportedProcessCache](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextsetsupportedprocesscache12)打开进程缓存后快速启动的情形。
 
@@ -16,7 +18,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkt
 
   实例状态更新的日志格式为：
 
-  ({currentId}:{trackedId}:{trackedReason})][{bundleName}][{moduleName}][{thisInstanceId}]: window {status}
+  (\{currentId\}:\{trackedId\}:\{trackedReason\})][\{bundleName\}][\{moduleName\}][\{thisInstanceId\}]: window \{status\}
 
   各字段含义为：
 
@@ -24,13 +26,13 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkt
 
   | 字段名 | 类型 | 典型值 | 说明 |
   | --- | --- | --- | --- |
-  | {currentId} | 整数 | -1 | 上下文实例ID，应用正常的情况下，该字段应该为负数。 |
-  | {trackedId} | 整数 | 100000 | 当前可间接跟踪的实例ID，通常为正数，开发者可忽略。 |
-  | {trackedReason} | 字符串 | singleton | 间接跟踪的原因，开发者可不关注该字段。 |
-  | {bundleName} | 字符串 | com.example.helloworld | 应用的bundleName。 |
-  | {moduleName} | 字符串 | entry | 当前模块的moduleName。 |
-  | {thisInstanceId} | 正数 | 100000 | 被通知UI实例的ID。 |
-  | {status} | 实例被通知的状态 | focus | 可选值为:  - focus：获焦  - unfocus：失焦  - foreground：前台  - background：后台  - destroy：销毁 |
+  | \{currentId\} | 整数 | -1 | 上下文实例ID，应用正常的情况下，该字段应该为负数。 |
+  | \{trackedId\} | 整数 | 100000 | 当前可间接跟踪的实例ID，通常为正数，开发者可忽略。 |
+  | \{trackedReason\} | 字符串 | singleton | 间接跟踪的原因，开发者可不关注该字段。 |
+  | \{bundleName\} | 字符串 | com.example.helloworld | 应用的bundleName。 |
+  | \{moduleName\} | 字符串 | entry | 当前模块的moduleName。 |
+  | \{thisInstanceId\} | 正数 | 100000 | 被通知UI实例的ID。 |
+  | \{status\} | 实例被通知的状态 | focus | 可选值为:  - focus：获焦  - unfocus：失焦  - foreground：前台  - background：后台  - destroy：销毁 |
 
   可使用如下正则表达式匹配相关日志：
 
@@ -64,7 +66,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkt
 
 异常实例命中缓存时，详细信息的输出格式如下：
 
-DestroyedUIContextCacheInfo: instanceInfo: [instanceId:<instanceId\_>, createTime:<createTime\_>, destroyTime:<destroyTime\_>], windowInfo: [windowId: <windowId\_>, windowName: <windowName\_>]
+DestroyedUIContextCacheInfo: instanceInfo: [instanceId:\<instanceId\_\>, createTime:\<createTime\_\>, destroyTime:\<destroyTime\_\>], windowInfo: [windowId: \<windowId\_\>, windowName: \<windowName\_\>]
 
 ### 缓存未命中
 

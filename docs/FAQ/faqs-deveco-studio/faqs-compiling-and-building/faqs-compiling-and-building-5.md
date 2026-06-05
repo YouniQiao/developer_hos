@@ -4,6 +4,7 @@ title: "编译报错“ERROR: Failed :entry:default@CompileResource”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-5
 ---
 
+
 **问题现象**
 
 在构建依赖HSP的HAP模块时，如果出现“ERROR: Failed :entry:default@CompileResource”错误，提示某资源文件不存在，但该资源文件实际存在于HSP内，请检查以下几点：

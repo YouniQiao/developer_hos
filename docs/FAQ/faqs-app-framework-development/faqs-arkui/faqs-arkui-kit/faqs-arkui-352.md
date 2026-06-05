@@ -4,6 +4,7 @@ title: "如何避免Badge在数量显示切换时的Image闪烁问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-352
 ---
 
+
 在 onComplete 回调事件中处理 Badge 数量的逻辑，图片数据加载成功和解码成功时均触发该回调。示例代码如下：
 
 ```

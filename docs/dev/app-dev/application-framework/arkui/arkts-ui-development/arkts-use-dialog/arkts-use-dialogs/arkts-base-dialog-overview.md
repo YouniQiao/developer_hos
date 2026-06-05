@@ -1,7 +1,9 @@
 ---
 title: "弹出框概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview
+format: md
 ---
+
 
 弹出框是一种模态窗口，通常用于在保持当前上下文环境的同时，临时展示用户需关注的信息或待处理的操作。弹出框可以不与任何组件绑定，其内容通常由多种组件组成，如文本、列表、输入框、图片等，以实现布局。ArkUI当前提供了**自定义**和**固定样式**两类弹出框组件。
 

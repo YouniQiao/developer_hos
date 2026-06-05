@@ -1,7 +1,9 @@
 ---
 title: "应用冻屏事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events
+format: md
 ---
+
 
 ## 简介
 
@@ -28,7 +30,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiap
 
 | 接口名 | 描述 |
 | --- | --- |
-| [configEventPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventconfigeventpolicy22) (policy: EventPolicy): Promise<void> | 设置应用冻屏事件策略参数接口，支持开启应用冻屏事件的页面切换日志采集。 |
+| [configEventPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventconfigeventpolicy22) (policy: EventPolicy): Promise\<void\> | 设置应用冻屏事件策略参数接口，支持开启应用冻屏事件的页面切换日志采集。 |
 
 ### configEventPolicy接口参数设置说明
 
@@ -155,7 +157,7 @@ hiAppEvent.configEventPolicy(policy).then(() => {
 
 | 接口名 | 描述 |
 | --- | --- |
-| setEventParam(params: Record<string, ParamType>, domain: string, name?: string): Promise<void> | **应用冻屏事件自定义参数设置方法。** |
+| setEventParam(params: Record\<string, ParamType\>, domain: string, name?: string): Promise\<void\> | **应用冻屏事件自定义参数设置方法。** |
 
 ### 参数设置说明
 

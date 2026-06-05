@@ -1,7 +1,9 @@
 ---
 title: "启动页资源分类配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page-resource-config
+format: md
 ---
+
 
 启动页资源配置与其他资源配置相同，支持资源分类配置，可针对不同的场景配置不同资源，常用于在深色模式或不同设备类型上配置不同的启动页内容。
 

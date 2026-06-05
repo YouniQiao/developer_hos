@@ -4,6 +4,7 @@ title: "如何禁用Refresh组件的下拉刷新"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-386
 ---
 
+
 **问题现象**
 
 在使用Refresh组件时，开发者需要控制Refresh组件的下拉刷新功能，实现临时禁用或者开启下拉刷新。

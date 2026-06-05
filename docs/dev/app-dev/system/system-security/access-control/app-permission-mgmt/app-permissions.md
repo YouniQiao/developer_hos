@@ -1,7 +1,9 @@
 ---
 title: "应用权限列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions
+format: md
 ---
+
 
 根据权限的开放范围和授权方式不同，申请对应权限的方式也不同。
 

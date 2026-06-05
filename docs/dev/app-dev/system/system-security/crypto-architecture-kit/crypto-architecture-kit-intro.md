@@ -1,7 +1,9 @@
 ---
 title: "Crypto Architecture Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro
+format: md
 ---
+
 
 Crypto Architecture Kit屏蔽了第三方密码学算法库实现差异的算法框架，提供加解密、签名验签、消息认证码、哈希、安全随机数、密钥派生等相关功能。
 

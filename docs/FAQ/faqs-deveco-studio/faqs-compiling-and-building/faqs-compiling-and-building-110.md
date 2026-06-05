@@ -4,6 +4,7 @@ title: "构建报错“input module releaseType is different”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-110
 ---
 
+
 **问题现象**
 
 在打包APP时，如果提示“input module releaseType is different”，请检查输入模块的发布类型是否一致。

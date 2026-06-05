@@ -2,7 +2,9 @@
 title: "大版本更新"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-big-event-version-update-0000001990090584
+format: md
 ---
+
 
 # 大版本更新
 

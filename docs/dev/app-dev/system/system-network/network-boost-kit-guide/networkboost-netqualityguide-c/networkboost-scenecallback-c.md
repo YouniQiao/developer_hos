@@ -1,7 +1,9 @@
 ---
 title: "网络场景识别 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-scenecallback-c
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Calendar Kit（日历服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendar-kit
+format: md
 ---
+
 
 * **[Calendar Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-overview)**
 * **[日历账户管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-calendar-developer)**

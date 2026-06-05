@@ -1,7 +1,9 @@
 ---
 title: "hidumper"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper
+format: md
 ---
+
 
 HiDumper是用于统一系统信息导出的命令行工具，支持分析CPU、内存、存储等系统资源使用情况，查询系统服务运行情况，定位资源使用异常、通信等相关问题。
 

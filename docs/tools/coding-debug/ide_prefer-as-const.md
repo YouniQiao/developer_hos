@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-as-const"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-as-const
 

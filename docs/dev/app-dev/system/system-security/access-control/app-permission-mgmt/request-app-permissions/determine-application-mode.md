@@ -1,7 +1,9 @@
 ---
 title: "选择申请权限的方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode
+format: md
 ---
+
 
 应用访问数据或执行操作时，需评估是否需要相关权限。如需权限，应在应用安装包中申请。
 

@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-bonus-global_ocpd-faq-0000001675688553
+format: md
 ---
+
 # FAQ
 
 ## 具体怎么定义保障周期？

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "取消网络请求（C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcancle-c
+format: md
 ---
+
 
 在远场通信服务的框架中，使用HMS\_Rcp\_CancelSession方法可以取消传入session的所有正在进行的网络请求。如果开发者需要取消特定的一个网络请求，可以使用HMS\_Rcp\_CancelRequest方法，并传入需要取消的请求，以实现这一目标。开发者们可以根据具体需求，灵活地管理和控制网络请求的执行。总之，HMS\_Rcp\_CancelRequest方法的灵活运用，不仅能够优化网络资源的使用，还能提升应用程序的用户体验。
 

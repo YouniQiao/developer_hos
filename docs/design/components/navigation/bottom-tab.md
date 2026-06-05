@@ -2,7 +2,9 @@
 title: 底部页签
 sidebar_label: 底部页签
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bottomtab-0000001956787789
+format: md
 ---
+
 # 底部页签
 
 移动设备中最常见的应用级导航控件，开发相关描述请参考 [Tabs/BottomTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs) 文档。

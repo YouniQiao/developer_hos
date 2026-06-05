@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "siteId参数如何获取"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-2
+format: md
 ---
+
 
 siteId有多种获取方式，这里提供其中的3种作为参考：
 

@@ -1,7 +1,9 @@
 ---
 title: "UI预览"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-ide-previewer
+format: md
 ---
+
 
 DevEco Studio为开发者提供了UI预览功能，方便查看UI效果并随时调整页面布局。预览支持页面预览和组件预览。图1中左侧图标![](./img/548b27e9.png)表示页面预览，右侧图标![](./img/6eb92768.png)表示组件预览。
 

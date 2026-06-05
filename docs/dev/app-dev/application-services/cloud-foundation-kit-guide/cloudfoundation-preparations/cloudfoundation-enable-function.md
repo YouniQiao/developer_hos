@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开通云函数服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-function
+format: md
 ---
+
 
 首次使用云函数服务前，需要先开通此服务。如果已经启用，可跳过本步骤。
 

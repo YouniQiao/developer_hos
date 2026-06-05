@@ -1,7 +1,9 @@
 ---
 title: "管理应用拥有的状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-application-state-management
+format: md
 ---
+
 
 * **[管理应用拥有的状态概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-application-state-management-overview)**
 * **[LocalStorage：页面级UI状态存储](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)**

@@ -1,7 +1,9 @@
 ---
 title: "按需注入和用时注入"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/on-demand-render-time-injection
+format: md
 ---
+
 
 在元服务启动的过程中，代码注入是一个主要的耗时环节。注入代码量的大小与内存占用与注入耗时正相关。
 

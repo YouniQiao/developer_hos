@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "证书管理对话框开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanagerdialog-guidelines
+format: md
 ---
+
 
 ![](./img/b713d362.png)
 
@@ -18,10 +20,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cert
 
 | 实例名 | 接口名 | 描述 |
 | --- | --- | --- |
-| certificateManagerDialog | openCertificateManagerDialog(context: common.Context, pageType: CertificateDialogPageType): Promise<void> | 拉起证书管理对话框，显示相应的页面，使用Promise方式异步返回结果。 |
-| certificateManagerDialog | openInstallCertificateDialog(context: common.Context, certType: CertificateType, certScope: CertificateScope, cert: Uint8Array): Promise<string>14+ | 调用安装证书对话框接口进行证书安装，使用Promise方式异步返回安装证书的唯一标识符。  仅2in1设备支持。 |
-| certificateManagerDialog | openUninstallCertificateDialog(context: common.Context, certType: CertificateType, certUri: string): Promise<void>18+ | 调用删除证书对话框接口删除指定的证书，使用Promise方式异步返回结果。  仅2in1设备支持。 |
-| certificateManagerDialog | openCertificateDetailDialog(context: common.Context, cert: Uint8Array, property: CertificateDialogProperty): Promise<void>18+ | 调用查看证书详情的对话框接口，展示证书的详情。使用Promise方式异步返回结果。  仅2in1设备支持。 |
+| certificateManagerDialog | openCertificateManagerDialog(context: common.Context, pageType: CertificateDialogPageType): Promise\<void\> | 拉起证书管理对话框，显示相应的页面，使用Promise方式异步返回结果。 |
+| certificateManagerDialog | openInstallCertificateDialog(context: common.Context, certType: CertificateType, certScope: CertificateScope, cert: Uint8Array): Promise\<string\>14+ | 调用安装证书对话框接口进行证书安装，使用Promise方式异步返回安装证书的唯一标识符。  仅2in1设备支持。 |
+| certificateManagerDialog | openUninstallCertificateDialog(context: common.Context, certType: CertificateType, certUri: string): Promise\<void\>18+ | 调用删除证书对话框接口删除指定的证书，使用Promise方式异步返回结果。  仅2in1设备支持。 |
+| certificateManagerDialog | openCertificateDetailDialog(context: common.Context, cert: Uint8Array, property: CertificateDialogProperty): Promise\<void\>18+ | 调用查看证书详情的对话框接口，展示证书的详情。使用Promise方式异步返回结果。  仅2in1设备支持。 |
 
 ## 开发步骤
 
@@ -67,7 +69,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cert
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/samples/CertManagerDialogSample.ets#L15-L37" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CertManagerDialogSample.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/samples/CertManagerDialogSample.ets#L15-L37" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CertManagerDialogSample.ets</a></div>
 
 4. 调用安装证书对话框接口进行证书安装、调用删除证书对话框接口进行证书删除、调用查看证书详情的对话框接口、展示证书的详情。以上场景仅2in1设备支持。
 
@@ -155,4 +157,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cert
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/samples/CertManagerCaDialogSample.ets#L15-L95" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CertManagerCaDialogSample.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Security/DeviceCertificateKit/CertificateManagement/entry/src/main/ets/samples/CertManagerCaDialogSample.ets#L15-L95" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CertManagerCaDialogSample.ets</a></div>

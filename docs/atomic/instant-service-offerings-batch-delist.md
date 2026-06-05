@@ -1,7 +1,9 @@
 ---
 title: "批量下架商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-batch-delist
+format: md
 ---
+
 
 在商品状态为“已上架”或“已冻结”状态时，您可以通过“批量下架”操作完成商品下架。
 

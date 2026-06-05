@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-preparations
+format: md
 ---
+
 
 * **[基本准备工作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-basic-preparation)**
 * **[配置商品信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product)**

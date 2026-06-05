@@ -2,7 +2,9 @@
 title: "快应用/快游戏"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/kuaiyouxikuaiyongyong-0000001132278783
+format: md
 ---
+
 
 
 快应用/快游戏与鲸鸿动能平台对接采用API方式。

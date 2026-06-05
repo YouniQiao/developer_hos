@@ -1,7 +1,9 @@
 ---
 title: "应用端开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification-apps
+format: md
 ---
+
 
 ## 接口说明
 

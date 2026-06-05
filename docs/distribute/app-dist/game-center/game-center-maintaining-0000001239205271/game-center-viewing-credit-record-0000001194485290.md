@@ -2,7 +2,9 @@
 title: "应用信用记录"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-viewing-credit-record-0000001194485290
+format: md
 ---
+
 
 # 应用信用记录
 

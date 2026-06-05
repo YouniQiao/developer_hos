@@ -2,7 +2,9 @@
 title: "各类型奖品创建流程"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/prize-creating-process-0000001130926232
+format: md
 ---
+
 # 各类型奖品创建流程
 
 （1）华为优惠券：图示

@@ -4,6 +4,7 @@ title: "hilog日志出现乱码原因是什么，如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-3
 ---
 
+
 当前hilog日志采用轻量化技术，以二进制格式存储在磁盘上，并使用数据字典。因此，直接解压查看会显示乱码。
 
 可以使用DevEco Studio\sdk\default\hms\toolchains目录下的hilogtool.exe工具，执行 hilogtool.exe parse命令进行解析。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "添加桌面快捷方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-addshortcut
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -38,9 +40,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appg
 
 | 接口名 | 描述 |
 | --- | --- |
-| [checkPinShortcutPermitted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagercheckpinshortcutpermitted)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), shortcutId: string, want: [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want), labelResName: string, iconResName: string): Promise<[CheckShortcutResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#checkshortcutresult)> | 以静态资源方式校验桌面快捷方式。 |
-| [checkPinShortcutPermitted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagercheckpinshortcutpermitted-1)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), shortcutId: string, want: [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want), label: string, foregroundIcon: string, backgroundIcon: string): Promise<[CheckShortcutResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#checkshortcutresult)> | 以自定义资源方式校验桌面快捷方式。 |
-| [requestNewPinShortcut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerrequestnewpinshortcut)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), tid: string): Promise<void> | 创建桌面快捷方式。 |
+| [checkPinShortcutPermitted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagercheckpinshortcutpermitted)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), shortcutId: string, want: [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want), labelResName: string, iconResName: string): Promise[CheckShortcutResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#checkshortcutresult) | 以静态资源方式校验桌面快捷方式。 |
+| [checkPinShortcutPermitted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagercheckpinshortcutpermitted-1)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), shortcutId: string, want: [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want), label: string, foregroundIcon: string, backgroundIcon: string): Promise[CheckShortcutResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#checkshortcutresult) | 以自定义资源方式校验桌面快捷方式。 |
+| [requestNewPinShortcut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerrequestnewpinshortcut)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), tid: string): Promise\<void\> | 创建桌面快捷方式。 |
 
 ## 开发步骤
 

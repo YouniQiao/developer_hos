@@ -1,7 +1,9 @@
 ---
 title: "UI系统场景化能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-system-scenarization-capability
+format: md
 ---
+
 
 * **[使用UI上下文接口操作界面（UIContext）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface)**
 * **[使用组件截图（ComponentSnapshot）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-component-snapshot)**

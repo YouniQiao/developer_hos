@@ -2,8 +2,10 @@
 title: 智能穿戴应用 UX 体验标准
 sidebar_label: 智能穿戴应用 UX 体验标准
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-wearable-0000002503475023
+format: md
 ---
-{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用<MergedTable>组件还原 */}
+
+\{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 智能穿戴应用 UX 体验标准
 

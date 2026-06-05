@@ -4,6 +4,7 @@ title: "鸿蒙电脑拖拽悬浮窗至扩展显示器时，如何保证悬浮窗
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-487
 ---
 
+
 **问题原理**
 
 vp与px转换公式：px = vp \* 显示设备逻辑像素的密度。

@@ -1,7 +1,9 @@
 ---
 title: "数据可靠性与安全性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security
+format: md
 ---
+
 
 * **[数据可靠性与安全性概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security-overview)**
 * **[数据库备份与恢复 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore)**

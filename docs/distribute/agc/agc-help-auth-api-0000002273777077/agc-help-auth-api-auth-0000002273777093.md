@@ -1,7 +1,9 @@
 ---
 title: "Auth"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-auth-0000002273777093
+format: md
 ---
+
 
 AGC认证服务接口，使用auth获取服务。
 

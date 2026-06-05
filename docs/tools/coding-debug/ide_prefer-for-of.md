@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-for-of"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-for-of
 

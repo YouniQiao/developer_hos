@@ -1,7 +1,9 @@
 ---
 title: "语音变声"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voiceconversion-harmonyos-0000002360061576
+format: md
 ---
+
 
 游戏多媒体语音变声能力，通过对实时语音进行变声处理，可让聊天环境变得更加有趣，提升语音体验。目前，游戏多媒体提供了机器人、怪兽、萝莉等多款声音特效。
 

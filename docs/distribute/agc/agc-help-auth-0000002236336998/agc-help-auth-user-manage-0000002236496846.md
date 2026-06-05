@@ -1,7 +1,9 @@
 ---
 title: "管理用户"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-user-manage-0000002236496846
+format: md
 ---
+
 
 同一个项目下已经登录过的用户都会展现在“用户”页签。您可以在此管理用户，可对用户进行停用、启用、解锁和删除的操作。
 

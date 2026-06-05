@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "密钥使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-use
+format: md
 ---
+
 
 * **[密钥使用介绍及通用流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-use-overview)**
 * **[加密/解密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption)**

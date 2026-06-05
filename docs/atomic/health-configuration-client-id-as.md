@@ -1,7 +1,9 @@
 ---
 title: "配置Client ID"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-configuration-client-id-as
+format: md
 ---
+
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)平台，在“开发与服务”中选择目标应用，获取“项目设置 &gt; 常规 &gt; 应用”的Client ID。
 

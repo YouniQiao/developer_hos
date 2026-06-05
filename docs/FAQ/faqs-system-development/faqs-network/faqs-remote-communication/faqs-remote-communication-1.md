@@ -1,7 +1,9 @@
 ---
 title: "rcp模块发起请求时如何设置超时时间"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-remote-communication-1
+format: md
 ---
+
 
 rcp模块发起请求如需要设置超时时间，可在建立session会话前设置SessionConfiguration内有关参数。
 

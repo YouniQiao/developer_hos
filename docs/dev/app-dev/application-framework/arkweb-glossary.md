@@ -1,7 +1,9 @@
 ---
 title: "ArkWeb术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-glossary
+format: md
 ---
+
 
 ## A
 

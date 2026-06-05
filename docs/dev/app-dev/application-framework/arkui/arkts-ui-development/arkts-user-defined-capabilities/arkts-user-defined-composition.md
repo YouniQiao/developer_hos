@@ -1,7 +1,9 @@
 ---
 title: "自定义组合"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-composition
+format: md
 ---
+
 
 ## 概述
 

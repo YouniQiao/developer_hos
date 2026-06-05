@@ -1,7 +1,9 @@
 ---
 title: "如何设置窗口旋转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-67
+format: md
 ---
+
 
 步骤一：通过[getLastWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-f#windowgetlastwindow9)、[createWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-f#windowcreatewindow9)、[findWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-f#windowfindwindow9)中的任一方法获取到Window实例。
 

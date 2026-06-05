@@ -1,7 +1,9 @@
 ---
 title: "如何将C++侧接收的PixelMap转换成cv::mat格式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-18
+format: md
 ---
+
 
 **解决措施：**
 

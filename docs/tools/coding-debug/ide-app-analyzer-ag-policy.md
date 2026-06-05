@@ -1,7 +1,9 @@
 ---
 title: "上架合规体检"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 上架合规体检
 

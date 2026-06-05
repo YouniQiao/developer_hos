@@ -2,7 +2,9 @@
 title: 平板
 sidebar_label: 平板
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/pad-0000001823654157
+format: md
 ---
+
 # 平板
 
 平板是很多用户经常使用的设备，用户使用平板来影音娱乐，阅读学习以及办公创作，系统和应用的体验对用户至关重要。

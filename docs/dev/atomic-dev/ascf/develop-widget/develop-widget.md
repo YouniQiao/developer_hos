@@ -1,7 +1,9 @@
 ---
 title: "开发服务卡片"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-widget
+format: md
 ---
+
 
 ASCF框架元服务支持开发服务卡片，与元服务本身服务卡片开发方法相同：
 

@@ -4,6 +4,7 @@ title: "命令行工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool
 ---
 
+
 * **[通过命令行或终端可以正常发布，在Git Bash上发布时提示错误：私钥路径中的私钥内容错误](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-1)**
 * **[ohpm-repo私有化后删除上传包及审核上传包步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-2)**
 * **[编译时DevEco Studio报“ohpm ERROR: EINSTALL install failed, Error: Dependency node build failed Install failed”错](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-3)**

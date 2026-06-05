@@ -2,7 +2,9 @@
 title: "新增子客账户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-service-provider-increase-sub-0000001379677853
+format: md
 ---
+
 # 新增子客账户
 
 ## 概述

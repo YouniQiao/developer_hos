@@ -1,7 +1,9 @@
 ---
 title: "汇编调试"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 汇编调试
 

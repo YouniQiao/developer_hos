@@ -1,7 +1,9 @@
 ---
 title: "@performance/tabs-on-change-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/tabs-on-change-check
 

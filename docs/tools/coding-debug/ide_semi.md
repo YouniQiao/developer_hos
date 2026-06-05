@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/semi"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/semi
 

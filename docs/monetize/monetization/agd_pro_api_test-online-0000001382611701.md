@@ -2,7 +2,9 @@
 title: "自测验收"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_test-online-0000001382611701
+format: md
 ---
+
 
 
 在正式接入AGD Pro API前，您需要对集成后业务进行自测，自测完成后再提交给华为验收。

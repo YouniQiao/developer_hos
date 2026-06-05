@@ -1,7 +1,9 @@
 ---
 title: "C#"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sdksecurity-csharp-0000002361670604
+format: md
 ---
+
 
 联机对战SDK是由华为软件技术有限公司（以下简称“我们”或“华为”）面向应用开发者（以下简称“开发者”）提供的联机、对战录像查询与回放的开放能力及服务。
 

@@ -1,7 +1,9 @@
 ---
 title: "@performance/web-on-active-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/web-on-active-check
 

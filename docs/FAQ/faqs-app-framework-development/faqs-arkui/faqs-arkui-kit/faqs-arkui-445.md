@@ -4,6 +4,7 @@ title: "如何让弹窗显示层级不在下一个页面上"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-445
 ---
 
+
 **问题背景**
 
 如何实现弹窗被下一个页面覆盖，而不是显示在下一个页面之上。

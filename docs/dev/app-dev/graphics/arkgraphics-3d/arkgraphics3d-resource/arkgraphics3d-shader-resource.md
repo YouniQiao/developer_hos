@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: ".shader资源文件格式要求"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-shader-resource
+format: md
 ---
+
 
 ArkGraphics 3D中支持的.shader文件基于JSON格式，书写.shader文件时需符合JSON语法要求。文件包含以下部分：
 
@@ -243,7 +245,7 @@ ArkGraphics 3D中支持的.shader文件基于JSON格式，书写.shader文件时
 
 ## materialMetadata
 
-* 类型：array<MaterialMetadata>
+* 类型：array\<MaterialMetadata\>
 * 说明：指定渲染材质的元数据。MaterialMetadata对象包含材质名称name及自定义属性customProperties。
 
 ### name

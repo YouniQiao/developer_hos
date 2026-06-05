@@ -1,7 +1,9 @@
 ---
 title: "Longque-JS-API使用指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-longque-js-api
+format: md
 ---
+
 
 Longque JS API 由 Longque JS Engine 提供，适用于在 HarmonyOS 平台构建稳定、高性能的应用。所有 API 均位于 \_\_Longque\_\_ 对象下。接口的版本可通过 \_\_Longque\_\_.version 获得，开发者可使用该版本进行特性判断。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何正确管理媒体资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-asset-management-faq
+format: md
 ---
+
 
 [Media Library Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview)（媒体文件管理服务）提供了媒体资源的管理能力，开发者可以访问和修改相册中的媒体信息。
 
@@ -16,9 +18,9 @@ Media Library Kit仅提供图片和视频的管理能力，不涉及音频文件
 
 | 类型 | 形式 | 举例 | 说明 |
 | --- | --- | --- | --- |
-| URI | file://media/Photo/<ID>/<真实文件名(无后缀)>/<displayName> | 图片：  file://media/Photo/111/IMG\_1234567890\_123/A.jpg  视频：  file://media/Photo/222/VID\_1234567890\_321/B.mp4 | 字段定义与使用方式详见[媒体文件URI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro#媒体文件uri)。 |
-| Path(媒体沙箱路径) | /data/storage/el2/media/Photo/<ID>/<真实文件名(无后缀)>/<displayName> | 图片：  /data/storage/el2/media/Photo/111/IMG\_1234567890\_123/A.jpg  视频：  /data/storage/el2/media/Photo/222/VID\_1234567890\_321/B.mp4 | 媒体沙箱路径用于三方应用访问媒体资源。 |
-| 真实路径 | /storage/cloud/100/files/Photo/<所在桶目录>/<真实文件名> | 图片：  /storage/cloud/100/files/Photo/1/IMG\_1234567890\_123.jpg  视频：  /storage/cloud/100/files/Photo/2/VID\_1234567890\_321.mp4 | 媒体资源在设备文件系统内实际保存的位置。 |
+| URI | file://media/Photo/\<ID\>/\<真实文件名(无后缀)\>/\<displayName\> | 图片：  file://media/Photo/111/IMG\_1234567890\_123/A.jpg  视频：  file://media/Photo/222/VID\_1234567890\_321/B.mp4 | 字段定义与使用方式详见[媒体文件URI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro#媒体文件uri)。 |
+| Path(媒体沙箱路径) | /data/storage/el2/media/Photo/\<ID\>/\<真实文件名(无后缀)\>/\<displayName\> | 图片：  /data/storage/el2/media/Photo/111/IMG\_1234567890\_123/A.jpg  视频：  /data/storage/el2/media/Photo/222/VID\_1234567890\_321/B.mp4 | 媒体沙箱路径用于三方应用访问媒体资源。 |
+| 真实路径 | /storage/cloud/100/files/Photo/\<所在桶目录\>/\<真实文件名\> | 图片：  /storage/cloud/100/files/Photo/1/IMG\_1234567890\_123.jpg  视频：  /storage/cloud/100/files/Photo/2/VID\_1234567890\_321.mp4 | 媒体资源在设备文件系统内实际保存的位置。 |
 
 ## 标准媒体文件操作流程
 

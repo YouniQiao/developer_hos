@@ -2,7 +2,9 @@
 title: 办公类
 sidebar_label: 办公类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/office-0000002315825496
+format: md
 ---
+
 # 办公类
 
 商务办公类应用一般效率优先，用于日常文档处理、日程会议管理等场景，满足撰写文档、团队协作、日常管理等需求。此类应用有以下特征：

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "按需加载成功后，再通过应用市场更新应用，是否需要再次触发按需加载？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-faq-35
+format: md
 ---
+
 
 不需要。
 

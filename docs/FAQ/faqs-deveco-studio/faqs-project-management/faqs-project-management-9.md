@@ -4,6 +4,7 @@ title: "DevEco Studio如何自动install依赖"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-9
 ---
 
+
 DevEco Studio在以下三种场景会自动install依赖：
 
 1. 打开工程，自动install所有模块中的依赖。

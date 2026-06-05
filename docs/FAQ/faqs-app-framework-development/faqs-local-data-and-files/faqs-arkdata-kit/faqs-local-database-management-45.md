@@ -4,6 +4,7 @@ title: "如何将数据库数据内置到App"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-45
 ---
 
+
 在用户使用前，可以将预置数据从其他格式导入关系型数据库中。预置数据可以存储在本地资源文件或自定义的模块类组件中。如果选择使用文件保存数据，建议将其存储在应用的内部目录中。
 
 数据库持久化操作，参考文档：[通过用户首选项实现数据持久化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-preferences)

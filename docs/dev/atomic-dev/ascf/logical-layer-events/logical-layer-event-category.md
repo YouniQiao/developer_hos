@@ -1,7 +1,9 @@
 ---
 title: "事件分类"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-event-category
+format: md
 ---
+
 
 ASCF框架渲染层中事件分为冒泡事件和非冒泡事件：
 

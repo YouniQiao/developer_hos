@@ -1,7 +1,9 @@
 ---
 title: "C#（Native）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-export-csharp-native-0000002359547198
+format: md
 ---
+
 
 ![](./img/de907ef4.png)
 

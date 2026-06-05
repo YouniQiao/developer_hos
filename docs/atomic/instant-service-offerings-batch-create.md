@@ -1,7 +1,9 @@
 ---
 title: "批量新建商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-batch-create
+format: md
 ---
+
 
 1. 在服务直达主界面，选择“商品直达”页签，点击“批量新建”。
 

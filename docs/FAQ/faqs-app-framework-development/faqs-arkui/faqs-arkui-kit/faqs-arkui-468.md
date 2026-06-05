@@ -1,7 +1,9 @@
 ---
 title: "如何实现Tabs切换页签，强制重新刷新页面数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-468
+format: md
 ---
+
 
 **问题描述**
 

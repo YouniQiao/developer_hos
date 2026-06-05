@@ -1,7 +1,9 @@
 ---
 title: "华为手机如何成功连接电脑"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-developer-mode-0000002351904357
+format: md
 ---
+
 
 1. 打开手机的“设置”应用，进入“关于手机”页面。
 2. 快速、连续、多次点击“软件版本”，直到提示“您正处于开发者模式！”或“您已处于开发者模式，无需进行此操作”，表示您已进入当前手机的**开发者模式**。

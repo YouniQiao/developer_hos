@@ -1,7 +1,9 @@
 ---
 title: "独立游戏（扶持政策）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/game-center-independency-0000002382867088
+format: md
 ---
+
 
 独立游戏是指由中小型团队开发制作，在玩法、美术、精神表达上相对小众，同时又有一定程度突破的原创游戏，但如原创性低或涉嫌侵犯他人合法权益（包括但不限于商业化IP授权衍生游戏、超休闲类游戏或涉嫌抄袭的游戏），则不适用扶持政策。
 

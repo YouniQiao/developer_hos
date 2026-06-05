@@ -1,7 +1,9 @@
 ---
 title: "配置调试签名"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 配置调试签名
 

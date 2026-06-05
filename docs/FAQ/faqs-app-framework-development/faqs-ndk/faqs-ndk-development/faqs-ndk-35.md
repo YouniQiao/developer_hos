@@ -4,6 +4,7 @@ title: "Native侧如何使用hilog打印出日志信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-35
 ---
 
+
 1.在CMakeLists.txt中新增libhilog\_ndk.z.so链接：
 
 ```
@@ -22,7 +23,7 @@ target_link_libraries(entry PUBLIC libhilog_ndk.z.so)
 
 3.打印日志，以打印ERROR级别的日志为例：
 
-注意，需要加上{public}才会显示打印内容，不添加默认是{private}
+注意，需要加上\{public\}才会显示打印内容，不添加默认是\{private\}
 
 ```
 int a = 5, b = 10;

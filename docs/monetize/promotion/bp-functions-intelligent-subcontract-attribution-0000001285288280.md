@@ -2,7 +2,9 @@
 title: "客户端归因查询"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-attribution-0000001285288280
+format: md
 ---
+
 # 客户端归因查询
 
 ## 开发步骤

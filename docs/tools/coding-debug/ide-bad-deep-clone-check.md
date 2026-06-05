@@ -1,7 +1,9 @@
 ---
 title: "@performance/bad-deep-clone-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/bad-deep-clone-check
 

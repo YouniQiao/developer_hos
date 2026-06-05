@@ -4,6 +4,7 @@ title: "如何在Native侧区分ArkTS侧创建的ArrayBuffer和Uint8Array对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-13
 ---
 
+
 **问题详情**
 
 ArkTS层创建的ArrayBuffer和Uint8Array对象在Native层无法正确区分。

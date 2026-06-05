@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "拉起运动健康App隐私授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-privacy-authorization
+format: md
 ---
+
 
 ## 场景介绍
 

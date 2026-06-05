@@ -2,7 +2,9 @@
 title: "知识产权"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/intellectual-property-0000002471264365
+format: md
 ---
+
 
 # 知识产权
 

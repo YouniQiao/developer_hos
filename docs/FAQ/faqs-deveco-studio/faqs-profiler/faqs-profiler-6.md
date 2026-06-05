@@ -4,6 +4,7 @@ title: "Profiler窗口无法加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-6
 ---
 
+
 **问题现象**
 
 Profiler窗口提示“There is already a Profiler running.”。

@@ -1,7 +1,9 @@
 ---
 title: "如何设置沉浸式窗口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-199
+format: md
 ---
+
 
 在EntryAbility的onWindowStageCreate方法中通过windowStage获取window，然后分别调用setWindowLayoutFullScreen和setWindowSystemBarEnable方法。参考代码如下：
 

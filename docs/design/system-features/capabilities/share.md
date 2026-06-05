@@ -2,7 +2,9 @@
 title: 分享
 sidebar_label: 分享
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/share-0000001957076313
+format: md
 ---
+
 # 分享
 
 用户可通过“分享”操作，将当前内容分享给他人。

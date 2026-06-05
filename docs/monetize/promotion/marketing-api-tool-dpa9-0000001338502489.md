@@ -2,7 +2,9 @@
 title: "批量添加商品"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa9-0000001338502489
+format: md
 ---
+
 # 批量添加商品
 
 您通过本接口可以批量添加商品。

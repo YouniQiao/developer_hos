@@ -2,7 +2,9 @@
 title: "任务创建流程"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-task-creation-0000002466018866
+format: md
 ---
+
 # 任务创建流程
 
 投放端整合升级后，应用推广任务创建共有四个层级：计划——任务——子任务——创意，任务日预算前置到计划层，成为计划日预算。

@@ -2,7 +2,9 @@
 
 title: "历史工程转换为端云一体化开发工程"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 历史工程转换为端云一体化开发工程
 

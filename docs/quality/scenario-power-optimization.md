@@ -1,7 +1,9 @@
 ---
 title: "功耗场景优化案例"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-power-optimization
+format: md
 ---
+
 
 # 功耗场景优化案例
 

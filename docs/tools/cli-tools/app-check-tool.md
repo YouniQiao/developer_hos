@@ -1,7 +1,9 @@
 ---
 title: "扫描工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # 扫描工具
 

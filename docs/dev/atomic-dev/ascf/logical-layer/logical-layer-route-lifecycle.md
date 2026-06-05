@@ -1,7 +1,9 @@
 ---
 title: "路由和生命周期"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-route-lifecycle
+format: md
 ---
+
 
 在ASCF框架中所有页面的路由全部由框架进行管理。
 

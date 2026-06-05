@@ -1,7 +1,9 @@
 ---
 title: "用户身份认证开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-dev
+format: md
 ---
+
 
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/prerequisites)**
 * **[查询支持的认证能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-authentication-capabilities)**

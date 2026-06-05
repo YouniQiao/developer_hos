@@ -1,7 +1,9 @@
 ---
 title: "设置信息提醒"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-message-reminder
+format: md
 ---
+
 
 ## 场景介绍
 

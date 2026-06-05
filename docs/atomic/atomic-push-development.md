@@ -1,7 +1,9 @@
 ---
 title: "推送"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-push-development
+format: md
 ---
+
 
 * **[Push Kit简介](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-intro)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-prepare)**

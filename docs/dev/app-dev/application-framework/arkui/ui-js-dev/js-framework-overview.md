@@ -1,7 +1,9 @@
 ---
 title: "框架说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-overview
+format: md
 ---
+
 
 * **[文件组织](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-file)**
 * **[js标签配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-js-tag)**

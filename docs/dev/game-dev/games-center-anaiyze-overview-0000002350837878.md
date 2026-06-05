@@ -2,7 +2,9 @@
 title: "应用分析总览"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-anaiyze-overview-0000002350837878
 has_merged_cells: true
+format: md
 ---
+
 
 [应用分析总览](#section106851042192815)为您提供应用的分析总览数据；[应用分析概览](#section17943125854315)提供单个应用的关键KPI指标概览。
 

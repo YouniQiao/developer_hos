@@ -4,6 +4,7 @@ title: "一个HSP模块如何快速切换成HAR模块"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-49
 ---
 
+
 **解决方案**
 
 1.在HSP下的module.json5中，把"type": "shared"修改为"type": "har"，删除"deliveryWithInstall"、"pages"字段。

@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-combine-same-arg-animateto"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-combine-same-arg-animateto
 

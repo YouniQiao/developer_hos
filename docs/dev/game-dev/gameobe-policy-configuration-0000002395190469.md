@@ -1,7 +1,9 @@
 ---
 title: "配置策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469
+format: md
 ---
+
 
 联机对战服务为每款游戏提供了房间管理功能，您可以在控制台对房间延时解散、玩家掉线重连时间进行设置。
 

@@ -1,7 +1,9 @@
 ---
 title: "可信应用服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-dev
+format: md
 ---
+
 
 * **[安全摄像头场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera)**
 * **[安全地理位置场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securelocation)**

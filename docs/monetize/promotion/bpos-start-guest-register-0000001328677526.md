@@ -2,7 +2,9 @@
 title: "直客账户注册"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-register-0000001328677526
+format: md
 ---
+
 # 直客账户注册
 
 ## 概述

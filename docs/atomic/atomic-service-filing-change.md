@@ -1,7 +1,9 @@
 ---
 title: "变更核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-change
+format: md
 ---
+
 
 在华为云核准（备案）系统中可以同时修改主体信息和元服务信息。操作步骤如下：
 

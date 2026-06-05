@@ -1,7 +1,9 @@
 ---
 title: "picker-view"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker-view
+format: md
 ---
+
 
 嵌入页面的滚动选择器。
 

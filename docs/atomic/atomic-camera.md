@@ -1,7 +1,9 @@
 ---
 title: "相机"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-camera
+format: md
 ---
+
 
 开发者可以通过拉起CameraPicker应用，直接拍照或录制。此接口无需申请相机权限。
 

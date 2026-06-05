@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Scan Kit（统一扫码服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-kit-guide
+format: md
 ---
+
 
 * **[Scan Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-config-agc)**

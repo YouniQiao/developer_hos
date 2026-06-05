@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-confusing-non-null-assertion"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-confusing-non-null-assertion
 

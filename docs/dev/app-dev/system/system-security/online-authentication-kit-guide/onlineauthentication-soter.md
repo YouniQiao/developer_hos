@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "SOTER免密身份认证"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-soter
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -52,11 +54,11 @@ SOTER旨在提供一套生物认证平台和标准，使得业务可以采用设
 
 | 接口名 | 描述 |
 | --- | --- |
-| [generateAppSecureKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#generateappsecurekey)(keyType: [KeyType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#keytype)): Promise<Uint8Array> | 生成应用密钥。 |
-| [generateAuthKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#generateauthkey)(keyAlias: string, keyType: [KeyType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#keytype)): Promise<[SignedResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#signedresult)> | 生成认证密钥。 |
+| [generateAppSecureKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#generateappsecurekey)(keyType: [KeyType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#keytype)): Promise\<Uint8Array\> | 生成应用密钥。 |
+| [generateAuthKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#generateauthkey)(keyAlias: string, keyType: [KeyType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#keytype)): Promise[SignedResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#signedresult) | 生成认证密钥。 |
 | [generateChallengeSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#generatechallengesync)(keyAlias: string): Uint8Array | 生成Challenge。 |
 | [signWithAuthKeySync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#signwithauthkeysync)(keyAlias: string, authToken: Uint8Array, info: string): [SignedResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#signedresult) | 使用认证密钥对业务数据签名。 |
-| [deleteAuthKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#deleteauthkey)(keyAlias: string): Promise<void> | 删除认证密钥。 |
+| [deleteAuthKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/onlineauthentication-soter-api#deleteauthkey)(keyAlias: string): Promise\<void\> | 删除认证密钥。 |
 
 ## 开发步骤
 

@@ -2,7 +2,9 @@
 title: "监测链接跟踪"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads_gongjujiance_yy-0000001458784668
+format: md
 ---
+
 # 监测链接跟踪
 
 ## 基本原理
@@ -35,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads_gongjuj
 
 接口示例：
 
-<strong>https://www.advertiser.com/feedback?</strong>param1=param1\_value&param2=param2\_value&content\_id=\{xxx\}&adgroup\_id=\{xxx\}&campaign\_id=\{xxx\}&oaid=\{xxx\}&trace\_time=\{xxx\}&callback=\{xxx\}&corp\_id=\{xxx\}&app\_id=\{xxx\}
+<strong>https://www.advertiser.com/feedback?</strong>param1=param1\_value&param2=param2\_value&content\_id=\\{xxx\\}&adgroup\_id=\\{xxx\\}&campaign\_id=\\{xxx\\}&oaid=\\{xxx\\}&trace\_time=\\{xxx\\}&callback=\\{xxx\\}&corp\_id=\\{xxx\\}&app\_id=\\{xxx\\}
 
 其中加粗部分URL由广告主提供的点击监测地址，红色字体即为广告主提供的原始URL中的参数，灰色部分参数为鲸鸿动能根据您账号配置拼接在上，无需手工填写。
 
@@ -75,7 +77,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads_gongjuj
 | oaid\_md5 | string | 可选 | 设备OAID标识符，MD5加密 |
 | exp\_id | string | 可选 | 实验ID |
 
-以上点击监测发送宏参数，不要求广告主返回任何具体内容，使用HTTP协议的状态码表示是否成功，返回状态码为200或\{status:0\}或success表示成功。
+以上点击监测发送宏参数，不要求广告主返回任何具体内容，使用HTTP协议的状态码表示是否成功，返回状态码为200或\\{status:0\\}或success表示成功。
 
 ## 操作步骤
 

@@ -1,7 +1,9 @@
 ---
 title: "加密/解密介绍及算法规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-overview
+format: md
 ---
+
 
 在HUKS中已经有密钥，需要对一段数据加密或是解密，均可以使用HUKS完成加密/解密操作。
 

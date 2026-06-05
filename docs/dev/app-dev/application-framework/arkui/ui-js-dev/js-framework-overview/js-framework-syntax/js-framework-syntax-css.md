@@ -1,17 +1,19 @@
 ---
 title: "CSS语法参考"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-css
+format: md
 ---
+
 
 CSS是描述[HML](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-hml)页面结构的样式语言。所有组件均存在系统默认样式，也可在页面CSS样式文件中对组件、页面自定义不同的样式。请参考[通用样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-styles)了解兼容JS的类Web开发范式支持的组件样式。
 
 ## 尺寸单位
 
-* 逻辑像素px（文档中以<length>表示）：
+* 逻辑像素px（文档中以\<length\>表示）：
 
   + 默认屏幕具有的逻辑宽度为720px（配置见[js标签配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-js-tag)中的window小节），实际显示时会将页面布局缩放至屏幕实际宽度，如100px在实际宽度为1440物理像素的屏幕上，实际渲染为200物理像素（从720px向1440物理像素，所有尺寸放大2倍）。
   + 额外配置autoDesignWidth为true时（配置见[js标签配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-js-tag)中的window小节），逻辑像素px将按照屏幕密度进行缩放，如100px在屏幕密度为3的设备上，实际渲染为300物理像素。应用需要适配多种设备时，建议采用此方法。
-* 百分比（文档中以<percentage>表示）：表示该组件占父组件尺寸的百分比，如组件的width设置为50%，代表其宽度为父组件的50%。
+* 百分比（文档中以\<percentage\>表示）：表示该组件占父组件尺寸的百分比，如组件的width设置为50%，代表其宽度为父组件的50%。
 
 ## 样式导入
 

@@ -1,7 +1,9 @@
 ---
 title: "Code Linter代码检查"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Code Linter代码检查
 

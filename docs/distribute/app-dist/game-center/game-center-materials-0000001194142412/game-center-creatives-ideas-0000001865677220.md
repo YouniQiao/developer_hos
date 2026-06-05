@@ -2,7 +2,9 @@
 title: "在玩服务魔方创意"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-0000001865677220
+format: md
 ---
+
 
 # 在玩服务魔方创意
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "人脸跟踪（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-face
+format: md
 ---
+
 
 ## 约束与限制
 

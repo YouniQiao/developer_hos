@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "XEngine Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-introduction
+format: md
 ---
+
 
 XEngine Kit（GPU加速引擎服务）提供基于马良GPU的性能提升方案，包括GPU/AI超分能力、自适应VRS（Variable Rate Shading，可变速率着色）、Subpass Shading、光线追踪技术（包括反射、阴影、环境光遮蔽和全局光照，Ray-Traced Reflection, Shadow, Ambient Occlusion and Global Illumination）和高性能着色器（High performance shaders，简称HPS）等，通过图形算法以及软硬件优化，让用户拥有更高画质、更高性能、更低功耗的3D游戏/应用、AR/VR体验。
 

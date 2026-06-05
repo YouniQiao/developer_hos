@@ -4,6 +4,7 @@ title: "C/C++是否提供有OpenSSL库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-81
 ---
 
+
 C/C++不提供OpenSSL的接口，而ArkTS提供了JS OpenSSL的接口。
 
 参考链接

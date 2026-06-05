@@ -1,7 +1,9 @@
 ---
 title: "模块化设计"
 sidebar_position: 3
+format: md
 ---
+
 
 # 模块化设计
 
@@ -110,13 +112,13 @@ HarmonyOS应用的业务逻辑需要通过[UIAbility组件](https://developer.hu
 > ```ts
 > // har_common/src/main/ets/utils/Utils.ets
 > const LARGE_NUMBER = 100000000;
-> function func(): number {
+> function func(): number \{
 >   let count = 0;
->   while (count < LARGE_NUMBER) {
+>   while (count < LARGE_NUMBER) \{
 >     count++;
->   }
+>   \}
 >   return count;
-> }
+> \}
 > export let funcResult = func();
 > ```
 > 2. 分别通过使用 HSP 包和 HAR 包来引用该 HAR_COMMON 包中的功能进行性能对比实验。
@@ -126,15 +128,15 @@ HarmonyOS应用的业务逻辑需要通过[UIAbility组件](https://developer.hu
 
 >      ```ts
 >      // entry/src/main/ets/pages/Index.ets
->      import { MainPage } from 'har_library';
->      import { funcResult } from 'har_common';
+>      import \{ MainPage \} from 'har_library';
+>      import \{ funcResult \} from 'har_common';
 >      ```
 
 >      HSP 包引用 HAR_COMMON 包中的功能：
 
 >      ```ts
 >      // har_library/src/main/ets/pages/MainPage.ets
->      import { funcResult } from 'har_common';
+>      import \{ funcResult \} from 'har_common';
 >      ```
 >
 >    * 使用 HAP 包和 HAR 包引用该 HAR_COMMON 包中的功能。
@@ -143,15 +145,15 @@ HarmonyOS应用的业务逻辑需要通过[UIAbility组件](https://developer.hu
 
 >      ```ts
 >      // entry/src/main/ets/pages/Index.ets
->      import { MainPage } from 'har_library';
->      import { funcResult } from 'har_common';
+>      import \{ MainPage \} from 'har_library';
+>      import \{ funcResult \} from 'har_common';
 >      ```
 
 >      HAR 包引用 HAR_COMMON 包中的功能：
 
 >      ```ts
 >      // har_library/src/main/ets/pages/MainPage.ets
->      import { funcResult } from 'har_common';
+>      import \{ funcResult \} from 'har_common';
 >      ```
 
 > 使用[Launch模板](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-launch)，对优化前后启动性能进行对比分析。

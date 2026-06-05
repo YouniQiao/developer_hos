@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "海量点图层"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-mass-point
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [MassPointOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#masspointoverlayparams) | 海量点参数。 |
-| [addMassPointOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addmasspointoverlay)(params: mapCommon.[MassPointOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#masspointoverlayparams)): Promise<[MassPointOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-masspointoverlay)> | 新增海量点。 |
+| [addMassPointOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addmasspointoverlay)(params: mapCommon.[MassPointOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#masspointoverlayparams)): Promise[MassPointOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-masspointoverlay) | 新增海量点。 |
 | [MassPointOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-masspointoverlay) | 海量点管理对象。 |
 
 ## 开发步骤

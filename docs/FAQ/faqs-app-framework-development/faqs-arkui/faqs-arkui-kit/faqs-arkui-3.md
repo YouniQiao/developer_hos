@@ -1,7 +1,9 @@
 ---
 title: "如何实现防截屏功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-3
+format: md
 ---
+
 
 设置窗口隐私模式，禁止截屏或录屏。此接口适用于禁止截屏/录屏的场景。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "拍照实践(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-shooting-case
+format: md
 ---
+
 
 在开发相机应用时，需要先[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。
 

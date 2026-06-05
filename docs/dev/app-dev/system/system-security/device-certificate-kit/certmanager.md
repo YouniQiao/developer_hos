@@ -1,7 +1,9 @@
 ---
 title: "证书管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager
+format: md
 ---
+
 
 * **[证书管理概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-overview)**
 * **[应用证书凭据开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-private-credential-guidelines)**

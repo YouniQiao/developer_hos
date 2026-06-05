@@ -4,6 +4,7 @@ title: "LABEL_VALUE_ERROR处理指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-15
 ---
 
+
 **问题现象**
 
 在工程同步、编译构建过程中，提示**LABEL\_VALUE\_ERROR**错误信息。

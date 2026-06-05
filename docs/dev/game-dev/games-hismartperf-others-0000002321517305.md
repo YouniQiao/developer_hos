@@ -1,7 +1,9 @@
 ---
 title: "其他工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-others-0000002321517305
+format: md
 ---
+
 
 ![](./img/450f68ef.png)
 

@@ -1,7 +1,9 @@
 ---
 title: "单客户端订阅场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts-suevent
+format: md
 ---
+
 
 ## еңәжҷҜд»Ӣз»Қ
 
@@ -49,8 +51,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | жҺҘеҸЈеҗҚ | жҸҸиҝ° |
 | --- | --- |
-| on(type: 'auditEventOccur', auditEventInfo: AuditEventInfo, callback: Callback<AuditEvent>): void | и®ўйҳ…е®үе…Ёе®Ўи®Ўж•°жҚ® |
-| off(type: 'auditEventOccur', auditEventInfo: AuditEventInfo, callback?: Callback<AuditEvent>): void | еҸ–ж¶Ҳи®ўйҳ…е®үе…Ёе®Ўи®Ўж•°жҚ® |
+| on(type: 'auditEventOccur', auditEventInfo: AuditEventInfo, callback: Callback\<AuditEvent\>): void | и®ўйҳ…е®үе…Ёе®Ўи®Ўж•°жҚ® |
+| off(type: 'auditEventOccur', auditEventInfo: AuditEventInfo, callback?: Callback\<AuditEvent\>): void | еҸ–ж¶Ҳи®ўйҳ…е®үе…Ёе®Ўи®Ўж•°жҚ® |
 
 ## ејҖеҸ‘жӯҘйӘӨ
 

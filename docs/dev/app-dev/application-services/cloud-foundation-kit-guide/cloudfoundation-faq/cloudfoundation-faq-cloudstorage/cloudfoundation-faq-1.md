@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用云存储上传文件失败，提示“404:Product does not exist”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-1
+format: md
 ---
+
 
 **问题现象**
 

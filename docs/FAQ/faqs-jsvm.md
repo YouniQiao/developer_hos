@@ -4,6 +4,7 @@ title: "JSVM"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm
 ---
 
+
 * **[如何管理JSVM\_CallbackStruct生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-1)**
 * **[如何自排查\_Bool类型没有找到的编译问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-2)**
 * **[如何自排查OOM(v8::FatalProcessOutOfMemory)错误](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-4)**

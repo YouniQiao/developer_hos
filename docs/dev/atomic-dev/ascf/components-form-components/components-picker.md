@@ -1,7 +1,9 @@
 ---
 title: "picker"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker
+format: md
 ---
+
 
 滚动选择器。选择器包括一个或多个不同值的可滚动列表。
 

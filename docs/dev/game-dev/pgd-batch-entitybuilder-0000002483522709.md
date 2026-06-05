@@ -1,7 +1,9 @@
 ---
 title: "BatchEntityBuilder实体创建批处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-batch-entitybuilder-0000002483522709
+format: md
 ---
+
 
 用于预先设置一组组件和标签，然后一次性创建多个具有相同组件和标签的实体，从而提高性能。
 

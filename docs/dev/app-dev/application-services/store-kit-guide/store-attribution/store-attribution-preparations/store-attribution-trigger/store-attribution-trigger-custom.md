@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义转化事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-trigger-custom
+format: md
 ---
+
 
 **开发者角色的合作伙伴在转化事件管理页面可以做如下操作**：
 

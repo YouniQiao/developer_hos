@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "一键登录场景下无法获取到明文手机号如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-4
+format: md
 ---
+
 
 阅读此章节前请先保证已在华为账号一键登录场景成功获取到匿名手机号。在华为账号一键登录场景下无法获取到明文手机号时，建议通过以下步骤排查解决：
 

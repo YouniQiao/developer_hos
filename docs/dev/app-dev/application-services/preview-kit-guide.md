@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Preview Kit（文件预览服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-kit-guide
+format: md
 ---
+
 
 * **[Preview Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-introduction)**
 * **[文件预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filepreview)**

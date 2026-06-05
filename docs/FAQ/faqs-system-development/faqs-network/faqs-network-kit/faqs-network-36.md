@@ -1,7 +1,9 @@
 ---
 title: "ArkTS中HTTP请求如何以JSON形式进行传输"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-36
+format: md
 ---
+
 
 HTTP协议消息头中，Content-Type表示媒体类型。
 

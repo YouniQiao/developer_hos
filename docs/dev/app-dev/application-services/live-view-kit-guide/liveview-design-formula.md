@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "实况窗设计规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-design-formula
+format: md
 ---
+
 
 应用发送的实况窗需遵循实况窗设计规范，不符合设计规范的方案将不被予以开通正式权限。同时若应用实况窗上线后出现违反实况窗设计规范的行为，将被视为[违规](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction#违规处罚)。
 

@@ -1,7 +1,9 @@
 ---
 title: "配置隐私标签信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-privacy-tag-0000002316420993
+format: md
 ---
+
 
 隐私标签将展示在应用详情页面，帮助用户提前了解应用使用个人数据的情况。
 

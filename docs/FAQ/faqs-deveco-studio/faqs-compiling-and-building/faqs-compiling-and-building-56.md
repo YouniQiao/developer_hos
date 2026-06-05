@@ -4,6 +4,7 @@ title: "静态共享包HAR如何引用另一个HAR包中的so文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-56
 ---
 
+
 可以将so库导出并放置在libs目录下，然后在CMakeLists.txt中添加以下代码，将libnativeSub.so添加到har包中。
 
 ```

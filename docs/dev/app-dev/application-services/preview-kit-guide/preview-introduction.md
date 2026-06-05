@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Preview Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-introduction
+format: md
 ---
+
 
 Preview Kit（文件预览服务）为应用提供便捷的文件快速预览和文件打开加速能力。
 

@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/semi-spacing"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/semi-spacing
 

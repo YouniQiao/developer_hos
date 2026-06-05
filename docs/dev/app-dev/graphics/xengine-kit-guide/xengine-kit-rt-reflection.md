@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "光线追踪反射"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-rt-reflection
+format: md
 ---
+
 
 从6.0.0(20) 版本开始，新增光线追踪反射特性。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Wallet Kit常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-kit-faq
+format: md
 ---
+
 
 * **[开发者应用使用Wallet Kit，是否需要集成华为Account Kit？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-2)**
 * **[如果用户没有登录华为账号，添加卡券时如何处理？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-3)**

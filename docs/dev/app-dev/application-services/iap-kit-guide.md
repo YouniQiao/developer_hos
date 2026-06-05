@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "IAP Kit（应用内支付服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-kit-guide
+format: md
 ---
+
 
 * **[IAP Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-introduction)**
 * **[IAP Kit接入规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-access-specifications)**

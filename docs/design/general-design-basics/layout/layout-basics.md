@@ -2,7 +2,9 @@
 title: 布局基础
 sidebar_label: 布局基础
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-layout-basics-0000001795579413
+format: md
 ---
+
 # 布局基础
 
 布局不是静态固定的，当显示环境发生变化时，如横竖屏切换、调节字体大小、应用分屏，要及时调整内容的布局方式以适应变化。

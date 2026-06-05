@@ -2,7 +2,9 @@
 title: "投放快应用任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-brand-quickapp-0000001347353661
+format: md
 ---
+
 # 投放快应用任务
 
 ## 背景信息

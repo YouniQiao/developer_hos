@@ -4,6 +4,7 @@ title: "音频焦点如何适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-13
 ---
 
+
 为确保应用提供良好的音频焦点体验，需要注意：
 
 （1）应用在启动播放或录制前，需根据音频用途，正确指定StreamUsage或SourceType。

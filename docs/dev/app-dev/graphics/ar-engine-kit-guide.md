@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AR Engine（AR引擎服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ar-engine-kit-guide
+format: md
 ---
+
 
 * **[AR Engine简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-overview)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations)**

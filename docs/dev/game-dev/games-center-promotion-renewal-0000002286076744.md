@@ -1,7 +1,9 @@
 ---
 title: "自动续期订阅商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-promotion-renewal-0000002286076744
+format: md
 ---
+
 
 在HarmonyOS应用数字商品服务中，针对自动续期订阅商品，支持您设置三种订阅优惠类型：新用户促销、自定义人群促销、退订挽留促销。
 

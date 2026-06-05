@@ -4,6 +4,7 @@ title: "AOT编译模式的产物及ap、an、ai文件是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-52
 ---
 
+
 AOT编译模式的产物是机器码。
 
 AP文件是Ark Profiler文件，用于在方舟AOT编译器中记录预设的运行时类型等信息。

@@ -4,6 +4,7 @@ title: "如何快速生成class的setter和getter方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-101
 ---
 
+
 1. 在类内部，右键点击，选择“生成”。
 
    ![](./img/4cd39ffa.png "点击放大")

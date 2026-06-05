@@ -2,7 +2,9 @@
 title: "命令：通用命令&lt;ExternCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-externcommand-0000002504275007
+format: md
 ---
+
 
 # 命令：通用命令&lt;ExternCommand&gt;
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用前台下载资源包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-fore
+format: md
 ---
+
 
 启动游戏后，为游戏提供管理、创建资源包下载任务功能。
 
@@ -26,16 +28,16 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/grap
 
 | 接口名 | 描述 |
 | --- | --- |
-| [fetchManifestUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanagerfetchmanifesturl)(): Promise<string> | 获取资源包文件下载列表。使用Promise异步回调。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageronprogress)(type: 'progress', callback: Callback<DownloadProgressInfo[]>): void | 订阅资源包下载进度事件。使用callback形式返回结果。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageronpause)(type: 'pause', callback: Callback<AssetDownloadTask>): void | 订阅资源包下载暂停事件。使用callback形式返回结果。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageroncomplete)(type: 'complete', callback: Callback<DownloadCompletedInfo>): void | 订阅资源包下载成功事件。使用callback形式返回结果。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageronfail)(type: 'fail', callback: Callback<DownloadFailedInfo>): void | 订阅资源包下载失败事件。使用callback形式返回结果。 |
-| [addAssetDownloadTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageraddassetdownloadtask)(context: common.BaseContext, downloadConfig: AssetDownloadConfig): Promise<string> | 新增资源包下载任务。使用Promise异步回调。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageroffprogress)(type: 'progress', callback?: Callback<DownloadProgressInfo[]>): void | 取消订阅资源包下载进度事件。使用callback形式返回结果。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageroffpause)(type: 'pause', callback?: Callback<AssetDownloadTask>): void | 取消订阅资源包下载暂停事件。使用callback形式返回结果。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageroffcomplete)(type: 'complete', callback?: Callback<DownloadCompletedInfo>): void | 取消订阅资源包下载成功事件。使用callback形式返回结果。 |
-| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanagerofffail)(type: 'fail', callback?: Callback<DownloadFailedInfo>): void | 取消订阅资源包下载失败事件。使用callback形式返回结果。 |
+| [fetchManifestUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanagerfetchmanifesturl)(): Promise\<string\> | 获取资源包文件下载列表。使用Promise异步回调。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageronprogress)(type: 'progress', callback: Callback\<DownloadProgressInfo[]\>): void | 订阅资源包下载进度事件。使用callback形式返回结果。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageronpause)(type: 'pause', callback: Callback\<AssetDownloadTask\>): void | 订阅资源包下载暂停事件。使用callback形式返回结果。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageroncomplete)(type: 'complete', callback: Callback\<DownloadCompletedInfo\>): void | 订阅资源包下载成功事件。使用callback形式返回结果。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageronfail)(type: 'fail', callback: Callback\<DownloadFailedInfo\>): void | 订阅资源包下载失败事件。使用callback形式返回结果。 |
+| [addAssetDownloadTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageraddassetdownloadtask)(context: common.BaseContext, downloadConfig: AssetDownloadConfig): Promise\<string\> | 新增资源包下载任务。使用Promise异步回调。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageroffprogress)(type: 'progress', callback?: Callback\<DownloadProgressInfo[]\>): void | 取消订阅资源包下载进度事件。使用callback形式返回结果。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageroffpause)(type: 'pause', callback?: Callback\<AssetDownloadTask\>): void | 取消订阅资源包下载暂停事件。使用callback形式返回结果。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanageroffcomplete)(type: 'complete', callback?: Callback\<DownloadCompletedInfo\>): void | 取消订阅资源包下载成功事件。使用callback形式返回结果。 |
+| [off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-assetdownloadmanager#assetdownloadmanagerofffail)(type: 'fail', callback?: Callback\<DownloadFailedInfo\>): void | 取消订阅资源包下载失败事件。使用callback形式返回结果。 |
 
 ## 开发步骤
 

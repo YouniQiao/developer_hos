@@ -4,6 +4,7 @@ title: "上架预检"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-publish-test
 ---
 
+
 * **[创建任务时提示“ai模型暂未启动，请稍后再试”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-publish-test-1)**
 * **[测试报告中，为什么会出现测试项检测异常](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-publish-test-2)**
 * **[测试报告中，为什么会批量出现待检测项](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-publish-test-3)**

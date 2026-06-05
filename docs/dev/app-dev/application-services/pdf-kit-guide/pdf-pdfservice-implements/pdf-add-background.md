@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "添加、删除背景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-background
+format: md
 ---
+
 
 对指定页面添加背景图片或背景颜色，并设置大小、旋转、透明度和位置等属性，支持图片格式：PNG、BMP、JPEG。
 

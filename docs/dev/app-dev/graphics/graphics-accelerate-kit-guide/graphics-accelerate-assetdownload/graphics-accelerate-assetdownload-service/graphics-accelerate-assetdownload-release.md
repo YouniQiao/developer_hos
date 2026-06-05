@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "发布资源包下载任务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-release
+format: md
 ---
+
 
 在AppGallery Connect支持创建“使用华为CDN”或“使用三方CDN”的游戏资源包下载任务。
 

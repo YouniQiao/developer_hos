@@ -1,7 +1,9 @@
 ---
 title: "WebView如何设置mixcontent策略，用以解决http与https混合加载的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-67
+format: md
 ---
+
 
 ArkWeb提供mixedMode(mixedMode: MixedMode)接口，用于设置是否允许加载HTTP和HTTPS混合内容。默认情况下，不允许加载混合内容。
 

@@ -1,7 +1,9 @@
 ---
 title: "业务介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-internal-test-overview-0000002253054942
+format: md
 ---
+
 
 在开发过程中，您可能需要在开发团队内共享应用或进行内部测试，此时您可以使用华为提供的指定设备发布功能。
 

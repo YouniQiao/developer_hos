@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图片缩放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-scaling
+format: md
 ---
+
 
 本模块提供图片细节增强的[C API接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-imageprocessing)，通过调用本模块，可以实现图片内容的清晰度增强及缩放功能，处理后的数据可以用于送显和编码保存。
 

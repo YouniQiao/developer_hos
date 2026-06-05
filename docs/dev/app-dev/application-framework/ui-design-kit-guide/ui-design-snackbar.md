@@ -1,7 +1,9 @@
 ---
 title: "即时操作"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar
+format: md
 ---
+
 
 * **[设置常驻通知弹窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar-resident-notification)**
 * **[设置定时通知弹窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-snackbar-scheduled-notification)**

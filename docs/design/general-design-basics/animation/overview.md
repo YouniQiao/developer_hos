@@ -2,7 +2,9 @@
 title: 概述
 sidebar_label: 概述
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-animation-overview-0000001750985338
+format: md
 ---
+
 # 概述
 
 ### 引力动效体系

@@ -1,7 +1,9 @@
 ---
 title: "ArkUI术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary
+format: md
 ---
+
 
 ## 组件坐标系
 

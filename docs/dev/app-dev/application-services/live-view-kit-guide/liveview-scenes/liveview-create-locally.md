@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "构建本地实况窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-create-locally
+format: md
 ---
+
 
 ## 简介
 
@@ -1068,7 +1070,7 @@ export class LiveViewController {
 
 实况窗计时器适用于排队、抢票等场景。
 
-开发者若需要使用实况窗计时器，则需在liveViewManager.[LiveView](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#liveview)（结构体）中配置[timer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#liveview)字段，并在当前支持的字段中使用占位符：**${placeholder.timer}**。
+开发者若需要使用实况窗计时器，则需在liveViewManager.[LiveView](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#liveview)（结构体）中配置[timer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#liveview)字段，并在当前支持的字段中使用占位符：**$\{placeholder.timer\}**。
 
 例如：固定区的文本内容中使用占位符，系统将替代占位符为实况窗计时器。
 

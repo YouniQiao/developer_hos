@@ -4,6 +4,7 @@ title: "如何实现背景跟随文字大小改变"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-246
 ---
 
+
 可以通过文字长度自动调整宽度。参考代码如下：
 
 ```

@@ -1,7 +1,9 @@
 ---
 title: "设置麦克风状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enablemic-csharp-0000002359706970
+format: md
 ---
+
 
 进入语音房间后，玩家如果不希望自身语音被房间内的其他玩家接收，可通过关闭自身麦克风实现。同时，还可以通过开启麦克风的方式快速解除自身静默状态。
 

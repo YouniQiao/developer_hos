@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-parameter-properties"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-parameter-properties
 

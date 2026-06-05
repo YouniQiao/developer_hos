@@ -1,7 +1,9 @@
 ---
 title: "UI稳定性故障分析概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-guide
+format: md
 ---
+
 
 本文档将简单介绍稳定性故障的概念与分类，并提供各类稳定性问题的参考帮助，用于指导应用开发者充分利用系统提供的调试能力和工具定位各类稳定性问题。
 

@@ -1,7 +1,9 @@
 ---
 title: "Web组件使用rawFile加载离线html时,如何在url后拼接参数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-45
+format: md
 ---
+
 
 使用Web组件加载时，可直接在URL中拼接参数。加载后，H5侧获取并使用这些参数。
 

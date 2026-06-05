@@ -1,7 +1,9 @@
 ---
 title: "签名验签识别真实请求"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification
+format: md
 ---
+
 
 ## 概述
 

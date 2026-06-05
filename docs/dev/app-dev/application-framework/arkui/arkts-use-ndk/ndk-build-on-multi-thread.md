@@ -1,7 +1,9 @@
 ---
 title: "使用多线程NDK接口并行化构建UI页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-on-multi-thread
+format: md
 ---
+
 
 ## 概述
 

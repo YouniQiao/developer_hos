@@ -4,6 +4,7 @@ title: "后台任务开发（Background Tasks）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-kit
 ---
 
+
 * **[如何在Stage模型中创建后台任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-1)**
 * **[应用在后台如何继续执行业务](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-2)**
 * **[如何申请多个长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-4)**

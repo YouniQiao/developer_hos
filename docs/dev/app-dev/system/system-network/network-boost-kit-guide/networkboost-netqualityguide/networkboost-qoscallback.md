@@ -1,7 +1,9 @@
 ---
 title: "网络质量评估"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -13,8 +15,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/netw
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type: 'netQosChange', callback: Callback<Array<NetworkQos>>): void | 订阅Qos信息状态变化。 |
-| off(type: 'netQosChange', callback?: Callback<Array<NetworkQos>>): void | 取消订阅Qos信息状态变化。 |
+| on(type: 'netQosChange', callback: Callback\<Array<NetworkQos\>>): void | 订阅Qos信息状态变化。 |
+| off(type: 'netQosChange', callback?: Callback\<Array<NetworkQos\>>): void | 取消订阅Qos信息状态变化。 |
 
 ## 开发步骤
 

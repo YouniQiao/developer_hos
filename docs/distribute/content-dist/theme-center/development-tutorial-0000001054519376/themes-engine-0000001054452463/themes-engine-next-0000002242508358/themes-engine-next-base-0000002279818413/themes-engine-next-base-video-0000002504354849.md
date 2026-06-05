@@ -2,7 +2,9 @@
 title: "视图：视频&lt;Video&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-video-0000002504354849
+format: md
 ---
+
 
 # 视图：视频&lt;Video&gt;
 

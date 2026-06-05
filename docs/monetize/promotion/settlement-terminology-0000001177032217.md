@@ -2,7 +2,9 @@
 title: "授信账户"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/settlement-terminology-0000001177032217
+format: md
 ---
+
 # 授信账户
 
 本章节为直客授信账户，服务商授信账户请参考[授信账户](https://developer.huawei.com/consumer/cn/doc/promotion/finance-0000001058604140#section984883812297)。

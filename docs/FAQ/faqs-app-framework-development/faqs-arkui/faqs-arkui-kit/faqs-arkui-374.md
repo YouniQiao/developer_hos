@@ -4,6 +4,7 @@ title: "如何实现应用的屏幕自动旋转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-374
 ---
 
+
 1. 在module.json5添加属性"orientation": "auto\_rotation"。
 
    如下所示：

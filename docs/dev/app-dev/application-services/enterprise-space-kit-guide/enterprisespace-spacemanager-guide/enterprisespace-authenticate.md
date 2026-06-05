@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "企业账号认证"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-authenticate
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ Enterprise Space Kit为企业应用提供企业账号认证的能力。在企业
 
 | 接口名 | 描述 |
 | --- | --- |
-| [authenticate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#authenticate)(enterpriseAuthInfo: [WorkspaceDomainInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#workspacedomaininfo), credential: Uint8Array): Promise<[AuthResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#authresult)> | 企业账号认证并返回结果。使用Promise异步回调。 |
+| [authenticate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#authenticate)(enterpriseAuthInfo: [WorkspaceDomainInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#workspacedomaininfo), credential: Uint8Array): Promise[AuthResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#authresult) | 企业账号认证并返回结果。使用Promise异步回调。 |
 
 ## 开发步骤
 

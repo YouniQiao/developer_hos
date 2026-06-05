@@ -1,7 +1,9 @@
 ---
 title: "ArkTS运行时"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime
+format: md
 ---
+
 
 * **[ArkTS运行时概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime-overview)**
 * **[GC垃圾回收](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gc-introduction)**

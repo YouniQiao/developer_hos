@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-caiwujiesuanfaq-0000001877196320
+format: md
 ---
+
 # FAQ
 
 ## 充值与开票

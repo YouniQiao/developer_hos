@@ -2,7 +2,9 @@
 title: "内容上架流程"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/content-listing-process-0000001364289837
+format: md
 ---
+
 
 # 内容上架流程
 

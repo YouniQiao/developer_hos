@@ -1,7 +1,9 @@
 ---
 title: "本地密钥管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-local-key-management
+format: md
 ---
+
 
 * **[本地密钥管理基础概念](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-concepts)**
 * **[密钥生成/导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-import)**

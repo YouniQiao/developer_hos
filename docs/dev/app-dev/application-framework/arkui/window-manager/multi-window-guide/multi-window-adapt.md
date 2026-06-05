@@ -1,7 +1,9 @@
 ---
 title: "应用适配智慧多窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-adapt
+format: md
 ---
+
 
 * **[应用声明支持智慧多窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-support)**
 * **[应用布局适配智慧多窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-layout-adapt)**

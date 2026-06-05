@@ -2,7 +2,9 @@
 title: "业务概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-overview-0000002338546393
 has_merged_cells: true
+format: md
 ---
+
 
 |  |  |
 | --- | --- |

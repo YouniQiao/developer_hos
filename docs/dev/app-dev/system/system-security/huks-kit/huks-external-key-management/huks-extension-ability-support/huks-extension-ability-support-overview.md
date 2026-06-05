@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "CryptoExtensionAbility扩展能力介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-ability-support-overview
+format: md
 ---
+
 
 CryptoExtensionAbility是Stage模型中扩展组件[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)的派生类。
 

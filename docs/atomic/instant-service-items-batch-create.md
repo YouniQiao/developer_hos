@@ -1,7 +1,9 @@
 ---
 title: "批量新建子服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-batch-create
+format: md
 ---
+
 
 1. 在服务直达主界面，选择“子服务”页签，点击“批量新建”。
 

@@ -1,7 +1,9 @@
 ---
 title: "电话"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-telephony
+format: md
 ---
+
 
 ## has.makePhoneCall
 

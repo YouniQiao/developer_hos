@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "事件交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-listening
+format: md
 ---
+
 
 本章节包含地图的点击和长按、相机移动（华为地图的移动是通过模拟相机移动的方式实现的）、以及“我的位置”按钮点击等事件监听。
 
@@ -12,14 +14,14 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 
 | 接口名 | 描述 |
 | --- | --- |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmapclick)(type: 'mapClick', callback: Callback<[mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng)>): void | 设置地图点击事件监听器。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmaplongclick)(type: 'mapLongClick', callback: Callback<[mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng)>): void | 设置地图长按事件监听器。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#oncameramovestart)(type: 'cameraMoveStart', callback: Callback<number>): void | 设置相机开始移动事件监听器。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#oncameramove)(type: 'cameraMove', callback: Callback<void>): void | 设置相机移动事件监听器。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#oncameraidle)(type: 'cameraIdle', callback: Callback<void>): void | 设置相机移动结束事件监听器。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmarkerclick)(type: 'markerClick' , callback: Callback<[Marker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-marker)>): void | 设置标记点击事件监听器。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmylocationbuttonclick)(type: 'myLocationButtonClick', callback: Callback<void>): void | 设置我的位置按钮点击事件监听器。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onpointannotationclick)(type: 'pointAnnotationClick', callback: Callback<[PointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-pointannotation)>): void | 设置点注释点击事件监听器。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmapclick)(type: 'mapClick', callback: Callback[mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng)): void | 设置地图点击事件监听器。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmaplongclick)(type: 'mapLongClick', callback: Callback[mapCommon.LatLng](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#latlng)): void | 设置地图长按事件监听器。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#oncameramovestart)(type: 'cameraMoveStart', callback: Callback\<number\>): void | 设置相机开始移动事件监听器。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#oncameramove)(type: 'cameraMove', callback: Callback\<void\>): void | 设置相机移动事件监听器。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#oncameraidle)(type: 'cameraIdle', callback: Callback\<void\>): void | 设置相机移动结束事件监听器。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmarkerclick)(type: 'markerClick' , callback: Callback[Marker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-marker)): void | 设置标记点击事件监听器。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onmylocationbuttonclick)(type: 'myLocationButtonClick', callback: Callback\<void\>): void | 设置我的位置按钮点击事件监听器。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onpointannotationclick)(type: 'pointAnnotationClick', callback: Callback[PointAnnotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-pointannotation)): void | 设置点注释点击事件监听器。 |
 
 ## 开发步骤
 

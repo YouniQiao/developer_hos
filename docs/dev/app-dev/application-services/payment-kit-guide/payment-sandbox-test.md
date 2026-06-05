@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "沙盒环境验证"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-sandbox-test
+format: md
 ---
+
 
 华为支付提供沙盒环境，开发者无需真实完成商户入网即可开始调试华为支付接入，模拟真实环境下华为支付交易过程，提前介入方案设计和开发联调，提升接入效率。
 

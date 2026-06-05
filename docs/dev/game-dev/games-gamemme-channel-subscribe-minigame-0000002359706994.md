@@ -1,7 +1,9 @@
 ---
 title: "订阅与取消订阅频道"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channel-subscribe-minigame-0000002359706994
+format: md
 ---
+
 
 “频道”作为游戏多媒体服务RTM功能的一个数据传输通道，主要用于频道消息的传递与广播。RTM频道消息支持不同客户端之间借助“频道”实现实时通信、全局聊天等功能，允许玩家在游戏内部建立实时的聊天室和群组，以进行广播消息、交流和社交，从而提升游戏的社交互动性。订阅频道的用户即可在频道内收发相关消息和事件，可选择订阅一个或多个频道。如取消订阅，则后续将无法收到频道消息。
 

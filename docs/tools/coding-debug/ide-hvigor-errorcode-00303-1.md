@@ -1,7 +1,9 @@
 ---
 title: "配置错误码"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 配置错误码
 

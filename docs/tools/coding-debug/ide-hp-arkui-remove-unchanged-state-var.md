@@ -1,7 +1,9 @@
 ---
 title: "@performance/hp-arkui-remove-unchanged-state-var"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/hp-arkui-remove-unchanged-state-var
 

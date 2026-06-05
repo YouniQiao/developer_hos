@@ -2,7 +2,9 @@
 title: "卡片标签"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-guide-label-0000002429826809
+format: md
 ---
+
 
 # 卡片标签
 

@@ -1,7 +1,9 @@
 ---
 title: "实践说明"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 实践说明
 
@@ -15,7 +17,7 @@ displayed_sidebar: toolsSidebar
 
 ![](./img/zh-cn_image_0000002602186343.png)
 
-1. 两个不同版本的软件，可能存在差异：如不同的应用标题、应用图标、版本声明。我们可以在工程级build-profile.json5-&gt;app{}-&gt;products[]中，可以对两种不同的外发版本进行差异化定制，新增两个product：Community和Ultimate。根据已支持的字段进行定制修改。
+1. 两个不同版本的软件，可能存在差异：如不同的应用标题、应用图标、版本声明。我们可以在工程级build-profile.json5-&gt;app\{\}-&gt;products[]中，可以对两种不同的外发版本进行差异化定制，新增两个product：Community和Ultimate。根据已支持的字段进行定制修改。
 
 ```
 {

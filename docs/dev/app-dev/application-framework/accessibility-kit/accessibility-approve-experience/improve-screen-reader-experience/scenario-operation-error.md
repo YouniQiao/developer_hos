@@ -1,7 +1,9 @@
 ---
 title: "操作错误场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-operation-error
+format: md
 ---
+
 
 ## 设计场景
 

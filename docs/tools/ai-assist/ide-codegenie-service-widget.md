@@ -1,7 +1,9 @@
 ---
 title: "万能卡片生成"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 万能卡片生成
 

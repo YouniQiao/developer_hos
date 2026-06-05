@@ -1,7 +1,9 @@
 ---
 title: "ArkGuard字节码混淆工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-arkguard-bytecode
+format: md
 ---
+
 
 * **[ArkGuard字节码混淆工具概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-overview)**
 * **[ArkGuard字节码混淆原理及功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation)**

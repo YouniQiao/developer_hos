@@ -4,6 +4,7 @@ title: "图片如何添加渐变模糊"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-55
 ---
 
+
 组件通用样式属性linearGradientBlur可以为当前组件添加线性渐变模糊效果。以下为参考代码：
 
 ```

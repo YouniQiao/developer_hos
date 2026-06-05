@@ -1,7 +1,9 @@
 ---
 title: "ohpm run错误码"
 displayed_sidebar: ohpmSidebar
+format: md
 ---
+
 
 # ohpm run错误码
 

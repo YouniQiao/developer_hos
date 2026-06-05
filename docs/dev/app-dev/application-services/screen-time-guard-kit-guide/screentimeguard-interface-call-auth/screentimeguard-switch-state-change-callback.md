@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "健康使用设备授权列表页中应用授权开关打开/关闭时触发回调"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-switch-state-change-callback
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -30,8 +32,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [onUserAuthSwitchOn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-timeguardextensionability#onuserauthswitchon)(): Promise<void> | 当用户授予授权时执行特定逻辑。 |
-| [onUserAuthSwitchOff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-timeguardextensionability#onuserauthswitchoff)(): Promise<void> | 当用户撤销授权时执行特定逻辑。 |
+| [onUserAuthSwitchOn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-timeguardextensionability#onuserauthswitchon)(): Promise\<void\> | 当用户授予授权时执行特定逻辑。 |
+| [onUserAuthSwitchOff](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-timeguardextensionability#onuserauthswitchoff)(): Promise\<void\> | 当用户撤销授权时执行特定逻辑。 |
 
 ![](./img/e3dcb8d2.png)
 

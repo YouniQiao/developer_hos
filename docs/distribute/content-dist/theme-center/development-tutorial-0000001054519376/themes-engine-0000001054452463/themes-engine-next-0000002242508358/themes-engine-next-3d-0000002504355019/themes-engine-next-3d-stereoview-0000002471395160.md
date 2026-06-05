@@ -2,7 +2,9 @@
 title: "空间翻转&lt;StereoView&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-3d-stereoview-0000002471395160
+format: md
 ---
+
 
 # 空间翻转&lt;StereoView&gt;
 

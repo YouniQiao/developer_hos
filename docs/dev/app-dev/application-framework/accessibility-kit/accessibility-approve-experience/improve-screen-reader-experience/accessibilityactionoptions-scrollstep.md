@@ -1,7 +1,9 @@
 ---
 title: "自定义无障碍滚动步数的场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibilityactionoptions-scrollstep
+format: md
 ---
+
 
 ## 设计场景
 

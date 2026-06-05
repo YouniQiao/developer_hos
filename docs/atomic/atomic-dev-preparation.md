@@ -1,7 +1,9 @@
 ---
 title: "元服务开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation
+format: md
 ---
+
 
 在开始元服务开发前，需要先完成以下准备工作。
 

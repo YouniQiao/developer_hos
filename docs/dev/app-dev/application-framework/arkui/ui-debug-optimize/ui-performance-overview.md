@@ -1,7 +1,9 @@
 ---
 title: "UI高性能开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-performance-overview
+format: md
 ---
+
 
 优化应用的性能对于提升用户体验至关重要。当发现性能问题后，一般可按照以下步骤进行分析：
 

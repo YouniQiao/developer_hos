@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取云侧文件下载地址"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-getdownloadurl
+format: md
 ---
+
 
 文件上传至云侧后，开发者可以获取云侧文件的下载地址，将下载地址放到网站中提供文件下载的体验。
 

@@ -1,7 +1,9 @@
 ---
 title: "Scan Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-introduction
+format: md
 ---
+
 
 Scan Kit（统一扫码服务）作为软硬协同的系统级扫码服务，帮助元服务快速构建面向各种场景的码图识别和码图生成能力。Scan Kit应用了多项计算机视觉技术和AI算法技术，不仅实现了远距离自动扫码，同时还针对多种复杂扫码场景（如暗光、污损、模糊、小角度、曲面码等）做了识别优化，提升扫码成功率与用户体验。
 

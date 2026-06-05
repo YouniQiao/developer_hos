@@ -1,7 +1,9 @@
 ---
 title: "文件结构"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/file-structure
+format: md
 ---
+
 
 ## 工程文件结构
 

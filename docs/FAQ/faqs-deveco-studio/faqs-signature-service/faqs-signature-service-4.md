@@ -4,6 +4,7 @@ title: "浏览器点击“允许”按钮后，出现登录客户端失败提示
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-4
 ---
 
+
 **问题现象**
 
 使用实名认证的华为账号登录后，点击“允许”按钮进行授权。如果浏览器提示“登录HUAWEI DevEco Studio客户端失败”，请检查网络连接或重新尝试登录。

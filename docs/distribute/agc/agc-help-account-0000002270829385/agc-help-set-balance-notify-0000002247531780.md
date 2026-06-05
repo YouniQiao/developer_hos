@@ -1,7 +1,9 @@
 ---
 title: "设置账户余额不足提醒"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-set-balance-notify-0000002247531780
+format: md
 ---
+
 
 为防止您的账户余额不足而导致扣款失败，您可以设置账户余额不足提醒。
 

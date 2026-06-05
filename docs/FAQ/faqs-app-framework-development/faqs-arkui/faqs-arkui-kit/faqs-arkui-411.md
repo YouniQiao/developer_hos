@@ -4,6 +4,7 @@ title: "Navigation组件，内部页面是否可以预加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-411
 ---
 
+
 **问题描述**
 
 Navigation是否有预加载功能，预加载一个toolbar组件的内容，在进入index页面时，虽然当前页为第0页，但是预加载第3、第4页相关内容。

@@ -4,6 +4,7 @@ title: "编译报错“The type of target device does not match the device type 
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-141
 ---
 
+
 **错误描述**
 
 指定target设备的类型与模块配置的设备类型不匹配。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "移除工作空间"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-remove-workspace
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ Enterprise Space Kit为企业用户提供移除工作空间的能力。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [removeWorkspace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#removeworkspace)(localId: number): Promise<void> | 移除工作空间。使用Promise异步回调。 |
+| [removeWorkspace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#removeworkspace)(localId: number): Promise\<void\> | 移除工作空间。使用Promise异步回调。 |
 
 ## 开发步骤
 

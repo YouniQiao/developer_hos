@@ -2,7 +2,9 @@
 title: "预约发布"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/appointment-release-0000002304487177
+format: md
 ---
+
 
 # 预约发布
 

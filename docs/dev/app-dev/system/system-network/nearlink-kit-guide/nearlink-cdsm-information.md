@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取星闪合作设备集合信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-cdsm-information
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -20,8 +22,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/near
 | --- | --- |
 | [createCdsmClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-cdsm#createcdsmclient)(address: string): [CdsmClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-cdsm#cdsmclient) | 创建合作设备集合客户端实例。 |
 | [getCdsmInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-cdsm#getcdsminfo)(): [CdsmInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-cdsm#cdsminfo) | 主动查询合作设备集合里所有成员设备的信息。 |
-| [onCdsmInfoChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-cdsm#oncdsminfochange)(callback: Callback<CdsmInfo>): void | 订阅合作设备集合成员设备的信息变化事件。 |
-| [offCdsmInfoChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-cdsm#offcdsminfochange)(callback?: Callback<CdsmInfo>): void | 取消订阅合作设备集合成员设备的信息变化事件。 |
+| [onCdsmInfoChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-cdsm#oncdsminfochange)(callback: Callback\<CdsmInfo\>): void | 订阅合作设备集合成员设备的信息变化事件。 |
+| [offCdsmInfoChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-cdsm#offcdsminfochange)(callback?: Callback\<CdsmInfo\>): void | 取消订阅合作设备集合成员设备的信息变化事件。 |
 
 ## 开发步骤
 

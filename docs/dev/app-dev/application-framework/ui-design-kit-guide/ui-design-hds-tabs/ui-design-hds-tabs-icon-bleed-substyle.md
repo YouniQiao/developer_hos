@@ -1,7 +1,9 @@
 ---
 title: "设置页签的图标出血样式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-icon-bleed-substyle
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "HiAppEvent介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-intro
+format: md
 ---
+
 
 ## 简介
 

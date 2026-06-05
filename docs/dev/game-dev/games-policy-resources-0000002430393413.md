@@ -2,7 +2,9 @@
 title: "全场景接入与创新能力（资源激励）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-policy-resources-0000002430393413
 has_merged_cells: true
+format: md
 ---
+
 
 ## 一、全场景接入资源政策
 

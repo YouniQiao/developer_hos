@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入购买"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-purchase
+format: md
 ---
+
 
 ## 场景介绍
 

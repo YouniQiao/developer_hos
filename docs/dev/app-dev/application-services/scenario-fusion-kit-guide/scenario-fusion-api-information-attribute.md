@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "场景化API"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-information-attribute
+format: md
 ---
+
 
 * **[通过API获取系统信息属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-system-info)**
 * **[通过API异步获取系统信息属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-asyn-system-info)**

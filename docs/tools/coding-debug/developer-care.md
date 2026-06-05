@@ -1,7 +1,9 @@
 ---
 title: "开发者关怀"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 开发者关怀
 

@@ -1,7 +1,9 @@
 ---
 title: "@performance/multiple-associations-state-var-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/multiple-associations-state-var-check
 

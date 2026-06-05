@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Live View Kit（实况窗服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/live-view-kit-guide
+format: md
 ---
+
 
 * **[Live View Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction)**
 * **[实况窗设计规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-design-formula)**

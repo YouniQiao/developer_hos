@@ -1,7 +1,9 @@
 ---
 title: "修改测试态服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-poi-modify-teststate-service-0000002452517690
+format: md
 ---
+
 
 当您创建的测试态服务已过生效时段或需要调整POI点位、测试用户、卡片内容等时，您可以尝试修改测试态服务。
 

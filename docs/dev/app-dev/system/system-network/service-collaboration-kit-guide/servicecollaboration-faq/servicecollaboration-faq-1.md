@@ -1,7 +1,9 @@
 ---
 title: "接入跨设备互通控件后，设备选择列表没有周围设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-faq-1
+format: md
 ---
+
 
 跨设备互通API支持根据特定调用策略调用设备。调用策略：PC/2in1设备可以调用Tablet和Phone，Tablet可以调用Phone，同类型设备不可调用。
 

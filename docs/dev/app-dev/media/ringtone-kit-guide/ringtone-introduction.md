@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Ringtone Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-introduction
+format: md
 ---
+
 
 Ringtone Kit（铃声服务）是一个用于设置铃声的工具库。通过使用Ringtone Kit，开发者可以在HarmonyOS应用中提供铃声设置的功能，为用户提供简单一致、安全高品质的铃声设置体验。
 

@@ -2,7 +2,9 @@
 title: 状态栏
 sidebar_label: 状态栏
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/status-bar-0000001776775568
+format: md
 ---
+
 # 状态栏
 
 状态栏用于显示设备当前的状态信息，包括时间、WLAN、移动数据、电量等。状态栏一般显示在整个屏幕的顶部区域，与设备顶部的挖孔进行避让。

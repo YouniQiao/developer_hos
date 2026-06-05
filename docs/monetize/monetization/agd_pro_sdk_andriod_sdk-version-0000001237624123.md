@@ -2,7 +2,9 @@
 title: "SDK版本更新说明"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-version-0000001237624123
+format: md
 ---
+
 
 
 | 版本号 | 发布时间 | 更新说明 |

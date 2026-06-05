@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发预加载资源接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-cloud-interdev
+format: md
 ---
+
 
 使用预加载服务之前，开发者需要完成云侧接口的开发，以提供预加载所需的资源数据。华为提供两种方式供开发者选择：云函数和开发者服务器，开发者可根据实际业务需要进行选择。
 

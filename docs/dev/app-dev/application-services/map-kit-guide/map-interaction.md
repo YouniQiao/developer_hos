@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "地图交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-interaction
+format: md
 ---
+
 
 * **[控件交互](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-controls-and-interaction)**
 * **[手势交互](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-controls-and-gestures)**

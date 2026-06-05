@@ -1,7 +1,9 @@
 ---
 title: "常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-products-faq-0000002320646025
+format: md
 ---
+
 
 | 问题/需求描述 | 意见 |
 | --- | --- |

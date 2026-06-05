@@ -2,7 +2,9 @@
 title: "旋转动画&lt;RotationAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/rotationanimation-0000001073889866
+format: md
 ---
+
 
 # 旋转动画&lt;RotationAnimation&gt;
 

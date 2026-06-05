@@ -2,7 +2,9 @@
 title: "更新商品库"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa5-0000001286023250
+format: md
 ---
+
 # 更新商品库
 
 您通过本接口可以更新商品库。

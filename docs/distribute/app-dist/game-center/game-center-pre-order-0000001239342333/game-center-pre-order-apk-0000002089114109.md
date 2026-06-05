@@ -2,7 +2,9 @@
 title: "游戏预约（APK）"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-apk-0000002089114109
+format: md
 ---
+
 
 # 游戏预约（APK）
 

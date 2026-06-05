@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Weex框架+H5接入智能填充"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-weex
+format: md
 ---
+
 
 ![](./img/6b1c17ee.png)
 

@@ -2,7 +2,9 @@
 title: "术语介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-introduce-0000001174597581
+format: md
 ---
+
 # 术语介绍
 
 | <strong>术语</strong> | <strong>详细描述</strong> |

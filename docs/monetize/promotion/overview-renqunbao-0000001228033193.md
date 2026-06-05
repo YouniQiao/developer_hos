@@ -2,7 +2,9 @@
 title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/overview-renqunbao-0000001228033193
+format: md
 ---
+
 # 概述
 
 ## 概述

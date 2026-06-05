@@ -1,7 +1,9 @@
 ---
 title: "ServiceAbility的生命周期"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-lifecycle
+format: md
 ---
+
 
 开发者可以根据业务场景实现service.js/service.ets中的生命周期相关接口。ServiceAbility生命周期接口说明见下表。
 

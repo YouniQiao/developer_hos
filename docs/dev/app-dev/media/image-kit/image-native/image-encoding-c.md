@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图片编码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding-native
+format: md
 ---
+
 
 ![](./img/559204d3.png)
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "地图数据版权声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-privacy
+format: md
 ---
+
 
 TomTom Data
 
@@ -10,7 +12,7 @@ TomTom Data
 
 OSM Data
 
-Contains map data © OpenStreetMap contributors. More information can be found here: <https://www.openstreetmap.org/copyright>.
+Contains map data © OpenStreetMap contributors. More information can be found here: https://www.openstreetmap.org/copyright.
 
 NAVINFO Data
 

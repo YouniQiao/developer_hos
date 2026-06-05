@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "React Native框架+H5接入智能填充"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-reactnative
+format: md
 ---
+
 
 ![](./img/4f6a059c.png)
 

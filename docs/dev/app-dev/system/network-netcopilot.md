@@ -1,7 +1,9 @@
 ---
 title: "netcopilot工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-netcopilot
+format: md
 ---
+
 
 netcopilot是一款帮助开发者进行网络模拟的工具，通过hdc命令行直接调用网络领航员接口，执行网络领航员请求，目前已支持预置场景场景调用和自定义场景调用。
 
@@ -31,7 +33,7 @@ hdc shell netcopilot <命令行参数> <子参数>
 | -s | 场景id | 启动场景模拟 | 允许在不同场景间直接切换；  场景模拟需要满足对应网卡要求，进出电梯、离家断开WLAN、到家连接WLAN场景需要同时连接WLAN和蜂窝网络；其他场景需要连接WLAN或蜂窝网络。 |
 | -c | 场景id | 取消场景模拟 | NA |
 | -P | 场景id | 打印自定义场景详情 | 仅支持自定义场景。 |
-| -a | 自定义场景详情 | 新增自定义场景 | 通过json字符串增加自定义场景，格式示例：  {  "scenarioName": "自定义场景",  "uplinkBandwidth": 1000000,  "downlinkBandwidth": 5000000,  "uplinkLatency": 200,  "downlinkLatency": 200,  "uplinkDropRate": 0.05,  "downlinkDropRate": 0.01  } |
+| -a | 自定义场景详情 | 新增自定义场景 | 通过json字符串增加自定义场景，格式示例：  \{  "scenarioName": "自定义场景",  "uplinkBandwidth": 1000000,  "downlinkBandwidth": 5000000,  "uplinkLatency": 200,  "downlinkLatency": 200,  "uplinkDropRate": 0.05,  "downlinkDropRate": 0.01  \} |
 | -d | 自定义场景id | 删除自定义场景 | 自定义场景id由网络领航员后端生成，通过-p查询列表获取id后，可以通过-d删除。 |
 
 ## 使用示例

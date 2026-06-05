@@ -4,6 +4,7 @@ title: "hdc list targets回显慢"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-76
 ---
 
+
 **问题现象**
 
 执行hdc list targets命令回显慢。

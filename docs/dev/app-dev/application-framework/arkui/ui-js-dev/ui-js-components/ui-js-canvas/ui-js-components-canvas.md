@@ -1,7 +1,9 @@
 ---
 title: "Canvas对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-canvas
+format: md
 ---
+
 
 Canvas组件提供画布，用于自定义绘制图形。具体用法请参考[CanvasRenderingContext2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-canvasrenderingcontext2d)。
 

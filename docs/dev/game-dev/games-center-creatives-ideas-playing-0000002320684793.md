@@ -2,7 +2,9 @@
 title: "在玩服务魔方创意"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-creatives-ideas-playing-0000002320684793
 has_merged_cells: true
+format: md
 ---
+
 
 在玩魔方创意是为[在玩服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-playing-operation-0000002285953818)提供的在线制作、轻松上手、简单轻量的设计网站。该网站支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计在玩的可视化H5落地页。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "更新企业公钥证书"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-update
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reco
 
 | 接口名 | 描述 |
 | --- | --- |
-| [updateEnterpriseCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate)(signature: Uint8Array, cert: Uint8Array): Promise<number> | 使用Promise方式更新证书。 |
+| [updateEnterpriseCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate)(signature: Uint8Array, cert: Uint8Array): Promise\<number\> | 使用Promise方式更新证书。 |
 
 ## 开发步骤
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "推送实况窗消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-update-liveview
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -159,7 +161,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push
      + activityId：实况活动ID。详情请参见[activityId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)。
      + operation：实况窗通知操作类型，0表示创建实况窗。详情请参见[operation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)。
      + event：实况窗消息具体场景类型，需要与应用实际申请通过的场景一致。例如：TAXI（出行打车）、FLIGHT（航班）等。通过Push Kit创建实况窗仅支持FLIGHT、TAXI、TRAIN、EXPRESS、CHECK\_IN五种场景。详情请参见[创建实况窗约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#创建实况窗约束)。
-     + status：表示实况窗消息状态。operation为0时必填，取值范围根据场景类型而定，详情见[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)，并且需要在[支持携带占位符的字段](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#支持携带占位符的字段)填入至少一次status的占位符{{status}}，Push Kit将替换占位符{{status}}为[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)中对应的值。
+     + status：表示实况窗消息状态。operation为0时必填，取值范围根据场景类型而定，详情见[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)，并且需要在[支持携带占位符的字段](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#支持携带占位符的字段)填入至少一次status的占位符\{\{status\}\}，Push Kit将替换占位符\{\{status\}\}为[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)中对应的值。
      + activityData：填写您项目中的实况窗数据。详情请参见[activityData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#activitydata)。
      + type：实况窗布局类型，有进度可视化类、强调文本类等。创建实况窗时每种event仅可使用特定的布局类型，详情请参见[创建实况窗约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#创建实况窗约束)。
      + token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)获取。
@@ -249,7 +251,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push
    * activityId：实况活动ID。详情请参见[activityId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)。
    * operation：实况窗通知操作类型，0表示创建实况窗，1表示更新实况窗，2表示结束实况窗。详情请参见[operation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)。
    * event：实况窗通知具体场景类型，需要与应用实际申请通过的场景一致。例如：TAXI（出行打车）、FLIGHT（航班）等。详情请参见[event](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)。
-   * status：表示实况窗消息状态。operation为1且更新的实况窗为通过Push Kit远程创建的实况窗时必填，取值范围根据场景类型而定，详情见[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)，并且需要在[支持携带占位符的字段](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#支持携带占位符的字段)填入至少一次status的占位符{{status}}，Push Kit将替换占位符{{status}}为[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)中对应的值。
+   * status：表示实况窗消息状态。operation为1且更新的实况窗为通过Push Kit远程创建的实况窗时必填，取值范围根据场景类型而定，详情见[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)，并且需要在[支持携带占位符的字段](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#支持携带占位符的字段)填入至少一次status的占位符\{\{status\}\}，Push Kit将替换占位符\{\{status\}\}为[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)中对应的值。
    * version：更新实况窗通知的版本号。详情请参见[version](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)。
    * activityData：填写您项目中的实况窗数据。详情请参见[activityData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#activitydata)。
    * type：实况窗布局类型，有进度可视化类、强调文本类等。详情请参见[type](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notificationdata)。

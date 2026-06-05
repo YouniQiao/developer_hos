@@ -1,7 +1,9 @@
 ---
 title: "使用HiSmartPerf采集jsvm trace"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-v8-trace
+format: md
 ---
+
 
 ## 简介
 

@@ -1,7 +1,9 @@
 ---
 title: "URL检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-urlthreat-check
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -31,7 +33,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [checkUrlThreat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#checkurlthreat)(req: [UrlCheckRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#urlcheckrequest)): Promise<[UrlCheckResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#urlcheckresponse)> | 检测URL风险 |
+| [checkUrlThreat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#checkurlthreat)(req: [UrlCheckRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#urlcheckrequest)): Promise[UrlCheckResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#urlcheckresponse) | 检测URL风险 |
 
 ## 开发步骤
 

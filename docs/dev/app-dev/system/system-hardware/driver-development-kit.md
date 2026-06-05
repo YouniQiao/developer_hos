@@ -1,7 +1,9 @@
 ---
 title: "Driver Development Kit（驱动开发服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driver-development-kit
+format: md
 ---
+
 
 * **[Driver Development Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driverdevelopment-overview)**
 * **[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/environmental-preparation)**

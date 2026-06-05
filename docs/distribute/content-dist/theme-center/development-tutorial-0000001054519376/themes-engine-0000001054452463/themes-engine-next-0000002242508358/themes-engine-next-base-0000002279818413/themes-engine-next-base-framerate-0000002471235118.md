@@ -2,7 +2,9 @@
 title: "适配功能：恒定帧率&lt;FrameRate&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-framerate-0000002471235118
+format: md
 ---
+
 
 # 适配功能：恒定帧率&lt;FrameRate&gt;
 

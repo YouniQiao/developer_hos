@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-for-in-array"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-for-in-array
 

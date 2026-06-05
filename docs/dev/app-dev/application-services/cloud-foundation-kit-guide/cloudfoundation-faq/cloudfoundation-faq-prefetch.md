@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "预加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-prefetch
+format: md
 ---
+
 
 * **[如何通过应用侧日志定位预加载问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-5)**
 * **[运行应用时提示“appid \*\*\*\* is not in white list, to skip”](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-3)**

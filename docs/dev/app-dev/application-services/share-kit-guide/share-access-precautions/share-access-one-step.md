@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "目标设备接收分享数据一步直达体验"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-one-step
+format: md
 ---
+
 
 为保证华为分享目标设备接收体验更优，规范分享数据接收时的直达体验，目标设备接收到分享数据后，将按照如下规则处理：
 

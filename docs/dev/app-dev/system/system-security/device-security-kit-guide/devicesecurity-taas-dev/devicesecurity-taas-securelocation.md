@@ -1,7 +1,9 @@
 ---
 title: "安全地理位置场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securelocation
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -46,11 +48,11 @@ try {
 
 | 接口名 | 描述 |
 | --- | --- |
-| [createAttestKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#createattestkey)(options: AttestOptions): Promise<void> | 创建证明密钥。 |
-| [initializeAttestContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#initializeattestcontext)(userData: string, options: AttestOptions): Promise<AttestReturnResult> | 初始化证明会话。 |
-| [finalizeAttestContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#finalizeattestcontext)(options: AttestOptions): Promise<void> | 结束证明会话。 |
-| [destroyAttestKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#destroyattestkey)(): Promise<void> | 销毁证明密钥。 |
-| [getCurrentSecureLocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#getcurrentsecurelocation)(timeout: number, priority: LocatingPriority): Promise<SecureLocation> | 获取安全地理位置信息。 |
+| [createAttestKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#createattestkey)(options: AttestOptions): Promise\<void\> | 创建证明密钥。 |
+| [initializeAttestContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#initializeattestcontext)(userData: string, options: AttestOptions): Promise\<AttestReturnResult\> | 初始化证明会话。 |
+| [finalizeAttestContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#finalizeattestcontext)(options: AttestOptions): Promise\<void\> | 结束证明会话。 |
+| [destroyAttestKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#destroyattestkey)(): Promise\<void\> | 销毁证明密钥。 |
+| [getCurrentSecureLocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-taas-api#getcurrentsecurelocation)(timeout: number, priority: LocatingPriority): Promise\<SecureLocation\> | 获取安全地理位置信息。 |
 
 ## 开发步骤
 

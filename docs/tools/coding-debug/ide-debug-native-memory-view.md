@@ -1,7 +1,9 @@
 ---
 title: "查看内存信息"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 查看内存信息
 

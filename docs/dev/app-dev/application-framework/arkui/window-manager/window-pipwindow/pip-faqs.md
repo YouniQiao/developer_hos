@@ -1,7 +1,9 @@
 ---
 title: "画中画常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pip-faqs
+format: md
 ---
+
 
 ## 画中画如何实现多个视频流播放
 

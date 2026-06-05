@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-associate-android-app-overview-0000002351878886
+format: md
 ---
+
 
 当您开发了HarmonyOS应用，而此应用有对应的Android版本，您可以将两者进行关联，关联成功后，当用户设备升级至HarmonyOS 5及以上版本时，可以快速将设备上的Android应用自动替换为HarmonyOS应用，并完成用户数据迁移。
 

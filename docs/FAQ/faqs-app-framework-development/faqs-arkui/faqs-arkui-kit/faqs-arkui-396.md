@@ -4,6 +4,7 @@ title: "如何实现在图片进行绘制马赛克的效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-396
 ---
 
+
 在图片上进行绘制马赛克的效果可通过以下步骤来实现。
 
 1. 给画布添加移动手势。

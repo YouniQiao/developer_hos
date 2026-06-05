@@ -1,7 +1,9 @@
 ---
 title: "SharedComponent查询"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-sharedcomponent-query-0000002530261177
+format: md
 ---
+
 
 查询SharedComponent需要创建专门的共享组件查询体，IQuery、QueryFilter等结构均有SharedComponent专用接口。
 

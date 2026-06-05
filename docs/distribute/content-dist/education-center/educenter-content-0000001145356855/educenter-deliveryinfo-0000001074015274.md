@@ -2,7 +2,9 @@
 title: "发货信息"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-deliveryinfo-0000001074015274
+format: md
 ---
+
 
 # 发货信息
 

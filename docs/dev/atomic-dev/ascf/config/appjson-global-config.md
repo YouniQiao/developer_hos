@@ -1,7 +1,9 @@
 ---
 title: "app.json全局配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/appjson-global-config
+format: md
 ---
+
 
 app.json用于描述整个工程的配置信息，基本配置示例如下：
 

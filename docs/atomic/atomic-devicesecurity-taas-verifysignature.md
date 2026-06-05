@@ -1,7 +1,9 @@
 ---
 title: "验证签名"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-taas-verifysignature
+format: md
 ---
+
 
 如果需要在端侧校验安全地理位置数据签名的有效性，可以使用[Crypto Architecture Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro)，使用方法请参考开发指南中“[使用ECDSA密钥对签名验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-ecdsa-sign-sig-verify)”章节。
 

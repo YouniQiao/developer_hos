@@ -1,7 +1,9 @@
 ---
 title: "版本说明"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 版本说明
 

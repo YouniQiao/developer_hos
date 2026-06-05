@@ -1,7 +1,9 @@
 ---
 title: "模拟点击检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-simulatedclickdetection
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -32,7 +34,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| detectSimulatedClickRisk(params: SimulatedClickDetectionRequest): Promise<string> | 模拟点击检测。 |
+| detectSimulatedClickRisk(params: SimulatedClickDetectionRequest): Promise\<string\> | 模拟点击检测。 |
 
 ## 开发步骤
 

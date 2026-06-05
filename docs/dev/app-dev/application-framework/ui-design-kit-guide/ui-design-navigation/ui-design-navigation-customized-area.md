@@ -1,7 +1,9 @@
 ---
 title: "设置自定义区域"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-customized-area
+format: md
 ---
+
 
 ## 场景介绍
 

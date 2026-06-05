@@ -1,7 +1,9 @@
 ---
 title: "管理组件拥有的状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-component-state-management
+format: md
 ---
+
 
 * **[@State装饰器：组件内状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)**
 * **[@Prop装饰器：父子单向同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)**

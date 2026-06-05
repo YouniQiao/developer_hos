@@ -2,7 +2,9 @@
 title: "充电动效换肤&lt;ChargingSkin&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-charging-0000002490002440
+format: md
 ---
+
 
 # 充电动效换肤&lt;ChargingSkin&gt;
 

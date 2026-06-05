@@ -1,7 +1,9 @@
 ---
 title: "Profile Manager"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Profile Manager
 

@@ -4,6 +4,7 @@ title: "DevEco Studio上使用生成NAPI功能时， 提示“Could not find usa
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-15
 ---
 
+
 **问题现象**
 
 右键单击函数， 在弹出的菜单中依次选择 Generate... > NAPI， 生成胶水代码报错。

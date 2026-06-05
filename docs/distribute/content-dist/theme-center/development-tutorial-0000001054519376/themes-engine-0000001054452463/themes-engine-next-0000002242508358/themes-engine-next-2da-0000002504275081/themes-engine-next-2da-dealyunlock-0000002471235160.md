@@ -2,7 +2,9 @@
 title: "延时解锁"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2da-dealyunlock-0000002471235160
+format: md
 ---
+
 
 # 延时解锁
 

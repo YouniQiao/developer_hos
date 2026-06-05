@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/brace-style"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/brace-style
 

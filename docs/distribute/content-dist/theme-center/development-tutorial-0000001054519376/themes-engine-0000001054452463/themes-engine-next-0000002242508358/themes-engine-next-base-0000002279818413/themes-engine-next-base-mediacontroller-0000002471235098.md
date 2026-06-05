@@ -2,7 +2,9 @@
 title: "数据开放：音乐数据开放&lt;MediaController&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-mediacontroller-0000002471235098
+format: md
 ---
+
 
 # 数据开放：音乐数据开放&lt;MediaController&gt;
 

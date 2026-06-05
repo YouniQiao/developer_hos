@@ -1,7 +1,9 @@
 ---
 title: "SQLite调试工具指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sqlite-database-debug-tool
+format: md
 ---
+
 
 SQLite是一款轻量级、嵌入式、无服务器的关系型数据库管理系统，其核心优势在于将整个数据库存储于单一文件中，无需独立服务器进程，支持跨平台运行，被广泛应用于移动应用、嵌入式设备和桌面软件等场景。
 

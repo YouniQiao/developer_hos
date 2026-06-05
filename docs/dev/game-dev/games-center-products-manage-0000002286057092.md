@@ -1,7 +1,9 @@
 ---
 title: "商品管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-products-manage-0000002286057092
+format: md
 ---
+
 
 * **[创建数字商品](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-create-digital-products-0000002286076724)**
 * **[提交数字商品审核](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-submit-digital-products-for-review-0000002320572925)**

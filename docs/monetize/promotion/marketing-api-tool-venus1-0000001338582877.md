@@ -2,7 +2,9 @@
 title: "查询维纳斯落地页列表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-venus1-0000001338582877
+format: md
 ---
+
 # 查询维纳斯落地页列表
 
 您通过本接口可以获取维纳斯落地页列表。

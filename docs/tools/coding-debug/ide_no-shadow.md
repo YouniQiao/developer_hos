@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-shadow"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-shadow
 

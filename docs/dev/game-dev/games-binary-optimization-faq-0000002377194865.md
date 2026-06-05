@@ -1,7 +1,9 @@
 ---
 title: "二进制优化服务FAQ"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-faq-0000002377194865
+format: md
 ---
+
 
 ## 如何对现网优化后的release包进行堆栈恢复？
 

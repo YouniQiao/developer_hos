@@ -1,7 +1,9 @@
 ---
 title: "如何获取窗口的宽度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-200
+format: md
 ---
+
 
 可以通过getWindowProperties接口获取窗口属性。窗口属性的windowRect表示窗口尺寸。参考代码如下：
 

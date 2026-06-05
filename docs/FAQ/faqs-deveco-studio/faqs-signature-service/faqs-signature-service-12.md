@@ -4,6 +4,7 @@ title: "签名密钥库文件与JDK版本不兼容"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-12
 ---
 
+
 **问题现象**
 
 打包签名提示“**init keystore failed : parseAlgParameters failed:ObjectIdentifier()**”错误。

@@ -4,6 +4,7 @@ title: "如何去除Tabs组件两侧的蒙层"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-56
 ---
 
+
 Tabs组件的fadingEdge属性表示页签超过容器宽度时是否渐隐消失，默认值为true，设置为false时则直接截断显示，不产生任何渐变效果。
 
 ```

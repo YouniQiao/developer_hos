@@ -1,7 +1,9 @@
 ---
 title: "启动本地PageAbility"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-local-pageability
+format: md
 ---
+
 
 PageAbility相关的能力通过featureAbility提供，启动本地Ability通过featureAbility中的startAbility接口实现。
 

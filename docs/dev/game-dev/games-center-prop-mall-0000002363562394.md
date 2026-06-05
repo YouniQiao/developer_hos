@@ -2,7 +2,9 @@
 title: "游戏道具商城"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-prop-mall-0000002363562394
 has_merged_cells: true
+format: md
 ---
+
 
 ## 概述
 

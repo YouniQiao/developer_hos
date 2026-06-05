@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "实现应用图标动态切换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-appinfo-use
+format: md
 ---
+
 
 AppGallery Kit为使用动态图标的应用客户端提供查询动态图标信息、切换动态图标、恢复默认图标功能。
 
@@ -58,9 +60,9 @@ AppGallery Kit为使用动态图标的应用客户端提供查询动态图标信
 
 | 接口名 | 描述 |
 | --- | --- |
-| [queryDynamicIcons](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerquerydynamicicons)(): Promise<[DynamicIconInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#dynamiciconinfo)[]> | 查询动态图标信息接口，用于查询动态图标信息。 |
-| [selectDynamicIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerselectdynamicicon)(iconId: string): Promise<void> | 切换动态图标接口，用于切换动态图标。 |
-| [disableDynamicIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerdisabledynamicicon)(): Promise<void> | 禁用动态图标接口，用于停止动态图标，恢复默认图标。 |
+| [queryDynamicIcons](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerquerydynamicicons)(): Promise[DynamicIconInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#dynamiciconinfo)[] | 查询动态图标信息接口，用于查询动态图标信息。 |
+| [selectDynamicIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerselectdynamicicon)(iconId: string): Promise\<void\> | 切换动态图标接口，用于切换动态图标。 |
+| [disableDynamicIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/appgallery-appinfomanager#appinfomanagerdisabledynamicicon)(): Promise\<void\> | 禁用动态图标接口，用于停止动态图标，恢复默认图标。 |
 
 ![](./img/feb0f540.png)
 

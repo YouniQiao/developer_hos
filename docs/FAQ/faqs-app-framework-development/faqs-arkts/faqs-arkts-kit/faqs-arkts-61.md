@@ -4,6 +4,7 @@ title: "如何合并两个对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-61
 ---
 
+
 出于性能考虑，ArkTS限制了ES6的Object.assign()方法。若需在ArkTS文件中扩展对象属性或合并两个对象，可以自行实现assign方法。
 
 1. 自定义assign方法

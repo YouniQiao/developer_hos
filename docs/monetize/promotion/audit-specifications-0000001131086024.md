@@ -2,7 +2,9 @@
 title: "审核规范"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/audit-specifications-0000001131086024
+format: md
 ---
+
 # 审核规范
 
 <strong>【活动应用】：</strong>华为应用市场在架应用。

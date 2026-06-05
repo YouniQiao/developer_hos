@@ -1,7 +1,9 @@
 ---
 title: "管理应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-manageapp-0000002578460771
+format: md
 ---
+
 
 在云调试服务主界面，选择“我的信息”页签，您可以在下方“应用”页签上传、删除应用，或是查看已上传应用的相关信息。
 

@@ -1,7 +1,9 @@
 ---
 title: "如何让事件只在一个UIAbility实例中传递"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit-2
+format: md
 ---
+
 
 在UIAbility中使用EventHub订阅事件，EventHub模块提供了事件中心，订阅、取消订阅、触发事件的能力。
 

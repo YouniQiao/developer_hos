@@ -2,7 +2,9 @@
 title: "介绍"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-introduction-0000002396466992
+format: md
 ---
+
 
 # 介绍
 

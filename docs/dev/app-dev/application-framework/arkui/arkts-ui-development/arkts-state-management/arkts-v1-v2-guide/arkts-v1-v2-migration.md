@@ -1,7 +1,9 @@
 ---
 title: "V1-V2迁移概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration
+format: md
 ---
+
 
 ## 概述
 

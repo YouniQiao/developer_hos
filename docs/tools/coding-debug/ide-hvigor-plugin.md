@@ -1,7 +1,9 @@
 ---
 title: "开发Hvigor插件"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 开发Hvigor插件
 

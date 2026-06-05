@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图片解码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-native
+format: md
 ---
+
 
 ![](./img/a861b6db.png)
 

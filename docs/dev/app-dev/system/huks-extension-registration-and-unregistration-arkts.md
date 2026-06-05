@@ -1,7 +1,9 @@
 ---
 title: "注册/注销Provider(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-registration-and-unregistration-arkts
+format: md
 ---
+
 
 从API 22开始，huksExternalCrypto提供Provider注册和注销功能接口。
 

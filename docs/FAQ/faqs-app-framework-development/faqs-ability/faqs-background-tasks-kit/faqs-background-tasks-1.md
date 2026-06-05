@@ -4,6 +4,7 @@ title: "如何在Stage模型中创建后台任务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-1
 ---
 
+
 **问题现象**
 
 在Stage模型中创建后台任务，可以使用系统提供的API，但第三方应用不支持调用ServiceExtensionAbility。建议使用其他系统接口或方法来实现后台任务。

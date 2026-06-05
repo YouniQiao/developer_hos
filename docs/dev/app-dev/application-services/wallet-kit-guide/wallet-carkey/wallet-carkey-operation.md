@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "钥匙开通"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey-operation
+format: md
 ---
+
 
 钥匙开通分为添加钥匙和激活钥匙两步，整体交互流程图如下。相关接口定义请参照[钱包服务API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-walletpass)。
 

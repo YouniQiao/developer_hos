@@ -1,7 +1,9 @@
 ---
 title: "应用终止事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events
+format: md
 ---
+
 
 ## 概述
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "支付成功后没有收到回调？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-6
+format: md
 ---
+
 
 * 检查预下单传入的callbackUrl接口地址是否有效。
 * 检查服务器是否有允许清单等网络限制。

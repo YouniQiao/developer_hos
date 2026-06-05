@@ -2,7 +2,9 @@
 title: "服务商账户注册"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-service-provider-register-0000001328677530
+format: md
 ---
+
 # 服务商账户注册
 
 ## 概述

@@ -1,7 +1,9 @@
 ---
 title: "ohpm命令公共错误码"
 displayed_sidebar: ohpmSidebar
+format: md
 ---
+
 
 # ohpm命令公共错误码
 

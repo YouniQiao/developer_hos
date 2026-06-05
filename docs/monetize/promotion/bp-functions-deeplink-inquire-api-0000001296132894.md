@@ -2,7 +2,9 @@
 title: "通过API接口查询(方式二)"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-inquire-api-0000001296132894
+format: md
 ---
+
 # 通过API接口查询(方式二)
 
 ## 功能介绍
@@ -35,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-function
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-token-0000001238324536)中获取的access\_token。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\\{access\_token\\}”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-token-0000001238324536)中获取的access\_token。 |
 
 ![](./img/e57bd6d73bfe.png) 
 

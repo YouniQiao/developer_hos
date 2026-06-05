@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Graphics Accelerate Kit（图形加速服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-kit-guide
+format: md
 ---
+
 
 * **[Graphics Accelerate Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-introduction)**
 * **[游戏渲染加速服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-rendering)**

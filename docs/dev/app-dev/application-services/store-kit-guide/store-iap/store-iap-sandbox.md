@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "测试数字商品服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-sandbox
+format: md
 ---
+
 
 沙盒测试允许开发者在接入数字商品服务的调测过程中无需真实付款即可完成数字商品的购买等相关测试。
 

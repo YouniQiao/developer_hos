@@ -4,6 +4,7 @@ title: "Tabs导航页签栏如何根据Tabbar数均匀设置宽度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-474
 ---
 
+
 可以通过设置TabBar布局模式枚举中的BarMode.Fixed来动态均分Tab导航栏宽度，示例代码如下：
 
 ```

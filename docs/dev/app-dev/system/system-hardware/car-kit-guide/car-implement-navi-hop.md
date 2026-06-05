@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "实现车机导航流转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-implement-navi-hop
+format: md
 ---
+
 
 * **[导航流转至车机](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-navi-hop)**
 * **[地址流转至车机](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-address-hop)**

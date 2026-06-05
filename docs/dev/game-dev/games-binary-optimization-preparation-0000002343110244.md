@@ -1,7 +1,9 @@
 ---
 title: "准备工作"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-preparation-0000002343110244
+format: md
 ---
+
 
 * **[AGC控制台准备](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-agc-works-0000002342950440)**
 * **[环境准备](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-environment-0000002377148261)**

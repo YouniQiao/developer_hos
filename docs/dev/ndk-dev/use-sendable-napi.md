@@ -1,7 +1,9 @@
 ---
 title: "Native与Sendable ArkTS对象绑定"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-sendable-napi
+format: md
 ---
+
 
 ## 场景介绍
 

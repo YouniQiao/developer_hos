@@ -2,7 +2,9 @@
 title: "鲸鸿动能广告网站使用条款"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-website-terms-of-use-0000001313876873
+format: md
 ---
+
 # 鲸鸿动能广告网站使用条款
 
 <strong>鲸鸿动能广告</strong> <strong>网站使用条款</strong>

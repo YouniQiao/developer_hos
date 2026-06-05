@@ -1,7 +1,9 @@
 ---
 title: "常见基本功能问题汇总"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-common-basic
+format: md
 ---
+
 
 ## 模块加载失败，报错信息显示Error message: is not callable.
 

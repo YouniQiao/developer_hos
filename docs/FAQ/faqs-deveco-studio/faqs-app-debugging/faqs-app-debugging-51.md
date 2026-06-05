@@ -4,6 +4,7 @@ title: "如何解决调试启动时，一直卡在Waiting for application to com
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-51
 ---
 
+
 这种情况可能是由以下条件触发的：
 
 * 调试侧拿到的还是旧的进程pid

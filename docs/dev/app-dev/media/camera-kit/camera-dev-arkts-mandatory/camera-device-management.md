@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "相机管理(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-management
+format: md
 ---
+
 
 在开发一个相机应用前，需要先通过调用相机接口来创建一个相机管理实例。
 

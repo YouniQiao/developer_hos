@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文本"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text
+format: md
 ---
+
 
 * **[文本开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-overview)**
 * **[字体管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/font-manager)**

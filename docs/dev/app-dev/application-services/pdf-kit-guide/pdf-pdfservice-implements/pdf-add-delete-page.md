@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "添加、删除PDF页"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-delete-page
+format: md
 ---
+
 
 在PDF文档中添加或删除页面，包括：
 

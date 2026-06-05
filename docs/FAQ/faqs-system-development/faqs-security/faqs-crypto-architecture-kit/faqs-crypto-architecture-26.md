@@ -1,7 +1,9 @@
 ---
 title: "如何存储公钥"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-26
+format: md
 ---
+
 
 1、可以将公钥转换为十六进制或Base64格式进行存储。
 

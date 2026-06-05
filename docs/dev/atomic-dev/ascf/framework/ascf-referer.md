@@ -1,7 +1,9 @@
 ---
 title: "防盗链能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-referer
+format: md
 ---
+
 
 ASCF元服务中所有网络请求的请求头中referer字段都不可设置，包括网络请求接口、涉及网络请求的组件（如image组件、video组件）。
 

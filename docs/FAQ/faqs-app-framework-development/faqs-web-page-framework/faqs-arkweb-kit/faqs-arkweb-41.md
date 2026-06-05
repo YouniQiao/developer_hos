@@ -1,7 +1,9 @@
 ---
 title: "在Web组件的H5页面中，如何使用a标签实现打开各种页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-41
+format: md
 ---
+
 
 情况一：跳转本应用的ArkTS页面
 

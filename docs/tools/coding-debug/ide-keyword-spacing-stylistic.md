@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/keyword-spacing"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/keyword-spacing
 

@@ -1,7 +1,9 @@
 ---
 title: "迁移模式设置 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-reporthandovermode-c
+format: md
 ---
+
 
 ## 场景介绍
 

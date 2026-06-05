@@ -1,7 +1,9 @@
 ---
 title: "核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-recordal-0000002425133922
+format: md
 ---
+
 
 ## 仅需在华为接入商核准（备案）快游戏，还是所有接入商都要核准（备案）？
 

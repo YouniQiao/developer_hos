@@ -1,7 +1,9 @@
 ---
 title: "回归测试"
 displayed_sidebar: devecoTestingSidebar
+format: md
 ---
+
 
 # 回归测试
 

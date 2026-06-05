@@ -1,7 +1,9 @@
 ---
 title: "配置签名和指纹"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-sign-fingerprints
+format: md
 ---
+
 
 请先参考“ **[元服务开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation)** ”章节，完成以下操作步骤：
 

@@ -2,7 +2,9 @@
 title: "适配功能：可变帧率&lt;VariableFramerate&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-variableframerate-0000002504354979
+format: md
 ---
+
 
 # 适配功能：可变帧率&lt;VariableFramerate&gt;
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "适配不同折叠状态的摄像头变更(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-foldable-display
+format: md
 ---
+
 
 折叠设备形态各异，在相机应用的开发过程中需要统一的摄像头切换方案，以确保用户在拍照、录像过程中获得更好的体验。
 

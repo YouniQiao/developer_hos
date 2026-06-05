@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/comma-dangle"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/comma-dangle
 

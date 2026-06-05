@@ -1,7 +1,9 @@
 ---
 title: "分布式文件系统概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-fs-overview
+format: md
 ---
+
 
 分布式文件系统（hmdfs，HarmonyOS Distributed File System）提供跨设备的文件访问能力，适用于以下场景：
 

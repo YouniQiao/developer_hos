@@ -1,7 +1,9 @@
 ---
 title: "状态栏与页面内容发生重叠，如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-357
+format: md
 ---
+
 
 **问题描述**
 

@@ -4,6 +4,7 @@ title: "如何监听音频输出设备变更信息以作为应用处理自动暂
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-17
 ---
 
+
 **问题现象**
 
 使用audioRoutingManager.on('deviceChange')监听设备连接状态变化，导致正常播放时，应用无故自动暂停。

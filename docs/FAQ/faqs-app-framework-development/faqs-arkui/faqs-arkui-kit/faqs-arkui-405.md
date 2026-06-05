@@ -4,6 +4,7 @@ title: "Navigation路由，如何快速实现RouterMap注册转为wrapBuilder注
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-405
 ---
 
+
 可以使用自定义路由表，基本实现跟Router路由类似。
 
 开发者自定义路由管理模块，各个提供路由页面的模块均需要依赖此模块。构建Navigation组件时，将NavPathStack注入路由管理模块，路由管理模块对NavPathStack进行封装，对外提供路由能力。各个路由页面不再直接提供组件，而是提供@Builder封装的构建函数。这些构建函数通过WrappedBuilder进行全局封装。然后，各个路由页面需要将模块名称、路由名称以及封装后的WrappedBuilder构建函数注册到路由模块。

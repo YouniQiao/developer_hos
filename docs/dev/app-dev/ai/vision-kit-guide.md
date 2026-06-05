@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Vision Kit（场景化视觉服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-kit-guide
+format: md
 ---
+
 
 * **[Vision Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-introduction)**
 * **[人脸活体检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-interactiveliveness)**

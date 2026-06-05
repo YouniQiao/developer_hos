@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取云侧文件的元数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-getmetadata
+format: md
 ---
+
 
 文件元数据包含云侧文件名、文件大小、文件类型等常用属性，也包括用户自定义的文件属性。
 

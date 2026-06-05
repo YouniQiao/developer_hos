@@ -1,7 +1,9 @@
 ---
 title: "离开队伍"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-leavegroup-csharp-0000002395350469
+format: md
 ---
+
 
 当游戏未开始时，进入队伍的玩家均可选择离开当前队伍。
 

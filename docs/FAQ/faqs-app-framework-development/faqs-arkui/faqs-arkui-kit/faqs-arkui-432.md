@@ -4,6 +4,7 @@ title: "Navigation组件，使用customNavContentTransition自定义转场动效
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-432
 ---
 
+
 **问题描述**
 
 使用Navigation作为路由框架之后，默认Component跳转是有右进右出的动画的。 但是dialog以及从dialog中再跳转其他page是没有动画的。

@@ -1,7 +1,9 @@
 ---
 title: "转移核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-transfer
+format: md
 ---
+
 
 在华为云核准（备案系）统中将主体及主体下的互联网信息全部转移到目标账号下。操作步骤如下：
 

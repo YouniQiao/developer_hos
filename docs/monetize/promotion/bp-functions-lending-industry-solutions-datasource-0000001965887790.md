@@ -2,7 +2,9 @@
 title: "创建解决方案数据源"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-lending-industry-solutions-datasource-0000001965887790
+format: md
 ---
+
 # 创建解决方案数据源
 
 贷款行业解决方案的数据源与外部通用数据源隔离，需在【解决方案】-【贷款行业解决方案】完成数据源创建。

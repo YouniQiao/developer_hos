@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/restrict-plus-operands"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/restrict-plus-operands
 

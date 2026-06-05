@@ -1,7 +1,9 @@
 ---
 title: "C API兼容性保护"
 displayed_sidebar: appCompatibilitySidebar
+format: md
 ---
+
 
 # C API兼容性保护
 

@@ -1,7 +1,9 @@
 ---
 title: "分包"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-subcontract
+format: md
 ---
+
 
 HarmonyOS应用程序包支持多模块开发，生成的应用程序包（.app）可以包含多个HAP或HSP。元服务为了实现快速启动效果，对HAP和HSP文件大小做了限制，同时优化了元服务启动机制。元服务的这种多模块开发方式称为“分包”。
 

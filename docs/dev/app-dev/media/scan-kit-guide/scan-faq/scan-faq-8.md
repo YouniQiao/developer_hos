@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义界面扫码预览画面出现拉伸"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-8
+format: md
 ---
+
 
 **问题现象**
 

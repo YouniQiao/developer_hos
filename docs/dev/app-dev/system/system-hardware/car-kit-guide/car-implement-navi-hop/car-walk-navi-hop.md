@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "下车步行导航流转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-walk-navi-hop
+format: md
 ---
+
 
 支持将车机指定的地图应用的步行导航数据流转至手机。
 

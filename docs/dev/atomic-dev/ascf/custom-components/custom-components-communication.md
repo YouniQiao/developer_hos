@@ -1,7 +1,9 @@
 ---
 title: "组件之间通信"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-communication
+format: md
 ---
+
 
 组件间的基本通信方式有三种:
 

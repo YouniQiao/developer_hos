@@ -1,7 +1,9 @@
 ---
 title: "如何实现组件动态上下树"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-364
+format: md
 ---
+
 
 可以通过ArkUI的NodeController模块，创建控制器管理绑定的[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer#nodecontainer-1)组件，通过NodeController的rebuild()方法进行回调的触发，从而实现组件动态上下树，具体请参考如下代码：
 

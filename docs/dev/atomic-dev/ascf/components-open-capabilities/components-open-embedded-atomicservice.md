@@ -1,7 +1,9 @@
 ---
 title: "open-embedded-atomicservice"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-open-embedded-atomicservice
+format: md
 ---
+
 
 当元服务需要打开另一个元服务让用户进行快捷操作时，可使用该组件将要打开的元服务以半屏形式跳转。
 

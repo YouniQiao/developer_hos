@@ -1,7 +1,9 @@
 ---
 title: "ArkTS卡片适配常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-adapt-faq
+format: md
 ---
+
 
 ## ArkTS卡片开发是否支持V2装饰器？如何从V1到V2迁移？
 

@@ -1,7 +1,9 @@
 ---
 title: "适配加密分享"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dlp-adapting-encrypted-sharing
+format: md
 ---
+
 
 ## 介绍
 

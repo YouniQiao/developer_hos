@@ -4,6 +4,7 @@ title: "编译报错“No available entry module found”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-18
 ---
 
+
 **问题现象**
 
 DevEco Studio编译时出现“No available entry module found”错误。

@@ -1,7 +1,9 @@
 ---
 title: "主线程超时事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/main-thread-jank-events
+format: md
 ---
+
 
 * **[主线程超时事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events)**
 * **[订阅主线程超时事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-arkts)**

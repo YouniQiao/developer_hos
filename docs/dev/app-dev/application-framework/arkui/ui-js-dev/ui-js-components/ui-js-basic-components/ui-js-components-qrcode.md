@@ -1,7 +1,9 @@
 ---
 title: "qrcode开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-qrcode
+format: md
 ---
+
 
 生成并显示二维码，具体用法请参考[qrcode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-qrcode)。
 

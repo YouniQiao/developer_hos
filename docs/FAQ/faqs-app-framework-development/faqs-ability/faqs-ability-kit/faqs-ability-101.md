@@ -4,6 +4,7 @@ title: "如何判断应用当前在前台/后台"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-101
 ---
 
+
 可以通过以下两种方式获取：
 
 * 方案一：通过窗口的[on('windowStageEvent')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#onwindowstageevent9)接口，开启 WindowStage 生命周期变化的监听，获取当前的生命周期状态。

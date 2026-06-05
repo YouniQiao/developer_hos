@@ -4,6 +4,7 @@ title: "编译报错“This project is in the stage model and does not allow for
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-154
 ---
 
+
 **错误描述**
 
 Stage模型项目不得依赖FA模型模块。

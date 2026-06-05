@@ -2,7 +2,9 @@
 title: "整体创建流程"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/overall-creation-process-0000001176965769
+format: md
 ---
+
 # 整体创建流程
 
 - <strong>创建路径</strong>

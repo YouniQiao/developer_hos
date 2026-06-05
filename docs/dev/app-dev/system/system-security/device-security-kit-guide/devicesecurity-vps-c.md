@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "病毒防护服务管理(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-vps-c
+format: md
 ---
+
 
 ## 场景介绍
 

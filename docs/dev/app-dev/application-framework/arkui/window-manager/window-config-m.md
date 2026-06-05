@@ -1,7 +1,9 @@
 ---
 title: "窗口元数据配置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-config-m
+format: md
 ---
+
 
 ## metadata标签
 

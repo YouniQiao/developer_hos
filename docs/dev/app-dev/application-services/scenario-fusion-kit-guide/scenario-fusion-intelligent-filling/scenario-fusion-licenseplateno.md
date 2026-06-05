@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "推荐车牌号场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-licenseplateno
+format: md
 ---
+
 
 从5.1.0(18)开始，支持智能填充的推荐车牌号场景。
 

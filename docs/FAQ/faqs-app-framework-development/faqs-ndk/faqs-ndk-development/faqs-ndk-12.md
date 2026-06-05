@@ -4,9 +4,10 @@ title: "如何在Native侧添加debug版本声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-12
 ---
 
+
 **问题详情**
 
-尝试过在需要编译的库的build-profile.json5文件中，buildOptionSet字段中添加 { "name": "debug", "externalNativeOptions": { "arguments": "-DDEBUG=1" } } 或在buildOption.externalNativeOptions.arguments字段中设置"-DDEBUG=1"， 在使用debug模式运行时均不会执行#ifdef DEBUG中的语句。
+尝试过在需要编译的库的build-profile.json5文件中，buildOptionSet字段中添加 \{ "name": "debug", "externalNativeOptions": \{ "arguments": "-DDEBUG=1" \} \} 或在buildOption.externalNativeOptions.arguments字段中设置"-DDEBUG=1"， 在使用debug模式运行时均不会执行#ifdef DEBUG中的语句。
 
 **解决措施**
 

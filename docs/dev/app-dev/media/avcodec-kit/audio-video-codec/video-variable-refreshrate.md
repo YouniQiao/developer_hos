@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "视频可变帧率"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-variable-refreshrate
+format: md
 ---
+
 
 从API version 15开始，支持视频可变帧率。
 

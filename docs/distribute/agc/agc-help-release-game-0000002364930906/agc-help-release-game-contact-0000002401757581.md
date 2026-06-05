@@ -1,7 +1,9 @@
 ---
 title: "配置联系方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-contact-0000002401757581
+format: md
 ---
+
 
 若账号归属地为中国大陆，请填写游戏负责人的联系方式，方便审核人员与您沟通游戏上架的审核问题。
 

@@ -1,7 +1,9 @@
 ---
 title: "离开房间"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-leaveroom-js-0000002395190505
+format: md
 ---
+
 
 进入房间后，游戏未开始前，房间内玩家均可离开房间。
 

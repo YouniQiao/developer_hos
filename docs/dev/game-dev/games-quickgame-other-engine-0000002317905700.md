@@ -1,7 +1,9 @@
 ---
 title: "低版本引擎开发快游戏"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-other-engine-0000002317905700
+format: md
 ---
+
 
 ## 使用低于2.8.0版本的LayaAir开发快游戏
 

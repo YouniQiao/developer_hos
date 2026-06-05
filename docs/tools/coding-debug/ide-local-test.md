@@ -1,7 +1,9 @@
 ---
 title: "Local Test"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Local Test
 

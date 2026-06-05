@@ -2,7 +2,9 @@
 title: "金融"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-finance-0000001895426068
+format: md
 ---
+
 # 金融
 
 ## 金融行业通用审核规范

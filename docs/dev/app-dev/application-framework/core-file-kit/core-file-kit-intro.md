@@ -1,7 +1,9 @@
 ---
 title: "Core File Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-file-kit-intro
+format: md
 ---
+
 
 Core File Kit（文件基础服务）为开发者提供一套访问和管理应用文件和用户文件的能力。帮助用户更高效地管理、查找和备份各类文件，使用户能够轻松应对各种文件管理的需求。
 

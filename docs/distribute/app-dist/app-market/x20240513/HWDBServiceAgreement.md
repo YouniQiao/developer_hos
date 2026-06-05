@@ -2,7 +2,9 @@
 title: "华为开发者基础服务协议"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/hwdbserviceagreement
+format: md
 ---
+
 # 华为开发者基础服务协议
 
 点击下载[华为开发者基础服务协议](https://terms-drcn.platform.dbankcloud.cn/agreementservice/developer/getAgreementTemplate?agrType=1199&country=cn&language=zh_cn&version=2022071205)。

@@ -1,7 +1,9 @@
 ---
 title: "示例服务器开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sample-server-overview
+format: md
 ---
+
 
 示例服务器提供一个简易的升级包部署的服务器实例参考，用于搭建升级服务子系统的辅助验证环境。
 

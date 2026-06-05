@@ -2,7 +2,9 @@
 title: "问卷服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-questionnaire-0000002286057040
 has_merged_cells: true
+format: md
 ---
+
 
 为了改善用户体验，现华为平台开放问卷服务，您可以在不同的使用场景下自定义问卷内容，快速向用户分发问卷并在线收集问卷结果，提升您的工作效率。
 

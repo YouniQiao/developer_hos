@@ -1,7 +1,9 @@
 ---
 title: "系统事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-events
+format: md
 ---
+
 
 * **[崩溃事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crash-events)**
 * **[应用冻屏事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/freeze-events)**

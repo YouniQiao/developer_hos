@@ -4,6 +4,7 @@ title: "如何监听Tabs里面TabContent页面显示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-454
 ---
 
+
 **背景知识**
 
 TabContent将要显示的时候触发onWillShow回调。场景包括：

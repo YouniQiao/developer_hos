@@ -2,7 +2,9 @@
 title: "应用认领"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-claiming-0000001239525223
+format: md
 ---
+
 
 # 应用认领
 

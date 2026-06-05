@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "静默登录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-silent-login
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -36,7 +38,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/acco
 | --- | --- |
 | [createLoginWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#createloginwithhuaweiidrequest)(): [LoginWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#loginwithhuaweiidrequest) | 创建账号登录请求。[LoginWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#loginwithhuaweiidrequest)中的forceLogin参数用来控制当用户未登录华为账号时，是否强制拉起华为账号登录界面，静默登录场景设置为false。 |
 | [constructor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#constructor)(context?: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context)) | 创建登录请求Controller。 |
-| [executeRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#executerequest-1)(request: [AuthenticationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationrequest)): Promise<[AuthenticationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationresponse)> | 通过Promise方式执行登录操作。 |
+| [executeRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#executerequest-1)(request: [AuthenticationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationrequest)): Promise[AuthenticationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationresponse) | 通过Promise方式执行登录操作。 |
 
 ## 开发前提
 

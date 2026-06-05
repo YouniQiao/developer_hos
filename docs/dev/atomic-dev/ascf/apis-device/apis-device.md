@@ -1,7 +1,9 @@
 ---
 title: "设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-device
+format: md
 ---
+
 
 * **[网络](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-network-type)**
 * **[电话](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-telephony)**

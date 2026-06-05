@@ -1,7 +1,9 @@
 ---
 title: "网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-network-development
+format: md
 ---
+
 
 * **[网络管理开发概述](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-net-mgmt-overview)**
 * **[HTTP数据请求](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-http-request)**

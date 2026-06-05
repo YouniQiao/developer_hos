@@ -2,7 +2,9 @@
 title: "电商"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-ecommerce-0000001895426064
+format: md
 ---
+
 # 电商
 
 ## 法律法规审核规范

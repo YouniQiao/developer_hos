@@ -1,7 +1,9 @@
 ---
 title: "证书算法库框架概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certificate-framework-overview
+format: md
 ---
+
 
 证书算法库框架是一个屏蔽了第三方算法库实现差异的证书算法框架，向应用提供证书、证书扩展域段、证书吊销列表的创建、解析及校验能力，此外还提供了证书链的校验能力。
 

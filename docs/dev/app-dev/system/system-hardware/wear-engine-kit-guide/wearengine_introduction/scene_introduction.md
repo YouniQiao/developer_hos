@@ -1,7 +1,9 @@
 ---
 title: "场景介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scene_introduction
+format: md
 ---
+
 
 ## 手机与穿戴设备分布式协同
 

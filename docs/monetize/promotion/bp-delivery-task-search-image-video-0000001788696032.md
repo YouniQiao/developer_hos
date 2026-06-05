@@ -2,7 +2,9 @@
 title: "投放大卡智投任务"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-search-image-video-0000001788696032
+format: md
 ---
+
 # 投放大卡智投任务
 
 ## 背景信息

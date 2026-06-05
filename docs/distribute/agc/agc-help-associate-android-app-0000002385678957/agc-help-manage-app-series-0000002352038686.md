@@ -1,7 +1,9 @@
 ---
 title: "管理应用系列进行关联"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-manage-app-series-0000002352038686
+format: md
 ---
+
 
 应用系列是指您可将同一应用的不同变体（如：HarmonyOS版本、Android版本、元服务等不同格式），关联在同一个应用系列里面，有助于提升您的应用分发量及用户跳转体验。
 

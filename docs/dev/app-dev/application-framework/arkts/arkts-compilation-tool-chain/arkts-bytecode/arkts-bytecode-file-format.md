@@ -1,7 +1,9 @@
 ---
 title: "方舟字节码文件格式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format
+format: md
 ---
+
 
 本文详细介绍了方舟字节码文件的格式，旨在帮助开发者深入理解字节码文件的组成结构，以指导字节码的分析和修改。
 

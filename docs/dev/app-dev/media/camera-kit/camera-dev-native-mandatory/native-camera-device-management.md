@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "相机管理 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-management
+format: md
 ---
+
 
 在开发一个相机应用前，需要先通过调用相机接口来创建一个独立的相机设备。
 

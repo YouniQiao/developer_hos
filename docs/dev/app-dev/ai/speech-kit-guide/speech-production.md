@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Speech Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-production
+format: md
 ---
+
 
 Speech Kit（场景化语音服务）集成了语音类AI能力，包括朗读控件（TextReader）和AI字幕控件（AICaptionComponent）能力，便于用户与设备进行互动，为用户实现朗读文章。
 

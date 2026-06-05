@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用传输体验反馈 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-appreportqoe-c
+format: md
 ---
+
 
 ## 场景介绍
 

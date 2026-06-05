@@ -1,7 +1,9 @@
 ---
 title: "准备打包所需配置文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-internal-test-prepare-0000002262046566
+format: md
 ---
+
 
 为保证应用的完整性和来源的真实性，在打包时，您需要为应用进行签名。签名时，需要配置如下相关信息：
 

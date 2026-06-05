@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通知订阅扩展能力开发步骤"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-subscriber-extension-ability-development-steps
+format: md
 ---
+
 
 ## 接口说明
 
@@ -10,7 +12,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/noti
 | --- | --- |
 | [onDestroy(): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability#ondestroy) | 通知订阅扩展被销毁时的回调。 |
 | [onReceiveMessage(notificationInfo: NotificationInfo): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability#onreceivemessage) | 收到通知时的回调。 |
-| [onCancelMessages(hashCodes: Array<string>): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability#oncancelmessages) | 取消通知时的回调。 |
+| [onCancelMessages(hashCodes: Array\<string\>): void](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability#oncancelmessages) | 取消通知时的回调。 |
 
 ## 前提条件
 

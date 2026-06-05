@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用AVRecorder录制音频(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avrecorder-for-audio-recording
+format: md
 ---
+
 
 AVRecorder支持开发音频或视频单独录制，集成了音频捕获，音频编码，视频编码，音视频封装功能，适用于实现简单音视频录制并直接得到本地媒体文件的场景。
 

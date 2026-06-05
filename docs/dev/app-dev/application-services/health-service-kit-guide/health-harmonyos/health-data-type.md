@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "数据类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-type
+format: md
 ---
+
 
 * **[概要](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-type-summary)**
 * **[权限说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description)**

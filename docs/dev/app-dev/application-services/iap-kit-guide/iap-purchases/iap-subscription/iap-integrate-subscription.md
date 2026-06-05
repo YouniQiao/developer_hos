@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入自动续期订阅"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-subscription
+format: md
 ---
+
 
 ## 约束与限制
 

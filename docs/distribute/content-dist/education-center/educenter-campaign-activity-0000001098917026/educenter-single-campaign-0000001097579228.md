@@ -2,7 +2,9 @@
 title: "单品促销"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-single-campaign-0000001097579228
+format: md
 ---
+
 
 # 单品促销
 

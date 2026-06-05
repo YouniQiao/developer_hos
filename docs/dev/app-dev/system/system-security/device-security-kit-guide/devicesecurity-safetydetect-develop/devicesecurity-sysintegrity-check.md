@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "系统完整性检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-sysintegrity-check
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -50,7 +52,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [checkSysIntegrity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#checksysintegrity)(req: [SysIntegrityRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#sysintegrityrequest)): Promise<[SysIntegrityResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#sysintegrityresponse)> | 检测系统完整性 |
+| [checkSysIntegrity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#checksysintegrity)(req: [SysIntegrityRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#sysintegrityrequest)): Promise[SysIntegrityResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-safetydetectenhanced-api#sysintegrityresponse) | 检测系统完整性 |
 
 ## 开发步骤
 

@@ -1,7 +1,9 @@
 ---
 title: "DataAbility组件开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability
+format: md
 ---
+
 
 * **[DataAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-overview)**
 * **[DataAbility组件配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-configuration)**

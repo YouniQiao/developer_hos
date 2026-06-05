@@ -2,7 +2,9 @@
 title: "帧动画&lt;SourceAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2d-sourceanimation-0000002504354999
+format: md
 ---
+
 
 # 帧动画&lt;SourceAnimation&gt;
 

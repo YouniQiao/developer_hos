@@ -1,7 +1,9 @@
 ---
 title: "联运游戏接入流量变现服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-uni-access-ads-0000002320684797
+format: md
 ---
+
 
 鲸鸿动能流量变现服务（以下简称“流量变现服务”）依托华为强大的终端平台与数据能力为您提供App变现服务，您可以在App中向用户展示精准的、高价值的广告内容，并从中获取广告收益。
 

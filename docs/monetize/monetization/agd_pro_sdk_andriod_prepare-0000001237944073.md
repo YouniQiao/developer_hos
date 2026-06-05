@@ -2,7 +2,9 @@
 title: "集成接入前准备"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_prepare-0000001237944073
+format: md
 ---
+
 
 
 #### 注册认证

@@ -2,7 +2,9 @@
 title: "查询直客和子客广告主财务消耗"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-chaxunzhikehezikeguangaozhu-0000001832382165
+format: md
 ---
+
 # 查询直客和子客广告主财务消耗
 
 【简介】通过此接口可以查询直客和子客的现金消耗和返利金消耗数据。

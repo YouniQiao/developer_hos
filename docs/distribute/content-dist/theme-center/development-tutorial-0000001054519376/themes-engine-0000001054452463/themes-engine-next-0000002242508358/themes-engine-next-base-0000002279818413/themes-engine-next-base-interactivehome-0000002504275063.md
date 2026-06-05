@@ -2,7 +2,9 @@
 title: "适配功能：可交互桌面"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-interactivehome-0000002504275063
+format: md
 ---
+
 
 # 适配功能：可交互桌面
 

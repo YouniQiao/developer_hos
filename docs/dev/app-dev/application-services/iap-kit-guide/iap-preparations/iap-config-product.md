@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "配置商品信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product
+format: md
 ---
+
 
 在接入商品购买前，开发者需要在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中录入商品信息（包括商品ID、商品类型、不同国家/地区的商品价格、商品名称等）。在客户端调用购买接口时，只需传入此处配置的商品ID和商品类型，IAP Kit会根据用户当前的账号服务地自动展示对应国家/地区的商品信息（包括商品价格、商品名称等），无需开发者处理因账号所在服务地变动带来的商品价格适配问题。
 

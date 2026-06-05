@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "游戏渲染加速服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-rendering
+format: md
 ---
+
 
 * **[业务概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-overview)**
 * **[超帧功能开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg)**

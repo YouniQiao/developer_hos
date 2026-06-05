@@ -1,7 +1,9 @@
 ---
 title: "组件生命周期"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-lifecycle
+format: md
 ---
+
 
 组件的生命周期，指的是组件自身的一些方法会在组件生命流程特定的阶段触发。目前支持的生命周期包括 created、attached、ready、detached，具体说明如下：
 

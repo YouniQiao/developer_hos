@@ -1,7 +1,9 @@
 ---
 title: "互动卡片开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform
+format: md
 ---
+
 
 * **[互动卡片概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-overview)**
 * **[趣味交互类型互动卡片开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-funinteraction-development)**

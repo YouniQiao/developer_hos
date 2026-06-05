@@ -1,7 +1,9 @@
 ---
 title: "快游戏调试"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-debug-quickgame-0000002544859545
+format: md
 ---
+
 
 ## 前提条件
 

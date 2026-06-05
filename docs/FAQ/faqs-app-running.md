@@ -4,6 +4,7 @@ title: "应用运行"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running
 ---
 
+
 * **[登录华为开发者账号后，提示需要实名认证](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-1)**
 * **[在本地模拟器中卸载应用显示成功，但实际未卸载成功](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-4)**
 * **[运行工程到本地模拟器，提示“Failed to get the device apiVersion”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-5)**

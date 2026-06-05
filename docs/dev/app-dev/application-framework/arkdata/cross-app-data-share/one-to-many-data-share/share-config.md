@@ -1,7 +1,9 @@
 ---
 title: "应用间配置共享 (ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-config
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -30,22 +32,22 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/shar
 
 | 接口名称 | 描述 |
 | --- | --- |
-| createDataProxyHandle(): Promise<DataProxyHandle> | 创建数据代理操作句柄，可用于订阅、发布、获取等操作。 |
+| createDataProxyHandle(): Promise\<DataProxyHandle\> | 创建数据代理操作句柄，可用于订阅、发布、获取等操作。 |
 
 ### 配置发布方接口
 
 | 接口名称 | 描述 |
 | --- | --- |
-| publish(data: ProxyData[], config: DataProxyConfig): Promise<DataProxyResult[]> | 发布或修改配置项。 |
-| delete(uris: string[], config: DataProxyConfig): Promise<DataProxyResult[]> | 删除配置项。 |
+| publish(data: ProxyData[], config: DataProxyConfig): Promise\<DataProxyResult[]\> | 发布或修改配置项。 |
+| delete(uris: string[], config: DataProxyConfig): Promise\<DataProxyResult[]\> | 删除配置项。 |
 
 ### 配置访问方接口
 
 | 接口名称 | 描述 |
 | --- | --- |
-| get(uris: string[], config: DataProxyConfig): Promise<DataProxyGetResult[]> | 获取配置项信息。 |
-| on(event: 'dataChange', uris: string[], config: DataProxyConfig, callback: AsyncCallback<DataProxyChangeInfo[]>): DataProxyResult[] | 监听配置项变化。 |
-| off(event: 'dataChange', uris: string[], config: DataProxyConfig, callback?: AsyncCallback<DataProxyChangeInfo[]>): DataProxyResult[] | 取消监听配置项变化。 |
+| get(uris: string[], config: DataProxyConfig): Promise\<DataProxyGetResult[]\> | 获取配置项信息。 |
+| on(event: 'dataChange', uris: string[], config: DataProxyConfig, callback: AsyncCallback\<DataProxyChangeInfo[]\>): DataProxyResult[] | 监听配置项变化。 |
+| off(event: 'dataChange', uris: string[], config: DataProxyConfig, callback?: AsyncCallback\<DataProxyChangeInfo[]\>): DataProxyResult[] | 取消监听配置项变化。 |
 
 ## 配置发布方
 
@@ -67,7 +69,7 @@ crossAppSharedConfig字段配置说明：
 
 | 属性名称 | 含义 | 数据类型 | 必填 |
 | --- | --- | --- | --- |
-| uri | 共享配置项的全局唯一标识。固定格式为"datashareproxy://{bundleName}/{path}"，其中bundleName为配置发布方应用的bundleName，path可随意填写，但同一应用内不允许重复。uri最大长度为256字节。 | 字符串 | 是 |
+| uri | 共享配置项的全局唯一标识。固定格式为"datashareproxy://\{bundleName\}/\{path\}"，其中bundleName为配置发布方应用的bundleName，path可随意填写，但同一应用内不允许重复。uri最大长度为256字节。 | 字符串 | 是 |
 | value | 共享配置项的值，最大长度为4096字节。 | 字符串 | 是 |
 | allowList | 允许访问该共享配置项的应用程序列表。数组最大长度为256，超过256的部分不生效。数组中每个元素为应用的[appIdentifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appidentifier)，单个appIdentifier为只包含数字的字符串，最大长度为128字节，超过128字节的appIdentifier不会生效。可使用[getBundleInfoForSelf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforself)接口来获取当前应用的appIdentifier。 | 字符串数组 | 是 |
 
@@ -137,7 +139,7 @@ crossAppSharedConfig字段配置说明：
 
   
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataShare/ShareConfig/entry/src/main/ets/pages/Index.ets#L19-L55" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataShare/ShareConfig/entry/src/main/ets/pages/Index.ets#L19-L55" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 * 通过调用delete接口删除配置项。
 
@@ -166,7 +168,7 @@ crossAppSharedConfig字段配置说明：
 
   
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataShare/ShareConfig/entry/src/main/ets/pages/Index.ets#L57-L79" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataShare/ShareConfig/entry/src/main/ets/pages/Index.ets#L57-L79" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 
 ## 配置访问方
@@ -201,7 +203,7 @@ function getSharedConfig() {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataShare/ShareConfig/entry/src/main/ets/pages/Index.ets#L81-L103" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataShare/ShareConfig/entry/src/main/ets/pages/Index.ets#L81-L103" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 
 ### 监听/取消监听配置变化
@@ -244,4 +246,4 @@ function watchConfigChanges() {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataShare/ShareConfig/entry/src/main/ets/pages/Index.ets#L105-L139" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/DataShare/ShareConfig/entry/src/main/ets/pages/Index.ets#L105-L139" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>

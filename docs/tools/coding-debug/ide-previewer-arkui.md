@@ -1,7 +1,9 @@
 ---
 title: "查看ArkUI预览效果"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 查看ArkUI预览效果
 

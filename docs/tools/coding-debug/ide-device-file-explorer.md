@@ -1,7 +1,9 @@
 ---
 title: "访问设备文件"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 访问设备文件
 

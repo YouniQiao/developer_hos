@@ -4,6 +4,7 @@ title: "如何用hdc命令将本地文件发送至远端设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-17
 ---
 
+
 从本地向远端设备发送文件，命令格式如下：
 
 ```

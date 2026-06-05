@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Distributed Service Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributedservice-kit-intro
+format: md
 ---
+
 
 Distributed Service Kit（分布式管理服务）实现了分布式设备管理、分布式硬件管理、分布式键鼠穿越、分布式组件管理等能力。
 

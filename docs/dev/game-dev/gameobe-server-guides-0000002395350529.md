@@ -1,7 +1,9 @@
 ---
 title: "实时服务器开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-server-guides-0000002395350529
+format: md
 ---
+
 
 * **[业务概述](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-realtime-server-0000002361510716)**
 * **[准备工作](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-preparations-realtime-server-0000002395190633)**

@@ -1,7 +1,9 @@
 ---
 title: "连接网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit-network-connecttion
+format: md
 ---
+
 
 * **[管理网络连接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-connection-manager)**
 * **[管理网络连接(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-netmanager-guidelines)**

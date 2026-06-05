@@ -1,7 +1,9 @@
 ---
 title: "不同包类型的字节码混淆建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-practice
+format: md
 ---
+
 
 由于不同包类型的用途及构建流程的差异，开发者对不同包类型使用混淆有不同的注意事项。本文对[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)、[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)和[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)三种包类型分别提供建议，帮助开发者高效使用混淆。
 

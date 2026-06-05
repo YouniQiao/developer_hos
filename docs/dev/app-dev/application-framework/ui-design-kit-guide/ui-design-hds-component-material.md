@@ -1,7 +1,9 @@
 ---
 title: "沉浸光感"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-component-material
+format: md
 ---
+
 
 ## 场景介绍
 

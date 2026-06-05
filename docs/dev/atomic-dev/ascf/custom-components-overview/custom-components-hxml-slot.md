@@ -1,7 +1,9 @@
 ---
 title: "组件 hxml 的 slot"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-hxml-slot
+format: md
 ---
+
 
 在组件的 hxml 中可以使用 slot 插槽，来传递组件使用者提供的子节点内容。
 

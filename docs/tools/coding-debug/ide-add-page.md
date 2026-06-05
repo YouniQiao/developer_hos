@@ -1,6 +1,8 @@
 ---
 title: "添加Page"
+format: md
 ---
+
 
 # 添加Page
 

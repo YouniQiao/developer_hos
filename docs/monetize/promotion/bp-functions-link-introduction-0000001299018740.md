@@ -2,7 +2,9 @@
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-introduction-0000001299018740
+format: md
 ---
+
 # 业务介绍
 
 ![](./img/ce3bf0a33e64.png) 

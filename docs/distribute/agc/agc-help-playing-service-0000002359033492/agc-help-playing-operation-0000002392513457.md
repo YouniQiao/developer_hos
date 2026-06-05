@@ -1,7 +1,9 @@
 ---
 title: "在玩服务管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-playing-operation-0000002392513457
+format: md
 ---
+
 
 游戏中心【在玩】专区展示玩家已安装游戏的资讯、攻略、游戏资产、用户数据和小工具等信息。华为游戏中心向您开放自主管理在玩服务页面能力，您可以轻松更新相关内容，让玩家更好地了解和体验您的游戏。
 

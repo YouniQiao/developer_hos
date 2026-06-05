@@ -1,7 +1,9 @@
 ---
 title: "模块级build-profile.json5文件"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 模块级build-profile.json5文件
 
@@ -489,7 +491,7 @@ resOptions是资源编译配置项。
 | ignoreResourcePattern | 字符串数组 | 可选 | 根据glob语法，对资源目录resources或开发者自定义的资源目录下的文件/文件夹名称进行过滤，匹配到的文件不会被打包到产物中。  从DevEco Studio 5.1.1 Beta1版本开始支持。  说明：  * 如果规则中带有路径（例如./src/main/a.png），该规则不生效。 * 如果未配置该字段，打包HAP/HSP时存在默认的过滤规则：默认不打包.git、.svn、.scc、.ds\_store、desktop.ini、picasa.ini、cvs、thumbs.db以及以.开头的隐藏文件/目录和以~结尾的文件。 * 配置该字段后，会覆盖默认的过滤规则；如果字段配置为空数组，则不应用任何过滤规则，即全部资源都打包。 |
 | excludeHarRes | 字符串数组 | 可选 | 编译HAP/HSP模块时，指定不参与资源编译的三方HAR包的包名，配置后，依赖HAR包中的资源不会被打包到产物中，支持直接依赖和间接依赖。  从DevEco Studio 6.0.0 Beta2版本开始支持。  说明：  仅支持在HAP/HSP中配置。 |
 | includeAppScopeRes | 布尔值 | 可选 | 编译HSP时，是否将AppScope目录下的资源打包到产物中。   * true（缺省默认值）：打包。 * false：不打包。   从DevEco Studio 6.0.0 Beta2版本开始支持。  说明：  * 该字段仅对HSP模块生效。 * 配置为false后，app.json5的icon和label字段不再对HSP模块生效。 |
-| qualifiersConfig | 对象 | 可选 | 配置HAP/HSP模块的限定词目录，编译时会进行过滤，匹配到的限定词目录会被打包到产物中。支持六类限定词，具体请查看[表19](#table913204942018)，配置的目录要符合[限定词目录取值要求](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#限定词目录)。  如果某类限定词未配置过滤，则包含该类限定词的目录默认会打包。  从DevEco Studio 6.1.0 Beta1版本开始支持。  说明：  * qualifiersConfig不能为{}，至少配置一类限定词。 * 如果配置了限定词，取值不能为空数组[]，数组中的值不能为空字符串""。 * 仅支持Stage模型。 |
+| qualifiersConfig | 对象 | 可选 | 配置HAP/HSP模块的限定词目录，编译时会进行过滤，匹配到的限定词目录会被打包到产物中。支持六类限定词，具体请查看[表19](#table913204942018)，配置的目录要符合[限定词目录取值要求](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#限定词目录)。  如果某类限定词未配置过滤，则包含该类限定词的目录默认会打包。  从DevEco Studio 6.1.0 Beta1版本开始支持。  说明：  * qualifiersConfig不能为\{\}，至少配置一类限定词。 * 如果配置了限定词，取值不能为空数组[]，数组中的值不能为空字符串""。 * 仅支持Stage模型。 |
 
 <strong>表18</strong> copyCodeResource
 

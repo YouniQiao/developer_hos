@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "MCP协议上架指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-kit-listing-mcp-protocol
+format: md
 ---
+
 
 ## **意图注册配置操作步骤**
 

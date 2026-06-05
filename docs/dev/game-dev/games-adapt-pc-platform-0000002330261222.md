@@ -1,7 +1,9 @@
 ---
 title: "适配PC设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-adapt-pc-platform-0000002330261222
+format: md
 ---
+
 
 为了扩大游戏的使用范围，增加游戏的用户群体，提升游戏的市场竞争力，建议游戏适配PC设备。
 

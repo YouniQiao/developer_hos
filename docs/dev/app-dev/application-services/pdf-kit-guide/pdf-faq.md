@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "PDF Kit 常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-faq
+format: md
 ---
+
 
 * **[PDF Kit可以移除具体页面的页眉页脚、水印、背景吗？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-faq-4)**
 * **[PDF文档支持在线预览吗？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-faq-4-online-preview)**

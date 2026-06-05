@@ -1,7 +1,9 @@
 ---
 title: "云函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-overall-cloudfunction-0000002236332576
+format: md
 ---
+
 
 您可以在监控大盘的云函数详情页查看函数级和实例级两个维度的监控指标详情，然后根据指标统计数据判断是否需要优化函数实现。
 

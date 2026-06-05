@@ -2,7 +2,9 @@
 title: "弹窗背景、产品主题"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-guide-bg-0000002429946741
+format: md
 ---
+
 
 # 弹窗背景、产品主题
 

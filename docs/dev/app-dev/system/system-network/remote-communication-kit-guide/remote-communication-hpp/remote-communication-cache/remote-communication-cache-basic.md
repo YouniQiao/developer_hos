@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "HTTP缓存基本功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cache-basic
+format: md
 ---
+
 
 从6.0.0(20)开始，支持HTTP缓存。
 

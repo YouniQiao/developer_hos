@@ -4,6 +4,7 @@ title: "数据库查询失败 14800007"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-15
 ---
 
+
 **问题现象**
 
 使用rdbStore.querySql可以获取 20 条结果，但在调用resultSet.isColumnNull时出现报错，报错信息如下：

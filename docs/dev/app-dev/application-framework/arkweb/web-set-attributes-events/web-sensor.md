@@ -1,7 +1,9 @@
 ---
 title: "使用运动和方向传感器监测设备状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-sensor
+format: md
 ---
+
 
 ## 概述
 

@@ -1,7 +1,9 @@
 ---
 title: "bm工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool
+format: md
 ---
+
 
 Bundle Manager（包管理工具，简称bm）是实现应用安装、卸载、更新、查询等功能的工具，bm为开发者提供基本的应用安装包的调试能力。
 
@@ -801,7 +803,7 @@ error: install parse profile missing prop.
 
   落盘位置：/data/log/hilog。
 
-  打开日志查看“profile prop %{public}s is missing”。如“profile prop icon is missing”表示“icon”字段缺失。
+  打开日志查看“profile prop %\{public\}s is missing”。如“profile prop icon is missing”表示“icon”字段缺失。
 
 ### 9568258 安装应用的releaseType与已安装应用的releaseType不相同
 

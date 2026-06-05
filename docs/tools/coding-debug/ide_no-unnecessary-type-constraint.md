@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-unnecessary-type-constraint"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-unnecessary-type-constraint
 

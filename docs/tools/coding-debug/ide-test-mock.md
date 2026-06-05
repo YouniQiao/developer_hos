@@ -1,7 +1,9 @@
 ---
 title: "Mock能力"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Mock能力
 

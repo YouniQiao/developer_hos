@@ -2,7 +2,9 @@
 title: "游戏性能分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-game-performance-analysis-0000002332870901
 has_merged_cells: true
+format: md
 ---
+
 
 您可切换机型、版本、场景为展示依据，查看各性能指标的统计图表。通过配置具体数据粒度，可查看各指标时间趋势、周同比趋势及日同比趋势折线图，同时支持按机型、版本等条件筛选过滤数据。
 

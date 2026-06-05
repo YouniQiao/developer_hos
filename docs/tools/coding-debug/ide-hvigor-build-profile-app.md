@@ -1,7 +1,9 @@
 ---
 title: "工程级build-profile.json5文件"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 工程级build-profile.json5文件
 

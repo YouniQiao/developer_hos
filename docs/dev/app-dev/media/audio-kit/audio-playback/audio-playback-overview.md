@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音频播放开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview
+format: md
 ---
+
 
 ## 如何选择音频播放开发方式
 

@@ -2,7 +2,9 @@
 title: "错误码"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866
+format: md
 ---
+
 # 错误码
 
 | 错误码（errorCode） | 错误描述（errorMsg） |

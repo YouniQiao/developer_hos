@@ -4,6 +4,7 @@ title: "cd到SDK下toolchains目录，执行hdc list targets，错误提示comma
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-71
 ---
 
+
 **问题现象**
 
 在Linux/MacOS平台安装DevEco Studio工具，在安装目录下的toolchains子目录执行hdc命令提示command not found:hdc。

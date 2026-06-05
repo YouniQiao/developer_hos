@@ -1,7 +1,9 @@
 ---
 title: "安装应用程序包和上传文件"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 安装应用程序包和上传文件
 

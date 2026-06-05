@@ -1,7 +1,9 @@
 ---
 title: "文档生成"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 文档生成
 

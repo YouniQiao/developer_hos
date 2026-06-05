@@ -2,7 +2,9 @@
 title: "响应码说明"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/response-introduction-0000001226445586
+format: md
 ---
+
 
 # 响应码说明
 

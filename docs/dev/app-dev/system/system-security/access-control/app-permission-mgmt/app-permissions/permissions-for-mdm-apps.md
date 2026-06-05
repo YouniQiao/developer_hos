@@ -1,7 +1,9 @@
 ---
 title: "仅MDM应用可用权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-mdm-apps
+format: md
 ---
+
 
 以下权限仅对MDM（Mobile Device Management）设备管理应用开放。MDM应用的详细介绍，请参考[MDM Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-intro)。
 

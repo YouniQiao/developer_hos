@@ -4,13 +4,14 @@ title: "编译构建"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building
 ---
 
+
 * **[编译报错“JS heap out of memory”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-1)**
 * **[Linux环境下编译报错“JavaScript heap out of memory”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-2)**
 * **[编译告警“The re-export name 'xx' need to be marked as type”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-3)**
 * **[编译报错“Cannot find module XXX or its corresponding type declarations”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-4)**
 * **[编译报错“ERROR: Failed :entry:default@CompileResource”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-5)**
 * **[编译报错“Module 'xxx' has no exported member 'yyy'”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-6)**
-* **[编译报错“Could not load ${file1} (imported by ${file2}): Maximum call stack size exceeded”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-8)**
+* **[编译报错“Could not load $\{file1\} (imported by $\{file2\}): Maximum call stack size exceeded”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-8)**
 * **[编译报错“Failed to get a resolved OhmUrl by filepath xx”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-10)**
 * **[编译报错“Property xxx does not exist on type 'typeof BuildProfile'.”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-11)**
 * **[C++工程编译导致电脑卡顿的处理建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-12)**
@@ -52,7 +53,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 * **[静态共享包HAR如何引用另一个HAR包中的so文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-56)**
 * **[怎样在编译配置中设置excludes文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-57)**
 * **[如何在编译过程中添加自定义任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-58)**
-* **[如何处理include <stddef.h>编译报错](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-59)**
+* **[如何处理include \<stddef.h\>编译报错](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-59)**
 * **[如何控制编译过程的cpu使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-60)**
 * **[DevEco怎么导出项目的依赖树](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-61)**
 * **[如何在hvigor自定义任务中使用npm包](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-63)**
@@ -148,7 +149,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 * **[编译报错“byteCodeHar not supported when useNormalizedOHMUrl is not true.”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-166)**
 * **[编译报错“Duplicate 'Module-Abilities' object names detected.”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-167)**
 * **[如何快速关闭工程中所有字节码HAR配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-169)**
-* **[在.ts文件中使用“import { export } from 'xxx.so';”方式导入.so文件编译告警：“Currently module for 'xxx.so' is not verified. ”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-179)**
+* **[在.ts文件中使用“import \{ export \} from 'xxx.so';”方式导入.so文件编译告警：“Currently module for 'xxx.so' is not verified. ”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-179)**
 * **[构建HSP模块时报错“Ohos BundleTool [Error]: hsp has home ability;Ohos BundleTool [Error]: CompressEntrance::main exit, verify failed.”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-180)**
 * **[编译报错“Error: open 'xxx\libimage\_transcoder\_shared.dll' failed”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-181)**
 * **[推包调试报错“Error message:cannot find record '&XXX/src/main/ets/YYY&x.y.z', please check the request path.'ZZZ.abc'.”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-182)**

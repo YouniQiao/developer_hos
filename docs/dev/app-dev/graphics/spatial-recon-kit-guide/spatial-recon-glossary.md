@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Spatial Recon Kit术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-glossary
+format: md
 ---
+
 
 ## 颜色抖动
 

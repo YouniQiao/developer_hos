@@ -4,6 +4,7 @@ title: "如何实现List的折叠动画效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-348
 ---
 
+
 可以使用显式动画animateTo结合条件渲染if控制 ListItem内容区域的展开和收起，示例代码如下：
 
 ```

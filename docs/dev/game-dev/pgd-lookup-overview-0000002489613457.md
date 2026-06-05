@@ -1,7 +1,9 @@
 ---
 title: "Lookup概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-lookup-overview-0000002489613457
+format: md
 ---
+
 
 Lookup（查找系统）是PGD提供的高性能索引机制，用于基于组件值快速查找实体。传统的ECS查询基于组件类型，而Lookup系统允许基于组件的实际值进行查询，大幅提升特定场景下的查询性能。
 

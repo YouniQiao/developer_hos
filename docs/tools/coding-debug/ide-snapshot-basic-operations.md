@@ -1,7 +1,9 @@
 ---
 title: "Snapshot模板基本操作"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # Snapshot模板基本操作
 

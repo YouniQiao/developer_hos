@@ -2,7 +2,9 @@
 title: "华为教育中心服务协议"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-agreements-0000001207441472
+format: md
 ---
+
 
 # 华为教育中心服务协议
 

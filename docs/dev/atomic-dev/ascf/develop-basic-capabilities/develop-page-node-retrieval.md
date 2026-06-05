@@ -1,7 +1,9 @@
 ---
 title: "获取页面节点信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-page-node-retrieval
+format: md
 ---
+
 
 当开发需要指定目标节点的属性，位置等信息前，需要获取页面节点信息，当前开发指导提供获取页面节点信息的方法。
 

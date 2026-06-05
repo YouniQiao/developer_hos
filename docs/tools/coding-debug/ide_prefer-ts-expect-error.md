@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-ts-expect-error"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-ts-expect-error
 

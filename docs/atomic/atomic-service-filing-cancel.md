@@ -1,7 +1,9 @@
 ---
 title: "取消接入"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-cancel
+format: md
 ---
+
 
 取消接入将在工信部删除元服务在华为接入商的核准（备案）信息，若元服务还需使用，建议在新的接入商完成核准（备案）后再取消接入，否则元服务可能会被通管局清理。操作步骤如下：
 

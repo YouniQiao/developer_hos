@@ -2,7 +2,9 @@
 title: "新功能速递"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/adsxinggongnengsudi-0000001780141116
+format: md
 ---
+
 # 新功能速递
 
 ## 4月新功能速递

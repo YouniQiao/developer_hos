@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-magic-numbers"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-magic-numbers
 

@@ -1,7 +1,9 @@
 ---
 title: "Native侧获取env具有线程限制，如何在C++子线程触发ArkTS侧回调"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-25
+format: md
 ---
+
 
 可以通过线程安全函数实现在C++子线程触发ArkTS侧回调。native主线程外的其他线程通常不能直接使用需要napi\_env、napi\_value的NAPI函数，线程安全函数可以在其他线程中被调用，并回到主线程中执行。参考代码如下：
 

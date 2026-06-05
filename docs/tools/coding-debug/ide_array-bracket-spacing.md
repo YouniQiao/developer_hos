@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/array-bracket-spacing"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/array-bracket-spacing
 

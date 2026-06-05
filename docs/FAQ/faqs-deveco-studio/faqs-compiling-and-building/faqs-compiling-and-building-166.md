@@ -4,6 +4,7 @@ title: "编译报错“byteCodeHar not supported when useNormalizedOHMUrl is not
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-166
 ---
 
+
 **错误描述**
 
 当useNormalizedOHMUrl配置为false时，不支持编译字节码HAR。

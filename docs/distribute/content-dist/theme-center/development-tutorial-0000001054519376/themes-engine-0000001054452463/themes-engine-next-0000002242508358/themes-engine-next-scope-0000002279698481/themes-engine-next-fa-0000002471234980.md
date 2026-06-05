@@ -2,7 +2,9 @@
 title: "百变卡片&lt;Widget&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-fa-0000002471234980
+format: md
 ---
+
 
 # 百变卡片&lt;Widget&gt;
 

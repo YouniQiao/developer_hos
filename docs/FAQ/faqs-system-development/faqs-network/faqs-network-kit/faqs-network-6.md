@@ -4,6 +4,7 @@ title: "http网络连接中的通用知识"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-6
 ---
 
+
 http请求需要申请ohos.permission.INTERNET权限，其错误码参考文档：[错误码合集](https://curl.se/libcurl/c/libcurl-errors.html)。
 
 常用的请求方式为GET、POST，请求成功时，返回的业务数据在data.result中，cookie信息则在data.cookies中，更改字符集方法为：在请求头head中添加参数为

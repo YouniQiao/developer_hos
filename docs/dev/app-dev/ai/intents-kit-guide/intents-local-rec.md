@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "位置推荐方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-introduction)**
 * **[场景体验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-scene-experience)**

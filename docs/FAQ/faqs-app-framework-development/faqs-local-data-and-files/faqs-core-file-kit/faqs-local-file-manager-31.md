@@ -4,6 +4,7 @@ title: "报错“the parameters check fails this is fail path”如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-31
 ---
 
+
 **问题现象**
 
 ```

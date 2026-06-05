@@ -1,7 +1,9 @@
 ---
 title: "UI开发 (ArkTS声明式开发范式)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-development
+format: md
 ---
+
 
 * **[UI开发（ArkTS声明式开发范式）概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-development-overview)**
 * **[学习UI范式基本语法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-paradigm-basic-syntax)**

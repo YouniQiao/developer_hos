@@ -2,7 +2,9 @@
 title: "查询任务数据报表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-inquire-task-0000001238164548
+format: md
 ---
+
 # 查询任务数据报表
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，进入“概览”主页面。

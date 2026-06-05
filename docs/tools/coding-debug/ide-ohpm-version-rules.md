@@ -1,7 +1,9 @@
 ---
 title: "OHPM版本号规则"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # OHPM版本号规则
 

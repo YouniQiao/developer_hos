@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "多网发起和释放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-request-release
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -24,7 +26,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/netw
 
 | 接口名 | 描述 |
 | --- | --- |
-| requestMultiPath(callback: Callback<MultiPathRequestResult>): void | 发起多网请求。 |
+| requestMultiPath(callback: Callback\<MultiPathRequestResult\>): void | 发起多网请求。 |
 | releaseMultiPath(): void | 释放多网。 |
 
 ## 开发步骤

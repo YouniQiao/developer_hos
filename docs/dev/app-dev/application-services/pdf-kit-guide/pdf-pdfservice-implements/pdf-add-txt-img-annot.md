@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "PDF页面文本、图片和批注"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-txt-img-annot
+format: md
 ---
+
 
 支持编辑PDF页面内容，包括：
 

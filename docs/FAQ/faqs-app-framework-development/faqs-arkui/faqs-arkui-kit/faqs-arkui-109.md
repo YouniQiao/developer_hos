@@ -4,6 +4,7 @@ title: "List组件如何设置多列"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-109
 ---
 
+
 以列模式为例(listDirection为Axis.Vertical):lanes用于决定List组件在交叉轴方向上的列数。参考代码如下：
 
 ```

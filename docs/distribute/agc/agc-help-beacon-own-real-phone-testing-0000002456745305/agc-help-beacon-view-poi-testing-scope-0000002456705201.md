@@ -1,7 +1,9 @@
 ---
 title: "查看POI测试范围"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-view-poi-testing-scope-0000002456705201
+format: md
 ---
+
 
 如下界面可辅助您查看POI地理围栏范围，以及测试手机是否进入测试POI的200米感应范围内。
 

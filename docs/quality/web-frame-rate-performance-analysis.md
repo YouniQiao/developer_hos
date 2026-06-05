@@ -1,7 +1,9 @@
 ---
 title: "Web帧率问题分析"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-frame-rate-performance-analysis
+format: md
 ---
+
 
 # Web帧率问题分析
 

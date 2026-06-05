@@ -1,7 +1,9 @@
 ---
 title: "创建密钥确立可信凭证"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-guidelines
+format: md
 ---
+
 
 ## 概述
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "三方支付问题处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-third-party-faq
+format: md
 ---
+
 
 ## 接入微信H5 支付，支付完成后会停留在微信里面，没有自动返回应用，需要用户手动返回？
 

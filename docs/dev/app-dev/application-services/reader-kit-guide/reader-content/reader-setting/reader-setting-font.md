@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "自定义字体"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-font
+format: md
 ---
+
 
 当应用需要支持自定义字体时，开发者可通过[ReaderSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#readersetting)的fontPath属性，实现对阅读内容字体的实时修改。
 

@@ -4,6 +4,7 @@ title: "在Tabs组件中，哪些方式可以实现内容页的切换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-413
 ---
 
+
 可以通过如下方式实现内容页的切换：
 
 * 使用外接键盘的Tab操作。

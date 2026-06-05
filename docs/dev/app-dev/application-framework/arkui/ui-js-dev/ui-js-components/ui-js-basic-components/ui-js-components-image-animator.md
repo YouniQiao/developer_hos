@@ -1,7 +1,9 @@
 ---
 title: "image-animator开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-image-animator
+format: md
 ---
+
 
 image-animator组件为图片帧动画播放器。具体用法请参考[image-animator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-image-animator)。
 

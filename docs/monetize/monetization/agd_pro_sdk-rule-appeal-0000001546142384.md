@@ -2,7 +2,9 @@
 title: "申诉流程"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk-rule-appeal-0000001546142384
+format: md
 ---
+
 
 
 当您收到我们发送的违规处罚通知后，可以在5个工作日之内，按照平台的规则和要求将申诉材料发送至申诉邮箱**developer@huawei.com**，我们会在收到申诉邮件后尽快对申诉材料进行复核并给出回复。

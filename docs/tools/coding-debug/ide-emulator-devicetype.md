@@ -1,7 +1,9 @@
 ---
 title: "设备支持类型"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 设备支持类型
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phone-overview
+format: md
 ---
+
 
 当应用需要获取用户手机号时，可使用Account Kit提供的手机号授权能力，引导用户完成手机号授权。
 

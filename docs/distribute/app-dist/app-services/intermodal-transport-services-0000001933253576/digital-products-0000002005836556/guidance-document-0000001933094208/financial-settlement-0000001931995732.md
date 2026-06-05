@@ -2,7 +2,9 @@
 title: "财务结算"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/financial-settlement-0000001931995732
+format: md
 ---
+
 
 # 财务结算
 

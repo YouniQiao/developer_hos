@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "深度估计介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-depth-conversion
+format: md
 ---
+
 
 AR Engine支持持续输出周围环境相对终端设备的深度信息，利用这些深度信息，可以实现更加自然、无缝的虚实体验。
 

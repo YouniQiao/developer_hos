@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "HarmonyOS APK应用和HarmonyOS应用在一键登录场景下的用户数据如何互通"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-7
+format: md
 ---
+
 
 终端设备从HarmonyOS 3.x/4.x（简称HarmonyOS）升级到HarmonyOS NEXT/5.0.x及之后版本（简称HarmonyOS NEXT）。
 

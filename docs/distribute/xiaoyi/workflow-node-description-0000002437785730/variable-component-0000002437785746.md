@@ -2,7 +2,9 @@
 title: "变量组件"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/variable-component-0000002437785746
+format: md
 ---
+
 
 # 变量组件
 

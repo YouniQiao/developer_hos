@@ -2,7 +2,9 @@
 title: "电量电池图标"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-guide-powercon-0000002429826785
+format: md
 ---
+
 
 # 电量电池图标
 

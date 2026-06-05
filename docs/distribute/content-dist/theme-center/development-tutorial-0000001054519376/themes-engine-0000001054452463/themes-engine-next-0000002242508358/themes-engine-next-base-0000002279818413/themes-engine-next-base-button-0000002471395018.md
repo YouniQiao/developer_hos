@@ -2,7 +2,9 @@
 title: "控件：按钮&lt;Button&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-button-0000002471395018
+format: md
 ---
+
 
 # 控件：按钮&lt;Button&gt;
 

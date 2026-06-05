@@ -4,6 +4,7 @@ title: "ArkTS侧如何释放绑定的C++侧对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-51
 ---
 
+
 **问题现象**
 
 在Java中，垃圾回收机制可以自动回收对象。对于ArkTS对象内部创建并绑定的C++对象，可以通过类似Java的`finalize`方法实现自动内存回收，而无需开发者主动调用。

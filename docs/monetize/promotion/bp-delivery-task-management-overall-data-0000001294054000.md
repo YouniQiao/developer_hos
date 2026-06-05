@@ -2,7 +2,9 @@
 title: "查询整体数据报表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-overall-data-0000001294054000
+format: md
 ---
+
 # 查询整体数据报表
 
 ## 操作步骤

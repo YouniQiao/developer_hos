@@ -4,6 +4,7 @@ title: "对象反序列化时number类型丢失精度如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-129
 ---
 
+
 1. 通过[JSON.parse()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-json#jsonparse)解析，可以通过传入options参数，指定options为bigIntMode: JSON.BigIntMode.PARSE\_AS\_BIGINT，来处理BigInt的模式。
 
    示例代码参考如下：

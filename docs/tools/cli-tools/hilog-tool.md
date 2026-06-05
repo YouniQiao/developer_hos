@@ -1,7 +1,9 @@
 ---
 title: "hilogtool"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # hilogtool
 

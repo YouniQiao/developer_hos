@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-enum-initializers"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-enum-initializers
 

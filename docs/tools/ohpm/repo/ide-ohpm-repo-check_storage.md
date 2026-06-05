@@ -1,6 +1,8 @@
 ---
 title: "ohpm-repo check_storage"
+format: md
 ---
+
 
 # ohpm-repo check\_storage
 
@@ -27,7 +29,7 @@ ohpm-repo check_storage <target> [options]
 
 * 类型：String
 * 必填参数
-* 格式： [``<@scope>``/]`<pkg>`[``<@version>``]或@all
+* 格式： [``<@scope>``/]`\<pkg\>`[``<@version>``]或@all
 * 说明： `<@scope>`和`<@version>`是可选的，`<pkg>`是包名。
 
 必须在check\_storage命令后面配置`<target>`参数，指定要检查的包或者用@all指定检查所有包。

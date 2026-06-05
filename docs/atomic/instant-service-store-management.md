@@ -1,7 +1,9 @@
 ---
 title: "门店管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-management
+format: md
 ---
+
 
 * **[门店管理流程说明](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-process)**
 * **[创建门店](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-create)**

@@ -1,7 +1,9 @@
 ---
 title: "权限错误码"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 权限错误码
 

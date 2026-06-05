@@ -1,7 +1,9 @@
 ---
 title: "关系型数据库跨设备数据同步 (ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-of-rdb-store
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -72,13 +74,13 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
 | 接口名称 | 描述 |
 | --- | --- |
-| setDistributedTables(tables: Array<string>, callback: AsyncCallback<void>): void | 设置分布式同步表。只支持多设备协同表模式。 |
-| setDistributedTables(tables: Array<string>, type: DistributedType, config: DistributedConfig, callback: AsyncCallback<void>): void | 设置分布式同步表。 |
-| sync(mode: SyncMode, predicates: RdbPredicates, callback: AsyncCallback<Array<[string, number]>>): void | 分布式数据同步。 |
-| on(event: 'dataChange', type: SubscribeType, observer: Callback<Array<string>>): void | 订阅分布式数据变化。 |
-| off(event:'dataChange', type: SubscribeType, observer: Callback<Array<string>>): void | 取消订阅分布式数据变化。 |
-| obtainDistributedTableName(device: string, table: string, callback: AsyncCallback<string>): void | 根据本地数据库表名获取指定设备上的表名。只支持多设备协同表模式。 |
-| remoteQuery(device: string, table: string, predicates: RdbPredicates, columns: Array<string> , callback: AsyncCallback<ResultSet>): void | 根据指定条件查询远程设备数据库中的数据。 |
+| setDistributedTables(tables: Array\<string\>, callback: AsyncCallback\<void\>): void | 设置分布式同步表。只支持多设备协同表模式。 |
+| setDistributedTables(tables: Array\<string\>, type: DistributedType, config: DistributedConfig, callback: AsyncCallback\<void\>): void | 设置分布式同步表。 |
+| sync(mode: SyncMode, predicates: RdbPredicates, callback: AsyncCallback\<Array<[string, number]\>>): void | 分布式数据同步。 |
+| on(event: 'dataChange', type: SubscribeType, observer: Callback\<Array<string\>>): void | 订阅分布式数据变化。 |
+| off(event:'dataChange', type: SubscribeType, observer: Callback\<Array<string\>>): void | 取消订阅分布式数据变化。 |
+| obtainDistributedTableName(device: string, table: string, callback: AsyncCallback\<string\>): void | 根据本地数据库表名获取指定设备上的表名。只支持多设备协同表模式。 |
+| remoteQuery(device: string, table: string, predicates: RdbPredicates, columns: Array\<string\> , callback: AsyncCallback\<ResultSet\>): void | 根据指定条件查询远程设备数据库中的数据。 |
 
 ## 使用多设备协同表模式进行数据同步
 
@@ -100,7 +102,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datasync/RdbDataSync.ets#L16-L24" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：RdbDataSync.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datasync/RdbDataSync.ets#L16-L24" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：RdbDataSync.ets</a></div>
 
 2. 请求权限。
 
@@ -220,7 +222,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datasync/RdbDataSync.ets#L83-L128" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：RdbDataSync.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datasync/RdbDataSync.ets#L83-L128" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：RdbDataSync.ets</a></div>
 
 6. 拉取组网内其他设备的数据变化。
 
@@ -269,7 +271,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datasync/RdbDataSync.ets#L130-L168" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：RdbDataSync.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datasync/RdbDataSync.ets#L130-L168" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：RdbDataSync.ets</a></div>
 
 7. 当数据未完成同步，或未触发数据同步时，可使用RdbStore的[remoteQuery](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbstore#remotequery-1)方法查询组网内指定设备上分布式表中的数据。
 
@@ -303,7 +305,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datasync/RdbDataSync.ets#L170-L196" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：RdbDataSync.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datasync/RdbDataSync.ets#L170-L196" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：RdbDataSync.ets</a></div>
 
 
 ## 使用单版本表模式进行数据同步

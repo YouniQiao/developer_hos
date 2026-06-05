@@ -4,6 +4,7 @@ title: "如何实现Tabs组件的TabBar居左对齐"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-205
 ---
 
+
 系统提供的Tabs组件的TabBar仅支持居中对齐。可以通过自定义方式实现：使用Scroll和Row组件实现一个页签，在onClick事件中通过修改索引值和Tabs组件的索引联动，实现切换效果，同时将Tabs的barHeight置为0。具体实现可参考如下示例代码：
 
 ```

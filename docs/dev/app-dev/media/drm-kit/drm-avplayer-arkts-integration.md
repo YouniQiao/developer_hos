@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基于AVPlayer播放DRM节目(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-avplayer-arkts-integration
+format: md
 ---
+
 
 开发者可以调用DRM Kit和Media Kit的ArkTS接口实现AVPlayer播放器，完成DRM节目播放。
 

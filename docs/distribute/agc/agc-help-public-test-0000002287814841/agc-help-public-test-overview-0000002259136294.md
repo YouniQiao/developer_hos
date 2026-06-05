@@ -1,7 +1,9 @@
 ---
 title: "业务介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-public-test-overview-0000002259136294
+format: md
 ---
+
 
 在正式版本发布之前，您可以面向全网公开招募部分用户测试您的应用，以收集测试用户的反馈意见，助您提前发现问题，及时修复问题和优化版本体验。
 

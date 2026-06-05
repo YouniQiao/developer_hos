@@ -1,7 +1,9 @@
 ---
 title: "如何生成带logo的二维码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-23
+format: md
 ---
+
 
 1. 使用Canvas组件绘制二维码图片和logo图片。
 

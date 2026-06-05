@@ -1,7 +1,9 @@
 ---
 title: "商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-offerings
+format: md
 ---
+
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 在HarmonyOS列表，选择您已发布的应用。

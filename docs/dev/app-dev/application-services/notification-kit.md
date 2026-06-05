@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Notification Kit（用户通知服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-kit
+format: md
 ---
+
 
 * **[Notification Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-overview)**
 * **[请求通知授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-enable)**

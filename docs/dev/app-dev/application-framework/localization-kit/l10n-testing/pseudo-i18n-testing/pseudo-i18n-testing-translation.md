@@ -1,7 +1,9 @@
 ---
 title: "翻译伪本地化测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pseudo-i18n-testing-translation
+format: md
 ---
+
 
 ## 使用场景
 

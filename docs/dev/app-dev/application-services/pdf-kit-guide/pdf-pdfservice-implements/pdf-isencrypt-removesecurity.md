@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "判断PDF文档是否加密及删除加密"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-isencrypt-removesecurity
+format: md
 ---
+
 
 PDF Kit支持判断PDF文档是否加密及删除PDF加密锁。
 

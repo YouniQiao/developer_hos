@@ -1,7 +1,9 @@
 ---
 title: "C#（小游戏）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voicetotext-csharp-minigame-0000002359547174
+format: md
 ---
+
 
 ## 前提条件
 

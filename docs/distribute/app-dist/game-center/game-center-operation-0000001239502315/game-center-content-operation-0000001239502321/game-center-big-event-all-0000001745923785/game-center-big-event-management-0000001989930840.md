@@ -2,7 +2,9 @@
 title: "管理游戏大事件"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-big-event-management-0000001989930840
+format: md
 ---
+
 
 # 管理游戏大事件
 

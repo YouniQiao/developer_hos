@@ -4,6 +4,7 @@ title: "应用申请位置信息权限为什么没有弹窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-11
 ---
 
+
 **可能原因**
 
 未申请ohos.permission.LOCATION权限。

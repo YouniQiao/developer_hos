@@ -1,7 +1,9 @@
 ---
 title: "常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/faq
+format: md
 ---
+
 
 **Q1：执行过程中，设备断连重连后，任务能否继续执行？**
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "对焦(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-focus-native
+format: md
 ---
+
 
 相机框架提供对设备对焦的能力，业务应用可以根据使用场景进行对焦模式和对焦点的设置。
 

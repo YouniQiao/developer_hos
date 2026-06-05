@@ -4,6 +4,7 @@ title: "如何在C++调用从ArkTS传递过来的function"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-26
 ---
 
+
 1. 在index.d.ts文件中，提供ArkTS侧的接口方法。
 
    ```

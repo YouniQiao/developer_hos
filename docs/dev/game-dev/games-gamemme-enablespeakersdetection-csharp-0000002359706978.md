@@ -1,7 +1,9 @@
 ---
 title: "获取当前发言玩家列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enablespeakersdetection-csharp-0000002359706978
+format: md
 ---
+
 
 通过本章的开发指导，您可实现获取房间内当前发言玩家列表的功能。
 

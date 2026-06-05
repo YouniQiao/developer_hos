@@ -2,7 +2,9 @@
 title: "视图：图片混合&lt;GroupImage&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-groupimage-0000002504354869
+format: md
 ---
+
 
 # 视图：图片混合&lt;GroupImage&gt;
 

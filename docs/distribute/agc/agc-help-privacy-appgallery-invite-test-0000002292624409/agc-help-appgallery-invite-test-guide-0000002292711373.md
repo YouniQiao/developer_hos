@@ -1,7 +1,9 @@
 ---
 title: "测试流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-appgallery-invite-test-guide-0000002292711373
+format: md
 ---
+
 
 您可以将应用上架至华为应用市场，然后通过邮件或邀请码的形式，选择特定用户群组来测试您的应用。具体测试流程如下：
 

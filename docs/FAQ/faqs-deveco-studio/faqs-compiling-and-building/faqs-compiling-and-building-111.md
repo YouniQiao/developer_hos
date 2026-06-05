@@ -4,6 +4,7 @@ title: "构建报错“debug is different”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-111
 ---
 
+
 **问题现象**
 
 打包应用时，提示“debug is different”。

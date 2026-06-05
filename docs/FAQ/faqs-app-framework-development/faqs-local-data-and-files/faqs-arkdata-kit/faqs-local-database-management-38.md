@@ -4,6 +4,7 @@ title: "数据存储方案如何选择"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-38
 ---
 
+
 **问题描述**
 
 HarmonyOS标准系统支持典型的存储数据形态，包括用户首选项、键值型数据库、关系型数据库。

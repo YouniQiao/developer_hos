@@ -2,7 +2,9 @@
 title: "批量编辑任务状态"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-task4-0000001338258529
+format: md
 ---
+
 # 批量编辑任务状态
 
 您通过本接口可以批量编辑任务状态。

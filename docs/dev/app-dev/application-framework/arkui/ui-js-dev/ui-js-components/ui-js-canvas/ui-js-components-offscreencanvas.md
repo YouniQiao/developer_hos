@@ -1,7 +1,9 @@
 ---
 title: "OffscreenCanvasRenderingContext2D对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-offscreencanvas
+format: md
 ---
+
 
 使用OffscreenCanvas在离屏Canvas画布组件上进行绘制，绘制对象可以是矩形、文本、图片等。 离屏，即GPU在当前缓冲区以外新开辟的一个缓冲区。具体请参考[OffscreenCanvasRenderingContext2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-offscreencanvasrenderingcontext2d)。
 

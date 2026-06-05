@@ -1,7 +1,9 @@
 ---
 title: "集成SDK"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-js-0000002361670432
+format: md
 ---
+
 
 使用联机对战服务相关功能，必须集成联机对战SDK。
 

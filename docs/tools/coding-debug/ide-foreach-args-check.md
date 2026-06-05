@@ -1,7 +1,9 @@
 ---
 title: "@performance/foreach-args-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/foreach-args-check
 

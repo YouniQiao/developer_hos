@@ -4,6 +4,7 @@ title: "如何处理大整数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-104
 ---
 
+
 使用BigInt来处理大整数。
 
 BigInt可以表示任意大小的整数。使用BigInt时，在整数字面量后面添加n后缀或使用BigInt()构造函数。

@@ -1,7 +1,9 @@
 ---
 title: "Device Security Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-introduction
+format: md
 ---
+
 
 Device Security Kit（设备安全服务）提供应用设备状态检测（DeviceVerify）、安全检测（SafetyDetect）、可信应用服务（TrustedAppService），可以保护应用程序免受安全威胁和保证应用的数据安全。
 

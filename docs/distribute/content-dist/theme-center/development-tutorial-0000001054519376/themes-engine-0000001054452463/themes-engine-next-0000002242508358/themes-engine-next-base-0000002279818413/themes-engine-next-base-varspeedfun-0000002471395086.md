@@ -2,7 +2,9 @@
 title: "数学曲线：变速函数&lt;VarSpeedFun&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-varspeedfun-0000002471395086
+format: md
 ---
+
 
 # 数学曲线：变速函数&lt;VarSpeedFun&gt;
 

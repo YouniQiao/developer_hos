@@ -1,7 +1,9 @@
 ---
 title: "语法错误码"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 语法错误码
 

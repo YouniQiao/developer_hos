@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Flutter框架+H5接入智能填充"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-flutter
+format: md
 ---
+
 
 ![](./img/f5b87bfd.png)
 

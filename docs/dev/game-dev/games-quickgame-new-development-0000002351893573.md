@@ -1,7 +1,9 @@
 ---
 title: "全新开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-new-development-0000002351893573
+format: md
 ---
+
 
 不基于样例工程，您可以全新开发元服务。
 

@@ -2,7 +2,9 @@
 title: "错误码"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-error-0000002024369574
+format: md
 ---
+
 
 # 错误码
 

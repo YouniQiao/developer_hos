@@ -4,6 +4,7 @@ title: "Mac环境下加载动态库，签名拦截导致未生效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-133
 ---
 
+
 **问题现象**
 
 Mac环境下，在DevEco项目开发时，build-profile.json中添加了如下的插桩配置，但是插桩功能未生效。

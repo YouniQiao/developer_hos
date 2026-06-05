@@ -1,7 +1,9 @@
 ---
 title: "Web组件大小自适应页面内容布局"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-fit-content
+format: md
 ---
+
 
 使用Web组件大小自适应页面内容布局模式[layoutMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#layoutmode11)([WebLayoutMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#weblayoutmode11).FIT\_CONTENT)时，能使Web组件的大小根据页面内容自适应变化。
 
@@ -79,7 +81,7 @@ struct WebHeightPage {
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkWeb/WebRenderLayout/entry/src/main/ets/pages/FitPageContent.ets#L16-L50" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：FitPageContent.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkWeb/WebRenderLayout/entry/src/main/ets/pages/FitPageContent.ets#L16-L50" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：FitPageContent.ets</a></div>
 
 
 fit\_content.html页面代码如下：
@@ -148,7 +150,7 @@ fit\_content.html页面代码如下：
 **解决方案：**
 
 * 更改渲染模式为[同步渲染模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-render-mode#同步渲染模式)。
-* 在H5页面增加meta配置<meta name="viewport" content="width=device-width, initial-scale=1.0">
+* 在H5页面增加meta配置<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 ### 设置FIT\_CONTENT后，页面白屏或页面消失不显示
 
@@ -156,7 +158,7 @@ fit\_content.html页面代码如下：
 
 核心内容DOM节点高度为0。
 
-CSS样式height：<number> vh和Web组件大小自适应页面布局存在计算冲突，请检查height：<number> vh是否是由body节点以内的第一个高度CSS样式。如以下结构，id为2的DOM节点高度将为0。
+CSS样式height：\<number\> vh和Web组件大小自适应页面布局存在计算冲突，请检查height：\<number\> vh是否是由body节点以内的第一个高度CSS样式。如以下结构，id为2的DOM节点高度将为0。
 
 ```
 <body>

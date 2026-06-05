@@ -1,7 +1,9 @@
 ---
 title: "国产游戏小程序核准（备案）准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-chinese-preparation-0000001979934858
+format: md
 ---
+
 
 国产游戏小程序是指纯广告变现快游戏（IAA），若这类快游戏未注册在江苏省，且在履行核准（备案）手续前没有拿到国家/省份相关主管部门审核同意的前置审批文件，例如游戏版号、国家/省级新闻出版广电总局关于\*\*\*\*游戏的批复文件、省级新闻出版部门出具的游戏核准（备案）批复文件，需要前往AGC控制台申请前置审批文件。在AGC控制台为国产游戏小程序申请前置审批文件的操作步骤如下。
 

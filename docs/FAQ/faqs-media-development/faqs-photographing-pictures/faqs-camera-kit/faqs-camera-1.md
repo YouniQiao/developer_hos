@@ -4,6 +4,7 @@ title: "使用XComponent组件显示相机的预览输出流时，如何获取�
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-1
 ---
 
+
 创建双路预览。
 
 1. 使用Xcomponent创建预览流。

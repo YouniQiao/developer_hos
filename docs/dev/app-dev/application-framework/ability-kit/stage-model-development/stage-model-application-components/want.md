@@ -1,7 +1,9 @@
 ---
 title: "信息传递载体Want"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/want
+format: md
 ---
+
 
 * **[Want概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/want-overview)**
 * **[显式Want与隐式Want匹配规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings)**

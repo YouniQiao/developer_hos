@@ -1,7 +1,9 @@
 ---
 title: "目标设备选择"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-device-selection
+format: md
 ---
+
 
 当获取到的已连接设备列表中包含多个设备时，需要根据业务需求正确挑选目标设备。
 

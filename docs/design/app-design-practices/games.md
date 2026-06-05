@@ -2,7 +2,9 @@
 title: 游戏类
 sidebar_label: 游戏类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/games-0000001930189974
+format: md
 ---
+
 # 游戏类
 
 游戏类应用注重用户的沉浸式体验，具有强互动性和操作性，在大屏设备上可以向用户展示更宽阔的游戏画面，提供更轻便高效的交互体验。

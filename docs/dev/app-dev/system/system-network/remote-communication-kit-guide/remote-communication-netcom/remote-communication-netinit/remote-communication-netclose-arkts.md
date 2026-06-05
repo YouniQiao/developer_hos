@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "关闭会话（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netclose-arkts
+format: md
 ---
+
 
 当一个HTTP请求完成，即数据已经成功发送并收到确认，或者在某些情况下，由于超时或其他错误原因，通信尝试失败，此时应立即调用相应的“关闭会话”或“释放资源”方法。这一操作的主要目的是：
 

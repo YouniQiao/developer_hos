@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图像变换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-transformation-native
+format: md
 ---
+
 
 ![](./img/1dc2b38c.png)
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "快速启动的游戏存在三方SDK功能异常，应该如何排查"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-3
+format: md
 ---
+
 
 在秒级启动使能后，如果用户对游戏进行上滑移除操作，系统会对游戏进程进行深度冻结和内存换出。此时游戏进程、[ArkTS Runtime](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime-overview)、[AbilityStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage)均不会被销毁，只有[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability)会经历完整的创建到销毁生命周期。因此，由ArkTS定义的全局变量、静态变量、[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)变量、globalThis变量以及单例对象等都不会被销毁或重置。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图形绘制与显示开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-drawing-overview
+format: md
 ---
+
 
 ## 场景介绍
 

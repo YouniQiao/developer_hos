@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "修改数字盾密码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-modifypwd
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -22,7 +24,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devi
 
 | 接口名 | 描述 |
 | --- | --- |
-| [modifyTrustedAuthenticationPwd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#modifytrustedauthenticationpwd)(challenge: Uint8Array, pwdInfo: PasswordInfo, authID: bigint, label: TUILable): Promise<AuthToken> | 修改数字盾密码 |
+| [modifyTrustedAuthenticationPwd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#modifytrustedauthenticationpwd)(challenge: Uint8Array, pwdInfo: PasswordInfo, authID: bigint, label: TUILable): Promise\<AuthToken\> | 修改数字盾密码 |
 
 ## 修改数字盾密码界面介绍
 

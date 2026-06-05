@@ -2,7 +2,9 @@
 title: "文档导读"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-doc-introduction-0000002318054636
 has_merged_cells: true
+format: md
 ---
+
 
 | 场景 | 任务 | 文档 | 备注 |
 | --- | --- | --- | --- |

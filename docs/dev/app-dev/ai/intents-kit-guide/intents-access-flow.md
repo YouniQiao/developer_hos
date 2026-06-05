@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Intents Kit接入流程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-access-flow
+format: md
 ---
+
 
 ![](./img/92fa1aa9.png)
 

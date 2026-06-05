@@ -2,7 +2,9 @@
 title: "上架前自检"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-self-inspection-0000001195761346
+format: md
 ---
+
 
 # 上架前自检
 

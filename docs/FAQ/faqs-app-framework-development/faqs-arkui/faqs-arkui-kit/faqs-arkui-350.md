@@ -1,7 +1,9 @@
 ---
 title: "bindPopup适配Web组件长按菜单功能，设置offset控制弹窗的偏移"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-350
+format: md
 ---
+
 
 由于WebView组件本身不支持直接绑定Popup，需在同层添加透明占位组件作为Popup载体，可以在 WebView 组件前（同层）添加一个大小为 0 的组件来承载 bindPopup。根据当前 UX 规范，弹出菜单的边距左右各为 7vp，以确保其在屏幕范围内。具体代码如下：
 

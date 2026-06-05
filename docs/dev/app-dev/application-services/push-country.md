@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "支持的国家/地区"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-country
+format: md
 ---
+
 
 ![](./img/e378f9f4.png)
 

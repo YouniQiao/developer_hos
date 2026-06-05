@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "来电场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/incoming-calls
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -36,12 +38,12 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inco
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type: 'voipCallUiEvent', callback: Callback<VoipCallUiEventInfo>): void | 订阅voipCallUiEvent事件。 |
-| off(type: 'voipCallUiEvent', callback?: Callback<VoipCallUiEventInfo>): void | 取消订阅voipCallUiEvent事件。 |
-| reportIncomingCall(voipCallAttribute: VoipCallAttribute): Promise<ErrorReason> | 上报来电。 |
-| reportCallAudioEventChange(callId: string, callAudioEvent: CallAudioEvent): Promise<void> | 上报音频事件。 |
-| reportCallStateChange(callId: string, callState: VoipCallState): Promise<void> | 上报通话状态改变。 |
-| reportCallStateChange(callId: string, callState: VoipCallState, callType: VoipCallType): Promise<void> | 上报通话状态改变，并指定通话类型。 |
+| on(type: 'voipCallUiEvent', callback: Callback\<VoipCallUiEventInfo\>): void | 订阅voipCallUiEvent事件。 |
+| off(type: 'voipCallUiEvent', callback?: Callback\<VoipCallUiEventInfo\>): void | 取消订阅voipCallUiEvent事件。 |
+| reportIncomingCall(voipCallAttribute: VoipCallAttribute): Promise\<ErrorReason\> | 上报来电。 |
+| reportCallAudioEventChange(callId: string, callAudioEvent: CallAudioEvent): Promise\<void\> | 上报音频事件。 |
+| reportCallStateChange(callId: string, callState: VoipCallState): Promise\<void\> | 上报通话状态改变。 |
+| reportCallStateChange(callId: string, callState: VoipCallState, callType: VoipCallType): Promise\<void\> | 上报通话状态改变，并指定通话类型。 |
 
 ## 开发步骤
 

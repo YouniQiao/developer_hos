@@ -1,7 +1,9 @@
 ---
 title: "功耗测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-powerconsumptiontest-0000002255036916
+format: md
 ---
+
 
 云测试提供应用或元服务在真机设备上的功耗测试功能，检测影响应用或元服务功耗的前台资源占用和后台资源占用的各项关键指标。
 

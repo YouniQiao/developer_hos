@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "离线编辑(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-manual-rendering
+format: md
 ---
+
 
 从API version 22开始，[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)给开发者提供音频离线编辑能力，允许在非实时播放场景下对音频数据进行处理，开发者可以组合多个音频节点实现复杂的音频处理流程。
 
@@ -18,7 +20,7 @@ target_link_libraries(sample PUBLIC libohaudiosuite.so)
 
 ### 添加头文件
 
-开发者通过引入头文件<[native\_audio\_suite\_base.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h)>和<[native\_audio\_suite\_engine.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-engine-h)>，使用音频编创相关API。
+开发者通过引入头文件[native\_audio\_suite\_base.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h)和[native\_audio\_suite\_engine.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-engine-h)，使用音频编创相关API。
 
 ```
 #include <ohaudiosuite/native_audio_suite_base.h>

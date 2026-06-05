@@ -1,7 +1,9 @@
 ---
 title: "方舟字节码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode
+format: md
 ---
+
 
 * **[方舟字节码概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-overview)**
 * **[方舟字节码文件格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format)**

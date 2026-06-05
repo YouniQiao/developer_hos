@@ -1,7 +1,9 @@
 ---
 title: "门店头图管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-cover-management
+format: md
 ---
+
 
 在HarmonyOS公域流量场，平台可基于用户地理位置，推荐最近的门店给用户，您需要在此配置及管理头图，用于卡片的推广。
 

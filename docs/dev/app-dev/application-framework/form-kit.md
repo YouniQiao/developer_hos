@@ -1,7 +1,9 @@
 ---
 title: "Form Kit（卡片开发服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/form-kit
+format: md
 ---
+
 
 * **[Form Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview)**
 * **[ArkTS卡片开发（推荐）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui)**

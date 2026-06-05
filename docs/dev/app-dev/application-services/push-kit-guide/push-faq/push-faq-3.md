@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "如何处理误分类问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-3
+format: md
 ---
+
 
 ## 如何处理应用类别误分类
 

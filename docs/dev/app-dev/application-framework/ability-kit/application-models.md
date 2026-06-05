@@ -1,7 +1,9 @@
 ---
 title: "应用模型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-models
+format: md
 ---
+
 
 ## 应用模型的构成要素
 

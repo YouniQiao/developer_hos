@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "取消通知"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-cancel
+format: md
 ---
+
 
 用户点击通知并拉起应用到前台时，应用可以取消某条通知、部分通知或所有通知。
 
@@ -20,8 +22,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/noti
 
 | **接口名** | **描述** |
 | --- | --- |
-| cancel(id: number, callback: AsyncCallback<void>): void | 取消指定的通知。 |
-| cancelAll(callback: AsyncCallback<void>): void | 取消所有该应用发布的通知。 |
+| cancel(id: number, callback: AsyncCallback\<void\>): void | 取消指定的通知。 |
+| cancelAll(callback: AsyncCallback\<void\>): void | 取消所有该应用发布的通知。 |
 
 ## 开发步骤
 
@@ -40,7 +42,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/noti
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Notification-Kit/Notification/entry/src/main/ets/filemanager/CancelNotification.ets#L16-L23" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CancelNotification.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Notification-Kit/Notification/entry/src/main/ets/filemanager/CancelNotification.ets#L16-L23" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CancelNotification.ets</a></div>
 
 2. 发布通知。
 
@@ -61,4 +63,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/noti
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Notification-Kit/Notification/entry/src/main/ets/filemanager/CancelNotification.ets#L58-L68" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CancelNotification.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Notification-Kit/Notification/entry/src/main/ets/filemanager/CancelNotification.ets#L58-L68" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CancelNotification.ets</a></div>

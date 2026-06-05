@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "识别本地图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-detectbarcode
+format: md
 ---
+
 
 ## 基本概念
 
@@ -27,9 +29,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan
 
 | 接口名 | 描述 |
 | --- | --- |
-| [decode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectbarcodedecode)(inputImage: [InputImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#inputimage), options?: scanBarcode.[ScanOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanoptions)): Promise<Array<scanBarcode.[ScanResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanresult)>> | 启动图片识码，通过InputImage传入图片信息，通过ScanOptions进行识码参数设置（options为可选参数），使用Promise异步回调返回识码结果。 |
-| [decode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectbarcodedecode-1)(inputImage: InputImage, options: scanBarcode.ScanOptions, callback: AsyncCallback<Array<scanBarcode.ScanResult>>): void | 启动图片识码，通过InputImage传入图片信息，通过ScanOptions进行识码参数设置，使用Callback异步回调返回识码结果。 |
-| [decode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectbarcodedecode-2)(inputImage: InputImage, callback: AsyncCallback<Array<scanBarcode.ScanResult>>): void | 启动图片识码，通过InputImage传入图片信息，使用Callback异步回调返回识码结果。 |
+| [decode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectbarcodedecode)(inputImage: [InputImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#inputimage), options?: scanBarcode.[ScanOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanoptions)): PromiseArray<scanBarcode.[ScanResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanresult)> | 启动图片识码，通过InputImage传入图片信息，通过ScanOptions进行识码参数设置（options为可选参数），使用Promise异步回调返回识码结果。 |
+| [decode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectbarcodedecode-1)(inputImage: InputImage, options: scanBarcode.ScanOptions, callback: AsyncCallback\<Array<scanBarcode.ScanResult\>>): void | 启动图片识码，通过InputImage传入图片信息，通过ScanOptions进行识码参数设置，使用Callback异步回调返回识码结果。 |
+| [decode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectbarcodedecode-2)(inputImage: InputImage, callback: AsyncCallback\<Array<scanBarcode.ScanResult\>>): void | 启动图片识码，通过InputImage传入图片信息，使用Callback异步回调返回识码结果。 |
 
 ## 开发步骤
 

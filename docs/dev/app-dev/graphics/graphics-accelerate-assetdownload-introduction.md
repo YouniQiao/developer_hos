@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "业务概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-introduction
+format: md
 ---
+
 
 从5.1.0(18)版本开始，新增资源包后台下载。
 

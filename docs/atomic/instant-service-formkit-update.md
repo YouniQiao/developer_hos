@@ -1,7 +1,9 @@
 ---
 title: "更新服务卡片（FormKit）"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit-update
+format: md
 ---
+
 
 1. 对于状态为“已上架”、“已下架”、“审核驳回”、“草稿”的FormKit卡可被编辑，点击列表操作列“编辑”后进入编辑页中，开发者可以对子服务的信息进行更新。
 

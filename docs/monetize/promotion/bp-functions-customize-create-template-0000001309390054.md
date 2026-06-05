@@ -2,7 +2,9 @@
 title: "使用放量模板创建"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-create-template-0000001309390054
+format: md
 ---
+
 # 使用放量模板创建
 
 ## 前提条件

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "默认界面扫码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-scanbarcode
+format: md
 ---
+
 
 ## 基本概念
 
@@ -61,9 +63,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan
 
 | 接口名 | 描述 |
 | --- | --- |
-| [startScanForResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanbarcodestartscanforresult)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context), options?: [ScanOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanoptions)): Promise<[ScanResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanresult)> | 启动默认界面扫码，通过ScanOptions进行扫码参数设置，返回扫码结果。使用Promise异步回调。 |
-| [startScanForResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanbarcodestartscanforresult-2)(context: common.Context, options: ScanOptions, callback: AsyncCallback<ScanResult>): void | 启动默认界面扫码，通过ScanOptions进行扫码参数设置，返回扫码结果。使用callback异步回调。 |
-| [startScanForResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanbarcodestartscanforresult-1)(context: common.Context, callback: AsyncCallback<ScanResult>): void | 启动默认界面扫码，返回扫码结果。使用callback异步回调。 |
+| [startScanForResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanbarcodestartscanforresult)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common#context), options?: [ScanOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanoptions)): Promise[ScanResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanresult) | 启动默认界面扫码，通过ScanOptions进行扫码参数设置，返回扫码结果。使用Promise异步回调。 |
+| [startScanForResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanbarcodestartscanforresult-2)(context: common.Context, options: ScanOptions, callback: AsyncCallback\<ScanResult\>): void | 启动默认界面扫码，通过ScanOptions进行扫码参数设置，返回扫码结果。使用callback异步回调。 |
+| [startScanForResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanbarcodestartscanforresult-1)(context: common.Context, callback: AsyncCallback\<ScanResult\>): void | 启动默认界面扫码，返回扫码结果。使用callback异步回调。 |
 
 ![](./img/22e29c5a.png)
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "空域GPU超分"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-gpu-spatial-upscaling
+format: md
 ---
+
 
 XEngine Kit提供空域GPU超分能力，其基于单帧输入图像，使用空间邻域信息实现超采样，开销较小同时收益可观，建议使用超分倍率为[1.2, 1.5]。
 

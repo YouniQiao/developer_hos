@@ -1,7 +1,9 @@
 ---
 title: "手动设置授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/open-permission-on-setting
+format: md
 ---
+
 
 当应用需要访问用户的隐私信息或使用敏感系统能力时，如拦截键盘输入事件，应向用户申请授权。这些权限属于[manual\_settings](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#manual_settings手动设置授权)权限。
 

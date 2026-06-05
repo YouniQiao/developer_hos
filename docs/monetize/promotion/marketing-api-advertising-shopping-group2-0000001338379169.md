@@ -2,7 +2,9 @@
 title: "编辑商品组"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-shopping-group2-0000001338379169
+format: md
 ---
+
 # 编辑商品组
 
 您通过本接口可以编辑商品组。仅支持海外展示广告网络的商品类广告可以修改。

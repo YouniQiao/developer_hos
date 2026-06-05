@@ -1,7 +1,9 @@
 ---
 title: "使用限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-restrict-0000002236337002
+format: md
 ---
+
 
 本章节将为您详细介绍认证服务不同类型的限制。这些限制可能会根据实际情况随时更新，请您注意文档变化。
 

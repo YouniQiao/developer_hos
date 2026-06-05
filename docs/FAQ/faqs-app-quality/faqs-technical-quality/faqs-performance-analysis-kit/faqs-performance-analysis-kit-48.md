@@ -4,6 +4,7 @@ title: "如何在多设备情况下使用hdc"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-48
 ---
 
+
 **问题场景**
 
 启动模拟器并连接真机，然后调用hdc命令获取udid。此时仅打印一条模拟器的udid。

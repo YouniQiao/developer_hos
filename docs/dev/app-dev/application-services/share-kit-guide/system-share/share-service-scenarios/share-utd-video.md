@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "分享视频"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-video
+format: md
 ---
+
 
 视频类型分享支持将一个或多个视频分享到目标设备/目标应用。
 

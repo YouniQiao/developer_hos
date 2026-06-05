@@ -1,7 +1,9 @@
 ---
 title: "提升HTTP传输性能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-hpp
+format: md
 ---
+
 
 * **[基于TracingConfiguration实现性能维测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-tpms)**
 * **[通过配置Configuration优化传输性能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cpo)**

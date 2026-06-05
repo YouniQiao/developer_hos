@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/prefer-namespace-keyword"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/prefer-namespace-keyword
 

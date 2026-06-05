@@ -4,6 +4,7 @@ title: "启动C++调试时出现错误，提示“Failed to connect to unix-abst
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-25
 ---
 
+
 **问题现象**
 
 启动C++调试时出现错误，提示“Failed to connect to unix-abstract-connect://\\*\\*\\*\\*\\*\\*\\*\\*\\*.sock: Connection shut down by remote side while waiting for reply to initial handshake packet”。

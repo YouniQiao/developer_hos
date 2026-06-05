@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入全局取色"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-image-feature-picker-c
+format: md
 ---
+
 
 接入全局取色功能，用户可以使用手指或者手写笔操作取色器在屏幕上移动，在目标位置抬起手指/抬起手写笔，会生成该位置色值对应的图像信息。
 

@@ -1,7 +1,9 @@
 ---
 title: "命令行构建工具（hvigorw）"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # 命令行构建工具（hvigorw）
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/quotes"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/quotes
 

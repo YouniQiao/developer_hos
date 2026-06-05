@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "文件分级管控"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-fileguard-guide
+format: md
 ---
+
 
 * **[启动文件扫描任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-start-task)**
 * **[打开文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-openfile)**

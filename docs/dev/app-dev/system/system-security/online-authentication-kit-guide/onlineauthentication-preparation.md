@@ -1,19 +1,21 @@
 ---
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-preparation
+format: md
 ---
+
 
 ## FIDO开发准备
 
-开发者的业务需要接入符合FIDO UAF标准的协议，并部署符合FIDO UAF标准协议的FIDO服务端。FIDO网址：<https://fidoalliance.org/> （见[网站链接免责声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-website-disclaimer)）。
+开发者的业务需要接入符合FIDO UAF标准的协议，并部署符合FIDO UAF标准协议的FIDO服务端。FIDO网址：https://fidoalliance.org/ （见[网站链接免责声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-website-disclaimer)）。
 
 ## IFAA开发准备
 
-开发者的业务接入IIFAA联盟，并接入IIFAA中心服务器。IIFAA网址：<https://www.iifaa.org.cn/technical#paper> （见[网站链接免责声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-website-disclaimer)）。
+开发者的业务接入IIFAA联盟，并接入IIFAA中心服务器。IIFAA网址：https://www.iifaa.org.cn/technical#paper （见[网站链接免责声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-website-disclaimer)）。
 
 ## SOTER开发准备
 
-开发者的业务接入SOTER服务器。SOTER github：<https://github.com/Tencent/soter>（见[网站链接免责声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-website-disclaimer)）。
+开发者的业务接入SOTER服务器。SOTER github：https://github.com/Tencent/soter（见[网站链接免责声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-website-disclaimer)）。
 
 ## 通行密钥开发准备
 

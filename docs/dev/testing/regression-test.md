@@ -1,7 +1,9 @@
 ---
 title: "回归测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/regression-test
+format: md
 ---
+
 
 ![](./img/95566807.png "点击放大")
 

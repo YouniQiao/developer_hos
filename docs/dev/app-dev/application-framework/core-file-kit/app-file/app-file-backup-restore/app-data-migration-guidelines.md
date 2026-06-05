@@ -1,7 +1,9 @@
 ---
 title: "设备升级应用数据迁移适配指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-guidelines
+format: md
 ---
+
 
 * **[应用数据迁移功能介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-overview)**
 * **[适配流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/adaptation-process)**

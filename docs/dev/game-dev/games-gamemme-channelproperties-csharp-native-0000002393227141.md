@@ -1,7 +1,9 @@
 ---
 title: "自定义频道属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channelproperties-csharp-native-0000002393227141
+format: md
 ---
+
 
 游戏多媒体实时信令功能支持设置频道自定义属性，例如频道标签、状态等。同时，还支持监听频道自定义属性的变更，及时感知频道属性的修改。
 

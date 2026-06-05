@@ -4,6 +4,7 @@ title: "Navigation如何隐藏导航栏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-149
 ---
 
+
 **问题现象**
 
 Navigation设置了隐藏属性，仍然出现空白导航栏。跳转至新页面后，导航栏会重新出现。

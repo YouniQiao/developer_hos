@@ -2,7 +2,9 @@
 title: "宣传素材规范及示例"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-publicity-standard-0000002286115530
 has_merged_cells: true
+format: md
 ---
+
 
 | 华为游戏中心素材 |  | 尺寸 | 格式 | 大小要求 | 规范及示例材料下载 |
 | --- | --- | --- | --- | --- | --- |

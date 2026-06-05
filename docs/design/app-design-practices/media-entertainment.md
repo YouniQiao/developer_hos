@@ -2,7 +2,9 @@
 title: 影音娱乐类
 sidebar_label: 影音娱乐类
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples1-0000001957369849
+format: md
 ---
+
 # 影音娱乐类
 
 长视频、短视频、直播、音乐等类型的应用或业务场景很常见。这类场景的核心都是沉浸式的视频播放和互动，围绕此核心场景，此类应用有如下特点：

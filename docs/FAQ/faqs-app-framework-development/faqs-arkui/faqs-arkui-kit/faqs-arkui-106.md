@@ -4,6 +4,7 @@ title: "TextInput如何限制输入字符为某些字符"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-106
 ---
 
+
 TextInput的inputFilter属性可设置正则表达式，用于校验输入字符。校验不通过时，输入无效。参考代码如下：
 
 ```

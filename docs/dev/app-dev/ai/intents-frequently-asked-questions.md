@@ -1,7 +1,9 @@
 ---
 title: "常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-frequently-asked-questions
+format: md
 ---
+
 
 * **[intentName报错Intent 'xxxxxx' is not included in domain 'xxxxxx'. Select an intent from the list of suggestions.如何解决？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-frequently-asked-questions-one)**
 * **[inputParams报错Value should be one of: "intentName", "domain", "intentVersion", "srcEntry", "uiAbility", "serviceExtension", "uiExtension", "form"如何解决？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-frequently-asked-questions-two)**

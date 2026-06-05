@@ -1,7 +1,9 @@
 ---
 title: "Network Kit（网络服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit
+format: md
 ---
+
 
 * **[Network Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-mgmt-overview)**
 * **[Network Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-terminology)**

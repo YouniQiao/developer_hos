@@ -2,7 +2,9 @@
 title: "插件参数设置"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/plugin-parameter-setting-0000002493084596
+format: md
 ---
+
 
 # 插件参数设置
 

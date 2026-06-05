@@ -2,7 +2,9 @@
 title: 文本时钟
 sidebar_label: 文本时钟
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textclock-0000001929656652
+format: md
 ---
+
 # 文本时钟
 
 通过文本形式显示当前日期或时间，支持 12 小时制或 24 小时制的日期或时间显示。相关开发能力可参考 [TextClock](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textclock) 文档。

@@ -1,7 +1,9 @@
 ---
 title: "GPU帧捕获工具：Graphics Profiler抓帧入口"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # GPU帧捕获工具：Graphics Profiler抓帧入口
 

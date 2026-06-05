@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过Server API配置数字商品"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product-server
+format: md
 ---
+
 
 您也可以通过[PMS](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-pmsapi-0000001162548121)（Product Management System）接口，对应用内数字商品的销售完成商品创建、查询、更新、管理促销活动等操作，并实现全球本地化定价。
 

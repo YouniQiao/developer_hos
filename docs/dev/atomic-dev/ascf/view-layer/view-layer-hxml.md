@@ -1,7 +1,9 @@
 ---
 title: "hxml"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/view-layer-hxml
+format: md
 ---
+
 
 传统网页开发采用的是HTML + CSS + JS的组合，其中 HTML 是用来描述当前这个页面的结构，CSS 用来描述页面的样式，JS 用于编写页面逻辑和交互。
 

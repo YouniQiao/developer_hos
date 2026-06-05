@@ -1,7 +1,9 @@
 ---
 title: "更新服务卡片"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-touch-airtouch-0000002410432934
+format: md
 ---
+
 
 1. 在标签服务页面，点击“更新服务卡片”跳转到AirTouch服务页面。
 
@@ -23,8 +25,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmo
 
    | 链接类型 | 配置项 | 填写说明 |
    | --- | --- | --- |
-   | 普通链接跳转 | 鸿蒙元服务 | 输入元服务跳转地址，长度为0~256个字符。  地址为Want类型的json格式，示例如下：  \`````{"bundleName":"xxx","abilityName":"xxx","moduleName":"xxx","parameters":"\{"xxx":"xxx"}`"}```` |
-   | 鸿蒙app | 输入应用跳转地址，长度为0~256个字符。  地址为Want类型的json格式，示例如下：  \`````{"bundleName":"xxx","abilityName":"xxx","moduleName":"xxx","parameters":"\{"xxx":"xxx"}`"}```` |
+   | 普通链接跳转 | 鸿蒙元服务 | 输入元服务跳转地址，长度为0~256个字符。  地址为Want类型的json格式，示例如下：  \`````{"bundleName":"xxx","abilityName":"xxx","moduleName":"xxx","parameters":"\{"xxx":"xxx"}`"\}```` |
+   | 鸿蒙app | 输入应用跳转地址，长度为0~256个字符。  地址为Want类型的json格式，示例如下：  \`````{"bundleName":"xxx","abilityName":"xxx","moduleName":"xxx","parameters":"\{"xxx":"xxx"}`"\}```` |
    | Applinking跳转 | 鸿蒙AppLinking(应用或元服务均适用) | 输入应用链接域名或元服务链接网址。 |
    | 服务路径 | 如果您需要实现碰一碰该标签，打开应用或元服务内指定页面，可以在此输入自定义域名路径，长度为0~256个字符。  例如：/path1/path2/path3 |
    | 自定义参数 | 如果您需要实现碰一碰该标签，打开应用或元服务内指定页面，可以在此输入自定义参数，长度为0~256个字符。  需要按key=value的键值对形式输入，多个键值对之间以“&”分隔。  例如：key1=value1&key2=value2&key3=value3 |

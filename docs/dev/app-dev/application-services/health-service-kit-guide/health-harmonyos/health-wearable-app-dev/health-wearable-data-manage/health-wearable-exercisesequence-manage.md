@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "读取锻炼记录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-exercisesequence-manage
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heal
 
 | 接口名 | 描述 |
 | --- | --- |
-| [readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddata-1)<T extends [ExerciseSequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#exercisesequence)>(request: [ExerciseSequenceReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#exercisesequencereadrequest)): Promise<T[]> | 查询最新一条锻炼记录。 |
+| [readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddata-1)\<T extends [ExerciseSequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#exercisesequence)\>(request: [ExerciseSequenceReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#exercisesequencereadrequest)): Promise\<T[]\> | 查询最新一条锻炼记录。 |
 
 ![](./img/8d3a333b.png)
 

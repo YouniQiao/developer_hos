@@ -2,7 +2,9 @@
 title: "提交已生效类型的数字商品"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/effective-digital-products-for-review-0000002107756845
+format: md
 ---
+
 
 # 提交已生效类型的数字商品
 

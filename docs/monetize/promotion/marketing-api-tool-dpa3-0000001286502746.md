@@ -2,7 +2,9 @@
 title: "全量导入商品通知"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa3-0000001286502746
+format: md
 ---
+
 # 全量导入商品通知
 
 您通过本接口可以实现全量导入商品通知。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "动态照片拍摄(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-moving-photo
+format: md
 ---
+
 
 相机框架提供动态照片拍摄能力，业务应用可以类似拍摄普通照片一样，一键式拍摄得到动态照片。
 

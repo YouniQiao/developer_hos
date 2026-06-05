@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "查询工作空间"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-query-workspace
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ Enterprise Space Kit为应用提供查询工作空间信息的能力。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [queryWorkspace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#queryworkspace)(queryFlag: [QueryType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#querytype)): Promise<WorkspaceInfo[]> | 查询工作空间信息并返回结果。使用Promise异步回调。 |
+| [queryWorkspace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#queryworkspace)(queryFlag: [QueryType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#querytype)): Promise\<WorkspaceInfo[]\> | 查询工作空间信息并返回结果。使用Promise异步回调。 |
 
 ## 开发步骤
 

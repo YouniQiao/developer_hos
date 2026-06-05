@@ -1,7 +1,9 @@
 ---
 title: "如何实现http长连接"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-48
+format: md
 ---
+
 
 可使用定时HTTP请求模拟长连接。参考代码如下：
 

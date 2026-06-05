@@ -1,7 +1,9 @@
 ---
 title: "窗口开发术语"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology
+format: md
 ---
+
 
 ## 窗口类型
 

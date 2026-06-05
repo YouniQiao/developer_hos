@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-extra-parens"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-extra-parens
 

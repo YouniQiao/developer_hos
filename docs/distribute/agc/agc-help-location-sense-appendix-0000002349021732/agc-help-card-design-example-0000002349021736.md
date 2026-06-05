@@ -1,7 +1,9 @@
 ---
 title: "模板卡片设计说明和示例"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-card-design-example-0000002349021736
+format: md
 ---
+
 
 当前模板卡片类型支持图文版、双按钮版、单按钮版三种，卡片样式仅支持2\*2尺寸规格。在卡片设计过程中，您可参照本章节设计不同业务类型的模板卡片。
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-redeclare"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-redeclare
 

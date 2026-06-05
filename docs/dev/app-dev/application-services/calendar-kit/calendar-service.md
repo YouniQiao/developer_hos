@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "注册并管理一键服务日程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendar-service
+format: md
 ---
+
 
 ## 场景介绍
 

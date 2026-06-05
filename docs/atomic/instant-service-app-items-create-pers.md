@@ -1,7 +1,9 @@
 ---
 title: "创建子服务及个性化设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-items-create-pers
+format: md
 ---
+
 
 开发者可在此页签创建子服务后，再进行个性化设置。
 

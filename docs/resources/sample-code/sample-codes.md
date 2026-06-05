@@ -1,7 +1,9 @@
 ---
 title: Sample Codes
 sidebar_label: Sample Codes
+format: md
 ---
+
 
 # Sample Codes
 

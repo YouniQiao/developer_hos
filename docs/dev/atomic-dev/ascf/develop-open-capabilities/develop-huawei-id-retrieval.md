@@ -1,7 +1,9 @@
 ---
 title: "获取华为账号用户信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-huawei-id-retrieval
+format: md
 ---
+
 
 华为账号登录是基于[OAuth 2.0协议标准](https://oauth.net/2/)和[OpenID Connect协议](https://openid.net/connect/)标准构建的OAuth2.0授权登录系统，元服务可以方便地获取华为账号用户的身份标识，快速建立用户体系。
 

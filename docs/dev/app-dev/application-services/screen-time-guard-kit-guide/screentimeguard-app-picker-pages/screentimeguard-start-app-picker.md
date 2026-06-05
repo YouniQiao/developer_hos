@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "拉起应用选择页"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-app-picker
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -28,7 +30,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [startAppPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-app-picker#startapppicker)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), appSelection: [guardService.AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo)): Promise<string[]> | 拉起应用选择页。 |
+| [startAppPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-app-picker#startapppicker)(context: [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context), appSelection: [guardService.AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo)): Promise\<string[]\> | 拉起应用选择页。 |
 
 ![](./img/37e919d1.png)
 

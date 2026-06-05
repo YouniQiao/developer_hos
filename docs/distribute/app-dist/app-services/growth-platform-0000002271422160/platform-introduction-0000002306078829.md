@@ -2,7 +2,9 @@
 title: "登录指南"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/platform-introduction-0000002306078829
+format: md
 ---
+
 
 # 登录指南
 

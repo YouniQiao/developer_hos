@@ -1,7 +1,9 @@
 ---
 title: "Content Embed Kit（内容嵌入服务）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit
+format: md
 ---
+
 
 * **[Content Embed Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-overview)**
 * **[客户端和服务端交互流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/client-server-interaction-process)**

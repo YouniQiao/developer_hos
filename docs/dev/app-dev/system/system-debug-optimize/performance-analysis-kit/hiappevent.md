@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "事件订阅"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent
+format: md
 ---
+
 
 * **[HiAppEvent介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-intro)**
 * **[使用HiAppEvent订阅事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/event-subscription)**

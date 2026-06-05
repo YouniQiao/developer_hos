@@ -1,7 +1,9 @@
 ---
 title: "检查变量"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 检查变量
 

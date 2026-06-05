@@ -2,7 +2,9 @@
 title: "定档"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-big-event-scheduling-0000002136952745
+format: md
 ---
+
 
 # 定档
 

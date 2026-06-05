@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "解除应用访问限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-release-apps-restriction
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -25,7 +27,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [releaseAppsRestriction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#releaseappsrestriction)(appInfo: [AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo), restrictionType: [RestrictionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#restrictiontype)): Promise<void> | 根据传入的应用token数组和限制类型（允许/禁用清单），解除对应应用的访问限制。 |
+| [releaseAppsRestriction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#releaseappsrestriction)(appInfo: [AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo), restrictionType: [RestrictionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#restrictiontype)): Promise\<void\> | 根据传入的应用token数组和限制类型（允许/禁用清单），解除对应应用的访问限制。 |
 
 ![](./img/930335da.png)
 

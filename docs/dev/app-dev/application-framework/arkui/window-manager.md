@@ -1,7 +1,9 @@
 ---
 title: "窗口管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-manager
+format: md
 ---
+
 
 * **[窗口开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-overview)**
 * **[管理应用窗口（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage)**

@@ -1,7 +1,9 @@
 ---
 title: "使用code cache加速编译"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-code-cache
+format: md
 ---
+
 
 ##code cache简介
 

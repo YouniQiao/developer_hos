@@ -1,7 +1,9 @@
 ---
 title: "PGA技术支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pga-technical-support-0000002081816545
+format: md
 ---
+
 
 当您使用PGA遇到问题时，可以按照以下顺序寻求帮助。
 

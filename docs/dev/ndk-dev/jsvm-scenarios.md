@@ -1,7 +1,9 @@
 ---
 title: "JSVM-API典型使用场景指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-scenarios
+format: md
 ---
+
 
 * **[JSVM-API调试&定位](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-debugger-cpuprofiler-heapsnapshot)**
 * **[使用JSVM-API接口进行Trace相关开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-trace)**

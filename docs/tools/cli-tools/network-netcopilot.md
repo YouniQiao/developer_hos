@@ -1,7 +1,9 @@
 ---
 title: "netcopilot工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # netcopilot工具
 

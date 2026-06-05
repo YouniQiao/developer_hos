@@ -1,7 +1,9 @@
 ---
 title: "基础"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-basis
+format: md
 ---
+
 
 * **[API可用判断](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-caniuse)**
 * **[系统信息](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-system-info)**

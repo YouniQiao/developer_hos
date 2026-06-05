@@ -1,7 +1,9 @@
 ---
 title: "@security/no-unsafe-ecdsa"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-unsafe-ecdsa
 

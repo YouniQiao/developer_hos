@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基于服务账号生成鉴权令牌"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-jwt-token
+format: md
 ---
+
 
 ## 概述
 

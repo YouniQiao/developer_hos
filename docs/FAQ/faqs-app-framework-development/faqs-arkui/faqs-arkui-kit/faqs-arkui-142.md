@@ -4,6 +4,7 @@ title: "半模态转场如何控制固定高度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-142
 ---
 
+
 通过设置bindSheet()的参数options对高度进行控制。参考代码如下：
 
 ```

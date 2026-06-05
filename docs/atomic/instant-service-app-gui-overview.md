@@ -1,7 +1,9 @@
 ---
 title: "概览"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-gui-overview
+format: md
 ---
+
 
 为了更好地帮助应用商家做好服务生态的经营，平台构建了子服务、商品、门店等一系列场景，帮助商家在HarmonyOS公域流量场进行分发和引流。
 

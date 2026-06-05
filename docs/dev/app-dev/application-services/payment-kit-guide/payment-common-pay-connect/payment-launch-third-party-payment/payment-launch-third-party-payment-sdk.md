@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "基于接口拉起方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment-sdk
+format: md
 ---
+
 
 ![](./img/174a5aa4.png)
 

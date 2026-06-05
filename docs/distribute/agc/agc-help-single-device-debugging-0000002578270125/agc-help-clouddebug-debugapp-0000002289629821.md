@@ -1,7 +1,9 @@
 ---
 title: "调试应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-debugapp-0000002289629821
+format: md
 ---
+
 
 通过云调试服务，您可以在不同HarmonyOS 5及以上设备上调试HAP/APP格式的应用，从而提前发现并解决问题。
 

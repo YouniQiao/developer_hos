@@ -2,7 +2,9 @@
 title: 播控中心
 sidebar_label: 播控中心
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/broadcasting-control-0000001957017133
+format: md
 ---
+
 # 播控中心
 
 ### 媒体播控

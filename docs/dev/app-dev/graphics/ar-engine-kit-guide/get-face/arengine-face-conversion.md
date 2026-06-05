@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "人脸识别与跟踪介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-face-conversion
+format: md
 ---
+
 
 AR Engine提供人脸表情跟踪的能力，跟踪获取人脸图像信息，实时将其理解成人脸表情内容，并转化成各种表情参数。
 

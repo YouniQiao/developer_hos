@@ -1,7 +1,9 @@
 ---
 title: "主线程超时事件介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events
+format: md
 ---
+
 
 ## 简介
 
@@ -32,14 +34,14 @@ setEventConfig接口不提供主线程超时结束自动停止采样栈的功能
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setEventConfig(name: string, config: Record<string, ParamType>): Promise<void>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventseteventconfig15) | 设置主线程采样栈参数接口。 |
+| [setEventConfig(name: string, config: Record\<string, ParamType\>): Promise\<void\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventseteventconfig15) | 设置主线程采样栈参数接口。 |
 
 ### setEventConfig接口参数设置说明
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | name | string | 是 | 主线程超时事件名称，此处应为常量hiappevent.event.MAIN\_THREAD\_JANK。 |
-| config | Record<string, ParamType> | 是 | 主线程超时采样栈配置参数。 |
+| config | Record\<string, ParamType\> | 是 | 主线程超时采样栈配置参数。 |
 
 主线程超时采样栈配置参数的定义。
 
@@ -126,7 +128,7 @@ log\_type=1时，所有参数均需设置。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [configEventPolicy(policy: EventPolicy): Promise<void>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventconfigeventpolicy22) | 设置主线程采样栈参数接口。支持超时卡顿结束自动停止采样。 |
+| [configEventPolicy(policy: EventPolicy): Promise\<void\>](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent#hiappeventconfigeventpolicy22) | 设置主线程采样栈参数接口。支持超时卡顿结束自动停止采样。 |
 
 ### configEventPolicy接口参数设置说明
 

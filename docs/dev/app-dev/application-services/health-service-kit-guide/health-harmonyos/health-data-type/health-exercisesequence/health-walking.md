@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "健走"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-walking
+format: md
 ---
+
 
 健走相关锻炼记录类型如下：
 

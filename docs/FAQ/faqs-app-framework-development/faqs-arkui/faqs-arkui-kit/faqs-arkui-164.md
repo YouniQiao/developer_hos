@@ -4,6 +4,7 @@ title: "如何获取router.back传递的参数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-164
 ---
 
+
 在 onPageShow 回调方法中使用 Router模块的getParams方法来获取传递过来的参数。参考代码如下：
 
 ```

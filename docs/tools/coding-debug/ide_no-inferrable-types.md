@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-inferrable-types"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-inferrable-types
 

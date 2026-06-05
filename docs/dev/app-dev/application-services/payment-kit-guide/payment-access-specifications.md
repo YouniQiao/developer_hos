@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入规范学习"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-access-specifications
+format: md
 ---
+
 
 为了确保用户获得良好的支付体验，Payment Kit制定了相关接入规范，请开发者遵照执行，具体要求（非强制性）如下：
 

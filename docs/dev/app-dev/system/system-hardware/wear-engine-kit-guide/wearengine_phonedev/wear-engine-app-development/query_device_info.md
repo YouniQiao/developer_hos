@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "穿戴设备信息查询"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_device_info
+format: md
 ---
+
 
 ```
 // 在使用Wear Engine服务前，请导入WearEngine与相关模块

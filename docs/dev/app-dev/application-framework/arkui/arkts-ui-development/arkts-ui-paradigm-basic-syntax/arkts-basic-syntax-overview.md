@@ -1,7 +1,9 @@
 ---
 title: "基本语法概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-basic-syntax-overview
+format: md
 ---
+
 
 在初步了解ArkTS语言后，本指南将以具体的示例来说明ArkTS的基本组成。
 

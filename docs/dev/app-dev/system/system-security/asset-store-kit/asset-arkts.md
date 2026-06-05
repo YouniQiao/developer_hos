@@ -1,7 +1,9 @@
 ---
 title: "Asset Store Kit开发指导(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-arkts
+format: md
 ---
+
 
 * **[新增关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-add)**
 * **[删除关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-remove)**

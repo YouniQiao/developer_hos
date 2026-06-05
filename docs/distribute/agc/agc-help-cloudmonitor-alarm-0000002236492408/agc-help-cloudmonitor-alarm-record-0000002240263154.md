@@ -1,7 +1,9 @@
 ---
 title: "查看告警记录"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-alarm-record-0000002240263154
+format: md
 ---
+
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。
 2. 在项目列表中选择您的项目。

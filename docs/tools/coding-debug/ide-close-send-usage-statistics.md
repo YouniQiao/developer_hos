@@ -1,7 +1,9 @@
 ---
 title: "关闭数据采集"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 关闭数据采集
 

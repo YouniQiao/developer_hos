@@ -1,7 +1,9 @@
 ---
 title: "创建活动"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-setup-activities-create-0000002358761450
+format: md
 ---
+
 
 华为应用市场面向所有实名认证的联运应用及游戏开发者开放运营活动管理功能，您可自助创建运营活动，通过审核后即可在华为应用市场、游戏中心正式上线，实现拉新、促活、创收等经营目标。
 

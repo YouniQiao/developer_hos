@@ -2,7 +2,9 @@
 
 title: "获取云开发资源支持（可选）"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 获取云开发资源支持（可选）
 

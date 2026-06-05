@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/comma-spacing"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/comma-spacing
 

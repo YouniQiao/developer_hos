@@ -2,7 +2,9 @@
 title: "快应用"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_quickapp-0000001316178670
+format: md
 ---
+
 
 
 * **[SDK接口的版本更新说明](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_quickapp_sdk-version-0000001316338170)**

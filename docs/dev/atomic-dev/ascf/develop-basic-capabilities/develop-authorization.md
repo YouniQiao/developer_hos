@@ -1,7 +1,9 @@
 ---
 title: "授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization
+format: md
 ---
+
 
 部分接口在使用之前，需要经过用户授权同意，按照使用范围，这些接口被分成多个scope。用户按scope范围进行授权，此时，该scope对应的所有接口均可以被调用。
 

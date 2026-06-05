@@ -2,7 +2,9 @@
 title: "核准（备案）准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-preparation
 has_merged_cells: true
+format: md
 ---
+
 
 ## 注册账号与实名认证
 

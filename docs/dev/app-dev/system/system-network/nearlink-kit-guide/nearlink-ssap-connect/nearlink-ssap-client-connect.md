@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "SSAP客户端"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-ssap-client-connect
+format: md
 ---
+
 
 ![](./img/74c7edd0.png)
 
@@ -17,13 +19,13 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/near
 | 接口名 | 描述 |
 | --- | --- |
 | [createClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#createclient)(address: string): Client | 创建ssap客户端实例。 |
-| [connect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#connect)(): Promise<void> | 向服务端发起连接。 |
-| [getServices](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#getservices)(): Promise<Array<Service>> | 获取服务端支持的服务列表。 |
-| [readProperty](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#readproperty)(property: Property): Promise<Property> | 读取服务端属性。 |
-| [writeProperty](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#writeproperty)(property: Property, writeType: PropertyWriteType): Promise<void> | 写入服务端属性。 |
-| [setPropertyNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#setpropertynotification)(property: Property, enable: boolean): Promise<void> | 启用/禁用某个属性变化的通知。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#on-propertychange)(type: 'propertyChange', callback: Callback<Property>): void | 订阅属性变化事件。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#on-connectionstatechange)(type: 'connectionStateChange', callback: Callback<ConnectionChangeState>): void | 订阅连接状态变化事件。 |
+| [connect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#connect)(): Promise\<void\> | 向服务端发起连接。 |
+| [getServices](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#getservices)(): Promise\<Array<Service\>> | 获取服务端支持的服务列表。 |
+| [readProperty](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#readproperty)(property: Property): Promise\<Property\> | 读取服务端属性。 |
+| [writeProperty](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#writeproperty)(property: Property, writeType: PropertyWriteType): Promise\<void\> | 写入服务端属性。 |
+| [setPropertyNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#setpropertynotification)(property: Property, enable: boolean): Promise\<void\> | 启用/禁用某个属性变化的通知。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#on-propertychange)(type: 'propertyChange', callback: Callback\<Property\>): void | 订阅属性变化事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-ssap#on-connectionstatechange)(type: 'connectionStateChange', callback: Callback\<ConnectionChangeState\>): void | 订阅连接状态变化事件。 |
 
 ## 开发步骤
 

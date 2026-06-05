@@ -2,7 +2,9 @@
 
 title: "在端侧调用云对象"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # 在端侧调用云对象
 

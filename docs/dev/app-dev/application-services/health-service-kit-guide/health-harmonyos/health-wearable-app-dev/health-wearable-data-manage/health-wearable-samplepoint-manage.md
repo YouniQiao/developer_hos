@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "读取运动健康采样数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-samplepoint-manage
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -16,7 +18,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heal
 
 | 接口名 | 描述 |
 | --- | --- |
-| [readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddata)<T extends [SamplePoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#samplepoint)>(request: [SamplePointReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#samplepointreadrequest)): Promise<T[]> | 查询最新一条运动健康采样数据。 |
+| [readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddata)\<T extends [SamplePoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#samplepoint)\>(request: [SamplePointReadRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#samplepointreadrequest)): Promise\<T[]\> | 查询最新一条运动健康采样数据。 |
 
 ![](./img/0d4a19f7.png)
 

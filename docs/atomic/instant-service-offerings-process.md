@@ -1,7 +1,9 @@
 ---
 title: "商品管理流程说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-process
+format: md
 ---
+
 
 商家可通过开放接口对商品进行全生命周期管理，涵盖创建、更新、下架及删除等操作。所有商品变更均需经平台审核生效，确保合规与体验一致。接口调用流程如下：
 

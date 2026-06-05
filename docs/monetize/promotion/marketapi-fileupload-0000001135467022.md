@@ -2,7 +2,9 @@
 title: "文件上传"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-fileupload-0000001135467022
+format: md
 ---
+
 # 文件上传
 
 ## 功能介绍
@@ -20,7 +22,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-f
 | --- | --- |
 | 承载协议 | HTTPS PUT |
 | 接口方向 | 开发者服务器-&gt;AGC Cloud Storage服务端 |
-| 接口URL | https://ops-server-drcn.agcstorage.link/v0/agpromotion-8zz2x/\{userid\}/\{filename\} |
+| 接口URL | https://ops-server-drcn.agcstorage.link/v0/agpromotion-8zz2x/\\{userid\\}/\\{filename\\} |
 | 数据格式 | 请求消息：Content-Type: application/octet-stream  响应消息：Content-Type: application/json |
 
 ## 请求参数
@@ -37,7 +39,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-f
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
 | Host | M | String | 域名，提供存储开放能力的agc cloud storage的区域存储域名。  固定为：ops-server-drcn.agcstorage.link |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)中获取的access\_token。  client\_id使用固定值：626003618444620160  client\_secret使用固定值：E7DAB4B9DE6BC23FF611CB6D93CEE2427DD77C4B252CD5DED7486BC28B5B82AB |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\\{access\_token\\}”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)中获取的access\_token。  client\_id使用固定值：626003618444620160  client\_secret使用固定值：E7DAB4B9DE6BC23FF611CB6D93CEE2427DD77C4B252CD5DED7486BC28B5B82AB |
 | client\_id | M | String | 客户端标识，固定为：626003618444620160。 |
 | productId | M | String | 项目ID，固定为：736430079245712275。 |
 

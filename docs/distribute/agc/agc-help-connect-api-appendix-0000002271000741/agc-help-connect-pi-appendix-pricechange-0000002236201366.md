@@ -1,7 +1,9 @@
 ---
 title: "价格换算规则"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-pi-appendix-pricechange-0000002236201366
+format: md
 ---
+
 
 使用AppGallery Connect API传入应用价格或商品价格时，由于价格只支持两位小数并且不同国家/地区支持的价格规则不一样，因此AppGallery Connect会对传入的价格进行换算，将价格调整为换算后的价格。
 

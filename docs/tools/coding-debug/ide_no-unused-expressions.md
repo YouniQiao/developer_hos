@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-unused-expressions"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-unused-expressions
 

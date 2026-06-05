@@ -2,7 +2,9 @@
 title: "监测链接接入指导"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-hm-monitoring-link-0000002481479774
+format: md
 ---
+
 # 监测链接接入指导
 
 ## 业务介绍

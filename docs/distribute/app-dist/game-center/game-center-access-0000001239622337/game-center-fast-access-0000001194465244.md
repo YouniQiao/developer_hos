@@ -2,7 +2,9 @@
 title: "RPK游戏接入"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-fast-access-0000001194465244
+format: md
 ---
+
 
 # RPK游戏接入
 

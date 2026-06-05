@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "数字人民币支付场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay
+format: md
 ---
+
 
 ![](./img/f23df388.png)
 
@@ -55,7 +57,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/paym
 
 | 接口名 | 描述 |
 | --- | --- |
-| requestEcnyPayment(context:common.Context, orderInfo: EcnyOrderInfo): Promise<EcnyPayResult>; | 拉起数字人民币收银台。 |
+| requestEcnyPayment(context:common.Context, orderInfo: EcnyOrderInfo): Promise\<EcnyPayResult\>; | 拉起数字人民币收银台。 |
 
 ## 开发步骤
 

@@ -1,7 +1,9 @@
 ---
 title: "PageAbility组件开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability
+format: md
 ---
+
 
 * **[PageAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-overview)**
 * **[PageAbility组件配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-configuration)**

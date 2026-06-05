@@ -2,7 +2,9 @@
 title: "技术支持"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-support-0000002060488833
+format: md
 ---
+
 
 # 技术支持
 

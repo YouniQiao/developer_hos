@@ -1,6 +1,8 @@
 ---
 title: "导出OpenHarmony三方库中心仓元数据至ohpm-repo"
+format: md
 ---
+
 
 # 导出OpenHarmony三方库中心仓元数据至ohpm-repo
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "拉起三方支付收银台"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment
+format: md
 ---
+
 
 * **[基于URL跳转方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment-url)**
 * **[基于接口拉起方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment-sdk)**

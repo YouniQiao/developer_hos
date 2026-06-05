@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/array-type"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/array-type
 

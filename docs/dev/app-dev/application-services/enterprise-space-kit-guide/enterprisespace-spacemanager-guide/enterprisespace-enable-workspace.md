@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使能工作空间"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-enable-workspace
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ Enterprise Space Kit为应用提供使能双空间的能力。需要先使能工
 
 | 接口名 | 描述 |
 | --- | --- |
-| [enableWorkspace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#enableworkspace)(enable: boolean): Promise<void> | 使能工作空间。使用Promise异步回调。 |
+| [enableWorkspace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/enterprisespace-spacemanager#enableworkspace)(enable: boolean): Promise\<void\> | 使能工作空间。使用Promise异步回调。 |
 
 ## 开发步骤
 

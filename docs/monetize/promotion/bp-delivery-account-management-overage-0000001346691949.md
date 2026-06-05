@@ -2,7 +2,9 @@
 title: "查看账户余额"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-account-management-overage-0000001346691949
+format: md
 ---
+
 # 查看账户余额
 
 华为应用市场应用推广平台的余额如下图所示。

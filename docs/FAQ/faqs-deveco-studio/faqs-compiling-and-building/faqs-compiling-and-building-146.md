@@ -4,6 +4,7 @@ title: "编译报错“Invalid form name 'xxx'.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-146
 ---
 
+
 **错误描述**
 
 卡片名称无效。

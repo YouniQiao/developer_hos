@@ -1,7 +1,9 @@
 ---
 title: "如何跳转到系统文件管理App界面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-116
+format: md
 ---
+
 
 可以使用openLink的方式打开，在[openLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#openlink12)接口的link字段中传入系统文件管理页面的URL信息，示例代码如下：
 

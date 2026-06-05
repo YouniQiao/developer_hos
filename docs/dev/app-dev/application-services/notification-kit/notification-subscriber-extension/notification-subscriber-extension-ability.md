@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通知订阅扩展能力概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-subscriber-extension-ability
+format: md
 ---
+
 
 ## 功能简介
 

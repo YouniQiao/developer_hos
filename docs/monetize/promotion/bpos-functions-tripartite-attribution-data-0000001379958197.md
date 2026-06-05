@@ -2,7 +2,9 @@
 title: "转化数据"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-data-0000001379958197
+format: md
 ---
+
 # 转化数据
 
 ## 概述

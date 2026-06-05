@@ -1,7 +1,9 @@
 ---
 title: "背景流光"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-streamer
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/naming-convention"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/naming-convention
 

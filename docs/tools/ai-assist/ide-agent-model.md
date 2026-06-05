@@ -1,7 +1,9 @@
 ---
 title: "模型（Model）配置"
 displayed_sidebar: aiAssistSidebar
+format: md
 ---
+
 
 # 模型（Model）配置
 

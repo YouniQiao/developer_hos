@@ -1,7 +1,9 @@
 ---
 title: "业务概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-introduction-0000002377028317
+format: md
 ---
+
 
 |  |  |
 | --- | --- |

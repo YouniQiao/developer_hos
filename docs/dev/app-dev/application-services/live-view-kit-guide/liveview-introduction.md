@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Live View Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction
+format: md
 ---
+
 
 Live View Kit（实况窗服务）支持应用将订单或者服务的实时状态信息变化在设备的关键界面展示，并对展示信息的生命周期、用户界面UI效果等进行管理。
 

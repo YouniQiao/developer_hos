@@ -4,6 +4,7 @@ title: "如何将设备中的截屏图片导出到本地"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-28
 ---
 
+
 使用DevEco Studio的截图功能。
 
 1. 连接设备到电脑。

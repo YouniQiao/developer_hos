@@ -1,7 +1,9 @@
 ---
 title: "radio-group"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-radio-group
+format: md
 ---
+
 
 单项选择器，内部由多个radio组成。
 

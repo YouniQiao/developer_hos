@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "反光、光线暗或者弱纹理场景（输入图像颜色变化小）下无法识别平面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-3
+format: md
 ---
+
 
 ## 现象描述
 

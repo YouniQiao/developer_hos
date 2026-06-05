@@ -2,7 +2,9 @@
 title: "错误码说明"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_quickapp_errcode-0000001410983858
+format: md
 ---
+
 
 
 #### 报表接口错误码

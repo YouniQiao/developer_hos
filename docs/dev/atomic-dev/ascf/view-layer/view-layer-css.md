@@ -1,7 +1,9 @@
 ---
 title: "CSS"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/view-layer-css
+format: md
 ---
+
 
 ASCF框架样式和网页CSS样式大体相同，用于描述hxml的组件样式，决定hxml的组件显示效果。
 

@@ -1,7 +1,9 @@
 ---
 title: "发送客户端消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sendtoclient-js-0000002395190509
+format: md
 ---
+
 
 如需和房间内其他玩家进行通信，玩家可通过发送自定义消息的方式实现。
 

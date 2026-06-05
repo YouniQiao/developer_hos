@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/comma-spacing"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/comma-spacing
 

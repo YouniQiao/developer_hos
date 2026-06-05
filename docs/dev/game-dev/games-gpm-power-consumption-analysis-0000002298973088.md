@@ -1,7 +1,9 @@
 ---
 title: "功耗分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-power-consumption-analysis-0000002298973088
+format: md
 ---
+
 
 游戏性能管理服务采集游戏现网运行功耗数据，为开发者提供专业功耗分析报表，以不同维度展示各器件功耗统计图表，帮助开发者识别、分析游戏性能问题。
 

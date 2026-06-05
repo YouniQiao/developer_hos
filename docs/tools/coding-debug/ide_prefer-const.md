@@ -1,7 +1,9 @@
 ---
 title: "prefer-const"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # prefer-const
 

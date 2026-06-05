@@ -1,7 +1,9 @@
 ---
 title: 跨平台框架
 sidebar_label: 跨平台框架
+format: md
 ---
+
 
 # 跨平台框架
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/typedef"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/typedef
 

@@ -1,7 +1,9 @@
 ---
 title: "ArkUI（方舟UI框架）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui
+format: md
 ---
+
 
 * **[ArkUI简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-overview)**
 * **[UI开发 (ArkTS声明式开发范式)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-development)**

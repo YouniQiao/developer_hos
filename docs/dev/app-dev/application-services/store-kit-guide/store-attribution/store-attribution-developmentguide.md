@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "登记归因来源及转化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-developmentguide
+format: md
 ---
+
 
 ![](./img/d6af9331.png)
 
@@ -20,8 +22,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stor
 
 | 接口名 | 描述 |
 | --- | --- |
-| registerSource(adSourceInfo: AdSourceInfo): Promise<void> | 登记归因来源信息接口。 |
-| registerTrigger(adTriggerInfo: AdTriggerInfo): Promise<void> | 登记归因转化信息接口。 |
+| registerSource(adSourceInfo: AdSourceInfo): Promise\<void\> | 登记归因来源信息接口。 |
+| registerTrigger(adTriggerInfo: AdTriggerInfo): Promise\<void\> | 登记归因转化信息接口。 |
 
 ## 开发步骤
 

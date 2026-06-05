@@ -1,7 +1,9 @@
 ---
 title: "Ime工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-hdc-commands-guide
+format: md
 ---
+
 
 ![](./img/62a16ab5.png)
 

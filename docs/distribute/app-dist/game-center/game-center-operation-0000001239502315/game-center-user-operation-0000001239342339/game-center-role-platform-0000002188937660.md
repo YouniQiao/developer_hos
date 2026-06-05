@@ -2,7 +2,9 @@
 title: "华为角色交易平台"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-role-platform-0000002188937660
+format: md
 ---
+
 
 # 华为角色交易平台
 

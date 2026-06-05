@@ -1,7 +1,9 @@
 ---
 title: "FA模型开发概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fa-model-development-overview
+format: md
 ---
+
 
 基于[FA模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#fa模型)开发应用时，在应用模型部分，涉及如下开发过程。
 

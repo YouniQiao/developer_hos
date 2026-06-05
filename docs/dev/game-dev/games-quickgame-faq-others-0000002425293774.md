@@ -1,7 +1,9 @@
 ---
 title: "其他开发问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-others-0000002425293774
+format: md
 ---
+
 
 ## 快游戏
 

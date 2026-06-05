@@ -4,6 +4,7 @@ title: "C/C++项目三方依赖库未打包到HAP"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-22
 ---
 
+
 **问题现象**
 
 C/C++项目依赖三方so时，在打包生成HAP后，发现三方so未打包到HAP中。

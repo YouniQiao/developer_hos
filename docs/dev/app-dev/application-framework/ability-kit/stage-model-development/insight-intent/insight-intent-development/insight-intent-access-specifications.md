@@ -1,7 +1,9 @@
 ---
 title: "附录：标准意图接入规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-access-specifications
+format: md
 ---
+
 
 ## 影音垂域（MediaDomain）
 
@@ -51,7 +53,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | code | number | 是 | 返回结果码：0表示成功，其他值表示失败。如下：  - 100060101：不支持播放会员歌曲、付费歌曲。  - 100060102：帐户已失效，且歌曲没有试听片段。  - 100060201：开启了儿童保护或登录儿童帐户场景、脏标的歌曲。  - 100060202：歌单已下架，无法播放。  - 100060203：歌曲在本平台版权到期，无法播放。  - 100060301：歌曲/歌手被加入了屏蔽名单，无法播放。  - 100060401：软件故障。 | 100060101 |
-| result | object | 是 | 返回结果对象。以键值对形式返回，字符数不超过8000字符。 | {"musicSize":"4M","dataReceiveTime":1704868765000} |
+| result | object | 是 | 返回结果对象。以键值对形式返回，字符数不超过8000字符。 | \{"musicSize":"4M","dataReceiveTime":1704868765000\} |
 
 ### 播放有声
 
@@ -73,7 +75,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | code | number | 是 | 返回结果码：0表示成功，其他值表示失败。支持自定义。  【错误类别1】资源不存在：  - 100070101：软件故障。 | 100070101 |
-| result | object | 是 | 返回结果对象。以键值对形式返回，字符数不超过8000字符。 | {"AudioSize":"4M","dataReceiveTime":102154151} |
+| result | object | 是 | 返回结果对象。以键值对形式返回，字符数不超过8000字符。 | \{"AudioSize":"4M","dataReceiveTime":102154151\} |
 
 ## 娱乐垂域（EntertainmentDomain）
 
@@ -113,9 +115,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | entityId | string | 否 | 意图实体ID，长度不超过64字符。 | "12949589" |
-| srcLocation | object | 否 | 出发地信息，包含字段：  - locationSystem：指定坐标系（默认使用GCJ-02坐标系）。  - poiId：poi的唯一标识。  - locationName：地点名称。  - longitude：经度。  - latitude：纬度。  - address：详细地址信息。 | {  "locationSystem": "GCJ02",  "poiId": "1236",  "locationName": "北京站",  "latitude": "39.902895",  "longitude": "116.427915",  "address": "北京市东城区北京站"  } |
-| dstLocation | object | 否 | 目的地的信息，包含字段：  - locationSystem：指定坐标系（默认使用GCJ-02坐标系）。  - poiId：poi的唯一标识。  - locationName：地点名称。  - longitude：经度。  - latitude：纬度。  - address：详细地址信息。 | {  "locationSystem": "GCJ02",  "poiId": "1248",  "locationName": "北京西站",  "latitude": "39.89534",  "longitude": "116.32128",  "address": "北京市丰台区北京西站"  } |
-| wayPoints | array | 否 | 途经点Array：语音入口调用时必填Array<PoiLocation>，途径点包含字段与srcLocation中的字段一致。 | [{  "locationSystem": "GCJ02",  "poiId": "1445",  "locationName": "前门东大街社区",  "latitude": "39.89995",  "longitude": "116.35628",  "address": "北京市东城区前门街道"  }] |
+| srcLocation | object | 否 | 出发地信息，包含字段：  - locationSystem：指定坐标系（默认使用GCJ-02坐标系）。  - poiId：poi的唯一标识。  - locationName：地点名称。  - longitude：经度。  - latitude：纬度。  - address：详细地址信息。 | \{  "locationSystem": "GCJ02",  "poiId": "1236",  "locationName": "北京站",  "latitude": "39.902895",  "longitude": "116.427915",  "address": "北京市东城区北京站"  \} |
+| dstLocation | object | 否 | 目的地的信息，包含字段：  - locationSystem：指定坐标系（默认使用GCJ-02坐标系）。  - poiId：poi的唯一标识。  - locationName：地点名称。  - longitude：经度。  - latitude：纬度。  - address：详细地址信息。 | \{  "locationSystem": "GCJ02",  "poiId": "1248",  "locationName": "北京西站",  "latitude": "39.89534",  "longitude": "116.32128",  "address": "北京市丰台区北京西站"  \} |
+| wayPoints | array | 否 | 途经点Array：语音入口调用时必填Array\<PoiLocation\>，途径点包含字段与srcLocation中的字段一致。 | [\{  "locationSystem": "GCJ02",  "poiId": "1445",  "locationName": "前门东大街社区",  "latitude": "39.89995",  "longitude": "116.35628",  "address": "北京市东城区前门街道"  \}] |
 | dstLocationType | string | 否 | 目的地类型，比如"家"、"公司"等。 | "家" |
 | trafficType | string | 否 | 交通方式。  - Drive：驾车（默认值）。  - Walk：步行。  - Cycle：骑行。  - Bus：公交。  - Subway：地铁。 | "Cycle" |
 
@@ -161,8 +163,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | entityId | string | 否 | 意图实体ID，长度不超过64字符。 | "12949589" |
-| srcLocation | object | 否 | 出发地信息，包含以下字段：  - locationSystem：指定坐标系（默认使用GCJ-02）。  - poiId：poi的唯一标识。  - locationName：地点名称。  - longitude：经度。  - latitude：纬度。  - address：详细地址信息。 | {  "locationSystem": "GCJ02",  "poiId": "1245",  "locationName": "北京站",  "latitude": "39.902895",  "longitude": "116.427915",  "address": "北京市东城区北京站"  } |
-| dstLocation | object | 否 | 目的地信息，包含以下字段：  - locationSystem：指定坐标系（默认使用GCJ-02）。  - poiId：poi的唯一标识。  - locationName：地点名称。  - longitude：经度。  - latitude：纬度。  - address：详细地址信息。 | {  "locationSystem": "GCJ02",  "poiId": "1232",  "locationName": "北京西站",  "latitude": "39.89534",  "longitude": "116.32128",  "address": "北京市丰台区北京西站"  } |
+| srcLocation | object | 否 | 出发地信息，包含以下字段：  - locationSystem：指定坐标系（默认使用GCJ-02）。  - poiId：poi的唯一标识。  - locationName：地点名称。  - longitude：经度。  - latitude：纬度。  - address：详细地址信息。 | \{  "locationSystem": "GCJ02",  "poiId": "1245",  "locationName": "北京站",  "latitude": "39.902895",  "longitude": "116.427915",  "address": "北京市东城区北京站"  \} |
+| dstLocation | object | 否 | 目的地信息，包含以下字段：  - locationSystem：指定坐标系（默认使用GCJ-02）。  - poiId：poi的唯一标识。  - locationName：地点名称。  - longitude：经度。  - latitude：纬度。  - address：详细地址信息。 | \{  "locationSystem": "GCJ02",  "poiId": "1232",  "locationName": "北京西站",  "latitude": "39.89534",  "longitude": "116.32128",  "address": "北京市丰台区北京西站"  \} |
 | dstLocationType | string | 否 | 目的地类型，比如"家"、"公司"。 | "家" |
 | hwChannelId | string | 否 | 标识入口的渠道标识。  - "0x00000100"：小艺建议。  - "0x00000200"：小艺语音。  - "0x00000300"：拖拽入口。 | "0x00000100" |
 | taxiType | number | 否 | 车型，默认为0（默认车型）。  - 0：默认车型。  - 1：快车。  - 2：出租车。  - 3：拼车。  - 4：顺风车。  - 5：专车。 | 1 |
@@ -256,7 +258,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | code | number | 是 | 返回结果码：0表示成功，其他值表示失败。支持自定义。 | 0 |
-| result | object | 是 | 返回结果对象。以键值对形式返回，字符数不超过8000个。 | {"lines":  [{"name": "1号线", "crowding": "轻度拥挤"},  {"name": "2号线", "crowding": "中度拥挤"}]  } |
+| result | object | 是 | 返回结果对象。以键值对形式返回，字符数不超过8000个。 | \{"lines":  [\{"name": "1号线", "crowding": "轻度拥挤"\},  \{"name": "2号线", "crowding": "中度拥挤"\}]  \} |
 
 ### 查看实时公交
 
@@ -432,7 +434,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | deviceName | string | 是 | 设备名称。 | "我的小牛" |
 | batteryLevel | number | 否 | 剩余电量结果。单位：百分比。 | 30 |
 | remainingMileage | number | 否 | 剩余里程。单位：KM。 | 20 |
-| tirePressureInfo | object | 否 | 胎压信息，包含建议胎压值，整体状态和每个轮胎胎压信息（轮胎名称/胎压数值/胎压单位）。 | {  "status":"Normal",//Normal所有胎压正常，Abnormal有胎压异常。  "suggestedTirePressureInfo": "官方建议胎压区间值为 xx BAR -xx BAR",  "items": [{  "tireName": "前轮",  "tirePressureValue": 1.4,  "unit": "BAR"  },  {  "tireName": "后轮",  "tirePressureValue": 1.6,  "unit": "BAR"  }]} |
+| tirePressureInfo | object | 否 | 胎压信息，包含建议胎压值，整体状态和每个轮胎胎压信息（轮胎名称/胎压数值/胎压单位）。 | \{  "status":"Normal",//Normal所有胎压正常，Abnormal有胎压异常。  "suggestedTirePressureInfo": "官方建议胎压区间值为 xx BAR -xx BAR",  "items": [\{  "tireName": "前轮",  "tirePressureValue": 1.4,  "unit": "BAR"  \},  \{  "tireName": "后轮",  "tirePressureValue": 1.6,  "unit": "BAR"  \}]\} |
 
 ### 查看电动自行车电量
 
@@ -542,7 +544,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | code | number | 是 | 返回结果码：0表示成功，其他值表示失败。支持自定义。 | 0 |
-| result | object | 是 | 返回结果列表对象。如果结果列表为空，则返回空。 | {"items": [{"tableNumber": "A12", "tableType": 3, "capacity": 6}]} |
+| result | object | 是 | 返回结果列表对象。如果结果列表为空，则返回空。 | \{"items": [\{"tableNumber": "A12", "tableType": 3, "capacity": 6\}]\} |
 
 ### 预订餐桌
 
@@ -916,7 +918,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
-| location | object | 否 | 位置的经纬度信息。纬度的取值范围：[-90, 90]，经度的取值范围：[-180, 180]。 | {locationSystem:"GCJ02/BD09LL",latitude:"22.33",longitude:"12.33"} |
+| location | object | 否 | 位置的经纬度信息。纬度的取值范围：[-90, 90]，经度的取值范围：[-180, 180]。 | \{locationSystem:"GCJ02/BD09LL",latitude:"22.33",longitude:"12.33"\} |
 | keywords | string | 否 | 搜索关键词。 | "坂田街道天安云谷附近" |
 | category | string | 否 | 充电宝网点类别。  - Rentable：可租借。  - Returnable：可归还。  - All：全部门店。 | "Rentable" |
 
@@ -940,7 +942,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | entityId | string | 否 | 意图实体ID，长度不超过64个字符。 | "145236" |
-| location | object | 否 | 位置的经纬度信息。纬度的取值范围：[-90, 90]，经度的取值范围：[-180, 180]。 | {locationSystem:"GCJ02/BD09LL",latitude:"22.33",longitude:"12.33"} |
+| location | object | 否 | 位置的经纬度信息。纬度的取值范围：[-90, 90]，经度的取值范围：[-180, 180]。 | \{locationSystem:"GCJ02/BD09LL",latitude:"22.33",longitude:"12.33"\} |
 | category | string | 否 | 充电宝网点类别。  - Rentable：可租借。  - Returnable：可归还。  - All：全部门店。 | "Rentable" |
 
 **返回值**：
@@ -1142,7 +1144,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | code | number | 是 | 返回结果码：0表示成功，其他值表示失败。支持自定义。  【错误类别1】用户原因，无法阅读：  - 100060101：不支持阅读会员文章、付费文章。  - 100060102：会员已失效，且文章没有试看章节。  【错误类别2】内容范围限制无法阅读：  - 100060201：开启了儿童保护、或登录儿童账号场景、脏标的文章。  - 100060202：文章已下架，无法阅读。  - 100060203：文章在本平台版权到期，无法阅读。  【错误类别3】内部的其他业务导致无法阅读：  - 100060301：文章/作者被加入了屏蔽名单，文章无法阅读。  【错误类别4】内部系统异常，无法阅读：  - 100060401：软件故障。 | 100060101 |
-| result | object | 是 | 返回结果对象，以键值对形式返回，字符数不超过8000个字符。 | {"bookSize":"4M","dataReceiveTime":1704868765000} |
+| result | object | 是 | 返回结果对象，以键值对形式返回，字符数不超过8000个字符。 | \{"bookSize":"4M","dataReceiveTime":1704868765000\} |
 
 ## 购物比价垂域（ShoppingPlatformsDomain）
 
@@ -1166,7 +1168,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | code | number | 是 | 返回结果码：0表示成功，其他值表示失败。支持自定义。 | 0 |
-| result | object | 是 | 返回结果列表对象。如果结果列表为空，则返回空。 | {"items": [{"productId": "12345", "name": "示例商品", "price": 99.99}]} |
+| result | object | 是 | 返回结果列表对象。如果结果列表为空，则返回空。 | \{"items": [\{"productId": "12345", "name": "示例商品", "price": 99.99\}]\} |
 
 ### 查看购物攻略
 
@@ -2146,7 +2148,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insi
 | 参数名 | 类型 | 必选 | 说明 | 数据样例 |
 | --- | --- | --- | --- | --- |
 | keywords | string | 否 | 搜索关键词，如景点名称，多个搜索关键词用英文逗号分隔。 | "故宫","江宁有什么好玩的" |
-| location | object | 否 | 位置的经纬度信息。纬度的取值范围：[-90, 90]，经度的取值范围：[-180, 180]。 | {"locationSystem":"GCJ02/BD09LL","locationName": "xxxx","latitude"："120.785645"，"longitude"："33.039635"，"address":"xxx"} |
+| location | object | 否 | 位置的经纬度信息。纬度的取值范围：[-90, 90]，经度的取值范围：[-180, 180]。 | \{"locationSystem":"GCJ02/BD09LL","locationName": "xxxx","latitude"："120.785645"，"longitude"："33.039635"，"address":"xxx"\} |
 | city | string | 否 | 用于搜索景点名称等场景按城市筛选过滤非本城市记录。 | "深圳市" |
 | travelGuidesType | string | 否 | 攻略类型。  - Scenic：景点攻略。  - CitySelection：城市精选。 | "CitySelection" |
 

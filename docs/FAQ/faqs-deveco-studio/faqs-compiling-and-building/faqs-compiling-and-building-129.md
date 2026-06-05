@@ -4,6 +4,7 @@ title: "如何解决编译报错“arkts-no-any-unknown”和“Cannot find modu
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-129
 ---
 
+
 **问题现象**
 
 编译报错“arkts-no-any-unknown”和“Cannot find module 'xx' or its corresponding type declarations”。常见于图片中两种错误同时出现。

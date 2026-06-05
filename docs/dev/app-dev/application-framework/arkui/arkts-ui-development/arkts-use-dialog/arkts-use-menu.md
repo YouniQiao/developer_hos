@@ -1,7 +1,9 @@
 ---
 title: "菜单"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-menu
+format: md
 ---
+
 
 * **[菜单概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-menu-overview)**
 * **[菜单控制（Menu）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-menu)**

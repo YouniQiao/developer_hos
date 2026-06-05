@@ -1,7 +1,9 @@
 ---
 title: "如何用已有证书做RSA的公钥加密"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-23
+format: md
 ---
+
 
 **问题场景**
 

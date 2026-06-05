@@ -1,7 +1,9 @@
 ---
 title: "组件导航(Navigation) (推荐)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation
+format: md
 ---
+
 
 * **[Navigation基础架构介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture)**
 * **[Navigation子页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navdestination)**

@@ -1,7 +1,9 @@
 ---
 title: "如何在Page中获取WindowStage实例"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-298
+format: md
 ---
+
 
 方式一：在onWindowStageCreate方法中获取，此方式适用于Ability生命周期内需要持久化WindowStage实例的场景。
 

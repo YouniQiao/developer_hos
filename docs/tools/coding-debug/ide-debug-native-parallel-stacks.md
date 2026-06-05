@@ -1,7 +1,9 @@
 ---
 title: "堆栈可视化"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 堆栈可视化
 

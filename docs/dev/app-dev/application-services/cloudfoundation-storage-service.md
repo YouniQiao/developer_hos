@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "云存储"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-service
+format: md
 ---
+
 
 * **[设置云存储配置项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-config)**
 * **[初始化全局应用上下文](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-initialize-context)**

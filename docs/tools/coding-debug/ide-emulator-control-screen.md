@@ -1,7 +1,9 @@
 ---
 title: "操控屏幕"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 操控屏幕
 

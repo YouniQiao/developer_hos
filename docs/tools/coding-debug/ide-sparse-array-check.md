@@ -1,7 +1,9 @@
 ---
 title: "@performance/sparse-array-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/sparse-array-check
 

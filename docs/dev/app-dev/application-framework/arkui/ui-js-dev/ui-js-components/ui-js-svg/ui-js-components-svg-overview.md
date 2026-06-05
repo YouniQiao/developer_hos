@@ -1,7 +1,9 @@
 ---
 title: "基础知识"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-overview
+format: md
 ---
+
 
 svg组件主要作为svg画布的根节点使用，也可以在svg中嵌套使用。具体用法请参考[svg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-svg)。
 

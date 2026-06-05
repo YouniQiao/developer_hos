@@ -1,7 +1,9 @@
 ---
 title: "uinput"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # uinput
 

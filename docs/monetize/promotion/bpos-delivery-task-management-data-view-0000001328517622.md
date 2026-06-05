@@ -2,7 +2,9 @@
 title: "数据查看"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-management-data-view-0000001328517622
+format: md
 ---
+
 # 数据查看
 
 ## 在报表中查看数据

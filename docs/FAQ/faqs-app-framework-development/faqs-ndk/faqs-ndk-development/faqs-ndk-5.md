@@ -4,6 +4,7 @@ title: "在Native侧如何集成三方SO库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-5
 ---
 
+
 开发过程可分为两个部分：
 
 1. 系统编译生成so库。
@@ -92,7 +93,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
      ```
    * Native侧通过dlopen方式集成
 
-     将上步生成的so库置于entry/libs目录下，通过ArkTS侧传递沙箱路径到native侧，然后直接在native侧使用dlopen方式调用。注意：该方式引用的so库源码在编译时必须使用extern "C" {}包裹起来，即函数必须是使用C编译模式编译的。
+     将上步生成的so库置于entry/libs目录下，通过ArkTS侧传递沙箱路径到native侧，然后直接在native侧使用dlopen方式调用。注意：该方式引用的so库源码在编译时必须使用extern "C" \{\}包裹起来，即函数必须是使用C编译模式编译的。
 
      ```
      import { hilog } from '@kit.PerformanceAnalysisKit';

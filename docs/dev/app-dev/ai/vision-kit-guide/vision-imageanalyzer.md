@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "AI识图"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-imageanalyzer
+format: md
 ---
+
 
 ## 场景介绍
 

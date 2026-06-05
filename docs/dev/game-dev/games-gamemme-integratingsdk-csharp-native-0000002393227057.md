@@ -1,7 +1,9 @@
 ---
 title: "C#（Native）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057
+format: md
 ---
+
 
 游戏多媒体C# SDK提供了实时语音、实时信令、语音消息、效果音播放和语音转文本功能，支持团结游戏引擎。
 

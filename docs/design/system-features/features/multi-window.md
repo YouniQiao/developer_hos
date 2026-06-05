@@ -2,7 +2,9 @@
 title: 多窗口交互
 sidebar_label: 多窗口交互
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-multi-window-interaction-0000001795392917
+format: md
 ---
+
 # 多窗口交互
 
 折叠屏展开态、平板等大屏幕设备，具有多任务并行和效率型任务处理的先天优势。

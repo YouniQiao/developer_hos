@@ -2,7 +2,9 @@
 title: "多页签组件用法"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/multiple-tabs-component-0000002477617044
+format: md
 ---
+
 
 # 多页签组件用法
 

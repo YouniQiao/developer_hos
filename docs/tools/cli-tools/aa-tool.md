@@ -1,7 +1,9 @@
 ---
 title: "aa工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # aa工具
 

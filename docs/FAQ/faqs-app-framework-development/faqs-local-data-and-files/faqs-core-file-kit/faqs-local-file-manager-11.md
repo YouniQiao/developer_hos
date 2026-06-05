@@ -4,6 +4,7 @@ title: "fileIo.write是否支持utf-8之外的编码格式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-11
 ---
 
+
 **问题描述**
 
 1.希望fileIo.write支持utf-8之外的编码格式，目前只支持utf-8。

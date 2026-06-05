@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "媒体数据封装"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-muxer
+format: md
 ---
+
 
 开发者可以调用本模块的Native API接口，完成音视频封装，即将音频、视频等编码后的媒体数据，按一定的格式存储到文件里。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接入Skill（可选）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-skill-introduction
+format: md
 ---
+
 
 应用内支付服务接入Skill是基于IAP Kit文档沉淀标准流程与关键校验点，将“文档阅读”转化为“任务清单执行”，帮助开发者更快完成接入应用内支付服务的能力。
 

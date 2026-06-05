@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Spatial Recon Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-introduction
+format: md
 ---
+
 
 Spatial Recon Kit（空间建模套件）集成了3DGS（3D Gaussian Splatting）模型的渲染、运算等能力。便于用户对三维模型实现自定义操作。
 

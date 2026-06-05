@@ -2,7 +2,9 @@
 title: "缩放动画&lt;SizeAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2d-sizeanimation-0000002471235140
+format: md
 ---
+
 
 # 缩放动画&lt;SizeAnimation&gt;
 

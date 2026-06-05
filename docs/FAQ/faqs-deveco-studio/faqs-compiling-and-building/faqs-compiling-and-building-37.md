@@ -4,6 +4,7 @@ title: "构建报错“ERROR: Task xxx was not found in the project xxx”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-37
 ---
 
+
 **问题现象**
 
 命令行手动执行构建命令时，如果构建失败并提示“ERROR: Task xxx was not found in the project xxx”，请检查以下内容：

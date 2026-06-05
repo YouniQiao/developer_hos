@@ -1,7 +1,9 @@
 ---
 title: "view"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-view
+format: md
 ---
+
 
 视图容器，相当于 web 的 div 元素。
 

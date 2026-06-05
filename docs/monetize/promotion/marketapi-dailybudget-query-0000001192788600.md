@@ -2,7 +2,9 @@
 title: "查询日预算和次日预算"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-dailybudget-query-0000001192788600
+format: md
 ---
+
 # 查询日预算和次日预算
 
 ## 功能介绍
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-d
 | --- | --- |
 | 承载协议 | HTTPS GET |
 | 接口方向 | 开发者服务器-&gt;推广平台服务端 |
-| 接口URL | https://connect-api.cloud.huawei.com/api/marketing-api/v2/ad/query/account/dailybudget/\{accountRegionType\}?customerId=\{customerId\} |
+| 接口URL | https://connect-api.cloud.huawei.com/api/marketing-api/v2/ad/query/account/dailybudget/\\{accountRegionType\\}?customerId=\\{customerId\\} |
 | 数据格式 | 请求消息：Content-Type: application/json  响应消息：Content-Type: application/json |
 
 ## 请求参数
@@ -41,7 +43,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-d
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
 | client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\{access\_token\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\\{access\_token\\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
 
 ![](./img/caution_3.0-zh-cn_afcae98cb20e.png) 
 

@@ -2,7 +2,9 @@
 title: "游戏中心服务推广"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-service-promotion-0000001790247249
+format: md
 ---
+
 
 # 游戏中心服务推广
 

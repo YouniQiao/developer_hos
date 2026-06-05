@@ -1,7 +1,9 @@
 ---
 title: "信息配置和运营"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-info-and-operation-0000002458692493
+format: md
 ---
+
 
 ## 更换开发者联盟账号后，快游戏需要做哪些变更操作？
 

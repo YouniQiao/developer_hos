@@ -1,7 +1,9 @@
 ---
 title: "测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-special-test-0000002358875584
+format: md
 ---
+
 
 测试是指游戏在华为平台开启测试，如先锋测试、内测等。
 

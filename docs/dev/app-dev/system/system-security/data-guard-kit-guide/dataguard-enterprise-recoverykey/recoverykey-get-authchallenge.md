@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取挑战值"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-get-authchallenge
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reco
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge)(): Promise<Uint8Array> | 使用Promise方式获取挑战值。 |
+| [getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge)(): Promise\<Uint8Array\> | 使用Promise方式获取挑战值。 |
 
 ## 开发步骤
 

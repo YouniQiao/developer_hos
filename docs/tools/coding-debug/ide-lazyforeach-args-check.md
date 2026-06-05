@@ -1,7 +1,9 @@
 ---
 title: "@performance/lazyforeach-args-check（已下线）"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/lazyforeach-args-check（已下线）
 

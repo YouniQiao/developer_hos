@@ -1,7 +1,9 @@
 ---
 title: "模块内页面路由"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-intra-module-page-routing
+format: md
 ---
+
 
 模块内Navigation页面的路由都是基于页面栈[NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10)提供的方法进行，每个Navigation都需要创建并传入一个NavPathStack对象，用于进行页面的路由操作，主要涉及页面跳转、页面返回、页面替换、页面删除、参数获取、路由拦截等功能。
 

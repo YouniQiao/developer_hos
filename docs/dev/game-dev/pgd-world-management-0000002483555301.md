@@ -1,7 +1,9 @@
 ---
 title: "管理实体"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-world-management-0000002483555301
+format: md
 ---
+
 
 ## 创建实体
 

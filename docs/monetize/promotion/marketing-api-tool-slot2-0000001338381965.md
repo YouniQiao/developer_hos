@@ -2,7 +2,9 @@
 title: "查询版位元素"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965
+format: md
 ---
+
 # 查询版位元素
 
 您通过本接口可以查询多规格版位元素。

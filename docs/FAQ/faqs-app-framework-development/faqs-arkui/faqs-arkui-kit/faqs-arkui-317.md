@@ -1,7 +1,9 @@
 ---
 title: "如何合并两个列表并支持懒加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-317
+format: md
 ---
+
 
 外层布局使用Scroll，内层布局包含两个List：ListA和ListB。ListA位于上方，ListB位于下方。两者均采用LazyForEach方式加载数据，并绑定nestedScroll属性。
 

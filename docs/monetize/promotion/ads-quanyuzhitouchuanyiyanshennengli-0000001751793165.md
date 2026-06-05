@@ -2,7 +2,9 @@
 title: "上传广告元素"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-quanyuzhitouchuanyiyanshennengli-0000001751793165
+format: md
 ---
+
 # 上传广告元素
 
 ## 概述

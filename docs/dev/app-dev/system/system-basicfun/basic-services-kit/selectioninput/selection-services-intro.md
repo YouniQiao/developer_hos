@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "划词服务概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/selection-services-intro
+format: md
 ---
+
 
 从API version 24开始，新增划词服务，该服务具有全局获取用户选中文本的能力。开发者可调用该服务提供的接口，实现划词弹窗功能。
 

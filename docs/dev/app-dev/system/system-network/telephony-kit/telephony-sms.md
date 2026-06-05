@@ -1,7 +1,9 @@
 ---
 title: "短信服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-sms
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -39,9 +41,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/tele
 
 | 接口名 | 描述 |
 | --- | --- |
-| sendShortMessage(options: SendMessageOptions, callback: AsyncCallback<void>): void | 发送文本或数据SMS消息。需要配置ohos.permission.SEND\_MESSAGES权限，该权限仅系统应用可申请。 |
-| createMessage(pdu: Array<number>, specification: string, callback: AsyncCallback<ShortMessage>): void | 基于协议数据单元（PDU）和指定的SMS协议创建SMS消息实例。 |
-| getDefaultSmsSlotId(callback: AsyncCallback<number>): void | 获取用于发送短信的默认SIM卡。 |
+| sendShortMessage(options: SendMessageOptions, callback: AsyncCallback\<void\>): void | 发送文本或数据SMS消息。需要配置ohos.permission.SEND\_MESSAGES权限，该权限仅系统应用可申请。 |
+| createMessage(pdu: Array\<number\>, specification: string, callback: AsyncCallback\<ShortMessage\>): void | 基于协议数据单元（PDU）和指定的SMS协议创建SMS消息实例。 |
+| getDefaultSmsSlotId(callback: AsyncCallback\<number\>): void | 获取用于发送短信的默认SIM卡。 |
 
 ## 应用内跳转到短信编辑界面
 

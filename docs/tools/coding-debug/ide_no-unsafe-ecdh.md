@@ -1,7 +1,9 @@
 ---
 title: "@security/no-unsafe-ecdh"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/no-unsafe-ecdh
 

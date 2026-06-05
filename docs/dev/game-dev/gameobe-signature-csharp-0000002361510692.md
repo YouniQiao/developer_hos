@@ -1,7 +1,9 @@
 ---
 title: "使用签名初始化SDK"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-signature-csharp-0000002361510692
+format: md
 ---
+
 
 为了提升服务的安全性，在初始化SDK时，您还可以选择使用签名的方式进行安全加固，增强数据防篡改能力。在您的服务器端，您需要通过游戏ID、游戏密钥、玩家openId等信息计算出游戏签名，然后发送给游戏客户端。客户端在SDK初始化、掉线重连等场景中均会验证玩家签名信息。
 

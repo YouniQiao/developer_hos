@@ -1,7 +1,9 @@
 ---
 title: "swiper开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-swiper
+format: md
 ---
+
 
 swiper为滑动容器，提供切换显示子组件的能力。具体用法请参考[swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-swiper)。
 
@@ -57,7 +59,7 @@ text{
 
 ![](./img/b1515bca.png)
 
-swiper组件支持除<list>之外的子组件。
+swiper组件支持除\<list\>之外的子组件。
 
 ## 添加属性
 

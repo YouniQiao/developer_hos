@@ -1,7 +1,9 @@
 ---
 title: "经营履约能力开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/operations-fulfillment-capability-development
+format: md
 ---
+
 
 * **[账号](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-account-development)**
 * **[推送](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-push-development)**

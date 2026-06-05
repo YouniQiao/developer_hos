@@ -2,7 +2,9 @@
 title: "批量编辑创意状态"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-creative4-0000001286019418
+format: md
 ---
+
 # 批量编辑创意状态
 
 您通过本接口可以批量编辑创意状态。

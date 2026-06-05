@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Wear Engine常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq
+format: md
 ---
+
 
 * **[如果工程已有APP ID，是否需要重新申请，填写新的APP ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-1)**
 * **[使用AppInfo时，如何获取应用身份标识](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-9)**

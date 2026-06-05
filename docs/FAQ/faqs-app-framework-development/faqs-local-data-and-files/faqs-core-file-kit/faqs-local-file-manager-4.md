@@ -1,7 +1,9 @@
 ---
 title: "如何解决文件的中文乱码问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-4
+format: md
 ---
+
 
 读取文件内容的buffer数据后，通过TextDecoder对文件内容进行解码。
 

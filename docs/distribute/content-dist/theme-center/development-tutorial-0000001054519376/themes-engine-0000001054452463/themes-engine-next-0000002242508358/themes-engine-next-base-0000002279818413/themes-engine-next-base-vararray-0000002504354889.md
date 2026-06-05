@@ -2,7 +2,9 @@
 title: "变量：变量数组&lt;VarArray&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-vararray-0000002504354889
+format: md
 ---
+
 
 # 变量：变量数组&lt;VarArray&gt;
 

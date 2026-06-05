@@ -2,7 +2,9 @@
 title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-search-suggest-word-introduction-0000001404203677
+format: md
 ---
+
 # 功能介绍
 
 在投放搜索任务过程中创建子任务时，您需要定制搜索建议词列表。往往因为找不到高质量的词或者不清楚品牌词应该占比多少，而导致定制搜索建议词列表耗费很大的精力。

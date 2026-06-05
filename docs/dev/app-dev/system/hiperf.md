@@ -1,7 +1,9 @@
 ---
 title: "hiperf"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiperf
+format: md
 ---
+
 
 hiperf是一款集成多种性能分析功能的命令行工具，可用于分析系统性能瓶颈、定位软件热点及优化代码效率，支持采集和统计程序运行时的性能数据。
 
@@ -369,7 +371,7 @@ $ hiperf dump -i /data/local/tmp/perf.data -o /data/local/tmp/perf.dump
 | --json | 输出json格式数据。 |
 | --diff | 显示源文件与转换后文件的差别。不能与--proto、--json、-s参数一起使用。 |
 | --branch | 根据函数地址显示分支。 |
-| --<keys> <keyname1>[,keyname2][,...] | 可选关键字：comms、pids、tids、dsos、funcs、from\_dsos、from\_funcs，例如： --comms hiperf。 |
+| --\<keys\> \<keyname1\>[,keyname2][,...] | 可选关键字：comms、pids、tids、dsos、funcs、from\_dsos、from\_funcs，例如： --comms hiperf。 |
 | --sort [key1],[key2],[...] | 按关键字排序。 |
 | --hide\_count | 报告中不显示数值。 |
 | --dumpoptions | 展示当前列表里所有选项的详细信息。 |

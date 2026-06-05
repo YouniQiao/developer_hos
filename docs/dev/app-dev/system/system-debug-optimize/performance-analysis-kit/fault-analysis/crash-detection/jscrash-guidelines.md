@@ -1,7 +1,9 @@
 ---
 title: "JS Crash（进程崩溃）检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines
+format: md
 ---
+
 
 ## 简介
 
@@ -220,7 +222,7 @@ JS Crash通常是应用问题，开发者可通过崩溃文件中的Error messag
 
 Release模式构建的应用中，异常堆栈信息遵循以下标准化格式：
 
-at <执行方法名> (<本模块名|依赖的模块名|版本号|编译产物路径>:<行号>:<列号>)
+at \<执行方法名\> (\<本模块名|依赖的模块名|版本号|编译产物路径\>:\<行号\>:\<列号\>)
 
 示例如下：
 
@@ -242,7 +244,7 @@ at onPageShow (entry|har1|1.0.0|src/main/ets/pages/Index.ts:7:13)
 
 使用 Source Map 转译 Release 模式构建应用的异常堆栈或使用Debug模式构建的应用中，异常堆栈信息遵循以下标准化格式：
 
-at <执行方法名> <源码依赖的模块名> (<源码路径>:<行号>:<列号>)
+at \<执行方法名\> \<源码依赖的模块名\> (\<源码路径\>:\<行号\>:\<列号\>)
 
 示例如下：
 

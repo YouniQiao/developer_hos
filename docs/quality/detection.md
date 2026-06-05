@@ -1,7 +1,9 @@
 ---
 title: "性能检测"
 source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-detection
+format: md
 ---
+
 
 # 性能检测
 

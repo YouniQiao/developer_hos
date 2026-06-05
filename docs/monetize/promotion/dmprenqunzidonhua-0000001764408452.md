@@ -2,7 +2,9 @@
 title: "人群自动化洞察"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/dmprenqunzidonhua-0000001764408452
+format: md
 ---
+
 # 人群自动化洞察
 
 ## 功能简介

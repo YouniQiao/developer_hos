@@ -2,7 +2,9 @@
 title: "维纳斯落地页资产"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-gongju-wnsldyzc-0000001687998165
+format: md
 ---
+
 # 维纳斯落地页资产
 
 ## 基本原理

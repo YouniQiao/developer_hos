@@ -1,7 +1,9 @@
 ---
 title: "使用鸿蒙电脑版DevEco Studio ASCF助手开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-bitfun
+format: md
 ---
+
 
 ASCF开发助手推出了适配鸿蒙电脑版DevEco Studio的版本，旨在为元服务（HarmonyOS元服务）开发者提供高效、便捷的一站式开发体验。该助手集成了项目创建、代码转换、热更新，调试等核心功能。
 

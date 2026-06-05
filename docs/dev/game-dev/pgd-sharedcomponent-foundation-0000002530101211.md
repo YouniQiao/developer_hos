@@ -1,7 +1,9 @@
 ---
 title: "SharedComponent基础操作"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-sharedcomponent-foundation-0000002530101211
+format: md
 ---
+
 
 共享组件的增、删、改、判断操作。
 

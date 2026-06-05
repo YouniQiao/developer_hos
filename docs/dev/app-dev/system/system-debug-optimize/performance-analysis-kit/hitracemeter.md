@@ -1,7 +1,9 @@
 ---
 title: "性能跟踪"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter
+format: md
 ---
+
 
 * **[HiTraceMeter介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-intro)**
 * **[使用HiTraceMeter跟踪性能（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-guidelines-arkts)**

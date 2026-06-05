@@ -1,7 +1,9 @@
 ---
 title: "绘制路径"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-path
+format: md
 ---
+
 
 [svg](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-svg)组件绘制路径时，通过Path中的M（起点）、H（水平线）、a（绘制弧形到指定位置）路径控制指令，并填充颜色实现饼状图效果。
 

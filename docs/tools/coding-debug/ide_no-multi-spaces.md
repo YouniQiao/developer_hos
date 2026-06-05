@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/no-multi-spaces"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/no-multi-spaces
 

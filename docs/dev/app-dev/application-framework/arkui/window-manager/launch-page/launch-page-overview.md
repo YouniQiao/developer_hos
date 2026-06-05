@@ -1,7 +1,9 @@
 ---
 title: "应用启动页简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page-overview
+format: md
 ---
+
 
 启动页（Starting Window）是应用冷启动时显示的首个页面，在应用进程没有运行或者应用内容没有加载完成前，都将显示启动页。同时承载了应用展示品牌特性的功能，应用可以根据自己的设计配置资源，用于展示产品独特的标识，加强用户对产品的认知。
 

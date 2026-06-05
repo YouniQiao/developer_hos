@@ -4,6 +4,7 @@ title: "注册的自定义字体在webview中无效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-16
 ---
 
+
 **问题现象**
 
 通过@ohos.font.registerFont接口注册的自定义字体在webview中设置对应的family无法正确显示。在webview H5中设置DOM style font-family也无效。

@@ -1,7 +1,9 @@
 ---
 title: "ArkTS卡片页面交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event
+format: md
 ---
+
 
 * **[ArkTS卡片页面交互概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-overview)**
 * **[卡片跳转到应用页面（router事件）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-router)**

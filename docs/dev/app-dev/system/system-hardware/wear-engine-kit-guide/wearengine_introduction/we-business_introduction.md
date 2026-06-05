@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "业务简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-business_introduction
+format: md
 ---
+
 
 Wear Engine（穿戴服务）面向手机和穿戴设备的应用与服务开发者，提供华为穿戴设备开放能力。
 

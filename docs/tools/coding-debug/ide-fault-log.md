@@ -1,7 +1,9 @@
 ---
 title: "FaultLog"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # FaultLog
 

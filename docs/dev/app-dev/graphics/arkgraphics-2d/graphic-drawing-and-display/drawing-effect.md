@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "绘制效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drawing-effect
+format: md
 ---
+
 
 * **[绘制效果概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drawing-effect-overview)**
 * **[基础绘制效果（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-drawing-effect-arkts)**

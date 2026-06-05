@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "服务器端开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification-servers
+format: md
 ---
+
 
 ## 使用前提
 

@@ -1,7 +1,9 @@
 ---
 title: "规则体检"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 规则体检
 

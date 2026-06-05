@@ -1,7 +1,9 @@
 ---
 title: "分析元服务履约情况"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-atomic-performance-0000002271371757
+format: md
 ---
+
 
 您可以在“元服务履约数据分析”页签下查看元服务的使用情况：
 

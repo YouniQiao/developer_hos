@@ -1,7 +1,9 @@
 ---
 title: "完整示例代码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-demo
+format: md
 ---
+
 
 ![](./img/c865250c.png)
 

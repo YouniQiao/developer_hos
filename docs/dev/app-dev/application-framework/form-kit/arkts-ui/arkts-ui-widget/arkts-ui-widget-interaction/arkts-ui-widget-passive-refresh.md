@@ -1,7 +1,9 @@
 ---
 title: "ArkTS卡片被动刷新"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-passive-refresh
+format: md
 ---
+
 
 本文主要提供被动刷新的开发指导，刷新流程请参考[被动刷新概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-interaction-overview#被动刷新)。
 

@@ -4,6 +4,7 @@ title: "登录时浏览器提示不安全，“你的连接不是私密连接”
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-6
 ---
 
+
 **问题现象**
 
 使用模拟器时，需通过浏览器登录授权。如果浏览器提示网站“不安全”或“连接不是私密连接”，请检查网络连接或联系技术支持。

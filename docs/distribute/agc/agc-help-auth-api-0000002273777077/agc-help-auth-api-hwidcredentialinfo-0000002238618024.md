@@ -1,7 +1,9 @@
 ---
 title: "HwIdCredentialInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-hwidcredentialinfo-0000002238618024
+format: md
 ---
+
 
 华为账号方式的凭证信息。
 

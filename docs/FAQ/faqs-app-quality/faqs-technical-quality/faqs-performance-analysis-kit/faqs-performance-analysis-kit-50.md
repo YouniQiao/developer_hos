@@ -4,6 +4,7 @@ title: "如何在HarmonyOS PC/2in1设备上查看MAC地址"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-50
 ---
 
+
 **问题场景**
 
 在“设置”或“关于”中未找到查看MAC地址的选项。要查看MAC地址，请按照以下步骤操作：

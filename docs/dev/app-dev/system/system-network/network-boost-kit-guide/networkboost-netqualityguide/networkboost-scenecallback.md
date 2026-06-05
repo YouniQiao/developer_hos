@@ -1,7 +1,9 @@
 ---
 title: "网络场景识别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-scenecallback
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -13,8 +15,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/netw
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type: 'netSceneChange', callback: Callback<Array<NetworkScene>>): void | 订阅网络场景信息状态变化。 |
-| off(type: 'netSceneChange', callback?: Callback<Array<NetworkScene>>): void | 取消订阅网络场景信息状态变化。 |
+| on(type: 'netSceneChange', callback: Callback\<Array<NetworkScene\>>): void | 订阅网络场景信息状态变化。 |
+| off(type: 'netSceneChange', callback?: Callback\<Array<NetworkScene\>>): void | 取消订阅网络场景信息状态变化。 |
 
 ## 开发步骤
 

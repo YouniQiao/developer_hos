@@ -1,7 +1,9 @@
 ---
 title: "拉起系统应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup
+format: md
 ---
+
 
 本章节介绍拉起系统应用的方式，以及支持跳转系统应用的能力清单。
 

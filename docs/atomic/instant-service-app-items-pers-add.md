@@ -1,7 +1,9 @@
 ---
 title: "新增个性化设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-items-pers-add
+format: md
 ---
+
 
 1. 如果您已下架子服务关联的个性化数据，您可在“个性化设置”页签，点击“新建”。
 

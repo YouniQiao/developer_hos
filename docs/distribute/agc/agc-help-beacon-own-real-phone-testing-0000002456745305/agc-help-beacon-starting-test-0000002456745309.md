@@ -1,7 +1,9 @@
 ---
 title: "开始测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-starting-test-0000002456745309
+format: md
 ---
+
 
 建议在测试任务下发1小时后开始测试。测试时您需要携带测试手机进入测试POI的200米感应范围内，体验小艺建议出卡效果。
 

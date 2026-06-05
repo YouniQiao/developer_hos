@@ -1,7 +1,9 @@
 ---
 title: "打开资源/关闭资源(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-open-close-resource-ndk
+format: md
 ---
+
 
 ## 打开资源
 

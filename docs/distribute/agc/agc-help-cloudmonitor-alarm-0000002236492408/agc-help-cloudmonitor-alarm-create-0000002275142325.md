@@ -1,7 +1,9 @@
 ---
 title: "新建告警"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-alarm-create-0000002275142325
+format: md
 ---
+
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。
 2. 在项目列表中选择您的项目。

@@ -1,7 +1,9 @@
 ---
 title: "云端查看"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-cloudview-0000002321404213
+format: md
 ---
+
 
 将本地测试报告上传至云端后，团队账号可共同查看测试报告。
 

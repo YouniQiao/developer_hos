@@ -4,6 +4,7 @@ title: "用sqlite开发时，怎么保证数据库同一时间只能支持一个
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-14
 ---
 
+
 可以使用事务来确保数据库在同一时间只支持一个写操作。创建索引时，请参考SQLite的官方文档中的索引创建语法规范。。
 
 1.定义SQL语句的常量

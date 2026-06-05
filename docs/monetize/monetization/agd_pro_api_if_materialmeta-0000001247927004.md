@@ -2,7 +2,9 @@
 title: "MaterialMeta"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_materialmeta-0000001247927004
+format: md
 ---
+
 
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
@@ -15,5 +17,5 @@ original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_
 | appInfo | O | [AdAppInfo](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_adappinfo-0000001248246048) | 应用信息。 |
 | showUrl | O | `String` | 曝光回调地址，媒体侧曝光后回调此地址。  格式如下：  ``` https://xxxx.xxxx.com/agd/mediareport?time=__TIME__&xxxxxxxxx ```  媒体需替换的宏参数：  * time：曝光时长。单位：ms。  说明：  * 曝光回调时，GET请求该地址即可。 * 如果apiVersion为**shortbodyv1**时，此字段不填值，通过trackUrls字段传参。 |
 | clickUrl | O | `String` | 点击回调地址，用户在媒体上点击了广告回调此地址。  格式如下：  ``` https://xxxx.xxxx.com/agd/mediareport?clickType=__CLICKTYPE__&xxxxxxxxx ```  媒体需替换的宏参数：  * clickType：点击类型。取值：icon、install。点击图文时此字段取值为“icon”；点击按钮时此字段取值为“install”。  说明：  * 曝光回调时，GET请求该地址即可。 * 如果apiVersion为**shortbodyv1**时，此字段不填值，通过trackUrls字段传参。 |
-| trackUrls | O | List< [EventTrack](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_eventtrack-0000001248086780)> | 其他事件跟踪上报地址。  具体请参见[EventTrack](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_eventtrack-0000001248086780)。 |
+| trackUrls | O | List [EventTrack](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_eventtrack-0000001248086780) | 其他事件跟踪上报地址。  具体请参见[EventTrack](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_eventtrack-0000001248086780)。 |
 | ecpm | O | `Float` | 预估千次曝光收入（分成后），不作为结算依据，需向运营申请权限。  该字段为预留参数，当前版本不会返回，媒体可提前做好适配。  单位：分/千次曝光。  说明：  此字段在Beta测试中，如果需要使用，请发送邮件到developer@huawei.com申请开通此字段。 |

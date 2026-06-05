@@ -1,7 +1,9 @@
 ---
 title: "运营分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-anaiyze-app-sale-0000002384065345
+format: md
 ---
+
 
 ## 数字商品服务分析
 

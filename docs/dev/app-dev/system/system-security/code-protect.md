@@ -1,7 +1,9 @@
 ---
 title: "应用加密"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-protect
+format: md
 ---
+
 
 ![](./img/55183a92.png)
 

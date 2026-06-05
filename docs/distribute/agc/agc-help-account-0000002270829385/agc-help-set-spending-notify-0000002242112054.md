@@ -1,7 +1,9 @@
 ---
 title: "设置消费提醒"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-set-spending-notify-0000002242112054
+format: md
 ---
+
 
 AppGallery Connect支持您设置消费提醒，以便在您每月的消费金额达到设定的阈值时给您发送邮件提醒，避免支出超过预算。
 

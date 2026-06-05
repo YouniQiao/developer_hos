@@ -1,7 +1,9 @@
 ---
 title: "@throws"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @throws
 

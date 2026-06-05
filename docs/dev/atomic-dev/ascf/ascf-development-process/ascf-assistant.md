@@ -1,7 +1,9 @@
 ---
 title: "使用ASCF助手开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant
+format: md
 ---
+
 
 为了方便使用VSCode的开发者，ASCF团队开发并维护了VSCode插件——[ASCF开发助手](https://marketplace.visualstudio.com/items?itemName=atomicservice.ascf-plugin-vscode)，提供了一键式项目创建快速转换及调试功能，帮助开发者开发元服务。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite进行端侧训练 (C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-train-guidelines
+format: md
 ---
+
 
 ## 场景介绍
 

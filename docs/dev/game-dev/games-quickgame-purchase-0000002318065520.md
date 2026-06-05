@@ -1,7 +1,9 @@
 ---
 title: "华为快游戏外部买量指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-purchase-0000002318065520
+format: md
 ---
+
 
 买量是一种快速获客的游戏运营手段，可以为华为快游戏带来更多的曝光量和用户量，有效提升快游戏的用户活跃度和市场竞争力，为您的游戏事业带来更多的发展机会。目前华为快游戏支持在快手、UC和微博平台上买量推广。
 

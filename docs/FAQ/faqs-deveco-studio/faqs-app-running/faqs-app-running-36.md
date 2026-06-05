@@ -4,6 +4,7 @@ title: "播放音频的过程中拔插耳机后，无法继续播放音频"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-36
 ---
 
+
 **问题现象**
 
 拔掉USB接口的耳机，再重新插上后，模拟器的音频播放功能将失效。

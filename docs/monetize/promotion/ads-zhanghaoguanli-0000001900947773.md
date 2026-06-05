@@ -2,7 +2,9 @@
 title: "账号管理"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-zhanghaoguanli-0000001900947773
+format: md
 ---
+
 # 账号管理
 
 ## 一级服务商账户

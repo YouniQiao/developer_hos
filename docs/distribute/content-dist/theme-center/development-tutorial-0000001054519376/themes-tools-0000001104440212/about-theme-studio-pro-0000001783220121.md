@@ -2,7 +2,9 @@
 title: "Theme Studio Pro版本更新说明"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/about-theme-studio-pro-0000001783220121
+format: md
 ---
+
 
 # Theme Studio Pro版本更新说明
 

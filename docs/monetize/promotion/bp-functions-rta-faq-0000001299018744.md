@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-rta-faq-0000001299018744
+format: md
 ---
+
 # FAQ
 
 ## RTA ID是否为必填项？

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "高精几何重建（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-volume-measurement
+format: md
 ---
+
 
 ## 约束与限制
 

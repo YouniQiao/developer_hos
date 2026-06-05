@@ -1,7 +1,9 @@
 ---
 title: "动画动效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-dynamic-effects
+format: md
 ---
+
 
 通过设置插值器来实现动画效果。
 

@@ -1,7 +1,9 @@
 ---
 title: "如何在Worker中开启多级子线程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-121
+format: md
 ---
+
 
 在Worker中开启多级子线程，具体可参考如下示例代码：
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "收银台设计规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-cashier-design
+format: md
 ---
+
 
 ## 功能需求
 

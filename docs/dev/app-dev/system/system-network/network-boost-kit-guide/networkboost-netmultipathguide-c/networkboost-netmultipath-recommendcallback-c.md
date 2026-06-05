@@ -1,7 +1,9 @@
 ---
 title: "多网建议监听(C/C++)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-recommendcallback-c
+format: md
 ---
+
 
 从6.0.2(22)开始，支持多网建议监听。
 

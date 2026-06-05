@@ -2,7 +2,9 @@
 title: "视图：倒计时&lt;CountDownTime&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-countdowntime-0000002471234998
+format: md
 ---
+
 
 # 视图：倒计时&lt;CountDownTime&gt;
 

@@ -1,7 +1,9 @@
 ---
 title: "设置有主按钮的组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-actionbar-main-buttons
+format: md
 ---
+
 
 ## 场景介绍
 

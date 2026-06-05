@@ -1,11 +1,13 @@
 ---
 title: "连接迁移通知"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-nethandovercallback
+format: md
 ---
+
 
 ## 场景介绍
 
-在弱网环境下，系统发起多网迁移（WiFi<->蜂窝，主卡<->副卡等）的过程中，给应用提供连接迁移开始和完成通知，应用根据连接迁移通知的建议进行重建，快速恢复业务，给用户带来平滑、高速、低时延的上网体验。
+在弱网环境下，系统发起多网迁移（WiFi\<-\>蜂窝，主卡\<-\>副卡等）的过程中，给应用提供连接迁移开始和完成通知，应用根据连接迁移通知的建议进行重建，快速恢复业务，给用户带来平滑、高速、低时延的上网体验。
 
 ## 接口说明
 
@@ -13,8 +15,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/netw
 
 | 接口名 | 描述 |
 | --- | --- |
-| on(type: 'handoverChange', callback: Callback<HandoverInfo>): void | 订阅连接迁移。 |
-| off(type: 'handoverChange', callback?: Callback<HandoverInfo>): void | 取消订阅连接迁移。 |
+| on(type: 'handoverChange', callback: Callback\<HandoverInfo\>): void | 订阅连接迁移。 |
+| off(type: 'handoverChange', callback?: Callback\<HandoverInfo\>): void | 取消订阅连接迁移。 |
 
 ## 开发步骤
 

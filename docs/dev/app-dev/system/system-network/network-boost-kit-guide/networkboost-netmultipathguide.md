@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "连接迁移（多网并发）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipathguide
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-overview)**
 * **[业务场景设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-setscenedesc)**

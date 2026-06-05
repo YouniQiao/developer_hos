@@ -1,7 +1,9 @@
 ---
 title: "打包工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-tool
+format: md
 ---
+
 
 打包工具用于在程序编译完成后，对编译出的文件等进行打包，以供安装发布。开发者可以使用DevEco Studio进行打包，也可使用打包工具的JAR包进行打包，JAR包通常存放在SDK路径下的toolchains目录中。
 
@@ -35,7 +37,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pack
 ## 约束与限制
 
 * 打包工具需要运行在Java8及其以上环境。
-* 打包指令中参数和参数值需成对出现。例如，HAP打包指令中--resources-path <path>，其中--resources-path为指令参数，path为参数值，两者需要同时出现。
+* 打包指令中参数和参数值需成对出现。例如，HAP打包指令中--resources-path \<path\>，其中--resources-path为指令参数，path为参数值，两者需要同时出现。
 * 不建议使用JDK 20版本运行打包工具。JDK 20对zip64扩展数据字段的校验规则存在已知缺陷，当zip包（如HAP、HSP或任何zip64文件）的目录中zip64扩展字段长度异常时，解析会抛出Invalid CEN header (invalid zip64 extra data field size)异常。建议使用JDK 17（LTS）或JDK 21（LTS）等长期支持版本。若必须使用JDK 20，可在JVM启动参数中添加-Djdk.util.zip.disableZip64ExtraFieldValidation=true规避此问题。
 
 ## HAP打包指令
@@ -468,7 +470,7 @@ json统计结果：
 | --- | --- | --- |
 | md5 | String | 重复so文件的MD5值。 |
 | size | int | 重复so文件的大小。单位为Byte。 |
-| files | Vector<String> | 重复so文件的路径。 |
+| files | Vector\<String\> | 重复so文件的路径。 |
 
 ## 打包工具错误码
 

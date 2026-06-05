@@ -1,7 +1,9 @@
 ---
 title: "组件样式及隔离策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-style-isolation
+format: md
 ---
+
 
 组件对应 css 文件的样式，只对组件 hxml 内的节点生效。编写组件样式时，需要注意以下几点：
 

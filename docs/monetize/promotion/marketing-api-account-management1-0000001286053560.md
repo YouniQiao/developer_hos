@@ -2,7 +2,9 @@
 title: "查询账户信息"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-account-management1-0000001286053560
+format: md
 ---
+
 # 查询账户信息
 
 您通过本接口获取广告账户基本信息。

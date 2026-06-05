@@ -1,7 +1,9 @@
 ---
 title: "申请使用已发布的POI"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-publish-poi-0000002382902157
+format: md
 ---
+
 
 当您创建POI时，如果提示**该位置已被其他应用使用**，则表示该POI位置已被其他应用发布过。您需发送邮件申请使用该POI，华为方收到邮件后，将在15个工作日内完成审核，并邮件告知您审核结果。
 

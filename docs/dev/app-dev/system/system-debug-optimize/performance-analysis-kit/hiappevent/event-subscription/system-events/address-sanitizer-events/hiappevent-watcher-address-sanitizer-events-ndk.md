@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅地址越界事件（C/C++）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-ndk
+format: md
 ---
+
 
 ## 接口说明
 

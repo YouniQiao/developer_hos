@@ -2,7 +2,9 @@
 title: "查询商品组信息"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-shopping-group1-0000001338498649
+format: md
 ---
+
 # 查询商品组信息
 
 您通过本接口可以查询商品组信息。

@@ -2,7 +2,9 @@
 title: "命令：周期命令&lt;CycleCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-cyclecommand-0000002504354935
+format: md
 ---
+
 
 # 命令：周期命令&lt;CycleCommand&gt;
 

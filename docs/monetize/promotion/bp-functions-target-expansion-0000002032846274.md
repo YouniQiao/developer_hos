@@ -2,7 +2,9 @@
 title: "智能扩展"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-expansion-0000002032846274
+format: md
 ---
+
 # 智能扩展
 
 智能扩展是人群定向的一种方式。该能力通过算法和大数据能力，找到与开发者的种子人群（通常指有转化行为的价值用户）具有相似特征的人群，扩展种子人群量级，以满足推广定向投放需求。

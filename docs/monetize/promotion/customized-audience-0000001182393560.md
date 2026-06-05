@@ -2,7 +2,9 @@
 title: "一方数据人群"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/customized-audience-0000001182393560
+format: md
 ---
+
 # 一方数据人群
 
 ## 概述

@@ -1,7 +1,9 @@
 ---
 title: "弹出框 (Dialog)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-dialogs
+format: md
 ---
+
 
 * **[弹出框概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)**
 * **[不依赖UI组件的全局自定义弹出框 (openCustomDialog)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-custom-dialog)**

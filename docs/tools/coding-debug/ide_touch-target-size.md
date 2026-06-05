@@ -1,7 +1,9 @@
 ---
 title: "@cross-device-app-dev/touch-target-size"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @cross-device-app-dev/touch-target-size
 

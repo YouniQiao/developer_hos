@@ -1,7 +1,9 @@
 ---
 title: "App Killed（应用终止）检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appkilled-guidelines
+format: md
 ---
+
 
 ## 简介
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "分享App Linking直达应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-scenes
+format: md
 ---
+
 
 提供如何通过隔空传送分享实现直达应用，应用需接入App Linking以确保端到端完整的体验。参考：[使用App Linking实现应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)。
 

@@ -4,6 +4,7 @@ title: "如何实现拖拽时列表项占位动画的效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-143
 ---
 
+
 拖拽Grid时，列表项显示占位动画效果。实现步骤如下：
 
 1. 在Grid组件下设置属性editMode(true)，使Grid进入编辑模式。进入编辑模式后，可以拖拽Grid组件内部的GridItem。

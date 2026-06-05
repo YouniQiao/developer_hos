@@ -2,7 +2,9 @@
 title: "通用属性"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-common-attribute-0000001054789799
+format: md
 ---
+
 
 # 通用属性
 

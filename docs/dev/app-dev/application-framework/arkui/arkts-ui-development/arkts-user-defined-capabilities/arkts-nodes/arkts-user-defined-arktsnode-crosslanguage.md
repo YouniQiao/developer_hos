@@ -1,7 +1,9 @@
 ---
 title: "设置自定义节点跨语言属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-crosslanguage
+format: md
 ---
+
 
 ## 概述
 

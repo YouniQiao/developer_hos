@@ -4,6 +4,7 @@ title: "如何选择收集崩溃的方式，ErrorManager、FaultLog、HiAppEvent
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-57
 ---
 
+
 推荐使用HiAppEvent方式。
 
 | 方式 | 作用范围 | 触发方式 | 场景 | 发生崩溃表现 |

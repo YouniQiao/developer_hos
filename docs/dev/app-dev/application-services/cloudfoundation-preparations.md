@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-preparations
+format: md
 ---
+
 
 * **[基本准备工作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-basic-preparation)**
 * **[开通云函数服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-function)**

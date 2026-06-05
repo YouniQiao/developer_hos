@@ -1,7 +1,9 @@
 ---
 title: "@performance/no-use-any-import"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/no-use-any-import
 

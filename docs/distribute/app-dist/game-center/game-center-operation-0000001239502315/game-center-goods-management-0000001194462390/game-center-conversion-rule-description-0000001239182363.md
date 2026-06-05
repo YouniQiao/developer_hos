@@ -2,7 +2,9 @@
 title: "换算规则描述"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-conversion-rule-description-0000001239182363
+format: md
 ---
+
 
 # 换算规则描述
 

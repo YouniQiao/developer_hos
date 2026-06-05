@@ -2,7 +2,9 @@
 title: "提升付费"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-increase-payment-0000001683109285
+format: md
 ---
+
 
 # 提升付费
 

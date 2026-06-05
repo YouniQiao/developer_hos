@@ -2,7 +2,9 @@
 title: "推荐受众人群"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-advanced-target-recommend-audience-0000001379557373
+format: md
 ---
+
 # 推荐受众人群
 
 ## 概述

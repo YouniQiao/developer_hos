@@ -2,7 +2,9 @@
 title: 开关
 sidebar_label: 开关
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toggleswitch-0000001956852745
+format: md
 ---
+
 # 开关
 
 通过开关，开启或关闭某个功能。开发相关描述请参考 [Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle#toggletype枚举说明) 文档。

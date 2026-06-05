@@ -4,6 +4,7 @@ title: "如何访问类的静态变量和方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-56
 ---
 
+
 在ArkTS中，静态变量和方法属于类自身，无法通过this访问，因为this指向类的实例。 若要在类中访问静态变量和方法，需要使用类名。
 
 ```

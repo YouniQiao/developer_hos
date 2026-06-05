@@ -1,6 +1,8 @@
 ---
 title: "ohpm-repo export_pkginfo"
+format: md
 ---
+
 
 # ohpm-repo export\_pkginfo
 

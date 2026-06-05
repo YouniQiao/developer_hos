@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/creative-pre-review-faq-0000001926887165
+format: md
 ---
+
 # FAQ
 
 - <strong>新建投放推广任务时，为什么点击“选择预审创意”，提示“该展示类型下，暂无预审创意”？</strong>

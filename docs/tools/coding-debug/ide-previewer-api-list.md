@@ -1,7 +1,9 @@
 ---
 title: "支持使用预览器的API清单"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 支持使用预览器的API清单
 

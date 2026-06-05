@@ -1,7 +1,9 @@
 ---
 title: "快速上手"
 displayed_sidebar: devecoTestingSidebar
+format: md
 ---
+
 
 # 快速上手
 

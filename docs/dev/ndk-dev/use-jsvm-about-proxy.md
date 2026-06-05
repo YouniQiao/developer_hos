@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API提供的proxy接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-proxy
+format: md
 ---
+
 
 ## 简介
 

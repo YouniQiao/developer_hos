@@ -1,7 +1,9 @@
 ---
 title: "Form Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview
+format: md
 ---
+
 
 Form Kit（卡片开发服务）提供了一种在桌面、锁屏等系统应用上嵌入显示应用信息的开发框架和API，可以将应用内用户关注的重要信息或常用操作抽取到服务卡片（简称“卡片”）上，通过将卡片添加到桌面、锁屏等系统应用上，以达到信息展示、服务直达的便捷体验效果。
 

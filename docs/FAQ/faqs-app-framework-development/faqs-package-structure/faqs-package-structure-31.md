@@ -4,6 +4,7 @@ title: "如何避免模块下文件打包进HAR包后，存在的不可预期的
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-31
 ---
 
+
 1. 配置ohpmignore文件：如果部分工程源文件无需构建到HAR包中，可在module目录下新建.ohpmignore文件，用于配置打包时要忽略的文件。将无需打包的文件或文件夹名称写入.ohpmignore文件中，DevEco Studio构建时将过滤掉这些文件目录。
 
    ![](./img/c77d72ce.png "点击放大")

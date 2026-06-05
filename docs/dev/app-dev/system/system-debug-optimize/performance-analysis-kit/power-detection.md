@@ -1,7 +1,9 @@
 ---
 title: "功耗检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-detection
+format: md
 ---
+
 
 ## 简介
 

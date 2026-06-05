@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "管理用户授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-add-permissions
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -18,9 +20,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/heal
 
 | 接口名 | 描述 |
 | --- | --- |
-| [requestAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorerequestauthorizations)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#uiabilitycontext-1), request: [AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationrequest)): Promise<[AuthorizationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationresponse)> | 用户授权，入参为UIAbility上下文和授权参数[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationrequest)，添加需要读写的数据类型，拉起账号授权页面，引导用户完成授权，返回结果中的数据类型列表，其对应权限在[应用申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)和用户授权权限的交集中。 |
-| [getAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoregetauthorizations)(request: [AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationrequest)): Promise<[AuthorizationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationresponse)> | 查询用户权限，入参为[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationrequest)，添加需要查询的数据类型，查询传入类型是否有权限，返回结果中的数据类型列表，其对应权限在[应用申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)和用户授权权限的交集中。 |
-| [cancelAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorecancelauthorizations)(): Promise<void> | 取消用户所有授权。 |
+| [requestAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorerequestauthorizations)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#uiabilitycontext-1), request: [AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationrequest)): Promise[AuthorizationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationresponse) | 用户授权，入参为UIAbility上下文和授权参数[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationrequest)，添加需要读写的数据类型，拉起账号授权页面，引导用户完成授权，返回结果中的数据类型列表，其对应权限在[应用申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)和用户授权权限的交集中。 |
+| [getAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoregetauthorizations)(request: [AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationrequest)): Promise[AuthorizationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationresponse) | 查询用户权限，入参为[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#authorizationrequest)，添加需要查询的数据类型，查询传入类型是否有权限，返回结果中的数据类型列表，其对应权限在[应用申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)和用户授权权限的交集中。 |
+| [cancelAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorecancelauthorizations)(): Promise\<void\> | 取消用户所有授权。 |
 
 ## 开发前检查
 

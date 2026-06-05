@@ -4,6 +4,7 @@ title: "组件内转场(transition)新增内容动画生效，但删除内容动
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-477
 ---
 
+
 **问题描述**
 
 当为List等组件设置组件内转场动画时，data数组size变化时展示对应的新增或删除动画，但删除动画未生效，可能是什么原因？

@@ -1,7 +1,9 @@
 ---
 title: "自定义测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-customizetest-0000002255036404
+format: md
 ---
+
 
 您可以选择您关注的测试专项，例如兼容性、稳定性、性能、功耗、UX或隐私进行测试。系统会默认选择当前最新和热门的机型，帮助您提前发现问题，提升用户侧应用体验。
 

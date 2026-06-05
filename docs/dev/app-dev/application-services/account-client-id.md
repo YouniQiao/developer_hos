@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "配置Client ID"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id
+format: md
 ---
+
 
 ## 获取Client ID和APP ID
 

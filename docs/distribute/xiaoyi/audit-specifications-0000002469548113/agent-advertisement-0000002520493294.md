@@ -2,7 +2,9 @@
 title: "智能体广告"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/agent-advertisement-0000002520493294
+format: md
 ---
+
 
 # 智能体广告
 

@@ -2,7 +2,9 @@
 title: "命令：视频命令&lt;VideoCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-videocommand-0000002504354923
+format: md
 ---
+
 
 # 命令：视频命令&lt;VideoCommand&gt;
 

@@ -2,7 +2,9 @@
 title: "业务介绍"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/entry_introduction-0000001078105366
+format: md
 ---
+
 
 # 业务介绍
 

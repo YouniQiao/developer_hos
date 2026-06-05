@@ -1,7 +1,9 @@
 ---
 title: "应用真实性证明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation
+format: md
 ---
+
 
 * **[应用真实性证明简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-intro)**
 * **[创建密钥确立可信凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-guidelines)**

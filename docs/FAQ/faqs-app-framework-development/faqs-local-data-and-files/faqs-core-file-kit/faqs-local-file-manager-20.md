@@ -1,7 +1,9 @@
 ---
 title: "如何存储文件才不会跟随app卸载而删除"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-20
+format: md
 ---
+
 
 **解决措施**
 

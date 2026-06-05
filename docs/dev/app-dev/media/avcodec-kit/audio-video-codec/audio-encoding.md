@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "音频编码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-encoding
+format: md
 ---
+
 
 开发者可以调用本模块的Native API接口，完成音频编码，即将音频PCM编码压缩成不同的格式。
 

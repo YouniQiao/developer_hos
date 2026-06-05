@@ -1,7 +1,9 @@
 ---
 title: "界面"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-ux-0000002318054804
+format: md
 ---
+
 
 ## 向导界面
 

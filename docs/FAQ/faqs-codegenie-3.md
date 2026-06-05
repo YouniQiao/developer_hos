@@ -4,6 +4,7 @@ title: "CodeGenie偶现报错：The reasoning_content in the thinking mode must 
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-codegenie-3
 ---
 
+
 **问题现象**
 
 DevEco Studio 6.1.0 Release（6.1.0.850）及以上版本，在CodeGenie中通过URL方式配置deepseek-v4模型后，过程中界面提示“The reasoning\_content in the thinking mode must be passed back to the API.”。

@@ -4,6 +4,7 @@ title: "编译报错“The version number of the module must be a string, but re
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-152
 ---
 
+
 **错误描述**
 
 模块版本号必须为字符串类型。

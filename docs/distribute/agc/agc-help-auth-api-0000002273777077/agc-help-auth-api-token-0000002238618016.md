@@ -1,7 +1,9 @@
 ---
 title: "Token"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-token-0000002238618016
+format: md
 ---
+
 
 AGC网关的Access Token结果信息。
 

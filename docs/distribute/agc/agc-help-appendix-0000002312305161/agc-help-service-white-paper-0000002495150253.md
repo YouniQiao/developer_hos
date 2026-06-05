@@ -1,7 +1,9 @@
 ---
 title: "AppGallery Connect服务白皮书"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-service-white-paper-0000002495150253
+format: md
 ---
+
 
 ![](../img/agc-help-service-white-paper-0000002495150253_0.png "点击放大")
 

@@ -1,7 +1,9 @@
 ---
 title: "配置CPP"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # 配置CPP
 

@@ -1,7 +1,9 @@
 ---
 title: "UI装饰器总览"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-decorator-overview
+format: md
 ---
+
 
 在声明式UI开发范式中，UI是程序状态的运行结果，状态的变化会驱动UI的刷新。ArkUI提供了一套装饰器机制，使开发者能够便捷地定义和管理状态变量，实现数据与UI的联动。
 

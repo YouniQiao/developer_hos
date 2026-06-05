@@ -2,7 +2,9 @@
 title: "EMUI 11.0升级HarmonyOS 2.0指导"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-specification-upgrade-0000001160790879
+format: md
 ---
+
 
 # EMUI 11.0升级HarmonyOS 2.0指导
 

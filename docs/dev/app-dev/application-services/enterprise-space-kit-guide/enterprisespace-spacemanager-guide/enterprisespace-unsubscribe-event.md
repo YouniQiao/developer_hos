@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "取消订阅空间事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-unsubscribe-event
+format: md
 ---
+
 
 ## 场景介绍
 

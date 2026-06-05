@@ -2,7 +2,9 @@
 title: "上传任务管理"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-uploadtask-0000001052357079
+format: md
 ---
+
 
 # 上传任务管理
 

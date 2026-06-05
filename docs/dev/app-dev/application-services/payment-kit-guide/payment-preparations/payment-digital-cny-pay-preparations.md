@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "（可选）数字人民币接入准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay-preparations
+format: md
 ---
+
 
 如不接入数字人民币支付能力或已完成运营机构或受理服务机构商户入网并获取了商户号和APPID，可跳过该步骤。
 

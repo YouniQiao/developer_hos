@@ -1,7 +1,9 @@
 ---
 title: "群组密钥介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview
+format: md
 ---
+
 
 从API 23开始，HUKS支持群组密钥功能，该功能是针对同一开发者开发的多个HAP应用，提供的跨应用密钥共享能力。
 

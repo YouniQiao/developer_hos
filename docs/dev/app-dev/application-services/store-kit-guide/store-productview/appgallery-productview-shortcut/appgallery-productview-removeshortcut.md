@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "删除应用内快捷方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-removeshortcut
+format: md
 ---
+
 
 ![](./img/eb31f0ef.png)
 
@@ -32,7 +34,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appg
 
 | 接口名 | 描述 |
 | --- | --- |
-| [removePinShortcut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerremovepinshortcut)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), shortcutId: string): Promise<void> | 删除桌面快捷方式。 |
+| [removePinShortcut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerremovepinshortcut)(context: [common.UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext), shortcutId: string): Promise\<void\> | 删除桌面快捷方式。 |
 
 ## 开发准备
 

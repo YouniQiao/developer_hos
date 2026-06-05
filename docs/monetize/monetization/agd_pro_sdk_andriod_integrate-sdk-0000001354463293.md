@@ -2,7 +2,9 @@
 title: "集成AGD Pro服务SDK"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_integrate-sdk-0000001354463293
+format: md
 ---
+
 
 
 * **[快速集成](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_demo-0000001461263141)**

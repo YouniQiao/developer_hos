@@ -2,7 +2,9 @@
 title: "任务数据"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-data-task-0000001128438070
+format: md
 ---
+
 # 任务数据
 
 您通过本接口获取任务维度的基本投放数据，包括花费、点击量、点击均价等。

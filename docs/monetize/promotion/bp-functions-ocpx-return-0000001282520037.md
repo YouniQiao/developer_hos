@@ -2,7 +2,9 @@
 title: "回传转化数据"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037
+format: md
 ---
+
 # 回传转化数据
 
 ## 前提条件

@@ -1,7 +1,9 @@
 ---
 title: "HarmonyOS 5.0及以上"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-record-play-audio-msg-harmonyos-0000002304632336
+format: md
 ---
+
 
 ![](./img/ed5a9b60.png)
 

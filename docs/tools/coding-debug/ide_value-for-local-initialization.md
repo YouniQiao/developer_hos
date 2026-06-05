@@ -1,7 +1,9 @@
 ---
 title: "@previewer/mandatory-default-value-for-local-initialization"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @previewer/mandatory-default-value-for-local-initialization
 

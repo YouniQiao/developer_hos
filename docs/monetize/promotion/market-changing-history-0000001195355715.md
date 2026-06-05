@@ -2,7 +2,9 @@
 title: "接口更新说明"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/market-changing-history-0000001195355715
+format: md
 ---
+
 # 接口更新说明
 
 | 版本号 | 发布时间 | 更新说明 |

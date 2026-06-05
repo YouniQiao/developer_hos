@@ -2,7 +2,9 @@
 title: "互动评论"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-interaction-comments-0000001239182361
+format: md
 ---
+
 
 # 互动评论
 

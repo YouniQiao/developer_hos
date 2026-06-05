@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "解析文件快捷方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-parseshortcut
+format: md
 ---
+
 
 从6.1.0(23)版本开始，新增支持解析文件快捷方式。
 
@@ -14,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file
 
 | 接口名 | 描述 |
 | --- | --- |
-| [parseShortcut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/filemanagerservice-arkts-filemanagerservice#filemanagerserviceparseshortcut)(linkUri: string): Promise<string> | 根据快捷方式文件的URI解析出对应原文件的URI，并返回。使用Promise异步回调。 |
+| [parseShortcut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/filemanagerservice-arkts-filemanagerservice#filemanagerserviceparseshortcut)(linkUri: string): Promise\<string\> | 根据快捷方式文件的URI解析出对应原文件的URI，并返回。使用Promise异步回调。 |
 
 ## 示例代码
 

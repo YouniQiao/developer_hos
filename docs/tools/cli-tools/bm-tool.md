@@ -1,7 +1,9 @@
 ---
 title: "bm工具"
 displayed_sidebar: cliToolsSidebar
+format: md
 ---
+
 
 # bm工具
 

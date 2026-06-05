@@ -1,7 +1,9 @@
 ---
 title: "@security/specified-interface-call-chain-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @security/specified-interface-call-chain-check
 

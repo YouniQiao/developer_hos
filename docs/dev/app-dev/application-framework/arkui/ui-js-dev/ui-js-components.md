@@ -1,7 +1,9 @@
 ---
 title: "常见组件开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components
+format: md
 ---
+
 
 * **[容器组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-container-components)**
 * **[基础组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-basic-components)**

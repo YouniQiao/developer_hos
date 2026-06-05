@@ -1,7 +1,9 @@
 ---
 title: "PGD Spawner组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-editor-spawner-0000002526540939
+format: md
 ---
+
 
 PGD Spawner组件用于对工程中的Prefab资产进行管理。
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "图片开发指导(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-arkts-dev
+format: md
 ---
+
 
 * **[图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-arts)**
 * **[图片编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding-arts)**

@@ -2,7 +2,9 @@
 title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-management-overview-0000001379557361
+format: md
 ---
+
 # 概述
 
 投放端账户分直客账户和服务商账户两种类型：

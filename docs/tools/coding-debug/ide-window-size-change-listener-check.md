@@ -1,7 +1,9 @@
 ---
 title: "@cross-device-app-dev/window-size-change-listener-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @cross-device-app-dev/window-size-change-listener-check
 

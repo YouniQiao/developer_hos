@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "识别图像数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-decodeimage
+format: md
 ---
+
 
 ## 基本概念
 
@@ -28,7 +30,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan
 
 | 接口名 | 描述 |
 | --- | --- |
-| [decodeImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectbarcodedecodeimage)(image: [ByteImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#byteimage), options?: scanBarcode.[ScanOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanoptions)): Promise<[DetectResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectresult)> | 启动图像识码，通过传入ByteImage类型的图像数据信息，使用Promise异步回调返回识码结果。 |
+| [decodeImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectbarcodedecodeimage)(image: [ByteImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#byteimage), options?: scanBarcode.[ScanOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-scanbarcode-api#scanoptions)): Promise[DetectResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-imagedecode#detectresult) | 启动图像识码，通过传入ByteImage类型的图像数据信息，使用Promise异步回调返回识码结果。 |
 
 ## 开发步骤
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取目录列表"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-catalog-list
+format: md
 ---
+
 
 当应用需要展示书籍目录列表时，开发者可通过解析能力获取目录节点列表，实现目录列表中章节名称按顺序、层级的展示。当用户点击目录节点时，开发者也需要获取目录位置及资源信息，用于跳转到指定位置。
 
@@ -16,7 +18,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/read
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getDefaultHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-book-parser#getdefaulthandler)(path: string): Promise<BookParserHandler> | 获取书籍默认解析器。 |
+| [getDefaultHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-book-parser#getdefaulthandler)(path: string): Promise\<BookParserHandler\> | 获取书籍默认解析器。 |
 | [getCatalogList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-book-parser#getcataloglist)(): CatalogItem[] | 获取书籍目录列表。 |
 | [getDomPosByCatalogHref](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-book-parser#getdomposbycataloghref)(href: string): string | 获取阅读起始位置domPos。 |
 | [getSpineList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-book-parser#getspinelist)(): SpineItem[] | 获取书脊内容列表。 |

@@ -1,7 +1,9 @@
 ---
 title: "DeviceTypeInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-devicetypeinfo-0000002237336488
+format: md
 ---
+
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |

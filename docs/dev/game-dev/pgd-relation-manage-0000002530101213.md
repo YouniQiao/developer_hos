@@ -1,7 +1,9 @@
 ---
 title: "添加/删除关系"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-relation-manage-0000002530101213
+format: md
 ---
+
 
 ## 添加关系
 

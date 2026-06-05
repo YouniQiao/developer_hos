@@ -2,7 +2,9 @@
 title: "旋转动画&lt;RotationAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2d-rotationanimation-0000002504275071
+format: md
 ---
+
 
 # 旋转动画&lt;RotationAnimation&gt;
 

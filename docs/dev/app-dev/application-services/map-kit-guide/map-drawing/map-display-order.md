@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置地图元素压盖顺序"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-display-order
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -28,7 +30,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [mapCommon.MapElementType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapelementtype) | 地图元素类型。 |
-| [setDisplayOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#setdisplayorder)(types: Array<[mapCommon.MapElementType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapelementtype)>): void | 设置地图元素的显示顺序。 |
+| [setDisplayOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#setdisplayorder)(types: Array[mapCommon.MapElementType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapelementtype)): void | 设置地图元素的显示顺序。 |
 
 ## 开发步骤
 

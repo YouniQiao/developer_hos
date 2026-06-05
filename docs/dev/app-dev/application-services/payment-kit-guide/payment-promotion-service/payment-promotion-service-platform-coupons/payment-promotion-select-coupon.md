@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "选券场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-promotion-select-coupon
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -56,8 +58,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/paym
 
 | 接口名 | 描述 |
 | --- | --- |
-| getOrderAvailableCoupons(context: common.Context, orderContext: OrderContext): Promise<CouponDetail[]> | 查询用户可用券。 |
-| startUserChooseCouponsPopup(context: common.Context, orderContext: OrderContext): Promise<CouponDetail[]> | 拉起选券组件。 |
+| getOrderAvailableCoupons(context: common.Context, orderContext: OrderContext): Promise\<CouponDetail[]\> | 查询用户可用券。 |
+| startUserChooseCouponsPopup(context: common.Context, orderContext: OrderContext): Promise\<CouponDetail[]\> | 拉起选券组件。 |
 
 ## 开发步骤
 

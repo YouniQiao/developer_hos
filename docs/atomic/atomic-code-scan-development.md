@@ -1,7 +1,9 @@
 ---
 title: "扫码"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-code-scan-development
+format: md
 ---
+
 
 * **[Scan Kit简介](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-config-agc)**

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/require-array-sort-compare"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/require-array-sort-compare
 

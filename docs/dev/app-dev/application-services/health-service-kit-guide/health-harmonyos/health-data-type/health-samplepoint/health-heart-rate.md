@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "心率"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-heart-rate
+format: md
 ---
+
 
 ## 动态心率
 

@@ -1,7 +1,9 @@
 ---
 title: "开发指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-development-guide-0000002332905597
+format: md
 ---
+
 
 HarmonyOS 5.0及以上系统游戏无需集成SDK，用户**必须**在启动游戏前打开“手机设置 &gt; 系统和更新 &gt; 用户体验改进计划”开关，即可自动采集现网游戏数据并上报至AGC控制台。
 

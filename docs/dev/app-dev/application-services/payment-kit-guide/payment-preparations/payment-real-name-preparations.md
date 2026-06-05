@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "（可选）用户身份验证服务接入准备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-preparations
+format: md
 ---
+
 
 如不涉及身份验证服务接入，可跳过该章节。
 

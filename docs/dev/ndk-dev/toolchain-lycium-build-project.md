@@ -1,7 +1,9 @@
 ---
 title: "使用lycium交叉编译框架快速编译三方库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/toolchain-lycium-build-project
+format: md
 ---
+
 
 ## 概述
 

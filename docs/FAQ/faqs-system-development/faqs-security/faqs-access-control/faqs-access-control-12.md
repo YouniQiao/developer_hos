@@ -4,6 +4,7 @@ title: "向用户申请授予权限但被用户拒绝后，如何处理才能避
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-12
 ---
 
+
 **可能原因**
 
 * 业务功能所需的权限被用户拒绝后，直接返回结果。

@@ -1,7 +1,9 @@
 ---
 title: "特别活动"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-special-events-0000002392515481
+format: md
 ---
+
 
 特别活动是指游戏内的亮点活动。
 

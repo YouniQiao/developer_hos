@@ -1,7 +1,9 @@
 ---
 title: "Connectivity Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit-intro
+format: md
 ---
+
 
 ## Connectivity Kit开发概述
 

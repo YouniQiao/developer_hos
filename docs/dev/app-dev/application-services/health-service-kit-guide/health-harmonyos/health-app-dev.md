@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Phone/Tablet应用开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-app-dev
+format: md
 ---
+
 
 * **[拉起运动健康App隐私授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-privacy-authorization)**
 * **[管理用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-add-permissions)**

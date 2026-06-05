@@ -4,6 +4,7 @@ title: "如何解决滚动类容器的滚动事件和手势之间的冲突"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-320
 ---
 
+
 可以通过添加并行手势绑定方法[parallelGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-binding#parallelgesture并行手势绑定方法)来处理，参考代码如下：
 
 ```

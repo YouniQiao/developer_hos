@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "空间管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-spacemanager-guide
+format: md
 ---
+
 
 * **[创建工作空间](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-create-workspace)**
 * **[使能工作空间](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-enable-workspace)**

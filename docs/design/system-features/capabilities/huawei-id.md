@@ -2,7 +2,9 @@
 title: 华为账号开放登录
 sidebar_label: 华为账号开放登录
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344
+format: md
 ---
+
 # 华为账号开放登录
 
 华为账号提供登录体验设计规范，帮助用户使用已有的华为账号登录HarmonyOS生态内全部应用。遵循规范设计可享有以下好处：

@@ -4,6 +4,7 @@ title: "签名验签错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-16
 ---
 
+
 **问题现象**
 
 打包签名提示“**Verify Signature failed**”错误。
@@ -26,11 +27,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-s
 
 ![](./img/9c80d259.png)
 
-2、查看密钥库文件签名密钥关联的证书公钥信息（SubjectKeyIdentifier），示例：keytool -list -v -keystore ${Store file} -storepass ${Store password} -alias ${Key alias}。
+2、查看密钥库文件签名密钥关联的证书公钥信息（SubjectKeyIdentifier），示例：keytool -list -v -keystore $\{Store file\} -storepass $\{Store password\} -alias $\{Key alias\}。
 
 ![](./img/617067d8.png)
 
-3、查看配置的证书文件中公钥信息，应用市场申请的证书，发布者是CN=Huawei CBG Developer Relations CA G2, OU=Huawei CBG, O=Huawei, C=CN，示例：keytool -printcert -file ${Certpath file}。
+3、查看配置的证书文件中公钥信息，应用市场申请的证书，发布者是CN=Huawei CBG Developer Relations CA G2, OU=Huawei CBG, O=Huawei, C=CN，示例：keytool -printcert -file $\{Certpath file\}。
 
 ![](./img/a2d5e4b0.png)
 

@@ -4,6 +4,7 @@ title: "相机开发（Camera）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-kit
 ---
 
+
 * **[使用XComponent组件显示相机的预览输出流时，如何获取相机的帧数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-1)**
 * **[如何获取前置摄像头的预览图像](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-2)**
 * **[如何设置相机焦距](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-3)**

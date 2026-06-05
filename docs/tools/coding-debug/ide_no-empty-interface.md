@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/no-empty-interface"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/no-empty-interface
 

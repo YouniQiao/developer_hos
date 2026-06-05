@@ -1,7 +1,9 @@
 ---
 title: "应用加载自定义Symbol"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-custom-symbol-res-register
+format: md
 ---
+
 
 ## 场景介绍
 

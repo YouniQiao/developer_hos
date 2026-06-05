@@ -2,7 +2,9 @@
 title: "服务号基本信息规范"
 displayed_sidebar: serviceDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/registration_rules-0000001058075206
+format: md
 ---
+
 
 # 服务号基本信息规范
 

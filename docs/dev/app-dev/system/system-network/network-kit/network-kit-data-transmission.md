@@ -1,7 +1,9 @@
 ---
 title: "访问网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit-data-transmission
+format: md
 ---
+
 
 * **[使用HTTP访问网络](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request)**
 * **[使用WebSocket访问网络](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/websocket-connection)**

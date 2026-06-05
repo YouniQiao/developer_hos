@@ -2,7 +2,9 @@
 title: "查询归因报表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-inquire-attribution-0000001282724829
+format: md
 ---
+
 # 查询归因报表
 
 创建oCPD任务后，您可以在归因报表中查看您的归因转化报表数据。

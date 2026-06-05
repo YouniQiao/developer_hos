@@ -1,7 +1,9 @@
 ---
 title: "准备工作"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-preparation-0000002286788020
+format: md
 ---
+
 
 ## 注册开发者账号
 

@@ -4,6 +4,7 @@ title: "编译报错：pnpm安装失败等问题汇总"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-195
 ---
 
+
 **问题现象**
 
 执行sync或构建命令时，编译报错：“ERROR: 003080xx Operation Error”。

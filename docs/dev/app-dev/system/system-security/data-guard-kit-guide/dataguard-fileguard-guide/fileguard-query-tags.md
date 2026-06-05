@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取文件属性标签"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-query-tags
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -14,8 +16,8 @@ Enterprise Data Guard Kit为应用提供获取文件属性标签的能力，Harm
 
 | 接口名 | 描述 |
 | --- | --- |
-| [queryFileTag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#queryfiletag)(path: string, callback: AsyncCallback<[FileTagInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#filetaginfo)>): void | 使用Callback方式获取文件属性标签。 |
-| [queryFileTag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#queryfiletag-1)(path: string): Promise<[FileTagInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#filetaginfo)> | 使用Promise方式获取文件属性标签。 |
+| [queryFileTag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#queryfiletag)(path: string, callback: AsyncCallback[FileTagInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#filetaginfo)): void | 使用Callback方式获取文件属性标签。 |
+| [queryFileTag](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#queryfiletag-1)(path: string): Promise[FileTagInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#filetaginfo) | 使用Promise方式获取文件属性标签。 |
 
 ## 开发步骤
 

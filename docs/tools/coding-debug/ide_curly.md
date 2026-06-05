@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/curly"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/curly
 

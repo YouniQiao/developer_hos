@@ -2,7 +2,9 @@
 title: "创建商品库"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa4-0000001286183194
+format: md
 ---
+
 # 创建商品库
 
 您通过本接口可以创建商品库。

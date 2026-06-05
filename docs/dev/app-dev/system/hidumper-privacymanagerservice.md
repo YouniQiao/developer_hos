@@ -1,7 +1,9 @@
 ---
 title: "PrivacyManagerService"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper-privacymanagerservice
+format: md
 ---
+
 
 PrivacyManagerService是访问控制基于[hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)增强开发的命令行能力，可显示访问控制基础信息，获取敏感权限使用记录。
 

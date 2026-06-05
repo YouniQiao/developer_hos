@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/member-ordering"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/member-ordering
 

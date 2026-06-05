@@ -1,7 +1,9 @@
 ---
 title: "填写开发者服务信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-devinfo-0000002458362101
+format: md
 ---
+
 
 填写开发者服务信息，方便玩家咨询或反馈小游戏相关问题。
 

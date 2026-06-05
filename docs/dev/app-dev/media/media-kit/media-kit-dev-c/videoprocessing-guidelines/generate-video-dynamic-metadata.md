@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "视频动态元数据生成"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/generate-video-dynamic-metadata
+format: md
 ---
+
 
 调用者可以调用本模块提供的[C API接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-videoprocessing)，实现HDRVivid标准动态元数据生成。
 

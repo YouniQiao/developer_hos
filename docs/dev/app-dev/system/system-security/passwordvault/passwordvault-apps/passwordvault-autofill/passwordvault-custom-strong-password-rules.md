@@ -1,7 +1,9 @@
 ---
 title: "为应用添加自动生成高强度密码的建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-custom-strong-password-rules
+format: md
 ---
+
 
 在本文档中介绍的强密码特指，在密码保险箱强密码填充场景中，推荐用户使用的较强密码。强密码中一定包含大写字母、小写字母、数字三种字符。且强密码的复杂度高，破解难度大。
 

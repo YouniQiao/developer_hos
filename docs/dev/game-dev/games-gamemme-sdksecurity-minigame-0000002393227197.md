@@ -1,7 +1,9 @@
 ---
 title: "JS（小游戏）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-sdksecurity-minigame-0000002393227197
+format: md
 ---
+
 
 游戏多媒体SDK是由华为软件技术有限公司（以下简称“我们”或“华为”）面向应用开发者（以下简称“开发者”）提供的实时信令、语音消息开放能力及服务。
 

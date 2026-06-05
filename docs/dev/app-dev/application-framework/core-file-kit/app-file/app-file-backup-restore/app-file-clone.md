@@ -1,7 +1,9 @@
 ---
 title: "应用克隆适配指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-clone
+format: md
 ---
+
 
 ## 简介
 

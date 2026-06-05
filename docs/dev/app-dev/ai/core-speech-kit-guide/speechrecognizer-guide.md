@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "语音识别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speechrecognizer-guide
+format: md
 ---
+
 
 将一段中文音频信息（中文、中文语境下的英文；短语音模式不超过60s，长语音模式不超过8h）转换为文本，音频信息可以为PCM音频文件或者实时语音。
 

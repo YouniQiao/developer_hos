@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "应用归因服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution
+format: md
 ---
+
 
 * **[开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-introduction)**
 * **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-preparations)**

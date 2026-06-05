@@ -2,7 +2,9 @@
 title: "开场对话&预置问题"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/opening-statement-preset-problem-0000002471264249
+format: md
 ---
+
 
 # 开场对话&预置问题
 

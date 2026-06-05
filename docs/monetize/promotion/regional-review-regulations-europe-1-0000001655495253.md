@@ -2,7 +2,9 @@
 title: "区域审核规范（欧洲）"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/regional-review-regulations-europe-1-0000001655495253
+format: md
 ---
+
 # 区域审核规范（欧洲）
 
 <strong>Petal Ads Industry Admission Policy</strong>

@@ -2,7 +2,9 @@
 title: "技术支持"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_tech-support-0000001192984124
+format: md
 ---
+
 
 
 当您接入AGD Pro服务遇到问题时，可以按照以下顺序需求帮助。

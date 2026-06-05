@@ -1,7 +1,9 @@
 ---
 title: "使用JSVM-API接口提供Latin1/UTF16格式字符串相关开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-external-string
+format: md
 ---
+
 
 ## 简介
 

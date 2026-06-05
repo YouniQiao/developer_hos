@@ -4,6 +4,7 @@ title: "如何通过多个xxx.d.ts文件导出Native侧接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-63
 ---
 
+
 **问题现象**
 
 由于底层C++库规模较大，向外暴露的接口数量较多，建议将其拆分成多个.d.ts文件以便归类。

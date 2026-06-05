@@ -1,7 +1,9 @@
 ---
 title: "自定义布局下的适配建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-adaptation-in-custom-layout
+format: md
 ---
+
 
 ## 登录
 

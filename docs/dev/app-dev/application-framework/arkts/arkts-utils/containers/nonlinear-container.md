@@ -1,7 +1,9 @@
 ---
 title: "非线性容器"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nonlinear-container
+format: md
 ---
+
 
 非线性容器实现能快速查找的数据结构，其底层通过hash或者红黑树实现，包括HashMap、HashSet、TreeMap、TreeSet、LightWeightMap、LightWeightSet、PlainArray七种。非线性容器中的key及value的类型均满足ECMA标准。
 
@@ -38,10 +40,10 @@ HashMap支持增、删、改、查操作，常用API如下：
 | 访问元素 | keys() | 返回一个迭代器对象，包含map中的所有key值。 |
 | 访问元素 | values() | 返回一个迭代器对象，包含map中的所有value值。 |
 | 访问元素 | entries() | 返回一个迭代器对象，包含map中的所有键值对。 |
-| 访问元素 | forEach(callbackFn: (value?: V, key?: K, map?: HashMap<K, V>) => void, thisArg?: Object) | 遍历访问整个map的元素。 |
-| 访问元素 | [Symbol.iterator]():IterableIterator<[K,V]> | 创建迭代器以访问数据。 |
+| 访问元素 | forEach(callbackFn: (value?: V, key?: K, map?: HashMap\<K, V\>) => void, thisArg?: Object) | 遍历访问整个map的元素。 |
+| 访问元素 | [Symbol.iterator]():IterableIterator\<[K,V]\> | 创建迭代器以访问数据。 |
 | 修改元素 | replace(key: K, newValue: V) | 修改指定key对应的value值。 |
-| 修改元素 | forEach(callbackFn: (value?: V, key?: K, map?: HashMap<K, V>) => void, thisArg?: Object) | 遍历并修改整个map的元素。 |
+| 修改元素 | forEach(callbackFn: (value?: V, key?: K, map?: HashMap\<K, V\>) => void, thisArg?: Object) | 遍历并修改整个map的元素。 |
 | 删除元素 | remove(key: K) | 删除map中匹配到的键值对。 |
 | 删除元素 | clear() | 清空整个map。 |
 
@@ -62,9 +64,9 @@ HashSet支持增、删、改、查操作，常用API如下：
 | 增加元素 | add(value: T) | 增加一个值。 |
 | 访问元素 | values() | 返回一个迭代器对象，包含set中的所有value。 |
 | 访问元素 | entries() | 返回一个迭代器对象，包含类似键值对的数组，键值都是value。 |
-| 访问元素 | forEach(callbackFn: (value?: T, key?: T, set?: HashSet<T>) => void, thisArg?: Object) | 遍历访问整个set的元素。 |
-| 访问元素 | [Symbol.iterator]():IterableIterator<T> | 创建迭代器以进行数据访问。 |
-| 修改元素 | forEach(callbackFn: (value?: T, key?: T, set?: HashSet<T>) => void, thisArg?: Object) | 通过遍历对set中的元素进行操作，可能包括但不限于修改元素。 |
+| 访问元素 | forEach(callbackFn: (value?: T, key?: T, set?: HashSet\<T\>) => void, thisArg?: Object) | 遍历访问整个set的元素。 |
+| 访问元素 | [Symbol.iterator]():IterableIterator\<T\> | 创建迭代器以进行数据访问。 |
+| 修改元素 | forEach(callbackFn: (value?: T, key?: T, set?: HashSet\<T\>) => void, thisArg?: Object) | 通过遍历对set中的元素进行操作，可能包括但不限于修改元素。 |
 | 删除元素 | remove(value: T) | 删除指定的元素。 |
 | 删除元素 | clear() | 清空整个set。 |
 
@@ -89,10 +91,10 @@ TreeMap支持增、删、改、查操作，常用 API 如下：
 | 访问元素 | keys() | 返回一个迭代器对象，包含map中的所有key值。 |
 | 访问元素 | values() | 返回一个迭代器对象，包含map中的所有value值。 |
 | 访问元素 | entries() | 返回一个迭代器对象，包含map中的所有键值对。 |
-| 访问元素 | forEach(callbackFn: (value?: V, key?: K, map?: TreeMap<K, V>) => void, thisArg?: Object) | 遍历访问整个map的元素。 |
-| 访问元素 | [Symbol.iterator]():IterableIterator<[K,V]> | 创建迭代器以进行数据访问。 |
+| 访问元素 | forEach(callbackFn: (value?: V, key?: K, map?: TreeMap\<K, V\>) => void, thisArg?: Object) | 遍历访问整个map的元素。 |
+| 访问元素 | [Symbol.iterator]():IterableIterator\<[K,V]\> | 创建迭代器以进行数据访问。 |
 | 修改元素 | replace(key: K, newValue: V) | 修改指定key对应的value值。 |
-| 修改元素 | forEach(callbackFn: (value?: V, key?: K, map?: TreeMap<K, V>) => void, thisArg?: Object) | 通过遍历对map中的元素进行操作，可能包括但不限于修改元素。 |
+| 修改元素 | forEach(callbackFn: (value?: V, key?: K, map?: TreeMap\<K, V\>) => void, thisArg?: Object) | 通过遍历对map中的元素进行操作，可能包括但不限于修改元素。 |
 | 删除元素 | remove(key: K) | 删除map中匹配到的键值对。 |
 | 删除元素 | clear() | 清空整个map。 |
 
@@ -117,9 +119,9 @@ TreeSet支持增、删、改、查操作，常用API如下：
 | 访问元素 | entries() | 返回一个迭代器对象，包含值的数组，值都是value。 |
 | 访问元素 | getFirstValue() | 获取set中排在首位的value值。 |
 | 访问元素 | getLastValue() | 获取set中排在末位的value值。 |
-| 访问元素 | forEach(callbackFn: (value?: T, key?: T, set?: TreeSet<T>) => void, thisArg?: Object) | 遍历访问整个set的元素。 |
-| 访问元素 | [Symbol.iterator]():IterableIterator<T> | 创建迭代器以进行数据访问。 |
-| 修改元素 | forEach(callbackFn: (value?: T, key?: T, set?: TreeSet<T>) => void, thisArg?: Object) | 通过遍历对set中的元素进行操作，可能包括但不限于修改元素。 |
+| 访问元素 | forEach(callbackFn: (value?: T, key?: T, set?: TreeSet\<T\>) => void, thisArg?: Object) | 遍历访问整个set的元素。 |
+| 访问元素 | [Symbol.iterator]():IterableIterator\<T\> | 创建迭代器以进行数据访问。 |
+| 修改元素 | forEach(callbackFn: (value?: T, key?: T, set?: TreeSet\<T\>) => void, thisArg?: Object) | 通过遍历对set中的元素进行操作，可能包括但不限于修改元素。 |
 | 删除元素 | remove(value: T) | 删除指定的元素。 |
 | 删除元素 | clear() | 清空整个set。 |
 
@@ -146,10 +148,10 @@ LightWeightMap支持增、删、改、查操作，常用API如下：
 | 访问元素 | entries() | 返回一个迭代器对象，包含map中的所有键值对。 |
 | 访问元素 | getKeyAt(index: number) | 获取指定index对应的key值。 |
 | 访问元素 | getValueAt(index: number) | 获取指定index对应的value值。 |
-| 访问元素 | forEach(callbackFn: (value?: V, key?: K, map?: LightWeightMap<K, V>) => void, thisArg?: Object) | 遍历访问整个map的元素。 |
-| 访问元素 | [Symbol.iterator]():IterableIterator<[K,V]> | 创建迭代器以进行数据访问。 |
+| 访问元素 | forEach(callbackFn: (value?: V, key?: K, map?: LightWeightMap\<K, V\>) => void, thisArg?: Object) | 遍历访问整个map的元素。 |
+| 访问元素 | [Symbol.iterator]():IterableIterator\<[K,V]\> | 创建迭代器以进行数据访问。 |
 | 修改元素 | setValueAt(index: number, newValue: V) | 修改指定index对应的value值。 |
-| 修改元素 | forEach(callbackFn: (value?: V, key?: K, map?: LightWeightMap<K, V>) => void, thisArg?: Object) | 通过遍历对map中的元素进行操作，可能包括但不限于修改元素。 |
+| 修改元素 | forEach(callbackFn: (value?: V, key?: K, map?: LightWeightMap\<K, V\>) => void, thisArg?: Object) | 通过遍历对map中的元素进行操作，可能包括但不限于修改元素。 |
 | 删除元素 | remove(key: K) | 删除map中指定key匹配到的键值对。 |
 | 删除元素 | removeAt(index: number) | 删除map中指定index对应的键值对。 |
 | 删除元素 | clear() | 清空整个map。 |
@@ -175,9 +177,9 @@ LightWeightSet支持增、删、改、查操作。常用API如下：
 | 访问元素 | getValueAt(index: number) | 获取指定index对应的value值。 |
 | 访问元素 | values() | 返回一个迭代器对象，包含set中的所有value值。 |
 | 访问元素 | entries() | 返回一个迭代器对象，包含值的数组，值都是value。 |
-| 访问元素 | forEach(callbackFn: (value?: T, key?: T, set?: LightWeightSet<T>) => void, thisArg?: Object) | 遍历访问整个set的元素。 |
-| 访问元素 | [Symbol.iterator]():IterableIterator<T> | 创建迭代器以进行数据访问。 |
-| 修改元素 | forEach(callbackFn: (value?: T, key?: T, set?: LightWeightSet<T>) => void, thisArg?: Object) | 通过遍历对set中的元素进行操作，可能包括但不限于修改元素。 |
+| 访问元素 | forEach(callbackFn: (value?: T, key?: T, set?: LightWeightSet\<T\>) => void, thisArg?: Object) | 遍历访问整个set的元素。 |
+| 访问元素 | [Symbol.iterator]():IterableIterator\<T\> | 创建迭代器以进行数据访问。 |
+| 修改元素 | forEach(callbackFn: (value?: T, key?: T, set?: LightWeightSet\<T\>) => void, thisArg?: Object) | 通过遍历对set中的元素进行操作，可能包括但不限于修改元素。 |
 | 删除元素 | remove(key: K) | 删除指定的元素。 |
 | 删除元素 | removeAt(index: number) | 删除set中指定index对应的值。 |
 | 删除元素 | clear() | 清空整个set。 |
@@ -202,10 +204,10 @@ PlainArray支持增、删、改、查操作。常用API如下：
 | 访问元素 | getIndexOfValue(value: T) | 获取PlainArray中指定value出现的第一个的index。 |
 | 访问元素 | getKeyAt(index: number) | 获取指定index对应的key值。 |
 | 访问元素 | getValueAt(index: number) | 获取指定index对应的value值。 |
-| 访问元素 | forEach(callbackFn: (value: T, index?: number, PlainArray?: PlainArray<T>) => void, thisArg?: Object) | 遍历访问整个PlainArray的元素。 |
-| 访问元素 | [Symbol.iterator]():IterableIterator<[number, T]> | 创建迭代器以进行数据访问。 |
+| 访问元素 | forEach(callbackFn: (value: T, index?: number, PlainArray?: PlainArray\<T\>) => void, thisArg?: Object) | 遍历访问整个PlainArray的元素。 |
+| 访问元素 | [Symbol.iterator]():IterableIterator\<[number, T]\> | 创建迭代器以进行数据访问。 |
 | 修改元素 | setValueAt(index:number, value: T) | 修改指定index对应的value值。 |
-| 修改元素 | forEach(callbackFn: (value: T, index?: number, PlainArray?: PlainArray<T>) => void, thisArg?: Object) | 通过遍历对PlainArray中的元素进行操作，可能包括但不限于修改元素。 |
+| 修改元素 | forEach(callbackFn: (value: T, index?: number, PlainArray?: PlainArray\<T\>) => void, thisArg?: Object) | 通过遍历对PlainArray中的元素进行操作，可能包括但不限于修改元素。 |
 | 删除元素 | remove(key: number) | 删除PlainArray中指定key匹配到的键值对。 |
 | 删除元素 | removeAt(index: number) | 删除PlainArray中指定index对应的键值对。 |
 | 删除元素 | removeRangeFrom(index: number, size: number) | 删除PlainArray中指定范围内的元素。 |
@@ -259,4 +261,4 @@ import { HashMap, TreeMap, LightWeightMap, PlainArray } from '@kit.ArkTS';
 ```
 
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTsCommonLibrary/ArkTsContainerLibrary/NonlinearContainers/entry/src/main/ets/pages/Index.ets#L16-L100" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTsCommonLibrary/ArkTsContainerLibrary/NonlinearContainers/entry/src/main/ets/pages/Index.ets#L16-L100" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>

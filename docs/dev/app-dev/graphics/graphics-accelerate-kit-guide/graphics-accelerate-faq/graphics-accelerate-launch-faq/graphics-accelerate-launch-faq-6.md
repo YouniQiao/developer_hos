@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "游戏出现卡死后，应该如何避免下一次秒启后还是卡死场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-6
+format: md
 ---
+
 
 建议游戏上划退出后进行场景切换操作，若场景切换失败或场景切换超时（5s）则设置游戏不支持缓存后快速启动。
 

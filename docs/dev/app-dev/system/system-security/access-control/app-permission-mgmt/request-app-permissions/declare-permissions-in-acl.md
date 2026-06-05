@@ -1,7 +1,9 @@
 ---
 title: "申请受限权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl
+format: md
 ---
+
 
 受限开放的权限通常是不允许三方应用申请的。如果有特殊场景需要使用，请提供相关申请材料到AppGallery Connect（简称为AGC）申请相应权限证书。
 

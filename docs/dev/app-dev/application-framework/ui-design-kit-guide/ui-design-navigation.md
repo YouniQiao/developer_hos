@@ -1,7 +1,9 @@
 ---
 title: "组件导航"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation
+format: md
 ---
+
 
 * **[设置动态模糊样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-dynamic-blur)**
 * **[设置信息提醒](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-message-reminder)**

@@ -1,7 +1,9 @@
 ---
 title: "激励与扶持政策咨询"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-policy-support-0000002482666080
+format: md
 ---
+
 
 当您遇到问题时，可以按照以下顺序咨询激励政策问题。
 

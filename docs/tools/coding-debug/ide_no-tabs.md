@@ -1,7 +1,9 @@
 ---
 title: "@hw-stylistic/no-tabs"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @hw-stylistic/no-tabs
 

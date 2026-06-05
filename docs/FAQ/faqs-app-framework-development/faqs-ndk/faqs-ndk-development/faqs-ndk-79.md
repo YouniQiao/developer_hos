@@ -1,7 +1,9 @@
 ---
 title: "C侧如何打开文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-79
+format: md
 ---
+
 
 目前手机上不支持在C侧打开公共路径，仅支持在ArkTS侧打开后获取文件描述符（fd），再将fd传递到C侧进行打开。参考如下：
 

@@ -1,7 +1,9 @@
 ---
 title: "意图框架概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-overview
+format: md
 ---
+
 
 ## 场景介绍
 

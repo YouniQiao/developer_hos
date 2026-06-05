@@ -2,7 +2,9 @@
 title: "基础游戏服务"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-login-0000002060409757
+format: md
 ---
+
 
 # 基础游戏服务
 

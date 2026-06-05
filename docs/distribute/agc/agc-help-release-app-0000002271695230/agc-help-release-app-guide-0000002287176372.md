@@ -1,7 +1,9 @@
 ---
 title: "发布指引"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-guide-0000002287176372
+format: md
 ---
+
 
 为了给用户提供良好、安全、可靠的应用体验，在应用正式发布到华为应用市场前，我们会审核您提交的所有信息，请了解发布应用的要求、需要提供的信息，以便尽可能顺利通过发布审核。
 

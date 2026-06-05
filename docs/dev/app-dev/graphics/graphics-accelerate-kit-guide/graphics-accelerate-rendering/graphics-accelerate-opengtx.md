@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "OpenGTX功能开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-opengtx
+format: md
 ---
+
 
 ## 概述
 

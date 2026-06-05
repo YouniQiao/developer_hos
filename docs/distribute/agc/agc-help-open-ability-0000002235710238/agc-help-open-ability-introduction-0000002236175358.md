@@ -1,7 +1,9 @@
 ---
 title: "概述"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-open-ability-introduction-0000002236175358
+format: md
 ---
+
 
 除了使用HarmonyOS SDK提供的开发能力[开发HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-guide)/[开发元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-development-journey)外，AppGallery Connect也开放了一些能力助力您降低开发难度，提升开发效率。您可以根据实际需求选择使用。
 

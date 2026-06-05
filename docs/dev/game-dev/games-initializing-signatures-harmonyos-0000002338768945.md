@@ -1,7 +1,9 @@
 ---
 title: "HarmonyOS 5.0及以上"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-initializing-signatures-harmonyos-0000002338768945
+format: md
 ---
+
 
 为了提升服务的安全性，您还可以选择使用签名初始化SDK的方式进行安全加固，增强数据防篡改能力。在您的服务器端，您需要通过游戏ID、游戏密钥、玩家openId等信息计算出游戏签名，然后发送给客户端。客户端在SDK初始化、掉线重连等场景中均会验证玩家签名信息。
 

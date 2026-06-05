@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "接口请求响应“无效的签名”应该如何排查？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-10
+format: md
 ---
+
 
 1. 加签私钥和上传到商户平台的公钥是否配对。
 2. 排查待加签字符串是否正确拼接。 对象内的待加签字段需要排序后再拼接。对象内的嵌套的下一级对象也需要排序后再拼接。具体示例参考[签名规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-rest-overview#签名规则)。

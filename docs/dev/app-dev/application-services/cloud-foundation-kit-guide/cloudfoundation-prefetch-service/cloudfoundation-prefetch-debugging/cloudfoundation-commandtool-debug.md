@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "调试周期性预加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-commandtool-debug
+format: md
 ---
+
 
 prefetch\_test\_tool是为周期性预加载功能提供的一种命令行工具，开发者集成预加载服务后，使用该工具可以更方便、更高效地进行周期性预加载功能测试和调试，提高开发效率，同时确保预加载服务的平稳运行。
 
@@ -61,7 +63,7 @@ cf_prefetch getcache -m <bundlename>
 * 输入cf\_prefetch getcache -h，获取getcache命令支持的参数信息。
 
   ![](./img/848b7682.png)
-* 输入cf\_prefetch getcache -m <bundlename>，立即向云侧请求获取一次周期性预加载数据。
+* 输入cf\_prefetch getcache -m \<bundlename\>，立即向云侧请求获取一次周期性预加载数据。
 
   ![](./img/be42821a.png)
 

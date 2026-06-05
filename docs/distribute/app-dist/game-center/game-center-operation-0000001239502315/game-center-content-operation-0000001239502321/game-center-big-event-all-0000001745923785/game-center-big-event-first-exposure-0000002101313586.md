@@ -2,7 +2,9 @@
 title: "首曝"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-big-event-first-exposure-0000002101313586
+format: md
 ---
+
 
 # 首曝
 

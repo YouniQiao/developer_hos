@@ -1,7 +1,9 @@
 ---
 title: "ArkTS简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-overview
+format: md
 ---
+
 
 ArkTS是HarmonyOS应用开发的官方高级语言。
 

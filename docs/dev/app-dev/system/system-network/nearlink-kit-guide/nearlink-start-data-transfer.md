@@ -1,7 +1,9 @@
 ---
 title: "使用星闪传输数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-start-data-transfer
+format: md
 ---
+
 
 提供星闪数传相关的端口通道建立和数据传输等功能，同一设备可以同时承担数据发送端和接收端的角色。
 
@@ -21,10 +23,10 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/near
 | 接口名 | 描述 |
 | --- | --- |
 | [createPort](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#createport)(uuid: string): void | 注册端口服务。 |
-| [connect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#connect)(params: ConnectionParams): Promise<void> | 连接远端设备，建立端口通道。 |
-| [writeData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#writedata)(params: DataParams): Promise<void> | 通过设备地址和UUID向远端设备发数据。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#onconnectionstatechanged)(type: 'connectionStateChanged', callback: Callback<ConnectionResult>): void | 订阅端口通道连接状态变更事件。 |
-| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#onreaddata)(type: 'readData', callback: Callback<DataParams>): void | 订阅端口通道数据接收事件。 |
+| [connect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#connect)(params: ConnectionParams): Promise\<void\> | 连接远端设备，建立端口通道。 |
+| [writeData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#writedata)(params: DataParams): Promise\<void\> | 通过设备地址和UUID向远端设备发数据。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#onconnectionstatechanged)(type: 'connectionStateChanged', callback: Callback\<ConnectionResult\>): void | 订阅端口通道连接状态变更事件。 |
+| [on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#onreaddata)(type: 'readData', callback: Callback\<DataParams\>): void | 订阅端口通道数据接收事件。 |
 
 ## 开发步骤
 

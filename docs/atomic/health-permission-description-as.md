@@ -1,7 +1,9 @@
 ---
 title: "权限说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-permission-description-as
+format: md
 ---
+
 
 运动健康数据读写需要相应的权限，权限申请参考[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-apply-as)，数据类型对应权限如下：
 

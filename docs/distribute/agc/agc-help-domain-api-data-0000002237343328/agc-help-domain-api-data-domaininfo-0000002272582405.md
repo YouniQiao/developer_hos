@@ -1,7 +1,9 @@
 ---
 title: "DomainInfo"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-domain-api-data-domaininfo-0000002272582405
+format: md
 ---
+
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |

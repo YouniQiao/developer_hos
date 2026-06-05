@@ -1,7 +1,9 @@
 ---
 title: "获取服务端API授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-authorize-0000002553919617
+format: md
 ---
+
 
 在向AppGallery Connect服务端发起REST API请求前，您需要先获得AppGallery Connect服务端的授权。
 

@@ -1,7 +1,9 @@
 ---
 title: "账号密码填充"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-acc-password
+format: md
 ---
+
 
 密码保险箱可以在登录或修改密码时，自动填充已保存的用户名和密码。
 

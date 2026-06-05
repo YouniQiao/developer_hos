@@ -1,7 +1,9 @@
 ---
 title: "@correctness/v1-nested-object-property-change-format-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/v1-nested-object-property-change-format-check
 

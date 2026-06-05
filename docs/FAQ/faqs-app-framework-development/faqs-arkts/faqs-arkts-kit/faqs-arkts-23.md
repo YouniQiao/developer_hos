@@ -4,6 +4,7 @@ title: "pthread创建的线程中如何读取rawfile"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-23
 ---
 
+
 可在线程安全函数中读取。
 
 1. 在UI主线程中获取并保存资源文件对象。

@@ -1,7 +1,9 @@
 ---
 title: "元服务命名规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-naming-conversion
+format: md
 ---
+
 
 元服务名称作为用户使用元服务的第一印象，在命名上需要体现其业务特性，让用户得以迅速辨识。为规范元服务名称的命名与使用，向用户提供更好的搜索与浏览体验，特别制定本命名规范指导，帮助开发者更好地经营元服务。
 

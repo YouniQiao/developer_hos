@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "管理应用与Wear Engine服务的连接状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_service_status
+format: md
 ---
+
 
 ## 监测应用与Wear Engine服务的连接状态
 

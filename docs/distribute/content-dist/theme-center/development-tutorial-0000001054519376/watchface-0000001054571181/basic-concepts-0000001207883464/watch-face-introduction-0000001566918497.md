@@ -2,7 +2,9 @@
 title: "表盘介绍"
 displayed_sidebar: contentDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/content/watch-face-introduction-0000001566918497
+format: md
 ---
+
 
 # 表盘介绍
 

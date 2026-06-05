@@ -2,7 +2,9 @@
 title: "流失召回"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-loss-recall-0000001634589718
+format: md
 ---
+
 
 # 流失召回
 

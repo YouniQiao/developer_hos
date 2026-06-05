@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Contacts Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-intro
+format: md
 ---
+
 
 Contacts Kit（联系人服务）可以帮助开发者轻松实现联系人的增删改查等功能。该Kit提供了一系列API，可以让开发者在应用中快速集成联系人管理功能。
 

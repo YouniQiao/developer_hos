@@ -1,7 +1,9 @@
 ---
 title: "创建元服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-atomic-service-0000002247795706
+format: md
 ---
+
 
 APP ID是应用开发与发布的关键要素，是识别应用的唯一标识。如需在华为应用市场发布元服务，或者使用AppGallery Connect提供的各类服务，首先要在AppGallery Connect为您的软件包创建对应的元服务，从而为元服务生成一个独一无二的APP ID。
 

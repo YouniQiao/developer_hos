@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "配置预加载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-config
+format: md
 ---
+
 
 安装预加载、周期性预加载和跳链安装预加载需分别进行配置，且三者均可通过云函数和开发者服务器（即HTTPS请求）两种数据来源方式来实现。
 
@@ -77,7 +79,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/clou
    * 仅支持填写一个服务器地址，需包含预加载资源接口路径，如图中示例：prefetchData。
    * 域名：须填写完整的域名。例如`www.example.com`，不可写为example.com。
    * IP地址：须填写准确的IP地址，确保没有输入错误。
-   * 端口号：如果要指定端口号，可在服务器地址后面以冒号分隔，例如<https://www.example.com:443>。HTTPS协议的默认端口号（443）可以省略。
+   * 端口号：如果要指定端口号，可在服务器地址后面以冒号分隔，例如https://www.example.com:443。HTTPS协议的默认端口号（443）可以省略。
 
    ![](./img/55676137.png)
 

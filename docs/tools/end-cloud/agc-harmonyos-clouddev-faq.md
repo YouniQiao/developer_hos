@@ -2,7 +2,9 @@
 
 title: "FAQ"
 displayed_sidebar: cloudDevSidebar
+format: md
 ---
+
 
 # FAQ
 

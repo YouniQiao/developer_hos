@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅启动耗时事件（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-launch-arkts
+format: md
 ---
+
 
 ## 接口说明
 

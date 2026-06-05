@@ -1,7 +1,9 @@
 ---
 title: "预约调试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-appointequip-0000002255019572
+format: md
 ---
+
 
 当您想在特定时间段进行调试，或是您当前想要调试的设备处于忙碌状态无法申请时，云调试服务支持预约测试设备。您可预约最近72小时内的调试时间。当预约的设备在预约时段空闲时，设备会被锁定10分钟，请您及时上线，并在“我的信息”页面申请使用。每个账号最多在线同时预约2台设备。
 

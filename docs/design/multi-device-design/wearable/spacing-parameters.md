@@ -2,7 +2,9 @@
 title: 间隔参数
 sidebar_label: 间隔参数
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/spacing-parameters-0000002202912577
+format: md
 ---
+
 # 间隔参数
 
 本节对通用性的元素间隔进行了定义。主要有元素、文本的边距；控件之间的上下左右间距；文本的间距、 段落间距等。开发者如有涉及以下场景页面，建议根据提供的间隔参数进行绘制。

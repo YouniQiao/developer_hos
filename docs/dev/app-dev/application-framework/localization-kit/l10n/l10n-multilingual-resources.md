@@ -1,7 +1,9 @@
 ---
 title: "多语言适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-multilingual-resources
+format: md
 ---
+
 
 ## 功能介绍
 

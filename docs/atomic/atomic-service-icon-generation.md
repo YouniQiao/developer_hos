@@ -1,7 +1,9 @@
 ---
 title: "生成元服务图标"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-icon-generation
+format: md
 ---
+
 
 DevEco Studio支持Image Asset功能，帮助开发者生成统一的元服务图标样式。
 

@@ -4,6 +4,7 @@ title: "网络（Network）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-kit
 ---
 
+
 * **[http网络请求中extraData支持的数据格式有哪些](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-1)**
 * **[http请求中response错误码返回6是什么意思](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-3)**
 * **[调用camera拍摄的照片如何上传到服务器](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-4)**

@@ -1,7 +1,9 @@
 ---
 title: "Entity窗口"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-window-entity-0000002494200518
+format: md
 ---
+
 
 ## 功能介绍
 

@@ -1,7 +1,9 @@
 ---
 title: "获取目标应用的URL信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtaining-target-app-url-info
+format: md
 ---
+
 
 ## 场景介绍
 

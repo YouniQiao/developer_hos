@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "Ads Kit简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-introduction
+format: md
 ---
+
 
 Ads Kit（广告服务）依托华为终端平台与数据能力为您提供流量变现服务，帮助您解决流量变现的难题；同时为广告主提供广告服务，配合华为终端平台向用户提供个性化的营销活动或商业广告。
 

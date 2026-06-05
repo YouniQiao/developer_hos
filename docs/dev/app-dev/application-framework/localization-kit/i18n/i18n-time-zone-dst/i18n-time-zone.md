@@ -1,7 +1,9 @@
 ---
 title: "时区"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-time-zone
+format: md
 ---
+
 
 ## 使用场景
 
@@ -20,11 +22,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n
 | getDisplayName(locale?: string, isDST?: boolean): string | 获取时区对象名称在指定语言下的翻译。 |
 | getRawOffset(): number | 获取时区的固定偏移量。 |
 | getOffset(date?: number): number | 获取某一时刻时区对象所表示时区的偏移量。 |
-| getAvailableIDs(): Array<string> | 获取系统支持的时区ID列表。 |
-| getAvailableZoneCityIDs(): Array<string> | 获取系统支持的时区城市ID列表。 |
+| getAvailableIDs(): Array\<string\> | 获取系统支持的时区ID列表。 |
+| getAvailableZoneCityIDs(): Array\<string\> | 获取系统支持的时区城市ID列表。 |
 | getCityDisplayName(cityID: string, locale: string): string | 获取时区城市名称在指定语言下的翻译。 |
 | getTimezoneFromCity(cityID: string): TimeZone | 根据城市ID创建对应的时区对象。 |
-| getTimezonesByLocation(longitude: number, latitude: number): Array<TimeZone> | 根据地理坐标获取所在时区对象的数组。 |
+| getTimezonesByLocation(longitude: number, latitude: number): Array\<TimeZone\> | 根据地理坐标获取所在时区对象的数组。 |
 | getZoneRules(): ZoneRules | 获取时区跳变规则。 |
 | nextTransition(date?: number): ZoneOffsetTransition | 获取指定时间的下一个时区跳变对象。 |
 | getMilliseconds(): number | 获取时区跳变点的时间戳。 |
@@ -43,7 +45,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/International/Internationalization/entry/src/main/ets/i18napplication/TimezoneDstSetting.ets#L19-L21" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：TimezoneDstSetting.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/International/Internationalization/entry/src/main/ets/i18napplication/TimezoneDstSetting.ets#L19-L21" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：TimezoneDstSetting.ets</a></div>
 
 2. 使用场景。
 
@@ -125,7 +127,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n
 
   
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/International/Internationalization/entry/src/main/ets/i18napplication/TimezoneDstSetting.ets#L26-L98" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：TimezoneDstSetting.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/International/Internationalization/entry/src/main/ets/i18napplication/TimezoneDstSetting.ets#L26-L98" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：TimezoneDstSetting.ets</a></div>
 
 * 双时钟应用：首先选择时区列表中的时区，添加到应用偏好时区列表。然后遍历应用偏好时区列表，获取各时区的时间。
 
@@ -153,4 +155,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n
 
   
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/International/Internationalization/entry/src/main/ets/i18napplication/TimezoneDstSetting.ets#L100-L130" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：TimezoneDstSetting.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/International/Internationalization/entry/src/main/ets/i18napplication/TimezoneDstSetting.ets#L100-L130" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：TimezoneDstSetting.ets</a></div>

@@ -1,7 +1,9 @@
 ---
 title: "显式Want与隐式Want匹配规则"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings
+format: md
 ---
+
 
 在启动目标应用组件时，会通过显式[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)或者隐式[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)进行目标应用组件的匹配，这里说的匹配规则就是调用方传入的[want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)参数中设置的参数如何与目标应用组件声明的配置文件进行匹配。
 
@@ -18,9 +20,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/expl
 | uri | string | 否 | 否 | 系统匹配时将忽略该参数，但仍可作为参数传递给目标应用组件。 |
 | type | string | 否 | 否 | 系统匹配时将忽略该参数，但仍可作为参数传递给目标应用组件。 |
 | action | string | 否 | 否 | 系统匹配时将忽略该参数，但仍可作为参数传递给目标应用组件。 |
-| entities | Array<string> | 否 | 否 | 系统匹配时将忽略该参数，但仍可作为参数传递给目标应用组件。 |
+| entities | Array\<string\> | 否 | 否 | 系统匹配时将忽略该参数，但仍可作为参数传递给目标应用组件。 |
 | flags | number | 否 | 否 | 不参与匹配，直接传递给系统处理，一般用来设置运行态信息，例如URI数据授权等。 |
-| parameters | {[key: string]: Object} | 否 | 否 | 不参与匹配，应用自定义数据将直接传递给目标应用组件。 |
+| parameters | \{[key: string]: Object\} | 否 | 否 | 不参与匹配，应用自定义数据将直接传递给目标应用组件。 |
 
 ## 隐式Want匹配原理
 
@@ -35,9 +37,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/expl
 | uri | string | 是 | 否 | 参见[want参数的uri和type匹配规则](#want参数的uri和type匹配规则)。 |
 | type | string | 是 | 否 | 参见[want参数的uri和type匹配规则](#want参数的uri和type匹配规则)。 |
 | action | string | 是 | 否 | 参见[want参数的action匹配规则](#want参数的action匹配规则)。 |
-| entities | Array<string> | 是 | 否 | 参见[want参数的entities匹配规则](#want参数的entities匹配规则)。 |
+| entities | Array\<string\> | 是 | 否 | 参见[want参数的entities匹配规则](#want参数的entities匹配规则)。 |
 | flags | number | 否 | 否 | 不参与匹配，直接传递给系统处理，一般用来设置运行态信息，例如URI数据授权等。 |
-| parameters | {[key: string]: Object} | 是 | 否 | 应用自定义数据将直接传递给目标应用组件。当前支持使用key为linkFeature的参数进行匹配，当linkFeature字段取值不为空时，优先进行linkFeature匹配。 |
+| parameters | \{[key: string]: Object\} | 是 | 否 | 应用自定义数据将直接传递给目标应用组件。当前支持使用key为linkFeature的参数进行匹配，当linkFeature字段取值不为空时，优先进行linkFeature匹配。 |
 
 从隐式Want的定义，可得知：
 

@@ -4,6 +4,7 @@ title: "如何将像素点保存到图片文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-7
 ---
 
+
 **问题现象**
 
 将像素点信息保存成图片文件的方法如下：先将像素点信息转换为imageSource，再将imageSource保存为图片文件。

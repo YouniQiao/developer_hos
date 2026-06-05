@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "已连接穿戴设备查询"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices
+format: md
 ---
+
 
 ![](./img/d4292fa7.png)
 

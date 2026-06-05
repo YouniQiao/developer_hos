@@ -1,7 +1,9 @@
 ---
 title: "互动中心"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000002276985946
+format: md
 ---
+
 
 AppGallery Connect（以下简称AGC）打造的“互动中心”是您与华为客服/服务商进行问题咨询和答疑的官方在线沟通平台，旨在提升您参与活动、申诉请求或反馈问题的效率，以便更高效地解决问题并优化产品价值。
 

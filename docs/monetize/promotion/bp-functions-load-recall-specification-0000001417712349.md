@@ -2,7 +2,9 @@
 title: "素材制作规范"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-specification-0000001417712349
+format: md
 ---
+
 # 素材制作规范
 
 卸载召回专区支持3个素材规格：图片、Gif、视频

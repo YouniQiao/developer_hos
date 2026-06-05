@@ -1,7 +1,9 @@
 ---
 title: "@correctness/image-pixel-format-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @correctness/image-pixel-format-check
 

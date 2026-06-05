@@ -1,7 +1,9 @@
 ---
 title: "SharedComponent"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-sharedcomponent-0000002494387362
+format: md
 ---
+
 
 * **[SharedComponent概述](https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-sharedcomponent-overview-0000002498501222)**
 * **[定义SharedComponent](https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-sharedcomponent-definition-0000002498341246)**

@@ -1,7 +1,9 @@
 ---
 title: "ohpm config"
 displayed_sidebar: ohpmSidebar
+format: md
 ---
+
 
 # ohpm config
 

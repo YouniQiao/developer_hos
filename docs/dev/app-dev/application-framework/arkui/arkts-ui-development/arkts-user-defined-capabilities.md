@@ -1,7 +1,9 @@
 ---
 title: "使用自定义能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-capabilities
+format: md
 ---
+
 
 * **[自定义能力概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined)**
 * **[自定义组合](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-composition)**

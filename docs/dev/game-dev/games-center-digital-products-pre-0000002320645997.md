@@ -1,7 +1,9 @@
 ---
 title: "前提条件"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-digital-products-pre-0000002320645997
+format: md
 ---
+
 
 * 请您确保当前登录的AGC账号，拥有“APP管理员”、“管理员”、“运营”的其中**任意一项****[角色](https://developer.huawei.com/consumer/cn/doc/app/agc-help-rolepermission-0000002271930352)**。若您想查询账号角色，请登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，进入“用户与访问 &gt; 用户 &gt; 个人信息 &gt; 角色管理”，即可看到当前账号的角色信息。
 

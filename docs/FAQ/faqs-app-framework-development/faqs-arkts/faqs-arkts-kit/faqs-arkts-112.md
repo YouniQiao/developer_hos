@@ -4,6 +4,7 @@ title: "如何判断对象的类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-112
 ---
 
+
 在代码开发中，如果需要对对象的类型做判断，调用不同类的方法，可以使用instanceof进行判断来得知对象的类型，参考代码如下：
 
 ```

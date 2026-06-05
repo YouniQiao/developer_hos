@@ -4,6 +4,7 @@ title: "自定义组件是否能通过容器保存"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-228
 ---
 
+
 自定义组件是 struct 而非 class，因此无法直接存储在容器中。可以通过将自定义组件封装在 Builder 函数中，利用 Builder 的封装来实现存储。
 
 参考代码如下：

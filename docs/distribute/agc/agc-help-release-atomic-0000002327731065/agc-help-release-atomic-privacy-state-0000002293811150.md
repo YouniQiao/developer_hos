@@ -1,7 +1,9 @@
 ---
 title: "配置隐私声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-privacy-state-0000002293811150
+format: md
 ---
+
 
 发布元服务时，您需要提供隐私政策，便于用户了解元服务的数据收集和使用情况。
 

@@ -4,6 +4,7 @@ title: "Windows电脑上启动模拟器，提示可申请内存不足"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-39
 ---
 
+
 **问题现象**
 
 启动模拟器时，如果系统提示“当前可申请的内存不足”，表示Windows电脑内存不足。

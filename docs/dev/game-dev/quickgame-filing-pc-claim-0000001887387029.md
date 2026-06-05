@@ -1,7 +1,9 @@
 ---
 title: "认领核准（备案）"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-claim-0000001887387029
+format: md
 ---
+
 
 在华为云核准（备案）系统中认领华为原核准（备案）系统核准（备案）的主体信息和快游戏信息。操作步骤如下：
 

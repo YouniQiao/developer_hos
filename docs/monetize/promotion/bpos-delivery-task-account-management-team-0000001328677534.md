@@ -2,7 +2,9 @@
 title: "团队管理"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-management-team-0000001328677534
+format: md
 ---
+
 # 团队管理
 
 ## 概述

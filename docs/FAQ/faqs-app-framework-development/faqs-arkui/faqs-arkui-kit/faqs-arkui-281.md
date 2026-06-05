@@ -4,6 +4,7 @@ title: "自定义键盘和系统键盘如何切换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-281
 ---
 
+
 声明状态变量，动态控制customKeyboard属性的值，实现自定义键盘与系统键盘的切换。示例代码如下：
 
 ```

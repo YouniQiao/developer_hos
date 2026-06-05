@@ -2,7 +2,9 @@
 title: "订单通知接口"
 displayed_sidebar: xiaoyiSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/service/order-notification-0000002537601307
+format: md
 ---
+
 
 # 订单通知接口
 

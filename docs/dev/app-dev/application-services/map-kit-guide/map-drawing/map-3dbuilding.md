@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "3D建筑"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-3dbuilding
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -19,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-
 | 接口名 | 描述 |
 | --- | --- |
 | [BuildingOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#buildingoverlayparams) | 3D建筑参数。 |
-| [addBuildingOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addbuildingoverlay)(params: [mapCommon.BuildingOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#buildingoverlayparams)): Promise<[BuildingOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-buildingoverlay)> | 在地图上添加3D建筑。 |
+| [addBuildingOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller#addbuildingoverlay)(params: [mapCommon.BuildingOverlayParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#buildingoverlayparams)): Promise[BuildingOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-buildingoverlay) | 在地图上添加3D建筑。 |
 | [BuildingOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-buildingoverlay) | 3D建筑，支持更新和查询相关属性。 |
 
 ## 开发步骤

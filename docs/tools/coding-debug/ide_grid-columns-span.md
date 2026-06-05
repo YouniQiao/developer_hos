@@ -1,7 +1,9 @@
 ---
 title: "@cross-device-app-dev/grid-columns-span"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @cross-device-app-dev/grid-columns-span
 

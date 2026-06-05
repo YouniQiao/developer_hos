@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "获取文件图标"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-getfileicon
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -13,7 +15,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file
 | 接口名 | 描述 |
 | --- | --- |
 | function [getFileIconSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/filemanagerservice-arkts-filemanagerservice#filemanagerservicegetfileiconsync)(fileType: string): string | Resource | 根据文件类型获取文件图标。 |
-| function [getFileIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/filemanagerservice-arkts-filemanagerservice#filemanagerservicegetfileicon)(fileType: string): Promise<string | Resource> | 根据文件类型获取文件图标。使用Promise异步回调。 |
+| function [getFileIcon](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/filemanagerservice-arkts-filemanagerservice#filemanagerservicegetfileicon)(fileType: string): Promise\<string | Resource\> | 根据文件类型获取文件图标。使用Promise异步回调。 |
 
 ## 示例代码
 

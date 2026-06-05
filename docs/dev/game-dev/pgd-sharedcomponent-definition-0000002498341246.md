@@ -1,7 +1,9 @@
 ---
 title: "定义SharedComponent"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-sharedcomponent-definition-0000002498341246
+format: md
 ---
+
 
 通过实现IShared接口，定义SharedComponent
 

@@ -1,7 +1,9 @@
 ---
 title: "@typescript-eslint/switch-exhaustiveness-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @typescript-eslint/switch-exhaustiveness-check
 

@@ -2,7 +2,9 @@
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-shadow-delivery-introduction-0000001284775684
+format: md
 ---
+
 # 业务介绍
 
 为满足开发者对目标应用的跟随展示需求，华为应用市场应用推广平台推出影子投放功能，一键辅助开发者精准锁定目标应用，突破竞争困局。

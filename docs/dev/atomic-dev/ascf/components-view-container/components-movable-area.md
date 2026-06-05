@@ -1,7 +1,9 @@
 ---
 title: "movable-area"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-area
+format: md
 ---
+
 
 [movable-view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-view)的可移动区域。
 

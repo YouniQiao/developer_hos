@@ -2,7 +2,9 @@
 title: 二维码
 sidebar_label: 二维码
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/qrcode-0000001929816020
+format: md
 ---
+
 # 二维码
 
 可将链接转换生成为二维码的样式来展示，用户使用设备扫描后即可获取链接地址或获得对应信息。相关开发能力参考 [QRCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-qrcode) 文档。

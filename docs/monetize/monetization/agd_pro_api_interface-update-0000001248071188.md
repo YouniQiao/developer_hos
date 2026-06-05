@@ -2,7 +2,9 @@
 title: "接口更新说明"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_interface-update-0000001248071188
+format: md
 ---
+
 
 
 | 版本号 | 发布时间 | 更新说明 |

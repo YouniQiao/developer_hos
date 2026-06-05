@@ -2,7 +2,9 @@
 title: "自有分析工具"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/tracking-own-analytics-0000001138842000
+format: md
 ---
+
 # 自有分析工具
 
 ## 概述

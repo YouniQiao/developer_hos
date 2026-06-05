@@ -4,6 +4,7 @@ title: "软件包格式异常"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-15
 ---
 
+
 **问题现象**
 
 1. 打包签名提示“**find zip central directory failed**”错误。

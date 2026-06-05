@@ -4,6 +4,7 @@ title: "通过$r访问应用资源是否支持嵌套形式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-102
 ---
 
+
 $r当前不支持嵌套。第二个参数需使用ResourceManager获取应用资源的字符串。参考代码如下：
 
 ```

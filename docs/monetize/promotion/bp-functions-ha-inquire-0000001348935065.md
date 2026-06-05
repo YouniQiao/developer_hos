@@ -2,7 +2,9 @@
 title: "查询HA归因报表"
 displayed_sidebar: promotionSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ha-inquire-0000001348935065
+format: md
 ---
+
 # 查询HA归因报表
 
 当您选择HA归因方式时，HA会自动帮您回传数据用于提升推广效果。

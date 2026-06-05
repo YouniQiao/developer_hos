@@ -1,7 +1,9 @@
 ---
 title: "快游戏简介"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-introduction-0000002351933625
+format: md
 ---
+
 
 ![](./img/96ca7396.png)
 

@@ -4,6 +4,7 @@ title: "能否通过httpResponse的result拿到一个加密内容的数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-43
 ---
 
+
 使用HTTP请求传递加密数据，可以在result中获取到结果。
 
 HTTP请求根据响应头中content-type类型返回对应的响应格式内容，若HttpRequestOptions无expectDataType字段，按如下规则返回：

@@ -4,6 +4,7 @@ title: "回归测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test
 ---
 
+
 * **[生成回归测试包时报错提示“打包失败,当前项目根目录下缺少testcases文件夹”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-1)**
 * **[生成回归测试包时报错提示“当前项目根目录下不存在setup-regression.py文件”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-2)**
 * **[生成回归测试包时，如果出现“setup-regression.py解析失败，请检查setup-regression.py的写法是否规范”的错误提示，应如何处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-3)**

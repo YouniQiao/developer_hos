@@ -1,7 +1,9 @@
 ---
 title: "直达礼包"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-direct-gifts-kit-0000002318054684
+format: md
 ---
+
 
 直达礼包为用户提供了方便快捷的礼包领取体验，同时降低了礼包被刷的风险。
 

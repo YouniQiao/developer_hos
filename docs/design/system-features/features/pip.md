@@ -2,7 +2,9 @@
 title: 画中画
 sidebar_label: 画中画
 source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/pip-0000001927422624
+format: md
 ---
+
 # 画中画
 
 画中画是一种视频内容或视频通话的显示方式，利用“画中画”可以在使用其他应用的同时，观看视频内容或使用视频通话，覆盖场景包括视频播放、直播、视频通话、视频会议等。

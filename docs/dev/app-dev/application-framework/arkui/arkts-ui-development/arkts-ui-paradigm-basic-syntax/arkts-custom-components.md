@@ -1,7 +1,9 @@
 ---
 title: "自定义组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components
+format: md
 ---
+
 
 * **[创建自定义组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components)**
 * **[自定义组件生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-lifecycle)**

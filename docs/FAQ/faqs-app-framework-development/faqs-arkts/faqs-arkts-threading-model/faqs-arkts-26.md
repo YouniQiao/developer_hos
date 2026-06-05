@@ -1,7 +1,9 @@
 ---
 title: "如何设置Task优先级"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-26
+format: md
 ---
+
 
 设置任务优先级，示例如下：
 

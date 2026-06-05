@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "开通实况窗服务权益"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-rights
+format: md
 ---
+
 
 若需完成应用的实况窗接入与调测，开发者需预先开通实况窗服务权益，可依据以下操作步骤提交申请，完成服务权益开通。
 

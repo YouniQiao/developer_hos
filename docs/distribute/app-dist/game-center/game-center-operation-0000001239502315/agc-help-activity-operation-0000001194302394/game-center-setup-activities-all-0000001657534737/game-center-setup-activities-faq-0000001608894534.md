@@ -2,7 +2,9 @@
 title: "FAQ"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-faq-0000001608894534
+format: md
 ---
+
 
 # FAQ
 

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "设置PDF文档预览效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-preview-method
+format: md
 ---
+
 
 pdfViewManager为PDF文档提供了丰富的预览特性。
 

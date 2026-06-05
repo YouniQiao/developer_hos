@@ -4,6 +4,7 @@ title: "编译报错“The srcPath is not a relative path：xxx”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-138
 ---
 
+
 **错误描述**
 
 srcPath字段配置值必须为相对路径。

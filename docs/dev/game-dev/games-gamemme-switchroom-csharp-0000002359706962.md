@@ -1,7 +1,9 @@
 ---
 title: "切换房间"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-switchroom-csharp-0000002359706962
+format: md
 ---
+
 
 玩家处于多房间状态下时，可通过切换语音房间实现进入不同房间发言。
 

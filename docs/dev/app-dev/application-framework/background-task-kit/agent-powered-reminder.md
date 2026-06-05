@@ -1,7 +1,9 @@
 ---
 title: "代理提醒(ArkTS)"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agent-powered-reminder
+format: md
 ---
+
 
 ## 功能介绍
 
@@ -61,12 +63,12 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agen
 
 | 接口名 | 描述 |
 | --- | --- |
-| publishReminder(reminderReq: ReminderRequest): Promise<number> | 发布后台代理提醒。 |
-| cancelReminder(reminderId: number): Promise<void> | 取消指定id的代理提醒。 |
-| getValidReminders(): Promise<Array<ReminderRequest>> | 获取当前应用设置的所有[有效（未过期）的代理提醒](#约束与限制)。 |
-| cancelAllReminders(): Promise<void> | 取消当前应用设置的所有代理提醒。 |
-| addNotificationSlot(slot: NotificationSlot): Promise<void> | 添加通知渠道。 |
-| removeNotificationSlot(slotType: notification.SlotType): Promise<void> | 删除指定的通知渠道类型。 |
+| publishReminder(reminderReq: ReminderRequest): Promise\<number\> | 发布后台代理提醒。 |
+| cancelReminder(reminderId: number): Promise\<void\> | 取消指定id的代理提醒。 |
+| getValidReminders(): Promise\<Array<ReminderRequest\>> | 获取当前应用设置的所有[有效（未过期）的代理提醒](#约束与限制)。 |
+| cancelAllReminders(): Promise\<void\> | 取消当前应用设置的所有代理提醒。 |
+| addNotificationSlot(slot: NotificationSlot): Promise\<void\> | 添加通知渠道。 |
+| removeNotificationSlot(slotType: notification.SlotType): Promise\<void\> | 删除指定的通知渠道类型。 |
 
 ## 开发步骤
 
@@ -108,7 +110,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agen
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/pages/timer/Timer.ets#L16-L20" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Timer.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/pages/timer/Timer.ets#L16-L20" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Timer.ets</a></div>
 
 2. 定义目标提醒代理。开发者根据实际需要，选择定义如下类型的提醒。
 
@@ -132,7 +134,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agen
 
      
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/pages/timer/Timer.ets#L247-L264" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Timer.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/pages/timer/Timer.ets#L247-L264" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Timer.ets</a></div>
 
    * 定义日历实例。
 
@@ -162,7 +164,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agen
 
      
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/util/CalendarReminder.ets#L59-L85" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CalendarReminder.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/util/CalendarReminder.ets#L59-L85" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CalendarReminder.ets</a></div>
 
    * 定义闹钟实例。
 
@@ -198,7 +200,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agen
 
      
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/util/AlarmClockReminder.ets#L59-L92" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：AlarmClockReminder.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/util/AlarmClockReminder.ets#L59-L92" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：AlarmClockReminder.ets</a></div>
 
 3. 发布相应的提醒代理。代理发布后，应用即可使用后台代理提醒功能。
 
@@ -211,7 +213,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agen
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/util/CalendarReminder.ets#L109-L114" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CalendarReminder.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/util/CalendarReminder.ets#L109-L114" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CalendarReminder.ets</a></div>
 
 4. 根据需要删除提醒任务。
 
@@ -222,4 +224,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agen
 
    
 
-<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/util/CalendarReminder.ets#L162-L165" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：CalendarReminder.ets</a></div>
+<div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/ReminderAgentManager/entry/src/main/ets/util/CalendarReminder.ets#L162-L165" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CalendarReminder.ets</a></div>

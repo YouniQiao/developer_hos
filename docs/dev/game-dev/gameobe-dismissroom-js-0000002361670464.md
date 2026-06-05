@@ -1,7 +1,9 @@
 ---
 title: "解散房间"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-dismissroom-js-0000002361670464
+format: md
 ---
+
 
 创建房间后，如需销毁房间，可以将房间解散。
 

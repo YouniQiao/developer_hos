@@ -4,6 +4,7 @@ title: "ArkTS侧与Native侧如何进行map数据交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-6
 ---
 
+
 当前没有专门的接口用于在ArkTS侧与Native侧之间转换map。要实现map（二维数组）的数据交互，可以读取map中的数据并传递到Native侧进行重组。
 
 参考代码如下：

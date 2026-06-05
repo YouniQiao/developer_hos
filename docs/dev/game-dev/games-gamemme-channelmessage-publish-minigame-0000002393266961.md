@@ -1,7 +1,9 @@
 ---
 title: "发布与接收频道消息"
 original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channelmessage-publish-minigame-0000002393266961
+format: md
 ---
+
 
 通过向指定频道内的一个或多个订阅用户发布频道消息，可用于实现游戏内实时通信和聊天室消息等场景。当前支持发布文本和二进制两种类型的消息。其中，文本消息可用于聊天等场景。二进制消息可传递游戏状态数据，用于信令同步等场景。同时，支持对文本消息内容进行风控审核和广告识别。
 

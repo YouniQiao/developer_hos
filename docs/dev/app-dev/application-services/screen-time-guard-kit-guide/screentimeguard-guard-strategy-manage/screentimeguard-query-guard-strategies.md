@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "查询策略"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-query-guard-strategies
+format: md
 ---
+
 
 ## 场景介绍
 
@@ -23,7 +25,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scre
 
 | 接口名 | 描述 |
 | --- | --- |
-| [queryGuardStrategies](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#queryguardstrategies)(): Promise<[GuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#guardstrategy)[]> | 查询该应用下的所有管控策略。 |
+| [queryGuardStrategies](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#queryguardstrategies)(): Promise[GuardStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#guardstrategy)[] | 查询该应用下的所有管控策略。 |
 
 ## 开发前提
 

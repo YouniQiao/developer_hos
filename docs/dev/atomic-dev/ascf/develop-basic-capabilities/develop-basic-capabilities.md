@@ -1,7 +1,9 @@
 ---
 title: "基础能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-basic-capabilities
+format: md
 ---
+
 
 * **[访问网络](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-network-access)**
 * **[分包加载](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-subpackage-loading)**

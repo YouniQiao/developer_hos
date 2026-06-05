@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "订阅阻断类事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-c-auth
+format: md
 ---
+
 
 ## 场景介绍
 

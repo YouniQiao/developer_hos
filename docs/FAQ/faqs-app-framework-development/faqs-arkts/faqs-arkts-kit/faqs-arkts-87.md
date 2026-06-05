@@ -4,6 +4,7 @@ title: "如何获取对象的类名"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-87
 ---
 
+
 获取类的实例，通过constructor的name属性获取类名。
 
 示例如下：

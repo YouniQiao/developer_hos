@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "用户授权管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-interface-call-auth
+format: md
 ---
+
 
 * **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-interface-call-auth-overview)**
 * **[请求用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-request-user-auth)**

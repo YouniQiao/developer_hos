@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "跑步"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-running
+format: md
 ---
+
 
 跑步相关锻炼记录类型如下：
 

@@ -1,7 +1,9 @@
 ---
 title: "业务场景设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-setscenedesc
+format: md
 ---
+
 
 ## 场景介绍
 

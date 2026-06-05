@@ -1,7 +1,9 @@
 ---
 title: "查看应用信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569
+format: md
 ---
+
 
 创建HarmonyOS应用/元服务后，您可以查看其相关信息，如Developer ID、Client ID、APP ID等。
 

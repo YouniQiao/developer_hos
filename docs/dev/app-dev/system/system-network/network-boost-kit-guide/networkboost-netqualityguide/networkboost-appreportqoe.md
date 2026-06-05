@@ -1,7 +1,9 @@
 ---
 title: "应用传输体验反馈"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-appreportqoe
+format: md
 ---
+
 
 ## 场景介绍
 

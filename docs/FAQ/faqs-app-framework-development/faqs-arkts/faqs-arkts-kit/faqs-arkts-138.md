@@ -4,6 +4,7 @@ title: "ArkTS如何定义callback函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-138
 ---
 
+
 定义一个callback函数的样例，参考代码如下：
 
 1. 定义回调函数

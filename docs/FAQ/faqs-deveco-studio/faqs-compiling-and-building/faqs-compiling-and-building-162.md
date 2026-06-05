@@ -4,6 +4,7 @@ title: "编译报错“Failed to obtain the module type.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-162
 ---
 
+
 **错误描述**
 
 未找到指定的模块类型。

@@ -2,7 +2,9 @@
 displayed_sidebar: appDevSidebar
 title: "通过聚合链接按指定方式跳转至应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-cross-platform
+format: md
 ---
+
 
 ## 场景介绍
 

@@ -4,6 +4,7 @@ title: "napi_env禁止缓存的原因是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-73
 ---
 
+
 napi\_env表示程序的运行状态和上下文信息。在不同的调用上下文、执行环境、NAPI模块初始化或销毁以及多线程环境中，napi\_env的值可能会发生变化。使用时应通过NAPI提供的接口安全地访问和操作执行环境。
 
 禁止缓存napi\_env的主要原因如下：

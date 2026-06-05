@@ -2,7 +2,9 @@
 title: "业务总则"
 displayed_sidebar: monetizationSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk-rule-total-0000001597142081
+format: md
 ---
+
 
 
 * AGD Pro服务致力于构建一个优质的应用变现平台，为发布商提供优质的广告内容，让广告主的广告获得有效的展示，让平台健康、可持续发展，以期实现不断良性循环的三赢局面。我们所有的政策规范都是为这一主旨服务。

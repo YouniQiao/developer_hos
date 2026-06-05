@@ -1,7 +1,9 @@
 ---
 title: "全新创建ASCF项目"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/create-ascf-project
+format: md
 ---
+
 
 开发者也可以在DevEco Studio中创建新工程，来构建元服务。
 

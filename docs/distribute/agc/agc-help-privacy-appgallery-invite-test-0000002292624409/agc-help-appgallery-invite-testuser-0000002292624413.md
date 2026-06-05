@@ -1,7 +1,9 @@
 ---
 title: "邀请用户参与测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-appgallery-invite-testuser-0000002292624413
+format: md
 ---
+
 
 测试版本发布、且到达测试时间后，您便可以邀请用户参与测试。AGC提供了多种邀请方式：
 

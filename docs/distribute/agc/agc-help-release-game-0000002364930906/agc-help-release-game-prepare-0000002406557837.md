@@ -1,7 +1,9 @@
 ---
 title: "准备工作"
 original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-prepare-0000002406557837
+format: md
 ---
+
 
 提前了解游戏的上架规则，并提前准备游戏素材，有助于快速通过游戏上架审核。
 

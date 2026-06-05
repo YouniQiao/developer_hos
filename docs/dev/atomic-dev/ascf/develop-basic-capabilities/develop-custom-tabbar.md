@@ -1,7 +1,9 @@
 ---
 title: "自定义tabBar"
 original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-custom-tabbar
+format: md
 ---
+
 
 自定义tabBar可以让开发者更灵活地设置tabBar样式，以满足更多个性化的场景。
 

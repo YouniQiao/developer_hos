@@ -1,7 +1,9 @@
 ---
 title: "循环渲染迁移"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-rendering-control-repeat
+format: md
 ---
+
 
 本文档主要介绍组件循环渲染从V1向V2的迁移，涉及如下渲染控制组件。
 
@@ -1230,7 +1232,7 @@ struct MyComponent {
 
 **示例7 - 迁移方案2：使用@ReusableV2装饰器**
 
-若要使用@ReusableV2装饰器，首先需要通过.virtualScroll({ reusable: false })关闭Repeat自身的复用功能，再用@ReusableV2装饰需要复用的自定义组件。
+若要使用@ReusableV2装饰器，首先需要通过.virtualScroll(\{ reusable: false \})关闭Repeat自身的复用功能，再用@ReusableV2装饰需要复用的自定义组件。
 
 相较于Repeat自身的复用，@ReusableV2装饰的自定义组件在回收和复用时，会触发aboutToRecycle和aboutToReuse两个生命周期。
 

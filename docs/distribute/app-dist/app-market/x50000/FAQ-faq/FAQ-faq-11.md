@@ -2,7 +2,9 @@
 title: "9. 账号注销常见问题"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-11
+format: md
 ---
+
 # 9. 账号注销常见问题
 
 ## 9.1 为什么要设置账号注销功能，应用是不是“必须”允许用户注销账号？

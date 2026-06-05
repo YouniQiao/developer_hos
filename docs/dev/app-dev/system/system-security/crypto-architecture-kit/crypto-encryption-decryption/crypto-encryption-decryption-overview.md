@@ -1,7 +1,9 @@
 ---
 title: "加解密介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encryption-decryption-overview
+format: md
 ---
+
 
 在数据存储或传输场景中，可以使用加解密操作用于保证数据的机密性，防止敏感数据泄露。
 

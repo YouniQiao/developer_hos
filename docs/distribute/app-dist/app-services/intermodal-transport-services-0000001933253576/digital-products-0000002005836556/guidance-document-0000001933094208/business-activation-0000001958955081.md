@@ -2,7 +2,9 @@
 title: "数字商品接入流程"
 displayed_sidebar: appDistSidebar
 original_url: https://developer.huawei.com/consumer/cn/doc/app/business-activation-0000001958955081
+format: md
 ---
+
 
 # 数字商品接入流程
 

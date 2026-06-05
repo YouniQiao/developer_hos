@@ -4,6 +4,7 @@ title: "如何处理父子组件间的事件传递，例如，如何解决滑动
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-40
 ---
 
+
 1. 系统基于触摸测试收集需响应事件的控件，测试顺序从父组件到子组件。后续手势识别和竞争基于hitTest结果。
 
 2. 应用可改变组件上 hitTestBehavior 的值，以修改系统对其的 hitTest 结果。

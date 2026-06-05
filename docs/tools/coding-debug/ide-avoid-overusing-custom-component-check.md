@@ -1,7 +1,9 @@
 ---
 title: "@performance/avoid-overusing-custom-component-check"
 displayed_sidebar: toolsSidebar
+format: md
 ---
+
 
 # @performance/avoid-overusing-custom-component-check
 
