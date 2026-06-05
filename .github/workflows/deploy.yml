@@ -135,6 +135,14 @@ jobs:
             echo "💾 bundler cache saved ($(du -sh node_modules/.cache | cut -f1))"
           fi
 
+      - name: Sync to preview site (local Nginx)
+        if: success()
+        run: |
+          echo "📦 同步构建产物到预览站..."
+          rm -rf /var/www/preview/*
+          cp -r build/* /var/www/preview/
+          echo "✅ 预览站已更新: http://$(hostname -I | awk '{print $1}')"
+
       - name: Deploy to Netlify
         run: |
           if [ ! -f build/.build-success ]; then
