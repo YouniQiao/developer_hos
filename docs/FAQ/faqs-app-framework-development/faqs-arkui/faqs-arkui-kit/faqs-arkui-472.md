@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Tabs如何禁止点击切换，以及禁止滑动内容页切换TabContent"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-472
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "设备切换后没有暂停"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-15
 ---

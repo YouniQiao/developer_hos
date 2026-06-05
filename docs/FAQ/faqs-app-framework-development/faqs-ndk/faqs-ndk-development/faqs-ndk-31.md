@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Native侧集成三方库Curl，并进行HTTP数据请求"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-31
 ---

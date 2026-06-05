@@ -1,4 +1,5 @@
 ---
+format: md
 title: "2D图形（ArkGraphics 2D）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics2d-kit
 ---

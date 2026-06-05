@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何开关闪光灯"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-13
 ---

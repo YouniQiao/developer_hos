@@ -1,4 +1,5 @@
 ---
+format: md
 title: "是否支持#include <memory_resource>和std::pmr::vector"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-149
 ---

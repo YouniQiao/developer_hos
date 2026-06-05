@@ -1,4 +1,5 @@
 ---
+format: md
 title: "静音播放音频时，如何做到不抢音频焦点"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-9
 ---

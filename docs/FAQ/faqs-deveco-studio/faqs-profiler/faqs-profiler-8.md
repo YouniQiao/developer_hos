@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Profiler录制Launch，详情中Load ETS Files和TOP Redundant页签无数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-8
 ---

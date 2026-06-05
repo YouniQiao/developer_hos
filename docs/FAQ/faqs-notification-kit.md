@@ -1,4 +1,5 @@
 ---
+format: md
 title: "用户通知服务（Notification Kit）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit
 ---

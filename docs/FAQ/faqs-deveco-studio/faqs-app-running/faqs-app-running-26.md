@@ -1,4 +1,5 @@
 ---
+format: md
 title: "模拟器无法连接网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-26
 ---

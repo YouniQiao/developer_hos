@@ -1,4 +1,5 @@
 ---
+format: md
 title: "证书链校验器的参数如何获取"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-device-certificate-2
 ---

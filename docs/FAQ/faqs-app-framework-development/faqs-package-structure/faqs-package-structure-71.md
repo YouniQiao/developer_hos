@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用静态快捷方式如何接入X键"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-71
 ---

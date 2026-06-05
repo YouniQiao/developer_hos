@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HAP/HAR/HSP的关系是什么？是否都可以声明注册Ability和Page？三种类型分别推荐哪些的使用场景？选择原则是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-19
 ---

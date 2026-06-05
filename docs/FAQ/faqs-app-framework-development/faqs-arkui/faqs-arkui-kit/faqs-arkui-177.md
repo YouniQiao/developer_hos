@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何阻止组件的鼠标事件冒泡到父组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-177
 ---

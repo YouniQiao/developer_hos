@@ -1,4 +1,5 @@
 ---
+format: md
 title: "RdbStore多线程安全注意事项"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-16
 ---

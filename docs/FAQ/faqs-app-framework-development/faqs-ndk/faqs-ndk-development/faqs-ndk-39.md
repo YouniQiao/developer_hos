@@ -1,4 +1,5 @@
 ---
+format: md
 title: "新建工程如何使用已有工程中的so库函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-39
 ---

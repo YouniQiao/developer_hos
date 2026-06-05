@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“The name of the 'xxx' module must be a string, but received a value of type 'xxx'.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-151
 ---

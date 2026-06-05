@@ -1,4 +1,5 @@
 ---
+format: md
 title: "SideBarContainer如何设置controlButton属性"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-65
 ---

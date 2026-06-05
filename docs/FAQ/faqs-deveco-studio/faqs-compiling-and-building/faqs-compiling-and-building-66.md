@@ -1,4 +1,5 @@
 ---
+format: md
 title: "开发的插件能直接在DevEco Studio使用么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-66
 ---

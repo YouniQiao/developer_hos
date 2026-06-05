@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置customspan不同位置的点击事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-372
 ---

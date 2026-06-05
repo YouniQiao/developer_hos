@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在.ts文件中使用“import { export } from 'xxx.so';”方式导入.so文件编译告警：“Currently module for 'xxx.so' is not verified. ”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-179
 ---

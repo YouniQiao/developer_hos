@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkUI组件能否支持继承"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-221
 ---

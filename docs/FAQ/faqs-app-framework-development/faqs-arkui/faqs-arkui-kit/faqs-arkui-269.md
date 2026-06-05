@@ -1,4 +1,5 @@
 ---
+format: md
 title: "TextInput的visibility属性设置为Hidden或者None之后是否可获焦"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-269
 ---

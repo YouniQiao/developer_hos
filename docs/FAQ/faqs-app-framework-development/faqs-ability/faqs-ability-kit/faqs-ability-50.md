@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Stage模型与FA模型在进程内对象共享方面有哪些差异"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-50
 ---

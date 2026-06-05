@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco Studio AppAnalyzer反复提示未配置python环境，无法进入卡片页"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-12
 ---

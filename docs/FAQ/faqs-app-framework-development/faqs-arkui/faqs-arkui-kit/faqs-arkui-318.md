@@ -1,4 +1,5 @@
 ---
+format: md
 title: "RelativeContainer组件height设置为auto，子组件以容器作为锚点，为什么auto不生效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-318
 ---

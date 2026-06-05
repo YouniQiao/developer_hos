@@ -1,4 +1,5 @@
 ---
+format: md
 title: "是否允许HAR的循环依赖"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-16
 ---

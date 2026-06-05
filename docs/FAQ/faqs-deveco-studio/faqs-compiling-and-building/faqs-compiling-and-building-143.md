@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“The local dependency below in module %s is invalid”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-143
 ---

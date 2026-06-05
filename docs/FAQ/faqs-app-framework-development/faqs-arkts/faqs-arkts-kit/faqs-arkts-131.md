@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Array的长度上限是多少"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-131
 ---

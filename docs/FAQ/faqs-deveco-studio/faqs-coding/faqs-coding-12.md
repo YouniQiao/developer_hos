@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编辑功能失效，提示“ArkTS language service terminated due to memory constraints.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-12
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何判断文件是不是目录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-45
 ---

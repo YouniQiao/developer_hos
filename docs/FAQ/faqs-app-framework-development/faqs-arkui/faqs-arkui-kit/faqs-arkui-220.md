@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Flex布局与w3c中的Flex是否有差异"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-220
 ---

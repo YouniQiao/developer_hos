@@ -1,4 +1,5 @@
 ---
+format: md
 title: "系统弹框和应用消息推送的区别是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit-7
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过网络请求获取数据并通过List组件展示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-11
 ---

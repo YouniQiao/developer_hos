@@ -1,4 +1,5 @@
 ---
+format: md
 title: "截屏图片保存在系统哪个目录下"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-2
 ---

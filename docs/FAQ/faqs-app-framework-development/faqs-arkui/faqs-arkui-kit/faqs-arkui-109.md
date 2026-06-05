@@ -1,4 +1,5 @@
 ---
+format: md
 title: "List组件如何设置多列"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-109
 ---

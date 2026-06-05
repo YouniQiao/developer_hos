@@ -1,4 +1,5 @@
 ---
+format: md
 title: "是否支持DevEco Emulator模拟器"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing-faq-6
 ---

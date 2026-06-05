@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在AVRecorder录制WAV格式的音频文件时正确配置AVRecorderProfile参数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-20
 ---

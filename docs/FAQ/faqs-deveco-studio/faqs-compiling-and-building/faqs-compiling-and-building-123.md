@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决编译报错“Error: cJSON_Parse failed, please check the JSON file.”的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-123
 ---

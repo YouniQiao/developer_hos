@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HAR和HSP的使用场景介绍"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-48
 ---

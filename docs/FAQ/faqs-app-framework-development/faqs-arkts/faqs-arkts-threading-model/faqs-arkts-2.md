@@ -1,4 +1,5 @@
 ---
+format: md
 title: "有哪些创建线程的方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-2
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "历史问题报错：“hvigor ERROR: Error: EINVAL: invalid argument, mkdir ‘D:xxxyyyzzzD:’/ 'C:xxxyyyzzzC:at Object.mkdirSync (node:fs:1391:3)”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-190
 ---

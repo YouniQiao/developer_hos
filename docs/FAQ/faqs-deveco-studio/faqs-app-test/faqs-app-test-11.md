@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Mac安装Python不修改环境变量"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-11
 ---

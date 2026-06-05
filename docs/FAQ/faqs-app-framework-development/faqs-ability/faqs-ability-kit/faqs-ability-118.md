@@ -1,4 +1,5 @@
 ---
+format: md
 title: "UIContext与Ability的关系，列举常见UIContext、Ability、UIAbilityContext的关系"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-118
 ---

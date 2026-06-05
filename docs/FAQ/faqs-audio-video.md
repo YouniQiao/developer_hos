@@ -1,4 +1,5 @@
 ---
+format: md
 title: "音频和视频"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-video
 ---

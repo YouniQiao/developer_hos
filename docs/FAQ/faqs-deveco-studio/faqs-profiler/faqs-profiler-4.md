@@ -1,4 +1,5 @@
 ---
+format: md
 title: "开启多线程开关后应用性能劣化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-4
 ---

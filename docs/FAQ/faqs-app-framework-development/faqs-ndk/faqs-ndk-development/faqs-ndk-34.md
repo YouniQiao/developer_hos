@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Native工程中如何使用其他三方so库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-34
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "运行时出现Import DevEco Studio Settings弹窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-16
 ---

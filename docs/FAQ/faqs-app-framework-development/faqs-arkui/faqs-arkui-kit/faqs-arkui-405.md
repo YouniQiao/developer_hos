@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation路由，如何快速实现RouterMap注册转为wrapBuilder注册"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-405
 ---

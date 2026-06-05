@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在List组件中分组展示不同种类的数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-101
 ---

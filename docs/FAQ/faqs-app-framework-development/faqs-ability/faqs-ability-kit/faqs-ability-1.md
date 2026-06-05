@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取设备屏幕方向的状态变化通知"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-1
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "数据管理如何保证数据安全"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-40
 ---

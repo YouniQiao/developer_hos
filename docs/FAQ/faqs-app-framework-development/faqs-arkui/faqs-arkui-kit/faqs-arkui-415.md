@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation通过pushPathByName跳转页面为什么显示空白"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-415
 ---

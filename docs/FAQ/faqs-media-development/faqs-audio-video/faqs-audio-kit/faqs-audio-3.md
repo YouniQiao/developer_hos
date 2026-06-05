@@ -1,4 +1,5 @@
 ---
+format: md
 title: "OpenSL ES音频录制示例调用崩溃"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-3
 ---

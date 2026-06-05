@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“failed with:Exit code 0xc0000043”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-194
 ---

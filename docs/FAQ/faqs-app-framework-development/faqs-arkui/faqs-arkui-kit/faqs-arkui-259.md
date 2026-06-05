@@ -1,4 +1,5 @@
 ---
+format: md
 title: "为什么vp2px、px2vp返回的结果不正确"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-259
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "组件被错误下线后，重新推送包时提示需等待24小时，如何解除该限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-6
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HarmonyOS应用的安全性如何？是否存在被逆向分析的风险"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-data-prevention-9
 ---

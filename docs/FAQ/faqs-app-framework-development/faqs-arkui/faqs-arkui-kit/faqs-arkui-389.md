@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Router路由跳转页面失败，可能有哪些原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-389
 ---

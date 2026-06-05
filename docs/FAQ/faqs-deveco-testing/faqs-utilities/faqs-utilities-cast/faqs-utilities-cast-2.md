@@ -1,4 +1,5 @@
 ---
+format: md
 title: "设备投屏时，投屏卡顿如何处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-utilities-cast-2
 ---

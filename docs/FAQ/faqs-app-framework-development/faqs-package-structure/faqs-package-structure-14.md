@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何判断应用可被卸载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-14
 ---

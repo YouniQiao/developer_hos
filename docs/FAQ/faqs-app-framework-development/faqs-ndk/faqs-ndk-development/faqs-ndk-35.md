@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Native侧如何使用hilog打印出日志信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-35
 ---

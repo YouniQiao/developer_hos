@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决调用两次fileIo接口写文件，但第二次写入的内容未完全覆盖第一次写入的内容的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-25
 ---

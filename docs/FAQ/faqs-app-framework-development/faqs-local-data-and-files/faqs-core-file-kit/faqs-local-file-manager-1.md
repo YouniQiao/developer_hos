@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用Zip模块解压项目目录rawfile中的文件至应用的沙箱目录中"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-1
 ---

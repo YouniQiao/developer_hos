@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何选择收集崩溃的方式，ErrorManager、FaultLog、HiAppEvent在监听crash上的差异"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-57
 ---

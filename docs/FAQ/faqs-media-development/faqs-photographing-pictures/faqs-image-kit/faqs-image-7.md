@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何对相册图片进行编辑裁剪"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-7
 ---

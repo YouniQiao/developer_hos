@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Component如何监听应用前后台切换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-230
 ---

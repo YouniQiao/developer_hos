@@ -1,4 +1,5 @@
 ---
+format: md
 title: "测试结果中，指标值“0”和“-”有什么区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-15
 ---

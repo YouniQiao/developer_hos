@@ -1,4 +1,5 @@
 ---
+format: md
 title: "数据安全存储（Data Prevention）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-data-prevention
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置禁止分屏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-319
 ---

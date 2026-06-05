@@ -1,4 +1,5 @@
 ---
+format: md
 title: "音频（Audio）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-kit
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "是否navigation有最大页面数量限制？router栈的栈最大是32个，超过32个是无响应还是报错"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-260
 ---

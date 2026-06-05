@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何打开键鼠穿越功能开关"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-377
 ---

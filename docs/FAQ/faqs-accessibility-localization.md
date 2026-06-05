@@ -1,4 +1,5 @@
 ---
+format: md
 title: "无障碍和本地化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-accessibility-localization
 ---

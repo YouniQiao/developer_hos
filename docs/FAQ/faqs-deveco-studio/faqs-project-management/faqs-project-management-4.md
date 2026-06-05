@@ -1,4 +1,5 @@
 ---
+format: md
 title: "打开历史工程，报错提示“Install failed FetchPackageInfo: hypium failed”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-4
 ---

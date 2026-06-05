@@ -1,4 +1,5 @@
 ---
+format: md
 title: "AppStorage是否支持线程间共享对象，如果不支持，推荐替代方案是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-49
 ---

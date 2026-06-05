@@ -1,4 +1,5 @@
 ---
+format: md
 title: "多so相互依赖场景下如何解耦"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-71
 ---

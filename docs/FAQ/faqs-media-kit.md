@@ -1,4 +1,5 @@
 ---
+format: md
 title: "媒体（Media ）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-kit
 ---

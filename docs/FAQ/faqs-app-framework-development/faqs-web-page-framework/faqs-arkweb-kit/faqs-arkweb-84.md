@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Web组件是否有加载PDF失败时的监听或者回调方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-84
 ---

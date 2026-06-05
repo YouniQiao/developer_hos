@@ -1,4 +1,5 @@
 ---
+format: md
 title: "不同类型的Context获取fileDir目录的结果不一致"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-42
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "文件路径fd和internal的区别是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-23
 ---

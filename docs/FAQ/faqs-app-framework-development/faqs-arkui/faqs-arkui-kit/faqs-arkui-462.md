@@ -1,4 +1,5 @@
 ---
+format: md
 title: "AppStorage存了对象之后里面的值取不出来，什么原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-462
 ---

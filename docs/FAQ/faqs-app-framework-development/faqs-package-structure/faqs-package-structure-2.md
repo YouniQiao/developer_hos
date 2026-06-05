@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HSP打包后，为什么会生成HAR包，它是否会导致App包大小膨胀"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-2
 ---

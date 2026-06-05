@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HUKS初始向量是否必须为随机数？对生成的密钥有什么影响"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-universal-keystore-2
 ---

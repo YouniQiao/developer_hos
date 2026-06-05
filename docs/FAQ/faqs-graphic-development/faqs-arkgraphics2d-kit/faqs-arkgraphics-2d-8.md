@@ -1,4 +1,5 @@
 ---
+format: md
 title: "OpenGL无法正常渲染某些分辨率YUV数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-8
 ---

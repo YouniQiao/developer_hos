@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Web组件加载某个页面，出现白屏、页面显示不出来，如何解决和定位"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-19
 ---

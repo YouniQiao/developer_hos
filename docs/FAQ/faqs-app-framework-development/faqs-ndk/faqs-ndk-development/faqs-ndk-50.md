@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Cmake编译时如何显示不同级别的日志信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-50
 ---

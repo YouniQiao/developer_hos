@@ -1,4 +1,5 @@
 ---
+format: md
 title: "测试指南和FAQ无法解决问题时，如何获取在线支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing-faq-8
 ---

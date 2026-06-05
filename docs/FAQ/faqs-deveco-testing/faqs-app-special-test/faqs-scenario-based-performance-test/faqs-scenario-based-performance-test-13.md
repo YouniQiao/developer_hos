@@ -1,4 +1,5 @@
 ---
+format: md
 title: "测试报告中，用例执行详情为红色，且无数据是什么原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-13
 ---

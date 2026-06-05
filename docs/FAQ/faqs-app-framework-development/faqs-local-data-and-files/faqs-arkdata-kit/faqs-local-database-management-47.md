@@ -1,4 +1,5 @@
 ---
+format: md
 title: "关于对relationalStore.RdbStore的使用问题：如何查询数据库，需要开一个子线程吗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-47
 ---

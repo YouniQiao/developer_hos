@@ -1,4 +1,5 @@
 ---
+format: md
 title: "SoundPool播放的音频是否支持WMV格式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-4
 ---

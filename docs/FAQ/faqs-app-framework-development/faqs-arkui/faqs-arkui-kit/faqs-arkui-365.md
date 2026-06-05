@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Image组件长按和拖拽的系统手势和自定义手势冲突"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-365
 ---

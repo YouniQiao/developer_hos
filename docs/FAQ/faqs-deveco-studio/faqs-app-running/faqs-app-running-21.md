@@ -1,4 +1,5 @@
 ---
+format: md
 title: "模拟器应用运行时崩溃退出"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-21
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用Router跳转导致闪退，可能是什么原因，如何排查"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-388
 ---

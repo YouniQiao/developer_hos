@@ -1,4 +1,5 @@
 ---
+format: md
 title: "关于数据库存储的位置，以及存储的区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-5
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "@Style 和 @Extend 是否支持export导出"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-222
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "当前ArkTS是否采用类Node.js的异步I/O机制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-132
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用Record"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-98
 ---

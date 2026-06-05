@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取resource目录下的资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-4
 ---

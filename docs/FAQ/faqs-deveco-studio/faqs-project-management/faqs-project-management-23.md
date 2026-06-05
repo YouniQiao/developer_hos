@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置可以在工程目录中自动定位当前打开的文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-23
 ---

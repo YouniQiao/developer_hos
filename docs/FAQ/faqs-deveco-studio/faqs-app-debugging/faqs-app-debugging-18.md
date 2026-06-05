@@ -1,4 +1,5 @@
 ---
+format: md
 title: "entry引用本地library时，没有ASan日志输出"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-18
 ---

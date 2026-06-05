@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Image无法使用bindContextMenu"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-61
 ---

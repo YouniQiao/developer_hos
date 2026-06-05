@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何避免使用AppAnalyzer后使用git提示需要版本化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-11
 ---

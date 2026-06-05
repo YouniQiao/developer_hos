@@ -1,4 +1,5 @@
 ---
+format: md
 title: "http请求中response错误码返回6是什么意思"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-3
 ---

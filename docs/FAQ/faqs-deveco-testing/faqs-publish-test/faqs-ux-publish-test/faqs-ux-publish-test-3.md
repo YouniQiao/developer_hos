@@ -1,4 +1,5 @@
 ---
+format: md
 title: "实际情况与测试结果有偏差，该如何处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ux-publish-test-3
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "动态创建web组件应该在什么场景下使用，性能如何"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-52
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "签名时，提示“Failed to query agreement signing records”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-11
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在URL编码时处理特殊字符"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-150
 ---

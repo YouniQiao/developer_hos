@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何调用系统拍照并获取图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-14
 ---

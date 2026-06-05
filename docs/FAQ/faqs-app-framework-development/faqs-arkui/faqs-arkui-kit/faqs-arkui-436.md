@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Swiper怎么实现Item部分可见的效果？有没有示例展示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-436
 ---

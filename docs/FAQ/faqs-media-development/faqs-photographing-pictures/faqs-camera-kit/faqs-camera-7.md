@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何保证相机在全屏预览时不变形"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-7
 ---

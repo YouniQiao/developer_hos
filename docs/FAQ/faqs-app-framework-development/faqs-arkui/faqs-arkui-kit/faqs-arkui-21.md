@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何加载和使用自定义字体"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-21
 ---

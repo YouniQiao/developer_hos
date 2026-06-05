@@ -1,4 +1,5 @@
 ---
+format: md
 title: "音频焦点如何适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-13
 ---

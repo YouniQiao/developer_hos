@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何卸载debug包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-40
 ---

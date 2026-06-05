@@ -1,4 +1,5 @@
 ---
+format: md
 title: "@Watch是否有粘性的概念"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-184
 ---

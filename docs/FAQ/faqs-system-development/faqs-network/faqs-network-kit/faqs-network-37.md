@@ -1,4 +1,5 @@
 ---
+format: md
 title: "手机网络正常，但是调用connection.hasDefaultNet()接口失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-37
 ---

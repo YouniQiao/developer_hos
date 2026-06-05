@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Native侧跨模块访问资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-23
 ---

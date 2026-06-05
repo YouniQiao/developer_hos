@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决混淆之后的静态引用异常问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-93
 ---

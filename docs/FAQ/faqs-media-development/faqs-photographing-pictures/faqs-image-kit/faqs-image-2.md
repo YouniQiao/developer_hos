@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置图片的高斯模糊效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-2
 ---

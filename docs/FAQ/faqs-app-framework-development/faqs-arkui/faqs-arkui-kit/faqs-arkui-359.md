@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在深色模式切换下如何适配状态栏颜色"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-359
 ---

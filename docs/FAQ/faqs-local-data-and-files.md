@@ -1,4 +1,5 @@
 ---
+format: md
 title: "本地数据和文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-data-and-files
 ---

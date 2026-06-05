@@ -1,4 +1,5 @@
 ---
+format: md
 title: "hilog日志导致应用性能异常如何定位优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-63
 ---

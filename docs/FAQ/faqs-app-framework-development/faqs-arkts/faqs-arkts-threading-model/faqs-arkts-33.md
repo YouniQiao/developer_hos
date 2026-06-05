@@ -1,4 +1,5 @@
 ---
+format: md
 title: "是否支持Context跨线程传递"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-33
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用安装、卸载时是否有数据上报"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-41
 ---

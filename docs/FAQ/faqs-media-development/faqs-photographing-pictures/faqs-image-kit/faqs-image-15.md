@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现PixelMap和base64的相互转换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-15
 ---

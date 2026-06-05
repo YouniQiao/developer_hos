@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取可用的三方库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-12
 ---

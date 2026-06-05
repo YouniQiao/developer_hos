@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何对手势事件进行限流防止连续识别，例如500ms内不允许点击事件重复触发？如何对多个手势进行统一限流"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-394
 ---

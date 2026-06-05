@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何主动关闭CPU访问窗口缓冲区数据降低功耗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-14
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决hdc file send指令行为异常"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-74
 ---

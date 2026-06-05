@@ -1,4 +1,5 @@
 ---
+format: md
 title: "CPP编译报错“A 'unknown type name' error has occurred”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-117
 ---

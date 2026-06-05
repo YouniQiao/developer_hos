@@ -1,4 +1,5 @@
 ---
+format: md
 title: "c++层的crash怎么定位"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-13
 ---

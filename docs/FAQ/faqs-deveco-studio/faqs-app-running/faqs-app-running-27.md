@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用模拟器发起HTTPS请求时如何安装数字证书"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-27
 ---

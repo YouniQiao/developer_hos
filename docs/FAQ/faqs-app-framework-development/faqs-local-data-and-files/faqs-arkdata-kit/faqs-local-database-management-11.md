@@ -1,4 +1,5 @@
 ---
+format: md
 title: "通过RdbStore.query()获取resultSet对象，出现resultSet的rowCount返回结果为-1"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-11
 ---

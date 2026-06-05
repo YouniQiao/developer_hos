@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决SDK与镜像不匹配导致abc文件无法正常运行的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-49
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何将图片压缩到指定大小以下"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-16
 ---

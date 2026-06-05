@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何监听音频输出设备变更信息以作为应用处理自动暂停的依据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-17
 ---

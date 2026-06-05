@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkTS类型转换方法，除了使用as是否有其他方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-144
 ---

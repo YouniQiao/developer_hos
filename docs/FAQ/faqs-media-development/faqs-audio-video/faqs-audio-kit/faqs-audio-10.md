@@ -1,4 +1,5 @@
 ---
+format: md
 title: "三方应用如何选择音频流类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-10
 ---

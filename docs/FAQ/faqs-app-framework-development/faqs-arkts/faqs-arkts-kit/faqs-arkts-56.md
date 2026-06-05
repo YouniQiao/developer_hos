@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何访问类的静态变量和方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-56
 ---

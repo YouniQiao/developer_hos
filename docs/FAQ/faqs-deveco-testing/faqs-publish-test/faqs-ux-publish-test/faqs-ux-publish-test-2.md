@@ -1,4 +1,5 @@
 ---
+format: md
 title: "测试报告中，所有检测项均异常，异常原因提示“the ux script reports an error”，该如何处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ux-publish-test-2
 ---

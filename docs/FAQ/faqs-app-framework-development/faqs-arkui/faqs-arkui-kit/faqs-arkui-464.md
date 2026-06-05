@@ -1,4 +1,5 @@
 ---
+format: md
 title: "半模态打开的页面被半模态覆盖了，怎么解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-464
 ---

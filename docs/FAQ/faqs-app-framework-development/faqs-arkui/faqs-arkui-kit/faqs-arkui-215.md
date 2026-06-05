@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何动态控制键盘绑定在不同的TextInput上"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-215
 ---

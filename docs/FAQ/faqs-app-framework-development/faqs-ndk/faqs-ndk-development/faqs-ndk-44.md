@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Native侧如何引入头文件deviceinfo.h"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-44
 ---

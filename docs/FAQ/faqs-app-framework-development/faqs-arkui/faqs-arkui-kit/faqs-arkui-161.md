@@ -1,4 +1,5 @@
 ---
+format: md
 title: "布局是否支持css里的calc(100vh - 100px)类似能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-161
 ---

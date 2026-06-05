@@ -1,4 +1,5 @@
 ---
+format: md
 title: "是否支持模块的动态加载？如何实现"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-70
 ---

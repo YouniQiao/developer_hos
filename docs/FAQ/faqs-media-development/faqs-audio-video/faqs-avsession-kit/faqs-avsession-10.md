@@ -1,4 +1,5 @@
 ---
+format: md
 title: "投播成功后，本端应用内该如何显示"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-10
 ---

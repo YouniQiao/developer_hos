@@ -1,4 +1,5 @@
 ---
+format: md
 title: "系统开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-system-development
 ---

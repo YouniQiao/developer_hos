@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用冷启动时，trace中dlopen：libace_compatible.z.so耗时长的可能原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-380
 ---

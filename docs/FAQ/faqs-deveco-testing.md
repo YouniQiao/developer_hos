@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco Testing"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing
 ---

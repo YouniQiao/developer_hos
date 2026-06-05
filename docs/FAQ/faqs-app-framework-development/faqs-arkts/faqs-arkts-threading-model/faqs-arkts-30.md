@@ -1,4 +1,5 @@
 ---
+format: md
 title: "JS线程通过napi创建的C++线程的处理结果，如何返回JS线程"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-30
 ---

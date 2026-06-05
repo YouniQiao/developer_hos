@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkUI-X工程编译报错“The ArkUI-X project's structure has been changed”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-28
 ---

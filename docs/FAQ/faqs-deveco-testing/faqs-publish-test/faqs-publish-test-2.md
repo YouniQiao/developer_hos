@@ -1,4 +1,5 @@
 ---
+format: md
 title: "测试报告中，为什么会出现测试项检测异常"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-publish-test-2
 ---

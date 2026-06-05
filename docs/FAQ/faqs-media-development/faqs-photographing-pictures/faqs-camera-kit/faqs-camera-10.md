@@ -1,4 +1,5 @@
 ---
+format: md
 title: "预览流黑屏但无报错信息该怎么解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-10
 ---

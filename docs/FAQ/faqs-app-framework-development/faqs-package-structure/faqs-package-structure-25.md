@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在HAP中调用createModuleContext方法获取的Context是什么层级"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-25
 ---

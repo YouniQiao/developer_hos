@@ -1,4 +1,5 @@
 ---
+format: md
 title: "为什么接入播控后，播控中心部分按钮是灰色的，不可点击"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-3
 ---

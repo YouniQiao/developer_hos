@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Web组件的内存占用与内存回收机制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-93
 ---

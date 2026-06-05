@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation如何在自定义组件之间传递NavPathStack实例"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-422
 ---

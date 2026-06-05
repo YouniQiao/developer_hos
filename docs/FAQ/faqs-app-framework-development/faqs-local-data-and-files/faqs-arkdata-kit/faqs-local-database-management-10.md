@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获知SQLite支持版本"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-10
 ---

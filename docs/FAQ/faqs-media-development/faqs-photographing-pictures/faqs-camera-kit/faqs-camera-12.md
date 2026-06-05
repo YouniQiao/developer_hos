@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何避免预览流产生畸变"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-12
 ---

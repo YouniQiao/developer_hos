@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何对GIF图片进行压缩"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-24
 ---

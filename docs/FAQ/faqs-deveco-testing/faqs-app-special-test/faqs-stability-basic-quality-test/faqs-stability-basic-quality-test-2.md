@@ -1,4 +1,5 @@
 ---
+format: md
 title: "内存泄漏的定位日志为什么是乱码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-stability-basic-quality-test-2
 ---

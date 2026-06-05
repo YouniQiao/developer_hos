@@ -1,4 +1,5 @@
 ---
+format: md
 title: "UIAbility和UIExtensionAbility有什么区别？分别推荐在什么场景使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-65
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何全局存储WebController"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-60
 ---

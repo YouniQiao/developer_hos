@@ -1,4 +1,5 @@
 ---
+format: md
 title: "稳定性基础质量测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-stability-basic-quality-test
 ---

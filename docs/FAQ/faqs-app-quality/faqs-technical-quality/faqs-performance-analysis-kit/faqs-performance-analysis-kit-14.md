@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何查询应用当前CPU占用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-14
 ---

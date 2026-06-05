@@ -1,4 +1,5 @@
 ---
+format: md
 title: "滑动的页面软键盘挡住内容不能向上滑动"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-105
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Native侧调用ArkTS侧的系统能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-18
 ---

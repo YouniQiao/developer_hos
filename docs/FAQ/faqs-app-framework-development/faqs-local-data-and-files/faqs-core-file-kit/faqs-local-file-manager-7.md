@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何将像素点保存到图片文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-7
 ---

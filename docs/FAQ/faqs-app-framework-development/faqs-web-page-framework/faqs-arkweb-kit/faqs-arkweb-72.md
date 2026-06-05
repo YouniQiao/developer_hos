@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Web组件是否支持通过URL Scheme协议跳转其它App"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-72
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在容器组件嵌套的场景下，如何解决手势拖拽事件出现错乱的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-172
 ---

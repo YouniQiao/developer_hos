@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用EGL绘制自定义动画？请提供一个简单示例"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-1
 ---

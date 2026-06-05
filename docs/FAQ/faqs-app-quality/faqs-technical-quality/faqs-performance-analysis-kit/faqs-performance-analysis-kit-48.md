@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在多设备情况下使用hdc"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-48
 ---

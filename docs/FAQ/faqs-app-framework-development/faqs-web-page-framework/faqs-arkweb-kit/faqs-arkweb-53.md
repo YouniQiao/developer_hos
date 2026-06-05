@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何查看cookie的保存位置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-53
 ---

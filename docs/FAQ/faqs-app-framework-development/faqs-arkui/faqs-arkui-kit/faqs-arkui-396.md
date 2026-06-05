@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现在图片进行绘制马赛克的效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-396
 ---

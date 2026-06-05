@@ -1,4 +1,5 @@
 ---
+format: md
 title: "http请求执行的线程是否可控"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-27
 ---

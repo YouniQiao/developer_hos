@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Watch开发，ArcSwiper实现右滑退出"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-416
 ---

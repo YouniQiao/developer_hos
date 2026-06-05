@@ -1,4 +1,5 @@
 ---
+format: md
 title: "数据存储方案如何选择"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-38
 ---

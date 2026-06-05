@@ -1,4 +1,5 @@
 ---
+format: md
 title: "console.log和hilog的区别，如何选择使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-24
 ---

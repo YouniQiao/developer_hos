@@ -1,4 +1,5 @@
 ---
+format: md
 title: "http请求结束后是否需要进行销毁"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-29
 ---

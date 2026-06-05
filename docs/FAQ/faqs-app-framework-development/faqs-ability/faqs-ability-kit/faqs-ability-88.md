@@ -1,4 +1,5 @@
 ---
+format: md
 title: "app.json5文件与工程级build-profile.json5文件的区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-88
 ---

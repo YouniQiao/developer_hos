@@ -1,4 +1,5 @@
 ---
+format: md
 title: "UIViewer"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-utilities-uiviewer
 ---

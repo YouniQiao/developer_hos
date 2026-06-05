@@ -1,4 +1,5 @@
 ---
+format: md
 title: "预览报错“Node service error detected.Reinstall DevEco Studio to fix the error. ”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-5
 ---

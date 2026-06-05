@@ -1,4 +1,5 @@
 ---
+format: md
 title: "运行时提示“TypeError：Cannot read property xxx of undefined”错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-14
 ---

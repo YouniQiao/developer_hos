@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“byteCodeHar not supported when useNormalizedOHMUrl is not true.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-166
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "设备已连接，为什么设备列表中未显示该设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing-faq-2
 ---

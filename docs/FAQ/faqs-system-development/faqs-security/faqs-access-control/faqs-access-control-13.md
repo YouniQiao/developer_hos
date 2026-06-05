@@ -1,4 +1,5 @@
 ---
+format: md
 title: "是否支持动态授权"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-13
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "投播后支持哪些控制功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-11
 ---

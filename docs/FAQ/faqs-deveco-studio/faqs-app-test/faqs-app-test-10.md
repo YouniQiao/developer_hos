@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco Studio AppAnalyzer-安装Python依赖错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-10
 ---

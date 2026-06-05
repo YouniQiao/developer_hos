@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置自定义组件height缺省"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-58
 ---

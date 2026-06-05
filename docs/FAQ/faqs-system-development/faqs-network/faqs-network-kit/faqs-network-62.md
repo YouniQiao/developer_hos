@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Network connection模块netLost与netUnavailable监听场景如何区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-62
 ---

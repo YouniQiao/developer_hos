@@ -1,4 +1,5 @@
 ---
+format: md
 title: "connection能力netBearType类型与实际情况不符"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-65
 ---

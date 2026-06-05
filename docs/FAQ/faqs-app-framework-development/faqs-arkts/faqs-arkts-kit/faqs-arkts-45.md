@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkTS类的方法是否支持重载"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-45
 ---

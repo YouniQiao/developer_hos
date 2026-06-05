@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用、元服务和卡片是什么关系"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-77
 ---

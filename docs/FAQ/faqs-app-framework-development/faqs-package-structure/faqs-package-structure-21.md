@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何正确引用HAR/HSP包模块"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-21
 ---

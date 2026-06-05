@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ohpm私仓修改upload_max_times不生效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-7
 ---

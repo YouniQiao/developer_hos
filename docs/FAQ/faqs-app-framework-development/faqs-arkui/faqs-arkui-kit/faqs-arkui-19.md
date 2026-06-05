@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决两层Tabs出现滑动冲突的情况"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-19
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "签名后生成的material目录是干什么用的"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-9
 ---

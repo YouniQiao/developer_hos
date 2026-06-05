@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何播放PCM格式的音频"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-21
 ---

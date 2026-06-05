@@ -1,4 +1,5 @@
 ---
+format: md
 title: "arm64，armv7，x86_64 三种架构的适用范围"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-92
 ---

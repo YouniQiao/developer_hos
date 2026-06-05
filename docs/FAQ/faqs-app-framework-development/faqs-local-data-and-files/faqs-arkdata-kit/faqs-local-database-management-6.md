@@ -1,4 +1,5 @@
 ---
+format: md
 title: "卡片开发中如何实现数据持久化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-6
 ---

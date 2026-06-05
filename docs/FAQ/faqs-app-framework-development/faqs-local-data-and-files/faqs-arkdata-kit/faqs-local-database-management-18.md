@@ -1,4 +1,5 @@
 ---
+format: md
 title: "数据库batchInsert和单个事务insert效率问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-18
 ---

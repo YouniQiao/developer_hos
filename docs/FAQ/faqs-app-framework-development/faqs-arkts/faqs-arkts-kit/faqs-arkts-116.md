@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用内置的js引擎？JIT支持策略如何"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-116
 ---

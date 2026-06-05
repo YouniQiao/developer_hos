@@ -1,4 +1,5 @@
 ---
+format: md
 title: "获取公共下载目录API不可用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-41
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "onAreaChange回调事件和windowStatusChange回调事件两者有什么关系，时序是怎样的"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-381
 ---

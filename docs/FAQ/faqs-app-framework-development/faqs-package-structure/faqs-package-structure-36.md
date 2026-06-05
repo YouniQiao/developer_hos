@@ -1,4 +1,5 @@
 ---
+format: md
 title: "对于HAP包中引用的HSP包是否有数量限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-36
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用上架预检测试问题定位，可以参考哪些资料"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-quality-test-4
 ---

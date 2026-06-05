@@ -1,4 +1,5 @@
 ---
+format: md
 title: "字体管理器中注册自定义字体时字体文件的路径如何填写"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-32
 ---

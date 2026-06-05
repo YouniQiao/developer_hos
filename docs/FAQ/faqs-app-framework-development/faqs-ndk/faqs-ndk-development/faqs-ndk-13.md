@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Native侧区分ArkTS侧创建的ArrayBuffer和Uint8Array对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-13
 ---

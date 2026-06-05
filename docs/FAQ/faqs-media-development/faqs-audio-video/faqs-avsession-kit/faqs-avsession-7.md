@@ -1,4 +1,5 @@
 ---
+format: md
 title: "系统是否支持DLNA设备投屏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-7
 ---

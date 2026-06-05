@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用ForEach&LazyForEach循环渲染时，会出现更改数据源时，界面不刷新的情况。如何解决"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-41
 ---

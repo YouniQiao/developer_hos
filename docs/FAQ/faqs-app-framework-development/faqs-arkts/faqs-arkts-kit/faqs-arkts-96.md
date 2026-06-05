@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkTS是否支持交叉类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-96
 ---

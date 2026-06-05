@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决子组件全屏后margin不会生效的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-32
 ---

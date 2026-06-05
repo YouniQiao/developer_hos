@@ -1,4 +1,5 @@
 ---
+format: md
 title: "点击服务卡片如何跳转至指定的页面"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-form-1
 ---

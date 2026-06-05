@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现分组列表的吸顶/吸底效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-25
 ---

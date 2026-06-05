@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用DevEco Studio中的ArkTS代码模板"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-5
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "安装HAP时提示“error: failed to start ability”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-23
 ---

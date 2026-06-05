@@ -1,4 +1,5 @@
 ---
+format: md
 title: "窗口Orientation枚举值8~10或12和枚举值13~16的区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-373
 ---

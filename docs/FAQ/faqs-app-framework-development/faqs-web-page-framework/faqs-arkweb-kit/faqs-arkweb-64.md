@@ -1,4 +1,5 @@
 ---
+format: md
 title: "系统目前是否支持webrtc的功能，规格是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-64
 ---

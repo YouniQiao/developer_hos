@@ -1,4 +1,5 @@
 ---
+format: md
 title: "命令行工具"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool
 ---

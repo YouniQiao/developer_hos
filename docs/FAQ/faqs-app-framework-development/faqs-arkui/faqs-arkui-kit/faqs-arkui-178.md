@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现上下切换的页面间跳转动画"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-178
 ---

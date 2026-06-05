@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用如何更新进度条"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-2
 ---

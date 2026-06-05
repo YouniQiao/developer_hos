@@ -1,4 +1,5 @@
 ---
+format: md
 title: "List的下拉加载如何回滚到当前展示位置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-268
 ---

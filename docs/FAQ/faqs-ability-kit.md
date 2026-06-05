@@ -1,4 +1,5 @@
 ---
+format: md
 title: "程序框架（Ability）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-kit
 ---

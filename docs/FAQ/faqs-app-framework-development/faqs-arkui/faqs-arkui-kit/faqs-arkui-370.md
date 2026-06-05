@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现沉浸式页面（包括沉浸式状态栏、沉浸式导航条）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-370
 ---

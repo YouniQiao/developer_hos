@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何进行页面横竖屏切换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-206
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何识别双击手势时忽视单击手势"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-306
 ---

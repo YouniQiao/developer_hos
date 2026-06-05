@@ -1,4 +1,5 @@
 ---
+format: md
 title: "聚焦输入框，拉起小艺键盘输入时会重复朗读，比如输入“1”，会读“1 1”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-accessibility-1
 ---

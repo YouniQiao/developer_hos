@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过离线方式安装npm包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-20
 ---

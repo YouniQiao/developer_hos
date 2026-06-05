@@ -1,4 +1,5 @@
 ---
+format: md
 title: "本地化开发（Localization）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-kit
 ---

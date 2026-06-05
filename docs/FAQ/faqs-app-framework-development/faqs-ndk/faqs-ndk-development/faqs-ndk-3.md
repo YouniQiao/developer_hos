@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何对多个C++源文件中接口进行导出声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-3
 ---

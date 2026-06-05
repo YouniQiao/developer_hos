@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现文件不存在则创建文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-3
 ---

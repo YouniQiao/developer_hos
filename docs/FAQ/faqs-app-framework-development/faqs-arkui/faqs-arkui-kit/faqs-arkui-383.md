@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Surface模式下的XComponent组件在设置renderFit后如果出现显示异常，该如何调整以获得正确的显示效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-383
 ---

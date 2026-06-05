@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Native侧如何通过char指针构造ArrayBuffer数组"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-59
 ---

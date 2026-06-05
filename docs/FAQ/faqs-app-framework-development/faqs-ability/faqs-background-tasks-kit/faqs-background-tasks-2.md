@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用在后台如何继续执行业务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-2
 ---

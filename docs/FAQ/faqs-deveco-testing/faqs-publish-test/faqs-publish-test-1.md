@@ -1,4 +1,5 @@
 ---
+format: md
 title: "创建任务时提示“ai模型暂未启动，请稍后再试”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-publish-test-1
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取屏幕的宽度、高度、分辨率和横竖屏等信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-198
 ---

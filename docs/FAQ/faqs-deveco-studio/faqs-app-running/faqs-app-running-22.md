@@ -1,4 +1,5 @@
 ---
+format: md
 title: "模拟器使用OpenGLES指令绘制图像，与真机存在色差"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-22
 ---

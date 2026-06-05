@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HAP包中的“--BEGIN CERTIFICATE--”是什么格式的数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-67
 ---

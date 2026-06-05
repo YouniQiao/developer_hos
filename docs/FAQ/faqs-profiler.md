@@ -1,4 +1,5 @@
 ---
+format: md
 title: "性能分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "多人协作时DevEco Studio如何引用一份签名文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-8
 ---

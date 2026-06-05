@@ -1,4 +1,5 @@
 ---
+format: md
 title: "赋值和深拷贝与浅拷贝的区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-93
 ---

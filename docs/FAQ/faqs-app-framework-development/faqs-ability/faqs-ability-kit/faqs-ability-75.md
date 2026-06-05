@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ApplicationContext、UIAbilityContext、Context的区别是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-75
 ---

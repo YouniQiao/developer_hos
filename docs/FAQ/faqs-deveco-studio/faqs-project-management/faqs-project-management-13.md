@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决mac启动DevEco Studio报错提示“DevEco Studio”意外退出问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-13
 ---

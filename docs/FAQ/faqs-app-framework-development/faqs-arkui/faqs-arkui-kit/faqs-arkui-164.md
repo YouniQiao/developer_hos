@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取router.back传递的参数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-164
 ---

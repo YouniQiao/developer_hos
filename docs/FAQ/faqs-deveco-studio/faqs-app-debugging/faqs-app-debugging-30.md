@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何强制重启设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-30
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "证书管理（Device Certificate）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-device-certificate-kit
 ---

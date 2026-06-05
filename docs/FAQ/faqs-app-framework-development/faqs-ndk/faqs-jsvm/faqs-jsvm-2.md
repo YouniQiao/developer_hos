@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何自排查_Bool类型没有找到的编译问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-2
 ---

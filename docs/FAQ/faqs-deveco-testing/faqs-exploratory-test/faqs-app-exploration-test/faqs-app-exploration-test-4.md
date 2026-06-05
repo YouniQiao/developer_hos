@@ -1,4 +1,5 @@
 ---
+format: md
 title: "遍历路径地图中，为什么会出现截图相同的节点"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-4
 ---

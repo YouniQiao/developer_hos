@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Native侧添加debug版本声明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-12
 ---

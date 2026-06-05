@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何查看或导出持久化数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-32
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco Studio中如何设置超长日志自动换行"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-15
 ---

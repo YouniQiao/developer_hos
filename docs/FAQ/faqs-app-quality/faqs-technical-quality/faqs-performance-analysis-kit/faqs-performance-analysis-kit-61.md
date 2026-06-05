@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco Device File Browser无法查看系统媒体文件目录"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-61
 ---

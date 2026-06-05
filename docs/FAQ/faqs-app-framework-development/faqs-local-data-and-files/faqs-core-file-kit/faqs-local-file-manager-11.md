@@ -1,4 +1,5 @@
 ---
+format: md
 title: "fileIo.write是否支持utf-8之外的编码格式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-11
 ---

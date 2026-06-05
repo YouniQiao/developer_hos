@@ -1,4 +1,5 @@
 ---
+format: md
 title: "自定义组件是否能通过容器保存"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-228
 ---

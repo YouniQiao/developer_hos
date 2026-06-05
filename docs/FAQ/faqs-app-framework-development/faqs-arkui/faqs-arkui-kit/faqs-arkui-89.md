@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取组件的属性信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-89
 ---

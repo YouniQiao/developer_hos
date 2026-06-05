@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation自定义标题栏不生效，可能是什么原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-399
 ---

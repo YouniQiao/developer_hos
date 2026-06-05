@@ -1,4 +1,5 @@
 ---
+format: md
 title: "从HAP的拆包中，如何区分是HAR和HSP"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-23
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "上传文件的uploadConfig中，internal开头的路径是否可以换成其他路径"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-12
 ---

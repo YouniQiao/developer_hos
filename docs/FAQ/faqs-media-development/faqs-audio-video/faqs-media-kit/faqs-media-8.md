@@ -1,4 +1,5 @@
 ---
+format: md
 title: "录屏帧率是否有限制，如何设置最大帧率"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-8
 ---

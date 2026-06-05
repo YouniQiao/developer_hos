@@ -1,4 +1,5 @@
 ---
+format: md
 title: "系统安全能力哪些是天然具备的，哪些需要开发者适配"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-9
 ---

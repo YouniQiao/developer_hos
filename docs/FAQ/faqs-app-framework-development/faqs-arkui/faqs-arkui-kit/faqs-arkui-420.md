@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation页面参数如何管理？如：传递参数、参数返回、参数获取"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-420
 ---

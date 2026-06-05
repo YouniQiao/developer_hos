@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用Sqlite全文检索能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-9
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HSP包编译之后的.har文件的作用是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-33
 ---

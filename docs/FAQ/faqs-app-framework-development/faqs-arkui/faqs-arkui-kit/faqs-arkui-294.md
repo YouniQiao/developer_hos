@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现带图片的二维码效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-294
 ---

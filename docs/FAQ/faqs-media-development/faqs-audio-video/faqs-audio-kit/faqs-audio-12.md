@@ -1,4 +1,5 @@
 ---
+format: md
 title: "播放音频时，如何修改默认输出设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-12
 ---

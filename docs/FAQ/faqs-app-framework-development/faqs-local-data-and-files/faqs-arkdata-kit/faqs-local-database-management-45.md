@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何将数据库数据内置到App"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-45
 ---

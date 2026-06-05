@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkTS自定义注解使用场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-151
 ---

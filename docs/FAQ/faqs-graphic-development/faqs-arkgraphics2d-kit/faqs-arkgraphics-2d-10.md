@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用eglSwapBuffers API，eglSwapBuffers执行报错错误码：EGL_BAD_ALLOC。"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-10
 ---

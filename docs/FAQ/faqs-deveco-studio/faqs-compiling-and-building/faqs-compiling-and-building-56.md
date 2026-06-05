@@ -1,4 +1,5 @@
 ---
+format: md
 title: "静态共享包HAR如何引用另一个HAR包中的so文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-56
 ---

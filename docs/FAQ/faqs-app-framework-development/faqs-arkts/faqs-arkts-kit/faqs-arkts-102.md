@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现Sendable类型和JSON数据的转换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-102
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "指标检测值无法点击拉起profiler"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-17
 ---

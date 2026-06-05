@@ -1,4 +1,5 @@
 ---
+format: md
 title: "通过DevEco Studio对HAP/APP包进行签名"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-17
 ---

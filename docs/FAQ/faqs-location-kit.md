@@ -1,4 +1,5 @@
 ---
+format: md
 title: "位置服务（Location Kit）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-location-kit
 ---

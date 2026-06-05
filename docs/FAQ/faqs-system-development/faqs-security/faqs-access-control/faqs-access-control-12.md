@@ -1,4 +1,5 @@
 ---
+format: md
 title: "向用户申请授予权限但被用户拒绝后，如何处理才能避免应用二次进入时崩溃"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-12
 ---

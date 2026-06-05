@@ -1,4 +1,5 @@
 ---
+format: md
 title: "WebviewController的getPageHeight方法在哪个生命周期函数中调用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-89
 ---

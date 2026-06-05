@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取应用进程的CPU使用时间"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-127
 ---

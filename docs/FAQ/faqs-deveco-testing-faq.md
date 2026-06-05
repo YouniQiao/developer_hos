@@ -1,4 +1,5 @@
 ---
+format: md
 title: "常见问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing-faq
 ---

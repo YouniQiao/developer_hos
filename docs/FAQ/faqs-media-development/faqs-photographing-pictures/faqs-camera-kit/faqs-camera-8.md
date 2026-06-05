@@ -1,4 +1,5 @@
 ---
+format: md
 title: "相机预览切后台再回来画面不正确"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-8
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation组件中，NavDestination页面是否可以缓存，下次入栈可以复用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-404
 ---

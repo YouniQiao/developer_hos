@@ -1,4 +1,5 @@
 ---
+format: md
 title: "从包管理的角度，保证代码安全的措施有哪些"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-4
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在页面中订阅UIAbility实例的生命周期变化"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-36
 ---

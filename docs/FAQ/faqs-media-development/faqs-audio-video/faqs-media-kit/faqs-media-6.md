@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在使用Video组件时，为Video添加本地视频播放源后，立刻播放，为什么会播放失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-6
 ---

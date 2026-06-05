@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过hdc命令清除手机中应用的缓存"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-51
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "两个UIAbility之间可通过哪些方法实现数据传递"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-31
 ---

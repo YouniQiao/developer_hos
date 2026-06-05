@@ -1,4 +1,5 @@
 ---
+format: md
 title: "App更新版本后，之前的首选项数据是否保留"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-43
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取当前应用对应的UIAbility名称"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-100
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取应用签名证书的hash值"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-2
 ---

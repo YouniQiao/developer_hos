@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Web页面切换软键盘意外弹出"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-94
 ---

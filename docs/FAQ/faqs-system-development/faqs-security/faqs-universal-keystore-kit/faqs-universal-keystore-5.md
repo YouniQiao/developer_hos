@@ -1,4 +1,5 @@
 ---
+format: md
 title: "通用密钥库系统中，使用AES GCM算法进行操作，AAD可以为空吗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-universal-keystore-5
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现Scroll、List单边回弹效果"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-316
 ---

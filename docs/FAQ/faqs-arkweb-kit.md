@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Web开发（ArkWeb）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-kit
 ---

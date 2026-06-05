@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用中嵌入了Web窗口，能进行应用探索测试吗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-6
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在DevEco Studio中提交代码时，如何自动格式化修改过的代码"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-3
 ---

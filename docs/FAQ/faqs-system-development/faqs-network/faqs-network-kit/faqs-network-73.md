@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决应用退至后台TCP连接会被中断"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-73
 ---

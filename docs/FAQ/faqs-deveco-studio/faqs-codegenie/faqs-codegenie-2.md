@@ -1,4 +1,5 @@
 ---
+format: md
 title: "点击CodeGenie顶部栏的新建会话、历史记录等快捷按钮后无反应"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-codegenie-2
 ---

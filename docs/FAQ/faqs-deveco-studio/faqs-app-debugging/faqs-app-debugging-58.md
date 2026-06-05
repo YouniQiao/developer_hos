@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何保证代码修改后每次Run之后Preferences存储的用户信息不会被清除"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-58
 ---

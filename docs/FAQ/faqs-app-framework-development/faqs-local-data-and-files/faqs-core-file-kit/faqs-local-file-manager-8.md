@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用从远程服务器下载文件的下载路径"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-8
 ---

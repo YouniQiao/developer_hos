@@ -1,4 +1,5 @@
 ---
+format: md
 title: "专项测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-special-test
 ---

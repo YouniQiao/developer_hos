@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Tabs组件子组件包含if节点，if条件变更后, tabBar页签联动异常，有没有解决方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-478
 ---

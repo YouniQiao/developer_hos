@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用ListItemGroup和LazyForEach结合并实现组件复用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-321
 ---

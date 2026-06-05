@@ -1,4 +1,5 @@
 ---
+format: md
 title: "子组件事件能否传递到父组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-180
 ---

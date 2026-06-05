@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation页面底部空白是什么，如何取消"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-479
 ---

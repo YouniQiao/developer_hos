@@ -1,4 +1,5 @@
 ---
+format: md
 title: "预览窗口顶部和底部出现白边"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-6
 ---

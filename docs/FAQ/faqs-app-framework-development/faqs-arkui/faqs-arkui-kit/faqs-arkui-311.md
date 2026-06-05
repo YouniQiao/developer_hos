@@ -1,4 +1,5 @@
 ---
+format: md
 title: "绑定类型的组件和ForEach的正确连用方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-311
 ---

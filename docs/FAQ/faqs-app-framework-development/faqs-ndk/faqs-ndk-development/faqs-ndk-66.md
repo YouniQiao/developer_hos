@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过C接口使用网络相关功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-66
 ---

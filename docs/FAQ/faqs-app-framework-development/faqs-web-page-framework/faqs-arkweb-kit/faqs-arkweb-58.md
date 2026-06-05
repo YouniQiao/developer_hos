@@ -1,4 +1,5 @@
 ---
+format: md
 title: "能否同步webview的cookie与app中的cookie"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-58
 ---

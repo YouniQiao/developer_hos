@@ -1,4 +1,5 @@
 ---
+format: md
 title: "gbk字符串TextEncoder编码结果属性buffer长度为何比编码结果长度略大"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-137
 ---

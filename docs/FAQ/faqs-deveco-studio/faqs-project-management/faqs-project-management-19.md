@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用DevEco Studio上的Git工具进行多远程仓管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-19
 ---

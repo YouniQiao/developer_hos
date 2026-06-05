@@ -1,4 +1,5 @@
 ---
+format: md
 title: "有没有Navigation实现跨模块跳转的demo工程，包括系统路由表以及自定义路由表的实践"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-437
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "TextInput按压态背景色如何修改"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-124
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "setSessionId加入组网和on启动监听前后设置的区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-27
 ---

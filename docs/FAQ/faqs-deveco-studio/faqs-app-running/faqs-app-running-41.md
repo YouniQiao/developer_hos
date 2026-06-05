@@ -1,4 +1,5 @@
 ---
+format: md
 title: "存在多个DNS服务器时模拟器无法连接网络问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-41
 ---

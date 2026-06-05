@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何保持屏幕常亮"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-196
 ---

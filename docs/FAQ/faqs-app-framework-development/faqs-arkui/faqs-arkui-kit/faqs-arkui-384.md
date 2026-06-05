@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决组件消失动画偏移闪烁"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-384
 ---

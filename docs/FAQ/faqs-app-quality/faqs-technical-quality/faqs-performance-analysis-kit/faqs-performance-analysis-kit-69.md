@@ -1,4 +1,5 @@
 ---
+format: md
 title: "解决执行hdc出现FreeChannelContinue handle->data is nullptr"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-69
 ---

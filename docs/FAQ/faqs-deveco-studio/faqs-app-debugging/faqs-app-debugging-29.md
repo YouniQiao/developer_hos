@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用自动签名失败，提示“calibrate the system time and sign again”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-29
 ---

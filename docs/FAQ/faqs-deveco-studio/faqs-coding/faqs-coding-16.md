@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco Studio启动报错：“Scan files to index fail”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-16
 ---

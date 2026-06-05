@@ -1,4 +1,5 @@
 ---
+format: md
 title: "注册的自定义字体在webview中无效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-16
 ---

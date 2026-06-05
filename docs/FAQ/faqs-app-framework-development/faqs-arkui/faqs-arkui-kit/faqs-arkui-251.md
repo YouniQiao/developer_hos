@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用Swiper组件实现下拉刷新"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-251
 ---

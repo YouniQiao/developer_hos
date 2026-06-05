@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用运行报错：hap path error"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-55
 ---

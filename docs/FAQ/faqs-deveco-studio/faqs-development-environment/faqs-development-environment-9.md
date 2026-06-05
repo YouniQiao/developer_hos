@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在命令行使用ohpm"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-9
 ---

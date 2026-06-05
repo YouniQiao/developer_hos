@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何后台播放音乐"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-1
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用AVPlayer播放器概率性报错5400104、5400103要怎么处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-1
 ---

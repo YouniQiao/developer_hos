@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Native侧往用户目录写临时文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-11
 ---

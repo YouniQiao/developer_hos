@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过构建参数传入签名信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-81
 ---

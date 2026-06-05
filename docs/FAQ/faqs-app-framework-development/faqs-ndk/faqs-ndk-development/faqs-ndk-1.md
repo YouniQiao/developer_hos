@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在Native侧如何精准获取ArkTS侧传入的字符串长度"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-1
 ---

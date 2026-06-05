@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ohpm publish在本地Git bash环境下一直报错“the content of private key in the key_path error”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-10
 ---

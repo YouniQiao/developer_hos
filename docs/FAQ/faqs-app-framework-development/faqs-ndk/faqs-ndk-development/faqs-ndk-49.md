@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用Node-API实现ArkTS与C/C++语言交互"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-49
 ---

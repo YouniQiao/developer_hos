@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何理解connection.getDefaultNet返回对象netHandle中的netId"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-5
 ---

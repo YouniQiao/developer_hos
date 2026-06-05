@@ -1,4 +1,5 @@
 ---
+format: md
 title: "web拦截如何处理文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-66
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "工程检查报错，提示“Incorrect settings found in the build-profile.json5 file”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-2
 ---

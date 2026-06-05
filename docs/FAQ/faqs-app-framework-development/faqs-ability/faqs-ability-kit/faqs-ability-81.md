@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何查询应用进程的pid信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-81
 ---

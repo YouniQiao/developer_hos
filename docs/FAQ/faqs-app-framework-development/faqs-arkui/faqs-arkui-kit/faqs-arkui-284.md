@@ -1,4 +1,5 @@
 ---
+format: md
 title: "struct和class的区别是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-284
 ---

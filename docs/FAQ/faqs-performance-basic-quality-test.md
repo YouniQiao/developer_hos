@@ -1,4 +1,5 @@
 ---
+format: md
 title: "性能基础质量测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-basic-quality-test
 ---

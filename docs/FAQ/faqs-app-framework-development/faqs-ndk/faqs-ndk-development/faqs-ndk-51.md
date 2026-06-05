@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkTS侧如何释放绑定的C++侧对象"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-51
 ---

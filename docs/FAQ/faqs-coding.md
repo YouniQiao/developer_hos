@@ -1,4 +1,5 @@
 ---
+format: md
 title: "代码编辑"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding
 ---

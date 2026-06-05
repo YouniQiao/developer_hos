@@ -1,4 +1,5 @@
 ---
+format: md
 title: "trace采集功能如何使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-indicator-monitoring-test-1
 ---

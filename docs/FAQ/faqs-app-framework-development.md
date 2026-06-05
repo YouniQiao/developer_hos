@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用框架开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-framework-development
 ---

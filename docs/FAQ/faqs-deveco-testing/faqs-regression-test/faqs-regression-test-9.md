@@ -1,4 +1,5 @@
 ---
+format: md
 title: "生成回归测试包时报错提示“xxx模块下载失败”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-9
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何给Swiper组件添加节流，控制Swiper的切换频率"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-440
 ---

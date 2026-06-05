@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation的toolbar中设置大图标时被切断"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-60
 ---

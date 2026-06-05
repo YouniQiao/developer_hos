@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何跨HSP包调用rawfile目录下的文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-63
 ---

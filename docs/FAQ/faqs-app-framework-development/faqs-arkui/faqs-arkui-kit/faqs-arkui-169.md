@@ -1,4 +1,5 @@
 ---
+format: md
 title: "键盘移动焦点对象按下enter，为什么不会触发点击事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-169
 ---

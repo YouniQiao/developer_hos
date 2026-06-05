@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决应用需要避免创建过多线程，并发处理任务数量受限，无法充分发挥设备性能的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-60
 ---

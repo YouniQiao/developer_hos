@@ -1,4 +1,5 @@
 ---
+format: md
 title: "是否支持通过动态import反射调用类的静态成员函数和实例成员函数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-118
 ---

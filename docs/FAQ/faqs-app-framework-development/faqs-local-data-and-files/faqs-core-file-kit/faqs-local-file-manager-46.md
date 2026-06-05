@@ -1,4 +1,5 @@
 ---
+format: md
 title: "解决冷启动picker选择器无权限问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-46
 ---

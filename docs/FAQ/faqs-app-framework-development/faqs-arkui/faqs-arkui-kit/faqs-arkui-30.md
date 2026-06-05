@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取UI组件的显示或隐藏状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-30
 ---

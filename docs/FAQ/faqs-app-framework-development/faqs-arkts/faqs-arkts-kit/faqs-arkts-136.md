@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译异常，无具体错误日志，难以定位问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-136
 ---

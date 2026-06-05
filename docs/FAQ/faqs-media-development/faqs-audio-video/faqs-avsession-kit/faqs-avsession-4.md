@@ -1,4 +1,5 @@
 ---
+format: md
 title: "能否定制播控中心界面上显示的控制元素"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-4
 ---

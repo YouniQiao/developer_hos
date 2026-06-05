@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过HDC命令截屏/获取相册"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-49
 ---

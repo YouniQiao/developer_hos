@@ -1,4 +1,5 @@
 ---
+format: md
 title: "TaskPool和Worker的异同点"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-27
 ---

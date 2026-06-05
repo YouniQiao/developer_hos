@@ -1,4 +1,5 @@
 ---
+format: md
 title: "@ohos.data.preferences在App退出重启后，持久化数据丢失"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-28
 ---

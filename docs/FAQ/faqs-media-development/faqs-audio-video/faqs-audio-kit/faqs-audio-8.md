@@ -1,4 +1,5 @@
 ---
+format: md
 title: "播放短促提示音（如点赞、收藏、新消息等场景的提示音或音效），应该如何处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-8
 ---

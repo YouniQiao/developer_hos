@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使HSP包版本号统一"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-34
 ---

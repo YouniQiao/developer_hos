@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation页面级弹窗，下层页面如何监听是否被Dialog覆盖"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-402
 ---

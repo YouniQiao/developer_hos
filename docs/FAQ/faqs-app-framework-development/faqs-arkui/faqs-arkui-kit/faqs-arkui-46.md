@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Text组件如何加载Unicode字符"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-46
 ---

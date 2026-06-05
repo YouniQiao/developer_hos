@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现List内拖拽交换子组件位置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-276
 ---

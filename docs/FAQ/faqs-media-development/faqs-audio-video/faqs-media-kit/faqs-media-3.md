@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现使用AVPlayer播放音频的过程中打断当前播放去播放另一个音频"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-3
 ---

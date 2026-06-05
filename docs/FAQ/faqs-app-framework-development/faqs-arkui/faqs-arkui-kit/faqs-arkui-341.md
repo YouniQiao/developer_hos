@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在使用子窗口时保持键盘获焦"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-341
 ---

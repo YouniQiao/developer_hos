@@ -1,4 +1,5 @@
 ---
+format: md
 title: "hdc无法安装包"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-72
 ---

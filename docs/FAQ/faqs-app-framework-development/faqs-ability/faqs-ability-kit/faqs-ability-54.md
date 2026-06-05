@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现通过调用其他已安装的应用来打开特定文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-54
 ---

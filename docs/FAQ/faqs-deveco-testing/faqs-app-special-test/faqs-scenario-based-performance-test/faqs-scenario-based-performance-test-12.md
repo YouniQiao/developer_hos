@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何结合trace，分析卡顿率指标异常问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-12
 ---

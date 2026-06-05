@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Profiler工具对Wearable设备开启泳道录制时会存在概率异常"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-7
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "自定义字体的注册方式是什么，如何从资源存放路径中取出字体资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-47
 ---

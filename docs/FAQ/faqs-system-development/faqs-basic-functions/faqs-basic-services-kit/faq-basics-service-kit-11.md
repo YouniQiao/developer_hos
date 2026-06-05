@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取系统时间，并且在切换时区时，时间戳一直保持北京时间"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-11
 ---

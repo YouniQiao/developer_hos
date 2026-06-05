@@ -1,4 +1,5 @@
 ---
+format: md
 title: "性能指标监控测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-indicator-monitoring-test
 ---

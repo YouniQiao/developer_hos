@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在ArkTS侧监听Native侧日志信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-64
 ---

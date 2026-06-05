@@ -1,4 +1,5 @@
 ---
+format: md
 title: "UX基础质量测试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ux-publish-test
 ---

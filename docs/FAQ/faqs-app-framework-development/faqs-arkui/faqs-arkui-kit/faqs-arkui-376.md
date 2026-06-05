@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现ArkUI组件字符串变量拼接"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-376
 ---

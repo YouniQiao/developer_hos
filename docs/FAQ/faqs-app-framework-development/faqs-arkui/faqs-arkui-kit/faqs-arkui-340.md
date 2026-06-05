@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何判断当前设备是手机还是折叠屏手机"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-340
 ---

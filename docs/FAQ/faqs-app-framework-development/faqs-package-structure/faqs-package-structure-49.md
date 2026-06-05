@@ -1,4 +1,5 @@
 ---
+format: md
 title: "一个HSP模块如何快速切换成HAR模块"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-49
 ---

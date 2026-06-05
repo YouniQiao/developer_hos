@@ -1,4 +1,5 @@
 ---
+format: md
 title: "方舟编程语言（ArkTS）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-kit
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "构建报错“Duplicated files found in module xxx. This may cause unexpected errors at runtime”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-109
 ---

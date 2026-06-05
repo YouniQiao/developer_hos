@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在UIAbility调用terminateSelf()后设置不保留最近任务列表中的快照"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-4
 ---

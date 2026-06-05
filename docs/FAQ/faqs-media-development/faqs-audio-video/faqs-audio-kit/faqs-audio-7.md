@@ -1,4 +1,5 @@
 ---
+format: md
 title: "AudioRenderer是否有跳转到某一帧的接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-7
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "网络"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network
 ---

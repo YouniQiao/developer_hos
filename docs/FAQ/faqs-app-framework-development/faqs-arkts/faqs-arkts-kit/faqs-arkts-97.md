@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkTS是否支持匿名内部类"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-97
 ---

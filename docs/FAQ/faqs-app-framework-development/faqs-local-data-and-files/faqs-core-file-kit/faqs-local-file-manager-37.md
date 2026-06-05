@@ -1,4 +1,5 @@
 ---
+format: md
 title: "手机应用开发是否允许自行设置是否备份自身数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-37
 ---

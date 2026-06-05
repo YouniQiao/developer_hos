@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在onInterceptRequest接口中，如何异步处理响应数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-82
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在一个模块中使用另一个模块中编译出来的so"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-72
 ---

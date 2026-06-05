@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过多个xxx.d.ts文件导出Native侧接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-63
 ---

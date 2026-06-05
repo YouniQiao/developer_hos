@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用@Watch监听并在回调函数中调用其他异步接口时UI响应慢"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-185
 ---

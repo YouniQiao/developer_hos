@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在可滚动的容器组件中实现曝光埋点"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-7
 ---

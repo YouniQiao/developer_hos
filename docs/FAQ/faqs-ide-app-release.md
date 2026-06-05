@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用发布"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ide-app-release
 ---

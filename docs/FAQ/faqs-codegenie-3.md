@@ -1,4 +1,5 @@
 ---
+format: md
 title: "CodeGenie偶现报错：The reasoning_content in the thinking mode must be passed back to the API."
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-codegenie-3
 ---

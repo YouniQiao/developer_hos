@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco如何配置不响应raise捕获到的assert信号"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-57
 ---

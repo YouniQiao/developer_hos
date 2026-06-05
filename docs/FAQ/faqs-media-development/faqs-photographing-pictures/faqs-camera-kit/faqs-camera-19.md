@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现拍照预览onPreviewFrame回调"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-19
 ---

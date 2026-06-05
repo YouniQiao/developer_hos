@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Grid组件的scrollBar是否支持自定义"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-136
 ---

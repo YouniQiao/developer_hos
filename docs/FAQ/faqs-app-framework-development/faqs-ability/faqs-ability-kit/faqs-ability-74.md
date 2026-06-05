@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在工具类中获取Context"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-74
 ---

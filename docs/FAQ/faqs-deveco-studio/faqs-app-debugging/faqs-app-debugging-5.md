@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HarmonyOS应用自动化签名时提示“Unsupported restricted ACL permission exist in the configuration”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-5
 ---

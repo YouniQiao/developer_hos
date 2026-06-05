@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过路由的方式打开半屏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-305
 ---

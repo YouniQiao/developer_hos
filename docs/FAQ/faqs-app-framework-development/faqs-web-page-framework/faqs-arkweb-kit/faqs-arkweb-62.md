@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用Web组件，在哪个回调事件中可以设置自定义用户代理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-62
 ---

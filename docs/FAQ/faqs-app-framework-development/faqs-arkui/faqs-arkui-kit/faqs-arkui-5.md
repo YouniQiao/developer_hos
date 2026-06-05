@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何自定义Tabs页签导航栏及其对齐方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-5
 ---

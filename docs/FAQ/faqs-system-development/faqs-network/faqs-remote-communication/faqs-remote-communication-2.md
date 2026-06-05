@@ -1,4 +1,5 @@
 ---
+format: md
 title: "rcp请求是否有数据大小限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-remote-communication-2
 ---

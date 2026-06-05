@@ -1,4 +1,5 @@
 ---
+format: md
 title: "http请求如何以表单形式进行传输"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-47
 ---

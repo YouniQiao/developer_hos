@@ -1,4 +1,5 @@
 ---
+format: md
 title: "XComponent组件如何设置背景颜色"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-126
 ---

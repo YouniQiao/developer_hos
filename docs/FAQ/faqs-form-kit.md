@@ -1,4 +1,5 @@
 ---
+format: md
 title: "卡片开发（Form）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-form-kit
 ---

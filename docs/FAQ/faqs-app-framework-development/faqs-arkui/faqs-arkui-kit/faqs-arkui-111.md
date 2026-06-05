@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置区分TabBar和TabContent的分割线样式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-111
 ---

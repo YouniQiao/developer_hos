@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何去掉Tabs组件自定义tabBar的自带无障碍朗读"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-470
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译构建"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building
 ---

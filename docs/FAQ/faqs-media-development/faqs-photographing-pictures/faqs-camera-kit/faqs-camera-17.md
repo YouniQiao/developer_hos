@@ -1,4 +1,5 @@
 ---
+format: md
 title: "视频预览分辨率设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-17
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决Kill server failed 的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-40
 ---

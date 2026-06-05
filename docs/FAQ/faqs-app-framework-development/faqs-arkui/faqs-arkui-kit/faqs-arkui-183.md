@@ -1,4 +1,5 @@
 ---
+format: md
 title: "组件被隐藏后 onVisibleAreaChange 事件触发了两次"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-183
 ---

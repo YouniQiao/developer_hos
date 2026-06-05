@@ -1,4 +1,5 @@
 ---
+format: md
 title: "OAID、AAID和ODID分别是什么，如何获取设备的唯一标识"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-14
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "文档中提到键鼠事件可以设置冒泡阻断，其他事件是否支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-181
 ---

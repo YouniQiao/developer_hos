@@ -1,4 +1,5 @@
 ---
+format: md
 title: "相机开发（Camera）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-kit
 ---

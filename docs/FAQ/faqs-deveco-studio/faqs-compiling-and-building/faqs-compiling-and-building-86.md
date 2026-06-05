@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译打包CPU架构设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-86
 ---

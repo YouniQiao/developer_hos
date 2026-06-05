@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkUI中icon资源锯齿感严重"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-114
 ---

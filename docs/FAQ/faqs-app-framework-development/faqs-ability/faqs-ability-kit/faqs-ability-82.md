@@ -1,4 +1,5 @@
 ---
+format: md
 title: "有了代码签名特性后，开发者的so文件在调试、发布等阶段该如何部署"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-82
 ---

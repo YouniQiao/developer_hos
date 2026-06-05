@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过hdc命令关闭整个应用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-47
 ---

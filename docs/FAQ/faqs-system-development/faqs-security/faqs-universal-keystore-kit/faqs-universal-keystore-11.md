@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何保存私钥等重要数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-universal-keystore-11
 ---

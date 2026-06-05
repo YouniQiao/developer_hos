@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“CMake Error: The following variables are used in this project, but they are set to NOTFOUND”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-33
 ---

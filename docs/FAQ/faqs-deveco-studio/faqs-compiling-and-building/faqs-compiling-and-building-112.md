@@ -1,4 +1,5 @@
 ---
+format: md
 title: "构建报错“proxy data is duplicated”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-112
 ---

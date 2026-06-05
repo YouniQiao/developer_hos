@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkWeb如何适配多种设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-92
 ---

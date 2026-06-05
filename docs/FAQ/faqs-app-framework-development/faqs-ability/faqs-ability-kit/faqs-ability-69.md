@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何禁用窗口的全屏显示功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-69
 ---

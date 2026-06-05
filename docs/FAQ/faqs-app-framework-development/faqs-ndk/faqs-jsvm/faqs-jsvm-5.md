@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何正确使用OH_JSVM_GetValueStringUtf8获取字符串"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-5
 ---

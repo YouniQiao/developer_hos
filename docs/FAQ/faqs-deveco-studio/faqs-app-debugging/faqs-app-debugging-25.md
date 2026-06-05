@@ -1,4 +1,5 @@
 ---
+format: md
 title: "启动C++调试时出现错误，提示“Failed to connect to unix-abstract-connect”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-25
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何线上分析应用在CPU占用情况"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-20
 ---

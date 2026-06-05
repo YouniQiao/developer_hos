@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在应用中如何区分真机和模拟器"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-28
 ---

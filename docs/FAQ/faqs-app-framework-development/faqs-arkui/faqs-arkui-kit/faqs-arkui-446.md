@@ -1,4 +1,5 @@
 ---
+format: md
 title: "pc上，bindPopup设置了showInSubWindow:true时，气泡无法再弹出菜单"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-446
 ---

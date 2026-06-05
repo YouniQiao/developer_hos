@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何将HAR（静态共享包）转为HSP（动态共享包）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-7
 ---

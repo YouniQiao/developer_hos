@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Mac环境下加载动态库，签名拦截导致未生效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-133
 ---

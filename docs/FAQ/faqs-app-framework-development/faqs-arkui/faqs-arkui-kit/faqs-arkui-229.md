@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用BuilderParam在父组件调用this的方法报错：Error message: undefined is not callable"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-229
 ---

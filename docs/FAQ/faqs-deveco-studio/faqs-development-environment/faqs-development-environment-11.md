@@ -1,4 +1,5 @@
 ---
+format: md
 title: "流水线场景使用命令行工具sdkmgr下载Linux SDK失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-11
 ---

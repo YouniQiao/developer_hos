@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco Studio如何自动install依赖"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-9
 ---

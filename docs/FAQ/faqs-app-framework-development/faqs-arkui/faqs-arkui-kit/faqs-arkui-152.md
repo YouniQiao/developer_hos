@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置子组件宽度使其不超过父组件的大小"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-152
 ---

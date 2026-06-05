@@ -1,4 +1,5 @@
 ---
+format: md
 title: "pthread创建的线程中如何读取rawfile"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-23
 ---

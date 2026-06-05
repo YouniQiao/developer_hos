@@ -1,4 +1,5 @@
 ---
+format: md
 title: "调用camera拍摄的照片如何上传到服务器"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-4
 ---

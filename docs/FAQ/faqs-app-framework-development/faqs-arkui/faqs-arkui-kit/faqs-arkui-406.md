@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation组件，打开页面耗时，是否有优化建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-406
 ---

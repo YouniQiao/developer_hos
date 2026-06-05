@@ -1,4 +1,5 @@
 ---
+format: md
 title: "USE_BLUETOOTH 和 ACCESS_BLUETOOTH的区别是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-3
 ---

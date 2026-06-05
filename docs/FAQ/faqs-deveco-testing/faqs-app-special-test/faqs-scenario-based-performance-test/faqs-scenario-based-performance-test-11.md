@@ -1,4 +1,5 @@
 ---
+format: md
 title: "卡顿率是否支持应用自定义检测"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-11
 ---

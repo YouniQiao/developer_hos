@@ -1,4 +1,5 @@
 ---
+format: md
 title: "配置调试签名异常"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-18
 ---

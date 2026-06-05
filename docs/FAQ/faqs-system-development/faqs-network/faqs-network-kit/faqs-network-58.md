@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在建立好TCPSocket之后，如何将复合类型结构转换为ArrayBuffer"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-58
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用的进程启动过程是怎样的"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-28
 ---

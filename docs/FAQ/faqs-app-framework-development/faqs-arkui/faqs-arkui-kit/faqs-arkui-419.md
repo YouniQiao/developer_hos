@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation页面接收参数一般推荐在什么生命周期接收"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-419
 ---

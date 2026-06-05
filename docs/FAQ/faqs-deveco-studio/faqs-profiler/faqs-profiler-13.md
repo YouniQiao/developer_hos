@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在macOS上使用Profiler录制数据时，必现trace相关泳道显示“No Data”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-13
 ---

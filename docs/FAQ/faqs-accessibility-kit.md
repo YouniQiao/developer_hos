@@ -1,4 +1,5 @@
 ---
+format: md
 title: "无障碍开发（Accessibility）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-accessibility-kit
 ---

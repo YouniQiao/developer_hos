@@ -1,4 +1,5 @@
 ---
+format: md
 title: "环境安装完成后，下载工程模板至本地，如果本地调试失败，测试服务包更新后，本地调试仍然失败，应如何处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-4
 ---

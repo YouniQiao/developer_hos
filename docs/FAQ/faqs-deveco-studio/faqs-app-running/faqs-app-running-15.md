@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在模拟器访问Mac本地HTTP服务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-15
 ---

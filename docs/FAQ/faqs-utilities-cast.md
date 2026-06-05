@@ -1,4 +1,5 @@
 ---
+format: md
 title: "设备投屏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-utilities-cast
 ---

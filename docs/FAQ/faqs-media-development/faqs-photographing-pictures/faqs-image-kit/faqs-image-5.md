@@ -1,4 +1,5 @@
 ---
+format: md
 title: "图片编解码支持的格式有哪些"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-5
 ---

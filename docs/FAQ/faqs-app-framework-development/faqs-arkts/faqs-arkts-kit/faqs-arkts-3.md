@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何使用正则表达式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-3
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在本地模拟器中卸载应用显示成功，但实际未卸载成功"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-4
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "音视频文件的封装协议与编码格式有哪些"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avcodec-2
 ---

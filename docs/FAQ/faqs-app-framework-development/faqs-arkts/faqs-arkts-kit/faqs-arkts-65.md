@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkTS里有哪些转换数据类型的方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-65
 ---

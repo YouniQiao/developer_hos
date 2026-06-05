@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取应用级别的temp路径和files路径"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-15
 ---

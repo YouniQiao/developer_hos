@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Text组件关闭bindSelection自定义菜单时，取消文本的选中状态"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-323
 ---

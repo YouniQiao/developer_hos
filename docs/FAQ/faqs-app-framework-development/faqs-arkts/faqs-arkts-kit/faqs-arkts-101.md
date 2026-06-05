@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何快速生成class的setter和getter方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-101
 ---

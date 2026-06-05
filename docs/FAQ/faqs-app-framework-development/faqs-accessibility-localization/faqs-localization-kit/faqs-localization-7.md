@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何将Resource资源对象转成string类型"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-7
 ---

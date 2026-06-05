@@ -1,4 +1,5 @@
 ---
+format: md
 title: "通过公共事件服务CES发布、订阅事件，发布事件达到一定数量后，订阅者接收不到发布的事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-15
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "卡顿率显示的视频时间与下面给的视频图片集编号对不上，是什么原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-8
 ---

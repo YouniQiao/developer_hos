@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Image组件是否有缓存机制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-217
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "网络问题导致image组件加载在线图片失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-98
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用安装后，HAP文件在哪个目录路径"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-36
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "JDK版本不匹配导致编译失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-14
 ---

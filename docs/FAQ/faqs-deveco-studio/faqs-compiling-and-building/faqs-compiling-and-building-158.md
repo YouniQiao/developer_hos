@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“The reason and usedScene attributes are mandatory for user_grant permissions.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-158
 ---

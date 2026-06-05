@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在ArkTS使用Reflect正确绑定this指针"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-113
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "为什么Web组件的onKeyEvent键盘事件不生效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-3
 ---

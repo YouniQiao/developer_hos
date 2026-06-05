@@ -1,4 +1,5 @@
 ---
+format: md
 title: "调试过程中无法添加断点"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-1
 ---

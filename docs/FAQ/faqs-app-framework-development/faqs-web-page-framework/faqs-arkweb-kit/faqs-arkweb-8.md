@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决Web组件加载的HTML页面内检测网络状态失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-8
 ---

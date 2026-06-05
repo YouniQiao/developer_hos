@@ -1,4 +1,5 @@
 ---
+format: md
 title: "传感器（Sensor Service）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-sensor-service-kit
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何自定义投播组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-8
 ---

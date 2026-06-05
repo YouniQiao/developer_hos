@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现事件透传"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-155
 ---

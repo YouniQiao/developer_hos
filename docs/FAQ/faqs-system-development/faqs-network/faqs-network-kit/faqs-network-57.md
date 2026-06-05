@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在使用Socket连接相关接口时，NetAddress的address参数只能是IP地址，如果只有host的情况如何处理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-57
 ---

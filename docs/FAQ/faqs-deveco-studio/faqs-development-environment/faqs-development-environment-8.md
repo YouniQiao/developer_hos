@@ -1,4 +1,5 @@
 ---
+format: md
 title: "安装npm包失败的处理办法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-8
 ---

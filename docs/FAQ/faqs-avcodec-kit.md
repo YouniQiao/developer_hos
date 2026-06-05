@@ -1,4 +1,5 @@
 ---
+format: md
 title: "音视频编解码（AVCodec）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avcodec-kit
 ---

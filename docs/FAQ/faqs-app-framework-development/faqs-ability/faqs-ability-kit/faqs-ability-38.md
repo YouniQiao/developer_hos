@@ -1,4 +1,5 @@
 ---
+format: md
 title: "TaskPool里面是否可以使用EventHub"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-38
 ---

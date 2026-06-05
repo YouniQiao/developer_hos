@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译时DevEco Studio报“ohpm ERROR: EINSTALL install failed, Error: Dependency node build failed Install failed”错"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-3
 ---

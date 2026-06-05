@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用音频如何使用OpenSL切换为OHAudio"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-11
 ---

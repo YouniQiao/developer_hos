@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Asset Store是否会被其他应用获取？是否会出现跨设备同步的情况"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-data-prevention-7
 ---

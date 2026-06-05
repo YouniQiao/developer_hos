@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取文件的扩展名"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-40
 ---

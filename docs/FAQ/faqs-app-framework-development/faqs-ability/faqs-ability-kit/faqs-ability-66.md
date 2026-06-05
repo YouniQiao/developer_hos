@@ -1,4 +1,5 @@
 ---
+format: md
 title: "UIAbility/Page/Component之间的关系？如何搭配使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-66
 ---

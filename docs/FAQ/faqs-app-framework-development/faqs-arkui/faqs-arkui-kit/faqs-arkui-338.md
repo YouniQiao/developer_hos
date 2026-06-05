@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Marquee组件的文字滚动，第一次滚动出现大量空白，如何避免空白出现"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-338
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "解码后数据帧送显的两种方式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-7
 ---

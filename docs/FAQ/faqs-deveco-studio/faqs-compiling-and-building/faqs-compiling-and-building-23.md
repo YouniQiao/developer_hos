@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Static Library模块中src/main/cpp目录下的文件未打包进HAR"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-23
 ---

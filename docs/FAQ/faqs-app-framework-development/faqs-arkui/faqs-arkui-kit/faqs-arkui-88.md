@@ -1,4 +1,5 @@
 ---
+format: md
 title: "TextInput在聚焦时如何使光标回到起点"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-88
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "出现“container is not running”错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-4
 ---

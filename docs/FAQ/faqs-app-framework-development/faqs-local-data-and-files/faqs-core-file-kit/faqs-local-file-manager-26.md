@@ -1,4 +1,5 @@
 ---
+format: md
 title: "从FilePicker返回的图片地址uri是不是只是在一定的时间内有访问权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-26
 ---

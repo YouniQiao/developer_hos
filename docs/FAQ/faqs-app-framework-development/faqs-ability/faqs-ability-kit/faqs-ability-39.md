@@ -1,4 +1,5 @@
 ---
+format: md
 title: "hdc shell命令是否支持schema uri模拟跳转"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-39
 ---

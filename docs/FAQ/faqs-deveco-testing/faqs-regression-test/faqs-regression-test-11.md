@@ -1,4 +1,5 @@
 ---
+format: md
 title: "选择测试包后，若出现“请添加测试步骤，具体请参考测试指南”的报错提示，请参考测试指南。"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-11
 ---

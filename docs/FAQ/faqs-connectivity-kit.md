@@ -1,4 +1,5 @@
 ---
+format: md
 title: "短距通信（Connectivity）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-kit
 ---

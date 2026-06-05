@@ -1,4 +1,5 @@
 ---
+format: md
 title: "自定义键盘和系统键盘如何切换"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-281
 ---

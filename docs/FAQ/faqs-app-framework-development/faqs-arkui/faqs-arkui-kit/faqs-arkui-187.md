@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何移除页面上Video组件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-187
 ---

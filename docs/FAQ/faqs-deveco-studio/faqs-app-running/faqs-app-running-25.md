@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Windows x86模拟器三方C/C++库使用限制"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-25
 ---

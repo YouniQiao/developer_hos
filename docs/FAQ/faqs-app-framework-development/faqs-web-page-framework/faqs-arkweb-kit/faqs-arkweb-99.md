@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Web使用vh适配网页被缩小"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-99
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "远场通信（Remote Communication）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-remote-communication
 ---

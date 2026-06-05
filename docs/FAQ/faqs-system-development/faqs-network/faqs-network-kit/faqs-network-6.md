@@ -1,4 +1,5 @@
 ---
+format: md
 title: "http网络连接中的通用知识"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-6
 ---

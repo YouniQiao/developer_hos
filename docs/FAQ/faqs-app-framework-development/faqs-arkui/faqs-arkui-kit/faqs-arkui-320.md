@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决滚动类容器的滚动事件和手势之间的冲突"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-320
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "执行场景压测，为什么有很多次失败？"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-8
 ---

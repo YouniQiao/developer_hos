@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置DevEco Studio配置用来调试动态库"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-53
 ---

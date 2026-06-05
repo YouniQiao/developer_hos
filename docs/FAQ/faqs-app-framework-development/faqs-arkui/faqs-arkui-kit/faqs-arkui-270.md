@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用Navigation导航时，NavDestination页如何获取路由参数"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-270
 ---

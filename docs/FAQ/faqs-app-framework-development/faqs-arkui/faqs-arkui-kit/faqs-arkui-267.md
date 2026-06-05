@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现文本展开收起功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-267
 ---

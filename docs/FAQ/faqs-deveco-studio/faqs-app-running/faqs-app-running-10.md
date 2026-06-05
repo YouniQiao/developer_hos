@@ -1,4 +1,5 @@
 ---
+format: md
 title: "在Windows电脑上启动模拟器，提示未开启Hyper-V"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-10
 ---

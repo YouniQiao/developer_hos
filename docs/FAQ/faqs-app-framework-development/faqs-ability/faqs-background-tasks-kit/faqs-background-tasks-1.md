@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Stage模型中创建后台任务"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-1
 ---

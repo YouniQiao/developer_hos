@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用Navigation，页面从A->B->C->D，D直接调用popToName到A，不会触发B、C的onPop是什么原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-418
 ---

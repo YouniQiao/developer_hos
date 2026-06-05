@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置沉浸式状态栏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-214
 ---

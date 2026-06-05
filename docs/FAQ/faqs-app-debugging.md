@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用调试"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging
 ---

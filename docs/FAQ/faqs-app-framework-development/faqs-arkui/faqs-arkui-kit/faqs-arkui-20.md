@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何主动清除控件的焦点"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-20
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获知数据存储沙箱路径"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-33
 ---

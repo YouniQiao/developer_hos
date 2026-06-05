@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何理解App、HAP、HAR、HSP的关系"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-5
 ---

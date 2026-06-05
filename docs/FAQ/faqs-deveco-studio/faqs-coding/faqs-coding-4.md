@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco Studio中是否有预览结构树的方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-4
 ---

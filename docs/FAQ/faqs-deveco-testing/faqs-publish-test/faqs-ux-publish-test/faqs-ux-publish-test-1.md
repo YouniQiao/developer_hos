@@ -1,4 +1,5 @@
 ---
+format: md
 title: "测试报告中，为什么会出现不涉及检测项"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ux-publish-test-1
 ---

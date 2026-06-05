@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取trace文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-9
 ---

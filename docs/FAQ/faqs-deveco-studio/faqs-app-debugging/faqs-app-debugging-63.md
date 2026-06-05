@@ -1,4 +1,5 @@
 ---
+format: md
 title: "2in1设备attach调试失败和增量调试失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-63
 ---

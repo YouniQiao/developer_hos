@@ -1,4 +1,5 @@
 ---
+format: md
 title: "组件最大和最小宽度和高度如何设置"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-125
 ---

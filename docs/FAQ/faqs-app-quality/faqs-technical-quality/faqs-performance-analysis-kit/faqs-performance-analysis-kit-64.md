@@ -1,4 +1,5 @@
 ---
+format: md
 title: "解决hdc执行返回command not found"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-64
 ---

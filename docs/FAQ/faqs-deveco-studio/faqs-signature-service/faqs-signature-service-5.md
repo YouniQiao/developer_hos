@@ -1,4 +1,5 @@
 ---
+format: md
 title: "点击“允许”后，浏览器提示“无法访问此网站”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-5
 ---

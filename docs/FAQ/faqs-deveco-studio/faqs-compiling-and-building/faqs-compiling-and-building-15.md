@@ -1,4 +1,5 @@
 ---
+format: md
 title: "LABEL_VALUE_ERROR处理指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-15
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Webview accessBackward不符合预期的可能情况"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-88
 ---

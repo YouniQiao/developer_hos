@@ -1,4 +1,5 @@
 ---
+format: md
 title: "光标跟随相关接口"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ime-1
 ---

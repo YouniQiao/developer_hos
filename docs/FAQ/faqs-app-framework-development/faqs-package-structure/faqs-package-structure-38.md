@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HAR包是否支持依赖传递"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-38
 ---

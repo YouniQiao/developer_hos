@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在播控中心显示歌词"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-5
 ---

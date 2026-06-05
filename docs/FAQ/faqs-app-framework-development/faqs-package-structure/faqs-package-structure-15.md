@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HAR、HSP不能支持Ability、Page声明，限制的理由是什么？后续是否会支持"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-15
 ---

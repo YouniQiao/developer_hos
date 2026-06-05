@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何去除Tabs组件两侧的蒙层"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-56
 ---

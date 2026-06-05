@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过AKI三方库实现ArkTS与C/C++之间的跨语言调用"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-33
 ---

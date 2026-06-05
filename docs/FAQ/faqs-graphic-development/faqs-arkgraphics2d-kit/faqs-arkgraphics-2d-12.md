@@ -1,4 +1,5 @@
 ---
+format: md
 title: "关于GL_TEXTURE_2D和GL_TEXTURE_EXTERNAL_OES纹理类型的选择问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-12
 ---

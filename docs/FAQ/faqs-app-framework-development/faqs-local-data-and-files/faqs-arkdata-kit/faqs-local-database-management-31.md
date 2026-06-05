@@ -1,4 +1,5 @@
 ---
+format: md
 title: "首选项错误码：code:'401' err: Error: Parameter error. The type of 'value' must be ValueType. 如何排查问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-31
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "插入数据之后，RDB数据库的WAL文件体积异常"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-34
 ---

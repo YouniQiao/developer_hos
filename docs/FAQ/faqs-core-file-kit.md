@@ -1,4 +1,5 @@
 ---
+format: md
 title: "本地文件管理"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-core-file-kit
 ---

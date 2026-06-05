@@ -1,4 +1,5 @@
 ---
+format: md
 title: "onInterceptRequest拦截URL并自定义HTML文件，页面加载失败"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-4
 ---

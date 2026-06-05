@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何设置组件不同状态下的样式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-98
 ---

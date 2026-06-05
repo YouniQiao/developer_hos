@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“Invalid tag 'xxx' at 'xxx/xxx.json5'.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-148
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在键盘弹出时仅调整指定UI组件的位置，而不影响整体布局"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-43
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkTS是否支持类似Java的共享内存模型进行多线程开发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-37
 ---

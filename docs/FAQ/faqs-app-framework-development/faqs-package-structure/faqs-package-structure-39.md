@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现跨模块的页面跳转功能"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-39
 ---

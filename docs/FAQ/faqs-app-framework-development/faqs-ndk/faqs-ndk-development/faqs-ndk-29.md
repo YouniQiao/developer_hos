@@ -1,4 +1,5 @@
 ---
+format: md
 title: "NAPI执行上层回调时，如何获取env"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-29
 ---

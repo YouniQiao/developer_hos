@@ -1,4 +1,5 @@
 ---
+format: md
 title: "XComponent 怎么设置成透明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-139
 ---

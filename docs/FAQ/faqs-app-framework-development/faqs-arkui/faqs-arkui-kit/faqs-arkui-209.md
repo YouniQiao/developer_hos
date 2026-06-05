@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkUI有没有在组件刷新后的回调事件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-209
 ---

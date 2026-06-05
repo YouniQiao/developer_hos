@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Web请求时添加header头"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-37
 ---

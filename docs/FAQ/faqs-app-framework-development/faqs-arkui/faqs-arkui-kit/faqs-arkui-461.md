@@ -1,4 +1,5 @@
 ---
+format: md
 title: "AppStorage里面存储数据，如何保证不会有内存泄漏"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-461
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HarmonyOS软件需要加壳吗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-data-prevention-10
 ---

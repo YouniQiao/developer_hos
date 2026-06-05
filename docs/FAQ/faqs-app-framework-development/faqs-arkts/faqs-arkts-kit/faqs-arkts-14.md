@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何生成随机的uuid"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-14
 ---

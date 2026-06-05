@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何通过key获取对象值"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-108
 ---

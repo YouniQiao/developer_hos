@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用运行时进程资源使用规格"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-6
 ---

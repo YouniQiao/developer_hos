@@ -1,4 +1,5 @@
 ---
+format: md
 title: "napi_env禁止缓存的原因是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-73
 ---

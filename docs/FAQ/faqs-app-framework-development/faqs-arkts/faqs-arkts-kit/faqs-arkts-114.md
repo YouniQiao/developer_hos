@@ -1,4 +1,5 @@
 ---
+format: md
 title: "混淆后的映射文件具体在哪个路径下"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-114
 ---

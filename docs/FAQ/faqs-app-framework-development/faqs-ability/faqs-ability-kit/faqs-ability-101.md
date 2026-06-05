@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何判断应用当前在前台/后台"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-101
 ---

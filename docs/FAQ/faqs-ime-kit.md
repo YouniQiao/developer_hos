@@ -1,4 +1,5 @@
 ---
+format: md
 title: "输入法开发（IME）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ime-kit
 ---

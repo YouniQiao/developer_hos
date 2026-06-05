@@ -1,4 +1,5 @@
 ---
+format: md
 title: "HAR如何转换为HSP"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-37
 ---

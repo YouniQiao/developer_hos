@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“The metadata field in FormExtensionAbility cannot be left blank or as an empty array”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-164
 ---

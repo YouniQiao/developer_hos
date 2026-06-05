@@ -1,4 +1,5 @@
 ---
+format: md
 title: "录制Snapshot模板时，看不到taskPool线程内存信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-15
 ---

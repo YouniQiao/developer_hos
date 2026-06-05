@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkTS的SendableClass对象内存共享的原理和限制是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-38
 ---

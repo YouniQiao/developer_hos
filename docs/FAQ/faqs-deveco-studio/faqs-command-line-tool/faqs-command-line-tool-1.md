@@ -1,4 +1,5 @@
 ---
+format: md
 title: "通过命令行或终端可以正常发布，在Git Bash上发布时提示错误：私钥路径中的私钥内容错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-1
 ---

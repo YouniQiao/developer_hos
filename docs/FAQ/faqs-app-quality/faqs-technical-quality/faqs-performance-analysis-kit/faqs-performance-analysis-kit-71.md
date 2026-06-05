@@ -1,4 +1,5 @@
 ---
+format: md
 title: "cd到SDK下toolchains目录，执行hdc list targets，错误提示command not found: hdc"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-71
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ECC算法是否支持secp256r1"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-5
 ---

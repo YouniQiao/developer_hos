@@ -1,4 +1,5 @@
 ---
+format: md
 title: "全屏模态转场和半模态转场中是否可以实现避让软键盘"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-453
 ---

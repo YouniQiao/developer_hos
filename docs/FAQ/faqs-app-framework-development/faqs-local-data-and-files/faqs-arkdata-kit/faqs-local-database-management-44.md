@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkData StoreConfig.customDir配置不生效"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-44
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "DevEco Studio安装HAP时报错“FileTransfer Failed: [Fail]Transfer Stop at:XXX, Reason: no space left on device”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-62
 ---

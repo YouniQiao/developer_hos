@@ -1,4 +1,5 @@
 ---
+format: md
 title: "焦点事件onBlur/onFocus回调无法触发"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-165
 ---

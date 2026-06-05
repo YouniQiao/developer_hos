@@ -1,4 +1,5 @@
 ---
+format: md
 title: "音视频播控（AVSession）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-kit
 ---

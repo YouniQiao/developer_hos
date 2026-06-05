@@ -1,4 +1,5 @@
 ---
+format: md
 title: "TextInput如何限制输入字符为某些字符"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-106
 ---

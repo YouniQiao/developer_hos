@@ -1,4 +1,5 @@
 ---
+format: md
 title: "组件内转场(transition)新增内容动画生效，但删除内容动画不生效的可能原因是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-477
 ---

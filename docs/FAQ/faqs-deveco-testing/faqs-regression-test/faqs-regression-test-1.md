@@ -1,4 +1,5 @@
 ---
+format: md
 title: "生成回归测试包时报错提示“打包失败,当前项目根目录下缺少testcases文件夹”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-1
 ---

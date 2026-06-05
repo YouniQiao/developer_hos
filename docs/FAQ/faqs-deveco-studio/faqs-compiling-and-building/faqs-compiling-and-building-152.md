@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“The version number of the module must be a string, but received a xxx.”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-152
 ---

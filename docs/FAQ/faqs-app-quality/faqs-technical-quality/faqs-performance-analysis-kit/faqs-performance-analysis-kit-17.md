@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何用hdc命令将本地文件发送至远端设备"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-17
 ---

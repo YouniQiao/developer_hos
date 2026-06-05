@@ -1,4 +1,5 @@
 ---
+format: md
 title: "弹窗组件无法进入onPageShow方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-59
 ---

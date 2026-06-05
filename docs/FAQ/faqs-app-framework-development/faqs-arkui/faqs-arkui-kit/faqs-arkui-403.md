@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Navigation管理的页面生命周期是什么，需要什么回调监听页面生命周期"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-403
 ---

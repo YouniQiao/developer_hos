@@ -1,4 +1,5 @@
 ---
+format: md
 title: "用户在权限弹框中禁止应用获取权限，如何再次显示用户授权弹窗"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control4
 ---

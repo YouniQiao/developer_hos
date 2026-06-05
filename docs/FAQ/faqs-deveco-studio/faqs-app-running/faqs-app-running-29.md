@@ -1,4 +1,5 @@
 ---
+format: md
 title: "设备管理点击“新建模拟器”按钮无响应"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-29
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "查看应用探索测试报告时，报告加载卡顿的原因是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-3
 ---

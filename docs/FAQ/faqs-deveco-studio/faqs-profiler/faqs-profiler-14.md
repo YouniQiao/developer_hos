@@ -1,4 +1,5 @@
 ---
+format: md
 title: "PC设备录制Allocation模板时，Graphic Memory泳道中OpenGL ES子泳道无数据"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-14
 ---

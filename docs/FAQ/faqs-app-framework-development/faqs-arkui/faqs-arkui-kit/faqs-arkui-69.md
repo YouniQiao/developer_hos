@@ -1,4 +1,5 @@
 ---
+format: md
 title: "父组件如何与孙子组件进行状态同步"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-69
 ---

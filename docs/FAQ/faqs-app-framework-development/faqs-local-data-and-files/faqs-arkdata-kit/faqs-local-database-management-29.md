@@ -1,4 +1,5 @@
 ---
+format: md
 title: "非UI页面使用用户首选项时context如何获取"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-29
 ---

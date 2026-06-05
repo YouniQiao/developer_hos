@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Can't find component with [BY.text('XXX')] 的报错是什么原因"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-2
 ---

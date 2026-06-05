@@ -1,4 +1,5 @@
 ---
+format: md
 title: "点击Device Manager，提示“找不到应用程序”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-18
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Pura X外屏适配申请提交后，多长时间能完成审核"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-purax-1
 ---

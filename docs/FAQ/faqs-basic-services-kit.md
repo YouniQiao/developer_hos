@@ -1,4 +1,5 @@
 ---
+format: md
 title: "基础服务（Basics Service）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-basic-services-kit
 ---

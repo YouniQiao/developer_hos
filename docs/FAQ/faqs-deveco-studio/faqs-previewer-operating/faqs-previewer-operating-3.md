@@ -1,4 +1,5 @@
 ---
+format: md
 title: "预览告警“@Consume/@Link decorated property <propertyName> not initialized”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-3
 ---

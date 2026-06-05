@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如果有多个UIAbility，如何判断应用进入后台"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-94
 ---

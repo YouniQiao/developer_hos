@@ -1,4 +1,5 @@
 ---
+format: md
 title: "系统设置只展示应用申请过的权限"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-9
 ---

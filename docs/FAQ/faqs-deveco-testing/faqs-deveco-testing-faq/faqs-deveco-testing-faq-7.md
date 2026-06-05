@@ -1,4 +1,5 @@
 ---
+format: md
 title: "使用DevEco Testing/DevEco Testing Hypium有疑问，如何自助查阅资料及指南"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing-faq-7
 ---

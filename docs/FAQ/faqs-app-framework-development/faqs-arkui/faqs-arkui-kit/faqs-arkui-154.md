@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Image组件如何读入沙箱内的图片"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-154
 ---

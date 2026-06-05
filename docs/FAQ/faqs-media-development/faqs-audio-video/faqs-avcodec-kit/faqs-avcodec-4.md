@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取系统支持的编解码能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avcodec-4
 ---

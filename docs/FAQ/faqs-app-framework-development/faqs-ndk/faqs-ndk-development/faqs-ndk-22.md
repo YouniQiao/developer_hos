@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Native侧访问应用包内Rawfile资源"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-22
 ---

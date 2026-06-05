@@ -1,4 +1,5 @@
 ---
+format: md
 title: "module.json5配置文件中extensionAbilities和requestPermissions的权限声明有何区别"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-14
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "WaterFlow、Grid、List这些容器的使用区别是什么"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-324
 ---

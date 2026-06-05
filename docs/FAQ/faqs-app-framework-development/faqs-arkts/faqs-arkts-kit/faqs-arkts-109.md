@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ModuleManager模块加载流程是什么样的"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-109
 ---

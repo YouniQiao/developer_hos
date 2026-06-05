@@ -1,4 +1,5 @@
 ---
+format: md
 title: "启动模拟器，提示镜像文件缺失"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-33
 ---

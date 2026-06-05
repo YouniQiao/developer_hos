@@ -1,4 +1,5 @@
 ---
+format: md
 title: "OpenGL同一个上下文在多线程中使用问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-11
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何读取工程中/resources下json文件"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-12
 ---

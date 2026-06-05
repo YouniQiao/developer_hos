@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取App版本号，版本名，屏幕分辨率等信息"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-71
 ---

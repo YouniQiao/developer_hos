@@ -1,4 +1,5 @@
 ---
+format: md
 title: "模拟器播放本地音频文件偶现卡顿"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-6
 ---

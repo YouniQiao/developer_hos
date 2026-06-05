@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在Native侧直接使用其他模块的ArkTS方法"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-20
 ---

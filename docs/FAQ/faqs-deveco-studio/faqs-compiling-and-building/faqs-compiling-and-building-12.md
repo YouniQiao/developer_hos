@@ -1,4 +1,5 @@
 ---
+format: md
 title: "C++工程编译导致电脑卡顿的处理建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-12
 ---

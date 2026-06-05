@@ -1,4 +1,5 @@
 ---
+format: md
 title: "上架预检"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-publish-test
 ---

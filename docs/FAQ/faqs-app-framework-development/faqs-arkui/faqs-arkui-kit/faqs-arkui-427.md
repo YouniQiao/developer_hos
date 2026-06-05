@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Tabs如何实现TabBar左对齐"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-427
 ---

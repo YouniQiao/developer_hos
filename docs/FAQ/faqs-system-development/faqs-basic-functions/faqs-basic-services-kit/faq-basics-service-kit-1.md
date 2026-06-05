@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何获取系统时间戳"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-1
 ---

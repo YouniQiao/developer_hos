@@ -1,4 +1,5 @@
 ---
+format: md
 title: "ArkWeb组件是否支持深拷贝"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-90
 ---

@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应用能否指定使用某一网络来发请求"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-32
 ---

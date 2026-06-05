@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何在UIAbility、页面和组件中获取UIAbilityContext"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-73
 ---

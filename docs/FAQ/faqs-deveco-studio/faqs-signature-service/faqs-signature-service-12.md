@@ -1,4 +1,5 @@
 ---
+format: md
 title: "签名密钥库文件与JDK版本不兼容"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-12
 ---

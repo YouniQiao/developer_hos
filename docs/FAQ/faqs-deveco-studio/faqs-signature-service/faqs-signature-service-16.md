@@ -1,4 +1,5 @@
 ---
+format: md
 title: "签名验签错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-16
 ---

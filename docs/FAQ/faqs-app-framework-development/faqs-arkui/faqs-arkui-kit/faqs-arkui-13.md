@@ -1,4 +1,5 @@
 ---
+format: md
 title: "TextInput组件获取焦点的几种场景"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-13
 ---

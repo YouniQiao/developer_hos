@@ -1,4 +1,5 @@
 ---
+format: md
 title: "应该如何设计大量线程并发方案"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-25
 ---

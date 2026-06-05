@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何实现类似Java中的反射方法调用能力"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-62
 ---

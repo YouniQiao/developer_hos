@@ -1,4 +1,5 @@
 ---
+format: md
 title: "如何解决List组件在不设置高度的情况下滑动不到底的问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-26
 ---

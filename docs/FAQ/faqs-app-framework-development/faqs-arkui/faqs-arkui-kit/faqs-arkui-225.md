@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Canvas绘制内容如何动态更新"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-225
 ---

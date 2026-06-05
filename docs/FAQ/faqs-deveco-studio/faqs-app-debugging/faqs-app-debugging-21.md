@@ -1,4 +1,5 @@
 ---
+format: md
 title: "Hot Reload执行失败原因说明"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-21
 ---

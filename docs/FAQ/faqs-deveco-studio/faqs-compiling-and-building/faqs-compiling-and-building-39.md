@@ -1,4 +1,5 @@
 ---
+format: md
 title: "编译报错“Only one default card can be configured in the form_config.json file”"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-39
 ---

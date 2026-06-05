@@ -1,4 +1,5 @@
 ---
+format: md
 title: "媒体文件管理（Media Library）"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-kit
 ---

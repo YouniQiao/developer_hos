@@ -1,4 +1,5 @@
 ---
+format: md
 title: "视频流支持哪些格式"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-16
 ---

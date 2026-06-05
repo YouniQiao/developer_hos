@@ -1,4 +1,5 @@
 ---
+format: md
 title: "模拟器上部分视频无法正常播放"
 original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-37
 ---
