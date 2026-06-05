@@ -105,6 +105,7 @@ jobs:
           NODE_OPTIONS: '--max-old-space-size=14336 --max-semi-space-size=64 --v8-pool-size=6'
           GENERATE_SOURCEMAP: 'false'
           UV_THREADPOOL_SIZE: '8'
+          DOCUSAURUS_SSG_WORKER_THREADS: '2'
 
       - name: Save build caches (on success)
         if: success()

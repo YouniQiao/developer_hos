@@ -37,7 +37,7 @@ const config = {
     },
     faster: {
       rspack: true,
-      ssgWorkerThreads: 2,
+      ssgWorkerThreads: true,
     },
   },
 
