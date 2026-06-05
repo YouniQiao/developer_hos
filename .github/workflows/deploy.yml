@@ -37,7 +37,7 @@ jobs:
         run: |
           if [ $(free -m | awk '/^Swap:/{print $2}') -lt 14336 ]; then
             echo "📦 创建 16GB swap..."
-            swapoff /swapfile 2>/dev/null; rm -f /swapfile
+            swapoff /swapfile 2>/dev/null || true; rm -f /swapfile
             dd if=/dev/zero of=/swapfile bs=1M count=16384 status=progress
             chmod 600 /swapfile
             mkswap /swapfile
