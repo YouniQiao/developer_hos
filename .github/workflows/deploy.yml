@@ -101,7 +101,7 @@ jobs:
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=20480 --max-semi-space-size=64 --v8-pool-size=12'
+          NODE_OPTIONS: '--max-old-space-size=18432 --max-semi-space-size=64 --v8-pool-size=8'
           GENERATE_SOURCEMAP: 'false'
           UV_THREADPOOL_SIZE: '16'
 
