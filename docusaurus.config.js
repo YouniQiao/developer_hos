@@ -33,7 +33,7 @@ const config = {
   plugins,
   future: {
     v4: false,
-    faster: false,
+    faster: true,
   },
 
   // Set the production url of your site here
@@ -49,6 +49,7 @@ const config = {
 
   onBrokenLinks: 'warn',
   markdown: {
+    format: 'md',
     hooks: {
       onBrokenMarkdownLinks: 'warn',
       onBrokenMarkdownImages: 'warn',

@@ -79,6 +79,11 @@ jobs:
             fi
           fi
 
+      - name: Tune system for build
+        run: |
+          sysctl -w vm.swappiness=10
+          sysctl -w vm.vfs_cache_pressure=50
+
       - name: Build (skip if fresh AND source unchanged)
         run: |
           CURRENT_SHA=$(git rev-parse HEAD)
@@ -90,14 +95,15 @@ jobs:
             echo "🔨 开始全量构建 (${CURRENT_SHA:0:7})..."
             rm -rf build/
             ulimit -S -n 65536
-            npx docusaurus build --no-minify
+            nice -n -15 npx docusaurus build --no-minify
             echo "$CURRENT_SHA" > build/.build-commit
             touch build/.build-success
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=14336'
+          NODE_OPTIONS: '--max-old-space-size=24576 --max-semi-space-size=64 --v8-pool-size=12'
           GENERATE_SOURCEMAP: 'false'
+          UV_THREADPOOL_SIZE: '16'
 
       - name: Save build caches (on success)
         if: success()
