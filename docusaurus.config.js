@@ -35,10 +35,7 @@ const config = {
     v4: {
       removeLegacyPostBuildHeadAttribute: true,
     },
-    faster: {
-      rspack: true,
-      ssgWorkerThreads: true,
-    },
+    faster: true,
   },
 
   // Set the production url of your site here
