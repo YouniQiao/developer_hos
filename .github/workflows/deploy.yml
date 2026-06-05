@@ -82,7 +82,7 @@ jobs:
 
       - name: Tune system for build
         run: |
-          sysctl -w vm.swappiness=90
+          sysctl -w vm.swappiness=100
           sysctl -w vm.vfs_cache_pressure=50
 
       - name: Build (skip if fresh AND source unchanged)
@@ -102,11 +102,11 @@ jobs:
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=20480 --max-semi-space-size=64 --v8-pool-size=8'
+          NODE_OPTIONS: '--max-old-space-size=16384 --max-semi-space-size=64 --v8-pool-size=6'
           GENERATE_SOURCEMAP: 'false'
-          UV_THREADPOOL_SIZE: '12'
-          DOCUSAURUS_SSG_WORKER_THREADS: '4'
-          DOCUSAURUS_SSG_CONCURRENCY: '2'
+          UV_THREADPOOL_SIZE: '8'
+          DOCUSAURUS_SSG_WORKER_THREADS: '2'
+          DOCUSAURUS_SSG_CONCURRENCY: '1'
 
       - name: Save build caches (on success)
         if: success()
