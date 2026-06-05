@@ -139,7 +139,8 @@ jobs:
         if: success()
         run: |
           echo "📦 同步构建产物到预览站..."
-          rm -rf /var/www/preview/*
+          rm -rf /var/www/preview/
+          mkdir -p /var/www/preview/
           cp -r build/* /var/www/preview/
           echo "✅ 预览站已更新: http://$(hostname -I | awk '{print $1}')"
 
