@@ -47,6 +47,18 @@ jobs:
             echo "✅ swap 已足够 (≥14GB), 跳过"
           fi
 
+      - name: Setup zram (16GB compressed RAM swap)
+        run: |
+          if ! swapon --show | grep -q zram; then
+            echo "📦 启用 16GB zram (内存压缩)..."
+            modprobe zram
+            echo 16G > /sys/block/zram0/disksize
+            mkswap /dev/zram0
+            swapon -p 100 /dev/zram0
+          fi
+          echo "✅ swap 状态:"
+          swapon --show
+
       - name: Restore build caches (MDX + Rspack)
         run: |
           mkdir -p "$CACHE_DIR"
@@ -102,11 +114,11 @@ jobs:
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=6144 --max-semi-space-size=64 --v8-pool-size=4'
+          NODE_OPTIONS: '--max-old-space-size=16384 --max-semi-space-size=64 --v8-pool-size=8'
           GENERATE_SOURCEMAP: 'false'
-          UV_THREADPOOL_SIZE: '4'
-          DOCUSAURUS_SSG_WORKER_THREADS: '1'
-          DOCUSAURUS_SSG_CONCURRENCY: '1'
+          UV_THREADPOOL_SIZE: '12'
+          DOCUSAURUS_SSG_WORKER_THREADS: '4'
+          DOCUSAURUS_SSG_CONCURRENCY: '2'
 
       - name: Save build caches (on success)
         if: success()
