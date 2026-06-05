@@ -32,7 +32,9 @@ const config = {
   favicon: 'img/favicon.ico',
   plugins,
   future: {
-    v4: false,
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+    },
     faster: true,
   },
 
