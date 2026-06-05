@@ -31,6 +31,19 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Ensure swap (8GB safety net)
+        run: |
+          if [ $(free -m | awk '/^Swap:/{print $2}') -lt 1024 ]; then
+            echo "📦 创建 8GB swap..."
+            fallocate -l 8G /swapfile
+            chmod 600 /swapfile
+            mkswap /swapfile
+            swapon /swapfile
+            echo "✅ swap 已启用: $(free -h | grep Swap)"
+          else
+            echo "✅ swap 已存在, 跳过"
+          fi
+
       - name: Restore build caches (MDX + Rspack)
         run: |
           mkdir -p "$CACHE_DIR"
