@@ -33,17 +33,18 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Ensure swap (8GB safety net)
+      - name: Ensure swap (16GB safety net)
         run: |
-          if [ $(free -m | awk '/^Swap:/{print $2}') -lt 1024 ]; then
-            echo "📦 创建 8GB swap..."
-            fallocate -l 8G /swapfile
+          if [ $(free -m | awk '/^Swap:/{print $2}') -lt 14336 ]; then
+            echo "📦 创建 16GB swap..."
+            swapoff /swapfile 2>/dev/null; rm -f /swapfile
+            fallocate -l 16G /swapfile
             chmod 600 /swapfile
             mkswap /swapfile
             swapon /swapfile
             echo "✅ swap 已启用: $(free -h | grep Swap)"
           else
-            echo "✅ swap 已存在, 跳过"
+            echo "✅ swap 已足够 (≥14GB), 跳过"
           fi
 
       - name: Restore build caches (MDX + Rspack)
@@ -101,9 +102,9 @@ jobs:
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=18432 --max-semi-space-size=64 --v8-pool-size=8'
+          NODE_OPTIONS: '--max-old-space-size=14336 --max-semi-space-size=64 --v8-pool-size=6'
           GENERATE_SOURCEMAP: 'false'
-          UV_THREADPOOL_SIZE: '16'
+          UV_THREADPOOL_SIZE: '8'
 
       - name: Save build caches (on success)
         if: success()
