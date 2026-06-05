@@ -102,10 +102,10 @@ jobs:
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=12288 --max-semi-space-size=64 --v8-pool-size=6'
+          NODE_OPTIONS: '--max-old-space-size=6144 --max-semi-space-size=64 --v8-pool-size=4'
           GENERATE_SOURCEMAP: 'false'
-          UV_THREADPOOL_SIZE: '8'
-          DOCUSAURUS_SSG_WORKER_THREADS: '2'
+          UV_THREADPOOL_SIZE: '4'
+          DOCUSAURUS_SSG_WORKER_THREADS: '1'
           DOCUSAURUS_SSG_CONCURRENCY: '1'
 
       - name: Save build caches (on success)
