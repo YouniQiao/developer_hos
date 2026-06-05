@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Fast checkout (self-hosted, incremental)
         run: |
+          # Clean up stale git locks from cancelled runs
+          rm -f .git/shallow.lock .git/index.lock 2>/dev/null
           if [ -d .git ]; then
             git fetch origin master --depth=1
             git reset --hard origin/master
