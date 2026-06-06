@@ -62,13 +62,7 @@ jobs:
       - name: Restore build caches (MDX + Rspack)
         run: |
           mkdir -p "$CACHE_DIR"
-          if [ -d "$CACHE_DIR/.docusaurus" ]; then
-            rm -rf .docusaurus
-            cp -r "$CACHE_DIR/.docusaurus" .docusaurus
-            echo "♻️  .docusaurus restored ($(du -sh .docusaurus | cut -f1))"
-          else
-            echo "🆕 no .docusaurus cache yet (first run)"
-          fi
+          echo "⏭️  Skipping .docusaurus cache restore (force clean build)"
 
       - name: Install deps (only when needed — preserve bundler cache)
         run: |
@@ -97,6 +91,19 @@ jobs:
           sysctl -w vm.swappiness=100
           sysctl -w vm.vfs_cache_pressure=50
 
+      - name: Cleanup before build
+        run: |
+          # Kill stale node processes from cancelled runs
+          pkill -f "docusaurus build" 2>/dev/null || true
+          pkill -f "webpack" 2>/dev/null || true
+          # Drop caches if we have permission
+          sync && echo 3 > /proc/sys/vm/drop_caches 2>/dev/null || true
+          echo "🧹 清理完成, 当前内存: $(free -h | grep Mem)"
+          # Check cgroup memory limits
+          echo "--- cgroup memory ---"
+          cat /sys/fs/cgroup/memory/memory.limit_in_bytes 2>/dev/null || echo "no cgroup v1"
+          cat /sys/fs/cgroup/memory.max 2>/dev/null || echo "no cgroup v2"
+
       - name: Build (skip if fresh AND source unchanged)
         run: |
           CURRENT_SHA=$(git rev-parse HEAD)
@@ -108,17 +115,30 @@ jobs:
             echo "🔨 开始全量构建 (${CURRENT_SHA:0:7})..."
             rm -rf build/
             ulimit -S -n 65536
+            # Memory monitor in background — logs every 30s
+            while true; do
+              echo "[mem-monitor] $(date +%H:%M:%S) $(free -h | grep Mem)"
+              sleep 30
+            done &
+            MONITOR_PID=$!
             nice -n -15 npx docusaurus build --no-minify
+            BUILD_EXIT=$?
+            kill $MONITOR_PID 2>/dev/null || true
+            if [ $BUILD_EXIT -ne 0 ]; then
+              echo "❌ Build failed with exit code $BUILD_EXIT"
+              echo "[mem-monitor] final: $(free -h | grep Mem)"
+              exit $BUILD_EXIT
+            fi
             echo "$CURRENT_SHA" > build/.build-commit
             touch build/.build-success
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=16384 --max-semi-space-size=64 --v8-pool-size=8'
+          NODE_OPTIONS: '--max-old-space-size=8192 --max-semi-space-size=64 --v8-pool-size=8'
           GENERATE_SOURCEMAP: 'false'
           UV_THREADPOOL_SIZE: '12'
-          DOCUSAURUS_SSG_WORKER_THREADS: '4'
-          DOCUSAURUS_SSG_CONCURRENCY: '2'
+          DOCUSAURUS_SSG_WORKER_THREADS: '1'
+          DOCUSAURUS_SSG_CONCURRENCY: '1'
 
       - name: Save build caches (on success)
         if: success()
@@ -146,11 +166,6 @@ jobs:
 
       - name: Deploy to Netlify
         run: |
-          HOUR=$(TZ='Asia/Shanghai' date +%H)
-          if [ "$HOUR" -lt 1 ] || [ "$HOUR" -ge 6 ]; then
-            echo "⏭️  当前北京时间 $(TZ='Asia/Shanghai' date +%H:%M)，不在 01:00~06:00 部署窗口，跳过 Netlify 部署"
-            exit 0
-          fi
           if [ ! -f build/.build-success ]; then
             echo "❌ 构建产物不完整，跳过部署"
             exit 1
