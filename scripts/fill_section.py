@@ -116,6 +116,38 @@ SECTIONS = {
         "flat": False,
         "parent_node_name": "AI",
     },
+    "quickstart": {
+        "catalog_name": "harmonyos-guides",
+        "local_dir": "docs/dev/app-dev/getting-started/quick-start",
+        "catalog_obj": "start-overview",
+        "source_prefix": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/",
+        "flat": False,
+        "parent_node_name": "快速入门",
+    },
+    "devfund": {
+        "catalog_name": "harmonyos-guides",
+        "local_dir": "docs/dev/app-dev/getting-started/dev-fundamentals",
+        "catalog_obj": "application-package-overview",
+        "source_prefix": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/",
+        "flat": False,
+        "parent_node_name": "开发基础知识",
+    },
+    "resaccess": {
+        "catalog_name": "harmonyos-guides",
+        "local_dir": "docs/dev/app-dev/getting-started/resource-access",
+        "catalog_obj": "resource-categories-and-access",
+        "source_prefix": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/",
+        "flat": True,
+        "parent_node_name": "资源分类与访问",
+    },
+    "glossary": {
+        "catalog_name": "harmonyos-guides",
+        "local_dir": "docs/dev/app-dev/getting-started/glossary",
+        "catalog_obj": "glossary",
+        "source_prefix": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/",
+        "flat": True,
+        "parent_node_name": "HarmonyOS术语",
+    },
 }
 
 
