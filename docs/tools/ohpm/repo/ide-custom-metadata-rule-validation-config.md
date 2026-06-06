@@ -1,7 +1,8 @@
 ---
 title: "自定义元数据规则校验插件配置"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-custom-metadata-rule-validation-config---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-custom-metadata-rule-validation-config
+---
 
 
 # 自定义元数据规则校验插件配置

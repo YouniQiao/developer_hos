@@ -1,6 +1,7 @@
 ---
 title: "Nterprisethreatprotection Virusremediation Content"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nterprisethreatprotection-virusremediation-content---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nterprisethreatprotection-virusremediation-content
+---
 
 import SourceLink from '@site/src/components/SourceLink';
 

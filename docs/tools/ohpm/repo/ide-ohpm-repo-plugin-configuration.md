@@ -1,7 +1,8 @@
 ---
 title: "自定义存储插件配置"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-plugin-configuration---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-plugin-configuration
+---
 
 
 # 自定义存储插件配置

@@ -1,7 +1,8 @@
 ---
 title: "使用新UI"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-new-ui---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-new-ui
+---
 
 
 # 使用新UI

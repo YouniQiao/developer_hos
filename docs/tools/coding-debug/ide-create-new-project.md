@@ -1,7 +1,8 @@
 ---
 title: "创建一个新的工程"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-create-new-project---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-create-new-project
+---
 
 
 # 创建一个新的工程

@@ -1,7 +1,8 @@
 ---
 title: "认证管理"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-certification---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-certification
+---
 
 
 # 认证管理

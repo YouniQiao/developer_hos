@@ -1,7 +1,8 @@
 ---
 title: "导入和引用模块"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-import-module---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-import-module
+---
 
 
 # 导入和引用模块

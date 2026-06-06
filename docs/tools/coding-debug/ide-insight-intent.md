@@ -1,7 +1,8 @@
 ---
 title: "创建意图框架"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-intent---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-intent
+---
 
 
 # 创建意图框架

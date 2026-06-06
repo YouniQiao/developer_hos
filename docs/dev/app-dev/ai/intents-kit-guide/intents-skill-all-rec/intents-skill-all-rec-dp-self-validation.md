@@ -1,6 +1,7 @@
 ---
 title: "Intents Skill All Rec Dp Self Validation"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-dp-self-validation---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-dp-self-validation
+---
 
 import SourceLink from '@site/src/components/SourceLink';
 

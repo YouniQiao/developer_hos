@@ -1,7 +1,8 @@
 ---
 title: "ohpm-repo 命令参考"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-commands---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-commands
+---
 
 
 # ohpm-repo 命令参考

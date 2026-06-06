@@ -1,7 +1,8 @@
 ---
 title: "ohpm-repo --version"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo--version---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo--version
+---
 
 
 # ohpm-repo --version

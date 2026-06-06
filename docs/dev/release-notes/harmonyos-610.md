@@ -1,7 +1,8 @@
 ---
 title: "HarmonyOS 6.1.0(23)"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/harmonyos-610---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/harmonyos-610
+---
 
 
 # HarmonyOS 6.1.0(23)

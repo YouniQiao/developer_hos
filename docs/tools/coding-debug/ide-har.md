@@ -1,7 +1,8 @@
 ---
 title: "开发静态共享包"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-har---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-har
+---
 
 
 # 开发静态共享包

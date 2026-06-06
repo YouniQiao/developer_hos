@@ -1,7 +1,8 @@
 ---
 title: "创建服务卡片"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-service-widget---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-service-widget
+---
 
 
 # 创建服务卡片

@@ -1,6 +1,7 @@
 ---
 title: "Cloudfoundation Preparations"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-preparations---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-preparations
+---
 
 import SourceLink from '@site/src/components/SourceLink';
 

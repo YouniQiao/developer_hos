@@ -1,7 +1,8 @@
 ---
 title: "ohpm-repo mirror_storage"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-mirror_storage---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-mirror_storage
+---
 
 
 # ohpm-repo mirror\_storage

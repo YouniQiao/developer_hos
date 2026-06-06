@@ -1,7 +1,8 @@
 ---
 title: "ohpm-repo restart"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-restart---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-restart
+---
 
 
 # ohpm-repo restart

@@ -1,7 +1,8 @@
 ---
 title: "DevEco Studio 6.0.1"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/deveco-studio-601---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/deveco-studio-601
+---
 
 
 # DevEco Studio 6.0.1

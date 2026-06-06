@@ -1,6 +1,7 @@
 ---
 title: "Health Appendix"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-appendix---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-appendix
+---
 
 import SourceLink from '@site/src/components/SourceLink';
 

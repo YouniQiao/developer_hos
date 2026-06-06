@@ -1,7 +1,8 @@
 ---
 title: "个人中心主页"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-web-user-center---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-web-user-center
+---
 
 
 # 个人中心主页

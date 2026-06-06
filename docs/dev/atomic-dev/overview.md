@@ -2,7 +2,8 @@
 title: "原生元服务"
 sidebar_position: 1
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/overview---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/overview
+---
 
 
 # 什么是元服务

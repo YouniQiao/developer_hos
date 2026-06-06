@@ -1,7 +1,8 @@
 ---
 title: "ohpm-repo export_pkginfo"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-export-pkginfo---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-export-pkginfo
+---
 
 
 # ohpm-repo export\_pkginfo

@@ -1,7 +1,8 @@
 ---
 title: "模板文件"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-rule-verification-template-file---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-rule-verification-template-file
+---
 
 
 # 模板文件

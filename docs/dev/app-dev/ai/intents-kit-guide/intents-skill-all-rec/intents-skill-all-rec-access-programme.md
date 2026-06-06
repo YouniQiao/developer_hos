@@ -1,6 +1,7 @@
 ---
 title: "Intents Skill All Rec Access Programme"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-access-programme---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-access-programme
+---
 
 import SourceLink from '@site/src/components/SourceLink';
 

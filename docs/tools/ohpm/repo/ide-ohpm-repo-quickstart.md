@@ -1,7 +1,8 @@
 ---
 title: "快速开始"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-quickstart---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-quickstart
+---
 
 
 # 快速开始

@@ -1,7 +1,8 @@
 ---
 title: "HarmonyOS 6.1.1(24) Beta"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/harmonyos-611---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/harmonyos-611
+---
 
 
 # HarmonyOS 6.1.1(24) Beta

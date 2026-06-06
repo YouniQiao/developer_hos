@@ -1,7 +1,8 @@
 ---
 title: "工程介绍"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-project-overview---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-project-overview
+---
 
 
 # 工程介绍

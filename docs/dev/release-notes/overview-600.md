@@ -1,7 +1,8 @@
 ---
 title: "版本概览"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/overview-600---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/overview-600
+---
 
 
 # 版本概览

@@ -1,7 +1,8 @@
 ---
 title: "DevEco Testing 6.0.0"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/deveco-testing-600---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/deveco-testing-600
+---
 
 
 # DevEco Testing 6.0.0

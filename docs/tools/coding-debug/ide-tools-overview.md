@@ -1,7 +1,8 @@
 ---
 title: "工具概述"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-tools-overview---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-tools-overview
+---
 
 
 # 工具概述

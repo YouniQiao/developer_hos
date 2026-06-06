@@ -1,7 +1,8 @@
 ---
 title: "添加Ability"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-add-new-ability---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-add-new-ability
+---
 
 
 # 添加Ability

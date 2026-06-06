@@ -1,7 +1,8 @@
 ---
 title: "多实例部署"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-deploy-multiple-instances---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-deploy-multiple-instances
+---
 
 
 # 多实例部署

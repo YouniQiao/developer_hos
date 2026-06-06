@@ -1,7 +1,8 @@
 ---
 title: "ohpm-repo help"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-help---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-help
+---
 
 
 # ohpm-repo help

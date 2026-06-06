@@ -1,6 +1,7 @@
 ---
 title: "Gameservice Appendix"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-appendix---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-appendix
+---
 
 import SourceLink from '@site/src/components/SourceLink';
 

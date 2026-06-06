@@ -1,7 +1,8 @@
 ---
 title: "应用兼容性说明"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-compatibility---
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-compatibility
+---
 
 
 # 应用兼容性说明
