@@ -1,6 +1,6 @@
 ---
 title: "性能体验设计"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smooth-application-design
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smooth-application-design
 ---
 import MergedTable from '@site/src/components/MergedTable';
 

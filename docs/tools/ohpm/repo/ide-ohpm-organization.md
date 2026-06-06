@@ -1,7 +1,7 @@
 ---
 title: "组织管理"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-organization---
 
 
 # 组织管理

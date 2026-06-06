@@ -2,6 +2,7 @@
 
 title: "创建元服务工程"
 displayed_sidebar: cloudDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-create-faproject
 format: md
 ---
 

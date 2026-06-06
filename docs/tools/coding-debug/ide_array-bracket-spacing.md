@@ -1,6 +1,7 @@
 ---
 title: "@hw-stylistic/array-bracket-spacing"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_array-bracket-spacing
 format: md
 ---
 

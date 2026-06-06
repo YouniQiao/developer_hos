@@ -1,6 +1,6 @@
 ---
 title: "Web性能优化"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-performance-optimization
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-performance-optimization
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "开发Hvigor任务"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-task
 format: md
 ---
 

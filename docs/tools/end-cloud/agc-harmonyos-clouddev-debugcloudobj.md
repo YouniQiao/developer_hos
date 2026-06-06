@@ -2,6 +2,7 @@
 
 title: "调试云对象"
 displayed_sidebar: cloudDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-debugcloudobj
 format: md
 ---
 

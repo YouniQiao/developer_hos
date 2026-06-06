@@ -1,6 +1,7 @@
 ---
 title: "@performance/multiple-associations-state-var-check"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-multi-associations-state-var-check
 format: md
 ---
 

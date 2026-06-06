@@ -1,6 +1,7 @@
 ---
 title: "@performance/no-use-any-import"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-no-use-any-import
 format: md
 ---
 

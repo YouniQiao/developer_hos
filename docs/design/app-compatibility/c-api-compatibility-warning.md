@@ -1,6 +1,7 @@
 ---
 title: "CAPI兼容性保护高阶用法"
 displayed_sidebar: appCompatibilitySidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/c-api-compatibility-warning
 format: md
 ---
 

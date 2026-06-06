@@ -1,6 +1,7 @@
 ---
 title: "代码智能解读"
 displayed_sidebar: aiAssistSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-explain-code
 format: md
 ---
 

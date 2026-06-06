@@ -1,6 +1,7 @@
 ---
 title: "滑动操作响应快"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-quick-response-for-swipe-0405
 format: md
 ---
 

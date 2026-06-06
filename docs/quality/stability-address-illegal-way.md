@@ -1,6 +1,6 @@
 ---
 title: "地址越界类问题分析方法"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-illegal-way
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-illegal-way
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

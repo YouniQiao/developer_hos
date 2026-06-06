@@ -1,6 +1,6 @@
 ---
 title: "Liveview Preparations"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-preparations---
 
 import SourceLink from '@site/src/components/SourceLink';
 

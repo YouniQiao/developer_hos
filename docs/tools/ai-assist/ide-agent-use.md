@@ -1,6 +1,7 @@
 ---
 title: "自定义智能体（Agent）配置和调用"
 displayed_sidebar: aiAssistSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-agent-use
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Launch模板基本操作"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-session-launch
 format: md
 ---
 

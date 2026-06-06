@@ -1,6 +1,6 @@
 ---
 title: "稳定性测试"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-testing
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-testing
 format: md
 ---
 

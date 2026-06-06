@@ -1,6 +1,7 @@
 ---
 title: "@performance/hp-arkui-suggest-reuseid-for-if-else-reusable-component"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui-use-reuseid-if-else-component
 format: md
 ---
 

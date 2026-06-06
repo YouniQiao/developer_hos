@@ -1,6 +1,6 @@
 ---
 title: "UI组件性能优化"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization
 ---
 import MergedTable from '@site/src/components/MergedTable';
 

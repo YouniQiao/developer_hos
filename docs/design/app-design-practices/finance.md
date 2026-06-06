@@ -1,7 +1,7 @@
 ---
 title: 金融理财类
 sidebar_label: 金融理财类
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples6-0000001793536905
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples6-0000001793536905
 format: md
 ---
 

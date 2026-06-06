@@ -1,6 +1,7 @@
 ---
 title: "Instrument Test"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-instrument-test
 format: md
 ---
 

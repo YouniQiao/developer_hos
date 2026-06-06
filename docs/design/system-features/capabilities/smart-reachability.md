@@ -1,7 +1,7 @@
 ---
 title: 智感握姿
 sidebar_label: 智感握姿
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/smart-reachability-0000002556657823
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/smart-reachability-0000002556657823
 format: md
 ---
 

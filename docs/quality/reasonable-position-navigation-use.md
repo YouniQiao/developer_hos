@@ -1,6 +1,6 @@
 ---
 title: "后台定位导航服务合理使用"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-position-navigation-use
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-position-navigation-use
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

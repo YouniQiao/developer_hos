@@ -2,6 +2,7 @@
 
 title: "在AGC创建项目和HarmonyOS应用/元服务"
 displayed_sidebar: cloudDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-createproject
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "启动和关闭模拟器"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-emulator-start-and-close
 format: md
 ---
 

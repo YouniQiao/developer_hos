@@ -1,6 +1,6 @@
 ---
 title: "自由流转规格"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-capability-specification
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-capability-specification
 format: md
 ---
 

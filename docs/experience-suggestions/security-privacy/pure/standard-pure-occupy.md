@@ -1,6 +1,6 @@
 ---
 title: "恶意霸屏"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-occupy
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-occupy
 format: md
 ---
 

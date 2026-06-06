@@ -1,6 +1,7 @@
 ---
 title: "自定义运行/调试配置"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-run-debug-configurations
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "发布共享包"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-har-publish---
 
 
 # 发布共享包

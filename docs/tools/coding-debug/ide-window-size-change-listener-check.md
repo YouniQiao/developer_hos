@@ -1,6 +1,7 @@
 ---
 title: "@cross-device-app-dev/window-size-change-listener-check"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-window-size-change-listener-check
 format: md
 ---
 

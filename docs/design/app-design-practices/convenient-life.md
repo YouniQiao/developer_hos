@@ -1,7 +1,7 @@
 ---
 title: 便捷生活类
 sidebar_label: 便捷生活类
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/convenient-life-0000001957252465
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/convenient-life-0000001957252465
 format: md
 ---
 

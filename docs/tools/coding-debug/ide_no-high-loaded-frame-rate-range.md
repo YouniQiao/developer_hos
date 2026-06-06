@@ -1,6 +1,7 @@
 ---
 title: "@performance/no-high-loaded-frame-rate-range"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-high-loaded-frame-rate-range
 format: md
 ---
 

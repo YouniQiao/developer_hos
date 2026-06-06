@@ -1,6 +1,7 @@
 ---
 title: "查看ArkUI状态变量"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-arkui-state
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 框选
 sidebar_label: 框选
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scenes-selection-0000001957005521
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scenes-selection-0000001957005521
 format: md
 ---
 

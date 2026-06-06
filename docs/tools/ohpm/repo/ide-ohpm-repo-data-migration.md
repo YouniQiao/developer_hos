@@ -1,7 +1,7 @@
 ---
 title: "数据迁移"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-data-migration---
 
 
 # 数据迁移

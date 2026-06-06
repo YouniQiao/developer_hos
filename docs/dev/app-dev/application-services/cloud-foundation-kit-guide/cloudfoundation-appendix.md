@@ -1,6 +1,6 @@
 ---
 title: "Cloudfoundation Appendix"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-appendix---
 
 import SourceLink from '@site/src/components/SourceLink';
 

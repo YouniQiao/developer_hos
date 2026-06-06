@@ -1,7 +1,7 @@
 ---
 title: 基础信息
 sidebar_label: 基础信息
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900384976
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900384976
 format: md
 ---
 

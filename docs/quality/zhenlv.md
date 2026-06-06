@@ -1,6 +1,6 @@
 ---
 title: "帧率问题分析"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-zhenlv
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-zhenlv
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

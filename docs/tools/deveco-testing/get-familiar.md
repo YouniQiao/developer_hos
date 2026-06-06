@@ -1,6 +1,7 @@
 ---
 title: "快速上手"
 displayed_sidebar: devecoTestingSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/get-familiar
 format: md
 ---
 

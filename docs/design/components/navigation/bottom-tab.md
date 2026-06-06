@@ -1,7 +1,7 @@
 ---
 title: 底部页签
 sidebar_label: 底部页签
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bottomtab-0000001956787789
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bottomtab-0000001956787789
 format: md
 ---
 

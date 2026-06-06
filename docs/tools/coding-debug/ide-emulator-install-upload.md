@@ -1,6 +1,7 @@
 ---
 title: "安装应用程序包和上传文件"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-emulator-install-upload
 format: md
 ---
 

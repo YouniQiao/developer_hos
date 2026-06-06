@@ -1,6 +1,7 @@
 ---
 title: "oh-package.json5"
 displayed_sidebar: ohpmSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-oh-package-json5
 format: md
 ---
 

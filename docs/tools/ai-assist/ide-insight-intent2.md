@@ -1,6 +1,7 @@
 ---
 title: "意图装饰器生成和小艺智能体创建"
 displayed_sidebar: aiAssistSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-intent2
 format: md
 ---
 

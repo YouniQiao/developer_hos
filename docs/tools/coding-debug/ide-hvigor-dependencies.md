@@ -1,6 +1,7 @@
 ---
 title: "添加依赖项"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-dependencies
 format: md
 ---
 

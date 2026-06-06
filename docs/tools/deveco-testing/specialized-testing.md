@@ -1,6 +1,7 @@
 ---
 title: "专项测试"
 displayed_sidebar: devecoTestingSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/specialized-testing
 format: md
 ---
 

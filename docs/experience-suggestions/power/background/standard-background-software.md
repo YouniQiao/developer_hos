@@ -1,6 +1,6 @@
 ---
 title: "后台软件资源使用"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-software
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-software
 format: md
 ---
 

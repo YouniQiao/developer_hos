@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/no-implicit-any-catch"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-implicit-any-catch
 format: md
 ---
 

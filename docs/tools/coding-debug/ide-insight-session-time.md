@@ -1,6 +1,7 @@
 ---
 title: "基础耗时：Time分析"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-session-time
 format: md
 ---
 

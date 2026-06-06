@@ -1,6 +1,6 @@
 ---
 title: "性能场景优化案例"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-performance-optimization
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-performance-optimization
 format: md
 ---
 

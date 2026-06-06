@@ -1,6 +1,6 @@
 ---
 title: "伪造篡改"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-tampering
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-tampering
 format: md
 ---
 

@@ -2,6 +2,7 @@
 
 title: "在端侧调用云存储"
 displayed_sidebar: cloudDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-invokecloudstorage
 format: md
 ---
 

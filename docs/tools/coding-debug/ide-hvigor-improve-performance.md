@@ -1,6 +1,7 @@
 ---
 title: "并行构建"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-improve-performance
 format: md
 ---
 

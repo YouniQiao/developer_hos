@@ -1,6 +1,6 @@
 ---
 title: "操作延时触发"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-delayed-trigger-operation
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-delayed-trigger-operation
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

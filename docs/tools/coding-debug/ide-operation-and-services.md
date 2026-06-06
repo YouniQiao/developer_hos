@@ -1,6 +1,7 @@
 ---
 title: "运维服务"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-operation-and-services
 format: md
 ---
 

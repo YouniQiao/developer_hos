@@ -1,6 +1,6 @@
 ---
 title: "应用内存占用优化"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-memory-optimization
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-memory-optimization
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

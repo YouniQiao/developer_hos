@@ -1,6 +1,6 @@
 ---
 title: "运行态性能检测"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-performance-runtime-detection
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-performance-runtime-detection
 format: md
 ---
 

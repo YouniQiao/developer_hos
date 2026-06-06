@@ -1,7 +1,7 @@
 ---
 title: 碰一碰
 sidebar_label: 碰一碰
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/onehop-0000002354602581
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/onehop-0000002354602581
 format: md
 ---
 

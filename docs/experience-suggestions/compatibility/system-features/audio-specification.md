@@ -1,6 +1,6 @@
 ---
 title: "音频规格"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification
 format: md
 ---
 

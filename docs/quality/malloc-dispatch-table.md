@@ -1,6 +1,6 @@
 ---
 title: "内存泄漏定制能力开放使用指导"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-malloc-dispatch-table
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-malloc-dispatch-table
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

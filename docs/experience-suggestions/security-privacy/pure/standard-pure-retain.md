@@ -1,6 +1,6 @@
 ---
 title: "保活拉活"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-retain
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-retain
 format: md
 ---
 

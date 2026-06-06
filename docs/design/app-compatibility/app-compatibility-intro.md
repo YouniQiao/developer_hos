@@ -1,6 +1,7 @@
 ---
 title: "关于应用兼容性的介绍"
 displayed_sidebar: appCompatibilitySidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/app-compatibility-intro
 format: md
 ---
 

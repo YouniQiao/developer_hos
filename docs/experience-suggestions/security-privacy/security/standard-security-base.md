@@ -1,6 +1,6 @@
 ---
 title: "组件安全"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-base
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-base
 format: md
 ---
 

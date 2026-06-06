@@ -1,6 +1,7 @@
 ---
 title: "本地知识库配置"
 displayed_sidebar: aiAssistSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ocal-knowledge
 format: md
 ---
 

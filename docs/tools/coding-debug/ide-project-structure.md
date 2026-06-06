@@ -1,7 +1,7 @@
 ---
 title: "工程目录结构介绍"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-project-structure---
 
 
 # 工程目录结构介绍

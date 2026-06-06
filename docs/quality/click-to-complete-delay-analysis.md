@@ -1,6 +1,6 @@
 ---
 title: "点击完成时延分析"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-complete-delay-analysis
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-complete-delay-analysis
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

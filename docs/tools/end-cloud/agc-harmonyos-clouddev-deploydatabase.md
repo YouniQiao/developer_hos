@@ -2,6 +2,7 @@
 
 title: "部署云数据库"
 displayed_sidebar: cloudDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-deploydatabase
 format: md
 ---
 

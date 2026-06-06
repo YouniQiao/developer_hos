@@ -1,6 +1,6 @@
 ---
 title: "应用UX体验建议"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-ux
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-ux
 ---
 
 import MergedTable from '@site/src/components/MergedTable';

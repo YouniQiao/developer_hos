@@ -1,6 +1,7 @@
 ---
 title: "@correctness/avsession-metadata-check"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-avsession-metadata-check
 format: md
 ---
 

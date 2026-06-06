@@ -1,7 +1,7 @@
 ---
 title: 半模态面板
 sidebar_label: 半模态面板
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet-0000001956852753
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet-0000001956852753
 format: md
 ---
 

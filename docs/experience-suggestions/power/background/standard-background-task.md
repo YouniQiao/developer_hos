@@ -1,6 +1,6 @@
 ---
 title: "后台任务使用"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-task
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-task
 format: md
 ---
 

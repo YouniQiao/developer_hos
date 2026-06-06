@@ -1,6 +1,6 @@
 ---
 title: "前台资源使用"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-resource
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-resource
 format: md
 ---
 

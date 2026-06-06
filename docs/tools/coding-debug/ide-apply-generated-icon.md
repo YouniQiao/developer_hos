@@ -1,7 +1,7 @@
 ---
 title: "生成单层图标"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-apply-generated-icon---
 
 
 # 生成单层图标

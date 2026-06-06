@@ -2,6 +2,7 @@
 
 title: "打包测试"
 displayed_sidebar: cloudDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-compile
 format: md
 ---
 

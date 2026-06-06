@@ -1,7 +1,7 @@
 ---
 title: 鼠标
 sidebar_label: 鼠标
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-mouse-0000001930021626
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-mouse-0000001930021626
 format: md
 ---
 

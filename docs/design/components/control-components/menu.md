@@ -1,7 +1,7 @@
 ---
 title: 菜单
 sidebar_label: 菜单
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/menu-0000001957001877
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/menu-0000001957001877
 format: md
 ---
 

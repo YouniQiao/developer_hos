@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/prefer-regexp-exec"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_prefer-regexp-exec
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "应用时延优化"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-latency-optimization-cases
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-latency-optimization-cases
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

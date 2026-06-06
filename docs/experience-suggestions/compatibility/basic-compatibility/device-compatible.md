@@ -1,6 +1,6 @@
 ---
 title: "设备兼容"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-compatible
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-compatible
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 窗口框架
 sidebar_label: 窗口框架
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/window-0000002321868010
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/window-0000002321868010
 format: md
 ---
 

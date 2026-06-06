@@ -1,6 +1,6 @@
 ---
 title: "性能检测"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-detection
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-detection
 format: md
 ---
 

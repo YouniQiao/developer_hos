@@ -1,7 +1,7 @@
 ---
 title: 二维码
 sidebar_label: 二维码
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/qrcode-0000001929816020
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/qrcode-0000001929816020
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "运行效率提高"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-running-efficiency
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-running-efficiency
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

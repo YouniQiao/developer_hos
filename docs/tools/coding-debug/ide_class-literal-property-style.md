@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/class-literal-property-style"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_class-literal-property-style
 format: md
 ---
 

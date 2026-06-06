@@ -1,7 +1,7 @@
 ---
 title: 分享
 sidebar_label: 分享
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/share-0000001957076313
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/share-0000001957076313
 format: md
 ---
 

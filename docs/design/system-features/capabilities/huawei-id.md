@@ -1,7 +1,7 @@
 ---
 title: 华为账号开放登录
 sidebar_label: 华为账号开放登录
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344
 format: md
 ---
 

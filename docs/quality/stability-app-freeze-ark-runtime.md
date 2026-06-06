@@ -1,6 +1,6 @@
 ---
 title: "栈顶在方舟运行时的应用冻屏问题定位实践"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-ark-runtime
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-ark-runtime
 format: md
 ---
 

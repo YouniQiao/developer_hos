@@ -1,6 +1,6 @@
 ---
 title: "显示规格"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-specification
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-specification
 format: md
 ---
 

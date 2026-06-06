@@ -1,6 +1,7 @@
 ---
 title: "@performance/hp-arkui-use-word-break-to-replace-zero-width-space"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui-use-word-break-in-space
 format: md
 ---
 

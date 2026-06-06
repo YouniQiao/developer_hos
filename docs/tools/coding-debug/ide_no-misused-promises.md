@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/no-misused-promises"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-misused-promises
 format: md
 ---
 

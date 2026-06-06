@@ -1,6 +1,6 @@
 ---
 title: "数据主体访问"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-permission
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-permission
 format: md
 ---
 

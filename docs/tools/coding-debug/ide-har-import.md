@@ -1,7 +1,7 @@
 ---
 title: "引用及管理共享包"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-har-import---
 
 
 # 引用及管理共享包

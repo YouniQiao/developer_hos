@@ -1,7 +1,7 @@
 ---
 title: 弹出框
 sidebar_label: 弹出框
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-0000001957012569
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-0000001957012569
 format: md
 ---
 

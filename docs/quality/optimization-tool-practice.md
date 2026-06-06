@@ -1,6 +1,6 @@
 ---
 title: "性能分析"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-optimization-tool-practice
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-optimization-tool-practice
 format: md
 ---
 

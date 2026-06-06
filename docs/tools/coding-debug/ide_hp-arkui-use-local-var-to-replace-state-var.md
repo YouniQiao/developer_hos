@@ -1,6 +1,7 @@
 ---
 title: "@performance/hp-arkui-use-local-var-to-replace-state-var"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui-use-local-var-to-replace-state-var
 format: md
 ---
 

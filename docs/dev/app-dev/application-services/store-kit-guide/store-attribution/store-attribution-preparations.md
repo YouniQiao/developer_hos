@@ -1,6 +1,6 @@
 ---
 title: "Store Attribution Preparations"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-preparations---
 
 import SourceLink from '@site/src/components/SourceLink';
 

@@ -1,6 +1,7 @@
 ---
 title: "使用ASan检测内存错误"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-asan
 format: md
 ---
 

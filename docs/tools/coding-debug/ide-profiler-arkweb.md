@@ -1,6 +1,7 @@
 ---
 title: "加载丢帧：ArkWeb分析"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-profiler-arkweb
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "内容显示"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-content-display
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-content-display
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/triple-slash-reference"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_triple-slash-reference
 format: md
 ---
 

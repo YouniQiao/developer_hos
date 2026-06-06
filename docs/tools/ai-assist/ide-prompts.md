@@ -1,6 +1,7 @@
 ---
 title: "自定义提示词库（Prompts）配置"
 displayed_sidebar: aiAssistSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-prompts
 format: md
 ---
 

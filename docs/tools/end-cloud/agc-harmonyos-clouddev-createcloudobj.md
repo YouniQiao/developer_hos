@@ -2,6 +2,7 @@
 
 title: "创建云对象"
 displayed_sidebar: cloudDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-createcloudobj
 format: md
 ---
 

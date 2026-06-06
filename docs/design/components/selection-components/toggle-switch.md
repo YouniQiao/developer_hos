@@ -1,7 +1,7 @@
 ---
 title: 开关
 sidebar_label: 开关
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toggleswitch-0000001956852745
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toggleswitch-0000001956852745
 format: md
 ---
 

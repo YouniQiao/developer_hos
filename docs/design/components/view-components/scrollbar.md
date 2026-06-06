@@ -1,7 +1,7 @@
 ---
 title: 滚动条
 sidebar_label: 滚动条
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/scrollbar-0000001956815473
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/scrollbar-0000001956815473
 format: md
 ---
 

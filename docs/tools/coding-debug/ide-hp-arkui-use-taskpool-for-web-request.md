@@ -1,6 +1,7 @@
 ---
 title: "@performance/hp-arkui-use-taskpool-for-web-request"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hp-arkui-use-taskpool-for-web-request
 format: md
 ---
 

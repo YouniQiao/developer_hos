@@ -1,6 +1,6 @@
 ---
 title: "内存基础知识"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-memory-basic-knowledge
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-memory-basic-knowledge
 format: md
 ---
 

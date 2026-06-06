@@ -1,6 +1,7 @@
 ---
 title: "内存分析数据筛选"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-session-allocations-data-filtering
 format: md
 ---
 

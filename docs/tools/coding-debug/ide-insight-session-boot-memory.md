@@ -1,6 +1,7 @@
 ---
 title: "启动时内存分析"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-session-boot-memory
 format: md
 ---
 

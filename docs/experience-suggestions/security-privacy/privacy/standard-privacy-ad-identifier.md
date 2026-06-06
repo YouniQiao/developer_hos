@@ -1,6 +1,6 @@
 ---
 title: "向第三方披露"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-ad-identifier
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-ad-identifier
 format: md
 ---
 

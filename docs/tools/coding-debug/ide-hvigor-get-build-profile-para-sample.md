@@ -1,6 +1,7 @@
 ---
 title: "实践说明"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-get-build-profile-para-sample
 format: md
 ---
 

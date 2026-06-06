@@ -1,7 +1,7 @@
 ---
 title: 新闻阅读类
 sidebar_label: 新闻阅读类
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples4-0000001746657290
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples4-0000001746657290
 format: md
 ---
 

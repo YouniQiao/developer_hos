@@ -1,6 +1,6 @@
 ---
 title: "应用资产保护设计"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-asset-protection-design
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-asset-protection-design
 format: md
 ---
 

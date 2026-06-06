@@ -1,7 +1,7 @@
 ---
 title: "HarmonyOS 6.0.2(22)"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/harmonyos-602---
 
 
 # HarmonyOS 6.0.2(22)

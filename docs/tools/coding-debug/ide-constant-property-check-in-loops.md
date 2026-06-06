@@ -1,6 +1,7 @@
 ---
 title: "@performance/constant-property-referencing-check-in-loops"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-constant-property-check-in-loops
 format: md
 ---
 

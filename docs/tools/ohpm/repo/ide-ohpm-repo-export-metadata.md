@@ -1,7 +1,7 @@
 ---
 title: "导出OpenHarmony三方库中心仓元数据至ohpm-repo"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-export-metadata---
 
 
 # 导出OpenHarmony三方库中心仓元数据至ohpm-repo

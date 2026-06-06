@@ -1,6 +1,7 @@
 ---
 title: "@performance/hp-arkui-suggest-use-get-anonymousid-async"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hp-arkui-sg-anonymousid-async
 format: md
 ---
 

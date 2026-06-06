@@ -1,6 +1,7 @@
 ---
 title: "@performance/hp-arkui-replace-nested-reusable-component-by-builder"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui--replace-reusable-by-builder
 format: md
 ---
 

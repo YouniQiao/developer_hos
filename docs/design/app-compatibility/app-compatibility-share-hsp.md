@@ -1,6 +1,7 @@
 ---
 title: "应用集成「集成态hsp」的兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/app-compatibility-share-hsp
 format: md
 ---
 

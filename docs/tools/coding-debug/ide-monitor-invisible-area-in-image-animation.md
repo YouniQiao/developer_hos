@@ -1,6 +1,7 @@
 ---
 title: "@performance/monitor-invisible-area-in-image-animation"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-monitor-invisible-area-in-image-animation
 format: md
 ---
 

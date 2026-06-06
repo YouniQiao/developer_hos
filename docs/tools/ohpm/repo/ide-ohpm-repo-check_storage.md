@@ -1,7 +1,7 @@
 ---
 title: "ohpm-repo check_storage"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-check_storage---
 
 
 # ohpm-repo check\_storage

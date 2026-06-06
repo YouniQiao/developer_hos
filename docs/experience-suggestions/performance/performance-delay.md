@@ -1,6 +1,6 @@
 ---
 title: "时延"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay
 ---
 
 import MergedTable from '@site/src/components/MergedTable';

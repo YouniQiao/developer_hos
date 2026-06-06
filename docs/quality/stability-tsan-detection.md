@@ -1,6 +1,6 @@
 ---
 title: "使用TSan检测线程问题"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-tsan-detection
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-tsan-detection
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

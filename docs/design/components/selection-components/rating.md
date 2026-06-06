@@ -1,7 +1,7 @@
 ---
 title: 评分条
 sidebar_label: 评分条
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/rating-0000001929853906
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/rating-0000001929853906
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "案例：应用冷启动首帧完成时延问题分析"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-profiler-launch-case
 format: md
 ---
 

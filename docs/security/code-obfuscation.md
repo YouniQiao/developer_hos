@@ -1,6 +1,6 @@
 ---
 title: "应用代码混淆"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-code-ob
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-code-ob
 format: md
 ---
 

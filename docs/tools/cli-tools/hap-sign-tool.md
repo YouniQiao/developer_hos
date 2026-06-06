@@ -2,7 +2,7 @@
 displayed_sidebar: cliToolsSidebar
 title: HAP签名工具（hap-sign-tool）
 sidebar_position: 30
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/hap-sign-tool
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/hap-sign-tool
 format: md
 ---
 

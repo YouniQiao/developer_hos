@@ -1,6 +1,6 @@
 ---
 title: "跨线程序列化耗时问题分析"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-threads-serialization-timeout-analysis
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-threads-serialization-timeout-analysis
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

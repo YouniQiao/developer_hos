@@ -1,6 +1,6 @@
 ---
 title: "Media Recording C"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-recording-c---
 
 import SourceLink from '@site/src/components/SourceLink';
 

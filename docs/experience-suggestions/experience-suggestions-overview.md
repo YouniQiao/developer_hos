@@ -1,6 +1,6 @@
 ---
 title: "体验建议概述"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-overview
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-overview
 format: md
 ---
 

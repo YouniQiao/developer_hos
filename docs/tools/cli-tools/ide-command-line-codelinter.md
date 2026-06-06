@@ -1,6 +1,7 @@
 ---
 title: "代码检查工具（codelinter）"
 displayed_sidebar: cliToolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-command-line-codelinter
 format: md
 ---
 

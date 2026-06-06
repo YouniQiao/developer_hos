@@ -1,6 +1,6 @@
 ---
 title: "分析ArkTS/JS内存"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-arkts-js-memory-analysis
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-arkts-js-memory-analysis
 format: md
 ---
 

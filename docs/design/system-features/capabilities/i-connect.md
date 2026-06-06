@@ -1,7 +1,7 @@
 ---
 title: 靠近发现
 sidebar_label: 靠近发现
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/i-connect-0000002354482789
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/i-connect-0000002354482789
 format: md
 ---
 

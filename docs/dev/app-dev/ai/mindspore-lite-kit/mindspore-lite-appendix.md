@@ -1,6 +1,6 @@
 ---
 title: "Mindspore Lite Appendix"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-appendix---
 
 import SourceLink from '@site/src/components/SourceLink';
 

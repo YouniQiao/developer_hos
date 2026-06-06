@@ -1,7 +1,7 @@
 ---
 title: 交互事件归一
 sidebar_label: 交互事件归一
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-interaction-events-0000001795531217
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-interaction-events-0000001795531217
 format: md
 ---
 

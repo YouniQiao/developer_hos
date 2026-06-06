@@ -1,7 +1,7 @@
 ---
 title: 智慧屏
 sidebar_label: 智慧屏
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/vision-0000002321377950
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/vision-0000002321377950
 format: md
 ---
 

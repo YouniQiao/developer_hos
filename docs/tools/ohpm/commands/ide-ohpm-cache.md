@@ -1,6 +1,7 @@
 ---
 title: "ohpm cache clean"
 displayed_sidebar: ohpmSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-cache
 format: md
 ---
 

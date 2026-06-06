@@ -1,6 +1,6 @@
 ---
 title: "Camera Rotation Native"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-native---
 
 import SourceLink from '@site/src/components/SourceLink';
 

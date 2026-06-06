@@ -1,7 +1,7 @@
 ---
 title: 文本时钟
 sidebar_label: 文本时钟
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textclock-0000001929656652
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textclock-0000001929656652
 format: md
 ---
 

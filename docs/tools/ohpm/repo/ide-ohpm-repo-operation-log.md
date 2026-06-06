@@ -1,7 +1,7 @@
 ---
 title: "操作日志"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-operation-log---
 
 
 # 操作日志

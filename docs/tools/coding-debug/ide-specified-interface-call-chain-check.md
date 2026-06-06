@@ -1,6 +1,7 @@
 ---
 title: "@security/specified-interface-call-chain-check"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-specified-interface-call-chain-check
 format: md
 ---
 

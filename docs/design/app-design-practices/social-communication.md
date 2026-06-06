@@ -1,7 +1,7 @@
 ---
 title: 社交通讯类
 sidebar_label: 社交通讯类
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples2-0000001793536901
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples2-0000001793536901
 format: md
 ---
 

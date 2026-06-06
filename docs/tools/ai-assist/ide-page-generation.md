@@ -1,6 +1,7 @@
 ---
 title: "页面生成"
 displayed_sidebar: aiAssistSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-page-generation
 format: md
 ---
 

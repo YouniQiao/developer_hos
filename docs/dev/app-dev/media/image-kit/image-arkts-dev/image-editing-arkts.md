@@ -1,6 +1,6 @@
 ---
 title: "Image Editing Arkts"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-editing-arkts---
 
 import SourceLink from '@site/src/components/SourceLink';
 

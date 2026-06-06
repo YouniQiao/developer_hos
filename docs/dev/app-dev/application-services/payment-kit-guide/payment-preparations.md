@@ -1,6 +1,6 @@
 ---
 title: "Payment Preparations"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-preparations---
 
 import SourceLink from '@site/src/components/SourceLink';
 

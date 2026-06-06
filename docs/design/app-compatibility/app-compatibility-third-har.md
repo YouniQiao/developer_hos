@@ -1,6 +1,7 @@
 ---
 title: "应用集成三方库（har包）的兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/app-compatibility-third-har
 format: md
 ---
 

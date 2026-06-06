@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/no-for-in-array"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-for-in-array
 format: md
 ---
 

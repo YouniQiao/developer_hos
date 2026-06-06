@@ -1,7 +1,7 @@
 ---
 title: "API兼容性保护和告警屏蔽"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-compatibility-apis-compatibility---
 
 
 # API兼容性保护和告警屏蔽

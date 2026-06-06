@@ -1,6 +1,6 @@
 ---
 title: "崩溃监测实践"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-crash-monitor-practice
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-crash-monitor-practice
 format: md
 ---
 

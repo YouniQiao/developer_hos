@@ -1,7 +1,7 @@
 ---
 title: 间隔参数
 sidebar_label: 间隔参数
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/spacing-parameters-0000002202912577
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/spacing-parameters-0000002202912577
 format: md
 ---
 

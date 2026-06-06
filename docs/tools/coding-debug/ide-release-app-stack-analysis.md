@@ -1,6 +1,7 @@
 ---
 title: "堆栈轨迹分析"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-release-app-stack-analysis
 format: md
 ---
 

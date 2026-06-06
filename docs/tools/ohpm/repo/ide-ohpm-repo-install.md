@@ -1,7 +1,7 @@
 ---
 title: "ohpm-repo install"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-install---
 
 
 # ohpm-repo install

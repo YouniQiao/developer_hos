@@ -1,7 +1,7 @@
 ---
 title: "1.1.0升级至2.X.X/5.X.X版本"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-upgrade-110_to_2xx---
 
 
 # 1.1.0升级至2.X.X/5.X.X版本

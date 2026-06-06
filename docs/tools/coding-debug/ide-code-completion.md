@@ -1,6 +1,7 @@
 ---
 title: "代码生成/补全"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-code-completion
 format: md
 ---
 

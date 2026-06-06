@@ -1,6 +1,6 @@
 ---
 title: "Intents Local Rec Dp Self Validation"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-dp-self-validation---
 
 import SourceLink from '@site/src/components/SourceLink';
 

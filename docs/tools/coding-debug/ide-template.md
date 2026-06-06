@@ -1,7 +1,7 @@
 ---
 title: "工程模板介绍"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-template---
 
 
 # 工程模板介绍

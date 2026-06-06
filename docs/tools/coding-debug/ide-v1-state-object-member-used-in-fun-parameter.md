@@ -1,6 +1,7 @@
 ---
 title: "@correctness/v1-state-object-member-used-in-function-parameter-check"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-v1-state-object-member-used-in-fun-parameter
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "规则（Rules）配置"
 displayed_sidebar: aiAssistSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-agent-rules
 format: md
 ---
 

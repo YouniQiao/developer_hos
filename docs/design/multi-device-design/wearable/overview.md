@@ -1,7 +1,7 @@
 ---
 title: 概述
 sidebar_label: 概述
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/wearable-overview-0000002197410498
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/wearable-overview-0000002197410498
 format: md
 ---
 

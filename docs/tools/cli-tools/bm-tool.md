@@ -1,6 +1,7 @@
 ---
 title: "bm工具"
 displayed_sidebar: cliToolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/bm-tool
 format: md
 ---
 

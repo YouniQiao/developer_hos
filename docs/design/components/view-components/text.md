@@ -1,7 +1,7 @@
 ---
 title: 文本
 sidebar_label: 文本
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/text-0000001956975261
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/text-0000001956975261
 format: md
 ---
 

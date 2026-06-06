@@ -1,7 +1,7 @@
 ---
 title: "系统设置"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-system-settings---
 
 
 # 系统设置

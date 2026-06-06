@@ -1,6 +1,6 @@
 ---
 title: "协议规格"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/protocol-specification
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/protocol-specification
 format: md
 ---
 

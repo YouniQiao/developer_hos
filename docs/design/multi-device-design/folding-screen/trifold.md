@@ -1,7 +1,7 @@
 ---
 title: 三折叠
 sidebar_label: 三折叠
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/trifold-0000002352915021
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/trifold-0000002352915021
 format: md
 ---
 

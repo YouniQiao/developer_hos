@@ -1,7 +1,7 @@
 ---
 title: "下载与安装DevEco Studio"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-software-install---
 
 
 # 下载与安装DevEco Studio

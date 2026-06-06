@@ -1,6 +1,7 @@
 ---
 title: "应用升级targetSDKVersion兼容低版本指导"
 displayed_sidebar: appCompatibilitySidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/app-compatibility-upgrade
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "@performance/hp-arkui-remove-redundant-nest-container"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui-no-redundant-nest
 format: md
 ---
 

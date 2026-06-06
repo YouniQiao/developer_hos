@@ -1,6 +1,7 @@
 ---
 title: "编译构建常见问题"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-faqs
 format: md
 ---
 

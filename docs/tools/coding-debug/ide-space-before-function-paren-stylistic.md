@@ -1,6 +1,7 @@
 ---
 title: "@hw-stylistic/space-before-function-paren"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-space-before-function-paren-stylistic
 format: md
 ---
 

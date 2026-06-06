@@ -1,7 +1,7 @@
 ---
 title: 安全可靠
 sidebar_label: 安全可靠
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900584166
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900584166
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "任务可视化与执行"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-task-visualization
 format: md
 ---
 

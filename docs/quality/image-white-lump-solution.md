@@ -1,6 +1,6 @@
 ---
 title: "Image白块解决方案"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-image-white-lump-solution
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-image-white-lump-solution
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

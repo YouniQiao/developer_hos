@@ -1,6 +1,7 @@
 ---
 title: "上架预检"
 displayed_sidebar: devecoTestingSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/publish-testing
 format: md
 ---
 

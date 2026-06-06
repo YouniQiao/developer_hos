@@ -1,6 +1,6 @@
 ---
 title: "耗时操作减少"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reduce-time-consuming
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reduce-time-consuming
 format: md
 ---
 

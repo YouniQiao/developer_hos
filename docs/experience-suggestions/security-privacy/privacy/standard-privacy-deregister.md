@@ -1,6 +1,6 @@
 ---
 title: "隐私保护能力"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-deregister
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-deregister
 format: md
 ---
 

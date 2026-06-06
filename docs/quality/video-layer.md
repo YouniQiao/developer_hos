@@ -1,6 +1,6 @@
 ---
 title: "视频场景图层低功耗建议"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-layer
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-layer
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

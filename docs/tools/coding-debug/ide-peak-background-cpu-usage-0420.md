@@ -1,6 +1,7 @@
 ---
 title: "后台CPU占用峰值"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-peak-background-cpu-usage-0420
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "查看AppFreeze（应用冻屏）日志"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-faultlog-appfreeze
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "界面布局"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-profiler-layout
 format: md
 ---
 

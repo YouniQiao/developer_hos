@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/explicit-function-return-type"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_explicit-function-return-type
 format: md
 ---
 

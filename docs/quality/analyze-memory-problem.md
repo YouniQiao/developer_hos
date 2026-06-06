@@ -1,6 +1,6 @@
 ---
 title: "分析内存占用问题"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-analyze-memory-problem
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-analyze-memory-problem
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "anm工具"
 displayed_sidebar: cliToolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/anm-tool
 format: md
 ---
 

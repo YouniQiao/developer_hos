@@ -1,6 +1,7 @@
 ---
 title: "点击操作完成快"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-quick-completion-for-click-0404
 format: md
 ---
 

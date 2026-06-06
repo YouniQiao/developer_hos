@@ -1,6 +1,7 @@
 ---
 title: "@performance/hp-arkui-no-func-as-arg-for-reusable-component"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui-no-func-as-arg-for-reusable-component
 format: md
 ---
 

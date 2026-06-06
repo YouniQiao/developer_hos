@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/no-non-null-asserted-optional-chain"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-non-null-asserted-optional-chain
 format: md
 ---
 

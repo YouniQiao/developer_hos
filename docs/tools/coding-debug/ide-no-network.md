@@ -1,7 +1,7 @@
 ---
 title: "离线环境配置指导"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-no-network---
 
 
 # 离线环境配置指导

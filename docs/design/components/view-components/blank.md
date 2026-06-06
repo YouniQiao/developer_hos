@@ -1,7 +1,7 @@
 ---
 title: 空白
 sidebar_label: 空白
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/blank-0000001956815485
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/blank-0000001956815485
 format: md
 ---
 

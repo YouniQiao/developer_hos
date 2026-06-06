@@ -1,7 +1,7 @@
 ---
 title: 汽车类
 sidebar_label: 汽车类
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/cars-0000001930233436
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/cars-0000001930233436
 format: md
 ---
 

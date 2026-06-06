@@ -1,6 +1,7 @@
 ---
 title: "@cross-device-app-dev/color-contrast"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_color-contrast
 format: md
 ---
 

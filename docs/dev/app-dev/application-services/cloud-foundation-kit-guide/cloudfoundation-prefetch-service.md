@@ -1,6 +1,6 @@
 ---
 title: "Cloudfoundation Prefetch Service"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-service---
 
 import SourceLink from '@site/src/components/SourceLink';
 

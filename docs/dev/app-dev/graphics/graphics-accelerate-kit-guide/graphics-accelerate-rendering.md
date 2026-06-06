@@ -1,6 +1,6 @@
 ---
 title: "Graphics Accelerate Rendering"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-rendering---
 
 import SourceLink from '@site/src/components/SourceLink';
 

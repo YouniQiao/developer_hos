@@ -1,6 +1,6 @@
 ---
 title: "Graphics Accelerate Assetdownload"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload---
 
 import SourceLink from '@site/src/components/SourceLink';
 

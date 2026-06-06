@@ -1,6 +1,6 @@
 ---
 title: "通用规格"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/general-specifications
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/general-specifications
 format: md
 ---
 

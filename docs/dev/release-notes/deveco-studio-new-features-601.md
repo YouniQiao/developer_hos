@@ -1,7 +1,7 @@
 ---
 title: "DevEco Studio 6.0.1(21)"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-studio-new-features-601---
 
 
 # DevEco Studio 版本说明 — 6.0.1(21)

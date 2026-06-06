@@ -1,7 +1,7 @@
 ---
 title: 即时反馈
 sidebar_label: 即时反馈
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toast-0000001929656648
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toast-0000001929656648
 format: md
 ---
 

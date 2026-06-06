@@ -1,6 +1,6 @@
 ---
 title: "不可见组件低功耗建议"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/low-power-consumption-suggestions
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/low-power-consumption-suggestions
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

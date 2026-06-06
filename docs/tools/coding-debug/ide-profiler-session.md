@@ -1,6 +1,7 @@
 ---
 title: "会话区"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-profiler-session
 format: md
 ---
 

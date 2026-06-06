@@ -1,6 +1,7 @@
 ---
 title: "异常堆栈解析原理"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-exception-stack-parsing-principle
 format: md
 ---
 

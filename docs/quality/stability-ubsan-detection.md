@@ -1,6 +1,6 @@
 ---
 title: "使用UBSan检测未定义行为"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ubsan-detection
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ubsan-detection
 format: md
 ---
 

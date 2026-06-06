@@ -1,6 +1,6 @@
 ---
 title: "应用后台运行"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-back-task-implement
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-back-task-implement
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

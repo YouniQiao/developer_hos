@@ -1,7 +1,7 @@
 ---
 title: "ohpm-repo remove_instance"
 format: md
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-remove_instance---
 
 
 # ohpm-repo remove\_instance

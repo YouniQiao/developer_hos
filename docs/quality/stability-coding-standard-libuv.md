@@ -1,6 +1,6 @@
 ---
 title: "libuv使用规范及案例"
-source_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-libuv
+original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-libuv
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

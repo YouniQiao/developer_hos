@@ -1,6 +1,7 @@
 ---
 title: "使用本地真机运行应用"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-run-device
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "案例：ArkTS内存泄漏分析"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-arkts-memory-leak-analysis
 format: md
 ---
 

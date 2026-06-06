@@ -1,6 +1,6 @@
 ---
 title: "Push Preparations"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-preparations---
 
 import SourceLink from '@site/src/components/SourceLink';
 

@@ -1,7 +1,7 @@
 ---
 title: 游戏类
 sidebar_label: 游戏类
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/games-0000001930189974
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/games-0000001930189974
 format: md
 ---
 

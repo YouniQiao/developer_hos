@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/lines-between-class-members"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_lines-between-class-members
 format: md
 ---
 

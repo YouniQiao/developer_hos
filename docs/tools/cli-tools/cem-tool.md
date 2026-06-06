@@ -1,6 +1,7 @@
 ---
 title: "cem工具"
 displayed_sidebar: cliToolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/cem-tool
 format: md
 ---
 

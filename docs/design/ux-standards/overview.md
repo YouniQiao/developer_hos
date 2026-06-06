@@ -1,7 +1,7 @@
 ---
 title: 概述
 sidebar_label: 概述
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001760867048
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001760867048
 format: md
 ---
 

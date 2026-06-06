@@ -1,6 +1,7 @@
 ---
 title: "hvigor-config.json5文件"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-set-options
 format: md
 ---
 

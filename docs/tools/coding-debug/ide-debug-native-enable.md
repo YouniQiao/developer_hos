@@ -1,6 +1,7 @@
 ---
 title: "启动调试"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-debug-native-enable
 format: md
 ---
 

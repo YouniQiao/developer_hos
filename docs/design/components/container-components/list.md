@@ -1,7 +1,7 @@
 ---
 title: 列表
 sidebar_label: 列表
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/list-0000001929853910
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/list-0000001929853910
 format: md
 ---
 

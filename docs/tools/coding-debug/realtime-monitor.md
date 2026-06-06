@@ -1,6 +1,7 @@
 ---
 title: "性能问题定界：实时监控"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/realtime-monitor
 format: md
 ---
 

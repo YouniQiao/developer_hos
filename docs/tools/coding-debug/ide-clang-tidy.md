@@ -1,6 +1,7 @@
 ---
 title: "Clang-Tidy代码检查"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-clang-tidy
 format: md
 ---
 

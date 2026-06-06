@@ -1,6 +1,6 @@
 ---
 title: "Media Kit Dev Arkts"
----
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-dev-arkts---
 
 import SourceLink from '@site/src/components/SourceLink';
 

@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/no-unsafe-call"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-unsafe-call
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "签名安全"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-maintain
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-maintain
 format: md
 ---
 

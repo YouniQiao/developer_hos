@@ -1,6 +1,7 @@
 ---
 title: "@compatibility/api-compatibility-check"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-api-compatibility-check
 format: md
 ---
 

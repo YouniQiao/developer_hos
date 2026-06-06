@@ -1,7 +1,7 @@
 ---
 title: 文本框
 sidebar_label: 文本框
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textinput-0000001957012557
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/textinput-0000001957012557
 format: md
 ---
 

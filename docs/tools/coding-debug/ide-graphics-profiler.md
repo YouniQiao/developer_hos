@@ -1,6 +1,7 @@
 ---
 title: "GPU帧捕获工具：Graphics Profiler抓帧入口"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-graphics-profiler
 format: md
 ---
 

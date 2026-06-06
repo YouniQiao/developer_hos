@@ -1,7 +1,7 @@
 ---
 title: 按钮
 sidebar_label: 按钮
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-0000001929683228
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/button-0000001929683228
 format: md
 ---
 

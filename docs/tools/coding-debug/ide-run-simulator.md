@@ -1,6 +1,7 @@
 ---
 title: "使用仿真器运行轻量级穿戴应用"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-run-simulator
 format: md
 ---
 

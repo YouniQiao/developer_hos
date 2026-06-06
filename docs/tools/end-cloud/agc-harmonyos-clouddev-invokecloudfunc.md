@@ -2,6 +2,7 @@
 
 title: "在端侧调用云函数"
 displayed_sidebar: cloudDevSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-invokecloudfunc
 format: md
 ---
 

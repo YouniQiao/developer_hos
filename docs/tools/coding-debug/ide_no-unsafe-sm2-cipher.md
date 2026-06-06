@@ -1,6 +1,7 @@
 ---
 title: "@security/no-unsafe-sm2-cipher"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-unsafe-sm2-cipher
 format: md
 ---
 

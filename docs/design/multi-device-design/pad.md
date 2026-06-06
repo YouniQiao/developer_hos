@@ -1,7 +1,7 @@
 ---
 title: 平板
 sidebar_label: 平板
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/pad-0000001823654157
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/pad-0000001823654157
 format: md
 ---
 

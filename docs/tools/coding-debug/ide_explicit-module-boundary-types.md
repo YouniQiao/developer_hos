@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/explicit-module-boundary-types"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_explicit-module-boundary-types
 format: md
 ---
 

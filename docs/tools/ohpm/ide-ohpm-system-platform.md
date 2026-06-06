@@ -2,6 +2,7 @@
 
 title: "ohpm概述"
 displayed_sidebar: ohpmSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-system-platform
 format: md
 ---
 

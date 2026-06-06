@@ -1,6 +1,7 @@
 ---
 title: "体检概述"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-app-analyzer-overview
 format: md
 ---
 

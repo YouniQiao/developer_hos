@@ -1,6 +1,7 @@
 ---
 title: "兼容性告警屏蔽"
 displayed_sidebar: appCompatibilitySidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/compatibility-warning-suppress
 format: md
 ---
 

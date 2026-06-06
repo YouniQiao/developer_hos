@@ -1,6 +1,7 @@
 ---
 title: "@typescript-eslint/promise-function-async"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_promise-function-async
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "实用工具"
 displayed_sidebar: devecoTestingSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/tool
 format: md
 ---
 

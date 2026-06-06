@@ -1,6 +1,7 @@
 ---
 title: "使用预览器调试应用"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-previewer-debug
 format: md
 ---
 

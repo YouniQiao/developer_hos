@@ -1,7 +1,7 @@
 ---
 title: 标题栏
 sidebar_label: 标题栏
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/titlebar-0000001929628982
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/titlebar-0000001929628982
 format: md
 ---
 

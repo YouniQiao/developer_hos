@@ -1,7 +1,7 @@
 ---
 title: 手机
 sidebar_label: 手机
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/phone-0000001776694632
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/phone-0000001776694632
 format: md
 ---
 

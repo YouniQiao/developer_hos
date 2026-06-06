@@ -1,6 +1,7 @@
 ---
 title: "ohpm dependency-check错误码"
 displayed_sidebar: ohpmSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-dependency-check-errorcode
 format: md
 ---
 

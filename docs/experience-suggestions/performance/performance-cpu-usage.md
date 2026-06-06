@@ -1,6 +1,6 @@
 ---
 title: "CPU占用"
-source_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-cpu-usage
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-cpu-usage
 format: md
 ---
 

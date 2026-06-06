@@ -1,7 +1,7 @@
 ---
 title: 核心操作栏
 sidebar_label: 核心操作栏
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component_actionbar-0000002306891560
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component_actionbar-0000002306891560
 format: md
 ---
 

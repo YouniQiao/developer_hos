@@ -1,6 +1,7 @@
 ---
 title: "自定义屏幕配置"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-emulator-customize-screen-configuration
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "UI组件内存：ComMemory分析"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-commemory
 format: md
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "模拟器访问网络"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-emulator-access-network
 format: md
 ---
 

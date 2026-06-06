@@ -1,7 +1,7 @@
 ---
 title: 应用架构
 sidebar_label: 应用架构
-source_url: https://developer.huawei.com/consumer/cn/doc/design-guides/application-architecture-0000002202799801
+original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/application-architecture-0000002202799801
 format: md
 ---
 

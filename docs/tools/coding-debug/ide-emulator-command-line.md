@@ -1,6 +1,7 @@
 ---
 title: "通过命令行使用模拟器"
 displayed_sidebar: toolsSidebar
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-emulator-command-line
 format: md
 ---
 
