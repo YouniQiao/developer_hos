@@ -146,6 +146,11 @@ jobs:
 
       - name: Deploy to Netlify
         run: |
+          HOUR=$(TZ='Asia/Shanghai' date +%H)
+          if [ "$HOUR" -lt 1 ] || [ "$HOUR" -ge 6 ]; then
+            echo "⏭️  当前北京时间 $(TZ='Asia/Shanghai' date +%H:%M)，不在 01:00~06:00 部署窗口，跳过 Netlify 部署"
+            exit 0
+          fi
           if [ ! -f build/.build-success ]; then
             echo "❌ 构建产物不完整，跳过部署"
             exit 1
