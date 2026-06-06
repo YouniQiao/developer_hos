@@ -3,8 +3,6 @@ title: "懒加载优化性能"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lazyforeach-optimization
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 懒加载优化性能
 
 ## 概述
@@ -74,7 +72,7 @@ List() {
   // ...
 }.cachedCount(3)
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/pages/Index.ets#L12-L14" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/pages/Index.ets#L12-L14">Index.ets</a></div>
 
 此外，HarmonyOS应用框架提供了组件复用能力，可以结合LazyForEach一起使用，进一步优化长列表的性能。组件复用会把组件树上将要移除的组件进行回收，回收的组件会进入到一个回收缓存区。后续创建新组件节点时，会复用缓存区中的节点，节约组件重新创建的时间。关于组件复用的详细原理可以参考[组件复用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-reuse)。针对长列表加载的性能优化，可以参考[优化长列表加载慢丢帧问题](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list)。
 
@@ -115,7 +113,7 @@ List() {
      return item;
    })
    ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/pages/Index.ets#L18-L31" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/pages/Index.ets#L18-L31">Index.ets</a></div>
 2. 通过Profiler调优工具抓取Trace，可以判断子组件创建的次数。如下图所示，在该帧中出现大量的BuildLazyItem切片，每一次BuildLazyItem对应一次子组件的创建，对比数量可知LazyForEach按需加载失效。关于调优的内容可参考[性能分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-optimization-tool-practice)。
 
    ![](./img/cdb4e6d2.png "点击放大")
@@ -163,7 +161,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="segment1.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/segment/segment1.ets#L48-L80" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/segment/segment1.ets#L48-L80">segment1.ets</a></div>
 
 ### Scroll嵌套List导致按需加载失效
 
@@ -213,7 +211,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="segment2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/segment/segment2.ets#L48-L86" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/segment/segment2.ets#L48-L86">segment2.ets</a></div>
 
 ## 示例代码
 

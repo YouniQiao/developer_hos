@@ -3,8 +3,6 @@ title: "内存泄漏定制能力开放使用指导"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-malloc-dispatch-table
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 内存泄漏定制能力开放使用指导
 
 ## 概述
@@ -49,7 +47,7 @@ MallocDispatchTable简称内存分配表，提供对HarmonyOS [libc标准库](ht
    #include "hidebug/hidebug.h"
    #include "hidebug/hidebug_type.h"
    ```
-<SourceLink name="test_malloc_dispatch.cpp" url="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L29-L30" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L29-L30">test_malloc_dispatch.cpp</a></div>
 
    开发首先需要引用MallocDispatchTable相关的头文件。
 2. **创建自定义mmap和munmap方法。**
@@ -70,7 +68,7 @@ MallocDispatchTable简称内存分配表，提供对HarmonyOS [libc标准库](ht
        return original->munmap(addr, len);
    }
    ```
-<SourceLink name="test_malloc_dispatch.cpp" url="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L58-L71" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L58-L71">test_malloc_dispatch.cpp</a></div>
 
    自定义的函数中将内存地址（函数参数addr）以及内存区间大小（函数参数len）通过日志打印。
 3. **创建一个[HiDebug\_MallocDispatch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-mallocdispatch)类型的分配表。**
@@ -85,7 +83,7 @@ MallocDispatchTable简称内存分配表，提供对HarmonyOS [libc标准库](ht
    current->mmap = MyMmap;
    current->munmap = MyMunmap;
    ```
-<SourceLink name="test_malloc_dispatch.cpp" url="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L91-L98" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L91-L98">test_malloc_dispatch.cpp</a></div>
 
    创建一个HiDebug\_MallocDispatch结构体current，通过[OH\_HiDebug\_GetDefaultMallocDispatchTable()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-h#oh_hidebug_getdefaultmallocdispatchtable)分配其占用的堆内存。修改结构体中的函数指针，让其指向之前定义的MyMmap和MyMunmap函数。
 4. **启用自定义 MallocDispatchTable。**
@@ -93,7 +91,7 @@ MallocDispatchTable简称内存分配表，提供对HarmonyOS [libc标准库](ht
    ```
    OH_HiDebug_SetMallocDispatchTable(current);
    ```
-<SourceLink name="test_malloc_dispatch.cpp" url="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L105-L105" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L105-L105">test_malloc_dispatch.cpp</a></div>
 
    将[libc标准库](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/musl)中使用的MallocDispatchTable替换成自定义的分配表。
 5. **调用libc标准库中的mmap函数。**
@@ -108,7 +106,7 @@ MallocDispatchTable简称内存分配表，提供对HarmonyOS [libc标准库](ht
    }
    munmap(mapPtr, bufferSize);
    ```
-<SourceLink name="test_malloc_dispatch.cpp" url="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L143-L150" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L143-L150">test_malloc_dispatch.cpp</a></div>
 
    在执行上述基础库mmap函数时，会自动重定向到先前定义的MyMmap函数，完成业务自定义功能。
 6. **停用自定义 MallocDispatchTable。**
@@ -120,7 +118,7 @@ MallocDispatchTable简称内存分配表，提供对HarmonyOS [libc标准库](ht
    //reset MallocDispatchTable strut that libc uses.
    OH_HiDebug_RestoreMallocDispatchTable();
    ```
-<SourceLink name="test_malloc_dispatch.cpp" url="https://gitcode.com/harmonyos_samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L113-L117" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/guide-snippets/blob/master/PerformanceAnalysisKit/HiDebugTool/entry/src/main/cpp/test_malloc_dispatch.cpp#L113-L117">test_malloc_dispatch.cpp</a></div>
 
    调用[OH\_HiDebug\_RestoreMallocDispatchTable()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-h#oh_hidebug_restoremallocdispatchtable)接口可以恢复标准库默认的MallocDispatchTable。
 7. **CMakeLists.txt文件中添加如下依赖项。**

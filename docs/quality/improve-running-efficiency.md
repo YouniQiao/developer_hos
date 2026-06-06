@@ -3,8 +3,6 @@ title: "运行效率提高"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-running-efficiency
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 运行效率提高
 
 在开发过程中，优化影响性能的代码片段，以提高运行效率。以下实践总结了一些高性能的写法和建议：
@@ -76,7 +74,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index2.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/entry/src/main/ets/pages/Index2.ets#L2-L31" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/entry/src/main/ets/pages/Index2.ets#L2-L31">Index2.ets</a></div>
 
 ```
 // library\src\main\ets\Animals.ets
@@ -92,7 +90,7 @@ export * from './TypeNum';
 
 hilog.info(0x0000, 'testTag', 'library Animals.ets execute.');
 ```
-<SourceLink name="Animals.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/Animals.ets#L2-L13" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/Animals.ets#L2-L13">Animals.ets</a></div>
 
 ```ts
 // library\src\main\ets\Birds.ets
@@ -102,7 +100,7 @@ export const birds: string = 'Butterflies';
 
 hilog.info(0x0000, 'testTag', 'library Birds.ets execute.');
 ```
-<SourceLink name="Birds.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/Birds.ets#L2-L7" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/Birds.ets#L2-L7">Birds.ets</a></div>
 
 ```ts
 // library\src\main\ets\Fish.ets
@@ -112,7 +110,7 @@ export const fish: string = 'carp';
 
 hilog.info(0x0000, 'testTag', 'library Fish.ets execute.');
 ```
-<SourceLink name="Fish.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/Fish.ets#L2-L7" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/Fish.ets#L2-L7">Fish.ets</a></div>
 
 ```ts
 // library\src\main\ets\Mammals.ets
@@ -122,7 +120,7 @@ export const mammals: string = 'cat';
 
 hilog.info(0x0000, 'testTag', 'library Mammals.ets execute.');
 ```
-<SourceLink name="Mammals.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/Mammals.ets#L2-L7" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/Mammals.ets#L2-L7">Mammals.ets</a></div>
 
 ```ts
 // library\src\main\ets\TypeNum.ets
@@ -132,7 +130,7 @@ export const typeNum: number = 4;
 
 hilog.info(0x0000, 'testTag', 'library TypeNum.ets execute.');
 ```
-<SourceLink name="TypeNum.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/TypeNum.ets#L2-L7" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/src/main/ets/TypeNum.ets#L2-L7">TypeNum.ets</a></div>
 
 ```ts
 // library\Index.ets
@@ -140,7 +138,7 @@ export { MainPage } from './src/main/ets/components/MainPage';
 
 export * from "./src/main/ets/Animals";
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/Index.ets#L2-L6" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/library/Index.ets#L2-L6">Index.ets</a></div>
 
 oh-package.json如下增加模块依赖library包：
 
@@ -150,7 +148,7 @@ oh-package.json如下增加模块依赖library包：
   "library": "file:../library"
 }
 ```
-<SourceLink name="oh-package.json5" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/entry/oh-package.json5#L9-L12" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/entry/oh-package.json5#L9-L12">oh-package.json5</a></div>
 
 ![](./img/4244b80b.png "点击放大")
 
@@ -190,6 +188,6 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/entry/src/main/ets/pages/Index.ets#L2-L31" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/ExpandImportPath/entry/src/main/ets/pages/Index.ets#L2-L31">Index.ets</a></div>
 
 ![](./img/64bce47f.png "点击放大")

@@ -4,8 +4,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-s
 format: 'md'
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 易错API的使用规范
 
 ## 视效API
@@ -76,7 +74,7 @@ let playStateCallback: (state: avSession.AVPlaybackState) => void = (state: avSe
 sessionController.on('playbackStateChange', 'all', this.playStateCallback);
 sessionController.off('playbackStateChange', this.playStateCallback);
 ```
-<SourceLink name="playStateCallback.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/playStateCallback.ets#L37-L40" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/playStateCallback.ets#L37-L40">playStateCallback.ets</a></div>
 
 2、打印日志过多问题
 
@@ -131,7 +129,7 @@ this.castController?.prepare(playItem, () => {
   });
 });
 ```
-<SourceLink name="playStateCallback.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/playStateCallback.ets#L65-L71" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/playStateCallback.ets#L65-L71">playStateCallback.ets</a></div>
 
 4、正确设置播放状态和进度
 
@@ -175,7 +173,7 @@ this.session?.on('pause', async () => {
   await this.session?.setAVPlaybackState(this.currentState);
 });
 ```
-<SourceLink name="playStateCallback.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/playStateCallback.ets#L77-L88" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/playStateCallback.ets#L77-L88">playStateCallback.ets</a></div>
 
 ### 相机
 
@@ -250,7 +248,7 @@ await cameraInput.open();
 session.beginConfig();
 session.addInput(cameraInput);
 ```
-<SourceLink name="camera.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/camera.ets#L33-L36" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/camera.ets#L33-L36">camera.ets</a></div>
 
 3、CameraSession中，addOutput前需要先addInput。
 
@@ -288,7 +286,7 @@ session.beginConfig();
 session.addOutput(previewOutput);
 session.addInput(cameraInput);
 ```
-<SourceLink name="camera.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/camera.ets#L47-L52" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/camera.ets#L47-L52">camera.ets</a></div>
 
 **【最佳实践】**
 
@@ -300,7 +298,7 @@ session.beginConfig();
 session.addInput(cameraInput);
 session.addOutput(previewOutput);
 ```
-<SourceLink name="camera.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/camera.ets#L63-L69" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/camera.ets#L63-L69">camera.ets</a></div>
 
 4、Session增减Input和Output的接口调用流程必须在beginConfig和commitConfig接口调用之间。
 
@@ -392,7 +390,7 @@ async function onBackground(): Promise<void> {
   await cameraSession.release();
 }
 ```
-<SourceLink name="camera.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/camera.ets#L78-L82" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/camera.ets#L78-L82">camera.ets</a></div>
 
 ### 音频
 
@@ -619,7 +617,7 @@ async fetchMeta(): Promise<void> {
   }
 }
 ```
-<SourceLink name="AVImageGenerator.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/AVImageGenerator.ets#L35-L112" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/AVImageGenerator.ets#L35-L112">AVImageGenerator.ets</a></div>
 
 ## ArkUI相关API
 
@@ -884,7 +882,7 @@ struct StyleExample {
   }
 }
 ```
-<SourceLink name="StyleExample.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/StyleExample.ets#L17-L37" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/StyleExample.ets#L17-L37">StyleExample.ets</a></div>
 
 **【最佳实践】**
 
@@ -1130,7 +1128,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="animate1.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/animate1.ets#L17-L61" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/animate1.ets#L17-L61">animate1.ets</a></div>
 
 **【最佳实践】**
 
@@ -1183,7 +1181,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="animate2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/animate2.ets#L17-L59" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/ets/pages/animate2.ets#L17-L59">animate2.ets</a></div>
 
 方式2：给if/else下要删除的组件添加transition(TransitionEffect.IDENTITY)属性，避免系统添加默认转场。
 
@@ -1702,7 +1700,7 @@ void callbackTest(CallbackContext* context)
     );
 }
 ```
-<SourceLink name="callbackTest.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/cpp/callbackTest.cpp#L29-L64" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/cpp/callbackTest.cpp#L29-L64">callbackTest.cpp</a></div>
 
 4、【multi-thread】开发者使用napi接口时，跨线程使用napi\_env或napi\_value引发多线程安全问题
 
@@ -1894,7 +1892,7 @@ static napi_value Test2(napi_env env, napi_callback_info info) {
     return value1;
 }
 ```
-<SourceLink name="callbackTest.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/cpp/callbackTest.cpp#L68-L88" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/cpp/callbackTest.cpp#L68-L88">callbackTest.cpp</a></div>
 
 ![](./img/eef9f180.png)
 
@@ -1973,7 +1971,7 @@ static napi_value Test4(napi_env env, napi_callback_info info) {
     return result;
 }
 ```
-<SourceLink name="callbackTest.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/cpp/callbackTest.cpp#L92-L105" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ApiUsingStandards/entry/src/main/cpp/callbackTest.cpp#L92-L105">callbackTest.cpp</a></div>
 
 8、【use after free】开发者保存env指针，env释放后开发者继续使用，产生UAF导致崩溃
 

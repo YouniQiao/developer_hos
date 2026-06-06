@@ -3,7 +3,6 @@ title: "Web加载性能优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-develop-optimization
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # Web加载性能优化
 
@@ -108,7 +107,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/Index.ets#L6-L26" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/Index.ets#L6-L26">Index.ets</a></div>
 
 ```
 // Second.ets
@@ -152,7 +151,7 @@ export struct Second {
   }
 }
 ```
-<SourceLink name="Second.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/view/Second.ets#L2-L41" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/view/Second.ets#L2-L41">Second.ets</a></div>
 
 点击“加载测试页面”按钮，页面加载完成耗时82ms，具体如下图所示：
 
@@ -286,7 +285,7 @@ export struct Second {
      return NodeMap.get(url);
    }
    ```
-<SourceLink name="CreateNodeController.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CreateNodeController.ets#L2-L122" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CreateNodeController.ets#L2-L122">CreateNodeController.ets</a></div>
 2. 创建载体，并创建ArkWeb组件，加载一个blank页面。
 
    ```
@@ -304,7 +303,7 @@ export struct Second {
      }
    }
    ```
-<SourceLink name="EntryAbility.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/entryability/EntryAbility.ets#L2-L14" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/entryability/EntryAbility.ets#L2-L14">EntryAbility.ets</a></div>
 3. 创建需要加载的ArkWeb组件。
 
    首页：
@@ -332,7 +331,7 @@ export struct Second {
      }
    }
    ```
-<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/Index.ets#L6-L26" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/Index.ets#L6-L26">Index.ets</a></div>
 
    跳转测试页面：
 
@@ -373,7 +372,7 @@ export struct Second {
      }
    }
    ```
-<SourceLink name="Second.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/Second.ets#L2-L36" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/Second.ets#L2-L36">Second.ets</a></div>
 
 点击“加载测试页面”按钮，页面加载完成耗时44ms，具体如图所示：
 
@@ -436,7 +435,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
-<SourceLink name="CaseOne.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CaseOne.ets#L2-L20" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CaseOne.ets#L2-L20">CaseOne.ets</a></div>
 
 ![](./img/6fc3c7c4.png)
 
@@ -469,7 +468,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="CaseTwo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CaseTwo.ets#L2-L24" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CaseTwo.ets#L2-L24">CaseTwo.ets</a></div>
 
 案例三：当前页面显示完成后，可以在onPageEnd()中预连接下一个页面。
 
@@ -492,7 +491,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="CaseThree.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CaseThree.ets#L2-L18" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CaseThree.ets#L2-L18">CaseThree.ets</a></div>
 
 ### 预下载优化
 
@@ -531,7 +530,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="CaseFour.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CaseFour.ets#L2-L17" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CaseFour.ets#L2-L17">CaseFour.ets</a></div>
 
 ![](./img/7d38b84a.png)
 
@@ -580,7 +579,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
-<SourceLink name="CreateCarrier.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CreateCarrier.ets#L2-L17" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CreateCarrier.ets#L2-L17">CreateCarrier.ets</a></div>
 
 创建NodeContainer和对应的NodeController，渲染后台ArkWeb组件。
 
@@ -706,7 +705,7 @@ export const getNWeb = (url : string) : MyNodeController | undefined => {
   return NodeMap.get(url);
 }
 ```
-<SourceLink name="CreateNodeController.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CreateNodeController.ets#L2-L122" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/CreateNodeController.ets#L2-L122">CreateNodeController.ets</a></div>
 
 通过NodeContainer使用已经预渲染的页面。
 
@@ -733,7 +732,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="UseNodeController.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/UseNodeController.ets#L2-L22" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/UseNodeController.ets#L2-L22">UseNodeController.ets</a></div>
 
 ### 预取POST请求优化
 
@@ -780,7 +779,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="WebComponent.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/WebComponent.ets#L2-L14" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/WebComponent.ets#L2-L14">WebComponent.ets</a></div>
 
 【推荐用法】
 
@@ -820,7 +819,7 @@ struct WebComponent {
      // ...
    }
    ```
-<SourceLink name="PrefetchResource.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PrefetchResource.ets#L2-L31" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PrefetchResource.ets#L2-L31">PrefetchResource.ets</a></div>
 2. 通过Web组件加载包含POST请求的页面。
 
    ```
@@ -842,7 +841,7 @@ struct WebComponent {
      }
    }
    ```
-<SourceLink name="ClearResourceCache.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/ClearResourceCache.ets#L2-L18" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/ClearResourceCache.ets#L2-L18">ClearResourceCache.ets</a></div>
 3. 在页面加载的JavaScript文件中，发起POST请求，并将请求响应头ArkWebPostCacheKey设置为预取时的cachekey值'KeyX'。
 
    ```
@@ -862,7 +861,7 @@ struct WebComponent {
    formData.append('b', 'y');
    xhr.send(formData);
    ```
-<SourceLink name="HttpRequestPost.js" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/utils/HttpRequestPost.js#L2-L16" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/utils/HttpRequestPost.js#L2-L16">HttpRequestPost.js</a></div>
 
 案例二：加载包含POST请求的下一页。
 
@@ -889,7 +888,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="WebComponentLoad.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/WebComponentLoad.ets#L2-L18" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/WebComponentLoad.ets#L2-L18">WebComponentLoad.ets</a></div>
 
 【推荐用法】
 
@@ -937,7 +936,7 @@ struct WebComponent {
      }
    }
    ```
-<SourceLink name="LoadWebComponentRight.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/LoadWebComponentRight.ets#L2-L39" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/LoadWebComponentRight.ets#L2-L39">LoadWebComponentRight.ets</a></div>
 2. 在将要加载的页面中，JavaScript发起POST请求，并将请求响应头ArkWebPostCacheKey设置为预取时设置的cachekey值'KeyX'。
 
    ```
@@ -957,7 +956,7 @@ struct WebComponent {
    formData.append('b', 'y');
    xhr.send(formData);
    ```
-<SourceLink name="HttpRequestPost.js" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/utils/HttpRequestPost.js#L2-L16" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/utils/HttpRequestPost.js#L2-L16">HttpRequestPost.js</a></div>
 
 ### 预编译JavaScript生成字节码缓存（Code Cache）
 
@@ -1016,7 +1015,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="PracticalCaseOne.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PracticalCaseOne.ets#L2-L35" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PracticalCaseOne.ets#L2-L35">PracticalCaseOne.ets</a></div>
 
 点击“加载页面”按钮，[性能打点](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter)数据如下，getMessageData进程中的Duration为加载页面开始到结束的耗时：
 
@@ -1064,7 +1063,7 @@ JavaScript的编译时间受文件大小和逻辑复杂度的影响。
      // ...
    }
    ```
-<SourceLink name="PracticalCaseTwo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PracticalCaseTwo.ets#L2-L58" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PracticalCaseTwo.ets#L2-L58">PracticalCaseTwo.ets</a></div>
 2. 读取配置，进行预编译。
 
    ```
@@ -1087,7 +1086,7 @@ JavaScript的编译时间受文件大小和逻辑复杂度的影响。
        }
      })
    ```
-<SourceLink name="PracticalCaseTwo.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PracticalCaseTwo.ets#L36-L53" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PracticalCaseTwo.ets#L36-L53">PracticalCaseTwo.ets</a></div>
 
    点击“加载页面”按钮，性能打点数据如下：getMessageData进程中的Duration表示加载页面从开始到结束的耗时。
 
@@ -1169,7 +1168,7 @@ ResponseData为JavaScript内容，ResponseDataID用于区分内容是否变更�
    <script src="https://www.example.com/test.js"></script>
    </html>
    ```
-<SourceLink name="index.html" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/resources/rawfile/index.html#L2-L25" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/resources/rawfile/index.html#L2-L25">index.html</a></div>
 2. 不设置ResponseDataID，进行界面请求拦截替换
 
    ```
@@ -1211,7 +1210,7 @@ ResponseData为JavaScript内容，ResponseDataID用于区分内容是否变更�
      }
    }
    ```
-<SourceLink name="PageRequestInterception.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PageRequestInterception.ets#L2-L38" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/PageRequestInterception.ets#L2-L38">PageRequestInterception.ets</a></div>
 
 打开应用后关闭，重复两次，然后查看第三次页面加载的耗时。性能打点数据如下：getMessageData 进程中的 Duration 表示页面加载从开始到结束的耗时。
 
@@ -1265,7 +1264,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="SetResposeData.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/SetResposeData.ets#L2-L43" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/SetResposeData.ets#L2-L43">SetResposeData.ets</a></div>
 
 打开应用后关闭，重复两次，然后查看第三次页面加载的耗时。性能打点数据如下：getMessageData 进程中的 Duration 表示页面加载从开始到结束的耗时。
 
@@ -1278,7 +1277,7 @@ struct Index {
    ```
    scheme1: webview.WebCustomScheme = { schemeName: "scheme1", isSupportCORS: true, isSupportFetch: true, isCodeCacheSupported: true }
    ```
-<SourceLink name="ByteCodeCache.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/ByteCodeCache.ets#L11-L11" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/ByteCodeCache.ets#L11-L11">ByteCodeCache.ets</a></div>
 2. 在Web组件运行前，向Web组件注册自定义协议。
 
    ![](./img/a16a6acc.png)
@@ -1295,7 +1294,7 @@ struct Index {
      }
    }
    ```
-<SourceLink name="ByteCodeCache.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/ByteCodeCache.ets#L18-L25" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/ByteCodeCache.ets#L18-L25">ByteCodeCache.ets</a></div>
 3. 拦截自定义协议的JavaScript，设置ResponseData和ResponseDataID。ResponseData包含JavaScript内容，ResponseDataID用于标识JavaScript内容是否发生变化。
 
    ![](./img/98b94f4f.png)
@@ -1352,7 +1351,7 @@ struct Index {
        return null;
      })
    ```
-<SourceLink name="ByteCodeCache.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/ByteCodeCache.ets#L31-L79" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/ByteCodeCache.ets#L31-L79">ByteCodeCache.ets</a></div>
 
 案例三：调用Native接口 `int32\_t OH\_ArkWeb\_RegisterCustomSchemes(const char \*scheme, int32\_t option)`，实现自定义协议的JavaScript生成字节码缓存。通过网络拦截接口拦截Web组件发出的请求。示例代码请参考[拦截Web组件发起的网络请求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-scheme-handler)。具体步骤如下：
 
@@ -1366,7 +1365,7 @@ struct Index {
        return nullptr;
    }
    ```
-<SourceLink name="nnapi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/cpp/nnapi_init.cpp#L2-L7" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/cpp/nnapi_init.cpp#L2-L7">nnapi_init.cpp</a></div>
 2. 设置ResponseDataID。
 
    ```
@@ -1407,7 +1406,7 @@ struct Index {
        OH_ArkWebResponse_SetCharset(response(), "UTF-8");
    }
    ```
-<SourceLink name="nnapi_init.cpp" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/cpp/nnapi_init.cpp#L11-L50" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/cpp/nnapi_init.cpp#L11-L50">nnapi_init.cpp</a></div>
 3. 注册三方协议并设置SchemeHandler。
 
    ```
@@ -1421,7 +1420,7 @@ struct Index {
      testNapi.setSchemeHandler();
    }
    ```
-<SourceLink name="SetSchemeHandler.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/SetSchemeHandler.ets#L8-L16" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/SetSchemeHandler.ets#L8-L16">SetSchemeHandler.ets</a></div>
 
    性能打点数据如下，getMessageData进程中的Avg Wall Duration为两次加载页面开始到结束的平均耗时：
 
@@ -1486,7 +1485,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="LoadWebPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/LoadWebPage.ets#L2-L28" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/LoadWebPage.ets#L2-L28">LoadWebPage.ets</a></div>
 
 性能打点数据如下，getMessageData进程中的Duration为加载页面开始到结束的耗时：
 
@@ -1585,7 +1584,7 @@ struct Index {
      },
    ];
    ```
-<SourceLink name="CreateResourceConfig.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/utils/CreateResourceConfig.ets#L2-L91" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/utils/CreateResourceConfig.ets#L2-L91">CreateResourceConfig.ets</a></div>
 2. 读取配置并注入资源
 
    ```
@@ -1598,7 +1597,7 @@ struct Index {
      }
    }
    ```
-<SourceLink name="CreateResourceConfig.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/utils/CreateResourceConfig.ets#L95-L102" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/utils/CreateResourceConfig.ets#L95-L102">CreateResourceConfig.ets</a></div>
 
    性能打点数据如下：getMessageData进程中的Duration表示加载页面的总耗时。
 
@@ -1684,7 +1683,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="UseStringInterceptReplace.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/UseStringInterceptReplace.ets#L2-L56" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/UseStringInterceptReplace.ets#L2-L56">UseStringInterceptReplace.ets</a></div>
 
 资源替换耗时如图所示。getMessageData和someFunction的执行时间表示页面加载资源的耗时。
 
@@ -1816,7 +1815,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="UseArrayBufferInterceptReplace.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/UseArrayBufferInterceptReplace.ets#L2-L123" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/UseArrayBufferInterceptReplace.ets#L2-L123">UseArrayBufferInterceptReplace.ets</a></div>
 
 资源替换耗时如图所示。getMessageData和william someFunction的执行时间表示页面加载资源的耗时。
 
@@ -1888,7 +1887,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="JsBridgeOfArkTS.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/JsBridgeOfArkTS.ets#L2-L34" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/JsBridgeOfArkTS.ets#L2-L34">JsBridgeOfArkTS.ets</a></div>
 
 前端页面代码：
 
@@ -1916,7 +1915,7 @@ struct WebComponent {
 </body>
 </html>
 ```
-<SourceLink name="test.html" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/resources/rawfile/test.html#L2-L23" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/resources/rawfile/test.html#L2-L23">test.html</a></div>
 
 点击runJavaScript按钮后，触发h5页面的htmlTest方法，页面内容将变更为当前时间戳。如下图所示。
 
@@ -1986,7 +1985,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="JsBridgeOfNdk.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/JsBridgeOfNdk.ets#L2-L57" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/JsBridgeOfNdk.ets#L2-L57">JsBridgeOfNdk.ets</a></div>
 
 hello.cpp作为应用C++侧业务逻辑代码：
 
@@ -2232,7 +2231,7 @@ static napi_module demoModule = {
 
 extern "C" __attribute__((constructor)) void RegisterEntryModule(void) { napi_module_register(&demoModule); }
 ```
-<SourceLink name="hello.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/cpp/hello.cpp#L2-L241" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/cpp/hello.cpp#L2-L241">hello.cpp</a></div>
 
 Native侧业务代码entry/src/main/cpp/jsbridge\_object.h和entry/src/main/cpp/jsbridge\_object.cpp详见[应用侧与前端页面的相互调用(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-ndk-jsbridge)。
 
@@ -2308,7 +2307,7 @@ runJS.html作为应用前端页面：
 </script>
 </html>
 ```
-<SourceLink name="runJS.html" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/resources/rawfile/runJS.html#L2-L69" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/resources/rawfile/runJS.html#L2-L69">runJS.html</a></div>
 
 点击“runJS hello”按钮后，触发H5页面的`runJSRetStr`方法，页面内容更新为当前时间戳。
 
@@ -2461,7 +2460,7 @@ JSBridge优化方案适用于ArkWeb应用与前端网页通信，开发者可根
      }
    }
    ```
-<SourceLink name="RegisterSyncFunction.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/RegisterSyncFunction.ets#L2-L116" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/RegisterSyncFunction.ets#L2-L116">RegisterSyncFunction.ets</a></div>
 2. H5侧调用JSBridge函数
 
    ```
@@ -2507,7 +2506,7 @@ JSBridge优化方案适用于ArkWeb应用与前端网页通信，开发者可根
    </script>
    </html>
    ```
-<SourceLink name="demo.html" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/resources/rawfile/demo.html#L2-L42" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/resources/rawfile/demo.html#L2-L42">demo.html</a></div>
 
 案例二：使用 `registerJavaScriptProxy` 或 `javaScriptProxy` 注册异步函数或异步同步共存函数。H5 侧调用 JSBridge 函数时，建议避免使用不推荐的用法。
 
@@ -2544,7 +2543,7 @@ Web({src: $rawfile('index.html'),controller: this.controller})
    controller: this.controller
  })
 ```
-<SourceLink name="RegisterJavaScriptProxy.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/RegisterJavaScriptProxy.ets#L96-L126" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/RegisterJavaScriptProxy.ets#L96-L126">RegisterJavaScriptProxy.ets</a></div>
 
 **总结**
 
@@ -2624,7 +2623,7 @@ void RegisterCallback(const char *webTag) {
     ctrlApi->registerAsyncJavaScriptProxy(webTag, &obj2);
 }
 ```
-<SourceLink name="DefineJSBridge.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/cpp/DefineJSBridge.cpp#L2-L55" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/cpp/DefineJSBridge.cpp#L2-L55">DefineJSBridge.cpp</a></div>
 
 ## 同层渲染
 

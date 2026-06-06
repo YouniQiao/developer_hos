@@ -5,7 +5,6 @@ format: md
 ---
 
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 网络连接安全配置
 
@@ -62,7 +61,7 @@ import SourceLink from '@site/src/components/SourceLink';
 ```
 curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
 ```
-<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L21-L21" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L21-L21">Cybersecurity.md</a></div>
 
 ### 配置不信任用户安装的CA证书
 
@@ -77,7 +76,7 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
   "trust-current-user-ca": false  // Configure whether to trust the CA certificate installed by the current user. The default value is true
 }
 ```
-<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L30-L36" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L30-L36">Cybersecurity.md</a></div>
 
 ### 配置信任应用管理的CA证书
 
@@ -113,7 +112,7 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
     }
   }
   ```
-<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L45-L70" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L45-L70">Cybersecurity.md</a></div>
 
   Network Kit也支持在发起HTTPS请求的代码中[指定信任的CA证书路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http#httprequestoptions)：
 
@@ -131,7 +130,7 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
     // ...
   })
   ```
-<SourceLink name="NetworkTrust.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NetworkTrust.ets#L26-L37" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NetworkTrust.ets#L26-L37">NetworkTrust.ets</a></div>
 
   Remote Communication Kit也支持在代码中[指定信任的CA证书路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-rcp#certificateauthority)：
 
@@ -145,7 +144,7 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
   // Use the security configuration in the session creation
   const sessionWithSecurityConfig = rcp.createSession({ requestConfiguration: { security: securityConfig } });
   ```
-<SourceLink name="NetworkTrust.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NetworkTrust.ets#L46-L53" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NetworkTrust.ets#L46-L53">NetworkTrust.ets</a></div>
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/ba/v3/fmOxFPWYQ6eWyutWOJrKcw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080701Z&HW-CC-Expire=86400&HW-CC-Sign=FCB1100BB3A5CF85F9E97B05B867CF8319C963B248101D2CD0F3787AFA013426)
 
@@ -156,7 +155,7 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
   ```
   curl_easy_setopt(curl, CURLOPT_CATH, "/data/storage/el1/bundle/entry/resources/resfile/domainCaCert");
   ```
-<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L78-L78" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L78-L78">Cybersecurity.md</a></div>
 
 ### 配置信任用户安装的CA证书
 
@@ -208,7 +207,7 @@ SSL Pinning要求应用云侧服务器证书的公钥不能变化。如果公钥
      }
    }
    ```
-<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L87-L109" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L87-L109">Cybersecurity.md</a></div>
 
    具体可参考配置指导的[“证书锁定”](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request#证书锁定)章节。
 2. 通过在代码中动态设置进行动态SSL Pinning配置：
@@ -225,7 +224,7 @@ SSL Pinning要求应用云侧服务器证书的公钥不能变化。如果公钥
         }
       ]
      ```
-<SourceLink name="Cybersecurity.md" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L118-L126" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L118-L126">Cybersecurity.md</a></div>
 
      具体可参考配置指导的[“certificatePinning”参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http#httprequestoptions)。
    * Remote Communication Kit配置动态SSL Pinning：
@@ -246,6 +245,6 @@ SSL Pinning要求应用云侧服务器证书的公钥不能变化。如果公钥
      };
      const resp = await session.fetch(request);
      ```
-<SourceLink name="NetworkTrust.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NetworkTrust.ets#L63-L76" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NetworkTrust.ets#L63-L76">NetworkTrust.ets</a></div>
 
      具体可参考配置指导的[“certificatePinning”参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-rcp#securityconfiguration)。

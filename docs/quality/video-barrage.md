@@ -3,7 +3,6 @@ title: "视频场景弹幕绘制低功耗规则"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-barrage
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 视频场景弹幕绘制低功耗规则
 
@@ -55,7 +54,7 @@ void EGLCore::Draw() {
     flag_ = true;
 }
 ```
-<SourceLink name="EGLCore.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/cpp/EGLCore.cpp#L46-L81" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/cpp/EGLCore.cpp#L46-L81">EGLCore.cpp</a></div>
 
 ## 调测验证
 

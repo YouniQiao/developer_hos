@@ -3,8 +3,6 @@ title: "JS Crash类问题案例"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-jscrash
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # JS Crash类问题案例
 
 本文将基于当前开发者所遇到的高频JS Crash故障进行案例介绍。开发者可阅读[应用崩溃类问题检测方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-runtime-crash-detection)了解系统检测JS Crash问题的原理和机制，阅读[JS Crash类问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-js-way)了解分析JS Crash问题的一般步骤。
@@ -72,7 +70,7 @@ Cannot get SourceMap info, dump raw stack:
      this.recentScale = recentScale;
    }
    ```
-<SourceLink name="CannotReadPropertyXXXOfUndefinedCase.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/CannotReadPropertyXXXOfUndefinedCase.ets#L27-L39" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/CannotReadPropertyXXXOfUndefinedCase.ets#L27-L39">CannotReadPropertyXXXOfUndefinedCase.ets</a></div>
 
 ### 修复方法
 
@@ -91,7 +89,7 @@ public updateGestureValue(screenWidth: number, recentScale: number,
   this.recentScale = recentScale;
 }
 ```
-<SourceLink name="CannotReadPropertyXXXOfUndefinedFix.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/CannotReadPropertyXXXOfUndefinedFix.ets#L27-L38" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/CannotReadPropertyXXXOfUndefinedFix.ets#L27-L38">CannotReadPropertyXXXOfUndefinedFix.ets</a></div>
 
 ### 建议与总结
 
@@ -156,7 +154,7 @@ export function c() {
     b(a);
 }
 ```
-<SourceLink name="XXXIsNotCallableCase.js" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotCallableCase.js#L6-L14" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotCallableCase.js#L6-L14">XXXIsNotCallableCase.js</a></div>
 
 原因分析：入参是number类型，number类型无trim函数。
 
@@ -174,7 +172,7 @@ export function c1() {
     b(a.toString()); // 转换为字符串
 }
 ```
-<SourceLink name="XXXIsNotCallableFix.js" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotCallableFix.js#L6-L14" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotCallableFix.js#L6-L14">XXXIsNotCallableFix.js</a></div>
 
 ### 建议与总结
 
@@ -208,7 +206,7 @@ export function printArgs(args: number): number {
   return args
 }
 ```
-<SourceLink name="utils.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/utils.ets#L8-L11" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/utils.ets#L8-L11">utils.ets</a></div>
 
 ```
 import taskpool from '@ohos.taskpool'
@@ -258,7 +256,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="TaskpoolFailedToSerializeResultCase.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/TaskpoolFailedToSerializeResultCase.ets#L6-L52" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/TaskpoolFailedToSerializeResultCase.ets#L6-L52">TaskpoolFailedToSerializeResultCase.ets</a></div>
 
 上面的例子是在执行的任务中创建了一个task任务，并且返回。但是这个createTask函数返回值task对象是无法被序列化的，从而导致了任务的执行失败。
 
@@ -272,7 +270,7 @@ export function printArgs(args: number): number {
   return args
 }
 ```
-<SourceLink name="utils.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/utils.ets#L8-L11" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/utils.ets#L8-L11">utils.ets</a></div>
 
 ```
 import taskpool from '@ohos.taskpool'
@@ -323,7 +321,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="TaskpoolFailedToSerializeResultFix.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/TaskpoolFailedToSerializeResultFix.ets#L6-L53" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/TaskpoolFailedToSerializeResultFix.ets#L6-L53">TaskpoolFailedToSerializeResultFix.ets</a></div>
 
 如代码所示，让新的task构造在then中执行，createTask函数里返回的结果设置为能够正常序列化的类型。
 
@@ -395,7 +393,7 @@ export function A() {
   return new Animal;
 }
 ```
-<SourceLink name="XXXIsNotInitializedCase.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotInitializedCase.ets#L6-L13" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotInitializedCase.ets#L6-L13">XXXIsNotInitializedCase.ets</a></div>
 
 ```
 import { a } from './XXXIsNotInitializedCase'
@@ -407,7 +405,7 @@ export class Animal {
   }
 }
 ```
-<SourceLink name="XXXIsNotInitializedCase1.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotInitializedCase1.ets#L6-L14" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotInitializedCase1.ets#L6-L14">XXXIsNotInitializedCase1.ets</a></div>
 
 正例:
 
@@ -420,7 +418,7 @@ export function A() {
   return new Animal;
 }
 ```
-<SourceLink name="XXXIsNotInitializedFix.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotInitializedFix.ets#L6-L13" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotInitializedFix.ets#L6-L13">XXXIsNotInitializedFix.ets</a></div>
 
 ```
 import { a } from './XXXIsNotInitializedFix'
@@ -432,7 +430,7 @@ export class Animal {
   str = a; // 修改点
 }
 ```
-<SourceLink name="XXXIsNotInitializedFix1.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotInitializedFix1.ets#L6-L14" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/XXXIsNotInitializedFix1.ets#L6-L14">XXXIsNotInitializedFix1.ets</a></div>
 
 ### 修复方法
 
@@ -461,7 +459,7 @@ Error类问题一般是开发者或JS库主动抛出来的JS异常。
 // In a production environment, encrypted error codes should be used instead of plain text descriptions.
 throw new Error("TEST JS ERROR")
 ```
-<SourceLink name="ThrowNewError.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/ThrowNewError.ets#L25-L26" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/ThrowNewError.ets#L25-L26">ThrowNewError.ets</a></div>
 
 通过DevEco Studio的FaultLog工具可收集到此类异常日志，其中JS异常栈信息可直接定位到抛异常的代码位置。
 
@@ -500,7 +498,7 @@ Cannot get SourceMap info, dump raw stack:
      this.handleUpdateState();
    });
    ```
-<SourceLink name="OperationFailedCase.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/OperationFailedCase.ets#L31-L34" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/OperationFailedCase.ets#L31-L34">OperationFailedCase.ets</a></div>
 
 ### 修复方法
 
@@ -516,7 +514,7 @@ try {
   log.showError('wifiConnectionChange error');
 }
 ```
-<SourceLink name="OperationFailedFix.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/OperationFailedFix.ets#L32-L39" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/OperationFailedFix.ets#L32-L39">OperationFailedFix.ets</a></div>
 
 ### 建议与总结
 
@@ -631,7 +629,7 @@ function testYY() {
   console.log("test leak");
 }
 ```
-<SourceLink name="OutOfMemoryErrorCase.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/OutOfMemoryErrorCase.ets#L6-L39" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/OutOfMemoryErrorCase.ets#L6-L39">OutOfMemoryErrorCase.ets</a></div>
 
 下面再看native的代码，调用napi\_create\_reference创建对js传过来的proxy的引用，使其无法释放。
 
@@ -648,7 +646,7 @@ static napi_value TestLeak(napi_env env, napi_callback_info info) {
     return nullptr;
 }
 ```
-<SourceLink name="napi_init.cpp" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/cpp/napi_init.cpp#L47-L57" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/cpp/napi_init.cpp#L47-L57">napi_init.cpp</a></div>
 
 **场景测试：**
 
@@ -759,7 +757,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="CanNotGetPrototypeOnNonEcmaObjectCase.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/CanNotGetPrototypeOnNonEcmaObjectCase.ets#L6-L37" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/CanNotGetPrototypeOnNonEcmaObjectCase.ets#L6-L37">CanNotGetPrototypeOnNonEcmaObjectCase.ets</a></div>
 
 ```
 napi_value objValues;
@@ -803,7 +801,7 @@ static napi_value Add(napi_env env, napi_callback_info info) {
 
 static napi_value GetValue(napi_env env, napi_callback_info info) { return objValues; }
 ```
-<SourceLink name="napi_init.cpp" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/cpp/napi_init.cpp#L4-L43" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/cpp/napi_init.cpp#L4-L43">napi_init.cpp</a></div>
 
 在当前实现中存在一个严重的变量生命周期管理问题。核心问题在于全局变量objValues存储的是一个napi\_value引用，该引用在Add函数中被赋值后立即失效。
 
@@ -904,7 +902,7 @@ Stacktrace:
    let str2 = "{\"value\":0123}"; // Unexpected Number in JSON at position 10, {"v*l*e":0*2*}
    JSON.parse(str2)
    ```
-<SourceLink name="UnexpectedXXXInJSONCase.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/UnexpectedXXXInJSONCase.ets#L24-L28" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/UnexpectedXXXInJSONCase.ets#L24-L28">UnexpectedXXXInJSONCase.ets</a></div>
 3. 根据JSON字符串片段和报错位置，还原原始报错点
 
    ```
@@ -933,7 +931,7 @@ JSON.parse(str1)
 let str2 = "{\"value\":0.123}";
 JSON.parse(str2)
 ```
-<SourceLink name="UnexpectedXXXInJSONFix.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/UnexpectedXXXInJSONFix.ets#L24-L28" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/JSCrash/entry/src/main/ets/pages/UnexpectedXXXInJSONFix.ets#L24-L28">UnexpectedXXXInJSONFix.ets</a></div>
 
 ### 建议与总结
 

@@ -5,7 +5,6 @@ format: md
 ---
 
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 应用权限申请
 
@@ -175,7 +174,7 @@ checkPermissionGrant(): void {
   }
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L149-L179" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L149-L179">Index.ets</a></div>
 
 向用户申请授权。
 
@@ -213,7 +212,7 @@ requestPermissions(): void {
   }
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L183-L214" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L183-L214">Index.ets</a></div>
 
 引导用户授权。
 
@@ -239,7 +238,7 @@ private openPermissionsSetting(): void {
   });
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L126-L145" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L126-L145">Index.ets</a></div>
 
 ## 功能被禁用处理方式
 
@@ -316,7 +315,7 @@ getLocation(): void {
   })
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L218-L272" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/PermissionApplication/blob/master/entry/src/main/ets/pages/Index.ets#L218-L272">Index.ets</a></div>
 
 ## 示例代码
 

@@ -5,7 +5,6 @@ format: md
 ---
 
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 应用资产保护设计
 
@@ -71,7 +70,7 @@ function getAgeInfo() {
 
 console.log('' + getAgeInfo());
 ```
-<SourceLink name="ApplicationAssetProtectionBefore.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/ApplicationAssetProtectionBefore.ets#L22-L32" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/ApplicationAssetProtectionBefore.ets#L22-L32">ApplicationAssetProtectionBefore.ets</a></div>
 
 混淆后：
 
@@ -88,7 +87,7 @@ function getAgeInfo() {
 
 console['log']('' + getAgeInfo());
 ```
-<SourceLink name="ApplicationAssetProtectionAfter.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/ApplicationAssetProtectionAfter.ets#L22-L32" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/ApplicationAssetProtectionAfter.ets#L22-L32">ApplicationAssetProtectionAfter.ets</a></div>
 
 <strong>应用加密</strong>
 

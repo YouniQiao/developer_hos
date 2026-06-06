@@ -3,8 +3,6 @@ title: "应用冻屏类问题优化建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-opt
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 应用冻屏类问题优化建议
 
 ## 优化建议1：多线程操作锁时，需要合理使用lock\_guard这类自动控制持锁和释放锁的管理方式
@@ -22,7 +20,7 @@ int AppFreezeAdviseNegative() {
      return 0;
 }
 ```
-<SourceLink name="AppFreezeCase.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L53-L61" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L53-L61">AppFreezeCase.cpp</a></div>
 
 优化建议：多线程操作锁时，需要合理使用lock\_guard这类自动控制持锁和释放锁的管理方式，同时注意锁的控制范围尽量要小，或按照如下修改方式及时释放锁。
 
@@ -39,7 +37,7 @@ int AppFreezeAdvisePositive() {
     return 0;
 }
 ```
-<SourceLink name="AppFreezeCase.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L65-L75" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L65-L75">AppFreezeCase.cpp</a></div>
 
 ## 优化建议2：不要在主线程中提交大量重复或耗时操作
 
@@ -51,7 +49,7 @@ function getForeachKey(item : ItemType) : string {
     return `${item.xxx2}${item.xxx2}...${item.themeStyle}`;
 } // 这部分逻辑如果较为耗时，执行次数多，总时长就是发生冻屏的耗时操作
 ```
-<SourceLink name="appfreezecase.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L31-L34" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L31-L34">appfreezecase.ets</a></div>
 
 ```
 function xxxFunction1(fileUris : string[]): void {
@@ -63,7 +61,7 @@ function xxxFunction1(fileUris : string[]): void {
     // ...
 } // 如果使用同步操作，需要考虑到容器弱网或无网等极端情况发生
 ```
-<SourceLink name="appfreezecase.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L42-L49" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L42-L49">appfreezecase.ets</a></div>
 
 优化建议：
 
@@ -81,4 +79,4 @@ async function xxxFunction2(fileUris : string[]) : Promise<void> {
     // ...
 }
 ```
-<SourceLink name="appfreezecase.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L53-L61" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L53-L61">appfreezecase.ets</a></div>

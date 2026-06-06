@@ -3,8 +3,6 @@ title: "应用内存占用优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-memory-optimization
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 应用内存占用优化
 
 ## 概述
@@ -129,7 +127,7 @@ export class LRUCacheUtil {
   }
 }
 ```
-<SourceLink name="LRUCacheUtil.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/utils/LRUCacheUtil.ets#L2-L60" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/utils/LRUCacheUtil.ets#L2-L60">LRUCacheUtil.ets</a></div>
 
 在对应的组件中设置缓存，示例代码如下所示：
 
@@ -177,7 +175,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Demo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/pages/Demo.ets#L2-L46" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/pages/Demo.ets#L2-L46">Demo.ets</a></div>
 
 可以通过onMemoryLevel()监听内存变化，设置对应清理缓存的机制。示例代码如下：
 
@@ -208,7 +206,7 @@ export default class EntryAbility extends UIAbility {
   }
 };
 ```
-<SourceLink name="EntryAbility.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/entryability/EntryAbility.ets#L2-L26" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/entryability/EntryAbility.ets#L2-L26">EntryAbility.ets</a></div>
 
 ## 使用生命周期管理优化ArkTS内存
 
@@ -382,7 +380,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/pages/Index.ets#L2-L154" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/pages/Index.ets#L2-L154">Index.ets</a></div>
 
 ## 使用purgeable优化C++内存
 
@@ -418,7 +416,7 @@ add_library(entry SHARED napi_init.cpp)
 # Introduce libpurgeable_memory_ndk.z.so dynamic link library.
 target_link_libraries(entry PUBLIC libace_napi.z.so libpurgeable_memory_ndk.z.so)
 ```
-<SourceLink name="CMakeLists.txt" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/cpps/CMakeLists.txt#L2-L13" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/cpps/CMakeLists.txt#L2-L13">CMakeLists.txt</a></div>
 
 引入purgeable\_memory头文件，声明ModifyFunc函数，调用OH\_PurgeableMemory\_Create创建PurgeableMemory对象。
 
@@ -502,7 +500,7 @@ extern "C" __attribute__((constructor)) void RegisterEntryModule(void)
     napi_module_register(&demoModule);
 }
 ```
-<SourceLink name="AddCpp.cpp" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/cpps/AddCpp.cpp#L2-L75" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/cpps/AddCpp.cpp#L2-L75">AddCpp.cpp</a></div>
 
 ## 使用合理尺寸的图片优化应用内存
 
@@ -530,7 +528,7 @@ Column() {
     .height("500px")
 }
 ```
-<SourceLink name="Demo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/pages/Demo.ets#L35-L39" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/OptimizationAppMemoryUsage/entry/src/main/ets/pages/Demo.ets#L35-L39">Demo.ets</a></div>
 
 使用500×500尺寸的Image组件加载一张4032×3024的RGBA格式图片时，图片申请了约46.5 MB的内存。这是因为图片原始尺寸较大，加载到Image组件中时需要缩放到500×500尺寸，这个过程会占用一定的内存。
 

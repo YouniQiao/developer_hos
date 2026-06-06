@@ -3,7 +3,6 @@ title: "资源泄漏类问题优化建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-opt
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 资源泄漏类问题优化建议
 
@@ -28,7 +27,7 @@ export default class test {
   }
 }
 ```
-<SourceLink name="MemoryLeakDetection.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/ets/pages/MemoryLeakDetection.ets#L43-L55" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/ets/pages/MemoryLeakDetection.ets#L43-L55">MemoryLeakDetection.ets</a></div>
 
 **优化建议：**
 
@@ -56,7 +55,7 @@ export default class test {
   }
 }
 ```
-<SourceLink name="MemoryLeakDetection2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/ets/pages/MemoryLeakDetection2.ets#L16-L35" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/ets/pages/MemoryLeakDetection2.ets#L16-L35">MemoryLeakDetection2.ets</a></div>
 
 ### 优化建议2：异常分支需要关注释放申请的内存
 
@@ -78,7 +77,7 @@ static bool InjectNativeLeak1()
     return true;
 }
 ```
-<SourceLink name="resource_leak.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L35-L48" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L35-L48">resource_leak.cpp</a></div>
 
 **优化建议：**
 
@@ -105,7 +104,7 @@ static bool InjectNativeLeak2()
     return true;
 }
 ```
-<SourceLink name="resource_leak.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L52-L65" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L52-L65">resource_leak.cpp</a></div>
 
 ## ashmem/ION泄漏问题优化建议
 
@@ -125,7 +124,7 @@ void processWithLeak1(int fd, size_t size) {
     // 每一次调用都会泄漏一块映射内存
 }
 ```
-<SourceLink name="resource_leak.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L78-L87" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L78-L87">resource_leak.cpp</a></div>
 
 **优化建议：**
 
@@ -142,7 +141,7 @@ void processWithLeak2(int fd, size_t size) {
     munmap(ptr, size);
 }
 ```
-<SourceLink name="resource_leak.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L91-L99" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L91-L99">resource_leak.cpp</a></div>
 
 针对ION和ashmem内存泄漏，开发者可以调用命名API接口，设定ashmem和ION的名字，与pixmap绑定，来提高这类内存泄漏的定位效率。
 
@@ -187,7 +186,7 @@ void InjectContinuingFileFdLeak1(std::string path) {
     close(fd); // 正常业务流程关闭句柄
 }
 ```
-<SourceLink name="resource_leak.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L111-L123" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L111-L123">resource_leak.cpp</a></div>
 
 优化建议：在创建文件句柄的同时在函数出口（含函数各个异常分支）及时增加关闭句柄的操作，防止句柄未正常关闭导致的泄漏。
 
@@ -206,7 +205,7 @@ void InjectContinuingFileFdLeak2(std::string path) {
     close(fd); // 正常业务流程关闭句柄
 }
 ```
-<SourceLink name="resource_leak.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L127-L139" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L127-L139">resource_leak.cpp</a></div>
 
 ## 线程泄漏问题优化建议
 
@@ -225,7 +224,7 @@ void riskyThreadFunction(int num) {
     return;
 }
 ```
-<SourceLink name="resource_leak.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L153-L161" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L153-L161">resource_leak.cpp</a></div>
 
 优化建议：
 
@@ -257,4 +256,4 @@ void safeThreadFunction(int num) {
     return;
 }
 ```
-<SourceLink name="resource_leak.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L167-L187" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/resource_leak.cpp#L167-L187">resource_leak.cpp</a></div>

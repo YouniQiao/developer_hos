@@ -3,8 +3,6 @@ title: "Node-API开发规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-node
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # Node-API开发规范
 
 ## 获取JS传入参数及其数量
@@ -64,7 +62,7 @@ static napi_value GetArgvDemo2(napi_env env, napi_callback_info info) {
     return nullptr;
 }
 ```
-<SourceLink name="napi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L54-L81" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L54-L81">napi_init.cpp</a></div>
 
 ## 生命周期管理
 
@@ -94,7 +92,7 @@ static void OpenHandleScope(napi_env env, napi_callback_info info) {
     }
 }
 ```
-<SourceLink name="napi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L85-L102" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L85-L102">napi_init.cpp</a></div>
 
 ## 上下文敏感
 
@@ -153,7 +151,7 @@ static void ErroHandle(napi_env env, napi_callback_info info) {
     }
 }
 ```
-<SourceLink name="napi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L103-L124" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L103-L124">napi_init.cpp</a></div>
 
 如上示例中，步骤1或者步骤2出现异常时，步骤3都不会正常进行。只有当方法的返回值是napi\_ok时，才能保持继续正常运行；否则后续流程可能会出现不可预期的行为。
 
@@ -208,7 +206,7 @@ void callbackTest(CallbackContext* context)
     );
 }
 ```
-<SourceLink name="napi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L128-L168" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L128-L168">napi_init.cpp</a></div>
 
 ## 对象绑定
 
@@ -244,7 +242,7 @@ void NapiWrapTest(napi_env env, napi_callback_info info) {
     napi_remove_wrap(env, jsobject, &nativeObjectResult);
 }
 ```
-<SourceLink name="napi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L172-L188" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L172-L188">napi_init.cpp</a></div>
 
 ## 高性能数组
 
@@ -301,7 +299,7 @@ static napi_value ArrayBufferDemo(napi_env env, napi_callback_info info)
     return arrBuffer;
 }
 ```
-<SourceLink name="napi_init.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L192-L233" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/entry/src/main/cpp/napi_init.cpp#L192-L233">napi_init.cpp</a></div>
 
 napi\_create\_arraybuffer等同于JS代码中的newArrayBuffer(size)，生成的对象不可直接在TS/JS中读取，需要将其包装为TypedArray或DataView后才能进行读写。
 
@@ -394,7 +392,7 @@ extern "C" __attribute__((constructor)) void RegisterNativerenderModule(void)
     napi_module_register(&demoModule);
 }
 ```
-<SourceLink name="napi_init.cpp" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/nativerender/src/main/cpp/napi_init.cpp#L48-L74" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/NodeAPIDevelopment/nativerender/src/main/cpp/napi_init.cpp#L48-L74">napi_init.cpp</a></div>
 
 ## 正确的使用napi\_create\_external系列接口创建的JS Object
 

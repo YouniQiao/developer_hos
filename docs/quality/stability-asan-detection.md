@@ -3,8 +3,6 @@ title: "使用ASan检测内存错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-asan-detection
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 使用ASan检测内存错误
 
 ASan的能力概述和检测原理可参看[地址越界检测能力概述](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-overview)以及[ASan检测原理](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-principle#section159561141247)，适用于开发态调试压测场景。
@@ -204,7 +202,7 @@ int HeapBufferOverflow()
     return buffer[1];
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L59-L68" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L59-L68">address_problems.cpp</a></div>
 
 **影响**
 
@@ -243,7 +241,7 @@ int StackBufferOverflow() {
     return 0;
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L89-L95" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L89-L95">address_problems.cpp</a></div>
 
 **影响**
 
@@ -278,7 +276,7 @@ int StackBufferUnderflow() {
     return 0;
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L104-L110" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L104-L110">address_problems.cpp</a></div>
 
 **影响**
 
@@ -312,7 +310,7 @@ int HeapUseAfterFree()
     return array[5];
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L24-L29" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L24-L29">address_problems.cpp</a></div>
 
 **影响**
 
@@ -354,7 +352,7 @@ int StackUseAfterScope() {
     return *gp;
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L119-L128" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L119-L128">address_problems.cpp</a></div>
 
 **影响**
 
@@ -388,7 +386,7 @@ int AttempFreeNonAllocatedMem() {
     return 0;
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L137-L142" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L137-L142">address_problems.cpp</a></div>
 
 **影响**
 
@@ -425,7 +423,7 @@ int DoubleFree() {
     return 0;
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L151-L157" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L151-L157">address_problems.cpp</a></div>
 
 **影响**
 

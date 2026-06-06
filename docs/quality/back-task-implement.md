@@ -3,8 +3,6 @@ title: "应用后台运行"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-back-task-implement
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 应用后台运行
 
 ## 概述
@@ -53,7 +51,7 @@ import SourceLink from '@site/src/components/SourceLink';
      delayTime: number; // The remaining time of this request short assignment
    }
    ```
-<SourceLink name="SuspendTaskInfo.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/SuspendTaskInfo.ets#L17-L20" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/SuspendTaskInfo.ets#L17-L20">SuspendTaskInfo.ets</a></div>
 2. 在信息发送的场景中，当应用处于前台时，在onAppear()回调函数中启动一个定时器，每隔2秒发送一条消息，模拟后台业务。
 
    ```
@@ -69,7 +67,7 @@ import SourceLink from '@site/src/components/SourceLink';
      }, 2000);
    })
    ```
-<SourceLink name="ShortTermTaskPage.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/view/ShortTermTaskPage.ets#L53-L96" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/view/ShortTermTaskPage.ets#L53-L96">ShortTermTaskPage.ets</a></div>
 3. 在信息发送的场景中，通过ApplicationContext.on('applicationStateChange')注册对当前应用前后台变化的监听。当应用退至后台时，触发onApplicationBackground()回调函数，在此回调函数中申请短时任务。
 
    ```
@@ -99,7 +97,7 @@ import SourceLink from '@site/src/components/SourceLink';
      }
    }
    ```
-<SourceLink name="ShortTermTaskModel.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/ShortTermTaskModel.ets#L28-L52" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/ShortTermTaskModel.ets#L28-L52">ShortTermTaskModel.ets</a></div>
 4. 在小文件下载、缓存、信息发送等场景中，应用退至后台时，可使用backgroundTaskManager.requestSuspendDelay()接口，后台应用申请短时任务。短时任务的申请和使用过程中的约束与限制请参考[指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transient-task#约束与限制)。
 
    ```
@@ -134,7 +132,7 @@ import SourceLink from '@site/src/components/SourceLink';
      }
    }
    ```
-<SourceLink name="SuspendTaskUtils.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/utils/SuspendTaskUtils.ets#L25-L54" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/utils/SuspendTaskUtils.ets#L25-L54">SuspendTaskUtils.ets</a></div>
 5. 应用返回前台后，调用backgroundTaskManager.getRemainingDelayTime()接口，获取对应短时任务的剩余时间。
 
    ```
@@ -149,7 +147,7 @@ import SourceLink from '@site/src/components/SourceLink';
      return delayTime;
    }
    ```
-<SourceLink name="SuspendTaskUtils.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/utils/SuspendTaskUtils.ets#L58-L67" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/utils/SuspendTaskUtils.ets#L58-L67">SuspendTaskUtils.ets</a></div>
 6. 应用退至后台，可调用backgroundTaskManager.cancelSuspendDelay()接口取消短时任务。
 
    ```
@@ -164,7 +162,7 @@ import SourceLink from '@site/src/components/SourceLink';
      return true;
    }
    ```
-<SourceLink name="SuspendTaskUtils.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/utils/SuspendTaskUtils.ets#L71-L80" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/utils/SuspendTaskUtils.ets#L71-L80">SuspendTaskUtils.ets</a></div>
 
 **实现效果**
 
@@ -215,7 +213,7 @@ import SourceLink from '@site/src/components/SourceLink';
      }
    }
    ```
-<SourceLink name="module.json5" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/module.json5#L2-L110" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/module.json5#L2-L110">module.json5</a></div>
 2. 应用跳转到定位功能页面，系统请求定位权限和网络访问权限。
 
    ```
@@ -236,7 +234,7 @@ import SourceLink from '@site/src/components/SourceLink';
        });
    }
    ```
-<SourceLink name="LongTermTaskModel.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/LongTermTaskModel.ets#L28-L43" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/LongTermTaskModel.ets#L28-L43">LongTermTaskModel.ets</a></div>
 3. 应用需获取位置信息，使用geoLocationManager.on('locationChange')接口，开启位置变化订阅并发起定位请求。
 
    ```
@@ -260,7 +258,7 @@ import SourceLink from '@site/src/components/SourceLink';
      }
    }
    ```
-<SourceLink name="LongTermTaskModel.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/LongTermTaskModel.ets#L47-L65" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/LongTermTaskModel.ets#L47-L65">LongTermTaskModel.ets</a></div>
 4. 应用退至后台需持续运行时，应调用backgroundTaskManager.startBackgroundRunning()接口申请长时任务。
 
    ```
@@ -296,13 +294,13 @@ import SourceLink from '@site/src/components/SourceLink';
      }
    }
    ```
-<SourceLink name="LongTermTaskModel.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/LongTermTaskModel.ets#L69-L99" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/LongTermTaskModel.ets#L69-L99">LongTermTaskModel.ets</a></div>
 5. 在定位和导航类的应用场景中，当应用退出时，需调用geoLocationManager.off('locationChange')接口，关闭位置变化订阅。
 
    ```
    geoLocationManager.off('locationChange');
    ```
-<SourceLink name="LongTermTaskPage.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/view/LongTermTaskPage.ets#L77-L77" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/view/LongTermTaskPage.ets#L77-L77">LongTermTaskPage.ets</a></div>
 6. 应用退出时，调用backgroundTaskManager.stopBackgroundRunning()接口，取消长时任务。
 
    ```
@@ -315,7 +313,7 @@ import SourceLink from '@site/src/components/SourceLink';
      });
    }
    ```
-<SourceLink name="LongTermTaskModel.ets" url="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/LongTermTaskModel.ets#L103-L110" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/LongTermTaskModel.ets#L103-L110">LongTermTaskModel.ets</a></div>
 
 **实现效果**
 

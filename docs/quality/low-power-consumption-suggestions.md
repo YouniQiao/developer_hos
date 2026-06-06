@@ -3,8 +3,6 @@ title: "不可见组件低功耗建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/low-power-consumption-suggestions
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 不可见组件低功耗建议
 
 ## 概述
@@ -104,7 +102,7 @@ import SourceLink from '@site/src/components/SourceLink';
     }
   }
   ```
-<SourceLink name="nonvisible_page1.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/InvisibleSample/entry/src/main/ets/pages/nonvisible_page1.ets#L23-L55" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/InvisibleSample/entry/src/main/ets/pages/nonvisible_page1.ets#L23-L55">nonvisible_page1.ets</a></div>
 
   ![](./img/6449c09e.png)
 
@@ -147,7 +145,7 @@ import SourceLink from '@site/src/components/SourceLink';
     }
   }
   ```
-<SourceLink name="nonvisible_page2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/InvisibleSample/entry/src/main/ets/pages/nonvisible_page2.ets#L21-L49" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/InvisibleSample/entry/src/main/ets/pages/nonvisible_page2.ets#L21-L49">nonvisible_page2.ets</a></div>
 
 * zIndex主要由三方开发者控制，实际应用场景较少。即便接入了可见性回调，在计算可见性时组件也不会感知到自身被Z轴遮挡。被Z轴遮挡的组件，仍然可能有部分内容显示在屏幕上，或需要在被遮蔽时执行自身行为，故而系统并不会抑制Z轴遮挡组件的刷新行为。开发者如果使用了Z序控制，需留意该遮蔽事件是否会持续较长时间，被遮蔽的组件是否会有持续性的动效行为产生，根据实际需求来控制组件行为，规避空跑问题。
 
@@ -193,7 +191,7 @@ Refresh是一种较为特殊的页面结构，许多开发者会通过[自定义
   hilog.info(0x0000, 'testTag', 'Refresh onStatueChange state is ' + refreshStatus);
 })
 ```
-<SourceLink name="visible_example.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/InvisibleSample/entry/src/main/ets/pages/visible_example.ets#L70-L81" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/InvisibleSample/entry/src/main/ets/pages/visible_example.ets#L70-L81">visible_example.ets</a></div>
 
 ### Dialog
 

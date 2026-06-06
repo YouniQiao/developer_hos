@@ -3,7 +3,6 @@ title: "Vsync低功耗优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-vsync-power-optimization
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # Vsync低功耗优化
 
@@ -74,7 +73,7 @@ aboutToDisappear() {
   }
 }
 ```
-<SourceLink name="display_sync_example.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/display_sync_example.ets#L95-L105" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/display_sync_example.ets#L95-L105">display_sync_example.ets</a></div>
 
 ```ts
 // 当组件不可见时，暂停DisplaySync对象
@@ -90,7 +89,7 @@ aboutToDisappear() {
   }
 })
 ```
-<SourceLink name="display_sync_example.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/display_sync_example.ets#L180-L191" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/display_sync_example.ets#L180-L191">display_sync_example.ets</a></div>
 
 ### 修改效果
 

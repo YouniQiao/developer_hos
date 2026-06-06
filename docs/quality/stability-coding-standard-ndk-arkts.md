@@ -3,8 +3,6 @@ title: "NDK开发ArkTS侧编码规范"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-ndk-arkts
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # NDK开发ArkTS侧编码规范
 
 ArkTS通过引用编译好的so文件来调用native方法。为避免不规范引用导致的运行时异常和故障排查成本，开发者应按照本文的标准进行引用。
@@ -84,7 +82,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/library/src/main/ets/components/Index.ets#L21-L45" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/library/src/main/ets/components/Index.ets#L21-L45">Index.ets</a></div>
 
 调用的方法名称必须与.d.ts文件中导出的方法名一致。
 
@@ -93,7 +91,7 @@ struct Index {
 ```ts
 export const add: (a: number, b: number) => number;
 ```
-<SourceLink name="Index.d.ts" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/Ndk1/src/main/cpp/types/libndk1/Index.d.ts#L2-L2" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/Ndk1/src/main/cpp/types/libndk1/Index.d.ts#L2-L2">Index.d.ts</a></div>
 
 ## import其它模块的so
 
@@ -177,7 +175,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index3.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/DevEcoStaticCheck/src/main/ets/pages/Index3.ets#L21-L45" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/DevEcoStaticCheck/src/main/ets/pages/Index3.ets#L21-L45">Index3.ets</a></div>
 
 ### 导出方模块
 
@@ -189,4 +187,4 @@ struct Index {
 import testNapi from 'liblibrary.so';
 export {testNapi}
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/Ndk1/src/main/ets/pages/Index.ets#L19-L20" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/StabilityCodingSpecification/Ndk1/src/main/ets/pages/Index.ets#L19-L20">Index.ets</a></div>

@@ -5,7 +5,6 @@ format: md
 ---
 
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # ArkWeb组件安全开发
 
@@ -89,7 +88,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="SetURLTrustList.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/SetURLTrustList.ets#L17-L62" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/SetURLTrustList.ets#L17-L62">SetURLTrustList.ets</a></div>
 
 ### 避免将不可信域名配置到允许加载白名单
 
@@ -133,7 +132,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="SetURLTrustList.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/SetURLTrustList.ets#L17-L44" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/SetURLTrustList.ets#L17-L44">SetURLTrustList.ets</a></div>
 
 ### 加载外部来源的脚本或资源时，务必对不可信内容进行安全校验或过滤
 
@@ -170,7 +169,7 @@ Web({ src: $rawfile('index.html'), controller: this.controller })
     }
   })
 ```
-<SourceLink name="LoadURL.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/LoadURL.ets#L29-L47" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/LoadURL.ets#L29-L47">LoadURL.ets</a></div>
 
 index.html内容如下：
 
@@ -188,7 +187,7 @@ Hello world!
 </script>
 </html>
 ```
-<SourceLink name="index.html" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/resources/rawfile/index.html#L18-L29" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/resources/rawfile/index.html#L18-L29">index.html</a></div>
 
 <strong>【正例】</strong>
 
@@ -219,7 +218,7 @@ Web({ src: $rawfile('index.html'), controller: this.controller })
     }
   })
 ```
-<SourceLink name="LoadURL.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/LoadURL.ets#L29-L53" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/LoadURL.ets#L29-L53">LoadURL.ets</a></div>
 
 ### 若要在onInterceptRequest中加载本地文件，务必校验文件URL，以防止本地数据被窃取
 
@@ -299,7 +298,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="OnInterceptRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/OnInterceptRequest.ets#L17-L80" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/OnInterceptRequest.ets#L17-L80">OnInterceptRequest.ets</a></div>
 
 ### 避免在允许跨域访问的本地文件目录中包含敏感资源
 
@@ -329,7 +328,7 @@ ArkWeb默认不允许跨域访问本地文件资源，除非使用[setPathAllowi
 Web({ src: 'www.huawei.com', controller: this.controller })
   .mixedMode(MixedMode.All)
 ```
-<SourceLink name="MixedMode.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/MixedMode.ets#L26-L27" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/MixedMode.ets#L26-L27">MixedMode.ets</a></div>
 
 <strong>【正例】</strong>
 
@@ -337,7 +336,7 @@ Web({ src: 'www.huawei.com', controller: this.controller })
 Web({ src: 'www.huawei.com', controller: this.controller })
   .mixedMode(MixedMode.None)
 ```
-<SourceLink name="MixedMode.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/MixedMode.ets#L26-L27" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/MixedMode.ets#L26-L27">MixedMode.ets</a></div>
 
 ### 避免在SSL校验出错时继续加载页面
 
@@ -372,7 +371,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="OnSslErrorEventReceive.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/OnSslErrorEventReceive.ets#L17-L33" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/OnSslErrorEventReceive.ets#L17-L33">OnSslErrorEventReceive.ets</a></div>
 
 <strong>【正例】</strong>
 
@@ -419,7 +418,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="OnSslErrorEventReceive.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/OnSslErrorEventReceive.ets#L17-L57" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/OnSslErrorEventReceive.ets#L17-L57">OnSslErrorEventReceive.ets</a></div>
 
 ### 正式Release版本务必关闭ArkWeb的网页调试功能
 
@@ -440,7 +439,7 @@ try {
   hilog.error(0x0000, 'ArkWebSecurity', `ErrorCode: ${error.code}`);
 }
 ```
-<SourceLink name="WebDebug.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/WebDebug.ets#L26-L30" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/WebDebug.ets#L26-L30">WebDebug.ets</a></div>
 
 ## 恰当的权限管控
 
@@ -505,7 +504,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="JavaScriptProxy.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/JavaScriptProxy.ets#L17-L45" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/JavaScriptProxy.ets#L17-L45">JavaScriptProxy.ets</a></div>
 
 ### 避免在onOverrideUrlLoading中进行页面加载
 
@@ -546,7 +545,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="OnOverrideUrlLoading.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/OnOverrideUrlLoading.ets#L17-L41" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/OnOverrideUrlLoading.ets#L17-L41">OnOverrideUrlLoading.ets</a></div>
 
 ### 避免使用getUrl/getOriginalUrl函数获取URL进行调用白名单校验
 
@@ -571,7 +570,7 @@ if (url === 'https://www.huawei.com') {
   hilog.error(0x0000, 'ArkWebSecurity', 'Not allowed to execute: ' + cmd);
 }
 ```
-<SourceLink name="GetURL.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/GetURL.ets#L29-L35" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/GetURL.ets#L29-L35">GetURL.ets</a></div>
 
 <strong>【正例】</strong>
 
@@ -584,7 +583,7 @@ if (url === 'https://www.huawei.com') {
   hilog.error(0x0000, 'ArkWebSecurity', 'Not allowed to execute: ' + cmd);
 }
 ```
-<SourceLink name="GetURL.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/GetURL.ets#L29-L35" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/GetURL.ets#L29-L35">GetURL.ets</a></div>
 
 ### 避免在JavaScriptProxy中提供页面加载功能
 
@@ -638,7 +637,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="Redirection.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/Redirection.ets#L17-L54" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/Redirection.ets#L17-L54">Redirection.ets</a></div>
 
 ### 避免在JavaScriptProxy中提供脚本执行功能
 
@@ -696,7 +695,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="RunJavaScript.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/RunJavaScript.ets#L17-L59" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/RunJavaScript.ets#L17-L59">RunJavaScript.ets</a></div>
 
 ### 务必在onPermissionRequest函数中显式通知用户进行授权
 
@@ -746,7 +745,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="PermissionRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/PermissionRequest.ets#L17-L50" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/PermissionRequest.ets#L17-L50">PermissionRequest.ets</a></div>
 
 index.html内容如下：
 
@@ -780,7 +779,7 @@ index.html内容如下：
 </body>
 </html>
 ```
-<SourceLink name="index.html" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/resources/rawfile/index.html#L33-L60" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/resources/rawfile/index.html#L33-L60">index.html</a></div>
 
 <strong>【正例】</strong>
 
@@ -840,7 +839,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="PermissionRequest.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/PermissionRequest.ets#L17-L70" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/PermissionRequest.ets#L17-L70">PermissionRequest.ets</a></div>
 
 ### 务必在onGeolocationShow函数中显式通知用户进行授权
 
@@ -873,7 +872,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="GeolocationShow.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/GeolocationShow.ets#L17-L33" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/GeolocationShow.ets#L17-L33">GeolocationShow.ets</a></div>
 
 <strong>【正例】</strong>
 
@@ -910,7 +909,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="GeolocationShow.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/GeolocationShow.ets#L17-L47" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/GeolocationShow.ets#L17-L47">GeolocationShow.ets</a></div>
 
 ### 避免未经检查拼接和执行Web侧传递的JavaScript内容
 
@@ -941,7 +940,7 @@ this.controller.runJavaScript(
     }
   });
 ```
-<SourceLink name="RunJavaScript2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/RunJavaScript2.ets#L35-L49" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/RunJavaScript2.ets#L35-L49">RunJavaScript2.ets</a></div>
 
 <strong>【正例】</strong>
 
@@ -994,7 +993,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="RunJavaScript2.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/RunJavaScript2.ets#L17-L63" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/RunJavaScript2.ets#L17-L63">RunJavaScript2.ets</a></div>
 
 index.html内容如下：
 
@@ -1012,7 +1011,7 @@ Hello world!
 </script>
 </html>
 ```
-<SourceLink name="index.html" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/resources/rawfile/index.html#L18-L29" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/resources/rawfile/index.html#L18-L29">index.html</a></div>
 
 ## 确保敏感数据的传输安全
 
@@ -1060,7 +1059,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="SetCookies.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/SetCookies.ets#L17-L42" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/SetCookies.ets#L17-L42">SetCookies.ets</a></div>
 
 <strong>【正例】</strong>
 
@@ -1103,7 +1102,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="SetCookies.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/SetCookies.ets#L17-L53" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/SetCookies.ets#L17-L53">SetCookies.ets</a></div>
 
 ### 避免将用户敏感信息直接拼接到URL中进行加载
 
@@ -1135,7 +1134,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="LoadURLWithSensitiveData.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/LoadURLWithSensitiveData.ets#L17-L32" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/LoadURLWithSensitiveData.ets#L17-L32">LoadURLWithSensitiveData.ets</a></div>
 
 ### 应用通过postMessage接口向网页传送敏感数据时，务必指定接收该消息的URI
 
@@ -1154,11 +1153,11 @@ this.ports = this.controller.createWebMessagePorts();
 this.controller.postMessage('__init_port__', [this.ports[0]], '*');
 this.ports[1].postMessageEvent('Post message event to html');
 ```
-<SourceLink name="PostMessage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/PostMessage.ets#L42-L44" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/ErrorSamples/PostMessage.ets#L42-L44">PostMessage.ets</a></div>
 
 <strong>【正例】</strong>
 
 ```
 this.ports = this.controller.createWebMessagePorts();
 this.controller.postMessage('__init_port__', [this.ports[0]], this.url_in_whitelist);
-```<SourceLink name="PostMessage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/PostMessage.ets#L42-L43" />
+```<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkWebSecurity/arkwebsecurity/src/main/ets/pages/PostMessage.ets#L42-L43">PostMessage.ets</a></div>

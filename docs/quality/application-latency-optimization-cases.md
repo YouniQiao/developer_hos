@@ -3,8 +3,6 @@ title: "应用时延优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-latency-optimization-cases
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 应用时延优化
 
 ## 应用时延概述
@@ -133,7 +131,7 @@ struct CityList {
   // ...
 }
 ```
-<SourceLink name="CityListPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/CityListPage.ets#L28-L137" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/CityListPage.ets#L28-L137">CityListPage.ets</a></div>
 
 **统计分析**
 
@@ -174,7 +172,7 @@ for (let i = 0; i < count; i++) {
   resultSet.goToNextRow();
 }
 ```
-<SourceLink name="AccountTable.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/common/db/AccountTable.ets#L42-L55" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/common/db/AccountTable.ets#L42-L55">AccountTable.ets</a></div>
 
 在数据表结构固定的情况下，可以将getColumnIndex的调用提前，以减少总的调用次数，从而优化指令耗时。随着数据行数count的增加，for循环内的getColumnIndex调用次数也会增加，但索引不会变化。
 
@@ -200,7 +198,7 @@ for (let i = 0; i < count; i++) {
   resultSet.goToNextRow();
 }
 ```
-<SourceLink name="AccountTable.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/common/db/AccountTable.ets#L58-L75" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/common/db/AccountTable.ets#L58-L75">AccountTable.ets</a></div>
 
 **统计分析**
 
@@ -252,7 +250,7 @@ let previewOutput: camera.PhotoOutput;
     }
   }
 ```
-<SourceLink name="CameraPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/CameraPage.ets#L23-L58" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/CameraPage.ets#L23-L58">CameraPage.ets</a></div>
 
 启动setTimeout异步延迟操作，在200毫秒后调用release释放并关闭相机。通过“停止拍摄进程>并发执行：暂停并释放相机会话>关闭和释放预览及拍照的输入输出对象>清空相机管理对象”的过程，确保应用程序在不再使用相机时能够有效管理并回收所有相机资源。移除await关键字应用于相机资源释放操作，允许异步并发执行，减少主线程阻塞，提升应用性能和响应速度。
 
@@ -285,7 +283,7 @@ let previewOutput: camera.PhotoOutput;
     }
   }
 ```
-<SourceLink name="CameraOptPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/CameraOptPage.ets#L23-L58" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/CameraOptPage.ets#L23-L58">CameraOptPage.ets</a></div>
 
 **性能比对**
 
@@ -354,7 +352,7 @@ struct PanGestureExample {
   }
 }
 ```
-<SourceLink name="PanGestureDistancePage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/PanGestureDistancePage.ets#L19-L69" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/PanGestureDistancePage.ets#L19-L69">PanGestureDistancePage.ets</a></div>
 
 利用Profiler工具分析得到的trace图，重点关注两个trace标签：DispatchTouchEvent表示点击事件，PanGesture表示事件响应。追踪流程从应用侧的DispatchTouchEvent（type=0，表示手指接触屏幕）标签开始，到PanGesture（事件响应）的变化，整个过程耗时145.1毫秒。
 
@@ -372,7 +370,7 @@ Button('修改PanGesture触发条件')
     this.panOption.setDistance(4)
   })
 ```
-<SourceLink name="PanGestureDistanceOptPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/PanGestureDistanceOptPage.ets#L62-L65" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/PanGestureDistanceOptPage.ets#L62-L65">PanGestureDistanceOptPage.ets</a></div>
 
 同样采用Profiler工具分析trace图，得到对应耗时38.4ms
 
@@ -428,7 +426,7 @@ pageTransition() {
     .slide(SlideEffect.Left)
 }
 ```
-<SourceLink name="VisionOptPage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/VisionOptPage.ets#L30-L37" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/VisionOptPage.ets#L30-L37">VisionOptPage.ets</a></div>
 
 列表页中共享元素动画设置：
 
@@ -440,7 +438,7 @@ Image(this.itemData.avatar)
   .borderRadius(8)
   .sharedTransition('sharedImage' + this.itemData.id, { duration: 500, curve: Curve.FastOutSlowIn, delay: 0 })
 ```
-<SourceLink name="OptChatItemView.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/view/OptChatItemView.ets#L30-L35" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/view/OptChatItemView.ets#L30-L35">OptChatItemView.ets</a></div>
 
 个人页中共享元素动画设置：
 
@@ -456,7 +454,7 @@ Image(this.itemData.avatar)
   .sharedTransition('sharedImage' + this.itemData.id,
     { duration: 500, curve: Curve.FastOutSlowIn, delay: 0 })
 ```
-<SourceLink name="ProfilePage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/ProfilePage.ets#L57-L66" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/ProfilePage.ets#L57-L66">ProfilePage.ets</a></div>
 
 骨架图实现：
 
@@ -497,7 +495,7 @@ build() {
   })
 }
 ```
-<SourceLink name="LoadingView.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/view/LoadingView.ets#L30-L65" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/view/LoadingView.ets#L30-L65">LoadingView.ets</a></div>
 
 ### 动画时延场景案例
 
@@ -575,7 +573,7 @@ struct TabsPositiveExample {
   }
 }
 ```
-<SourceLink name="TabsPositiveExample.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/TabsPositiveExample.ets#L22-L82" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/TabsPositiveExample.ets#L22-L82">TabsPositiveExample.ets</a></div>
 
 ![](./img/ea5e4517.png "点击放大")
 
@@ -607,7 +605,7 @@ struct TabsNegativeExample {
   }
 }
 ```
-<SourceLink name="TabsNegativeExample.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/TabsNegativeExample.ets#L22-L94" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/OptimizationAppDelay/entry/src/main/ets/pages/TabsNegativeExample.ets#L22-L94">TabsNegativeExample.ets</a></div>
 
 ![](./img/966ff501.png "点击放大")
 

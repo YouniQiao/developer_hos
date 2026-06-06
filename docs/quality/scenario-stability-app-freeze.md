@@ -3,8 +3,6 @@ title: "应用冻屏类问题案例"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-app-freeze
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 应用冻屏类问题案例
 
 ## ThreadBlock类问题案例-未正确使用锁
@@ -41,7 +39,7 @@ int AppFreezeAdvise1() {
      return 0;
 }
 ```
-<SourceLink name="AppFreezeCase.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L27-L44" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L27-L44">AppFreezeCase.cpp</a></div>
 
 ### 分析思路
 
@@ -214,7 +212,7 @@ int AppFreezeAdviseNegative() {
      return 0;
 }
 ```
-<SourceLink name="AppFreezeCase.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L53-L61" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L53-L61">AppFreezeCase.cpp</a></div>
 
 修改为：
 
@@ -231,7 +229,7 @@ int AppFreezeAdvisePositive() {
     return 0;
 }
 ```
-<SourceLink name="AppFreezeCase.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L65-L75" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/cpp/AppFreezeCase.cpp#L65-L75">AppFreezeCase.cpp</a></div>
 
 结合上下文，合理调整锁的使用。
 
@@ -261,7 +259,7 @@ function getForeachKey(item : ItemType) : string {
     return `${item.xxx2}${item.xxx2}...${item.themeStyle}`;
 } // 这部分逻辑如果较为耗时，执行次数多，总时长就是发生冻屏的耗时操作
 ```
-<SourceLink name="appfreezecase.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L31-L34" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L31-L34">appfreezecase.ets</a></div>
 
 ### 分析思路
 
@@ -411,7 +409,7 @@ function xxxFunction1(fileUris : string[]): void {
     // ...
 } // 如果使用同步操作，需要考虑到容器弱网或无网等极端情况发生
 ```
-<SourceLink name="appfreezecase.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L42-L49" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L42-L49">appfreezecase.ets</a></div>
 
 ### 分析思路
 
@@ -579,7 +577,7 @@ async function xxxFunction2(fileUris : string[]) : Promise<void> {
     // ...
 }
 ```
-<SourceLink name="appfreezecase.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L53-L61" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppFreeze/entry/src/main/ets/pages/appfreezecase.ets#L53-L61">appfreezecase.ets</a></div>
 
 ### 建议与总结
 

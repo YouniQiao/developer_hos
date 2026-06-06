@@ -30,7 +30,7 @@ const config = {
 
   onBrokenLinks: 'warn',
   markdown: {
-    format: 'md',
+    format: 'detect',
     hooks: {
       onBrokenMarkdownLinks: 'warn',
       onBrokenMarkdownImages: 'warn',
@@ -53,7 +53,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['dev/app-dev/getting-started/**', 'dev/app-dev/multi-device/**'],
+          include: ['dev/app-dev/getting-started/**', 'dev/app-dev/multi-device/**', 'quality/**', 'security/**'],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],
           editUrl:

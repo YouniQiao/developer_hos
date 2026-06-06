@@ -1,5 +1,7 @@
 // @ts-check
-// Dev sidebar — 应用框架 only (fast local preview).
+// Dev sidebar — 快速本地预览（入门与准备 + 多设备开发 + 质量 + 安全）。
+
+const qualitySidebarConfig = require('./sidebars-quality.js');
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
@@ -116,4 +118,21 @@ const sidebars = {
   ]
 };
 
-module.exports = sidebars;
+const securitySidebar = [
+  'security/app-privacy-protection',
+  'security/data-security',
+  'security/security-encode',
+  'security/asset-protection',
+  'security/code-obfuscation',
+  'security/permission-application',
+  'security/network-ca-security',
+  'security/cross-platform-compatibility',
+  'security/device-id',
+  'security/arkweb-security',
+];
+
+module.exports = {
+  ...sidebars,
+  qualitySidebar: qualitySidebarConfig.qualitySidebar,
+  securitySidebar,
+};

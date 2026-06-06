@@ -3,7 +3,6 @@ title: "Swiper组件加载丢帧优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-swiper_high_performance_development_guide
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # Swiper组件加载丢帧优化
 
@@ -52,7 +51,7 @@ struct QuestionSwiperItem {
   }
 }
 ```
-<SourceLink name="LazyForEachSwiper.ets" url="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/LazyForEachSwiper.ets#L20-L71" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/LazyForEachSwiper.ets#L20-L71">LazyForEachSwiper.ets</a></div>
 
 Swiper主页面核心代码如下：
 
@@ -81,7 +80,7 @@ Swiper主页面核心代码如下：
     .margin({ top: 5 })
   }
   ```
-<SourceLink name="SwiperCoreCode.ets" url="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/SwiperCoreCode.ets#L12-L32" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/SwiperCoreCode.ets#L12-L32">SwiperCoreCode.ets</a></div>
 
 * 使用LazyForEach加载页面
 
@@ -92,7 +91,7 @@ Swiper主页面核心代码如下：
     }, (item: Question) => item.id)
   }
   ```
-<SourceLink name="LazyForEachSwiper.ets" url="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/LazyForEachSwiper.ets#L93-L97" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/LazyForEachSwiper.ets#L93-L97">LazyForEachSwiper.ets</a></div>
 
 **表1** 当总题量为1000时，ForEach与LazyForEach的性能对比
 
@@ -162,7 +161,7 @@ struct SwiperItem {
   }
 }
 ```
-<SourceLink name="SwiperCoreCode.ets" url="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/SwiperCoreCode.ets#L43-L74" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/SwiperCoreCode.ets#L43-L74">SwiperCoreCode.ets</a></div>
 
 Swiper主页面核心代码如下：
 
@@ -196,7 +195,7 @@ struct TestCodeTwo {
   }
 }
 ```
-<SourceLink name="SwiperCoreCode.ets" url="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/SwiperCoreCode.ets#L82-L109" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/SwiperCoreCode.ets#L82-L109">SwiperCoreCode.ets</a></div>
 
 为了测试不同缓存数量对性能的影响，将 `cachedCount` 的值分别设置为 1、2、4、8。基于案例程序，测试不同缓存数量对帧率和内存占用的影响。
 
@@ -258,7 +257,7 @@ struct PreloadSwiperItem {
   }
 }
 ```
-<SourceLink name="PreloadDataSwiper.ets" url="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/PreloadDataSwiper.ets#L37-L85" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/PreloadDataSwiper.ets#L37-L85">PreloadDataSwiper.ets</a></div>
 
 ![](./img/40efbc3e.png)
 
@@ -297,7 +296,7 @@ Swiper主页面核心代码：
     }
   }
   ```
-<SourceLink name="SwiperCoreCodeNoPreLoadData.ets" url="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/SwiperCoreCodeNoPreLoadData.ets#L15-L43" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/SwiperCoreCodeNoPreLoadData.ets#L15-L43">SwiperCoreCodeNoPreLoadData.ets</a></div>
 
 * 提前加载数据
 
@@ -323,7 +322,7 @@ Swiper主页面核心代码：
     }
   })
   ```
-<SourceLink name="PreloadDataSwiper.ets" url="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/PreloadDataSwiper.ets#L104-L131" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/SwiperPerformance/blob/master/entry/src/main/ets/pages/PreloadDataSwiper.ets#L104-L131">PreloadDataSwiper.ets</a></div>
 
 性能分析：
 

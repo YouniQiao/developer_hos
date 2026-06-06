@@ -3,8 +3,6 @@ title: "网络资源合理使用"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-network-use
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 网络资源合理使用
 
 无长时任务的应用退到后台时，主动断开TCP和UDP连接。
@@ -36,7 +34,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
-<SourceLink name="Https.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Https.ets#L7-L25" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Https.ets#L7-L25">Https.ets</a></div>
 
 有关HTTP数据请求相关接口的使用，详情可以参考[使用HTTP访问网络](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request)。
 
@@ -66,7 +64,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
-<SourceLink name="Socket.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Socket.ets#L7-L28" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Socket.ets#L7-L28">Socket.ets</a></div>
 
 有关网络Socket相关接口的使用，详情可以参考[使用Socket访问网络](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/socket-connection)。
 
@@ -102,6 +100,6 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
-<SourceLink name="WebSocket.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/WebSocket.ets#L7-L37" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/WebSocket.ets#L7-L37">WebSocket.ets</a></div>
 
 有关网络WebSocket相关接口的使用，详情可以参考[使用WebSocket访问网络](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/websocket-connection)。

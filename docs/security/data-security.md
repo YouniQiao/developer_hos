@@ -5,7 +5,6 @@ format: md
 ---
 
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 应用数据安全
 
@@ -116,7 +115,7 @@ getEl2Path(): void {
   this.message = filePath;
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L68-L73" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L68-L73">Index.ets</a></div>
 
 需要获取el1的路径时，修改AreaMode。代码如下：
 
@@ -128,7 +127,7 @@ getEl1Path(): void {
   this.message = filePath;
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L77-L82" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L77-L82">Index.ets</a></div>
 
 如果应用没有特殊需求，应将数据存储在el2加密目录中。
 
@@ -220,7 +219,7 @@ function readFile(filePath: string): string {
   return '';
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L93-L125" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L93-L125">Index.ets</a></div>
 
 * 数据加解密
 
@@ -244,7 +243,7 @@ function GetAesGenerateProperties(): Array<huks.HuksParam> {
   return properties;
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L139-L152" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L139-L152">Index.ets</a></div>
 
 加密函数的算法规格必须与生成算法密钥的配置一致。
 
@@ -280,7 +279,7 @@ function GetAesEncryptProperties(): Array<huks.HuksParam> {
   return properties;
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L156-L177" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L156-L177">Index.ets</a></div>
 
 解密函数的算法规格应与加密算法的配置一致，但需将密钥用途设置为解密。
 
@@ -308,7 +307,7 @@ function GetAesDecryptProperties(): Array<huks.HuksParam> {
   return properties;
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L181-L202" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L181-L202">Index.ets</a></div>
 
 完成上述配置后，调用生成算法的key函数。
 
@@ -327,7 +326,7 @@ async function GenerateAesKey(): Promise<void> {
     })
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L206-L218" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L206-L218">Index.ets</a></div>
 
 生成算法密钥后即可进行加解密。加解密过程中，先获取相应配置，然后调用initSession和finishSession完成操作。
 
@@ -379,7 +378,7 @@ async function DecryptData(): Promise<void> {
     })
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L222-L267" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppDataSecurity/entry/src/main/ets/pages/Index.ets#L222-L267">Index.ets</a></div>
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/a2/v3/W0VeVptZQEGEjQoICZ5myQ/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080656Z&HW-CC-Expire=86400&HW-CC-Sign=479B025950C2E19E442A43F9B8A3207FA92B04AF3D436605A78A9CD0CE576B65)
 

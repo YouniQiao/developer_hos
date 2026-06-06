@@ -3,8 +3,6 @@ title: "操作延时触发"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-delayed-trigger-operation
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 操作延时触发
 
 #### **延迟加载Lazy-Import与动态加载await import**
@@ -61,7 +59,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index2.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/Index2.ets#L2-L29" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/Index2.ets#L2-L29">Index2.ets</a></div>
 
 ```ts
 // entry\src\main\ets\pages\DeviceInfo.ets
@@ -76,7 +74,7 @@ hilog.info(0x0000, 'testTag', 'export %{public}s', storage);
 
 export { name, screen, storage };
 ```
-<SourceLink name="DeviceInfo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/DeviceInfo.ets#L2-L13" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/DeviceInfo.ets#L2-L13">DeviceInfo.ets</a></div>
 
 使用体检工具[体检工具](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization#section16955857103112)可以查看冷启动阶段未使用的模块和这些模块的加载耗时。将这些未使用模块（storage和screen）从关键路径中剥离，添加lazy标识进行延迟加载。修改后，从下图Trace中可以观察到冷启动阶段仅加载了DeviceName模块。OtherDeviceInfo模块被推迟到用户首次点击文本时才会执行。从修改前后的Trace可以看出，冷启动耗时有所降低。
 
@@ -112,7 +110,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/Index.ets#L2-L30" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/Index.ets#L2-L30">Index.ets</a></div>
 
 ```ts
 // entry\src\main\ets\pages\DeviceName.ets
@@ -123,7 +121,7 @@ hilog.info(0x0000, 'testTag', 'export %{public}s', name);
 
 export { name };
 ```
-<SourceLink name="DeviceName.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/DeviceName.ets#L2-L9" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/DeviceName.ets#L2-L9">DeviceName.ets</a></div>
 
 ```ts
 // entry\src\main\ets\pages\OtherDeviceInfo.ets
@@ -136,7 +134,7 @@ hilog.info(0x0000, 'testTag', 'export %{public}s', storage);
 
 export { screen, storage };
 ```
-<SourceLink name="OtherDeviceInfo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/OtherDeviceInfo.ets#L2-L11" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/OtherDeviceInfo.ets#L2-L11">OtherDeviceInfo.ets</a></div>
 
 ### 动态加载await import
 
@@ -170,7 +168,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index2.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/DynamicLoad/entry/src/main/ets/pages/Index2.ets#L2-L26" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/DynamicLoad/entry/src/main/ets/pages/Index2.ets#L2-L26">Index2.ets</a></div>
 
 ```ts
 // entry\src\main\ets\pages\name.ets
@@ -212,7 +210,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/DynamicLoad/entry/src/main/ets/pages/Index.ets#L2-L31" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/DynamicLoad/entry/src/main/ets/pages/Index.ets#L2-L31">Index.ets</a></div>
 
 ![](./img/c0d5c7ff.png "点击放大")
 

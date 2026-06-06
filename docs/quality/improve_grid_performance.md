@@ -3,8 +3,6 @@ title: "Grid组件加载丢帧优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve_grid_performance
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # Grid组件加载丢帧优化
 
 ## 概述
@@ -123,7 +121,7 @@ struct GridExample {
   }
 }
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/GridComponentLoadSlow/entry/src/main/ets/pages/Index.ets#L17-L104" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/GridComponentLoadSlow/entry/src/main/ets/pages/Index.ets#L17-L104">Index.ets</a></div>
 
 **正例：**使用GridLayoutOptions设置GridItem大小，布局效果和反例保持一致。
 
@@ -221,7 +219,7 @@ struct GridExample2 {
   }
 }
 ```
-<SourceLink name="RightIndex.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/GridComponentLoadSlow/entry/src/main/ets/pages/RightIndex.ets#L17-L108" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/GridComponentLoadSlow/entry/src/main/ets/pages/RightIndex.ets#L17-L108">RightIndex.ets</a></div>
 
 ### 分析步骤
 

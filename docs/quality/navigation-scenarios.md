@@ -3,8 +3,6 @@ title: "导航定位场景低功耗规则"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-navigation-scenarios
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 导航定位场景低功耗规则
 
 ## 规则
@@ -44,7 +42,7 @@ audio.createAudioRenderer(audioRendererOptions, (err, data) => {
   }
 });
 ```
-<SourceLink name="NavigationAndPositioningRule.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/NavigationAndPositioningRule.ets#L21-L46" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/NavigationAndPositioningRule.ets#L21-L46">NavigationAndPositioningRule.ets</a></div>
 
 ## 调测验证
 

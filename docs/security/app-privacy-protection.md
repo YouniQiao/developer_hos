@@ -5,7 +5,6 @@ format: md
 ---
 
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 应用隐私保护
 
@@ -137,7 +136,7 @@ import SourceLink from '@site/src/components/SourceLink';
      }
    }
    ```
-<SourceLink name="module.json5" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/module.json5#L2-L82" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/module.json5#L2-L82">module.json5</a></div>
 2. 在需要使用位置信息的代码块中，动态申请 ohos.permission.APPROXIMATELY\_LOCATION权限。
 
    ```
@@ -158,7 +157,7 @@ import SourceLink from '@site/src/components/SourceLink';
            Logger.info(`request permissions result: ${JSON.stringify(data)}`);
          })
    ```
-<SourceLink name="ApproximatelyLocationDemo.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/ApproximatelyLocationDemo.ets#L29-L69" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/ApproximatelyLocationDemo.ets#L29-L69">ApproximatelyLocationDemo.ets</a></div>
 3. 获取位置信息的接口相同，但模糊定位和精确定位的返回结果精确度不同。
 
    ```
@@ -176,7 +175,7 @@ import SourceLink from '@site/src/components/SourceLink';
      Logger.error(`geoLocation getCurrentLocation: error: ${JSON.stringify(error)}`)
    });
    ```
-<SourceLink name="ApproximatelyLocationDemo.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/ApproximatelyLocationDemo.ets#L86-L100" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/ApproximatelyLocationDemo.ets#L86-L100">ApproximatelyLocationDemo.ets</a></div>
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/c7/v3/vyZYEGM1T9mO3py_f1vSdQ/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080345Z&HW-CC-Expire=86400&HW-CC-Sign=D7C6648FB0E466A02E9680BFB6261A9A2688CDF25BB211B30F564CC133ABF35B)
 
@@ -225,7 +224,7 @@ struct PickerDemo {
   }
 }
 ```
-<SourceLink name="PickerDemo.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/PickerDemo.ets#L17-L66" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/PickerDemo.ets#L17-L66">PickerDemo.ets</a></div>
 
 ### 动态申请敏感权限
 
@@ -256,7 +255,7 @@ struct PickerDemo {
   }
 }
 ```
-<SourceLink name="module.json5" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/module.json5#L3-L83" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/module.json5#L3-L83">module.json5</a></div>
 
 ```
 // string.json
@@ -284,7 +283,7 @@ accessManager.requestPermissionsFromUser(this.getUIContext().getHostContext(), [
     }
   })
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/Index.ets#L37-L55" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/AppPrivacyProtection/entry/src/main/ets/pages/Index.ets#L37-L55">Index.ets</a></div>
 
 ## 总结与回顾
 

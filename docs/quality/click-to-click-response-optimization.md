@@ -3,8 +3,6 @@ title: "点击响应时延分析"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-click-response-optimization
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 点击响应时延分析
 
 ## 响应优化概述
@@ -208,7 +206,7 @@ Image组件支持异步加载特性，先显示空白占位块，图片加载完
 Image('https://example.com/icon.png')
   .syncLoad(false)
 ```
-<SourceLink name="Index.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ClickResponseOptimization/entry/src/main/ets/pages/Index.ets#L35-L37" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ClickResponseOptimization/entry/src/main/ets/pages/Index.ets#L35-L37">Index.ets</a></div>
 
 如果展示的图片数量很少或加载本地图片，建议将syncLoad属性配置为true，以同步加载图片，避免特定情况下图片加载出现闪烁。
 

@@ -5,7 +5,6 @@ format: md
 ---
 
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 加解密跨平台数据兼容性
 
@@ -61,7 +60,7 @@ import SourceLink from '@site/src/components/SourceLink';
     return textDecoder.decodeToString(input);
   }
   ```
-<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L267-L278" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L267-L278">DataConversion.ets</a></div>
 
 * Base64编码格式字符串与Uint8Array类型的转换
 
@@ -82,7 +81,7 @@ import SourceLink from '@site/src/components/SourceLink';
     return base64Helper.encodeToStringSync(input);
   }
   ```
-<SourceLink name="DataConversion.ets" url="https://gitcode.com/HarmonyOS_Samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L281-L292" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L281-L292">DataConversion.ets</a></div>
 
 * 16进制编码格式字符串与Uint8Array类型的转换
 
@@ -102,7 +101,7 @@ import SourceLink from '@site/src/components/SourceLink';
     return hexString;
   }
   ```
-<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L295-L309" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L295-L309">DataConversion.ets</a></div>
 
 ## 加解密算法使用差异
 
@@ -153,7 +152,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
     }
   }
   ```
-<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L38-L61" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L38-L61">DataConversion.ets</a></div>
 
   同理，可通过[使用密钥参数生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#使用密钥参数生成-3)SM2私钥。
 
@@ -177,7 +176,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
     }
   }
   ```
-<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L71-L89" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L71-L89">DataConversion.ets</a></div>
 
 * SM2密文格式转换
 
@@ -256,7 +255,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
     }
   }
   ```
-<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L205-L264" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L205-L264">DataConversion.ets</a></div>
 
   同理，HarmonyOS平台生成的C1C3C2顺序的ASN.1格式密文在其他平台使用时，需要先解码为C1C3C2的裸密文。
 
@@ -287,7 +286,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
     return primal_data;
   }
   ```
-<SourceLink name="DataConversion.ets" url="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L170-L195" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L170-L195">DataConversion.ets</a></div>
 
 ### AES加解密
 

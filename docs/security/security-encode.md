@@ -5,7 +5,6 @@ format: md
 ---
 
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 应用安全编码实践
 
@@ -123,7 +122,7 @@ import { Want } from '@kit.AbilityKit';
       hilog.error(0x0000, 'privacy', 'startAbility  with error message: ' + err.message + ', error code: ' + err.code);
     }
 ```
-<SourceLink name="NoInfoJumpTo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/NoInfoJumpTo.ets#L22-L46" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/NoInfoJumpTo.ets#L22-L46">NoInfoJumpTo.ets</a></div>
 
 通过示例代码中的action："ability.want.test" 可以隐式启动组件。如果恶意应用也声明了相同的action，隐式调用时将显示一个列表供用户选择。如果用户选择了恶意应用，该应用可能会获取传递的敏感信息。
 
@@ -148,7 +147,7 @@ import { Want } from '@kit.AbilityKit';
       hilog.error(0x0000, 'privacy', 'startAbility  with error message: ' + err.message + ', error code: ' + err.code);
     }
 ```
-<SourceLink name="NoInfoJumpTo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NoInfoJumpTo.ets#L22-L48" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/NoInfoJumpTo.ets#L22-L48">NoInfoJumpTo.ets</a></div>
 
 这里显式指定了需要拉起的应用组件的bundleName和abilityName，只会拉起指定的目标组件。
 
@@ -207,7 +206,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="PrivacyMode.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/PrivacyMode.ets#L21-L59" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/PrivacyMode.ets#L21-L59">PrivacyMode.ets</a></div>
 
 ## 公共事件安全
 
@@ -237,7 +236,7 @@ function publishEventWithData() {
   })
 }
 ```
-<SourceLink name="PublicSafeInfo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/PublicSafeInfo.ets#L22-L37" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/PublicSafeInfo.ets#L22-L37">PublicSafeInfo.ets</a></div>
 
 发送了一个包含联系人数据的公共事件，但未设置接收方所需的权限。
 
@@ -262,7 +261,7 @@ function publishEventWithData() {
   })
 }
 ```
-<SourceLink name="PublicSafeInfo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/PublicSafeInfo.ets#L22-L38" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/PublicSafeInfo.ets#L22-L38">PublicSafeInfo.ets</a></div>
 
 通过subscriberPermissions字段设置接收权限，发布者要求订阅者具有“ohos.permission.READ\_CONTACTS”权限，才能接收携带联系人数据的公共事件。
 
@@ -311,7 +310,7 @@ try {
   hilog.error(0x0000, 'privacy', `createSubscriber failed, code is ${err.code}, message is ${err.message}`);
 }
 ```
-<SourceLink name="PublicSensitive.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/PublicSensitive.ets#L22-L56" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/PublicSensitive.ets#L22-L56">PublicSensitive.ets</a></div>
 
 <strong>正确示例:</strong>
 
@@ -353,7 +352,7 @@ try {
   hilog.error(0x0000, 'privacy', `createSubscriber failed, code is ${err.code}, message is ${err.message}`);
 }
 ```
-<SourceLink name="PublicSensitive.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/PublicSensitive.ets#L22-L57" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/PublicSensitive.ets#L22-L57">PublicSensitive.ets</a></div>
 
 常见敏感功能和对外提供的公共事件存在利用风险。建议对涉及这些情况的公共事件设置权限保护。
 
@@ -420,7 +419,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="WebUrlSafe.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/WebUrlSafe.ets#L21-L63" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/WebUrlSafe.ets#L21-L63">WebUrlSafe.ets</a></div>
 
 <strong>例外：</strong>如果应用本身是提供URL加载能力的，譬如浏览器等，可以例外。但是要注意，如果应用也提供了敏感的JS接口，要注意防范可能的被恶意调用的风险。
 
@@ -458,7 +457,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="RunJavaScript.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/RunJavaScript.ets#L22-L49" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/RunJavaScript.ets#L22-L49">RunJavaScript.ets</a></div>
 
 加载的index.html文件内容如下：
 
@@ -477,7 +476,7 @@ Hello world!
 </script>
 </html>
 ```
-<SourceLink name="index.html" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/resources/rawfile/index.html#L9-L21" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/resources/rawfile/index.html#L9-L21">index.html</a></div>
 
 如果加载的脚本内容不可信，可能会导致恶意JavaScript代码的加载，引发XSS攻击。若Web组件注册了敏感的JavaScript接口，恶意代码还可能调用这些接口，进一步影响应用的安全性。
 
@@ -522,7 +521,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="RunJavaScriptTrustList.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/RunJavaScriptTrustList.ets#L22-L56" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/RunJavaScriptTrustList.ets#L22-L56">RunJavaScriptTrustList.ets</a></div>
 
 <strong>错误示例：</strong>
 
@@ -557,7 +556,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="RunJavaScriptTrustList.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/RunJavaScriptTrustList.ets#L22-L50" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/RunJavaScriptTrustList.ets#L22-L50">RunJavaScriptTrustList.ets</a></div>
 
 ### 避免将mixedMode属性配置成All
 
@@ -581,7 +580,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="MixedMode.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/MixedMode.ets#L22-L35" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/MixedMode.ets#L22-L35">MixedMode.ets</a></div>
 
 应该去掉此配置项，或者选择MixedMode.None模式。
 
@@ -613,7 +612,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="OnSslErrorEventReceive.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/OnSslErrorEventReceive.ets#L22-L39" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/OnSslErrorEventReceive.ets#L22-L39">OnSslErrorEventReceive.ets</a></div>
 
 <strong>错误示例：</strong>
 
@@ -635,7 +634,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="OnSslErrorEventReceive.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/OnSslErrorEventReceive.ets#L22-L37" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/OnSslErrorEventReceive.ets#L22-L37">OnSslErrorEventReceive.ets</a></div>
 
 如果在SSL校验出错时直接调用handleConfirm()函数，页面将忽略SSL错误并继续加载，从而导致中间人攻击等风险。
 
@@ -681,7 +680,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="GeolocationAccess.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/GeolocationAccess.ets#L22-L53" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/GeolocationAccess.ets#L22-L53">GeolocationAccess.ets</a></div>
 
 <strong>错误示例：</strong>
 
@@ -707,7 +706,7 @@ struct WebComponent {
   }
 }
 ```
-<SourceLink name="GeolocationAccess.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/GeolocationAccess.ets#L22-L41" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/GeolocationAccess.ets#L22-L41">GeolocationAccess.ets</a></div>
 
 在使用位置权限的场景中，不能直接返回位置信息。必须先明确告知用户并获得其同意后，才能返回位置信息。
 
@@ -760,7 +759,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="JavaScriptProxy.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/JavaScriptProxy.ets#L22-L60" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/JavaScriptProxy.ets#L22-L60">JavaScriptProxy.ets</a></div>
 
 H5攻击界面：
 
@@ -782,7 +781,7 @@ Hello js call ets interface!
 </body>
 </html>
 ```
-<SourceLink name="H5CallETS.html" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/resources/rawfile/H5CallETS.html#L22-L37" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/resources/rawfile/H5CallETS.html#L22-L37">H5CallETS.html</a></div>
 
 提供了一个ST接口，用于H5调用以获取全局认证凭据。如果H5存在漏洞，攻击者可能获取此ST并冒充用户访问云服务上的个人数据，进行恶意操作。
 
@@ -859,7 +858,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="TrustListCheck.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/TrustListCheck.ets#L22-L84" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/TrustListCheck.ets#L22-L84">TrustListCheck.ets</a></div>
 
 2. 使用URL库进行URL格式化，准确获取URL各字段值并校验是否在业务预置的白名单内。
 
@@ -928,7 +927,7 @@ struct Index {
   }
 }
 ```
-<SourceLink name="UrlListCheck.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/UrlListCheck.ets#L22-L84" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/UrlListCheck.ets#L22-L84">UrlListCheck.ets</a></div>
 
 <strong>第二种方法：</strong>针对H5页面申请一个新的H5Token，并严格限定此H5Token可以调用的云服务业务接口在最小范围内。
 
@@ -968,7 +967,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
-<SourceLink name="CheckWantOne.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/CheckWantOne.ets#L23-L46" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/CheckWantOne.ets#L23-L46">CheckWantOne.ets</a></div>
 
 2. 使用Want的数据前，进行try...catch异常捕获，以防止应用崩溃，并且可以定位问题。
 
@@ -1017,7 +1016,7 @@ export default class EntryAbility extends UIAbility {
   }
 }
 ```
-<SourceLink name="CheckWantTwo.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/CheckWantTwo.ets#L22-L64" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/CheckWantTwo.ets#L22-L64">CheckWantTwo.ets</a></div>
 
 应用获取外部不可信Want的方式有很多种，例如：
 
@@ -1040,7 +1039,7 @@ onConnect(want: Want): rpc.RemoteObject;
 onDisconnect(want: Want): void;
 onReconnect(want: Want): void;
 ```
-<SourceLink name="WantScene.ts" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/WantScene.ts#L26-L40" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/WantScene.ts#L26-L40">WantScene.ts</a></div>
 
 ## 数据存储安全
 
@@ -1093,7 +1092,7 @@ function exesql(sql: string) {
   }
 }
 ```
-<SourceLink name="UntrustedDataToSQL.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/UntrustedDataToSQL.ets#L22-L57" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/UntrustedDataToSQL.ets#L22-L57">UntrustedDataToSQL.ets</a></div>
 
 如果直接使用用户输入作为查询参数，恶意用户可以输入类似“1' OR 'a' = 'a”的字符串，导致 SQL 语句变为select \* from book where name='1' OR 'a' = 'a'，从而引发 SQL 注入攻击。因此，禁止直接使用外部输入作为查询字符串的一部分，或者在拼接 SQL 语句之前，对外部输入进行字符校验。
 
@@ -1126,7 +1125,7 @@ function readFile(fileName: string) {
   }
 }
 ```
-<SourceLink name="UntrustedDataToSQL.ets" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/UntrustedDataToSQL.ets#L66-L76" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/PrivacyError/src/main/ets/pages/UntrustedDataToSQL.ets#L66-L76">UntrustedDataToSQL.ets</a></div>
 
 ## 配置安全
 

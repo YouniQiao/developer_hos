@@ -4,7 +4,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-s
 format: md
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # JS内存泄漏问题检测方法
 
@@ -156,7 +155,7 @@ class People {
 };
 let p = new People(20, "Tom");
 ```
-<SourceLink name="MemoryLeakDetection.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/MemoryDetection/entry/src/main/ets/pages/MemoryLeakDetection.ets#L7-L21" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/MemoryDetection/entry/src/main/ets/pages/MemoryLeakDetection.ets#L7-L21">MemoryLeakDetection.ets</a></div>
 
 采集到的snapshot数据如下：
 

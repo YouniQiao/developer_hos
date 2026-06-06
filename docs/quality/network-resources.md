@@ -3,8 +3,6 @@ title: "网络资源低功耗建议"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-network-resources
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # 网络资源低功耗建议
 
 ## 建议
@@ -19,6 +17,6 @@ import SourceLink from '@site/src/components/SourceLink';
 // Load web resources in advance
 this.webviewController.prefetchPage('url');
 ```
-<SourceLink name="NetworkResourcePage.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/NetworkResourcePage.ets#L30-L31" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/RationalUseOfFrontEndResources/entry/src/main/ets/pages/NetworkResourcePage.ets#L30-L31">NetworkResourcePage.ets</a></div>
 
 在小视频场景中，也有类似的预加载接口，用于加载当前片源的后续片源。建议预加载的片源数量不超过5个以优化功耗。

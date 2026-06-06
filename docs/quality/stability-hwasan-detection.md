@@ -3,7 +3,6 @@ title: "使用HWASan检测内存错误"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-hwasan-detection
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 使用HWASan检测内存错误
 
@@ -177,7 +176,7 @@ int Run(int argc)
     return ptrEx[argc];
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L166-L200" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L166-L200">address_problems.cpp</a></div>
 
 **影响**
 
@@ -232,7 +231,7 @@ void HeapBufferUnderflowEx()
     free(buffer);
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L209-L229" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L209-L229">address_problems.cpp</a></div>
 
 **影响**
 
@@ -292,7 +291,7 @@ void DoubleFreeEx()
     free(p);
 }
 ```
-<SourceLink name="address_problems.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L238-L253" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/MemoryDetection/entry/src/main/cpp/address_problems.cpp#L238-L253">address_problems.cpp</a></div>
 
 **影响**
 

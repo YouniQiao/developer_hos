@@ -3,8 +3,6 @@ title: "Buffer低功耗优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-buffer-power-optimization
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
-
 # Buffer低功耗优化
 
 ## 概述
@@ -90,7 +88,7 @@ struct MyWebComponent {
   }
 }
 ```
-<SourceLink name="buffer_power_example.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/buffer_power_example.ets#L24-L45" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/buffer_power_example.ets#L24-L45">buffer_power_example.ets</a></div>
 
 ![](./img/a30df648.png)
 
@@ -143,7 +141,7 @@ export struct MyVideoComponent {
   }
 }
 ```
-<SourceLink name="buffer_power_example.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/buffer_power_example.ets#L49-L84" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/buffer_power_example.ets#L49-L84">buffer_power_example.ets</a></div>
 
 如上代码所示，开发者可利用可见性监听，判断当前呈现自绘制内容的ArkUI组件是否位于显示范围，通过控制Video.controller，控制视频在可见时播放，不可见时停止。
 
@@ -209,7 +207,7 @@ export struct MyVideoComponent_opacity {
   }
 }
 ```
-<SourceLink name="buffer_power_example.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/buffer_power_example.ets#L89-L110" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/PowerAnalysis/LowerPowerSample/entry/src/main/ets/pages/buffer_power_example.ets#L89-L110">buffer_power_example.ets</a></div>
 
 修改好的Trace表现如下图所示，在直通情况下，自绘制图层在图中“1”处获取Buffer，“2”处释放Buffer，无需交由RSUniRender进行重绘计算，也没有DisplayNode的刷新显示，达到预期的低功耗效果。
 

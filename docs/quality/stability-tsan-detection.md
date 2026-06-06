@@ -3,7 +3,6 @@ title: "使用TSan检测线程问题"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-tsan-detection
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 使用TSan检测线程问题
 
@@ -132,7 +131,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
-<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L6-L32" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L6-L32">UseTSANToDetectThreadingIssues.cpp</a></div>
 
 **影响**
 
@@ -211,7 +210,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
-<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L36-L88" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L36-L88">UseTSANToDetectThreadingIssues.cpp</a></div>
 
 **影响**
 
@@ -275,7 +274,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
-<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L92-L125" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L92-L125">UseTSANToDetectThreadingIssues.cpp</a></div>
 
 **影响**
 
@@ -346,7 +345,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
-<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L129-L169" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L129-L169">UseTSANToDetectThreadingIssues.cpp</a></div>
 
 **影响**
 
@@ -407,7 +406,7 @@ static napi_value Add(napi_env env, napi_callback_info info)
     ...
 }
 ```
-<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L173-L204" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L173-L204">UseTSANToDetectThreadingIssues.cpp</a></div>
 
 **影响**
 
@@ -459,7 +458,7 @@ static napi_value Add(napi_env env, napi_callback_info info){
     ...
 }
 ```
-<SourceLink name="UseTSANToDetectThreadingIssues.cpp" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L208-L228" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/bacbf85d70037d5aad5457a63ce3cb1e9bce283b/ThreadIssueDetection/entry/src/main/ets/cpp/UseTSANToDetectThreadingIssues.cpp#L208-L228">UseTSANToDetectThreadingIssues.cpp</a></div>
 
 **影响**
 

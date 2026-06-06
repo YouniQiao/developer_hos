@@ -3,7 +3,6 @@ title: "图片资源加载优化"
 original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-texture-compression-improve-performance
 ---
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 图片资源加载优化
 
@@ -100,7 +99,7 @@ filters：在filters属性中可配置method、files和exclude三个属性对象
     }
   }},
 ```
-<SourceLink name="build-profile.json5" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/TextureHypercompression/build-profile.json5#L17-L57" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/TextureHypercompression/build-profile.json5#L17-L57">build-profile.json5</a></div>
 
 配置项注意点：
 
@@ -303,7 +302,7 @@ build() {
   .backgroundColor('#F1F3F5')
 }
 ```
-<SourceLink name="OptimizeWebImagesUsingCDN.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/TextureHypercompression/entry/src/main/ets/pages/OptimizeWebImagesUsingCDN.ets#L19-L34" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/TextureHypercompression/entry/src/main/ets/pages/OptimizeWebImagesUsingCDN.ets#L19-L34">OptimizeWebImagesUsingCDN.ets</a></div>
 
 ![](./img/a2aa030c.png)
 
@@ -331,7 +330,7 @@ Image(this.imageUrl)
   .height(200)
   .autoResize(true)
 ```
-<SourceLink name="UseAutoResizeToDownsampleTheImageComponent.ets" url="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/TextureHypercompression/entry/src/main/ets/pages/UseAutoResizeToDownsampleTheImageComponent.ets#L29-L32" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/TextureHypercompression/entry/src/main/ets/pages/UseAutoResizeToDownsampleTheImageComponent.ets#L29-L32">UseAutoResizeToDownsampleTheImageComponent.ets</a></div>
 
 ## 总结
 

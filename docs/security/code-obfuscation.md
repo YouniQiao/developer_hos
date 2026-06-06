@@ -5,7 +5,6 @@ format: md
 ---
 
 
-import SourceLink from '@site/src/components/SourceLink';
 
 # 应用代码混淆
 
@@ -38,7 +37,7 @@ import SourceLink from '@site/src/components/SourceLink';
     }
   },
   ```
-<SourceLink name="build-profile.json5" url="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/build-profile.json5#L12-L23" />
+<div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/Privacy/privacy/build-profile.json5#L12-L23">build-profile.json5</a></div>
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/bb/v3/hN0izdOhSTWvHbmMMJ5eOA/caution_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080659Z&HW-CC-Expire=86400&HW-CC-Sign=59BEF04289CB7E17D20420E403CC7D015013E424F4B018DD81EF814CEB0C0E4B)
 
