@@ -33,36 +33,55 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Ensure swap (16GB safety net)
-        run: |
-          if [ $(free -m | awk '/^Swap:/{print $2}') -lt 14336 ]; then
-            echo "📦 创建 16GB swap..."
-            swapoff /swapfile 2>/dev/null || true; rm -f /swapfile
-            fallocate -l 16G /swapfile
-            chmod 600 /swapfile
-            mkswap /swapfile
-            swapon /swapfile
-            echo "✅ swap 已启用: $(free -h | grep Swap)"
-          else
-            echo "✅ swap 已足够 (≥14GB), 跳过"
-          fi
-
-      - name: Setup zram (16GB compressed RAM swap)
-        run: |
-          if ! swapon --show | grep -q zram; then
-            echo "📦 启用 16GB zram (内存压缩)..."
-            modprobe zram
-            echo 16G > /sys/block/zram0/disksize
-            mkswap /dev/zram0
-            swapon -p 100 /dev/zram0
-          fi
-          echo "✅ swap 状态:"
-          swapon --show
-
+      # DISABLED: swappiness/zram tuning may interfere with Node.js GC
+      # - name: Ensure swap (16GB safety net)
+      #   run: |
+      #     if [ $(free -m | awk '/^Swap:/{print $2}') -lt 14336 ]; then
+      #       echo "📦 创建 16GB swap..."
+      #       swapoff /swapfile 2>/dev/null || true; rm -f /swapfile
+      #       fallocate -l 16G /swapfile
+      #       chmod 600 /swapfile
+      #       mkswap /swapfile
+      #       swapon /swapfile
+      #       echo "✅ swap 已启用: $(free -h | grep Swap)"
+      #     else
+      #       echo "✅ swap 已足够 (≥14GB), 跳过"
+      #     fi
+      #
+      # - name: Setup zram (16GB compressed RAM swap)
+      #   run: |
+      #     if ! swapon --show | grep -q zram; then
+      #       echo "📦 启用 16GB zram (内存压缩)..."
+      #       modprobe zram
+      #       echo 16G > /sys/block/zram0/disksize
+      #       mkswap /dev/zram0
+      #       swapon -p 100 /dev/zram0
+      #     fi
+      #     echo "✅ swap 状态:"
+      #     swapon --show
+      #
+      # - name: Tune system for build
+      #   run: |
+      #     sysctl -w vm.swappiness=100
+      #     sysctl -w vm.vfs_cache_pressure=50
+      
       - name: Restore build caches (MDX + Rspack)
         run: |
           mkdir -p "$CACHE_DIR"
-          echo "⏭️  Skipping .docusaurus cache restore (force clean build)"
+          # Restore .docusaurus cache — skips compilation on cache hit
+          if [ -d "$CACHE_DIR/.docusaurus" ]; then
+            rm -rf .docusaurus
+            cp -r "$CACHE_DIR/.docusaurus" .docusaurus
+            echo "♻️  .docusaurus cache restored ($(du -sh .docusaurus | cut -f1))"
+          else
+            echo "🆕 首次构建，无缓存可恢复"
+          fi
+          # Restore bundler cache
+          if [ -d "$CACHE_DIR/bundler-cache" ]; then
+            mkdir -p node_modules/.cache
+            cp -r "$CACHE_DIR/bundler-cache"/* node_modules/.cache/
+            echo "♻️  bundler cache restored"
+          fi
 
       - name: Install deps (only when needed — preserve bundler cache)
         run: |
@@ -86,23 +105,11 @@ jobs:
             fi
           fi
 
-      - name: Tune system for build
-        run: |
-          sysctl -w vm.swappiness=100
-          sysctl -w vm.vfs_cache_pressure=50
-
       - name: Cleanup before build
         run: |
-          # Kill stale node processes from cancelled runs
           pkill -f "docusaurus build" 2>/dev/null || true
           pkill -f "webpack" 2>/dev/null || true
-          # Drop caches if we have permission
-          sync && echo 3 > /proc/sys/vm/drop_caches 2>/dev/null || true
           echo "🧹 清理完成, 当前内存: $(free -h | grep Mem)"
-          # Check cgroup memory limits
-          echo "--- cgroup memory ---"
-          cat /sys/fs/cgroup/memory/memory.limit_in_bytes 2>/dev/null || echo "no cgroup v1"
-          cat /sys/fs/cgroup/memory.max 2>/dev/null || echo "no cgroup v2"
 
       - name: Build (skip if fresh AND source unchanged)
         run: |
@@ -121,7 +128,7 @@ jobs:
               sleep 30
             done &
             MONITOR_PID=$!
-            nice -n -15 npx docusaurus build --no-minify
+            npx docusaurus build --no-minify
             BUILD_EXIT=$?
             kill $MONITOR_PID 2>/dev/null || true
             if [ $BUILD_EXIT -ne 0 ]; then
@@ -135,10 +142,6 @@ jobs:
         timeout-minutes: 360
         env:
           NODE_OPTIONS: '--max-old-space-size=8192'
-          GENERATE_SOURCEMAP: 'false'
-          UV_THREADPOOL_SIZE: '12'
-          DOCUSAURUS_SSG_WORKER_THREADS: '1'
-          DOCUSAURUS_SSG_CONCURRENCY: '1'
           HTTP_PROXY: ''
           HTTPS_PROXY: ''
 
