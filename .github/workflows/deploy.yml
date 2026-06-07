@@ -35,10 +35,18 @@ jobs:
       - name: Install deps
         run: npm ci
 
+      - name: Setup swap
+        run: |
+          sudo fallocate -l 8G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+
       - name: Build
         run: npx docusaurus build --no-minify
         env:
           NODE_OPTIONS: '--max-old-space-size=16384'
+          DOCUSAURUS_SSG_CONCURRENCY: '1'
 
       - name: Deploy to Netlify
         run: |
