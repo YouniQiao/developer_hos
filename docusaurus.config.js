@@ -51,7 +51,7 @@ const config = {
 
   onBrokenLinks: 'warn',
   markdown: {
-    format: 'md',
+    format: 'detect',
     hooks: {
       onBrokenMarkdownLinks: 'warn',
       onBrokenMarkdownImages: 'warn',
