@@ -32,20 +32,41 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Ensure swap (16GB safety net)
+        run: |
+          if [ $(free -m | awk '/^Swap:/{print $2}') -lt 14336 ]; then
+            echo "📦 创建 16GB swap..."
+            swapoff /swapfile 2>/dev/null || true; rm -f /swapfile
+            fallocate -l 16G /swapfile
+            chmod 600 /swapfile
+            mkswap /swapfile
+            swapon /swapfile
+            echo "✅ swap 已启用: $(free -h | grep Swap)"
+          else
+            echo "✅ swap 已足够 (≥14GB), 跳过"
+          fi
+
+      - name: Setup zram (16GB compressed RAM swap)
+        run: |
+          if ! swapon --show | grep -q zram; then
+            echo "📦 启用 16GB zram (内存压缩)..."
+            modprobe zram
+            echo 16G > /sys/block/zram0/disksize
+            mkswap /dev/zram0
+            swapon -p 100 /dev/zram0
+          fi
+          echo "✅ swap 状态:"
+          swapon --show
+
       - name: Restore build caches
         run: |
           mkdir -p "$CACHE_DIR"
           if [ -d "$CACHE_DIR/.docusaurus" ]; then
             rm -rf .docusaurus
             cp -r "$CACHE_DIR/.docusaurus" .docusaurus
-            echo "♻️  .docusaurus cache restored ($(du -sh .docusaurus | cut -f1))"
+            echo "♻️  .docusaurus restored ($(du -sh .docusaurus | cut -f1))"
           else
-            echo "🆕 首次构建，无缓存可恢复"
-          fi
-          if [ -d "$CACHE_DIR/bundler-cache" ]; then
-            mkdir -p node_modules/.cache
-            cp -r "$CACHE_DIR/bundler-cache"/* node_modules/.cache/
-            echo "♻️  bundler cache restored"
+            echo "🆕 no .docusaurus cache yet (first run)"
           fi
 
       - name: Install deps
@@ -68,10 +89,13 @@ jobs:
             fi
           fi
 
-      - name: Build
+      - name: Tune system for build
         run: |
-          echo "=== BUILD STEP STARTED $(date) ==="
-          export PATH="./node_modules/.bin:$PATH"
+          sysctl -w vm.swappiness=100
+          sysctl -w vm.vfs_cache_pressure=50
+
+      - name: Build (skip if fresh AND source unchanged)
+        run: |
           CURRENT_SHA=$(git rev-parse HEAD)
           if [ -f build/.build-success ] && [ -f build/.build-commit ] && \
              [ "$(cat build/.build-commit)" = "$CURRENT_SHA" ] && \
@@ -81,21 +105,17 @@ jobs:
             echo "🔨 开始全量构建 (${CURRENT_SHA:0:7})..."
             rm -rf build/
             ulimit -S -n 65536
-            echo -1000 > /proc/self/oom_score_adj 2>/dev/null || true
-            docusaurus build --no-minify
+            nice -n -15 npx docusaurus build --no-minify
             echo "$CURRENT_SHA" > build/.build-commit
             touch build/.build-success
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=8192'
-          HTTP_PROXY: ''
-          HTTPS_PROXY: ''
-          # Worker recycling to counter Docusaurus SSG require/webpack cache leak
-          # https://github.com/facebook/docusaurus/issues/11161
+          NODE_OPTIONS: '--max-old-space-size=16384 --max-semi-space-size=64 --v8-pool-size=8'
+          GENERATE_SOURCEMAP: 'false'
+          UV_THREADPOOL_SIZE: '12'
           DOCUSAURUS_SSG_WORKER_THREADS: '4'
-          DOCUSAURUS_SSG_WORKER_THREAD_TASK_SIZE: '5'
-          DOCUSAURUS_SSG_WORKER_THREAD_RECYCLER_MAX_MEMORY: '268435456'
+          DOCUSAURUS_SSG_CONCURRENCY: '2'
 
       - name: Save build caches
         if: success()
