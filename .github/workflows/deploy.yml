@@ -105,6 +105,35 @@ jobs:
             fi
           fi
 
+      - name: Memory diagnostics
+        run: |
+          echo "=== 系统内存限制 ==="
+          echo "overcommit_memory: $(cat /proc/sys/vm/overcommit_memory)"
+          echo "overcommit_ratio: $(cat /proc/sys/vm/overcommit_ratio)"
+          echo "=== THP ==="
+          cat /sys/kernel/mm/transparent_hugepage/enabled 2>/dev/null || echo "N/A"
+          echo "=== ulimit ==="
+          ulimit -a | grep -E "virtual|data|stack|memory|locked"
+          echo "=== systemd cgroup ==="
+          cat /sys/fs/cgroup/memory.max 2>/dev/null || echo "no cgroup v2"
+          cat /sys/fs/cgroup/memory/memory.limit_in_bytes 2>/dev/null || echo "no cgroup v1"
+          echo "=== Node.js 21GB 内存分配测试 ==="
+          node -e "
+            const chunks = [];
+            try {
+              for (let i = 0; i < 22; i++) {
+                chunks.push(Buffer.alloc(1024 * 1024 * 1024)); // 1GB each
+                console.log('  allocated ' + (i + 1) + 'GB, RSS: ' + 
+                  Math.round(process.memoryUsage().rss / 1024 / 1024) + 'MB');
+              }
+              console.log('✅ 22GB 分配成功，无系统级硬限制');
+            } catch(e) {
+              console.log('❌ 分配失败在第 ' + (chunks.length + 1) + 'GB: ' + e.message);
+            }
+          "
+          echo "=== 测试后内存 ==="
+          free -h
+
       - name: Cleanup before build
         run: |
           pkill -f "docusaurus build" 2>/dev/null || true
