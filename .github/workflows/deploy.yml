@@ -173,6 +173,13 @@ jobs:
           NODE_OPTIONS: '--max-old-space-size=8192'
           HTTP_PROXY: ''
           HTTPS_PROXY: ''
+          # Worker thread recycling: 4 workers, 256MB each = max 1GB active
+          # Workers get killed & respawned when exceeding limit, preventing
+          # the require() / webpack module cache leak during SSG
+          # See: https://github.com/facebook/docusaurus/issues/11161
+          DOCUSAURUS_SSG_WORKER_THREADS: '4'
+          DOCUSAURUS_SSG_WORKER_THREAD_TASK_SIZE: '5'
+          DOCUSAURUS_SSG_WORKER_THREAD_RECYCLER_MAX_MEMORY: '268435456'
 
       - name: Save build caches (on success)
         if: success()
