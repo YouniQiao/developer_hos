@@ -30,7 +30,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20'
 
       - name: Ensure swap (16GB safety net)
         run: |
@@ -61,13 +61,9 @@ jobs:
       - name: Restore build caches
         run: |
           mkdir -p "$CACHE_DIR"
-          if [ -d "$CACHE_DIR/.docusaurus" ]; then
-            rm -rf .docusaurus
-            cp -r "$CACHE_DIR/.docusaurus" .docusaurus
-            echo "♻️  .docusaurus restored ($(du -sh .docusaurus | cut -f1))"
-          else
-            echo "🆕 no .docusaurus cache yet (first run)"
-          fi
+          # Force clean build: stale cache from old code causes issues
+          rm -rf .docusaurus
+          echo "🧹 清理旧 .docusaurus 缓存，强制干净构建"
 
       - name: Install deps
         run: |
