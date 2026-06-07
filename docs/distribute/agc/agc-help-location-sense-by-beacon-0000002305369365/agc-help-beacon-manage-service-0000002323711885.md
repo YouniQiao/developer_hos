@@ -1,6 +1,6 @@
 ---
 title: "管理服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-manage-service-0000002323711885
+original_url: /docs/distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-manage-service-0000002323711885
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
   | --- | --- | --- |
   | 草稿 | 录入服务信息后，点击“保存”。 | 编辑、查看、删除。 |
   | 审核中 | 录入服务信息后已点击“提交”发起服务上线申请，等待平台运营审核。 | 查看。 |
-  | 审核驳回 | 内容设置不合规，服务申请被平台运营驳回。  可参考[图文素材审核细则](https://developer.huawei.com/consumer/cn/doc/app/agc-help-card-design-detail-rules-0000002349181504)修改内容后重新提交服务上线申请。 | 编辑、查看、删除。 |
+  | 审核驳回 | 内容设置不合规，服务申请被平台运营驳回。  可参考[图文素材审核细则](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-card-design-detail-rules-0000002349181504)修改内容后重新提交服务上线申请。 | 编辑、查看、删除。 |
   | 已上线 | 服务申请审核通过。 | 更新、查看、下线、复制。 |
   | 已下线 | 包括如下场景：  + 服务信息有变化，被开发者主动下线。 + 设备位置变更，被平台运营强制下线。 + 接到用户投诉，平台运营强制下线应用下所有内容。 | 编辑、查看、删除。 |
 

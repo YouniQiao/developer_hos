@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "华为支付签约的免密代扣在哪里可以解约？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-8
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-8
 format: md
 ---
 

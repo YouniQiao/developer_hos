@@ -1,7 +1,7 @@
 ---
 title: "VideoInfo"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-model-videoinfo-0000002393985713
+original_url: /docs/monetize/promotion/marketapi-model-videoinfo-0000002393985713
 format: md
 ---
 

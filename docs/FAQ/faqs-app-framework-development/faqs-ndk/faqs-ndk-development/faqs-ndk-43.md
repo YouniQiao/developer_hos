@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何正确地在CMakeLists.txt文件中配置头文件搜索路径"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-43
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-43
 ---
 
 

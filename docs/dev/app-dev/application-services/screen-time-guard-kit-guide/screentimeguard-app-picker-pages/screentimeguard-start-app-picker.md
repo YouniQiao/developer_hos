@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "拉起应用选择页"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-app-picker
+original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-app-picker-pages/screentimeguard-start-app-picker
 format: md
 ---
 
@@ -39,7 +39,7 @@ format: md
 
 ## 开发前提
 
-拉起应用选择页需要申请用户授权，请先参考[请求用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-request-user-auth)章节完成用户授权。
+拉起应用选择页需要申请用户授权，请先参考[请求用户授权](/docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-request-user-auth)章节完成用户授权。
 
 ## 开发步骤
 

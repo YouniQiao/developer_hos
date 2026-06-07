@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "打开和保存PDF文档"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-open
+original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-open-document
 format: md
 ---
 

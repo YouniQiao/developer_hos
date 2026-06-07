@@ -1,7 +1,7 @@
 ---
 title: "hidumper"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/hidumper
+original_url: /docs/tools/cli-tools/hidumper
 format: md
 ---
 
@@ -49,7 +49,7 @@ HiDumper命令行工具使用常见问题汇总在[常见问题](#常见问题)�
 
 ## 查询内存信息
 
-HiDumper内存信息查询模块主要用于查看系统整机内存使用情况和单个进程内存使用情况。开发者需要了解相关的[内存基础知识](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-memory-basic-knowledge)。
+HiDumper内存信息查询模块主要用于查看系统整机内存使用情况和单个进程内存使用情况。开发者需要了解相关的[内存基础知识](/docs/quality/memory-basic-knowledge)。
 
 ### 查询整机内存
 

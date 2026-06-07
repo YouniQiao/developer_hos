@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "媒体信息查询"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-info-c
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-info-arkts
 format: md
 ---
 
 
-* **[使用AVMetadataExtractor获取元数据(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avmetadataextractor-for-media)**
-* **[使用AVImageGenerator获取视频帧(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avimagegenerator-for-video)**
+* **[使用AVMetadataExtractor获取元数据(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-info-c/using-ndk-avmetadataextractor-for-media)**
+* **[使用AVImageGenerator获取视频帧(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-info-c/using-ndk-avimagegenerator-for-video)**

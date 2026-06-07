@@ -1,6 +1,6 @@
 ---
 title: "设置HDC鉴权密钥"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-set-hdc-authentication-key
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-hdc-authentication-key
 format: md
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: "组件导航(Navigation) (推荐)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation
 format: md
 ---
 
 
-* **[Navigation基础架构介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture)**
-* **[Navigation子页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navdestination)**
-* **[Navigation页面路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-jump)**
-* **[Navigation转场动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-animation)**
-* **[Navigation跨包路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-cross-package)**
-* **[Navigation分栏开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-split-mode)**
+* **[Navigation基础架构介绍](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-architecture)**
+* **[Navigation子页面](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-navdestination)**
+* **[Navigation页面路由](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-jump)**
+* **[Navigation转场动画](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-animation)**
+* **[Navigation跨包路由](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-cross-package)**
+* **[Navigation分栏开发](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-split-mode)**

@@ -1,6 +1,6 @@
 ---
 title: "SDK命令行工具简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/command-line-tools-overview
+original_url: /docs/dev/app-dev/system/command-line-tools-overview
 format: md
 ---
 
@@ -22,9 +22,9 @@ format: md
 
 | 命令 | 说明 |
 | --- | --- |
-| [hdc](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc) | 用于与设备进行交互调试、数据传输、查看日志等操作。 |
-| [aa](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool) | Ability助手用于启动应用和测试用例，提供应用调试和测试功能，如启动组件、强制停止进程、打印组件信息等。 |
-| [bm](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool) | 实现应用安装、卸载、更新、查询，提供基本的安装包调试能力。 |
-| [hilog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog) | 用于打印日志，记录用户操作和系统运行状态。 |
-| [打包工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-tool) | 用于在程序编译完成后，对编译出的文件等进行打包，以供安装发布。 |
-| [拆包工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unpacking-tool) | 支持通过命令行方式将HAP、HSP、App等文件解压成文件夹。提供Java接口对HAP、HSP、App等文件进行解析。 |
+| [hdc](/docs/dev/app-dev/system/hdc) | 用于与设备进行交互调试、数据传输、查看日志等操作。 |
+| [aa](/docs/dev/app-dev/system/aa-tool) | Ability助手用于启动应用和测试用例，提供应用调试和测试功能，如启动组件、强制停止进程、打印组件信息等。 |
+| [bm](/docs/dev/app-dev/system/bm-tool) | 实现应用安装、卸载、更新、查询，提供基本的安装包调试能力。 |
+| [hilog](/docs/dev/app-dev/system/hilog) | 用于打印日志，记录用户操作和系统运行状态。 |
+| [打包工具](/docs/dev/app-dev/system/packing-tool) | 用于在程序编译完成后，对编译出的文件等进行打包，以供安装发布。 |
+| [拆包工具](/docs/dev/app-dev/system/unpacking-tool) | 支持通过命令行方式将HAP、HSP、App等文件解压成文件夹。提供Java接口对HAP、HSP、App等文件进行解析。 |

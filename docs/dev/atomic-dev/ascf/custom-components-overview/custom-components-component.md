@@ -1,6 +1,6 @@
 ---
 title: "Component"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-component
+original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-component
 format: md
 ---
 
@@ -31,7 +31,7 @@ Component(Object object)
 | detached | function | 否 | 组件生命周期函数（在组件实例从页面中移除时执行）。 |
 | relations | object | 否 | 组件间关系定义。 |
 | externalClasses | string array | 否 | 组件接受的外部样式类。 |
-| options | object | 否 | 一些选项（如[组件样式隔离](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-style-isolation#组件样式隔离)）。 |
+| options | object | 否 | 一些选项（如[组件样式隔离](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-style-isolation#组件样式隔离)）。 |
 | lifetimes | object | 否 | 组件生命周期声明对象。 |
 | pageLifetimes | object | 否 | 组件所在页面的生命周期声明对象。 |
 | definitionFilter | function | 否 | 定义段过滤器，用于自定义组件扩展。 |

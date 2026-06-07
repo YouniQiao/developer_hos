@@ -1,6 +1,6 @@
 ---
 title: "控件状态变化场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-component-status-change
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-component-status-change
 format: md
 ---
 

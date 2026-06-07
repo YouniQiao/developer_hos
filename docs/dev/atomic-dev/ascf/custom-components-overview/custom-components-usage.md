@@ -1,6 +1,6 @@
 ---
 title: "使用自定义组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-usage
+original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-usage
 format: md
 ---
 

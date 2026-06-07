@@ -1,6 +1,6 @@
 ---
 title: "JS卡片开发指导（Stage模型）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-ui-widget-development
+original_url: /docs/dev/app-dev/application-framework/form-kit/form-js-ui/js-ui-widget-development
 format: md
 ---
 
@@ -38,7 +38,7 @@ formBindingData类部分API接口如下，具体的API介绍详见[@ohos.app.for
 
 ## 开发步骤
 
-Stage卡片开发，即基于[Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development-overview)的卡片提供方开发，主要涉及如下关键步骤：
+Stage卡片开发，即基于[Stage模型](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-development-overview)的卡片提供方开发，主要涉及如下关键步骤：
 
 * [创建卡片FormExtensionAbility](#创建卡片formextensionability)：卡片生命周期回调函数FormExtensionAbility开发。
 * [配置卡片配置文件](#配置卡片配置文件)：配置应用配置文件module.json5和profile配置文件。
@@ -170,7 +170,7 @@ FormExtensionAbility不能常驻后台，即在卡片生命周期回调函数中
 
 ### 配置卡片配置文件
 
-1. 卡片需要在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中的extensionAbilities标签下，配置ExtensionAbility相关信息。FormExtensionAbility需要填写metadata元信息标签，其中键名称为固定字符串"ohos.extension.form"，资源为卡片的具体配置信息的索引。
+1. 卡片需要在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中的extensionAbilities标签下，配置ExtensionAbility相关信息。FormExtensionAbility需要填写metadata元信息标签，其中键名称为固定字符串"ohos.extension.form"，资源为卡片的具体配置信息的索引。
 
    配置示例如下：
 
@@ -210,7 +210,7 @@ FormExtensionAbility不能常驻后台，即在卡片生命周期回调函数中
    | name | 表示卡片的类名，字符串最大长度为127字节。 | 字符串 | 否 |
    | description | 表示卡片的描述。取值可以是描述性内容，也可以是对描述性内容的资源索引，以支持多语言。字符串最大长度为255字节。 | 字符串 | 可缺省，缺省为空。 |
    | src | 表示卡片对应的UI代码的完整路径。 | 字符串 | 否 |
-   | window | 用于定义与显示窗口相关的配置。 | 对象 | 可缺省，缺省值参考[window标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#window标签)表格。 |
+   | window | 用于定义与显示窗口相关的配置。 | 对象 | 可缺省，缺省值参考[window标签](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#window标签)表格。 |
    | isDefault | 表示该卡片是否为默认卡片，每个UIAbility有且只有一个默认卡片。  - true：默认卡片。  - false：非默认卡片。 | 布尔值 | 否 |
    | colorMode(deprecated) | 表示卡片的主题样式，取值范围如下：  - auto：跟随系统的颜色模式值选取主题。  - dark：深色主题。  - light：浅色主题。  **说明：**  1. 从API version 12开始支持该配置项，从API version 20开始废弃该配置项，卡片主题样式统一跟随系统的颜色模式。 | 字符串 | 可缺省，缺省值为“auto”。 |
    | supportDimensions | 表示卡片支持的外观规格，取值范围：  - 1 \* 1：表示1行1列的一宫格。  - 1 \* 2：表示1行2列的二宫格。  - 2 \* 2：表示2行2列的四宫格。  - 2 \* 4：表示2行4列的八宫格。  - 2 \* 3：表示2行3列的六宫格。  - 3 \* 3：表示3行3列的九宫格。  - 4 \* 4：表示4行4列的十六宫格。  - 6 \* 4：表示6行4列的二十四宫格。  **说明**： 2 \* 3和 3 \* 3仅支持手表设备， 1 \* 1只支持在锁屏上使用。 | 字符串数组 | 否 |
@@ -346,7 +346,7 @@ export default class JsCardFormAbility extends FormExtensionAbility {
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Form/JSForm/entry/src/main/ets/jscardformability/JsCardFormAbility.ets#L26-L145" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：JsCardFormAbility.ets</a></div>
 
 
-具体的持久化方法可以参考[轻量级数据存储开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence-overview)。
+具体的持久化方法可以参考[轻量级数据存储开发指导](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/app-data-persistence-overview)。
 
 需要注意的是，卡片使用方在请求卡片时传递给提供方应用的Want数据中存在临时标记字段，表示此次请求的卡片是否为临时卡片：
 

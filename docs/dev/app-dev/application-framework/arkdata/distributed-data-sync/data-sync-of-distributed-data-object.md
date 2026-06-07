@@ -1,6 +1,6 @@
 ---
 title: "分布式数据对象跨设备数据同步 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-of-distributed-data-object
+original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-sync/data-sync-of-distributed-data-object
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 分布式数据对象即实现了对“变量”的“全局”访问。向应用开发者提供内存对象的创建、查询、删除、修改、订阅等基本数据对象的管理能力，同时具备分布式能力。为开发者在分布式应用场景下提供简单易用的JS接口，轻松实现多设备间同应用的数据协同，同时设备间可以监听对象的状态和数据变更。满足超级终端场景下，相同应用多设备间的数据对象协同需求。与传统方式相比，分布式数据对象大大减少了开发者的工作量。
 
-目前分布式数据对象只能在[跨端迁移](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-data)和[通过跨设备Call调用实现多端协同](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-cross-device-interaction)的场景中使用。
+目前分布式数据对象只能在[跨端迁移](/docs/dev/app-dev/multi-device/bpta-continue-data)和[通过跨设备Call调用实现多端协同](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-cross-device-interaction)的场景中使用。
 
 ## 基本概念
 
@@ -102,7 +102,7 @@ dataObject['parents']['mom'] = "amy"; // 不支持的修改
 
 ## 约束限制
 
-* 目前分布式数据对象只能在[跨端迁移](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-data)和[通过跨设备Call调用实现多端协同](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-cross-device-interaction)的场景中使用。跨端迁移场景下，每个分布式数据对象大小不超过150KB；多端协同场景下，每个分布式数据对象大小不超过500KB。
+* 目前分布式数据对象只能在[跨端迁移](/docs/dev/app-dev/multi-device/bpta-continue-data)和[通过跨设备Call调用实现多端协同](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-cross-device-interaction)的场景中使用。跨端迁移场景下，每个分布式数据对象大小不超过150KB；多端协同场景下，每个分布式数据对象大小不超过500KB。
 * 分布式数据对象的数据同步发生在同一个应用程序下，且同sessionId之间。
 * 设备A修改1KB数据，设备B收到变更通知，50ms内完成。
 * 单个应用程序最多只能创建16个分布式数据对象实例。
@@ -157,7 +157,7 @@ dataObject['parents']['mom'] = "amy"; // 不支持的修改
 
 * 跨端迁移时，在迁移发起端调用setSessionId接口设置同步的sessionId后，必须再调用save接口保存数据到接收端。跨端迁移过程中save接口仅在首次调用时数据可以同步到接收端（原理是：首次从发起端设备获取数据后迁移任务即已完成，后续数据以接收端设备为准，不需要再同步）。
 * 在应用迁移启动时，无论是冷启动还是热启动，都会在执行完onCreate()/onNewWant()后，触发[onWindowStageRestore()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagerestore)生命周期函数，不执行[onWindowStageCreate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagecreate)生命周期函数。开发者如果在onWindowStageCreate()中进行了一些应用启动时必要的初始化，那么迁移后需要在onWindowStageRestore()中执行同样的初始化操作，避免应用异常。
-* 跨端迁移需要配置continuable标签，详见[应用接续开发步骤](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-data)。
+* 跨端迁移需要配置continuable标签，详见[应用接续开发步骤](/docs/dev/app-dev/multi-device/bpta-continue-data)。
 * wantParam中的"sessionId"字段可能被其他服务占用，建议自定义一个key存取sessionId。
 * 可以使用资产类型记录资产附件（文件、图片、视频等类型文件）的相关信息，迁移资产类型数据时，对应的资产附件会一起迁移到对端。
 * 接收端需要将业务数据的初始值设置为undefined，才能恢复发起端保存的数据，否则接收端的数据会覆盖同步到发起端。如果是资产数据，需要将资产数据的各个属性设置为空字符串而不是将整个资产数据设置为undefined。
@@ -360,10 +360,10 @@ export default class EntryAbility extends UIAbility {
 
 ![](./img/f90e0947.png)
 
-* 暂时只支持在[通过跨设备Call调用实现多端协同](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-cross-device-interaction)的场景中使用分布式数据对象进行数据同步。
-* 跨设备Call调用实现的多端协同开发需要申请ohos.permission.DISTRIBUTED\_DATASYNC权限和配置单实例启动标签，详见[通过跨设备Call调用实现多端协同](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-cross-device-interaction)。
+* 暂时只支持在[通过跨设备Call调用实现多端协同](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-cross-device-interaction)的场景中使用分布式数据对象进行数据同步。
+* 跨设备Call调用实现的多端协同开发需要申请ohos.permission.DISTRIBUTED\_DATASYNC权限和配置单实例启动标签，详见[通过跨设备Call调用实现多端协同](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-cross-device-interaction)。
 * wantParam中的"sessionId"字段可能被其他服务占用，建议自定义一个key存取sessionId。
-* 使用分布式设备管理获取对端设备networkId详见[设备信息查询开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicemanager-guidelines#设备信息查询开发指导)。
+* 使用分布式设备管理获取对端设备networkId详见[设备信息查询开发指导](/docs/dev/app-dev/system/system-network/distributed-service-kit/devicemanager-guidelines#设备信息查询开发指导)。
 
 示例代码如下：
 

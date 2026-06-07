@@ -1,7 +1,7 @@
 ---
 format: md
 title: "构建流水线报错：Failed to request the remote SDK"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-88
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-88
 ---
 
 

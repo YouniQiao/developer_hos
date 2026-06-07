@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Desktop Extension Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/statusbar-extension-introduction
+original_url: /docs/dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide/statusbar-extension-introduction
 format: md
 ---
 

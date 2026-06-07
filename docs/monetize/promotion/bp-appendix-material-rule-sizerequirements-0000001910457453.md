@@ -1,7 +1,7 @@
 ---
 title: "资源位素材尺寸要求"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-sizerequirements-0000001910457453
+original_url: /docs/monetize/promotion/bp-appendix-material-rule-sizerequirements-0000001910457453
 format: md
 ---
 

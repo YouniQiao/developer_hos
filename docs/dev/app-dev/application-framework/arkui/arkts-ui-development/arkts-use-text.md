@@ -1,15 +1,15 @@
 ---
 title: "使用文本"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-use-text
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text
 format: md
 ---
 
 
-* **[文本概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-introduction)**
-* **[文本显示 (Text/Span)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-display)**
-* **[文本输入 (TextInput/TextArea/Search)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input)**
-* **[富文本编辑（RichEditor）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-richeditor)**
-* **[图标小符号 (SymbolGlyph/SymbolSpan)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-symbol)**
-* **[属性字符串（StyledString/MutableStyledString）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-styled-string)**
-* **[图文混排](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-image-layout)**
-* **[管理软键盘](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-manage-keyboard)**
+* **[文本概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-text-introduction)**
+* **[文本显示 (Text/Span)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-common-components-text-display)**
+* **[文本输入 (TextInput/TextArea/Search)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-common-components-text-input)**
+* **[富文本编辑（RichEditor）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-common-components-richeditor)**
+* **[图标小符号 (SymbolGlyph/SymbolSpan)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-common-components-symbol)**
+* **[属性字符串（StyledString/MutableStyledString）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-styled-string)**
+* **[图文混排](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-text-image-layout)**
+* **[管理软键盘](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-manage-keyboard)**

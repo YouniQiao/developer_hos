@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-overview-0000002286788016
+original_url: /docs/dev/game-dev/games-hismartperf-overview-0000002286788016
 format: md
 ---
 
@@ -23,8 +23,8 @@ format: md
 
 | 主要功能 | 功能描述 |
 | --- | --- |
-| 游戏性能测试 | 准确、高效、全面地采集系统、CPU以及GPU的性能数据，帮助您深度分析游戏的性能情况。  说明：  游戏性能调优服务还提供了HiSmartPerf-Device工具，支持在手机/平板上简单、快捷地采集FPS、功耗、温度、负载等基础性能数据，帮助您快速了解游戏的性能情况，详情请参见[Device](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-device-0000002286844738)。 |
-| 其他功能 | * [整机测试](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-systemtest-0000002286788036)：提供RS树可视化展示、多应用内存数据测试、设备日志查看和设备状态监测工具。 * [其他工具](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-others-0000002321517305)：提供Graphics Profiler等辅助工具，可方便您进一步问题定位与应用调试。 |
+| 游戏性能测试 | 准确、高效、全面地采集系统、CPU以及GPU的性能数据，帮助您深度分析游戏的性能情况。  说明：  游戏性能调优服务还提供了HiSmartPerf-Device工具，支持在手机/平板上简单、快捷地采集FPS、功耗、温度、负载等基础性能数据，帮助您快速了解游戏的性能情况，详情请参见[Device](/docs/dev/game-dev/games-hismartperf-device-0000002286844738)。 |
+| 其他功能 | * [整机测试](/docs/dev/game-dev/games-hismartperf-systemtest-0000002286788036)：提供RS树可视化展示、多应用内存数据测试、设备日志查看和设备状态监测工具。 * [其他工具](/docs/dev/game-dev/games-hismartperf-others-0000002321517305)：提供Graphics Profiler等辅助工具，可方便您进一步问题定位与应用调试。 |
 
 ## 实现流程
 
@@ -34,10 +34,10 @@ format: md
 
 | 操作步骤 | 说明 |
 | --- | --- |
-| [准备工作](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-preparation-0000002286788020) | 提前做好注册开发者账号、安装工具等准备工作。 |
-| [设置采集要求](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-setting-0000002321517289) | 在游戏性能调优工具中设置采集参数。 |
-| [采集性能数据](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-collection-0000002321404205) | 根据设置的采集参数，在游戏性能调优工具中采集性能数据。 |
-| [分析性能数据](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-management-0000002286844722) | 解读测试报告中的性能数据。 |
+| [准备工作](/docs/dev/game-dev/games-hismartperf-preparation-0000002286788020) | 提前做好注册开发者账号、安装工具等准备工作。 |
+| [设置采集要求](/docs/dev/game-dev/games-hismartperf-setting-0000002321517289) | 在游戏性能调优工具中设置采集参数。 |
+| [采集性能数据](/docs/dev/game-dev/games-hismartperf-collection-0000002321404205) | 根据设置的采集参数，在游戏性能调优工具中采集性能数据。 |
+| [分析性能数据](/docs/dev/game-dev/games-hismartperf-management-0000002286844722) | 解读测试报告中的性能数据。 |
 
 ### Device
 

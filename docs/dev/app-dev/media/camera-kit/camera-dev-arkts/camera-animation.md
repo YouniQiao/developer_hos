@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "相机基础动效(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-animation
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-animation
 format: md
 ---
 
@@ -114,7 +114,7 @@ format: md
 
 4. 触发闪黑动效。
 
-   点击或触控拍照按钮，更新[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)绑定CaptureClick的值，触发onCaptureClick方法，动效开始播放。
+   点击或触控拍照按钮，更新[@StorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storagelink)绑定CaptureClick的值，触发onCaptureClick方法，动效开始播放。
 
    ```
    onCaptureClick(): void {
@@ -475,7 +475,7 @@ format: md
 
 7. 按需触发动效。
 
-   模式切换动效触发：点击或触控模式按钮立即执行doSurfaceShot截图方法，更新[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)绑定modeChange的值，触发onModeChange方法，开始动效。
+   模式切换动效触发：点击或触控模式按钮立即执行doSurfaceShot截图方法，更新[@StorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storagelink)绑定modeChange的值，触发onModeChange方法，开始动效。
 
    ```
    onModeChange(): void {
@@ -489,7 +489,7 @@ format: md
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/cameraAnimSample/entry/src/main/ets/pages/Index.ets#L315-L320" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 
-   前后置切换动效触发：点击或触控前后置切换按钮立即执行doSurfaceShot截图方法，更新[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)绑定switchCamera的值，触发onSwitchCamera方法，开始动效。
+   前后置切换动效触发：点击或触控前后置切换按钮立即执行doSurfaceShot截图方法，更新[@StorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storagelink)绑定switchCamera的值，触发onSwitchCamera方法，开始动效。
 
    ```
    onSwitchCamera(): void {
@@ -504,7 +504,7 @@ format: md
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/cameraAnimSample/entry/src/main/ets/pages/Index.ets#L322-L328" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
 
-   模糊消失动效触发：监听预览流首帧回调[on('frameStart')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-previewoutput#onframestart)，更新[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)绑定frameStart的值，触发onFrameStart方法，开始动效。
+   模糊消失动效触发：监听预览流首帧回调[on('frameStart')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-previewoutput#onframestart)，更新[@StorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storagelink)绑定frameStart的值，触发onFrameStart方法，开始动效。
 
    ```
    onFrameStart(): void {

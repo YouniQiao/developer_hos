@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决连接手机时，提示：“hdc server port 8710 has been used”的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-43
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-43
 ---
 
 

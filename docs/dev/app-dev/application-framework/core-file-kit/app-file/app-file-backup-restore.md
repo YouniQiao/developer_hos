@@ -1,12 +1,12 @@
 ---
 title: "应用数据备份恢复"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-restore
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore
 format: md
 ---
 
 
-* **[应用数据备份恢复概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-overview)**
-* **[应用接入数据备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension)**
-* **[应用数据备份恢复验证指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-dataclone)**
-* **[应用克隆适配指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-clone)**
-* **[设备升级应用数据迁移适配指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-guidelines)**
+* **[应用数据备份恢复概述](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-overview)**
+* **[应用接入数据备份恢复](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension)**
+* **[应用数据备份恢复验证指导](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-dataclone)**
+* **[应用克隆适配指导](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-clone)**
+* **[设备升级应用数据迁移适配指导](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines)**

@@ -1,7 +1,7 @@
 ---
 title: "新增子客账户"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-service-provider-increase-sub-0000001379677853
+original_url: /docs/monetize/promotion/bpos-start-service-provider-increase-sub-0000001379677853
 format: md
 ---
 
@@ -67,7 +67,7 @@ format: md
 
 3. 选择认证方式。
 
-   您完成华为账号注册之后，需要进行实名认证，认证方式可选“[对公银行打款认证](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-register-0000001328677526#section3669mcpsimp)”或“[企业资料人工审核认证](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-register-0000001328677526#section3608mcpsimp)”，建议您优先选择“<strong>企业资料人工审核认证</strong>”方式。认证方式提交后不可修改。
+   您完成华为账号注册之后，需要进行实名认证，认证方式可选“[对公银行打款认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#section3669mcpsimp)”或“[企业资料人工审核认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#section3608mcpsimp)”，建议您优先选择“<strong>企业资料人工审核认证</strong>”方式。认证方式提交后不可修改。
 
 4. 提交审核，审核通过后即可进入子客账户。
 
@@ -77,13 +77,13 @@ format: md
 
 ![](./img/90457f7d7a76.png) 
 
-- 如果您在注册过程中，遇到白屏/报错情况时，您需要上级服务商重新邀请并重新注册。如有疑问，可[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们，此时您需要在工单中提供以下信息：
+- 如果您在注册过程中，遇到白屏/报错情况时，您需要上级服务商重新邀请并重新注册。如有疑问，可[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们，此时您需要在工单中提供以下信息：
   - 上级服务商账户ID或上级服务商公司名称，请联系您的上级服务商获取。
   - 上级服务商邀请时填写邀请信息的截图。
   - 白屏或报错时具体的截图，以及描述清楚出现错误的场景。
-  - 提供报错日志：获取方式请参考[获取日志](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-faq-0000001328517634#ZH-CN_TOPIC_0000001328517634__li3228mcpsimp)。
+  - 提供报错日志：获取方式请参考[获取日志](/docs/monetize/promotion/bpos-faq-0000001328517634#ZH-CN_TOPIC_0000001328517634__li3228mcpsimp)。
 
-- 如果您在注册子客服务商过程中出现了让您选择“直客”或者“服务商”界面时，代表本次注册流程失败，您需要先[注销](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-faq-0000001328517634#ZH-CN_TOPIC_0000001328517634__li3219mcpsimp)子客服务商的华为账号，然后让您的服务商重新邀请您，并重新进行子客服务商流程注册。
+- 如果您在注册子客服务商过程中出现了让您选择“直客”或者“服务商”界面时，代表本次注册流程失败，您需要先[注销](/docs/monetize/promotion/bpos-faq-0000001328517634#ZH-CN_TOPIC_0000001328517634__li3219mcpsimp)子客服务商的华为账号，然后让您的服务商重新邀请您，并重新进行子客服务商流程注册。
 
 ![](./img/aaa7f36dadd5.png "点击放大")
 

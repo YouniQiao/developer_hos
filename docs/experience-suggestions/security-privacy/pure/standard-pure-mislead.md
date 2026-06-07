@@ -1,6 +1,6 @@
 ---
 title: "隐藏误导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-mislead
+original_url: /docs/experience-suggestions/security-privacy/pure/standard-pure-mislead
 format: md
 ---
 

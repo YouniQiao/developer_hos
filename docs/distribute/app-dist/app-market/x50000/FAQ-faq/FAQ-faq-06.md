@@ -1,7 +1,7 @@
 ---
 title: "6. 自启动&关联启动"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-06
+original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-06
 format: md
 ---
 

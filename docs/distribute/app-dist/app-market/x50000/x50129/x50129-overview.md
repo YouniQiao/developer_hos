@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/50129
+original_url: /docs/distribute/app-dist/app-market/x50000/x50129/x50129-overview
 format: md
 ---
 
@@ -13,13 +13,13 @@ format: md
 
 * **元服务相关指南**
 
-（1）开发服务指南参考：[元服务概述](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service)
+（1）开发服务指南参考：[元服务概述](/docs/dev/atomic-dev/atomic-service/atomic-service)
 
-（2）调试服务指南参考：[运行调试元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-running-debugging)
+（2）调试服务指南参考：[运行调试元服务](/docs/dev/atomic-dev/atomic-running-debugging/atomic-running-debugging)
 
 （3）应用市场接入指南参考：[发布元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-0000002327731065)
 
-（4）元服务设计规范：[元服务设计](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001938867005)、[元服务 UX 体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-standard-overview-0000002019655177)
+（4）元服务设计规范：[元服务设计](/docs/design/atomic-service-design/overview)、[元服务 UX 体验标准](/docs/design/ux-standards/atomic-service-ux)
 
 * **审核时长**
 
@@ -33,13 +33,13 @@ format: md
 
 为了帮助您更好地准备元服务提交审核，我们特别指出了一些最常见的问题，请提前排查，做好准备。
 
-1. APP未核准（备案）：所有元服务均需完成核准（备案），您可基于[元服务核准（备案）指导](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing)直接前往[华为云核准（备案）平台](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)元服务通道进行核准（备案）。
+1. APP未核准（备案）：所有元服务均需完成核准（备案），您可基于[元服务核准（备案）指导](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing)直接前往[华为云核准（备案）平台](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)元服务通道进行核准（备案）。
 
-2. 元服务标签与实际功能和用途不相符：请根据元服务实际功能和标签的定义选择相符的标签，如您的元服务内容涉及资质要求，请提前确认所需资质类型，准备齐全真实、有效的资质材料后再提交审核。请参考：[元服务分类](https://developer.huawei.com/consumer/cn/doc/app/ability-0000002032931302)；[元服务资质要求](https://developer.huawei.com/consumer/cn/doc/app/80302)
+2. 元服务标签与实际功能和用途不相符：请根据元服务实际功能和标签的定义选择相符的标签，如您的元服务内容涉及资质要求，请提前确认所需资质类型，准备齐全真实、有效的资质材料后再提交审核。请参考：[元服务分类](/docs/distribute/app-dist/app-services/classification-0000002068852289/ability-0000002032931302)；[元服务资质要求](/docs/distribute/app-dist/app-market/x50000/x80302)
 
-3. 功能异常：请确保元服务功能正常稳定，您可进行自检：[云测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-introduction-0000002255036400)、[云调试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-introduction-0000002254916514)、[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing)等工具完成自检。
+3. 功能异常：请确保元服务功能正常稳定，您可进行自检：[云测试](/docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-introduction-0000002255036400)、[云调试](/docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-introduction-0000002254916514)、[DevEco Testing](/docs/dev/testing/deveco-testing)等工具完成自检。
 
-4. UX设计不符合UX规范：请确保元服务UX设计符合[《元服务 UX 体验标准》](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001760867048)要求。
+4. UX设计不符合UX规范：请确保元服务UX设计符合[《元服务 UX 体验标准》](/docs/design/ux-standards/overview)要求。
 
 5. 个人信息保护不合规：请确保隐私政策内容完整，合理申请权限并规范获取授权，符合个人信息保护具体审核要求，请参考《应用审核指南》 “[7. 用户隐私](https://developer.huawei.com/consumer/cn/doc/app/50104-07)”章节。
 
@@ -49,7 +49,7 @@ format: md
 
 您可查阅《元服务审核指南》全文获取详细合规指引；若对审核问题存在疑问，可通过[互动中心](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/interactive)咨询客服；对审核结论有异议，可按照平台流程提交申诉并说明合规理由，请参考[《联系我们》](https://developer.huawei.com/consumer/cn/doc/app/50000-FAQ)。
 
-如您发现上传至华为应用市场的应用或内容侵犯了您的合法权益，可按流程对存疑内容进行投诉，请参考[《华为应用市场侵权投诉处理指引》](https://developer.huawei.com/consumer/cn/doc/app/50120)。如果您的应用违反本指南，我们将采取相应处理措施，详细请参见：[开发者账号与应用处理原因及措施](https://developer.huawei.com/consumer/cn/doc/distribution/app/50109)。
+如您发现上传至华为应用市场的应用或内容侵犯了您的合法权益，可按流程对存疑内容进行投诉，请参考[《华为应用市场侵权投诉处理指引》](/docs/distribute/app-dist/app-market/x50000/x50120)。如果您的应用违反本指南，我们将采取相应处理措施，详细请参见：[开发者账号与应用处理原因及措施](https://developer.huawei.com/consumer/cn/doc/distribution/app/50109)。
 
 ## 1. 元服务信息
 
@@ -69,9 +69,9 @@ format: md
 
 1.7 元服务内容分级需如实填写，以标识元服务适宜的用户年龄段。当您的元服务内容发生变化时，需重新进行分级。
 
-详细请参见：[华为应用市场应用年龄分级标准](https://developer.huawei.com/consumer/cn/doc/app/50125)；[年龄分级问卷FAQ](https://developer.huawei.com/consumer/cn/doc/app/50142)。
+详细请参见：[华为应用市场应用年龄分级标准](/docs/distribute/app-dist/app-market/x50000/x50125)；[年龄分级问卷FAQ](/docs/distribute/app-dist/app-market/x50000/x50142)。
 
-1.8 元服务分类及标签需与实际功能和用途相符（请参考[元服务分类及其标签](https://developer.huawei.com/consumer/cn/doc/app/ability-0000002032931302)）。
+1.8 元服务分类及标签需与实际功能和用途相符（请参考[元服务分类及其标签](/docs/distribute/app-dist/app-services/classification-0000002068852289/ability-0000002032931302)）。
 
 1.9 元服务名称、图标、分类、标签和签名不得频繁更改。元服务名称一个自然年内可支持修改2次。
 
@@ -189,11 +189,11 @@ format: md
 
 （2）linkFeature属性所支持的特性功能必须为元服务自身服务功能，不得跳转至其他元服务/三方应用或页面。
 
-（3）linkFeature声明的功能类型必须为系统提供的枚举值，请您参考[《应用链接说明》](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config#linkfeature标签说明)。
+（3）linkFeature声明的功能类型必须为系统提供的枚举值，请您参考[《应用链接说明》](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config#linkfeature标签说明)。
 
 3.16 如元服务需要构建账号体系，需使用华为账号登录能力。请规范使用平台提供的登录能力，无需设计登录/注册功能及页面，不可使用自行设计实现的登录页面、登录面板等登录界面。
 
-详情请参见：[登录开发指导文档](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-silent-login)、[华为账号登录管理细则](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-detailedrules)、[开发者可以使用自行设计的登录界面吗？](https://developer.huawei.com/consumer/cn/doc/atomic-faqs/faqs-common-account-5) 。
+详情请参见：[登录开发指导文档](/docs/dev/atomic-dev/atomic-account-development/account-atomic-silent-login)、[华为账号登录管理细则](/docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-detailedrules)、[开发者可以使用自行设计的登录界面吗？](https://developer.huawei.com/consumer/cn/doc/atomic-faqs/faqs-common-account-5) 。
 
 ## 4. 元服务内容
 
@@ -371,7 +371,7 @@ format: md
 
 7.2 元服务的隐私政策链接指向的隐私政策应当包含元服务（包括委托的第三方或嵌入的第三方代码、插件）收集和使用个人信息的目的、方式和范围。
 
-7.3 元服务内隐私政策应包含用户如何行使个人信息主体权利的信息，例如：用户如何撤销同意和/或请求删除数据的方式，用户对个人信息的查阅复制权，以及有效的用户隐私问题投诉、举报渠道，并在承诺时限内（承诺时限不得超过15个工作日，无承诺时限的，以15个工作日为限）受理并处理；元服务如涉及账号体系，应根据账号使用场景，为用户提供便捷的删除非账号信息/删除用户数据服务、注销自有账号服务，并明确注销对象，不得设置不合理障碍，且需确保账号注销真实有效，账号注销元服务处理时限不得超过15个工作日。（[账号注销常见问题](https://developer.huawei.com/consumer/cn/doc/app/faq-11)）
+7.3 元服务内隐私政策应包含用户如何行使个人信息主体权利的信息，例如：用户如何撤销同意和/或请求删除数据的方式，用户对个人信息的查阅复制权，以及有效的用户隐私问题投诉、举报渠道，并在承诺时限内（承诺时限不得超过15个工作日，无承诺时限的，以15个工作日为限）受理并处理；元服务如涉及账号体系，应根据账号使用场景，为用户提供便捷的删除非账号信息/删除用户数据服务、注销自有账号服务，并明确注销对象，不得设置不合理障碍，且需确保账号注销真实有效，账号注销元服务处理时限不得超过15个工作日。（[账号注销常见问题](/docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-11)）
 
 7.4 元服务访问、收集、使用或披露任何个人信息，需经用户的同意或遵守其他适用的法律法规。
 
@@ -477,7 +477,7 @@ format: md
 
 10.1 开发者需提供资质文件，以证明元服务及其内容符合法律、法规或政策的要求。
 
-10.2 开发者提供的资质文件应确保完整、真实且有效，不得进行伪造、变造资质等行为。依据元服务及其内容涉及的业务类型，应提供的资质文件有所不同，详细请参见：[元服务资质审核要求](https://developer.huawei.com/consumer/cn/doc/app/80302)。
+10.2 开发者提供的资质文件应确保完整、真实且有效，不得进行伪造、变造资质等行为。依据元服务及其内容涉及的业务类型，应提供的资质文件有所不同，详细请参见：[元服务资质审核要求](/docs/distribute/app-dist/app-market/x50000/x80302)。
 
 ## 11. 开发者行为
 

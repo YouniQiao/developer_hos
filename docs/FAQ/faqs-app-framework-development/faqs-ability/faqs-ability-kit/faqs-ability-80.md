@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何设置默认语言和应用名称为中文"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-80
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-80
 ---
 
 

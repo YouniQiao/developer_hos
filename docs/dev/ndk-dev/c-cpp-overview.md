@@ -1,6 +1,6 @@
 ---
 title: "C/C++标准库机制概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/c-cpp-overview
+original_url: /docs/dev/ndk-dev/c-cpp-overview
 format: md
 ---
 
@@ -80,7 +80,7 @@ symbol-version是libc在**动态链接-符号重定位**阶段的符号检索机
 
 ### fdsan功能
 
-[fdsan使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fdsan)可以帮助检测文件的重复关闭和关闭后使用问题。
+[fdsan使用指导](/docs/dev/ndk-dev/fdsan)可以帮助检测文件的重复关闭和关闭后使用问题。
 
 ## 信号使用
 

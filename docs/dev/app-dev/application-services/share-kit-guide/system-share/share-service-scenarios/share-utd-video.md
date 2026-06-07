@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分享视频"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-video
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-video
 format: md
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: "配置隐私标签信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-privacy-tag-0000002367539634
+original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-privacy-tag-0000002367539634
 format: md
 ---
 
 
 游戏发布设备类型包括手机、平板、PC/2in1、智慧屏时，要求配置隐私标签信息。
 
-隐私标签帮助玩家提前了解游戏使用玩家个人数据的情况。隐私标签展示效果请参见[客户端展示效果](https://developer.huawei.com/consumer/cn/doc/app/privacy-label#h1-1683516845797-0)。
+隐私标签帮助玩家提前了解游戏使用玩家个人数据的情况。隐私标签展示效果请参见[客户端展示效果](/docs/distribute/app-dist/app-market/privacy-label#h1-1683516845797-0)。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的游戏。
 2. 左侧导航栏选择“应用上架 > 版本信息”下待发布的版本。
@@ -25,7 +25,7 @@ format: md
    ![](../img/agc-help-release-game-privacy-tag-0000002367539634_2.png)
 5. 依次在已勾选的业务场景下添加对应的数据项。
 
-   业务场景和数据项具体内容参见[AppGallery隐私标签服务说明](https://developer.huawei.com/consumer/cn/doc/app/privacy-label)。
+   业务场景和数据项具体内容参见[AppGallery隐私标签服务说明](/docs/distribute/app-dist/app-market/privacy-label)。
 
    ![](../img/agc-help-release-game-privacy-tag-0000002367539634_3.png)
 6. 配置完业务场景的数据项后，可在“关联到用户数据汇总”页签查看全部数据。

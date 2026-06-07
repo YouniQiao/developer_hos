@@ -1,6 +1,6 @@
 ---
 title: "小游戏（快游戏）案例"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-case-0000002318064148
+original_url: /docs/dev/game-dev/games-quickgame-case-0000002318064148
 format: md
 ---
 
@@ -290,7 +290,7 @@ if(typeof qg !== 'undefined'){
 
 **解决方法**
 
-按照[要求](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-subpackage-0000002317894828)分包，上架后由华为服务器进行拆包，且单个分包足够大（建议在1mb以上），则会正常触发进度条回调。引擎日志信息如下所示：
+按照[要求](/docs/dev/game-dev/games-quickgame-subpackage-0000002317894828)分包，上架后由华为服务器进行拆包，且单个分包足够大（建议在1mb以上），则会正常触发进度条回调。引擎日志信息如下所示：
 
 ![](./img/e36f49ea.png)
 
@@ -587,7 +587,7 @@ initWithImageFile:/storage/emulated/0/Android/data/com.huawei.fastapp.dev/files/
 
 **解决方法**
 
-登录 [AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html) ，选择“我的项目”，[打开应用内支付服务开关](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li59494019315)，开通之后联盟后台即可显示该游戏信息。
+登录 [AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html) ，选择“我的项目”，[打开应用内支付服务开关](/docs/dev/game-dev/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li59494019315)，开通之后联盟后台即可显示该游戏信息。
 
 ## 如何实现快游戏强制更新
 

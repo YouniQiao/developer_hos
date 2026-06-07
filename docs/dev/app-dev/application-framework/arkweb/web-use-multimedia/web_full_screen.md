@@ -1,6 +1,6 @@
 ---
 title: "Web组件支持视频沉浸式全屏播放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web_full_screen
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-multimedia/web_full_screen
 format: md
 ---
 

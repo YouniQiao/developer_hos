@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation跳转页面白屏，可能原因是什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-390
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-390
 ---
 
 
@@ -11,7 +11,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **解决措施**
 
-路由表配置时，可以根据[系统路由表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-cross-package#系统路由表)配置步骤一步一步来配置。
+路由表配置时，可以根据[系统路由表](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-cross-package#系统路由表)配置步骤一步一步来配置。
 
 * 路由表中的页面，需要配置入口函数Builder，并且需要使用NavDestination组件才能展示页面。
 

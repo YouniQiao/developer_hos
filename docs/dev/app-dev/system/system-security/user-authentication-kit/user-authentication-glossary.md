@@ -1,6 +1,6 @@
 ---
 title: "User Authentication Kit术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-glossary
+original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-glossary
 format: md
 ---
 

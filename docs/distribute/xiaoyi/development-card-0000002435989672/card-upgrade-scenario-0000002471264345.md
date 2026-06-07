@@ -1,7 +1,7 @@
 ---
 title: "卡片升级场景"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/card-upgrade-scenario-0000002471264345
+original_url: /docs/distribute/xiaoyi/development-card-0000002435989672/card-upgrade-scenario-0000002471264345
 format: md
 ---
 

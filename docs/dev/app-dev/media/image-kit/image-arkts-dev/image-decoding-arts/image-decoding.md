@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用ImageSource完成图片解码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding
 format: md
 ---
 
@@ -54,7 +54,7 @@ format: md
 
 3. 获取图片。
 
-   * 方法一：通过沙箱路径直接获取。该方法仅适用于应用沙箱中的图片。更多细节请参考[获取应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
+   * 方法一：通过沙箱路径直接获取。该方法仅适用于应用沙箱中的图片。更多细节请参考[获取应用文件路径](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
 
      ```
      function getFilePath(context: Context, fileName: string): string {
@@ -217,7 +217,7 @@ format: md
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Image/ImageArkTSSample/entry/src/main/ets/tools/CodecUtility.ets#L273-L305" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CodecUtility.ets</a></div>
 
 
-   解码完成，获取到pixelMap对象后，可以进行后续[图片处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-transformation)。
+   解码完成，获取到pixelMap对象后，可以进行后续[图片处理](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-transformation)。
 6. 释放pixelMap和imageSource。
 
    确认pixelMap和imageSource的异步方法已经执行完成，不再使用该变量后，可按需手动调用下面方法释放。
@@ -243,10 +243,10 @@ format: md
 
 ## 进阶主题
 
-* **内存优化解码**：使用DMA内存和YUV像素格式降低内存占用、提升解码性能，参见[图片解码内存优化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type)。
-* **区域解码**：解码图片指定区域，适用于大图局部查看和裁剪预览场景，参见[图片区域解码与下采样](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-region-and-downsampling)。
-* **下采样解码**：解码时直接缩放目标尺寸，避免解码后缩放的性能开销，适用于缩略图生成场景，参见[图片区域解码与下采样](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-region-and-downsampling)。
-* **多图对象解码**：解码包含主图和辅助图的Picture对象，适用于HDR图片和HEIF专业格式处理，参见[使用ImageSource完成多图对象解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-picture-decoding)。
+* **内存优化解码**：使用DMA内存和YUV像素格式降低内存占用、提升解码性能，参见[图片解码内存优化](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-allocator-type)。
+* **区域解码**：解码图片指定区域，适用于大图局部查看和裁剪预览场景，参见[图片区域解码与下采样](/docs/dev/app-dev/media/image-region-and-downsampling)。
+* **下采样解码**：解码时直接缩放目标尺寸，避免解码后缩放的性能开销，适用于缩略图生成场景，参见[图片区域解码与下采样](/docs/dev/app-dev/media/image-region-and-downsampling)。
+* **多图对象解码**：解码包含主图和辅助图的Picture对象，适用于HDR图片和HEIF专业格式处理，参见[使用ImageSource完成多图对象解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-picture-decoding)。
 
 ## 示例代码
 

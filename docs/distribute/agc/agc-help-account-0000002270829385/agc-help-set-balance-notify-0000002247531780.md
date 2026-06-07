@@ -1,6 +1,6 @@
 ---
 title: "设置账户余额不足提醒"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-set-balance-notify-0000002247531780
+original_url: /docs/distribute/agc/agc-help-account-0000002270829385/agc-help-set-balance-notify-0000002247531780
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 #### 前提条件
 
-您已完成[账户充值](https://developer.huawei.com/consumer/cn/doc/app/agc-help-topup-0000002277191065)。
+您已完成[账户充值](/docs/distribute/agc/agc-help-account-0000002270829385/agc-help-topup-0000002277191065)。
 
 #### 操作步骤
 

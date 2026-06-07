@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "学习Push Kit接入规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-specification
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-specification
 format: md
 ---
 
 
-为维护华为通知生态秩序，保障用户合法权益和良好的使用体验，根据现行法律法规及[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/20209)、[《华为推送服务使用协议》](https://developer.huawei.com/consumer/cn/doc/app/20213)、[《应用审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50104)、[《元服务审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50129)，特制定本规范。
+为维护华为通知生态秩序，保障用户合法权益和良好的使用体验，根据现行法律法规及[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/20209)、[《华为推送服务使用协议》](/docs/distribute/app-dist/app-market/x20240513/x20213)、[《应用审核指南》](/docs/distribute/app-dist/app-market/x50000/x50104/x50104-overview)、[《元服务审核指南》](/docs/distribute/app-dist/app-market/x50000/x50129/x50129-overview)，特制定本规范。
 
-所有发布上架到华为应用市场且使用推送通知行为的HarmonyOS应用、联运应用及元服务（以下简称应用）应当遵守本规范，若开发者的行为违反本规范或[《华为应用市场联运服务协议》](https://developer.huawei.com/consumer/cn/doc/app/20204)，华为有权根据本规范和[《华为应用市场联运违规处罚规定》](https://developer.huawei.com/consumer/cn/doc/app/20204)对开发者进行处罚。
+所有发布上架到华为应用市场且使用推送通知行为的HarmonyOS应用、联运应用及元服务（以下简称应用）应当遵守本规范，若开发者的行为违反本规范或[《华为应用市场联运服务协议》](/docs/distribute/app-dist/app-market/x20240513/x20204)，华为有权根据本规范和[《华为应用市场联运违规处罚规定》](/docs/distribute/app-dist/app-market/x20240513/x20204)对开发者进行处罚。
 
 ## Push Kit使用基本原则
 
@@ -16,11 +16,11 @@ format: md
 * 遵守[通知样式规范](#通知样式规范概要)，禁止采用规范外样式，以保证通知体验的一致性。
 * 通知开关需由用户授权允许，应用首次启动时需弹窗询问用户是否允许通知。
 * 不可出于商业目的强制改变通知属性（如采用进行中通知强制置顶显示），避免损害用户使用体验。
-* 遵守[通知内容管理细则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-detail-rules)。
+* 遵守[通知内容管理细则](/docs/dev/app-dev/application-services/push-kit-guide/push-appendix/push-detail-rules)。
 
 ## 通知内容
 
-为保障推送内容信息的合法性、真实客观性、一致性、可读性，以及用户良好的通知使用体验，请您遵守[通知内容管理细则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-detail-rules)。
+为保障推送内容信息的合法性、真实客观性、一致性、可读性，以及用户良好的通知使用体验，请您遵守[通知内容管理细则](/docs/dev/app-dev/application-services/push-kit-guide/push-appendix/push-detail-rules)。
 
 ## 通知样式
 
@@ -41,7 +41,7 @@ format: md
 
 | 描述 | 图片展示 |
 | --- | --- |
-| 通知文本内容最多可显示3行，超长后以“...”截断。 | 请参考[设计-通知-普通通知](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217#section4182426382)。 |
+| 通知文本内容最多可显示3行，超长后以“...”截断。 | 请参考[设计-通知-普通通知](/docs/design/system-features/features/notification#section4182426382)。 |
 
 ### 通知角标
 
@@ -49,7 +49,7 @@ format: md
 
 | 描述 | 图片展示 |
 | --- | --- |
-| 以数字的形式展示在右上角。 | 请参考[设计-通知-桌面图标角标](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217#section20838133494210)。 |
+| 以数字的形式展示在右上角。 | 请参考[设计-通知-桌面图标角标](/docs/design/system-features/features/notification#section20838133494210)。 |
 
 ![](./img/3ad117f5.png)
 
@@ -59,7 +59,7 @@ Wearable、TV不支持此通知样式。
 
 | 描述 | 图片展示 |
 | --- | --- |
-| 适用于有图片预览的通知。 | 请参考[设计-通知-图片预览通知](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217#section16214134103817)。 |
+| 适用于有图片预览的通知。 | 请参考[设计-通知-图片预览通知](/docs/design/system-features/features/notification#section16214134103817)。 |
 
 通知大图标需要满足以下要求：
 
@@ -79,7 +79,7 @@ Wearable不支持此通知样式。
 
 | 描述 | 图片展示 |
 | --- | --- |
-| 适用于文本内容较长的通知，最多可显示3行内容，每行内容超长后以“...”截断。 | 请参考[设计-通知-多行文本类通知](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217#section148485300395)。 |
+| 适用于文本内容较长的通知，最多可显示3行内容，每行内容超长后以“...”截断。 | 请参考[设计-通知-多行文本类通知](/docs/design/system-features/features/notification#section148485300395)。 |
 
 ![](./img/120c1b2e.png)
 
@@ -100,4 +100,4 @@ Wearable不支持此通知样式。
 
 * 应用不得擅自篡改、损坏、反编译Push Kit提供的服务功能，改变Push Kit的基本功能。
 * 避免出现其他可能影响终端用户体验的行为。
-* 应用使用Push Kit时，推荐接入[应用内通知设置快捷入口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-shortcut-settings)，便于用户找到应用内的通知分类控制开关，提升用户通知管理的体验，减少应用通知关闭率。
+* 应用使用Push Kit时，推荐接入[应用内通知设置快捷入口](/docs/dev/app-dev/application-services/notification-kit/notification-shortcut-settings)，便于用户找到应用内的通知分类控制开关，提升用户通知管理的体验，减少应用通知关闭率。

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现PixelMap和base64的相互转换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-15
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-15
 ---
 
 
@@ -33,8 +33,8 @@ Base64编码是一种将二进制数据转换为ASCII字符串的编码方式，
 
 **参考链接**
 
-[图片编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding-arts)
+[图片编码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-encoding-arts)
 
-[图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-arts)
+[图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts)
 
 [Base64Helper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#base64helper9)

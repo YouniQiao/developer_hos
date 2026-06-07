@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "高精几何重建（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-volume-measurement
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-volume/arengine-volume-measurement
 format: md
 ---
 
 
 ## 约束与限制
 
-从6.0.0(20)开始，高精几何重建能力支持部分Phone、部分Tablet设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持高精几何重建特性（[ARENGINE\_FEATURE\_TYPE\_SEMANTIC\_DENSE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arfeaturetype)）。
+从6.0.0(20)开始，高精几何重建能力支持部分Phone、部分Tablet设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持高精几何重建特性（[ARENGINE\_FEATURE\_TYPE\_SEMANTIC\_DENSE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arfeaturetype)）。
 
 ## 接口说明
 
@@ -23,7 +23,7 @@ format: md
 
 ## 开发步骤
 
-对于使用ArkTS的任何AR应用，首先需要创建一个AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)，用于管理AR Engine的系统状态。AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)的创建可以参考[管理AR会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession)章节。
+对于使用ArkTS的任何AR应用，首先需要创建一个AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)，用于管理AR Engine的系统状态。AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)的创建可以参考[管理AR会话](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-arsession)章节。
 
 ### 导入模块
 
@@ -47,7 +47,7 @@ let cubeLabel: arEngine.ARSemanticPlaneLabel;
 
 ### 显示预览流
 
-首先初始化AR会话和AR场景，可以参考[初始化AR会话和AR场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession#初始化ar会话和ar场景)章节。
+首先初始化AR会话和AR场景，可以参考[初始化AR会话和AR场景](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-arsession#初始化ar会话和ar场景)章节。
 
 更改semanticDenseMode为[ARSemanticDenseMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arsemanticdensemode).CUBE\_VOLUME，启用体积测量识别能力。
 

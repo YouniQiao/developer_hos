@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用剪贴板进行复制粘贴 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-use-pasteboard
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/native-use-pasteboard
 format: md
 ---
 
@@ -20,9 +20,9 @@ format: md
 
 * 剪贴板内容包含剪贴板系统服务元数据和应用设置的数据，总大小上限默认为128MB，PC/2in1设备可通过系统配置修改上限，有效范围为1MB~2GB。
 * 为保证剪贴板数据的准确性，同一时间只能支持一个复制操作。
-* 当前支持的数据类型：纯文本类型(OH\_UdsPlainText)、超文本标记语言类型(OH\_UdsHtml)、文件Uri类型(OH\_UdsFileUri)、像素图片类型(OH\_UdsPixelMap)、超链接类型(OH\_UdsHyperlink)、桌面图标类型(OH\_UdsAppItem)、自定义类型。ArkTS接口与NDK接口支持数据类型不完全一致，使用时须匹配接口支持类型，详情见[ArkTS接口与NDK接口数据类型对应关系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-pasteboard-to-copy-and-paste#arkts接口与ndk接口数据类型对应关系)。
+* 当前支持的数据类型：纯文本类型(OH\_UdsPlainText)、超文本标记语言类型(OH\_UdsHtml)、文件Uri类型(OH\_UdsFileUri)、像素图片类型(OH\_UdsPixelMap)、超链接类型(OH\_UdsHyperlink)、桌面图标类型(OH\_UdsAppItem)、自定义类型。ArkTS接口与NDK接口支持数据类型不完全一致，使用时须匹配接口支持类型，详情见[ArkTS接口与NDK接口数据类型对应关系](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/use-pasteboard-to-copy-and-paste#arkts接口与ndk接口数据类型对应关系)。
 * 自定义类型数据在复制粘贴时，指定的类型名称不能和已有的类型名称重复。
-* API version 12及之后，系统为提升用户隐私安全保护能力，剪贴板读取接口增加[权限管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)。
+* API version 12及之后，系统为提升用户隐私安全保护能力，剪贴板读取接口增加[权限管控](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines)。
 * API version 12中新增的复制、粘贴接口[setUnifiedData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#setunifieddata12)/[getUnifiedData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#getunifieddata12)与本文档中的复制、粘贴接口[OH\_Pasteboard\_SetData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-pasteboard-h#oh_pasteboard_setdata)/[OH\_Pasteboard\_GetData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-pasteboard-h#oh_pasteboard_getdata)当前相互独立，进行写入、读取操作时请使用对应配套接口。
 
 ## 接口说明

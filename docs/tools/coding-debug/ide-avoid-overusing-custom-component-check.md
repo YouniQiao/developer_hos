@@ -1,7 +1,7 @@
 ---
 title: "@performance/avoid-overusing-custom-component-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-avoid-overusing-custom-component-check
+original_url: /docs/tools/coding-debug/ide-avoid-overusing-custom-component-check
 format: md
 ---
 

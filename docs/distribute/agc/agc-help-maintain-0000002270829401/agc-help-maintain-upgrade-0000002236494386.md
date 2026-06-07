@@ -1,6 +1,6 @@
 ---
 title: "升级版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-upgrade-0000002236494386
+original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-upgrade-0000002236494386
 format: md
 ---
 
@@ -46,7 +46,7 @@ format: md
 如当前上架版本为全网发布，本次升级您可选择全网发布或分阶段发布。
 
 * 如您选择全网发布，设置“发布类型”为“全网发布”。
-* 如您选择分阶段发布，设置“发布类型”为“分阶段发布"，然后填写相关参数，具体参见[分阶段发布应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-phased-release-7day-0000002279615726)。
+* 如您选择分阶段发布，设置“发布类型”为“分阶段发布"，然后填写相关参数，具体参见[分阶段发布应用](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-phased-release-7day-0000002279615726)。
 
 ![](../img/agc-help-maintain-upgrade-0000002236494386_5.png)
 
@@ -70,7 +70,7 @@ format: md
   ![](../img/agc-help-maintain-upgrade-0000002236494386_8.png)
   + 如您确认不更改versionCode，点击“确认”即可。但需注意，如果新版本软件包的versionCode和当前在架版本的versionCode相同，已安装相同版本号的用户将无法升级到此版本，华为应用市场客户端显示的版本更新日期保持不变，依旧为在架版本的发布日期。
   + 如果发现versionCode错误，点击“取消”，重新上传正确的软件包。
-* 若弹出其他错误码，可参考[版本升级错误码说明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-update-errorcode-0000002322270833)了解问题原因与解决方案。
+* 若弹出其他错误码，可参考[版本升级错误码说明](/docs/distribute/agc/agc-help-appendix-0000002312305161/agc-help-update-errorcode-0000002322270833)了解问题原因与解决方案。
 
 提交成功后，应用状态更新为“正在审核”。审核通过后，应用升级成功。
 

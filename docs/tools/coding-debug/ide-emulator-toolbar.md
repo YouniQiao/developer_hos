@@ -1,7 +1,7 @@
 ---
 title: "使用工具栏"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-emulator-toolbar
+original_url: /docs/tools/coding-debug/ide-emulator-toolbar
 format: md
 ---
 

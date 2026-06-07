@@ -1,8 +1,8 @@
 ---
 title: "AI"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-ai
+original_url: /docs/dev/atomic-dev/ascf/apis-ai/apis-ai
 format: md
 ---
 
 
-* **[人脸活体检测](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-ai-face-liveness-detection)**
+* **[人脸活体检测](/docs/dev/atomic-dev/ascf/apis-ai/apis-ai-face-liveness-detection)**

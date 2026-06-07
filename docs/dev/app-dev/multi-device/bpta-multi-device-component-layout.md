@@ -1,7 +1,7 @@
 ---
 title: "组件布局场景"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-component-layout
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-component-layout
 format: md
 ---
 
@@ -34,7 +34,7 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 | --- | --- |
 | [lanes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#lanes9) | 设置不同断点对应list组件布局的列数或行数，及列间距。 |
 
-重复列表布局效果如下图，实现方案和示例代码请参考[列表布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section122004555383)。
+重复列表布局效果如下图，实现方案和示例代码请参考[列表布局](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section122004555383)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |
@@ -44,12 +44,12 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 
 | 属性 | 说明 |
 | --- | --- |
-| [WaterFlowLayoutMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow#waterflowlayoutmode12枚举说明) | 优先考虑视窗内布局信息或涉及动态切换列数时，建议使用SLIDING\_WINDOW模式，详情请参考[动态切换列数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-waterflow#动态切换列数)。 |
+| [WaterFlowLayoutMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow#waterflowlayoutmode12枚举说明) | 优先考虑视窗内布局信息或涉及动态切换列数时，建议使用SLIDING\_WINDOW模式，详情请参考[动态切换列数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-waterflow#动态切换列数)。 |
 | [columnsTemplate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow#columnstemplate) | 设置不同断点下瀑布流布局的列数。 |
 | [columnsGap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow#columnsgap) | 设置不同断点下列间距。 |
 | [itemConstraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow#itemconstraintsize) | 设置不同断点下WaterFlow所有子组件的约束尺寸。 |
 
-重复瀑布流布局效果如下图，实现方案和示例代码请参考[瀑布流布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section4502451713)。
+重复瀑布流布局效果如下图，实现方案和示例代码请参考[瀑布流布局](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section4502451713)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |
@@ -66,7 +66,7 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 | [prevMargin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#prevmargin10) | 设置不同断点下的前边距，用于露出前一项的一小部分。 |
 | [onChange()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#onchange) | 根据不同断点，设置索引值。例如lg横向断点下展示3张图片，即当displayCount=3时，当前显示索引为index的图片组（包含index, index+1, index+2），此时返回最右侧索引应为index+2。 |
 
-重复轮播布局效果如下图，实现方案和示例代码请参考[轮播布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section17659141914012)。
+重复轮播布局效果如下图，实现方案和示例代码请参考[轮播布局](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section17659141914012)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |
@@ -81,7 +81,7 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 | [columnsGap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#columnsgap) | 设置不同断点下的列间距。 |
 | [rowsGap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#rowsgap) | 设置不同断点下的行间距。 |
 
-重复网格布局效果如下图，实现方案和示例代码请参考[网格布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section1373617413916)。
+重复网格布局效果如下图，实现方案和示例代码请参考[网格布局](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section1373617413916)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |
@@ -97,7 +97,7 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 | [minSideBarWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-sidebarcontainer#minsidebarwidth) | 设置不同断点下侧边栏最小宽度。 |
 | [maxSideBarWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-sidebarcontainer#maxsidebarwidth) | 设置不同断点下侧边栏最大宽度。 |
 
-侧边栏布局效果如下图，实现方案和示例代码请参考[侧边栏](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section10393142415418)。
+侧边栏布局效果如下图，实现方案和示例代码请参考[侧边栏](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section10393142415418)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |
@@ -110,7 +110,7 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 | [mode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#mode9) | 设置不同断点下导航栏的显示模式：单栏或双栏。 |
 | [navBarWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navbarwidth9) | 设置不同断点下导航栏的宽度。 |
 
-单/双栏布局效果如下图，实现方案和示例代码请参考[单/双栏](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section631723412132)。
+单/双栏布局效果如下图，实现方案和示例代码请参考[单/双栏](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section631723412132)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |
@@ -131,7 +131,7 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 | [mode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#mode9) | 设置不同断点下导航栏的显示模式：单栏或双栏。 |
 | [navBarWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navbarwidth9) | 设置不同断点下导航栏的宽度。 |
 
-三分栏布局效果如下图，实现方案和示例代码请参考[三分栏](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section5436540101314)。
+三分栏布局效果如下图，实现方案和示例代码请参考[三分栏](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section5436540101314)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |
@@ -147,7 +147,7 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 | [barWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#barwidth) | 设置不同断点下TabBar的宽度。 |
 | [barHeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#barheight) | 设置不同断点下TabBar的高度。 |
 
-底部/侧边导航布局效果如下图，实现方案和示例代码请参考[底部/侧边导航](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section498443175014)。
+底部/侧边导航布局效果如下图，实现方案和示例代码请参考[底部/侧边导航](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section498443175014)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |
@@ -170,7 +170,7 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 
 **挪移布局**
 
-插图和文字组合布局效果如下图，实现方案和示例代码请参考[插图和文字组合布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section12847170175118)。
+插图和文字组合布局效果如下图，实现方案和示例代码请参考[插图和文字组合布局](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section12847170175118)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |
@@ -178,7 +178,7 @@ ArkUI框架常用的响应式组件及能够实现的布局场景的对应关系
 
 **缩进布局**
 
-单列列表布局效果如下图，实现方案和示例代码请参考[缩进布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section74801750591)。
+单列列表布局效果如下图，实现方案和示例代码请参考[缩进布局](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section74801750591)。
 
 | 横向断点 | sm | md | lg |
 | --- | --- | --- | --- |

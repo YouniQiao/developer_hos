@@ -1,6 +1,6 @@
 ---
 title: "使用AVScreenCapture实现窗口级录屏(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avscreencapture-for-file-with-window
+original_url: /docs/dev/app-dev/media/using-avscreencapture-for-file-with-window
 format: md
 ---
 
@@ -16,9 +16,9 @@ format: md
 
 在开发此功能前，开发者应根据实际需求申请相关权限：
 
-* 如果配置了采集麦克风音频数据，需[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)配置麦克风权限**ohos.permission.MICROPHONE**和申请[长时任务(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)。
-* 从API version 22开始，在PC/2in1设备上对应用进行录屏时，可通过申请权限**ohos.permission.TIMEOUT\_SCREENOFF\_DISABLE\_LOCK**，实现在屏幕熄灭但不锁屏的场景下，继续保持录制的效果。配置方式请参见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-* 从API version 22开始，在PC/2in1设备上对应用进行录屏时，可通过申请权限**ohos.permission.CUSTOM\_SCREEN\_RECORDING**，实现在录制屏幕时不再弹出隐私警告弹窗。配置方式请参见[受限开放权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions)。
+* 如果配置了采集麦克风音频数据，需[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)配置麦克风权限**ohos.permission.MICROPHONE**和申请[长时任务(ArkTS)](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)。
+* 从API version 22开始，在PC/2in1设备上对应用进行录屏时，可通过申请权限**ohos.permission.TIMEOUT\_SCREENOFF\_DISABLE\_LOCK**，实现在屏幕熄灭但不锁屏的场景下，继续保持录制的效果。配置方式请参见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+* 从API version 22开始，在PC/2in1设备上对应用进行录屏时，可通过申请权限**ohos.permission.CUSTOM\_SCREEN\_RECORDING**，实现在录制屏幕时不再弹出隐私警告弹窗。配置方式请参见[受限开放权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions)。
 
 ## 开发步骤及注意事项
 

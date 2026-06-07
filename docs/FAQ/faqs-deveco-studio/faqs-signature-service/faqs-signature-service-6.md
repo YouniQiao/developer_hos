@@ -1,7 +1,7 @@
 ---
 format: md
 title: "登录时浏览器提示不安全，“你的连接不是私密连接”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-6
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-6
 ---
 
 

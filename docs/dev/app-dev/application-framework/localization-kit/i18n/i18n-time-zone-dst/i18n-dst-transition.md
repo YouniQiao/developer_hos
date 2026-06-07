@@ -1,6 +1,6 @@
 ---
 title: "夏令时跳变"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-dst-transition
+original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-time-zone-dst/i18n-dst-transition
 format: md
 ---
 

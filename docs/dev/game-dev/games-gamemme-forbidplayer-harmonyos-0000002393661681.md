@@ -1,6 +1,6 @@
 ---
 title: "禁言其他玩家"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-forbidplayer-harmonyos-0000002393661681
+original_url: /docs/dev/game-dev/games-gamemme-forbidplayer-harmonyos-0000002393661681
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-* 您已[加入小队语音房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673#section644913141332)。
+* 您已[加入小队语音房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673#section644913141332)。
 * 您为房主身份，且房间中已有其他玩家。
 
 ## 禁言/解禁指定玩家

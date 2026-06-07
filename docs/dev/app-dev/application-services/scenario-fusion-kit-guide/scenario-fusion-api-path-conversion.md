@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文件路径转换API"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-path-conversion
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-path-conversion
 format: md
 ---
 

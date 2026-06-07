@@ -1,7 +1,7 @@
 ---
 title: "从一个例子开始"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-start
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-start
 format: md
 ---
 
@@ -64,7 +64,7 @@ format: md
 
 ## 工程管理及调试
 
-完成UX设计后，接下来需要考虑如何将设计转化为实际可运行的工程，在本文[多设备工程部署](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-ide)中，将详细介绍一多的工程创建及管理等，本小节仅介绍最基础的工程创建及多设备预览调试。
+完成UX设计后，接下来需要考虑如何将设计转化为实际可运行的工程，在本文[多设备工程部署](/docs/dev/app-dev/multi-device/bpta-multi-device-ide)中，将详细介绍一多的工程创建及管理等，本小节仅介绍最基础的工程创建及多设备预览调试。
 
 ###工程创建
 
@@ -91,13 +91,13 @@ format: md
 * 将天气主页划分为9个基础区域，如：
 
   ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/43/v3/FOu9ADv4TB2ELSseC0Op4A/zh-cn_image_0000002355265301.png?HW-CC-KV=V1&HW-CC-Date=20260606T074232Z&HW-CC-Expire=86400&HW-CC-Sign=27C4262FEC23ED631A007BFE15781665339140A03D23C1AD3E1AD0051DE3E051 "点击放大")
-* 基础区域9仅在大设备上显示（需要在大设备上展开侧边导航栏），基础区域1-8虽然在各设备上始终展示但其尺寸及区域内的布局基本保持不变（区域8需要向下滑动设备至底部，下方示例图不做展示），可以结合[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout)能力以[自定义组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components)的形式分别实现这9个基础区域。
+* 基础区域9仅在大设备上显示（需要在大设备上展开侧边导航栏），基础区域1-8虽然在各设备上始终展示但其尺寸及区域内的布局基本保持不变（区域8需要向下滑动设备至底部，下方示例图不做展示），可以结合[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout)能力以[自定义组件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components)的形式分别实现这9个基础区域。
 
   |  | 小设备 | 中设备 | 大设备 |
   | --- | --- | --- | --- |
   | 主页 | ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/3f/v3/NvY5E8soSWGr3_P7Ps4s_g/zh-cn_image_0000002321306594.png?HW-CC-KV=V1&HW-CC-Date=20260606T074232Z&HW-CC-Expire=86400&HW-CC-Sign=A52B5475781E8BDFF1E82A4DA36DE5F6DBF6C391AFF68FF2F6B78301D2D11868 "点击放大") | ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/18/v3/vxVZwpDfTIOK2fGDK1qL-A/zh-cn_image_0000002355145457.png?HW-CC-KV=V1&HW-CC-Date=20260606T074232Z&HW-CC-Expire=86400&HW-CC-Sign=770F74556AE3FE03D66752571D98CADED691F93EC6D012FBE19F6B711EF5F81A "点击放大") | ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/a9/v3/bV675E8fSrukKYdIWnp8bQ/zh-cn_image_0000002321146770.png?HW-CC-KV=V1&HW-CC-Date=20260606T074232Z&HW-CC-Expire=86400&HW-CC-Sign=5062AF16322D01A2CFE8C581EDA7C9FAA087C72C1E803D2E19B99463E0DD86E5 "点击放大") |
-* 基础区域1-8之间的布局在不同设备上有较大差异，可以使用响应式布局中的[栅格](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1061332817545)能力实现组件间的布局效果。
-* 展开和隐藏侧边栏的功能可以通过[侧边栏组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-sidebarcontainer)来实现。侧边栏是大设备上独有的，借助响应式布局中的[媒体查询](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1950102518311)能力，控制仅在大设备上展示侧边栏即可。
+* 基础区域1-8之间的布局在不同设备上有较大差异，可以使用响应式布局中的[栅格](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1061332817545)能力实现组件间的布局效果。
+* 展开和隐藏侧边栏的功能可以通过[侧边栏组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-sidebarcontainer)来实现。侧边栏是大设备上独有的，借助响应式布局中的[媒体查询](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1950102518311)能力，控制仅在大设备上展示侧边栏即可。
 
 ###主页基础区域
 
@@ -157,7 +157,7 @@ export default struct HoursWeather {
 
 天气主页右侧的城市天气详情由区域1-8组成，区域1（标题栏）始终固定在页面顶部，区域2-8在不同设备下的布局不同且可以随页面上下滚动。本小节介绍如何实现城市天气详情中区域2~8的布局效果。
 
-设备屏幕可能无法一次性显示区域2-8的所有内容，故需要在外层增加滚动组件（即Scroll组件）以支持上下滚动。不同设备下区域2-8的相对位置一共有三套不同的布局，可以借助响应式布局中的[栅格](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1061332817545)实现这一效果。本示例中将栅格在不同场景下分别划分为4列、8列和12列，区域2-8在不同场景下的布局如下表所示。
+设备屏幕可能无法一次性显示区域2-8的所有内容，故需要在外层增加滚动组件（即Scroll组件）以支持上下滚动。不同设备下区域2-8的相对位置一共有三套不同的布局，可以借助响应式布局中的[栅格](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1061332817545)实现这一效果。本示例中将栅格在不同场景下分别划分为4列、8列和12列，区域2-8在不同场景下的布局如下表所示。
 
 | 小设备 | 中设备 或 大设备（侧边栏显示状态） | 大设备（侧边栏隐藏状态） |
 | --- | --- | --- |
@@ -380,7 +380,7 @@ struct Home {
 * 在应用安装包中描述其需要的系统能力，保证本应用仅被分发和安装到可以满足其诉求的系统中。
 * 在使用特定系统能力前，通过canIUse接口判断系统能力是否存在，进而执行不同的逻辑。
 
-在本文的[多设备功能开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-function)章节中，将详细展开介绍。
+在本文的[多设备功能开发](/docs/dev/app-dev/multi-device/bpta-multi-device-function)章节中，将详细展开介绍。
 
 ## 示例代码
 

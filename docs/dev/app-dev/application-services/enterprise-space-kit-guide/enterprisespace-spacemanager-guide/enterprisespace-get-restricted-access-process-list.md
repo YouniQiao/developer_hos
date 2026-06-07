@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取不可访问后台用户数据的系统服务进程列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-restricted-access-process-list
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-get-restricted-access-process-list
 format: md
 ---
 

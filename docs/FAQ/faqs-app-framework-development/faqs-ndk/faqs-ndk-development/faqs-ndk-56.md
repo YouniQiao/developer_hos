@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何跨Hap模块调用C++ API"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-56
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-56
 ---
 
 

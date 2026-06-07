@@ -1,7 +1,7 @@
 ---
 title: "@performance/web-cache-mode-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-performance-web-cache-mode-check
+original_url: /docs/tools/coding-debug/ide-performance-web-cache-mode-check
 format: md
 ---
 

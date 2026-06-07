@@ -1,7 +1,7 @@
 ---
 format: md
 title: "httpRequest.request请求https接口ssl证书验证失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-41
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-41
 ---
 
 

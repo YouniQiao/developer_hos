@@ -1,6 +1,6 @@
 ---
 title: "国际化界面设计"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-ui-design
+original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-ui-design
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "HSP/HAR包中如何引用外部编译的so库文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-6
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-6
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "PermissionLanguage"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-permissionlanguage-0000002585575019
+original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-permissionlanguage-0000002585575019
 format: md
 ---
 

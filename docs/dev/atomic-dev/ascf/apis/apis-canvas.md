@@ -1,6 +1,6 @@
 ---
 title: "画布"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-canvas
+original_url: /docs/dev/atomic-dev/ascf/apis/apis-canvas
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 has.createCanvasContext(string canvasId, Object this)
 
-创建 [canvas](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-canvas) 的绘图上下文CanvasContext对象。
+创建 [canvas](/docs/dev/atomic-dev/ascf/components-canvas-components/components-canvas) 的绘图上下文CanvasContext对象。
 
 **起始版本：** 1.0.0
 

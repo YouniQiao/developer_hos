@@ -1,6 +1,6 @@
 ---
 title: "动态属性设置常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-modifier-faq
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-attribute-modifier-faq
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 **问题现象**
 
-使用AttributeModifier对组件进行[动态属性设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier)，设置某些属性后出现[JS Crash](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines)。
+使用AttributeModifier对组件进行[动态属性设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier)，设置某些属性后出现[JS Crash](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines)。
 
 ![](./img/0ba13065.png)
 

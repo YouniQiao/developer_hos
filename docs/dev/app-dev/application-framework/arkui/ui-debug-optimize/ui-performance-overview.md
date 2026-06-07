@@ -1,6 +1,6 @@
 ---
 title: "UI高性能开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-performance-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-performance-overview
 format: md
 ---
 
@@ -18,23 +18,23 @@ format: md
 
 性能优化的过程中使用数据而非直觉指导优化方向是提升优化效率的关键。当前DevEco Studio中提供了两个性能分析工具，可以进行UI的性能分析，帮助我们高效的进行性能问题定位：
 
-1. CPU Profiler：用于在运行过程中抓取trace和调用栈对耗时点进行分析，使用方法可以参考[CPU Profiler的使用指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-optimization-overview)分析的思路可以参考[常用Trace的含义](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-optimization-overview#section085643405116)。
+1. CPU Profiler：用于在运行过程中抓取trace和调用栈对耗时点进行分析，使用方法可以参考[CPU Profiler的使用指导](/docs/quality/optimization-overview)分析的思路可以参考[常用Trace的含义](/docs/quality/optimization-overview#section085643405116)。
 2. ArkUI Inspector：用于可视化的展示UI组件树，分析UI的布局层次和参数，使用方法可以参考[ArkUI Inspector使用说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector)。
 
    在分析性能问题的过程中，应当先通过CPU Profiler工具发现实际的性能瓶颈点，再针对性的进行优化。
 
 ### 惰性加载优先
 
-推迟非可视区域的资源消耗可有效的加快应用启动和页面的切换速度。ArkUI提供了[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)组件，便于应用实现数据的懒加载。
+推迟非可视区域的资源消耗可有效的加快应用启动和页面的切换速度。ArkUI提供了[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)组件，便于应用实现数据的懒加载。
 
 ### 布局计算简化
 
-应用开发中的UI布局是用户与应用程序交互的关键部分。不合理的布局越多，视图的创建、布局、渲染等流程所需的时间就越长。因此，减少嵌套层次或者使用高性能布局节点，可以减少丢帧卡顿。可以参考这些[布局技巧](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-nesting-optimization)来优化布局性能。
+应用开发中的UI布局是用户与应用程序交互的关键部分。不合理的布局越多，视图的创建、布局、渲染等流程所需的时间就越长。因此，减少嵌套层次或者使用高性能布局节点，可以减少丢帧卡顿。可以参考这些[布局技巧](/docs/quality/component-nesting-optimization)来优化布局性能。
 
 ### 更新代替重建
 
-对于会反复使用的组件，可将其缓存起来，用更新代替重建来提升性能。例如，在滚动容器的滑动过程中，一边的组件划出可视范围被释放，另一边的组件划入可视范围需要创建，反复的释放和创建相同的ListItem显然是冗余的。针对这一需要对特定组件进行缓存、复用的场景，ArkUI提供了[组件复用能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable)，可以对自定义组件进行标记，在被标记的自定义组件释放时将其放入缓存池，在下次需要创建时从缓存池中拿出，用刷新代替创建。使用场景可以参考[组件复用的基本原理和使用技巧](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-reuse)。
+对于会反复使用的组件，可将其缓存起来，用更新代替重建来提升性能。例如，在滚动容器的滑动过程中，一边的组件划出可视范围被释放，另一边的组件划入可视范围需要创建，反复的释放和创建相同的ListItem显然是冗余的。针对这一需要对特定组件进行缓存、复用的场景，ArkUI提供了[组件复用能力](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable)，可以对自定义组件进行标记，在被标记的自定义组件释放时将其放入缓存池，在下次需要创建时从缓存池中拿出，用刷新代替创建。使用场景可以参考[组件复用的基本原理和使用技巧](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-reuse)。
 
 ### 状态精确控制
 
-[状态管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview)是ArkUI声明式的核心机制，它负责将数据与UI联系起来，在UI刷新的过程中会反复执行状态管理的相关逻辑，创建过多的状态变量会影响性能。开发者在使用的过程中应注意[状态管理常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq)。
+[状态管理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview)是ArkUI声明式的核心机制，它负责将数据与UI联系起来，在UI刷新的过程中会反复执行状态管理的相关逻辑，创建过多的状态变量会影响性能。开发者在使用的过程中应注意[状态管理常见问题](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq)。

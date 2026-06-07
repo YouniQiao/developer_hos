@@ -1,6 +1,6 @@
 ---
 title: "房间管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-room-real-time-server-0000002395190637
+original_url: /docs/dev/game-dev/gameobe-room-real-time-server-0000002395190637
 format: md
 ---
 

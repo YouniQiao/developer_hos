@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成图片编码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-packer-c
+original_url: /docs/dev/app-dev/media/image-kit/image-native/image-encoding-c/image-packer-c
 format: md
 ---
 

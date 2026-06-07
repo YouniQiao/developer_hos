@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation跨模块跳转报错"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-423
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-423
 ---
 
 

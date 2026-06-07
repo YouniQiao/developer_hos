@@ -1,7 +1,7 @@
 ---
 title: 元服务 UX 体验标准
 sidebar_label: 元服务 UX 体验标准
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-standard-overview-0000002019655177
+original_url: /docs/design/ux-standards/atomic-service-ux
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- |
 | 标准类型 | 标准子类型 | 标准编号 | 标准项名称 | 标准项描述 | 是否必须遵守 |
-| 通用应用 UX 体验标准 | [基础体验](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-general-0000001760708152#section11938161416124) | 2.1.1.1 | 系统返回 | 所有界面响应系统返回操作，全屏界面提供返回/关闭/取消按钮 | 必须 |
+| 通用应用 UX 体验标准 | [基础体验](/docs/design/ux-standards/general-ux#section11938161416124) | 2.1.1.1 | 系统返回 | 所有界面响应系统返回操作，全屏界面提供返回/关闭/取消按钮 | 必须 |
 | 2.1.2.1 | 布局基础要求 | 应用支持在不同屏幕尺寸的设备上良好显示 | 必须 |
 | 2.1.2.2 | 挖孔区适配 | 界面布局适配摄像头的挖孔区域 | 必须 |
 | 2.1.2.3 | 元素排布对齐 | 元素排布对齐 | 推荐 |
@@ -50,16 +50,16 @@ format: md
 | 2.1.5.3.2 | 滑动跟手反馈动效一致性 | 滑动跟手反馈动效一致性 | 必须 |
 | 2.1.5.3.3 | 滑动过界反馈动效一致性 | 界面滑动到边界位置存在反馈动效 | 推荐 |
 | 2.1.5.3.4 | 离手减速动效一致性 | 离手减速动效检查 | 必须 |
-| [系统特性](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-general-0000001760708152#section15603108141517) | 2.2.1 | 底部导航条适配 | 界面布局适配底部导航条 | 必须 |
+| [系统特性](/docs/design/ux-standards/general-ux#section15603108141517) | 2.2.1 | 底部导航条适配 | 界面布局适配底部导航条 | 必须 |
 | 2.2.2 | 通知 | 应用/元服务通知设计需遵循通知规范 | 涉及则必须 |
 | 2.2.3 | 实况窗 | 实况窗通知样式需符合设计规范 | 必须 |
 | 2.2.4.1 | 悬浮窗适配 | 应用支持以悬浮窗模式运行 | 必须 |
 | 2.2.4.2 | 分屏适配 | 应用支持上下分屏和左右分屏 | 必须 |
 | 2.2.5 | 深色模式 | 应用需支持深色模式显示 | 必须 |
 | 2.2.6 | 状态栏 | 应用需要对状态栏进行适配显示 | 必须 |
-| 大屏应用 UX 体验标准 | [功能完整](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-large-screen-0000001807707561#section12976125418475) | 3.1.1 | 横竖屏适配 | 横竖屏适配检查 | 必须 |
+| 大屏应用 UX 体验标准 | [功能完整](/docs/design/ux-standards/large-screen-ux#section12976125418475) | 3.1.1 | 横竖屏适配 | 横竖屏适配检查 | 必须 |
 | 3.1.2 | 多窗适配 | 多窗适配检查 | 必须 |
-| [布局合理美观](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-large-screen-0000001807707561#section146787220496) | 3.2.1.1 | 布局基础要求(大屏) | 折叠屏在各个形态下显示正常 | 必须 |
+| [布局合理美观](/docs/design/ux-standards/large-screen-ux#section146787220496) | 3.2.1.1 | 布局基础要求(大屏) | 折叠屏在各个形态下显示正常 | 必须 |
 | 3.2.1.2 | 图标文字大小适中 | 折叠屏图标文字大小符合要求 | 必须 |
 | 3.2.1.3 | 弹出框大小适中 | 折叠屏展开态弹出框高度符合要求 | 必须 |
 | 3.2.1.4 | 宫格图片信息量适中 | 宫格图片控件占比符合要求 | 必须 |
@@ -71,12 +71,12 @@ format: md
 | 3.2.1.10 | 浏览型布局 | 浏览型应用/元服务应使用宫格/瀑布流等布局 | 推荐 |
 | 3.2.2.1 | 布局创新 | 折叠屏应在布局视觉提升的创新 | 推荐 |
 | 3.2.2.2 | 侧边导航栏 | 应用窗口宽度 ≥840vp 时底部导航栏切换为侧边导航栏 | 推荐 |
-| [交互易用](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-large-screen-0000001807707561#section192433105012) | 3.3.1.1 | 按钮易点击 | 按钮应避开难交互区域 | 推荐 |
+| [交互易用](/docs/design/ux-standards/large-screen-ux#section192433105012) | 3.3.1.1 | 按钮易点击 | 按钮应避开难交互区域 | 推荐 |
 | 3.3.1.2 | 键盘易操作 | 键盘按键应避开难交互区域 | 推荐 |
 | 3.3.1.3 | 弹框易操作 | 弹出框位置易操作 | 推荐 |
 | 3.3.2.1 | 临时悬浮窗 | 应用内启动临时的需要跨应用或跨实例跳转的任务应使用临时悬浮窗 | 推荐 |
 | 3.3.2.2 | 临时双窗 | 应用内启动的临时的辅助任务应使用临时双窗 | 推荐 |
-| [鼠标、触控板和键盘交互](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-large-screen-0000001807707561#section65561444209) | 3.4.1 | 可交互控件响应光标悬浮 | 当光标悬浮在应用/元服务的可交互控件上，控件或者光标需要提供对应的视觉反馈 | 必须 |
+| [鼠标、触控板和键盘交互](/docs/design/ux-standards/large-screen-ux#section65561444209) | 3.4.1 | 可交互控件响应光标悬浮 | 当光标悬浮在应用/元服务的可交互控件上，控件或者光标需要提供对应的视觉反馈 | 必须 |
 | 3.4.2 | 目标单选 | 对于界面中支持选中态的目标，可使用鼠标或触控板对其进行选择 | 必须 |
 | 3.4.3 | 多目标框选 | 当需要选择多个目标时，可通过框选操作进行选择 | 必须 |
 | 3.4.4 | 多目标连选 | 当需要选择多个目标时，可通过连选操作进行选择 | 必须 |
@@ -91,11 +91,11 @@ format: md
 | 3.4.13 | 支持使用外接键盘键入 | 应用支持使用外接键盘键入文本 | 必须 |
 | 3.4.14 | 支持全键盘操作 | 应用/元服务中的主要任务流支持键盘的焦点导航 | 必须 |
 | 3.4.15 | 支持常用功能的通用快捷键 | 支持常用功能的通用快捷键 | 必须 |
-| 折叠屏应用 UX 体验标准 | [基础体验](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-foldable-screen-0000001807866557#section1519516555910) | 4.1 | 开合连续性 | 应用/元服务在开合过程中体验连续 | 涉及则必须 |
+| 折叠屏应用 UX 体验标准 | [基础体验](/docs/design/ux-standards/foldable-screen-ux#section1519516555910) | 4.1 | 开合连续性 | 应用/元服务在开合过程中体验连续 | 涉及则必须 |
 | 4.2 | 开合流畅 | 应用/元服务在开合过程中动效流畅 | 推荐 |
 | 4.3 | 悬停适配 | 应用/元服务在悬停态时布局满足要求 | 推荐 |
 | 4.4 | 折痕避让 | 应用/元服务在悬停态时应避开折痕 | 推荐 |
-| 电脑应用UX体验标准 | [窗口响应式](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-2in1-0000001777895636#section4545182215262) | 5.1.1 | 支持窗口化运行 | 应用/元服务支持窗口化运行 | 推荐 |
+| 电脑应用UX体验标准 | [窗口响应式](/docs/design/ux-standards/2in1-ux#section4545182215262) | 5.1.1 | 支持窗口化运行 | 应用/元服务支持窗口化运行 | 推荐 |
 | 5.1.2 | 支持窗口形态转换 | 应用/元服务支持通过窗口控制器转换窗口形态 | 推荐 |
 | 5.1.3 | 支持窗口尺寸调节 | 应用/元服务支持在可调范围内任意调节窗口大小 | 推荐 |
 | 5.1.4 | 支持分屏和比例调节 | 应用/元服务支持分屏和比例调节 | 推荐 |
@@ -117,13 +117,13 @@ format: md
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 7.1.1 | 图标设计规范 |
-| 标准描述 | | 1.元服务图标与应用图标有明显区别，它继承了 HarmonyOS 的设计语言体系，内部圆形表示完整独立，外圈装饰线表示可分可合可流转的特点。  2.元服务图标生成需提供尺寸为 1024 x 1024 px 的静态图片资源（参考[图标设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900384976#section158386422413)），并使用元服务图标工具（[生成元服务图标](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-icon-generation)）生成相应的规范图标。  3.元服务图标外圈线请勿使用纯白或纯黑，以避免在纯白/纯黑页面背景上无法清晰辨识其轮廓形态。当中心圆背景为纯白/纯黑时，需给中心圆增加描边，以确保图标中心圆轮廓清晰可见。 |
+| 标准描述 | | 1.元服务图标与应用图标有明显区别，它继承了 HarmonyOS 的设计语言体系，内部圆形表示完整独立，外圈装饰线表示可分可合可流转的特点。  2.元服务图标生成需提供尺寸为 1024 x 1024 px 的静态图片资源（参考[图标设计规范](/docs/design/atomic-service-design/basic-elements/basic-info#section158386422413)），并使用元服务图标工具（[生成元服务图标](/docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-icon-generation)）生成相应的规范图标。  3.元服务图标外圈线请勿使用纯白或纯黑，以避免在纯白/纯黑页面背景上无法清晰辨识其轮廓形态。当中心圆背景为纯白/纯黑时，需给中心圆增加描边，以确保图标中心圆轮廓清晰可见。 |
 | 测试方法 | | 规范图标需满足：  1）内环圆形、外形点状轮廓需符合元服务装饰特征。  2）生成的元服务图标统一为 PNG 格式资源。  3）元服务图标在黑白背景下清晰无锯齿、无拉伸。  4）元服务工程文件中的图标尺寸满足 512\*512 px。  5）AppGallery Connect 上架元服务时，[“应用信息”页面](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyos-releaseservice-0000001946273965#section94111352985)上传的图标满足相应要求。 |
 | 判定标准 | | 所有元服务图标透出场景均需满足图标显示要求 |
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 手机、折叠屏、平板、电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅：[生成元服务图标](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-icon-generation) |
+| 系统能力 | | 请参阅：[生成元服务图标](/docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-icon-generation) |
 
 7.1.2 元服务启动过程无自定义动画
 

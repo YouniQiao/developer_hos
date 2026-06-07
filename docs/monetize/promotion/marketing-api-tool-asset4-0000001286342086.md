@@ -1,7 +1,7 @@
 ---
 title: "删除素材"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-asset4-0000001286342086
+original_url: /docs/monetize/promotion/marketing-api-tool-asset4-0000001286342086
 format: md
 ---
 

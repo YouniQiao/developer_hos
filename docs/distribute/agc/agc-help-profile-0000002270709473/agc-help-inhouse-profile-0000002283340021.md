@@ -1,13 +1,13 @@
 ---
 title: "申请In-house发布Profile"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-inhouse-profile-0000002283340021
+original_url: /docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-inhouse-profile-0000002283340021
 format: md
 ---
 
 
 ![](../img/agc-help-inhouse-profile-0000002283340021_0.png)
 
-申请ACL权限的入口已调整至项目下的“ACL权限”页签，创建Profile时仅支持添加已获取的ACL权限。如需使用ACL权限，请先参考[申请ACL权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-acl-0000002394212138)获取ACL权限，再创建Profile。
+申请ACL权限的入口已调整至项目下的“ACL权限”页签，创建Profile时仅支持添加已获取的ACL权限。如需使用ACL权限，请先参考[申请ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138)获取ACL权限，再创建Profile。
 
 在发布In-house应用时，您需要使用In-house发布证书和In-house发布Profile手动签名后，才能编译构建正式发布包。请参考本文档申请并下载In-house发布Profile。
 
@@ -17,10 +17,10 @@ format: md
 
 #### 前提条件
 
-* 已[申请In-house发布证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-inhouse-cert-0000002248337770)。
-* 已[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)并[为应用申请In-house分发权限](https://developer.huawei.com/consumer/cn/verified/enterpriseDistribute)。
-* （如需使用ACL权限）已[申请并获取ACL权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-acl-0000002394212138)。
-* 当前账号角色已[获取“访问发布类Profile”权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
+* 已[申请In-house发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-inhouse-cert-0000002248337770)。
+* 已[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)并[为应用申请In-house分发权限](https://developer.huawei.com/consumer/cn/verified/enterpriseDistribute)。
+* （如需使用ACL权限）已[申请并获取ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138)。
+* 当前账号角色已[获取“访问发布类Profile”权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
 
 #### 操作步骤
 
@@ -49,7 +49,7 @@ format: md
 
    ![](../img/agc-help-inhouse-profile-0000002283340021_5.png)
 
-   若应用/元服务尚未获取任何ACL权限、或者您想增加更多ACL权限，可点击界面下方的“去申请”，前往“ACL权限”页面申请获取，具体操作请参见[申请ACL权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-acl-0000002394212138#section156171230179)。获取ACL权限后，再参考本文档添加最新权限到Profile内。
+   若应用/元服务尚未获取任何ACL权限、或者您想增加更多ACL权限，可点击界面下方的“去申请”，前往“ACL权限”页面申请获取，具体操作请参见[申请ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138#section156171230179)。获取ACL权限后，再参考本文档添加最新权限到Profile内。
 
    ![](../img/agc-help-inhouse-profile-0000002283340021_6.png "点击放大")
 5. 点击右上角“添加”，In-house发布Profile申请成功，“Profile”页面展示Profile名称、类型等信息。点击“下载”，将生成的Profile保存至本地，供后续发布签名使用。

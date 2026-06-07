@@ -1,6 +1,6 @@
 ---
 title: "典型应用场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-applicationscenarios-0000002395190461
+original_url: /docs/dev/game-dev/gameobe-applicationscenarios-0000002395190461
 format: md
 ---
 

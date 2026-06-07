@@ -1,6 +1,6 @@
 ---
 title: "Web应用模拟点击检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-detect-simulated-click-risk-enhanced
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-detect-simulated-click-risk-enhanced
 format: md
 ---
 

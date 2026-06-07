@@ -1,6 +1,6 @@
 ---
 title: "如何获取当前HAP的BundleName"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-26
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-26
 format: md
 ---
 

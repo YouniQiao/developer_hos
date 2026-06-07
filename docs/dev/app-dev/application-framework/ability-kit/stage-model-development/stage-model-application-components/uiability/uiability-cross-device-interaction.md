@@ -1,6 +1,6 @@
 ---
 title: "通过Call调用实现多端协同"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-cross-device-interaction
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-cross-device-interaction
 format: md
 ---
 
@@ -61,11 +61,11 @@ Call功能主要接口如下表所示。具体的API详见[Caller](https://devel
 
 在[Callee](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#callee)被调用端，需要实现指定方法的数据接收回调函数、数据的序列化及反序列化方法。在需要接收数据期间，通过[on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#on)接口注册监听，无需接收数据时通过[off](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#off)接口解除监听。
 
-1. 需要申请ohos.permission.DISTRIBUTED\_DATASYNC权限，配置方式请参见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-2. 同时需要在应用首次启动时弹窗向用户申请授权，使用方式请参见[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+1. 需要申请ohos.permission.DISTRIBUTED\_DATASYNC权限，配置方式请参见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+2. 同时需要在应用首次启动时弹窗向用户申请授权，使用方式请参见[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 3. 配置[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)的启动模式。
 
-   例如将CalleeAbility配置为单实例模式singleton，配置方式请参见[UIAbility组件启动模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type)。
+   例如将CalleeAbility配置为单实例模式singleton，配置方式请参见[UIAbility组件启动模式](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-launch-type)。
 4. 定义约定的序列化数据。
 
    调用端及被调用端发送接收的数据格式需协商一致，如下示例约定数据由number和string组成。

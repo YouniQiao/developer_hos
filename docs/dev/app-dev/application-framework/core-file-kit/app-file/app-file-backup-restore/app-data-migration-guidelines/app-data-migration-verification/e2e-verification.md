@@ -1,6 +1,6 @@
 ---
 title: "端到端验证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/e2e-verification
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-verification/e2e-verification
 format: md
 ---
 

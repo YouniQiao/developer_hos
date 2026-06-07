@@ -1,6 +1,6 @@
 ---
 title: "PageAbility的启动模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-launch-type
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-launch-type
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
 }
 ```
 
-启动PageAbility时，对于多实例模式启动，以及单实例模式进行首次启动时，[PageAbility生命周期回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-lifecycle)均会被触发。单实例非首次启动时不会再触发onCreate()接口，而是触发onNewWant()，onNewWant()的说明如下表2所示。
+启动PageAbility时，对于多实例模式启动，以及单实例模式进行首次启动时，[PageAbility生命周期回调](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-lifecycle)均会被触发。单实例非首次启动时不会再触发onCreate()接口，而是触发onNewWant()，onNewWant()的说明如下表2所示。
 
 **表2** 单实例启动模式特有的回调函数说明
 

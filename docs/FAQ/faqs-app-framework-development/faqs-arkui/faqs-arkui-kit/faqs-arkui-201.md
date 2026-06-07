@@ -1,6 +1,6 @@
 ---
 title: "如何解决window创建的模态窗口默认焦点不在界面上，导致不响应返回事件的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-201
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-201
 format: md
 ---
 

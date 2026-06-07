@@ -1,6 +1,6 @@
 ---
 title: "应用与网页共用账号密码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/password-shared-apps-web-pages
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/password-shared-apps-web-pages
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 
 1. 应用和网页均已接入密码保险箱自动填充能力。
 
-   接入参考：[应用接入密码保险箱](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation)、[网页接入密码保险箱](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-access-password-safe)
+   接入参考：[应用接入密码保险箱](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-quick-adaptation)、[网页接入密码保险箱](/docs/dev/app-dev/system/system-security/passwordvault/arkweb-access-password-safe)
 2. 应用和网页通过App Linking完成关联关系的绑定。
 
-   接入需完成三步：[在AGC控制台开通App Linking服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-enable-applinking) > [建立域名与应用关联关系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#建立域名与应用关联关系) > [在AGC为应用创建关联的网址域名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在agc为应用创建关联的网址域名)
+   接入需完成三步：[在AGC控制台开通App Linking服务](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-preparations/applinking-enable-applinking) > [建立域名与应用关联关系](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#建立域名与应用关联关系) > [在AGC为应用创建关联的网址域名](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在agc为应用创建关联的网址域名)

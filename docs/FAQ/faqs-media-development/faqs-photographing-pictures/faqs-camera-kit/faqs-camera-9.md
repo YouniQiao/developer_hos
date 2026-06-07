@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现相机关闭"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-9
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-9
 ---
 
 
@@ -29,4 +29,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 
 **参考链接**
 
-[拍照实践(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting-case)
+[拍照实践(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting-case)

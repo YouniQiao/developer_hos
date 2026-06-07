@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发无UI界面基础驱动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driverextensionability
+original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/driverextensionability
 format: md
 ---
 
@@ -20,13 +20,13 @@ format: md
 
 ## 环境搭建
 
-请参考[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/environmental-preparation)完成开发前的准备工作。
+请参考[环境准备](/docs/dev/app-dev/system/system-hardware/driver-development-kit/environmental-preparation)完成开发前的准备工作。
 
 ## 开发步骤
 
 开发者在实现一个驱动时，需要在DevEco Studio工程中手动新建一个DriverExtensionAbility，具体步骤如下：
 
-1. 创建新工程，请参考[创建一个新的工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)，创建一个HarmonyOS工程。（如果在[开发带UI界面基础驱动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/externaldevice-guidelines)已经创建，则此处不需要创建。）
+1. 创建新工程，请参考[创建一个新的工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)，创建一个HarmonyOS工程。（如果在[开发带UI界面基础驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/externaldevice-guidelines)已经创建，则此处不需要创建。）
 2. 在新创建的工程对应的ets目录下，右键选择“New > Directory”，新建一个目录并命名为driverextability。
 3. 在driverextability目录，右键选择“New > ArkTS File”，新建一个文件并命名为DriverExtAbility.ets。
 4. 在文件中导入相关Kit，并定义请求Code。
@@ -99,7 +99,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/DriverDevelopmentKit/DriverDemo/entry/src/main/ets/driverextability/DriverExtAbility.ets#L46-L70" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：DriverExtAbility.ets</a></div>
 
-7. 在工程Module对应的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中注册DriverExtensionAbility，type标签需要设置为“driver”，srcEntry标签表示当前ExtensionAbility组件所对应的代码路径。
+7. 在工程Module对应的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中注册DriverExtensionAbility，type标签需要设置为“driver”，srcEntry标签表示当前ExtensionAbility组件所对应的代码路径。
 
    ```
    {
@@ -195,10 +195,10 @@ format: md
 
 扩展外设管理目前提供了HidDdk、UsbDdk、USBSerialDDK和ScsiPeripheralDDK四种能力，用于扩展外设专项驱动的开发。具体使用方法，请参考：
 
-* [开发适用HID协议的设备驱动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hid-ddk-guidelines)
-* [开发适用USB协议的设备驱动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-ddk-guidelines)
-* [开发适用串口协议的设备驱动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-serial-ddk-guidelines)
-* [开发使用SCSI协议的设备驱动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scsi-peripheral-ddk-guidelines)
+* [开发适用HID协议的设备驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/hid-ddk-guidelines)
+* [开发适用USB协议的设备驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/usb-ddk-guidelines)
+* [开发适用串口协议的设备驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/usb-serial-ddk-guidelines)
+* [开发使用SCSI协议的设备驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/scsi-peripheral-ddk-guidelines)
 
 ## 应用签名
 
@@ -208,10 +208,10 @@ format: md
 
 * ohos.permission.ACCESS\_EXTENSIONAL\_DEVICE\_DRIVER
 
-  在module.json5配置文件的requestPermissions标签中[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)后，即可获得授权。
+  在module.json5配置文件的requestPermissions标签中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)后，即可获得授权。
 * ohos.permission.ACCESS\_DDK\_DRIVERS
 
-  1. 在module.json5配置文件的requestPermissions标签中[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-  2. HarmonyAppProvision配置文件中，修改acls字段，跨级别申请权限，可参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+  1. 在module.json5配置文件的requestPermissions标签中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+  2. HarmonyAppProvision配置文件中，修改acls字段，跨级别申请权限，可参考[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。
 
 完成权限配置后，可参考[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)对应用进行签名。

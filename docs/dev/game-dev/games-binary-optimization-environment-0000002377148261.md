@@ -1,6 +1,6 @@
 ---
 title: "环境准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-environment-0000002377148261
+original_url: /docs/dev/game-dev/games-binary-optimization-environment-0000002377148261
 format: md
 ---
 

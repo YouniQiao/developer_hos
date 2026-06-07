@@ -1,7 +1,7 @@
 ---
 title: "单品促销"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-single-campaign-0000001097579228
+original_url: /docs/distribute/content-dist/education-center/educenter-campaign-activity-0000001098917026/educenter-single-campaign-0000001097579228
 format: md
 ---
 
@@ -49,7 +49,7 @@ format: md
      | 参数 | 说明 |
      | --- | --- |
      | APPID | 商品归属的应用ID。应用ID查询方法可参见[查询应用信息](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/query-app-info-0000001050164344)，查询出信息后请在应用ID开头添加C。  例如：C100001 |
-     | ProductId | 商品ID必须以大小写字母或数字开头，并且只能由大小写字母（A-Z,a-z）、数字（0-9）、下划线（\_）和句点（.）组成。  + 课程的商品ID请参考课程管理中[商品ID](https://developer.huawei.com/consumer/cn/doc/content/educenter-cource-0000001050782860#ZH-CN_TOPIC_0000001223784215__p19573536123415)的配置，若没有商品ID，请配置为课程ID。 + 套餐权益的商品ID请参考套餐权益管理中[商品ID](https://developer.huawei.com/consumer/cn/doc/content/educenter-package-0000001145436887#ZH-CN_TOPIC_0000001178462932__p15161234155812)的配置。 |
+     | ProductId | 商品ID必须以大小写字母或数字开头，并且只能由大小写字母（A-Z,a-z）、数字（0-9）、下划线（\_）和句点（.）组成。  + 课程的商品ID请参考课程管理中[商品ID](/docs/distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-cource-0000001050782860#ZH-CN_TOPIC_0000001223784215__p19573536123415)的配置，若没有商品ID，请配置为课程ID。 + 套餐权益的商品ID请参考套餐权益管理中[商品ID](/docs/distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-package-0000001145436887#ZH-CN_TOPIC_0000001178462932__p15161234155812)的配置。 |
 
    商品添加成功后，所有商品信息会展示在商品信息列表中，请核对商品信息，并按要求填写促销价：
 

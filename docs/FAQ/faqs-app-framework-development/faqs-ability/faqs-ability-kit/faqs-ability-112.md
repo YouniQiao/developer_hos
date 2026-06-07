@@ -1,7 +1,7 @@
 ---
 format: md
 title: "HarmonyOS是否限制App进程fork子进程，是否允许app里自带的可执行文件运行（fork+exec）执行，并通过ptrace方式读取自身进程？这种方式以后是否会限制并禁止"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-112
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-112
 ---
 
 

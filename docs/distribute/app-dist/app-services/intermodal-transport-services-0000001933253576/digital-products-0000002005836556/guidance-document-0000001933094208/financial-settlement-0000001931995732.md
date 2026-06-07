@@ -1,7 +1,7 @@
 ---
 title: "财务结算"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/financial-settlement-0000001931995732
+original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/financial-settlement-0000001931995732
 format: md
 ---
 
@@ -46,7 +46,7 @@ format: md
 
 **API获取结算数据**
 
-此接口用于开发者查询和获取对账结算数据。详见：**[《获取对账结算数据》](https://developer.huawei.com/consumer/cn/doc/app/reconciliation-data-0000002348239424)**
+此接口用于开发者查询和获取对账结算数据。详见：**[《获取对账结算数据》](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/operation-guide-0000002381879945/reconciliation-data-0000002348239424)**
 
 ## 核对和确认结算数据
 

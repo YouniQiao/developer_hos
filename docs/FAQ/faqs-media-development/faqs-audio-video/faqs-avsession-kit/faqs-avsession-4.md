@@ -1,7 +1,7 @@
 ---
 format: md
 title: "能否定制播控中心界面上显示的控制元素"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-4
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-4
 ---
 
 
@@ -12,4 +12,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[创建不同类型的会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#创建不同类型的会话)
+[创建不同类型的会话](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#创建不同类型的会话)

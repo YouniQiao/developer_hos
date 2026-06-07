@@ -1,6 +1,6 @@
 ---
 title: "使用命令行CMake构建NDK工程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-cmake
+original_url: /docs/dev/ndk-dev/build-with-ndk-cmake
 format: md
 ---
 

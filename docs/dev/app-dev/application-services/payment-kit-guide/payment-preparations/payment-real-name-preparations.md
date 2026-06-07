@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "（可选）用户身份验证服务接入准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-preparations
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-real-name-preparations
 format: md
 ---
 
@@ -43,8 +43,8 @@ format: md
 
 * 只支持ASN.1格式的SM2公私钥对（以下示例代码为服务端生成示例）。如需在应用端生成ASN.1格式SM2公私钥对（公钥91字节，私钥51字节）可参考：
 
-1. [随机生成非对称密钥对(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-asym-key-pair-randomly)（应用端生成的公私钥对可能无法在服务端使用）。
-2. 参考[数据编码格式差异](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-cross-platform-compatibility#section1152116421582)将生成的秘钥对转成16进制hex格式。
+1. [随机生成非对称密钥对(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-asym-key-pair-randomly)（应用端生成的公私钥对可能无法在服务端使用）。
+2. 参考[数据编码格式差异](/docs/security/cross-platform-compatibility#section1152116421582)将生成的秘钥对转成16进制hex格式。
 
 * 生成的SM2公私钥对，还请先自测验证加解密是否正常，正常后再正式对外使用，避免生成错误的公私钥对，阻塞后续业务进度。
 

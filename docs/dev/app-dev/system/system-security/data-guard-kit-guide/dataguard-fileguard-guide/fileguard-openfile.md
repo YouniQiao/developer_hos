@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "打开文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-open
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-openfile
 format: md
 ---
 

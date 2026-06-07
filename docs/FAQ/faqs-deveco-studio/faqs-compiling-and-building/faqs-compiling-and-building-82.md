@@ -1,7 +1,7 @@
 ---
 format: md
 title: "DevEco Studio日志中如何排除某一特征的日志"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-82
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-82
 ---
 
 

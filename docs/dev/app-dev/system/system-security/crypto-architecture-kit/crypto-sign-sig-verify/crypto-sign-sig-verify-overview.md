@@ -1,6 +1,6 @@
 ---
 title: "签名验签介绍及算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview
 format: md
 ---
 
@@ -38,7 +38,7 @@ format: md
 
 使用同步接口生成RSA2048、RSA3072、RSA4096、RSA8192非对称密钥或者明文长度超过2048会导致耗时增加。
 
-由于系统对主线程有时间限制，耗时较长会导致失败，建议开发者在生成位数较大的密钥时，使用对应的异步接口或是[使用多线程并发能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview)进行开发。
+由于系统对主线程有时间限制，耗时较长会导致失败，建议开发者在生成位数较大的密钥时，使用对应的异步接口或是[使用多线程并发能力](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/multi-thread-concurrency-overview)进行开发。
 
 ### 填充模式为PKCS1
 

@@ -1,6 +1,6 @@
 ---
 title: "创建测试群组"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-appgallery-create-testgroup-0000002258071216
+original_url: /docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-create-testgroup-0000002258071216
 format: md
 ---
 
@@ -55,7 +55,7 @@ format: md
      导入的账号信息文件必须为.csv格式。建议使用记事本等txt文本编辑器编辑，否则可能会出现导入后乱码的情况。
    * 邀请码添加：适用于通过邀请码邀请测试用户的场景。此方式无需提前收集用户的华为账号，使用更方便，但仅限于分享给您非常信任的、不会将邀请码链接外泄的用户群体，否则可能导致邀请范围之外的用户加入您的测试群组。
 
-     设置邀请码有效期和可邀请用户数量上限后，点击“生成邀请码”，即可生成一个邀请码。后续将邀请码拼接到测试版本分享链接上，即可通过分享链接的方式邀请测试用户，具体可参见[通过“分享链接+邀请码”邀请用户](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appgallery-invite-testuser-0000002292624413#section8765163593316)。
+     设置邀请码有效期和可邀请用户数量上限后，点击“生成邀请码”，即可生成一个邀请码。后续将邀请码拼接到测试版本分享链接上，即可通过分享链接的方式邀请测试用户，具体可参见[通过“分享链接+邀请码”邀请用户](/docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-invite-testuser-0000002292624413#section8765163593316)。
 
      ![](../img/agc-help-appgallery-create-testgroup-0000002258071216_8.png)
 

@@ -1,7 +1,7 @@
 ---
 title: 搜索框
 sidebar_label: 搜索框
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/search-0000001956852741
+original_url: /docs/design/components/input-components/search
 format: md
 ---
 

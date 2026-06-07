@@ -1,6 +1,6 @@
 ---
 title: "如何在Index.ets中导出默认导出的对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-145
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-145
 format: md
 ---
 

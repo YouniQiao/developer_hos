@@ -1,7 +1,7 @@
 ---
 title: "ohpm unpublish"
 displayed_sidebar: ohpmSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-unpublish
+original_url: /docs/tools/ohpm/commands/ide-ohpm-unpublish
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "取消动态订阅公共事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-unsubscription
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-unsubscription
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Basic-Services-Kit/common_event/CommonEvent/entry/src/main/ets/filemanager/CreatSubscribeInfo.ets#L15-L21" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CreatSubscribeInfo.ets</a></div>
 
-2. 根据[动态订阅公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-subscription)章节的步骤来订阅某个事件。
+2. 根据[动态订阅公共事件](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-subscription)章节的步骤来订阅某个事件。
 3. 调用CommonEvent中的[unsubscribe()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-commoneventmanager#commoneventmanagerunsubscribe)方法取消订阅某事件。
 
    ```

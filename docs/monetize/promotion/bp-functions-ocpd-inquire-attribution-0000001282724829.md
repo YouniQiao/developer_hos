@@ -1,7 +1,7 @@
 ---
 title: "查询归因报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-inquire-attribution-0000001282724829
+original_url: /docs/monetize/promotion/bp-functions-ocpd-inquire-attribution-0000001282724829
 format: md
 ---
 

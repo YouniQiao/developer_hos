@@ -1,6 +1,6 @@
 ---
 title: "元服务核准（备案）"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing
+original_url: /docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing
 format: md
 ---
 
@@ -17,9 +17,9 @@ format: md
 
 | **序号** | **步骤** | **说明** |
 | --- | --- | --- |
-| 1 | [核准（备案）准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-preparation) | 正式提交元服务核准（备案）前，您需要先完成核准（备案）准备工作。 |
-| 2 | 提交核准（备案）申请 | 支持在华为云核准（备案）系统提交核准（备案）申请，具体操作流程请参考[在华为云核准（备案）系统备案](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-cloud)。 |
-| 3 | [工信部核验核准（备案）短信](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-sms) | 除了转移核准（备案）、取消接入，其它核准（备案）类型请前往工信部网站进行短信核验。 |
+| 1 | [核准（备案）准备](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-preparation) | 正式提交元服务核准（备案）前，您需要先完成核准（备案）准备工作。 |
+| 2 | 提交核准（备案）申请 | 支持在华为云核准（备案）系统提交核准（备案）申请，具体操作流程请参考[在华为云核准（备案）系统备案](/docs/dev/atomic-dev/atomic-service-cloud/atomic-service-cloud)。 |
+| 3 | [工信部核验核准（备案）短信](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-sms) | 除了转移核准（备案）、取消接入，其它核准（备案）类型请前往工信部网站进行短信核验。 |
 
 ## 相关概念
 
@@ -33,6 +33,6 @@ format: md
 | 主体核准（备案）号 | 元服务首次核准（备案）成功后，工信部会为主体下发一个核准（备案）号，格式为“省简称+ICP核（备）\*\*\*\*\*\*\*\*号”，例如粤ICP核（备）00000000号。 |
 | 核准（备案）号 | 核准（备案）号用以区分主体下不同的元服务，格式是主体核准（备案）号后带序号。例如粤ICP核（备）00000000号-1K。 |
 
-* **[核准（备案）准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-preparation)**
-* **[在华为云核准（备案）系统备案](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-cloud)**
-* **[工信部核验核准（备案）短信](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-sms)**
+* **[核准（备案）准备](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-preparation)**
+* **[在华为云核准（备案）系统备案](/docs/dev/atomic-dev/atomic-service-cloud/atomic-service-cloud)**
+* **[工信部核验核准（备案）短信](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-sms)**

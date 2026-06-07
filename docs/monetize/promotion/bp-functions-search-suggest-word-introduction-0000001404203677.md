@@ -1,7 +1,7 @@
 ---
 title: "功能介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-search-suggest-word-introduction-0000001404203677
+original_url: /docs/monetize/promotion/bp-functions-search-suggest-word-introduction-0000001404203677
 format: md
 ---
 

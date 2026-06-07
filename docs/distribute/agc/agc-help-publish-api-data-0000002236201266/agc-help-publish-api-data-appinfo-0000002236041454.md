@@ -1,18 +1,18 @@
 ---
 title: "AppInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appinfo-0000002236041454
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-appinfo-0000002236041454
 format: md
 ---
 
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| releaseState | O | Integer | 应用状态。  **releaseType**为1时，状态含义如下。  说明：  各状态间的转换请参见[全网发布的应用状态流转说明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-application-status-0000002240477940#section1637119146108)。   * 0：已上架 * 1：上架审核不通过 * 2：已下架（含强制下架） * 3：待上架，预约上架 * 4：审核中 * 5：升级审核中 * 6：申请下架 * 7：草稿 * 8：升级审核不通过 * 9：下架审核不通过 * 10：应用被开发者下架 * 11：撤销上架 * 12：预审中 * 13：预审不通过   **releaseType**为6时，状态含义如下。  说明：  各状态间的转换请参见[测试发布的应用状态流转说明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-application-status-0000002240477940#section994894212109)。   * 0：正在测试 * 1：审核不通过 * 2：已失效（运营停止测试） * 3：待生效 * 4：正在审核 * 7：准备提交 * 10：已失效（开发者停止测试） * 11：撤销审核 * 12：预审中 * 13：预审不通过 |
-| defaultLang | O | String(16) | 应用的默认语言。  说明：  取值参见[语言类型](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-langtype-0000002236041558)。 |
-| parentType | M | Integer | 应用的一级分类。  固定ID。  说明：  取值参见[应用游戏分类](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-apptype-0000002271160689)。 |
-| harmonyChildType | O | Integer | HarmonyOS应用/元服务的二级分类。  固定ID。  说明：  取值参见[应用游戏分类](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-apptype-0000002271160689)。 |
-| kindMainTag | O | Integer | HarmonyOS应用/元服务主标签。  固定ID。  说明：  取值参见[应用游戏分类](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-apptype-0000002271160689)的“标签”列。 |
-| kindSubTags | O | `List&lt;Integer>` | HarmonyOS应用/元服务附属标签。  固定ID。最多可选4个附属标签。  说明：  取值参见[应用游戏分类](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-apptype-0000002271160689)的“标签”列。 |
+| releaseState | O | Integer | 应用状态。  **releaseType**为1时，状态含义如下。  说明：  各状态间的转换请参见[全网发布的应用状态流转说明](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-application-status-0000002240477940#section1637119146108)。   * 0：已上架 * 1：上架审核不通过 * 2：已下架（含强制下架） * 3：待上架，预约上架 * 4：审核中 * 5：升级审核中 * 6：申请下架 * 7：草稿 * 8：升级审核不通过 * 9：下架审核不通过 * 10：应用被开发者下架 * 11：撤销上架 * 12：预审中 * 13：预审不通过   **releaseType**为6时，状态含义如下。  说明：  各状态间的转换请参见[测试发布的应用状态流转说明](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-application-status-0000002240477940#section994894212109)。   * 0：正在测试 * 1：审核不通过 * 2：已失效（运营停止测试） * 3：待生效 * 4：正在审核 * 7：准备提交 * 10：已失效（开发者停止测试） * 11：撤销审核 * 12：预审中 * 13：预审不通过 |
+| defaultLang | O | String(16) | 应用的默认语言。  说明：  取值参见[语言类型](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-langtype-0000002236041558)。 |
+| parentType | M | Integer | 应用的一级分类。  固定ID。  说明：  取值参见[应用游戏分类](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-apptype-0000002271160689)。 |
+| harmonyChildType | O | Integer | HarmonyOS应用/元服务的二级分类。  固定ID。  说明：  取值参见[应用游戏分类](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-apptype-0000002271160689)。 |
+| kindMainTag | O | Integer | HarmonyOS应用/元服务主标签。  固定ID。  说明：  取值参见[应用游戏分类](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-apptype-0000002271160689)的“标签”列。 |
+| kindSubTags | O | `List&lt;Integer>` | HarmonyOS应用/元服务附属标签。  固定ID。最多可选4个附属标签。  说明：  取值参见[应用游戏分类](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-apptype-0000002271160689)的“标签”列。 |
 | privacyPolicy | M | String(255) | 隐私政策声明的网页地址。  该网址会在应用的详情页面添加隐私政策跳转，可帮助用户清楚地了解您如何处理敏感的用户数据和设备数据。  隐私政策必须完整说明您的应用如何收集、使用和分享用户数据，包含但不限于如下情况建议提供：   * 面向儿童的App。 * 包含账户注册或需要访问用户的现有账户，或由法律另行规定。 * 对于收集用户或设备相关数据的App。 |
 | appNetType | O | Integer | 应用联网类型。  取值范围：   * 1：单机 * 2：网游   默认值：1  说明：  此参数只支持游戏类应用。 |
 | publishCountry | O | String(2048) | 应用发布国家的国家码。  多个国家以英文逗号分隔。  示例：CN,DE,MC |
@@ -22,7 +22,7 @@ format: md
 | developerNameCn | O | String(64) | 开发者中文名称。  HarmonyOS应用和元服务此字段不支持修改。 |
 | developerNameEn | O | String(64) | 开发者英文名称。  HarmonyOS应用和元服务此字段不支持修改。 |
 | developerWebsite | O | String(255) | 开发者官网。 |
-| customInfo | O | [CustInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-custinfo-0000002504067925) | 客服信息。 |
+| customInfo | O | [CustInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-custinfo-0000002504067925) | 客服信息。 |
 | elecCertificateUrl | O | String(256) | 电子版权证书PDF地址。 |
 | certificateURLs | M | String(1024) | 应用版权证书或代理证书图片地址列表。  逗号分隔，最多5个。 |
 | publicationURLs | O | String(1024) | 版号证明。  逗号分隔的地址，可以为图片或者PDF，最多3个。 |
@@ -37,7 +37,7 @@ format: md
 | shareLink | O | String(1024) | 分享链接。  仅查询场景返回。 |
 | sensitivePermissionDesc | O | String(2048) | 敏感权限说明。  此字段仅用于查询。  格式为JSON格式的字符串。  格式：\\{"权限名称1":"权限描述1","权限名称2":"权限描述2"...\} |
 | familyShareTag | O | Integer | 是否可以家庭共享。  取值范围：   * 0：不可以 * 1：可以   只有分发区域包含中国大陆的应用返回1。 |
-| deviceTypes | M | `List&lt;[DeviceTypeInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-devicetypeinfo-0000002236201270)>` | 应用的设备类型信息。  数组长度不超过6。 |
+| deviceTypes | M | `List&lt;[DeviceTypeInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-devicetypeinfo-0000002236201270)>` | 应用的设备类型信息。  数组长度不超过6。 |
 | restrictedPermissionVideo | O | String | HarmonyOS应用受限权限使用说明视频在文件服务器中的对象ID。  此字段仅用于查询。 |
 | privacyRightsUrl | O | String(256) | 隐私权利网址。  即关于您的用户实施其权利的网站地址，例如用户删除、修改、导出其个人数据的入口。 |
 | projectId | O | String | 项目ID。 |
@@ -60,9 +60,9 @@ format: md
 | testUserPassword | O | String(128) | 应用审核信息的测试账号密码。 |
 | appRemark | O | String(300) | 应用审核信息的备注。 |
 | selfTestVideos | O | String(2000) | 应用审核信息的自测文件。  格式为JSON字符串，示例：\\{"objectId1":"文件名1","objectId2":"文件名2"...\}  说明：  此字段只支持元服务。 |
-| appReviewPhoneInfo | O | [AppReviewContact](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appreviewcontact-0000002505438989) | 应用负责人的手机号信息。 |
-| appReviewEmailInfo | O | [AppReviewContact](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appreviewcontact-0000002505438989) | 应用负责人的邮箱账号信息。 |
+| appReviewPhoneInfo | O | [AppReviewContact](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-appreviewcontact-0000002505438989) | 应用负责人的手机号信息。 |
+| appReviewEmailInfo | O | [AppReviewContact](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-appreviewcontact-0000002505438989) | 应用负责人的邮箱账号信息。 |
 | appReviewName | O | String(256) | 应用负责人的姓名。 |
-| versionVocs | O | `List&lt;[VersionVoc](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-versionvoc-0000002495156924)>` | 应用版本已解决问题。  数组长度不超过1000。 |
+| versionVocs | O | `List&lt;[VersionVoc](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-versionvoc-0000002495156924)>` | 应用版本已解决问题。  数组长度不超过1000。 |
 | reviewState | O | Integer | 审核状态。  取值范围：   * 1：等待审核 * 2：正在审核 |
 | releaseTime | O | String(32) | 上架时间。  UTC时间格式：*yyyy-mm-dd hh:mm:ss*  说明：  应用存在上架版本时，该参数才有返回值。 |

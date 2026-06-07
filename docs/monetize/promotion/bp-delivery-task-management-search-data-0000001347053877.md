@@ -1,7 +1,7 @@
 ---
 title: "查询搜索数据报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-search-data-0000001347053877
+original_url: /docs/monetize/promotion/bp-delivery-task-management-search-data-0000001347053877
 format: md
 ---
 
@@ -16,6 +16,6 @@ format: md
 - oCPD子任务和影子投放任务不涉及搜索词，因此不在搜索报表中体现。
 - 因自动匹配任务数据量大，服务器承载过重，以及受用户隐私保护的限制，自动匹配任务关键词明细不在报表展示。
 - 当数据展示方式选择为“分日”时，即可查看“搜索平均排名”字段；当数据展示方式选择为“合计”时，暂不支持查看“搜索平均排名”字段。
-- 具体报表指标含义请参见[报表指标说明](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-index-0000001293894160)。
+- 具体报表指标含义请参见[报表指标说明](/docs/monetize/promotion/bp-delivery-task-management-index-0000001293894160)。
 
 ![](./img/a408c218f056.png "点击放大")

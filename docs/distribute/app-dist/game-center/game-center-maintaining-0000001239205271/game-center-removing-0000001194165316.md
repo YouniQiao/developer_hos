@@ -1,7 +1,7 @@
 ---
 title: "下架应用"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-removing-0000001194165316
+original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ![](./img/04a196ef8c05.png)
 
-下架应用仍会占据包名，只有[删除应用](`https://developer.huawei.com/consumer/cn/doc/app/game-center-deleting-0000001239645257#ZH-CN_TOPIC_0000001239645257`)才会释放包名。
+下架应用仍会占据包名，只有[删除应用](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-deleting-0000001239645257#ZH-CN_TOPIC_0000001239645257`)才会释放包名。
 
 ![](./img/61df48209d6b.png)
 
@@ -88,7 +88,7 @@ format: md
 
 ![](./img/1aebc4e42d49.png)
 
-您需要确保重新上架的APK应用签名与之前下架的APK应用签名一致，否则当您选取软件包时，会弹出错误提示框。相关内容参见[软件包签名不一致处理](`https://developer.huawei.com/consumer/cn/doc/app/game-center-upgrade-version-0000001194325288#section15339193186`)。
+您需要确保重新上架的APK应用签名与之前下架的APK应用签名一致，否则当您选取软件包时，会弹出错误提示框。相关内容参见[软件包签名不一致处理](`/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288#section15339193186`)。
 
 ![](./img/9157935d4305.png)
 

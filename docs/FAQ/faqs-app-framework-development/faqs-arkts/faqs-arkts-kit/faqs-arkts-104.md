@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何处理大整数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-104
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-104
 ---
 
 

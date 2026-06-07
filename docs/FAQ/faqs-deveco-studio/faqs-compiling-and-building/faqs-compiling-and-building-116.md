@@ -1,7 +1,7 @@
 ---
 format: md
 title: "CPP编译报错“A 'undefined symbol' error has occurred”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-116
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-116
 ---
 
 

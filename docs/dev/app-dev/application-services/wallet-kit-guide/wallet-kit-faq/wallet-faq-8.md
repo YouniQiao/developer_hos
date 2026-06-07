@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "用户删卡时会删除哪些信息？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-8
+original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq/wallet-faq-8
 format: md
 ---
 

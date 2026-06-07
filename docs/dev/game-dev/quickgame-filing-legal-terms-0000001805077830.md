@@ -1,6 +1,6 @@
 ---
 title: "协助修改核准（备案）信息在线服务条款"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-legal-terms-0000001805077830
+original_url: /docs/dev/game-dev/quickgame-filing-legal-terms-0000001805077830
 format: md
 ---
 

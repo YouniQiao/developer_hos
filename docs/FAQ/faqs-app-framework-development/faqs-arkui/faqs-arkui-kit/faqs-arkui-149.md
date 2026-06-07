@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation如何隐藏导航栏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-149
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-149
 ---
 
 

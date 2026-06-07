@@ -1,6 +1,6 @@
 ---
 title: "事件订阅（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-events-ndk
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/hiappevent-watcher-app-events-ndk
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "直达礼包"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-direct-gifts-kit-0000002318054684
+original_url: /docs/dev/game-dev/games-quickgame-runtime-direct-gifts-kit-0000002318054684
 format: md
 ---
 
@@ -34,18 +34,18 @@ format: md
 
 ## 开发指导
 
-1. 在AGC控制台[配置快游戏直达礼包](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-develop-direct-gifts-0000002351933757)。
+1. 在AGC控制台[配置快游戏直达礼包](/docs/dev/game-dev/games-quickgame-develop-direct-gifts-0000002351933757)。
 2. 提供[直达礼包兑换接口](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-quickgame-server-redeem-direct-gift-0000002366156972)。
 3. 联系华为接口人[调试](#section18291214111813)接口服务是否正常。
 
 ## 功能调试
 
 1. 联系华为接口人：QQ1：2851508897，QQ2：2850400633。
-2. 开发者需要准备[游戏公钥和私钥](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-account-kit-0000002317894820#section16882021380)、[APP ID](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-account-kit-0000002317894820#section1148753814717)和服务URL地址（获取发放游戏内礼包）。
+2. 开发者需要准备[游戏公钥和私钥](/docs/dev/game-dev/games-quickgame-enable-account-kit-0000002317894820#section16882021380)、[APP ID](/docs/dev/game-dev/games-quickgame-enable-account-kit-0000002317894820#section1148753814717)和服务URL地址（获取发放游戏内礼包）。
 3. 调试接口服务是否正常。
 
 ## 相关链接
 
 ### FAQ
 
-[兑换直达礼包签名在服务器侧验证不通过，应该如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-gift-0000002458772637#section448834284215)
+[兑换直达礼包签名在服务器侧验证不通过，应该如何处理？](/docs/dev/game-dev/games-quickgame-faq-gift-0000002458772637#section448834284215)

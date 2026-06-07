@@ -1,7 +1,7 @@
 ---
 title: "进入认证中心完成开户"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/mix-complete-account-0000002499137821
+original_url: /docs/monetize/promotion/mix-complete-account-0000002499137821
 format: md
 ---
 
@@ -35,7 +35,7 @@ format: md
 
 ### 行业资质
 
-根据鲸鸿动能广告的要求，补充上传行业资质。官网指导文档：[鲸鸿动能广告-行业资质审核](https://developer.huawei.com/consumer/cn/doc/promotion/ads_shenhe100-0000001062567184)。
+根据鲸鸿动能广告的要求，补充上传行业资质。官网指导文档：[鲸鸿动能广告-行业资质审核](/docs/monetize/promotion/ads_shenhe100-0000001062567184)。
 
 ![](./img/zh-cn_image_0000002466178662_6d44774a42ab.png "点击放大")
 
@@ -49,7 +49,7 @@ format: md
 
 点击【去认证】，跳转应用市场应用推广-我的推广权限申请页面，为已上架未申请推广权限应用，发起推广权限申请。
 
-官网指导文档：[申请推广评测](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-apply-evaluation-0000001346654709)
+官网指导文档：[申请推广评测](/docs/monetize/promotion/bp-start-guest-apply-evaluation-0000001346654709)
 
 ![](./img/zh-cn_image_0000002499178001_95cce2c3d4dc.png "点击放大")
 
@@ -67,7 +67,7 @@ format: md
 
 ### 应用授权管理
 
-您可以把名下已申请推广评测的应用授权服务商代理投放，官网文档指引：[授权客户投放伙伴管理账户](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-authorize-0000001346774281)。
+您可以把名下已申请推广评测的应用授权服务商代理投放，官网文档指引：[授权客户投放伙伴管理账户](/docs/monetize/promotion/bp-start-guest-authorize-0000001346774281)。
 
 ![](./img/zh-cn_image_0000002499138061_e62f7536f8d2.png "点击放大")
 

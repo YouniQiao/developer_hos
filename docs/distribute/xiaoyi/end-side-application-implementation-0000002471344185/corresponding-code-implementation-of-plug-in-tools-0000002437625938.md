@@ -1,7 +1,7 @@
 ---
 title: "插件工具的对应代码实现"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/corresponding-code-implementation-of-plug-in-tools-0000002437625938
+original_url: /docs/distribute/xiaoyi/end-side-application-implementation-0000002471344185/corresponding-code-implementation-of-plug-in-tools-0000002437625938
 format: md
 ---
 

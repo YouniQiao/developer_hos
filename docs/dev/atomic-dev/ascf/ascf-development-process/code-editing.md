@@ -1,6 +1,6 @@
 ---
 title: "代码编辑"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/code-editing
+original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/code-editing
 format: md
 ---
 

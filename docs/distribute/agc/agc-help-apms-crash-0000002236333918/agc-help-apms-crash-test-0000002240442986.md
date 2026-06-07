@@ -1,6 +1,6 @@
 ---
 title: "测试崩溃实现"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-crash-test-0000002240442986
+original_url: /docs/distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-test-0000002240442986
 format: md
 ---
 
@@ -18,4 +18,4 @@ format: md
    let test:string = "{name:'xiaoming' age:10}";
    let result:object = JSON.parse(test);
    ```
-2. 前往崩溃页面查看上报的崩溃数据，[分析崩溃问题](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-crash-analyse-0000002271413041)。
+2. 前往崩溃页面查看上报的崩溃数据，[分析崩溃问题](/docs/distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-analyse-0000002271413041)。

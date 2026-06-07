@@ -1,7 +1,7 @@
 ---
 title: "表盘介绍"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/watch-face-introduction-0000001566918497
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/watch-face-introduction-0000001566918497
 format: md
 ---
 
@@ -45,5 +45,5 @@ format: md
 
 ![](./img/ec6058aa8dff.png)
 
-* 仅部分手表设备支持熄屏表盘，详见[分辨率与版本号](https://developer.huawei.com/consumer/cn/doc/content/resolution-version-0000001252603441)。同时用户还须在手表中打开“熄屏显示”，熄屏表盘才会显示出来。
+* 仅部分手表设备支持熄屏表盘，详见[分辨率与版本号](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-version-0000001252603441)。同时用户还须在手表中打开“熄屏显示”，熄屏表盘才会显示出来。
 * 熄屏显示，也称之为AOD（Always On Display）。

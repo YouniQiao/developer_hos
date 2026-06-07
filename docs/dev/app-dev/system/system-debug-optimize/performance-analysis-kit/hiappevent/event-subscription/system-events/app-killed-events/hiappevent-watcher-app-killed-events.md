@@ -1,6 +1,6 @@
 ---
 title: "应用终止事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events
 format: md
 ---
 
@@ -13,12 +13,12 @@ format: md
 
 HiAppEvent提供接口用于订阅应用终止事件。
 
-* [订阅应用终止事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events-arkts)
-* [订阅应用终止事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events-ndk)
+* [订阅应用终止事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events-arkts)
+* [订阅应用终止事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events-ndk)
 
 ![](./img/187dc169.png)
 
-应用终止事件支持在[应用分身](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)场景下使用 HiAppEvent 进行订阅，支持在元服务场景下使用 HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
+应用终止事件支持在[应用分身](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)场景下使用 HiAppEvent 进行订阅，支持在元服务场景下使用 HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
 
 应用终止事件信息中params属性的详细描述如下：
 

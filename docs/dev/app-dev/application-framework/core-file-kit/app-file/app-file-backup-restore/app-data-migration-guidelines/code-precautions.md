@@ -1,6 +1,6 @@
 ---
 title: "应用升级过程代码开发注意事项"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-precautions
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/code-precautions
 format: md
 ---
 
@@ -87,7 +87,7 @@ export default class EntryBackupAbility extends BackupExtensionAbility {
 
 ### 代码实现
 
-应用可以调用Scenario Fusion Kit的接口[convertFileUris()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-fileuriresult#convertfileuris)，将记录的HarmonyOS公共媒体库文件URI或者路径转换为HarmonyOS NEXT可访问的URI或者路径，并获取到对应文件类型。其中媒体文件类型请参考[继承媒体文件访问权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-request-photouris-permission)，其他类型文件可通过[基础文件接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)进行操作。convertFileUris()接口详细使用指导请参考：[基于融合场景服务实现文件路径转换参考指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-path-conversion)。
+应用可以调用Scenario Fusion Kit的接口[convertFileUris()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-fileuriresult#convertfileuris)，将记录的HarmonyOS公共媒体库文件URI或者路径转换为HarmonyOS NEXT可访问的URI或者路径，并获取到对应文件类型。其中媒体文件类型请参考[继承媒体文件访问权限](/docs/dev/app-dev/media/medialibrary-kit/medialibrary-request-photouris-permission)，其他类型文件可通过[基础文件接口](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)进行操作。convertFileUris()接口详细使用指导请参考：[基于融合场景服务实现文件路径转换参考指导](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-path-conversion)。
 
 ![](./img/93c65c13.png)
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用证书凭据开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-private-credential-guidelines
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-private-credential-guidelines
 format: md
 ---
 
@@ -20,9 +20,9 @@ format: md
    * 卸载指定的应用证书凭据。
 2. 安装应用证书凭据支持的算法类型和签名验签支持的参数组合。
 
-   * 证书管理安装凭据及使用凭据中的密钥进行签名、验签，依赖[密钥管理服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)（HUKS）能力。
+   * 证书管理安装凭据及使用凭据中的密钥进行签名、验签，依赖[密钥管理服务](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)（HUKS）能力。
    * 证书管理支持的算法为HUKS支持的子集，当前仅支持RSA、ECC及SM2算法类型的私有凭据安装及使用。
-   * 签名、验签支持的参数组合，详见HUKS声明的[签名/验签介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-overview)中RSA、ECC及SM2的描述。
+   * 签名、验签支持的参数组合，详见HUKS声明的[签名/验签介绍及算法规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-overview)中RSA、ECC及SM2的描述。
 
 ## 接口说明
 
@@ -55,9 +55,9 @@ format: md
 
    需要申请的权限：ohos.permission.ACCESS\_CERT\_MANAGER
 
-   申请流程请参考：[申请应用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode)
+   申请流程请参考：[申请应用权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode)
 
-   声明权限请参考：[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)
+   声明权限请参考：[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)
 2. 导入相关模块。
 
    ```

@@ -1,7 +1,7 @@
 ---
 title: "10. 开发者需提供真实有效的信息"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-09
+original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-09
 format: md
 ---
 

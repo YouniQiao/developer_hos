@@ -1,17 +1,17 @@
 ---
 title: "cover-view"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-cover-view
+original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-cover-view
 format: md
 ---
 
 
 覆盖在系统组件之上的文本视图。
 
-可支持在[map](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-map)、[video](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-video)、[canvas](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-canvas)、[camera](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-camera)组件上使用。
+可支持在[map](/docs/dev/atomic-dev/ascf/components-map-components/components-map)、[video](/docs/dev/atomic-dev/ascf/components-media-components/components-video)、[canvas](/docs/dev/atomic-dev/ascf/components-canvas-components/components-canvas)、[camera](/docs/dev/atomic-dev/ascf/components-media-components/components-camera)组件上使用。
 
 **重要提示**
 
-cover-view是为兼容旧版小程序设计的组件，新开发项目请直接使用[view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-view)组件。
+cover-view是为兼容旧版小程序设计的组件，新开发项目请直接使用[view](/docs/dev/atomic-dev/ascf/components-view-container/components-view)组件。
 
 自起始版本（1.0.22）后，map、video、canvas、camera组件内部嵌套的子内容默认正常显示；旧版本中，标签下的嵌套内容默认不展示。
 

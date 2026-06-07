@@ -1,7 +1,7 @@
 ---
 title: 应用开发
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/overview
+original_url: /docs/dev/release-notes/overview
 format: md
 ---
 
@@ -19,4 +19,4 @@ HarmonyOS 应用开发指南，涵盖以下六大核心领域：
 | 🔌 **app-services** | 账号、支付、推送、地图、广告等 28 项服务 | 882 |
 | 🤖 **AI** | 智能体框架、CANN、语音视觉、意图框架 | 934 |
 
-> 共计 **4299** 篇文档，源自 [华为开发者官网](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitykit-overview)。
+> 共计 **4299** 篇文档，源自 [华为开发者官网](/docs/dev/app-dev/application-framework/ability-kit/abilitykit-overview)。

@@ -1,23 +1,23 @@
 ---
 title: "使用Web组件与系统剪贴板交互处理网页内容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-clipboard
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-clipboard
 format: md
 ---
 
 
-开发者能够通过Web组件和系统剪贴板进行交互，实现各种类型数据的复制和粘贴。支持通过[菜单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu)、键盘快捷键以及[W3C剪贴板接口](https://www.w3.org/TR/clipboard-apis/)对网页内容执行剪切、复制和粘贴操作。
+开发者能够通过Web组件和系统剪贴板进行交互，实现各种类型数据的复制和粘贴。支持通过[菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu)、键盘快捷键以及[W3C剪贴板接口](https://www.w3.org/TR/clipboard-apis/)对网页内容执行剪切、复制和粘贴操作。
 
 ## 通过菜单或键盘快捷键与系统剪贴板交互
 
 开发者能够自定义菜单中的功能选项，当用户选择特定选项时，开发者可以通过调用[cut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontextmenuresult#cut9)、[copy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontextmenuresult#copy9)、[copyImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontextmenuresult#copyimage9)、[paste](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontextmenuresult#paste9)、[pasteAndMatchStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontextmenuresult#pasteandmatchstyle20)等接口，将网页中的文本、HTML或图片数据复制到系统剪贴板，或从系统剪贴板粘贴到网页的可输入区域。
 
-菜单功能接口的使用可参考[使用Web组件菜单处理网页内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu)。
+菜单功能接口的使用可参考[使用Web组件菜单处理网页内容](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu)。
 
 当设备有物理键盘时，用户也能够通过键盘快捷键：CTRL + X（剪切）、CTRL + C（复制）、CTRL + V（粘贴），与剪贴板进行交互。
 
 ![](./img/aa833b04.png)
 
-通过[paste](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontextmenuresult#paste9)、[pasteAndMatchStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontextmenuresult#pasteandmatchstyle20)接口读取系统剪贴板数据，需[申请访问剪贴板权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)：ohos.permission.READ\_PASTEBOARD。
+通过[paste](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontextmenuresult#paste9)、[pasteAndMatchStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontextmenuresult#pasteandmatchstyle20)接口读取系统剪贴板数据，需[申请访问剪贴板权限](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines)：ohos.permission.READ\_PASTEBOARD。
 
 ## 通过W3C异步剪贴板接口与系统剪贴板交互
 
@@ -57,7 +57,7 @@ const htmlBlob = await clipboardItems[0].getType('text/html');
 
 ![](./img/44e12c85.png)
 
-通过异步剪贴板接口read()和readText()方法读取系统剪贴板数据，需[申请访问剪贴板权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)：ohos.permission.READ\_PASTEBOARD。
+通过异步剪贴板接口read()和readText()方法读取系统剪贴板数据，需[申请访问剪贴板权限](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines)：ohos.permission.READ\_PASTEBOARD。
 
 ```
 import { webview } from '@kit.ArkWeb';
@@ -175,7 +175,7 @@ struct WebComponent {
 
 module.json5权限配置：
 
-**需要权限**：ohos.permission.READ\_PASTEBOARD，应用访问剪贴板内容需[申请访问剪贴板权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)。
+**需要权限**：ohos.permission.READ\_PASTEBOARD，应用访问剪贴板内容需[申请访问剪贴板权限](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines)。
 
 ```
 {

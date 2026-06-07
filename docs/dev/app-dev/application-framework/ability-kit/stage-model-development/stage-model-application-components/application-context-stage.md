@@ -1,6 +1,6 @@
 ---
 title: "应用上下文Context"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage
 format: md
 ---
 
@@ -292,7 +292,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
 
 通过Context属性可以获取当前应用、模块、UIAbility或ExtensionAbility的基本信息（例如资源管理对象、应用程序信息等），下面以UIAbility的信息获取为例：
 
-如果需要跨包获取资源对象，可以参考[资源访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源访问)。
+如果需要跨包获取资源对象，可以参考[资源访问](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源访问)。
 
 ```
 import { UIAbility, AbilityConstant, Want } from '@kit.AbilityKit';
@@ -316,7 +316,7 @@ export default class EntryAbility extends UIAbility {
 [基类Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)提供了获取应用文件路径的能力，[ApplicationContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext)、[AbilityStageContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitystagecontext)、[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)和[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)均继承该能力。不同类型的Context获取的路径可能存在差异。
 
 * 通过[ApplicationContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext)可以获取应用级的文件路径。该路径用于存放应用全局信息，路径下的文件会跟随应用的卸载而删除。
-* 通过[AbilityStageContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitystagecontext)、[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)、[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)，可以获取[Module](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-overview)级的文件路径。该路径用于存放Module相关信息，路径下的文件会跟随[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)/[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)的卸载而删除。HAP/HSP的卸载不会影响应用级路径下的文件，除非该应用的HAP/HSP已全部卸载。
+* 通过[AbilityStageContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitystagecontext)、[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)、[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)，可以获取[Module](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-overview)级的文件路径。该路径用于存放Module相关信息，路径下的文件会跟随[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)/[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)的卸载而删除。HAP/HSP的卸载不会影响应用级路径下的文件，除非该应用的HAP/HSP已全部卸载。
 
   + UIAbilityContext：可以获取UIAbility所在Module的文件路径。
   + ExtensionContext：可以获取ExtensionAbility所在Module的文件路径。
@@ -324,7 +324,7 @@ export default class EntryAbility extends UIAbility {
 
 ![](./img/a985b863.png)
 
-应用文件路径属于应用沙箱路径，具体请参见[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
+应用文件路径属于应用沙箱路径，具体请参见[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
 
 **表1** 不同级别Context获取的应用文件路径说明
 

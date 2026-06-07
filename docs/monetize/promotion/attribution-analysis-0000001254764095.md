@@ -1,7 +1,7 @@
 ---
 title: "归因分析"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/attribution-analysis-0000001254764095
+original_url: /docs/monetize/promotion/attribution-analysis-0000001254764095
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/note_3.0-zh-cn_f9c4f28663e0.png) 
 
-如果您需要使用此功能，需要申请[特性通行名单](https://developer.huawei.com/consumer/cn/doc/promotion/addtongxing-0000001128278195#ZH-CN_TOPIC_0000001128278195__li106584282110)。
+如果您需要使用此功能，需要申请[特性通行名单](/docs/monetize/promotion/addtongxing-0000001128278195#ZH-CN_TOPIC_0000001128278195__li106584282110)。
 
 ## 概述
 
@@ -37,7 +37,7 @@ format: md
 您可以通过不同的筛选条件，筛选出您想要的分析报告。
 
 - 维度：指的是报表展示的维度，单击页面左上角的“维度”下拉菜单可更改报告显示的数据细分。例如，您可以选择广告计划、广告任务、广告创意等。
-- 转化操作：指的是来源于广告主创建的转化指标，只有当您创建了的转化才会在这里显示单项转化，只需单击页面中心上方的“转化操作”下拉菜单，即可选择要纳入到报告中的转化操作。默认情况下，各个报告都会包含您在“[纳入到“指定转化次数”](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-app-overview-0000001209244840#ZH-CN_TOPIC_0000001209244840__zh-cn_topic_0000001138842000_li3531103316572)”列中”设置下选择的所有转化操作。
+- 转化操作：指的是来源于广告主创建的转化指标，只有当您创建了的转化才会在这里显示单项转化，只需单击页面中心上方的“转化操作”下拉菜单，即可选择要纳入到报告中的转化操作。默认情况下，各个报告都会包含您在“[纳入到“指定转化次数”](/docs/monetize/promotion/tracking-app-overview-0000001209244840#ZH-CN_TOPIC_0000001209244840__zh-cn_topic_0000001138842000_li3531103316572)”列中”设置下选择的所有转化操作。
 - 回溯期：从转化开始回溯多长时间内的广告互动。
 
 ## 热门路径

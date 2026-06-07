@@ -1,6 +1,6 @@
 ---
 title: "停止PageAbility"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stop-pageability
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/stop-pageability
 format: md
 ---
 

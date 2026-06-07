@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用在后台如何继续执行业务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-2
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-2
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-b
 
 **参考链接**
 
-[短时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transient-task)、[长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)
+[短时任务](/docs/dev/app-dev/application-framework/background-task-kit/transient-task)、[长时任务](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)

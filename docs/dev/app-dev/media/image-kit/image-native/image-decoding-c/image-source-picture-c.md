@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成多图对象解码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-source-picture-c
+original_url: /docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-picture-c
 format: md
 ---
 

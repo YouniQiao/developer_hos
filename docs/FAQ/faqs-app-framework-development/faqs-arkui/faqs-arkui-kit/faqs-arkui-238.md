@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在屏幕底部的组件的响应区域是否存在遮挡"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-238
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-238
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "如何合并两个列表并支持懒加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-317
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-317
 format: md
 ---
 

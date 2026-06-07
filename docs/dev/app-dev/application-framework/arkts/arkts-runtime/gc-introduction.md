@@ -1,6 +1,6 @@
 ---
 title: "GC垃圾回收"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gc-introduction
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/gc-introduction
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "AdCreative"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-adcreative-0000001225503661
+original_url: /docs/monetize/promotion/marketapi-modle-adcreative-0000001225503661
 format: md
 ---
 
@@ -26,8 +26,8 @@ format: md
 | createTime | O | String | 创建时间。 |
 | lastUpdateTime | O | String | 最近修改时间。 |
 | materials | O | List[Material] | 创意素材信息。 |
-| introCreative | O | [IntroCreative](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-introcreative-0000001180071292) | 介绍创意。 |
-| openCreative | O | [OpenCreative](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-opencreative-0000001180229844) | 打开创意信息。 |
+| introCreative | O | [IntroCreative](/docs/monetize/promotion/marketapi-modle-introcreative-0000001180071292) | 介绍创意。 |
+| openCreative | O | [OpenCreative](/docs/monetize/promotion/marketapi-modle-opencreative-0000001180229844) | 打开创意信息。 |
 | recallWindowContent | O | RecallWindowContent | 召回弹窗内容。 |
 | tagList | O | List&lt;CreativeThirdTag&gt; | 创意标签。 |
 

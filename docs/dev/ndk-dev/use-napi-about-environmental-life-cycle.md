@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口关联数据，使其生命周期与当前环境的生命周期相关联"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-environmental-life-cycle
+original_url: /docs/dev/ndk-dev/use-napi-about-environmental-life-cycle
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ## 使用示例
 
-Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
+Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
 
 ### napi\_set\_instance\_data
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "弧线"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-arc
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-arc
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AVPlayer添加视频外挂字幕(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-subtitle
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-subtitle
 format: md
 ---
 

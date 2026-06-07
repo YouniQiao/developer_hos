@@ -1,6 +1,6 @@
 ---
 title: "在DevEco Studio中找不到创建ASCF元服务项目模板"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-plugin-template-not-found
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-template-not-found
 format: md
 ---
 
@@ -16,5 +16,5 @@ format: md
 
 **解决措施**
 
-1. 点击菜单Settings &gt; Plugins &gt; Installed 检查是否已安装ASCF插件“ASCF Support”，如果未安装，请参考“[获取ASCF插件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-plugin)”章节获取和安装插件.
+1. 点击菜单Settings &gt; Plugins &gt; Installed 检查是否已安装ASCF插件“ASCF Support”，如果未安装，请参考“[获取ASCF插件](/docs/dev/atomic-dev/ascf/ascf-plugin)”章节获取和安装插件.
 2. 安装插件的时候，直接选择安装下载的zip安装包文件。

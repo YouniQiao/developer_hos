@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自定义配置操作区"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-actions
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-app-actions
 format: md
 ---
 

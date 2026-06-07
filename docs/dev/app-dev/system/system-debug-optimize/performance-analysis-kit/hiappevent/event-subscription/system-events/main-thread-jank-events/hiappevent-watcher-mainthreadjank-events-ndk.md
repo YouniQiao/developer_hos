@@ -1,6 +1,6 @@
 ---
 title: "订阅主线程超时事件（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-ndk
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events-ndk
 format: md
 ---
 
@@ -193,7 +193,7 @@ format: md
 
    ![](./img/37758993.png)
 
-   主线程超时事件具体规格可参考：[主线程超时事件默认时间规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines#检测原理) 和 [主线程超时事件日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines#日志规格)。
+   主线程超时事件具体规格可参考：[主线程超时事件默认时间规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines#检测原理) 和 [主线程超时事件日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines#日志规格)。
 
 ### 移除并销毁事件观察者
 

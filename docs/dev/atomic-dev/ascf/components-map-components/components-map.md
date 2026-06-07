@@ -1,19 +1,19 @@
 ---
 title: "Map"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-map
+original_url: /docs/dev/atomic-dev/ascf/components-map-components/components-map
 format: md
 ---
 
 
 地图组件。
 
-使用前，需参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)完成基本准备工作。
+使用前，需参考[开发准备](/docs/dev/app-dev/application-services/map-config-agc)完成基本准备工作。
 
-如果需要在地图上显示用户位置，需要申请位置权限或是使用位置控件，申请方式请参考[开启“我的位置”按钮 方式二](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location#section550812311069)。
+如果需要在地图上显示用户位置，需要申请位置权限或是使用位置控件，申请方式请参考[开启“我的位置”按钮 方式二](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-location#section550812311069)。
 
 **起始版本：** 1.0.0
 
-**关联文档：** [has.createMapContext](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-map#hascreatemapcontext)
+**关联文档：** [has.createMapContext](/docs/dev/atomic-dev/ascf/apis-media/apis-map#hascreatemapcontext)
 
 ## 属性
 
@@ -114,7 +114,7 @@ format: md
 * customCallout存在时将忽略callout与title属性。
 * 自定义气泡支持使用view、image、cover-view、cover-image定制。
 * 自定义气泡数量建议不要超过50个。
-* callout插槽内的节点绑定的[手势事件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-event-category)不会生效（如bindtap、bindtouchstart等）。如需处理气泡点击事件，可通过地图组件的bindcallouttap属性实现。
+* callout插槽内的节点绑定的[手势事件](/docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-category)不会生效（如bindtap、bindtouchstart等）。如需处理气泡点击事件，可通过地图组件的bindcallouttap属性实现。
 
 ### polygon说明
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Screen Time Guard Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-introduction
+original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-introduction
 format: md
 ---
 
@@ -10,13 +10,13 @@ format: md
 
 ## 能力介绍
 
-[用户授权管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-interface-call-auth-overview)：用来管理用户的授权信息，分别为请求用户授权访问，取消授权访问，授权情况查询。
+[用户授权管理](/docs/dev/app-dev/application-services/screentimeguard-interface-call-auth-overview)：用来管理用户的授权信息，分别为请求用户授权访问，取消授权访问，授权情况查询。
 
 [应用选择页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-app-picker-overview)：提供接口拉起具有不同功能的半模态页面，用户可在页面中勾选想进行管理的应用、快速跳转到其它应用。
 
-[守护策略管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-guard-strategy-manage-overview)：提供接口实现时间策略的添加、修改、查询、删除、启动和停止操作。
+[守护策略管理](/docs/dev/app-dev/application-services/screentimeguard-guard-strategy-manage-overview)：提供接口实现时间策略的添加、修改、查询、删除、启动和停止操作。
 
-[应用访问限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-apps-restriction-overview)：对选定范围内的应用进行立即生效的允许/禁止管理。
+[应用访问限制](/docs/dev/app-dev/application-services/screentimeguard-apps-restriction-overview)：对选定范围内的应用进行立即生效的允许/禁止管理。
 
 ## 基本概念
 

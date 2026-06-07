@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "拉起系统分享框失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq-1
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-1
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "默认界面扫码中相册扫码识别多码失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-5
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-5
 format: md
 ---
 

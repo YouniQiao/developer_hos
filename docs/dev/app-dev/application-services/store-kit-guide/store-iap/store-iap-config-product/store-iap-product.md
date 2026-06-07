@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "数字商品介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-config-product/store-iap-product
 format: md
 ---
 
 
-数字商品服务为接入应用内购买的应用提供了[展示数字商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-query)、[购买数字商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-purchase)、[发放数字商品权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-delivering)的功能。
+数字商品服务为接入应用内购买的应用提供了[展示数字商品](/docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-query)、[购买数字商品](/docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-purchase)、[发放数字商品权益](/docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-delivering)的功能。
 
 ## 数字商品类型介绍
 
@@ -29,7 +29,7 @@ format: md
 
 自动续期订阅商品由订阅组来管理维护，所以在创建自动续期订阅商品前，需要先创建订阅组，并在创建自动续期订阅商品时指定商品所在的订阅组。订阅组用于承载同类型商品的管理，一个订阅组可以包含多个自动续期订阅商品，且同一个订阅组只有一个商品是处于生效状态。当商品处于生效状态时，开发者需要为用户发放权益。订阅组机制为开发者提供了便捷方式，让商品服务大致相同但有细微差别的需求得以快速实现。
 
-当前自动续期订阅商品的续费周期可选值有1周、30天、31天、1个月、2个月、3个月、6个月和12个月，具体配置方法请参见[配置数字商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product-agc)。
+当前自动续期订阅商品的续费周期可选值有1周、30天、31天、1个月、2个月、3个月、6个月和12个月，具体配置方法请参见[配置数字商品](/docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-config-product/store-iap-product-agc)。
 
 ## 订阅状态及变更
 
@@ -97,13 +97,13 @@ format: md
 * 当用户历史上享受过优惠促销，仍具备享受推介促销的资格。
 * 优惠促销无使用次数限制。
 
-促销具体配置方法请参见[配置数字商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product-agc)。
+促销具体配置方法请参见[配置数字商品](/docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-config-product/store-iap-product-agc)。
 
 ## 修改自动续期订阅商品
 
 ### 调整自动续期订阅商品价格
 
-开发者可以为每个自动续期订阅商品降低或提高价格，具体配置可参见[修改自动续期订阅商品](https://developer.huawei.com/consumer/cn/doc/app/revise-renewal-0000001959074893)。
+开发者可以为每个自动续期订阅商品降低或提高价格，具体配置可参见[修改自动续期订阅商品](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/revise-digital-products-0000001959074889/single-0000001931995708/revise-renewal-0000001959074893)。
 
 * 降低价格：对所有用户生效，包括已经订阅的用户和新订阅的用户，在订阅的下一次续费起生效。
 * 提高价格：当提高自动续期订阅商品价格时，有两种策略可选。

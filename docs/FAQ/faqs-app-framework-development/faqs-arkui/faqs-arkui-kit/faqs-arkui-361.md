@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Button组件无法设置字体最大、最小值"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-361
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-361
 ---
 
 

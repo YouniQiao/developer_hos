@@ -1,6 +1,6 @@
 ---
 title: "$$语法：系统组件双向同步"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-two-way-sync
 format: md
 ---
 
@@ -11,7 +11,7 @@ $$运算符为系统组件提供TS变量的引用，使得TS变量和系统组�
 
 ## 使用规则
 
-* 当前$$支持基础类型变量，当该变量使用[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)、[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)、[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)、[@Provide](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)等状态管理V1装饰器装饰，或者[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)等状态管理V2装饰器装饰时，变量值的变化会触发UI刷新。
+* 当前$$支持基础类型变量，当该变量使用[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)、[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)、[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)、[@Provide](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)等状态管理V1装饰器装饰，或者[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)等状态管理V2装饰器装饰时，变量值的变化会触发UI刷新。
 * 当前$$支持的组件：
 
   | 组件 | 支持的参数/属性 | 起始API版本 |

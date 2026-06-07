@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "为通知添加自定义铃声"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-customized-ringtone
+original_url: /docs/dev/app-dev/application-services/notification-kit/publish-notification/notification-customized-ringtone
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 自定义铃声可通过[NotificationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest#notificationrequest-1)携带sound字段来指定，不指定该字段默认为系统铃声。
 
 * 资源文件：应用预置的音频文件，资源文件必须放在放在resources/rawfile目录下，使用时直接传入文件名。
-* 沙箱文件：网络下载或者用户生成的音频文件，必须放在[沙箱文件目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用文件目录与应用文件路径)EL1区域的files目录或者其子目录下，传入格式为uri::\{fileUri\}，其中fileUri是通过[getUriFromPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fileuri#fileurigeturifrompath)获取的路径。
+* 沙箱文件：网络下载或者用户生成的音频文件，必须放在[沙箱文件目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用文件目录与应用文件路径)EL1区域的files目录或者其子目录下，传入格式为uri::\{fileUri\}，其中fileUri是通过[getUriFromPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fileuri#fileurigeturifrompath)获取的路径。
 
 支持m4a、aac、mp3、ogg、wav、flac、amr等格式。
 
@@ -68,7 +68,7 @@ format: md
    let sandboxFilePath: string = sandboxDir + '/' + SOUND_FILE_NAME;
    ```
 
-   (2) 将网络下载或者用户生成的音频资源放在[沙箱文件目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用文件目录与应用文件路径)EL1区域的files目录下或者其子目录下，下面示例展示了如何将resources/rawfile目录下的音频资源拷贝到指定沙箱目录。
+   (2) 将网络下载或者用户生成的音频资源放在[沙箱文件目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用文件目录与应用文件路径)EL1区域的files目录下或者其子目录下，下面示例展示了如何将resources/rawfile目录下的音频资源拷贝到指定沙箱目录。
 
    ```
    // 拷贝resources/rawfile/目录下的音频文件到应用沙箱EL1的files目录下

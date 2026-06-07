@@ -1,6 +1,6 @@
 ---
 title: "连接和传输数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gatt-development-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/gatt-development-guide
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 本指南主要提供了基于通用属性协议（Generic Attribute Profile，GATT）实现BLE设备间连接和传输数据的开发指导。当两个设备间进行GATT通信交互时，依据设备功能的不同，可区分为GATT客户端和GATT服务端，本指南将分别介绍客户端与服务端的实现方法。
 
-GATT是低功耗蓝牙（BLE）的核心协议，定义了基于服务（Service）、特征值（Characteristic）和描述符（Descriptor）进行蓝牙通信和传输数据的机制。相关术语介绍请参考[Connectivity Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology)。
+GATT是低功耗蓝牙（BLE）的核心协议，定义了基于服务（Service）、特征值（Characteristic）和描述符（Descriptor）进行蓝牙通信和传输数据的机制。相关术语介绍请参考[Connectivity Kit术语](/docs/dev/app-dev/system/system-network/connectivity-kit/terminology)。
 
 ## 实现原理
 
@@ -17,13 +17,13 @@ GATT是低功耗蓝牙（BLE）的核心协议，定义了基于服务（Service
 
 服务端需要发送BLE广播才能被客户端发现。服务端需要支持客户端需要连接的服务，等待客户端的连接请求即可。待两端连接成功后，即可接收客户端的读写特征值和发送通知等操作，从而实现接收客户端数据或者向客户端发送数据的功能。
 
-客户端的BLE扫描和服务端的BLE广播流程，请参考[查找设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ble-development-guide)。
+客户端的BLE扫描和服务端的BLE广播流程，请参考[查找设备](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/ble-development-guide)。
 
 ## 开发步骤
 
 ### 申请蓝牙权限
 
-需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)和[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)和[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ### 导入所需API模块
 

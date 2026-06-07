@@ -1,7 +1,7 @@
 ---
 title: "业务简介"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/service-introduction-0000001270924713
+original_url: /docs/distribute/content-dist/huawei-video-baihua/service-introduction-0000001270924713
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Wallet Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-introduction
+original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-introduction
 format: md
 ---
 

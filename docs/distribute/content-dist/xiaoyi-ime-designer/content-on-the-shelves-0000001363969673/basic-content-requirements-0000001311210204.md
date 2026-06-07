@@ -1,7 +1,7 @@
 ---
 title: "打包自测说明"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/basic-content-requirements-0000001311210204
+original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/basic-content-requirements-0000001311210204
 format: md
 ---
 

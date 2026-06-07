@@ -1,6 +1,6 @@
 ---
 title: "应用/组件级配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-component-configuration-fa
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/application-component-configuration-fa
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 应用包名配置
 
-应用包名需在config.json文件中app标签下配置bundleName字段，该字段用于指定应用的包名，需保证唯一性。包名是由字母、数字、下划线（\_）和点号（.）组成的字符串，必须以字母开头。支持的字符串长度为7~127字节。包名通常采用反向域名形式表示（例如，"com.example.myapplication"）。建议第一级为域名后缀"com"，第二级为厂商/个人名，也可以采用多级。应用名称配置可以参考[app标签说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-structure)。
+应用包名需在config.json文件中app标签下配置bundleName字段，该字段用于指定应用的包名，需保证唯一性。包名是由字母、数字、下划线（\_）和点号（.）组成的字符串，必须以字母开头。支持的字符串长度为7~127字节。包名通常采用反向域名形式表示（例如，"com.example.myapplication"）。建议第一级为域名后缀"com"，第二级为厂商/个人名，也可以采用多级。应用名称配置可以参考[app标签说明](/docs/dev/app-dev/getting-started/dev-fundamentals/app-structure)。
 
 ## 图标和标签配置
 
@@ -28,7 +28,7 @@ format: md
 
 ### 应用图标和标签配置
 
-[FA模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#fa模型)不支持直接配置应用图标和标签，会以符合规则的PageAbility的图标和标签作为应用图标和标签。存在多个时，则取位置靠前的Ability的icon和label作为应用的icon和label。
+[FA模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#fa模型)不支持直接配置应用图标和标签，会以符合规则的PageAbility的图标和标签作为应用图标和标签。存在多个时，则取位置靠前的Ability的icon和label作为应用的icon和label。
 
 ### 入口图标和标签配置
 
@@ -36,12 +36,12 @@ format: md
 
 FA模型的入口图标和标签是Page类型的Ability配置的icon和label。
 
-PageAbility的图标和标签配置请参见[PageAbility组件配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-configuration)。需在config.json文件的abilities标签下做如下配置：
+PageAbility的图标和标签配置请参见[PageAbility组件配置](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-configuration)。需在config.json文件的abilities标签下做如下配置：
 
 * 配置icon字段，标签值为资源文件的索引。图标需要在配置DevEco Studio的资源文件中，路径为/resources/base/media。取值示例：$media:ability\_icon。
 * 配置label字段，标签值为资源文件的索引，标识Ability对用户显示的名称。取值可以是Ability名称，也可以是对该名称的资源索引，以支持多语言。
 
-如果在该PageAbility的skills属性中，actions的取值包含 "action.system.home"，entities取值中包含"entity.system.home"，则该Ability的icon和label将同时作为应用的icon和label。如果存在多个符合条件的Ability，则取位置靠前的Ability的icon和label作为应用的icon和label。图标和标签配置可以参考[abilities标签说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure)。
+如果在该PageAbility的skills属性中，actions的取值包含 "action.system.home"，entities取值中包含"entity.system.home"，则该Ability的icon和label将同时作为应用的icon和label。如果存在多个符合条件的Ability，则取位置靠前的Ability的icon和label作为应用的icon和label。图标和标签配置可以参考[abilities标签说明](/docs/dev/app-dev/getting-started/dev-fundamentals/module-structure)。
 
 ```
 {
@@ -105,12 +105,12 @@ PageAbility的图标和标签配置请参见[PageAbility组件配置](https://de
 
 ## 应用版本声明配置
 
-应用版本声明配置需在config.json中的app标签下配置version字段，以说明应用当前的版本号和版本名称以及应用能够兼容的最低历史版本号。应用版本配置说明可以参考[version对象内部结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-structure#version对象内部结构)。
+应用版本声明配置需在config.json中的app标签下配置version字段，以说明应用当前的版本号和版本名称以及应用能够兼容的最低历史版本号。应用版本配置说明可以参考[version对象内部结构](/docs/dev/app-dev/getting-started/dev-fundamentals/app-structure#version对象内部结构)。
 
 ## Module支持的设备类型配置
 
-Module支持的设备类型需要在config.json文件中配置deviceType字段，如果deviceType标签中添加了某种设备，则表明当前的module支持在该设备上运行。具体的deviceType配置规则可以参考[deviceType标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure#devicetype标签)。
+Module支持的设备类型需要在config.json文件中配置deviceType字段，如果deviceType标签中添加了某种设备，则表明当前的module支持在该设备上运行。具体的deviceType配置规则可以参考[deviceType标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-structure#devicetype标签)。
 
 ## 组件权限申请配置
 
-组件权限申请配置需在config.json中的module标签下配置reqPermissions字段。来声明需要申请权限的名称，申请权限的原因以及权限使用的场景。组件权限申请可以参考[reqPermissions权限申请](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure#reqpermissions权限申请)。
+组件权限申请配置需在config.json中的module标签下配置reqPermissions字段。来声明需要申请权限的名称，申请权限的原因以及权限使用的场景。组件权限申请可以参考[reqPermissions权限申请](/docs/dev/app-dev/getting-started/dev-fundamentals/module-structure#reqpermissions权限申请)。

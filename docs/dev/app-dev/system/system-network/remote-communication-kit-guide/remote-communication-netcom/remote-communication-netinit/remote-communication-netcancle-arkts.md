@@ -1,6 +1,6 @@
 ---
 title: "取消网络请求（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcancle-arkts
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netcancle-arkts
 format: md
 ---
 

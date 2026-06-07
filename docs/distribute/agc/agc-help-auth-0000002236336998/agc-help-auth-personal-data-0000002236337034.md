@@ -1,6 +1,6 @@
 ---
 title: "SDK合规使用指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-personal-data-0000002236337034
+original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-personal-data-0000002236337034
 format: md
 ---
 
@@ -55,12 +55,12 @@ format: md
 
   **使用目的**：**在认证提供方系统中最终用户的唯一标识，使最终用户可通过其在认证提供方系统中的标识来登录客户的应用，并在客户的应用中展示最终用户的个人信息。**
 
-  **隐私政策链接**：[SDK隐私政策链接](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-sdksecurity-0000002236496854)
+  **隐私政策链接**：[SDK隐私政策链接](/docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-sdksecurity-0000002236496854)
 * 以表格方式向用户告知
 
   | 第三方SDK名称 | 第三方公司名称 | 收集个人信息类型 | 使用目的 | 隐私政策链接 |
   | --- | --- | --- | --- | --- |
-  | AGC 认证服务SDK（HarmonyOS ArkTS API12版） | 华为软件技术有限公司 | 必要个人信息包括可变设备标识符（AAID）、用户信息（邮箱地址、手机号码、**密码**）、认证提供方信息（ProviderUid、头像、昵称）、AGC认证服务信息（AgcUid、头像、昵称）、应用信息（应用包名、应用版本号） | **在认证提供方系统中最终用户的唯一标识，使最终用户可通过其在认证提供方系统中的标识来登录客户的应用，并在客户的应用中展示最终用户的个人信息。** | [SDK隐私政策链接](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-sdksecurity-0000002236496854) |
+  | AGC 认证服务SDK（HarmonyOS ArkTS API12版） | 华为软件技术有限公司 | 必要个人信息包括可变设备标识符（AAID）、用户信息（邮箱地址、手机号码、**密码**）、认证提供方信息（ProviderUid、头像、昵称）、AGC认证服务信息（AgcUid、头像、昵称）、应用信息（应用包名、应用版本号） | **在认证提供方系统中最终用户的唯一标识，使最终用户可通过其在认证提供方系统中的标识来登录客户的应用，并在客户的应用中展示最终用户的个人信息。** | [SDK隐私政策链接](/docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-sdksecurity-0000002236496854) |
 
 #### 权限使用要求
 
@@ -72,7 +72,7 @@ format: md
 
 #### 延迟初始化要求
 
-为了避免开发者的应用在未获取您的同意前，SDK提前启动收集使用您的个人信息。认证服务SDK提供了初始化接口[Auth.init(applicationContext: Context, json: string)](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-auth-0000002273777093#section189465186472)，要求开发者的应用获取您的同意后才能调用此接口初始化SDK。
+为了避免开发者的应用在未获取您的同意前，SDK提前启动收集使用您的个人信息。认证服务SDK提供了初始化接口[Auth.init(applicationContext: Context, json: string)](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-auth-0000002273777093#section189465186472)，要求开发者的应用获取您的同意后才能调用此接口初始化SDK。
 
 #### 最小化使用功能要求
 
@@ -84,8 +84,8 @@ format: md
 
 * 如何获取用户的数据
 
-  您可以通过调用[Auth.getCurrentUser](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-auth-0000002273777093#section87068861218)获取用户数据副本。
+  您可以通过调用[Auth.getCurrentUser](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-auth-0000002273777093#section87068861218)获取用户数据副本。
 
 * 如何删除用户的数据
 
-  您可以通过调用[Auth.deleteUser](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-auth-0000002273777093#section197703751114)删除用户数据副本。
+  您可以通过调用[Auth.deleteUser](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-auth-0000002273777093#section197703751114)删除用户数据副本。

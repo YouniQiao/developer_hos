@@ -1,7 +1,7 @@
 ---
 title: "折叠屏悬停态"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-folded-hover
+original_url: /docs/dev/app-dev/multi-device/bpta-folded-hover
 format: md
 ---
 
@@ -37,7 +37,7 @@ format: md
 
 ###实现原理
 
-[FolderStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-folderstack)是系统提供的ArkTS组件，继承自[层叠布局Stack](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-stack-layout)。在Stack组件的基础上，FolderStack提供监控设备是否进入悬停态并进行重新布局的能力。
+[FolderStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-folderstack)是系统提供的ArkTS组件，继承自[层叠布局Stack](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout/arkts-layout-development-stack-layout)。在Stack组件的基础上，FolderStack提供监控设备是否进入悬停态并进行重新布局的能力。
 
 FolderStack通过upperItems字段来实现悬停态布局，当设备进入悬停态时，被upperItems字段修饰的组件会堆叠在上半屏，其他未被修饰的组件会堆叠在下半屏并且自动避让折叠屏折痕区。
 

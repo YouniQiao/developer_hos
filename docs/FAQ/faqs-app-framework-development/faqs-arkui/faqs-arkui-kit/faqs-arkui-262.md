@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何使用Navigation的navPathStack参数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-262
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-262
 ---
 
 

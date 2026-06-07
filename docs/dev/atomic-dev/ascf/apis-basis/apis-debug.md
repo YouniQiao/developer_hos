@@ -1,6 +1,6 @@
 ---
 title: "调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-debug
+original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-debug
 format: md
 ---
 

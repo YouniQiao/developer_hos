@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决webview离线加载白屏问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-56
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-56
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "自定义页面请求响应"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-resource-interception-request-mgmt
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-resource-interception-request-mgmt
 format: md
 ---
 

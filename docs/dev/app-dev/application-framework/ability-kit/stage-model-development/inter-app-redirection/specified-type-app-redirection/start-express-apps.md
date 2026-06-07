@@ -1,6 +1,6 @@
 ---
 title: "拉起快递类应用（startAbilityByType）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-express-apps
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-express-apps
 format: md
 ---
 
@@ -77,7 +77,7 @@ startAbilityByType接口中type字段为express，支持查询快递意图，对
 
 ## 目标方开发步骤
 
-1. 在module.json5中配置[uris](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)：
+1. 在module.json5中配置[uris](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)：
 
    1. 设置linkFeature属性以声明当前应用支持的特性功能，从而系统可以从设备已安装应用中找到当前支持该特性的应用，取值范围如下：
 

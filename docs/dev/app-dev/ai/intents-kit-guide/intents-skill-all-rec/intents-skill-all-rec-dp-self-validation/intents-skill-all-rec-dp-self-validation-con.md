@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "配置文件接入方式自测试方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-dp-self-validation-con
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-dp-self-validation/intents-skill-all-rec-dp-self-validation-con
 format: md
 ---
 
@@ -16,7 +16,7 @@ Intents Kit向开发者提供意图调用调试能力。开发者完成代码开
 | --- | --- | --- |
 | 1 | 应用名称 | 应用市场上架的应用名称。 |
 | 2 | 应用包名 | 应用市场上架的应用包名。 |
-| 3 | 华为账号（UID） | 参考[附录A获取UID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-appendix-a-get-uid)。 |
+| 3 | 华为账号（UID） | 参考[附录A获取UID](/docs/dev/app-dev/ai/intents-kit-guide/intents-appendix-a-get-uid)。 |
 | 4 | 应用图标 | 应用的图标，具体要求如下：  图标背景：非透明。  比例&尺寸：1:1，72px\*72px。  大小：不超过1M。  格式：png、jpg、jpeg。 |
 | 5 | 接入意图名称 | 开发者意向接入的意图名称（中英文）。 |
 

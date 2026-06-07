@@ -1,7 +1,7 @@
 ---
 title: "SlotInfo"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-slotinfo-0000001135467066
+original_url: /docs/monetize/promotion/marketapi-modle-slotinfo-0000001135467066
 format: md
 ---
 

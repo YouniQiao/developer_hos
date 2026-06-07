@@ -1,7 +1,7 @@
 ---
 title: "代码分析"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-code-analyse
+original_url: /docs/tools/ai-assist/ide-code-analyse
 format: md
 ---
 

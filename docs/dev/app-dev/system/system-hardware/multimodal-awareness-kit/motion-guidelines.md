@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取用户动作开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/motion-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/motion-guidelines
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 
 ### 需要权限
 
-使用motion模块获取用户操作手时，需要权限：ohos.permission.ACTIVITY\_MOTION 或 ohos.permission.DETECT\_GESTURE，具体申请方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+使用motion模块获取用户操作手时，需要权限：ohos.permission.ACTIVITY\_MOTION 或 ohos.permission.DETECT\_GESTURE，具体申请方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ```
 "requestPermissions":[
@@ -116,7 +116,7 @@ format: md
 
 ### 需要权限
 
-使用motion模块获取用户握持手时，需要权限： ohos.permission.DETECT\_GESTURE，具体申请方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+使用motion模块获取用户握持手时，需要权限： ohos.permission.DETECT\_GESTURE，具体申请方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ```
 "requestPermissions":[

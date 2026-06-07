@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phone-overview
+original_url: /docs/dev/app-dev/application-services/account-get-phone-overview
 format: md
 ---
 
@@ -16,7 +16,7 @@ Account Kit提供了快速验证方式：
 
 | 场景 | 说明 |
 | --- | --- |
-| [快速验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phonenumber) | 对用户选择的华为账号绑定的手机号或者新增的手机号进行验证，**不保证是实时验证**，**仅首次需要用户授权**。 |
+| [快速验证](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-phone/account-get-phonenumber) | 对用户选择的华为账号绑定的手机号或者新增的手机号进行验证，**不保证是实时验证**，**仅首次需要用户授权**。 |
 
 ## 约束与限制
 

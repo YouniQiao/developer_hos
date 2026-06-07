@@ -1,6 +1,6 @@
 ---
 title: "更新应用文件信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-app-file-info-update-0000002236041430
+original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-app-file-info-update-0000002236041430
 format: md
 ---
 
@@ -26,20 +26,20 @@ format: md
 
 ![](../img/agc-help-publish-api-app-file-info-update-0000002236041430_0.png)
 
-本接口支持使用Service Account方式和API客户端方式，二者区别请参见[获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661)。
+本接口支持使用Service Account方式和API客户端方式，二者区别请参见[获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661)。
 
 **Service Account****方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
 
 **API客户端方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
 
 #### [h2]Query
 
@@ -55,22 +55,22 @@ format: md
 
 ![](../img/agc-help-publish-api-app-file-info-update-0000002236041430_1.png)
 
-各文件类型对应的文件上传要求请参见[应用文件要求](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-requirement-0000002271160693)。
+各文件类型对应的文件上传要求请参见[应用文件要求](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-requirement-0000002271160693)。
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| appIconList | O | `List&lt;[LangFileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 应用图标信息。  数组长度不超过20。  说明：  应用图标必须与软件包中的应用图标一致，且需符合[应用信息审核规范](https://developer.huawei.com/consumer/cn/doc/app/50104-01)与[应用文件要求](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-requirement-0000002271160693)。 |
-| screenShotList | O | `List&lt;[LangFileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 应用介绍截图信息。  数组长度不超过20。  说明：  在同一语言、同一设备下，同时更新的截图素材和视频素材方向必须保持一致，否则将报错。 |
-| introVideoList | O | `List&lt;[LangFileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 应用介绍视频信息。  数组长度不超过20。  说明：  在同一语言、同一设备下，同时更新的截图素材和视频素材方向必须保持一致，否则将报错。 |
-| rcmdVideoList | O | `List&lt;[LangFileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 推荐视频信息。  数组长度不超过20。 |
-| rcmdPicList | O | `List&lt;[LangFileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 推荐图片信息。  数组长度不超过20。 |
+| appIconList | O | `List&lt;[LangFileInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 应用图标信息。  数组长度不超过20。  说明：  应用图标必须与软件包中的应用图标一致，且需符合[应用信息审核规范](https://developer.huawei.com/consumer/cn/doc/app/50104-01)与[应用文件要求](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-requirement-0000002271160693)。 |
+| screenShotList | O | `List&lt;[LangFileInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 应用介绍截图信息。  数组长度不超过20。  说明：  在同一语言、同一设备下，同时更新的截图素材和视频素材方向必须保持一致，否则将报错。 |
+| introVideoList | O | `List&lt;[LangFileInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 应用介绍视频信息。  数组长度不超过20。  说明：  在同一语言、同一设备下，同时更新的截图素材和视频素材方向必须保持一致，否则将报错。 |
+| rcmdVideoList | O | `List&lt;[LangFileInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 推荐视频信息。  数组长度不超过20。 |
+| rcmdPicList | O | `List&lt;[LangFileInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 推荐图片信息。  数组长度不超过20。 |
 | elecCertificate | O | String(512) | 电子版本证书。 |
 | certificateList | O | `List&lt;String(512)>` | 应用版权证书或代理证书。  数组长度不超过10。 |
 | publicationList | O | `List&lt;String(512)>` | 版号证明。  数组长度不超过10。 |
-| packagePermissionIntroVideoList | O | `List&lt;[PackagePermissionIntroVideo](https://developer.huawei.com/consumer/cn/doc/app/publish-api-packagepermissionintrovedio-0000002236201278)>` | 包权限使用场景说明视频。  数组长度不超过100。  说明：  隐私权限说明的“权限描述”、“权限使用设备范围”和“权限使用理由”从上传的软件包体中读取，无需通过接口更新。 |
-| otherCertificatesURL | O | String(512) | 授权书及其他材料文件压缩包的objectId。  说明：  **objectId**的获取流程：先调用[获取上传文件地址](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-url-0000002236201294)接口，然后调用[上传文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-file-0000002271160621)接口上传文件，最后得到[获取上传文件地址](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-url-0000002236201294)接口返回的**objectId**。  若文件格式不正确，提交发布时会出错，具体限制如下：   * 压缩包必须为zip格式，不超过200MB。 * 解压后的大小不超过1GB。 * 文件夹层级不超过3层。 * 只能包含JPG、JPEG、BMP格式图片和PDF格式的文件，累计不超过200个。   说明：  此字段只支持HarmonyOS应用，不支持元服务。 |
-| updateScreenShotList | O | `List&lt;[LangFileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 更新截图素材。  数组长度不超过20。 |
-| updateVideoList | O | `List&lt;[LangFileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 更新视频素材。  数组长度不超过20。 |
+| packagePermissionIntroVideoList | O | `List&lt;[PackagePermissionIntroVideo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/publish-api-packagepermissionintrovedio-0000002236201278)>` | 包权限使用场景说明视频。  数组长度不超过100。  说明：  隐私权限说明的“权限描述”、“权限使用设备范围”和“权限使用理由”从上传的软件包体中读取，无需通过接口更新。 |
+| otherCertificatesURL | O | String(512) | 授权书及其他材料文件压缩包的objectId。  说明：  **objectId**的获取流程：先调用[获取上传文件地址](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-upload-url-0000002236201294)接口，然后调用[上传文件](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-upload-file-0000002271160621)接口上传文件，最后得到[获取上传文件地址](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-upload-url-0000002236201294)接口返回的**objectId**。  若文件格式不正确，提交发布时会出错，具体限制如下：   * 压缩包必须为zip格式，不超过200MB。 * 解压后的大小不超过1GB。 * 文件夹层级不超过3层。 * 只能包含JPG、JPEG、BMP格式图片和PDF格式的文件，累计不超过200个。   说明：  此字段只支持HarmonyOS应用，不支持元服务。 |
+| updateScreenShotList | O | `List&lt;[LangFileInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 更新截图素材。  数组长度不超过20。 |
+| updateVideoList | O | `List&lt;[LangFileInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-langfileinfo-0000002271000653)>` | 更新视频素材。  数组长度不超过20。 |
 
 #### 请求示例
 
@@ -206,7 +206,7 @@ Authorization: Bearer *******
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-connectret-0000002271160589) | 包含返回码及描述信息的结果。 |
+| ret | M | [ConnectRet](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-connectret-0000002271160589) | 包含返回码及描述信息的结果。 |
 
 #### 响应示例
 

@@ -1,7 +1,7 @@
 ---
 title: "删除应用"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-deleting-0000001239645257
+original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-deleting-0000001239645257
 format: md
 ---
 
@@ -18,9 +18,9 @@ format: md
 
 若需要删除处于“已上架”、“正在审核”或“下架处理中”状态的应用，请按照如下引导进行操作：
 
-* 对于“已上架”状态的应用，您可[提交下架申请](`https://developer.huawei.com/consumer/cn/doc/app/game-center-removing-0000001194165316#section516715913203`)，并可根据审批进度进行[催审](`https://developer.huawei.com/consumer/cn/doc/app/game-center-removing-0000001194165316#section1431432482017`)，应用下架成功变为“已下架”状态后再删除应用。
-* 对于“正在审核”状态的应用，您可提交[撤销审核](`https://developer.huawei.com/consumer/cn/doc/app/game-center-push-check-0000001194005348#section18227759939`)申请，审核通过变为“已撤销上架”状态后再删除应用。
-* 对于“下架处理中”状态的应用，您可进行[催审](`https://developer.huawei.com/consumer/cn/doc/app/game-center-removing-0000001194165316#section1431432482017`)，审核通过变为“已下架”状态后再删除应用。
+* 对于“已上架”状态的应用，您可[提交下架申请](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316#section516715913203`)，并可根据审批进度进行[催审](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316#section1431432482017`)，应用下架成功变为“已下架”状态后再删除应用。
+* 对于“正在审核”状态的应用，您可提交[撤销审核](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-push-check-0000001194005348#section18227759939`)申请，审核通过变为“已撤销上架”状态后再删除应用。
+* 对于“下架处理中”状态的应用，您可进行[催审](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316#section1431432482017`)，审核通过变为“已下架”状态后再删除应用。
 
 ## 操作步骤
 

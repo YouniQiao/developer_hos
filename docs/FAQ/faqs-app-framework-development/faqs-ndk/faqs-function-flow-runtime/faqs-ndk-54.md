@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native侧代码与ArkTS侧的代码线程关系以及线程使用限制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-54
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-54
 ---
 
 

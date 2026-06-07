@@ -1,30 +1,30 @@
 ---
 title: "基础能力开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-basic-capability-development
+original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-basic-capability-development
 format: md
 ---
 
 
-* **[网络](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-network-development)**
-* **[数据](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-database)**
-* **[文件](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-file-development)**
-* **[音视频](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-audio-development)**
-* **[媒体会话](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-avsession-development)**
-* **[相机](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-camera)**
-* **[媒体库](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-media-library-development)**
-* **[图片](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-development)**
-* **[窗口](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-window-development)**
-* **[设备管理](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-device-management)**
-* **[基础通信](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-connectivity)**
-* **[联系人](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-contacts)**
-* **[Web](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-web-development)**
-* **[AI能力](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-ai-development)**
-* **[运动健康](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-health-service-development)**
-* **[云开发](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-cloud-foundation-development)**
-* **[安全](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-security-development)**
-* **[天气](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-weather-service-development)**
-* **[本地化开发服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-localization)**
-* **[长时任务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-backgroundtask)**
-* **[日志](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-log-development)**
-* **[ArkTS语言基础类库](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-arkts-utils)**
-* **[自动化测试](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-arkxtest-guidelines)**
+* **[网络](/docs/dev/atomic-dev/atomic-network-development/atomic-network-development)**
+* **[数据](/docs/dev/atomic-dev/atomic-database/atomic-database)**
+* **[文件](/docs/dev/atomic-dev/atomic-file-development/atomic-file-development)**
+* **[音视频](/docs/dev/atomic-dev/atomic-basic-capability-development/atomic-audio-development)**
+* **[媒体会话](/docs/dev/atomic-dev/atomic-basic-capability-development/atomic-avsession-development)**
+* **[相机](/docs/dev/atomic-dev/atomic-basic-capability-development/atomic-camera)**
+* **[媒体库](/docs/dev/atomic-dev/atomic-media-library-development/atomic-media-library-development)**
+* **[图片](/docs/dev/atomic-dev/atomic-image-development/atomic-image-development)**
+* **[窗口](/docs/dev/atomic-dev/atomic-window-development/atomic-window-development)**
+* **[设备管理](/docs/dev/atomic-dev/atomic-device-management/atomic-device-management)**
+* **[基础通信](/docs/dev/atomic-dev/atomic-connectivity/atomic-connectivity)**
+* **[联系人](/docs/dev/atomic-dev/atomic-contacts/atomic-contacts)**
+* **[Web](/docs/dev/atomic-dev/atomic-web-development/atomic-web-development)**
+* **[AI能力](/docs/dev/atomic-dev/atomic-ai-development/atomic-ai-development)**
+* **[运动健康](/docs/dev/atomic-dev/atomic-health-service-development/atomic-health-service-development)**
+* **[云开发](/docs/dev/atomic-dev/atomic-basic-capability-development/atomic-cloud-foundation-development)**
+* **[安全](/docs/dev/atomic-dev/atomic-security-development/atomic-security-development)**
+* **[天气](/docs/dev/atomic-dev/atomic-basic-capability-development/atomic-weather-service-development)**
+* **[本地化开发服务](/docs/dev/atomic-dev/atomic-basic-capability-development/atomic-localization)**
+* **[长时任务](/docs/dev/atomic-dev/atomic-basic-capability-development/atomic-backgroundtask)**
+* **[日志](/docs/dev/atomic-dev/atomic-log-development/atomic-log-development)**
+* **[ArkTS语言基础类库](/docs/dev/atomic-dev/atomic-basic-capability-development/atomic-arkts-utils)**
+* **[自动化测试](/docs/dev/atomic-dev/atomic-basic-capability-development/atomic-arkxtest-guidelines)**

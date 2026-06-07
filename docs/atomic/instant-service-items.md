@@ -1,6 +1,6 @@
 ---
 title: "子服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items
+original_url: /docs/dev/atomic-dev/instant-service-items/instant-service-items
 format: md
 ---
 
@@ -9,11 +9,11 @@ format: md
 2. 在HarmonyOS列表，选择您已发布的元服务。
 3. 在左侧导航栏选择“服务分发增长&gt; 服务直达”。
 
-* **[创建子服务及个性化设置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-create-pers)**
-* **[预览子服务卡](https://developer.huawei.com/consumer/cn/doc/atomic-guides/preview-sub-service-card)**
-* **[更新子服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-update)**
-* **[更新个性化设置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-pers-update)**
-* **[下架个性化设置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-pers-delist)**
-* **[新增个性化设置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-pers-add)**
-* **[批量新建子服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-batch-create)**
-* **[批量变更子服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items-batch-update)**
+* **[创建子服务及个性化设置](/docs/dev/atomic-dev/instant-service-items/instant-service-items-create-pers)**
+* **[预览子服务卡](/docs/dev/atomic-dev/instant-service-items/preview-sub-service-card)**
+* **[更新子服务](/docs/dev/atomic-dev/instant-service-items/instant-service-items-update)**
+* **[更新个性化设置](/docs/dev/atomic-dev/instant-service-items/instant-service-items-pers-update)**
+* **[下架个性化设置](/docs/dev/atomic-dev/instant-service-items/instant-service-items-pers-delist)**
+* **[新增个性化设置](/docs/dev/atomic-dev/instant-service-items/instant-service-items-pers-add)**
+* **[批量新建子服务](/docs/dev/atomic-dev/instant-service-items/instant-service-items-batch-create)**
+* **[批量变更子服务](/docs/dev/atomic-dev/instant-service-items/instant-service-items-batch-update)**

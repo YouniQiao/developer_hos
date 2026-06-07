@@ -1,6 +1,6 @@
 ---
 title: "ArkUI瀑布流渲染场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-waterflow
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/taskpool-waterflow
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 本示例说明以下场景：
 
-* 模拟子线程[读取数据库数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/batch-database-operations-guide)并返回给UI线程。
+* 模拟子线程[读取数据库数据](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/batch-database-operations-guide)并返回给UI线程。
 * UI线程感知到数据更新，将子线程返回的数据渲染到瀑布流组件。
 
 1. 定义一个接口，用于子线程查询数据库并将数据返回给UI线程。

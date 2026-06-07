@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用相机预配置(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preconfig-native
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/camera-preconfig-native
 format: md
 ---
 

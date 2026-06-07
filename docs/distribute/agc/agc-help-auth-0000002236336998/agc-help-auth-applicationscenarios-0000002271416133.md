@@ -1,6 +1,6 @@
 ---
 title: "典型应用场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-applicationscenarios-0000002271416133
+original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-applicationscenarios-0000002271416133
 format: md
 ---
 

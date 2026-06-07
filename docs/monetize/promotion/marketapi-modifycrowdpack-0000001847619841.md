@@ -1,7 +1,7 @@
 ---
 title: "文件人群修改"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modifycrowdpack-0000001847619841
+original_url: /docs/monetize/promotion/marketapi-modifycrowdpack-0000001847619841
 format: md
 ---
 
@@ -64,7 +64,7 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 | groupId | O | String | 创建成功的话会返回定向ID，失败的话该值为空。 |
 

@@ -1,11 +1,11 @@
 ---
 title: "配置版权信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-copyright-0000002278981450
+original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-copyright-0000002278981450
 format: md
 ---
 
 
-按照法律法规要求，应用上架需要提供相应的资质文档，具体要求请参见[应用资质审核要求](https://developer.huawei.com/consumer/cn/doc/app/80301)。
+按照法律法规要求，应用上架需要提供相应的资质文档，具体要求请参见[应用资质审核要求](/docs/distribute/app-dist/app-market/x50000/x80301)。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 选择要发布的应用。

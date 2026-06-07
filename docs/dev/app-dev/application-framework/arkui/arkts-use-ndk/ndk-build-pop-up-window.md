@@ -1,6 +1,6 @@
 ---
 title: "构建弹窗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-pop-up-window
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-pop-up-window
 format: md
 ---
 
@@ -77,7 +77,7 @@ format: md
 
   ![](./img/65c557c3.png)
 
-  ArkUITextNode的声明方式可以查看[ArkUINode.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page#示例)文件中的实现文本组件。
+  ArkUITextNode的声明方式可以查看[ArkUINode.h](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page#示例)文件中的实现文本组件。
 * 当不再需要弹窗操作时，需要主动调用[OH\_ArkUI\_CustomDialog\_DisposeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-dialog-h#oh_arkui_customdialog_disposeoptions)接口销毁弹窗控制器对象。
 
   ```
@@ -230,7 +230,7 @@ format: md
 
 可创建交互页面，打开或关闭弹窗。
 
-1. 创建可交互界面，点击Button后弹窗。其中获取与使用ArkUI\_NodeContentHandle类型节点可参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)。
+1. 创建可交互界面，点击Button后弹窗。其中获取与使用ArkUI\_NodeContentHandle类型节点可参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)。
 
    ```
    constexpr int32_t BUTTON_CLICK_ID = 1;
@@ -351,7 +351,7 @@ format: md
 
 registerOnWillAppear -> 弹窗显示动画开始 -> 弹窗显示动画结束 -> registerOnDidAppear -> 弹窗显示完成 ->registerOnWillDisappear -> 弹窗关闭动画开始 -> 弹窗关闭动画结束 -> registerOnDidDisappear -> 弹窗关闭完成。
 
-创建一个弹窗，弹窗显示和关闭时会触发生命周期的回调函数。其中 ArkUI\_NodeContentHandle 类型节点的获取与使用可参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)。
+创建一个弹窗，弹窗显示和关闭时会触发生命周期的回调函数。其中 ArkUI\_NodeContentHandle 类型节点的获取与使用可参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)。
 
 ![](./img/a7b2b079.png)
 

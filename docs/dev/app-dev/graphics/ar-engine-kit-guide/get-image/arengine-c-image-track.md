@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "图像跟踪（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-image-track
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-image/arengine-c-image-track
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 约束与限制
 
-从5.1.0(18)开始，图像跟踪能力支持部分Phone、部分Tablet设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持图像跟踪特性（[ARENGINE\_FEATURE\_TYPE\_IMAGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
+从5.1.0(18)开始，图像跟踪能力支持部分Phone、部分Tablet设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持图像跟踪特性（[ARENGINE\_FEATURE\_TYPE\_IMAGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
 
 ## 接口说明
 
@@ -43,11 +43,11 @@ format: md
 
 ### 声明Native接口
 
-开发者可参考AR物体摆放章节的[声明Native接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arworld#声明native接口)。
+开发者可参考AR物体摆放章节的[声明Native接口](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-c-arworld#声明native接口)。
 
 ### 创建UI界面
 
-首先创建一个起始UI页面“ARImage.ets”，设置两个按钮，用于实现“添加本地图片”和“读取本地数据库”两个功能，分别命名“ARImageByAdd.ets”和“ARImageByDatabase.ets”。配置路由进行页面间跳转，页面路由配置详细可查看[组件导航(Navigation) (推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)。
+首先创建一个起始UI页面“ARImage.ets”，设置两个按钮，用于实现“添加本地图片”和“读取本地数据库”两个功能，分别命名“ARImageByAdd.ets”和“ARImageByDatabase.ets”。配置路由进行页面间跳转，页面路由配置详细可查看[组件导航(Navigation) (推荐)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)。
 
 ```
 // 此代码可参考示例代码：ARSample/entry/src/main/ets/pages/ARImage.ets。
@@ -491,11 +491,11 @@ struct ARImageByDatabase {
 }
 ```
 
-配置路由进行页面间跳转，页面路由配置详细可查看[组件导航(Navigation) (推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)。
+配置路由进行页面间跳转，页面路由配置详细可查看[组件导航(Navigation) (推荐)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)。
 
 ### 引入AR Engine
 
-开发者可参考AR物体摆放章节的[引入AR Engine](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arworld#引入ar-engine)。
+开发者可参考AR物体摆放章节的[引入AR Engine](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-c-arworld#引入ar-engine)。
 
 ### 创建AR会话
 
@@ -582,7 +582,7 @@ AREngine_ARAugmentedImage *arImage = reinterpret_cast<AREngine_ARAugmentedImage*
 
 ### 获取跟踪图像中心点在世界坐标系中的位姿信息
 
-调用[HMS\_AREngine\_ARAugmentedImage\_GetCenterPose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_araugmentedimage_getcenterpose)函数，获取跟踪图像中心点的位姿信息，位姿信息可参考[获取设备位姿](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-pose)。
+调用[HMS\_AREngine\_ARAugmentedImage\_GetCenterPose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_araugmentedimage_getcenterpose)函数，获取跟踪图像中心点的位姿信息，位姿信息可参考[获取设备位姿](/docs/dev/app-dev/graphics/ar-engine-kit-guide/get-pose/arengine-c-get-pose)。
 
 ```
 AREngine_ARPose *imagePose = nullptr;

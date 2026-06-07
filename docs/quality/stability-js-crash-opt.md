@@ -1,6 +1,6 @@
 ---
 title: "JS Crash类问题优化建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-js-crash-opt
+original_url: /docs/quality/stability-js-crash-opt
 format: md
 ---
 
@@ -17,4 +17,4 @@ format: md
 
 ## 优化建议2：崩溃预防机制
 
-可使用errorManager注册错误观测器。注册后可以捕获到应用产生的JS Crash，应用崩溃时进程不会退出。详见[errorManager使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/errormanager-guidelines)。
+可使用errorManager注册错误观测器。注册后可以捕获到应用产生的JS Crash，应用崩溃时进程不会退出。详见[errorManager使用指导](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/error-manager/errormanager-guidelines)。

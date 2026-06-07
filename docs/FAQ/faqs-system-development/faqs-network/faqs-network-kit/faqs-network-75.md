@@ -1,7 +1,7 @@
 ---
 format: md
 title: "http模块是否支持忽略证书认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-75
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-75
 ---
 
 

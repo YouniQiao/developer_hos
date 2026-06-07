@@ -1,6 +1,6 @@
 ---
 title: "如何实现状态栏背景颜色沉浸"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-358
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-358
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "删除商品库"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa6-0000001286343138
+original_url: /docs/monetize/promotion/marketing-api-tool-dpa6-0000001286343138
 format: md
 ---
 

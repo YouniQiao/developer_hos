@@ -1,7 +1,7 @@
 ---
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-introduction-0000001299018740
+original_url: /docs/monetize/promotion/bp-functions-link-introduction-0000001299018740
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 ![](./img/56c61fc98eba.jpg "点击放大")
 
-1. 开发者在华为应用市场应用推广门户新建投放任务，并在投放任务中配置不同的监测链接，详见[配置监测链接](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-configure-0000001351658397)。
+1. 开发者在华为应用市场应用推广门户新建投放任务，并在投放任务中配置不同的监测链接，详见[配置监测链接](/docs/monetize/promotion/bp-functions-link-configure-0000001351658397)。
 2. 推广任务会同步到华为应用市场应用推广平台。
 3. 您的任务竞价成功后在应用市场客户端完成推广。
 4. 终端用户在推广位进行了浏览、点击、下载、安装操作。

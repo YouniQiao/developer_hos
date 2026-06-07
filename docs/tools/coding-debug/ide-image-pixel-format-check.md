@@ -1,7 +1,7 @@
 ---
 title: "@correctness/image-pixel-format-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-image-pixel-format-check
+original_url: /docs/tools/coding-debug/ide-image-pixel-format-check
 format: md
 ---
 

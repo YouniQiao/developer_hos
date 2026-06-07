@@ -1,7 +1,7 @@
 ---
 format: md
 title: "DevEco Studio安装HAP时报错“FileTransfer Failed: [Fail]Error opening file: no such file or directory”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-60
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-60
 ---
 
 

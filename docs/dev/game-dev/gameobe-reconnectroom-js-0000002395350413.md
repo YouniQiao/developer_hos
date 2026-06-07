@@ -1,6 +1,6 @@
 ---
 title: "掉线重连"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-reconnectroom-js-0000002395350413
+original_url: /docs/dev/game-dev/gameobe-reconnectroom-js-0000002395350413
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 ## 前提条件
 
 * 玩家已进入房间/队伍。
-* 如需使用自动补帧方式进行补帧，应[开启自动补帧](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-framesync-management-0000002395350373#section9730102310199)功能。
+* 如需使用自动补帧方式进行补帧，应[开启自动补帧](/docs/dev/game-dev/gameobe-framesync-management-0000002395350373#section9730102310199)功能。
 
 ## 主动关闭客户端导致掉线的场景
 
@@ -40,11 +40,11 @@ format: md
    });
    ```
 2. 当前玩家存在已加入的房间或队伍时，可调用相关方法，重新连接服务器并进入房间/队伍。
-   * 当前玩家存在已加入的房间时，可通过调用[Client.joinRoom](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-client-js-0000002361516044#section13774175719619)方法，在[允许掉线重连时间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section172221948194413)内重新连接至服务器。
+   * 当前玩家存在已加入的房间时，可通过调用[Client.joinRoom](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-client-js-0000002361516044#section13774175719619)方法，在[允许掉线重连时间](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section172221948194413)内重新连接至服务器。
 
      ![](./img/3070d507.png)
 
-     当房主超过[允许掉线重连的时间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section172221948194413)未重新回到房间，房主权限将会被房间内的其他玩家接管。
+     当房主超过[允许掉线重连的时间](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section172221948194413)未重新回到房间，房主权限将会被房间内的其他玩家接管。
 
      ```
      // 非必传
@@ -153,11 +153,11 @@ format: md
      }
    });
    ```
-2. 当玩家发生掉线状况后，可通过调用[Room.reconnect](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-room-js-0000002395195985#section7567415154414)方法，在[允许掉线重连时间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section172221948194413)内重新连接至服务器。
+2. 当玩家发生掉线状况后，可通过调用[Room.reconnect](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-room-js-0000002395195985#section7567415154414)方法，在[允许掉线重连时间](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section172221948194413)内重新连接至服务器。
 
    ![](./img/ca6e6613.png)
 
-   当房主超过[允许掉线重连的时间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section172221948194413)未重新回到房间，房主权限将会被房间内的其他玩家接管。
+   当房主超过[允许掉线重连的时间](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section172221948194413)未重新回到房间，房主权限将会被房间内的其他玩家接管。
 
    ```
    global.room.reconnect();

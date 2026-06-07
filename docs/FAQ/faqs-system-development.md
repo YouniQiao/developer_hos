@@ -1,11 +1,11 @@
 ---
 format: md
 title: "系统开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-system-development
+original_url: /docs/FAQ/faqs-system-development
 ---
 
 
-* **[安全](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-security)**
-* **[网络](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network)**
-* **[基础功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-basic-functions)**
-* **[硬件](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-hardware)**
+* **[安全](/docs/FAQ/faqs-security)**
+* **[网络](/docs/FAQ/faqs-network)**
+* **[基础功能](/docs/FAQ/faqs-basic-functions)**
+* **[硬件](/docs/FAQ/faqs-hardware)**

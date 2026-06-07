@@ -1,6 +1,6 @@
 ---
 title: "二进制优化服务FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-faq-0000002377194865
+original_url: /docs/dev/game-dev/games-binary-optimization-faq-0000002377194865
 format: md
 ---
 

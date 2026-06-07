@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "订阅或取消订阅打印服务启动事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-print-startup-event
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-print-startup-event
 format: md
 ---
 

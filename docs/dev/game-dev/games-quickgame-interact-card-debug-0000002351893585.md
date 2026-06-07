@@ -1,13 +1,13 @@
 ---
 title: "打包测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-interact-card-debug-0000002351893585
+original_url: /docs/dev/game-dev/games-quickgame-interact-card-debug-0000002351893585
 format: md
 ---
 
 
 ## 准备工作
 
-* [下载](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-download-0000002351893589)并安装最新的快游戏开发者工具。
+* [下载](/docs/dev/game-dev/games-quickgame-tool-download-0000002351893589)并安装最新的快游戏开发者工具。
 * 准备HarmonyOS 6.0.0 Release及以上版本的手机设备，且要求手机设备登录已实名认证的华为账号。
 * 提前将带有互动卡片入口的HarmonyOS 5.0及以上游戏安装在手机设备上。
 
@@ -56,4 +56,4 @@ format: md
    |  |  |  |  |
    | --- | --- | --- | --- |
    | ![](./img/a86fc20a.png "点击放大") |  |  |  |
-10. 确保运行效果符合预期后，在顶部菜单栏点击“构建 &gt; 打包正式包”生成用于上架华为应用市场的RPK包，具作打包步骤请参见[打包正式版本](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-build-formal-0000002317894976)。
+10. 确保运行效果符合预期后，在顶部菜单栏点击“构建 &gt; 打包正式包”生成用于上架华为应用市场的RPK包，具作打包步骤请参见[打包正式版本](/docs/dev/game-dev/games-quickgame-tool-build-formal-0000002317894976)。

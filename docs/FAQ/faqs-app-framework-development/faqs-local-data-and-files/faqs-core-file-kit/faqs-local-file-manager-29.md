@@ -1,7 +1,7 @@
 ---
 format: md
 title: "fileIo.open读取应用沙盒路径失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-29
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-29
 ---
 
 

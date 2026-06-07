@@ -1,7 +1,7 @@
 ---
 title: "管理渠道包"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-physical-subcontract-manage-0000001288400496
+original_url: /docs/monetize/promotion/bp-functions-physical-subcontract-manage-0000001288400496
 format: md
 ---
 

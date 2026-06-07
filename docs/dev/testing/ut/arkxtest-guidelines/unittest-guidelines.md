@@ -1,6 +1,6 @@
 ---
 title: "单元测试框架使用指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unittest-guidelines
+original_url: /docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines
 format: md
 ---
 
@@ -43,7 +43,7 @@ format: md
 
 ### 搭建环境
 
-测试脚本基于DevEco Studio编写，请下载[DevEco Studio](https://developer.huawei.com/consumer/cn/download/)并完成[hdc配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)。
+测试脚本基于DevEco Studio编写，请下载[DevEco Studio](https://developer.huawei.com/consumer/cn/download/)并完成[hdc配置](/docs/dev/app-dev/system/hdc#环境准备)。
 
 ### 新建测试脚本
 
@@ -123,7 +123,7 @@ export default function abilityTest() {
 
 * aa test工具命令列表
 
-以下是单元测试过程中的常用命令，其他aa test命令及含义说明参考[命令指南说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool)。
+以下是单元测试过程中的常用命令，其他aa test命令及含义说明参考[命令指南说明](/docs/dev/app-dev/system/aa-tool)。
 
 | 参数 | 参数说明 | 示例 |
 | --- | --- | --- |

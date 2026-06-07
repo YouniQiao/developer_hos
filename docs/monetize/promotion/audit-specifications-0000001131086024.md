@@ -1,7 +1,7 @@
 ---
 title: "审核规范"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/audit-specifications-0000001131086024
+original_url: /docs/monetize/promotion/audit-specifications-0000001131086024
 format: md
 ---
 

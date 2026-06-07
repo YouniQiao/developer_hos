@@ -1,6 +1,6 @@
 ---
 title: "TaskPool简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-introduction
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction
 format: md
 ---
 
@@ -13,17 +13,17 @@ TaskPool运作机制示意图
 
 ![](./img/acfc8f35.png)
 
-TaskPool支持在宿主线程提交任务到任务队列，系统选择合适的工作线程执行任务，并将结果返回给宿主线程。接口易用，支持任务执行、取消和指定优先级。通过系统统一线程管理，结合动态调度和负载均衡算法，可以节约系统资源。系统默认启动一个任务工作线程，任务多时会自动扩容。工作线程数量上限由设备的物理核数决定，内部管理具体数量，确保调度和执行效率最优。长时间无任务分发时会缩容，减少工作线程数量。具体扩缩容机制请参见[TaskPool扩缩容机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-introduction#taskpool扩缩容机制)。
+TaskPool支持在宿主线程提交任务到任务队列，系统选择合适的工作线程执行任务，并将结果返回给宿主线程。接口易用，支持任务执行、取消和指定优先级。通过系统统一线程管理，结合动态调度和负载均衡算法，可以节约系统资源。系统默认启动一个任务工作线程，任务多时会自动扩容。工作线程数量上限由设备的物理核数决定，内部管理具体数量，确保调度和执行效率最优。长时间无任务分发时会缩容，减少工作线程数量。具体扩缩容机制请参见[TaskPool扩缩容机制](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction#taskpool扩缩容机制)。
 
 ## TaskPool注意事项
 
 * 实现任务的函数需要使用[@Concurrent装饰器](#concurrent装饰器)标注，且仅支持在.ets文件中使用。
-* 从API version 11开始，跨并发实例传递带方法的实例对象时，该类必须使用装饰器[@Sendable装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable装饰器)标注，且仅支持在.ets文件中使用。如果不考虑使用@Sendable装饰器标注，可以考虑worker方法，请参考[Worker同步调用宿主线程的接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-invoke-mainthread-interface)。
+* 从API version 11开始，跨并发实例传递带方法的实例对象时，该类必须使用装饰器[@Sendable装饰器](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable装饰器)标注，且仅支持在.ets文件中使用。如果不考虑使用@Sendable装饰器标注，可以考虑worker方法，请参考[Worker同步调用宿主线程的接口](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/worker-invoke-mainthread-interface)。
 * 任务函数（[LongTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool#longtask12)除外）的CPU执行时长不能超过3分钟（通过Task的cpuDuration属性获取）。异步I/O等待时间不计入此限制，可通过ioDuration属性获取。否则，若因任务逻辑导致阻塞，使任务无法完成，将导致该线程后续无法调度其他任务。当所有线程均被超时占用时，后续提交的任务将无法正常调度执行。需要注意的是，这里的3分钟限制仅统计TaskPool线程的​​同步执行时长​​，不包含异步操作（如Promise或async/await）的等待时长。例如，数据库的插入、删除、更新等操作，如果是异步操作，仅计入CPU实际处理时长（如SQL解析），网络传输或磁盘I/O等待时长不计入；如果是同步操作，整个操作时长（含I/O阻塞时间）均计入限制。开发者可通过[Task](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool#task)的属性ioDuration、cpuDuration获取执行当前任务的异步IO耗时和CPU耗时。
-* 实现任务的函数入参需满足序列化支持的类型。详情请参见[线程间通信对象概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serializable-overview)。目前不支持使用[@State装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)、[@Prop装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)、[@Link装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)等装饰器修饰的复杂类型。
+* 实现任务的函数入参需满足序列化支持的类型。详情请参见[线程间通信对象概述](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/serializable-overview)。目前不支持使用[@State装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)、[@Prop装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)、[@Link装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)等装饰器修饰的复杂类型。
 * ArrayBuffer参数在TaskPool中默认转移，需要设置转移列表的话可通过接口[setTransferList()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool#settransferlist10)设置。如果需要多次调用使用ArrayBuffer作为参数的task，则需要通过接口[setCloneList()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool#setclonelist11)把ArrayBuffer在线程中的传输行为改成拷贝传递，避免对原有对象产生影响。
 
-除上述注意事项外，使用TaskPool时还需注意[并发注意事项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview#并发注意事项)。
+除上述注意事项外，使用TaskPool时还需注意[并发注意事项](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/multi-thread-concurrency-overview#并发注意事项)。
 
 ```
 import { taskpool } from '@kit.ArkTS';
@@ -50,13 +50,13 @@ function testArrayBuffer() {
 }
 ```
 
-* 由于不同线程中上下文对象不同，TaskPool工作线程只能使用线程安全的模块。例如，不能使用UI相关的非线程安全模块。TaskPool/Worker等工作线程不支持使用操作UI的模块、线程不安全的模块以及其他只支持在主线程中使用的模块。不支持UI模块是因为目前工作线程不支持操作UI，不支持线程不安全的模块是因为多线程使用该模块可能会导致多线程问题，只支持在主线程中使用的模块明确在文档中说明的有[ApplicationContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext)等。线程安全的模块是指多线程同时使用该模块也不会引入多线程问题，如TaskPool/[Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)/[hilog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog)等。
+* 由于不同线程中上下文对象不同，TaskPool工作线程只能使用线程安全的模块。例如，不能使用UI相关的非线程安全模块。TaskPool/Worker等工作线程不支持使用操作UI的模块、线程不安全的模块以及其他只支持在主线程中使用的模块。不支持UI模块是因为目前工作线程不支持操作UI，不支持线程不安全的模块是因为多线程使用该模块可能会导致多线程问题，只支持在主线程中使用的模块明确在文档中说明的有[ApplicationContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext)等。线程安全的模块是指多线程同时使用该模块也不会引入多线程问题，如TaskPool/[Worker](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction)/[hilog](/docs/dev/app-dev/system/hilog)等。
 * 序列化传输的数据量限制为16MB。
 * [Priority](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool#priority)的IDLE优先级是用来标记需要在后台运行的耗时任务（例如数据同步、备份），它的优先级别是最低的。这种优先级的任务只在所有线程都空闲时触发执行，并且同一时间只会有一个IDLE优先级的任务执行。
 * Promise不支持跨线程传递。TaskPool返回pending或rejected状态的Promise时会失败，返回fulfilled状态的Promise时TaskPool会解析返回的结果，如果结果可以跨线程传递，则返回成功。
-* 不支持在TaskPool工作线程中使用[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)。
+* 不支持在TaskPool工作线程中使用[AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage)。
 * TaskPool支持在宿主线程封装任务并提交给任务队列，理论上支持的任务数量没有上限。然而，任务的执行效率受限于任务的优先级和系统资源。当工作线程达到最大数量时，任务的执行效率可能会下降。
-* TaskPool不支持指定任务所运行的线程，任务会被分配到空闲的线程中执行。如果需要指定任务所运行的线程，建议使用[Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)。
+* TaskPool不支持指定任务所运行的线程，任务会被分配到空闲的线程中执行。如果需要指定任务所运行的线程，建议使用[Worker](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction)。
 
 ## @Concurrent装饰器
 
@@ -72,7 +72,7 @@ function testArrayBuffer() {
 | 使用场景 | 仅支持在Stage模型的工程中使用。仅支持在.ets文件中使用。 |
 | 装饰的函数类型 | 允许标注为async函数或普通函数。禁止标注为generator、箭头函数、类方法。不支持类成员函数或者匿名函数。 |
 | 装饰的函数内的变量类型 | 允许使用局部变量、入参和通过import引入的变量，禁止使用闭包变量。 |
-| 装饰的函数内的返回值类型 | 支持的类型请查[线程间通信对象概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serializable-overview)。 |
+| 装饰的函数内的返回值类型 | 支持的类型请查[线程间通信对象概述](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/serializable-overview)。 |
 
 由于@Concurrent标记的函数不能访问闭包，因此函数内部不能调用当前文件的其他函数，例如：
 

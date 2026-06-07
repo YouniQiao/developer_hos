@@ -1,6 +1,6 @@
 ---
 title: "CertInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-certinfo-0000002236041510
+original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-certinfo-0000002236041510
 format: md
 ---
 

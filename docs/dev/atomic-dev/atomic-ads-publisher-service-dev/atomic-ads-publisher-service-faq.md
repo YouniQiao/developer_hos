@@ -1,6 +1,6 @@
 ---
 title: "流量变现服务常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-ads-publisher-service-faq
+original_url: /docs/dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-faq
 format: md
 ---
 

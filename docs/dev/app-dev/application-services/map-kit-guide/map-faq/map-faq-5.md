@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "场景化控件的language参数生效范围"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-5
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-5
 format: md
 ---
 

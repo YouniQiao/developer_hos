@@ -1,6 +1,6 @@
 ---
 title: "发票"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-invoice
+original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-invoice
 format: md
 ---
 
@@ -11,7 +11,7 @@ has.chooseInvoiceTitle(Object object)
 
 选择用户的发票抬头。
 
-**需要权限：** 开发前需要配置[Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)和[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)。
+**需要权限：** 开发前需要配置[Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)和[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)。
 
 **起始版本：** 1.0.0
 

@@ -1,6 +1,6 @@
 ---
 title: "使用Text嵌套Span或者使用属性字符串渲染文本，部分文本颜色显示异常"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-387
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-387
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "创建项目和快游戏"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-create-quickgame-0000002317894816
+original_url: /docs/dev/game-dev/games-quickgame-create-quickgame-0000002317894816
 format: md
 ---
 

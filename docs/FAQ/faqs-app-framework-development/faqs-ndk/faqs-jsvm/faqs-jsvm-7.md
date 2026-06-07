@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决应用运行时OH_JSVM_CreateVM多线程创建发生竞争，导致VM内部的成员变量（array_buffer_allocator_）内存异常应用退出问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-7
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-7
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkui-wrap-waterflow-if-else-footer（已下线）"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hp-arkui-wrap-waterflow-if-else-footer
+original_url: /docs/tools/coding-debug/ide-hp-arkui-wrap-waterflow-if-else-footer
 format: md
 ---
 

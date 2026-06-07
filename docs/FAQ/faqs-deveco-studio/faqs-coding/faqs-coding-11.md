@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何过滤编辑器对超大文件的扫描"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-11
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-11
 ---
 
 

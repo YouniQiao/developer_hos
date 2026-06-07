@@ -1,6 +1,6 @@
 ---
 title: "绑定手势事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-bind-gesture-events
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-bind-gesture-events
 format: md
 ---
 

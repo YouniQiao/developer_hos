@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native侧如何打印char指针"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-47
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-47
 ---
 
 

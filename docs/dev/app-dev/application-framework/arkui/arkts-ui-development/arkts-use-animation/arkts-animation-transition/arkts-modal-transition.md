@@ -1,6 +1,6 @@
 ---
 title: "模态转场"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-transition
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-modal-transition
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 | [bindMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindmenu11) | 弹出菜单，点击组件后弹出。 | 需要Menu菜单的场景，如一般应用的“+”号键。 |
 | [bindContextMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12) | 弹出菜单，长按或者右键点击后弹出。 | 长按浮起效果，一般结合拖拽框架使用，如桌面图标长按浮起。 |
 | [bindPopup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup#bindpopup) | 弹出Popup弹框。 | Popup弹框场景，如点击后对某个组件进行临时说明。 |
-| [if](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse) | 通过if新增或删除组件。 | 用来在某个状态下临时显示一个界面，这种方式的返回导航需要由开发者监听接口实现。 |
+| [if](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse) | 通过if新增或删除组件。 | 用来在某个状态下临时显示一个界面，这种方式的返回导航需要由开发者监听接口实现。 |
 
 ## 使用bindContentCover构建全屏模态转场效果
 

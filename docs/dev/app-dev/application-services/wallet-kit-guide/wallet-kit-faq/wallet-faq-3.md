@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如果用户没有登录华为账号，添加卡券时如何处理？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-3
+original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq/wallet-faq-3
 format: md
 ---
 

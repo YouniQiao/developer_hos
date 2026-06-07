@@ -1,7 +1,7 @@
 ---
 title: 概述
 sidebar_label: 概述
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-overview-0000001795410269
+original_url: /docs/design/hmi/overview
 format: md
 ---
 

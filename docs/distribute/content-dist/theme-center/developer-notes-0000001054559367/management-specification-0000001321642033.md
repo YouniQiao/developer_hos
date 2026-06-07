@@ -1,7 +1,7 @@
 ---
 title: "开发者管理规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/management-specification-0000001321642033
+original_url: /docs/distribute/content-dist/theme-center/developer-notes-0000001054559367/management-specification-0000001321642033
 ---
 
 # 开发者管理规范
@@ -67,7 +67,7 @@ import MergeTable from '@site/src/components/MergeTable';
 ## 2. 开发者账号资源上新权限控制规则
 
 1. 开发者账号资源类型分为：基础资源、主题资源、表盘资源、字体资源。
-2. 开发者账号资源类型控制权限（[权限对应能力详情](https://developer.huawei.com/consumer/cn/doc/content/settlement-guidance-0000001056348857#section122092278315)）包含：上新权限和历史资源更新权限。
+2. 开发者账号资源类型控制权限（[权限对应能力详情](/docs/distribute/content-dist/theme-center/beginner-guide-0000001054200638/settlement-guidance-0000001056348857#section122092278315)）包含：上新权限和历史资源更新权限。
 3. 此规范对权限的冻结和回收仅针对上新权限 。
 4. 当开发者账号不具备任何资源类型上新权限≥3个月，隐藏/下架该账号下所有资源，隐藏/下架所有资源当月及以后的结算单不再予以结算；若开发者后续重新申请获得权限可以更新存量资源取消隐藏，自重新获取权限当月及以后的结算单开始进行结算。
 

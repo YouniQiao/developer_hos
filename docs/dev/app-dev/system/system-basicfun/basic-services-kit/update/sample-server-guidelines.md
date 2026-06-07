@@ -1,6 +1,6 @@
 ---
 title: "示例服务器开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sample-server-guidelines
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/update/sample-server-guidelines
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Navigation动画常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-animation-faq
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-navigation-animation-faq
 format: md
 ---
 
@@ -139,7 +139,7 @@ this.stack.pushPath({ name: 'animation-BasicNavDestination' }, { launchMode: Lau
 
 ## 跳转动画是否有结束回调
 
-当前系统动画并没有提供动画结束回调，仅自定义转场动画提供了结束回调，需要自行实现[自定义转场动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-animation#自定义转场)，相关接口：[NavDestinationTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination#navdestinationtransition15)、 [NavigationAnimatedTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationanimatedtransition11)。
+当前系统动画并没有提供动画结束回调，仅自定义转场动画提供了结束回调，需要自行实现[自定义转场动画](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-animation#自定义转场)，相关接口：[NavDestinationTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination#navdestinationtransition15)、 [NavigationAnimatedTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navigationanimatedtransition11)。
 
 ## 如何实现Navigation和NavDestination之间的共享元素转场
 
@@ -147,11 +147,11 @@ this.stack.pushPath({ name: 'animation-BasicNavDestination' }, { launchMode: Lau
 
 NavDestination的共享元素转场需要配合[geometryTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-geometrytransition)接口实现，并且：
 
-* 需要[关闭转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-animation)。
+* 需要[关闭转场](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-animation)。
 * 跳转接口需要在[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#animateto)动画闭包内执行。
 * 给内容组件设置[geometryTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-geometrytransition)属性，不要设置到NavDestination上。
 
-示例请参考：[共享元素转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-animation#共享元素转场)。
+示例请参考：[共享元素转场](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-animation#共享元素转场)。
 
 ## 给NavDestination设置zIndex后跳转动画异常
 

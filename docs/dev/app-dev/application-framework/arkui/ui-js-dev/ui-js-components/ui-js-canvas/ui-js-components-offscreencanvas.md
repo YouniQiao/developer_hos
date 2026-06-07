@@ -1,6 +1,6 @@
 ---
 title: "OffscreenCanvasRenderingContext2D对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-offscreencanvas
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-canvas/ui-js-components-offscreencanvas
 format: md
 ---
 

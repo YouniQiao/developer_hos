@@ -1,6 +1,6 @@
 ---
 title: "应用UI进程空跑问题分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-skip-analysis
+original_url: /docs/quality/ui-skip-analysis
 format: md
 ---
 
@@ -181,10 +181,10 @@ export struct MyAnimatorTest {
 
 ### DisplaySync
 
-DisplaySync支持开发者以[指定帧率运行UI业务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-ui)，主要用于精细控制绘制帧率的场景，如动态帧率动画、为特定UI组件设置独立于系统刷新率的绘制帧率等。
+DisplaySync支持开发者以[指定帧率运行UI业务](/docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-ui)，主要用于精细控制绘制帧率的场景，如动态帧率动画、为特定UI组件设置独立于系统刷新率的绘制帧率等。
 
 推荐的优化措施：
 
 1. 若开发者希望注册监听窗口帧率变化用于分析UI卡顿、丢帧、FPS监控等场景，建议通过接入ohos.window提供的[frameMetricsMeasured](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onframemetricsmeasured22)接口，该接口仅在客户端UI内容发生重绘时（如页面切换、与可响应组件交互、设置背景色和透明度等）触发注册的回调。
 
-2. 在使用DisplaySync实现自定义动画、独立的UI绘制控制等场景时，需做好生命周期管理，具体优化方案参照[displaySync优化案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-vsync-power-optimization)。
+2. 在使用DisplaySync实现自定义动画、独立的UI绘制控制等场景时，需做好生命周期管理，具体优化方案参照[displaySync优化案例](/docs/quality/vsync-power-optimization)。

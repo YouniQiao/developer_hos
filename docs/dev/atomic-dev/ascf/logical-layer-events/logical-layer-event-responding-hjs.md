@@ -1,6 +1,6 @@
 ---
 title: "使用hjs函数响应事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-event-responding-hjs
+original_url: /docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-responding-hjs
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
 绑定的 hjs 函数必须用&#123;&#123;&#125;&#125;括起来。
 
-test.hjs文件实现 handleTap 函数。请参照“[调试运行ASCF源代码](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/debug-ascf-code#调试运行ascf源代码)”章节查看打印结果。
+test.hjs文件实现 handleTap 函数。请参照“[调试运行ASCF源代码](/docs/dev/atomic-dev/ascf/ascf-development-process/debug-ascf-code#调试运行ascf源代码)”章节查看打印结果。
 
 ```
 var handleTap = function(event, ownerInstance) {
@@ -31,4 +31,4 @@ module.exports = {
 };
 ```
 
-ComponentDescriptor 对象拥有一些方法，可以设置组件的样式等，更多详细内容参见[hjs响应事件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/hjs-responding-event)。
+ComponentDescriptor 对象拥有一些方法，可以设置组件的样式等，更多详细内容参见[hjs响应事件](/docs/dev/atomic-dev/ascf/hjs/hjs-responding-event)。

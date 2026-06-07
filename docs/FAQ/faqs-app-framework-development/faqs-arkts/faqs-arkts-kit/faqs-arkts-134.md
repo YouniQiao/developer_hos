@@ -1,7 +1,7 @@
 ---
 format: md
 title: "对于@ohos.net.http模块是否需要使用TaskPool处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-134
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-134
 ---
 
 

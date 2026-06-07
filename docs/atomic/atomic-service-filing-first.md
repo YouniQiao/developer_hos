@@ -1,6 +1,6 @@
 ---
 title: "首次核准（备案）"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-first
+original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-first
 format: md
 ---
 
@@ -38,4 +38,4 @@ format: md
 7. 华为工作人员将在3~5个工作日内进行审核，将以短信或邮件形式通知审核结果，请耐心等待，且保持手机畅通。若需要修改核准（备案）信息，将以邮件形式通知。
 
    ![](./img/720b9b9f.png "点击放大")
-8. 华为平台人工初审通过后，请前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-sms)。若初审被驳回，请点击“继续核准（备案）”修改信息后重新提交审核。
+8. 华为平台人工初审通过后，请前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-sms)。若初审被驳回，请点击“继续核准（备案）”修改信息后重新提交审核。

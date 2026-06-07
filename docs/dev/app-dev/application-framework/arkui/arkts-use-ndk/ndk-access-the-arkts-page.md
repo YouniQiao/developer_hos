@@ -1,6 +1,6 @@
 ---
 title: "接入ArkTS页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page
 format: md
 ---
 

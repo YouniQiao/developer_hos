@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何去除tabbar滑动到边缘时的蒙层效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-134
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-134
 ---
 
 

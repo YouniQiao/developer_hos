@@ -1,7 +1,7 @@
 ---
 format: md
 title: "原有工程使用新的DevEco Studio版本打开，运行测试用例失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-6
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-6
 ---
 
 

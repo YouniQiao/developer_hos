@@ -1,7 +1,7 @@
 ---
 title: "回复模板配置"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/reply-template-configuration-0000002471344213
+original_url: /docs/distribute/xiaoyi/development-card-0000002435989672/reply-template-configuration-0000002471344213
 format: md
 ---
 

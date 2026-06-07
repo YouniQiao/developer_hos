@@ -1,6 +1,6 @@
 ---
 title: "卡片传递消息给应用（message事件）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-formextensionability
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-formextensionability
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 本文主要介绍动态卡片的事件开发。对于静态卡片，请参见[FormLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-formlink)。
 
-* 在卡片页面通过注册Button的onClick点击事件回调，并在回调中调用postCardAction接口触发message事件拉起FormExtensionAbility。卡片页面中使用[LocalStorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorageprop)装饰需要刷新的卡片数据。
+* 在卡片页面通过注册Button的onClick点击事件回调，并在回调中调用postCardAction接口触发message事件拉起FormExtensionAbility。卡片页面中使用[LocalStorageProp](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage#localstorageprop)装饰需要刷新的卡片数据。
 
   ```
   // entry/src/main/ets/updatebymessage/pages/UpdateByMessageCard.ets

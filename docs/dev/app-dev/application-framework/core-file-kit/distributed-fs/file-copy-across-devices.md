@@ -1,6 +1,6 @@
 ---
 title: "跨设备文件拷贝"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-copy-across-devices
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/distributed-fs/file-copy-across-devices
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
    将需要跨设备访问的两个设备登录同一账号，保证设备蓝牙和Wi-Fi功能开启，蓝牙无需互连，Wi-Fi无需接入同一个局域网。
 2. 授权分布式数据同步权限。
 
-   分布式数据同步权限的授权方式为user\_grant，因此需要调用requestPermissionsFromUser接口，以动态弹窗的方式向用户申请授权。示例中的context的获取方式请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+   分布式数据同步权限的授权方式为user\_grant，因此需要调用requestPermissionsFromUser接口，以动态弹窗的方式向用户申请授权。示例中的context的获取方式请参见[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
    ```
    import { common, abilityAccessCtrl } from '@kit.AbilityKit';

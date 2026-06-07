@@ -1,6 +1,6 @@
 ---
 title: "模拟器运行问题处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-runtime-emulator
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-emulator
 format: md
 ---
 
@@ -27,7 +27,7 @@ error: Failed to install the HAP or HSP because the dependent module does not ex
 
 1. 获取模拟器ASCF运行时的版本号。
 
-   hdc环境配置请参考[可选命令行直接执行hdc程序](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#可选命令行直接执行hdc程序)，使用如下命令读取版本号：
+   hdc环境配置请参考[可选命令行直接执行hdc程序](/docs/dev/app-dev/system/hdc#可选命令行直接执行hdc程序)，使用如下命令读取版本号：
 
    ```
    hdc shell bm dump-shared -n com.huawei.hms.ascfruntime

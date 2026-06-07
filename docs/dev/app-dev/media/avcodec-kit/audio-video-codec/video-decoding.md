@@ -1,18 +1,18 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "视频解码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding
 format: md
 ---
 
 
 视频解码是多媒体处理的核心环节，功能是将压缩的视频码流解码为原始像素数据。视频解码支持同步模式与异步模式两种运行机制，两者主要区别为buffer获取方式的同异步之分，开发者可根据自身业务选择适合的接口调用模式。
 
-本文档主要介绍异步模式视频解码的实现流程，同步模式视频解码请参考[视频解码同步模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-video-decoding)。根据解码后数据处理方式的不同，视频解码支持Surface模式和Buffer模式两种输出模式，适用于不同的应用场景。
+本文档主要介绍异步模式视频解码的实现流程，同步模式视频解码请参考[视频解码同步模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-video-decoding)。根据解码后数据处理方式的不同，视频解码支持Surface模式和Buffer模式两种输出模式，适用于不同的应用场景。
 
 * Surface模式。
 
-  解码后的图像帧通过[NativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-nativewindow)来传递输出数据，可以与其他模块对接（如显示模块[自定义渲染(XComponent)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-xcomponent-guidelines)）。适用于视频播放、实时预览等需要将画面渲染到屏幕的解码场景。
+  解码后的图像帧通过[NativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow-nativewindow)来传递输出数据，可以与其他模块对接（如显示模块[自定义渲染(XComponent)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/napi-xcomponent-guidelines)）。适用于视频播放、实时预览等需要将画面渲染到屏幕的解码场景。
 * Buffer模式。
 
   解码后的原始YUV数据通过共享内存输出，开发者可直接访问和处理每一帧图像数据。适用于视频编辑、YUV原始数据保存等需要获取并处理原始数据的解码场景。
@@ -23,7 +23,7 @@ format: md
 | 输出处理 | 不送显：调用OH\_VideoDecoder\_FreeOutputBuffer接口丢弃解码帧。  送显：调用OH\_VideoDecoder\_RenderOutputBuffer接口显示并释放解码帧，或调用OH\_VideoDecoder\_RenderOutputBufferAtTime接口在指定时间点显示并释放解码帧。如需实现音画同步或者控制显示速度，建议优先调用OH\_VideoDecoder\_RenderOutputBufferAtTime接口送显。 | 输出数据处理后，必须调用OH\_VideoDecoder\_FreeOutputBuffer接口释放数据。 |
 | 回调数据 | 在Surface模式下，只能获取到输出回调buffer的数据信息。 | 在Buffer模式下，可以获取到输出回调buffer的共享内存的地址和数据信息。 |
 
-AVCodec支持的视频解码格式请参考[视频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#视频解码)。
+AVCodec支持的视频解码格式请参考[视频解码](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#视频解码)。
 
 具体实现可参考[示例工程](https://gitcode.com/openharmony/applications_app_samples/tree/master/code/BasicFeature/Media/AVCodec)。
 
@@ -281,7 +281,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    1. 在回调函数中，对数据队列进行操作时，需要注意多线程同步的问题。
    2. 播放视频时，若视频码流的SPS（Sequence Parameter Set）中包含颜色信息（如RangeFlag、ColorPrimary、MatrixCoefficient、TransferCharacteristic），解码器会把这些信息通过OH\_AVCodecOnStreamChanged接口中的OH\_AVFormat返回。
    3. 视频解码的Surface模式下，内部数据默认是走HEBC（High Efficiency Bandwidth Compression，高效带宽压缩），无法获取到widthStride和heightStride的值。
-4. （可选）OH\_VideoDecoder\_SetDecryptionConfig设置解密配置。在获取到DRM信息（参考[音视频解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)开发步骤第4步），完成DRM许可证申请后，通过此接口进行解密配置。此接口需在Prepare前调用。在Surface模式下，DRM解密能力既支持安全视频通路，也支持非安全视频通路。DRM相关接口详见[DRM API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm)。
+4. （可选）OH\_VideoDecoder\_SetDecryptionConfig设置解密配置。在获取到DRM信息（参考[音视频解封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)开发步骤第4步），完成DRM许可证申请后，通过此接口进行解密配置。此接口需在Prepare前调用。在Surface模式下，DRM解密能力既支持安全视频通路，也支持非安全视频通路。DRM相关接口详见[DRM API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm)。
 
    添加头文件。
 
@@ -374,7 +374,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
 
    参数校验规则请参考[OH\_VideoDecoder\_Configure() 参考文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videodecoder-h#oh_videodecoder_configure)。
 
-   参数取值范围可以通过能力查询接口获取，具体示例请参考[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)。
+   参数取值范围可以通过能力查询接口获取，具体示例请参考[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)。
 
    目前支持的所有格式都必须配置以下选项：视频帧宽度、视频帧高度。
 
@@ -414,7 +414,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    target_link_libraries(sample PUBLIC libnative_window.so)
    ```
 
-   6.1.1 在ArkTS侧，通过xComponentController组件的getXComponentSurfaceId接口获取XComponent对应的surface的ID。详情请参考[自定义渲染 (XComponent)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-xcomponent-guidelines)。
+   6.1.1 在ArkTS侧，通过xComponentController组件的getXComponentSurfaceId接口获取XComponent对应的surface的ID。详情请参考[自定义渲染 (XComponent)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/napi-xcomponent-guidelines)。
 
    6.1.2 在Native侧，调用OH\_NativeWindow\_CreateNativeWindowFromSurfaceId接口创建出NativeWindow实例。
 
@@ -424,7 +424,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    OH_NativeWindow_CreateNativeWindowFromSurfaceId(surfaceId, &nativeWindow);
    ```
 
-   6.2 如果解码后接OpenGL后处理，则从NativeImage获取，获取方式请参考 [NativeImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-image-guidelines)。
+   6.2 如果解码后接OpenGL后处理，则从NativeImage获取，获取方式请参考 [NativeImage](/docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-image-guidelines)。
 
    Surface模式，开发者可以在解码过程中执行该步骤，即动态切换surface。
 
@@ -446,7 +446,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    可以采用以下方案进行更改：
 
    1. 等1号解码器完全释放后，再调用OH\_VideoDecoder\_Start接口启动2号解码器。
-   2. 1号解码器用surface1，2号解码器先调用OH\_ConsumerSurface\_Create接口创建临时surface，等1号解码器释放后，再调用OH\_VideoDecoder\_SetSurface接口将2号解码器绑定至surface1上，详情请参见：[创建视频解码器和NativeWindow初始化并行](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/parallel-decoding-nativewindow)。
+   2. 1号解码器用surface1，2号解码器先调用OH\_ConsumerSurface\_Create接口创建临时surface，等1号解码器释放后，再调用OH\_VideoDecoder\_SetSurface接口将2号解码器绑定至surface1上，详情请参见：[创建视频解码器和NativeWindow初始化并行](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/parallel-decoding-nativewindow)。
 7. 调用OH\_VideoDecoder\_Prepare()解码器就绪。
 
    该接口将在解码器运行前进行一些数据的准备工作。
@@ -484,7 +484,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    ```
 10. （可选）调用OH\_AVCencInfo\_SetAVBuffer()，设置cencInfo。
 
-    若当前播放的节目是DRM加密节目，应用自行实现媒体解封装功能而非使用系统[解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)功能时，需调用OH\_AVCencInfo\_SetAVBuffer()将cencInfo设置到AVBuffer，这样AVBuffer携带待解密的数据以及cencInfo，以实现AVBuffer中媒体数据的解密。当应用使用系统[解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)功能时，则无需调用此接口。
+    若当前播放的节目是DRM加密节目，应用自行实现媒体解封装功能而非使用系统[解封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)功能时，需调用OH\_AVCencInfo\_SetAVBuffer()将cencInfo设置到AVBuffer，这样AVBuffer携带待解密的数据以及cencInfo，以实现AVBuffer中媒体数据的解密。当应用使用系统[解封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)功能时，则无需调用此接口。
 
     添加头文件。
 
@@ -557,7 +557,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
 
     送入输入队列进行解码，以下示例中：
 
-    * size、offset、pts、frameData：输入尺寸、偏移量、时间戳、帧数据等字段信息，获取方式可以参考[音视频解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)“步骤-9：开始解封装，循环获取sample”。
+    * size、offset、pts、frameData：输入尺寸、偏移量、时间戳、帧数据等字段信息，获取方式可以参考[音视频解封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)“步骤-9：开始解封装，循环获取sample”。
     * flags：缓冲区标记的类别，请参考[OH\_AVCodecBufferFlags](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avbuffer-info-h#oh_avcodecbufferflags)。
 
     bufferInfo的成员变量：
@@ -653,7 +653,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
 
     以下示例中：
 
-    * xpsData、xpsSize：PPS/SPS信息，获取方式可以参考[音视频解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)。
+    * xpsData、xpsSize：PPS/SPS信息，获取方式可以参考[音视频解封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)。
 
     ```
     std::unique_lock<std::shared_mutex> lock(codecMutex);
@@ -902,7 +902,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    ![](./img/12c06dbc.png)
 
    在回调函数中，对数据队列进行操作时，需要注意多线程同步的问题。
-4. （可选）OH\_VideoDecoder\_SetDecryptionConfig设置解密配置。在获取到DRM信息（参考[音视频解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)开发步骤第4步），完成DRM许可证申请后，通过此接口进行解密配置。此接口需在Prepare前调用。在Buffer模式下，DRM解密能力仅支持非安全视频通路。DRM相关接口详见[DRM API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm)。
+4. （可选）OH\_VideoDecoder\_SetDecryptionConfig设置解密配置。在获取到DRM信息（参考[音视频解封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)开发步骤第4步），完成DRM许可证申请后，通过此接口进行解密配置。此接口需在Prepare前调用。在Buffer模式下，DRM解密能力仅支持非安全视频通路。DRM相关接口详见[DRM API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm)。
 
    添加头文件。
 

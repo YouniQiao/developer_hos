@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何设置自定义弹窗位置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-81
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-81
 ---
 
 

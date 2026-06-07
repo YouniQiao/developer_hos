@@ -1,6 +1,6 @@
 ---
 title: "Disassembler反汇编工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/tool-disassembler
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/tool-disassembler
 format: md
 ---
 

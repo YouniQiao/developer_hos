@@ -1,7 +1,7 @@
 ---
 format: md
 title: "分布式对象必须将默认对象的每个属性值初始化为undefined，以防止数据倒灌"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-26
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-26
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "拦截器：更丰富、更高阶的定制能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-interceptconfig
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-interceptconfig
 format: md
 ---
 

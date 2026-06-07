@@ -1,10 +1,10 @@
 ---
 title: "语言与用户偏好"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-language-user-preferences
+original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences
 format: md
 ---
 
 
-* **[系统语言与区域](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-system-language-region)**
-* **[应用偏好语言](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-preferred-language)**
-* **[用户偏好](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-user-preferences)**
+* **[系统语言与区域](/docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-system-language-region)**
+* **[应用偏好语言](/docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-preferred-language)**
+* **[用户偏好](/docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-user-preferences)**

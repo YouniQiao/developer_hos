@@ -1,7 +1,7 @@
 ---
 title: "@correctness/audio-interrupt-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-audio-interrupt-check
+original_url: /docs/tools/coding-debug/ide-audio-interrupt-check
 format: md
 ---
 

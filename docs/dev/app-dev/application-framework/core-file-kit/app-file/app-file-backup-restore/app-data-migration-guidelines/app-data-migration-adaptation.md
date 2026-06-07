@@ -1,6 +1,6 @@
 ---
 title: "应用数据迁移适配指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-adaptation
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-adaptation
 format: md
 ---
 
@@ -109,7 +109,7 @@ format: md
 
 **extensionAbilities需要配置在entry内的module.json5才能正常访问。**
 
-以下步骤以空工程为例，介绍如何配置[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)文件：
+以下步骤以空工程为例，介绍如何配置[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)文件：
 
 1. 开发者需要在entry内的module.json5里面进行注册,参考示例代码实现元数据资源文件配置。
 

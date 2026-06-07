@@ -1,7 +1,7 @@
 ---
 format: md
 title: "DevEco Studio设置新建ets文件时自动添加头部注释和版权声明的方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-8
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-8
 ---
 
 

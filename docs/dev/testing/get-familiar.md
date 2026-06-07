@@ -1,6 +1,6 @@
 ---
 title: "快速上手"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-familiar
+original_url: /docs/dev/testing/get-familiar
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "使用Laya引擎概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-introduction-0000002290745125
+original_url: /docs/dev/game-dev/games-laya-introduction-0000002290745125
 format: md
 ---
 
@@ -26,8 +26,8 @@ Laya游戏适配HarmonyOS 5.0及以上系统的流程如下：
 
 | 序号 | 操作 | 说明 |
 | --- | --- | --- |
-| 1 | [适配准备](https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-preparation-0000002290574301) | 为了顺利适配HarmonyOS 5.0及以上系统，您需提前做好一些准备工作。 |
-| 2 | [游戏适配](https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-works-0000002348716069) | 包括游戏代码适配、系统能力适配在内的适配工作。 |
-| 3 | [三方库适配](https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-adapt-third-library-0000002255894096) | 将游戏内的三方库针对HarmonyOS 5.0及以上系统进行编译。 |
-| 4 | [构建发布工程](https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-release-0000002290574305) | 在Laya引擎中构建出游戏的HarmonyOS 5.0及以上工程。 |
-| 5 | [运行调试](https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-run-0000002290527397) | 运行并调试游戏的功能和性能，并前往AppGallery Connect提交上架申请。 |
+| 1 | [适配准备](/docs/dev/game-dev/games-laya-preparation-0000002290574301) | 为了顺利适配HarmonyOS 5.0及以上系统，您需提前做好一些准备工作。 |
+| 2 | [游戏适配](/docs/dev/game-dev/games-laya-works-0000002348716069) | 包括游戏代码适配、系统能力适配在内的适配工作。 |
+| 3 | [三方库适配](/docs/dev/game-dev/games-laya-adapt-third-library-0000002255894096) | 将游戏内的三方库针对HarmonyOS 5.0及以上系统进行编译。 |
+| 4 | [构建发布工程](/docs/dev/game-dev/games-laya-release-0000002290574305) | 在Laya引擎中构建出游戏的HarmonyOS 5.0及以上工程。 |
+| 5 | [运行调试](/docs/dev/game-dev/games-laya-run-0000002290527397) | 运行并调试游戏的功能和性能，并前往AppGallery Connect提交上架申请。 |

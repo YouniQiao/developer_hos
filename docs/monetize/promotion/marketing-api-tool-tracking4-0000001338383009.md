@@ -1,7 +1,7 @@
 ---
 title: "查询分析工具关联关系"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking4-0000001338383009
+original_url: /docs/monetize/promotion/marketing-api-tool-tracking4-0000001338383009
 format: md
 ---
 
@@ -35,7 +35,7 @@ format: md
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | tracking\_url\_id | string | 是 | 分析工具关联关系Id。 |
   | app\_id | string | 否 | 推广应用Id（华为应用市场应用Id，大写的C开头），与package\_name二选一；  可以使用推广应用响应中的app\_id填写。 |
-  | provider\_id | long | 否 | 工具提供商Id，通过[查询分析工具提供商](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking2-0000001286343126)接口获取。 |
+  | provider\_id | long | 否 | 工具提供商Id，通过[查询分析工具提供商](/docs/monetize/promotion/marketing-api-tool-tracking2-0000001286343126)接口获取。 |
   | provider\_name | string | 否 | 工具提供商名称。 |
 
   - <strong>请求示例</strong>
@@ -85,7 +85,7 @@ format: md
     | tracking\_url\_id | string | 分析工具关联关系Id。 |
     | provider\_id | long | 工具提供商Id。 |
     | provider\_name | string | 工具提供商名称。 |
-    | product\_type | string | 推广产品，详见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)定义。 |
+    | product\_type | string | 推广产品，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)定义。 |
     | product\_name | string | 产品名称。 |
     | product\_unique\_flag | string | 产品标识，应用类型为App时该字段为应用包名。 |
     | app\_id | string | 华为应用市场App ID，应用类型为App时该字段填写。 |

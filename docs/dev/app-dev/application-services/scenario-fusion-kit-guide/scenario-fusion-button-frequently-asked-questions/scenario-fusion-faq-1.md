@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "单击快速验证手机号按钮，无法拉起页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-1
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions/scenario-fusion-faq-1
 format: md
 ---
 
@@ -16,4 +16,4 @@ login fail, error: {"code":1001502014,"message":"The app does not have the requi
 
 **解决措施**
 
-未申请Scope权限，请参考[申请账号权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions)文档进行操作。
+未申请Scope权限，请参考[申请账号权限](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-config-permissions)文档进行操作。

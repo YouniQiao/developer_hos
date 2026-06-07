@@ -1,6 +1,6 @@
 ---
 title: "为什么一笔成形识别不出来？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-8
+original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-8
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "平面识别介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-plane-conversion
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-plane/arengine-get-plane-conversion
 format: md
 ---
 

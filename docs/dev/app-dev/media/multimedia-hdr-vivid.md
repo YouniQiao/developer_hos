@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用HDR Vivid特性开发媒体应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimedia-hdr-vivid
+original_url: /docs/dev/app-dev/media/multimedia-hdr-vivid
 format: md
 ---
 
@@ -14,12 +14,12 @@ format: md
 
 | 类别 | 开发指导 | 提供能力的Kit |
 | --- | --- | --- |
-| 采集 | [HDR Vivid相机录像](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-hdr-recording) | Camera Kit |
-| 编码 | [HDR Vivid视频录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-recorder) | AVCodec Kit |
-| 解码 | [HDR Vivid视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-player) | AVCodec Kit |
-| 转换 | [视频解码支持HDRVivid2SDR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdrvivid2sdr) | AVCodec Kit |
-| 转换 | [HDR Vivid视频动态元数据生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/generate-video-dynamic-metadata) | Media Kit |
-| 转换 | [HDR视频色彩空间转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-csc) | Media Kit |
+| 采集 | [HDR Vivid相机录像](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-hdr-recording) | Camera Kit |
+| 编码 | [HDR Vivid视频录制](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-recorder) | AVCodec Kit |
+| 解码 | [HDR Vivid视频播放](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-player) | AVCodec Kit |
+| 转换 | [视频解码支持HDRVivid2SDR](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdrvivid2sdr) | AVCodec Kit |
+| 转换 | [HDR Vivid视频动态元数据生成](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/generate-video-dynamic-metadata) | Media Kit |
+| 转换 | [HDR视频色彩空间转换](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/video-csc) | Media Kit |
 
 ## HDR Vivid图片
 
@@ -27,10 +27,10 @@ format: md
 
 | 类别 | 开发指导 | 提供能力的Kit |
 | --- | --- | --- |
-| 采集 | [HDR Vivid相机拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-hdr-shooting) | Camera Kit |
-| 编码 | [HDR Vivid图片编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-packer-c) | Image Kit |
-| 解码 | [HDR Vivid图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-source-c) | Image Kit |
-| 转换 | [HDR图片动态元数据生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-dynamic-metadata-generation) | Image Kit |
-| 转换 | [HDR图片色彩空间转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-csc) | Image Kit |
-| 转换 | [单层HDR图片转换双层](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-single-to-dual) | Image Kit |
-| 转换 | [双层HDR图片转换单层](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-dual-to-single) | Image Kit |
+| 采集 | [HDR Vivid相机拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-hdr-shooting) | Camera Kit |
+| 编码 | [HDR Vivid图片编码](/docs/dev/app-dev/media/image-kit/image-native/image-encoding-c/image-packer-c) | Image Kit |
+| 解码 | [HDR Vivid图片解码](/docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-c) | Image Kit |
+| 转换 | [HDR图片动态元数据生成](/docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/image-dynamic-metadata-generation) | Image Kit |
+| 转换 | [HDR图片色彩空间转换](/docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/image-csc) | Image Kit |
+| 转换 | [单层HDR图片转换双层](/docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/hdr-single-to-dual) | Image Kit |
+| 转换 | [双层HDR图片转换单层](/docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/hdr-dual-to-single) | Image Kit |

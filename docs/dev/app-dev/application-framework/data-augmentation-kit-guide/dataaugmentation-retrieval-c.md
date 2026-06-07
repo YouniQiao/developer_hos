@@ -1,6 +1,6 @@
 ---
 title: "智慧化数据检索-C++"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-retrieval-c
+original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-retrieval-c
 format: md
 ---
 

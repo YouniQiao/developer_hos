@@ -1,7 +1,7 @@
 ---
 title: "@security/no-unsafe-rsa-encrypt"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-unsafe-rsa-encrypt
+original_url: /docs/tools/coding-debug/ide_no-unsafe-rsa-encrypt
 format: md
 ---
 

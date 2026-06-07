@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rtm-overview-0000002338719289
+original_url: /docs/dev/game-dev/games-gamemme-rtm-overview-0000002338719289
 format: md
 ---
 

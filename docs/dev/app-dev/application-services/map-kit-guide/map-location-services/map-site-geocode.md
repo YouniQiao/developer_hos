@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "地理编码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-site-geocode
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-location-services/map-site-geocode
 format: md
 ---
 

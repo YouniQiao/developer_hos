@@ -1,6 +1,6 @@
 ---
 title: "上架审核"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-release-review-0000002425133934
+original_url: /docs/dev/game-dev/games-quickgame-faq-release-review-0000002425133934
 format: md
 ---
 
@@ -105,7 +105,7 @@ format: md
 
 ### 快游戏驳回原因为：游戏内含有观看视频广告控件，但是游戏实际没有广告，如何处理？
 
-可能游戏未正确配置广告，请删除或者正确接入华为广告服务。激励视频广告请参见“[接入广告服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-ad-kit-0000002351933661)”。
+可能游戏未正确配置广告，请删除或者正确接入华为广告服务。激励视频广告请参见“[接入广告服务](/docs/dev/game-dev/games-quickgame-runtime-ad-kit-0000002351933661)”。
 
 ### 快游戏驳回原因为：存在风险广告插件，如何处理？
 
@@ -117,7 +117,7 @@ format: md
 
 ### 快游戏驳回原因为：游戏经检测含有第三方弹窗广告，如何处理？
 
-请删除第三方广告信息，如需接入华为广告服务，请参见“[接入广告服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-ad-kit-0000002351933661)”。
+请删除第三方广告信息，如需接入华为广告服务，请参见“[接入广告服务](/docs/dev/game-dev/games-quickgame-runtime-ad-kit-0000002351933661)”。
 
 ### 快游戏驳回原因为：游戏在未登录华为账号的手机上，弹出登录界面，点击返回，反复拉起华为账号登录界面，用户无法正常退出，如何处理？
 

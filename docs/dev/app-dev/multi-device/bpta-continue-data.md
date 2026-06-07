@@ -1,7 +1,7 @@
 ---
 title: "应用接续数据迁移"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-data
+original_url: /docs/dev/app-dev/multi-device/bpta-continue-data
 format: md
 ---
 
@@ -20,11 +20,11 @@ format: md
 
 ![](./img/30918c77.png "点击放大")
 
-实现原理见[运作机制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section1218874218264)。
+实现原理见[运作机制](/docs/dev/app-dev/multi-device/bpta-continue-cast#section1218874218264)。
 
 ## 开发步骤
 
-接入应用接续需要[启用应用接续能力](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section15192222815)、[配置应用启动模式类型](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section10604645308)、[源端保存迁移数据](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section634613594303)和[对端恢复数据](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section12346113618453)，具体开发流程见[应用接续概述](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast)，本文只关注在不同场景下迁移数据方案的选择。
+接入应用接续需要[启用应用接续能力](/docs/dev/app-dev/multi-device/bpta-continue-cast#section15192222815)、[配置应用启动模式类型](/docs/dev/app-dev/multi-device/bpta-continue-cast#section10604645308)、[源端保存迁移数据](/docs/dev/app-dev/multi-device/bpta-continue-cast#section634613594303)和[对端恢复数据](/docs/dev/app-dev/multi-device/bpta-continue-cast#section12346113618453)，具体开发流程见[应用接续概述](/docs/dev/app-dev/multi-device/bpta-continue-cast)，本文只关注在不同场景下迁移数据方案的选择。
 
 ![](./img/e9ab6b4f.png)
 

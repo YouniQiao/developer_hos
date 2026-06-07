@@ -1,6 +1,6 @@
 ---
 title: "错误码"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-errorcode-0000002349175968
+original_url: /docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-errorcode-0000002349175968
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在播控中心显示歌词"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-5
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-5
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[滚动歌词](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#滚动歌词)
+[滚动歌词](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#滚动歌词)

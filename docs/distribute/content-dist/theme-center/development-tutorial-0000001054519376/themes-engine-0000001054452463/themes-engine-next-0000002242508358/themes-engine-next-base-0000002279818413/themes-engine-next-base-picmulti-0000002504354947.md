@@ -1,7 +1,7 @@
 ---
 title: "多语言：图片多语言&lt;PicMultiLanguage&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-picmulti-0000002504354947
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-picmulti-0000002504354947
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "查看测试报告"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-viewreport-0000002255019576
+original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-viewreport-0000002255019576
 format: md
 ---
 

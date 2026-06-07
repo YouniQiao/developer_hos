@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何通过PanGesture手势或者SwipeGesture手势实现自定义组件的惯性滚动效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-33
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-33
 ---
 
 

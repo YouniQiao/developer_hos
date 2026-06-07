@@ -1,6 +1,6 @@
 ---
 title: "UIAbility组件基本用法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage
 format: md
 ---
 

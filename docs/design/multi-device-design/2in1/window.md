@@ -1,7 +1,7 @@
 ---
 title: 窗口框架
 sidebar_label: 窗口框架
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/window-0000002321868010
+original_url: /docs/design/multi-device-design/2in1/window
 format: md
 ---
 
@@ -69,7 +69,7 @@ Large 72vp：应用有需求时，可扩展到最大值
 
 内容区是应用展示信息的空间，应用需重点关注窗口大小改变带来的布局变化，合理利用响应式规则，确保以最佳的布局来显示内容。
 
-应用常见的内容区布局包括通栏、双分栏和三分栏结构。详细的布局适配和响应式规则，请参阅[应用布局](https://developer.huawei.com/consumer/cn/doc/design-guides/app-design-0000002353509845#section195431623181117)。
+应用常见的内容区布局包括通栏、双分栏和三分栏结构。详细的布局适配和响应式规则，请参阅[应用布局](/docs/design/multi-device-design/2in1/app-design#section195431623181117)。
 
 ### 交互规则
 
@@ -92,7 +92,7 @@ Large 72vp：应用有需求时，可扩展到最大值
 
 ## 窗口分屏准入原则
 
-在大屏设备中，用户普遍存在跨应用协同与多任务并行的核心诉求。为此，系统提供了灵活的分屏交互体验。为了确保应用能支持二分屏、三分屏的体验，推荐应用优先采用响应式布局设计（具体可参考 [窗口断点](https://developer.huawei.com/consumer/cn/doc/design-guides/design-layout-basics-0000001795579413#ZH-CN_TOPIC_0000001795579413__p997645619467)），基于系统断点构建能够随容器宽度动态演进的界面逻辑。
+在大屏设备中，用户普遍存在跨应用协同与多任务并行的核心诉求。为此，系统提供了灵活的分屏交互体验。为了确保应用能支持二分屏、三分屏的体验，推荐应用优先采用响应式布局设计（具体可参考 [窗口断点](/docs/design/general-design-basics/layout/layout-basics#ZH-CN_TOPIC_0000001795579413__p997645619467)），基于系统断点构建能够随容器宽度动态演进的界面逻辑。
 
 **窗口二分屏准入原则**
 

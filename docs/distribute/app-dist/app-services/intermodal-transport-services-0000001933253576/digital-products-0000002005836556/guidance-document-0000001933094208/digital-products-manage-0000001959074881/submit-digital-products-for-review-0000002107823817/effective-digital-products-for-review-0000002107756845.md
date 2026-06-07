@@ -1,7 +1,7 @@
 ---
 title: "提交已生效类型的数字商品"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/effective-digital-products-for-review-0000002107756845
+original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/submit-digital-products-for-review-0000002107823817/effective-digital-products-for-review-0000002107756845
 format: md
 ---
 

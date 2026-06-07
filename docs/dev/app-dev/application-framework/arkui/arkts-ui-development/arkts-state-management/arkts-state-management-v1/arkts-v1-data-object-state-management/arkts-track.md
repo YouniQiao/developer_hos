@@ -1,13 +1,13 @@
 ---
 title: "@Track装饰器：class对象属性级更新"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-track
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-data-object-state-management/arkts-track
 format: md
 ---
 
 
 @Track应用于class对象的属性级更新。@Track装饰的属性变化时，只会触发该属性关联的UI更新。
 
-在阅读本文档之前，建议开发者对状态管理基本观察能力有基本的了解。建议提前阅读：[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)。
+在阅读本文档之前，建议开发者对状态管理基本观察能力有基本的了解。建议提前阅读：[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)。
 
 ![](./img/41d692d3.png)
 
@@ -206,7 +206,7 @@ struct AddLog {
 ## 限制条件
 
 * 如果class类中使用了@Track装饰器，那么该class类中非@Track装饰的属性不能在@Component UI中使用，包括不能绑定在组件上、不能用于初始化子组件，错误的使用将导致运行时报错，从API version 23开始，将返回错误码[140110](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statemanagement#section140110-在ui中使用非track装饰的属性发生运行时报错)，详见[在UI中使用非@Track装饰的属性发生运行时报错](#在ui中使用非track装饰的属性发生运行时报错)；可以在非UI中使用非@Track装饰的属性，如事件回调函数中、生命周期函数中等。
-* API version 19及以后，@Track使用在[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)的UI中，不会引起运行时报错，但依旧不会刷新，详见[@Observed+@Track装饰的class（V1->V2）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-mixusage#传递class类型v1-v2)、[@Observed+@Track装饰的class（V2->V1）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-mixusage#传递class类型v2-v1)。
+* API version 19及以后，@Track使用在[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)的UI中，不会引起运行时报错，但依旧不会刷新，详见[@Observed+@Track装饰的class（V1->V2）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/v1v2-mixing/arkts-v1-v2-mixusage#传递class类型v1-v2)、[@Observed+@Track装饰的class（V2->V1）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/v1v2-mixing/arkts-v1-v2-mixusage#传递class类型v2-v1)。
 * 建议开发者不要混用包含@Track的class对象和不包含@Track的class对象，如联合类型中、类继承中等，容易在UI中误用非@Track装饰的属性，导致运行时报错。
 
 ## 使用场景

@@ -1,7 +1,7 @@
 ---
 title: 设计理念
 sidebar_label: 设计理念
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445
+original_url: /docs/design/general-design-basics/design-concepts
 format: md
 ---
 

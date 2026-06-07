@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "来电横幅无法拉起"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-faq-1
+original_url: /docs/dev/app-dev/application-services/call-kit-guide/call-faq/call-faq-1
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 **解决措施**
 
-1. 检查应用是否已开启[通知权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-enable)。
+1. 检查应用是否已开启[通知权限](/docs/dev/app-dev/application-services/notification-kit/notification-enable)。
 2. 检查是否继承UIAbility，调用[pushService.receiveMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicereceivemessage)并在接收后调用上报接口。
 3. 来电信息中获取的callId，上报给通话服务接口的callId，二者应该保持一致。
 4. 检查构造的callInfo信息是否有参数错误，如voipCallState需要是VOIP\_CALL\_STATE\_RINGING。

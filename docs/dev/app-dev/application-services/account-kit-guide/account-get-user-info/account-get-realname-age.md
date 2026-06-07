@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取实名年龄段"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-realname-age
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-realname-age
 format: md
 ---
 
@@ -41,10 +41,10 @@ format: md
 
 ## 开发前提
 
-1、在进行代码开发前，请先确认已完成[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions)工作。
+1、在进行代码开发前，请先确认已完成[开发准备](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-config-permissions)工作。
 
-* 若未配置签名和指纹，将报错[1001500001 应用指纹证书校验失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-1)。
-* 若未完成“获取您的年龄段”权限申请，将报错[1001502014 应用未申请scopes或permissions权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-2)。
+* 若未配置签名和指纹，将报错[1001500001 应用指纹证书校验失败](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-1)。
+* 若未完成“获取您的年龄段”权限申请，将报错[1001502014 应用未申请scopes或permissions权限](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-2)。
 
 2、设备需要登录华为账号，若未登录则拉起登录页面。
 

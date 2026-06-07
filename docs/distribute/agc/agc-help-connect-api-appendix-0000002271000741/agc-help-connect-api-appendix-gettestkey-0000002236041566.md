@@ -1,6 +1,6 @@
 ---
 title: "获取验签公钥"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-gettestkey-0000002236041566
+original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-gettestkey-0000002236041566
 format: md
 ---
 

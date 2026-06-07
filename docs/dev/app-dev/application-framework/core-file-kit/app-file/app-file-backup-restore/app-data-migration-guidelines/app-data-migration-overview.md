@@ -1,6 +1,6 @@
 ---
 title: "应用数据迁移功能介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-overview
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-overview
 format: md
 ---
 
@@ -41,6 +41,6 @@ format: md
 
 ### 公共媒体库中数据迁移机制
 
-公共媒体库中的数据，在终端设备从HarmonyOS升级到HarmonyOS NEXT后，会整体搬迁直接继承。应用可以使用HarmonyOS NEXT提供的API，访问公共媒体库中的数据。媒体库的使用指导可以参考：[媒体文件管理服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview)。
+公共媒体库中的数据，在终端设备从HarmonyOS升级到HarmonyOS NEXT后，会整体搬迁直接继承。应用可以使用HarmonyOS NEXT提供的API，访问公共媒体库中的数据。媒体库的使用指导可以参考：[媒体文件管理服务](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview)。
 
 ![](./img/c55752c9.png)

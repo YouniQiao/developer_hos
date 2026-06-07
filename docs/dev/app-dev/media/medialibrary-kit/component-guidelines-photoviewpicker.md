@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用PhotoPicker组件访问图片/视频"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-photoviewpicker
+original_url: /docs/dev/app-dev/media/medialibrary-kit/component-guidelines-photoviewpicker
 format: md
 ---
 
@@ -82,7 +82,7 @@ format: md
 
      ![](./img/01d5d185.png)
 
-     + 回调返回的所有URI均为只读URI，开发者可以根据结果集中的URI读取文件数据。但不能在Picker的回调中直接使用此URI打开文档，需要定义一个全局变量保存URI，样例可参考[指定URI读取文件数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker#指定uri读取文件数据)、[指定URI获取图片或视频资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker#指定uri获取图片或视频资源)。
+     + 回调返回的所有URI均为只读URI，开发者可以根据结果集中的URI读取文件数据。但不能在Picker的回调中直接使用此URI打开文档，需要定义一个全局变量保存URI，样例可参考[指定URI读取文件数据](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker#指定uri读取文件数据)、[指定URI获取图片或视频资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker#指定uri获取图片或视频资源)。
      + 如需获取元数据，可通过[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)和[文件URI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fileuri)接口，根据uri获取部分文件属性信息，比如文件大小、访问时间、修改时间、文件名、文件路径等。
    * 点击图片（缩略图item），将上报图片/视频信息[ItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-file-photopickercomponent#iteminfo)；
    * 点击相机item，可默认拉起系统相机或应用自行处理。如何自行拉起相机请参考[cameraPicker.pick](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-camerapicker#camerapickerpick)。

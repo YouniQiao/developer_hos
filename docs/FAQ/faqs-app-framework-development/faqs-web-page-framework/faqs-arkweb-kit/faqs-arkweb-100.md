@@ -1,7 +1,7 @@
 ---
 format: md
 title: "同层渲染场景下控件使能沉浸光感效果变透明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-100
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-100
 ---
 
 
@@ -15,4 +15,4 @@ API 23及以前SDK在同层渲染场景下暂不支持沉浸光感效果，建�
 
 **参考链接**
 
-[同层渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-same-layer)
+[同层渲染](/docs/dev/app-dev/application-framework/arkweb/web-same-layer)

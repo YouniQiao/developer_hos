@@ -1,7 +1,7 @@
 ---
 title: "查询关键词列表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-querykeywords-0000001181946353
+original_url: /docs/monetize/promotion/marketapi-querykeywords-0000001181946353
 format: md
 ---
 
@@ -58,9 +58,9 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
-| searchKeyWords | O | List&lt;[SearchkeyWord](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-searchkeyword-0000001181826457)&gt; | 搜索关键词列表。 |
+| searchKeyWords | O | List&lt;[SearchkeyWord](/docs/monetize/promotion/marketapi-modle-searchkeyword-0000001181826457)&gt; | 搜索关键词列表。 |
 | negativeKeyWords | O | List&lt;String&gt; | 负向关键词列表。 |
 
 ## 响应示例

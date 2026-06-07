@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用RecentPhoto组件获取最近一张图片"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-recentphoto
+original_url: /docs/dev/app-dev/media/medialibrary-kit/component-guidelines-recentphoto
 format: md
 ---
 

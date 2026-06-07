@@ -1,6 +1,6 @@
 ---
 title: "PageAbility组件配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-configuration
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-configuration
 format: md
 ---
 

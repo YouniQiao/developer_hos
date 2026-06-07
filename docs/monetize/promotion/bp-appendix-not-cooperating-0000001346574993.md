@@ -1,7 +1,7 @@
 ---
 title: "推广不合作应用类型"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-not-cooperating-0000001346574993
+original_url: /docs/monetize/promotion/bp-appendix-not-cooperating-0000001346574993
 format: md
 ---
 

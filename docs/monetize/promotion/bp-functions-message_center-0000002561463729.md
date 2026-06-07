@@ -1,7 +1,7 @@
 ---
 title: "消息中心"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-message_center-0000002561463729
+original_url: /docs/monetize/promotion/bp-functions-message_center-0000002561463729
 format: md
 ---
 

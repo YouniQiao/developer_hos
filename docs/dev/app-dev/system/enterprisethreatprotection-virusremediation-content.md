@@ -1,13 +1,13 @@
 ---
 title: "文件访问与处置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-content
+original_url: /docs/dev/app-dev/system/enterprisethreatprotection-virusremediation-content
 format: md
 ---
 
 
-* **[启动应用目录文件扫描任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-scan)**
-* **[打开文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-open)**
-* **[文件隔离](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-isolate)**
-* **[文件隔离恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-restore)**
-* **[文件隔离删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-remove)**
-* **[隔离查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-query)**
+* **[启动应用目录文件扫描任务](/docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-scan)**
+* **[打开文件](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-openfile)**
+* **[文件隔离](/docs/dev/app-dev/system/enterprisethreatprotection-virusremediation-isolate)**
+* **[文件隔离恢复](/docs/dev/app-dev/system/enterprisethreatprotection-virusremediation-restore)**
+* **[文件隔离删除](/docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-remove)**
+* **[隔离查询](/docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-query)**

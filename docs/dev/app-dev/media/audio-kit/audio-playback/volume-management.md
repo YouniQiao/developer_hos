@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "播放音量管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/volume-management
+original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/volume-management
 format: md
 ---
 

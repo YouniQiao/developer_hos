@@ -1,18 +1,18 @@
 ---
 title: "授信账户"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/settlement-terminology-0000001177032217
+original_url: /docs/monetize/promotion/settlement-terminology-0000001177032217
 format: md
 ---
 
 # 授信账户
 
-本章节为直客授信账户，服务商授信账户请参考[授信账户](https://developer.huawei.com/consumer/cn/doc/promotion/finance-0000001058604140#section984883812297)。
+本章节为直客授信账户，服务商授信账户请参考[授信账户](/docs/monetize/promotion/finance-0000001058604140#section984883812297)。
 
 ## 概述
 
 - 授信账户：指的是您（直客）通过向鲸鸿动能广告平台申请开通授信账户（授信额度存在有效期），并分配一定的授信额度，您进行消耗后，才会产生授信账单，且需要按照“线下充值”的方式进行还款。
-  - <strong>线下充值：</strong>您可以通过银行转账到[指定银行账户](https://developer.huawei.com/consumer/cn/doc/promotion/settlement-overview-0000001176952305#ZH-CN_TOPIC_0000001176952305__table169021827151913)的方式进行充值，银行转账之后需要您在鲸鸿动能广告平台提交充值申请，审批通过后，还款成功。
+  - <strong>线下充值：</strong>您可以通过银行转账到[指定银行账户](/docs/monetize/promotion/settlement-overview-0000001176952305#ZH-CN_TOPIC_0000001176952305__table169021827151913)的方式进行充值，银行转账之后需要您在鲸鸿动能广告平台提交充值申请，审批通过后，还款成功。
 - 额度到期：如果您的授信额度到期，但并未进行消耗，那么您广告账户中的可用授信额度将清零，无需还款。
 - 还款完成：还款完成后，系统将恢复直客授信账户额度，您单击“![](./img/zh-cn_image_0000001293856742_e756ba2b8dea.png)”-&gt;“![](./img/zh-cn_image_0000001294176154_5e2d1a445697.png "点击放大")”，即可在授信账户中查看：授信截止日期、状态、总额度、可用额度。
 

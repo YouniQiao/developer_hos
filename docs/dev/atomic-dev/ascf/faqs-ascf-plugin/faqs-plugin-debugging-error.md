@@ -1,6 +1,6 @@
 ---
 title: "在DevEco Studio调试运行ASCF元服务的时候报错"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-plugin-debugging-error
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-debugging-error
 format: md
 ---
 
@@ -24,6 +24,6 @@ error: Failed to install the HAP or HSP because the dependent module does not ex
 
 **解决措施**
 
-1. 请确认DevEco Studio中安装的插件已更新至最新版本，若非最新版本，请依据“[获取ASCF插件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-plugin)”章节的指引，完成最新版插件的安装。
+1. 请确认DevEco Studio中安装的插件已更新至最新版本，若非最新版本，请依据“[获取ASCF插件](/docs/dev/atomic-dev/ascf/ascf-plugin)”章节的指引，完成最新版插件的安装。
 2. 可于负一屏或应用市场搜索“元服务ASCF示例”，随后直接运行以自动安装ASCF引擎。
 3. 使用命令“hdc shell bm dump-shared -n com.huawei.hms.ascfruntime”来核查手机上是否已正确安装引擎。

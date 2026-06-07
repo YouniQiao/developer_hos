@@ -1,6 +1,6 @@
 ---
 title: "ArkTS运行时常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime-faq
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-faq
 format: md
 ---
 

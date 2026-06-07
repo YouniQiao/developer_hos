@@ -1,6 +1,6 @@
 ---
 title: "事件监听开发指导（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/monitor-guidelines
+original_url: /docs/dev/app-dev/system/system-basicfun/input-kit/monitor-guidelines
 format: md
 ---
 
@@ -38,7 +38,7 @@ target_link_libraries(entry PUBLIC libohinput.so)
 
 ### 申请所需权限
 
-应用需要在module.json5中添加下面权限的配置，详细的配置方法参考声明[声明权限文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+应用需要在module.json5中添加下面权限的配置，详细的配置方法参考声明[声明权限文档](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ```
 "requestPermissions": [

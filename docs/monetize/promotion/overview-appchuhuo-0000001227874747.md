@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/overview-appchuhuo-0000001227874747
+original_url: /docs/monetize/promotion/overview-appchuhuo-0000001227874747
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 如果您希望提升您应用的活跃度，让更多的用户使用您的应用，或者您希望对应用内的某个活动进行推广，可以使用鲸鸿动能广告提供的应用促活广告。
 
-应用促活广告只会被展示给已经安装了您应用的用户，您需要提供一个指向应用内内容的[Deeplink链接](https://developer.huawei.com/consumer/cn/doc/promotion/overview-cjjjgg-0000001182873508#section19208102614323)，用户点击广告后会进入到您提供的Deeplink链接上。
+应用促活广告只会被展示给已经安装了您应用的用户，您需要提供一个指向应用内内容的[Deeplink链接](/docs/monetize/promotion/overview-cjjjgg-0000001182873508#section19208102614323)，用户点击广告后会进入到您提供的Deeplink链接上。
 
 ![](./img/note_3.0-zh-cn_545b122ccc34.png) 
 

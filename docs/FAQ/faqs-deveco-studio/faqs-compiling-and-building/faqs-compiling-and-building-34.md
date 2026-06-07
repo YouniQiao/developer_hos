@@ -1,7 +1,7 @@
 ---
 format: md
 title: "执行sync过程中修改Hvigor及plugin版本导致build init"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-34
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-34
 ---
 
 

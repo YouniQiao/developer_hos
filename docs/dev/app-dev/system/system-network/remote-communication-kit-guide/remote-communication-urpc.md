@@ -1,9 +1,9 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "URPC场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-urpc
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-urpc
 format: md
 ---
 
 
-* **[使用URPC进行远程程序调用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-urpccall)**
+* **[使用URPC进行远程程序调用](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-urpc/remote-communication-urpccall)**

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "为什么同一App下的HSP文件vendor参数不同时会安装失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-44
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-44
 ---
 
 

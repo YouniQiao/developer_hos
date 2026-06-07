@@ -1,13 +1,13 @@
 ---
 title: "转场动画"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-transition
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition
 format: md
 ---
 
 
-* **[转场动画概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-transition-overview)**
-* **[出现/消失转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-enter-exit-transition)**
-* **[模态转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-transition)**
-* **[共享元素转场 (一镜到底)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shared-element-transition)**
-* **[旋转屏动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rotation-transition-animation)**
-* **[页面转场动画 (不推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-transition-animation)**
+* **[转场动画概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-transition-overview)**
+* **[出现/消失转场](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-enter-exit-transition)**
+* **[模态转场](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-modal-transition)**
+* **[共享元素转场 (一镜到底)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-shared-element-transition)**
+* **[旋转屏动画](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-rotation-transition-animation)**
+* **[页面转场动画 (不推荐)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-page-transition-animation)**

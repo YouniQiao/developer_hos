@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接入“扫码直达”服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-directservice
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-directservice
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 
 ## 开发步骤
 
-1. 参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-config-agc)完成必要的准备工作。
+1. 参考[开发准备](/docs/dev/app-dev/media/scan-kit-guide/scan-config-agc)完成必要的准备工作。
 2. 处理接收到的码值，完成应用内页面跳转逻辑。
 
    ```

@@ -1,7 +1,7 @@
 ---
 title: "开发者行为"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/developer-behavior-0000002471264369
+original_url: /docs/distribute/xiaoyi/audit-specifications-0000002469548113/developer-behavior-0000002471264369
 format: md
 ---
 

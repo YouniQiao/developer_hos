@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "H5/三方框架和HarmonyOS配置项映射关系"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-mappingrelationship
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-mappingrelationship
 format: md
 ---
 

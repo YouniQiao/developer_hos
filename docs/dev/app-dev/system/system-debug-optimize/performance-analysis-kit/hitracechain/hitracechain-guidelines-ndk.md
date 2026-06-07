@@ -1,6 +1,6 @@
 ---
 title: "使用HiTraceChain打点（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-guidelines-ndk
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-guidelines-ndk
 format: md
 ---
 
@@ -42,7 +42,7 @@ format: md
 
 ## 开发步骤
 
-std::thread不支持自动传递HiTraceId，开发示例展示了该场景下分布式跟踪的使用方法。开发者可参考[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-intro#约束与限制)，了解常见的支持与不支持HiTraceChain自动传递的机制。
+std::thread不支持自动传递HiTraceId，开发示例展示了该场景下分布式跟踪的使用方法。开发者可参考[约束与限制](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-intro#约束与限制)，了解常见的支持与不支持HiTraceChain自动传递的机制。
 
 1. 在DevEco Studio中新建工程，选择“Native C++”，工程的目录结构如下：
 

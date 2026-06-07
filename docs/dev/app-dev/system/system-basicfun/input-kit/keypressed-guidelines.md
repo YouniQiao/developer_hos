@@ -1,6 +1,6 @@
 ---
 title: "优先响应系统功能键开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/keypressed-guidelines
+original_url: /docs/dev/app-dev/system/system-basicfun/input-kit/keypressed-guidelines
 format: md
 ---
 

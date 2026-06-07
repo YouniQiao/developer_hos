@@ -1,6 +1,6 @@
 ---
 title: "@Styles装饰器：定义组件重用样式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-style
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-style
 format: md
 ---
 
@@ -27,7 +27,7 @@ format: md
 
 只能在当前文件内使用@Styles，不支持export。
 
-若需要实现样式导出，推荐使用[AttributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-attributemodifier)。
+若需要实现样式导出，推荐使用[AttributeModifier](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-extension-attributemodifier)。
 
 定义在组件内的@Styles可以通过this访问组件的常量和状态变量，并可以在@Styles里通过事件来改变状态变量的值，示例如下：
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "高精几何重建介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-volume-measurement-conversion
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-volume/arengine-get-volume-measurement-conversion
 format: md
 ---
 

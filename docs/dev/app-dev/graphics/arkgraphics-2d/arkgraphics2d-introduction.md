@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "ArkGraphics 2D简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics2d-introduction
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/arkgraphics2d-introduction
 format: md
 ---
 
@@ -12,7 +12,7 @@ ArkGraphics 2D（方舟2D图形服务 ）主要提供图形绘制与显示相关
 
 * 提供图像处理的一些基本能力，包括对当前图像的亮度调节、模糊化、灰度调节、智能取色等。具体可见[@ohos.effectKit (图像效果)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-effectkit)。
 * 提供管理抽象化色域对象的基础能力，包括色域的创建、色域基础属性的获取等。具体可见[@ohos.graphics.colorSpaceManager (色彩管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-colorspacemanager)与[@ohos.graphics.sendableColorSpaceManager (可共享的色彩管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sendablecolorspacemanager)。
-* 提供可针对不同形式的内容指定帧率的能力，可用于开发者自绘制内容。具体可见[可变帧率简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-overview)。
+* 提供可针对不同形式的内容指定帧率的能力，可用于开发者自绘制内容。具体可见[可变帧率简介](/docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-overview)。
 * 提供高动态显示的相关能力，具体可见[@ohos.graphics.hdrCapability (HDR能力)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hdrcapability)。
 * 提供自绘制的相关能力，开发者可根据需要，自定义绘制实现UI效果，可自定义绘制基础形状、文本、图片等。具体可见[@ohos.graphics.drawing (绘制模块)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing)。
 * 提供图形绘制与显示相关的Native能力，包括[NativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow)、[NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer)、[NativeImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativeimage)、[NativeVsync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativevsync)、[Drawing](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drawing)等模块。

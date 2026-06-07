@@ -1,7 +1,7 @@
 ---
 format: md
 title: "javaScriptProxy和registerJavaScriptProxy有什么区别，能注册多少个对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-20
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-20
 ---
 
 

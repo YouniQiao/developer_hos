@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开通相关服务和配置参数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-config-agc
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-enabling/store-iap-config-agc
 format: md
 ---
 
@@ -28,20 +28,20 @@ format: md
 
 ## 打开应用内购买服务 (HarmonyOS NEXT)
 
-需要使用数字商品服务的应用必须打开应用内购买服务 (HarmonyOS NEXT) API开关。打开服务开关是应用级别的，即每个需要使用数字商品服务的应用都需要先执行此步骤，具体操作请参见[打开应用内购买服务(HarmonyOS NEXT) API开关](https://developer.huawei.com/consumer/cn/doc/app/switch-0000001958955097)。
+需要使用数字商品服务的应用必须打开应用内购买服务 (HarmonyOS NEXT) API开关。打开服务开关是应用级别的，即每个需要使用数字商品服务的应用都需要先执行此步骤，具体操作请参见[打开应用内购买服务(HarmonyOS NEXT) API开关](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/switch-0000001958955097)。
 
 ## 配置服务参数
 
-开启应用内购买服务(HarmonyOS NEXT) 开关后，开发者需进一步激活应用内购买服务 (HarmonyOS NEXT)，具体请参见[激活服务和配置事件通知](https://developer.huawei.com/consumer/cn/doc/app/parameters-0000001931995692)。
+开启应用内购买服务(HarmonyOS NEXT) 开关后，开发者需进一步激活应用内购买服务 (HarmonyOS NEXT)，具体请参见[激活服务和配置事件通知](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/parameters-0000001931995692)。
 
 ![](./img/d8ccbaa2.png)
 
 * 用户购买商品后，服务器会在订单/订阅场景的某些关键事件发生时通知您配置的事件通知地址，具体可参见[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。
-* 调试阶段必须[申请调试证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-cert-0000002283256797)、[注册设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-device-0000002283189937)、开启和激活“应用内购买服务”后需要重新[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)，并完成[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
-* 发布阶段必须[申请发布证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-cert-0000002283336729)、开启和激活“应用内购买服务”后需要重新[申请发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)，并完成[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+* 调试阶段必须[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)、[注册设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)、开启和激活“应用内购买服务”后需要重新[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)，并完成[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+* 发布阶段必须[申请发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)、开启和激活“应用内购买服务”后需要重新[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)，并完成[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
 
 ## 服务端密钥管理
 
 数字商品服务器要求对每个服务端API请求进行JSON Web Token（JWT）授权。开发者可以使用从[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)下载的API密钥对Token签名生成JWT，授权发起的服务端API请求。
 
-开发者可参见[创建密钥](https://developer.huawei.com/consumer/cn/doc/app/key-0000001959074877)、[下载密钥](https://developer.huawei.com/consumer/cn/doc/app/download-0000001958955101)、[撤销密钥](https://developer.huawei.com/consumer/cn/doc/app/cancel-0000001931995696)管理服务端密钥。
+开发者可参见[创建密钥](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/key-management-0000001931836312/key-0000001959074877)、[下载密钥](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/key-management-0000001931836312/download-0000001958955101)、[撤销密钥](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/key-management-0000001931836312/cancel-0000001931995696)管理服务端密钥。

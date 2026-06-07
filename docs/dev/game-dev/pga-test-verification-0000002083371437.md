@@ -1,6 +1,6 @@
 ---
 title: "测试及验证收益"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pga-test-verification-0000002083371437
+original_url: /docs/dev/game-dev/pga-test-verification-0000002083371437
 format: md
 ---
 

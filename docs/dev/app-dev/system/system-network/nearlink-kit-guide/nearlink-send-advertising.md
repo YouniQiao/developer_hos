@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发送星闪广播"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-send-advertising
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-send-advertising
 format: md
 ---
 

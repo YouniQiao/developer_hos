@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决混淆之后的静态引用异常问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-93
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-93
 ---
 
 
@@ -15,4 +15,4 @@ import静态加载的时候如果引用的是index文件的，那是不是会一
 
 **参考链接**
 
-[动态加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import)
+[动态加载](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-dynamic-import)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "展示广告时显示白屏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-faq-4
+original_url: /docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-faq/ads-publisher-service-faq-4
 format: md
 ---
 

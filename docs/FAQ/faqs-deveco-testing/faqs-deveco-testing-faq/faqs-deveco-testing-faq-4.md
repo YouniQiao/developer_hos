@@ -1,7 +1,7 @@
 ---
 format: md
 title: "创建任务时，为什么会提示创建任务失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing-faq-4
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-4
 ---
 
 

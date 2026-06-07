@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AVCodec支持的格式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats
+original_url: /docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats
 format: md
 ---
 
 
-音视频的编解码能力以及文件格式封装和解封装能力的支持情况，在不同平台存在能力和规格的差异。开发者可以通过[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)来获取实际的支持情况和规格情况。
+音视频的编解码能力以及文件格式封装和解封装能力的支持情况，在不同平台存在能力和规格的差异。开发者可以通过[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)来获取实际的支持情况和规格情况。
 
 ## 媒体编解码
 
@@ -38,11 +38,11 @@ format: md
 
 通过MIME类型创建解码器时，如果系统平台支持硬件解码，系统平台会优先创建硬件解码器实例；如果系统平台不支持或者硬件解码器资源不足时，系统平台会创建软件解码器实例；如果系统平台无对应解码能力，会创建解码器实例失败。
 
-系统平台提供的解码能力和设备强相关，开发者可以通过[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)获取系统平台支持的软硬件解码能力和能力规格。
+系统平台提供的解码能力和设备强相关，开发者可以通过[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)获取系统平台支持的软硬件解码能力和能力规格。
 
 例如可以通过OH\_AVCODEC\_MIMETYPE\_VIDEO\_AVC、OH\_AVCODEC\_MIMETYPE\_VIDEO\_HEVC、OH\_AVCODEC\_MIMETYPE\_VIDEO\_VVC来查询系统平台支持的H.264、H.265、H.266的硬件解码能力。
 
-具体开发指导请参考[视频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding)。
+具体开发指导请参考[视频解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding)。
 
 ### 视频编码
 
@@ -57,9 +57,9 @@ format: md
 
 基于MimeType创建编码器时，可以配置为H.264(OH\_AVCODEC\_MIMETYPE\_VIDEO\_AVC)和H.265(OH\_AVCODEC\_MIMETYPE\_VIDEO\_HEVC)。
 
-系统平台支持情况和每种编码的能力范围，可以通过[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)获取。
+系统平台支持情况和每种编码的能力范围，可以通过[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)获取。
 
-具体开发指导请参考[视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding)。
+具体开发指导请参考[视频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding)。
 
 ### 音频解码
 
@@ -85,11 +85,11 @@ format: md
 
 如果系统平台无对应解码能力，会创建解码器实例失败。
 
-系统平台提供的解码能力和设备强相关，开发者可以通过[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)获取系统平台支持的解码能力和能力规格。
+系统平台提供的解码能力和设备强相关，开发者可以通过[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)获取系统平台支持的解码能力和能力规格。
 
 从API version 23开始支持：TWINVQ、ILBC、TRUEHD、DVAUDIO、DTS、COOK。
 
-具体开发指导请参考[音频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-decoding)。
+具体开发指导请参考[音频解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-decoding)。
 
 ### 音频编码
 
@@ -106,9 +106,9 @@ format: md
 
 如果系统平台无对应编码能力，会创建编码器实例失败。
 
-系统平台提供的编码能力和设备强相关，开发者可以通过[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)获取系统平台支持的编码能力和能力规格。
+系统平台提供的编码能力和设备强相关，开发者可以通过[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)获取系统平台支持的编码能力和能力规格。
 
-具体开发指导请参考[音频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-encoding)。
+具体开发指导请参考[音频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-encoding)。
 
 ## 媒体数据封装与解析
 
@@ -146,7 +146,7 @@ format: md
 
 DRM解密能力支持的解封装格式：mp4(H.264，H.265，AAC)、mpeg-ts(H.264，H.265，AAC)。
 
-具体开发指导请参考[媒体数据解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)。
+具体开发指导请参考[媒体数据解析](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)。
 
 ### 媒体数据封装
 
@@ -308,4 +308,4 @@ ogg封装格式（从API version 23开始支持）：
 | OH\_MD\_KEY\_AUD\_CHANNEL\_COUNT | 声道数 | 必须 | 必须 |
 | OH\_MD\_KEY\_CODEC\_CONFIG | 编解码器特定数据 | 必须 | 必须 |
 
-具体开发指导请参考[媒体数据封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-muxer)。
+具体开发指导请参考[媒体数据封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-muxer)。

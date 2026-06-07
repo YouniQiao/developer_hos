@@ -1,7 +1,7 @@
 ---
 title: "模型（Model）配置"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-agent-model
+original_url: /docs/tools/ai-assist/ide-agent-model
 format: md
 ---
 

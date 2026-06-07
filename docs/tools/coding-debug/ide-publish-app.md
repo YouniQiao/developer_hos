@@ -1,7 +1,7 @@
 ---
 title: "发布应用"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-publish-app
+original_url: /docs/tools/coding-debug/ide-publish-app
 format: md
 ---
 

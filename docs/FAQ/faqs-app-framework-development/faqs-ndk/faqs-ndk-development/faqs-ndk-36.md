@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何使用后缀为so.x.y类型的so库，例如libxxx.so.3.1、libxxx.so.3.1.0"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-36
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-36
 ---
 
 

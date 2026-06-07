@@ -1,6 +1,6 @@
 ---
 title: "内置对象的迁移"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-inner-object
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-inner-object
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 | V1装饰器名称/场景 | V2装饰器名称 |
 | --- | --- |
-| 滚动组件场景 | [makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved) |
-| [Modifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-modifier) | [makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)、[@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)、[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace) |
+| 滚动组件场景 | [makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved) |
+| [Modifier](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-modifier) | [makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)、[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)、[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace) |
 
 ## 滚动组件
 
@@ -20,7 +20,7 @@ format: md
 
 V1：
 
-在状态管理V1中，可以通过[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)装饰观察其api调用。
+在状态管理V1中，可以通过[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)装饰观察其api调用。
 
 具体示例如下：
 
@@ -66,7 +66,7 @@ struct ListExample {
 
 V2：
 
-在状态管理V2中，[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，而由于ChildrenMainSize定义在List组件框架中，开发者无法使用[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)来标注ChildrenMainSize属性。可以使用[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)替代。从API version 22开始，可以无需使用makeObserved，直接使用@Local标注的ChildrenMainSize设置List的子组件在主轴方向的大小信息。
+在状态管理V2中，[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，而由于ChildrenMainSize定义在List组件框架中，开发者无法使用[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)来标注ChildrenMainSize属性。可以使用[makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)替代。从API version 22开始，可以无需使用makeObserved，直接使用@Local标注的ChildrenMainSize设置List的子组件在主轴方向的大小信息。
 
 具体示例如下：
 
@@ -123,7 +123,7 @@ struct ListExample {
 
 V1：
 
-在状态管理V1中，可以通过[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)装饰观察其api调用。
+在状态管理V1中，可以通过[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)装饰观察其api调用。
 
 具体示例如下：
 
@@ -209,7 +209,7 @@ struct WaterFlowSample {
 
 V2：
 
-在状态管理V2中，[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，由于WaterFlowSections定义在框架中，开发者无法使用[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)标注其属性，此时可以使用[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)替代。
+在状态管理V2中，[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，由于WaterFlowSections定义在框架中，开发者无法使用[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)标注其属性，此时可以使用[makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)替代。
 
 具体示例如下：
 
@@ -303,7 +303,7 @@ struct WaterFlowSample {
 
 V1：
 
-在状态管理V1中，可以通过[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)装饰观察其变化。
+在状态管理V1中，可以通过[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)装饰观察其变化。
 
 具体示例如下：
 
@@ -348,7 +348,7 @@ struct AttributeDemo {
 
 V2：
 
-在状态管理V2中，[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，如果要观察attributeModifier的属性变化，可以使用[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)替代。
+在状态管理V2中，[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，如果要观察attributeModifier的属性变化，可以使用[makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)替代。
 
 具体示例如下：
 
@@ -399,7 +399,7 @@ struct AttributeDemo {
 
 V1：
 
-在状态管理V1中，可以通过[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)装饰观察其变化。
+在状态管理V1中，可以通过[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)装饰观察其变化。
 
 具体实例如下：
 
@@ -471,7 +471,7 @@ struct Index {
 
 V2：
 
-在状态管理V2中，[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，又因为[自定义Modifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#自定义modifier)在框架内是通过其属性触发刷新，此时可以使用[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)替代。
+在状态管理V2中，[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，又因为[自定义Modifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#自定义modifier)在框架内是通过其属性触发刷新，此时可以使用[makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)替代。
 
 具体示例如下：
 
@@ -548,7 +548,7 @@ struct Index {
 
 V1：
 
-在状态管理V1中，可以通过[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)装饰观察其变化。
+在状态管理V1中，可以通过[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)装饰观察其变化。
 
 具体示例如下：
 
@@ -629,7 +629,7 @@ struct Index {
 
 V2：
 
-但在状态管理V2中，[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，此时可以使用[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)替代。
+但在状态管理V2中，[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)只能观察本身的变化，无法观察第一层的变化，此时可以使用[makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)替代。
 
 具体示例如下：
 
@@ -710,7 +710,7 @@ struct Index {
 
 ### AttributeUpdater
 
-[AttributeUpdater](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-attributeupdater)可以将属性直接设置给组件，无需标记为状态变量即可直接触发UI更新。
+[AttributeUpdater](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-extension-attributeupdater)可以将属性直接设置给组件，无需标记为状态变量即可直接触发UI更新。
 
 V1：
 

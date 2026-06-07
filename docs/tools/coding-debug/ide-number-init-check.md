@@ -1,7 +1,7 @@
 ---
 title: "@performance/number-init-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-number-init-check
+original_url: /docs/tools/coding-debug/ide-number-init-check
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译过程内存过高"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-106
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-106
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "组件动画"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-component-animation
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-component-animation
 format: md
 ---
 
@@ -45,7 +45,7 @@ struct ComponentDemo {
 
 ## 打造组件定制化动效
 
-部分组件支持通过[属性动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-animation-overview)和[转场动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-transition-overview)自定义组件子Item的动效，实现定制化动画效果。例如，[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)组件中可对各个子组件在滑动时的动画效果进行定制。
+部分组件支持通过[属性动画](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-attribute/arkts-attribute-animation-overview)和[转场动画](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-transition-overview)自定义组件子Item的动效，实现定制化动画效果。例如，[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)组件中可对各个子组件在滑动时的动画效果进行定制。
 
 * 在滑动或者点击操作时通过改变各个Scroll子组件的仿射属性来实现各种效果。
 * 如果要在滑动过程中定制动效，可在滑动回调[onDidScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scrollable-common#ondidscroll12)中监控滑动距离，并计算每个组件的仿射属性。也可以自己定义手势，通过手势监控位置，手动调用ScrollTo改变滑动位置。

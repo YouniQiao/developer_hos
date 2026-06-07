@@ -1,7 +1,7 @@
 ---
 title: "查询账户余额"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-finance1-0000001286533062
+original_url: /docs/monetize/promotion/marketing-api-finance1-0000001286533062
 format: md
 ---
 
@@ -56,7 +56,7 @@ format: md
     | valid\_balance | bigdecimal | 可用余额。 |
     | balance | bigdecimal | 余额。 |
     | consume | bigdecimal | 当日支出金额。 |
-    | account\_type | string | 账户类型标识，详见[资金账户类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section8668656173214)。 |
+    | account\_type | string | 账户类型标识，详见[资金账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section8668656173214)。 |
     | currency | string | 币种。 |
     | balance\_detail | Struct2[] | 余额详情 |
     | consume\_detail | Struct3[] | 当日支出金额详情 |
@@ -66,14 +66,14 @@ format: md
     |  |  |  |
     | --- | --- | --- |
     | balance | string | 余额 |
-    | media\_type | string | 适用媒体范围  详见[虚拟账户类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section16548154953218) |
+    | media\_type | string | 适用媒体范围  详见[虚拟账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section16548154953218) |
     | valid\_balance | string | 可用余额 |
 
     Struct3定义
 
     |  |  |  |
     | --- | --- | --- |
-    | media\_type | string | 适用媒体范围  详见[虚拟账户类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section16548154953218) |
+    | media\_type | string | 适用媒体范围  详见[虚拟账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section16548154953218) |
     | consume | string | 支出金额 |
   - <strong>应答示例</strong>
 

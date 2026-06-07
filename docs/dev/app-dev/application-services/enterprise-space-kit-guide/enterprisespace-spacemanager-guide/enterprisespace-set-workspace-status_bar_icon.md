@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设置工作空间状态栏图标"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-workspace-status_bar_icon
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-workspace-status_bar_icon
 format: md
 ---
 

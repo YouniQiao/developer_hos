@@ -1,6 +1,6 @@
 ---
 title: "概览"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-overview
+original_url: /docs/dev/atomic-dev/instant-service/instant-service-overview
 format: md
 ---
 
@@ -48,5 +48,5 @@ format: md
 
   ![](./img/08ec7204.png)
 
-  + 企业开发者可通过[界面](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-gui)或[API录入商品](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-merchants)、门店信息；服务商只支持[通过API接入服务直达](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-service-providers)。
+  + 企业开发者可通过[界面](/docs/dev/atomic-dev/instant-service-gui/instant-service-gui)或[API录入商品](/docs/dev/atomic-dev/instant-service-getting-started/instant-service-merchants)、门店信息；服务商只支持[通过API接入服务直达](/docs/dev/atomic-dev/instant-service-getting-started/instant-service-service-providers)。
   + 为了更加精准的推广，本地生活类商家须上传门店信息至平台。非本地生活商家无需上传门店数据。

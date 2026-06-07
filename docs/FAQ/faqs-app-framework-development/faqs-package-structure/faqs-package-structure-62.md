@@ -1,6 +1,6 @@
 ---
 title: "如何判断应用程序是否安装"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-62
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-62
 format: md
 ---
 

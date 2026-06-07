@@ -1,6 +1,6 @@
 ---
 title: "属性字符串（StyledString/MutableStyledString）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-styled-string
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-styled-string
 format: md
 ---
 

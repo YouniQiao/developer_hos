@@ -1,6 +1,6 @@
 ---
 title: "NativeBundle开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-bundle-guidelines
+original_url: /docs/dev/ndk-dev/native-bundle-guidelines
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "视频投播"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-vdeocast
+original_url: /docs/dev/app-dev/multi-device/bpta-vdeocast
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 **设备限制：**
 
-详细版本、设备和使用限制见[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide#约束与限制)。
+详细版本、设备和使用限制见[约束与限制](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide#约束与限制)。
 
 ## 用户体验
 
@@ -32,7 +32,7 @@ format: md
 
 **用户体验路径**
 
-本文案例提供本端播放和视频投播两种播放模式，体验路径和交互流程图如下。用户可以在本端和远端播放视频，在投播模式下，用户可以通过遥控界面实现快进/快退、切换上下集、音量调节（支持物理键控制）、进度条拖动跳转、选集切换控制功能，应用接入时，可根据实际需求参考本文实现，并按照[应用接入播控自检表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-checklist)完成基础功能验证，确保应用基础体验。
+本文案例提供本端播放和视频投播两种播放模式，体验路径和交互流程图如下。用户可以在本端和远端播放视频，在投播模式下，用户可以通过遥控界面实现快进/快退、切换上下集、音量调节（支持物理键控制）、进度条拖动跳转、选集切换控制功能，应用接入时，可根据实际需求参考本文实现，并按照[应用接入播控自检表](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/playback-control-access-checklist)完成基础功能验证，确保应用基础体验。
 
 | 用户操作阶段 | 1、本端视频播放与控制 | 2、播控中心控制本端视频 | 3、接入投播 | 4、应用遥控远端设备 |
 | --- | --- | --- | --- | --- |
@@ -49,7 +49,7 @@ format: md
 | **投播组件（[AVCastPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avcastpicker)****）** | 系统级的投播组件，可嵌入应用界面的UI组件。当用户点击该组件后，系统将进行设备发现、连接、认证等流程，应用仅需要通过接口获取投播中相关的回调信息。 |
 | **投播控制器（[AVCastController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avcastcontroller)****）** | 在投播后，由应用发起的用于控制远端播放的接口，包括播放、暂停、调节音量、设置播放模式、设置播放速度等能力。 |
 
-投播功能通过AVSession建立设备连接，由AVCastController控制远端播放。详见[运作机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-overview#运作机制)。
+投播功能通过AVSession建立设备连接，由AVCastController控制远端播放。详见[运作机制](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-overview#运作机制)。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/40/v3/i7GIHXGGSy6WrlP4iX3AIg/zh-cn_image_0000002345973089.png?HW-CC-KV=V1&HW-CC-Date=20260606T074249Z&HW-CC-Expire=86400&HW-CC-Sign=CA24261DCFAF36E3CE6C27AAE2E9E8AEB90C33222E6040BD7B1219209AAD6689 "点击放大")
 
@@ -61,7 +61,7 @@ format: md
 * VideoSessionController：应用封装的媒体会话控制器，本端视频播放时用于本应用与播控中心的同步、切换设备发起投播、结束投播。
 * VideoCastController：应用封装的投播视频控制器，控制远端设备视频资源的暂停、播放、进度、音量、倍速。
 
-完成投播功能，建议参考如下流程接入，其中本端视频显示和控制可参考[视频播放组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-video-player)、[使用AVPlayer播放视频(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback)、[使用AVPlayer播放视频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-video-playback)等视频实现方案根据功能诉求自行实现，本文从接入播控中心进行介绍。
+完成投播功能，建议参考如下流程接入，其中本端视频显示和控制可参考[视频播放组件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-common-components-video-player)、[使用AVPlayer播放视频(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback)、[使用AVPlayer播放视频(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-avplayer-for-video-playback)等视频实现方案根据功能诉求自行实现，本文从接入播控中心进行介绍。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/96/v3/p1lW8nfhTFuE-GgSreiSDQ/zh-cn_image_0000002345853277.png?HW-CC-KV=V1&HW-CC-Date=20260606T074249Z&HW-CC-Expire=86400&HW-CC-Sign=5E66F67B398CE3434219F6C23C35B5F332D6CB656674A110D70AEA05E1BE2DE7 "点击放大")
 
@@ -541,7 +541,7 @@ inputConsumer.on('keyPressed', downOptions, async () => {
 
 ###投屏转投播
 
-用户通过“无线投屏”功能实现手机等设备和大屏等的镜像投屏，然后打开视频应用进入视频播放，此时会自动切换为资源投播，详见[镜像投屏自动切换资源投播](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide#镜像投屏自动切换资源投播)。目前投播暂不支持视频弹幕功能，若应用想优先保证弹幕体验，可不接入此功能。
+用户通过“无线投屏”功能实现手机等设备和大屏等的镜像投屏，然后打开视频应用进入视频播放，此时会自动切换为资源投播，详见[镜像投屏自动切换资源投播](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide#镜像投屏自动切换资源投播)。目前投播暂不支持视频弹幕功能，若应用想优先保证弹幕体验，可不接入此功能。
 
 ## 常见问题
 

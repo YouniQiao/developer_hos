@@ -1,6 +1,6 @@
 ---
 title: "图片资源加载优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-texture-compression-improve-performance
+original_url: /docs/quality/texture-compression-improve-performance
 ---
 
 
@@ -24,7 +24,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-t
 
 ![](./img/36349562.png "点击放大")
 
-纹理压缩在编译构建中对预置图片进行处理。首先在编辑器的编译文件中配置纹理压缩参数。根据配置参数，hvigor读取待压缩的文件资源，构造[restool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restool)命令解析并生成资源文件列表。然后遍历文件列表，将待转换文件转码为纹理格式。已转换的资源文件不再打包到构建产物中。最后将纹理文件和未转换的文件一起构建生成资源产物。
+纹理压缩在编译构建中对预置图片进行处理。首先在编辑器的编译文件中配置纹理压缩参数。根据配置参数，hvigor读取待压缩的文件资源，构造[restool](/docs/dev/app-dev/system/restool)命令解析并生成资源文件列表。然后遍历文件列表，将待转换文件转码为纹理格式。已转换的资源文件不再打包到构建产物中。最后将纹理文件和未转换的文件一起构建生成资源产物。
 
 编译构建资源文件开启纹理压缩时序图如下：
 

@@ -1,6 +1,6 @@
 ---
 title: "如何判断当前网络能否上网"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-61
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-61
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "编译元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/compile-atomic-service
+original_url: /docs/dev/atomic-dev/ascf/use-ide/compile-atomic-service
 format: md
 ---
 
@@ -27,7 +27,7 @@ ASCF构建后会将ascf/ascf\_src的内容编译到entry/src/main/resources/rawf
 
 ![](./img/02ad9203.png)
 
-使用参数可以参考[命令行指令选项](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/run-ascf-cli#命令行指令选项)。
+使用参数可以参考[命令行指令选项](/docs/dev/atomic-dev/ascf/ascf-development-process/run-ascf-cli#命令行指令选项)。
 
 ![](./img/d9bac915.png)
 

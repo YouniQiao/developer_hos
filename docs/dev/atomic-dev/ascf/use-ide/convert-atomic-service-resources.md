@@ -1,6 +1,6 @@
 ---
 title: "导入小程序资源"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/convert-atomic-service-resources
+original_url: /docs/dev/atomic-dev/ascf/use-ide/convert-atomic-service-resources
 format: md
 ---
 
@@ -29,4 +29,4 @@ format: md
      用于控制在转换后的源码中，不支持的接口处不添加注释。建议在压缩后的源码中添加此参数以防止不必要的注释干扰。
 4. 适配元服务。
 
-   转换完成后，部分元服务的业务实现方式可能与原小程序存在差异。请参考[开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-development-guide)，对相关功能和要求进行适配调整。
+   转换完成后，部分元服务的业务实现方式可能与原小程序存在差异。请参考[开发指南](/docs/dev/atomic-dev/ascf/ascf-development-guide/ascf-development-guide)，对相关功能和要求进行适配调整。

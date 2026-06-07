@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "心率变异性"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-heart-rate-variability
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/ide-heart-rate-variability
 format: md
 ---
 

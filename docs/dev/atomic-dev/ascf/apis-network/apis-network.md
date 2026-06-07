@@ -1,11 +1,11 @@
 ---
 title: "网络"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-network
+original_url: /docs/dev/atomic-dev/ascf/apis-network/apis-network
 format: md
 ---
 
 
-* **[请求](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-request)**
-* **[下载](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-download)**
-* **[上传](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-upload)**
-* **[WebSocket](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-websocket)**
+* **[请求](/docs/dev/atomic-dev/ascf/apis-network/apis-request)**
+* **[下载](/docs/dev/atomic-dev/ascf/apis-network/apis-download)**
+* **[上传](/docs/dev/atomic-dev/ascf/apis-network/apis-upload)**
+* **[WebSocket](/docs/dev/atomic-dev/ascf/apis-network/apis-websocket)**

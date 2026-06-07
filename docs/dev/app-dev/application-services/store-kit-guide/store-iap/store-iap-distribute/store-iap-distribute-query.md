@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "展示数字商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-query
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-query
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "使用证书算法库"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-cert-guidelines
+original_url: /docs/dev/atomic-dev/atomic-security-development/atomic-cert-guidelines
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "激励广告"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-ads-publisher-service-reward
+original_url: /docs/dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-reward
 format: md
 ---
 
@@ -44,7 +44,7 @@ format: md
    | 请求广告参数名 | 类型 | 必填 | 说明 |
    | --- | --- | --- | --- |
    | adType | number | 否 | 请求广告类型，激励广告类型为7。不填默认为原生广告类型。 |
-   | adId | string | 是 | 广告位ID。  - 如果仅调测广告，可使用测试广告位ID：j14rx3xtac。  - 如果要接入正式广告，则需要申请正式的广告位ID。可在应用发布前进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)进行申请，具体操作详情请参见[展示位创建](https://developer.huawei.com/consumer/cn/doc/monetize/zhanshiweichuangjian-0000001132700049)。 |
+   | adId | string | 是 | 广告位ID。  - 如果仅调测广告，可使用测试广告位ID：j14rx3xtac。  - 如果要接入正式广告，则需要申请正式的广告位ID。可在应用发布前进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)进行申请，具体操作详情请参见[展示位创建](/docs/monetize/monetization/zhanshiweichuangjian-0000001132700049)。 |
 
    示例代码如下所示：
 
@@ -295,7 +295,7 @@ format: md
    ![](./img/25e155d9.png)
 2. （可选）设置自定义数据customData和userId。
 
-   您在[展示广告第2点](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-ads-publisher-service-reward#展示广告)之前可以设置自定义数据customData和userId。示例代码如下所示：
+   您在[展示广告第2点](/docs/dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-reward#展示广告)之前可以设置自定义数据customData和userId。示例代码如下所示：
 
    ```
    import { advertising } from '@kit.AdsKit';

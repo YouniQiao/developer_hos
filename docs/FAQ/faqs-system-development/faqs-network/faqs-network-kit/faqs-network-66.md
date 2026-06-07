@@ -1,6 +1,6 @@
 ---
 title: "无网络环境下使用同步方法获取网络状态报错"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-66
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-66
 format: md
 ---
 

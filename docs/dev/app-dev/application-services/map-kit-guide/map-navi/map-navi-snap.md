@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "轨迹绑路"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-navi-snap
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-navi/map-navi-snap
 format: md
 ---
 

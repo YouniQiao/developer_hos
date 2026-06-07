@@ -1,7 +1,7 @@
 ---
 format: md
 title: "运行UITest用例，运行超时屏幕黑屏后报错"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-5
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-5
 ---
 
 

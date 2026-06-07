@@ -1,6 +1,6 @@
 ---
 title: "资源泄漏事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events
 format: md
 ---
 
@@ -11,16 +11,16 @@ format: md
 
 本文面向开发者介绍资源泄漏事件各字段的含义和规格。如需了解如何使用HiAppEvent接口订阅系统资源泄漏事件，请参考以下文档。目前提供ArkTs和C/C++两种接口。
 
-* [订阅资源泄漏事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events-arkts)
-* [订阅资源泄漏事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events-ndk)
+* [订阅资源泄漏事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events-arkts)
+* [订阅资源泄漏事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events-ndk)
 
 ![](./img/f094e89f.png)
 
-资源泄漏事件支持在[应用分身](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)场景下使用 HiAppEvent 进行订阅，支持在元服务场景下使用 HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
+资源泄漏事件支持在[应用分身](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)场景下使用 HiAppEvent 进行订阅，支持在元服务场景下使用 HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
 
 ## 检测原理
 
-检测原理详见[Resource Leak（资源泄漏检测）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines)。
+检测原理详见[Resource Leak（资源泄漏检测）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines)。
 
 ## 自定义规格设置
 
@@ -115,7 +115,7 @@ hiAppEvent.configEventPolicy(switchLogPolicy).then(() => {
 | thread | object | （resource\_type为thread专有）线程信息，详见thread属性。 |
 | external\_log | string[] | 故障日志文件路径。**为避免目录空间超限（限制参考log\_over\_limit），导致新生成的日志文件写入失败，请在日志文件处理完后及时删除。** |
 | log\_over\_limit | boolean | 生成的故障日志文件与已存在的日志文件总大小是否超过2GB上限。true表示超过上限，日志写入失败；false表示未超过上限。 |
-| page\_switch\_log | string | 页面切换日志路径，日志介绍详见[页面切换日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageswitch-log)。  **说明**：从API version 24开始支持。 |
+| page\_switch\_log | string | 页面切换日志路径，日志介绍详见[页面切换日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection/pageswitch-log)。  **说明**：从API version 24开始支持。 |
 
 ### resource\_type字段说明
 

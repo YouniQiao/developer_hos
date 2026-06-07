@@ -1,7 +1,7 @@
 ---
 format: md
 title: "是否可以在TaskPool中动态加载模块（HAR、HSP、SO）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-47
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-47
 ---
 
 

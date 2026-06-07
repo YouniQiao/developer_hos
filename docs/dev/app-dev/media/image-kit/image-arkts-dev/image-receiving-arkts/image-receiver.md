@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用ImageReceiver完成图片接收"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-receiver
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-receiving-arkts/image-receiver
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 Receiver作为消费者，需要有对应的生产者提供数据才能实现完整功能。常见的生产者是相机的拍照流或预览流。ImageReceiver只作为图片的接收方、消费者，在ImageReceiver设置的size、format等属性实际上并不会生效，图片createImageReceiver时传入的参数不产生实际影响。图片属性需要在发送方、生产者进行设置，如[相机创建预览流](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#createpreviewoutput)时配置[profile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#profile)。
 
-ImageReceiver可以接收相机预览流中的图片，实现[双路预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview)。
+ImageReceiver可以接收相机预览流中的图片，实现[双路预览](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview)。
 
 相关API的详细介绍请参见[ImageReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagereceiver)。
 

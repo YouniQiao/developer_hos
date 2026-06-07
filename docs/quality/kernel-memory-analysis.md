@@ -1,6 +1,6 @@
 ---
 title: "分析内核态内存"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-kernel-memory-analysis
+original_url: /docs/quality/kernel-memory-analysis
 format: md
 ---
 
@@ -34,4 +34,4 @@ DevEco Studio Profiler插件Allocation模板可以帮助用户分析堆内存分
 * GL：应用使用的GPU内存；
 * Graph：应用使用的ION内存。
 
-如果这类内存发生膨胀，往往会导致卡死、花屏等较严重的整机问题，遇到这类问题，需要尽快修复，具体分析方法见[内存泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section2825227501)中的ashmem、ION内存泄漏分析方法。
+如果这类内存发生膨胀，往往会导致卡死、花屏等较严重的整机问题，遇到这类问题，需要尽快修复，具体分析方法见[内存泄漏分析方法](/docs/quality/stability-leak-way#section2825227501)中的ashmem、ION内存泄漏分析方法。

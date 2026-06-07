@@ -1,6 +1,6 @@
 ---
 title: "快游戏无网专区"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-no-wired-connection-0000002318054680
+original_url: /docs/dev/game-dev/games-quickgame-no-wired-connection-0000002318054680
 format: md
 ---
 
@@ -13,13 +13,13 @@ format: md
 
 * 无网快游戏包体大小建议**不超过10MB**。
 * 在**有网络**的情况下，无网快游戏应该和普通快游戏体验一致。
-* 无网快游戏和普通快游戏一样，**需要**调用[游戏登录接口](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-account-kit-0000002351893461)。
+* 无网快游戏和普通快游戏一样，**需要**调用[游戏登录接口](/docs/dev/game-dev/games-quickgame-runtime-account-kit-0000002351893461)。
 * 在**无网络**的情况下，无网快游戏只能使用包体内部的资源，无法远程请求。
 * 在**无网络**的情况下，无网快游戏仅面向已实名认证的成年人提供服务，未成年以及儿童无法进入游戏。
 
 ## 接入指引
 
-无网快游戏接入要求与普通快游戏相同，请参考[快游戏接入流程](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-dev-runtimegame-guide-0000002317894824)完成无网快游戏的接入工作。
+无网快游戏接入要求与普通快游戏相同，请参考[快游戏接入流程](/docs/dev/game-dev/games-quickgame-dev-runtimegame-guide-0000002317894824)完成无网快游戏的接入工作。
 
 ![](./img/7d13de35.png)
 

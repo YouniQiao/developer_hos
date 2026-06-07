@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "视频编码同步模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-video-encoding
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-video-encoding
 format: md
 ---
 
@@ -12,9 +12,9 @@ format: md
 
 具体实现可参考[示例工程](https://gitcode.com/openharmony/applications_app_samples/tree/master/code/BasicFeature/Media/AVCodec)。
 
-当前支持的编码能力，请参考[AVCodec支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#视频编码)。
+当前支持的编码能力，请参考[AVCodec支持的格式](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#视频编码)。
 
-视频编码的限制约束、支持的能力、状态机调用关系请参考[视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding)。
+视频编码的限制约束、支持的能力、状态机调用关系请参考[视频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding)。
 
 ## 适用场景
 
@@ -107,7 +107,7 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
 
    * 详细可配置选项的说明请参考[媒体数据键值对](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-codecbase#媒体数据键值对)。
    * 参数校验规则请参考[OH\_VideoEncoder\_Configure()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videoencoder-h#oh_videoencoder_configure)。
-   * 参数取值范围可以通过能力查询接口获取，具体示例请参考[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)。
+   * 参数取值范围可以通过能力查询接口获取，具体示例请参考[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)。
 
    目前支持的所有格式都必须配置以下选项：视频帧宽度、视频帧高度、视频像素格式。
 
@@ -137,7 +137,7 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
 
    示例中的变量说明如下：
 
-   nativeWindow：获取方式请参考[视频编码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding#surface模式)的“步骤-6：设置surface”。
+   nativeWindow：获取方式请参考[视频编码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding#surface模式)的“步骤-6：设置surface”。
 
    ```
    // 获取需要输入的surface，以进行编码。

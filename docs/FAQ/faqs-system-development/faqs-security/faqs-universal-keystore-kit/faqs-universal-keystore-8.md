@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何使用用户自定义的PIN码（6到16位）进行密钥解锁"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-universal-keystore-8
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-universal-keystore-kit/faqs-universal-keystore-8
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "媒体会话提供方(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avsession-developer
+original_url: /docs/dev/app-dev/media/avsession-kit/local-avsession/using-avsession-developer
 format: md
 ---
 

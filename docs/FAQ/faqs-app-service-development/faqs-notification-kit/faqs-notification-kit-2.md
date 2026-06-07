@@ -1,6 +1,6 @@
 ---
 title: "如何让事件只在一个UIAbility实例中传递"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit-2
+original_url: /docs/FAQ/faqs-app-service-development/faqs-notification-kit/faqs-notification-kit-2
 format: md
 ---
 
@@ -34,4 +34,4 @@ export default class EntryAbility extends UIAbility {
 
 **参考链接**
 
-[使用EventHub进行数据通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-data-sync-with-ui#使用eventhub进行数据通信)
+[使用EventHub进行数据通信](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-data-sync-with-ui#使用eventhub进行数据通信)

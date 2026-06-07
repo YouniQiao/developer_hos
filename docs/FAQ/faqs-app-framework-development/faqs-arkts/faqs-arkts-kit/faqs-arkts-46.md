@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何将类Java语言的线程模型（内存共享）的实现方式转换成在ArkTS的线程模型下（内存隔离）的实现方式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-46
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-46
 ---
 
 
@@ -161,4 +161,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[并发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/concurrency-overview)
+[并发概述](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/concurrency-overview)

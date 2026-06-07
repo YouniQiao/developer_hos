@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "查询设备安全模式(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-securitymode
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-securitymode
 format: md
 ---
 
@@ -42,4 +42,4 @@ Device Security Kit提供了系统安全模式的查询能力。通过调用Devi
 
 ![](./img/12fa10f2.png)
 
-若应用使用到ArkWeb组件，需进一步参考[说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-secure-shield-mode)，进行Web特性的兼容性评估。
+若应用使用到ArkWeb组件，需进一步参考[说明](/docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-secure-shield-mode)，进行Web特性的兼容性评估。

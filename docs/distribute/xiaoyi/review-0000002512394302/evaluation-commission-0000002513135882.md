@@ -1,7 +1,7 @@
 ---
 title: "评估器"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/evaluation-commission-0000002513135882
+original_url: /docs/distribute/xiaoyi/review-0000002512394302/evaluation-commission-0000002513135882
 format: md
 ---
 
@@ -27,7 +27,7 @@ format: md
 | 评估器名称 | 自定义的评估器名称。 |
 | 评估器描述 | 评估器描述。 |
 | 模型选择 | 选择用来评估的模型。 |
-| Prompt | 协助模型评测的提示词，支持【选择模板】一键预置提示词。  注意：在 Prompt 中需明确定义输入、输出及预期输出变量。配置后，相关字段将自动在底部的 Variables 区域中展示。在后续[评测任务评估器配置](https://developer.huawei.com/consumer/cn/doc/service/evaluation-task-0000002513295812#section588283118019)中，需将评测数据集中的字段与评测对象的实际输出结果进行一一映射，以确保评估器能够准确获取并解析评测数据。 |
+| Prompt | 协助模型评测的提示词，支持【选择模板】一键预置提示词。  注意：在 Prompt 中需明确定义输入、输出及预期输出变量。配置后，相关字段将自动在底部的 Variables 区域中展示。在后续[评测任务评估器配置](/docs/distribute/xiaoyi/review-0000002512394302/evaluation-task-0000002513295812#section588283118019)中，需将评测数据集中的字段与评测对象的实际输出结果进行一一映射，以确保评估器能够准确获取并解析评测数据。 |
 
 ![](./img/d336735b4e56.png "点击放大")
 

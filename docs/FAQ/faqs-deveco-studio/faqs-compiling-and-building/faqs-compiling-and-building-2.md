@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Linux环境下编译报错“JavaScript heap out of memory”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-2
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-2
 ---
 
 

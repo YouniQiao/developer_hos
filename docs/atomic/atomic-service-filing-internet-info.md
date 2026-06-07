@@ -1,6 +1,6 @@
 ---
 title: "新增互联网信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-internet-info
+original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-internet-info
 format: md
 ---
 
@@ -27,4 +27,4 @@ format: md
 
    ![](./img/b4d78038.png "点击放大")
 6. 华为工作人员将在3~5个工作日内进行审核，将以短信或邮件形式通知审核结果，请耐心等待，且保持手机畅通。若需要修改核准（备案）信息，将以邮件形式通知。
-7. 华为平台人工初审通过后，请前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-sms)。
+7. 华为平台人工初审通过后，请前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-sms)。

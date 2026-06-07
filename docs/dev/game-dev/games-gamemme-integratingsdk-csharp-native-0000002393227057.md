@@ -1,6 +1,6 @@
 ---
 title: "C#（Native）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057
+original_url: /docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057
 format: md
 ---
 
@@ -37,4 +37,4 @@ format: md
 
 ![](./img/8e67927a.png)
 
-当您使用团结引擎完成功能开发并准备打HarmonyOS包时，您还需要进行相关配置才能打包成功，具体请参见[打包](https://developer.huawei.com/consumer/cn/doc/games-guides/games-export-csharp-native-0000002359547198)。
+当您使用团结引擎完成功能开发并准备打HarmonyOS包时，您还需要进行相关配置才能打包成功，具体请参见[打包](/docs/dev/game-dev/games-export-csharp-native-0000002359547198)。

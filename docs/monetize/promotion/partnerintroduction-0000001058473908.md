@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/partnerintroduction-0000001058473908
+original_url: /docs/monetize/promotion/partnerintroduction-0000001058473908
 format: md
 ---
 

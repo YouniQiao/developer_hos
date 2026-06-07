@@ -1,6 +1,6 @@
 ---
 title: "共享元素转场 (一镜到底)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shared-element-transition
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-shared-element-transition
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 
 ## 不新建容器并直接变化原容器
 
-该方法不新建容器，通过在已有容器上增删组件触发[transition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-component)，搭配组件[属性动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-animation-apis)实现一镜到底效果。
+该方法不新建容器，通过在已有容器上增删组件触发[transition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-component)，搭配组件[属性动画](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-attribute/arkts-attribute-animation-apis)实现一镜到底效果。
 
 对于同一个容器展开，容器内兄弟组件消失或者出现的场景，可通过对同一个容器展开前后进行宽高位置变化并配置属性动画，对兄弟组件配置出现消失转场动画实现一镜到底效果。基本步骤为：
 
@@ -197,7 +197,7 @@ export default struct Post {
 
 ## 新建容器并跨容器迁移组件
 
-通过[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)[自定义占位节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-place-holder)，利用[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)实现组件的跨节点迁移，配合属性动画给组件的迁移过程赋予一镜到底效果。这种一镜到底的实现方式可以结合多种转场方式使用，如导航转场（[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)）、半模态转场（[bindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#bindsheet)）等。
+通过[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)[自定义占位节点](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-place-holder)，利用[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)实现组件的跨节点迁移，配合属性动画给组件的迁移过程赋予一镜到底效果。这种一镜到底的实现方式可以结合多种转场方式使用，如导航转场（[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)）、半模态转场（[bindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#bindsheet)）等。
 
 ### 结合Stack使用
 

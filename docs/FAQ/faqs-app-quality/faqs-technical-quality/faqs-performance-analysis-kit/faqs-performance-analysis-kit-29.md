@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何查看ArkCompiler出现Error日志时，具体的异常调用栈信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-29
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-29
 ---
 
 

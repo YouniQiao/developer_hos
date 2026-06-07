@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "潜水闭气训练"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-breath-holding-train
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-breath-holding-train
 format: md
 ---
 

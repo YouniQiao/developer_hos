@@ -1,6 +1,6 @@
 ---
 title: "申请企业应用发布证书"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-cert-0000002248177978
+original_url: /docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-enterprise-cert-0000002248177978
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 1. [注册华为开发者账号](https://developer.huawei.com/consumer/cn/doc/start/registration-and-verification-0000001053628148)并[完成企业开发者实名认证](https://developer.huawei.com/consumer/cn/doc/start/ht-edrna-0000001154848578)
 2. 申请开通权限，方法如下：
    * 申请邮箱地址：agconnect@huawei.com。
-   * 邮件标题：[申请企业应用发布证书和发布Profile]-[应用名称]-[应用包名]-[APP ID]-[Developer ID]，Developer ID等查询方法可参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。
+   * 邮件标题：[申请企业应用发布证书和发布Profile]-[应用名称]-[应用包名]-[APP ID]-[Developer ID]，Developer ID等查询方法可参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。
    * 邮件正文：请说明申请原因，并复制以下内容至邮件正文：
 
      “我已明确知悉：企业应用无需上架华为应用市场，只可通过企业MDM应用以及离线安装器分发安装，仅支持鸿蒙电脑擎云系列设备。”
@@ -28,7 +28,7 @@ format: md
 #### 准备工作
 
 * 请准备好[证书请求文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)。
-* 请确保您的账号角色已[获取“访问发布类证书”权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
+* 请确保您的账号角色已[获取“访问发布类证书”权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
 
 #### 操作步骤
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "相机旋转角度的术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term
 format: md
 ---
 
@@ -46,7 +46,7 @@ format: md
 
 ![](./img/27a2e7e1.png)
 
-开发者可参考以下章节，了解框架实现的机制，在实际开发过程中，推荐通过接口[获取预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-angle-adaptation-native#预览)。
+开发者可参考以下章节，了解框架实现的机制，在实际开发过程中，推荐通过接口[获取预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-native/camera-rotation-native/camera-rotation-angle-adaptation-native#预览)。
 
 在预览时，图像旋转角度与屏幕显示旋转角度相关。系统将以原始图像方向为基线，根据相机镜头角度和屏幕显示补偿角度，旋转图像。
 
@@ -92,4 +92,4 @@ format: md
 | --- | --- |
 | **设备条件：**  手机横屏、充电口向左。  使用后置相机拍摄。  **可得：**  - 后置相机镜头角度 = 90°  - 设备旋转角度 = 90°  - **图像预览旋转角度 = 90°+90° = 180°** | ![](./img/a26d980f.png) |
 
-应用需要监听[OH\_Sensor\_Subscribe](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-sensor-h#oh_sensor_subscribe)，获取重力传感器在x、y、z三个方向上的数据，计算得出设备旋转角度，请参考[计算设备旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-angle-adaptation-native#计算设备旋转角度)。
+应用需要监听[OH\_Sensor\_Subscribe](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-sensor-h#oh_sensor_subscribe)，获取重力传感器在x、y、z三个方向上的数据，计算得出设备旋转角度，请参考[计算设备旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-native/camera-rotation-native/camera-rotation-angle-adaptation-native#计算设备旋转角度)。

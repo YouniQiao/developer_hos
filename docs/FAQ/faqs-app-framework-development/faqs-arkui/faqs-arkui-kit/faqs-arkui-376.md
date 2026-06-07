@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现ArkUI组件字符串变量拼接"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-376
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-376
 ---
 
 
@@ -85,4 +85,4 @@ Text($r('app.string.EntryAbility_desc', 'Hello'))
 
 **参考链接**
 
-[资源访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源访问)
+[资源访问](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源访问)

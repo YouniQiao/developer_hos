@@ -1,6 +1,6 @@
 ---
 title: "自定义频道属性"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channelproperties-harmonyos-0000002338543829
+original_url: /docs/dev/game-dev/games-gamemme-channelproperties-harmonyos-0000002338543829
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
+* 您已[集成游戏多媒体SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
 
 ## 设置频道属性
 

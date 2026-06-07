@@ -1,6 +1,6 @@
 ---
 title: "运动联动管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-litewearable-sport-linkage-manage
+original_url: /docs/dev/app-dev/application-services/health-litewearable-sport-linkage-manage
 format: md
 ---
 
@@ -30,9 +30,9 @@ format: md
 
 ## 开发前检查
 
-* 完成[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)。
-* 需先通过[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-litewearable-add-permissions)接口引导用户授权，用户授权应根据[权限说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description#lite-wearable)中要求来打开锻炼记录读/写和联动接口控制权限，。
-* 常见问题请参考[Health Service Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs)。
+* 完成[申请运动健康服务](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply)。
+* 需先通过[用户授权](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-add-permissions)接口引导用户授权，用户授权应根据[权限说明](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description#lite-wearable)中要求来打开锻炼记录读/写和联动接口控制权限，。
+* 常见问题请参考[Health Service Kit常见问题](/docs/dev/app-dev/application-services/health-service-kit-guide/health-faqs)。
 
 ## 开发步骤
 

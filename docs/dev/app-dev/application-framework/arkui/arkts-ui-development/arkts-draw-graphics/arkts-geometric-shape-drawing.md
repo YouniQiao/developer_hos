@@ -1,6 +1,6 @@
 ---
 title: "绘制几何图形 (Shape)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-geometric-shape-drawing
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-geometric-shape-drawing
 format: md
 ---
 

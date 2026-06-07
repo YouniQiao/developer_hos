@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理网络连接(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-netmanager-guidelines
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion/native-netmanager-guidelines
 format: md
 ---
 

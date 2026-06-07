@@ -1,6 +1,6 @@
 ---
 title: "请求用户授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request_user_authorization
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/request_user_authorization
 format: md
 ---
 
@@ -19,9 +19,9 @@ format: md
 
    ![](./img/43c946b3.png)
 
-   * 请确保向用户请求的权限已在[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)中审批通过，否则会遇到错误码为1008500004的提示。
+   * 请确保向用户请求的权限已在[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)中审批通过，否则会遇到错误码为1008500004的提示。
    * 该功能可以多次调用，如果申请的权限之前已经授予了，不会再弹出授权页面，接口会返回已经授权的权限。
-   * 通过入参的[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#authorizationrequest)对象，获取应用需要的权限。参见步骤3中[权限说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)了解应用所需请求的权限类型。
+   * 通过入参的[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#authorizationrequest)对象，获取应用需要的权限。参见步骤3中[权限说明](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)了解应用所需请求的权限类型。
    * 通过[AuthorizationResponse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#authorizationresponse)对象，返回用户的授权结果。
 
    ```
@@ -51,7 +51,7 @@ format: md
 
 ![](./img/f884edd7.png)
 
-请确保权限已在[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)中审批通过，否则会遇到错误码为1008500004的提示。
+请确保权限已在[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)中审批通过，否则会遇到错误码为1008500004的提示。
 
 1. 应用调用[wearEngine](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api)中的[getAuthClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetauthclient)方法，获取[AuthClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#authclient)对象。
 2. 调用[getAuthorization](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#getauthorization)方法，查询用户已授权的权限。

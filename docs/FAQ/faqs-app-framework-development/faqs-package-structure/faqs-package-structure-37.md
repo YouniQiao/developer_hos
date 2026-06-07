@@ -1,11 +1,11 @@
 ---
 format: md
 title: "HAR如何转换为HSP"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-37
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-37
 ---
 
 
-[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)转为[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)主要是通过修改配置文件实现。具体步骤如下：
+[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)转为[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)主要是通过修改配置文件实现。具体步骤如下：
 
 1. 在HAR的module.json5中，将type字段的值改为“shared”，并配置deliveryWithInstall字段为“true”。
 2. 若HSP需要对外声明可跳转的页面，在module.json5文件中添加pages字段，并在“resources/base”目录下创建“profile/main\_pages.json”文件，配置“src”。

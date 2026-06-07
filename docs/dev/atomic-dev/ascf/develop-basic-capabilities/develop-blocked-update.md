@@ -1,11 +1,11 @@
 ---
 title: "阻断式更新"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-blocked-update
+original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-blocked-update
 format: md
 ---
 
 
-如果希望在用户使用元服务过程中进行版本更新，可以使用阻断式更新的方式进行更新。使用[监听元服务更新检查接口](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#updatemanageroncheckforupdate)，然后在[监听元服务新版本下载完成事件接口](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#updatemanageronupdateready)的回调函数中调用[重启元服务接口](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#updatemanagerapplyupdate)的方式触发更新。
+如果希望在用户使用元服务过程中进行版本更新，可以使用阻断式更新的方式进行更新。使用[监听元服务更新检查接口](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#updatemanageroncheckforupdate)，然后在[监听元服务新版本下载完成事件接口](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#updatemanageronupdateready)的回调函数中调用[重启元服务接口](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#updatemanagerapplyupdate)的方式触发更新。
 
 ![](./img/8c7e0d30.png)
 
@@ -13,12 +13,12 @@ format: md
 
 ![](./img/97a86a8d.png "点击放大")
 
-1. 开发者通过[has.getUpdateManager](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#hasgetupdatemanager)接口获取全局唯一的版本更新管理器对象。
-2. 开发者通过[UpdateManager.onCheckForUpdate](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#updatemanageroncheckforupdate)接口检查元服务是否有可用更新。
+1. 开发者通过[has.getUpdateManager](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#hasgetupdatemanager)接口获取全局唯一的版本更新管理器对象。
+2. 开发者通过[UpdateManager.onCheckForUpdate](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#updatemanageroncheckforupdate)接口检查元服务是否有可用更新。
 3. 如果元服务有可用更新，应用市场将会回调通知给开发者，并尝试下载最新的元服务包。
-4. 开发者通过[UpdateManager.onUpdateReady](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#updatemanageronupdateready)接口检查元服务包是否下载完成，下载完成后会触发回调函数。
+4. 开发者通过[UpdateManager.onUpdateReady](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#updatemanageronupdateready)接口检查元服务包是否下载完成，下载完成后会触发回调函数。
 5. 元服务包下载完成后，需要实现弹窗明确提醒用户是否要进行升级。
-6. 如果用户在弹窗中选择升级，开发者可以调用[UpdateManager.applyUpdate](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager#updatemanagerapplyupdate)方法重启元服务。系统将对元服务进行免安装更新，并在更新成功后以新版本打开元服务。
+6. 如果用户在弹窗中选择升级，开发者可以调用[UpdateManager.applyUpdate](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#updatemanagerapplyupdate)方法重启元服务。系统将对元服务进行免安装更新，并在更新成功后以新版本打开元服务。
 
    如果用户在弹窗中选择不升级，则元服务仍然以旧版本元服务包运行。
 

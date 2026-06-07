@@ -1,7 +1,7 @@
 ---
 format: md
 title: "hdc无法安装包"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-72
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-72
 ---
 
 
@@ -17,5 +17,5 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **解决措施**
 
-1. 可参考常见问题[设备无法识别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#设备无法识别)解决，hdc list targets可正常识别设备后再进行安装包操作。
-2. bm工具侧问题可参考[bm工具错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#bm工具错误码)分析定位。
+1. 可参考常见问题[设备无法识别](/docs/dev/app-dev/system/hdc#设备无法识别)解决，hdc list targets可正常识别设备后再进行安装包操作。
+2. bm工具侧问题可参考[bm工具错误码](/docs/dev/app-dev/system/bm-tool#bm工具错误码)分析定位。

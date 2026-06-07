@@ -1,7 +1,7 @@
 ---
 title: "AdTask"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-adtask-0000001135626850
+original_url: /docs/monetize/promotion/marketapi-modle-adtask-0000001135626850
 format: md
 ---
 
@@ -20,6 +20,6 @@ format: md
 | mediaChannel | O | String | 推荐位类型。  取值范围：   - 243728192482956951：精选推荐 - 389256930994255706：推广 - 243728192482999989：全域推荐 - STARCOUPON：耀星推荐 - SEARCH：应用搜索 - SPARKLESEARCH：焦点展台 - 609388172356808219：创意推广 - 609388166390025910：图文合约-套餐 - 609388166345521113：图文合约-单资源 - 243728192431670031：图文合约-单资源（二叶草） - 243728192430492145：榜单合约 - 609388166675156141：品牌推荐区（新） - 243728192460783726 ：卸载召回-推荐 - 243728192460784109：卸载召回-搜索 - 461314520535104927：NOBID - 389256930704904878：应用促活 - 244367601397077345：大卡智投CPD - 244367601465651123：大卡智投oCPD - 460540374561610146：首页焦点图 |
 | deliverStartTime | O | String | 投放开始时间。 |
 | deliverEndTime | O | String | 投放结束时间。 |
-| deliveryHours | O | List&lt;[DeliveryHour](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-deliveryhour-0000001181826453)&gt; | 投放时段。  允许为空数组。 |
+| deliveryHours | O | List&lt;[DeliveryHour](/docs/monetize/promotion/marketapi-modle-deliveryhour-0000001181826453)&gt; | 投放时段。  允许为空数组。 |
 | price | O | Double | 通用出价。  单位：元 |
 | budget | O | Double | 每日预算。  单位：元 |

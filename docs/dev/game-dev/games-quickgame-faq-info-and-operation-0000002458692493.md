@@ -1,6 +1,6 @@
 ---
 title: "信息配置和运营"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-info-and-operation-0000002458692493
+original_url: /docs/dev/game-dev/games-quickgame-faq-info-and-operation-0000002458692493
 format: md
 ---
 
@@ -53,7 +53,7 @@ format: md
 
 ## 如何停运下架快游戏？
 
-登录华为开发者联盟将快游戏下架，具体操作请参见“[游戏下架](https://developer.huawei.com/consumer/cn/doc/app/game-center-removing-0000001194165316)” 。
+登录华为开发者联盟将快游戏下架，具体操作请参见“[游戏下架](/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316)” 。
 
 ## 游戏更新版本时，如果要变更签名证书，如何处理？
 

@@ -1,6 +1,6 @@
 ---
 title: "弧形按钮 (ArcButton)(圆形屏幕推荐使用)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-advanced-components-arcbutton
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-advanced-components-arcbutton
 format: md
 ---
 
@@ -186,7 +186,7 @@ ArcButton有上弧形按钮和下弧形按钮两种类型。使用[position](htt
 
 在亮度设置界面，进度条显示当前亮度为30%。点击重置后，亮度值将被重置为默认的50%。
 
-运行该示例推荐在Wearable设备上以获得最佳显示效果，同时支持在其他设备上运行。若要在Wearable设备上运行，在src/main目录下的工程配置文件[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中[deviceTypes标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#devicetypes标签)内配置wearable。
+运行该示例推荐在Wearable设备上以获得最佳显示效果，同时支持在其他设备上运行。若要在Wearable设备上运行，在src/main目录下的工程配置文件[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中[deviceTypes标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#devicetypes标签)内配置wearable。
 
 ```
 "module": {

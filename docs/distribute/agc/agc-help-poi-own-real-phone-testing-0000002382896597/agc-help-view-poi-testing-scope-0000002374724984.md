@@ -1,6 +1,6 @@
 ---
 title: "查看POI测试范围"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-poi-testing-scope-0000002374724984
+original_url: /docs/distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-view-poi-testing-scope-0000002374724984
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](../img/agc-help-view-poi-testing-scope-0000002374724984_0.png "点击放大")
 
-如果您确定测试手机已进入POI的200米感应范围内，即可[开始测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-poi-starting-test-0000002374565120)。否则，请“手机位置”输入框中输入测试手机当前的经纬度信息，须精确到小数点后6位，以查看测试手机是否在POI的测试范围内。
+如果您确定测试手机已进入POI的200米感应范围内，即可[开始测试](/docs/distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-poi-starting-test-0000002374565120)。否则，请“手机位置”输入框中输入测试手机当前的经纬度信息，须精确到小数点后6位，以查看测试手机是否在POI的测试范围内。
 
 其中，手机经纬度信息的获取方法，可打开https://lbs.amap.com/tools/picker链接，登录后输入关键词名称后点击“搜索”获取。“坐标获取结果”中逗号前的部分即为经度信息，逗号后的部分即为纬度信 息 。
 

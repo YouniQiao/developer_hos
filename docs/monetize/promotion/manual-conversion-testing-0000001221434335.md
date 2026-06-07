@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/manual-conversion-testing-0000001221434335
+original_url: /docs/monetize/promotion/manual-conversion-testing-0000001221434335
 format: md
 ---
 
@@ -13,10 +13,10 @@ format: md
 
 | 转化跟踪平台 |
 | --- |
-| [Pixel智能跟踪](https://developer.huawei.com/consumer/cn/doc/promotion/dtm-pixel-0000001175770900) |
-| [DTM跟踪](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-js-0000001140151431) |
-| [维纳斯网页跟踪](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-venus-0000001202117526) |
-| [自有分析工具](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-own-analytics-0000001138842000) |
+| [Pixel智能跟踪](/docs/monetize/promotion/dtm-pixel-0000001175770900) |
+| [DTM跟踪](/docs/monetize/promotion/tracking-js-0000001140151431) |
+| [维纳斯网页跟踪](/docs/monetize/promotion/tracking-venus-0000001202117526) |
+| [自有分析工具](/docs/monetize/promotion/tracking-own-analytics-0000001138842000) |
 
 ## 网页测试
 

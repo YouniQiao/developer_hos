@@ -1,6 +1,6 @@
 ---
 title: "接口调用流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-flowchart-match-csharp-0000002395350461
+original_url: /docs/dev/game-dev/gameobe-flowchart-match-csharp-0000002395350461
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/prefer-for-of"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_prefer-for-of
+original_url: /docs/tools/coding-debug/ide_prefer-for-of
 format: md
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "应用程序包开发与使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-dev
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-dev
 ---
 
-* **[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)**
-* **[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)**
-* **[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)**
+* **[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)**
+* **[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)**
+* **[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)**

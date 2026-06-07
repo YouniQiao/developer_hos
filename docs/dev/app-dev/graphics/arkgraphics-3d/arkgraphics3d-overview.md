@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "ArkGraphics 3D简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-overview
+original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-overview
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "显式Want与隐式Want匹配规则"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings
 format: md
 ---
 
@@ -44,7 +44,7 @@ format: md
 从隐式Want的定义，可得知：
 
 * 调用方传入的want参数，表明调用方需要执行的操作，并提供相关数据以及其他应用类型限制。
-* 待匹配应用组件的skills配置，声明其具备的能力（[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中的[skills标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)参数）。
+* 待匹配应用组件的skills配置，声明其具备的能力（[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中的[skills标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)参数）。
 
 系统将调用方传入的want参数（包含action、entities、uri、type和parameters属性）与已安装待匹配应用组件的skills配置（包含actions、entities、uris和type属性）进行匹配。当want参数五个属性匹配均未配置，隐式匹配失败。
 

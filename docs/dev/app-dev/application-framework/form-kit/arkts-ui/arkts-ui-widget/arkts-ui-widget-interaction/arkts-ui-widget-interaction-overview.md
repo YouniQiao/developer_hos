@@ -1,6 +1,6 @@
 ---
 title: "ArkTS卡片页面刷新概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-interaction-overview
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction/arkts-ui-widget-interaction-overview
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ArkTS卡片管理服务支持卡片提供方（例如：应用）和卡片之间的数据交互。卡片通过[postCardAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-postcardaction#postcardaction-1)传递数据给卡片提供方，卡片提供方则通过[updateForm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider#formproviderupdateform)接口传递数据给卡片。卡片提供方将数据提供给卡片后，可以用于卡片页面刷新等。
 
-由于卡片提供方和卡片为相互独立的进程，两者间的数据共享只能通过[LocalStorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorageprop)传递，不能使用getContext方法。因此卡片提供方推送数据后，卡片UI需要通过LocalStorageProp接收数据，且接收数据时，卡片数据会被转换成string类型。
+由于卡片提供方和卡片为相互独立的进程，两者间的数据共享只能通过[LocalStorageProp](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage#localstorageprop)传递，不能使用getContext方法。因此卡片提供方推送数据后，卡片UI需要通过LocalStorageProp接收数据，且接收数据时，卡片数据会被转换成string类型。
 
 ## 页面刷新分类
 
@@ -19,7 +19,7 @@ ArkTS卡片管理服务支持卡片提供方（例如：应用）和卡片之间
 
 ### 主动刷新
 
-主动刷新包括卡片提供方主动刷新卡片和卡片使用方主动刷新卡片。开发指导请参考[ArkTS卡片主动刷新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-active-refresh)。
+主动刷新包括卡片提供方主动刷新卡片和卡片使用方主动刷新卡片。开发指导请参考[ArkTS卡片主动刷新](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction/arkts-ui-widget-active-refresh)。
 
 **图1 卡片提供方主动刷新卡片流程图**
 
@@ -35,7 +35,7 @@ ArkTS卡片管理服务支持卡片提供方（例如：应用）和卡片之间
 
 ### 被动刷新
 
-被动刷新包括定时刷新、定点刷新。开发指导请参考[ArkTS卡片被动刷新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-passive-refresh)。
+被动刷新包括定时刷新、定点刷新。开发指导请参考[ArkTS卡片被动刷新](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction/arkts-ui-widget-passive-refresh)。
 
 卡片定时刷新：表示在一定时间间隔内调用[onUpdateForm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability#formextensionabilityonupdateform)的生命周期回调函数自动刷新卡片内容。
 

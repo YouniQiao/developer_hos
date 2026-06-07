@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "预下单请求报错“交易订单状态异常”？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-12
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-12
 format: md
 ---
 

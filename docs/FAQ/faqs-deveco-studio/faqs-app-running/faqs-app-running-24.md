@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何增加模拟器运行内存"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-24
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-24
 ---
 
 

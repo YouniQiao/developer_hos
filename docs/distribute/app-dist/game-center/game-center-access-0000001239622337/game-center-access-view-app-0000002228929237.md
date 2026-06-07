@@ -1,7 +1,7 @@
 ---
 title: "APP游戏接入"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-access-view-app-0000002228929237
+original_url: /docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-access-view-app-0000002228929237
 format: md
 ---
 

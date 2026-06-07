@@ -1,6 +1,6 @@
 ---
 title: "选取软件包版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-choose-pkg-0000002365569342
+original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-choose-pkg-0000002365569342
 format: md
 ---
 
@@ -9,10 +9,10 @@ format: md
 
 #### 前提条件
 
-[已上传软件包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-upload-pkg-0000002399249081)，且游戏软件包同时满足如下条件：
+[已上传软件包](/docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-upload-pkg-0000002399249081)，且游戏软件包同时满足如下条件：
 
 * 游戏软件包的“使用场景”是“测试和正式上架”。
-* [检测软件包的合法性](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-upload-pkg-0000002399249081#section965714815550)结果为“已达标”。
+* [检测软件包的合法性](/docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-upload-pkg-0000002399249081#section965714815550)结果为“已达标”。
 
 #### 操作步骤
 
@@ -25,7 +25,7 @@ format: md
 
    ![](../img/agc-help-release-game-choose-pkg-0000002365569342_1.png)
 5. 若游戏软件包API Level ≥ 11，要求设置是否加密软件包：
-   * （推荐）加密：玩家在手机设备上安装的是加密后的游戏软件包，安全性较高。加密游戏软件包的影响和效果请参见[应用加密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-protect)。
+   * （推荐）加密：玩家在手机设备上安装的是加密后的游戏软件包，安全性较高。加密游戏软件包的影响和效果请参见[应用加密](/docs/dev/app-dev/system/system-security/code-protect)。
    * 不加密：玩家在手机设备上安装的是不加密的游戏软件包，游戏的启动速度较快。
 
    ![](../img/agc-help-release-game-choose-pkg-0000002365569342_2.png)

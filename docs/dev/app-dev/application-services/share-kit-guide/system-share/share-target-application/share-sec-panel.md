@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分享详情页处理分享内容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-sec-panel
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-sec-panel
 format: md
 ---
 
 
 分享详情页能力基于[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability)界面嵌入能力。目标应用可以通过[ShareExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-shareextensionability)构建接收分享内容的分享详情页，并将应用显示到分享面板应用推荐区内，通过分享详情页便捷的处理分享内容。开发时需要接入方实现[ShareExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-shareextensionability)并于module.json5中注册支持分享内容的能力。
 
-通过此方式注册的应用，点击时将跳转到分享详情页，也可返回分享面板。参见：[分享详情页面](https://developer.huawei.com/consumer/cn/doc/design-guides/share-0000001957076313#section27599419404)。
+通过此方式注册的应用，点击时将跳转到分享详情页，也可返回分享面板。参见：[分享详情页面](/docs/design/system-features/capabilities/share#section27599419404)。
 
 ## 开发步骤
 
@@ -38,7 +38,7 @@ format: md
      }
    }
    ```
-3. （可选）社交类应用可通过[意图框架](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-introduction)捐献联系人推荐信息。当用户在推荐区选择联系人进行内容分享时，社交应用注册的Ability可从接收的want数据中获取到联系人信息，直接分享数据到指定用户。
+3. （可选）社交类应用可通过[意图框架](/docs/dev/app-dev/ai/intents-kit-guide/intents-introduction)捐献联系人推荐信息。当用户在推荐区选择联系人进行内容分享时，社交应用注册的Ability可从接收的want数据中获取到联系人信息，直接分享数据到指定用户。
 
    ```
    export default class TestShareAbility extends ShareExtensionAbility {
@@ -57,7 +57,7 @@ format: md
      }
    }
    ```
-4. 构建完分享能力Ability，需要在应用配置文件（src/main/module.json5）的[skills](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)配置中注册。配置actions为ohos.want.action.sendData，并且uris需穷举所有支持的数据类型。
+4. 构建完分享能力Ability，需要在应用配置文件（src/main/module.json5）的[skills](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)配置中注册。配置actions为ohos.want.action.sendData，并且uris需穷举所有支持的数据类型。
 
    ```
    "extensionAbilities": [

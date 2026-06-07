@@ -1,6 +1,6 @@
 ---
 title: "使用普通链接二维码跳转元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-qrlinking
+original_url: /docs/dev/atomic-dev/atomic-linking/atomic-qrlinking
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 ## 前提条件
 
 * 您的账号是[企业开发者](https://developer.huawei.com/consumer/cn/doc/start/edrna-0000001062678489)账号。
-* 您已在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)（简称AGC）上，[创建项目](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048)且[创建元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-atomic-service-0000002247795706)。
+* 您已在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)（简称AGC）上，[创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)且[创建元服务](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-atomic-service-0000002247795706)。
 * 您已在AGC[开通App Linking服务](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-applinking-enable-0000001058870473)。
 
 ## 接入普通链接二维码开发指导
@@ -51,7 +51,7 @@ format: md
 
    ![](./img/039a6303.png)
 
-   * appIdentifier填写创建元服务时生成的APP ID，获取方式请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。
+   * appIdentifier填写创建元服务时生成的APP ID，获取方式请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。
    * 同一个网站域名可以关联多个元服务，只需要在"atomicServices"列表里放置多个"appIdentifier"元素即可，其中每个"appIdentifier"元素对应每个元服务。
 2. 将配置文件放在域名服务器的固定目录下：
 
@@ -73,7 +73,7 @@ format: md
 
    ![](./img/153cd2da.png)
 
-   如果您尚未开通App Linking服务，将进入App Linking介绍页面，请点击“立即使用”并[设置数据处理位置](https://developer.huawei.com/consumer/cn/doc/app/agc-help-data-location-0000002277923065#section154810363471)。
+   如果您尚未开通App Linking服务，将进入App Linking介绍页面，请点击“立即使用”并[设置数据处理位置](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-data-location-0000002277923065#section154810363471)。
 
    ![](./img/3394b459.png)
 4. 创建元服务链接，点击“保存”或者“发布”。
@@ -84,10 +84,10 @@ format: md
    | --- | --- |
    | 名称 | 配置元服务链接的名称。 |
    | 链接URL | 配置元服务链接：  前缀为平台固定域名，开发者不能修改或自定义；后缀字符串，默认由AGC自动生成，如需自行定义，应确保该字符串唯一且长度不超过100位。  说明：  后缀字符串只能包含英文字母（a-z、A-Z）、数字（0-9）、下划线“\_”和连字符“-”。 |
-   | 链接URL预览 | 预览完整的元服务链接，支持复制。  说明：  （可选）开发者在使用元服务链接时，支持在链接URL后拼接动态自定义参数，用于精确定位到元服务指定页面。无需在AGC平台进行额外配置，直接拼接**?**加**key=value**键值对，多个键值对之间以“&”分隔。  链接示例：https://hoas.drcn.agconnect.link/9P7g**?****key1=value1&key2=value2**  具体请参见[使用动态自定义参数跳转到指定的页面](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking#section1620481746)。 |
+   | 链接URL预览 | 预览完整的元服务链接，支持复制。  说明：  （可选）开发者在使用元服务链接时，支持在链接URL后拼接动态自定义参数，用于精确定位到元服务指定页面。无需在AGC平台进行额外配置，直接拼接**?**加**key=value**键值对，多个键值对之间以“&”分隔。  链接示例：https://hoas.drcn.agconnect.link/9P7g**?****key1=value1&key2=value2**  具体请参见[使用动态自定义参数跳转到指定的页面](/docs/dev/atomic-dev/atomic-linking/atomic-applinking#section1620481746)。 |
    | 元服务 | 需要配置链接的元服务的名称，支持复制。 |
-   | （可选）自定义参数 | 配置静态自定义参数，用于精确定位到元服务指定页面。需要按key=value的键值对形式输入，多个键值对之间以“&”分隔。例如：key1=value1&key2=value2&key3=value3...  具体请参见[使用静态自定义参数跳转到指定的页面](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking#section125451919568)。 |
-   | 是否关联二维码 | 是否将元服务与普通链接二维码进行关联。  本章节介绍如何使用普通链接二维码跳转元服务，请选择“关联”。  说明：  如果选择“不关联”，请参见[使用元服务链接跳转元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking)。 |
+   | （可选）自定义参数 | 配置静态自定义参数，用于精确定位到元服务指定页面。需要按key=value的键值对形式输入，多个键值对之间以“&”分隔。例如：key1=value1&key2=value2&key3=value3...  具体请参见[使用静态自定义参数跳转到指定的页面](/docs/dev/atomic-dev/atomic-linking/atomic-applinking#section125451919568)。 |
+   | 是否关联二维码 | 是否将元服务与普通链接二维码进行关联。  本章节介绍如何使用普通链接二维码跳转元服务，请选择“关联”。  说明：  如果选择“不关联”，请参见[使用元服务链接跳转元服务](/docs/dev/atomic-dev/atomic-linking/atomic-applinking)。 |
    | 链接匹配规则 | 配置跳转元服务的二维码链接的匹配规则。  注意：  请提前[建立域名与元服务关联关系](#section2707831131517)，否则链接匹配规则校验不通过，无法成功发布元服务链接。  **链接匹配规则组成部分：** 1. （必选）协议：仅支持http或https，精确匹配。 2. （必选）域名：精确匹配。 3. （可选）子路径：    1. 如果链接匹配规则以/结尾，则匹配任意以该规则为前缀的子路径。    2. 如果链接匹配规则不以/结尾，则不支持子路径匹配：       1. &#123;协议+域名+子路径&#125;与链接匹配规则一致，匹配成功。       2. &#123;协议+域名+子路径&#125;与链接匹配规则不一致时，匹配失败。 4. （可选）动态参数：在URL中的“?”后，采用前缀匹配（即必须以链接匹配规则中配置的动态参数开始）。  **链接匹配规则示例：**  * 示例1：https://www.example.com/a 二维码链接可以是**https://www.example.com/a**、**https://www.example.com/a?t=2**等结构，不能是**https://www.example.com/a****/****b**的结构。 * 示例2：https://www.example.com/a/ 二维码链接可以是**https://www.example.com/a/****b**、**https://www.example.com/a/b?t=1**、**https://www.example.com/a/b?t=1****&f=2**等结构。 * 示例3：https://www.example.com/a?t=1 二维码链接必须以**https://www.example.com/a?t=1**开头，可以是**https://www.example.com****/a?t=1**、**https://www.example.com/a?t=1****&f=2**等结构，不能是**https://www.example.com/a?t=12**的结构。 **链接匹配规则限制：**  1. 链接匹配规则具有全局唯一性，不能配置完全相同的链接匹配规则。 2. 每个元服务最多关联100个链接匹配规则。 |
    | （可选）测试链接 | 填写用于测试的二维码完整链接。如果测试链接和**链接匹配规则**不符合，界面将提示配置错误。  此步骤用于提前验证配置的链接匹配规则，确保配置的二维码链接能准确跳转到元服务。  多个测试链接使用英文分号分隔，例如：https://www.example.com/a/b;https://www.example.com/a/b?t=1 |
    | 前缀占用规则 | 选择是否占用符合二维码匹配规则的所有子规则。  默认选择占用，表示其他元服务不可配置该元服务设置的前缀匹配规则的子规则。 |

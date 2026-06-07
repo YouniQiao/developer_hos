@@ -1,6 +1,6 @@
 ---
 title: "读取实时三环数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-three-ring-read-as
+original_url: /docs/dev/atomic-dev/health-app-dev-as/health-three-ring-read-as
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](./img/70a1a0a3.png)
 
-此接口使用日常活动数据类型读权限，参考[权限说明](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-permission-description-as)。
+此接口使用日常活动数据类型读权限，参考[权限说明](/docs/dev/atomic-dev/health-data-type-as/health-permission-description-as)。
 
 ## 接口说明
 
@@ -21,9 +21,9 @@ format: md
 
 ## 开发前检查
 
-* 完成[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-apply-as)与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-configuration-client-id-as)。
+* 完成[申请运动健康服务](/docs/dev/atomic-dev/health-preparations-as/health-apply-as)与[配置Client ID](/docs/dev/atomic-dev/health-preparations-as/health-configuration-client-id-as)。
 * 接口首次调用前，需先使用[init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoreinit)方法进行初始化。
-* 需先通过[用户授权](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-add-permissions-as#用户授权)接口引导用户授权，用户授权日常活动数据类型读权限（参考[权限说明](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-permission-description-as)）后，才有权限读取实时三环数据。
+* 需先通过[用户授权](/docs/dev/atomic-dev/health-app-dev-as/health-add-permissions-as#用户授权)接口引导用户授权，用户授权日常活动数据类型读权限（参考[权限说明](/docs/dev/atomic-dev/health-data-type-as/health-permission-description-as)）后，才有权限读取实时三环数据。
 * 错误码请参考[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)。
 
 ## 开发步骤

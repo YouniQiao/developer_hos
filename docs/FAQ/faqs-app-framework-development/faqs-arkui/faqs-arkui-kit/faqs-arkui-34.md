@@ -1,6 +1,6 @@
 ---
 title: "如何监听当前屏幕的横竖屏状态？如何实现页面跟随屏幕横竖屏自动旋转"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-34
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-34
 format: md
 ---
 

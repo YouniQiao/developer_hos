@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用Router跳转导致闪退，可能是什么原因，如何排查"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-388
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-388
 ---
 
 
@@ -77,4 +77,4 @@ this.getUIContext().getRouter().pushUrl({
 
 子场景二：用-keep保留oh\_modules文件夹下对应的har包来避免混淆：在obfuscation-rules.txt文件里配置，用-keep ./oh\_modules/har-name。
 
-关于混淆的用法可以参考：[ArkGuard混淆常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-questions)。
+关于混淆的用法可以参考：[ArkGuard混淆常见问题](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-questions)。

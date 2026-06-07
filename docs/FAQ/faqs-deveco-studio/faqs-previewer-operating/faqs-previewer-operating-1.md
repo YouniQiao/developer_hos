@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何设置DevEco Studio的预览功能的屏幕像素值"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-1
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-1
 ---
 
 

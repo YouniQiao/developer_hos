@@ -1,6 +1,6 @@
 ---
 title: "准备游戏信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-gameinformation-0000002361670424
+original_url: /docs/dev/game-dev/gameobe-gameinformation-0000002361670424
 format: md
 ---
 

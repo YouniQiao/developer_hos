@@ -1,17 +1,17 @@
 ---
 title: "使用Web组件菜单处理网页内容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu
 format: md
 ---
 
 
-菜单作为用户交互的关键组件，其作用是构建清晰的导航体系，通过结构化布局展示功能入口，使用户能够迅速找到目标内容或执行操作。作为人机交互的重要枢纽，它显著提升了Web组件的可访问性和用户体验，是应用设计中必不可少的部分。Web组件菜单类型包括[文本选中菜单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu#文本选中菜单)、[上下文菜单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu#上下文菜单)和[自定义菜单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu#自定义菜单)，应用可根据具体需求灵活选择。
+菜单作为用户交互的关键组件，其作用是构建清晰的导航体系，通过结构化布局展示功能入口，使用户能够迅速找到目标内容或执行操作。作为人机交互的重要枢纽，它显著提升了Web组件的可访问性和用户体验，是应用设计中必不可少的部分。Web组件菜单类型包括[文本选中菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#文本选中菜单)、[上下文菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#上下文菜单)和[自定义菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#自定义菜单)，应用可根据具体需求灵活选择。
 
 | 菜单类型 | 目标元素 | 响应类型 | 是否支持自定义 |
 | --- | --- | --- | --- |
-| [文本选中菜单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu#文本选中菜单) | 文本 | 手势长按 | 可增减菜单项，菜单样式不可自定义 |
-| [上下文菜单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu#上下文菜单) | 超链接、图片、文字 | 手势长按、鼠标右键 | 支持通过菜单组件自定义 |
-| [自定义菜单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu#自定义菜单) | 图片 | 手势长按 | 支持通过菜单组件自定义 |
+| [文本选中菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#文本选中菜单) | 文本 | 手势长按 | 可增减菜单项，菜单样式不可自定义 |
+| [上下文菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#上下文菜单) | 超链接、图片、文字 | 手势长按、鼠标右键 | 支持通过菜单组件自定义 |
+| [自定义菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#自定义菜单) | 图片 | 手势长按 | 支持通过菜单组件自定义 |
 
 ## 文本选中菜单
 
@@ -376,7 +376,7 @@ struct WebComponent {
 
 自API version 20起，支持绑定长按超链接菜单。可以为图片和链接绑定不同的自定义菜单。
 
-以下示例中，PreviewBuilder定义了超链接对应菜单的弹出内容，用Web组件加载了超链接内容（需要注意PreviewBuilder中的Web组件不会接收事件），使用[Progress组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-progress-indicator)展示了加载进度。
+以下示例中，PreviewBuilder定义了超链接对应菜单的弹出内容，用Web组件加载了超链接内容（需要注意PreviewBuilder中的Web组件不会接收事件），使用[Progress组件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/arkts-common-components-progress-indicator)展示了加载进度。
 
 ```
 import { webview } from '@kit.ArkWeb';

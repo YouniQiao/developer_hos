@@ -1,7 +1,7 @@
 ---
 format: md
 title: "系统播放器AVPlayer支持的流媒体协议与功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-2
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-media-kit/faqs-media-2
 ---
 
 

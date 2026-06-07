@@ -1,7 +1,7 @@
 ---
 title: "批量编辑创意状态"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-creative4-0000001286019418
+original_url: /docs/monetize/promotion/marketing-api-advertising-creative4-0000001286019418
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
   | creative\_ids | long[] | 是 | 创意ID。 |
-  | op\_type | string | 是 | 操作类型，详见[操作类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section6618155418172)。  1.原状态为删除，不可更新；  2.启动操作需要保证创意原状态是暂停状态；  3.暂停操作保证创意是启动状态；  4.删除操作保证创意未删除。 |
+  | op\_type | string | 是 | 操作类型，详见[操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section6618155418172)。  1.原状态为删除，不可更新；  2.启动操作需要保证创意原状态是暂停状态；  3.暂停操作保证创意是启动状态；  4.删除操作保证创意未删除。 |
 
   - <strong>请求示例</strong>
 

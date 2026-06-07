@@ -1,14 +1,14 @@
 ---
 title: "介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-overview
+original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-overview
 format: md
 ---
 
 
-* **[组件模板与数据绑定](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-template)**
-* **[组件 hxml 的 slot](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-hxml-slot)**
-* **[组件样式及隔离策略](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-style-isolation)**
-* **[Component](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-component)**
-* **[组件生命周期](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-lifecycle)**
-* **[创建自定义组件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-creation)**
-* **[使用自定义组件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-usage)**
+* **[组件模板与数据绑定](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-template)**
+* **[组件 hxml 的 slot](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-hxml-slot)**
+* **[组件样式及隔离策略](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-style-isolation)**
+* **[Component](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-component)**
+* **[组件生命周期](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-lifecycle)**
+* **[创建自定义组件](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-creation)**
+* **[使用自定义组件](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-usage)**

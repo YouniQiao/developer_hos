@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口设置ArkTS对象的属性"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property
+original_url: /docs/dev/ndk-dev/use-napi-about-property
 format: md
 ---
 
@@ -38,7 +38,7 @@ format: md
 
 ## 使用示例
 
-Node-API接口开发流程可参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文展示接口对应C++及ArkTS代码。
+Node-API接口开发流程可参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文展示接口对应C++及ArkTS代码。
 
 ### napi\_get\_property\_names
 

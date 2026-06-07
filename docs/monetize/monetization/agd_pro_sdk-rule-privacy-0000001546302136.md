@@ -1,7 +1,7 @@
 ---
 title: "隐私声明"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk-rule-privacy-0000001546302136
+original_url: /docs/monetize/monetization/agd_pro_sdk-rule-privacy-0000001546302136
 format: md
 ---
 
@@ -15,4 +15,4 @@ format: md
 3. 广告服务仅供成年人使用，对于注册未满14周岁的华为帐号，不会推送任何广告。如果用户是未成年人，则需要其监护人同意使用广告服务。您必须在AGD Pro服务平台接口中区分最终用户是否是未成年人。
 4. AGD Pro服务有权对您的数据合规性进行监督，如发现存在不合规的情形，则有权要求您完善相应的合规机制，您关于用户隐私的全部义务和责任不因我们的风险评估权利而构成任何形式的豁免。
 5. 国内用户的个人信息将被保留不超过2年，用户的所属国家/地区与个人信息存储位置在中国大陆境内。
-6. AGD Pro服务SDK隐私安全说明具体请参见[SDK数据安全说明](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_data-security-0000001192665648)。
+6. AGD Pro服务SDK隐私安全说明具体请参见[SDK数据安全说明](/docs/monetize/monetization/agd_pro_sdk_data-security-0000001192665648)。

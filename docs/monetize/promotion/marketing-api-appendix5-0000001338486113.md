@@ -1,7 +1,7 @@
 ---
 title: "参数描述说明"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix5-0000001338486113
+original_url: /docs/monetize/promotion/marketing-api-appendix5-0000001338486113
 format: md
 ---
 

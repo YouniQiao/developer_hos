@@ -1,6 +1,6 @@
 ---
 title: "语言测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/linguistic-testing
+original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n-testing/linguistic-testing
 format: md
 ---
 

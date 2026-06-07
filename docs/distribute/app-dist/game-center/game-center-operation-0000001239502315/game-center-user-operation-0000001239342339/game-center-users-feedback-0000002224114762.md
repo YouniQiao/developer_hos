@@ -1,7 +1,7 @@
 ---
 title: "用户反馈管理"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-users-feedback-0000002224114762
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-users-feedback-0000002224114762
 format: md
 ---
 

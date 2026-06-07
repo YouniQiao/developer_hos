@@ -1,6 +1,6 @@
 ---
 title: "添加输入框文本事件监听"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-textarea-event
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk/ndk-textarea-event
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 要实现用户编辑文字前后页面布局的不同，可注册[NODE\_TEXT\_AREA\_ON\_EDIT\_CHANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)事件，输入框编辑状态切换时会收到通知。
 
-以下示例基于[接入ArkTS页面章节](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)，说明如何监听输入框的事件及数据解析。
+以下示例基于[接入ArkTS页面章节](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)，说明如何监听输入框的事件及数据解析。
 
 * 注册事件
 

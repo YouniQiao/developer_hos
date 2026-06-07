@@ -1,6 +1,6 @@
 ---
 title: "获取用户目录环境(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-environment-guidelines
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/native-environment-guidelines
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 ## 约束限制
 
 * 使用此接口，需确认设备具有以下系统能力：SystemCapability.FileManagement.File.Environment.FolderObtain。
-* 此接口仅用作公共沙箱目录路径的获取接口，操作对应的公共目录及其子目录需获取通过弹窗授权方式向用户申请授予对应目录的权限，具体参考[访问控制-向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+* 此接口仅用作公共沙箱目录路径的获取接口，操作对应的公共目录及其子目录需获取通过弹窗授权方式向用户申请授予对应目录的权限，具体参考[访问控制-向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ## 接口说明
 

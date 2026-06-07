@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "无法获取到头像昵称如何解决"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-8
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-8
 format: md
 ---
 

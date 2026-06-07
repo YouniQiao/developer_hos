@@ -1,7 +1,7 @@
 ---
 title: "申诉流程"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk-rule-appeal-0000001546142384
+original_url: /docs/monetize/monetization/agd_pro_sdk-rule-appeal-0000001546142384
 format: md
 ---
 

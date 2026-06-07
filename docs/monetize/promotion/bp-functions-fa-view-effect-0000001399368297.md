@@ -1,7 +1,7 @@
 ---
 title: "查看推广效果"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-fa-view-effect-0000001399368297
+original_url: /docs/monetize/promotion/bp-functions-fa-view-effect-0000001399368297
 format: md
 ---
 

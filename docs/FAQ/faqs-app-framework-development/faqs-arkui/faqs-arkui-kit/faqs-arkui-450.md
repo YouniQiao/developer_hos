@@ -1,7 +1,7 @@
 ---
 format: md
 title: "TextInput、TextArea等组件如何禁止提示拍摄输入"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-450
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-450
 ---
 
 

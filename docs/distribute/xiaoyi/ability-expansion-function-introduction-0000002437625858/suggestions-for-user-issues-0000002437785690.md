@@ -1,7 +1,7 @@
 ---
 title: "用户问题建议"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/suggestions-for-user-issues-0000002437785690
+original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/suggestions-for-user-issues-0000002437785690
 format: md
 ---
 

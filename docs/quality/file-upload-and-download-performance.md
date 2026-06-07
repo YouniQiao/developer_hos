@@ -1,6 +1,6 @@
 ---
 title: "文件上传下载优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-file-upload-and-download-performance
+original_url: /docs/quality/file-upload-and-download-performance
 format: md
 ---
 

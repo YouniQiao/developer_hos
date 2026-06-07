@@ -1,6 +1,6 @@
 ---
 title: "子服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-items
+original_url: /docs/dev/atomic-dev/instant-service-app-items/instant-service-app-items
 format: md
 ---
 

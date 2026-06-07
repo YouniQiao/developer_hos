@@ -1,6 +1,6 @@
 ---
 title: "超帧和ABR支持的图形API有哪些"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-1
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-rendering-faq/graphics-accelerate-faq-1
 format: md
 ---
 

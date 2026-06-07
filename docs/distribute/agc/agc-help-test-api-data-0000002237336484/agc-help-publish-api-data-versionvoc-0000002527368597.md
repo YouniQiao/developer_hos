@@ -1,6 +1,6 @@
 ---
 title: "VersionVocReq"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-versionvoc-0000002527368597
+original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-publish-api-data-versionvoc-0000002527368597
 format: md
 ---
 

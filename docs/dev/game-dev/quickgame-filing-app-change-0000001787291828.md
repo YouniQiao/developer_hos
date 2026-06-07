@@ -1,6 +1,6 @@
 ---
 title: "变更核准（备案）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-change-0000001787291828
+original_url: /docs/dev/game-dev/quickgame-filing-app-change-0000001787291828
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
    ![](./img/fabf1261.png)
 5. 华为工作人员将在3~5个工作日内进行审核，将以短信或邮件形式通知审核结果，请耐心等待，且保持手机通畅。若需要修改核准（备案）信息，将以邮件形式通知。
-6. 在华为平台通过人工初审后，需前往工信部网站核验短信验证码，详情请参见[工信部核验核验（备案）短信](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-sms-verify-0000001818117885)。
+6. 在华为平台通过人工初审后，需前往工信部网站核验短信验证码，详情请参见[工信部核验核验（备案）短信](/docs/dev/game-dev/quickgame-filing-sms-verify-0000001818117885)。
 
 ## 变更主体
 
@@ -38,7 +38,7 @@ format: md
 
    ![](./img/8782e90b.png)
 4. 华为工作人员将在3~5个工作日内进行审核，将以短信或邮件形式通知审核结果，请耐心等待，且保持手机通畅。若需要修改核准（备案）信息，将以邮件形式通知。
-5. 在华为平台通过人工初审后，需前往工信部网站核验短信验证码，详情请参见[工信部核验核验（备案）短信](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-sms-verify-0000001818117885)。
+5. 在华为平台通过人工初审后，需前往工信部网站核验短信验证码，详情请参见[工信部核验核验（备案）短信](/docs/dev/game-dev/quickgame-filing-sms-verify-0000001818117885)。
 
 ## 变更互联网信息
 
@@ -55,4 +55,4 @@ format: md
 
    ![](./img/d031e616.png)
 5. 华为工作人员将在3~5个工作日内进行审核，将以短信或邮件形式通知审核结果，请耐心等待，且保持手机通畅。若需要修改核准（备案）信息，将以邮件形式通知。
-6. 在华为平台通过人工初审后，需前往工信部网站核验短信验证码，详情请参见[工信部核验核验（备案）短信](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-sms-verify-0000001818117885)。
+6. 在华为平台通过人工初审后，需前往工信部网站核验短信验证码，详情请参见[工信部核验核验（备案）短信](/docs/dev/game-dev/quickgame-filing-sms-verify-0000001818117885)。

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "hdc调试设备报错：hdc server port XXXX has been used，切换端口无效"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-75
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-75
 ---
 
 

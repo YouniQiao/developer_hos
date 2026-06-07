@@ -1,6 +1,6 @@
 ---
 title: "账号"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754
+original_url: /docs/dev/game-dev/games-quickgame-faq-account-0000002425293754
 format: md
 ---
 
@@ -9,14 +9,14 @@ format: md
 
 ### 调用登录接口时，出现“auth fail -1”的错误，如何处理？
 
-出现此错误，表示鉴权失败。如果调试时使用打包的正式版本，版本中使用的指纹证书与[华为开发者联盟配置的指纹证书](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-generate-fingerprint-0000002318054644)保持一致。
+出现此错误，表示鉴权失败。如果调试时使用打包的正式版本，版本中使用的指纹证书与[华为开发者联盟配置的指纹证书](/docs/dev/game-dev/games-quickgame-generate-fingerprint-0000002318054644)保持一致。
 
 ### 调用登录接口时，出现6004的错误码，如何处理？
 
 出现此错误，请检查如下几点：
 
-1. 是否已经[打开游戏服务API开关](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li1450624175912)和[打开华为账号API开关](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li9525185314593)。
-2. 登录传入的参数appid是否和华为开发者联盟获取的保持一致。获取方式请参见[获取APP ID](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-account-kit-0000002317894820#section1148753814717)。
+1. 是否已经[打开游戏服务API开关](/docs/dev/game-dev/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li1450624175912)和[打开华为账号API开关](/docs/dev/game-dev/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li9525185314593)。
+2. 登录传入的参数appid是否和华为开发者联盟获取的保持一致。获取方式请参见[获取APP ID](/docs/dev/game-dev/games-quickgame-enable-account-kit-0000002317894820#section1148753814717)。
 3. RPK包使用的指纹证书是否与AGC控制台配置账号服务时填写的一致。
 
 如果以上配置没有问题，可能是网关权限有延迟，请在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)多次尝试关闭再重新开通账号服务和游戏服务，清空 HMS Core 的数据，同时清除手机应用设置中花瓣轻游的缓存和数据。
@@ -103,7 +103,7 @@ format: md
 
 ### 校验登录签名时返回-1，\&#123;"errMsg":"[4001]can not find publicKey of the cp:xxxxxx"\&#125;，如何处理？
 
-出现此错误信息，一般是CPID值传递错误，请检查此参数，必须与申请应用内支付服务时获取的“[支付ID](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-account-kit-0000002317894820#section17706640132116)”保持一致。
+出现此错误信息，一般是CPID值传递错误，请检查此参数，必须与申请应用内支付服务时获取的“[支付ID](/docs/dev/game-dev/games-quickgame-enable-account-kit-0000002317894820#section17706640132116)”保持一致。
 
 ### 快游戏如何校验登录签名？
 

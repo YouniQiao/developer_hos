@@ -1,7 +1,7 @@
 ---
 title: "@performance/update-state-var-between-animatetos-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-update-state-var-between-animatetos-check
+original_url: /docs/tools/coding-debug/ide-update-state-var-between-animatetos-check
 format: md
 ---
 

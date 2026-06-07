@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation组件，使用customNavContentTransition自定义转场动效，如何实现动效逻辑跟组件解耦"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-432
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-432
 ---
 
 

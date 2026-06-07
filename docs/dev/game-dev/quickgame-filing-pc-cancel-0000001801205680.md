@@ -1,6 +1,6 @@
 ---
 title: "取消接入"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-cancel-0000001801205680
+original_url: /docs/dev/game-dev/quickgame-filing-pc-cancel-0000001801205680
 format: md
 ---
 

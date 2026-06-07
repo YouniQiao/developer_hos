@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Tab组件页面切换时，如何不显示中间过渡的tab页"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-328
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-328
 ---
 
 

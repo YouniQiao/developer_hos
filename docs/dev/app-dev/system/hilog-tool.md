@@ -1,6 +1,6 @@
 ---
 title: "hilogtool"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool
+original_url: /docs/dev/app-dev/system/hilog-tool
 format: md
 ---
 

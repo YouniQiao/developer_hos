@@ -1,18 +1,18 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用PixelMap完成图像变换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-transformation
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-transformation
 format: md
 ---
 
 
-图片处理指对PixelMap进行相关的操作，如获取图片信息、裁剪、缩放、偏移、旋转、翻转、设置透明度、读写像素数据等。图片处理主要包括图像变换、[位图操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation)，本文介绍图像变换。
+图片处理指对PixelMap进行相关的操作，如获取图片信息、裁剪、缩放、偏移、旋转、翻转、设置透明度、读写像素数据等。图片处理主要包括图像变换、[位图操作](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-pixelmap-operation)，本文介绍图像变换。
 
 ## 开发步骤
 
 图像变换相关API的详细介绍请参见[API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)。
 
-1. 完成[图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)，获取PixelMap对象。
+1. 完成[图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)，获取PixelMap对象。
 2. 获取图片信息。
 
    ```

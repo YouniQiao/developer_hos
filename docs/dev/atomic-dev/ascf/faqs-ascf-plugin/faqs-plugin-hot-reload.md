@@ -1,6 +1,6 @@
 ---
 title: "在DevEco Studio无法开启热重载功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-plugin-hot-reload
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-hot-reload
 format: md
 ---
 
@@ -15,4 +15,4 @@ ASCF Plugin版本低于最低依赖版本要求。
 
 **解决措施**
 
-请将ASCF Plugin版本升级至1.0.4.200以上，方法请参考：[自动升级ASCF Plugin](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-plugin#自动升级ascf-plugin)。
+请将ASCF Plugin版本升级至1.0.4.200以上，方法请参考：[自动升级ASCF Plugin](/docs/dev/atomic-dev/ascf/ascf-plugin#自动升级ascf-plugin)。

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "场景体验"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec-scene-experience
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-event-rec/intents-event-rec-scene-experience
 format: md
 ---
 

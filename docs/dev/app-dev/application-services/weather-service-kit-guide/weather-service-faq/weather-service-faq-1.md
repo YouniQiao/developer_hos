@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如何获取指定城市的天气数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-faq-1
+original_url: /docs/dev/app-dev/application-services/weather-service-kit-guide/weather-service-faq/weather-service-faq-1
 format: md
 ---
 

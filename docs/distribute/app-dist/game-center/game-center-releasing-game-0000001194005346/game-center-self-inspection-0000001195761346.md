@@ -1,7 +1,7 @@
 ---
 title: "上架前自检"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-self-inspection-0000001195761346
+original_url: /docs/distribute/app-dist/game-center/game-center-releasing-game-0000001194005346/game-center-self-inspection-0000001195761346
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 为了帮助您尽可能顺利地通过游戏审核，请查收下方审核标准等相关审核事项：
 
 * 游戏审核标准请参考[华为应用市场审核指南](`https://developer.huawei.com/consumer/cn/doc/distribution/app/50104`)。
-* 游戏版权、版号要求请参考[版权资质审核要求](`https://developer.huawei.com/consumer/cn/doc/app/80301#h1-1584931854487-2`)。
+* 游戏版权、版号要求请参考[版权资质审核要求](`/docs/distribute/app-dist/app-market/x50000/x80301#h1-1584931854487-2`)。
 
 ## 自检工具
 

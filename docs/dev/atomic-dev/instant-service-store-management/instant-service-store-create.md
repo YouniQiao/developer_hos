@@ -1,6 +1,6 @@
 ---
 title: "创建门店"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-create
+original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-create
 format: md
 ---
 

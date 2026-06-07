@@ -1,6 +1,6 @@
 ---
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-personaldata-0000002321517309
+original_url: /docs/dev/game-dev/games-hismartperf-personaldata-0000002321517309
 has_merged_cells: true
 format: md
 ---
@@ -27,4 +27,4 @@ format: md
   游戏性能调优工具最多保存最近1年的数据，超期将会自动删除。同时可通过删除云端报告、项目或开发者账号，以删除相关数据。
 * 如何上传数据
 
-  基于HiSmartPerf-Editor工具，将本地测试报告上传至云端后，团队账号可共同查看测试报告，具体请参见[上传报告](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-cloudview-0000002321404213#section1365144213172)。
+  基于HiSmartPerf-Editor工具，将本地测试报告上传至云端后，团队账号可共同查看测试报告，具体请参见[上传报告](/docs/dev/game-dev/games-hismartperf-cloudview-0000002321404213#section1365144213172)。

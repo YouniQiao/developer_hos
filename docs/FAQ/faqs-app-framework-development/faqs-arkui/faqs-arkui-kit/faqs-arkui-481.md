@@ -1,6 +1,6 @@
 ---
 title: "组件截图（ComponentSnapshot）返回错误码100001，可能原因为截图尺寸过大，文档说明其与具体硬件限制有关，如何查看具体限制是多少"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-481
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-481
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 hdc shell hidumper -s 10 -a 'vktextureLimit'
 ```
 
-常见值为“width: 8192 height: 8192”，表示最大绘制纹理尺寸的长宽都需要在8192像素以内。比较待截图组件的尺寸，以便确认截图失败是否为该原因导致，如果是，请调整所截图组件的大小，或实现为滚动截图后自行拼接。实现请参考[截取长内容（滚动截图）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-component-snapshot#截取长内容滚动截图)和[长截图](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-long-snapshot-practice)。
+常见值为“width: 8192 height: 8192”，表示最大绘制纹理尺寸的长宽都需要在8192像素以内。比较待截图组件的尺寸，以便确认截图失败是否为该原因导致，如果是，请调整所截图组件的大小，或实现为滚动截图后自行拼接。实现请参考[截取长内容（滚动截图）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-uicontext-component-snapshot#截取长内容滚动截图)和[长截图](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-long-snapshot-practice)。
 
 如需实现离屏组件的长截图，可参考以下实现：
 

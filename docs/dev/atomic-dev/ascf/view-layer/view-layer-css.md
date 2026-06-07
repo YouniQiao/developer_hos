@@ -1,6 +1,6 @@
 ---
 title: "CSS"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/view-layer-css
+original_url: /docs/dev/atomic-dev/ascf/view-layer/view-layer-css
 format: md
 ---
 

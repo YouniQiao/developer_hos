@@ -1,6 +1,6 @@
 ---
 title: "接入支付服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-payment-access
+original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-payment-access
 format: md
 ---
 
@@ -11,11 +11,11 @@ Payment Kit（华为支付服务）提供了方便、安全和快捷的支付方
 
 Payment Kit的能力只支持实物商品和服务（酒店服务、出行服务、充值缴费服务）的支付，暂不支持如电子虚拟人物形象，游戏中的关卡、货币及道具等虚拟商品的支付。
 
-虚拟商品的支付可接入[IAP应用内支付服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-kit-guide)。
+虚拟商品的支付可接入[IAP应用内支付服务](/docs/dev/app-dev/application-services/iap-kit-guide)。
 
 ### 接入方式
 
-开发方式与元服务的接入方式相同，详见[Payment Kit开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-introduction)。
+开发方式与元服务的接入方式相同，详见[Payment Kit开发指南](/docs/dev/app-dev/application-services/payment-kit-guide/payment-introduction)。
 
 ```
 has.requestPayment({
@@ -34,7 +34,7 @@ has.requestPayment({
 
 ## 接入IAP应用内支付服务
 
-IAP Kit（应用内支付服务）为开发者提供便捷的应用内支付体验和简便的接入流程，可通过使用IAP Kit提供的系统级支付API快速启动IAP收银台，即可实现应用内支付。详见[IAP应用内支付服务开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-kit-guide)。
+IAP Kit（应用内支付服务）为开发者提供便捷的应用内支付体验和简便的接入流程，可通过使用IAP Kit提供的系统级支付API快速启动IAP收银台，即可实现应用内支付。详见[IAP应用内支付服务开发指南](/docs/dev/app-dev/application-services/iap-kit-guide)。
 
 通过IAP Kit，用户可以在应用内购买各种类型的**数字商品（虚拟商品）** ，包括消耗型商品、非消耗型商品、自动续期订阅商品和非续期订阅商品。
 
@@ -78,14 +78,14 @@ has.createIap({
 | 步骤 | 说明 |
 | --- | --- |
 | 商户入网（非必选） | 由于三方支付为直接连接第三方支付平台完成支付，故可能涉及需要开发者在第三方支付平台注册、创建商户（建议开发者用新申请的商户号与现有商户号做区分）。 |
-| [产品开通与配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#section3657513103713) | 申请开通三方支付及完成相关支付模式配置。 |
-| 通用收银台接入 | 根据外部支付场景[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-external#section9187179113620)完成通用收银台支付接入。 |
+| [产品开通与配置](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#section3657513103713) | 申请开通三方支付及完成相关支付模式配置。 |
+| 通用收银台接入 | 根据外部支付场景[开发步骤](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-external#section9187179113620)完成通用收银台支付接入。 |
 
 具体业务流程如下：
 
 ![](./img/6d7ef524.png "点击放大")
 
-客户端根据商户已开通的支付方式调用cashierPicker接口拉起Payment Kit通用收银台，具体API说明详见[支付接口文档](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-payment#hascashierpicker)；用户选择支付方式后，再调用[requestPayment](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-payment#hasrequestpayment)接口跳转到三方支付。
+客户端根据商户已开通的支付方式调用cashierPicker接口拉起Payment Kit通用收银台，具体API说明详见[支付接口文档](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-payment#hascashierpicker)；用户选择支付方式后，再调用[requestPayment](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-payment#hasrequestpayment)接口跳转到三方支付。
 
 **示例**
 

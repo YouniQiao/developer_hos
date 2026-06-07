@@ -1,7 +1,7 @@
 ---
 title: "区域审核规范（亚太）"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/regional-review-regulations-asia-pacific-0000001234284063
+original_url: /docs/monetize/promotion/regional-review-regulations-asia-pacific-0000001234284063
 format: md
 ---
 

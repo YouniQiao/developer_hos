@@ -1,6 +1,6 @@
 ---
 title: "ArkTS卡片进程模型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-process
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-process
 format: md
 ---
 
@@ -13,5 +13,5 @@ format: md
 
 * 卡片使用方进程：显示卡片的宿主进程，例如桌面进程。
 * 卡片渲染服务进程：系统内统一加载渲染卡片UI的进程，所有卡片渲染在同一个进程内，不同的应用卡片通过虚拟机隔离。
-* 卡片管理服务进程：系统内统一卡片生命周期的系统[SA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-overview)服务。
+* 卡片管理服务进程：系统内统一卡片生命周期的系统[SA](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/serviceability-overview)服务。
 * 卡片提供方进程：提供卡片的应用进程，包括应用自身UIAbility运行的主进程，以及卡片单独的[FormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability)进程。两个进程之间内存隔离，但是共享相同的文件沙箱。

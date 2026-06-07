@@ -1,6 +1,6 @@
 ---
 title: "鸿蒙游戏服务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-introduction-0000002320553253
+original_url: /docs/dev/game-dev/games-center-introduction-0000002320553253
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation如何取消单双栏切换动效"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-412
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-412
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "游戏登录"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-account-kit-0000002351893461
+original_url: /docs/dev/game-dev/games-quickgame-runtime-account-kit-0000002351893461
 format: md
 ---
 
@@ -9,10 +9,10 @@ format: md
 
 ## 前提条件
 
-* 已[注册开发者账号](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-registration-account-0000002351933629)。
-* 已[创建项目和快游戏](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-create-quickgame-0000002317894816)。
-* 已[打开游戏服务API开关](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li1450624175912)、[打开华为账号API开关](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li9525185314593)。
-* 已[配置免授权登录](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-authorization-free-0000002351893449)。
+* 已[注册开发者账号](/docs/dev/game-dev/games-quickgame-registration-account-0000002351933629)。
+* 已[创建项目和快游戏](/docs/dev/game-dev/games-quickgame-create-quickgame-0000002317894816)。
+* 已[打开游戏服务API开关](/docs/dev/game-dev/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li1450624175912)、[打开华为账号API开关](/docs/dev/game-dev/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li9525185314593)。
+* 已[配置免授权登录](/docs/dev/game-dev/games-quickgame-authorization-free-0000002351893449)。
 
 ## 开发指导
 
@@ -66,27 +66,27 @@ format: md
 
 ### FAQ
 
-* [调用登录接口时，出现“auth fail -1”的错误，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section185371850113113)
-* [调用登录接口时，出现6004的错误码，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section1246451233210)
-* [登录游戏出现7001的错误码，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section1564051214322)
-* [校验登录签名时返回404错误，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section188083127328)
-* [登录时提示7005错误码，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section1598431212326)
-* [取消安装HMS Core后，收到玩家登录失败错误码code=13，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section18192161393215)
-* [未登录可以玩游戏吗？用户登录时，选择退出，游戏要如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section5352181313216)
-* [登录校验成功进入游戏，在下次断线重连的时候再拿之前登录成功的数据去校验， 获得30001错误码，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section47849137321)
-* [调用游戏登录接口时，出现3001错误，例如：response:\&#123;"rtnCode":3001,"errMsg":"param [ts:1564034573508] should between [1564034852866,1564035452866] ."\&#125;，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section1592891311324)
-* [登录游戏时返回7错误码（game login fail:Login FAIL, code:7），如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section680171473210)
-* [账号登录验签失败，rtncode报-1，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section19240181433213)
-* [校验登录签名时返回-1，\&#123;"errMsg":"[4001]can not find publicKey of the cp:xxxxxx"\&#125;，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section163871441173812)
-* [账号登录接口的forceLogin设置为1，接口调用成功，但是为什么返回结果为空？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section1754441433211)
-* [登录华为账号时，弹出账号授权界面为什么不显示icon？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section172684441800)
-* [游戏开通强制实名认证的流程是怎样的？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section16357429203813)
-* [如何控制未成年人的支付限额？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section721104111535)
-* [如何判断玩家是否已成年？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section84120685413)
-* [如何查询玩家游戏时长？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-account-0000002425293754#section973820511555)
-* [调用qg.gameLoginWithReal 接口出错，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-api-0000002425293762#section1060163816219)
-* [qg.gameLoginWithReal和qg.gameLogin相比成功回调结果中没有isAuth参数，那么每次登录还需要校验签名吗？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-api-0000002425293762#section1171113013380)
-* [快游戏在调用华为账号登录前需要先取得授权么？ AppGallery Connect提交的证书指纹怎么生成？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-others-0000002425293774#section328205212614)
+* [调用登录接口时，出现“auth fail -1”的错误，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section185371850113113)
+* [调用登录接口时，出现6004的错误码，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section1246451233210)
+* [登录游戏出现7001的错误码，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section1564051214322)
+* [校验登录签名时返回404错误，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section188083127328)
+* [登录时提示7005错误码，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section1598431212326)
+* [取消安装HMS Core后，收到玩家登录失败错误码code=13，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section18192161393215)
+* [未登录可以玩游戏吗？用户登录时，选择退出，游戏要如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section5352181313216)
+* [登录校验成功进入游戏，在下次断线重连的时候再拿之前登录成功的数据去校验， 获得30001错误码，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section47849137321)
+* [调用游戏登录接口时，出现3001错误，例如：response:\&#123;"rtnCode":3001,"errMsg":"param [ts:1564034573508] should between [1564034852866,1564035452866] ."\&#125;，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section1592891311324)
+* [登录游戏时返回7错误码（game login fail:Login FAIL, code:7），如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section680171473210)
+* [账号登录验签失败，rtncode报-1，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section19240181433213)
+* [校验登录签名时返回-1，\&#123;"errMsg":"[4001]can not find publicKey of the cp:xxxxxx"\&#125;，如何处理？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section163871441173812)
+* [账号登录接口的forceLogin设置为1，接口调用成功，但是为什么返回结果为空？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section1754441433211)
+* [登录华为账号时，弹出账号授权界面为什么不显示icon？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section172684441800)
+* [游戏开通强制实名认证的流程是怎样的？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section16357429203813)
+* [如何控制未成年人的支付限额？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section721104111535)
+* [如何判断玩家是否已成年？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section84120685413)
+* [如何查询玩家游戏时长？](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754#section973820511555)
+* [调用qg.gameLoginWithReal 接口出错，如何处理？](/docs/dev/game-dev/games-quickgame-faq-api-0000002425293762#section1060163816219)
+* [qg.gameLoginWithReal和qg.gameLogin相比成功回调结果中没有isAuth参数，那么每次登录还需要校验签名吗？](/docs/dev/game-dev/games-quickgame-faq-api-0000002425293762#section1171113013380)
+* [快游戏在调用华为账号登录前需要先取得授权么？ AppGallery Connect提交的证书指纹怎么生成？](/docs/dev/game-dev/games-quickgame-faq-others-0000002425293774#section328205212614)
 
 ### 其他
 

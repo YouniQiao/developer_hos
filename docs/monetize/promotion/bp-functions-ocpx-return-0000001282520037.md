@@ -1,7 +1,7 @@
 ---
 title: "回传转化数据"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037
+original_url: /docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已对接[归因方案](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-attribution-0000001238638944)。
+您已对接[归因方案](/docs/monetize/promotion/bp-functions-ocpx-attribution-0000001238638944)。
 
 ## 回传准备
 
@@ -71,5 +71,5 @@ format: md
 
 开发者需要将自有归因系统匹配到的转化行为通过数据回传接口进行回传 ，回传步骤如下：
 
-1. 根据[创建API客户端](#section103mcpsimp)中获取的“客户端ID”和“密钥”调用[获取Token](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-token-0000001238324536)接口到华为AppGallery Connect平台进行鉴权，鉴权通过后将获得用于访问AppGallery Connect API的Access Token。
-2. 通过已获取的Access Token作为请求参数，调用[回传用户行为数据接口](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-return-0000001238484400)进行数据回传。
+1. 根据[创建API客户端](#section103mcpsimp)中获取的“客户端ID”和“密钥”调用[获取Token](/docs/monetize/promotion/bp-functions-ocpd-interface-token-0000001238324536)接口到华为AppGallery Connect平台进行鉴权，鉴权通过后将获得用于访问AppGallery Connect API的Access Token。
+2. 通过已获取的Access Token作为请求参数，调用[回传用户行为数据接口](/docs/monetize/promotion/bp-functions-ocpd-interface-return-0000001238484400)进行数据回传。

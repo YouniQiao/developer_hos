@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_overview-0000001214348458
+original_url: /docs/monetize/monetization/agd_pro_api_overview-0000001214348458
 format: md
 ---
 
@@ -13,18 +13,18 @@ AGD Pro应用变现服务（简称AGD Pro服务）是华为应用市场（AppGal
 
 | 序号 | 步骤 | 详情 |
 | --- | --- | --- |
-| 1 | 申请使用并澄清需求 | 与运营沟通合作需求后上报申请，澄清需求场景。具体请参见[申请使用](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_gett-started-0000001246419770)。 |
-| 2 | 创建媒体和展示位 | 在AppGallery Connect控制台创建媒体及展示位。具体请参见[创建媒体及展示位](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_creat-media-display-position-0000001246432546)。 |
-| 3 | 获取广告 | 调用AGD Pro API请求获取广告。具体请参见[获取广告](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_get-ads-0000001216778368)。 |
-| 4 | 事件上报 | 将曝光和用户点击事件上报到服务器。具体请参见参见[事件上报](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_event-report-0000001262218943)。 |
+| 1 | 申请使用并澄清需求 | 与运营沟通合作需求后上报申请，澄清需求场景。具体请参见[申请使用](/docs/monetize/monetization/agd_pro_api_gett-started-0000001246419770)。 |
+| 2 | 创建媒体和展示位 | 在AppGallery Connect控制台创建媒体及展示位。具体请参见[创建媒体及展示位](/docs/monetize/monetization/agd_pro_api_creat-media-display-position-0000001246432546)。 |
+| 3 | 获取广告 | 调用AGD Pro API请求获取广告。具体请参见[获取广告](/docs/monetize/monetization/agd_pro_api_get-ads-0000001216778368)。 |
+| 4 | 事件上报 | 将曝光和用户点击事件上报到服务器。具体请参见参见[事件上报](/docs/monetize/monetization/agd_pro_api_event-report-0000001262218943)。 |
 
 #### 广告请求流程
 
 ![](./img/agd_pro_api_overview-0000001214348458_0.png)
 
 1. 广告请求：您需要先通过服务器请求广告，如希望通过端侧直接请求广告，建议使用SDK方式接入。
-2. 曝光上报：App将广告展示给用户后，App必须实时、直接向AppGallery（简称AG）上报曝光，不允许通过服务器上报，具体请参见[曝光事件上报](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_event-report-0000001262218943#section19744105116289)。
-3. 点击上报：用户点击广告后，App必须实时、直接向AG上报点击，不允许通过服务器上报，具体请参见[点击事件上报](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_event-report-0000001262218943#section19264141592910)。
+2. 曝光上报：App将广告展示给用户后，App必须实时、直接向AppGallery（简称AG）上报曝光，不允许通过服务器上报，具体请参见[曝光事件上报](/docs/monetize/monetization/agd_pro_api_event-report-0000001262218943#section19744105116289)。
+3. 点击上报：用户点击广告后，App必须实时、直接向AG上报点击，不允许通过服务器上报，具体请参见[点击事件上报](/docs/monetize/monetization/agd_pro_api_event-report-0000001262218943#section19264141592910)。
 
 #### 产品形态说明
 

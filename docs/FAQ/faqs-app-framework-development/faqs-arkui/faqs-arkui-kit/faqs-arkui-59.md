@@ -1,7 +1,7 @@
 ---
 format: md
 title: "弹窗组件无法进入onPageShow方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-59
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-59
 ---
 
 
@@ -11,4 +11,4 @@ onPageShow和onPageHide仅作为页面生命周期提供，@Entry修饰的自定
 
 **参考链接**
 
-[自定义组件生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-lifecycle)
+[自定义组件生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-page-custom-components-lifecycle)

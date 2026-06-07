@@ -1,6 +1,6 @@
 ---
 title: "选择游戏内资费"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-pay-0000002458362105
+original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-pay-0000002458362105
 format: md
 ---
 

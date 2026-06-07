@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Web组件的onLoadIntercept返回结果是否影响onInterceptRequest"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-2
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-2
 ---
 
 

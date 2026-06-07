@@ -1,6 +1,6 @@
 ---
 title: "资源泄漏类问题分析方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way
+original_url: /docs/quality/stability-leak-way
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ![](./img/25d20392.png)
 
-资源泄漏日志获取方法与日志规格详见[Resource Leak（资源泄漏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines)。
+资源泄漏日志获取方法与日志规格详见[Resource Leak（资源泄漏）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines)。
 
 ## 内存泄漏分析方法
 
@@ -41,7 +41,7 @@ Summary功能可以用来查看全量内存信息，Comparison可以用来进行
    3. 展开这个对象，找到对象的成员，看每个成员的distance，找到其中最小的。
    4. 重复b和c步骤，直到找到distance为1的为止，这个就是GC Root根节点。
 
-![](./img/78496383.png)具体操作方法可见[JS内存泄漏问题检测方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-js-memleak-detection)。
+![](./img/78496383.png)具体操作方法可见[JS内存泄漏问题检测方法](/docs/quality/stability-js-memleak-detection)。
 
 **运维态-JS泄漏分析方法【适用于运维态自动采集获取日志】**
 
@@ -49,7 +49,7 @@ Summary功能可以用来查看全量内存信息，Comparison可以用来进行
 
 如下图，存在26个Note JSObject对象，与实际业务不符合，需要进一步查其引用关系判断是否泄漏：
 
-![](./img/b4bd4844.png)除以上方法外，JS泄漏分析方法还可参考[分析ArkTS/JS内存](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-arkts-js-memory-analysis)。
+![](./img/b4bd4844.png)除以上方法外，JS泄漏分析方法还可参考[分析ArkTS/JS内存](/docs/quality/arkts-js-memory-analysis)。
 
 ![](./img/4a8ce384.png)
 
@@ -59,7 +59,7 @@ Summary功能可以用来查看全量内存信息，Comparison可以用来进行
 
 **开发态-native内存泄漏分析方法**
 
-对于开发过程中遇到的泄漏问题，开发者可以参考[分析native内存](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-native-memory-analysis)抓取维测并分析占用最大的内存块及其调用栈排查泄漏点。
+对于开发过程中遇到的泄漏问题，开发者可以参考[分析native内存](/docs/quality/native-memory-analysis)抓取维测并分析占用最大的内存块及其调用栈排查泄漏点。
 
 **运维态-native内存泄漏分析方法**
 
@@ -81,7 +81,7 @@ Summary功能可以用来查看全量内存信息，Comparison可以用来进行
    | ashmem泄漏 | 搜索关键字“/dev/ashmem”，如果超过总PSS内存的50%，则说明是ashmem内存过大。 | 同[ashmem泄漏方法](#section2825227501)。  1、开发者使用image组件、pixmap组件可能未释放。  2、开发者直接通过系统调用申请。 |
    | anon类型较大 | 单个anon类型占用内存较大。 | 怀疑mmap内存未释放，直接排查profiler栈，框选All Anonymous VM，筛选Created & Existing，排查内存占用最多的部分。 |
 
-   对于堆内存泄漏，开发者可以基于[NMD](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#nmd)（堆内存快照，判定泄漏时，堆内存布局的快照）和profiler分析：
+   对于堆内存泄漏，开发者可以基于[NMD](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#nmd)（堆内存快照，判定泄漏时，堆内存布局的快照）和profiler分析：
 
    “LOGGER\_MEMCHECK\_SAMPLE\_NMD\_INFO”与“LOGGER\_MEMCHECK\_DETIAL\_INFO”中记录抓取进程native日志时内存的快照信息，主要关注其size和allocated两列，是否有比较突出的内存占用，日志格式如下。
 
@@ -275,7 +275,7 @@ Summary功能可以用来查看全量内存信息，Comparison可以用来进行
    以vulkan image为例，vulkan主要用于纹理渲染等用途，从日志可见：2^23~2^24大小的图片，申请了23次，总占用293847040字节。开发者可以根据场景以及纹理申请大小排查泄漏点。
 4. 分析profiler日志
 
-   开发者可以将获取到的profiler文件（[内存栈](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines#内存栈-1)）导入DevEco Studio Profiler插件中进行分析，导入后会在界面展示进程的内存分配情况及其调用栈。按照如下步骤将解析结果展开，按照前置分析框选怀疑泄漏的泳道，选择Created & Existing，按照内存申请大小来排查可疑的泄漏点，并通过调用栈进一步确认泄漏位置。
+   开发者可以将获取到的profiler文件（[内存栈](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines#内存栈-1)）导入DevEco Studio Profiler插件中进行分析，导入后会在界面展示进程的内存分配情况及其调用栈。按照如下步骤将解析结果展开，按照前置分析框选怀疑泄漏的泳道，选择Created & Existing，按照内存申请大小来排查可疑的泄漏点，并通过调用栈进一步确认泄漏位置。
 
    ![](./img/cccfd18e.png)可本地搭建[Smartperf](https://gitcode.com/openharmony-sig/smartperf)环境，并导入profiler日志进行解析，按照前置分析框选怀疑泄漏的泳道，选择Created & Existing，通过步骤二分析出异常size范围进行匹配，来排查可疑的泄漏点，并通过调用栈进一步确认泄漏位置。
 
@@ -326,7 +326,7 @@ Summary功能可以用来查看全量内存信息，Comparison可以用来进行
    1	/dev/binder
    1	/proc/
    ```
-3. 根据不同泄漏句柄类型，按照对应的分析方法**初步分析**，日志格式可参考[句柄泄漏日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines#句柄泄漏日志规格)。
+3. 根据不同泄漏句柄类型，按照对应的分析方法**初步分析**，日志格式可参考[句柄泄漏日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines#句柄泄漏日志规格)。
 
    **文件句柄泄漏**
 
@@ -350,7 +350,7 @@ Summary功能可以用来查看全量内存信息，Comparison可以用来进行
    2	/dev/binder
    ```
 
-   **[ashmem类型句柄](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines#特殊类型句柄维测信息)或****[dmabuf类型句柄](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines#特殊类型句柄维测信息)**
+   **[ashmem类型句柄](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines#特殊类型句柄维测信息)或****[dmabuf类型句柄](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines#特殊类型句柄维测信息)**
 
    如果泄漏日志中top句柄报的是ashmem、dmabuf（ION），可按照ashmem、ION泄漏问题进行分析：
 
@@ -368,22 +368,22 @@ Summary功能可以用来查看全量内存信息，Comparison可以用来进行
 
    分析方法可参考[ashmem泄漏](#section2825227501)和[ION泄漏](#section5493141412410)，判断是这两种句柄类型泄漏后同样会打印下述分析方法中的维测信息。
 
-   **[socket类型句柄](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines#特殊类型句柄维测信息)**
+   **[socket类型句柄](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines#特殊类型句柄维测信息)**
 
    1. 由于打印的维测信息是整机的，因此首先在日志中根据进程pid或者进程名搜索，查看本应用所占用的socket句柄。
    2. 查看inode和对端进程，两方进程通信持有的inode相同，PeerTid一般就是对端进程的PID。
    3. 关注应用代码中是否使用socket()等接口创建socket句柄，排查其生命周期是否存在泄漏。
 
-   **[pipe类型句柄](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines#特殊类型句柄维测信息)**
+   **[pipe类型句柄](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines#特殊类型句柄维测信息)**
 
    1. 由于打印的维测信息是整机的，因此首先在日志中根据进程pid或者进程名搜索，查看本应用所占用的pipe句柄。
    2. 关注应用代码中是否使用pipe()和pipe2()等接口创建pipe句柄，排查其生命周期是否存在泄漏。
 
-   **[sync\_file泄漏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines#特殊类型句柄维测信息)**
+   **[sync\_file泄漏](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines#特殊类型句柄维测信息)**
 
    1. 由于打印的维测信息是整机的，因此首先在日志中根据进程pid或者进程名搜索，查看本应用所占用的sync句柄。
    2. 关注应用可能使用如[OH\_NativeImage\_AcquireNativeWindowBuffer()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references-V5/_o_h___native_image-V5#oh_nativeimage_acquirenativewindowbuffer)接口，获取了sync\_file句柄，需严格按照指导文档，如该接口文档明确表示，应用使用该接口需要和[OH\_NativeImage\_ReleaseNativeWindowBuffer()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references-V5/_o_h___native_image-V5#oh_nativeimage_releasenativewindowbuffer)接口配合使用，否则会存在内存泄漏。当fenceFd（即sync\_file）使用完，用户需要将其关闭。
-4. 基于初步分析结果，如果定位仍存在困难，建议开发者打开开发者选项-系统资源泄漏日志开关，基于流水日志分析场景复现。此时当判定句柄泄漏后，会hook该进程的pipe/open等系统调用10分钟，抓取调用栈，并基于相同调用栈聚类。如下每一行都是一个调用栈，调用顺序为从右到左，其中num后面的数字表示这个调用栈总共有多少个，bt后面为具体调用栈。具体栈信息可通过[addr2line](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-cpp-way#li186453444512)解析到对应的函数。
+4. 基于初步分析结果，如果定位仍存在困难，建议开发者打开开发者选项-系统资源泄漏日志开关，基于流水日志分析场景复现。此时当判定句柄泄漏后，会hook该进程的pipe/open等系统调用10分钟，抓取调用栈，并基于相同调用栈聚类。如下每一行都是一个调用栈，调用顺序为从右到左，其中num后面的数字表示这个调用栈总共有多少个，bt后面为具体调用栈。具体栈信息可通过[addr2line](/docs/quality/stability-app-crash-cpp-way#li186453444512)解析到对应的函数。
 
    ```
    *****************************

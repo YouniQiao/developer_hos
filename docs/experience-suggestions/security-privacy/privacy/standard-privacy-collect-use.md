@@ -1,6 +1,6 @@
 ---
 title: "收集"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-collect-use
+original_url: /docs/experience-suggestions/security-privacy/privacy/standard-privacy-collect-use
 format: md
 ---
 

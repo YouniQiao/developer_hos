@@ -1,6 +1,6 @@
 ---
 title: "元服务命名规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-naming-conversion
+original_url: /docs/dev/atomic-dev/atomic-service-specifications/atomic-service-naming-conversion
 format: md
 ---
 

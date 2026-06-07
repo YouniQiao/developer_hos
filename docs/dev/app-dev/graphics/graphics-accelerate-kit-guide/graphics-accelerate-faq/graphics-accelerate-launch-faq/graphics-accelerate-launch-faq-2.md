@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "游戏上划退出后，场景切换阶段存在振动，应该如何避免"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-2
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-2
 format: md
 ---
 

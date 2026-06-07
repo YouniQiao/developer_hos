@@ -1,6 +1,6 @@
 ---
 title: "目标拍摄跟踪开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-tracking-guide
+original_url: /docs/dev/app-dev/system/system-hardware/mechanic-kit/camera-tracking-guide
 format: md
 ---
 

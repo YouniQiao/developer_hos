@@ -1,6 +1,6 @@
 ---
 title: "重新设置新焦点位置的场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-focus-position-setting
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-focus-position-setting
 format: md
 ---
 

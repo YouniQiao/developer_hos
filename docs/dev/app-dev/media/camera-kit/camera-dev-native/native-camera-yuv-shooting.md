@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "YUV拍照(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-yuv-shooting
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-yuv-shooting
 format: md
 ---
 
@@ -55,7 +55,7 @@ format: md
        libpicture.so
    )
    ```
-3. 创建并打开相机设备，参考[设备输入(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-input)中的步骤3-4。
+3. 创建并打开相机设备，参考[设备输入(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-input)中的步骤3-4。
 4. 获取相机设备完整输出能力。
 
    通过[OH\_CameraManager\_GetSupportedFullCameraOutputCapabilityWithSceneMode()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-manager-h#oh_cameramanager_getsupportedfullcameraoutputcapabilitywithscenemode)方法，获取当前设备支持的所有输出流的能力，包含预览流、拍照流、录像流等。输出流在CameraOutputCapability中的各个profile字段中，其中拍照流支持YUV格式。根据相机设备指定模式[Camera\_SceneMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#camera_scenemode)的不同，需要添加不同类型的输出流。
@@ -94,7 +94,7 @@ format: md
        return photoOutput;
    }
    ```
-6. 注册单段式(PhotoAvailable)或分段式(PhotoAssetAvailable)拍照回调，若应用希望快速得到回图，推荐使用[分段式拍照(PhotoAssetAvailable)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-deferred-capture)回调。
+6. 注册单段式(PhotoAvailable)或分段式(PhotoAssetAvailable)拍照回调，若应用希望快速得到回图，推荐使用[分段式拍照(PhotoAssetAvailable)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-deferred-capture)回调。
 
    ![](./img/5a346764.png)
 
@@ -309,7 +309,7 @@ format: md
          return ret;
      }
      ```
-7. 创建拍照类型会话（参考[会话管理(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)），开启会话，准备拍照。
+7. 创建拍照类型会话（参考[会话管理(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)），开启会话，准备拍照。
 8. 触发拍照。
 
    通过[OH\_PhotoOutput\_Capture()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-photo-output-h#oh_photooutput_capture)方法，执行拍照任务。

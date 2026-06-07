@@ -1,6 +1,6 @@
 ---
 title: "构建元服务页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-complete-default-widget
+original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-complete-default-widget
 format: md
 ---
 
@@ -254,7 +254,7 @@ format: md
 
 ## 实现页面间的跳转
 
-页面间的导航可以通过[组件导航（Navigation）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)来实现。推荐使用[NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10)实现页面路由跳转。
+页面间的导航可以通过[组件导航（Navigation）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)来实现。推荐使用[NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10)实现页面路由跳转。
 
 对Button组件添加onClick方法，并在其中使用导航控制器NavPathStack的pushPathByName方法，使组件可以在点击之后从当前页面跳转到输入参数name在路由表内对应的页面。
 

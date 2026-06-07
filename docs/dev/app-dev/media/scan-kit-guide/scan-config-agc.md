@@ -1,13 +1,13 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-config-agc
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-config-agc
 format: md
 ---
 
 
 1. 参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作。
-2. （**仅针对“扫码直达”必选**）接入[App Linking](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp)，您需要完成以下步骤：
+2. （**仅针对“扫码直达”必选**）接入[App Linking](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp)，您需要完成以下步骤：
 
    1. 在AGC控制台开通App Linking服务。
    2. 在开发者网站上关联应用。

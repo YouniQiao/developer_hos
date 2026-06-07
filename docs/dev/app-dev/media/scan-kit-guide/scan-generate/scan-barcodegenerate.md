@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过文本生成码图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-barcodegenerate
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-generate/scan-barcodegenerate
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "如何控制只在Web组件第一次加载url的时候触发onPageBegin，onPageEnd"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-34
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-34
 format: md
 ---
 

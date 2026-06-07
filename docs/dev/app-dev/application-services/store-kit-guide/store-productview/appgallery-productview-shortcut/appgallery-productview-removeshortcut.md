@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "删除应用内快捷方式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-removeshortcut
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-shortcut/appgallery-productview-removeshortcut
 format: md
 ---
 

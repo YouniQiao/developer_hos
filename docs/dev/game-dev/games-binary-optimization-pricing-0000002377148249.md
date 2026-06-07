@@ -1,6 +1,6 @@
 ---
 title: "如何收费"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-pricing-0000002377148249
+original_url: /docs/dev/game-dev/games-binary-optimization-pricing-0000002377148249
 format: md
 ---
 

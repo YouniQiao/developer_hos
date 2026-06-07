@@ -1,6 +1,6 @@
 ---
 title: "什么是元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-definition
+original_url: /docs/dev/atomic-dev/atomic-service/atomic-service-definition
 format: md
 ---
 

@@ -1,21 +1,21 @@
 ---
 title: "自定义布局下的适配建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-adaptation-in-custom-layout
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-adaptation-in-custom-layout
 format: md
 ---
 
 
 ## 登录
 
-应用在设置“登录”页面时，需要“用户名/账号名”、“密码”在同一个界面，具体可参照[账号密码保存-登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-save-acc-password#账号密码登录)、[账号密码填充-登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-acc-password#登录)中的介绍。
+应用在设置“登录”页面时，需要“用户名/账号名”、“密码”在同一个界面，具体可参照[账号密码保存-登录](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-save-acc-password#账号密码登录)、[账号密码填充-登录](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-acc-password#登录)中的介绍。
 
 ## 注册
 
-应用在设置“注册”页面时，需要“用户名/账号名”、“新密码”在同一个界面，具体可参照[账号密码保存-注册](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-save-acc-password#账号密码注册)、[强密码填充-注册](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-strong-password#注册)中的介绍。
+应用在设置“注册”页面时，需要“用户名/账号名”、“新密码”在同一个界面，具体可参照[账号密码保存-注册](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-save-acc-password#账号密码注册)、[强密码填充-注册](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-strong-password#注册)中的介绍。
 
 ## 修改密码
 
-应用在设置“修改密码”页面时，需要“用户名/账号名”、“旧密码”、“新密码”在同一个界面，具体可参照[账号密码更新-修改账号密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-update-acc-password#修改账号密码)、[账号密码填充-修改密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-acc-password#修改密码)中的介绍。
+应用在设置“修改密码”页面时，需要“用户名/账号名”、“旧密码”、“新密码”在同一个界面，具体可参照[账号密码更新-修改账号密码](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-update-acc-password#修改账号密码)、[账号密码填充-修改密码](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-acc-password#修改密码)中的介绍。
 
 ## 登录、注册失败
 

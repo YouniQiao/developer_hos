@@ -1,6 +1,6 @@
 ---
 title: "服务直达支持元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service
+original_url: /docs/dev/atomic-dev/instant-service/instant-service
 format: md
 ---
 

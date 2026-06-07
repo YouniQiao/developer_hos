@@ -1,7 +1,7 @@
 ---
 title: "开发者关怀"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/developer-care
+original_url: /docs/tools/coding-debug/developer-care
 format: md
 ---
 

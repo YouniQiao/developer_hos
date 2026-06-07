@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何避免Badge在数量显示切换时的Image闪烁问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-352
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-352
 ---
 
 

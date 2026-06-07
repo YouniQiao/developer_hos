@@ -1,6 +1,6 @@
 ---
 title: "如何在构建任务中执行shell脚本"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-104
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-104
 format: md
 ---
 

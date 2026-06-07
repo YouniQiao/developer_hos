@@ -1,6 +1,6 @@
 ---
 title: "查询门店列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-list
+original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-list
 format: md
 ---
 

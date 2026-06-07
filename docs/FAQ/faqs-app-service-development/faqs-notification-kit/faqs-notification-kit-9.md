@@ -1,7 +1,7 @@
 ---
 format: md
 title: "emitter.off取消订阅某个事件后，是不是所有订阅该事件的地方都不会再收到该事件的消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit-9
+original_url: /docs/FAQ/faqs-app-service-development/faqs-notification-kit/faqs-notification-kit-9
 ---
 
 

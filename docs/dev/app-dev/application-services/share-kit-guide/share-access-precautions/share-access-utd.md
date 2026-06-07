@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "宿主应用发起分享需使用精细化的utd类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-utd
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-access-precautions/share-access-utd
 format: md
 ---
 

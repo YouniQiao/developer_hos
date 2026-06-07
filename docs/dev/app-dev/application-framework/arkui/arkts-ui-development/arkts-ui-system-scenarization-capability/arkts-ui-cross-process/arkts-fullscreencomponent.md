@@ -1,6 +1,6 @@
 ---
 title: "全屏启动元服务组件（FullScreenLaunchComponent）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fullscreencomponent
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-ui-cross-process/arkts-fullscreencomponent
 format: md
 ---
 
@@ -86,7 +86,7 @@ Native API接口提供能力，在FullScreenLaunchComponent场景下也需要考
 | [组件内隐式共享元素转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-geometrytransition) | 不支持 | 在视图切换过程中提供丝滑的上下文传承过渡。通用transition机制提供了opacity、scale等转场效果，geometryTransition通过安排绑定的in/out组件(in指新视图、out指旧视图)的frame、position使得原本独立的transition动画在空间位置上发生联系，将视觉焦点由旧视图位置引导到新视图位置。 | — |
 | [componentUtils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentutils) | 不支持 | 提供获取组件绘制区域坐标和大小的能力。 | 获取信息来自于窗口，默认情况下直接获取到的位置信息是EmbeddableUIAbility的WindowProxy的信息，非宿主应用的主窗口信息。 |
 | [UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext) | 不支持 | @ohos.window在API version 10 新增[getUIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getuicontext10)接口，获取UI上下文实例UIContext对象，使用UIContext对象提供的替代方法，可以直接作用在对应的UI实例上。 | 基于window获取，但FullScreenLaunchComponent内部默认方式下，提供方无真正的窗口承载，无法使用该接口获取到正确的UIContext。 |
-| [DragController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller) | 不支持 | 本模块提供发起主动拖拽的能力，当应用接收到触摸或长按等事件时可以主动发起拖拽的动作，并在其中携带拖拽信息。  本模块功能依赖UI的执行上下文，不可在[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface)的地方使用，参见UIContext说明。 | 拖拽时通过UIContext上下文传递组件间的事件传递，使用方应用和提供方应用不共享UIContext内容，默认能力下无法支持拖拽事件的传递。 |
+| [DragController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-dragcontroller) | 不支持 | 本模块提供发起主动拖拽的能力，当应用接收到触摸或长按等事件时可以主动发起拖拽的动作，并在其中携带拖拽信息。  本模块功能依赖UI的执行上下文，不可在[UI上下文不明确](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-global-interface)的地方使用，参见UIContext说明。 | 拖拽时通过UIContext上下文传递组件间的事件传递，使用方应用和提供方应用不共享UIContext内容，默认能力下无法支持拖拽事件的传递。 |
 | [布局回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-inspector) | 部分支持 | 提供注册组件布局和绘制完成回调通知的能力。 | 如果指定FullScreenLaunchComponent组件，预期是获得所有FullScreenLaunchComponent中的组件信息，尚未支持该能力；提供方内部可以正常使用。 |
 | [注册自定义字体](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-font) | 不支持 | 本模块提供注册自定义字体。 | 注册字体存在影响范围的问题，提供方侧无法影响使用方应用的字体。 |
 | [PluginComponentManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-plugincomponent) | 不支持 | 用于给插件组件的使用者请求组件与数据，使用者发送组件模板和数据。 | 依赖获取其他组件的数据，提供方组件在另一个进程中，无法提供访问宿主组件的能力。 |

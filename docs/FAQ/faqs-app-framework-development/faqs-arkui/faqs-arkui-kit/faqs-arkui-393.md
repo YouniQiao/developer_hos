@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Swiper如何自定义导航点高度位置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-393
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-393
 ---
 
 

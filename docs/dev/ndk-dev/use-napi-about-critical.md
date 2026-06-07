@@ -1,6 +1,6 @@
 ---
 title: "使用扩展的Node-API接口创建和销毁临界区作用域及访问字符串内容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-critical
+original_url: /docs/dev/ndk-dev/use-napi-about-critical
 format: md
 ---
 

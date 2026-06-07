@@ -1,7 +1,7 @@
 ---
 title: "电脑应用开发"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-pc-guide
+original_url: /docs/dev/app-dev/multi-device/bpta-pc-guide
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/aa/v3/tL8D5RXdRryC713_A2Uy_w/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074244Z&HW-CC-Expire=86400&HW-CC-Sign=AE536FA9A2B3B3E02538E9BDB6EA096B7FB854BD272F3CEE7488CD8589352698)
 
-本文聚焦于电脑应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)”系列文章。
+本文聚焦于电脑应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)”系列文章。
 
 ## 产品硬件信息
 
@@ -45,7 +45,7 @@ format: md
 | **分辨率(vp)(向下取整)** | 1642\*1094 | 主显示器：1642\*1094  外接显示器：取决于外接显示器的分辨率 |
 | 屏幕可用宽高(px) | 3120\*1955 | 主显示器：3120\*1955  外接显示器：取决于外接显示器的分辨率 |
 | 屏幕可用宽高(vp)(向下取整) | 1642\*1028 | 主显示器：1642\*1028  外接显示器：取决于外接显示器的分辨率 |
-| **[横纵断点](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section186821126131515)** | 横向断点xl，纵向断点sm | 主显示器：横向断点xl，纵向断点sm  外接显示器：取决于外接显示器的分辨率 |
+| **[横纵断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section186821126131515)** | 横向断点xl，纵向断点sm | 主显示器：横向断点xl，纵向断点sm  外接显示器：取决于外接显示器的分辨率 |
 
 ###相机硬件信息
 
@@ -63,13 +63,13 @@ format: md
 
 ###性能优化
 
-电脑应用的性能优化，直接关系到用户体验、运行效率和硬件资源利用率。HarmonyOS为开发者提供[DevEco Profiler](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-optimization-overview#section2012922312284)工具，可实现全维度性能监控（CPU/GPU/内存/帧率/能耗/网络等），并支持代码级问题定位分析，协助开发者快速发现并优化性能瓶颈。性能工具使用指导可参考[性能调优工具简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-description)，性能场景优化案例可参考[性能场景优化案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-performance-optimization)。
+电脑应用的性能优化，直接关系到用户体验、运行效率和硬件资源利用率。HarmonyOS为开发者提供[DevEco Profiler](/docs/quality/optimization-overview#section2012922312284)工具，可实现全维度性能监控（CPU/GPU/内存/帧率/能耗/网络等），并支持代码级问题定位分析，协助开发者快速发现并优化性能瓶颈。性能工具使用指导可参考[性能调优工具简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-description)，性能场景优化案例可参考[性能场景优化案例](/docs/quality/scenario-performance-optimization)。
 
 对于电脑中的关键线程，可以通过提升任务调度优先级，确保其获得充足的连续执行时长和资源，从而保障应用流畅运行，优化用户体验。详情可参考[高负载场景线程优先级设置](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-thread-priority-setting)。
 
 ###焦点导航
 
-电脑设备自带键盘，应用应支持通过键盘实现焦点导航，并配置获焦视觉效果，清晰指示当前焦点位置，以保证交互体验。开发方案请参考[焦点事件](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section168661941154220)。
+电脑设备自带键盘，应用应支持通过键盘实现焦点导航，并配置获焦视觉效果，清晰指示当前焦点位置，以保证交互体验。开发方案请参考[焦点事件](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section168661941154220)。
 
 ###音频焦点适配
 
@@ -79,7 +79,7 @@ format: md
 
 ###悬浮窗
 
-悬浮窗口在电脑端是一种特殊的应用窗口，其窗口类型为WindowType.TYPE\_FLOAT。开发者可在现有任务基础上创建悬浮窗，使其常驻前台、置于所有应用窗口顶层展示；即便创建悬浮窗的应用退至后台，悬浮窗仍可保持前台显示。开发者可参考[设置全局悬浮窗（受限开放）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage#设置全局悬浮窗受限开放)相关章节，完成悬浮窗创建及属性配置等操作。
+悬浮窗口在电脑端是一种特殊的应用窗口，其窗口类型为WindowType.TYPE\_FLOAT。开发者可在现有任务基础上创建悬浮窗，使其常驻前台、置于所有应用窗口顶层展示；即便创建悬浮窗的应用退至后台，悬浮窗仍可保持前台显示。开发者可参考[设置全局悬浮窗（受限开放）](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage#设置全局悬浮窗受限开放)相关章节，完成悬浮窗创建及属性配置等操作。
 
 * 后台拉起悬浮窗
 
@@ -244,7 +244,7 @@ Entry Module所依赖的module同名配置文件也需要同步修改。
 
 * 相机显示问题
 
-  建议严格按照规范完成相机适配，保证图像方向与角度正常，避免画面挤压。详情请参考：[Camera Kit（相机服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-kit)。
+  建议严格按照规范完成相机适配，保证图像方向与角度正常，避免画面挤压。详情请参考：[Camera Kit（相机服务）](/docs/dev/app-dev/media/camera-kit)。
 
   电脑设备未配备后置摄像头，因此拍照、录像、扫一扫等场景需针对性适配，否则易出现功能异常或应用闪退问题。
 
@@ -275,7 +275,7 @@ Entry Module所依赖的module同名配置文件也需要同步修改。
 
   不同设备的文件访问权限存在差异，且移动应用可通过主动分发或兼容模式在平板、电脑等多终端运行，开发时需重点关注以下两点：
 
-  + 遵循[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)开发规范，将文件存储于正确目录中。
+  + 遵循[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)开发规范，将文件存储于正确目录中。
   + 对敏感数据进行加密存储，保障应用安全与用户隐私，避免数据泄露。
 * PhotoPicker的差异
 
@@ -330,7 +330,7 @@ Entry Module所依赖的module同名配置文件也需要同步修改。
 
 **如何区分MateBook Pro和MateBook Fold**
 
-* 页面布局类问题：页面布局由窗口形态、窗口宽高、宽高比决定，无需区分具体产品型号或设备类型。例如：MateBook Fold横向展开态布局应与MateBook Pro保持一致；MateBook Fold其余状态对应lg横向断点，布局需与平板保持一致。因此布局适配只需判断断点、实现响应式布局即可，详情可参考[断点](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1532120147301)的使用。
+* 页面布局类问题：页面布局由窗口形态、窗口宽高、宽高比决定，无需区分具体产品型号或设备类型。例如：MateBook Fold横向展开态布局应与MateBook Pro保持一致；MateBook Fold其余状态对应lg横向断点，布局需与平板保持一致。因此布局适配只需判断断点、实现响应式布局即可，详情可参考[断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1532120147301)的使用。
 * 非页面布局或功能类问题：MateBook Pro与 MateBook Fold的设备类型[deviceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-device-info#常量)均为2in1。因此，需要通过[display.isFoldable()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#displayisfoldable10)判断是否为可折叠设备，MateBook Fold返回true，MateBook Pro返回false。
 
 ###包管理策略
@@ -364,17 +364,17 @@ Entry Module所依赖的module同名配置文件也需要同步修改。
 
 解决措施：
 
-* 若窗口尺寸适配不合理，开发者可主动配置窗口大小，具体可参考[主动调节窗口大小](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode#section323513274320)实现方案。
+* 若窗口尺寸适配不合理，开发者可主动配置窗口大小，具体可参考[主动调节窗口大小](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode#section323513274320)实现方案。
 
-* 针对窗口被拖动缩至过小导致布局异常的问题，可参考[如何限制自由窗窗口尺寸](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode#section6754152523715)，确保页面正常显示。
+* 针对窗口被拖动缩至过小导致布局异常的问题，可参考[如何限制自由窗窗口尺寸](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode#section6754152523715)，确保页面正常显示。
 
-* 电脑端自由多窗支持鼠标点击或手指触控拖动窗口，默认标题栏的窗口由系统提供高性能拖动能力；无标题栏或自定义标题栏的窗口，需开发者调用系统拖动能力接口实现，具体可参考[如何设置窗口拖拽热区](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode#section1758193815438)。
+* 电脑端自由多窗支持鼠标点击或手指触控拖动窗口，默认标题栏的窗口由系统提供高性能拖动能力；无标题栏或自定义标题栏的窗口，需开发者调用系统拖动能力接口实现，具体可参考[如何设置窗口拖拽热区](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode#section1758193815438)。
 
 **窗口启动时应用闪跳**
 
-可能原因：module.json5配置文件中metadata标签设置的窗口位置、大小，与[onWindowStageCreate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle#onwindowstagecreate) 中布局设置的窗口参数不一致。
+可能原因：module.json5配置文件中metadata标签设置的窗口位置、大小，与[onWindowStageCreate()](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-lifecycle#onwindowstagecreate) 中布局设置的窗口参数不一致。
 
-解决措施：保持module.json5的metadata配置与[onWindowStageCreate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle#onwindowstagecreate) 中窗口位置、大小参数一致。
+解决措施：保持module.json5的metadata配置与[onWindowStageCreate()](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-lifecycle#onwindowstagecreate) 中窗口位置、大小参数一致。
 
 ```
 "abilities": [

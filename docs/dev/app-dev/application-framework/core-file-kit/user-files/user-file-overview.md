@@ -1,11 +1,11 @@
 ---
 title: "用户文件概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-overview
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/user-file-overview
 format: md
 ---
 
 
-用户文件：登录到该终端设备的用户所拥有的文件，包括用户私有的[图片、视频](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview)、音频、文档等。
+用户文件：登录到该终端设备的用户所拥有的文件，包括用户私有的[图片、视频](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview)、音频、文档等。
 
 1. 用户文件存放在用户目录下，归属于该设备上登录的用户。
 2. 用户文件存储位置主要分为[内置存储](#内置存储)、[外置存储](#外置存储)。

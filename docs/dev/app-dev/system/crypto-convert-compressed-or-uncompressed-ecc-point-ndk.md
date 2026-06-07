@@ -1,13 +1,13 @@
 ---
 title: "使用ECC压缩/非压缩点格式转换(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-convert-compressed-or-uncompressed-ecc-point-ndk
+original_url: /docs/dev/app-dev/system/crypto-convert-compressed-or-uncompressed-ecc-point-ndk
 format: md
 ---
 
 
 支持将压缩/非压缩的点数据，转换为Point对象，用于密钥对象生成；也支持将Point对象转换为压缩/非压缩的点数据。
 
-ECC的算法规格请查看[非对称密钥生成和转换规格：ECC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#ecc)。
+ECC的算法规格请查看[非对称密钥生成和转换规格：ECC](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#ecc)。
 
 通过传入字符串参数format，可指定获取的点数据格式。如果获取压缩格式，则指定format为："COMPRESSED"；获取非压缩格式，则指定format为："UNCOMPRESSED"。
 

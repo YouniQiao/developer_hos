@@ -1,7 +1,7 @@
 ---
 title: "一方数据回传"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-others-0000002586173947
+original_url: /docs/monetize/promotion/bp-functions-ocpx-return-others-0000002586173947
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ## 使用方法
 
-一方数据回传与华为应用市场推广数据回传方式一致。[回传用户行为数据接口](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-return-0000001238484400)对应参数已新增枚举值，用于标识一方数据来源。
+一方数据回传与华为应用市场推广数据回传方式一致。[回传用户行为数据接口](/docs/monetize/promotion/bp-functions-ocpd-interface-return-0000001238484400)对应参数已新增枚举值，用于标识一方数据来源。
 
 回传后需开通应用白名单，用于将一方数据加入模型学习。请提供应用ID和应用名称，通过行业运营、客服邮箱（developer@huawei.com）与我们联系开通。
 

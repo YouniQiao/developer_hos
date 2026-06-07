@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "File Manager Service Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-introduction
+original_url: /docs/dev/app-dev/application-services/file-manager-service-kit-guide/filemanagerservice-introduction
 format: md
 ---
 

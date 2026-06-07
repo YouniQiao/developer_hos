@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ListItemGroup和LazyForEach如何结合使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-247
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-247
 ---
 
 

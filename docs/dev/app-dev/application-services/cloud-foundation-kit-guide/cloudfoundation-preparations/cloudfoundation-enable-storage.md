@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开通云存储服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-storage
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-storage
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
    | 参数 | 说明 |
    | --- | --- |
    | 存储实例 | 存储实例名称必须符合以下条件：  - 只能包含英文小写字母、数字、中划线（-）。  - 只能以数字或字母开头和结尾。  - 要求不少于3个字符，并且不能超过57个字符。  - 不能为IP地址。  - 不能包含连续两个及以上中划线（-）。  - 名称全局唯一，创建后，不能修改。 |
-   | 默认数据处理位置 | 云存储支持启用多个数据处理位置，具体请参见[设置数据处理位置](https://developer.huawei.com/consumer/cn/doc/app/agc-help-data-location-0000002277923065#section154810363471)。如当前项目已设置数据处理位置，则此处无需再设置。 |
+   | 默认数据处理位置 | 云存储支持启用多个数据处理位置，具体请参见[设置数据处理位置](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-data-location-0000002277923065#section154810363471)。如当前项目已设置数据处理位置，则此处无需再设置。 |
 5. 点击“下一步”，进入默认安全策略展示界面。
 
    ![](./img/1eb4253a.png)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "HarmonyOS元服务和HarmonyOS应用是否可以共用同一个API密钥？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-17
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-17
 format: md
 ---
 

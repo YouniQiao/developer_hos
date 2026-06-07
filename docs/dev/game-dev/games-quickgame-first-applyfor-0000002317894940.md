@@ -1,6 +1,6 @@
 ---
 title: "新游首发"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-first-applyfor-0000002317894940
+original_url: /docs/dev/game-dev/games-quickgame-first-applyfor-0000002317894940
 format: md
 ---
 
@@ -15,8 +15,8 @@ format: md
 
 ## 前提条件
 
-* 已[注册并认证开发者账号](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-registration-account-0000002351933629)。
-* 已[创建项目和快游戏](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-create-quickgame-0000002317894816)。
+* 已[注册并认证开发者账号](/docs/dev/game-dev/games-quickgame-registration-account-0000002351933629)。
+* 已[创建项目和快游戏](/docs/dev/game-dev/games-quickgame-create-quickgame-0000002317894816)。
 * 快游戏已完成[配置应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help--release-fastapp-0000001099836868#section19724459249)。
 * 为了提升快游戏首发包的通过率，您需要提前自检游戏接入参数、游戏登录体验等。
 

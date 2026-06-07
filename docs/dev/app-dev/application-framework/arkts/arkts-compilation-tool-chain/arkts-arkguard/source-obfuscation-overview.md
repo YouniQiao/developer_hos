@@ -1,6 +1,6 @@
 ---
 title: "ArkGuard源码混淆工具概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-overview
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-overview
 format: md
 ---
 
@@ -9,7 +9,7 @@ ArkGuard是一款源码混淆工具，提供基础混淆功能。它将代码中
 
 本章节介绍ArkGuard源码混淆工具的使用方法和特点，帮助开发者高效利用ArkGuard进行源码混淆，提升代码复杂度，增加逆向工程难度。
 
-* [ArkGuard混淆原理及功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)：说明混淆能力范围、混淆流程机制、混淆选项和保留选项的使用方法、以及混淆规则的合并策略，以及混淆各功能起始API版本。
-* [ArkGuard混淆开启指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide)：提供实操指南，包括如何开启源码混淆功能、设置自定义混淆规则，以及如何查看混淆效果和进行报错栈还原。
-* [不同包类型的源码混淆建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-practice)：针对不同类型的包（HAP、HAR、HSP）提供混淆策略建议。
-* [ArkGuard混淆常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-questions)：总结常见的功能异常场景及其排查方法，提供典型报错案例的解决方案，帮助开发者快速定位和解决问题。
+* [ArkGuard混淆原理及功能](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation)：说明混淆能力范围、混淆流程机制、混淆选项和保留选项的使用方法、以及混淆规则的合并策略，以及混淆各功能起始API版本。
+* [ArkGuard混淆开启指南](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide)：提供实操指南，包括如何开启源码混淆功能、设置自定义混淆规则，以及如何查看混淆效果和进行报错栈还原。
+* [不同包类型的源码混淆建议](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-practice)：针对不同类型的包（HAP、HAR、HSP）提供混淆策略建议。
+* [ArkGuard混淆常见问题](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-questions)：总结常见的功能异常场景及其排查方法，提供典型报错案例的解决方案，帮助开发者快速定位和解决问题。

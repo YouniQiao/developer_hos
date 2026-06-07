@@ -1,6 +1,6 @@
 ---
 title: "蓝牙-通用"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-bluetooth
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-bluetooth
 format: md
 ---
 

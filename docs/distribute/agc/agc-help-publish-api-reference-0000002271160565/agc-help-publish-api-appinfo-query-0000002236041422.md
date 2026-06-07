@@ -1,6 +1,6 @@
 ---
 title: "查询应用信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-appinfo-query-0000002236041422
+original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-appinfo-query-0000002236041422
 format: md
 ---
 
@@ -26,27 +26,27 @@ format: md
 
 ![](../img/agc-help-publish-api-appinfo-query-0000002236041422_0.png)
 
-本接口支持使用Service Account方式和API客户端方式，二者区别请参见[获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661)。
+本接口支持使用Service Account方式和API客户端方式，二者区别请参见[获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661)。
 
 **Service Account****方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
 
 **API客户端方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
 
 #### [h2]Query
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | appId | M | String(32) | 需要查询的应用ID。 |
-| lang | O | String(16) | 需要查询的语言。  说明：  取值参考[语言类型](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-langtype-0000002236041558)。  不传该参数，则查询全部语言的应用信息。 |
+| lang | O | String(16) | 需要查询的语言。  说明：  取值参考[语言类型](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-langtype-0000002236041558)。  不传该参数，则查询全部语言的应用信息。 |
 | releaseType | O | Integer | 应用发布方式。  取值范围：   * 1：全网 * 6：HarmonyOS测试发布方式（API>=10）   默认值：1 |
 | versionId | O | String | 需要查询的版本ID。  注意：  **releaseType**为6，该字段必填。 |
 
@@ -63,11 +63,11 @@ Authorization: Bearer ******
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-connectret-0000002271160589) | 包含返回码及描述信息的结果。 |
-| appInfo | O | [AppInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appinfo-0000002236041454) | 应用基本信息。 |
-| auditInfo | O | [AuditInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-auditinfo-0000002271000649) | 审核意见信息。 |
-| languages | M | `List&lt;[LanguageInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-languageinfo-0000002236041462)>` | 包含多种语言的应用信息。   * 如果查询时传递了语言类型，则返回当前语言的应用信息。 * 如果查询时未传递语言类型，则返回所有语言的应用信息。 * 如果查询时设置了异常的语言数据，例如不存在的语言类型，则返回空数组。 |
-| phasedReleaseInfo | O | [PhasedReleaseInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-phasedreleaseinfo-0000002271160597) | 分阶段发布信息。 |
+| ret | M | [ConnectRet](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-connectret-0000002271160589) | 包含返回码及描述信息的结果。 |
+| appInfo | O | [AppInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-appinfo-0000002236041454) | 应用基本信息。 |
+| auditInfo | O | [AuditInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-auditinfo-0000002271000649) | 审核意见信息。 |
+| languages | M | `List&lt;[LanguageInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-languageinfo-0000002236041462)>` | 包含多种语言的应用信息。   * 如果查询时传递了语言类型，则返回当前语言的应用信息。 * 如果查询时未传递语言类型，则返回所有语言的应用信息。 * 如果查询时设置了异常的语言数据，例如不存在的语言类型，则返回空数组。 |
+| phasedReleaseInfo | O | [PhasedReleaseInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-phasedreleaseinfo-0000002271160597) | 分阶段发布信息。 |
 
 #### 响应示例
 

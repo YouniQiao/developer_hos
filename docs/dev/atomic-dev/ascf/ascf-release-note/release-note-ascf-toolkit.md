@@ -1,6 +1,6 @@
 ---
 title: "ASCF Toolkit"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-note-ascf-toolkit
+original_url: /docs/dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-toolkit
 format: md
 ---
 
@@ -113,7 +113,7 @@ format: md
 该版本新增和增强特性如下所示：
 
 * 优化编译构建执行性能。
-* 优化调试功能错误提示，请参考[启用调试异常](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/debug-ascf-code#启用调试异常)。
+* 优化调试功能错误提示，请参考[启用调试异常](/docs/dev/atomic-dev/ascf/ascf-development-process/debug-ascf-code#启用调试异常)。
 * 适配DevEco Studio 6.x版本功能。
 * 编译构建支持区分编译器版本缓存。
 * 支持页面级styleIsolation配置。
@@ -141,7 +141,7 @@ format: md
 
 该版本新增和增强特性如下所示：
 
-1. ASCF Toolkit Hvigor Plugin 新增支持元服务使用AtomicServiceEnhancedWeb组件的插件，开发请参考：[开发AtomicServiceEnhancedWeb组件](https://developer.huawei.com/consumer/cn/doc/atomic-guides/develop-atomicserviceenhancedweb)。
+1. ASCF Toolkit Hvigor Plugin 新增支持元服务使用AtomicServiceEnhancedWeb组件的插件，开发请参考：[开发AtomicServiceEnhancedWeb组件](/docs/dev/atomic-dev/atomic-web-development/develop-atomicserviceenhancedweb)。
 2. 优化 Mac OSX系统中依赖全局配置node和hdc的PATH路径要求体验，ASCF Toolkit自动根据默认路径或者环境变量识别。
 3. 优化 disableSubpackages 配置逻辑，对uniapp项目暂时默认启用分包，开发者可手动关闭。
 4. 优化 templateHoist 配置逻辑，检测到项目中存在 ascf/ascf\_src/base.hxml 文件时默认启用，减少开发者手动配置步骤。
@@ -162,7 +162,7 @@ format: md
 
 1. 编译器支持lazyCodeLoading按需加载功能，在app.json中配置 "lazyCodeLoading": "requiredComponents" 生效。
 2. 对于在开启了swc编译的情况下，优化了编译后包的大小。
-3. 支持自定义TabBar配置，可参考文档：[开发自定义Tabbar](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-custom-tabbar)。
+3. 支持自定义TabBar配置，可参考文档：[开发自定义Tabbar](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-custom-tabbar)。
 4. 修复了ASCF Toolkit命令在Mac OSX中路径兼容性问题。
 5. 修复了ASCF Toolkit修改JSON文件和重新编译存在的缓存问题。
 

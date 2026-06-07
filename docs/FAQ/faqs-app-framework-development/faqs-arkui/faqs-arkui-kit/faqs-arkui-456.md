@@ -1,7 +1,7 @@
 ---
 format: md
 title: "页面存在透明的部分，使用组件截图保存为jpg图片，为什么变成了黑色"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-456
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-456
 ---
 
 

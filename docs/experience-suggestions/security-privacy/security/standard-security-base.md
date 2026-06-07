@@ -1,6 +1,6 @@
 ---
 title: "组件安全"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-base
+original_url: /docs/experience-suggestions/security-privacy/security/standard-security-base
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section93277172115) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section93277172115) |
 
 |  |  |
 | --- | --- |
@@ -21,7 +21,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section16254131183715) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section16254131183715) |
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section74546012413) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section74546012413) |
 
 |  |  |
 | --- | --- |
@@ -53,7 +53,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section190521394018) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section190521394018) |
 
 |  |  |
 | --- | --- |
@@ -61,7 +61,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section143261097385) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section143261097385) |
 
 |  |  |
 | --- | --- |
@@ -77,4 +77,4 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机，平板，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section18516943133816) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section18516943133816) |

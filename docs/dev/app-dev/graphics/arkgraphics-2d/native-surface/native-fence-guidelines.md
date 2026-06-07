@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "GPU/CPU内存访问同步操作开发指南 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fence-guidelines
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-fence-guidelines
 format: md
 ---
 

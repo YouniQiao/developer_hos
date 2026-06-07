@@ -1,6 +1,6 @@
 ---
 title: "创建ServiceAbility"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-serviceability
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/create-serviceability
 format: md
 ---
 
@@ -68,7 +68,7 @@ format: md
    ```
 2. 注册ServiceAbility。
 
-   ServiceAbility需要在应用配置文件config.json中进行注册，注册类型type需要设置为service。"visible"属性表示ServiceAbility是否可以被其他应用调用，true表示可以被其他应用调用，false表示不能被其他应用调用（仅应用内可以调用）。若ServiceAbility需要被其他应用调用，注册ServiceAbility时需要设置"visible"为true，同时需要设置支持关联启动。ServiceAbility的启动规则详见[FA模型组件启动规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules-fa)章节。
+   ServiceAbility需要在应用配置文件config.json中进行注册，注册类型type需要设置为service。"visible"属性表示ServiceAbility是否可以被其他应用调用，true表示可以被其他应用调用，false表示不能被其他应用调用（仅应用内可以调用）。若ServiceAbility需要被其他应用调用，注册ServiceAbility时需要设置"visible"为true，同时需要设置支持关联启动。ServiceAbility的启动规则详见[FA模型组件启动规则](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/component-startup-rules-fa)章节。
 
    ```
    {

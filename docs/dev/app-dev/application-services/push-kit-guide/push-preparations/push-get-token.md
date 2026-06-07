@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取Push Token"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ![](./img/b33ab264.png)
 
-Push Kit对Push Token进行了权益校验，请在进行开发前先阅读[开通推送服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-config-setting)章节，完成相关配置。
+Push Kit对Push Token进行了权益校验，请在进行开发前先阅读[开通推送服务](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-config-setting)章节，完成相关配置。
 
 Push Token标识了每台设备上每个应用，开发者调用[getToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicegettoken-1)()接口向Push Kit服务端请求Push Token，获取到之后使用Push Token来推送消息。
 
@@ -33,7 +33,7 @@ Push Token一般情况不会变化，仅下列场景会导致之前的Push Token
 * 请勿使用Push Token跟踪标记用户。
 * 应用不要固定判断Push Token长度，因为Push Token长度可能会变化。
 * 禁止应用频繁申请Push Token。建议应用每次启动时获取Push Token。
-* 只有在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)平台[开通推送服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-config-setting)后，[getToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicegettoken-1)方法才会返回Push Token。
+* 只有在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)平台[开通推送服务](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-config-setting)后，[getToken](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicegettoken-1)方法才会返回Push Token。
 
 ## 接口说明
 
@@ -46,7 +46,7 @@ Push Token一般情况不会变化，仅下列场景会导致之前的Push Token
 
 ## 获取Push Token
 
-1. Push Kit对Push Token进行了权益校验，请在进行开发前先阅读[开通推送服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-config-setting)章节，完成相关配置。
+1. Push Kit对Push Token进行了权益校验，请在进行开发前先阅读[开通推送服务](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-config-setting)章节，完成相关配置。
 2. 导入pushService模块及相关公共模块。
 
    ```

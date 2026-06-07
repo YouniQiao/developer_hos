@@ -1,11 +1,11 @@
 ---
 title: "mutableBuilder：实现全局@Builder动态更新"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-mutablebuilder
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-mutablebuilder
 format: md
 ---
 
 
-当在一个自定义组件内使用多个全局[@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)函数实现UI的不同效果时，代码维护将变得非常困难，且页面不够整洁。此时，可以使用[wrapBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrapbuilder)封装全局@Builder。但是wrapBuilder不支持动态切换@Builder，引入[mutableBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mutablebuilder)实现全局@Builder的动态切换。
+当在一个自定义组件内使用多个全局[@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)函数实现UI的不同效果时，代码维护将变得非常困难，且页面不够整洁。此时，可以使用[wrapBuilder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-wrapbuilder)封装全局@Builder。但是wrapBuilder不支持动态切换@Builder，引入[mutableBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mutablebuilder)实现全局@Builder的动态切换。
 
 ![](./img/5a05ad31.png)
 
@@ -51,7 +51,7 @@ struct Index {
 
 在上述代码中，使用textBuilder初始化wrapBuilder，点击Button的onClick事件，使用buttonBuilder再次初始化wrapBuilder，不会触发对应的@Builder的更新。
 
-为了解决这一问题，引入mutableBuilder作为动态全局@Builder封装函数。mutableBuilder返回MutableBuilder对象，用于[全局@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#全局自定义构建函数)的动态刷新。
+为了解决这一问题，引入mutableBuilder作为动态全局@Builder封装函数。mutableBuilder返回MutableBuilder对象，用于[全局@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder#全局自定义构建函数)的动态刷新。
 
 ## 接口说明
 
@@ -61,7 +61,7 @@ mutableBuilder是一个模板函数，返回一个[MutableBuilder](https://devel
 declare function mutableBuilder<Args extends Object[]>(builder: BuilderCallback): MutableBuilder<Args>;
 ```
 
-同时MutableBuilder对象是一个模板类，继承自[WrappedBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrapbuilder#接口说明)。
+同时MutableBuilder对象是一个模板类，继承自[WrappedBuilder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-wrapbuilder#接口说明)。
 
 ```
 declare class MutableBuilder<Args extends Object[]> extends WrappedBuilder<Args> {
@@ -81,7 +81,7 @@ let builderArr: MutableBuilder<[string, number]>[] = [mutableBuilder(MyBuilder)]
 
 ## 限制条件
 
-1. mutableBuilder方法只能传入[全局@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#全局自定义构建函数)方法，传入局部@Builder方法编译时报错。
+1. mutableBuilder方法只能传入[全局@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder#全局自定义构建函数)方法，传入局部@Builder方法编译时报错。
 
    ```
    class TextContent {
@@ -259,7 +259,7 @@ struct Index {
 
 ## 观察mutableBuilder中@Builder的变化
 
-mutableBuilder对应的@Builder函数中可使用[MutableBinding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#mutablebindingt20)进行包裹来观察状态变量的变化，同时可通过[@Monitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor)或[addMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-addmonitor-clearmonitor)监听mutableBuilder中@Builder的变化。
+mutableBuilder对应的@Builder函数中可使用[MutableBinding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#mutablebindingt20)进行包裹来观察状态变量的变化，同时可通过[@Monitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor)或[addMonitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor)监听mutableBuilder中@Builder的变化。
 
 ```
 import { UIUtils, MutableBinding } from '@kit.ArkUI';

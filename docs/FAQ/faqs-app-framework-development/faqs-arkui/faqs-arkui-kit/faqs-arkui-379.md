@@ -1,6 +1,6 @@
 ---
 title: "如何模拟点击事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-379
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-379
 format: md
 ---
 

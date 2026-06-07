@@ -1,11 +1,11 @@
 ---
 format: md
 title: "如何主动清除控件的焦点"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-20
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-20
 ---
 
 
-当组件处于获焦状态时，将其focusable属性或enabled属性设置为false，会自动使该组件失焦。焦点将按照[走焦规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-focus-event#走焦规范)转移给其他组件。参考代码如下：
+当组件处于获焦状态时，将其focusable属性或enabled属性设置为false，会自动使该组件失焦。焦点将按照[走焦规则](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-focus-event#走焦规范)转移给其他组件。参考代码如下：
 
 ```
 @Entry
@@ -41,4 +41,4 @@ struct ClearComponentFocus {
 
 **参考链接**
 
-[设置组件是否获焦](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-focus-event#设置组件是否可获焦)
+[设置组件是否获焦](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-focus-event#设置组件是否可获焦)

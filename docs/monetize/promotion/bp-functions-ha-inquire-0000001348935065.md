@@ -1,7 +1,7 @@
 ---
 title: "查询HA归因报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ha-inquire-0000001348935065
+original_url: /docs/monetize/promotion/bp-functions-ha-inquire-0000001348935065
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现Tabs页签导航栏切换时，下划线也随之滑动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-17
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-17
 ---
 
 

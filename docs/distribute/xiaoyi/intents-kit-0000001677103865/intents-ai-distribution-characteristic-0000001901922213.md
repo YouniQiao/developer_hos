@@ -1,7 +1,7 @@
 ---
 title: "智慧分发特性"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/intents-ai-distribution-characteristic-0000001901922213
+original_url: /docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-ai-distribution-characteristic-0000001901922213
 ---
 
 import MergeTable from '@site/src/components/MergeTable';

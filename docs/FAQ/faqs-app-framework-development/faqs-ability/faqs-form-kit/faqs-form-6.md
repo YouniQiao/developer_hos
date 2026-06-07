@@ -1,7 +1,7 @@
 ---
 format: md
 title: "元服务与服务卡片的区别"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-form-6
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-form-kit/faqs-form-6
 ---
 
 

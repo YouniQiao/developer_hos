@@ -1,21 +1,21 @@
 ---
 title: "AbilityStage组件管理器"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitystage
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/abilitystage
 format: md
 ---
 
 
 ## 概述
 
-[AbilityStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage)是一个[Module](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-overview#应用的多module设计机制)级别的组件管理器，应用的[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)在首次加载时会创建一个AbilityStage实例，可以对该Module进行初始化等操作。AbilityStage与HAP一一对应，即每个HAP拥有一个AbilityStage实例。
+[AbilityStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage)是一个[Module](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-overview#应用的多module设计机制)级别的组件管理器，应用的[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)在首次加载时会创建一个AbilityStage实例，可以对该Module进行初始化等操作。AbilityStage与HAP一一对应，即每个HAP拥有一个AbilityStage实例。
 
 AbilityStage拥有[onCreate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage#oncreate)、[onDestroy()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage#ondestroy12)生命周期回调和[onAcceptWant()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage#onacceptwant)、[onConfigurationUpdate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage#onconfigurationupdate)、[onMemoryLevel()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage#onmemorylevel)、[onNewProcessRequest()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage#onnewprocessrequest11)、[onPrepareTermination()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage#onpreparetermination15)等事件回调。
 
 * onCreate()生命周期回调：在开始加载对应Module的第一个应用组件（如[UIAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)或具体扩展能力的[ExtensionAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-extensionability)）实例之前会先创建AbilityStage，并在AbilityStage创建完成之后执行其onCreate()生命周期回调。AbilityStage模块提供在Module加载的时候，通知开发者，可以在此进行该Module的初始化（如资源预加载、线程创建等）。
-* onAcceptWant()事件回调：UIAbility[指定实例模式（specified）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type#specified启动模式)启动时触发的事件回调，具体使用请参见[UIAbility启动模式综述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type)。
+* onAcceptWant()事件回调：UIAbility[指定实例模式（specified）](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-launch-type#specified启动模式)启动时触发的事件回调，具体使用请参见[UIAbility启动模式综述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-launch-type)。
 * onConfigurationUpdate()事件回调：当系统环境变量（例如系统语言、深浅色等）发生变更时触发的事件回调，配置项均定义在[Configuration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-configuration)类中。
 * onMemoryLevel()事件回调：当系统调整内存时触发的事件回调。应用被切换到后台时，系统会将在后台的应用保留在缓存中。即使应用处于缓存中，也会影响系统整体性能。当系统资源不足时，系统会通过多种方式从应用中回收内存，必要时会完全停止应用，从而释放内存用于执行关键任务。为了进一步保持系统内存的平衡，避免系统停止用户的应用进程，可以在AbilityStage中的onMemoryLevel()生命周期回调中订阅系统内存的变化情况，释放不必要的资源。
-* onNewProcessRequest()事件回调：UIAbility启动时触发的事件回调。通过该回调，开发者可以指定每个UIAbility启动时是否在独立的进程中创建。该回调返回一个开发者自定义字符串标识，如果返回的字符串标识为开发者曾创建的，则复用该标识所对应的进程，否则创建新的进程。需要注意该回调需要配合在module.json5中声明[isolationProcess](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)字段为true。
+* onNewProcessRequest()事件回调：UIAbility启动时触发的事件回调。通过该回调，开发者可以指定每个UIAbility启动时是否在独立的进程中创建。该回调返回一个开发者自定义字符串标识，如果返回的字符串标识为开发者曾创建的，则复用该标识所对应的进程，否则创建新的进程。需要注意该回调需要配合在module.json5中声明[isolationProcess](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)字段为true。
 * onPrepareTermination()事件回调：当应用被用户关闭时调用，可用于询问用户选择立即执行操作还是取消操作。开发者通过在回调中返回[AbilityConstant.PrepareTermination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilityconstant#preparetermination15)中定义的枚举类型通知系统是否继续执行关闭动作。
 * onDestroy()生命周期回调：当对应Module的最后一个Ability实例退出后触发。此方法仅在应用正常销毁时触发。当应用程序异常退出或被终止时，将不会调用此方法。
 
@@ -48,7 +48,7 @@ DevEco Studio默认工程中未自动生成AbilityStage，如需要使用Ability
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Ability/AbilityStage/entry/src/main/ets/exampleabilitystage/MyAbilityStage.ets#L16-L29" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：MyAbilityStage.ets</a></div>
 
-4. 在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中，通过配置 srcEntry 参数来指定模块对应的代码路径，以作为HAP加载的入口。
+4. 在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中，通过配置 srcEntry 参数来指定模块对应的代码路径，以作为HAP加载的入口。
 
    ```
    {

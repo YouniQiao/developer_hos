@@ -1,6 +1,6 @@
 ---
 title: "订阅任务执行超时事件（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-apphicollie-events-ndk
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-hicollie-events/hiappevent-watcher-apphicollie-events-ndk
 format: md
 ---
 

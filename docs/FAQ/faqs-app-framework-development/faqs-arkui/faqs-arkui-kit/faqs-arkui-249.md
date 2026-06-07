@@ -1,6 +1,6 @@
 ---
 title: "如何获取底部手势横条的高度"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-249
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-249
 format: md
 ---
 

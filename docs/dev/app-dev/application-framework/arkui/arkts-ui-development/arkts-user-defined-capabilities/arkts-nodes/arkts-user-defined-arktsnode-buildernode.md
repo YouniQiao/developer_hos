@@ -1,13 +1,13 @@
 ---
 title: "自定义声明式节点 (BuilderNode)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-buildernode
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-buildernode
 format: md
 ---
 
 
 ## 概述
 
-自定义声明式节点 ([BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode))提供能够挂载系统组件的能力，支持采用无状态的UI方式，通过[全局自定义构建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#全局自定义构建函数)@Builder定制组件树。组件树的根[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)节点可通过[getFrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#getframenode)获取，该节点既可直接由[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)返回并挂载于[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)节点下，亦可在FrameNode树与[RenderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-rendernode)树中嵌入声明式组件，实现混合显示。同时，BuilderNode具备纹理导出功能，导出的纹理可在[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)中实现同层渲染。
+自定义声明式节点 ([BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode))提供能够挂载系统组件的能力，支持采用无状态的UI方式，通过[全局自定义构建函数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder#全局自定义构建函数)@Builder定制组件树。组件树的根[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)节点可通过[getFrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#getframenode)获取，该节点既可直接由[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)返回并挂载于[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)节点下，亦可在FrameNode树与[RenderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-rendernode)树中嵌入声明式组件，实现混合显示。同时，BuilderNode具备纹理导出功能，导出的纹理可在[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)中实现同层渲染。
 
 由BuilderNode构建的ArkTS组件树，支持与自定义节点（如FrameNode、RenderNode）关联使用，确保了系统组件与自定义节点的混合显示效果。对于需与自定义节点对接的第三方框架，BuilderNode提供了嵌入系统组件的方法。
 
@@ -17,14 +17,14 @@ format: md
 
 ## 基本概念
 
-* 系统组件：组件是UI的必要元素，形成了在界面中的样子，由ArkUI直接提供的称为[系统组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-development-overview)。
+* 系统组件：组件是UI的必要元素，形成了在界面中的样子，由ArkUI直接提供的称为[系统组件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-development-overview)。
 * 实体节点：由后端创建的Native节点。
 
 BuilderNode仅可作为叶子节点进行使用。如有更新需要，建议通过BuilderNode中的[update](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#update)方式触发更新，不建议通过BuilderNode中获取的RenderNode对节点进行修改操作。
 
 ![](./img/b22c1d32.png)
 
-* BuilderNode只支持一个由[wrapBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrapbuilder)包装的[全局自定义构建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#全局自定义构建函数)@Builder。
+* BuilderNode只支持一个由[wrapBuilder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-wrapbuilder)包装的[全局自定义构建函数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder#全局自定义构建函数)@Builder。
 * 一个新建的BuilderNode在[build](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#build)之后才能通过[getFrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#getframenode)获取到一个指向根节点的FrameNode对象，否则返回null。
 * 如果传入的Builder的根节点为语法节点（if/else/foreach/...），需要额外生成一个FrameNode，在节点树中的显示为“BuilderProxyNode”。
 * 如果BuilderNode通过getFrameNode将节点挂载在另一个FrameNode上，或者将其作为子节点挂载在NodeContainer节点上。则节点中使用父组件的布局约束进行布局。
@@ -33,7 +33,7 @@ BuilderNode仅可作为叶子节点进行使用。如有更新需要，建议通
 
 ## 创建BuilderNode对象
 
-BuilderNode对象为一个模板类，需要在创建的时候指定类型。该类型需要与后续build方法中传入的[WrappedBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrapbuilder)的类型保持一致，否则会存在编译告警导致编译失败。
+BuilderNode对象为一个模板类，需要在创建的时候指定类型。该类型需要与后续build方法中传入的[WrappedBuilder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-wrapbuilder)的类型保持一致，否则会存在编译告警导致编译失败。
 
 ## 创建组件树
 
@@ -199,7 +199,7 @@ struct RenderNodePage {
 
 通过BuilderNode对象的build创建组件树。依照传入的WrappedBuilder对象创建组件树，并持有组件树的根节点。
 
-自定义组件的更新遵循[状态管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview)的更新机制。WrappedBuilder中直接使用的自定义组件其父组件为BuilderNode对象。因此，更新子组件即WrappedBuilder中定义的自定义组件，需要遵循状态管理的定义将相关的状态变量定义为[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)或者[@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)。装饰器的选择请参照状态管理的装饰器规格结合应用开发需求进行选择。
+自定义组件的更新遵循[状态管理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview)的更新机制。WrappedBuilder中直接使用的自定义组件其父组件为BuilderNode对象。因此，更新子组件即WrappedBuilder中定义的自定义组件，需要遵循状态管理的定义将相关的状态变量定义为[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)或者[@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)。装饰器的选择请参照状态管理的装饰器规格结合应用开发需求进行选择。
 
 使用update更新BuilderNode中的节点。
 
@@ -868,7 +868,7 @@ struct Index {
 
 ## BuilderNode在子自定义组件中使用@Reusable装饰器
 
-BuilderNode节点的复用机制与使用[@Reusable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable)装饰器的自定义组件的复用机制会相互冲突。因此，当BuilderNode的子节点为自定义组件时，不支持该自定义组件使用@Reusable装饰器标记，否则将导致应用程序触发JSCrash。若需要使用@Reusable装饰器，应使用一个普通自定义组件包裹该自定义组件。
+BuilderNode节点的复用机制与使用[@Reusable](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable)装饰器的自定义组件的复用机制会相互冲突。因此，当BuilderNode的子节点为自定义组件时，不支持该自定义组件使用@Reusable装饰器标记，否则将导致应用程序触发JSCrash。若需要使用@Reusable装饰器，应使用一个普通自定义组件包裹该自定义组件。
 
 在下面的示例中，ReusableChildComponent作为BuilderNode的子自定义组件，无法标记为@Reusable。通过ChildComponent2对其包裹，ReusableChildComponent可以使用@Reusable装饰器标记。
 
@@ -1245,7 +1245,7 @@ struct PageTwo {
 
 ![](./img/2b710fce.gif)
 
-在API version 16之前，解决该问题的方法是在页面销毁时，将页面上的BuilderNode从缓存中移除。以上述例子为例，可以在页面跳转前，通过点击事件将BuilderNode从[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中移除，以此达到预期效果。
+在API version 16之前，解决该问题的方法是在页面销毁时，将页面上的BuilderNode从缓存中移除。以上述例子为例，可以在页面跳转前，通过点击事件将BuilderNode从[AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage)中移除，以此达到预期效果。
 
 API version 16及之后版本，BuilderNode在新页面被复用时，会自动刷新自身内容，无需在页面销毁时将BuilderNode从缓存中移除，如下所示。
 
@@ -1341,7 +1341,7 @@ struct Index {
 
 ## BuilderNode中使用LocalStorage
 
-从API version 12开始，自定义组件支持接收[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例。可以通过[传递LocalStorage实例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#自定义组件接收localstorage实例)来使用LocalStorage相关的装饰器[@LocalStorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorageprop)、[@LocalStorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstoragelink)。
+从API version 12开始，自定义组件支持接收[LocalStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage)实例。可以通过[传递LocalStorage实例](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage#自定义组件接收localstorage实例)来使用LocalStorage相关的装饰器[@LocalStorageProp](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage#localstorageprop)、[@LocalStorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage#localstoragelink)。
 
 ```
 import { BuilderNode, NodeController, UIContext } from '@kit.ArkUI';
@@ -1510,7 +1510,7 @@ struct Index {
 
 ## 设置BuilderNode继承冻结能力
 
-ArkUI支持[自定义组件冻结](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-freeze)，该功能冻结非激活状态组件的刷新能力。当组件处于非激活状态时，即便其绑定状态变量发生变化，也不会触发组件UI的重新渲染，从而减少复杂UI场景的刷新负载。
+ArkUI支持[自定义组件冻结](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-freeze/arkts-custom-components-freeze)，该功能冻结非激活状态组件的刷新能力。当组件处于非激活状态时，即便其绑定状态变量发生变化，也不会触发组件UI的重新渲染，从而减少复杂UI场景的刷新负载。
 
 从API version 20开始，BuilderNode节点可以通过[inheritFreezeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#inheritfreezeoptions20)接口继承父自定义组件（即从该BuilderNode节点向上查找的第一个自定义组件）的冻结策略。当BuilderNode节点继承父自定义组件的冻结策略时，若父自定义组件的冻结策略设置为开启组件冻结（即[freezeWhenInactive](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-parameter#componentoptions)选项设为true），则BuilderNode节点在不活跃时将会冻结，当切换至活跃状态时解冻，并使用缓存的数据更新节点。
 
@@ -2472,13 +2472,13 @@ struct FreezeBuildNode {
 
 ## 设置BuilderNode支持内部@Consume接收外部的@Provide数据（状态管理V1）
 
-从API version 20开始，通过配置BuildOptions参数，BuilderNode内部自定义组件的[@Consume](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)支持接收所在页面的[@Provide](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)数据。
+从API version 20开始，通过配置BuildOptions参数，BuilderNode内部自定义组件的[@Consume](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)支持接收所在页面的[@Provide](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)数据。
 
 参见[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#示例5buildernode支持内部consume接收外部的provide数据)。
 
 ## 设置BuilderNode支持内部@Consumer接收外部的@Provider数据（状态管理V2）
 
-从API version 23开始，通过配置BuildOptions参数，BuilderNode内部自定义组件的[@Consumer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer)支持接收所在页面的[@Provider](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer)数据。
+从API version 23开始，通过配置BuildOptions参数，BuilderNode内部自定义组件的[@Consumer](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer)支持接收所在页面的[@Provider](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer)数据。
 
 参见[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#示例6buildernode支持内部consumer接收外部的provider数据)。
 
@@ -2488,7 +2488,7 @@ struct FreezeBuildNode {
 
 ![](./img/a3c0c6db.png)
 
-访问在线网页时需添加网络权限：ohos.permission.INTERNET，具体申请方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+访问在线网页时需添加网络权限：ohos.permission.INTERNET，具体申请方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 1. 创建载体Ability，并创建Web组件。
 

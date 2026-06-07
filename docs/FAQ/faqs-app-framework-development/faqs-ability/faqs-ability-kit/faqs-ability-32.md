@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Extension类进程崩溃是否会导致主进程崩溃"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-32
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-32
 ---
 
 

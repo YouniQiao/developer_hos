@@ -1,7 +1,7 @@
 ---
 format: md
 title: "设备切换后没有暂停"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-15
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-15
 ---
 
 
@@ -10,4 +10,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[响应输出设备变更时合理暂停](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-change)
+[响应输出设备变更时合理暂停](/docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-change)

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "将rawfile中json格式的字符串转换成对应的object对象后，调用实例方法后程序崩溃"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-1
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-1
 ---
 
 

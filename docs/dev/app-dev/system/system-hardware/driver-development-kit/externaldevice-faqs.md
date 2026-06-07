@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/externaldevice-faqs
+original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/externaldevice-faqs
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "如何指定对象某些属性参与序列化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-128
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-128
 format: md
 ---
 

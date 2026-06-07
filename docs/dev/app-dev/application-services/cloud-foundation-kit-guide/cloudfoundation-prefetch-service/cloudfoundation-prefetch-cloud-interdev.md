@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发预加载资源接口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-cloud-interdev
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-cloud-interdev
 format: md
 ---
 
@@ -14,17 +14,17 @@ format: md
 
 ![](./img/cb1d02a3.png)
 
-1. [开发函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-develop-function-nodejs)：按照云函数接口规范开发函数。
-2. [创建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-create-and-config-function)：函数业务代码开发完成后，即可在AGC云端创建函数。
-3. [测试函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-test-function)：对函数进行测试，以确保函数代码运行正常。
+1. [开发函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-develop-function/cloudfoundation-develop-function-nodejs)：按照云函数接口规范开发函数。
+2. [创建函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-create-and-config-function)：函数业务代码开发完成后，即可在AGC云端创建函数。
+3. [测试函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-test-function)：对函数进行测试，以确保函数代码运行正常。
 
 ### 云函数接口规范
 
 | 预加载类型 | API名称 | 说明 | 参数 | 返回值 |
 | --- | --- | --- | --- | --- |
-| 安装预加载 | 自定义 | 获取预加载数据接口 | event.body.appId：应用ID，获取方法请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 | 自定义JSON字符串 |
-| 周期性预加载 | 自定义 | 获取预加载数据接口 | - event.body.appId：应用ID，获取方法请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。  - event.body.token：可选，注册周期性预加载任务时开发者自行传入的用户级认证信息，长度不超过2048个字符。  - event.body.params：可选，注册周期性预加载任务时开发者自行传入的自定义参数，长度不超过1024个字符。 | 自定义JSON字符串 |
-| 跳链安装预加载 | 自定义 | 获取预加载数据接口 | - event.body.appId：应用ID，获取方法请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。  - event.body.link：可选，跳链安装预加载延迟链接。 | 自定义JSON字符串 |
+| 安装预加载 | 自定义 | 获取预加载数据接口 | event.body.appId：应用ID，获取方法请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 | 自定义JSON字符串 |
+| 周期性预加载 | 自定义 | 获取预加载数据接口 | - event.body.appId：应用ID，获取方法请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。  - event.body.token：可选，注册周期性预加载任务时开发者自行传入的用户级认证信息，长度不超过2048个字符。  - event.body.params：可选，注册周期性预加载任务时开发者自行传入的自定义参数，长度不超过1024个字符。 | 自定义JSON字符串 |
+| 跳链安装预加载 | 自定义 | 获取预加载数据接口 | - event.body.appId：应用ID，获取方法请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。  - event.body.link：可选，跳链安装预加载延迟链接。 | 自定义JSON字符串 |
 
 ### 示例
 
@@ -144,9 +144,9 @@ format: md
 
 | 预加载类型 | API/PATH名称 | 说明 | 参数 | 请求方式 | 返回值 |
 | --- | --- | --- | --- | --- | --- |
-| 安装预加载 | 自定义 | 获取预加载数据接口 | appId：应用ID，获取方法请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 | GET | 自定义JSON字符串 |
-| 周期性预加载 | 自定义 | 获取预加载数据接口 | - appId：应用ID，获取方法请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。  - token：可选，注册周期性预加载任务时开发者自行传入的用户级认证信息，长度不超过2048个字符。  - params：可选，注册周期性预加载任务时开发者自行传入的自定义参数，长度不超过1024个字符。 | GET | 自定义JSON字符串 |
-| 跳链安装预加载 | 自定义 | 获取预加载数据接口 | - appId：应用ID，获取方法请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。  - link：可选，跳链安装预加载延迟链接。 | GET | 自定义JSON字符串 |
+| 安装预加载 | 自定义 | 获取预加载数据接口 | appId：应用ID，获取方法请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 | GET | 自定义JSON字符串 |
+| 周期性预加载 | 自定义 | 获取预加载数据接口 | - appId：应用ID，获取方法请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。  - token：可选，注册周期性预加载任务时开发者自行传入的用户级认证信息，长度不超过2048个字符。  - params：可选，注册周期性预加载任务时开发者自行传入的自定义参数，长度不超过1024个字符。 | GET | 自定义JSON字符串 |
+| 跳链安装预加载 | 自定义 | 获取预加载数据接口 | - appId：应用ID，获取方法请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。  - link：可选，跳链安装预加载延迟链接。 | GET | 自定义JSON字符串 |
 
 ### 示例
 

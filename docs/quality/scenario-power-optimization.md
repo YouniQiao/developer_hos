@@ -1,11 +1,11 @@
 ---
 title: "功耗场景优化案例"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-power-optimization
+original_url: /docs/quality/scenario-power-optimization
 format: md
 ---
 
 
 # 功耗场景优化案例
 
-* **[Vsync低功耗优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-vsync-power-optimization)**
-* **[Buffer低功耗优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-buffer-power-optimization)**
+* **[Vsync低功耗优化](/docs/quality/vsync-power-optimization)**
+* **[Buffer低功耗优化](/docs/quality/buffer-power-optimization)**

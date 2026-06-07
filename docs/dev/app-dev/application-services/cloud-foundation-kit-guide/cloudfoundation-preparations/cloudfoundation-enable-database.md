@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开通云数据库服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-database
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-database
 format: md
 ---
 
@@ -16,4 +16,4 @@ format: md
 
    ![](./img/d98a619f.png)
 
-   如果开发者此时未设置数据处理位置，系统会自动弹出提示框提示开发者进行设置，具体请参见[设置数据处理位置](https://developer.huawei.com/consumer/cn/doc/app/agc-help-data-location-0000002277923065#section154810363471)。
+   如果开发者此时未设置数据处理位置，系统会自动弹出提示框提示开发者进行设置，具体请参见[设置数据处理位置](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-data-location-0000002277923065#section154810363471)。

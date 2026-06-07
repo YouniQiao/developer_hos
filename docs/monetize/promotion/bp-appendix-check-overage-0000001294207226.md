@@ -1,7 +1,7 @@
 ---
 title: "如何在开发者联盟网站查看账户余额"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-check-overage-0000001294207226
+original_url: /docs/monetize/promotion/bp-appendix-check-overage-0000001294207226
 format: md
 ---
 

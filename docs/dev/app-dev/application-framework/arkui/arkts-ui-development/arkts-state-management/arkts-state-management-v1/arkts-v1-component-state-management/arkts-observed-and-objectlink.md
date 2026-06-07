@@ -1,13 +1,13 @@
 ---
 title: "@Observed装饰器和@ObjectLink装饰器：嵌套类对象属性变化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink
 format: md
 ---
 
 
-上文所述的装饰器（包括[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)、[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)、[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)、[@Provide和@Consume](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)装饰器）仅能观察到第一层的变化，但是在实际应用开发中，应用会根据开发需要，封装自己的数据模型。对于多层嵌套的情况，比如二维数组、对象数组、嵌套类场景，无法观察到第二层的属性变化。因此，为了实现对嵌套数据结构中深层属性变化的观察，引入了@Observed和@ObjectLink装饰器。
+上文所述的装饰器（包括[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)、[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)、[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)、[@Provide和@Consume](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)装饰器）仅能观察到第一层的变化，但是在实际应用开发中，应用会根据开发需要，封装自己的数据模型。对于多层嵌套的情况，比如二维数组、对象数组、嵌套类场景，无法观察到第二层的属性变化。因此，为了实现对嵌套数据结构中深层属性变化的观察，引入了@Observed和@ObjectLink装饰器。
 
-@Observed/@ObjectLink适用于观察嵌套对象（对象的属性是对象）属性的变化，需要开发者对装饰器的基本观察能力有一定的了解，再来对比阅读该文档。建议提前阅读：[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)的基本用法。最佳实践请参考[状态管理最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-status-management)。常见问题请参考[状态管理常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq)。
+@Observed/@ObjectLink适用于观察嵌套对象（对象的属性是对象）属性的变化，需要开发者对装饰器的基本观察能力有一定的了解，再来对比阅读该文档。建议提前阅读：[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)的基本用法。最佳实践请参考[状态管理最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-status-management)。常见问题请参考[状态管理常见问题](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq)。
 
 ![](./img/b7ec9e0f.png)
 
@@ -35,7 +35,7 @@ format: md
 | @ObjectLink变量装饰器 | 说明 |
 | --- | --- |
 | 装饰器参数 | 无。 |
-| 允许装饰的变量类型 | 支持继承Date、[Array](#二维数组)的class实例。  API version 11及以后支持继承[Map](#继承map类)、[Set](#继承set类)的class实例以及@Observed装饰类和undefined或null组成的联合类型，比如ClassA | ClassB、 ClassA | undefined 或者 ClassA | null, 示例请参考[@ObjectLink支持联合类型](#objectlink支持联合类型)。  API version 19之前，必须为被@Observed装饰的class实例。  API version 19及以后，@ObjectLink可以被复杂类型初始化，即class、object或built-in类型。但当观察嵌套类型时，仍需其接收@Observed装饰的类实例或makeV1Observed的返回值。  **说明：**  @ObjectLink不支持简单类型，如果开发者需要使用简单类型，可以使用[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)。 |
+| 允许装饰的变量类型 | 支持继承Date、[Array](#二维数组)的class实例。  API version 11及以后支持继承[Map](#继承map类)、[Set](#继承set类)的class实例以及@Observed装饰类和undefined或null组成的联合类型，比如ClassA | ClassB、 ClassA | undefined 或者 ClassA | null, 示例请参考[@ObjectLink支持联合类型](#objectlink支持联合类型)。  API version 19之前，必须为被@Observed装饰的class实例。  API version 19及以后，@ObjectLink可以被复杂类型初始化，即class、object或built-in类型。但当观察嵌套类型时，仍需其接收@Observed装饰的类实例或makeV1Observed的返回值。  **说明：**  @ObjectLink不支持简单类型，如果开发者需要使用简单类型，可以使用[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)。 |
 | 被装饰变量的初始值 | 禁止本地初始化。 |
 
 @ObjectLink的属性可以被改变，但不允许整体赋值，即@ObjectLink装饰的变量是只读的。
@@ -49,7 +49,7 @@ this.objLink= ...
 
 ![](./img/e00ceecb.png)
 
-@ObjectLink装饰的变量不能被赋值，如果要使用赋值操作，请使用[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)。
+@ObjectLink装饰的变量不能被赋值，如果要使用赋值操作，请使用[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)。
 
 * @Prop装饰的变量和数据源的关系是单向同步，@Prop装饰的变量在本地拷贝了数据源，所以它允许本地更改，如果父组件中的数据源有更新，@Prop装饰的变量在本地的修改将被覆盖。
 * @ObjectLink装饰的变量和数据源的关系是双向同步，@ObjectLink装饰的变量相当于指向数据源的指针。禁止对@ObjectLink装饰的变量赋值，如果发生@ObjectLink装饰的变量的赋值，则同步链将被打断。
@@ -58,7 +58,7 @@ this.objLink= ...
 
 | @ObjectLink传递/访问 | 说明 |
 | --- | --- |
-| 从父组件初始化 | 必须指定。  必须使用复杂类型初始化@ObjectLink装饰的变量，如果需要观察变化需要满足以下场景：  - API version 19之前，类型必须为被@Observed装饰的class实例。  - API version 19及以后，@ObjectLink可以被复杂类型初始化，即class、object或built-in类型。但当观察嵌套类型时，仍需其接收@Observed装饰的类实例或makeV1Observed的返回值。  - 同步源的class或者数组必须是[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)，[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)，[@Provide](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)，[@Consume](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)或者@ObjectLink装饰的数据。  同步源是数组项的示例请参考[对象数组](#对象数组)。初始化的class的示例请参考[嵌套对象](#嵌套对象)。 |
+| 从父组件初始化 | 必须指定。  必须使用复杂类型初始化@ObjectLink装饰的变量，如果需要观察变化需要满足以下场景：  - API version 19之前，类型必须为被@Observed装饰的class实例。  - API version 19及以后，@ObjectLink可以被复杂类型初始化，即class、object或built-in类型。但当观察嵌套类型时，仍需其接收@Observed装饰的类实例或makeV1Observed的返回值。  - 同步源的class或者数组必须是[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)，[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)，[@Provide](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)，[@Consume](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)或者@ObjectLink装饰的数据。  同步源是数组项的示例请参考[对象数组](#对象数组)。初始化的class的示例请参考[嵌套对象](#嵌套对象)。 |
 | 与源对象同步 | 双向。 |
 | 可以初始化子组件 | 允许，可用于初始化常规变量、@State、@Link、@Prop、@Provide |
 
@@ -163,7 +163,7 @@ struct Parent {
 ## 限制条件
 
 1. 使用@Observed装饰class会改变class原始的原型链，@Observed和其他类装饰器装饰同一个class可能会带来问题。
-2. @ObjectLink装饰器不建议在[@Entry](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#entry)装饰的自定义组件中使用，编译时会产生告警。
+2. @ObjectLink装饰器不建议在[@Entry](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#entry)装饰的自定义组件中使用，编译时会产生告警。
 3. @ObjectLink装饰的类型必须是复杂类型，否则会有编译时报错。
 4. API version 19前，@ObjectLink装饰的变量类型必须是显式地由@Observed装饰的类。如果未指定类型，或不是@Observed装饰的class，编译时报错。
 
@@ -448,7 +448,7 @@ struct Index {
 
 ![](./img/b6d0a90c.png)
 
-NextID是用来在[ForEach循环渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)过程中，为每个数组元素生成一个唯一且持久的键值，标识对应的组件。
+NextID是用来在[ForEach循环渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)过程中，为每个数组元素生成一个唯一且持久的键值，标识对应的组件。
 
 ```
 import { hilog } from '@kit.PerformanceAnalysisKit';
@@ -1688,7 +1688,7 @@ struct DelayedChangeIndex {
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/arktsobservedandobjectlink/entry/src/main/ets/pages/ObservedAndObjectLinkFAQs/DelayedChange.ets#L15-L55" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：DelayedChange.ets</a></div>
 
 
-上文的示例代码将定时器修改移入到组件内，此时界面显示时会先显示“The value of renderClass is：false”。待定时器触发时，renderClass的值改变，触发[@Watch](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch)回调，此时界面刷新显示“The value of renderClass is：true”，日志输出“The value of renderClass is changed to：true”。
+上文的示例代码将定时器修改移入到组件内，此时界面显示时会先显示“The value of renderClass is：false”。待定时器触发时，renderClass的值改变，触发[@Watch](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch)回调，此时界面刷新显示“The value of renderClass is：true”，日志输出“The value of renderClass is changed to：true”。
 
 因此，更推荐开发者在组件中对@Observed装饰的类成员变量进行修改，以实现刷新。
 
@@ -1884,7 +1884,7 @@ struct Index {
 
 ### LazyForEach和@ObjectLink一起使用时，替换数组数据后UI不刷新
 
-@Observed装饰的类的数组，用[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)展开显示的时候，可能会出现替换数组数据后，修改数组数据不刷新UI的问题。改变数组数据后，需要调用onDataChange通知LazyForEach组件重新绑定状态变量，否则就会出现上述问题。
+@Observed装饰的类的数组，用[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)展开显示的时候，可能会出现替换数组数据后，修改数组数据不刷新UI的问题。改变数组数据后，需要调用onDataChange通知LazyForEach组件重新绑定状态变量，否则就会出现上述问题。
 
 【反例】
 

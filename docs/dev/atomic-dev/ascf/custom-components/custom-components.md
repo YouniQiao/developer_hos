@@ -1,11 +1,11 @@
 ---
 title: "自定义组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components
+original_url: /docs/dev/atomic-dev/ascf/custom-components/custom-components
 format: md
 ---
 
 
-* **[介绍](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-overview)**
-* **[组件之间通信](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-communication)**
-* **[数据监听器observers](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-observers)**
-* **[占位组件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/component-placeholder)**
+* **[介绍](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-overview)**
+* **[组件之间通信](/docs/dev/atomic-dev/ascf/custom-components/custom-components-communication)**
+* **[数据监听器observers](/docs/dev/atomic-dev/ascf/custom-components/custom-components-observers)**
+* **[占位组件](/docs/dev/atomic-dev/ascf/custom-components/component-placeholder)**

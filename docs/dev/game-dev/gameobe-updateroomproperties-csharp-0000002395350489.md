@@ -1,6 +1,6 @@
 ---
 title: "更新房间信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-updateroomproperties-csharp-0000002395350489
+original_url: /docs/dev/game-dev/gameobe-updateroomproperties-csharp-0000002395350489
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "生物特征认证交易"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-verifybybio
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-bio/devicesecurity-trustedauth-verifybybio
 format: md
 ---
 
@@ -49,8 +49,8 @@ format: md
    import { common } from '@kit.AbilityKit';
    ```
 2. 首先开发者需要在服务器查询对应账户是否已开通对应生物特征认证能力，在确认开通后方可发起生物特征认证交易。
-3. 发起生物特征认证交易前，需从服务器获取当前账号在[设置数字盾密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd)时获取的authID。
-4. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts)，初始化签名会话。
+3. 发起生物特征认证交易前，需从服务器获取当前账号在[设置数字盾密码](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd)时获取的authID。
+4. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts)，初始化签名会话。
 5. 调用数字盾交易信息处理接口[procContentAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#proccontentauthentication)发起生物特征认证前的交易信息确认申请。
 
    ```
@@ -81,7 +81,7 @@ format: md
    let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
    const authToken: trustedAuthentication.AuthToken = await FaceAuthContent(challenge, context);
    ```
-6. 通过用户认证服务提供的接口，拉起生物特征认证控件并[发起认证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-authentication)。
+6. 通过用户认证服务提供的接口，拉起生物特征认证控件并[发起认证](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/start-authentication)。
 7. 当订阅的生物认证结果获取到后，将数字盾交易信息确认结果和生物特征认证结果统一整合，发起生物特征认证交易请求。
 
    ```
@@ -92,5 +92,5 @@ format: md
      let authToken = newBioAuthToken.authToken as Uint8Array;
    });
    ```
-8. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts), 对返回的authToken数据和交易信息明文进行签名，并结束签名会话。
+8. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts), 对返回的authToken数据和交易信息明文进行签名，并结束签名会话。
 9. 应用在交易信息验签通过后，可在应用对应服务器比对已绑定的生物特征凭证（credential）与当前交易认证采集的生物特征标识符（credential ID），确保账号绑定的生物特征信息与交易请求认证使用的生物特征信息的一致性。

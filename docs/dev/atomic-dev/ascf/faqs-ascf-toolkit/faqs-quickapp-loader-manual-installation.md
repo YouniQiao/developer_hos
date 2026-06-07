@@ -1,6 +1,6 @@
 ---
 title: "下载安装快应用加载器"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-quickapp-loader-manual-installation
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-quickapp-loader-manual-installation
 format: md
 ---
 

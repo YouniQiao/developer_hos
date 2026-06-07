@@ -1,6 +1,6 @@
 ---
 title: "app对象内部结构"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-structure
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/app-structure
 ---
 
 app对象包含应用全局配置信息，内部结构如下：

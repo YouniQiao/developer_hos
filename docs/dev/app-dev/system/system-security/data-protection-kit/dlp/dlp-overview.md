@@ -1,6 +1,6 @@
 ---
 title: "数据防泄漏服务简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dlp-overview
+original_url: /docs/dev/app-dev/system/system-security/data-protection-kit/dlp/dlp-overview
 format: md
 ---
 

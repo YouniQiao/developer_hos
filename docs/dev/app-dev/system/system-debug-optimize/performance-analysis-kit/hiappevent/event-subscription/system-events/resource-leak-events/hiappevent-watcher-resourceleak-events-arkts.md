@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "订阅资源泄漏事件（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events-arkts
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events-arkts
 format: md
 ---
 
@@ -108,7 +108,7 @@ format: md
 
    此处需要使用[hidebug.setAppResourceLimit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hidebug#hidebugsetappresourcelimit12)设置内存限制，造成内存泄漏，同步在“开发者选项”中打开“系统资源泄漏日志”（开关状态变更后需重启设备）。
 
-   资源泄漏问题定位可参考[Resource Leak（资源泄漏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines)。
+   资源泄漏问题定位可参考[Resource Leak（资源泄漏）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines)。
 
    接口示例代码如下：
 
@@ -335,7 +335,7 @@ format: md
    HiAppEvent eventInfo.params.page_switch_log="[\"/data/storage/el2/log/page_switch/snapshot/page_switch-com.example.myapplication-1-1-20260427162423841.log\"]"
    ```
 
-   如上，eventInfo中包含资源泄漏事件的[params字段](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events#params字段说明)，可以根据eventInfo中的resource\_type字段来判断当前的泄漏类型。
+   如上，eventInfo中包含资源泄漏事件的[params字段](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events#params字段说明)，可以根据eventInfo中的resource\_type字段来判断当前的泄漏类型。
 5. 提前在“开发者选项”中开启“系统资源泄漏日志”开关（开启或关闭开关均需重启设备）。点击 DevEco Studio 窗口中的运行按钮，运行应用工程。点击“js leak”按钮，等待 3 到 5 秒，应用会闪退。重新打开应用后，系统将上报js内存泄漏事件。
 
    同一个应用，24小时内至多上报一次js内存泄漏，如果短时间内要二次上报，需要重启设备。
@@ -354,7 +354,7 @@ format: md
 
 请应用在收到该订阅事件后，首先从事件的external\_log字段中获取堆快照文件存储路径，并将其尽快搬移或上传云，然后再删除原堆快照文件，以避免因应用沙箱路径目录剩余存储空间不足（最大2GB）导致下次堆快照文件无法生成。
 
-订阅后生成的.log日志文件需要将后缀名修改为.rawheap文件，再通过[translator工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[离线导入内存快照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
+订阅后生成的.log日志文件需要将后缀名修改为.rawheap文件，再通过[translator工具](/docs/dev/app-dev/system/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[离线导入内存快照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
 
 API version 14后，开发者可以将日志文件后缀名修改为.rawheap后，将其导入DevEco Studio并展示，详情见[离线导入内存快照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
 

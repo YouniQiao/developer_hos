@@ -1,6 +1,6 @@
 ---
 title: "设置支付服务端回调"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-iap-kit-0000002318054648
+original_url: /docs/dev/game-dev/games-quickgame-enable-iap-kit-0000002318054648
 format: md
 ---
 

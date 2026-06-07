@@ -1,6 +1,6 @@
 ---
 title: "PDF预览如何隐藏PDF操作按钮栏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-54
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-54
 format: md
 ---
 

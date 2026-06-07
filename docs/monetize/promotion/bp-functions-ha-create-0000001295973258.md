@@ -1,7 +1,7 @@
 ---
 title: "新建数据源"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ha-create-0000001295973258
+original_url: /docs/monetize/promotion/bp-functions-ha-create-0000001295973258
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-- 已[申请推广评测](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-apply-evaluation-0000001346654709)权限。因为在给应用创建数据源之前，此应用必须已经申请了推广评测权限。
+- 已[申请推广评测](/docs/monetize/promotion/bp-start-guest-apply-evaluation-0000001346654709)权限。因为在给应用创建数据源之前，此应用必须已经申请了推广评测权限。
 - 已开通[华为分析服务](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/service-enabling-0000001050745155)。
 - 已集成[华为分析服务SDK](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/quick-start-new-0000001126584779)。
 - 在华为分析上报需要[回传转化事件](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/conversion-events-for-appgallery-paid-0000001213284386#section134201541581)，如付费、注册、下单等。

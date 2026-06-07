@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取设备位姿（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-pose
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-pose/arengine-get-pose
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 约束与限制
 
-从5.1.0(18)开始，获取设备位姿支持部分Phone、部分Tablet设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持运动跟踪及平面识别特性（[ARENGINE\_FEATURE\_TYPE\_SLAM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arfeaturetype)）。
+从5.1.0(18)开始，获取设备位姿支持部分Phone、部分Tablet设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持运动跟踪及平面识别特性（[ARENGINE\_FEATURE\_TYPE\_SLAM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arfeaturetype)）。
 
 ## 接口说明
 
@@ -45,7 +45,7 @@ let stateReason: arEngine.ARTrackingStateReason;
 
 ### 显示预览流及设备位姿信息
 
-首先初始化AR会话和AR场景，可以参考[初始化AR会话和AR场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession#初始化ar会话和ar场景)章节。
+首先初始化AR会话和AR场景，可以参考[初始化AR会话和AR场景](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-arsession#初始化ar会话和ar场景)章节。
 
 在设备界面上显示设备位姿信息及追踪失败原因，使用重复调用函数方法在设备界面上实时更新位姿和追踪失败原因的信息。
 

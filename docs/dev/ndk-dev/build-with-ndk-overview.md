@@ -1,6 +1,6 @@
 ---
 title: "NDK工程构建概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-overview
+original_url: /docs/dev/ndk-dev/build-with-ndk-overview
 format: md
 ---
 
@@ -13,9 +13,9 @@ HarmonyOS NDK默认使用CMake作为构建系统，随包提供了符合HarmonyO
 
   源码构建也有不同方式：
 
-  + 可以使用DevEco Studio提供的C++应用模板，[用DevEco Studio来编译构建](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-ide)
-  + 也可以[使用命令行CMake来编译构建](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-cmake)
-* [使用预构建库构建](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-prebuilts)
+  + 可以使用DevEco Studio提供的C++应用模板，[用DevEco Studio来编译构建](/docs/dev/ndk-dev/build-with-ndk-ide)
+  + 也可以[使用命令行CMake来编译构建](/docs/dev/ndk-dev/build-with-ndk-cmake)
+* [使用预构建库构建](/docs/dev/ndk-dev/build-with-ndk-prebuilts)
 
 本章节将通过具体示例介绍如何在Native工程中使用NDK，以及如何编写CMake脚本来构建NDK工程。
 

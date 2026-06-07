@@ -1,6 +1,6 @@
 ---
 title: "在NDK中保证多实例场景功能正常"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-scope-task
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-scope-task
 format: md
 ---
 

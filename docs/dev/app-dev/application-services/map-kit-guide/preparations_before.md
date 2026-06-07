@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "上架前准备-获取地图服务协议及资质证明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preparations_before
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/preparations_before
 format: md
 ---
 

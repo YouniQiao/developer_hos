@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Push Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-kit-introduction
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-kit-introduction
 format: md
 ---
 
@@ -10,7 +10,7 @@ Push Kit（推送服务）是华为提供的消息推送平台，建立了从云
 
 ## 快速入门
 
-请参考[使用入门](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-gettingstart)章节快速了解接入Push Kit的必要步骤。
+请参考[使用入门](/docs/dev/app-dev/application-services/push-kit-guide/push-gettingstart)章节快速了解接入Push Kit的必要步骤。
 
 ## 产品优势
 
@@ -30,7 +30,7 @@ Push Kit（推送服务）是华为提供的消息推送平台，建立了从云
 
 ![](./img/76cc2eec.jpg)
 
-有关各场景的详细说明请参见[通知提示场景](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217#section162699204401)。
+有关各场景的详细说明请参见[通知提示场景](/docs/design/system-features/features/notification#section162699204401)。
 
 ## 推送消息类型
 
@@ -38,12 +38,12 @@ Push Kit支持以下消息类型：
 
 | 消息类型 | 说明 |
 | --- | --- |
-| [通知消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-alert) | 通知消息由Push Kit直接下发，在终端设备的通知中心、锁屏、横幅等展示，用户点击后拉起应用。  您可以[设置通知消息样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-alert#设置通知消息样式)来吸引用户。  常见场景：行程提醒、账号动态等。 |
-| [语音播报消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-extend-noti) | 当用户终端收到您发送的语音播报消息后，Push Kit会拉起应用的子进程，您可以在子进程中自行处理业务。  常见场景：语音播报。 |
-| [卡片刷新消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-form-update) | 通过卡片刷新服务，在合适场景向用户即时推送卡片内容，提升用户的感知度和活跃度。  常见场景：打车出行、快递动态等。 |
-| [后台消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-background) | 终端设备接收到后台消息后，如果应用进程在前台则将消息内容传给应用；如果应用进程不在前台则缓存消息，等待应用启动后再传给应用。  常见场景：用于告知应用更新配置参数。 |
-| [实况窗消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-update-liveview) | 应用服务端向Push Kit服务端发送创建或更新实况窗的请求，创建实况窗，或更新实况窗内容。  常见场景：赛事比分更新，出行打车状态更新等。 |
-| [应用内通话消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-voip) | 支持应用实现网络音视频通话的能力。  常见场景：网络音视频通话。 |
+| [通知消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-send-alert) | 通知消息由Push Kit直接下发，在终端设备的通知中心、锁屏、横幅等展示，用户点击后拉起应用。  您可以[设置通知消息样式](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-send-alert#设置通知消息样式)来吸引用户。  常见场景：行程提醒、账号动态等。 |
+| [语音播报消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-extend-noti/push-send-extend-noti) | 当用户终端收到您发送的语音播报消息后，Push Kit会拉起应用的子进程，您可以在子进程中自行处理业务。  常见场景：语音播报。 |
+| [卡片刷新消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-form-update) | 通过卡片刷新服务，在合适场景向用户即时推送卡片内容，提升用户的感知度和活跃度。  常见场景：打车出行、快递动态等。 |
+| [后台消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-background) | 终端设备接收到后台消息后，如果应用进程在前台则将消息内容传给应用；如果应用进程不在前台则缓存消息，等待应用启动后再传给应用。  常见场景：用于告知应用更新配置参数。 |
+| [实况窗消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-update-liveview) | 应用服务端向Push Kit服务端发送创建或更新实况窗的请求，创建实况窗，或更新实况窗内容。  常见场景：赛事比分更新，出行打车状态更新等。 |
+| [应用内通话消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-voip) | 支持应用实现网络音视频通话的能力。  常见场景：网络音视频通话。 |
 
 ## 业务流程
 
@@ -53,7 +53,7 @@ Push Kit支持以下消息类型：
 
 1. 应用调用Push Kit，获取Push Token。
 2. 应用成功获取Token后，建议及时上报Token等信息至应用服务端。
-3. 应用服务端向华为Push Kit服务端（Push Cloud）发送推送消息请求。应用的通知开关默认关闭，发送请求前，请先请求通知授权，详情请参见[请求通知授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-enable)。
+3. 应用服务端向华为Push Kit服务端（Push Cloud）发送推送消息请求。应用的通知开关默认关闭，发送请求前，请先请求通知授权，详情请参见[请求通知授权](/docs/dev/app-dev/application-services/notification-kit/notification-enable)。
 4. Push Kit服务端下发消息到Push Kit。
 5. Push Kit进行消息处理。
 
@@ -96,7 +96,7 @@ Push Kit致力于提供安全可靠的系统级消息发送通道，保障消息
 
 ### 支持的国家/地区
 
-Push Kit当前[支持的设备](#支持的设备)中Wearable设备支持的国家请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-country)，其他设备仅支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。
+Push Kit当前[支持的设备](#支持的设备)中Wearable设备支持的国家请参见[支持的国家/地区](/docs/dev/app-dev/application-services/push-country)，其他设备仅支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。
 
 ### 支持的设备
 
@@ -119,10 +119,10 @@ Push Kit支持模拟器，但与真机存在部分能力差异，具体差异如
 
 ## 与相关Kit的关系
 
-* Push Kit建立了从云端到终端的消息推送通道，支持开发者从云侧实时推送消息。如果开发者希望从本地推送通知，可通过[Notification Kit（用户通知服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-overview)创建本地通知。
-* 开发者[推送卡片刷新消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-form-update)时，需要通过[Form Kit（卡片开发服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview)提前创建应用的服务卡片。
-* 开发者[推送实况窗更新消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-update-liveview)时，需要通过[Live View Kit（实况窗服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction)提前创建本地实况窗。
-* 开发者[推送应用内通话消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-voip)时，通过[Call Service Kit（通话服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-introduction)管理应用通话能力。
+* Push Kit建立了从云端到终端的消息推送通道，支持开发者从云侧实时推送消息。如果开发者希望从本地推送通知，可通过[Notification Kit（用户通知服务）](/docs/dev/app-dev/application-services/notification-kit/notification-overview)创建本地通知。
+* 开发者[推送卡片刷新消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-form-update)时，需要通过[Form Kit（卡片开发服务）](/docs/dev/app-dev/application-framework/form-kit/formkit-overview)提前创建应用的服务卡片。
+* 开发者[推送实况窗更新消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-update-liveview)时，需要通过[Live View Kit（实况窗服务）](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-introduction)提前创建本地实况窗。
+* 开发者[推送应用内通话消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-voip)时，通过[Call Service Kit（通话服务）](/docs/dev/app-dev/application-services/call-kit-guide/call-introduction)管理应用通话能力。
 
 ## 示例代码
 

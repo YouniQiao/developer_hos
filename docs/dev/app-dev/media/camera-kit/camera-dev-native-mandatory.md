@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发相机应用必选能力(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dev-native-mandatory
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory
 format: md
 ---
 
 
-* **[相机管理 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-management)**
-* **[设备输入(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-input)**
-* **[会话管理(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)**
+* **[相机管理 (C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-management)**
+* **[设备输入(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-input)**
+* **[会话管理(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)**

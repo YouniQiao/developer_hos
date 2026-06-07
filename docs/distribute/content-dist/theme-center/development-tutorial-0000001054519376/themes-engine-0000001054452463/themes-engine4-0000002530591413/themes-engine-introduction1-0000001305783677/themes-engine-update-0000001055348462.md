@@ -1,7 +1,7 @@
 ---
 title: "更新指导"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-update-0000001055348462
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-update-0000001055348462
 format: md
 ---
 

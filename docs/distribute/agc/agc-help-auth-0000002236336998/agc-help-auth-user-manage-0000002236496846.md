@@ -1,6 +1,6 @@
 ---
 title: "管理用户"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-user-manage-0000002236496846
+original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-user-manage-0000002236496846
 format: md
 ---
 

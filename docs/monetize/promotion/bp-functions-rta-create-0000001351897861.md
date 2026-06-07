@@ -1,7 +1,7 @@
 ---
 title: "创建RTA任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-rta-create-0000001351897861
+original_url: /docs/monetize/promotion/bp-functions-rta-create-0000001351897861
 ---
 import MergeTable from '@site/src/components/MergeTable';
 
@@ -14,7 +14,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
    ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/e/v3/MDDxsOMmSFmutCLpyi6NPA/caution_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260530T050411Z&HW-CC-Expire=86400&HW-CC-Sign=C058870411C9C995DFD635D6141A54149292D01DC0DAB602D6BEB465CB58EAE7) 
 
-   当前，[人群定向任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-create-0000001337388933)和[oCPD任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-create-ocpd-0000001282723545)支持设置RTA ID，影子投放任务暂不支持设置RTA ID。详细支持RTA的任务请参见[支持RTA的任务类型说明](#section3451122195920)。
+   当前，[人群定向任务](/docs/monetize/promotion/bp-functions-target-create-0000001337388933)和[oCPD任务](/docs/monetize/promotion/bp-functions-ocpx-create-ocpd-0000001282723545)支持设置RTA ID，影子投放任务暂不支持设置RTA ID。详细支持RTA的任务请参见[支持RTA的任务类型说明](#section3451122195920)。
 
    例如：“任务类型”选择“精选推荐”，“计费类型”选择“CPD”，“投放模式”选择“RTA”，此章节以此类型的推广任务举例说明。
 

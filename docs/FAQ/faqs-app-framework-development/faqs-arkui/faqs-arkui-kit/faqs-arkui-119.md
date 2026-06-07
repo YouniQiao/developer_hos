@@ -1,7 +1,7 @@
 ---
 format: md
 title: "弹窗弹出时，输入框如何用代码设置全选"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-119
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-119
 ---
 
 

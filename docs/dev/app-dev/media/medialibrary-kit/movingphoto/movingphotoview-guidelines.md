@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用MovingPhotoView播放动态照片"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/movingphotoview-guidelines
+original_url: /docs/dev/app-dev/media/medialibrary-kit/movingphoto/movingphotoview-guidelines
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 
    MovingPhoto对象需要通过photoAccessHelper接口创建或获取，MovingPhotoView只接收构造完成的MovingPhoto对象。
 
-   创建、获取的方式可参考[访问和管理动态照片资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-movingphoto)。
+   创建、获取的方式可参考[访问和管理动态照片资源](/docs/dev/app-dev/media/medialibrary-kit/movingphoto/photoaccesshelper-movingphoto)。
 
    ```
    @State src: photoAccessHelper.MovingPhoto | undefined = undefined

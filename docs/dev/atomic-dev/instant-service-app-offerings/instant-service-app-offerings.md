@@ -1,6 +1,6 @@
 ---
 title: "商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-offerings
+original_url: /docs/dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings
 format: md
 ---
 

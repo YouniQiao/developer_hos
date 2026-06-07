@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何根据fd对应的mode来判断是否有对应的操作权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-16
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-16
 ---
 
 

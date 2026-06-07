@@ -1,6 +1,6 @@
 ---
 title: "应用加密"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-protect
+original_url: /docs/dev/app-dev/system/system-security/code-protect
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ![](./img/6844f142.png)
 
-开发者向应用市场提交上架申请，上传应用包后可[选择是否加密](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-choose-pkg-0000002278981434)。
+开发者向应用市场提交上架申请，上传应用包后可[选择是否加密](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-choose-pkg-0000002278981434)。
 
 选择加密的应用，在经过应用市场审核后，应用市场会对上架应用做代码加密。应用在设备上安装时，安装文件落盘后仍是处于受保护状态，有效的保护应用程序；当应用程序启动时按需解密。
 
@@ -50,7 +50,7 @@ format: md
 * 开发阶段：开发者无感知。
 * 上架阶段：开发者选取待发布的软件包并上传后，可选择设置分发的软件包是否加密，选择加密后即被加密。
 
-  操作步骤可参考：发布HarmonyOS应用-[选取待发布的软件包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-choose-pkg-0000002278981434)。
+  操作步骤可参考：发布HarmonyOS应用-[选取待发布的软件包](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-choose-pkg-0000002278981434)。
 * 分发阶段：应用将被应用市场加密分发，防止安装包被获取后逆向分析。
 * 安装阶段：安装阶段仍有保护。
 * 运行阶段：应用运行时按需解密应用代码。

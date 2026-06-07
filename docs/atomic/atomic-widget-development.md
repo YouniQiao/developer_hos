@@ -1,21 +1,21 @@
 ---
 title: "服务卡片开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-widget-development
+original_url: /docs/dev/atomic-dev/atomic-service-development/atomic-widget-development
 format: md
 ---
 
 
-服务卡片的具体开发方式请参见[服务卡片开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview)。
+服务卡片的具体开发方式请参见[服务卡片开发指导](/docs/dev/app-dev/application-framework/form-kit/formkit-overview)。
 
-服务卡片的详细设计规范请参见[服务卡片设计](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-service-widget-0000002087671904)。
+服务卡片的详细设计规范请参见[服务卡片设计](/docs/design/system-features/features/service-widget)。
 
-服务卡片刷新的具体开发方式请参见[推送卡片刷新消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-form-update)。
+服务卡片刷新的具体开发方式请参见[推送卡片刷新消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-form-update)。
 
 ## 约束限制
 
 * 整个元服务内最多允许添加16张卡片。同时每个卡片支持的所有尺寸都需要提供对应尺寸的卡片快照。
 * 元服务不得通过服务卡片直接跳转到其他应用或其他元服务。
-* [服务卡片开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview)部分章节（如[使用call事件拉起指定UIAbility到后台](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-call)，[通过router或call事件刷新卡片内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-uiability)）的示例中使用了非元服务高阶API的能力，在元服务中暂不支持这些功能。
+* [服务卡片开发指导](/docs/dev/app-dev/application-framework/form-kit/formkit-overview)部分章节（如[使用call事件拉起指定UIAbility到后台](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-call)，[通过router或call事件刷新卡片内容](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-uiability)）的示例中使用了非元服务高阶API的能力，在元服务中暂不支持这些功能。
 
 ## 性能优化
 
@@ -40,7 +40,7 @@ format: md
 
      避免使用超过当前设备屏幕分辨率的高清图片资源，否则会带来内存及CPU资源的浪费。
 
-     开发者使用图片资源时，应该充分考虑目标设备上显示图片的长宽及像素密度，卡片实际显示的尺寸可参考[尺寸与基础参数](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-service-widget-0000002087671904#section250mcpsimp)。
+     开发者使用图片资源时，应该充分考虑目标设备上显示图片的长宽及像素密度，卡片实际显示的尺寸可参考[尺寸与基础参数](/docs/design/system-features/features/service-widget#section250mcpsimp)。
 
      + 通常按照“DPI\*界面实际显示宽高”提供图片资源。若考虑显示时的效果和精细度，可参照如下公式提供图片资源：
 

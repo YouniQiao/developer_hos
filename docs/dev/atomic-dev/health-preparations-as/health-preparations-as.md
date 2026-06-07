@@ -1,6 +1,6 @@
 ---
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-preparations-as
+original_url: /docs/dev/atomic-dev/health-preparations-as/health-preparations-as
 format: md
 ---
 

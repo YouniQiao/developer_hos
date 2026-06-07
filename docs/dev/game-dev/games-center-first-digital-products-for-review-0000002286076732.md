@@ -1,6 +1,6 @@
 ---
 title: "首次提交数字商品或新增数字商品类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-first-digital-products-for-review-0000002286076732
+original_url: /docs/dev/game-dev/games-center-first-digital-products-for-review-0000002286076732
 format: md
 ---
 

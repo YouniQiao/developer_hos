@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Spatial Recon Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-introduction
+original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-introduction
 format: md
 ---
 

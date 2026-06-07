@@ -1,6 +1,6 @@
 ---
 title: "存储安全"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-release
+original_url: /docs/experience-suggestions/security-privacy/security/standard-security-release
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方式参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section1927111334714) |
+| 说明 | 实现方式参考[最佳实践](/docs/security/security-encode#section1927111334714) |
 
 |  |  |
 | --- | --- |
@@ -21,7 +21,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方式参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section156969911505) |
+| 说明 | 实现方式参考[最佳实践](/docs/security/security-encode#section156969911505) |
 
 |  |  |
 | --- | --- |

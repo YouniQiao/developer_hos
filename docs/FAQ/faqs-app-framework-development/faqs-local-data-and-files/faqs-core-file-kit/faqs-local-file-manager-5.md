@@ -1,6 +1,6 @@
 ---
 title: "如何修改沙箱路径下json文件的指定内容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-5
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-5
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "基于服务账号生成鉴权令牌"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-deviceverify-token
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-deviceverify-token
 format: md
 ---
 

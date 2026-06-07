@@ -1,6 +1,6 @@
 ---
 title: "Ev 24 Hour Battery Usage Event"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ev-24-hour-battery-usage-event
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/ev-24-hour-battery-usage-event
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

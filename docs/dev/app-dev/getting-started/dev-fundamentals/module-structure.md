@@ -1,6 +1,6 @@
 ---
 title: "module对象内部结构"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/module-structure
 ---
 
 module对象包含HAP的配置信息。
@@ -26,7 +26,7 @@ module对象包含HAP的配置信息。
 | commonEvents | 定义了公共事件静态订阅者的信息，该字段中需要声明静态订阅者的名称、权限要求及订阅事件列表信息，当订阅的公共事件发送时，该公共事件静态订阅者将被拉起。这里的静态订阅者区分于常用的动态订阅者，前者无需在业务代码中主动调用订阅事件的接口，在公共事件发布时可能未被拉起，而动态订阅者则在业务代码中主动调用公共事件订阅的相关API，因此需要应用处于活动状态。 | 对象数组 | 可缺省，缺省为空。 |
 | entryTheme | 此标签标识系统内部主题的关键字。将标记值设置为名称的资源索引。 | 字符串 | 可缺省，缺省值为空。 |
 | testRunner | 此标签用于支持对测试框架的配置。 | 对象 | 可缺省，缺省值为空。 |
-| generateBuildHash | 标识当前HAP/HSP是否由打包工具生成哈希值。  该字段配置为true时，当前HAP/HSP会由打包工具生成对应的哈希值。系统OTA升级时，若应用的[version下的code](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-structure#version对象内部结构)保持不变时，可根据哈希值判断应用是否需要升级。  - true：表示当前HAP/HSP是由打包工具生成对应的哈希值。  - false：表示当前HAP/HSP不会由打包工具生成对应的哈希值。  **说明：**  该字段仅对预置应用生效。 | 布尔值 | 该标签可缺省，缺省值为false。 |
+| generateBuildHash | 标识当前HAP/HSP是否由打包工具生成哈希值。  该字段配置为true时，当前HAP/HSP会由打包工具生成对应的哈希值。系统OTA升级时，若应用的[version下的code](/docs/dev/app-dev/getting-started/dev-fundamentals/app-structure#version对象内部结构)保持不变时，可根据哈希值判断应用是否需要升级。  - true：表示当前HAP/HSP是由打包工具生成对应的哈希值。  - false：表示当前HAP/HSP不会由打包工具生成对应的哈希值。  **说明：**  该字段仅对预置应用生效。 | 布尔值 | 该标签可缺省，缺省值为false。 |
 | libIsolation | 用于区分同应用不同hap下的so文件，以防止so冲突。  - true：当前hap的so会储存在libs目录中以Module名命名的路径下。  - false：当前hap的so会直接储存在libs目录中。 | 布尔值 | 该标签可缺省, 缺省值为false。 |
 
 module示例：

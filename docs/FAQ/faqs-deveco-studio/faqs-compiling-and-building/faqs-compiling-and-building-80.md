@@ -1,7 +1,7 @@
 ---
 format: md
 title: "生成签名时报错删除 .p12 文件目录下的 material 文件夹，重新应用自动签名"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-80
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-80
 ---
 
 

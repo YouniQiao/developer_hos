@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "音频通话开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-overview
+original_url: /docs/dev/app-dev/media/audio-kit/audio-call/audio-call-overview
 format: md
 ---
 
@@ -48,4 +48,4 @@ format: md
 
 在通话场景下，系统会根据默认优先级选择合适的音频设备。应用可以根据需要，切换音频设备。
 
-切换方式可参考[AVSession Kit使用通话设备切换组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-switch-call-devices)。
+切换方式可参考[AVSession Kit使用通话设备切换组件](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/using-switch-call-devices)。

@@ -1,7 +1,7 @@
 ---
 title: "AccountDailyBudget"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-accountdailybudget-0000001195432366
+original_url: /docs/monetize/promotion/marketapi-modle-accountdailybudget-0000001195432366
 format: md
 ---
 

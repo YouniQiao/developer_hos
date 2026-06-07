@@ -1,6 +1,6 @@
 ---
 title: "NearLink Kit常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-faq
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-faq
 format: md
 ---
 

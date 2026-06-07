@@ -1,6 +1,6 @@
 ---
 title: "蓝牙"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-bluetooth
+original_url: /docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth
 format: md
 ---
 

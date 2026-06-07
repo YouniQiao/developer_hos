@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "编辑图片Exif信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-tool
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-tool
 format: md
 ---
 

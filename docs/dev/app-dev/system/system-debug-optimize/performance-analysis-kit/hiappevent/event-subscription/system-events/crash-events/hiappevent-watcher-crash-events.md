@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "崩溃事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events
 format: md
 ---
 
@@ -10,17 +10,17 @@ format: md
 
 崩溃是指应用进程非预期退出，以下两种场景会生成崩溃事件：
 
-1. Native代码未处理[崩溃信号](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#系统处理的崩溃信号)时，会生成NativeCrash类型崩溃事件。
+1. Native代码未处理[崩溃信号](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#系统处理的崩溃信号)时，会生成NativeCrash类型崩溃事件。
 2. ArkTS/JS代码未处理异常时，会生成JsError类型崩溃事件。
 
 本文面向开发者介绍崩溃事件检测原理，以及各字段的含义和规格。如需了解如何使用HiAppEvent接口订阅系统崩溃事件，请参考以下文档。目前提供ArkTS和C/C++两种接口，按需选择。
 
-* [订阅崩溃事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-arkts)。
-* [订阅崩溃事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-ndk)。
+* [订阅崩溃事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events-arkts)。
+* [订阅崩溃事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events-ndk)。
 
 ![](./img/6507364c.png)
 
-崩溃事件支持在[应用分身](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)和元服务场景下使用HiAppEvent进行订阅。从API version 22开始支持在[输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)场景下使用HiAppEvent进行订阅。
+崩溃事件支持在[应用分身](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)和元服务场景下使用HiAppEvent进行订阅。从API version 22开始支持在[输入法应用](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)场景下使用HiAppEvent进行订阅。
 
 ## 检测原理
 
@@ -32,12 +32,12 @@ format: md
 
 1. 进程运行时崩溃后收到来自内核发送的崩溃信号，由进程在启动时注册的信号处理模块进行处理。
 2. 进程接收到崩溃信号后，保存当前进程上下文并fork出子进程执行ProcessDump二进制抓取崩溃信息。
-3. ProcessDump进程收集完崩溃信息后，上报给Hiview进程。Hiview进程将事件信息存储到[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
+3. ProcessDump进程收集完崩溃信息后，上报给Hiview进程。Hiview进程将事件信息存储到[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
 4. HiAppEvent注册的崩溃事件观察者监听到应用沙箱目录的文件变化，将事件回调给应用进程。
 
 ### JsError崩溃类型检测原理
 
-在ArkTS中，JsError崩溃类型检测主要通过全局异常捕获错误，收集完错误对象的类型（如 Error、TypeError、ReferenceError） 上报给Hiview进程。Hiview进程将事件信息存储到[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)，HiAppEvent注册的崩溃事件观察者监听到应用沙箱目录的文件变化，将事件回调给应用进程，帮助开发者快速定位和修复问题。
+在ArkTS中，JsError崩溃类型检测主要通过全局异常捕获错误，收集完错误对象的类型（如 Error、TypeError、ReferenceError） 上报给Hiview进程。Hiview进程将事件信息存储到[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)，HiAppEvent注册的崩溃事件观察者监听到应用沙箱目录的文件变化，将事件回调给应用进程，帮助开发者快速定位和修复问题。
 
 ## 崩溃日志规格自定义参数设置
 
@@ -71,7 +71,7 @@ let configParams: Record<string, hiAppEvent.ParamType> = {
 };
 ```
 
-以64位系统为例，参考[订阅崩溃事件（ArkTS）开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-arkts#开发步骤)完成崩溃事件订阅和日志配置参数设置，然后通过[external\_log](#params字段说明)字段获取NativeCrash类型崩溃日志内容。日志中打印如下使能的配置参数列表：
+以64位系统为例，参考[订阅崩溃事件（ArkTS）开发步骤](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events-arkts#开发步骤)完成崩溃事件订阅和日志配置参数设置，然后通过[external\_log](#params字段说明)字段获取NativeCrash类型崩溃日志内容。日志中打印如下使能的配置参数列表：
 
 ```
 ...
@@ -84,7 +84,7 @@ Timestamp:2025-05-17 19:17:07.000
 ...
 ```
 
-崩溃日志详细说明见[应用通过HiAppEvent设置崩溃日志配置参数场景日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#应用通过hiappevent设置崩溃日志配置参数场景日志规格)。
+崩溃日志详细说明见[应用通过HiAppEvent设置崩溃日志配置参数场景日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#应用通过hiappevent设置崩溃日志配置参数场景日志规格)。
 
 ### OH\_HiAppEvent\_SetEventConfig接口说明
 
@@ -110,7 +110,7 @@ Timestamp:2025-05-17 19:17:07.000
 
 ### 参数设置示例
 
-OH\_HiAppEvent\_SetEventConfig配置参考[订阅崩溃事件（C/C++）开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-ndk#开发步骤)完成崩溃事件订阅和日志配置参数设置，然后通过[external\_log](#params字段说明)字段获取NativeCrash类型崩溃拼接应用日志内容。
+OH\_HiAppEvent\_SetEventConfig配置参考[订阅崩溃事件（C/C++）开发步骤](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events-ndk#开发步骤)完成崩溃事件订阅和日志配置参数设置，然后通过[external\_log](#params字段说明)字段获取NativeCrash类型崩溃拼接应用日志内容。
 
 ![](./img/18cf9eb3.png)
 
@@ -165,7 +165,7 @@ params是[AppEventInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-r
 | 名称 | 类型 | 说明 |
 | --- | --- | --- |
 | time | number | 事件触发时间，单位为ms。 |
-| crash\_type | string | 崩溃类型，支持NativeCrash（native代码异常）和JsError（js代码异常）两种类型。检测方法请参见[CppCrash（NativeCrash）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines)和[Js Crash（JsError）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines)。 |
+| crash\_type | string | 崩溃类型，支持NativeCrash（native代码异常）和JsError（js代码异常）两种类型。检测方法请参见[CppCrash（NativeCrash）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines)和[Js Crash（JsError）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines)。 |
 | foreground | boolean | 应用是否处于前台状态。true表示应用处于前台状态；false表示应用处于后台状态。 |
 | release\_type | string | 应用的版本类型。release表示应用为[release版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)，debug表示应用为[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。  **说明**：从API version 23开始支持。 |
 | cpu\_abi | string | 二进制接口类型。  **说明**：从API version 23开始支持。 |
@@ -180,10 +180,10 @@ params是[AppEventInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-r
 | process\_life\_time | number | 故障进程存活时间，单位为s。  **说明**：从API version 22开始支持。 |
 | memory | object | 内存信息，详见[memory字段说明](#memory字段说明)。  **说明**：从API version 22开始支持。 |
 | threads | object[] | 全量线程调用栈，详见[thread字段说明](#thread字段说明)。仅在NativeCrash类型的崩溃事件提供。 |
-| external\_log | string[] | 故障日志文件[应用沙箱路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。开发者可通过路径读取故障日志文件内容。**为避免目录空间超限导致新生成的日志文件写入失败，日志文件处理完后请及时删除，超限规格请参考log\_over\_limit字段。** |
+| external\_log | string[] | 故障日志文件[应用沙箱路径](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。开发者可通过路径读取故障日志文件内容。**为避免目录空间超限导致新生成的日志文件写入失败，日志文件处理完后请及时删除，超限规格请参考log\_over\_limit字段。** |
 | log\_over\_limit | boolean | 生成的与已存在的故障日志文件的大小总和是否超过5M上限。true表示超过上限，日志写入失败；false表示未超过上限。 |
 | process\_name | string | 故障进程名。  **说明**：从API version 21开始支持。 |
-| page\_switch\_log | string | 页面切换日志路径，日志介绍详见[页面切换日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageswitch-log)。  **说明**：从API version 24开始支持。 |
+| page\_switch\_log | string | 页面切换日志路径，日志介绍详见[页面切换日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection/pageswitch-log)。  **说明**：从API version 24开始支持。 |
 
 ### exception字段说明
 
@@ -208,7 +208,7 @@ params是[AppEventInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-r
 
 ### signal字段说明
 
-具体内容请参考[CppCrash（进程崩溃）检测实现原理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#实现原理)。
+具体内容请参考[CppCrash（进程崩溃）检测实现原理](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#实现原理)。
 
 | 名称 | 类型 | 说明 |
 | --- | --- | --- |
@@ -236,7 +236,7 @@ params是[AppEventInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-r
 | pc | string | 程序执行的指令在文件内的偏移十六进制字节数。 |
 | offset | number | 程序执行的指令在函数内偏移字节数。 |
 
-详细说明请参见[调用栈帧内容说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#一般故障场景日志规格)。
+详细说明请参见[调用栈帧内容说明](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#一般故障场景日志规格)。
 
 **Js frame字段说明**
 
@@ -248,16 +248,16 @@ params是[AppEventInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-r
 | line | number | 代码行号。 |
 | column | number | 代码列号。 |
 
-详细说明请参见[JS混合栈帧内容说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#一般故障场景日志规格)。
+详细说明请参见[JS混合栈帧内容说明](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#一般故障场景日志规格)。
 
 ### memory字段说明
 
 | 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| rss | number | 进程实际占用内存大小，单位KB。对应[cppcrash日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#日志规格)或[jscrash日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines#日志规格)中Process Memory字段。 |
-| sys\_free\_mem | number | 空闲内存大小，单位KB。对应[cppcrash日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#日志规格)或[jscrash日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines#日志规格)中Device Memory字段的Free。 |
-| sys\_avail\_mem | number | 可用内存大小，单位KB。对应[cppcrash日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#日志规格)或[jscrash日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines#日志规格)中Device Memory字段的Available。 |
-| sys\_total\_mem | number | 总内存大小，单位KB。对应[cppcrash日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#日志规格)或[jscrash日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines#日志规格)中Device Memory字段的Total。 |
+| rss | number | 进程实际占用内存大小，单位KB。对应[cppcrash日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#日志规格)或[jscrash日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines#日志规格)中Process Memory字段。 |
+| sys\_free\_mem | number | 空闲内存大小，单位KB。对应[cppcrash日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#日志规格)或[jscrash日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines#日志规格)中Device Memory字段的Free。 |
+| sys\_avail\_mem | number | 可用内存大小，单位KB。对应[cppcrash日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#日志规格)或[jscrash日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines#日志规格)中Device Memory字段的Available。 |
+| sys\_total\_mem | number | 总内存大小，单位KB。对应[cppcrash日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#日志规格)或[jscrash日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines#日志规格)中Device Memory字段的Total。 |
 
 ## 崩溃事件自定义参数设置
 

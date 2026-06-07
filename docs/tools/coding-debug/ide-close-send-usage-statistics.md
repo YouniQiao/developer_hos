@@ -1,7 +1,7 @@
 ---
 title: "关闭数据采集"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-close-send-usage-statistics
+original_url: /docs/tools/coding-debug/ide-close-send-usage-statistics
 format: md
 ---
 

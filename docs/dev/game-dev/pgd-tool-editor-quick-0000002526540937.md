@@ -1,6 +1,6 @@
 ---
 title: "快速入门"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-editor-quick-0000002526540937
+original_url: /docs/dev/game-dev/pgd-tool-editor-quick-0000002526540937
 format: md
 ---
 
@@ -66,7 +66,7 @@ format: md
    ![](./img/b37757f6.png)
 2. 在GameObject中挂载PGD Systems组件。
 
-   在该组件的World标签页挂载先前创建的World组件，在该组件的Systems标签页添加上述自定义的System（该System会被自动识别）。具体操作请参见[PGD Systems组件](https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-editor-systems-0000002494261300)。
+   在该组件的World标签页挂载先前创建的World组件，在该组件的Systems标签页添加上述自定义的System（该System会被自动识别）。具体操作请参见[PGD Systems组件](/docs/dev/game-dev/pgd-tool-editor-systems-0000002494261300)。
 
    ![](./img/9fdf79c4.gif "点击放大")
 3. 在Systems组件中，调整System变量值，完成后注意保存（Ctrl+S）。

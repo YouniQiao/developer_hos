@@ -1,7 +1,7 @@
 ---
 format: md
 title: "为何RichText组件中内容可以滚动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-112
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-112
 ---
 
 

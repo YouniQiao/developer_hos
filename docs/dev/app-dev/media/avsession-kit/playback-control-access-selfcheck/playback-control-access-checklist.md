@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用接入播控自检表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-checklist
+original_url: /docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/playback-control-access-checklist
 format: md
 ---
 
 
 如接入AVSession，请按照下表根据应用的业务场景接入，应用上架前请根据此表格自检，以确保应用的体验。
 
-如果应用包含在后台/锁屏状态下播放音频等业务场景，开发者需要规范[接入AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene)；如应用仅需在前台播放音视频，开发者可选择不接入AVSession。
+如果应用包含在后台/锁屏状态下播放音频等业务场景，开发者需要规范[接入AVSession](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene)；如应用仅需在前台播放音视频，开发者可选择不接入AVSession。
 
 ## 基础播控-播放信息
 
@@ -20,12 +20,12 @@ format: md
 
 | 功能 | **音乐类/听书类** | **视频类** | **直播类** | **浏览器类** | **新闻阅读类** | **Voip类** |
 | --- | --- | --- | --- | --- | --- | --- |
-| [媒体封面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#媒体封面) | √ | √ | √ | √ | √ | - |
-| [主标题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#主标题) | √ | √ | √ | √ | √ | - |
-| [进度与时间](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#进度与时间) | √ | √ | - | √ | √ | - |
-| [副标题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#副标题) | √ | √ | √ | √ | √ | - |
-| [滚动歌词](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#滚动歌词) | √ | - | - | - | - | - |
-| [媒体音源特殊标识](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#媒体音源特殊标识) | - | - | - | - | - | - |
+| [媒体封面](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#媒体封面) | √ | √ | √ | √ | √ | - |
+| [主标题](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#主标题) | √ | √ | √ | √ | √ | - |
+| [进度与时间](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#进度与时间) | √ | √ | - | √ | √ | - |
+| [副标题](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#副标题) | √ | √ | √ | √ | √ | - |
+| [滚动歌词](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#滚动歌词) | √ | - | - | - | - | - |
+| [媒体音源特殊标识](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#媒体音源特殊标识) | - | - | - | - | - | - |
 
 ## 基础播控-播放控制
 
@@ -37,13 +37,13 @@ format: md
 
 | 功能 | **音乐类/听书类** | **视频类** | **直播类** | **浏览器类** | **新闻阅读类** | **Voip类** |
 | --- | --- | --- | --- | --- | --- | --- |
-| [播放/暂停](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#播放暂停) | √ | √ | √ | √ | √ | - |
-| [上下一首/集](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#上下一首集) | √ | √ | - | - | - | - |
-| [按钮置灰](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#按钮置灰) | √ | √ | √ | √ | √ | - |
-| [点击播控卡片跳转应用指定页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#点击播控卡片跳转应用指定页面) | √ | √ | √ | √ | √ | - |
-| [收藏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#收藏) | √ | - | - | - | - | - |
-| [循环模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#循环模式) | √ | - | - | - | - | - |
-| [快进/快退](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control#快进快退) | - | √ | - | - | - | - |
+| [播放/暂停](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#播放暂停) | √ | √ | √ | √ | √ | - |
+| [上下一首/集](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#上下一首集) | √ | √ | - | - | - | - |
+| [按钮置灰](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#按钮置灰) | √ | √ | √ | √ | √ | - |
+| [点击播控卡片跳转应用指定页面](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#点击播控卡片跳转应用指定页面) | √ | √ | √ | √ | √ | - |
+| [收藏](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#收藏) | √ | - | - | - | - | - |
+| [循环模式](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#循环模式) | √ | - | - | - | - | - |
+| [快进/快退](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control#快进快退) | - | √ | - | - | - | - |
 
 ## 音视频投播
 
@@ -55,12 +55,12 @@ format: md
 
 | 功能 | **音乐类/听书类** | **视频类** | **直播类** | **浏览器类** | **新闻阅读类** | **Voip类** |
 | --- | --- | --- | --- | --- | --- | --- |
-| [通话设备切换组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-switch-call-devices) | - | - | - | - | - | √ |
-| [Cast+协议音视频投播](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcastpicker#cast协议音视频投播dlna协议音视频投播) | √ | √ | - | - | - | - |
-| [DRM数字加密视频投播](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcastpicker#drm数字加密视频投播) | - | - | - | - | - | - |
-| [DLNA协议音视频投播](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcastpicker#cast协议音视频投播dlna协议音视频投播) | √ | √ | - | - | - | - |
-| [镜像投屏自动切换资源投播](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcastpicker#镜像投屏自动切换资源投播) | - | - | - | - | - | - |
-| [应用内投播组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide)（半模态） | √ | √ | - | - | - | - |
+| [通话设备切换组件](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/using-switch-call-devices) | - | - | - | - | - | √ |
+| [Cast+协议音视频投播](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/avcastpicker#cast协议音视频投播dlna协议音视频投播) | √ | √ | - | - | - | - |
+| [DRM数字加密视频投播](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/avcastpicker#drm数字加密视频投播) | - | - | - | - | - | - |
+| [DLNA协议音视频投播](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/avcastpicker#cast协议音视频投播dlna协议音视频投播) | √ | √ | - | - | - | - |
+| [镜像投屏自动切换资源投播](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/avcastpicker#镜像投屏自动切换资源投播) | - | - | - | - | - | - |
+| [应用内投播组件](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide)（半模态） | √ | √ | - | - | - | - |
 
 ## 播控增强
 
@@ -72,9 +72,9 @@ format: md
 
 | **功能** | **音乐类/听书类** | **视频类** | **直播类** | **浏览器类** | **新闻阅读类** | **Voip类** |
 | --- | --- | --- | --- | --- | --- | --- |
-| [播放按钮一键冷启动播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/quick-playback#播放按钮一键冷启动播放) | √ | - | - | - | - | - |
-| [历史歌单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/quick-playback#历史歌单歌单推荐) | √ | - | - | - | - | - |
-| [歌单推荐](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/quick-playback#历史歌单歌单推荐) | √ | - | - | - | - | - |
+| [播放按钮一键冷启动播放](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/quick-playback#播放按钮一键冷启动播放) | √ | - | - | - | - | - |
+| [历史歌单](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/quick-playback#历史歌单歌单推荐) | √ | - | - | - | - | - |
+| [歌单推荐](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/quick-playback#历史歌单歌单推荐) | √ | - | - | - | - | - |
 | [统一音量组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avvolumepanel) | - | √ | - | - | - | - |
 
 ## 示例代码

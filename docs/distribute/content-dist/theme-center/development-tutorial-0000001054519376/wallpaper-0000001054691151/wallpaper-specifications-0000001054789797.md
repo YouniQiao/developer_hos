@@ -1,7 +1,7 @@
 ---
 title: "壁纸设计指导及规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/wallpaper-specifications-0000001054789797
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/wallpaper-0000001054691151/wallpaper-specifications-0000001054789797
 ---
 
 
@@ -17,9 +17,9 @@ import MergeTable from '@site/src/components/MergeTable';
 
 步骤一：使用设计相关软件进行制图。
 
-步骤二：根据“[壁纸测试规范](https://developer.huawei.com/consumer/cn/doc/content/wallpaper-test-0000001057539336#section38324471104)”自检自查。
+步骤二：根据“[壁纸测试规范](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/wallpaper-test-0000001057539336#section38324471104)”自检自查。
 
-步骤三：根据“[壁纸上传指南](https://developer.huawei.com/consumer/cn/doc/content/wallpaper-upload-0000001055348466#ZH-CN_TOPIC_0000001057542699__section89510919112)”上传到开发者联盟主题中心。
+步骤三：根据“[壁纸上传指南](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/wallpaper-upload-0000001055348466#ZH-CN_TOPIC_0000001057542699__section89510919112)”上传到开发者联盟主题中心。
 
 ## 3. 壁纸设计规范
 

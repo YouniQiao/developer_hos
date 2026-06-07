@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "配置预加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-config
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-config
 format: md
 ---
 
@@ -19,8 +19,8 @@ format: md
 
 ### 前提条件
 
-* 已[开通预加载服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-prefetch)。
-* 已[创建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-create-and-config-function)。
+* 已[开通预加载服务](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-prefetch)。
+* 已[创建函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-create-and-config-function)。
 
 ### 绑定云函数
 
@@ -34,7 +34,7 @@ format: md
    ![](./img/85f60d9f.png)
 
    * 跳链安装预加载仅支持在HarmonyOS应用中调用。
-   * 由于跳链安装预加载功能需要使用App Linking Kit提供的延迟链接能力，因此在配置跳链安装预加载之前，请务必先完成延迟链接的开发。具体请参见[通过延迟链接跳转至应用详情页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)。
+   * 由于跳链安装预加载功能需要使用App Linking Kit提供的延迟链接能力，因此在配置跳链安装预加载之前，请务必先完成延迟链接的开发。具体请参见[通过延迟链接跳转至应用详情页](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)。
 
    ![](./img/6cdb50bb.png)
 5. 以“周期性预加载”为例，在“函数名称”下拉框选择实现周期性预加载的函数名称。
@@ -52,7 +52,7 @@ format: md
 
 ### 前提条件
 
-已[开通预加载服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-prefetch)。
+已[开通预加载服务](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-prefetch)。
 
 ### 配置服务器地址
 
@@ -66,7 +66,7 @@ format: md
    ![](./img/65890ad3.png)
 
    * 跳链安装预加载仅支持在HarmonyOS应用中调用。
-   * 由于跳链安装预加载功能需要使用App Linking Kit提供的延迟链接能力，因此在配置跳链安装预加载之前，请务必先完成延迟链接的开发。具体请参见[通过延迟链接跳转至应用详情页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)。
+   * 由于跳链安装预加载功能需要使用App Linking Kit提供的延迟链接能力，因此在配置跳链安装预加载之前，请务必先完成延迟链接的开发。具体请参见[通过延迟链接跳转至应用详情页](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)。
 
    ![](./img/4c80084d.png)
 5. 点击“下载地址”后的“修改”。
@@ -83,7 +83,7 @@ format: md
 
    ![](./img/55676137.png)
 
-   后续AGC会周期性地向该处配置的开发者服务器（即下载地址）发起一个HTTP GET请求，其中包含的query参数请参考[开发者服务器接口规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-cloud-interdev#开发者服务器接口规范)，获取到数据后会将整个HTTP body缓存在本地。
+   后续AGC会周期性地向该处配置的开发者服务器（即下载地址）发起一个HTTP GET请求，其中包含的query参数请参考[开发者服务器接口规范](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-cloud-interdev#开发者服务器接口规范)，获取到数据后会将整个HTTP body缓存在本地。
 
    ![](./img/7cc25601.png)
 

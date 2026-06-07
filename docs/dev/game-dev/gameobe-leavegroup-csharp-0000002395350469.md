@@ -1,6 +1,6 @@
 ---
 title: "离开队伍"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-leavegroup-csharp-0000002395350469
+original_url: /docs/dev/game-dev/gameobe-leavegroup-csharp-0000002395350469
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-* 您已[初始化联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-csharp-0000002361510612)。
+* 您已[初始化联机对战SDK](/docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612)。
 * 玩家已进入队伍，且未开始游戏。
 
 ## 开发步骤

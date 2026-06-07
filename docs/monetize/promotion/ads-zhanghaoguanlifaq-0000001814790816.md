@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-zhanghaoguanlifaq-0000001814790816
+original_url: /docs/monetize/promotion/ads-zhanghaoguanlifaq-0000001814790816
 format: md
 ---
 

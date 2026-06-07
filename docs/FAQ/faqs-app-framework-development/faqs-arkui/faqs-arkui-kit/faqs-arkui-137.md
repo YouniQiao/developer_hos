@@ -1,7 +1,7 @@
 ---
 format: md
 title: "List组件如何设置两端的渐变效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-137
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-137
 ---
 
 

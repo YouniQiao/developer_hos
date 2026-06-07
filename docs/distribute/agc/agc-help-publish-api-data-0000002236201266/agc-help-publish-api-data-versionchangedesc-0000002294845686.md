@@ -1,6 +1,6 @@
 ---
 title: "VersionChangeDesc"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-versionchangedesc-0000002294845686
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-versionchangedesc-0000002294845686
 format: md
 ---
 

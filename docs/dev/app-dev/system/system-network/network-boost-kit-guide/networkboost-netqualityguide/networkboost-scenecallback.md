@@ -1,6 +1,6 @@
 ---
 title: "网络场景识别"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-scenecallback
+original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-scenecallback
 format: md
 ---
 

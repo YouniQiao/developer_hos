@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用相机预配置(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preconfig
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preconfig
 format: md
 ---
 
@@ -12,14 +12,14 @@ format: md
 
 为了解决上述问题，优化应用开发流程，系统针对拍照（[PhotoSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photosession)）、录像（[VideoSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-videosession)）两类场景，提供了[preconfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photosession#preconfig12)接口帮助开发者快速完成相机参数配置。推荐仅需要自定义拍照界面的无需开发专业相机应用的开发者，使用相机预配置功能快速开发应用。
 
-在开发相机应用时，需要先[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。以拍照（PhotoSession）为例，相机预配置（Preconfig）开发流程与[通用流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting-case)开发，存在以下差异：
+在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。以拍照（PhotoSession）为例，相机预配置（Preconfig）开发流程与[通用流程](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting-case)开发，存在以下差异：
 
 ![](./img/999045e0.png)
 
 **其他相关能力：**
 
-* [CameraPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-picker)：无需开发相机功能，拉起系统相机获取照片或视频。
-* [调用全量相机接口开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-overview)：可开发自定义界面、分辨率、图像效果的专业相机应用。
+* [CameraPicker](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-picker)：无需开发相机功能，拉起系统相机获取照片或视频。
+* [调用全量相机接口开发](/docs/dev/app-dev/media/camera-kit/camera-overview)：可开发自定义界面、分辨率、图像效果的专业相机应用。
 
 ## 规格说明
 
@@ -91,7 +91,7 @@ format: md
 
    创建cameraManager对象的方法可参考[getCameraManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-f#cameragetcameramanager)。
 
-   Context获取方式请参考：[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+   Context获取方式请参考：[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
    ```
    function createCameraOutput(context: common.BaseContext, surfaceId: string) : void {
@@ -254,7 +254,7 @@ format: md
 
 ## 完整示例
 
-Context获取方式请参考：[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+Context获取方式请参考：[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
 ```
 import { camera } from '@kit.CameraKit';

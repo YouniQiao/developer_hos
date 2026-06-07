@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用开启禁止截屏之后，系统将如何处理用户的截屏和录屏操作"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-237
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-237
 ---
 
 

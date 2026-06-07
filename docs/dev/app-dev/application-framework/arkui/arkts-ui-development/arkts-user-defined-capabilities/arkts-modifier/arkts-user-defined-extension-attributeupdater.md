@@ -1,6 +1,6 @@
 ---
 title: "属性更新器 (AttributeUpdater)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-attributeupdater
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-extension-attributeupdater
 format: md
 ---
 

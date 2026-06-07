@@ -1,6 +1,6 @@
 ---
 title: "设置自定义节点跨语言属性"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-crosslanguage
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-crosslanguage
 format: md
 ---
 
@@ -13,7 +13,7 @@ ArkUI支持在前端使用ArkTS语言创建命令式节点，即[FrameNode](http
 
 ![](./img/309277ed.png)
 
-下述示例中，需要先进行Native侧配置，请参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)完成。
+下述示例中，需要先进行Native侧配置，请参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)完成。
 
 ## 设置和获取跨语言配置
 

@@ -1,6 +1,6 @@
 ---
 title: "接入流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-nfc-summary-0000002382896613
+original_url: /docs/distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-by-nfc-summary-0000002382896613
 format: md
 ---
 
@@ -11,10 +11,10 @@ format: md
 
 | **序号** | **步骤** | **详情** |
 | --- | --- | --- |
-| 1 | [申请开通权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-apply-permission-0000002382902149) | 当前近场服务处于灰度开放阶段，使用服务前需先申请开通近场服务权限。如果已开通，可跳过本步骤。 |
-| 2 | [注册NFC设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-nfc-regist-0000002382856333) | 注册接入近场服务的NFC设备。 |
-| 3 | [创建应用链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在agc为应用创建关联的网址域 名)/[创建元服务链接](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking#section48651523147) | 配置拉起页面的URL。 |
-| 4 | [创建全网态服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-nfc-apply-service-0000002349016136) | 创建全网态近场服务，关联拉起页面。 |
+| 1 | [申请开通权限](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-apply-permission-0000002382902149) | 当前近场服务处于灰度开放阶段，使用服务前需先申请开通近场服务权限。如果已开通，可跳过本步骤。 |
+| 2 | [注册NFC设备](/docs/distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-nfc-regist-0000002382856333) | 注册接入近场服务的NFC设备。 |
+| 3 | [创建应用链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在agc为应用创建关联的网址域 名)/[创建元服务链接](/docs/dev/atomic-dev/atomic-linking/atomic-applinking#section48651523147) | 配置拉起页面的URL。 |
+| 4 | [创建全网态服务](/docs/distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-nfc-apply-service-0000002349016136) | 创建全网态近场服务，关联拉起页面。 |
 
 #### 设备限制
 

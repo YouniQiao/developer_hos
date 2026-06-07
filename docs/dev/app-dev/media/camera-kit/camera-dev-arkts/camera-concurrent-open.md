@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "多摄同开(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-concurrent-open
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-concurrent-open
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 详细的API说明请参考[Camera](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera)。
 
-Context获取方式请参考：[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+Context获取方式请参考：[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
 1. 需要导入相机框架、媒体库、图片等相关领域依赖。
 

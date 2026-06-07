@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用开发者申请资质说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-application-qualifications
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-application-qualifications
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 ## 个人开发者接入资质审核要求
 
 * 个人开发者应用需上架至华为应用市场。个人开发者应用未上架华为应用市场，暂不开放Health Service Kit数据。
-* 申请访问开放等级为基础的用户数据，个人开发者不得有个人信用不良记录。开放等级为高阶的用户数据暂不向个人开发者开放。数据开放等级请参见[数据开放总览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-overview)。
+* 申请访问开放等级为基础的用户数据，个人开发者不得有个人信用不良记录。开放等级为高阶的用户数据暂不向个人开发者开放。数据开放等级请参见[数据开放总览](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-overview)。
 
 ## 企业、事业单位/政府机构、社会团体开发者接入资质审核要求
 
@@ -20,8 +20,8 @@ format: md
 ![](./img/5bd58913.png)
 
 * 以上企业实缴注册资本数据以[国家企业信用信息公示系统](https://shiming.gsxt.gov.cn/socialuser-use-rllogin.html)中最新年报数据为准。
-* 若企业实缴注册资本与社会团体活动资金不符合要求，请参见对应[解决方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply#企业事业单位政府机构社会团体实缴注册资本不符合审核要求)。
-* 数据开放等级请参见[数据开放总览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-overview)。
+* 若企业实缴注册资本与社会团体活动资金不符合要求，请参见对应[解决方案](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply#企业事业单位政府机构社会团体实缴注册资本不符合审核要求)。
+* 数据开放等级请参见[数据开放总览](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-overview)。
 
 ## 申请材料准备
 
@@ -29,5 +29,5 @@ format: md
 
 ![](./img/19f2ed88.png)
 
-* 请在提交材料前先阅读[申请被驳回的常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply#申请被驳回的常见问题)，以避免在您的申请材料中出现同类问题。
-* 若您的应用需要申请[应用转移](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-transfer-0000002236494390)，运动健康服务需要对转入方开发者资质进行审核，确保新的应用主体符合资质要求。请将上述申请资料清单以及您的应用ID、应用名称、应用转入开发者ID、更新后的应用隐私政策发送到hihealth@huawei.com邮箱，相关资质评审通过后，方可进行应用转移。
+* 请在提交材料前先阅读[申请被驳回的常见问题](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply#申请被驳回的常见问题)，以避免在您的申请材料中出现同类问题。
+* 若您的应用需要申请[应用转移](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-transfer-0000002236494390)，运动健康服务需要对转入方开发者资质进行审核，确保新的应用主体符合资质要求。请将上述申请资料清单以及您的应用ID、应用名称、应用转入开发者ID、更新后的应用隐私政策发送到hihealth@huawei.com邮箱，相关资质评审通过后，方可进行应用转移。

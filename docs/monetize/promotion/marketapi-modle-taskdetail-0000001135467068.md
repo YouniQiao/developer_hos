@@ -1,7 +1,7 @@
 ---
 title: "TaskDetail"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-taskdetail-0000001135467068
+original_url: /docs/monetize/promotion/marketapi-modle-taskdetail-0000001135467068
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 | budget | O | Double | 每日预算。 |
 | startDate | O | String | 投放开始日期。  格式：YYYY-MM-DD |
 | endDate | O | String | 投放结束日期。  格式：YYYY-MM-DD |
-| deliveryHours | O | List&lt;[DeliveryHour](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-deliveryhour-0000001181826453)&gt; | 投放时段。  允许为空数组。 |
+| deliveryHours | O | List&lt;[DeliveryHour](/docs/monetize/promotion/marketapi-modle-deliveryhour-0000001181826453)&gt; | 投放时段。  允许为空数组。 |
 | conversionBehavior | O | String | 转换目标行为。  格式为数字，1代表激活，7代表注册。 |
 | excludeBehavior | O | String | 排除目标行为。 |
 | regions | O | String | 投放区域，使用ISO国家码。  中国默认CN。多个区域用逗号分割。 |
@@ -39,8 +39,8 @@ format: md
 | deliveryPrice | O | Double | 出价。 |
 | autoAddPrice | O | Integer | 是否自动加价。 |
 | maxPrice | O | Double | 最高出价。 |
-| subTasks | O | List&lt;[SubTaskDetail](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-subtaskdetail-0000001181826459)&gt; | 子任务列表。 |
-| negativeKeyWords | O | List&lt;[NegativeKeyWordDetail](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-negativekeyworddetail-0000001135626858)&gt; | 否向关键词。 |
+| subTasks | O | List&lt;[SubTaskDetail](/docs/monetize/promotion/marketapi-modle-subtaskdetail-0000001181826459)&gt; | 子任务列表。 |
+| negativeKeyWords | O | List&lt;[NegativeKeyWordDetail](/docs/monetize/promotion/marketapi-modle-negativekeyworddetail-0000001135626858)&gt; | 否向关键词。 |
 | isExcludeInstalledApp | O | Integer | 是否排除已安装。 |
 | attributionMode | O | Integer | 归因方式。  取值范围：   - 0：无归因监测 - 1：自定义归因监测 - 2：华为分析归因监测 |
 | impAdMonitorReportUrl | O | String | 精准曝光上报监控链接。 |
@@ -48,11 +48,11 @@ format: md
 | downloadAdMonitorReportUrl | O | String | 下载上报监控链接。 |
 | installAdMonitorReportUrl | O | String | 安装上报监控链接。 |
 | deeplinkClickAdMonitorReportUrl | O | String | 大卡点击上报监控链接。 |
-| searchBrandContent | O | [SearchBrandContent](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-searchbrandcontent-0000001135626860) | 搜索大卡相关素材信息。 |
-| brandContent | O | [BrandContent](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-brandcontent-0000001181946367) | 品牌/字词推荐CPT任务。 |
-| cpdVideoContent | O | [CpdVideoContent](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-cpdvideocontent-0000001135467060) | 普通CPD素材信息。 |
-| browserContent | O | [BrowserContent](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-browsercontent-0000001135467058) | 浏览器信息流素材信息。 |
-| fixPositionContent | O | [FixPositionContent](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-fixpositioncontent-0000001135467070) | 固定活动位相关素材信息。 |
+| searchBrandContent | O | [SearchBrandContent](/docs/monetize/promotion/marketapi-modle-searchbrandcontent-0000001135626860) | 搜索大卡相关素材信息。 |
+| brandContent | O | [BrandContent](/docs/monetize/promotion/marketapi-modle-brandcontent-0000001181946367) | 品牌/字词推荐CPT任务。 |
+| cpdVideoContent | O | [CpdVideoContent](/docs/monetize/promotion/marketapi-modle-cpdvideocontent-0000001135467060) | 普通CPD素材信息。 |
+| browserContent | O | [BrowserContent](/docs/monetize/promotion/marketapi-modle-browsercontent-0000001135467058) | 浏览器信息流素材信息。 |
+| fixPositionContent | O | [FixPositionContent](/docs/monetize/promotion/marketapi-modle-fixpositioncontent-0000001135467070) | 固定活动位相关素材信息。 |
 | physChannelPkgId | O | String | 物理渠道包ID。 |
 | installExp | O | Integer | 是否支持应用秒开。  取值范围：   - 0：不支持秒开/关闭秒开 - 1：开启秒开 |
 | physChannelPkgName | O | String | 物理渠道包名称。 |

@@ -1,6 +1,6 @@
 ---
 title: "问题反馈"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-feedback-0000002321404229
+original_url: /docs/dev/game-dev/games-hismartperf-feedback-0000002321404229
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
    * 点击![](./img/892dac13.png)可以查看历史反馈记录。
    * 勾选共享应用日志提交，以便更精准定位问题。
-   * 点击常见问题跳转至文档[FAQ](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-faq-0000002286844742),查看常见问题以及解决方法
+   * 点击常见问题跳转至文档[FAQ](/docs/dev/game-dev/games-hismartperf-faq-0000002286844742),查看常见问题以及解决方法
 
    ![](./img/7fba4572.png)
 

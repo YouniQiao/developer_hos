@@ -1,6 +1,6 @@
 ---
 title: "采样数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-samplepoint-as
+original_url: /docs/dev/atomic-dev/health-samplepoint-as/health-samplepoint-as
 format: md
 ---
 

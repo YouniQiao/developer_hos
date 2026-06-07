@@ -1,7 +1,7 @@
 ---
 title: "返回码"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix2-0000001128597864
+original_url: /docs/monetize/promotion/marketing-api-appendix2-0000001128597864
 format: md
 ---
 

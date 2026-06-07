@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决自定义组件struct内不支持定义成员变量get/set方法的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-50
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-50
 ---
 
 

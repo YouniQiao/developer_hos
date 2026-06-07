@@ -1,7 +1,7 @@
 ---
 title: 拍摄美化类
 sidebar_label: 拍摄美化类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples3-0000001746498074
+original_url: /docs/design/app-design-practices/photo-beauty
 format: md
 ---
 
@@ -58,4 +58,4 @@ format: md
 
 [](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/publicContent/011/111/111/0000000000011111111.20250709120727.66576389537797246796983757243016:20260530174951:2800:13A7D62810A30643B84CC564CA830D0B0BE0898BE5ED276175E3909CC51A3B77.mp4)
 
-自适应布局的开发指南，请参阅[自适应布局场景。](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout)
+自适应布局的开发指南，请参阅[自适应布局场景。](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout)

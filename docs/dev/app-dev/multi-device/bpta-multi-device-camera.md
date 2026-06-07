@@ -1,7 +1,7 @@
 ---
 title: "相机硬件差异"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-camera
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-camera
 format: md
 ---
 
@@ -122,7 +122,7 @@ format: md
    
 <div class="source-link-wrapper"><a href="https://gitcode.com/harmonyos_samples/MultiDeviceCamera/blob/master/entry/src/main/ets/pages/Index.ets#L145-L407" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：Index.ets</a></div>
 
-2. 相机页面在不同设备上横竖屏旋转，请参考[为多设备配置旋转策略](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction#section12636154743220)。以本应用为例，横向断点为sm时不支持旋转；md、lg时支持旋转。因此，当窗口宽度、高度的最小值大于等于600vp时，窗口支持旋转。
+2. 相机页面在不同设备上横竖屏旋转，请参考[为多设备配置旋转策略](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction#section12636154743220)。以本应用为例，横向断点为sm时不支持旋转；md、lg时支持旋转。因此，当窗口宽度、高度的最小值大于等于600vp时，窗口支持旋转。
 
    ```
    onWindowSizeChange: (windowSize: window.Size) => void = (windowSize: window.Size) => {
@@ -297,7 +297,7 @@ format: md
 
 ## 设置多设备上相机预览画面比例
 
-选择相机之后，需要通过[createPreviewOutput()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#createpreviewoutput12)创建预览输出对象，绑定至XComponent组件展示预览画面，实现流程可参考[拍照实践](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting-case)。在开发多设备上相机预览画面时，需要通过以下步骤避免压缩、拉伸、异常旋转的问题。
+选择相机之后，需要通过[createPreviewOutput()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#createpreviewoutput12)创建预览输出对象，绑定至XComponent组件展示预览画面，实现流程可参考[拍照实践](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting-case)。在开发多设备上相机预览画面时，需要通过以下步骤避免压缩、拉伸、异常旋转的问题。
 
 XComponent组件对应Surface区域的宽高比，取决于用户预览时设备的屏幕顺时针旋转角度。如果display.rotation为0°或180°，则Surface与相机预览流宽高比互为倒数；如果display.rotation为90°或270°，则Surface与相机预览流宽高比一致。
 

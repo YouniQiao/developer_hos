@@ -1,6 +1,6 @@
 ---
 title: "应用闪屏解决方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-screen-flicker-solution
+original_url: /docs/quality/screen-flicker-solution
 ---
 
 # 应用闪屏解决方案
@@ -425,13 +425,13 @@ private getListView() {
 
 **可能原因**
 
-ForEach提供了一个名为keyGenerator的参数，这是一个函数，开发者可以通过它自定义键值生成规则。如果开发者没有定义keyGenerator函数，则ArkUI框架会使用默认的键值生成函数，即(item: Object, index: number) => &#123; return index + '\_\_' + JSON.stringify(item); &#125;。可参考[键值生成规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach#键值生成规则)。
+ForEach提供了一个名为keyGenerator的参数，这是一个函数，开发者可以通过它自定义键值生成规则。如果开发者没有定义keyGenerator函数，则ArkUI框架会使用默认的键值生成函数，即(item: Object, index: number) => &#123; return index + '\_\_' + JSON.stringify(item); &#125;。可参考[键值生成规则](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach#键值生成规则)。
 
 在使用ForEach的过程中，若对键值生成规则理解不足，将导致错误的使用方式。错误使用会导致功能问题，如渲染结果非预期，或性能问题，如渲染性能下降。
 
 **解决措施**
 
-在ForEach第三个参数中定义自定义键值的生成规则，即(item: NewsData, index?: number) => item.id，这样可以在渲染时降低重复组件的渲染开销，从而消除闪屏问题。可参考[ForEach组件使用建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach#使用建议)。
+在ForEach第三个参数中定义自定义键值的生成规则，即(item: NewsData, index?: number) => item.id，这样可以在渲染时降低重复组件的渲染开销，从而消除闪屏问题。可参考[ForEach组件使用建议](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach#使用建议)。
 
 ```ts
 @Builder

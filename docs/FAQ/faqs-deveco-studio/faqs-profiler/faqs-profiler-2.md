@@ -1,7 +1,7 @@
 ---
 format: md
 title: "导入历史数据失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-2
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-2
 ---
 
 

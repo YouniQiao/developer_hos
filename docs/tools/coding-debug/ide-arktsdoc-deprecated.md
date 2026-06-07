@@ -1,7 +1,7 @@
 ---
 title: "@deprecated"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-arktsdoc-deprecated
+original_url: /docs/tools/coding-debug/ide-arktsdoc-deprecated
 format: md
 ---
 

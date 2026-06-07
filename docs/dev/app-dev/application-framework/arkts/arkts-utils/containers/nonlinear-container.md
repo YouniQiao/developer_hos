@@ -1,6 +1,6 @@
 ---
 title: "非线性容器"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nonlinear-container
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/containers/nonlinear-container
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "WebView中，双向交互可以使用JSBridge技术，也可以使用端口通信技术，这两者有什么区别"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-11
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-11
 ---
 
 
@@ -25,8 +25,8 @@ JSBridge是一种JavaScript与Web客户端之间的通信机制。通过JSBridge
 
 **参考链接**
 
-[应用侧调用前端页面函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-app-frontend-page-function-invoking)
+[应用侧调用前端页面函数](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-app-frontend-page-function-invoking)
 
-[前端页面调用应用侧函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-page-app-function-invoking)
+[前端页面调用应用侧函数](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-page-app-function-invoking)
 
-[建立应用侧与前端页面数据通道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-app-page-data-channel)
+[建立应用侧与前端页面数据通道](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-app-page-data-channel)

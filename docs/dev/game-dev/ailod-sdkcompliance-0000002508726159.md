@@ -1,6 +1,6 @@
 ---
 title: "SDK合规使用指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/ailod-sdkcompliance-0000002508726159
+original_url: /docs/dev/game-dev/ailod-sdkcompliance-0000002508726159
 format: md
 ---
 
@@ -53,10 +53,10 @@ format: md
 
   **使用目的**：用于登录认证
 
-  **隐私政策链接：**[SDK隐私声明](https://developer.huawei.com/consumer/cn/doc/games-guides/ailod-sdksecurity-0000002477667430)
+  **隐私政策链接：**[SDK隐私声明](/docs/dev/game-dev/ailod-sdksecurity-0000002477667430)
 
 * 以表格方式向用户告知
 
   | 第三方SDK名称 | 第三方公司名称 | 收集个人信息类型 | 使用目的 | 隐私政策链接 |
   | --- | --- | --- | --- | --- |
-  | AILOD SDK | 华为软件技术有限公司 | 华为账号信息 | 用于登录认证 | [SDK隐私声明](https://developer.huawei.com/consumer/cn/doc/games-guides/ailod-sdksecurity-0000002477667430) |
+  | AILOD SDK | 华为软件技术有限公司 | 华为账号信息 | 用于登录认证 | [SDK隐私声明](/docs/dev/game-dev/ailod-sdksecurity-0000002477667430) |

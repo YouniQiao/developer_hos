@@ -1,6 +1,6 @@
 ---
 title: "注销核准（备案）"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-log-out
+original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-log-out
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 2. 在“注销主体”页面验证负责人的手机/邮箱，且选择注销原因后点击“下一步，提交审核”，在弹出的“确认要注销主体”窗口点击“确认”。
 
    ![](./img/2ed00310.png "点击放大")
-3. 提交申请后，请前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-sms)。
+3. 提交申请后，请前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-sms)。
 
    ![](./img/485413b2.png "点击放大")
 
@@ -29,6 +29,6 @@ format: md
 2. 在“注销互联网信息”页面验证负责人的手机/邮箱，选择注销原因后点击“下一步，提交审核”，在弹出的“确认要注销互联网信息”窗口点击“确认”。
 
    ![](./img/1dbb544a.png "点击放大")
-3. 提交申请后，请前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-sms)。
+3. 提交申请后，请前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-sms)。
 
    ![](./img/c85987e5.png "点击放大")

@@ -1,6 +1,6 @@
 ---
 title: "整机测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-systemtest-0000002286788036
+original_url: /docs/dev/game-dev/games-hismartperf-systemtest-0000002286788036
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "拉起邮件类应用（startAbilityByType）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-email-apps
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/b03a9854.png)
 
-如果拉起方的参数为mailto协议字符串，可以[使用mailto方式拉起邮件应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps-by-mailto)。邮件应用会解析收到的mailto协议字符串，并填充发件人、收件人、邮件内容等信息。
+如果拉起方的参数为mailto协议字符串，可以[使用mailto方式拉起邮件应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-email-apps-by-mailto)。邮件应用会解析收到的mailto协议字符串，并填充发件人、收件人、邮件内容等信息。
 
 ## 邮件类应用扩展面板参数说明
 
@@ -96,7 +96,7 @@ startAbilityByType接口中type字段为mail，对应的wantParam参数：
 
 ## 目标方开发步骤
 
-1. 在module.json5中新增[linkFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)属性并设置声明当前应用支持的特性功能，从而系统可以从设备已安装应用中找到当前支持该特性的应用，取值范围如下：
+1. 在module.json5中新增[linkFeature](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)属性并设置声明当前应用支持的特性功能，从而系统可以从设备已安装应用中找到当前支持该特性的应用，取值范围如下：
 
    | 取值 | 含义 |
    | --- | --- |

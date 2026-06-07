@@ -1,6 +1,6 @@
 ---
 title: "同层渲染"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-same-layer
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-same-layer
 format: md
 ---
 
@@ -499,7 +499,7 @@ display，position，z-index，visibility，opacity, background-color，backgrou
 
 **完整示例：**
 
-使用前请在module.json5中添加网络权限，添加方法请参考[在配置文件中声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#在配置文件中声明权限)。
+使用前请在module.json5中添加网络权限，添加方法请参考[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。
 
 ```
 "requestPermissions":[

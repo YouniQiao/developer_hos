@@ -1,6 +1,6 @@
 ---
 title: "按需注入和用时注入"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/on-demand-render-time-injection
+original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/on-demand-render-time-injection
 format: md
 ---
 
@@ -42,7 +42,7 @@ app.json中配置如下内容：
 
 在开启“按需注入”特性的前提下，“用时注入”可以指定一部分自定义组件不在元服务启动时注入，而是在真正渲染的时候才进行注入。
 
-在已经指定lazyCodeLoading为requiredComponents的情况下，不论在主包还是分包，只要为自定义组件配置占位组件（同[分包异步化](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/asynchronous-subcontracting)），组件就会自动被视为用时注入组件：
+在已经指定lazyCodeLoading为requiredComponents的情况下，不论在主包还是分包，只要为自定义组件配置占位组件（同[分包异步化](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/asynchronous-subcontracting)），组件就会自动被视为用时注入组件：
 
 * 每个页面内，第一次渲染该组件前，该组件都不会被注入。
 * 每个页面内，第一次渲染该组件时，该组件会被渲染为其对应的占位组件，渲染流程结束后开始注入。

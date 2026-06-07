@@ -1,7 +1,7 @@
 ---
 format: md
 title: "设备管理获取模板数据提示网络异常，下载模拟器镜像提示网络异常"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-40
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-40
 ---
 
 

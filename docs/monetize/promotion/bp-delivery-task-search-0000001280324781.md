@@ -1,7 +1,7 @@
 ---
 title: "投放搜索任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-search-0000001280324781
+original_url: /docs/monetize/promotion/bp-delivery-task-search-0000001280324781
 format: md
 ---
 
@@ -119,7 +119,7 @@ format: md
 
    ![](./img/zh-cn_image_0000002573843813_9ad47a41a823.png "点击放大")
 
-   具体任务设置项的配置请参见[智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940)、[监测链接](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-configure-0000001351658397)或[华为分析监测](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ha-create-task-0000001348575585)。
+   具体任务设置项的配置请参见[智能分包](/docs/monetize/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940)、[监测链接](/docs/monetize/promotion/bp-functions-link-configure-0000001351658397)或[华为分析监测](/docs/monetize/promotion/bp-functions-ha-create-task-0000001348575585)。
 8. 以上设置模块均填写完毕后，点击“提交并编辑创意”，进入“推广创意”设置模块，配置相关任务设置项。
 
    ![](./img/note_3.0-zh-cn_62080c9ade13.png) 

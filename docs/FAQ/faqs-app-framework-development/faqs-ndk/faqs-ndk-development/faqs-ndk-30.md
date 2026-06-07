@@ -1,6 +1,6 @@
 ---
 title: "Native如何调ArkTS的方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-30
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-30
 format: md
 ---
 
@@ -69,4 +69,4 @@ struct InvokeArkTSMethod {
 
 **参考链接**
 
-[Node-API典型使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-scenarios)
+[Node-API典型使用场景](/docs/dev/ndk-dev/napi-scenarios)

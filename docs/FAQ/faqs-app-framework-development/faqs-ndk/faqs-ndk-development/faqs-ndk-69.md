@@ -1,7 +1,7 @@
 ---
 format: md
 title: "napi_call_function调用时除了会有pending exception外，是否还有其他异常场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-69
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-69
 ---
 
 

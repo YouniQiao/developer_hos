@@ -1,6 +1,6 @@
 ---
 title: "拉起指定应用概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup-overview
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-startup-overview
 format: md
 ---
 
@@ -9,11 +9,11 @@ format: md
 
 ![](./img/7742d894.png)
 
-从API 12开始，已不再推荐三方应用使用指定Ability方式（即显式Want）拉起其他应用。关于如何从指定Ability方式切换到指定[应用链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup-overview#应用链接)方式，详见[显式Want跳转切换应用链接跳转适配指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-startup-adjust)。
+从API 12开始，已不再推荐三方应用使用指定Ability方式（即显式Want）拉起其他应用。关于如何从指定Ability方式切换到指定[应用链接](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-startup-overview#应用链接)方式，详见[显式Want跳转切换应用链接跳转适配指导](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/uiability-startup-adjust)。
 
 ## 应用链接
 
-应用链接是指可以将用户引导至应用内特定位置或相关网页的URL，常见的格式如下。更多关于应用链接格式与字段含义的说明，详见[应用链接说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config)。
+应用链接是指可以将用户引导至应用内特定位置或相关网页的URL，常见的格式如下。更多关于应用链接格式与字段含义的说明，详见[应用链接说明](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config)。
 
 ```
 scheme://host[:port]/path

@@ -1,7 +1,7 @@
 ---
 title: "申请推广评测"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-apply-evaluation-0000001346654709
+original_url: /docs/monetize/promotion/bp-start-guest-apply-evaluation-0000001346654709
 format: md
 ---
 

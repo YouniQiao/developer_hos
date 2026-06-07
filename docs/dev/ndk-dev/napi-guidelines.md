@@ -1,6 +1,6 @@
 ---
 title: "Node-API开发规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines
+original_url: /docs/dev/ndk-dev/napi-guidelines
 format: md
 ---
 
@@ -150,7 +150,7 @@ if (status != napi_ok) {
 
 ![](./img/d42652d1.png)
 
-本规则旨在强调napi\_value生命周期情况，若只想往JS线程抛任务，**不推荐**使用uv\_queue\_work方法。如有抛任务的需要，请使用[napi\_threadsafe\_function系列](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety)接口。
+本规则旨在强调napi\_value生命周期情况，若只想往JS线程抛任务，**不推荐**使用uv\_queue\_work方法。如有抛任务的需要，请使用[napi\_threadsafe\_function系列](/docs/dev/ndk-dev/use-napi-thread-safety)接口。
 
 **正确示例**：
 
@@ -440,7 +440,7 @@ extern "C" void napi_onLoad()
 
 ## 正确的使用napi\_create\_external系列接口创建的JS Object
 
-**【规则】** napi\_create\_external系列接口创建出来的JS对象仅允许在当前线程传递和使用，跨线程传递（如使用worker的post\_message）将会导致应用crash。若需跨线程传递绑定有Native对象的JS对象，请使用napi\_coerce\_to\_native\_binding\_object接口绑定JS对象和Native对象。具体API说明详见[API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-object#napi_create_external)。
+**【规则】** napi\_create\_external系列接口创建出来的JS对象仅允许在当前线程传递和使用，跨线程传递（如使用worker的post\_message）将会导致应用crash。若需跨线程传递绑定有Native对象的JS对象，请使用napi\_coerce\_to\_native\_binding\_object接口绑定JS对象和Native对象。具体API说明详见[API参考](/docs/dev/ndk-dev/use-napi-about-object#napi_create_external)。
 
 **错误示例**
 

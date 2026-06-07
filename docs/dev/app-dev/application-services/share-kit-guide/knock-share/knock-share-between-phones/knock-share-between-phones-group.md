@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "邀请组队"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-group
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-group
 format: md
 ---
 
@@ -69,7 +69,7 @@ export default struct Index {
 
 ## 设置组队邀请预览
 
-预览图设置参考：[设置分享预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-content#设置分享预览)。
+预览图设置参考：[设置分享预览](/docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-content#设置分享预览)。
 
 ## 处理组队链接
 
@@ -106,4 +106,4 @@ export default class EntryAbility extends UIAbility {
 
 当碰一碰分享回调触发时，发生异常场景导致无法继续分享，可终止本次分享。
 
-参考：[异常场景终止分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-content#异常场景需终止分享)。
+参考：[异常场景终止分享](/docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-content#异常场景需终止分享)。

@@ -1,6 +1,6 @@
 ---
 title: "ArkGuard字节码混淆原理及功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation
 format: md
 ---
 
@@ -9,9 +9,9 @@ format: md
 
 | 名词 | 释义 |
 | --- | --- |
-| [HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package) | HAP（Harmony Ability Package）是应用安装和运行的基本单元。HAP包是由代码、资源、第三方库、配置文件等打包生成的模块包。 |
-| [HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package) | HAR（Harmony Archive）是静态共享包，通过HAR可以实现多个模块或多个工程共享ArkUI组件、资源等相关代码。通过Static Library创建HAR模块。 |
-| [HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp) | HSP（Harmony Shared Package）是动态共享包，通过HSP可以实现代码和资源的共享。通过Shared Library创建HSP模块。 |
+| [HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package) | HAP（Harmony Ability Package）是应用安装和运行的基本单元。HAP包是由代码、资源、第三方库、配置文件等打包生成的模块包。 |
+| [HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package) | HAR（Harmony Archive）是静态共享包，通过HAR可以实现多个模块或多个工程共享ArkUI组件、资源等相关代码。通过Static Library创建HAR模块。 |
+| [HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp) | HSP（Harmony Shared Package）是动态共享包，通过HSP可以实现代码和资源的共享。通过Shared Library创建HSP模块。 |
 | 本地HAR | 源码形式的HAR模块。 |
 | 远程HAR | 构建后打包生成的HAR包。 |
 | 本地HSP | 源码形式的HSP模块。 |
@@ -94,7 +94,7 @@ test(a2);
 
 与其他代码混淆工具一样，混淆只能在一定程度上增加逆向工程的难度，并不能真正阻止逆向工程。
 
-并且，由于ArkGuard混淆工具仅支持基础混淆能力，开发者不应只依赖ArkGuard来保证应用的安全性，对于源码安全有高要求的开发者，应考虑使用[应用加密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-protect)、第三方安全加固等安全措施来保护代码。
+并且，由于ArkGuard混淆工具仅支持基础混淆能力，开发者不应只依赖ArkGuard来保证应用的安全性，对于源码安全有高要求的开发者，应考虑使用[应用加密](/docs/dev/app-dev/system/system-security/code-protect)、第三方安全加固等安全措施来保护代码。
 
 ## 混淆机制及流程
 
@@ -102,7 +102,7 @@ test(a2);
 
 ![](./img/f1e37878.png)
 
-开发者可以在模块的build-profile.json5配置文件中开启混淆功能，详细参考[字节码混淆开启指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-guide)，从而在编译打包的过程中自动对abc进行混淆处理。
+开发者可以在模块的build-profile.json5配置文件中开启混淆功能，详细参考[字节码混淆开启指南](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-guide)，从而在编译打包的过程中自动对abc进行混淆处理。
 
 混淆过程中，首先读取混淆开关。在开关开启的情况下，解析混淆配置文件，并依据[混淆规则合并策略](#混淆规则合并策略)合并混淆规则。然后按照混淆规则对生成的abc文件进行字节码混淆，最后将混淆后的中间文件落盘至build目录。开发者可以通过build目录中混淆后的产物，确认混淆效果。
 
@@ -516,7 +516,7 @@ if (flag) {
 
 ### -enable-bytecode-obfuscation-debugging
 
-控制字节码混淆是否输出调试信息，开启后会生成混淆日志，请参考[混淆效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-guide#查看混淆效果)，默认不开启。
+控制字节码混淆是否输出调试信息，开启后会生成混淆日志，请参考[混淆效果](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-guide#查看混淆效果)，默认不开启。
 
 需要在已配置-enable-bytecode-obfuscation的基础上使用。
 
@@ -781,7 +781,7 @@ entry
 
 **哪些文件名应该被保留?**
 
-1.在使用require引入文件路径时，由于ArkTS不支持[CommonJS](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-principle#commonjs模块)语法，因此这种情况下路径应该被保留。
+1.在使用require引入文件路径时，由于ArkTS不支持[CommonJS](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/module-principle#commonjs模块)语法，因此这种情况下路径应该被保留。
 
 ```
 // example.js
@@ -813,7 +813,7 @@ const module2 = import(moduleName)
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTSCompilationToolchain/ArkGuardForBytecodeObfuscation/ArkGuardBytecodeObfuscation/entry/src/main/ets/bytecodeobfuscation/BytecodeObfuscation.ts#L227-L231" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：BytecodeObfuscation.ts</a></div>
 
 
-3.在使用[跨包路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-cross-package)进行路由跳转时，传递给动态路由的路径应该被保留。动态路由提供系统路由表和自定义路由表两种方式。若采用自定义路由表进行跳转，配置白名单的方式与上述第二种动态引用场景一致。而若采用系统路由表进行跳转，则需要将模块下resources/base/profile/route\_map.json5文件中pageSourceFile字段对应的路径添加到白名单中。
+3.在使用[跨包路由](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-cross-package)进行路由跳转时，传递给动态路由的路径应该被保留。动态路由提供系统路由表和自定义路由表两种方式。若采用自定义路由表进行跳转，配置白名单的方式与上述第二种动态引用场景一致。而若采用系统路由表进行跳转，则需要将模块下resources/base/profile/route\_map.json5文件中pageSourceFile字段对应的路径添加到白名单中。
 
 ```
 {

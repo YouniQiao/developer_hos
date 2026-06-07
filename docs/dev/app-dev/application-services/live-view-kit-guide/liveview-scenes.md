@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发实况窗场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-scenes
+original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-scenes
 format: md
 ---
 
 
-* **[开发实况窗须知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-scenes-intro)**
-* **[构建本地实况窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-create-locally)**
-* **[通过Push Kit更新实况窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-update-by-push)**
+* **[开发实况窗须知](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-scenes/liveview-scenes-intro)**
+* **[构建本地实况窗](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-scenes/liveview-create-locally)**
+* **[通过Push Kit更新实况窗](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-scenes/liveview-update-by-push)**

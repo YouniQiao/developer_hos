@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "证书吊销列表对象的创建、解析和校验"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-verify-crl-object
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-crl-object
 format: md
 ---
 

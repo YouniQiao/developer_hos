@@ -1,7 +1,7 @@
 ---
 format: md
 title: "requestEnableNotification接口申请通知权限的机制是怎样的"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit-6
+original_url: /docs/FAQ/faqs-app-service-development/faqs-notification-kit/faqs-notification-kit-6
 ---
 
 

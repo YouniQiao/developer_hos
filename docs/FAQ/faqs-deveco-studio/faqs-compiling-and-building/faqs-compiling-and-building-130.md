@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决编译报错“ERROR: ArkTS Compiler Error ERROR: /bin/sh: 'xxxx/es2abc': Operation not permitted”的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-130
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-130
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Native内存泄漏问题检测方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-native-memleak-detection
+original_url: /docs/quality/stability-native-memleak-detection
 format: md
 ---
 

@@ -1,16 +1,16 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "群组密钥(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-arkts
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-arkts
 format: md
 ---
 
 
-从API 23开始，HUKS支持群组密钥功能。群组密钥支持的HUKS密钥操作及详细介绍参考[群组密钥介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)，本文档以[AES/CBC/PKCS7加解密](#aescbcpkcs7加解密)、[X25519非对称密钥协商](#x25519非对称密钥协商)、[PBKDF2派生密钥](#pbkdf2派生密钥)为例展示群组密钥使用方法。
+从API 23开始，HUKS支持群组密钥功能。群组密钥支持的HUKS密钥操作及详细介绍参考[群组密钥介绍](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)，本文档以[AES/CBC/PKCS7加解密](#aescbcpkcs7加解密)、[X25519非对称密钥协商](#x25519非对称密钥协商)、[PBKDF2派生密钥](#pbkdf2派生密钥)为例展示群组密钥使用方法。
 
 **配置文件**
 
-使用群组密钥之前，需要在app.json5文件中配置群组信息，配置方法参考[配置文件示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件示例)中assetAccessGroups字段的配置方式。
+使用群组密钥之前，需要在app.json5文件中配置群组信息，配置方法参考[配置文件示例](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件示例)中assetAccessGroups字段的配置方式。
 
 ## AES/CBC/PKCS7加解密
 
@@ -18,11 +18,11 @@ format: md
 
 **生成密钥**
 
-1. 指定密钥别名，密钥别名命名规范参考[密钥生成介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)。
+1. 指定密钥别名，密钥别名命名规范参考[密钥生成介绍及算法规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)。
 2. 初始化密钥属性集。需要添加群组密钥标签[HUKS\_TAG\_KEY\_ACCESS\_GROUP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)，推荐使用[HUKS\_TAG\_KEY\_OVERRIDE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)，避免密钥被覆盖。
-3. 调用[generateKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksgeneratekeyitem9)生成密钥，具体请参考[密钥生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)。
+3. 调用[generateKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksgeneratekeyitem9)生成密钥，具体请参考[密钥生成](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)。
 
-除此之外，开发者也可以参考[密钥导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview)，导入已有的密钥。
+除此之外，开发者也可以参考[密钥导入](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview)，导入已有的密钥。
 
 **加密**
 
@@ -44,7 +44,7 @@ format: md
 
 1. 指定密钥别名。
 2. 使用[HuksParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksparam)设置密钥删除算法参数配置。需要添加群组密钥标签[HUKS\_TAG\_KEY\_ACCESS\_GROUP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)。
-3. 调用[deleteKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksdeletekeyitem9)删除密钥，具体请参考[密钥删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key-arkts)。
+3. 调用[deleteKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksdeletekeyitem9)删除密钥，具体请参考[密钥删除](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-arkts)。
 
 ### 开发示例
 
@@ -286,13 +286,13 @@ async function TestGroupKeyEncryptDecrypt() {
 
 **生成密钥**
 
-设备A、设备B各自生成一个非对称密钥，具体请参考[密钥生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)或[密钥导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview)。
+设备A、设备B各自生成一个非对称密钥，具体请参考[密钥生成](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)或[密钥导入](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview)。
 
 密钥生成时，指定参数[HUKS\_TAG\_KEY\_ACCESS\_GROUP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)，用于生成群组密钥。
 
 **导出密钥**
 
-设备A、B导出非对称密钥对的公钥材料，具体请参考[密钥导出](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-export-key-arkts)。
+设备A、B导出非对称密钥对的公钥材料，具体请参考[密钥导出](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-export-key/huks-export-key-arkts)。
 
 导出密钥时，指定参数[HUKS\_TAG\_KEY\_ACCESS\_GROUP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)，用于导出群组密钥。
 
@@ -304,7 +304,7 @@ async function TestGroupKeyEncryptDecrypt() {
 
 **删除密钥**
 
-当密钥废弃不用时，设备A、B均需要删除密钥，具体请参考[密钥删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key-arkts)。
+当密钥废弃不用时，设备A、B均需要删除密钥，具体请参考[密钥删除](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-arkts)。
 
 删除密钥时，指定参数[HUKS\_TAG\_KEY\_ACCESS\_GROUP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)，用于删除群组密钥。
 
@@ -556,11 +556,11 @@ async function testAgree() {
 
 **生成密钥**
 
-1. 指定密钥别名，密钥别名命名规范参考[密钥生成介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)。
+1. 指定密钥别名，密钥别名命名规范参考[密钥生成介绍及算法规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)。
 2. 密钥生成时，指定参数[HUKS\_TAG\_KEY\_ACCESS\_GROUP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)，用于生成群组密钥。
-3. 调用[generateKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksgeneratekeyitem9)生成密钥，具体请参考[密钥生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)。
+3. 调用[generateKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksgeneratekeyitem9)生成密钥，具体请参考[密钥生成](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)。
 
-除此之外，开发者也可以参考[密钥导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview)，导入已有的密钥。
+除此之外，开发者也可以参考[密钥导入](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview)，导入已有的密钥。
 
 **密钥派生**
 
@@ -571,7 +571,7 @@ async function testAgree() {
 
 **删除密钥**
 
-当密钥废弃不用时，需要调用[deleteKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksdeletekeyitem9)删除密钥，具体请参考[密钥删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key-arkts)。
+当密钥废弃不用时，需要调用[deleteKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksdeletekeyitem9)删除密钥，具体请参考[密钥删除](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-arkts)。
 
 删除密钥时，指定参数[HUKS\_TAG\_KEY\_ACCESS\_GROUP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)，用于删除群组密钥。
 

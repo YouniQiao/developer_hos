@@ -1,6 +1,6 @@
 ---
 title: "audio"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-audio
+original_url: /docs/dev/atomic-dev/ascf/components-media-components/components-audio
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 **起始版本：** 1.0.16
 
-**关联文档：** [has.createAudioContext](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-audio#hascreateaudiocontext)
+**关联文档：** [has.createAudioContext](/docs/dev/atomic-dev/ascf/apis-media/apis-audio#hascreateaudiocontext)
 
 ## 属性
 

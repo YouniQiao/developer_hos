@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "人脸检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-face-detector
+original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-face-detector
 format: md
 ---
 

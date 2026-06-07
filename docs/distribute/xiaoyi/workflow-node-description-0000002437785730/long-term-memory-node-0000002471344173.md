@@ -1,7 +1,7 @@
 ---
 title: "长期记忆节点"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/long-term-memory-node-0000002471344173
+original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/long-term-memory-node-0000002471344173
 format: md
 ---
 

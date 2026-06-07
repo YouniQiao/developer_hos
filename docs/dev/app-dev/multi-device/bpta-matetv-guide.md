@@ -1,7 +1,7 @@
 ---
 title: "智慧屏应用开发"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-matetv-guide
+original_url: /docs/dev/app-dev/multi-device/bpta-matetv-guide
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
 ![](./img/a18f4d01.png)
 
-本文聚焦于智慧屏应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)”系列文章。
+本文聚焦于智慧屏应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)”系列文章。
 
 ## 硬件说明
 
@@ -99,21 +99,21 @@ Mate TV交互默认使用遥控器进行控制，应用可通过[按键事件](h
 ![](./img/9e8208af.png)
 
 * 灵犀指向遥控上的电源键、Home键、OK键、返回键、语音键均具备默认功能，不响应onKeyEvent事件，例如：电源键默认功能为关机或熄屏；Home键默认功能为短按返回Home页，长按进入任务中心。
-* 灵犀指向遥控的上下左右按键，响应[PanGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pangesture)事件，暂不支持自定义响应。更多灵犀指向遥控的交互说明可参考多设备交互[手势事件](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section182814229423)。
+* 灵犀指向遥控的上下左右按键，响应[PanGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pangesture)事件，暂不支持自定义响应。更多灵犀指向遥控的交互说明可参考多设备交互[手势事件](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section182814229423)。
 
 ###应用接续
 
-应用接续是指应用可通过[应用接续概述](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast)能力，从其他设备接续到智慧屏继续运行，实现跨设备任务延续，保障用户操作连贯、体验无缝衔接。例如，用户在手机上观看视频时，可将其接续至智慧屏，同步播放进度，实现不间断的观影体验。
+应用接续是指应用可通过[应用接续概述](/docs/dev/app-dev/multi-device/bpta-continue-cast)能力，从其他设备接续到智慧屏继续运行，实现跨设备任务延续，保障用户操作连贯、体验无缝衔接。例如，用户在手机上观看视频时，可将其接续至智慧屏，同步播放进度，实现不间断的观影体验。
 
-应用接续的核心机制，是将应用当前的完整任务（涵盖页面路由、控件状态及业务数据等）无缝迁移至目标设备，从而保障用户体验的连续性。具体的开发指导可参考应用接续数据迁移的[开发步骤](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-data#section58703554417)章节。
+应用接续的核心机制，是将应用当前的完整任务（涵盖页面路由、控件状态及业务数据等）无缝迁移至目标设备，从而保障用户体验的连续性。具体的开发指导可参考应用接续数据迁移的[开发步骤](/docs/dev/app-dev/multi-device/bpta-continue-data#section58703554417)章节。
 
 ![](./img/c822d0d8.png)
 
-同一应用在不同设备类型上可能使用不同的BundleName，若需支持应用接续，需进行额外配置以确保接续正常。详情可参考[支持同应用不同BundleName的Ability跨端迁移](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section1610864011610)。
+同一应用在不同设备类型上可能使用不同的BundleName，若需支持应用接续，需进行额外配置以确保接续正常。详情可参考[支持同应用不同BundleName的Ability跨端迁移](/docs/dev/app-dev/multi-device/bpta-continue-cast#section1610864011610)。
 
 ###未成年人模式适配
 
-未成年人模式[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-overview-minorsprotection)旨在协同应用与系统能力，构建安全、健康的网络环境，加强对未成年人的网络保护。智慧屏作为家庭场景中的核心设备，面向全家人共享使用，其应用生态中涵盖大量儿童教育类应用，尤其需要加强对未成年用户的使用监管与内容过滤。
+未成年人模式[概述](/docs/dev/app-dev/application-services/account-overview-minorsprotection)旨在协同应用与系统能力，构建安全、健康的网络环境，加强对未成年人的网络保护。智慧屏作为家庭场景中的核心设备，面向全家人共享使用，其应用生态中涵盖大量儿童教育类应用，尤其需要加强对未成年用户的使用监管与内容过滤。
 
 智慧屏上的应用通过接入Account Kit提供的[华为账号未成年人模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection)与系统联动，可快速实现自动切换未成年人模式状态，简化了家长用户的设置步骤，为未成年人提供安全、健康的网络环境。主要包含以下几种场景：
 
@@ -123,14 +123,14 @@ Mate TV交互默认使用遥控器进行控制，应用可通过[按键事件](h
 * 关闭系统的未成年人模式：调用系统未成年人模式的关闭接口[leadToTurnOffMinorsMode()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#leadtoturnoffminorsmode)，拉起系统的未成年人模式关闭流程，系统未成年人模式关闭后，应用需跟随同步关闭。
 * 应用内调整未成年人模式设置：用户调整内容偏好、使用时长等设置，验证家长身份。操作前需调用家长身份验证接口[verifyMinorsProtectionCredential()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#verifyminorsprotectioncredential)进行身份验证。
 
-具体开发指导可参考[应用与系统实现未成年人模式联动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-follow-minorsprotection)。
+具体开发指导可参考[应用与系统实现未成年人模式联动](/docs/dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection)。
 
 ###键鼠适配
 
 用户通过蓝牙外接鼠标和键盘进行操作时，应用应针对键鼠输入特性进行针对性适配，以提升操作效率与交互体验：
 
-* 鼠标交互：建议为可交互UI组件（如按钮、菜单、列表项等）适配悬浮态视觉反馈（如颜色变化、阴影、缩放等），增强操作可感知性。开发方案请参考[交互归一](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section088812013815)的悬浮场景。鼠标常用的点击、长按等交互事件已实现交互归一，开发指导可参考[交互归一事件适配](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section088812013815)。
-* 键盘操作：建议支持常用快捷键（如Enter确认、Esc返回、方向键导航等），提升文本输入与页面浏览效率。开发方案请参考[基础输入事件](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section151791829184110)的按键事件适配。
+* 鼠标交互：建议为可交互UI组件（如按钮、菜单、列表项等）适配悬浮态视觉反馈（如颜色变化、阴影、缩放等），增强操作可感知性。开发方案请参考[交互归一](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section088812013815)的悬浮场景。鼠标常用的点击、长按等交互事件已实现交互归一，开发指导可参考[交互归一事件适配](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section088812013815)。
+* 键盘操作：建议支持常用快捷键（如Enter确认、Esc返回、方向键导航等），提升文本输入与页面浏览效率。开发方案请参考[基础输入事件](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section151791829184110)的按键事件适配。
 
 ## 设备常见适配问题
 
@@ -168,7 +168,7 @@ Mate TV交互默认使用遥控器进行控制，应用可通过[按键事件](h
 
 问题描述：相机预览流旋转方向异常旋转90°或270°。
 
-解决方案：开发时应采用统一的计算模型：预览旋转角度=相机安装角度+屏幕旋转角度。智慧屏的相机安装角度和屏幕旋转角度均为固定值，预览旋转角度为0°。开放方案详情可参考[相机硬件差异](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-camera)。
+解决方案：开发时应采用统一的计算模型：预览旋转角度=相机安装角度+屏幕旋转角度。智慧屏的相机安装角度和屏幕旋转角度均为固定值，预览旋转角度为0°。开放方案详情可参考[相机硬件差异](/docs/dev/app-dev/multi-device/bpta-multi-device-camera)。
 
 **相机预览画面黑屏**
 

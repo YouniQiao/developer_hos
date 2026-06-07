@@ -1,7 +1,7 @@
 ---
 title: "变量组件"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/variable-component-0000002437785746
+original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/variable-component-0000002437785746
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如何解析华为CDN场景下manifestUrl对应的xml文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-5
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-assetdownload-faq/graphics-accelerate-assetdownload-faq-5
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "保护密码类数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-scenario1
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-scenarios/asset-scenario1
 format: md
 ---
 
@@ -26,12 +26,12 @@ format: md
 
 1. 业务查询符合条件的关键资产属性，根据查询成功/失败，判断关键资产是否存在。
 
-   * 开发步骤参考[查询关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query) / [查询关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-query)，代码示例参考[查询单条关键资产属性(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query#查询单条关键资产属性) / [查询单条关键资产属性(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-query#查询单条关键资产属性)。
+   * 开发步骤参考[查询关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query) / [查询关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-query)，代码示例参考[查询单条关键资产属性(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query#查询单条关键资产属性) / [查询单条关键资产属性(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-query#查询单条关键资产属性)。
 2. 如果关键资产不存在，业务可选择：
 
-   * 新增关键资产，开发步骤参考[新增关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-add) / [新增关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-add)。
+   * 新增关键资产，开发步骤参考[新增关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-add) / [新增关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-add)。
 3. 如果关键资产存在，业务可选择：
 
-   * 删除关键资产，开发步骤参考[删除关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-remove) / [删除关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-remove)。
-   * 更新关键资产，开发步骤参考[更新关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-update) / [更新关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-update)。
-   * 查询关键资产明文，开发步骤参考[查询关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query) / [查询关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-query)，代码示例参考[查询单条关键资产明文(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query#查询单条关键资产明文) / [查询单条关键资产明文(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-query#查询单条关键资产明文)。
+   * 删除关键资产，开发步骤参考[删除关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-remove) / [删除关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-remove)。
+   * 更新关键资产，开发步骤参考[更新关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-update) / [更新关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-update)。
+   * 查询关键资产明文，开发步骤参考[查询关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query) / [查询关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-query)，代码示例参考[查询单条关键资产明文(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query#查询单条关键资产明文) / [查询单条关键资产明文(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-query#查询单条关键资产明文)。

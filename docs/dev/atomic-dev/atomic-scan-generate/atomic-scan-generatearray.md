@@ -1,6 +1,6 @@
 ---
 title: "通过字节数组生成码图"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-generatearray
+original_url: /docs/dev/atomic-dev/atomic-scan-generate/atomic-scan-generatearray
 format: md
 ---
 

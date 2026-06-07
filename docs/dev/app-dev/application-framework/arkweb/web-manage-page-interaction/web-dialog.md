@@ -1,6 +1,6 @@
 ---
 title: "使用Web组件显示网页弹框"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-dialog
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-dialog
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "配置调试签名异常"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-18
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-18
 ---
 
 
@@ -22,14 +22,14 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-s
    * **App package name**：应用包名。App type为HarmonyOS应用时，才需要填写该字段。字段内容跟工程的Bundle name一致，不支持修改。
    * **App category**：应用分类。
 
-   关于应用/元服务名称、包名的要求请参考[操作步骤](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506#section1772711713288)、[创建元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-atomic-service-0000002247795706)。
+   关于应用/元服务名称、包名的要求请参考[操作步骤](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section1772711713288)、[创建元服务](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-atomic-service-0000002247795706)。
 2. 应用/元服务添加完成后，再进行签名。
 
 ![](./img/d8aca06a.png "点击放大")
 
 方式二：
 
-1. 进入AGC创建应用/元服务，创建时包名和DevEco Studio创建应用时的Bundle name一致。创建过程具体可参考[操作步骤](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506#section1772711713288)、[创建元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-atomic-service-0000002247795706)。
+1. 进入AGC创建应用/元服务，创建时包名和DevEco Studio创建应用时的Bundle name一致。创建过程具体可参考[操作步骤](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section1772711713288)、[创建元服务](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-atomic-service-0000002247795706)。
 
    ![](./img/1f24fd3c.png "点击放大")
 2. 创建完成后，返回DevEco Studio界面重新签名。
@@ -48,7 +48,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-s
 
 方式二：
 
-1. 加入目标团队，具体可参考[添加成员账号](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129#section151241455193313)。
+1. 加入目标团队，具体可参考[添加成员账号](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#section151241455193313)。
 2. 加入团队成功后，将**Team**修改为目标团队。
 
    ![](./img/a53c8734.png "点击放大")
@@ -68,7 +68,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-s
 
 **参考链接**
 
-[操作步骤](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506#section1772711713288)
+[操作步骤](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section1772711713288)
 
 ## 提示"Failed to verify the bundle name. Check your network connection or try again after configuring a proxy."
 

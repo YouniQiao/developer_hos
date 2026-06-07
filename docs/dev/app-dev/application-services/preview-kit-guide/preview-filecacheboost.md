@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通用文件缓存加速（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost
+original_url: /docs/dev/app-dev/application-services/preview-kit-guide/preview-filecacheboost
 format: md
 ---
 

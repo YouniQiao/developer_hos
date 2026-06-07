@@ -1,6 +1,6 @@
 ---
 title: "邀请用户参与测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-appgallery-invite-testuser-0000002292624413
+original_url: /docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-invite-testuser-0000002292624413
 format: md
 ---
 
@@ -40,7 +40,7 @@ format: md
 
   ![](../img/agc-help-appgallery-invite-testuser-0000002292624413_3.png "点击放大")
 
-* 使用[查询应用信息接口](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-appinfo-query-0000002236041422)获取
+* 使用[查询应用信息接口](/docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-appinfo-query-0000002236041422)获取
 
   ![](../img/agc-help-appgallery-invite-testuser-0000002292624413_4.png "点击放大")
 

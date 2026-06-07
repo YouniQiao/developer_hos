@@ -1,6 +1,6 @@
 ---
 title: "性能概览"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-performance-guide-reading
+original_url: /docs/quality/performance-guide-reading
 format: md
 ---
 
@@ -45,5 +45,5 @@ format: md
 
 对于应用的内存类问题，DevEco Profiler提供了[基础内存分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations)和[内存泄漏分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-snapshot)能力：
 
-* [分析ArkTS/JS内存](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-arkts-js-memory-analysis)：DevEco Studio中Profiler Snapshot模板支持采集堆内存快照和对比功能，且每次采集快照前都会触发垃圾回收（GC），通过对比操作前后的两个堆内存快照，可以直观地识别内存占用的根本原因，分析新增对象是否应被回收，并通过对象引用链找到合适的断点，从而解决问题。
-* [分析native内存](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-native-memory-analysis)：DevEco Studio Profiler插件的Allocation模板，通过对基础库的malloc，free等函数进行插桩记录，可以抓取Native内存分配释放记录，包括大小和堆栈等数据，用以分析native内存的占用问题。
+* [分析ArkTS/JS内存](/docs/quality/arkts-js-memory-analysis)：DevEco Studio中Profiler Snapshot模板支持采集堆内存快照和对比功能，且每次采集快照前都会触发垃圾回收（GC），通过对比操作前后的两个堆内存快照，可以直观地识别内存占用的根本原因，分析新增对象是否应被回收，并通过对象引用链找到合适的断点，从而解决问题。
+* [分析native内存](/docs/quality/native-memory-analysis)：DevEco Studio Profiler插件的Allocation模板，通过对基础库的malloc，free等函数进行插桩记录，可以抓取Native内存分配释放记录，包括大小和堆栈等数据，用以分析native内存的占用问题。

@@ -1,10 +1,10 @@
 ---
 title: "签名/验签"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification
 format: md
 ---
 
 
-* **[签名/验签介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-overview)**
-* **[签名/验签(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts)**
-* **[签名/验签(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-ndk)**
+* **[签名/验签介绍及算法规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-overview)**
+* **[签名/验签(ArkTS)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts)**
+* **[签名/验签(C/C++)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-ndk)**

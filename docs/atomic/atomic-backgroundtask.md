@@ -1,11 +1,11 @@
 ---
 title: "长时任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-backgroundtask
+original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-backgroundtask
 format: md
 ---
 
 
-元服务使用长时任务的开发方式与传统应用使用长时任务的开发方式相同，详见[长时任务的开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)。
+元服务使用长时任务的开发方式与传统应用使用长时任务的开发方式相同，详见[长时任务的开发指南](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)。
 
 ![](./img/10744ec1.png)
 

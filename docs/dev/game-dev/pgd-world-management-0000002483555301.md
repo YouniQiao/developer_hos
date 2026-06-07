@@ -1,6 +1,6 @@
 ---
 title: "管理实体"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-world-management-0000002483555301
+original_url: /docs/dev/game-dev/pgd-world-management-0000002483555301
 format: md
 ---
 
@@ -87,7 +87,7 @@ entity.Active = true;
 
 ## 克隆实体
 
-若实体组件中包含引用类型，需要手动实现CopyMethod方法进行深拷贝。详情请参见[包含引用类型组件的实体克隆问题](https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tag-faq-0000002450393372#section14464758165613)。
+若实体组件中包含引用类型，需要手动实现CopyMethod方法进行深拷贝。详情请参见[包含引用类型组件的实体克隆问题](/docs/dev/game-dev/pgd-tag-faq-0000002450393372#section14464758165613)。
 
 ```
 var original = world.CreateEntity(

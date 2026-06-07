@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "目标设备接收分享数据一步直达体验"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-one-step
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-access-precautions/share-access-one-step
 format: md
 ---
 
@@ -25,8 +25,8 @@ format: md
 
 除以上系统默认直达方式外，同开发者账号下应用支持以下拉起规则：
 
-* 同包名应用优先直达。若接收端已安装和发送端相同的应用，且支持拉起（满足[隐式匹配原理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings#隐式want匹配原理)）该应用，则优先拉起同包名应用。
-* 同开发者账号(developerId相同)下的应用可通过[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)配置实现优先拉起指定应用。
+* 同包名应用优先直达。若接收端已安装和发送端相同的应用，且支持拉起（满足[隐式匹配原理](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings#隐式want匹配原理)）该应用，则优先拉起同包名应用。
+* 同开发者账号(developerId相同)下的应用可通过[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)配置实现优先拉起指定应用。
 
 ### 能力限制
 
@@ -37,10 +37,10 @@ format: md
 
 ### 配置示例
 
-通过在配置文件（src/main/module.json5）中配置[metadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#metadata标签)标签实现。
+通过在配置文件（src/main/module.json5）中配置[metadata](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#metadata标签)标签实现。
 
 * shareType：用于分组匹配，当发送端应用和接收端应用配置相同的shareType值时，匹配规则才可生效。仅支持配置一项，配置多项时，仅第一项生效。
-* shareBundleName：指定打开应用的包名，可配置多项。当shareType相同时，按数组排列顺序匹配第一个已安装且支持拉起（满足[隐式匹配原理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings#隐式want匹配原理)）的应用，并优先拉起该应用。
+* shareBundleName：指定打开应用的包名，可配置多项。当shareType相同时，按数组排列顺序匹配第一个已安装且支持拉起（满足[隐式匹配原理](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings#隐式want匹配原理)）的应用，并优先拉起该应用。
 
 ```
 {

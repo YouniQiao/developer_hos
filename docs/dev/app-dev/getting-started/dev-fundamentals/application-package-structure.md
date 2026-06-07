@@ -1,7 +1,7 @@
 ---
 title: "应用程序包结构"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure
 ---
 
-* **[Stage模型应用程序包结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-stage)**
-* **[FA模型应用程序包结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-fa)**
+* **[Stage模型应用程序包结构](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage)**
+* **[FA模型应用程序包结构](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-fa)**

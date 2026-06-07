@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在Stage模型中创建后台任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-1
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-1
 ---
 
 
@@ -11,7 +11,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-b
 
 **解决措施**
 
-后台任务，包括短时任务、长时任务、延迟任务、代理提醒等，例如：在Stage模型中创建长时任务的步骤请参考长时任务[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task#开发步骤)。
+后台任务，包括短时任务、长时任务、延迟任务、代理提醒等，例如：在Stage模型中创建长时任务的步骤请参考长时任务[开发步骤](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task#开发步骤)。
 
 **参考链接**
 

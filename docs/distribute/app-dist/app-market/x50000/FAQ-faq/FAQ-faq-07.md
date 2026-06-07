@@ -1,7 +1,7 @@
 ---
 title: "7. 下载分发行为"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-07
+original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-07
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "制作实例"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/production-example-pro-0000001633927109
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/production-example-pro-0000001633927109
 format: md
 ---
 
@@ -521,7 +521,7 @@ format: md
 1. 图层数量不超过30层。
 2. 序列帧、视频、GIF控件不可用。
 3. 熄屏表盘不可以单独导出，必须与亮屏表盘一起导出。
-4. 屏幕非黑像素点不超过整体屏幕面积的20%，详见[分辨率与版本号](https://developer.huawei.com/consumer/cn/doc/content/resolution-version-0000001252603441#section1756815468317)。
+4. 屏幕非黑像素点不超过整体屏幕面积的20%，详见[分辨率与版本号](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-version-0000001252603441#section1756815468317)。
 5. 非黑像素点区域尽量分散，不要出现大块集中展示。任意200px\*200px范围，非黑像素点占比不能超过60%。
 
 n
@@ -547,4 +547,4 @@ n
 
    ![](./img/5b942b40db1e.png)
 
-   非黑像素点占比超过后如何修改？详见[熄屏表盘提示非黑像素点占比过高，如何解决？](https://developer.huawei.com/consumer/cn/doc/content/watchface-faq-pro-0000001733080717#section595359155210)
+   非黑像素点占比超过后如何修改？详见[熄屏表盘提示非黑像素点占比过高，如何解决？](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watchface-faq-pro-0000001733080717#section595359155210)

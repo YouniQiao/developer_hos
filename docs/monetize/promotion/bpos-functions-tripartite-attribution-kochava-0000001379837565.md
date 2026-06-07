@@ -1,7 +1,7 @@
 ---
 title: "Kochava"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565
+original_url: /docs/monetize/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565
 format: md
 ---
 
@@ -36,7 +36,7 @@ Kochava支持3.8.0及以上版本，详情请参考[官网链接](https://www.ko
 
 4. 在鲸鸿动能广告平台创建任务。
 
-5. 在鲸鸿动能广告平台[转化数据](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-data-0000001379958197)。
+5. 在鲸鸿动能广告平台[转化数据](/docs/monetize/promotion/bpos-functions-tripartite-attribution-data-0000001379958197)。
 
    鲸鸿动能广告平台收到转化数据后，转化指标的转化状态会自动变为”已启用“（一般需要3-10分钟），您可以在报表中查看应用的相关转化数据。
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "AppStorage存了对象之后里面的值取不出来，什么原因"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-462
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-462
 ---
 
 
@@ -15,4 +15,4 @@ AppStorage结合PersistentStorage实现持久化存储UI状态时，可以存储
 
 **参考链接**
 
-[PersistentStorage：持久化存储UI状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage#限制条件)
+[PersistentStorage：持久化存储UI状态](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-persiststorage#限制条件)

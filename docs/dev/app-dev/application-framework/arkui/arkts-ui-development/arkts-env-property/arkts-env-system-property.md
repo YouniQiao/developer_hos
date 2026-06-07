@@ -1,6 +1,6 @@
 ---
 title: "@Env：环境变量"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-env-system-property
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-env-property/arkts-env-system-property
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/e978602d.png)
 
-从API version 22开始，@Env支持在[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)和[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)中使用。
+从API version 22开始，@Env支持在[@Component](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#component)和[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)中使用。
 
 从API version 22开始，该装饰器支持在元服务中使用。
 
@@ -24,7 +24,7 @@ format: md
   + [SystemProperties.WINDOW\_AVOID\_AREA23+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-env-system-property#systemproperties)，用于获取窗口的避让区域信息，单位为vp。
   + [SystemProperties.WINDOW\_AVOID\_AREA\_PX23+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-env-system-property#systemproperties)，用于获取窗口的避让区域信息，单位为px。
 * 系统环境变量改变时，通知@Env装饰的变量更新，并触发@Env关联组件刷新，以实现界面内容的同步更新。
-* @Env装饰的变量不允许开发者初始化。@Env会返回给开发者可观察的环境变量类（由[@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)装饰，且其由属性[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)装饰）的实例。开发者如果想监听环境变量的变化，可以使用[addMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-addmonitor-clearmonitor)，具体示例见[在@ComponentV2中使用@Env](#在componentv2中使用env)。
+* @Env装饰的变量不允许开发者初始化。@Env会返回给开发者可观察的环境变量类（由[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)装饰，且其由属性[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)装饰）的实例。开发者如果想监听环境变量的变化，可以使用[addMonitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor)，具体示例见[在@ComponentV2中使用@Env](#在componentv2中使用env)。
 
 ## @Env支持参数
 
@@ -32,13 +32,13 @@ format: md
 
 ## @Env和Environment能力对比
 
-@Env和[Environment](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment)都是系统环境变量相关，但两者能力有较大的不同，具体能力对比见下表。
+@Env和[Environment](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-environment)都是系统环境变量相关，但两者能力有较大的不同，具体能力对比见下表。
 
 | 能力 | @Env | Environment |
 | --- | --- | --- |
 | 起始API version | 从API version 22开始支持。 | 从API version 7开始支持。 |
-| 支持参数 | [SystemProperties的枚举值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-env-system-property#systemproperties) | 支持languageCode等参数，详情见[Environment内置参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment#environment内置参数)。 |
-| 使用形式 | @Env为装饰器，可声明在@Component或@ComponentV2中，获取对应参数的环境变量信息。 | 通过[envProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management#envprop10)等接口获取当前应用的环境变量，并存入[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)中，开发者可通过AppStorage的接口访问系统环境变量的值，具体例子见[从ui中访问environment参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment#从ui中访问environment参数)。 |
+| 支持参数 | [SystemProperties的枚举值](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-env-system-property#systemproperties) | 支持languageCode等参数，详情见[Environment内置参数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-environment#environment内置参数)。 |
+| 使用形式 | @Env为装饰器，可声明在@Component或@ComponentV2中，获取对应参数的环境变量信息。 | 通过[envProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management#envprop10)等接口获取当前应用的环境变量，并存入[AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage)中，开发者可通过AppStorage的接口访问系统环境变量的值，具体例子见[从ui中访问environment参数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-environment#从ui中访问environment参数)。 |
 | 是否有响应式能力 | 有，当系统环境变量变化时，会通知@Env装饰的环境变量的改变，并通知@Env关联组件刷新。 | 无，系统环境变量变化时，不会通知Environment改变。 |
 
 ## 限制条件
@@ -291,10 +291,10 @@ struct GrandChild2 {
 
 下面的例子中：
 
-* 在@ComponentV2中声明@Env，获取当前@ComponentV2组件创建时所在窗口尺寸的布局断点信息，并用[addMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-addmonitor-clearmonitor)监听this.breakpoint的属性的变化。
-* 在@ComponentV2中声明@Env，获取当前@ComponentV2组件创建时所在窗口的大小信息，单位为vp，并用[addMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-addmonitor-clearmonitor)监听this.sizeInVP的属性的变化。
-* 在@ComponentV2中声明@Env，获取当前@ComponentV2组件创建时所在窗口的大小信息，单位为px，并用[addMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-addmonitor-clearmonitor)监听this.sizeInPX的属性的变化。
-* 将@Env装饰的变量传递给CompV2中[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)装饰的变量和Comp中的常规变量。
+* 在@ComponentV2中声明@Env，获取当前@ComponentV2组件创建时所在窗口尺寸的布局断点信息，并用[addMonitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor)监听this.breakpoint的属性的变化。
+* 在@ComponentV2中声明@Env，获取当前@ComponentV2组件创建时所在窗口的大小信息，单位为vp，并用[addMonitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor)监听this.sizeInVP的属性的变化。
+* 在@ComponentV2中声明@Env，获取当前@ComponentV2组件创建时所在窗口的大小信息，单位为px，并用[addMonitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor)监听this.sizeInPX的属性的变化。
+* 将@Env装饰的变量传递给CompV2中[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)装饰的变量和Comp中的常规变量。
 * 点击Button('Landscape')和Button('Portrait')切换横竖屏，Index、CompV2和Comp关联组件进行对应的刷新，orientationChange被触发监听回调。
 
 ```
@@ -496,7 +496,7 @@ struct Comp {
    * ComponentUnderBuilderNode在被挂载到新的窗口下时，会触发@Env重新获取新的环境变量。
    * @Env重新获取新的环境变量后，触发其关联组件的刷新。其中ComponentUnderBuilderNode中@Env(SystemProperties.BREAK\_POINT) breakpoint: uiObserver.WindowSizeLayoutBreakpointInfo会通知CompV2内的@Param breakpoint刷新，但是并不会通知Comp内的常规变量breakpoint触发UI刷新。所以在切换窗口，@Env重新获取环境变量的场景下，建议开发者不要将@Env传递给常规变量，以避免常规变量不能被通知UI刷新的问题。
 
-下面的示例包含了创建子窗的流程，具体可参考[管理应用窗口（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage)。
+下面的示例包含了创建子窗的流程，具体可参考[管理应用窗口（Stage模型）](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage)。
 
 ```
 // EntryAbility.ets

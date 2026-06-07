@@ -1,6 +1,6 @@
 ---
 title: "请求"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-request
+original_url: /docs/dev/atomic-dev/ascf/apis-network/apis-request
 format: md
 ---
 
@@ -15,13 +15,13 @@ has.request(Object object): RequestTask
 
 ![](./img/4dee19de.png)
 
-开发者服务器接口地址，必须是https协议，并在AGC完成[服务器域名配置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)。
+开发者服务器接口地址，必须是https协议，并在AGC完成[服务器域名配置](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。
 
 **起始版本：** 1.0.0
 
 **需要权限：** 在module.json5中声明**ohos.permission.INTERNET**。
 
-**注意事项**：在调用此接口前，需要先完成[配置服务器域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)。
+**注意事项**：在调用此接口前，需要先完成[配置服务器域名](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。
 
 **参数：**
 

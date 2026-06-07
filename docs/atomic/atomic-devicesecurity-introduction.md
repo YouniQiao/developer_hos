@@ -1,6 +1,6 @@
 ---
 title: "Device Security Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-introduction
+original_url: /docs/dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-introduction
 format: md
 ---
 
@@ -27,10 +27,10 @@ Device Security Kit（设备安全服务）提供应用设备状态检测（Devi
 
 | 场景 | 国家/地区 |
 | --- | --- |
-| 应用设备状态检测 | 请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-appendix-region)。 |
+| 应用设备状态检测 | 请参见[支持的国家/地区](/docs/dev/atomic-dev/atomic-devicesecurity-appendix/atomic-devicesecurity-appendix-region)。 |
 | 安全检测-系统完整性检测 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
 | 安全检测-URL检测 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
-| 安全检测-本地系统完整性检测 | 请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-appendix-region)。 |
+| 安全检测-本地系统完整性检测 | 请参见[支持的国家/地区](/docs/dev/atomic-dev/atomic-devicesecurity-appendix/atomic-devicesecurity-appendix-region)。 |
 | 安全检测-系统完整性增强检测 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
 | 可信应用服务 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
 

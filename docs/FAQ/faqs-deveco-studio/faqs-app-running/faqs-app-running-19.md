@@ -1,7 +1,7 @@
 ---
 format: md
 title: "DevEco Studio修改文件后点击run，一直没成功跑起来，run按钮一直处于禁用状态（Mac环境）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-19
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-19
 ---
 
 

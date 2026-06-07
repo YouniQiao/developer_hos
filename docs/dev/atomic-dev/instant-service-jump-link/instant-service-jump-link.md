@@ -1,6 +1,6 @@
 ---
 title: "获取跳转链接"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-jump-link
+original_url: /docs/dev/atomic-dev/instant-service-jump-link/instant-service-jump-link
 format: md
 ---
 

@@ -1,15 +1,15 @@
 ---
 title: "hitrace"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitrace
+original_url: /docs/dev/app-dev/system/hitrace
 format: md
 ---
 
 
-hitrace命令行工具提供trace信息采集能力，支持采集系统提供的打点和开发者使用[HitraceMeter接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-intro)在应用中设置的打点。该工具支持多种方式采集文本格式或二进制格式的trace信息，帮助开发者观测程序运行情况和定位故障问题。
+hitrace命令行工具提供trace信息采集能力，支持采集系统提供的打点和开发者使用[HitraceMeter接口](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-intro)在应用中设置的打点。该工具支持多种方式采集文本格式或二进制格式的trace信息，帮助开发者观测程序运行情况和定位故障问题。
 
 ## 环境要求
 
-* 根据hdc命令行工具指导，完成[hdc环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)。
+* 根据hdc命令行工具指导，完成[hdc环境准备](/docs/dev/app-dev/system/hdc#环境准备)。
 * 确保设备已正常连接，并执行hdc shell。
 
 ## 命令行说明
@@ -111,7 +111,7 @@ hitrace -l
 | accessibility | 用户态trace标签，无障碍软件服务管理器。 |
 | ace | 用户态trace标签，ArkUI跨平台引擎开发框架。 |
 | animation | 用户态trace标签，动画模块。 |
-| app | 用户态trace标签，应用模块。通过[HiTraceMeter](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-intro)接口做的trace打点属于app tag。 |
+| app | 用户态trace标签，应用模块。通过[HiTraceMeter](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-intro)接口做的trace打点属于app tag。 |
 | ark | 用户态trace标签，Ark模块。 |
 | account | 用户态trace标签，账户管理器。 |
 | binder | 内核态trace标签，binder通信内核信息。 |

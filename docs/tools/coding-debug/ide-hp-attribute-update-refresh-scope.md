@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkui-use-attributeUpdater-control-refresh-scope"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hp-attribute-update-refresh-scope
+original_url: /docs/tools/coding-debug/ide-hp-attribute-update-refresh-scope
 format: md
 ---
 

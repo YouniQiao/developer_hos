@@ -1,6 +1,6 @@
 ---
 title: "内存泄漏定制能力开放使用指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-malloc-dispatch-table
+original_url: /docs/quality/malloc-dispatch-table
 ---
 
 # 内存泄漏定制能力开放使用指导
@@ -23,7 +23,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-m
 
 MallocDispatchTable简称内存分配表，提供对HarmonyOS [libc标准库](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/musl)中的malloc、calloc、realloc、free等内存操作系列函数的Hook能力。此能力可用于跟踪应用的内存分配/释放信息，辅助内存泄漏问题快速定界定位。
 
-注：内存基础知识参考文档：[内存基础知识](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-memory-basic-knowledge#section085818715389)。
+注：内存基础知识参考文档：[内存基础知识](/docs/quality/memory-basic-knowledge#section085818715389)。
 
 ### MallocDispatchTable的Hook流程
 
@@ -134,13 +134,13 @@ MallocDispatchTable简称内存分配表，提供对HarmonyOS [libc标准库](ht
 
 具体限制如下：
 
-1. 无法通过GWP-ASan功能进行内存越界检测。GWP-ASan 的工作原理详见文档：[GWP-ASan检测原理](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-principle#section555616291854)。
-2. 无法通过使用[native hook插件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiprofiler#native-hook插件)对该应用程序进行函数调用栈捕获。
+1. 无法通过GWP-ASan功能进行内存越界检测。GWP-ASan 的工作原理详见文档：[GWP-ASan检测原理](/docs/quality/stability-address-sanitizer-principle#section555616291854)。
+2. 无法通过使用[native hook插件](/docs/dev/app-dev/system/hiprofiler#native-hook插件)对该应用程序进行函数调用栈捕获。
 
 ![](./img/93b242a8.png)
 
 1. 禁止在自定义方法中调用[libc标准库](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/musl)内存操作函数（malloc/free/mmap/munmap），否则会导致死循环。
-2. 禁止在自定义malloc方法中使用[hilog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog)进行日志打印，否则会导致死锁问题。
+2. 禁止在自定义malloc方法中使用[hilog](/docs/dev/app-dev/system/hilog)进行日志打印，否则会导致死锁问题。
 
 ## 示例代码
 

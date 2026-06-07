@@ -1,6 +1,6 @@
 ---
 title: "功耗检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-detection
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/power-detection
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 如需了解如何使用HiAppEvent提供订阅CPU高负载事件，请参考以下文档。目前仅提供ArkTS接口。
 
-* [订阅CPU高负载事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-cpu-usage-high-arkts)
+* [订阅CPU高负载事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-arkts)
 
 ## 实现原理
 
@@ -33,20 +33,20 @@ CPU高负载事件存在以下场景：
 
 线程CPU高负载异常：单应用默认一天只抓取1次采样栈。
 
-相关配置可自定义，详见[自定义参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-cpu-usage-high-event#自定义参数)。
+相关配置可自定义，详见[自定义参数](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-event#自定义参数)。
 
 ## 日志规格
 
-在订阅事件开发步骤的最后一步中，获取到系统事件数据的处理日志后（详细流程见：[订阅CPU高负载事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-cpu-usage-high-arkts)），可通过查找日志中“external\_log”记录的故障日志文件路径，得到故障日志。例如：
+在订阅事件开发步骤的最后一步中，获取到系统事件数据的处理日志后（详细流程见：[订阅CPU高负载事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-arkts)），可通过查找日志中“external\_log”记录的故障日志文件路径，得到故障日志。例如：
 
 ```
 HiAppEvent eventInfo={"domain":"OS","name":"CPU_USAGE_HIGH","eventType":1,"params":{"begin_time":1765959898079,"bundle_name":"com.xpower.test","bundle_version":"1.0.0","end_time":1765959958079,"external_log":["/data/storage/el2/log/hiappevent/CPU_USAGE_HIGH_1765959959260_0.log"],"fault_type":3,"foreground":true,"log_over_limit":false,"threads":[{"name":"WorkerThread","tid":29164,"usage":72}],"time":1765959959257,"usage":72}}
 ```
 
-上述eventInfo中的各字段详细说明见：[事件字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-cpu-usage-high-event#事件字段说明)。
+上述eventInfo中的各字段详细说明见：[事件字段说明](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-event#事件字段说明)。
 
 其中external\_log记录故障日志的路径，在路径下可获取到故障日志。
 
-调用栈故障日志是触发故障时当前故障线程的调用链堆栈信息。调用栈故障日志格式及说明详见：[一般故障场景日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#一般故障场景日志规格)中的“调用栈帧内容说明”。
+调用栈故障日志是触发故障时当前故障线程的调用链堆栈信息。调用栈故障日志格式及说明详见：[一般故障场景日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#一般故障场景日志规格)中的“调用栈帧内容说明”。
 
-采样栈故障日志是主动采集的perf日志。采样栈故障日志格式及说明详见：[日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines#日志规格)中的“采样栈规格”。
+采样栈故障日志是主动采集的perf日志。采样栈故障日志格式及说明详见：[日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines#日志规格)中的“采样栈规格”。

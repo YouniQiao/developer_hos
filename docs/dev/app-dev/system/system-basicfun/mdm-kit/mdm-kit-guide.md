@@ -1,15 +1,15 @@
 ---
 title: "MDM Kit开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-guide
+original_url: /docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-guide
 format: md
 ---
 
 
 ## 功能介绍
 
-MDM Kit为[MDM应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#mdm应用设备管理应用)提供设备管理能力，包括企业设备管理与事件监听、应用管理、禁用管理、安全管理、设备设置、设备控制、设备信息获取、硬件外设管理、系统管理、网络通信管理等，具体API接口说明详见[API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/mdm-arkts)。
+MDM Kit为[MDM应用](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#mdm应用设备管理应用)提供设备管理能力，包括企业设备管理与事件监听、应用管理、禁用管理、安全管理、设备设置、设备控制、设备信息获取、硬件外设管理、系统管理、网络通信管理等，具体API接口说明详见[API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/mdm-arkts)。
 
-设备管理应用：具备[企业设备管理扩展能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-admin)的应用。
+设备管理应用：具备[企业设备管理扩展能力](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-admin)的应用。
 
 ## 开发步骤
 
@@ -27,15 +27,15 @@ MDM Kit为[MDM应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-gui
 
 * [注册成为企业开发者](https://developer.huawei.com/consumer/cn/doc/start/registration-and-verification-0000001053628148)。
 * [创建项目](https://developer.huawei.com/consumer/cn/doc/app/agc-help-createproject-0000001100334664)和[创建应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-createapp-0000001146718717)。
-* [申请MDM应用的证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-mdm-cert-0000002283256801)和[Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-mdm-profile-0000002248341094)。
+* [申请MDM应用的证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-enterprise-mdm-cert-0000002283256801)和[Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-enterprise-mdm-profile-0000002248341094)。
 
 ### 创建EnterpriseAdminExtensionAbility
 
-请参阅[EnterpriseAdminExtensionAbility开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-admin)完成EnterpriseAdminExtensionAbility的创建。
+请参阅[EnterpriseAdminExtensionAbility开发指南](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-admin)完成EnterpriseAdminExtensionAbility的创建。
 
 ### 声明接口所需权限
 
-在申请权限前，请保证符合[权限使用的基本原则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限使用的基本原则)。然后在工程Module对应的[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)配置文件中"requestPermissions"标签下声明要使用的接口所需的权限。例如：
+在申请权限前，请保证符合[权限使用的基本原则](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限使用的基本原则)。然后在工程Module对应的[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)配置文件中"requestPermissions"标签下声明要使用的接口所需的权限。例如：
 
 ```
 "requestPermissions": [

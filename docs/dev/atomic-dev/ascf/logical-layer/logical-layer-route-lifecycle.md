@@ -1,6 +1,6 @@
 ---
 title: "路由和生命周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-route-lifecycle
+original_url: /docs/dev/atomic-dev/ascf/logical-layer/logical-layer-route-lifecycle
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 | Tab切换 | 页面全部出栈，只留下新的Tab页面。 |
 | 重加载 | 页面全部出栈，只留下新的页面。 |
 
-开发者可以使用[getCurrentPages()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-page#getcurrentpages) 函数获取当前页面栈。
+开发者可以使用[getCurrentPages()](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-page#getcurrentpages) 函数获取当前页面栈。
 
 ## 路由和页面生命周期
 
@@ -69,4 +69,4 @@ format: md
 | has.navigateTo | 保留当前页面，跳转到应用内的某个页面。但是不能跳转到tabBar页面。使用 has.navigateBack 可以返回到原页面。 |
 | has.navigateBack | 关闭当前页面，返回上一页面或多级页面。 |
 
-详细接口参数请参考对应的[API文档](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-router)。
+详细接口参数请参考对应的[API文档](/docs/dev/atomic-dev/ascf/apis/apis-router)。

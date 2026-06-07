@@ -1,7 +1,7 @@
 ---
 title: "政策介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-bonus-global_ocpd-overview-0000001627128700
+original_url: /docs/monetize/promotion/bp-bonus-global_ocpd-overview-0000001627128700
 format: md
 ---
 

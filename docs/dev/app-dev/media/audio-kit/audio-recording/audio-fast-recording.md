@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "低时延音频录制(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-fast-recording
+original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/audio-fast-recording
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 
 ### 简介
 
-为使用低时延模式，开发者需要参考[推荐使用OHAudio开发音频录制功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording)进行音频开发。
+为使用低时延模式，开发者需要参考[推荐使用OHAudio开发音频录制功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording)进行音频开发。
 
 当前OHAudio支持两种模式：普通模式（AUDIOSTREAM\_LATENCY\_MODE\_NORMAL）和低时延模式（AUDIOSTREAM\_LATENCY\_MODE\_FAST）。
 
@@ -73,7 +73,7 @@ OH_AudioStreamBuilder_SetLatencyMode(builder, latencyMode);
 
 音频录制的音频数据需要通过回调接口读入。开发者要实现回调接口，使用[OH\_AudioStreamBuilder\_SetCapturerReadDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setcapturerreaddatacallback)设置回调函数，在设置音频回调函数时，回调函数[OH\_AudioCapturer\_OnReadDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_onreaddatacallback)（从API version 12开始支持）用于读取音频数据。
 
-开发音频录制功能的示例代码请参考：[推荐使用OHAudio开发音频录制功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording)。
+开发音频录制功能的示例代码请参考：[推荐使用OHAudio开发音频录制功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording)。
 
 设置数据回调函数示例：
 

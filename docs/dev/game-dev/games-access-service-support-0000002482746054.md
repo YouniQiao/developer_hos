@@ -1,6 +1,6 @@
 ---
 title: "华为服务技术支持"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-access-service-support-0000002482746054
+original_url: /docs/dev/game-dev/games-access-service-support-0000002482746054
 format: md
 ---
 

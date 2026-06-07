@@ -1,7 +1,7 @@
 ---
 title: 平板
 sidebar_label: 平板
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/pad-0000001823654157
+original_url: /docs/design/multi-device-design/pad
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 
 ## 保证基础体验
 
-在应用/服务设计中需要遵守一些基础体验要求，如果不满足这些基础要求，则会极大损害用户的使用体验。例如，如果界面元素的响应热区太小会导致用户很难操作成功，从而无法完成要操作的任务。具体要求请参阅[应用 UX 体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001760867048)。
+在应用/服务设计中需要遵守一些基础体验要求，如果不满足这些基础要求，则会极大损害用户的使用体验。例如，如果界面元素的响应热区太小会导致用户很难操作成功，从而无法完成要操作的任务。具体要求请参阅[应用 UX 体验标准](/docs/design/ux-standards/overview)。
 
 ## 设计应用和服务体验
 
@@ -97,17 +97,17 @@ format: md
 
 ### 系统特性
 
-* [导航条](https://developer.huawei.com/consumer/cn/doc/design-guides/navigation-0000001957075737)
-* [通知](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217)
-* [实况窗](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861)
-* [多窗口交互](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-multi-window-interaction-0000001795392917)
-* [画中画](https://developer.huawei.com/consumer/cn/doc/design-guides/pip-0000001927422624)
-* [深色模式](https://developer.huawei.com/consumer/cn/doc/design-guides/dark-mode-0000001823255497)
-* [状态栏](https://developer.huawei.com/consumer/cn/doc/design-guides/status-bar-0000001776775568)
-* [播控中心](https://developer.huawei.com/consumer/cn/doc/design-guides/broadcasting-control-0000001957017133)
+* [导航条](/docs/design/system-features/features/navigation-bar)
+* [通知](/docs/design/system-features/features/notification)
+* [实况窗](/docs/design/system-features/features/live-view)
+* [多窗口交互](/docs/design/system-features/features/multi-window)
+* [画中画](/docs/design/system-features/features/pip)
+* [深色模式](/docs/design/system-features/features/dark-mode)
+* [状态栏](/docs/design/system-features/features/status-bar)
+* [播控中心](/docs/design/system-features/features/broadcasting-control)
 
 ### 人机交互
 
-* [触屏手势](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touchscreen-0000001928273206)
-* [键盘](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-keyboard-0000001928070488)
-* [鼠标](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-mouse-0000001930021626)
+* [触屏手势](/docs/design/hmi/touchscreen)
+* [键盘](/docs/design/hmi/keyboard)
+* [鼠标](/docs/design/hmi/mouse)

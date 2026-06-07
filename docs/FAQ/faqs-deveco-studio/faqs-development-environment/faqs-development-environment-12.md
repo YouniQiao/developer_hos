@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ohpm-repo是否支持对HSP包的管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-12
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-12
 ---
 
 

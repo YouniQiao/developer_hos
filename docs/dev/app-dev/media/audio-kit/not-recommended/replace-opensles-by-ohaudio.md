@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "从OpenSL ES切换到OHAudio(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/replace-opensles-by-ohaudio
+original_url: /docs/dev/app-dev/media/audio-kit/not-recommended/replace-opensles-by-ohaudio
 format: md
 ---
 

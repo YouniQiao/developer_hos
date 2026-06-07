@@ -1,7 +1,7 @@
 ---
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-introduction-0000001417792237
+original_url: /docs/monetize/promotion/bp-functions-load-recall-introduction-0000001417792237
 format: md
 ---
 

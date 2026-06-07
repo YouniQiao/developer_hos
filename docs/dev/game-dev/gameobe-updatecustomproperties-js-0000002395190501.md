@@ -1,6 +1,6 @@
 ---
 title: "更新玩家自定义属性"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-updatecustomproperties-js-0000002395190501
+original_url: /docs/dev/game-dev/gameobe-updatecustomproperties-js-0000002395190501
 format: md
 ---
 

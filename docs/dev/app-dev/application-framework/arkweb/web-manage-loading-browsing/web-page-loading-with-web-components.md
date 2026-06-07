@@ -1,13 +1,13 @@
 ---
 title: "使用Web组件加载页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-page-loading-with-web-components
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-page-loading-with-web-components
 format: md
 ---
 
 
 页面加载是Web组件的基本功能。根据页面加载数据来源可以分为三种常用场景，包括加载网络页面、加载本地页面、加载HTML格式的富文本数据。
 
-页面加载过程中，若涉及网络资源获取，请在module.json5中配置网络访问权限，添加方法请参考[在配置文件中声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#在配置文件中声明权限)。
+页面加载过程中，若涉及网络资源获取，请在module.json5中配置网络访问权限，添加方法请参考[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。
 
 ```
 "requestPermissions":[
@@ -19,7 +19,7 @@ format: md
 
 ## 加载网络页面
 
-开发者可以在Web组件创建时，指定默认加载的网络页面。在默认页面加载完成后，如果需要变更此Web组件显示的网络页面，可以通过调用[loadUrl()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#loadurl)接口加载指定的网页。[Web组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web)的第一个参数变量src不能通过状态变量（例如：[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)）动态更改地址，如需更改，请通过[loadUrl()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#loadurl)重新加载。
+开发者可以在Web组件创建时，指定默认加载的网络页面。在默认页面加载完成后，如果需要变更此Web组件显示的网络页面，可以通过调用[loadUrl()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#loadurl)接口加载指定的网页。[Web组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web)的第一个参数变量src不能通过状态变量（例如：[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)）动态更改地址，如需更改，请通过[loadUrl()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#loadurl)重新加载。
 
 在下面的示例中，在Web组件加载完“www.example.com”页面后，开发者可通过loadUrl接口将此Web组件显示页面变更为“www.example1.com”。
 
@@ -190,7 +190,7 @@ struct WebComponent {
 
 2. 修改EntryAbility.ets文件。
 
-   以filesDir为例，获取沙箱路径。若想获取其他路径，请参考[应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)。
+   以filesDir为例，获取沙箱路径。若想获取其他路径，请参考[应用文件路径](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取应用文件路径)。
 
    ```
    // xxx.ets

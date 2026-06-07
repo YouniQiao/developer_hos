@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何将内容直接复制到剪贴板"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-308
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-308
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "卸载洞察"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-insight-0000001367192288
+original_url: /docs/monetize/promotion/bp-functions-load-recall-insight-0000001367192288
 format: md
 ---
 

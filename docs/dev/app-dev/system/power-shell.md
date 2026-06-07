@@ -1,6 +1,6 @@
 ---
 title: "power-shell工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-shell
+original_url: /docs/dev/app-dev/system/power-shell
 format: md
 ---
 
@@ -9,7 +9,7 @@ power-shell是实现设备电源状态转换等功能的工具，为开发者提
 
 ## 环境要求
 
-开发者在使用本工具前需开启开发者模式，且需要获取[hdc工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)，执行hdc shell。
+开发者在使用本工具前需开启开发者模式，且需要获取[hdc工具](/docs/dev/app-dev/system/hdc)，执行hdc shell。
 
 ## power-shell命令工具列表
 

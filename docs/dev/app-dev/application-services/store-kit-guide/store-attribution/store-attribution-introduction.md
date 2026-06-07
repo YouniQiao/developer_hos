@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-introduction
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-introduction
 format: md
 ---
 
@@ -18,11 +18,11 @@ format: md
 
 | 序号 | 任务 | 详情 |
 | --- | --- | --- |
-| 1 | [注册归因角色](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-register#注册归因角色) | 应用生态伙伴通过应用归因服务云侧注册归因角色并完成其信息的配置，包括：名称、回传地址（用于接收归因结果回传的URL）、公钥。注册成功后平台生成归因角色ID。应用生态伙伴指：开发者、分发平台、归因监测平台。 |
-| 2 | [登记归因来源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-developmentguide#登记归因来源) | 媒体App、分发平台通过调用[registerSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-attributionmanager#attributionmanagerregistersource)接口登记归因来源（曝光/点击）。 |
-| 3 | [登记归因转化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-developmentguide#登记归因转化) | 开发者App、归因监测平台通过调用[registerTrigger](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-attributionmanager#attributionmanagerregistertrigger)接口登记归因转化事件。 |
-| 4 | [归因结果回传](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-receive) | 应用归因服务将归因结果通过回传地址回传至应用生态伙伴。 |
-| 5 | [接入调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-test) | 应用归因服务提供接入调试功能，开发者通过调用调试接口验证接入的准确性及归因结果回传等基础能力。 |
+| 1 | [注册归因角色](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-register#注册归因角色) | 应用生态伙伴通过应用归因服务云侧注册归因角色并完成其信息的配置，包括：名称、回传地址（用于接收归因结果回传的URL）、公钥。注册成功后平台生成归因角色ID。应用生态伙伴指：开发者、分发平台、归因监测平台。 |
+| 2 | [登记归因来源](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-developmentguide#登记归因来源) | 媒体App、分发平台通过调用[registerSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-attributionmanager#attributionmanagerregistersource)接口登记归因来源（曝光/点击）。 |
+| 3 | [登记归因转化](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-developmentguide#登记归因转化) | 开发者App、归因监测平台通过调用[registerTrigger](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-attributionmanager#attributionmanagerregistertrigger)接口登记归因转化事件。 |
+| 4 | [归因结果回传](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-receive) | 应用归因服务将归因结果通过回传地址回传至应用生态伙伴。 |
+| 5 | [接入调试](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-test) | 应用归因服务提供接入调试功能，开发者通过调用调试接口验证接入的准确性及归因结果回传等基础能力。 |
 
 ## 约束与限制
 

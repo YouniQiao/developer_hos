@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/no-empty-function"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-empty-function
+original_url: /docs/tools/coding-debug/ide_no-empty-function
 format: md
 ---
 

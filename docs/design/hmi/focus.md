@@ -1,7 +1,7 @@
 ---
 title: 焦点导航
 sidebar_label: 焦点导航
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus-0000001748650376
+original_url: /docs/design/hmi/focus
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "CPU密集型任务开发指导 (TaskPool和Worker)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cpu-intensive-task-development
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/cpu-intensive-task-development
 format: md
 ---
 

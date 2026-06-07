@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "证书链在线校验证书吊销状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-cerchainvalidator-revocation-object
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-cerchainvalidator-revocation-object
 format: md
 ---
 

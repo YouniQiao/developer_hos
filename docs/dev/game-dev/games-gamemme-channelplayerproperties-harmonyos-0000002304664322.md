@@ -1,6 +1,6 @@
 ---
 title: "自定义玩家属性"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channelplayerproperties-harmonyos-0000002304664322
+original_url: /docs/dev/game-dev/games-gamemme-channelplayerproperties-harmonyos-0000002304664322
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
+* 您已[集成游戏多媒体SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
 
 ## 设置玩家属性
 

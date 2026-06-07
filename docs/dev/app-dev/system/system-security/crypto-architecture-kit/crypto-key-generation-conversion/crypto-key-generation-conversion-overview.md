@@ -1,6 +1,6 @@
 ---
 title: "密钥生成与转换介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion-overview
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-overview
 format: md
 ---
 

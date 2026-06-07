@@ -1,7 +1,7 @@
 ---
 title: "下载安装体验描述"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_appendices_installfaq-0000001357798925
+original_url: /docs/monetize/monetization/agd_pro_api_appendices_installfaq-0000001357798925
 format: md
 ---
 

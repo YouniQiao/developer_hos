@@ -1,7 +1,7 @@
 ---
 title: 简洁高级
 sidebar_label: 简洁高级
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900424082
+original_url: /docs/design/atomic-service-design/design-principles/concise
 format: md
 ---
 

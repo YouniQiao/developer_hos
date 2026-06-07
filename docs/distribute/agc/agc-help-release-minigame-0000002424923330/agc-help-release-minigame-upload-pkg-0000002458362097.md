@@ -1,6 +1,6 @@
 ---
 title: "上传软件包"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-upload-pkg-0000002458362097
+original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-upload-pkg-0000002458362097
 format: md
 ---
 
@@ -9,11 +9,11 @@ format: md
 
 #### 前提条件
 
-确保小游戏软件包已符合上架要求。软件包要求请参见[准备游戏软件包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-prepare-0000002424763490#section24731651195720)。
+确保小游戏软件包已符合上架要求。软件包要求请参见[准备游戏软件包](/docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-prepare-0000002424763490#section24731651195720)。
 
 ![](../img/agc-help-release-minigame-upload-pkg-0000002458362097_0.png)
 
-请确保小游戏已申请[JSVM权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-acl-and-ability-0000002425276004#section13637635175211)和[存储空间管理服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-acl-and-ability-0000002425276004#section17374114165216)，并且待上架软件包内已配置相关权限信息.。
+请确保小游戏已申请[JSVM权限](/docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-acl-and-ability-0000002425276004#section13637635175211)和[存储空间管理服务](/docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-acl-and-ability-0000002425276004#section17374114165216)，并且待上架软件包内已配置相关权限信息.。
 
 #### 操作步骤
 

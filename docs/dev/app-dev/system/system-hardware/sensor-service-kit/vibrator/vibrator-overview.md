@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "振动开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vibrator-overview
+original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/vibrator/vibrator-overview
 format: md
 ---
 

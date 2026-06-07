@@ -1,6 +1,6 @@
 ---
 title: "绑定手势方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-binding
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-binding
 format: md
 ---
 

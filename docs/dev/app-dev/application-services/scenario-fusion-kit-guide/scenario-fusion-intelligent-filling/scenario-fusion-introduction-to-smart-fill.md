@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "智能填充概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-to-smart-fill
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-to-smart-fill
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 ### 接入须知
 
 * 智能填充服务仅提供给[已完成认证的企业开发者](https://developer.huawei.com/consumer/cn/doc/start/edrna-0000001062678489)使用。
-* 智能填充支持的填充字段满足应用使用智能填充的业务场景需求。字段请参考[ContentType使用场景说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-appendix)。
+* 智能填充支持的填充字段满足应用使用智能填充的业务场景需求。字段请参考[ContentType使用场景说明](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-appendix)。
 
 ### 接入操作
 
@@ -30,7 +30,7 @@ format: md
    ![](./img/08a687e9.png)
 4. 在“新建业务申请”窗口填写申请原因，选择上传附件，然后点击“提交”。
 
-   * 申请原因：请详细描述使用**智能填充的具体场景**。（例如：\*\*\*应用是\*\*\*（应用简介），希望在\*\*\*场景中使用智能填充\*\*\*字段信息，以提升用户表单填写效率。）字段信息请参考[ContentType使用场景说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-appendix)。
+   * 申请原因：请详细描述使用**智能填充的具体场景**。（例如：\*\*\*应用是\*\*\*（应用简介），希望在\*\*\*场景中使用智能填充\*\*\*字段信息，以提升用户表单填写效率。）字段信息请参考[ContentType使用场景说明](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-appendix)。
    * 上传附件：提供接入智能填充场景的页面图片或视频。
 
    ![](./img/80bd2496.png)
@@ -52,14 +52,14 @@ format: md
 
 ![](./img/bfd4279b.png)
 
-* 应用/元服务的输入组件的[ContentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-appendix)属性配置对应场景，即可触发智能填充功能。
+* 应用/元服务的输入组件的[ContentType](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-appendix)属性配置对应场景，即可触发智能填充功能。
 * 设备已连接互联网。
 
 ## 表单智能填充
 
 ### 表单填充推荐场景
 
-点击表单中任一配置了ContentType属性的输入组件，将在其下方弹窗展示推荐的填充数据，填充数据来源请参考[推荐数据源及推荐逻辑说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-explain)。
+点击表单中任一配置了ContentType属性的输入组件，将在其下方弹窗展示推荐的填充数据，填充数据来源请参考[推荐数据源及推荐逻辑说明](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-explain)。
 
 * 点击表单中ContentType为“PERSON\_FULL\_NAME”（姓名）或“PERSON\_LAST\_NAME”（姓氏）、“PERSON\_FIRST\_NAME”（名字）的输入组件时，将同时推荐表单中其他ContentType类型的数据（以下统称多输入框场景）。
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "关于通知消息被频控的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-5
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-5
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 | 场景 | 频控规则 |
 | --- | --- |
-| 通知消息 | **若您未申请通知消息自分类权益，则推送的通知消息默认为资讯营销类（category取值为MARKETING）消息**，根据[通知消息推送数量管理规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#通知消息推送数量管理规则)限制单设备单应用下每个自然日，限制推送数量为2条或5条。若您仅需发送资讯营销类消息，则无需申请通知消息自分类权益；若您需要发送服务与通讯类消息，需要先开通[自分类权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请通知消息自分类权益)。 |
+| 通知消息 | **若您未申请通知消息自分类权益，则推送的通知消息默认为资讯营销类（category取值为MARKETING）消息**，根据[通知消息推送数量管理规则](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#通知消息推送数量管理规则)限制单设备单应用下每个自然日，限制推送数量为2条或5条。若您仅需发送资讯营销类消息，则无需申请通知消息自分类权益；若您需要发送服务与通讯类消息，需要先开通[自分类权益](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#申请通知消息自分类权益)。 |
 | 卡片刷新消息 | 应用每个设备单个卡片已上架为2条/天，未上架为5条/天。 |
 | 实况窗消息 | 单个实况窗消息每个设备每5分钟最多更新10次，每小时最多更新60次。  出行打车与赛事比分场景，5分钟最多更新30次，每小时最多更新180次。 |
 
@@ -34,7 +34,7 @@ format: md
 
 若场景化消息超出对应的频控规则限制，Push Kit将向您的回执服务器返回**256结果码**。
 
-频控规则详情请参见[消息频控](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-msg-freq-control)，回执状态码详情请参考[回执状态码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt#回执状态码)。
+频控规则详情请参见[消息频控](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-msg-freq-control)，回执状态码详情请参考[回执状态码](/docs/dev/app-dev/application-services/push-kit-guide/push-server/push-msg-receipt#回执状态码)。
 
 ## 使用REST API接口单次推送消息可携带的Push Token数量是多少？
 

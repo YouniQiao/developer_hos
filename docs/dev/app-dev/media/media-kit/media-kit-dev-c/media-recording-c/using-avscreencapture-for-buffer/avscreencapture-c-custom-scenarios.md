@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AVScreenCapture录屏自定义场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avscreencapture-c-custom-scenarios
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-c-custom-scenarios
 format: md
 ---
 
@@ -71,8 +71,8 @@ OH_AVScreenCapture_SetCaptureStrategy(capture, strategy);
 
 使用麦克风录制，需要：
 
-* 配置麦克风权限ohos.permission.MICROPHONE，配置方式请参见[向用户申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
-* 申请长时任务，申请方式请参见[申请长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)。
+* 配置麦克风权限ohos.permission.MICROPHONE，配置方式请参见[向用户申请权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
+* 申请长时任务，申请方式请参见[申请长时任务](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)。
 
 ```
 bool isMic = true;

@@ -1,6 +1,6 @@
 ---
 title: "内容动态变化场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-dynamic-content-change
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-dynamic-content-change
 format: md
 ---
 

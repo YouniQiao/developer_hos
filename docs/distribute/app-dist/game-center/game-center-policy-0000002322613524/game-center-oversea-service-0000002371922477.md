@@ -1,7 +1,7 @@
 ---
 title: "国际游戏联运服务"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-oversea-service-0000002371922477
+original_url: /docs/distribute/app-dist/game-center/game-center-policy-0000002322613524/game-center-oversea-service-0000002371922477
 format: md
 ---
 

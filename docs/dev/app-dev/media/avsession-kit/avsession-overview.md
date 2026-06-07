@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AVSession Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-overview
+original_url: /docs/dev/app-dev/media/avsession-kit/avsession-overview
 format: md
 ---
 
@@ -11,7 +11,7 @@ AVSession Kit（Audio & Video Session Kit，音视频播控服务）是系统提
 ## 能力范围
 
 * 提供音视频统一管控能力，音视频类应用接入AVSession后，可以发送应用的数据（比如正在播放的歌曲、歌曲的播放状态等），用户可以通过系统播控中心、语音助手等应用切换多个应用、多个设备播放。
-* 提供音频后台约束能力，音频接入AVSession后，可以进行后台音频播放。此功能需要同时申请[长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)。
+* 提供音频后台约束能力，音频接入AVSession后，可以进行后台音频播放。此功能需要同时申请[长时任务](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)。
 
 ## 亮点/特征
 
@@ -65,7 +65,7 @@ AVSession Kit（Audio & Video Session Kit，音视频播控服务）是系统提
 
 ## 与相关Kit的关系
 
-应用实现后台播放时，需要使用[Background Tasks Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview)（后台任务管理）的能力，申请对应的长时任务，避免进入挂起（Suspend）状态。
+应用实现后台播放时，需要使用[Background Tasks Kit](/docs/dev/app-dev/application-framework/background-task-kit/background-task-overview)（后台任务管理）的能力，申请对应的长时任务，避免进入挂起（Suspend）状态。
 
 ## 模拟器支持情况
 

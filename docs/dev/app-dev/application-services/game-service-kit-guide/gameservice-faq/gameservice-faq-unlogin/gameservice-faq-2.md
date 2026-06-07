@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "游戏官方账号图标大小是多少？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-2
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-faq/gameservice-faq-unlogin/gameservice-faq-2
 format: md
 ---
 

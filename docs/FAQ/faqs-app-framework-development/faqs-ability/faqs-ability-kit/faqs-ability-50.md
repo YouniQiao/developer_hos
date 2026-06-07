@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Stage模型与FA模型在进程内对象共享方面有哪些差异"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-50
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-50
 ---
 
 
@@ -12,4 +12,4 @@ Stage模型是主推的应用模型，开发者可以更方便地开发分布式
 
 **参考链接**
 
-[通过对比认识FA模型与Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-models#通过对比认识fa模型与stage模型)
+[通过对比认识FA模型与Stage模型](/docs/dev/app-dev/application-framework/ability-kit/application-models#通过对比认识fa模型与stage模型)

@@ -1,6 +1,6 @@
 ---
 title: "获取License"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pga-license-preparation-0000002084021550
+original_url: /docs/dev/game-dev/pga-license-preparation-0000002084021550
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "通用属性协议开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-bluetooth-gatt
+original_url: /docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-gatt
 format: md
 ---
 

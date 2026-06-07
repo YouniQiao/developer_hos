@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AVTranscoder实现视频转码(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avtranscoder-for-transcodering
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/using-avtranscoder-for-transcodering
 format: md
 ---
 
 
-使用[AVTranscoder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avtranscoder)可以实现视频转码功能，从API 20开始支持视频转码的C/C++开发，转码功能可在手机、平板、2in1设备上作为系统提供的基础能力使用。可以通过调用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口来判断当前设备是否支持AVTranscoder，当canIUse("SystemCapability.Multimedia.Media.AVTranscoder")的返回值为true时，表示可以使用转码能力。
+使用[AVTranscoder](/docs/dev/app-dev/media/media-kit/media-kit-intro#avtranscoder)可以实现视频转码功能，从API 20开始支持视频转码的C/C++开发，转码功能可在手机、平板、2in1设备上作为系统提供的基础能力使用。可以通过调用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口来判断当前设备是否支持AVTranscoder，当canIUse("SystemCapability.Multimedia.Media.AVTranscoder")的返回值为true时，表示可以使用转码能力。
 
 本开发指导将以“开始转码-暂停转码-恢复转码-转码完成”的一次流程为示例，向开发者讲解AVTranscoder视频转码相关功能。
 
@@ -87,7 +87,7 @@ format: md
 
    下面代码示例中的fdSrc仅作示意使用，开发者需根据实际情况，确认资源有效性并设置：
 
-   * 如果使用本地资源转码，必须确认资源文件可用，并使用应用沙箱路径访问对应资源，参考[获取应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
+   * 如果使用本地资源转码，必须确认资源文件可用，并使用应用沙箱路径访问对应资源，参考[获取应用文件路径](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
    * 应通过Context属性获取应用文件路径，建议使用getUIContext获取UIContext实例，并使用getHostContext调用绑定实例的getContext，请参考[getHostContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#gethostcontext12)。
    * 如果使用ResourceManager.getRawFd()打开HAP资源文件描述符，使用方法可参考[ResourceManager API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getrawfd9)。
 
@@ -153,7 +153,7 @@ format: md
 
    ![](./img/32858f87.png)
 
-   转码输出文件fd（即示例里fdDst），形式为number。需要调用基础文件操作接口（[Core File Kit的ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)）实现应用文件访问能力，获取方式参考[应用文件访问与管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)。
+   转码输出文件fd（即示例里fdDst），形式为number。需要调用基础文件操作接口（[Core File Kit的ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)）实现应用文件访问能力，获取方式参考[应用文件访问与管理](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)。
 
    ```
    import { fileIo } from '@kit.CoreFileKit';
@@ -185,7 +185,7 @@ format: md
 
    写入配置参数时需要注意，prepare()接口的入参avConfig中仅设置转码相关的配置参数。
 
-   受限于解析/封装/编解码能力，只能使用[支持的转码格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avtranscoder)。
+   受限于解析/封装/编解码能力，只能使用[支持的转码格式](/docs/dev/app-dev/media/media-kit/media-kit-intro#avtranscoder)。
 
    ```
    import { media } from '@kit.MediaKit';

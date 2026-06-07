@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "卡证识别"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-cardrecognition
+original_url: /docs/dev/app-dev/ai/vision-kit-guide/vision-cardrecognition
 format: md
 ---
 

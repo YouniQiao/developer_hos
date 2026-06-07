@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "OpenGL ES平台"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-mv-gles
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-fg-mv-gles
 format: md
 ---
 

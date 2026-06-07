@@ -1,6 +1,6 @@
 ---
 title: "查询需要用户认证的关键资产(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query-auth
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query-auth
 format: md
 ---
 
@@ -86,7 +86,7 @@ format: md
 
 本模块提供了异步和同步两套接口，以下为异步接口的使用示例，同步接口详见[@ohos.security.asset (关键资产存储服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-asset)。
 
-在查询前，需确保已有需要用户认证的关键资产，可参考[指南文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-add)新增关键资产，否则将抛出NOT\_FOUND错误（错误码24000002）。
+在查询前，需确保已有需要用户认证的关键资产，可参考[指南文档](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-add)新增关键资产，否则将抛出NOT\_FOUND错误（错误码24000002）。
 
 查询别名是demo\_alias且需要用户认证的关键资产。示例中引入的@ohos.userIAM.userAuth用法详见userAuth文档中的[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#start10)接口。
 

@@ -1,9 +1,9 @@
 ---
 title: "NFC"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-nfc
+original_url: /docs/dev/atomic-dev/atomic-nfc/atomic-nfc
 format: md
 ---
 
 
-* **[NFC标签读写开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-nfc-tag-access-guide)**
-* **[HCE卡模拟开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-nfc-hce-guide)**
+* **[NFC标签读写开发指南](/docs/dev/atomic-dev/atomic-nfc/atomic-nfc-tag-access-guide)**
+* **[HCE卡模拟开发指南](/docs/dev/atomic-dev/atomic-nfc/atomic-nfc-hce-guide)**

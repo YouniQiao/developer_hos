@@ -1,6 +1,6 @@
 ---
 title: "商家直接接入服务直达"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-merchants
+original_url: /docs/dev/atomic-dev/instant-service-getting-started/instant-service-merchants
 format: md
 ---
 
@@ -19,6 +19,6 @@ format: md
 
 **如何通过API接入服务直达**
 
-1. 商家先按照[元服务开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service)开发元服务或应用并完成上架。
-2. 配置[鉴权方式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-merchant-authentication)。
-3. 依次接入[图片管理](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-image-management)、[门店管理](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-management)及[商品管理](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-management)。
+1. 商家先按照[元服务开发指南](/docs/dev/atomic-dev/atomic-service/atomic-service)开发元服务或应用并完成上架。
+2. 配置[鉴权方式](/docs/dev/atomic-dev/instant-service-access-credentials/instant-service-merchant-authentication)。
+3. 依次接入[图片管理](/docs/dev/atomic-dev/instant-service-image-management/instant-service-image-management)、[门店管理](/docs/dev/atomic-dev/instant-service-store-management/instant-service-store-management)及[商品管理](/docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-management)。

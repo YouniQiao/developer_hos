@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "图形缓冲区常见稳定性问题 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-common-mistakes
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-common-mistakes
 format: md
 ---
 

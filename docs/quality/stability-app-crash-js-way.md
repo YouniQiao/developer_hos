@@ -1,19 +1,19 @@
 ---
 title: "JS Crash类问题分析方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-js-way
+original_url: /docs/quality/stability-app-crash-js-way
 format: md
 ---
 
 
 # JS Crash类问题分析方法
 
-当未处理的JS异常导致应用意外退出时，应用会在抛出未处理的异常时崩溃并且会生成对应的JS Crash崩溃日志文件。开发者可通过错误日志查看引起崩溃的代码位置及分析应用崩溃的原因，可参看[JS Crash日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines#日志规格)。
+当未处理的JS异常导致应用意外退出时，应用会在抛出未处理的异常时崩溃并且会生成对应的JS Crash崩溃日志文件。开发者可通过错误日志查看引起崩溃的代码位置及分析应用崩溃的原因，可参看[JS Crash日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines#日志规格)。
 
 ## 问题定位思路
 
 ### 获取日志
 
-进程崩溃日志是一种故障日志，具体可参考[日志获取](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines#日志获取)。
+进程崩溃日志是一种故障日志，具体可参考[日志获取](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines#日志获取)。
 
 ### 根因分析
 

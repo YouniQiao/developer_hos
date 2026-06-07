@@ -1,6 +1,6 @@
 ---
 title: "命令式节点常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-arkui-framenode-faq
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-arkui-framenode-faq
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 **问题现象**
 
-不规范地使用[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)后出现[JS Crash](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines)。
+不规范地使用[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)后出现[JS Crash](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines)。
 
 ![](./img/ddafbcdd.png)
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分享内容直达应用界面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-pc-phones-sandbox
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-pc-phones/knock-share-pc-phones-sandbox
 format: md
 ---
 
@@ -12,7 +12,7 @@ PC/2in1、Tablet设备创新交互方案：支持手机轻贴屏幕即可将单/
 
 沙箱接收仅支持文件类型的数据，应用需指定支持接收的文件类型和最大数量。
 
-* 若类型不匹配，则跳过已注册的沙箱接口能力，采用华为分享默认逻辑接收文件数据。参考：[目标设备接收分享数据一步直达体验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-one-step)。
+* 若类型不匹配，则跳过已注册的沙箱接口能力，采用华为分享默认逻辑接收文件数据。参考：[目标设备接收分享数据一步直达体验](/docs/dev/app-dev/application-services/share-kit-guide/share-access-precautions/share-access-one-step)。
 * 若数量不匹配，则通过系统弹窗提示用户异常。
 
 ## 开发步骤

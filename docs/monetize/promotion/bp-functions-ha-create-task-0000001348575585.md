@@ -1,7 +1,7 @@
 ---
 title: "创建推广任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ha-create-task-0000001348575585
+original_url: /docs/monetize/promotion/bp-functions-ha-create-task-0000001348575585
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 2. 点击“新建推广任务”，进入推广任务页面。
 
    ![](./img/75e2caa3e133.png)
-3. 设置推广任务相关设置项，具体请参见[投放推荐任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-recommend-0000001337110797)。
+3. 设置推广任务相关设置项，具体请参见[投放推荐任务](/docs/monetize/promotion/bp-delivery-task-recommend-0000001337110797)。
 
    ![](./img/47e67782570b.png) 
 

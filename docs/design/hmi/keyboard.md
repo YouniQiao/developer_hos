@@ -1,7 +1,7 @@
 ---
 title: 键盘
 sidebar_label: 键盘
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-keyboard-0000001928070488
+original_url: /docs/design/hmi/keyboard
 format: md
 ---
 

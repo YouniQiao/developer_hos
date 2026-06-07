@@ -1,6 +1,6 @@
 ---
 title: "ASCF框架与小程序的差异"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-diff-ascf-applets
+original_url: /docs/dev/atomic-dev/ascf/faqs/faqs-diff-ascf-applets
 format: md
 ---
 
@@ -20,7 +20,7 @@ ASCF的接口全局对象定义为has，全称为harmony atomic service。
 
 **框架能力差异：**
 
-* 支持[分包](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-subpackages)能力，单个包不超过2MB，总包不超过10MB，总包如果有更大诉求可以申请更大包大小。不过tabbar页面必须在主包，因此需要从小程序转换过来需要按需适配修改分包逻辑。
+* 支持[分包](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackages)能力，单个包不超过2MB，总包不超过10MB，总包如果有更大诉求可以申请更大包大小。不过tabbar页面必须在主包，因此需要从小程序转换过来需要按需适配修改分包逻辑。
 * 元服务在平板上面默认是居中显示，并且无法设置强制竖屏。后续已有更优规划。
 * hjs中数组的constructor的返回值不是字符串而是一个函数，建议做特殊处理。
 * 当API version 12时，导航栏标题设置globalStyle 设置"navigationBarTextStyle": "white"，实际显示黑色。因为系统导航栏不支持设置为白色，可以在app.json文件中修改navigationStyle字段为custom，启用自定义导航栏。

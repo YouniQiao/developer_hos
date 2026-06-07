@@ -1,6 +1,6 @@
 ---
 title: "制作标签"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-touch-makelabel-0000002444072085
+original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-makelabel-0000002444072085
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
 
      ![](../img/agc-help-by-harmonyoslabel-touch-makelabel-0000002444072085_3.png)
 
-     Developer ID和APP ID的获取方法请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。
+     Developer ID和APP ID的获取方法请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。
 2. 安装烧录工具。
 
    准备一台Android手机，安装烧录工具。

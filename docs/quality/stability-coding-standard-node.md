@@ -1,6 +1,6 @@
 ---
 title: "Node-API开发规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-node
+original_url: /docs/quality/stability-coding-standard-node
 ---
 
 # Node-API开发规范

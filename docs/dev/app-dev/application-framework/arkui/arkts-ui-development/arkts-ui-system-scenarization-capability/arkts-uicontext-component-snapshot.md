@@ -1,6 +1,6 @@
 ---
 title: "使用组件截图（ComponentSnapshot）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-component-snapshot
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-uicontext-component-snapshot
 format: md
 ---
 

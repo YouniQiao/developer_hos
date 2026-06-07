@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "媒体资源使用指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-resource-guidelines
+original_url: /docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-resource-guidelines
 format: md
 ---
 
@@ -10,8 +10,8 @@ format: md
 
 ![](./img/011da0e7.png)
 
-* 在进行功能开发前，请查阅[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation)，了解如何获取相册管理模块实例和如何申请相册管理模块功能开发相关权限。
-* 文档中使用到photoAccessHelper的地方，默认为使用[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation)中获取的对象，如果未添加此段代码，报photoAccessHelper未定义的错误，请自行添加。
+* 在进行功能开发前，请查阅[开发准备](/docs/dev/app-dev/media/photoaccesshelper-preparation)，了解如何获取相册管理模块实例和如何申请相册管理模块功能开发相关权限。
+* 文档中使用到photoAccessHelper的地方，默认为使用[开发准备](/docs/dev/app-dev/media/photoaccesshelper-preparation)中获取的对象，如果未添加此段代码，报photoAccessHelper未定义的错误，请自行添加。
 
 为了保证应用的运行效率，大部分photoAccessHelper的接口调用都是异步的。示例采用Promise函数，更多方式可以查阅[模块描述](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper)。
 
@@ -30,7 +30,7 @@ format: md
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
 * 导入[dataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates)模块。
 
 ### 指定媒体文件名获取图片或视频资源
@@ -77,10 +77,10 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
 * 导入[dataSharePredicates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-datasharepredicates)模块。
 
-参考以下示例，获取图片的文件描述符fd后，需要解码为统一的PixelMap，以便在应用中进行图片显示或图片处理，具体请参考[图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)。
+参考以下示例，获取图片的文件描述符fd后，需要解码为统一的PixelMap，以便在应用中进行图片显示或图片处理，具体请参考[图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)。
 
 下面以获取一张图片的缩略图为例，缩略图尺寸为720\*720。
 
@@ -138,7 +138,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.WRITE\_IMAGEVIDEO'和'ohos.permission.READ\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.WRITE\_IMAGEVIDEO'和'ohos.permission.READ\_IMAGEVIDEO'。
 
 下面以重命名标题为'oldTestPhoto'的图片为例。
 
@@ -195,7 +195,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.WRITE\_IMAGEVIDEO'和'ohos.permission.READ\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.WRITE\_IMAGEVIDEO'和'ohos.permission.READ\_IMAGEVIDEO'。
 
 下面以将文件检索结果中第一个文件放入回收站为例。
 

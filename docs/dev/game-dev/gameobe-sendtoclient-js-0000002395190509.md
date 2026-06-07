@@ -1,6 +1,6 @@
 ---
 title: "发送客户端消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sendtoclient-js-0000002395190509
+original_url: /docs/dev/game-dev/gameobe-sendtoclient-js-0000002395190509
 format: md
 ---
 

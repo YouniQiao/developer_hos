@@ -1,6 +1,6 @@
 ---
 title: "核准（备案）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-recordal-0000002425133922
+original_url: /docs/dev/game-dev/games-quickgame-faq-recordal-0000002425133922
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "应用重启"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-restart
+original_url: /docs/dev/app-dev/application-framework/app-restart
 format: md
 ---
 
@@ -215,4 +215,4 @@ export default class DemoAbility extends EmbeddableUIAbility {
 
 ## 应用故障恢复被动重启
 
-应用故障恢复重启接口由appRecovery模块提供，详见[应用恢复开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apprecovery-guidelines)。
+应用故障恢复重启接口由appRecovery模块提供，详见[应用恢复开发指导](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/error-manager/apprecovery-guidelines)。

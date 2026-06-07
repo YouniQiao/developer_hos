@@ -1,6 +1,6 @@
 ---
 title: "配置隐私标签信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-privacy-tag-0000002316420993
+original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-privacy-tag-0000002316420993
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
    如果您的应用中不涉及广告与营销的相关内容，请勿在业务场景中勾选“广告与营销”。
 
    ![](../img/agc-help-release-app-privacy-tag-0000002316420993_2.png)
-6. 依次选择业务场景对应的页签，点击左下角的“+添加”，配置相关数据项。业务场景和数据项具体内容参见[AppGallery隐私标签介绍](https://developer.huawei.com/consumer/cn/doc/app/privacy-label)。
+6. 依次选择业务场景对应的页签，点击左下角的“+添加”，配置相关数据项。业务场景和数据项具体内容参见[AppGallery隐私标签介绍](/docs/distribute/app-dist/app-market/privacy-label)。
 
    ![](../img/agc-help-release-app-privacy-tag-0000002316420993_3.png)
 7. 配置完所有业务场景的数据项后，可到“关联到用户数据汇总”页签查看全部数据。

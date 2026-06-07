@@ -1,6 +1,6 @@
 ---
 title: "使用运动和方向传感器监测设备状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-sensor
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-sensor
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ## 需要权限
 
-使用加速度、陀螺仪及设备运动事件接口时，需在配置文件module.json5中声明相应的传感器权限。具体配置方法请参考[在配置文件中声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#在配置文件中声明权限)。
+使用加速度、陀螺仪及设备运动事件接口时，需在配置文件module.json5中声明相应的传感器权限。具体配置方法请参考[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。
 
 ```
     "requestPermissions":[

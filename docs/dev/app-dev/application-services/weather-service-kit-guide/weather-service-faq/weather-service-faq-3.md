@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "请求了分钟级降水预报/天气预警/潮汐，未返回任何数据。"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-faq-3
+original_url: /docs/dev/app-dev/application-services/weather-service-kit-guide/weather-service-faq/weather-service-faq-3
 format: md
 ---
 

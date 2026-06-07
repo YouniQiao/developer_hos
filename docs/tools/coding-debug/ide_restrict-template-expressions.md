@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/restrict-template-expressions"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_restrict-template-expressions
+original_url: /docs/tools/coding-debug/ide_restrict-template-expressions
 format: md
 ---
 

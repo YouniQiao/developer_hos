@@ -1,7 +1,7 @@
 ---
 format: md
 title: "图片编解码支持的格式有哪些"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-5
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-5
 ---
 
 
@@ -15,8 +15,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-i
 
 **参考链接**
 
-[使用ImageSource完成图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)
+[使用ImageSource完成图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)
 
-[使用ImagePacker完成图片编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding)
+[使用ImagePacker完成图片编码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-encoding-arts/image-encoding)
 
-[图片编码（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding-native)
+[图片编码（C/C++）](/docs/dev/app-dev/media/image-kit/image-native/image-encoding-c)

@@ -1,6 +1,6 @@
 ---
 title: "应用被查杀问题检测方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-runtime-appkilled-detection
+original_url: /docs/quality/stability-runtime-appkilled-detection
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
    2. 用户主动终止应用，比如在任务列表中点击清理按钮以清除所有应用，或上划以清除单个应用，这种情况下不会生成栈等维测日志。
    3. 应用开发者主动调用exit系统调用时，这种情况下不会生成栈等维测日志。
 
-      应用被查杀，运行态可通过HiAppEvent订阅[应用查杀事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-killed-events)进行检测。
+      应用被查杀，运行态可通过HiAppEvent订阅[应用查杀事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events)进行检测。
 
 ## 实现原理
 

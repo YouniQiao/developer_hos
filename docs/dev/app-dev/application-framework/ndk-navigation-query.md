@@ -1,17 +1,17 @@
 ---
 title: "使用导航类组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-navigation-query
+original_url: /docs/dev/app-dev/application-framework/ndk-navigation-query
 format: md
 ---
 
 
-NDK提供一系列[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture#navigation整体架构)和[页面路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing)状态查询接口，开发者可以通过[OH\_ArkUI\_GetNavDestinationName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationname)、[OH\_ArkUI\_GetNavDestinationParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationparam)、[OH\_ArkUI\_GetNavDestinationState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationstate)、[OH\_ArkUI\_GetNavigationId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavigationid)、[OH\_ArkUI\_GetNavDestinationIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationindex)等查询页面的状态、索引、名称等信息，并根据查询结果进行对应的操作，如显示不同的页面信息。
+NDK提供一系列[Navigation](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-architecture#navigation整体架构)和[页面路由](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-routing)状态查询接口，开发者可以通过[OH\_ArkUI\_GetNavDestinationName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationname)、[OH\_ArkUI\_GetNavDestinationParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationparam)、[OH\_ArkUI\_GetNavDestinationState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationstate)、[OH\_ArkUI\_GetNavigationId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavigationid)、[OH\_ArkUI\_GetNavDestinationIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnavdestinationindex)等查询页面的状态、索引、名称等信息，并根据查询结果进行对应的操作，如显示不同的页面信息。
 
-本文提供页面状态查询开发指导，查询之前需要先接入ArkTS页面，具体请参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)。
+本文提供页面状态查询开发指导，查询之前需要先接入ArkTS页面，具体请参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)。
 
 ## 查询页面信息
 
-查询页面信息，需要先确保目标节点已作为子节点挂载到页面中，若节点未挂载则操作会失败，例如在[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)生命周期中查询不到对应信息。页面详细生命周期以及组件挂载生命周期参考[页面生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navdestination#页面生命周期)。开发者可以根据查询到的页面信息加载不同的页面组件。
+查询页面信息，需要先确保目标节点已作为子节点挂载到页面中，若节点未挂载则操作会失败，例如在[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)生命周期中查询不到对应信息。页面详细生命周期以及组件挂载生命周期参考[页面生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-navdestination#页面生命周期)。开发者可以根据查询到的页面信息加载不同的页面组件。
 
 本示例仅展示核心功能代码，完整示例请参考[NDK使用页面查询接口示例](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NDKNavigation)。
 

@@ -1,7 +1,7 @@
 ---
 title: "创建应用内商品"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-creating-product-0000001239502323
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323
 format: md
 ---
 
@@ -109,7 +109,7 @@ format: md
    | 19 | 智利 | CLP | 仅支持整数（保留两位小数），如5.00 |
 
 7. 点击“保存”，并在弹框中点击“确定”。
-8. 如需使该商品生效，返回商品列表，点击该商品对应“操作”列的“激活”即可，具体请参考[激活应用内商品](`https://developer.huawei.com/consumer/cn/doc/app/game-center-deactivating-product-0000001239622347#section8229172719335`)。
+8. 如需使该商品生效，返回商品列表，点击该商品对应“操作”列的“激活”即可，具体请参考[激活应用内商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347#section8229172719335`)。
 
 ![](./img/2967c347d8df.png)
 
@@ -197,7 +197,7 @@ format: md
    | 19 | 智利 | CLP | 仅支持整数（保留两位小数），如5.00 |
 
 7. 点击“保存”，并在弹框中点击“确定”。
-8. 如需使该商品生效，返回商品列表，点击该商品对应“操作”列的“激活”即可，具体请参考[激活应用内商品](`https://developer.huawei.com/consumer/cn/doc/app/game-center-deactivating-product-0000001239622347#section8229172719335`)。
+8. 如需使该商品生效，返回商品列表，点击该商品对应“操作”列的“激活”即可，具体请参考[激活应用内商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347#section8229172719335`)。
 
 ![](./img/5c5db4aadbb1.png)
 

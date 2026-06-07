@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决webview每次调试都需要寻找进程号问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-61
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-61
 ---
 
 

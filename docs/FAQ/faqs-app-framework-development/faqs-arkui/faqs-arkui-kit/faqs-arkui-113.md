@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何设置List组件滑动到边缘无回弹效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-113
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-113
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "常见问题FAQ"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-faq
+original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-faq
 ---
 
 

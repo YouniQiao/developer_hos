@@ -1,7 +1,7 @@
 ---
 title: "升级应用版本"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-upgrade-version-0000001194325288
+original_url: /docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288
 format: md
 ---
 
@@ -55,7 +55,7 @@ format: md
 如当前上架版本为全网发布，本次升级您可选择全网发布或分阶段发布。
 
 * 如您选择全网发布，设置“发布类型”为“全网发布”。
-* 如您选择分阶段发布，设置“发布类型”为“分阶段发布"，然后填写相关参数，具体参见[分阶段发布应用](`https://developer.huawei.com/consumer/cn/doc/app/game-center-stage-releasing-0000001194485288#ZH-CN_TOPIC_0000001194485288`)。
+* 如您选择分阶段发布，设置“发布类型”为“分阶段发布"，然后填写相关参数，具体参见[分阶段发布应用](`/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-stage-releasing-0000001194485288#ZH-CN_TOPIC_0000001194485288`)。
 
 ![](./img/76d1e638088a.png)
 

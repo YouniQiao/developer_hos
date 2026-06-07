@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "适配相机旋转角度(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-angle-adaptation-native
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/camera-rotation-native/camera-rotation-angle-adaptation-native
 format: md
 ---
 
@@ -67,9 +67,9 @@ format: md
 
 完成[会话创建](#创建会话)后，开发者可根据实际需求，配置输出流。
 
-1. 调用[preview\_output.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preview-output-h)中的[OH\_PreviewOutput\_GetPreviewRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preview-output-h#oh_previewoutput_getpreviewrotation)接口，获取[预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native#预览旋转角度)。
+1. 调用[preview\_output.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preview-output-h)中的[OH\_PreviewOutput\_GetPreviewRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preview-output-h#oh_previewoutput_getpreviewrotation)接口，获取[预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#预览旋转角度)。
 
-   displayRotation：[显示设备的屏幕旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native#屏幕旋转角度)，可通过[OH\_NativeDisplayManager\_GetDefaultDisplayRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_getdefaultdisplayrotation)获取默认屏幕的顺时针旋转角度，并将对应角度填入。
+   displayRotation：[显示设备的屏幕旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#屏幕旋转角度)，可通过[OH\_NativeDisplayManager\_GetDefaultDisplayRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_getdefaultdisplayrotation)获取默认屏幕的顺时针旋转角度，并将对应角度填入。
 
    例：OH\_NativeDisplayManager\_GetDefaultDisplayRotation获取结果为1，表示显示设备屏幕顺时针旋转为90°，此处imageRotation填入90。
 
@@ -109,7 +109,7 @@ format: md
    该接口需要在session调用[OH\_CaptureSession\_CommitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_commitconfig)完成配流后调用，如果多次调用，以最新调用设置的图像预览旋转角度为准。
 
    * previewRotation：预览旋转角度，取上一步[OH\_PreviewOutput\_GetPreviewRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-preview-output-h#oh_previewoutput_getpreviewrotation)的返回值。
-   * isDisplayLocked：Surface在屏幕旋转时是否锁定方向。当设置为false，即屏幕方向未锁定，[预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native#预览旋转角度)将根据[相机镜头角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native#相机镜头安装角度)+[屏幕显示旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native#屏幕旋转角度)的值计算；当设置为true，Surface旋转锁定，不跟随窗口变化，旋转角度仅取相机镜头角度计算。
+   * isDisplayLocked：Surface在屏幕旋转时是否锁定方向。当设置为false，即屏幕方向未锁定，[预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#预览旋转角度)将根据[相机镜头角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#相机镜头安装角度)+[屏幕显示旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#屏幕旋转角度)的值计算；当设置为true，Surface旋转锁定，不跟随窗口变化，旋转角度仅取相机镜头角度计算。
 
    ```
    void SetPreviewRotation(Camera_PreviewOutput* previewOutput, Camera_ImageRotation previewRotation, bool isDisplayLocked) {
@@ -122,7 +122,7 @@ format: md
 
 **预览流旋转接口适配场景及示例：**
 
-1. 在[会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)过程中调用预览旋转接口，即：使用[OH\_CaptureSession\_CommitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_commitconfig)接口提交相关配置后调用，建议在[OH\_CaptureSession\_Start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_start)起流前调用。
+1. 在[会话管理](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)过程中调用预览旋转接口，即：使用[OH\_CaptureSession\_CommitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_commitconfig)接口提交相关配置后调用，建议在[OH\_CaptureSession\_Start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_start)起流前调用。
 
    ```
    #include "hilog/log.h"
@@ -156,7 +156,7 @@ format: md
        }
    }
    ```
-2. 应用使用相机时，通过监听[监听屏幕状态变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-display-manager)，感知窗口当前状态，如当前相机窗口发生旋转时，需对预览流进行角度修正。推荐在[会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)中完成调用预览旋转接口后，直接创建监听。
+2. 应用使用相机时，通过监听[监听屏幕状态变化](/docs/dev/app-dev/application-framework/arkui/display-manager/native-display-manager)，感知窗口当前状态，如当前相机窗口发生旋转时，需对预览流进行角度修正。推荐在[会话管理](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)中完成调用预览旋转接口后，直接创建监听。
 
    ```
    #include "hilog/log.h"
@@ -219,7 +219,7 @@ format: md
    }
    ```
 2. 应用将拍照角度写入[Camera\_PhotoCaptureSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-photocapturesetting)的rotation。
-3. 其余参数的配置及拍照，可参考[拍照开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-shooting)。
+3. 其余参数的配置及拍照，可参考[拍照开发指导](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting)。
 
 ## 录像
 
@@ -246,7 +246,7 @@ format: md
    }
    ```
 2. 在[OH\_AVRecorder\_Prepare](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-h#oh_avrecorder_prepare)后使用[OH\_AVRecorder\_UpdateRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avrecorder-h#oh_avrecorder_updaterotation)设置录像角度。
-3. 其余参数的配置及启动录像，可参考[录像开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-recording)。
+3. 其余参数的配置及启动录像，可参考[录像开发指导](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-recording)。
 
 **录像流旋转接口适配示例代码：**
 
@@ -276,7 +276,7 @@ void GetVideoRotationAndUpdate(Camera_VideoOutput* videoOutput, int32_t deviceDe
 
 当前可通过监听[OH\_Sensor\_Subscribe](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-sensor-h#oh_sensor_subscribe)获取重力传感器在x、y、z三个方向上的数据，计算得出设备旋转角度deviceDegree，示例如下所示。
 
-如果无法获得重力传感器数据，需要申请重力传感器权限ohos.permission.ACCELEROMETER。权限申请请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)，如何获取传感器数据请参考[传感器开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines-capi)。
+如果无法获得重力传感器数据，需要申请重力传感器权限ohos.permission.ACCELEROMETER。权限申请请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)，如何获取传感器数据请参考[传感器开发指导](/docs/dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-guidelines-capi)。
 
 ```
 #include "hilog/log.h"
@@ -394,7 +394,7 @@ int32_t CalDeviceDegree()
 
 ## 实现相机无损出图
 
-在部分折叠屏设备上，[不同折叠状态](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-foldable-guide#section152264061715)下的[设备自然方向](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native#设备自然方向)会发生改变，导致不同折叠状态下的[相机镜头安装角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native#相机镜头安装角度)不同。为了屏蔽不同设备间的差异，使得不同折叠状态下的相机镜头安装角度一致，系统会自动调整部分折叠状态下的相机采集图像方向（通过旋转裁切的方式）和相机镜头安装角度，因此会存在视场角（Field of View, FOV）损失，可能会导致相机预览、拍照、录像可见范围降低，因此如果需要实现相机无损出图，可以通过[OH\_CameraInput\_UsePhysicalCameraOrientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-manager-h#oh_cameramanager_createcamerainput)接口来实现相机无损出图。具体方式如下：
+在部分折叠屏设备上，[不同折叠状态](/docs/dev/app-dev/multi-device/bpta-foldable-guide#section152264061715)下的[设备自然方向](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#设备自然方向)会发生改变，导致不同折叠状态下的[相机镜头安装角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#相机镜头安装角度)不同。为了屏蔽不同设备间的差异，使得不同折叠状态下的相机镜头安装角度一致，系统会自动调整部分折叠状态下的相机采集图像方向（通过旋转裁切的方式）和相机镜头安装角度，因此会存在视场角（Field of View, FOV）损失，可能会导致相机预览、拍照、录像可见范围降低，因此如果需要实现相机无损出图，可以通过[OH\_CameraInput\_UsePhysicalCameraOrientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-manager-h#oh_cameramanager_createcamerainput)接口来实现相机无损出图。具体方式如下：
 
 设备是否支持无损出图，首先需要确认设备的相机镜头安装角度是否可变，可以通过[OH\_CameraInput\_IsPhysicalCameraOrientationVariable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-input-h#oh_camerainput_isphysicalcameraorientationvariable)接口查询。
 

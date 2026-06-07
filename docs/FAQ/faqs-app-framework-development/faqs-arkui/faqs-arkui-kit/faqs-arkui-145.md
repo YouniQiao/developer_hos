@@ -1,7 +1,7 @@
 ---
 format: md
 title: "控制中心的下拉背景实时模糊是如何实现的"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-145
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-145
 ---
 
 

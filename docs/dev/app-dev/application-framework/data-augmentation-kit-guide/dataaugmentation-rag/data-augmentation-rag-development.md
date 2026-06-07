@@ -1,6 +1,6 @@
 ---
 title: "知识问答"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-development
+original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-development
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 约束限制
 
-1. 知识问答需要先对数据源库进行[知识加工](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-knowledge-processing)生成知识库，否则无法问答。
+1. 知识问答需要先对数据源库进行[知识加工](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/data-augmentation-knowledge-processing)生成知识库，否则无法问答。
 2. 用户问答时，RAG可使用的历史记录范围为最近1次问答内容。
 3. RAG不提供敏感词风控检测能力，开发者需要自行对用户输入内容和RAG返回内容进行敏感词风控检测。
 4. 开发者应选择上下文长度至少应该为30k Tokens的LLM，如Qwen2.5-7B-32K、Mistral-7B-Instruct-v0.2、Llama-3.1-8B等。否则可能会因大模型上下文长度超限而导致知识问答失败。
@@ -21,7 +21,7 @@ format: md
 
 接口需在页面或自定义组件生命周期内调用。
 
-RAG关键接口如下表所示，具体API说明详见[API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#导入模块)。除接口外，还可以通过配置文件进行深度定制RAG，详见[RAG配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-config-prompt-template)。
+RAG关键接口如下表所示，具体API说明详见[API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#导入模块)。除接口外，还可以通过配置文件进行深度定制RAG，详见[RAG配置](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-config/data-augmentation-config-prompt-template)。
 
 | 接口名 | 描述 |
 | --- | --- |
@@ -42,11 +42,11 @@ RAG关键接口如下表所示，具体API说明详见[API参考](https://develo
      }
    ],
    ```
-2. 完成知识加工配置。请参考[知识加工](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-knowledge-processing)。
+2. 完成知识加工配置。请参考[知识加工](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/data-augmentation-knowledge-processing)。
 
 ## 开发步骤
 
-下面仅对关键步骤关键代码进行片段式说明，省略了很多非核心代码，如果需要查看完整功能示例代码，请参考[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-demo)。应用的一次流式问答过程，和RagSession、ChatLLM、知识库的交互流程，可参考[流式问答调用流程图](#流式问答调用流程图)。
+下面仅对关键步骤关键代码进行片段式说明，省略了很多非核心代码，如果需要查看完整功能示例代码，请参考[示例代码](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-demo)。应用的一次流式问答过程，和RagSession、ChatLLM、知识库的交互流程，可参考[流式问答调用流程图](#流式问答调用流程图)。
 
 1. 导入@kit.DataAugmentationKit模块，其余依赖需要开发者按需添加。
 
@@ -173,9 +173,9 @@ RAG关键接口如下表所示，具体API说明详见[API参考](https://develo
      throw new Error('Function not implemented.'); // 待实现大模型报文解析流程
    }
    ```
-4. 创建[Config](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#config)配置中的属性。下面简要介绍几个主要属性，有关全量配置字段的详细含义，请参见[智慧化数据检索](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-retrieval)中的说明。开发者可以根据自身需求进行选择性配置。
+4. 创建[Config](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-rag-api#config)配置中的属性。下面简要介绍几个主要属性，有关全量配置字段的详细含义，请参见[智慧化数据检索](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-retrieval)中的说明。开发者可以根据自身需求进行选择性配置。
 
-   * [RetrievalConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrievalconfig)主要配置知识库的数据库配置。[知识加工](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-knowledge-processing)将会生成向量及倒排两种知识库表。
+   * [RetrievalConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrievalconfig)主要配置知识库的数据库配置。[知识加工](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/data-augmentation-knowledge-processing)将会生成向量及倒排两种知识库表。
 
      ```
      import { common, UIAbility } from '@kit.AbilityKit';
@@ -208,7 +208,7 @@ RAG关键接口如下表所示，具体API说明详见[API参考](https://develo
        channelConfigs: [channelConfigInvIdx, channelConfigVector]
      };
      ```
-   * [RetrievalCondition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrievalcondition)主要配置检索条件及多路召回之后的排序配置。其中fromClause为查询目标索引名，可按照如下示例代码配置为业务数据库表及知识加工产生的数据库表联合形成的虚拟表；responseColumns为召回的字段集合，范围为fromClause配置的数据库表中的列。关于知识库的数据库表结构可参见：[知识加工](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-knowledge-processing)。
+   * [RetrievalCondition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataaugmentation-retrieval-api#retrievalcondition)主要配置检索条件及多路召回之后的排序配置。其中fromClause为查询目标索引名，可按照如下示例代码配置为业务数据库表及知识加工产生的数据库表联合形成的虚拟表；responseColumns为召回的字段集合，范围为fromClause配置的数据库表中的列。关于知识库的数据库表结构可参见：[知识加工](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/data-augmentation-knowledge-processing)。
 
      ```
      import { retrieval } from '@kit.DataAugmentationKit';

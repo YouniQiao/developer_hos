@@ -1,6 +1,6 @@
 ---
 title: "批量创建门店"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-batch-create
+original_url: /docs/dev/atomic-dev/instant-service-store/instant-service-store-batch-create
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
    | 门店名称 | 最长100个字符 | 是 |
    | 省市区信息 | 下拉选择，请不要直接输入 | 是 |
    | 详细地址 | 最长200个字符 | 是 |
-   | 分类标签 | 取自[元服务分类标签](https://developer.huawei.com/consumer/cn/doc/app/ability-0000002032931302) | 是 |
+   | 分类标签 | 取自[元服务分类标签](/docs/distribute/app-dist/app-services/classification-0000002068852289/ability-0000002032931302) | 是 |
    | 门店编码 | 商家填写，方便商家自管理，最多64个字符 | 否 |
    | 门店备注 | 对门店的备注信息，对用户不可见，最多32个字符 | 否 |
    | 品牌方 | 如果有品牌名则输入，最多32个字符 | 否 |

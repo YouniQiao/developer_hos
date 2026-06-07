@@ -1,6 +1,6 @@
 ---
 title: "app.json全局配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/appjson-global-config
+original_url: /docs/dev/atomic-dev/ascf/config/appjson-global-config
 format: md
 ---
 
@@ -28,7 +28,7 @@ app.json的完整属性如下：
 | - | subpackages | Object[] | - | 否 | 分包结构配置。编译后保留pages字段，其他对齐。  "subpackages": [\&#123;"resource": "packageMore","root": "packageMore""pages": ["more/more"]\&#125;] |
 | - | usingComponents | Object | - | 否 | 全局自定义组件配置。 |
 | - | [resolveAlias](#resolvealias) | Object | - | 否 | 自定义模块映射规则。  **依赖关系**：ASCF Toolkit版本≥1.0.4 |
-| - | [lazyCodeLoading](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/on-demand-render-time-injection) | string | - | 否 | 配置自定义组件代码按需注入，目前仅支持"requiredComponents"。  **起始版本：** 1.0.13  **依赖关系**：ASCF Toolkit版本≥1.0.6 |
+| - | [lazyCodeLoading](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/on-demand-render-time-injection) | string | - | 否 | 配置自定义组件代码按需注入，目前仅支持"requiredComponents"。  **起始版本：** 1.0.13  **依赖关系**：ASCF Toolkit版本≥1.0.6 |
 | - | requiredBackgroundModes | string[] | - | 否 | 声明需要后台运行的能力，类型为数组。目前支持以下项目：  audio: 后台音乐播放 |
 | window | navigationBarBackgroundColor | HexColor | #ffffff | 否 | 导航栏背景颜色。 |
 | window | navigationBarTextStyle | string | black | 否 | 导航栏标题颜色。  当API version 12时，仅当navigationStyle = "custom"时，可设置black或white，其他情况仅支持black。  当API version 13及以上时，可设置成black或white。 |

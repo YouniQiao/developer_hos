@@ -1,7 +1,7 @@
 ---
 title: "广告账号管理"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ad-account-management-0000001228191753
+original_url: /docs/monetize/promotion/ad-account-management-0000001228191753
 format: md
 ---
 

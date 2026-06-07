@@ -1,6 +1,6 @@
 ---
 title: "未成年人模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-minorsprotection
+original_url: /docs/dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-minorsprotection
 format: md
 ---
 

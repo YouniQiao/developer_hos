@@ -1,6 +1,6 @@
 ---
 title: "知识加工"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-knowledge-processing
+original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/data-augmentation-knowledge-processing
 format: md
 ---
 

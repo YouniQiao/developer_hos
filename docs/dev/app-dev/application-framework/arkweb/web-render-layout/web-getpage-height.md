@@ -1,6 +1,6 @@
 ---
 title: "获取网页内容高度"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-getpage-height
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-render-layout/web-getpage-height
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何处理父子组件间的事件传递，例如，如何解决滑动冲突"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-40
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-40
 ---
 
 

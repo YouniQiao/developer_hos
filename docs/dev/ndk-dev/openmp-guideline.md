@@ -1,6 +1,6 @@
 ---
 title: "OpenMP应用构建和运行指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp-guideline
+original_url: /docs/dev/ndk-dev/openmp-guideline
 format: md
 ---
 
@@ -11,7 +11,7 @@ HarmonyOS NDK中提供了OpenMP的动态库和静态库文件，支持开发者�
 
 ### 创建Native C++工程
 
-[创建NDK工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-with-ndk)
+[创建NDK工程](/docs/dev/ndk-dev/create-with-ndk)
 
 ### 添加依赖
 

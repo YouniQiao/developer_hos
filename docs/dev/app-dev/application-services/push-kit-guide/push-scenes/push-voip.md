@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "推送应用内通话消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-voip
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-voip
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 
 ![](./img/014ca288.png)
 
-* 应用内通话消息的问题场景请参见[指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-7)。
+* 应用内通话消息的问题场景请参见[指导](/docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-7)。
 * 应用内通话消息的pushOptions.[ttl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#pushoptions)建议设置为**30~60秒**。
 
 ## 约束与限制
@@ -32,7 +32,7 @@ format: md
 
 ## 开通权益
 
-推送应用内通话消息需要申请场景化消息权益，请参见[申请推送应用内通话消息权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请推送应用内通话消息权益)。
+推送应用内通话消息需要申请场景化消息权益，请参见[申请推送应用内通话消息权益](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#申请推送应用内通话消息权益)。
 
 ## 频控规则
 
@@ -42,7 +42,7 @@ format: md
 
 ## 开发步骤
 
-1. 参见指导[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
+1. 参见指导[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)。
 2. 在您的工程内创建一个UIAbility类型的组件，如VoIPUIAbility.ets（在项目工程的**src/main/ets/entryability**目录下），负责处理应用内通话消息的主流程，并完成[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)()、[onWindowStageCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagecreate)()、[onDestroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#ondestroy)()方法的覆写，代码示例如下：
 
    ```
@@ -238,8 +238,8 @@ format: md
      + 在接听状态回调中，应用在建立连接成功之后，需要调用[voipCall.reportCallStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/call-voipcall#voipcallreportcallstatechange)()接口上报通话激活状态。
      + 在拒绝接听状态回调中，应用断开和服务器的连接之后，需要调用[voipCall.reportCallStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/call-voipcall#voipcallreportcallstatechange)()接口上报通话断开状态。
      + 在应用进行应用内通话的同时，若运营商来电，会弹出运营商来电接听界面，用户点击接听运营商来电之后，会回调应用内通话挂断状态，在回调方法中应用需要自行断开和服务器的连接，并调用[voipCall.reportCallStateChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/call-voipcall#voipcallreportcallstatechange)()接口上报通话断开状态。
-   * 有关应用内通话回调状态的更多信息，详情请参见[Call Service Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/call-introduction)。
-   * 应用上报通话来电状态之后，可以调用[vibrator.startVibration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-vibrator#vibratorstartvibration9-1)触发振动，有关振动的更多详情，请参见[Sensor Service Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensorservice-kit-intro)。可以使用AVPlayer播放应用铃声，音频流建议设置为铃声，usage设置为STREAM\_USAGE\_RINGTONE，效果为开始响铃，播放的音乐会暂停播放。同时推荐使用AudioSession管理音频焦点，可以保证接听过程中、通话过程中都保持音频焦点，详情请参见[Audio Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-kit-intro)。
+   * 有关应用内通话回调状态的更多信息，详情请参见[Call Service Kit简介](/docs/dev/app-dev/application-services/call-kit-guide/call-introduction)。
+   * 应用上报通话来电状态之后，可以调用[vibrator.startVibration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-vibrator#vibratorstartvibration9-1)触发振动，有关振动的更多详情，请参见[Sensor Service Kit简介](/docs/dev/app-dev/system/system-hardware/sensor-service-kit/sensorservice-kit-intro)。可以使用AVPlayer播放应用铃声，音频流建议设置为铃声，usage设置为STREAM\_USAGE\_RINGTONE，效果为开始响铃，播放的音乐会暂停播放。同时推荐使用AudioSession管理音频焦点，可以保证接听过程中、通话过程中都保持音频焦点，详情请参见[Audio Kit简介](/docs/dev/app-dev/media/audio-kit/audio-kit-intro)。
    * 进行音视频通话时，若您的应用处于Overhead场景（设备发热严重或负载较重，Level=4），请降低码率和帧率，或关闭视频流降级为音频。相关说明请参见Basic Services Kit（基础服务）提供的接口[getLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resourceschedule-systemload#systemloadgetlevel)()。
 3. 在项目工程的 **src/main/ets/pages**目录添加：视频接听页面CalleePage.ets，代码示例如下：
 
@@ -402,9 +402,9 @@ format: md
    ```
 
    * [projectId]：项目ID，登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“开发与服务”，在项目列表中选择对应的项目，左侧导航栏选择“项目设置”，在该页面获取。
-   * Authorization：JWT格式字符串，可参见[基于服务账号生成鉴权令牌](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-jwt-token)进行获取。
+   * Authorization：JWT格式字符串，可参见[基于服务账号生成鉴权令牌](/docs/dev/app-dev/application-services/push-kit-guide/push-server/push-jwt-token)进行获取。
    * push-type：10表示应用内通话消息场景。
-   * token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)章节获取。
+   * token：Push Token，可参见[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)章节获取。
    * extraData：携带的额外数据，字符串类型。详情参见[VoIPCallPayload 应用内通话消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#voipcallpayload-应用内通话消息)中extraData参数用法。extraData数据获取请参考[示例代码](https://gitcode.com/harmonyos_samples/push-kit-sample-code-clientdemo-arkts/blob/master/entry/src/main/ets/service/VoipCallService.ets)。
    * ttl：消息缓存时间，建议设置为30~60秒，详见pushOptions.[ttl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#pushoptions)。
 
@@ -415,7 +415,7 @@ format: md
 
 ### 未接来电通知
 
-1. 如果您需要给被叫方发送未接来电通知，应用服务器可以调用REST API推送[通知消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-alert)。以通知消息为例，请求示例如下：
+1. 如果您需要给被叫方发送未接来电通知，应用服务器可以调用REST API推送[通知消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-send-alert)。以通知消息为例，请求示例如下：
 
    ```
    // Request URL
@@ -449,6 +449,6 @@ format: md
    ```
 
    * push-type：0表示通知消息场景。
-   * category：消息自分类类别，设置为MISS\_CALL，请参见[参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)，发送消息前请确保您已[申请通知消息自分类权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请通知消息自分类权益)。
-   * appMessageId：应用消息的唯一标识。被叫挂断，被叫方VoIP应用在前台时应用可以通过调用[Notification Kit（用户通知服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-overview)发送未接来电通知。被叫方VoIP应用在后台时，可以通过Push推送未接来电通知。应用可能存在前后台状态判断不准确，同一电话会产生两条未接来电，建议您通过Notification Kit和Push Kit推送的未接来电通知使用相同的appMessageId，系统会进行通知去重。
+   * category：消息自分类类别，设置为MISS\_CALL，请参见[参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)，发送消息前请确保您已[申请通知消息自分类权益](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#申请通知消息自分类权益)。
+   * appMessageId：应用消息的唯一标识。被叫挂断，被叫方VoIP应用在前台时应用可以通过调用[Notification Kit（用户通知服务）](/docs/dev/app-dev/application-services/notification-kit/notification-overview)发送未接来电通知。被叫方VoIP应用在后台时，可以通过Push推送未接来电通知。应用可能存在前后台状态判断不准确，同一电话会产生两条未接来电，建议您通过Notification Kit和Push Kit推送的未接来电通知使用相同的appMessageId，系统会进行通知去重。
    * 其他参数说明可参见[通知消息请求体参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#alertpayload-通知消息)。

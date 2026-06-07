@@ -1,6 +1,6 @@
 ---
 title: "状态管理V1和V2混用指导（API version 19前）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-mixusage-before-api-version
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/v1v2-mixing/arkts-v1-v2-mixusage-before-api-version
 format: md
 ---
 
@@ -30,23 +30,23 @@ format: md
 
   + V2普通变量（未使用状态变量装饰器）传递给V1自定义组件：
 
-    如果V1使用状态变量接收该数据，只能使用[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)、[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)、[@Provide](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)这三种V1的状态变量装饰器。
+    如果V1使用状态变量接收该数据，只能使用[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)、[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)、[@Provide](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)这三种V1的状态变量装饰器。
   + V2状态变量（使用状态变量装饰器）传递给V1自定义组件：
 
-    如果V1使用状态变量装饰器（同样仅限@State、@Prop、@Provide支持）装饰接收的数据，不支持内置类型数据：Array、Set、Map、Date。需要注意V2状态变量支持Function类型，但是V1的状态变量装饰器均不支持Function类型，传递Function类型会导致运行时校验报错。以@State为例，详情见[@State限制条件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state#限制条件)。
-  + V1中[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)遵循其原本初始化规则，只能被V1状态变量初始化，详情见[@Link初始化规则示意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link#变量的传递访问规则说明)。
+    如果V1使用状态变量装饰器（同样仅限@State、@Prop、@Provide支持）装饰接收的数据，不支持内置类型数据：Array、Set、Map、Date。需要注意V2状态变量支持Function类型，但是V1的状态变量装饰器均不支持Function类型，传递Function类型会导致运行时校验报错。以@State为例，详情见[@State限制条件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state#限制条件)。
+  + V1中[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)遵循其原本初始化规则，只能被V1状态变量初始化，详情见[@Link初始化规则示意图](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link#变量的传递访问规则说明)。
 
 ## 限制条件
 
 * V1和V2的装饰器不允许混用。
 
   V1的组件内装饰器不支持在V2的自定义组件中使用，V2的组件内装饰器也不支持在V1的自定义组件中使用，编译会报错。
-* V1装饰器不能和[@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)一起使用，否则编译报错。
-* V2装饰器不能和[@Observed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)一起使用，否则编译报错。
+* V1装饰器不能和[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)一起使用，否则编译报错。
+* V2装饰器不能和[@Observed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)一起使用，否则编译报错。
 * V1->V2传递状态变量只支持简单类型，不允许传复杂类型的状态变量。比如传递@Observed装饰的class、装饰器修饰的built-in类型（Array、Map、Set、Date），编译报错。
 * V2->V1可以传简单类型状态变量和普通class。如果传递@ObservedV2装饰的class、装饰器修饰的built-in类型（Array、Map、Set、Date），编译报错。
 * V1中@ObjectLink只接受@Observed装饰的class初始化。
-* V1中[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)遵循其原本初始化规则，只能被V1状态变量初始化，详情见[@Link初始化规则示意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link#变量的传递访问规则说明)。
+* V1中[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)遵循其原本初始化规则，只能被V1状态变量初始化，详情见[@Link初始化规则示意图](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link#变量的传递访问规则说明)。
 * 多个装饰器不允许装饰同一个变量（@Watch、@Once、@Require除外）。
 
   ```
@@ -112,7 +112,7 @@ struct IndexSix {
 
 ### 传递未被装饰的变量
 
-当变量未被装饰器装饰时，不具备被观测的能力。将该变量传递给V2时，需注意V2组件对数据输入有严格的管理，必须通过[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)装饰器接收。V2中接收数据的观测能力为@Param能力，对于接收的Class，需要通过@ObservedV2和@Trace才能观察变化。
+当变量未被装饰器装饰时，不具备被观测的能力。将该变量传递给V2时，需注意V2组件对数据输入有严格的管理，必须通过[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)装饰器接收。V2中接收数据的观测能力为@Param能力，对于接收的Class，需要通过@ObservedV2和@Trace才能观察变化。
 
 以下代码示例中，定义了ChildTwo为V2组件，组件接受message、undefinedVal、info等参数。ChildTwo中用@Param接收的简单类型message和undefinedVal，能观测到变化；Class类型变量info未被@ObservedV2和@Trace修饰，无法观测到类属性变化。
 

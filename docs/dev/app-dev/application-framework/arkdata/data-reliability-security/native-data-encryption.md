@@ -1,6 +1,6 @@
 ---
 title: "数据库加密 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-data-encryption
+original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/native-data-encryption
 format: md
 ---
 

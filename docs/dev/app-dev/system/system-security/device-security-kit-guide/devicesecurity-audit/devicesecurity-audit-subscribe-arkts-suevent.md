@@ -1,6 +1,6 @@
 ---
 title: "单客户端订阅场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts-suevent
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-subscribe-arkts-suevent
 format: md
 ---
 
@@ -59,7 +59,7 @@ format: md
 ![](./img/79d1cef6.png)
 
 * еңЁејҖеҸ‘еҮҶеӨҮиҝҮзЁӢдёӯпјҢйңҖиҰҒз”іиҜ·жқғйҷҗпјҡohos.permission.QUERY\_AUDIT\_EVENTгҖӮ
-* еҸӘе…Ғи®ёжё…еҚ•еҶ…зҡ„дјҒдёҡзұ»еә”з”Ёз”іиҜ·иҜҘжқғйҷҗпјҢз”іиҜ·ж–№ејҸиҜ·еҸӮиҖғпјҡ[з”іиҜ·дҪҝз”ЁдјҒдёҡзұ»еә”з”ЁеҸҜз”Ёжқғйҷҗ](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-enterprise-apps)гҖӮ
+* еҸӘе…Ғи®ёжё…еҚ•еҶ…зҡ„дјҒдёҡзұ»еә”з”Ёз”іиҜ·иҜҘжқғйҷҗпјҢз”іиҜ·ж–№ејҸиҜ·еҸӮиҖғпјҡ[з”іиҜ·дҪҝз”ЁдјҒдёҡзұ»еә”з”ЁеҸҜз”Ёжқғйҷҗ](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-enterprise-apps)гҖӮ
 
 1. еҜје…ҘDevice Security KitжЁЎеқ—еҸҠзӣёе…іе…¬е…ұжЁЎеқ—гҖӮ
 

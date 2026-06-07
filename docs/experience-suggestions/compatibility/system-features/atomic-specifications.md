@@ -1,6 +1,6 @@
 ---
 title: "元服务规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/atomic-specifications
+original_url: /docs/experience-suggestions/compatibility/system-features/atomic-specifications
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [元服务程序包基础知识](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-package-basics) |
+| **说明** | [元服务程序包基础知识](/docs/dev/atomic-dev/atomic-service/atomic-service-package-basics) |
 
 |  |  |
 | --- | --- |
@@ -21,7 +21,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [元服务程序包基础知识](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-package-basics) |
+| **说明** | [元服务程序包基础知识](/docs/dev/atomic-dev/atomic-service/atomic-service-package-basics) |
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [应用配置文件（Stage模型）-module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file) |
+| **说明** | [应用配置文件（Stage模型）-module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file) |
 
 |  |  |
 | --- | --- |
@@ -45,7 +45,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [预加载](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-preparing-for-loading) |
+| **说明** | [预加载](/docs/dev/atomic-dev/atomic-subpackage-loading/atomic-preparing-for-loading) |
 
 |  |  |
 | --- | --- |
@@ -53,7 +53,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [元服务登录](https://developer.huawei.com/consumer/cn/doc/design-guides/accounts-0000001967444380) |
+| **说明** | [元服务登录](/docs/design/atomic-service-design/best-practices/accounts) |
 
 |  |  |
 | --- | --- |
@@ -85,7 +85,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [元服务不支持隐式跳转](https://developer.huawei.com/consumer/cn/doc/atomic-guides/start-other-atomicservices) |
+| **说明** | [元服务不支持隐式跳转](/docs/dev/atomic-dev/atomic-service-framework-development/start-other-atomicservices) |
 
 |  |  |
 | --- | --- |
@@ -93,7 +93,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [使用元服务Web组件](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomicserviceweb-guidelines) |
+| **说明** | [使用元服务Web组件](/docs/dev/atomic-dev/atomic-web-development/atomicserviceweb-guidelines) |
 
 |  |  |
 | --- | --- |
@@ -101,7 +101,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [场景化Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button) |
+| **说明** | [场景化Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button) |
 
 |  |  |
 | --- | --- |
@@ -109,7 +109,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [快速验证手机号Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-getphonenumber) |
+| **说明** | [快速验证手机号Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber) |
 
 |  |  |
 | --- | --- |
@@ -117,4 +117,4 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙元服务 |
-| **说明** | [选择头像Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-chooseavatar) |
+| **说明** | [选择头像Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-chooseavatar) |

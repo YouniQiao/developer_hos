@@ -1,6 +1,6 @@
 ---
 title: "自定义组件的自定义布局"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-layout
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-page-custom-components-layout
 format: md
 ---
 

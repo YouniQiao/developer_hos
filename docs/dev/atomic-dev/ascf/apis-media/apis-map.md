@@ -1,6 +1,6 @@
 ---
 title: "地图"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-map
+original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-map
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 has.createMapContext(string mapId): MapContext
 
-创建[map](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-map)上下文MapContext对象。
+创建[map](/docs/dev/atomic-dev/ascf/components-map-components/components-map)上下文MapContext对象。
 
 **起始版本：** 1.0.0
 
@@ -39,7 +39,7 @@ MapContext.getCenterLocation(Object object)
 
 **起始版本：** 1.0.0
 
-**注意事项**：在调用此接口时如果使用网络资源，需要先完成[配置服务器域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)。
+**注意事项**：在调用此接口时如果使用网络资源，需要先完成[配置服务器域名](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。
 
 **参数：**
 
@@ -316,7 +316,7 @@ MapContext.moveToLocation(Object object)
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.APPROXIMATELY\_LOCATION**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)申请[scope.userLocation](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)授权。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)申请[scope.userLocation](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)授权。
 
 **参数：**
 

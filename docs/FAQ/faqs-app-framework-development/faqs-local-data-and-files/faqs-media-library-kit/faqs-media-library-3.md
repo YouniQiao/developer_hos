@@ -1,6 +1,6 @@
 ---
 title: "base64字符串如何转为图片并保存"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-3
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-media-library-kit/faqs-media-library-3
 format: md
 ---
 

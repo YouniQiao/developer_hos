@@ -1,6 +1,6 @@
 ---
 title: "签名配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/configuring-signature
+original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/configuring-signature
 format: md
 ---
 
@@ -103,7 +103,7 @@ ascf generate-csr --keyAlias <key-alias> --keystore <keystore-path> --keystorePw
 ![](./img/05efd7d7.png)
 
 * 证书申请成功即为“生效”状态。目前实名认证开发者的调试证书有效期为180天，未实名开发者的调试证书有效期为14天。若调试过程中出现应用启动被拦截、提示应用过期等问题，可优先排查是否为调试证书过期导致，证书过期后将无法正常完成调试签名。
-* 在调试阶段，如果您更新调试证书，则需要[同步更新调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)，如果您[配置了公钥指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-fingerprint-0000002278002933)，也需要同步做更新。
+* 在调试阶段，如果您更新调试证书，则需要[同步更新调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)，如果您[配置了公钥指纹](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-fingerprint-0000002278002933)，也需要同步做更新。
 * 若证书状态变为“失效”或“已吊销”，表示当前证书已不可用，且通过此证书申请的Profile也会全部失效或吊销。您需要重新申请证书与Profile。
 * 证书一旦废除将不可恢复，且通过此证书申请的Profile也会全部失效，请谨慎操作。
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取支持的编解码能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs
 format: md
 ---
 

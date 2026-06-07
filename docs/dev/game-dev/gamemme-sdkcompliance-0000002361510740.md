@@ -1,9 +1,9 @@
 ---
 title: "SDK合规使用指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gamemme-sdkcompliance-0000002361510740
+original_url: /docs/dev/game-dev/gamemme-sdkcompliance-0000002361510740
 format: md
 ---
 
 
-* **[JS](https://developer.huawei.com/consumer/cn/doc/games-guides/gamemme-sdkcompliance-android-0000002395190657)**
-* **[C#](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sdkcompliance-csharp-0000002361670608)**
+* **[JS](/docs/dev/game-dev/gamemme-sdkcompliance-android-0000002395190657)**
+* **[C#](/docs/dev/game-dev/gameobe-sdkcompliance-csharp-0000002361670608)**

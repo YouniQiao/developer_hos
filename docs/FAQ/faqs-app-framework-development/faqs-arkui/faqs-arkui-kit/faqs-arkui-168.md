@@ -1,7 +1,7 @@
 ---
 format: md
 title: "键盘拉起时列表无法上下滑动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-168
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-168
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "对焦(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-focus
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-focus
 format: md
 ---
 

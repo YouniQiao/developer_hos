@@ -1,6 +1,6 @@
 ---
 title: "CustomInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-custominfo-0000002295005358
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-custominfo-0000002295005358
 format: md
 ---
 
@@ -9,4 +9,4 @@ format: md
 | --- | --- | --- | --- |
 | title | O | String(100) | 自定义章节标题。 |
 | customInfoDesc | O | String(5000) | 自定义章节内容。 |
-| customInfos | O | `List&lt;[CustomChapter](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-customchapter-0000002294845694)>` | 额外的自定义章节详情。  数组长度不超过5。 |
+| customInfos | O | `List&lt;[CustomChapter](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-customchapter-0000002294845694)>` | 额外的自定义章节详情。  数组长度不超过5。 |

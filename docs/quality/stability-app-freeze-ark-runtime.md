@@ -1,6 +1,6 @@
 ---
 title: "栈顶在方舟运行时的应用冻屏问题定位实践"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-ark-runtime
+original_url: /docs/quality/stability-app-freeze-ark-runtime
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 本文旨在指导HarmonyOS应用开发者如何定位定界栈顶在方舟运行时（libark\_jsruntime.so、libace\_napi.z.so）的应用冻屏（AppFreeze）问题。
 
-关于应用冻屏（AppFreeze）问题的基本检测原理可先阅读[应用冻屏问题排查方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-way)。
+关于应用冻屏（AppFreeze）问题的基本检测原理可先阅读[应用冻屏问题排查方法](/docs/quality/stability-app-freeze-way)。
 
 ## 定位思路
 

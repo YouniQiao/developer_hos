@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Tabs如何设置页面margin，使得边距空白跟随页面滑动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-442
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-442
 ---
 
 

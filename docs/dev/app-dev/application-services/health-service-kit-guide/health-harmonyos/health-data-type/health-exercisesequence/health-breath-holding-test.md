@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "潜水闭气测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-breath-holding-test
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-breath-holding-test
 format: md
 ---
 

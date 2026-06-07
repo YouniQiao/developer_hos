@@ -1,15 +1,15 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "MindSpore Lite Kit（昇思推理框架服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-kit
+original_url: /docs/dev/app-dev/ai/mindspore-lite-kit
 format: md
 ---
 
 
-* **[MindSpore Lite Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-kit-introduction)**
-* **[使用MindSpore Lite进行模型转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-converter-guidelines)**
-* **[模型部署](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deployment)**
-* **[使用MindSpore Lite实现图像分类（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-js)**
-* **[使用MindSpore Lite实现图像分类（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-native)**
-* **[使用MindSpore Lite实现语音识别（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-asr-based-native)**
-* **[附录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-appendix)**
+* **[MindSpore Lite Kit简介](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-kit-introduction)**
+* **[使用MindSpore Lite进行模型转换](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-converter-guidelines)**
+* **[模型部署](/docs/dev/app-dev/ai/mindspore-lite-kit/deployment)**
+* **[使用MindSpore Lite实现图像分类（ArkTS）](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-js)**
+* **[使用MindSpore Lite实现图像分类（C/C++）](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-native)**
+* **[使用MindSpore Lite实现语音识别（C/C++）](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-asr-based-native)**
+* **[附录](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-appendix)**

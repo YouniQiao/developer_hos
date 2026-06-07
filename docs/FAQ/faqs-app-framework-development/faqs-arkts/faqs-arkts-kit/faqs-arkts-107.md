@@ -1,7 +1,7 @@
 ---
 format: md
 title: "A持有B，B引用A的场景会不会导致内存泄漏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-107
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-107
 ---
 
 

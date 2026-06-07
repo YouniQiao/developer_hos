@@ -1,6 +1,6 @@
 ---
 title: "DataAbility组件配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-configuration
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-configuration
 format: md
 ---
 
@@ -60,4 +60,4 @@ config.json配置样例
 ]
 ```
 
-DataAbility支持的配置项及详细说明详见[module对象内部结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure)。
+DataAbility支持的配置项及详细说明详见[module对象内部结构](/docs/dev/app-dev/getting-started/dev-fundamentals/module-structure)。

@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/func-call-spacing"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_func-call-spacing
+original_url: /docs/tools/coding-debug/ide_func-call-spacing
 format: md
 ---
 

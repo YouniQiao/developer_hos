@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "是否能在删除商品后添加具有相同productId的商品？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-11
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-18
 format: md
 ---
 

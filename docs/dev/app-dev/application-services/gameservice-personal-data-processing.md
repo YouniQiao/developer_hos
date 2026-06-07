@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-personal-data-processing
+original_url: /docs/dev/app-dev/application-services/gameservice-personal-data-processing
 format: md
 ---
 

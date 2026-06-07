@@ -1,6 +1,6 @@
 ---
 title: "元服务大屏设备适配指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-large-screen-adaptation
+original_url: /docs/dev/atomic-dev/atomic-ui-development/atomic-service-large-screen-adaptation
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ### 如何适配布局
 
-建议在产品设计的早期阶段就纳入多设备适配的考量，通过统一规划实现跨终端的功能布局与用户体验一致性。推荐采用响应式布局和自适应布局实现页面动态布局，如下图以手机设备为参照，体现在大屏设备适配后的布局效果。详细内容参考[多设备界面开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page)和[大屏应用UX体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-large-screen-0000001807707561)中的关于布局的开发设计指南。
+建议在产品设计的早期阶段就纳入多设备适配的考量，通过统一规划实现跨终端的功能布局与用户体验一致性。推荐采用响应式布局和自适应布局实现页面动态布局，如下图以手机设备为参照，体现在大屏设备适配后的布局效果。详细内容参考[多设备界面开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page)和[大屏应用UX体验标准](/docs/design/ux-standards/large-screen-ux)中的关于布局的开发设计指南。
 
 **图1 响应式布局示意图**
 

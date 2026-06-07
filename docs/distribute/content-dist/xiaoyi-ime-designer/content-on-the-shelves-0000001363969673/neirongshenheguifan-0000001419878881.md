@@ -1,7 +1,7 @@
 ---
 title: "内容审核规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/neirongshenheguifan-0000001419878881
+original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/neirongshenheguifan-0000001419878881
 ---
 
 

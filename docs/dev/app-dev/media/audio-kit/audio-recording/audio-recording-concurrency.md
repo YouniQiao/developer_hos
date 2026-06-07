@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "录音并发策略说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording-concurrency
+original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/audio-recording-concurrency
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ## 录音并发
 
-此前，系统不支持不同应用程序间不同录音流类型的录音并发，会受到严格的[音频焦点策略管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#音频焦点策略)。
+此前，系统不支持不同应用程序间不同录音流类型的录音并发，会受到严格的[音频焦点策略管控](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#音频焦点策略)。
 
 内录型与外录型音频输入之间的并发录音在安全隐私策略允许下不受此限制，例如在录屏应用中启用内录流时，可以同时使用录音机录音或语音助手进行语音识别。
 
@@ -36,7 +36,7 @@ format: md
 
 应用发起录音时，系统会依据应用下发的录音流类型等相关参数识别音频场景，并选择合适的策略处理输入数据。例如，当应用发起VoIP通话时，系统会对VoIP录音流进行降低噪声、增强人声等优化处理。
 
-一些录音流类型的音频录制仅需获取音频输入数据即可，但另一些录音流类型的音频录制则高度依赖于系统的优化处理，不当的处理可能会导致不良体验。因此，对于这类录音流类型的音频录制，在并发录音时需确保系统仍能配置适当的优化处理策略。为此，系统为这些录音流类型配置了优先级，并在原有的[音频焦点策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#音频焦点策略)管控方案上增加了优先级调控方案。
+一些录音流类型的音频录制仅需获取音频输入数据即可，但另一些录音流类型的音频录制则高度依赖于系统的优化处理，不当的处理可能会导致不良体验。因此，对于这类录音流类型的音频录制，在并发录音时需确保系统仍能配置适当的优化处理策略。为此，系统为这些录音流类型配置了优先级，并在原有的[音频焦点策略](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#音频焦点策略)管控方案上增加了优先级调控方案。
 
 其调控原则是**优先采用高优先级录音流类型对应的优化策略处理音频输入数据**。
 
@@ -44,12 +44,12 @@ format: md
 
 当前录音并发策略整体遵循如下原则：
 
-1. 在并发录音时，是否能同时获取音频输入数据取决于各录音流类型的[音频焦点策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#音频焦点策略)，开发人员需确保焦点适配良好。
+1. 在并发录音时，是否能同时获取音频输入数据取决于各录音流类型的[音频焦点策略](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#音频焦点策略)，开发人员需确保焦点适配良好。
 2. 音频输入数据的效果将根据系统依据当前优先级调控方案选择的优化处理策略来决定，建议开发人员在并发录音时告知用户录音数据的效果可能受到影响。
 
 ## 使用建议
 
-当前系统通过[音频焦点策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#音频焦点策略)与优先级调控的双重机制，针对录音并发场景做了初步管理。尽管系统已经允许个别不同录音流类型的流实现有限并行录音，但仍需注意以下关键点：
+当前系统通过[音频焦点策略](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#音频焦点策略)与优先级调控的双重机制，针对录音并发场景做了初步管理。尽管系统已经允许个别不同录音流类型的流实现有限并行录音，但仍需注意以下关键点：
 
 ### 录音并发的局限性
 
@@ -58,10 +58,10 @@ format: md
 
 ### 对开发者的建议
 
-* 了解[音频焦点策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#音频焦点策略)，做好焦点适配，及时[处理音频焦点变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#处理音频焦点变化)。
+* 了解[音频焦点策略](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#音频焦点策略)，做好焦点适配，及时[处理音频焦点变化](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#处理音频焦点变化)。
 * 尽量避免并发录音场景，在应用设计时尽量避免与其他录音任务重叠。如需要，可以在界面中提示用户“当前存在其他录音任务”。
 
   如果必须进行并发录音，建议在界面上明确告知用户音频质量可能会受到影响。
-* 不同的录音流类型对应着不同的系统优化处理策略，建议开发者根据需求选择合适的[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)，具体可参考指南：[使用合适的音频流类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-and-sourcetype)。
+* 不同的录音流类型对应着不同的系统优化处理策略，建议开发者根据需求选择合适的[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)，具体可参考指南：[使用合适的音频流类型](/docs/dev/app-dev/media/audio-kit/using-right-streamusage-and-sourcetype)。
 * 在没有录音需求时，应及时停止并释放录音资源，避免对其他录音流产生影响，并减少不必要的系统开销。
 * 应用实现不应过度依赖固定的录音并发规则，而应根据系统接口返回的状态进行自适应处理。

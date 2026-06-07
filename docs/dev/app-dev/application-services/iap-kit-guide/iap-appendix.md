@@ -1,6 +1,6 @@
 ---
 title: "Iap Appendix"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-appendix
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-appendix
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

@@ -1,6 +1,6 @@
 ---
 title: "批量创建门店"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-batch-create
+original_url: /docs/dev/atomic-dev/instant-service-store/instant-service-store-batch-create
 format: md
 ---
 

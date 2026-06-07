@@ -1,6 +1,6 @@
 ---
 title: "数字盾签名密钥备份与恢复"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-backupdata
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-backupdata
 format: md
 ---
 
@@ -119,7 +119,7 @@ format: md
      console.error(`promise: wrapKeyItem failed`);
    });
    ```
-3. 从服务器获取当前账号在[设置数字盾密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd)时获取的authID并以authID为索引向数字盾服务发起数据导入请求。
+3. 从服务器获取当前账号在[设置数字盾密码](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd)时获取的authID并以authID为索引向数字盾服务发起数据导入请求。
 
    ```
      try {

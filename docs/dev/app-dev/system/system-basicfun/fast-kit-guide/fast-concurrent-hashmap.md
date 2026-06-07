@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用ConcurrentHashmap在多线程下完成键值信息的查找维护"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-concurrent-hashmap
+original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-concurrent-hashmap
 format: md
 ---
 

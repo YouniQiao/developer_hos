@@ -1,6 +1,6 @@
 ---
 title: "开发适用串口协议的设备驱动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-serial-ddk-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/usb-serial-ddk-guidelines
 format: md
 ---
 
@@ -48,7 +48,7 @@ format: md
 
 ## 环境搭建
 
-请参考[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/environmental-preparation)完成开发前的准备工作。
+请参考[环境准备](/docs/dev/app-dev/system/system-hardware/driver-development-kit/environmental-preparation)完成开发前的准备工作。
 
 ## 开发指导
 

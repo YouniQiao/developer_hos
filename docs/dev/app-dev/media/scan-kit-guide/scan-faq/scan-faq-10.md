@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自定义界面扫码如何连续扫码（customScan.rescan）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-10
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-10
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "24h功耗器件分解统计事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-battery-usage-event
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/ev-24-hour-battery-usage-event/hiappevent-watcher-battery-usage-event
 format: md
 ---
 
@@ -11,11 +11,11 @@ format: md
 
 如需了解如何使用HiAppEvent提供订阅24h功耗器件分解统计事件，请参考以下文档。目前仅提供ArkTS接口。
 
-* [订阅24h功耗器件分解统计事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-battery-usage-arkts)
+* [订阅24h功耗器件分解统计事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/ev-24-hour-battery-usage-event/hiappevent-watcher-battery-usage-arkts)
 
 ![](./img/8dd5ea73.png)
 
-24h功耗器件分解统计事件不支持在[应用分身场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)或[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)使用HiAppEvent进行订阅，从API version 22开始支持在[输入法应用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)下使用HiAppEvent进行订阅。
+24h功耗器件分解统计事件不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)使用HiAppEvent进行订阅，从API version 22开始支持在[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
 
 ## 检测原理
 

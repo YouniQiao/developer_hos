@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Agent Framework Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-introduction
+original_url: /docs/dev/app-dev/ai/harmony-agent-framework-kit-guide/hmaf-introduction
 format: md
 ---
 

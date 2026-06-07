@@ -1,7 +1,7 @@
 ---
 title: "调测流程"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-commondeeplink-test-0000002039774721
+original_url: /docs/monetize/promotion/bp-functions-commondeeplink-test-0000002039774721
 format: md
 ---
 

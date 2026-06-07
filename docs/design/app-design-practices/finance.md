@@ -1,7 +1,7 @@
 ---
 title: 金融理财类
 sidebar_label: 金融理财类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples6-0000001793536905
+original_url: /docs/design/app-design-practices/finance
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 
 |  |
 | --- |
-| 银行理财类应用的首页通常会有图标、卡片和沉浸式广告图。在多端宽屏适配时，可通过延伸布局露出更多图标信息，当入口图标数量固定时，也可以通过图标背景的形变为宽屏设备提供更舒适的布局体验。  ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250709120734.52019006277834441752122062307318:50001231000000:2800:B066E77412EFF97B6F79173C3853082366CFA6E0F2BF6DCB0DA4CA93655C6F5E.png "点击放大")  延伸布局的开发指南，请参阅[自适应布局。](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout) |
+| 银行理财类应用的首页通常会有图标、卡片和沉浸式广告图。在多端宽屏适配时，可通过延伸布局露出更多图标信息，当入口图标数量固定时，也可以通过图标背景的形变为宽屏设备提供更舒适的布局体验。  ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250709120734.52019006277834441752122062307318:50001231000000:2800:B066E77412EFF97B6F79173C3853082366CFA6E0F2BF6DCB0DA4CA93655C6F5E.png "点击放大")  延伸布局的开发指南，请参阅[自适应布局。](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout) |
 | 银行类应用建议在平板上，可在右侧展示更多的推荐内容，宽度可与直板机保持一致。  ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250709120734.10249999146984116799021092348113:50001231000000:2800:D149C4A00BEF00E0655C8901CE8580C8771CE7A398516BF4F3F11B94CB30E999.png "点击放大") |
 
 ### 金融资讯页
@@ -58,7 +58,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250709120735.38207682003733306714691210010274:50001231000000:2800:9B0A44ED5E3D3C7AD4F50BB83F2CDB4F4501BBE290B56423B946EB992021702F.png "点击放大")
 
-分栏组件的开发指南，请参阅[一多开发实例 (银行理财)。](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-financial-app#section1796912148314)
+分栏组件的开发指南，请参阅[一多开发实例 (银行理财)。](/docs/dev/app-dev/multi-device/multi-financial-app#section1796912148314)
 
 ## 宫格卡片的多股同列
 

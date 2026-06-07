@@ -1,7 +1,7 @@
 ---
 title: "@correctness/multimedia-use-stride-in-image-receiver"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-multimedia-use-stride-in-image-receiver
+original_url: /docs/tools/coding-debug/ide-multimedia-use-stride-in-image-receiver
 format: md
 ---
 

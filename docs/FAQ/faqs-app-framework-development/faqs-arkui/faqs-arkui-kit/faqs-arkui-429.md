@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何区分onPageHide的两种场景：应用退到后台，以及有新的页面打开"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-429
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-429
 ---
 
 

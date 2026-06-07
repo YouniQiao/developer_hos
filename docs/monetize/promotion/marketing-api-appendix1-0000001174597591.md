@@ -1,7 +1,7 @@
 ---
 title: "枚举值"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591
+original_url: /docs/monetize/promotion/marketing-api-appendix1-0000001174597591
 format: md
 ---
 

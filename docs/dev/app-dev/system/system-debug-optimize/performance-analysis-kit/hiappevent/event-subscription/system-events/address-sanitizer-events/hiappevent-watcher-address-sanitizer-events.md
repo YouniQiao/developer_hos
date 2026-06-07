@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "地址越界事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events
 format: md
 ---
 
@@ -12,16 +12,16 @@ format: md
 
 开发者可通过HiAppEvent接口订阅地址越界事件，请参考以下文档。目前提供ArkTS和C/C++两种接口，按需选择。
 
-* [订阅地址越界事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-arkts)
-* [订阅地址越界事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-ndk)
+* [订阅地址越界事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events-arkts)
+* [订阅地址越界事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events-ndk)
 
 ![](./img/986513db.png)
 
-地址越界事件支持在[应用分身](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)场景下使用 HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。不支持在元服务场景下使用 HiAppEvent 进行订阅。
+地址越界事件支持在[应用分身](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)场景下使用 HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。不支持在元服务场景下使用 HiAppEvent 进行订阅。
 
 ## 检测原理
 
-详见[地址越界类问题检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-guidelines)。
+详见[地址越界类问题检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/address-sanitizer-guidelines)。
 
 ## 页面切换日志规格自定义参数
 
@@ -75,7 +75,7 @@ hiAppEvent.configEventPolicy(policy).then(() => {
 | type | string | 地址越界错误类型，取值范围详见type属性。 |
 | external\_log | string[] | 故障日志文件路径。**为避免目录空间超限（限制参考log\_over\_limit），导致新生成的日志文件写入失败，日志文件处理完后请及时删除。** |
 | log\_over\_limit | boolean | 生成的故障日志文件与已存在的日志文件总大小是否超过5M上限。true表示超过上限，日志写入失败；false表示未超过上限。 |
-| page\_switch\_log | string | 页面切换日志路径，日志介绍详见[页面切换日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageswitch-log)。  **说明**：从API version 24开始支持。 |
+| page\_switch\_log | string | 页面切换日志路径，日志介绍详见[页面切换日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection/pageswitch-log)。  **说明**：从API version 24开始支持。 |
 
 ### type字段说明
 
@@ -83,11 +83,11 @@ hiAppEvent.configEventPolicy(policy).then(() => {
 
 | 取值 | 说明 |
 | --- | --- |
-| GWP-ASAN | 由[GWP-ASan](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-gwpasan-detection)触发的错误类型。 |
-| UBSAN | 由[UBSan](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ubsan-detection)触发的错误类型。 |
-| TSAN | 由[TSan](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-tsan-detection)触发的错误类型。 |
-| FDSAN | 从API version 20开始，可以支持订阅由[fdsan](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fdsan)触发的错误类型。 |
-| stack tag-mismatch | [HWASan](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-hwasan-detection)检测堆栈标记不匹配，可能是因为堆栈返回后使用、堆栈范围外使用或出界。 |
+| GWP-ASAN | 由[GWP-ASan](/docs/quality/stability-gwpasan-detection)触发的错误类型。 |
+| UBSAN | 由[UBSan](/docs/quality/stability-ubsan-detection)触发的错误类型。 |
+| TSAN | 由[TSan](/docs/quality/stability-tsan-detection)触发的错误类型。 |
+| FDSAN | 从API version 20开始，可以支持订阅由[fdsan](/docs/dev/ndk-dev/fdsan)触发的错误类型。 |
+| stack tag-mismatch | [HWASan](/docs/quality/stability-hwasan-detection)检测堆栈标记不匹配，可能是因为堆栈返回后使用、堆栈范围外使用或出界。 |
 | alloc-dealloc-mismatch | 内存分配和释放方式不匹配。 |
 | allocation-size-too-big | 分配过大的堆内存。 |
 | calloc-overflow | calloc分配内存错误。 |

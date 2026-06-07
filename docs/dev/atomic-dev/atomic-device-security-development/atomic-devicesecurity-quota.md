@@ -1,6 +1,6 @@
 ---
 title: "服务配额"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-quota
+original_url: /docs/dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-quota
 format: md
 ---
 

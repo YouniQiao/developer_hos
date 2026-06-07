@@ -1,6 +1,6 @@
 ---
 title: "如何在ArkTS中实现运行时注解的能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-77
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-77
 format: md
 ---
 

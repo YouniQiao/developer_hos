@@ -1,6 +1,6 @@
 ---
 title: "如何在键盘弹出时，让内容上移，而不是整个页面上移"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-53
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-53
 format: md
 ---
 

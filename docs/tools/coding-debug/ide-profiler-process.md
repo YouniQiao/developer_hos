@@ -1,7 +1,7 @@
 ---
 title: "性能优化过程简介"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-profiler-process
+original_url: /docs/tools/coding-debug/ide-profiler-process
 format: md
 ---
 

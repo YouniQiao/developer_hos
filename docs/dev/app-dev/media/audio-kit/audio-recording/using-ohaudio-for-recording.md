@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "推荐使用OHAudio开发音频录制功能(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording
+original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording
 format: md
 ---
 
@@ -115,7 +115,7 @@ OH_AudioStreamBuilder_Destroy(builder);
    注意，音频录制的音频数据需要通过回调接口读入，开发者要实现回调接口，从API version 12开始支持使用[OH\_AudioStreamBuilder\_SetCapturerReadDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setcapturerreaddatacallback)设置回调函数。回调函数的声明请查看[OH\_AudioCapturer\_OnReadDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiocapturer-h#oh_audiocapturer_onreaddatacallback)。
 3. 设置音频回调函数。
 
-   多音频并发处理可参考文档[处理音频焦点事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency)，仅接口语言差异。
+   多音频并发处理可参考文档[处理音频焦点事件](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency)，仅接口语言差异。
 
    ```
    void MyOnReadData_NewAPI(

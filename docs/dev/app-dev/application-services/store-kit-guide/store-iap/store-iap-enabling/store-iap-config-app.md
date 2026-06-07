@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "配置应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-config-app
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-enabling/store-iap-config-app
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "(可选)授权客户投放伙伴管理账户"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-authorize-0000001346774281
+original_url: /docs/monetize/promotion/bp-start-guest-authorize-0000001346774281
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/5f54506b23cb.png) 
 
-在进行授权前，需要先申请获得推广权限，具体请参见[申请推广评测](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-apply-evaluation-0000001346654709)。
+在进行授权前，需要先申请获得推广权限，具体请参见[申请推广评测](/docs/monetize/promotion/bp-start-guest-apply-evaluation-0000001346654709)。
 
 <strong>授权应用参加客户激励活动获得的激励金（如：星火计划、月度激励等）将通过被授权的客户投放伙伴发放。</strong>
 

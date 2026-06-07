@@ -1,6 +1,6 @@
 ---
 title: "获取当前发言玩家列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enablespeakersdetection-harmonyos-0000002393621545
+original_url: /docs/dev/game-dev/games-gamemme-enablespeakersdetection-harmonyos-0000002393621545
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
+您已[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
 
 ## 开发步骤
 

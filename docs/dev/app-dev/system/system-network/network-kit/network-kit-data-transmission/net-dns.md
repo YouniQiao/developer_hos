@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用DNS解析域名"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-dns
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/net-dns
 format: md
 ---
 

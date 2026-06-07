@@ -1,6 +1,6 @@
 ---
 title: "申请企业MDM应用发布证书"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-mdm-cert-0000002283256801
+original_url: /docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-enterprise-mdm-cert-0000002283256801
 format: md
 ---
 
@@ -20,13 +20,13 @@ MDM（Mobile Device Management，移动设备管理）是一种企业级的IT应
 权限2和3可向华为运营人员申请开通。在收到您的申请后，华为运营人员将在1-3个工作日内为您安排对接人员。申请方法如下：
 
 * 申请邮箱地址：agconnect@huawei.com。
-* 邮件标题：[申请企业MDM应用发布证书和发布Profile]-[应用名称]-[应用包名]-[APP ID]-[Developer ID]，Developer ID等查询方法可参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。
+* 邮件标题：[申请企业MDM应用发布证书和发布Profile]-[应用名称]-[应用包名]-[APP ID]-[Developer ID]，Developer ID等查询方法可参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。
 * 邮件正文：请说明申请原因。
 
 #### 准备工作
 
 * 请准备好[证书请求文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)。
-* 请确保您的账号角色已[获取“访问发布类证书”权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
+* 请确保您的账号角色已[获取“访问发布类证书”权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
 
 #### 操作步骤
 

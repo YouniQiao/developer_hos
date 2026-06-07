@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何使HSP包版本号统一"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-34
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-34
 ---
 
 
@@ -11,7 +11,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **解决措施**
 
-HSP和宿主HAP一起安装时，校验严格。包名、版本号、sdk版本号、releaseType需一致。可以通过打包工具：[版本归一指令（versionNormalize）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-tool#版本归一指令versionnormalize)，将多个HAP、HSP的版本统一。
+HSP和宿主HAP一起安装时，校验严格。包名、版本号、sdk版本号、releaseType需一致。可以通过打包工具：[版本归一指令（versionNormalize）](/docs/dev/app-dev/system/packing-tool#版本归一指令versionnormalize)，将多个HAP、HSP的版本统一。
 
 示例：
 

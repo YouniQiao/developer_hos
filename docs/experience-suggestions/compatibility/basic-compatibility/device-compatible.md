@@ -1,6 +1,6 @@
 ---
 title: "设备兼容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-compatible
+original_url: /docs/experience-suggestions/compatibility/basic-compatibility/device-compatible
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，智慧屏，车机 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [智慧多窗的基本介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro) |
+| **说明** | [智慧多窗的基本介绍](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-intro) |
 
 |  |  |
 | --- | --- |
@@ -21,7 +21,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 折叠屏 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [折叠屏设计](https://developer.huawei.com/consumer/cn/doc/design-guides/folding-screen-0000001929865346)  展开态不应出现操作步骤增加，操作更复杂等体验下降的情况。  不应破坏应用内原有的沉浸式体验，避免仅仅为了扩充内容或强制应用分屏而过度改变用户体验和用户习惯。  在折叠态和展开态之间切换时，需要保证当前任务的连续性。  参考：[折叠屏应用开发-手机-多端设备体验提升](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-foldable-guide#section152264061715) |
+| **说明** | [折叠屏设计](https://developer.huawei.com/consumer/cn/doc/design-guides/folding-screen-0000001929865346)  展开态不应出现操作步骤增加，操作更复杂等体验下降的情况。  不应破坏应用内原有的沉浸式体验，避免仅仅为了扩充内容或强制应用分屏而过度改变用户体验和用户习惯。  在折叠态和展开态之间切换时，需要保证当前任务的连续性。  参考：[折叠屏应用开发-手机-多端设备体验提升](/docs/dev/app-dev/multi-device/bpta-foldable-guide#section152264061715) |
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 折叠屏，折叠PC |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [折叠屏设计-悬停态](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-foldable-guide#section1223242181220) |
+| **说明** | [折叠屏设计-悬停态](/docs/dev/app-dev/multi-device/bpta-foldable-guide#section1223242181220) |
 
 |  |  |
 | --- | --- |
@@ -45,7 +45,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | PC/2in1 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [人机交互-键盘](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-keyboard-0000001928070488) |
+| **说明** | [人机交互-键盘](/docs/design/hmi/keyboard) |
 
 |  |  |
 | --- | --- |
@@ -53,7 +53,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | PC/2in1 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [人机交互-鼠标](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-mouse-0000001930021626) |
+| **说明** | [人机交互-鼠标](/docs/design/hmi/mouse) |
 
 |  |  |
 | --- | --- |
@@ -61,7 +61,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | PC/2in1 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [人机交互-触控板](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touchpad-0000002464444730) |
+| **说明** | [人机交互-触控板](/docs/design/hmi/touchpad) |
 
 |  |  |
 | --- | --- |
@@ -69,7 +69,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | PC/2in1，平板 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [人机交互-基于焦点的交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus-0000001748650376) |
+| **说明** | [人机交互-基于焦点的交互](/docs/design/hmi/focus) |
 
 |  |  |
 | --- | --- |
@@ -77,7 +77,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | PC/2in1 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [2in1窗口布局](https://developer.huawei.com/consumer/cn/doc/design-guides/window-0000002321868010) |
+| **说明** | [2in1窗口布局](/docs/design/multi-device-design/2in1/window) |
 
 |  |  |
 | --- | --- |
@@ -93,7 +93,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | PC/2in1，平板 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [人机交互-手写笔](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-kit-guide) |
+| **说明** | [人机交互-手写笔](/docs/dev/app-dev/system/system-hardware/pen-kit-guide) |
 
 |  |  |
 | --- | --- |

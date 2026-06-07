@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "音频编码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-encoding
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-encoding
 format: md
 ---
 
@@ -10,16 +10,16 @@ format: md
 
 接口不限制PCM数据的来源，开发者可以调用麦克风录制获取、也可以导入编辑后的PCM数据，通过音频编码，输出对应格式的码流，最后封装为目标格式文件。
 
-当前支持的编码能力请参考[AVCodec支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#音频编码)。
+当前支持的编码能力请参考[AVCodec支持的格式](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#音频编码)。
 
 **适用场景**
 
 * 音频录制
 
-  通过录制传入PCM，然后编码出对应格式的码流，最后[封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-muxer)为所需格式的音频文件。
+  通过录制传入PCM，然后编码出对应格式的码流，最后[封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-muxer)为所需格式的音频文件。
 * 音频编辑
 
-  编辑PCM后导出音频文件的场景，需要编码成对应音频格式后再[封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-muxer)成文件。
+  编辑PCM后导出音频文件的场景，需要编码成对应音频格式后再[封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-muxer)成文件。
 
 ![](./img/c8d65bce.png)
 

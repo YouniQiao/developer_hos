@@ -1,7 +1,7 @@
 ---
 title: "使用跟随应用建议"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-shadow-follow-suggest-use-0000001404363213
+original_url: /docs/monetize/promotion/bp-functions-shadow-follow-suggest-use-0000001404363213
 format: md
 ---
 

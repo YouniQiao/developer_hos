@@ -1,7 +1,7 @@
 ---
 title: "创建活动"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-app-create-0000002182557856
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-app-0000002111387918/game-center-setup-activities-app-create-0000002182557856
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
 
 ## 活动准备
 
-* 已成功[创建应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)，且软件包类型为“APP（HarmonyOS应用）”，支持设备为“手机”。
+* 已成功[创建应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，且软件包类型为“APP（HarmonyOS应用）”，支持设备为“手机”。
 * 提前准备活动落地页素材。
 
   | 准备项 | | 说明 |
@@ -45,7 +45,7 @@ format: md
 
 若创建无奖品活动可跳过该步骤。
 
-通过各类运营活动，为用户提供活动奖励，以直接发奖形式向用户发放奖品，需先配置可添加至运营活动的活动奖品，配置活动奖品操作步骤如下。文中具体参数说明请参见[参数说明](https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-app-param-0000002217355041)。
+通过各类运营活动，为用户提供活动奖励，以直接发奖形式向用户发放奖品，需先配置可添加至运营活动的活动奖品，配置活动奖品操作步骤如下。文中具体参数说明请参见[参数说明](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-app-0000002111387918/game-center-setup-activities-app-param-0000002217355041)。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表中选择需要新增奖品的应用。
 2. 新增奖品。
@@ -55,7 +55,7 @@ format: md
 
 ## 创建活动
 
-配置活动奖品并提交审核后，您可按如下步骤创建活动。文中具体参数说明请参见[参数说明](https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-app-param-0000002217355041)。
+配置活动奖品并提交审核后，您可按如下步骤创建活动。文中具体参数说明请参见[参数说明](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-app-0000002111387918/game-center-setup-activities-app-param-0000002217355041)。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表中选择应用。
 2. 新建活动。

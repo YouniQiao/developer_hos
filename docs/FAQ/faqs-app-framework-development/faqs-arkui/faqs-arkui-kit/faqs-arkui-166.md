@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Scroll里面套一个grid，如何禁用grid的滑动事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-166
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-166
 ---
 
 

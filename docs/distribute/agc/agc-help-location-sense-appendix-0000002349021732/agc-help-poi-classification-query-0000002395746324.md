@@ -1,6 +1,6 @@
 ---
 title: "POI分类"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-poi-classification-query-0000002395746324
+original_url: /docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-poi-classification-query-0000002395746324
 format: md
 ---
 

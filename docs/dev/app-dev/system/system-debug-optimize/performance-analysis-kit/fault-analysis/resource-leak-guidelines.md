@@ -1,6 +1,6 @@
 ---
 title: "Resource Leak（资源泄漏）检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 基本概念
 
-资源泄漏主要分为三类：内存泄漏、句柄泄漏和线程泄漏。对于每种泄漏，系统会通过周期采样的方式对进程的资源使用情况进行检测，如果资源使用超过阈值，会抓取对应维测并上报泄漏事件。通过Hiappevent资源泄漏事件进行订阅，订阅方法详见[资源泄漏事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events)。
+资源泄漏主要分为三类：内存泄漏、句柄泄漏和线程泄漏。对于每种泄漏，系统会通过周期采样的方式对进程的资源使用情况进行检测，如果资源使用超过阈值，会抓取对应维测并上报泄漏事件。通过Hiappevent资源泄漏事件进行订阅，订阅方法详见[资源泄漏事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events)。
 
 ## 实现原理
 
@@ -33,7 +33,7 @@ format: md
    heapUsed：当前虚拟机使用的堆大小，单位：KB。可通过[hidebug.getAppVMMemoryInfo()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hidebug#hidebuggetappvmmemoryinfo12)接口获取。
 
    totalHeap：当前虚拟机的堆总大小，单位：KB。可通过[hidebug.getAppVMMemoryInfo()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hidebug#hidebuggetappvmmemoryinfo12)接口获取。
-3. 当应用上报JS\_ERROR/CPP\_CRASH故障，Error message包含“OutOfMemory”时，可参考[内存泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section728319329442)辅助定位。
+3. 当应用上报JS\_ERROR/CPP\_CRASH故障，Error message包含“OutOfMemory”时，可参考[内存泄漏分析方法](/docs/quality/stability-leak-way#section728319329442)辅助定位。
 4. 管控是指当系统判定应用发生泄漏后，主动终止泄漏应用的行为。
 
 资源泄漏内核管控方式如下：
@@ -47,14 +47,14 @@ format: md
 
 ## 约束和限制
 
-1. 句柄泄漏调用栈、native内存泄漏调用栈、js泄漏内存快照等维测因为开销较大，所以在[nolog版本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#nolog版本)默认不开启。
-2. 如果开发者希望获取到nolog版本的js泄漏内存快照，可参考[资源泄漏事件订阅（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events-arkts)增加对nolog版本js内存快照的订阅。
+1. 句柄泄漏调用栈、native内存泄漏调用栈、js泄漏内存快照等维测因为开销较大，所以在[nolog版本](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#nolog版本)默认不开启。
+2. 如果开发者希望获取到nolog版本的js泄漏内存快照，可参考[资源泄漏事件订阅（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events-arkts)增加对nolog版本js内存快照的订阅。
 
 ## 日志获取
 
 资源泄漏日志由LeakDetector模块进行管理，可通过以下方式获取：
 
-* 方式一：通过[DevEco Testing进行探索测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/exploratory-testing)并获取日志。
+* 方式一：通过[DevEco Testing进行探索测试](/docs/dev/testing/exploratory-testing)并获取日志。
 
   DevEco Testing工具会收集设备/data/log/reliability/resource\_leak/路径下的资源泄漏故障日志，根据进程名、故障和时间分类显示。
 
@@ -69,7 +69,7 @@ format: md
   ![](./img/7aabf6a2.png)
 
   1. native内存泄漏的调用栈（memleak-native-[process\_name]-[pid]-[timestamp].txt）无法直接在DevEco Studio打开，需要修改后缀名为.nas，然后使用DevEco Studio-Profiler-打开并分析，详情见[内存分析及优化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-memory)。
-  2. js泄漏的维测日志 memleak-js-[process\_name]-[pid]-[tid]-[timestamp].rawheap 为二进制内存快照文件，需要通过[translator工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[Snapshot离线导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
+  2. js泄漏的维测日志 memleak-js-[process\_name]-[pid]-[tid]-[timestamp].rawheap 为二进制内存快照文件，需要通过[translator工具](/docs/dev/app-dev/system/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[Snapshot离线导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
 * 方式二：通过DevEco Studio主动采集日志。
 
   DevEco Studio的profiler模块提供[Allocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-memory)（获取native调用栈profiler）和 **[Snapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkts-memory-leak-analysis)** （获取JS层heapdump）两种采集方式：
@@ -77,7 +77,7 @@ format: md
   ![](./img/cc807cb3.png)
 * 方式三：通过HiAppEvent接口订阅。
 
-  HiAppEvent对外提供故障订阅接口，可以订阅各类故障打点，详见[HiAppEvent介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-intro)，其中资源泄漏的订阅方式详见[资源泄漏事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events)。资源泄漏故障日志存于/data/storage/el2/log/resourcelimit/路径，日志名统一为RESOURCE\_OVERLIMIT\_[TIMESTAMP]\_[PID].log，可根据日志内容区分文件类型。
+  HiAppEvent对外提供故障订阅接口，可以订阅各类故障打点，详见[HiAppEvent介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-intro)，其中资源泄漏的订阅方式详见[资源泄漏事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events)。资源泄漏故障日志存于/data/storage/el2/log/resourcelimit/路径，日志名统一为RESOURCE\_OVERLIMIT\_[TIMESTAMP]\_[PID].log，可根据日志内容区分文件类型。
 
 ## 句柄泄漏日志规格
 
@@ -379,7 +379,7 @@ summary: 879
 **故障日志文件名：** memleak-js-[process\_name]-[pid]-[tid]-[timestamp].rawheap（**方式一**）或RESOURCE\_OVERLIMIT\_[TIMESTAMP]\_[PID].log（**方式三**）。
 
 * 该文件记录了对象堆内存的详细信息。
-* 日志文件需要将后缀名修改为.rawheap文件，再通过[translator工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[Snapshot离线导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
+* 日志文件需要将后缀名修改为.rawheap文件，再通过[translator工具](/docs/dev/app-dev/system/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[Snapshot离线导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
 * API14后，需要将日志文件后缀名修改为.rawheap后，将其导入DevEco Studio并展示，详情见[Raw Heap离线导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
 
 ### JS泄漏聚类规则
@@ -658,7 +658,7 @@ bins:           size ind    allocated      nmalloc (#/sec)      ndalloc (#/sec) 
      24600       3924        3586        348         0           3576        0           0           0           18                      [anon:native_heap:jemalloc meta]
      ```
 
-     如果存在内存调用栈，可以根据NMD维测找到占用最高的内存区间，并结合抓取的调用栈维测聚类到具体代码段或者so作为怀疑点，具体分析方法可参考[Native泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section1658571616574)。
+     如果存在内存调用栈，可以根据NMD维测找到占用最高的内存区间，并结合抓取的调用栈维测聚类到具体代码段或者so作为怀疑点，具体分析方法可参考[Native泄漏分析方法](/docs/quality/stability-leak-way#section1658571616574)。
    * ashmem内存：参考[ashmem聚类规则](#ashmemiongpugpu_rs聚类规则)。
    * anon内存：筛选内存申请最大的内存标签作为故障特征，如：从以下日志中提取的故障标签为“[anon]”。
 
@@ -670,7 +670,7 @@ bins:           size ind    allocated      nmalloc (#/sec)      ndalloc (#/sec) 
      38760       528         524         4           0           524         0           0           0           56                      [anon]
      ```
 
-     如果存在内存调用栈，可通过分析调用栈中占比较高的聚类到具体代码段或者so作为怀疑点，具体分析方法可参考[Native泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section1658571616574)。
+     如果存在内存调用栈，可通过分析调用栈中占比较高的聚类到具体代码段或者so作为怀疑点，具体分析方法可参考[Native泄漏分析方法](/docs/quality/stability-leak-way#section1658571616574)。
 
    ![](./img/8393be5f.png)
 
@@ -902,7 +902,7 @@ Buffers:               0 kB
    process1    65141    252        4493312       430934     42829        allocator_host    srcImageSize-2160x2880-pixelMapSize-2160x2880-streamsize-761322-mimetype-webp   mm_heap_helpers    NULL        NULL
    ************ endl ************
    ```
-2. 根据“leak\_type”和“buf\_name”对buffer进行分类，提取出“size\_bytes”之和占比最高buffer的“buf\_name”作为本次故障的故障特征。分析细节可参考[ION泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section5493141412410)。
+2. 根据“leak\_type”和“buf\_name”对buffer进行分类，提取出“size\_bytes”之和占比最高buffer的“buf\_name”作为本次故障的故障特征。分析细节可参考[ION泄漏分析方法](/docs/quality/stability-leak-way#section5493141412410)。
 
    ![](./img/f23c67fe.png)
 

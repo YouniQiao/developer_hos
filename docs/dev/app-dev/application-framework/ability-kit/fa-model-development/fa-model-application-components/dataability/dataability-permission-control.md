@@ -1,6 +1,6 @@
 ---
 title: "DataAbility权限控制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-permission-control
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-permission-control
 format: md
 ---
 

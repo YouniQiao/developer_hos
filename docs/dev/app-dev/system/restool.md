@@ -1,6 +1,6 @@
 ---
 title: "restool工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restool
+original_url: /docs/dev/app-dev/system/restool
 format: md
 ---
 
@@ -726,7 +726,7 @@ The paths 'xxx' and 'xxx' of the module.json (in the stage model) or config.json
 
 **错误描述**
 
-应用配置文件[module.json（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)或[config.json（FA模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-fa)的路径存在冲突。
+应用配置文件[module.json（Stage模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)或[config.json（FA模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-fa)的路径存在冲突。
 
 **可能原因**
 
@@ -1014,7 +1014,7 @@ There are multiple input paths, but the path of the module.json (in the stage mo
 
 **错误描述**
 
-缺少应用配置文件[module.json（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)或[config.json（FA模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-fa)的路径。
+缺少应用配置文件[module.json（Stage模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)或[config.json（FA模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-fa)的路径。
 
 **可能原因**
 
@@ -1036,7 +1036,7 @@ Invalid module type 'xxx'. Valid values: ["entry", "har", "shared", "feature"].
 
 **可能原因**
 
-应用配置文件[module.json（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)或[config.json（FA模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-fa)中指定的模块类型错误，取值不在["entry", "har", "shared", "feature"]范围内。
+应用配置文件[module.json（Stage模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)或[config.json（FA模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-fa)中指定的模块类型错误，取值不在["entry", "har", "shared", "feature"]范围内。
 
 **处理步骤**
 
@@ -1133,7 +1133,7 @@ The module name 'xxx' is not found in ["yyy","zzz"], which is specified by -m/--
 **可能原因**
 
 1. -m/--modules指定的模块名称列表错误。
-2. 应用配置文件[module.json（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)或[config.json（FA模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-fa)中name指定的模块名称错误。
+2. 应用配置文件[module.json（Stage模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)或[config.json（FA模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-fa)中name指定的模块名称错误。
 
 **处理步骤**
 
@@ -1158,7 +1158,7 @@ Failed to scan resources: invalid path 'xxx'.
 
 **处理步骤**
 
-检查资源文件的类型是否正确，可参考[资源分类与访问-资源分类](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源分类)中关于各类资源文件的说明。
+检查资源文件的类型是否正确，可参考[资源分类与访问-资源分类](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源分类)中关于各类资源文件的说明。
 
 ### 11211103 无效的限定词目录
 
@@ -1176,7 +1176,7 @@ Invalid qualifier key 'xxx'. It should match the pattern of the qualifiers direc
 
 **处理步骤**
 
-检查限定词目录名称是否准确，限定词目录命名规则可参考[资源分类与访问-限定词目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源目录)。
+检查限定词目录名称是否准确，限定词目录命名规则可参考[资源分类与访问-限定词目录](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源目录)。
 
 ### 11211104 无效的资源组目录
 
@@ -1194,7 +1194,7 @@ Invalid resource directory name 'xxx'. Valid values: ["element","media","profile
 
 **处理步骤**
 
-检查限定词目录下是否仅包含[资源组目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源组目录)：element，media和profile。
+检查限定词目录下是否仅包含[资源组目录](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源组目录)：element，media和profile。
 
 ### 11211106 无效的翻译状态
 
@@ -1208,11 +1208,11 @@ Invalid translation priority value 'xxx'. Valid values: ["code","translate","LT"
 
 **可能原因**
 
-字符串或[单复数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-singular-plural)资源的可翻译属性attr下的翻译状态属性priority配置错误，不在["code","translate","LT","customer"]范围内。
+字符串或[单复数](/docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-singular-plural)资源的可翻译属性attr下的翻译状态属性priority配置错误，不在["code","translate","LT","customer"]范围内。
 
 **处理步骤**
 
-检查翻译状态priority的值是否准确，可参考[资源可翻译特性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源可翻译特性)中关于priority的说明。
+检查翻译状态priority的值是否准确，可参考[资源可翻译特性](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源可翻译特性)中关于priority的说明。
 
 ### 11211107 不支持的element资源类型
 
@@ -1230,7 +1230,7 @@ element目录下json资源文件支持的资源类型为["integer","string","str
 
 **处理步骤**
 
-检查element资源的类型是否准确，可参考[资源组目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源组目录)中关于element资源的说明。
+检查element资源的类型是否准确，可参考[资源组目录](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源组目录)中关于element资源的说明。
 
 ### 11211108 无效的颜色值
 
@@ -1359,7 +1359,7 @@ Invalid quantity 'xxx' of the plural resource 'xxx'. Valid values: ["zero","one"
 
 **处理步骤**
 
-检查单复数的类别是否准确，可参考[支持单复数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-singular-plural)中关于单复数类别的说明。
+检查单复数的类别是否准确，可参考[支持单复数](/docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-singular-plural)中关于单复数类别的说明。
 
 ### 11211113 单复数资源的类别重复
 
@@ -1401,7 +1401,7 @@ Duplicated quantity 'xxx' of the plural resource 'xxx'.
 
 **处理步骤**
 
-检查单复数资源声明的类别是否重复，可参考[支持单复数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-singular-plural)中关于单复数类别的说明。
+检查单复数资源声明的类别是否重复，可参考[支持单复数](/docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-singular-plural)中关于单复数类别的说明。
 
 ### 11211114 单复数资源缺少other类别
 
@@ -1419,7 +1419,7 @@ The plural resource 'xxx' should contain the 'other' quantity.
 
 **处理步骤**
 
-检查单复数资源是否包含other类别的声明，可参考[支持单复数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-singular-plural)中关于单复数类别的说明。
+检查单复数资源是否包含other类别的声明，可参考[支持单复数](/docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-singular-plural)中关于单复数类别的说明。
 
 ### 11211115 无效的symbol资源
 

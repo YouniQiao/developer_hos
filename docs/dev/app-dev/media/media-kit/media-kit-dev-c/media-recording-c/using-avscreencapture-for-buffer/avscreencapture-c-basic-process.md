@@ -1,23 +1,23 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AVScreenCapture录屏基础流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avscreencapture-c-basic-process
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-c-basic-process
 format: md
 ---
 
 
-屏幕录制功能支持开发者获取屏幕数据，适用于屏幕录制、会议共享、直播等场景。开发者可通过调用[AVScreenCapture](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avscreencapture)模块的C API，采集设备内外的音视频数据源。该模块需与窗口管理（Window）、图形处理（Graphic）等模块协同工作，以完成完整的视频采集流程。
+屏幕录制功能支持开发者获取屏幕数据，适用于屏幕录制、会议共享、直播等场景。开发者可通过调用[AVScreenCapture](/docs/dev/app-dev/media/media-kit/media-kit-intro#avscreencapture)模块的C API，采集设备内外的音视频数据源。该模块需与窗口管理（Window）、图形处理（Graphic）等模块协同工作，以完成完整的视频采集流程。
 
 从API version 22开始，在PC/2in1设备上录屏时新增如下能力：
 
-* 支持在熄屏但不锁屏的情况下保持录制：需要申请权限**ohos.permission.TIMEOUT\_SCREENOFF\_DISABLE\_LOCK**。配置方式请参见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-* 支持在录制屏幕时不再弹出隐私告警弹窗：需要申请权限**ohos.permission.CUSTOM\_SCREEN\_RECORDING**。配置方式请参见[受限开放权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions)。
+* 支持在熄屏但不锁屏的情况下保持录制：需要申请权限**ohos.permission.TIMEOUT\_SCREENOFF\_DISABLE\_LOCK**。配置方式请参见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+* 支持在录制屏幕时不再弹出隐私告警弹窗：需要申请权限**ohos.permission.CUSTOM\_SCREEN\_RECORDING**。配置方式请参见[受限开放权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions)。
 
 ## 流程介绍
 
 基础屏幕录制功能涉及到AVScreenCapture实例创建、音视频参数配置、回调设置、开始与停止、结果处理、资源释放等步骤。
 
-在此基础上，开发者可以根据视频录制、直播等特定场景进行更高级的设置，详情参见[AVScreenCapture录屏自定义场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avscreencapture-c-custom-scenarios)。
+在此基础上，开发者可以根据视频录制、直播等特定场景进行更高级的设置，详情参见[AVScreenCapture录屏自定义场景](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-c-custom-scenarios)。
 
 基础流程如下图所示：
 
@@ -73,8 +73,8 @@ OH_AVScreenCapture* capture = OH_AVScreenCapture_Create();
 
 如果配置了采集麦克风音频数据，需：
 
-* 配置麦克风权限ohos.permission.MICROPHONE，配置方式请参见[向用户申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
-* 申请长时任务，申请方式请参见[申请长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)。
+* 配置麦克风权限ohos.permission.MICROPHONE，配置方式请参见[向用户申请权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
+* 申请长时任务，申请方式请参见[申请长时任务](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)。
 
 录屏存文件时默认只开启内录。录制过程中，麦克风可以动态开启/关闭，开启后，可同时启动内外录制。
 

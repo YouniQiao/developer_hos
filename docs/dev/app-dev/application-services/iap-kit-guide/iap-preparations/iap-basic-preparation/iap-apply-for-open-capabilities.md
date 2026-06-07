@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "（可选）申请嵌入式收银台开放能力权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-apply-for-open-capabilities
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-apply-for-open-capabilities
 format: md
 ---
 

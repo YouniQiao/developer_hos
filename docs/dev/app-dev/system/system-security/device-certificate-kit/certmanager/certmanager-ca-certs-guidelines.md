@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "CA证书开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-ca-certs-guidelines
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-ca-certs-guidelines
 format: md
 ---
 
@@ -45,9 +45,9 @@ format: md
 
    使用获取列表和获取详情接口需要申请权限：ohos.permission.ACCESS\_CERT\_MANAGER
 
-   申请流程请参考：[申请应用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode)
+   申请流程请参考：[申请应用权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode)
 
-   声明权限请参考：[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)
+   声明权限请参考：[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)
 2. 导入相关模块。
 
    ```

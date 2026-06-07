@@ -1,13 +1,13 @@
 ---
 title: "跳转"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-navigate-other-atomicservices
+original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-navigate-other-atomicservices
 format: md
 ---
 
 
 ## 跳转到元服务
 
-ASCF框架提供接口，允许ASCF框架下开发的元服务跳转到其他的元服务。详情请参考：[跳转](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-navigate)。
+ASCF框架提供接口，允许ASCF框架下开发的元服务跳转到其他的元服务。详情请参考：[跳转](/docs/dev/atomic-dev/ascf/apis/apis-navigate)。
 
 示例：
 
@@ -33,7 +33,7 @@ has.navigateToAtomicService({
 
 元服务支持从元服务内跳转到应用。
 
-可以使用[button](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-button)组件实现，步骤如下：
+可以使用[button](/docs/dev/atomic-dev/ascf/components-form-components/components-button)组件实现，步骤如下：
 
 1. 设置属性open-type值为launchApp。
 2. 根据需要打开的应用信息，设置属性app-bundle-name、app-module-name、app-ability-name、app-parameters。

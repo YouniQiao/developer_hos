@@ -1,13 +1,13 @@
 ---
 title: "采集性能数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-collection-0000002321404205
+original_url: /docs/dev/game-dev/games-hismartperf-collection-0000002321404205
 format: md
 ---
 
 
 ## 前提条件
 
-游戏性能调优工具已[设置采集要求](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-setting-0000002321517289)。
+游戏性能调优工具已[设置采集要求](/docs/dev/game-dev/games-hismartperf-setting-0000002321517289)。
 
 ## 操作步骤
 
@@ -41,6 +41,6 @@ format: md
    * 在测试过程中，您可以随时点击记录数据和保存数据来生成测试报告。
 
    ![](./img/eccae4ae.png)
-6. 若[通用设置](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-setting-0000002321517289#section54291923471)的测试报告保存设置为**自动保存****/自动上传**，采集到的**数据项**和**游戏截图**将自动保存至本地并自动上传至云端。若设置为**询问保存/询问上传**，您可以在弹出的“保存设置”窗口中决策是否保存至本地或上传至云端。
+6. 若[通用设置](/docs/dev/game-dev/games-hismartperf-setting-0000002321517289#section54291923471)的测试报告保存设置为**自动保存****/自动上传**，采集到的**数据项**和**游戏截图**将自动保存至本地并自动上传至云端。若设置为**询问保存/询问上传**，您可以在弹出的“保存设置”窗口中决策是否保存至本地或上传至云端。
 
    ![](./img/1594d81d.png)

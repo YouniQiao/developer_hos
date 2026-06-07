@@ -1,7 +1,7 @@
 ---
 title: 设计原则
 sidebar_label: 设计原则
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/animation-design-principles-0000001750237392
+original_url: /docs/design/general-design-basics/animation/principles
 format: md
 ---
 

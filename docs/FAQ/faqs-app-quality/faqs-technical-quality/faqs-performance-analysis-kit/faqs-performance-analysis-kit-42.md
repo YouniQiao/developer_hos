@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决Mac电脑不能识别hdc命令的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-42
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-42
 ---
 
 
@@ -24,4 +24,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
    **参考链接：**
 
-   [常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#常见问题)
+   [常见问题](/docs/dev/app-dev/system/hdc#常见问题)

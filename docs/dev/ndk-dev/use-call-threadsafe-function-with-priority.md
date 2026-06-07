@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口从异步线程向ArkTS线程投递指定优先级和入队方式的任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-call-threadsafe-function-with-priority
+original_url: /docs/dev/ndk-dev/use-call-threadsafe-function-with-priority
 format: md
 ---
 
@@ -18,7 +18,7 @@ napi_status napi_call_threadsafe_function_with_priority(napi_threadsafe_function
 | --- | --- |
 | func | 线程安全方法 |
 | data | 异步线程期望传递给主线程的数据 |
-| priority | 指定任务的优先级[napi\_task\_priority](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-data-types-interfaces#线程安全任务优先级) |
+| priority | 指定任务的优先级[napi\_task\_priority](/docs/dev/ndk-dev/napi-data-types-interfaces#线程安全任务优先级) |
 | isTail | 指定任务的入队方式，true代表任务从队列的尾部入队，false代表任务从队列的头部入队 |
 
 ## 场景介绍

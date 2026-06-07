@@ -1,7 +1,7 @@
 ---
 format: md
 title: "request和requestInStream的使用边界问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-52
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-52
 ---
 
 

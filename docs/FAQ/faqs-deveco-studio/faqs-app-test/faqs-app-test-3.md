@@ -1,7 +1,7 @@
 ---
 format: md
 title: "运行测试用例时，结果树始终处于加载状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-3
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-3
 ---
 
 

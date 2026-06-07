@@ -1,7 +1,7 @@
 ---
 format: md
 title: "登录华为开发者账号后，提示需要实名认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-1
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-1
 ---
 
 

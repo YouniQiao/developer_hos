@@ -1,7 +1,7 @@
 ---
 title: 启动页
 sidebar_label: 启动页
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/system-capabilities-launch-page-0000002311335748
+original_url: /docs/design/system-features/capabilities/launch-page
 format: md
 ---
 
@@ -58,7 +58,7 @@ format: md
 
 ### 多设备适配
 
-当前设备种类繁多，基于断点规则，确保在合适的设备上提供最优的用户体验，同时兼顾不同设备的适配性需求。有关指南，请参阅[布局](https://developer.huawei.com/consumer/cn/doc/design-guides/design-layout-basics-0000001795579413)
+当前设备种类繁多，基于断点规则，确保在合适的设备上提供最优的用户体验，同时兼顾不同设备的适配性需求。有关指南，请参阅[布局](/docs/design/general-design-basics/layout/layout-basics)
 
 ## 图标类
 

@@ -1,6 +1,6 @@
 ---
 title: "指定密钥参数生成非对称密钥对(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-asym-key-pair-from-key-spec-ndk
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-asym-key-pair-from-key-spec-ndk
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 指定密钥参数生成RSA密钥对
 
-对应的算法规格请查看[非对称密钥生成和转换规格：RSA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#rsa)。
+对应的算法规格请查看[非对称密钥生成和转换规格：RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#rsa)。
 
 1. 调用[OH\_CryptoAsymKeySpec\_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-key-h#oh_cryptoasymkeyspec_create)，指定算法名为"RSA"， 密钥参数类型为CRYPTO\_ASYM\_KEY\_KEY\_PAIR\_SPEC，创建参数对象（keySpec）。
 2. 指定uint8\_t类型的RSA密钥对数据（pk、sk、n），分别封装成[Crypto\_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob)。
@@ -169,7 +169,7 @@ OH_Crypto_ErrCode doTestRsaGenKeyPairBySpec()
 
 ## 指定密钥参数生成ECC密钥对
 
-对应的算法规格请查看[非对称密钥生成和转换规格：ECC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#ecc)。
+对应的算法规格请查看[非对称密钥生成和转换规格：ECC](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#ecc)。
 
 1. 调用[OH\_CryptoAsymKeySpec\_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-key-h#oh_cryptoasymkeyspec_create)，指定算法名为"ECC"， 密钥参数类型为CRYPTO\_ASYM\_KEY\_COMMON\_PARAMS\_SPEC，创建参数对象（keySpec）。
 2. 指定uint8\_t类型的ECC公私钥包含的公共参数（p、a、b、gx、gy、n、h），分别封装成[Crypto\_DataBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptocommonapi-crypto-datablob)。
@@ -457,7 +457,7 @@ OH_Crypto_ErrCode doTestEccGenKeyPairBySpec()
 
 ## 根据椭圆曲线名生成SM2密钥对
 
-对应的算法规格请查看[非对称密钥生成和转换规格：SM2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#sm2)。
+对应的算法规格请查看[非对称密钥生成和转换规格：SM2](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#sm2)。
 
 1. 调用[OH\_CryptoAsymKeySpec\_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-key-h#oh_cryptoasymkeyspec_create)，指定算法名为"SM2"， 密钥参数类型为CRYPTO\_ASYM\_KEY\_KEY\_PAIR\_SPEC，创建密钥参数对象（keySpec）。
 2. 调用[OH\_CryptoAsymKeySpec\_GenEcCommonParamsSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-asym-key-h#oh_cryptoasymkeyspec_geneccommonparamsspec)，指定曲线为"NID\_sm2"， 生成SM2公共参数对象（sm2CommonSpec）。

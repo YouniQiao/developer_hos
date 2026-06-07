@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "音频工作组管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-workgroup
+original_url: /docs/dev/app-dev/media/audio-kit/audio-performance-optimization/audio-workgroup
 format: md
 ---
 

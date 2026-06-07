@@ -1,7 +1,7 @@
 ---
 title: "变量动画&lt;VariableAnimation&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/variableanimation-0000001074338322
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/variableanimation-0000001074338322
 format: md
 ---
 

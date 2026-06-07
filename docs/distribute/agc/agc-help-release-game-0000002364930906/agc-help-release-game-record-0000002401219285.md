@@ -1,6 +1,6 @@
 ---
 title: "配置核准（备案）信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-record-0000002401219285
+original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-record-0000002401219285
 format: md
 ---
 
@@ -18,6 +18,6 @@ format: md
 2. 左侧导航栏选择“应用上架 > 版本信息”下待发布的版本。
 3. 进入右侧页面的“备案信息”区域，根据实际情况如实填写。
 
-   信息填写指导请参见[APP核准（APP备案）指引](https://developer.huawei.com/consumer/cn/doc/app/50130)。
+   信息填写指导请参见[APP核准（APP备案）指引](/docs/distribute/app-dist/app-market/x50000/x50130)。
 
    ![](../img/agc-help-release-game-record-0000002401219285_0.png)

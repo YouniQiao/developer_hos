@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Text组件设置opacity后，文字颜色在整体透明度基础上叠加了一个透明，应该如何处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-482
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-482
 ---
 
 

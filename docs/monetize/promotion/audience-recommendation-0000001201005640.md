@@ -1,7 +1,7 @@
 ---
 title: "推荐受众人群"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/audience-recommendation-0000001201005640
+original_url: /docs/monetize/promotion/audience-recommendation-0000001201005640
 format: md
 ---
 

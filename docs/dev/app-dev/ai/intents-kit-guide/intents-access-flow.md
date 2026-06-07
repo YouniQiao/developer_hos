@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Intents Kit接入流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-access-flow
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-access-flow
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 | **任务** | **任务描述** | **示例** | **指导文档** |
 | --- | --- | --- | --- |
-| 选择特性确定意图 | 开发者根据想达成的用户体验，确定好涉及的系统入口和特性类型，基于已发布的特性列表选择需实现的意图。如果已发布的特性列表中没能找到合适的意图，则只需要确定好系统入口和特性类型即可。 | 开发者想实现“歌曲续听推荐”的特性，根据智慧分发特性的场景描述，该特性属于小艺建议系统入口下的习惯推荐特性类型，需要实现“播放歌曲”意图。 | [歌曲续听推荐](https://developer.huawei.com/consumer/cn/doc/service/intents-ai-distribution-characteristic-0000001901922213) |
+| 选择特性确定意图 | 开发者根据想达成的用户体验，确定好涉及的系统入口和特性类型，基于已发布的特性列表选择需实现的意图。如果已发布的特性列表中没能找到合适的意图，则只需要确定好系统入口和特性类型即可。 | 开发者想实现“歌曲续听推荐”的特性，根据智慧分发特性的场景描述，该特性属于小艺建议系统入口下的习惯推荐特性类型，需要实现“播放歌曲”意图。 | [歌曲续听推荐](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-ai-distribution-characteristic-0000001901922213) |
 | 能力申请 | 确定好特性后，开发者在AppGallery Connect平台上提交对应特性类型的能力申请。 | 见下文图示。 | / |
 
 **能力申请步骤**
@@ -35,10 +35,10 @@ format: md
 
 | **任务** | **任务描述** | **示例** | **指导文档** |
 | --- | --- | --- | --- |
-| 意图调试申请 | 申请能力通过后，开发者可根据审核成功的反馈提示，提供测试应用的信息，用于开通意图调试权限。 | 1. 应用名称：华为音乐。  2. 应用包名：com.xxxx。  3. 接入意图名称：“播放歌曲”。  4. 应用图标：jpg、png……。  5. APP ID：1234567。  6. Client ID：1234567。  7. 华为账号（UID）：1234567、7654321……。 | 见各特性类型  习惯推荐：[开发者测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-dp-self-validation)  事件推荐：[开发者测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-dp-self-validation)  技能调用：[开发者测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-dp-self-validation-con) |
-| 意图声明文件中注册意图 | 在DevEco Studio中开发时，注册对应的意图。 | 注册“播放歌曲”意图。 | [意图注册](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-access-programme#意图注册) |
-| 开发实现意图共享 | 开发应用/元服务的意图共享接口，使其可以通过HarmonyOS接口完成意图数据共享。 | 开发“播放歌曲”意图中的意图共享接口。 | [端侧意图共享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-access-programme#端侧意图共享) |
-| 开发实现意图调用 | 开发应用/元服务的意图调用接口，使其可以通过HarmonyOS接口被正确调用。 | 开发“播放歌曲”意图中的意图调用接口。 | [端侧意图调用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-access-programme#端侧意图调用) |
+| 意图调试申请 | 申请能力通过后，开发者可根据审核成功的反馈提示，提供测试应用的信息，用于开通意图调试权限。 | 1. 应用名称：华为音乐。  2. 应用包名：com.xxxx。  3. 接入意图名称：“播放歌曲”。  4. 应用图标：jpg、png……。  5. APP ID：1234567。  6. Client ID：1234567。  7. 华为账号（UID）：1234567、7654321……。 | 见各特性类型  习惯推荐：[开发者测试](/docs/dev/app-dev/ai/intents-habit-rec-dp-self-validation)  事件推荐：[开发者测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-dp-self-validation)  技能调用：[开发者测试](/docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-dp-self-validation/intents-skill-all-rec-dp-self-validation-con) |
+| 意图声明文件中注册意图 | 在DevEco Studio中开发时，注册对应的意图。 | 注册“播放歌曲”意图。 | [意图注册](/docs/dev/app-dev/ai/intents-habit-rec-access-programme#意图注册) |
+| 开发实现意图共享 | 开发应用/元服务的意图共享接口，使其可以通过HarmonyOS接口完成意图数据共享。 | 开发“播放歌曲”意图中的意图共享接口。 | [端侧意图共享](/docs/dev/app-dev/ai/intents-habit-rec-access-programme#端侧意图共享) |
+| 开发实现意图调用 | 开发应用/元服务的意图调用接口，使其可以通过HarmonyOS接口被正确调用。 | 开发“播放歌曲”意图中的意图调用接口。 | [端侧意图调用](/docs/dev/app-dev/ai/intents-habit-rec-access-programme#端侧意图调用) |
 
 **阶段三：验证**
 
@@ -51,4 +51,4 @@ format: md
 | **任务** | **任务描述** | **示例** | **指导文档** |
 | --- | --- | --- | --- |
 | 应用市场上架软件包（应用/元服务） | 开发完成并打包好软件包后，在应用市场上传软件包。 | 打包“华为音乐”软件包并通过应用市场上架。 | [应用市场上架流程](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-0000002235870050) |
-| 意图框架注册 | 在小艺开放平台进行意图注册配置并提交审核。由华为工程师审核，一般情况在3个工作日内完成。 | 注册“播放歌曲”意图。 | [意图标准协议上架指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-kit-listing-standard-protocol) |
+| 意图框架注册 | 在小艺开放平台进行意图注册配置并提交审核。由华为工程师审核，一般情况在3个工作日内完成。 | 注册“播放歌曲”意图。 | [意图标准协议上架指导](/docs/dev/app-dev/ai/intents-kit-guide/intents-kit-listing-configuration/intents-kit-listing-standard-protocol) |

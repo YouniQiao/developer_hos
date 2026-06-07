@@ -1,7 +1,7 @@
 ---
 title: "一方数据人群"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-advanced-target-customized-audience-0000001379837561
+original_url: /docs/monetize/promotion/bpos-functions-advanced-target-customized-audience-0000001379837561
 format: md
 ---
 

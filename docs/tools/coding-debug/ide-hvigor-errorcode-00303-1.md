@@ -1,7 +1,7 @@
 ---
 title: "配置错误码"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-errorcode-00303-1
+original_url: /docs/tools/coding-debug/ide-hvigor-errorcode-00303-1
 format: md
 ---
 

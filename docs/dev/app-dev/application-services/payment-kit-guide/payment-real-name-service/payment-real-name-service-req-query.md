@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "身份验证服务调用记录查看"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-service-req-query
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-service-req-query
 format: md
 ---
 

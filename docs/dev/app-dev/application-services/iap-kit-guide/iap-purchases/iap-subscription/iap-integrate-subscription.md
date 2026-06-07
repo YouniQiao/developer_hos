@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接入自动续期订阅"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-subscription
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-integrate-subscription
 format: md
 ---
 
@@ -34,7 +34,7 @@ format: md
 
    此步骤也可放到应用服务器处理。应用服务器可通过请求服务端[订阅确认发货](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-confirm-purchase-for-sub)接口来确认发货，完成购买流程。
 
-具体请参见[对生效中的订阅发放权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-subscriptions#对生效中的订阅发放权益)。
+具体请参见[对生效中的订阅发放权益](/docs/dev/app-dev/application-services/iap-delivering-subscriptions#对生效中的订阅发放权益)。
 
 **购买及结果确认**
 
@@ -56,7 +56,7 @@ format: md
 
 ![](./img/524483ed.png)
 
-如果购买失败，请参见[确保权益发放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-subscriptions#确保权益发放)处理，及时发放权益。
+如果购买失败，请参见[确保权益发放](/docs/dev/app-dev/application-services/iap-delivering-subscriptions#确保权益发放)处理，及时发放权益。
 
 **发放权益**
 
@@ -155,7 +155,7 @@ format: md
 2. 应用客户端展示对应商品的订阅状态。此处需要屏蔽处于自动续期状态的商品的购买入口。
 3. 处理生效中的订阅的权益发放。
 
-具体可参见[对生效中的订阅发放权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-subscriptions#对生效中的订阅发放权益)。
+具体可参见[对生效中的订阅发放权益](/docs/dev/app-dev/application-services/iap-delivering-subscriptions#对生效中的订阅发放权益)。
 
 ### 发起购买
 
@@ -219,7 +219,7 @@ struct Index {
 
    ![](./img/db590f9c.png)
 
-   JWSUtil为自定义类，可参见[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-dev-guide#示例代码)。
+   JWSUtil为自定义类，可参见[示例代码](/docs/dev/app-dev/application-services/iap-dev-guide#示例代码)。
 
 ```
 import { iap } from '@kit.IAPKit';
@@ -288,7 +288,7 @@ struct Index {
 
 **【结果2：购买失败】**
 
-当用户购买失败时，需要针对code为[iap.IAPErrorCode.PRODUCT\_OWNED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iaperrorcode)和[iap.IAPErrorCode.SYSTEM\_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iaperrorcode)的场景，检查是否需要补发货，确保权益发放，具体请参见[确保权益发放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-subscriptions#确保权益发放)。
+当用户购买失败时，需要针对code为[iap.IAPErrorCode.PRODUCT\_OWNED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iaperrorcode)和[iap.IAPErrorCode.SYSTEM\_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iaperrorcode)的场景，检查是否需要补发货，确保权益发放，具体请参见[确保权益发放](/docs/dev/app-dev/application-services/iap-delivering-subscriptions#确保权益发放)。
 
 ```
 import { iap } from '@kit.IAPKit';

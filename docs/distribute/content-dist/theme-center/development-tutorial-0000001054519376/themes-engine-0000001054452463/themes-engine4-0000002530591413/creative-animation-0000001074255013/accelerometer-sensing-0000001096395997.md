@@ -1,7 +1,7 @@
 ---
 title: "重力感应"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/accelerometer-sensing-0000001096395997
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/accelerometer-sensing-0000001096395997
 format: md
 ---
 

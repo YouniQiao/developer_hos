@@ -1,6 +1,6 @@
 ---
 title: "查询当前状态场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-getsuperprivacymode
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-superprivacymode/devicesecurity-getsuperprivacymode
 format: md
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: "申请账号权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-permissions
+original_url: /docs/dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-permissions
 format: md
 ---
 
 
-请参考“ **[元服务开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation)** ”章节，创建元服务、使用DevEco Studio创建元服务工程。
+请参考“ **[元服务开发准备](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation)** ”章节，创建元服务、使用DevEco Studio创建元服务工程。
 
 ![](./img/380872c0.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "集成SDK"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-js-0000002361670432
+original_url: /docs/dev/game-dev/gameobe-integratingsdk-js-0000002361670432
 format: md
 ---
 

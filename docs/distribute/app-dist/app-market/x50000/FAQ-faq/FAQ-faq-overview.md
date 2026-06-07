@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-overview
+original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-overview
 format: md
 ---
 

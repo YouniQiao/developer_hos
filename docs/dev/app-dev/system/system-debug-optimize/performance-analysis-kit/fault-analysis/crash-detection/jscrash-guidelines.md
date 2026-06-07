@@ -1,6 +1,6 @@
 ---
 title: "JS Crash（进程崩溃）检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines
 format: md
 ---
 
@@ -16,11 +16,11 @@ format: md
 1. 当代码执行时，未捕获的异常或错误导致应用崩溃，方舟运行时将捕获这些异常。
 2. 方舟运行时收集故障信息，并将其上报给维测进程Hiview。
 3. 维测进程Hiview补充仅其有权限获取的信息(如整机内存状态、应用页面切换轨迹)，生成对应的崩溃日志文件, 存储在“/data/log/faultlog/faultlogger”目录下。
-4. 上报崩溃事件，开发者可通过HiAppEvent订阅[崩溃事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events)。如需了解JS Crash问题分析方法，请参见[JS Crash类问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-js-way)。
+4. 上报崩溃事件，开发者可通过HiAppEvent订阅[崩溃事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events)。如需了解JS Crash问题分析方法，请参见[JS Crash类问题分析方法](/docs/quality/stability-app-crash-js-way)。
 
 ## 约束与限制
 
-在async修饰的异步函数中主动抛出异常，不会产生JS Crash导致应用崩溃，开发者可以通过[ErrorManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-errormanager#errormanageronerror)观测该异常，样例代码参考[Async函数内部异常的处理机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime-faq#async函数内部异常的处理机制)。
+在async修饰的异步函数中主动抛出异常，不会产生JS Crash导致应用崩溃，开发者可以通过[ErrorManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-errormanager#errormanageronerror)观测该异常，样例代码参考[Async函数内部异常的处理机制](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-faq#async函数内部异常的处理机制)。
 
 ## 日志获取
 
@@ -32,7 +32,7 @@ DevEco Studio会收集设备/data/log/faultlog/faultlogger/路径下的进程崩
 
 **方式二：通过HiAppEvent接口订阅**
 
-HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-intro)。参考[订阅崩溃事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-arkts)或[订阅崩溃事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-ndk)完成崩溃事件订阅，再通过事件的[external\_log](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events#事件字段说明)字段读取故障日志文件内容。
+HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-intro)。参考[订阅崩溃事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events-arkts)或[订阅崩溃事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events-ndk)完成崩溃事件订阅，再通过事件的[external\_log](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events#事件字段说明)字段读取故障日志文件内容。
 
 **方式三：通过hdc获取日志，需打开开发者选项**
 
@@ -185,7 +185,7 @@ Stacktrace:
 
 ![](./img/af9d8de4.png)
 
-仅在通过Navigation跳转到子页面时才会有页面名，页面名在[系统路由表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-cross-package#系统路由表)中定义。
+仅在通过Navigation跳转到子页面时才会有页面名，页面名在[系统路由表](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-cross-package#系统路由表)中定义。
 
 当应用发生前后台切换时，对应的页面URL为空，但是会将enters foreground、leaves foreground作为特殊的页面名进行填充。
 
@@ -267,7 +267,7 @@ at onPageShow har1 (har1/src/main/ets/pages/Index.ets:7:13)
 
 从API 22起，在ARM 64位系统下，HybridStack中支持打印CPP和JS之间跨语言的代码调用栈。
 
-CPP代码调用栈详细说明[CPP异常代码调用栈格式规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#一般故障场景日志规格)。
+CPP代码调用栈详细说明[CPP异常代码调用栈格式规范](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#一般故障场景日志规格)。
 
 JS代码调用栈详细说明[JS异常代码调用栈格式规范](#异常代码调用栈格式)。
 
@@ -357,4 +357,4 @@ HybridStack:
 ...
 ```
 
-聚类方法同Cpp Crash一致，参考[CppCrash聚类](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#cppcrash聚类)。
+聚类方法同Cpp Crash一致，参考[CppCrash聚类](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#cppcrash聚类)。

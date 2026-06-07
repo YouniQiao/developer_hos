@@ -1,6 +1,6 @@
 ---
 title: "后台任务使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-task
+original_url: /docs/experience-suggestions/power/background/standard-background-task
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [合理使用长时任务](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-tasks) |
+| 说明 | [合理使用长时任务](/docs/quality/use-of-background-tasks) |
 
 ### 应用或元服务应合理使用短时任务
 
@@ -25,7 +25,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用 |
-| 说明 | [合理使用短时任务](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-tasks) |
+| 说明 | [合理使用短时任务](/docs/quality/use-of-background-tasks) |
 
 ### 应用或元服务应合理使用延迟任务
 
@@ -35,7 +35,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [合理使用延迟任务](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-tasks) |
+| 说明 | [合理使用延迟任务](/docs/quality/use-of-background-tasks) |
 
 ### 应用或元服务应合理使用代理提醒
 
@@ -45,5 +45,5 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [合理使用代理提醒](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-tasks) |
+| 说明 | [合理使用代理提醒](/docs/quality/use-of-background-tasks) |
 

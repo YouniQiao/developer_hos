@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "画布的获取与绘制结果的显示（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-arkts
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-arkts
 format: md
 ---
 

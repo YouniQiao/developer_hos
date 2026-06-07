@@ -1,6 +1,6 @@
 ---
 title: "下载"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-download
+original_url: /docs/dev/atomic-dev/ascf/apis-network/apis-download
 format: md
 ---
 
@@ -15,9 +15,9 @@ has.downloadFile(Object object): DownloadTask
 
 ![](./img/66b85c6b.png)
 
-1. 开发者服务器接口地址，必须是https协议，并在AGC完成[服务器域名配置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)。
+1. 开发者服务器接口地址，必须是https协议，并在AGC完成[服务器域名配置](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。
 2. 请在服务端响应的header中指定合理的Content-Type字段，以保证客户端正确处理文件类型。
-3. 对于不安全的加密套件，SSL校验失败、下载失败的情况下推荐使用[has.request](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-request#hasrequest)接口。
+3. 对于不安全的加密套件，SSL校验失败、下载失败的情况下推荐使用[has.request](/docs/dev/atomic-dev/ascf/apis-network/apis-request#hasrequest)接口。
 4. 判断文件类型的方式：
 
    若传入filePath，则根据filePath判断；
@@ -30,7 +30,7 @@ has.downloadFile(Object object): DownloadTask
 
 **需要权限**：在module.json5中声明**ohos.permission.INTERNET**。
 
-**注意事项**：在调用此接口前，需要先完成[配置服务器域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)。
+**注意事项**：在调用此接口前，需要先完成[配置服务器域名](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。
 
 **参数：**
 

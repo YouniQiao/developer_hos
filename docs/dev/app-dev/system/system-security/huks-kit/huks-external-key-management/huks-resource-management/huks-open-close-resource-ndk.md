@@ -1,6 +1,6 @@
 ---
 title: "打开资源/关闭资源(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-open-close-resource-ndk
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-resource-management/huks-open-close-resource-ndk
 format: md
 ---
 
@@ -84,7 +84,7 @@ static napi_value OpenResource(napi_env env, napi_callback_info info)
 
 ## 关闭资源
 
-生态应用调用证书HAP界面，展示证书列表，用户选择证书，生态应用拿到对应的resourceId，关闭资源依赖于对应的resourceId。具体的场景介绍及规格，请参考[资源管理介绍及规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-resource-management-overview)。
+生态应用调用证书HAP界面，展示证书列表，用户选择证书，生态应用拿到对应的resourceId，关闭资源依赖于对应的resourceId。具体的场景介绍及规格，请参考[资源管理介绍及规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-resource-management/huks-resource-management-overview)。
 
 ### 在CMake脚本中链接相关动态库
 

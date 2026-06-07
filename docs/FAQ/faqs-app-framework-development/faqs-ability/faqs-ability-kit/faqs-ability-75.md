@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ApplicationContext、UIAbilityContext、Context的区别是什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-75
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-75
 ---
 
 
@@ -12,4 +12,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[应用上下文Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage)
+[应用上下文Context](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage)

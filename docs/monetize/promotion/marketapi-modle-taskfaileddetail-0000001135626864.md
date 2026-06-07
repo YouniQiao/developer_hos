@@ -1,7 +1,7 @@
 ---
 title: "TaskFailedDetail"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-taskfaileddetail-0000001135626864
+original_url: /docs/monetize/promotion/marketapi-modle-taskfaileddetail-0000001135626864
 format: md
 ---
 

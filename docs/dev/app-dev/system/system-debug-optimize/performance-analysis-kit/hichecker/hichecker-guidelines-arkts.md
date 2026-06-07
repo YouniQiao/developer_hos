@@ -1,6 +1,6 @@
 ---
 title: "使用HiChecker检测问题（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hichecker-guidelines-arkts
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hichecker/hichecker-guidelines-arkts
 format: md
 ---
 

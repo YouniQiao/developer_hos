@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译报错 “Unknown resource name”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-36
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-36
 ---
 
 
@@ -17,7 +17,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 
 需要满足以下条件：
 
-1. 资源需放置在模块B目录resource/base路径下，参考链接：[应用资源](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-resource#应用资源)。
+1. 资源需放置在模块B目录resource/base路径下，参考链接：[应用资源](/docs/dev/app-dev/multi-device/bpta-multi-device-resource#应用资源)。
 2. 模块B已安装。
 3. 模块A中不能使用相对路径引用模块B的资源，应直接通过定义的模块名称来引用。
 

@@ -1,6 +1,6 @@
 ---
 title: "通过resourceManager.getStringResource接口获取HSP资源文件报“Resource id invalid”错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-18
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-18
 format: md
 ---
 
@@ -69,4 +69,4 @@ struct Index {
 
 **参考链接**
 
-[应用上下文Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage)、[获取本应用中其他module的context](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取本应用中其他module的context模块级别的上下文)、[getStringByNameSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getstringbynamesync9)
+[应用上下文Context](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage)、[获取本应用中其他module的context](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取本应用中其他module的context模块级别的上下文)、[getStringByNameSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getstringbynamesync9)

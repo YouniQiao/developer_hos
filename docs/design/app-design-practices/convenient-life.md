@@ -1,7 +1,7 @@
 ---
 title: 便捷生活类
 sidebar_label: 便捷生活类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/convenient-life-0000001957252465
+original_url: /docs/design/app-design-practices/convenient-life
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 便捷生活类场景主要包括点餐、观影、看攻略等。此类场景在宽屏上可以让用户拥有更高效和流畅的使用体验。
 
-开发指南，请参阅[一多开发实例(便捷生活)](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-convenient-life)。
+开发指南，请参阅[一多开发实例(便捷生活)](/docs/dev/app-dev/multi-device/multi-convenient-life)。
 
 ### 首页的自适应布局
 

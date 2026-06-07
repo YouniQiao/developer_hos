@@ -1,6 +1,6 @@
 ---
 title: "查询已申请的受限ACL权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-getacl-0000002465770113
+original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-getacl-0000002465770113
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](../img/agc-help-provision-api-getacl-0000002465770113_0.png)
 
-仅支持**受限ACL权限**已审核通过的应用使用，申请方式可参见[申请受限ACL权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-applyacl-0000002502198721)。
+仅支持**受限ACL权限**已审核通过的应用使用，申请方式可参见[申请受限ACL权限](/docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-applyacl-0000002502198721)。
 
 #### 接口原型
 
@@ -28,22 +28,22 @@ format: md
 
 ![](../img/agc-help-provision-api-getacl-0000002465770113_1.png)
 
-本接口支持使用Service Account方式和API客户端方式，二者区别请参见[获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661)。
+本接口支持使用Service Account方式和API客户端方式，二者区别请参见[获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661)。
 
 **Service Account****方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
-| appId | M | String(32) | 应用ID，获取方法参考[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
+| appId | M | String(32) | 应用ID，获取方法参考[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 |
 
 **API客户端方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
-| appId | M | String(32) | 应用ID，获取方法参考[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
+| appId | M | String(32) | 应用ID，获取方法参考[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 |
 
 #### 请求示例
 
@@ -60,8 +60,8 @@ appId: 1******57
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-connectret-0000002271000693) | 包含返回码及描述信息的结果。 |
-| userPermission | O | [UserPermission](https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-userpermission-0000002466197781) | 受限ACL权限信息。 |
+| ret | M | [ConnectRet](/docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-connectret-0000002271000693) | 包含返回码及描述信息的结果。 |
+| userPermission | O | [UserPermission](/docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-userpermission-0000002466197781) | 受限ACL权限信息。 |
 
 #### 响应示例
 

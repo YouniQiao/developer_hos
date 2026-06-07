@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "压缩与解压"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deflate-and-inflate
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/compress/deflate-and-inflate
 format: md
 ---
 

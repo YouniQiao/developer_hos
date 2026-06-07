@@ -1,6 +1,6 @@
 ---
 title: "设置日历和历法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-calendar
+original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-calendar
 format: md
 ---
 

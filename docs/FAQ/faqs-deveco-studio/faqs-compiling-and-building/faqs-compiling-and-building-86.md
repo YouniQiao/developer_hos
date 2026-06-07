@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译打包CPU架构设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-86
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-86
 ---
 
 
@@ -11,7 +11,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 
 **解决方案**
 
-可参考 [bm工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool)
+可参考 [bm工具](/docs/dev/app-dev/system/bm-tool)
 
 ```
 "externalNativeOptions": {

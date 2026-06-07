@@ -1,6 +1,6 @@
 ---
 title: "获取/设置环境变量"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-system-environment-variable-changes
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/subscribe-system-environment-variable-changes
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 | --- | --- | --- | --- |
 | [获取环境变量](#获取环境变量) | 开发者可以使用[getConfigurationSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getconfigurationsync10)主动获取当前环境变量，包括深浅色模式、屏幕方向、语言地区、屏幕密度、设备类型等。 | 当前仅支持同步获取，使用方式参考[ResourceManager.getConfigurationSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getconfigurationsync10)。 | 应用运行过程中，可以主动获取当前应用深浅色模式，以更新用户界面显示。 |
 | [设置环境变量](#设置环境变量) | 当前仅支持应用自定义字体大小、深浅色、语言。  - [设置字体大小](#设置字体大小)  - [设置深浅色模式](#设置深浅色模式)  - [设置应用语言](#设置应用语言) | 当应用设置环境变量后，应用将无法通过订阅感知到对应的环境变量在系统中的变化。 | 应用自定义字体大小，以提升用户体验。 |
-| [订阅环境变量](#订阅环境变量) | 通过订阅环境变量，及时感知系统环境变化 。支持订阅的环境变量包括语言、深浅色、屏幕方向等，详见[Configuration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-configuration)。 | - 如果开发者将环境变量配置为不跟随系统变化（即[configuration标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#configuration标签)中的对应字段取值为“nonFollowSystem”），应用将无法通过订阅感知对应的环境变量在系统中的变化。  - 应用订阅环境变量后，当应用处于后台时，环境变量发生变更，应用将无法实时收到订阅通知。相关通知推送会被延迟处理，待应用切换回前台时，才会收到订阅通知。 | 当用户旋转设备屏幕时，应用可以通过订阅环境变量感知环境变化重新布局用户界面，以适应屏幕方向和尺寸。 |
+| [订阅环境变量](#订阅环境变量) | 通过订阅环境变量，及时感知系统环境变化 。支持订阅的环境变量包括语言、深浅色、屏幕方向等，详见[Configuration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-configuration)。 | - 如果开发者将环境变量配置为不跟随系统变化（即[configuration标签](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#configuration标签)中的对应字段取值为“nonFollowSystem”），应用将无法通过订阅感知对应的环境变量在系统中的变化。  - 应用订阅环境变量后，当应用处于后台时，环境变量发生变更，应用将无法实时收到订阅通知。相关通知推送会被延迟处理，待应用切换回前台时，才会收到订阅通知。 | 当用户旋转设备屏幕时，应用可以通过订阅环境变量感知环境变化重新布局用户界面，以适应屏幕方向和尺寸。 |
 
 ## 获取环境变量
 
@@ -53,7 +53,7 @@ export default class EnvAbility0 extends UIAbility {
 
 ### 设置字体大小
 
-应用字体大小默认不跟随系统变化，开发者可以通过将[configuration标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#configuration标签)中fontSizeScale的值配置为followSystem，使得应用字体大小跟随系统变化。
+应用字体大小默认不跟随系统变化，开发者可以通过将[configuration标签](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#configuration标签)中fontSizeScale的值配置为followSystem，使得应用字体大小跟随系统变化。
 
 开发者可以使用[setFontSizeScale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextsetfontsizescale13)设置应用字体大小。设置后，应用字体将不跟随系统变化，不再支持订阅系统字体大小变化。
 
@@ -295,7 +295,7 @@ export default class EnvAbility5 extends UIAbility {
 
 ![](./img/a6f8e750.png)
 
-* DevEco Studio默认工程中未自动生成[AbilityStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage)，AbilityStage文件的创建参见[AbilityStage开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitystage#开发步骤)。
+* DevEco Studio默认工程中未自动生成[AbilityStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage)，AbilityStage文件的创建参见[AbilityStage开发步骤](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/abilitystage#开发步骤)。
 * 当使用回调方法订阅系统环境变量的变化时，该回调方法会随着AbilityStage的生命周期而存在，在Module销毁时一并销毁。
 
 例如，在[AbilityStage.onConfigurationUpdate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage#onconfigurationupdate)回调方法中实现监测系统语言的变化。
@@ -338,7 +338,7 @@ export default class EnvAbilityStage extends AbilityStage {
 ![](./img/975189e1.png)
 
 * 当应用通过回调方法订阅环境变量变化时，该订阅会随着所在UIAbility的生命周期持续有效。一旦UIAbility被销毁，之前注册的所有回调订阅将自动失效，同时应用将不会再收到订阅的回调信息。
-* 如果使用该接口监听屏幕方向变化，需要在module.json5配置文件的[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)中将orientation字段配置为auto\_rotation。
+* 如果使用该接口监听屏幕方向变化，需要在module.json5配置文件的[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)中将orientation字段配置为auto\_rotation。
 
 例如，在[onConfigurationUpdate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-ability#abilityonconfigurationupdate)回调方法中实现监测系统语言的变化。
 

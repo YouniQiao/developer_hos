@@ -1,6 +1,6 @@
 ---
 title: "推送基于账号的服务动态消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-timeline
+original_url: /docs/dev/atomic-dev/atomic-push-development/push-as-timeline
 has_merged_cells: true
 format: md
 ---
@@ -88,7 +88,7 @@ format: md
 
   + 仅支持当前元服务的华为支付订单号，请勿使用其他元服务、APP支付等来源的订单号。
   + 待支付状态下，开发者可通过商户订单号[mercOrderNo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-merc-query-order)查询某笔订单的支付状态。
-* 从HarmonyOS 6.0开始，支持通过前端场景化button获取code，只有符合场景要求的场景，才可以使用[服务动态授权码Button](https://developer.huawei.com/consumer/cn/doc/atomic-guides/scenario-fusion-button-atomic-getservicecode)获取code。
+* 从HarmonyOS 6.0开始，支持通过前端场景化button获取code，只有符合场景要求的场景，才可以使用[服务动态授权码Button](/docs/dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-getservicecode)获取code。
 
   开发者需要在前端将触发服务的button组件的 openType 的值设置为functionalButtonComponentManager.OpenType.REQUEST\_SUBSCRIBE\_MESSAGE。当用户点击 button 后，获取平台提供的授权码code。
 
@@ -172,14 +172,14 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 * [projectId]：项目ID，登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“开发与服务”，在项目列表中选择对应的项目，左侧导航栏选择“项目设置”，在该页面获取。
 * Authorization：JWT格式字符串，可参见[Authorization](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-struct#section20573634202313)获取。
 * appId：元服务的APP ID，元服务的APP ID，登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“APP与元服务”，左侧导航栏选择“应用信息 &gt; 基本信息”，在该页面获取。
-* toOpenId：接收者（用户）账号登录的openID。使用从端侧上报的openID，或请求华为账号服务器[获取用户信息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-silent-login)。可参考元服务[账号使用规范](https://developer.huawei.com/consumer/cn/doc/design-guides/accounts-0000001967444380)进行华为账号登录的设计和接入。
+* toOpenId：接收者（用户）账号登录的openID。使用从端侧上报的openID，或请求华为账号服务器[获取用户信息](/docs/dev/atomic-dev/atomic-account-development/account-atomic-silent-login)。可参考元服务[账号使用规范](/docs/design/atomic-service-design/best-practices/accounts)进行华为账号登录的设计和接入。
 
 * sceneId：场景标识。详情请见[服务动态发送场景说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-api-service-timeline-param#section159496312255)。
 * subSceneId：子场景标识。详情请见[服务动态发送场景说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-api-service-timeline-param#section159496312255)。
 * code：授权码，用于服务动态消息推送和更新。详见[明确code获取方式](#section14481552115811)。
 * content：服务动态指定状态参数。服务动态消息推送必须以状态节点类型为“起始节点”状态开始推送，以“结束节点”状态结束服务动态消息。详情请见[请求体结构说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-api-service-timeline-send#section16714723163811)。定义Button、clickAction、appendButtons点击模板卡片后的跳转页面，仅限跳转当前元服务内页面。
-* clickAction：卡片点击事件，可通过携带data字段在点击后将数据传递给元服务。详情请参考[点击消息动作](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-send-sub-noti#section83531248142116)。
-* button：卡片按钮点击事件，可通过携带data字段在点击后将数据传递给元服务。详情请参考[点击消息动作](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-send-sub-noti#section83531248142116)。
+* clickAction：卡片点击事件，可通过携带data字段在点击后将数据传递给元服务。详情请参考[点击消息动作](/docs/dev/atomic-dev/push-as-subscription/push-as-send-sub-noti#section83531248142116)。
+* button：卡片按钮点击事件，可通过携带data字段在点击后将数据传递给元服务。详情请参考[点击消息动作](/docs/dev/atomic-dev/push-as-subscription/push-as-send-sub-noti#section83531248142116)。
 
 业务响应码报错问题请参考[业务响应码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-api-service-timeline-send#section167716192114)。
 

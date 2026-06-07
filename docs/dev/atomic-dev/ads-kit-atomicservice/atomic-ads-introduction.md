@@ -1,6 +1,6 @@
 ---
 title: "Ads Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-ads-introduction
+original_url: /docs/dev/atomic-dev/ads-kit-atomicservice/atomic-ads-introduction
 format: md
 ---
 

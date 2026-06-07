@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何禁用窗口的全屏显示功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-69
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-69
 ---
 
 
@@ -39,4 +39,4 @@ fullscreen表示支持全屏显示，split表示支持分屏显示，floating表
 
 **参考链接**
 
-[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)
+[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现跨模块的页面跳转功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-39
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-39
 ---
 
 
@@ -9,7 +9,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 * 方案一：使用router的命名路由接口router.pushNamedRoute()跳转。
 
-  参考地址：[页面路由 (@ohos.router)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing)
+  参考地址：[页面路由 (@ohos.router)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-routing)
 * 方案二：使用navigation组件跳转。
 
   以从应用入口模块的页面NavigationPage跳转到Login子业务模块页面LoginPage为例。主要包含以下步骤：
@@ -83,4 +83,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
      ```
 * 方案三：使用基于navigation组件的自定义路由框架跳转。
 
-  方案二虽然可以实现跨模块跳转的功能，但当模块间跳转需求增多，各个模块间将存在非常复杂的依赖关系，甚至会导致多个HAR/HSP间循环依赖。为了解决模块间的强耦合关系，并且提升页面加载性能，推荐[跨包路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-router-to-navigation#跨包路由)。
+  方案二虽然可以实现跨模块跳转的功能，但当模块间跳转需求增多，各个模块间将存在非常复杂的依赖关系，甚至会导致多个HAR/HSP间循环依赖。为了解决模块间的强耦合关系，并且提升页面加载性能，推荐[跨包路由](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-router-to-navigation#跨包路由)。

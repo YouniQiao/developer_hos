@@ -1,13 +1,13 @@
 ---
 title: "getTarget接口：获取状态管理框架代理前的原始对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-gettarget
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-gettarget
 format: md
 ---
 
 
 为了获取状态管理框架代理前的原始对象，开发者可以使用[getTarget接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#gettarget)。
 
-在阅读本文档前，建议提前阅读：[@Observed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)、[@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)。
+在阅读本文档前，建议提前阅读：[@Observed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)、[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)。
 
 ![](./img/fa5b370b.png)
 
@@ -22,8 +22,8 @@ format: md
   ```
   import { UIUtils } from '@kit.ArkUI';
   ```
-* 状态管理V1中，会给@Observed装饰的类对象以及使用状态变量装饰器如[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)装饰的class、Date、Map、Set、Array添加一层代理用于观测一层属性或API调用产生的变化。
-* 状态管理V2中，会给使用状态变量装饰器如[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)、[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)装饰的Date、Map、Set、Array添加一层代理用于观测API调用产生的变化。
+* 状态管理V1中，会给@Observed装饰的类对象以及使用状态变量装饰器如[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)装饰的class、Date、Map、Set、Array添加一层代理用于观测一层属性或API调用产生的变化。
+* 状态管理V2中，会给使用状态变量装饰器如[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)、[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)装饰的Date、Map、Set、Array添加一层代理用于观测API调用产生的变化。
 
 使用getTarget接口可以获取这些代理对象的原始对象。
 
@@ -105,7 +105,7 @@ let nonObservedClass: NonObservedClass = new NonObservedClass(); // 不被代理
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/NewGettarget/entry/src/main/ets/View/GetTargetAgent.ets#L17-L27" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：GetTargetAgent.ets</a></div>
 
 
-【2】状态变量装饰器装饰的复杂类型对象。使用@State、[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)等状态变量装饰器装饰Class、Map、Set、Date、Array时，会添加代理。若该对象已经是代理对象，则不会重复创建代理。
+【2】状态变量装饰器装饰的复杂类型对象。使用@State、[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)等状态变量装饰器装饰Class、Map、Set、Date、Array时，会添加代理。若该对象已经是代理对象，则不会重复创建代理。
 
 ```
 @Observed
@@ -284,12 +284,12 @@ let info: Info = new Info(); // NAPI接口传入info实例
 
 | 影响接口名 | 影响结果 |
 | --- | --- |
-| [napi\_get\_property\_names](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property#napi_get_property_names) | 返回值为"\_\_ob\_name"，"\_\_ob\_age"。 |
-| [napi\_set\_property](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property#napi_set_property) | 使用"name"，"\_\_ob\_name"均能赋值成功。 |
-| [napi\_get\_property](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property#napi_get_property) | 使用"name"，"\_\_ob\_name"均能获取到值。 |
-| [napi\_has\_property](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property#napi_has_property) | 使用"name"，"\_\_ob\_name"均返回true。 |
-| [napi\_delete\_property](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property#napi_delete_property) | 删除属性时需要加上"\_\_ob\_"前缀才能删除成功。 |
-| [napi\_has\_own\_property](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property#napi_has_own_property) | 使用"name"，"\_\_ob\_name"均返回true。 |
-| [napi\_set\_named\_property](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property#napi_set_named_property) | 使用"name"，"\_\_ob\_name"均能赋值成功。 |
-| [napi\_get\_named\_property](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property#napi_get_named_property) | 使用"name"，"\_\_ob\_name"均能获取到值。 |
-| [napi\_has\_named\_property](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property#napi_has_named_property) | 使用"name"，"\_\_ob\_name"均返回true。 |
+| [napi\_get\_property\_names](/docs/dev/ndk-dev/use-napi-about-property#napi_get_property_names) | 返回值为"\_\_ob\_name"，"\_\_ob\_age"。 |
+| [napi\_set\_property](/docs/dev/ndk-dev/use-napi-about-property#napi_set_property) | 使用"name"，"\_\_ob\_name"均能赋值成功。 |
+| [napi\_get\_property](/docs/dev/ndk-dev/use-napi-about-property#napi_get_property) | 使用"name"，"\_\_ob\_name"均能获取到值。 |
+| [napi\_has\_property](/docs/dev/ndk-dev/use-napi-about-property#napi_has_property) | 使用"name"，"\_\_ob\_name"均返回true。 |
+| [napi\_delete\_property](/docs/dev/ndk-dev/use-napi-about-property#napi_delete_property) | 删除属性时需要加上"\_\_ob\_"前缀才能删除成功。 |
+| [napi\_has\_own\_property](/docs/dev/ndk-dev/use-napi-about-property#napi_has_own_property) | 使用"name"，"\_\_ob\_name"均返回true。 |
+| [napi\_set\_named\_property](/docs/dev/ndk-dev/use-napi-about-property#napi_set_named_property) | 使用"name"，"\_\_ob\_name"均能赋值成功。 |
+| [napi\_get\_named\_property](/docs/dev/ndk-dev/use-napi-about-property#napi_get_named_property) | 使用"name"，"\_\_ob\_name"均能获取到值。 |
+| [napi\_has\_named\_property](/docs/dev/ndk-dev/use-napi-about-property#napi_has_named_property) | 使用"name"，"\_\_ob\_name"均返回true。 |

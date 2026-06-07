@@ -1,6 +1,6 @@
 ---
 title: "Reports API指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-report-api-guide-0000002271134669
+original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-report-api-guide-0000002271134669
 format: md
 ---
 
@@ -11,9 +11,9 @@ format: md
 
 ![](../img/agc-help-report-api-guide-0000002271134669_0.png)
 
-为了帮助您更好的开发，我们提供了[Reports API示例代码](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-demo-0000002238448026)。您可以参考Demo工程中的示例代码编写您的应用程序。
+为了帮助您更好的开发，我们提供了[Reports API示例代码](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-demo-0000002238448026)。您可以参考Demo工程中的示例代码编写您的应用程序。
 
-1. 请参见[获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661)完成服务端授权。
+1. 请参见[获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661)完成服务端授权。
 
    例如，API客户端方式需要先创建对应角色的API客户端，并获取认证用的Access Token。
 2. [查看报表数据](#section124mcpsimp)：获取报表前必须确保应用当前在AppGallery Connect中存在对应报表数据，即应用必须已经上架且开始运营推广。
@@ -32,7 +32,7 @@ format: md
 
 您可以调用Reports API中的对应接口获取该报表的CSV或Excel文件路径。
 
-需要注意的是，调用Reports API前请确认已经完成[获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661)。
+需要注意的是，调用Reports API前请确认已经完成[获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661)。
 
 #### 下载报表
 
@@ -42,8 +42,8 @@ format: md
 
 当前所有Reports API的调用流程都基本类似，本章节以获取HarmonyOS应用下载安装的报表文件接口为例，介绍Reports API业务的开发步骤。
 
-1. 参考[获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661)完成服务端授权。例如，API客户端方式需要先创建对应角色的API客户端，并获取认证用的Access Token。
-2. 调用[获取HarmonyOS应用下载安装的报表文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-report-api-app-download-export-0000002271000737)接口获取报表文件的fileURL路径。
+1. 参考[获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661)完成服务端授权。例如，API客户端方式需要先创建对应角色的API客户端，并获取认证用的Access Token。
+2. 调用[获取HarmonyOS应用下载安装的报表文件](/docs/distribute/agc/agc-help-report-api-reference-0000002236201354/agc-help-report-api-app-download-export-0000002271000737)接口获取报表文件的fileURL路径。
 
    ```
    package com.huawei.appgallery.connect.gateway.core;

@@ -1,6 +1,6 @@
 ---
 title: "预览告警“There are properties not initialized”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-4
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-4
 format: md
 ---
 

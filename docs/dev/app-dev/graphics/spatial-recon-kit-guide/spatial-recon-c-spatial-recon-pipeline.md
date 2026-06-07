@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "重建三维场景（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-c-spatial-recon-pipeline
+original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-c-spatial-recon-pipeline
 format: md
 ---
 

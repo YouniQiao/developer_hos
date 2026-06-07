@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用组件切换通话设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-switch-call-devices
+original_url: /docs/dev/app-dev/media/avsession-kit/distributed-avsession/using-switch-call-devices
 format: md
 ---
 
 
 ## 切换通话输出设备
 
-本文主要介绍AVCastPicker组件接入，实现通话设备切换功能。相关参数可参考[@ohos.multimedia.avCastPicker(投播组件)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avcastpicker)和[@ohos.multimedia.avCastPickerParam（投播组件参数）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-avcastpickerparam)。如果希望实现音频输出设备路由切换的效果，请参考[实现音频输出设备路由切换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-switcher)。
+本文主要介绍AVCastPicker组件接入，实现通话设备切换功能。相关参数可参考[@ohos.multimedia.avCastPicker(投播组件)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avcastpicker)和[@ohos.multimedia.avCastPickerParam（投播组件参数）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-avcastpickerparam)。如果希望实现音频输出设备路由切换的效果，请参考[实现音频输出设备路由切换](/docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-switcher)。
 
 当前系统支持两种组件样式的显示方式：默认样式显示和自定义样式显示。
 
@@ -130,7 +130,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/SwitchCallDevices/entry/src/main/ets/utils/AVCastPickerHelper.ets#L16-L40" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：AVCastPickerHelper.ets</a></div>
 
-3. 创建VOICE\_COMMUNICATION类型的AudioRenderer，并开始播放。具体通话音频播放等实现，请参考[开发音频通话功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-development)。
+3. 创建VOICE\_COMMUNICATION类型的AudioRenderer，并开始播放。具体通话音频播放等实现，请参考[开发音频通话功能](/docs/dev/app-dev/media/audio-kit/audio-call/audio-call-development)。
 
    ```
    import { audio } from '@kit.AudioKit';
@@ -426,7 +426,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/SwitchCallDevices/entry/src/main/ets/pages/DefaultAVInputCastPicker.ets#L16-L45" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：DefaultAVInputCastPicker.ets</a></div>
 
-2. 实现通话功能，请参考[开发音频通话功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-development)。
+2. 实现通话功能，请参考[开发音频通话功能](/docs/dev/app-dev/media/audio-kit/audio-call/audio-call-development)。
 
 ### 自定义实现方式
 
@@ -489,4 +489,4 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/AVSession/SwitchCallDevices/entry/src/main/ets/pages/SwitchInputDevice.ets#L17-L75" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：SwitchInputDevice.ets</a></div>
 
-2. 实现通话功能，请参考[开发音频通话功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-development)。
+2. 实现通话功能，请参考[开发音频通话功能](/docs/dev/app-dev/media/audio-kit/audio-call/audio-call-development)。

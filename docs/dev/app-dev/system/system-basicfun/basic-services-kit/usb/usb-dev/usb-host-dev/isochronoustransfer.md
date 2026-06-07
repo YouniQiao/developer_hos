@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "USB实时传输"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/isochronoustransfer
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-dev/usb-host-dev/isochronoustransfer
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
   扩展外设管理提供的ArkTs接口，所需SDK版本为API16及以上才可使用。
 * HDC配置：
 
-  HDC（HarmonyOS Device Connector）是为开发人员提供的用于调试的命令行工具，通过该工具可以在Windows/Linux/Mac系统上与真实设备或者模拟器进行交互，详细参考[HDC配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
+  HDC（HarmonyOS Device Connector）是为开发人员提供的用于调试的命令行工具，通过该工具可以在Windows/Linux/Mac系统上与真实设备或者模拟器进行交互，详细参考[HDC配置](/docs/dev/app-dev/system/hdc)。
 
 ### 搭建环境
 

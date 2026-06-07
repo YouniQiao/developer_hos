@@ -1,6 +1,6 @@
 ---
 title: "菜单控制（Menu）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-menu
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-menu/arkts-popup-and-menu-components-menu
 format: md
 ---
 
@@ -35,7 +35,7 @@ Button('click for Menu')
 
 ## 创建自定义样式的菜单
 
-当默认样式不满足开发需求时，可使用[@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)自定义菜单内容，通过bindMenu接口进行菜单的自定义。
+当默认样式不满足开发需求时，可使用[@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)自定义菜单内容，通过bindMenu接口进行菜单的自定义。
 
 ### 使用@Builder自定义菜单内容
 
@@ -163,7 +163,7 @@ Button('click for Menu')
 菜单从API version 18开始支持振动效果。菜单弹出时，默认不振动。若希望菜单弹出时有振动效果，可以通过[ContextMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#contextmenuoptions10)的hapticFeedbackMode属性，设置菜单弹出时的振动模式。
 
 * 只有一级菜单可配置弹出时振动效果。
-* 仅当应用具备ohos.permission.VIBRATE权限，且用户启用了触感反馈时才会生效。开启触控反馈时，需要在工程的module.json5中配置[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)的requestPermissions字段开启振动权限，配置如下：
+* 仅当应用具备ohos.permission.VIBRATE权限，且用户启用了触感反馈时才会生效。开启触控反馈时，需要在工程的module.json5中配置[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)的requestPermissions字段开启振动权限，配置如下：
 
   ```
   "requestPermissions": [

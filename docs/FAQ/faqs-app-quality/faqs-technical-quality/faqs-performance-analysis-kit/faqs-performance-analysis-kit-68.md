@@ -1,7 +1,7 @@
 ---
 format: md
 title: "安装VPN软件astrill后hdc访问不了设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-68
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-68
 ---
 
 
@@ -22,4 +22,4 @@ hdc访问不了设备。hdc list targets -v出现unknown状态。
 **解决措施**
 
 * 当前版本hdc建议卸载掉vpn软件，注意不是停掉vpn，而是卸载vpn。
-* 参考[hdc版本配套表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#hdc版本配套表)升级最新版本后重试。
+* 参考[hdc版本配套表](/docs/dev/app-dev/system/hdc#hdc版本配套表)升级最新版本后重试。

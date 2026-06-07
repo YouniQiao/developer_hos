@@ -1,6 +1,6 @@
 ---
 title: "使用瀑布流"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-waterflow
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-waterflow
 format: md
 ---
 
@@ -9,13 +9,13 @@ ArkUI开发框架在NDK接口提供了瀑布流容器组件，通过瀑布流自
 
 ## 接入ArkTS页面
 
-为了使用NDK接口构建UI界面，参考[接入ArkTS页面章节](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)，在ArkTS页面上创建用于Native页面挂载的占位组件，并实现ArkTS侧的NativeNode模块接口。
+为了使用NDK接口构建UI界面，参考[接入ArkTS页面章节](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)，在ArkTS页面上创建用于Native页面挂载的占位组件，并实现ArkTS侧的NativeNode模块接口。
 
 ## 使用懒加载
 
 ### NodeAdapter介绍
 
-NDK中提供了NodeAdapter对象替代ArkTS侧的[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach)功能，用于按需生成子组件。详情请参阅[NodeAdapter介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-loading-long-list#nodeadapter介绍)。
+NDK中提供了NodeAdapter对象替代ArkTS侧的[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach)功能，用于按需生成子组件。详情请参阅[NodeAdapter介绍](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-loading-long-list#nodeadapter介绍)。
 
 ### 实现懒加载适配器
 

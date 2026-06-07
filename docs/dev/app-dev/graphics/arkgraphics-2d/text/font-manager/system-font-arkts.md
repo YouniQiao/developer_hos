@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "系统字体的信息获取和使用（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-font-arkts
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/system-font-arkts
 format: md
 ---
 

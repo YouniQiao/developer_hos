@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决点击子组件模块区域会触发父组件的点击事件问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-243
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-243
 ---
 
 

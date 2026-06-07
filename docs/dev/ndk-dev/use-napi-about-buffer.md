@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口进行buffer相关开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-buffer
+original_url: /docs/dev/ndk-dev/use-napi-about-buffer
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 
 ## 使用示例
 
-Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
+Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
 
 ### napi\_create\_buffer
 

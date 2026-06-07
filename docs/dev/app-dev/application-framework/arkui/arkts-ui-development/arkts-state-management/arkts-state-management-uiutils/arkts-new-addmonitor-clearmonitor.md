@@ -1,13 +1,13 @@
 ---
 title: "addMonitor/clearMonitor接口：动态添加/取消监听"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-addmonitor-clearmonitor
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor
 format: md
 ---
 
 
 为了动态添加或删除状态管理V2的状态变量的监听函数，开发者可以使用[addMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#addmonitor20)或[clearMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#clearmonitor20)。
 
-在阅读本文档前，建议提前阅读：[@ObservedV2/@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)、[@Monitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor)。
+在阅读本文档前，建议提前阅读：[@ObservedV2/@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)、[@Monitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor)。
 
 ![](./img/8190e996.png)
 
@@ -15,7 +15,7 @@ format: md
 
 ## 概述
 
-装饰器[@Monitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor)如果声明在[@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)和[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)中，会使得开发者构造出的所有的@ObservedV2和@ComponentV2的实例，都默认有同样的@Monitor的监听回调，且无法取消或删除对应的监听回调。
+装饰器[@Monitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor)如果声明在[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)和[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)中，会使得开发者构造出的所有的@ObservedV2和@ComponentV2的实例，都默认有同样的@Monitor的监听回调，且无法取消或删除对应的监听回调。
 
 如果开发者希望动态给@ObservedV2和@ComponentV2实例添加或者删除监听函数，则可以使用[addMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#addmonitor20)和[clearMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#clearmonitor20)接口。
 
@@ -407,7 +407,7 @@ struct Page {
 
 ## addMonitor监听变化的规则
 
-addMonitor和装饰器[@Monitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor)监听变化的主要规则大体保持一致，对比如下表：
+addMonitor和装饰器[@Monitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor)监听变化的主要规则大体保持一致，对比如下表：
 
 | 场景 | addMonitor | @Monitor |
 | --- | --- | --- |
@@ -559,7 +559,7 @@ struct Page {
 
 ### 独立监听Path
 
-@Monitor没有对path独立监听，所以需要依赖开发者正确传入@Monitor入参，[传入非状态变量时会造成被连带监听的情况](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor#正确设置monitor入参)。
+@Monitor没有对path独立监听，所以需要依赖开发者正确传入@Monitor入参，[传入非状态变量时会造成被连带监听的情况](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor#正确设置monitor入参)。
 
 对于addMonitor，对不同path采取了独立监听的机制，如下面的例子，点击Button('change age&name')，会输出以下日志：
 
@@ -604,7 +604,7 @@ struct Index {
 
 ### 监听变量从可访问到不访问和从不可访问到可访问
 
-[@Monitor不会记录状态变量不可访问时的状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor#无法监听变量从可访问变为不可访问和从不可访问变为可访问)，所以其无法监听变量从可访问到不访问和从不可访问到可访问。
+[@Monitor不会记录状态变量不可访问时的状态](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor#无法监听变量从可访问变为不可访问和从不可访问变为可访问)，所以其无法监听变量从可访问到不访问和从不可访问到可访问。
 
 addMonitor会记录变量不可访问的状态，所以可以监听变量从可访问到不访问和从不可访问到可访问。例子如下。
 
@@ -736,7 +736,7 @@ struct Page {
 
 ### 监听构造函数中同步修改的状态变量的变化
 
-和[@Monitor异步构造](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor#类中monitor对变量监听的生效及失效时间)不同，addMonitor是同步构造的，所以在开发者调用完UIUtils.addMonitor(this, 'message', this.onMessageChange);后就完成了对message添加监听函数this.onMessageChange。在下面的例子中：
+和[@Monitor异步构造](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor#类中monitor对变量监听的生效及失效时间)不同，addMonitor是同步构造的，所以在开发者调用完UIUtils.addMonitor(this, 'message', this.onMessageChange);后就完成了对message添加监听函数this.onMessageChange。在下面的例子中：
 
 * 拉起页面，构造Info的实例，回调onMessageChange监听函数。
 * 点击Button('change message')，回调onMessageChange监听函数。

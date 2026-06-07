@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-overview-0000002338543837
+original_url: /docs/dev/game-dev/games-gamemme-riskcontrol-overview-0000002338543837
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 自动送检
 
-实时语音、实时信令文本消息和语音消息内容检测支持自动送检，集成游戏多媒体SDK即可自动送检相关内容。需要注意的是，实时语音自动送检前，您还需先[开启内容检测](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section17288256144510)功能。
+实时语音、实时信令文本消息和语音消息内容检测支持自动送检，集成游戏多媒体SDK即可自动送检相关内容。需要注意的是，实时语音自动送检前，您还需先[开启内容检测](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section17288256144510)功能。
 
 ## 人工送检
 
-实时信令文本消息内容检测还支持[在AGC控制台人工送检](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-agc-0000002304504622)和[使用REST API人工送检](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-restapi-0000002338703705)两种人工送检的方式，根据您的使用需要选择其中一种方式即可。
+实时信令文本消息内容检测还支持[在AGC控制台人工送检](/docs/dev/game-dev/games-gamemme-riskcontrol-agc-0000002304504622)和[使用REST API人工送检](/docs/dev/game-dev/games-gamemme-riskcontrol-restapi-0000002338703705)两种人工送检的方式，根据您的使用需要选择其中一种方式即可。

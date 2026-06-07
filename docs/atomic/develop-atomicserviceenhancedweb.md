@@ -1,11 +1,11 @@
 ---
 title: "AtomicServiceEnhancedWeb组件开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/develop-atomicserviceenhancedweb
+original_url: /docs/dev/atomic-dev/atomic-web-development/develop-atomicserviceenhancedweb
 format: md
 ---
 
 
-[AtomicServiceEnhancedWeb](https://developer.huawei.com/consumer/cn/doc/atomic-guides/components-atomicserviceenhancedweb)用于在元服务中嵌入网页内容，它作为一个容器，能够将网页内容直接集成到元服务的界面中，使得用户可以在不离开元服务的情况下浏览网页，为用户提供无缝的浏览体验。AtomicServiceEnhancedWeb不需要注入ASCF框架即可运行，请按照此指南进行配置开发。
+[AtomicServiceEnhancedWeb](/docs/dev/atomic-dev/atomic-web-development/components-atomicserviceenhancedweb)用于在元服务中嵌入网页内容，它作为一个容器，能够将网页内容直接集成到元服务的界面中，使得用户可以在不离开元服务的情况下浏览网页，为用户提供无缝的浏览体验。AtomicServiceEnhancedWeb不需要注入ASCF框架即可运行，请按照此指南进行配置开发。
 
 ## 环境搭建
 
@@ -47,7 +47,7 @@ format: md
 
 ## 开发准备
 
-1. 开始开发前，请确保已完成[业务域名配置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-business-domain)。
+1. 开始开发前，请确保已完成[业务域名配置](/docs/dev/atomic-dev/atomic-web-development/agc-help-harmonyos-business-domain)。
 2. 需要在H5工程下安装JS SDK，以便于在H5中调用相关接口，具体方法请参照[JS SDK](#js-sdk)。
 
 ## JS SDK

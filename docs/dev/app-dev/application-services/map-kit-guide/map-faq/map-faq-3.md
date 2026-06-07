@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "手势卡顿或者不生效"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-3
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-3
 format: md
 ---
 

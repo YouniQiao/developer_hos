@@ -1,7 +1,7 @@
 ---
 title: "rawheap-translator工具"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/rawheap-translator
+original_url: /docs/tools/cli-tools/rawheap-translator
 format: md
 ---
 

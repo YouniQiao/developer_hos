@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-internal-test-overview-0000002253054942
+original_url: /docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-overview-0000002253054942
 format: md
 ---
 

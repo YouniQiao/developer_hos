@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "基于AVCodec播放DRM节目(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-avcodec-integration
+original_url: /docs/dev/app-dev/media/drm-kit/drm-avcodec-integration
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 **适用场景**
 
-在创建DRM之前，需获取到DRM信息(参考[媒体数据解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer#开发步骤)开发步骤第4步)。
+在创建DRM之前，需获取到DRM信息(参考[媒体数据解析](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer#开发步骤)开发步骤第4步)。
 
 ## 开发指导
 
@@ -66,7 +66,7 @@ target_link_libraries(sample PUBLIC libnative_drm.so)
    }
    ```
 
-   获取到设备支持的DRM解决方案的名称和唯一标识的列表后，与DRM信息做匹配，创建对应的DRM解决方案。DRM信息可通过[媒体数据解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer#开发步骤)开发步骤第4步获取，
+   获取到设备支持的DRM解决方案的名称和唯一标识的列表后，与DRM信息做匹配，创建对应的DRM解决方案。DRM信息可通过[媒体数据解析](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer#开发步骤)开发步骤第4步获取，
 
    或者直接解析媒体协议或媒体数据得到DRM解决方案唯一标识及pssh数据以生成DRM信息。
 3. 创建MediaKeySystem实例。
@@ -142,7 +142,7 @@ target_link_libraries(sample PUBLIC libnative_drm.so)
    }
    ```
 
-   根据需要设置音频解密配置(详见[音频解码开发指南开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-decoding#开发步骤)第4步)、设置视频解密配置(详见[视频解码开发指南开发步骤Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)第4步或[Buffer模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#buffer模式)第4步)，实现DRM内容解密。
+   根据需要设置音频解密配置(详见[音频解码开发指南开发步骤](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-decoding#开发步骤)第4步)、设置视频解密配置(详见[视频解码开发指南开发步骤Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)第4步或[Buffer模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#buffer模式)第4步)，实现DRM内容解密。
 7. 销毁MediaKeySession实例。
 
    ```

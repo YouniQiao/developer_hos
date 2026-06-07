@@ -1,7 +1,7 @@
 ---
 title: "带货短视频发布规范及指导"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/short-video-specification-0000001257133917
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/short-video-0000001212373900/short-video-specification-0000001257133917
 format: md
 ---
 

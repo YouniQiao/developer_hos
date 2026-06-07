@@ -1,6 +1,6 @@
 ---
 title: "UI上下文异常调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrong-uicontext-debug
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/arkts-wrong-uicontext-debug
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 * 存在JS异常："Node Constructor error, param uiContext error"。
 
-  产生该异常的原因通常是在[自定义节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-node)中使用了无效的UIContext，这可能导致后续UI操作被错误关联到该无效UIContext。
+  产生该异常的原因通常是在[自定义节点](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-node)中使用了无效的UIContext，这可能导致后续UI操作被错误关联到该无效UIContext。
 * 存在实例状态更新时，上下文实例ID大于等于100000且小于1000000的日志：
 
   实例状态更新的日志格式为：

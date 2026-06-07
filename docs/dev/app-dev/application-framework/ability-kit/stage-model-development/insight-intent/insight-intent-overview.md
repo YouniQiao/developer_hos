@@ -1,6 +1,6 @@
 ---
 title: "意图框架概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-overview
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-overview
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 例如，开发者将出行导航功能接入意图框架后，用户可通过自然语言指令（如“骑行导航到公司”）触发系统入口，系统解析指令并调用对应意图，实现出行导航的目的。
 
-目前最常用的系统入口是小艺建议，通过小艺建议集成意图框架参考[Intents Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-introduction)。
+目前最常用的系统入口是小艺建议，通过小艺建议集成意图框架参考[Intents Kit简介](/docs/dev/app-dev/ai/intents-kit-guide/intents-introduction)。
 
 ## 基本概念
 
@@ -39,5 +39,5 @@ format: md
 
 | 意图开发方式 | 说明 | 使用场景 |
 | --- | --- | --- |
-| [通过配置文件开发意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-config-development) | 开发者通过配置文件定义意图和意图参数，意图参数需要和系统入口协商一致。 | - 适用版本：API version 11及以上版本。  - 开发实现：意图的执行需要和Ability组件绑定，需要新增意图配置文件和意图执行文件。 |
-| [通过装饰器开发意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-decorator-development)（推荐） | 开发者通过代码定义意图和意图参数，支持接入标准意图或自定义意图。 | - 适用版本：API version 20及以上版本。  - 开发实现：支持将现有功能直接定义为意图，开发更加便捷。同时，也支持新增意图执行文件。 |
+| [通过配置文件开发意图](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-config-development) | 开发者通过配置文件定义意图和意图参数，意图参数需要和系统入口协商一致。 | - 适用版本：API version 11及以上版本。  - 开发实现：意图的执行需要和Ability组件绑定，需要新增意图配置文件和意图执行文件。 |
+| [通过装饰器开发意图](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-decorator-development)（推荐） | 开发者通过代码定义意图和意图参数，支持接入标准意图或自定义意图。 | - 适用版本：API version 20及以上版本。  - 开发实现：支持将现有功能直接定义为意图，开发更加便捷。同时，也支持新增意图执行文件。 |

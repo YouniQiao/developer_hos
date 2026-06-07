@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-customer-partner-overview-0000001293855494
+original_url: /docs/monetize/promotion/bp-start-customer-partner-overview-0000001293855494
 format: md
 ---
 
@@ -46,4 +46,4 @@ format: md
 ![](./img/cf2efaa12536.png) 
 
 - 客户投放伙伴相关的介绍和操作，具体请参见[视频课程](https://developer.huawei.com/consumer/cn/training/course/video/C101678331706327247)。
-- 对于直客账号如果需要客户投放伙伴推广，则授权投放操作账户。具体授权操作请参见[(可选)授权客户投放伙伴管理账户](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-authorize-0000001346774281)。
+- 对于直客账号如果需要客户投放伙伴推广，则授权投放操作账户。具体授权操作请参见[(可选)授权客户投放伙伴管理账户](/docs/monetize/promotion/bp-start-guest-authorize-0000001346774281)。

@@ -1,6 +1,6 @@
 ---
 title: "内容创作管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-column-operation-0000002392553585
+original_url: /docs/distribute/agc/agc-help-content-operation-0000002359033488/agc-help-column-operation-0000002392553585
 format: md
 ---
 

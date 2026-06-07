@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "控件交互"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-controls-and-interaction
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-interaction/map-controls-and-interaction
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
 以下是地图的控件相关接口，该功能有2种实现方式：
 
-* 地图初始化时，可在初始化参数[MapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapoptions)中设置是否启用控件功能，详细讲解见[显示地图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-presenting)章节。
+* 地图初始化时，可在初始化参数[MapOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#mapoptions)中设置是否启用控件功能，详细讲解见[显示地图](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-presenting)章节。
 * 通过调用[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)提供的set方法实现相关控件的开启或关闭。
 
 | 接口名 | 描述 |
@@ -37,7 +37,7 @@ format: md
 
 ## 开发步骤
 
-mapController对象在初始化地图时获取，初始化地图功能在[显示地图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-presenting)章节中有详细讲解。
+mapController对象在初始化地图时获取，初始化地图功能在[显示地图](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-presenting)章节中有详细讲解。
 
 ### 缩放控件
 

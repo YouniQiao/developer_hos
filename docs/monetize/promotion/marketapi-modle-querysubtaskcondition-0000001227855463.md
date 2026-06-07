@@ -1,7 +1,7 @@
 ---
 title: "QuerySubTaskCondition"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-querysubtaskcondition-0000001227855463
+original_url: /docs/monetize/promotion/marketapi-modle-querysubtaskcondition-0000001227855463
 format: md
 ---
 

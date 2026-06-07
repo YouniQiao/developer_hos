@@ -1,6 +1,6 @@
 ---
 title: "框架间通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-nativebridge
+original_url: /docs/dev/atomic-dev/ascf/framework/ascf-nativebridge
 format: md
 ---
 

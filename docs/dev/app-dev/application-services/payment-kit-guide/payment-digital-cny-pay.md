@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "数字人民币支付场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-digital-cny-pay
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 例如用户需要通过数字钱包充值话费，此时用户可打开商户APP应用，选好充值金额发起支付，商户通过接入数字人民币支付服务，拉起数字人民币收银台完成订单支付。
 
-支持商户模型：[运营机构或受理服务机构入网的商户](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay-preparations)
+支持商户模型：[运营机构或受理服务机构入网的商户](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-digital-cny-pay-preparations)
 
 数字人民币收银台展示：
 
@@ -29,7 +29,7 @@ format: md
 
 | 步骤 | 说明 |
 | --- | --- |
-| 开发准备 | 请先完成开发准备后再进行下面的开发接入。  - [数字人民币接入准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay-preparations) |
+| 开发准备 | 请先完成开发准备后再进行下面的开发接入。  - [数字人民币接入准备](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-digital-cny-pay-preparations) |
 | 接入数字人民币支付 | 根据数字人民币支付场景[开发步骤](#开发步骤)完成接入。 |
 
 ## 业务流程
@@ -39,7 +39,7 @@ format: md
 ![](./img/fa9d7f24.png)
 
 1. 商户客户端请求商户服务器创建商品订单。
-2. 商户服务器按照商户模式（运营机构商户或受理服务机构商户）调用运营机构或受理服务机构提供的下单接口到数字人民币服务端下单，接口详情请参照商户合作的[运营机构或受理服务机构提供的开发指引](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-27)。
+2. 商户服务器按照商户模式（运营机构商户或受理服务机构商户）调用运营机构或受理服务机构提供的下单接口到数字人民币服务端下单，接口详情请参照商户合作的[运营机构或受理服务机构提供的开发指引](/docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-27)。
 3. 数字人民币服务端返回订单加密信息。
 4. 商户服务端组建订单信息参数[orderInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-ecnypaymentservice#ecnyorderinfo)返回给商户客户端。
 5. 商户客户端调用[requestEcnyPayment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-ecnypaymentservice#requestecnypayment)接口拉起Payment Kit客户端数字人民币收银台。

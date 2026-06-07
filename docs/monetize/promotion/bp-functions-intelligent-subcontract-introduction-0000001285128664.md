@@ -1,7 +1,7 @@
 ---
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-introduction-0000001285128664
+original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-introduction-0000001285128664
 format: md
 ---
 
@@ -28,9 +28,9 @@ format: md
 
 具体流程说明如下：
 
-1. 开发者在华为应用市场应用推广门户新建智能分包，并在投放任务中选择已创建的智能分包，详情请参见[新建智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)。
+1. 开发者在华为应用市场应用推广门户新建智能分包，并在投放任务中选择已创建的智能分包，详情请参见[新建智能分包](/docs/monetize/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)。
 2. 推广任务会同步到华为应用市场应用推广平台。
 3. 开发者的任务竞价成功后在应用市场推广榜单（图中以应用市场客户端为例）完成推广。
 4. 终端用户从推广位完成应用安装，对应的渠道号（channel）与任务ID（taskid）以及回传参数（callback）等会写入到应用市场客户端。
-5. 开发者可以在APP中调用华为应用市场客户端提供的应用包名查询接口获取归因信息，详见[客户端归因查询](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-attribution-0000001285288280)。
+5. 开发者可以在APP中调用华为应用市场客户端提供的应用包名查询接口获取归因信息，详见[客户端归因查询](/docs/monetize/promotion/bp-functions-intelligent-subcontract-attribution-0000001285288280)。
 6. 将开发者App中获取的归因信息上报到您的服务端，在服务端进行解析处理。

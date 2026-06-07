@@ -1,11 +1,11 @@
 ---
 title: "编译打包应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-internal-test-build-app-0000002295372093
+original_url: /docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-build-app-0000002295372093
 format: md
 ---
 
 
-[准备好打包所需配置文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-internal-test-prepare-0000002262046566)后，即可准备编译打包应用。
+[准备好打包所需配置文件](/docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-prepare-0000002262046566)后，即可准备编译打包应用。
 
 1. 打开DevEco Studio，在顶部菜单栏选择“File > Project Structure”，进入“Project Structure”界面。
 2. 导航选择“Project”，点击“Signing Configs”页签，取消“Automatically generate signature”勾选项，配置工程的签名信息，完成后点击“OK”。

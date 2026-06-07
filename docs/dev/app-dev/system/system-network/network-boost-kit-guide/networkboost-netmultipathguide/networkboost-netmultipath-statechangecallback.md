@@ -1,6 +1,6 @@
 ---
 title: "多网状态监听"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-statechangecallback
+original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-statechangecallback
 format: md
 ---
 

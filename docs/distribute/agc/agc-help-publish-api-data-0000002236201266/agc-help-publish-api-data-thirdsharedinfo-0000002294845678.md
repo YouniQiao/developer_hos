@@ -1,6 +1,6 @@
 ---
 title: "ThirdSharedInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-thirdsharedinfo-0000002294845678
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-thirdsharedinfo-0000002294845678
 format: md
 ---
 
@@ -14,4 +14,4 @@ format: md
 | serviceType | O | String(100) | 共享信息的服务类型。 |
 | scene | O | String(200) | 使用场景。 |
 | shareType | O | String(100) | 共享方式。 |
-| dataItems | O | `List&lt;[DataItem](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-dataitem-0000002328924933)>` | 第三方数据信息。  数组长度不超过200。 |
+| dataItems | O | `List&lt;[DataItem](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-dataitem-0000002328924933)>` | 第三方数据信息。  数组长度不超过200。 |

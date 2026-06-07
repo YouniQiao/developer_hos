@@ -1,6 +1,6 @@
 ---
 title: "获取华为账号用户信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-huawei-id-retrieval
+original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-huawei-id-retrieval
 format: md
 ---
 
@@ -15,8 +15,8 @@ format: md
 
 开发准备
 
-1. [配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)
-2. [配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)
+1. [配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)
+2. [配置Client ID](/docs/dev/app-dev/application-services/account-client-id)
 
 has.login后可以获取到openID。也可以通过将has.login接口返回的code传入服务器端接口[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)，再通过[解析凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-token-info)获取openID。has.login返回的code即是获取用户级凭证接口中需要的授权码（Authorization Code）。
 
@@ -38,9 +38,9 @@ has.login({
 
 ### 开发准备
 
-1. [配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-sign-fingerprints)
-2. [配置Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)
-3. [配置scope权限](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-permissions)
+1. [配置签名和指纹](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-sign-fingerprints)
+2. [配置Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)
+3. [配置scope权限](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-permissions)
 
 当元服务需要获取用户手机号时，可通过调用Button组件 open-type="getPhoneNumber" 引导用户完成手机号授权。
 
@@ -48,7 +48,7 @@ has.login({
 
 使用方法：
 
-1. 需要将[button](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-button)组件open-type的值设置为getPhoneNumber，当用户点击并同意之后，通过 bindgetphonenumber事件获取回调信息。
+1. 需要将[button](/docs/dev/atomic-dev/ascf/components-form-components/components-button)组件open-type的值设置为getPhoneNumber，当用户点击并同意之后，通过 bindgetphonenumber事件获取回调信息。
 2. 将bindgetphonenumber事件回调中的动态令牌code传到开发者后台，并在开发者后台调用服务器端接口消费该code来[获取用户级凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-obtain-user-token)，再通过[获取用户信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-user-info-get-phone)接口，来获取用户手机号。每个code有效期为5分钟，且只能消费一次。bindgetphonenumber中的动态令牌code即是获取用户级凭证接口中需要的授权码（Authorization Code）。
 
 ![](./img/a97bf61e.png)
@@ -78,11 +78,11 @@ Page({
 
 ## 获取发票抬头
 
-当元服务需要获取用户发票抬头时，可使用[has.chooseInvoiceTitle](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-invoice#haschooseinvoicetitle)，帮助用户打开发票抬头选择页面进行选择或管理发票抬头。
+当元服务需要获取用户发票抬头时，可使用[has.chooseInvoiceTitle](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-invoice#haschooseinvoicetitle)，帮助用户打开发票抬头选择页面进行选择或管理发票抬头。
 
 ## 获取收货地址
 
-当元服务需要获取用户收货地址时，可使用[has.chooseAddress](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-shipping-address#haschooseaddress)，引导用户添加或选择已有的收货地址，并最终获取用户的收货地址。
+当元服务需要获取用户收货地址时，可使用[has.chooseAddress](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-shipping-address#haschooseaddress)，引导用户添加或选择已有的收货地址，并最终获取用户的收货地址。
 
 ```
 has.chooseAddress({

@@ -1,6 +1,6 @@
 ---
 title: "自定义Native Sendable对象的多线程操作场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-define-sendable-object
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/napi-define-sendable-object
 format: md
 ---
 

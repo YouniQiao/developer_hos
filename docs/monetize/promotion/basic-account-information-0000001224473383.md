@@ -1,7 +1,7 @@
 ---
 title: "查看/修改账户基本信息"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/basic-account-information-0000001224473383
+original_url: /docs/monetize/promotion/basic-account-information-0000001224473383
 format: md
 ---
 
@@ -24,11 +24,11 @@ format: md
   ![](./img/zh-cn_image_0000002536101763_e0976fcccd76.png "点击放大")
 - <strong>广告账户实名认证</strong>：
   - <strong>需要[实名认证](https://developer.huawei.com/consumer/cn/doc/start/itrna-0000001076878172)的场景如下：</strong>
-    - 若您的广告任务在审核时被鲸鸿动能广告平台判定为涉及[受限内容](https://developer.huawei.com/consumer/cn/doc/promotion/industry-admission-rules-0000001189244454#section71534582218)，或者您要使用这些广告功能，如线上充值，您必须完成[实名认证](https://developer.huawei.com/consumer/cn/doc/start/itrna-0000001076878172)再进行广告投放。
+    - 若您的广告任务在审核时被鲸鸿动能广告平台判定为涉及[受限内容](/docs/monetize/promotion/industry-admission-rules-0000001189244454#section71534582218)，或者您要使用这些广告功能，如线上充值，您必须完成[实名认证](https://developer.huawei.com/consumer/cn/doc/start/itrna-0000001076878172)再进行广告投放。
     - 如果您在华为开发者联盟官网平台已经提交实名审核，但被驳回了，您需要根据驳回理由，在广告开户时<strong>重新修改实名信息</strong>，并提交审核，此时您可以进入广告账户试用，但审核通过后即可进行充值投放等操作。
     - 若您在华为开发者联盟平台提交的实名认证还在审核中，您需要等待实名通过后，才能开通鲸鸿动能广告账户。
   - <strong>如何进行[实名认证](https://developer.huawei.com/consumer/cn/doc/start/itrna-0000001076878172)</strong>：
-    - 如果因为广告任务在审核时被鲸鸿动能广告平台判定为涉及[受限内容](https://developer.huawei.com/consumer/cn/doc/promotion/industry-admission-rules-0000001189244454#section71534582218)，您需要重新登录广告账户，单击提示框中的“完善信息”，通过邓白氏号码或者营业执照号码进行实名认证，实名审核时间为1-2个工作日，审核结果将会发送到您的[联系人邮箱](https://developer.huawei.com/consumer/cn/doc/promotion/register-0000001052264353#ZH-CN_TOPIC_0000001052264353__li4641112612506)。
+    - 如果因为广告任务在审核时被鲸鸿动能广告平台判定为涉及[受限内容](/docs/monetize/promotion/industry-admission-rules-0000001189244454#section71534582218)，您需要重新登录广告账户，单击提示框中的“完善信息”，通过邓白氏号码或者营业执照号码进行实名认证，实名审核时间为1-2个工作日，审核结果将会发送到您的[联系人邮箱](https://developer.huawei.com/consumer/cn/doc/promotion/register-0000001052264353#ZH-CN_TOPIC_0000001052264353__li4641112612506)。
 
       ![](./img/zh-cn_image_0000001373832816_b20a74c87ddf.png)
 

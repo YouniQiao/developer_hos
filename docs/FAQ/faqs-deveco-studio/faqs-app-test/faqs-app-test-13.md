@@ -1,7 +1,7 @@
 ---
 format: md
 title: "录制成功但回放效果不符合预期"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-13
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-13
 ---
 
 

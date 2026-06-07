@@ -1,6 +1,6 @@
 ---
 title: "触摸及手势事件绑定"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-gesture-events-binding-0000002333256573
+original_url: /docs/dev/game-dev/games-universal-gesture-events-binding-0000002333256573
 format: md
 ---
 

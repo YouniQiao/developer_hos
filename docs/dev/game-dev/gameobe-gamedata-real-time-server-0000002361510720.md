@@ -1,6 +1,6 @@
 ---
 title: "消息通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-gamedata-real-time-server-0000002361510720
+original_url: /docs/dev/game-dev/gameobe-gamedata-real-time-server-0000002361510720
 format: md
 ---
 

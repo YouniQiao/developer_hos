@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-faq-0000002389385065
+original_url: /docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-faq-0000002389385065
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "配置Client ID"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/configuration_client_id
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/configuration_client_id
 format: md
 ---
 

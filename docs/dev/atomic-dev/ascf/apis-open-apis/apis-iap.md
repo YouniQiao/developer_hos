@@ -1,6 +1,6 @@
 ---
 title: "IAP"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-iap
+original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-iap
 format: md
 ---
 
@@ -11,7 +11,7 @@ has.queryIapEnvStatus(Object object)
 
 查询用户登录的账号服务地是否在IAP Kit支持结算的国家/地区中。当前只支持中国大陆。
 
-**需要权限：** 开发前需要配置[Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service)、[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)。
+**需要权限：** 开发前需要配置[Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service)、[开启和激活应用内购买服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-in-app-purchases)。
 
 **起始版本：** 1.0.5
 
@@ -59,7 +59,7 @@ has.createIap(Object object)
 
 发起购买，支持消耗型商品、非消耗型商品和自动续期订阅商品。在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)创建商品后，使用此接口拉起华为应用内支付收银台，显示商品名称、价格等信息。
 
-**需要权限：** 开发前需要配置[Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service)、[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)。
+**需要权限：** 开发前需要配置[Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service)、[开启和激活应用内购买服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-in-app-purchases)。
 
 **起始版本：** 1.0.5
 
@@ -69,11 +69,11 @@ has.createIap(Object object)
 
 | 参数 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
-| productId | string | 是 | 待支付的商品ID。商品ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置商品信息时设置的“商品ID”，具体请参见[配置商品信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product)。 |
+| productId | string | 是 | 待支付的商品ID。商品ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置商品信息时设置的“商品ID”，具体请参见[配置商品信息](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-product)。 |
 | productType | number | 是 | 需要查询的商品类型。  0：消耗型商品  1：非消耗型商品  2：自动续期订阅商品  3：非续期订阅商品（**起始版本：** 1.0.10） |
 | developerPayload | string | 否 | 商户侧保留信息。  若该字段有值，在支付成功后的回调结果中会原样返回给应用。  **说明：** 该参数长度限制为[0, 256]。 |
 | reservedInfo | string | 否 | 要求JSON String格式，商户可以将额外需要传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。  例如：let reservedInfo = "&#123;\"key1\":\"value1\",\"key2\":\"value2\"&#125;";  **说明：** 该字段为预留字段，可选传入，开发者暂时无需关注。 |
-| promotionalOfferId | string | 否 | 优惠ID。优惠ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置商品信息时设置的促销优惠标识符，具体请参见[设置促销价格](https://developer.huawei.com/consumer/cn/doc/app/promotion-non-subscription-0000001931836332#section1429175616582)。传递该字段且要生效，需传递jwsRepresentation字段包含促销优惠信息。 |
+| promotionalOfferId | string | 否 | 优惠ID。优惠ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置商品信息时设置的促销优惠标识符，具体请参见[设置促销价格](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332#section1429175616582)。传递该字段且要生效，需传递jwsRepresentation字段包含促销优惠信息。 |
 | applicationUserName | string | 否 | 用户账户相关联的混淆字符串，唯一标识用户。传递优惠ID场景，可以传递该字段。 |
 | jwsRepresentation | string | 否 | 包含购买参数信息的JWS格式签名数据。购买参数，如促销优惠等。详细说明见[生成订阅优惠签名购买参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-subscribe-offer-sign)。 |
 | success | function | 否 | 接口调用成功的回调函数。 |
@@ -135,7 +135,7 @@ has.finishIap(Object object)
 
 应用完成已购商品的发货后，调用此接口确认发货，指明此次购买流程结束。
 
-**需要权限：** 开发前需要配置[Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service)、[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)。
+**需要权限：** 开发前需要配置[Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service)、[开启和激活应用内购买服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-in-app-purchases)。
 
 **起始版本：** 1.0.5
 
@@ -197,7 +197,7 @@ has.queryIap(Object object)
 * 若查询消耗型商品，IAP仅返回用户已购未消耗的购买数据。若有购买数据返回，说明可能存在因某些异常而导致未进行发货的情况，需要应用判断是否已发货，未发货则需要进行补发货处理。
 * 若查询非消耗型商品，IAP返回用户所有已订购商品的购买数据。
 
-**需要权限：** 开发前需要配置[Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service)、[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)。
+**需要权限：** 开发前需要配置[Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service)、[开启和激活应用内购买服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-in-app-purchases)。
 
 **起始版本：** 1.0.5
 
@@ -258,7 +258,7 @@ has.queryIapProducts(Object object)
 
 获取在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)上配置的商品的详情信息。
 
-**需要权限：** 开发前需要配置[Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service)、[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)。
+**需要权限：** 开发前需要配置[Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service)、[开启和激活应用内购买服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-in-app-purchases)。
 
 **起始版本：** 1.0.10
 
@@ -269,7 +269,7 @@ has.queryIapProducts(Object object)
 | 参数 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
 | productType | number | 是 | 需要查询的商品类型。  0：消耗型商品  1：非消耗型商品  2：自动续期订阅商品  3：非续期订阅商品 |
-| productIds | string[] | 是 | 待查询商品ID列表。  商品ID必须已经在当前应用中创建且唯一。  商品ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置商品信息时设置的商品ID，请参见[配置商品信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product)。  **说明：** 一次查询最多支持200个商品，商品数量较多时建议分批查询。 |
+| productIds | string[] | 是 | 待查询商品ID列表。  商品ID必须已经在当前应用中创建且唯一。  商品ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置商品信息时设置的商品ID，请参见[配置商品信息](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-product)。  **说明：** 一次查询最多支持200个商品，商品数量较多时建议分批查询。 |
 | success | function | 否 | 接口调用成功的回调函数。 |
 | fail | function | 否 | 接口调用失败的回调函数。 |
 | complete | function | 否 | 接口调用结束的回调函数（调用成功、失败都会执行）。 |
@@ -317,7 +317,7 @@ has.isIapSandboxActivated(Object object)
 
 检查沙盒测试能力是否生效。
 
-**需要权限：** 开发前需要配置[Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service)、[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)。
+**需要权限：** 开发前需要配置[Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service)、[开启和激活应用内购买服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-in-app-purchases)。
 
 **起始版本：** 1.0.10
 
@@ -371,7 +371,7 @@ has.showIapManagedSubscriptions(Object object)
 
 跳转到订阅页或订阅详情页。
 
-**需要权限：** 开发前需要配置[Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service)、[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)。
+**需要权限：** 开发前需要配置[Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)、[配置签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)、[开通商户服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service)、[开启和激活应用内购买服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-in-app-purchases)。
 
 **起始版本：** 1.0.10
 
@@ -382,7 +382,7 @@ has.showIapManagedSubscriptions(Object object)
 | 参数 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
 | uiParameter | [UIWindowParameter](#uiwindowparameter) | 是 | 包含界面窗口模式的[UIWindowParameter](#uiwindowparameter)对象。 |
-| groupId | string | 否 | 订阅组ID，来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置管理的订阅组，请参见[新增订阅组](https://developer.huawei.com/consumer/cn/doc/app/non-subscription-0000001958955109#section37862471018)。  **说明：**  - 传递groupId，跳转到订阅详情页。  - 不传递groupId，跳转到订阅页。如果用户在应用只有一条订阅数据，此时会跳转到此条订阅的订阅详情页。 |
+| groupId | string | 否 | 订阅组ID，来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置管理的订阅组，请参见[新增订阅组](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/create-digital-products-0000001958955105/new-0000001931836320/non-subscription-0000001958955109#section37862471018)。  **说明：**  - 传递groupId，跳转到订阅详情页。  - 不传递groupId，跳转到订阅页。如果用户在应用只有一条订阅数据，此时会跳转到此条订阅的订阅详情页。 |
 | success | function | 否 | 接口调用成功的回调函数。 |
 | fail | function | 否 | 接口调用失败的回调函数。 |
 | complete | function | 否 | 接口调用结束的回调函数（调用成功、失败都会执行）。 |
@@ -482,8 +482,8 @@ has.showIapManagedSubscriptions({
 
 | 名称 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
-| subGroupGenerationId | string | 是 | 订阅组的代ID。  - 用户切换订阅商品时，此ID不会改变。  - 订阅失效且超出[保留期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#section1656191811315)后，用户重新购买商品时，此ID会改变。 |
-| subscriptionId | string | 是 | 商品的订阅ID。以下场景，此ID会发生改变：  - 用户切换订阅商品时。  - 订阅失效且超出[保留期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#section1656191811315)后，用户重新购买商品时。 |
+| subGroupGenerationId | string | 是 | 订阅组的代ID。  - 用户切换订阅商品时，此ID不会改变。  - 订阅失效且超出[保留期](/docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-subscription-functions#section1656191811315)后，用户重新购买商品时，此ID会改变。 |
+| subscriptionId | string | 是 | 商品的订阅ID。以下场景，此ID会发生改变：  - 用户切换订阅商品时。  - 订阅失效且超出[保留期](/docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-subscription-functions#section1656191811315)后，用户重新购买商品时。 |
 | purchaseToken | string | 是 | 购买token，在购买消耗型/非消耗型商品场景中与具体购买订单一一对应，在订阅型商品场景中与订阅ID一一对应。 |
 | status | string | 是 | 订阅状态。  1：生效中  2：已到期  3：尝试扣费  5：撤销 |
 | expiresTime | number | 是 | 自动续期订阅商品的过期时间，UTC时间戳，以毫秒为单位。 |
@@ -500,7 +500,7 @@ has.showIapManagedSubscriptions({
 | 名称 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
 | environment | string | 是 | 环境类型。  NORMAL：生产环境  SANDBOX：沙盒环境 |
-| subGroupGenerationId | string | 是 | 订阅组的代ID。  - 用户切换订阅商品时，此ID不会改变。  - 订阅失效且超出[保留期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#section1656191811315)后，用户重新购买商品时，此ID会改变。 |
+| subGroupGenerationId | string | 是 | 订阅组的代ID。  - 用户切换订阅商品时，此ID不会改变。  - 订阅失效且超出[保留期](/docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-subscription-functions#section1656191811315)后，用户重新购买商品时，此ID会改变。 |
 | nextRenewPeriodProductId | string | 否 | 下一个计费周期续订的商品ID。 |
 | productId | string | 是 | 当前生效的商品ID。 |
 | autoRenewStatusCode | string | 是 | 自动续期状态。  0：关闭  1：打开 |
@@ -535,11 +535,11 @@ has.showIapManagedSubscriptions({
 | type | number | 是 | 商品类型。  0：消耗型商品  1：非消耗型商品  2：自动续期订阅商品  3：非续期订阅商品 |
 | name | string | 是 | 商品名称，为配置商品信息时配置的名称。  用于显示在应用内支付收银台。 |
 | description | string | 是 | 商品描述，即配置商品信息时配置的描述信息。 |
-| price | string | 是 | 商品的展示价格，包含商品币种和价格，格式为“币种+商品价格”，例如 EUR 0.15。  部分国家/地区会返回“货币符号+商品价格”，例如中国大陆返回“￥0.15”。  此价格含税。  - 当商品为消耗型/非消耗型商品时，若[设置促销价格](https://developer.huawei.com/consumer/cn/doc/app/promotion-non-subscription-0000001931836332#section1429175616582)，该字段为商品的促销价格，未设置则为商品原价。  - 当商品为自动续期订阅商品时，该字段为商品的原价。  **说明：** 该字段已废弃，建议使用localPrice替代。 |
-| localPrice | string | 否 | 商品的展示价格，包含商品币种和价格，格式为“币种+商品价格”，例如 EUR 0.15。  部分国家/地区会返回“货币符号+商品价格”，例如中国大陆返回“￥0.15”。  此价格含税。  - 当商品为消耗型/非消耗型商品时，若[设置促销价格](https://developer.huawei.com/consumer/cn/doc/app/promotion-non-subscription-0000001931836332#section1429175616582)，该字段为商品的促销价格，未设置则为商品原价。  - 当商品为自动续期订阅商品时，该字段为商品的原价。 |
-| microPrice | number | 是 | 商品实际价格乘以1,000,000后的微单位价格。  例如某个商品实际价格是1.99美元，则该商品对应的微单位价格为：1.99\*1000000=1990000。  - 当商品为消耗型/非消耗型商品或者非续期订阅商品，若[设置促销价格](https://developer.huawei.com/consumer/cn/doc/app/promotion-non-subscription-0000001931836332#section1429175616582)，该字段为商品微单位促销价格，未设置则为商品微单位原价。  - 当商品为自动续期订阅商品时，该字段为商品微单位原价。 |
-| originalLocalPrice | string | 是 | 商品的原价，包含商品币种和价格，格式为“币种+商品价格”，例如 EUR 0.15。  部分国家/地区会返回“货币符号+商品价格”，例如中国大陆返回“￥0.15”。  此价格含税。  - 当商品为消耗型/非消耗型商品或者非续期订阅商品，无论是否[设置促销价格](https://developer.huawei.com/consumer/cn/doc/app/promotion-non-subscription-0000001931836332#section1429175616582)，该字段均为商品原价。  - 当商品为自动续期订阅商品时，无此字段返回，开发者无需关注。 |
-| originalMicroPrice | number | 是 | 商品原价的微单位价格。  商品原价乘以1,000,000后的微单位价格。  例如某个商品原价是1.99美元，则该商品对应的微单位价格为：1.99\*1000000=1990000。  - 当商品为消耗型/非消耗型商品或者非续期订阅商品，无论是否[设置促销价格](https://developer.huawei.com/consumer/cn/doc/app/promotion-non-subscription-0000001931836332#section1429175616582)，该字段均为商品微单位原价。  - 当商品为自动续期订阅商品时，无此字段返回，开发者无需关注。 |
+| price | string | 是 | 商品的展示价格，包含商品币种和价格，格式为“币种+商品价格”，例如 EUR 0.15。  部分国家/地区会返回“货币符号+商品价格”，例如中国大陆返回“￥0.15”。  此价格含税。  - 当商品为消耗型/非消耗型商品时，若[设置促销价格](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332#section1429175616582)，该字段为商品的促销价格，未设置则为商品原价。  - 当商品为自动续期订阅商品时，该字段为商品的原价。  **说明：** 该字段已废弃，建议使用localPrice替代。 |
+| localPrice | string | 否 | 商品的展示价格，包含商品币种和价格，格式为“币种+商品价格”，例如 EUR 0.15。  部分国家/地区会返回“货币符号+商品价格”，例如中国大陆返回“￥0.15”。  此价格含税。  - 当商品为消耗型/非消耗型商品时，若[设置促销价格](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332#section1429175616582)，该字段为商品的促销价格，未设置则为商品原价。  - 当商品为自动续期订阅商品时，该字段为商品的原价。 |
+| microPrice | number | 是 | 商品实际价格乘以1,000,000后的微单位价格。  例如某个商品实际价格是1.99美元，则该商品对应的微单位价格为：1.99\*1000000=1990000。  - 当商品为消耗型/非消耗型商品或者非续期订阅商品，若[设置促销价格](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332#section1429175616582)，该字段为商品微单位促销价格，未设置则为商品微单位原价。  - 当商品为自动续期订阅商品时，该字段为商品微单位原价。 |
+| originalLocalPrice | string | 是 | 商品的原价，包含商品币种和价格，格式为“币种+商品价格”，例如 EUR 0.15。  部分国家/地区会返回“货币符号+商品价格”，例如中国大陆返回“￥0.15”。  此价格含税。  - 当商品为消耗型/非消耗型商品或者非续期订阅商品，无论是否[设置促销价格](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332#section1429175616582)，该字段均为商品原价。  - 当商品为自动续期订阅商品时，无此字段返回，开发者无需关注。 |
+| originalMicroPrice | number | 是 | 商品原价的微单位价格。  商品原价乘以1,000,000后的微单位价格。  例如某个商品原价是1.99美元，则该商品对应的微单位价格为：1.99\*1000000=1990000。  - 当商品为消耗型/非消耗型商品或者非续期订阅商品，无论是否[设置促销价格](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332#section1429175616582)，该字段均为商品微单位原价。  - 当商品为自动续期订阅商品时，无此字段返回，开发者无需关注。 |
 | currency | string | 是 | 用于支付该商品的币种，例如CNY。 |
 | status | number | 否 | 商品状态。  0：有效状态  1：取消状态，即删除。此状态的商品不可续订，也不可订阅  3：下线状态，不能订阅，但老用户仍可续订 |
 | subscriptionInfo | [SubscriptionInfo](#subscriptioninfo) | 否 | 自动续期订阅商品相关的信息。 |

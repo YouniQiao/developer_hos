@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决搭建流水线时commandline-tools-linux中sdkmgr下载开发包报错"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-76
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-76
 ---
 
 

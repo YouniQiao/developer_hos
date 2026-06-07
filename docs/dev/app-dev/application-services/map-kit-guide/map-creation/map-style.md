@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "显示自定义地图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-style
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-style
 format: md
 ---
 

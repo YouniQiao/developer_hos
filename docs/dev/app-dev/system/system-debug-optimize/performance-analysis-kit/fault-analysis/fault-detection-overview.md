@@ -1,6 +1,6 @@
 ---
 title: "简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-detection-overview
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/fault-detection-overview
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 如下故障场景会造成应用或者系统进程非预期退出：
 
-1. Native代码未处理崩溃异常信号时会生成CppCrash日志，详见[Cpp Crash（进程崩溃）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines)。
-2. JS/ArkTS代码未处理异常时会生成JsCrash日志，详见[JS Crash（进程崩溃）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines)。
-3. 应用卡死后生成AppFreeze日志并被强制终止退出，详见[AppFreeze（应用冻屏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)。
-4. 应用进程被系统终止造成其非预期退出，详见[App Killed（应用终止）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appkilled-guidelines)。
+1. Native代码未处理崩溃异常信号时会生成CppCrash日志，详见[Cpp Crash（进程崩溃）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines)。
+2. JS/ArkTS代码未处理异常时会生成JsCrash日志，详见[JS Crash（进程崩溃）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines)。
+3. 应用卡死后生成AppFreeze日志并被强制终止退出，详见[AppFreeze（应用冻屏）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines)。
+4. 应用进程被系统终止造成其非预期退出，详见[App Killed（应用终止）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appkilled-guidelines)。

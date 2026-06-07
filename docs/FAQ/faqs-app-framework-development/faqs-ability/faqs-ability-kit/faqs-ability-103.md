@@ -1,6 +1,6 @@
 ---
 title: "如何设置应用自动重启"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-103
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-103
 format: md
 ---
 

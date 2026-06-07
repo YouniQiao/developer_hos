@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "非对称密钥加解密算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-asym-encrypt-decrypt-spec
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ## RSA
 
-[RSA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#rsa)为非对称加密算法，加密长度需要在固定长度进行，在实际应用中，如果数据量无法达到固定的长度要求，可以通过不同的填充模式进行数据填充。
+[RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#rsa)为非对称加密算法，加密长度需要在固定长度进行，在实际应用中，如果数据量无法达到固定的长度要求，可以通过不同的填充模式进行数据填充。
 
 算法库目前提供了RSA加解密常用的三种模式。
 
@@ -44,7 +44,7 @@ format: md
 
 使用同步接口生成RSA2048、RSA3072、RSA4096、RSA8192非对称密钥或明文长度超过2048均会增加耗时。
 
-系统对主线程有时间限制，耗时较长会导致失败。建议生成大位数密钥时，使用异步接口或[使用多线程并发能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview)。
+系统对主线程有时间限制，耗时较长会导致失败。建议生成大位数密钥时，使用异步接口或[使用多线程并发能力](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/multi-thread-concurrency-overview)。
 
 ### 填充模式为NoPadding
 
@@ -143,7 +143,7 @@ format: md
 
 ## SM2
 
-[SM2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#sm2)为非对称加密算法，加密长度需要在固定长度进行。算法库目前支持以GM/T 0009-2012定义的格式加密或解密数据。
+[SM2](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#sm2)为非对称加密算法，加密长度需要在固定长度进行。算法库目前支持以GM/T 0009-2012定义的格式加密或解密数据。
 
 SM2非对称加密的结果由C1、C2、C3三部分组成。其中C1是根据生成的随机数计算出的椭圆曲线点，C2是密文数据，C3是通过指定的摘要算法计算的值。
 

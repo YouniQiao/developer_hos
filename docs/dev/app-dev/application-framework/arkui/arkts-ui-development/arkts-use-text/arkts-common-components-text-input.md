@@ -1,6 +1,6 @@
 ---
 title: "文本输入 (TextInput/TextArea/Search)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-input
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-common-components-text-input
 format: md
 ---
 

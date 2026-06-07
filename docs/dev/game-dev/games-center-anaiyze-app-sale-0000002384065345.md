@@ -1,6 +1,6 @@
 ---
 title: "运营分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-anaiyze-app-sale-0000002384065345
+original_url: /docs/dev/game-dev/games-center-anaiyze-app-sale-0000002384065345
 format: md
 ---
 
@@ -258,7 +258,7 @@ format: md
 
 ![](./img/8721885e.png)
 
-只有集成[华为账号服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-introduction)和[应用内支付服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-introduction)的应用才会上报“应用内付费”报表数据。
+只有集成[华为账号服务](/docs/dev/app-dev/application-services/account-kit-guide/account-introduction)和[应用内支付服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-introduction)的应用才会上报“应用内付费”报表数据。
 
 1. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)首页，点击“分析”。
 2. 从列表中选择您的应用，点击“运营分析 &gt; 应用内付费”。

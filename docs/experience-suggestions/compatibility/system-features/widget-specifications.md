@@ -1,6 +1,6 @@
 ---
 title: "卡片规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/widget-specifications
+original_url: /docs/experience-suggestions/compatibility/system-features/widget-specifications
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 卡片 |
-| **说明** | [卡片的配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration) |
+| **说明** | [卡片的配置文件](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration) |
 
 |  |  |
 | --- | --- |
@@ -21,7 +21,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 卡片 |
-| **说明** | [卡片的配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration) |
+| **说明** | [卡片的配置文件](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration) |
 
 |  |  |
 | --- | --- |
@@ -29,7 +29,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 卡片 |
-| **说明** | [卡片的配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration) |
+| **说明** | [卡片的配置文件](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration) |
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 卡片 |
-| **说明** | [卡片的配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration) |
+| **说明** | [卡片的配置文件](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration) |
 
 |  |  |
 | --- | --- |
@@ -45,7 +45,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 卡片 |
-| **说明** | [卡片的配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration) |
+| **说明** | [卡片的配置文件](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration) |
 
 |  |  |
 | --- | --- |
@@ -61,7 +61,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 卡片 |
-| **说明** | [卡片支持的页面能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-page-overview) |
+| **说明** | [卡片支持的页面能力](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-page/arkts-ui-widget-page-overview) |
 
 |  |  |
 | --- | --- |

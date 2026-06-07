@@ -1,6 +1,6 @@
 ---
 title: "近场联机"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-game-nearby-playing-0000002351933705
+original_url: /docs/dev/game-dev/games-quickgame-runtime-game-nearby-playing-0000002351933705
 format: md
 ---
 

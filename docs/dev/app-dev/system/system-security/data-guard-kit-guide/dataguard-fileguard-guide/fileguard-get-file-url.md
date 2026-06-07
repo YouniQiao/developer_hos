@@ -1,6 +1,6 @@
 ---
 title: "获取文件URI"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-get-file-url
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-get-file-url
 format: md
 ---
 

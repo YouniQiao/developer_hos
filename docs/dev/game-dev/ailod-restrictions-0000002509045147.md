@@ -1,6 +1,6 @@
 ---
 title: "AILOD使用限制"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/ailod-restrictions-0000002509045147
+original_url: /docs/dev/game-dev/ailod-restrictions-0000002509045147
 format: md
 ---
 

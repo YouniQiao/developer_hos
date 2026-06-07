@@ -1,6 +1,6 @@
 ---
 title: "应用UX体验建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-ux
+original_url: /docs/experience-suggestions/experience-suggestions-ux
 ---
 
 import MergedTable from '@site/src/components/MergedTable';
@@ -15,7 +15,7 @@ import MergedTable from '@site/src/components/MergedTable';
 
 ### 适用范围
 
-本章节制定了应用的UX体验建议，适用于应用软件的设计、开发及测试。详见：[应用UX体验建议](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001760867048)
+本章节制定了应用的UX体验建议，适用于应用软件的设计、开发及测试。详见：[应用UX体验建议](/docs/design/ux-standards/overview)
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |

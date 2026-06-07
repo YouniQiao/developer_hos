@@ -1,6 +1,6 @@
 ---
 title: "权限说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-permission-description-as
+original_url: /docs/dev/atomic-dev/health-data-type-as/health-permission-description-as
 format: md
 ---
 

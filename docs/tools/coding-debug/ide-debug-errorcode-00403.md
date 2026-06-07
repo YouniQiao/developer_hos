@@ -1,7 +1,7 @@
 ---
 title: "调试失败错误码"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-debug-errorcode-00403
+original_url: /docs/tools/coding-debug/ide-debug-errorcode-00403
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "POI搜索"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-site-search
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-location-services/map-site-search
 format: md
 ---
 

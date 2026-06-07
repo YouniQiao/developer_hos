@@ -1,7 +1,7 @@
 ---
 title: "运营文本"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-audio-spec-guide-operationtext-0000002429826797
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-operationtext-0000002429826797
 format: md
 ---
 

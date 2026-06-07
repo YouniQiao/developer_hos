@@ -1,7 +1,7 @@
 ---
 title: "直客账户注册"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-register-0000001328677526
+original_url: /docs/monetize/promotion/bpos-start-guest-register-0000001328677526
 format: md
 ---
 
@@ -155,7 +155,7 @@ format: md
        - <strong>出生日期</strong>：需要填写您的出生年月。
    - 如果您<strong>有华为账号</strong>，点击<strong>登录</strong>：
      - 如果您的华为账号已通过华为开发者联盟实名认证，广告开户将无需审核，按照开户流程完成注册后，即可进入鲸鸿动能广告账户进行广告投放；
-     - 如果您的华为账号在华为开发者联盟的实名认证状态是“实名审核失败”，您需要根据审核驳回理由，在广告开户时<strong>重新修改实名信息</strong>，并提交审核，此时您可以进入广告账户试用，但审核通过后即可进行充值投放等操作。具体请参考[实名认证](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-manage-information-0000001328357938#ZH-CN_TOPIC_0000001328357938__d0e16595)。
+     - 如果您的华为账号在华为开发者联盟的实名认证状态是“实名审核失败”，您需要根据审核驳回理由，在广告开户时<strong>重新修改实名信息</strong>，并提交审核，此时您可以进入广告账户试用，但审核通过后即可进行充值投放等操作。具体请参考[实名认证](/docs/monetize/promotion/bpos-delivery-task-account-manage-information-0000001328357938#ZH-CN_TOPIC_0000001328357938__d0e16595)。
      - 如果您的华为账号在华为开发者联盟的实名认证状态是“实名审核中”，您需要等待实名通过后，才能开通鲸鸿动能广告广告账户。
      - 如果您已有华为账号，并未在华为开发者联盟发起实名认证，直接登录华为账号，完成鲸鸿动能广告账户的注册流程，若任务审核被判定为涉及敏感行业，需要完成实名认证再进行广告投放。
 

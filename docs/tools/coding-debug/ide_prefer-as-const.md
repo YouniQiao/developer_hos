@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/prefer-as-const"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_prefer-as-const
+original_url: /docs/tools/coding-debug/ide_prefer-as-const
 format: md
 ---
 

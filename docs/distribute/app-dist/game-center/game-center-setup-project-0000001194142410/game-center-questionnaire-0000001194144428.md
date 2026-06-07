@@ -1,7 +1,7 @@
 ---
 title: "问卷服务"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-questionnaire-0000001194144428
+original_url: /docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-questionnaire-0000001194144428
 format: md
 ---
 
@@ -38,7 +38,7 @@ format: md
 | --- | --- |
 | 问卷ID | 问卷保存或发布后，系统会为每个问卷分配唯一的问卷ID。 |
 | 问卷URL | 问卷保存或发布后，每个问卷会自动生成访问URL。您可以将URL链接复制给用户，或二维码图片下载给用户。 |
-| 使用场景 | 请选择问卷使用的场景：   * [先锋测试](https://developer.huawei.com/consumer/cn/doc/app/game-center-pioneer-test-0000001194462384)：问卷可以运用于先锋测试服务中，该场景的问卷无需审核即可上线。 * 联运调研：问卷可以运用于联运模式场景下，例如品类运营、联合推广等。 |
+| 使用场景 | 请选择问卷使用的场景：   * [先锋测试](/docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-pioneer-test-0000001194462384)：问卷可以运用于先锋测试服务中，该场景的问卷无需审核即可上线。 * 联运调研：问卷可以运用于联运模式场景下，例如品类运营、联合推广等。 |
 | 问卷答复登录方式 | 请选择用户登录的方式：   * 免登录：表示用户可以无需登录，直接答复问卷。 * 华为账号登录：表示用户使用华为账号登录后答复当前问卷。先锋测试仅支持“华为账号登录”方式。 |
 | 问卷有效期 | 该选项仅对“联运调研”场景显示。您需要选择当前问卷的“开始时间”和“结束时间”，问卷仅在有效期内进行答题。  说明：  * 问卷有效期的开始时间必须晚于问卷创建时间。 * 问卷有效期不能超过30天。 |
 | 问卷答复数量上限 | 该选项仅对“联运调研”场景显示。请填写当前问卷允许接受用户作答的最大数量，目前支持30万。 |

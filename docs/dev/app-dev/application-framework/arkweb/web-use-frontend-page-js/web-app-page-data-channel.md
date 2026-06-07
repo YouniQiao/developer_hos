@@ -1,6 +1,6 @@
 ---
 title: "建立应用侧与前端页面数据通道"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-app-page-data-channel
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-app-page-data-channel
 format: md
 ---
 

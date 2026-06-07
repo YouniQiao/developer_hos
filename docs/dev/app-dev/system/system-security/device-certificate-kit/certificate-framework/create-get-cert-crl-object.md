@@ -1,6 +1,6 @@
 ---
 title: "证书集合及证书吊销列表集合对象的创建和获取"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-get-cert-crl-object
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-get-cert-crl-object
 format: md
 ---
 

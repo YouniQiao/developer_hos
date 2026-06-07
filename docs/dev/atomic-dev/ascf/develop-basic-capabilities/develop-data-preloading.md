@@ -1,6 +1,6 @@
 ---
 title: "数据预拉取"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-data-preloading
+original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-data-preloading
 format: md
 ---
 
@@ -79,7 +79,7 @@ format: md
 
 ### 设置TOKEN
 
-用户登录元服务后，可通过[has.setBackgroundFetchToken](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hassetbackgroundfetchtoken)设置一个自定义TOKEN字符串，更新后的TOKEN会在下一次预拉取向开发者服务器发起请求时带上，用于服务器校验请求合法性。
+用户登录元服务后，可通过[has.setBackgroundFetchToken](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hassetbackgroundfetchtoken)设置一个自定义TOKEN字符串，更新后的TOKEN会在下一次预拉取向开发者服务器发起请求时带上，用于服务器校验请求合法性。
 
 ![](./img/02bab0e2.png)
 
@@ -106,7 +106,7 @@ App({
 
 ### 获取数据
 
-用户启动元服务时，可调用[has.getBackgroundFetchData](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasgetbackgroundfetchdata)或[has.onBackgroundFetchData](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasonbackgroundfetchdata)获取已缓存到本地的数据。
+用户启动元服务时，可调用[has.getBackgroundFetchData](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasgetbackgroundfetchdata)或[has.onBackgroundFetchData](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasonbackgroundfetchdata)获取已缓存到本地的数据。
 
 使用示例：
 

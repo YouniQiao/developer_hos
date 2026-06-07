@@ -1,6 +1,6 @@
 ---
 title: "长时任务(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task
+original_url: /docs/dev/app-dev/application-framework/background-task-kit/continuous-task
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ![](./img/65eabf9f.png)
 
-应用退至后台后，在不同类型设备上生命周期变化存在差异，详见[不同设备生命周期的差异化行为](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-overview#不同设备生命周期的差异化行为)。
+应用退至后台后，在不同类型设备上生命周期变化存在差异，详见[不同设备生命周期的差异化行为](/docs/dev/app-dev/application-framework/arkui/window-manager/window-overview#不同设备生命周期的差异化行为)。
 
 ### 使用场景
 
@@ -30,7 +30,7 @@ format: md
 | BLUETOOTH\_INTERACTION | 蓝牙相关业务。 | bluetoothInteraction | 通过蓝牙传输文件时退后台。 |
 | MULTI\_DEVICE\_CONNECTION | 多设备互联。 | multiDeviceConnection | 分布式业务连接、投播。  **说明：** 支持在元服务中使用。 |
 | VOIP | 音视频通话。  **说明：** 从API version 13开始支持。 | voip | 某些聊天类应用（具有音视频业务）音频、视频通话时退后台。 |
-| TASK\_KEEPING | 计算任务。  **说明：** 从API version 21开始，对PC/2in1设备、非PC/2in1设备但申请了ACL权限为[ohos.permission.KEEP\_BACKGROUND\_RUNNING\_SYSTEM](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionkeep_background_running_system)的应用开放。 API version 20及之前版本，仅对PC/2in1设备开放。 | taskKeeping | 如杀毒软件。 |
+| TASK\_KEEPING | 计算任务。  **说明：** 从API version 21开始，对PC/2in1设备、非PC/2in1设备但申请了ACL权限为[ohos.permission.KEEP\_BACKGROUND\_RUNNING\_SYSTEM](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionkeep_background_running_system)的应用开放。 API version 20及之前版本，仅对PC/2in1设备开放。 | taskKeeping | 如杀毒软件。 |
 | MODE\_AV\_PLAYBACK\_AND\_RECORD | 多媒体相关业务。  **说明：** 从API version 22开始支持。 | avPlaybackAndRecord | 音视频播放，录制，音视频通话时退后台。在上述三种场景下，选择本类型或对应类型的长时任务均可。例如：音视频播放场景下，选择AUDIO\_PLAYBACK或者MODE\_AV\_PLAYBACK\_AND\_RECORD任意一个即可。 |
 | MODE\_SPECIAL\_SCENARIO\_PROCESSING | 特殊场景类型（仅对Phone、Tablet、PC/2in1设备开放）。  **说明：** 从API version 22开始支持。 | specialScenarioProcessing | 在后台进行导出媒体文件，使用三方投播组件在后台进行投播。 |
 
@@ -42,7 +42,7 @@ format: md
 关于AUDIO\_PLAYBACK（音视频播放）说明：
 
 * 音视频投播，是指将一台设备的音视频投至另一台设备播放。投播退至后台，长时任务会检测音视频播放和投屏两个业务，只要有其一正常运行，长时任务就不会终止。
-* 当应用需要在后台播放媒体类型（流类型为STREAM\_USAGE\_MUSIC、STREAM\_USAGE\_MOVIE和STREAM\_USAGE\_AUDIOBOOK）和游戏类型（流类型为STREAM\_USAGE\_GAME）时，必须接入媒体会话服务（[AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-overview)）并申请AUDIO\_PLAYBACK类型长时任务。
+* 当应用需要在后台播放媒体类型（流类型为STREAM\_USAGE\_MUSIC、STREAM\_USAGE\_MOVIE和STREAM\_USAGE\_AUDIOBOOK）和游戏类型（流类型为STREAM\_USAGE\_GAME）时，必须接入媒体会话服务（[AVSession](/docs/dev/app-dev/media/avsession-kit/avsession-overview)）并申请AUDIO\_PLAYBACK类型长时任务。
 * 除了上述播放类型，针对用户可感知的其他播放任务，如果应用需要在后台长时间运行该任务，必须申请AUDIO\_PLAYBACK类型长时任务，无需接入AVSession。
 * 如果应用不满足上述接入规范，退至后台播放时会被系统静音并冻结，无法在后台正常播放，直到应用重新切回前台时，才会解除静音并恢复播放。
 * 从API version 20开始，申请AUDIO\_PLAYBACK类型长时任务但不接入AVSession，申请长时任务成功后会在通知栏显示通知；接入AVSession后，后台任务模块不会发送通知栏通知，由AVSession发送通知。对于API version 19及之前的版本，后台任务模块不会在通知栏显示通知。
@@ -76,7 +76,7 @@ format: md
 
 应用按需求申请长时任务，当应用无需在后台运行（任务结束）时，要及时主动取消长时任务，否则应用退至后台会被系统挂起。例如用户主动点击音乐暂停播放时，应用需及时取消对应的长时任务；用户再次点击音乐播放时，需重新申请长时任务。
 
-若音频在后台播放时被[打断](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency)，系统会自行检测和停止长时任务，音频重启播放时，需要再次申请长时任务。
+若音频在后台播放时被[打断](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency)，系统会自行检测和停止长时任务，音频重启播放时，需要再次申请长时任务。
 
 后台播放音频的应用，在停止长时任务的同时，需要暂停或停止音频流，否则应用会被系统强制终止。
 
@@ -102,10 +102,10 @@ format: md
 
 ### Stage模型
 
-1. 需要申请ohos.permission.KEEP\_BACKGROUND\_RUNNING权限，配置方式请参见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+1. 需要申请ohos.permission.KEEP\_BACKGROUND\_RUNNING权限，配置方式请参见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 2. 声明后台模式类型。
 
-   在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中abilities下的backgroundModes字段里，为需要使用长时任务的UIAbility声明相应的长时任务类型，配置文件中填写长时任务类型的[配置项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task#使用场景)。
+   在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中abilities下的backgroundModes字段里，为需要使用长时任务的UIAbility声明相应的长时任务类型，配置文件中填写长时任务类型的[配置项](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task#使用场景)。
 
    ```
    "module": {

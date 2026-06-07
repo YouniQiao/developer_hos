@@ -1,6 +1,6 @@
 ---
 title: "如何收费"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-pricing-0000002338546397
+original_url: /docs/dev/game-dev/games-gamemme-pricing-0000002338546397
 format: md
 ---
 

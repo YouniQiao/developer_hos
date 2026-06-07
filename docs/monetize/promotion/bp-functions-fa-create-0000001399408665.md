@@ -1,7 +1,7 @@
 ---
 title: "创建万能卡片推广任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-fa-create-0000001399408665
+original_url: /docs/monetize/promotion/bp-functions-fa-create-0000001399408665
 format: md
 ---
 

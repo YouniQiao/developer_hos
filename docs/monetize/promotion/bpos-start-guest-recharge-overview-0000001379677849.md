@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-overview-0000001379677849
+original_url: /docs/monetize/promotion/bpos-start-guest-recharge-overview-0000001379677849
 ---
 import MergeTable from '@site/src/components/MergeTable';
 
@@ -40,9 +40,9 @@ import MergeTable from '@site/src/components/MergeTable';
 
 广告账户注册后，需要进行现金账户充值或绑定企业信用卡后才能进行广告投放，您可以选择的支付方式如下：
 
-- [线下充值](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-offline-0000001328517610)**：**您可以通过银行转账到[指定银行](#ZH-CN_TOPIC_0000001379677849__p5014mcpsimp)的方式进行充值，银行转账之后需要您在鲸鸿动能广告界面提交充值申请，审批通过后充值进现金账户余额，投放广告时从账户余额中进行扣费。
-- [线上充值](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-online-0000001379958177)：您可以通过线上充值的方式在广告投放之前先充值，金额将会充值到现金账户余额。
-- [企业信用卡后付费](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-credit-card-0000001379557357)**：**符合特定[申请条件](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-credit-card-0000001379557357#ZH-CN_TOPIC_0000001379557357__d0e85227)的广告主可以申请先消耗后付费：绑定信用卡，成功绑定之后不需要进行账户充值，鲸鸿动能广告会在账户累计消耗满500美元或累计消耗达7个自然日进行扣费。
+- [线下充值](/docs/monetize/promotion/bpos-start-guest-recharge-offline-0000001328517610)**：**您可以通过银行转账到[指定银行](#ZH-CN_TOPIC_0000001379677849__p5014mcpsimp)的方式进行充值，银行转账之后需要您在鲸鸿动能广告界面提交充值申请，审批通过后充值进现金账户余额，投放广告时从账户余额中进行扣费。
+- [线上充值](/docs/monetize/promotion/bpos-start-guest-recharge-online-0000001379958177)：您可以通过线上充值的方式在广告投放之前先充值，金额将会充值到现金账户余额。
+- [企业信用卡后付费](/docs/monetize/promotion/bpos-start-guest-recharge-credit-card-0000001379557357)**：**符合特定[申请条件](/docs/monetize/promotion/bpos-start-guest-recharge-credit-card-0000001379557357#ZH-CN_TOPIC_0000001379557357__d0e85227)的广告主可以申请先消耗后付费：绑定信用卡，成功绑定之后不需要进行账户充值，鲸鸿动能广告会在账户累计消耗满500美元或累计消耗达7个自然日进行扣费。
 
 鲸鸿动能广告提供阿斯比格和华为服务（香港）两个银行收款账户，需要根据主要投放区域选择阿斯比格或者华为服务（香港）充值；两个账户支持的币种不同。
 

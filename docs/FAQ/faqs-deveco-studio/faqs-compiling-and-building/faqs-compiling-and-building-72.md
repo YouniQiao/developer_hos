@@ -1,6 +1,6 @@
 ---
 title: "如何获取BuildProfile中的值"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-72
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-72
 format: md
 ---
 

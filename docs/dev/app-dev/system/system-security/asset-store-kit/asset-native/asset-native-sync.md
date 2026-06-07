@@ -1,6 +1,6 @@
 ---
 title: "同步（备份恢复）关键资产(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-sync
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-sync
 format: md
 ---
 
@@ -59,7 +59,7 @@ static napi_value AddSyncAsset(napi_env env, napi_callback_info info)
 
 ## 接入备份恢复扩展能力
 
-为触发应用数据备份恢复，需要[应用接入数据备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension)。
+为触发应用数据备份恢复，需要[应用接入数据备份恢复](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension)。
 
 ## 查询关键资产同步结果
 

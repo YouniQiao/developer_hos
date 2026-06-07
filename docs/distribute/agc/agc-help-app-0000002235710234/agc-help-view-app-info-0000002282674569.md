@@ -1,6 +1,6 @@
 ---
 title: "查看应用信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569
+original_url: /docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569
 format: md
 ---
 

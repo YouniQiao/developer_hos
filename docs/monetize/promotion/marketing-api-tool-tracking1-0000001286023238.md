@@ -1,7 +1,7 @@
 ---
 title: "查询转化跟踪目标"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking1-0000001286023238
+original_url: /docs/monetize/promotion/marketing-api-tool-tracking1-0000001286023238
 format: md
 ---
 
@@ -35,8 +35,8 @@ format: md
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>必选</strong> | <strong>描述</strong> |
   | product\_unique\_flag | string | 否 | 推广产品的唯一标识，应用是包名，网页是URL链接 最大长度是2048位。 |
   | effect\_name | string | 否 | 转换指标名称，最大长度255位，满足正则校验^[\w\u4e00-\u9fa5\_]\\{1,20\\}$。 |
-  | effect\_type | string | 否 | 转化目标，取值见[转化目标](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section125615641916)枚举值。 |
-  | product\_type | string | 否 | 推广产品，取值见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)枚举值。 |
+  | effect\_type | string | 否 | 转化目标，取值见[转化目标](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section125615641916)枚举值。 |
+  | product\_type | string | 否 | 推广产品，取值见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)枚举值。 |
 
   - <strong>请求示例</strong>
 
@@ -80,9 +80,9 @@ format: md
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
     | tracking\_id | long | 转化跟踪指标ID。 |
-    | tracking\_status | string | 跟踪状态，详见[转化跟踪状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section118619176208)。 |
+    | tracking\_status | string | 跟踪状态，详见[转化跟踪状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section118619176208)。 |
     | effect\_name | string | 转化跟踪指标名称。 |
-    | effect\_type | string | 转化目标，详见[转化目标](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section125615641916)。 |
+    | effect\_type | string | 转化目标，详见[转化目标](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section125615641916)。 |
     | click\_tracking\_url | string | 点击监测地址。 |
     | imp\_tracking\_url | string | 曝光监测地址。 |
   - <strong>应答示例</strong>

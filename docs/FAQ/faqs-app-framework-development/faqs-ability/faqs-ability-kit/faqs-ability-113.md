@@ -1,7 +1,7 @@
 ---
 format: md
 title: "HarmonyOS提供了两种页面加载方式，两者有何区别，怎么选择"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-113
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-113
 ---
 
 

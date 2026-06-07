@@ -1,7 +1,7 @@
 ---
 title: "查询渠道包投放数据报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-physical-subcontract-inquire-0000001341040345
+original_url: /docs/monetize/promotion/bp-functions-physical-subcontract-inquire-0000001341040345
 format: md
 ---
 

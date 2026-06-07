@@ -1,6 +1,6 @@
 ---
 title: "上传图片"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-image-upload
+original_url: /docs/dev/atomic-dev/instant-service-image-management/instant-service-image-upload
 format: md
 ---
 

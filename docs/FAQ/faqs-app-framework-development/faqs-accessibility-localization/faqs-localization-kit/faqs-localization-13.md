@@ -1,6 +1,6 @@
 ---
 title: "如何将文件转换成字符串"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-13
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-13
 format: md
 ---
 

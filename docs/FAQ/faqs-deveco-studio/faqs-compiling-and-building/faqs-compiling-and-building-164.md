@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译报错“The metadata field in FormExtensionAbility cannot be left blank or as an empty array”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-164
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-164
 ---
 
 
@@ -17,4 +17,4 @@ FormExtensionAbility中的metadata字段必须非空且不为数组。
 
 **解决措施**
 
-在module.json5中type为form的ExtensionAbility中配置metadata字段，具体配置方式参考[配置ArkTS卡片的配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration)。
+在module.json5中type为form的ExtensionAbility中配置metadata字段，具体配置方式参考[配置ArkTS卡片的配置文件](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration)。

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS是否支持反射调用类的静态成员函数和实例成员函数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-83
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-83
 ---
 
 
@@ -64,4 +64,4 @@ import('harlibrary').then((ns:ESObject) => {
 });
 ```
 
-具体可以参考：[业务扩展场景介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import#业务扩展场景介绍)。
+具体可以参考：[业务扩展场景介绍](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-dynamic-import#业务扩展场景介绍)。

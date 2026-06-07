@@ -1,9 +1,9 @@
 ---
 format: md
 title: "证书管理（Device Certificate）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-device-certificate-kit
+original_url: /docs/FAQ/faqs-device-certificate-kit
 ---
 
 
-* **[HarmonyOS是否支持CFCA证书预置](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-device-certificate-1)**
-* **[证书链校验器的参数如何获取](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-device-certificate-2)**
+* **[HarmonyOS是否支持CFCA证书预置](/docs/FAQ/faqs-system-development/faqs-security/faqs-device-certificate-kit/faqs-device-certificate-1)**
+* **[证书链校验器的参数如何获取](/docs/FAQ/faqs-system-development/faqs-security/faqs-device-certificate-kit/faqs-device-certificate-2)**

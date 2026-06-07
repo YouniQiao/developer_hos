@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如何添加“扫码直达”服务的快速入口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-1
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-1
 format: md
 ---
 

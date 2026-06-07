@@ -1,11 +1,11 @@
 ---
 title: "通过自绘制接入无障碍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-accessibility-xcomponent
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-accessibility-xcomponent
 format: md
 ---
 
 
-通过[自定义绘制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-draw)接入的第三方框架平台，NDK提供了对接无障碍服务的接口函数，使三方框架组件能够支持ArkUI中的基本无障碍功能，包括焦点获取、获取无障碍节点和操作响应。
+通过[自定义绘制](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-user-defined-draw)接入的第三方框架平台，NDK提供了对接无障碍服务的接口函数，使三方框架组件能够支持ArkUI中的基本无障碍功能，包括焦点获取、获取无障碍节点和操作响应。
 
 从API version 13开始，支持基于Xcomponent的自绘制方式接入。
 
@@ -32,7 +32,7 @@ format: md
 
 以下示例提供了对接无障碍能力的实现方法，仅包含主要步骤，完整示例请参考[AccessibilityCapiSample](https://gitcode.com/openharmony/applications_app_samples/tree/master/code/DocsSample/ArkUISample/AccessibilityCapi)。对接完成后，在开启无障碍功能时，可使XComponent中的三方框架绘制组件接入，实现无障碍交互。
 
-1. 按照自定义渲染（XComponent）的[使用OH\_ArkUI\_SurfaceHolder管理Surface生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-xcomponent-guidelines#管理xcomponent持有surface的生命周期)场景创建前置工程。
+1. 按照自定义渲染（XComponent）的[使用OH\_ArkUI\_SurfaceHolder管理Surface生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/napi-xcomponent-guidelines#管理xcomponent持有surface的生命周期)场景创建前置工程。
 2. 获得无障碍接入provider并注册回调函数（以多实例场景为例）。
 
    ```
@@ -499,7 +499,7 @@ provider通过回调函数[OH\_ArkUI\_AccessibilityProviderRegisterCallback](htt
 
 以下示例提供了对接无障碍能力的实现方法，仅包含主要步骤，完整示例请参考[AccessibilityCustomCapi](https://gitcode.com/openharmony/applications_app_samples/pull/8450)。回调函数实现请参考[基于Xcomponent的自绘制接入方式](#基于xcomponent的自绘制接入方式)。完成回调函数实现后，开启无障碍功能，基于CustomNode构建渲染节点树的三方框架即可接入无障碍服务，实现控件树的无障碍交互与信息查询。
 
-1. 按照[基于CustomNode构建渲染节点树](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embed-render-components)场景创建前置工程。
+1. 按照[基于CustomNode构建渲染节点树](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embed-render-components)场景创建前置工程。
 2. 获取无障碍接入Provider实例，将回调函数与Provider实例绑定并完成注册。
 
    ```

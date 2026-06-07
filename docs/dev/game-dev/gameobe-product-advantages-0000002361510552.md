@@ -1,6 +1,6 @@
 ---
 title: "产品优势"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-product-advantages-0000002361510552
+original_url: /docs/dev/game-dev/gameobe-product-advantages-0000002361510552
 format: md
 ---
 

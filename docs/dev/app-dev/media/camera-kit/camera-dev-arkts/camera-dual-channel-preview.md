@@ -1,18 +1,18 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "双路预览(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview
 format: md
 ---
 
 
-在开发相机应用时，需要先[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。
+在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 双路预览，即应用可同时使用两路预览流，一路用于在屏幕上显示，一路用于图像处理等其他操作，提升处理效率。
 
 相机应用通过控制相机，实现图像显示（预览）、照片保存（拍照）、视频录制（录像）等基础操作。相机开发模型为Surface模型，即应用通过Surface进行数据传递，通过[ImageReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagereceiver)的Surface获取拍照流的数据、通过XComponent的Surface获取预览流的数据。
 
-如果要实现双路预览，可以先参考[拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting)，在双路预览中将拍照流改为另一路预览流，通过[ImageReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagereceiver)的Surface创建另一个previewOutput，其余流程与拍照一致。
+如果要实现双路预览，可以先参考[拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting)，在双路预览中将拍照流改为另一路预览流，通过[ImageReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagereceiver)的Surface创建另一个previewOutput，其余流程与拍照一致。
 
 详细的API说明请参考[@ohos.multimedia.camera (相机管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera)。
 
@@ -89,7 +89,7 @@ format: md
 
    * 在通过[createPixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagecreatepixelmap8)接口创建[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)实例时，设置的Size、srcPixelFormat等属性必须和相机预览输出流previewProfile中配置的Size、Format属性保持一致，ImageReceiver图片像素格式请参考[PixelMapFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#pixelmapformat7)，相机预览输出流previewProfile输出格式请参考[CameraFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#cameraformat)。
    * 由于不同设备产品差异性，应用开发者在创建相机预览输出流前，必须先通过[getSupportedOutputCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedoutputcapability11)方法获取当前设备支持的预览输出流previewProfile，再根据实际业务需求选择[CameraFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#cameraformat)和[Size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#size)适合的预览输出流previewProfile。
-   * ImageReceiver接收预览流图像数据实际format格式由应用开发者在创建预览输出流相机预览输出流时，根据实际业务需求选择的previewProfile中format格式参数影响，详细步骤请参考[创建预览流获取数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview#创建预览流获取数据)。
+   * ImageReceiver接收预览流图像数据实际format格式由应用开发者在创建预览输出流相机预览输出流时，根据实际业务需求选择的previewProfile中format格式参数影响，详细步骤请参考[创建预览流获取数据](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview#创建预览流获取数据)。
 
    ```
    onImageArrival(receiver: image.ImageReceiver): void {

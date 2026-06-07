@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何给新增的module在线签名"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-52
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-52
 ---
 
 

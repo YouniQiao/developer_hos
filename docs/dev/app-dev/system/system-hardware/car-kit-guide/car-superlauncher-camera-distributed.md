@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "超级桌面应用接入分布式相机"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-superlauncher-camera-distributed
+original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-superlauncher-camera-distributed
 format: md
 ---
 
@@ -18,4 +18,4 @@ format: md
 
 ## 开发指导
 
-应用如需在超级桌面场景中使用车机摄像头实现视频通话/会议等功能，详细开发指导请参见[相机服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-kit)。
+应用如需在超级桌面场景中使用车机摄像头实现视频通话/会议等功能，详细开发指导请参见[相机服务](/docs/dev/app-dev/media/camera-kit)。

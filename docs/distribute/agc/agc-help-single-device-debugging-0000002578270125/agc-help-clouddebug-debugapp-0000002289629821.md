@@ -1,6 +1,6 @@
 ---
 title: "调试应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-debugapp-0000002289629821
+original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-debugapp-0000002289629821
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 #### 前提条件
 
-* 调试应用前必须先[申请调试设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-applyequip-0000002254916518)。
+* 调试应用前必须先[申请调试设备](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-applyequip-0000002254916518)。
 * 在使用云调试服务前，请准备好配置了发布证书且打包时编译模式选择“release”的应用包，且应用软件包的大小须在4GB以内。
 
 #### 上传应用
@@ -23,7 +23,7 @@ format: md
    ![](../img/agc-help-clouddebug-debugapp-0000002289629821_1.png "点击放大")
 2. 点击右侧区域“应用”页签下的“本地上传”，上传本地待调试的应用release包。上传完成后，应用自动安装。应用安装成功后，您可在左侧的手机界面区域查看安装完成的应用。
 
-   您还可以在“我的信息”页签下上传应用，具体操作方法请参见[管理应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-manageapp-0000002578460771)。
+   您还可以在“我的信息”页签下上传应用，具体操作方法请参见[管理应用](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-manageapp-0000002578460771)。
 
    ![](../img/agc-help-clouddebug-debugapp-0000002289629821_2.png)
 
@@ -56,9 +56,9 @@ format: md
 您还可以在右侧区域的不同页签（基于所选调试设备动态刷新）中，根据实际需要进行其他调试操作：
 
 * 应用：您可以手动安装或删除已上传的其他应用。
-* [控制面板](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-location-0000002289516745)：您可以输入hdc shell命令调试，也可以输入正确的经度、纬度、海拔高度和城市信息，了解应用在特定位置的使用情况。
-* [截屏](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-capturescreen-0000002254916522)：当您在调试应用过程中遇到需要保存的特殊场景信息时，可以通过截屏功能保存场景界面，方便后续定位问题。
-* [Hilog](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-viewlog-0000002289629825)：您可以在线查看和导出设备运行期间的系统日志和应用日志。
+* [控制面板](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-location-0000002289516745)：您可以输入hdc shell命令调试，也可以输入正确的经度、纬度、海拔高度和城市信息，了解应用在特定位置的使用情况。
+* [截屏](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-capturescreen-0000002254916522)：当您在调试应用过程中遇到需要保存的特殊场景信息时，可以通过截屏功能保存场景界面，方便后续定位问题。
+* [Hilog](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-viewlog-0000002289629825)：您可以在线查看和导出设备运行期间的系统日志和应用日志。
 
 ![](../img/agc-help-clouddebug-debugapp-0000002289629821_5.png "点击放大")
 
@@ -104,7 +104,7 @@ format: md
    当您在手机上调试应用时，PC上“单机调试”页面右侧的应用、控制面板、截屏功能将不允许使用。如果您需要上传其他应用软件包、使用控制面板调试或者截屏等，可以点击左侧设备区域的“断开”，系统将停止投屏并恢复应用、控制面板、截屏相关功能。
 
    ![](../img/agc-help-clouddebug-debugapp-0000002289629821_33.png)
-4. 当手机调试界面提示您调试时长不足2分钟时，如果您需要继续调试，请返回PC端延长调试时间。延长调试时间详情请参见[申请调试设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-applyequip-0000002254916518#ZH-CN_TOPIC_0000002254916518__li14407164912614)。
+4. 当手机调试界面提示您调试时长不足2分钟时，如果您需要继续调试，请返回PC端延长调试时间。延长调试时间详情请参见[申请调试设备](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-applyequip-0000002254916518#ZH-CN_TOPIC_0000002254916518__li14407164912614)。
 
    ![](../img/agc-help-clouddebug-debugapp-0000002289629821_34.png "点击放大")
 

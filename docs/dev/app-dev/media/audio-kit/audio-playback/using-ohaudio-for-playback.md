@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "推荐使用OHAudio开发音频播放功能(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback
+original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback
 format: md
 ---
 
@@ -92,7 +92,7 @@ OH_AudioStreamBuilder_Destroy(builder);
 
 2. 配置音频流参数。
 
-   关于音频采样率可参考[配置合适的音频采样率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback#配置合适的音频采样率)。
+   关于音频采样率可参考[配置合适的音频采样率](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback#配置合适的音频采样率)。
 
    创建音频播放构造器后，可以设置音频流所需要的参数，可以参考下面的案例。
 
@@ -119,7 +119,7 @@ OH_AudioStreamBuilder_Destroy(builder);
    注意，播放的音频数据要通过回调接口写入，开发者要实现回调接口，从API version 12开始支持使用[OH\_AudioStreamBuilder\_SetRendererWriteDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setrendererwritedatacallback)设置数据回调函数。数据回调函数的声明请查看[OH\_AudioRenderer\_OnWriteDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiorenderer_onwritedatacallback)。
 3. 设置音频回调函数。
 
-   多音频并发处理可参考文档[处理音频焦点事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency)，仅接口语言差异。
+   多音频并发处理可参考文档[处理音频焦点事件](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency)，仅接口语言差异。
 
    * 从API version 12开始**推荐**使用[OH\_AudioRenderer\_OnWriteDataCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiorenderer_onwritedatacallback)用于写入音频数据。
 

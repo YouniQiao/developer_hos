@@ -1,7 +1,7 @@
 ---
 title: 通知
 sidebar_label: 通知
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217
+original_url: /docs/design/system-features/features/notification
 format: md
 ---
 
@@ -106,7 +106,7 @@ format: md
 
 **通知会在不同场景以不同形式提示用户。应用发出一条通知时，可配置通知的提示场景。**
 
-开发指南请参阅[Push Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-kit-introduction)
+开发指南请参阅[Push Kit简介](/docs/dev/app-dev/application-services/push-kit-guide/push-kit-introduction)
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251030161038.06482491020492175413972992922454:50001231000000:2800:C71BE1DEF11DB173082401730AE6B6716DF8171A1D1521137801405396BD4011.jpg "点击放大")
 

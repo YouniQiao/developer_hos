@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "华为账号其他方式登录获取用户风险等级"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-on-demand-acquisition
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-risklevel/account-get-risklevel-on-demand-acquisition
 format: md
 ---
 
 
 ## 场景介绍
 
-应用已使用华为账号关联登录场景下，开展商户补贴、优惠券发放等商业营销活动时获取华为账号风险等级，有效识别“薅羊毛”风险，保护营销资源合理使用，降低业务安全问题给营销方带来的损失，为相关活动保驾护航。以下对Account Kit提供的获取用户风险等级能力进行介绍，如果需要同时获取风险等级和手机号还可参考场景化控件[获取手机号和风险等级Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-get-risklevel)进行实现。
+应用已使用华为账号关联登录场景下，开展商户补贴、优惠券发放等商业营销活动时获取华为账号风险等级，有效识别“薅羊毛”风险，保护营销资源合理使用，降低业务安全问题给营销方带来的损失，为相关活动保驾护航。以下对Account Kit提供的获取用户风险等级能力进行介绍，如果需要同时获取风险等级和手机号还可参考场景化控件[获取手机号和风险等级Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-get-risklevel)进行实现。
 
 ## 约束与限制
 
@@ -39,10 +39,10 @@ format: md
 
 ## 开发前提
 
-1. 在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)、[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
+1. 在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)、[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。
 2. 应用在使用获取风险等级能力之前，需要完成对应的scope权限申请。
 
-   scope权限申请审批未完成或未通过，将报错[1001502014 应用未申请scopes或permissions权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-2)。当前可通过发送邮件至accountkit@huawei.com进行申请。
+   scope权限申请审批未完成或未通过，将报错[1001502014 应用未申请scopes或permissions权限](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-2)。当前可通过发送邮件至accountkit@huawei.com进行申请。
 
    请提供如下信息进行申请，我们会在1-2个工作日内回复申请结果，请您留意邮箱消息。
 

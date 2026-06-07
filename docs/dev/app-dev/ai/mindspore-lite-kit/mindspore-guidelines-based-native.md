@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite实现图像分类（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-native
+original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-native
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 
 本示例程序中使用的图像分类模型文件为[mobilenetv2.ms](https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/1.5/mobilenetv2.ms)，放置在entry/src/main/resources/rawfile工程目录下。
 
-如果开发者有其他图像分类的预训练模型，请参考[MindSpore Lite 模型转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-converter-guidelines)介绍，将原始模型转换成.ms格式。
+如果开发者有其他图像分类的预训练模型，请参考[MindSpore Lite 模型转换](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-converter-guidelines)介绍，将原始模型转换成.ms格式。
 
 ### 编写推理代码
 

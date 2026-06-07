@@ -1,6 +1,6 @@
 ---
 title: "消息认证码计算介绍及算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac-overview
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-mac-overview
 format: md
 ---
 

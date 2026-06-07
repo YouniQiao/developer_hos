@@ -1,6 +1,6 @@
 ---
 title: "开发接入"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-harmonyos-as
+original_url: /docs/dev/atomic-dev/health-harmonyos-as/health-harmonyos-as
 format: md
 ---
 

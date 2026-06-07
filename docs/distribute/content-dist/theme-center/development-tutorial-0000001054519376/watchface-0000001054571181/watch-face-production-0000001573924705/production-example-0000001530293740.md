@@ -1,7 +1,7 @@
 ---
 title: "制作实例"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/production-example-0000001530293740
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/production-example-0000001530293740
 format: md
 ---
 
@@ -11,10 +11,10 @@ format: md
 ## 说明
 
 1. 下文以466\*466分辨率为例进行演示，其他分辨率的制作方法类似，只是支持的能力集有一些差异，详见：
-   * [466\*466能力集](https://developer.huawei.com/consumer/cn/doc/content/466-capability-0000001881726154)
-   * [390\*390/454\*454能力集](https://developer.huawei.com/consumer/cn/doc/content/454-capability-0000001580733885)
-   * [280\*456/336\*480能力集](https://developer.huawei.com/consumer/cn/doc/content/280-capability-0000001592176765)
-   * [194\*368能力集](https://developer.huawei.com/consumer/cn/doc/content/194-capability-0000001591976781)
+   * [466\*466能力集](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x466-capability-0000001881726154)
+   * [390\*390/454\*454能力集](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x454-capability-0000001580733885)
+   * [280\*456/336\*480能力集](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x280-capability-0000001592176765)
+   * [194\*368能力集](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x194-capability-0000001591976781)
 2. 466\*466有两种制作模式：WATCH系列+GT系列（2.y.z）和WATCH系列（1.y.z）制作模式。两种制作模式支持不同的能力集，需点击【切类型】进行切换，详见制作模式切换。
 
    ![](./img/758823aafb87.png "点击放大")
@@ -534,14 +534,14 @@ format: md
 
 ![](./img/0fe363c15aac.png "点击放大")
 
-默认为[亮屏表盘](https://developer.huawei.com/consumer/cn/doc/content/watch-face-introduction-0000001566918497#section0147798445)制作模式，点击【半亮模式】则切换到[熄屏表盘](https://developer.huawei.com/consumer/cn/doc/content/watch-face-introduction-0000001566918497#section2023216179448)制作模式。
+默认为[亮屏表盘](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/watch-face-introduction-0000001566918497#section0147798445)制作模式，点击【半亮模式】则切换到[熄屏表盘](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/watch-face-introduction-0000001566918497#section2023216179448)制作模式。
 
 <strong>熄屏表盘要求：</strong>
 
 1. 图层数量不超过30层。
 2. 序列帧、视频、GIF控件不可用。
 3. 熄屏表盘不可以单独导出，必须与亮屏表盘一起导出。
-4. 屏幕非黑像素点不超过整体屏幕面积的10%或20%，详见[分辨率与版本号](https://developer.huawei.com/consumer/cn/doc/content/resolution-version-0000001252603441#section1756815468317)。
+4. 屏幕非黑像素点不超过整体屏幕面积的10%或20%，详见[分辨率与版本号](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-version-0000001252603441#section1756815468317)。
 5. 非黑像素点区域尽量分散，不要出现大块集中展示。任意200px\*200px范围，非黑像素点占比不能超过60%。
 
 <strong>熄屏表盘制作方法：</strong>
@@ -568,4 +568,4 @@ format: md
 
    ![](./img/18bd5ba75272.png)
 
-   非黑像素点占比超过后如何修改？详见[aod提示非黑像素点占比过高](https://developer.huawei.com/consumer/cn/doc/content/watchface-faq-0000001174035539#section595359155210)解决方法。
+   非黑像素点占比超过后如何修改？详见[aod提示非黑像素点占比过高](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/watchface-faq-0000001174035539#section595359155210)解决方法。

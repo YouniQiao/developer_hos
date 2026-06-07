@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何设置图片显示的分辨率"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-8
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-8
 ---
 
 

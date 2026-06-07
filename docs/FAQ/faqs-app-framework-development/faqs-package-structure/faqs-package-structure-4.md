@@ -1,7 +1,7 @@
 ---
 format: md
 title: "从包管理的角度，保证代码安全的措施有哪些"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-4
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-4
 ---
 
 
@@ -12,4 +12,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **参考链接**
 
-[混淆加固](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation)，[Stage模型应用程序包结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-stage)，[应用安装卸载与更新开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-install-uninstall)，[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)
+[混淆加固](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation)，[Stage模型应用程序包结构](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage)，[应用安装卸载与更新开发指导](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-install-uninstall)，[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)

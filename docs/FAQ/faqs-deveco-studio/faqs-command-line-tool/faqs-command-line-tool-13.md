@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何使用ohpm引入三四方库"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-13
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-13
 ---
 
 * 方式一：

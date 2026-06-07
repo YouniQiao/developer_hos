@@ -1,6 +1,6 @@
 ---
 title: "系统灵活调度"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-system-flexibility-0000002450402496
+original_url: /docs/dev/game-dev/pgd-system-flexibility-0000002450402496
 format: md
 ---
 

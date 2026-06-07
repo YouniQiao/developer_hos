@@ -1,6 +1,6 @@
 ---
 title: "使用限制"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-restriction-0000002289516741
+original_url: /docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-restriction-0000002289516741
 format: md
 ---
 

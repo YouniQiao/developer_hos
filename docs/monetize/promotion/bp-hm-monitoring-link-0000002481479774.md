@@ -1,7 +1,7 @@
 ---
 title: "监测链接接入指导"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-hm-monitoring-link-0000002481479774
+original_url: /docs/monetize/promotion/bp-hm-monitoring-link-0000002481479774
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 
 ![](./img/02d18e30fa7c.png) 
 
-OAID（开放匿名设备标识符）是设备唯一匿名标识，能够精准匹配用户推广行为与后续转化，是推广归因的核心必需参数。若缺失 OAID，将无法精准追溯推广效果，建议确保监测链接正常接收该参数，保障归因数据准确完整。OAID获取方式请参见《[开放匿名设备标识服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/oaid-service)》。
+OAID（开放匿名设备标识符）是设备唯一匿名标识，能够精准匹配用户推广行为与后续转化，是推广归因的核心必需参数。若缺失 OAID，将无法精准追溯推广效果，建议确保监测链接正常接收该参数，保障归因数据准确完整。OAID获取方式请参见《[开放匿名设备标识服务](/docs/dev/app-dev/application-services/ads-kit-guide/oaid-service)》。
 
 您可以提前完成链接测试，详情请参见链接测试。
 

@@ -1,6 +1,6 @@
 ---
 title: "Web组件嵌套滚动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-nested-scrolling
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-nested-scrolling
 format: md
 ---
 

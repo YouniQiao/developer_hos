@@ -1,6 +1,6 @@
 ---
 title: "前端页面调用应用侧函数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-page-app-function-invoking
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-page-app-function-invoking
 format: md
 ---
 
@@ -885,7 +885,7 @@ struct Index {
 
 1. 打开web调试。
 
-   开启web调试请参考[使用DevTools工具调试前端页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-debugging-with-devtools)。
+   开启web调试请参考[使用DevTools工具调试前端页面](/docs/dev/app-dev/application-framework/arkweb/web-debugging/web-debugging-with-devtools)。
 2. 举例说明通道是否建立成功。
 
    使用[复杂类型使用方法](#复杂类型使用方法)中应用侧和前端页面之间传递Array作为示例，调试结果如下图所示：

@@ -1,6 +1,6 @@
 ---
 title: "本地调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-local-debugging-realtime-server-0000002395350541
+original_url: /docs/dev/game-dev/gameobe-local-debugging-realtime-server-0000002395350541
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 前提条件
 
-您已[添加测试账号](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-preparations-realtime-server-0000002395190633#section76912053712)。
+您已[添加测试账号](/docs/dev/game-dev/gameobe-preparations-realtime-server-0000002395190633#section76912053712)。
 
 ## 环境准备
 
@@ -19,10 +19,10 @@ format: md
 
 ## 代码调试
 
-1. 在解压实时服务器SDK的目录中，创建client.js和server.js脚本，具体可参考[脚本示例](https://developer.huawei.com/consumer/cn/doc/games-guides/script-local-debugging-realtime-server-0000002361670624)。
+1. 在解压实时服务器SDK的目录中，创建client.js和server.js脚本，具体可参考[脚本示例](/docs/dev/game-dev/script-local-debugging-realtime-server-0000002361670624)。
    * client.js：本地测试框架的客户端命令脚本，方便本地执行查询房间列表和加入房间等操作。
    * server.js：本地测试框架的服务端脚本，用于启动本地HTTP(S)服务，并自动完成实时服务器SDK初始化。
-2. 使用[测试账号](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-preparations-realtime-server-0000002395190633#section76912053712)客户端调用Client.createRoom方法创建房间。
+2. 使用[测试账号](/docs/dev/game-dev/gameobe-preparations-realtime-server-0000002395190633#section76912053712)客户端调用Client.createRoom方法创建房间。
 
    ![](./img/0b9436eb.png)
 

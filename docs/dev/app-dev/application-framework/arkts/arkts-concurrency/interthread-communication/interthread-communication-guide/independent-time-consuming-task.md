@@ -1,6 +1,6 @@
 ---
 title: "使用TaskPool执行独立的耗时任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/independent-time-consuming-task
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/independent-time-consuming-task
 format: md
 ---
 

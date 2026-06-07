@@ -1,6 +1,6 @@
 ---
 title: "组件 hxml 的 slot"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-hxml-slot
+original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-hxml-slot
 format: md
 ---
 

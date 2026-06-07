@@ -1,11 +1,11 @@
 ---
 title: "显式Want跳转切换应用链接跳转适配指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-startup-adjust
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/uiability-startup-adjust
 format: md
 ---
 
 
-从API 12开始，已不再推荐三方应用使用指定Ability方式（即显式Want）拉起其他应用，推荐通过指定[应用链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup-overview#应用链接)的方式来实现。
+从API 12开始，已不再推荐三方应用使用指定Ability方式（即显式Want）拉起其他应用，推荐通过指定[应用链接](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-startup-overview#应用链接)的方式来实现。
 
 本章节介绍如何从显式Want跳转切换到应用链接跳转。
 
@@ -15,11 +15,11 @@ format: md
 
 ## 启动其他应用的UIAbility
 
-1. 将待跳转的应用安装到设备，在其对应UIAbility的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置skills标签的entities字段、actions字段和uri字段：
+1. 将待跳转的应用安装到设备，在其对应UIAbility的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中配置skills标签的entities字段、actions字段和uri字段：
 
    * "actions"列表中包含"ohos.want.action.viewData"。
    * "entities"列表中包含"entity.system.browsable"。
-   * "uris"列表中包含"scheme"为"https"且"domainVerify"为true的元素。uri的匹配规则参考[uri匹配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings#uri匹配规则)，domainVerify为true代表开启域名检查，通过App Linking匹配该应用时需经过配置的域名校验后才能匹配到。
+   * "uris"列表中包含"scheme"为"https"且"domainVerify"为true的元素。uri的匹配规则参考[uri匹配](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings#uri匹配规则)，domainVerify为true代表开启域名检查，通过App Linking匹配该应用时需经过配置的域名校验后才能匹配到。
 
    ```
    {
@@ -130,11 +130,11 @@ format: md
 
 ## 启动其他应用的UIAbility并获取返回结果
 
-1. 将待跳转的应用安装到设备，在其对应UIAbility的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置skills标签的entities字段、actions字段和uri字段：
+1. 将待跳转的应用安装到设备，在其对应UIAbility的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中配置skills标签的entities字段、actions字段和uri字段：
 
    * "actions"列表中包含"ohos.want.action.viewData"。
    * "entities"列表中包含"entity.system.browsable"。
-   * "uris"列表中包含"scheme"为"https"且"domainVerify"为true的元素。uri的匹配规则参考[uri匹配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings#uri匹配规则)，domainVerify为true代表开启域名检查，通过App Linking匹配该应用时需经过配置的域名校验后才能匹配到。
+   * "uris"列表中包含"scheme"为"https"且"domainVerify"为true的元素。uri的匹配规则参考[uri匹配](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings#uri匹配规则)，domainVerify为true代表开启域名检查，通过App Linking匹配该应用时需经过配置的域名校验后才能匹配到。
 
    ```
    {

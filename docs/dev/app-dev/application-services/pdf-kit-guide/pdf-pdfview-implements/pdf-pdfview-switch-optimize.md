@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "优化PDF文档切换体验"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-switch-optimize
+original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-switch-optimize
 format: md
 ---
 

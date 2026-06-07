@@ -1,6 +1,6 @@
 ---
 title: "如何将app.media.app_icon，转换为PixelMap"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-9
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-9
 format: md
 ---
 

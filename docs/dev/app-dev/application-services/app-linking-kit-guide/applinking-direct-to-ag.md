@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过直达应用市场能力跳转至应用市场下载详情页"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag
+original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag
 format: md
 ---
 
@@ -24,12 +24,12 @@ format: md
 
 ## 前提条件
 
-1. 目标方应用已[配置App Linking应用链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp)。
+1. 目标方应用已[配置App Linking应用链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp)。
 2. 目标方HarmonyOS应用必须已上架，具体可参见“[发布HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-0000002271695230)”。
 
 ## 约束与限制
 
-只能获取通过App Linking域名校验的应用链接，请参见[在AGC为应用创建关联的网址域名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在agc为应用创建关联的网址域名)。
+只能获取通过App Linking域名校验的应用链接，请参见[在AGC为应用创建关联的网址域名](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在agc为应用创建关联的网址域名)。
 
 ## 开发步骤
 
@@ -41,7 +41,7 @@ format: md
 
       ![](./img/e6a09bdd.png)
 
-      只有[在AGC创建关联的网址域名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在agc为应用创建关联的网址域名)状态为“成功”时，才支持配置直达应用市场链接。
+      只有[在AGC创建关联的网址域名](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在agc为应用创建关联的网址域名)状态为“成功”时，才支持配置直达应用市场链接。
 
       ![](./img/dde30371.png)
    4. 在配置页面，下拉选择与该域名关联的在架应用，为应用配置直达应用市场链接。
@@ -57,17 +57,17 @@ format: md
         | pathStartWith | 前缀匹配 |
         | pathRegex | 正则表达式匹配 |
 
-        + 如果[在module.json5中配置关联的网址域名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在modulejson5中配置关联的网址域名)时，未配置path、pathStartWith或pathRegex，必须是如下匹配规则之一：
+        + 如果[在module.json5中配置关联的网址域名](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在modulejson5中配置关联的网址域名)时，未配置path、pathStartWith或pathRegex，必须是如下匹配规则之一：
 
           pathRegex，匹配路径：.\*
 
           path，手动输入精确匹配的路径（不允许以“/”开头，不允许出现双斜杠“//”和“..”，允许包含字母（a-z、A-Z）、数字（0-9）、正斜杠“/”、点“.”、下划线“\_”和连字符“-”）
-        + （不推荐）如果[在module.json5中配置关联的网址域名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在modulejson5中配置关联的网址域名)时，path匹配规则中配置了pathRegex，且值为.\*，可以包含如下匹配规则：
+        + （不推荐）如果[在module.json5中配置关联的网址域名](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在modulejson5中配置关联的网址域名)时，path匹配规则中配置了pathRegex，且值为.\*，可以包含如下匹配规则：
 
           pathRegex，匹配路径：.\*
 
           path，手动输入精确匹配的路径（不允许以“/”开头，不允许出现双斜杠“//”和“..”，允许包含字母（a-z、A-Z）、数字（0-9）、正斜杠“/”、点“.”、下划线“\_”和连字符“-”）
-        + 其他场景需要根据[在module.json5中配置关联的网址域名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在modulejson5中配置关联的网址域名)时配置的path匹配规则进行选择。
+        + 其他场景需要根据[在module.json5中配置关联的网址域名](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在modulejson5中配置关联的网址域名)时配置的path匹配规则进行选择。
       * 可以点击“删除链接”删除当前关联应用的直达应用市场链接。
    5. 配置完成后，点击页面顶部的“发布”，会跳转到“应用链接”列表页面。
 

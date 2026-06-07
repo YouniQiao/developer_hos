@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "穿戴设备信息查询"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_device_info
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_device_info
 format: md
 ---
 
@@ -16,7 +16,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 ![](./img/a9617716.png)
 
-该接口的调用需要在开发者联盟申请设备基础信息权限（请参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)）。
+该接口的调用需要在开发者联盟申请设备基础信息权限（请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）。
 
 通过[Device](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#device)对象中的方法[isWearEngineCapabilitySupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#iswearenginecapabilitysupported)查询穿戴设备是否支持某种WearEngine能力集。
 
@@ -59,7 +59,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 ![](./img/348da639.png)
 
-该接口的调用需要在开发者联盟申请设备基础信息权限（请参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)）。
+该接口的调用需要在开发者联盟申请设备基础信息权限（请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）。
 
 通过[Device](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#device)对象中的方法[isDeviceCapabilitySupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#isdevicecapabilitysupported)查询穿戴设备是否支持某种Device能力集。
 
@@ -102,7 +102,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 ![](./img/d91e844c.png)
 
-该接口的调用需要在开发者联盟申请设备标识符权限（受限开放）并获得用户授权（请参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)）。
+该接口的调用需要在开发者联盟申请设备标识符权限（受限开放）并获得用户授权（请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）。
 
 通过[Device](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#device)对象中的方法[getSerialNumber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#getserialnumber)查询穿戴设备的SN。
 

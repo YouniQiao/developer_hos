@@ -1,7 +1,7 @@
 ---
 title: "专属监测工具跟踪"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-gongju-wyzc-jiance-0000001639699446
+original_url: /docs/monetize/promotion/ads-gongju-wyzc-jiance-0000001639699446
 format: md
 ---
 

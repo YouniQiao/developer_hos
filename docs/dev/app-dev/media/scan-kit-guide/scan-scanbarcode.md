@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "默认界面扫码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-scanbarcode
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-scanbarcode
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ![](./img/c6381c99.png)
 
-通过默认界面扫码可以实现应用内的扫码功能，为了获得更好的应用体验，推荐同时[接入“扫码直达”服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-directservice)，应用可以同时支持系统扫码入口（控制中心扫一扫）和应用内扫码两种方式跳转到指定服务页面。
+通过默认界面扫码可以实现应用内的扫码功能，为了获得更好的应用体验，推荐同时[接入“扫码直达”服务](/docs/dev/app-dev/media/scan-kit-guide/scan-directservice)，应用可以同时支持系统扫码入口（控制中心扫一扫）和应用内扫码两种方式跳转到指定服务页面。
 
 ## 场景介绍
 
@@ -69,7 +69,7 @@ format: md
 
 ![](./img/22e29c5a.png)
 
-startScanForResult接口需要在页面和组件的生命周期内调用。若需要设置扫码页面为全屏或沉浸式，请参见[开发应用沉浸式效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-develop-apply-immersive-effects)。
+startScanForResult接口需要在页面和组件的生命周期内调用。若需要设置扫码页面为全屏或沉浸式，请参见[开发应用沉浸式效果](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-develop-apply-immersive-effects)。
 
 ## 开发步骤
 

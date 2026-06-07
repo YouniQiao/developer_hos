@@ -1,6 +1,6 @@
 ---
 title: "同步方式动态加载Native模块"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-apis-load-native-module
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/js-apis-load-native-module
 format: md
 ---
 

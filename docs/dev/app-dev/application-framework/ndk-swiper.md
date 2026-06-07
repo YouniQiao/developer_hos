@@ -1,15 +1,15 @@
 ---
 title: "使用滑块视图容器 (Swiper)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-swiper
+original_url: /docs/dev/app-dev/application-framework/ndk-swiper
 format: md
 ---
 
 
 ## 概述
 
-ArkUI开发框架支持在NDK接口使用滑块视图容器Swiper，提供子组件滑动轮播显示的能力。本文介绍NDK接口的开发指导，ArkTS指南请参考[创建轮播 (Swiper)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-looping)。
+ArkUI开发框架支持在NDK接口使用滑块视图容器Swiper，提供子组件滑动轮播显示的能力。本文介绍NDK接口的开发指导，ArkTS指南请参考[创建轮播 (Swiper)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-layout-development-create-looping)。
 
-使用NDK接口构建UI界面以及NDK基本使用，可以参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)。页面构建完成[创建Swiper](#创建swiper)后，可以通过[设置常用属性](#设置常用属性)和[设置导航指示器](#设置导航指示器)优化页面显示效果，页面切换时可以通过[监听事件](#监听事件)获取页面切换信息。
+使用NDK接口构建UI界面以及NDK基本使用，可以参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)。页面构建完成[创建Swiper](#创建swiper)后，可以通过[设置常用属性](#设置常用属性)和[设置导航指示器](#设置导航指示器)优化页面显示效果，页面切换时可以通过[监听事件](#监听事件)获取页面切换信息。
 
 ## 创建Swiper
 

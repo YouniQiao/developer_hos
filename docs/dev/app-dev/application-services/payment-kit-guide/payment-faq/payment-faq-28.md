@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "找不到“支付服务（非虚拟类）”菜单或AppID关联授权的页面怎么处理？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-28
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-28
 format: md
 ---
 

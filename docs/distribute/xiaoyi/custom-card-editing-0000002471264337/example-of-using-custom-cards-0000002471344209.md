@@ -1,7 +1,7 @@
 ---
 title: "自定义卡片演示案例"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/example-of-using-custom-cards-0000002471344209
+original_url: /docs/distribute/xiaoyi/custom-card-editing-0000002471264337/example-of-using-custom-cards-0000002471344209
 format: md
 ---
 

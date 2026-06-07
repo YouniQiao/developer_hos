@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "画布操作及状态处理（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-operation-state-c
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-operation-state/canvas-operation-state-c
 format: md
 ---
 
@@ -44,7 +44,7 @@ format: md
 
 使用OH\_Drawing\_CanvasClipRect接口裁剪矩形。有以下四个入参：
 
-* 第一个参数是画布Canvas，裁剪操作将在这个画布上进行。请确保已创建或获取得到画布Canvas，具体可见[画布的获取与绘制结果的显示（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-c)。
+* 第一个参数是画布Canvas，裁剪操作将在这个画布上进行。请确保已创建或获取得到画布Canvas，具体可见[画布的获取与绘制结果的显示（C/C++）](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-c)。
 * 第二个参数是要裁剪的矩形区域。
 * 第三个参数是裁剪的操作类型，包括交集（INTERSECT）和差集（DIFFERENCE）。
 * 第四个参数表示是否需要进行抗锯齿处理。

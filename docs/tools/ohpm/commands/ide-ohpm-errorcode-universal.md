@@ -1,7 +1,7 @@
 ---
 title: "ohpm命令公共错误码"
 displayed_sidebar: ohpmSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-errorcode-universal
+original_url: /docs/tools/ohpm/commands/ide-ohpm-errorcode-universal
 format: md
 ---
 

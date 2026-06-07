@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Audio Vivid能力介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-intro
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-intro
 format: md
 ---
 
@@ -16,4 +16,4 @@ HarmonyOS支持播放Audio Vivid格式音源，并在耳机实现双耳空间音
 
 以下主要介绍使用HarmonyOS进行Audio Vivid格式音源的端到端播放的流程。
 
-Audio Vivid端到端播放包括调用系统编解码能力进行[解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-avdemuxer)、[解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-audiodecoder)，以及调用系统播放能力进行[渲染播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-audiorenderer)两个部分。
+Audio Vivid端到端播放包括调用系统编解码能力进行[解封装](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-avdemuxer)、[解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-audiodecoder)，以及调用系统播放能力进行[渲染播放](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-audiorenderer)两个部分。

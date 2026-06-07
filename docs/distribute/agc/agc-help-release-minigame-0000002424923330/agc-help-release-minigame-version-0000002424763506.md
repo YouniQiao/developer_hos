@@ -1,6 +1,6 @@
 ---
 title: "上传版号材料"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-version-0000002424763506
+original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-version-0000002424763506
 format: md
 ---
 

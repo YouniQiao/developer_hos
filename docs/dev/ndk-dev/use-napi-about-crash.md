@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口产生的异常日志/崩溃分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-crash
+original_url: /docs/dev/ndk-dev/use-napi-about-crash
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "端侧应用配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-app-identity-info
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-app-identity-info
 format: md
 ---
 

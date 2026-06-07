@@ -1,6 +1,6 @@
 ---
 title: "示例服务器开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sample-server-overview
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/update/sample-server-overview
 format: md
 ---
 

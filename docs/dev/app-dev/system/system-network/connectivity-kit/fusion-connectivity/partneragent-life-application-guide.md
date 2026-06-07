@@ -1,6 +1,6 @@
 ---
 title: "伙伴设备与HarmonyOS设备互通的开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/partneragent-life-application-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity/partneragent-life-application-guide
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 ## 关键流程
 
 1. 伙伴设备应用需要先实现[PartnerAgentExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragentextensionability)，里面实现应用被系统唤醒后需要实现的数据传输业务操作。
-2. 伙伴设备触发和伙伴设备的[蓝牙配对](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-pair-device-development-guide)操作，再调用 **bindDevice** 接口注册伙伴设备。PartnerAgent服务感知到伙伴设备注册后，才会调用蓝牙服务接口进行[BLE](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#ble)扫描和监听蓝牙连接状态去发现伙伴设备，进而拉起伙伴设备[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragentextensionability)。若伙伴设备未注册，PartnerAgent服务不会拉起伙伴设备Extension。
+2. 伙伴设备触发和伙伴设备的[蓝牙配对](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-pair-device-development-guide)操作，再调用 **bindDevice** 接口注册伙伴设备。PartnerAgent服务感知到伙伴设备注册后，才会调用蓝牙服务接口进行[BLE](/docs/dev/app-dev/system/system-network/connectivity-kit/terminology#ble)扫描和监听蓝牙连接状态去发现伙伴设备，进而拉起伙伴设备[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragentextensionability)。若伙伴设备未注册，PartnerAgent服务不会拉起伙伴设备Extension。
 3. 该注册信息会持久化存储，HarmonyOS设备重启后依旧生效。
 4. 伙伴设备应用不需要使用该设备后，可调用 **unbindDevice** 接口解注册设备。
 
@@ -51,7 +51,7 @@ format: md
 
 ### 申请蓝牙权限
 
-需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)和[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)和[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ### PartnerAgentExtensionAbility实现
 
@@ -59,7 +59,7 @@ format: md
 
 * **onDeviceDiscovered(deviceAddress: PartnerDeviceAddress)**
 
-  已注册设备[ACL](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#acl)连接成功或BLE扫描发现时触发该回调，开发者可以在此进行一些数据传输业务操作，如蓝牙[SPP连接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spp-development-guide)、设备发现信息打印等。
+  已注册设备[ACL](/docs/dev/app-dev/system/system-network/connectivity-kit/terminology#acl)连接成功或BLE扫描发现时触发该回调，开发者可以在此进行一些数据传输业务操作，如蓝牙[SPP连接](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/spp-development-guide)、设备发现信息打印等。
 * **onDestroyWithReason(reason: PartnerAgentExtensionAbilityDestroyReason)**
 
   当不再使用服务且准备将该实例销毁时，触发该回调，回调中通知销毁该实例原因，开发者可以在该回调中清理资源，如解绑设备、设备丢失信息打印等。
@@ -85,7 +85,7 @@ format: md
 
 * 注册前需要调用接口[isDeviceControlEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fusionconnectivity-partneragent#partneragentisdevicecontrolenabled)判断当前设备的互通功能是否打开。
 * 该设备在注册前需要保证与本机蓝牙处于配对状态。
-* 拉起Ability的name为工程Module对应的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中注册PartnerAgentExtensionAbility，type标签设置为“partnerAgent”的ability的name。需与应用模块级配置文件[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file) 中的[extensionabilities](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签) name属性值相同。
+* 拉起Ability的name为工程Module对应的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中注册PartnerAgentExtensionAbility，type标签设置为“partnerAgent”的ability的name。需与应用模块级配置文件[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file) 中的[extensionabilities](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签) name属性值相同。
 
 ```
 // 注册的设备地址信息
@@ -386,7 +386,7 @@ if (isBound == true) {
      ]
    }
    ```
-5. 在工程Module对应的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中注册PartnerAgentExtensionAbility，type标签需要设置为“partnerAgent”，srcEntry标签表示当前PartnerAgentExtensionAbility组件所对应的代码路径。
+5. 在工程Module对应的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中注册PartnerAgentExtensionAbility，type标签需要设置为“partnerAgent”，srcEntry标签表示当前PartnerAgentExtensionAbility组件所对应的代码路径。
 
    ```
    "extensionAbilities": [

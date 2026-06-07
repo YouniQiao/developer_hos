@@ -1,6 +1,6 @@
 ---
 title: "设置页签栏的分割线"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-split-line
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs/ui-design-hds-tabs-split-line
 format: md
 ---
 

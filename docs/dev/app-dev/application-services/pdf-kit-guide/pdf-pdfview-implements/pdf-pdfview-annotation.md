@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "批注"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-annotation
+original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-annotation
 format: md
 ---
 

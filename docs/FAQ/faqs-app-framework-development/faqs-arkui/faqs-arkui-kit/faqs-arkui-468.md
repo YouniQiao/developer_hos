@@ -1,6 +1,6 @@
 ---
 title: "如何实现Tabs切换页签，强制重新刷新页面数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-468
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-468
 format: md
 ---
 

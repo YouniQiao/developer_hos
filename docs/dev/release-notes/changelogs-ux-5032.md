@@ -1,7 +1,7 @@
 ---
 title: "UX样式或效果的变更"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/changelogs-ux-5032
+original_url: /docs/dev/release-notes/changelogs-ux-5032
 ---
 
 

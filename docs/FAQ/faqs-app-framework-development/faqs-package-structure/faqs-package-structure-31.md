@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何避免模块下文件打包进HAR包后，存在的不可预期的资料、配置或信息安全风险"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-31
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-31
 ---
 
 

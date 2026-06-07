@@ -1,15 +1,15 @@
 ---
 title: "开发者自验证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/self-verification
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-verification/self-verification
 format: md
 ---
 
 
 ## 简介
 
-在开发的过程中，当开发者完成所需[适配流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/adaptation-process)后，可导入提前准备好的APK应用沙箱数据，自验证HarmonyOS应用数据迁移适配结果。
+在开发的过程中，当开发者完成所需[适配流程](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/adaptation-process)后，可导入提前准备好的APK应用沙箱数据，自验证HarmonyOS应用数据迁移适配结果。
 
-在HarmonyOS应用适配完成并上架到华为应用市场之后，开发者仍需要将终端设备从HarmonyOS升级到HarmonyOS NEXT，[端到端验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/e2e-verification)应用数据迁移结果。
+在HarmonyOS应用适配完成并上架到华为应用市场之后，开发者仍需要将终端设备从HarmonyOS升级到HarmonyOS NEXT，[端到端验证](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-verification/e2e-verification)应用数据迁移结果。
 
 ## 开发者自验证流程
 
@@ -55,7 +55,7 @@ format: md
 
 ## HarmonyOS NEXT上模拟验证应用数据迁移
 
-在应用沙箱数据准备好之后，开发者需要先完成所需[适配流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/adaptation-process)，再模拟验证应用数据迁移。
+在应用沙箱数据准备好之后，开发者需要先完成所需[适配流程](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/adaptation-process)，再模拟验证应用数据迁移。
 
 1. 安装目标HarmonyOS应用到终端设备。
 

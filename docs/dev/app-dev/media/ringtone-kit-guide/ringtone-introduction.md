@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Ringtone Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-introduction
+original_url: /docs/dev/app-dev/media/ringtone-kit-guide/ringtone-introduction
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "PGD Spawner组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-editor-spawner-0000002526540939
+original_url: /docs/dev/game-dev/pgd-tool-editor-spawner-0000002526540939
 format: md
 ---
 

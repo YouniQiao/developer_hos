@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ohosTest测试文件引用了entry模块的方法，测试时报cppcrash"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-8
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-8
 ---
 
 

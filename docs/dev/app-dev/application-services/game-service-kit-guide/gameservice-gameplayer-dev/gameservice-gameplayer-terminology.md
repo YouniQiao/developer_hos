@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "基础游戏服务术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-terminology
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-terminology
 format: md
 ---
 
@@ -40,7 +40,7 @@ HarmonyOS 4及以下系统或HarmonyOS 5.0及以上系统的玩家标识。
 
 | 系统 | 名称 | 组成 | 说明 |
 | --- | --- | --- | --- |
-| HarmonyOS 5.0及以上系统 | gamePlayerId | 根据[配置APP ID映射关系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-huawei#配置app-id映射关系)时的选择openId或playerId。 | 用于华为账号登录的玩家标识。  不同游戏下，同一玩家的gamePlayerId不同。 |
+| HarmonyOS 5.0及以上系统 | gamePlayerId | 根据[配置APP ID映射关系](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-gameplayer-huawei#配置app-id映射关系)时的选择openId或playerId。 | 用于华为账号登录的玩家标识。  不同游戏下，同一玩家的gamePlayerId不同。 |
 | HarmonyOS 5.0及以上系统 | teamPlayerId | teamPlayerId≈uid+developerid | 同一个开发者账号developerid下的不同游戏，玩家使用同一个华为账号登录后获取的teamPlayerId相同。  新接入基础游戏服务的游戏无需关注该玩家标识。 |
 | HarmonyOS 4及以下系统 | openId | 由华为账号（用户账号）和应用唯一标识组合加密起来的用户标识。  简单理解：openid≈uid+clientid | openId是应用内唯一账号标识。若应用主体转移后，该openId标识不会发生改变。  使用相同华为账号登录不同的游戏（包括同一个开发者的不同游戏），获取到的openId唯一且不相同。 |
 | HarmonyOS 4及以下系统 | playerId | 华为游戏服务给华为账号（用户账号）封装处理后的对外开放的游戏玩家标识。  简单理解：playerId≈uid | playerId仅跟华为账号（用户账号）有关，不会随着应用或开发者账号信息变化而变化，用于游戏类应用。 |

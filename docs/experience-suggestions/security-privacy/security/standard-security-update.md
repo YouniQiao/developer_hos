@@ -1,6 +1,6 @@
 ---
 title: "配置安全"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-update
+original_url: /docs/experience-suggestions/security-privacy/security/standard-security-update
 format: md
 ---
 

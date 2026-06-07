@@ -1,6 +1,6 @@
 ---
 title: "在系统设置修改了应用权限，应用能否监听到权限变化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-10
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-10
 format: md
 ---
 

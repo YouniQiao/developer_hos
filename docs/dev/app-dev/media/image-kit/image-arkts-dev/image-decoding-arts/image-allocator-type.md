@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "图片解码内存优化(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-allocator-type
 format: md
 ---
 
@@ -196,7 +196,7 @@ async CreatePixelMapWithYUV(context: Context): Promise<image.PixelMap | undefine
 
 ## 解码单张图片的内存限制
 
-为了防止内存溢出导致系统崩溃，系统对进程内存做了限制，详细说明请参考[应用被查杀问题检测方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-runtime-appkilled-detection)。
+为了防止内存溢出导致系统崩溃，系统对进程内存做了限制，详细说明请参考[应用被查杀问题检测方法](/docs/quality/stability-runtime-appkilled-detection)。
 
 图片框架对单张图片的解码设置了2GB的内存限制。进程需要主动管理自身内存，建议在不使用[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)时及时释放，以避免进程被系统终止。
 

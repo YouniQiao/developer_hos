@@ -1,22 +1,22 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "多应用管控"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-multi-mdm
+original_url: /docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-multi-mdm
 format: md
 ---
 
 
 ## 概述
 
-在企业PC设备管理场景下，企业可以引入多家[EMM厂商](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#emm厂商)来共同管理企业PC设备，分散管理权限，满足不同场景的管控诉求。在这种背景下，MDM Kit抽象出不同的设备管理员角色，用来支持多家EMM厂商在PC设备上同时部署自己的MDM业务。 由于这种场景下存在多个[MDM应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#mdm应用设备管理应用)同时调用MDM管控接口的情况，建议企业与EMM厂商提前约定各自MDM应用的管控范围，避免管控策略冲突，[管控策略冲突](#管控策略冲突)可能会导致企业管控失效，引发企业数据泄露等问题。
+在企业PC设备管理场景下，企业可以引入多家[EMM厂商](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#emm厂商)来共同管理企业PC设备，分散管理权限，满足不同场景的管控诉求。在这种背景下，MDM Kit抽象出不同的设备管理员角色，用来支持多家EMM厂商在PC设备上同时部署自己的MDM业务。 由于这种场景下存在多个[MDM应用](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#mdm应用设备管理应用)同时调用MDM管控接口的情况，建议企业与EMM厂商提前约定各自MDM应用的管控范围，避免管控策略冲突，[管控策略冲突](#管控策略冲突)可能会导致企业管控失效，引发企业数据泄露等问题。
 
 ## Admin组件的激活角色
 
 Admin组件可以通过不同的方式激活，不同的激活方式，成为的角色也不同。
 
-1.通过[adminManager.enableDeviceAdmin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#adminmanagerenabledeviceadmin23)接口, 激活后成为[DA角色](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#da)。当MDM应用仅需对设备进行管控，无需管理其他DA应用时，可选择被激活为DA。
+1.通过[adminManager.enableDeviceAdmin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#adminmanagerenabledeviceadmin23)接口, 激活后成为[DA角色](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#da)。当MDM应用仅需对设备进行管控，无需管理其他DA应用时，可选择被激活为DA。
 
-2.通过[adminManager.startAdminProvision](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#adminmanagerstartadminprovision15)接口, 激活后成为[BDA角色](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#bda)。当MDM应用需要对员工使用的个人设备在特殊场景进行有限管控（如禁用拍照、录音等）时，可选择被激活为BDA。
+2.通过[adminManager.startAdminProvision](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#adminmanagerstartadminprovision15)接口, 激活后成为[BDA角色](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#bda)。当MDM应用需要对员工使用的个人设备在特殊场景进行有限管控（如禁用拍照、录音等）时，可选择被激活为BDA。
 
 ## 管控策略冲突
 

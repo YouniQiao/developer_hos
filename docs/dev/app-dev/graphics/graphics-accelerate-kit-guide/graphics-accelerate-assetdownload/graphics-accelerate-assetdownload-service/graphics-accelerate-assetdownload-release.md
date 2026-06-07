@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发布资源包下载任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-release
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-release
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 前提条件
 
-* 已准备好游戏资源包并加密，且自行保证游戏资源包的可用性。资源包支持的格式请参见[上传至华为CDN的资源包文件支持哪些格式类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-faq-1)。
+* 已准备好游戏资源包并加密，且自行保证游戏资源包的可用性。资源包支持的格式请参见[上传至华为CDN的资源包文件支持哪些格式类型](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-assetdownload-faq/graphics-accelerate-assetdownload-faq-1)。
 * 游戏资源包支持使用三方CDN或托管至华为CDN：
 
   + 若使用三方CDN，请提前将资源包上传至三方CDN服务器。
@@ -51,7 +51,7 @@ format: md
 | 指定下载时间段 | 可选 | 用户向三方CDN服务器请求下载游戏资源包的时间段。步骤如下：  1. 打开“指定下载时间段”开关。  2. 点击“添加时间段”，指定开始时间和结束时间，最多可支持添加20个时间段，且多个时间段不能重叠。 |
 | 包体大小 | 必选 | 填写已上传至三方CDN服务器的资源包大小。 |
 | CDN域名白名单 | 必选 | 英文逗号隔开，最多添加20个。 |
-| 可下载的端侧最小版本号 | 可选 | 为了提升CDN资源利用率，开发者可以限制下载游戏资源包的游戏版本。  请填写app.json5配置文件中的versionCode字段值。app.json5配置文件介绍请参见[配置文件标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)。  若设备上已安装的游戏版本低于指定的端侧最小版本号，则无法下载游戏资源包。  若未填写端侧最小版本号，所有游戏版本均可下载游戏资源包。 |
+| 可下载的端侧最小版本号 | 可选 | 为了提升CDN资源利用率，开发者可以限制下载游戏资源包的游戏版本。  请填写app.json5配置文件中的versionCode字段值。app.json5配置文件介绍请参见[配置文件标签](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)。  若设备上已安装的游戏版本低于指定的端侧最小版本号，则无法下载游戏资源包。  若未填写端侧最小版本号，所有游戏版本均可下载游戏资源包。 |
 
 ### 资源包下载方式二：使用华为CDN
 
@@ -81,7 +81,7 @@ format: md
    | 如果审核通过的时间已经晚于下载结束时间，则审核通过后任务会直接变为“任务结束”状态。 | - |
 4. （可选）填写客户端的最小版本号。
 
-   为了提升CDN资源利用率，开发者可以限制下载游戏资源包的游戏版本。请填写app.json5配置文件中的versionCode字段值。app.json5配置文件介绍请参见[配置文件标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)。
+   为了提升CDN资源利用率，开发者可以限制下载游戏资源包的游戏版本。请填写app.json5配置文件中的versionCode字段值。app.json5配置文件介绍请参见[配置文件标签](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)。
 
    若设备上已安装的游戏版本低于versionCode，则无法下载游戏资源包。
 

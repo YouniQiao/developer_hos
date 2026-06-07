@@ -1,6 +1,6 @@
 ---
 title: "使用画布绘制自定义图形 (Canvas)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-drawing-customization-on-canvas
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-draw/arkts-drawing-customization-on-canvas
 format: md
 ---
 
@@ -393,7 +393,7 @@ Canvas(this.context)
 
 ## 使用状态变量驱动画布刷新
 
-可以使用状态变量来驱动Canvas刷新，将变化的数据通过[@Watch](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch)监听，并绑定自定义的draw()方法。当数据刷新时，@Watch绑定的方法会执行绘制逻辑，使Canvas刷新。
+可以使用状态变量来驱动Canvas刷新，将变化的数据通过[@Watch](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch)监听，并绑定自定义的draw()方法。当数据刷新时，@Watch绑定的方法会执行绘制逻辑，使Canvas刷新。
 
 ```
 @Entry

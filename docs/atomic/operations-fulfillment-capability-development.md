@@ -1,18 +1,18 @@
 ---
 title: "经营履约能力开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/operations-fulfillment-capability-development
+original_url: /docs/dev/atomic-dev/operations-fulfillment-capability-development/operations-fulfillment-capability-development
 format: md
 ---
 
 
-* **[账号](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-account-development)**
-* **[推送](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-push-development)**
-* **[分享](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-share-development)**
-* **[扫码](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-code-scan-development)**
-* **[位置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-location-development)**
-* **[地图](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-map-development)**
-* **[支付](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-payment-development)**
-* **[应用内支付](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-iap-development)**
-* **[广告](https://developer.huawei.com/consumer/cn/doc/atomic-guides/ads-kit-atomicservice)**
-* **[场景化组件](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scenariofusion-development)**
-* **[应用市场](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-appgallery-development)**
+* **[账号](/docs/dev/atomic-dev/atomic-account-development/atomic-account-development)**
+* **[推送](/docs/dev/atomic-dev/atomic-push-development/atomic-push-development)**
+* **[分享](/docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-share-development)**
+* **[扫码](/docs/dev/atomic-dev/atomic-code-scan-development/atomic-code-scan-development)**
+* **[位置](/docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-location-development)**
+* **[地图](/docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-map-development)**
+* **[支付](/docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-payment-development)**
+* **[应用内支付](/docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-iap-development)**
+* **[广告](/docs/dev/atomic-dev/ads-kit-atomicservice/ads-kit-atomicservice)**
+* **[场景化组件](/docs/dev/atomic-dev/atomic-scenariofusion-development/atomic-scenariofusion-development)**
+* **[应用市场](/docs/dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-development)**

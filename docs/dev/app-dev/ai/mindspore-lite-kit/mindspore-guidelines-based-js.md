@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite实现图像分类（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-js
+original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-js
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 图像分类可实现对图像中物体的识别，在医学影像分析、自动驾驶、电子商务、人脸识别等领域有广泛的应用。
 
-若需基于本Demo适配自有模型，请优先选择静态Shape模型。由于ArkTS暂不支持动态Shape，如确有相关需求，请参考[使用MindSpore Lite实现图像分类（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-native)，通过Native侧的[OH\_AI\_ModelResize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-model-h#oh_ai_modelresize)接口对模型inputs进行动态调整。
+若需基于本Demo适配自有模型，请优先选择静态Shape模型。由于ArkTS暂不支持动态Shape，如确有相关需求，请参考[使用MindSpore Lite实现图像分类（C/C++）](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-native)，通过Native侧的[OH\_AI\_ModelResize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-model-h#oh_ai_modelresize)接口对模型inputs进行动态调整。
 
 ## 基本概念
 
@@ -47,7 +47,7 @@ format: md
 
 本示例程序中使用的图像分类模型文件为[mobilenetv2.ms](https://download.mindspore.cn/model_zoo/official/lite/mobilenetv2_openimage_lite/1.5/mobilenetv2.ms)，放置在entry/src/main/resources/rawfile工程目录下。
 
-如果开发者有其他图像分类的预训练模型，请参考[MindSpore Lite 模型转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-converter-guidelines)介绍，将原始模型转换成.ms格式。
+如果开发者有其他图像分类的预训练模型，请参考[MindSpore Lite 模型转换](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-converter-guidelines)介绍，将原始模型转换成.ms格式。
 
 ### 编写推理代码
 

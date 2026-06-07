@@ -1,6 +1,6 @@
 ---
 title: "选择正式上架的软件包"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-choose-pkg-0000002424923338
+original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-choose-pkg-0000002424923338
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 #### 前提条件
 
-[已上传软件包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-upload-pkg-0000002458362097)，且游戏软件包同时满足如下条件：
+[已上传软件包](/docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-upload-pkg-0000002458362097)，且游戏软件包同时满足如下条件：
 
 * 小游戏软件包的“使用场景”是“测试和正式上架”。
 * 小游戏软件包的“合法性”检测结果为“已达标”。
@@ -23,7 +23,7 @@ format: md
 
    ![](../img/agc-help-release-minigame-choose-pkg-0000002424923338_1.png)
 3. 若小游戏软件包API Level ≥ 11，要求设置是否加密软件包：
-   * （推荐）加密：玩家在手机设备上安装的是加密后的小游戏软件包，安全性较高。加密小游戏软件包的影响和效果请参见[应用加密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-protect)。
+   * （推荐）加密：玩家在手机设备上安装的是加密后的小游戏软件包，安全性较高。加密小游戏软件包的影响和效果请参见[应用加密](/docs/dev/app-dev/system/system-security/code-protect)。
    * 不加密：玩家在手机设备上安装的是不加密的小游戏软件包，小游戏的启动速度较快。
 
    ![](../img/agc-help-release-minigame-choose-pkg-0000002424923338_2.png)

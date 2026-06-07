@@ -1,7 +1,7 @@
 ---
 title: "鲸鸿动能竞价资源介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-jhdnggjjsmzyjs-0000002485600781
+original_url: /docs/monetize/promotion/ads-jhdnggjjsmzyjs-0000002485600781
 format: md
 ---
 

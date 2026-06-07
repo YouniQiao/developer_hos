@@ -1,7 +1,7 @@
 ---
 title: "智能穿戴应用开发"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smartwatch
+original_url: /docs/dev/app-dev/multi-device/bpta-smartwatch
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/fb/v3/71XW5xkNQKmol3f5NsClKg/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074245Z&HW-CC-Expire=86400&HW-CC-Sign=877B8B4F8635FA03E004CD4035B88066D1D204AAC71990755CD9309CB83A6F56)
 
-* 本文聚焦于智能穿戴应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)”系列文章。
+* 本文聚焦于智能穿戴应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)”系列文章。
 * 儿童智能表应用在发布时，除通用智能穿戴应用要求外，还存在额外审核和材料要求，开发者在开发前需参考[儿童智能表发布注意事项](#section46521457810)。
 
 ## 产品硬件说明
@@ -404,8 +404,8 @@ aboutToDisappear(): void {
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/47/v3/iA3Cian_R5akVXEBGo4GrA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074245Z&HW-CC-Expire=86400&HW-CC-Sign=BDEB8C493F515EAA4ABC16EDB6C24290C9E10E94B42F6985BB4567E562AD3649)
 
-* 鉴于部分智能穿戴设备可能不支持WearEngine能力，开发时务必充分考量设备差异。在调用相关接口前，请使用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口进行能力检测，以确保应用的稳定性，避免因兼容性问题引发崩溃。可参考[多设备应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-function#多设备应用开发)。
-* 使用WearEngine实现互联通信功能需要获取WearEngine权限，具体可以参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)。
+* 鉴于部分智能穿戴设备可能不支持WearEngine能力，开发时务必充分考量设备差异。在调用相关接口前，请使用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口进行能力检测，以确保应用的稳定性，避免因兼容性问题引发崩溃。可参考[多设备应用开发](/docs/dev/app-dev/multi-device/bpta-multi-device-function#多设备应用开发)。
+* 使用WearEngine实现互联通信功能需要获取WearEngine权限，具体可以参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)。
 * 手机端与智能穿戴端应用实现与对端互连通信的原理一致，详细开发方案可参考[实现手机手表互联通信与手表心率监听](https://gitcode.com/harmonyos_samples/Phone_Connection)。
 
 ###消息通知
@@ -488,7 +488,7 @@ aboutToDisappear(): void {
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/8d/v3/N9BwnY8KTzWT0PJu7qOOZA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074245Z&HW-CC-Expire=86400&HW-CC-Sign=1B26E82998DE0044AF0D2EC89AC916CA9AA01AD4C13ED26F6F9CACDF7204138D)
 
-使用WearEngine的NotifyClient.[notify()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#notify)需要获取WearEngine权限，具体可以参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)。
+使用WearEngine的NotifyClient.[notify()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#notify)需要获取WearEngine权限，具体可以参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)。
 
 **智能穿戴设备本地通知**
 
@@ -558,13 +558,13 @@ aboutToDisappear(): void {
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/08/v3/lC_ckYmBTQ6SEySomVkSrA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074245Z&HW-CC-Expire=86400&HW-CC-Sign=102CEB00BACD7F14A72322EF6196C3D3E30D06B14AF532EC4C76F5144AD2D9D3)
 
-由于不同设备的能力支持度不同，在调用相关接口前，请使用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口进行能力检测，以确保应用的稳定性，避免因兼容性问题引发崩溃。可参考[多设备应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-function#多设备应用开发)。
+由于不同设备的能力支持度不同，在调用相关接口前，请使用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口进行能力检测，以确保应用的稳定性，避免因兼容性问题引发崩溃。可参考[多设备应用开发](/docs/dev/app-dev/multi-device/bpta-multi-device-function#多设备应用开发)。
 
 ###未成年人模式适配
 
 智能穿戴设备中的儿童智能表应用面向儿童用户，启蒙教育、内容展示、社交互动、音视频、游戏等应用应重点评估未成年人保护要求。应用如需跟随系统未成年人模式调整内容展示、功能入口或使用时长，应适配未成年人模式能力。
 
-未成年人模式相关能力可参考[Account Kit（华为账号服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-kit-guide)中的[minorsProtection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection)能力。开发者应根据应用场景判断是否需要获取未成年人模式开启状态、年龄段信息，或引导用户开启未成年人模式。
+未成年人模式相关能力可参考[Account Kit（华为账号服务）](/docs/dev/app-dev/application-services/account-kit-guide)中的[minorsProtection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection)能力。开发者应根据应用场景判断是否需要获取未成年人模式开启状态、年龄段信息，或引导用户开启未成年人模式。
 
 ## 适配设备常见问题
 
@@ -586,7 +586,7 @@ aboutToDisappear(): void {
 
 问题描述：不知道智能穿戴设备需要完成哪些工程配置，成人智能表和儿童智能表的工程配置有哪些不同。
 
-解决方案：开发在智能穿戴设备上的应用，需要在module.json5配置文件的module字段中，为deviceTypes字段设置wearable类型。更多详情可参考[deviceTypes标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure#devicetype标签)。若当前已有适配轻量级智能表的工程，需要迁移适配成人智能表设备，可以参考[FA工程迁移](#section14111733132515)。
+解决方案：开发在智能穿戴设备上的应用，需要在module.json5配置文件的module字段中，为deviceTypes字段设置wearable类型。更多详情可参考[deviceTypes标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-structure#devicetype标签)。若当前已有适配轻量级智能表的工程，需要迁移适配成人智能表设备，可以参考[FA工程迁移](#section14111733132515)。
 
 成人智能表应用完成以上配置即可，儿童智能表应用需要额外添加儿童智能表分发策略配置，DevEco Studio需更新至6.1.0 Release及以上，具体步骤如下：
 
@@ -672,7 +672,7 @@ aboutToDisappear(): void {
 
    ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/8/v3/wPGJscdTQ_-wc_2sbqB8oA/zh-cn_image_0000002585606732.png?HW-CC-KV=V1&HW-CC-Date=20260606T074245Z&HW-CC-Expire=86400&HW-CC-Sign=39AE947D490D1B89AD9801BD71530956B8C057983A5F26FA20B8A6AAE8BBB590 "点击放大")
 2. 智能穿戴支持ArkTS与JS，轻量级智能穿戴仅支持JS，若应用发布包支持在智能穿戴与轻量级智能穿戴上运行，则无需对应用发布包做区分，若应用发布包仅支持某一种穿戴设备，则需要分别为智能穿戴设备与轻量级智能穿戴设备创建AppID，并上传其对应的发布包。
-3. APP创建流程可参考[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)。
+3. APP创建流程可参考[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。
 
 儿童智能表除上述流程外，还存在额外审核和材料要求，请参考[儿童智能表发布注意事项](#section46521457810)。
 
@@ -686,7 +686,7 @@ aboutToDisappear(): void {
 
 解决方案：
 
-1. 接口调用前进行能力检测：在调用相关接口前，请使用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口进行能力检测，以确保应用的稳定性，可参考[多设备应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-function#多设备应用开发)。
+1. 接口调用前进行能力检测：在调用相关接口前，请使用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口进行能力检测，以确保应用的稳定性，可参考[多设备应用开发](/docs/dev/app-dev/multi-device/bpta-multi-device-function#多设备应用开发)。
 2. 硬件功能适配排查：若功能无响应，请排查该设备是否支持该功能（排查示例：若旋转表冠交互事件未响应，请先确认当前智能穿戴设备是否具备旋转表冠这一物理硬件条件）。
 
 **迁移FA项目后，同步/异步接口无法正常调用或功能异常**
@@ -739,10 +739,10 @@ try {
    | *APP名称* | *xxx* |
    | *包名* | *xxx.xxx.xxx* |
    | *APP版本号* | *xxx* |
-   | *APP ID* | *xxx（APP ID的创建，可参考[为HarmonyOS应用创建APP ID](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506#section16423184171915)）* |
+   | *APP ID* | *xxx（APP ID的创建，可参考[为HarmonyOS应用创建APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915)）* |
    | *分发的表侧* | *仅儿童智能表；成人智能表+儿童智能表* |
-   | *APP名称是否与成人智能表相同* | *是/否**（如果APP名称相同，则包名不能相同，包名需要核准，可参考[HarmonyOS应用核准（备案）](https://developer.huawei.com/consumer/cn/doc/app/50130#h2-1768273577346-1)）* |
-   | *APP名称是否与手机、平板、电脑等其他品类相同* | *是/否**（**如果APP名称相同，则包名不能相同，包名需要核准，可参考[HarmonyOS应用核准（备案）](https://developer.huawei.com/consumer/cn/doc/app/50130#h2-1768273577346-1)）* |
+   | *APP名称是否与成人智能表相同* | *是/否**（如果APP名称相同，则包名不能相同，包名需要核准，可参考[HarmonyOS应用核准（备案）](/docs/distribute/app-dist/app-market/x50000/x50130#h2-1768273577346-1)）* |
+   | *APP名称是否与手机、平板、电脑等其他品类相同* | *是/否**（**如果APP名称相同，则包名不能相同，包名需要核准，可参考[HarmonyOS应用核准（备案）](/docs/distribute/app-dist/app-market/x50000/x50130#h2-1768273577346-1)）* |
    | *开发者名称* | *xxx* |
    | ***其他说明（重要）*** | *含应用介绍、免费内容占比、应用功能说明（形式不限）等* |
 
@@ -767,7 +767,7 @@ try {
 
 ## FA工程迁移
 
-智能穿戴设备兼容FA模型，本章节提供了如何将使用JS构建的[轻量级智能穿戴](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lite-wearable-guide)项目迁移到智能穿戴设备上继续使用，实现功能的延续与适配。
+智能穿戴设备兼容FA模型，本章节提供了如何将使用JS构建的[轻量级智能穿戴](/docs/dev/app-dev/multi-device/bpta-lite-wearable-guide)项目迁移到智能穿戴设备上继续使用，实现功能的延续与适配。
 
 以[轻量级智能穿戴应用开发](https://gitcode.com/harmonyos_samples/BestPracticeSnippets/tree/master/LiteWearable)为例，按照如下步骤，可以将使用JS构建的项目迁移到智能穿戴设备上：
 

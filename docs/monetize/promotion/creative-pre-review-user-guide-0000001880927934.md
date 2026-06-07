@@ -1,7 +1,7 @@
 ---
 title: "使用创意预审库"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/creative-pre-review-user-guide-0000001880927934
+original_url: /docs/monetize/promotion/creative-pre-review-user-guide-0000001880927934
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
      |  |  |
      | --- | --- |
      | 任务设置项 | 说明 |
-     | 展示类型 | 点击下拉框，根据您的需求选择创意的展示类型，并根据页面提示的规格要求上传图片或视频。  说明：  当您展示类型选择为“横版大图”、“竖版大图”、“横版小图”、“横版小三图”时，您可以直接上传图片，也可以点击“[使用模板制图](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-draw-tools-introduction-0000001399522565)”快速生成创意素材或“[从素材库选择](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-material-library-introduction-0000001399645709)”复用之前保存的素材。 |
+     | 展示类型 | 点击下拉框，根据您的需求选择创意的展示类型，并根据页面提示的规格要求上传图片或视频。  说明：  当您展示类型选择为“横版大图”、“竖版大图”、“横版小图”、“横版小三图”时，您可以直接上传图片，也可以点击“[使用模板制图](/docs/monetize/promotion/bp-functions-draw-tools-introduction-0000001399522565)”快速生成创意素材或“[从素材库选择](/docs/monetize/promotion/bp-functions-material-library-introduction-0000001399645709)”复用之前保存的素材。 |
      | 资质证明 | 若您使用了肖像，请上传证明资质。当前支持格式JPEG/JPG/PNG/BMP/PPTX/DOCX/PDF/MP4/GIF/ZIP，请勿上传不支持的文件格式。大小不超过50M，多材料请打包上传。 |
      | 创意标签 | 您可以选择添加创意标签，更好地提升推广效果。当前最多可添加5个标签。 |
    - “应用介绍”区域

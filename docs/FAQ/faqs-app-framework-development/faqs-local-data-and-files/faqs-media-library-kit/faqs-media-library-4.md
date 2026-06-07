@@ -1,6 +1,6 @@
 ---
 title: "关于导入图片的使用权限和问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-4
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-media-library-kit/faqs-media-library-4
 format: md
 ---
 

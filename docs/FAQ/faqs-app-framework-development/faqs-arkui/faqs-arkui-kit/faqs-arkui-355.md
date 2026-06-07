@@ -1,6 +1,6 @@
 ---
 title: "汉字转拼音如何去掉声调符号"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-355
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-355
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Multimodal Awareness Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multimodalawareness-kit-intro
+original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/multimodalawareness-kit-intro
 format: md
 ---
 

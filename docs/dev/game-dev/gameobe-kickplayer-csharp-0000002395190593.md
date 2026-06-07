@@ -1,6 +1,6 @@
 ---
 title: "移除房间内玩家"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-kickplayer-csharp-0000002395190593
+original_url: /docs/dev/game-dev/gameobe-kickplayer-csharp-0000002395190593
 format: md
 ---
 

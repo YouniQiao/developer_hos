@@ -1,6 +1,6 @@
 ---
 title: "Cloudfoundation Storage Service"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-service
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

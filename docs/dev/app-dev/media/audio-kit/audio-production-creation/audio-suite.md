@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "音频编创开发概述(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite
+original_url: /docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
 ## 引擎
 
-[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)中的引擎是一个统一管理音频管线、控制[离线编辑(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-manual-rendering)和[实时渲染(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-real-time-rendering)的对象，开发者可以根据自身的需求搭建音频处理链。调用方式如上图所示，由应用发起，先调用[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)的接口依次创建引擎、管线、节点，再把创建的节点在管线内连接起来，用于传输PCM（Pulse Code Modulation）音频数据，使对应的效果节点实现音效处理能力。当管线停止时，开发者可以有限制地（具体规则请参考[管线的组成和编排](#管线的组成和编排)）连接、断开和移除节点，通过调节节点编排实现复杂的音效处理。
+[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)中的引擎是一个统一管理音频管线、控制[离线编辑(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-manual-rendering)和[实时渲染(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-real-time-rendering)的对象，开发者可以根据自身的需求搭建音频处理链。调用方式如上图所示，由应用发起，先调用[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)的接口依次创建引擎、管线、节点，再把创建的节点在管线内连接起来，用于传输PCM（Pulse Code Modulation）音频数据，使对应的效果节点实现音效处理能力。当管线停止时，开发者可以有限制地（具体规则请参考[管线的组成和编排](#管线的组成和编排)）连接、断开和移除节点，通过调节节点编排实现复杂的音效处理。
 
 引擎最多支持创建10条管线，其中实时渲染管线最多创建1条。
 
@@ -40,13 +40,13 @@ format: md
 
 * 输入节点负责处理PCM音频数据输入，从应用侧获取数据。
 * 输出节点负责处理PCM音频数据输出，开发者可以设置音频数据的输出格式。
-* [离线编辑(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-manual-rendering)场景支持均衡器、音源分离、声场效果、降噪、声音美化、环境效果、混音等音效节点。
-* [实时渲染(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-real-time-rendering)场景支持均衡器音效节点。
+* [离线编辑(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-manual-rendering)场景支持均衡器、音源分离、声场效果、降噪、声音美化、环境效果、混音等音效节点。
+* [实时渲染(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-real-time-rendering)场景支持均衡器音效节点。
 * 均衡器、音源分离、声场效果、降噪等音效节点支持对应的音效处理功能和多音频混音操作，最终输出的PCM音频数据支持格式设置（如[OH\_Audio\_SampleFormat(位深度)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#oh_audio_sampleformat)、[OH\_Audio\_SampleRate(采样率)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#oh_audio_samplerate)和[OH\_AudioChannelLayout(声道数)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-channel-layout-h#oh_audiochannellayout)等）。
 
 ## 管线
 
-管线是一个统一管理音频节点连接、配置的对象，支持两种工作模式，分别是[离线编辑(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-manual-rendering)和[实时渲染(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-real-time-rendering)。
+管线是一个统一管理音频节点连接、配置的对象，支持两种工作模式，分别是[离线编辑(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-manual-rendering)和[实时渲染(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-real-time-rendering)。
 
 管线的数据处理采用反向驱动机制。由[OH\_AudioSuiteEngine\_RenderFrame()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-engine-h#oh_audiosuiteengine_renderframe)或者[OH\_AudioSuiteEngine\_MultiRenderFrame()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-engine-h#oh_audiosuiteengine_multirenderframe)发起，输出节点逐级向连接的上游节点请求数据，最终由输入节点的[OH\_InputNode\_RequestDataCallback()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-engine-h#oh_inputnode_requestdatacallback)回调函数向开发者请求需要处理的音频数据。
 
@@ -66,7 +66,7 @@ format: md
 * 管线是[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)中支持应用渲染PCM音频数据的音效链路。管线支持节点之间的灵活组网，给开发者提供更丰富、更灵活的音频编创体验。
 * 管线使用的场景如下：
 
-  创建一个输入节点、一个效果节点（如均衡器节点[EFFECT\_NODE\_TYPE\_EQUALIZER](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#oh_audionode_type)）和一个输出节点，按节点连接顺序（输入节点 -> 效果节点 -> 输出节点）连接组成管线，实现均衡器功能（具体代码用例参考[基础离线编辑](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-manual-rendering#基础离线编辑)）。同时，管线也支持多输入场景（具体代码用例参考[混音与级联](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-manual-rendering#混音与级联)），每条管线输入的PCM数据经过各自的效果节点，在进行混音处理后进行输出。
+  创建一个输入节点、一个效果节点（如均衡器节点[EFFECT\_NODE\_TYPE\_EQUALIZER](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-base-h#oh_audionode_type)）和一个输出节点，按节点连接顺序（输入节点 -> 效果节点 -> 输出节点）连接组成管线，实现均衡器功能（具体代码用例参考[基础离线编辑](/docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-manual-rendering#基础离线编辑)）。同时，管线也支持多输入场景（具体代码用例参考[混音与级联](/docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-manual-rendering#混音与级联)），每条管线输入的PCM数据经过各自的效果节点，在进行混音处理后进行输出。
 
 ### 管线的组成和编排
 

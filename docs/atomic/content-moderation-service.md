@@ -1,10 +1,10 @@
 ---
 title: "内容风控服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/content-moderation-service
+original_url: /docs/dev/atomic-dev/content-moderation-service/content-moderation-service
 format: md
 ---
 
 
-* **[内容风控服务介绍](https://developer.huawei.com/consumer/cn/doc/atomic-guides/content-moderation-service-intro)**
-* **[开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/content-moderation-service-prep)**
-* **[个人数据处理说明](https://developer.huawei.com/consumer/cn/doc/atomic-guides/content-moderation-service-personal-data-proces)**
+* **[内容风控服务介绍](/docs/dev/atomic-dev/content-moderation-service/content-moderation-service-intro)**
+* **[开发准备](/docs/dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep)**
+* **[个人数据处理说明](/docs/dev/atomic-dev/content-moderation-service/content-moderation-service-personal-data-proces)**

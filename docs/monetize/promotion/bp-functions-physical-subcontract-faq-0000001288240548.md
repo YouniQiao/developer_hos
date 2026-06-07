@@ -1,7 +1,7 @@
 ---
 title: "成功案例"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-physical-subcontract-faq-0000001288240548
+original_url: /docs/monetize/promotion/bp-functions-physical-subcontract-faq-0000001288240548
 format: md
 ---
 

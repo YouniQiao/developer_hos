@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取应用包的签名指纹信息，即.p12文件信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-64
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-64
 ---
 
 

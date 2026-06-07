@@ -1,6 +1,6 @@
 ---
 title: "如何判断能否对接口进行插桩或替换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-74
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-74
 format: md
 ---
 

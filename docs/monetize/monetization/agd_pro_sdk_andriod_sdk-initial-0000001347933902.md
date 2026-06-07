@@ -1,7 +1,7 @@
 ---
 title: "SDK初始化"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-initial-0000001347933902
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-initial-0000001347933902
 format: md
 ---
 

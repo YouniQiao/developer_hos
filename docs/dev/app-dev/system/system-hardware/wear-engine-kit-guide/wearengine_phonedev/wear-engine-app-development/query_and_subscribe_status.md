@@ -1,20 +1,20 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "状态查询与订阅"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_and_subscribe_status
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_and_subscribe_status
 format: md
 ---
 
 
 ![](./img/48644d18.png)
 
-该接口的调用需要在开发者联盟申请设备基础信息权限与穿戴用户状态权限（请参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)），穿戴用户状态权限还需获得用户授权。
+该接口的调用需要在开发者联盟申请设备基础信息权限与穿戴用户状态权限（请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)），穿戴用户状态权限还需获得用户授权。
 
 * 实时查询穿戴设备可用空间、电量状态。
 * 订阅穿戴设备连接状态、低电量告警、用户心率告警。
 * 查询和订阅穿戴设备充电状态、佩戴状态、设备模式。
 
-使用该接口前，需要确保应用已申请相应权限（参见[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)）同时向手机侧用户申请获取对应权限的授权（参见[请求用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request_user_authorization)），否则接口将调用失败。
+使用该接口前，需要确保应用已申请相应权限（参见[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）同时向手机侧用户申请获取对应权限的授权（参见[请求用户授权](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/request_user_authorization)），否则接口将调用失败。
 
 **表1** 申请权限：设备基础信息
 
@@ -43,8 +43,8 @@ format: md
 
 穿戴设备的状态可以调用[MonitorClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#monitorclient)对象中的[queryStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#querystatus)方法获取到。一次只能查询一个状态。
 
-1. 参见[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)章节，获取已连接设备列表。
-2. 参见[目标设备选择](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
+1. 参见[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)章节，获取已连接设备列表。
+2. 参见[目标设备选择](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
 3. 调用[wearEngine](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api)中的[getMonitorClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetmonitorclient)方法，获取[MonitorClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#monitorclient)对象。
 4. 调用[queryStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#querystatus)方法，查询指定指标状态。
 
@@ -72,8 +72,8 @@ format: md
 
 ## 订阅设备状态
 
-1. 参见[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)章节，获取已连接的设备列表。
-2. 参见[目标设备选择](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
+1. 参见[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)章节，获取已连接的设备列表。
+2. 参见[目标设备选择](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
 3. 调用[wearEngine](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api)中的[getMonitorClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetmonitorclient)方法，获取[MonitorClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#monitorclient)对象。
 4. 定义订阅任务的回调对象[Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback)。
 5. 调用[subscribeEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#subscribeevent)方法，订阅指定指标状态变化的订阅。

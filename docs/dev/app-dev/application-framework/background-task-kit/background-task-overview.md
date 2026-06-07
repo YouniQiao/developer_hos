@@ -1,19 +1,19 @@
 ---
 title: "Background Tasks Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview
+original_url: /docs/dev/app-dev/application-framework/background-task-kit/background-task-overview
 format: md
 ---
 
 
 ## 功能介绍
 
-设备返回主界面、锁屏、应用切换等操作会使应用退至后台。应用退至后台后，如果继续在后台运行，可能会造成设备耗电快、用户界面卡顿等现象。为了降低设备耗电速度、保障用户使用流畅度，系统会对退至后台的应用进行管控，包括[进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage)挂起和进程终止。典型场景包括：应用退至后台一段时间应用进程会被挂起、资源不足时系统会终止部分应用进程（即回收该进程的所有资源）。应用进程挂起后，无法使用软件资源（如公共事件、定时器等）和硬件资源（CPU、网络、GPS、蓝牙等）。如何合理使用请参考[后台硬件资源合理使用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-hardware-resources)。
+设备返回主界面、锁屏、应用切换等操作会使应用退至后台。应用退至后台后，如果继续在后台运行，可能会造成设备耗电快、用户界面卡顿等现象。为了降低设备耗电速度、保障用户使用流畅度，系统会对退至后台的应用进行管控，包括[进程](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/process-model-stage)挂起和进程终止。典型场景包括：应用退至后台一段时间应用进程会被挂起、资源不足时系统会终止部分应用进程（即回收该进程的所有资源）。应用进程挂起后，无法使用软件资源（如公共事件、定时器等）和硬件资源（CPU、网络、GPS、蓝牙等）。如何合理使用请参考[后台硬件资源合理使用](/docs/quality/use-of-background-hardware-resources)。
 
 为了保障后台音乐播放、日历提醒等功能的正常使用，Background Tasks Kit提供了规范内受约束的后台任务，扩展应用在后台的运行时间。
 
 ## 约束与限制
 
-资源使用约束：对于运行的进程，系统会给予一定的资源配额约束，包括进程在连续一段时间内内存的使用、[CPU使用占比](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-controlling-background-process-cpu)，以及24小时磁盘写的IO量，均有对应的配额上限。超过配额上限时，如果进程处于前台，系统会有对应的warning日志，如果进程处于后台，系统会终止该进程。
+资源使用约束：对于运行的进程，系统会给予一定的资源配额约束，包括进程在连续一段时间内内存的使用、[CPU使用占比](/docs/quality/controlling-background-process-cpu)，以及24小时磁盘写的IO量，均有对应的配额上限。超过配额上限时，如果进程处于前台，系统会有对应的warning日志，如果进程处于后台，系统会终止该进程。
 
 ## 后台任务类型
 

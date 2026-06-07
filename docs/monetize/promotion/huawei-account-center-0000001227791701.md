@@ -1,7 +1,7 @@
 ---
 title: "华为账号中心"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/huawei-account-center-0000001227791701
+original_url: /docs/monetize/promotion/huawei-account-center-0000001227791701
 format: md
 ---
 

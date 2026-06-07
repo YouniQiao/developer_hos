@@ -1,6 +1,6 @@
 ---
 title: "通过标准化数据通路实现数据共享 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unified-data-channels
+original_url: /docs/dev/app-dev/application-framework/arkdata/cross-app-data-share/many-to-many-data-share/unified-data-channels
 format: md
 ---
 

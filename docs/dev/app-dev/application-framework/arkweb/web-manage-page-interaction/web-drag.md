@@ -1,6 +1,6 @@
 ---
 title: "使用Web组件的拖拽功能与网页交互"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-drag
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-drag
 format: md
 ---
 
@@ -35,7 +35,7 @@ ArkWeb拖拽不同于ArkUI的组件级拖拽，主要针对网页内容的拖拽
 
 在多数情况下，应用在H5端实现的拖拽功能能够满足需求。如有需要，请参考以下案例，实现在ArkTS端进行拖拽数据读取等操作。
 
-1. [建立应用侧与前端页面数据通道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-app-page-data-channel)。
+1. [建立应用侧与前端页面数据通道](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-app-page-data-channel)。
 2. 在onDrop方法中，做简单逻辑，例如暂存一些关键数据。
 3. 在ArkTS侧接收消息的方法中，添加应用处理逻辑，可以进行耗时任务。
 

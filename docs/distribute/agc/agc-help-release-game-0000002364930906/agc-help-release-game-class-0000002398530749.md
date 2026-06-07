@@ -1,6 +1,6 @@
 ---
 title: "配置应用分类标签"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-class-0000002398530749
+original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-class-0000002398530749
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 2. 左侧导航栏选择“应用上架 > 应用信息”。
 3. 进入右侧页面的“应用分类标签”区域，根据游戏玩法选择游戏分类。
 
-   全部游戏分类请参见[游戏分类](https://developer.huawei.com/consumer/cn/doc/app/classify-0000001960172909#section1164316401147)。
+   全部游戏分类请参见[游戏分类](/docs/distribute/app-dist/app-services/classification-0000002068852289/classify-0000001960172909#section1164316401147)。
 
    ![](../img/agc-help-release-game-class-0000002398530749_1.png)
 4. 根据版号类型圈选“休闲游戏”或“网络游戏”：
@@ -29,7 +29,7 @@ format: md
 
    若选择多个标签时，请选择其中一个标签为主标签，要求主标签与游戏分类相关。
 
-   全部游戏标签请参见[游戏分类](https://developer.huawei.com/consumer/cn/doc/app/classify-0000001960172909#section1164316401147)。
+   全部游戏标签请参见[游戏分类](/docs/distribute/app-dist/app-services/classification-0000002068852289/classify-0000001960172909#section1164316401147)。
 
    ![](../img/agc-help-release-game-class-0000002398530749_3.png)
 

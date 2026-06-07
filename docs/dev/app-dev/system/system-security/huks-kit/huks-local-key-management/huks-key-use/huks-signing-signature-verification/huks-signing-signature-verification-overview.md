@@ -1,13 +1,13 @@
 ---
 title: "签名/验签介绍及算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-overview
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-overview
 format: md
 ---
 
 
 为实现数据完整性保护和防抵赖，可使用生成/导入的密钥，对数据进行签名验签操作。
 
-从API 23开始支持[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)特性。
+从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。
 
 ## 支持的算法
 

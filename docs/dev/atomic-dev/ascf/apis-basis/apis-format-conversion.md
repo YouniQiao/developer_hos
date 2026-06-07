@@ -1,6 +1,6 @@
 ---
 title: "格式转换"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-format-conversion
+original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-format-conversion
 format: md
 ---
 

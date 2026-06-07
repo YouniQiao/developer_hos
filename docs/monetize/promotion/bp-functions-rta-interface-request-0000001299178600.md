@@ -1,7 +1,7 @@
 ---
 title: "RTA广告请求接口"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-rta-interface-request-0000001299178600
+original_url: /docs/monetize/promotion/bp-functions-rta-interface-request-0000001299178600
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Ads Kit术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-kit-glossary
+original_url: /docs/dev/app-dev/application-services/ads-kit-guide/ads-kit-glossary
 format: md
 ---
 

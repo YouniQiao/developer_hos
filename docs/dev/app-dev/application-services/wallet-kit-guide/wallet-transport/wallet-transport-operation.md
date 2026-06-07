@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "交通卡开通"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-operation
+original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-transport/wallet-transport-operation
 format: md
 ---
 

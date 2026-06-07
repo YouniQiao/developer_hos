@@ -1,6 +1,6 @@
 ---
 title: "跨模块页面路由"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-inter-module-page-routing
+original_url: /docs/dev/atomic-dev/atomic-navigation-routing/atomic-inter-module-page-routing
 format: md
 ---
 
@@ -68,7 +68,7 @@ format: md
      ]
    }
    ```
-4. 在product分包module.json5配置文件的module标签中定义[routerMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#routermap标签)字段，指向定义的路由表配置文件route\_map.json。
+4. 在product分包module.json5配置文件的module标签中定义[routerMap](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#routermap标签)字段，指向定义的路由表配置文件route\_map.json。
 
    ```
    "routerMap": "$profile:route_map"

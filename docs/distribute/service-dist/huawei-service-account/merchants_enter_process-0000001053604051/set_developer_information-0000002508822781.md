@@ -1,7 +1,7 @@
 ---
 title: "步骤5 设置开发者信息"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/set_developer_information-0000002508822781
+original_url: /docs/distribute/service-dist/huawei-service-account/merchants_enter_process-0000001053604051/set_developer_information-0000002508822781
 format: md
 ---
 

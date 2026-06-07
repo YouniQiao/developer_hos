@@ -1,6 +1,6 @@
 ---
 title: "下架应用/元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-remove-0000002274058145
+original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-remove-0000002274058145
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](../img/agc-help-maintain-remove-0000002274058145_0.png)
 
-下架应用仍会占据包名，只有[删除应用/元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-delete-0000002271413701)才会释放包名。
+下架应用仍会占据包名，只有[删除应用/元服务](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-delete-0000002271413701)才会释放包名。
 
 ![](../img/agc-help-maintain-remove-0000002274058145_1.png)
 

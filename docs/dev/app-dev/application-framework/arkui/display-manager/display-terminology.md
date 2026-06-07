@@ -1,6 +1,6 @@
 ---
 title: "屏幕管理开发术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-terminology
+original_url: /docs/dev/app-dev/application-framework/arkui/display-manager/display-terminology
 format: md
 ---
 

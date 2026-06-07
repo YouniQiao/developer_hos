@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite进行模型转换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-converter-guidelines
+original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-converter-guidelines
 format: md
 ---
 
@@ -10,8 +10,8 @@ format: md
 
 MindSpore Lite AI模型部署流程是：
 
-1. 开发者首先将原始模型（如：ONNX、CAFFE等）用MindSpore Lite模型转换工具，生成后缀为.ms的模型文件。MindSpore Lite Kit所支持的ONNX算子，可查询[MindSpore Lite Kit算子支持列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-supported-operators)，以确保模型转换成功。
-2. 然后在代码中调用MindSpore Lite推理引擎接口，执行[模型推理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-guidelines)。
+1. 开发者首先将原始模型（如：ONNX、CAFFE等）用MindSpore Lite模型转换工具，生成后缀为.ms的模型文件。MindSpore Lite Kit所支持的ONNX算子，可查询[MindSpore Lite Kit算子支持列表](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-appendix/mindspore-lite-supported-operators)，以确保模型转换成功。
+2. 然后在代码中调用MindSpore Lite推理引擎接口，执行[模型推理](/docs/dev/app-dev/ai/mindspore-lite-kit/deployment/mindspore-lite-guidelines)。
 
 ## 获取模型转换工具
 

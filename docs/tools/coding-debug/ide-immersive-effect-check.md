@@ -1,7 +1,7 @@
 ---
 title: "@cross-device-app-dev/immersive-effect-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-immersive-effect-check
+original_url: /docs/tools/coding-debug/ide-immersive-effect-check
 format: md
 ---
 

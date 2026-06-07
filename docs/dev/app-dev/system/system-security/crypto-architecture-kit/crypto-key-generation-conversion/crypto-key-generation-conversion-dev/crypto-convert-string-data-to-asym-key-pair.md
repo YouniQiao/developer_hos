@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "指定PEM格式字符串数据转换非对称密钥对(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-convert-string-data-to-asym-key-pair
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-convert-string-data-to-asym-key-pair
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ## 指定PEM格式字符串数据转换密钥对
 
-对应的算法规格请查看[非对称密钥生成和转换规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec)。
+对应的算法规格请查看[非对称密钥生成和转换规格](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec)。
 
 1. 调用[cryptoFramework.createAsyKeyGenerator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoframework#cryptoframeworkcreateasykeygenerator)，指定字符串参数'RSA1024'，创建RSA密钥类型为RSA1024、素数个数为2的非对称密钥生成器（AsyKeyGenerator）。
 

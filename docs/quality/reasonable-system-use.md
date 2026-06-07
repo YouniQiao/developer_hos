@@ -1,6 +1,6 @@
 ---
 title: "后台系统资源合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-system-use
+original_url: /docs/quality/reasonable-system-use
 ---
 
 # 后台系统资源合理使用
@@ -42,7 +42,7 @@ runningLock.create('running_lock_test', runningLock.RunningLockType.BACKGROUND)
 
 使用音频资源时，系统会为应用持锁。如果不释放音频资源，会导致系统持锁不释放。因此，应用在后台应主动释放音频资源。
 
-可参考[合理使用音频资源](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-audio-use)。
+可参考[合理使用音频资源](/docs/quality/reasonable-audio-use)。
 
 ```ts
 import { UIAbility } from '@kit.AbilityKit';

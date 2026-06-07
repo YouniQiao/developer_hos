@@ -1,6 +1,6 @@
 ---
 title: "定向应用发布"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-private-release-0000002353433008
+original_url: /docs/distribute/agc/agc-help-release-0000002235870050/agc-help-private-release-0000002353433008
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 #### 提交定向应用发布申请
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
-2. 创建HarmonyOS应用，具体请参考[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)。
+2. 创建HarmonyOS应用，具体请参考[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。
 3. 进入应用详情页，选择“分发 > 价格与销售范围”，进入定向应用发布配置页面。
 
    ![](../img/agc-help-private-release-0000002353433008_0.png)

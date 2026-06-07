@@ -1,13 +1,13 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Image Kit（图片处理服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-kit
+original_url: /docs/dev/app-dev/media/image-kit
 format: md
 ---
 
 
-* **[Image Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-overview)**
-* **[图片开发指导(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-arkts-dev)**
-* **[图片开发指导(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-native)**
-* **[Image Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-faqs)**
-* **[图片开发指导(依赖JS对象)(不再推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-native-js-objects)**
+* **[Image Kit简介](/docs/dev/app-dev/media/image-kit/image-overview)**
+* **[图片开发指导(ArkTS)](/docs/dev/app-dev/media/image-kit/image-arkts-dev)**
+* **[图片开发指导(C/C++)](/docs/dev/app-dev/media/image-kit/image-native)**
+* **[Image Kit常见问题](/docs/dev/app-dev/media/image-kit/image-faqs)**
+* **[图片开发指导(依赖JS对象)(不再推荐)](/docs/dev/app-dev/media/image-kit/image-native-js-objects)**

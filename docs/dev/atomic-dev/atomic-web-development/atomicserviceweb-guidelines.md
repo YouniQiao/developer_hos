@@ -1,6 +1,6 @@
 ---
 title: "Web组件概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomicserviceweb-guidelines
+original_url: /docs/dev/atomic-dev/atomic-web-development/atomicserviceweb-guidelines
 format: md
 ---
 

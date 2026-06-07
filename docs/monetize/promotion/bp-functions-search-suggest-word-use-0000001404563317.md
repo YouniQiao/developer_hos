@@ -1,7 +1,7 @@
 ---
 title: "使用搜索投放建议词"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-search-suggest-word-use-0000001404563317
+original_url: /docs/monetize/promotion/bp-functions-search-suggest-word-use-0000001404563317
 format: md
 ---
 

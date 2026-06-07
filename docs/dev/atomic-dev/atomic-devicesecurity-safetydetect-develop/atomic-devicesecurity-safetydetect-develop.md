@@ -1,6 +1,6 @@
 ---
 title: "安全检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-safetydetect-develop
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-safetydetect-develop
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "生成回归测试包时报错提示“xxx.py文件不存在,请检查 json文件是否填写正确!”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-8
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-8
 ---
 
 

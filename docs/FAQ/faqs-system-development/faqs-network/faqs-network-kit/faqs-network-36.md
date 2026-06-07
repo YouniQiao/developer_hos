@@ -1,6 +1,6 @@
 ---
 title: "ArkTS中HTTP请求如何以JSON形式进行传输"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-36
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-36
 format: md
 ---
 

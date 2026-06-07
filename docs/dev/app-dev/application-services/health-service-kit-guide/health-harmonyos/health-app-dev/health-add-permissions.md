@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理用户授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-litewearable-add-permissions
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-add-permissions
 format: md
 ---
 
@@ -20,13 +20,13 @@ format: md
 
 | 接口名 | 描述 |
 | --- | --- |
-| [requestAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#healthstorerequestauthorizations)(request: AuthorizationRequest): AuthorizationResponse | 用户授权，入参为授权参数[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#authorizationrequest)，添加需要读写的数据类型，拉起账号授权页面，引导用户完成授权，返回结果中的数据类型列表，其对应权限在[应用申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description)和用户授权权限的交集中。 |
-| [getAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#healthstoregetauthorizations)(request: AuthorizationRequest): AuthorizationResponse | 查询用户权限，入参为[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#authorizationrequest)，添加需要查询的数据类型，查询传入类型是否有权限，返回结果中的数据类型列表，其对应权限在[应用申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description)和用户授权权限的交集中。 |
+| [requestAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#healthstorerequestauthorizations)(request: AuthorizationRequest): AuthorizationResponse | 用户授权，入参为授权参数[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#authorizationrequest)，添加需要读写的数据类型，拉起账号授权页面，引导用户完成授权，返回结果中的数据类型列表，其对应权限在[应用申请权限](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description)和用户授权权限的交集中。 |
+| [getAuthorizations](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#healthstoregetauthorizations)(request: AuthorizationRequest): AuthorizationResponse | 查询用户权限，入参为[AuthorizationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore-lite#authorizationrequest)，添加需要查询的数据类型，查询传入类型是否有权限，返回结果中的数据类型列表，其对应权限在[应用申请权限](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description)和用户授权权限的交集中。 |
 
 ## 开发前检查
 
-* 完成[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)。
-* 常见问题请参考[Health Service Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs)。
+* 完成[申请运动健康服务](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply)。
+* 常见问题请参考[Health Service Kit常见问题](/docs/dev/app-dev/application-services/health-service-kit-guide/health-faqs)。
 
 ## 开发步骤
 

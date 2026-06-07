@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "本地搜索方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-search-rec
 format: md
 ---
 
 
-* **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec-introduction)**
-* **[场景体验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec-scene-experience)**
-* **[接入方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec-access-programme)**
+* **[概述](/docs/dev/app-dev/ai/intents-search-rec-introduction)**
+* **[场景体验](/docs/dev/app-dev/ai/intents-kit-guide/intents-event-rec/intents-event-rec-scene-experience)**
+* **[接入方案](/docs/dev/app-dev/ai/intents-kit-guide/intents-event-rec/intents-event-rec-access-programme)**

@@ -1,7 +1,7 @@
 ---
 title: "侵权处理流程"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/infringement-process-0000001364091785
+original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-handling-process-0000001363971609/infringement-process-0000001364091785
 format: md
 ---
 

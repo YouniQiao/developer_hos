@@ -1,9 +1,9 @@
 ---
 format: md
 title: "ArkTS语言"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts
+original_url: /docs/FAQ/faqs-arkts
 ---
 
 
-* **[方舟编程语言（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-kit)**
-* **[ArkTS线程模型和并发](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-threading-model)**
+* **[方舟编程语言（ArkTS）](/docs/FAQ/faqs-arkts-kit)**
+* **[ArkTS线程模型和并发](/docs/FAQ/faqs-arkts-threading-model)**

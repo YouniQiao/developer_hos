@@ -1,7 +1,7 @@
 ---
 format: md
 title: "HarmonyOS是否支持CFCA证书预置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-device-certificate-1
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-device-certificate-kit/faqs-device-certificate-1
 ---
 
 

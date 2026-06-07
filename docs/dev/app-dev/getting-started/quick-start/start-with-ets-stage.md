@@ -1,6 +1,6 @@
 ---
 title: "构建第一个HarmonyOS应用（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-with-ets-stage
+original_url: /docs/dev/app-dev/getting-started/quick-start/start-with-ets-stage
 ---
 
 ![](./img/62c97aed.png)
@@ -10,7 +10,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/star
 ## 创建ArkTS工程
 
 1. 若首次打开**DevEco Studio**，请单击**Create Project**创建工程。如果已经打开了一个工程，请在菜单栏选择**File** > **New** > **Create Project**来创建一个新工程。
-2. 选择**Application**应用开发（本文以应用开发为例，[Atomic Service](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/glossary#atomic-service元服务)对应为元服务开发），选择模板**Empty Ability**，单击**Next**进行下一步配置。
+2. 选择**Application**应用开发（本文以应用开发为例，[Atomic Service](/docs/dev/app-dev/getting-started/glossary/glossary#atomic-service元服务)对应为元服务开发），选择模板**Empty Ability**，单击**Next**进行下一步配置。
 
    若开发者需要进行Native相关工程的开发，请选择**Native C++** 模板，更多模板的使用和说明请见[工程模板介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-template)。
 
@@ -24,15 +24,15 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/star
 
 ![](./img/8cce74a3.png)
 
-* **AppScope > app.json5**：应用的全局配置信息，详见[app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)。
-* **entry**：HarmonyOS工程模块，编译构建生成一个[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-glossary#hap)包。
+* **AppScope > app.json5**：应用的全局配置信息，详见[app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file)。
+* **entry**：HarmonyOS工程模块，编译构建生成一个[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-glossary#hap)包。
 
   + **src > main > ets**：用于存放ArkTS源码。
   + **src > main > ets > entryability**：应用/服务的入口。
   + **src > main > ets > entrybackupability**：应用提供扩展的备份恢复能力。
   + **src > main > ets > pages**：应用/服务包含的页面。
-  + **src > main > resources**：用于存放应用/服务所用到的资源文件，如图形、多媒体、字符串、布局文件等。关于资源文件，详见[资源分类与访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access)。
-  + **src > main > module.json5**：[模块](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-glossary#module)配置文件。主要包含HAP包的配置信息、应用/服务在具体设备上的配置信息以及应用/服务的全局配置信息。具体的配置文件说明，详见[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)。
+  + **src > main > resources**：用于存放应用/服务所用到的资源文件，如图形、多媒体、字符串、布局文件等。关于资源文件，详见[资源分类与访问](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access)。
+  + **src > main > module.json5**：[模块](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-glossary#module)配置文件。主要包含HAP包的配置信息、应用/服务在具体设备上的配置信息以及应用/服务的全局配置信息。具体的配置文件说明，详见[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)。
   + **build-profile.json5**：当前的模块信息 、编译信息配置项，包括buildOption、targets配置等。
   + **hvigorfile.ts**：模块级编译构建任务脚本。
   + **obfuscation-rules.txt**：混淆规则文件。混淆开启后，在使用Release模式进行编译时，会对代码进行编译、混淆及压缩处理，保护代码资产。详见[开启代码混淆](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation)。
@@ -48,7 +48,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/star
 
    工程同步完成后，在**Project**窗口，单击**entry > src > main > ets > pages**，打开**Index.ets**文件，将页面从RelativeContainer相对布局修改成Row/Column线性布局。
 
-   针对本文中使用文本/按钮来实现页面跳转/返回的应用场景，页面均使用[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)和[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)组件来组建布局。对于更多复杂元素对齐的场景，可选择使用[RelativeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-relativecontainer)组件进行布局。更多关于UI布局的选择和使用，可见[如何选择布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-overview#如何选择布局)。
+   针对本文中使用文本/按钮来实现页面跳转/返回的应用场景，页面均使用[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)和[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)组件来组建布局。对于更多复杂元素对齐的场景，可选择使用[RelativeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-relativecontainer)组件进行布局。更多关于UI布局的选择和使用，可见[如何选择布局](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-layout-development-overview#如何选择布局)。
 
    **Index.ets**文件的示例如下：
 
@@ -175,7 +175,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/star
 
 页面间的导航可以通过[页面路由router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)来实现。页面路由router根据页面url找到目标页面，从而实现跳转。
 
-如果需要实现更好的转场动效，推荐使用[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)。
+如果需要实现更好的转场动效，推荐使用[Navigation](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)。
 
 1. 第一个页面跳转到第二个页面。
 

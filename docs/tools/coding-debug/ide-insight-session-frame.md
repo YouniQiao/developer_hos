@@ -1,7 +1,7 @@
 ---
 title: "Frame分析"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-session-frame
+original_url: /docs/tools/coding-debug/ide-insight-session-frame
 format: md
 ---
 

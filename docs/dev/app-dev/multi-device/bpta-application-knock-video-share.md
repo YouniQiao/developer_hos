@@ -1,7 +1,7 @@
 ---
 title: "碰一碰链接分享"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-knock-video-share
+original_url: /docs/dev/app-dev/multi-device/bpta-application-knock-video-share
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 概述
 
-随着全场景智慧生活的不断演进，跨设备内容分享已成为用户的核心需求之一。传统分享方式普遍存在操作繁琐（需手动选择设备或应用）、依赖特定网络环境、传输效率低等问题，影响用户体验。HarmonyOS提供了[Share Kit（分享服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-kit-guide)，并结合[App Linking](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-introduction)技术，可实现内容的快速跨设备分享，直达目标应用，无需依赖第三方应用中转，提供高效、便捷、无缝的分享体验。
+随着全场景智慧生活的不断演进，跨设备内容分享已成为用户的核心需求之一。传统分享方式普遍存在操作繁琐（需手动选择设备或应用）、依赖特定网络环境、传输效率低等问题，影响用户体验。HarmonyOS提供了[Share Kit（分享服务）](/docs/dev/app-dev/application-services/share-kit-guide)，并结合[App Linking](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-introduction)技术，可实现内容的快速跨设备分享，直达目标应用，无需依赖第三方应用中转，提供高效、便捷、无缝的分享体验。
 
 本文以视频分享场景为例，详细介绍碰一碰快速分享视频的原理与开发步骤。
 
@@ -27,23 +27,23 @@ format: md
 
 ###场景二：目标应用未安装，已配置直达应用市场
 
-当对端未安装目标应用且开发者配置了[直达应用市场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag)功能时，将直接跳转到应用市场的应用详情页。安装完成后，首次打开应用将通过[延迟链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)功能自动跳转到视频播放页面，无需用户重新搜索或操作。
+当对端未安装目标应用且开发者配置了[直达应用市场](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag)功能时，将直接跳转到应用市场的应用详情页。安装完成后，首次打开应用将通过[延迟链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)功能自动跳转到视频播放页面，无需用户重新搜索或操作。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/12/v3/N61nGONLSP-jQHAIP9V_eA/zh-cn_image_0000002340377337.gif?HW-CC-KV=V1&HW-CC-Date=20260606T074207Z&HW-CC-Expire=86400&HW-CC-Sign=72175D8C1D0BE4C000A8E83FA529DCE85BC7DE4F786CA18474654CC5783B9CDD "点击放大")
 
 ###场景三：目标应用未安装，未配置直达应用市场（有Web页面）
 
-对端收到分享的视频链接之后，系统通过浏览器打开Web页面，用户可直接查看内容。在Web页面可提供“下载”按钮，引导用户安装应用获取更佳体验，安装后仍可通过[延迟链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)直达原内容。
+对端收到分享的视频链接之后，系统通过浏览器打开Web页面，用户可直接查看内容。在Web页面可提供“下载”按钮，引导用户安装应用获取更佳体验，安装后仍可通过[延迟链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)直达原内容。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/fa/v3/H6sXG8x0QQOv9aPislpMaA/zh-cn_image_0000002341667937.gif?HW-CC-KV=V1&HW-CC-Date=20260606T074207Z&HW-CC-Expire=86400&HW-CC-Sign=6573DCB469E5C74B4F8E4F11080973718E9CBB14A1756E53F48A3F0822F8799C "点击放大")
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/8a/v3/ZrFuOCwzTw-uVr_UlNXeQQ/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074207Z&HW-CC-Expire=86400&HW-CC-Sign=D9DC317ADAAC75B023C321C666B134F7E39C9F68DBEEDDE8EBBFECE13EF1C31F)
 
-对于不提供Web页面的应用，建议开启[直达应用市场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag)功能，避免因无法访问内容而造成体验断裂。
+对于不提供Web页面的应用，建议开启[直达应用市场](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag)功能，避免因无法访问内容而造成体验断裂。
 
 ## 实现原理
 
-碰一碰视频分享功能主要依赖于Share Kit与App Linking实现，确保用户能够通过简单的设备接触快速分享内容并直达应用。首先，应用需要集成App Linking来保证从分享到打开的端到端体验流畅无阻，具体可参考：[使用App Linking实现应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)。
+碰一碰视频分享功能主要依赖于Share Kit与App Linking实现，确保用户能够通过简单的设备接触快速分享内容并直达应用。首先，应用需要集成App Linking来保证从分享到打开的端到端体验流畅无阻，具体可参考：[使用App Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)。
 
 碰一碰视频分享后对端跳转目标应用的流程图如下，对端无论是否安装视频应用，用户都能获得连贯流畅的体验。
 
@@ -55,7 +55,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/e4/v3/DqSUXUoDSSGg_fW-pDHRYA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074207Z&HW-CC-Expire=86400&HW-CC-Sign=CD93CC949949B8EBFAE716EE77F6820C014D3646C570D8B4B7C2551E1A977198)
 
-碰一碰分享环境要求请参见[环境要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-overview#环境要求)。
+碰一碰分享环境要求请参见[环境要求](/docs/dev/app-dev/application-services/knock-share-between-phones-overview#环境要求)。
 
 ## 开发步骤
 
@@ -71,7 +71,7 @@ format: md
 
 为了通过碰一碰分享实现直达应用的功能，应用需集成App Linking，以确保端到端体验的完整性。当碰一碰分享成功，对端收到源端分享的App Linking链接后，系统将根据链接配置自动拉起对应应用或浏览器，从而继续播放视频。
 
-App Linking的配置和使用开发者可以参考[使用App Linking实现应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)。例如这里配置的App Linking的链接为：`https://www.example.com`，开发者需要在entry模块的module.json5进行如下配置：
+App Linking的配置和使用开发者可以参考[使用App Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)。例如这里配置的App Linking的链接为：`https://www.example.com`，开发者需要在entry模块的module.json5进行如下配置：
 
 ```
 {
@@ -285,7 +285,7 @@ struct VideoPlay {
 
 ###加载预览图和发起分享
 
-收到碰一碰事件分享回调后，调用[sharableTarget.share()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-harmony-share#share)方法发起分享，并设置分享卡片的信息，包括标题（title）、描述（description）和缩略图URI（thumbnailUri）。这些参数将用于生成特定的卡片模板，详情可参考[通过分享面板发起分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-mobilephone-app-share)。
+收到碰一碰事件分享回调后，调用[sharableTarget.share()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/share-harmony-share#share)方法发起分享，并设置分享卡片的信息，包括标题（title）、描述（description）和缩略图URI（thumbnailUri）。这些参数将用于生成特定的卡片模板，详情可参考[通过分享面板发起分享](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-mobilephone-app-share)。
 
 utd需要设置为utd.UniformDataType.HYPERLINK，表示分享的内容为链接；content设置为[配置App Linking服务](#section97421941152319)章节中配置的链接，链接中拼接视频的唯一标识符videoIndex。
 
@@ -529,11 +529,11 @@ export class ImageUtil {
 
 2. 配置直达应用市场与延迟链接
 
-   为提升用户未安装应用时的体验，可配置[直达应用市场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag)功能，引导用户下载安装应用。配置完成后，当对端收到源端分享的App Linking链接时，若设备未安装目标应用，系统将直接跳转至应用市场的应用详情页，支持一键下载安装。
+   为提升用户未安装应用时的体验，可配置[直达应用市场](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag)功能，引导用户下载安装应用。配置完成后，当对端收到源端分享的App Linking链接时，若设备未安装目标应用，系统将直接跳转至应用市场的应用详情页，支持一键下载安装。
 
    ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d4/v3/JH2WtREaRRCsufTWt4-V-w/zh-cn_image_0000002340497529.gif?HW-CC-KV=V1&HW-CC-Date=20260606T074207Z&HW-CC-Expire=86400&HW-CC-Sign=3A2F43B68E16CFBFF2C792E0E51BCC3B3E06D990CDE3574E4B89F7476B37A84B "点击放大")
 
-   同时，需要实现[延迟链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)功能，确保安装后首次启动可直达内容。安装完应用之后，开发者可以在用户首次打开应用时，使用延迟链接，直接跳转到视频播放页面，这一流程不仅优化了用户体验，还有助于提升链接的转化率。
+   同时，需要实现[延迟链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)功能，确保安装后首次启动可直达内容。安装完应用之后，开发者可以在用户首次打开应用时，使用延迟链接，直接跳转到视频播放页面，这一流程不仅优化了用户体验，还有助于提升链接的转化率。
 
    ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/65/v3/O81za6lCSyC-TetYsYW27w/zh-cn_image_0000002306538076.gif?HW-CC-KV=V1&HW-CC-Date=20260606T074207Z&HW-CC-Expire=86400&HW-CC-Sign=5F4C3F54345CE24BD0B38470CBB00C87D857AC3DEF0D657D5A61609D45D2BFD7 "点击放大")
 
@@ -570,7 +570,7 @@ export class ImageUtil {
 
 3. Web页面开发与部署
 
-   当应用未安装且未配置直达应用市场时，系统会打开浏览器加载视频播放Web页面来播放视频，保证应用在未安装的情况下也能体验播放视频功能，特别是与[延迟链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)结合使用，详细请参见[Web页面开发与部署（可选）](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-social-share#section157709544229)。
+   当应用未安装且未配置直达应用市场时，系统会打开浏览器加载视频播放Web页面来播放视频，保证应用在未安装的情况下也能体验播放视频功能，特别是与[延迟链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)结合使用，详细请参见[Web页面开发与部署（可选）](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-social-share#section157709544229)。
 
    ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/67/v3/RJzLsZ8IQ4K5J1b4LdxE-g/zh-cn_image_0000002306378360.png?HW-CC-KV=V1&HW-CC-Date=20260606T074207Z&HW-CC-Expire=86400&HW-CC-Sign=869E9D3AAA92519CB910036FE636A24B7565B96BE3DDF9547EBFAB03CBC464BC "点击放大")
 

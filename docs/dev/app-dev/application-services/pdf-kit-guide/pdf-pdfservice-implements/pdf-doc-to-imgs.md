@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "转换PDF文档为图片"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-doc-to-imgs
+original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-doc-to-imgs
 format: md
 ---
 
 
-* **[转换指定页面或指定区域为图片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-get-img)**
-* **[转换整个PDF文档为图片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-convert-img)**
+* **[转换指定页面或指定区域为图片](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-doc-to-imgs/pdf-get-img)**
+* **[转换整个PDF文档为图片](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-doc-to-imgs/pdf-convert-img)**

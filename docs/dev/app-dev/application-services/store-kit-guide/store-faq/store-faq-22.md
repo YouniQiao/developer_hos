@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "数字商品服务中订单订购状态有哪些？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-22
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-22
 format: md
 ---
 

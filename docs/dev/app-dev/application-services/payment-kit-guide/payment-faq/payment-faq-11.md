@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "收银台报错“服务暂不可用，请稍后重试”？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-11
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-11
 format: md
 ---
 

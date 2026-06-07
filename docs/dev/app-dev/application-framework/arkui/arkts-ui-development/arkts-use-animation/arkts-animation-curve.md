@@ -1,10 +1,10 @@
 ---
 title: "动画曲线"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-curve
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-curve
 format: md
 ---
 
 
-* **[动画曲线概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-curve-overview)**
-* **[传统曲线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-traditional-curve)**
-* **[弹簧曲线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-spring-curve)**
+* **[动画曲线概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-curve/arkts-curve-overview)**
+* **[传统曲线](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-curve/arkts-traditional-curve)**
+* **[弹簧曲线](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-curve/arkts-spring-curve)**

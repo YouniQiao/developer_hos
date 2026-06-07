@@ -1,6 +1,6 @@
 ---
 title: "WebView如何设置mixcontent策略，用以解决http与https混合加载的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-67
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-67
 format: md
 ---
 

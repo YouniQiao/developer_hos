@@ -1,7 +1,7 @@
 ---
 title: "查看内存信息"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-debug-native-memory-view
+original_url: /docs/tools/coding-debug/ide-debug-native-memory-view
 format: md
 ---
 

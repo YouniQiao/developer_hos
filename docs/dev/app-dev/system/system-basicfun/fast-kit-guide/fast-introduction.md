@@ -1,6 +1,6 @@
 ---
 title: "FAST Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-introduction
+original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-introduction
 format: md
 ---
 
@@ -9,9 +9,9 @@ FAST Kit（算法加速服务）以理论计算机为基础、面向开发者提
 
 当前FAST Kit包括以下功能域：
 
-* 高阶数据结构（Advanced Data Structure）加速功能域旨在融合理论计算机科学中具有理论保证的高级数据结构与现代硬件特性，当前提供[线段表数据结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-segment-map)，[并发哈希表数据结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-concurrent-hashmap)。
-* 规划求解（Solver）加速功能域旨在将理论计算机科学与运筹学中的优化求解能力运用到鸿蒙生态中的各类场景，当前提供[矩形划分求解器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-rect-partition)。
-* 数字信号处理（Digital Signal Processing）加速功能域旨在提供高性能的向量运算及二阶IIR滤波器能力，当前提供[向量运算](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-dsp-vector-calculation)，[二阶IIR滤波](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-dsp-iir-filter)。
+* 高阶数据结构（Advanced Data Structure）加速功能域旨在融合理论计算机科学中具有理论保证的高级数据结构与现代硬件特性，当前提供[线段表数据结构](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-segment-map)，[并发哈希表数据结构](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-concurrent-hashmap)。
+* 规划求解（Solver）加速功能域旨在将理论计算机科学与运筹学中的优化求解能力运用到鸿蒙生态中的各类场景，当前提供[矩形划分求解器](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-rect-partition)。
+* 数字信号处理（Digital Signal Processing）加速功能域旨在提供高性能的向量运算及二阶IIR滤波器能力，当前提供[向量运算](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-dsp-vector-calculation)，[二阶IIR滤波](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-dsp-iir-filter)。
 
 ## 场景介绍
 

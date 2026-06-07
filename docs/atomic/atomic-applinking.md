@@ -1,6 +1,6 @@
 ---
 title: "使用元服务链接跳转元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking
+original_url: /docs/dev/atomic-dev/atomic-linking/atomic-applinking
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 ## 前提条件
 
 * 您的账号是[企业开发者](https://developer.huawei.com/consumer/cn/doc/start/edrna-0000001062678489)账号。
-* 您已在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)（简称AGC）上，[创建项目](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048)且[创建元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-atomic-service-0000002247795706)。
+* 您已在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)（简称AGC）上，[创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)且[创建元服务](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-atomic-service-0000002247795706)。
 * 您已在AGC[开通App Linking服务](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-applinking-enable-0000001058870473)。
 
 ## 接入元服务链接开发指导
@@ -41,7 +41,7 @@ format: md
 
    ![](./img/d69f763f.png)
 
-   如果您尚未开通App Linking服务，将进入App Linking介绍页面，请点击“立即使用”并[设置数据处理位置](https://developer.huawei.com/consumer/cn/doc/app/agc-help-data-location-0000002277923065#section154810363471)。
+   如果您尚未开通App Linking服务，将进入App Linking介绍页面，请点击“立即使用”并[设置数据处理位置](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-data-location-0000002277923065#section154810363471)。
 
    ![](./img/eacfc8b8.png)
 4. 创建元服务链接，点击“保存”或者“发布”。
@@ -55,7 +55,7 @@ format: md
    | 链接URL预览 | 预览完整的元服务链接，支持复制。  说明：  （可选）开发者在使用元服务链接时，支持在链接URL后拼接动态自定义参数，用于精确定位到元服务指定页面。无需在AGC平台进行额外配置，直接拼接**?**加**key=value**键值对，多个键值对之间以“&”分隔。  链接示例：https://hoas.drcn.agconnect.link/9P7g**?****key1=value1&key2=value2**  具体请参见[使用动态自定义参数跳转到指定的页面](#section1620481746)。 |
    | 元服务 | 需要配置链接的元服务的名称，支持复制。 |
    | （可选）自定义参数 | 配置静态自定义参数，用于精确定位到元服务指定页面。需要按key=value的键值对形式输入，多个键值对之间以“&”分隔。例如：key1=value1&key2=value2&key3=value3...  具体请参见[使用静态自定义参数跳转到指定的页面](#section125451919568)。 |
-   | 是否关联二维码 | 是否将元服务与普通链接二维码进行关联。  本章节仅介绍如何使用元服务链接进行跳转，请选择“不关联”。  说明：  如果希望用户扫描普通链接二维码后跳转到元服务，请选择“关联”并参见[使用普通链接二维码跳转元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-qrlinking)。 |
+   | 是否关联二维码 | 是否将元服务与普通链接二维码进行关联。  本章节仅介绍如何使用元服务链接进行跳转，请选择“不关联”。  说明：  如果希望用户扫描普通链接二维码后跳转到元服务，请选择“关联”并参见[使用普通链接二维码跳转元服务](/docs/dev/atomic-dev/atomic-linking/atomic-qrlinking)。 |
    | 链接有效期 | 链接有效期生效时间段需在1~90天范围内；结束时间必须晚于当前时间。 |
 
 * 点击“保存”后，元服务链接为“草稿态”，您可以[查看元服务链接](#section1622082711157)、[修改草稿态元服务链接](#section1851363511152)或者[删除元服务链接](#section325544141614)。

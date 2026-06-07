@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "商家券场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-promotion-service-merchant-coupons
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-merchant-coupons
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 ## 接入前置条件
 
 1. 商家有营销系统以及具备开发能力且存在应用/元服务。
-2. 商家在华为支付完成[商户入网](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-merc-regist-apply)。
+2. 商家在华为支付完成[商户入网](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-merc-regist-apply)。
 
 ## 业务模式
 
@@ -52,7 +52,7 @@ format: md
 | **场景** | 说明 |
 | --- | --- |
 | 商家自有流量 | 支持在应用/元服务中派发商家券。 |
-| 平台流量 | 支持在日日有礼、搜索、品牌专区、支付成功页等场地中派发商家券。  **说明：** 对于品牌专区支持平台流量，需要开发者进行[配置](https://developer.huawei.com/consumer/cn/doc/service/intents-kit315-0000002505659156)。 |
+| 平台流量 | 支持在日日有礼、搜索、品牌专区、支付成功页等场地中派发商家券。  **说明：** 对于品牌专区支持平台流量，需要开发者进行[配置](/docs/distribute/service-dist/smart-assistant-today/intents-kit313-0000002505499078/intents-kit315-0000002505659156)。 |
 
 ### 支持的核销方式
 
@@ -66,8 +66,8 @@ format: md
 
 | 步骤 | 说明 |
 | --- | --- |
-| [商户入网](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-merc-regist-apply) | 在准备开发前，开发者需要在华为支付商户平台入网。商户入网成功后，需要为[商户号绑定AppID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-binding-appid-to-merc)。 |
-| [准备证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config) | 商户成功登录商户平台后，须在证书管理中上传商户证书，上传完商户证书后商户方可进行交易，证书必须与商户号相匹配且是有效的。 |
+| [商户入网](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-merc-regist-apply) | 在准备开发前，开发者需要在华为支付商户平台入网。商户入网成功后，需要为[商户号绑定AppID](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-binding-appid-to-merc)。 |
+| [准备证书](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config) | 商户成功登录商户平台后，须在证书管理中上传商户证书，上传完商户证书后商户方可进行交易，证书必须与商户号相匹配且是有效的。 |
 | 商家券接入 | 根据[开发步骤](#开发步骤)完成商家券接入。 |
 
 ## 业务流程
@@ -180,7 +180,7 @@ format: md
 
 ![](./img/edb0317d.png)
 
-* 以下开发步骤仅涉及服务端开发，业务接口请求示例代码可参考[业务接口请求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-server-connect#业务接口请求)。
+* 以下开发步骤仅涉及服务端开发，业务接口请求示例代码可参考[业务接口请求](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-server-connect#业务接口请求)。
 * [发券事件回调通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-api-common-promotion-service-merc-coup-ucoup-callback-distribute)回调地址是开发者调用[创建商家券批次](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-api-common-promotion-service-merc-coup-coupbatch-create)接口时通过notifyConfig字段设置的回调地址，接收到回调通知后商户服务端可先对返回的支付信息进行[SM2验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-rest-overview#验签规则)处理。
 
 ### 华为随机Code发放场景
@@ -219,7 +219,7 @@ format: md
 ## 测试和上线
 
 1. 开发者收集好测试人员华为账号对应的手机号。
-2. [联系华为运营人员](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-service-support)添加允许清单手机号进行测试并提供测试结果录屏，录屏内容包括商家券领取、展示以及核销完整流程。
+2. [联系华为运营人员](/docs/dev/app-dev/application-services/payment-kit-guide/payment-service-support)添加允许清单手机号进行测试并提供测试结果录屏，录屏内容包括商家券领取、展示以及核销完整流程。
 3. 华为运营人员审核测试录屏，无问题后配置全网上线。
 
 ## 延伸和拓展

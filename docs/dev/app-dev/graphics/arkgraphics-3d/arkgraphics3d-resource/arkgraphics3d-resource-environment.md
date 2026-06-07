@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "创建并使用环境资源"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-resource-environment
+original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-resource-environment
 format: md
 ---
 

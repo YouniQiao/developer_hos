@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AppInfo时，如何获取应用身份标识"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-9
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-9
 format: md
 ---
 

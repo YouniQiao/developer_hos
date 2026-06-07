@@ -1,6 +1,6 @@
 ---
 title: "三方平台"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-third-party-platform
+original_url: /docs/dev/atomic-dev/ascf/apis/apis-third-party-platform
 format: md
 ---
 

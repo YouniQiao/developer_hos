@@ -1,6 +1,6 @@
 ---
 title: "如何使用服务端下发的RSA公钥（字符串）对明文数据进行加密"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-3
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-3
 format: md
 ---
 
@@ -41,4 +41,4 @@ export async function encryptRSA(message: string) {
 
 **参考链接**
 
-[使用RSA非对称密钥（PKCS1模式）加解密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-asym-encrypt-decrypt-pkcs1)
+[使用RSA非对称密钥（PKCS1模式）加解密](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-rsa-asym-encrypt-decrypt-pkcs1)

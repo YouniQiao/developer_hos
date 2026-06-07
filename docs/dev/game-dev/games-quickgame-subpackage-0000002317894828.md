@@ -1,6 +1,6 @@
 ---
 title: "分包加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-subpackage-0000002317894828
+original_url: /docs/dev/game-dev/games-quickgame-subpackage-0000002317894828
 format: md
 ---
 
@@ -106,16 +106,16 @@ task.onprogress=this.mycallback
 建议上架前在最新版本的快游戏开发者工具中运行/调试分包后的快游戏。
 
 1. 将导出的RPK文件后缀改为zip，并进行解压缩。
-2. 在快游戏开发者工具中打开项目后运行调试分包场景，运行调试的详细流程请参见[调试](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-debug-0000002351933789)。
+2. 在快游戏开发者工具中打开项目后运行调试分包场景，运行调试的详细流程请参见[调试](/docs/dev/game-dev/games-quickgame-tool-debug-0000002351933789)。
 
 ## 相关链接
 
 ### FAQ
 
-[快游戏分包加载时，偶现分包加载不成功，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-others-0000002425293774#section171009538613)
+[快游戏分包加载时，偶现分包加载不成功，如何处理？](/docs/dev/game-dev/games-quickgame-faq-others-0000002425293774#section171009538613)
 
 ### 案例
 
-* [华为快游戏分包报错，提示“run root entry script error”或“can not find root script”](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-case-0000002318064148#section3577105910514)
-* [华为快游戏分包无进度条回调](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-case-0000002318064148#section183611211610)
-* [快游戏中使用分包无法加载资源](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-case-0000002318064148#section099995492111)
+* [华为快游戏分包报错，提示“run root entry script error”或“can not find root script”](/docs/dev/game-dev/games-quickgame-case-0000002318064148#section3577105910514)
+* [华为快游戏分包无进度条回调](/docs/dev/game-dev/games-quickgame-case-0000002318064148#section183611211610)
+* [快游戏中使用分包无法加载资源](/docs/dev/game-dev/games-quickgame-case-0000002318064148#section099995492111)

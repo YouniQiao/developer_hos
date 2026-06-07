@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "实名信息验证/授权场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-verification
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-verification
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 | 步骤 | 说明 |
 | --- | --- |
-| 开发准备 | 请先完成开发准备后再进行下面的开发接入。  - [端侧应用配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-app-identity-info)  - [用户信息验证授权接入准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-preparations) |
+| 开发准备 | 请先完成开发准备后再进行下面的开发接入。  - [端侧应用配置](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-app-identity-info)  - [用户信息验证授权接入准备](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-real-name-preparations) |
 | 接入实名信息验证/授权 | 根据实名信息验证/授权场景[开发步骤](#开发步骤)完成接入。 |
 
 ## 业务流程
@@ -58,7 +58,7 @@ format: md
 5. Payment Kit客户端同步返回**实名信息授权ID**给开发者客户端。
 6. 开发者客户端使用实名信息授权ID请求开发者服务端查询实名信息。
 7. 开发者服务端请求Payment Kit服务端[实名信息授权结果查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-api-common-auth-result)接口查询用户实名信息授权结果及用户信息。
-8. Payment Kit服务端会使用[开发者上传的公钥证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-preparations#上传开发者公钥及下载华为公钥)进行隐私信息加密后返回给开发者服务端。
+8. Payment Kit服务端会使用[开发者上传的公钥证书](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-real-name-preparations#上传开发者公钥及下载华为公钥)进行隐私信息加密后返回给开发者服务端。
 9. 开发者服务端使用配对的私钥证书进行解密后获取到用户实名信息。
 10. 开发者服务端将用户实名信息返回给开发者客户端，开发者客户端根据业务需要，进行下一步处理。
 
@@ -145,7 +145,7 @@ format: md
 
    ![](./img/64dc66ad.png)
 
-   人脸核身实人验证场景中，credentialIdNo、realName入参需要使用[SM2加密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-preparations#sm2加密示例代码参考)。
+   人脸核身实人验证场景中，credentialIdNo、realName入参需要使用[SM2加密](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-real-name-preparations#sm2加密示例代码参考)。
 
    ```
    public String getPreVerifyId(String clientId, String clientSecret, String credentialIdNo, String realName, String openId)

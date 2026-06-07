@@ -1,6 +1,6 @@
 ---
 title: "创建自定义组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ![](./img/b8c129dc.png)
 
-从API version 24开始，可通过在应用工程的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置[metadata标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#metadata标签)来使能自定义组件支持跨[Ability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-ability)迁移。具体配置方式为：新增[name](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#metadata标签)为"enableCustomComponentCrossAbility"，[value](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#metadata标签)为"true"。因为自定义组件提供的是UI能力，所以这里的Ability也特指[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)。具体示例参考[自定义组件支持跨Ability迁移](#自定义组件支持跨ability迁移)。
+从API version 24开始，可通过在应用工程的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中配置[metadata标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#metadata标签)来使能自定义组件支持跨[Ability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-ability)迁移。具体配置方式为：新增[name](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#metadata标签)为"enableCustomComponentCrossAbility"，[value](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#metadata标签)为"true"。因为自定义组件提供的是UI能力，所以这里的Ability也特指[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)。具体示例参考[自定义组件支持跨Ability迁移](#自定义组件支持跨ability迁移)。
 
 ## 自定义组件的基本用法
 
@@ -89,7 +89,7 @@ struct ParentComponent {
 
 ### @Entry
 
-@Entry装饰的自定义组件将作为[UI页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-router-to-navigation#页面结构)的入口。在单个UI页面中，仅允许存在一个由@Entry装饰的自定义组件作为页面的入口。
+@Entry装饰的自定义组件将作为[UI页面](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-router-to-navigation#页面结构)的入口。在单个UI页面中，仅允许存在一个由@Entry装饰的自定义组件作为页面的入口。
 
 ![](./img/a38af0e2.png)
 
@@ -118,8 +118,8 @@ struct MyComponent {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | routeName | string | 否 | 是 | 表示作为命名路由页面的名字。 |
-| storage | [LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage) | 否 | 是 | 页面级的UI状态存储。当未传入时，框架会创建一个新的LocalStorage实例作为默认值。 |
-| useSharedStorage12+ | boolean | 否 | 是 | 是否使用[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)传入的LocalStorage实例对象。默认值false。true：使用共享的[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例对象。false：不使用共享的[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)实例对象。 |
+| storage | [LocalStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage) | 否 | 是 | 页面级的UI状态存储。当未传入时，框架会创建一个新的LocalStorage实例作为默认值。 |
+| useSharedStorage12+ | boolean | 否 | 是 | 是否使用[loadContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#loadcontent9)传入的LocalStorage实例对象。默认值false。true：使用共享的[LocalStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage)实例对象。false：不使用共享的[LocalStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage)实例对象。 |
 
 ![](./img/5d9f2479.png)
 
@@ -139,7 +139,7 @@ struct MyComponent {
 
 ### @Component
 
-@Component装饰的struct为V1自定义组件，可以使用[状态管理V1版本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview#状态管理v1)装饰器的能力。
+@Component装饰的struct为V1自定义组件，可以使用[状态管理V1版本](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview#状态管理v1)装饰器的能力。
 
 ![](./img/2b051c37.png)
 
@@ -162,7 +162,7 @@ struct MyComponent {
 
 ### @ComponentV2
 
-@ComponentV2装饰的struct为V2自定义组件，可以使用[状态管理V2版本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview#状态管理v2)装饰器的能力。
+@ComponentV2装饰的struct为V2自定义组件，可以使用[状态管理V2版本](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview#状态管理v2)装饰器的能力。
 
 ![](./img/0cb4624d.png)
 
@@ -174,10 +174,10 @@ struct MyComponent {
 
 和[@Component装饰器](#component)一样，@ComponentV2装饰器用于装饰自定义组件：
 
-* 在@ComponentV2装饰的自定义组件中，开发者仅可以使用全新的状态变量装饰器，包括[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)、[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)、[@Once](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-once)、[@Event](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-event)、[@Provider](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer)、[@Consumer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer)等。
-* @ComponentV2装饰的自定义组件暂不支持[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)等现有自定义组件的能力。
+* 在@ComponentV2装饰的自定义组件中，开发者仅可以使用全新的状态变量装饰器，包括[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)、[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)、[@Once](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-once)、[@Event](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-event)、[@Provider](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer)、[@Consumer](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer)等。
+* @ComponentV2装饰的自定义组件暂不支持[LocalStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage)等现有自定义组件的能力。
 * 无法同时使用@ComponentV2与@Component装饰同一个struct结构。
-* @ComponentV2支持一个可选的[ComponentOptions参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-parameter#componentoptions)，来实现[组件冻结功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-freezev2)。
+* @ComponentV2支持一个可选的[ComponentOptions参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-parameter#componentoptions)，来实现[组件冻结功能](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-freeze/arkts-custom-components-freezev2)。
 * 一个简单的@ComponentV2装饰的自定义组件应具有以下部分：
 
   ```
@@ -232,7 +232,7 @@ struct MyComponent {
 
 ### @Reusable
 
-@Reusable装饰V1自定义组件，使得该自定义组件具有被复用的能力。详细请参考：[@Reusable装饰器：组件复用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#使用场景)。
+@Reusable装饰V1自定义组件，使得该自定义组件具有被复用的能力。详细请参考：[@Reusable装饰器：组件复用](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#使用场景)。
 
 ![](./img/89f35f2e.png)
 
@@ -252,7 +252,7 @@ struct MyComponent {
 
 ### @ReusableV2
 
-@ReusableV2装饰V2自定义组件，使得该自定义组件具有被复用的能力。详细请参考：[@ReusableV2装饰器：V2组件复用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2#使用场景)。
+@ReusableV2装饰V2自定义组件，使得该自定义组件具有被复用的能力。详细请参考：[@ReusableV2装饰器：V2组件复用](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-new-reusablev2#使用场景)。
 
 ![](./img/162cfc23.png)
 
@@ -275,7 +275,7 @@ struct MyComponent {
 自定义组件可以包含成员变量，成员变量具有以下约束：
 
 * 自定义组件的成员变量仅能从组件内部访问，且不建议声明为静态变量。
-* 自定义组件的成员变量本地初始化有些是可选的，有些是必选的。具体是否需要本地初始化，是否需要从父组件通过参数传递初始化子组件的成员变量，请参考[状态管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview)。
+* 自定义组件的成员变量本地初始化有些是可选的，有些是必选的。具体是否需要本地初始化，是否需要从父组件通过参数传递初始化子组件的成员变量，请参考[状态管理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview)。
 
 ## 自定义组件的参数规定
 
@@ -459,7 +459,7 @@ struct Son {
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/createCustomComponents/entry/src/main/ets/component/BuilderMethod.ets#L16-L38" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：BuilderMethod.ets</a></div>
 
-* 不允许使用switch语法，当需要使用条件判断时，请使用[if](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse)。示例如下。
+* 不允许使用switch语法，当需要使用条件判断时，请使用[if](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse)。示例如下。
 
   ```
   build() {
@@ -565,7 +565,7 @@ struct Son {
 
   build函数中更改应用状态的行为可能比上面的示例更加隐蔽，例如：
 
-  + 在@Builder，[@Extend](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend)或[@Styles](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-style)方法内改变状态变量 。
+  + 在@Builder，[@Extend](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-extend)或[@Styles](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-style)方法内改变状态变量 。
   + 在计算参数时调用函数中改变应用状态变量，例如 Text('$\{this.calcLabel()\}')。
   + 对当前数组做出修改，sort()改变了数组this.arr，随后的filter方法会返回一个新的数组。
 
@@ -586,7 +586,7 @@ struct Son {
       });
     ```
 
-  该问题可以参考[常见问题：build函数中更改状态变量导致appfreeze](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq-inner-component#build函数中更改状态变量导致appfreeze)。
+  该问题可以参考[常见问题：build函数中更改状态变量导致appfreeze](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq/arkts-state-management-faq-inner-component#build函数中更改状态变量导致appfreeze)。
 
 ## 自定义组件通用样式
 
@@ -927,4 +927,4 @@ struct ExtraIndex {
 
 ### @Component与@ComponentV2混用
 
-在将@Component装饰的自定义组件与@ComponentV2装饰的自定义组件混合使用时，可参考[状态管理V1和V2混用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/v1v2-mixing)。
+在将@Component装饰的自定义组件与@ComponentV2装饰的自定义组件混合使用时，可参考[状态管理V1和V2混用场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/v1v2-mixing)。

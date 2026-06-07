@@ -1,7 +1,7 @@
 ---
 title: "关键词状态修改"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-keywords3-0000001338413333
+original_url: /docs/monetize/promotion/marketing-api-keywords3-0000001338413333
 format: md
 ---
 
@@ -23,8 +23,8 @@ format: md
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | keyword\_ids | long[] | 是 | 关键词id列表，最多100个。 |
-  | keyword\_type | string | 是 | 关键词类型，详见[关键词类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section27631713113012)。 |
-  | status | string | 是 | 关键词操作状态，详见[关键词状态操作类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section181642020203020)。 |
+  | keyword\_type | string | 是 | 关键词类型，详见[关键词类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section27631713113012)。 |
+  | status | string | 是 | 关键词操作状态，详见[关键词状态操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section181642020203020)。 |
 
   - <strong>请求示例</strong>
 

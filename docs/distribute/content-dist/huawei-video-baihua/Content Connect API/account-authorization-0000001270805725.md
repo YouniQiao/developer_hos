@@ -1,7 +1,7 @@
 ---
 title: "帐号授权"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/account-authorization-0000001270805725
+original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/account-authorization-0000001270805725
 format: md
 ---
 

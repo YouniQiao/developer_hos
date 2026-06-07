@@ -1,6 +1,6 @@
 ---
 title: "switch"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-switch
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-switch
 format: md
 ---
 

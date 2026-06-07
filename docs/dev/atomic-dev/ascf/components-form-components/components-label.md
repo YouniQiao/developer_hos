@@ -1,6 +1,6 @@
 ---
 title: "label"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-label
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-label
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
-| for | string | - | 否 | 绑定控件的id。  - 使用for属性找到对应的id，或者将控件放在该标签下，当点击时，就会触发对应的控件。  - for优先级高于内部控件，内部有多个控件的时候默认触发第一个控件。  - 目前可以绑定的控件有：[button](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-button)、[checkbox](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-checkbox)、[radio](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-radio)、[switch](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-switch)。  传递非法值时依据实际效果而定。 |
+| for | string | - | 否 | 绑定控件的id。  - 使用for属性找到对应的id，或者将控件放在该标签下，当点击时，就会触发对应的控件。  - for优先级高于内部控件，内部有多个控件的时候默认触发第一个控件。  - 目前可以绑定的控件有：[button](/docs/dev/atomic-dev/ascf/components-form-components/components-button)、[checkbox](/docs/dev/atomic-dev/ascf/components-form-components/components-checkbox)、[radio](/docs/dev/atomic-dev/ascf/components-form-components/components-radio)、[switch](/docs/dev/atomic-dev/ascf/components-form-components/components-switch)。  传递非法值时依据实际效果而定。 |
 
 ## 示例
 

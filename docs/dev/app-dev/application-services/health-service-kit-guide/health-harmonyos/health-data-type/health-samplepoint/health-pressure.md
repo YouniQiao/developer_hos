@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "压力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-pressure
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-pressure
 format: md
 ---
 

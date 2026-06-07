@@ -1,15 +1,15 @@
 ---
 title: "构建表单组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-form-components
+original_url: /docs/dev/app-dev/application-framework/ndk-build-form-components
 format: md
 ---
 
 
-ArkUI NDK提供了多种表单组件，包括[按钮（Button）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-button)、滑动条[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)、[切换按钮（Toggle）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-switch)、复选框[Checkbox](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-checkbox)、复选框组[CheckboxGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-checkboxgroup)和[单选框（Radio）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-radio-button)。这些组件是用户交互的基础元素，可以用于构建丰富的表单界面。
+ArkUI NDK提供了多种表单组件，包括[按钮（Button）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-button)、滑动条[Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider)、[切换按钮（Toggle）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-switch)、复选框[Checkbox](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-checkbox)、复选框组[CheckboxGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-checkboxgroup)和[单选框（Radio）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-radio-button)。这些组件是用户交互的基础元素，可以用于构建丰富的表单界面。
 
 表单组件的相关接口定义在[native\_node.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h)中。
 
-本文提供表单组件NDK开发指导，查询之前需要先接入ArkTS页面，具体请参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)。
+本文提供表单组件NDK开发指导，查询之前需要先接入ArkTS页面，具体请参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)。
 
 ## Button按钮组件
 

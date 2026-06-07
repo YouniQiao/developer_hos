@@ -1,13 +1,13 @@
 ---
 title: "UIAbility组件生命周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-lifecycle
 format: md
 ---
 
 
 ## 概述
 
-当用户在执行应用启动、应用前后台切换、应用退出等操作时，系统会触发相关应用组件的生命周期回调。其中，UIAbility组件的核心生命周期回调包括[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)、[onForeground](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onforeground)、[onBackground](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onbackground)、[onDestroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#ondestroy)。作为一种包含UI的应用组件，UIAbility的生命周期不可避免地与[WindowStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage)的生命周期存在关联关系。
+当用户在执行应用启动、应用前后台切换、应用退出等操作时，系统会触发相关应用组件的生命周期回调。其中，UIAbility组件的核心生命周期回调包括[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)、[onForeground](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onforeground)、[onBackground](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onbackground)、[onDestroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#ondestroy)。作为一种包含UI的应用组件，UIAbility的生命周期不可避免地与[WindowStage](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage)的生命周期存在关联关系。
 
 UIAbility的生命周期示意图如下所示。
 
@@ -32,7 +32,7 @@ UIAbility的生命周期示意图如下所示。
 ![](./img/58e5f3b9.png)
 
 * 生命周期回调是在应用主线程执行，为了确保应用性能，建议在生命周期回调中，仅执行必要的轻量级操作。对于耗时任务，推荐采用异步处理或交由子线程执行，避免阻塞主线程。
-* 如果需要感知UIAbility生命周期变化，开发者可以使用[ApplicationContext注册接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextonabilitylifecycle)监听UIAbility生命周期变化。详见[监听UIAbility生命周期变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#监听uiability生命周期变化)。
+* 如果需要感知UIAbility生命周期变化，开发者可以使用[ApplicationContext注册接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextonabilitylifecycle)监听UIAbility生命周期变化。详见[监听UIAbility生命周期变化](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#监听uiability生命周期变化)。
 
 ### onCreate()
 
@@ -57,14 +57,14 @@ export default class EntryAbility extends UIAbility {
 
 ### onWindowStageCreate()
 
-[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)实例创建完成之后，在进入前台之前，系统会创建一个[WindowStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage)。WindowStage创建完成后会进入[onWindowStageCreate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagecreate)回调，开发者可以在该回调中进行UI加载、WindowStage的事件订阅。
+[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)实例创建完成之后，在进入前台之前，系统会创建一个[WindowStage](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage)。WindowStage创建完成后会进入[onWindowStageCreate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagecreate)回调，开发者可以在该回调中进行UI加载、WindowStage的事件订阅。
 
 在onWindowStageCreate()回调中通过[loadContent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#loadcontent9)方法设置应用要加载的页面，并根据需要调用[on('windowStageEvent')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#onwindowstageevent9)方法订阅[WindowStage的事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowstageeventtype9)（获焦/失焦、切到前台/切到后台、前台可交互/前台不可交互）。
 
 ![](./img/f38d638d.png)
 
-* 不同开发场景下[WindowStage事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowstageeventtype9)的时序可能存在差异，WindowStage的相关使用请参见[窗口开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage)。
-* 对于不同类型的产品，当应用主窗口从前台进入后台时，UIAbility生命周期的变化也会存在差异。详见[不同设备生命周期的差异化行为](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-overview#不同设备生命周期的差异化行为)。
+* 不同开发场景下[WindowStage事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#windowstageeventtype9)的时序可能存在差异，WindowStage的相关使用请参见[窗口开发指导](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage)。
+* 对于不同类型的产品，当应用主窗口从前台进入后台时，UIAbility生命周期的变化也会存在差异。详见[不同设备生命周期的差异化行为](/docs/dev/app-dev/application-framework/arkui/window-manager/window-overview#不同设备生命周期的差异化行为)。
 
 ```
 import { UIAbility } from '@kit.AbilityKit';

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "DevEco怎么导出项目的依赖树"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-61
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-61
 ---
 
 

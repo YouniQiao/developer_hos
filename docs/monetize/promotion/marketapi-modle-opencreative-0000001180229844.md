@@ -1,7 +1,7 @@
 ---
 title: "OpenCreative"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-opencreative-0000001180229844
+original_url: /docs/monetize/promotion/marketapi-modle-opencreative-0000001180229844
 format: md
 ---
 

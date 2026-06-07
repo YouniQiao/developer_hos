@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "基本准备工作"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-basic-preparation
+original_url: /docs/dev/app-dev/application-services/cloudfoundation-basic-preparation
 format: md
 ---
 

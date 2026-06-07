@@ -1,6 +1,6 @@
 ---
 title: "应用冻屏事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events/hiappevent-watcher-freeze-events
 format: md
 ---
 
@@ -11,16 +11,16 @@ format: md
 
 本文面向开发者介绍AppFreeze（应用冻屏）检测原理，以及各字段的含义和规格。如需了解如何使用HiAppEvent接口订阅应用冻屏事件，请参考以下文档。目前提供ArkTS和C/C++两种接口，按需选择。
 
-* [订阅应用冻屏事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events-arkts)。
-* [订阅应用冻屏事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events-ndk)。
+* [订阅应用冻屏事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events/hiappevent-watcher-freeze-events-arkts)。
+* [订阅应用冻屏事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events/hiappevent-watcher-freeze-events-ndk)。
 
 ![](./img/e7d86402.png)
 
-应用冻屏事件支持在[应用分身](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)场景下使用 HiAppEvent 进行订阅，支持在元服务场景下使用HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
+应用冻屏事件支持在[应用分身](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)场景下使用 HiAppEvent 进行订阅，支持在元服务场景下使用HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
 
 ## 检测原理
 
-详见[AppFreeze（应用冻屏）检测原理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#检测原理)。
+详见[AppFreeze（应用冻屏）检测原理](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#检测原理)。
 
 ## 页面切换日志规格自定义参数设置
 
@@ -80,15 +80,15 @@ hiAppEvent.configEventPolicy(policy).then(() => {
 | exception | object | 异常信息，详见exception属性。 |
 | hilog | string[] | 日志信息。当生成应用无响应事件日志时，从hilog缓冲区中获取最多100行故障进程日志信息。 |
 | event\_handler | string[] | 主线程未处理消息。 |
-| event\_handler\_size\_3s | string | [THREAD\_BLOCK\_6S事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#thread_block_6s-应用主线程卡死超时)（仅在应用无响应事件生效）中3s时任务栈中任务数量。 |
-| event\_handler\_size\_6s | string | [THREAD\_BLOCK\_6S事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#thread_block_6s-应用主线程卡死超时)（仅在应用无响应事件生效）中6s时任务栈中任务数量。 |
+| event\_handler\_size\_3s | string | [THREAD\_BLOCK\_6S事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#thread_block_6s-应用主线程卡死超时)（仅在应用无响应事件生效）中3s时任务栈中任务数量。 |
+| event\_handler\_size\_6s | string | [THREAD\_BLOCK\_6S事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#thread_block_6s-应用主线程卡死超时)（仅在应用无响应事件生效）中6s时任务栈中任务数量。 |
 | peer\_binder | string[] | binder调用信息。 |
 | threads | object[] | 全量线程调用栈，详见thread属性。 |
 | memory | object | 内存信息，详见memory属性。 |
 | external\_log12+ | string[] | 故障日志文件路径。**为避免目录空间超限（参考log\_over\_limit），导致新生成的日志文件写入失败，日志文件处理完后请及时删除。** |
 | log\_over\_limit12+ | boolean | 生成的故障日志文件与已存在的日志文件总大小是否超过5M上限。true表示超过上限，日志写入失败；false表示未超过上限。 |
 | process\_life\_time | number | 故障进程存活时间。  **说明**：从API 22开始支持。 |
-| page\_switch\_log | string | 页面切换日志路径，日志介绍详见[页面切换日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageswitch-log)。  **说明**：从API version 24开始支持。 |
+| page\_switch\_log | string | 页面切换日志路径，日志介绍详见[页面切换日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection/pageswitch-log)。  **说明**：从API version 24开始支持。 |
 | external\_callback\_log | string | 自定义回调日志信息，可通过[OH\_HiCollie\_SetFreezeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hicollie-h#oh_hicollie_setfreezecallback)写入。  **说明**：从API 24开始支持。 |
 
 ### exception字段说明
@@ -124,7 +124,7 @@ hiAppEvent.configEventPolicy(policy).then(() => {
 | pc | string | 程序执行的指令在文件内的偏移十六进制字节数。 |
 | offset | number | 程序执行的指令在函数内偏移字节数。 |
 
-详细说明请参见[调用栈帧内容说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#一般故障场景日志规格)。
+详细说明请参见[调用栈帧内容说明](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#一般故障场景日志规格)。
 
 **Js帧frame字段说明**
 
@@ -136,18 +136,18 @@ hiAppEvent.configEventPolicy(policy).then(() => {
 | line | number | 代码行号 |
 | column | number | 代码列号 |
 
-详细说明请参见[JS混合栈帧内容说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#一般故障场景日志规格)。
+详细说明请参见[JS混合栈帧内容说明](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#一般故障场景日志规格)。
 
 ### memory字段说明
 
 | 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| rss | number | 进程实际占用内存大小，单位KB。对应[Appfreeze日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#日志头部信息)中Process Memory(kB)字段。 |
+| rss | number | 进程实际占用内存大小，单位KB。对应[Appfreeze日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#日志头部信息)中Process Memory(kB)字段。 |
 | vss | number | 进程向系统申请的虚拟内存大小，单位KB。 |
 | pss | number | 进程实际使用的物理内存大小，单位KB。 |
-| sys\_free\_mem | number | 空闲内存大小，单位KB。对应[Appfreeze日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#日志头部信息)中Device Memory(kB)字段的Free。 |
-| sys\_avail\_mem | number | 可用内存大小，单位KB。对应[Appfreeze日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#日志头部信息)中Device Memory(kB)字段的Available。 |
-| sys\_total\_mem | number | 总内存大小，单位KB。对应[Appfreeze日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#日志头部信息)中Device Memory(kB)字段的Total。 |
+| sys\_free\_mem | number | 空闲内存大小，单位KB。对应[Appfreeze日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#日志头部信息)中Device Memory(kB)字段的Free。 |
+| sys\_avail\_mem | number | 可用内存大小，单位KB。对应[Appfreeze日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#日志头部信息)中Device Memory(kB)字段的Available。 |
+| sys\_total\_mem | number | 总内存大小，单位KB。对应[Appfreeze日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#日志头部信息)中Device Memory(kB)字段的Total。 |
 | vm\_heap\_total\_size | number | 主虚拟机总堆内存大小，单位KB。  **说明**：从API 22开始支持。 |
 | vm\_heap\_used\_size | number | 主虚拟机的生命周期过程中，持续统计存活对象的大小，单位KB。  **说明**：从API 22开始支持。 |
 

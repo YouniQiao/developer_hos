@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "订阅应用终止事件（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events-arkts
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events-arkts
 format: md
 ---
 
 
 ## 应用终止事件规格说明
 
-请参考[应用终止事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events)。
+请参考[应用终止事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events)。
 
 ## 接口说明
 

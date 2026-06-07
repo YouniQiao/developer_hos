@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "模拟点击增强检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-detectsimulatedclickriskenhanced
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-brid-develop/devicesecurity-detectsimulatedclickriskenhanced
 format: md
 ---
 

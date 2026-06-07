@@ -1,6 +1,6 @@
 ---
 title: "日志"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-log-development
+original_url: /docs/dev/atomic-dev/atomic-log-development/atomic-log-development
 format: md
 ---
 

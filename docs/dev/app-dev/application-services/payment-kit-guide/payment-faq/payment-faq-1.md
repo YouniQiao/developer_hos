@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接入开发时，请求参数的签名、结果验签在什么场景使用？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-1
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-1
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "设置列表卡片样式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-set-listitem-style
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-list-item-card/ui-design-set-listitem-style
 format: md
 ---
 

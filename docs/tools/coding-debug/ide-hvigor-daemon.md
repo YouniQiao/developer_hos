@@ -1,7 +1,7 @@
 ---
 title: "守护进程"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-daemon
+original_url: /docs/tools/coding-debug/ide-hvigor-daemon
 format: md
 ---
 

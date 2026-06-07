@@ -1,7 +1,7 @@
 ---
 title: "通用审核规范"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/general-review-regulations-0000001189084544
+original_url: /docs/monetize/promotion/general-review-regulations-0000001189084544
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "设备方向"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-device-orientation
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-device-orientation
 format: md
 ---
 

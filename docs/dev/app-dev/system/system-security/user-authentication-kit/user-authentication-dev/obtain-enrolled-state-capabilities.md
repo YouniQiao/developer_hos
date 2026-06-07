@@ -1,6 +1,6 @@
 ---
 title: "查询用户注册凭据的状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-enrolled-state-capabilities
+original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-enrolled-state-capabilities
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ## 开发步骤
 
-1. [申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/prerequisites#申请权限)：ohos.permission.ACCESS\_BIOMETRIC。
+1. [申请权限](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/prerequisites#申请权限)：ohos.permission.ACCESS\_BIOMETRIC。
 2. 指定认证类型（[UserAuthType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthtype8)），调用[getEnrolledState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthgetenrolledstate12)接口查询用户注册凭据的状态。
 
 以查询用户人脸注册凭据的状态为例：

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设备状态感知开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicestatus-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/devicestatus-guidelines
 format: md
 ---
 

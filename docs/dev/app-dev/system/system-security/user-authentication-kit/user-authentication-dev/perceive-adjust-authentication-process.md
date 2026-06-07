@@ -1,6 +1,6 @@
 ---
 title: "感知和调整认证过程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perceive-adjust-authentication-process
+original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/perceive-adjust-authentication-process
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 
 ## 开发步骤
 
-1. [申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/prerequisites#申请权限)：ohos.permission.ACCESS\_BIOMETRIC。
+1. [申请权限](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/prerequisites#申请权限)：ohos.permission.ACCESS\_BIOMETRIC。
 2. 指定用户认证相关参数[AuthParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#authparam10)（包括挑战值、认证类型[UserAuthType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthtype8)列表和认证等级[AuthTrustLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#authtrustlevel8)）、配置认证控件界面[WidgetParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#widgetparam10)，调用[getUserAuthInstance](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthgetuserauthinstance10)获取认证对象。
 3. 调用[UserAuthInstance.on('authTip')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#onauthtip20)接口订阅身份认证过程中的提示信息。
 4. 调用[UserAuthInstance.start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#start10)接口发起认证，通过[AuthTipCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#authtipcallback20)回调返回认证中间状态[AuthTipInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#authtipinfo20)。

@@ -1,6 +1,6 @@
 ---
 title: "Accessibility Kit 简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibilitykit-overview
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibilitykit-overview
 format: md
 ---
 

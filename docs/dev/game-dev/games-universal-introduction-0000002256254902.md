@@ -1,6 +1,6 @@
 ---
 title: "使用自己的引擎概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-introduction-0000002256254902
+original_url: /docs/dev/game-dev/games-universal-introduction-0000002256254902
 format: md
 ---
 

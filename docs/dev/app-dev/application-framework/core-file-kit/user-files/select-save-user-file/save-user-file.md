@@ -1,6 +1,6 @@
 ---
 title: "保存用户文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file
 format: md
 ---
 
@@ -11,17 +11,17 @@ format: md
 
 * 通过Picker获取的URI默认只具备**临时读写权限**，临时授权在应用退出后台自动失效。
 * 如果设置[autoCreateEmptyFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#documentsaveoptions)参数为false，获取的URI除了具备**临时读写权限**外，还具备**临时创建和删除权限**。
-* 获取持久化权限需要通过[FilePicker设置永久授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission#通过picker获取临时授权并进行授权持久化)方式获取。
+* 获取持久化权限需要通过[FilePicker设置永久授权](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/file-persistpermission#通过picker获取临时授权并进行授权持久化)方式获取。
 * 使用Picker对音频、图片、视频、文档类文件的保存操作**无需申请权限**。
 
 **系统隔离说明**
 
 * 通过Picker保存的文件存储在用户指定的目录。此类文件与图库管理的资源隔离，无法在图库中看到。
-* 若开发者需要保存图片、视频资源到图库，可使用用户无感的[安全控件进行保存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton#使用安全控件保存媒体库资源)。
+* 若开发者需要保存图片、视频资源到图库，可使用用户无感的[安全控件进行保存](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton#使用安全控件保存媒体库资源)。
 
 ## 保存图片或视频类文件
 
-[PhotoViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#photoviewpickerdeprecated)在后续版本不再演进，建议使用[Media Library Kit（媒体文件管理服务）中能力来保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
+[PhotoViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#photoviewpickerdeprecated)在后续版本不再演进，建议使用[Media Library Kit（媒体文件管理服务）中能力来保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
 
 如果开发场景无法调用安全控件进行图片、视频保存，可使用相册管理模块[PhotoAccessHelper.showAssetsCreationDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper#showassetscreationdialog12)接口进行保存操作。
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "画布操作及状态处理（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-operation-state-arkts
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-operation-state/canvas-operation-state-arkts
 format: md
 ---
 

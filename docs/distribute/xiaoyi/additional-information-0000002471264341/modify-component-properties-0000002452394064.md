@@ -1,7 +1,7 @@
 ---
 title: "修改组件属性"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/modify-component-properties-0000002452394064
+original_url: /docs/distribute/xiaoyi/additional-information-0000002471264341/modify-component-properties-0000002452394064
 format: md
 ---
 

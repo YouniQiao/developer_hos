@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何使用网络接口获取数据库MySQL中的数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-13
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-13
 ---
 
 

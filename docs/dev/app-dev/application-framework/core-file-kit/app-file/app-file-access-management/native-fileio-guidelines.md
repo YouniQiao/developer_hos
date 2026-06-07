@@ -1,6 +1,6 @@
 ---
 title: "应用文件访问(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileio-guidelines
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/native-fileio-guidelines
 format: md
 ---
 

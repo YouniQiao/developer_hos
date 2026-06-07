@@ -1,6 +1,6 @@
 ---
 title: "动态订阅公共事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-subscription
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-subscription
 format: md
 ---
 
@@ -11,11 +11,11 @@ format: md
 
 例如，某应用希望在其运行期间收到电量过低的事件，并根据该事件降低其运行功耗，那么该应用便可动态订阅电量过低事件，收到该事件后关闭一些非必要的任务来降低功耗。
 
-订阅部分系统公共事件需要先[申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode)，订阅这些事件所需要的权限请见[系统定义的公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/commoneventmanager-definitions)。
+订阅部分系统公共事件需要先[申请权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode)，订阅这些事件所需要的权限请见[系统定义的公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/commoneventmanager-definitions)。
 
 ![](./img/6443c35a.png)
 
-订阅者对象的生命周期需要接入方管理，不再使用时需[取消动态订阅公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-unsubscription)后主动销毁释放，避免进程内订阅者数量超过200个导致其他业务订阅失败以及内存泄漏。
+订阅者对象的生命周期需要接入方管理，不再使用时需[取消动态订阅公共事件](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-unsubscription)后主动销毁释放，避免进程内订阅者数量超过200个导致其他业务订阅失败以及内存泄漏。
 
 动态订阅的公共事件回调受应用状态影响。当应用处于后台时，无法接收到动态订阅公共事件。当应用从后台切换到前台时，最多可以回调切回前30s内监听的公共事件。
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "订阅地址越界事件（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-ndk
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events-ndk
 format: md
 ---
 

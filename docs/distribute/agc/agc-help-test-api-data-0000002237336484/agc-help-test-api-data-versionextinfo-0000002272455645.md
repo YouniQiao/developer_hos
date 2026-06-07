@@ -1,6 +1,6 @@
 ---
 title: "VersionExtInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-versionextinfo-0000002272455645
+original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-versionextinfo-0000002272455645
 format: md
 ---
 
@@ -21,6 +21,6 @@ format: md
 | encrypted | O | Integer(32) | 包是否加密。  取值范围：   * 0：否，表示不加密。 * 1：是，表示加密。   默认值：1 |
 | isAiGenerate | O | Integer(32) | 是否涉及AI生成合成服务。  取值范围：   * 0：不涉及。 * 1：涉及。   注意：  仅公开测试支持填写此字段。 |
 | aiTypes | O | `List&lt;Integer(32)>` | 涉及的AI生成合成服务类型。  注意：  仅公开测试支持填写此字段。  取值范围：   * -1：其他 * 1：文本 * 2：图片 * 3：音频 * 4：视频 * 5：虚拟场景   说明：  isAiGenerate取值为1（涉及）时，此参数必填。 |
-| appReviewPhoneInfo | O | [AppReviewContact](https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-appreviewcontact-0000002527365043) | 应用负责人的手机号信息。用于沟通审核问题。  注意：  仅公开测试支持填写此字段。 |
-| appReviewEmailInfo | O | [AppReviewContact](https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-appreviewcontact-0000002527365043) | 应用负责人的邮箱账号信息。用于接收上架审核结果，应用整改或下架通知。  注意：  仅公开测试支持填写此字段。 |
+| appReviewPhoneInfo | O | [AppReviewContact](/docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-appreviewcontact-0000002527365043) | 应用负责人的手机号信息。用于沟通审核问题。  注意：  仅公开测试支持填写此字段。 |
+| appReviewEmailInfo | O | [AppReviewContact](/docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-appreviewcontact-0000002527365043) | 应用负责人的邮箱账号信息。用于接收上架审核结果，应用整改或下架通知。  注意：  仅公开测试支持填写此字段。 |
 | appReviewName | O | String(256) | 应用负责人的姓名。  注意：  仅公开测试支持填写此字段。 |

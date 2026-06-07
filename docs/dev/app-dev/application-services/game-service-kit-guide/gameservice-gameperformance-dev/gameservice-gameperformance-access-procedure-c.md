@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发指导(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-access-procedure-c
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameperformance-dev/gameservice-gameperformance-access-procedure-c
 format: md
 ---
 

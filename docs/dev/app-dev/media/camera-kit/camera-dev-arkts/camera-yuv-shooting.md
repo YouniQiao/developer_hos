@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "YUV拍照(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-yuv-shooting
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-yuv-shooting
 format: md
 ---
 
@@ -63,9 +63,9 @@ format: md
 
    设置单段式拍照[onCapturePhotoAvailable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photooutput#oncapturephotoavailable23)或分段式拍照[on('photoAssetAvailable')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photooutput#onphotoassetavailable12)的回调，并将拍照的pixelMap数据保存为图片。如果应用需要快速得到回图，推荐使用分段式拍照回调。
 
-   Context获取方式请参考：[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+   Context获取方式请参考：[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
-   如果需要在图库中看到所保存的图片、视频资源，需要先将其保存到媒体库，保存方式请参考：[保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
+   如果需要在图库中看到所保存的图片、视频资源，需要先将其保存到媒体库，保存方式请参考：[保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
 
    如果需要在[onCapturePhotoAvailable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photooutput#oncapturephotoavailable23)接口获取到buffer，先将[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)数据在安全控件中保存到媒体库。
 

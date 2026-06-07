@@ -1,6 +1,6 @@
 ---
 title: "音频"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-audio
+original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-audio
 format: md
 ---
 
@@ -114,7 +114,7 @@ has.pauseVoice({
 
 has.createInnerAudioContext():InnerAudioContext
 
-创建内部[audio](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-audio)上下文[InnerAudioContext](#inneraudiocontext)对象。
+创建内部[audio](/docs/dev/atomic-dev/ascf/components-media-components/components-audio)上下文[InnerAudioContext](#inneraudiocontext)对象。
 
 **起始版本：** 1.0.14
 
@@ -132,7 +132,7 @@ const ctx = has.createInnerAudioContext();
 
 has.createAudioContext(string id):AudioContext
 
-创建内部[audio](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-audio)上下文[AudioContext](#audiocontext)对象。
+创建内部[audio](/docs/dev/atomic-dev/ascf/components-media-components/components-audio)上下文[AudioContext](#audiocontext)对象。
 
 **起始版本：** 1.0.16
 
@@ -140,7 +140,7 @@ has.createAudioContext(string id):AudioContext
 
 | 参数 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
-| id | string | 是 | [audio](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-audio)组件的id。 |
+| id | string | 是 | [audio](/docs/dev/atomic-dev/ascf/components-media-components/components-audio)组件的id。 |
 
 **返回值：**
 
@@ -156,7 +156,7 @@ const audioContext = has.createAudioContext('myAudio');
 
 [AudioContext](#audiocontext)实例，可通过[has.createAudioContext](#hascreateaudiocontext)获取。
 
-[AudioContext](#audiocontext)通过id跟一个[audio](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-audio)组件绑定，操作对应的[audio](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-audio)组件。
+[AudioContext](#audiocontext)通过id跟一个[audio](/docs/dev/atomic-dev/ascf/components-media-components/components-audio)组件绑定，操作对应的[audio](/docs/dev/atomic-dev/ascf/components-media-components/components-audio)组件。
 
 **起始版本：** 1.0.16
 
@@ -238,7 +238,7 @@ audioContext.seek(20);
 
 ## InnerAudioContext
 
-InnerAudioContext 实例。可通过[has.createInnerAudioContext](#hascreateinneraudiocontext)接口获取实例。注意，音频播放过程中，可能被系统中断，可通过[has.onAudioInterruptionBegin](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-app-event#hasonaudiointerruptionbegin)、[has.onAudioInterruptionEnd](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-app-event#hasonaudiointerruptionend)事件来处理这种情况。
+InnerAudioContext 实例。可通过[has.createInnerAudioContext](#hascreateinneraudiocontext)接口获取实例。注意，音频播放过程中，可能被系统中断，可通过[has.onAudioInterruptionBegin](/docs/dev/atomic-dev/ascf/apis-basis/apis-app-event#hasonaudiointerruptionbegin)、[has.onAudioInterruptionEnd](/docs/dev/atomic-dev/ascf/apis-basis/apis-app-event#hasonaudiointerruptionend)事件来处理这种情况。
 
 **起始版本：** 1.0.14
 

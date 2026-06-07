@@ -1,13 +1,13 @@
 ---
 title: "配置超参"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-hyperparam
+original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-config/data-augmentation-hyperparam
 format: md
 ---
 
 
 ## 功能介绍
 
-超参是RAG工作流的配置参数，用于控制工作流的行为与组件结构。超参可由开发者根据任务需求、数据特性及经验进行配置，合理的超参设置对RAG的性能和效果有重要影响。开发者可以通过在指定应用[资源目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源目录)放置hyper\_param.json配置文件，实现自定义超参导入。
+超参是RAG工作流的配置参数，用于控制工作流的行为与组件结构。超参可由开发者根据任务需求、数据特性及经验进行配置，合理的超参设置对RAG的性能和效果有重要影响。开发者可以通过在指定应用[资源目录](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源目录)放置hyper\_param.json配置文件，实现自定义超参导入。
 
 可供配置的超参列表：
 
@@ -31,7 +31,7 @@ format: md
 
 ## 开发步骤
 
-在应用[资源目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源目录)的rawfile/arkdata/rag下创建hyper\_param.json文件，若工程中无目标目录则递归创建。
+在应用[资源目录](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源目录)的rawfile/arkdata/rag下创建hyper\_param.json文件，若工程中无目标目录则递归创建。
 
 超参配置文件hyper\_param.json示例如下，实际文件内容请根据业务需要进行配置。
 

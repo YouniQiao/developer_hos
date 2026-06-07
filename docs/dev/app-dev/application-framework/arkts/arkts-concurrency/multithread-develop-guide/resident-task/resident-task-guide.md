@@ -1,6 +1,6 @@
 ---
 title: "常驻任务开发指导 (Worker)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resident-task-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/resident-task/resident-task-guide
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 1. DevEco Studio支持一键生成Worker，在对应的\{moduleName\}目录下任意位置，单击鼠标右键 > New > Worker，即可自动生成Worker的模板文件及配置信息。本文以创建“Worker”为例。
 
-   此外，还支持手动创建Worker文件。具体方式和注意事项请参见[创建Worker的注意事项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction#创建worker的注意事项)。
+   此外，还支持手动创建Worker文件。具体方式和注意事项请参见[创建Worker的注意事项](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction#创建worker的注意事项)。
 2. 首先导入Worker模块，然后在宿主线程中通过调用ThreadWorker的[constructor()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-worker#constructor9)方法创建Worker对象，创建Worker对象的线程为宿主线程。 此处的宿主线程为UI主线程，宿主线程发送'start'以开始执行某个长期运行的任务，并接收子线程返回的相关消息。当不需要执行该任务时，发送'stop'以停止该任务的执行。在此示例中，任务将在10秒后结束。
 
    ```

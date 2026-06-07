@@ -1,6 +1,6 @@
 ---
 title: "Vsync低功耗优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-vsync-power-optimization
+original_url: /docs/quality/vsync-power-optimization
 ---
 
 
@@ -35,7 +35,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-v
 
 ### 问题现象
 
-displaySync方法支持让开发者以[指定帧率来运行UI业务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-ui)，一般用于开发者自绘制UI，并且对于帧率有特定诉求的场景。通过这种方式创建的对象需由开发者对其做好生命周期管理，确保绘制内容处于屏幕外或不再需要时，应注销displaySync对象，避免应用进程空刷帧。下图中展示了一个错误使用displaySync实现Canvas弹幕功能的场景，当弹幕组件正常显示时以60hz的频次刷新，但当用户关闭弹幕功能时，依然可以发现有displaySync对象持续执行业务。该有问题的UI帧表现的现象有：
+displaySync方法支持让开发者以[指定帧率来运行UI业务](/docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-ui)，一般用于开发者自绘制UI，并且对于帧率有特定诉求的场景。通过这种方式创建的对象需由开发者对其做好生命周期管理，确保绘制内容处于屏幕外或不再需要时，应注销displaySync对象，避免应用进程空刷帧。下图中展示了一个错误使用displaySync实现Canvas弹幕功能的场景，当弹幕组件正常显示时以60hz的频次刷新，但当用户关闭弹幕功能时，依然可以发现有displaySync对象持续执行业务。该有问题的UI帧表现的现象有：
 
 * Trace点H:DispatchDisplaySync下方，含有DisplaySyncId[327]对象，持续时间为4ms，同时右侧打印信息还包含了帧率信息“DrawFPS[60] VsyncRate[60]”。
 * 该UI帧整体表现为左大右小，其中与ArkUI脏区组件刷新相关的FlushRenderTask下并无Trace点，表明并无任何一处ArkUI脏区在该帧中进行了脏区任务。

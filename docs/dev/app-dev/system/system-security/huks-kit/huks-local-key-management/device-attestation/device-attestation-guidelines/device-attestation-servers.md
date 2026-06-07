@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "服务器端开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification-servers
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines/device-attestation-servers
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Push Scenes"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-scenes
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

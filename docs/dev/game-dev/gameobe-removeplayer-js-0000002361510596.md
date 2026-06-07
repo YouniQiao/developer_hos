@@ -1,6 +1,6 @@
 ---
 title: "移除房间内玩家"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-removeplayer-js-0000002361510596
+original_url: /docs/dev/game-dev/gameobe-removeplayer-js-0000002361510596
 format: md
 ---
 

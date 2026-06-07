@@ -1,6 +1,6 @@
 ---
 title: "后台音频播放合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-audio-playback-use
+original_url: /docs/quality/reasonable-audio-playback-use
 ---
 
 # 后台音频播放合理使用
@@ -37,4 +37,4 @@ async function read() {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseSoftware/entry/src/main/ets/pages/Audio.ets#L21-L71">Audio.ets</a></div>
 
-有关AudioRenderer开发相关接口的使用，详情可以参考[使用AudioRenderer开发音频播放功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)。
+有关AudioRenderer开发相关接口的使用，详情可以参考[使用AudioRenderer开发音频播放功能](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)。

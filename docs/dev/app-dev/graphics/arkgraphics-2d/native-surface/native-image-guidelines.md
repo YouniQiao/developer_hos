@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "NativeImage开发指导 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-image-guidelines
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-image-guidelines
 format: md
 ---
 
@@ -62,7 +62,7 @@ libnative_buffer.so
 
 1. **初始化EGL环境**。
 
-   这里提供初始化EGL环境的代码示例。XComponent模块的详细使用方法，请参阅[XComponent开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-xcomponent-guidelines)。
+   这里提供初始化EGL环境的代码示例。XComponent模块的详细使用方法，请参阅[XComponent开发指导](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/napi-xcomponent-guidelines)。
 
    ```
    bool ImageRender::InitEGL(EGLNativeWindowType window, uint64_t width, uint64_t height)

@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "申请验证获取正式权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-verification
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-verification
 format: md
 ---
 
 
-完成[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)后，审核通过的权限为测试权限，有100个用户数量的限制。为解除用户数的限制，应用开发完成后，在上架之前，请按照以下步骤提交验证申请，以获取正式权限。完成验证后，您的应用可支持正式大规模商用。
+完成[申请运动健康服务](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply)后，审核通过的权限为测试权限，有100个用户数量的限制。为解除用户数的限制，应用开发完成后，在上架之前，请按照以下步骤提交验证申请，以获取正式权限。完成验证后，您的应用可支持正式大规模商用。
 
 ## 申请验证
 
@@ -70,7 +70,7 @@ format: md
 
   1.文字描述中使用“华为运动健康”或“HUAWEI Health”。
 
-  2.开发者应用面向用户界面，统一使用[华为运动健康品牌logo](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-logo-usage-regulations)。
+  2.开发者应用面向用户界面，统一使用[华为运动健康品牌logo](/docs/dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-logo-usage-regulations)。
 
 ### 授权页面权限展示不一致，图标不一致
 

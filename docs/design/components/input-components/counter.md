@@ -1,7 +1,7 @@
 ---
 title: 数字加减
 sidebar_label: 数字加减
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/counter-0000001929853284
+original_url: /docs/design/components/input-components/counter
 format: md
 ---
 

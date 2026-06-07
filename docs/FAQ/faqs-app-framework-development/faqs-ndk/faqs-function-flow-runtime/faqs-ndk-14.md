@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS层调用Native层接口时的线程相关问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-14
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-14
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如何解决证书链不完整？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-14
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-14
 format: md
 ---
 

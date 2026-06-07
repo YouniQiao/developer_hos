@@ -1,7 +1,7 @@
 ---
 title: "多设备设置界面"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-settings-application-page
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-settings-application-page
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ![](./img/0b0bb6d7.png)
 
-阅读本文前，建议开发者先了解[ArkUI（方舟UI框架）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui)和[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)相关知识。
+阅读本文前，建议开发者先了解[ArkUI（方舟UI框架）](/docs/dev/app-dev/application-framework/arkui)和[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)相关知识。
 
 * [UX设计](#section99762271515)：介绍设置应用的交互逻辑与通用设计要点，开发者可直接参考。
 * [工程管理](#section719020851716)：介绍“一多”工程所需配置，并推荐采用结构更清晰的三层架构。
@@ -35,13 +35,13 @@ format: md
 
 ###创建工程
 
-建议开发者参考[多设备工程部署与发布](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-ide)相关内容，掌握分层架构工程的创建与配置方法后，创建模板项目工程。根据设置应用的开发需求进行针对性修改，确保工程架构贴合实际业务需求。
+建议开发者参考[多设备工程部署与发布](/docs/dev/app-dev/multi-device/bpta-multi-device-ide)相关内容，掌握分层架构工程的创建与配置方法后，创建模板项目工程。根据设置应用的开发需求进行针对性修改，确保工程架构贴合实际业务需求。
 
 ###工程结构
 
 应用采用推荐的分层架构，将代码工程按products、features、common三个层级组织代码工程。各层级设计如下：
 
-* products层：应用需适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板及电脑。由于电脑界面布局与其他设备差异较大，因此单独创建名为“pc”的包作为电脑设备的应用入口；直板机、双折叠（Mate X系列）、三折叠、阔折叠及平板设备的界面布局整体相似，部分差异可通过“一多”[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout)和[响应式布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)适配，为此创建名为“default”的包作为这些设备的应用入口。
+* products层：应用需适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板及电脑。由于电脑界面布局与其他设备差异较大，因此单独创建名为“pc”的包作为电脑设备的应用入口；直板机、双折叠（Mate X系列）、三折叠、阔折叠及平板设备的界面布局整体相似，部分差异可通过“一多”[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout)和[响应式布局](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)适配，为此创建名为“default”的包作为这些设备的应用入口。
 * features层：包含一个核心业务模块——网络连接（multisettinglink）。模块对应创建HAR包，供products层按需引用。
 * common层：为实现代码复用并减少冗余，集中存放公共常量、日志工具类及窗口管理工具等基础能力，供其他模块统一调用。
 
@@ -91,13 +91,13 @@ format: md
 
 * 窗口模式
 
-  适配设备支持全屏、分屏、悬浮窗和自由窗口模式，具体参见[窗口模式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode)。其中，分屏模式与悬浮窗无需特殊设计，可通过系统方式进入。应用内监听窗口尺寸变化，[通过断点刷新UI](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section175001836203617)，自动适配全屏、分屏、悬浮窗和自由窗口模式下的布局。
+  适配设备支持全屏、分屏、悬浮窗和自由窗口模式，具体参见[窗口模式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode)。其中，分屏模式与悬浮窗无需特殊设计，可通过系统方式进入。应用内监听窗口尺寸变化，[通过断点刷新UI](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section175001836203617)，自动适配全屏、分屏、悬浮窗和自由窗口模式下的布局。
 * 窗口方向
 
-  通过[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)，将[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)的orientation属性设置为跟随桌面的旋转模式（follow\_desktop）。
+  通过[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)，将[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)的orientation属性设置为跟随桌面的旋转模式（follow\_desktop）。
 * 窗口沉浸式
 
-  根据UX设计，需实现不同窗口模式（全屏、分屏、悬浮窗、自由窗口）下的沉浸式效果，可参考[窗口沉浸式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive)。推荐开发者使用组件级沉浸方案（组件设置页面沉浸）[实现沉浸式效果](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive#section180431120426)，同时需进行动态安全区避让，确保沉浸式显示效果。自由窗口模式下，使用[window.setWindowDecorVisible(false)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)隐藏标题栏，仅保留右上角三键，使应用页面延伸至标题栏区域，实现沉浸式显示效果。
+  根据UX设计，需实现不同窗口模式（全屏、分屏、悬浮窗、自由窗口）下的沉浸式效果，可参考[窗口沉浸式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive)。推荐开发者使用组件级沉浸方案（组件设置页面沉浸）[实现沉浸式效果](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive#section180431120426)，同时需进行动态安全区避让，确保沉浸式显示效果。自由窗口模式下，使用[window.setWindowDecorVisible(false)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)隐藏标题栏，仅保留右上角三键，使应用页面延伸至标题栏区域，实现沉浸式显示效果。
 
 ###导航与详情页
 
@@ -128,7 +128,7 @@ format: md
 * HdsNavDestination组件用于构建HdsNavigation组件的子页面，组件中需声明@Builder对外实例化方法，用于注册系统路由表。
 * 在系统路由表中注册子页面实例化方法、源码所在路径及唯一标识符，系统路由表文件路径为entry/src/main/resources/base/profile/router\_map.json。
 
-更多内容参考[Navigation页面路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-jump)。
+更多内容参考[Navigation页面路由](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-jump)。
 
 ## 电脑端页面
 

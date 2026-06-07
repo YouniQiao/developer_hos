@@ -1,6 +1,6 @@
 ---
 title: "内容风控服务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/content-moderation-service-intro
+original_url: /docs/dev/atomic-dev/content-moderation-service/content-moderation-service-intro
 format: md
 ---
 

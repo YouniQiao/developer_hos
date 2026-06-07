@@ -1,13 +1,13 @@
 ---
 title: "应用时延优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-latency-optimization-cases
+original_url: /docs/quality/application-latency-optimization-cases
 ---
 
 # 应用时延优化
 
 ## 应用时延概述
 
-在移动终端应用开发中，完成时延是指用户操作移动终端时，从输入触控指令到界面完全刷新结束并达到可以阅读的稳定状态所用时间，点击时延依据界面转场类型可以分为界面内跳转和界面间跳转两种。完成时延作为用户体验关键指标，直接影响用户对响应速度和交互流畅性的感知，主要影响用户对触控交互及时性和愉悦性的体验评价。关于响应时延阶段的分析，请参考[《点击响应时延分析》](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-click-response-optimization)。关于完成时延阶段的分析，请参考[《点击完成时延分析》](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-complete-delay-analysis)。
+在移动终端应用开发中，完成时延是指用户操作移动终端时，从输入触控指令到界面完全刷新结束并达到可以阅读的稳定状态所用时间，点击时延依据界面转场类型可以分为界面内跳转和界面间跳转两种。完成时延作为用户体验关键指标，直接影响用户对响应速度和交互流畅性的感知，主要影响用户对触控交互及时性和愉悦性的体验评价。关于响应时延阶段的分析，请参考[《点击响应时延分析》](/docs/quality/click-to-click-response-optimization)。关于完成时延阶段的分析，请参考[《点击完成时延分析》](/docs/quality/click-to-complete-delay-analysis)。
 
 在一定时延水平以上，时延越短越好，当时延小于一定水平后，用户的流畅体验不再继续提升。建议应用或元服务内点击操作响应时延应≤100ms，应用或元服务内点击操作完成时延≤900ms，更多体验建议，请参考指南[《应用性能体验建议》](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-experience-suggestions)。本文将给出时延问题常见优化方案。
 

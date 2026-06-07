@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation如何设置默认页"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-409
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-409
 ---
 
 

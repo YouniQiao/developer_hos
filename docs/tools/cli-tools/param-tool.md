@@ -1,7 +1,7 @@
 ---
 title: "param工具"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/param-tool
+original_url: /docs/tools/cli-tools/param-tool
 format: md
 ---
 

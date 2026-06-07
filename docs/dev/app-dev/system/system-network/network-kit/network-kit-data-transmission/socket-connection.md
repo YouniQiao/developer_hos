@@ -1,6 +1,6 @@
 ---
 title: "使用Socket访问网络"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/socket-connection
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/socket-connection
 format: md
 ---
 
@@ -36,7 +36,7 @@ Socket连接主要是通过Socket进行数据传输，支持TCP/UDP/Multicast/TL
 
 ![](./img/7c3e9e38.png)
 
-在本文档的示例中，通过this.context来获取UIAbilityContext，其中this代表继承自UIAbility的UIAbility实例。如需在页面中使用UIAbilityContext提供的能力，请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+在本文档的示例中，通过this.context来获取UIAbilityContext，其中this代表继承自UIAbility的UIAbility实例。如需在页面中使用UIAbilityContext提供的能力，请参见[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
 ## 应用TCP/UDP协议进行通信
 

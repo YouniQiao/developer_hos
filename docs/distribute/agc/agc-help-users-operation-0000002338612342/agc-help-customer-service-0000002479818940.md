@@ -1,6 +1,6 @@
 ---
 title: "元服务客服"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-customer-service-0000002479818940
+original_url: /docs/distribute/agc/agc-help-users-operation-0000002338612342/agc-help-customer-service-0000002479818940
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
   使用客服工作台的操作账号必须是对应拥有“查看客服工作台”权限的客服角色（不包含账号持有者）。
 
-  关于账号角色与权限的详细信息，可参考[角色与权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-rolepermission-0000002271930352)。
+  关于账号角色与权限的详细信息，可参考[角色与权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-rolepermission-0000002271930352)。
 
 #### 开通元服务客服功能
 

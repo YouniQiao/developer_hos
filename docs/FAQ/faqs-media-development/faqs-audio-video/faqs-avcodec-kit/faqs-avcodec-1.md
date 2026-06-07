@@ -1,7 +1,7 @@
 ---
 format: md
 title: "VideoDecoder支持的包装方式是AVCC还是AnnexB"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avcodec-1
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avcodec-1
 ---
 
 

@@ -1,11 +1,11 @@
 ---
 title: "访问媒体文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-media-access
+original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-media-access
 format: md
 ---
 
 
-开发者可以使用[has.chooseImage](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-image#haschooseimage)选择图片，从而访问媒体库资源。
+开发者可以使用[has.chooseImage](/docs/dev/atomic-dev/ascf/apis-media/apis-image#haschooseimage)选择图片，从而访问媒体库资源。
 
 ```
 has.chooseImage({
@@ -18,7 +18,7 @@ has.chooseImage({
 });
 ```
 
-开发者可以使用[has.chooseVideo](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-video#haschoosevideo)选择视频，从而访问媒体库资源。
+开发者可以使用[has.chooseVideo](/docs/dev/atomic-dev/ascf/apis-media/apis-video#haschoosevideo)选择视频，从而访问媒体库资源。
 
 ```
 has.chooseVideo({
@@ -31,7 +31,7 @@ has.chooseVideo({
 });
 ```
 
-开发者还可以使用[has.chooseMedia](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-video#haschoosemedia)选择图片或视频，从而访问媒体库资源。
+开发者还可以使用[has.chooseMedia](/docs/dev/atomic-dev/ascf/apis-media/apis-video#haschoosemedia)选择图片或视频，从而访问媒体库资源。
 
 ```
 has.chooseMedia({

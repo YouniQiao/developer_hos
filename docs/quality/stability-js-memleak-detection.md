@@ -1,6 +1,6 @@
 ---
 title: "JS内存泄漏问题检测方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-js-memleak-detection
+original_url: /docs/quality/stability-js-memleak-detection
 format: md
 ---
 

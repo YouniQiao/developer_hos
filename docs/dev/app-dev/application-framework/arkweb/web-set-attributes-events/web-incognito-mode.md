@@ -1,6 +1,6 @@
 ---
 title: "使用隐私模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-incognito-mode
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-incognito-mode
 format: md
 ---
 

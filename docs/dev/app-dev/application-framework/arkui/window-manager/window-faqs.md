@@ -1,6 +1,6 @@
 ---
 title: "窗口开发常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-faqs
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-faqs
 format: md
 ---
 
@@ -158,9 +158,9 @@ export default class EntryAbility extends UIAbility {
 
 ## 如何实现或判断窗口沉浸式布局
 
-[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#沉浸式布局)是一种让应用界面聚焦内容，减少无关元素干扰的窗口状态。
+[沉浸式布局](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#沉浸式布局)是一种让应用界面聚焦内容，减少无关元素干扰的窗口状态。
 
-非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)可以通过调用[setWindowLayoutFullScreen()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)设置沉浸式布局；自由窗口可以通过[setWindowDecorVisible()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)接口控制窗口标题栏显隐，当标题栏隐藏时，窗口处于沉浸式布局。
+非[自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)可以通过调用[setWindowLayoutFullScreen()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)设置沉浸式布局；自由窗口可以通过[setWindowDecorVisible()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)接口控制窗口标题栏显隐，当标题栏隐藏时，窗口处于沉浸式布局。
 
 可以通过[isImmersiveLayout()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#isimmersivelayout20)判断当前窗口是否处于沉浸式布局。
 
@@ -259,7 +259,7 @@ export default class EntryAbility extends UIAbility {
 
 ![](./img/608befa0.png)
 
-* 在支持[自由多窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由多窗模式)的设备上，存在窗口容器，窗口容器背景色覆盖整个窗口区域，包括标题栏和内容区域。调用[setWindowBackgroundColor()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getwindowavoidarea9)接口仅可设置应用内容背景色，此时会透出窗口容器背景色。
+* 在支持[自由多窗](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由多窗模式)的设备上，存在窗口容器，窗口容器背景色覆盖整个窗口区域，包括标题栏和内容区域。调用[setWindowBackgroundColor()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getwindowavoidarea9)接口仅可设置应用内容背景色，此时会透出窗口容器背景色。
 * 在2in1和Tablet设备上可以调用[setWindowContainerColor()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowcontainercolor20)接口设置容器透明，在其他设备上暂不支持设置容器背景色。
 
 示例代码如下所示：
@@ -293,7 +293,7 @@ windowClass.loadContent("pages/page2", storage, (err: BusinessError) => {
 
 ## 如何实现横竖屏切换
 
-需要先获取到主窗实例，然后调用[setPreferredOrientation()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setpreferredorientation9-1)接口设置窗口方向。更多详细信息请参考[窗口旋转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-rotation)。
+需要先获取到主窗实例，然后调用[setPreferredOrientation()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setpreferredorientation9-1)接口设置窗口方向。更多详细信息请参考[窗口旋转](/docs/dev/app-dev/application-framework/arkui/window-manager/window-rotation)。
 
 示例代码如下所示：
 
@@ -414,7 +414,7 @@ export default class EntryAbility extends UIAbility {
 
 ## 如何设置窗口支持的显示模式supportWindowMode
 
-在应用开发中， 推荐通过[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)配置文件中的[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)的supportWindowMode字段设置窗口支持的显示模式。
+在应用开发中， 推荐通过[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)配置文件中的[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)的supportWindowMode字段设置窗口支持的显示模式。
 
 supportWindowMode支持的取值如下：
 
@@ -427,7 +427,7 @@ supportWindowMode支持的取值如下：
 ![](./img/c782326d.png)
 
 * supportWindowMode字段类型为字符串数组，可缺省，缺省值为["fullscreen", "split", "floating"]。
-* 在[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)状态下同时配置fullscreen和split时，如果应用的[targetAPIVersion](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)小于15，窗口将以自由悬浮窗口模式启动；如果应用的[targetAPIVersion](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)大于等于15，窗口将以全屏模式启动。
+* 在[自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)状态下同时配置fullscreen和split时，如果应用的[targetAPIVersion](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)小于15，窗口将以自由悬浮窗口模式启动；如果应用的[targetAPIVersion](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)大于等于15，窗口将以全屏模式启动。
 
 module.json5配置示例如下：
 
@@ -456,7 +456,7 @@ module.json5配置示例如下：
 
 除以上配置方式外，应用可参考以下几种方式配置窗口支持的模式：
 
-* 使用[metadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-config-m)标签配置，name为'ohos.ability.window.supportWindowModeInFreeMultiWindow'，该字段配置仅在自由多窗下生效。
+* 使用[metadata](/docs/dev/app-dev/application-framework/arkui/window-manager/window-config-m)标签配置，name为'ohos.ability.window.supportWindowModeInFreeMultiWindow'，该字段配置仅在自由多窗下生效。
 * 在启动UIAbility时，通过[StartOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-startoptions#startoptions)中的supportWindowModes字段指定窗口是否显示最大化/窗口化/分屏按键。
 * 在启动后，可通过调用[setSupportedWindowModes()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#setsupportedwindowmodes15)接口动态修改当前主窗口支持的窗口模式。
 
@@ -464,7 +464,7 @@ module.json5配置示例如下：
 
 自由多窗下的可支持窗口模式可以采用多种方法进行配置，配置优先级为：
 
-通过[setSupportedWindowModes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#setsupportedwindowmodes15)接口配置 > 通过StartAbility配置[StartOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-startoptions#startoptions)中的SupportWindowMode > 使用metadata配置 > 配置module.json5中[abilities](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)标签下的SupportWindowMode属性。
+通过[setSupportedWindowModes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-windowstage#setsupportedwindowmodes15)接口配置 > 通过StartAbility配置[StartOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-startoptions#startoptions)中的SupportWindowMode > 使用metadata配置 > 配置module.json5中[abilities](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)标签下的SupportWindowMode属性。
 
 ## 如何判断当前窗口是否为自由悬浮窗口模式
 
@@ -477,7 +477,7 @@ module.json5配置示例如下：
   | 名称 | 值 | 说明 |
   | --- | --- | --- |
   | UNDEFINED | 0 | 表示APP未定义窗口模式。 |
-  | FULL\_SCREEN | 1 | 表示APP全屏模式。  [自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)状态下，窗口铺满整个屏幕，默认无dock栏、标题栏和状态栏显示。  可通过[maximize()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#maximize12)和[setTitleAndDockHoverShown()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#settitleanddockhovershown14)配置，当hover到热区时是否显示标题栏和dock栏。  当maximize()和setTitleAndDockHoverShown()接口都调用时，以最后调用设置的效果为准。  非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)状态下，窗口铺满整个屏幕，无标题栏和dock栏显示。可通过[setSpecificSystemBarEnabled()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setspecificsystembarenabled11)配置是否显示状态栏。 |
+  | FULL\_SCREEN | 1 | 表示APP全屏模式。  [自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)状态下，窗口铺满整个屏幕，默认无dock栏、标题栏和状态栏显示。  可通过[maximize()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#maximize12)和[setTitleAndDockHoverShown()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#settitleanddockhovershown14)配置，当hover到热区时是否显示标题栏和dock栏。  当maximize()和setTitleAndDockHoverShown()接口都调用时，以最后调用设置的效果为准。  非[自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)状态下，窗口铺满整个屏幕，无标题栏和dock栏显示。可通过[setSpecificSystemBarEnabled()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setspecificsystembarenabled11)配置是否显示状态栏。 |
   | MAXIMIZE | 2 | 表示APP窗口最大化模式，在2in1设备中，窗口铺满整个屏幕，有dock栏和状态栏。 |
   | MINIMIZE | 3 | 表示APP窗口最小化模式。 |
   | FLOATING | 4 | 表示APP自由悬浮窗口模式。 |
@@ -567,15 +567,15 @@ module.json5配置示例如下：
 
 **resize接口其他限制：**
 
-* 在[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)状态下，窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，WindowStatusType可通过[getWindowStatus()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getwindowstatus12)获取）时调用生效，否则抛出错误码1300002。
-* 在非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)状态下，主窗口调用不生效。
+* 在[自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)状态下，窗口为自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，WindowStatusType可通过[getWindowStatus()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getwindowstatus12)获取）时调用生效，否则抛出错误码1300002。
+* 在非[自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)状态下，主窗口调用不生效。
 
 **moveWindowTo接口其他限制：**
 
 * 不建议在除自由悬浮窗口模式（即窗口模式为window.WindowStatusType.FLOATING，WindowStatusType可通过[getWindowStatus()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getwindowstatus12)获取）外的其他窗口模式下使用。
-* 在[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)状态下，窗口相对于屏幕移动；在非自由窗口状态下，窗口相对于父窗口移动。
+* 在[自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)状态下，窗口相对于屏幕移动；在非自由窗口状态下，窗口相对于父窗口移动。
 * 若需在非自由窗口状态下实现相对于屏幕的移动，请使用[moveWindowToGlobal()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#movewindowtoglobal15)。
-* 在非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)状态下，主窗口调用不生效。
+* 在非[自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)状态下，主窗口调用不生效。
 
 ## 如何设置或取消水印
 

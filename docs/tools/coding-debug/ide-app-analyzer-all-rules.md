@@ -1,7 +1,7 @@
 ---
 title: "规则总览"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-app-analyzer-all-rules
+original_url: /docs/tools/coding-debug/ide-app-analyzer-all-rules
 format: md
 ---
 

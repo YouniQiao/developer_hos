@@ -1,7 +1,7 @@
 ---
 format: md
 title: "HAR包多账号如何上传"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-32
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-32
 ---
 
 

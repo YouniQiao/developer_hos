@@ -1,6 +1,6 @@
 ---
 title: "如何判断App的启动来源"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-99
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-99
 format: md
 ---
 

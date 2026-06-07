@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "检测环境中的平面（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-plane
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-plane/arengine-c-get-plane
 format: md
 ---
 
@@ -12,15 +12,15 @@ format: md
 
 ## 约束与限制
 
-从5.0.0(12)开始，检测环境平面能力支持部分Phone、部分Tablet设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持运动跟踪及平面识别特性（[ARENGINE\_FEATURE\_TYPE\_SLAM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
+从5.0.0(12)开始，检测环境平面能力支持部分Phone、部分Tablet设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持运动跟踪及平面识别特性（[ARENGINE\_FEATURE\_TYPE\_SLAM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
 
 ## 引入AR Engine
 
-开发者可参考管理AR会话章节的[引入AR Engine](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arsession#引入ar-engine)。
+开发者可参考管理AR会话章节的[引入AR Engine](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-c-arsession#引入ar-engine)。
 
 ## 创建ARSession
 
-开发者可以参考[管理AR会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arsession)创建ARSession。
+开发者可以参考[管理AR会话](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-c-arsession)创建ARSession。
 
 ## 创建平面对象列表
 

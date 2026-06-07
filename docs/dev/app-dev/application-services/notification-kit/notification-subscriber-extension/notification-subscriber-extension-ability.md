@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通知订阅扩展能力概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-subscriber-extension-ability
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-subscriber-extension/notification-subscriber-extension-ability
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 * 用户已通过穿戴应用程序与穿戴设备配对。
 * 用户已在穿戴应用中，通过[openSubscriptionSettings](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationextensionsubscription#notificationextensionsubscriptionopensubscriptionsettings)接口拉起的半模态弹窗中，开启了“允许获取本机通知”与“已获取的本机通知”的开关。
-* 支持[HFP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology#hfp)连接的设备，需保证HFP连接一直处于连接状态。
+* 支持[HFP](/docs/dev/app-dev/system/system-network/connectivity-kit/terminology#hfp)连接的设备，需保证HFP连接一直处于连接状态。
 
 ## 应用场景
 
@@ -26,7 +26,7 @@ format: md
 1. 本示例仅支持标准系统上运行，支持设备：Phone和Tablet。
 2. 本示例为Stage模型，支持API22及以上版本SDK。
 3. 本示例需要使用DevEco Studio 6.0.2 Release及以上版本才可编译运行。
-4. 三方穿戴应用需申请[ohos.permission.SUBSCRIBE\_NOTIFICATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionsubscribe_notification)权限，权限为system\_basic级别。
+4. 三方穿戴应用需申请[ohos.permission.SUBSCRIBE\_NOTIFICATION](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionsubscribe_notification)权限，权限为system\_basic级别。
 
 ## 运作机制
 

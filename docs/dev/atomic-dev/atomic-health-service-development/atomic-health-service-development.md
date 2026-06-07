@@ -1,6 +1,6 @@
 ---
 title: "运动健康"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-health-service-development
+original_url: /docs/dev/atomic-dev/atomic-health-service-development/atomic-health-service-development
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "下载工具包"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-download-tool-0000002377028329
+original_url: /docs/dev/game-dev/games-binary-optimization-download-tool-0000002377028329
 format: md
 ---
 

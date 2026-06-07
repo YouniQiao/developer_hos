@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Graphics Accelerate Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-introduction
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-introduction
 format: md
 ---
 
@@ -16,23 +16,23 @@ Graphics Accelerate Kit（图形加速服务）是集成了先进的图形渲染
 
   | 功能模块 | 描述 |
   | --- | --- |
-  | [超帧](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg) | 针对GPU重负载的高目标帧率游戏场景，超帧利用渲染管线中的时域和空域信息，通过软硬件结合的MEMC（运动估计、运动补偿）技术，在游戏真实渲染帧间高效插入预测帧。在最大程度保持原始渲染画质前提下，有效提升游戏帧率和运行流畅度，降低系统负载和功耗，延长手机的续航时间。 |
-  | [ABR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-abr) | 针对GPU重负载游戏场景，通过感知游戏、设备状态，自适应决策分辨率缩放因子，并基于FrameBuffer（帧缓冲，下文简称Buffer）调整分辨率，帮助游戏应用实现更稳定的帧率、更低的功耗。 |
-  | [OpenGTX](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-opengtx) | 针对高帧率重负载游戏场景，LTPO（动态帧率/刷新率）等方案通过实时感知游戏渲染状态、游戏场景、设备状态等信息，自适应调整游戏的帧率、设备的SOC/DDR频率，在不影响用户游戏体验的前提下，有效降低系统负载和功耗。 |
+  | [超帧](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-fg) | 针对GPU重负载的高目标帧率游戏场景，超帧利用渲染管线中的时域和空域信息，通过软硬件结合的MEMC（运动估计、运动补偿）技术，在游戏真实渲染帧间高效插入预测帧。在最大程度保持原始渲染画质前提下，有效提升游戏帧率和运行流畅度，降低系统负载和功耗，延长手机的续航时间。 |
+  | [ABR](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-abr) | 针对GPU重负载游戏场景，通过感知游戏、设备状态，自适应决策分辨率缩放因子，并基于FrameBuffer（帧缓冲，下文简称Buffer）调整分辨率，帮助游戏应用实现更稳定的帧率、更低的功耗。 |
+  | [OpenGTX](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-opengtx) | 针对高帧率重负载游戏场景，LTPO（动态帧率/刷新率）等方案通过实时感知游戏渲染状态、游戏场景、设备状态等信息，自适应调整游戏的帧率、设备的SOC/DDR频率，在不影响用户游戏体验的前提下，有效降低系统负载和功耗。 |
 * 游戏资源加速服务
 
   游戏资源加速服务旨在利用后台任务调度、预加载等技术手段，实现资源包的高效后台更新和管理，降低游戏启动的等待时间，避免由于游戏内的资源包更新导致玩家流失。
 
   | 功能模块 | 描述 |
   | --- | --- |
-  | [资源包后台下载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-introduction) | 资源包后台下载是将资源文件（例如关卡包、3D角色模型、纹理等）静默下载到用户设备中，减少游戏启动后等待资源包下载的时间，解决游戏启动慢的问题，为用户提供即开即玩的游戏体验。 |
+  | [资源包后台下载](/docs/dev/app-dev/graphics/graphics-accelerate-assetdownload-introduction) | 资源包后台下载是将资源文件（例如关卡包、3D角色模型、纹理等）静默下载到用户设备中，减少游戏启动后等待资源包下载的时间，解决游戏启动慢的问题，为用户提供即开即玩的游戏体验。 |
 * 游戏启动加速服务
 
   游戏启动加速服务基于游戏内存镜像精准恢复技术，实现游戏秒级启动，支持玩家享受高品质的游戏体验。
 
   | 功能模块 | 描述 |
   | --- | --- |
-  | [秒级启动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-introduction) | 秒级启动功能是在游戏退出时，系统自动为游戏制作内存镜像，在该游戏下一次冷启动时，可通过加载内存镜像实现游戏的秒开秒进，无需再经过漫长的加载过程，大大提升了游戏操控体验。 |
+  | [秒级启动](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-overview) | 秒级启动功能是在游戏退出时，系统自动为游戏制作内存镜像，在该游戏下一次冷启动时，可通过加载内存镜像实现游戏的秒开秒进，无需再经过漫长的加载过程，大大提升了游戏操控体验。 |
 
 ## 约束和限制
 

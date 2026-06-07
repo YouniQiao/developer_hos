@@ -1,7 +1,7 @@
 ---
 title: "影响应用兼容性的关键信息"
 displayed_sidebar: appCompatibilitySidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/app-compatibility-influence-factor
+original_url: /docs/design/app-compatibility/app-compatibility-influence-factor
 format: md
 ---
 

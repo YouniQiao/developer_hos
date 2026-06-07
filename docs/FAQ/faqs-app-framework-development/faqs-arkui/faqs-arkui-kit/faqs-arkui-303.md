@@ -1,6 +1,6 @@
 ---
 title: "Toggle组件设置拖动的同时如何屏蔽其本身的点击手势"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-303
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-303
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "应用隐私保护"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-privacy-protection
+original_url: /docs/security/app-privacy-protection
 format: md
 ---
 
@@ -63,7 +63,7 @@ format: md
 
    技术上保证数据处理的安全性，包括加密存储和安全传输，应默认开启或采取安全保护措施。
 
-   存储敏感数据应该进行加密处理，具体可以参考《[应用数据安全](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-data-security)》。
+   存储敏感数据应该进行加密处理，具体可以参考《[应用数据安全](/docs/security/data-security)》。
 
 ## 隐私保护最佳实践
 
@@ -179,7 +179,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/c7/v3/vyZYEGM1T9mO3py_f1vSdQ/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080345Z&HW-CC-Expire=86400&HW-CC-Sign=D7C6648FB0E466A02E9680BFB6261A9A2688CDF25BB211B30F564CC133ABF35B)
 
-权限的申请具体可以参考：[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+权限的申请具体可以参考：[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ### 减少使用存储权限
 

@@ -1,7 +1,7 @@
 ---
 title: "创建影子投放任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-shadow-delivery-create-0000001285257656
+original_url: /docs/monetize/promotion/bp-functions-shadow-delivery-create-0000001285257656
 format: md
 ---
 

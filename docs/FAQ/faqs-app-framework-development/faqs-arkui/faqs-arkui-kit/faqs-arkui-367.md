@@ -1,6 +1,6 @@
 ---
 title: "如何获取ArkTS状态管理框架代理前的原始对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-367
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-367
 format: md
 ---
 
@@ -43,4 +43,4 @@ struct GetTargetDemo {
 
 参考链接
 
-[getTarget接口：获取状态管理框架代理前的原始对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-gettarget)
+[getTarget接口：获取状态管理框架代理前的原始对象](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-gettarget)

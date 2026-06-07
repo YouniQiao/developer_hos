@@ -1,6 +1,6 @@
 ---
 title: "应用被查杀类问题分析方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-killed-way
+original_url: /docs/quality/stability-app-killed-way
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 目前应用可以通过两种方式感知到应用被异常查杀
 
 1. 元能力提供的Ability的onCreate回调参数中来获取到查杀原因。具体来说就是LaunchParam启动参数中的LastExitReason字段，请参考[LastExitReason](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilityconstant#lastexitreason)。
-2. 通过HiAppEvent订阅APP\_KILLED事件，订阅后就能在收到的回调函数中解析出查杀原因（如LowMemoryKill、OomKiller等），请参考[应用查杀事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events)。
+2. 通过HiAppEvent订阅APP\_KILLED事件，订阅后就能在收到的回调函数中解析出查杀原因（如LowMemoryKill、OomKiller等），请参考[应用查杀事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events)。
 
 ## 分析思路和分析步骤
 
@@ -22,7 +22,7 @@ format: md
 
    | **LastExitReason(enum**) | 产生原因 | 处理策略 |
    | --- | --- | --- |
-   | APP\_FREEZE | 由于watchdog检测出应用冻屏故障，导致应用程序退出。 | 通过HiAppEvent订阅[应用冻屏事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/freeze-events)，到应用冻屏事件中去匹配。 |
+   | APP\_FREEZE | 由于watchdog检测出应用冻屏故障，导致应用程序退出。 | 通过HiAppEvent订阅[应用冻屏事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events)，到应用冻屏事件中去匹配。 |
    | RESOURCE\_CONTROL | CPU高负载。 | 尝试降低应用自身的CPU负载。 |
    | 快速CPU负载检测。 | 尝试降低应用自身的CPU负载。 |
    | I/O管控。 | 尝试降低应用自身的IO用量。 |
@@ -41,7 +41,7 @@ format: md
    | ResourceLeak(GpuRsLeak) | 应用的ArkUI组件在render\_service服务进程占用的GPU内存超标 | 尝试降低应用ArkUI组件的GPU内存占用（例如使用image组件绘制超大图，使用autoResize优化内存占用） | 是 | 否 | 是 |
    | ResourceLeak(GpuLeak) | 应用在本进程内占用的GPU内存（即自渲染产生的GPU内存）超标 | 尝试通过HiAppEvent订阅RESOURCE\_OVERLIMIT获取更多的GPU内存日志，找到泄漏点后，降低应用自渲染（使用XComponent组件）的GPU内存占用 | 是 | 是  （RESOURCE\_OVERLIMIT） | 是 |
    | ResourceLeak(AshmemLeak) | 应用占用的ashmem内存超标 | 尝试通过HiAppEvent订阅RESOURCE\_OVERLIMIT获取更多的ashmem内存日志，找到泄漏点后，降低应用自身的ashmem内存占用，一般来说是Image组件或者Pixmap泄漏导致 | 是 | 是  （RESOURCE\_OVERLIMIT） | 是 |
-   | IllegalAudioRendererBySuspend | 未申请合理的后台任务，但是后台有大量音频播放 | 应用退至后台时，应避免不必要的后台音频播放，或者合理使用后台任务，具体参考[后台任务开发服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-kit) | 是 | 否 | 否 |
+   | IllegalAudioRendererBySuspend | 未申请合理的后台任务，但是后台有大量音频播放 | 应用退至后台时，应避免不必要的后台音频播放，或者合理使用后台任务，具体参考[后台任务开发服务](/docs/dev/app-dev/application-framework/background-task-kit) | 是 | 否 | 否 |
    | PowerSaveClean | 整机切换到省电模式或应急模式 | 无需处理 | 否 | 否 | 否 |
    | RssThresholdKiller | 应用的RSS内存超一定阈值 | 尝试降低应用自身的内存占用，避免出现RSS内存超过阈值的情况 | 是 | 否 | 是 |
    | OomKiller | 整机低内存触发了内核按一定策略进行应用查杀 | 尝试降低应用自身的内存占用，以减少被整机查杀策略选中的概率 | 否 | 否 | 是 |

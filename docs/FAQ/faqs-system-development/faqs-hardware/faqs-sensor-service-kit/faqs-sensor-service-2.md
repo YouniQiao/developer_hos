@@ -1,6 +1,6 @@
 ---
 title: "如何读取运动传感器比如加速度传感器"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-sensor-service-2
+original_url: /docs/FAQ/faqs-system-development/faqs-hardware/faqs-sensor-service-kit/faqs-sensor-service-2
 format: md
 ---
 

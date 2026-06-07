@@ -1,7 +1,7 @@
 ---
 title: "查询应用详情"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-product4-0000001286339298
+original_url: /docs/monetize/promotion/marketing-api-advertising-product4-0000001286339298
 format: md
 ---
 

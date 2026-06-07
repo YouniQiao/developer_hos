@@ -1,7 +1,7 @@
 ---
 title: "APK游戏接入"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-access-view-0000001239185215
+original_url: /docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-access-view-0000001239185215
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 游戏准备工作包括配置应用基本信息、制作游戏包等：
 
 * 按照国家政策要求，您需提前准备各类游戏版权信息和版号对应的资质文件，详情请参见[版权资质审核要求](`https://developer.huawei.com/consumer/cn/doc/80301`)。
-* 您需要提前制作并适配游戏包，以免影响接入进展，详情请参见[游戏SDK接入指南](`https://developer.huawei.com/consumer/cn/doc/app/game-center-preparation-work-0000001194305246#section188071321105117`)。
+* 您需要提前制作并适配游戏包，以免影响接入进展，详情请参见[游戏SDK接入指南](`/docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-preparation-work-0000001194305246#section188071321105117`)。
 
 ## 新游预约
 

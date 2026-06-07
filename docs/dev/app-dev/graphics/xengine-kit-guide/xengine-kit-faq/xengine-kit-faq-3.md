@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自适应VRS深度附件使用说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-3
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-faq/xengine-kit-faq-3
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "投放创意任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-create-0000001345794602
+original_url: /docs/monetize/promotion/bp-delivery-task-create-0000001345794602
 format: md
 ---
 
@@ -68,9 +68,9 @@ format: md
    | --- | --- |
    | 子任务名称 | 关键词所在的子任务名称。同一任务内的子任务名称唯一、不能重复，命名格式建议：关键词+匹配方式。 |
    | 出价 | 不得低于该处显示的任务底价。 |
-   | 操作 | 点击蓝色字段“编辑”，创建用户定向任务，详细请参见[新建人群定向任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-create-0000001337388933)。 |
+   | 操作 | 点击蓝色字段“编辑”，创建用户定向任务，详细请参见[新建人群定向任务](/docs/monetize/promotion/bp-functions-target-create-0000001337388933)。 |
    | RTA 策略ID | RTA ID由数字、字母组成，长度不超过32。请确保RTA ID正确填写，否则会导致RTA任务失效。 |
-6. 在“归因监测”设置模块，配置相关任务设置项。具体任务设置项的配置请参见[智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)、[监测链接](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-configure-0000001351658397)或[华为分析监测](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ha-create-task-0000001348575585)。
+6. 在“归因监测”设置模块，配置相关任务设置项。具体任务设置项的配置请参见[智能分包](/docs/monetize/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)、[监测链接](/docs/monetize/promotion/bp-functions-link-configure-0000001351658397)或[华为分析监测](/docs/monetize/promotion/bp-functions-ha-create-task-0000001348575585)。
 
    ![](./img/zh-cn_image_0000002581602789_60a7da388c2d.png "点击放大")
 7. 点击“提交并编辑创意”，进入“推广创意”设置模块。配置相关任务设置项，完成后点击“提交创意”。图片中以“横版大图”展示类型为例。
@@ -87,7 +87,7 @@ format: md
 
      | 任务设置项 | 说明 |
      | --- | --- |
-     | 展示类型 | 根据您的需求选择创意的展示类型，并根据页面提示的规格要求上传图片或视频。  说明：  当您展示类型选择为“横版大图”、“竖版大图”、“横版小图”、“横版小三图”时，您可以直接上传图片，也可以点击“[使用模板制图](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-draw-tools-introduction-0000001399522565)”快速生成创意素材或“[从素材库选择](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-material-library-introduction-0000001399645709)”复用之前保存的素材。 |
+     | 展示类型 | 根据您的需求选择创意的展示类型，并根据页面提示的规格要求上传图片或视频。  说明：  当您展示类型选择为“横版大图”、“竖版大图”、“横版小图”、“横版小三图”时，您可以直接上传图片，也可以点击“[使用模板制图](/docs/monetize/promotion/bp-functions-draw-tools-introduction-0000001399522565)”快速生成创意素材或“[从素材库选择](/docs/monetize/promotion/bp-functions-material-library-introduction-0000001399645709)”复用之前保存的素材。 |
      | 创意标签 | 您可以选择添加创意标签，更好地提升推广效果。当前最多可添加5个标签。 |
    - “应用介绍”区域
 
@@ -98,7 +98,7 @@ format: md
 
      | 任务设置项 | 说明 |
      | --- | --- |
-     | APP Deeplink | 若用户已安装您的应用，点击打开或素材，将会直接访问您配置的Deeplink页面和内容。  具体调测方法请参见[普通Deeplink调测流程](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-commondeeplink-test-0000002039774721)。 |
+     | APP Deeplink | 若用户已安装您的应用，点击打开或素材，将会直接访问您配置的Deeplink页面和内容。  具体调测方法请参见[普通Deeplink调测流程](/docs/monetize/promotion/bp-functions-commondeeplink-test-0000002039774721)。 |
    - “创意命名”区域
 
      | 任务设置项 | 说明 |

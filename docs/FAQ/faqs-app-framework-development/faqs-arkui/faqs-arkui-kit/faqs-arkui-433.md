@@ -1,7 +1,7 @@
 ---
 format: md
 title: "手表设备，熄屏2分钟才能收到onHidden回调"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-433
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-433
 ---
 
 

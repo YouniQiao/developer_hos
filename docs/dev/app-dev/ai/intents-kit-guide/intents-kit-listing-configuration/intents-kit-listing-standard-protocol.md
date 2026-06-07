@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "意图标准协议上架指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-kit-listing-standard-protocol
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-kit-listing-configuration/intents-kit-listing-standard-protocol
 format: md
 ---
 

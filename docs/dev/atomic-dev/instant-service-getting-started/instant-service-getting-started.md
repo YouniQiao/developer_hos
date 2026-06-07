@@ -1,6 +1,6 @@
 ---
 title: "入门指引"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-getting-started
+original_url: /docs/dev/atomic-dev/instant-service-getting-started/instant-service-getting-started
 format: md
 ---
 

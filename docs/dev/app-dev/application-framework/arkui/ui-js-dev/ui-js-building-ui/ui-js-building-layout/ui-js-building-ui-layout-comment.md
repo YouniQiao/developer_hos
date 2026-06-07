@@ -1,6 +1,6 @@
 ---
 title: "添加留言区域"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-layout-comment
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-layout/ui-js-building-ui-layout-comment
 format: md
 ---
 

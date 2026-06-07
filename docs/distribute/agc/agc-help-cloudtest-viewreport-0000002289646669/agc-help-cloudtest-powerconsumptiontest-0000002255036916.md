@@ -1,6 +1,6 @@
 ---
 title: "功耗测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-powerconsumptiontest-0000002255036916
+original_url: /docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-powerconsumptiontest-0000002255036916
 format: md
 ---
 

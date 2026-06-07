@@ -1,7 +1,7 @@
 ---
 title: "编辑素材"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-asset3-0000001286022210
+original_url: /docs/monetize/promotion/marketing-api-tool-asset3-0000001286022210
 format: md
 ---
 

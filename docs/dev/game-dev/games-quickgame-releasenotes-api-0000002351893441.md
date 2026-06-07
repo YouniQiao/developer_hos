@@ -1,6 +1,6 @@
 ---
 title: "快游戏API更新说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-releasenotes-api-0000002351893441
+original_url: /docs/dev/game-dev/games-quickgame-releasenotes-api-0000002351893441
 format: md
 ---
 

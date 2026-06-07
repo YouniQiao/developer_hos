@@ -1,6 +1,6 @@
 ---
 title: "申请二进制证书"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-binary-cert-0000002408063605
+original_url: /docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-binary-cert-0000002408063605
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 #### 准备工作
 
 * 请准备好[证书请求文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)。
-* 请确保您的账号角色已[获取“访问发布类证书”权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
+* 请确保您的账号角色已[获取“访问发布类证书”权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
 
 #### 操作步骤
 

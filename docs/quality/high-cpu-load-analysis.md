@@ -1,6 +1,6 @@
 ---
 title: "CPU 高负载分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-high-cpu-load-analysis
+original_url: /docs/quality/high-cpu-load-analysis
 format: md
 ---
 
@@ -59,7 +59,7 @@ CPU高负载问题通常涉及以下三种情况：
    当所有CPU核频点都较高时，选择CPU Core泳道，查看CPU负载来源。通过详情区，可以看到CPU负载主要来源于应用侧的子线程（线程号55523）。
 
    ![](./img/0ee6ad33.png "点击放大")
-3. 根据CPU高负载线程类型进行详细排查。本案例中，CPU负载主要来源于应用侧的子线程（线程号55523）。需要借助[点击完成时延分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-complete-delay-analysis)该线程执行的任务，结合函数栈排查业务逻辑是否存在异常。大多情况下都是由于该线程频繁执行长耗时任务或者无限循环逻辑导致的。
+3. 根据CPU高负载线程类型进行详细排查。本案例中，CPU负载主要来源于应用侧的子线程（线程号55523）。需要借助[点击完成时延分析](/docs/quality/click-to-complete-delay-analysis)该线程执行的任务，结合函数栈排查业务逻辑是否存在异常。大多情况下都是由于该线程频繁执行长耗时任务或者无限循环逻辑导致的。
 
 ### 案例二：GC线程负载过高
 

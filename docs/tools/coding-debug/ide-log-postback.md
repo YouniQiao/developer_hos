@@ -1,7 +1,7 @@
 ---
 title: "日志上传"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-log-postback
+original_url: /docs/tools/coding-debug/ide-log-postback
 format: md
 ---
 

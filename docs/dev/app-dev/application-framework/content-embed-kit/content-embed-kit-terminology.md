@@ -1,6 +1,6 @@
 ---
 title: "Content Embed Kit术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology
+original_url: /docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology
 format: md
 ---
 
@@ -35,7 +35,7 @@ OE文档是一种采用结构化存储的复合文件，结构化存储定义了
 
 ## OE Extension
 
-Content Embed Kit提供的[ExtensionAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)，用于三方应用实现特定格式文档嵌入与编辑能力。
+Content Embed Kit提供的[ExtensionAbility组件](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)，用于三方应用实现特定格式文档嵌入与编辑能力。
 
 ## OE SA
 

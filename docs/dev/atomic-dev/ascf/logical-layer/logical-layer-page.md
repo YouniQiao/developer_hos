@@ -1,6 +1,6 @@
 ---
 title: "Page"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-page
+original_url: /docs/dev/atomic-dev/ascf/logical-layer/logical-layer-page
 format: md
 ---
 
@@ -20,7 +20,7 @@ Page(Object object)
 | 属性 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
 | data | object | 否 | 页面的初始数据。 |
-| options | object | 否 | 页面的组件选项，同[Component](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-component)中的options。 |
+| options | object | 否 | 页面的组件选项，同[Component](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-component)中的options。 |
 | onLoad | function | 否 | 生命周期回调（监听页面加载）。 |
 | onShow | function | 否 | 生命周期回调（监听页面显示）。 |
 | onReady | function | 否 | 生命周期回调（监听页面初次渲染完成）。 |

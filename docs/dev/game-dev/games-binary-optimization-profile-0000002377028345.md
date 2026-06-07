@@ -1,14 +1,14 @@
 ---
 title: "采集profile数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-profile-0000002377028345
+original_url: /docs/dev/game-dev/games-binary-optimization-profile-0000002377028345
 format: md
 ---
 
 
 ## 前提条件
 
-* 已[配置hdc工具](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-tool-config-0000002343110256)。
-* 已[下载工具包](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-download-tool-0000002377028329)。
+* 已[配置hdc工具](/docs/dev/game-dev/games-binary-optimization-tool-config-0000002343110256)。
+* 已[下载工具包](/docs/dev/game-dev/games-binary-optimization-download-tool-0000002377028329)。
 
 ## 清理无关profile文件
 

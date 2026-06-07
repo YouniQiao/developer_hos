@@ -1,7 +1,7 @@
 ---
 title: "更多的扩展能力"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-emulator-more-features
+original_url: /docs/tools/coding-debug/ide-emulator-more-features
 format: md
 ---
 

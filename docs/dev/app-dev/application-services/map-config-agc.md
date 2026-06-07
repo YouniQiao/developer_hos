@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc
+original_url: /docs/dev/app-dev/application-services/map-config-agc
 format: md
 ---
 
@@ -51,8 +51,8 @@ Map Kit提供2种方式开通地图服务：
    ![](./img/70443444.png)
 4. 确认已经开启“地图服务”开放能力，并完成签名。
 
-   * 调试阶段必须[申请调试证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-debugcert-0000001914263178)、[注册设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-device-0000002283189937)、开启"地图服务"后重新[申请调试Profile文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)，并完成[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
-   * 发布阶段必须[申请发布证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-cert-0000002283336729)、开启“地图服务”后重新[申请发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)文件，并[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)。
+   * 调试阶段必须[申请调试证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-debugcert-0000001914263178)、[注册设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)、开启"地图服务"后重新[申请调试Profile文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)，并完成[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+   * 发布阶段必须[申请发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)、开启“地图服务”后重新[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)文件，并[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)。
 
      ![](./img/e884151e.png)
 

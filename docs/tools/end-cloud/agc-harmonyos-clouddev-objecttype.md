@@ -2,7 +2,7 @@
 
 title: "创建对象类型"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-objecttype
+original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-objecttype
 format: md
 ---
 

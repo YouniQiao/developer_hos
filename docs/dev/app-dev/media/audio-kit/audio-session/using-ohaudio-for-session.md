@@ -1,16 +1,16 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用OHAudio开发音频会话功能(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-session
+original_url: /docs/dev/app-dev/media/audio-kit/audio-session/using-ohaudio-for-session
 format: md
 ---
 
 
-对于涉及多个音频流并发播放的场景，系统已预设了默认的[音频焦点策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#音频焦点策略)，该策略将对所有音频流（包括播放和录制）实施统一的焦点管理。
+对于涉及多个音频流并发播放的场景，系统已预设了默认的[音频焦点策略](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#音频焦点策略)，该策略将对所有音频流（包括播放和录制）实施统一的焦点管理。
 
 应用可利用音频会话管理（AudioSessionManager）提供的接口，通过AudioSession主动管理应用内音频流的焦点，自定义本应用音频流的焦点策略，调整本应用音频流释放音频焦点的时机，从而贴合应用特定的使用需求。
 
-本文主要介绍AudioSession相关C API的使用方法和注意事项，更多音频焦点及音频会话的信息，可参考：[音频焦点介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency)和[音频会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management)。
+本文主要介绍AudioSession相关C API的使用方法和注意事项，更多音频焦点及音频会话的信息，可参考：[音频焦点介绍](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency)和[音频会话管理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management)。
 
 ## 使用入门
 

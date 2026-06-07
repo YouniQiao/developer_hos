@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "坐标纠偏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-convert-coordinate
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-calculation-tool/map-convert-coordinate
 format: md
 ---
 

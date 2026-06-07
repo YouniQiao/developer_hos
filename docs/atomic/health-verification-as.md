@@ -1,11 +1,11 @@
 ---
 title: "申请验证获取正式权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-verification-as
+original_url: /docs/dev/atomic-dev/health-harmonyos-as/health-verification-as
 format: md
 ---
 
 
-完成[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-apply-as)后，审核通过的权限为测试权限，有100个用户数量的限制。为解除用户数的限制，应用开发完成后，在上架之前，请按照以下步骤提交验证申请，以获取正式权限。完成验证后，您的应用可支持正式大规模商用。
+完成[申请运动健康服务](/docs/dev/atomic-dev/health-preparations-as/health-apply-as)后，审核通过的权限为测试权限，有100个用户数量的限制。为解除用户数的限制，应用开发完成后，在上架之前，请按照以下步骤提交验证申请，以获取正式权限。完成验证后，您的应用可支持正式大规模商用。
 
 ## 申请验证
 
@@ -69,7 +69,7 @@ format: md
 
   1.文字描述中使用“华为运动健康”或“HUAWEI Health”。
 
-  2.开发者应用面向用户界面，统一使用[华为运动健康品牌logo](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-logo-usage-regulations-as)。
+  2.开发者应用面向用户界面，统一使用[华为运动健康品牌logo](/docs/dev/atomic-dev/health-appendix-as/health-logo-usage-regulations-as)。
 
 ### 授权页面权限展示不一致，图标不一致
 
@@ -98,7 +98,7 @@ format: md
   您的应用需要为用户提供取消授权功能。
 * 解决办法：
 
-  请参见[管理用户授权](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-add-permissions-as)章节集成取消授权功能。
+  请参见[管理用户授权](/docs/dev/atomic-dev/health-app-dev-as/health-add-permissions-as)章节集成取消授权功能。
 
 ### 用户需要全部授权后才能使用服务、缺少授权不足提示
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "基于URL跳转方式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment-url
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment/payment-launch-third-party-payment-url
 format: md
 ---
 

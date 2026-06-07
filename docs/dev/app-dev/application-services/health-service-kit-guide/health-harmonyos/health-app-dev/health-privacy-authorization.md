@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "拉起运动健康App隐私授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-privacy-authorization
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-privacy-authorization
 format: md
 ---
 
@@ -28,7 +28,7 @@ format: md
 3. 调用[canOpenLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagercanopenlink12)判断运动健康App是否安装。
 
    * 已安装则调用[openLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#openlink12)接口拉起运动健康App；
-   * 未安装调用[应用市场推荐](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-loadproduct)接口，引导用户下载运动健康App。
+   * 未安装调用[应用市场推荐](/docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-loadproduct)接口，引导用户下载运动健康App。
 
    ```
    try {

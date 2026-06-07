@@ -1,6 +1,6 @@
 ---
 title: "应用模型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-models
+original_url: /docs/dev/app-dev/application-framework/ability-kit/application-models
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
    应用组件是应用的基本组成单位和运行入口。
 
-   在用户启动、使用和退出应用的过程中，应用组件会在不同的状态间切换，这些状态称为[应用组件的生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle)。
+   在用户启动、使用和退出应用的过程中，应用组件会在不同的状态间切换，这些状态称为[应用组件的生命周期](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-lifecycle)。
 
    应用组件提供生命周期回调函数，开发者通过这些回调可以感知应用状态的变化。
 
@@ -41,8 +41,8 @@ format: md
 
 随着系统的演进发展，先后提供了两种应用模型：
 
-* [FA（Feature Ability）模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#fa模型)：从API 7开始支持的模型，已经不再主推。
-* [Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#stage模型)：从API 9开始新增的模型，是目前主推且会长期演进的模型。在该模型中，由于提供了AbilityStage、WindowStage等类作为应用组件和Window窗口的“舞台”，因此称这种应用模型为Stage模型。
+* [FA（Feature Ability）模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#fa模型)：从API 7开始支持的模型，已经不再主推。
+* [Stage模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#stage模型)：从API 9开始新增的模型，是目前主推且会长期演进的模型。在该模型中，由于提供了AbilityStage、WindowStage等类作为应用组件和Window窗口的“舞台”，因此称这种应用模型为Stage模型。
 
 ## 通过对比认识FA模型与Stage模型
 
@@ -54,7 +54,7 @@ format: md
 
 | 项目 | FA模型 | Stage模型 |
 | --- | --- | --- |
-| **应用组件** | 1. 组件分类  ![](./img/43d6d9cd.png) - PageAbility组件：包含UI，提供展示UI的能力。详细介绍请参见[PageAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-overview)。  - ServiceAbility组件：提供后台服务的能力，无UI。详细介绍请参见[ServiceAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-overview)。  - DataAbility组件：提供数据分享的能力，无UI。详细介绍请参见[DataAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-overview)。  2. 开发方式  通过导出匿名对象、固定入口文件的方式指定应用组件。开发者无法进行派生，不利于扩展能力。 | 1. 组件分类  ![](./img/ea99ea89.png) - UIAbility组件：包含UI，提供展示UI的能力，主要用于和用户交互。详细介绍请参见[UIAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-overview)。  - ExtensionAbility组件：提供特定场景（如卡片、输入法）的扩展能力，满足更多的使用场景。详细介绍请参见[ExtensionAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)。  2. 开发方式  采用面向对象的方式，将应用组件以类接口的形式开放给开发者，可以进行派生，利于扩展能力。 |
-| **进程模型** | 有两类进程：  1. 主进程  2. 渲染进程  详细介绍请参见[进程模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-fa)。 | 包含主进程、ExtensionAbility进程、渲染进程等基本进程类型，以及其他进程类型。  详细介绍请参见[进程模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage)。 |
-| **线程模型** | 1. ArkTS引擎实例的创建  一个进程可以运行多个应用组件实例，每个应用组件实例分别运行在单独的ArkTS引擎实例中。  2. 线程模型  每个ArkTS引擎实例都在一个单独线程（非主线程）上创建，主线程没有ArkTS引擎实例。  3. 进程内对象共享：不支持。  详细介绍请参见[线程模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thread-model-fa)。 | 1. ArkTS引擎实例的创建  一个进程可以运行多个应用组件实例，所有应用组件实例共享一个ArkTS引擎实例。  2. 线程模型  ArkTS引擎实例在主线程上创建。  3. 进程内对象共享：支持。  详细介绍请参见[线程模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thread-model-stage)。 |
-| **应用配置文件** | 使用config.json描述应用信息、HAP信息和应用组件信息。  详细介绍请参见[应用配置文件概述（FA模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-fa)。 | 使用app.json5描述应用信息，module.json5描述HAP信息、应用组件信息。  详细介绍请参见[应用配置文件概述（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-stage)。 |
+| **应用组件** | 1. 组件分类  ![](./img/43d6d9cd.png) - PageAbility组件：包含UI，提供展示UI的能力。详细介绍请参见[PageAbility组件概述](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-overview)。  - ServiceAbility组件：提供后台服务的能力，无UI。详细介绍请参见[ServiceAbility组件概述](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/serviceability-overview)。  - DataAbility组件：提供数据分享的能力，无UI。详细介绍请参见[DataAbility组件概述](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-overview)。  2. 开发方式  通过导出匿名对象、固定入口文件的方式指定应用组件。开发者无法进行派生，不利于扩展能力。 | 1. 组件分类  ![](./img/ea99ea89.png) - UIAbility组件：包含UI，提供展示UI的能力，主要用于和用户交互。详细介绍请参见[UIAbility组件概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-overview)。  - ExtensionAbility组件：提供特定场景（如卡片、输入法）的扩展能力，满足更多的使用场景。详细介绍请参见[ExtensionAbility组件概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)。  2. 开发方式  采用面向对象的方式，将应用组件以类接口的形式开放给开发者，可以进行派生，利于扩展能力。 |
+| **进程模型** | 有两类进程：  1. 主进程  2. 渲染进程  详细介绍请参见[进程模型](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/process-model-fa)。 | 包含主进程、ExtensionAbility进程、渲染进程等基本进程类型，以及其他进程类型。  详细介绍请参见[进程模型](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/process-model-stage)。 |
+| **线程模型** | 1. ArkTS引擎实例的创建  一个进程可以运行多个应用组件实例，每个应用组件实例分别运行在单独的ArkTS引擎实例中。  2. 线程模型  每个ArkTS引擎实例都在一个单独线程（非主线程）上创建，主线程没有ArkTS引擎实例。  3. 进程内对象共享：不支持。  详细介绍请参见[线程模型](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/thread-model-fa)。 | 1. ArkTS引擎实例的创建  一个进程可以运行多个应用组件实例，所有应用组件实例共享一个ArkTS引擎实例。  2. 线程模型  ArkTS引擎实例在主线程上创建。  3. 进程内对象共享：支持。  详细介绍请参见[线程模型](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/thread-model-stage)。 |
+| **应用配置文件** | 使用config.json描述应用信息、HAP信息和应用组件信息。  详细介绍请参见[应用配置文件概述（FA模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-fa)。 | 使用app.json5描述应用信息，module.json5描述HAP信息、应用组件信息。  详细介绍请参见[应用配置文件概述（Stage模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-stage)。 |

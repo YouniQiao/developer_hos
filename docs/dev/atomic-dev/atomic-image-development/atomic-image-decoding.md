@@ -1,6 +1,6 @@
 ---
 title: "图片解码"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-decoding
+original_url: /docs/dev/atomic-dev/atomic-image-development/atomic-image-decoding
 format: md
 ---
 

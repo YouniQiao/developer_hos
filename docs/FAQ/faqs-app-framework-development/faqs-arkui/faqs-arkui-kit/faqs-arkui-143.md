@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现拖拽时列表项占位动画的效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-143
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-143
 ---
 
 

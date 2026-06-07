@@ -1,6 +1,6 @@
 ---
 title: "创建并发布测试版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publictest-release-app-0000002259033172
+original_url: /docs/distribute/agc/agc-help-public-test-0000002287814841/agc-help-publictest-release-app-0000002259033172
 format: md
 ---
 
@@ -52,7 +52,7 @@ format: md
 
    | 参数 | 说明 |
    | --- | --- |
-   | 发布版本 | 点击“版本选取”，选择您之前在“软件包管理”菜单上传的软件包，点击“选取”。一个测试版本只允许选取一个软件包。具体操作可参考[选择待发布软件包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-choose-pkg-0000002278981434)。 |
+   | 发布版本 | 点击“版本选取”，选择您之前在“软件包管理”菜单上传的软件包，点击“选取”。一个测试版本只允许选取一个软件包。具体操作可参考[选择待发布软件包](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-choose-pkg-0000002278981434)。 |
    | 版本描述 | 创建测试版本时自定义的版本描述，支持修改。不超过30个字符。 |
 
 8. 配置可本地化基础信息。
@@ -69,8 +69,8 @@ format: md
    | 应用一句话简介（小编推荐） | 简单介绍该应用，应突出应用的主要特色，以帮助提升应用下载率。中文限制17个字以内，其他语言限制80个字以内。  说明：  若软件包使用场景为“仅测试”，则一句话简介为非必填。若软件包使用场景为“测试和正式上架”，则一句话简介为必填。 |
    | 测试说明 | 介绍此测试版本的功能和特性，不超过1000字符。  可在此预留您的联系方式，用于收集用户测试过程中发现的相关问题。 |
    | 新版本特性 | 描述新版本的特性，500字以内。  新版本特性将在华为应用市场客户端更新页中展示，认真填写可增加应用的下载量 。 |
-   | 应用图标 | 上传应用图标，各设备类型的图标规范请参见[素材规范](https://developer.huawei.com/consumer/cn/doc/app/agc-help-app-visual-asset-spec-0000002277607976)。 |
-   | 应用截图和视频 | 上传应用详情页展示的素材，具体素材规范请参见[素材规范](https://developer.huawei.com/consumer/cn/doc/app/agc-help-app-visual-asset-spec-0000002277607976)。  说明：  * 元服务不展示此选项。 * 若软件包使用场景为“仅测试”，则本选项为非必填。若软件包使用场景为“测试和正式上架”，则本选项为必填。 |
+   | 应用图标 | 上传应用图标，各设备类型的图标规范请参见[素材规范](/docs/distribute/agc/agc-help-appendix-0000002312305161/agc-help-app-visual-asset-spec-0000002277607976)。 |
+   | 应用截图和视频 | 上传应用详情页展示的素材，具体素材规范请参见[素材规范](/docs/distribute/agc/agc-help-appendix-0000002312305161/agc-help-app-visual-asset-spec-0000002277607976)。  说明：  * 元服务不展示此选项。 * 若软件包使用场景为“仅测试”，则本选项为非必填。若软件包使用场景为“测试和正式上架”，则本选项为必填。 |
 
 9. 配置应用内资费。
 
@@ -79,7 +79,7 @@ format: md
    ![](../img/agc-help-publictest-release-app-0000002259033172_6.png)
 10. 设置内容分级。
 
-    点击“设置”，按实际情况填写调查问卷，填写完成将获取当前应用的年龄分级结果。具体操作可参考[配置内容分级](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-rating-0000002313511005)。
+    点击“设置”，按实际情况填写调查问卷，填写完成将获取当前应用的年龄分级结果。具体操作可参考[配置内容分级](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-rating-0000002313511005)。
 
     ![](../img/agc-help-publictest-release-app-0000002259033172_7.png)
 11. 配置隐私声明。
@@ -103,19 +103,19 @@ format: md
 
     只有支持手机、PC/2in1或平板的HarmonyOS应用才需配置隐私标签信息录入。
 
-    您可以根据应用是否收集用户的信息数据选择是否在华为应用市场的应用详情页展示隐私标签，告知用户您的应用如何使用个人数据。具体操作可参考[配置隐私标签信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-privacy-tag-0000002316420993)。
+    您可以根据应用是否收集用户的信息数据选择是否在华为应用市场的应用详情页展示隐私标签，告知用户您的应用如何使用个人数据。具体操作可参考[配置隐私标签信息](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-privacy-tag-0000002316420993)。
 
     ![](../img/agc-help-publictest-release-app-0000002259033172_11.png)
 13. 配置AI功能声明。
 
-    按照法律法规要求，应用程序在上架或者上线审核时，应用程序服务提供者应说明是否提供人工智能生成合成服务。详细内容参见[人工智能生成合成内容标识常见问题](https://developer.huawei.com/consumer/cn/doc/app/50111-10)。
+    按照法律法规要求，应用程序在上架或者上线审核时，应用程序服务提供者应说明是否提供人工智能生成合成服务。详细内容参见[人工智能生成合成内容标识常见问题](/docs/distribute/app-dist/app-market/x50000/x50111/x50111-10)。
     * 如果软件包中不包含人工智能生成合成内容，“AI生成合成服务”选择“不涉及”，配置结束。
-    * 如果软件包中包含人工智能生成合成内容，“AI生成合成服务”选择“涉及”，继续配置，选择涉及的AI生成合成服务类型并前往“版权信息>授权书及其他材料”上传AI生成标识材料和相关资质文件，具体要求请参见[配置版权信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-copyright-0000002278981450)。
+    * 如果软件包中包含人工智能生成合成内容，“AI生成合成服务”选择“涉及”，继续配置，选择涉及的AI生成合成服务类型并前往“版权信息>授权书及其他材料”上传AI生成标识材料和相关资质文件，具体要求请参见[配置版权信息](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-copyright-0000002278981450)。
 
     ![](../img/agc-help-publictest-release-app-0000002259033172_12.png)
 14. 配置版权信息。
 
-    在“版权信息”区域，上传发布所需的资质材料。具体操作可参考[配置版权信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-copyright-0000002278981450)。
+    在“版权信息”区域，上传发布所需的资质材料。具体操作可参考[配置版权信息](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-copyright-0000002278981450)。
 
     ![](../img/agc-help-publictest-release-app-0000002259033172_13.png)
 
@@ -131,7 +131,7 @@ format: md
 
     根据[《工业和信息化部关于开展移动互联网应用程序备案工作的通知》](https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2023/art_920db564162e4312916a01bed6540ad8.html)要求，APP主办者应当依照[《中华人民共和国反电信网络诈骗法》](https://www.miit.gov.cn/jgsj/zfs/fl/art/2022/art_d30139b442a141f48f05775d8c0b3cee.html)第二十三条“设立移动互联网应用程序应当按照国家有关规定向电信主管部门办理许可或者备案手续”相关规定履行备案手续。未履行备案手续的，不得从事APP互联网信息服务。
 
-    请您参考[APP核准（APP备案）指引](https://developer.huawei.com/consumer/cn/doc/app/50130)，填写应用在工信部认证的备案信息。审核人员会对您填写的备案信息进行核验，核验通过后才允许上架，请如实填写。
+    请您参考[APP核准（APP备案）指引](/docs/distribute/app-dist/app-market/x50000/x50130)，填写应用在工信部认证的备案信息。审核人员会对您填写的备案信息进行核验，核验通过后才允许上架，请如实填写。
 
     ![](../img/agc-help-publictest-release-app-0000002259033172_16.png)
 17. （可选）配置版号信息。

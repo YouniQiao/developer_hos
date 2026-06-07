@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何查看应用是否为系统应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-18
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-18
 ---
 
 

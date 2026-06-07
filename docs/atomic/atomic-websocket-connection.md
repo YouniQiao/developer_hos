@@ -1,6 +1,6 @@
 ---
 title: "WebSocket连接"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-websocket-connection
+original_url: /docs/dev/atomic-dev/atomic-network-development/atomic-websocket-connection
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ![](./img/5044771e.png)
 
-在使用此功能前，需要先完成[配置服务器域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)。
+在使用此功能前，需要先完成[配置服务器域名](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。
 
 ## 接口说明
 

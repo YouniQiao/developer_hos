@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "实时三环数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-three-ring-read
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage/health-three-ring-read
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ![](./img/01edc7d8.png)
 
-此接口使用日常活动数据类型读权限，参考[权限说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description)。
+此接口使用日常活动数据类型读权限，参考[权限说明](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description)。
 
 ## 约束与限制
 
@@ -30,10 +30,10 @@ format: md
 
 ## 开发前检查
 
-* 完成[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)与[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-configuration-client-id)。
+* 完成[申请运动健康服务](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply)与[配置Client ID](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-configuration-client-id)。
 * 接口首次调用前，需先使用[init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstoreinit)方法进行初始化。
-* 需先通过[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-add-permissions#用户授权)接口引导用户授权，用户授权日常活动数据类型读权限（参考[权限说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description)）后，才有权限读取实时三环数据。
-* 错误码请参考[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)，常见问题请参考[Health Service Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-faqs)。
+* 需先通过[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-add-permissions#用户授权)接口引导用户授权，用户授权日常活动数据类型读权限（参考[权限说明](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description)）后，才有权限读取实时三环数据。
+* 错误码请参考[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-healthservice)，常见问题请参考[Health Service Kit常见问题](/docs/dev/app-dev/application-services/health-service-kit-guide/health-faqs)。
 
 ## 开发步骤
 

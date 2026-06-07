@@ -1,6 +1,6 @@
 ---
 title: "在线匹配"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-matchplayer-js-0000002361510576
+original_url: /docs/dev/game-dev/gameobe-matchplayer-js-0000002361510576
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* 您已[初始化联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-js-0000002395350377)。
-* 您已在AGC控制台[配置匹配规则](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-ruleconfiguration-0000002361670428)。
+* 您已[初始化联机对战SDK](/docs/dev/game-dev/gameobe-initializing-js-0000002395350377)。
+* 您已在AGC控制台[配置匹配规则](/docs/dev/game-dev/gameobe-ruleconfiguration-0000002361670428)。
 
 ## 开发步骤
 
@@ -18,8 +18,8 @@ format: md
 
    ![](./img/d06896f0.png)
 
-   * 由于在线匹配方式需要和AGC控制台中配置的[匹配规则](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-ruleconfiguration-0000002361670428#section11254127113416)配合使用，因此在线匹配参数中的属性需要与[matchCode](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-matchplayerconfig-js-0000002395355909#ZH-CN_TOPIC_0000002395355909__p11735501214)所属规则中配置的[玩家属性](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-ruleconfiguration-0000002361670428#ZH-CN_TOPIC_0000002361670428__p161123117394)一一对应。
-   * [Client.onMatch](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-client-js-0000002361516044#section763981272918)监听接口同时监听在线匹配和[组队匹配](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-creategroup-js-0000002361670448)的匹配结果，若您的游戏中同时存在在线匹配和组队匹配的场景，只需注册一次即可。
+   * 由于在线匹配方式需要和AGC控制台中配置的[匹配规则](/docs/dev/game-dev/gameobe-ruleconfiguration-0000002361670428#section11254127113416)配合使用，因此在线匹配参数中的属性需要与[matchCode](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-matchplayerconfig-js-0000002395355909#ZH-CN_TOPIC_0000002395355909__p11735501214)所属规则中配置的[玩家属性](/docs/dev/game-dev/gameobe-ruleconfiguration-0000002361670428#ZH-CN_TOPIC_0000002361670428__p161123117394)一一对应。
+   * [Client.onMatch](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-client-js-0000002361516044#section763981272918)监听接口同时监听在线匹配和[组队匹配](/docs/dev/game-dev/gameobe-creategroup-js-0000002361670448)的匹配结果，若您的游戏中同时存在在线匹配和组队匹配的场景，只需注册一次即可。
 
    ```
    // client初始化成功后可调用client.onMatch方法注册在线/组队匹配监听事件

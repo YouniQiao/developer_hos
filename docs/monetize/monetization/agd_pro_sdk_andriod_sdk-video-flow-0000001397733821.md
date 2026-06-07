@@ -1,7 +1,7 @@
 ---
 title: "接入视频流广告"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-video-flow-0000001397733821
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-video-flow-0000001397733821
 format: md
 ---
 
@@ -86,7 +86,7 @@ adsContext.loadVideoFeedAds(adSlot, new TemplateLoadListener() {
 });
 ```
 
-加载失败错误码，具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_errcode-0000001354582769#section198514419559)。
+加载失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section198514419559)。
 
 #### 配置相关事件监听
 
@@ -125,7 +125,7 @@ adsContext.loadVideoFeedAds(adSlot, new TemplateLoadListener() {
    });
    ```
 
-   渲染失败错误码，具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_errcode-0000001354582769#section6398122931218)。
+   渲染失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section6398122931218)。
 2. 配置视频回调事件监听器。
 
    ```

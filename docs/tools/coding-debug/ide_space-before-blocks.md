@@ -1,7 +1,7 @@
 ---
 title: "@hw-stylistic/space-before-blocks"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_space-before-blocks
+original_url: /docs/tools/coding-debug/ide_space-before-blocks
 format: md
 ---
 

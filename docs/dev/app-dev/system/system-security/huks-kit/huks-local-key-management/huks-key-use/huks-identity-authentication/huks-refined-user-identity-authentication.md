@@ -1,6 +1,6 @@
 ---
 title: "细粒度用户身份认证访问控制开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-refined-user-identity-authentication
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-identity-authentication/huks-refined-user-identity-authentication
 format: md
 ---
 

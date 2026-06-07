@@ -1,7 +1,7 @@
 ---
 format: md
 title: "手机应用开发是否允许自行设置是否备份自身数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-37
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-37
 ---
 
 
@@ -9,6 +9,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-l
 
 **参考链接**
 
-[元数据资源配置文件说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension#元数据资源配置文件说明)
+[元数据资源配置文件说明](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension#元数据资源配置文件说明)
 
-[应用数据备份恢复概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-overview)
+[应用数据备份恢复概述](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-overview)

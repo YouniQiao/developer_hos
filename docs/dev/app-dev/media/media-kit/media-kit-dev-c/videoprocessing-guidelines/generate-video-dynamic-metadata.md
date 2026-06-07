@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "视频动态元数据生成"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/generate-video-dynamic-metadata
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/generate-video-dynamic-metadata
 format: md
 ---
 
@@ -180,9 +180,9 @@ target_link_libraries(sample PUBLIC libvideo_processing.so)
 
    ![](./img/cf06c0a1.png)
 
-   可以通过XComponent等其他方式获取OHNativeWindow实例，具体参见[NativeWindows开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-window-guidelines)。
+   可以通过XComponent等其他方式获取OHNativeWindow实例，具体参见[NativeWindows开发指导](/docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-window-guidelines)。
 
-   视频处理引擎的SetSurface的windowOut从XComponent的[OnSurfaceCreatedCB](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-window-guidelines)回调函数获取，需要对windowOut设置元数据类型、数据格式和颜色空间等参数。
+   视频处理引擎的SetSurface的windowOut从XComponent的[OnSurfaceCreatedCB](/docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-window-guidelines)回调函数获取，需要对windowOut设置元数据类型、数据格式和颜色空间等参数。
 
    ```
    // 设置元数据类型、数据格式、颜色空间

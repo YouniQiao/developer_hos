@@ -1,6 +1,6 @@
 ---
 title: "如何获取视频首帧画面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-7
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-media-kit/faqs-media-7
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 从本地视频获取首帧有两种方案，分别是通过[PhotoAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sendablephotoaccesshelper#photoasset)类的[getThumbnail()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sendablephotoaccesshelper#getthumbnail)方法获取首帧；通过[AVImageGenerator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avimagegenerator)选取视频开始时间获取首帧，详细内容请参考[选取视频帧作为缩略图](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-thumbnail#section1848255103812)。
 
-此外，如果是从沙箱路径获取视频首帧，需要获取视频文件的文件描述符fd，详细内容请参考[应用文件访问(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)。
+此外，如果是从沙箱路径获取视频首帧，需要获取视频文件的文件描述符fd，详细内容请参考[应用文件访问(ArkTS)](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)。
 
 ```
 // Create AVImageGenerator object

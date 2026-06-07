@@ -1,7 +1,7 @@
 ---
 title: "跨设备拖拽"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distribute-drag-cast
+original_url: /docs/dev/app-dev/multi-device/bpta-distribute-drag-cast
 format: md
 ---
 

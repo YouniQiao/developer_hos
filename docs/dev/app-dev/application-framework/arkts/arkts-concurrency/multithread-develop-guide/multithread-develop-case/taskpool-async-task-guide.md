@@ -1,6 +1,6 @@
 ---
 title: "TaskPool指定任务并发度场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-async-task-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/taskpool-async-task-guide
 format: md
 ---
 

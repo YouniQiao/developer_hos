@@ -1,6 +1,6 @@
 ---
 title: "HiDebug接口使用示例(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines-arkts
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines-arkts
 format: md
 ---
 

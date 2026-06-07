@@ -1,7 +1,7 @@
 ---
 title: "审核时间"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-audittime-0000001894803096
+original_url: /docs/monetize/promotion/bp-appendix-material-rule-audittime-0000001894803096
 format: md
 ---
 

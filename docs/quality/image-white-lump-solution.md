@@ -1,6 +1,6 @@
 ---
 title: "Image白块解决方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-image-white-lump-solution
+original_url: /docs/quality/image-white-lump-solution
 ---
 
 # Image白块解决方案
@@ -19,7 +19,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-i
 
 ![](./img/177b4459.png)
 
-1. 开发者在使用Image加载较大的网络图片时，网络下载推荐使用[HTTP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request)工具提前预下载。
+1. 开发者在使用Image加载较大的网络图片时，网络下载推荐使用[HTTP](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request)工具提前预下载。
 
 2. 在预下载之后，开发者可根据业务自行选择数据处理方式，如将预下载后得到的ArrayBuffer转成BASE64、使用应用沙箱提前缓存、直接转PixelMap、或是业务上自行处理ArrayBuffer等多种方式灵活处理数据后，传给Image组件。
 
@@ -71,7 +71,7 @@ export struct PageOne {
 
 * 使用Image直接加载网络图片时，可以使用.alt()的方式，在网络图片加载成功前使用占位图，避免白块出现时长过长，优化用户体验。
 
-* 使用网络图片时，需要申请权限ohos.permission.INTERNET。具体申请方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+* 使用网络图片时，需要申请权限ohos.permission.INTERNET。具体申请方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ### 【优化后】：通过预下载的方式
 
@@ -235,7 +235,7 @@ export struct PageOne {
 
 ## 性能分析
 
-下面使用trace对优化前后性能进行对比分析。开发者可以通过使用[DevEco Profiler](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-optimization-overview#section2012922312284)工具来抓捕trace图并识别分析应用中的性能问题。
+下面使用trace对优化前后性能进行对比分析。开发者可以通过使用[DevEco Profiler](/docs/quality/optimization-overview#section2012922312284)工具来抓捕trace图并识别分析应用中的性能问题。
 
 【优化前】
 

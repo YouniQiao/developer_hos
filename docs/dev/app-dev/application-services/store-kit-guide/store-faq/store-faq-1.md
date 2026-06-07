@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用市场推荐展示元服务卡片异常"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-1
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-1
 format: md
 ---
 

@@ -2,7 +2,7 @@
 
 title: "创建并配置函数"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-createfunc
+original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-createfunc
 format: md
 ---
 

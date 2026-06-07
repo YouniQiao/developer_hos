@@ -1,7 +1,7 @@
 ---
 title: "创建合约广告"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-heyueguangaochaungjian-0000001790031397
+original_url: /docs/monetize/promotion/ads-heyueguangaochaungjian-0000001790031397
 format: md
 ---
 
@@ -43,7 +43,7 @@ format: md
    鲸鸿动能媒介会根据下单表与任务表创建任务，若是通过三方DSP投放，则反馈订单ID；若是通过华为DSP投放，则同步任务状态。
 3. <strong>素材预审</strong>
 
-   服务商/广告主需要邮件提交广告投放素材给鲸鸿动能行业运营进行预审，以便于提前修改素材，避免影响正式任务投放，素材详细要求请看[刊例资源](https://developer.huawei.com/consumer/cn/doc/promotion/ads-heyuejianjie-0000001789911665)，同时部分版位有安全区要求，详情可查看[素材安全区尺寸要求](https://developer.huawei.com/consumer/cn/doc/promotion/ads_shenhe035-0000001347509912)。
+   服务商/广告主需要邮件提交广告投放素材给鲸鸿动能行业运营进行预审，以便于提前修改素材，避免影响正式任务投放，素材详细要求请看[刊例资源](/docs/monetize/promotion/ads-heyuejianjie-0000001789911665)，同时部分版位有安全区要求，详情可查看[素材安全区尺寸要求](/docs/monetize/promotion/ads_shenhe035-0000001347509912)。
 
    邮件按照以下要求进行发送：
 
@@ -68,7 +68,7 @@ format: md
 
 <strong>Q1:合约广告是怎么溢价的？</strong>
 
-答：定向溢价可参考[刊例资源](https://developer.huawei.com/consumer/cn/doc/promotion/ads-heyuejianjie-0000001789911665)，如有不确定溢价标准可咨询鲸鸿动能商务/媒介。
+答：定向溢价可参考[刊例资源](/docs/monetize/promotion/ads-heyuejianjie-0000001789911665)，如有不确定溢价标准可咨询鲸鸿动能商务/媒介。
 
 <strong>Q2:合约广告投放，中途要变更定向怎么办？</strong>
 

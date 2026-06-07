@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "初始化存储实例"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-initialize-bucket
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-initialize-bucket
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ## 前提条件
 
-已[开通云存储服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-storage)。
+已[开通云存储服务](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-storage)。
 
 ## 操作步骤
 

@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-faq-0000002254916526
+original_url: /docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-faq-0000002254916526
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](../img/agc-help-clouddebug-faq-0000002254916526_0.png "点击放大")
 
-超出优惠时长上限后，您可以订购付费套餐或升级到按量付费档，详见[计费说明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-price-0000002255019568)。
+超出优惠时长上限后，您可以订购付费套餐或升级到按量付费档，详见[计费说明](/docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-price-0000002255019568)。
 
 #### 一个账号可以同时使用多部手机吗？
 
@@ -26,7 +26,7 @@ format: md
   可尝试点击手机下方的电源键恢复画面。
 * 进入账号登录界面。
 
-  由于隐私安全的限制，登录界面不会显示内容。您可以通过点击“获取控件树”按钮启动辅助控件绘制功能来完成账号登录。详情请参见[使用获取控件树按钮完成登录](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-debugapp-0000002289629821#section1851413117162)。
+  由于隐私安全的限制，登录界面不会显示内容。您可以通过点击“获取控件树”按钮启动辅助控件绘制功能来完成账号登录。详情请参见[使用获取控件树按钮完成登录](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-debugapp-0000002289629821#section1851413117162)。
 
 #### 云调试上的真机可以横竖屏切换吗？
 
@@ -70,7 +70,7 @@ format: md
 
 #### 如何查看调试日志？
 
-HarmonyOS 5及以上系统的设备展示为“HiLog”页签，详情请参见[查看和导出日志](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-viewlog-0000002289629825)。
+HarmonyOS 5及以上系统的设备展示为“HiLog”页签，详情请参见[查看和导出日志](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-viewlog-0000002289629825)。
 
 #### 无法进入到设备调试页面怎么办？
 

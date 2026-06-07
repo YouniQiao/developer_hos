@@ -1,6 +1,6 @@
 ---
 title: "创建NDK工程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-with-ndk
+original_url: /docs/dev/ndk-dev/create-with-ndk
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "平面语义介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-semantics-conversion
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-semantics/arengine-get-semantics-conversion
 format: md
 ---
 

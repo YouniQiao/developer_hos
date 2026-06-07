@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如何通过应用侧日志定位预加载问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-5
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-prefetch/cloudfoundation-faq-5
 format: md
 ---
 
@@ -34,4 +34,4 @@ format: md
 
   1. 检查系统服务在应用安装期间预加载数据的日志。如果打印日志与上文场景一提示的日志信息不一致，则继续执行后续步骤。
   2. 确认是否存在多次调用安装预加载接口问题。安装预加载接口不支持多次调用。
-  3. 排除以上原因后，检查日志中是否出现“appid \*\*\*\* is not in white list, to skip”或者“XXX Read timed out”。如果出现，请参考[运行应用时提示“appid \*\*\*\* is not in white list, to skip”](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-3)或者[运行应用时报“XXX Read timed out”异常](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-4)解决。
+  3. 排除以上原因后，检查日志中是否出现“appid \*\*\*\* is not in white list, to skip”或者“XXX Read timed out”。如果出现，请参考[运行应用时提示“appid \*\*\*\* is not in white list, to skip”](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-prefetch/cloudfoundation-faq-3)或者[运行应用时报“XXX Read timed out”异常](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-prefetch/cloudfoundation-faq-4)解决。

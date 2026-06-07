@@ -1,6 +1,6 @@
 ---
 title: "使用AgentExtensionAbility组件实现智能体服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agent-extension-ability
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/agent-extension-ability
 format: md
 ---
 
@@ -80,7 +80,7 @@ format: md
      }
    }
    ```
-4. 在工程Module对应的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中注册AgentExtensionAbility，type标签需要设置为"agent"，srcEntry标签表示当前ExtensionAbility组件所对应的代码路径。
+4. 在工程Module对应的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中注册AgentExtensionAbility，type标签需要设置为"agent"，srcEntry标签表示当前ExtensionAbility组件所对应的代码路径。
 
    ```
    {
@@ -104,7 +104,7 @@ format: md
      }
    }
    ```
-5. 在工程Module的resources/base/profile/目录下新建agent\_config.json文件，然后在其中配置[AgentCard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-agentcard)信息，详细操作步骤请参考[Agent配置文件说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agent-extension-configuration)。
+5. 在工程Module的resources/base/profile/目录下新建agent\_config.json文件，然后在其中配置[AgentCard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-agentcard)信息，详细操作步骤请参考[Agent配置文件说明](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/agent/agent-extension-configuration)。
 
 ## 使用AgentExtensionAbility组件收发数据
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "血压"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-blood-pressure
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-blood-pressure
 format: md
 ---
 

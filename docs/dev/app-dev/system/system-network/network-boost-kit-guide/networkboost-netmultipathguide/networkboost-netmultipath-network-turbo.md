@@ -1,13 +1,13 @@
 ---
 title: "多网并发网络加速"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-network-turbo
+original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-network-turbo
 format: md
 ---
 
 
 ## 概述
 
-网络数据传输是应用的核心功能场景之一，而传输的性能直接决定着用户体验——例如高清晰度视频/图片的加载、大文件的上传下载、设备间多文件的同步迁移等场景，有限的网络传输性能导致的卡顿、长时间等待往往会导致用户使用感受变差。针对此类性能敏感的场景，Network Boost Kit的[多网并发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipathguide)能力提供了网络加速的解决方案。
+网络数据传输是应用的核心功能场景之一，而传输的性能直接决定着用户体验——例如高清晰度视频/图片的加载、大文件的上传下载、设备间多文件的同步迁移等场景，有限的网络传输性能导致的卡顿、长时间等待往往会导致用户使用感受变差。针对此类性能敏感的场景，Network Boost Kit的[多网并发](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide)能力提供了网络加速的解决方案。
 
 本文将介绍多网并发的机制原理与基本开发流程，并结合大文件分片传输和多文件并发传输两个实际应用场景介绍多网并发能力的适配方案。
 
@@ -21,10 +21,10 @@ format: md
 
 1. 开发前准备。
 
-   多网并发能力在设备类型、网络状态及开发方案的选择上存在一定限制，具体接入要求可参考[多网发起和释放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-request-release)，开发者也可以在调试过程中通过[多网请求错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/networkboost-nethandover#nethandoverrequestmultipath)分析。
+   多网并发能力在设备类型、网络状态及开发方案的选择上存在一定限制，具体接入要求可参考[多网发起和释放](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-request-release)，开发者也可以在调试过程中通过[多网请求错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/networkboost-nethandover#nethandoverrequestmultipath)分析。
 2. 发起多网并发。
 
-   (1) 权限配置：应用使用多网并发等网络加速能力，连接迁移能力部分接口需要ohos.permission.LINKTURBO权限，权限配置方法参见[申请权限步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-preparations#申请权限步骤)。同时此权限为受限ACL权限需要特别配置和申请，具体操作步骤参考[配置签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-preparations#配置签名)和[受限ACL权限申请](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-preparations#受限acl权限申请)。
+   (1) 权限配置：应用使用多网并发等网络加速能力，连接迁移能力部分接口需要ohos.permission.LINKTURBO权限，权限配置方法参见[申请权限步骤](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-preparations#申请权限步骤)。同时此权限为受限ACL权限需要特别配置和申请，具体操作步骤参考[配置签名](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-preparations#配置签名)和[受限ACL权限申请](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-preparations#受限acl权限申请)。
 
    (2) 发起流程：多网并发能力发起的核心步骤包括[netBoost.setSceneDesc()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/networkboost-netboost#netboostsetscenedesc)设置多网场景、[netHandover.getMultiPathQuotaStats()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/networkboost-nethandover#nethandovergetmultipathquotastats)查询多网配额、[netHandover.requestMultiPath()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/networkboost-nethandover#nethandoverrequestmultipath)请求发起多网以及[netHandover.on('multiPathStateChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/networkboost-nethandover#nethandoveronmultipathstatechange)多网状态监听，详细实现可参考[代码实现](#代码实现)中的多网发起与接入。
 3. 获取多网NetHandle并绑定Socket。
@@ -34,7 +34,7 @@ format: md
    (2) 针对需要在多网路径上传输的数据，创建对应的TCP Socket（详见[TCPSocket](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-socket#tcpsocket)）/UDP Socket（详见[UDPSocket](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-socket#udpsocket)），通过[bindSocket()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#bindsocket9)方法将Socket对象绑定到NetHandle对应的网络上。
 4. Socket发起网络传输任务。
 
-   绑定网络后，TCP Socket/UDP Socket进行[数据传输](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/socket-connection#应用通过tcp-socket-server进行数据传输)时将会使用对应的网络通路，多个Socket使用不同的网络通路同时发起网络传输任务就可以起到多网并发的效果。
+   绑定网络后，TCP Socket/UDP Socket进行[数据传输](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/socket-connection#应用通过tcp-socket-server进行数据传输)时将会使用对应的网络通路，多个Socket使用不同的网络通路同时发起网络传输任务就可以起到多网并发的效果。
 
 ## 大文件分片传输
 
@@ -44,10 +44,10 @@ format: md
 
 ### 关键技术
 
-1. [Network Boost Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-boost-kit-guide)：多网能力的发起、监听、状态管理与绑定。
+1. [Network Boost Kit](/docs/dev/app-dev/system/system-network/network-boost-kit-guide)：多网能力的发起、监听、状态管理与绑定。
 2. [@ohos.net.connection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection)：网络连接管理，网络通路获取。
-3. [Socket数据传输](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/socket-connection)：创建网络连接，执行网络传输任务。
-4. [TaskPool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-introduction)：管理多线程网络并发任务。
+3. [Socket数据传输](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/socket-connection)：创建网络连接，执行网络传输任务。
+4. [TaskPool](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction)：管理多线程网络并发任务。
 5. [@ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)：负责文件管理，包括文件分片、大小查询等。
 
 ### 开发步骤

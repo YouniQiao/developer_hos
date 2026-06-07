@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用MediaAssetManager请求媒体资源(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-mediaassetmanager-for-request-resource
+original_url: /docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/using-ndk-mediaassetmanager-for-request-resource
 format: md
 ---
 
@@ -24,7 +24,7 @@ target_link_libraries(sample PUBLIC libmedia_asset_manager.so)
 
 ![](./img/48daf83f.png)
 
-开发前，需要参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation)，申请ohos.permission.READ\_IMAGEVIDEO权限。
+开发前，需要参考[开发准备](/docs/dev/app-dev/media/photoaccesshelper-preparation)，申请ohos.permission.READ\_IMAGEVIDEO权限。
 
 1. 创建实例：OH\_MediaAssetManager\_Create()。
 2. 设置资源：设置资源请求回调、设置资源请求策略、设置源图片Uri和目标Uri。

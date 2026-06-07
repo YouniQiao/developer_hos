@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "启动耗时事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-launch-event
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/startup-duration-events/hiappevent-watcher-app-launch-event
 format: md
 ---
 
@@ -12,15 +12,15 @@ format: md
 
 如何使用HiAppEvent提供订阅启动耗时事件的接口可参见以下文档：
 
-* [订阅启动耗时事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-launch-arkts)
+* [订阅启动耗时事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/startup-duration-events/hiappevent-watcher-app-launch-arkts)
 
 ![](./img/3348422e.png)
 
-启动耗时事件支持在[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。不支持在[应用分身场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)或[输入法应用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)下使用HiAppEvent进行订阅。
+启动耗时事件支持在[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
 
 ## 事件检测原理
 
-检测原理可参考[启动耗时事件检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perf-detection)。
+检测原理可参考[启动耗时事件检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection)。
 
 ## 约束与限制
 
@@ -30,7 +30,7 @@ format: md
 
 ## 启动耗时优化指导
 
-启动耗时优化方法可参看[优化应用冷启动时延问题](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization)。
+启动耗时优化方法可参看[优化应用冷启动时延问题](/docs/quality/application-cold-start-optimization)。
 
 ## 事件params属性描述
 
@@ -40,15 +40,15 @@ format: md
 | bundle\_version | string | 应用版本。 |
 | bundle\_name | string | 应用名称。 |
 | process\_name | string | 应用进程名称。 |
-| start\_type | number | 启动类型。0：[冷启动](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization#section1235404851116)，1：[热启动](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization#section1235404851116)，4：温启动（[预加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preload-application)后启动应用）。 |
+| start\_type | number | 启动类型。0：[冷启动](/docs/quality/application-cold-start-optimization#section1235404851116)，1：[热启动](/docs/quality/application-cold-start-optimization#section1235404851116)，4：温启动（[预加载](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/preload-application)后启动应用）。 |
 | icon\_input\_time | number | 点击桌面应用图标离手时间戳，若无法获取（如语音唤醒）则表示系统开始启动应用的时间戳，单位为ms。 |
 | animation\_finish\_time | number | 动效完成耗时，单位为ms。  在无法获取点击离手时间戳或依赖的系统内部事件打点次数超限时，该值为 0。 |
 | extend\_time | number | 手指离开屏幕到开发者调用[reportDrawnCompleted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiextensioncontext#reportdrawncompleted12)接口时间，单位为ms。  若用户不调用或手指离开屏幕后5s未调用reportDrawnCompleted接口，该值为0。 |
 | response\_latency | number | 手指离开屏幕到动效开始的耗时，单位为ms。  在无法获取点击离手时间戳或依赖的系统内部事件打点次数超限时，该值为 0。从API version 22开始提供。 |
 | laun\_to\_start\_ability\_dur | number | 手指离开屏幕到系统开始启动Ability的耗时，单位为ms。  在无法获取点击离手时间戳或依赖的系统内部事件打点次数超限时，该值为 0。从API version 22开始提供。 |
-| startability\_processstart\_dur | number | [冷启动过程](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization#section196451814101216)中系统开始启动Ability到完成应用进程创建的耗时，单位为ms。  仅在冷启动中存在该值，若依赖的系统内部事件打点次数超限或在非冷启动类型中，该值为 0。从API version 22开始提供。 |
+| startability\_processstart\_dur | number | [冷启动过程](/docs/quality/application-cold-start-optimization#section196451814101216)中系统开始启动Ability到完成应用进程创建的耗时，单位为ms。  仅在冷启动中存在该值，若依赖的系统内部事件打点次数超限或在非冷启动类型中，该值为 0。从API version 22开始提供。 |
 | processstart\_to\_appattach\_dur | number | 冷启动过程中应用进程初始化的耗时，单位为ms。  仅在冷启动中存在该值，若依赖的系统内部事件打点次数超限或在非冷启动类型中，该值为 0。从API version 22开始提供。 |
 | appattach\_to\_appforeground\_dur | number | 冷启动过程中完成应用进程初始化到应用切换到前台的耗时，单位为ms。  该阶段包括资源加载、虚拟机创建、Application&Ability 对象的创建与初始化、依赖模块加载等。  仅在冷启动中存在该值，若依赖的系统内部事件打点次数超限或在非冷启动类型中，该值为 0。从API version 22开始提供。 |
 | startability\_appforeground\_dur | number | 启动过程中系统开始启动Ability到应用切换到前台状态的耗时，单位为ms。  在冷启动中，该值为startability\_processstart\_dur、processstart\_to\_appattach\_dur和appattach\_to\_appforeground\_dur三者之和；其余启动类型中，该过程包括系统启动Ability和应用切换到前台。从API version 22开始提供。 |
 | appforegr\_abilityonforegr\_dur | number | 应用切换到前台状态到[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)切换至前台（系统触发[onForeground](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onforeground)回调）的耗时，单位为ms。从API version 22开始提供。 |
-| abilityonforeg\_startwindow\_dur | number | 系统完成创建应用窗口[WindowStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage)（系统触发[onWindowStageCreate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagecreate)回调）到UIAbility切换到前台的耗时，单位为ms。  仅在冷启动和预加载启动中存在该值，若依赖的系统内部事件打点次数超限或在热启动类型中，该值为0。从API version 22开始提供。 |
+| abilityonforeg\_startwindow\_dur | number | 系统完成创建应用窗口[WindowStage](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage)（系统触发[onWindowStageCreate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagecreate)回调）到UIAbility切换到前台的耗时，单位为ms。  仅在冷启动和预加载启动中存在该值，若依赖的系统内部事件打点次数超限或在热启动类型中，该值为0。从API version 22开始提供。 |

@@ -1,6 +1,6 @@
 ---
 title: "适配流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/adaptation-process
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/adaptation-process
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ## 应用适配
 
-在适配准备工作完成后，进入应用适配阶段。开发者需要在HarmonyOS应用的代码中，实现“BackupExtensionAbility”，使应用接入到“备份恢复框架”中，完成应用数据的转换和迁移。更多适配指导可参考：[应用数据迁移适配指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-adaptation)。
+在适配准备工作完成后，进入应用适配阶段。开发者需要在HarmonyOS应用的代码中，实现“BackupExtensionAbility”，使应用接入到“备份恢复框架”中，完成应用数据的转换和迁移。更多适配指导可参考：[应用数据迁移适配指导](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-adaptation)。
 
 ![](./img/957e22a8.png)
 
@@ -38,11 +38,11 @@ format: md
 | /data/storage/el2/base/.backup/restore/\{APK包名\}/A/data/ |
 | /data/storage/el2/base/.backup/restore/\{APK包名\}/A/obb/ |
 
-HarmonyOS应用沙箱目录请参考[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
+HarmonyOS应用沙箱目录请参考[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
 
 ## 开发者自验证
 
-开发者完成应用适配后，需要完成自验证HarmonyOS应用数据迁移适配结果。更多自验证指导可参考：[开发者自验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/self-verification)。
+开发者完成应用适配后，需要完成自验证HarmonyOS应用数据迁移适配结果。更多自验证指导可参考：[开发者自验证](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-verification/self-verification)。
 
 其中自验证所需“迁移调试”工具获取方式如下：
 
@@ -55,7 +55,7 @@ HarmonyOS应用适配成功后，在进行端到端验证之前，需要将Harmo
 
 ![](./img/3f1ac4aa.png)
 
-HarmonyOS应用上架应用市场的时候，需要配置HarmonyOS应用和APK应用映射关系。HarmonyOS应用关联APK应用指导请参考：[关联APK应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-associate-android-app-overview-0000002351878886)。
+HarmonyOS应用上架应用市场的时候，需要配置HarmonyOS应用和APK应用映射关系。HarmonyOS应用关联APK应用指导请参考：[关联APK应用](/docs/distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-associate-android-app-overview-0000002351878886)。
 
 ## 端到端验证
 

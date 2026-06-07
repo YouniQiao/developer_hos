@@ -1,6 +1,6 @@
 ---
 title: "通过用户首选项实现数据持久化 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preferences-guidelines
+original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/preferences-guidelines
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 约束限制
 
-* API version 18之前：ArkTS API仅支持[XML存储模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-preferences#xml存储)；C API仅支持[GSKV存储模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-preferences#gskv存储)；存储模式互不兼容，不支持ArkTS和C API操作同一个Preferences实例。
+* API version 18之前：ArkTS API仅支持[XML存储模式](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-preferences#xml存储)；C API仅支持[GSKV存储模式](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-preferences#gskv存储)；存储模式互不兼容，不支持ArkTS和C API操作同一个Preferences实例。
 * API version 18及之后：ArkTS和C API均支持XML和GSKV双模式；ArkTS和C API使用相同的存储模式时，可以正常操作同一Preferences实例；禁止ArkTS和C API选择不同的存储模式，来操作同一个Preferences实例。
 * Key的最大长度限制为1024个字节，Value的最大长度限制为16MB。
 

@@ -1,6 +1,6 @@
 ---
 title: "Node-API支持的数据类型和接口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-data-types-interfaces
+original_url: /docs/dev/ndk-dev/napi-data-types-interfaces
 format: md
 ---
 
@@ -67,7 +67,7 @@ napi\_value是一个C的结构体指针，表示一个ArkTS/JS对象的引用。
 
 ### napi\_threadsafe\_function
 
-[napi\_threadsafe\_function](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety)用来创建一个线程安全的ArkTS/JS函数，可以在不同的线程中调用。可以用于将异步操作的结果传递给ArkTS/JS环境，例如从另一个线程中读取数据或执行计算密集型操作。线程安全函数回调的执行仅在创建线程安全函数的ArkTS线程中执行。通过使用napi\_threadsafe\_function，可以实现ArkTS/JS和C++之间的高效通信，同时保持线程安全性。
+[napi\_threadsafe\_function](/docs/dev/ndk-dev/use-napi-thread-safety)用来创建一个线程安全的ArkTS/JS函数，可以在不同的线程中调用。可以用于将异步操作的结果传递给ArkTS/JS环境，例如从另一个线程中读取数据或执行计算密集型操作。线程安全函数回调的执行仅在创建线程安全函数的ArkTS线程中执行。通过使用napi\_threadsafe\_function，可以实现ArkTS/JS和C++之间的高效通信，同时保持线程安全性。
 
 ### napi\_threadsafe\_function\_release\_mode
 
@@ -114,7 +114,7 @@ Node-API包含以下内存管理类型：
 
 **napi\_handle\_scope**
 
-napi\_handle\_scope数据类型是用来管理ArkTS/JS对象的生命周期的。它允许ArkTS/JS对象在一定范围内保持活动状态，以便在ArkTS/JS代码中使用。在创建napi\_handle\_scope时，所有在该范围内创建的ArkTS/JS对象都会保持活动状态，直到scope被关闭。这样可以做到ArkTS/JS对象生命周期最小化，[避免发生内存泄漏问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines#生命周期管理)。同时，napi\_handle\_scope也可参考[生命周期类问题注意事项](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-cppcrash#section1662118147417)
+napi\_handle\_scope数据类型是用来管理ArkTS/JS对象的生命周期的。它允许ArkTS/JS对象在一定范围内保持活动状态，以便在ArkTS/JS代码中使用。在创建napi\_handle\_scope时，所有在该范围内创建的ArkTS/JS对象都会保持活动状态，直到scope被关闭。这样可以做到ArkTS/JS对象生命周期最小化，[避免发生内存泄漏问题](/docs/dev/ndk-dev/napi-guidelines#生命周期管理)。同时，napi\_handle\_scope也可参考[生命周期类问题注意事项](/docs/quality/scenario-stability-cppcrash#section1662118147417)
 
 **napi\_escapable\_handle\_scope**
 
@@ -575,7 +575,7 @@ napi_status napi_queue_async_work_with_qos(napi_env env,
                                            napi_qos_t qos);
 ```
 
-用法同napi\_queue\_async\_work，但可以指定QoS等级。napi\_queue\_async\_work\_with\_qos使用方法可参考指定异步任务调度优先级。QoS详细介绍可参考[QoS 开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/qos-guidelines)。
+用法同napi\_queue\_async\_work，但可以指定QoS等级。napi\_queue\_async\_work\_with\_qos使用方法可参考指定异步任务调度优先级。QoS详细介绍可参考[QoS 开发指导](/docs/dev/app-dev/system/qos-guidelines)。
 
 **napi\_run\_script\_path**
 
@@ -585,7 +585,7 @@ napi_status napi_run_script_path(napi_env env,
                                  napi_value* result);
 ```
 
-\*\*注：\*\*使用限制说明文档：[使用napi\_run\_script\_path接口执行包内abc文件的使用限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-65)
+\*\*注：\*\*使用限制说明文档：[使用napi\_run\_script\_path接口执行包内abc文件的使用限制](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-65)
 
 **napi\_load\_module**
 
@@ -631,7 +631,7 @@ napi_status napi_coerce_to_native_binding_object(napi_env env,
 napi_status napi_create_ark_runtime(napi_env *env);
 ```
 
-[使用napi\_create\_ark\_runtime、napi\_destroy\_ark\_runtime接口创建ArkTS运行时环境](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-ark-runtime)。
+[使用napi\_create\_ark\_runtime、napi\_destroy\_ark\_runtime接口创建ArkTS运行时环境](/docs/dev/ndk-dev/use-napi-ark-runtime)。
 
 **napi\_destroy\_ark\_runtime**
 
@@ -645,7 +645,7 @@ napi_status napi_destroy_ark_runtime(napi_env *env);
 napi_status napi_run_event_loop(napi_env env, napi_event_mode mode);
 ```
 
-开发者只能在自己通过napi\_create\_ark\_runtime创建的ArkTS运行环境中调用napi\_run\_event\_loop与napi\_stop\_event\_loop接口，使用方法可参考[使用扩展的Node-API接口在异步线程中运行和停止事件循环](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-event-loop)。
+开发者只能在自己通过napi\_create\_ark\_runtime创建的ArkTS运行环境中调用napi\_run\_event\_loop与napi\_stop\_event\_loop接口，使用方法可参考[使用扩展的Node-API接口在异步线程中运行和停止事件循环](/docs/dev/ndk-dev/use-napi-event-loop)。
 
 **napi\_stop\_event\_loop**
 

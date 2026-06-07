@@ -1,7 +1,7 @@
 ---
 title: "上/下架、升级流程介绍"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/process-introduction-0000002509696971
+original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/process-introduction-0000002509696971
 format: md
 ---
 

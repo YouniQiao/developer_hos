@@ -1,6 +1,6 @@
 ---
 title: "输入法应用沉浸模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-immersive-mode-guide
+original_url: /docs/dev/app-dev/application-framework/ime-kit/inputmethod-immersive-mode-guide
 format: md
 ---
 

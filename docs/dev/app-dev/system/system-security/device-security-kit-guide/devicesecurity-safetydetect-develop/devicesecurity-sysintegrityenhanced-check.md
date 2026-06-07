@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "系统完整性增强检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-sysintegrityenhanced-check
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-safetydetect-develop/devicesecurity-sysintegrityenhanced-check
 format: md
 ---
 
@@ -58,7 +58,7 @@ format: md
 
 ![](./img/5991a183.png)
 
-请确保已打开“[安全检测服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice)”开关并[申请Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-0000002270709473)。
+请确保已打开“[安全检测服务](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare/devicesecurity-deviceverify-activateservice)”开关并[申请Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-0000002270709473)。
 
 1. 导入Device Security Kit模块及相关公共模块。
 

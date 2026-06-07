@@ -1,6 +1,6 @@
 ---
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-config-agc
+original_url: /docs/dev/atomic-dev/atomic-code-scan-development/atomic-scan-config-agc
 format: md
 ---
 

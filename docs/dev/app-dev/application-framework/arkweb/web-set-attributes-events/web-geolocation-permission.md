@@ -1,17 +1,17 @@
 ---
 title: "管理位置权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-geolocation-permission
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-geolocation-permission
 format: md
 ---
 
 
-从API version 9开始，支持Web组件的[GeolocationPermissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-geolocationpermissions)类和[onGeolocationShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#ongeolocationshow)方法对网页进行位置权限管理。更多信息请参见[应用数据安全](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-data-security)。
+从API version 9开始，支持Web组件的[GeolocationPermissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-geolocationpermissions)类和[onGeolocationShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#ongeolocationshow)方法对网页进行位置权限管理。更多信息请参见[应用数据安全](/docs/security/data-security)。
 
 Web组件根据[GeolocationPermissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-geolocationpermissions)类和[onGeolocationShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#ongeolocationshow)方法的响应结果，决定是否赋予前端页面权限。用户可以获取位置信息，以便使用出行导航、天气预报等服务。
 
 ## 需要权限
 
-使用获取位置功能，需在module.json5中配置位置权限。具体添加方法请参考[在配置文件中声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#在配置文件中声明权限)。
+使用获取位置功能，需在module.json5中配置位置权限。具体添加方法请参考[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。
 
 ```
 "requestPermissions":[

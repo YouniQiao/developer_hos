@@ -1,6 +1,6 @@
 ---
 title: "标准化数据结构 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-structure
+original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-structure
 format: md
 ---
 

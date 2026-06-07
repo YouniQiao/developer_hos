@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AVMetadataExtractor获取元数据(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avmetadataextractor-for-media
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-info-c/using-ndk-avmetadataextractor-for-media
 format: md
 ---
 

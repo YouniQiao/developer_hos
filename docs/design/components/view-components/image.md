@@ -1,7 +1,7 @@
 ---
 title: 图片
 sidebar_label: 图片
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/image-0000001956975273
+original_url: /docs/design/components/view-components/image
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "获取指定房间信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-getroom-harmonyos-0000002359901688
+original_url: /docs/dev/game-dev/games-gamemme-getroom-harmonyos-0000002359901688
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ## 前提条件
 
-您已[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
+您已[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
 
 ## 开发步骤
 

@@ -1,6 +1,6 @@
 ---
 title: "分包加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-subpackage-loading
+original_url: /docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackage-loading
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 分包加载的能力首先依赖于编译时工具，根据开发者在manifest.json中配置的subpackages规则，将项目打包成多个分包。这些分包包含一个主包和若干个分包，主包内容包含一些公共的资源、页面等内容，而分包内容则是根据开发者的配置资源目录进行划分。每个包都是作为rawfile资源文件放到元服务分包中，都是一个元服务的一个独立的hsp。
 
-其次运行时，ASCF元服务将优先加载主包和页面所在[分包](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-subpackages)，其余分包会自动在后台进行[预加载](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-preloading)。
+其次运行时，ASCF元服务将优先加载主包和页面所在[分包](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackages)，其余分包会自动在后台进行[预加载](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-preloading)。
 
 ASCF元服务分包大小遵循元服务的包大小限制。
 
@@ -19,7 +19,7 @@ ASCF元服务分包大小遵循元服务的包大小限制。
 * 业务逻辑上密切相关的页面配置在同一个分包中
 * 主包放置公共资源，单个分包独有的资源放置到分包中，以减小主包大小。
 
-* **[分包](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-subpackages)**
-* **[预加载](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-preloading)**
-* **[分包异步化](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/asynchronous-subcontracting)**
-* **[IDE本地运行时配置](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-ide-runtime-configuration)**
+* **[分包](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackages)**
+* **[预加载](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-preloading)**
+* **[分包异步化](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/asynchronous-subcontracting)**
+* **[IDE本地运行时配置](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-ide-runtime-configuration)**

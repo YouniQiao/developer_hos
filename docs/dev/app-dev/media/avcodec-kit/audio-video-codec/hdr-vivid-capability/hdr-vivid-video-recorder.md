@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "HDR Vivid视频录制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-recorder
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-recorder
 format: md
 ---
 
@@ -84,7 +84,7 @@ target_link_libraries(sample PUBLIC libnative_media_core.so)
    }
    ```
 
-   具体可参考：[视频编码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding#surface模式)中的“步骤3：调用OH\_VideoEncoder\_RegisterCallback()设置回调函数”。
+   具体可参考：[视频编码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding#surface模式)中的“步骤3：调用OH\_VideoEncoder\_RegisterCallback()设置回调函数”。
 4. 配置编码器。
 
    可选配置视频帧宽度、视频帧高度、视频颜色格式。
@@ -117,10 +117,10 @@ target_link_libraries(sample PUBLIC libnative_media_core.so)
    ```
 5. 获取surface，并设置给相机。
 
-   具体可参考：[视频编码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding#surface模式)中的“步骤6：获取surface”。
+   具体可参考：[视频编码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding#surface模式)中的“步骤6：获取surface”。
 6. 调用OH\_VideoEncoder\_Start()启动编码器。
 
-   具体可参考：[视频编码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding#surface模式)中的“步骤8：调用OH\_VideoEncoder\_Start()启动编码器”。
+   具体可参考：[视频编码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding#surface模式)中的“步骤8：调用OH\_VideoEncoder\_Start()启动编码器”。
 
 ## HDR Vivid视频封装
 

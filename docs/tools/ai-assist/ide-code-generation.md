@@ -1,7 +1,7 @@
 ---
 title: "知识问答"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-code-generation
+original_url: /docs/tools/ai-assist/ide-code-generation
 format: md
 ---
 

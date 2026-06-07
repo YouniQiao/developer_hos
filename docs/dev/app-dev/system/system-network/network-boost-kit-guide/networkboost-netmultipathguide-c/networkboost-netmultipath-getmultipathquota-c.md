@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "多网配额查询(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-getmultipathquota-c
+original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-getmultipathquota-c
 format: md
 ---
 
@@ -28,7 +28,7 @@ format: md
    #include "NetworkBoostKit/network_boost_handover.h"
    #include <cstdio>
    ```
-2. CMakeLists.txt中添加以下lib，具体请见[C API开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-preparations#c-api开发准备)。
+2. CMakeLists.txt中添加以下lib，具体请见[C API开发准备](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-preparations#c-api开发准备)。
 
    ```
    libnetwork_boost.so

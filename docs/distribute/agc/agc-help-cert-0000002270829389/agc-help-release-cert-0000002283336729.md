@@ -1,6 +1,6 @@
 ---
 title: "申请发布证书"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-cert-0000002283336729
+original_url: /docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 #### 前提条件
 
 * 您已准备好[证书请求文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)。
-* 您的账号角色已[获取“访问发布类证书”权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
+* 您的账号角色已[获取“访问发布类证书”权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
 
 #### 操作步骤
 
@@ -38,8 +38,8 @@ format: md
    ![](../img/agc-help-release-cert-0000002283336729_4.png)
 
    * 证书申请成功即为“生效”状态。目前实名认证开发者的发布证书有效期为3年。证书到期目前暂不影响在架应用，但更新版本时若上传过期证书签名的软件包会失败，建议您及时更换证书与Profile。
-   * 在发布阶段，如果您更新发布证书，则需要[同步更新发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)。
+   * 在发布阶段，如果您更新发布证书，则需要[同步更新发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)。
    * 若证书状态变为“失效”或“已吊销”，表示当前证书已不可用，且通过此证书申请的Profile也会全部失效或吊销。您需要重新申请证书与Profile。
    * 证书一旦废除将不可恢复，且通过此证书申请的Profile也会全部失效，请谨慎操作。废除证书目前暂不影响在架应用。
    * 更新版本时您需要使用同一个CSR文件生成的证书，并使用新证书更新Profile文件。
-5. （可选）如您之前使用调试证书配置过公钥指纹，上架前需要将调试证书指纹更新为发布证书指纹，具体操作请参见[配置公钥指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-fingerprint-0000002278002933)。
+5. （可选）如您之前使用调试证书配置过公钥指纹，上架前需要将调试证书指纹更新为发布证书指纹，具体操作请参见[配置公钥指纹](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-fingerprint-0000002278002933)。

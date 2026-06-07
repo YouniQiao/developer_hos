@@ -1,6 +1,6 @@
 ---
 title: "获取AppFreeze指标"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-report-api-appfreeze-0000002309619750
+original_url: /docs/distribute/agc/agc-help-report-api-reference-0000002236201354/agc-help-report-api-appfreeze-0000002309619750
 format: md
 ---
 
@@ -35,14 +35,14 @@ format: md
 
 ![](../img/agc-help-report-api-appfreeze-0000002309619750_1.png)
 
-请参见[API客户端方式获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section1679462873111)获取**客户端ID**和**access\_token**。
+请参见[API客户端方式获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section1679462873111)获取**客户端ID**和**access\_token**。
 
 **其他请求头：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | packageName | M | String | 当前查询指标的应用包名。 |
-| appId | M | String | 应用ID。  获取方法参考[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 |
+| appId | M | String | 应用ID。  获取方法参考[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 |
 
 #### [h2]Body
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Ukey流程示例指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-best-dev
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-best-dev
 format: md
 ---
 

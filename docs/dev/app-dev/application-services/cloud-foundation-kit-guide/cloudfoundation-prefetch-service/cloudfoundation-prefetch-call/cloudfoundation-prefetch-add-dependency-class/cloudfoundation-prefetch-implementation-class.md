@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "预加载实现类"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-implementation-class
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-call/cloudfoundation-prefetch-add-dependency-class/cloudfoundation-prefetch-implementation-class
 format: md
 ---
 
@@ -158,7 +158,7 @@ export class PrefetchUtil {
 
   需要注意以下两点：
 
-  1. 使用cloudFunctionCall接口之前，请先[设置云函数配置项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-function#设置云函数配置项)。
+  1. 使用cloudFunctionCall接口之前，请先[设置云函数配置项](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-call-function#设置云函数配置项)。
   2. 测试周期性预加载时，需要将下文示例代码periodicPrefetch方法中的如下代码块注释。若不注释，则需等待12h才能获取周期性预加载数据。
 
      ```

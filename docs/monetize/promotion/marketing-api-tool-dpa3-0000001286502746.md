@@ -1,7 +1,7 @@
 ---
 title: "全量导入商品通知"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa3-0000001286502746
+original_url: /docs/monetize/promotion/marketing-api-tool-dpa3-0000001286502746
 format: md
 ---
 

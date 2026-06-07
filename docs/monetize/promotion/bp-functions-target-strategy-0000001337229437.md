@@ -1,7 +1,7 @@
 ---
 title: "创建定向包"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-strategy-0000001337229437
+original_url: /docs/monetize/promotion/bp-functions-target-strategy-0000001337229437
 format: md
 ---
 
@@ -77,14 +77,14 @@ format: md
 | --- | --- |
 | 选择APP | <strong>必选项。</strong>  请选择需要使用转化行为数据创建人群功能的APP。 |
 | 选择数据源 | <strong>必选项。</strong>  请选择APP对应的数据源。 |
-| 设置行为条件 | <strong>选填项。</strong>  依次设置行为条件的“行为名称”、“行为属性”和“计算条件”，并可以通过与或非的关系计算方法，实现多组行为条件的组合。  最多支持设置10组行为条件。   - 行为名称可选范围：基于用户回传数据字段选择，例如：激活、注册、付费等； - 行为属性可选范围：用户行为附带的属性参数，默认不限； - 计算条件：计算条件需要选择计算方法，是行为属性的数值要求。例如回传的转化目标为付费，那用户行为属性可选择付费金额，计算条件选择&gt;100，即筛选出付费金额&gt;100的回传设备数；如无行为属性字段的回传，请勿选择计算条件。   支持按<strong>回传用户行为数据</strong>接口的[<strong>actionParam</strong>](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-return-0000001238484400#ZH-CN_TOPIC_0000001362028993__p20993112715207)字段值提取对应的行为名称值和行为属性值。  示例如下：   ``` [\{'name':'预约时间','value':1\},\{'name':'预约时间','value':2\}] ``` |
-| 行为时间范围 | <strong>必选项。</strong>  请设置最近的时间段。输入10，即表示按最近10天回传的转化数据进行计算。  支持按<strong>回传用户行为数据</strong>接口的<strong>[actionTime](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-return-0000001238484400#ZH-CN_TOPIC_0000001362028993__p568144412615)</strong>字段值校验时间范围。 |
+| 设置行为条件 | <strong>选填项。</strong>  依次设置行为条件的“行为名称”、“行为属性”和“计算条件”，并可以通过与或非的关系计算方法，实现多组行为条件的组合。  最多支持设置10组行为条件。   - 行为名称可选范围：基于用户回传数据字段选择，例如：激活、注册、付费等； - 行为属性可选范围：用户行为附带的属性参数，默认不限； - 计算条件：计算条件需要选择计算方法，是行为属性的数值要求。例如回传的转化目标为付费，那用户行为属性可选择付费金额，计算条件选择&gt;100，即筛选出付费金额&gt;100的回传设备数；如无行为属性字段的回传，请勿选择计算条件。   支持按<strong>回传用户行为数据</strong>接口的[<strong>actionParam</strong>](/docs/monetize/promotion/bp-functions-ocpd-interface-return-0000001238484400#ZH-CN_TOPIC_0000001362028993__p20993112715207)字段值提取对应的行为名称值和行为属性值。  示例如下：   ``` [\{'name':'预约时间','value':1\},\{'name':'预约时间','value':2\}] ``` |
+| 行为时间范围 | <strong>必选项。</strong>  请设置最近的时间段。输入10，即表示按最近10天回传的转化数据进行计算。  支持按<strong>回传用户行为数据</strong>接口的<strong>[actionTime](/docs/monetize/promotion/bp-functions-ocpd-interface-return-0000001238484400#ZH-CN_TOPIC_0000001362028993__p568144412615)</strong>字段值校验时间范围。 |
 | 定向包名称 | 请配置此用户行为的定向包名称。 |
 
 ![](./img/caution_3.0-zh-cn_b5e358e01d59.png) 
 
 - 用户行为创建的定向包，仅支持：直客、直客协作者、投放操作账户使用。
-- 请先完成转化数据的回传功能。即连续[回传转化数据](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037)等于或大于两天，且每天回传量超过10。
+- 请先完成转化数据的回传功能。即连续[回传转化数据](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037)等于或大于两天，且每天回传量超过10。
 
 如果进入页面时，界面弹出如下弹框，则表示当前您的账号下没有转化数据的数据源，则需要完成转化数据回传功能。
 

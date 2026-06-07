@@ -1,6 +1,6 @@
 ---
 title: "使用REST API人工送检"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-restapi-0000002338703705
+original_url: /docs/dev/game-dev/games-gamemme-riskcontrol-restapi-0000002338703705
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* [下载csv文档模板](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-agc-0000002304504622#ZH-CN_TOPIC_0000002348293780__zh-cn_topic_0000001625726597_li393713505914)，并按照模板填写相关内容后保存。
-* 当前仅支持API客户端方式访问，在访问前需获取服务端授权，包括[创建API客户端](https://developer.huawei.com/consumer/cn/doc/games-guides/games-appendix-api-client-0000002304729552)和[获取认证Token](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-obtaintoken-restapi-0000002358963836)。
+* [下载csv文档模板](/docs/dev/game-dev/games-gamemme-riskcontrol-agc-0000002304504622#ZH-CN_TOPIC_0000002348293780__zh-cn_topic_0000001625726597_li393713505914)，并按照模板填写相关内容后保存。
+* 当前仅支持API客户端方式访问，在访问前需获取服务端授权，包括[创建API客户端](/docs/dev/game-dev/games-appendix-api-client-0000002304729552)和[获取认证Token](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-obtaintoken-restapi-0000002358963836)。
 
 ## 接入步骤
 

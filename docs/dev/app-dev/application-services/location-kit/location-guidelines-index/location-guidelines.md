@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取设备的位置信息开发指导(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-guidelines
+original_url: /docs/dev/app-dev/application-services/location-kit/location-guidelines-index/location-guidelines
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
 获取设备的位置信息所使用的接口如下，详细说明参见Location Kit API参考：[@ohos.geoLocationManager (位置服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager)。
 
-本模块能力仅支持WGS-84坐标系。如需转换成其他坐标系，请参考[坐标转换工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-convert-coordinate)。
+本模块能力仅支持WGS-84坐标系。如需转换成其他坐标系，请参考[坐标转换工具](/docs/dev/app-dev/application-services/map-kit-guide/map-calculation-tool/map-convert-coordinate)。
 
 | 接口名 | 功能描述 |
 | --- | --- |
@@ -29,7 +29,7 @@ format: md
 
 ## 开发步骤
 
-1. 获取设备的位置信息，需要有位置权限，位置权限申请的方法和步骤见[申请位置权限开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-permission-guidelines)。
+1. 获取设备的位置信息，需要有位置权限，位置权限申请的方法和步骤见[申请位置权限开发指导](/docs/dev/app-dev/application-services/location-kit/location-preparation/location-permission-guidelines)。
 2. 导入geoLocationManager模块，所有与基础定位能力相关的功能API，都是通过该模块提供的。
 
    ```
@@ -106,7 +106,7 @@ format: md
 
    通过本模块获取到的坐标均为WGS-84坐标系坐标点，如需使用其它坐标系类型的坐标点，请进行坐标系转换后再使用。
 
-   可参考Map Kit提供的地图计算工具进行[坐标转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-convert-coordinate)。
+   可参考Map Kit提供的地图计算工具进行[坐标转换](/docs/dev/app-dev/application-services/map-kit-guide/map-calculation-tool/map-convert-coordinate)。
 5. 持续定位。多用于导航、运动轨迹、出行等场景。
 
    首先要实例化[ContinuousLocationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#continuouslocationrequest12)对象，用于告知系统该向应用提供何种类型的位置服务，以及位置结果上报的频率。

@@ -1,6 +1,6 @@
 ---
 title: "AppReviewContact"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-appreviewcontact-0000002505438989
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-appreviewcontact-0000002505438989
 format: md
 ---
 

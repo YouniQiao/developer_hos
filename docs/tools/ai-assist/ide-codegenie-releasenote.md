@@ -1,7 +1,7 @@
 ---
 title: "版本说明"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-codegenie-releasenote
+original_url: /docs/tools/ai-assist/ide-codegenie-releasenote
 format: md
 ---
 

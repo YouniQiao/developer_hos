@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通行密钥身份认证（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-passkey-arkts
+original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-passkey/onlineauthentication-passkey-arkts
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ## 开发步骤
 
-通行密钥服务提供基于FIDO2标准协议的FIDO客户端实现，这里仅演示FIDO客户端相关API的使用，涉及FIDO服务器的相关处理由开发者自行实现，请参考[FIDO2标准协议](https://fidoalliance.org/passkeys/)（见[网站链接免责声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-website-disclaimer)）。
+通行密钥服务提供基于FIDO2标准协议的FIDO客户端实现，这里仅演示FIDO客户端相关API的使用，涉及FIDO服务器的相关处理由开发者自行实现，请参考[FIDO2标准协议](https://fidoalliance.org/passkeys/)（见[网站链接免责声明](/docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-website-disclaimer)）。
 
 1. 需要业务方自行根据FIDO2标准协议部署FIDO服务器。
 2. 导入相关模块。

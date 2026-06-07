@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "证书PKCS12的创建和解析"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-pkcs12
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-pkcs12
 format: md
 ---
 

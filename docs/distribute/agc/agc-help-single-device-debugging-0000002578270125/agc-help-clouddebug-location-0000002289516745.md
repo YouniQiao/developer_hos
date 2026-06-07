@@ -1,6 +1,6 @@
 ---
 title: "使用控制面板调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-location-0000002289516745
+original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-location-0000002289516745
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 #### 前提条件
 
-进行控制面板内的操作前必须先[申请调试设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-applyequip-0000002254916518)。
+进行控制面板内的操作前必须先[申请调试设备](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-applyequip-0000002254916518)。
 
 #### Shell脚本操作
 

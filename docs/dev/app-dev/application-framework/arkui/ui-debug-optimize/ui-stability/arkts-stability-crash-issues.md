@@ -1,6 +1,6 @@
 ---
 title: "UI相关应用崩溃常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-crash-issues
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-crash-issues
 format: md
 ---
 
@@ -84,7 +84,7 @@ OH\_NativeXComponent使用裸指针管理。应用侧持有其裸指针。如果
 
 **参考链接**
 
-[跨组件层级双向同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer)。
+[跨组件层级双向同步](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer)。
 
 ## @Link数据源类型错误
 
@@ -110,7 +110,7 @@ OH\_NativeXComponent使用裸指针管理。应用侧持有其裸指针。如果
 
 **参考链接**
 
-[父子双向同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)。
+[父子双向同步](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)。
 
 ## @Provide缺少重写声明
 
@@ -132,4 +132,4 @@ OH\_NativeXComponent使用裸指针管理。应用侧持有其裸指针。如果
 
 **参考链接**
 
-[跨组件层级双向同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer)。
+[跨组件层级双向同步](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer)。

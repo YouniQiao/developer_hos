@@ -1,6 +1,6 @@
 ---
 title: "创建应用分身"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/app-clone
 ---
 
 应用分身能在一个设备上安装多个相同的应用，实现多个账号同时登录并独立运行。主要应用场景有社交账号双开、游戏大小号双开等，无需账号切换，从而省去频繁登录的繁琐。
@@ -25,7 +25,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-
 
 1. 配置应用分身的方法。
 
-   在工程项目中对AppScope/app.json5配置文件配置[multiAppMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#multiappmode标签)字段。具体配置如下：
+   在工程项目中对AppScope/app.json5配置文件配置[multiAppMode](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#multiappmode标签)字段。具体配置如下：
 
    ```
    {

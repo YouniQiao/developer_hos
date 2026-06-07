@@ -1,6 +1,6 @@
 ---
 title: "通过router或call事件刷新卡片内容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-uiability
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-uiability
 format: md
 ---
 

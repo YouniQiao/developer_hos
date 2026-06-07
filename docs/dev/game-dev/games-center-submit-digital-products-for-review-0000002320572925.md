@@ -1,6 +1,6 @@
 ---
 title: "提交数字商品审核"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-submit-digital-products-for-review-0000002320572925
+original_url: /docs/dev/game-dev/games-center-submit-digital-products-for-review-0000002320572925
 format: md
 ---
 
@@ -11,6 +11,6 @@ format: md
 
 ![](./img/181aed05.png "点击放大")
 
-* **[前提条件](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-prerequisites-for-review-0000002285973448)**
-* **[首次提交数字商品或新增数字商品类型](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-first-digital-products-for-review-0000002286076732)**
-* **[提交已生效类型的数字商品](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-effective-digital-products-for-review-0000002320646005)**
+* **[前提条件](/docs/dev/game-dev/games-center-prerequisites-for-review-0000002285973448)**
+* **[首次提交数字商品或新增数字商品类型](/docs/dev/game-dev/games-center-first-digital-products-for-review-0000002286076732)**
+* **[提交已生效类型的数字商品](/docs/dev/game-dev/games-center-effective-digital-products-for-review-0000002320646005)**

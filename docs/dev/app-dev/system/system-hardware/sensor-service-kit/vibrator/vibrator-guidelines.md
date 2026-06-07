@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "振动开发指导(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vibrator-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/vibrator/vibrator-guidelines
 format: md
 ---
 
@@ -159,7 +159,7 @@ JSON文件共包含3个属性。
 1. 新建一个工程。
 
    ![](./img/f343fe13.png)
-2. 配置权限，具体配置方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+2. 配置权限，具体配置方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
    ```
    "requestPermissions": [

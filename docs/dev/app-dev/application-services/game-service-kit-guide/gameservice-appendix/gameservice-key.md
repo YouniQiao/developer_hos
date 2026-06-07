@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取游戏密钥"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-key
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-appendix/gameservice-key
 format: md
 ---
 

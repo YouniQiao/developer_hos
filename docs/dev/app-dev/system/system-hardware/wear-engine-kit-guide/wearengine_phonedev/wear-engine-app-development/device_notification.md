@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "穿戴设备模板化通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device_notification
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/device_notification
 format: md
 ---
 
 
 手机侧应用向穿戴设备发送通知，并在穿戴设备上按模板显示，支持穿戴设备收到通知后同步振动或响铃（跟随穿戴设备系统设置）。执行成功后，穿戴设备上会显示下图所示通知界面。
 
-该接口无需用户授权，仅需要确保应用已申请消息通知权限（参见[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)），否则接口将调用失败。
+该接口无需用户授权，仅需要确保应用已申请消息通知权限（参见[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)），否则接口将调用失败。
 
 ![](./img/49565c42.png)
 
@@ -30,10 +30,10 @@ format: md
 
 ![](./img/de8b90f2.png)
 
-该接口的调用需要在开发者联盟申请消息通知权限（请参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)）。
+该接口的调用需要在开发者联盟申请消息通知权限（请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）。
 
-1. 参见[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)章节，获取已连接设备列表。
-2. 参见[目标设备选择](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
+1. 参见[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)章节，获取已连接设备列表。
+2. 参见[目标设备选择](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
 3. 调用[wearEngine](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api)中的[getNotifyClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetnotifyclient)方法，获取[NotifyClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#notifyclient)对象。
 4. 定义[NotificationOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#notificationoptions)配置参数类。
 5. 调用[notify](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#notify)方法，从手机上的应用发送通知到穿戴设备侧。

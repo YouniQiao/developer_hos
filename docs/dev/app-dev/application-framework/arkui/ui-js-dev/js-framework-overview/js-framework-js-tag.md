@@ -1,6 +1,6 @@
 ---
 title: "js标签配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-js-tag
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-js-tag
 format: md
 ---
 

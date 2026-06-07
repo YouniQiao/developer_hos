@@ -1,6 +1,6 @@
 ---
 title: "创建测试态POI"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-regist-testsate-poi-0000002423306402
+original_url: /docs/distribute/agc/agc-help-beacon-apply-teststate-service-0000002456705193/agc-help-beacon-regist-testsate-poi-0000002423306402
 format: md
 ---
 

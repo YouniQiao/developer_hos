@@ -1,13 +1,13 @@
 ---
 title: "地址越界类问题案例"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-address-sanitizer
+original_url: /docs/quality/scenario-stability-address-sanitizer
 format: md
 ---
 
 
 # 地址越界类问题案例
 
-本文按照[地址越界类问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-illegal-way)的流程展开，以实际案例的形式指导开发者如何从CppCrash日志出发，分析、定位，修复地址越界问题。开发者可阅读[地址越界类问题检测](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ram-detection)了解系统检测地址越界问题的原理和机制。
+本文按照[地址越界类问题分析方法](/docs/quality/stability-address-illegal-way)的流程展开，以实际案例的形式指导开发者如何从CppCrash日志出发，分析、定位，修复地址越界问题。开发者可阅读[地址越界类问题检测](/docs/quality/stability-ram-detection)了解系统检测地址越界问题的原理和机制。
 
 ## 问题现象
 
@@ -59,11 +59,11 @@ x28:0000005af31cb228 x29:0000007fba087470
 lr:0000005af25e9480 sp:0000007fba087420 pc:0000005af07df83c
 ```
 
-首先从日志可以看到这是一个SIGSEGV(SEGV\_MAPERR) 的问题，这表示进程试图访问一个不存在的内存地址，或者试图访问一个没有映射到进程地址空间的内存地址。这种情况通常是由于程序中的指针错误或内存泄漏引起。接下来就要解栈初步定位出问题的代码行， 根据[llvm-addr2line](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-cpp-way#section14952241528)反编译#00号栈，可以看到该栈对应下图中黄色高亮代码行，该代码行在对裸指针做类型转换。
+首先从日志可以看到这是一个SIGSEGV(SEGV\_MAPERR) 的问题，这表示进程试图访问一个不存在的内存地址，或者试图访问一个没有映射到进程地址空间的内存地址。这种情况通常是由于程序中的指针错误或内存泄漏引起。接下来就要解栈初步定位出问题的代码行， 根据[llvm-addr2line](/docs/quality/stability-app-crash-cpp-way#section14952241528)反编译#00号栈，可以看到该栈对应下图中黄色高亮代码行，该代码行在对裸指针做类型转换。
 
 ![](./img/b99ddf15.png "点击放大")
 
-用[llvm-objdump](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-cppcrash#section10107179911)工具解该栈的地址，发现出问题的是x8寄存器，从当前指针里面取其中的第一个成员（虚表地址）取到了一个异常地址，从中偏移-80取内容的时候挂了。
+用[llvm-objdump](/docs/quality/scenario-stability-cppcrash#section10107179911)工具解该栈的地址，发现出问题的是x8寄存器，从当前指针里面取其中的第一个成员（虚表地址）取到了一个异常地址，从中偏移-80取内容的时候挂了。
 
 ```
 0000000000a5f814 <OHOS::Ace::RefPtr<OHOS::Ace::NG::AccessibilityProperty> OHOS::Ace::AceType::DynamicCast<OHOS::Ace::NG::AccessibilityProperty, OHOS::Ace::NG::AccessibilityProperty>(OHOS::Ace::RefPtr<OHOS::Ace::NG::AccessibilityProperty> const&)>:
@@ -94,7 +94,7 @@ lr:0000005af25e9480 sp:0000007fba087420 pc:0000005af07df83c
 
 **第三步：内存特征分析**
 
-继续使用[llvm-objdump](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-cppcrash#section10107179911)进行反汇编分析，关注崩溃栈中的#01栈：
+继续使用[llvm-objdump](/docs/quality/scenario-stability-cppcrash#section10107179911)进行反汇编分析，关注崩溃栈中的#01栈：
 
 ```
 #01 pc 000000000286947c /system/lib64/platformsdk/libace_compatible.z.so

@@ -1,6 +1,6 @@
 ---
 title: "填写备案信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-record-0000002458282229
+original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-record-0000002458282229
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 #### 前提条件
 
-已根据[元服务备案](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing)和[国产游戏小程序备案准备](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-chinese-preparation-0000001979934858)完成小游戏备案，并保存好备案信息。
+已根据[元服务备案](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing)和[国产游戏小程序备案准备](/docs/dev/game-dev/quickgame-filing-chinese-preparation-0000001979934858)完成小游戏备案，并保存好备案信息。
 
 #### 操作步骤
 

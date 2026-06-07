@@ -1,7 +1,7 @@
 ---
 title: 旅游住宿类
 sidebar_label: 旅游住宿类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/tourist-accommodation-0000001957241545
+original_url: /docs/design/app-design-practices/tourist-accommodation
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250701110552.43314413932786668489863606141298:50001231000000:2800:F0989507E2BD9828884E9175F41A69726525ABA6B5C0624C6806168D89D15351.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例（旅行订票)-时间选择页。](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-travel-accommodation#section147288193403)
+本场景的开发指南，请参阅[一多开发实例（旅行订票)-时间选择页。](/docs/dev/app-dev/multi-device/multi-travel-accommodation#section147288193403)
 
 ## 车票查询
 
@@ -37,7 +37,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250701110552.20303326621874369074807048371196:50001231000000:2800:977511985E2E6E2511AE4A8357BA6CE201ECF6E13C6C0B91DB645817ADF571AF.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例（旅行订票)-查询车票上滑](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-travel-accommodation#section052546194213)。
+本场景的开发指南，请参阅[一多开发实例（旅行订票)-查询车票上滑](/docs/dev/app-dev/multi-device/multi-travel-accommodation#section052546194213)。
 
 ## 信息填写
 
@@ -45,7 +45,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250701110553.85689452585941531568959271574980:50001231000000:2800:5F8333CABE3174B520C8394DC033D3DA8F987D24D8EAA31A3AF733D16552CEC0.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例（旅行订票)-填写购票信息页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-travel-accommodation#section3911202734415)。
+本场景的开发指南，请参阅[一多开发实例（旅行订票)-填写购票信息页](/docs/dev/app-dev/multi-device/multi-travel-accommodation#section3911202734415)。
 
 ## 提交订单
 
@@ -61,7 +61,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250701110553.11923312293254795636449330771193:50001231000000:2800:47C78D1A0FC89F6A2746A14D03174F0F84C628DFC6B9586BC6527BD0519B8E34.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例（旅行订票)-订单信息页。](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-travel-accommodation#section755015294519)
+本场景的开发指南，请参阅[一多开发实例（旅行订票)-订单信息页。](/docs/dev/app-dev/multi-device/multi-travel-accommodation#section755015294519)
 
 ## 已支付订单
 
@@ -83,7 +83,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250701110554.24649660660031717350746609199989:50001231000000:2800:6625448FBB6970E8F52E102385D6EC0AF15A2F88949082ED936DC776F2D52AD2.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例（旅行订票)-酒店首页。](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-travel-accommodation#section41871019476)
+本场景的开发指南，请参阅[一多开发实例（旅行订票)-酒店首页。](/docs/dev/app-dev/multi-device/multi-travel-accommodation#section41871019476)
 
 ## 酒店排行榜
 
@@ -91,7 +91,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250701110555.81845752805152017883601062905437:50001231000000:2800:6C0C534E49C77D0306435A8BBD78D1F86B6F04B62EBEC41A2CE0B75651F289D2.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例（旅行订票)-酒店排行榜页面。](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-travel-accommodation#section159523974711)
+本场景的开发指南，请参阅[一多开发实例（旅行订票)-酒店排行榜页面。](/docs/dev/app-dev/multi-device/multi-travel-accommodation#section159523974711)
 
 ## 酒店详情
 
@@ -99,4 +99,4 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250701110555.14217311950874501807593145220758:50001231000000:2800:82D006B5B08CFBF2D57F151E56B74135F029F78C6E55BCBB0D3105D5C09D60C0.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例（旅行订票)-酒店详情页。](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-travel-accommodation#section185431244812)
+本场景的开发指南，请参阅[一多开发实例（旅行订票)-酒店详情页。](/docs/dev/app-dev/multi-device/multi-travel-accommodation#section185431244812)

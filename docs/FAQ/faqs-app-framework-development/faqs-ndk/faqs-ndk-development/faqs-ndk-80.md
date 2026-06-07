@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native侧如何合理管控对象的生命周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-80
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-80
 ---
 
 
@@ -21,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
    Node-API中，scope的层次结构是嵌套的。任何时候只有一个活动scope，所有新句柄都会在该作用域处于活动状态时与之关联。scope必须按相反顺序关闭，在native方法中创建的所有scope必须在该方法返回前关闭。
 
-   关于句柄的相关代码使用可参考：[生命周期管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines#生命周期管理)
+   关于句柄的相关代码使用可参考：[生命周期管理](/docs/dev/ndk-dev/napi-guidelines#生命周期管理)
 
    在嵌套作用域时，来自内部作用域的句柄有时需要超出该作用域的寿命。为了支持这种情况，Node-API支持"escapable scope"，允许一个句柄提升（promoted），以便它逃离当前作用域，将句柄的寿命从当前作用域更改为外部作用域。用于打开/关闭"escapable scope"的方法有napi\_open\_escapable\_handle\_scope和napi\_close\_escapable\_handle\_scope。
 
@@ -44,4 +44,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
    napi\_get\_reference\_value(napi\_env env, napi\_ref ref, napi\_value \*result); 获取与引用相关联的napi\_value对象。
 
-   关于引用相关接口的使用可以参考：[使用callback方式示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-asynchronous-task#使用callback方式示例)
+   关于引用相关接口的使用可以参考：[使用callback方式示例](/docs/dev/ndk-dev/use-napi-asynchronous-task#使用callback方式示例)

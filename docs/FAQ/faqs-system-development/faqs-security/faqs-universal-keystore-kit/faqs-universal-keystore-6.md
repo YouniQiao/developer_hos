@@ -1,7 +1,7 @@
 ---
 format: md
 title: "HUKS解密时，若明文包含中文字符，则解密后明文与原明文不一致"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-universal-keystore-6
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-universal-keystore-kit/faqs-universal-keystore-6
 ---
 
 

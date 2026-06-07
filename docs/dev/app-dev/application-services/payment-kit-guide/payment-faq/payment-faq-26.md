@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "商户号绑定AppID提示“主体不一致”？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-26
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-26
 format: md
 ---
 

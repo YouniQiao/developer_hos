@@ -1,7 +1,7 @@
 ---
 format: md
 title: "为什么稳定性测试过程中的AppFreeze问题，有时Testing报告上显示的比设备faultlogger实际产生的问题数量少"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-stability-basic-quality-test-5
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-stability-basic-quality-test/faqs-stability-basic-quality-test-5
 ---
 
 

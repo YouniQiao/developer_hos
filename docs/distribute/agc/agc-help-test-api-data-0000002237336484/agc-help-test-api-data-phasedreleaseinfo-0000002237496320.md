@@ -1,6 +1,6 @@
 ---
 title: "PhasedReleaseInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-phasedreleaseinfo-0000002237496320
+original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-phasedreleaseinfo-0000002237496320
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用间消息通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_p2p_communication
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/p2p_communication
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ## 穿戴侧应用检测对端设备侧应用是否安装
 
-1. 参见[已连接对端设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
+1. 参见[已连接对端设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
 2. 调用[getP2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetp2pclient)方法，获取[P2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pclient)对象。
 3. 调用[isRemoteAppInstalled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#isremoteappinstalled)方法，查看对端设备是否安装指定应用。
 
@@ -45,7 +45,7 @@ format: md
    ```
    import { util } from '@kit.ArkTS';
    ```
-2. 参见[已连接对端设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
+2. 参见[已连接对端设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
 3. 构造对端应用参数[P2pAppParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pappparam)。
 4. 构造需要发送的消息[P2pMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pmessage)。
 5. 调用[getP2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetp2pclient)方法，获取[P2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pclient)对象。
@@ -89,7 +89,7 @@ format: md
    ```
    import { fileIo } from '@kit.CoreFileKit';
    ```
-2. 参见[已连接对端设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
+2. 参见[已连接对端设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
 3. 构造对端应用参数[P2pAppParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pappparam)。
 4. 根据文件路径filePath，构造需要发送的文件[P2pFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pfile)。
 5. 调用[getP2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetp2pclient)方法，获取[P2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pclient)对象。
@@ -155,7 +155,7 @@ format: md
 
 ## 订阅接收对端应用发来的消息
 
-1. 参见[已连接对端设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
+1. 参见[已连接对端设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
 2. 调用[getP2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetp2pclient)方法，获取[P2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pclient)对象。
 3. 构造对端应用参数[P2pAppParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pappparam)。
 4. 构造接收到对端传来消息后的回调函数[Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback)。
@@ -199,7 +199,7 @@ format: md
 
 ## 订阅接收对端应用发送来的文件
 
-1. 参见[已连接对端设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
+1. 参见[已连接对端设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
 2. 调用[getP2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetp2pclient)方法，获取[P2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pclient)对象。
 3. 构造设备侧应用参数[P2pAppParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pappparam)。
 4. 构造接收到设备侧传来文件后的回调函数[Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-base#callback)。
@@ -271,7 +271,7 @@ format: md
      }
    }
    ```
-2. 在module.json5中的abilities中配置HiWearMainAbility。更多配置详情参考[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)。
+2. 在module.json5中的abilities中配置HiWearMainAbility。更多配置详情参考[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)。
 
    * 配置name为HiWearMainAbility。
    * 配置srcEntry为HiWearMainAbility.ets文件的路径。
@@ -329,7 +329,7 @@ format: md
 
 ## 穿戴侧应用拉起对端设备侧应用
 
-1. 参见[已连接对端设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
+1. 参见[已连接对端设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev/watch_query_connected_devices)章节，从已连接设备列表中选定需要通信的对端设备。
 2. 构造对端应用参数[remoteAppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#appinfo)。
 3. 构造需要拉起对端应用的参数[startConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#startconfig)。
 4. 调用[getP2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetp2pclient)方法，获取[P2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pclient)对象。
@@ -337,7 +337,7 @@ format: md
 
    ![](./img/0d8f8826.png)
 
-   该接口的调用需要在开发者联盟申请拉起已配对设备的指定应用权限（请参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)）。
+   该接口的调用需要在开发者联盟申请拉起已配对设备的指定应用权限（请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）。
 
    ```
    // 步骤2 构造对端应用参数
@@ -366,7 +366,7 @@ format: md
 
 ## 穿戴设备侧应用获取对端设备侧应用的版本号
 
-1. 参见[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)章节，获取已连接设备列表。
+1. 参见[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)章节，获取已连接设备列表。
 2. 调用wearEngine中的[getP2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetp2pclient)方法，获取[P2pClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#p2pclient)对象。
 3. 调用[getRemoteAppVersion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#getremoteappversion)方法，获取指定设备对应的应用版本号。
 

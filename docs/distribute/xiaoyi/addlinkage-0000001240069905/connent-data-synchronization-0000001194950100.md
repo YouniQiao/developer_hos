@@ -1,7 +1,7 @@
 ---
 title: "内容数据同步接口"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/connent-data-synchronization-0000001194950100
+original_url: /docs/distribute/xiaoyi/addlinkage-0000001240069905/connent-data-synchronization-0000001194950100
 ---
 
 import MergeTable from '@site/src/components/MergeTable';

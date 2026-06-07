@@ -1,7 +1,7 @@
 ---
 title: "直客管理者账户"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guestteam-admin-0000001526225136
+original_url: /docs/monetize/promotion/bp-start-guestteam-admin-0000001526225136
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
    ![](./img/caution_3.0-zh-cn_a713c56897d2.png) 
 
-   直客团队账户升级入口仅在账户中存在具备推广权限的应用时显示，请确认直客账户内上架应用已[申请推广评测权限](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-apply-evaluation-0000001346654709)。
+   直客团队账户升级入口仅在账户中存在具备推广权限的应用时显示，请确认直客账户内上架应用已[申请推广评测权限](/docs/monetize/promotion/bp-start-guest-apply-evaluation-0000001346654709)。
 
    ![](./img/zh-cn_image_0000002523692880_6fbf2ea424d4.png "点击放大")
 2. 确认开通直客团队账户。
@@ -88,7 +88,7 @@ format: md
 
 ## 查看协作者账户投放数据
 
-直客管理者账户右上角切换账号，选择角色类型“普通直客”，进入投放端，在【报表】页查看协作者投放数据。查看操作与直客账户相同，具体请参见[查询整体数据报表](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-overall-data-0000001294054000)。
+直客管理者账户右上角切换账号，选择角色类型“普通直客”，进入投放端，在【报表】页查看协作者投放数据。查看操作与直客账户相同，具体请参见[查询整体数据报表](/docs/monetize/promotion/bp-delivery-task-management-overall-data-0000001294054000)。
 
 ![](./img/zh-cn_image_0000002554774469_ca2c879b0a8f.png "点击放大")
 

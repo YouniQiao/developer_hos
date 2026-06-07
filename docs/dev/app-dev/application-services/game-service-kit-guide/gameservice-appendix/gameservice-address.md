@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "配置回调地址"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-address
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-appendix/gameservice-address
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "加密导出导入密钥(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-wrap-key-ndk
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-wrap-key/huks-wrap-key-ndk
 format: md
 ---
 
@@ -16,7 +16,7 @@ target_link_libraries(entry PUBLIC libhuks_ndk.z.so)
 ## 开发步骤
 
 1. 初始化生成密钥属性集，需要设置[OH\_HUKS\_TAG\_IS\_ALLOWED\_WRAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_tag)，指定密钥允许导出。
-2. 调用[OH\_Huks\_GenerateKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-api-h#oh_huks_generatekeyitem)生成密钥，具体请参考[密钥生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)。
+2. 调用[OH\_Huks\_GenerateKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-api-h#oh_huks_generatekeyitem)生成密钥，具体请参考[密钥生成](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)。
 3. 调用[OH\_Huks\_WrapKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-api-h#oh_huks_wrapkey)加密导出密钥。
 4. 调用[OH\_Huks\_UnwrapKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-api-h#oh_huks_unwrapkey)加密导入密钥。
 

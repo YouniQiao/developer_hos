@@ -1,7 +1,7 @@
 ---
 title: "获取对账结算数据"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/reconciliation-data-0000002348239424
+original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/operation-guide-0000002381879945/reconciliation-data-0000002348239424
 format: md
 ---
 

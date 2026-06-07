@@ -1,6 +1,6 @@
 ---
 title: "强密码填充"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-strong-password
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-strong-password
 format: md
 ---
 
@@ -12,10 +12,10 @@ format: md
 * **已设置锁屏密码**并且开启密码保险箱中“自动填充和保存”开关。
 * 界面中必须同时存在type为InputType.USER\_NAME（表示用户名输入框）和InputType.NEW\_PASSWORD（表示新密码输入框）的TextInput输入框组件。
 
-  具体类型请参考[输入框类型说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation#约束与限制)。
+  具体类型请参考[输入框类型说明](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-quick-adaptation#约束与限制)。
 * TextInput组件的enableAutoFill属性的值为true（默认true）。
 * 用户在界面中首次点击新密码输入框时触发强密码弹窗，用户点击使用密码按钮可以将弹窗中显示的强密码自动填充到新密码输入框。
-* 开发者可以根据[一定的规则和建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-custom-strong-password-rules)指定强密码生成规则。
+* 开发者可以根据[一定的规则和建议](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-custom-strong-password-rules)指定强密码生成规则。
 
 ## 注册
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "http请求并发的最大数量限制是多少"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-28
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-28
 ---
 
 

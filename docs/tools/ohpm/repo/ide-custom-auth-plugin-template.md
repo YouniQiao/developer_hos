@@ -1,7 +1,7 @@
 ---
 title: "模板文件"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-custom-auth-plugin-template
+original_url: /docs/tools/ohpm/repo/ide-custom-auth-plugin-template
 ---
 
 

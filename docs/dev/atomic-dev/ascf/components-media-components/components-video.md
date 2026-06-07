@@ -1,6 +1,6 @@
 ---
 title: "video"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-video
+original_url: /docs/dev/atomic-dev/ascf/components-media-components/components-video
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 **起始版本：** 1.0.0
 
-**关联文档：** [has.createVideoContext](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-video#hascreatevideocontext)
+**关联文档：** [has.createVideoContext](/docs/dev/atomic-dev/ascf/apis-media/apis-video#hascreatevideocontext)
 
 **重要提示：** 当HarmonyOS SDK版本≥6.1.0(23) 且ROM版本 ≥ 6.1.0时，video组件全屏状态下menubar会隐藏。
 
@@ -29,7 +29,7 @@ format: md
 | object-fit | string | contain | 否 | 当视频大小与 video 容器大小不一致时，视频的表现形式。  contain：保持宽高比进行缩小或者放大，使得视频完全显示在显示边界内。  cover：保持宽高比进行缩小或者放大，使得视频两边都大于或等于显示边界。  fill：不保持宽高比进行放大缩小，使得视频充满显示边界。  **起始版本：** 1.0.3 |
 | poster | string | - | 否 | 视频未播放时的预览图片路径，默认显示视频第一帧，支持网络图片。  poster值加载错误时：  在1.0.15及之前的版本，视频封面黑屏处理。  从1.0.16开始，默认显示视频第一帧。 |
 | direction | number | - | 否 | 设置全屏时视频的方向，不指定则根据宽高比自动判断。  0：正常竖向。  90：屏幕逆时针90度。  -90：屏幕顺时针90度。  **起始版本：** 1.0.16 |
-| show-casting-button | boolean | false | 否 | 显示投屏按钮。开始播放后才显示，只支持网络视频投屏。  **需要权限：** 开启投屏播放，需要如下配置：  在module.json5中声明**ohos.permission.KEEP\_BACKGROUND\_RUNNING**权限。  在module.json5中声明**backgroundModes**配置项。  "module": \&#123;"abilities": [&#123;"backgroundModes": ["audioPlayback"]\&#125;]&#125;  在[app.json](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/appjson-global-config)中配置**requiredBackgroundModes**属性。    "requiredBackgroundModes": ["audio"]  **起始版本：** 1.0.16 |
+| show-casting-button | boolean | false | 否 | 显示投屏按钮。开始播放后才显示，只支持网络视频投屏。  **需要权限：** 开启投屏播放，需要如下配置：  在module.json5中声明**ohos.permission.KEEP\_BACKGROUND\_RUNNING**权限。  在module.json5中声明**backgroundModes**配置项。  "module": \&#123;"abilities": [&#123;"backgroundModes": ["audioPlayback"]\&#125;]&#125;  在[app.json](/docs/dev/atomic-dev/ascf/config/appjson-global-config)中配置**requiredBackgroundModes**属性。    "requiredBackgroundModes": ["audio"]  **起始版本：** 1.0.16 |
 | show-fullscreen-btn | boolean | true | 否 | 是否显示全屏按钮。  **起始版本：** 1.0.16 |
 | show-play-btn | boolean | true | 否 | 是否显示视频底部控制栏的播放按钮。  **起始版本：** 1.0.16 |
 | play-btn-position | string | bottom | 否 | 播放按钮的位置。  bottom：底部控制栏上。  center：视频中间。  **起始版本：** 1.0.16 |

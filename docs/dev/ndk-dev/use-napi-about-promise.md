@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口处理异步操作"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-promise
+original_url: /docs/dev/ndk-dev/use-napi-about-promise
 format: md
 ---
 
@@ -35,7 +35,7 @@ Promise是ArkTS中用来处理异步操作的对象，Promise有pending（待定
 
 ## 使用示例
 
-Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
+Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
 
 ### napi\_is\_promise
 

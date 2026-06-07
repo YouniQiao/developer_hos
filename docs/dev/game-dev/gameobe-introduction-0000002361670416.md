@@ -1,6 +1,6 @@
 ---
 title: "业务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-introduction-0000002361670416
+original_url: /docs/dev/game-dev/gameobe-introduction-0000002361670416
 has_merged_cells: true
 format: md
 ---
@@ -49,11 +49,11 @@ format: md
 
 | 序号 | 步骤 | 详情 |
 | --- | --- | --- |
-| 1 | 开通服务 | 首次使用联机对战服务时，您需在AGC控制台上[开通服务](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-enable-0000002395350369)。 |
-| 2 | 配置服务 | 在AGC控制台对[房间延时解散](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section3726630194418)和[玩家掉线重连](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section172221948194413)时间进行设置，并自定义[匹配规则](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-ruleconfiguration-0000002361670428)用于玩家匹配，同时还可根据使用需要进行[帧同步管理](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-framesync-management-0000002395350373)和[实时服务器托管](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-codehosting-realtime-server-0000002361510732)操作。 |
-| 3 | 集成SDK | 使用联机对战服务相关功能，必须集成联机对战SDK（[JS](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-js-0000002361670432)丨[C#](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-csharp-0000002395350421)）。 |
-| 4 | 初始化SDK | 功能开发前，您需先完成联机对战SDK初始化（[JS](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-js-0000002395350377)丨[C#](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-csharp-0000002361510612)）。 |
-| 5 | 功能开发 | 完成SDK初始化后，调用联机对战SDK的API执行创建房间、加入房间、匹配房间、更新自定义状态、更新自定义属性、更新房间信息、帧同步、发送消息、掉线重连、离开房间、解散房间等操作（[JS](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-createjoinroom-js-0000002361670436)丨[C#](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-createjoinroom-csharp-0000002395350425)）。 |
+| 1 | 开通服务 | 首次使用联机对战服务时，您需在AGC控制台上[开通服务](/docs/dev/game-dev/gameobe-enable-0000002395350369)。 |
+| 2 | 配置服务 | 在AGC控制台对[房间延时解散](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section3726630194418)和[玩家掉线重连](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section172221948194413)时间进行设置，并自定义[匹配规则](/docs/dev/game-dev/gameobe-ruleconfiguration-0000002361670428)用于玩家匹配，同时还可根据使用需要进行[帧同步管理](/docs/dev/game-dev/gameobe-framesync-management-0000002395350373)和[实时服务器托管](/docs/dev/game-dev/gameobe-codehosting-realtime-server-0000002361510732)操作。 |
+| 3 | 集成SDK | 使用联机对战服务相关功能，必须集成联机对战SDK（[JS](/docs/dev/game-dev/gameobe-integratingsdk-js-0000002361670432)丨[C#](/docs/dev/game-dev/gameobe-integratingsdk-csharp-0000002395350421)）。 |
+| 4 | 初始化SDK | 功能开发前，您需先完成联机对战SDK初始化（[JS](/docs/dev/game-dev/gameobe-initializing-js-0000002395350377)丨[C#](/docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612)）。 |
+| 5 | 功能开发 | 完成SDK初始化后，调用联机对战SDK的API执行创建房间、加入房间、匹配房间、更新自定义状态、更新自定义属性、更新房间信息、帧同步、发送消息、掉线重连、离开房间、解散房间等操作（[JS](/docs/dev/game-dev/gameobe-createjoinroom-js-0000002361670436)丨[C#](/docs/dev/game-dev/gameobe-createjoinroom-csharp-0000002395350425)）。 |
 
 ## 接入流程与耗时
 

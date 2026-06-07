@@ -1,6 +1,6 @@
 ---
 title: "TaskPool任务与宿主线程通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-communicates-with-mainthread
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/taskpool-communicates-with-mainthread
 format: md
 ---
 

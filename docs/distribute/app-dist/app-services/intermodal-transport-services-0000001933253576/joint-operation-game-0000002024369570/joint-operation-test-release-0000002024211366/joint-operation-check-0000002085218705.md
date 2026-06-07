@@ -1,7 +1,7 @@
 ---
 title: "开发后自检"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-check-0000002085218705
+original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/joint-operation-game-0000002024369570/joint-operation-test-release-0000002024211366/joint-operation-check-0000002085218705
 format: md
 ---
 

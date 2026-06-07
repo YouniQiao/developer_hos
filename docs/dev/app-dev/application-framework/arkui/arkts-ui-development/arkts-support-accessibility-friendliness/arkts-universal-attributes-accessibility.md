@@ -1,6 +1,6 @@
 ---
 title: "无障碍开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-universal-attributes-accessibility
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-support-accessibility-friendliness/arkts-universal-attributes-accessibility
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "单一手势"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-single-gesture
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-single-gesture
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 单击作为常用的手势，可以方便地使用[onClick](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick)接口实现。尽管被称为事件，它实际上是基本手势类型，等同于将count配置为1的TapGesture，即单击手势。
 
-onClick与其他手势类型相同，也会参与命中测试、响应链收集等过程。可以使用[干预手势处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-support-gesture#干预手势处理)机制对onClick的响应进行动态决策。
+onClick与其他手势类型相同，也会参与命中测试、响应链收集等过程。可以使用[干预手势处理](/docs/dev/app-dev/application-framework/arkts-interaction-development-guide-support-gesture#干预手势处理)机制对onClick的响应进行动态决策。
 
 ```
 @Entry

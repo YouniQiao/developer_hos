@@ -1,6 +1,6 @@
 ---
 title: "更新"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-updatemanager
+original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager
 format: md
 ---
 

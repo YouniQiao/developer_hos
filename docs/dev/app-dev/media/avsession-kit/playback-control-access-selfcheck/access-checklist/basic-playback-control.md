@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "基础播控"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control
+original_url: /docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control
 format: md
 ---
 
@@ -138,7 +138,7 @@ format: md
 
 ![](./img/09f0c9a3.png)
 
-应用按照内部实现，按需注册支持的播放控制指令。对于未注册的播放控制指令，在播控中心会显示为上图置灰样式，明确告知用户当前指令该应用不支持。具体实现可参考[应用接入AVSession-不支持命令的处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#不支持命令的处理)。
+应用按照内部实现，按需注册支持的播放控制指令。对于未注册的播放控制指令，在播控中心会显示为上图置灰样式，明确告知用户当前指令该应用不支持。具体实现可参考[应用接入AVSession-不支持命令的处理](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#不支持命令的处理)。
 
 ## 点击播控卡片跳转应用指定页面
 
@@ -146,7 +146,7 @@ format: md
 
 **自验证关注点：** 播放过程中，进入播控中心，点击封面大图查看是否跳转至应用当前播放页面。
 
-用户通过点击播控卡片，应跳转到应用的具体业务页，如：音乐/听书/视频的播放详情页，直播间页，新闻阅读播放页，浏览器具体tab页。具体实现可参考[媒体会话提供方-开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avsession-developer#开发步骤)的第3步。
+用户通过点击播控卡片，应跳转到应用的具体业务页，如：音乐/听书/视频的播放详情页，直播间页，新闻阅读播放页，浏览器具体tab页。具体实现可参考[媒体会话提供方-开发步骤](/docs/dev/app-dev/media/avsession-kit/local-avsession/using-avsession-developer#开发步骤)的第3步。
 
 ![](./img/13a6901f.png)
 
@@ -156,7 +156,7 @@ format: md
 
 **自验证关注点：** 播放过程中，进入播控中心，点击收藏按钮，查看是否生效，是否与应用内同功能按钮状态一致。
 
-音乐/听书类应用，如应用内支持收藏/喜欢功能，可按需适配播控的收藏功能，用户播放过程中可以通过播控中心点击收藏/取消收藏。应用适配收藏功能，接收到播控的收藏/取消收藏的回调，或者用户在应用内点击收藏/取消收藏，均需上报当前播放内容的收藏状态，保证应用与播控的显示一致。具体实现可参考[应用接入AVSession-收藏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#收藏)。
+音乐/听书类应用，如应用内支持收藏/喜欢功能，可按需适配播控的收藏功能，用户播放过程中可以通过播控中心点击收藏/取消收藏。应用适配收藏功能，接收到播控的收藏/取消收藏的回调，或者用户在应用内点击收藏/取消收藏，均需上报当前播放内容的收藏状态，保证应用与播控的显示一致。具体实现可参考[应用接入AVSession-收藏](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#收藏)。
 
 ![](./img/7ab5e53c.png)
 

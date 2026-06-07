@@ -1,6 +1,6 @@
 ---
 title: "ASCF引擎没有自动升级到最新版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-plugin-not-upgraded
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-not-upgraded
 format: md
 ---
 
@@ -15,5 +15,5 @@ format: md
 
 **解决措施**
 
-1. 使用命令“hdc shell bm dump-shared -n com.huawei.hms.ascfruntime”命令查看当前版本号。对照[ASCF运行时的版本说明](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-note-ascf-runtime)，确认是否最新的版本号。
+1. 使用命令“hdc shell bm dump-shared -n com.huawei.hms.ascfruntime”命令查看当前版本号。对照[ASCF运行时的版本说明](/docs/dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-runtime)，确认是否最新的版本号。
 2. 如果不是最新版本，可以打开应用市场，把“我的 &gt; 设置 &gt; 自动更新应用”选项设置为“仅WLAN下”或者“WLAN和移动网络”，应用市场就会自动更新ascf引擎了。

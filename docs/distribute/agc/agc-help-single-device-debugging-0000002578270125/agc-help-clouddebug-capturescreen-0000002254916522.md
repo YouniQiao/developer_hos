@@ -1,6 +1,6 @@
 ---
 title: "调试截屏"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-capturescreen-0000002254916522
+original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-capturescreen-0000002254916522
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 #### 前提条件
 
-调试截屏前必须先[申请调试设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-applyequip-0000002254916518)。
+调试截屏前必须先[申请调试设备](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-applyequip-0000002254916518)。
 
 #### 截屏
 
@@ -22,6 +22,6 @@ format: md
 
    ![](../img/agc-help-clouddebug-capturescreen-0000002254916522_1.png)
 
-   截屏图片会同步保存至测试报告中，您可以在测试报告上打开对应设备的报告详情，查看历史截屏图片，详见[查看测试报告](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-viewreport-0000002255019576)。
+   截屏图片会同步保存至测试报告中，您可以在测试报告上打开对应设备的报告详情，查看历史截屏图片，详见[查看测试报告](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-viewreport-0000002255019576)。
 
    ![](../img/agc-help-clouddebug-capturescreen-0000002254916522_2.png "点击放大")

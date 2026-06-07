@@ -1,7 +1,7 @@
 ---
 title: "查询商品库筛选条件取值"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa2-0000001338502485
+original_url: /docs/monetize/promotion/marketing-api-tool-dpa2-0000001338502485
 format: md
 ---
 
@@ -31,9 +31,9 @@ format: md
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | country | string | 是 | 商品库投放任务的销售国家。 |
-  | flow\_resources | string[] | 是 | 资源类型，详见[投放网络](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1178164162818)。 |
-  | dimension\_category | String | 是 | 筛选条件类别，取值见[筛选条件类别](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section131497188312)枚举值。 |
-  | dimension\_type | String[] | 否 | 商品广告投放过滤维度，详见[商品广告投放过滤维度](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section13141944162816)。 |
+  | flow\_resources | string[] | 是 | 资源类型，详见[投放网络](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1178164162818)。 |
+  | dimension\_category | String | 是 | 筛选条件类别，取值见[筛选条件类别](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section131497188312)枚举值。 |
+  | dimension\_type | String[] | 否 | 商品广告投放过滤维度，详见[商品广告投放过滤维度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section13141944162816)。 |
 
   - <strong>请求示例</strong>
 
@@ -71,7 +71,7 @@ format: md
     |  |  |  |
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
-    | dimension\_type | string | 商品过滤维度，详见[商品过滤维度](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section164841617202910)。 |
+    | dimension\_type | string | 商品过滤维度，详见[商品过滤维度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section164841617202910)。 |
     | dimension\_values | Struct2 | 商品库中的筛选条件列表。 |
 
     Struct2参数

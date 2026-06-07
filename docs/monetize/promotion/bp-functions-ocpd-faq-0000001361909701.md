@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-faq-0000001361909701
+original_url: /docs/monetize/promotion/bp-functions-ocpd-faq-0000001361909701
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 
 ## oCPD数据回传，显示归因不匹配，是什么原因？
 
-可以在数据源概况中看到回传数据的情况，查看方法参见[查询数据源](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-inquire-data-source-0000001282844469)。
+可以在数据源概况中看到回传数据的情况，查看方法参见[查询数据源](/docs/monetize/promotion/bp-functions-ocpd-inquire-data-source-0000001282844469)。
 
 各指标的含义如下：
 

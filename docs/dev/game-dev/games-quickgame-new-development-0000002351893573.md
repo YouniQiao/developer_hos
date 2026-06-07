@@ -1,6 +1,6 @@
 ---
 title: "全新开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-new-development-0000002351893573
+original_url: /docs/dev/game-dev/games-quickgame-new-development-0000002351893573
 format: md
 ---
 
@@ -13,4 +13,4 @@ format: md
 
 ## 开发参考
 
-服务卡片仅是界面展示形式，需通过上架元服务后才能在分发渠道中搜索、使用卡片。元服务开发详情请参见[快速入门](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-development-journey)。
+服务卡片仅是界面展示形式，需通过上架元服务后才能在分发渠道中搜索、使用卡片。元服务开发详情请参见[快速入门](/docs/dev/atomic-dev/atomic-development-journey)。

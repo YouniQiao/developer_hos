@@ -1,6 +1,6 @@
 ---
 title: "应用冻屏类问题案例"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-app-freeze
+original_url: /docs/quality/scenario-stability-app-freeze
 ---
 
 # 应用冻屏类问题案例
@@ -9,7 +9,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-s
 
 ### 概述
 
-由于没有考虑到多线程操作时锁的时序问题，从而导致死锁，触发ThreadBlock检测，原理可参考[THREAD\_BLOCK\_6S 应用主线程卡死超时检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#thread_block_6s-应用主线程卡死超时)。
+由于没有考虑到多线程操作时锁的时序问题，从而导致死锁，触发ThreadBlock检测，原理可参考[THREAD\_BLOCK\_6S 应用主线程卡死超时检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#thread_block_6s-应用主线程卡死超时)。
 
 ### 问题现象
 
@@ -43,7 +43,7 @@ int AppFreezeAdvise1() {
 
 ### 分析思路
 
-请参考[应用冻屏问题定位步骤与思路](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-way#section1950514261110)。
+请参考[应用冻屏问题定位步骤与思路](/docs/quality/stability-app-freeze-way#section1950514261110)。
 
 ### 分析步骤
 
@@ -241,7 +241,7 @@ int AppFreezeAdvisePositive() {
 
 ### 概述
 
-由于线程繁忙，导致用户在合一桌面切换主题时，页面高概率卡死，点击无响应，然后闪退到锁屏界面，严重影响用户体验，从而触发APP\_INPUT\_BLOCK检测，原理可参考[APP\_INPUT\_BLOCK 用户输入响应超时](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#app_input_block-用户输入响应超时)。
+由于线程繁忙，导致用户在合一桌面切换主题时，页面高概率卡死，点击无响应，然后闪退到锁屏界面，严重影响用户体验，从而触发APP\_INPUT\_BLOCK检测，原理可参考[APP\_INPUT\_BLOCK 用户输入响应超时](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#app_input_block-用户输入响应超时)。
 
 ### 问题现象
 
@@ -263,7 +263,7 @@ function getForeachKey(item : ItemType) : string {
 
 ### 分析思路
 
-请参考[应用冻屏问题定位步骤与思路](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-way#section1950514261110)。
+请参考[应用冻屏问题定位步骤与思路](/docs/quality/stability-app-freeze-way#section1950514261110)。
 
 ### 分析步骤
 
@@ -389,7 +389,7 @@ Tid:2918, Name:example.sceneboard
 
 ### 概述
 
-由于主线程中存在耗时操作，导致应用拉起、切前台等过程中卡死并闪退，触发LIFECYCLE\_TIMEOUT，原理可参考[AppFreeze（应用冻屏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)。
+由于主线程中存在耗时操作，导致应用拉起、切前台等过程中卡死并闪退，触发LIFECYCLE\_TIMEOUT，原理可参考[AppFreeze（应用冻屏）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines)。
 
 ### 问题现象
 
@@ -413,7 +413,7 @@ function xxxFunction1(fileUris : string[]): void {
 
 ### 分析思路
 
-详见[应用冻屏类问题定位步骤与思路](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-way#section1950514261110)。
+详见[应用冻屏类问题定位步骤与思路](/docs/quality/stability-app-freeze-way#section1950514261110)。
 
 ### 分析步骤
 

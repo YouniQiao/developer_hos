@@ -1,7 +1,7 @@
 ---
 title: "测试验证及上线"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/harmonyosnextceshiyanzhengjishangxian-0000002185706917
+original_url: /docs/monetize/monetization/harmonyosnextceshiyanzhengjishangxian-0000002185706917
 format: md
 ---
 
@@ -12,8 +12,8 @@ format: md
 #### 1. 自测
 
 1. 自测阶段请使用测试ID，并对照[《HarmonyOS NEXT媒体接入自检表》](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250728162801.65416921790452263306031284137910%3A50001231000000%3A2800%3A4312DC33121CEB57DF63552E29F43871E2E5F10589229DBE38170DF9A1381502.xlsx?needInitFileName=true)交付件中的“自检项”核对检查；
-2. 务必检查确认关于用户隐私声明的要求，媒体需以自身的名义发布用户隐私声明，禁止以华为或鲸鸿动能等名义发布用户隐私声明，详情参考《业务规范》- [《隐私声明》](https://developer.huawei.com/consumer/cn/doc/monetize/yinsishengming-0000001085219712)的要求；
-3. 各广告位规则：请参照《业务规范》-[《广告规范》](https://developer.huawei.com/consumer/cn/doc/monetize/guanggaoguifan-0000001132278781)；
+2. 务必检查确认关于用户隐私声明的要求，媒体需以自身的名义发布用户隐私声明，禁止以华为或鲸鸿动能等名义发布用户隐私声明，详情参考《业务规范》- [《隐私声明》](/docs/monetize/monetization/yinsishengming-0000001085219712)的要求；
+3. 各广告位规则：请参照《业务规范》-[《广告规范》](/docs/monetize/monetization/guanggaoguifan-0000001132278781)；
 4. 自测完成后，填写《HarmonyOS NEXT媒体接入自检表》，其中涉及广告位信息和转测自检项，保证清晰描述广告位调用逻辑，转测自检项全部通过。
 
 #### 2. 鲸鸿动能验收

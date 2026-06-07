@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "配置目标应用名单（仅对企业应用开放）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-sharing-mode
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-app-sharing-mode
 format: md
 ---
 
@@ -20,11 +20,11 @@ format: md
 
 申请权限时，需要在reasonPrompt里面填写企业应用的信息和管控场景。如：用于XXX集团应用管控内部资料仅限于企业内部分享。
 
-申请方式请参考：[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+申请方式请参考：[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。
 
 ## 示例代码
 
-1. 应用必须在module.json5配置文件的requestPermissions标签中声明权限。参考：[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+1. 应用必须在module.json5配置文件的requestPermissions标签中声明权限。参考：[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
    ```
    {

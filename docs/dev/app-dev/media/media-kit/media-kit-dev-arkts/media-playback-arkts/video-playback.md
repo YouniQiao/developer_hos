@@ -1,15 +1,15 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AVPlayer播放视频(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback
 format: md
 ---
 
 
 当前提供两种视频播放开发的方案：
 
-* [AVPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avplayer)：功能较完善的音视频播放ArkTS/JS API，集成了流媒体和本地资源解析，媒体资源解封装，视频解码和渲染功能，适用于对媒体资源进行端到端播放的场景，可直接播放mp4、mkv等格式的视频文件。
-* Video组件：封装了视频播放的基础能力，需要设置数据源及基础信息即可播放视频，但相对扩展能力较弱。Video组件由ArkUI提供能力，相关指导请参考UI开发文档-[Video组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-video-player)。
+* [AVPlayer](/docs/dev/app-dev/media/media-kit/media-kit-intro#avplayer)：功能较完善的音视频播放ArkTS/JS API，集成了流媒体和本地资源解析，媒体资源解封装，视频解码和渲染功能，适用于对媒体资源进行端到端播放的场景，可直接播放mp4、mkv等格式的视频文件。
+* Video组件：封装了视频播放的基础能力，需要设置数据源及基础信息即可播放视频，但相对扩展能力较弱。Video组件由ArkUI提供能力，相关指导请参考UI开发文档-[Video组件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-common-components-video-player)。
 
 本开发指导将介绍如何使用AVPlayer开发视频播放功能，以完整播放一个视频作为示例，实现端到端播放原始媒体资源。
 
@@ -25,8 +25,8 @@ format: md
 
 当前指导仅介绍如何实现媒体资源播放，在应用开发过程中可能会涉及后台播放、播放冲突等情况，请根据实际需要参考以下说明。
 
-* 如果要实现后台播放或熄屏播放，需要接入[AVSession（媒体会话）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene)和[申请长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)，避免播放被系统强制中断。
-* 应用在播放过程中，若播放的媒体数据涉及音频，根据系统音频管理策略（参考[处理音频焦点事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency)），可能会被其他应用打断，建议应用主动监听音频打断事件，根据其内容提示，做出相应的处理，避免出现应用状态与预期效果不一致的问题。
+* 如果要实现后台播放或熄屏播放，需要接入[AVSession（媒体会话）](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene)和[申请长时任务](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)，避免播放被系统强制中断。
+* 应用在播放过程中，若播放的媒体数据涉及音频，根据系统音频管理策略（参考[处理音频焦点事件](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency)），可能会被其他应用打断，建议应用主动监听音频打断事件，根据其内容提示，做出相应的处理，避免出现应用状态与预期效果不一致的问题。
 * 面对设备同时连接多个音频输出设备的情况，应用可以通过[on('audioOutputDeviceChangeWithInfo')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer#onaudiooutputdevicechangewithinfo11)监听音频输出设备的变化，从而做出相应处理。
 * 如果需要访问在线媒体资源，需要申请 ohos.permission.INTERNET 权限。
 
@@ -111,10 +111,10 @@ format: md
 
    下面代码示例中的url仅作示意使用，开发者需根据实际情况，确认资源有效性并设置：
 
-   * 如果使用本地资源播放，必须确认资源文件可用，并使用应用沙箱路径访问对应资源，参考[获取应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
-   * 如果使用网络播放路径，需[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：ohos.permission.INTERNET。
+   * 如果使用本地资源播放，必须确认资源文件可用，并使用应用沙箱路径访问对应资源，参考[获取应用文件路径](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
+   * 如果使用网络播放路径，需[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)：ohos.permission.INTERNET。
    * 可以使用ResourceManager.[getRawFd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getrawfd9)打开HAP资源文件描述符。
-   * 需要使用[支持的播放格式与协议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#支持的格式与协议)。
+   * 需要使用[支持的播放格式与协议](/docs/dev/app-dev/media/media-kit/media-kit-intro#支持的格式与协议)。
 
    ```
    let url = 'https://xxx.xxx.xxx.mp4';

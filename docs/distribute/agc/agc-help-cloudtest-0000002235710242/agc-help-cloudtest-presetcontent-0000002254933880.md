@@ -1,6 +1,6 @@
 ---
 title: "预置条件"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-presetcontent-0000002254933880
+original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-presetcontent-0000002254933880
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
 
         | **参数** | **说明** |
         | --- | --- |
-        | 账号xPath | 账号控件路径。输入内容限长255字符，只允许大小写字母（区分大小写）、数字和特殊字符+ @ / \_ . : [ ]  说明：  xPath可以使用[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-familiar)自带的UIViewer工具查看。  ![](../img/agc-help-cloudtest-presetcontent-0000002254933880_3.png) |
+        | 账号xPath | 账号控件路径。输入内容限长255字符，只允许大小写字母（区分大小写）、数字和特殊字符+ @ / \_ . : [ ]  说明：  xPath可以使用[DevEco Testing](/docs/dev/testing/get-familiar)自带的UIViewer工具查看。  ![](../img/agc-help-cloudtest-presetcontent-0000002254933880_3.png) |
         | 密码xPath | 密码控件路径。输入内容限长255字符，只允许大小写字母（区分大小写）、数字和特殊字符+ @ / \_ . : [ ] |
         | 账号 | 应用注册的账号。限长32字符，不允许有空格。 |
         | 密码 | 应用注册账号设置的密码。限长32字符，不允许有中文和空格。 |
@@ -105,7 +105,7 @@ format: md
 
      | **参数** | **说明** |
      | --- | --- |
-     | 账号xPath | 账号控件路径。输入内容限长255字符，只允许大小写字母（区分大小写）、数字和特殊字符+ @ / \_ . : [ ]  说明：  xPath可以使用[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-familiar)自带的UIViewer工具查看。  ![](../img/agc-help-cloudtest-presetcontent-0000002254933880_15.png) |
+     | 账号xPath | 账号控件路径。输入内容限长255字符，只允许大小写字母（区分大小写）、数字和特殊字符+ @ / \_ . : [ ]  说明：  xPath可以使用[DevEco Testing](/docs/dev/testing/get-familiar)自带的UIViewer工具查看。  ![](../img/agc-help-cloudtest-presetcontent-0000002254933880_15.png) |
      | 密码xPath | 密码控件路径。输入内容限长255字符，只允许大小写字母（区分大小写）、数字和特殊字符+ @ / \_ . : [ ] |
      | 账号 | 应用注册的账号。限长32字符，不允许有空格。 |
      | 密码 | 应用注册账号设置的密码。限长32字符，不允许有中文和空格。 |

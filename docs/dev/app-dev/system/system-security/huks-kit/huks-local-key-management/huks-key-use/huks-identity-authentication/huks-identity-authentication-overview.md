@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "用户身份认证访问控制简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-identity-authentication-overview
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-identity-authentication/huks-identity-authentication-overview
 format: md
 ---
 
@@ -16,7 +16,7 @@ HUKS提供了完备的密钥访问控制能力，以保证存储在HUKS中的密
 
 轻量级智能穿戴不支持用户身份认证访问控制功能。
 
-从API 23开始支持[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)特性。
+从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。
 
 ## 使用场景及开发流程
 
@@ -91,7 +91,7 @@ HUKS提供了完备的密钥访问控制能力，以保证存储在HUKS中的密
 * HUKS\_USER\_AUTH\_TYPE\_PIN，即锁屏密码，简写为PIN。
 * HUKS\_USER\_AUTH\_TYPE\_FACE，即生物特征（人脸），简写为FACE。
 * HUKS\_USER\_AUTH\_TYPE\_FINGERPRINT，即生物特征（指纹），简写为FINGERPRINT。
-* HUKS\_USER\_AUTH\_TYPE\_TUI\_PIN，即数字盾密码。简写为TUI\_PIN。数字盾密码请参考[数字盾服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-service)。
+* HUKS\_USER\_AUTH\_TYPE\_TUI\_PIN，即数字盾密码。简写为TUI\_PIN。数字盾密码请参考[数字盾服务](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service)。
 
 安全访问控制类型简写为：
 

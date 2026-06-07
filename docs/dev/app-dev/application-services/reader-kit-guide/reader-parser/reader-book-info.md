@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取书籍信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-book-info
+original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-parser/reader-book-info
 format: md
 ---
 
 
-在导入本地书籍到书架时，开发者需通过[DocumentViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#documentviewpicker)先将书籍文件导入到[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)，然后利用解析能力获取书籍信息，包括书封、书名及作者等，以完成书架内容的展示。
+在导入本地书籍到书架时，开发者需通过[DocumentViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#documentviewpicker)先将书籍文件导入到[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)，然后利用解析能力获取书籍信息，包括书封、书名及作者等，以完成书架内容的展示。
 
 ## 业务流程
 
@@ -32,7 +32,7 @@ format: md
    import { hilog } from '@kit.PerformanceAnalysisKit';
    import { image } from '@kit.ImageKit';
    ```
-2. 通过提前导入到[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)中的书籍文件，初始化书籍解析器。
+2. 通过提前导入到[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)中的书籍文件，初始化书籍解析器。
 
    ```
    private defaultHandler: bookParser.BookParserHandler | null = null;

@@ -1,10 +1,10 @@
 ---
 title: "HMAC"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-hmac
 format: md
 ---
 
 
-* **[HMAC介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac-overview)**
-* **[HMAC(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac-arkts)**
-* **[HMAC(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac-ndk)**
+* **[HMAC介绍及算法规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-hmac/huks-hmac-overview)**
+* **[HMAC(ArkTS)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-hmac/huks-hmac-arkts)**
+* **[HMAC(C/C++)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-hmac/huks-hmac-ndk)**

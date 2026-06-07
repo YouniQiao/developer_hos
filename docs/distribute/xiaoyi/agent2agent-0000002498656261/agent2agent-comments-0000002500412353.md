@@ -1,7 +1,7 @@
 ---
 title: "鸿蒙Agent通信协议技术规范总览"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/agent2agent-comments-0000002500412353
+original_url: /docs/distribute/xiaoyi/agent2agent-0000002498656261/agent2agent-comments-0000002500412353
 format: md
 ---
 
@@ -52,9 +52,9 @@ format: md
 
 开发者在华为开发者联盟账号服务申请appId：[申请appId指导](https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/web-preparations-0000001050050891)；
 
-开发者获取华为用户手机号：[获取手机号指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phonenumber)；
+开发者获取华为用户手机号：[获取手机号指导](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-phone/account-get-phonenumber)；
 
-开发者监听华为用户取消授权手机号和用户销户回调信息：[用户信息变更指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-process-userinfo-change)。
+开发者监听华为用户取消授权手机号和用户销户回调信息：[用户信息变更指导](/docs/dev/app-dev/application-services/account-kit-guide/subscribe-process-userinfo-change)。
 
 ![](./img/c630cf1ab31d.png "点击放大")
 
@@ -66,7 +66,7 @@ format: md
 
 模式2：接口间通信不基于session维护状态（简化版方案），客户端每次请求服务器侧时，都在header中携带认证凭据，如AK/SK、APIKey等信息到服务器侧，服务器侧不需要实现“initialize”、“notifications/initialized”方法。
 
-接口间认证对接样例报文参见：[认证参考](https://developer.huawei.com/consumer/cn/doc/service/interface-0000001195110098)。
+接口间认证对接样例报文参见：[认证参考](/docs/distribute/xiaoyi/addlinkage-0000001240069905/interface-0000001195110098)。
 
 | 鸿蒙Agent通信协议规范RPC方法 | 功能定义 |
 | --- | --- |

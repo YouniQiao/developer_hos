@@ -1,6 +1,6 @@
 ---
 title: "列表项组合场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/list-item-combination-scenarios
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/list-item-combination-scenarios
 format: md
 ---
 

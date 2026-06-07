@@ -1,6 +1,6 @@
 ---
 title: "自定义tabBar"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-custom-tabbar
+original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-custom-tabbar
 format: md
 ---
 
@@ -10,14 +10,14 @@ format: md
 在自定义tabBar模式下：
 
 * 开发者需要提供一个自定义组件进行自定义tabBar的渲染和交互。
-* 与tabBar样式相关的接口，在自定义tabBar开启后，[has.hideTabBar](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-tab-bar#hashidetabbar) 、[has.showTabBar](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-tab-bar#hasshowtabbar)仍可使用，用于使能自定义tabBar；其他接口将失效，如[has.setTabBarBadge](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-tab-bar#hassettabbarbadge)等。
-* 每个页面的自定义tabBar组件实例是不同的，可通过[getTabBar](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-page#gettabbar)接口获取当前页面自定义tabBar组件实例。
+* 与tabBar样式相关的接口，在自定义tabBar开启后，[has.hideTabBar](/docs/dev/atomic-dev/ascf/apis-page/apis-tab-bar#hashidetabbar) 、[has.showTabBar](/docs/dev/atomic-dev/ascf/apis-page/apis-tab-bar#hasshowtabbar)仍可使用，用于使能自定义tabBar；其他接口将失效，如[has.setTabBarBadge](/docs/dev/atomic-dev/ascf/apis-page/apis-tab-bar#hassettabbarbadge)等。
+* 每个页面的自定义tabBar组件实例是不同的，可通过[getTabBar](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-page#gettabbar)接口获取当前页面自定义tabBar组件实例。
 
 ## 使用流程
 
 1. 配置信息。
 
-   在app.json现有tabBar配置基础上新增[custom](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/appjson-global-config)字段。
+   在app.json现有tabBar配置基础上新增[custom](/docs/dev/atomic-dev/ascf/config/appjson-global-config)字段。
 
    app.json示例：
 
@@ -66,7 +66,7 @@ format: md
    ```
 3. 编写tabBar代码。
 
-   使用自定义组件的方式编写自定义tabBar代码，该自定义组件完全接管tabBar的渲染。另外，新增[getTabBar](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-page#gettabbar)接口，可获取当前页面下的自定义tabBar组件实例。
+   使用自定义组件的方式编写自定义tabBar代码，该自定义组件完全接管tabBar的渲染。另外，新增[getTabBar](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-page#gettabbar)接口，可获取当前页面下的自定义tabBar组件实例。
 
    示例：
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在不修改build-profile.json5的情况下选择构建debug或release版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-46
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-46
 ---
 
 

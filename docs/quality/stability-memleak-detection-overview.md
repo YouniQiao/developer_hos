@@ -1,6 +1,6 @@
 ---
 title: "内存泄漏类问题检测方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-memleak-detection-overview
+original_url: /docs/quality/stability-memleak-detection-overview
 format: md
 ---
 
@@ -102,7 +102,7 @@ format: md
 1. 系统的虚拟机堆使用率超标检测能力，目前只有开发者选项打开且勾选了系统资源泄漏日志开关的场景下可用，不建议应用在线上部署虚拟机堆使用率超标的检测机制，因为目前导出的虚拟机快照文件比较大，且耗时较久，需要3-5s左右。
 2. JsLeakWatcher建议只在开发态使用，如果要线上使用，请使用小批量灰度发布来控制规模。
 
-* **[JS内存泄漏问题检测方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-js-memleak-detection)**
-* **[Native内存泄漏问题检测方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-native-memleak-detection)**
-* **[JsLeakWatcher开发实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-js-leak-watcher)**
-* **[内存泄漏定制能力开放使用指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-malloc-dispatch-table)**
+* **[JS内存泄漏问题检测方法](/docs/quality/stability-js-memleak-detection)**
+* **[Native内存泄漏问题检测方法](/docs/quality/stability-native-memleak-detection)**
+* **[JsLeakWatcher开发实践](/docs/quality/js-leak-watcher)**
+* **[内存泄漏定制能力开放使用指导](/docs/quality/malloc-dispatch-table)**

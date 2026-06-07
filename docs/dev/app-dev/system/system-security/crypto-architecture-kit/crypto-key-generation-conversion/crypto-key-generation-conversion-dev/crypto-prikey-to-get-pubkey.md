@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用私钥对象获取公钥对象(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-prikey-to-get-pubkey
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-prikey-to-get-pubkey
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 以RSA为例，根据私钥对象获取公钥对象。
 
-对应的算法规格请查看[非对称密钥加解密算法规格：RSA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec#rsa)。
+对应的算法规格请查看[非对称密钥加解密算法规格：RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-asym-encrypt-decrypt-spec#rsa)。
 
 ## 开发步骤
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "macOS上活动监视器中显示模拟器内存偏高"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-23
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-23
 ---
 
 

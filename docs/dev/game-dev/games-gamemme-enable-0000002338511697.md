@@ -1,6 +1,6 @@
 ---
 title: "开通服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enable-0000002338511697
+original_url: /docs/dev/game-dev/games-gamemme-enable-0000002338511697
 format: md
 ---
 

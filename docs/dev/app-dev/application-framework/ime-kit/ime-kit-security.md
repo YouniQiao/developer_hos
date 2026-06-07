@@ -1,6 +1,6 @@
 ---
 title: "输入法安全模式介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-security
+original_url: /docs/dev/app-dev/application-framework/ime-kit/ime-kit-security
 format: md
 ---
 
@@ -40,14 +40,14 @@ format: md
    ![](./img/349c1f84.png)
 3. 共享沙箱的配置流程。
 
-   当应用主入口的[profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)和输入法扩展的[dataGroupIds](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)中包含相同的data-group-id时，他们就可以使用这个data-group-id对应的共享沙箱。
+   当应用主入口的[profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)和输入法扩展的[dataGroupIds](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)中包含相同的data-group-id时，他们就可以使用这个data-group-id对应的共享沙箱。
 
-   为了使用共享沙箱，需要先申请一个data-group-id，并将其分别配置到应用主入口的[profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)和输入法扩展的[dataGroupIds](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)中。申请与配置流程如下：
+   为了使用共享沙箱，需要先申请一个data-group-id，并将其分别配置到应用主入口的[profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)和输入法扩展的[dataGroupIds](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)中。申请与配置流程如下：
 
    1. 审核规则。
 
       1. 输入法应用安装至系统后，在系统“设置 > 系统 > 输入法”的输入法列表中可以显示该应用。
-      2. InputMethodExtensionAbility所在的module.json5配置信息中，该ability在[extensionAbilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)下配置的type字段应为inputMethod。
+      2. InputMethodExtensionAbility所在的module.json5配置信息中，该ability在[extensionAbilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)下配置的type字段应为inputMethod。
    2. 申请步骤。
 
       1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“开发与服务”。
@@ -67,7 +67,7 @@ format: md
 
          ![](./img/4f91f37a.png)
    3. 待您收到data-group-id申请成功的回复后，重新生成[应用的profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)，新生成的profile里面包含本次申请到的data-group-id；并使用DevEco Studio[配置工程的签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)，将新的profile配置到工程中。
-   4. 将您本次申请获取到的data-group-id，配置到InputMethodExtensionAbility所在的module.json5中的[dataGroupIds](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)中。
+   4. 将您本次申请获取到的data-group-id，配置到InputMethodExtensionAbility所在的module.json5中的[dataGroupIds](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)中。
 
    ![](./img/bdc2b940.png)
 4. 共享沙箱使用流程。

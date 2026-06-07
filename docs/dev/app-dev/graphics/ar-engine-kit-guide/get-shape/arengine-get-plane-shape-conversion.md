@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "物体语义介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-plane-shape-conversion
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-shape/arengine-get-plane-shape-conversion
 format: md
 ---
 

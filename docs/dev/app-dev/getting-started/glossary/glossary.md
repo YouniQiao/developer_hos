@@ -1,6 +1,6 @@
 ---
 title: "HarmonyOS术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/glossary
+original_url: /docs/dev/app-dev/getting-started/glossary/glossary
 ---
 
 ## A

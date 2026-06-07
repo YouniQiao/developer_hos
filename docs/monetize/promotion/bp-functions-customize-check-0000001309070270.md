@@ -1,7 +1,7 @@
 ---
 title: "查看自定义投放规则的运行数据"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-check-0000001309070270
+original_url: /docs/monetize/promotion/bp-functions-customize-check-0000001309070270
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "回归测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/regression-test
+original_url: /docs/dev/testing/regression-test
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 回归测试的测试对象为应用的核心功能，用户可将应用核心功能的测试用例构建成多个可执行测试包，每个测试包中仅包含单个测试用例，便于观察到核心功能的每个小功能点的质量。
 
-测试执行前需先构建测试包，用户利用python的setuptools工具在工程（测试工程构建参考[应用UI测试（基于Python）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hypium-python-guidelines)）根目录下构建setup-regression.py、MANIFEST.in文件，setup-regression.py文件中声明用例，MANIFEST.in文件中声明脚本执行过程中需要用到的aw包、config文件夹下的配置文件及其他的资源文件。
+测试执行前需先构建测试包，用户利用python的setuptools工具在工程（测试工程构建参考[应用UI测试（基于Python）](/docs/dev/testing/ut/hypium-python-guidelines)）根目录下构建setup-regression.py、MANIFEST.in文件，setup-regression.py文件中声明用例，MANIFEST.in文件中声明脚本执行过程中需要用到的aw包、config文件夹下的配置文件及其他的资源文件。
 
 为方便用户构建测试包，DevEco Testing Hypium（PyCharm插件）已发布，用户可利用插件快速生成可执行测试包。具体操作步骤如下：
 

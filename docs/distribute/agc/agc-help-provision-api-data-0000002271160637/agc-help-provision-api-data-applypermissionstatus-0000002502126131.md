@@ -1,6 +1,6 @@
 ---
 title: "OpenApplyPermissionStatusInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-applypermissionstatus-0000002502126131
+original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-applypermissionstatus-0000002502126131
 format: md
 ---
 

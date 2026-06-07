@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "监听设备上下线（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-monitor-device
+original_url: /docs/dev/app-dev/application-services/game-controller-kit/game-controller-monitor-device
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "加入房间"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073
+original_url: /docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073
 format: md
 ---
 
@@ -13,8 +13,8 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体基础SDK和实时语音模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
+* 您已[集成游戏多媒体基础SDK和实时语音模块](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
 * 您已规划语音房间ID。
 
 ## 加入小队语音房间
@@ -94,7 +94,7 @@ format: md
 
 ![](./img/cb13f212.png)
 
-加入范围语音房间，您还需要设置语音接收范围，并更新上报自身和其他玩家的位置信息，具体请参见[范围语音](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rangeroom-csharp-0000002393266941)。
+加入范围语音房间，您还需要设置语音接收范围，并更新上报自身和其他玩家的位置信息，具体请参见[范围语音](/docs/dev/game-dev/games-gamemme-rangeroom-csharp-0000002393266941)。
 
 1. 调用[GameMediaEngine.JoinRangeRoom](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-gamemediaengine-csharp-native-0000002392723521#section2069317464116)方法，使用相同的房间ID即可进入同一范围语音房间。
 

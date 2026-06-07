@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-ai-overview
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-fg/graphics-accelerate-fg-systempresent/graphics-accelerate-fg-systempresent-overview
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "提交审核"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-submit-0000002424763510
+original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-submit-0000002424763510
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
    若小游戏软件包中支持的设备范围大于配置支持设备时选择的设备范围，并且软件包支持PC/2in1设备而配置设备未勾选PC/2in1设备时，将提示您修改配置的支持设备类型。
 
-   * 若需要修改，点击“确认”前往“应用信息”页面[选择设备类型](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-devicetype-0000002424923334)。
+   * 若需要修改，点击“确认”前往“应用信息”页面[选择设备类型](/docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-devicetype-0000002424923334)。
    * 若不需要修改，点击“忽略”，不会影响小游戏的上架审核。
 
    ![](../img/agc-help-release-minigame-submit-0000002424763510_0.png)

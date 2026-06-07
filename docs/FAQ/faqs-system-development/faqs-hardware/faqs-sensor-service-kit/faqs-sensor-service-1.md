@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决振动模块接口调用报错，错误码201的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-sensor-service-1
+original_url: /docs/FAQ/faqs-system-development/faqs-hardware/faqs-sensor-service-kit/faqs-sensor-service-1
 ---
 
 
@@ -17,4 +17,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-s
 
 **参考链接**
 
-[应用权限管控概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview)
+[应用权限管控概述](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview)

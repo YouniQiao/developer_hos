@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "3D建筑"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-3dbuilding
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-3dbuilding
 format: md
 ---
 

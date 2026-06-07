@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口进行debug操作"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-debug-option
+original_url: /docs/dev/ndk-dev/use-jsvm-about-debug-option
 format: md
 ---
 
@@ -26,11 +26,11 @@ debug选项皆为JSVM\_DebugOption类型。
 
 ## 使用示例
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
 
 ### JSVM\_DebugOption
 
-仅需替换[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)示例代码中的“TestJSVM()”函数即可运行。
+仅需替换[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)示例代码中的“TestJSVM()”函数即可运行。
 
 * 在正确的HandleScope内调用JSVM\_Value类型变量。
 

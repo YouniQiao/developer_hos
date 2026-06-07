@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取企业应用访问令牌"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-get-access-token
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-get-access-token
 format: md
 ---
 

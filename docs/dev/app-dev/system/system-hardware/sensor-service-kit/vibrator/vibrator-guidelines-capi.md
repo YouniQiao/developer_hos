@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "振动开发指导(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vibrator-guidelines-capi
+original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/vibrator/vibrator-guidelines-capi
 format: md
 ---
 
@@ -37,7 +37,7 @@ format: md
 1. 新建一个Native C++工程。
 
    ![](./img/bef9b172.png)
-2. 控制设备上的振动器，需要申请权限ohos.permission.VIBRATE。具体配置方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+2. 控制设备上的振动器，需要申请权限ohos.permission.VIBRATE。具体配置方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
    ```
    "requestPermissions": [

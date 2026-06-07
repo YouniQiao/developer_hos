@@ -1,6 +1,6 @@
 ---
 title: "Web页面显示内容滚动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-content-scrolling
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-content-scrolling
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 
 * [scrollBy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#scrollby)：在指定时间内将页面滚动指定的偏移量。
 
-  可以作为Web组件嵌套滚动中，控制Web组件滚动的接口，详见[滚动偏移量由滚动父组件统一派发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-nested-scrolling#滚动偏移量由滚动父组件统一派发)。
+  可以作为Web组件嵌套滚动中，控制Web组件滚动的接口，详见[滚动偏移量由滚动父组件统一派发](/docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-nested-scrolling#滚动偏移量由滚动父组件统一派发)。
 * [pageUp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#pageup)：将Web组件的内容向上滚动半个视口大小或者滚动到页面最顶部，通过top入参控制。
 * [pageDown](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#pagedown)：将Web组件的内容向下滚动半个视口大小或者滚动到页面最底部，通过bottom入参控制。
 

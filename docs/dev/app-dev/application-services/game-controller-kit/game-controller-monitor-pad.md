@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "监听游戏手柄的轴和按键事件（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-monitor-pad
+original_url: /docs/dev/app-dev/application-services/game-controller-kit/game-controller-monitor-pad
 format: md
 ---
 
 
 ![](./img/ff5966f1.png)
 
-须先完成[监听设备上下线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-monitor-device)功能的开发后，才能进行游戏手柄轴事件和按键事件的监听注册。
+须先完成[监听设备上下线](/docs/dev/app-dev/application-services/game-controller-kit/game-controller-monitor-device)功能的开发后，才能进行游戏手柄轴事件和按键事件的监听注册。
 
 ## 功能介绍
 

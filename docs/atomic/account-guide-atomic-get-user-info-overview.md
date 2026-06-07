@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-user-info-overview
+original_url: /docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-user-info-overview
 format: md
 ---
 
@@ -9,12 +9,12 @@ format: md
 
 **典型场景：**
 
-1、元服务需要完善用户头像昵称信息，参见[获取头像昵称](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-avatar-nickname-overview)。
+1、元服务需要完善用户头像昵称信息，参见[获取头像昵称](/docs/dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-overview)。
 
-2、元服务提供的服务依赖用户手机号，需要获取用户手机号，参见[获取手机号](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phone-overview)。
+2、元服务提供的服务依赖用户手机号，需要获取用户手机号，参见[获取手机号](/docs/dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone-overview)。
 
-3、元服务提供的服务依赖用户收货地址，需要获取用户收货地址，参见[获取收货地址](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-choose-address)。
+3、元服务提供的服务依赖用户收货地址，需要获取用户收货地址，参见[获取收货地址](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-choose-address)。
 
-4、元服务提供的服务依赖用户发票抬头信息，需要获取用户发票抬头，参见[获取发票抬头](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-select-invoice-title)。
+4、元服务提供的服务依赖用户发票抬头信息，需要获取用户发票抬头，参见[获取发票抬头](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-select-invoice-title)。
 
-5、元服务提供的服务依赖用户风险等级信息，需要获取用户风险等级，参见[获取风险等级](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-risklevel)。
+5、元服务提供的服务依赖用户风险等级信息，需要获取用户风险等级，参见[获取风险等级](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-risklevel)。

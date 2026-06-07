@@ -1,7 +1,7 @@
 ---
 title: 服务卡片
 sidebar_label: 服务卡片
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001939144821
+original_url: /docs/design/atomic-service-design/basic-elements/service-card
 format: md
 ---
 

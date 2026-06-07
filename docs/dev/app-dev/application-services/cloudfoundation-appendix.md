@@ -1,9 +1,9 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "附录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-appendix
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-appendix
 format: md
 ---
 
 
-* **[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-supported-regions)**
+* **[支持的国家/地区](/docs/dev/app-dev/application-services/cloudfoundation-supported-regions)**

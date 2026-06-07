@@ -1,6 +1,6 @@
 ---
 title: "拉起金融类应用（startAbilityByType）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-finance-apps
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-finance-apps
 format: md
 ---
 
@@ -75,7 +75,7 @@ startAbilityByType接口中type字段为finance，对应的wantParam参数：
 
 ## 目标方开发步骤
 
-1. 在module.json5中配置[uris](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)，步骤如下：
+1. 在module.json5中配置[uris](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)，步骤如下：
 
    1. 设置linkFeature属性以声明当前应用支持的特性功能，从而系统可以从设备已安装应用中找到当前支持该特性的应用，取值范围如下：
 
@@ -125,7 +125,7 @@ startAbilityByType接口中type字段为finance，对应的wantParam参数：
    | --- | --- | --- | --- |
    | bankCardNo | string | 否 | 银行卡卡号 |
 
-   应用可根据[linkFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)中定义的特性功能，比如转账汇款和信用卡还款，结合接收到的uri开发不同的样式页面。
+   应用可根据[linkFeature](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)中定义的特性功能，比如转账汇款和信用卡还款，结合接收到的uri开发不同的样式页面。
 
 **完整示例：**
 

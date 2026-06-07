@@ -1,6 +1,6 @@
 ---
 title: "自定义组件冻结功能（V1）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-freeze
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-freeze/arkts-custom-components-freeze
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 组件冻结功能是一种性能优化机制，它会冻结非激活状态下的组件的刷新能力。当组件处于非激活状态时，即使其绑定的状态变量发生变化，也不会触发该组件的UI重新渲染，从而降低复杂UI场景下的刷新负载。
 
-在阅读本文档前，开发者需要了解自定义组件基本语法。建议提前阅读：[自定义组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components)。
+在阅读本文档前，开发者需要了解自定义组件基本语法。建议提前阅读：[自定义组件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components)。
 
 ![](./img/d6136633.png)
 
@@ -133,7 +133,7 @@ struct PageTwo {
 
 在上面的示例中：
 
-1.在页面1中点击first page storageLink + 1，storageLink状态变量改变，[@Watch](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch)注册的方法first会被调用。
+1.在页面1中点击first page storageLink + 1，storageLink状态变量改变，[@Watch](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch)注册的方法first会被调用。
 
 2.在页面1中点击go to next page，跳转到页面2，页面1隐藏，状态由active变为inactive。
 
@@ -604,7 +604,7 @@ struct NavigationContentMsgStack {
 
 ### 组件复用
 
-[组件复用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable)通过重利用缓存池中已存在的节点，而非创建新节点，来优化UI性能并提升应用流畅度。复用池中的节点尽管未在UI组件树上展示，但是状态变量的更改仍会触发UI刷新。为了解决复用池中组件异常刷新问题，可以使用组件冻结避免复用池中的组件刷新。
+[组件复用](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable)通过重利用缓存池中已存在的节点，而非创建新节点，来优化UI性能并提升应用流畅度。复用池中的节点尽管未在UI组件树上展示，但是状态变量的更改仍会触发UI刷新。为了解决复用池中组件异常刷新问题，可以使用组件冻结避免复用池中的组件刷新。
 
 **组件复用、if和组件冻结混用场景**
 
@@ -679,11 +679,11 @@ struct Page {
    * 被标记@Reusable的ChildComponent组件在下树时，不会被销毁，而是进入复用池，触发aboutToRecycle生命周期，同时设置状态为inactive。
    * ChildComponent同时也开启了组件冻结，当其状态为inactive时，不会响应任何状态变量变化带来的UI刷新。
 2. 点击change desc，触发Page的成员变量desc的变化：
-   * desc是@State装饰的，其变化会通知给其子组件ChildComponent[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)装饰的desc。
+   * desc是@State装饰的，其变化会通知给其子组件ChildComponent[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)装饰的desc。
    * 但因为ChildComponent是inactive状态，且开启了组件冻结，所以这次变化并不会触发@Watch('descChange')的回调和ChildComponentUI刷新。如果没有开启组件冻结，当前@Watch('descChange')会立即回调，且复用池内的ChildComponent组件也会对应刷新。
 3. 再次点击change flag，改变flag为true：
    * ChildComponent从复用池中重新加入到组件树上。
-   * 回调aboutToReuse生命周期，将当前最新的count值同步给子组件。desc是通过[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)到@Link同步的，所以无需开发者手动在aboutToReuse中赋值。
+   * 回调aboutToReuse生命周期，将当前最新的count值同步给子组件。desc是通过[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)到@Link同步的，所以无需开发者手动在aboutToReuse中赋值。
    * 设置ChildComponent为active状态，并且刷新在inactive时没有刷新的组件，在当前例子中，就是Text(ChildComponent desc: $\{this.desc\})。
 
 **LazyForEach、组件复用和组件冻结混用场景**
@@ -1584,7 +1584,7 @@ struct FreezeBuildNode {
 
 在以下示例中，子组件ChildComponent开启了组件冻结且被标记了组件复用，当if组件绑定的状态变量condition修改为false时，子组件ChildComponent下树并进入复用池。由于子组件开启了组件冻结，所以进入复用池时，该组件也会被冻结。在复用池内，若修改状态变量count，该组件因处于inactive状态，即不会刷新也不会触发Watch回调。
 
-当if组件绑定的状态变量condition修改为true时，子组件ChildComponent出复用池并被标记为active状态，但不会触发状态变量count绑定的Watch回调。这是因为组件复用的执行逻辑早于组件解冻的执行逻辑。子组件被复用时会将[脏节点刷新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-introduce#触发更新)（包括在冻结期间需要延迟刷新的[变量绑定的系统组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-introduce#收集依赖)），并清空脏节点列表。在子组件被复用后，重新被标记为active状态，此时子组件执行解冻逻辑，由于复用时清空了脏节点列表，所以此时判断冻结期间无变量改变，不会触发Watch回调。
+当if组件绑定的状态变量condition修改为true时，子组件ChildComponent出复用池并被标记为active状态，但不会触发状态变量count绑定的Watch回调。这是因为组件复用的执行逻辑早于组件解冻的执行逻辑。子组件被复用时会将[脏节点刷新](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-introduce#触发更新)（包括在冻结期间需要延迟刷新的[变量绑定的系统组件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-introduce#收集依赖)），并清空脏节点列表。在子组件被复用后，重新被标记为active状态，此时子组件执行解冻逻辑，由于复用时清空了脏节点列表，所以此时判断冻结期间无变量改变，不会触发Watch回调。
 
 ```
 import { hilog } from '@kit.PerformanceAnalysisKit';

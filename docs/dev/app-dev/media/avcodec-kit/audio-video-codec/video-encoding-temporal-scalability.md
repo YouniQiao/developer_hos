@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "时域可分层视频编码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-temporal-scalability
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-temporal-scalability
 format: md
 ---
 
@@ -60,7 +60,7 @@ format: md
 
   参考帧仅在GOP内有效，刷新I帧后，DPB随之清空，参考帧也会被清空，因此参考关系的指定受I帧刷新位置影响很大。
 
-  使能时域分层能力后，若需要通过OH\_MD\_KEY\_REQUEST\_I\_FRAME临时请求I帧，应使用生效时机确定的随帧通路配置方式准确告知系统I帧刷新位置以避免参考关系错乱，参考随帧通路配置相关指导，避免使用生效时机不确定的OH\_VideoEncoder\_SetParameter方式。详情请参考[视频编码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding#surface模式)"步骤-4"。
+  使能时域分层能力后，若需要通过OH\_MD\_KEY\_REQUEST\_I\_FRAME临时请求I帧，应使用生效时机确定的随帧通路配置方式准确告知系统I帧刷新位置以避免参考关系错乱，参考随帧通路配置相关指导，避免使用生效时机不确定的OH\_VideoEncoder\_SetParameter方式。详情请参考[视频编码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding#surface模式)"步骤-4"。
 * 支持OH\_AVBuffer回调通路，不支持OH\_AVMemory回调通路。
 
   新特性依赖随帧特性，应避免使用OH\_AVMemory回调OH\_AVCodecAsyncCallback，应使用OH\_AVBuffer回调OH\_AVCodecCallback。
@@ -103,7 +103,7 @@ format: md
 
 ### 开发指导
 
-基础编码流程请参考[视频编码开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding)。下面将重点说明与基础视频编码流程中的不同之处。
+基础编码流程请参考[视频编码开发指导](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding)。下面将重点说明与基础视频编码流程中的不同之处。
 
 1. 在初始阶段创建编码实例时，校验视频编码器是否支持全局时域可分层特性。
 
@@ -205,7 +205,7 @@ format: md
 
 ### 开发指导
 
-基础编码流程请参考[视频编码开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding)，下面仅针对与基础视频编码过程中存在的区别做具体说明。
+基础编码流程请参考[视频编码开发指导](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding)，下面仅针对与基础视频编码过程中存在的区别做具体说明。
 
 1. 在初始阶段创建编码实例时，校验当前视频编码器是否支持LTR特性。
 

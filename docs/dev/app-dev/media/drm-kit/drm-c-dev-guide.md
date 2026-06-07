@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "数字版权保护(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-c-dev-guide
+original_url: /docs/dev/app-dev/media/drm-kit/drm-c-dev-guide
 format: md
 ---
 

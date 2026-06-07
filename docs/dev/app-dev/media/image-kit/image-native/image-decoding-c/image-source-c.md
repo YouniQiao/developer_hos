@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成图片解码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-source-c
+original_url: /docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-c
 format: md
 ---
 
@@ -400,7 +400,7 @@ target_link_libraries(entry PUBLIC libhilog_ndk.z.so libimage_source.so libpixel
 
 ## 进阶主题
 
-* **内存优化解码**：使用DMA内存和YUV像素格式降低内存占用、提升解码性能，参见[图片解码内存优化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type-c)。
-* **区域解码**：解码图片指定区域，适用于大图局部查看和裁剪预览场景，参见[图片区域解码与下采样](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-region-and-downsampling-c)。
-* **下采样解码**：解码时直接缩放目标尺寸，避免解码后缩放的性能开销，适用于缩略图生成场景，参见[图片区域解码与下采样](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-region-and-downsampling-c)。
-* **多图对象解码**：解码包含主图和辅助图的Picture对象，适用于HDR图片和HEIF专业格式处理，参见[使用Image\_NativeModule完成多图对象解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-source-picture-c)。
+* **内存优化解码**：使用DMA内存和YUV像素格式降低内存占用、提升解码性能，参见[图片解码内存优化](/docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-allocator-type-c)。
+* **区域解码**：解码图片指定区域，适用于大图局部查看和裁剪预览场景，参见[图片区域解码与下采样](/docs/dev/app-dev/media/image-region-and-downsampling-c)。
+* **下采样解码**：解码时直接缩放目标尺寸，避免解码后缩放的性能开销，适用于缩略图生成场景，参见[图片区域解码与下采样](/docs/dev/app-dev/media/image-region-and-downsampling-c)。
+* **多图对象解码**：解码包含主图和辅助图的Picture对象，适用于HDR图片和HEIF专业格式处理，参见[使用Image\_NativeModule完成多图对象解码](/docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-picture-c)。

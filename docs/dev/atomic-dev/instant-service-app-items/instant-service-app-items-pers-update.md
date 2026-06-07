@@ -1,6 +1,6 @@
 ---
 title: "更新个性化设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-items-pers-update
+original_url: /docs/dev/atomic-dev/instant-service-app-items/instant-service-app-items-pers-update
 format: md
 ---
 

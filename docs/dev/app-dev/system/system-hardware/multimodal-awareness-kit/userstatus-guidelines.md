@@ -1,6 +1,6 @@
 ---
 title: "用户状态感知开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/userstatus-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/userstatus-guidelines
 format: md
 ---
 

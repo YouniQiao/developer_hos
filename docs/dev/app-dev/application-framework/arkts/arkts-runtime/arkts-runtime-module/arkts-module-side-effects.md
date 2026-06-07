@@ -1,13 +1,13 @@
 ---
 title: "模块加载副作用及优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-module-side-effects
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-module-side-effects
 format: md
 ---
 
 
 ## 概述
 
-当使用[ArkTS模块化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-principle)时，模块的加载和执行可能会引发**副作用**。副作用是指在模块导入时除了导出功能或对象之外，额外的行为或状态变化，**这些行为可能影响程序的其他部分，并导致产生非预期的顶层代码执行、全局状态变化、原型链修改、导入内容未定义等问题**。
+当使用[ArkTS模块化](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/module-principle)时，模块的加载和执行可能会引发**副作用**。副作用是指在模块导入时除了导出功能或对象之外，额外的行为或状态变化，**这些行为可能影响程序的其他部分，并导致产生非预期的顶层代码执行、全局状态变化、原型链修改、导入内容未定义等问题**。
 
 ## ArkTS模块化导致副作用的场景及优化方式
 
@@ -295,7 +295,7 @@ test200
 
 模块加载时直接修改AppStorage中SomeAppStorageVar的值，**会影响其他依赖该变量的模块或代码**。
 
-ArkUI组件的状态变量信息可以通过一些应用级接口修改，详见[ArkUI状态管理接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview)。
+ArkUI组件的状态变量信息可以通过一些应用级接口修改，详见[ArkUI状态管理接口文档](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview)。
 
 **优化方式**
 
@@ -435,7 +435,7 @@ Stacktrace:
 
 **副作用产生场景**
 
-[延迟加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-lazy-import)特性可使待加载模块在冷启动阶段不被加载，直至应用程序实际运行过程中需要用到这些模块时，才按需同步加载相关模块，从而缩短应用冷启动耗时。但这也同时会改变模块的执行顺序。
+[延迟加载](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-lazy-import)特性可使待加载模块在冷启动阶段不被加载，直至应用程序实际运行过程中需要用到这些模块时，才按需同步加载相关模块，从而缩短应用冷启动耗时。但这也同时会改变模块的执行顺序。
 
 ```
 // ModulePartNine.ets

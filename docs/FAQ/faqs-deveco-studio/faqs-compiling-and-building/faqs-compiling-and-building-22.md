@@ -1,7 +1,7 @@
 ---
 format: md
 title: "C/C++项目三方依赖库未打包到HAP"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-22
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-22
 ---
 
 

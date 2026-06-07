@@ -1,6 +1,6 @@
 ---
 title: "Want概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/want-overview
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/want-overview
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 
   ![](./img/03b9a2d7.png)
 
-  从API 12开始，已不再推荐三方应用使用指定Ability方式（即显式Want）拉起其他应用，推荐通过指定[应用链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup-overview#应用链接)的方式来实现。
+  从API 12开始，已不再推荐三方应用使用指定Ability方式（即显式Want）拉起其他应用，推荐通过指定[应用链接](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-startup-overview#应用链接)的方式来实现。
 
   ```
   import { common, Want } from '@kit.AbilityKit';
@@ -42,7 +42,7 @@ format: md
 
 * **隐式Want**：在启动目标应用组件时，调用方传入的[want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)参数中未指定abilityName，称为隐式Want。
 
-  当需要处理的对象不明确时，可以使用隐式Want，在当前应用中使用其他应用提供的某个能力，而不关心提供该能力的具体应用。隐式Want使用[skills标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)来定义需要使用的能力，并由系统匹配声明支持该请求的所有应用来处理请求。例如，需要打开一个链接的请求，系统将匹配所有声明支持该请求的应用，然后让用户选择使用哪个应用打开链接。
+  当需要处理的对象不明确时，可以使用隐式Want，在当前应用中使用其他应用提供的某个能力，而不关心提供该能力的具体应用。隐式Want使用[skills标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)来定义需要使用的能力，并由系统匹配声明支持该请求的所有应用来处理请求。例如，需要打开一个链接的请求，系统将匹配所有声明支持该请求的应用，然后让用户选择使用哪个应用打开链接。
 
   ```
   import { common, Want } from '@kit.AbilityKit';

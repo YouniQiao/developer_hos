@@ -1,6 +1,6 @@
 ---
 title: "定时器"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-timer
+original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-timer
 format: md
 ---
 

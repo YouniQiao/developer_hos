@@ -1,13 +1,13 @@
 ---
 title: "不同包类型的源码混淆建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-practice
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-practice
 format: md
 ---
 
 
-不同包类型的用途和构建流程存在差异，对不同包类型使用混淆时，开发者需要注意不同事项。本文针对[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)、[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)和[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)三种包类型，分别提供混淆建议，帮助开发者高效使用混淆。简要对应关系如下：**HAP**为应用安装与运行的功能模块，适用于**应用端功能开发与发布**；**HAR**为静态共享包，适用于**组件化、能力沉淀与多模块/多工程复用**；**HSP**为应用内动态共享包，适用于**同一应用内多模块在运行时共享代码与资源**。
+不同包类型的用途和构建流程存在差异，对不同包类型使用混淆时，开发者需要注意不同事项。本文针对[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)、[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)和[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)三种包类型，分别提供混淆建议，帮助开发者高效使用混淆。简要对应关系如下：**HAP**为应用安装与运行的功能模块，适用于**应用端功能开发与发布**；**HAR**为静态共享包，适用于**组件化、能力沉淀与多模块/多工程复用**；**HSP**为应用内动态共享包，适用于**同一应用内多模块在运行时共享代码与资源**。
 
-为了对混淆在不同包类型下的行为有更清晰的理解，建议开发者在对不同包类型进行配置前，充分了解[混淆原理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)及[混淆开启流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide#开启混淆步骤)，并优先阅读[Stage模型应用程序包结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-stage)（了解不同包类型之间的差异点）。
+为了对混淆在不同包类型下的行为有更清晰的理解，建议开发者在对不同包类型进行配置前，充分了解[混淆原理](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation)及[混淆开启流程](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide#开启混淆步骤)，并优先阅读[Stage模型应用程序包结构](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage)（了解不同包类型之间的差异点）。
 
 ## 推荐混淆功能
 
@@ -21,14 +21,14 @@ format: md
 开启混淆功能后，需配置白名单以保证应用运行功能正常。
 
 * 对于新开发的应用，建议直接打开以上选项，在开发迭代过程中增加白名单配置。
-* 对于已开发一定功能的应用，建议按照以上顺序逐步打开各个选项，对比不同选项的混淆产物，熟悉新增选项的具体效果，参考[混淆选项配置指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide#混淆选项配置指导)排查适配。
+* 对于已开发一定功能的应用，建议按照以上顺序逐步打开各个选项，对比不同选项的混淆产物，熟悉新增选项的具体效果，参考[混淆选项配置指导](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide#混淆选项配置指导)排查适配。
 
 当应用功能调试正常后，可继续开启代码压缩（-compact）与日志删除（-remove-log、-remove-nosideeffects-calls）等功能，以增强代码混淆效果，然后发布release应用包。
 
 ## HAP包混淆建议
 
 1. 开启混淆规则。建议开启[推荐的四项规则](#推荐混淆功能)，其它选项按需添加。
-2. HAP包的开发者需要重点知悉[混淆规则的合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)，确认清楚了解所有潜在影响本模块编译时混淆规则的情况。
+2. HAP包的开发者需要重点知悉[混淆规则的合并策略](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#混淆规则合并策略)，确认清楚了解所有潜在影响本模块编译时混淆规则的情况。
 3. 在此基础上，还需了解哪种依赖包内的代码会跟随本模块一起参与编译混淆，因为这会影响混淆新生成的名称和部分全局生效（如属性名称）的白名单，从而影响到本模块最终的混淆效果。具体而言：
 
    * 当依赖本地HAR包时，其代码会跟随本模块一起混淆，混淆前后的名称会体现在本模块的编译中间产物obfuscation/nameCache.json文件中。
@@ -46,7 +46,7 @@ format: md
    | [发布态字节码HAR包](#发布态字节码har包) | 二进制字节码和声明文件 | 否 | 是 | 是 |
    | [本地源码HSP包](#本地源码hsp包) | NA | 否 | 是 | 否 |
    | [集成态HSP包](#集成态hsp包) | 二进制字节码和声明文件 | 否 | 是 | 是 |
-6. 需要了解[配置白名单的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)，将白名单配置到obfuscation-rules.txt文件中。
+6. 需要了解[配置白名单的场景](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#保留选项)，将白名单配置到obfuscation-rules.txt文件中。
 7. 构建应用，验证HAP包功能。若功能异常，需排查白名单是否遗漏。
 8. 应用功能正常，即可发布应用包。
 
@@ -54,8 +54,8 @@ format: md
 
 ### HAR包通用建议
 
-1. HAR包的开发者需充分了解[三种混淆配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide#三种混淆配置文件)以及[混淆规则的合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)，以及在被HAP包使用时的[HAP包混淆建议](#hap包混淆建议)中的注意事项，确保被应用依赖时本模块所有功能正常。
-2. 由于HAR包会影响使用它的主模块的混淆流程，**无论HAR包是否开启混淆，都需配置 consumer-rules.txt**，用于声明需传递给依赖方、并最终写入发布 obfuscation.txt 的规则。**可写入 obfuscation.txt 的混淆选项与保留选项范围、合并方式**见[混淆规则合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)，以确保主模块在开启混淆时，HAR包的功能保持正常。
+1. HAR包的开发者需充分了解[三种混淆配置文件](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide#三种混淆配置文件)以及[混淆规则的合并策略](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#混淆规则合并策略)，以及在被HAP包使用时的[HAP包混淆建议](#hap包混淆建议)中的注意事项，确保被应用依赖时本模块所有功能正常。
+2. 由于HAR包会影响使用它的主模块的混淆流程，**无论HAR包是否开启混淆，都需配置 consumer-rules.txt**，用于声明需传递给依赖方、并最终写入发布 obfuscation.txt 的规则。**可写入 obfuscation.txt 的混淆选项与保留选项范围、合并方式**见[混淆规则合并策略](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#混淆规则合并策略)，以确保主模块在开启混淆时，HAR包的功能保持正常。
 3. 由于consumer配置的传递性，**HAR包开发者不应在其中配置开启混淆的能力，而应仅配置保留白名单的规则。为减少对依赖方的影响，建议仅使用-keep-global-name和-keep-property-name两种白名单配置。**
 
 ### 本地源码HAR包
@@ -72,7 +72,7 @@ format: md
 ### 发布态源码HAR包
 
 1. 开启混淆规则。建议开启推荐的[四项混淆规则](#推荐混淆功能)，其它选项按需添加。
-2. 了解需要[配置白名单的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)，配置HAR中的白名单：
+2. 了解需要[配置白名单的场景](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#保留选项)，配置HAR中的白名单：
 
    * obfuscation-rules.txt中配置HAR包对外导出接口及其相关属性名称、此次构建过程不能被混淆的名称等。
    * consumer-rules.txt配置不能被二次混淆的接口、属性等名称。
@@ -94,7 +94,7 @@ format: md
 
 ### HSP包通用建议
 
-1. HSP包的开发者需充分了解[三种混淆配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide#三种混淆配置文件)以及[混淆规则的合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)，以及在被HAP包使用时的[HAP包混淆建议](#hap包混淆建议)中的注意事项，确保被应用依赖时本模块所有功能正常。
+1. HSP包的开发者需充分了解[三种混淆配置文件](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide#三种混淆配置文件)以及[混淆规则的合并策略](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#混淆规则合并策略)，以及在被HAP包使用时的[HAP包混淆建议](#hap包混淆建议)中的注意事项，确保被应用依赖时本模块所有功能正常。
 2. 由于HSP包是独立构建，并且只会构建一次，因此要重点关注模块内部的混淆效果，确保其他模块正常调用接口即可。
 3. 由于consumer配置的传递性，**HSP包开发者不应在其中配置开启混淆的能力，而应仅配置保留白名单的规则。为了减少对依赖方的影响，建议仅使用-keep-global-name和-keep-property-name两种白名单配置**。
 

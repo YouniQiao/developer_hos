@@ -1,7 +1,7 @@
 ---
 format: md
 title: "HAR包中使用window作为Toast时无法引入页面组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-8
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-8
 ---
 
 

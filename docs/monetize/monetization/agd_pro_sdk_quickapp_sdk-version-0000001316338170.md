@@ -1,7 +1,7 @@
 ---
 title: "SDK接口的版本更新说明"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_quickapp_sdk-version-0000001316338170
+original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_sdk-version-0000001316338170
 format: md
 ---
 

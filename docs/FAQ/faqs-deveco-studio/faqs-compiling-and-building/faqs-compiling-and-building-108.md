@@ -1,7 +1,7 @@
 ---
 format: md
 title: "构建报错'Cannot read properties of undefined(reading 'XXX')'"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-108
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-108
 ---
 
 

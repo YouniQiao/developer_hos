@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "不更换商户订单号重复发起退款，返回000000，不返回退款金额的原因是什么？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-22
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-22
 format: md
 ---
 

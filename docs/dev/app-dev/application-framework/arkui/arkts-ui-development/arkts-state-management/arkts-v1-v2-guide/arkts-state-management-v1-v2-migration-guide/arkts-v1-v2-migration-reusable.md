@@ -1,6 +1,6 @@
 ---
 title: "组件复用迁移"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-reusable
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-reusable
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 | V1装饰器名称 | V2装饰器名称 |
 | --- | --- |
-| [@Reusable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable) | [@ReusableV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2) |
+| [@Reusable](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable) | [@ReusableV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-new-reusablev2) |
 
 ## @Reusable->@ReusableV2迁移规则
 
@@ -19,14 +19,14 @@ format: md
 
 * 将@Component装饰的父自定义组件迁移至@ComponentV2装饰。
 * 将@Reusable装饰的子自定义组件迁移为@ReusableV2装饰。
-* 涉及组件内状态变量的迁移可参考[组件内状态变量迁移指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-inner-component)。
+* 涉及组件内状态变量的迁移可参考[组件内状态变量迁移指导](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-inner-component)。
 
 ### aboutToRecycle与aboutToReuse迁移
 
 **迁移规则**
 
 * [aboutToRecycle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttorecycle10)生命周期无需改动，可保留原实现。
-* [aboutToReuse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoreuse18)生命周期在组件复用V2中进行了优化，去除了参数的同时，在复用前会自动重置各状态变量（详情参考[复用前的组件内状态变量重置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2#复用前的组件内状态变量重置)），无需开发者在aboutToReuse中手动赋值回初始值。
+* [aboutToReuse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoreuse18)生命周期在组件复用V2中进行了优化，去除了参数的同时，在复用前会自动重置各状态变量（详情参考[复用前的组件内状态变量重置](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-new-reusablev2#复用前的组件内状态变量重置)），无需开发者在aboutToReuse中手动赋值回初始值。
 
 ```
 // V1原组件
@@ -94,19 +94,19 @@ ReusableV2Component().reuse({reuseId: () => 'groupA'})
 
 **迁移规则**
 
-组件复用V1中，当开发者打开复用组件的冻结开关freezeWhenInactive时，才会冻结复用池中的组件，详细规则参考[自定义组件冻结功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-freeze)。而在组件复用V2中，会自动开启冻结，详细规则参考[复用阶段的冻结](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2#复用阶段的冻结)。
+组件复用V1中，当开发者打开复用组件的冻结开关freezeWhenInactive时，才会冻结复用池中的组件，详细规则参考[自定义组件冻结功能](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-freeze/arkts-custom-components-freeze)。而在组件复用V2中，会自动开启冻结，详细规则参考[复用阶段的冻结](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-new-reusablev2#复用阶段的冻结)。
 
 ### LazyForEach->Repeat
 
 **迁移规则**
 
-组件复用V1中，经常使用LazyForEach配合组件复用实现高性能懒加载。在组件复用V2中，推荐使用[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)替代[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)。Repeat自身能够对组件进行复用，相比LazyForEach具有更简洁的API以及更好的性能。由LazyForEach迁移至Repeat可参考[LazyForEach迁移Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-rendering-control-repeat#lazyforeach迁移repeat)。
+组件复用V1中，经常使用LazyForEach配合组件复用实现高性能懒加载。在组件复用V2中，推荐使用[Repeat](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat)替代[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)。Repeat自身能够对组件进行复用，相比LazyForEach具有更简洁的API以及更好的性能。由LazyForEach迁移至Repeat可参考[LazyForEach迁移Repeat](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-rendering-control-repeat#lazyforeach迁移repeat)。
 
 ## @Reusable->@ReusableV2迁移示例
 
 ### if使用场景
 
-@Reusable使用示例请参考[动态布局更新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#动态布局更新)。
+@Reusable使用示例请参考[动态布局更新](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#动态布局更新)。
 
 @ReusableV2的if使用场景示例代码如下：
 
@@ -171,7 +171,7 @@ struct Child {
 
 ### 列表滚动-Repeat使用场景
 
-@Reusable使用示例请参考[列表滚动配合LazyForEach使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#列表滚动配合lazyforeach使用)。
+@Reusable使用示例请参考[列表滚动配合LazyForEach使用](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#列表滚动配合lazyforeach使用)。
 
 @ReusableV2的列表滚动-Repeat使用场景示例代码如下：
 
@@ -228,7 +228,7 @@ export struct CardViewV2 {
 
 ### 列表滚动-if使用场景
 
-@Reusable使用示例请参考[列表滚动-if使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#列表滚动-if使用场景)。
+@Reusable使用示例请参考[列表滚动-if使用场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#列表滚动-if使用场景)。
 
 @ReusableV2的列表滚动-if使用场景示例代码如下：
 
@@ -320,9 +320,9 @@ export struct OneMoment {
 
 ### 列表滚动-Repeat全量加载使用场景
 
-状态管理V2推荐使用[Repeat全量加载模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat#懒加载能力说明)替代[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)实现循环渲染。
+状态管理V2推荐使用[Repeat全量加载模式](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat#懒加载能力说明)替代[ForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)实现循环渲染。
 
-@Reusable使用示例请参考[列表滚动-ForEach使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#列表滚动-foreach使用场景)。
+@Reusable使用示例请参考[列表滚动-ForEach使用场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#列表滚动-foreach使用场景)。
 
 @ReusableV2的列表滚动-Repeat全量加载使用场景示例代码如下：
 
@@ -425,7 +425,7 @@ class ListItemObject {
 
 ### Grid使用场景
 
-@Reusable使用示例请参考[Grid使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#grid使用场景)。
+@Reusable使用示例请参考[Grid使用场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#grid使用场景)。
 
 @ReusableV2的Grid使用场景示例代码如下：
 
@@ -493,7 +493,7 @@ struct ReusableV2ChildComponent {
 
 ### WaterFlow使用场景
 
-@Reusable使用示例请参考[WaterFlow使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#waterflow使用场景)。
+@Reusable使用示例请参考[WaterFlow使用场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#waterflow使用场景)。
 
 @ReusableV2的WaterFlow使用场景示例代码如下：
 
@@ -582,7 +582,7 @@ struct Index {
 
 ### Swiper使用场景
 
-@Reusable使用示例请参考[Swiper使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#swiper使用场景)。
+@Reusable使用示例请参考[Swiper使用场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#swiper使用场景)。
 
 @ReusableV2的Swiper使用场景示例代码如下：
 
@@ -680,7 +680,7 @@ struct QuestionSwiperItem {
 
 ### 列表滚动-ListItemGroup使用场景
 
-@Reusable使用示例请参考[列表滚动-ListItemGroup使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#列表滚动-listitemgroup使用场景)。
+@Reusable使用示例请参考[列表滚动-ListItemGroup使用场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#列表滚动-listitemgroup使用场景)。
 
 @ReusableV2的列表滚动-ListItemGroup使用场景示例代码如下：
 
@@ -752,7 +752,7 @@ class DataSrc {
 
 ### 多种条目类型使用场景
 
-@Reusable使用示例请参考[多种条目类型使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#多种条目类型使用场景)。
+@Reusable使用示例请参考[多种条目类型使用场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#多种条目类型使用场景)。
 
 @ReusableV2的多种条目类型使用场景示例代码如下：
 
@@ -827,7 +827,7 @@ struct ReusableV2Component {
 
 **组合型**
 
-复用组件间存在多种差异，但通常具备共同的子组件。将三种复用组件以组合型方式转换为[@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)函数后，内部的共享子组件将统一置于父组件MyComponentV2之下。复用这些子组件时，缓存池在父组件层面实现共享，减少组件创建过程中的资源消耗。
+复用组件间存在多种差异，但通常具备共同的子组件。将三种复用组件以组合型方式转换为[@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)函数后，内部的共享子组件将统一置于父组件MyComponentV2之下。复用这些子组件时，缓存池在父组件层面实现共享，减少组件创建过程中的资源消耗。
 
 ```
 @Entry

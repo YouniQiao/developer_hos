@@ -1,6 +1,6 @@
 ---
 title: "如何导出C++自定义类，导出后如何在ArkTS侧进行类方法调用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-7
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-7
 format: md
 ---
 

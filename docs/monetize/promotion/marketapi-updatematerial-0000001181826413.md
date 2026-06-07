@@ -1,7 +1,7 @@
 ---
 title: "更新素材"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-updatematerial-0000001181826413
+original_url: /docs/monetize/promotion/marketapi-updatematerial-0000001181826413
 format: md
 ---
 
@@ -63,7 +63,7 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 
 ## 响应示例

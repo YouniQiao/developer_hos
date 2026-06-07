@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-creative-label-faq-0000001352066896
+original_url: /docs/monetize/promotion/bp-functions-creative-label-faq-0000001352066896
 format: md
 ---
 

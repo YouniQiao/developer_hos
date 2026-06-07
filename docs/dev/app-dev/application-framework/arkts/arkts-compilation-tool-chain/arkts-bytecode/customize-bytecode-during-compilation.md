@@ -1,6 +1,6 @@
 ---
 title: "编译期自定义修改方舟字节码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/customize-bytecode-during-compilation
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/customize-bytecode-during-compilation
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 能力配置说明
 
-准备一个操作方舟字节码文件的动态库文件，在工程的配置文件build-profile.json5中[配置编译选项transformLib](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkoptions-guide#transformlib)，选项值为这个动态库的路径，编译器会在指定时机加载该动态库，并执行其中指定的Transform方法。
+准备一个操作方舟字节码文件的动态库文件，在工程的配置文件build-profile.json5中[配置编译选项transformLib](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkoptions-guide#transformlib)，选项值为这个动态库的路径，编译器会在指定时机加载该动态库，并执行其中指定的Transform方法。
 
 ## 能力执行机制
 

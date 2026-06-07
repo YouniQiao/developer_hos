@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "习惯推荐方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-habit-rec
 format: md
 ---
 
 
-* **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-introduction)**
-* **[场景体验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-scene-experience)**
-* **[接入方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-access-programme)**
-* **[开发者测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-dp-self-validation)**
+* **[概述](/docs/dev/app-dev/ai/intents-habit-rec-introduction)**
+* **[场景体验](/docs/dev/app-dev/ai/intents-habit-rec-scene-experience)**
+* **[接入方案](/docs/dev/app-dev/ai/intents-habit-rec-access-programme)**
+* **[开发者测试](/docs/dev/app-dev/ai/intents-habit-rec-dp-self-validation)**

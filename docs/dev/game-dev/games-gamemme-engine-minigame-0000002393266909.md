@@ -1,6 +1,6 @@
 ---
 title: "JS（小游戏）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-minigame-0000002393266909
+original_url: /docs/dev/game-dev/games-gamemme-engine-minigame-0000002393266909
 format: md
 ---
 
@@ -13,8 +13,8 @@ format: md
 
 ## 前提条件
 
-* 您已[开通游戏多媒体服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enable-0000002338511697)。
-* 您已[集成游戏多媒体SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-minigame-0000002393266905)。
+* 您已[开通游戏多媒体服务](/docs/dev/game-dev/games-gamemme-enable-0000002338511697)。
+* 您已[集成游戏多媒体SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-minigame-0000002393266905)。
 
 ## 创建对象
 
@@ -28,8 +28,8 @@ format: md
 
    ![](./img/c89900e6.png)
 
-   * 为了提升服务的安全性，初始化SDK时，您还可以通过在您的服务器中计算出签名的方式进行安全加固，增强数据防篡改能力，具体请参见[使用签名初始化SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-initializing-signatures-minigame-0000002393227213)。如果您已[开启安全加固](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section92517364165)，则必须使用签名初始化SDK。
-   * “clientSecret”和“cpAccessToken”传入其一即可。基于安全考虑，推荐您使用cpAccessToken。如果同时传入，将使用传入的“cpAccessToken”作为最终AGC接入凭证。“cpAccessToken”主要是通过在您的服务器中编写一段调用获取Token接口的代码进行获取，具体请参见[获取Token（项目级）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-appendix-token-0000002304569840)。
+   * 为了提升服务的安全性，初始化SDK时，您还可以通过在您的服务器中计算出签名的方式进行安全加固，增强数据防篡改能力，具体请参见[使用签名初始化SDK](/docs/dev/game-dev/games-initializing-signatures-minigame-0000002393227213)。如果您已[开启安全加固](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section92517364165)，则必须使用签名初始化SDK。
+   * “clientSecret”和“cpAccessToken”传入其一即可。基于安全考虑，推荐您使用cpAccessToken。如果同时传入，将使用传入的“cpAccessToken”作为最终AGC接入凭证。“cpAccessToken”主要是通过在您的服务器中编写一段调用获取Token接口的代码进行获取，具体请参见[获取Token（项目级）](/docs/dev/game-dev/games-appendix-token-0000002304569840)。
 
    ```
    const options: EngineCreateParams = {

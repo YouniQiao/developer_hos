@@ -1,6 +1,6 @@
 ---
 title: "发起认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-authentication
+original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/start-authentication
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
 * 标注1：用户认证界面的标题（WidgetParam.title），不支持传空字串，最大长度为500字符。应用可在此配置符合场景的字符串，建议传入认证目的，例如用于支付、登录应用等。
 * 标注2：当生物认证失败后，将显示一个按钮。点击该按钮，可以从生物认证切换到其他口令认证类型（AuthParam.authType）。
 
-  开发者如需[切换自定义认证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apply-custom-authentication)，需要配置导航按键上显示的文本（WidgetParam.navigationButtonText），最大长度为60字符。API 10-17仅在单指纹、单人脸场景下支持配置。从API 18开始，增加支持人脸+指纹场景。
+  开发者如需[切换自定义认证](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/apply-custom-authentication)，需要配置导航按键上显示的文本（WidgetParam.navigationButtonText），最大长度为60字符。API 10-17仅在单指纹、单人脸场景下支持配置。从API 18开始，增加支持人脸+指纹场景。
 
 当前支持使用认证控件的认证类型包括：
 
@@ -48,7 +48,7 @@ format: md
 
 ## 开发步骤
 
-1. [申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/prerequisites#申请权限)：ohos.permission.ACCESS\_BIOMETRIC。
+1. [申请权限](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/prerequisites#申请权限)：ohos.permission.ACCESS\_BIOMETRIC。
 2. 指定用户认证相关参数[AuthParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#authparam10)（包括挑战值、认证类型[UserAuthType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthtype8)列表和认证等级[AuthTrustLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#authtrustlevel8)）、配置认证控件界面[WidgetParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#widgetparam10)，调用[getUserAuthInstance](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthgetuserauthinstance10)获取认证对象。
 3. 调用[UserAuthInstance.on('result')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#onresult10-1)接口订阅认证结果。
 4. 调用[UserAuthInstance.start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#start10)接口发起认证，通过[IAuthCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#iauthcallback10)回调返回认证结果[UserAuthResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthresult10)。当认证成功时返回认证通过类型（[UserAuthType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthtype8)）和令牌信息（AuthToken）。

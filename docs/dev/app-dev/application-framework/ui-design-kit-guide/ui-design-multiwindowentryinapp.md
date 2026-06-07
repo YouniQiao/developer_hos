@@ -1,6 +1,6 @@
 ---
 title: "应用内多窗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-multiwindowentryinapp
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-multiwindowentryinapp
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "视频编解码宽高、跨距与裁剪信息说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-dimension-guide
+original_url: /docs/dev/app-dev/media/video-dimension-guide
 format: md
 ---
 
@@ -217,13 +217,13 @@ picHeight = cropBottom - cropTop + 1
 
 在编码器Buffer模式下，编码器通过OnNeedInputBuffer回调提供可用的输入Buffer。开发者需要将原始图像数据拷贝到OH\_AVBuffer中。当Buffer内存跨距大于配置宽高时，必须按行拷贝有效数据并跳过Padding区域，否则会导致画面错位。
 
-参考代码：视频编码开发指导-[Buffer模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding#buffer模式)步骤3、视频编码开发指导-[Buffer模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding#buffer模式)步骤8。
+参考代码：视频编码开发指导-[Buffer模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding#buffer模式)步骤3、视频编码开发指导-[Buffer模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding#buffer模式)步骤8。
 
 ### 场景二：从解码器输出Buffer读取数据
 
 在解码器Buffer模式下，读取数据时需根据有效图像尺寸和跨距按行读取，并结合裁剪信息跳过Padding及无效边缘。
 
-参考代码：视频解码开发指导-[Buffer模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#buffer模式)步骤3、视频解码开发指导-[Buffer模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#buffer模式)步骤11。
+参考代码：视频解码开发指导-[Buffer模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#buffer模式)步骤3、视频解码开发指导-[Buffer模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#buffer模式)步骤11。
 
 ### 场景三：Surface模式
 
@@ -320,8 +320,8 @@ Configure 配置参数：
 
 ## 参考文档
 
-* [视频编码开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding) —— Surface模式/Buffer模式完整流程。
-* [视频解码开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding) —— Surface模式/Buffer模式完整流程。
+* [视频编码开发指导](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding) —— Surface模式/Buffer模式完整流程。
+* [视频解码开发指导](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding) —— Surface模式/Buffer模式完整流程。
 * [native\_avcodec\_base.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-base-h) —— 所有键名定义。
 * [native\_avcodec\_videodecoder.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videoencoder-h) —— 编码器接口。
 * [native\_avcodec\_videoencoder.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videodecoder-h) —— 解码器接口。

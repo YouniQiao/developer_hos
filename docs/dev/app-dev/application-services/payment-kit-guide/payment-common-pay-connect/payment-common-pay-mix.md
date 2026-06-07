@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "混合支付场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-mix
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-mix
 format: md
 ---
 
@@ -24,8 +24,8 @@ format: md
 
 | 步骤 | 说明 |
 | --- | --- |
-| [商户入网及开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-merc-regist-apply) | - **华为支付商户入网及开发准备**  在准备开发前，商户需要在[华为支付商户平台](https://petalpay-merchant.cloud.huawei.com/)入网及完成开发准备操作。  支持的商户模型：直连商户、平台商户、服务商。  商户模型详细内容请参见[接入模式](https://developer.huawei.com/consumer/cn/doc/pay-docs/hwzf-hezuoshenfen-0000001725918617)。  - **三方支付商户入网（非必选）**  由于三方支付直接连接第三方支付平台完成支付，故可能需要开发者在第三方支付平台注册、创建商户（建议开发者用新申请的商户号与现有商户号做区分）。 |
-| [产品开通与配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#产品开通与配置) | 接入通用收银台，商户入网后需与华为支付业务侧沟通（合作咨询可[点击此处](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-service-support)）后申请开通三方支付及完成相关支付模式配置。 |
+| [商户入网及开发准备](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-merc-regist-apply) | - **华为支付商户入网及开发准备**  在准备开发前，商户需要在[华为支付商户平台](https://petalpay-merchant.cloud.huawei.com/)入网及完成开发准备操作。  支持的商户模型：直连商户、平台商户、服务商。  商户模型详细内容请参见[接入模式](https://developer.huawei.com/consumer/cn/doc/pay-docs/hwzf-hezuoshenfen-0000001725918617)。  - **三方支付商户入网（非必选）**  由于三方支付直接连接第三方支付平台完成支付，故可能需要开发者在第三方支付平台注册、创建商户（建议开发者用新申请的商户号与现有商户号做区分）。 |
+| [产品开通与配置](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#产品开通与配置) | 接入通用收银台，商户入网后需与华为支付业务侧沟通（合作咨询可[点击此处](/docs/dev/app-dev/application-services/payment-kit-guide/payment-service-support)）后申请开通三方支付及完成相关支付模式配置。 |
 | 通用收银台接入 | 根据混合支付场景[开发步骤](#开发步骤)完成通用收银台支付接入。 |
 
 ## 业务流程
@@ -125,7 +125,7 @@ format: md
 1. 开发者按照商户模型调用[直连商户预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-prepay)或[平台类商户/服务商预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-agent-prepay)接口获取预支付ID（prepayId）。
 
    为保证支付订单的安全性和可靠性需要对请求body和请求头PayMercAuth对象内的入参排序拼接进行签名。可参考[签名规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-rest-overview#签名规则)。
-2. 构建订单信息参数[orderStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#orderstr)并返回给客户端。业务接口请求示例代码可参考[业务接口请求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-server-connect#业务接口请求)。
+2. 构建订单信息参数[orderStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#orderstr)并返回给客户端。业务接口请求示例代码可参考[业务接口请求](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-server-connect#业务接口请求)。
 
 ### 拉起通用收银台（端侧开发）
 
@@ -182,7 +182,7 @@ struct Index {
 
 1. 需直接使用通知的完整内容进行验签。
 2. 验签前需要对返回数据进行排序拼接，sign字段是签名值，排序拼接后的待验签内容需要排除sign字段。
-3. 验签公钥使用[华为支付证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config#华为支付证书)。
+3. 验签公钥使用[华为支付证书](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config#华为支付证书)。
 
 ![](./img/8f6c6790.png)
 
@@ -192,4 +192,4 @@ struct Index {
 
 **场景2：用户选择三方支付方式支付**
 
-开发者需要根据[产品开通与配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#产品开通与配置)中的所配置的支付方式，参考[拉起三方支付收银台](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment-url)不同方式进行三方支付收银台拉起处理。
+开发者需要根据[产品开通与配置](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#产品开通与配置)中的所配置的支付方式，参考[拉起三方支付收银台](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment/payment-launch-third-party-payment-url)不同方式进行三方支付收银台拉起处理。

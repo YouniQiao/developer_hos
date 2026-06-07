@@ -1,7 +1,7 @@
 ---
 title: "基础构建能力"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-api
+original_url: /docs/tools/coding-debug/ide-hvigor-api
 format: md
 ---
 

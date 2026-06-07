@@ -1,7 +1,7 @@
 ---
 title: "查询智能分包列表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-cxzhinengfenbaoliebiao-0000001926859329
+original_url: /docs/monetize/promotion/ads-cxzhinengfenbaoliebiao-0000001926859329
 format: md
 ---
 

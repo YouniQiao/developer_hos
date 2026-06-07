@@ -1,6 +1,6 @@
 ---
 title: "为快游戏创新互动卡片添加桌面卡片入口"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-interact-card-rpk-add-desk-0000002513179652
+original_url: /docs/dev/game-dev/games-quickgame-interact-card-rpk-add-desk-0000002513179652
 format: md
 ---
 

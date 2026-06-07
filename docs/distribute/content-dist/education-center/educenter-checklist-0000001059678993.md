@@ -1,7 +1,7 @@
 ---
 title: "审核要求"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-checklist-0000001059678993
+original_url: /docs/distribute/content-dist/education-center/educenter-checklist-0000001059678993
 ---
 
 

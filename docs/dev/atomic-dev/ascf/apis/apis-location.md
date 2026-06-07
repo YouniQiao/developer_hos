@@ -1,6 +1,6 @@
 ---
 title: "位置"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-location
+original_url: /docs/dev/atomic-dev/ascf/apis/apis-location
 format: md
 ---
 
@@ -11,7 +11,7 @@ has.openLocation(Object object)
 
 使用引擎内置地图查看具体位置。
 
-使用前，需参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)完成基本准备工作。
+使用前，需参考[开发准备](/docs/dev/app-dev/application-services/map-config-agc)完成基本准备工作。
 
 **起始版本：** 1.0.0
 
@@ -60,7 +60,7 @@ has.getLocation(Object object)
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.LOCATION**和**ohos.permission.APPROXIMATELY\_LOCATION**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)申请[scope.userLocation](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)授权。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)申请[scope.userLocation](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)授权。
 
 **参数：**
 
@@ -120,7 +120,7 @@ has.getFuzzyLocation(Object object)
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.APPROXIMATELY\_LOCATION**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)申请[scope.userFuzzyLocation](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)授权。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)申请[scope.userFuzzyLocation](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)授权。
 
 **参数：**
 
@@ -168,7 +168,7 @@ has.chooseLocation(Object object)
 
 打开地图选择位置。
 
-使用前，需参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)完成基本准备工作。
+使用前，需参考[开发准备](/docs/dev/app-dev/application-services/map-config-agc)完成基本准备工作。
 
 **起始版本：** 1.0.0
 
@@ -224,7 +224,7 @@ has.startLocationUpdate(Object object)
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.APPROXIMATELY\_LOCATION**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)申请[scope.userFuzzyLocation](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)授权。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)申请[scope.userFuzzyLocation](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)授权。
 
 **参数：**
 
@@ -264,7 +264,7 @@ has.startLocationUpdateBackground(Object object)
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.APPROXIMATELY\_LOCATION**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)申请[scope.userFuzzyLocation](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)授权。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)申请[scope.userFuzzyLocation](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)授权。
 3. 开启后台定位，需要在module.json5中声明**backgroundModes**配置项：
 
    ```

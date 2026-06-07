@@ -1,11 +1,11 @@
 ---
 format: md
 title: "TextInput组件获取焦点的几种场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-13
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-13
 ---
 
 
-* 场景一：TextInput[主动获焦/失焦](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-focus-event#主动获焦失焦)。
+* 场景一：TextInput[主动获焦/失焦](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-focus-event#主动获焦失焦)。
 
   调用focusControl.requestFocus接口可以主动让焦点转移至参数指定的组件上。可参考如下代码：
 
@@ -39,7 +39,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
     }
   }
   ```
-* 场景二：页面初次构建完成时，使第二个TextInput获取[默认焦点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-focus-event#默认焦点)。
+* 场景二：页面初次构建完成时，使第二个TextInput获取[默认焦点](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-focus-event#默认焦点)。
 
   设置defaultFocus属性，defaultFocus可以使绑定的组件成为页面创建后首次获焦的焦点。可参考如下代码：
 

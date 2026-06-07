@@ -1,7 +1,7 @@
 ---
 title: "批量修改RTAID"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-rtaidmanage-0000001218215388
+original_url: /docs/monetize/promotion/marketapi-rtaidmanage-0000001218215388
 format: md
 ---
 
@@ -67,7 +67,7 @@ Content-Type: application/json
 | --- | --- | --- | --- |
 | code | M | Integer | 返回码。 |
 | msg | M | String | 返回描述。 |
-| failedTasks | O | List&lt;[TaskFailedDetail](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-taskfaileddetail-0000001135626864)&gt; | 失败任务原因说明。 |
+| failedTasks | O | List&lt;[TaskFailedDetail](/docs/monetize/promotion/marketapi-modle-taskfaileddetail-0000001135626864)&gt; | 失败任务原因说明。 |
 
 ## 响应示例
 

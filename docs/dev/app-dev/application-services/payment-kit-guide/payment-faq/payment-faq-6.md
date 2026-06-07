@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "支付成功后没有收到回调？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-6
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-6
 format: md
 ---
 

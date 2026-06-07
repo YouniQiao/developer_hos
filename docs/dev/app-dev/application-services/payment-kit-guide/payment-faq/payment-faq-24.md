@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "下载账单文件后，应该使用哪种格式来解析日期？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-24
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-24
 format: md
 ---
 

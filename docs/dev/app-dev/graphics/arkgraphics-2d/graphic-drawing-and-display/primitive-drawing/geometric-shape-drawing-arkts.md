@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "几何形状绘制（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geometric-shape-drawing-arkts
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/geometric-shape-drawing-arkts
 format: md
 ---
 

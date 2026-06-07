@@ -1,6 +1,6 @@
 ---
 title: "@Reusable装饰器：V1组件复用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable
 format: md
 ---
 
@@ -31,9 +31,9 @@ API version 10开始支持@Reusable，支持在ArkTS中使用。
 
 ### 仅用于自定义组件
 
-@Reusable装饰器仅用于自定义组件[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)，不可与[@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)搭配使用。
+@Reusable装饰器仅用于自定义组件[@Component](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#component)，不可与[@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)搭配使用。
 
-@Reusable不支持跟[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)搭配使用，@ComponentV2组件复用推荐[@ReusableV2装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2)。
+@Reusable不支持跟[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)搭配使用，@ComponentV2组件复用推荐[@ReusableV2装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-new-reusablev2)。
 
 ```
 import { ComponentContent } from '@kit.ArkUI';
@@ -1000,7 +1000,7 @@ class ListItemObject {
 
 使用aboutToReuse可以在Grid滑动时，从复用缓存中加入到组件树之前触发，从而更新组件状态变量，展示正确内容。
 
-需要注意的是无需在aboutToReuse中对[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)、[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)、[@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)、[@Consume](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)等自动更新值的状态变量进行更新，可能触发不必要的组件刷新。
+需要注意的是无需在aboutToReuse中对[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)、[@StorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storagelink)、[@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)、[@Consume](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)等自动更新值的状态变量进行更新，可能触发不必要的组件刷新。
 
 ```
 // MyDataSource类实现IDataSource接口。

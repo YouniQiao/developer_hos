@@ -2,7 +2,7 @@
 
 title: "历史工程转换为端云一体化开发工程"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-project-migration
+original_url: /docs/tools/end-cloud/agc-harmonyos-project-migration
 format: md
 ---
 

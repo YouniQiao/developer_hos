@@ -1,6 +1,6 @@
 ---
 title: "上传软件包"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-upload-pkg-0000002399249081
+original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-upload-pkg-0000002399249081
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 #### 前提条件
 
-确保游戏软件包已符合上架要求。软件包要求请参见[准备游戏软件包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-prepare-0000002406557837#section24731651195720)。
+确保游戏软件包已符合上架要求。软件包要求请参见[准备游戏软件包](/docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-prepare-0000002406557837#section24731651195720)。
 
 #### 提交软件包
 

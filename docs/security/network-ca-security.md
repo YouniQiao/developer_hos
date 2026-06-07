@@ -1,6 +1,6 @@
 ---
 title: "网络连接安全配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-network-ca-security
+original_url: /docs/security/network-ca-security
 format: md
 ---
 
@@ -46,7 +46,7 @@ format: md
 
 ### 配置信任系统预置的CA证书
 
-面向互联网用户提供服务的应用，通常只需信任系统预置的CA证书。[Network Kit（网络服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit)和[Remote Communication Kit（远场通信服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-kit-guide)的HTTPS连接已默认信任系统预置的CA证书。
+面向互联网用户提供服务的应用，通常只需信任系统预置的CA证书。[Network Kit（网络服务）](/docs/dev/app-dev/system/system-network/network-kit)和[Remote Communication Kit（远场通信服务）](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide)的HTTPS连接已默认信任系统预置的CA证书。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/94/v3/e8avOyFTQJWMpsgiiXBQ5w/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260529T080701Z&HW-CC-Expire=86400&HW-CC-Sign=EEF7FE65580E6FE3A35695E6350752A54AF155239A569932442F9F01CE95C6A7)
 
@@ -65,7 +65,7 @@ curl_easy_setopt(curl, CURLOPT_CATH, "/etc/security/certificates");
 
 ### 配置不信任用户安装的CA证书
 
-<strong>Network Kit和Remote Communication Kit配置不信任用户安装的CA证书</strong>：在src/main/resources/base/profile/network\_config.json[配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request#配置证书校验)中进行配置。
+<strong>Network Kit和Remote Communication Kit配置不信任用户安装的CA证书</strong>：在src/main/resources/base/profile/network\_config.json[配置文件](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request#配置证书校验)中进行配置。
 
 ```
 {
@@ -209,7 +209,7 @@ SSL Pinning要求应用云侧服务器证书的公钥不能变化。如果公钥
    ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/Privacy/privacy/src/main/ets/pages/Cybersecurity.md#L87-L109">Cybersecurity.md</a></div>
 
-   具体可参考配置指导的[“证书锁定”](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request#证书锁定)章节。
+   具体可参考配置指导的[“证书锁定”](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request#证书锁定)章节。
 2. 通过在代码中动态设置进行动态SSL Pinning配置：
    * Network Kit配置动态SSL Pinning：
 

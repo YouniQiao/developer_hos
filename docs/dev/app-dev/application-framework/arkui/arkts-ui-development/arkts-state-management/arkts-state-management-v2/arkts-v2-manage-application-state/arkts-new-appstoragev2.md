@@ -1,6 +1,6 @@
 ---
 title: "AppStorageV2: 应用全局UI状态存储"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-appstoragev2
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-application-state/arkts-new-appstoragev2
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 AppStorageV2提供应用级全局共享状态变量的能力，开发者可以通过connect绑定同一个key，进行跨ability的数据共享。
 
-在阅读本文档前，建议提前阅读：[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)，[@ObservedV2和@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)，配合阅读：[AppStorageV2-API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#appstoragev2)。
+在阅读本文档前，建议提前阅读：[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)，[@ObservedV2和@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)，配合阅读：[AppStorageV2-API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#appstoragev2)。
 
 ![](./img/a86a0945.png)
 
@@ -21,7 +21,7 @@ AppStorageV2是在应用UI启动时会被创建的单例。它用于提供应用
 
 AppStorageV2可以修改connect的返回值，实现与UI组件的同步。
 
-AppStorageV2支持应用的[主线程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thread-model-stage)内多个UIAbility实例间的状态共享。
+AppStorageV2支持应用的[主线程](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/thread-model-stage)内多个UIAbility实例间的状态共享。
 
 ## 使用说明
 
@@ -37,7 +37,7 @@ AppStorageV2支持应用的[主线程](https://developer.huawei.com/consumer/cn/
 
 4、key建议使用有意义的值，可由字母、数字、下划线组成，长度不超过255，使用非法字符或空字符的行为是未定义的。
 
-5、关联[@Observed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)对象时，由于该类型的name属性未定义，需要指定key或者自定义name属性。
+5、关联[@Observed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)对象时，由于该类型的name属性未定义，需要指定key或者自定义name属性。
 
 * remove：删除指定key的存储数据。
 
@@ -53,7 +53,7 @@ AppStorageV2支持应用的[主线程](https://developer.huawei.com/consumer/cn/
 
 1、只支持class类型，否则会抛出运行时报错，从API version 23开始，将返回错误码[140103](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statemanagement#section140103-appstoragev2和persistencev2使用不支持的数据类型)。
 
-2、需要配合UI使用（UI线程），不能在其他线程使用，如不支持[@Sendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)。
+2、需要配合UI使用（UI线程），不能在其他线程使用，如不支持[@Sendable](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)。
 
 3、不支持[collections.Set](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-set)、[collections.Map](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-map)等类型。
 

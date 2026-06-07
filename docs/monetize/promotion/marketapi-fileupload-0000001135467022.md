@@ -1,7 +1,7 @@
 ---
 title: "文件上传"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-fileupload-0000001135467022
+original_url: /docs/monetize/promotion/marketapi-fileupload-0000001135467022
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
 | <strong>参数</strong> | <strong>必选(M)/可选(O)</strong> | <strong>参数类型</strong> | <strong>描述</strong> |
 | --- | --- | --- | --- |
 | userid | M | String | 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)后在“我的账号信息”中查看到的“客户ID”。   - 直客投放时，请直接使用您的账户获取。 - 授权合作伙伴投放时，该字段请使用<strong>投放操作账户</strong>获取。 |
-| filename | M | String | 文件名，和[新增素材](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-addmaterial-0000001135626812)中的文件名保持一致。 |
+| filename | M | String | 文件名，和[新增素材](/docs/monetize/promotion/marketapi-addmaterial-0000001135626812)中的文件名保持一致。 |
 
 ### Header
 
@@ -66,7 +66,7 @@ productId: 736430079245712275
 | --- | --- | --- | --- |
 | uploadStatus | M | String | 上传的状态：   - resumable：断点续传 - finalize：上传完成 |
 | receiveBytes | O | Long | 已上传字节，从0开始，只支持顺序上传，文件未上传完毕，返回该字段。 |
-| fileInfo | O | [FileInfo](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-fileinfo-0000001181946371) | 文件的详细信息。 |
+| fileInfo | O | [FileInfo](/docs/monetize/promotion/marketapi-modle-fileinfo-0000001181946371) | 文件的详细信息。 |
 
 ## 响应示例
 

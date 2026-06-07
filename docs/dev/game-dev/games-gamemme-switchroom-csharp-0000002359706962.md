@@ -1,6 +1,6 @@
 ---
 title: "切换房间"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-switchroom-csharp-0000002359706962
+original_url: /docs/dev/game-dev/games-gamemme-switchroom-csharp-0000002359706962
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ## 前提条件
 
-玩家至少已[加入](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073)两个房间。
+玩家至少已[加入](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073)两个房间。
 
 ## 开发步骤
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文件打开加速状态感知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost-stateawareness
+original_url: /docs/dev/app-dev/application-services/preview-kit-guide/preview-openfileboost-stateawareness
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 | --- | --- |
 | on(type: 'filePreloadStateChanged', callback: Callback\<FilePreloadStatusInfo\>): void | 文件预加载状态回调，应用通过注册回调函数获取文件预加载的状态变化。 |
 | off(type: 'filePreloadStateChanged', callback?: Callback\<FilePreloadStatusInfo\>): void | 文件预加载状态注销回调，通过注销回调函数取消获取文件预加载的状态变化。 |
-| addFile(file: string): void | 监听一个文件的预加载状态，传入文件路径开始监听该文件的预加载状态。后续该文件状态有变化通过'filePreloadStateChanged'事件回调应用。  注意需要先调用openFileBoost.on('filePreloadStateChanged')接口后再调用该接口添加文件。  当前支持加速的文件类型见[文件打开加速支持的文件类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-introduction#文件打开加速支持的文件类型)， 不支持的文件类型默认为未预加载状态，不需要调用该接口监听文件预加载状态变更。 |
+| addFile(file: string): void | 监听一个文件的预加载状态，传入文件路径开始监听该文件的预加载状态。后续该文件状态有变化通过'filePreloadStateChanged'事件回调应用。  注意需要先调用openFileBoost.on('filePreloadStateChanged')接口后再调用该接口添加文件。  当前支持加速的文件类型见[文件打开加速支持的文件类型](/docs/dev/app-dev/application-services/preview-kit-guide/preview-introduction#文件打开加速支持的文件类型)， 不支持的文件类型默认为未预加载状态，不需要调用该接口监听文件预加载状态变更。 |
 | removeFile(file: string): void | 取消监听一个文件的预加载状态，取消后文件的预加载状态变化不会通过回调再通知业务。 |
 | queryFilePreloadStatusInfo(file: string): FilePreloadStatusInfo | 查询文件预加载状态，传入文件路径，通过返回值返回该文件当前的预加载状态。 |
 

@@ -1,6 +1,6 @@
 ---
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/corespeechkit-personal-data
+original_url: /docs/dev/app-dev/ai/corespeechkit-personal-data
 format: md
 ---
 

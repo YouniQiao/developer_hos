@@ -1,6 +1,6 @@
 ---
 title: "Iap Preparations"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-preparations
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

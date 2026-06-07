@@ -1,7 +1,7 @@
 ---
 format: md
 title: "录制结束时提示录制失败，无录制文件生成"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-12
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-12
 ---
 
 

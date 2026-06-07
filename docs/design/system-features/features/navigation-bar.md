@@ -1,7 +1,7 @@
 ---
 title: 导航条
 sidebar_label: 导航条
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/navigation-0000001957075737
+original_url: /docs/design/system-features/features/navigation-bar
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 
 4) 使用 Webview 或三方框架开发的应用，同样需要进行导航条的抬高避让和沉浸式背景适配
 
-底部导航条的开发适配指南请参阅[开发应用沉浸式效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-develop-apply-immersive-effects)。
+底部导航条的开发适配指南请参阅[开发应用沉浸式效果](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-develop-apply-immersive-effects)。
 
 ### 沉浸式背景
 

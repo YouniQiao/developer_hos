@@ -1,6 +1,6 @@
 ---
 title: "屏蔽其他玩家"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-muteplayer-harmonyos-0000002360061572
+original_url: /docs/dev/game-dev/games-gamemme-muteplayer-harmonyos-0000002360061572
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
+您已[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
 
 ## 屏蔽/打开指定玩家语音
 

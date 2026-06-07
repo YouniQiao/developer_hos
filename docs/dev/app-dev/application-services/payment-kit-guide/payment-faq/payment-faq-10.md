@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接口请求响应“无效的签名”应该如何排查？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-10
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-10
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "位图操作"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation-native
+original_url: /docs/dev/app-dev/media/image-kit/image-native-js-objects/image-pixelmap-operation-native
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 当前开发指导使用的接口为[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image)模块下的C API，可完成图片编解码，图片接收器，处理图像数据等功能。这部分API在API version 11之前发布，在后续的版本不再增加新功能，**不再推荐使用**。
 
-开发者可使用[Image\_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule)模块下的C API，不仅提供上述图片框架基础功能，还可以完成多图编解码等新特性，相关开发指导请参考[图片开发指导(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-source-c)节点下的内容。这部分API从API version 12开始支持，并将持续演进，**推荐开发者使用**。
+开发者可使用[Image\_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule)模块下的C API，不仅提供上述图片框架基础功能，还可以完成多图编解码等新特性，相关开发指导请参考[图片开发指导(C/C++)](/docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-c)节点下的内容。这部分API从API version 12开始支持，并将持续演进，**推荐开发者使用**。
 
 两套C API不建议同时使用，在部分场景下存在不兼容的问题。
 

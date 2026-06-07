@@ -1,7 +1,7 @@
 ---
 title: "查询计划"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-campaign2-0000001286335642
+original_url: /docs/monetize/promotion/marketing-api-advertising-campaign2-0000001286335642
 format: md
 ---
 
@@ -38,8 +38,8 @@ format: md
   | updated\_end\_time | string | 否 | 计划更新的结束时间，格式如下:"yyyy-MM-dd HH:mm:ss"。 |
   | created\_begin\_time | string | 否 | 计划创建的开始时间，格式如下:"yyyy-MM-dd HH:mm:ss"。 |
   | created\_end\_time | string | 否 | 计划创建的结束时间，格式如下:"yyyy-MM-dd HH:mm:ss"。 |
-  | show\_status | string | 否 | 计划状态，详见[计划界面显示的状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1996414411226)。 |
-  | campaign\_type | string | 否 | 计划类型，详见[计划类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)。 |
+  | show\_status | string | 否 | 计划状态，详见[计划界面显示的状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1996414411226)。 |
+  | campaign\_type | string | 否 | 计划类型，详见[计划类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)。 |
 
   - <strong>请求示例</strong>
 
@@ -85,16 +85,16 @@ format: md
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
     | campaign\_name | string | 计划名称。 |
     | campaign\_id | string | 计划ID。 |
-    | campaign\_status | string | 操作状态，详见[计划/任务/创意操作状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section9341472176)。 |
-    | campaign\_daily\_budget\_status | string | 计划日预算状态，详见[计划日预算状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section145031217132116)。 |
-    | user\_balance\_status | string | 账户余额状态，详见[账户余额状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section16501634162212)。 |
-    | product\_type | string | 推广产品 计划的product\_type与关联推广产品的product\_type需要保持一致，详见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
-    | tomorrow\_daily\_budget | integer | 次日计划日限额，不返回表示与当日计划日限额相同，详见[日限额说明](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix5-0000001338486113#section433813381695)。 |
-    | today\_daily\_budget | integer | 当日计划日限额，详见[日限额说明](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix5-0000001338486113#section433813381695)。 |
+    | campaign\_status | string | 操作状态，详见[计划/任务/创意操作状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section9341472176)。 |
+    | campaign\_daily\_budget\_status | string | 计划日预算状态，详见[计划日预算状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section145031217132116)。 |
+    | user\_balance\_status | string | 账户余额状态，详见[账户余额状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section16501634162212)。 |
+    | product\_type | string | 推广产品 计划的product\_type与关联推广产品的product\_type需要保持一致，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
+    | tomorrow\_daily\_budget | integer | 次日计划日限额，不返回表示与当日计划日限额相同，详见[日限额说明](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#section433813381695)。 |
+    | today\_daily\_budget | integer | 当日计划日限额，详见[日限额说明](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#section433813381695)。 |
     | created\_time | string | 计划创建的时间，格式如下:"yyyy-MM-dd HH:mm:ss"。 |
-    | show\_status | string | 计划状态，详见[计划界面显示的状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1996414411226)。 |
-    | campaign\_type | string | 计划类型，详见[计划类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)。 |
-    | flow\_resource | string | 投放网络，详见[投放网络](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1178164162818)。 |
+    | show\_status | string | 计划状态，详见[计划界面显示的状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1996414411226)。 |
+    | campaign\_type | string | 计划类型，详见[计划类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)。 |
+    | flow\_resource | string | 投放网络，详见[投放网络](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1178164162818)。 |
     | sync\_flow\_resource\_searchad | string | 同时同步投放搜索广告网络。  YES  NO |
   - <strong>应答示例</strong>
 

@@ -1,6 +1,6 @@
 ---
 title: "如何监听系统公共事件，如熄屏、亮屏、开机等"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit-5
+original_url: /docs/FAQ/faqs-app-service-development/faqs-notification-kit/faqs-notification-kit-5
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "发布元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-atomic-service
+original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/release-atomic-service
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 1. 了解[元服务审核指南](https://developer.huawei.com/consumer/cn/doc/distribution/app/50129)的要求，并完成发布前自检。
 2. [打包发布版本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app)。
 3. （可选）在正式发布元服务前，您可以发布一个[邀请测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-invite-test-0000002270829393)版本，邀请部分用户提前体验新版本，并收集用户的反馈，以便提前发现问题进行改进，从而保证全网版本的质量，提升用户体验。
-4. 完成[元服务备案](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing)。
+4. 完成[元服务备案](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing)。
 5. [发布元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-0000002327731065)。
 
    ![](./img/9ec3d000.png)
@@ -19,9 +19,9 @@ format: md
 
 ## 如何配置签名
 
-初次运行元服务，需要配置好证书签名，参考[元服务开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation#section42841246144813) 。
+初次运行元服务，需要配置好证书签名，参考[元服务开发准备](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation#section42841246144813) 。
 
-开发调试期间的证书不可用于应用上架。元服务发布证书的申请流程和应用开发类似，参考文档[发布元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-guide-0000002293651514)，获取发布证书。
+开发调试期间的证书不可用于应用上架。元服务发布证书的申请流程和应用开发类似，参考文档[发布元服务](/docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-guide-0000002293651514)，获取发布证书。
 
 修改build-profile.json5文件，新增release证书签名。
 
@@ -41,7 +41,7 @@ format: md
   + EntryAbility\_label：应用标题
 * 修改应用图标：
 
-  为使用[生成元服务图标](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-icon-generation)生成的512x512图标，需要放置在“AppScope/resources/base/media/app\_icon.png”路径内 ，否则会上架审核不通过。
+  为使用[生成元服务图标](/docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-icon-generation)生成的512x512图标，需要放置在“AppScope/resources/base/media/app\_icon.png”路径内 ，否则会上架审核不通过。
 
 ## 如何构建发布包
 
@@ -68,7 +68,7 @@ ascf build assembleApp
 
 元服务的单包要求不超过2MB，总包不能超过10MB。因此在发布前，开发者需要优化包大小。调试debug包不限定包大小。
 
-1. 元服务提供了分包功能，支持[分包](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-subpackages)、[异步化分包](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/asynchronous-subcontracting)，来降低单包的大小。
+1. 元服务提供了分包功能，支持[分包](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackages)、[异步化分包](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/asynchronous-subcontracting)，来降低单包的大小。
 2. 元服务提供了包成分分析功能，“ascf compile . -c -m --analyzeBundle”能分析包的依赖和每个分包的大小。
 
    ![](./img/4f1e22b7.png)

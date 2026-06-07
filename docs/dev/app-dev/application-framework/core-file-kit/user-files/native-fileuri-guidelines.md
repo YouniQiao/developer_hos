@@ -1,6 +1,6 @@
 ---
 title: "FileUri开发指导(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileuri-guidelines
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/native-fileuri-guidelines
 format: md
 ---
 

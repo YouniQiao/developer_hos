@@ -1,6 +1,6 @@
 ---
 title: "应用分级"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-applevel-0000002271000745
+original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-applevel-0000002271000745
 format: md
 ---
 

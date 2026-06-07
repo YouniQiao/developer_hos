@@ -1,6 +1,6 @@
 ---
 title: "通过键值型数据库实现数据持久化 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-kv-store
+original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-kv-store
 format: md
 ---
 

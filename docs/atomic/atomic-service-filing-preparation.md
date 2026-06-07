@@ -1,6 +1,6 @@
 ---
 title: "核准（备案）准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-preparation
+original_url: /docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-preparation
 has_merged_cells: true
 format: md
 ---
@@ -25,7 +25,7 @@ format: md
 
 ![](./img/d6328ab1.png)
 
-若暂无精准匹配项，可选择类似项，并在互联网信息备注内填写元服务详细用途，类目/标签详见《[HarmonyOS元服务类目标签](https://developer.huawei.com/consumer/cn/doc/app/ability-0000002032931302)》。
+若暂无精准匹配项，可选择类似项，并在互联网信息备注内填写元服务详细用途，类目/标签详见《[HarmonyOS元服务类目标签](/docs/distribute/app-dist/app-services/classification-0000002068852289/ability-0000002032931302)》。
 
 ## 准备附件材料
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "创建异步线程执行AVTranscoder视频转码(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avtranscoder-practice
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/avtranscoder-practice
 format: md
 ---
 
@@ -193,14 +193,14 @@ export class AVTranscoderDemo {
 }
 ```
 
-具体如何使用转码能力对视频进行转码，可以参见文档：[用AVTranscoder实现视频转码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avtranscoder-for-transcodering)。
+具体如何使用转码能力对视频进行转码，可以参见文档：[用AVTranscoder实现视频转码](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/using-avtranscoder-for-transcodering)。
 
 ## 使用异步线程的方式进行转码
 
 本示例使用的是worker线程的方式来实现异步线程进行转码，worker线程的详细使用方式，可以参见文档:
 
 * [Worker线程使用说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-worker)
-* [Worker简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)
+* [Worker简介](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction)
 
 ### 开发步骤
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "订阅到系统未成年人模式开启了，这个时候应用要怎么处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-14
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-14
 format: md
 ---
 

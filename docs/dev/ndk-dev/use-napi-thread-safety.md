@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口进行线程安全开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety
+original_url: /docs/dev/ndk-dev/use-napi-thread-safety
 format: md
 ---
 
@@ -205,7 +205,7 @@ format: md
 
 * napi\_threadsafe\_function在主线程和子线程使用并无差异，下面是子线程的使用示例。
 
-### 基于[Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)实现的C++子线程与ArkTS子线程交互场景
+### 基于[Worker](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction)实现的C++子线程与ArkTS子线程交互场景
 
 1. CMakeLists.txt配置
 
@@ -408,7 +408,7 @@ format: md
    [Main] Received: Echo of Hello from C++
    ```
 
-### 基于[Taskpool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-introduction)实现的C++子线程与ArkTS子线程交互场景
+### 基于[Taskpool](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction)实现的C++子线程与ArkTS子线程交互场景
 
 1. native侧实现代码以及模块注册与“基于Worker实现的C++子线程与ArkTS子线程交互场景”一致，可直接复用。
 2. ArkTS侧示例代码。

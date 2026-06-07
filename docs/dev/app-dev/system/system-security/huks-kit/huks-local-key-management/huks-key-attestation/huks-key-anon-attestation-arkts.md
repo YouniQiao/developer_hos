@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "匿名密钥证明(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-anon-attestation-arkts
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-anon-attestation-arkts
 format: md
 ---
 
@@ -10,11 +10,11 @@ format: md
 
 ## 开发步骤
 
-1. 指定密钥别名，密钥别名命名规范参考[密钥生成介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)。
+1. 指定密钥别名，密钥别名命名规范参考[密钥生成介绍及算法规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)。
 2. 初始化参数集。
 
    [HuksOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksoptions)中的properties字段中的参数必须包含[HUKS\_TAG\_ATTESTATION\_CHALLENGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)属性,可选参数包含[HUKS\_TAG\_ATTESTATION\_ID\_VERSION\_INFO](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)，[HUKS\_TAG\_ATTESTATION\_ID\_ALIAS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)属性。
-3. 生成非对称密钥，具体请参考[密钥生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)。
+3. 生成非对称密钥，具体请参考[密钥生成](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)。
 4. 将密钥别名与参数集作为参数传入[anonAttestKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksanonattestkeyitem11)方法中，即可证明密钥。
 
 ## 开发案例

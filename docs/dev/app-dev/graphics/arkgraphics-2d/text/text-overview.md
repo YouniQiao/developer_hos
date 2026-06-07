@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文本开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-overview
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/text-overview
 format: md
 ---
 

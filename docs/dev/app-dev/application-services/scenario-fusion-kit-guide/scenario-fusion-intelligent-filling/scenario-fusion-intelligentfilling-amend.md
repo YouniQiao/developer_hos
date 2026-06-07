@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "动态修改ContentType值"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-amend
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-amend
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "日历账户管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-calendar-developer
+original_url: /docs/dev/app-dev/application-services/calendar-kit/calendarmanager-calendar-developer
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 日历管理器[CalendarManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#calendarmanager)用于管理日历账户[Calendar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#calendar)。日历账户主要包含账户信息[CalendarAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#calendaraccount)和配置信息[CalendarConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#calendarconfig)。
 
-开发者可以创建属于应用特有的日历账户，还可以对日历账户进行新增、删除、更新和查询。此外，每个日程[Event](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#event)归属于某一个特定的日历账户，可以通过日历账户对该账户下面的日程进行管理，具体相关指导可见[日程管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-event-developer)。
+开发者可以创建属于应用特有的日历账户，还可以对日历账户进行新增、删除、更新和查询。此外，每个日程[Event](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#event)归属于某一个特定的日历账户，可以通过日历账户对该账户下面的日程进行管理，具体相关指导可见[日程管理](/docs/dev/app-dev/application-services/calendar-kit/calendarmanager-event-developer)。
 
 ## 接口说明
 
@@ -43,7 +43,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Calendar/CalendarManager/entry/src/main/ets/entryability/EntryAbility.ets#L16-L22" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>
 
-2. 申请权限。使用Calendar Kit时，需要在module.json5中声明申请读写日历日程所需的权限：ohos.permission.READ\_CALENDAR和ohos.permission.WRITE\_CALENDAR。具体指导可见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+2. 申请权限。使用Calendar Kit时，需要在module.json5中声明申请读写日历日程所需的权限：ohos.permission.READ\_CALENDAR和ohos.permission.WRITE\_CALENDAR。具体指导可见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 3. 根据上下文获取日程管理器对象calendarMgr，用于对日历账户进行相关管理操作。推荐在EntryAbility.ets文件中进行操作。
 
    ```

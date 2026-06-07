@@ -1,6 +1,6 @@
 ---
 title: "Health Preparations"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-preparations
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

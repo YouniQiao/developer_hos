@@ -1,7 +1,7 @@
 ---
 title: "多设备游戏界面"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi_game
+original_url: /docs/dev/app-dev/multi-device/bpta-multi_game
 format: md
 ---
 
@@ -54,7 +54,7 @@ format: md
 
 **游戏类多设备响应式设计**
 
-游戏类的多设备响应式设计指南，[点击访问](https://developer.huawei.com/consumer/cn/doc/design-guides/games-0000001930189974)。
+游戏类的多设备响应式设计指南，[点击访问](/docs/design/app-design-practices/games)。
 
 ## 页面开发
 
@@ -77,7 +77,7 @@ format: md
 
 ###Native一多适配
 
-在HarmonyOS上，[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-xcomponent-guidelines)控件常用于显示相机预览流和绘制的游戏画面。它可以通过与[NativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-window-guidelines)结合使用，创建OpenGL开发环境，并将OpenGL绘制的图形自定义渲染到页面的XComponent控件中进行展示。为了确保游戏在不同设备和屏幕尺寸下的适配效果，可以采取以下两种方法：
+在HarmonyOS上，[XComponent](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/napi-xcomponent-guidelines)控件常用于显示相机预览流和绘制的游戏画面。它可以通过与[NativeWindow](/docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-window-guidelines)结合使用，创建OpenGL开发环境，并将OpenGL绘制的图形自定义渲染到页面的XComponent控件中进行展示。为了确保游戏在不同设备和屏幕尺寸下的适配效果，可以采取以下两种方法：
 
 1. 获取断点信息以适配不同页面效果：在HarmonyOS中，可以通过监听设备屏幕尺寸的变化来获取断点信息。这些信息能够帮助开发者根据屏幕尺寸的变化调整游戏的画面布局和元素大小。
 2. 监听surface大小变化并调整绘制区域：在使用OpenGL进行绘制时，surface的尺寸直接影响绘制区域的大小。因此，监听surface尺寸的变化，并据此调整绘制区域的大小，是实现多设备适配的关键。
@@ -86,7 +86,7 @@ format: md
 
 将从ArkTS侧获取的断点值传递给Native侧，Native侧可以根据游戏设计需求，在不同的断点下实现不同的页面效果。本案例仅展示断点值的传递过程，适配过程可根据不同需求在Native侧自行完成。
 
-1. 使用UIContext中提供的[getWindowWidthBreakpoint()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getwindowwidthbreakpoint13)和[getWindowHeightBreakpoint()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getwindowheightbreakpoint13)接口，在EntryAbility文件的windowStage.loadContent()页面加载函数中直接获取横向和纵向的断点值，并监听窗口大小变化以获取新的断点值。更多获取断点策略可参考[断点实现原理](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section191481952131414)。
+1. 使用UIContext中提供的[getWindowWidthBreakpoint()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getwindowwidthbreakpoint13)和[getWindowHeightBreakpoint()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getwindowheightbreakpoint13)接口，在EntryAbility文件的windowStage.loadContent()页面加载函数中直接获取横向和纵向的断点值，并监听窗口大小变化以获取新的断点值。更多获取断点策略可参考[断点实现原理](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section191481952131414)。
 
    ```
    export default class EntryAbility extends UIAbility {
@@ -175,7 +175,7 @@ format: md
 
 **监听Surface大小变化**
 
-XComponent持有一个Surface，该Surface的默认位置及大小与XComponent组件相同。在Native层获取Native XComponent实例，作为ArkTS层和Native层XComponent绑定的桥梁。利用Native XComponent提供的接口注册XComponent的生命周期和事件回调，最后通过调用[NativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-window-guidelines)等接口开发自定义绘制内容，并申请和提交Buffer到图形队列，以此方式将自定义绘制内容传送至XComponent持有的Surface。具体XComponent的开发流程可参考[自定义渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-xcomponent-guidelines)。
+XComponent持有一个Surface，该Surface的默认位置及大小与XComponent组件相同。在Native层获取Native XComponent实例，作为ArkTS层和Native层XComponent绑定的桥梁。利用Native XComponent提供的接口注册XComponent的生命周期和事件回调，最后通过调用[NativeWindow](/docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-window-guidelines)等接口开发自定义绘制内容，并申请和提交Buffer到图形队列，以此方式将自定义绘制内容传送至XComponent持有的Surface。具体XComponent的开发流程可参考[自定义渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/napi-xcomponent-guidelines)。
 
 在Native XComponent的事件回调中，OnSurfaceCreated()和OnSurfaceChanged()两个接口分别在Surface创建和Surface大小变化时进行回调，因此在适配不同屏幕尺寸设备时，应重点关注这两个接口。
 
@@ -234,7 +234,7 @@ void AppNapi::OnSurfaceChanged(OH_NativeXComponent* component, void* window)
 
 ###安全区避让
 
-游戏类应用主要采用沉浸式界面设计。[开发应用沉浸式效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-develop-apply-immersive-effects)主要是通过调整状态栏、应用界面和导航条的显示效果，以减少这些系统界面给用户带来的突兀感，从而提供更好的UI体验。
+游戏类应用主要采用沉浸式界面设计。[开发应用沉浸式效果](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-develop-apply-immersive-effects)主要是通过调整状态栏、应用界面和导航条的显示效果，以减少这些系统界面给用户带来的突兀感，从而提供更好的UI体验。
 
 为了获得更好的游戏体验，游戏应用不仅需要设置沉浸式界面，还需要扩展布局并隐藏避让区，即隐藏状态栏和导航条（示意图所示的导航条在真实使用场景下已隐藏）。界面元素示意图如下所示：
 

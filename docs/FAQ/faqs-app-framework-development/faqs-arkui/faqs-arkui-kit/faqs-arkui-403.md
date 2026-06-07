@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation管理的页面生命周期是什么，需要什么回调监听页面生命周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-403
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-403
 ---
 
 
@@ -9,6 +9,6 @@ Navigation组件作为路由容器的实现，其生命周期承载在[NavDestin
 
 **参考链接**
 
-[组件导航(Navigation) (推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)
+[组件导航(Navigation) (推荐)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)
 
-[页面生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navdestination#页面生命周期)
+[页面生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-navdestination#页面生命周期)

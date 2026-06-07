@@ -1,7 +1,7 @@
 ---
 title: 交互事件归一
 sidebar_label: 交互事件归一
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-interaction-events-0000001795531217
+original_url: /docs/design/hmi/interaction-events
 format: md
 ---
 
@@ -217,7 +217,7 @@ format: md
 
 ### 交互事件归一接口
 
-为了保障用户在不同交互设备上的交互体一致，同时又尽量减少不同输入设备适配工作，建议使用交互事件归一接口。该接口涵盖用户基础的交互任务，并遵循了用户在触控、鼠标、触控板等设备的交互习惯。请参阅[交互事件归一开发文档](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction)。
+为了保障用户在不同交互设备上的交互体一致，同时又尽量减少不同输入设备适配工作，建议使用交互事件归一接口。该接口涵盖用户基础的交互任务，并遵循了用户在触控、鼠标、触控板等设备的交互习惯。请参阅[交互事件归一开发文档](/docs/dev/app-dev/multi-device/bpta-multi-interaction)。
 
 如用户有自定义响应的需求，也可根据开发文档中提供的接口做相应的修改。
 

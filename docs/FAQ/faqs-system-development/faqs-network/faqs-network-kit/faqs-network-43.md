@@ -1,7 +1,7 @@
 ---
 format: md
 title: "能否通过httpResponse的result拿到一个加密内容的数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-43
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-43
 ---
 
 

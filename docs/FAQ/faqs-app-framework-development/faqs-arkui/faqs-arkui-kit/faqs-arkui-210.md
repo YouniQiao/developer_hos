@@ -1,6 +1,6 @@
 ---
 title: "如何在自定义弹窗中再次弹窗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-210
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-210
 format: md
 ---
 

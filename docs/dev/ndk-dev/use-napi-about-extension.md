@@ -1,15 +1,15 @@
 ---
 title: "使用Node-API进行扩展能力功能开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-extension
+original_url: /docs/dev/ndk-dev/use-napi-about-extension
 format: md
 ---
 
 
 ## 简介
 
-[扩展能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-data-types-interfaces#扩展能力)接口进一步扩展了Node-API的功能，提供了一些额外的接口，用于在Node-API模块中与ArkTS进行更灵活的交互和定制，这些接口可以用于创建自定义ArkTS对象等场景。
+[扩展能力](/docs/dev/ndk-dev/napi-data-types-interfaces#扩展能力)接口进一步扩展了Node-API的功能，提供了一些额外的接口，用于在Node-API模块中与ArkTS进行更灵活的交互和定制，这些接口可以用于创建自定义ArkTS对象等场景。
 
-Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
+Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
 
 本文cpp部分代码所需引用的头文件如下：
 
@@ -37,18 +37,18 @@ import { taskpool } from '@kit.ArkTS';
 | 接口 | 描述 |
 | --- | --- |
 | napi\_load\_module | 用于在Node-API模块中将abc文件作为模块加载，返回模块的命名空间，适用于需要在运行时动态加载模块或资源的应用程序，从而实现灵活的扩展和定制。 |
-| napi\_load\_module\_with\_info | 用于在Node-API中进行模块的加载，当模块加载出来之后，可以使用函数napi\_get\_property获取模块导出的变量，也可以使用napi\_get\_named\_property获取模块导出的函数，该函数可以在[新创建的ArkTS基础运行时环境](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-ark-runtime)中使用。 |
+| napi\_load\_module\_with\_info | 用于在Node-API中进行模块的加载，当模块加载出来之后，可以使用函数napi\_get\_property获取模块导出的变量，也可以使用napi\_get\_named\_property获取模块导出的函数，该函数可以在[新创建的ArkTS基础运行时环境](/docs/dev/ndk-dev/use-napi-ark-runtime)中使用。 |
 | napi\_module\_register | 有些功能可能需要通过Node-API模块来实现以获得更好的性能，通过将这些功能实现为自定义模块并注册到ArkTS环境中，可以在一定程度上提高整体的性能。 |
 
 ### 使用示例
 
 **napi\_load\_module**
 
-[使用Node-API接口在主线程中进行模块加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module)
+[使用Node-API接口在主线程中进行模块加载](/docs/dev/ndk-dev/use-napi-load-module)
 
 **napi\_load\_module\_with\_info**
 
-[使用Node-API接口进行模块加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module-with-info)
+[使用Node-API接口进行模块加载](/docs/dev/ndk-dev/use-napi-load-module-with-info)
 
 **napi\_module\_register**
 
@@ -651,7 +651,7 @@ test01();
 
 **napi\_run\_event\_loop、napi\_stop\_event\_loop**
 
-[使用扩展的Node-API接口在异步线程中运行和停止事件循环](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-event-loop)
+[使用扩展的Node-API接口在异步线程中运行和停止事件循环](/docs/dev/ndk-dev/use-napi-event-loop)
 
 ## ArkTS基础运行时环境
 
@@ -666,7 +666,7 @@ test01();
 
 **napi\_create\_ark\_runtime、napi\_destroy\_ark\_runtime**
 
-[使用Node-API接口创建ArkTS运行时环境](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-ark-runtime)
+[使用Node-API接口创建ArkTS运行时环境](/docs/dev/ndk-dev/use-napi-ark-runtime)
 
 ## 序列化和反序列化
 
@@ -756,7 +756,7 @@ hilog.info(0x0000, 'testTag', ' Node-API aboutSerialize: %{public}d', testNapi.a
 
 **napi\_call\_threadsafe\_function\_with\_priority**
 
-[使用Node-API接口从异步线程向ArkTS线程投递指定优先级和入队方式的的任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-call-threadsafe-function-with-priority)
+[使用Node-API接口从异步线程向ArkTS线程投递指定优先级和入队方式的的任务](/docs/dev/ndk-dev/use-call-threadsafe-function-with-priority)
 
 ## Sendable相关
 
@@ -1327,7 +1327,7 @@ testNapi.testNapiWrapEnhance();
 
 **napi\_create\_ark\_context、napi\_switch\_ark\_context、napi\_destroy\_ark\_context**
 
-[使用扩展的Node-API接口创建、切换和销毁上下文环境](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-context)
+[使用扩展的Node-API接口创建、切换和销毁上下文环境](/docs/dev/ndk-dev/use-napi-about-context)
 
 ## napi提供通过指针访问ArkTS String内存数据的功能
 
@@ -1341,7 +1341,7 @@ testNapi.testNapiWrapEnhance();
 
 **napi\_get\_buffer\_string\_utf16\_in\_critical\_scope**
 
-[使用扩展的Node-API接口创建和销毁临界区作用域及访问字符串内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-critical)
+[使用扩展的Node-API接口创建和销毁临界区作用域及访问字符串内容](/docs/dev/ndk-dev/use-napi-about-critical)
 
 ## napi实现临界区作用域
 
@@ -1356,7 +1356,7 @@ testNapi.testNapiWrapEnhance();
 
 **napi\_open\_critical\_scope、napi\_close\_critical\_scope**
 
-[使用扩展的Node-API接口创建和销毁临界区作用域及访问字符串内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-critical)
+[使用扩展的Node-API接口创建和销毁临界区作用域及访问字符串内容](/docs/dev/ndk-dev/use-napi-about-critical)
 
 ## napi支持创建轻量级的强引用对象
 
@@ -1372,7 +1372,7 @@ testNapi.testNapiWrapEnhance();
 
 **napi\_create\_strong\_reference、napi\_delete\_strong\_reference、napi\_get\_value\_strong\_reference**
 
-[使用扩展的Node-API接口创建、销毁和使用强引用对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-strong-reference)
+[使用扩展的Node-API接口创建、销毁和使用强引用对象](/docs/dev/ndk-dev/use-napi-about-strong-reference)
 
 ## napi支持创建Sendable的强引用
 
@@ -1388,7 +1388,7 @@ testNapi.testNapiWrapEnhance();
 
 **napi\_create\_strong\_sendable\_reference、napi\_delete\_strong\_sendable\_reference、napi\_get\_strong\_sendable\_reference\_value**
 
-[使用扩展的Node-API接口创建、销毁和使用Sendable强引用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-sendable-reference)
+[使用扩展的Node-API接口创建、销毁和使用Sendable强引用](/docs/dev/ndk-dev/use-napi-about-sendable-reference)
 
 ## napi支持抛出错误对象的code属性类型为number的ArkTS Error
 
@@ -1402,4 +1402,4 @@ testNapi.testNapiWrapEnhance();
 
 **napi\_throw\_business\_error**
 
-[使用扩展的Node-API接口抛出ArkTS异常](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-error)
+[使用扩展的Node-API接口抛出ArkTS异常](/docs/dev/ndk-dev/use-napi-about-error)

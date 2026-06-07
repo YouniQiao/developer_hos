@@ -1,6 +1,6 @@
 ---
 title: "使用WebGL绘制图形"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/webgl-2d-guidelines
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-webgl/webgl-2d-guidelines
 format: md
 ---
 

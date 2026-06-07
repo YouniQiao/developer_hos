@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-preparations
+original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-preparations
 format: md
 ---
 

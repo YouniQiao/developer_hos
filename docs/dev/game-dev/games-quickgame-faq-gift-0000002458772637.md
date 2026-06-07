@@ -1,6 +1,6 @@
 ---
 title: "礼包"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-gift-0000002458772637
+original_url: /docs/dev/game-dev/games-quickgame-faq-gift-0000002458772637
 format: md
 ---
 

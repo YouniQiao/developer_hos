@@ -1,8 +1,8 @@
 ---
 title: "地图"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-map-components
+original_url: /docs/dev/atomic-dev/ascf/components-map-components/components-map-components
 format: md
 ---
 
 
-* **[Map](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-map)**
+* **[Map](/docs/dev/atomic-dev/ascf/components-map-components/components-map)**

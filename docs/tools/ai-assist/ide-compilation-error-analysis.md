@@ -1,7 +1,7 @@
 ---
 title: "编译报错智能分析"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-compilation-error-analysis
+original_url: /docs/tools/ai-assist/ide-compilation-error-analysis
 format: md
 ---
 

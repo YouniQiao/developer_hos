@@ -1,7 +1,7 @@
 ---
 format: md
 title: "给组件设置responseRegion属性向上下扩展热区，为什么上半部分可以响应点击，下半部分不能响应点击"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-382
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-382
 ---
 
 
@@ -46,4 +46,4 @@ struct Index {
 
 **参考链接**
 
-[Z序控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-stack-layout#z序控制)
+[Z序控制](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout/arkts-layout-development-stack-layout#z序控制)

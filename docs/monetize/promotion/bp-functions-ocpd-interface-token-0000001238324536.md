@@ -1,7 +1,7 @@
 ---
 title: "获取Token"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-token-0000001238324536
+original_url: /docs/monetize/promotion/bp-functions-ocpd-interface-token-0000001238324536
 format: md
 ---
 
@@ -27,8 +27,8 @@ format: md
 | 参数名称 | 必选(M)/可选(O) | 数据类型 | 参数说明 |
 | --- | --- | --- | --- |
 | grant\_type | M | String(256) | 固定传入“client\_credentials”。 |
-| client\_id | M | String(256) | 客户端ID，即[创建API客户端](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)中生成的“客户端ID”。 |
-| client\_secret | M | String(2048) | 客户端密钥，即[创建API客户端](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)中生成的“密钥”。 |
+| client\_id | M | String(256) | 客户端ID，即[创建API客户端](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)中生成的“客户端ID”。 |
+| client\_secret | M | String(2048) | 客户端密钥，即[创建API客户端](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)中生成的“密钥”。 |
 
 ## 请求示例
 

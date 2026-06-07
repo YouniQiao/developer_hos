@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "清除跨设备场景下的重复通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-distributed-messageid
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-distributed/notification-distributed-messageid
 format: md
 ---
 

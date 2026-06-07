@@ -1,6 +1,6 @@
 ---
 title: "使用扩展的Node-API接口创建对ArkTS对象的Sendable强引用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-sendable-reference
+original_url: /docs/dev/ndk-dev/use-napi-about-sendable-reference
 format: md
 ---
 
@@ -316,8 +316,8 @@ HarmonyOS的API提供进程内跨ArkTS线程共享的强引用能力。相较于
 
 ## 注意事项
 
-1. 只能为[Sendable对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable支持的数据类型)创建napi\_sendable\_ref。
+1. 只能为[Sendable对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable支持的数据类型)创建napi\_sendable\_ref。
 2. napi\_sendable\_ref可跨ArkTS线程使用，在多线程操作时，调用者需自己保证释放时机，防止出现释放后使用的问题。
 3. 同一进程内，同时存活的napi\_sendable\_ref最大数量为51200个。
 4. napi\_sendable\_ref与其他引用的类型不同，因此不可将napi\_ref、napi\_strong\_ref等其他引用强转成napi\_sendable\_ref。napi\_delete\_strong\_sendable\_reference和napi\_get\_strong\_sendable\_reference\_value接口仅允许接收由napi\_create\_strong\_sendable\_reference创建的napi\_sendable\_ref。
-5. 在使用napi\_create\_strong\_sendable\_reference、napi\_get\_strong\_sendable\_reference\_value和napi\_delete\_strong\_sendable\_reference接口时，调用者需要保证传入的env参数是当前调用接口的ArkTS线程环境对象，避免将其他ArkTS线程的env作为参数传入导致出现[多线程安全问题](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ark-runtime-detection#section19357830121120)。
+5. 在使用napi\_create\_strong\_sendable\_reference、napi\_get\_strong\_sendable\_reference\_value和napi\_delete\_strong\_sendable\_reference接口时，调用者需要保证传入的env参数是当前调用接口的ArkTS线程环境对象，避免将其他ArkTS线程的env作为参数传入导致出现[多线程安全问题](/docs/quality/stability-ark-runtime-detection#section19357830121120)。

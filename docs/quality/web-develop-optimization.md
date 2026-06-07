@@ -1,6 +1,6 @@
 ---
 title: "Web加载性能优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-develop-optimization
+original_url: /docs/quality/web-develop-optimization
 ---
 
 
@@ -1353,7 +1353,7 @@ struct Index {
    ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/ets/pages/ByteCodeCache.ets#L31-L79">ByteCodeCache.ets</a></div>
 
-案例三：调用Native接口 `int32\_t OH\_ArkWeb\_RegisterCustomSchemes(const char \*scheme, int32\_t option)`，实现自定义协议的JavaScript生成字节码缓存。通过网络拦截接口拦截Web组件发出的请求。示例代码请参考[拦截Web组件发起的网络请求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-scheme-handler)。具体步骤如下：
+案例三：调用Native接口 `int32\_t OH\_ArkWeb\_RegisterCustomSchemes(const char \*scheme, int32\_t option)`，实现自定义协议的JavaScript生成字节码缓存。通过网络拦截接口拦截Web组件发出的请求。示例代码请参考[拦截Web组件发起的网络请求](/docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-scheme-handler)。具体步骤如下：
 
 1. 注册三方协议配置时，传入 `ARKWEB\_SCHEME\_OPTION\_CODE\_CACHE\_ENABLED` 参数。
 
@@ -2233,7 +2233,7 @@ extern "C" __attribute__((constructor)) void RegisterEntryModule(void) { napi_mo
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/LoadPerformanceInWeb/entry/src/main/cpp/hello.cpp#L2-L241">hello.cpp</a></div>
 
-Native侧业务代码entry/src/main/cpp/jsbridge\_object.h和entry/src/main/cpp/jsbridge\_object.cpp详见[应用侧与前端页面的相互调用(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-ndk-jsbridge)。
+Native侧业务代码entry/src/main/cpp/jsbridge\_object.h和entry/src/main/cpp/jsbridge\_object.cpp详见[应用侧与前端页面的相互调用(C/C++)](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/arkweb-ndk-jsbridge)。
 
 runJS.html作为应用前端页面：
 

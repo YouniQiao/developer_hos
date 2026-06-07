@@ -1,6 +1,6 @@
 ---
 title: "NFC"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-nfc
+original_url: /docs/dev/atomic-dev/atomic-nfc/atomic-nfc
 format: md
 ---
 

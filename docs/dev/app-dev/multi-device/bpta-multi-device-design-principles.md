@@ -1,7 +1,7 @@
 ---
 title: "多设备体验设计"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-design-principles
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-design-principles
 format: md
 ---
 
@@ -22,4 +22,4 @@ format: md
 
 UX设计原则应该考虑多设备的“差异性”、“一致性”、“灵活性”和“兼容性”。
 
-详细规范请参见[设计理念](https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445)。对应到具体的垂域案例设计，请参见[应用设计最佳实践](https://developer.huawei.com/consumer/cn/doc/design-guides/practices-overview-0000001746498066)。
+详细规范请参见[设计理念](/docs/design/general-design-basics/design-concepts)。对应到具体的垂域案例设计，请参见[应用设计最佳实践](/docs/design/app-design-practices/overview)。

@@ -1,7 +1,7 @@
 ---
 title: 分段按钮
 sidebar_label: 分段按钮
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/segmentbutton-0000001929853292
+original_url: /docs/design/components/selection-components/segment-button
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "服务动态授权码Button"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/scenario-fusion-button-atomic-getservicecode
+original_url: /docs/dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-getservicecode
 format: md
 ---
 
@@ -19,8 +19,8 @@ format: md
 
 ## 前提条件
 
-* 参见[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-preparations)。
-* 申请并[获取服务动态权益](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-timeline#section592010820304)。
+* 参见[开发准备](/docs/dev/app-dev/application-services/scenario-fusion-preparations)。
+* 申请并[获取服务动态权益](/docs/dev/atomic-dev/atomic-push-development/push-as-timeline#section592010820304)。
 * 开发者使用的服务动态场景支持以前端服务动态授权码Button获取code。
 
 ## 约束与限制
@@ -88,7 +88,7 @@ format: md
    ![](./img/03079423.png)
 
    * openType参数填写"functionalButtonComponentManager.OpenType.REQUEST\_SUBSCRIBE\_MESSAGE"指定Button为服务动态授权码类型。
-   * subSceneId参数在服务动态授权码场景中是必填的，参考[服务动态场景模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-timeline#section442012142311)。
+   * subSceneId参数在服务动态授权码场景中是必填的，参考[服务动态场景模板](/docs/dev/atomic-dev/atomic-push-development/push-as-timeline#section442012142311)。
    * controller参数必须对应填写"new functionalButtonComponentManager.FunctionalButtonController().onRequestSubscribeMessage"。
    * 可使用自定义Modifier设置按钮样式，参考[示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-functionalbuttoncomponentmanager#示例一场景化button使用自定义modifier设置按钮样式)。
 

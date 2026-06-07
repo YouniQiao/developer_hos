@@ -1,10 +1,10 @@
 ---
 title: "API参考"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-references
+original_url: /docs/dev/atomic-dev/ascf/ascf-references/ascf-references
 format: md
 ---
 
 
-* **[框架](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/framework)**
-* **[组件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components)**
-* **[API](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis)**
+* **[框架](/docs/dev/atomic-dev/ascf/framework/framework)**
+* **[组件](/docs/dev/atomic-dev/ascf/components/components)**
+* **[API](/docs/dev/atomic-dev/ascf/apis/apis)**

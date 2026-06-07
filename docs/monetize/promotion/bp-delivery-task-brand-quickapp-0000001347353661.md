@@ -1,7 +1,7 @@
 ---
 title: "投放快应用任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-brand-quickapp-0000001347353661
+original_url: /docs/monetize/promotion/bp-delivery-task-brand-quickapp-0000001347353661
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ![](./img/note_3.0-zh-cn_51fd4453bfbf.png) 
 
-投放快应用的搜索和推荐任务，参考：[投放推荐任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-recommend-0000001337110797)、[投放搜索任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-search-0000001280324781)。
+投放快应用的搜索和推荐任务，参考：[投放推荐任务](/docs/monetize/promotion/bp-delivery-task-recommend-0000001337110797)、[投放搜索任务](/docs/monetize/promotion/bp-delivery-task-search-0000001280324781)。
 
 ## 成功案例
 

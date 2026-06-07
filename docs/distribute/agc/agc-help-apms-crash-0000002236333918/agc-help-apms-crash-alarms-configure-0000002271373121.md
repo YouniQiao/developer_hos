@@ -1,6 +1,6 @@
 ---
 title: "配置告警"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-crash-alarms-configure-0000002271373121
+original_url: /docs/distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-alarms-configure-0000002271373121
 format: md
 ---
 

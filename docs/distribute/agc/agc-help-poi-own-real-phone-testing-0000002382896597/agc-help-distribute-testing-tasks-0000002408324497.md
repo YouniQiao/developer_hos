@@ -1,6 +1,6 @@
 ---
 title: "下发测试任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-distribute-testing-tasks-0000002408324497
+original_url: /docs/distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-distribute-testing-tasks-0000002408324497
 format: md
 ---
 

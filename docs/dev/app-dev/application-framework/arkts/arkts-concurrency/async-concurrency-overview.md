@@ -1,6 +1,6 @@
 ---
 title: "异步并发 (Promise和async/await)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/async-concurrency-overview
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/async-concurrency-overview
 format: md
 ---
 

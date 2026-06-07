@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "IAP Kit接入规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-access-specifications
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-access-specifications
 format: md
 ---
 

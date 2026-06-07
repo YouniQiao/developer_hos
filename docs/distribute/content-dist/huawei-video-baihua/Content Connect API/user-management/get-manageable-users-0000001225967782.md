@@ -1,7 +1,7 @@
 ---
 title: "获取可管理用户"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/get-manageable-users-0000001225967782
+original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/user-management/get-manageable-users-0000001225967782
 ---
 
 

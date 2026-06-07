@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取Native侧printf等方法打印的信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-16
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-16
 ---
 
 

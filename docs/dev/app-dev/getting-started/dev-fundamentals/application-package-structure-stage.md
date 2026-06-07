@@ -1,6 +1,6 @@
 ---
 title: "Stage模型应用程序包结构"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-stage
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage
 ---
 
 为了让开发者能对应用程序包在不同阶段的形态有更加清晰的认知，分别对开发态、编译态、发布态的应用程序结构展开介绍。
@@ -22,9 +22,9 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appl
 
 | 文件类型 | 说明 |
 | --- | --- |
-| 配置文件 | 包括应用级配置信息、以及Module级配置信息：  - **AppScope > app.json5**：[app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)，用于声明应用的全局配置信息，比如应用Bundle名称、应用名称、应用图标、应用版本号等。  - **ModuleName > src > main > module.json5**：[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)，用于声明Module基本信息、支持的设备类型、所含的组件信息、运行所需申请的权限等。 |
+| 配置文件 | 包括应用级配置信息、以及Module级配置信息：  - **AppScope > app.json5**：[app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file)，用于声明应用的全局配置信息，比如应用Bundle名称、应用名称、应用图标、应用版本号等。  - **ModuleName > src > main > module.json5**：[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)，用于声明Module基本信息、支持的设备类型、所含的组件信息、运行所需申请的权限等。 |
 | ArkTS源码文件 | **ModuleName > src > main > ets**：用于存放Module的ArkTS源码文件（.ets文件）。 |
-| 资源文件 | 包括应用级资源文件、以及Module级资源文件，支持图形、多媒体、字符串、布局文件等，详见[资源分类与访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access)。  - **AppScope > resources** ：用于存放应用需要用到的资源文件。  - **ModuleName > src > main > resources** ：用于存放该Module需要用到的资源文件。 |
+| 资源文件 | 包括应用级资源文件、以及Module级资源文件，支持图形、多媒体、字符串、布局文件等，详见[资源分类与访问](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access)。  - **AppScope > resources** ：用于存放应用需要用到的资源文件。  - **ModuleName > src > main > resources** ：用于存放该Module需要用到的资源文件。 |
 | 其他配置文件 | 用于编译构建，包括构建配置文件、编译构建任务脚本、混淆规则文件、依赖的共享包信息等。  - **build-profile.json5**：[工程级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)或[Module级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile)的构建配置文件，包括[应用签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)、产品配置等。  - **hvigorfile.ts**：工程级或Module级的编译构建任务脚本，开发者可以自定义编译构建工具版本、控制构建行为的配置参数。  - **[obfuscation-rules.txt](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation#section760533133313)**：混淆规则文件。混淆开启后，在使用Release模式进行编译时，会对代码进行编译、混淆及压缩处理，保护代码资产。  - **[oh-package.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-oh-package-json5)**：用于存放依赖库的信息，包括所依赖的三方库和共享包。 |
 
 ## 编译态包结构
@@ -43,7 +43,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appl
 
 ## 发布态包结构
 
-每个应用中至少包含一个.hap文件，可能包含若干个.hsp文件、也可能不含，一个应用中的所有.hap与.hsp文件合在一起称为**Bundle**，其对应的bundleName是应用的唯一标识（详见[app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)中的bundleName标签）。
+每个应用中至少包含一个.hap文件，可能包含若干个.hsp文件、也可能不含，一个应用中的所有.hap与.hsp文件合在一起称为**Bundle**，其对应的bundleName是应用的唯一标识（详见[app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file)中的bundleName标签）。
 
 当应用发布上架到应用市场时，需要将Bundle打包为一个.app后缀的文件用于上架，这个.app文件称为**App Pack**（Application Package），与此同时，DevEco Studio工具会自动生成一个**pack.info**文件。**pack.info**文件描述了App Pack中每个HAP和HSP的属性，包含APP中的bundleName和versionCode信息、以及Module中的name、type和abilities等信息。
 

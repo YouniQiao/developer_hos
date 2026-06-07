@@ -1,6 +1,6 @@
 ---
 title: "组件模板与数据绑定"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-template
+original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-template
 format: md
 ---
 

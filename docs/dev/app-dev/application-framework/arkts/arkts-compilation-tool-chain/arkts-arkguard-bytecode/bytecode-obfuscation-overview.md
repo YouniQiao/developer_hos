@@ -1,6 +1,6 @@
 ---
 title: "ArkGuard字节码混淆工具概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-overview
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-overview
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 相比源码混淆，字节码混淆的混淆对象是字节码文件。
 
-* [ArkGuard字节码混淆原理及功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation)：说明混淆能力范围（包括默认混淆能力）、混淆流程机制以及各种混淆选项和保留选项的使用方法、混淆规则的合并策略。另外，介绍了ArkGuard在语言环境下的局限性。
-* [ArkGuard字节码混淆开启指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-guide)：提供实操指南，包括如何开启字节码混淆功能、设置自定义混淆规则，以及如何查看混淆效果和进行报错栈还原。
-* [不同包类型的字节码混淆建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-practice)：针对不同类型的包（HAP、HAR、HSP）提供混淆策略建议。
-* [ArkGuard字节码混淆常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-questions)：说明[字节码混淆与源码混淆差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-questions#字节码混淆与源码混淆差异)，总结常见的功能异常情况及其排查方法，并提供典型报错案例的解决方案，帮助开发者快速定位和解决混淆过程中遇到的问题。
+* [ArkGuard字节码混淆原理及功能](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation)：说明混淆能力范围（包括默认混淆能力）、混淆流程机制以及各种混淆选项和保留选项的使用方法、混淆规则的合并策略。另外，介绍了ArkGuard在语言环境下的局限性。
+* [ArkGuard字节码混淆开启指南](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-guide)：提供实操指南，包括如何开启字节码混淆功能、设置自定义混淆规则，以及如何查看混淆效果和进行报错栈还原。
+* [不同包类型的字节码混淆建议](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-practice)：针对不同类型的包（HAP、HAR、HSP）提供混淆策略建议。
+* [ArkGuard字节码混淆常见问题](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-questions)：说明[字节码混淆与源码混淆差异](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-questions#字节码混淆与源码混淆差异)，总结常见的功能异常情况及其排查方法，并提供典型报错案例的解决方案，帮助开发者快速定位和解决混淆过程中遇到的问题。

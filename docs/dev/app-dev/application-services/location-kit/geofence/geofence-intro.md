@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "地理围栏简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-intro
+original_url: /docs/dev/app-dev/application-services/location-kit/geofence/geofence-intro
 format: md
 ---
 

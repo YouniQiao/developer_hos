@@ -1,7 +1,7 @@
 ---
 title: "华为软件技术有限公司的子数据处理者"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/hwsubprocessor
+original_url: /docs/distribute/app-dist/app-market/x20240513/hwsubprocessor
 format: md
 ---
 

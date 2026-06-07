@@ -1,6 +1,6 @@
 ---
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-personal-data-processing-notic
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-personal-data-processing-notic
 format: md
 ---
 

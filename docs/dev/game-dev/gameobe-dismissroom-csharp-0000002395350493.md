@@ -1,6 +1,6 @@
 ---
 title: "解散房间"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-dismissroom-csharp-0000002395350493
+original_url: /docs/dev/game-dev/gameobe-dismissroom-csharp-0000002395350493
 format: md
 ---
 

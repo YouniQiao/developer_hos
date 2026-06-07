@@ -1,8 +1,8 @@
 ---
 title: "导航"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-navigation-components
+original_url: /docs/dev/atomic-dev/ascf/components-navigation-components/components-navigation-components
 format: md
 ---
 
 
-* **[navigator](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-navigator)**
+* **[navigator](/docs/dev/atomic-dev/ascf/components-navigation-components/components-navigator)**

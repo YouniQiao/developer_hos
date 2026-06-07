@@ -1,6 +1,6 @@
 ---
 title: "uni-App转换ASCF常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-uniapp-ascf
+original_url: /docs/dev/atomic-dev/ascf/faqs-others/faqs-uniapp-ascf
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 请根据运行日志查看具体错误信息，修改后重新运行；具体日志查看方法请参考[查看元服务日志](#如何查看分析元服务的日志)。
 
-如果页面已经运行起来了，可以通过[调试定位](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/debug-ascf-code)具体问题，通过使用 ascf debugger start 启动调试工具，断点调试解决问题。
+如果页面已经运行起来了，可以通过[调试定位](/docs/dev/atomic-dev/ascf/ascf-development-process/debug-ascf-code)具体问题，通过使用 ascf debugger start 启动调试工具，断点调试解决问题。
 
 ## 如何查看、分析元服务的日志
 
@@ -43,7 +43,7 @@ format: md
 
 发布报错：hvigor ERROR: Invalid storeFile value. Make sure it is not null or empty. The file must be included.
 
-如果发生在应用运行、发行阶段。可能是构建时候证书缺少或者配置不对。参考[发布元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-guide-0000002293651514)进行证书申请。
+如果发生在应用运行、发行阶段。可能是构建时候证书缺少或者配置不对。参考[发布元服务](/docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-guide-0000002293651514)进行证书申请。
 
 ### 发行报错Unable to find the product 'release'
 
@@ -94,7 +94,7 @@ web-view组件渲染空白，不能展示网页，可能是因为网络请求报
 
 使用Map组件无法展示地图，获取位置相关API使用报错，可参考以下步骤排查：
 
-1. Map 和相关定位需要[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)进行权限申请。具体可以参考[Map Kit开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)，在“项目设置 &gt; API管理”开启定位服务、位置服务、地图服务。
+1. Map 和相关定位需要[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)进行权限申请。具体可以参考[Map Kit开发准备](/docs/dev/app-dev/application-services/map-config-agc)，在“项目设置 &gt; API管理”开启定位服务、位置服务、地图服务。
 2. 在“harmony-mp-configs/entry/src/main/module.json5”的“requestPermissions”字段里添加ohos.permission.LOCATION和 ohos.permission.APPROXIMATELY\_LOCATION。
 3. 元服务不允许未经用户同意发起定位。在请求位置之前需要获取用户授权。伪代码如下：
 
@@ -163,7 +163,7 @@ web-view组件渲染空白，不能展示网页，可能是因为网络请求报
   处理方案：检查在其他操作系统的相关描述旁，是否有HarmonyOS。常见的情况是直接把其他操作平台的隐私协议直接上传，没有增加HarmonyOS字样，未针对HarmonyOS平台做适配，导致上架被驳回。
 * 存在自行构造的登录页面，不符合华为应用市场审核标准。
 
-  元服务的登录要求可以参考阅读[使用华为账号登录 静默登录](https://developer.huawei.com/consumer/cn/doc/design-guides/accounts-0000001967444380)、[开发者可以使用自行设计的登录界面吗](https://developer.huawei.com/consumer/cn/doc/atomic-faqs/faqs-common-account-5)。
+  元服务的登录要求可以参考阅读[使用华为账号登录 静默登录](/docs/design/atomic-service-design/best-practices/accounts)、[开发者可以使用自行设计的登录界面吗](https://developer.huawei.com/consumer/cn/doc/atomic-faqs/faqs-common-account-5)。
 
   如果需要账号登录，必须使用uni.login登录，不得绕过此步骤自行使用账号密码登录。建议申请获取用户手机号权限，然后关联自己的账号系统。在应用合适的时机调用登录接口以换取UnionID，先标识用户为华为用户，在操作关键步骤时接入现有账号，例如获取手机号并关联至现有账号。同时务必提供用户注销功能入口，以便用户自行取消注册，否则可能会被驳回。
 

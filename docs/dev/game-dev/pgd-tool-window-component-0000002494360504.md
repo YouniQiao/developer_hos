@@ -1,6 +1,6 @@
 ---
 title: "Component窗口"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-window-component-0000002494360504
+original_url: /docs/dev/game-dev/pgd-tool-window-component-0000002494360504
 format: md
 ---
 

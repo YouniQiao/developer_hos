@@ -1,6 +1,6 @@
 ---
 title: "窗口开发术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology
 format: md
 ---
 
@@ -36,14 +36,14 @@ format: md
 
   一般用于在已有全屏任务运行的基础上，临时处理另一个任务，或短时间多任务并行使用。如浏览网页的同时回复消息。
 
-  相关参考：[智慧多窗简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro)、[智慧多窗最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-window-practice)。
+  相关参考：[智慧多窗简介](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-intro)、[智慧多窗最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-window-practice)。
 * 全局悬浮窗是指一种特殊的应用辅助窗口，具备在应用主窗口和对应Ability退至后台后仍然可以在前台显示的能力。
 
   全局悬浮窗可以用于应用退至后台后，使用小窗继续显示UI，例如音乐应用用于显示桌面歌词等。
 
   应用在创建全局悬浮窗前，需要申请对应的权限。
 
-相关参考：[设置全局悬浮窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage#设置全局悬浮窗受限开放)。
+相关参考：[设置全局悬浮窗](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage#设置全局悬浮窗受限开放)。
 
 ## 自由窗口
 
@@ -53,7 +53,7 @@ format: md
 
 启动新的自由窗口时，默认以一定间距在上一个窗口的右下方层叠显示。
 
-每个自由窗口默认会在窗口上方显示窗口标题栏，标题栏左侧显示应用图标，右侧显示三键控制按钮（窗口最大化/还原、窗口最小化和关闭窗口），且窗口标题栏支持额外的[沉浸式配置](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive#section359241062916)。
+每个自由窗口默认会在窗口上方显示窗口标题栏，标题栏左侧显示应用图标，右侧显示三键控制按钮（窗口最大化/还原、窗口最小化和关闭窗口），且窗口标题栏支持额外的[沉浸式配置](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive#section359241062916)。
 
 自由窗口可以通过拖动窗口边缘调节窗口大小，可以通过拖动标题栏移动窗口位置。
 
@@ -103,11 +103,11 @@ format: md
 
 应用窗口进入沉浸式布局之后，页面的所有组件布局范围从安全区域扩展为整个窗口。可以通过[isImmersiveLayout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#isimmersivelayout20)判断当前窗口是否处于沉浸式布局。
 
-多设备场景下不同窗口形态的沉浸式开发与实现可以参考[窗口沉浸式最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive)。
+多设备场景下不同窗口形态的沉浸式开发与实现可以参考[窗口沉浸式最佳实践](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive)。
 
 ## 全局坐标系
 
-全局坐标系是指在设备连接[扩展屏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-terminology#扩展屏)（多物理屏幕）的场景下，以主屏幕左上角为原点(0, 0)，屏幕右侧为x轴正方向，屏幕下侧为y轴正方向，对窗口、指针等对象的位置进行统一描述的坐标体系。
+全局坐标系是指在设备连接[扩展屏](/docs/dev/app-dev/application-framework/arkui/display-manager/display-terminology#扩展屏)（多物理屏幕）的场景下，以主屏幕左上角为原点(0, 0)，屏幕右侧为x轴正方向，屏幕下侧为y轴正方向，对窗口、指针等对象的位置进行统一描述的坐标体系。
 
 在该坐标系中，所有物理屏幕被映射到同一连续的虚拟坐标空间内，各类窗口操作、坐标转换及窗口矩形变化事件均基于该坐标空间进行计算和回调。
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "过度绘制调试使用指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/overdraw-dfx-guidelines
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/overdraw-dfx-guidelines
 format: md
 ---
 

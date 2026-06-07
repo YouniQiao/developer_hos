@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在display.on('change')监听回调中，无法使用Window实例获取更新后的窗口大小"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-368
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-368
 ---
 
 

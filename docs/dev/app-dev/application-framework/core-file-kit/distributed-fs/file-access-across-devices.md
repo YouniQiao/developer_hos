@@ -1,16 +1,16 @@
 ---
 title: "跨设备文件共享和访问"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-access-across-devices
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/distributed-fs/file-access-across-devices
 format: md
 ---
 
 
-分布式文件系统为应用提供了跨设备文件访问的能力，开发者在两个设备上安装同一应用时，通过[基础文件接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)，可跨设备读写另一个设备上该应用[分布式目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)（/data/storage/el2/distributedfiles/）下的文件。例如：多设备数据流转的场景，设备组网互联之后，设备A上的应用可访问设备B上的同应用分布式目录下的文件，当期望应用文件被其他设备访问时，只需将文件移动到分布式目录即可。
+分布式文件系统为应用提供了跨设备文件访问的能力，开发者在两个设备上安装同一应用时，通过[基础文件接口](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)，可跨设备读写另一个设备上该应用[分布式目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)（/data/storage/el2/distributedfiles/）下的文件。例如：多设备数据流转的场景，设备组网互联之后，设备A上的应用可访问设备B上的同应用分布式目录下的文件，当期望应用文件被其他设备访问时，只需将文件移动到分布式目录即可。
 
 ![](./img/3e761267.png)
 
-* [distributedfiles](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用文件目录与应用文件路径)目录为本应用在多设备间共享文件的合集。为避免误删其他设备生成的文件，应用在执行删除操作前，请务必确认操作是否符合预期。
-* [/data/storage/el2/distributedfiles/.remote\_share/](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)目录由系统自动创建并管理。开发者不得手动删除该目录下的文件。该目录中的文件与应用的base目录直接映射（不占用额外存储空间），任何删除操作可能导致base目录中的原始文件永久丢失。
+* [distributedfiles](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用文件目录与应用文件路径)目录为本应用在多设备间共享文件的合集。为避免误删其他设备生成的文件，应用在执行删除操作前，请务必确认操作是否符合预期。
+* [/data/storage/el2/distributedfiles/.remote\_share/](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)目录由系统自动创建并管理。开发者不得手动删除该目录下的文件。该目录中的文件与应用的base目录直接映射（不占用额外存储空间），任何删除操作可能导致base目录中的原始文件永久丢失。
 
 ## 开发步骤
 
@@ -19,7 +19,7 @@ format: md
    将需要跨设备访问的两个设备登录同一账号，保证设备蓝牙和Wi-Fi功能开启，蓝牙无需互连，Wi-Fi无需接入同一个局域网。
 2. 授权分布式数据同步权限。
 
-   分布式数据同步权限的授权方式为user\_grant，因此需要调用requestPermissionsFromUser接口，以动态弹窗的方式向用户申请授权。示例中的context的获取方式请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+   分布式数据同步权限的授权方式为user\_grant，因此需要调用requestPermissionsFromUser接口，以动态弹窗的方式向用户申请授权。示例中的context的获取方式请参见[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
    ```
    import { common, abilityAccessCtrl } from '@kit.AbilityKit';
@@ -49,7 +49,7 @@ format: md
 
    同一应用不同设备之间实现跨设备文件访问，只需要将对应的文件放在应用沙箱的分布式目录即可。
 
-   设备A上在分布式目录下创建测试文件，并写入内容。示例中的context的获取方式请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+   设备A上在分布式目录下创建测试文件，并写入内容。示例中的context的获取方式请参见[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
    ```
    import { fileIo } from '@kit.CoreFileKit';

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "调用window实例的setWindowSystemBarProperties接口设置窗口状态栏和导航栏的高亮属性时不生效"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-195
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-195
 ---
 
 

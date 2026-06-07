@@ -1,7 +1,7 @@
 ---
 title: "步骤4 创建服务号"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/create_service_account-0000002508942747
+original_url: /docs/distribute/service-dist/huawei-service-account/merchants_enter_process-0000001053604051/create_service_account-0000002508942747
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
 ## 填写服务号信息
 
-各字段规范请参考《[服务号基本信息规范](https://developer.huawei.com/consumer/cn/doc/service/registration_rules-0000001058075206)》。信息填写完成后，点击“下一步”提交审核。
+各字段规范请参考《[服务号基本信息规范](/docs/distribute/service-dist/huawei-service-account/specification-0000001053205318/registration_rules-0000001058075206)》。信息填写完成后，点击“下一步”提交审核。
 
 ![](./img/449aa3583181.png "点击放大")
 

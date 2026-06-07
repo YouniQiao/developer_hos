@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Subpass Shading"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-subpass-shading
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-subpass-shading
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "传感器开发指导(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-guidelines
 format: md
 ---
 
@@ -30,7 +30,7 @@ format: md
 1. 新建一个工程。
 
    ![](./img/88686693.png)
-2. 配置加速度传感器权限，具体配置方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+2. 配置加速度传感器权限，具体配置方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
    ```
    "requestPermissions": [

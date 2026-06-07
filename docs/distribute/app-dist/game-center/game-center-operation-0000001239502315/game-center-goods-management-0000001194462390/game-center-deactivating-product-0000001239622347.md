@@ -1,7 +1,7 @@
 ---
 title: "激活/失效应用内商品"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-deactivating-product-0000001239622347
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347
 format: md
 ---
 

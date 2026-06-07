@@ -1,7 +1,7 @@
 ---
 title: "hilog"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/hilog
+original_url: /docs/tools/cli-tools/hilog
 format: md
 ---
 

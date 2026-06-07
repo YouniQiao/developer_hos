@@ -1,7 +1,7 @@
 ---
 title: "能力说明"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-config-ohos-guide
+original_url: /docs/tools/coding-debug/ide-hvigor-config-ohos-guide
 format: md
 ---
 

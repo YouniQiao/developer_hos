@@ -1,6 +1,6 @@
 ---
 title: "UI显示异常调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-debug
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/arkts-layout-debug
 format: md
 ---
 

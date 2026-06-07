@@ -1,7 +1,7 @@
 ---
 title: "应用接续概述"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast
+original_url: /docs/dev/app-dev/multi-device/bpta-continue-cast
 format: md
 ---
 
@@ -20,8 +20,8 @@ format: md
 * [约束限制](#section157187257261)：应用接续使用时应该满足的设备限制和使用限制。
 * [常见接续场景体验建议](#section15231331142614)：不同垂类下接续场景的接入建议，哪些场景需要接续同步内容，以及源端是否需要退出。
 * [开发步骤](#section49581955132610)：如何接入应用接续。
-* [应用接续数据迁移](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-data)：文件以及数据量较大的场景如何完成接续。
-* [常见接续最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-continue-progess)：长列表浏览、web页面浏览和媒体浏览三个场景如何完成接续。
+* [应用接续数据迁移](/docs/dev/app-dev/multi-device/bpta-continue-data)：文件以及数据量较大的场景如何完成接续。
+* [常见接续最佳实践](/docs/dev/app-dev/multi-device/bpta-application-continue-progess)：长列表浏览、web页面浏览和媒体浏览三个场景如何完成接续。
 
 ## 约束限制
 
@@ -33,7 +33,7 @@ format: md
   + 双端设备需要打开WLAN和蓝牙开关，或者在设置中的“多设备协同 > 高级”中启用“多设备协同增强服务”功能。
   + 双端设备需要在“设置”应用中开启“多设备协同 > 接续”功能。
   + 双端设备都需要安装该应用。
-  + 为了接续体验，在onContinue回调中使用wantParam传输的数据需要控制在100KB以下，大数据量请[使用分布式对象迁移数据](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-data#section1842122135815)。
+  + 为了接续体验，在onContinue回调中使用wantParam传输的数据需要控制在100KB以下，大数据量请[使用分布式对象迁移数据](/docs/dev/app-dev/multi-device/bpta-continue-data#section1842122135815)。
 * **模拟器支持**
   + 暂不支持
 
@@ -42,12 +42,12 @@ format: md
 * 自API12起，无需申请ohos.permission.DISTRIBUTED\_DATASYNC权限。
 * API11及以前版本，需要执行如下操作。
 
-1. 声明ohos.permission.DISTRIBUTED\_DATASYNC权限，详见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-2. 由于ohos.permission.DISTRIBUTED\_DATASYNC权限需要用户授权，应用需在首次启动或进入接续页面时弹窗向用户申请授权，详见[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+1. 声明ohos.permission.DISTRIBUTED\_DATASYNC权限，详见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+2. 由于ohos.permission.DISTRIBUTED\_DATASYNC权限需要用户授权，应用需在首次启动或进入接续页面时弹窗向用户申请授权，详见[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ## 常见接续场景体验建议
 
-应用接续一般用于用户长时间停留的页面，默认情况下，应用接续完成后，源端应用会自动退出。开发者可以参考[按需退出](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section18295174464318)进行配置。
+应用接续一般用于用户长时间停留的页面，默认情况下，应用接续完成后，源端应用会自动退出。开发者可以参考[按需退出](/docs/dev/app-dev/multi-device/bpta-continue-cast#section18295174464318)进行配置。
 
 不同类型的应用建议的配置项如下：
 
@@ -122,7 +122,7 @@ format: md
 
 ###配置应用启动模式类型
 
-根据业务需要配置应用启动模式类型，配置详情请参照[UIAbility组件启动模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type)。
+根据业务需要配置应用启动模式类型，配置详情请参照[UIAbility组件启动模式](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-launch-type)。
 
 ###源端保存迁移数据
 

@@ -1,6 +1,6 @@
 ---
 title: "如何利用worker子线程调用napi实现loop改写变量"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-76
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-76
 format: md
 ---
 

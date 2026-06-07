@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "条形码识别错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-6
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-6
 format: md
 ---
 

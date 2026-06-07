@@ -1,6 +1,6 @@
 ---
 title: "调试和性能分析概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-performance-profiling-overview
+original_url: /docs/dev/ndk-dev/debug-performance-profiling-overview
 format: md
 ---
 

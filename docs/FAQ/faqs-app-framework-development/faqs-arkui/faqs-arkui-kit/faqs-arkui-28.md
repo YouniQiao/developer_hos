@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何设置分组列表的圆角和间距"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-28
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-28
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "删除数字商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-delete-0000002286076748
+original_url: /docs/dev/game-dev/games-center-delete-0000002286076748
 format: md
 ---
 

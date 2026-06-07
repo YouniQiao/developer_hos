@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Webview焦点如何适配"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-14
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-14
 ---
 
 

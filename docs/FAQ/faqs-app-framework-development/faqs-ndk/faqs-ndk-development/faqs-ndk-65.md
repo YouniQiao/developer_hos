@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用napi_run_script_path接口执行包内abc文件的使用限制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-65
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-65
 ---
 
 
@@ -19,4 +19,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
    目前仅接受rawfile文件夹下的abc文件。napi\_run\_script\_path接口会直接拼接当前HAP所在的沙箱路径/data/storage/el1/bundle/。例如，传入路径为entry/resources/rawfile/main.abc，则处理后的沙箱路径为/data/storage/el1/bundle/entry/resources/rawfile/main.abc。如果使用本接口，则只可将abc文件放到rawfile文件夹下，如果直接使用沙箱路径，后续程序出现问题，则非接口问题。
 
-由于该接口的局限性，建议后续开发者直接使用JSVM来运行JS代码，可以参考：[JSVM-API简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-introduction)。
+由于该接口的局限性，建议后续开发者直接使用JSVM来运行JS代码，可以参考：[JSVM-API简介](/docs/dev/ndk-dev/jsvm-introduction)。

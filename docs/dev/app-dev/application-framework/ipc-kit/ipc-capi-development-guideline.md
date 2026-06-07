@@ -1,6 +1,6 @@
 ---
 title: "IPC与RPC通信开发指导(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-capi-development-guideline
+original_url: /docs/dev/app-dev/application-framework/ipc-kit/ipc-capi-development-guideline
 format: md
 ---
 
@@ -9,11 +9,11 @@ format: md
 
 IPC让运行在不同进程间的Proxy和Stub实现互相通信。IPC CAPI是IPC Kit提供的C语言接口。
 
-IPC CAPI接口不直接提供获取通信代理对象的能力，该功能由[Ability Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitykit-overview)提供。
+IPC CAPI接口不直接提供获取通信代理对象的能力，该功能由[Ability Kit](/docs/dev/app-dev/application-framework/ability-kit/abilitykit-overview)提供。
 
 ![](./img/4356f24a.png)
 
-进程间IPC通道的建立，请参考[Native子进程开发指导（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/capi-nativechildprocess-development-guideline)。本文重点介绍IPC CAPI的使用。
+进程间IPC通道的建立，请参考[Native子进程开发指导（C/C++）](/docs/dev/app-dev/application-framework/ability-kit/native-childprocess-development/capi-nativechildprocess-development-guideline)。本文重点介绍IPC CAPI的使用。
 
 ## 接口说明
 

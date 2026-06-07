@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API实现JS与C/C++语言交互开发流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process
+original_url: /docs/dev/ndk-dev/use-jsvm-process
 format: md
 ---
 
@@ -14,11 +14,11 @@ format: md
 
 ## 创建Native C++工程
 
-具体见[创建NDK工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-with-ndk)
+具体见[创建NDK工程](/docs/dev/ndk-dev/create-with-ndk)
 
 ## Native侧方法的实现
 
-参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process#native侧方法的实现)，以下代码提供了“使用JSVM-API实现JS与C/C++语言交互开发流程”Native侧方法实现的一个demo。
+参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process#native侧方法的实现)，以下代码提供了“使用JSVM-API实现JS与C/C++语言交互开发流程”Native侧方法实现的一个demo。
 
 * 在index.d.ts文件中，提供JS侧的接口方法。
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Media Library Kit 简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview
+original_url: /docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview
 format: md
 ---
 
@@ -16,40 +16,40 @@ Media Library Kit（媒体文件管理服务）提供了管理相册和媒体文
 
 * 选择/保存媒体库资源
 
-  + [使用Picker选择媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker)
-  + [保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)
+  + [使用Picker选择媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker)
+  + [保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)
 * 管理动态照片
 
-  + [访问和管理动态照片资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-movingphoto)
-  + [使用MovingPhotoView播放动态照片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/movingphotoview-guidelines)
+  + [访问和管理动态照片资源](/docs/dev/app-dev/media/medialibrary-kit/movingphoto/photoaccesshelper-movingphoto)
+  + [使用MovingPhotoView播放动态照片](/docs/dev/app-dev/media/medialibrary-kit/movingphoto/movingphotoview-guidelines)
 * 使用Picker组件
 
-  + [使用PhotoPicker组件访问图片/视频](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-photoviewpicker)
-  + [使用AlbumPicker组件访问相册列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-albumpicker)
-  + [使用RecentPhoto组件获取最近一张图片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-recentphoto)
-  + [使用PhotoPicker推荐图片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/smart-photopicker)
-  + [使用PickerController将编辑后的图片替换原图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-pickercontroller)
+  + [使用PhotoPicker组件访问图片/视频](/docs/dev/app-dev/media/medialibrary-kit/component-guidelines-photoviewpicker)
+  + [使用AlbumPicker组件访问相册列表](/docs/dev/app-dev/media/medialibrary-kit/component-guidelines-albumpicker)
+  + [使用RecentPhoto组件获取最近一张图片](/docs/dev/app-dev/media/medialibrary-kit/component-guidelines-recentphoto)
+  + [使用PhotoPicker推荐图片](/docs/dev/app-dev/media/medialibrary-kit/smart-photopicker)
+  + [使用PickerController将编辑后的图片替换原图](/docs/dev/app-dev/media/medialibrary-kit/medialibrary-pickercontroller)
 
 面向**三方应用受限**开放如下能力：
 
 ![](./img/4c3884bf.png)
 
-受限开放的能力需要[申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)。这部分权限为受控开放，通常是不允许三方应用申请的。如果有特殊场景需要使用，请提供相关申请材料到AppGallery Connect（AGC）申请相应权限证书。
+受限开放的能力需要[申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)。这部分权限为受控开放，通常是不允许三方应用申请的。如果有特殊场景需要使用，请提供相关申请材料到AppGallery Connect（AGC）申请相应权限证书。
 
-* [媒体资源使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-resource-guidelines)，包括：
+* [媒体资源使用指导](/docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-resource-guidelines)，包括：
   + 获取指定媒体资源。
   + 获取图片和视频缩略图。
   + 重命名媒体资源。
-* [用户相册资源使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-useralbum-guidelines)，包括：
+* [用户相册资源使用指导](/docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-useralbum-guidelines)，包括：
   + 获取用户相册。
   + 重命名用户相册。
   + 添加图片和视频到用户相册中。
   + 获取用户相册中的图片和视频。
   + 从用户相册中移除图片和视频。
-* [系统相册资源使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-systemalbum-guidelines)，包括：
+* [系统相册资源使用指导](/docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-systemalbum-guidelines)，包括：
   + 收藏夹。
   + 视频相册。
-* [媒体资源变更通知相关指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-notify-guidelines)，包括：
+* [媒体资源变更通知相关指导](/docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-notify-guidelines)，包括：
   + 注册对指定URI的监听。
   + 取消指定URI的监听。
 

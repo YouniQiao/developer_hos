@@ -1,7 +1,7 @@
 ---
 title: "查看App Killed（应用终止）日志"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-faultlog-appkilled
+original_url: /docs/tools/coding-debug/ide-faultlog-appkilled
 format: md
 ---
 

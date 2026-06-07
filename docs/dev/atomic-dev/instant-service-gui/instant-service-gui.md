@@ -1,6 +1,6 @@
 ---
 title: "通过界面接入服务直达"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-gui
+original_url: /docs/dev/atomic-dev/instant-service-gui/instant-service-gui
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS中globalThis无法使用该如何替换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-54
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-54
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "自定义组件是否能通过容器保存"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-228
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-228
 ---
 
 
@@ -85,4 +85,4 @@ struct Page12 {
 
 **参考链接：**
 
-[@BuilderParam装饰器：引用@Builder函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builderparam)
+[@BuilderParam装饰器：引用@Builder函数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builderparam)

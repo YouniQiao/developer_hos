@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "已连接对端设备查询"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/watch_query_connected_devices
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev/watch_query_connected_devices
 format: md
 ---
 

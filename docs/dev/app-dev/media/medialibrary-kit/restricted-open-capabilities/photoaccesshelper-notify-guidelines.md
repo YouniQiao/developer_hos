@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "媒体资源变更通知相关指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-notify-guidelines
+original_url: /docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-notify-guidelines
 format: md
 ---
 
@@ -10,9 +10,9 @@ photoAccessHelper提供监听指定媒体资源变更的接口。
 
 ![](./img/c4908752.png)
 
-在进行功能开发前，请查阅[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation)，了解如何获取相册管理模块实例和如何申请相册管理模块功能开发相关权限。
+在进行功能开发前，请查阅[开发准备](/docs/dev/app-dev/media/photoaccesshelper-preparation)，了解如何获取相册管理模块实例和如何申请相册管理模块功能开发相关权限。
 
-文档中使用到photoAccessHelper的地方默认为使用[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation)中获取的对象，如未添加此段代码报photoAccessHelper未定义的错误请自行添加。
+文档中使用到photoAccessHelper的地方默认为使用[开发准备](/docs/dev/app-dev/media/photoaccesshelper-preparation)中获取的对象，如未添加此段代码报photoAccessHelper未定义的错误请自行添加。
 
 媒体资源变更通知相关接口的异步调用仅支持使用callback方式。以下只列出部分接口使用方式，其他使用方式可以查阅[模块描述](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper)。
 
@@ -29,13 +29,13 @@ photoAccessHelper提供监听指定媒体资源变更的接口。
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'和'ohos.permission.WRITE\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'和'ohos.permission.WRITE\_IMAGEVIDEO'。
 
 以对一张图片注册监听为例，通过删除图片触发回调。
 
 **开发步骤**
 
-1. [获取指定媒体资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-resource-guidelines#获取指定媒体资源)。
+1. [获取指定媒体资源](/docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-resource-guidelines#获取指定媒体资源)。
 2. 对指定PhotoAsset注册监听。
 3. 将指定媒体资源删除。
 
@@ -82,13 +82,13 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'和'ohos.permission.WRITE\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'和'ohos.permission.WRITE\_IMAGEVIDEO'。
 
 以对一个用户相册注册监听为例，通过重命名相册触发回调。
 
 **开发步骤**
 
-1. [获取用户相册](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-useralbum-guidelines#获取用户相册)。
+1. [获取用户相册](/docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-useralbum-guidelines#获取用户相册)。
 2. 对指定Album注册监听。
 3. 将指定用户相册重命名。
 
@@ -149,14 +149,14 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'和'ohos.permission.WRITE\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'和'ohos.permission.WRITE\_IMAGEVIDEO'。
 
 下面以对所有PhotoAsset注册监听，通过将被监听的PhotoAsset删除触发监听回调为例。
 
 **开发步骤**
 
 1. 对所有PhotoAsset注册监听。
-2. [获取指定媒体资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-resource-guidelines#获取指定媒体资源)。
+2. [获取指定媒体资源](/docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-resource-guidelines#获取指定媒体资源)。
 3. 将指定媒体资源删除。
 
 ```
@@ -201,13 +201,13 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper, cont
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'和'ohos.permission.WRITE\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'和'ohos.permission.WRITE\_IMAGEVIDEO'。
 
 下面以取消对图片指定的监听为例，取消监听后，删除图片不再触发对应的监听回调。
 
 **开发步骤**
 
-1. [获取指定媒体资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-resource-guidelines#获取指定媒体资源)。
+1. [获取指定媒体资源](/docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-resource-guidelines#获取指定媒体资源)。
 2. 取消对指定媒体资源uri的监听。
 3. 将指定媒体资源删除。
 

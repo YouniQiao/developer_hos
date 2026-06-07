@@ -1,6 +1,6 @@
 ---
 title: "BatchEntityBuilder实体创建批处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-batch-entitybuilder-0000002483522709
+original_url: /docs/dev/game-dev/pgd-batch-entitybuilder-0000002483522709
 format: md
 ---
 

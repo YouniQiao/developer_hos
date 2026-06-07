@@ -1,6 +1,6 @@
 ---
 title: "文件没有默认导出，但可以默认导入的场景说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-134
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-134
 format: md
 ---
 

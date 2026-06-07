@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发布文本类型通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-notification
+original_url: /docs/dev/app-dev/application-services/notification-kit/publish-notification/text-notification
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native侧如何对ArkTS传递的Object类型的数据、属性进行修改"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-62
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-62
 ---
 
 

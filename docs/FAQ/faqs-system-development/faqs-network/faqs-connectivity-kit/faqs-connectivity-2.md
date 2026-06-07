@@ -1,6 +1,6 @@
 ---
 title: "如何扫描Wi-Fi列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-2
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-2
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "（可选）推送报告"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-delivery-report
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-server/push-delivery-report
 format: md
 ---
 

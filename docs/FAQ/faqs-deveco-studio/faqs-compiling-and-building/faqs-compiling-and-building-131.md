@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决编译报错“Cannot add xxxx items to index”的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-131
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-131
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "接入Banner广告"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-banner-0000001347614022
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-banner-0000001347614022
 format: md
 ---
 
@@ -143,7 +143,7 @@ adsContext.loadBannerAds(adSlot, new TemplateLoadListener() {
 });
 ```
 
-加载失败错误码，具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_errcode-0000001354582769#section198514419559)。
+加载失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section198514419559)。
 
 #### 配置相关事件监听
 
@@ -182,7 +182,7 @@ adsContext.loadBannerAds(adSlot, new TemplateLoadListener() {
    });
    ```
 
-   渲染失败错误码，具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_errcode-0000001354582769#section6398122931218)。
+   渲染失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section6398122931218)。
 2. 配置用户点击关闭广告回调事件监听器。
 
    ```

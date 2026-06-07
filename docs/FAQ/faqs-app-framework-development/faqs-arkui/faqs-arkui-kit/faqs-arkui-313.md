@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何使用canvas绘制圆角矩形"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-313
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-313
 ---
 
 

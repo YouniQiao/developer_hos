@@ -1,7 +1,7 @@
 ---
 title: "性能问题定位：深度录制"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/deep-recording
+original_url: /docs/tools/coding-debug/deep-recording
 format: md
 ---
 

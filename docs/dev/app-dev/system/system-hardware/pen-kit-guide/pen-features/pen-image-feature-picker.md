@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接入全局取色"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-image-feature-picker-c
+original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-image-feature-picker
 format: md
 ---
 

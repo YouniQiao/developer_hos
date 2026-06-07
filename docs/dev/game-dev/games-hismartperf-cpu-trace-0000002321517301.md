@@ -1,6 +1,6 @@
 ---
 title: "CPU trace"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-cpu-trace-0000002321517301
+original_url: /docs/dev/game-dev/games-hismartperf-cpu-trace-0000002321517301
 format: md
 ---
 

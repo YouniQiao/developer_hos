@@ -1,7 +1,7 @@
 ---
 title: "华为开发者基础服务协议"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/hwdbserviceagreement
+original_url: /docs/distribute/app-dist/app-market/x20240513/HWDBServiceAgreement
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "如何在Tabs的tabBar中添加其他组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-344
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-344
 format: md
 ---
 

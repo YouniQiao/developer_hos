@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Color支持哪些格式，使用color: 'rgba(0, 0, 255, .5)'格式不生效"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-123
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-123
 ---
 
 

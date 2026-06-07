@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native工程中如何使用其他三方so库"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-34
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-34
 ---
 
 
@@ -29,4 +29,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
 **参考链接：**
 
-[在NDK工程中使用预构建库](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-prebuilts)
+[在NDK工程中使用预构建库](/docs/dev/ndk-dev/build-with-ndk-prebuilts)

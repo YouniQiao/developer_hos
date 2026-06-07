@@ -1,7 +1,7 @@
 ---
 title: "9. 账号注销常见问题"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-11
+original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-11
 format: md
 ---
 
@@ -31,4 +31,4 @@ format: md
 
 当元服务涉及账号体系，且存在自有账号体系，在用户关联账号后，请在用户界面提供注销自有账号的功能选项，功能选项名称需表述清晰，为了避免歧义，请勿直接使用“注销账号”或“账号注销”，需要明确注销对象为自有账号而非华为账号，如“注销XX账号”。用户注销自有账号，您需同时解除自有账号与华为账号的关联，并保持华为账号静默登录状态。
 
-元服务账号设计规范及账号关联相关设计可参考：[最佳设计实践-账号](https://developer.huawei.com/consumer/cn/doc/design-guides/accounts-0000001967444380)、[开发者怎么在元服务中使用开发者账号体系？](https://developer.huawei.com/consumer/cn/doc/atomic-faqs-V5/faqs-common-account-6-V5)
+元服务账号设计规范及账号关联相关设计可参考：[最佳设计实践-账号](/docs/design/atomic-service-design/best-practices/accounts)、[开发者怎么在元服务中使用开发者账号体系？](https://developer.huawei.com/consumer/cn/doc/atomic-faqs-V5/faqs-common-account-6-V5)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "ID Token的使用场景与使用方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-12
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-12
 format: md
 ---
 
@@ -25,13 +25,13 @@ ID Token是JWT Token格式数据，其中payload包含字段如下：
 | 字段 | 参数类型 | 是否默认返回 | 描述 |
 | --- | --- | --- | --- |
 | iss | string | 是 | 固定值："https://accounts.huawei.com"。 |
-| sub | string | 是 | 即用户的UnionID。同一个开发者下的所有应用，此参数均相同。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
+| sub | string | 是 | 即用户的UnionID。同一个开发者下的所有应用，此参数均相同。具体格式要求请参考[OpenID和UnionID的格式说明](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-9)。 |
 | aud | string | 是 | 接收ID Token的Client ID。 |
 | exp | number | 是 | ID Token的过期时间戳（10位）。 |
 | iat | number | 是 | ID Token的生成时间戳（10位）。 |
 | at\_hash | string | 是 | Access Token的哈希值。 |
 | azp | string | 是 | 生成ID Token的Client ID。 |
-| openid | string | 是 | 用户OpenID。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
+| openid | string | 是 | 用户OpenID。具体格式要求请参考[OpenID和UnionID的格式说明](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-9)。 |
 | nonce | string | 否 | 防重放攻击随机值。详情请参考[LoginWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#loginwithhuaweiidrequest)或[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)的nonce字段说明。 |
 | picture | string | 否 | 用户头像图片链接。该字段返回场景：[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)中的scopes包含profile。 |
 | display\_name | string | 否 | 华为账号对应的昵称，没有昵称则取匿名化的邮箱或手机号。该字段返回场景：  [AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)中的scopes包含profile。 |

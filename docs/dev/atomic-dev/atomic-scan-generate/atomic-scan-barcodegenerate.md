@@ -1,6 +1,6 @@
 ---
 title: "通过文本生成码图"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-barcodegenerate
+original_url: /docs/dev/atomic-dev/atomic-scan-generate/atomic-scan-barcodegenerate
 format: md
 ---
 

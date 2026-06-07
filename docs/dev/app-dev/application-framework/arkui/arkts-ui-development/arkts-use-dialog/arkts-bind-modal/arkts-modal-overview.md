@@ -1,6 +1,6 @@
 ---
 title: "绑定模态页面概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-modal-overview
 format: md
 ---
 
@@ -18,8 +18,8 @@ format: md
 
 | 接口 | 使用场景 |
 | --- | --- |
-| [bindContentCover](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-contentcover-page) | 用于自定义全屏的模态展示界面，结合转场动画和共享元素动画可实现复杂转场动画效果，如缩略图片点击后查看大图。 |
-| [bindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sheet-page) | 用于半模态展示界面，如分享框。 |
+| [bindContentCover](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-contentcover-page) | 用于自定义全屏的模态展示界面，结合转场动画和共享元素动画可实现复杂转场动画效果，如缩略图片点击后查看大图。 |
+| [bindSheet](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-sheet-page) | 用于半模态展示界面，如分享框。 |
 | [openBindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#openbindsheet12)/ [updateBindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#updatebindsheet12)/ [closeBindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#closebindsheet12) | 用于不依赖UI组件的场景，如全局拉起、更新、关闭。 |
 
 ## 规格约束

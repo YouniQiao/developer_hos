@@ -1,7 +1,7 @@
 ---
 title: "预约有奖"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-reservation-0000001657694701
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701
 format: md
 ---
 
@@ -27,7 +27,7 @@ format: md
 ## 活动准备
 
 * 已成功[创建应用](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717)，且软件包类型为“APK(Android应用)”，支持设备为“手机”。
-* 含奖品的活动需提前准备奖品素材，详情请参见[奖品素材](https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-param-0000001608575030#section953762813448)。
+* 含奖品的活动需提前准备奖品素材，详情请参见[奖品素材](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-param-0000001608575030#section953762813448)。
 * 提前准备活动落地页素材。
 
   | 准备项 | | 说明 |
@@ -40,7 +40,7 @@ format: md
 
 若创建无奖品活动可跳过该步骤。
 
-通过各类运营活动，为用户提供活动奖励，以不同活动形式向用户发放奖品，需先配置可添加至运营活动的活动奖品，配置活动奖品操作步骤如下。文中具体参数说明请参见[参数说明](https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-param-0000001608575030)。
+通过各类运营活动，为用户提供活动奖励，以不同活动形式向用户发放奖品，需先配置可添加至运营活动的活动奖品，配置活动奖品操作步骤如下。文中具体参数说明请参见[参数说明](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-param-0000001608575030)。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表中选择需要新增奖品的应用。
 2. 新增奖品。
@@ -53,7 +53,7 @@ format: md
 
 ## 创建活动
 
-配置活动奖品并提交审核后，您可按如下步骤创建预约有奖活动。文中具体参数说明请参见[参数说明](https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-param-0000001608575030)。
+配置活动奖品并提交审核后，您可按如下步骤创建预约有奖活动。文中具体参数说明请参见[参数说明](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-param-0000001608575030)。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表中选择应用。
 2. 新建活动。

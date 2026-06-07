@@ -1,6 +1,6 @@
 ---
 title: "配置业务域名"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-business-domain
+original_url: /docs/dev/atomic-dev/atomic-web-development/agc-help-harmonyos-business-domain
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 若修改次数不能满足您的需求，您可发送邮件向华为运营人员申请放宽限制。在收到您的申请后，华为运营人员将在1-3个工作日内为您安排对接人员。申请方法如下：
 
 * 申请邮箱地址：atomicservice@huawei.com。
-* 邮件标题：[业务域名配置]-[元服务名称]-[APP ID]-[Developer ID]，APP ID等查询方法可参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。
+* 邮件标题：[业务域名配置]-[元服务名称]-[APP ID]-[Developer ID]，APP ID等查询方法可参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。
 * 邮件正文：请说明申请放宽修改次数原因。
 
 ## 下载配置文件

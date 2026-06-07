@@ -1,7 +1,7 @@
 ---
 title: "专项测试"
 displayed_sidebar: devecoTestingSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/specialized-testing
+original_url: /docs/tools/deveco-testing/specialized-testing
 format: md
 ---
 
@@ -236,7 +236,7 @@ format: md
 
 更多测试服务详情，请前往DevEco Testing客户端->专项测试->性能基础质量测试->任务创建页->测试指南中查询。
 
-更多应用性能优化建议及问题定位，请查阅：[应用性能体验建议](./performance-experience-suggestions.md) 及 [最佳实践-性能-性能场景优化案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-performance-optimization)。
+更多应用性能优化建议及问题定位，请查阅：[应用性能体验建议](./performance-experience-suggestions.md) 及 [最佳实践-性能-性能场景优化案例](/docs/quality/scenario-performance-optimization)。
 
 ## 场景化性能测试
 
@@ -423,7 +423,7 @@ OH\_XXXX：代表用例名称，由脚本进行指定。
 
 更多场景化性能测试报告解读及常见问题，请前往DevEco Testing客户端->专项测试->场景化性能测试->任务创建页->测试指南中查询。
 
-更多应用性能优化建议及问题定位，请查阅：[应用性能体验建议](./performance-experience-suggestions.md) 及 [最佳实践-性能-性能场景优化案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-performance-optimization)。
+更多应用性能优化建议及问题定位，请查阅：[应用性能体验建议](./performance-experience-suggestions.md) 及 [最佳实践-性能-性能场景优化案例](/docs/quality/scenario-performance-optimization)。
 
 ## 稳定性基础质量测试
 
@@ -447,7 +447,7 @@ OH\_XXXX：代表用例名称，由脚本进行指定。
 
 是否开启多线程检测：打开后，系统支持检测应用多线程安全问题（例如：多个线程并发写入操作）。
 
-是否开启[MemDebug](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-hwasan-detection#section10791454125320)模式：打开开关以后，会打开被测应用的内存越界检测开关，可以辅助发现和定位内存越界类问题。
+是否开启[MemDebug](/docs/quality/stability-hwasan-detection#section10791454125320)模式：打开开关以后，会打开被测应用的内存越界检测开关，可以辅助发现和定位内存越界类问题。
 
 ![](./img/note_3.0-zh-cn.png)
 

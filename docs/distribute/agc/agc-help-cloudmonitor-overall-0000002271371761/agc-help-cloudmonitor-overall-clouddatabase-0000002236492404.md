@@ -1,6 +1,6 @@
 ---
 title: "云数据库"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-overall-clouddatabase-0000002236492404
+original_url: /docs/distribute/agc/agc-help-cloudmonitor-overall-0000002271371761/agc-help-cloudmonitor-overall-clouddatabase-0000002236492404
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 #### 前提条件
 
-您已[开通云数据库服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-database)，并且已创建[存储区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-zone)和[对象类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-object)。
+您已[开通云数据库服务](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-database)，并且已创建[存储区](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-zone)和[对象类型](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-object)。
 
 #### 查看监控数据
 

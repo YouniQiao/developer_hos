@@ -1,7 +1,7 @@
 ---
 title: "SDK合规使用指南"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_data-security-to-d-0000001664520698
+original_url: /docs/monetize/monetization/agd_pro_sdk_data-security-to-d-0000001664520698
 format: md
 ---
 

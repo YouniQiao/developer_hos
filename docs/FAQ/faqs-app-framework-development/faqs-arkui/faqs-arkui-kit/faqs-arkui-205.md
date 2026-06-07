@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现Tabs组件的TabBar居左对齐"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-205
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-205
 ---
 
 

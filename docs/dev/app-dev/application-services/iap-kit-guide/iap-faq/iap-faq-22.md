@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用迁移后，JWT密钥验签错误自查方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-22
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-22
 format: md
 ---
 

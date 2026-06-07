@@ -1,6 +1,6 @@
 ---
 title: "支持触控板输入事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-touchpad
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-touchpad
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 单指操作触控板与操作鼠标的方式相同。例如，轻触后滑动会产生鼠标移动事件，而重按则会产生鼠标左键按下事件。若需判断鼠标事件是来自触控板还是鼠标设备，可以通过[sourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#sourcetype枚举说明8)和[sourceTool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-settings#sourcetool枚举说明9)信息进行区分。
 
-对该种操作产生的事件的处理，请参考[处理鼠标移动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-mouse#处理鼠标移动)章节。
+对该种操作产生的事件的处理，请参考[处理鼠标移动](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-mouse#处理鼠标移动)章节。
 
 ## 双指滑动
 

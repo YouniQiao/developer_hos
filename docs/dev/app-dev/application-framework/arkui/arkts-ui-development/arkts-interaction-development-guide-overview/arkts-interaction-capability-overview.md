@@ -1,6 +1,6 @@
 ---
 title: "交互响应概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-capability-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-interaction-capability-overview
 format: md
 ---
 
@@ -39,14 +39,14 @@ ArkUI框架提供了丰富的交互功能，支持直接处理基础输入事件
 
 如果使用ArkUI系统组件，系统会自动识别和响应这些组件上的手势，如按钮、列表，也可以在组件上绑定处理手势。一个组件上可绑定多个手势，这些手势可以由组件内置默认绑定，也可以由应用显式绑定。这些手势会在用户按下时，通过命中测试被收集上来，由系统统一管理，所有手势都会持续接收到输入事件，直到有一个手势满足条件，在这之后，就只有这一个手势可以继续接收和处理输入事件。
 
-如果希望两个手势非此即彼，则可以考虑使用互斥手势，如果希望两个手势互不影响，则可以考虑使用并行手势，请参考[GestureGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-combined-gestures)；
+如果希望两个手势非此即彼，则可以考虑使用互斥手势，如果希望两个手势互不影响，则可以考虑使用并行手势，请参考[GestureGroup](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-combined-gestures)；
 
-如果希望在用户按下时，才动态决定哪些手势能够参与处理，请参考[手势冲突处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-gesture-judge)。
+如果希望在用户按下时，才动态决定哪些手势能够参与处理，请参考[手势冲突处理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-gesture-judge)。
 
 ## 统一拖拽
 
-请参考[支持统一拖拽](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-drag-event)。
+请参考[支持统一拖拽](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-drag-event)。
 
 ## 焦点系统
 
-请参考[支持焦点处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-focus-event)。
+请参考[支持焦点处理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-focus-event)。

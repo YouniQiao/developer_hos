@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何发送短信"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-telephony-2
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-telephony-kit/faqs-telephony-2
 ---
 
 

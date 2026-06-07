@@ -1,6 +1,6 @@
 ---
 title: "AtomicServiceEnhancedWeb组件参考"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/components-atomicserviceenhancedweb
+original_url: /docs/dev/atomic-dev/atomic-web-development/components-atomicserviceenhancedweb
 format: md
 ---
 

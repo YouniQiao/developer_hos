@@ -1,7 +1,7 @@
 ---
 title: "样式自定义"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/style-customize-pro-0000001583807170
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/style-customize-pro-0000001583807170
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 ![](./img/5a54b68ca199.png)
 
-“样式自定义”与[“颜色自定义”](https://developer.huawei.com/consumer/cn/doc/content/color-customize-pro-0000001633687085)互斥，只能选择其中一种进行制作。例如：当制作了“样式自定义”后，再切换到“颜色自定义”，会提示“暂未达到使用该功能条件”。反之亦然。
+“样式自定义”与[“颜色自定义”](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/color-customize-pro-0000001633687085)互斥，只能选择其中一种进行制作。例如：当制作了“样式自定义”后，再切换到“颜色自定义”，会提示“暂未达到使用该功能条件”。反之亦然。
 
 ![](./img/d9e382df05bb.png "点击放大")
 
@@ -147,7 +147,7 @@ format: md
 
    ![](./img/a0f05c15f703.png "点击放大")
 
-经过以上步骤，样式自定义表盘制作完成，后续按照常规步骤，[导出表盘](https://developer.huawei.com/consumer/cn/doc/content/watch-face-production-pro-0000001583647406#section1783463344019)即可。
+经过以上步骤，样式自定义表盘制作完成，后续按照常规步骤，[导出表盘](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/watch-face-production-pro-0000001583647406#section1783463344019)即可。
 
 ## 相关问题
 

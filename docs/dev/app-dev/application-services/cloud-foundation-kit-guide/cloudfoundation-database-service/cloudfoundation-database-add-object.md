@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "新增对象类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-object
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-object
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 前提条件
 
-已[开通云数据库服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-database)。
+已[开通云数据库服务](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-database)。
 
 ## 操作步骤
 
@@ -49,6 +49,6 @@ format: md
 10. 勾选创建的BookInfo对象类型，点击“导出”。若不勾选对象类型，默认导出所有对象类型。
 
     ![](./img/0365d346.png)
-11. 导出“json格式”文件，点击“确定”。后续[引入对象类型文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-file)时，需要使用此文件。
+11. 导出“json格式”文件，点击“确定”。后续[引入对象类型文件](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-file)时，需要使用此文件。
 
     ![](./img/b5e3a65f.png)

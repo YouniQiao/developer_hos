@@ -1,6 +1,6 @@
 ---
 title: "资源限定与访问"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-resource-restriction
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-resource-restriction
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 
 ## 引用JS模块内resources资源
 
-在应用开发的hml和js文件中使用$r的语法，可以对JS模块内的resources目录下的json资源进行格式化，获取相应的资源内容，该目录与pages目录同级，具体目录结构请参考[文件组织](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-file)。
+在应用开发的hml和js文件中使用$r的语法，可以对JS模块内的resources目录下的json资源进行格式化，获取相应的资源内容，该目录与pages目录同级，具体目录结构请参考[文件组织](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-file)。
 
 | 属性 | 类型 | 描述 |
 | --- | --- | --- |

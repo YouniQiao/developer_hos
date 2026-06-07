@@ -1,7 +1,7 @@
 ---
 title: "在华为开发者联盟完成实名认证"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-1-0000001174557683
+original_url: /docs/monetize/promotion/marketing-api-process-1-0000001174557683
 format: md
 ---
 

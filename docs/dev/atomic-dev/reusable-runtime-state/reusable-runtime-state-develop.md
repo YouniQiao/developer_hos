@@ -1,6 +1,6 @@
 ---
 title: "开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-runtime-state-develop
+original_url: /docs/dev/atomic-dev/reusable-runtime-state/reusable-runtime-state-develop
 format: md
 ---
 

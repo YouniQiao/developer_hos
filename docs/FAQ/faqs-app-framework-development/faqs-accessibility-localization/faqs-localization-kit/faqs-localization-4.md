@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取resource目录下的资源"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-4
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-4
 ---
 
 
@@ -13,6 +13,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-l
 
 **参考链接**
 
-[资源访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源访问)
+[资源访问](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源访问)
 
 [@ohos.resourceManager (资源管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)

@@ -1,6 +1,6 @@
 ---
 title: "静态方式加载Native模块"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-import-native-module
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-import-native-module
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "多个UIAbility是运行在一个进程还是多个进程中？三方应用是否支持应用运行在多个进程下？主进程结束了，会影响子进程的运行吗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-34
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-34
 ---
 
 
@@ -18,4 +18,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[进程模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage)
+[进程模型](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/process-model-stage)

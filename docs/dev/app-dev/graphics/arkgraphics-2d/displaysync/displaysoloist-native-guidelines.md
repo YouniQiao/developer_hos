@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "NativeDisplaySoloist开发指导 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysoloist-native-guidelines
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysoloist-native-guidelines
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ## 开发示例
 
-本范例是通过Drawing在Native侧实现图形的绘制，通过异步线程设置期望的帧率，再根据帧率进行图形的绘制并将其呈现在NativeWindow上，图形绘制部分可参考[使用Drawing实现图形绘制与显示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-drawing-overview)。
+本范例是通过Drawing在Native侧实现图形的绘制，通过异步线程设置期望的帧率，再根据帧率进行图形的绘制并将其呈现在NativeWindow上，图形绘制部分可参考[使用Drawing实现图形绘制与显示](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/graphic-drawing-overview)。
 
 ### 添加开发依赖
 

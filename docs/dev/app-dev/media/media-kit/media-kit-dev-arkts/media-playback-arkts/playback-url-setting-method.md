@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AVPlayer设置播放URL(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-url-setting-method
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/playback-url-setting-method
 format: md
 ---
 
 
 本开发指导将介绍如何使用AVPlayer开发播放功能，在不同的场景下如何设置URL。
 
-当前指导仅介绍播放URL设置方法，其他场景及完整示例代码，请参考[视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback)。
+当前指导仅介绍播放URL设置方法，其他场景及完整示例代码，请参考[视频播放](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback)。
 
 当前开发指导将提供以下设置播放URL的方法：
 
@@ -244,7 +244,7 @@ format: md
    ]
    ```
 3. 通过注释、解注释/entry/src/main/ets/pages/Index.ets中的上文示例的各种情况，编译并运行。
-4. 在安装应用后，可将示例工程的/entry/src/main/resources/rawfile/test.m3u8通过以下命令加入应用沙箱，从而运行应用沙箱相关示例:（\<FILESDIR\>为物理路径，以示例工程为例，可通过console.info打印"this.context.filesDir"得到应用沙箱路径，再根据[应用沙箱指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)的应用沙箱路径和真实物理路径的对应关系表找到物理路径）。
+4. 在安装应用后，可将示例工程的/entry/src/main/resources/rawfile/test.m3u8通过以下命令加入应用沙箱，从而运行应用沙箱相关示例:（\<FILESDIR\>为物理路径，以示例工程为例，可通过console.info打印"this.context.filesDir"得到应用沙箱路径，再根据[应用沙箱指南](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)的应用沙箱路径和真实物理路径的对应关系表找到物理路径）。
 
    ```
    hdc file send "[目录]\test.m3u8" <FILESDIR>

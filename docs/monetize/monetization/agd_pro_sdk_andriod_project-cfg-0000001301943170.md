@@ -1,7 +1,7 @@
 ---
 title: "工程配置"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_project-cfg-0000001301943170
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_project-cfg-0000001301943170
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "堆栈解析工具（hstack）"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-command-line-hstack
+original_url: /docs/tools/cli-tools/ide-command-line-hstack
 format: md
 ---
 

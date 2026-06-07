@@ -1,7 +1,7 @@
 ---
 title: "财务管理"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-level1-finance-0000002499137837
+original_url: /docs/monetize/promotion/fusion-level1-finance-0000002499137837
 format: md
 ---
 

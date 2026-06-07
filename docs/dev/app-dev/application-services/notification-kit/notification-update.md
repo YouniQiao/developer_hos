@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "更新通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-update
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-update
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "@performance/crypto-replacement-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-crypto-replacement-check
+original_url: /docs/tools/coding-debug/ide-crypto-replacement-check
 format: md
 ---
 

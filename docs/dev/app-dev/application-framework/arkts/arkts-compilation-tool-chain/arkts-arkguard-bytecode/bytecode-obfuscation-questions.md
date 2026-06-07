@@ -1,6 +1,6 @@
 ---
 title: "ArkGuard字节码混淆常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-questions
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-questions
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ### 混淆选项差异
 
-1. 字节码混淆开关，默认关闭，在[开启混淆功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-guide#开启混淆步骤)后，需要额外在模块目录下obfuscation-rules.txt文件中配置-enable-bytecode-obfuscation 、-enable-bytecode-obfuscation-debugging。
+1. 字节码混淆开关，默认关闭，在[开启混淆功能](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-guide#开启混淆步骤)后，需要额外在模块目录下obfuscation-rules.txt文件中配置-enable-bytecode-obfuscation 、-enable-bytecode-obfuscation-debugging。
 2. 字节码混淆，不支持以下混淆项-remove-comments。
 
 ### 混淆后文件结构差异
@@ -24,7 +24,7 @@ format: md
 
 ![](./img/d5c47ee4.png) ![](./img/66b17f7c.png)
 
-字节码混淆后，obfuscation目录中多了obf、origin文件夹和config.json文件，具体详见[混淆效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-guide#查看混淆效果)。
+字节码混淆后，obfuscation目录中多了obf、origin文件夹和config.json文件，具体详见[混淆效果](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-guide#查看混淆效果)。
 
 **文件内容差异**
 
@@ -193,7 +193,7 @@ callargs2 0x2e, v2, v3
 **排查功能异常步骤**
 
 1. 先在obfuscation-rules.txt配置-disable-obfuscation选项用于关闭混淆，确认问题是否由混淆引起。
-2. 若确认是开启混淆后功能出现的异常，请先阅读文档了解[混淆规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation#混淆选项)的能力以及哪些语法场景需要[配置白名单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation#已有保留选项汇总)来保证应用功能正常。
+2. 若确认是开启混淆后功能出现的异常，请先阅读文档了解[混淆规则](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation#混淆选项)的能力以及哪些语法场景需要[配置白名单](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation#已有保留选项汇总)来保证应用功能正常。
 3. 参考本文已有的问题，若是相似场景可参考对应的解决方法快速解决。
 4. 若常见案例中未找到相似案例，建议依据各项配置功能正向定位（若不需要相应功能，可删除对应配置项）。
 5. 应用运行时崩溃分析方法：

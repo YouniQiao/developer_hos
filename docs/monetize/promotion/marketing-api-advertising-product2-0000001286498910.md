@@ -1,7 +1,7 @@
 ---
 title: "查询推广产品"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-product2-0000001286498910
+original_url: /docs/monetize/promotion/marketing-api-advertising-product2-0000001286498910
 format: md
 ---
 
@@ -32,8 +32,8 @@ format: md
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | product\_type | string | 是 | 推广产品 ，详见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
-  | ag\_app\_type | string | 否 | 推广应用类型，当product\_type = ANDROID\_APP时必填，详见[推广应用类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section166083016284)。 |
+  | product\_type | string | 是 | 推广产品 ，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
+  | ag\_app\_type | string | 否 | 推广应用类型，当product\_type = ANDROID\_APP时必填，详见[推广应用类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section166083016284)。 |
   | product\_id | long | 否 | 推广产品id。 |
 
   - <strong>请求示例</strong>
@@ -73,7 +73,7 @@ format: md
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
     | product\_id | long | 推广产品ID。 |
-    | product\_type | string | 推广产品，详见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
+    | product\_type | string | 推广产品，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
     | product\_info | Struct2 | 产品信息。 |
 
     product\_info(Struct2)定义

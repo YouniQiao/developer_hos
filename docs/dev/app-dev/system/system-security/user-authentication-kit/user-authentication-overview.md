@@ -1,6 +1,6 @@
 ---
 title: "User Authentication Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-overview
+original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-overview
 format: md
 ---
 
@@ -61,7 +61,7 @@ User Authentication Kit（用户认证服务）提供了基于用户在设备本
 
 用户身份认证通过后，统一用户认证框架会在设备可信执行环境中签发用户身份认证通过证明，简称AuthToken。
 
-从图的左侧，可以看到应用使用用户身份认证功能完成用户鉴权的过程：当应用需要调用通用密钥库服务中需用户授权才能访问的密钥时，应用可以将获取到的AuthToken随密钥调用请求一同提供给[通用密钥库服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)，作为密钥二次访问控制的用户鉴权证明。通用密钥库服务在可信执行环境中校验了AuthToken的合法性和有效性后，便会响应业务请求，执行对应的密钥操作。
+从图的左侧，可以看到应用使用用户身份认证功能完成用户鉴权的过程：当应用需要调用通用密钥库服务中需用户授权才能访问的密钥时，应用可以将获取到的AuthToken随密钥调用请求一同提供给[通用密钥库服务](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)，作为密钥二次访问控制的用户鉴权证明。通用密钥库服务在可信执行环境中校验了AuthToken的合法性和有效性后，便会响应业务请求，执行对应的密钥操作。
 
 ### AuthToken数据结构
 

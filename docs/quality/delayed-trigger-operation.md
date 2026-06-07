@@ -1,18 +1,18 @@
 ---
 title: "操作延时触发"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-delayed-trigger-operation
+original_url: /docs/quality/delayed-trigger-operation
 ---
 
 # 操作延时触发
 
 #### **延迟加载Lazy-Import与动态加载await import**
 
-随着业务规模不断扩大，很多应用在冷启动时会静态import大量模块，这种静态import会在应用初始化阶段同步加载所有依赖模块，导致冷启动耗时增加。ArkTS 提供了[Lazy-Import](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/arkts-lazy-import-V5)能力和[动态加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import)（动态import）能力，使模块可在真正需要时再加载，从而提升应用启动速度，并有效降低资源消耗。
+随着业务规模不断扩大，很多应用在冷启动时会静态import大量模块，这种静态import会在应用初始化阶段同步加载所有依赖模块，导致冷启动耗时增加。ArkTS 提供了[Lazy-Import](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/arkts-lazy-import-V5)能力和[动态加载](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-dynamic-import)（动态import）能力，使模块可在真正需要时再加载，从而提升应用启动速度，并有效降低资源消耗。
 
 * 动态加载（动态import）是一种异步模块加载机制，允许应用程序在运行时按照实际需求去加载相关模块。例如在用户交互等条件触发时，再动态加载特定模块，可以减少初始化import的加载时间和资源消耗，这将有助于提高应用程序的内存性能和响应速度。
 * 延迟加载（Lazy-Import）是一种延缓模块加载的机制，可以使待加载文件在冷启动阶段不被加载，而在后续导出变量被真正使用时再同步加载执行文件，从而节省资源以提高应用冷启动性能。具体案例与实验数据请参阅[延迟加载Lazy-Import使用指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-arkts-high-performance#section12861143418213)。
 
-两种延时加载方案的区别。具体请参阅[Lazy-Import与动态加载的区别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-lazy-import#lazy-import与动态加载的区别)。
+两种延时加载方案的区别。具体请参阅[Lazy-Import与动态加载的区别](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-lazy-import#lazy-import与动态加载的区别)。
 
 ![](./img/b4913638.png)
 
@@ -22,7 +22,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-d
 
 **模块导入延迟到业务附近**
 
-一些应用在冷启动阶段会加载过多未使用模块，针对这种情况导致的启动缓慢问题，开发者可以对冷启动阶段未使用的模块进行 Lazy-Import 改造，使模块导入延迟到对应业务附近加载，从而有效缩短冷启动时间，最终提升用户的启动体验。案例可参考[模块导入延迟到业务附近](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-lazy-import#使用示例)。
+一些应用在冷启动阶段会加载过多未使用模块，针对这种情况导致的启动缓慢问题，开发者可以对冷启动阶段未使用的模块进行 Lazy-Import 改造，使模块导入延迟到对应业务附近加载，从而有效缩短冷启动时间，最终提升用户的启动体验。案例可参考[模块导入延迟到业务附近](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-lazy-import#使用示例)。
 
 **延迟加载非关键路径模块**
 
@@ -76,7 +76,7 @@ export { name, screen, storage };
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkTSModuleHighPerformanceSegment/LazyImport/entry/src/main/ets/pages/DeviceInfo.ets#L2-L13">DeviceInfo.ets</a></div>
 
-使用体检工具[体检工具](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization#section16955857103112)可以查看冷启动阶段未使用的模块和这些模块的加载耗时。将这些未使用模块（storage和screen）从关键路径中剥离，添加lazy标识进行延迟加载。修改后，从下图Trace中可以观察到冷启动阶段仅加载了DeviceName模块。OtherDeviceInfo模块被推迟到用户首次点击文本时才会执行。从修改前后的Trace可以看出，冷启动耗时有所降低。
+使用体检工具[体检工具](/docs/quality/application-cold-start-optimization#section16955857103112)可以查看冷启动阶段未使用的模块和这些模块的加载耗时。将这些未使用模块（storage和screen）从关键路径中剥离，添加lazy标识进行延迟加载。修改后，从下图Trace中可以观察到冷启动阶段仅加载了DeviceName模块。OtherDeviceInfo模块被推迟到用户首次点击文本时才会执行。从修改前后的Trace可以看出，冷启动耗时有所降低。
 
 ![](./img/57699563.png "点击放大")
 
@@ -177,7 +177,7 @@ export const title = 'HarmonyOS';
 
 ![](./img/8e496311.png "点击放大")
 
-使用[体检工具](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization#section16955857103112)记录冷启动Trace，识别启动阶段未使用的模块及其加载耗时。在该示例中，不需要在用户点击事件前加载[libentry.so](https://libentry.so/)模块，建议删除import testNapi from 'libentry.so'语句，仅在需要使用时通过import()函数动态加载该模块。下图为修改后采集的冷启动Trace，从图中可以看到冷启动阶段不再加载libentry.so。从修改前后的Trace可以看出降低了冷启动的耗时。
+使用[体检工具](/docs/quality/application-cold-start-optimization#section16955857103112)记录冷启动Trace，识别启动阶段未使用的模块及其加载耗时。在该示例中，不需要在用户点击事件前加载[libentry.so](https://libentry.so/)模块，建议删除import testNapi from 'libentry.so'语句，仅在需要使用时通过import()函数动态加载该模块。下图为修改后采集的冷启动Trace，从图中可以看到冷启动阶段不再加载libentry.so。从修改前后的Trace可以看出降低了冷启动的耗时。
 
 ```ts
 // entry\src\main\ets\pages\Index.ets
@@ -216,4 +216,4 @@ struct Index {
 
 #### **延迟执行资源释放操作**
 
-将资源关闭和释放操作放在[setTimeout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-timer#settimeout)函数中执行，使其延迟到系统相对空闲的时刻进行，可以避免在程序忙碌时段占用关键资源，提升整体性能及响应能力。例如相机正常使用后，[延迟执行释放相机资源](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-latency-optimization-cases#section8783201923819)的相关操作。
+将资源关闭和释放操作放在[setTimeout](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-timer#settimeout)函数中执行，使其延迟到系统相对空闲的时刻进行，可以避免在程序忙碌时段占用关键资源，提升整体性能及响应能力。例如相机正常使用后，[延迟执行释放相机资源](/docs/quality/application-latency-optimization-cases#section8783201923819)的相关操作。

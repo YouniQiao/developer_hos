@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用内通话消息在设备重启后的首次锁屏状态问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-6
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-6
 format: md
 ---
 

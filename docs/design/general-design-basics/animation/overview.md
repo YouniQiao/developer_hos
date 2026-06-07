@@ -1,7 +1,7 @@
 ---
 title: 概述
 sidebar_label: 概述
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-animation-overview-0000001750985338
+original_url: /docs/design/general-design-basics/animation/overview
 format: md
 ---
 

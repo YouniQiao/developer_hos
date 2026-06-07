@@ -1,6 +1,6 @@
 ---
 title: "AppGallery Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-appgallery-introduction
+original_url: /docs/dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-introduction
 format: md
 ---
 

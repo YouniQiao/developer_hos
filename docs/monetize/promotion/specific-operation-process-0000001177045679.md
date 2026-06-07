@@ -1,7 +1,7 @@
 ---
 title: "具体操作流程"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/specific-operation-process-0000001177045679
+original_url: /docs/monetize/promotion/specific-operation-process-0000001177045679
 format: md
 ---
 

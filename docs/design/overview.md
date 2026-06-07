@@ -7,4 +7,4 @@ format: md
 
 # HarmonyOS 设计指南
 
-> 来源：[华为开发者官网 - 设计指南](https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445)
+> 来源：[华为开发者官网 - 设计指南](/docs/design/general-design-basics/design-concepts)

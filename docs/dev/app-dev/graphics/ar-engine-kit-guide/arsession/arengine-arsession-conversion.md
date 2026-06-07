@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理AR会话介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession-conversion
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-arsession-conversion
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "服务卡片EntryFormAbility生命周期回调函数在哪个ArkTS文件中调用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-16
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-16
 ---
 
 

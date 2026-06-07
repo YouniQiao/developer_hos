@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何把ImageReceiver收到的视频帧数据保存到本地"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-11
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-11
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Enterprise Threat Protection Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-introduction
+original_url: /docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/enterprisethreatprotection-introduction
 format: md
 ---
 
@@ -45,7 +45,7 @@ Enterprise Threat Protection Kit（企业威胁防护服务）为企业开发者
 | 用户公共目录 | N/A |
 | 云盘目录 | 建议只访问本地文件，可通过[Stat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#stat)查询文件具体信息。 |
 | 外卡目录 | N/A |
-| 应用el2级别加密数据目录 | 目录详述见[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。 |
+| 应用el2级别加密数据目录 | 目录详述见[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。 |
 | 应用安装包目录 | 仅支持调试类型的应用及企业应用。 |
 
 ### 文件处置限制
@@ -55,7 +55,7 @@ Enterprise Threat Protection Kit（企业威胁防护服务）为企业开发者
 | 用户公共目录 | N/A |
 | 云盘目录 | 仅支持处置本地文件。 |
 | 外卡目录 | 本服务不支持处置外卡目录文件，建议调用方自行处置。 |
-| 应用el2级别加密数据目录 | 目录详述见[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。 |
+| 应用el2级别加密数据目录 | 目录详述见[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。 |
 | 应用安装包目录 | 不支持处置，建议以应用维度处置，可通过[addDisallowedRunningBundlesSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-applicationmanager#applicationmanageradddisallowedrunningbundlessync)添加应用至应用运行禁止名单，添加至禁止名单的应用不允许在当前/指定用户下运行。或通过[bundleManager.uninstall](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-bundlemanager#bundlemanageruninstall)卸载应用。 |
 
 ## 模拟器支持情况

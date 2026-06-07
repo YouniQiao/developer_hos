@@ -1,6 +1,6 @@
 ---
 title: "开通服务通知并选用订阅模板"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-noti
+original_url: /docs/dev/atomic-dev/push-as-subscription/push-as-service-noti
 format: md
 ---
 
@@ -51,8 +51,8 @@ format: md
 
 ![](./img/8ece39b5.png)
 
-* 开通服务通知前，请确保元服务已经开通推送服务，详情见[开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-prepare)章节。
-* 请确保元服务已通过[元服务分类标签和资质认证](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-class-tag-0000002293651518)，平台将依据您已认证的分类标签进行模板和权限管理。
+* 开通服务通知前，请确保元服务已经开通推送服务，详情见[开发准备](/docs/dev/atomic-dev/atomic-push-development/push-as-prepare)章节。
+* 请确保元服务已通过[元服务分类标签和资质认证](/docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-class-tag-0000002293651518)，平台将依据您已认证的分类标签进行模板和权限管理。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“APP与元服务”。
 
@@ -99,7 +99,7 @@ format: md
 
    ![](./img/f5ff9385.png)
 
-   1. 通知栏消息仅展示模板副标题中的内容。消息下发后实际最多显示 3 行，超长则“…”截断，详情请见[通知详情](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217#section848693515289)。
+   1. 通知栏消息仅展示模板副标题中的内容。消息下发后实际最多显示 3 行，超长则“…”截断，详情请见[通知详情](/docs/design/system-features/features/notification#section848693515289)。
    2. 模板副标题中的内容须准确完整，不含营销信息，并且符合模板的使用场景。
 4. 提交申请后回到服务通知页面，点击“我的申请”可查看审批进度。通常领用模板的审核时间为3-7个工作日，待当前状态为“已审批”时，此模板即为可用状态。
 
@@ -108,7 +108,7 @@ format: md
 
    ![](./img/8d9b773b.png "点击放大")
 
-   “消息详情”下的“模板参数”与“模板副标题”中的花括号&#123;&#123;&#125;&#125;中（例如&#123;\&#123;time\_1\&#125;&#125;）的值即为模板消息下发时动态设置的参数，发送元服务订阅消息时请携带对应参数，详情见[推送基于账号的订阅消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-send-sub-noti)。
+   “消息详情”下的“模板参数”与“模板副标题”中的花括号&#123;&#123;&#125;&#125;中（例如&#123;\&#123;time\_1\&#125;&#125;）的值即为模板消息下发时动态设置的参数，发送元服务订阅消息时请携带对应参数，详情见[推送基于账号的订阅消息](/docs/dev/atomic-dev/push-as-subscription/push-as-send-sub-noti)。
 
    ![](./img/4c3fed96.png "点击放大")
 

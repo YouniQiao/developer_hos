@@ -1,7 +1,7 @@
 ---
 title: "应用认领"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-claiming-0000001239525223
+original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-claiming-0000001239525223
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 * 如果认领的应用原本是在架状态，认领成功后应用会被下架。
 * 应用认领后，原有的所有服务将无法使用，且不保留历史下载量和评论数据，即仅认领应用软件包，请谨慎操作。
-* 如果您只需要更换主体，建议选择[应用转移](`https://developer.huawei.com/consumer/cn/doc/app/game-center-transferring-0000001194325290#ZH-CN_TOPIC_0000001194325290`)，以防应用下架以及数据的丢失。
+* 如果您只需要更换主体，建议选择[应用转移](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-transferring-0000001194325290#ZH-CN_TOPIC_0000001194325290`)，以防应用下架以及数据的丢失。
 
 ## 前提条件
 

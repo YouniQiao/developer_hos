@@ -1,6 +1,6 @@
 ---
 title: "使用内容风控服务连接器"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/content-moderation-service-prep-connector-create
+original_url: /docs/dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep-connector-create
 has_merged_cells: true
 format: md
 ---

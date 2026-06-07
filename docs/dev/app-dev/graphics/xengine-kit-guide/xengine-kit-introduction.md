@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "XEngine Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-introduction
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-introduction
 format: md
 ---
 

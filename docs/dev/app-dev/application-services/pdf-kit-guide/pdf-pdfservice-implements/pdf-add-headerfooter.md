@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "添加、删除页眉页脚"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-add-headerfooter
+original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-headerfooter
 format: md
 ---
 

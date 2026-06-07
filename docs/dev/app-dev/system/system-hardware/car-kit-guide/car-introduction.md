@@ -1,6 +1,6 @@
 ---
 title: "Car Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-introduction
+original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-introduction
 format: md
 ---
 

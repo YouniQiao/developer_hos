@@ -1,6 +1,6 @@
 ---
 title: "路由"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-router
+original_url: /docs/dev/atomic-dev/ascf/apis/apis-router
 format: md
 ---
 

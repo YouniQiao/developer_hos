@@ -1,6 +1,6 @@
 ---
 title: "常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/faqs-usb
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/faqs-usb
 format: md
 ---
 

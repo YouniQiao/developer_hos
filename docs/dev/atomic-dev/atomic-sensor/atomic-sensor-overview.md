@@ -1,6 +1,6 @@
 ---
 title: "传感器开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-sensor-overview
+original_url: /docs/dev/atomic-dev/atomic-sensor/atomic-sensor-overview
 format: md
 ---
 

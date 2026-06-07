@@ -1,6 +1,6 @@
 ---
 title: "推送服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-push-service
+original_url: /docs/dev/atomic-dev/ascf/apis/apis-push-service
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 has.getAAID(Object object)
 
-获取[AAID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-aaid)。
+获取[AAID](/docs/dev/app-dev/application-services/push-kit-guide/push-get-aaid)。
 
 **起始版本：** 1.0.8
 
@@ -85,7 +85,7 @@ has.deleteAAID({
 
 has.getPushToken(Object object)
 
-获取[推送服务的Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
+获取[推送服务的Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)。
 
 **起始版本：** 1.0.8
 

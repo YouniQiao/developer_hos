@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设置系统服务进程不可访问后台用户数据的功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-restrict-access-bg-userdata
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-restrict-access-bg-userdata
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "查询商品组信息"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-shopping-group1-0000001338498649
+original_url: /docs/monetize/promotion/marketing-api-advertising-shopping-group1-0000001338498649
 format: md
 ---
 
@@ -91,11 +91,11 @@ format: md
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
     | parent\_item\_group\_id | string | 商品分组父节点Id，根节点该字段为“”。 |
     | item\_group\_id | string | 商品分组Id。 |
-    | dimension\_type | string | 商品分组的细分依据，详见[查询商品库筛选条件取值](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa2-0000001338502485)。 |
+    | dimension\_type | string | 商品分组的细分依据，详见[查询商品库筛选条件取值](/docs/monetize/promotion/marketing-api-tool-dpa2-0000001338502485)。 |
     | dimension\_value | string | 商品分组的细分依据取值；  根节点名称固定为All；  商品分组同级的排他商品组名称固定为Others。 |
     | price | float | 商品分组的出价。 |
     | is\_leaf | boolean | 商品分组是否为叶子节点，只有叶子节点才允许设置出价。 |
-    | status | string | 商品分组状态，详见[商品分组状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section7332135573017)。 |
+    | status | string | 商品分组状态，详见[商品分组状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section7332135573017)。 |
   - <strong>应答示例</strong>
 
     HTTPS/1.1 200 OK

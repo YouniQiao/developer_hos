@@ -1,6 +1,6 @@
 ---
 title: "密钥生成介绍及算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 * 使用当前业务已有的密钥别名作为生成的密钥别名默认会把现有密钥覆盖，可以使用[HUKS\_TAG\_KEY\_OVERRIDE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)指定当密钥别名冲突时返回错误。
 * 对于不同业务生成的密钥将基于业务身份信息进行存储路径隔离，避免不同业务因密钥别名相同导致冲突。
 
-从API 23开始支持[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)特性。
+从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。
 
 * 随机生成：指HUKS在生成密钥时，利用密码学安全的伪随机数，提高密钥的随机性、不可预测性以及不可重现性，确保生成的密钥难以被推测。
 * 安全保存：指通过HUKS生成的密钥，除了非对称密钥中的公钥外，密钥的全生命周期（从生成到销毁）均只能由HUKS在安全存储区使用，且生成的密钥文件不能被除HUKS以外的任何业务直接访问。即使是生成密钥的业务，后续也只能通过HUKS提供的接口执行密钥操作，从而获取操作结果。

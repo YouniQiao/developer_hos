@@ -1,6 +1,6 @@
 ---
 title: "AuthUser"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-authuser-0000002273781645
+original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-authuser-0000002273781645
 format: md
 ---
 
@@ -23,13 +23,13 @@ format: md
 | boolean | [isAnonymous](#section15810340163512)()  是否是匿名登录用户。 |
 | boolean | [getEmailVerified](#section565161913377)()  获取邮箱验证标记。 |
 | boolean | [getPasswordSetted](#section9652101912371)()  获取密码设置标记。 |
-|  | [link](#section27316362445)(credentialInfo: [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689))  当前用户关联新的登录方式。 |
-|  | [unlink](#section12443118145319)(type: [ProviderType](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-providertype-0000002273781649))  当前用户解除关联的登录方式。 |
-| `Promise&lt;void>` | [updateEmail](#section7264195173019)(emailInfo: [EmailInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-emailinfo-0000002238618028))  更新当前用户邮箱。 |
-| `Promise&lt;void>` | [updatePhone](#section11672161715314)(phoneInfo: [PhoneInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-phoneinfo-0000002273617157))  更新当前用户手机号码。 |
-| `Promise&lt;void>` | [updatePassword](#section152730591310)(passwordInfo: [PasswordInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-passwordinfo-0000002238777840))  更新当前用户密码。 |
-| `Promise&lt;void>` | [updateProfile](#section15189164517510)(userProfile: [UserProfileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-userprofileinfo-0000002238782372))  更新当前用户的个人信息。 |
-|  | [userReauthenticate](#section49111416135613)(signInParam: [SignInParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-signinparam-0000002273777089))  用户登录后重认证。 |
+|  | [link](#section27316362445)(credentialInfo: [CredentialInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-credentialinfo-0000002273621689))  当前用户关联新的登录方式。 |
+|  | [unlink](#section12443118145319)(type: [ProviderType](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-providertype-0000002273781649))  当前用户解除关联的登录方式。 |
+| `Promise&lt;void>` | [updateEmail](#section7264195173019)(emailInfo: [EmailInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-emailinfo-0000002238618028))  更新当前用户邮箱。 |
+| `Promise&lt;void>` | [updatePhone](#section11672161715314)(phoneInfo: [PhoneInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-phoneinfo-0000002273617157))  更新当前用户手机号码。 |
+| `Promise&lt;void>` | [updatePassword](#section152730591310)(passwordInfo: [PasswordInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-passwordinfo-0000002238777840))  更新当前用户密码。 |
+| `Promise&lt;void>` | [updateProfile](#section15189164517510)(userProfile: [UserProfileInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-userprofileinfo-0000002238782372))  更新当前用户的个人信息。 |
+|  | [userReauthenticate](#section49111416135613)(signInParam: [SignInParam](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinparam-0000002273777089))  用户登录后重认证。 |
 
 #### Methods
 
@@ -333,7 +333,7 @@ auth.getCurrentUser().then(user=>{
 
 | Method |
 | --- |
-| link(credentialInfo: [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689)):   当前用户关联新的登录方式。 |
+| link(credentialInfo: [CredentialInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-credentialinfo-0000002273621689)):   当前用户关联新的登录方式。 |
 
 ![](../img/agc-help-auth-api-authuser-0000002273781645_0.png)
 
@@ -345,7 +345,7 @@ auth.getCurrentUser().then(user=>{
 
 | Name | Type | Description |
 | --- | --- | --- |
-| credentialInfo | [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689) | 必选，凭证信息。编译器会根据其中kind自动推断类型，例如其内部kind填为：'phone'，则类型被推断为“PhoneCredentialInfo”。 |
+| credentialInfo | [CredentialInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-credentialinfo-0000002273621689) | 必选，凭证信息。编译器会根据其中kind自动推断类型，例如其内部kind填为：'phone'，则类型被推断为“PhoneCredentialInfo”。 |
 
 **Return**
 
@@ -391,7 +391,7 @@ auth.getCurrentUser().then(user => {
 
 | Method |
 | --- |
-| unlink(type: [ProviderType](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-providertype-0000002273781649)):   当前用户解除已关联的登录方式。 |
+| unlink(type: [ProviderType](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-providertype-0000002273781649)):   当前用户解除已关联的登录方式。 |
 
 ![](../img/agc-help-auth-api-authuser-0000002273781645_2.png)
 
@@ -403,7 +403,7 @@ auth.getCurrentUser().then(user => {
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | [ProviderType](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-providertype-0000002273781649) | 必选，渠道类型支持'email' 、 'phone' 、 'hwid' 或 'selfBuild'。 |
+| type | [ProviderType](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-providertype-0000002273781649) | 必选，渠道类型支持'email' 、 'phone' 、 'hwid' 或 'selfBuild'。 |
 
 **Return**
 
@@ -427,13 +427,13 @@ auth.getCurrentUser().then(user => {
 
 | Method |
 | --- |
-| updateEmail(emailInfo: [EmailInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-emailinfo-0000002238618028)): Promise&lt;void>  用户邮箱登录后，更新用户邮箱地址。 |
+| updateEmail(emailInfo: [EmailInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-emailinfo-0000002238618028)): Promise&lt;void>  用户邮箱登录后，更新用户邮箱地址。 |
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| emailInfo | [EmailInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-emailinfo-0000002238618028) | Email账号信息类。 |
+| emailInfo | [EmailInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-emailinfo-0000002238618028) | Email账号信息类。 |
 
 **Return**
 
@@ -461,13 +461,13 @@ auth.getCurrentUser().then((user) => {
 
 | Method |
 | --- |
-| updatePhone(phoneInfo: [PhoneInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-phoneinfo-0000002273617157)): Promise&lt;void>  用户手机登录后，更新用户手机号码。 |
+| updatePhone(phoneInfo: [PhoneInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-phoneinfo-0000002273617157)): Promise&lt;void>  用户手机登录后，更新用户手机号码。 |
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| phoneInfo | [PhoneInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-phoneinfo-0000002273617157) | 必选，手机号码信息类。 |
+| phoneInfo | [PhoneInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-phoneinfo-0000002273617157) | 必选，手机号码信息类。 |
 
 **Return**
 
@@ -496,13 +496,13 @@ auth.getCurrentUser().then((user) => {
 
 | Method |
 | --- |
-| updatePassword(passwordInfo: [PasswordInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-passwordinfo-0000002238777840)): Promise&lt;void>  更新当前用户密码。 |
+| updatePassword(passwordInfo: [PasswordInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-passwordinfo-0000002238777840)): Promise&lt;void>  更新当前用户密码。 |
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| passwordInfo | [PasswordInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-passwordinfo-0000002238777840) | 必选，更新密码操作相关的密码信息类。 |
+| passwordInfo | [PasswordInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-passwordinfo-0000002238777840) | 必选，更新密码操作相关的密码信息类。 |
 
 **Return**
 
@@ -530,13 +530,13 @@ auth.getCurrentUser().then((user) => {
 
 | Method |
 | --- |
-| updateProfile(userProfile: [UserProfileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-userprofileinfo-0000002238782372)): Promise&lt;void>  更新当前用户的个人信息。 |
+| updateProfile(userProfile: [UserProfileInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-userprofileinfo-0000002238782372)): Promise&lt;void>  更新当前用户的个人信息。 |
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| userProfile | [UserProfileInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-userprofileinfo-0000002238782372) | 必选，个人账户信息类。 |
+| userProfile | [UserProfileInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-userprofileinfo-0000002238782372) | 必选，个人账户信息类。 |
 
 **Return**
 
@@ -563,13 +563,13 @@ auth.getCurrentUser().then(user => {
 
 | Method |
 | --- |
-| userReauthenticate(signInParam: [SignInParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-signinparam-0000002273777089)):   用户登录后重认证。 |
+| userReauthenticate(signInParam: [SignInParam](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinparam-0000002273777089)):   用户登录后重认证。 |
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| signInParam | [SignInParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-signinparam-0000002273777089) | 必选，登录操作的参数类。 |
+| signInParam | [SignInParam](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinparam-0000002273777089) | 必选，登录操作的参数类。 |
 
 **Return**
 

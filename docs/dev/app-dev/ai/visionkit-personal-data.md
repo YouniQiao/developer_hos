@@ -1,6 +1,6 @@
 ---
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/visionkit-personal-data
+original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/corevisionkit-personal-data
 format: md
 ---
 

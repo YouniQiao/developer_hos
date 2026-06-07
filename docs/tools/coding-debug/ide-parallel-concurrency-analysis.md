@@ -1,7 +1,7 @@
 ---
 title: "并行并发：Concurrency分析"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-parallel-concurrency-analysis
+original_url: /docs/tools/coding-debug/ide-parallel-concurrency-analysis
 format: md
 ---
 

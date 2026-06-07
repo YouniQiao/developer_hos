@@ -1,6 +1,6 @@
 ---
 title: "创建元服务工程"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-create-project
+original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-create-project
 format: md
 ---
 
@@ -38,7 +38,7 @@ format: md
 5. 点击**Register APP ID**，在弹窗中填写元服务的基本信息后点击**OK**。
    * **Project**：项目名称。可以输入一个新项目名称，或在下拉框中选择已有项目。
    * **App type**：应用类型为AtomicService元服务。此处不支持修改。
-   * **App name**：元服务在华为应用市场详情页展示的名称。关于元服务名称要求请参考[为元服务创建APP ID](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-atomic-service-0000002247795706#section16423184171915)。
+   * **App name**：元服务在华为应用市场详情页展示的名称。关于元服务名称要求请参考[为元服务创建APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-atomic-service-0000002247795706#section16423184171915)。
    * **App category**：应用分类。
 
    ![](./img/07c5326b.png "点击放大")
@@ -63,8 +63,8 @@ format: md
   + **src &gt; main &gt; ets**：用于存放ArkTS源码。
   + **src &gt; main &gt; ets &gt; entryability**：元服务的入口。
   + **src &gt; main &gt; ets &gt; pages**：元服务包含的页面。
-  + **src &gt; main &gt; resources**：用于存放元服务所用到的资源文件，如图形、多媒体、字符串、布局文件等。关于资源文件，详见[资源分类与访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access)。
-  + **src &gt; main &gt; module.json5**：模块配置文件。主要包含HAP的配置信息、元服务在具体设备上的配置信息以及元服务的全局配置信息。具体的配置文件说明，详见[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)。
+  + **src &gt; main &gt; resources**：用于存放元服务所用到的资源文件，如图形、多媒体、字符串、布局文件等。关于资源文件，详见[资源分类与访问](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access)。
+  + **src &gt; main &gt; module.json5**：模块配置文件。主要包含HAP的配置信息、元服务在具体设备上的配置信息以及元服务的全局配置信息。具体的配置文件说明，详见[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)。
   + **build-profile.json5**：当前的模块信息 、编译信息配置项，包括buildOption、targets配置等。
   + **hvigorfile.ts**：模块级编译构建任务脚本，开发者可以自定义相关任务和代码实现。
 * **oh\_modules**：用于存放三方库依赖包信息。

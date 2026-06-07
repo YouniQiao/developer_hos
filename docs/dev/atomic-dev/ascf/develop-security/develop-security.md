@@ -1,8 +1,8 @@
 ---
 title: "安全"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-security
+original_url: /docs/dev/atomic-dev/ascf/develop-security/develop-security
 format: md
 ---
 
 
-* **[内容风控服务](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/content-moderation-service)**
+* **[内容风控服务](/docs/dev/atomic-dev/ascf/develop-security/content-moderation-service)**

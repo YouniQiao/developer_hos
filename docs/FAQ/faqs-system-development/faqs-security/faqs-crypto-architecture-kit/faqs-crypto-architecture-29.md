@@ -1,6 +1,6 @@
 ---
 title: "如何使用SM3算法生成散列值"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-29
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-29
 format: md
 ---
 

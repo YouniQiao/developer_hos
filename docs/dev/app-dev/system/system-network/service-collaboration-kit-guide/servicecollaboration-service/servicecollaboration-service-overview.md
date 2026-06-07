@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "跨设备互通特性简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service-overview
+original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service/servicecollaboration-service-overview
 format: md
 ---
 

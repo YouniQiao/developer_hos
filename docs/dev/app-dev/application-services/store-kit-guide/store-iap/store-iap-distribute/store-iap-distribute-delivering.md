@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发放数字商品权益"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-distribute-delivering
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-delivering
 format: md
 ---
 
@@ -25,22 +25,22 @@ format: md
 
 ### 消耗型/非消耗型商品
 
-详细开发流程请参考[消耗型/非消耗型商品权益发放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-products)。
+详细开发流程请参考[消耗型/非消耗型商品权益发放](/docs/dev/app-dev/application-services/iap-delivering-products)。
 
 ### 自动续期订阅商品
 
-详细开发流程请参考[自动续期订阅商品权益发放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-subscriptions)。
+详细开发流程请参考[自动续期订阅商品权益发放](/docs/dev/app-dev/application-services/iap-delivering-subscriptions)。
 
 ### 非续期订阅商品
 
-详细开发流程请参考[非续期订阅商品权益发放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-nonrenewable)。
+详细开发流程请参考[非续期订阅商品权益发放](/docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-nonrenewable/iap-delivering-nonrenewable)。
 
 ## 单机应用权益发放
 
 ### 非消耗型商品
 
-详细开发流程请参考[单机应用权益发放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-products#单机应用权益发放非消耗型商品)（非消耗型）。
+详细开发流程请参考[单机应用权益发放](/docs/dev/app-dev/application-services/iap-delivering-products#单机应用权益发放非消耗型商品)（非消耗型）。
 
 ### 自动续期订阅商品
 
-详细开发流程请参考[单机应用权益发放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-subscriptions#对生效中的订阅发放权益)（自动续期订阅型）。
+详细开发流程请参考[单机应用权益发放](/docs/dev/app-dev/application-services/iap-delivering-subscriptions#对生效中的订阅发放权益)（自动续期订阅型）。

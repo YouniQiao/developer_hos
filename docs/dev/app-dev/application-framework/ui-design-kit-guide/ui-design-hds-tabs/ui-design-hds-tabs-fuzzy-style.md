@@ -1,6 +1,6 @@
 ---
 title: "设置页签栏的模糊样式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-hds-tabs-fuzzy-style
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs/ui-design-hds-tabs-fuzzy-style
 format: md
 ---
 

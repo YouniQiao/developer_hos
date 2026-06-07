@@ -1,6 +1,6 @@
 ---
 title: "DataAbility的生命周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-lifecycle
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-lifecycle
 format: md
 ---
 

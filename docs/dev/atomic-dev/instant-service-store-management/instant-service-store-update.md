@@ -1,6 +1,6 @@
 ---
 title: "更新门店"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-update
+original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-update
 format: md
 ---
 

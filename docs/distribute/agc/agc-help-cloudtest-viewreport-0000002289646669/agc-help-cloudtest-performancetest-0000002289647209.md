@@ -1,6 +1,6 @@
 ---
 title: "性能测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-performancetest-0000002289647209
+original_url: /docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209
 format: md
 ---
 

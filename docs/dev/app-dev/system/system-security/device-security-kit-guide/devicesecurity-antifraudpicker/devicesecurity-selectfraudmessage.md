@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取诈骗消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-selectfraudmessage
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-antifraudpicker/devicesecurity-selectfraudmessage
 format: md
 ---
 
@@ -38,7 +38,7 @@ format: md
 ![](./img/d4a67d04.png)
 
 * 在开发准备过程中，需要申请权限：ohos.permission.USE\_FRAUD\_MESSAGES\_PICKER。
-* 只允许清单内的应用申请该权限，申请方式请参考：[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)
+* 只允许清单内的应用申请该权限，申请方式请参考：[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)
 * 开发者需向用户说明数据使用的目的、方式和范围。
 
 1. 导入Device Security Kit模块及相关公共模块。

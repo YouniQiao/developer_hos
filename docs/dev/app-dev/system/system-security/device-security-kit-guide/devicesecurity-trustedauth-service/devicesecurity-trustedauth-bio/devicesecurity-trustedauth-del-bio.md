@@ -1,6 +1,6 @@
 ---
 title: "关闭指定生物类型认证能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-del-bio
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-bio/devicesecurity-trustedauth-del-bio
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
    import { hilog } from '@kit.PerformanceAnalysisKit';
    ```
 2. 首先开发者需要在服务器查询对应账户是否已开通对应生物特征认证能力，在确认开通后方可发起解绑指定生物类型认证能力请求。
-3. 发起关闭指定生物类型认证能力请求前，需从服务器获取当前账号在[设置数字盾密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd)时获取的authID。
+3. 发起关闭指定生物类型认证能力请求前，需从服务器获取当前账号在[设置数字盾密码](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd)时获取的authID。
 4. 调用数字盾解绑指定生物类型认证能力接口发起关闭对应生物类型认证能力申请。
 
    ```

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "实时竞价"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-real-time-bidding
+original_url: /docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-real-time-bidding
 format: md
 ---
 
@@ -78,7 +78,7 @@ const adRequestParams: advertising.AdRequestParams = {
 
 ![](./img/3b771d40.png)
 
-回传竞价结果，需要申请使用Internet网络权限[ohos.permission.INTERNET](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all#ohospermissioninternet)。详细申请权限流程请参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/development-preparation)。
+回传竞价结果，需要申请使用Internet网络权限[ohos.permission.INTERNET](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all#ohospermissioninternet)。详细申请权限流程请参考[开发准备](/docs/dev/app-dev/application-services/development-preparation)。
 
 | 名称 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |

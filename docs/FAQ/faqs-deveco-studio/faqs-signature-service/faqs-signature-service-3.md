@@ -1,7 +1,7 @@
 ---
 format: md
 title: "输入华为账号后，未出现“允许”按钮，浏览器界面无跳转"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-3
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-3
 ---
 
 

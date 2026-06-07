@@ -1,11 +1,11 @@
 ---
 title: "应用数据备份恢复验证指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-dataclone
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-dataclone
 format: md
 ---
 
 
-为方便开发者验证[应用接入数据备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension)结果，此篇指南介绍了在鸿蒙设备上通过数据克隆应用触发数据备份恢复，以及常见问题说明。
+为方便开发者验证[应用接入数据备份恢复](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension)结果，此篇指南介绍了在鸿蒙设备上通过数据克隆应用触发数据备份恢复，以及常见问题说明。
 
 ## 环境准备
 
@@ -52,7 +52,7 @@ onBackup/onBackupEx未按照规范实现。
 
 **解决措施**
 
-请排查是否符合[应用接入数据备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension)规范，并结合日志分析onBackup/onBackupEx执行流程。
+请排查是否符合[应用接入数据备份恢复](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension)规范，并结合日志分析onBackup/onBackupEx执行流程。
 
 ### 迁移结果显示“应用数据恢复失败”
 
@@ -70,4 +70,4 @@ onBackup/onBackupEx未按照规范实现。
 **解决措施**
 
 1. 在恢复侧设备安装待测试应用。
-2. 请排查是否符合[应用接入数据备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension)规范，并结合日志分析onRestore/onRestoreEx执行流程。
+2. 请排查是否符合[应用接入数据备份恢复](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension)规范，并结合日志分析onRestore/onRestoreEx执行流程。

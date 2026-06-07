@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "推送后台消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-background
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-background
 format: md
 ---
 
@@ -38,8 +38,8 @@ format: md
 * 开发者仅需缓存终端侧的最新一条消息，可不执行步骤2~步骤4。
 * 若开发者需缓存终端侧更多消息，可参考开发步骤2~步骤4开发适配端侧数据库并开启数据代理写入，Push Kit将后台消息写入数据库中，当您的应用进程在前台时，需要自行读取数据库中的消息。
 
-1. 参见指导[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
-2. （可选）应用客户端参见[指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-rdb-store)新建一个数据库（如**pushmessage.db**），并严格按照如下格式创建一张数据表（如**t\_push\_message**）。
+1. 参见指导[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)。
+2. （可选）应用客户端参见[指导](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-rdb-store)新建一个数据库（如**pushmessage.db**），并严格按照如下格式创建一张数据表（如**t\_push\_message**）。
 
    | 字段名称 | 字段类型 | 说明 |
    | --- | --- | --- |
@@ -172,7 +172,7 @@ format: md
    * [projectId]：项目ID，登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“开发与服务”，在项目列表中选择对应的项目，左侧导航栏选择“项目设置”，在该页面获取。
    * Authorization：JWT格式字符串，可参见[Authorization](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-struct#request-header)获取。
    * push-type：6表示后台消息场景。
-   * token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)获取。
+   * token：Push Token，可参见[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)获取。
    * extraData：携带的额外数据，字符串类型。详情请参见[extraData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#backgroundpayload-后台消息)。
    * proxyData（选填）：进程不存在时是否开启数据代理静默写入到应用自身缓存，当前只能传全大写"ENABLE"开启代理。若您不希望开启代理写入，请不要在消息体中填写此字段。详情请参见[proxyData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#backgroundpayload-后台消息)。
 

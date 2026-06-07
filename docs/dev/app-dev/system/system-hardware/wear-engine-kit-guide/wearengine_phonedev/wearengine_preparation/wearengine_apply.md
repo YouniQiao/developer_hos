@@ -1,6 +1,6 @@
 ---
 title: "申请接入Wear Engine服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply
 format: md
 ---
 

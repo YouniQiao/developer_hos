@@ -1,6 +1,6 @@
 ---
 title: "使用AudioCapturer开发音频录制功能(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiocapturer-for-recording
+original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/using-audiocapturer-for-recording
 format: md
 ---
 
@@ -29,7 +29,7 @@ AudioCapturer是音频采集器，用于录制PCM（Pulse Code Modulation）音�
 
    ![](./img/7f666431.png)
 
-   当设置Mic音频源（即[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)为SOURCE\_TYPE\_MIC、SOURCE\_TYPE\_VOICE\_RECOGNITION、SOURCE\_TYPE\_VOICE\_COMMUNICATION、SOURCE\_TYPE\_VOICE\_MESSAGE、SOURCE\_TYPE\_LIVE（从API version 20开始支持））时，需要申请麦克风权限ohos.permission.MICROPHONE，申请方式参考：[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+   当设置Mic音频源（即[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)为SOURCE\_TYPE\_MIC、SOURCE\_TYPE\_VOICE\_RECOGNITION、SOURCE\_TYPE\_VOICE\_COMMUNICATION、SOURCE\_TYPE\_VOICE\_MESSAGE、SOURCE\_TYPE\_LIVE（从API version 20开始支持））时，需要申请麦克风权限ohos.permission.MICROPHONE，申请方式参考：[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
    ```
    import { audio } from '@kit.AudioKit';

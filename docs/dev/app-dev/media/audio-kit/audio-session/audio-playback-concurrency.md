@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "音频焦点介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency
+original_url: /docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency
 format: md
 ---
 
 
 在应用播放或录制声音时，常出现与其他音频流的并发或中断情况，这对用户体验构成显著影响。例如，当应用启动视频播放时，若后台正在播放音乐，用户会期望音乐能自动暂停，以确保视频音频优先播放，这正是音频焦点功能的体现。对于涉及音频服务的应用而言，妥善地管理音频焦点非常重要，它可以显著提升用户的音频体验。
 
-本文档将介绍系统的音频焦点策略，以及应对焦点变化的方法。同时，系统提供了[音频会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management)机制，允许应用自定义其音频流的焦点策略。
+本文档将介绍系统的音频焦点策略，以及应对焦点变化的方法。同时，系统提供了[音频会话管理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management)机制，允许应用自定义其音频流的焦点策略。
 
 ## 音频焦点
 
@@ -18,42 +18,42 @@ format: md
 
 对于应用而言，为了确保为用户提供优质的音频焦点体验，应当注意以下几点：
 
-* 在启动播放或录制操作前，应根据音频的具体用途，选择并[使用合适的音频流类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-and-sourcetype)，即准确设置[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)或[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)。
+* 在启动播放或录制操作前，应根据音频的具体用途，选择并[使用合适的音频流类型](/docs/dev/app-dev/media/audio-kit/using-right-streamusage-and-sourcetype)，即准确设置[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)或[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)。
 * 在播放或录制的过程中，需通过监听音频焦点来[处理音频焦点变化](#处理音频焦点变化)事件，并在接收到音频焦点中断事件（[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)）时，采取相应的处理措施。
-* 如果应用程序有意主动管理音频焦点，可使用[音频会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management)相关的接口进行操作。
+* 如果应用程序有意主动管理音频焦点，可使用[音频会话管理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management)相关的接口进行操作。
 
 ### 申请音频焦点
 
 **当应用开始播放或录制音频时，系统将自动为相应的音频流申请音频焦点。**
 
-例如，应用[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)，当调用AudioRenderer的[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#start8)时，系统会自动为应用请求音频焦点。
+例如，应用[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)，当调用AudioRenderer的[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#start8)时，系统会自动为应用请求音频焦点。
 
 若音频焦点请求成功，音频流将正常启动；反之，若音频焦点请求被拒绝，音频流将无法开始播放或录制。
 
 建议应用主动通过监听音频焦点来[处理音频焦点变化](#处理音频焦点变化)事件，一旦音频焦点请求被拒绝，应用将接收到音频焦点事件（[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)）。
 
-如果应用希望只申请一次焦点，连续播放多条音频流不被中断，可使用[音频会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management)相关的接口进行操作。
+如果应用希望只申请一次焦点，连续播放多条音频流不被中断，可使用[音频会话管理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management)相关的接口进行操作。
 
 **特殊场景：**
 
-1. **短音播放**：若应用[使用SoundPool播放短音频(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-soundpool-for-playback)，且[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)指定为Music、Movie、AudioBook等类型，播放短音，则其申请焦点时默认为并发模式，不会影响其他音频。
+1. **短音播放**：若应用[使用SoundPool播放短音频(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-soundpool-for-playback)，且[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)指定为Music、Movie、AudioBook等类型，播放短音，则其申请焦点时默认为并发模式，不会影响其他音频。
 2. **静音播放**：若应用以静音状态开始播放音频（或视频），并且希望静音阶段不影响其他音频，当后续解除静音的时候，再以正常策略申请音频焦点，则可以调用静音并发播放模式的相关接口。具体可参考：
 
-   * [使用AVPlayer播放音频(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avplayer-for-playback)，可以调用[setMediaMuted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer#setmediamuted12)函数。
-   * [使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)，可调用[setSilentModeAndMixWithOthers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#setsilentmodeandmixwithothers12)函数。
-   * [使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)，可调用[OH\_AudioRenderer\_SetSilentModeAndMixWithOthers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiorenderer-h#oh_audiorenderer_setsilentmodeandmixwithothers)函数。
+   * [使用AVPlayer播放音频(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-avplayer-for-playback)，可以调用[setMediaMuted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer#setmediamuted12)函数。
+   * [使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)，可调用[setSilentModeAndMixWithOthers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#setsilentmodeandmixwithothers12)函数。
+   * [使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)，可调用[OH\_AudioRenderer\_SetSilentModeAndMixWithOthers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiorenderer-h#oh_audiorenderer_setsilentmodeandmixwithothers)函数。
 
 ### 释放音频焦点
 
 **当应用结束播放或录制音频时，系统会自动为相应的音频流释放音频焦点。**
 
-例如，应用[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)，当调用AudioRenderer的[pause](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#pause8)、[stop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#stop8)、[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#release8)等时，系统会为其释放音频焦点。
+例如，应用[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)，当调用AudioRenderer的[pause](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#pause8)、[stop](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#stop8)、[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#release8)等时，系统会为其释放音频焦点。
 
 当音频流释放音频焦点时，若存在受其影响的其他音频流（如音量被调低或被暂停的流），将触发恢复操作。
 
-如果应用不希望在音频流停止时立即释放音频焦点，可使用[音频会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management)的相关接口，实现音频焦点释放的延迟效果。
+如果应用不希望在音频流停止时立即释放音频焦点，可使用[音频会话管理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management)的相关接口，实现音频焦点释放的延迟效果。
 
-如果应用通过激活[音频会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management)申请过焦点，需要结束AudioSession以释放焦点。
+如果应用通过激活[音频会话管理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management)申请过焦点，需要结束AudioSession以释放焦点。
 
 ### 音频焦点策略
 
@@ -61,7 +61,7 @@ format: md
 
 系统预设的默认音频焦点策略，主要依据音频流类型（即播放流的[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)和录制流的[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)）及音频流启动的顺序进行决策。
 
-为防止焦点变化不符合预期，应用在启动播放或录制前，应根据音频流的用途，准确设置StreamUsage或SourceType。关于各类型的详细说明，请参考[使用合适的音频流类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-and-sourcetype)。
+为防止焦点变化不符合预期，应用在启动播放或录制前，应根据音频流的用途，准确设置StreamUsage或SourceType。关于各类型的详细说明，请参考[使用合适的音频流类型](/docs/dev/app-dev/media/audio-kit/using-right-streamusage-and-sourcetype)。
 
 常见的音频焦点场景示例如下：
 
@@ -71,7 +71,7 @@ format: md
 * VoiceCommunication开始播放时，将暂停正在播放的Music音频流，VoiceCommunication停止后，Music将收到恢复播放的通知。
 * 开始录制VoiceMessage时，Music音频流会被暂停，VoiceMessage录制停止后，Music将收到恢复播放的通知。
 
-若默认的音频焦点策略无法满足特定场景的需求，应用程序可利用[音频会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management)，调整本应用音频流所采用的音频焦点策略。
+若默认的音频焦点策略无法满足特定场景的需求，应用程序可利用[音频会话管理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management)，调整本应用音频流所采用的音频焦点策略。
 
 ### 焦点模式
 
@@ -86,10 +86,10 @@ format: md
 
 设置焦点模式的方法：
 
-* 若[使用AVPlayer播放音频(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avplayer-for-playback)，则可以通过修改AVPlayer的[audioInterruptMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer#属性)属性进行设置。
-* 若[使用AVPlayer播放音频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-playback)，则可以调用[OH\_AVPlayer\_SetAudioInterruptMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-h#oh_avplayer_setaudiointerruptmode)函数进行设置。
-* 若[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)，则可以调用[setInterruptMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#setinterruptmode9)函数进行设置。
-* 若[使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)，则可以调用[OH\_AudioStreamBuilder\_SetRendererInterruptMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setrendererinterruptmode)函数进行设置。
+* 若[使用AVPlayer播放音频(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-avplayer-for-playback)，则可以通过修改AVPlayer的[audioInterruptMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer#属性)属性进行设置。
+* 若[使用AVPlayer播放音频(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-avplayer-for-playback)，则可以调用[OH\_AVPlayer\_SetAudioInterruptMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-h#oh_avplayer_setaudiointerruptmode)函数进行设置。
+* 若[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)，则可以调用[setInterruptMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#setinterruptmode9)函数进行设置。
+* 若[使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)，则可以调用[OH\_AudioStreamBuilder\_SetRendererInterruptMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setrendererinterruptmode)函数进行设置。
 
 ### 处理音频焦点变化
 
@@ -99,12 +99,12 @@ format: md
 
 **使用不同方式开发时，如何监听音频焦点事件：**
 
-* 若[使用AVPlayer播放音频(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avplayer-for-playback)，可以调用[on('audioInterrupt')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer#onaudiointerrupt9)接口，监听音频焦点事件[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)。
-* 若[使用AVPlayer播放音频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-playback)，可以调用[OH\_AVPlayer\_SetOnInfoCallback()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-h#oh_avplayer_setoninfocallback)接口，监听音频焦点事件[OH\_AVPlayerOnInfoCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-base-h#oh_avplayeroninfocallback)。
-* 若[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)，可以调用[on('audioInterrupt')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#onaudiointerrupt9)接口，监听音频焦点事件[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)。
-* 若[使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)，可以调用[OH\_AudioStreamBuilder\_SetRendererCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setrenderercallback)接口，监听音频焦点事件[OH\_AudioRenderer\_OnInterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiorenderer-callbacks-struct#oh_audiorenderer_oninterruptevent)。
-* 若[使用AudioCapturer开发音频录制功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiocapturer-for-recording)，可以调用[on('audioInterrupt')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiocapturer#onaudiointerrupt10)接口，监听音频焦点事件[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)。
-* 若[使用OHAudio开发音频录制功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording)，可以调用[OH\_AudioStreamBuilder\_SetCapturerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setcapturercallback)接口，监听音频焦点事件[OH\_AudioCapturer\_OnInterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiocapturer-callbacks-struct#oh_audiocapturer_oninterruptevent)。
+* 若[使用AVPlayer播放音频(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-avplayer-for-playback)，可以调用[on('audioInterrupt')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer#onaudiointerrupt9)接口，监听音频焦点事件[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)。
+* 若[使用AVPlayer播放音频(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-avplayer-for-playback)，可以调用[OH\_AVPlayer\_SetOnInfoCallback()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-h#oh_avplayer_setoninfocallback)接口，监听音频焦点事件[OH\_AVPlayerOnInfoCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-base-h#oh_avplayeroninfocallback)。
+* 若[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)，可以调用[on('audioInterrupt')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#onaudiointerrupt9)接口，监听音频焦点事件[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)。
+* 若[使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)，可以调用[OH\_AudioStreamBuilder\_SetRendererCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setrenderercallback)接口，监听音频焦点事件[OH\_AudioRenderer\_OnInterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiorenderer-callbacks-struct#oh_audiorenderer_oninterruptevent)。
+* 若[使用AudioCapturer开发音频录制功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-audiocapturer-for-recording)，可以调用[on('audioInterrupt')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiocapturer#onaudiointerrupt10)接口，监听音频焦点事件[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)。
+* 若[使用OHAudio开发音频录制功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording)，可以调用[OH\_AudioStreamBuilder\_SetCapturerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setcapturercallback)接口，监听音频焦点事件[OH\_AudioCapturer\_OnInterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiocapturer-callbacks-struct#oh_audiocapturer_oninterruptevent)。
 
 应用在收到音频焦点事件（[InterruptEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#interruptevent9)）时，需要根据其中信息，做出相应的处理，以保持应用与系统状态一致，带给用户良好的音频体验。
 
@@ -148,7 +148,7 @@ format: md
 
 **处理音频焦点示例:**
 
-为了带给用户更好的音频体验，针对不同的音频焦点事件内容，应用需要做出相应的处理操作。此处以[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)为例，展示推荐应用采取的处理方法，提供伪代码供开发者参考。
+为了带给用户更好的音频体验，针对不同的音频焦点事件内容，应用需要做出相应的处理操作。此处以[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)为例，展示推荐应用采取的处理方法，提供伪代码供开发者参考。
 
 在监听音频播放焦点变化事件之前，需要先获取[AudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-f#audiocreateaudiorenderer8)实例。若使用其他接口开发音频播放或音频录制功能，处理方法类似，具体的代码实现，开发者可结合实际情况编写，处理方法也可自行调整。
 

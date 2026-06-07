@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何自定义Video组件控制栏样式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-97
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-97
 ---
 
 
@@ -102,4 +102,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[Video](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-video-player)
+[Video](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-common-components-video-player)

@@ -1,6 +1,6 @@
 ---
 title: "创建队伍"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-creategroup-csharp-0000002395350465
+original_url: /docs/dev/game-dev/gameobe-creategroup-csharp-0000002395350465
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已[初始化联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-csharp-0000002361510612)。
+您已[初始化联机对战SDK](/docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612)。
 
 ## 开发步骤
 
@@ -17,7 +17,7 @@ format: md
 
    ![](./img/bc48712b.png)
 
-   队长成功创建队伍后，会生成一个队伍ID，可将该队伍ID信息分享给其他好友玩家，其他好友玩家可凭借此队伍ID[加入该队伍](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-joingroup-csharp-0000002361510660)中。
+   队长成功创建队伍后，会生成一个队伍ID，可将该队伍ID信息分享给其他好友玩家，其他好友玩家可凭借此队伍ID[加入该队伍](/docs/dev/game-dev/gameobe-joingroup-csharp-0000002361510660)中。
 
    ```
    CreateGroupConfig createGroupConfig = new CreateGroupConfig

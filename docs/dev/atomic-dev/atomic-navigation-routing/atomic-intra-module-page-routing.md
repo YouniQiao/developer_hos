@@ -1,6 +1,6 @@
 ---
 title: "模块内页面路由"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-intra-module-page-routing
+original_url: /docs/dev/atomic-dev/atomic-navigation-routing/atomic-intra-module-page-routing
 format: md
 ---
 

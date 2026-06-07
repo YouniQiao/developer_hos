@@ -1,11 +1,11 @@
 ---
 title: "不依赖UI组件的全局气泡提示 (openPopup)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-uicontext-popup
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-and-menu-components-uicontext-popup
 format: md
 ---
 
 
-[气泡提示（Popup）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-popup)在使用时依赖绑定UI组件，否则无法使用。从API version 18开始，可以通过使用全局接口[openPopup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#openpopup18)的方式，在无UI组件的场景下直接或封装使用，例如在事件回调中使用或封装后对外提供能力。
+[气泡提示（Popup）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-and-menu-components-popup)在使用时依赖绑定UI组件，否则无法使用。从API version 18开始，可以通过使用全局接口[openPopup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#openpopup18)的方式，在无UI组件的场景下直接或封装使用，例如在事件回调中使用或封装后对外提供能力。
 
 ## 弹出气泡
 
@@ -211,7 +211,7 @@ this.promptAction.closePopup(this.contentNode)
 
 ## 在HAR包中使用全局气泡提示
 
-以下示例通过[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)包封装一个Popup，从而对外提供气泡的弹出、更新和关闭能力。
+以下示例通过[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)包封装一个Popup，从而对外提供气泡的弹出、更新和关闭能力。
 
 ```
 import { BusinessError } from '@kit.BasicServicesKit';

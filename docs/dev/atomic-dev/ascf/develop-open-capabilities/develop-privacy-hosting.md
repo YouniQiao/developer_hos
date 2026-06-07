@@ -1,6 +1,6 @@
 ---
 title: "隐私托管"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-privacy-hosting
+original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-privacy-hosting
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 * 元服务不允许开发者使用自行设计的隐私弹窗。
 * 元服务不允许同时弹出多个隐私弹框影响用户体验。
 
-接入隐私托管后，开发者仅需要配置隐私协议内容，用户协议。接入方法请参考：[托管隐私声明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-atomic-0000002317135133)。
+接入隐私托管后，开发者仅需要配置隐私协议内容，用户协议。接入方法请参考：[托管隐私声明](/docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-atomic-0000002317135133)。
 
 一般要求隐私协议被同意后才能进行权限申请和业务逻辑处理。可以参考如下方法监听隐私同意事件：
 

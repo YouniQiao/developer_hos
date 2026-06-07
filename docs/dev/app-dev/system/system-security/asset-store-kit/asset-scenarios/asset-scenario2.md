@@ -1,6 +1,6 @@
 ---
 title: "保护需要用户认证的密码类数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-scenario2
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-scenarios/asset-scenario2
 format: md
 ---
 
@@ -27,12 +27,12 @@ format: md
 
 1. 业务查询符合条件的关键资产属性，根据查询成功或失败，判断关键资产是否存在。
 
-   * 开发步骤参考[查询关键资产](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query)，代码示例参考[查询单条关键资产属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query#查询单条关键资产属性)。
+   * 开发步骤参考[查询关键资产](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query)，代码示例参考[查询单条关键资产属性](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query#查询单条关键资产属性)。
 2. 如果关键资产不存在，业务可选择：
 
-   * 新增关键资产，开发步骤参考[新增关键资产](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-add)。
+   * 新增关键资产，开发步骤参考[新增关键资产](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-add)。
 3. 如果关键资产存在，业务可选择：
 
-   * 删除关键资产，开发步骤参考[删除关键资产](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-remove)。
-   * 更新关键资产，开发步骤参考[更新关键资产](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-update)。
-   * 查询关键资产明文，开发步骤包括预处理、用户认证、查询明文、后置处理，参考[查询需要用户认证的关键资产](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query-auth)。
+   * 删除关键资产，开发步骤参考[删除关键资产](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-remove)。
+   * 更新关键资产，开发步骤参考[更新关键资产](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-update)。
+   * 查询关键资产明文，开发步骤包括预处理、用户认证、查询明文、后置处理，参考[查询需要用户认证的关键资产](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query-auth)。

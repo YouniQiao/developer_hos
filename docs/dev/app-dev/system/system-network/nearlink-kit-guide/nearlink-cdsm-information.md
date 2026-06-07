@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取星闪合作设备集合信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-cdsm-information
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-cdsm-information
 format: md
 ---
 

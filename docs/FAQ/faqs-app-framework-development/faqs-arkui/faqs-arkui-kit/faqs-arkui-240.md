@@ -1,7 +1,7 @@
 ---
 format: md
 title: "创建subwindow默认是否铺满全屏，铺满全屏时如何隐藏状态栏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-240
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-240
 ---
 
 

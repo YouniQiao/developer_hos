@@ -1,6 +1,6 @@
 ---
 title: "查看告警记录"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-alarm-record-0000002240263154
+original_url: /docs/distribute/agc/agc-help-cloudmonitor-alarm-0000002236492408/agc-help-cloudmonitor-alarm-record-0000002240263154
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "服务卡片开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-widget-development
+original_url: /docs/dev/atomic-dev/atomic-service-development/atomic-widget-development
 format: md
 ---
 

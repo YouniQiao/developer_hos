@@ -1,6 +1,6 @@
 ---
 title: "在AGC控制台人工送检"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-agc-0000002304504622
+original_url: /docs/dev/game-dev/games-gamemme-riskcontrol-agc-0000002304504622
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已[开启内容检测](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section17288256144510)功能。
+您已[开启内容检测](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section17288256144510)功能。
 
 ## 操作步骤
 

@@ -1,13 +1,13 @@
 ---
 title: "加密/解密介绍及算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-overview
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-encryption-decryption/huks-encryption-decryption-overview
 format: md
 ---
 
 
 在HUKS中已经有密钥，需要对一段数据加密或是解密，均可以使用HUKS完成加密/解密操作。
 
-从API 23开始支持[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)特性。
+从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。
 
 ## 支持的算法
 

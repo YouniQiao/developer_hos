@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "取消通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-cancel
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-cancel
 format: md
 ---
 
@@ -46,7 +46,7 @@ format: md
 
 2. 发布通知。
 
-   参考[发布文本类型通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-notification)。
+   参考[发布文本类型通知](/docs/dev/app-dev/application-services/notification-kit/publish-notification/text-notification)。
 3. 取消通知。
 
    ```

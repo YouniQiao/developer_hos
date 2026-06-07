@@ -1,7 +1,7 @@
 ---
 title: "流量规范"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk-rule-traffic-0000001597301869
+original_url: /docs/monetize/monetization/agd_pro_sdk-rule-traffic-0000001597301869
 format: md
 ---
 

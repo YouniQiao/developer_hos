@@ -1,22 +1,22 @@
 ---
 title: "表单组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-form-components
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-form-components
 format: md
 ---
 
 
-* **[button](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-button)**
-* **[checkbox](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-checkbox)**
-* **[checkbox-group](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-checkbox-group)**
-* **[form](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-form)**
-* **[input](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-input)**
-* **[label](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-label)**
-* **[picker](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker)**
-* **[picker-view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker-view)**
-* **[picker-view-column](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker-view-column)**
-* **[radio](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-radio)**
-* **[radio-group](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-radio-group)**
-* **[slider](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-slider)**
-* **[switch](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-switch)**
-* **[textarea](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-textarea)**
-* **[editor](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-editor)**
+* **[button](/docs/dev/atomic-dev/ascf/components-form-components/components-button)**
+* **[checkbox](/docs/dev/atomic-dev/ascf/components-form-components/components-checkbox)**
+* **[checkbox-group](/docs/dev/atomic-dev/ascf/components-form-components/components-checkbox-group)**
+* **[form](/docs/dev/atomic-dev/ascf/components-form-components/components-form)**
+* **[input](/docs/dev/atomic-dev/ascf/components-form-components/components-input)**
+* **[label](/docs/dev/atomic-dev/ascf/components-form-components/components-label)**
+* **[picker](/docs/dev/atomic-dev/ascf/components-form-components/components-picker)**
+* **[picker-view](/docs/dev/atomic-dev/ascf/components-form-components/components-picker-view)**
+* **[picker-view-column](/docs/dev/atomic-dev/ascf/components-form-components/components-picker-view-column)**
+* **[radio](/docs/dev/atomic-dev/ascf/components-form-components/components-radio)**
+* **[radio-group](/docs/dev/atomic-dev/ascf/components-form-components/components-radio-group)**
+* **[slider](/docs/dev/atomic-dev/ascf/components-form-components/components-slider)**
+* **[switch](/docs/dev/atomic-dev/ascf/components-form-components/components-switch)**
+* **[textarea](/docs/dev/atomic-dev/ascf/components-form-components/components-textarea)**
+* **[editor](/docs/dev/atomic-dev/ascf/components-form-components/components-editor)**

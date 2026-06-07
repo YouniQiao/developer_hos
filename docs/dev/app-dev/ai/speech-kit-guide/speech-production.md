@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Speech Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-production
+original_url: /docs/dev/app-dev/ai/speech-kit-guide/speech-production
 format: md
 ---
 

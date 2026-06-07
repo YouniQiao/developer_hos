@@ -1,6 +1,6 @@
 ---
 title: "如何判断蜂窝信号强度"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-telephony-1
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-telephony-kit/faqs-telephony-1
 format: md
 ---
 

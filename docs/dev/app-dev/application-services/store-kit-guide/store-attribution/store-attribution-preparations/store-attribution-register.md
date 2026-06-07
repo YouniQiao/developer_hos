@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理归因角色"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-register
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-register
 format: md
 ---
 
@@ -34,7 +34,7 @@ format: md
 
 ## 生成密钥对
 
-可参考HarmonyOS[提供的API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoframework#cryptoframeworkcreatesign)生成用于签名/验签的密钥对，或者自行选取方法生成（推荐[使用JavaScript的库线下生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config#生成商户证书)）。
+可参考HarmonyOS[提供的API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoframework#cryptoframeworkcreatesign)生成用于签名/验签的密钥对，或者自行选取方法生成（推荐[使用JavaScript的库线下生成](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config#生成商户证书)）。
 
 ![](./img/78ae3d53.png)
 
@@ -57,7 +57,7 @@ format: md
    | --- | --- |
    | 角色 | 选择应用生态伙伴的角色，角色包括：分发平台、监测平台、开发者。 |
    | 名称 | 填写分发平台、监测平台或开发者的名称。 |
-   | 公钥 | 填写已[生成密钥对](#生成密钥对)中的公钥。应用生态伙伴按照[生成签名方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-attribution-appendix-triger#生成签名方法)生成签名时，使用该公钥对应的私钥并遵照应用归因服务定义的[归因来源签名计算规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-attribution-appendix-triger#归因来源签名计算规则)，应用归因平台使用该公钥对签名值做验签。 |
+   | 公钥 | 填写已[生成密钥对](#生成密钥对)中的公钥。应用生态伙伴按照[生成签名方法](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-attribution-appendix-triger#生成签名方法)生成签名时，使用该公钥对应的私钥并遵照应用归因服务定义的[归因来源签名计算规则](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-attribution-appendix-triger#归因来源签名计算规则)，应用归因平台使用该公钥对签名值做验签。 |
    | 回传地址 | 填写用于接收华为应用归因回传归因结果的URL，推荐使用HTTPS协议。 |
 5. 注册信息填写完毕后，点击“提交”，生成一条状态是“新建待审核”的注册信息，后台运营人员进行审核，审核生效后，完成注册。
 

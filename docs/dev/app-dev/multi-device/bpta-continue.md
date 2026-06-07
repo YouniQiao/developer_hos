@@ -1,7 +1,7 @@
 ---
 title: "内容编辑多设备协同"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue
+original_url: /docs/dev/app-dev/multi-device/bpta-continue
 format: md
 ---
 
@@ -44,7 +44,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/7c/v3/z6g2ZbZ1RYCyltzHW4ovbA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074001Z&HW-CC-Expire=86400&HW-CC-Sign=E4DF5BB72ACB57D238505923D7F4E3D24EF7FBA0DFEB7086D70D6C3F57D19104)
 
-该功能的使用需满足设备限制和使用限制，具体约束与限制可参考：跨设备互通开发指导中的[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-dev-guides#约束与限制)章节。
+该功能的使用需满足设备限制和使用限制，具体约束与限制可参考：跨设备互通开发指导中的[约束与限制](/docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service/servicecollaboration-dev-guides#约束与限制)章节。
 
 **实现效果**
 
@@ -62,7 +62,7 @@ format: md
 
 **关键技术**
 
-在分布式协同框架下，针对跨设备互通图片信息的业务场景，应用只需要调用[createCollaborationServiceMenuItems()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-collaborationservice#createcollaborationservicemenuitems)（相机设备列表组件）和[CollaborationServiceStateDialog()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-collaborationservice#collaborationservicestatedialog)（远端相机状态弹窗组件）两个组件，即可完成跨端拍照、扫描、图库访问能力，开发者无需关注分布式场景下的数据传输和指令控制等细节，具体运作机制可参考：跨设备互通特性简介中的[运作机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service-overview#运作机制)章节。
+在分布式协同框架下，针对跨设备互通图片信息的业务场景，应用只需要调用[createCollaborationServiceMenuItems()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-collaborationservice#createcollaborationservicemenuitems)（相机设备列表组件）和[CollaborationServiceStateDialog()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-collaborationservice#collaborationservicestatedialog)（远端相机状态弹窗组件）两个组件，即可完成跨端拍照、扫描、图库访问能力，开发者无需关注分布式场景下的数据传输和指令控制等细节，具体运作机制可参考：跨设备互通特性简介中的[运作机制](/docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service/servicecollaboration-service-overview#运作机制)章节。
 
 ###实现方案
 
@@ -153,7 +153,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/2e/v3/M6sdCnEXRXy1m-Q1itr5mw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074001Z&HW-CC-Expire=86400&HW-CC-Sign=6264070154AA59D06602B838ECB4CCFF200A27B634040E192C7ABC235A5DA50A)
 
-该功能的使用需满足设备限制和使用限制，具体约束与限制可参考：[跨设备拖拽约束与限制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distribute-drag-cast#section990465462314)。
+该功能的使用需满足设备限制和使用限制，具体约束与限制可参考：[跨设备拖拽约束与限制](/docs/dev/app-dev/multi-device/bpta-distribute-drag-cast#section990465462314)。
 
 **实现效果**
 
@@ -171,7 +171,7 @@ format: md
 
 **关键技术**
 
-在开发跨设备拖拽功能时，系统会自动处理鼠标和键盘的跨设备操作及数据传递。应用可以根据实际需求，实现组件的拖入或拖出，完成拖拽事件的开发。具体运作机制可参考：[跨设备拖拽运作机制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distribute-drag-cast#section1457705692219)。
+在开发跨设备拖拽功能时，系统会自动处理鼠标和键盘的跨设备操作及数据传递。应用可以根据实际需求，实现组件的拖入或拖出，完成拖拽事件的开发。具体运作机制可参考：[跨设备拖拽运作机制](/docs/dev/app-dev/multi-device/bpta-distribute-drag-cast#section1457705692219)。
 
 ###实现方案
 
@@ -270,7 +270,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/5a/v3/3jLrdRsuRdqH5eRDYt5eJA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074001Z&HW-CC-Expire=86400&HW-CC-Sign=96660767EC6081329B79DCA720C6B1F00D80F3AD4175457ACFD2F06FD88261C8)
 
-该功能的使用需满足设备限制和使用限制，具体约束与限制可参考：[跨设备剪贴板约束与限制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distributed-pasteboard-cast#section42331744172619)。
+该功能的使用需满足设备限制和使用限制，具体约束与限制可参考：[跨设备剪贴板约束与限制](/docs/dev/app-dev/multi-device/bpta-distributed-pasteboard-cast#section42331744172619)。
 
 **实现效果**
 
@@ -290,7 +290,7 @@ format: md
 
 **关键技术**
 
-在开发跨设备剪贴板功能时，系统会自动处理设备间的数据传输，应用程序可根据实际需求接入跨设备剪贴板，实现跨设备间的数据共享。具体运作机制可参考：[跨设备剪贴板运作机制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distributed-pasteboard-cast#section111721843182510)。
+在开发跨设备剪贴板功能时，系统会自动处理设备间的数据传输，应用程序可根据实际需求接入跨设备剪贴板，实现跨设备间的数据共享。具体运作机制可参考：[跨设备剪贴板运作机制](/docs/dev/app-dev/multi-device/bpta-distributed-pasteboard-cast#section111721843182510)。
 
 ###实现方案
 
@@ -360,7 +360,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/4d/v3/lSdDhKDMRc-xzjq3YUytRg/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074001Z&HW-CC-Expire=86400&HW-CC-Sign=B50DC51B8D294363E8BF168C8FD4DA530A9CBA089040C6BBAAA8E7F277AA7C46)
 
-该功能的使用需满足设备限制和使用限制，具体约束与限制可参考：[应用接续约束与限制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section157187257261)。
+该功能的使用需满足设备限制和使用限制，具体约束与限制可参考：[应用接续约束与限制](/docs/dev/app-dev/multi-device/bpta-continue-cast#section157187257261)。
 
 **实现效果**
 
@@ -380,7 +380,7 @@ format: md
 
 **关键技术**
 
-将发起接续的设备称为本端设备，接收数据的设备称为远端设备，运作机制如图，接续过程底层依赖分布式框架和软总线，开发者只需要启用接续、保存数据和恢复数据，具体运作机制可参考：[应用接续运作机制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section1218874218264)。
+将发起接续的设备称为本端设备，接收数据的设备称为远端设备，运作机制如图，接续过程底层依赖分布式框架和软总线，开发者只需要启用接续、保存数据和恢复数据，具体运作机制可参考：[应用接续运作机制](/docs/dev/app-dev/multi-device/bpta-continue-cast#section1218874218264)。
 
 ###实现方案
 

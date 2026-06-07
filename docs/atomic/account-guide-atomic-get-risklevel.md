@@ -1,6 +1,6 @@
 ---
 title: "获取风险等级"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-risklevel
+original_url: /docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-risklevel
 format: md
 ---
 
@@ -24,7 +24,7 @@ Account Kit提供的风险等级如下：
 
 ## 约束与限制
 
-获取用户风险等级scope仅支持与openid、profile组合使用，如果需要同时获取手机号和风险等级可参考场景化控件[获取手机号和风险等级Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-get-risklevel)，接口支持的全量scopes见[scope列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)。
+获取用户风险等级scope仅支持与openid、profile组合使用，如果需要同时获取手机号和风险等级可参考场景化控件[获取手机号和风险等级Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-get-risklevel)，接口支持的全量scopes见[scope列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)。
 
 ## 业务流程
 
@@ -50,10 +50,10 @@ Account Kit提供的风险等级如下：
 
 ## 开发前提
 
-1. 在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-sign-fingerprints)、[配置Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)。
+1. 在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-sign-fingerprints)、[配置Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)。
 2. 元服务在使用获取风险等级能力之前，需要完成对应的scope权限申请。
 
-   scope权限申请审批未完成或未通过，将报错[1001502014 应用未申请scopes或permissions权限](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-faq#section1001502014-应用未申请scopes或permissions权限的可能原因和解决方法)。当前可通过发送邮件至accountkit@huawei.com进行申请。
+   scope权限申请审批未完成或未通过，将报错[1001502014 应用未申请scopes或permissions权限](/docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-faq#section1001502014-应用未申请scopes或permissions权限的可能原因和解决方法)。当前可通过发送邮件至accountkit@huawei.com进行申请。
 
    请提供如下信息进行申请，我们会在1-2个工作日内回复申请结果，请您留意邮箱消息。
 

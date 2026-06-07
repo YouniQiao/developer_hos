@@ -1,13 +1,13 @@
 ---
 title: "申请调试Profile"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278
+original_url: /docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278
 format: md
 ---
 
 
 ![](../img/agc-help-debug-profile-0000002248181278_0.png)
 
-申请ACL权限的入口已调整至项目下的“ACL权限”页签，创建Profile时仅支持添加已获取的ACL权限。如需使用ACL权限，请先参考[申请ACL权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-acl-0000002394212138)获取ACL权限，再创建Profile。
+申请ACL权限的入口已调整至项目下的“ACL权限”页签，创建Profile时仅支持添加已获取的ACL权限。如需使用ACL权限，请先参考[申请ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138)获取ACL权限，再创建Profile。
 
 在调试阶段，如果您需要使用手动签名，必须配置调试Profile。请参考本文档申请并下载调试Profile，手动签名的完整操作请参考[配置调试签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
 
@@ -17,10 +17,10 @@ format: md
 
 #### 前提条件
 
-* 已[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506) | [创建元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-atomic-service-0000002247795706)。
-* 已[申请调试证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-cert-0000002283256797)，并[注册调试设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-device-0000002283189937)。
-* （如需使用ACL权限）已[申请并获取ACL权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-acl-0000002394212138)。
-* 当前账号角色已[获取“访问调试类Profile”权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
+* 已[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506) | [创建元服务](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-atomic-service-0000002247795706)。
+* 已[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)，并[注册调试设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)。
+* （如需使用ACL权限）已[申请并获取ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138)。
+* 当前账号角色已[获取“访问调试类Profile”权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
 
 #### 操作步骤
 
@@ -50,12 +50,12 @@ format: md
 
    ![](../img/agc-help-debug-profile-0000002248181278_5.png)
 
-   若应用/元服务尚未获取任何ACL权限、或者您想增加更多ACL权限，可点击界面下方的“去申请”，前往“ACL权限”页面申请获取，具体操作请参见[申请ACL权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-acl-0000002394212138#section156171230179)。获取ACL权限后，再参考本文档添加最新权限到Profile内。
+   若应用/元服务尚未获取任何ACL权限、或者您想增加更多ACL权限，可点击界面下方的“去申请”，前往“ACL权限”页面申请获取，具体操作请参见[申请ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138#section156171230179)。获取ACL权限后，再参考本文档添加最新权限到Profile内。
 
    ![](../img/agc-help-debug-profile-0000002248181278_6.png "点击放大")
 5. 点击右上角“添加”，调试Profile申请成功。
 
-   如果当前应用/元服务尚未配置Profile关联的调试证书对应的指纹，还会提示您进行配置，具体操作可参考[配置公钥指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-fingerprint-0000002278002933)。此操作只有应用/元服务集成了依赖公钥指纹的华为开放能力时才需执行，如不涉及请忽略。
+   如果当前应用/元服务尚未配置Profile关联的调试证书对应的指纹，还会提示您进行配置，具体操作可参考[配置公钥指纹](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-fingerprint-0000002278002933)。此操作只有应用/元服务集成了依赖公钥指纹的华为开放能力时才需执行，如不涉及请忽略。
 
    ![](../img/agc-help-debug-profile-0000002248181278_7.png)
 6. 点击“下载”，将生成的Profile保存至本地，供后续签名使用。
@@ -71,6 +71,6 @@ format: md
    ![](../img/agc-help-debug-profile-0000002248181278_10.png)
 
    * 修改调试设备后，会生成新的调试Profile，请在生效后重新下载调试Profile。
-   * 如后续需添加新的调试设备，请先参考[注册设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-device-0000002283189937)将新设备添加到AppGallery Connect设备列表，再点击“编辑设备”新增选择该设备，之后重新下载调试Profile即可。
+   * 如后续需添加新的调试设备，请先参考[注册设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)将新设备添加到AppGallery Connect设备列表，再点击“编辑设备”新增选择该设备，之后重新下载调试Profile即可。
 
    ![](../img/agc-help-debug-profile-0000002248181278_11.png)

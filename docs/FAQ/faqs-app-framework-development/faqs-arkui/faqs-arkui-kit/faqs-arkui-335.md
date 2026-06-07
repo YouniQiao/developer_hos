@@ -1,7 +1,7 @@
 ---
 format: md
 title: "常用可以设置'auto'的属性的组件及其含义的介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-335
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-335
 ---
 
 

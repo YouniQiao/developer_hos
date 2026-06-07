@@ -1,6 +1,6 @@
 ---
 title: "Mechanic Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mechanic-kit-intro
+original_url: /docs/dev/app-dev/system/system-hardware/mechanic-kit/mechanic-kit-intro
 format: md
 ---
 

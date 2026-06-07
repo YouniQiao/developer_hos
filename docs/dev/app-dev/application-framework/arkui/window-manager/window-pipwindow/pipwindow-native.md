@@ -1,6 +1,6 @@
 ---
 title: "使用NDK接口实现画中画功能开发（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-native
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-native
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
 
 以上步骤涉及的各文件及示例可见下文。
 
-Node-API模块注册，具体使用请参考[Native API在应用工程中的使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines)。
+Node-API模块注册，具体使用请参考[Native API在应用工程中的使用指导](/docs/dev/ndk-dev/napi-guidelines)。
 
 本文件仅作为参考示例，异常处理及错误码打印由开发者按需处理。
 
@@ -513,7 +513,7 @@ export default class EntryAbility extends UIAbility {
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUIWindowPipSamples/WindowPip/entry/src/main/ets/entryability/EntryAbility.ets#L17-L101" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>
 
 
-示例中的视频播放需要使用AVPlayer，具体实现可参考[视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback)。
+示例中的视频播放需要使用AVPlayer，具体实现可参考[视频播放](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback)。
 
 ```
 // model/AVPlayer.ets

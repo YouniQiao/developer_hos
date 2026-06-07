@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译报错：platform/OHOS to use this system, please post your config file on discourse.cmake.org so it"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-87
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-87
 ---
 
 

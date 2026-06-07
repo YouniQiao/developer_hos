@@ -1,13 +1,13 @@
 ---
 title: "@Prop装饰器：父子单向同步"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop
 format: md
 ---
 
 
 @Prop装饰的变量可以和父组件建立单向同步关系。
 
-在阅读@Prop文档前，建议开发者首先了解[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)的基本用法。最佳实践请参考[状态管理最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-status-management)。常见问题请参考[状态管理常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq)。
+在阅读@Prop文档前，建议开发者首先了解[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)的基本用法。最佳实践请参考[状态管理最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-status-management)。常见问题请参考[状态管理常见问题](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq)。
 
 ![](./img/0b3e723a.png)
 
@@ -30,14 +30,14 @@ format: md
 | 同步类型 | 单向同步。对父组件状态变量值的修改，将同步给子组件@Prop装饰的变量，子组件@Prop装饰的变量的修改不会同步到父组件的状态变量上。  嵌套类型的场景请参考[观察变化](#观察变化)。 |
 | 允许装饰的变量类型 | Object、class、string、number、boolean、enum类型，以及这些类型的数组。  API version 10开始支持[Date类型](#装饰date类型变量)。  API version 11及以上支持[Map](#装饰map类型变量)、[Set](#装饰set类型变量)类型、undefined和null类型、ArkUI框架定义的联合类型[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)、[ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr)、[ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor)类型以及这些类型的联合类型，示例见[Prop支持联合类型实例](#prop支持联合类型实例)。  支持类型的场景请参考[观察变化](#观察变化)。 |
 | 不允许装饰的变量类型 | 不支持装饰Function类型。 |
-| 嵌套传递层数 | 在组件复用场景，建议@Prop深度嵌套数据不要超过5层，嵌套太多会导致深拷贝占用的空间过大以及GarbageCollection(垃圾回收)，引起性能问题，此时更建议使用[@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)。 |
-| 被装饰变量的初始值 | 允许本地初始化。API version 11及以上，如果和[@Require](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-require)结合使用，则必须父组件构造传参。 |
+| 嵌套传递层数 | 在组件复用场景，建议@Prop深度嵌套数据不要超过5层，嵌套太多会导致深拷贝占用的空间过大以及GarbageCollection(垃圾回收)，引起性能问题，此时更建议使用[@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)。 |
+| 被装饰变量的初始值 | 允许本地初始化。API version 11及以上，如果和[@Require](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-require)结合使用，则必须父组件构造传参。 |
 
 ## 变量的传递/访问规则说明
 
 | 装饰器使用规则 | 说明 |
 | --- | --- |
-| 从父组件初始化 | 如果本地有初始化，则是可选的，初始化行为和[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state#变量的传递访问规则说明)保持一致。没有的话，则必选，支持父组件中的常规变量（常规变量对@Prop赋值，只是数值的初始化，常规变量的变化不会触发UI刷新。只有状态变量才能触发UI刷新）、[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)、[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)、@Prop、[@Provide](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)、[@Consume](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)、[@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)、[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)、[@StorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storageprop)、[@LocalStorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstoragelink)和[@LocalStorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorageprop)去初始化子组件中的@Prop装饰的变量。 |
+| 从父组件初始化 | 如果本地有初始化，则是可选的，初始化行为和[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state#变量的传递访问规则说明)保持一致。没有的话，则必选，支持父组件中的常规变量（常规变量对@Prop赋值，只是数值的初始化，常规变量的变化不会触发UI刷新。只有状态变量才能触发UI刷新）、[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)、[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)、@Prop、[@Provide](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)、[@Consume](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)、[@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)、[@StorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storagelink)、[@StorageProp](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storageprop)、[@LocalStorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage#localstoragelink)和[@LocalStorageProp](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage#localstorageprop)去初始化子组件中的@Prop装饰的变量。 |
 | 用于初始化子组件 | @Prop支持初始化子组件中的常规变量、@State、@Link、@Prop、@Provide。 |
 | 是否支持组件外访问 | @Prop装饰的变量是私有的，只能在组件内访问。 |
 

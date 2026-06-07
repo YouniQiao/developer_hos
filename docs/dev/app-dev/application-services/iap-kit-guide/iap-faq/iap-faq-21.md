@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "developerPayload处理机制及使用建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-21
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-21
 format: md
 ---
 

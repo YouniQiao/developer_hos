@@ -1,6 +1,6 @@
 ---
 title: "消息订阅"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-message-subscription
+original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-message-subscription
 format: md
 ---
 

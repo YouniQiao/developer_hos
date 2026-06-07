@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "更新企业公钥证书"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-update
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-update
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
    import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
    import { BusinessError } from '@kit.BasicServicesKit';
    ```
-2. 先调用接口[getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge)，获取挑战值并[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature)，传入挑战值的签名和企业公钥证书，再调用接口[updateEnterpriseCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate)，更新企业公钥证书。
+2. 先调用接口[getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge)，获取挑战值并[签名](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-signature)，传入挑战值的签名和企业公钥证书，再调用接口[updateEnterpriseCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate)，更新企业公钥证书。
 
    ```
    function testUpdateEnterpriseCertificate() {

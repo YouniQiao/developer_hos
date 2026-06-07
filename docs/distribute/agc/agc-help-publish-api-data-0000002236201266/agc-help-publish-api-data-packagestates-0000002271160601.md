@@ -1,6 +1,6 @@
 ---
 title: "PackageStates"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-packagestates-0000002271160601
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-packagestates-0000002271160601
 format: md
 ---
 

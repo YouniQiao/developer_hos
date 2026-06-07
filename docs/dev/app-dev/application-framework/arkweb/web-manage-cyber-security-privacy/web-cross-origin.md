@@ -1,6 +1,6 @@
 ---
 title: "解决Web组件本地资源跨域问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-cross-origin
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-cross-origin
 format: md
 ---
 

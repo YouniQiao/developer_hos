@@ -1,6 +1,6 @@
 ---
 title: "Native侧获取env具有线程限制，如何在C++子线程触发ArkTS侧回调"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-25
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-25
 format: md
 ---
 
@@ -81,4 +81,4 @@ struct Index {
 
 **参考链接**
 
-[使用Node-API接口进行线程安全开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety)
+[使用Node-API接口进行线程安全开发](/docs/dev/ndk-dev/use-napi-thread-safety)

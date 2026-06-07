@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "运行应用时报“XXX Read timed out”异常"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-faq-4
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-prefetch/cloudfoundation-faq-4
 format: md
 ---
 

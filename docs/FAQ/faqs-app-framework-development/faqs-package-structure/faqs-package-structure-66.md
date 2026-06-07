@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用HSP的多包场景下，直接崩溃并产生cppcrash异常日志，错误信息为resolveBufferCallback get buffer failed"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-66
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-66
 ---
 
 

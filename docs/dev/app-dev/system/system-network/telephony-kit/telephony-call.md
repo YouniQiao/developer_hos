@@ -1,6 +1,6 @@
 ---
 title: "拨打电话"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-call
+original_url: /docs/dev/app-dev/system/system-network/telephony-kit/telephony-call
 format: md
 ---
 

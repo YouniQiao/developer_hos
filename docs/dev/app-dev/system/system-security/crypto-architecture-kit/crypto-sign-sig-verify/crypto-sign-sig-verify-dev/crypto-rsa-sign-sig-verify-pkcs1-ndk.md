@@ -1,11 +1,11 @@
 ---
 title: "使用RSA密钥对签名验签 (PKCS1模式)(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pkcs1-ndk
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-pkcs1-ndk
 format: md
 ---
 
 
-对应的算法规格请查看[签名验签算法规格：RSA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview#rsa)。
+对应的算法规格请查看[签名验签算法规格：RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview#rsa)。
 
 ## 在CMake脚本中链接相关动态库
 
@@ -99,7 +99,7 @@ static OH_Crypto_ErrCode doTestRsaSignature() {
    当前单次update长度没有限制，开发者可以根据数据量判断如何调用update，如果数据量较小，可以直接调用OH\_CryptoVerify\_Final接口一次性传入。
 
    * 当待签名的数据较短时，可以在init完成后直接调用[OH\_CryptoVerify\_Final](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-signature-h#oh_cryptoverify_final)。
-   * 当数据量较大时，可以多次调用update，即[分段验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pkcs1-by-segment-ndk)。
+   * 当数据量较大时，可以多次调用update，即[分段验签](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-pkcs1-by-segment-ndk)。
 4. 调用[OH\_CryptoVerify\_Final](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-signature-h#oh_cryptoverify_final)，对数据进行验签。
 
 ```

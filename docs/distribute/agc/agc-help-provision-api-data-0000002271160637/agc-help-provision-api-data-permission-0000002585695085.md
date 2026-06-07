@@ -1,6 +1,6 @@
 ---
 title: "Permission"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-permission-0000002585695085
+original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-permission-0000002585695085
 format: md
 ---
 
@@ -13,4 +13,4 @@ format: md
 | grantType | O | String(32) | жҺҲжқғж–№ејҸгҖӮ  еҸ–еҖјиҢғеӣҙпјҡ   * system\_grantпјҡиЎЁзӨәзі»з»ҹжҺҲжқғзұ»еһӢпјҢеңЁиҜҘзұ»еһӢзҡ„жқғйҷҗи®ёеҸҜдёӢпјҢеә”з”Ёиў«е…Ғи®ёи®ҝй—®зҡ„ж•°жҚ®дёҚдјҡж¶үеҸҠеҲ°з”ЁжҲ·зҡ„дёӘдәәдҝЎжҒҜгҖӮ * user\_grantпјҡиЎЁзӨәз”ЁжҲ·жҺҲжқғзұ»еһӢпјҢеңЁиҜҘзұ»еһӢзҡ„жқғйҷҗи®ёеҸҜдёӢпјҢеә”з”Ёиў«е…Ғи®ёи®ҝй—®зҡ„ж•°жҚ®е°Ҷдјҡж¶үеҸҠеҲ°з”ЁжҲ·зҡ„дёӘдәәдҝЎжҒҜгҖӮ * manual\_settingsпјҡиЎЁзӨәжүӢеҠЁи®ҫзҪ®жҺҲжқғзұ»еһӢпјҢеңЁиҜҘзұ»еһӢзҡ„жқғйҷҗи®ёеҸҜдёӢпјҢеә”з”Ёиў«е…Ғи®ёи®ҝй—®зҡ„ж•°жҚ®е°Ҷдјҡж¶үеҸҠеҲ°з”ЁжҲ·зҡ„дёӘдәәдҝЎжҒҜпјҢеә”з”Ёиў«е…Ғи®ёжү§иЎҢзҡ„ж“ҚдҪңеҸҜиғҪеҜ№зі»з»ҹжҲ–иҖ…з”ЁжҲ·дә§з”ҹдёҘйҮҚзҡ„еҪұе“ҚгҖӮ |
 | supportDevice | O | `List&lt;String>` | жқғйҷҗж”ҜжҢҒзҡ„и®ҫеӨҮеҲ—иЎЁгҖӮ  еҖјдёәз©әиЎЁзӨәж”ҜжҢҒжүҖжңүзҡ„и®ҫеӨҮгҖӮ |
 | startApiVersion | O | String(32) | жқғйҷҗзҡ„иө·е§ӢAPIзүҲжң¬еҸ·гҖӮ |
-| permissionLanguages | O | `List&lt;[PermissionLanguage](https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-permissionlanguage-0000002585575019)>` | жқғйҷҗзҡ„еӨҡиҜӯиЁҖдҝЎжҒҜгҖӮ  ж•°з»„й•ҝеәҰдёҚи¶…иҝҮ1000гҖӮ |
+| permissionLanguages | O | `List&lt;[PermissionLanguage](/docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-permissionlanguage-0000002585575019)>` | жқғйҷҗзҡ„еӨҡиҜӯиЁҖдҝЎжҒҜгҖӮ  ж•°з»„й•ҝеәҰдёҚи¶…иҝҮ1000гҖӮ |

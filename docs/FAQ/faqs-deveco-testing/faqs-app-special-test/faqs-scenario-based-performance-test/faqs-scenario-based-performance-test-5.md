@@ -1,7 +1,7 @@
 ---
 format: md
 title: "任务执行失败，原因：指定目录下未找到用例。该如何排查"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-5
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-5
 ---
 
 

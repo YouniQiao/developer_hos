@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "业务简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-business_introduction
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_introduction/we-business_introduction
 format: md
 ---
 

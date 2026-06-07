@@ -1,9 +1,9 @@
 ---
 title: "hidumper"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper-tool
+original_url: /docs/dev/app-dev/system/hidumper-tool
 format: md
 ---
 
 
-* **[hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)**
-* **[PrivacyManagerService](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper-privacymanagerservice)**
+* **[hidumper](/docs/dev/app-dev/system/hidumper)**
+* **[PrivacyManagerService](/docs/dev/app-dev/system/hidumper-privacymanagerservice)**

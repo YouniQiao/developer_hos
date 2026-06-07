@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "相关实例"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-samples
+original_url: /docs/dev/app-dev/application-services/location-kit/app-samples
 format: md
 ---
 

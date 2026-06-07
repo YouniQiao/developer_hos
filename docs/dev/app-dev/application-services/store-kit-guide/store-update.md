@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用市场更新功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-update
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-update
 format: md
 ---
 

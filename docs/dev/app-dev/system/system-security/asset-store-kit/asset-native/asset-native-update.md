@@ -1,6 +1,6 @@
 ---
 title: "更新关键资产(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-update
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-update
 format: md
 ---
 
@@ -57,11 +57,11 @@ format: md
 
 ![](./img/99e654b6.png)
 
-在更新前，需确保已有关键资产，可参考[指南文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-add)新增关键资产，否则将抛出NOT\_FOUND错误（错误码24000002）。
+在更新前，需确保已有关键资产，可参考[指南文档](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-add)新增关键资产，否则将抛出NOT\_FOUND错误（错误码24000002）。
 
 更新别名是demo\_alias的关键资产，将关键资产明文更新为demo\_pwd\_new，附属信息更新成demo\_label\_new。
 
-在指定群组中更新一条关键资产的示例代码详见[更新群组关键资产](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-group-access-control#更新群组关键资产)。
+在指定群组中更新一条关键资产的示例代码详见[更新群组关键资产](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-group-access-control#更新群组关键资产)。
 
 1. 在CMake脚本中链接相关动态库。
 

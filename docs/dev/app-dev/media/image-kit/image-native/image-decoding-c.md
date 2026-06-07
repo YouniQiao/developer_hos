@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "图片解码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-native
+original_url: /docs/dev/app-dev/media/image-kit/image-native/image-decoding-c
 format: md
 ---
 
@@ -10,11 +10,11 @@ format: md
 
 当前开发指导使用的接口为[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image)模块下的C API，可完成图片编解码，图片接收器，处理图像数据等功能。这部分API在API version 11之前发布，在后续的版本不再增加新功能，**不再推荐使用**。
 
-开发者可使用[Image\_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule)模块下的C API，不仅提供上述图片框架基础功能，还可以完成多图编解码等新特性，相关开发指导请参考[图片开发指导(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-source-c)节点下的内容。这部分API从API version 12开始支持，并将持续演进，**推荐开发者使用**。
+开发者可使用[Image\_NativeModule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image-nativemodule)模块下的C API，不仅提供上述图片框架基础功能，还可以完成多图编解码等新特性，相关开发指导请参考[图片开发指导(C/C++)](/docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-c)节点下的内容。这部分API从API version 12开始支持，并将持续演进，**推荐开发者使用**。
 
 两套C API不建议同时使用，在部分场景下存在不兼容的问题。
 
-将所支持格式的图片文件解码成PixelMap，以便在应用或系统中进行图片显示或[图片处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-transformation)。当前支持的图片文件格式包括JPEG、PNG、GIF、WebP、BMP、SVG、ICO、DNG、HEIC、WBMP23+、HEIFS23+、TIFF23+。部分格式的解码能力依赖于具体的设备硬件，建议在调用前使用[image.getImageSourceSupportedFormats20+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagegetimagesourcesupportedformats20)接口，动态查询当前设备上的解码能力。
+将所支持格式的图片文件解码成PixelMap，以便在应用或系统中进行图片显示或[图片处理](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-transformation)。当前支持的图片文件格式包括JPEG、PNG、GIF、WebP、BMP、SVG、ICO、DNG、HEIC、WBMP23+、HEIFS23+、TIFF23+。部分格式的解码能力依赖于具体的设备硬件，建议在调用前使用[image.getImageSourceSupportedFormats20+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagegetimagesourcesupportedformats20)接口，动态查询当前设备上的解码能力。
 
 ## 开发步骤
 

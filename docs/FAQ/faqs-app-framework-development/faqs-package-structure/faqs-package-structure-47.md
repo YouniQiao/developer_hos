@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用安装到设备的方式有哪些"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-47
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-47
 ---
 
 

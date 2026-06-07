@@ -1,7 +1,7 @@
 ---
 title: 大屏应用 UX 体验标准
 sidebar_label: 大屏应用 UX 体验标准
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-large-screen-0000001807707561
+original_url: /docs/design/ux-standards/large-screen-ux
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 折叠屏、平板、电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout) |
+| 系统能力 | | 请参阅[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout) |
 
 3.1.2 多窗适配
 
@@ -35,7 +35,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 折叠屏、平板、电脑、智慧屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 1.悬浮框，请参阅[管理应用窗口（Stage 模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage#设置全局悬浮窗受限开放)  2.分屏，请参阅[一多开发实例（购物比价）-商品详情页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section112893356386) |
+| 系统能力 | | 1.悬浮框，请参阅[管理应用窗口（Stage 模型）](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage#设置全局悬浮窗受限开放)  2.分屏，请参阅[一多开发实例（购物比价）-商品详情页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section112893356386) |
 
 ### 布局合理美观
 
@@ -52,7 +52,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 折叠屏、平板、电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 1.折叠状态监听，请参阅[@ohos.display-display.on('foldStatusChange')10+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#displayonfoldstatuschange10)  2.响应式/自适应布局，请参阅[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout) |
+| 系统能力 | | 1.折叠状态监听，请参阅[@ohos.display-display.on('foldStatusChange')10+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#displayonfoldstatuschange10)  2.响应式/自适应布局，请参阅[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout) |
 
 3.2.1.2 图标文字大小适中
 
@@ -91,7 +91,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 折叠屏、平板、电脑、智慧屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 1.通用尺寸，请参阅[尺寸设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size)  2.Grid 行列数，请参阅[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)和[一多开发实例（长视频）-推荐视频](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#zh-cn_topic_0000001744653537_li19261618201020) |
+| 系统能力 | | 1.通用尺寸，请参阅[尺寸设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size)  2.Grid 行列数，请参阅[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)和[一多开发实例（长视频）-推荐视频](/docs/dev/app-dev/multi-device/multi-video-app#zh-cn_topic_0000001744653537_li19261618201020) |
 
 3.2.1.5 单图信息量适中
 
@@ -104,7 +104,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 折叠屏、平板、电脑、智慧屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[一多开发实例（长视频）-Banner图](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#zh-cn_topic_0000001744653537_li139671645597) |
+| 系统能力 | | 请参阅[一多开发实例（长视频）-Banner图](/docs/dev/app-dev/multi-device/multi-video-app#zh-cn_topic_0000001744653537_li139671645597) |
 
 3.2.1.6 上下图文信息量适中
 
@@ -117,7 +117,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 折叠屏、平板、电脑、智慧屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[一多开发实例（社区评论）-动态卡片](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-community-app#zh-cn_topic_0000001758831130_li1420045031813) |
+| 系统能力 | | 请参阅[一多开发实例（社区评论）-动态卡片](/docs/dev/app-dev/multi-device/multi-community-app#zh-cn_topic_0000001758831130_li1420045031813) |
 
 3.2.1.7 单行文本
 
@@ -156,7 +156,7 @@ format: md
 | 标准等级 | | 推荐 |
 | 适用设备类型 | | 折叠屏、平板、电脑、智慧屏 |
 | 需考虑的特殊事项 | | 对部分类型应用的要求 |
-| 系统能力 | | 请参阅[一多开发实例（即时通讯）-页面开发](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-communication-app#section10532313132614) |
+| 系统能力 | | 请参阅[一多开发实例（即时通讯）-页面开发](/docs/dev/app-dev/multi-device/multi-communication-app#section10532313132614) |
 
 3.2.1.10 浏览型布局
 
@@ -169,7 +169,7 @@ format: md
 | 标准等级 | | 推荐 |
 | 适用设备类型 | | 折叠屏、平板、电脑、智慧屏 |
 | 需考虑的特殊事项 | | 对部分类型页面的要求 |
-| 系统能力 | | 1.瀑布流布局，请参阅[一多开发实例（社区评论）-动态卡片](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-community-app#zh-cn_topic_0000001758831130_li1420045031813)  2.宫格布局，请参阅[一多开发实例（长视频）-推荐视频](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#zh-cn_topic_0000001744653537_li19261618201020) |
+| 系统能力 | | 1.瀑布流布局，请参阅[一多开发实例（社区评论）-动态卡片](/docs/dev/app-dev/multi-device/multi-community-app#zh-cn_topic_0000001758831130_li1420045031813)  2.宫格布局，请参阅[一多开发实例（长视频）-推荐视频](/docs/dev/app-dev/multi-device/multi-video-app#zh-cn_topic_0000001744653537_li19261618201020) |
 
 3.2.2 布局美观
 
@@ -184,7 +184,7 @@ format: md
 | 标准等级 | | 推荐 |
 | 适用设备类型 | | 折叠屏、平板、电脑、智慧屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[典型布局场景-挪移布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout#section454920411796) |
+| 系统能力 | | 请参阅[典型布局场景-挪移布局](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout#section454920411796) |
 
 3.2.2.2 侧边导航栏
 
@@ -197,7 +197,7 @@ format: md
 | 标准等级 | | 强烈推荐 |
 | 适用设备类型 | | 折叠屏、平板、电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[一多开发实例（长视频）-底部/侧边页签](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#zh-cn_topic_0000001744653537_li1226615201361) |
+| 系统能力 | | 请参阅[一多开发实例（长视频）-底部/侧边页签](/docs/dev/app-dev/multi-device/multi-video-app#zh-cn_topic_0000001744653537_li1226615201361) |
 
 3.2.2.3 沉浸式标题栏
 
@@ -279,7 +279,7 @@ format: md
 | 标准等级 | | 推荐 |
 | 适用设备类型 | | 折叠屏、平板、电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[一多开发实例（便捷生活）-布局能力](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-convenient-life#section198228193385) |
+| 系统能力 | | 请参阅[一多开发实例（便捷生活）-布局能力](/docs/dev/app-dev/multi-device/multi-convenient-life#section198228193385) |
 
 3.3.2 交互高效
 
@@ -294,7 +294,7 @@ format: md
 | 标准等级 | | 推荐 |
 | 适用设备类型 | | 折叠屏、平板、电脑 |
 | 需考虑的特殊事项 | | 对部分类型页面的要求 |
-| 系统能力 | | 请参阅[管理应用窗口（Stage模型）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage#设置全局悬浮窗受限开放) |
+| 系统能力 | | 请参阅[管理应用窗口（Stage模型）](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage#设置全局悬浮窗受限开放) |
 
 3.3.2.2 临时双窗
 
@@ -307,7 +307,7 @@ format: md
 | 标准等级 | | 推荐 |
 | 适用设备类型 | | 折叠屏、平板、电脑 |
 | 需考虑的特殊事项 | | 对部分类型页面的要求 |
-| 系统能力 | | 1.SidebarContainer 实现侧边面板，请参阅[一多开发实例（长视频）-全部评论](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#zh-cn_topic_0000001744653537_li10952411168)  2.Row 组件实现左右布局，请参阅[一多开发实例（购物比价）-商品详情侧边面板页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section8305102524814) |
+| 系统能力 | | 1.SidebarContainer 实现侧边面板，请参阅[一多开发实例（长视频）-全部评论](/docs/dev/app-dev/multi-device/multi-video-app#zh-cn_topic_0000001744653537_li10952411168)  2.Row 组件实现左右布局，请参阅[一多开发实例（购物比价）-商品详情侧边面板页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section8305102524814) |
 
 ### 鼠标、触控板和键盘交互
 
@@ -316,7 +316,7 @@ format: md
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 3.4.1 | 可交互控件响应光标悬浮 |
-| 标准描述 | | 当光标悬浮在应用的可交互控件上，控件或者光标需要提供对应的视觉反馈，提示控件的可交互性，以及对应的交互行为语义。使用合适的光标交互，优先使用系统提供的光标样式，请参阅[光标交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-cursor-0000001795531205)。  控件：通过外观的视觉反馈，提示控件的可交互性。  光标：通过外观的视觉反馈，提示当前交互行为语义。 |
+| 标准描述 | | 当光标悬浮在应用的可交互控件上，控件或者光标需要提供对应的视觉反馈，提示控件的可交互性，以及对应的交互行为语义。使用合适的光标交互，优先使用系统提供的光标样式，请参阅[光标交互](/docs/design/hmi/cursor)。  控件：通过外观的视觉反馈，提示控件的可交互性。  光标：通过外观的视觉反馈，提示当前交互行为语义。 |
 | 测试方法 | | 光标悬浮在应用的可交互控件上，检查控件与光标。 |
 | 判定标准 | | 控件和光标出现视觉反馈，提示控件的可交互性以及当前交互行为语义。 |
 | 标准等级 | | 必须 |
@@ -426,7 +426,7 @@ format: md
 | 标准等级 | | 推荐 |
 | 适用设备类型 | | 平板、电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[单一手势-旋转手势](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-single-gesture#旋转手势rotationgesture) |
+| 系统能力 | | 请参阅[单一手势-旋转手势](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-single-gesture#旋转手势rotationgesture) |
 
 3.4.10 缩放
 
@@ -439,7 +439,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 平板、电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 1.宫格布局的缩放，请参阅[一多开发实例（长视频）-推荐视频区域的缩放](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#zh-cn_topic_0000001744653537_li8459423139)  2.文字大小的缩放，请参阅[一多开发实例（社区评论）-交互事件处理](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-community-app#zh-cn_topic_0000001758831130_section121911956268) |
+| 系统能力 | | 1.宫格布局的缩放，请参阅[一多开发实例（长视频）-推荐视频区域的缩放](/docs/dev/app-dev/multi-device/multi-video-app#zh-cn_topic_0000001744653537_li8459423139)  2.文字大小的缩放，请参阅[一多开发实例（社区评论）-交互事件处理](/docs/dev/app-dev/multi-device/multi-community-app#zh-cn_topic_0000001758831130_section121911956268) |
 
 3.4.11 拖移
 
@@ -452,7 +452,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 平板、电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[单一手势-拖动手势](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-drag-event) |
+| 系统能力 | | 请参阅[单一手势-拖动手势](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-drag-event) |
 
 3.4.12 显示上下文菜单
 
@@ -498,7 +498,7 @@ format: md
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 3.4.15 | 支持常用功能的通用快捷键 |
-| 标准描述 | | 应用的快捷键定义应优先参考[通用快捷键规范](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-keyboard-0000001928070488#section24201034102812)，避免对通用功能操作的快捷键进行重新定义，例如：Ctrl+C 进行复制、Ctrl+V 进行粘贴、Ctrl+X 进行剪切、Ctrl+Z 进行撤销等。避免和系统定义的快捷键操作冲突，系统快捷键请参阅[系统快捷键规范](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-keyboard-0000001928070488#section24201034102812)。针对其他高频功能可自定义快捷键如 Enter 键发送或提交、Space 键播放/暂停媒体。 |
+| 标准描述 | | 应用的快捷键定义应优先参考[通用快捷键规范](/docs/design/hmi/keyboard#section24201034102812)，避免对通用功能操作的快捷键进行重新定义，例如：Ctrl+C 进行复制、Ctrl+V 进行粘贴、Ctrl+X 进行剪切、Ctrl+Z 进行撤销等。避免和系统定义的快捷键操作冲突，系统快捷键请参阅[系统快捷键规范](/docs/design/hmi/keyboard#section24201034102812)。针对其他高频功能可自定义快捷键如 Enter 键发送或提交、Space 键播放/暂停媒体。 |
 | 测试方法 | | 检查应用的快捷键 |
 | 判定标准 | | 支持常用功能的通用快捷键 |
 | 标准等级 | | 必须 |

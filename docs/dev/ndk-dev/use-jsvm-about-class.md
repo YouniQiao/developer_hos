@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口进行class相关开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-class
+original_url: /docs/dev/ndk-dev/use-jsvm-about-class
 format: md
 ---
 
@@ -30,7 +30,7 @@ format: md
 
 ## 使用示例
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
 
 ### OH\_JSVM\_NewInstance
 

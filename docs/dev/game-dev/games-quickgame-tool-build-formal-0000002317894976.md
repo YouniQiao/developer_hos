@@ -1,6 +1,6 @@
 ---
 title: "打包正式版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-build-formal-0000002317894976
+original_url: /docs/dev/game-dev/games-quickgame-tool-build-formal-0000002317894976
 has_merged_cells: true
 format: md
 ---
@@ -9,7 +9,7 @@ format: md
 ## 准备工作
 
 * 将待打包的快游戏项目尽量优化、缩减，确保打出的正式包不超**20MB**。若正式包超过20MB，将无法在AGC控制台提交上架。
-* 在快游戏开发者工具中生成证书、密钥文件，具体操作可参考[生成签名证书](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-sign-0000002351893601)。
+* 在快游戏开发者工具中生成证书、密钥文件，具体操作可参考[生成签名证书](/docs/dev/game-dev/games-quickgame-tool-sign-0000002351893601)。
 * 准备快游戏图标，要求如下：
   + 图标分辨率216px\*216px，大小不超过2MB的PNG图片。
   + 图标圆角大小为0px。

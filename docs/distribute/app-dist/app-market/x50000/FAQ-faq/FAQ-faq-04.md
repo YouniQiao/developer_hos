@@ -1,7 +1,7 @@
 ---
 title: "4. 定向推送行为"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-04
+original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-04
 format: md
 ---
 

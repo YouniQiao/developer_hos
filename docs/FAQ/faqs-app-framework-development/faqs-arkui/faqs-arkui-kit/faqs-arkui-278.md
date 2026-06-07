@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现List/Swiper/Grid嵌套滚动的下拉刷新和上拉加载更多"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-278
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-278
 ---
 
 

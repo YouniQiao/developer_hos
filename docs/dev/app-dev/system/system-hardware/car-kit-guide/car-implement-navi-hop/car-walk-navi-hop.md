@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "下车步行导航流转"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-walk-navi-hop
+original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-implement-navi-hop/car-walk-navi-hop
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 
 1. 能力配置。
 
-   请参考[配置能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-preparations#配置能力)进行配置。下车步行导航流转场景下，metadata的name取值为carHopCapability，value取值应为**getOffCarNavi**。示例代码如下所示：
+   请参考[配置能力](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare#配置能力)进行配置。下车步行导航流转场景下，metadata的name取值为carHopCapability，value取值应为**getOffCarNavi**。示例代码如下所示：
 
    ```
    "metadata": [

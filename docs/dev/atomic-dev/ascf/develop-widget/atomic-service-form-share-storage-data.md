@@ -1,6 +1,6 @@
 ---
 title: "元服务与卡片共享存储数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/atomic-service-form-share-storage-data
+original_url: /docs/dev/atomic-dev/ascf/develop-widget/atomic-service-form-share-storage-data
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 ![](./img/1302238b.png)
 
 * 元服务更新的数据，卡片需等待5秒以上才能获取到最新值。
-* 因卡片存储的数据在元服务需通过[数据缓存](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage)接口获取，所以建议卡片存储的数据能够通过JSON.stringify序列化，并且单个key存储的最大数据长度不超过1MB。
+* 因卡片存储的数据在元服务需通过[数据缓存](/docs/dev/atomic-dev/ascf/apis/apis-data-storage)接口获取，所以建议卡片存储的数据能够通过JSON.stringify序列化，并且单个key存储的最大数据长度不超过1MB。
 
 以下代码展示的是元服务与卡片共享一个随机数的案例：
 

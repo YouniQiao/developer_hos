@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "视频解码支持HDRVivid2SDR"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdrvivid2sdr
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdrvivid2sdr
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 ## 限制约束
 
 1. 目前仅硬件解码器支持该能力。
-2. 目前仅Surface模式支持该能力。Surface模式和Buffer模式输出差异可参考[视频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding)。
+2. 目前仅Surface模式支持该能力。Surface模式和Buffer模式输出差异可参考[视频解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding)。
 3. 目前使能该能力时，不支持码流分辨率变化，会通过回调函数OH\_AVCodecOnError()报告错误码[AV\_ERR\_UNSUPPORT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-averrors-h#oh_averrcode)。
 4. 在成功调用OH\_VideoDecoder\_Configure接口后，以及在启动OH\_VideoDecoder\_Start接口前，必须要先调用OH\_VideoDecoder\_Prepare接口。
 5. 调用OH\_VideoDecoder\_Reset接口之后，解码器将回到初始状态，需要重新调用OH\_VideoDecoder\_Configure、OH\_VideoDecoder\_Prepare和OH\_VideoDecoder\_SetSurface接口。
@@ -43,9 +43,9 @@ target_link_libraries(sample PUBLIC libnative_media_core.so)
    #include <multimedia/player_framework/native_avbuffer.h>
    #include <fstream>
    ```
-2. 参考[HDR Vivid视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-player)，添加头文件和解析文件，查询文件是否为HDR Vivid视频。
+2. 参考[HDR Vivid视频播放](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-player)，添加头文件和解析文件，查询文件是否为HDR Vivid视频。
 
-   如果非HDR Vivid视频，则参考[视频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding)进行解码处理，此处不再赘述。
+   如果非HDR Vivid视频，则参考[视频解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding)进行解码处理，此处不再赘述。
 
    如果判断为HDR Vivid视频，则继续执行以下步骤。
 
@@ -79,7 +79,7 @@ target_link_libraries(sample PUBLIC libnative_media_core.so)
    由于目前仅硬件解码器支持该能力，因此必须根据解码器name进行创建。
 4. 调用OH\_VideoDecoder\_RegisterCallback()设置回调函数。
 
-   具体可参考：[HDR Vivid视频播放-HDR Vivid视频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-player#hdr-vivid视频解码) 中的“步骤3：配置异步回调函数”
+   具体可参考：[HDR Vivid视频播放-HDR Vivid视频解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-player#hdr-vivid视频解码) 中的“步骤3：配置异步回调函数”
 5. 调用OH\_VideoDecoder\_Configure()配置解码器。
 
    需配置项：视频帧宽度、视频帧高度、视频像素格式、指定输出为SDR。具体示例如下：
@@ -113,4 +113,4 @@ target_link_libraries(sample PUBLIC libnative_media_core.so)
    ![](./img/6244eea2.png)
 
    通过配置OH\_MD\_KEY\_VIDEO\_DECODER\_OUTPUT\_COLOR\_SPACE，支持在解码后输出SDR图像，目前输入仅支持为HDR Vivid的码流，输出仅支持配置为OH\_COLORSPACE\_BT709\_LIMIT。
-6. 后续步骤具体可参考：[视频解码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)。
+6. 后续步骤具体可参考：[视频解码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)。

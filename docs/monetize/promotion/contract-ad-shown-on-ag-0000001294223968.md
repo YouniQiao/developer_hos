@@ -1,7 +1,7 @@
 ---
 title: "创建应用市场合约广告"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/contract-ad-shown-on-ag-0000001294223968
+original_url: /docs/monetize/promotion/contract-ad-shown-on-ag-0000001294223968
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ## 应用市场合约广告操作步骤
 
-1. 联系[鲸鸿动能运营](https://developer.huawei.com/consumer/cn/doc/promotion/customerservice-0000001052264359#section676133614717)确认合作信息。
+1. 联系[鲸鸿动能运营](/docs/monetize/promotion/customerservice-0000001052264359#section676133614717)确认合作信息。
 2. 鲸鸿动能运营创建合约广告任务。
 3. 广告主上传创意。
 

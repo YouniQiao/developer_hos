@@ -1,6 +1,6 @@
 ---
 title: "拉起图片编辑类应用（startAbilityByType）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoeditorextensionability
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/photoeditorextensionability
 format: md
 ---
 

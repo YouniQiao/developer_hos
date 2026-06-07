@@ -1,6 +1,6 @@
 ---
 title: "创建应用多实例"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multiinstance
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/multiinstance
 ---
 
 应用多实例允许一个应用同时运行多个进程，实现多个账号同时登录使用，且互不影响。主要应用场景包括社交账户多开和游戏大小号多开等，无需切换账号从而避免频繁登录的繁琐操作。
@@ -10,7 +10,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mult
 应用多实例间的关系：
 
 * 多实例的应用图标相同。
-* 各实例共享[应用文件目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用文件目录与应用文件路径)下的文件数据。
+* 各实例共享[应用文件目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用文件目录与应用文件路径)下的文件数据。
 * 可通过账号进行切换，单个实例可以切换不同的账号登录。
 
 ## 约束限制
@@ -21,7 +21,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mult
 
 1. 应用多实例的配置方法。
 
-   在工程项目中对App/app.json5配置文件配置[multiAppMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#multiappmode标签)字段。具体配置如下：
+   在工程项目中对App/app.json5配置文件配置[multiAppMode](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#multiappmode标签)字段。具体配置如下：
 
    ```
    {

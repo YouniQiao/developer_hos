@@ -1,7 +1,7 @@
 ---
 title: 导航点
 sidebar_label: 导航点
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/swiper-0000001956947629
+original_url: /docs/design/components/navigation/swiper
 format: md
 ---
 

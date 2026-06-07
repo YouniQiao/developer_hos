@@ -1,7 +1,7 @@
 ---
 title: "@hw-stylistic/operator-linebreak"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_operator-linebreak
+original_url: /docs/tools/coding-debug/ide_operator-linebreak
 format: md
 ---
 

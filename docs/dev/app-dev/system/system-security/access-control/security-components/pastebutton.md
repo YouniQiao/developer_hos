@@ -1,6 +1,6 @@
 ---
 title: "使用粘贴控件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton
+original_url: /docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton
 format: md
 ---
 

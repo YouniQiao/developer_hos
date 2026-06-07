@@ -1,6 +1,6 @@
 ---
 title: "端云文件协同概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloud-sync-file-overview
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/cloud-sync-file/cloud-sync-file-overview
 format: md
 ---
 
@@ -40,7 +40,7 @@ format: md
 * cloudfiledaemon：端云文件守护进程，为接入云的应用提供端云文件的基本文件操作、元数据管理和分片预读等能力。
 * cloudfileservice：端云同步服务进程，为接入云的应用提供完成端云文件的上下行、文件缓存和版本管理等能力。
 * fuse：一种允许非特权用户在用户空间实现的文件系统（Filesystem in Userspace），通过在内核中提供一个通用的 VFS（虚拟文件系统）桥接模块，将文件系统操作转发到用户空间的进程，由用户程序实现具体的逻辑。
-* hmdfs：[分布式文件系统](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-fs-overview)，在内核中为端云文件协同提供了文件预读、本地视图的能力。
+* hmdfs：[分布式文件系统](/docs/dev/app-dev/application-framework/core-file-kit/distributed-fs/distributed-fs-overview)，在内核中为端云文件协同提供了文件预读、本地视图的能力。
 * 元数据管理：支持本地只保留文件名、文件大小和时间戳等基本元数据信息，端云文件守护进程支持对这些基本信息进行管理。
 * 分片预读：文件预读的一种精细化策略，将读取请求划分为多个逻辑分片，按需或按优先级异步预加载特定分片，进一步优化IO性能及带宽利用率。
 * 文件预读：一种 I/O 优化技术，在用户尚未显式请求后续数据之前，hmdfs会根据读取文件区间提前将后续的部分内容加载到内存中，以减少后续读取时的延迟。
@@ -48,7 +48,7 @@ format: md
 
 ## 实现原理
 
-针对应用开发者，端云文件协同提供文件的同步、单点与批量缓存等核心能力接口，应用只需将待上云的文件放在沙箱目录/data/storage/el2/cloud下，即可自动完成文件的上云，其余基础文件操作接口，请参考[应用文件访问与管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)开发指南。
+针对应用开发者，端云文件协同提供文件的同步、单点与批量缓存等核心能力接口，应用只需将待上云的文件放在沙箱目录/data/storage/el2/cloud下，即可自动完成文件的上云，其余基础文件操作接口，请参考[应用文件访问与管理](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)开发指南。
 
 端云文件协同能力基于系统级服务构建，由 cloudfiledaemon 进程提供基础文件操作、元数据管理、分片预读等核心功能；cloudfileservice 进程则在后台自动与云端服务进行交互，根据业务需求变化触发并完成文件上下行，文件缓存，同时也提供了接口支持版本管理和主动触发同步任务。
 

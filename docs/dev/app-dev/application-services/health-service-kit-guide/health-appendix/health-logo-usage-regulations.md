@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "标志使用规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-logo-usage-regulations
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-logo-usage-regulations
 format: md
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: "ContentSlot：混合开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-contentslot
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-contentslot
 format: md
 ---
 
 
 用于渲染并管理Native层使用C-API创建的组件。
 
-支持[混合模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-drawing-effect-c#混合模式)开发。当容器为ArkTS组件，且子组件在Native侧创建时，推荐使用ContentSlot占位组件。
+支持[混合模式](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/complex-drawing-effect-c#混合模式)开发。当容器为ArkTS组件，且子组件在Native侧创建时，推荐使用ContentSlot占位组件。
 
 ![](./img/c0d44309.png)
 
@@ -79,9 +79,9 @@ struct Parent {
 
 ### Native侧代码实现
 
-Napi的基础开发知识请查看以下文档：[开发导读](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview)。
+Napi的基础开发知识请查看以下文档：[开发导读](/docs/dev/ndk-dev/ndk-development-overview)。
 
-本章节描述实现ContentSlot相关逻辑代码。创建C侧组件的具体步骤，请参阅[使用NDK接口构建UI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-ui-overview)。
+本章节描述实现ContentSlot相关逻辑代码。创建C侧组件的具体步骤，请参阅[使用NDK接口构建UI](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-ui-overview)。
 
 ```
 #include "napi/native_api.h"

@@ -1,6 +1,6 @@
 ---
 title: "切换输入法应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/switch-inputmethod-guide
+original_url: /docs/dev/app-dev/application-framework/ime-kit/switch-inputmethod-guide
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 ![](./img/ef10f86d.png)
 
 1. 以下接口的使用仅允许在当前输入法应用中调用。
-2. 本示例假设已经在输入法应用中执行，如何实现一个输入法应用，请参考[实现一个输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)开发指导。
+2. 本示例假设已经在输入法应用中执行，如何实现一个输入法应用，请参考[实现一个输入法应用](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)开发指导。
 
 ## 切换当前输入法子类型
 

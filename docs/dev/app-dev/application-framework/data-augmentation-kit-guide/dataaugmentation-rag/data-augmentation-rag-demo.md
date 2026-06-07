@@ -1,13 +1,13 @@
 ---
 title: "完整示例代码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-demo
+original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-demo
 format: md
 ---
 
 
 ![](./img/c865250c.png)
 
-需要完成网络权限的申请，参见：[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-development#开发准备)。
+需要完成网络权限的申请，参见：[开发准备](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-development#开发准备)。
 
 ## EntryAbility.ets
 
@@ -361,7 +361,7 @@ export default class MyChatLLM extends rag.ChatLLM {
 
 ## Config.ets
 
-Config.ets主要负责RagSession创建时入参的组装。详细配置方法及含义可参见[智慧化数据检索](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-retrieval)。
+Config.ets主要负责RagSession创建时入参的组装。详细配置方法及含义可参见[智慧化数据检索](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-retrieval)。
 
 ```
 // src/main/ets/entryability/Config.ets

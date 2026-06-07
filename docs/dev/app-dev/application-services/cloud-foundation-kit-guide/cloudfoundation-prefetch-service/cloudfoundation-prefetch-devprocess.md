@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-devprocess
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-devprocess
 format: md
 ---
 
@@ -10,6 +10,6 @@ format: md
 
 ![](./img/f24a6418.png)
 
-1. [配置预加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-config)：在AGC云端预加载界面选择数据来源类型，并进行相关配置。
-2. [开发预加载资源接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-cloud-interdev)：根据选择的数据来源类型，开发对应的云侧接口，以提供预加载所需的资源数据。
-3. [调用预加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-installprefetch)：在工程代码文件中调用预加载。
+1. [配置预加载](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-config)：在AGC云端预加载界面选择数据来源类型，并进行相关配置。
+2. [开发预加载资源接口](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-cloud-interdev)：根据选择的数据来源类型，开发对应的云侧接口，以提供预加载所需的资源数据。
+3. [调用预加载](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-call/cloudfoundation-call-installprefetch)：在工程代码文件中调用预加载。

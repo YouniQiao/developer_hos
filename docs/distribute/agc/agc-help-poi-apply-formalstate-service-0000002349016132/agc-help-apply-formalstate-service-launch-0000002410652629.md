@@ -1,13 +1,13 @@
 ---
 title: "申请全网态服务上线"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-formalstate-service-launch-0000002410652629
+original_url: /docs/distribute/agc/agc-help-poi-apply-formalstate-service-0000002349016132/agc-help-apply-formalstate-service-launch-0000002410652629
 format: md
 ---
 
 
 ![](../img/agc-help-apply-formalstate-service-launch-0000002410652629_0.png)
 
-在申请全网态服务上线之前，请确保真机测试已满足[小艺建议出卡的验收要求](https://developer.huawei.com/consumer/cn/doc/app/agc-help-xiaoyi-requirements-for-card-out-0000002430663182)，以避免申请后被审核驳回。
+在申请全网态服务上线之前，请确保真机测试已满足[小艺建议出卡的验收要求](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-xiaoyi-requirements-for-card-out-0000002430663182)，以避免申请后被审核驳回。
 
 1. 服务配置完成后，点击页面顶端的“提交”。
 
@@ -36,4 +36,4 @@ format: md
    7. 手机进入POI的200米感应范围内。
    8. 小艺建议加桌卡片尺寸只能是2\*2、4\*4，不能是2\*4。
 
-   排除上述原因后，如果小艺建议仍未出卡或出卡内容不符合预期，请参考[小艺建议出卡问题的反馈方法](https://developer.huawei.com/consumer/cn/doc/app/agc-help-feedback-method-for-non-card-issue-0000002445351893)进行反馈。
+   排除上述原因后，如果小艺建议仍未出卡或出卡内容不符合预期，请参考[小艺建议出卡问题的反馈方法](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-feedback-method-for-non-card-issue-0000002445351893)进行反馈。

@@ -1,6 +1,6 @@
 ---
 title: "查询星闪开关状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-getstate
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-getstate
 format: md
 ---
 

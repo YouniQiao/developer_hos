@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations
+original_url: /docs/dev/app-dev/graphics/arengine-preparations
 format: md
 ---
 
@@ -34,7 +34,7 @@ auto ret = HMS_AREngine_CheckSupported(ARENGINE_FEATURE_TYPE_FACE);
 
 ## 申请权限
 
-在开发AR应用时，需要先申请相机相关权限，确保应用拥有访问相机硬件及其他功能的权限，需要的权限如下表。在申请权限前，请保证符合[权限使用的基本原则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限使用的基本原则)。
+在开发AR应用时，需要先申请相机相关权限，确保应用拥有访问相机硬件及其他功能的权限，需要的权限如下表。在申请权限前，请保证符合[权限使用的基本原则](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限使用的基本原则)。
 
 * 使用相机拍摄前，需要申请**ohos.permission.CAMERA**相机权限。
 * 当需要使用加速计感知设备运动状态时，需要申请**ohos.permission.ACCELEROMETER**加速计权限。
@@ -42,7 +42,7 @@ auto ret = HMS_AREngine_CheckSupported(ARENGINE_FEATURE_TYPE_FACE);
 
 ## 前置准备
 
-推荐使用[组件导航(Navigation) (推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)作为页面路由，使用[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的[页面生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navdestination#页面生命周期)所示方法。
+推荐使用[组件导航(Navigation) (推荐)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)作为页面路由，使用[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的[页面生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-navdestination#页面生命周期)所示方法。
 
 开发者需先创建首页，通过首页选择进入AR Engine场景。
 
@@ -52,7 +52,7 @@ auto ret = HMS_AREngine_CheckSupported(ARENGINE_FEATURE_TYPE_FACE);
    import { abilityAccessCtrl, PermissionRequestResult } from '@kit.AbilityKit';
    import { BusinessError } from '@kit.BasicServicesKit';
    ```
-2. 创建一个基础的页面，具体可参考[组件导航(Navigation) (推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)。
+2. 创建一个基础的页面，具体可参考[组件导航(Navigation) (推荐)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)。
 
    ```
    @Entry

@@ -1,6 +1,6 @@
 ---
 title: "菜单概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-menu-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-menu/arkts-menu-overview
 format: md
 ---
 
@@ -11,8 +11,8 @@ format: md
 
 | 接口 | 使用场景 |
 | --- | --- |
-| [菜单控制 (Menu)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-menu) | 用于需要给指定的组件绑定用户可执行的操作时，例如长按图标展示操作选项等。 |
-| [不依赖UI组件的全局菜单 (openMenu)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-uicontext-menu) | 用于在无法直接访问UI组件的场景向用户提供可执行操作，例如在事件回调中展示操作选项等。 |
+| [菜单控制 (Menu)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-menu/arkts-popup-and-menu-components-menu) | 用于需要给指定的组件绑定用户可执行的操作时，例如长按图标展示操作选项等。 |
+| [不依赖UI组件的全局菜单 (openMenu)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-menu/arkts-popup-and-menu-components-uicontext-menu) | 用于在无法直接访问UI组件的场景向用户提供可执行操作，例如在事件回调中展示操作选项等。 |
 
 ## 规格约束
 

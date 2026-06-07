@@ -1,7 +1,7 @@
 ---
 title: 智慧屏
 sidebar_label: 智慧屏
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/vision-0000002321377950
+original_url: /docs/design/multi-device-design/vision
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 |  |  |
 | --- | --- |
 | 硬件特性 | 屏幕：大尺寸高分辨率的大屏幕；  音频：较好的音频输入输出能力；  摄像头：一般配备较好的前置摄像头；  HDMI 接口：配备多个 HDMI 接口，可用于连接机顶盒、游戏机、电脑等输入设备 |
-| 使用方式 | **远距离使用**：人与智慧屏的物理距离一般为 1.5m-4m， 通过遥控器进行遥控使用  **遥控器**：根据遥控器的型号，智慧屏可支持 2 种交互方式。光标指向 - 使用灵犀指向遥控器时，根据遥控器指向对屏幕内容进行直接交互。请参阅[光标交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-cursor-0000001795531205)； 焦点导航 - 使用走焦类遥控器时，通过点击遥控器方向键移动焦点对象进行交互。请参阅[焦点导航](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus-0000001748650376) |
+| 使用方式 | **远距离使用**：人与智慧屏的物理距离一般为 1.5m-4m， 通过遥控器进行遥控使用  **遥控器**：根据遥控器的型号，智慧屏可支持 2 种交互方式。光标指向 - 使用灵犀指向遥控器时，根据遥控器指向对屏幕内容进行直接交互。请参阅[光标交互](/docs/design/hmi/cursor)； 焦点导航 - 使用走焦类遥控器时，通过点击遥控器方向键移动焦点对象进行交互。请参阅[焦点导航](/docs/design/hmi/focus) |
 | 使用场景 | 智慧屏的使用场景主要是居家娱乐，如观影、游戏。除此之外，智慧屏还在家居环境起到重要的氛围调节作用。 |
 
 ### 应用和服务设计
@@ -31,7 +31,7 @@ format: md
 
 ## 保证基础体验
 
-在应用/服务设计中需要遵守一些基础体验要求，如果不满足这些基础要求，则会极大损害用户的使用体验。例如，如果界面元素的响应热区太小会导致用户很难操作成功，从而无法完成要操作的任务。具体要求请参阅[应用 UX 体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001760867048)。
+在应用/服务设计中需要遵守一些基础体验要求，如果不满足这些基础要求，则会极大损害用户的使用体验。例如，如果界面元素的响应热区太小会导致用户很难操作成功，从而无法完成要操作的任务。具体要求请参阅[应用 UX 体验标准](/docs/design/ux-standards/overview)。
 
 ## 设计应用和服务体验
 
@@ -82,12 +82,12 @@ format: md
 
 ### 系统特性
 
-* [通知](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217)
-* [实况窗](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861)
-* [服务卡片](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-service-widget-0000002087671904)
-* [播控中心](https://developer.huawei.com/consumer/cn/doc/design-guides/broadcasting-control-0000001957017133)
+* [通知](/docs/design/system-features/features/notification)
+* [实况窗](/docs/design/system-features/features/live-view)
+* [服务卡片](/docs/design/system-features/features/service-widget)
+* [播控中心](/docs/design/system-features/features/broadcasting-control)
 
 ### 人机交互
 
-* [光标交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-cursor-0000001795531205)
-* [焦点导航](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus-0000001748650376)
+* [光标交互](/docs/design/hmi/cursor)
+* [焦点导航](/docs/design/hmi/focus)

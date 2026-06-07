@@ -1,7 +1,7 @@
 ---
 title: "协作者管理"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-xiezuozheguangli-0000002114730989
+original_url: /docs/monetize/promotion/ads-xiezuozheguangli-0000002114730989
 format: md
 ---
 
@@ -47,4 +47,4 @@ format: md
 
 此处的华为账号必须未注册过其它账户类型（包括直客、服务商、子客服务商、子客、协作者、团队账号、经理账户）。
 
-如您还没注册华为账号，注册流程可参考：[华为账号](https://developer.huawei.com/consumer/cn/doc/promotion/ads-hwzh-0000002188054913)。
+如您还没注册华为账号，注册流程可参考：[华为账号](/docs/monetize/promotion/ads-hwzh-0000002188054913)。

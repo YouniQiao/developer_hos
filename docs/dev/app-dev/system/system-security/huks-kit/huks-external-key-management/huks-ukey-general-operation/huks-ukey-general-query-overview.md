@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通用查询介绍及规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-query-overview
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-general-operation/huks-ukey-general-query-overview
 format: md
 ---
 

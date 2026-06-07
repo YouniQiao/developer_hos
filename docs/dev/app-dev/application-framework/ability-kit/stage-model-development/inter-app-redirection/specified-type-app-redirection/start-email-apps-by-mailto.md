@@ -1,6 +1,6 @@
 ---
 title: "拉起邮件类应用（mailto方式）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps-by-mailto
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-email-apps-by-mailto
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
     ![](./img/03131d82.png)
 
     - 如果使用mailto方式拉起邮件应用，需要拉起方先按mailto格式封装字符串，再使用mailto方式拉起。邮件应用会解析收到的mailto协议字符串，并填充发件人、收件人、邮件内容等信息。
-    - 如果拉起方已知发件人、收件人、邮件内容等信息，推荐[使用startAbilityByType方式拉起邮件应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps)。
+    - 如果拉起方已知发件人、收件人、邮件内容等信息，推荐[使用startAbilityByType方式拉起邮件应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-email-apps)。
 
 ## mailto协议格式
 
@@ -100,7 +100,7 @@ struct Index {
 
 ## 目标方开发步骤
 
-1. 为了能够支持被其他应用通过mailto协议拉起，目标应用需要在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中声明mailto。
+1. 为了能够支持被其他应用通过mailto协议拉起，目标应用需要在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中声明mailto。
 
    ```
    {

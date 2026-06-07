@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "查询和监听音频输出设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-management
+original_url: /docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-management
 format: md
 ---
 
@@ -70,7 +70,7 @@ import { audio } from '@kit.AudioKit';  // 导入audio模块。
 
 ![](./img/4b48a476.png)
 
-监听设备连接状态变化可以监听到全部的设备连接状态变化，不建议作为应用处理自动暂停的依据。应用如需处理自动暂停相关业务，可参考[音频流输出设备变更原因](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-change#音频流输出设备变更原因)。
+监听设备连接状态变化可以监听到全部的设备连接状态变化，不建议作为应用处理自动暂停的依据。应用如需处理自动暂停相关业务，可参考[音频流输出设备变更原因](/docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-change#音频流输出设备变更原因)。
 
 ```
 import { audio } from '@kit.AudioKit';  // 导入audio模块。

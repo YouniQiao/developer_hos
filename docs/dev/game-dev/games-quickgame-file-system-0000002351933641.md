@@ -1,6 +1,6 @@
 ---
 title: "文件系统"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-file-system-0000002351933641
+original_url: /docs/dev/game-dev/games-quickgame-file-system-0000002351933641
 format: md
 ---
 

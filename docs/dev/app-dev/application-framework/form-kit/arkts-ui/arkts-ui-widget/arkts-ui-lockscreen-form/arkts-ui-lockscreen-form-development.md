@@ -1,6 +1,6 @@
 ---
 title: "锁屏卡片开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-lockscreen-form-development
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-lockscreen-form/arkts-ui-lockscreen-form-development
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 * 界面限制：
 
 1. 锁屏卡片只支持 1\*1、1\*2尺寸的卡片。
-2. 锁屏卡片不推荐展示涉及用户的隐私敏感数据，具体界面约束请参考[卡片内容设计](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-service-widget-0000002087671904#section248mcpsimp)。
+2. 锁屏卡片不推荐展示涉及用户的隐私敏感数据，具体界面约束请参考[卡片内容设计](/docs/design/system-features/features/service-widget#section248mcpsimp)。
 
 ## 开发步骤
 
@@ -39,7 +39,7 @@ format: md
 
 ### 锁屏卡片配置
 
-在form\_config.json配置文件中，锁屏卡片必须配置renderingMode和supportDimensions字段。其中renderingMode字段仅支持配置为“singleColor”或者“autoColor”，supportDimensions字段取值中必须包含"1\*1"或"1\*2"，具体参考[配置文件字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#配置文件字段说明)。renderingMode字段在API version 18版本后，配置方法有变动。
+在form\_config.json配置文件中，锁屏卡片必须配置renderingMode和supportDimensions字段。其中renderingMode字段仅支持配置为“singleColor”或者“autoColor”，supportDimensions字段取值中必须包含"1\*1"或"1\*2"，具体参考[配置文件字段说明](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#配置文件字段说明)。renderingMode字段在API version 18版本后，配置方法有变动。
 
 ```
 // 在API version 18及以上的版本，renderingMode的配置方法如下
@@ -104,7 +104,7 @@ format: md
 
 因为锁屏卡片会展示在设备的锁屏界面，出于数据隐私安全考虑，需要开发者申请上架开放能力。
 
-因此在应用调试或发布时，必须使用[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)，并在手动签名[申请Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)过程中[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)，创建应用时参考如下指导为应用接入开放能力。
+因此在应用调试或发布时，必须使用[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)，并在手动签名[申请Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)过程中[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，创建应用时参考如下指导为应用接入开放能力。
 
 1. 在“开放能力接入”页面，点击锁屏卡片对应的申请按钮。
 

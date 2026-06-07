@@ -1,7 +1,7 @@
 ---
 title: "介绍"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-introduction-0000002429810857
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-introduction-0000002429810857
 format: md
 ---
 
@@ -20,4 +20,4 @@ format: md
 
 通过Theme Studio Pro工具新建卡片时，若裁减圆角选择“是”，即代表制作的是标准卡；若裁减圆角选择“否”，则代表制作的是异形卡。
 
-具体设计要求，参考[卡片圆角](https://developer.huawei.com/consumer/cn/doc/content/rounded_corners-0000002581605065)章节。
+具体设计要求，参考[卡片圆角](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/rounded_corners-0000002581605065)章节。

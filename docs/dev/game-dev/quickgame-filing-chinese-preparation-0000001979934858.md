@@ -1,6 +1,6 @@
 ---
 title: "国产游戏小程序核准（备案）准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-chinese-preparation-0000001979934858
+original_url: /docs/dev/game-dev/quickgame-filing-chinese-preparation-0000001979934858
 format: md
 ---
 

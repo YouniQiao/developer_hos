@@ -1,7 +1,7 @@
 ---
 format: md
 title: "语义分析的过程中，为什么会对空白区域（看不到有按钮或文字）进行红框标记"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-5
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-exploratory-test/faqs-app-exploration-test/faqs-app-exploration-test-5
 ---
 
 

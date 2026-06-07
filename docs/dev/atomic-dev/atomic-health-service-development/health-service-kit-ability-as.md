@@ -1,6 +1,6 @@
 ---
 title: "Health Service Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-service-kit-ability-as
+original_url: /docs/dev/atomic-dev/atomic-health-service-development/health-service-kit-ability-as
 format: md
 ---
 

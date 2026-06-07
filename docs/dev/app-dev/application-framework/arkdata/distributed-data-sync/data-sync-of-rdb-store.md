@@ -1,6 +1,6 @@
 ---
 title: "关系型数据库跨设备数据同步 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-of-rdb-store
+original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-sync/data-sync-of-rdb-store
 format: md
 ---
 
@@ -86,7 +86,7 @@ format: md
 
 ![](./img/388e89e5.png)
 
-数据只允许向数据安全标签不高于对端设备安全等级的设备同步数据，具体规则可见[跨设备同步访问控制机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control-by-device-and-data-level#跨设备同步访问控制机制)。
+数据只允许向数据安全标签不高于对端设备安全等级的设备同步数据，具体规则可见[跨设备同步访问控制机制](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/access-control-by-device-and-data-level#跨设备同步访问控制机制)。
 
 1. 导入模块。
 
@@ -106,8 +106,8 @@ format: md
 
 2. 请求权限。
 
-   1. 需要申请ohos.permission.DISTRIBUTED\_DATASYNC权限，配置方式请参见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-   2. 同时需要在应用首次启动时弹窗向用户申请授权，使用方式请参见[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+   1. 需要申请ohos.permission.DISTRIBUTED\_DATASYNC权限，配置方式请参见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+   2. 同时需要在应用首次启动时弹窗向用户申请授权，使用方式请参见[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 3. 创建关系型数据库，创建数据表，并将需要进行跨设备同步的数据表设置为分布式表，默认采用多设备协同表模式进行数据存储和管理。
 
    ```

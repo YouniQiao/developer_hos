@@ -1,6 +1,6 @@
 ---
 title: "CPU高负载事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-cpu-usage-high-event
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-event
 format: md
 ---
 
@@ -17,15 +17,15 @@ CPU高负载事件包含以下3类：
 
 如需了解如何使用HiAppEvent提供订阅CPU高负载事件，请参考以下文档。目前仅提供ArkTS接口。
 
-* [订阅CPU高负载事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-cpu-usage-high-arkts)
+* [订阅CPU高负载事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-arkts)
 
 ![](./img/1715e5c8.png)
 
-CPU高负载事件不支持在[应用分身场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)或[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)使用HiAppEvent进行订阅，从API version 22开始支持在[输入法应用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)下使用HiAppEvent进行订阅。
+CPU高负载事件不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)使用HiAppEvent进行订阅，从API version 22开始支持在[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
 
 ## 检测原理
 
-CPU高负载事件检测原理详见[功耗检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-detection)章节。
+CPU高负载事件检测原理详见[功耗检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/power-detection)章节。
 
 ## 自定义参数
 
@@ -61,7 +61,7 @@ params字段说明
 | begin\_time | number | 采集开始时间，单位为ms。 |
 | end\_time | number | 采集结束时间，单位为ms。 |
 | fault\_type | number | 故障类型(从API version 20开始，支持该参数)：  - 1：前台CPU高负载异常；  - 2：后台CPU高负载异常；  - 3：线程CPU高负载异常。 |
-| external\_log | string[] | 记录故障日志文件路径，日志的文件名是：CPU\_USAGE\_HIGH\_时间数字\_数字.log，详细见[日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-detection#日志规格)。**为避免目录空间超限，导致新生成的日志文件写入失败，日志文件处理完后请及时删除。** |
+| external\_log | string[] | 记录故障日志文件路径，日志的文件名是：CPU\_USAGE\_HIGH\_时间数字\_数字.log，详细见[日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/power-detection#日志规格)。**为避免目录空间超限，导致新生成的日志文件写入失败，日志文件处理完后请及时删除。** |
 | log\_over\_limit | boolean | 生成的故障日志文件与已存在的日志文件总大小是否超过5M上限。true表示超过上限，日志写入失败；false表示未超过上限 |
 | threads | object[] | 线程信息，具体信息取决于fault\_type故障类型，不同类型记录的线程信息存在差异。  - 前台CPU高负载异常：异常进程的TOP5线程信息；  - 后台CPU高负载异常：异常进程的TOP5线程信息；  - 线程CPU高负载异常：异常线程的信息。 |
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "人脸核身实人验证场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-face-verification
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-face-verification
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
 
 | 步骤 | 说明 |
 | --- | --- |
-| 开发准备 | 请先完成开发准备后再进行下面的开发接入。  - [端侧应用配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-app-identity-info)  - [用户身份验证服务接入准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-preparations) |
+| 开发准备 | 请先完成开发准备后再进行下面的开发接入。  - [端侧应用配置](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-app-identity-info)  - [用户身份验证服务接入准备](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-real-name-preparations) |
 | 接入人脸核身实人验证 | 根据人脸核身实人验证场景[开发步骤](#开发步骤)完成接入。 |
 
 ## 业务流程
@@ -73,7 +73,7 @@ format: md
 
 ### 发起人脸核身预验证（服务器开发）
 
-调用[人脸核身实人预验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-api-common-face-verifactaion-preverify)接口获取预验证ID后返回给端侧拉起人脸核身实人验证页面。服务器开发步骤可参考[实名信息验证/授权场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-verification#实名信息验证)服务器开发实现。
+调用[人脸核身实人预验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-api-common-face-verifactaion-preverify)接口获取预验证ID后返回给端侧拉起人脸核身实人验证页面。服务器开发步骤可参考[实名信息验证/授权场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-verification#实名信息验证)服务器开发实现。
 
 ### 拉起人脸核身实人验证（端侧开发）
 

@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "健康记录数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-healthsequence
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-healthsequence
 format: md
 ---
 
 
-* **[睡眠](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-sleeprecord)**
-* **[生理周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-menstrualcycle)**
+* **[睡眠](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-healthsequence/health-sleeprecord)**
+* **[生理周期](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-healthsequence/health-menstrualcycle)**

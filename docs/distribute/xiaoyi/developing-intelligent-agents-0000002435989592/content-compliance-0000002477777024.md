@@ -1,7 +1,7 @@
 ---
 title: "配置-内容合规"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/content-compliance-0000002477777024
+original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/content-compliance-0000002477777024
 format: md
 ---
 

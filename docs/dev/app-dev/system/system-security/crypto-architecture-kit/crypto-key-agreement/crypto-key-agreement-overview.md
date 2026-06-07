@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "密钥协商介绍及算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-overview
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-overview
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 * 轻量级智能穿戴不支持密钥协商功能。
 * 使用现有密钥别名作为协商结果密钥别名会把现有密钥覆盖。
 
-从API 23开始支持[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)特性。
+从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。
 
 ## 支持的算法
 

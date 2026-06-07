@@ -1,6 +1,6 @@
 ---
 title: "Push Appendix"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-appendix
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-appendix
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

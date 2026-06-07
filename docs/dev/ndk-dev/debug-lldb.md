@@ -1,6 +1,6 @@
 ---
 title: "LLDB高性能调试器"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-lldb
+original_url: /docs/dev/ndk-dev/debug-lldb
 format: md
 ---
 
@@ -208,7 +208,7 @@ lldb-server在运行时会对自身进行数字签名验证，只有通过华为
 
   + 一键调试：
 
-    - 下载DevEco Studio，根据IDE的调试方法即可进行一键调试：[通过DevEco Studio调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-performance-profiling-overview)。
+    - 下载DevEco Studio，根据IDE的调试方法即可进行一键调试：[通过DevEco Studio调试](/docs/dev/ndk-dev/debug-performance-profiling-overview)。
     - 支持Windows/Mac连接HarmonyOS设备或模拟器，支持调试Native C++应用。
     - 直接使用DevEco Studio的Debug功能即可，无需手动推送lldb或lldb-server。
   + 手动调试：

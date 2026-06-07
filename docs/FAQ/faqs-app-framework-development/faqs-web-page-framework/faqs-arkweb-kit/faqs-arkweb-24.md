@@ -1,6 +1,6 @@
 ---
 title: "通过网络请求而来的Cookie如何同步配置到web中"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-24
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-24
 format: md
 ---
 

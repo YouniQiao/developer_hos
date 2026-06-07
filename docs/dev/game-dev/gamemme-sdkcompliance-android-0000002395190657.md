@@ -1,6 +1,6 @@
 ---
 title: "JS"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gamemme-sdkcompliance-android-0000002395190657
+original_url: /docs/dev/game-dev/gamemme-sdkcompliance-android-0000002395190657
 format: md
 ---
 
@@ -53,13 +53,13 @@ format: md
 
   **使用目的**：提供联机、对战录像查询与回放功能。如果您只使用部分SDK功能，则可以根据实际功能进行裁剪。
 
-  **隐私政策链接：**[SDK隐私声明](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sdksecurity-js-0000002395190653)
+  **隐私政策链接：**[SDK隐私声明](/docs/dev/game-dev/gameobe-sdksecurity-js-0000002395190653)
 
 * 以表格方式向用户告知
 
   | 第三方SDK名称 | 第三方公司名称 | 收集个人信息类型 | 使用目的 | 隐私政策链接 |
   | --- | --- | --- | --- | --- |
-  | GameOBEForJSSDK | 华为软件技术有限公司 | 应用使用信息、IP地址或IP归属地、大致位置信息、华为账号信息、第三方账号信息、视频信息 | 提供联机、对战录像查询与回放功能。如果您只使用部分SDK功能，则可以根据实际功能进行裁剪。 | [SDK隐私声明](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sdksecurity-js-0000002395190653) |
+  | GameOBEForJSSDK | 华为软件技术有限公司 | 应用使用信息、IP地址或IP归属地、大致位置信息、华为账号信息、第三方账号信息、视频信息 | 提供联机、对战录像查询与回放功能。如果您只使用部分SDK功能，则可以根据实际功能进行裁剪。 | [SDK隐私声明](/docs/dev/game-dev/gameobe-sdksecurity-js-0000002395190653) |
 
 ## 权限使用要求
 
@@ -79,7 +79,7 @@ format: md
 
 * 如何开启或关闭扩展功能
 
-  您可以通过[云侧开关配置](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-framesync-management-0000002395350373#section17164254104)选择是否开启或关闭SDK的对战录像查询与回放功能。
+  您可以通过[云侧开关配置](/docs/dev/game-dev/gameobe-framesync-management-0000002395350373#section17164254104)选择是否开启或关闭SDK的对战录像查询与回放功能。
 
 ## 保障个人信息主体权利
 

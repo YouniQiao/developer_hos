@@ -1,7 +1,7 @@
 ---
 title: 状态按钮
 sidebar_label: 状态按钮
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/togglebutton-0000001956842045
+original_url: /docs/design/components/control-components/toggle-button
 format: md
 ---
 

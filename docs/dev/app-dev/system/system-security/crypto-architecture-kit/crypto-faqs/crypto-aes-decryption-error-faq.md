@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AES解密失败返回错误码17630001"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-decryption-error-faq
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-faqs/crypto-aes-decryption-error-faq
 format: md
 ---
 

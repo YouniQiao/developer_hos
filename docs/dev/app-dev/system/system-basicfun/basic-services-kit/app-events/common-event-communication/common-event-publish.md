@@ -1,6 +1,6 @@
 ---
 title: "发布公共事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-publish
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-publish
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](./img/5f2a6dac.png)
 
-已发出的粘性公共事件后来订阅者也可以接收到，其他公共事件都需要先订阅再接收，订阅参考[公共事件订阅章节](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-subscription)。
+已发出的粘性公共事件后来订阅者也可以接收到，其他公共事件都需要先订阅再接收，订阅参考[公共事件订阅章节](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-subscription)。
 
 ## 接口说明
 

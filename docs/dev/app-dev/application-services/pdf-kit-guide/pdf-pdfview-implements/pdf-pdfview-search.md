@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "搜索关键字"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-search
+original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-search
 format: md
 ---
 

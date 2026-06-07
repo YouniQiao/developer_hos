@@ -1,6 +1,6 @@
 ---
 title: "页面级弹出框"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-embedded-dialog
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-embedded-dialog
 format: md
 ---
 
@@ -13,9 +13,9 @@ ArkUI的弹出框默认设置为全局级别，弹窗节点作为页面根节点
 
 当且仅当弹出框为非子窗模式时，页面级能力才会生效。即showInSubWindow参数不设置或设置为false。
 
-页面级弹出框通常与导航路由能力结合使用，可以参考[组件导航和页面路由概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-introduction)了解相关术语。
+页面级弹出框通常与导航路由能力结合使用，可以参考[组件导航和页面路由概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-introduction)了解相关术语。
 
-页面级弹出框的使用方式是在当前弹出框的入参之中新增了相关属性能力，使用前可以通过[弹出框概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)了解基础的弹出框使用方法。
+页面级弹出框的使用方式是在当前弹出框的入参之中新增了相关属性能力，使用前可以通过[弹出框概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-base-dialog-overview)了解基础的弹出框使用方法。
 
 ## 设置参数
 

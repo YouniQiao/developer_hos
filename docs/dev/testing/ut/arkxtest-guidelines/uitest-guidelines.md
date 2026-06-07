@@ -1,6 +1,6 @@
 ---
 title: "UI测试框架使用指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uitest-guidelines
+original_url: /docs/dev/testing/ut/arkxtest-guidelines/uitest-guidelines
 format: md
 ---
 
@@ -40,7 +40,7 @@ UITest分为客户端和服务端。
 
 本章节介绍UI测试框架ArkTS API的具体使用方法。
 
-UI测试是在[单元测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unittest-guidelines)基础上进行UITest接口调用，接口的详细定义与参数说明可参考[API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-uitest)。
+UI测试是在[单元测试](/docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines)基础上进行UITest接口调用，接口的详细定义与参数说明可参考[API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-uitest)。
 
 ### UI测试示例
 
@@ -48,7 +48,7 @@ UI测试是在[单元测试](https://developer.huawei.com/consumer/cn/doc/harmon
 
 1. 调用[程序框架服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator)能力，启动目标被测应用，并确认应用运行状态。
 2. 调用UI测试框架能力，页面中执行点击操作。
-3. 通过[添加断言](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unittest-guidelines#断言能力)，验证操作后当前页面的实际变化是否与预期结果一致。
+3. 通过[添加断言](/docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines#断言能力)，验证操作后当前页面的实际变化是否与预期结果一致。
 
 开发步骤如下:
 
@@ -326,10 +326,10 @@ export default function abilityTest() {
 
 ![](./img/9e093e13.png)
 
-1. 指定截图文件保存路径，路径需为当前应用的[沙箱路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
-2. 测试HAP的[APL等级级别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限机制中的基本概念)为normal，对应要求使用用户级加密区的应用沙箱路径。且需指定将文件保存在应用在本设备上存放持久化数据的子目录。
+1. 指定截图文件保存路径，路径需为当前应用的[沙箱路径](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
+2. 测试HAP的[APL等级级别](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限机制中的基本概念)为normal，对应要求使用用户级加密区的应用沙箱路径。且需指定将文件保存在应用在本设备上存放持久化数据的子目录。
 
-如下给出屏幕截图的示例，指定屏幕id和截取屏幕区域，并将截图保存到指定路径下。下面代码执行前请参考UI测试示例，实现对应的Index.ets页面代码。多屏场景下，期望对指定屏幕做截图操作时，可以调用display模块的接口[获取Display对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screenproperty-guideline#获取display对象)，实现[屏幕相关属性获取](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screenproperty-guideline#获取屏幕相关属性)。
+如下给出屏幕截图的示例，指定屏幕id和截取屏幕区域，并将截图保存到指定路径下。下面代码执行前请参考UI测试示例，实现对应的Index.ets页面代码。多屏场景下，期望对指定屏幕做截图操作时，可以调用display模块的接口[获取Display对象](/docs/dev/app-dev/application-framework/arkui/display-manager/screenproperty-guideline#获取display对象)，实现[屏幕相关属性获取](/docs/dev/app-dev/application-framework/arkui/display-manager/screenproperty-guideline#获取屏幕相关属性)。
 
 ```
 import { describe, it, Level, Size, TestType } from '@ohos/hypium';
@@ -591,7 +591,7 @@ export default function abilityTest() {
 
 ### 环境要求
 
-根据hdc命令行工具指导，完成[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)。确保设备已成功连接，并执行hdc shell。
+根据hdc命令行工具指导，完成[环境准备](/docs/dev/app-dev/system/hdc#环境准备)。确保设备已成功连接，并执行hdc shell。
 
 ### 命令列表
 
@@ -627,9 +627,9 @@ hdc shell uitest screenCap -p /data/local/tmp/1.png
 | -i | - | 不过滤不可见控件，也不做窗口合并。 |
 | -a | - | 保存控件的BackgroundColor、Content、FontColor、FontSize、extraAttrs属性数据。  **说明** ：默认不保存上述属性数据， **-a和-i不可同时使用。** |
 | -b | \<bundleName\> | 获取指定包名对应目标窗口的控件树信息。 |
-| -w | \<windowId\> | 获取指定ID目标窗口的控件树信息。  **说明:**  可通过hidumper工具[获取应用窗口信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#获取应用窗口信息), 包含应用对应窗口的id。 |
+| -w | \<windowId\> | 获取指定ID目标窗口的控件树信息。  **说明:**  可通过hidumper工具[获取应用窗口信息](/docs/dev/app-dev/system/hidumper#获取应用窗口信息), 包含应用对应窗口的id。 |
 | -m | \<true|false\> | 指定在获取控件树信息时是否合并窗口信息。true表示合并窗口信息，false表示不合并窗口信息，不设置时默认为true。 |
-| -d | \<displayId\> | 多屏场景下，获取指定ID屏幕下的控件树。  **说明：**  1. 从API version 20开始支持该命令。  2. 可通过hidumper工具[获取应用窗口信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#获取应用窗口信息)，包含应用对应窗口的DisplayId。 |
+| -d | \<displayId\> | 多屏场景下，获取指定ID屏幕下的控件树。  **说明：**  1. 从API version 20开始支持该命令。  2. 可通过hidumper工具[获取应用窗口信息](/docs/dev/app-dev/system/hidumper#获取应用窗口信息)，包含应用对应窗口的DisplayId。 |
 
 ```
 # 指定存储路径和文件名，存放在/data/local/tmp/下。
@@ -845,7 +845,7 @@ hdc shell uitest --version
 
 ![](./img/507e0a80.png)
 
-仅元能力aa test拉起的测试HAP才能调用Uitest的能力，且测试HAP的[APL等级级别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限机制中的基本概念)需为normal。
+仅元能力aa test拉起的测试HAP才能调用Uitest的能力，且测试HAP的[APL等级级别](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限机制中的基本概念)需为normal。
 
 ```
 hdc shell uitest start-daemon

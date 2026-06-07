@@ -1,7 +1,7 @@
 ---
 title: "自定义认证插件配置"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-custom-auth-plugin-configuration
+original_url: /docs/tools/ohpm/repo/ide-custom-auth-plugin-configuration
 ---
 
 

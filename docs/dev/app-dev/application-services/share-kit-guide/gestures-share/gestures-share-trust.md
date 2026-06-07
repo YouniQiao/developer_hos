@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "可信任设备间传输"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-trust
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/gestures-share/gestures-share-trust
 format: md
 ---
 

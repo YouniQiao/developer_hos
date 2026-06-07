@@ -1,7 +1,7 @@
 ---
 title: "@performance/web-on-active-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-web-on-active-check
+original_url: /docs/tools/coding-debug/ide-web-on-active-check
 format: md
 ---
 

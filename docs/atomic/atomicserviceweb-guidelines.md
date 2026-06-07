@@ -1,6 +1,6 @@
 ---
 title: "Web组件概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomicserviceweb-guidelines
+original_url: /docs/dev/atomic-dev/atomic-web-development/atomicserviceweb-guidelines
 format: md
 ---
 
@@ -13,12 +13,12 @@ format: md
 
 AtomicServiceEnhancedWeb是AtomicServiceWeb的增强版，为开发者提供Web页面加载、页面交互、更多H5高阶开放能力等，保障开发者在H5混合ArkTS开发的场景有更加连续的体验。推荐您优先使用AtomicServiceEnhancedWeb组件。
 
-* 在元服务内，可使用AtomicServiceEnhancedWeb组件显示Web页面，且需要配置[业务域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-business-domain)。AtomicServiceEnhancedWeb不需要注入ASCF框架即可运行，请按照AtomicServiceEnhancedWeb相关指南进行配置开发。
+* 在元服务内，可使用AtomicServiceEnhancedWeb组件显示Web页面，且需要配置[业务域名](/docs/dev/atomic-dev/atomic-web-development/agc-help-harmonyos-business-domain)。AtomicServiceEnhancedWeb不需要注入ASCF框架即可运行，请按照AtomicServiceEnhancedWeb相关指南进行配置开发。
 
-  请参考：[AtomicServiceEnhancedWeb开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-guides/develop-atomicserviceenhancedweb)、[配置业务域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-business-domain)
+  请参考：[AtomicServiceEnhancedWeb开发指南](/docs/dev/atomic-dev/atomic-web-development/develop-atomicserviceenhancedweb)、[配置业务域名](/docs/dev/atomic-dev/atomic-web-development/agc-help-harmonyos-business-domain)
 * html中，如果需要调用元服务API，可集成元服务JS SDK，调用相关API进行访问。
 
-  请参考：[AtomicServiceEnhancedWeb JS SDK](https://developer.huawei.com/consumer/cn/doc/atomic-guides/components-atomicserviceenhancedweb)
+  请参考：[AtomicServiceEnhancedWeb JS SDK](/docs/dev/atomic-dev/atomic-web-development/components-atomicserviceenhancedweb)
 
 ## AtomicServiceWeb（不再推荐）
 
@@ -30,4 +30,4 @@ AtomicServiceWeb将不再演进，存量元服务可继续使用AtomicServiceWeb
 
 ## ArkWeb切换为AtomicServiceEnhancedWeb
 
-存量使用ArkWeb的元服务，需要参考[ArkWeb组件升级为AtomicServiceEnhancedWeb](https://developer.huawei.com/consumer/cn/doc/atomic-guides/web-upgraded-to-atomicserviceweb)升级指南切换为AtomicServiceEnhancedWeb组件。
+存量使用ArkWeb的元服务，需要参考[ArkWeb组件升级为AtomicServiceEnhancedWeb](/docs/dev/atomic-dev/atomic-web-development/web-upgraded-to-atomicserviceweb)升级指南切换为AtomicServiceEnhancedWeb组件。

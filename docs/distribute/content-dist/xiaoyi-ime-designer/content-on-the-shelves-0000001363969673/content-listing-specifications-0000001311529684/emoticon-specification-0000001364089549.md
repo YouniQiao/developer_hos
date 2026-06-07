@@ -1,7 +1,7 @@
 ---
 title: "表情规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/emoticon-specification-0000001364089549
+original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/emoticon-specification-0000001364089549
 ---
 
 # 表情规范

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "报错“ENOENT: no such file or directory, uv_cwd”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-186
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-186
 ---
 
 

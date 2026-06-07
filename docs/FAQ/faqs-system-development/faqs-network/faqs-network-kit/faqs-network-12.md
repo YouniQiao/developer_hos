@@ -1,7 +1,7 @@
 ---
 format: md
 title: "WebSocket连接是否支持MQTT协议"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-12
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-12
 ---
 
 

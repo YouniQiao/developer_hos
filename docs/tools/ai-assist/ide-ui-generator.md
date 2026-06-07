@@ -1,7 +1,7 @@
 ---
 title: "应用UI生成"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ui-generator
+original_url: /docs/tools/ai-assist/ide-ui-generator
 format: md
 ---
 

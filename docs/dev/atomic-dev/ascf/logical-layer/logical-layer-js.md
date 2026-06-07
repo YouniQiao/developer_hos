@@ -1,6 +1,6 @@
 ---
 title: "js"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-js
+original_url: /docs/dev/atomic-dev/ascf/logical-layer/logical-layer-js
 format: md
 ---
 

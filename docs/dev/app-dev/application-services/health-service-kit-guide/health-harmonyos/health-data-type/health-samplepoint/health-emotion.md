@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "情绪"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-emotion
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-emotion
 format: md
 ---
 

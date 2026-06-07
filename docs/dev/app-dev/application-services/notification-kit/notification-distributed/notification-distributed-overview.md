@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "跨设备协同通知概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-distributed-overview
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-distributed/notification-distributed-overview
 format: md
 ---
 
 
 跨设备协同通知旨在以手机为中心，实现与手表等其他设备的通知消息协同交互。典型场景如下：
 
-* [清除跨设备场景下的重复通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-distributed-messageid)：清除跨设备协同消息和本地设备发布的重复消息，避免多源通知重复打扰用户。
+* [清除跨设备场景下的重复通知](/docs/dev/app-dev/application-services/notification-kit/notification-distributed/notification-distributed-messageid)：清除跨设备协同消息和本地设备发布的重复消息，避免多源通知重复打扰用户。
 
 ## 约束条件
 

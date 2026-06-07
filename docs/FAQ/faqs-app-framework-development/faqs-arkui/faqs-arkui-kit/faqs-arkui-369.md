@@ -1,6 +1,6 @@
 ---
 title: "如何同时获取屏幕方向orientation和系统规避区avoidAreaChange信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-369
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-369
 format: md
 ---
 

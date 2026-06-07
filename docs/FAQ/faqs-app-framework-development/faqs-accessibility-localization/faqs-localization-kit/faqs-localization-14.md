@@ -1,6 +1,6 @@
 ---
 title: "在多模块工程中，如何获取har/hsp中的rawfile资源"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-14
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-14
 format: md
 ---
 

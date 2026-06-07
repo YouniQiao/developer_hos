@@ -1,7 +1,7 @@
 ---
 title: "插件上下文"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-build-expanding-context
+original_url: /docs/tools/coding-debug/ide-build-expanding-context
 format: md
 ---
 

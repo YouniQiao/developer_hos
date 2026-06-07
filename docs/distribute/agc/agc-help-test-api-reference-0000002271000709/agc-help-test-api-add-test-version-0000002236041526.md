@@ -1,6 +1,6 @@
 ---
 title: "新建测试版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-add-test-version-0000002236041526
+original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-add-test-version-0000002236041526
 format: md
 ---
 
@@ -26,27 +26,27 @@ format: md
 
 ![](../img/agc-help-test-api-add-test-version-0000002236041526_0.png)
 
-жң¬жҺҘеҸЈж”ҜжҢҒдҪҝз”ЁService Accountж–№ејҸгҖҒAPIе®ўжҲ·з«Ҝж–№ејҸе’ҢOAuthе®ўжҲ·з«Ҝж–№ејҸпјҢеҢәеҲ«иҜ·еҸӮи§Ғ[иҺ·еҸ–жңҚеҠЎз«ҜжҺҲжқғ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661)гҖӮ
+жң¬жҺҘеҸЈж”ҜжҢҒдҪҝз”ЁService Accountж–№ејҸгҖҒAPIе®ўжҲ·з«Ҝж–№ејҸе’ҢOAuthе®ўжҲ·з«Ҝж–№ејҸпјҢеҢәеҲ«иҜ·еҸӮи§Ғ[иҺ·еҸ–жңҚеҠЎз«ҜжҺҲжқғ](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661)гҖӮ
 
 **Service Account****ж–№ејҸпјҡ**
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
-| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{JWT}`*вҖқгҖӮJWTдёә[йҖҡиҝҮService Accountж–№ејҸиҺ·еҸ–жҺҲжқғ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)дёӯиҺ·еҸ–зҡ„йүҙжқғд»ӨзүҢгҖӮ |
+| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{JWT}`*вҖқгҖӮJWTдёә[йҖҡиҝҮService Accountж–№ејҸиҺ·еҸ–жҺҲжқғ](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)дёӯиҺ·еҸ–зҡ„йүҙжқғд»ӨзүҢгҖӮ |
 
 **APIе®ўжҲ·з«Ҝж–№ејҸпјҡ**
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
-| client\_id | M | String | е®ўжҲ·з«ҜIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[еҲӣе»әAPIе®ўжҲ·з«Ҝ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)гҖӮ |
-| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{access\_token}`*вҖқгҖӮaccess\_tokenдёә[иҺ·еҸ–Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)дёӯиҺ·еҸ–зҡ„access\_tokenгҖӮ |
+| client\_id | M | String | е®ўжҲ·з«ҜIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[еҲӣе»әAPIе®ўжҲ·з«Ҝ](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)гҖӮ |
+| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{access\_token}`*вҖқгҖӮaccess\_tokenдёә[иҺ·еҸ–Token](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)дёӯиҺ·еҸ–зҡ„access\_tokenгҖӮ |
 
 **OAuthе®ўжҲ·з«Ҝж–№ејҸпјҡ**
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
 | teamId | M | String(64) | ејҖеҸ‘иҖ…жүҖеңЁеӣўйҳҹзҡ„еӣўйҳҹIDгҖӮ |
-| oauth2Token | M | String | и®ӨиҜҒдҝЎжҒҜпјҢдј е…Ҙ[иҺ·еҸ–з”ЁжҲ·жҺҲжқғз Ғ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section949717114392)дёӯиҺ·еҸ–зҡ„Access TokenгҖӮ |
+| oauth2Token | M | String | и®ӨиҜҒдҝЎжҒҜпјҢдј е…Ҙ[иҺ·еҸ–з”ЁжҲ·жҺҲжқғз Ғ](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section949717114392)дёӯиҺ·еҸ–зҡ„Access TokenгҖӮ |
 
 #### [h2]Query
 
@@ -85,7 +85,7 @@ format: md
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
-| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-connectret-0000002272455641) | еҢ…еҗ«иҝ”еӣһз ҒеҸҠжҸҸиҝ°дҝЎжҒҜзҡ„з»“жһңгҖӮ |
+| ret | M | [ConnectRet](/docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-connectret-0000002272455641) | еҢ…еҗ«иҝ”еӣһз ҒеҸҠжҸҸиҝ°дҝЎжҒҜзҡ„з»“жһңгҖӮ |
 | versionId | O | String | жөӢиҜ•зүҲжң¬IDгҖӮ |
 
 #### е“Қеә”зӨәдҫӢ

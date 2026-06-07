@@ -1,7 +1,7 @@
 ---
 title: "添加创意标签"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-creative-label-add-0000001352386492
+original_url: /docs/monetize/promotion/bp-functions-creative-label-add-0000001352386492
 format: md
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: "配置签名和指纹"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-sign-fingerprints
+original_url: /docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-sign-fingerprints
 format: md
 ---
 
 
-请先参考“ **[元服务开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation)** ”章节，完成以下操作步骤：
+请先参考“ **[元服务开发准备](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation)** ”章节，完成以下操作步骤：
 
 1. 创建元服务、使用DevEco Studio创建元服务工程（如已完成，请跳过此步骤）。
 2. 配置签名信息 **（未成年人模式接口支持自动签名，其他接口仅支持手动签名方式）** 。

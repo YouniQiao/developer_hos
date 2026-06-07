@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "提升音频性能体验"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-performance
+original_url: /docs/dev/app-dev/media/audio-kit/audio-performance-optimization/audio-performance
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 
 时延是指音频数据在系统中处理和传输的时间。播放场景下指从系统收到数据至数据被硬件输出的时间；录音场景下指从硬件麦克风采集到数据至应用收到采集数据的时间。
 
-为支持低时延音频场景，系统专门提供了低时延音频通路，开发者需要显式通过接口参数进行设置，参考：[低时延音频播放(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-fast-playback)和[低时延音频录制(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-fast-recording)。
+为支持低时延音频场景，系统专门提供了低时延音频通路，开发者需要显式通过接口参数进行设置，参考：[低时延音频播放(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/audio-fast-playback)和[低时延音频录制(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-recording/audio-fast-recording)。
 
 需要注意的是，低时延通常使用更小的数据缓冲，对数据处理的性能要求更高，需要开发者尽可能优化音频数据生产的性能，确保每次系统请求数据时，能在极短时间内获取到数据开始处理，避免系统内部缓冲出现数据不足引起杂音。并且为了尽可能降低时延，系统在各环节的数据处理方面有所精简，音频的效果与其他通路也存在一定差异。因此，开发者需要结合应用的实际功能场景，来决定是否需要使能低时延模式，通常游戏音效、K歌耳返、短提示音以及乐器模拟等场景，更适合使用低时延通路。
 
@@ -39,7 +39,7 @@ format: md
 
 音频工作组的目标是：​​更低的音频延迟​​；避免音频断断续续​​；降低音频失真​​；更流畅、更可靠的音频播放体验。
 
-在开发播放音频类应用时，开发者需要先创建音频工作组，再将工作组运行信息的周期性告知系统。当运行结束后，需要及时清理音频工作组。更多具体的音频工作组的使用和示例，可以参考：[音频工作组管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-workgroup)​。
+在开发播放音频类应用时，开发者需要先创建音频工作组，再将工作组运行信息的周期性告知系统。当运行结束后，需要及时清理音频工作组。更多具体的音频工作组的使用和示例，可以参考：[音频工作组管理](/docs/dev/app-dev/media/audio-kit/audio-performance-optimization/audio-workgroup)​。
 
 ### 音频时间戳与音画同步
 

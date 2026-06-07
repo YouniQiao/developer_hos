@@ -1,6 +1,6 @@
 ---
 title: "本地化开发服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-localization
+original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-localization
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 工具栏
 sidebar_label: 工具栏
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/toolbar-0000001929683232
+original_url: /docs/design/components/control-components/toolbar
 format: md
 ---
 

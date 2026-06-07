@@ -1,7 +1,7 @@
 ---
 title: "受众人群定向"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-advanced-target-audience-targeting-0000001328517626
+original_url: /docs/monetize/promotion/bpos-functions-advanced-target-audience-targeting-0000001328517626
 format: md
 ---
 

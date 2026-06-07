@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现前置镜头的录像镜像功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-23
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-23
 ---
 
 

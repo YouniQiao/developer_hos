@@ -1,6 +1,6 @@
 ---
 title: "短时任务(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-transient-task
+original_url: /docs/dev/app-dev/application-framework/background-task-kit/native-transient-task
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 约束与限制
 
-申请短时任务的按钮，不可连续点击超过3次，否则会超出短时任务数量限制并报错。使用过程中更多的约束与限制请参考短时任务（ArkTS）的[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transient-task#约束与限制)。
+申请短时任务的按钮，不可连续点击超过3次，否则会超出短时任务数量限制并报错。使用过程中更多的约束与限制请参考短时任务（ArkTS）的[约束与限制](/docs/dev/app-dev/application-framework/background-task-kit/transient-task#约束与限制)。
 
 ## 接口说明
 

@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804
+original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804
 format: md
 ---
 

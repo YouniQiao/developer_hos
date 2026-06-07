@@ -1,7 +1,7 @@
 ---
 title: "1. 违规收集个人信息"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/faq-01
+original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-01
 format: md
 ---
 

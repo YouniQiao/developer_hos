@@ -1,7 +1,7 @@
 ---
 title: "登录并获取access_token"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-4-0000001128438066
+original_url: /docs/monetize/promotion/marketing-api-process-4-0000001128438066
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 
      [https://oauth-login.cloud.huawei.com/oauth2/v2/authorize?response\_type=code&client\_id=10380742&redirect\_uri=https%3A%2F%2Fe.hicloud.com&scope=https%3A%2F%2Fwww.huawei.com%2Fauth%2Faccount%2Fbase.profile%20https%3A%2F%2Fads.cloud.huawei.com%2Freport%20https%3A%2F%2Fads.cloud.huawei.com%2Fpromotion%20https%3A%2F%2Fads.cloud.huawei.com%2Ftools%20https%3A%2F%2Fads.cloud.huawei.com%2Faccount%20https%3A%2F%2Fads.cloud.huawei.com%2Ffinance&access\_type=offline](https://oauth-login.cloud.huawei.com/oauth2/v2/authorize?response_type=code&client_id=10380742&redirect_uri=https://e.hicloud.com&scope=https://www.huawei.com/auth/account/base.profile https://ads.cloud.huawei.com/report https://ads.cloud.huawei.com/promotion https://ads.cloud.huawei.com/tools https://ads.cloud.huawei.com/account https://ads.cloud.huawei.com/finance&access_type=offline)
 
-     <strong>请将client\_id替换为申请到的[客户端ID](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-2-0000001174597583#ZH-CN_TOPIC_0000001174597583__li12921111894610)，将redirect\_uri替换为业务的回调地址。</strong>
+     <strong>请将client\_id替换为申请到的[客户端ID](/docs/monetize/promotion/marketing-api-process-2-0000001174597583#ZH-CN_TOPIC_0000001174597583__li12921111894610)，将redirect\_uri替换为业务的回调地址。</strong>
 
      <strong>随后，跳转至登录界面，输入</strong> <strong>您想要访问的广告账户密码</strong> <strong>，OAuth 2.0服务器会把响应值通过redirect\_uri反馈给应用，如果您同意授权，则回调请求中带有授权码authorization code。</strong>
 

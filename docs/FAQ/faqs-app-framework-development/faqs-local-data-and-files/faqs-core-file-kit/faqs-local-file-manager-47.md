@@ -1,6 +1,6 @@
 ---
 title: "如何创建临时文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-47
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-47
 format: md
 ---
 

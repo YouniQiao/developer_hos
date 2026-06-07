@@ -1,7 +1,7 @@
 ---
 title: "目的"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-purpose-0000001936442645
+original_url: /docs/monetize/promotion/bp-appendix-material-rule-purpose-0000001936442645
 format: md
 ---
 

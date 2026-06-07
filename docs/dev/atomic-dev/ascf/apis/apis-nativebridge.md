@@ -1,6 +1,6 @@
 ---
 title: "桥接"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-nativebridge
+original_url: /docs/dev/atomic-dev/ascf/apis/apis-nativebridge
 format: md
 ---
 
@@ -11,7 +11,7 @@ string has.callNative(string|Object params)
 
 提供同步调用本地方法的接口。
 
-**需要权限：** 开发前需要申请元服务框架间通信能力权限。接入流程详见[框架间通信使用指导](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-nativebridge)。
+**需要权限：** 开发前需要申请元服务框架间通信能力权限。接入流程详见[框架间通信使用指导](/docs/dev/atomic-dev/ascf/framework/ascf-nativebridge)。
 
 **起始版本：** 1.0.22
 
@@ -38,7 +38,7 @@ has.callNativeAsync(Object object)
 
 提供异步调用本地方法的接口。
 
-**需要权限：** 开发前需要申请元服务框架间通信能力权限。接入流程详见[框架间通信使用指导](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-nativebridge)。
+**需要权限：** 开发前需要申请元服务框架间通信能力权限。接入流程详见[框架间通信使用指导](/docs/dev/atomic-dev/ascf/framework/ascf-nativebridge)。
 
 **起始版本：** 1.0.22
 

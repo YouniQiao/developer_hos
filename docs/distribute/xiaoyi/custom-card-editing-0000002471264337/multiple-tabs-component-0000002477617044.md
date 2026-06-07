@@ -1,7 +1,7 @@
 ---
 title: "多页签组件用法"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/multiple-tabs-component-0000002477617044
+original_url: /docs/distribute/xiaoyi/custom-card-editing-0000002471264337/multiple-tabs-component-0000002477617044
 format: md
 ---
 

@@ -1,16 +1,16 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "场景化Button"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button
 format: md
 ---
 
 
-* **[快速验证手机号Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-getphonenumber)**
-* **[选择头像Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-chooseavatar)**
-* **[打开APP Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-launchapp)**
-* **[选择收货地址Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-ship-to)**
-* **[选择发票抬头Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-invoice-title)**
-* **[地图选点Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-selecting-point)**
-* **[权限设置Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-permissiononsetting)**
-* **[获取手机号和风险等级Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-get-risklevel)**
+* **[快速验证手机号Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber)**
+* **[选择头像Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-chooseavatar)**
+* **[打开APP Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-launchapp)**
+* **[选择收货地址Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-ship-to)**
+* **[选择发票抬头Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-invoice-title)**
+* **[地图选点Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-selecting-point)**
+* **[权限设置Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-permissiononsetting)**
+* **[获取手机号和风险等级Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-get-risklevel)**

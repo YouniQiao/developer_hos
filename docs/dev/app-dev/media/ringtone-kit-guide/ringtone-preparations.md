@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设置铃声"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-preparations
+original_url: /docs/dev/app-dev/media/ringtone-kit-guide/ringtone-preparations
 format: md
 ---
 

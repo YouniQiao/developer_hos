@@ -1,6 +1,6 @@
 ---
 title: "HTTP数据请求"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-http-request
+original_url: /docs/dev/atomic-dev/atomic-network-development/atomic-http-request
 format: md
 ---
 
@@ -19,7 +19,7 @@ HTTP数据请求功能主要由http模块提供。
 
 使用该功能需要申请ohos.permission.INTERNET权限。
 
-权限申请请参考[访问控制（权限）开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+权限申请请参考[访问控制（权限）开发指导](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 涉及的接口如下表，具体的接口说明请参考[API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http)。
 

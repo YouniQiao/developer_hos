@@ -1,6 +1,6 @@
 ---
 title: "画中画开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-overview
 format: md
 ---
 
@@ -18,9 +18,9 @@ format: md
 
 系统提供以下三种画中画功能的开发方式：
 
-* [使用XComponent实现画中画功能开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-xcomponent)：适用于应用通过[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)管理页面或Ability单页面情况下使用画中画的场景，这种实现方式无需应用管理页面。
-* [使用typeNode实现画中画功能开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-typenode)：适用于所有场景，这种实现方式灵活性高，需要应用自行管理页面，推荐通过该方式使用画中画功能。
-* [使用NDK接口实现画中画功能开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-native)：适用于依赖NDK接口开发的应用，需要应用自行管理页面。
+* [使用XComponent实现画中画功能开发](/docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-xcomponent)：适用于应用通过[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)管理页面或Ability单页面情况下使用画中画的场景，这种实现方式无需应用管理页面。
+* [使用typeNode实现画中画功能开发](/docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-typenode)：适用于所有场景，这种实现方式灵活性高，需要应用自行管理页面，推荐通过该方式使用画中画功能。
+* [使用NDK接口实现画中画功能开发](/docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-native)：适用于依赖NDK接口开发的应用，需要应用自行管理页面。
 
 ## 约束与限制
 

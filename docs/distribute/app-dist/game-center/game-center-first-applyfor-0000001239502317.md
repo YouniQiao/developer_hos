@@ -1,7 +1,7 @@
 ---
 title: "游戏首发"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-first-applyfor-0000001239502317
+original_url: /docs/distribute/app-dist/game-center/game-center-first-applyfor-0000001239502317
 format: md
 ---
 
@@ -98,7 +98,7 @@ format: md
 
 1. 若您想要获取更好的首发推广资源，建议您在首发申请之前进行[游戏内测](`https://developer.huawei.com/consumer/cn/doc/app/game-center-early-access-0000001194302390`)（RPK游戏暂不支持）。
 2. 若您的新游首发需要申请首发活动，建议首发前1个月进行沟通，具体请参见[游戏营销活动申请指南](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-overview-0000001704790612`)。
-3. 若您的新游首发具备礼包功能，建议给华为渠道用户不低于其他分发渠道的礼包金额与数量，建议首发前7天完成礼包的配置，具体请参考：[游戏礼包配置流程和规则](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-gifts-0000001239505383#section13584522142810`)。
+3. 若您的新游首发具备礼包功能，建议给华为渠道用户不低于其他分发渠道的礼包金额与数量，建议首发前7天完成礼包的配置，具体请参考：[游戏礼包配置流程和规则](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-gifts-0000001239505383#section13584522142810`)。
 4. 若您想要聚集核心用户，形成玩家交流阵地，实时对用户问题和建议进行实时维护，建议您开通[申请论坛](`https://developer.huawei.com/consumer/cn/doc/5020401`)。
 5. 若您想要第一时间了解用户反馈，监控舆情，您可以查看/回复/举报用户在游戏评论区的评论，建议您开通[互动评论](`https://developer.huawei.com/consumer/cn/doc/app/game-center-interaction-comments-0000001239182361`)。
 6. 若您想在首发前获取用户对不同素材的市场反馈，以选择转化效果较好的素材内容应用于全网，可在游戏上线后[申请开通素材测试功能](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-materialmanage-applywhitelist-0000001128107381`)。

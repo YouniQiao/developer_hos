@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "基础游戏服务（必选）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-dev
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev
 format: md
 ---
 
 
-* **[游戏登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-gamelogin)**
-* **[小游戏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame)**
-* **[基础游戏服务术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-terminology)**
+* **[游戏登录](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin)**
+* **[小游戏](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-minigame)**
+* **[基础游戏服务术语](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-terminology)**

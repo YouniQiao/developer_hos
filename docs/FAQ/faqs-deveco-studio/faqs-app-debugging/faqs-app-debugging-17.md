@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Release应用堆栈解析相关错误提示及解决措施"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-17
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-17
 ---
 
 

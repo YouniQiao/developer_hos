@@ -1,7 +1,7 @@
 ---
 format: md
 title: "除应用市场外，是否存在其它途径下载安装应用包"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-58
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-58
 ---
 
 

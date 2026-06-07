@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "关于支付回调的验签，为什么预下单请求验签的时候使用SHA256，回调验签却使用SM2？只能使用SM2进行验签吗？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-9
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-9
 format: md
 ---
 

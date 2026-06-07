@@ -1,13 +1,13 @@
 ---
 title: "app.js"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-js-file
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-js-file
 format: md
 ---
 
 
 ## 应用生命周期
 
-每个应用可以在app.js自定义应用级[生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-lifecycle)的实现逻辑，以下示例仅在生命周期函数中打印对应日志：
+每个应用可以在app.js自定义应用级[生命周期](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-lifecycle)的实现逻辑，以下示例仅在生命周期函数中打印对应日志：
 
 ```
 // app.js

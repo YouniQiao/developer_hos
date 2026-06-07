@@ -1,7 +1,7 @@
 ---
 title: "新增交并差计算定向"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-addexpression-0000001135467016
+original_url: /docs/monetize/promotion/marketapi-addexpression-0000001135467016
 format: md
 ---
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 | groupId | O | String | 创建成功时返回定向包ID，失败时该值为空。 |
 

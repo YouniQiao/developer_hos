@@ -1,7 +1,7 @@
 ---
 title: "查询搜索类推广任务统计报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-searchadreport-0000001181946363
+original_url: /docs/monetize/promotion/marketapi-searchadreport-0000001181946363
 format: md
 ---
 
@@ -52,7 +52,7 @@ format: md
 | orderType | O | String(16) | 返回数据升序还是降序排序。  取值范围：   - DESC：降序排序 - ASC：升序排序   默认值：DESC |
 | groupby | O | List&lt;String&gt;(10) | 返回数据的分组方式。  取值范围：   - statDate：按统计日期分组 - taskId：按任务ID分组 - region：按任务投放区域分组 - searchkey: 搜索词 - matchType：匹配方式 - matchKey：任务中匹配的投放词 - subTaskId：按子任务ID分组   默认值：statDate  可同时支持多种分组方式。 |
 | customerId | O | String(64) | 直客团队协作者的内部ID。  直客团队协作者查询时必须携带，该字段请使用<strong>协作者账户</strong>登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)后在“我的账号信息”中查看到的“华为账号”。  <strong>说明：</strong>   - 协作者查询时，会使用此字段与直客管理者账户ID校验从属关系，再根据此字段查询报表。 - 代理模式不支持携带此字段。 |
-| filtering | O | [SearchAdTaskReportFiltering](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-searchadtaskreportfiltering-0000001181946373) | 本次查询的过滤条件。 |
+| filtering | O | [SearchAdTaskReportFiltering](/docs/monetize/promotion/marketapi-modle-searchadtaskreportfiltering-0000001181946373) | 本次查询的过滤条件。 |
 
 ## 请求示例
 
@@ -88,10 +88,10 @@ client_id:***
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回码描述信息。 |
 | total | O | Integer(64) | 总记录数。 |
-| datas | O | List&lt;[SearchAdTaskStatistic](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-searchadtaskstatistic-0000001135467064)&gt; | 推广任务详情。 |
+| datas | O | List&lt;[SearchAdTaskStatistic](/docs/monetize/promotion/marketapi-modle-searchadtaskstatistic-0000001135467064)&gt; | 推广任务详情。 |
 
 ## 响应示例
 

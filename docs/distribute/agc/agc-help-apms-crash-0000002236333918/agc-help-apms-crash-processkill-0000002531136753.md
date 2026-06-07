@@ -1,6 +1,6 @@
 ---
 title: "分析PROCESS KILL问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-crash-processkill-0000002531136753
+original_url: /docs/distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-processkill-0000002531136753
 format: md
 ---
 

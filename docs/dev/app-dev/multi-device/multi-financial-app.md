@@ -1,7 +1,7 @@
 ---
 title: "多设备银行理财界面"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/multi-financial-app
+original_url: /docs/dev/app-dev/multi-device/multi-financial-app
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ![](./img/1c2c953b.png)
 
-阅读本文前，建议开发者先了解[ArkUI（方舟UI框架）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui)和[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)相关知识。
+阅读本文前，建议开发者先了解[ArkUI（方舟UI框架）](/docs/dev/app-dev/application-framework/arkui)和[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)相关知识。
 
 下文将从UX设计、工程管理、页面开发三个方面，系统介绍银行理财应用在实际开发中的最佳实践，为开发者提供可借鉴的实现思路。
 
@@ -25,7 +25,7 @@ format: md
 
 ## UX设计
 
-应用的UX设计可参考[金融理财类](https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples6-0000001793536905)的多设备响应式设计指南，设计参考图如下所示。
+应用的UX设计可参考[金融理财类](/docs/design/app-design-practices/finance)的多设备响应式设计指南，设计参考图如下所示。
 
 ![](./img/44100abd.png "点击放大")
 
@@ -35,13 +35,13 @@ format: md
 
 ###创建工程
 
-建议开发者参考[多设备工程部署与发布](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-ide)相关内容，掌握分层架构工程的创建与配置方法后，创建模板项目工程。根据银行理财应用的开发需求进行针对性修改，确保工程架构贴合实际业务需求。
+建议开发者参考[多设备工程部署与发布](/docs/dev/app-dev/multi-device/bpta-multi-device-ide)相关内容，掌握分层架构工程的创建与配置方法后，创建模板项目工程。根据银行理财应用的开发需求进行针对性修改，确保工程架构贴合实际业务需求。
 
 ###工程结构
 
 银行理财应用采用推荐的分层架构，将代码工程按products、features、commons三个层级组织。各层级设计如下：
 
-* products层：银行理财应用需要适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板和电脑。由于电脑界面布局与其他设备差异较大，因此单独创建名为“pc”的HAP包作为电脑设备的应用入口；直板机、双折叠（Mate X系列）、三折叠、阔折叠及平板设备上的界面布局整体相似，部分差异可以通过“一多”的[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout)和[响应式布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)进行适配，为此创建名为“default”的HAP包作为这些设备的应用入口。
+* products层：银行理财应用需要适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板和电脑。由于电脑界面布局与其他设备差异较大，因此单独创建名为“pc”的HAP包作为电脑设备的应用入口；直板机、双折叠（Mate X系列）、三折叠、阔折叠及平板设备上的界面布局整体相似，部分差异可以通过“一多”的[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout)和[响应式布局](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)进行适配，为此创建名为“default”的HAP包作为这些设备的应用入口。
 * features层：包含四个核心业务模块——账户（account）、投资（investment）、理财产品（wealth）和推荐（recommend）。为各模块分别创建对应HAR包，供products层按需引用。各模块相对独立，互不依赖，便于后续维护与迭代。
 * commons层：为实现代码复用并减少冗余，集中存放公共常量、日志工具类及窗口管理工具等基础能力，供其他模块统一调用。
 
@@ -112,13 +112,13 @@ format: md
 
 * 窗口模式
 
-  适配设备支持全屏、分屏、悬浮窗和自由窗口模式，具体参见[窗口模式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode)。其中，分屏模式与悬浮窗无需特殊设计，可通过系统方式进入。应用内监听窗口尺寸变化，[通过断点刷新UI](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配全屏、分屏、悬浮窗和自由窗口模式下的布局。
+  适配设备支持全屏、分屏、悬浮窗和自由窗口模式，具体参见[窗口模式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode)。其中，分屏模式与悬浮窗无需特殊设计，可通过系统方式进入。应用内监听窗口尺寸变化，[通过断点刷新UI](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配全屏、分屏、悬浮窗和自由窗口模式下的布局。
 * 窗口方向
 
-  在[model.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中将orientation字段设置为follow\_desktop（跟随桌面的旋转模式），详情可参考[为应用配置旋转策略](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction#section714419371037)。
+  在[model.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中将orientation字段设置为follow\_desktop（跟随桌面的旋转模式），详情可参考[为应用配置旋转策略](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction#section714419371037)。
 * 窗口沉浸式
 
-  根据UX设计，需实现不同窗口模式（全屏、分屏、悬浮窗、自由窗口）下的沉浸式效果，可参考[窗口沉浸式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive)。推荐开发者使用[实现沉浸式效果](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive#section180431120426)中的组件级沉浸方案（组件设置页面沉浸），同时进行动态安全区避让，确保沉浸式显示效果。自由窗口模式下，使用[window.setWindowDecorVisible(false)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)隐藏标题栏，仅保留右上角三键，使应用页面延伸至标题栏区域，实现沉浸式显示效果。
+  根据UX设计，需实现不同窗口模式（全屏、分屏、悬浮窗、自由窗口）下的沉浸式效果，可参考[窗口沉浸式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive)。推荐开发者使用[实现沉浸式效果](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive#section180431120426)中的组件级沉浸方案（组件设置页面沉浸），同时进行动态安全区避让，确保沉浸式显示效果。自由窗口模式下，使用[window.setWindowDecorVisible(false)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)隐藏标题栏，仅保留右上角三键，使应用页面延伸至标题栏区域，实现沉浸式显示效果。
 
 ###首页
 

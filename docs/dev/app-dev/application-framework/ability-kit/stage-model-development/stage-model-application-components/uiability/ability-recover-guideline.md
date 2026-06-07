@@ -1,6 +1,6 @@
 ---
 title: "UIAbility备份恢复"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-recover-guideline
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/ability-recover-guideline
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 * [UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)备份恢复支持多实例，备份数据保存7天，以文件的形式存储在应用的沙箱路径中。
 * 备份数据存储在[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want#want)中的parameter字段中，由于序列化大小限制，支持的最大数据量为200KB。
 * 重启设备不支持还原备份。
-* 备份恢复机制依赖任务保留机制，如果应用设置[removeMissionAfterTerminate](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)为true，或者设备不支持任务保留（比如PC/2in1设备），则备份恢复机制不生效。
+* 备份恢复机制依赖任务保留机制，如果应用设置[removeMissionAfterTerminate](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)为true，或者设备不支持任务保留（比如PC/2in1设备），则备份恢复机制不生效。
 * [UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability)不支持备份恢复。
 
 ## 接口说明

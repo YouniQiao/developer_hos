@@ -1,6 +1,6 @@
 ---
 title: "获取页面节点信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-page-node-retrieval
+original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-page-node-retrieval
 format: md
 ---
 
@@ -26,13 +26,13 @@ query.selectViewport().scrollOffset(function (res) {
 query.exec();
 ```
 
-上述示例中， #elem-id是一个节点选择器，与CSS的选择器相近但略有区别，请参见[SelectorQuery.select](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-hxml#selectorqueryselect)的相关说明。
+上述示例中， #elem-id是一个节点选择器，与CSS的选择器相近但略有区别，请参见[SelectorQuery.select](/docs/dev/atomic-dev/ascf/apis/apis-hxml#selectorqueryselect)的相关说明。
 
-在自定义组件或包含自定义组件的页面中，推荐使用this.createSelectorQuery来代替[has.createSelectorQuery](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-hxml#hascreateselectorquery)，这样可以确保在正确的范围内选择节点。
+在自定义组件或包含自定义组件的页面中，推荐使用this.createSelectorQuery来代替[has.createSelectorQuery](/docs/dev/atomic-dev/ascf/apis/apis-hxml#hascreateselectorquery)，这样可以确保在正确的范围内选择节点。
 
 ## HXML节点布局相交状态
 
-节点布局相交状态接口 [has.createIntersectionObserver](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-hxml#sectionobserver) 可用于监听两个或多个组件节点在布局位置上的相交状态。这一组接口常常可以用于推断某些节点是否可以被用户看见、有多大比例可以被用户看见。
+节点布局相交状态接口 [has.createIntersectionObserver](/docs/dev/atomic-dev/ascf/apis/apis-hxml#sectionobserver) 可用于监听两个或多个组件节点在布局位置上的相交状态。这一组接口常常可以用于推断某些节点是否可以被用户看见、有多大比例可以被用户看见。
 
 这一组API涉及的主要概念如下:
 

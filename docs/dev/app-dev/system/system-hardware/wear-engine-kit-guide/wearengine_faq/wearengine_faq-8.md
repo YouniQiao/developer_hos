@@ -1,6 +1,6 @@
 ---
 title: "更多：若以上FAQ仍不能解决，可通过在线提单反馈"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-8
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-8
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "编译命令行中如何传递参数并且在Hvigor编译阶段扩展插件中获取到"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-79
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-79
 format: md
 ---
 

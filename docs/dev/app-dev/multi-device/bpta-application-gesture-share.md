@@ -1,7 +1,7 @@
 ---
 title: "隔空传送快速分享"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-gesture-share
+original_url: /docs/dev/app-dev/multi-device/bpta-application-gesture-share
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 概述
 
-[Share Kit（分享服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-kit-guide)提供隔空传送分享，支持用户通过“一抓一放”手势实现跨设备文件分享（图片、视频、文档等）以及跨设备链接分享。
+[Share Kit（分享服务）](/docs/dev/app-dev/application-services/share-kit-guide)提供隔空传送分享，支持用户通过“一抓一放”手势实现跨设备文件分享（图片、视频、文档等）以及跨设备链接分享。
 
 |  |  |
 | --- | --- |
@@ -197,7 +197,7 @@ export struct FileSharePageComponent {
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/67/v3/7GRT1RUkR5qH9LUQaWcC8w/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T073954Z&HW-CC-Expire=86400&HW-CC-Sign=4CC033775256B90D116CB89AC34C95CFF2F14F81643FA48B4B3E3B38050E38C1)
 
 * uri是指要分享的文件URI，而非文件路径，例如沙箱路径content.fileDir，应通过[fileUri.getUriFromPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fileuri#fileurigeturifrompath)获取其URI。
-* utd则是当前文件的[标准化数据类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-list)，需要传入与分享的数据匹配的类型，以便系统匹配精确的目标应用，推荐使用[uniformTypeDescriptor.getUniformDataTypeByFilenameExtension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-uniformtypedescriptor#uniformtypedescriptorgetuniformdatatypebyfilenameextension11)方法，通过给定的文件后缀名查询标准化数据类型的ID。
+* utd则是当前文件的[标准化数据类型](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-list)，需要传入与分享的数据匹配的类型，以便系统匹配精确的目标应用，推荐使用[uniformTypeDescriptor.getUniformDataTypeByFilenameExtension](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-uniformtypedescriptor#uniformtypedescriptorgetuniformdatatypebyfilenameextension11)方法，通过给定的文件后缀名查询标准化数据类型的ID。
 
 在ShareModel模块中定义getShareRecord()方法，用于根据当前的文件类型构建分享数据。定义getFileShareData()方法，当需要分享多个文件时，该方法会通过循环处理来获取分享数据。
 
@@ -270,7 +270,7 @@ public immersiveCallback(target: harmonyShare.SharableTarget, shareType: ShareTy
 
 ###文件接收策略
 
-分享接收端接收数据时遵循统一规则，详情请参考[目标设备接收分享数据一步直达体验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-one-step)。当传入的分享参数utd为uniformTypeDescriptor.UniformDataType.IMAGE且文件确认为图片文件时，接收端为phone、tablet设备时默认将其存储在图库中。当传入的utd为uniformTypeDescriptor.UniformDataType.FILE时，文件会默认存储到文件管理中。接收端为PC/2in1设备类型时则会将媒体以及非媒体文件存储至文件管理器。系统预置了常用类型，详情可参考[UTD预置列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-list)。
+分享接收端接收数据时遵循统一规则，详情请参考[目标设备接收分享数据一步直达体验](/docs/dev/app-dev/application-services/share-kit-guide/share-access-precautions/share-access-one-step)。当传入的分享参数utd为uniformTypeDescriptor.UniformDataType.IMAGE且文件确认为图片文件时，接收端为phone、tablet设备时默认将其存储在图库中。当传入的utd为uniformTypeDescriptor.UniformDataType.FILE时，文件会默认存储到文件管理中。接收端为PC/2in1设备类型时则会将媒体以及非媒体文件存储至文件管理器。系统预置了常用类型，详情可参考[UTD预置列表](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-list)。
 
 ## 分享链接
 
@@ -279,7 +279,7 @@ public immersiveCallback(target: harmonyShare.SharableTarget, shareType: ShareTy
 * 如果目标应用已安装，将直接启动目标应用。
 * 如果目标应用未安装，将直接跳转到应用市场或启动浏览器打开网页查看内容。
 
-详情请参考碰一碰视频分享[典型场景](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-knock-video-share#section95975396464)章节。
+详情请参考碰一碰视频分享[典型场景](/docs/dev/app-dev/multi-device/bpta-application-knock-video-share#section95975396464)章节。
 
 ###分享注册监听及取消监听
 
@@ -380,7 +380,7 @@ getLinkShareData(): systemShare.SharedData {
 
 ###配置App Linking
 
-开发者可参考[使用App Linking实现应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)进行配置和使用。例如，此处配置的App Linking的链接为：`www.example.com`，开发者需在entry模块的module.json5中进行如下配置：
+开发者可参考[使用App Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)进行配置和使用。例如，此处配置的App Linking的链接为：`www.example.com`，开发者需在entry模块的module.json5中进行如下配置：
 
 ```
 {
@@ -508,7 +508,7 @@ onPageShow(): void {
 
 ###数据在分享过程中被丢弃或者提示无效的数据类型
 
-分享服务支持链接分享和文件分享两种场景，但不支持两者混合分享。在混合分享时，数据可能会在分享过程中丢失或提示无效的数据类型。详情可参考[分享数据类型不支持](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq-2)。
+分享服务支持链接分享和文件分享两种场景，但不支持两者混合分享。在混合分享时，数据可能会在分享过程中丢失或提示无效的数据类型。详情可参考[分享数据类型不支持](/docs/dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-2)。
 
 ## 示例代码
 

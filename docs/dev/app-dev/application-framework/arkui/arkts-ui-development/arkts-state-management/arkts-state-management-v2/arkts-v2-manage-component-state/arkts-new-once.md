@@ -1,13 +1,13 @@
 ---
 title: "@Once：初始化同步一次"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-once
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-once
 format: md
 ---
 
 
 想要实现仅从外部初始化一次且不接受后续同步变化的能力，可以使用@Once装饰器搭配@Param装饰器。
 
-阅读本文档前，请先阅读[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)。
+阅读本文档前，请先阅读[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)。
 
 ![](./img/7c8723f9.png)
 
@@ -37,7 +37,7 @@ format: md
 
 ## 限制条件
 
-* @Once仅在[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)装饰的自定义组件中与@Param搭配使用。
+* @Once仅在[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)装饰的自定义组件中与@Param搭配使用。
 
   ```
   @ComponentV2
@@ -118,7 +118,7 @@ struct MyComponent {
 
 ### 本地修改@Param变量
 
-当@Once与@Param结合使用时，可以解除@Param无法在本地修改的限制，并能够触发UI刷新。此时，使用@Param和@Once的效果类似于[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)，但@Param和@Once还能接收外部传入的初始值。
+当@Once与@Param结合使用时，可以解除@Param无法在本地修改的限制，并能够触发UI刷新。此时，使用@Param和@Once的效果类似于[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)，但@Param和@Once还能接收外部传入的初始值。
 
 ```
 @ObservedV2

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理麦克风静音状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mic-management
+original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/mic-management
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "打印扩展能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/printextensionabilityguide
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/print/printextensionabilityguide
 format: md
 ---
 

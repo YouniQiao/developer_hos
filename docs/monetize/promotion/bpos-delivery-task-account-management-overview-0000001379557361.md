@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-management-overview-0000001379557361
+original_url: /docs/monetize/promotion/bpos-delivery-task-account-management-overview-0000001379557361
 format: md
 ---
 
@@ -39,7 +39,7 @@ format: md
   |  |  |  |  |  |  |  |  |  |
   | --- | --- | --- | --- | --- | --- | --- | --- | --- |
   | 华为帐号注册国家/地区 | 中国大陆区域 | | | | | | | |
-  | 实名认证方式 | [企业资料人工审核认证](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-register-0000001328677526#section3608mcpsimp) | | | | [对公银行打款认证](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-register-0000001328677526#section3669mcpsimp) | | | |
+  | 实名认证方式 | [企业资料人工审核认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#section3608mcpsimp) | | | | [对公银行打款认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#section3669mcpsimp) | | | |
   | 角色 | 直客 | 服务商 | 子客服务商 | 子客 | 直客 | 服务商 | 子客服务商 | 子客 |
   | 营业执照 | √ | √ | √ | √ | √ | √ | √ | √ |
   | 法定代表人身份证 | √ | √ | √ | √ | - | - | - | - |

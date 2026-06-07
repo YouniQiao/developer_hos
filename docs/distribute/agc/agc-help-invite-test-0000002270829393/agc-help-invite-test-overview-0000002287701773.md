@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-invite-test-overview-0000002287701773
+original_url: /docs/distribute/agc/agc-help-invite-test-0000002270829393/agc-help-invite-test-overview-0000002287701773
 format: md
 ---
 

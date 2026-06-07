@@ -1,7 +1,7 @@
 ---
 format: md
 title: "子线程和主线程的优先级及任务执行策略是什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-35
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-35
 ---
 
 

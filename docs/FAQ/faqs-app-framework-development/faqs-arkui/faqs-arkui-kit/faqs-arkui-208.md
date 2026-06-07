@@ -1,6 +1,6 @@
 ---
 title: "是否有处理'9图'（又称'draw9patch'、'.9图'、'点9图'等）的平替方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-208
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-208
 format: md
 ---
 

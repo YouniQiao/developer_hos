@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "病毒防护服务管理(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-vps-c
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-vps-c
 format: md
 ---
 
@@ -50,7 +50,7 @@ format: md
 ![](./img/85f59a61.png)
 
 * 在开发准备过程中，需要申请权限：ohos.permission.REGISTER\_ANTIVIRUS、ohos.permission.MANAGE\_ANTIVIRUS、ohos.permission.MANAGE\_PREINSTALLED\_ANTIVIRUS。
-* 只允许名单内的应用申请该权限，申请方式请参考：[申请使用企业类应用可用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-enterprise-apps)，[申请使用仅MDM应用可用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-mdm-apps)
+* 只允许名单内的应用申请该权限，申请方式请参考：[申请使用企业类应用可用权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-enterprise-apps)，[申请使用仅MDM应用可用权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-mdm-apps)
 
 1. 在CMakeLists.txt中导入病毒防护服务管理共享库，并链接该库。
 

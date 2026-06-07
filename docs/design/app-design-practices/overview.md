@@ -1,7 +1,7 @@
 ---
 title: 概述
 sidebar_label: 概述
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/practices-overview-0000001746498066
+original_url: /docs/design/app-design-practices/overview
 format: md
 ---
 
@@ -33,7 +33,7 @@ format: md
 
 通常手机和折叠屏使用底部页签导航；平板及其他宽屏设备使用侧边页签或侧边栏导航。调用鸿蒙系统提供的控件可自动适配该导航规则。
 
-底部导航&侧边导航的详细设计规范，请参阅[典型布局场景 - 页签栏](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout)。
+底部导航&侧边导航的详细设计规范，请参阅[典型布局场景 - 页签栏](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout)。
 
 |  |
 | --- |
@@ -43,7 +43,7 @@ format: md
 
 移动端设备应用内的底部页签、底部工具栏、底部文本，或底部悬浮按钮需要自动抬高避让底部导航条。应用内的可滚动内容，可直接显示在导航条下方，仅当滚动到内容的最底部时需要向上抬高避免被底部导航条遮挡。调用鸿蒙控件，可自动实现以上导航条的避让规格。
 
-沉浸式页面，例如全屏播放视频、游戏、阅读等场景下，超过 2 秒自动隐藏底部导航条，从底部上滑或从顶部下滑可触发恢复显示底部导航条。导航条适配规范&开发指南，请参阅 [系统特性 - 导航条](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-develop-apply-immersive-effects)。
+沉浸式页面，例如全屏播放视频、游戏、阅读等场景下，超过 2 秒自动隐藏底部导航条，从底部上滑或从顶部下滑可触发恢复显示底部导航条。导航条适配规范&开发指南，请参阅 [系统特性 - 导航条](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-develop-apply-immersive-effects)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8DCA7B55AA63.png "点击放大")
 
@@ -69,7 +69,7 @@ format: md
 
 平板及更宽的设备上 ，应用需要适配自由窗口 (即可任意拖大、拖小、拖宽、拖窄) ，横屏时支持左右分屏，竖屏时支持上下分屏，且支持分屏比例的自由调节。
 
-在多端设备上，长视频、直播、会议、通话等场景，需要支持画中画。多窗的适配设计规范，请参阅[智慧多窗应用适配指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-guide)。
+在多端设备上，长视频、直播、会议、通话等场景，需要支持画中画。多窗的适配设计规范，请参阅[智慧多窗应用适配指导](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide)。
 
 |  |
 | --- |
@@ -83,17 +83,17 @@ format: md
 
 ## 键鼠适配
 
-平板及更宽的设备上的应用需要进行基础的鼠标、键盘等适配。详细的人机交互要求和适配规则，请参阅 [人机交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-overview-0000001795410269)。
+平板及更宽的设备上的应用需要进行基础的鼠标、键盘等适配。详细的人机交互要求和适配规则，请参阅 [人机交互](/docs/design/hmi/overview)。
 
 ## 体验评估标准
 
-UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001760867048)。
+UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](/docs/design/ux-standards/overview)。
 
 ### 响应式布局
 
 应用内的页签、搜索、入口图标、广告图、列表、卡片、图片、内容模块等可以灵活地通过形变、延伸布局、重复布局、挪移布局、宫格布局、瀑布流布局等进行宽屏设备上的响应式适配，以达到最佳的信息量和舒适的浏览体验。
 
-布局相关的设计规则，请参阅[响应式布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)。
+布局相关的设计规则，请参阅[响应式布局](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)。
 
 * 子页签&搜索
 * 入口图标
@@ -239,7 +239,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 分栏布局时，允许应用内通过点击“全屏”按钮，从分栏切换至临时全屏或点击“缩小”按钮，从临时全屏恢复分栏。
 
-分栏设计规范，请参阅[响应式应用架构](https://developer.huawei.com/consumer/cn/doc/design-guides/design-responsive-layout-structure-0000001748539684)。
+分栏设计规范，请参阅[响应式应用架构](/docs/design/general-design-basics/layout/responsive-structure)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/B08D91E57EBC.png "点击放大")
 
@@ -257,7 +257,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 新闻详情、网页详情、笔记、文档等图文阅读类页面，建议支持通过双指缩放调整文字大小。
 
-双指缩放的设计规范，请参阅[人机交互 - 手势](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touchscreen-0000001928273206)。
+双指缩放的设计规范，请参阅[人机交互 - 手势](/docs/design/hmi/touchscreen)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/6CC35AEE8F21.png "点击放大")
 
@@ -285,7 +285,7 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 系统提供了长按预览的控件能力，接入控件后可以针对视频、附件等卡片实现长按预览播放、长按预览查看详情的体验，且可以在菜单中加入常用功能。
 
-长按预览菜单的设计规范，请参阅[人机交互 - 手势](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touchscreen-0000001928273206)。
+长按预览菜单的设计规范，请参阅[人机交互 - 手势](/docs/design/hmi/touchscreen)。
 
 |  |
 | --- |
@@ -317,4 +317,4 @@ UX 体验的基础要求和评估标准，请参阅 [应用UX体验标准](https
 
 悬停态若触发应用内的弹出框、半模态等操作型控件，建议交互型控件在下半屏显示；若触发跟随上下文的控件，例如菜单等，建议跟随触发元素的位置显示。控件高度需要根据悬停态的屏幕尺寸进行最大高度的适配。
 
-悬停态价值场景&适配规范，请参阅[悬停态](https://developer.huawei.com/consumer/cn/doc/design-guides/foldable-0000002352875141#section183378919119)。
+悬停态价值场景&适配规范，请参阅[悬停态](/docs/design/multi-device-design/folding-screen/foldable#section183378919119)。

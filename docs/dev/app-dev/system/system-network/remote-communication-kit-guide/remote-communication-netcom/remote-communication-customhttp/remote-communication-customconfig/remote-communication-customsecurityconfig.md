@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "SecurityConfiguration：定制安全传输行为"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customsecurityconfig
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customsecurityconfig
 format: md
 ---
 
@@ -209,7 +209,7 @@ format: md
    sycX
    -----END CERTIFICATE-----
    ```
-3. 在remoteValidation中通过filePath指定证书路径。关于文件路径，请参考[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file)。
+3. 在remoteValidation中通过filePath指定证书路径。关于文件路径，请参考[应用文件](/docs/dev/app-dev/application-framework/core-file-kit/app-file)。
 
    ```
    async function TestRcp() {
@@ -241,7 +241,7 @@ format: md
    ```
    import { rcp } from '@kit.RemoteCommunicationKit';
    ```
-2. 在remoteValidation中配置folderPath指定证书所在的沙箱目录。关于文件路径，请参考[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file)。目录中的证书文件格式和内容请参考示例5中的步骤2。
+2. 在remoteValidation中配置folderPath指定证书所在的沙箱目录。关于文件路径，请参考[应用文件](/docs/dev/app-dev/application-framework/core-file-kit/app-file)。目录中的证书文件格式和内容请参考示例5中的步骤2。
 
    ```
    async function TestRcp() {
@@ -368,7 +368,7 @@ format: md
    openssl x509 -req -in cert.csr -out cert.crt -signkey cert.key -CAcreateserial -days 3650
    openssl x509 -in cert.crt -out cert.pem -outform PEM
    ```
-3. 在certificate中通过filePath指定证书路径（也可以通过content指定证书内容），type配置PEM指定证书类型，key和keyPassword指定证书私钥和密码。关于文件路径，请参考[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file)。
+3. 在certificate中通过filePath指定证书路径（也可以通过content指定证书内容），type配置PEM指定证书类型，key和keyPassword指定证书私钥和密码。关于文件路径，请参考[应用文件](/docs/dev/app-dev/application-framework/core-file-kit/app-file)。
 
    ```
    async function TestRcp() {
@@ -403,7 +403,7 @@ format: md
    ```
    import { rcp } from '@kit.RemoteCommunicationKit';
    ```
-2. 在certificate中通过filePath指定证书路径（也可以通过content指定证书内容），type配置DER指定证书类型，key和keyPassword指定证书私钥和密码。使用openssl x509 -in cert.pem -outform der -out cert.der命令将上面例子中的pem文件转为der文件。关于文件路径，请参考[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file)。
+2. 在certificate中通过filePath指定证书路径（也可以通过content指定证书内容），type配置DER指定证书类型，key和keyPassword指定证书私钥和密码。使用openssl x509 -in cert.pem -outform der -out cert.der命令将上面例子中的pem文件转为der文件。关于文件路径，请参考[应用文件](/docs/dev/app-dev/application-framework/core-file-kit/app-file)。
 
    ```
    async function TestRcp() {
@@ -438,7 +438,7 @@ format: md
    ```
    import { rcp } from '@kit.RemoteCommunicationKit';
    ```
-2. 在certificate中配置filePath指定证书路径（也可以配置content指定证书内容），type配置P12指定证书类型，keyPassword指定证书私钥的密码。使用openssl pkcs12 -export -out cert.p12 -inkey cert.key -in cert.pem命令将上面例子中的pem文件转为P12证书，设置密码“1234”。关于文件路径，请参考[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file)。
+2. 在certificate中配置filePath指定证书路径（也可以配置content指定证书内容），type配置P12指定证书类型，keyPassword指定证书私钥的密码。使用openssl pkcs12 -export -out cert.p12 -inkey cert.key -in cert.pem命令将上面例子中的pem文件转为P12证书，设置密码“1234”。关于文件路径，请参考[应用文件](/docs/dev/app-dev/application-framework/core-file-kit/app-file)。
 
    ```
    async function TestRcp() {

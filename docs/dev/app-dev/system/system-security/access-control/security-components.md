@@ -1,10 +1,10 @@
 ---
 title: "使用安全控件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-components
+original_url: /docs/dev/app-dev/system/system-security/access-control/security-components
 format: md
 ---
 
 
-* **[安全控件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-component-overview)**
-* **[使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)**
-* **[使用保存控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/savebutton)**
+* **[安全控件概述](/docs/dev/app-dev/system/system-security/access-control/security-components/security-component-overview)**
+* **[使用粘贴控件](/docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton)**
+* **[使用保存控件](/docs/dev/app-dev/system/system-security/access-control/security-components/savebutton)**

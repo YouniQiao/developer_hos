@@ -1,6 +1,6 @@
 ---
 title: "数字盾服务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-overview
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-overview
 format: md
 ---
 

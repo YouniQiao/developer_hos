@@ -1,11 +1,11 @@
 ---
 title: "启动指定页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-page
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/start-page
 format: md
 ---
 
 
-当PageAbility的启动模式设置为单例时（具体设置方法和典型场景示例见[PageAbility的启动模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-launch-type)，缺省情况下是单实例模式），若PageAbility已被拉起，再次启动PageAbility会触发onNewWant回调（即非首次拉起）。开发者可以通过Want传递启动参数，例如开发者希望指定页面启动PageAbility，可以通过Want中的parameters参数传递pages信息，具体示例代码如下：
+当PageAbility的启动模式设置为单例时（具体设置方法和典型场景示例见[PageAbility的启动模式](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-launch-type)，缺省情况下是单实例模式），若PageAbility已被拉起，再次启动PageAbility会触发onNewWant回调（即非首次拉起）。开发者可以通过Want传递启动参数，例如开发者希望指定页面启动PageAbility，可以通过Want中的parameters参数传递pages信息，具体示例代码如下：
 
 调用方PageAbility的app.ets中或者page中，使用startAbility再次拉起PageAbility，通过Want中的uri参数传递页面信息：
 
@@ -128,7 +128,7 @@ struct First {
 }
 ```
 
-当PageAbility的启动模式设置为多实例模式或为首次启动单例模式的PageAbility时（具体设置方法和典型场景示例见[PageAbility的启动模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-launch-type)），在调用方PageAbility中，通过Want中的parameters参数传递要启动的指定页面的pages信息，调用startAbility()方法启动PageAbility。被调用方可以在onCreate中使用featureAbility的getWant方法获取Want，再通过调用router.pushUrl实现启动指定页面。
+当PageAbility的启动模式设置为多实例模式或为首次启动单例模式的PageAbility时（具体设置方法和典型场景示例见[PageAbility的启动模式](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-launch-type)），在调用方PageAbility中，通过Want中的parameters参数传递要启动的指定页面的pages信息，调用startAbility()方法启动PageAbility。被调用方可以在onCreate中使用featureAbility的getWant方法获取Want，再通过调用router.pushUrl实现启动指定页面。
 
 调用方的页面中实现按钮点击触发startAbility方法启动目标端PageAbility，startAbility方法的入参Want中携带指定页面信息，示例代码如下：
 

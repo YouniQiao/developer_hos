@@ -1,13 +1,13 @@
 ---
 title: "启动ServiceAbility"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-serviceability
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/start-serviceability
 format: md
 ---
 
 
-ServiceAbility的启动与其他Ability并无区别，应用开发者可以在PageAbility中通过featureAbility的startAbility接口拉起ServiceAbility，在ServiceAbility中通过particleAbility的startAbility接口拉起ServiceAbility。ServiceAbility的启动规则详见[FA模型组件启动规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules-fa)章节。
+ServiceAbility的启动与其他Ability并无区别，应用开发者可以在PageAbility中通过featureAbility的startAbility接口拉起ServiceAbility，在ServiceAbility中通过particleAbility的startAbility接口拉起ServiceAbility。ServiceAbility的启动规则详见[FA模型组件启动规则](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/component-startup-rules-fa)章节。
 
-如下示例展示了在PageAbility中通过startAbility启动bundleName为"com.example.myapplication"，abilityName为"ServiceAbility"的ServiceAbility的方法。启动[FA模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#fa模型)的ServiceAbility时，需要在abilityName前拼接bundleName字符串。
+如下示例展示了在PageAbility中通过startAbility启动bundleName为"com.example.myapplication"，abilityName为"ServiceAbility"的ServiceAbility的方法。启动[FA模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#fa模型)的ServiceAbility时，需要在abilityName前拼接bundleName字符串。
 
 ```
 import featureAbility from '@ohos.ability.featureAbility';

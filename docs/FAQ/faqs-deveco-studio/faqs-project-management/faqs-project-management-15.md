@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决Windows系统使用DevEco Studio时SDK卸载失败，报“Unable to rename the file. Cause:Unable to delete D:xxxdefault”错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-15
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-15
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "复杂绘制效果（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-drawing-effect-arkts
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/complex-drawing-effect-arkts
 format: md
 ---
 

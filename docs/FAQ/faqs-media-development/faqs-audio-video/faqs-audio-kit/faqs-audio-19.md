@@ -1,6 +1,6 @@
 ---
 title: "如何拦截系统音量调节的上下键"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-19
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-19
 format: md
 ---
 

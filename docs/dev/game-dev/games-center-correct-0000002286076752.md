@@ -1,6 +1,6 @@
 ---
 title: "币种美化/更正原则"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-correct-0000002286076752
+original_url: /docs/dev/game-dev/games-center-correct-0000002286076752
 format: md
 ---
 
@@ -19,4 +19,4 @@ format: md
 
   ![](./img/4aca71a0.png)
 
-  如需查看特殊币种要求的国家或地区，请参见[特殊币种要求国家/地区](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-countries-overview-0000002320771745#section99321730171516)。
+  如需查看特殊币种要求的国家或地区，请参见[特殊币种要求国家/地区](/docs/dev/game-dev/games-center-countries-overview-0000002320771745#section99321730171516)。

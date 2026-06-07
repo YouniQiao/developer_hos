@@ -1,7 +1,7 @@
 ---
 title: "使用模板制图功能"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-draw-tools-template-0000001349122800
+original_url: /docs/monetize/promotion/bp-functions-draw-tools-template-0000001349122800
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
    ![](./img/zh-cn_image_0000002556107899_ba7ef9b6f737.png "点击放大")
 5. 进入“模板编辑”页面，在简易模式下您可进行调整文案、替换图片等操作。
    - 文案：编辑主副标题、按钮部分、描述部分文案。
-   - 图片：替换并编辑主图、背景图、文案底框、按钮底框等图片素材，您也可以点击“[素材库](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-material-library-introduction-0000001399645709)”选择您已上传的素材。
+   - 图片：替换并编辑主图、背景图、文案底框、按钮底框等图片素材，您也可以点击“[素材库](/docs/monetize/promotion/bp-functions-material-library-introduction-0000001399645709)”选择您已上传的素材。
    - 点击“生成图片”，同时下载至本地并保存至素材库，您可在“工具 &gt; 资产管理 &gt; 素材库”中查看。
    - 点击“保存为模板”，您可在“模板库 &gt; 模板类型 &gt; 我的模板”中查看。
 

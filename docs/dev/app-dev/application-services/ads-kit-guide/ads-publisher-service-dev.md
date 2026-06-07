@@ -1,17 +1,17 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "流量变现服务开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-dev
+original_url: /docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev
 format: md
 ---
 
 
-* **[流量变现服务开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-dev-overview)**
-* **[横幅广告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-banner)**
-* **[原生广告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-native)**
-* **[激励广告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-reward)**
-* **[插屏广告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-interstitial)**
-* **[开屏广告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-splash)**
-* **[贴片广告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-roll)**
-* **[实时竞价](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-real-time-bidding)**
-* **[流量变现服务常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-faq)**
+* **[流量变现服务开发概述](/docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-dev-overview)**
+* **[横幅广告](/docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-banner)**
+* **[原生广告](/docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-native)**
+* **[激励广告](/docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-reward)**
+* **[插屏广告](/docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-interstitial)**
+* **[开屏广告](/docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-splash)**
+* **[贴片广告](/docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-roll)**
+* **[实时竞价](/docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-real-time-bidding)**
+* **[流量变现服务常见问题](/docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-faq)**

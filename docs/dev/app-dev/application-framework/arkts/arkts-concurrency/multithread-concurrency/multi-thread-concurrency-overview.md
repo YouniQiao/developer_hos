@@ -1,6 +1,6 @@
 ---
 title: "多线程并发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/multi-thread-concurrency-overview
 format: md
 ---
 
@@ -306,7 +306,7 @@ struct ActorModel2 {
 
 ## TaskPool和Worker
 
-ArkTS提供了TaskPool和Worker两种并发能力供开发者选择，各自的运作机制和注意事项请见[TaskPool简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-introduction)和[Worker简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)，两者之间实现的特点和适用场景也存在差异，请见[TaskPool和Worker的对比](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-vs-worker)。
+ArkTS提供了TaskPool和Worker两种并发能力供开发者选择，各自的运作机制和注意事项请见[TaskPool简介](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction)和[Worker简介](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction)，两者之间实现的特点和适用场景也存在差异，请见[TaskPool和Worker的对比](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-vs-worker)。
 
 ## 并发注意事项
 

@@ -1,7 +1,7 @@
 ---
 title: "查看多端设备预览效果"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-previewer-multi-profile
+original_url: /docs/tools/coding-debug/ide-previewer-multi-profile
 format: md
 ---
 

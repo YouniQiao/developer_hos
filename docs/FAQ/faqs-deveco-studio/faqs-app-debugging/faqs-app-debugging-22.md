@@ -1,7 +1,7 @@
 ---
 format: md
 title: "安装HAP时提示“compatibleSdkVersion and releaseType of the app do not match the apiVersion and releaseType on the device.”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-22
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-22
 ---
 
 

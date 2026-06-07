@@ -1,16 +1,16 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "智能填充服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligent-filling
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling
 format: md
 ---
 
 
-* **[智能填充概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-to-smart-fill)**
-* **[典型场景展示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-typical-scenario)**
-* **[动态修改ContentType值](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-amend)**
-* **[自动补全地址表单所在地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-autocomplete)**
-* **[推荐车牌号场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-licenseplateno)**
-* **[推荐数据源及推荐逻辑说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-explain)**
-* **[ContentType使用场景说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-appendix)**
-* **[三方框架+H5接入智能填充](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-tripartiteframework)**
+* **[智能填充概述](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-to-smart-fill)**
+* **[典型场景展示](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-typical-scenario)**
+* **[动态修改ContentType值](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-amend)**
+* **[自动补全地址表单所在地区](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-autocomplete)**
+* **[推荐车牌号场景](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-licenseplateno)**
+* **[推荐数据源及推荐逻辑说明](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-explain)**
+* **[ContentType使用场景说明](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-appendix)**
+* **[三方框架+H5接入智能填充](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework)**

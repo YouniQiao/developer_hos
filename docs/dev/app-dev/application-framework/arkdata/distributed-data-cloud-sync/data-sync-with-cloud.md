@@ -1,6 +1,6 @@
 ---
 title: "端云数据同步云侧环境部署指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-with-cloud
+original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-sync-with-cloud
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
 * **极简集成**
 
-  简化开发：开发者通过使用[端云同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-cloud-sync-of-rdb-store)为应用快速添加云同步功能。
+  简化开发：开发者通过使用[端云同步](/docs/dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-cloud-sync-of-rdb-store)为应用快速添加云同步功能。
 
   专注核心：开发者只需关注应用的核心业务逻辑，数据同步的复杂性由ArkData和云空间处理。
 
@@ -140,7 +140,7 @@ format: md
 
 1. 应用声明。
 
-   通过配置[app.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)文件中app标签的cloudStructuredDataSyncEnabled字段来控制是否接入云同步能力，字段为true时，表示接入，在“设置-云空间”内即可看到应用开关。
+   通过配置[app.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file)文件中app标签的cloudStructuredDataSyncEnabled字段来控制是否接入云同步能力，字段为true时，表示接入，在“设置-云空间”内即可看到应用开关。
 
    ```
    {
@@ -152,7 +152,7 @@ format: md
 2. 环境连接。
 
    云空间识别接入应用的证书类型为debug则连接开发环境，应用证书类型为release则连接生产环境。
-3. 开发流程具体请见[端云数据同步关系型数据库端侧开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-cloud-sync-of-rdb-store)。
+3. 开发流程具体请见[端云数据同步关系型数据库端侧开发指导](/docs/dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-cloud-sync-of-rdb-store)。
 4. 体验设计建议。
 
    用户数据是用户宝贵的数据资产，也是持续使用应用的重要原因之一，建议将同步状态显性化，让服务更透明，让用户使用更安心。
@@ -175,7 +175,7 @@ format: md
 
      ![](./img/f8e9636b.png)
 
-     前往“设置-云空间”管理，也可添加[Deeplink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-linking-startup)文字链，用户点击直接跳转至云空间首页，跳转uri为：hicloud://cloudDrive/getInfo?path=MainActivity。
+     前往“设置-云空间”管理，也可添加[Deeplink](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/deep-linking-startup)文字链，用户点击直接跳转至云空间首页，跳转uri为：hicloud://cloudDrive/getInfo?path=MainActivity。
 
 ## 个人数据处理说明
 

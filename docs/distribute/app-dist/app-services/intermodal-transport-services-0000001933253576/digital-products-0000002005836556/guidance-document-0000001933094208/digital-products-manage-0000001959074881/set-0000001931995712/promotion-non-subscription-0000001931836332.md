@@ -1,7 +1,7 @@
 ---
 title: "消耗型/非消耗型/非续期订阅商品"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/promotion-non-subscription-0000001931836332
+original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332
 format: md
 ---
 

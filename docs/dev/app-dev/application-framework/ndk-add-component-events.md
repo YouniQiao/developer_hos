@@ -1,6 +1,6 @@
 ---
 title: "添加事件监听"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-add-component-events
+original_url: /docs/dev/app-dev/application-framework/ndk-add-component-events
 format: md
 ---
 
@@ -20,7 +20,7 @@ NDK接口支持监听UI组件自身状态变化和用户交互事件。
 * [addNodeEventReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#addnodeeventreceiver)可以添加多个函数指针，每个函数指针都会在对应事件触发时触发，对应的[removeNodeEventReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#removenodeeventreceiver)需要传递对应的函数指针用于移除监听。
 * [registerNodeEventReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#registernodeeventreceiver)是全局监听函数，不同于[addNodeEventReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#addnodeeventreceiver)，[registerNodeEventReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#registernodeeventreceiver)能够监听所有Native组件的事件触发，但只能传递一个函数指针，多次调用使用最后一次的函数指针进行回调，释放时使用[unregisterNodeEventReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#unregisternodeeventreceiver)进行释放。
 
-以下示例均需基于[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)，详细代码请参考[完整示例](#完整示例)。
+以下示例均需基于[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)，详细代码请参考[完整示例](#完整示例)。
 
 ### 监听节点事件
 
@@ -577,7 +577,7 @@ nodeAPI->unregisterNodeEventReceiver();
 
 [OH\_ArkUI\_RegisterLayoutCallbackOnNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_registerlayoutcallbackonnodehandle)和[OH\_ArkUI\_RegisterDrawCallbackOnNodeHandle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_registerdrawcallbackonnodehandle)能够监听组件的布局完成或者绘制送显完成事件触发，但只能传递一个函数指针，多次调用使用最后一次的函数指针进行回调。
 
-以下示例基于[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)章节，提供组件布局和绘制送显事件监听的开发指导。
+以下示例基于[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)章节，提供组件布局和绘制送显事件监听的开发指导。
 
 在ArkUITextNode对象中封装上述监听组件布局和绘制送显事件接口的调用方法。
 

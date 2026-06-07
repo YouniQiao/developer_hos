@@ -1,7 +1,7 @@
 ---
 title: "行业准入规则"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/industry-admission-rules-0000001189244454
+original_url: /docs/monetize/promotion/industry-admission-rules-0000001189244454
 format: md
 ---
 

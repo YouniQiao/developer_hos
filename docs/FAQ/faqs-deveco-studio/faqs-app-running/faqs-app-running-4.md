@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在本地模拟器中卸载应用显示成功，但实际未卸载成功"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-4
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-4
 ---
 
 
@@ -15,7 +15,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 请尝试以下两种方法解决。
 
-* 方式一：及时删除本地模拟器中不再使用的文件。可以通过hdc shell [COMMAND]命令删除相关文件，更多关于hdc命令使用指导请参考[hdc](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
+* 方式一：及时删除本地模拟器中不再使用的文件。可以通过hdc shell [COMMAND]命令删除相关文件，更多关于hdc命令使用指导请参考[hdc](/docs/dev/app-dev/system/hdc)。
 * 方式二：删除本地模拟器，然后重新创建。如果使用本地模拟器推送大文件或应用，建议在创建时适当增加模拟器的内部存储空间。
 
   ![](./img/efd2f6e4.png "点击放大")

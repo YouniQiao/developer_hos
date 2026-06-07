@@ -1,6 +1,6 @@
 ---
 title: "C#（小游戏）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-minigame-0000002359706946
+original_url: /docs/dev/game-dev/games-gamemme-integratingsdk-csharp-minigame-0000002359706946
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/15ca9fff.png)
 
-当您使用团结引擎完成功能开发并准备打包时，您还需要进行相关配置才能打包成功，具体请参见[打包](https://developer.huawei.com/consumer/cn/doc/games-guides/games-export-csharp-minigame-0000002393227221)。
+当您使用团结引擎完成功能开发并准备打包时，您还需要进行相关配置才能打包成功，具体请参见[打包](/docs/dev/game-dev/games-export-csharp-minigame-0000002393227221)。
 
 ## 开发准备
 

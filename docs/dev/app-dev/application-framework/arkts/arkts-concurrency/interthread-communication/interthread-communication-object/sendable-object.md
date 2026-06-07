@@ -1,16 +1,16 @@
 ---
 title: "Sendable对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-object
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object
 format: md
 ---
 
 
-* **[Sendable对象简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)**
-* **[Sendable使用规则与约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-constraints)**
-* **[异步锁](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-async-lock-introduction)**
-* **[异步等待](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-condition-variable-introduction)**
-* **[ASON解析与生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ason-parsing-generation)**
-* **[共享容器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-collections-introduction)**
-* **[共享模块](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable-module)**
-* **[Sendable对象冻结](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-freeze)**
-* **[Sendable使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-guide)**
+* **[Sendable对象简介](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)**
+* **[Sendable使用规则与约束](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-constraints)**
+* **[异步锁](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-async-lock-introduction)**
+* **[异步等待](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-condition-variable-introduction)**
+* **[ASON解析与生成](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/ason-parsing-generation)**
+* **[共享容器](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-collections-introduction)**
+* **[共享模块](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable-module)**
+* **[Sendable对象冻结](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-freeze)**
+* **[Sendable使用场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-guide)**

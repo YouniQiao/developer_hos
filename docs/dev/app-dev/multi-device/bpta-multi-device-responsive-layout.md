@@ -1,7 +1,7 @@
 ---
 title: "响应式布局"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout
 format: md
 ---
 
@@ -106,14 +106,14 @@ format: md
 
 **通过断点环境变量****刷新UI**
 
-从API version 22起，开发者可利用响应式系统环境变量装饰器@Env读取断点信息。当组件所在窗口尺寸发生变化时，@Env装饰的断点环境变量将更新，并触发与该断点环境变量关联的组件刷新，从而实现界面内容的同步更新。装饰变量声明如下，更多场景请参考[@Env：环境变量](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-env-system-property)。
+从API version 22起，开发者可利用响应式系统环境变量装饰器@Env读取断点信息。当组件所在窗口尺寸发生变化时，@Env装饰的断点环境变量将更新，并触发与该断点环境变量关联的组件刷新，从而实现界面内容的同步更新。装饰变量声明如下，更多场景请参考[@Env：环境变量](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-env-property/arkts-env-system-property)。
 
 获取@Component/@ComponentV2所在窗口的环境变量信息后，当窗口尺寸变化时，断点环境变量将根据新的窗口尺寸更新，并触发相关UI组件的刷新。常见场景包括：
 
 * 通过BuilderNode切换窗口后，触发断点环境变量重新获取断点信息。
 * 横竖屏或折叠状态切换时，窗口的横纵向断点刷新，断点环境变量将同步更新。
 
-断点环境变量具体使用方式请参考@Env：环境变量[使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-env-system-property#使用场景)。环境变量初始化流程请参考[@Env初始化流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-env-system-property#env初始化流程)。
+断点环境变量具体使用方式请参考@Env：环境变量[使用场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-env-property/arkts-env-system-property#使用场景)。环境变量初始化流程请参考[@Env初始化流程](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-env-property/arkts-env-system-property#env初始化流程)。
 
 **通过主动监听断点变化刷新UI**
 
@@ -344,7 +344,7 @@ if (this.currentHeightBreakpoint === HeightBreakpoint.HEIGHT_MD &&
 
 **独特的小窗口布局**
 
-为了提供独特的用户体验，类方形小窗口设计为独特布局。常见场景为手机上下1:1分屏或小方形屏（如Pura X系列产品的外屏），可使用横向断点为sm，纵向断点为md进行区分，示意图如下。更多详情和示例代码请参考[阔折叠应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-purax-guide)。
+为了提供独特的用户体验，类方形小窗口设计为独特布局。常见场景为手机上下1:1分屏或小方形屏（如Pura X系列产品的外屏），可使用横向断点为sm，纵向断点为md进行区分，示意图如下。更多详情和示例代码请参考[阔折叠应用开发](/docs/dev/app-dev/multi-device/bpta-purax-guide)。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/2b/v3/ZvACl06jSXOM18nSVx-rrQ/zh-cn_image_0000002355146073.png?HW-CC-KV=V1&HW-CC-Date=20260606T074229Z&HW-CC-Expire=86400&HW-CC-Sign=B2533C9764E354A5B5965391FC41F7BB48EA4F735EEFCE25410E559B048A0109)
 
@@ -370,7 +370,7 @@ if (currentHeightBreakpoint === HeightBreakpoint.HEIGHT_MD) {
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/b2/v3/Vlpb-kXxTuS7CFp0YRZpBw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074229Z&HW-CC-Expire=86400&HW-CC-Sign=FDCCE46E74653F3212D87FC26A7F267A84653474712FE48037EA066A5F681F0F)
 
-* 应用设置窗口旋转方案需要结合多种条件一起判断，详情可参考[为多设备配置旋转策略](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction#section12636154743220)。
+* 应用设置窗口旋转方案需要结合多种条件一起判断，详情可参考[为多设备配置旋转策略](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction#section12636154743220)。
 * Pura X外屏默认不支持窗口旋转。
 
 **其他特殊场景**
@@ -478,7 +478,7 @@ if (currentHeightBreakpoint === HeightBreakpoint.HEIGHT_MD) {
 
 在实际应用开发过程中，开发者常常需要针对不同类型设备或同一类型设备的不同状态来修改应用的样式。媒体查询提供了丰富的媒体特征监听能力，可以监听应用显示区域变化、横竖屏、深浅色、设备类型等，因此在应用开发过程中使用的非常广泛。
 
-本小节主要介绍媒体查询跟断点的结合，即如何借助媒体查询能力，监听断点的变化，关于媒体查询的相关介绍请参见[媒体查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-media-query)。
+本小节主要介绍媒体查询跟断点的结合，即如何借助媒体查询能力，监听断点的变化，关于媒体查询的相关介绍请参见[媒体查询](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-layout-development-media-query)。
 
 **示例：**
 
@@ -1264,7 +1264,7 @@ HarmonyOS提供的一些组件支持响应式布局，例如： Tabs、Swiper、
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/38/v3/Y-AReqX-QvCnGs0PhhqN8Q/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074229Z&HW-CC-Expire=86400&HW-CC-Sign=93BC12DBD19B2994E389DE9443EDEFF05CCB0C7A62D57E0E28A639EBD46C11F9)
 
-响应式组件的实现原理与开发步骤，可参考[组件布局场景](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-component-layout)。
+响应式组件的实现原理与开发步骤，可参考[组件布局场景](/docs/dev/app-dev/multi-device/bpta-multi-device-component-layout)。
 
 ## 响应式布局样式
 
@@ -1308,9 +1308,9 @@ HarmonyOS提供的一些组件支持响应式布局，例如： Tabs、Swiper、
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/bc/v3/TRO0xBfRQ36ghv3gc_9qsQ/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074229Z&HW-CC-Expire=86400&HW-CC-Sign=69A993F67C4E5556E01896DCD0A141B9AAB0113CB21D7AE8BA05A41AC6A795DD)
 
-关于响应式布局样式的UX设计，可参考[响应式布局方法](https://developer.huawei.com/consumer/cn/doc/design-guides/design-responsive-layout-method-0000001795698449)。
+关于响应式布局样式的UX设计，可参考[响应式布局方法](/docs/design/general-design-basics/layout/responsive-method)。
 
-关于响应式布局样式的开发实现，可参考[页面布局场景](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout)。
+关于响应式布局样式的开发实现，可参考[页面布局场景](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout)。
 
 ## 常见问题
 
@@ -1381,6 +1381,6 @@ vp具体计算公式为：vp= px/（DPI/160）
 
 * 手机/折叠屏/平板/电脑设备，可参考[断点的定义](#section186821126131515)中HarmonyOS常用设备断点区间表进行区分。
 
-* 智慧屏设备，可参考[如何判断当前设备是智慧屏](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-matetv-guide#section6168122172416)进行区分。
+* 智慧屏设备，可参考[如何判断当前设备是智慧屏](/docs/dev/app-dev/multi-device/bpta-matetv-guide#section6168122172416)进行区分。
 
-* 智能穿戴设备，可参考[一多应用中如何区分智能穿戴设备](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smartwatch#section1748314426272)进行区分。
+* 智能穿戴设备，可参考[一多应用中如何区分智能穿戴设备](/docs/dev/app-dev/multi-device/bpta-smartwatch#section1748314426272)进行区分。

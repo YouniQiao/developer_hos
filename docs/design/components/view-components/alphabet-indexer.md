@@ -1,7 +1,7 @@
 ---
 title: 索引条
 sidebar_label: 索引条
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/alphabetindexer-0000001956975265
+original_url: /docs/design/components/view-components/alphabet-indexer
 format: md
 ---
 

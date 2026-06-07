@@ -1,6 +1,6 @@
 ---
 title: "配对与连接设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-pair-device-development-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-pair-device-development-guide
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ### 申请蓝牙权限
 
-需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，具体操作请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)和[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，具体操作请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)和[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ### 导入所需API模块
 
@@ -48,7 +48,7 @@ try {
 
 若目标设备的配对状态是[BOND\_STATE\_INVALID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-connection#bondstate)，则可以主动配对目标设备。
 
-* 目标设备可以通过发现设备流程获取，详情请参考：[传统蓝牙查找设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-discovery-development-guide)或者[低功耗蓝牙查找设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ble-development-guide)。
+* 目标设备可以通过发现设备流程获取，详情请参考：[传统蓝牙查找设备](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-discovery-development-guide)或者[低功耗蓝牙查找设备](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/ble-development-guide)。
 
 配对过程中，系统会弹出对话框。不同配对类型，对话框样式可能不一样，其中“确认配对密钥（Confirm Passkey）”模式如下图1。若用户同意授权，才能配对成功。
 
@@ -102,7 +102,7 @@ try {
 
 ### 连接已配对设备的profile
 
-若应用配对完目标设备后，可以调用[connectAllowedProfiles](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-connection#connectionconnectallowedprofiles16)，发起连接该设备支持的profile能力（只包括A2DP、HFP和HID）。若应用需要使用SPP连接，请参考[连接和传输数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spp-development-guide)。
+若应用配对完目标设备后，可以调用[connectAllowedProfiles](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-connection#connectionconnectallowedprofiles16)，发起连接该设备支持的profile能力（只包括A2DP、HFP和HID）。若应用需要使用SPP连接，请参考[连接和传输数据](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/spp-development-guide)。
 
 * 蓝牙子系统会在配对过程中查询和保存目标设备支持的所有profile能力。
 * 配对完成后，应用可以主动查询目标设备的profile能力，需调用[getRemoteProfileUuids](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-connection#connectiongetremoteprofileuuids12)。若存在应用需要的能力，则可以在配对完成后30s内，发起连接目标设备的profile。

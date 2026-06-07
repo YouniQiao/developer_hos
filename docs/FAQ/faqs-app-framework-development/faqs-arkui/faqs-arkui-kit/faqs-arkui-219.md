@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ForEach键值生成规则是怎样的"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-219
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-219
 ---
 
 

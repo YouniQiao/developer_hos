@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "附录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-appendix
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-appendix
 format: md
 ---
 

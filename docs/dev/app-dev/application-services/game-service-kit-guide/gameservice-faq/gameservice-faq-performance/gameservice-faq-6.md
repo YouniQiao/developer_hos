@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用C#语言开发的游戏是否可以接入游戏场景感知功能？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-6
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-faq/gameservice-faq-performance/gameservice-faq-6
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "动态照片拍摄(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-moving-photo
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-moving-photo
 format: md
 ---
 
@@ -10,10 +10,10 @@ format: md
 
 应用开发动态照片主要分为以下步骤：
 
-* 应用开发动态照片前，请参考[申请相机开发的权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)、[相机管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-management)、[设备输入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-input)、[会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management)等流程完成相机应用开发必选能力配置。
+* 应用开发动态照片前，请参考[申请相机开发的权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)、[相机管理](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management)、[设备输入](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-input)、[会话管理](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management)等流程完成相机应用开发必选能力配置。
 * 查询当前设备的当前模式是否支持拍摄动态照片。
 * 如果支持动态照片，可以调用相机框架提供的使能接口**使能**动态照片能力。
-* 监听照片回调，将照片存入媒体库。可参考[MediaLibrary Kit-访问和管理动态照片资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-movingphoto)。
+* 监听照片回调，将照片存入媒体库。可参考[MediaLibrary Kit-访问和管理动态照片资源](/docs/dev/app-dev/media/medialibrary-kit/movingphoto/photoaccesshelper-movingphoto)。
 
 ## 开发步骤
 
@@ -21,7 +21,7 @@ format: md
 
 ![](./img/a5153df2.png)
 
-* 拍摄动态照片需要麦克风权限ohos.permission.MICROPHONE，权限申请和校验的方式请参考[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。否则拍摄的照片没有声音。
+* 拍摄动态照片需要麦克风权限ohos.permission.MICROPHONE，权限申请和校验的方式请参考[开发准备](/docs/dev/app-dev/media/camera-kit/camera-preparation)。否则拍摄的照片没有声音。
 
 1. 导入依赖，需要导入相机框架、媒体库、图片相关领域依赖。
 
@@ -59,7 +59,7 @@ format: md
 
    ![](./img/ac52da32.png)
 
-   查询是否支持动态照片前需要先完成相机会话配置、提交和启动会话，详细开发步骤请参考[会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management)。
+   查询是否支持动态照片前需要先完成相机会话配置、提交和启动会话，详细开发步骤请参考[会话管理](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management)。
 
    ```
    function isMovingPhotoSupported(photoOutput: camera.PhotoOutput): boolean {
@@ -78,7 +78,7 @@ format: md
 
    ![](./img/cc61b3db.png)
 
-   使能动态照片前需要使能[分段式拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-deferred-capture)能力。
+   使能动态照片前需要使能[分段式拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-deferred-capture)能力。
 
    ```
    function enableMovingPhoto(photoOutput: camera.PhotoOutput): void {
@@ -91,7 +91,7 @@ format: md
      }
    }
    ```
-5. 触发拍照，与普通拍照方式相同，请参考[拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting)。
+5. 触发拍照，与普通拍照方式相同，请参考[拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting)。
 
 ## 状态监听
 

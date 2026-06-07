@@ -1,8 +1,8 @@
 ---
 title: "画布"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-canvas-components
+original_url: /docs/dev/atomic-dev/ascf/components-canvas-components/components-canvas-components
 format: md
 ---
 
 
-* **[canvas](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-canvas)**
+* **[canvas](/docs/dev/atomic-dev/ascf/components-canvas-components/components-canvas)**

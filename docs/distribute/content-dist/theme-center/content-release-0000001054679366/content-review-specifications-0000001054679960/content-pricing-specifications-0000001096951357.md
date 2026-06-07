@@ -1,7 +1,7 @@
 ---
 title: "内容定价规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/content-pricing-specifications-0000001096951357
+original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-pricing-specifications-0000001096951357
 ---
 
 
@@ -9,7 +9,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
 # 内容定价规范
 
-所有作品必须在符合[内容信息规范](https://developer.huawei.com/consumer/cn/doc/content/content-information-test-0000001057563280)、[设计元素规范](https://developer.huawei.com/consumer/cn/doc/content/design-elements-0000001057325102)及[测试审核规范](https://developer.huawei.com/consumer/cn/doc/content/content-check-pecifications-0000001057301166)的基础上进行定价。
+所有作品必须在符合[内容信息规范](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/content-information-test-0000001057563280)、[设计元素规范](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/design-elements-0000001057325102)及[测试审核规范](https://developer.huawei.com/consumer/cn/doc/content/content-check-pecifications-0000001057301166)的基础上进行定价。
 
 ## 价格档位汇总
 

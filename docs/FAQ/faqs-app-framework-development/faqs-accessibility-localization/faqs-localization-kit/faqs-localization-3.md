@@ -1,6 +1,6 @@
 ---
 title: "如何读取rawfile中的xml文件并转化为string类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-3
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-3
 format: md
 ---
 

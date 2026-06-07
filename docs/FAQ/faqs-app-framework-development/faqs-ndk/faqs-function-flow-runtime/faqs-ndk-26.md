@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在C++调用从ArkTS传递过来的function"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-26
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-26
 ---
 
 
@@ -65,4 +65,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
 **参考链接**
 
-[Native侧方法的实现](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process#native侧方法的实现)
+[Native侧方法的实现](/docs/dev/ndk-dev/use-napi-process#native侧方法的实现)

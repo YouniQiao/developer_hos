@@ -1,6 +1,6 @@
 ---
 title: "C侧如何打开文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-79
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-79
 format: md
 ---
 

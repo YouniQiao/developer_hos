@@ -1,7 +1,7 @@
 ---
 format: md
 title: "解决linux18.04 首次安装hdc无法执行问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-73
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-73
 ---
 
 
@@ -41,7 +41,7 @@ Try: sudo apt install <deb name>
   $ /path/to/hdc -v
   注：实际使用时请替换为安装目录下的真实路径
   ```
-* 修改环境变量增加hdc命令所在目录，可参考hdc[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)章节配置环境变量。
+* 修改环境变量增加hdc命令所在目录，可参考hdc[环境准备](/docs/dev/app-dev/system/hdc#环境准备)章节配置环境变量。
 * 将hdc通过软链接方式保存到/usr/bin目录下。
 
   ```

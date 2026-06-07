@@ -1,6 +1,6 @@
 ---
 title: "Native侧如何获取ArkTS侧Object对象及其成员变量"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-42
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-42
 format: md
 ---
 

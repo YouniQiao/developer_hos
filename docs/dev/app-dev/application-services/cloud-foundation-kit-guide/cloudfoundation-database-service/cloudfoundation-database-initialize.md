@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "初始化数据库访问"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-initialize
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-initialize
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ## 前提条件
 
-已[引入对象类型文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-file)。
+已[引入对象类型文件](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-file)。
 
 ## 操作步骤
 
@@ -41,7 +41,7 @@ format: md
 
    ![](./img/d63e9766.png)
 
-   * cloudDatabase.zone方法接收的入参为“存储区名称”，即cloudDBZoneName，请参见[新增存储区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-zone)章节。
+   * cloudDatabase.zone方法接收的入参为“存储区名称”，即cloudDBZoneName，请参见[新增存储区](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-zone)章节。
    * 存储区最多创建4个，超过4个会导致云数据库访问失败。
 4. 如果需要使用数据库查询方法，可以使用类（此处以BookInfo为例）初始化DatabaseQuery。
 

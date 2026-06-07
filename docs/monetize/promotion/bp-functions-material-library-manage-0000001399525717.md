@@ -1,7 +1,7 @@
 ---
 title: "管理素材库"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-material-library-manage-0000001399525717
+original_url: /docs/monetize/promotion/bp-functions-material-library-manage-0000001399525717
 format: md
 ---
 

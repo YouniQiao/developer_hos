@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-performance-no-dynamic-cls-func"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-performance-no-dynamic-cls-func
+original_url: /docs/tools/coding-debug/ide_hp-performance-no-dynamic-cls-func
 format: md
 ---
 

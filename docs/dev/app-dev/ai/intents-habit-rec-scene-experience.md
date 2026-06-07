@@ -1,6 +1,6 @@
 ---
 title: "场景体验"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-scene-experience
+original_url: /docs/dev/app-dev/ai/intents-habit-rec-scene-experience
 format: md
 ---
 

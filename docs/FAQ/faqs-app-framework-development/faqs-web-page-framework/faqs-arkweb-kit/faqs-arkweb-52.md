@@ -1,7 +1,7 @@
 ---
 format: md
 title: "动态创建web组件应该在什么场景下使用，性能如何"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-52
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-52
 ---
 
 
@@ -11,4 +11,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[使用Web组件加载页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-page-loading-with-web-components)
+[使用Web组件加载页面](/docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-page-loading-with-web-components)

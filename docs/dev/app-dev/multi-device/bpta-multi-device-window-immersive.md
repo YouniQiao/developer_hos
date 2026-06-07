@@ -1,7 +1,7 @@
 ---
 title: "窗口沉浸式"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 概述
 
-沉浸式模式是指通过减少无关元素的干扰，使应用界面更加专注于内容呈现，以提升用户体验的设计模式。典型应用的全屏窗口，其UI元素包括[状态栏](https://developer.huawei.com/consumer/cn/doc/design-guides/status-bar-0000001776775568)、应用界面和底部[导航条](https://developer.huawei.com/consumer/cn/doc/design-guides/navigation-0000001957075737)。其中，状态栏和导航条在沉浸式布局下称为避让区，避让区之外的区域称为安全区（如下图）。沉浸式页面开发通常通过将应用页面延伸至状态栏和导航条，达到以下目的：
+沉浸式模式是指通过减少无关元素的干扰，使应用界面更加专注于内容呈现，以提升用户体验的设计模式。典型应用的全屏窗口，其UI元素包括[状态栏](/docs/design/system-features/features/status-bar)、应用界面和底部[导航条](/docs/design/system-features/features/navigation-bar)。其中，状态栏和导航条在沉浸式布局下称为避让区，避让区之外的区域称为安全区（如下图）。沉浸式页面开发通常通过将应用页面延伸至状态栏和导航条，达到以下目的：
 
 * 视觉统一：应用页面与避让区（状态栏、导航条）色调统一，避免界面割裂，提供更好的视觉体验。
 * 布局扩展：充分利用屏幕可视区域，使页面内容延伸到状态栏和导航条区域（即“安全区”之外的避让区），获得更大的布局空间。
@@ -63,7 +63,7 @@ format: md
   | ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/23/v3/dsJgevG0R32JGT4dxuL-8A/zh-cn_image_0000002499574174.jpg?HW-CC-KV=V1&HW-CC-Date=20260606T074236Z&HW-CC-Expire=86400&HW-CC-Sign=BB883641A7DFA682AE9B48E2A368B26F7AE3A8FAEDD723297666A555DE29E583 "点击放大") | ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/b9/v3/J2g2BkSOQLys-OpiqbyQ9A/zh-cn_image_0000002499414200.jpg?HW-CC-KV=V1&HW-CC-Date=20260606T074236Z&HW-CC-Expire=86400&HW-CC-Sign=32B907C01B8969DBC7788CA19F7E55A86479D17FD78B57B9121B0697F30BF25F "点击放大") |
 * 方案三：安全区域拓展（组件级）
 
-  设置组件的[expandSafeArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#expandsafearea)属性，将组件的安全区域延伸至状态栏或导航条区域，同时保持子组件在安全区内布局，无需额外避让处理。支持指定系统避让区域类型（[SafeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#safeareatype)）和延伸方向（[SafeAreaEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#safeareaedge)），实现沉浸式的方案可参考[组件安全区方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-develop-apply-immersive-effects#组件安全区方案)。
+  设置组件的[expandSafeArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#expandsafearea)属性，将组件的安全区域延伸至状态栏或导航条区域，同时保持子组件在安全区内布局，无需额外避让处理。支持指定系统避让区域类型（[SafeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#safeareatype)）和延伸方向（[SafeAreaEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#safeareaedge)），实现沉浸式的方案可参考[组件安全区方案](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-develop-apply-immersive-effects#组件安全区方案)。
 
   | 原始布局 | 扩展至状态栏和导航条 | 仅扩展至状态栏 | 仅扩展至导航条 |
   | --- | --- | --- | --- |

@@ -1,6 +1,6 @@
 ---
 title: "Node-API接口返回状态码介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi_status_introduction
+original_url: /docs/dev/ndk-dev/napi_status_introduction
 format: md
 ---
 

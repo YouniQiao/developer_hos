@@ -1,6 +1,6 @@
 ---
 title: "视频"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-video
+original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-video
 format: md
 ---
 
@@ -74,7 +74,7 @@ has.chooseMedia({
 
 has.createVideoContext(String id): VideoContext
 
-创建[video](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-video)上下文VideoContext对象。
+创建[video](/docs/dev/atomic-dev/ascf/components-media-components/components-video)上下文VideoContext对象。
 
 **起始版本：** 1.0.0
 
@@ -246,7 +246,7 @@ VideoContext.requestBackgroundPlayback()
     ]
   }
   ```
-* 在[app.json](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/appjson-global-config)中配置**requiredBackgroundModes**属性。
+* 在[app.json](/docs/dev/atomic-dev/ascf/config/appjson-global-config)中配置**requiredBackgroundModes**属性。
 
   ```
   "requiredBackgroundModes": ["audio"]

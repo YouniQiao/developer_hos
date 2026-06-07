@@ -1,7 +1,7 @@
 ---
 title: "分辨率与版本号"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/resolution-version-0000001252603441
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-version-0000001252603441
 ---
 
 
@@ -64,8 +64,8 @@ z：作为表盘资源包版本号，用于表盘资源包版本更新，从1开
 
 在466\*466 2.1.z版本基础上，WATCH Buds不支持以下能力集：
 
-* [大气压](https://developer.huawei.com/consumer/cn/doc/content/466-capability-0000001881726154#section1127013516811)
-* [海拔高度](https://developer.huawei.com/consumer/cn/doc/content/466-capability-0000001881726154#section1337313267819)
+* [大气压](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x466-capability-0000001881726154#section1127013516811)
+* [海拔高度](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x466-capability-0000001881726154#section1337313267819)
 * 指南针（跳转应用）
 
 因此，466\*466 2.1.z版本如果使用了以上能力集，将无法分发到WATCH Buds的表盘市场。
@@ -110,8 +110,8 @@ z：作为表盘资源包版本号，用于表盘资源包版本更新，从1开
 
 每类分辨率支持的能力集及对应的版本号详见：
 
-* [466\*466能力集](https://developer.huawei.com/consumer/cn/doc/content/466-capability-0000001881726154)
-* [408\*480能力集](https://developer.huawei.com/consumer/cn/doc/content/408-capability-0000001933842793)
-* [390\*390/454\*454能力集](https://developer.huawei.com/consumer/cn/doc/content/454-capability-0000001580733885)
-* [280\*456/336\*480能力集](https://developer.huawei.com/consumer/cn/doc/content/280-capability-0000001592176765)
-* [194\*368能力集](https://developer.huawei.com/consumer/cn/doc/content/194-capability-0000001591976781)
+* [466\*466能力集](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x466-capability-0000001881726154)
+* [408\*480能力集](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x408-capability-0000001933842793)
+* [390\*390/454\*454能力集](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x454-capability-0000001580733885)
+* [280\*456/336\*480能力集](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x280-capability-0000001592176765)
+* [194\*368能力集](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-capability-0000001523484462/x194-capability-0000001591976781)

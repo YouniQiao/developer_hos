@@ -1,6 +1,6 @@
 ---
 title: "通过EmbeddedComponent拉起EmbeddedUIExtensionAbility"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embedded-component
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embedded-component
 format: md
 ---
 

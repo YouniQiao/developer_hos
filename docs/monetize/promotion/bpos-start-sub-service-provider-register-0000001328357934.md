@@ -1,7 +1,7 @@
 ---
 title: "子客服务商注册"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-sub-service-provider-register-0000001328357934
+original_url: /docs/monetize/promotion/bpos-start-sub-service-provider-register-0000001328357934
 format: md
 ---
 
@@ -92,13 +92,13 @@ format: md
 
 ![](./img/73cfd8fcf167.png) 
 
-- 如果您在注册过程中，遇到白屏/报错情况时，您需要服务商重新邀请并重新注册。如有疑问，可[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们，此时您需要在工单中提供以下信息：
+- 如果您在注册过程中，遇到白屏/报错情况时，您需要服务商重新邀请并重新注册。如有疑问，可[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们，此时您需要在工单中提供以下信息：
   - 服务商账户ID或服务商公司名称，请联系您的服务商获取。
   - 服务商邀请时填写邀请信息的截图。
   - 白屏或报错时具体的截图，以及描述清楚出现错误的场景。
-  - 提供报错日志：获取方式请参考[获取日志](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-faq-0000001328517634#ZH-CN_TOPIC_0000001328517634__li3228mcpsimp)。
+  - 提供报错日志：获取方式请参考[获取日志](/docs/monetize/promotion/bpos-faq-0000001328517634#ZH-CN_TOPIC_0000001328517634__li3228mcpsimp)。
 
-- 如果您在注册子客服务商过程中出现了让您选择“直客”或者“服务商”界面时，代表本次注册流程失败，您需要先[注销](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-faq-0000001328517634#ZH-CN_TOPIC_0000001328517634__li3219mcpsimp)子客服务商的华为账号，然后让您的服务商重新邀请您，并重新进行子客服务商流程注册。
+- 如果您在注册子客服务商过程中出现了让您选择“直客”或者“服务商”界面时，代表本次注册流程失败，您需要先[注销](/docs/monetize/promotion/bpos-faq-0000001328517634#ZH-CN_TOPIC_0000001328517634__li3219mcpsimp)子客服务商的华为账号，然后让您的服务商重新邀请您，并重新进行子客服务商流程注册。
 
 ![](./img/d364098fce09.png "点击放大")
 
@@ -178,7 +178,7 @@ format: md
 ![](./img/492e0301cf7e.png)
 
 - <strong>已销户</strong>：指的是子客注销华为账号。
-- <strong>停用</strong>：一般由华为进行判定并操作，如果子客账户被停用，请[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
+- <strong>停用</strong>：一般由华为进行判定并操作，如果子客账户被停用，请[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
 - <strong>授权过期</strong>：指的是子客授权函过期。您可以进行“编辑”、“进入账户”等操作。
   - <strong>编辑</strong>：您可以修改子客的授权时间。
   - <strong>进入账户</strong>：您可以进入子客账户。

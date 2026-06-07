@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Core Speech Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-speech-introduction
+original_url: /docs/dev/app-dev/ai/core-speech-kit-guide/core-speech-introduction
 format: md
 ---
 
@@ -10,8 +10,8 @@ Core Speech Kit（基础语音服务）集成了语音类基础AI能力，包括
 
 ## 场景介绍
 
-* 文本转语音：将一段不超过10000字符数的文本合成为语音并进行播报。实现效果可参考[朗读控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-textreader-guide)。
-* 语音识别：将一段音频信息（短语音模式不超过60s，长语音模式不超过8h）转换为文本，可以将pcm音频文件或者实时语音转换为文字。实现效果可参考[AI字幕控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-aicaption-guide)。
+* 文本转语音：将一段不超过10000字符数的文本合成为语音并进行播报。实现效果可参考[朗读控件](/docs/dev/app-dev/ai/speech-kit-guide/speech-textreader-guide)。
+* 语音识别：将一段音频信息（短语音模式不超过60s，长语音模式不超过8h）转换为文本，可以将pcm音频文件或者实时语音转换为文字。实现效果可参考[AI字幕控件](/docs/dev/app-dev/ai/speech-kit-guide/speech-aicaption-guide)。
 
 ## 约束与限制
 

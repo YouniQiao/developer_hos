@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-faq-0000002334224101
+original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-faq-0000002334224101
 format: md
 ---
 
@@ -48,4 +48,4 @@ format: md
 
 应用市场的安装次数仅表示安装数，卸载后再下载安装或更新下载安装，均不计入安装次数。
 
-而下载安装报表中的安装成功次数是指用户下载应用后在应用市场安装成功次数（包含更新安装成功次数+新安装成功次数）；总下载成功次数等于更新下载成功次数+新下载成功次数，具体指标说明可参见[概览报表当前支持的核心指标](https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-keyindex-0000002236332564#section13180137142512)。
+而下载安装报表中的安装成功次数是指用户下载应用后在应用市场安装成功次数（包含更新安装成功次数+新安装成功次数）；总下载成功次数等于更新下载成功次数+新下载成功次数，具体指标说明可参见[概览报表当前支持的核心指标](/docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-keyindex-0000002236332564#section13180137142512)。

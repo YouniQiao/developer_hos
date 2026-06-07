@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发音频通话功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-development
+original_url: /docs/dev/app-dev/media/audio-kit/audio-call/audio-call-development
 format: md
 ---
 
 
 在音频通话场景下，音频输出（播放对端声音）和音频输入（录制本端声音）会同时进行，应用可以通过使用AudioRenderer来实现音频输出，通过使用AudioCapturer来实现音频输入，同时使用AudioRenderer和AudioCapturer即可实现音频通话功能。
 
-在音频通话开始和结束时，应用可以自行检查当前的[音频场景模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-overview#音频场景模式)和[铃声模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-overview#铃声模式)，以便采取合适的音频管理及提示策略。
+在音频通话开始和结束时，应用可以自行检查当前的[音频场景模式](/docs/dev/app-dev/media/audio-kit/audio-call/audio-call-overview#音频场景模式)和[铃声模式](/docs/dev/app-dev/media/audio-kit/audio-call/audio-call-overview#铃声模式)，以便采取合适的音频管理及提示策略。
 
 以下代码示范了同时使用AudioRenderer和AudioCapturer实现音频通话功能的基本过程，其中未包含音频通话数据的传输过程，实际开发中，需要将网络传输来的对端通话数据解码播放，此处仅以读取音频文件的数据代替；同时需要将本端录制的通话数据编码打包，通过网络发送给对端，此处仅以将数据写入音频文件代替。
 
@@ -16,7 +16,7 @@ format: md
 
 ## 使用AudioRenderer播放对端的通话声音
 
-该过程与[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)过程相似，关键区别在于audioRendererInfo参数和音频数据来源。audioRendererInfo参数中，音频流使用类型usage需设置为VoIP通话：STREAM\_USAGE\_VOICE\_COMMUNICATION。
+该过程与[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)过程相似，关键区别在于audioRendererInfo参数和音频数据来源。audioRendererInfo参数中，音频流使用类型usage需设置为VoIP通话：STREAM\_USAGE\_VOICE\_COMMUNICATION。
 
 ```
 import { audio } from '@kit.AudioKit'; // 导入audio模块。
@@ -203,9 +203,9 @@ async function release() {
 
 ## 使用AudioCapturer录制本端的通话声音
 
-该过程与[使用AudioCapturer开发音频录制功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiocapturer-for-recording)过程相似，关键区别在于audioCapturerInfo参数和音频数据流向。audioCapturerInfo参数中音源类型source需设置为语音通话：SOURCE\_TYPE\_VOICE\_COMMUNICATION。
+该过程与[使用AudioCapturer开发音频录制功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-audiocapturer-for-recording)过程相似，关键区别在于audioCapturerInfo参数和音频数据流向。audioCapturerInfo参数中音源类型source需设置为语音通话：SOURCE\_TYPE\_VOICE\_COMMUNICATION。
 
-所有录制均需要申请麦克风权限：ohos.permission.MICROPHONE，申请方式请参考[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+所有录制均需要申请麦克风权限：ohos.permission.MICROPHONE，申请方式请参考[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ```
 import { audio } from '@kit.AudioKit'; // 导入audio模块。

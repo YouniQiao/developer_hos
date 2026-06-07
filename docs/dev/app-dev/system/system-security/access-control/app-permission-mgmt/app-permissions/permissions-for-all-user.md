@@ -1,6 +1,6 @@
 ---
 title: "开放权限（用户授权）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 申请方式
 
-以下权限的授权方式均为[user\_grant（用户授权）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#user_grant用户授权)，申请方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions) > [向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+以下权限的授权方式均为[user\_grant（用户授权）](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#user_grant用户授权)，申请方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions) > [向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ## ohos.permission.ACCESS\_BLUETOOTH
 
@@ -92,7 +92,7 @@ format: md
 
 **申请流程**：
 
-1. 在“module.json5”配置文件中[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+1. 在“module.json5”配置文件中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
    由于在申请后台位置权限前，必须先申请前台位置权限，因此开发者在配置时，应同时配置后台位置权限和前台位置权限。前台位置权限的申请有两种允许情况：
 
@@ -101,7 +101,7 @@ format: md
 2. 应用调用[requestPermissionsFromUser()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissionsfromuser9)拉起弹窗向用户申请对应的前台位置权限。
 3. 若用户点击弹窗允许应用使用前台位置权限，应用可以引导用户在系统应用“设置”中，授予后台位置权限；若用户点击弹窗禁止应用使用前台位置权限，应用可以引导用户在系统应用“设置”中授权，或通过调用[requestPermissionOnSetting()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissiononsetting12)再次拉起权限设置弹窗，引导用户授权。
 
-当前系统提供了长时任务机制，对于需要在后台使用位置的应用，结合自身业务场景，可通过申请LOCATION类型的长时任务和前台位置权限的方式在后台获取位置，而不必申请后台位置权限。请参考：[长时任务指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)。
+当前系统提供了长时任务机制，对于需要在后台使用位置的应用，结合自身业务场景，可通过申请LOCATION类型的长时任务和前台位置权限的方式在后台获取位置，而不必申请后台位置权限。请参考：[长时任务指导](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)。
 
 **权限级别**：normal
 
@@ -187,7 +187,7 @@ format: md
 
 ![](./img/ee2c423e.png)
 
-该权限级别发生变更，为保证兼容性，在当前版本请继续采用[受限权限申请方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)申请使用该权限。
+该权限级别发生变更，为保证兼容性，在当前版本请继续采用[受限权限申请方式](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)申请使用该权限。
 
 **权限级别**：normal
 
@@ -205,7 +205,7 @@ format: md
 
 ![](./img/19ff081f.png)
 
-该权限级别发生变更，为保证兼容性，在当前版本请继续采用[受限权限申请方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)申请使用该权限。
+该权限级别发生变更，为保证兼容性，在当前版本请继续采用[受限权限申请方式](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)申请使用该权限。
 
 **权限级别**：normal
 
@@ -247,7 +247,7 @@ format: md
 
 **替代方案**：
 
-请参考[文件权限组废弃替代方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-group-list#文件deprecated)。
+请参考[文件权限组废弃替代方案](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-group-list#文件deprecated)。
 
 ## ohos.permission.WRITE\_MEDIA
 
@@ -263,4 +263,4 @@ format: md
 
 **替代方案**：
 
-请参考[文件权限组废弃替代方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-group-list#文件deprecated)。
+请参考[文件权限组废弃替代方案](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-group-list#文件deprecated)。

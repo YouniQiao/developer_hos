@@ -1,6 +1,6 @@
 ---
 title: "ArkTS卡片使用自定义字体"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-load-custom-font
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-page/arkts-ui-widget-load-custom-font
 format: md
 ---
 
@@ -9,7 +9,7 @@ API version 22开始新增了[ohos.graphics.text.FontCollection.getLocalInstance
 
 ## 开发步骤
 
-1. 创建动态卡片：按照[创建ArkTS卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)里的描述创建动态卡片。
+1. 创建动态卡片：按照[创建ArkTS卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)里的描述创建动态卡片。
 2. 在项目entry\src\main\resources\rawfile目录下添加自定义字体文件xxx.ttf。
 3. 页面布局代码实现entry/src/main/ets/widget/pages/WidgetCard.ets。
 

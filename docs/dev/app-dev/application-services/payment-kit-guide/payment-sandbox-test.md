@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "沙盒环境验证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-sandbox-test
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-sandbox-test
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ### 获取沙盒环境配置
 
-在沙盒验证前，需要生成沙盒环境配置信息（如商户号、证书ID、用户账号、支付密码等）进行调试，生成沙盒环境配置暂不支持开发者生成，请联系华为工程师获取，相关咨询可[点击此处](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-service-support)或者通过[在线工单系统](https://developer.huawei.com/consumer/cn/support/feedback/#/add/13?level2=111)与我们联系。
+在沙盒验证前，需要生成沙盒环境配置信息（如商户号、证书ID、用户账号、支付密码等）进行调试，生成沙盒环境配置暂不支持开发者生成，请联系华为工程师获取，相关咨询可[点击此处](/docs/dev/app-dev/application-services/payment-kit-guide/payment-service-support)或者通过[在线工单系统](https://developer.huawei.com/consumer/cn/support/feedback/#/add/13?level2=111)与我们联系。
 
 生成沙盒环境配置信息需提供如下信息：
 
@@ -41,7 +41,7 @@ format: md
 
 1. 参见[手动签名方式调试HarmonyOS应用/元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-0000002270829389)，申请应用调试证书->注册调试设备->申请调试Profile。
 2. 参见[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section1240072619462)，在DevEco Studio侧配置签名信息。
-3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中[配置应用签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-fingerprint-0000002278002933)。
+3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中[配置应用签名证书指纹](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-fingerprint-0000002278002933)。
 
 ## 沙盒环境接口请求及支持维度说明
 
@@ -61,7 +61,7 @@ REST API请求说明：
 
 **支持商户模型：** 直连商户、平台类商户、服务商
 
-1. 在满足沙盒验证条件（已获取[沙盒环境调试配置](#沙盒环境调试配置)）下，开发者可以使用沙盒环境配置调用[直连商户预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-prepay)/[平台类商户/服务商预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-agent-prepay)获取预支付ID（prepayId）构建[orderStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#orderstr)请求[requestPayment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-paymentservice#requestpayment)接口拉起Payment Kit支付收银台（开发步骤可参见[商户基础支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-payment-process#开发步骤)）。
+1. 在满足沙盒验证条件（已获取[沙盒环境调试配置](#沙盒环境调试配置)）下，开发者可以使用沙盒环境配置调用[直连商户预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-prepay)/[平台类商户/服务商预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-agent-prepay)获取预支付ID（prepayId）构建[orderStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#orderstr)请求[requestPayment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-paymentservice#requestpayment)接口拉起Payment Kit支付收银台（开发步骤可参见[商户基础支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-payment-process#开发步骤)）。
 
    ![](./img/b4af8a20.png)
 
@@ -74,4 +74,4 @@ REST API请求说明：
    * 如果用户没有提前登录，系统会拉起华为账号登录页面让用户登录，请使用沙盒环境用户账户进行登录。
 2. 用户按照正常流程完成支付（实际不会产生真实扣费）后，开发者可以收到回调通知，需要完成回调事件处理。开发者也可以主动请求订单查询、申请退款等接口，以完成订单查询、退款等整个支付流程的闭环。
 
-   沙盒环境拉起支付收银台完成订单支付与正常环境支付流程体验一致，页面示例参见[商户基础支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-payment-process#场景介绍)所示。
+   沙盒环境拉起支付收银台完成订单支付与正常环境支付流程体验一致，页面示例参见[商户基础支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-payment-process#场景介绍)所示。

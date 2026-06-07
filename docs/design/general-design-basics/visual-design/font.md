@@ -1,7 +1,7 @@
 ---
 title: 字体排印
 sidebar_label: 字体排印
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/font-0000001828772001
+original_url: /docs/design/general-design-basics/visual-design/font
 format: md
 ---
 

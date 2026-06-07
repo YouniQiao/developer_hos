@@ -1,7 +1,7 @@
 ---
 title: "命令：碰一碰&lt;CollaborationCommands&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-collaboration-0000002489842474
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-collaboration-0000002489842474
 ---
 
 
@@ -134,7 +134,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
 ![](./img/e7c4668f8e2b.png)
 
-src.state，src.currentTime参考[全局变量](https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-globalvar-0000002471235030)的定义
+src.state，src.currentTime参考[全局变量](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-globalvar-0000002471235030)的定义
 
 <strong>示例二</strong>：展示碰一碰长连接能力在锁屏场景下的使用,支持设备连接成功和断开的触发动作,使用多个 DataShare 节点分享不同数据,并使用 CollaborationSendCommand 和 CollaborationDisconnectCommand 实现主动消息发送和断开连接。
 

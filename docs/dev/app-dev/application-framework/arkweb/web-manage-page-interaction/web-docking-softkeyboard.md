@@ -1,6 +1,6 @@
 ---
 title: "Web组件对接软键盘"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-docking-softkeyboard
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-docking-softkeyboard
 format: md
 ---
 
@@ -245,7 +245,7 @@ ArkWeb组件根据避让模式进行避让，效果见图3。
 
 ![](./img/a7dbd4a4.png)
 
-3.在软键盘弹出时，为使Web组件不发生避让行为，可通过调用[expandSafeArea()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#expandsafearea)设置Web组件扩展安全区域。更多详细示例可参考[网页中安全区域计算和避让适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-safe-area-insets)。
+3.在软键盘弹出时，为使Web组件不发生避让行为，可通过调用[expandSafeArea()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#expandsafearea)设置Web组件扩展安全区域。更多详细示例可参考[网页中安全区域计算和避让适配](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-safe-area-insets)。
 
 ```
 // xxx.ets

@@ -1,7 +1,7 @@
 ---
 title: "多设备图片美化界面"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/multi-picture-app
+original_url: /docs/dev/app-dev/multi-device/multi-picture-app
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ![](./img/fc6bd906.png)
 
-阅读本文前，开发者需熟悉[ArkUI（方舟UI框架）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui)和[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)相关知识。
+阅读本文前，开发者需熟悉[ArkUI（方舟UI框架）](/docs/dev/app-dev/application-framework/arkui)和[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)相关知识。
 
 下文将从UX设计、工程管理、页面开发三个角度，介绍图片美化应用在多设备开发中的最佳实践。
 
@@ -27,7 +27,7 @@ format: md
 
 ## UX设计
 
-图片美化应用的UX设计可参考社交通讯类多设备响应式设计指南的[拍摄美化类](https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples3-0000001746498074)章节，设计参考图如下所示。
+图片美化应用的UX设计可参考社交通讯类多设备响应式设计指南的[拍摄美化类](/docs/design/app-design-practices/photo-beauty)章节，设计参考图如下所示。
 
 ![](./img/27da4443.png "点击放大")
 
@@ -37,13 +37,13 @@ format: md
 
 ###创建工程
 
-建议开发者参考[多设备工程部署与发布](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-ide)相关内容，在掌握分层架构工程的创建与配置方法后，创建模板项目工程，并根据图片美化应用的开发需求进行针对性修改，确保工程架构贴合实际业务需求。
+建议开发者参考[多设备工程部署与发布](/docs/dev/app-dev/multi-device/bpta-multi-device-ide)相关内容，在掌握分层架构工程的创建与配置方法后，创建模板项目工程，并根据图片美化应用的开发需求进行针对性修改，确保工程架构贴合实际业务需求。
 
 ###工程结构
 
 图片美化应用基于推荐的分层架构，按products、features、common三个层级组织代码工程。每个层级的设计如下：
 
-* products层：图片美化应用需适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板和电脑。由于电脑设备的界面布局与其他设备差异较大，因此在products层单独创建名称为“pc”的HAP包作为电脑端的应用入口；直板机、双折叠（Mate X系列）、三折叠、阔折叠和平板设备的界面布局整体相似，部分差异可通过“一多”[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout)和[响应式布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)适配，因此在products层创建名称为“default”的HAP包作为这些设备的应用入口。
+* products层：图片美化应用需适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板和电脑。由于电脑设备的界面布局与其他设备差异较大，因此在products层单独创建名称为“pc”的HAP包作为电脑端的应用入口；直板机、双折叠（Mate X系列）、三折叠、阔折叠和平板设备的界面布局整体相似，部分差异可通过“一多”[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout)和[响应式布局](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)适配，因此在products层创建名称为“default”的HAP包作为这些设备的应用入口。
 * features层：图片美化应用包含两个核心业务模块，分别为照片浏览（multipicturebrowsing）和照片编辑（multipictureediting）。在features层为两个业务模块分别创建对应的HAR包，供products层按需引用。两个业务模块相对独立，互不依赖，便于后续维护与迭代。
 * common层：为提升代码复用性、减少冗余，在common层集中存放公共常量、路由跳转工具及窗口管理工具等需被多个模块共用的基础能力，供其他模块统一调用。
 
@@ -107,13 +107,13 @@ format: md
 
 * 窗口模式
 
-  适配设备支持全屏、分屏、悬浮窗和自由窗口模式，具体参见[窗口模式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode)。其中，分屏模式与悬浮窗无需特殊设计，可通过系统方式进入。应用内需监听窗口尺寸变化，[通过断点刷新UI](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section175001836203617)即可自动适配全屏、分屏、悬浮窗及自由窗口模式的布局。
+  适配设备支持全屏、分屏、悬浮窗和自由窗口模式，具体参见[窗口模式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode)。其中，分屏模式与悬浮窗无需特殊设计，可通过系统方式进入。应用内需监听窗口尺寸变化，[通过断点刷新UI](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section175001836203617)即可自动适配全屏、分屏、悬浮窗及自由窗口模式的布局。
 * 窗口方向
 
-  在类直板机型中推荐仅竖屏显示，在双折叠展开态、三折叠G态及平板等大屏幕场景下推荐支持四方向旋转，并受控于控制中心的旋转开关。图片美化类应用在module.json5配置文件中，建议设置orientation为FOLLOW\_DESKTOP，详细说明请参考[窗口方向](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction)。
+  在类直板机型中推荐仅竖屏显示，在双折叠展开态、三折叠G态及平板等大屏幕场景下推荐支持四方向旋转，并受控于控制中心的旋转开关。图片美化类应用在module.json5配置文件中，建议设置orientation为FOLLOW\_DESKTOP，详细说明请参考[窗口方向](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction)。
 * 窗口沉浸式
 
-  根据UX设计要求，需实现不同窗口模式（全屏、分屏、悬浮窗、自由窗口）下的沉浸式效果，具体实现指南请参考[窗口沉浸式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive)。推荐开发者采用组件级沉浸方案（通过组件设置页面沉浸）实现效果，同时需执行动态安全区避让，确保沉浸式显示效果。自由窗口模式下应使用window.[setWindowDecorVisible()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)隐藏标题栏，仅保留右上角三键。此时，应用页面延伸至标题栏区域，实现沉浸式显示效果。
+  根据UX设计要求，需实现不同窗口模式（全屏、分屏、悬浮窗、自由窗口）下的沉浸式效果，具体实现指南请参考[窗口沉浸式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive)。推荐开发者采用组件级沉浸方案（通过组件设置页面沉浸）实现效果，同时需执行动态安全区避让，确保沉浸式显示效果。自由窗口模式下应使用window.[setWindowDecorVisible()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)隐藏标题栏，仅保留右上角三键。此时，应用页面延伸至标题栏区域，实现沉浸式显示效果。
 
 ###照片浏览页
 
@@ -159,7 +159,7 @@ format: md
 
 ![](./img/c82f8d76.png "点击放大")
 
-使用[PinchGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pinchgesture)实现双指捏合手势触发时，动态修改Grid组件的显示列数。开发详情请参考[多设备交互](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section182814229423)或[示例代码](#section23671643329)。
+使用[PinchGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pinchgesture)实现双指捏合手势触发时，动态修改Grid组件的显示列数。开发详情请参考[多设备交互](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section182814229423)或[示例代码](#section23671643329)。
 
 ## 电脑端页面
 
@@ -169,13 +169,13 @@ format: md
 
 * 窗口模式
 
-  适配设备支持全屏与自由窗口模式，详情请参考[窗口模式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode)。应用内监听窗口尺寸变化，[通过断点刷新UI](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配全屏与自由窗口模式下的布局。
+  适配设备支持全屏与自由窗口模式，详情请参考[窗口模式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode)。应用内监听窗口尺寸变化，[通过断点刷新UI](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配全屏与自由窗口模式下的布局。
 * 窗口方向
 
-  电脑设备上应用的窗口方向跟随屏幕方向显示，不支持开发者自定义，相关内容请参考[窗口方向](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction)。
+  电脑设备上应用的窗口方向跟随屏幕方向显示，不支持开发者自定义，相关内容请参考[窗口方向](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction)。
 * 窗口沉浸式
 
-  根据UX设计要求，需在自由窗口模式下实现沉浸式效果。推荐开发者使用window.setWindowDecorVisible(false)隐藏标题栏，仅保留右上角三键，并设置三键大小及右侧进行。此时应用页面拓展至标题栏区域，实现沉浸式显示效果，详情可参考[窗口沉浸式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive)。
+  根据UX设计要求，需在自由窗口模式下实现沉浸式效果。推荐开发者使用window.setWindowDecorVisible(false)隐藏标题栏，仅保留右上角三键，并设置三键大小及右侧进行。此时应用页面拓展至标题栏区域，实现沉浸式显示效果，详情可参考[窗口沉浸式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive)。
 
 ###照片浏览页
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "验证应用请求真实性集成设计实践"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-practice
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-practice
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "查询和监听其他应用录制状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording-stream-management
+original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/audio-recording-stream-management
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ## 读取或监听应用内音频流状态变化
 
-参考[使用AudioCapturer开发音频录制功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiocapturer-for-recording)或[audio.createAudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-f#audiocreateaudiocapturer8)，先完成AudioCapturer的创建，再通过以下两种方法查看音频流状态的变化。
+参考[使用AudioCapturer开发音频录制功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-audiocapturer-for-recording)或[audio.createAudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-f#audiocreateaudiocapturer8)，先完成AudioCapturer的创建，再通过以下两种方法查看音频流状态的变化。
 
 * 方法1：直接查看AudioCapturer的[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiocapturer#属性)state：
 
@@ -117,7 +117,7 @@ format: md
 
    ![](./img/8bdddad0.png)
 
-   对所有音频流状态进行监听的应用需要[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)ohos.permission.USE\_BLUETOOTH，否则无法获得实际的设备名称和设备地址信息，查询到的设备名称和设备地址（蓝牙设备的相关属性）将为空字符串。
+   对所有音频流状态进行监听的应用需要[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)ohos.permission.USE\_BLUETOOTH，否则无法获得实际的设备名称和设备地址信息，查询到的设备名称和设备地址（蓝牙设备的相关属性）将为空字符串。
 
    从API version 20开始，通常在音频录制启动前调用[isRecordingAvailable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiostreammanager#isrecordingavailable20)，判断当前传入的音频采集器信息中音源类型的录制是否可以启动成功。
 

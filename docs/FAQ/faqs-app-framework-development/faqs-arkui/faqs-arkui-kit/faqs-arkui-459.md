@@ -1,6 +1,6 @@
 ---
 title: "FrameNode的isAttached接口是否可以判断FrameNode节点出现在屏幕上"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-459
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-459
 format: md
 ---
 

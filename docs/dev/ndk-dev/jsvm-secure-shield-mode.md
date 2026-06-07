@@ -1,6 +1,6 @@
 ---
 title: "JSVM-API 坚盾守护模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-secure-shield-mode
+original_url: /docs/dev/ndk-dev/jsvm-secure-shield-mode
 format: md
 ---
 

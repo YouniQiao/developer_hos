@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "华为账号一键登录（获取手机号和UnionID/OpenID）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
 3. 应用在用户同意后获取到手机号，需要根据自身业务场景判断使用的方式，必要时增加其他安全验证手段，比如对二次放号的判断。
 4. 华为账号一键登录服务当前仅限中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）用户可用。
 5. 华为账号一键登录支持Phone、Tablet、PC/2in1设备。并且从5.1.1(19)版本开始，新增支持TV设备。
-6. 仅支持企业开发者使用一键登录，个人开发者请使用[华为账号登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-button)或[静默登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-silent-login)实现登录。
+6. 仅支持企业开发者使用一键登录，个人开发者请使用[华为账号登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-button)或[静默登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-silent-login)实现登录。
 
 ## 用户体验设计
 
@@ -48,7 +48,7 @@ format: md
 
 ![](./img/92a9e667.png)
 
-一键登录按钮的用户体验和UX设计需符合[【华为账号一键登录】按钮](https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344#section41792374210)规范，用户体验设计图2中的华为标志按钮可参考[华为账号登录视觉规范](https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344#section61791745172816)中的样式三。不符合规范的UX设计可能会对应用上架和用户体验带来影响。一键登录按钮的样式设计具体可以参考[华为账号登录按钮类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#style)。
+一键登录按钮的用户体验和UX设计需符合[【华为账号一键登录】按钮](/docs/design/system-features/capabilities/huawei-id#section41792374210)规范，用户体验设计图2中的华为标志按钮可参考[华为账号登录视觉规范](/docs/design/system-features/capabilities/huawei-id#section61791745172816)中的样式三。不符合规范的UX设计可能会对应用上架和用户体验带来影响。一键登录按钮的样式设计具体可以参考[华为账号登录按钮类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#style)。
 
 ## 用户场景设计
 
@@ -58,7 +58,7 @@ format: md
 
 ![](./img/d9695a82.png)
 
-**将UnionID/OpenID和手机号同时与应用账号建立关联，可以为用户带来更多便利的功能。如：实现[静默登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-silent-login)、[获取华为账号用户信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-user-info-overview)、[获取华为账号风险等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-byquicklogin)等。实现免用户操作登录，获得安全快捷的应用登录体验。**
+**将UnionID/OpenID和手机号同时与应用账号建立关联，可以为用户带来更多便利的功能。如：实现[静默登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-silent-login)、[获取华为账号用户信息](/docs/dev/app-dev/application-services/account-get-user-info-overview)、[获取华为账号风险等级](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-risklevel/account-get-risklevel-byquicklogin)等。实现免用户操作登录，获得安全快捷的应用登录体验。**
 
 ## 业务流程
 
@@ -82,7 +82,7 @@ format: md
    2. 若华为账号未登录，调用[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)授权请求会返回[1001502001 用户未登录华为账号](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-error-code#section1001502001-用户未登录华为账号)错误码，此时应用需要展示其他登录方式进行应用登录。
 2. 展示一键登录页面阶段（序号5）：
 
-   1. 获取到的匿名手机号需要展示在页面上并设置好隐私协议，设置登录按钮类型为LoginType.QUICK\_LOGIN，展示包含[LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button#loginwithhuaweiidbutton)组件的一键登录页面。应用可结合实际登录风控场景，通过组件参数传入风险等级标识[获取华为账号风险等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-byquicklogin)，通过华为账号一键登录获取用户风险等级，对恶意账号进行风控，提升应用的安全等级。
+   1. 获取到的匿名手机号需要展示在页面上并设置好隐私协议，设置登录按钮类型为LoginType.QUICK\_LOGIN，展示包含[LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button#loginwithhuaweiidbutton)组件的一键登录页面。应用可结合实际登录风控场景，通过组件参数传入风险等级标识[获取华为账号风险等级](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-risklevel/account-get-risklevel-byquicklogin)，通过华为账号一键登录获取用户风险等级，对恶意账号进行风控，提升应用的安全等级。
 3. 点击一键登录关联用户账号阶段（序号6-16）：
 
    1. 用户同意协议后，点击华为账号一键登录按钮，应用可以通过[HuaweiIDCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#huaweiidcredential)获取到Authorization Code等数据。
@@ -124,12 +124,12 @@ format: md
 
 ## 开发前提
 
-1. 在进行代码开发前，请先确认已完成[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions)工作。
+1. 在进行代码开发前，请先确认已完成[开发准备](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-config-permissions)工作。
 
-   若未配置签名和指纹，将报错[1001500001 应用指纹证书校验失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-1)。
+   若未配置签名和指纹，将报错[1001500001 应用指纹证书校验失败](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-1)。
 
-   若未申请“华为账号一键登录”权限，将报错[1001502014 应用未申请scopes或permissions权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-2)。
-2. 若应用开启了[代码混淆](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide)，应用工程代码中获取到的quickLoginAnonymousPhone（匿名手机号）属性需要配置混淆白名单防止编译release包时被混淆，否则无法获取到匿名手机号。在调用获取匿名手机号方法工程模块的混淆文件obfuscation-rules.txt中添加：
+   若未申请“华为账号一键登录”权限，将报错[1001502014 应用未申请scopes或permissions权限](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-2)。
+2. 若应用开启了[代码混淆](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide)，应用工程代码中获取到的quickLoginAnonymousPhone（匿名手机号）属性需要配置混淆白名单防止编译release包时被混淆，否则无法获取到匿名手机号。在调用获取匿名手机号方法工程模块的混淆文件obfuscation-rules.txt中添加：
 
    ```
    # 开发者开启属性混淆需要配置quickLoginAnonymousPhone属性白名单防止其被混淆
@@ -140,7 +140,7 @@ format: md
 
 ## 客户端开发
 
-开发者可参考下述内容自行开发，也可使用Account Kit为常见的三方开发框架（Flutter、H5、React-Native、uni-app）提供的SampleCode示例工程，用于接入华为账号一键登录能力，具体可参考[三方开发框架接入华为账号一键登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-18)进行开发。
+开发者可参考下述内容自行开发，也可使用Account Kit为常见的三方开发框架（Flutter、H5、React-Native、uni-app）提供的SampleCode示例工程，用于接入华为账号一键登录能力，具体可参考[三方开发框架接入华为账号一键登录](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-18)进行开发。
 
 ### 用户首次登录应用
 
@@ -173,15 +173,15 @@ format: md
    | 1001502001 | 用户未登录华为账号 | 应用展示其他登录方式 |
    | 1001502005 | 网络异常 | 提示用户检查当前网络状态后重试 |
    | 1001502009 | 内部错误 | 应用展示其他登录方式 |
-   | 1001502014 | 应用未申请scopes或permissions权限 | 请参考[1001502014 应用未申请scopes或permissions权限的可能原因和解决方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-2)解决该报错 |
-   | 1001500001 | 应用指纹证书校验失败 | 请参考[1001500001 应用指纹证书校验失败的可能原因和解决办法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-1)解决该报错 |
+   | 1001502014 | 应用未申请scopes或permissions权限 | 请参考[1001502014 应用未申请scopes或permissions权限的可能原因和解决方法](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-2)解决该报错 |
+   | 1001500001 | 应用指纹证书校验失败 | 请参考[1001500001 应用指纹证书校验失败的可能原因和解决办法](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-1)解决该报错 |
    | 1001500002 | 重复请求 | 重复请求，应用无需处理 |
-   | 1001500003 | 不支持该scopes或permissions | 1、华为账号用户注册地可能为中国境外、香港特别行政区、澳门特别行政区或中国台湾，应用展示其他登录方式  2、仅在5.1.1(19)支持TV设备，其他版本应用可以通过[华为账号登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-button)进行登录 |
+   | 1001500003 | 不支持该scopes或permissions | 1、华为账号用户注册地可能为中国境外、香港特别行政区、澳门特别行政区或中国台湾，应用展示其他登录方式  2、仅在5.1.1(19)支持TV设备，其他版本应用可以通过[华为账号登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-button)进行登录 |
    | 12300001 | 系统服务异常 | 应用展示其他登录方式 |
 
    2）获取到的匿名手机号为空，说明华为账号没有绑定手机号、权限未申请或未生效，上述异常场景应用需要展示其他登录方式。
 
-   3）若开发者开启了[代码混淆](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide)，需将quickLoginAnonymousPhone（匿名手机号）属性加入混淆白名单，防止其被混淆。
+   3）若开发者开启了[代码混淆](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide)，需将quickLoginAnonymousPhone（匿名手机号）属性加入混淆白名单，防止其被混淆。
 
    ```
      getQuickLoginAnonymousPhone() {
@@ -977,7 +977,7 @@ format: md
 * 准备：
 
 1. 请先完成应用客户端一键登录的相关开发，相关开发指导参考[客户端开发](#客户端开发)；
-2. 参考[使用fetch发送网络请求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netsend-arkts#如何使用fetch发起网络请求)完成客户端到服务端的接口请求，开发步骤如下；
+2. 参考[使用fetch发送网络请求](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netsend-arkts#如何使用fetch发起网络请求)完成客户端到服务端的接口请求，开发步骤如下；
 
    1. 在应用客户端调用应用服务端提供的接口，将Authorization Code传输给应用的服务端；
 
@@ -1564,7 +1564,7 @@ format: md
 
 | 标准编号 | 标准项名称 | 类型 | 标准详细描述 |
 | --- | --- | --- | --- |
-| 1 | 满足华为账号提供登录设计规范 | 规则 | 需满足[华为账号开放登录](https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344)中 **[【华为账号一键登录】按钮](https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344#section41792374210)** 规范，保障HarmonyOS应用拥有简单易用、高效一致、快速安全的登录体验； |
+| 1 | 满足华为账号提供登录设计规范 | 规则 | 需满足[华为账号开放登录](/docs/design/system-features/capabilities/huawei-id)中 **[【华为账号一键登录】按钮](/docs/design/system-features/capabilities/huawei-id#section41792374210)** 规范，保障HarmonyOS应用拥有简单易用、高效一致、快速安全的登录体验； |
 | 2 | 用户交互体验原则 | 建议 | （1）登录页面的用户协议与隐私协议、华为账号用户认证协议可展示、可点击；  （2）当用户点击协议后，回退页面，须回到点击前的页面；  （3）只有用户勾选并同意所有协议后，才可继续进行登录操作，若用户未勾选协议时直接点击华为账号登录按钮，须有明确的同意协议提醒；  （4）点击登录按钮须直接完成登录流程，可出现头像、昵称授权页，但取消场景须不影响登录流程；若出现处理异常，须及时终止页面，不应出现应用卡死无法操作； |
 | 3 | 登录页面内容用户体验原则 | 建议 | （1）若未提供其他登录方式，不应显示“其他登录方式”的入口；  （2）若使用华为账号一键登录，页面匿名手机号须展示从华为账号侧获取的匿名手机号，不应展示其他来源的手机号；  （3）用户协议中，必须包含[《华为账号用户认证协议》](https://privacy.consumer.huawei.com/legal/id/authentication-terms.htm?code=CN&language=zh-CN)，且协议必须可点击、可加载，加载后支持回退页面，且回到点击前的页面； |
 | 4 | 异常处理用户体验原则 | 建议 | 登录页面需进行异常处理保证：  （1）若登录异常（如网络异常、海外账号不支持等情况），勿将错误码等原始信息直接透传给用户；  （2）若登录时触发了华为侧的短信验证码校验，则在校验成功之后，应用不应再展示额外的验证码验证页面； |

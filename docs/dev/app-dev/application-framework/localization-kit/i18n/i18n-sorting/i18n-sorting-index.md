@@ -1,6 +1,6 @@
 ---
 title: "创建索引"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-sorting-index
+original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-sorting/i18n-sorting-index
 format: md
 ---
 

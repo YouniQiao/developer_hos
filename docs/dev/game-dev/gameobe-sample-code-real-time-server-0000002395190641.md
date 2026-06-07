@@ -1,6 +1,6 @@
 ---
 title: "使用示例"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sample-code-real-time-server-0000002395190641
+original_url: /docs/dev/game-dev/gameobe-sample-code-real-time-server-0000002395190641
 format: md
 ---
 

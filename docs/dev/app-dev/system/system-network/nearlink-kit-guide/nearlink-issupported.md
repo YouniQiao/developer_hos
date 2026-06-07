@@ -1,6 +1,6 @@
 ---
 title: "查询是否支持星闪"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-issupported
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-issupported
 format: md
 ---
 

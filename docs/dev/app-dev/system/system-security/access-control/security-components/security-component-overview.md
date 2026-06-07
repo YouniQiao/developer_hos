@@ -1,6 +1,6 @@
 ---
 title: "安全控件概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-component-overview
+original_url: /docs/dev/app-dev/system/system-security/access-control/security-components/security-component-overview
 format: md
 ---
 
@@ -19,12 +19,12 @@ format: md
 
 目前系统提供两类安全控件：
 
-* [粘贴控件（PasteButton）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)
+* [粘贴控件（PasteButton）](/docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton)
 
   该控件对应剪贴板读取特权。应用集成粘贴控件后，用户点击该控件，应用读取剪贴板数据时不会弹窗提示，进入后台10秒后应用权限被回收。
 
   建议使用场景：粘贴控件可以用于任何应用需要读取剪贴板的场景，避免弹窗提示对用户造成干扰。
-* [保存控件（SaveButton）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/savebutton)
+* [保存控件（SaveButton）](/docs/dev/app-dev/system/system-security/access-control/security-components/savebutton)
 
   该控件对应媒体库写入特权。应用集成保存控件后，用户首次使用保存控件展示弹窗，在点击允许后自动授权，应用会在短时间内获取访问媒体库特权接口的授权。后续使用无需弹窗授权。在API version 19及之前的版本中，授权持续时间为10秒；在API version 20及之后的版本中，授权持续时间为1分钟。
 

@@ -1,6 +1,6 @@
 ---
 title: "接入报点预测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-point-prediction-c
+original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-point-prediction
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 
 ## 接入步骤
 
-报点预测功能的历史点，通常需要在自定义渲染（XComponent）上注册触摸事件回调获得，请参考[自定义渲染开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-xcomponent-guidelines)，获得历史触摸点。
+报点预测功能的历史点，通常需要在自定义渲染（XComponent）上注册触摸事件回调获得，请参考[自定义渲染开发指南](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/napi-xcomponent-guidelines)，获得历史触摸点。
 
 ### 在CMake脚本中链接动态库
 

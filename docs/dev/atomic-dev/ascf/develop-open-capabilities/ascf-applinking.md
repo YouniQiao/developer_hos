@@ -1,15 +1,15 @@
 ---
 title: "获取元服务链接"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-applinking
+original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/ascf-applinking
 format: md
 ---
 
 
-可以使用AppLinking生成短链，通过短链生成二维码，然后扫码打开元服务并进入指定页面，详细配置请参考：[使用App Linking跳转到元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking)。
+可以使用AppLinking生成短链，通过短链生成二维码，然后扫码打开元服务并进入指定页面，详细配置请参考：[使用App Linking跳转到元服务](/docs/dev/atomic-dev/atomic-linking/atomic-applinking)。
 
 ![](./img/6813550c.png)
 
-在AGC上创建元服务链接，使用[自定义参数跳转指定页面](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking#section125451919568)时，请在**自定义参数**中填入**经过URL编码**之后的key-value对。
+在AGC上创建元服务链接，使用[自定义参数跳转指定页面](/docs/dev/atomic-dev/atomic-linking/atomic-applinking#section125451919568)时，请在**自定义参数**中填入**经过URL编码**之后的key-value对。
 
 如下方法：
 

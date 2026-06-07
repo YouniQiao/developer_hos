@@ -1,6 +1,6 @@
 ---
 title: "生成元服务图标"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-icon-generation
+original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-icon-generation
 format: md
 ---
 
@@ -21,7 +21,7 @@ DevEco Studio 5.0.3.800及以上版本支持使用元服务图标生成能力。
    * 图标格式：.png、.jpeg、.jpg格式的静态图片资源；
    * 图标尺寸：1024 x 1024 px （正方形）；
    * 图标背景：不透明；
-   * 质量要求：图标内容需清晰可辨，避免存在模糊、锯齿、拉伸等问题。详见[元服务图标设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900384976)。
+   * 质量要求：图标内容需清晰可辨，避免存在模糊、锯齿、拉伸等问题。详见[元服务图标设计规范](/docs/design/atomic-service-design/basic-elements/basic-info)。
 3. 在预览界面可以配置图标颜色、名称、保存路径等。
    * **Color**：推荐使用的图标颜色。选择不同颜色，右边图标预览区域可查看相应的效果。
    * **Name**：生成的图标名称。

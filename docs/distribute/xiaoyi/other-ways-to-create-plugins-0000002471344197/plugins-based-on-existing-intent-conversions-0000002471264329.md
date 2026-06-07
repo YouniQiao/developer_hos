@@ -1,7 +1,7 @@
 ---
 title: "基于已有意图转换创建插件"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/plugins-based-on-existing-intent-conversions-0000002471264329
+original_url: /docs/distribute/xiaoyi/other-ways-to-create-plugins-0000002471344197/plugins-based-on-existing-intent-conversions-0000002471264329
 format: md
 ---
 

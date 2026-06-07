@@ -1,6 +1,6 @@
 ---
 title: "HarmonyOS 5.0及以上"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-record-play-audio-msg-harmonyos-0000002304632336
+original_url: /docs/dev/game-dev/games-gamemme-record-play-audio-msg-harmonyos-0000002304632336
 format: md
 ---
 
@@ -11,8 +11,8 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体基础SDK和语音消息模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_li16904125719267)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
+* 您已[集成游戏多媒体基础SDK和语音消息模块](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_li16904125719267)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
 
 ## 录制语音消息
 
@@ -23,7 +23,7 @@ format: md
    ![](./img/d25b6ac6.png)
 
    * 文件路径自行指定，音频文件仅支持.m4a格式。
-   * context为UIAbilityContext，获取方式请参见[应用上下文Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage)。
+   * context为UIAbilityContext，获取方式请参见[应用上下文Context](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage)。
 
    ```
    let filePath = context.cacheDir + "/xxx.m4a";
@@ -92,7 +92,7 @@ format: md
 
 ## 发送语音消息
 
-语音消息文件上传完成后，会生成一个语音消息文件ID，可通过IM通道发送文件ID给其他玩家来发送语音消息。游戏多媒体SDK的实时信令功能提供了消息发送通道，语音消息也可以通过该通道完成文件ID传递，具体实现请参见[实时信令](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rtm-harmonyos-0000002393227033)。
+语音消息文件上传完成后，会生成一个语音消息文件ID，可通过IM通道发送文件ID给其他玩家来发送语音消息。游戏多媒体SDK的实时信令功能提供了消息发送通道，语音消息也可以通过该通道完成文件ID传递，具体实现请参见[实时信令](/docs/dev/game-dev/games-gamemme-rtm-harmonyos-0000002393227033)。
 
 ## 播放语音消息
 

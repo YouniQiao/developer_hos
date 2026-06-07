@@ -1,6 +1,6 @@
 ---
 title: "Account Appendix"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-appendix
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-appendix
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

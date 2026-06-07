@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Windows电脑上启动模拟器，提示可申请内存不足"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-39
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-39
 ---
 
 

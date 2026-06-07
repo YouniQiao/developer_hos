@@ -1,7 +1,7 @@
 ---
 title: "添加和删除模块"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-add-new-module
+original_url: /docs/tools/coding-debug/ide-add-new-module
 ---
 
 

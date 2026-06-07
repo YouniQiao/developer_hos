@@ -1,6 +1,6 @@
 ---
 title: "意图开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-definition
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-definition
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
 当应用功能符合系统预定义的标准意图时（例如播放音乐、导航等），开发者可直接接入标准意图，避免重复定义规范。
 
-当前发布的标准意图规范参见[附录：标准意图接入规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-access-specifications)。
+当前发布的标准意图规范参见[附录：标准意图接入规范](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-access-specifications)。
 
 每个意图均包含如下几个要素。
 

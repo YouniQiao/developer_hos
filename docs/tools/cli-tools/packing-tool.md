@@ -1,7 +1,7 @@
 ---
 title: "打包工具"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/packing-tool
+original_url: /docs/tools/cli-tools/packing-tool
 format: md
 ---
 

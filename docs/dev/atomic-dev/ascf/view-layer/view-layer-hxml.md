@@ -1,6 +1,6 @@
 ---
 title: "hxml"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/view-layer-hxml
+original_url: /docs/dev/atomic-dev/ascf/view-layer/view-layer-hxml
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "创建门店"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-create
+original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-create
 format: md
 ---
 
@@ -44,8 +44,8 @@ format: md
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | Content-Type | 是 | String | 取值为：application/json;charset=UTF-8。 |
-| Authorization | 是 | String | 通过[接口访问凭证](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-access-credentials)获取的鉴权令牌。  Bearer后面拼接空格，再拼接获取的鉴权信息。 |
-| client\_id | 否 | String | 服务商接入场景必传。  API客户端ID。  创建第三方平台成功后系统自动分配的客户端ID，可在第三方管理平台“开发管理资料 \&gt; 开发配置 \&gt; 开发资料设置”页面中获取，详情请参见[接口访问凭证](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-access-credentials)。 |
+| Authorization | 是 | String | 通过[接口访问凭证](/docs/dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials)获取的鉴权令牌。  Bearer后面拼接空格，再拼接获取的鉴权信息。 |
+| client\_id | 否 | String | 服务商接入场景必传。  API客户端ID。  创建第三方平台成功后系统自动分配的客户端ID，可在第三方管理平台“开发管理资料 \&gt; 开发配置 \&gt; 开发资料设置”页面中获取，详情请参见[接口访问凭证](/docs/dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials)。 |
 | appId | 是 | String(64) | 在创建应用后，由华为开发者联盟为应用分配的唯一标识。参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)中的应用&gt;APP ID。 |
 | x-traceid | 否 | String(100) | 请求链路追踪ID，用于标识一次完整的调用链路，便于进行日志追踪和问题定位。 |
 
@@ -55,7 +55,7 @@ format: md
 | --- | --- | --- | --- |
 | venueName | 是 | String(100) | 门店名称。 |
 | venueCode | 否 | String(64) | 商家侧唯一门店编码。  可用于生成门店直达链接（后续支持根据该字段动态渲染跳转链接）。 |
-| categoryCode | 是 | String(32) | 类目编码。参见[元服务标签](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-apptype-0000002271160689#section06007445916)中标签ID。 |
+| categoryCode | 是 | String(32) | 类目编码。参见[元服务标签](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-apptype-0000002271160689#section06007445916)中标签ID。 |
 | latitude | 是 | Double | 采用GCJ02坐标系，填写经度信息。  样例：31.97749。 |
 | longitude | 是 | Double | 采用GCJ02坐标系，填写纬度信息。  样例：118.76421 |
 | detailedAddress | 是 | String(200) | 详细地址。  样例：软件大道109号雨花客厅E-PARK购物中心9号楼1层12号。 |
@@ -94,7 +94,7 @@ format: md
 
 | **参数** | 是否必选 | **参数类型** | 描述 |
 | --- | --- | --- | --- |
-| appLinking | 否 | String(1024) | 门店直达appLinking跳转链接  [通过App Linking应用链接拉起指定应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp) |
+| appLinking | 否 | String(1024) | 门店直达appLinking跳转链接  [通过App Linking应用链接拉起指定应用](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp) |
 | deepLink | 否 | String(1024) | 门店直达deepLink跳转链接 |
 | minVersionCode | 否 | Integer | 链接可支持的应用最小版本号  如果您配置的直达链接需要依赖已正式发布的应用版本，请提供对应应用的最小版本号。  版本号可在[APP与元服务](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp)中选择对应应用，进入软件包管理，查看依赖应用版本号。 |
 

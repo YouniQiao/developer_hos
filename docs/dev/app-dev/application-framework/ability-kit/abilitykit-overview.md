@@ -1,6 +1,6 @@
 ---
 title: "Ability Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitykit-overview
+original_url: /docs/dev/app-dev/application-framework/ability-kit/abilitykit-overview
 format: md
 ---
 
@@ -9,23 +9,23 @@ Ability Kit（程序框架服务）提供了应用程序开发和运行的应用
 
 ## 使用场景
 
-* 应用的多Module开发：应用可通过不同类型的Module（[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)、[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)、[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)）来实现应用的功能开发。其中，HAP用于实现应用的功能和特性，HAR与HSP用于实现代码和资源的共享。
-* 应用内的交互：应用内的不同组件之间可以相互跳转。比如，在移动办公应用中，通过入口UIAbility组件启动视频会议的UIAbility组件。详见[启动应用内的UIAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction)。
-* 应用间的交互：当前应用可以启动其他应用，来完成某个任务或操作。比如，在购物类应用中购买商品时，可以跳转到支付应用完成支付。详见[应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/link-between-apps-overview)。
-* 应用的跨设备流转：通过应用的跨端迁移和多端协同，获得更好的使用体验。比如，在平板上播放的视频，迁移到智慧屏继续播放。详见[自由流转](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-hopping)。
+* 应用的多Module开发：应用可通过不同类型的Module（[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)、[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)、[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)）来实现应用的功能开发。其中，HAP用于实现应用的功能和特性，HAR与HSP用于实现代码和资源的共享。
+* 应用内的交互：应用内的不同组件之间可以相互跳转。比如，在移动办公应用中，通过入口UIAbility组件启动视频会议的UIAbility组件。详见[启动应用内的UIAbility组件](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-intra-device-interaction)。
+* 应用间的交互：当前应用可以启动其他应用，来完成某个任务或操作。比如，在购物类应用中购买商品时，可以跳转到支付应用完成支付。详见[应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/link-between-apps-overview)。
+* 应用的跨设备流转：通过应用的跨端迁移和多端协同，获得更好的使用体验。比如，在平板上播放的视频，迁移到智慧屏继续播放。详见[自由流转](/docs/dev/app-dev/multi-device/bpta-hopping)。
 
 ## 能力范围
 
 * 提供应用进程创建和销毁、应用生命周期调度能力。
 * 提供应用组件运行入口、应用组件生命周期调度、组件间交互等能力。
 * 提供应用上下文环境、系统环境变化监听、组件生命周期监听等能力。
-* 提供启动框架能力，详见[启动框架](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup)。
-* 提供意图框架能力，详见[意图框架概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-overview)。
+* 提供启动框架能力，详见[启动框架](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/app-startup)。
+* 提供意图框架能力，详见[意图框架概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-overview)。
 * 提供应用流转能力。
-* 提供多包机制、共享包、应用信息配置等能力，详见[应用程序包概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-overview)。
-* 提供应用快捷方式能力，详见[快捷方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/typical-scenario-configuration)。
-* 提供程序访问控制能力，详见[访问控制概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-token-overview)。
-* 提供安全密码自动填充能力，详见[密码自动填充服务概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-overview)。
+* 提供多包机制、共享包、应用信息配置等能力，详见[应用程序包概述](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-overview)。
+* 提供应用快捷方式能力，详见[快捷方式](/docs/dev/app-dev/getting-started/dev-fundamentals/typical-scenario-configuration)。
+* 提供程序访问控制能力，详见[访问控制概述](/docs/dev/app-dev/system/system-security/access-control/access-token-overview)。
+* 提供安全密码自动填充能力，详见[密码自动填充服务概述](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-overview)。
 
 ## 亮点/特征
 
@@ -37,7 +37,7 @@ Ability Kit（程序框架服务）提供了应用程序开发和运行的应用
    * 从UI到业务逻辑层：通过捕获用户在UI交互中的输入后，通过事件回调或状态绑定机制，将用户行为产生的数据反向同步至Ability框架。
 2. **支持应用组件级的跨端迁移和多端协同**
 
-   [Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#stage模型)实现了应用组件与UI解耦。
+   [Stage模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#stage模型)实现了应用组件与UI解耦。
 
    * 在跨端迁移场景下，系统在多设备的应用组件之间迁移数据/状态后，UI便可利用ArkUI的声明式特点，通过应用组件中保存的数据/状态恢复用户界面，便捷实现跨端迁移。
    * 在多端协同场景下，应用组件具备组件间通信的RPC调用能力，天然支持跨设备应用组件的交互。

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用评论服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-comment
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/appgallery-comment
 format: md
 ---
 

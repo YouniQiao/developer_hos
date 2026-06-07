@@ -1,7 +1,7 @@
 ---
 format: md
 title: "为什么接入播控后，播控中心部分按钮是灰色的，不可点击"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-3
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-3
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[注册控制命令](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#注册控制命令)
+[注册控制命令](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#注册控制命令)

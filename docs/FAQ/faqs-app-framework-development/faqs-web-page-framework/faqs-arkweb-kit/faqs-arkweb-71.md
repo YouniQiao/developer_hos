@@ -1,6 +1,6 @@
 ---
 title: "如何适配网页内播放器全屏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-71
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-71
 format: md
 ---
 

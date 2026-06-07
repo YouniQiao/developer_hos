@@ -1,13 +1,13 @@
 ---
 title: "受限开放权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions
 format: md
 ---
 
 
 ## 申请方式
 
-当前仅少量符合特殊场景的应用可在通过审批后，使用受限权限，其申请方式请参考：[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+当前仅少量符合特殊场景的应用可在通过审批后，使用受限权限，其申请方式请参考：[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。
 
 ![](./img/baf7b8e0.png)
 
@@ -27,7 +27,7 @@ format: md
 
 应用基于悬浮窗提供的窗口界面，必须向用户提供退出窗口的方式。
 
-**其他场景下的使用方案：** 在其他设备或场景下，使用“画中画”功能，使用方式请参考：[画中画开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-pipwindow)。
+**其他场景下的使用方案：** 在其他设备或场景下，使用“画中画”功能，使用方式请参考：[画中画开发指导](/docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow)。
 
 **申请后AGC的审核时长：** 预计3个工作日内反馈审核结果。
 
@@ -50,7 +50,7 @@ format: md
 1. 应用需要批量读取本机通讯录数据，并同步到云端服务器。
 2. 应用需要批量读取通讯录数据，在设备间进行同步或者克隆操作。
 
-**其他场景下的使用方案：** 使用“联系人Picker”访问联系人数据，使用方式请参考：[使用Picker选择联系人](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-intro#使用picker选择联系人)。
+**其他场景下的使用方案：** 使用“联系人Picker”访问联系人数据，使用方式请参考：[使用Picker选择联系人](/docs/dev/app-dev/application-services/contacts-kit/contacts-intro#使用picker选择联系人)。
 
 **申请后AGC的审核时长：** 预计3个工作日内反馈审核结果。
 
@@ -96,7 +96,7 @@ format: md
 1. 应用需要批量读取公共目录下的音频文件，并同步到云端服务器。
 2. 应用需要批量读取公共目录下的音频文件，在设备间进行同步或者克隆操作。
 
-**其他场景下的使用方案：** 使用“AudioPicker”访问用户音频文件，使用方式请参考：[选择音频类文件（FilePicker）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file#选择音频类文件)。
+**其他场景下的使用方案：** 使用“AudioPicker”访问用户音频文件，使用方式请参考：[选择音频类文件（FilePicker）](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file#选择音频类文件)。
 
 **申请后AGC的审核时长：** 预计3个工作日内反馈审核结果。
 
@@ -119,7 +119,7 @@ format: md
 1. 应用需要把从云端服务器读取的音频文件批量保存到本地公共目录。
 2. 应用需要把从其他设备同步过来的音频文件批量保存到本地公共目录。
 
-**其他场景下的使用方案：** 使用“AudioPicker”保存用户音频文件，使用方式请参考：[保存音频类文件（FilePicker）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file#保存音频类文件)。
+**其他场景下的使用方案：** 使用“AudioPicker”保存用户音频文件，使用方式请参考：[保存音频类文件（FilePicker）](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file#保存音频类文件)。
 
 **申请后AGC的审核时长：** 预计3个工作日内反馈审核结果。
 
@@ -142,7 +142,7 @@ format: md
 1. 应用需要批量读取媒体库的文件（图片、视频），并同步到云端服务器。
 2. 应用需要批量读取媒体库的文件（图片、视频），在设备间进行同步或者克隆操作。
 
-**其他场景下的使用方案：** 使用“PhotoViewPicker”访问用户图片或视频，使用方式请参考：[使用Picker选择媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker)。
+**其他场景下的使用方案：** 使用“PhotoViewPicker”访问用户图片或视频，使用方式请参考：[使用Picker选择媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker)。
 
 针对以下场景，开发者无需申请权限或应使用picker实现，请勿申请权限：
 
@@ -169,7 +169,7 @@ format: md
 
 **申请后AGC的审核时长：** 申请后立即通过。
 
-**无需权限的建议方案：** 使用安全控件或授权弹窗的方式，将用户指定的媒体资源保存到图库中，使用方式请参考：[保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
+**无需权限的建议方案：** 使用安全控件或授权弹窗的方式，将用户指定的媒体资源保存到图库中，使用方式请参考：[保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
 
 **权限级别**：system\_basic
 
@@ -256,7 +256,7 @@ format: md
 3. 作为典型的文档编辑类应用，需在手机上使用该应用进行文档编辑操作。
 4. 作为系统级输入法应用，需要读取剪切板上数据（如验证码），实现自动填充功能。
 
-**其他场景下的使用方案：** 使用“粘贴控件”读取剪贴板数据，使用方式请参考：[使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)。
+**其他场景下的使用方案：** 使用“粘贴控件”读取剪贴板数据，使用方式请参考：[使用粘贴控件](/docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton)。
 
 **申请后AGC的审核时长：** 预计3个工作日内反馈审核结果。
 
@@ -272,7 +272,7 @@ format: md
 
 ![](./img/e8fff750.png)
 
-在API 12及以上版本，该权限等级变更为normal，应用可直接[声明使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)；若需兼容API12之前版本，仍需按[受限权限申请方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)使用该权限。
+在API 12及以上版本，该权限等级变更为normal，应用可直接[声明使用](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)；若需兼容API12之前版本，仍需按[受限权限申请方式](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)使用该权限。
 
 **申请后AGC的审核时长：** 申请后立即通过。
 
@@ -333,7 +333,7 @@ format: md
 * 应用无法使用安全保存控件，例如H5网页应用等。
 * 存在连续多次保存图片/视频的场景，无法使用保存确认弹框，一次保存多个图片/视频。
 
-**其他场景下的使用方案：** 使用安全控件或授权弹窗的方式，将用户指定的媒体资源保存到图库中，使用方式请参考：[保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
+**其他场景下的使用方案：** 使用安全控件或授权弹窗的方式，将用户指定的媒体资源保存到图库中，使用方式请参考：[保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
 
 **申请后AGC的审核时长：** 预计3个工作日内反馈审核结果。
 
@@ -760,7 +760,7 @@ format: md
 
 **授权方式**：系统授权（system\_grant）
 
-**携带额外数据**：是，配置方法请见[Driver Development Kit开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/externaldevice-guidelines#应用签名)。
+**携带额外数据**：是，配置方法请见[Driver Development Kit开发指导](/docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/externaldevice-guidelines#应用签名)。
 
 **起始版本**：18
 

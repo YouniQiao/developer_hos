@@ -1,7 +1,7 @@
 ---
 title: 设计概述
 sidebar_label: 设计概述
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/concept-0000002353669657
+original_url: /docs/design/multi-device-design/2in1/concept
 format: md
 ---
 
@@ -24,15 +24,15 @@ format: md
 
 ## 保证基础体验
 
-在应用/服务设计中需要遵守一些基础体验要求，如果不满足这些基础要求，则会极大损害用户的使用体验。例如，如果界面元素的响应热区太小会导致用户很难操作成功，从而无法完成要操作的任务。具体要求请参阅[应用 UX 体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001760867048)。
+在应用/服务设计中需要遵守一些基础体验要求，如果不满足这些基础要求，则会极大损害用户的使用体验。例如，如果界面元素的响应热区太小会导致用户很难操作成功，从而无法完成要操作的任务。具体要求请参阅[应用 UX 体验标准](/docs/design/ux-standards/overview)。
 
 ## 设计应用和服务体验
 
 * **使用系统控件：**利用系统提供的菜单、标题栏、弹出框等标准控件，在保证良好基础体验的同时，减少设计和开发的工作量。必要时自定义控件的样式和大小以体现自己的品牌特征。
 * **使用合适的应用架构：**根据业务的特点采用合适的架构。例如，内容类应用通常采用侧边页签的应用架构，以达到快速在不同类别的内容间切换的作用；效率类应用通常采用二分栏以及三分栏的应用架构，以达到快速高效浏览的作用。
-* **考虑更多内容合理布局：**考虑充分利用电脑屏幕大尺寸的优势，利用响应式布局实时响应尺寸变化，确保以最佳的布局来显示内容。关于应用布局的更多详细指导，请参阅[应用布局](https://developer.huawei.com/consumer/cn/doc/design-guides/app-design-0000002353509845#section195431623181117)。
+* **考虑更多内容合理布局：**考虑充分利用电脑屏幕大尺寸的优势，利用响应式布局实时响应尺寸变化，确保以最佳的布局来显示内容。关于应用布局的更多详细指导，请参阅[应用布局](/docs/design/multi-device-design/2in1/app-design#section195431623181117)。
 * **考虑多任务交互：**利用大屏幕的优势来同时完成多种任务，并且结合窗口来聚焦当前任务，提高生产力效率。
-* **支持更多交互方式：**在合适的场景下，电脑可以连接一些配件来提升交互的效率，带来更好的体验。例如键盘、鼠标。关于电脑支持的交互方式，请参阅[人机交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-overview-0000001795410269)。
+* **支持更多交互方式：**在合适的场景下，电脑可以连接一些配件来提升交互的效率，带来更好的体验。例如键盘、鼠标。关于电脑支持的交互方式，请参阅[人机交互](/docs/design/hmi/overview)。
 
 ## 兼顾多设备形态体验
 
@@ -45,7 +45,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250807135825.61944931096198731497126751665353:50001231000000:2800:CE5E12180BF17577BC325F304A9D5354A8890CA5415461619D7D158319889C0A.png "点击放大")
 
-更多折叠电脑的适配介绍，请参阅[折叠电脑](https://developer.huawei.com/consumer/cn/doc/design-guides/foldable-pc-0000002322600098)。
+更多折叠电脑的适配介绍，请参阅[折叠电脑](/docs/design/multi-device-design/2in1/foldable-pc)。
 
 ## 支持系统特性
 
@@ -53,13 +53,13 @@ format: md
 
 ### 系统特性
 
-* [通知](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217)
-* [深色模式](https://developer.huawei.com/consumer/cn/doc/design-guides/dark-mode-0000001823255497)
-* [画中画](https://developer.huawei.com/consumer/cn/doc/design-guides/pip-0000001927422624)
-* [播控中心](https://developer.huawei.com/consumer/cn/doc/design-guides/broadcasting-control-0000001957017133)
+* [通知](/docs/design/system-features/features/notification)
+* [深色模式](/docs/design/system-features/features/dark-mode)
+* [画中画](/docs/design/system-features/features/pip)
+* [播控中心](/docs/design/system-features/features/broadcasting-control)
 
 ### 系统能力
 
-* [分享](https://developer.huawei.com/consumer/cn/doc/design-guides/share-0000001957076313)
-* [华为账号开放登录](https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344)
-* [预览](https://developer.huawei.com/consumer/cn/doc/design-guides/preview-0000001957112409)
+* [分享](/docs/design/system-features/capabilities/share)
+* [华为账号开放登录](/docs/design/system-features/capabilities/huawei-id)
+* [预览](/docs/design/system-features/capabilities/preview)

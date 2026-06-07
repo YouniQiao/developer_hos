@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "权限设置Button"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-permissiononsetting
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-permissiononsetting
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 ## 前提条件
 
 * 调用[requestPermissionsFromUser](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissionsfromuser9)接口，用户在首次权限设置弹框时拒绝授权。
-* 参见[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-preparations)。
+* 参见[开发准备](/docs/dev/app-dev/application-services/scenario-fusion-preparations)。
 
 ## 开发步骤
 

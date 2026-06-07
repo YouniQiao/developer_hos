@@ -1,6 +1,6 @@
 ---
 title: "设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-setting
+original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-setting
 format: md
 ---
 
@@ -27,7 +27,7 @@ has.openSetting(Object object)
 
 | 参数 | 类型 | 描述 |
 | --- | --- | --- |
-| authSetting | Object | 以键值对的形式返回[授权](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization)结果。例如：  &#123;  "scope.userLocation": true,  "scope.userFuzzyLocation": true,  "scope.camera": false,  "scope.record": false,  "scope.bluetooth": true,  "scope.addPhoneCalendar": false  &#125;  **起始版本：** 1.0.7 |
+| authSetting | Object | 以键值对的形式返回[授权](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization)结果。例如：  &#123;  "scope.userLocation": true,  "scope.userFuzzyLocation": true,  "scope.camera": false,  "scope.record": false,  "scope.bluetooth": true,  "scope.addPhoneCalendar": false  &#125;  **起始版本：** 1.0.7 |
 
 **示例：**
 
@@ -65,7 +65,7 @@ has.getSetting(Object object)
 
 | 参数 | 类型 | 描述 |
 | --- | --- | --- |
-| authSetting | Object | 以键值对的形式返回[授权](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization)结果。例如：  &#123;  "scope.userLocation": true,  "scope.userFuzzyLocation": true,  "scope.camera": false,  "scope.record": false,  "scope.bluetooth": true,  "scope.addPhoneCalendar": false  &#125; |
+| authSetting | Object | 以键值对的形式返回[授权](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization)结果。例如：  &#123;  "scope.userLocation": true,  "scope.userFuzzyLocation": true,  "scope.camera": false,  "scope.record": false,  "scope.bluetooth": true,  "scope.addPhoneCalendar": false  &#125; |
 
 **示例：**
 

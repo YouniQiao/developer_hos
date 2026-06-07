@@ -1,6 +1,6 @@
 ---
 title: "如何实现三键导航的监听与避让"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-491
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-491
 format: md
 ---
 
@@ -150,4 +150,4 @@ class NavigationButtonInfo {
 }
 ```
 
-导航条、状态栏、挖孔区沉浸式方案参考链接：[实现沉浸式效果](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive#section180431120426)。
+导航条、状态栏、挖孔区沉浸式方案参考链接：[实现沉浸式效果](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive#section180431120426)。

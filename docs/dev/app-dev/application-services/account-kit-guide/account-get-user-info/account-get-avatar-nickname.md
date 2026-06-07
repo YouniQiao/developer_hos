@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取头像昵称"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-avatar-nickname
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-avatar-nickname
 format: md
 ---
 
 
 ## 场景介绍
 
-当应用需要获取用户头像昵称信息，可使用Account Kit提供的头像昵称授权能力，用户允许应用获取头像昵称后，可快速完成个人信息填写。以下对Account Kit提供的头像昵称授权能力进行介绍。此外，开发者也可通过场景化控件中的[选择头像Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-chooseavatar)获取用户头像。
+当应用需要获取用户头像昵称信息，可使用Account Kit提供的头像昵称授权能力，用户允许应用获取头像昵称后，可快速完成个人信息填写。以下对Account Kit提供的头像昵称授权能力进行介绍。此外，开发者也可通过场景化控件中的[选择头像Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-chooseavatar)获取用户头像。
 
 **图1** 手机端获取头像昵称（请以实际效果为准）
 
@@ -51,11 +51,11 @@ format: md
 
 ## 开发前提
 
-在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)、[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。此场景无需申请账号权限。
+在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)、[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。此场景无需申请账号权限。
 
 ![](./img/2fda8197.png)
 
-若未正确配置公钥指纹，将报错[1001500001 应用指纹证书校验失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-1)。
+若未正确配置公钥指纹，将报错[1001500001 应用指纹证书校验失败](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-1)。
 
 ## 开发步骤
 

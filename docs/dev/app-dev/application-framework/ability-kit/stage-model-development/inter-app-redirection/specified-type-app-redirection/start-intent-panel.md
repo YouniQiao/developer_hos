@@ -1,6 +1,6 @@
 ---
 title: "拉起指定类型的应用概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-intent-panel
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-intent-panel
 format: md
 ---
 
@@ -30,7 +30,7 @@ format: md
 
 [UIAbilityContext.startAbilityByType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startabilitybytype11)和[UIExtensionContentSession.startAbilityByType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensioncontentsession#startabilitybytype11)接口支持基于业务类型拉起垂类应用选择框。调用方通过指定业务类型即可拉起对应的垂类应用选择框。选择框上将展示已接入的垂类应用。
 
-系统会根据调用方在startAbilityByType接口传入的type与wantParams.sceneType取值，按照如下映射关系，匹配到在module.json5配置文件中声明了对应[linkFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)的目标应用。
+系统会根据调用方在startAbilityByType接口传入的type与wantParams.sceneType取值，按照如下映射关系，匹配到在module.json5配置文件中声明了对应[linkFeature](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)的目标应用。
 
 | 支持的功能 | 调用方（startAbilityByType接口入参） | 目标方（配置文件linkFeature取值） |
 | --- | --- | --- |
@@ -46,8 +46,8 @@ format: md
 
 ## 通过mailto方式跳转电子邮件应用
 
-通过mailto电子邮件协议，可以创建指向电子邮件地址的超链接，方便用户通过网页或应用中的超链接直接跳转电子邮件应用。详见[拉起邮件类应用（mailto方式）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps-by-mailto)。
+通过mailto电子邮件协议，可以创建指向电子邮件地址的超链接，方便用户通过网页或应用中的超链接直接跳转电子邮件应用。详见[拉起邮件类应用（mailto方式）](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-email-apps-by-mailto)。
 
 ## 通过startAbility接口打开文件
 
-开发者可以通过调用startAbility接口，由系统从已安装的应用中寻找符合要求的应用，打开特定类型的文件。详见[拉起文件处理类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-processing-apps-startup)。
+开发者可以通过调用startAbility接口，由系统从已安装的应用中寻找符合要求的应用，打开特定类型的文件。详见[拉起文件处理类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/file-processing-apps-startup)。

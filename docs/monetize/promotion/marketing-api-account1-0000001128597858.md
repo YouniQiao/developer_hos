@@ -1,7 +1,7 @@
 ---
 title: "刷新access_token"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-account1-0000001128597858
+original_url: /docs/monetize/promotion/marketing-api-account1-0000001128597858
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "DevEco Studio中是否有一键检查未引用资源的功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-2
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-2
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Native侧如何访问ArkTS侧系统定义的异步方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-19
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-19
 format: md
 ---
 

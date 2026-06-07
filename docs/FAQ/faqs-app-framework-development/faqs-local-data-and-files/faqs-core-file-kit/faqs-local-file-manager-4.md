@@ -1,6 +1,6 @@
 ---
 title: "如何解决文件的中文乱码问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-4
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-4
 format: md
 ---
 

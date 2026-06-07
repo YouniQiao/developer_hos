@@ -1,6 +1,6 @@
 ---
 title: "使用XComponent实现画中画功能开发（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-xcomponent
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-xcomponent
 format: md
 ---
 
@@ -82,7 +82,7 @@ struct XComponentImplementPage {
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUIWindowPipSamples/WindowPip/entry/src/main/ets/pages/XComponentImplementPage.ets#L16-L59" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：XComponentImplementPage.ets</a></div>
 
 
-示例中的视频播放需要使用AVPlayer，具体示例可参考[视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback)。
+示例中的视频播放需要使用AVPlayer，具体示例可参考[视频播放](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback)。
 
 ```
 // xcomponent/Page1.ets

@@ -1,7 +1,7 @@
 ---
 title: "创建oCPD任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-create-ocpd-0000001282723545
+original_url: /docs/monetize/promotion/bp-functions-ocpx-create-ocpd-0000001282723545
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-连续[回传转化数据](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037)等于或大于两天，且每天回传量超过10（注：平台首日ROI单目标不涉及回传）。
+连续[回传转化数据](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037)等于或大于两天，且每天回传量超过10（注：平台首日ROI单目标不涉及回传）。
 
 ## 操作步骤
 
@@ -37,7 +37,7 @@ format: md
    - 以投放“激活应用”为例，出价按照应用考核的激活成本填写，前期出价请稍高当前CPD任务的激活价格，出价过低会导致oCPD量级较少。每日预算建议设置为10000以上。
    - 若子任务转化目标设置项无对应选项，请检查是否已回传对应目标转化数据。若直客账号切换后创建了新数据源，需完成新数据源回传数据后，转化目标设置项才可显示选项。
    - 通过对oCPD各个投放目标设置合适出价，实现对应用后端效果的精准把控。例如，如对<strong>首次付费</strong>出价，通过平台算法实时预估用户付费意愿与下载转化概率，进行差异化出价，在成本可控的同时精准获量，实现投放效果最优。
-   - 当转化目标选择“激活应用”时，在“深度转化”选项点击“编辑”字段，可设置深度转化内容。具体请参见[oCPD双目标出价](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd_2target_overview-0000001527328981)。
+   - 当转化目标选择“激活应用”时，在“深度转化”选项点击“编辑”字段，可设置深度转化内容。具体请参见[oCPD双目标出价](/docs/monetize/promotion/bp-functions-ocpd_2target_overview-0000001527328981)。
 6. 在“归因监测”栏目，配置相关任务设置项。
 
    根据开发者使用的归因方案，选择对应的配置方案。

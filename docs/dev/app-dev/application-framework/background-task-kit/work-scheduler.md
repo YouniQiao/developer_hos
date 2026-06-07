@@ -1,6 +1,6 @@
 ---
 title: "延迟任务(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/work-scheduler
+original_url: /docs/dev/app-dev/application-framework/background-task-kit/work-scheduler
 format: md
 ---
 
@@ -121,7 +121,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/BackGroundTasksKit/WorkScheduler/entry/src/main/ets/WorkSchedulerAbility/WorkSchedulerAbility.ets#L21-L38" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：WorkSchedulerAbility.ets</a></div>
 
-4. 在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中注册WorkSchedulerExtensionAbility，并设置如下标签：
+4. 在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中注册WorkSchedulerExtensionAbility，并设置如下标签：
 
    * type标签设置为“workScheduler”。
    * srcEntry标签设置为当前ExtensionAbility组件所对应的代码路径。
@@ -212,7 +212,7 @@ format: md
 
 确认延迟任务WorkSchedulerExtensionAbility回调方法onWorkStart、onWorkStop实现是否正确、是否可以成功回调
 
-延迟任务申请成功之后，需要等到条件满足后才可以执行延迟任务回调，为了快速验证延迟任务回调功能是否正确，可以通过以下[hidumper命令](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)手动触发延迟任务执行回调。
+延迟任务申请成功之后，需要等到条件满足后才可以执行延迟任务回调，为了快速验证延迟任务回调功能是否正确，可以通过以下[hidumper命令](/docs/dev/app-dev/system/hidumper)手动触发延迟任务执行回调。
 
 ```
 $ hidumper -s 1904 -a '-t com.example.application MyWorkSchedulerExtensionAbility'

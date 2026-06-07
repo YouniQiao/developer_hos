@@ -1,7 +1,7 @@
 ---
 title: "线上充值"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-online-0000001379958177
+original_url: /docs/monetize/promotion/bpos-start-guest-recharge-online-0000001379958177
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 如果您需要使用此功能，需要申请[特性](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/addtongxing-0000001128278195)。
 
-如果您开通了鲸鸿动能广告的[团队管理](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-management-team-0000001328677534)功能，仅团队主账号能使用线上充值功能。
+如果您开通了鲸鸿动能广告的[团队管理](/docs/monetize/promotion/bpos-delivery-task-account-management-team-0000001328677534)功能，仅团队主账号能使用线上充值功能。
 
 ## 申请条件
 
@@ -24,9 +24,9 @@ format: md
   德国、英国、爱尔兰、以色列、法国、意大利、西班牙、波兰、罗马尼亚、捷克、芬兰、土耳其、乌克兰，新加坡、马来西亚、泰国、印度尼西亚、中国香港、菲律宾、沙特阿拉伯、埃及、南非、印度、墨西哥、智利、秘鲁、哥伦比亚。
 - 已通过实名认证的直客可以使用线上充值方式进行现金账户充值。
 
-  如果您的账户尚未完成实名认证，您需要完成[实名认证](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-manage-information-0000001328357938#ZH-CN_TOPIC_0000001328357938__d0e16595)之后再使用此功能。
+  如果您的账户尚未完成实名认证，您需要完成[实名认证](/docs/monetize/promotion/bpos-delivery-task-account-manage-information-0000001328357938#ZH-CN_TOPIC_0000001328357938__d0e16595)之后再使用此功能。
 - 当前仅支持以下币种的广告账户使用线上充值功能：EUR、CNY、JPY、GBP。
-- 如果您修改了鲸鸿动能广告账户注册企业名称，您需要重新申请线上充值的使用功能，企业名称变更请参考[企业名称修改](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-manage-information-0000001328357938)。
+- 如果您修改了鲸鸿动能广告账户注册企业名称，您需要重新申请线上充值的使用功能，企业名称变更请参考[企业名称修改](/docs/monetize/promotion/bpos-delivery-task-account-manage-information-0000001328357938)。
 - 充充值的银行卡户名需与鲸鸿动能广告账户注册名称保持一致，不支持绑定个人银行卡。
 - 您即将绑定的银行卡必须未被任何其它鲸鸿动能广告账户使用过。
 - 您即将绑定的银行卡暂时仅支持借记卡。
@@ -35,7 +35,7 @@ format: md
 
 1. 申请线上充值功能。
 
-   您可以通过[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569)的方式向鲸鸿动能广告提交申请，申请时需包含以下内容：
+   您可以通过[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569)的方式向鲸鸿动能广告提交申请，申请时需包含以下内容：
 
 2. 提供公司信息：您需要将您的鲸鸿动能广告账户ID、企业名称、银行卡账号补充在工单中：
 

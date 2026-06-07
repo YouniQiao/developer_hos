@@ -1,6 +1,6 @@
 ---
 title: "开发者测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-dp-self-validation
+original_url: /docs/dev/app-dev/ai/intents-habit-rec-dp-self-validation
 format: md
 ---
 
@@ -9,7 +9,7 @@ Intents Kit向开发者提供真机测试能力，即开发者可连接设备进
 
 ## 基础信息提供
 
-开发者在AppGallery Connect平台上提交的习惯推荐方案能力申请审核成功后，可根据审核成功的反馈提示，提供测试应用的信息。能力申请的步骤参考[Intents Kit接入流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-access-flow)。
+开发者在AppGallery Connect平台上提交的习惯推荐方案能力申请审核成功后，可根据审核成功的反馈提示，提供测试应用的信息。能力申请的步骤参考[Intents Kit接入流程](/docs/dev/app-dev/ai/intents-kit-guide/intents-access-flow)。
 
 | **序号** | **基础信息** | **描述** |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ Intents Kit向开发者提供真机测试能力，即开发者可连接设备进
 | 4 | 应用图标 | 应用的图标，具体要求如下：  图标背景：非透明。  比例&尺寸：1:1，72px\*72px。  大小：不超过1M。  格式：png、jpg、jpeg。 |
 | 5 | APP ID | 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，在“开发与服务 > 我的项目 > 项目设置 > 常规 > 应用-APP ID”中获取。 |
 | 6 | Client ID | 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，在“开发与服务 > 我的项目 > 项目设置 > 常规 > 应用 > OAuth 2.0客户端ID(凭据) > Client ID”中获取。 |
-| 7 | 华为账号（UID） | 参考[附录A获取UID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-appendix-a-get-uid)。 |
+| 7 | 华为账号（UID） | 参考[附录A获取UID](/docs/dev/app-dev/ai/intents-kit-guide/intents-appendix-a-get-uid)。 |
 
 ## 环境准备
 

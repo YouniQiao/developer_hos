@@ -1,6 +1,6 @@
 ---
 title: "模板卡片设计说明和示例"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-card-design-example-0000002349021736
+original_url: /docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-card-design-example-0000002349021736
 format: md
 ---
 

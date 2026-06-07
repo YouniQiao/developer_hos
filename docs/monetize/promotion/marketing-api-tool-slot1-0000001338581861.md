@@ -1,7 +1,7 @@
 ---
 title: "查询版位"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot1-0000001338581861
+original_url: /docs/monetize/promotion/marketing-api-tool-slot1-0000001338581861
 format: md
 ---
 
@@ -30,14 +30,14 @@ format: md
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | product\_type | string | 否 | 推广产品，详见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
-  | price\_type | string | 否 | 付费方式，详见[付费方式](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1158173811189)。 |
+  | product\_type | string | 否 | 推广产品，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
+  | price\_type | string | 否 | 付费方式，详见[付费方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1158173811189)。 |
   | creative\_size\_id\_list | string | 否 | 查询指定版位ID列表。 |
-  | objective\_type | string | 否 | 推广目的，详见[推广目的](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section15457195232912)。 |
-  | category | string | 否 | 版位所属分类，详见[版位所属分类](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section172015520335)。 |
-  | flow\_resources | string[] | 否 | 投放网络，详见[投放网络](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1178164162818)。 |
-  | campaign\_type | string | 否 | 计划类型，取值见[计划类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)枚举值。 |
-  | vip | string | 否 | vip 版位，0：不是，1：是，详见[VIP版位](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1464067123014)。 |
+  | objective\_type | string | 否 | 推广目的，详见[推广目的](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section15457195232912)。 |
+  | category | string | 否 | 版位所属分类，详见[版位所属分类](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section172015520335)。 |
+  | flow\_resources | string[] | 否 | 投放网络，详见[投放网络](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1178164162818)。 |
+  | campaign\_type | string | 否 | 计划类型，取值见[计划类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)枚举值。 |
+  | vip | string | 否 | vip 版位，0：不是，1：是，详见[VIP版位](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1464067123014)。 |
 
   - <strong>请求示例</strong>
 
@@ -108,18 +108,18 @@ format: md
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
     | placement\_size\_id | string | 规格ID。 |
     | creative\_size | string | 尺寸。格式：宽\*高。 |
-    | creative\_size\_sub\_type | string | 版位子形式，详见[版位子样式](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section97194512155)。 |
-    | is\_support\_multiple  \_creatives | string | 是否支持多创意，详见[是否支持多创意](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section45712576185)。 |
+    | creative\_size\_sub\_type | string | 版位子形式，详见[版位子样式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section97194512155)。 |
+    | is\_support\_multiple  \_creatives | string | 是否支持多创意，详见[是否支持多创意](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section45712576185)。 |
 
     creative\_size\_operation\_info(Struct4)定义
 
     |  |  |  |
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
-    | support\_product\_type | string | 支持的推广产品，多值以逗号分隔，详见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
-    | support\_app\_install\_flag | string | 支持的应用是否安装标识，多值以逗号分隔。推广产品为应用时有效，详见[应用是否安装标识](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section184791429181813)。 |
-    | is\_support\_time\_period | string | 是否支持选择投放时段，详见[是否选择支持投放时段](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section16157194911818)。 |
-    | is\_support\_multiple  \_creatives | string | 是否支持多创意，详见[是否支持多创意](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section45712576185)。 |
+    | support\_product\_type | string | 支持的推广产品，多值以逗号分隔，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
+    | support\_app\_install\_flag | string | 支持的应用是否安装标识，多值以逗号分隔。推广产品为应用时有效，详见[应用是否安装标识](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section184791429181813)。 |
+    | is\_support\_time\_period | string | 是否支持选择投放时段，详见[是否选择支持投放时段](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section16157194911818)。 |
+    | is\_support\_multiple  \_creatives | string | 是否支持多创意，详见[是否支持多创意](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section45712576185)。 |
     | min\_duration\_days | integer | 投放此版位的任务最短投放时间，单位天。默认不限制。 |
     | max\_duration\_days | integer | 投放此版位的任务最长投放时间，单位天。默认不限制。 |
 
@@ -128,7 +128,7 @@ format: md
     |  |  |  |
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
-    | support\_price\_type | string | 付费方式，详见[付费方式](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1158173811189)。 |
+    | support\_price\_type | string | 付费方式，详见[付费方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1158173811189)。 |
   - <strong>应答示例</strong>
 
     HTTPS/1.1 200 OK

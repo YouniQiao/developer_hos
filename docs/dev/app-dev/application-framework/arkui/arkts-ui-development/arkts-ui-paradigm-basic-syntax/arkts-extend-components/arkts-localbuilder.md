@@ -1,13 +1,13 @@
 ---
 title: "@LocalBuilder装饰器： 维持组件关系"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localbuilder
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-localbuilder
 format: md
 ---
 
 
 当开发者使用局部@Builder进行引用数据传递时，需要考虑组件的父子关系。然而在使用.bind(this)的方式更改函数调用上下文后，会出现组件的父子关系与状态管理的父子关系不一致的问题。为了解决这一问题，引入@LocalBuilder装饰器。@LocalBuilder拥有和局部@Builder相同的功能，且比局部@Builder能够更好的确定组件的父子关系和状态管理的父子关系。
 
-在阅读本文档前，建议提前阅读：[@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)。
+在阅读本文档前，建议提前阅读：[@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)。
 
 ![](./img/434361cb.png)
 
@@ -119,7 +119,7 @@ struct Parent {
 
 * 参数的类型必须与参数声明的类型一致，且不允许为undefined、null。
 * 在@LocalBuilder修饰的函数内部，不允许改变参数值。
-* @LocalBuilder内的UI语法遵循[UI语法规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#build函数实现规则)。
+* @LocalBuilder内的UI语法遵循[UI语法规则](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#build函数实现规则)。
 * 按回调传递和按引用传递时，支持@Builder函数内UI组件刷新。按引用传递只在传入一个参数且该参数直接传入对象字面量时生效，有多个参数时不支持@Builder函数内UI组件刷新。
 
 ### 按回调传递参数
@@ -371,7 +371,7 @@ struct Parent {
 
 ### @LocalBuilder在@ComponentV2修饰的自定义组件中使用
 
-在[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)装饰的自定义组件中使用局部的@LocalBuilder，修改变量时会触发UI刷新。
+在[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)装饰的自定义组件中使用局部的@LocalBuilder，修改变量时会触发UI刷新。
 
 ```
 @ObservedV2

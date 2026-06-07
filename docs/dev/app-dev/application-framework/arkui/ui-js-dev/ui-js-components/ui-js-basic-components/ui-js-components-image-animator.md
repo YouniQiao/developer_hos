@@ -1,6 +1,6 @@
 ---
 title: "image-animator开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-image-animator
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-image-animator
 format: md
 ---
 

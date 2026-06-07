@@ -1,6 +1,6 @@
 ---
 title: "如何在代码中触发应用后台运行"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-279
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-279
 format: md
 ---
 

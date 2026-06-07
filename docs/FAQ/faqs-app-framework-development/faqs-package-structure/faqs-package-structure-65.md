@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用发布证书进行调试时出现安装错误: Install Failed: error: failed to install bundle."
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-65
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-65
 ---
 
 

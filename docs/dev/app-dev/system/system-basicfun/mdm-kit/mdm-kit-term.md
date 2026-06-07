@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "MDM Kit术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term
+original_url: /docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term
 format: md
 ---
 

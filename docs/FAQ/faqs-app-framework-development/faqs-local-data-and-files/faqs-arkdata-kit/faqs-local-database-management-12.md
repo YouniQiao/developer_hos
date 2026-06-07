@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何读取本地/预制数据库"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-12
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-12
 ---
 
 

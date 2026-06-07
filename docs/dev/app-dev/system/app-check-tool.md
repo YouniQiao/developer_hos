@@ -1,6 +1,6 @@
 ---
 title: "扫描工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-check-tool
+original_url: /docs/dev/app-dev/system/app-check-tool
 format: md
 ---
 

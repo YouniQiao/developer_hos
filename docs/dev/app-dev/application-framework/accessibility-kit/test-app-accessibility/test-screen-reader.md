@@ -1,6 +1,6 @@
 ---
 title: "测试屏幕朗读功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-screen-reader
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/test-app-accessibility/test-screen-reader
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "查询DPA任务销售国家列表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa13-0000001286023254
+original_url: /docs/monetize/promotion/marketing-api-tool-dpa13-0000001286023254
 format: md
 ---
 
@@ -30,7 +30,7 @@ format: md
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | flow\_resources | string[] | 是 | 资源类型，详见[投放网络](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1178164162818)。 |
+  | flow\_resources | string[] | 是 | 资源类型，详见[投放网络](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1178164162818)。 |
 
   - <strong>请求示例</strong>
 

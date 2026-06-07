@@ -1,12 +1,12 @@
 ---
 title: "逻辑层"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer
+original_url: /docs/dev/atomic-dev/ascf/logical-layer/logical-layer
 format: md
 ---
 
 
-* **[js](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-js)**
-* **[App](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app)**
-* **[Page](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-page)**
-* **[路由和生命周期](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-route-lifecycle)**
-* **[事件系统](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-events)**
+* **[js](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-js)**
+* **[App](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-app)**
+* **[Page](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-page)**
+* **[路由和生命周期](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-route-lifecycle)**
+* **[事件系统](/docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-events)**

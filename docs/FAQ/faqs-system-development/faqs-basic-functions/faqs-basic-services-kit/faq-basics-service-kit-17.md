@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取设备支持的API的版本号"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-17
+original_url: /docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-17
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "如何对异步方法进行插桩/替换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-100
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-100
 format: md
 ---
 

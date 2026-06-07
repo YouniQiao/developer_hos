@@ -1,6 +1,6 @@
 ---
 title: "Connectivity Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit-intro
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/connectivity-kit-intro
 format: md
 ---
 

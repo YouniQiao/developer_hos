@@ -1,11 +1,11 @@
 ---
 title: "创建项目"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048
+original_url: /docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048
 format: md
 ---
 
 
-项目是资源、应用的组织实体。资源包括服务器、数据库、存储，以及您的应用、终端用户的数据等。在您使用部分服务时，您是数据的控制者，数据将按照您[设置的数据处理位置](https://developer.huawei.com/consumer/cn/doc/app/agc-help-data-location-0000002277923065)来存储在指定区域。
+项目是资源、应用的组织实体。资源包括服务器、数据库、存储，以及您的应用、终端用户的数据等。在您使用部分服务时，您是数据的控制者，数据将按照您[设置的数据处理位置](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-data-location-0000002277923065)来存储在指定区域。
 
 通常，您不需要自己管理资源，而是管理好您的应用。您可以选择将一个应用的不同形态（HarmonyOS应用或者元服务）放在同一个项目中。但是，您不应该将不同应用放在一个项目中，因为这可能会产生隐私合规问题。
 

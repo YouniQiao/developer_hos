@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-productmanagement-faq-0000001194302398
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-productmanagement-faq-0000001194302398
 format: md
 ---
 

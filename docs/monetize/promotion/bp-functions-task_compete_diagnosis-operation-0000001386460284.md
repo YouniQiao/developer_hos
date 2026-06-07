@@ -1,7 +1,7 @@
 ---
 title: "综合诊断任务竞争力"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-task_compete_diagnosis-operation-0000001386460284
+original_url: /docs/monetize/promotion/bp-functions-task_compete_diagnosis-operation-0000001386460284
 format: md
 ---
 

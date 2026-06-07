@@ -1,7 +1,7 @@
 ---
 format: md
 title: "用户目录下没有.npmrc文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-121
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-121
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "领券场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-promotion-claim-coupon
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-platform-coupons/payment-promotion-claim-coupon
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 
 | 步骤 | 说明 |
 | --- | --- |
-| 开发准备 | 根据[端侧应用配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-app-identity-info)完成开发准备。 |
+| 开发准备 | 根据[端侧应用配置](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-app-identity-info)完成开发准备。 |
 | 接入活动入口组件 | 根据领券场景[开发步骤](#开发步骤)完成接入。 |
 
 ## 业务流程

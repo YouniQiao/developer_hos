@@ -1,6 +1,6 @@
 ---
 title: "端侧问答模型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-localchatmodel
+original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-localchatmodel
 format: md
 ---
 
@@ -39,7 +39,7 @@ format: md
 
 ### 申请权限
 
-申请ohos.permission.INTERNET权限，配置方式请参阅声明权限[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+申请ohos.permission.INTERNET权限，配置方式请参阅声明权限[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ### 功能开发
 

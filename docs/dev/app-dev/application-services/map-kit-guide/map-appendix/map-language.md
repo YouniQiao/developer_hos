@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "支持的语言"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-language
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-appendix/map-language
 format: md
 ---
 

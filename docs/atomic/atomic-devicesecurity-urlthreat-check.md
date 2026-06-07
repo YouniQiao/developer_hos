@@ -1,6 +1,6 @@
 ---
 title: "URL检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-urlthreat-check
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-urlthreat-check
 format: md
 ---
 
@@ -39,7 +39,7 @@ format: md
 
 ![](./img/b744104a.png)
 
-请确保已打开“[安全检测服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice)”开关并[申请Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-0000002270709473)。
+请确保已打开“[安全检测服务](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare/devicesecurity-deviceverify-activateservice)”开关并[申请Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-0000002270709473)。
 
 1. 导入Device Security Kit模块及相关公共模块。
 

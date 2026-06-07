@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自定义文本绘制与显示（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-custom-arkts
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/text-custom-arkts
 format: md
 ---
 

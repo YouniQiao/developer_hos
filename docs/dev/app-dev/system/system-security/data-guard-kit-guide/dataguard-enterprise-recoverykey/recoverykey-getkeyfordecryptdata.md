@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取解密硬盘数据的企业恢复密钥"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-getkeyfordecryptdata
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-getkeyfordecryptdata
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ![](./img/20f1cef7.png)
 
-企业恢复密钥仅可被获取一次，获取到企业恢复密钥后，可在持有企业私钥的设备上解密，并进行相应的存储。如果需要再次获取，需要先调用[删除企业恢复密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-delete)能力，再调用该能力。
+企业恢复密钥仅可被获取一次，获取到企业恢复密钥后，可在持有企业私钥的设备上解密，并进行相应的存储。如果需要再次获取，需要先调用[删除企业恢复密钥](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-delete)能力，再调用该能力。
 
 ## 接口说明
 

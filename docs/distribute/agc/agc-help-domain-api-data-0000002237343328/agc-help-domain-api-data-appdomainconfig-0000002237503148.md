@@ -1,6 +1,6 @@
 ---
 title: "AppDomainConfig"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-domain-api-data-appdomainconfig-0000002237503148
+original_url: /docs/distribute/agc/agc-help-domain-api-data-0000002237343328/agc-help-domain-api-data-appdomainconfig-0000002237503148
 format: md
 ---
 

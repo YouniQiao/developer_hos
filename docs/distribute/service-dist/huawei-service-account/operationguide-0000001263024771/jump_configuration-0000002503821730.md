@@ -1,7 +1,7 @@
 ---
 title: "跳转配置"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/jump_configuration-0000002503821730
+original_url: /docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/jump_configuration-0000002503821730
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 在自定义菜单、A级专区画廊模式主页背景图/商品图/banner、服务tab菜单、关联元服务列表等位置，支持在服务号app内全屏嵌入式打开元服务落地页。
 
-步骤1：选择元服务，只有操作关联过的元服务才会出现在选择列表中，可以进入”[关联元服务](https://developer.huawei.com/consumer/cn/doc/service/association_service-0000002508947051)”栏目操作。
+步骤1：选择元服务，只有操作关联过的元服务才会出现在选择列表中，可以进入”[关联元服务](/docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/association_service-0000002508947051)”栏目操作。
 
 ![](./img/2f4ac26c16fc.png "点击放大")
 
@@ -38,7 +38,7 @@ format: md
 
 在模板消息、欢迎消息、会话消息、图文消息等位置，支持在服务号app内跳出式打开元服务落地页。
 
-步骤1：选择元服务，只有操作关联过的元服务才会出现在选择列表中，可以进入”[关联元服务](https://developer.huawei.com/consumer/cn/doc/service/association_service-0000002508947051)”栏目操作。
+步骤1：选择元服务，只有操作关联过的元服务才会出现在选择列表中，可以进入”[关联元服务](/docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/association_service-0000002508947051)”栏目操作。
 
 ![](./img/444c1f14a991.png "点击放大")
 

@@ -1,7 +1,7 @@
 ---
 title: "游戏内测（APP）"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-early-access-app-0000002310746377
+original_url: /docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-app-0000002310746377
 format: md
 ---
 

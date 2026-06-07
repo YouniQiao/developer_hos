@@ -1,6 +1,6 @@
 ---
 title: "如何使用SM3算法进行消息鉴别码计算"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-24
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-24
 format: md
 ---
 

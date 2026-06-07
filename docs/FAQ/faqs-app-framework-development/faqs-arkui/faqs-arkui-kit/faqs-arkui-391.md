@@ -1,6 +1,6 @@
 ---
 title: "如何实现弹窗动画和遮罩动画分开设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-391
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-391
 format: md
 ---
 

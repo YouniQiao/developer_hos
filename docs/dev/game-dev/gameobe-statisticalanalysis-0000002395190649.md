@@ -1,6 +1,6 @@
 ---
 title: "统计分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-statisticalanalysis-0000002395190649
+original_url: /docs/dev/game-dev/gameobe-statisticalanalysis-0000002395190649
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* 您的应用已集成联机对战SDK（[JS](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-js-0000002361670432)丨[C#](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-csharp-0000002395350421)）。
-* 您已[开通联机对战服务](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-enable-0000002395350369)。
+* 您的应用已集成联机对战SDK（[JS](/docs/dev/game-dev/gameobe-integratingsdk-js-0000002361670432)丨[C#](/docs/dev/game-dev/gameobe-integratingsdk-csharp-0000002395350421)）。
+* 您已[开通联机对战服务](/docs/dev/game-dev/gameobe-enable-0000002395350369)。
 
 ## 数据查看
 

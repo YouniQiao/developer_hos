@@ -1,7 +1,7 @@
 ---
 title: "服务商账户注册"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-fuwushangzhanghaozhuce-0000001861670469
+original_url: /docs/monetize/promotion/ads-fuwushangzhanghaozhuce-0000001861670469
 format: md
 ---
 
@@ -45,10 +45,10 @@ format: md
 
    ![](./img/note_3.0-zh-cn_5b9c780e5b62.png) 
 
-   服务商分类以及相关申请条件请参考[服务商简介](https://developer.huawei.com/consumer/cn/doc/promotion/ads-fuwushangjianjie-0000001815794722)。
+   服务商分类以及相关申请条件请参考[服务商简介](/docs/monetize/promotion/ads-fuwushangjianjie-0000001815794722)。
 2. <strong>实名认证</strong>
 
-   完成华为账号注册之后，需要进行实名认证，单击“去认证”进行企业资料认证流程，认证方式可选“对公银行打款认证”或“企业资料人工审核认证”，详细步骤可参考[对公银行打款认证](https://developer.huawei.com/consumer/cn/doc/promotion/ads-zkzhzcyygg-0000002507044685#ZH-CN_TOPIC_0000002507044685__li104282122617)、[企业资料人工审核认证](https://developer.huawei.com/consumer/cn/doc/promotion/ads-zkzhzcyygg-0000002507044685#ZH-CN_TOPIC_0000002507044685__li11630210122615)。
+   完成华为账号注册之后，需要进行实名认证，单击“去认证”进行企业资料认证流程，认证方式可选“对公银行打款认证”或“企业资料人工审核认证”，详细步骤可参考[对公银行打款认证](/docs/monetize/promotion/ads-zkzhzcyygg-0000002507044685#ZH-CN_TOPIC_0000002507044685__li104282122617)、[企业资料人工审核认证](/docs/monetize/promotion/ads-zkzhzcyygg-0000002507044685#ZH-CN_TOPIC_0000002507044685__li11630210122615)。
 
    ![](./img/zh-cn_image_0000002516380766_ae3277d76952.png "点击放大")
 

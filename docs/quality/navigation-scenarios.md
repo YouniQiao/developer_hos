@@ -1,6 +1,6 @@
 ---
 title: "导航定位场景低功耗规则"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-navigation-scenarios
+original_url: /docs/quality/navigation-scenarios
 ---
 
 # 导航定位场景低功耗规则

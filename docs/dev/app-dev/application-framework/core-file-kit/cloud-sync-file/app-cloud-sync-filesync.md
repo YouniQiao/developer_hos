@@ -1,6 +1,6 @@
 ---
 title: "端云文件协同适配指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-cloud-sync-filesync
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/cloud-sync-file/app-cloud-sync-filesync
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 
 ## 文件同步
 
-开发者可以使用基本的[文件操作接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)，在沙箱路径/data/storage/el2/cloud下进行文件的读写、重命名、拷贝、创建目录等操作，在文件完成写入或文件夹创建成功后，端云协同服务会自动触发同步流程，将新建的文件或文件夹同步上云。
+开发者可以使用基本的[文件操作接口](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)，在沙箱路径/data/storage/el2/cloud下进行文件的读写、重命名、拷贝、创建目录等操作，在文件完成写入或文件夹创建成功后，端云协同服务会自动触发同步流程，将新建的文件或文件夹同步上云。
 
 针对一些设备的网络异常、温度过高、电量过低异常场景，受功耗管控，端云协同服务**无法及时**将文件修改同步到云服务器，此时开发者可以通过cloudSync.FileSync对象来订阅同步状态，并根据状态完成对同步的管理。
 

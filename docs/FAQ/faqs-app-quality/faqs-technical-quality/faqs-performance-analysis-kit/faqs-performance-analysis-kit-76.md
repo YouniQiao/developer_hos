@@ -1,7 +1,7 @@
 ---
 format: md
 title: "hdc list targets回显慢"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-76
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-76
 ---
 
 

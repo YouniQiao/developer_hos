@@ -1,7 +1,7 @@
 ---
 format: md
 title: "request.downloadFile使用报错，err number=8属于什么问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-13
+original_url: /docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-13
 ---
 
 

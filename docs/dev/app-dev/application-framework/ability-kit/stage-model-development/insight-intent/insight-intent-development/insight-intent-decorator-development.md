@@ -1,6 +1,6 @@
 ---
 title: "使用装饰器开发意图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-decorator-development
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-decorator-development
 format: md
 ---
 
@@ -21,8 +21,8 @@ format: md
 | --- | --- | --- |
 | 使用[@InsightIntentEntry](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#insightintententry)开发意图 | 1. 开发者新增意图执行文件，若该执行文件未被其他文件导入，需要通过insight\_intent.json文件的"insightIntentsSrcEntry"字段配置意图执行文件路径，使其参与编译。  2. 通过装饰器定义意图需要绑定Ability组件、定义意图执行模式。 | 系统入口匹配意图，根据意图执行模式触发Ability组件的启动和意图执行。 |
 | 使用[@InsightIntentLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#insightintentlink)开发意图 | 开发者定义Link跳转意图，支持已有的uri链接和新增uri链接。 | 系统入口匹配意图，传递uri链接，通过[openLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#openlink12)触发意图执行，意图执行时的入参处理见[LinkIntentParamMapping](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#linkintentparammapping)的paramCategory说明。 |
-| 使用[@InsightIntentPage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#insightintentpage)开发意图 | 开发者定义页面跳转意图，配置意图对应的UIAbility组件、[页面路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing)的路径和[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture)路径。 | 1. 系统入口通过startAbility启动意图绑定的UIAbility组件。若意图未绑定UIAbility组件，则启动意图所在module的[mainElement](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#配置文件标签)对应的UIAbility组件。  2. 意图执行时，若应用未启动，在UIAbility的首页加载后跳转到意图对应的页面；若应用已启动，由当前页面跳转到意图对应的页面。  3. 意图执行时，参数会被传递给目标页面。  4. "navigationId"字段或"navDestinationName"字段匹配失败时，退化为"pagePath"字段对应的页面跳转。 |
-| 使用[@InsightIntentFunctionMethod](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#insightintentfunctionmethod)开发意图 | 开发者为静态方法定义意图，静态方法可以是已有方法或新增方法。 | 系统入口通过[Call调用](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#后台通信能力)启动意图所在module的[mainElement](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#配置文件标签)对应的UIAbility组件。 |
+| 使用[@InsightIntentPage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#insightintentpage)开发意图 | 开发者定义页面跳转意图，配置意图对应的UIAbility组件、[页面路由](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-routing)的路径和[Navigation](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-architecture)路径。 | 1. 系统入口通过startAbility启动意图绑定的UIAbility组件。若意图未绑定UIAbility组件，则启动意图所在module的[mainElement](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#配置文件标签)对应的UIAbility组件。  2. 意图执行时，若应用未启动，在UIAbility的首页加载后跳转到意图对应的页面；若应用已启动，由当前页面跳转到意图对应的页面。  3. 意图执行时，参数会被传递给目标页面。  4. "navigationId"字段或"navDestinationName"字段匹配失败时，退化为"pagePath"字段对应的页面跳转。 |
+| 使用[@InsightIntentFunctionMethod](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#insightintentfunctionmethod)开发意图 | 开发者为静态方法定义意图，静态方法可以是已有方法或新增方法。 | 系统入口通过[Call调用](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#后台通信能力)启动意图所在module的[mainElement](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#配置文件标签)对应的UIAbility组件。 |
 | 使用[@InsightIntentForm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentdecorator#insightintentform)开发意图 | 开发者定义卡片意图，卡片可以是已有卡片或新增卡片。 | 系统入口通过FormComponent组件创建意图卡片。 |
 
 ## 开发步骤
@@ -31,7 +31,7 @@ format: md
 
 ### 通过意图装饰器开发标准意图
 
-以通过@InsightIntentEntry装饰器开发[查看快递](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-access-specifications#查看快递)标准意图举例。
+以通过@InsightIntentEntry装饰器开发[查看快递](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-access-specifications#查看快递)标准意图举例。
 
 1. 在insight\_intent.json配置文件中的"insightIntentsSrcEntry"字段声明意图执行文件。
 
@@ -46,7 +46,7 @@ format: md
    ```
 2. 实现意图执行器。
 
-   开发标准意图无需开发者自行定义意图的大语言模型描述、意图参数定义和意图执行结果定义，根据"schema"字段和"intentVersion"字段匹配[附录：标准意图接入规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-access-specifications)中的标准意图。意图执行器需要从InsightIntentEntryExecutor\<T\>类继承，实现onExecute()方法。
+   开发标准意图无需开发者自行定义意图的大语言模型描述、意图参数定义和意图执行结果定义，根据"schema"字段和"intentVersion"字段匹配[附录：标准意图接入规范](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-access-specifications)中的标准意图。意图执行器需要从InsightIntentEntryExecutor\<T\>类继承，实现onExecute()方法。
 
    ```
    import { InsightIntentEntryExecutor, insightIntent, InsightIntentEntry } from '@kit.AbilityKit';

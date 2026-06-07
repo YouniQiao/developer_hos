@@ -1,19 +1,19 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Basic Services Kit（基础服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-services-kit
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit
 format: md
 ---
 
 
-* **[Basic Services Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-services-kit-overview)**
-* **[进程线程通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-events)**
-* **[账号管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-management)**
-* **[USB服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb)**
-* **[升级服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/update)**
-* **[剪贴板服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pasteboard)**
-* **[上传下载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/upload-download)**
-* **[压缩与解压](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/compress)**
-* **[划词服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/selectioninput)**
-* **[电源管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/powermgr)**
-* **[打印](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/print)**
+* **[Basic Services Kit简介](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/basic-services-kit-overview)**
+* **[进程线程通信](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events)**
+* **[账号管理](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/account-management)**
+* **[USB服务](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb)**
+* **[升级服务](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/update)**
+* **[剪贴板服务](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard)**
+* **[上传下载](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/upload-download)**
+* **[压缩与解压](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/compress)**
+* **[划词服务](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/selectioninput)**
+* **[电源管理](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/powermgr)**
+* **[打印](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/print)**

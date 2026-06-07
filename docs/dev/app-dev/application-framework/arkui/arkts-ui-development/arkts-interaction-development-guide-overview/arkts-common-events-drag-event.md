@@ -1,6 +1,6 @@
 ---
 title: "支持统一拖拽"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-drag-event
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-drag-event
 format: md
 ---
 

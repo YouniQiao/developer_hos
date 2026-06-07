@@ -1,6 +1,6 @@
 ---
 title: "ForEach：循环渲染"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach
 format: md
 ---
 
@@ -232,7 +232,7 @@ struct NotFirstRenderChildItem {
 
 ![](./img/ea76ce86.gif)
 
-从本例可以看出[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)能够监听到简单数据类型数组simpleList数组项的变化。
+从本例可以看出[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)能够监听到简单数据类型数组simpleList数组项的变化。
 
 1. 当simpleList数组项发生变化时，会触发ForEach重新渲染。
 2. ForEach遍历新的数据源['one', 'two', 'new three']，并生成对应的键值one、two和new three。
@@ -422,14 +422,14 @@ struct ArticleCardChangeSource {
 
 ![](./img/ab97cce9.png)
 
-在本示例中，ArticleCardChangeSource组件作为ArticleListViewChangeSource组件的子组件，通过[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)装饰器接收一个ArticleChangeSource对象，用于渲染文章卡片。
+在本示例中，ArticleCardChangeSource组件作为ArticleListViewChangeSource组件的子组件，通过[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)装饰器接收一个ArticleChangeSource对象，用于渲染文章卡片。
 
 1. 当列表滚动到底部且手势滑动距离超过80vp时，触发loadMoreArticles()函数。此函数在articleList数据源尾部添加新数据项，增加数据源长度。
 2. 数据源被@State装饰器修饰，ArkUI框架能够感知数据源长度的变化并触发ForEach进行重新渲染。
 
 ### 数据源数组项子属性变化
 
-当数据源的数组项为对象数据类型，并且只修改某个数组项的属性值时，由于数据源为复杂数据类型，ArkUI框架无法监听到@State装饰器修饰的数据源数组项的属性变化，从而无法触发ForEach的重新渲染。为实现ForEach子组件重新渲染，需要结合[@Observed和@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)装饰器使用。例如，在文章列表卡片上点击“点赞”按钮，从而修改文章的点赞数量。
+当数据源的数组项为对象数据类型，并且只修改某个数组项的属性值时，由于数据源为复杂数据类型，ArkUI框架无法监听到@State装饰器修饰的数据源数组项的属性变化，从而无法触发ForEach的重新渲染。为实现ForEach子组件重新渲染，需要结合[@Observed和@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)装饰器使用。例如，在文章列表卡片上点击“点赞”按钮，从而修改文章的点赞数量。
 
 ```
 @Observed
@@ -617,8 +617,8 @@ struct ForEachSort {
 * 不建议在键值中包含数据项索引index，可能会导致[渲染结果非预期](#渲染结果非预期)和[渲染性能降低](#渲染性能降低)。如果确实需要使用index，例如列表通过index进行条件渲染，开发者需接受ForEach在数据源变更后重新创建组件导致的性能损耗。
 * 基本类型数组的数据项没有唯一ID属性。如果使用数据项作为键值，必须确保数据项无重复。对于数据源会变化的场景，建议将基本类型数组转换为具有唯一ID属性的Object类型数组，再使用唯一ID属性作为键值。
 * 对于以上限制规则，index参数存在的意义为：index是开发者保证键值唯一性的最终手段；对数据项进行修改时，由于itemGenerator中的item参数是不可修改的，所以须用index索引值对数据源进行修改，进而触发UI重新渲染。
-* ForEach在滚动容器组件 [List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)、[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)、[Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper)以及[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow) 内使用的时候，不建议与[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach) 同时使用。
-* 在大量子组件的场景下，ForEach可能会导致卡顿。请考虑使用[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)替代。最佳实践请参考[使用懒加载优化性能](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lazyforeach-optimization)。
+* ForEach在滚动容器组件 [List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)、[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)、[Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper)以及[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow) 内使用的时候，不建议与[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach) 同时使用。
+* 在大量子组件的场景下，ForEach可能会导致卡顿。请考虑使用[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)替代。最佳实践请参考[使用懒加载优化性能](/docs/quality/lazyforeach-optimization)。
 * 当数组项为对象类型时，不建议用内容相同的数组项替换旧项。若数组项发生变更但键值未变，会导致[数据变化不渲染](#数据变化不渲染)。
 
 ## 常见问题

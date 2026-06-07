@@ -1,6 +1,6 @@
 ---
 title: "使用文本常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-faq
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-text-faq
 format: md
 ---
 
@@ -133,7 +133,7 @@ export struct HeightAdaptivePolicy {
 
 **解决措施一**
 
-如果标签和中间的长文本需在同一行显示，开发者可能会考虑使用[Span](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span)实现，但是Span不支持设置尺寸。此时，可以在[弹性布局 (Flex)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-flex-layout)或者[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)中放置标签和长文本，并为长文本设置[textOverflow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#textoverflow)属性，以确保文本超长时能够自适应截断，显示在一行之内。
+如果标签和中间的长文本需在同一行显示，开发者可能会考虑使用[Span](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span)实现，但是Span不支持设置尺寸。此时，可以在[弹性布局 (Flex)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout/arkts-layout-development-flex-layout)或者[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)中放置标签和长文本，并为长文本设置[textOverflow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#textoverflow)属性，以确保文本超长时能够自适应截断，显示在一行之内。
 
 实现步骤：
 
@@ -141,11 +141,11 @@ export struct HeightAdaptivePolicy {
 
 2.中间长文本设置textOverflow属性为TextOverflow.Ellipsis，空间不足时截断文本，显示省略号。
 
-实现案例请参考[实现热搜榜](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-display#实现热搜榜)，该示例中，文字“1”、“爆”就是“我是热搜词条”的两个标签。这种实现方式写法简便，适合单行文本添加标签的场景。
+实现案例请参考[实现热搜榜](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-common-components-text-display#实现热搜榜)，该示例中，文字“1”、“爆”就是“我是热搜词条”的两个标签。这种实现方式写法简便，适合单行文本添加标签的场景。
 
 **解决措施二**
 
-如果需在多行文本前后添加标签并且不截断文本，上述方案会导致三个Text中的文本不能对齐，因为多行文本会在Row的宽度内折行。此时，可以在[层叠布局 (Stack)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-stack-layout)中放置标签和长文本，给中间多行文本设置首行文本缩进距离[textIndent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#textindent10)。多行文本后面的标签则需要通过[offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#offset)属性调整位置。这种实现方式，可以让三个Text组件中的文字水平对齐。实现步骤如下：
+如果需在多行文本前后添加标签并且不截断文本，上述方案会导致三个Text中的文本不能对齐，因为多行文本会在Row的宽度内折行。此时，可以在[层叠布局 (Stack)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout/arkts-layout-development-stack-layout)中放置标签和长文本，给中间多行文本设置首行文本缩进距离[textIndent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#textindent10)。多行文本后面的标签则需要通过[offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#offset)属性调整位置。这种实现方式，可以让三个Text组件中的文字水平对齐。实现步骤如下：
 
 实现步骤：
 
@@ -573,7 +573,7 @@ Text组件调用[fontWeight](https://developer.huawei.com/consumer/cn/doc/harmon
 
 **解决措施**
 
-1. 如果需要Text组件字重跟随系统设置变化，需要在[configuration标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#configuration标签)设置followSystem。
+1. 如果需要Text组件字重跟随系统设置变化，需要在[configuration标签](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#configuration标签)设置followSystem。
 2. 字体配置项options控制是否启用可变字重调节。
 
 * 当options的参数enableVariableFontWeight取值true时，启用可变字重调节。weight取值为[100, 900]范围内任意整数时，字重取值为weight。此时如果在设置中调节字体粗细，字重始终是开发者设置的数值weight，字体粗细不会变化。

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "JS线程通过napi创建的C++线程的处理结果，如何返回JS线程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-30
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-30
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[使用Node-API接口进行线程安全开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety)
+[使用Node-API接口进行线程安全开发](/docs/dev/ndk-dev/use-napi-thread-safety)

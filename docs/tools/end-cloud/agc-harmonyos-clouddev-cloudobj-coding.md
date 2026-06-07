@@ -2,7 +2,7 @@
 
 title: "开发云对象"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-cloudobj-coding
+original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-cloudobj-coding
 format: md
 ---
 

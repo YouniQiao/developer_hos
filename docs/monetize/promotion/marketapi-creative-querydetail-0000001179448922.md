@@ -1,7 +1,7 @@
 ---
 title: "查询任务创意详情"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-creative-querydetail-0000001179448922
+original_url: /docs/monetize/promotion/marketapi-creative-querydetail-0000001179448922
 format: md
 ---
 
@@ -62,10 +62,10 @@ Content-Type: application/json
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| rtnCode | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| rtnCode | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | rtnDesc | M | String | 返回描述。 |
 | creativeMode | O | Integer | 创意播放模式。  取值范围：   - 1：轮播 - 2：优选 |
-| creatives | O | List&lt;[AdCreative](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-adcreative-0000001225503661)&gt; | 创意的集合。 |
+| creatives | O | List&lt;[AdCreative](/docs/monetize/promotion/marketapi-modle-adcreative-0000001225503661)&gt; | 创意的集合。 |
 
 ## 响应示例
 

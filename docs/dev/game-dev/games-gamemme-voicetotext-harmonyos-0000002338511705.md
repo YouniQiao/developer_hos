@@ -1,15 +1,15 @@
 ---
 title: "HarmonyOS 5.0及以上"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voicetotext-harmonyos-0000002338511705
+original_url: /docs/dev/game-dev/games-gamemme-voicetotext-harmonyos-0000002338511705
 format: md
 ---
 
 
 ## 前提条件
 
-* 您已[开启语音转文本功能](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。
-* 您已[集成游戏多媒体基础SDK和语音消息模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_li16904125719267)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
+* 您已[开启语音转文本功能](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。
+* 您已[集成游戏多媒体基础SDK和语音消息模块](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_li16904125719267)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
 * 您已[开通机器学习服务](https://developer.huawei.com/consumer/cn/doc/hiai-Guides/config-agc-harmonyos-0000001245919249#section13396143595911)。
 
 ## 开发步骤

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用静态快捷方式如何接入X键"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-71
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-71
 ---
 
 
@@ -21,4 +21,4 @@ X键当前已经支持将应用的静态快捷方式，添加至X键的九宫格
 
 **参考链接：**
 
-[创建应用静态快捷方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/typical-scenario-configuration)
+[创建应用静态快捷方式](/docs/dev/app-dev/getting-started/dev-fundamentals/typical-scenario-configuration)

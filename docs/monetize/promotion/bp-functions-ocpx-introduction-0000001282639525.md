@@ -1,7 +1,7 @@
 ---
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-introduction-0000001282639525
+original_url: /docs/monetize/promotion/bp-functions-ocpx-introduction-0000001282639525
 format: md
 ---
 
@@ -27,7 +27,7 @@ oCPX又可以细分为oCPD和oCPC，业务上相似，具体区别如下。
 ![](./img/24bbe9b653e3.png) 
 
 - 满足以下两个条件的应用将会自动开通oCPD功能：
-  - 已开通归因功能（[智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940)或[监测链接](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-configure-0000001351658397)）。
+  - 已开通归因功能（[智能分包](/docs/monetize/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940)或[监测链接](/docs/monetize/promotion/bp-functions-link-configure-0000001351658397)）。
   - 已回传转化数据，且连续两天回传转化量大于10。
 - 如果您想快速了解oCPD，可以观看[短视频](https://www.bilibili.com/video/BV1DS4y1C7wr?spm_id_from=333.999.0.0)。
 - oCPD相关的介绍，可参考学习[视频课程](https://developer.huawei.com/consumer/cn/training/course/video/C101678343783508900)。
@@ -40,14 +40,14 @@ oCPX又可以细分为oCPD和oCPC，业务上相似，具体区别如下。
 
 ## 接入流程
 
-1. 根据您的需要选择对接归因方案，详见[对接归因](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-attribution-0000001238638944)。
+1. 根据您的需要选择对接归因方案，详见[对接归因](/docs/monetize/promotion/bp-functions-ocpx-attribution-0000001238638944)。
 
    当前支持智能分包和监测链接两种归因方式，二者对比如下，根据需要选择一种即可：
 
    | 归因方案 | 相同点 | 不同点 |
    | --- | --- | --- |
-   | [智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-attribution-0000001238638944#section1755441112525) | 均可实现归因，将推广的后续投放效果匹配到具体的推广上，解决转化效果归属划分的问题。 | - 需要客户端开发，调用应用市场提供的渠道号查询接口获取归因信息，并将客户端获取的归因信息上报到您的服务端。 - 需要开发者获取设备标识ID，在服务端将渠道号和设备标识ID进行关联完成归因。 - 受老版应用市场影响，可支持设备覆盖率超过95%。 |
-   | [监测链接](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-attribution-0000001238638944#section699224633515) | - 需要开发者服务端开发监测链接功能。通过监测链接，获取用户是通过哪一个推广任务，在何时看到、何时点击、何时下载安装了您的应用。 - 开发者只需填写好链接，信息由应用市场发送给开发者的服务端，开发者直接统计数据即可。 - 应用市场版本在10.5.3之后的才具备采集OAID的功能，可支持设备覆盖率超过80%。 |
+   | [智能分包](/docs/monetize/promotion/bp-functions-ocpx-attribution-0000001238638944#section1755441112525) | 均可实现归因，将推广的后续投放效果匹配到具体的推广上，解决转化效果归属划分的问题。 | - 需要客户端开发，调用应用市场提供的渠道号查询接口获取归因信息，并将客户端获取的归因信息上报到您的服务端。 - 需要开发者获取设备标识ID，在服务端将渠道号和设备标识ID进行关联完成归因。 - 受老版应用市场影响，可支持设备覆盖率超过95%。 |
+   | [监测链接](/docs/monetize/promotion/bp-functions-ocpx-attribution-0000001238638944#section699224633515) | - 需要开发者服务端开发监测链接功能。通过监测链接，获取用户是通过哪一个推广任务，在何时看到、何时点击、何时下载安装了您的应用。 - 开发者只需填写好链接，信息由应用市场发送给开发者的服务端，开发者直接统计数据即可。 - 应用市场版本在10.5.3之后的才具备采集OAID的功能，可支持设备覆盖率超过80%。 |
 2. 通过数据回传接口回传转化数据，回传后查询转化数据报表。
-3. 创建oCPD任务进行投放，参见[创建oCPD任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-create-ocpd-0000001282723545)。
+3. 创建oCPD任务进行投放，参见[创建oCPD任务](/docs/monetize/promotion/bp-functions-ocpx-create-ocpd-0000001282723545)。
 4. oCPD任务投放后，查询投放任务数据报表。

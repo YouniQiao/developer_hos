@@ -1,6 +1,6 @@
 ---
 title: "App Killed（应用终止）检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appkilled-guidelines
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appkilled-guidelines
 format: md
 ---
 
@@ -48,7 +48,7 @@ format: md
 应用可以通过两种方式感知到被异常终止。
 
 1. 从元能力的Ability的onCreate回调参数中获取终止原因。具体为LaunchParam启动参数中的LastExitReason字段，请参考[元能力LastExitReason章节](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilityconstant#lastexitreason)。
-2. 通过HiAppEvent订阅APP\_KILLED事件。订阅方式请参考[应用终止事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events)。
+2. 通过HiAppEvent订阅APP\_KILLED事件。订阅方式请参考[应用终止事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events)。
 
 ## 分析思路和分析步骤
 
@@ -84,7 +84,7 @@ format: md
    | ResourceLeak(FDLeak) | FD泄漏。 | 尝试通过HiAppEvent订阅RESOURCE\_OVERLIMIT获取更多的FD泄漏日志，找到泄漏点后，及时关闭不必要的文件句柄。 | 是 | 是 |
    | ResourceLeak(ThreadLeak) | 线程泄漏。 | 尝试通过HiAppEvent订阅RESOURCE\_OVERLIMIT获取更多的线程泄漏日志，找到泄漏点后，及时销毁不必要的线程。 | 是 | 是 |
    | ResourceLeak(KernelZoneLeak) | 页表内存泄漏。 | 无需处理。 | 是 | 否 |
-   | IllegalAudioRendererBySuspend | 应用的音频播放未申请合理的后台任务，其退至后台后仍有大量音频播放。 | 应用退至后台时，应避免不必要的后台音频播放，或者合理使用后台任务，具体参考[后台任务开发服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview)。 | 是 | 否 |
+   | IllegalAudioRendererBySuspend | 应用的音频播放未申请合理的后台任务，其退至后台后仍有大量音频播放。 | 应用退至后台时，应避免不必要的后台音频播放，或者合理使用后台任务，具体参考[后台任务开发服务](/docs/dev/app-dev/application-framework/background-task-kit/background-task-overview)。 | 是 | 否 |
    | PowerSaveClean | 整机切换到省电模式或应急模式。 | 无需处理。 | 否 | 否 |
    | RssThresholdKiller | 应用的RSS内存超一定阈值。 | 尝试通过HiAppEvent订阅RESOURCE\_OVERLIMIT获取更多的RSS内存日志，找到泄漏点后，尝试降低应用自身的内存占用，避免出现RSS内存超过阈值的情况。 | 是 | 是 |
    | OomKiller | 整机低内存，触发了内核管控，按照一定策略终止应用。 | 尝试降低应用自身的内存占用，以减少被整机管控策略选中的概率。 | 否 | 否 |
@@ -98,17 +98,17 @@ format: md
    | Logout | 用户注销时，卸载应用沙箱。 | 无需处理。 | 否 | 否 |
    | PermissionUpdate | 应用权限更新。 | 检查应用权限使用是否合理。 | 否 | 否 |
    | aaForceStop | 通过aa命令强制停止应用。 | 无需处理。 | 否 | 否 |
-   | ThreadBlock6S | 应用主线程卡死超时。 | 检查应用主线程是否存在阻塞操作，优化代码逻辑。 | 是 | 是，具体参考[ThreadBlock6S](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#thread_block_6s-应用主线程卡死超时)。 |
-   | AppInputBlock | 用户输入响应超时。 | 检查应用UI响应是否及时，优化输入处理逻辑。 | 是 | 是，具体参考[AppInputBlock](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#app_input_block-用户输入响应超时)。 |
+   | ThreadBlock6S | 应用主线程卡死超时。 | 检查应用主线程是否存在阻塞操作，优化代码逻辑。 | 是 | 是，具体参考[ThreadBlock6S](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#thread_block_6s-应用主线程卡死超时)。 |
+   | AppInputBlock | 用户输入响应超时。 | 检查应用UI响应是否及时，优化输入处理逻辑。 | 是 | 是，具体参考[AppInputBlock](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#app_input_block-用户输入响应超时)。 |
    | LifecycleTimeout | 应用生命周期超时。 | 检查应用生命周期回调是否存在耗时操作。 | 是 | 否 |
-   | JsError | js层程序崩溃。 | 检查js代码是否存在异常，优化错误处理。 | 是 | 是，具体参考[JsError](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines)。 |
-   | CppCrash | native层程序崩溃。 | 检查native代码是否存在异常，优化错误处理。 | 是 | 是，具体参考[CppCrash](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines)。 |
+   | JsError | js层程序崩溃。 | 检查js代码是否存在异常，优化错误处理。 | 是 | 是，具体参考[JsError](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines)。 |
+   | CppCrash | native层程序崩溃。 | 检查native代码是否存在异常，优化错误处理。 | 是 | 是，具体参考[CppCrash](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines)。 |
    | RSPixelMapFdOverLimit | 应用使用图片PixelMap资源超限导致渲染服务fd泄漏。 | 尝试降低应用使用图片pixelMap资源的频率。 | 是 | 否 |
    | CPUHighloadNotify | 应用后台CPU高负载，出现弹框，用户选择停止该应用。 | 尝试降低应用自身的CPU负载。 | 否 | 否 |
    | CPUHighloadUserRequest | 应用后台CPU高负载，设置界面用户选择停止该应用。 | 尝试降低应用自身的CPU负载。 | 否 | 否 |
    | IllegalAudioCapturerBySuspend | 应用录音未申请合理的后台任务，其退至后台后仍进行录音。 | 应用退至后台时，应避免不必要的后台录音，或者合理使用后台任务。 | 是 | 否 |
    | IOHighload | IO高负载。 | 尝试降低应用自身的I/O操作。 | 否 | 否 |
-   | AppFreeze | 应用冻屏无响应。 | 通过HiAppEvent订阅APP\_FREEZE事件，到APP\_FREEZE事件中去匹配。 | 是 | 是，具体参考[AppFreeze](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)。 |
+   | AppFreeze | 应用冻屏无响应。 | 通过HiAppEvent订阅APP\_FREEZE事件，到APP\_FREEZE事件中去匹配。 | 是 | 是，具体参考[AppFreeze](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines)。 |
    | MALICIOUS\_CONTINUOUSTASK\_ACTIVE | 恶意连续任务活跃。 | 检查应用是否存在恶意连续任务，优化任务调度。 | 是 | 否 |
    | RsDataOverflow | RS数据溢出。 | 尝试降低应用RS数据使用量。 | 否 | 否 |
    | HighTemperature | 温度超限。 | 尝试降低应用自身的CPU负载，减少发热。 | 否 | 否 |

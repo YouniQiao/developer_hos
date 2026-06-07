@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "调试周期性预加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-commandtool-debug
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-debugging/cloudfoundation-commandtool-debug
 format: md
 ---
 
@@ -21,7 +21,7 @@ prefetch\_test\_tool是为周期性预加载功能提供的一种命令行工具
 * 您已在开发者联盟官网注册账号并通过实名认证，详情请参见[账号注册认证](https://developer.huawei.com/consumer/cn/doc/start/registration-and-verification-0000001053628148)。
 * 您已在本地安装DevEco Studio 5.0.3 Release及以上版本。
 * 手机/平板终端设备的ROM版本已升级至HarmonyOS 6.0.0 Beta5及以上版本。
-* 设置HAP包的“Build Mode”为“debug”，且已[申请调试证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-cert-0000002283256797)。
+* 设置HAP包的“Build Mode”为“debug”，且已[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)。
 
   ![](./img/3a3b2775.png)
 
@@ -29,11 +29,11 @@ prefetch\_test\_tool是为周期性预加载功能提供的一种命令行工具
 
 prefetch\_test\_tool命令行工具基于hdc shell调试，需要切换到hdc shell命令环境。
 
-1. PC连接调试设备。连接方式请根据实际情况选择，详情请参见[设备连接管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#设备连接管理)。
+1. PC连接调试设备。连接方式请根据实际情况选择，详情请参见[设备连接管理](/docs/dev/app-dev/system/hdc#设备连接管理)。
 2. 打开DevEco Studio，菜单栏选择“View > Tool Windows > Terminal”进入Terminal窗口。
 
    ![](./img/a2af3fa9.png)
-3. 输入hdc shell，切换到hdc shell命令环境。切换过程中如果出现报错，请参见[常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#常见问题)排查解决。
+3. 输入hdc shell，切换到hdc shell命令环境。切换过程中如果出现报错，请参见[常见问题](/docs/dev/app-dev/system/hdc#常见问题)排查解决。
 
    ![](./img/46339005.png)
 

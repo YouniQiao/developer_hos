@@ -1,6 +1,6 @@
 ---
 title: "线程泄漏类问题检测方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-thread-leak-detection
+original_url: /docs/quality/stability-thread-leak-detection
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "DevEco Studio 6.0.0(20)"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-studio-new-features-600
+original_url: /docs/dev/release-notes/deveco-studio-new-features-600
 ---
 
 
@@ -162,7 +162,7 @@ DevEco Studio 6.0.0.848配套使用的命令行工具列表、支持的API范围
 ****开发环境搭建****
 
 - 元服务工程支持Car设备开发。
-- 新建元服务工程时，支持在DevEco Studio页面内注册新的元服务APP ID。具体请参考[创建元服务工程](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-create-project)。
+- 新建元服务工程时，支持在DevEco Studio页面内注册新的元服务APP ID。具体请参考[创建元服务工程](/docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-create-project)。
 - 新增OpenHarmony开源中心仓（OHPM Index）入口，帮助开发者高效筛选和管理三方库。具体请参考[使用OpenHarmony开源中心仓管理三方包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-har-import#section1579838153916)。
 
 ****使用AI智能辅助编程****

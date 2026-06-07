@@ -1,6 +1,6 @@
 ---
 title: "降级到免费档套餐"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-downgrade-plan-0000002247204812
+original_url: /docs/distribute/agc/agc-help-service-price-0000002247180512/agc-help-downgrade-plan-0000002247204812
 format: md
 ---
 

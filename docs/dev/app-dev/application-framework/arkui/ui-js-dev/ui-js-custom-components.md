@@ -1,6 +1,6 @@
 ---
 title: "自定义组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-custom-components
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-custom-components
 format: md
 ---
 

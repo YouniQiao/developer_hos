@@ -1,6 +1,6 @@
 ---
 title: "开启功能开关"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901
+original_url: /docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ## 开启安全加固
 
-安全加固功能主要用于防止非法用户冒用合法的openId接入游戏多媒体服务，增强服务的安全性。在您的服务端，通过游戏ID、游戏密钥、玩家openId等信息计算出游戏签名，然后发送给游戏客户端。客户端在游戏多媒体SDK初始化时传入签名，并完成验签。如果您有自己的服务器，建议您开启安全加固功能，并[使用签名初始化SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-initializing-signatures-harmonyos-0000002338768945)完成接入鉴权。
+安全加固功能主要用于防止非法用户冒用合法的openId接入游戏多媒体服务，增强服务的安全性。在您的服务端，通过游戏ID、游戏密钥、玩家openId等信息计算出游戏签名，然后发送给游戏客户端。客户端在游戏多媒体SDK初始化时传入签名，并完成验签。如果您有自己的服务器，建议您开启安全加固功能，并[使用签名初始化SDK](/docs/dev/game-dev/games-initializing-signatures-harmonyos-0000002338768945)完成接入鉴权。
 
 1. 选择“服务管理”页签，在“接入安全加固”的“状态”栏选择“开启”。
 

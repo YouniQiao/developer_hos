@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "解析文件快捷方式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-parseshortcut
+original_url: /docs/dev/app-dev/application-services/file-manager-service-kit-guide/filemanagerservice-parseshortcut
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "手电筒使用(C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-torch-use
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-torch-use
 format: md
 ---
 

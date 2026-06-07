@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译通过，但是安装时失败报错“Error while Deploy Hap”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-103
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-103
 ---
 
 

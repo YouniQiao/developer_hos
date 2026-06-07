@@ -1,6 +1,6 @@
 ---
 title: "使用DSP进行二阶IIR滤波"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-dsp-iir-filter
+original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-dsp-iir-filter
 format: md
 ---
 

@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "创建地图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-creation
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-creation
 format: md
 ---
 
 
-* **[显示地图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-presenting)**
-* **[切换地图类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-type)**
-* **[显示我的位置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location)**
-* **[显示自定义地图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-style)**
+* **[显示地图](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-presenting)**
+* **[切换地图类型](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-type)**
+* **[显示我的位置](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-location)**
+* **[显示自定义地图](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-style)**

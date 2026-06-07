@@ -1,6 +1,6 @@
 ---
 title: "接入一笔成形"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-instant-shape
+original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-instant-shape
 format: md
 ---
 

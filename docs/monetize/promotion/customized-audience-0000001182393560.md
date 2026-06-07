@@ -1,7 +1,7 @@
 ---
 title: "一方数据人群"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/customized-audience-0000001182393560
+original_url: /docs/monetize/promotion/customized-audience-0000001182393560
 format: md
 ---
 
@@ -52,16 +52,16 @@ format: md
 
 ![](./img/note_3.0-zh-cn_fa9ce1590633.png) 
 
-如果您想要使用此功能，需要申请[特性通行名单](https://developer.huawei.com/consumer/cn/doc/promotion/addtongxing-0000001128278195#ZH-CN_TOPIC_0000001128278195__li101859381367)。
+如果您想要使用此功能，需要申请[特性通行名单](/docs/monetize/promotion/addtongxing-0000001128278195#ZH-CN_TOPIC_0000001128278195__li101859381367)。
 
 1. 单击“工具”-&gt;“人群管理”-&gt;"创建人群"-&gt;"一方数据"，进行参数设置，完成后点击下一步。
 
    ![](./img/zh-cn_image_0000001410872436_0d04304ea175.png "点击放大")
-   - 数据来源：选择您的应用，如果没有您想要选择的应用，您可以单击“新增数据源”进行增加。新增数据源需要您进行[配置回传](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-overview-0000001170938773)。
+   - 数据来源：选择您的应用，如果没有您想要选择的应用，您可以单击“新增数据源”进行增加。新增数据源需要您进行[配置回传](/docs/monetize/promotion/tracking-overview-0000001170938773)。
    - 用户行为组：
      - ![](./img/zh-cn_image_0000001411352132_8ecb9f3f6321.png)交集：如果您增加了多个行为，系统将同时匹配所有行为中重合的数据。
      - ![](./img/zh-cn_image_0000001411192180_bf6acc3bd375.png)并集：如果您增加了多个行为，系统将会任意匹配其中一个行为。
-     - 用户行为：选择您想要的用户行为，如果您想了解每个行为的含义，您可以参考[自定义列指标](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-shu-0000001139892541#ZH-CN_TOPIC_0000001139892541__table10838115914391)。
+     - 用户行为：选择您想要的用户行为，如果您想了解每个行为的含义，您可以参考[自定义列指标](/docs/monetize/promotion/tracking-shu-0000001139892541#ZH-CN_TOPIC_0000001139892541__table10838115914391)。
    - 新建交集行为组：新建的交集行为组将于您新建的用户行为组进行交集，系统将会匹配重合的数据。例如：如果您创建了用户行为A、用户行为B，同时您选择的是并集，即AUB，然后您又新建交集行为组C，最终您成功创建的人群是（AUB）∩C。
    - 新建排除行为组：您可以为人群创建排除行为人群，创建后，系统将不会投放这些排除的人群。
    - 设置时间范围：
@@ -83,7 +83,7 @@ format: md
       - Partner name：选择“Huawei”
       - Connection name：填写名称。
       - Log in with HUAWEI：单击“Log in with HUAWEI”，登录您的广告账户。
-      - Set user identifiers：设置[用户标识符](https://developer.huawei.com/consumer/cn/doc/promotion/glossary-0000001064019898#ZH-CN_TOPIC_0000001064019898__table15944936891)，通过用户标识符将人群同步给鲸鸿动能广告平台，只有符合您的用户标识符的数据才会成功同步。设备标识符，可多选，具体以平台要求为准。
+      - Set user identifiers：设置[用户标识符](/docs/monetize/promotion/glossary-0000001064019898#ZH-CN_TOPIC_0000001064019898__table15944936891)，通过用户标识符将人群同步给鲸鸿动能广告平台，只有符合您的用户标识符的数据才会成功同步。设备标识符，可多选，具体以平台要求为准。
    2. 单击“Audiences”，单击“New Audience”，新建受众人群。
 
       ![](./img/zh-cn_image_0000001249292001_907e6fa37d1f.png "点击放大")

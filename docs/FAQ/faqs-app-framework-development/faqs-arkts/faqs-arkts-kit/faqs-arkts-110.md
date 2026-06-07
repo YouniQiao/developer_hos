@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何查看编译的详细过程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-110
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-110
 ---
 
 

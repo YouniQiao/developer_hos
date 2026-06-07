@@ -1,6 +1,6 @@
 ---
 title: "使用多线程NDK接口并行化构建UI页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-on-multi-thread
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-on-multi-thread
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 
 ## 多线程NDK接口使用方式
 
-* 在使用多线程NDK接口前，建议开发者先阅读[NDK接口概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-ui-overview)，掌握使用NDK接口必备的基本概念和基础知识。
+* 在使用多线程NDK接口前，建议开发者先阅读[NDK接口概述](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-ui-overview)，掌握使用NDK接口必备的基本概念和基础知识。
 * 为降低开发者适配多线程NDK接口的成本，多线程NDK接口的获取和使用方式与现有NDK接口保持一致。只需要调用[OH\_ArkUI\_GetModuleInterface](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-interface-h#oh_arkui_getmoduleinterface)接口，入参传入[ARKUI\_MULTI\_THREAD\_NATIVE\_NODE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-interface-h#arkui_nativeapivariantkind)即可获取多线程NDK接口集合。例如：
 
   ```
@@ -84,7 +84,7 @@ format: md
 * 在非UI线程中调用集合中不支持多线程的接口。
 * 在非UI线程调用多线程NDK接口操作处于Attached状态的组件。
 
-多线程NDK适配过程中遇到的更多问题可以参考[UI并行化常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-ui-build-faq)。
+多线程NDK适配过程中遇到的更多问题可以参考[UI并行化常见问题](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/multi-thread-ui-build-faq)。
 
 ## 多线程NDK接口集合规格
 
@@ -177,7 +177,7 @@ format: md
 
 示例主要展示了如何获取和使用多线程NDK接口，并使用[OH\_ArkUI\_PostAsyncUITask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_postasyncuitask)、[OH\_ArkUI\_PostUITask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_postuitask)和[OH\_ArkUI\_PostUITaskAndWait](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_postuitaskandwait)等接口将组件创建和属性设置等任务分发到多线程并行执行。
 
-为简化编程和工程管理，在开始编写并行化组件创建代码前，请先参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)指导文档，在Native侧使用面向对象的方式将ArkUI\_NodeHandle封装为ArkUINode对象。
+为简化编程和工程管理，在开始编写并行化组件创建代码前，请先参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)指导文档，在Native侧使用面向对象的方式将ArkUI\_NodeHandle封装为ArkUINode对象。
 
 ```
 // index.ets

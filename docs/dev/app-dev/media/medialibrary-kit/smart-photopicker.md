@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用PhotoPicker推荐图片"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/smart-photopicker
+original_url: /docs/dev/app-dev/media/medialibrary-kit/smart-photopicker
 format: md
 ---
 
@@ -36,10 +36,10 @@ format: md
 
 开发者可以通过两种方式实现PhotoPicker，拉起系统图库。请选择其中一种方式，实现PhotoPicker。
 
-* 参考[使用Picker选择媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker)，实现PhotoPicker。
+* 参考[使用Picker选择媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker)，实现PhotoPicker。
 
   在配置参数**photoAccessHelper.PhotoSelectOptions**时，媒体文件类型MIMEType（[PhotoViewMIMETypes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photoviewmimetypes)）需要配置为IMAGE\_TYPE或IMAGE\_VIDEO\_TYPE。
-* 参考[使用PhotoPicker组件访问图片/视频](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-photoviewpicker)，实现PhotoPicker。
+* 参考[使用PhotoPicker组件访问图片/视频](/docs/dev/app-dev/media/medialibrary-kit/component-guidelines-photoviewpicker)，实现PhotoPicker。
 
   在配置PhotoPickerComponent的属性**pickerOptions**时，媒体文件类型MIMEType（[PhotoViewMIMETypes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photoviewmimetypes)）需要配置为IMAGE\_TYPE或IMAGE\_VIDEO\_TYPE。
 

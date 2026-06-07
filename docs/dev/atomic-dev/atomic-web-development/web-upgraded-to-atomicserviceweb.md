@@ -1,6 +1,6 @@
 ---
 title: "从ArkWeb组件升级为AtomicServiceEnhancedWeb"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/web-upgraded-to-atomicserviceweb
+original_url: /docs/dev/atomic-dev/atomic-web-development/web-upgraded-to-atomicserviceweb
 format: md
 ---
 

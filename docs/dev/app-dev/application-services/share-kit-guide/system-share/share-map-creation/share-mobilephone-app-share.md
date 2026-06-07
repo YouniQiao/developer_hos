@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过分享面板发起分享"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-mobilephone-app-share
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-mobilephone-app-share
 format: md
 ---
 
@@ -26,11 +26,11 @@ format: md
 
 | 分享场景 | 参考链接 |
 | --- | --- |
-| 分享App Linking直达应用 | [分享App Linking直达应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-link#分享app-linking直达应用) |
-| 分享图片 | [分享图片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-image) |
-| 分享视频 | [分享视频](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-video) |
-| 分享普通链接直达浏览器 | [分享普通链接直达浏览器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-link#分享普通链接直达浏览器) |
-| 分享文本 | [分享文本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-text) |
+| 分享App Linking直达应用 | [分享App Linking直达应用](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-link#分享app-linking直达应用) |
+| 分享图片 | [分享图片](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-image) |
+| 分享视频 | [分享视频](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-video) |
+| 分享普通链接直达浏览器 | [分享普通链接直达浏览器](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-link#分享普通链接直达浏览器) |
+| 分享文本 | [分享文本](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-text) |
 
 **2in1设备可通过配置的方式决定分享面板的显示位置。** 参考如下：
 

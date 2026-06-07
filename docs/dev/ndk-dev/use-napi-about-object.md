@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口进行object相关开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-object
+original_url: /docs/dev/ndk-dev/use-napi-about-object
 format: md
 ---
 
@@ -38,7 +38,7 @@ Node-API提供了相关接口对object进行基本操作，例如创建对象、
 
 ## 使用示例
 
-Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
+Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
 
 ### napi\_get\_prototype
 

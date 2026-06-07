@@ -1,15 +1,15 @@
 ---
 title: "应用共享目录配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file-configuration
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/share-app-file-configuration
 format: md
 ---
 
 
-从API version 23开始，系统新增支持共享目录配置功能。在[应用文件分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file)场景中，开发者可配置共享目录范围，防止应用敏感数据泄露。
+从API version 23开始，系统新增支持共享目录配置功能。在[应用文件分享](/docs/dev/app-dev/application-framework/core-file-kit/app-file/share-app-file)场景中，开发者可配置共享目录范围，防止应用敏感数据泄露。
 
 ## 开发步骤
 
-1. 开发者可在应用模块级配置文件[src/main/module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)的module标签中添加shareFiles标签，以实现对沙箱共享目录权限的限制。若未配置共享目录，则默认允许应用共享其自身沙箱内的文件。
+1. 开发者可在应用模块级配置文件[src/main/module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)的module标签中添加shareFiles标签，以实现对沙箱共享目录权限的限制。若未配置共享目录，则默认允许应用共享其自身沙箱内的文件。
 
    **shareFiles标签**
 
@@ -36,7 +36,7 @@ format: md
 
    | 属性名称 | 含义 | 数据类型 | 必填 |
    | --- | --- | --- | --- |
-   | path | 共享路径配置，当前仅支持[el2目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file#应用可分享目录)，scopes中的path不可重复。支持的取值如下：  - /base/files  - /base/preferences  - /base/haps | string | scopes存在时必填 |
+   | path | 共享路径配置，当前仅支持[el2目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/share-app-file#应用可分享目录)，scopes中的path不可重复。支持的取值如下：  - /base/files  - /base/preferences  - /base/haps | string | scopes存在时必填 |
    | permission | 共享路径权限。支持的取值如下：  - r：只读。  - r+w：读写。 | string | scopes存在时必填 |
 
 ![](./img/70bf27ff.png)

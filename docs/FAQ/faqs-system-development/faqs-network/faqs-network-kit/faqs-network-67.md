@@ -1,6 +1,6 @@
 ---
 title: "如何监听判断VPN类型网络"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-67
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-67
 format: md
 ---
 

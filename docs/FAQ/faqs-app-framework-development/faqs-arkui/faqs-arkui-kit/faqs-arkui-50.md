@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在自定义组件的构建流程里跟踪组件数据或者状态，如在build里增加日志跟踪状态变量等"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-50
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-50
 ---
 
 
@@ -43,4 +43,4 @@ struct CountModifier {
 
 **参考链接**
 
-[watch和自定义组件更新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch#watch和自定义组件更新)
+[watch和自定义组件更新](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch#watch和自定义组件更新)

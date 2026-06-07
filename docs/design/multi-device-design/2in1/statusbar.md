@@ -1,7 +1,7 @@
 ---
 title: 应用状态栏接入
 sidebar_label: 应用状态栏接入
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/statusbar-0000002319710910
+original_url: /docs/design/multi-device-design/2in1/statusbar
 format: md
 ---
 
@@ -101,7 +101,7 @@ format: md
 
 ### 图标样式
 
-状态栏是桌面重要的一部分，视觉效果需要和谐美观。不推荐直接使用色彩鲜艳的应用图标，推荐上传系统图标，具体样式请参阅[HarmonyOS Symbol](https://developer.huawei.com/consumer/cn/doc/design-guides/system-icons-0000001929854962)。
+状态栏是桌面重要的一部分，视觉效果需要和谐美观。不推荐直接使用色彩鲜艳的应用图标，推荐上传系统图标，具体样式请参阅[HarmonyOS Symbol](/docs/design/general-design-basics/visual-design/harmonyos-symbol)。
 
 |  |  |
 | --- | --- |
@@ -121,4 +121,4 @@ format: md
 
 ### 开发文档
 
-应用接入状态栏请参阅开发指导[Status Bar Extension Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/status-bar-extension-kit-guide)。
+应用接入状态栏请参阅开发指导[Status Bar Extension Kit](/docs/dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide)。

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "UIAbility和UIExtensionAbility有什么区别？分别推荐在什么场景使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-65
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-65
 ---
 
 
@@ -38,4 +38,4 @@ UIAbility 用于实现独立界面，UIExtensionAbility 用于功能扩展。
 
 **参考链接**
 
-[UIAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-overview)
+[UIAbility组件概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-overview)

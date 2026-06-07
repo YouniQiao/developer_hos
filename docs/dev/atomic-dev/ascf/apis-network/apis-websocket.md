@@ -1,6 +1,6 @@
 ---
 title: "WebSocket"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-websocket
+original_url: /docs/dev/atomic-dev/ascf/apis-network/apis-websocket
 format: md
 ---
 
@@ -13,7 +13,7 @@ has.connectSocket(Object object): SocketTask
 
 ![](./img/c02b2172.png)
 
-* 开发者服务器接口地址，必须是wss协议，并在AGC完成[服务器域名配置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)。
+* 开发者服务器接口地址，必须是wss协议，并在AGC完成[服务器域名配置](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。
 * 如果没有全局实例的话，会生成一个对应的全局实例。可以通过 has.sendSocketMessage 进行消息发送。
 * 一个元服务内，最多同时存在5个全局实例。
 

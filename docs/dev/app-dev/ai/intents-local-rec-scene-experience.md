@@ -1,6 +1,6 @@
 ---
 title: "场景体验"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-scene-experience
+original_url: /docs/dev/app-dev/ai/intents-local-rec-scene-experience
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ## 卡片展示效果
 
-基于POI（Point of interest）和Beacon（蓝牙信标设备）触发的位置推荐场景，由近场服务提供模板卡片的配置入口，开发者开通近场服务权限后自行配置。卡片的尺寸样式可参考：[近场服务-POI接入小艺建议场景-创建全网态服务-创建全网态服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-xiaoyi-create-formalstate-service-0000002349016144)
+基于POI（Point of interest）和Beacon（蓝牙信标设备）触发的位置推荐场景，由近场服务提供模板卡片的配置入口，开发者开通近场服务权限后自行配置。卡片的尺寸样式可参考：[近场服务-POI接入小艺建议场景-创建全网态服务-创建全网态服务](/docs/distribute/agc/agc-help-poi-apply-formalstate-service-0000002349016132/agc-help-xiaoyi-create-formalstate-service-0000002349016144)
 
 基于WLAN指纹和Cell触发的位置推荐场景，意图框架提供标准的卡片模板。卡片由华为侧统一配置。
 

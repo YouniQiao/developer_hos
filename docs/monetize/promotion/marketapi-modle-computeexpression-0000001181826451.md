@@ -1,7 +1,7 @@
 ---
 title: "ComputeExpression"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-computeexpression-0000001181826451
+original_url: /docs/monetize/promotion/marketapi-modle-computeexpression-0000001181826451
 format: md
 ---
 

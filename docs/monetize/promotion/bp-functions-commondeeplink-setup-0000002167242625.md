@@ -1,7 +1,7 @@
 ---
 title: "配置普通Deeplink"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-commondeeplink-setup-0000002167242625
+original_url: /docs/monetize/promotion/bp-functions-commondeeplink-setup-0000002167242625
 format: md
 ---
 

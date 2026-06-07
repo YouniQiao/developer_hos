@@ -1,6 +1,6 @@
 ---
 title: "服务动态授权码Button"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/scenario-fusion-button-atomic-getservicecode
+original_url: /docs/dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-getservicecode
 format: md
 ---
 

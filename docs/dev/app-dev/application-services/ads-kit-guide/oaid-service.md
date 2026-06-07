@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开放匿名设备标识服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/oaid-service
+original_url: /docs/dev/app-dev/application-services/ads-kit-guide/oaid-service
 format: md
 ---
 
@@ -58,7 +58,7 @@ OAID会在下述场景中发生变化：
 
 ### 开发步骤
 
-1. 在模块的module.json5文件中，申请跨应用关联权限[ohos.permission.APP\_TRACKING\_CONSENT](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionapp_tracking_consent)，该权限为user\_grant权限，当申请的权限为user\_grant权限时，reason，abilities标签必填，配置方式参见[requestPermissions标签说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#在配置文件中声明权限)，示例代码如下所示：
+1. 在模块的module.json5文件中，申请跨应用关联权限[ohos.permission.APP\_TRACKING\_CONSENT](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user#ohospermissionapp_tracking_consent)，该权限为user\_grant权限，当申请的权限为user\_grant权限时，reason，abilities标签必填，配置方式参见[requestPermissions标签说明](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)，示例代码如下所示：
 
    ```
    {
@@ -82,7 +82,7 @@ OAID会在下述场景中发生变化：
 
    ![](./img/ede90bef.png)
 
-   其中context的获取方式参见[各类Context的获取方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#context的获取方式)。示例代码如下所示：
+   其中context的获取方式参见[各类Context的获取方式](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#context的获取方式)。示例代码如下所示：
 
    ```
    import { abilityAccessCtrl, PermissionRequestResult } from '@kit.AbilityKit';

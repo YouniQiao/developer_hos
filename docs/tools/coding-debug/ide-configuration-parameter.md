@@ -1,7 +1,7 @@
 ---
 title: "DevEco Studio配置参数列表"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-configuration-parameter
+original_url: /docs/tools/coding-debug/ide-configuration-parameter
 format: md
 ---
 

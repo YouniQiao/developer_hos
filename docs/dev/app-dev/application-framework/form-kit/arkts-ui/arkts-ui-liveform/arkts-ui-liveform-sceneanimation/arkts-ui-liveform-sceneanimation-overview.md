@@ -1,6 +1,6 @@
 ---
 title: "场景动效类型互动卡片概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-overview
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-sceneanimation/arkts-ui-liveform-sceneanimation-overview
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 **非激活态**：在此状态下，卡片与普通卡片行为无异，遵循既有的卡片开发规范，卡片UI由卡片提供方widgetCard.ets中的内容所呈现。
 
-**激活态**： 表示互动卡片动效渲染状态，在此状态下，卡片UI由卡片提供方所开发的[LiveFormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-liveformextensionability)对应page页面完成渲染。详细可参考[场景动效类型互动卡片开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-development)。
+**激活态**： 表示互动卡片动效渲染状态，在此状态下，卡片UI由卡片提供方所开发的[LiveFormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-liveformextensionability)对应page页面完成渲染。详细可参考[场景动效类型互动卡片开发指导](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-sceneanimation/arkts-ui-liveform-sceneanimation-development)。
 
 **图1** 互动卡片状态切换说明
 
@@ -77,7 +77,7 @@ format: md
 1. 包含了卡片（矩形ABCD）的全部区域。
 2. 不超过矩形IJKL（矩形IJKL完整包含矩形EFGH）。
 
-具体可参考[场景动效类型互动卡片开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-development)。
+具体可参考[场景动效类型互动卡片开发指导](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-sceneanimation/arkts-ui-liveform-sceneanimation-development)。
 
 ### 功耗约束
 

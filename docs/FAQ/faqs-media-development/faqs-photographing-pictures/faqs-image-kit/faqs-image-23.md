@@ -1,6 +1,6 @@
 ---
 title: "如何生成带logo的二维码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-23
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-23
 format: md
 ---
 

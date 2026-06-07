@@ -1,13 +1,13 @@
 ---
 title: "元服务框架开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-framework-development
+original_url: /docs/dev/atomic-dev/atomic-service-framework-development/atomic-service-framework-development
 format: md
 ---
 
 
 ## 应用模型
 
-元服务的应用模型只支持Stage模型，参考[Stage模型开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development-overview)。
+元服务的应用模型只支持Stage模型，参考[Stage模型开发指南](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-development-overview)。
 
 元服务与传统应用的应用模型差异点主要体现在ExtensionAbility，具体如下：
 
@@ -24,9 +24,9 @@ format: md
 
 ## 访问控制
 
-元服务针对访问控制的开发与传统应用的开发方式大致相同，详见[访问控制开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-token-overview)。
+元服务针对访问控制的开发与传统应用的开发方式大致相同，详见[访问控制开发指导](/docs/dev/app-dev/system/system-security/access-control/access-token-overview)。
 
-* **[分包加载](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-subpackage-loading)**
-* **[跳转](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-routing)**
-* **[拉起其他元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/start-other-atomicservices)**
-* **[元服务更新](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-update)**
+* **[分包加载](/docs/dev/atomic-dev/atomic-subpackage-loading/atomic-subpackage-loading)**
+* **[跳转](/docs/dev/atomic-dev/atomic-service-routing/atomic-service-routing)**
+* **[拉起其他元服务](/docs/dev/atomic-dev/atomic-service-framework-development/start-other-atomicservices)**
+* **[元服务更新](/docs/dev/atomic-dev/atomic-service-framework-development/atomic-service-update)**

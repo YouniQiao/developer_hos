@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何监听Tabs里面TabContent页面显示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-454
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-454
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "生成回归测试包时，如果出现“setup-regression.py解析失败，请检查setup-regression.py的写法是否规范”的错误提示，应如何处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-3
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-3
 ---
 
 

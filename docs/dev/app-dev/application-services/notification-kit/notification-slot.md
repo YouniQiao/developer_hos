@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理通知渠道"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-slot
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-slot
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
 用户可以通过“设置 > 通知和状态栏”进入对应的应用，管理该应用的通知渠道。当应用中的“允许通知”开关开启时，横幅通知默认关闭（不支持应用配置、用户可手动开启），锁屏通知、桌面角标、响铃和振动等默认开启。
 
-| SlotType | 取值 | 分类 | [对应Push消息分类标准](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#通知消息分类标准与提醒方式) | 通知中心 | 横幅 | 锁屏 | 铃声/振动 | 状态栏图标 | 自动亮屏 |
+| SlotType | 取值 | 分类 | [对应Push消息分类标准](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#通知消息分类标准与提醒方式) | 通知中心 | 横幅 | 锁屏 | 铃声/振动 | 状态栏图标 | 自动亮屏 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | SOCIAL\_COMMUNICATION | 1 | 社交通信 | IM  VOIP  MISS\_CALL | Y | Y | Y | Y | Y | Y |
 | SERVICE\_INFORMATION | 2 | 服务提醒 | TRAVEL  HEALTH  WORK  ACCOUNT  EXPRESS  FINANCE  DEVICE\_REMINDER  MAIL  PLAY\_VOICE  SUBSCRIPTION | Y | Y | Y | Y | Y | Y |

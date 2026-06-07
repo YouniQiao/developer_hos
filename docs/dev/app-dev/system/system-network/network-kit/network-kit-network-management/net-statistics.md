@@ -1,6 +1,6 @@
 ---
 title: "统计网络流量消耗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-statistics
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-statistics
 format: md
 ---
 

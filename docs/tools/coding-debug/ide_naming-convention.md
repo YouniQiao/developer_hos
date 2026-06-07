@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/naming-convention"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_naming-convention
+original_url: /docs/tools/coding-debug/ide_naming-convention
 format: md
 ---
 

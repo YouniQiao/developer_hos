@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口注册和使用环境清理钩子"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-cleanuphook
+original_url: /docs/dev/ndk-dev/use-napi-about-cleanuphook
 format: md
 ---
 
@@ -31,7 +31,7 @@ Node-API提供了注册和取消注册清理钩子函数的功能，以下是相
 
 ## 使用示例
 
-Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
+Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
 
 ### napi\_add\_env\_cleanup\_hook
 
@@ -164,7 +164,7 @@ parent.onmessage = (message) => {
 
 worker相关开发配置和流程参考以下链接：
 
-[使用Worker进行线程间通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)
+[使用Worker进行线程间通信](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction)
 
 ### napi\_add\_async\_cleanup\_hook
 

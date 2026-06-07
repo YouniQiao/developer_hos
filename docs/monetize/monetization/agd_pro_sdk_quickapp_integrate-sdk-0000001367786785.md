@@ -1,7 +1,7 @@
 ---
 title: "集成AGD Pro接口"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_quickapp_integrate-sdk-0000001367786785
+original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_integrate-sdk-0000001367786785
 format: md
 ---
 

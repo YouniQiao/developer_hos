@@ -1,6 +1,6 @@
 ---
 title: "使用DevEco Studio模板构建NDK工程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-ide
+original_url: /docs/dev/ndk-dev/build-with-ndk-ide
 format: md
 ---
 

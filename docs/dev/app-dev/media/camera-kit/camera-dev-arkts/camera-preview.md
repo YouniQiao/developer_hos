@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "预览(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preview
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preview
 format: md
 ---
 
 
-在开发相机应用时，需要先[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。
+在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 预览是启动相机后看见的画面，通常在拍照和录像前执行。
 

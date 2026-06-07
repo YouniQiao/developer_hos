@@ -1,7 +1,7 @@
 ---
 title: 进度条
 sidebar_label: 进度条
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/progress-0000001929656644
+original_url: /docs/design/components/view-components/progress
 format: md
 ---
 

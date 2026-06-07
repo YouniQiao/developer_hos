@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何使用工具库对JSON进行解析与生成"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-106
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-106
 ---
 
 

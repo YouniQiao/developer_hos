@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Image组件长按和拖拽的系统手势和自定义手势冲突"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-365
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-365
 ---
 
 
@@ -50,4 +50,4 @@ struct Index {
 
 **参考链接**
 
-[绑定手势方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-binding)
+[绑定手势方法](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-binding)

@@ -1,6 +1,6 @@
 ---
 title: "checkbox-group"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-checkbox-group
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-checkbox-group
 format: md
 ---
 
@@ -17,4 +17,4 @@ format: md
 
 **示例**
 
-见[checkbox组件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-checkbox#示例)示例代码。
+见[checkbox组件](/docs/dev/atomic-dev/ascf/components-form-components/components-checkbox#示例)示例代码。

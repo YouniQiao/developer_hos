@@ -1,6 +1,6 @@
 ---
 title: "AgentExtensionAbility配置文件说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agent-extension-configuration
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/agent/agent-extension-configuration
 format: md
 ---
 
@@ -78,7 +78,7 @@ format: md
 
 | 属性名称 | 含义 | 数据类型 | 是否可缺省 |
 | --- | --- | --- | --- |
-| deviceTypes | Agent支持的设备类型列表，取值范围参考[deviceTypes](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#devicetypes标签)。Agent配置的设备类型列表需要为所属Module设备类型列表的一个子集，如果配置了Module之外的设备类型，系统将会忽略掉。 | 字符串数组 | 可缺省，缺省为应用的deviceTypes。 |
+| deviceTypes | Agent支持的设备类型列表，取值范围参考[deviceTypes](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#devicetypes标签)。Agent配置的设备类型列表需要为所属Module设备类型列表的一个子集，如果配置了Module之外的设备类型，系统将会忽略掉。 | 字符串数组 | 可缺省，缺省为应用的deviceTypes。 |
 | minAppVersion | Agent运行的最低应用版本要求，使用语义化版本号格式（如“1.0.0”），指定运行该Agent所需的应用最低版本，低于此版本的应用将无法正确加载和运行该Agent，最大长度为32字节。 | 字符串 | 可缺省，缺省为空。 |
 
 ## agent\_config.json配置文件示例

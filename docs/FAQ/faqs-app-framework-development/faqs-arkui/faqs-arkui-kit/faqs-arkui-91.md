@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现文本竖向排列"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-91
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-91
 ---
 
 

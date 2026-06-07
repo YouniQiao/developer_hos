@@ -1,6 +1,6 @@
 ---
 title: "批量变更门店"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-store-batch-update
+original_url: /docs/dev/atomic-dev/instant-service-app-store/instant-service-app-store-batch-update
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "分析平台接入鲸鸿动能广告平台及referrer归因"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/tracking-fenxipintai-0000001262289582
+original_url: /docs/monetize/promotion/tracking-fenxipintai-0000001262289582
 format: md
 ---
 

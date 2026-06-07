@@ -1,7 +1,7 @@
 ---
 title: "多设备即时通讯界面"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/multi-communication-app
+original_url: /docs/dev/app-dev/multi-device/multi-communication-app
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ![](./img/23cd3a26.png)
 
-阅读本文前，开发者需熟悉[ArkUI（方舟UI框架）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui)和[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)相关知识。
+阅读本文前，开发者需熟悉[ArkUI（方舟UI框架）](/docs/dev/app-dev/application-framework/arkui)和[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)相关知识。
 
 下文将从UX设计、工程管理、页面开发三个角度，介绍即时通讯应用在多设备开发中的最佳实践。
 
@@ -27,7 +27,7 @@ format: md
 
 ## UX设计
 
-即时通讯应用的UX设计可参考社交通讯类多设备响应式设计指南的[社交通讯类](https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples2-0000001793536901)章节，设计参考图如下所示。
+即时通讯应用的UX设计可参考社交通讯类多设备响应式设计指南的[社交通讯类](/docs/design/app-design-practices/social-communication)章节，设计参考图如下所示。
 
 ![](./img/09e8488c.png "点击放大")
 
@@ -37,13 +37,13 @@ format: md
 
 ###创建工程
 
-建议开发者参考[多设备工程部署与发布](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-ide)相关内容，掌握分层架构工程的创建与配置方法后，创建出模板项目工程。然后根据即时通讯应用的开发需求进行针对性修改，确保工程架构贴合实际业务需求。
+建议开发者参考[多设备工程部署与发布](/docs/dev/app-dev/multi-device/bpta-multi-device-ide)相关内容，掌握分层架构工程的创建与配置方法后，创建出模板项目工程。然后根据即时通讯应用的开发需求进行针对性修改，确保工程架构贴合实际业务需求。
 
 ###工程结构
 
 即时通讯应用根据推荐的分层架构按照products、features、common三个层级组织代码工程。每个层级的设计如下：
 
-* products层：即时通讯应用需要适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板和电脑。由于电脑设备的界面布局与其他设备差异较大，因此在products层单独创建名称为“pc”的HAP包作为电脑端的应用入口；而直板机、双折叠（Mate X系列）、三折叠、阔折叠和平板设备上的界面布局整体相似，部分差异可以通过“一多”的[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout)和[响应式布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)进行适配，因此在products层创建一个名称为“default”的HAP包作为这些设备的应用入口。
+* products层：即时通讯应用需要适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板和电脑。由于电脑设备的界面布局与其他设备差异较大，因此在products层单独创建名称为“pc”的HAP包作为电脑端的应用入口；而直板机、双折叠（Mate X系列）、三折叠、阔折叠和平板设备上的界面布局整体相似，部分差异可以通过“一多”的[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout)和[响应式布局](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)进行适配，因此在products层创建一个名称为“default”的HAP包作为这些设备的应用入口。
 * features层：即时通讯应用主要包含三个核心业务模块，分别是消息（message）、社交（social）和用户详情（user）。在features层为三个业务模块分别创建对应的HAR包，供products层按需引用。三个业务模块相对独立，互不依赖，便于后续维护与迭代。
 * common层：为实现代码复用、减少冗余，在common层集中存放公共常量、路由跳转工具以及窗口管理工具等需要被多个模块共用的基础能力，供其他模块统一调用。
 
@@ -111,13 +111,13 @@ format: md
 
 * 窗口模式
 
-  适配设备支持全屏、分屏、悬浮窗和自由窗口模式，具体参见[窗口模式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode)。其中，分屏模式与悬浮窗通常无特殊设计，可通过系统方式进入。应用内监听窗口尺寸变化，[通过断点刷新UI](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配全屏、分屏、悬浮窗、自由窗口模式下的布局。
+  适配设备支持全屏、分屏、悬浮窗和自由窗口模式，具体参见[窗口模式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode)。其中，分屏模式与悬浮窗通常无特殊设计，可通过系统方式进入。应用内监听窗口尺寸变化，[通过断点刷新UI](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配全屏、分屏、悬浮窗、自由窗口模式下的布局。
 * 窗口方向
 
-  可以通过[window.setPreferredOrientation()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setpreferredorientation9)设置窗口方向显示类型。窗口方向包含四种类型，分别是竖屏、横屏、反向竖屏和反向横屏。相关内容可参考[窗口方向](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction)。在即时通讯应用中，通过module.json5配置文件，建议设置为FOLLOW\_DESKTOP。
+  可以通过[window.setPreferredOrientation()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setpreferredorientation9)设置窗口方向显示类型。窗口方向包含四种类型，分别是竖屏、横屏、反向竖屏和反向横屏。相关内容可参考[窗口方向](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction)。在即时通讯应用中，通过module.json5配置文件，建议设置为FOLLOW\_DESKTOP。
 * 窗口沉浸式
 
-  根据UX设计，需要实现不同窗口模式（全屏、分屏、悬浮窗、自由窗口）下的沉浸式效果，可参考[窗口沉浸式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive)。推荐开发者使用组件级的沉浸方案[实现沉浸效果](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive#section180431120426)，同时需要进行动态安全区避让，确保沉浸式显示效果。自由窗口模式下使用[window.setWindowDecorVisible(false)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)设置隐藏标题栏，仅保留右上角三键。此时，应用页面拓展至标题栏区域，实现沉浸式显示效果。
+  根据UX设计，需要实现不同窗口模式（全屏、分屏、悬浮窗、自由窗口）下的沉浸式效果，可参考[窗口沉浸式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive)。推荐开发者使用组件级的沉浸方案[实现沉浸效果](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive#section180431120426)，同时需要进行动态安全区避让，确保沉浸式显示效果。自由窗口模式下使用[window.setWindowDecorVisible(false)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)设置隐藏标题栏，仅保留右上角三键。此时，应用页面拓展至标题栏区域，实现沉浸式显示效果。
 
 ###消息页
 
@@ -137,7 +137,7 @@ format: md
 | 2 | 消息列表 | 使用响应式组件[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)实现。通过[响应式环境变量](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/responsive-env-system-property)监听窗口尺寸布局断点（[windowsizelayoutbreakpointinfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-observer#windowsizelayoutbreakpointinfo22)）变化，动态调整列表边距。 |
 | 3 | 底部导航栏 | 使用响应式组件[HdsTabs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdstabs)实现。通过[barFloatingStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdstabs#barfloatingstyle)属性设置页签悬浮样式。 |
 | 4 | 消息详情 | 使用响应式组件[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)实现。通过设置[layoutWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutweight)属性，当设备高度小于内容高度时，可滑动查看消息信息。 |
-| 5 | 消息输入区域 | 使用沿水平方向布局容器组件[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)嵌套媒体组件[image](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-image)实现。通过设置[layoutWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutweight)属性，消息输入框在不同断点下自适应拉伸。 |
+| 5 | 消息输入区域 | 使用沿水平方向布局容器组件[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)嵌套媒体组件[image](/docs/dev/atomic-dev/ascf/components-media-components/components-image)实现。通过设置[layoutWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutweight)属性，消息输入框在不同断点下自适应拉伸。 |
 | 6 | PC设备左侧导航栏 | 使用侧边栏容器[SideBarContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-sidebarcontainer)实现。通过设置[showSideBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-sidebarcontainer#showsidebar)属性，确保侧边栏固定显示。 |
 
 ###通讯录页

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "进程信息查询场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-queryproc-arkts
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-queryproc-arkts
 format: md
 ---
 
@@ -38,7 +38,7 @@ format: md
 ![](./img/b8bd5b4e.png)
 
 * 在开发准备过程中，需要申请权限：ohos.permission.QUERY\_AUDIT\_EVENT。
-* 只允许清单内的企业类应用申请该权限，申请方式请参考：[申请使用企业类应用可用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-enterprise-apps)。
+* 只允许清单内的企业类应用申请该权限，申请方式请参考：[申请使用企业类应用可用权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-enterprise-apps)。
 
 1. 导入Device Security Kit模块及相关公共模块。
 

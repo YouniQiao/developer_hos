@@ -1,7 +1,7 @@
 ---
 format: md
 title: "两个UIAbility之间可通过哪些方法实现数据传递"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-31
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-31
 ---
 
 
@@ -16,12 +16,12 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[启动应用内的UIAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction)
+[启动应用内的UIAbility组件](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-intra-device-interaction)
 
-[管理应用拥有的状态概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-application-state-management-overview)
+[管理应用拥有的状态概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-application-state-management-overview)
 
-[UIAbility组件与UI的数据同步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-data-sync-with-ui)
+[UIAbility组件与UI的数据同步](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-data-sync-with-ui)
 
-[线程模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/thread-model-stage)
+[线程模型](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/thread-model-stage)
 
-[公共事件简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-overview)
+[公共事件简介](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-overview)

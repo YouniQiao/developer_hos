@@ -1,7 +1,7 @@
 ---
 title: "创建媒体及展示位"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_creat-media-display-position-0000001246432546
+original_url: /docs/monetize/monetization/agd_pro_api_creat-media-display-position-0000001246432546
 format: md
 ---
 
@@ -97,7 +97,7 @@ format: md
    ![](./img/agd_pro_api_creat-media-display-position-0000001246432546_14.png)
 
    * “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。
-   * 如需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_commission-0000001411154350#section16922317523)。
+   * 如需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](/docs/monetize/monetization/agd_pro_api_commission-0000001411154350#section16922317523)。
 
    ![](./img/agd_pro_api_creat-media-display-position-0000001246432546_15.png)
 8. 点击“高级设置”，选择“屏蔽规则”，完成选择后点击“提交”。
@@ -105,6 +105,6 @@ format: md
    ![](./img/agd_pro_api_creat-media-display-position-0000001246432546_16.png)
 
    * 一个展示位最多可选择5个屏蔽规则。
-   * 您可以点击“屏蔽规则管理”自行设置屏蔽规则，详见[屏蔽管理](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_commission-0000001411154350#section16131135163311)。
+   * 您可以点击“屏蔽规则管理”自行设置屏蔽规则，详见[屏蔽管理](/docs/monetize/monetization/agd_pro_api_commission-0000001411154350#section16131135163311)。
 
    ![](./img/agd_pro_api_creat-media-display-position-0000001246432546_17.png)

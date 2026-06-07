@@ -1,6 +1,6 @@
 ---
 title: "应用偏好语言"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-preferred-language
+original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-preferred-language
 format: md
 ---
 

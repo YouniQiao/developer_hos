@@ -1,6 +1,6 @@
 ---
 title: "应用内支付"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-iap-development
+original_url: /docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-iap-development
 format: md
 ---
 

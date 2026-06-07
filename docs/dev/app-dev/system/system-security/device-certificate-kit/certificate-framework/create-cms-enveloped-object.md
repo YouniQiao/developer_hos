@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "证书CMS封装"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-cms-enveloped-object
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-cms-enveloped-object
 format: md
 ---
 

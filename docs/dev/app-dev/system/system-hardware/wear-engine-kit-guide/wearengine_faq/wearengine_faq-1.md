@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如果工程已有APP ID，是否需要重新申请，填写新的APP ID"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-1
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-1
 format: md
 ---
 

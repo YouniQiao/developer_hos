@@ -1,13 +1,13 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "任务执行类场景方案（装饰器接入方式）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator
 format: md
 ---
 
 
-* **[方案概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-overview)**
-* **[基于Link的装饰器方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-link)**
-* **[基于Page的装饰器方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-page)**
-* **[基于函数的装饰器方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-decorator-function)**
-* **[自定义意图相关信息定义规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-specification)**
+* **[方案概述](/docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator/intents-skill-all-rec-decorator-overview)**
+* **[基于Link的装饰器方案](/docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator/intents-skill-all-rec-decorator-link)**
+* **[基于Page的装饰器方案](/docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator/intents-skill-all-rec-decorator-page)**
+* **[基于函数的装饰器方案](/docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator/intents-skill-all-rec-decorator-function)**
+* **[自定义意图相关信息定义规范](/docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator/intents-skill-all-rec-specification)**

@@ -1,20 +1,20 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "内容搜索方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-content-search
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-search-rec/intents-search-rec-access-programme/intents-skill-all-rec-content-search
 format: md
 ---
 
 
 ## 方案概述
 
-当用户使用应用/元服务时，开发者可以按照标准意图Schema（具体意图详见[各垂域意图Schema](https://developer.huawei.com/consumer/cn/doc/service/intents-schema-0000001901962713)）向系统共享数据（数据包含用户行为和内容实体），并实现意图调用（空调用与传参调用）。已实现用户点击卡片后，可后台执行功能（例如播放指定歌曲）或跳转至指定内容页面（例如指定的歌曲播放页面）。
+当用户使用应用/元服务时，开发者可以按照标准意图Schema（具体意图详见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)）向系统共享数据（数据包含用户行为和内容实体），并实现意图调用（空调用与传参调用）。已实现用户点击卡片后，可后台执行功能（例如播放指定歌曲）或跳转至指定内容页面（例如指定的歌曲播放页面）。
 
 ![](./img/d64b6ba6.png)
 
 ## 意图声明
 
-以歌曲本地搜索特性为例，首先要注册播放歌曲意图（PlayMusic），其他意图见[各垂域意图Schema](https://developer.huawei.com/consumer/cn/doc/service/intents-schema-0000001901962713)。
+以歌曲本地搜索特性为例，首先要注册播放歌曲意图（PlayMusic），其他意图见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)。
 
 开发者需要编辑对应的意图配置insight\_intent.json文件实现意图注册。insight\_intent.json文件需要放置在module下面的指定目录：src/main/resources/base/profile/insight\_intent.json，并且整个工程中只能存在一个insight\_intent.json文件。
 
@@ -53,7 +53,7 @@ format: md
 
 构建意图对象，并且调用[insightIntent.shareIntent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/intents-arkts-api-insightintent#shareintent-1)，实现意图共享。可同时构建多个PlayMusic或PlayMusicList的意图对象。
 
-以歌曲本地搜索特性为例，首先要注册播放歌曲意图（PlayMusic），其他意图见[各垂域意图Schema](https://developer.huawei.com/consumer/cn/doc/service/intents-schema-0000001901962713)。开发者需要编辑对应的意图配置insight\_intent.json文件实现意图注册。insight\_intent.json文件需要放置在module下面的指定目录：src/main/resources/base/profile/insight\_intent.json，并且整个工程中只能存在一个insight\_intent.json文件。完整的意图共享示例如下所示，该示例构建了一个PlayMusic意图，并进行了shareIntent调用。
+以歌曲本地搜索特性为例，首先要注册播放歌曲意图（PlayMusic），其他意图见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)。开发者需要编辑对应的意图配置insight\_intent.json文件实现意图注册。insight\_intent.json文件需要放置在module下面的指定目录：src/main/resources/base/profile/insight\_intent.json，并且整个工程中只能存在一个insight\_intent.json文件。完整的意图共享示例如下所示，该示例构建了一个PlayMusic意图，并进行了shareIntent调用。
 
 ```
 import { insightIntent } from '@kit.IntentsKit';
@@ -122,7 +122,7 @@ struct Index {
 
 ## 端侧意图调用
 
-开发者需要自己实现InsightIntentExecutor，并在对应回调实现打开落地页（点击推荐卡片跳转的界面）或后台执行的能力，PlayMusic的意图调用字段定义见[各垂域意图Schema](https://developer.huawei.com/consumer/cn/doc/service/intents-schema-0000001901962713)。
+开发者需要自己实现InsightIntentExecutor，并在对应回调实现打开落地页（点击推荐卡片跳转的界面）或后台执行的能力，PlayMusic的意图调用字段定义见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)。
 
 步骤如下：
 

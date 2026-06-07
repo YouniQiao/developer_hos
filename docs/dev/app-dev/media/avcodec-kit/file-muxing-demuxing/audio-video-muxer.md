@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "媒体数据封装"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-muxer
+original_url: /docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-muxer
 format: md
 ---
 
 
 开发者可以调用本模块的Native API接口，完成音视频封装，即将音频、视频等编码后的媒体数据，按一定的格式存储到文件里。
 
-当前支持的封装能力请参考AVCodec支持的格式中的[媒体数据封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#媒体数据封装)。
+当前支持的封装能力请参考AVCodec支持的格式中的[媒体数据封装](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#媒体数据封装)。
 
 如果需要对HDRVivid视频码流进行封装，需要配置MimeType为H265 (OH\_AVCODEC\_MIMETYPE\_VIDEO\_HEVC)，本功能从API version 11开始支持。
 
@@ -30,7 +30,7 @@ format: md
 
 ![](./img/4abd7b84.png)
 
-如果调用封装模块写本地文件，需要[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)：ohos.permission.READ\_MEDIA, ohos.permission.WRITE\_MEDIA。
+如果调用封装模块写本地文件，需要[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)：ohos.permission.READ\_MEDIA, ohos.permission.WRITE\_MEDIA。
 
 ### 在 CMake 脚本中链接动态库
 
@@ -43,7 +43,7 @@ target_link_libraries(sample PUBLIC libnative_media_core.so)
 
 参考以下示例代码，完成音视频封装的全流程。以封装mp4格式的音视频文件为例。
 
-不同的封装格式需要配置的key请参考AVCodec支持的格式中的[媒体数据封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#媒体数据封装)。
+不同的封装格式需要配置的key请参考AVCodec支持的格式中的[媒体数据封装](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#媒体数据封装)。
 
 1. 添加头文件。
 
@@ -71,7 +71,7 @@ target_link_libraries(sample PUBLIC libnative_media_core.so)
    ```
 4. 添加文件级数据。
 
-   文件级数据已定义的key详见AVCodec支持的格式中的[媒体数据封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#媒体数据封装)。
+   文件级数据已定义的key详见AVCodec支持的格式中的[媒体数据封装](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#媒体数据封装)。
 
    用户自定义的key必须以"com.openharmony."为开头。值类型可以为int32\_t、float、string，从API version 20开始增加支持uint8\_t\*。
 

@@ -1,6 +1,6 @@
 ---
 title: "批量删除商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-batch-delete
+original_url: /docs/dev/atomic-dev/instant-service-offerings/instant-service-offerings-batch-delete
 format: md
 ---
 

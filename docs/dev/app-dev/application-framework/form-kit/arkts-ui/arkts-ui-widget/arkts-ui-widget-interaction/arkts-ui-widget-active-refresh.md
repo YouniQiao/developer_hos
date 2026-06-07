@@ -1,11 +1,11 @@
 ---
 title: "ArkTS卡片主动刷新"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-active-refresh
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction/arkts-ui-widget-active-refresh
 format: md
 ---
 
 
-本文主要提供主动刷新的开发指导，刷新流程请参考[主动刷新概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-interaction-overview#主动刷新)。
+本文主要提供主动刷新的开发指导，刷新流程请参考[主动刷新概述](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction/arkts-ui-widget-interaction-overview#主动刷新)。
 
 ## 卡片提供方主动刷新卡片内容
 
@@ -15,7 +15,7 @@ format: md
 
 下面给出一个示例，实现如下功能：卡片添加至桌面后，点击卡片上的刷新按钮，刷新卡片信息。
 
-1. [创建卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)。
+1. [创建卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)。
 2. 实现卡片布局，在卡片上添加一个刷新按钮，点击按钮后通过[postCardAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-postcardaction#postcardaction-1)接口，触发onFormEvent回调。
 
    ```
@@ -206,7 +206,7 @@ format: md
 
 下面给出一个示例，实现如下功能：添加应用的多张卡片至桌面后，点击应用UIAbility中的刷新按钮，批量刷新卡片信息。
 
-1. [创建卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)。
+1. [创建卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)。
 2. 实现卡片布局，在卡片上创建两个待刷新的Text。
 
    ```

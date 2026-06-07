@@ -1,6 +1,6 @@
 ---
 title: "如何将Axios获取GBK格式的网络数据转换UTF-8格式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-59
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-59
 format: md
 ---
 

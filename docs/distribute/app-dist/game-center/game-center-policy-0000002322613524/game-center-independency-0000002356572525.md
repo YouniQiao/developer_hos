@@ -1,7 +1,7 @@
 ---
 title: "独立游戏"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-independency-0000002356572525
+original_url: /docs/distribute/app-dist/game-center/game-center-policy-0000002322613524/game-center-independency-0000002356572525
 format: md
 ---
 

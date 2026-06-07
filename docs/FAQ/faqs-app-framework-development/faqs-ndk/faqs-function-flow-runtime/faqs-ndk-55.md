@@ -1,7 +1,7 @@
 ---
 format: md
 title: "napi_env、napi_value实例是否可以跨worker线程共享"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-55
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-55
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "服务号基本信息规范"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/registration_rules-0000001058075206
+original_url: /docs/distribute/service-dist/huawei-service-account/specification-0000001053205318/registration_rules-0000001058075206
 format: md
 ---
 
@@ -30,9 +30,9 @@ format: md
 
 ## 所属行业
 
-请参考[鸿蒙元服务应用分类信息](https://developer.huawei.com/consumer/cn/doc/app/ability-0000002032931302)进行填写，[禁止入驻的行业类目](https://developer.huawei.com/consumer/cn/doc/service/content_specification-0000001053325353#section166941348192713)除外。
+请参考[鸿蒙元服务应用分类信息](/docs/distribute/app-dist/app-services/classification-0000002068852289/ability-0000002032931302)进行填写，[禁止入驻的行业类目](/docs/distribute/service-dist/huawei-service-account/specification-0000001053205318/content_specification-0000001053325353#section166941348192713)除外。
 
-特殊行业需要提供[特殊行业资质](https://developer.huawei.com/consumer/cn/doc/app/80302)材料。
+特殊行业需要提供[特殊行业资质](/docs/distribute/app-dist/app-market/x50000/x80302)材料。
 
 ## 服务号LOGO图片
 
@@ -126,13 +126,13 @@ format: md
 
 ## 特殊行业资质
 
-1. 特殊行业需要提供行业资质材料，服务号与元服务行业资质要求相同，请参考[鸿蒙元服务资质审核要求](https://developer.huawei.com/consumer/cn/doc/app/80302)。
+1. 特殊行业需要提供行业资质材料，服务号与元服务行业资质要求相同，请参考[鸿蒙元服务资质审核要求](/docs/distribute/app-dist/app-market/x50000/x80302)。
 2. 格式支持jpeg、jpg、png，且大小不超过5M，最多可上传5张。
 
 ## 权属证明材料
 
 1. 请提交商标注册证或商标使用授权相关材料；
-2. 入驻服务号的所有商家需提供有效的营业执照，请参考[营业执照规范](https://developer.huawei.com/consumer/cn/doc/service/content_specification-0000001053325353#section19297389271)；
+2. 入驻服务号的所有商家需提供有效的营业执照，请参考[营业执照规范](/docs/distribute/service-dist/huawei-service-account/specification-0000001053205318/content_specification-0000001053325353#section19297389271)；
 3. 由平台服务商接入的商家需提供与平台服务商签署的授权书，请参考[权属证明材料](#section7355171420366)。
 
 ## 客服信息

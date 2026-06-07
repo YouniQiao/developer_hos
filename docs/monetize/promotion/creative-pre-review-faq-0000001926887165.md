@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/creative-pre-review-faq-0000001926887165
+original_url: /docs/monetize/promotion/creative-pre-review-faq-0000001926887165
 format: md
 ---
 

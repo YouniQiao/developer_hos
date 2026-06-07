@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Profiler分析任务录制失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-1
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-1
 ---
 
 

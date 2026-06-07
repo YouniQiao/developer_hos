@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口进行任务队列相关开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-execute_tasks
+original_url: /docs/dev/ndk-dev/use-jsvm-execute_tasks
 format: md
 ---
 
@@ -24,11 +24,11 @@ format: md
 
 ## 使用示例
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅展示接口对应的C++相关代码。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅展示接口对应的C++相关代码。
 
-权限要求：Wasm字节码需要应用拥有JIT权限才能执行，可参考[JSVM 申请JIT权限指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-apply-jit-profile)申请对应权限。
+权限要求：Wasm字节码需要应用拥有JIT权限才能执行，可参考[JSVM 申请JIT权限指导](/docs/dev/ndk-dev/jsvm-apply-jit-profile)申请对应权限。
 
-运行限制：当前 JSVM 版本在坚盾守护模式下将禁用 WebAssembly 全部功能模块。开发者需针对此限制进行应用兼容性评估，具体技术规范详见[JSVM 坚盾守护模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-secure-shield-mode)。
+运行限制：当前 JSVM 版本在坚盾守护模式下将禁用 WebAssembly 全部功能模块。开发者需针对此限制进行应用兼容性评估，具体技术规范详见[JSVM 坚盾守护模式](/docs/dev/ndk-dev/jsvm-secure-shield-mode)。
 
 ### OH\_JSVM\_PumpMessageLoop & OH\_JSVM\_PerformMicrotaskCheckpoint
 

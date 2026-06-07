@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在ArkTS中使用闭包"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-117
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-117
 ---
 
 

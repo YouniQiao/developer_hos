@@ -1,7 +1,7 @@
 ---
 title: "查询素材列表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-querymaterial-0000001135467024
+original_url: /docs/monetize/promotion/marketapi-querymaterial-0000001135467024
 format: md
 ---
 
@@ -72,9 +72,9 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
-| materials | O | List&lt;[Material](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-material-0000001135467062)&gt; | 素材信息列表。 |
+| materials | O | List&lt;[Material](/docs/monetize/promotion/marketapi-modle-material-0000001135467062)&gt; | 素材信息列表。 |
 | totalCount | M | Integer | 总数。 |
 
 ## 响应示例

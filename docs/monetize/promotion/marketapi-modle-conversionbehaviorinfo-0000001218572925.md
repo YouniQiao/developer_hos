@@ -1,7 +1,7 @@
 ---
 title: "ConversionBehaviorInfo"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-conversionbehaviorinfo-0000001218572925
+original_url: /docs/monetize/promotion/marketapi-modle-conversionbehaviorinfo-0000001218572925
 format: md
 ---
 

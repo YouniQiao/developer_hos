@@ -1,6 +1,6 @@
 ---
 title: "配置服务器域名"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain
+original_url: /docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain
 ---
 
 为规范元服务请求域名范围，提升元服务上架审核效率和平台合规经营安全性，支持开发者在元服务上架前申请开放使用的服务器域名。后续当用户使用元服务时，将根据该元服务的域名配置进行域名访问，为用户提供安全可靠的网络环境，从而提升用户信任度和满意度。并且域名管控支持定期自动导入全局禁止清单内的域名，实现域名数据的自动化更新，时刻确保网络的正常运行和信息的安全传输。
@@ -23,7 +23,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-hel
 若修改次数不能满足您的需求，您可发送邮件向华为运营人员申请放宽限制。在收到您的申请后，华为运营人员将在1-3个工作日内为您安排对接人员。申请方法如下：
 
 * 申请邮箱地址：atomicservice@huawei.com。
-* 邮件标题：[服务器域名配置]-[元服务名称]-[APP ID]-[Developer ID]，APP ID等查询方法可参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。
+* 邮件标题：[服务器域名配置]-[元服务名称]-[APP ID]-[Developer ID]，APP ID等查询方法可参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。
 * 邮件正文：请说明申请放宽修改次数原因。
 
 ## 配置服务器域名

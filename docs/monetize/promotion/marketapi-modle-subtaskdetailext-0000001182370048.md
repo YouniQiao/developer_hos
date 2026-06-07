@@ -1,7 +1,7 @@
 ---
 title: "SubTaskDetailExt"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-subtaskdetailext-0000001182370048
+original_url: /docs/monetize/promotion/marketapi-modle-subtaskdetailext-0000001182370048
 format: md
 ---
 

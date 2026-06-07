@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "音频解码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-decoding
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-decoding
 format: md
 ---
 
 
 开发者可以调用本模块的Native API接口，完成音频解码，即将媒体数据解码为PCM码流。
 
-当前支持的解码能力请参考[AVCodec支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#音频解码)。
+当前支持的解码能力请参考[AVCodec支持的格式](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#音频解码)。
 
 **适用场景**
 
@@ -195,7 +195,7 @@ target_link_libraries(sample PUBLIC libnative_media_acodec.so)
    ```
 4. （可选）OH\_AudioCodec\_SetDecryptionConfig设置解密配置。
 
-   当获取到DRM信息(参考[音视频解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)开发步骤第4步)后，通过此接口进行解密配置。
+   当获取到DRM信息(参考[音视频解封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)开发步骤第4步)后，通过此接口进行解密配置。
 
    DRM相关接口详见[DRM API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm)。
 
@@ -329,7 +329,7 @@ target_link_libraries(sample PUBLIC libnative_media_acodec.so)
    ```
 8. （可选）调用OH\_AVCencInfo\_SetAVBuffer()，设置cencInfo。
 
-   若当前播放的节目是DRM加密节目，且由上层应用做[媒体解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)，则须调用OH\_AVCencInfo\_SetAVBuffer()将cencInfo设置给AVBuffer，以实现AVBuffer中媒体数据的解密。
+   若当前播放的节目是DRM加密节目，且由上层应用做[媒体解封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)，则须调用OH\_AVCencInfo\_SetAVBuffer()将cencInfo设置给AVBuffer，以实现AVBuffer中媒体数据的解密。
 
    添加头文件：
 

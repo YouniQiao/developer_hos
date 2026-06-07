@@ -1,6 +1,6 @@
 ---
 title: "离开房间"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-leaveroom-csharp-0000002361670552
+original_url: /docs/dev/game-dev/gameobe-leaveroom-csharp-0000002361670552
 format: md
 ---
 

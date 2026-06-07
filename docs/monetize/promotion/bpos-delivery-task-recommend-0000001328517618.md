@@ -1,7 +1,7 @@
 ---
 title: "投放推荐任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-recommend-0000001328517618
+original_url: /docs/monetize/promotion/bpos-delivery-task-recommend-0000001328517618
 format: md
 ---
 
@@ -33,7 +33,7 @@ format: md
 
 3. 创建广告任务（简称“基础任务”）。
    - <strong>推广应用ID：</strong>从下拉列表中选择要推广的应用。列表中仅展示已经成功添加到“应用管理”并通过推广审核的应用。如果需要推广的应用不在下拉列表中，您需要先添加应用，详情请参考应用市场应用推广评测-[应用管理](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/appmanagement-0000001182393586)。
-   - <strong>定向：</strong>设置您希望推广的国家/地区，只支持从此应用已经[广告审核](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-promotion-evaluation-0000001379837553)的国家中进行选择，同一任务中可以选择多个国家/地区进行投放。如果您想使用更多的定向功能，请参考[应用市场应用推广任务支持基础定向功能](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-base-target-0000001328677542)。
+   - <strong>定向：</strong>设置您希望推广的国家/地区，只支持从此应用已经[广告审核](/docs/monetize/promotion/bpos-delivery-task-promotion-evaluation-0000001379837553)的国家中进行选择，同一任务中可以选择多个国家/地区进行投放。如果您想使用更多的定向功能，请参考[应用市场应用推广任务支持基础定向功能](/docs/monetize/promotion/bpos-functions-base-target-0000001328677542)。
    - <strong>版位：</strong>推荐您同时在所有版位进行推广，提升应用转化率。由于每个任务只能选择一个版位，需要您为应用市场的每个版位创建任务。
    - <strong>投放日期：</strong>不限制日期：如果您希望广告一直投放，您可以设置一个起始日期，起始日期默认是您创建广告的当天，您也可以指定未来的某一个日期进行投放。选择日期范围：如果您希望广告在某一段日期内投放，您可以为广告设置指定的日期。
    - <strong>出价：</strong>只支持按照CPD模式进行竞价，在用户下载应用后按照您的出价进行计费。
@@ -44,7 +44,7 @@ format: md
 
    ![](./img/e69d030e2974.png)
 
-   <strong>监测地址（选填）</strong>：如果您使用三方监测进行转化跟踪，请先完成三方归因操作指南[概述](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-overview-0000001328677546)对应操作，完成后在您创建任务的时候，系统将会自动关联监测地址（关联出来的链接建议不要修改，避免影响跟踪数据）。如果您修改了关联分析工具中的监测链接，系统将会自动同步到任务，任务中无需修改。
+   <strong>监测地址（选填）</strong>：如果您使用三方监测进行转化跟踪，请先完成三方归因操作指南[概述](/docs/monetize/promotion/bpos-functions-tripartite-attribution-overview-0000001328677546)对应操作，完成后在您创建任务的时候，系统将会自动关联监测地址（关联出来的链接建议不要修改，避免影响跟踪数据）。如果您修改了关联分析工具中的监测链接，系统将会自动同步到任务，任务中无需修改。
 
 5. 提交投放。
 

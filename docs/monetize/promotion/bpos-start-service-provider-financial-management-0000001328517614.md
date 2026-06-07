@@ -1,7 +1,7 @@
 ---
 title: "服务商财务管理"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-service-provider-financial-management-0000001328517614
+original_url: /docs/monetize/promotion/bpos-start-service-provider-financial-management-0000001328517614
 ---
 import MergeTable from '@site/src/components/MergeTable';
 
@@ -39,7 +39,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
 - 子客账户默认展示“投放基金”。您（指的是“服务商”与“子客服务商”）向子客转入的所有余额类型将会转到子客的”投放基金”。
 - 如果您（指的是“服务商”与“子客服务商”）希望子客账户展示更多余额类型，共有2种方式：
-  - 方式一：您可以向鲸鸿动能广告申请开通“子客虚拟金透明化白名单”，申请方式为：[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)或者联系您的运营。添加成功后，子客可以看到以下内容：
+  - 方式一：您可以向鲸鸿动能广告申请开通“子客虚拟金透明化白名单”，申请方式为：[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)或者联系您的运营。添加成功后，子客可以看到以下内容：
     - 子客账户：可以看到“现金账户”和“虚拟账户”。
 
       ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250513090207.15772586773416048158787004312272:50001231000000:2800:CBBB41EEAA8DEAD5F2B34F8A9DA4B7393D6DB6C7D66AC664EFC065C046CD9C9C.png "点击放大")
@@ -198,7 +198,7 @@ import MergeTable from '@site/src/components/MergeTable';
     德国、英国、爱尔兰、以色列、法国、意大利、西班牙、波兰、罗马尼亚、捷克、芬兰、土耳其、乌克兰，新加坡、马来西亚、泰国、印度尼西亚、中国香港、菲律宾、沙特阿拉伯、埃及、南非、印度、墨西哥、智利、秘鲁、哥伦比亚。
   - 已通过实名认证的服务商可以使用线上充值方式进行现金账户充值，充值完成后实时到账。
   - 当前仅支持以下币种的服务商账户使用线上充值功能：EUR、CNY、JPY、GBP。
-  - 如果您修改了鲸鸿动能广告账户注册企业名称，您需要重新申请线上充值的使用功能，企业名称变更请参考[企业名称修改](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-manage-information-0000001328357938)。
+  - 如果您修改了鲸鸿动能广告账户注册企业名称，您需要重新申请线上充值的使用功能，企业名称变更请参考[企业名称修改](/docs/monetize/promotion/bpos-delivery-task-account-manage-information-0000001328357938)。
   - 充值的银行卡户名必须和鲸鸿动能广告账户注册名称一致，不支持绑定个人银行卡。
   - 您即将绑定的银行卡必须未被任何其它鲸鸿动能广告账户使用过。
   - 您即将绑定的银行卡暂时仅支持借记卡。
@@ -206,7 +206,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
 1. 申请线上充值功能。
 
-   您可以通过[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)的方式向鲸鸿动能广告进行申请，申请时需包含以下内容：
+   您可以通过[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)的方式向鲸鸿动能广告进行申请，申请时需包含以下内容：
 
    - 提供公司信息：您需要将您的服务商账户ID、企业名称、银行卡账号补充在工单中：
 
@@ -467,7 +467,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
 服务商账户发票由鲸鸿动能广告开具，子客服务商和子客请联系对应的服务商或子客服务商获取发票。
 
-如果您是服务商，按照账户的注册地不同，我们将分别按照充值金额或月消耗金额开具发票，具体请参见[《华为合作伙伴付费服务协议》](https://developer.huawei.com/consumer/cn/doc/start/partnerpaidserviceagreement-0000001052728251)。如果在开具发票过程中有疑问请通过[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)咨询，并提供企业名称和账户ID以及具体问题。
+如果您是服务商，按照账户的注册地不同，我们将分别按照充值金额或月消耗金额开具发票，具体请参见[《华为合作伙伴付费服务协议》](https://developer.huawei.com/consumer/cn/doc/start/partnerpaidserviceagreement-0000001052728251)。如果在开具发票过程中有疑问请通过[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)咨询，并提供企业名称和账户ID以及具体问题。
 
 | 开票形式 | 服务商账户注册地 | 开票时间 | 收款银行账户 | 税号 |
 | --- | --- | --- | --- | --- |

@@ -1,6 +1,6 @@
 ---
 title: "uniapp调试生成sourcemap的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-uniapp-sourcemap-generation
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-uniapp-sourcemap-generation
 format: md
 ---
 

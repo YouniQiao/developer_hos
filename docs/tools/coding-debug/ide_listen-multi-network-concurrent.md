@@ -1,7 +1,7 @@
 ---
 title: "@correctness/listen-multi-network-concurrent"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_listen-multi-network-concurrent
+original_url: /docs/tools/coding-debug/ide_listen-multi-network-concurrent
 format: md
 ---
 

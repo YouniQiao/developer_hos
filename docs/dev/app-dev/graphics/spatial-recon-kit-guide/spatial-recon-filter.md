@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "添加滤镜效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-filter
+original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-filter
 format: md
 ---
 

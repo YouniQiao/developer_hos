@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分享详情页关闭分享面板"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-sec-panel-back
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-sec-panel-back
 format: md
 ---
 

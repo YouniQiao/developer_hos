@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用申请位置信息权限为什么没有弹窗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-11
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-11
 ---
 
 
@@ -15,4 +15,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[开放权限（系统授权）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all)
+[开放权限（系统授权）](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all)

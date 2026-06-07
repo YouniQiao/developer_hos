@@ -1,7 +1,7 @@
 ---
 title: "版署实名认证申请"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-identification-applyfor-0000001193982458
+original_url: /docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-identification-applyfor-0000001193982458
 format: md
 ---
 

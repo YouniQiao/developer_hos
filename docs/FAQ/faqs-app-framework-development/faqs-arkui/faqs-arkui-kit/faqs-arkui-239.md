@@ -1,6 +1,6 @@
 ---
 title: "如何获取设备屏幕横竖屏状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-239
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-239
 format: md
 ---
 

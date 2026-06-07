@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "HTTP缓存基本功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cache-basic
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache/remote-communication-cache-basic
 format: md
 ---
 

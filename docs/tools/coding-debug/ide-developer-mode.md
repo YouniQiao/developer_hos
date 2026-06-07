@@ -1,7 +1,7 @@
 ---
 title: "开发者选项"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-developer-mode
+original_url: /docs/tools/coding-debug/ide-developer-mode
 format: md
 ---
 

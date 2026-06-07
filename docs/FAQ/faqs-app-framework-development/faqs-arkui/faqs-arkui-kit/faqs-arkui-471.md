@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在子容器的onTouch中调用stopPropagation，为什么无法阻止外层容器的onClick事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-471
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-471
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "选择头像Button"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-chooseavatar
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-chooseavatar
 format: md
 ---
 
@@ -10,11 +10,11 @@ format: md
 
 选择头像Button功能可以帮助开发者调用对应Button组件快速拉起头像选择页面，供用户完成华为账号头像或其他头像的选择与展示。
 
-运行示例代码单击头像按钮，拉起选择头像页面来设置头像（完整场景可参考[获取头像昵称](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-avatar-nickname)）。
+运行示例代码单击头像按钮，拉起选择头像页面来设置头像（完整场景可参考[获取头像昵称](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-avatar-nickname)）。
 
 ## 前提条件
 
-参见[开发前提](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-avatar-nickname#开发前提)。
+参见[开发前提](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-avatar-nickname#开发前提)。
 
 ## 开发步骤
 

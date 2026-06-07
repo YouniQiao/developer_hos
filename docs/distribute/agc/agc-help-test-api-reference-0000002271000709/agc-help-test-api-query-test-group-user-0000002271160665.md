@@ -1,6 +1,6 @@
 ---
 title: "查询测试群组成员"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-query-test-group-user-0000002271160665
+original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-query-test-group-user-0000002271160665
 format: md
 ---
 
@@ -26,22 +26,22 @@ format: md
 
 ![](../img/agc-help-test-api-query-test-group-user-0000002271160665_0.png)
 
-本接口支持使用Service Account方式和API客户端方式，二者区别请参见[获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661)。
+本接口支持使用Service Account方式和API客户端方式，二者区别请参见[获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661)。
 
 **Service Account****方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
-| appId | M | String(32) | 应用ID，获取方法参考[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
+| appId | M | String(32) | 应用ID，获取方法参考[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 |
 
 **API客户端方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
-| appId | M | String(32) | 应用ID，获取方法参考[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
+| appId | M | String(32) | 应用ID，获取方法参考[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 |
 
 #### [h2]Query
 
@@ -71,10 +71,10 @@ format: md
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-connectret-0000002272455641) | 包含返回码及描述信息的结果。 |
-| groupInfo | O | [SimpleGroupInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-simplegroupinfo-0000002237336496) | 测试群组的简要信息。 |
-| testerInfo | O | `List&lt;[testerInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-testerinfo-0000002272575561)>` | 测试群组成员信息。 |
-| invitationCodeInfo | O | `List&lt;[InvitationCodeInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-invitationcodeinfo-0000002237496324)>` | 测试群组邀请码信息。 |
+| ret | M | [ConnectRet](/docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-connectret-0000002272455641) | 包含返回码及描述信息的结果。 |
+| groupInfo | O | [SimpleGroupInfo](/docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-simplegroupinfo-0000002237336496) | 测试群组的简要信息。 |
+| testerInfo | O | `List&lt;[testerInfo](/docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-testerinfo-0000002272575561)>` | 测试群组成员信息。 |
+| invitationCodeInfo | O | `List&lt;[InvitationCodeInfo](/docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-invitationcodeinfo-0000002237496324)>` | 测试群组邀请码信息。 |
 | pageInfo | O | PageInfo | 分页信息。 |
 
 #### 响应示例

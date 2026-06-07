@@ -1,9 +1,9 @@
 ---
 title: "CMAC"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-cmac
 format: md
 ---
 
 
-* **[CMAC(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac-arkts)**
-* **[CMAC(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac-native)**
+* **[CMAC(ArkTS)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-cmac/huks-cmac-arkts)**
+* **[CMAC(C/C++)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-cmac/huks-cmac-native)**

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "关于数据库存储的位置，以及存储的区别"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-5
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-5
 ---
 
 
@@ -17,6 +17,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-l
 
 **参考链接**
 
-[应用文件目录与应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用文件目录与应用文件路径)
+[应用文件目录与应用文件路径](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用文件目录与应用文件路径)
 
-[应用数据持久化概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence-overview)
+[应用数据持久化概述](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/app-data-persistence-overview)

@@ -1,6 +1,6 @@
 ---
 title: "连接和传输数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spp-development-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/spp-development-guide
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 实现原理
 
-客户端获取到服务端的设备地址后，即可向服务端特定的UUID发起连接。服务端设备地址可以通过查找设备流程获取，详见[查找设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-discovery-development-guide)。待两端连接成功后，可向服务端发送数据或者接收服务端的数据。
+客户端获取到服务端的设备地址后，即可向服务端特定的UUID发起连接。服务端设备地址可以通过查找设备流程获取，详见[查找设备](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-discovery-development-guide)。待两端连接成功后，可向服务端发送数据或者接收服务端的数据。
 
 服务端需要支持客户端连接的UUID服务，保持连接状态监听即可。待两端连接成功后，即可接收客户端数据或者向客户端发送数据。
 
@@ -21,7 +21,7 @@ format: md
 
 ### 申请蓝牙权限
 
-需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)和[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)和[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ### 导入所需API模块
 

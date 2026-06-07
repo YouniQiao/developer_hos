@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-personal-privacy
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-personal-privacy
 format: md
 ---
 

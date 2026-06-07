@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在应用内共享HSP"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-69
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-69
 ---
 
 

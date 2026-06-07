@@ -1,7 +1,7 @@
 ---
 title: "客户投放伙伴子账户（子客服务商）"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-customer-partner-sub-account-0000001346575385
+original_url: /docs/monetize/promotion/bp-start-customer-partner-sub-account-0000001346575385
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-- 已完成[新建客户投放伙伴子账户（子客服务商）](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-customer-partner-master-0000001293695534#section13769103814386)。
-- 子客服务商已完成开户并绑定持有人。如需一级服务商给子客服务商绑定账户持有人，操作详见[子客服务商持有人绑定或更改](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-customer-partner-master-0000001293695534)。
+- 已完成[新建客户投放伙伴子账户（子客服务商）](/docs/monetize/promotion/bp-start-customer-partner-master-0000001293695534#section13769103814386)。
+- 子客服务商已完成开户并绑定持有人。如需一级服务商给子客服务商绑定账户持有人，操作详见[子客服务商持有人绑定或更改](/docs/monetize/promotion/bp-start-customer-partner-master-0000001293695534)。
 
 ## 新建投放操作账户
 

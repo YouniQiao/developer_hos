@@ -1,6 +1,6 @@
 ---
 title: "证书链校验器对象的创建和校验"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-cerchainvalidator-object
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-cerchainvalidator-object
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "卡顿率报了异常，丢帧卡顿次数为0，该如何理解"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-scenario-based-performance-test-7
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-7
 ---
 
 

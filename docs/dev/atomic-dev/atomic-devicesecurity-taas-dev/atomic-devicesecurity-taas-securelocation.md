@@ -1,6 +1,6 @@
 ---
 title: "安全地理位置场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-taas-securelocation
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-taas-dev/atomic-devicesecurity-taas-securelocation
 format: md
 ---
 

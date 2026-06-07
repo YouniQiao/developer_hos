@@ -1,6 +1,6 @@
 ---
 title: "多语言适配"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-multilingual-resources
+original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-multilingual-resources
 format: md
 ---
 
@@ -61,7 +61,7 @@ format: md
 
 为确保应用可以加载到不同国家和地区、不同语言等类型的内容，需要创建多个不同的资源目录，放置多种资源，当用户运行应用时，根据所在的语言区域自动选择并加载与设备最匹配的资源。为更好实现应用本地化，推荐作法是将本地化的内容与核心功能尽可能分开，本地化内容放置在资源目录下。
 
-对于应用开发者，仅需关注资源配置，资源文件配置完成后，根据业务需求对资源进行访问。资源文件配置和资源匹配规则请参考[资源分类与访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access)。
+对于应用开发者，仅需关注资源配置，资源文件配置完成后，根据业务需求对资源进行访问。资源文件配置和资源匹配规则请参考[资源分类与访问](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access)。
 
 ![](./img/c48fbbbc.png)
 

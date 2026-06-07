@@ -1,7 +1,7 @@
 ---
 title: "编辑区对话"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-edit-area-code-generation
+original_url: /docs/tools/ai-assist/ide-edit-area-code-generation
 format: md
 ---
 

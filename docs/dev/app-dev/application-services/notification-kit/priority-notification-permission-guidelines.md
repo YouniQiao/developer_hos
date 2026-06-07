@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "申请优先通知权益"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/priority-notification-permission-guidelines
+original_url: /docs/dev/app-dev/application-services/notification-kit/priority-notification-permission-guidelines
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 2）应用内需具备重要联系人、@我、加急消息提醒功能，且申请后仅在上述场景中使用该能力，申请时需提供相应功能截图/示意图。
 
-3）重要联系人场景需同时接入跳转应用内“重要联系人列表”能力。详情请参考[应用链接说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config)，[linkFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config#linkfeature标签说明)字段使用PrimaryContactMgmt即可。
+3）重要联系人场景需同时接入跳转应用内“重要联系人列表”能力。详情请参考[应用链接说明](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config)，[linkFeature](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config#linkfeature标签说明)字段使用PrimaryContactMgmt即可。
 
 说明：优先通知权益仅允许在审核通过的场景中使用，如果申请权限后使用的功能和场景超出申请的范围，则属于违规，平台将禁用应用的优先通知权益。
 

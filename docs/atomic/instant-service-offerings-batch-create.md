@@ -1,6 +1,6 @@
 ---
 title: "批量新建商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-batch-create
+original_url: /docs/dev/atomic-dev/instant-service-offerings/instant-service-offerings-batch-create
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
    | 字段 | 定义 | 是否必选 |
    | --- | --- | --- |
-   | 元服务标签 | 取自[元服务分类标签](https://developer.huawei.com/consumer/cn/doc/app/ability-0000002032931302)。 | 必选 |
+   | 元服务标签 | 取自[元服务分类标签](/docs/distribute/app-dist/app-services/classification-0000002068852289/ability-0000002032931302)。 | 必选 |
    | 商家侧商品ID | 商家侧上传的商家商品编码，商家侧唯一。 | 必选 |
    | 商品名称 | 字符类型，最少不低于3个字符，最长不超过30个字符。商品名称不宜过长，影响用户视觉体验。  注：1.商品名称只允许汉字、数字、英文字母、特殊字符集；特殊字符集为：`·~～!@#$%^&()！@#￥%……&\*（）-\_——=+[]\【】、&#123;&#125; \|｜;'；’:"： ‘“”,./，。、\&lt;\&gt;?《》？\u00A0\u0020\u3000  2.商品名称不得仅为数字、字母、特殊字符集或上述三种的组合。  元服务提供多种卡片规范，建议商品字数按照对应卡片规范来，避免展示信息重叠等，降低用户吸引力。 | 必选 |
    | 商品副标题 | 最多不超过50个字符，展示在卡片中，用于增量描述商品信息。  元服务提供多种卡片规范，建议商品字数按照对应卡片规范来，避免展示信息重叠等，降低用户吸引力。 | 可选 |

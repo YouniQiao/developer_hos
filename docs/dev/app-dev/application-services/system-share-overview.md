@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-share-overview
+original_url: /docs/dev/app-dev/application-services/system-share-overview
 format: md
 ---
 
@@ -35,4 +35,4 @@ format: md
 
 ## 设计规范
 
-宿主应用接入系统分享时，根据不同的内容类型，应选择恰当的分享方式。详细参见：[系统分享设计指南](https://developer.huawei.com/consumer/cn/doc/design-guides/share-0000001957076313)。
+宿主应用接入系统分享时，根据不同的内容类型，应选择恰当的分享方式。详细参见：[系统分享设计指南](/docs/design/system-features/capabilities/share)。

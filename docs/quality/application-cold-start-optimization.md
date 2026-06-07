@@ -1,6 +1,6 @@
 ---
 title: "应用冷启动时延优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization
+original_url: /docs/quality/application-cold-start-optimization
 ---
 
 # 应用冷启动时延优化
@@ -17,7 +17,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-a
 
 冷启动的启动过程最为复杂、整体耗时也最长，是影响应用启动体验的关键短板，因此本文将主要介绍冷启动时延问题的优化。
 
-当应用冷启动时延大于1100ms时，可以认为是应用启动缓慢，体验标准可以参考[应用流畅体验设计](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smooth-application-design)。
+当应用冷启动时延大于1100ms时，可以认为是应用启动缓慢，体验标准可以参考[应用流畅体验设计](/docs/quality/smooth-application-design)。
 
 * [应用冷启动流程](#section196451814101216)
 * [应用冷启动时延检测](#section860412154015)
@@ -43,7 +43,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-a
 
 ## 应用冷启动时延检测
 
-在应用开发中，网络请求时机、图片下载、页面资源加载、依赖模块的加载等，都会导致应用冷启动时延受到影响，合理处理代码逻辑可以提升应用冷启动速度。开发者可以通过[AppAnalyzer](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-performance-detection#section135451444171)对应用冷启动进行检测，针对诊断出的应用冷启动不达标问题进行分析和优化。
+在应用开发中，网络请求时机、图片下载、页面资源加载、依赖模块的加载等，都会导致应用冷启动时延受到影响，合理处理代码逻辑可以提升应用冷启动速度。开发者可以通过[AppAnalyzer](/docs/quality/performance-detection#section135451444171)对应用冷启动进行检测，针对诊断出的应用冷启动不达标问题进行分析和优化。
 
 应用冷启动时延检测步骤如下：
 
@@ -82,7 +82,7 @@ AppAnalyzer详情报告中会显示动态检测可能导致冷启动完成时延
 
 高耗时函数可能会造成应用卡顿，对于执行次数较多的函数，应尽量减少调用次数，单次执行但总耗时较高的函数，可以考虑通过异步方式进行优化。
 
-在检测结果中，开发者可以通过点击报告表格中的对应方法名，快速跳转至对应代码片段，同时体检工具也会给出相应的优化建议，如将耗时函数放到子线程或进行缓存、使用多线程能力等，详细流程及示例可参考文档：[主线程耗时操作优化--其他主线程优化思路](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-time-optimization-of-the-main-thread#section4365993361)。
+在检测结果中，开发者可以通过点击报告表格中的对应方法名，快速跳转至对应代码片段，同时体检工具也会给出相应的优化建议，如将耗时函数放到子线程或进行缓存、使用多线程能力等，详细流程及示例可参考文档：[主线程耗时操作优化--其他主线程优化思路](/docs/quality/time-optimization-of-the-main-thread#section4365993361)。
 
 ![](./img/30084bcb.png "点击放大")
 
@@ -200,7 +200,7 @@ AppAnalyzer详情报告中会显示动态检测可能导致冷启动完成时延
 
 ### **异步线程阻塞主线程**
 
-当主线程长时间等待子线程或异步函数返回，会造成主线程长时间被阻塞，可能导致时延不达标的情况。体检工具会对主线程长时间被阻塞进行检测，可以根据检测结果中主线程空闲时间判断主线程是否长时间被阻塞，空闲时间越长，则阻塞时间越久，详细请参考：[主线程长时间被阻塞](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-complete-delay-analysis#section73671398291)。
+当主线程长时间等待子线程或异步函数返回，会造成主线程长时间被阻塞，可能导致时延不达标的情况。体检工具会对主线程长时间被阻塞进行检测，可以根据检测结果中主线程空闲时间判断主线程是否长时间被阻塞，空闲时间越长，则阻塞时间越久，详细请参考：[主线程长时间被阻塞](/docs/quality/click-to-complete-delay-analysis#section73671398291)。
 
 ## 识别启动缓慢问题
 
@@ -687,7 +687,7 @@ export default class EntryAbility extends UIAbility {
 | 减少import的模块前 | 6239.5 |
 | 减少import的模块后 | 119.7 |
 
-减少不必要的模块导入可以缩短应用的冷启动时间。如果某些必要模块的导入较为耗时，建议采用动态导入方式。具体方法可参考[动态加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import)。
+减少不必要的模块导入可以缩短应用的冷启动时间。如果某些必要模块的导入较为耗时，建议采用动态导入方式。具体方法可参考[动态加载](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-dynamic-import)。
 
 减少使用嵌套的export \*和import \*方式。
 
@@ -965,7 +965,7 @@ struct Index {
 
 1. 上述两种优化方案假设MainPage中不存在对SubPage的import。
 
-2. 当MainPage中存在对SubPage的直接import时，需使用[动态import](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import)方法来进行优化。
+2. 当MainPage中存在对SubPage的直接import时，需使用[动态import](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-dynamic-import)方法来进行优化。
 
 3. 开发者可自行根据优化方案的优缺点权衡选择合适的优化方案。
 
@@ -992,7 +992,7 @@ struct Index {
 
 **减少多个HAP/HSP对相同HAR的引用**
 
-在应用开发的过程中，可以使用[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)或[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)的共享包方式，整合同类模块，实现多个模块或工程间共享ArkUI组件、资源等相关代码。同时，避免多个HAP/HSP引用相同HAR。详细信息请参见[多HAP/HSP引用相同HAR包的影响](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-modular-design#section9492615385)。
+在应用开发的过程中，可以使用[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)或[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)的共享包方式，整合同类模块，实现多个模块或工程间共享ArkUI组件、资源等相关代码。同时，避免多个HAP/HSP引用相同HAR。详细信息请参见[多HAP/HSP引用相同HAR包的影响](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-modular-design#section9492615385)。
 
 **优化加载HSP时间过长**
 
@@ -1046,7 +1046,7 @@ AbilityStage生命周期阶段执行相应的生命周期回调。
 
 **避免在AbilityStage生命周期回调接口进行耗时操作**
 
-在应用启动流程中，系统会执行 AbilityStage 的生命周期回调函数。不建议在这些回调函数中执行耗时操作，例如 onCreate。建议将耗时操作通过异步任务延迟处理或放到其他线程执行。关于线程并发方案，可以参考 [TaskPool和Worker的对比实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-comparative_practice_of_taskpool_and_worker)。在这些生命周期回调中，推荐仅执行必要的操作。关于 AbilityStage，可以参考 [AbilityStage组件管理器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitystage)，以下为示例代码：
+在应用启动流程中，系统会执行 AbilityStage 的生命周期回调函数。不建议在这些回调函数中执行耗时操作，例如 onCreate。建议将耗时操作通过异步任务延迟处理或放到其他线程执行。关于线程并发方案，可以参考 [TaskPool和Worker的对比实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-comparative_practice_of_taskpool_and_worker)。在这些生命周期回调中，推荐仅执行必要的操作。关于 AbilityStage，可以参考 [AbilityStage组件管理器](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/abilitystage)，以下为示例代码：
 
 ```ts
 const LARGE_NUMBER: number = 100000000;
@@ -1099,7 +1099,7 @@ Ability生命周期阶段执行相应的生命周期回调。
 
 在应用启动流程中，系统会执行Ability的生命周期回调函数。因此，不建议在这些回调函数中执行耗时操作，建议通过异步任务延迟处理或者放到其他线程执行。线程并发方案可以参考 [TaskPool和Worker的对比实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-comparative_practice_of_taskpool_and_worker)。
 
-在这些生命周期回调里，推荐开发者只做必要的操作，下面以UIAbility为例进行说明。比如在生命周期回调函数onCreate、onWindowStageCreate、onForeground等中执行耗时操作都会导致启动缓慢问题，关于UIAbility组件生命周期的详细说明，参见[UIAbility组件生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle)。
+在这些生命周期回调里，推荐开发者只做必要的操作，下面以UIAbility为例进行说明。比如在生命周期回调函数onCreate、onWindowStageCreate、onForeground等中执行耗时操作都会导致启动缓慢问题，关于UIAbility组件生命周期的详细说明，参见[UIAbility组件生命周期](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-lifecycle)。
 
 **图24** UIAbility生命周期状态
 
@@ -1173,7 +1173,7 @@ export default class EntryAbility extends UIAbility {
 
 **自定义组件生命周期回调接口里避免耗时操作**
 
-自定义组件的生命周期变更会调用相应的回调函数，aboutToAppear()函数会在创建自定义组件实例后，页面绘制之前执行，而onPageShow则是在页面进入前台的时候显示，因此避免在这两个回调函数中执行该耗时操作，不阻塞页面绘制。关于自定义组件生命周期的详细说明，参见[页面和自定义组件生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-lifecycle)。
+自定义组件的生命周期变更会调用相应的回调函数，aboutToAppear()函数会在创建自定义组件实例后，页面绘制之前执行，而onPageShow则是在页面进入前台的时候显示，因此避免在这两个回调函数中执行该耗时操作，不阻塞页面绘制。关于自定义组件生命周期的详细说明，参见[页面和自定义组件生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-page-custom-components-lifecycle)。
 
 **图27** 被@Entry装饰的组件（页面）生命周期
 
@@ -1397,7 +1397,7 @@ struct Index {
 
 **优化首页显示速度**
 
-启动过程从用户点击应用入口到首页数据显示在屏幕上，这是对用户点击事件响应的过程。开发者可以通过UI优化、并发优化、代码逻辑优化及IPC通信优化等方法来提升首页的响应速度，具体可参考：[点击响应时延分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-click-response-optimization)。
+启动过程从用户点击应用入口到首页数据显示在屏幕上，这是对用户点击事件响应的过程。开发者可以通过UI优化、并发优化、代码逻辑优化及IPC通信优化等方法来提升首页的响应速度，具体可参考：[点击响应时延分析](/docs/quality/click-to-click-response-optimization)。
 
 ## 总结
 

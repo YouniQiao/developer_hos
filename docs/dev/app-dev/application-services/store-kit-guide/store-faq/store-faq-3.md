@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "生态查询服务场景中获取自身场景值为空"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-3
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-3
 format: md
 ---
 

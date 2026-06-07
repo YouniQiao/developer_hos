@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "SSAP服务端"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-ssap-server-connect
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-ssap-connect/nearlink-ssap-server-connect
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ![](./img/2814c73f.png)
 
-建立SSAP连接后，SSAP服务端广播会自动停止。后续如果服务端期望被客户端发现，可参见[发送星闪广播](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-send-advertising)，重新发起广播。
+建立SSAP连接后，SSAP服务端广播会自动停止。后续如果服务端期望被客户端发现，可参见[发送星闪广播](/docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-send-advertising)，重新发起广播。
 
 ## 场景介绍
 

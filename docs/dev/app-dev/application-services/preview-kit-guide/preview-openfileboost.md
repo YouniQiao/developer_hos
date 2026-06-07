@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文件打开加速（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost
+original_url: /docs/dev/app-dev/application-services/preview-kit-guide/preview-openfileboost
 format: md
 ---
 
@@ -30,7 +30,7 @@ format: md
 
 ## 开发步骤
 
-1. 申请文件打开加速服务的对应权限，在module.json5文件中添加文件预加载权限。注意ohos.permission.PRELOAD\_FILE为受限权限，具体可参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl) 。
+1. 申请文件打开加速服务的对应权限，在module.json5文件中添加文件预加载权限。注意ohos.permission.PRELOAD\_FILE为受限权限，具体可参考[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl) 。
 
    ```
    "requestPermissions":[

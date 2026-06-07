@@ -1,6 +1,6 @@
 ---
 title: "XML解析"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-parsing
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-parsing
 format: md
 ---
 

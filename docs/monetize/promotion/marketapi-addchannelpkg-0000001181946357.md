@@ -1,7 +1,7 @@
 ---
 title: "新增智能分包"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-addchannelpkg-0000001181946357
+original_url: /docs/monetize/promotion/marketapi-addchannelpkg-0000001181946357
 format: md
 ---
 

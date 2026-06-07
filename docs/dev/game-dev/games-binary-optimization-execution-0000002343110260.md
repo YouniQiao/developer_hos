@@ -1,6 +1,6 @@
 ---
 title: "执行二进制优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-execution-0000002343110260
+original_url: /docs/dev/game-dev/games-binary-optimization-execution-0000002343110260
 format: md
 ---
 
@@ -15,11 +15,11 @@ format: md
      + 携带原始so文件的objectId。
      + 携带最近大版本优化profile文件的objectId或最近大版本优化调用[获取优化结果](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-binary-optimization-get-opt-result-0000002374241884)接口返回的fdata文件的objectId。
 4. 调用[获取优化结果](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-binary-optimization-get-opt-result-0000002374241884)接口返回本次优化过程中产生的fdata文件和优化后的so文件。
-5. 将优化后的so文件替换原始包中的原始so文件，并重新打包和签名，再使用优化后的安装包进行[测试及验证收益](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-test-verification-0000002342950456)。
+5. 将优化后的so文件替换原始包中的原始so文件，并重新打包和签名，再使用优化后的安装包进行[测试及验证收益](/docs/dev/game-dev/games-binary-optimization-test-verification-0000002342950456)。
 
 ![](./img/b1fae4e7.png)
 
-release so经过二进制优化后，部分函数的位置可能发生变化，如果现网出现问题需要定位，您需要进行堆栈恢复，可以对release so对应的debug so进行二进制优化后，再继续问题定位。详情请参见[FAQ](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-faq-0000002377194865)。
+release so经过二进制优化后，部分函数的位置可能发生变化，如果现网出现问题需要定位，您需要进行堆栈恢复，可以对release so对应的debug so进行二进制优化后，再继续问题定位。详情请参见[FAQ](/docs/dev/game-dev/games-binary-optimization-faq-0000002377194865)。
 
 |  |  |
 | --- | --- |

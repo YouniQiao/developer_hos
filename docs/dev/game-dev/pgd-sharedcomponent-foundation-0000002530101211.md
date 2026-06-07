@@ -1,6 +1,6 @@
 ---
 title: "SharedComponent基础操作"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-sharedcomponent-foundation-0000002530101211
+original_url: /docs/dev/game-dev/pgd-sharedcomponent-foundation-0000002530101211
 format: md
 ---
 

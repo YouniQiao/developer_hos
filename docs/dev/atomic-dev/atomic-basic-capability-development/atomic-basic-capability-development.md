@@ -1,6 +1,6 @@
 ---
 title: "基础能力开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-basic-capability-development
+original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-basic-capability-development
 format: md
 ---
 

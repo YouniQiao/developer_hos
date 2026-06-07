@@ -1,10 +1,10 @@
 ---
 title: "分布式调用链跟踪"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain
 format: md
 ---
 
 
-* **[HiTraceChain介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-intro)**
-* **[使用HiTraceChain打点（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-guidelines-arkts)**
-* **[使用HiTraceChain打点（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-guidelines-ndk)**
+* **[HiTraceChain介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-intro)**
+* **[使用HiTraceChain打点（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-guidelines-arkts)**
+* **[使用HiTraceChain打点（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-guidelines-ndk)**

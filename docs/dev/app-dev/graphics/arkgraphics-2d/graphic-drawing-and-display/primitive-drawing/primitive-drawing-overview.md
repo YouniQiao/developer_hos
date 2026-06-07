@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "图元绘制概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/primitive-drawing-overview
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/primitive-drawing-overview
 format: md
 ---
 

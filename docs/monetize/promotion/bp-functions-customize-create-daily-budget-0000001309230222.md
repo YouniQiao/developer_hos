@@ -1,7 +1,7 @@
 ---
 title: "使用日预算自动调整模板创建"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-create-daily-budget-0000001309230222
+original_url: /docs/monetize/promotion/bp-functions-customize-create-daily-budget-0000001309230222
 format: md
 ---
 
@@ -26,5 +26,5 @@ format: md
 
    ![](./img/7c6e2a629ba6.png "点击放大")
 
-   具体规则设置项说明请参见[任务设置项说明](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-create-blank-0000001362109145#ZH-CN_TOPIC_0000001362109145__zh-cn_topic_0000001343075169_p17931549143111)。
+   具体规则设置项说明请参见[任务设置项说明](/docs/monetize/promotion/bp-functions-customize-create-blank-0000001362109145#ZH-CN_TOPIC_0000001362109145__zh-cn_topic_0000001343075169_p17931549143111)。
 3. 配置完成后，点击“提交”。系统弹出提示窗口，进行二次确认，点击“确定”。

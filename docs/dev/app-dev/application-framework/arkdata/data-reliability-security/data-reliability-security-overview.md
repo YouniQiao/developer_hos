@@ -1,6 +1,6 @@
 ---
 title: "数据可靠性与安全性概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security-overview
+original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-reliability-security-overview
 format: md
 ---
 

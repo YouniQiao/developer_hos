@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "功能搜索方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-function-search
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-search-rec/intents-search-rec-access-programme/intents-skill-all-rec-function-search
 format: md
 ---
 

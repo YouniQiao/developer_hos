@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-overview
+original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-passkey/onlineauthentication-passkey-intro
 format: md
 ---
 

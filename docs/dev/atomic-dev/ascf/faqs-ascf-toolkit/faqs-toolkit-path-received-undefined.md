@@ -1,6 +1,6 @@
 ---
 title: "路径不可用报错"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-toolkit-path-received-undefined
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-path-received-undefined
 format: md
 ---
 

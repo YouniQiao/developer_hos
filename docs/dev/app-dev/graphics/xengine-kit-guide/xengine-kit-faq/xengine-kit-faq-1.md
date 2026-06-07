@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "创建特性实例失败如何处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-1
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-faq/xengine-kit-faq-1
 format: md
 ---
 

@@ -1,15 +1,15 @@
 ---
 title: "Worker和宿主线程的即时消息通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-communicates-with-mainthread
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/worker-communicates-with-mainthread
 format: md
 ---
 
 
-在ArkTS中，Worker相对于Taskpool存在一定的差异性，有数量限制但是可以长时间存在。一个[Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)中可能会执行多个不同的任务，每个任务的执行时长或返回结果可能都不同，宿主线程需要根据情况调用Worker中的不同方法，Worker则需要及时地将结果返回给宿主线程。
+在ArkTS中，Worker相对于Taskpool存在一定的差异性，有数量限制但是可以长时间存在。一个[Worker](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction)中可能会执行多个不同的任务，每个任务的执行时长或返回结果可能都不同，宿主线程需要根据情况调用Worker中的不同方法，Worker则需要及时地将结果返回给宿主线程。
 
 下面以Worker响应"hello world"请求为例说明。
 
-1. 首先，创建一个执行任务的Worker。创建方法可参考[创建Worker的注意事项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction#创建worker的注意事项)。
+1. 首先，创建一个执行任务的Worker。创建方法可参考[创建Worker的注意事项](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction#创建worker的注意事项)。
 
    ```
    import { ErrorEvent, MessageEvents, ThreadWorkerGlobalScope, worker } from '@kit.ArkTS';

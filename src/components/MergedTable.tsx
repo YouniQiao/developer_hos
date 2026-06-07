@@ -12,8 +12,8 @@ interface CellData {
 type RawCell = string | CellData;
 
 interface MergedTableProps {
-  headers: (string[] | CellData[][]);
-  rows: RawCell[][];
+  headers?: string[] | CellData[][];
+  rows?: RawCell[][];
   caption?: string;
 }
 
@@ -21,32 +21,35 @@ function normalizeCell(cell: RawCell): CellData {
   if (typeof cell === 'string') {
     return { content: cell };
   }
+  if (!cell || typeof cell !== 'object') {
+    return { content: '' };
+  }
   return {
     ...cell,
     content: cell.content || cell.text || '',
   };
 }
 
-function normalizeHeaders(headers: string[] | CellData[][]): CellData[][] {
-  // Flat string array → nested array
-  if (headers.length > 0 && typeof headers[0] === 'string') {
+function normalizeHeaders(headers?: string[] | CellData[][]): CellData[][] {
+  if (!headers || !headers.length) return [];
+  if (typeof headers[0] === 'string') {
     return [(headers as string[]).map((h: string) => normalizeCell(h))];
   }
-  return (headers as CellData[][]).map(row => row.map(normalizeCell));
+  return (headers as CellData[][]).map(row =>
+    (Array.isArray(row) ? row : []).map(normalizeCell),
+  );
 }
 
-function buildStyle(cell: CellData, baseStyle: React.CSSProperties): React.CSSProperties {
-  const rowSpan = cell.rowspan || cell.rowSpan || 1;
-  const colSpan = cell.colspan || cell.colSpan || 1;
-  const isEmpty = !cell.content || cell.content.trim() === '';
-  return {
-    ...baseStyle,
-    ...(isEmpty ? {} : {}),
-  };
+function normalizeRows(rows?: RawCell[][]): CellData[][] {
+  if (!rows || !rows.length) return [];
+  return rows
+    .filter(row => Array.isArray(row))
+    .map(row => row.map(normalizeCell));
 }
 
 export default function MergedTable({ headers, rows, caption }: MergedTableProps): JSX.Element {
   const headerRows = normalizeHeaders(headers);
+  const bodyRows = normalizeRows(rows);
 
   return (
     <div style={{ overflowX: 'auto', margin: '16px 0' }}>
@@ -95,12 +98,11 @@ export default function MergedTable({ headers, rows, caption }: MergedTableProps
           </thead>
         )}
         <tbody>
-          {rows.map((row, i) => (
+          {bodyRows.map((row, i) => (
             <tr key={`r-${i}`}>
               {row.map((cell, j) => {
-                const normalized = normalizeCell(cell);
-                const rowSpan = normalized.rowspan || normalized.rowSpan || 1;
-                const colSpan = normalized.colspan || normalized.colSpan || 1;
+                const rowSpan = cell.rowspan || cell.rowSpan || 1;
+                const colSpan = cell.colspan || cell.colSpan || 1;
                 return (
                   <td
                     key={`r-${i}-${j}`}
@@ -111,7 +113,7 @@ export default function MergedTable({ headers, rows, caption }: MergedTableProps
                       padding: '8px 12px',
                       verticalAlign: 'top',
                     }}
-                    dangerouslySetInnerHTML={{ __html: normalized.content || '' }}
+                    dangerouslySetInnerHTML={{ __html: cell.content || '' }}
                   />
                 );
               })}

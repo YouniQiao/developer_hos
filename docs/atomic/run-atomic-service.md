@@ -1,6 +1,6 @@
 ---
 title: "使用真机运行元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/run-atomic-service
+original_url: /docs/dev/atomic-dev/develop-first-atomic-service/run-atomic-service
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
    完成卡片添加后，可以在真机上测试元服务卡片的动效，也可点击卡片空白区域测试拉起元服务页面的功能。
 5. 拉起元服务页面进行测试。
 
-   可以使用[Ability助手](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool)拉起元服务页面。
+   可以使用[Ability助手](/docs/dev/app-dev/system/aa-tool)拉起元服务页面。
 
    ```
    hdc shell aa start -a EntryAbility -b 元服务包名

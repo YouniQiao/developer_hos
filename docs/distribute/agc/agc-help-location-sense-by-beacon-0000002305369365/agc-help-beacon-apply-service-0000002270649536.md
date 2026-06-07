@@ -1,6 +1,6 @@
 ---
 title: "创建全网态服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-apply-service-0000002270649536
+original_url: /docs/distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-apply-service-0000002270649536
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 | 配置项 | 说明 | |
 | --- | --- | --- |
 | 名称 | 近场服务名称，长度为1~128个字符。 | |
-| 状态 | 服务的状态。   * 草稿：点击“保存”后，服务状态变更为“草稿”。 * 审核中：点击“提交”后，服务状态变更为“审核中”。 * 审核驳回：内容设置不合规，服务申请被平台运营驳回，服务状态变更为“审核驳回”。可参考[图文素材审核细则](https://developer.huawei.com/consumer/cn/doc/app/agc-help-card-design-detail-rules-0000002349181504)修改内容后重新提交服务上线申请。 * 已上线：平台运营审核通过后，服务状态变更为“已上线”。 * 已下线：您自行点击“下线”或者由华为侧强制下线。 | |
+| 状态 | 服务的状态。   * 草稿：点击“保存”后，服务状态变更为“草稿”。 * 审核中：点击“提交”后，服务状态变更为“审核中”。 * 审核驳回：内容设置不合规，服务申请被平台运营驳回，服务状态变更为“审核驳回”。可参考[图文素材审核细则](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-card-design-detail-rules-0000002349181504)修改内容后重新提交服务上线申请。 * 已上线：平台运营审核通过后，服务状态变更为“已上线”。 * 已下线：您自行点击“下线”或者由华为侧强制下线。 | |
 | 消息渠道 | 向用户推送应用/元服务卡片的渠道。**请选择“小艺建议”**。 | |
 | 开放范围 | 此配置项决定您创建的是测试态近场服务还是全网态近场服务，**请选择“全网”**。 | |
 
@@ -61,7 +61,7 @@ format: md
 
 为了确保输入内容的正确性和合规性，防止出现涉黄、涉政、涉暴等敏感信息，近场服务已接入风控系统。在配置或查看近场服务内容时，如果页面提示“输入内容可能存在风险”或“输入内容不合规”，建议您修改为合规内容，以避免服务申请被驳回。
 
-当前支持2\*2格式的图文版、双按钮版、单按钮版模板卡片和预置卡片。其中，预置卡片权限需单独申请，请参考[预置卡片权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-apply-permission-0000002382902149#section562916152116)发送申请邮件。请根据您的实际使用场景选择合适的卡片类型。
+当前支持2\*2格式的图文版、双按钮版、单按钮版模板卡片和预置卡片。其中，预置卡片权限需单独申请，请参考[预置卡片权限](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-apply-permission-0000002382902149#section562916152116)发送申请邮件。请根据您的实际使用场景选择合适的卡片类型。
 
 * 模板卡片-图文版（适合信息量少，有1个跳转热区的卡片）
 
@@ -149,7 +149,7 @@ format: md
 
 ![](../img/agc-help-beacon-apply-service-0000002270649536_16.png)
 
-在申请全网态服务上线之前，请确保真机测试已满足[小艺建议出卡的验收要求](https://developer.huawei.com/consumer/cn/doc/app/agc-help-xiaoyi-requirements-for-card-out-0000002430663182)，以避免申请后被审核驳回。
+在申请全网态服务上线之前，请确保真机测试已满足[小艺建议出卡的验收要求](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-xiaoyi-requirements-for-card-out-0000002430663182)，以避免申请后被审核驳回。
 
 1. 服务配置完成后，点击页面顶端的“提交”。
 
@@ -178,4 +178,4 @@ format: md
    7. 手机进入POI的200米感应范围内。
    8. 小艺建议加桌卡片尺寸只能是2\*2、4\*4，不能是2\*4。
 
-   排除上述原因后，如果小艺建议仍未出卡或出卡内容不符合预期，请参考[小艺建议出卡问题的反馈方法](https://developer.huawei.com/consumer/cn/doc/app/agc-help-feedback-method-for-non-card-issue-0000002445351893)进行反馈。
+   排除上述原因后，如果小艺建议仍未出卡或出卡内容不符合预期，请参考[小艺建议出卡问题的反馈方法](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-feedback-method-for-non-card-issue-0000002445351893)进行反馈。

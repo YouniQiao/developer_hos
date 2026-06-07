@@ -1,7 +1,7 @@
 ---
 title: "报表指标说明"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-index-0000001293894160
+original_url: /docs/monetize/promotion/bp-delivery-task-management-index-0000001293894160
 ---
 import MergeTable from '@site/src/components/MergeTable';
 

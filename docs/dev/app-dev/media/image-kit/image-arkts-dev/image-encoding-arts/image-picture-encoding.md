@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用ImagePacker完成多图对象编码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-picture-encoding
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-encoding-arts/image-picture-encoding
 format: md
 ---
 
@@ -49,7 +49,7 @@ format: md
 
    ![](./img/bfe6bd04.png)
 
-   在进行编码前，需要先通过解码获取picture，可参考[使用ImageSource完成多图对象解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-picture-decoding)。
+   在进行编码前，需要先通过解码获取picture，可参考[使用ImageSource完成多图对象解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-picture-decoding)。
 
    * picture编码到ArrayBuffer。
 

@@ -1,6 +1,6 @@
 ---
 title: "navigator"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-navigator
+original_url: /docs/dev/atomic-dev/ascf/components-navigation-components/components-navigator
 format: md
 ---
 
@@ -26,11 +26,11 @@ format: md
 
 | 值 | 描述 |
 | --- | --- |
-| navigate | 和[has.navigateTo](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-router#hasnavigateto)接口实现效果相同。 |
-| redirect | 和[has.redirectTo](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-router#hasredirectto)接口实现效果相同。 |
-| switchTab | 和[has.switchTab](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-router#hasswitchtab)接口实现效果相同。 |
-| reLaunch | 和[has.reLaunch](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-router#hasrelaunch)接口实现效果相同。 |
-| navigateBack | 和[has.navigateBack](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-router#hasnavigateback)接口实现效果相同。 |
+| navigate | 和[has.navigateTo](/docs/dev/atomic-dev/ascf/apis/apis-router#hasnavigateto)接口实现效果相同。 |
+| redirect | 和[has.redirectTo](/docs/dev/atomic-dev/ascf/apis/apis-router#hasredirectto)接口实现效果相同。 |
+| switchTab | 和[has.switchTab](/docs/dev/atomic-dev/ascf/apis/apis-router#hasswitchtab)接口实现效果相同。 |
+| reLaunch | 和[has.reLaunch](/docs/dev/atomic-dev/ascf/apis/apis-router#hasrelaunch)接口实现效果相同。 |
+| navigateBack | 和[has.navigateBack](/docs/dev/atomic-dev/ascf/apis/apis-router#hasnavigateback)接口实现效果相同。 |
 
 ## 示例
 

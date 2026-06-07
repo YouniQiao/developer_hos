@@ -1,6 +1,6 @@
 ---
 title: "大版本更新"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-version-update-0000002286057084
+original_url: /docs/dev/game-dev/games-center-big-event-version-update-0000002286057084
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-游戏已[上架](https://developer.huawei.com/consumer/cn/doc/games-guides/games-relesase-appgallery-0000002290270041)。
+游戏已[上架](/docs/dev/game-dev/games-relesase-appgallery-0000002290270041)。
 
 ## 操作流程
 
@@ -35,10 +35,10 @@ format: md
    | 参数 | 说明 |
    | --- | --- |
    | 是否配置落地页 | 大事件类型为“大版本更新”时，需配置落地页。 |
-   | 落地页类型 | 可选择落地页的类型，分为内容落地页、社区论坛帖和H5落地页三种。  * 内容落地页：关联已在游戏内容创作平台发布的文章或视频落地页，向用户详细展示事件相关信息。 说明：  配置内容落地页需先创作游戏的内容作品，具体要求请参见[内容创作管理](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-column-operation-0000002320758549)。 * 社区论坛帖：关联已发布的社区论坛帖，向用户详细展示事件相关信息。 说明：  使用社区论坛帖类型需要先开通社区板块，具体操作方法请参见[社区管理](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-community-operation-0000002285999096)。 * H5落地页：关联魔方创意生成的H5活动页面，向用户详细展示事件相关信息。 |
+   | 落地页类型 | 可选择落地页的类型，分为内容落地页、社区论坛帖和H5落地页三种。  * 内容落地页：关联已在游戏内容创作平台发布的文章或视频落地页，向用户详细展示事件相关信息。 说明：  配置内容落地页需先创作游戏的内容作品，具体要求请参见[内容创作管理](/docs/dev/game-dev/games-center-column-operation-0000002320758549)。 * 社区论坛帖：关联已发布的社区论坛帖，向用户详细展示事件相关信息。 说明：  使用社区论坛帖类型需要先开通社区板块，具体操作方法请参见[社区管理](/docs/dev/game-dev/games-center-community-operation-0000002285999096)。 * H5落地页：关联魔方创意生成的H5活动页面，向用户详细展示事件相关信息。 |
    | 内容ID | 选择落地页类型为“内容落地页”时显示，需填写相关内容ID。  说明：  内容ID可以在“AppGallery Connect \&gt; 全部服务 \&gt; 搜索游戏内容创作 \&gt; 内容管理”中进行查看。 |
    | 社区帖ID | 选择落地页类型为“社区论坛帖”时显示，需填写相关社区帖的ID。  说明：  社区帖ID可以在“AppGallery Connect \&gt; 社区管理”中进行查看。 |
-   | 自定义H5链接 | 选择落地页类型为“H5落地页”时显示，需填写H5活动页面链接。  说明：  仅支持添加由[魔方创意](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-creatives-ideas-0000002286004608)生成并审核通过的H5活动页面链接。 |
+   | 自定义H5链接 | 选择落地页类型为“H5落地页”时显示，需填写H5活动页面链接。  说明：  仅支持添加由[魔方创意](/docs/dev/game-dev/games-center-creatives-ideas-0000002286004608)生成并审核通过的H5活动页面链接。 |
 5. 上传外显素材（可选）。
 
    外显素材是大事件的宣传海报,会在详情页、推荐榜单等场景展示给用户。

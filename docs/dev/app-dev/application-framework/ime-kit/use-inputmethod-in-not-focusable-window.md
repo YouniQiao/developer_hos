@@ -1,6 +1,6 @@
 ---
 title: "不可获焦窗口中输入框与输入法交互指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-inputmethod-in-not-focusable-window
+original_url: /docs/dev/app-dev/application-framework/ime-kit/use-inputmethod-in-not-focusable-window
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 应用获得焦点是使用输入法的必要条件，开发者需要正确处理焦点以确保输入法的正常工作。
 
-例如，在应用开发中，开发者可以通过[setWindowFocusable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowfocusable9)，将创建的窗口的可获焦属性设置为false（如悬浮窗、辅助交互窗口等），并希望在该窗口中绘制输入框（如[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)或[自绘输入框](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-inputmethod-in-custom-edit-box)）以支持用户输入，即拉起系统键盘进行输入操作。
+例如，在应用开发中，开发者可以通过[setWindowFocusable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowfocusable9)，将创建的窗口的可获焦属性设置为false（如悬浮窗、辅助交互窗口等），并希望在该窗口中绘制输入框（如[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)、[TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea)或[自绘输入框](/docs/dev/app-dev/application-framework/ime-kit/use-inputmethod-in-custom-edit-box)）以支持用户输入，即拉起系统键盘进行输入操作。
 
 ## 系统限制
 

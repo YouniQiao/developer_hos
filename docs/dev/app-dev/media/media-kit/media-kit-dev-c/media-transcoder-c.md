@@ -1,6 +1,6 @@
 ---
 title: "Media Transcoder C"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-transcoder-c
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

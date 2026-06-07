@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ExternalCpp视图中显示SDK的系统API"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-25
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-25
 ---
 
 

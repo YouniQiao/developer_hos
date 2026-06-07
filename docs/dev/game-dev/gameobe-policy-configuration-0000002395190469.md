@@ -1,6 +1,6 @@
 ---
 title: "配置策略"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469
+original_url: /docs/dev/game-dev/gameobe-policy-configuration-0000002395190469
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-* 您已[开通联机对战服务](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-enable-0000002395350369)。
+* 您已[开通联机对战服务](/docs/dev/game-dev/gameobe-enable-0000002395350369)。
 * 您已规划房间延时解散和玩家掉线重连时长。
 
   ![](./img/894943a9.png)

@@ -1,6 +1,6 @@
 ---
 title: "按钮与选择组件常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-select-component-faq
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-select-component-faq
 format: md
 ---
 

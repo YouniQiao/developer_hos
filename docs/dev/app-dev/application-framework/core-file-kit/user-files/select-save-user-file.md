@@ -1,11 +1,11 @@
 ---
 title: "选择与保存用户文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-save-user-file
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file
 format: md
 ---
 
 
-* **[选择用户文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file)**
-* **[保存用户文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file)**
-* **[授权持久化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission)**
-* **[授权持久化(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileshare-guidelines)**
+* **[选择用户文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file)**
+* **[保存用户文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file)**
+* **[授权持久化](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/file-persistpermission)**
+* **[授权持久化(C/C++)](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/native-fileshare-guidelines)**

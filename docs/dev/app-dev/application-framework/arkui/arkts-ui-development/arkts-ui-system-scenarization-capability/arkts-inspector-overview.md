@@ -1,15 +1,15 @@
 ---
 title: "检查页面布局"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-inspector-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-inspector-overview
 format: md
 ---
 
 
 inspector用于检查页面布局，通过双向定位功能帮助开发者在DevEco Studio中快速定位组件、修改属性和调试组件，以提高开发效率。
 
-ArkUI获取当前显示页面中所有组件的信息，包括组件树的父子结构、尺寸、位置、样式、属性和状态。获取组件树信息后，生成并展示为Inspector组件树。DevEco Studio的使用具体可以参考[Inspector调试能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler#inspector调试能力)。
+ArkUI获取当前显示页面中所有组件的信息，包括组件树的父子结构、尺寸、位置、样式、属性和状态。获取组件树信息后，生成并展示为Inspector组件树。DevEco Studio的使用具体可以参考[Inspector调试能力](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-inspector-profiler#inspector调试能力)。
 
-inspector针对UI组件的布局或绘制送显完成，还提供了注册与取消监听函数的C API接口，具体使用可以参考[添加事件监听](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-add-component-events)。
+inspector针对UI组件的布局或绘制送显完成，还提供了注册与取消监听函数的C API接口，具体使用可以参考[添加事件监听](/docs/dev/app-dev/application-framework/ndk-add-component-events)。
 
 ## 使用约束
 

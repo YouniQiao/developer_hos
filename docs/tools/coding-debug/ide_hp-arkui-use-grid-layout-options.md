@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkui-use-grid-layout-options"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui-use-grid-layout-options
+original_url: /docs/tools/coding-debug/ide_hp-arkui-use-grid-layout-options
 format: md
 ---
 

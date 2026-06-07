@@ -1,6 +1,6 @@
 ---
 title: "应用接入快捷栏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/desktop-quickbar-extension-guide
+original_url: /docs/dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide/desktop-quickbar-extension-guide
 format: md
 ---
 

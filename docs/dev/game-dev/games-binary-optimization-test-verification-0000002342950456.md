@@ -1,6 +1,6 @@
 ---
 title: "测试及验证收益"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-test-verification-0000002342950456
+original_url: /docs/dev/game-dev/games-binary-optimization-test-verification-0000002342950456
 has_merged_cells: true
 format: md
 ---
@@ -22,7 +22,7 @@ format: md
    ![](./img/e1db7146.png)
 
    因系统功耗影响因素较多，尤其是显示功耗影响较大，因此在收益测试过程中可以选择排除干扰。
-2. 使用开源性能工具，例如[HiSmartPerf-Editor](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-tool-0000002287085461)，分别抓取整个游戏优化前、后的数据指标。请保持相同配置项、使用相同场景进行优化前、后的对比测试，抓取并填写[游戏优化效果验收报告](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260323192543.59320459698024649371655222566833%3A20260603105723%3A2800%3A439BC0D35D27D89191D955276384F7F33E1291EE2FEDD503F5B68675D466DD59.xlsx?needInitFileName=true)中的数据指标。您可以优先选取**性能**和**功耗**相关指标作为主要测试指标，**CPU**、**GPU**、**DDR**相关指标作为参考数值。
+2. 使用开源性能工具，例如[HiSmartPerf-Editor](/docs/dev/game-dev/games-hismartperf-tool-0000002287085461)，分别抓取整个游戏优化前、后的数据指标。请保持相同配置项、使用相同场景进行优化前、后的对比测试，抓取并填写[游戏优化效果验收报告](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260323192543.59320459698024649371655222566833%3A20260603105723%3A2800%3A439BC0D35D27D89191D955276384F7F33E1291EE2FEDD503F5B68675D466DD59.xlsx?needInitFileName=true)中的数据指标。您可以优先选取**性能**和**功耗**相关指标作为主要测试指标，**CPU**、**GPU**、**DDR**相关指标作为参考数值。
 3. 验收报告将会自动计算优化后的效果和收益。优化差异/效果计算公式如下：
 
    | 优化数据 | | 计算公式 |

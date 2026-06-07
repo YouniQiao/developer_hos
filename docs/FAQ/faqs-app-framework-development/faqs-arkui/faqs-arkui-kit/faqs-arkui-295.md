@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Scroll嵌套List时如何让List和Scroll一起滚动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-295
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-295
 ---
 
 

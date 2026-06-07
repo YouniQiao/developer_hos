@@ -1,7 +1,7 @@
 ---
 title: "查询版位元素"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-slot2-0000001338381965
+original_url: /docs/monetize/promotion/marketing-api-tool-slot2-0000001338381965
 format: md
 ---
 
@@ -32,8 +32,8 @@ format: md
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | creative\_size\_id | long | 是 | 版位ID。 |
   | language | string | 否 | 版位元素语言码。支持zh\_CN,en\_US,ru\_RU三种。 |
-  | product\_type | string | 否 | 推广产品类型，详见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
-  | objective\_type | string | 否 | 推广目的，详见[推广目的](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section15457195232912)。 |
+  | product\_type | string | 否 | 推广产品类型，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
+  | objective\_type | string | 否 | 推广目的，详见[推广目的](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section15457195232912)。 |
 
   - <strong>请求示例</strong>
 
@@ -86,7 +86,7 @@ format: md
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
     | creative\_size\_element\_id | long | 版位元素id。 |
-    | creative\_size\_element\_name | string | 详见[版位元素类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix5-0000001338486113#section23877534914)，其他为无效的类型，请丢弃。 |
+    | creative\_size\_element\_name | string | 详见[版位元素类型](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#section23877534914)，其他为无效的类型，请丢弃。 |
     | creative\_size\_element\_title | string | 版位元素名称。 |
     | creative\_size\_element\_caption | string | 版位元素描述。 |
     | min\_length | integer | 最小输入长度。  click\_tracking\_url、deeplink\_url、impression\_tracking\_url、landing\_page\_url、title、description、corporate\_name、splash\_wave\_text、splash\_swipe\_text、splash\_wave\_click\_text、splash\_swipe\_click\_text、splash\_redirect\_text 使用。 |

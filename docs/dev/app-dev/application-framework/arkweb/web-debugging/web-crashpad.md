@@ -1,6 +1,6 @@
 ---
 title: "使用Crashpad收集Web组件崩溃信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-crashpad
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-debugging/web-crashpad
 format: md
 ---
 

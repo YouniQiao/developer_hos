@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "单层HDR图片转换双层"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-single-to-dual
+original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/hdr-single-to-dual
 format: md
 ---
 
@@ -45,7 +45,7 @@ format: md
 
 **内存规格：**
 
-处理的PixelMap对象需为[DMA内存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type-c#内存类型介绍)。
+处理的PixelMap对象需为[DMA内存](/docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-allocator-type-c#内存类型介绍)。
 
 ## 开发指导
 

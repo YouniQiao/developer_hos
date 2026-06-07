@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何清除输入框焦点"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-296
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-296
 ---
 
 

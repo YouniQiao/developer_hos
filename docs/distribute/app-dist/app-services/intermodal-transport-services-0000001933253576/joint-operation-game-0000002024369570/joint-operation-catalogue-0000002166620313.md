@@ -1,7 +1,7 @@
 ---
 title: "文档导读"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-catalogue-0000002166620313
+original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/joint-operation-game-0000002024369570/joint-operation-catalogue-0000002166620313
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| [创建HarmonyOS应用](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506`) | [版署实名认证申请](`https://developer.huawei.com/consumer/cn/doc/games-guides/game-center-identification-applyfor-0000002392353221`) | [配置签名证书指纹](`https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-huawei#section205943551234`) | [配置APP ID映射关系](`https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-huawei#section3907114313255`) |
+| [创建HarmonyOS应用](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506`) | [版署实名认证申请](`https://developer.huawei.com/consumer/cn/doc/games-guides/game-center-identification-applyfor-0000002392353221`) | [配置签名证书指纹](`/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-gameplayer-huawei#section205943551234`) | [配置APP ID映射关系](`/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-gameplayer-huawei#section3907114313255`) |
 | [创建数字商品](`https://developer.huawei.com/consumer/cn/doc/app/create-digital-products-0000001958955105`) |  |  |  |
 
 ## HarmonyOS 5.0及以上/OpenHarmony适配

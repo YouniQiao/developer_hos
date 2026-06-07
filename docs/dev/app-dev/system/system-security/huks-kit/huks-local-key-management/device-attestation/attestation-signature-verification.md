@@ -1,6 +1,6 @@
 ---
 title: "签名验签识别真实请求"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification
 format: md
 ---
 
@@ -33,5 +33,5 @@ format: md
 4. **根据应用公钥ID查找应用公钥**：应用服务器根据应用公钥ID查找应用公钥，并校验挑战值Challenge。
 5. **使用应用公钥对请求的签名进行校验**：应用服务器使用应用公钥对请求中的签名进行校验。
 
-* **[应用端开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification-apps)**
-* **[服务器端开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification-servers)**
+* **[应用端开发](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines/device-attestation-apps)**
+* **[服务器端开发](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines/device-attestation-servers)**

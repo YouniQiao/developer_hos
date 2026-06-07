@@ -1,6 +1,6 @@
 ---
 title: "扫码"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-scan
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-scan
 format: md
 ---
 

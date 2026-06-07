@@ -1,7 +1,7 @@
 ---
 format: md
 title: "当子组件触发触摸事件时，如果父组件也设置了触摸事件，如何解决父组件同时被触发的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-244
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-244
 ---
 
 

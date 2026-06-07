@@ -1,6 +1,6 @@
 ---
 title: "手势冲突处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-gesture-judge
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-gesture-judge
 format: md
 ---
 
@@ -193,7 +193,7 @@ format: md
 手势并行动态控制的前提是手势识别成功，如果手势不成功则不会产生手势回调响应。
 
 1. 业务手势作业流：指真正触发UI变化的业务手势，比如使页面滚动的PanGesture，触发点击的TapGesture等。
-2. 监听手势作业流：指在监听手势运行的过程中，应根据上下文的业务状态变化动态控制手势识别器的开闭，例如判断组件嵌套滚动过程中是否已滑至边缘。这一监听事件可借助一个使用[并行手势绑定方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-binding#parallelgesture并行手势绑定方法)的PanGesture实现，或者采用Touch事件来完成。
+2. 监听手势作业流：指在监听手势运行的过程中，应根据上下文的业务状态变化动态控制手势识别器的开闭，例如判断组件嵌套滚动过程中是否已滑至边缘。这一监听事件可借助一个使用[并行手势绑定方式](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-binding#parallelgesture并行手势绑定方法)的PanGesture实现，或者采用Touch事件来完成。
 3. 设置手势并行：此步骤并非必需，典型场景是在嵌套滚动中，设置外部组件的滚动手势与内部的滚动手势并行。
 4. 动态开闭手势：指通过手势识别器的setEnabled方法，控制手势是否响应用户回调。
 
@@ -203,7 +203,7 @@ format: md
 | --- | --- |
 | [shouldBuiltInRecognizerParallelWith](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-blocking-enhancement#shouldbuiltinrecognizerparallelwith) | 用于设置系统组件内置手势与其他手势并行。 |
 | [onGestureRecognizerJudgeBegin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-blocking-enhancement#ongesturerecognizerjudgebegin) | 用于手势拦截，获取手势识别器，初始化手势识别器开闭状态。 |
-| [parallelGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-binding#parallelgesture并行手势绑定方法) | 可使开发者定义的手势，与比他优先级高的手势并行。 |
+| [parallelGesture](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-binding#parallelgesture并行手势绑定方法) | 可使开发者定义的手势，与比他优先级高的手势并行。 |
 
 以下示例是两个Scroll组件的嵌套滚动场景，使用手势控制的api去控制外部组件和内部组件的嵌套滚动联动。
 
@@ -454,7 +454,7 @@ format: md
 
 ## 阻止手势参与识别
 
-手势识别基于[触摸测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#触摸测试)的响应链结果进行，因此在用户按下时，通过控制响应链中手势识别器的参与状态，实现高效的动态干预手势处理。
+手势识别基于[触摸测试](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-interaction-basic-principles#触摸测试)的响应链结果进行，因此在用户按下时，通过控制响应链中手势识别器的参与状态，实现高效的动态干预手势处理。
 
 从API version 20开始，可以结合[onTouchTestDone](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-blocking-enhancement#ontouchtestdone20)接口来阻止手势参与识别。完成触摸测试后，系统通过该接口回调返回所有手势识别器对象。应用可根据类型、组件标识或关联组件信息筛选识别器，并通过调用[preventBegin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#preventbegin20)接口主动禁用特定识别器。
 

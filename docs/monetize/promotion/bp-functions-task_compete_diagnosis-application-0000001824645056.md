@@ -1,7 +1,7 @@
 ---
 title: "申请开通"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-task_compete_diagnosis-application-0000001824645056
+original_url: /docs/monetize/promotion/bp-functions-task_compete_diagnosis-application-0000001824645056
 format: md
 ---
 

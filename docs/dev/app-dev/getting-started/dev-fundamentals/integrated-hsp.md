@@ -1,6 +1,6 @@
 ---
 title: "集成态HSP"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/integrated-hsp
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/integrated-hsp
 ---
 
 集成态HSP是应用内HSP的中间编译产物，用于解决使用方的bundleName和签名之间的强耦合问题。
@@ -19,7 +19,7 @@ HSP只能给bundleName一样的工程使用，集成态HSP可以给不同的bund
 
 ## 约束限制
 
-* 集成态HSP只支持[Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-stage)。
+* 集成态HSP只支持[Stage模型](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage)。
 * 从API version 12开始，支持使用集成态HSP。
 * 使用集成态HSP要求使用标准化的OHMUrl格式。需要在工程级的[build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)中，将[strictMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section13181758123312)下的useNormalizedOHMUrl字段设置为true。
 

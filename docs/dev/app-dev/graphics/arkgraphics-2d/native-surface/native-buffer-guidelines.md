@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "NativeBuffer开发指导 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-buffer-guidelines
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-buffer-guidelines
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "@performance/object-creation-check（已下线）"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-object-creation-check
+original_url: /docs/tools/coding-debug/ide-object-creation-check
 format: md
 ---
 

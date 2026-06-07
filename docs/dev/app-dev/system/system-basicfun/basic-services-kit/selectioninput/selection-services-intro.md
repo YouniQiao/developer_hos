@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "划词服务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/selection-services-intro
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/selectioninput/selection-services-intro
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 划词服务的业务流程依赖于划词应用、被划词应用、系统设置应用、系统服务管理、多模输入以及剪贴板服务等模块的协同工作，这些模块的介绍及相关业务内容如下所述：
 
-**划词应用**：本文档将实现了划词扩展能力的应用统称为划词应用。当划词应用被划词服务成功拉起后，可通过监听[selectionCompleted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#selectionmanageronselectioncompleted)事件以识别用户选词操作,可调用[getSelectionContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#getselectioncontent)获取选中的文本内容，同时也可调用[createPanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#createpanel)和[show](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#show)创建和显示面板。对应下图序号6。具体的接口描述和使用方法可参见[实现一个划词扩展能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/selection-services-application-guide)。
+**划词应用**：本文档将实现了划词扩展能力的应用统称为划词应用。当划词应用被划词服务成功拉起后，可通过监听[selectionCompleted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#selectionmanageronselectioncompleted)事件以识别用户选词操作,可调用[getSelectionContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#getselectioncontent)获取选中的文本内容，同时也可调用[createPanel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#createpanel)和[show](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionmanager#show)创建和显示面板。对应下图序号6。具体的接口描述和使用方法可参见[实现一个划词扩展能力](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/selectioninput/selection-services-application-guide)。
 
 **被划词应用**：本文档将用户选中文本内容所在的应用统称为被划词应用。当前划词服务的方案采用标准的系统复制机制，因此无需被划词应用进行任何适配和修改，划词服务即可实现跨应用的划词功能。对应下图序号11。然而，对于部分不支持系统级复制操作的应用（如某些受控的WebView、沙箱环境应用，或仅限于内部粘贴的应用），划词服务将无法通过标准的系统复制机制获取到用户选中的文本内容。在此类场景下，划词功能会失效。因此，建议开发者在开发划词应用时，配套使用白名单或黑名单机制，将希望支持划词功能的被划词应用放入白名单内。
 

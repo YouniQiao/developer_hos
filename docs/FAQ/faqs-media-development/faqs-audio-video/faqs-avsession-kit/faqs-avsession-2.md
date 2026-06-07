@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用如何更新进度条"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-2
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-2
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[进度控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#进度控制)
+[进度控制](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#进度控制)

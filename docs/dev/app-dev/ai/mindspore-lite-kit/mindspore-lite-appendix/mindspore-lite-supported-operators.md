@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "MindSpore Lite Kit算子支持列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-supported-operators
+original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-appendix/mindspore-lite-supported-operators
 format: md
 ---
 

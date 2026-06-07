@@ -1,6 +1,6 @@
 ---
 title: "快速适配"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-quick-adaptation
 format: md
 ---
 
@@ -28,7 +28,7 @@ format: md
 
 当应用具备账号密码登录的场景时，只需要将充当用户名的TextInput输入框的type属性设置为InputType.USER\_NAME，将密码TextInput输入框的type属性设置为InputType.Password，即可使用密码保险箱的填充和保存功能。
 
-在应用的账号密码注册页除设置用户名输入框外，将新密码TextInput输入框的type属性设置为InputType.NEW\_PASSWORD，即可使用强密码填充功能。如果应用对密码强度有特殊要求，根据[为应用添加自动生成高强度密码的建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-custom-strong-password-rules)适配即可。
+在应用的账号密码注册页除设置用户名输入框外，将新密码TextInput输入框的type属性设置为InputType.NEW\_PASSWORD，即可使用强密码填充功能。如果应用对密码强度有特殊要求，根据[为应用添加自动生成高强度密码的建议](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-custom-strong-password-rules)适配即可。
 
 代码示例：
 

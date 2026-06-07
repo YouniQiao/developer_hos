@@ -1,6 +1,6 @@
 ---
 title: "前台帧率"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-frame-rate
+original_url: /docs/experience-suggestions/power/foreground/standard-foreground-frame-rate
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [高帧率场景帧率建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ltpo-description) |
+| 说明 | [高帧率场景帧率建议](/docs/quality/ltpo-description) |
 
 ### 中等帧率场景帧率建议
 
@@ -25,7 +25,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [中等帧率场景帧率建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ltpo-description) |
+| 说明 | [中等帧率场景帧率建议](/docs/quality/ltpo-description) |
 
 ### 低帧率场景帧率建议
 
@@ -35,7 +35,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [低帧率场景帧率建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ltpo-description) |
+| 说明 | [低帧率场景帧率建议](/docs/quality/ltpo-description) |
 
 ### 跟随源帧率场景帧率建议
 
@@ -45,4 +45,4 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [跟随源帧率场景帧率建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ltpo-description) |
+| 说明 | [跟随源帧率场景帧率建议](/docs/quality/ltpo-description) |

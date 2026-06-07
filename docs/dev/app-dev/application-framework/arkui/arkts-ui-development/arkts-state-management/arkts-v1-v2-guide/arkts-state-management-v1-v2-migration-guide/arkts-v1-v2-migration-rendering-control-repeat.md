@@ -1,6 +1,6 @@
 ---
 title: "循环渲染迁移"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-rendering-control-repeat
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-rendering-control-repeat
 format: md
 ---
 
@@ -9,14 +9,14 @@ format: md
 
 | 迁移前渲染控制组件名称 | 迁移后渲染控制组件名称 |
 | --- | --- |
-| [ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach) | [Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat) |
-| [LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach) | [Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat) |
+| [ForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach) | [Repeat](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat) |
+| [LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach) | [Repeat](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat) |
 
 ## ForEach迁移Repeat
 
 状态管理V2推荐使用Repeat替代ForEach。
 
-ForEach使用示例请参考[数据源数组项子属性变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach#数据源数组项子属性变化)。对应在V2中，ForEach迁移Repeat示例代码参考如下。
+ForEach使用示例请参考[数据源数组项子属性变化](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach#数据源数组项子属性变化)。对应在V2中，ForEach迁移Repeat示例代码参考如下。
 
 Repeat需要和状态管理V2一起使用，状态管理V2提供了@ObservedV2和@Trace装饰器对子属性进行深度观测。
 
@@ -132,7 +132,7 @@ struct ArticleCardChangeChild {
 
 LazyForEach根据数据源循环渲染子组件。
 
-示例1中，在容器组件[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-list)中使用LazyForEach，并基于数据源循环渲染出了一系列[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-text-display)子组件。
+示例1中，在容器组件[List](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-list)中使用LazyForEach，并基于数据源循环渲染出了一系列[Text](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-common-components-text-display)子组件。
 
 **示例1 - 迁移前**
 
@@ -190,7 +190,7 @@ struct MyComponent {
 
 1. 使用状态管理V2装饰器。
 
-   Repeat推荐和状态管理V2装饰器配合使用（[懒加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat#懒加载能力说明)模式下只支持和状态管理V2装饰器配合使用）。如果之前使用的是状态管理V1装饰器，需要修改为状态管理V2装饰器。
+   Repeat推荐和状态管理V2装饰器配合使用（[懒加载](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat#懒加载能力说明)模式下只支持和状态管理V2装饰器配合使用）。如果之前使用的是状态管理V1装饰器，需要修改为状态管理V2装饰器。
 
    ```
    // 迁移前 - LazyForEach
@@ -271,9 +271,9 @@ struct MyComponent {
    ```
 4. 配置懒加载功能。
 
-   Repeat具有[懒加载和全量加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat#懒加载能力说明)两种模式。
+   Repeat具有[懒加载和全量加载](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat#懒加载能力说明)两种模式。
 
-   * 全量加载模式渲染所有子节点（对标[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)）。
+   * 全量加载模式渲染所有子节点（对标[ForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)）。
    * 懒加载模式动态渲染屏幕区域和预加载区域内的子节点（需要与容器组件配合使用，对标LazyForEach）。
 
    从LazyForEach迁移至Repeat时，需要调用[virtualScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-repeat#virtualscroll)属性，使能懒加载。
@@ -541,7 +541,7 @@ struct MyComponent {
 
 **LazyForEach示例**
 
-LazyForEach可以使用[@Observed与@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)装饰器实现对数据子属性的观测。当有数据子属性发生变化时，仅更新使用了该子属性的组件，从而提高性能。
+LazyForEach可以使用[@Observed与@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)装饰器实现对数据子属性的观测。当有数据子属性发生变化时，仅更新使用了该子属性的组件，从而提高性能。
 
 示例3演示了对子属性的观测。
 
@@ -618,7 +618,7 @@ struct ChildComponent {
 
 **迁移Repeat**
 
-Repeat需要和状态管理V2一起使用，状态管理V2提供了[@ObservedV2和@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)装饰器对子属性进行深度观测。迁移时，需要将@Observe和@ObjectLink装饰器迁移至@ObserveV2和@Trace装饰器。
+Repeat需要和状态管理V2一起使用，状态管理V2提供了[@ObservedV2和@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)装饰器对子属性进行深度观测。迁移时，需要将@Observe和@ObjectLink装饰器迁移至@ObserveV2和@Trace装饰器。
 
 迁移后的示例如下所示。
 
@@ -674,7 +674,7 @@ struct MyComponent {
 
 **LazyForEach示例**
 
-状态管理V2的[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)装饰器提供了观测自定义组件内部变量的能力。被@Local装饰的变量发生变化时，会通知LazyForEach更新对应的组件。
+状态管理V2的[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)装饰器提供了观测自定义组件内部变量的能力。被@Local装饰的变量发生变化时，会通知LazyForEach更新对应的组件。
 
 示例4演示了在LazyForEach中使用@Local装饰器观测数据变化，触发组件更新。
 
@@ -828,7 +828,7 @@ struct ChildComponent {
 
 **LazyForEach示例**
 
-状态管理V2的[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)装饰器提供了观测自定义组件外部输入变量的能力，可以实现父子组件间的数据同步。将父组件的变量传递给子组件，并用@Param装饰，当父组件变量发生变化时，会通知对应的组件更新。
+状态管理V2的[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)装饰器提供了观测自定义组件外部输入变量的能力，可以实现父子组件间的数据同步。将父组件的变量传递给子组件，并用@Param装饰，当父组件变量发生变化时，会通知对应的组件更新。
 
 示例5演示了在LazyForEach中使用@Param装饰器观测数据变化，触发组件更新。
 
@@ -1094,7 +1094,7 @@ struct Parent {
 
 **LazyForEach示例**
 
-LazyForEach自身并不具备组件复用能力，为实现组件复用，需要与[@Reusable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable)装饰器配合使用（被@Reusable装饰的自定义组件具有复用能力）。
+LazyForEach自身并不具备组件复用能力，为实现组件复用，需要与[@Reusable](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable)装饰器配合使用（被@Reusable装饰的自定义组件具有复用能力）。
 
 示例7演示了组件复用的典型场景。
 
@@ -1182,7 +1182,7 @@ struct ChildComponent {
 
 **迁移Repeat**
 
-Repeat本身具备组件复用能力，同时也支持与状态管理V2的[@ReusableV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2)装饰器联合使用。因此，迁移至Repeat后，其组件复用具有两种实现方案。
+Repeat本身具备组件复用能力，同时也支持与状态管理V2的[@ReusableV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-new-reusablev2)装饰器联合使用。因此，迁移至Repeat后，其组件复用具有两种实现方案。
 
 1. 直接使用Repeat自身的复用能力。
 2. 使用@ReusableV2装饰器提供的复用能力。

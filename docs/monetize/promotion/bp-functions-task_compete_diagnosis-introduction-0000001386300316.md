@@ -1,7 +1,7 @@
 ---
 title: "功能介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-task_compete_diagnosis-introduction-0000001386300316
+original_url: /docs/monetize/promotion/bp-functions-task_compete_diagnosis-introduction-0000001386300316
 format: md
 ---
 

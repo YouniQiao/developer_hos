@@ -1,6 +1,6 @@
 ---
 title: "共享模块"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable-module
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable-module
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
   ```
 * 共享模块导出的变量必须是可共享对象。
 
-  共享模块在并发实例间可共享，因此导出的所有对象必须是可共享的。可共享对象参考[Sendable支持的数据类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable支持的数据类型)。
+  共享模块在并发实例间可共享，因此导出的所有对象必须是可共享的。可共享对象参考[Sendable支持的数据类型](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable支持的数据类型)。
 * 共享模块不支持re-export写法。
 
   ```

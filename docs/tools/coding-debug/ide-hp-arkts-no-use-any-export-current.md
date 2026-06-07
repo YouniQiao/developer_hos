@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkts-no-use-any-export-current"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hp-arkts-no-use-any-export-current
+original_url: /docs/tools/coding-debug/ide-hp-arkts-no-use-any-export-current
 format: md
 ---
 

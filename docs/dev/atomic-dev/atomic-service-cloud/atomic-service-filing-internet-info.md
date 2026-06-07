@@ -1,6 +1,6 @@
 ---
 title: "新增互联网信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-internet-info
+original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-internet-info
 format: md
 ---
 

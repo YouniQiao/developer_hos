@@ -1,6 +1,6 @@
 ---
 title: "操作错误场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-operation-error
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-operation-error
 format: md
 ---
 

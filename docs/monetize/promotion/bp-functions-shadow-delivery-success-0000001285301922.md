@@ -1,7 +1,7 @@
 ---
 title: "成功案例"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-shadow-delivery-success-0000001285301922
+original_url: /docs/monetize/promotion/bp-functions-shadow-delivery-success-0000001285301922
 format: md
 ---
 

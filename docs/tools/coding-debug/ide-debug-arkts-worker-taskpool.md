@@ -1,7 +1,7 @@
 ---
 title: "调试场景说明"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-debug-arkts-worker-taskpool
+original_url: /docs/tools/coding-debug/ide-debug-arkts-worker-taskpool
 format: md
 ---
 

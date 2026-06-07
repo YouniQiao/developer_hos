@@ -1,6 +1,6 @@
 ---
 title: "独立游戏（扶持政策）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/game-center-independency-0000002382867088
+original_url: /docs/dev/game-dev/game-center-independency-0000002382867088
 format: md
 ---
 

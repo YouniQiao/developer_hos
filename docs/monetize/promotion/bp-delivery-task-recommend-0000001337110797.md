@@ -1,7 +1,7 @@
 ---
 title: "投放推荐任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-recommend-0000001337110797
+original_url: /docs/monetize/promotion/bp-delivery-task-recommend-0000001337110797
 format: md
 ---
 
@@ -79,7 +79,7 @@ format: md
 
    ![](./img/caution_3.0-zh-cn_38378b606fa4.png) 
 
-   - 支持在场景投放模块设置[用户定向任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-introduction-0000001285262204)/[影子投放目标应用](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-shadow-delivery-introduction-0000001284775684)/[oCPD转化目标](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-introduction-0000001282639525)，需要填写“子任务名称”和“出价”任务设置项。场景投放模块配置的“出价”即为针对这一条件子任务设置的单独出价，该子任务以此出价参与竞价及计费。
+   - 支持在场景投放模块设置[用户定向任务](/docs/monetize/promotion/bp-functions-target-introduction-0000001285262204)/[影子投放目标应用](/docs/monetize/promotion/bp-functions-shadow-delivery-introduction-0000001284775684)/[oCPD转化目标](/docs/monetize/promotion/bp-functions-ocpx-introduction-0000001282639525)，需要填写“子任务名称”和“出价”任务设置项。场景投放模块配置的“出价”即为针对这一条件子任务设置的单独出价，该子任务以此出价参与竞价及计费。
    - 不同类型的投放任务对应子任务数的上限是不同的。具体子任务数的上限，请查看“新建”下的界面提示。
 
    ![](./img/zh-cn_image_0000002573946983_ca18468b73dd.png "点击放大")
@@ -91,7 +91,7 @@ format: md
 
    ![](./img/zh-cn_image_0000002543187158_a5d56c49fcfa.png "点击放大")
 
-   具体任务设置项的配置请参见[智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940)或[监测链接](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-configure-0000001351658397)。
+   具体任务设置项的配置请参见[智能分包](/docs/monetize/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940)或[监测链接](/docs/monetize/promotion/bp-functions-link-configure-0000001351658397)。
 8. 以上设置模块均填写完毕后，点击“提交任务”，进入“推广创意”设置模块，配置相关任务设置项。
 
    ![](./img/note_3.0-zh-cn_27de63fa2e1b.png) 

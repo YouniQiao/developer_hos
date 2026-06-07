@@ -1,6 +1,6 @@
 ---
 title: "picker-view"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker-view
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-picker-view
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ## 子组件
 
-[picker-view-column](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker-view-column)
+[picker-view-column](/docs/dev/atomic-dev/ascf/components-form-components/components-picker-view-column)
 
 ## 属性
 

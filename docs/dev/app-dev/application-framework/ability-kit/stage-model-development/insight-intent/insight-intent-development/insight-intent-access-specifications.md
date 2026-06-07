@@ -1,6 +1,6 @@
 ---
 title: "附录：标准意图接入规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-access-specifications
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-access-specifications
 format: md
 ---
 

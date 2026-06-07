@@ -1,6 +1,6 @@
 ---
 title: "网络连接管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-net-connection-manager
+original_url: /docs/dev/atomic-dev/atomic-network-development/atomic-net-connection-manager
 format: md
 ---
 

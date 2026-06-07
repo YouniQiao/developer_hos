@@ -1,6 +1,6 @@
 ---
 title: "接入跨设备互通控件后，设备选择列表没有周围设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-faq-1
+original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-faq/servicecollaboration-faq-1
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用文件上传下载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-upload-download
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/upload-download/app-file-upload-download
 format: md
 ---
 
@@ -16,11 +16,11 @@ format: md
 
 · 当前上传应用文件功能，request.uploadFile方式仅支持上传应用缓存文件路径（cacheDir）下的文件，request.agent方式支持上传用户公共文件和应用缓存文件路径下的文件。
 
-· 使用上传下载模块，需[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：ohos.permission.INTERNET。
+· 使用上传下载模块，需[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)：ohos.permission.INTERNET。
 
 · 上传下载模块不支持Charles、Fiddler等代理抓包工具。
 
-· 上传下载模块接口目前暂不支持子线程调用场景，如[TaskPool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-introduction)等。
+· 上传下载模块接口目前暂不支持子线程调用场景，如[TaskPool](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction)等。
 
 以下示例代码展示了两种将缓存文件上传至服务器的方法：
 
@@ -146,13 +146,13 @@ async requestAgentUpload(fileName: string, callback: (progress: number, isSuccee
 
 ## 下载网络资源文件至应用文件目录
 
-开发者可以使用上传下载模块（[ohos.request](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-request)）的下载接口将网络资源文件下载到应用文件目录。对已下载的网络资源应用文件，开发者可以使用基础文件IO接口（[ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)）对其进行访问，使用方式与[应用文件访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)一致。文件下载过程使用系统服务代理完成，在api12中request.agent.create接口增加了设置代理地址参数，支持用户设置自定义代理地址。
+开发者可以使用上传下载模块（[ohos.request](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-request)）的下载接口将网络资源文件下载到应用文件目录。对已下载的网络资源应用文件，开发者可以使用基础文件IO接口（[ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)）对其进行访问，使用方式与[应用文件访问](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)一致。文件下载过程使用系统服务代理完成，在api12中request.agent.create接口增加了设置代理地址参数，支持用户设置自定义代理地址。
 
 ![](./img/64f010d9.png)
 
 当前网络资源文件仅支持下载至应用文件目录。
 
-使用上传下载模块，需[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：ohos.permission.INTERNET。
+使用上传下载模块，需[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)：ohos.permission.INTERNET。
 
 以下示例代码展示了将网络资源文件下载到应用内部文件目录的两种方法（示例requestDownloadFile中的clearExistFile方法可点击代码块右下角链接查看）：
 
@@ -386,9 +386,9 @@ async audioFileAgentTask(url: string, fileName: string, callback: (progress: num
 
 开发者可以通过调用PhotoAccessHelper[模块描述](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper)的[createAsset()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper#createasset-2)接口创建媒体文件并获取用户文件的URI，将其作为[Config](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-request#requestagentconfig10)的saveas字段值进行下载。
 
-需要权限：[ohos.permission.WRITE\_IMAGEVIDEO](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionwrite_imagevideo)
+需要权限：[ohos.permission.WRITE\_IMAGEVIDEO](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionwrite_imagevideo)
 
-权限[ohos.permission.WRITE\_IMAGEVIDEO](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionwrite_imagevideo)是[权限机制中的基本概念](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限机制中的基本概念)中system\_basic(系统基础服务)级别的[受限开放权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions)，normal等级的应用需要将自身的APL等级声明为system\_basic及以上。授权方式为user\_grant，需要[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+权限[ohos.permission.WRITE\_IMAGEVIDEO](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionwrite_imagevideo)是[权限机制中的基本概念](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限机制中的基本概念)中system\_basic(系统基础服务)级别的[受限开放权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions)，normal等级的应用需要将自身的APL等级声明为system\_basic及以上。授权方式为user\_grant，需要[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ```
 async mediaFileAgentTask(url: string, callback: (progress: number, isSuccess: boolean) => void,
@@ -574,7 +574,7 @@ async speedLimitDownload(url: string, fileName: string, callback: (progress: num
 
 ### HTTP拦截
 
-开发者可以通过设置配置文件实现HTTP拦截功能。上传下载模块在应用配置文件中禁用HTTP后，无法创建明文HTTP传输的上传下载任务。配置文件在APP中的路径是：src/main/resources/base/profile/network\_config.json。请参考网络管理模块配置文件[网络连接安全配置](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-network-ca-security#section5454123841911)，了解需要配置的具体参数。
+开发者可以通过设置配置文件实现HTTP拦截功能。上传下载模块在应用配置文件中禁用HTTP后，无法创建明文HTTP传输的上传下载任务。配置文件在APP中的路径是：src/main/resources/base/profile/network\_config.json。请参考网络管理模块配置文件[网络连接安全配置](/docs/security/network-ca-security#section5454123841911)，了解需要配置的具体参数。
 
 参考配置文件如下所示：
 

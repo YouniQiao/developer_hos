@@ -1,7 +1,7 @@
 ---
 title: HarmonyOS Symbol
 sidebar_label: HarmonyOS Symbol
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/system-icons-0000001929854962
+original_url: /docs/design/general-design-basics/visual-design/harmonyos-symbol
 format: md
 ---
 

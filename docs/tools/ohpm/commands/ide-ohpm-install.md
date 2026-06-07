@@ -1,7 +1,7 @@
 ---
 title: "ohpm install"
 displayed_sidebar: ohpmSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-install
+original_url: /docs/tools/ohpm/commands/ide-ohpm-install
 format: md
 ---
 

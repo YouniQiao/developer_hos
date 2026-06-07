@@ -1,6 +1,6 @@
 ---
 title: "跨应用数据共享概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-share-overview
+original_url: /docs/dev/app-dev/application-framework/arkdata/cross-app-data-share/data-share-overview
 format: md
 ---
 
@@ -35,7 +35,7 @@ DataShare实现跨应用数据共享方式如下：
 
 * 使用DataShareExtensionAbility实现数据共享：目前仅对系统应用开放，暂不具体展开提供相关内容和指导。
 * 通过数据管理服务实现数据共享静默访问：目前仅对系统应用开放，暂不具体展开提供相关内容和指导。
-* [应用间配置共享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-config)
+* [应用间配置共享](/docs/dev/app-dev/application-framework/arkdata/cross-app-data-share/one-to-many-data-share/share-config)
 
   这种方式通过集中管理公共配置信息，在不同应用间共享配置，提升协作效率。适用于跨应用共享配置信息，适用于需要在不同应用间共享公共配置数据，没有特殊业务的情况。
 
@@ -49,6 +49,6 @@ DataShare实现跨应用数据共享方式如下：
 
 ### 具体实现
 
-[通过标准化数据通路实现数据共享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unified-data-channels)
+[通过标准化数据通路实现数据共享](/docs/dev/app-dev/application-framework/arkdata/cross-app-data-share/many-to-many-data-share/unified-data-channels)
 
 应用可以根据UDMF标准化数据通路提供的数据接入与读取接口，将符合标准化数据定义的数据写入UDMF不同的数据共享通路，并提供多应用进行读取。写入UDMF中的数据依据应用定义的权限、数据通路定义的权限以及整个UDMF框架定义的权限管理逻辑进行管理，写入通路中的数据的生命周期的管理也遵循上述逻辑。这样离散在各个应用的碎片化数据可以在UDMF的不同通路中形成聚合效应，提升开发者跨应用数据协同的效率，同时提升用户的数据体验。

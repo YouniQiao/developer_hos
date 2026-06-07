@@ -1,6 +1,6 @@
 ---
 title: "配置隐私声明"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-privacy-state-0000002458282225
+original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-privacy-state-0000002458282225
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 #### 前提条件
 
-* 已参考[配置隐私政策（元服务）](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-atomic-0000002317135133)，生成小游戏的隐私政策。
-* 已参考[配置用户协议](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-user-agreement-0000002282265450)，生成小游戏的用户协议。
+* 已参考[配置隐私政策（元服务）](/docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-atomic-0000002317135133)，生成小游戏的隐私政策。
+* 已参考[配置用户协议](/docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-user-agreement-0000002282265450)，生成小游戏的用户协议。
 
 #### 操作步骤
 

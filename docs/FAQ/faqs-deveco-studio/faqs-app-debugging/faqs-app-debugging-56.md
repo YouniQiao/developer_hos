@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native调试堆栈可视化功能并行栈视图显示空白"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-56
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-56
 ---
 
 

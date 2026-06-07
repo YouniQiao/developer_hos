@@ -1,7 +1,7 @@
 ---
 format: md
 title: "HarmonyOS  NDK上的llvm是否有更改，一些中间产物能否复用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-90
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-90
 ---
 
 

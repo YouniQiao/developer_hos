@@ -1,6 +1,6 @@
 ---
 title: "JS卡片开发指导（FA模型）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/widget-development-fa
+original_url: /docs/dev/app-dev/application-framework/form-kit/form-js-ui/widget-development-fa
 format: md
 ---
 
@@ -40,7 +40,7 @@ FormBindingData类有如下API接口，具体的API介绍详见[@ohos.app.form.f
 
 ## 开发步骤
 
-FA卡片开发，即基于[FA模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fa-model-development-overview)的卡片提供方开发，主要涉及如下关键步骤：
+FA卡片开发，即基于[FA模型](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-development-overview)的卡片提供方开发，主要涉及如下关键步骤：
 
 * [实现卡片生命周期接口](#实现卡片生命周期接口)：开发FormAbility生命周期回调函数。
 * [配置卡片配置文件](#配置卡片配置文件)：配置应用配置文件config.json。
@@ -211,7 +211,7 @@ FormAbility不能常驻后台，即在卡片生命周期回调函数中无法处
   | --- | --- | --- | --- |
   | name | 表示JS Component的名字。该标签不可缺省，默认值为default。 | 字符串 | 否 |
   | pages | 表示JS Component的页面用于列举JS Component中每个页面的路由信息[页面路径+页面名称]。该标签不可缺省，取值为数组，数组第一个元素代表JS FA首页。 | 数组 | 否 |
-  | window | 用于定义与显示窗口相关的配置。 | 对象 | 可缺省，缺省值参考[window标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#window标签)表格。 |
+  | window | 用于定义与显示窗口相关的配置。 | 对象 | 可缺省，缺省值参考[window标签](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#window标签)表格。 |
   | type | 表示JS应用的类型。取值范围如下：  normal：标识该JS Component为应用实例。  form：标识该JS Component为卡片实例。 | 字符串 | 可缺省，缺省值为“normal” 。 |
   | mode | 定义JS组件的开发模式。 | 对象 | 可缺省，缺省值为空。 |
 
@@ -375,7 +375,7 @@ let deleteFormInfo = async (formId: string, context: featureAbility.Context): Pr
 // ...
 ```
 
-具体的持久化方法可以参考[应用数据持久化概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence-overview)。
+具体的持久化方法可以参考[应用数据持久化概述](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/app-data-persistence-overview)。
 
 需要注意的是，卡片使用方在请求卡片时传递给提供方应用的Want数据中存在临时标记字段，表示此次请求的卡片是否为临时卡片：
 

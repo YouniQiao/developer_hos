@@ -1,6 +1,6 @@
 ---
 title: "安全"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-security-development
+original_url: /docs/dev/atomic-dev/atomic-security-development/atomic-security-development
 format: md
 ---
 

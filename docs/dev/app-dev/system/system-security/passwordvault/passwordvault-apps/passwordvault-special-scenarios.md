@@ -1,6 +1,6 @@
 ---
 title: "系统可适配的场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-special-scenarios
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-special-scenarios
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 当页面上存在一个Password/NEW\_PASSWORD类型输入框，且页面上同时存在USER\_NAME、Email、PhoneNumber类型输入框中的一种时，会正常触发密码保险箱保存和填充的能力。
 
-当页面上仅有两个TextInput输入框，且其中一个为Password/NEW\_PASSWORD类型，另外一个为非密码类型时，也会正常触发密码保险箱逻辑。具体类型请参考[输入框类型说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation#约束与限制)。
+当页面上仅有两个TextInput输入框，且其中一个为Password/NEW\_PASSWORD类型，另外一个为非密码类型时，也会正常触发密码保险箱逻辑。具体类型请参考[输入框类型说明](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-quick-adaptation#约束与限制)。
 
 密码保险箱当前支持的所有场景：
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译报错“Module 'xxx' has no exported member 'yyy'”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-6
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-6
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "订阅和处理用户信息变更"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-process-userinfo-change
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/subscribe-process-userinfo-change
 format: md
 ---
 
@@ -544,5 +544,5 @@ format: md
    | iat | 生成该事件的UTC时间戳（秒级）。 |
    | jti | 唯一随机字符串，用于标识此消息体，开发者可根据此字段来识别重投消息体。 |
    | events | 用户信息变更事件与事件消息体，格式为json。key是用户信息变更事件类型，value为其对应事件消息信息。 |
-   | subject | 用户信息变更事件对应的消息体，格式为json，包含字段说明如下：  - sub：触发事件用户的UnionID（用户在同一个开发者下的所有应用中，此值唯一）。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。  - subject\_type：固定为“iss\_sub”。  - extra：触发事件用户的OpenID（用户在同一个应用中，此值唯一）。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。  - iss：标识消息投递者，固定为“id.cloud.huawei.com”。 |
+   | subject | 用户信息变更事件对应的消息体，格式为json，包含字段说明如下：  - sub：触发事件用户的UnionID（用户在同一个开发者下的所有应用中，此值唯一）。具体格式要求请参考[OpenID和UnionID的格式说明](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-9)。  - subject\_type：固定为“iss\_sub”。  - extra：触发事件用户的OpenID（用户在同一个应用中，此值唯一）。具体格式要求请参考[OpenID和UnionID的格式说明](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-9)。  - iss：标识消息投递者，固定为“id.cloud.huawei.com”。 |
    | scopes | 取消授权的scope列表，格式为json数组。在事件类型为【`https://schemas.openid.net/secevent/oauth/event-type/tokens-revoked`】时才存在此字段。 |

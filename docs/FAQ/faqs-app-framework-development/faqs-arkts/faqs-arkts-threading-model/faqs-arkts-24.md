@@ -1,7 +1,7 @@
 ---
 format: md
 title: "线程间JS对象通过序列化方式进行数据通信，是否存在性能问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-24
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-24
 ---
 
 

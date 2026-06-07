@@ -1,7 +1,7 @@
 ---
 format: md
 title: "http是否支持连接复用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-30
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-30
 ---
 
 

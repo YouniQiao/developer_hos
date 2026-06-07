@@ -1,7 +1,7 @@
 ---
 title: "修改服务号基本信息"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/modify_information-0000002508947055
+original_url: /docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/modify_information-0000002508947055
 format: md
 ---
 
@@ -28,7 +28,7 @@ format: md
 
 ![](./img/f56a4fbd1b63.png "点击放大")
 
-请开发者合理修改信息，避免频繁变动。平台有权拒绝不合理的修改申请，各字段修改请遵守《[服务号基本信息规范](https://developer.huawei.com/consumer/cn/doc/service/registration_rules-0000001058075206)》。
+请开发者合理修改信息，避免频繁变动。平台有权拒绝不合理的修改申请，各字段修改请遵守《[服务号基本信息规范](/docs/distribute/service-dist/huawei-service-account/specification-0000001053205318/registration_rules-0000001058075206)》。
 
 修改所属行业可能影响到部分能力（如模板消息），请谨慎修改。
 

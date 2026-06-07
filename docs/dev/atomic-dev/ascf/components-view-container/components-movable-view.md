@@ -1,6 +1,6 @@
 ---
 title: "movable-view"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-view
+original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-movable-view
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 约束与限制
 
-movable-view必须在[movable-area](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-area)组件中，并且必须是直接子节点，否则不能移动。
+movable-view必须在[movable-area](/docs/dev/atomic-dev/ascf/components-view-container/components-movable-area)组件中，并且必须是直接子节点，否则不能移动。
 
 ## 属性
 

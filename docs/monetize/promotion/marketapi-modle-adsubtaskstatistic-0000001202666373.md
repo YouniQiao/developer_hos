@@ -1,7 +1,7 @@
 ---
 title: "AdSubTaskStatistic"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-adsubtaskstatistic-0000001202666373
+original_url: /docs/monetize/promotion/marketapi-modle-adsubtaskstatistic-0000001202666373
 format: md
 ---
 
@@ -22,4 +22,4 @@ format: md
 | download | O | Integer(64) | 下载量。 |
 | downloadRate | O | Double | 下载率。  计算方法为“下载量/展示量”。 |
 | downloadAverageCost | O | Double | 下载均价。  计算方法为“消耗金额/下载量”。 |
-| conversions | O | List&lt;[ConversionBehaviorInfo](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-conversionbehaviorinfo-0000001218572925)&gt; | 多归因转化数据。  如果没有消耗，此字段不返回任何信息。 |
+| conversions | O | List&lt;[ConversionBehaviorInfo](/docs/monetize/promotion/marketapi-modle-conversionbehaviorinfo-0000001218572925)&gt; | 多归因转化数据。  如果没有消耗，此字段不返回任何信息。 |

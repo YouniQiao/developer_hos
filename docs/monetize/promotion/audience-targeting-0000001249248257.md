@@ -1,7 +1,7 @@
 ---
 title: "细分受众人群"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/audience-targeting-0000001249248257
+original_url: /docs/monetize/promotion/audience-targeting-0000001249248257
 format: md
 ---
 

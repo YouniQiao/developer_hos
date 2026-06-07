@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用RSA密钥对签名验签 (PSS模式)(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-rsa-sign-sig-verify-pss-ndk
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-pss-ndk
 format: md
 ---
 
 
-对应的算法规格请查看[签名验签算法规格：RSA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview#rsa)。
+对应的算法规格请查看[签名验签算法规格：RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview#rsa)。
 
 ## 在CMake脚本中链接相关动态库
 

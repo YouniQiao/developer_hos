@@ -1,6 +1,6 @@
 ---
 title: "使用DevEco Testing进行稳定性测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-deveco-testing
+original_url: /docs/quality/stability-deveco-testing
 format: md
 ---
 
@@ -33,7 +33,7 @@ format: md
 
 是否开启多线程检测：打开后，系统支持检测应用多线程安全问题（例如：多个线程并发写入操作）。
 
-是否开启[MemDebug](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-hwasan-detection#section10791454125320)模式：打开开关以后，会打开被测应用的内存越界检测开关，可以辅助发现和定位内存越界类问题。
+是否开启[MemDebug](/docs/quality/stability-hwasan-detection#section10791454125320)模式：打开开关以后，会打开被测应用的内存越界检测开关，可以辅助发现和定位内存越界类问题。
 
 ![](./img/9af176dc.png)
 
@@ -65,12 +65,12 @@ format: md
 
 更多测试服务详情，请前往DevEco Testing客户端->专项测试->稳定性基础质量测试->任务创建页->测试指南中查询。
 
-更多应用稳定性体验优化建议及问题定位，请查阅：[应用稳定性体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-stability) 及 [CppCrash问题定位](https://developer.huawei.com/consumer/cn/doc/architecture-guides/common-v1_26-ts_c25-0000002324993158)
+更多应用稳定性体验优化建议及问题定位，请查阅：[应用稳定性体验建议](/docs/experience-suggestions/experience-suggestions-stability) 及 [CppCrash问题定位](https://developer.huawei.com/consumer/cn/doc/architecture-guides/common-v1_26-ts_c25-0000002324993158)
 
 ## 其他专项测试
 
-请参考：[专项测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing)。
+请参考：[专项测试](/docs/dev/testing/specialized-testing)。
 
 ## 探索测试
 
-请参考：[应用探索测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/exploratory-testing#section12324184817324)。
+请参考：[应用探索测试](/docs/dev/testing/exploratory-testing#section12324184817324)。

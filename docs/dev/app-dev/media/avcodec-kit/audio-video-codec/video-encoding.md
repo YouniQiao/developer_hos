@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "视频编码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding
 format: md
 ---
 
 
 视频编码是多媒体处理流程中的重要环节，功能是将未压缩的视频数据压缩成视频码流，旨在降低原始视频数据的大小以便存储或传输。视频编码支持同步模式与异步模式两种运行机制，两者主要区别为buffer获取方式的同异步之分，开发者可根据自身业务选择适合的接口调用模式。
 
-本文档主要介绍异步模式视频编码的实现流程，同步模式视频编码请参考[视频编码同步模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-video-encoding)。根据编码前数据输入方式的不同，编码器支持Surface模式和Buffer模式两种输入模式，适用于不同的应用场景。
+本文档主要介绍异步模式视频编码的实现流程，同步模式视频编码请参考[视频编码同步模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-video-encoding)。根据编码前数据输入方式的不同，编码器支持Surface模式和Buffer模式两种输入模式，适用于不同的应用场景。
 
 * Surface模式。
 
@@ -23,7 +23,7 @@ format: md
 | 数据输入 | 通过OHNativeWindow获取输入帧，数据通常由生产者模块（如相机）直接写入。 | 通过OnNeedInputBuffer回调函数获取共享内存buffer信息，调用OH\_VideoEncoder\_PushInputBuffer送入数据。 |
 | 输入结束 | 必须调用OH\_VideoEncoder\_NotifyEndOfStream接口通知编码器输入结束。 | 编码至最后一帧数据时，需将输入buffer的flags字段设置为AVCODEC\_BUFFER\_FLAGS\_EOS标志，以通知编码器输入结束。 |
 
-AVCodec支持的视频编码格式请参考[视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#视频编码)。
+AVCodec支持的视频编码格式请参考[视频编码](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#视频编码)。
 
 具体实现可参考[示例工程](https://gitcode.com/openharmony/applications_app_samples/tree/master/code/BasicFeature/Media/AVCodec)。
 
@@ -284,7 +284,7 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
    在回调函数中，对数据队列进行操作时，需要注意多线程同步的问题。
 4. （可选）调用OH\_VideoEncoder\_RegisterParameterCallback()在Configure接口之前注册随帧通路回调。
 
-   详情请参考[时域可分层视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-temporal-scalability)。
+   详情请参考[时域可分层视频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-temporal-scalability)。
 
    ```
     // 4.1 编码输入参数回调OH_VideoEncoder_OnNeedInputParameter实现
@@ -310,7 +310,7 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
 
    参数校验规则请参考[OH\_VideoEncoder\_Configure()参考文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videoencoder-h#oh_videoencoder_configure)。
 
-   参数取值范围可以通过能力查询接口获取，具体示例请参考[获取支持的编解码能力文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)。
+   参数取值范围可以通过能力查询接口获取，具体示例请参考[获取支持的编解码能力文档](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)。
 
    目前支持的所有格式都必须配置以下选项：视频帧宽度、视频帧高度、视频像素格式。
 
@@ -1018,12 +1018,12 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
 
 | 支持的能力 | 使用简述 |
 | --- | --- |
-| 分层编码、设置LTR帧、参考帧 | 具体可参考：[时域可分层视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-temporal-scalability)。 |
+| 分层编码、设置LTR帧、参考帧 | 具体可参考：[时域可分层视频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-temporal-scalability)。 |
 | 支持历史帧repeat编码 | 具体可参考：native\_avcodec\_base.h[变量][OH\_MD\_KEY\_VIDEO\_ENCODER\_REPEAT\_PREVIOUS\_FRAME\_AFTER](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-base-h#变量)中的OH\_MD\_KEY\_VIDEO\_ENCODER\_REPEAT\_PREVIOUS\_FRAME\_AFTER和OH\_MD\_KEY\_VIDEO\_ENCODER\_REPEAT\_PREVIOUS\_MAX\_COUNT。 |
 | 支持的能力 | 使用简述 |
 | -------------------------- | ------------------------------------------------- |
 | 运行时配置编码器参数，包括帧率、码率、QPMin/QPMax | 通过调用OH\_VideoEncoder\_SetParameter()配置， 具体可参考下文中：Surface模式的步骤-9 |
 | 随帧设置编码QPMin/QPMax | 通过调用OH\_VideoEncoder\_RegisterParameterCallback()注册随帧参数回调时配置，具体可参考下文中：Surface模式的步骤-4 |
-| 分层编码，LTR设置 | 具体可参考：[时域可分层视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-temporal-scalability) |
+| 分层编码，LTR设置 | 具体可参考：[时域可分层视频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-temporal-scalability) |
 | 获取编码每帧平均量化参数（QPAverage）、平方误差（mseValue） | 在配置回调函数OnNewOutputBuffer()时获取，具体可参考下文中：Surface模式的步骤-3 |
 | 变分辨率 | 编码器支持输入图像分辨率发生变化。目前仅Surface模式支持且图像的宽、高不能超过OH\_VideoEncoder\_Configure接口配置的宽、高，具体可参考下文中：Surface模式的步骤-5 |

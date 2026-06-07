@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接入Skill说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-skill-introduction
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-skill-introduction
 format: md
 ---
 

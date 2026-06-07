@@ -1,13 +1,13 @@
 ---
 title: "自定义渲染节点 (RenderNode)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-rendernode
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-rendernode
 format: md
 ---
 
 
 ## 概述
 
-对于不具备自己的渲染环境的三方框架，尽管已实现前端解析、布局及事件处理等功能，但仍需依赖系统的基础渲染和动画能力。[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-framenode)上的通用属性与通用事件对这类框架而言是冗余的，会导致多次不必要的操作，涵盖布局、事件处理等逻辑。
+对于不具备自己的渲染环境的三方框架，尽管已实现前端解析、布局及事件处理等功能，但仍需依赖系统的基础渲染和动画能力。[FrameNode](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-framenode)上的通用属性与通用事件对这类框架而言是冗余的，会导致多次不必要的操作，涵盖布局、事件处理等逻辑。
 
 自定义渲染节点 ([RenderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-rendernode))是更加轻量的渲染节点，仅具备与渲染相关的功能。它提供了设置基础渲染属性的能力，以及节点的动态添加、删除和自定义绘制的能力。RenderNode能够为第三方框架提供基础的渲染和动画支持。
 
@@ -117,7 +117,7 @@ RenderNode中可以设置渲染相关的属性，包括：[backgroundColor](http
 
 * RenderNode中获取的属性为设置的属性值。
 * 若未传入参数或者传入参数为非法值则查询获得的为默认值。
-* 不建议对[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-buildernode)中的RenderNode进行修改操作。BuilderNode中具体属性设置是由状态管理实现的，属性更新的时序开发者不可控，BuilderNode和FrameNode中同时设置RenderNode属性可能会导致RenderNode属性设置与预期不相符。
+* 不建议对[BuilderNode](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-buildernode)中的RenderNode进行修改操作。BuilderNode中具体属性设置是由状态管理实现的，属性更新的时序开发者不可控，BuilderNode和FrameNode中同时设置RenderNode属性可能会导致RenderNode属性设置与预期不相符。
 
 ```
 import { RenderNode, FrameNode, NodeController, ShapeMask, ShapeClip } from '@kit.ArkUI';
@@ -779,7 +779,7 @@ export struct CustomDrawCanvasNative {
 
 ## 设置标签
 
-开发者可利用[label](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-rendernode#label12)接口向RenderNode设置标签信息，有助于在使用inspector[检查页面布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-inspector-overview)时更清晰区分各节点。
+开发者可利用[label](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-rendernode#label12)接口向RenderNode设置标签信息，有助于在使用inspector[检查页面布局](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-inspector-overview)时更清晰区分各节点。
 
 ```
 import { RenderNode, FrameNode, NodeController, UIContext } from '@kit.ArkUI';

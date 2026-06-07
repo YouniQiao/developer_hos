@@ -1,7 +1,7 @@
 ---
 title: 播控中心
 sidebar_label: 播控中心
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/broadcasting-control-0000001957017133
+original_url: /docs/design/system-features/features/broadcasting-control
 format: md
 ---
 
@@ -200,4 +200,4 @@ AudioVivid ＞ Hi-Res ＞ 其他自定义标签
 
 ![](../../general-design-basics/visual-design/img/img_9a016c503327_zh-cn_image_0000002538763206.png "点击放大")
 
-开发相关描述清参阅[基础播控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control)文档。
+开发相关描述清参阅[基础播控](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control)文档。

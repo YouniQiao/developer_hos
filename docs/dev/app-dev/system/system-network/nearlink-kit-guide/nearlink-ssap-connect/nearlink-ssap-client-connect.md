@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "SSAP客户端"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-ssap-client-connect
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-ssap-connect/nearlink-ssap-client-connect
 format: md
 ---
 
@@ -35,7 +35,7 @@ format: md
    import { ssap } from '@kit.NearLinkKit';
    import { BusinessError } from '@kit.BasicServicesKit';
    ```
-2. 创建ssap客户端实例。其中参数addr是通过[扫描流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-start-scan)获取的远端设备地址。
+2. 创建ssap客户端实例。其中参数addr是通过[扫描流程](/docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-start-scan)获取的远端设备地址。
 
    ```
    let addr: string = '00:11:22:33:AA:FF'; // 扫描获取到的远端设备地址

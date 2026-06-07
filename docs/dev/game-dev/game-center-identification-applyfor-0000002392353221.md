@@ -1,6 +1,6 @@
 ---
 title: "版署实名认证申请"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/game-center-identification-applyfor-0000002392353221
+original_url: /docs/dev/game-dev/game-center-identification-applyfor-0000002392353221
 format: md
 ---
 

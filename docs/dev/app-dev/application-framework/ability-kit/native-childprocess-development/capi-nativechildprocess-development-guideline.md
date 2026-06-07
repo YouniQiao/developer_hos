@@ -1,15 +1,15 @@
 ---
 title: "创建/终止Native子进程（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/capi-nativechildprocess-development-guideline
+original_url: /docs/dev/app-dev/application-framework/ability-kit/native-childprocess-development/capi-nativechildprocess-development-guideline
 format: md
 ---
 
 
-本模块提供了两种创建[Native子进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#native子进程)的方式，以及一种终止子进程的方式。
+本模块提供了两种创建[Native子进程](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#native子进程)的方式，以及一种终止子进程的方式。
 
-* [创建支持IPC通信的Native子进程](#创建支持ipc通信的native子进程)：创建子进程，并在父子进程间建立IPC通道，适用于父子进程需要IPC通信的场景。对[IPCKit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-capi-development-guideline)存在依赖。
+* [创建支持IPC通信的Native子进程](#创建支持ipc通信的native子进程)：创建子进程，并在父子进程间建立IPC通道，适用于父子进程需要IPC通信的场景。对[IPCKit](/docs/dev/app-dev/application-framework/ipc-kit/ipc-capi-development-guideline)存在依赖。
 * [创建支持参数传递的Native子进程](#创建支持参数传递的native子进程)：创建子进程，并传递字符串和fd句柄参数到子进程。适用于需要传递参数到子进程的场景。
-* [终止子进程](#终止子进程)：终止当前进程创建的[Native子进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#native子进程)或[ArkTS子进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#arkts子进程)。
+* [终止子进程](#终止子进程)：终止当前进程创建的[Native子进程](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#native子进程)或[ArkTS子进程](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#arkts子进程)。
 
 ![](./img/85a010b8.png)
 
@@ -57,7 +57,7 @@ libchild_process.so
 
 1. 子进程-实现必要的导出方法。
 
-   在子进程中，实现必要的两个函数**NativeChildProcess\_OnConnect**及**NativeChildProcess\_MainProc**并导出（假设代码所在的文件名为ChildProcessSample.cpp）。其中NativeChildProcess\_OnConnect方法返回的OHIPCRemoteStub对象负责与主进程进行IPC通信，具体实现方法请参考[IPC通信开发指导（C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-capi-development-guideline)，本文不再赘述。
+   在子进程中，实现必要的两个函数**NativeChildProcess\_OnConnect**及**NativeChildProcess\_MainProc**并导出（假设代码所在的文件名为ChildProcessSample.cpp）。其中NativeChildProcess\_OnConnect方法返回的OHIPCRemoteStub对象负责与主进程进行IPC通信，具体实现方法请参考[IPC通信开发指导（C/C++)](/docs/dev/app-dev/application-framework/ipc-kit/ipc-capi-development-guideline)，本文不再赘述。
 
    子进程启动后会先调用NativeChildProcess\_OnConnect获取IPC Stub对象，之后再调用NativeChildProcess\_MainProc移交主线程控制权，该函数返回后子进程随即退出。
 
@@ -170,7 +170,7 @@ libchild_process.so
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Ability/NativeChildProcessIpc/entry/src/main/cpp/MainProcessSample.cpp#L17-L155" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：MainProcessSample.cpp</a></div>
 
 
-   回调函数传递的第二个参数OHIPCRemoteProxy对象，会与子进程实现的**NativeChildProcess\_OnConnect**方法返回的OHIPCRemoteStub对象间建立IPC通道，具体使用方法参考[IPC通信开发指导（C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-capi-development-guideline)，本文不再赘述；OHIPCRemoteProxy对象使用完毕后，需要调用[OH\_IPCRemoteProxy\_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ipc-cremote-object-h#oh_ipcremoteproxy_destroy)函数释放。
+   回调函数传递的第二个参数OHIPCRemoteProxy对象，会与子进程实现的**NativeChildProcess\_OnConnect**方法返回的OHIPCRemoteStub对象间建立IPC通道，具体使用方法参考[IPC通信开发指导（C/C++)](/docs/dev/app-dev/application-framework/ipc-kit/ipc-capi-development-guideline)，本文不再赘述；OHIPCRemoteProxy对象使用完毕后，需要调用[OH\_IPCRemoteProxy\_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ipc-cremote-object-h#oh_ipcremoteproxy_destroy)函数释放。
 4. 主进程-启动Native子进程。
 
    调用API启动Native子进程，需要注意返回值为NCP\_NO\_ERROR仅代表成功调用native子进程启动逻辑，实际的启动结果通过第二个参数中指定的回调函数异步通知。需注意**仅允许在主进程中创建子进程**。
@@ -462,13 +462,13 @@ void Main(NativeChildProcess_Args args)
 
 ### 场景介绍
 
-从API version 22开始，支持根据传入的pid终止当前进程创建的[Native子进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#native子进程)或[ArkTS子进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#arkts子进程)。
+从API version 22开始，支持根据传入的pid终止当前进程创建的[Native子进程](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#native子进程)或[ArkTS子进程](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#arkts子进程)。
 
 ### 接口说明
 
 | 名称 | 描述 |
 | --- | --- |
-| [Ability\_NativeChildProcess\_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-child-process-h#ability_nativechildprocess_errcode) [OH\_Ability\_KillChildProcess](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-child-process-h#oh_ability_killchildprocess)(int32\_t pid) | 终止当前进程创建的子进程，该接口既可以用来终止[Native子进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#native子进程)，也可以用来终止[ArkTS子进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#arkts子进程)。 |
+| [Ability\_NativeChildProcess\_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-child-process-h#ability_nativechildprocess_errcode) [OH\_Ability\_KillChildProcess](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-child-process-h#oh_ability_killchildprocess)(int32\_t pid) | 终止当前进程创建的子进程，该接口既可以用来终止[Native子进程](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#native子进程)，也可以用来终止[ArkTS子进程](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#arkts子进程)。 |
 
 ### 开发步骤
 

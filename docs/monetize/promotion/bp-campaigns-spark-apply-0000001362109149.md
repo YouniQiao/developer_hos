@@ -1,7 +1,7 @@
 ---
 title: "星火计划2026报名流程"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-campaigns-spark-apply-0000001362109149
+original_url: /docs/monetize/promotion/bp-campaigns-spark-apply-0000001362109149
 format: md
 ---
 
@@ -15,19 +15,19 @@ format: md
 
    操作指导：
 
-   &lt;https://developer.huawei.com/consumer/cn/doc/distribution/promotion/bp-start-guest-apply-evaluation-0000001346654709&gt;
+   &lt;https://developer.huawei.com/consumer/cn/doc/distribution/promotion/bp-start-guest-apply-evaluation-0000001346654709&gt
 2. <strong>开通付费服务（</strong> <strong>不开通会导致福利发放失败</strong> <strong>）</strong>
 
    操作指导：
 
-   &lt;https://developer.huawei.com/consumer/cn/doc/start/payment-service-0000001052865979#h1-1-&gt;
+   &lt;https://developer.huawei.com/consumer/cn/doc/start/payment-service-0000001052865979#h1-1-&gt
 3. <strong>投放后台在线报名</strong>
 
    登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，顶部菜单栏点击【工具】页签，确认推广范围为“应用市场应用推广”。选择“活动”—“星火计划”。
 
    ![](./img/74d4ca0ca033.png "点击放大")
 
-   - 点击“我要报名”按钮（具体报名要求详见[星火计划2026活动介绍](https://developer.huawei.com/consumer/cn/doc/promotion/bp-campaigns-spark-introduction-0000001362029581)）。
+   - 点击“我要报名”按钮（具体报名要求详见[星火计划2026活动介绍](/docs/monetize/promotion/bp-campaigns-spark-introduction-0000001362029581)）。
 
      ![](./img/5f4849aa317b.png "点击放大")
    - 填写主要报名信息。

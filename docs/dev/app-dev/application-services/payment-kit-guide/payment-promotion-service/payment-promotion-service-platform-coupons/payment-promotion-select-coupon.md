@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "选券场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-promotion-select-coupon
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-platform-coupons/payment-promotion-select-coupon
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 | 步骤 | 说明 |
 | --- | --- |
-| 开发准备 | 根据[端侧应用配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-app-identity-info)完成开发准备。 |
+| 开发准备 | 根据[端侧应用配置](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-app-identity-info)完成开发准备。 |
 | 接入选券组件 | 根据选券场景[开发步骤](#开发步骤)完成接入。 |
 
 ## 业务流程
@@ -65,7 +65,7 @@ format: md
 
 ### 查询用户可用券
 
-6.1.1(24)版本前，在拉起选券组件前，商户根据[查询用户可用券](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-api-common-promotion-service-inquiry)接口查询用户可用券，如果用户无可用券可不拉起选券组件。业务接口请求示例代码可参考[业务接口请求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-server-connect#业务接口请求)。
+6.1.1(24)版本前，在拉起选券组件前，商户根据[查询用户可用券](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-api-common-promotion-service-inquiry)接口查询用户可用券，如果用户无可用券可不拉起选券组件。业务接口请求示例代码可参考[业务接口请求](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-server-connect#业务接口请求)。
 
 从6.1.1(24)版本开始，客户端可调[getOrderAvailableCoupons](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-promotionservice#getorderavailablecoupons)接口查询用户可用券。示例代码如下：
 

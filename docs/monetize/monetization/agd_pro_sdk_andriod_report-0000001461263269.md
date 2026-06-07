@@ -1,7 +1,7 @@
 ---
 title: "查看收益报表"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_report-0000001461263269
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_report-0000001461263269
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "支持焦点处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-focus-event
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-focus-event
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Scenario Fusion Appendix"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-appendix
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution-appendix
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

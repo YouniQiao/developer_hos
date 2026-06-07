@@ -1,6 +1,6 @@
 ---
 title: "项目json配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/project-json-config
+original_url: /docs/dev/atomic-dev/ascf/config/project-json-config
 format: md
 ---
 

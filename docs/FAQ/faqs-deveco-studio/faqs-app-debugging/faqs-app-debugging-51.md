@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决调试启动时，一直卡在Waiting for application to come online notification的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-51
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-51
 ---
 
 

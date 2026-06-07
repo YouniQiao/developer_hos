@@ -1,13 +1,13 @@
 ---
 title: "如何判断Web滑动到了顶部/底部，并且把滑动事件传递给页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-40
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-40
 format: md
 ---
 
 
 Web组件的[onOverScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onoverscroll10)事件可以判断滑动是否到达顶部或底部。当yOffset小于0时，表示页面到达顶端；当yOffset大于0时，表示页面到达底端。
 
-具体可参考代码示例：传递滑动事件可参考[Web组件嵌套滚动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-nested-scrolling)，将Web组件嵌入可滚动容器中，使用[nestedScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#nestedscroll11)属性设置嵌套滚动选项，实现滑动事件传递。具体代码示例如下：
+具体可参考代码示例：传递滑动事件可参考[Web组件嵌套滚动](/docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-nested-scrolling)，将Web组件嵌入可滚动容器中，使用[nestedScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#nestedscroll11)属性设置嵌套滚动选项，实现滑动事件传递。具体代码示例如下：
 
 ```
 import { webview } from '@kit.ArkWeb';

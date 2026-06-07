@@ -1,6 +1,6 @@
 ---
 title: "HarmonyOS 5.0及以上"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-initializing-signatures-harmonyos-0000002338768945
+original_url: /docs/dev/game-dev/games-initializing-signatures-harmonyos-0000002338768945
 format: md
 ---
 
@@ -9,10 +9,10 @@ format: md
 
 ## 前提条件
 
-* 您已[开通游戏多媒体服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enable-0000002338511697)。
-* 您已[集成游戏多媒体SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332)。
-* 您已[开启接入安全加固](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section92517364165)。
-* 您已[记录下游戏私钥信息](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#ZH-CN_TOPIC_0000002382054353__zh-cn_topic_0000001255134391_li2471125718563)。
+* 您已[开通游戏多媒体服务](/docs/dev/game-dev/games-gamemme-enable-0000002338511697)。
+* 您已[集成游戏多媒体SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332)。
+* 您已[开启接入安全加固](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section92517364165)。
+* 您已[记录下游戏私钥信息](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#ZH-CN_TOPIC_0000002382054353__zh-cn_topic_0000001255134391_li2471125718563)。
 
 ## 签名计算方式
 
@@ -20,7 +20,7 @@ format: md
 
 | 字段名 | 类型 | 含义 |
 | --- | --- | --- |
-| appId | string | 应用ID。  说明：  在AGC创建项目和添加应用后，记录的应用下的“APP ID”信息，具体请参见[准备游戏信息](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-gameinformation-0000002304472612)。 |
+| appId | string | 应用ID。  说明：  在AGC创建项目和添加应用后，记录的应用下的“APP ID”信息，具体请参见[准备游戏信息](/docs/dev/game-dev/games-gamemme-gameinformation-0000002304472612)。 |
 | nonce | string | 随机数，最小长度1字节，最大长度1024字节。 |
 | openId | string | 玩家ID。  说明：  可以是您的游戏在第三方平台生成的玩家ID ，或者是您的自建账号体系生成的玩家ID。 |
 | timestamp | string | 时间戳。 |

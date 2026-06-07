@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通知内容管理细则"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-detail-rules
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-appendix/push-detail-rules
 format: md
 ---
 
@@ -149,6 +149,6 @@ format: md
 
 [《互联网新闻信息服务管理规定》](http://www.cac.gov.cn/2017-05/02/c_1120902760.htm)
 
-本管理细则根据法律法规要求、[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/20209)、[《华为推送服务使用协议》](https://developer.huawei.com/consumer/cn/doc/app/20213)、[《应用审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50104)、[《元服务审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50129)和平台体验要求制定。
+本管理细则根据法律法规要求、[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/20209)、[《华为推送服务使用协议》](/docs/distribute/app-dist/app-market/x20240513/x20213)、[《应用审核指南》](/docs/distribute/app-dist/app-market/x50000/x50104/x50104-overview)、[《元服务审核指南》](/docs/distribute/app-dist/app-market/x50000/x50129/x50129-overview)和平台体验要求制定。
 
 对第三方网站的内容，华为不承担任何责任。

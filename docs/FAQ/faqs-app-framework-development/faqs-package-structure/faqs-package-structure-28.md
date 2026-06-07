@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Entry模块的HAP和Feature模块的HAP在使用和功能上的区别是什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-28
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-28
 ---
 
 
@@ -10,4 +10,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **参考链接**
 
-[应用程序包结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure)
+[应用程序包结构](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure)

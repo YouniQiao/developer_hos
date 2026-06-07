@@ -1,7 +1,7 @@
 ---
 format: md
 title: "多个相同BundleName的HAP包，使用preference数据如何共享"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-4
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-4
 ---
 
 

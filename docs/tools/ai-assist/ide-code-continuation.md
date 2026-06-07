@@ -1,7 +1,7 @@
 ---
 title: "代码续写"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-code-continuation
+original_url: /docs/tools/ai-assist/ide-code-continuation
 format: md
 ---
 

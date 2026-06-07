@@ -1,6 +1,6 @@
 ---
 title: "background-position样式动画"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-background-position-style
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-css/ui-js-animate-background-position-style
 format: md
 ---
 

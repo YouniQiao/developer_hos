@@ -1,7 +1,7 @@
 ---
 title: "自测验收"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_test-online-0000001382611701
+original_url: /docs/monetize/monetization/agd_pro_api_test-online-0000001382611701
 format: md
 ---
 

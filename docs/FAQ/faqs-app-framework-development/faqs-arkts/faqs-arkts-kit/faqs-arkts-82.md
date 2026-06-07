@@ -1,7 +1,7 @@
 ---
 format: md
 title: "是否支持在TS文件中加载ArkTS文件，TS是否会被限制使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-82
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-82
 ---
 
 

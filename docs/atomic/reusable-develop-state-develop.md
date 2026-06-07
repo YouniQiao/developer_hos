@@ -1,6 +1,6 @@
 ---
 title: "开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-develop-state-develop
+original_url: /docs/dev/atomic-dev/reusable-develop-state/reusable-develop-state-develop
 format: md
 ---
 
@@ -130,7 +130,7 @@ format: md
    }
    ```
 
-   在hsp模块的resources/base/profile/router\_map.json配置[系统路由表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation#系统路由表)信息：
+   在hsp模块的resources/base/profile/router\_map.json配置[系统路由表](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation#系统路由表)信息：
 
    ```
    {
@@ -233,8 +233,8 @@ format: md
     ![](./img/b25f5f18.png)
 
     * atomicServiceHsp模块是首页空页面，首页的加载依赖hsp模块，所以需要在atomicServiceHsp模块的oh-package.json5页面中配置dependencies依赖关系，在分发阶段atomicServiceHsp模块构建的hap包和依赖的hsp模块构建的hsp包会同时下载安装。
-    * [元服务分包](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-subpackage-loading)的目的是为了减小元服务包大小，并且subPkgHsp模块和其他模块不存在强依赖关系，所以subPkgHsp模块和其他两个模块之间不需要配置dependencies依赖关系，分发阶段subPkgHsp模块构建的hsp包可以单独下载安装。
-    * 为了避免出现元服务首页首次路由到元服务分包页面会有1-2秒的分包加载等待时长问题，需要在atomicServiceHsp模块的module.json5文件中配置[预加载](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-preparing-for-loading)subPkgHsp模块。
+    * [元服务分包](/docs/dev/atomic-dev/atomic-subpackage-loading/atomic-subpackage-loading)的目的是为了减小元服务包大小，并且subPkgHsp模块和其他模块不存在强依赖关系，所以subPkgHsp模块和其他两个模块之间不需要配置dependencies依赖关系，分发阶段subPkgHsp模块构建的hsp包可以单独下载安装。
+    * 为了避免出现元服务首页首次路由到元服务分包页面会有1-2秒的分包加载等待时长问题，需要在atomicServiceHsp模块的module.json5文件中配置[预加载](/docs/dev/atomic-dev/atomic-subpackage-loading/atomic-preparing-for-loading)subPkgHsp模块。
 
     在atomicServiceHsp模块的oh-package.json5页面中配置依赖关系：
 

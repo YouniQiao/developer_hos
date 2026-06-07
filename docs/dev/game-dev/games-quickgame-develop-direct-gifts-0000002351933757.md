@@ -1,6 +1,6 @@
 ---
 title: "直达礼包"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-develop-direct-gifts-0000002351933757
+original_url: /docs/dev/game-dev/games-quickgame-develop-direct-gifts-0000002351933757
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* 已[注册并认证开发者账号](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-registration-account-0000002351933629)。
-* 已[创建项目和快游戏](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-create-quickgame-0000002317894816)。
+* 已[注册并认证开发者账号](/docs/dev/game-dev/games-quickgame-registration-account-0000002351933629)。
+* 已[创建项目和快游戏](/docs/dev/game-dev/games-quickgame-create-quickgame-0000002317894816)。
 * 已提前准备如下素材。
 
   | 准备项 | 说明 |

@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Enterprise Data Guard Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataguard-introduction
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-introduction
 format: md
 ---
 
 
-Enterprise Data Guard Kit（企业数据保护服务）为企业安全管控类[MDM](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit)应用提供关键信息资产（KIA）文件的识别、外发管控以及企业恢复密钥的管理能力，支撑企业构建完整的数据防泄漏解决方案，实现企业数据资产可知、可控、可追溯。
+Enterprise Data Guard Kit（企业数据保护服务）为企业安全管控类[MDM](/docs/dev/app-dev/system/system-basicfun/mdm-kit)应用提供关键信息资产（KIA）文件的识别、外发管控以及企业恢复密钥的管理能力，支撑企业构建完整的数据防泄漏解决方案，实现企业数据资产可知、可控、可追溯。
 
 目前Enterprise Data Guard Kit提供了两种能力，包括文件分级管控和恢复密钥。
 
@@ -21,11 +21,11 @@ Enterprise Data Guard Kit（企业数据保护服务）为企业安全管控类[
 
 ### 访问限制
 
-当前文件分级管控服务仅支持对用户数据进行文件扫描和分级标识。文件扫描仅限于默认路径范围内的子目录，且[获取文件URI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-get-file-url)、[删除指定路径下的文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-delete-file)以及以只写模式[打开文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-openfile)的功能仅适用于用户个人数据目录下的绝对路径。
+当前文件分级管控服务仅支持对用户数据进行文件扫描和分级标识。文件扫描仅限于默认路径范围内的子目录，且[获取文件URI](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-get-file-url)、[删除指定路径下的文件](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-delete-file)以及以只写模式[打开文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-openfile)的功能仅适用于用户个人数据目录下的绝对路径。
 
 | 文件路径 | 说明 |
 | --- | --- |
-| /data/service/el2/  /data/app/el1/bundle/public/  /mnt/hmdfs/  /data/app/el1/  /data/app/el2/  /data/app/el3/  /data/app/el4/  /data/app/el5/ | 默认路径范围内的子目录。文件路径与物理路径对应的关系及不同加密分区的差异，请参考[应用沙箱路径和真实物理路径的对应关系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)和[获取和修改加密分区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取和修改加密分区)。 |
+| /data/service/el2/  /data/app/el1/bundle/public/  /mnt/hmdfs/  /data/app/el1/  /data/app/el2/  /data/app/el3/  /data/app/el4/  /data/app/el5/ | 默认路径范围内的子目录。文件路径与物理路径对应的关系及不同加密分区的差异，请参考[应用沙箱路径和真实物理路径的对应关系](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)和[获取和修改加密分区](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取和修改加密分区)。 |
 | /data/service/el2/\{account\_id\}/hmdfs/account/files/ | 对应用户的个人数据目录。 |
 
 ### 支持的国家/地区

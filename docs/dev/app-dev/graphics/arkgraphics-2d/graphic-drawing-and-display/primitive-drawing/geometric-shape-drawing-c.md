@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "几何形状绘制（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geometric-shape-drawing-c
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/geometric-shape-drawing-c
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 
 ## 绘制点
 
-点只能基于画笔在画布上进行绘制，通过使用OH\_Drawing\_CanvasDrawPoint()接口绘制点。接口接受两个参数，一个是画布对象Canvas，请确保已创建或获取得到画布Canvas，具体可见[画布的获取与绘制结果的显示（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-c)；另一个是要绘制的点的指针。
+点只能基于画笔在画布上进行绘制，通过使用OH\_Drawing\_CanvasDrawPoint()接口绘制点。接口接受两个参数，一个是画布对象Canvas，请确保已创建或获取得到画布Canvas，具体可见[画布的获取与绘制结果的显示（C/C++）](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-c)；另一个是要绘制的点的指针。
 
 简单示例如下：
 
@@ -84,7 +84,7 @@ OH_Drawing_PenDestroy(pen);
 
 可以使用画笔或画刷在画布上进行圆弧的绘制，通过使用OH\_Drawing\_CanvasDrawArc()接口绘制圆弧。使用接口需要传入4个参数，分别如下：
 
-* 需要画布对象Canvas，请确保已创建或获取得到画布Canvas，具体可见[画布的获取与绘制结果的显示（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-c)。
+* 需要画布对象Canvas，请确保已创建或获取得到画布Canvas，具体可见[画布的获取与绘制结果的显示（C/C++）](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-c)。
 * 绘制圆弧还需要一个矩形，会以矩形的边为轮廓进行绘制。
 * 需要一个浮点参数，表示弧形的起始角度。
 * 需要另一个浮点参数，表示弧形的扫描角度。
@@ -123,7 +123,7 @@ OH_Drawing_RectDestroy(rect);
 
 可以使用画笔或画刷在画布上进行圆的绘制，通过使用OH\_Drawing\_CanvasDrawCircle()接口绘制圆。使用接口需要传入3个参数，分别如下：
 
-* 需要画布对象Canvas，请确保已创建或获取得到画布Canvas，具体可见[画布的获取与绘制结果的显示（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-c)。
+* 需要画布对象Canvas，请确保已创建或获取得到画布Canvas，具体可见[画布的获取与绘制结果的显示（C/C++）](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-c)。
 * 绘制圆还需要一个指向圆心点对象的指针，会以此点为圆心进行绘制。
 * 最后需要一个浮点参数，表示圆的半径。
 

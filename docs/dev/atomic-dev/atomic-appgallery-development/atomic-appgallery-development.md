@@ -1,6 +1,6 @@
 ---
 title: "应用市场"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-appgallery-development
+original_url: /docs/dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-development
 format: md
 ---
 

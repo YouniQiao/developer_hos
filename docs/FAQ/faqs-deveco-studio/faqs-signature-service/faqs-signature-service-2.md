@@ -1,7 +1,7 @@
 ---
 format: md
 title: "已实名认证，登录时还是提示用户需要进行实名认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-2
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-2
 ---
 
 

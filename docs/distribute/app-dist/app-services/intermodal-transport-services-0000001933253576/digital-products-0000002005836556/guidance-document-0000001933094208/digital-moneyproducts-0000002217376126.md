@@ -1,7 +1,7 @@
 ---
 title: "付费下载应用"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/digital-moneyproducts-0000002217376126
+original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-moneyproducts-0000002217376126
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 
 ## 创建应用
 
-您可以在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)上，参考[创建项目和HarmonyOS应用](`https://developer.huawei.com/consumer/cn/doc/app/business-activation-0000001958955081#section104021121114213`)完成HarmonyOS应用的创建，从而使用各类服务。
+您可以在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)上，参考[创建项目和HarmonyOS应用](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/business-activation-0000001958955081#section104021121114213`)完成HarmonyOS应用的创建，从而使用各类服务。
 
 ## 设置应用价格
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "user_grant权限预授权，可以使用吗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-6
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-6
 ---
 
 

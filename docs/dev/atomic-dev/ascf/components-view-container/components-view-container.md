@@ -1,15 +1,15 @@
 ---
 title: "视图容器"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-view-container
+original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-view-container
 format: md
 ---
 
 
-* **[movable-area](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-area)**
-* **[movable-view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-view)**
-* **[scroll-view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-scroll-view)**
-* **[swiper](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-swiper)**
-* **[swiper-item](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-swiper-item)**
-* **[view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-view)**
-* **[cover-view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-cover-view)**
-* **[cover-image](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-cover-image)**
+* **[movable-area](/docs/dev/atomic-dev/ascf/components-view-container/components-movable-area)**
+* **[movable-view](/docs/dev/atomic-dev/ascf/components-view-container/components-movable-view)**
+* **[scroll-view](/docs/dev/atomic-dev/ascf/components-view-container/components-scroll-view)**
+* **[swiper](/docs/dev/atomic-dev/ascf/components-view-container/components-swiper)**
+* **[swiper-item](/docs/dev/atomic-dev/ascf/components-view-container/components-swiper-item)**
+* **[view](/docs/dev/atomic-dev/ascf/components-view-container/components-view)**
+* **[cover-view](/docs/dev/atomic-dev/ascf/components-view-container/components-cover-view)**
+* **[cover-image](/docs/dev/atomic-dev/ascf/components-view-container/components-cover-image)**

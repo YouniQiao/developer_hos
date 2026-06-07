@@ -1,7 +1,7 @@
 ---
 format: md
 title: "自定义键盘如何设置可与输入框贴边"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-490
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-490
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "加解密跨平台数据兼容性"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-cross-platform-compatibility
+original_url: /docs/security/cross-platform-compatibility
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 加解密通常遵循以下流程：
 
 1. 选择加解密算法并确定密钥
-   * 根据具体的安全需求，选择合适的加解密算法。可以是[对称密钥加解密算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-encrypt-decrypt-spec)（例如AES）、[非对称密钥加解密算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec)（例如RSA）等。
+   * 根据具体的安全需求，选择合适的加解密算法。可以是[对称密钥加解密算法](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-sym-encrypt-decrypt-spec)（例如AES）、[非对称密钥加解密算法](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-asym-encrypt-decrypt-spec)（例如RSA）等。
    * 确定加解密所需密钥。对称密钥为随机生成的二进制数据，非对称密钥需生成公钥和私钥。
 2. 准备待加解密的数据
    * 明确需要加密的数据，如文本、文件或数据库记录。
@@ -111,11 +111,11 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
 
 1. HarmonyOS平台加解密API要求密钥和待处理的数据为Uint8Array格式，可参考[数据编码格式差异](#section1152116421582)实现数据格式的转换。
 2. 在HarmonyOS平台上，默认支持SM2算法。需要注意的是，HarmonyOS仅支持ASN.1格式的数据（如密钥和密文）。因此，SM2算法在跨平台加解密时，需要进行原始裸数据与ASN.1格式数据的转换，包括密钥格式转换和密文格式转换，具体可参考[SM2加解密](#section48982572218)。
-3. HarmonyOS平台在初始化加解密引擎时，需要传入固定的参数，参数格式可参考[加解密算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encrypt-decrypt-spec)。以AES为例，详细分析密钥长度使用问题和偏移量参数的设置问题，具体可参考[AES加解密](#section848458172418)。
+3. HarmonyOS平台在初始化加解密引擎时，需要传入固定的参数，参数格式可参考[加解密算法规格](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec)。以AES为例，详细分析密钥长度使用问题和偏移量参数的设置问题，具体可参考[AES加解密](#section848458172418)。
 
 ### SM2加解密
 
-[SM2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#sm2)，是一种基于椭圆曲线的公钥密码算法。
+[SM2](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#sm2)，是一种基于椭圆曲线的公钥密码算法。
 
 下面介绍并解决在HarmonyOS平台与其他平台交互使用SM2加解密开发时遇到的密钥格式和密文数据格式问题。
 
@@ -125,7 +125,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
 
   其他平台生成的公钥格式为04+x+y，私钥为128位字符串。
 
-  将对应的16进制参数放入对应的位置，可通过[使用密钥参数生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#使用密钥参数生成-3)SM2公钥。
+  将对应的16进制参数放入对应的位置，可通过[使用密钥参数生成](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#使用密钥参数生成-3)SM2公钥。
 
   ```
   public static async convertStrToPubKey(keyStr: string): Promise<cryptoFramework.PubKey | undefined> {
@@ -154,7 +154,7 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
   ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/crypto-collection/blob/master/entry/src/main/ets/utils/DataConversion.ets#L38-L61">DataConversion.ets</a></div>
 
-  同理，可通过[使用密钥参数生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#使用密钥参数生成-3)SM2私钥。
+  同理，可通过[使用密钥参数生成](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#使用密钥参数生成-3)SM2私钥。
 
   ```
   public static async convertStrToPriKey(keyStr: string): Promise<cryptoFramework.PriKey | undefined> {
@@ -190,9 +190,9 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
 
   目前SM2密文数据的参数组合顺序有老标准C1C2C3和新标准C1C3C2。
 
-  HarmonyOS平台支持的SM2密文格式为国密标准的ASN.1格式，参数组合顺序为C1C3C2。具体参数含义请参考[转换SM2密文格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec#转换sm2密文格式)。
+  HarmonyOS平台支持的SM2密文格式为国密标准的ASN.1格式，参数组合顺序为C1C3C2。具体参数含义请参考[转换SM2密文格式](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-asym-encrypt-decrypt-spec#转换sm2密文格式)。
 
-  对于其他平台加密的C1C2C3顺序的密文，在HarmonyOS平台解密时，需先提取所需要的参数，并构造[SM2CipherTextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoframework#sm2ciphertextspec12)对象，接着调用[genCipherTextBySpec()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoframework#genciphertextbyspec12)方法序列化生成ASN.1格式的SM2密文。具体可参考[使用SM2密文格式转换(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sm2-ciphertext-conversion)。
+  对于其他平台加密的C1C2C3顺序的密文，在HarmonyOS平台解密时，需先提取所需要的参数，并构造[SM2CipherTextSpec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoframework#sm2ciphertextspec12)对象，接着调用[genCipherTextBySpec()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoframework#genciphertextbyspec12)方法序列化生成ASN.1格式的SM2密文。具体可参考[使用SM2密文格式转换(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-sm2-ciphertext-conversion)。
 
   ```
   bytesToBigInt(bytes: Uint8Array): bigint {
@@ -290,17 +290,17 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
 
 ### AES加解密
 
-[AES](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-key-generation-conversion-spec#aes)（Advanced Encryption Standard），最常见的对称加密算法。
+[AES](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-sym-key-generation-conversion-spec#aes)（Advanced Encryption Standard），最常见的对称加密算法。
 
 下面介绍并解决在HarmonyOS平台与其他平台交互使用AES加解密开发中遇到的问题：密钥长度和指定分组模式后的偏移量参数设置。
 
 * AES密钥长度使用问题
 
-  在[AES](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-key-generation-conversion-spec#aes)加解密算法中，密钥长度是固定的。
+  在[AES](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-sym-key-generation-conversion-spec#aes)加解密算法中，密钥长度是固定的。
 
   初始化HarmonyOS平台的加解密引擎时，需指定算法规格及密钥长度。密钥长度可为128位（对应字符串参数AES128）、192位（对应字符串参数AES192）或256位（对应字符串参数AES256）。AES密钥的字节长度与位数对应关系为：16字节对应128位，24字节对应192位，32字节对应256位。通过密钥位数可推断其字节长度。
 
-  以指南[使用AES对称密钥（GCM模式）加解密(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-gcm)为例，使用'AES128|GCM|PKCS7'初始化加解密算法实例。加解密时对应的密钥应为128位，即16个字符。因此，在生成密钥时，传入的字符为newUint8Array([83,217,231,76,28,113,23,219,250,71,209,210,205,97,32,159])。
+  以指南[使用AES对称密钥（GCM模式）加解密(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-gcm)为例，使用'AES128|GCM|PKCS7'初始化加解密算法实例。加解密时对应的密钥应为128位，即16个字符。因此，在生成密钥时，传入的字符为newUint8Array([83,217,231,76,28,113,23,219,250,71,209,210,205,97,32,159])。
 
   <strong>通过字符串获取密钥位数</strong>
 
@@ -313,9 +313,9 @@ HarmonyOS平台与其它平台在加解密使用上存在差异。
   3. 推断密钥位数：根据AES密钥的字节长度与位数之间的对应关系，推断密钥的位数。16字节对应128位，24字节对应192位，32字节对应256位。
 * AES指定分组模式后偏移量参数设置问题
 
-  由于AES为分组加密算法，分组长度为128位。在实际应用中，最后一组明文可能不足128位（16字节），此时可以通过不同的[填充模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-encrypt-decrypt-spec#填充模式)进行数据填充。
+  由于AES为分组加密算法，分组长度为128位。在实际应用中，最后一组明文可能不足128位（16字节），此时可以通过不同的[填充模式](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-sym-encrypt-decrypt-spec#填充模式)进行数据填充。
 
-  以[GCM模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-gcm)和[CBC模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-aes-sym-encrypt-decrypt-cbc)为例，指定字符串参数分别为'AES128|GCM|PKCS7'和'AES128|CBC|PKCS7'，偏移量分别为16字节和12字节。
+  以[GCM模式](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-gcm)和[CBC模式](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-cbc)为例，指定字符串参数分别为'AES128|GCM|PKCS7'和'AES128|CBC|PKCS7'，偏移量分别为16字节和12字节。
 
   | 分组模式 | 所需参数 | 备注 |
   | --- | --- | --- |

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取天气数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-getweather
+original_url: /docs/dev/app-dev/application-services/weather-service-kit-guide/weather-service-getweather
 format: md
 ---
 

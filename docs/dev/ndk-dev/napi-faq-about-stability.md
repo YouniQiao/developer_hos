@@ -1,6 +1,6 @@
 ---
 title: "稳定性相关问题汇总"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-stability
+original_url: /docs/dev/ndk-dev/napi-faq-about-stability
 format: md
 ---
 
@@ -34,7 +34,7 @@ Tid:15894, Name:e.myapplication
 
    DevEco Studio中提供了相关开关，开启开关后，重新编译打包并运行，看看崩溃栈是不是符合下面这个文档的描述，如果是，那就是在使用Node-API时，存在多线程安全问题。
 
-   [常见多线程安全问题](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ark-runtime-detection#section19357830121120)
+   [常见多线程安全问题](/docs/quality/stability-ark-runtime-detection#section19357830121120)
 
    DevEco Studio开关：
 
@@ -61,7 +61,7 @@ b. 排查有没有在这个易错API列表里面找到相应的篇章。
 
 可参考文档：
 
-[方舟运行时API](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-api#section1219614634615)。
+[方舟运行时API](/docs/quality/stability-coding-standard-api#section1219614634615)。
 
 ## 线程池中并发调用ArkTS方法如何处理线程安全问题
 
@@ -78,9 +78,9 @@ b. 排查有没有在这个易错API列表里面找到相应的篇章。
 
 对于问题二：
 
-上面提到，C++线程都是抛任务到ArkTS线程，进而执行ArkTS方法。关于线程安全，可参考[使用Node-API接口进行线程安全开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety)。
+上面提到，C++线程都是抛任务到ArkTS线程，进而执行ArkTS方法。关于线程安全，可参考[使用Node-API接口进行线程安全开发](/docs/dev/ndk-dev/use-napi-thread-safety)。
 
-另外，开发过程中也可以打开[方舟多线程检测](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ark-runtime-detection#section75786272088)开关，这个开关可以拦截多线程安全问题。
+另外，开发过程中也可以打开[方舟多线程检测](/docs/quality/stability-ark-runtime-detection#section75786272088)开关，这个开关可以拦截多线程安全问题。
 
 ## napi\_value内容产生变化
 
@@ -91,7 +91,7 @@ b. 排查有没有在这个易错API列表里面找到相应的篇章。
 
    可参考文档：
 
-   [方舟运行时API](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-api#section1219614634615)。
+   [方舟运行时API](/docs/quality/stability-coding-standard-api#section1219614634615)。
 2. 保存时建议使用napi\_ref，而不是直接保存napi\_value。
 
 ## 是否存在获取最新napi\_env的方法
@@ -117,23 +117,23 @@ b. 排查有没有在这个易错API列表里面找到相应的篇章。
 
    可参考文档：
 
-   [napi\_env禁止缓存的原因是什么](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-73) 。
+   [napi\_env禁止缓存的原因是什么](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-73) 。
 2. 该问题的关键在于：
 
    如果要强行保存env，必须感知env是否退出，可以使用napi\_add\_env\_cleanup\_hook的回调进行感知。同时，在开发过程中打开多线程检测开关，避免出现多线程安全问题。
 
    可参考文档：
 
-   [常见多线程安全问题](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ark-runtime-detection#section19357830121120)。
+   [常见多线程安全问题](/docs/quality/stability-ark-runtime-detection#section19357830121120)。
 3. 对于崩溃问题本身，该崩溃可能发生在调用napi\_call\_function时，入参 func 有问题，即非法入参，开发者可排查napi\_value是否被缓存。这种情况可能是napi\_value被缓存后，napi\_value超出napi\_handle\_scope作用域导致失效。
 
    如果有类似逻辑，需使用napi\_ref进行存储，napi\_ref可以延长生命周期。
 
 * 可参考文档：
 
-  [napi\_create\_reference、napi\_delete\_reference](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-life-cycle)
+  [napi\_create\_reference、napi\_delete\_reference](/docs/dev/ndk-dev/use-napi-life-cycle)
 
-  [方舟运行时API](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-api#section1219614634615)
+  [方舟运行时API](/docs/quality/stability-coding-standard-api#section1219614634615)
 
 ## napi\_add\_env\_cleanup\_hook调用报错该如何处理
 
@@ -173,9 +173,9 @@ static napi_value Test(napi_env env, napi_callback_info info)
 
 相关参考资料链接：
 
-[使用Node-API接口注册和使用环境清理钩子](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-cleanuphook)
+[使用Node-API接口注册和使用环境清理钩子](/docs/dev/ndk-dev/use-napi-about-cleanuphook)
 
-[方舟运行时API](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-api#section1219614634615)
+[方舟运行时API](/docs/quality/stability-coding-standard-api#section1219614634615)
 
 ## napi\_open\_handle\_scope与napi\_close\_handle\_scope进行生命周期相关开发典型错误场景
 
@@ -290,4 +290,4 @@ target_link_libraries(entry PUBLIC libace_napi.z.so libhilog_ndk.z.so)
 
 相关参考资料链接：
 
-[使用Node-API接口进行生命周期相关开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-life-cycle#napi_open_handle_scopenapi_close_handle_scope)。
+[使用Node-API接口进行生命周期相关开发](/docs/dev/ndk-dev/use-napi-life-cycle#napi_open_handle_scopenapi_close_handle_scope)。

@@ -1,7 +1,7 @@
 ---
 title: "行业风向标"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-wind-indicator-0000001241425507
+original_url: /docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-wind-indicator-0000001241425507
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

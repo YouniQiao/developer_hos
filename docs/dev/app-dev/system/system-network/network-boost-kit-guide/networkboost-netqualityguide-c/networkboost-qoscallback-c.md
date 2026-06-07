@@ -1,6 +1,6 @@
 ---
 title: "网络质量评估 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback-c
+original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c/networkboost-qoscallback-c
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
    #include "NetworkBoostKit/network_boost_quality.h"
    #include <cstdio>
    ```
-2. CMakeLists.txt中添加以下lib，具体请见[C API开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-preparations#c-api开发准备)。
+2. CMakeLists.txt中添加以下lib，具体请见[C API开发准备](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-preparations#c-api开发准备)。
 
    ```
    libnetwork_boost.so

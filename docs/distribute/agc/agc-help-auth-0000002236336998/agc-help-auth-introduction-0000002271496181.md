@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-introduction-0000002271496181
+original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-introduction-0000002271496181
 format: md
 ---
 
@@ -9,9 +9,9 @@ format: md
 
 **了解更多信息：**
 
-* [有哪些应用场景](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-applicationscenarios-0000002271416133)
-* [有哪些使用限制](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-restrict-0000002236337002)
-* [认证服务与华为账号服务的区别和关系？](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-faq-0000002271496205#section444019195133)
+* [有哪些应用场景](/docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-applicationscenarios-0000002271416133)
+* [有哪些使用限制](/docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-restrict-0000002236337002)
+* [认证服务与华为账号服务的区别和关系？](/docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-faq-0000002271496205#section444019195133)
 
 #### 主要功能
 
@@ -19,12 +19,12 @@ format: md
 
 |  |  |  |
 | --- | --- | --- |
-| [手机号码](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-login-phone-0000002271416141) | 通过手机号码来对用户进行身份认证，您的用户可以使用“手机号码+密码”或者“手机号码+验证码”方式来登录您的应用。  认证服务提供了基于手机号码的注册、登录、密码修改、密码重置、验证短信推送等能力和接口。 | |
-| [邮箱账号](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-login-email-0000002236496830) | 通过邮箱地址来对用户进行身份认证，您的用户可以使用邮箱地址和密码或者邮箱地址和验证码来登录您的应用。  认证服务提供了基于邮箱地址的注册、登录、密码修改、密码重置、验证邮件推送等能力和接口。 | |
-| [华为账号](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-login-hwaccount-0000002236337010) | 通过华为账号来对用户进行身份认证。您的用户可以使用华为账号和密码来登录您的应用。 | |
-| [自有账号](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-login-self-0000002271496193) | 如果您已经自行构建了认证系统，您可以通过自有账号对接让您已构建的认证系统与认证服务协同工作，比如：让认证服务来提供您的自有认证系统所不具备的认证方式。 | |
-| [匿名账号](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-login-anonymous-0000002271416145) | 匿名账号支持应用的游客访问模式。认证服务可以为您的游客分配用户标识，使您能够识别不同的游客并为他们提供差异化的服务。游客可通过关联其他认证方式来转化成为正式用户，并保留其原来的用户标识不变，以使其业务保持连贯。  注意：  中国大陆地区游戏不支持匿名登录。 | |
-| [关联账号](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-login-linkaccount-0000002236496838) | 您可以将身份验证提供方凭据关联至现有用户账号，允许用户使用多个身份验证提供方服务登录您的应用。无论用户使用哪个身份验证提供方服务登录，均可通过同一AppGallery Connect用户ID识别用户。 | |
+| [手机号码](/docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-phone-0000002271416141) | 通过手机号码来对用户进行身份认证，您的用户可以使用“手机号码+密码”或者“手机号码+验证码”方式来登录您的应用。  认证服务提供了基于手机号码的注册、登录、密码修改、密码重置、验证短信推送等能力和接口。 | |
+| [邮箱账号](/docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-email-0000002236496830) | 通过邮箱地址来对用户进行身份认证，您的用户可以使用邮箱地址和密码或者邮箱地址和验证码来登录您的应用。  认证服务提供了基于邮箱地址的注册、登录、密码修改、密码重置、验证邮件推送等能力和接口。 | |
+| [华为账号](/docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-hwaccount-0000002236337010) | 通过华为账号来对用户进行身份认证。您的用户可以使用华为账号和密码来登录您的应用。 | |
+| [自有账号](/docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-self-0000002271496193) | 如果您已经自行构建了认证系统，您可以通过自有账号对接让您已构建的认证系统与认证服务协同工作，比如：让认证服务来提供您的自有认证系统所不具备的认证方式。 | |
+| [匿名账号](/docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-anonymous-0000002271416145) | 匿名账号支持应用的游客访问模式。认证服务可以为您的游客分配用户标识，使您能够识别不同的游客并为他们提供差异化的服务。游客可通过关联其他认证方式来转化成为正式用户，并保留其原来的用户标识不变，以使其业务保持连贯。  注意：  中国大陆地区游戏不支持匿名登录。 | |
+| [关联账号](/docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-linkaccount-0000002236496838) | 您可以将身份验证提供方凭据关联至现有用户账号，允许用户使用多个身份验证提供方服务登录您的应用。无论用户使用哪个身份验证提供方服务登录，均可通过同一AppGallery Connect用户ID识别用户。 | |
 
 ![](../img/agc-help-auth-introduction-0000002271496181_0.png)
 

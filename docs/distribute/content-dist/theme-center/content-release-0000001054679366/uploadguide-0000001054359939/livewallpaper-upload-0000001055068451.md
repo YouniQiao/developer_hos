@@ -1,7 +1,7 @@
 ---
 title: "动态壁纸&视频铃声"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-upload-0000001055068451
+original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/livewallpaper-upload-0000001055068451
 format: md
 ---
 

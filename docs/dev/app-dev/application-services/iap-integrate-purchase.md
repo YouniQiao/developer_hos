@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接入购买"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-purchase
+original_url: /docs/dev/app-dev/application-services/iap-integrate-purchase
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 在应用内购买场景中，用户会采用一次性付款的方式购买消耗型商品或非消耗型商品。请结合实际业务场景选择提供的商品类型。
 
-在接入消耗型/非消耗型商品购买能力前，需要提前[配置商品信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product)。用户在应用内购买时，应用拉起IAP Kit的收银台，收银台处会展示商品名称、商品价格等信息，用户根据需求完成商品购买。
+在接入消耗型/非消耗型商品购买能力前，需要提前[配置商品信息](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-product)。用户在应用内购买时，应用拉起IAP Kit的收银台，收银台处会展示商品名称、商品价格等信息，用户根据需求完成商品购买。
 
 ![](./img/d1d43f13.png)
 
@@ -65,7 +65,7 @@ format: md
 
 ![](./img/57d3ef18.png)
 
-如果购买失败，请参见[权益发放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-products)处理，及时发放权益。
+如果购买失败，请参见[权益发放](/docs/dev/app-dev/application-services/iap-delivering-products)处理，及时发放权益。
 
 **发放权益**
 
@@ -224,7 +224,7 @@ struct Index {
 
    ![](./img/bb803543.png)
 
-   JWSUtil为自定义类，可参见[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-dev-guide#示例代码)。
+   JWSUtil为自定义类，可参见[示例代码](/docs/dev/app-dev/application-services/iap-dev-guide#示例代码)。
 
    ```
    import { iap } from '@kit.IAPKit';
@@ -283,7 +283,7 @@ struct Index {
 
 **【结果2：购买失败】**
 
-当用户购买失败时，需要针对code为[iap.IAPErrorCode.PRODUCT\_OWNED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iaperrorcode)和[iap.IAPErrorCode.SYSTEM\_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iaperrorcode)的场景，检查是否需要补发货，确保权益发放，具体请参见[权益发放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-products)。
+当用户购买失败时，需要针对code为[iap.IAPErrorCode.PRODUCT\_OWNED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iaperrorcode)和[iap.IAPErrorCode.SYSTEM\_ERROR](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iaperrorcode)的场景，检查是否需要补发货，确保权益发放，具体请参见[权益发放](/docs/dev/app-dev/application-services/iap-delivering-products)。
 
 ```
 import { iap } from '@kit.IAPKit';

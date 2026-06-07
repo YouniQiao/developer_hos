@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation组件，打开页面耗时，是否有优化建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-406
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-406
 ---
 
 
@@ -15,4 +15,4 @@ Navigation组件跳转后父容器aboutToAppear到子页面aboutToAppear耗时10
 
 **参考链接**
 
-[页面生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navdestination#页面生命周期)
+[页面生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-navdestination#页面生命周期)

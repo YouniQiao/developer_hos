@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native侧如何获取ArkTS侧的应用包名"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-17
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-17
 ---
 
 
@@ -39,4 +39,4 @@ napi_value CGetAppPackageName::GetCurrentApplicationPackageName(napi_env env, na
 
 更多相关信息可参考链接：
 
-[NativeBundle开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-bundle-guidelines)
+[NativeBundle开发指导](/docs/dev/ndk-dev/native-bundle-guidelines)

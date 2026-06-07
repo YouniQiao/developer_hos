@@ -1,7 +1,7 @@
 ---
 title: "问题反馈渠道"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/issue-report
+original_url: /docs/dev/release-notes/issue-report
 ---
 
 

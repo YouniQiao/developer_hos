@@ -1,6 +1,6 @@
 ---
 title: "应用深浅色适配"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-dark-light-color-adaptation
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-theme/ui-dark-light-color-adaptation
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
    * 自定义资源实现
 
-     resources目录下增加深色模式限定词目录（命名为dark）并新建color.json文件，可显示深色模式颜色资源的配置。详细请参考[资源分类与访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access)。
+     resources目录下增加深色模式限定词目录（命名为dark）并新建color.json文件，可显示深色模式颜色资源的配置。详细请参考[资源分类与访问](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access)。
 
      图1 resources目录结构示意
 
@@ -54,7 +54,7 @@ format: md
      ```
    * 通过系统资源实现
 
-     开发者可直接使用的[系统预置资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#访问系统资源)，即分层参数，同一资源ID在设备类型、深浅色等不同配置下有不同的取值。通过使用系统资源，不同的开发者可以开发出具有相同视觉风格的应用，不需要自定义两份颜色资源，在深浅色模式下也会自动切换成不同的颜色值。例如，开发者可调用系统资源中的文本主要配色来定义应用内文本颜色。
+     开发者可直接使用的[系统预置资源](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#访问系统资源)，即分层参数，同一资源ID在设备类型、深浅色等不同配置下有不同的取值。通过使用系统资源，不同的开发者可以开发出具有相同视觉风格的应用，不需要自定义两份颜色资源，在深浅色模式下也会自动切换成不同的颜色值。例如，开发者可调用系统资源中的文本主要配色来定义应用内文本颜色。
 
      ```
      Text('使用系统定义配色')
@@ -64,7 +64,7 @@ format: md
 
    采用资源限定词目录的方式。参照颜色适配的方法，需要将深色模式下对应的同名图片放到 dark/media 目录下，再通过[$r](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-resource#r)的方式加载图片资源的key值，系统做深浅色模式切换时，会自动加载对应资源文件中的value值。
 
-   对于 SVG 格式的一些简单图标，可以使用[fillColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-graphics-display#显示矢量图)属性配合系统资源改变图片的绘制颜色。不通过两套图片资源的方式，也可以实现深浅色模式适配。
+   对于 SVG 格式的一些简单图标，可以使用[fillColor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-graphics-display#显示矢量图)属性配合系统资源改变图片的绘制颜色。不通过两套图片资源的方式，也可以实现深浅色模式适配。
 
    ```
    Image($r('app.media.pic_svg'))
@@ -73,7 +73,7 @@ format: md
    ```
 3. Web组件适配
 
-   Web组件支持对前端页面进行深色模式配置，可参考[Web组件深色模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-set-dark-mode)进行相关配置。
+   Web组件支持对前端页面进行深色模式配置，可参考[Web组件深色模式](/docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-set-dark-mode)进行相关配置。
 4. "自定义节点"适配
 
    自定义节点BuilderNode和ComponentContent需手动传递系统环境变化事件，触发节点的全量更新，详细请参考[BuilderNode系统环境变化更新](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#updateconfiguration12)。
@@ -138,7 +138,7 @@ format: md
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ColorAdaptionSys/entry/src/main/ets/entryability/EntryAbility.ets#L39-L44" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EntryAbility.ets</a></div>
 
 
-   c. 在Page中通过[@StorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storageprop) + [@Watch](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch)方式获取当前最新颜色并监听设备深色模式变化。
+   c. 在Page中通过[@StorageProp](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storageprop) + [@Watch](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch)方式获取当前最新颜色并监听设备深色模式变化。
 
    ```
    @StorageProp('currentColorMode') @Watch('onColorModeChange') currentMode: number =
@@ -192,7 +192,7 @@ format: md
 
    通过[WithTheme](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-with-theme)可以设置三种[颜色模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#themecolormode枚举说明)，分别为：跟随系统深浅色模式、固定使用浅色模式和固定使用深色模式。
 
-   在WithTheme作用范围内，组件的样式资源值将依据指定模式，读取对应的深浅色模式系统和应用资源值。这表明，在WithTheme作用范围内，组件的配色将根据指定的深浅模式进行调整。详情请参阅[设置应用页面局部深浅色](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme_skinning#设置应用页面局部深浅色)。
+   在WithTheme作用范围内，组件的样式资源值将依据指定模式，读取对应的深浅色模式系统和应用资源值。这表明，在WithTheme作用范围内，组件的配色将根据指定的深浅模式进行调整。详情请参阅[设置应用页面局部深浅色](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-theme/theme_skinning#设置应用页面局部深浅色)。
 
 ## 应用主动设置深浅色模式
 
@@ -273,7 +273,7 @@ onCreate(): void {
 
 默认情况下，深浅色模式的切换需要执行全量重绘，包括重新设置所有组件的属性，性能开销会随着应用UI的复杂度线性增加。
 
-从API version 20开始，系统提供了一种高性能的深浅色切换流程，开发者可通过新增[metadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#metadata标签)配置项开启该能力，从而实现深浅色切换时的开销更小。
+从API version 20开始，系统提供了一种高性能的深浅色切换流程，开发者可通过新增[metadata](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#metadata标签)配置项开启该能力，从而实现深浅色切换时的开销更小。
 
 ![](./img/44953864.png)
 

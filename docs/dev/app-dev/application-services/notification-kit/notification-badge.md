@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理通知角标"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-badge
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-badge
 format: md
 ---
 
@@ -45,7 +45,7 @@ format: md
 
 2. 增加角标个数。
 
-   发布通知时，可在[NotificationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest#notificationrequest-1)的badgeNumber字段里携带相关信息，具体可参考[通知发布](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-notification)章节。
+   发布通知时，可在[NotificationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest#notificationrequest-1)的badgeNumber字段里携带相关信息，具体可参考[通知发布](/docs/dev/app-dev/application-services/notification-kit/publish-notification/text-notification)章节。
 
    示例为调用setBadgeNumber接口增加角标，在发布完新的通知后，调用该接口。
 

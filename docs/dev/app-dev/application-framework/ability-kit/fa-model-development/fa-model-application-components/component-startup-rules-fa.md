@@ -1,6 +1,6 @@
 ---
 title: "组件启动规则（FA模型）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules-fa
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/component-startup-rules-fa
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
   + 只针对跨应用场景。
   + 若目标组件visible字段配置为false，则需校验ohos.permission.START\_INVISIBLE\_ABILITY权限（该权限仅系统应用可申请）。
-  + 组件visible配置参考[abilities对象的内部结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure#abilities对象的内部结构)的visible属性。
+  + 组件visible配置参考[abilities对象的内部结构](/docs/dev/app-dev/getting-started/dev-fundamentals/module-structure#abilities对象的内部结构)的visible属性。
 * **位于后台的应用，启动组件需校验BACKGROUND权限**
 
   ![](./img/31ff1a61.png)
@@ -31,7 +31,7 @@ format: md
 
   + 应用前后台判断标准：若应用进程获焦或所属的UIAbility位于前台则判定为前台应用，否则为后台应用。
   + 需校验ohos.permission.START\_ABILITIES\_FROM\_BACKGROUND权限（该权限仅系统应用可申请）。
-* **跨应用启动[FA模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#fa模型)的ServiceAbility组件或DataAbility组件，对端应用需配置关联启动**
+* **跨应用启动[FA模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#fa模型)的ServiceAbility组件或DataAbility组件，对端应用需配置关联启动**
 
   + 只针对跨应用场景。
   + 只针对目标组件为ServiceAbility与DataAbility生效。

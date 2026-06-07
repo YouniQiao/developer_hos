@@ -1,6 +1,6 @@
 ---
 title: "在线认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-online-auth-development
+original_url: /docs/dev/atomic-dev/atomic-security-development/atomic-online-auth-development
 format: md
 ---
 

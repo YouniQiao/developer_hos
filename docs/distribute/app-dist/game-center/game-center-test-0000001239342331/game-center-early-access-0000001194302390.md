@@ -1,7 +1,7 @@
 ---
 title: "游戏内测（APK）"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-early-access-0000001194302390
+original_url: /docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390
 format: md
 ---
 
@@ -37,7 +37,7 @@ format: md
    | 类别 | 参数 | 说明 |
    | --- | --- | --- |
    | 游戏基本信息 | 测试类型 | 请选择“内测”。 |
-   | 测试时间 | 游戏内测的时间段。若有调整请及时更新。  说明：  * 建议单次内测时间为7~30天，内测结束时间为23:59:00，每两次内测间隔时间需超过7天。 * 若您已申请新游预约，请确保内测结束时间必须早于预约的[首发精确时间](`https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-apk-0000002089114109#ZH-CN_TOPIC_0000002089114109__p108342217437`)。 |
+   | 测试时间 | 游戏内测的时间段。若有调整请及时更新。  说明：  * 建议单次内测时间为7~30天，内测结束时间为23:59:00，每两次内测间隔时间需超过7天。 * 若您已申请新游预约，请确保内测结束时间必须早于预约的[首发精确时间](`/docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109#ZH-CN_TOPIC_0000002089114109__p108342217437`)。 |
    | 预计首发时间 | 游戏首次正式上架时间。  说明：  游戏正式首发前8天必须结束游戏内测。 |
    | 是否删档 | 内测结束后，是否清空当前内测的玩家数据。  说明：  同一个游戏不删档情况最多内测2次。 |
    | 是否计费 | 游戏内是否包含付费功能。  说明：  同一个游戏不计费情况最多内测2次。 |
@@ -199,4 +199,4 @@ format: md
 
 ### 游戏内测对资质是否有要求？
 
-游戏内测对资质的要求可参考[准备游戏资质](`https://developer.huawei.com/consumer/cn/doc/app/game-center-preparation-work-0000001194305246#section5818191119155`)。
+游戏内测对资质的要求可参考[准备游戏资质](`/docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-preparation-work-0000001194305246#section5818191119155`)。

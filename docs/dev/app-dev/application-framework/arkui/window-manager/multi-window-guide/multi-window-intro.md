@@ -1,6 +1,6 @@
 ---
 title: "智慧多窗简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-intro
 format: md
 ---
 
@@ -54,7 +54,7 @@ format: md
 
 * 针对在Tablet设备上运行的PC应用，不支持悬浮窗。
 
-  当应用module.json5配置文件中的设备类型[deviceTypes标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#devicetypes标签)包含"2in1"且不包含"phone"时，系统判定其为PC应用。
+  当应用module.json5配置文件中的设备类型[deviceTypes标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#devicetypes标签)包含"2in1"且不包含"phone"时，系统判定其为PC应用。
 * 在智慧多窗的显示模式下，窗口尺寸由系统决定，不受[WindowLimits](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#windowlimits11)约束。
 
 ## 分屏
@@ -66,7 +66,7 @@ format: md
 * 分屏通过手势触发：应用全屏时，从屏幕底部向上滑至左上方热区，进入待分屏状态，点击桌面另一个支持分屏的应用图标或卡片，可形成分屏。
 
   ![](./img/f4d6e8fd.png)
-* 应用自主启动分屏：除了通过手势触发分屏之外，应用可以自主选择启动分屏，具体步骤可见[应用内分屏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-support#应用内分屏)。
+* 应用自主启动分屏：除了通过手势触发分屏之外，应用可以自主选择启动分屏，具体步骤可见[应用内分屏](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-support#应用内分屏)。
 * 侧边Dock栏触发：长按Dock栏中的应用图标并拖出，和前台支持分屏的全屏应用形成分屏。
 
   ![](./img/f49ca31d.png)

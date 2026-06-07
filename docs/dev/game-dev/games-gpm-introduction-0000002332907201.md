@@ -1,6 +1,6 @@
 ---
 title: "业务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-introduction-0000002332907201
+original_url: /docs/dev/game-dev/games-gpm-introduction-0000002332907201
 format: md
 ---
 

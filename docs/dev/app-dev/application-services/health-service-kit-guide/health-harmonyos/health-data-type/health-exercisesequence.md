@@ -1,25 +1,25 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "锻炼记录数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-exercisesequence
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence
 format: md
 ---
 
 
-* **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-exercisesequence-summary)**
-* **[跑步](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-running)**
-* **[健走](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-walking)**
-* **[骑行](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-cycling)**
-* **[跳绳](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-jumping-rope)**
-* **[户外探险](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-adventures)**
-* **[篮球](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-basketball)**
-* **[滑雪](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-skiing)**
-* **[潜水闭气测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-breath-holding-test)**
-* **[潜水闭气训练](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-breath-holding-train)**
-* **[潜水](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-diving)**
-* **[椭圆机](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-elliptical)**
-* **[高尔夫](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-golf)**
-* **[登山](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-mountain-hike)**
-* **[游泳](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-swim)**
-* **[划船机](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-rower)**
-* **[其他运动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-other-sport)**
+* **[简介](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-exercisesequence-summary)**
+* **[跑步](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-running)**
+* **[健走](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-walking)**
+* **[骑行](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-cycling)**
+* **[跳绳](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-jumping-rope)**
+* **[户外探险](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-adventures)**
+* **[篮球](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-basketball)**
+* **[滑雪](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-skiing)**
+* **[潜水闭气测试](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-breath-holding-test)**
+* **[潜水闭气训练](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-breath-holding-train)**
+* **[潜水](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-diving)**
+* **[椭圆机](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-elliptical)**
+* **[高尔夫](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-golf)**
+* **[登山](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-mountain-hike)**
+* **[游泳](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-swim)**
+* **[划船机](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-rower)**
+* **[其他运动](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-other-sport)**

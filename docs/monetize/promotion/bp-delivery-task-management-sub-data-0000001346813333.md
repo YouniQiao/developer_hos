@@ -1,7 +1,7 @@
 ---
 title: "查询子任务数据报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-sub-data-0000001346813333
+original_url: /docs/monetize/promotion/bp-delivery-task-management-sub-data-0000001346813333
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
    ![](./img/53e87ed9c7a3.png) 
 
    - 开通数据回传权限并回传数据的客户可以在“任务列表”、“整体数据”查看任务级的后端数据，在“子任务列表”、“子任务数据”查看子任务级的后端数据。
-   - 具体报表指标含义请参见[报表指标说明](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-index-0000001293894160)。
+   - 具体报表指标含义请参见[报表指标说明](/docs/monetize/promotion/bp-delivery-task-management-index-0000001293894160)。
 
    ![](./img/0520f5e9d533.png "点击放大")
 3. 您可以点击“自定义列”，自定义筛选字段。查询和导出的字段名保持一致。

@@ -1,11 +1,11 @@
 ---
 title: "打开半屏元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-open-embedded-atomicservice
+original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-open-embedded-atomicservice
 format: md
 ---
 
 
-ASCF框架提供[open-embedded-atomicservice](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-open-embedded-atomicservice)组件，允许ASCF框架开发的元服务以半屏形式嵌入式拉起另一个元服务。
+ASCF框架提供[open-embedded-atomicservice](/docs/dev/atomic-dev/ascf/components-open-capabilities/components-open-embedded-atomicservice)组件，允许ASCF框架开发的元服务以半屏形式嵌入式拉起另一个元服务。
 
 ![](./img/28288af9.png)
 
@@ -125,7 +125,7 @@ css文件
 被拉起方是ASCF框架开发的元服务，可通过以下两种方式获取拉起方传递的参数：
 
 * path中的查询参数：在目标页面onLoad生命周期的query参数中直接读取（例如路径为page/path/index?launcher=xxx时，query.launcher的值即为"xxx"）。
-* want-param中的结构化数据：通过[has.getLaunchOptionsSync](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-lifecycle#hasgetlaunchoptionssync)获取元服务启动参数，从中提取referrerInfo.extraData字段即为拉起方元服务通过want-param传递的业务数据。
+* want-param中的结构化数据：通过[has.getLaunchOptionsSync](/docs/dev/atomic-dev/ascf/apis-basis/apis-lifecycle#hasgetlaunchoptionssync)获取元服务启动参数，从中提取referrerInfo.extraData字段即为拉起方元服务通过want-param传递的业务数据。
 
 ```
 Page({
@@ -154,7 +154,7 @@ export default class AtomicServiceHspAbility extends UIAbility {
 
 ### 退出并返回结果
 
-被拉起方是ASCF框架开发的元服务，通过调用[has.terminateSelf](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-navigate#hasterminateself)接口退出并返回结果给拉起方元服务：
+被拉起方是ASCF框架开发的元服务，通过调用[has.terminateSelf](/docs/dev/atomic-dev/ascf/apis/apis-navigate#hasterminateself)接口退出并返回结果给拉起方元服务：
 
 ```
 terminateSelf() {
@@ -218,7 +218,7 @@ struct Index {
 
 ## 兼容性设计
 
-当宿主机SDK版本低于5.1.0(18)时，open-embedded-atomicservice组件无法使用。为保障功能可用性并避免用户体验中断，可使用[has.navigateToAtomicService](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-navigate#hasnavigatetoatomicservice)接口，实现以全屏跳出方式拉起目标元服务。
+当宿主机SDK版本低于5.1.0(18)时，open-embedded-atomicservice组件无法使用。为保障功能可用性并避免用户体验中断，可使用[has.navigateToAtomicService](/docs/dev/atomic-dev/ascf/apis/apis-navigate#hasnavigatetoatomicservice)接口，实现以全屏跳出方式拉起目标元服务。
 
 **示例代码：**
 

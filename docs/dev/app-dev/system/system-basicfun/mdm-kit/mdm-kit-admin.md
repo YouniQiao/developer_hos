@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "EnterpriseAdminExtensionAbility开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-admin
+original_url: /docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-admin
 format: md
 ---
 
@@ -80,7 +80,7 @@ export default class EnterpriseAdminAbility extends EnterpriseAdminExtensionAbil
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/EnterpriseAdminExtensionAbility/EnterpriseAdminExtensionAbility/entry/src/main/ets/enterpriseadminability/EnterpriseAdminAbility.ets#L27-L199" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：EnterpriseAdminAbility.ets</a></div>
 
 
-最后，在工程Module对应的[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)配置文件中将EnterpriseAdminAbility注册为ExtensionAbility，type标签需要设置为“enterpriseAdmin”，srcEntry标签表示当前ExtensionAbility组件所对应的代码路径。
+最后，在工程Module对应的[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)配置文件中将EnterpriseAdminAbility注册为ExtensionAbility，type标签需要设置为“enterpriseAdmin”，srcEntry标签表示当前ExtensionAbility组件所对应的代码路径。
 
 ```
 "extensionAbilities": [

@@ -1,6 +1,6 @@
 ---
 title: "角色权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-role-permissions
+original_url: /docs/dev/atomic-dev/instant-service-app-gui/instant-service-app-role-permissions
 format: md
 ---
 

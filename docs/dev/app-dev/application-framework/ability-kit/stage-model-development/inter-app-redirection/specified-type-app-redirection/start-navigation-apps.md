@@ -1,6 +1,6 @@
 ---
 title: "拉起导航类应用（startAbilityByType）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-navigation-apps
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-navigation-apps
 format: md
 ---
 
@@ -122,7 +122,7 @@ startAbilityByType接口中type字段为navigation，支持路线规划、导航
 
 ## 目标方开发步骤
 
-1. 在module.json5中配置[uris](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)，步骤如下：
+1. 在module.json5中配置[uris](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)，步骤如下：
 
    1. 设置linkFeature属性以声明当前应用支持的特性功能，从而系统可以从设备已安装应用中找到当前支持该特性的应用，取值范围如下：
 
@@ -202,7 +202,7 @@ startAbilityByType接口中type字段为navigation，支持路线规划、导航
      | --- | --- | --- | --- |
      | destinationName | string | 是 | 地点名称。 |
 
-   应用可根据[linkFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)中定义的特性功能，比如路线规划、导航和位置搜索，结合接收到的uri和参数开发不同的样式页面。
+   应用可根据[linkFeature](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)中定义的特性功能，比如路线规划、导航和位置搜索，结合接收到的uri和参数开发不同的样式页面。
 
 **完整示例：**
 

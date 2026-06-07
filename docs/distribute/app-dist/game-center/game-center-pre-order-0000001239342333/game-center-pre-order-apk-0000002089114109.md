@@ -1,7 +1,7 @@
 ---
 title: "游戏预约（APK）"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-apk-0000002089114109
+original_url: /docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109
 format: md
 ---
 
@@ -127,7 +127,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
    | 配置项 | 说明 |
    | --- | --- |
    | 预约应用包名 | 预约包名请以 “.huawei”或“.HUAWEI”结尾。 |
-   | 首发精确时间 | 游戏首次上架时间，若有调整请及时更新。  说明：  若您已提交内测申请，请确保新游的首发时间必须晚于[内测结束时间](`https://developer.huawei.com/consumer/cn/doc/app/game-center-early-access-0000001194302390#ZH-CN_TOPIC_0000001194302390__p13448133315204`)。 |
+   | 首发精确时间 | 游戏首次上架时间，若有调整请及时更新。  说明：  若您已提交内测申请，请确保新游的首发时间必须晚于[内测结束时间](`/docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390#ZH-CN_TOPIC_0000001194302390__p13448133315204`)。 |
    | 联系人及联系方式 | 填写联系人和联系人QQ、联系电话、邮箱，要求1~100字符。 |
    | 发布国家及地区 | 游戏预约分发的国家及地区，需和“版本信息”页面保持一致，否则可能导致用户无法下载游戏。  说明：  华为运营人员在审核应用时会检查您的游戏是否符合对应国家或地区的政策、宗教文化等要求。若不符合，运营人员会将该国家或地区从分发区域中去除 。 |
    | 备注（可选） | 可补充其他说明信息。要求1~200个字符。 |

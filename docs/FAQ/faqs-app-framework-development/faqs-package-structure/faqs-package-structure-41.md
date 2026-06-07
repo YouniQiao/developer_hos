@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用安装、卸载时是否有数据上报"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-41
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-41
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **参考链接**
 
-[下载安装](https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-usage-0000002236492392#section14231122115416)
+[下载安装](/docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-usage-0000002236492392#section14231122115416)

@@ -1,6 +1,6 @@
 ---
 title: "商家直接接入服务直达"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-merchants
+original_url: /docs/dev/atomic-dev/instant-service-getting-started/instant-service-merchants
 format: md
 ---
 

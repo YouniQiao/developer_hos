@@ -1,7 +1,7 @@
 ---
 title: "创建媒体和展示位"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_media-position-0000001237628421
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_media-position-0000001237628421
 format: md
 ---
 
@@ -68,15 +68,15 @@ format: md
    | 是否静音播放 | 开关参数，用于控制播放视频时默认是静音还是有声音。  取值范围：  * 是 * 否 |
    | 视频自动播放 | 开关参数，用于控制哪种条件下视频可以自动播放。  取值范围：  * 有网络自动播放 * WIFI自动播放 * 手动播放 |
    | 目标价功能 | 可根据开发者自身变现需求选择是否开启目标价，设置目标价后单天平均eCPM将在您设定的价格上下浮动 |
-   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
+   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
    | **高级设置** | |
-   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
+   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
 4. 配置完成后，点击“提交”。
 
    ![](./img/agd_pro_sdk_andriod_media-position-0000001237628421_9.png)
 
    * 展示位选择“正式”提交后需要运营审核，审核通过并正常运行后，应用开发者方可使用该展示位。
-   * 具体的展示位状态请参见[展示位状态说明](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_appd_display-position-status-0000001461022605)。
+   * 具体的展示位状态请参见[展示位状态说明](/docs/monetize/monetization/agd_pro_sdk_appd_display-position-status-0000001461022605)。
 
 #### 添加视频流展示位
 
@@ -101,15 +101,15 @@ format: md
    | 素材类型 | 取值范围：  * 视频 * 图片 |
    | 智能模板 | 选择对应的模板，选择后会在右侧“示意图”中呈现预览效果。 |
    | 目标价功能 | 可根据开发者自身变现需求选择是否开启目标价，设置目标价后单天平均eCPM将在您设定的价格上下浮动 |
-   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
+   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
    | **高级设置** | |
-   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
+   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
 4. 配置完成后，点击“提交”。
 
    ![](./img/agd_pro_sdk_andriod_media-position-0000001237628421_13.png)
 
    * 展示位选择“正式”提交后需要运营审核，审核通过并正常运行后，应用开发者方可使用该展示位。
-   * 具体的展示位状态请参见[展示位状态说明](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_appd_display-position-status-0000001461022605)。
+   * 具体的展示位状态请参见[展示位状态说明](/docs/monetize/monetization/agd_pro_sdk_appd_display-position-status-0000001461022605)。
 
 #### 添加Banner展示位
 
@@ -132,17 +132,17 @@ format: md
    | 展示位类型 | 选择“Banner”。 |
    | 模板类型 | 保持默认值选择“智能模板”。 |
    | 智能模板 | 选择对应的模板，选择后会在右侧“示意图”中呈现预览效果。 |
-   | 是否轮播 | 开关参数，用于控制是否提供轮播能力。  **说明：**此开关开启，同时需要在SDK支持“rotationTime”传参，才能最终实现轮播能力。具体SDK侧传参逻辑请参见[构造请求AdSlot](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-banner-0000001347614022#ZH-CN_TOPIC_0000001347614022__zh-cn_topic_0000001388503353_zh-cn_topic_0000001379531157_zh-cn_topic_0000001356838857_zh-cn_topic_0000001356578689_zh-cn_topic_0000001354444445_li11915141103914)。 |
+   | 是否轮播 | 开关参数，用于控制是否提供轮播能力。  **说明：**此开关开启，同时需要在SDK支持“rotationTime”传参，才能最终实现轮播能力。具体SDK侧传参逻辑请参见[构造请求AdSlot](/docs/monetize/monetization/agd_pro_sdk_andriod_sdk-banner-0000001347614022#ZH-CN_TOPIC_0000001347614022__zh-cn_topic_0000001388503353_zh-cn_topic_0000001379531157_zh-cn_topic_0000001356838857_zh-cn_topic_0000001356578689_zh-cn_topic_0000001354444445_li11915141103914)。 |
    | 目标价功能 | 可根据开发者自身变现需求选择是否开启目标价，设置目标价后单天平均eCPM将在您设定的价格上下浮动 |
-   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
+   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
    | **高级设置** | |
-   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
+   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
 4. 配置完成后，点击“提交”。
 
    ![](./img/agd_pro_sdk_andriod_media-position-0000001237628421_17.png)
 
    * 展示位选择“正式”提交后需要运营审核，审核通过并正常运行后，应用开发者方可使用该展示位。
-   * 具体的展示位状态请参见[展示位状态说明](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_appd_display-position-status-0000001461022605)。
+   * 具体的展示位状态请参见[展示位状态说明](/docs/monetize/monetization/agd_pro_sdk_appd_display-position-status-0000001461022605)。
 
 #### 添加应用榜单展示位
 
@@ -167,15 +167,15 @@ format: md
    | 素材类型 | 取值范围：  * 视频 * 图片 |
    | 智能模板/自定义模板 | 选择对应的模板，选择后会在右侧“示意图”中呈现预览效果。  **说明：**  * “应用榜单”类型默认请求15个广告，且会根据渲染情况自适应展示，媒体无需关注广告数量。 * 当模板选择“竖向列表”时，仅支持展示3个广告位。 |
    | 目标价功能 | 可根据开发者自身变现需求选择是否开启目标价，设置目标价后单天平均eCPM将在您设定的价格上下浮动 |
-   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
+   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
    | **高级设置** | |
-   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
+   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
 4. 配置完成后，点击“提交”。
 
    ![](./img/agd_pro_sdk_andriod_media-position-0000001237628421_21.png)
 
    * 展示位选择“正式”提交后需要运营审核，审核通过并正常运行后，应用开发者方可使用该展示位。
-   * 具体的展示位状态请参见[展示位状态说明](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_appd_display-position-status-0000001461022605)。
+   * 具体的展示位状态请参见[展示位状态说明](/docs/monetize/monetization/agd_pro_sdk_appd_display-position-status-0000001461022605)。
 
 #### 添加开屏展示位
 
@@ -199,15 +199,15 @@ format: md
    | 智能模板 | 选择对应的模板，选择后会在右侧“示意图”中呈现预览效果。 |
    | 互动方式 | 是否开启支持互动方式。  例如：在开屏的时候，摇一摇手机，可以进入到开屏要跳转的落地页。 |
    | 目标价功能 | 可根据开发者自身变现需求选择是否开启目标价，设置目标价后单天平均eCPM将在您设定的价格上下浮动 |
-   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
+   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
    | **高级设置** | |
-   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
+   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
 4. 配置完成后，点击“提交”。
 
    ![](./img/agd_pro_sdk_andriod_media-position-0000001237628421_25.png)
 
    * 展示位选择“正式”提交后需要运营审核，审核通过并正常运行后，应用开发者方可使用该展示位。
-   * 具体的展示位状态请参见[展示位状态说明](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_appd_display-position-status-0000001461022605)。
+   * 具体的展示位状态请参见[展示位状态说明](/docs/monetize/monetization/agd_pro_sdk_appd_display-position-status-0000001461022605)。
 
 #### 添加插屏展示位
 
@@ -233,15 +233,15 @@ format: md
    | 智能模板 | 选择对应的模板，选择后会在右侧“示意图”中呈现预览效果。 |
    | 是否静音播放 | 开关参数，用于控制播放视频时默认是静音还是有声音。  取值范围：  * 是 * 否 |
    | 目标价功能 | 可根据开发者自身变现需求选择是否开启目标价，设置目标价后单天平均eCPM将在您设定的价格上下浮动 |
-   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
+   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
    | **高级设置** | |
-   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
+   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
 4. 配置完成后，点击“提交”。
 
    ![](./img/agd_pro_sdk_andriod_media-position-0000001237628421_29.png)
 
    * 展示位选择“正式”提交后需要运营审核，审核通过并正常运行后，应用开发者方可使用该展示位。
-   * 具体的展示位状态请参见[展示位状态说明](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_appd_display-position-status-0000001461022605)。
+   * 具体的展示位状态请参见[展示位状态说明](/docs/monetize/monetization/agd_pro_sdk_appd_display-position-status-0000001461022605)。
 
 #### 添加激励视频展示位
 
@@ -271,12 +271,12 @@ format: md
    | 回调URL | 配置此参数以保证奖励发放请求的安全性。  **说明：**当“奖励发放设置”参数配置为“需要服务器判断”时，此参数才可见。 |
    | Security Key | 配置此参数以保证奖励发放请求的安全性。  点击“生成”，界面自动生成对应的密文。  **说明：**当“奖励发放设置”参数配置为“需要服务器判断”时，此参数才可见。 |
    | 目标价功能 | 可根据开发者自身变现需求选择是否开启目标价，设置目标价后单天平均eCPM将在您设定的价格上下浮动 |
-   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
+   | 展示位属性 | “测试”展示位主要用户能否正常读取广告及端测能否正常展示测试，不会进行广告计费，只有“正式”展示位才会计费并产生收益。  如果需将“测试”状态的展示位用于请求调试，请将测试设备的OAID添加到AGC页面的“接入测试”菜单中，否则将报错1013错误，具体可参见[接入测试](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9164163104614)。  取值范围：  * 测试 * 正式 |
    | **高级设置** | |
-   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
+   | 屏蔽规则 | 选择对应的屏蔽规则。  一个展示位最多可选择5个屏蔽规则。  如果您尚未创建屏蔽规则，可点击“屏蔽规则管理”自行设置屏蔽规则，具体操作请参见[配置屏蔽规则](/docs/monetize/monetization/agd_pro_sdk_andriod_commission-0000001461023573#section9571854134311)。 |
 4. 配置完成后，点击“提交”。
 
    ![](./img/agd_pro_sdk_andriod_media-position-0000001237628421_33.png)
 
    * 展示位选择“正式”提交后需要运营审核，审核通过并正常运行后，应用开发者方可使用该展示位。
-   * 具体的展示位状态请参见[展示位状态说明](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_appd_display-position-status-0000001461022605)。
+   * 具体的展示位状态请参见[展示位状态说明](/docs/monetize/monetization/agd_pro_sdk_appd_display-position-status-0000001461022605)。

@@ -1,6 +1,6 @@
 ---
 title: "取消匹配"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-cancelmatch-csharp-0000002361670540
+original_url: /docs/dev/game-dev/gameobe-cancelmatch-csharp-0000002361670540
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ## 前提条件
 
-玩家已发起[在线匹配](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-matchplayer-csharp-0000002395190569)或[组队匹配](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-matchgroup-csharp-0000002395190581)。
+玩家已发起[在线匹配](/docs/dev/game-dev/gameobe-matchplayer-csharp-0000002395190569)或[组队匹配](/docs/dev/game-dev/gameobe-matchgroup-csharp-0000002395190581)。
 
 ## 取消匹配
 

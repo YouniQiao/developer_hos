@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用为什么无法进行应用探索测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-7
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-exploratory-test/faqs-app-exploration-test/faqs-app-exploration-test-7
 ---
 
 

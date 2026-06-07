@@ -1,7 +1,7 @@
 ---
 title: "查询定向列表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-querytaglist-0000001181946327
+original_url: /docs/monetize/promotion/marketapi-querytaglist-0000001181946327
 format: md
 ---
 
@@ -59,9 +59,9 @@ Content-Type: application/json
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
-| userGroupInfos | O | List&lt;[UserGroupInfo](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-usergroupinfos-0000001181826461)&gt; | 用户分群列表。 |
+| userGroupInfos | O | List&lt;[UserGroupInfo](/docs/monetize/promotion/marketapi-modle-usergroupinfos-0000001181826461)&gt; | 用户分群列表。 |
 | totalCount | M | Integer | 响应总数。 |
 
 ## 响应示例

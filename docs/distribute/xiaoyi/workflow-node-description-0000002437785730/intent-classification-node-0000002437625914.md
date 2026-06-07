@@ -1,7 +1,7 @@
 ---
 title: "意图分类节点"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/intent-classification-node-0000002437625914
+original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/intent-classification-node-0000002437625914
 format: md
 ---
 

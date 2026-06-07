@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "识别平面语义（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-semantics
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-semantics/arengine-get-semantics
 format: md
 ---
 
 
 ## 约束与限制
 
-从5.1.0(18)开始，识别平面语义能力支持部分Phone、部分Tablet设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持平面及物体语义特性（[ARENGINE\_FEATURE\_TYPE\_SEMANTIC](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arfeaturetype)）。
+从5.1.0(18)开始，识别平面语义能力支持部分Phone、部分Tablet设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持平面及物体语义特性（[ARENGINE\_FEATURE\_TYPE\_SEMANTIC](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arfeaturetype)）。
 
 ## 接口说明
 
@@ -26,11 +26,11 @@ format: md
 
 ## 开发步骤
 
-AR Engine仅输出识别到的平面数据。为便于用户观察，可使用AGP（Ark Graphics Platform）渲染引擎或者[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)绘制识别的平面。关于AGP的介绍可以查看[ArkGraphics 3D简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-overview)和[AGP引擎](https://gitcode.com/openharmony/graphic_graphic_3d)。
+AR Engine仅输出识别到的平面数据。为便于用户观察，可使用AGP（Ark Graphics Platform）渲染引擎或者[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)绘制识别的平面。关于AGP的介绍可以查看[ArkGraphics 3D简介](/docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-overview)和[AGP引擎](https://gitcode.com/openharmony/graphic_graphic_3d)。
 
-对于使用ArkTS的任何AR应用，首先需要创建一个AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)，用于管理AR Engine的系统状态。AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)的创建可以参考[管理AR会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession)章节。
+对于使用ArkTS的任何AR应用，首先需要创建一个AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)，用于管理AR Engine的系统状态。AR会话[ARViewContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontext)的创建可以参考[管理AR会话](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-arsession)章节。
 
-识别平面语义之前需要先检测识别环境中的平面，如何检测识别环境中的平面请参考[检测环境中的平面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-plane)。
+识别平面语义之前需要先检测识别环境中的平面，如何检测识别环境中的平面请参考[检测环境中的平面](/docs/dev/app-dev/graphics/ar-engine-kit-guide/get-plane/arengine-get-plane)。
 
 ### 导入模块
 
@@ -52,7 +52,7 @@ let planeLabel: arEngine.ARSemanticPlaneLabel;
 
 ### 显示平面语义信息
 
-首先初始化AR会话和AR场景，可以参考[初始化AR会话和AR场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession#初始化ar会话和ar场景)章节。
+首先初始化AR会话和AR场景，可以参考[初始化AR会话和AR场景](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-arsession#初始化ar会话和ar场景)章节。
 
 更改semanticMode为[ARSemanticMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arsemanticmode).PLANE，启用平面语义识别能力。
 
@@ -223,9 +223,9 @@ class ARViewCallbackImpl extends arViewController.ARViewCallback {
 
 ### 识别平面语义的自定义方法
 
-自定义方法获取顶点数据getVertices、创建索引generateMeshIndex、创建mesh数据generateMeshInput，可参考[检测平面的自定义方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-plane#检测平面的自定义方法)。
+自定义方法获取顶点数据getVertices、创建索引generateMeshIndex、创建mesh数据generateMeshInput，可参考[检测平面的自定义方法](/docs/dev/app-dev/graphics/ar-engine-kit-guide/get-plane/arengine-get-plane#检测平面的自定义方法)。
 
-arrayBufferFloat32ToNumber可以参考[数据类型转换说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arraybuffer-info)。
+arrayBufferFloat32ToNumber可以参考[数据类型转换说明](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-arraybuffer-info)。
 
 平面语义标签转换convertSemanticLabel可参考如下。
 

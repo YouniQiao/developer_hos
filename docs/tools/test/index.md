@@ -1,6 +1,6 @@
 ---
 title: 应用测试
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/app-testing-overview
+original_url: /docs/tools/test/index
 sidebar_position: 1
 format: md
 ---

@@ -1,7 +1,7 @@
 ---
 title: "查看/修改账户基本信息"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-manage-information-0000001328357938
+original_url: /docs/monetize/promotion/bpos-delivery-task-account-manage-information-0000001328357938
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
     - 若您在华为开发者联盟平台提交的实名认证还在审核中，您需要等待实名通过后，才能开通鲸鸿动能广告广告账户。
   - <strong>操作方法</strong>：
 
-    点击“<strong>工具</strong>”&gt;“<strong>广告账号管理</strong>”，您可以通过邓白氏号码或者营业执照号码进行实名认证，实名审核时间为1-2个工作日，审核结果将会发送到您的[联系人邮箱](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-register-0000001328677526#ZH-CN_TOPIC_0000001328677526__li4641112612506)。
+    点击“<strong>工具</strong>”&gt;“<strong>广告账号管理</strong>”，您可以通过邓白氏号码或者营业执照号码进行实名认证，实名审核时间为1-2个工作日，审核结果将会发送到您的[联系人邮箱](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#ZH-CN_TOPIC_0000001328677526__li4641112612506)。
 
     ![](./img/d0b9c021f21c.png)
 - <strong>华为账号管理</strong>：点击“<strong>工具</strong>“&gt;“<strong>华为账号管理</strong>“，支持查看、修改华为账号信息，具体可参考：[华为帐号信息设置](https://developer.huawei.com/consumer/cn/doc/start/account-management-0000001052865467)。

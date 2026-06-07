@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口获取JSVM API的版本号"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-version
+original_url: /docs/dev/ndk-dev/use-jsvm-about-version
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 ## 使用示例
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
 
 ### OH\_JSVM\_GetVersion && OH\_JSVM\_GetVMInfo
 

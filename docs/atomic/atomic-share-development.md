@@ -1,6 +1,6 @@
 ---
 title: "分享"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-share-development
+original_url: /docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-share-development
 has_merged_cells: true
 format: md
 ---
@@ -13,11 +13,11 @@ format: md
 | 元服务分享 | 适用范围 | 分享入口 | 使用接口或组件 |
 | --- | --- | --- | --- |
 | 元服务页面分享 | 适用于ArkUI开发的元服务页面 | 服务面板 | [onShare](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onshare10)生命周期函数 |
-| 页面内自定义 | [元服务分享Button](https://developer.huawei.com/consumer/cn/doc/atomic-guides/scenario-fusion-button-atomic-service-share) |
+| 页面内自定义 | [元服务分享Button](/docs/dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-service-share) |
 
 ## 接入指导
 
-本能力依赖于[组件导航（Navigation）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)能力，使用Navigation来实现元服务的分页能力。
+本能力依赖于[组件导航（Navigation）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)能力，使用Navigation来实现元服务的分页能力。
 
 开发者需要在元服务工程中，在UIAbility中配置onShare生命周期函数，在wantParams中声明atomicservice.param.key.shareInfo表示分享方要分享页面数据。
 
@@ -46,7 +46,7 @@ export default class EntryAbility extends UIAbility {
 }
 ```
 
-[NavigationSubPageName](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation#跨包路由)指的是开发者在navigation中使用NavDestination页面名称，以下是自定义路由表的实现举例。
+[NavigationSubPageName](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation#跨包路由)指的是开发者在navigation中使用NavDestination页面名称，以下是自定义路由表的实现举例。
 
 ```
 // 使用navigation组件一般通过如下方式更新页面。

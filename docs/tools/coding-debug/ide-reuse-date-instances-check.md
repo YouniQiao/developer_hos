@@ -1,7 +1,7 @@
 ---
 title: "@performance/reuse-date-instances-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-reuse-date-instances-check
+original_url: /docs/tools/coding-debug/ide-reuse-date-instances-check
 format: md
 ---
 

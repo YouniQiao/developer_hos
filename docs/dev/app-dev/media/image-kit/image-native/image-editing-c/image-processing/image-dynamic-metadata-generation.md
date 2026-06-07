@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "图片动态元数据生成"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-dynamic-metadata-generation
+original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/image-dynamic-metadata-generation
 format: md
 ---
 
@@ -33,7 +33,7 @@ format: md
 
 **内存规格：**
 
-处理的PixelMap对象需为[DMA内存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type-c#内存类型介绍)。
+处理的PixelMap对象需为[DMA内存](/docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-allocator-type-c#内存类型介绍)。
 
 ## 开发指导
 

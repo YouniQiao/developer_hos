@@ -1,6 +1,6 @@
 ---
 title: "C#（小游戏）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-sdkcompliance-csharp-minigame-0000002359547190
+original_url: /docs/dev/game-dev/games-gamemme-sdkcompliance-csharp-minigame-0000002359547190
 format: md
 ---
 
@@ -53,13 +53,13 @@ format: md
 
 **使用目的**：提供实时语音、实时信令、语音消息、效果音播放及语音转文本功能。如果您只使用部分SDK功能，则可以根据实际功能进行裁剪。
 
-**隐私政策链接：**[SDK隐私声明](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-sdksecurity-csharp-minigame-0000002359547182)
+**隐私政策链接：**[SDK隐私声明](/docs/dev/game-dev/games-gamemme-sdksecurity-csharp-minigame-0000002359547182)
 
 * 以表格方式向用户告知
 
 | 第三方SDK名称 | 第三方公司名称 | 收集个人信息类型 | 使用目的 | 隐私政策链接 |
 | --- | --- | --- | --- | --- |
-| 游戏多媒体SDK（C#版） | 华为软件技术有限公司 | 华为账号信息、通信内容、第三方账号信息、音视频、应用使用信息、应用基本信息、网络信息、大致位置信息、设备硬件信息、设备型号、系统属性、操作系统信息、系统设置信息、IP地址或IP归属地 | 提供实时语音、实时信令、语音消息、效果音播放及语音转文本功能。如果您只使用部分SDK功能，则可以根据实际功能进行裁剪。 | [SDK隐私声明](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-sdksecurity-csharp-minigame-0000002359547182) |
+| 游戏多媒体SDK（C#版） | 华为软件技术有限公司 | 华为账号信息、通信内容、第三方账号信息、音视频、应用使用信息、应用基本信息、网络信息、大致位置信息、设备硬件信息、设备型号、系统属性、操作系统信息、系统设置信息、IP地址或IP归属地 | 提供实时语音、实时信令、语音消息、效果音播放及语音转文本功能。如果您只使用部分SDK功能，则可以根据实际功能进行裁剪。 | [SDK隐私声明](/docs/dev/game-dev/games-gamemme-sdksecurity-csharp-minigame-0000002359547182) |
 
 ## 权限使用要求
 
@@ -81,8 +81,8 @@ format: md
 我们的SDK针对扩展功能的处理提供了配置能力，您可以基于业务诉求选择开启或关闭相关功能。
 
 * 如何开启或关闭扩展功能
-  + 您可以通过是否[集成游戏多媒体SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-minigame-0000002359706946#section422811372511)选择开启或关闭SDK的实时信令、语音消息功能。
-  + 您可以通过[云侧开关配置](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901)选择是否开启或关闭SDK的语音转文本功能。
+  + 您可以通过是否[集成游戏多媒体SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-minigame-0000002359706946#section422811372511)选择开启或关闭SDK的实时信令、语音消息功能。
+  + 您可以通过[云侧开关配置](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901)选择是否开启或关闭SDK的语音转文本功能。
 
 ## 保障个人信息主体权利
 

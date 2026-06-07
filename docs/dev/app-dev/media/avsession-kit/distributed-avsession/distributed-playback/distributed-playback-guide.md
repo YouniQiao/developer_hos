@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "投播开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide
+original_url: /docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide
 format: md
 ---
 
@@ -57,7 +57,7 @@ format: md
 
    通过AVSessionManager创建并激活媒体会话。
 
-   示例中的context的获取方式请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+   示例中的context的获取方式请参见[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
    ```
    import  { avSession }  from '@kit.AVSessionKit'; // 导入AVSession模块
@@ -80,7 +80,7 @@ format: md
 
    ![](./img/f031e0c4.png)
 
-   * 接入投播组件前需要先适配媒体播控中心的基础播控业务，具体需要接入的内容请按照应用类型参考[应用接入自检表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-checklist)。
+   * 接入投播组件前需要先适配媒体播控中心的基础播控业务，具体需要接入的内容请按照应用类型参考[应用接入自检表](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/playback-control-access-checklist)。
    * 应用可以通过filter字段设置需要发现和过滤的协议类型，来匹配应用期望的投播设备。
 
      注意，投播后，应用播放器切换上下集时，若下一集不支持投播，可以通过filter参数控制系统播控中心是否显示可投播设备列表，filter参数设置为0，播控会识别当前媒体内容为不支持投播，隐藏可投播设备显示。避免用户从播控中心投播，应用资源不可用。
@@ -124,7 +124,7 @@ format: md
    ![](./img/1b5d1113.png)
 
    * 若创建AVCastPicker后应用界面未显示，或点开Picker显示空白，请排查是否按步骤1、2接入了系统播控中心的基础播控，且正确设置了AVMetadata与Extras参数。
-   * 系统AVCastPicker提供CustomerPicker参数，应用可以通过该参数自定义Picker按钮的显示，具体开发请参考[自定义样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-switch-call-devices#自定义样式实现)。
+   * 系统AVCastPicker提供CustomerPicker参数，应用可以通过该参数自定义Picker按钮的显示，具体开发请参考[自定义样式](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/using-switch-call-devices#自定义样式实现)。
    * 使用投播组件AVCastPicker期间需要保证avsession对象不被后台销毁，否则可能会导致切换设备失败。
 
    ```
@@ -227,9 +227,9 @@ format: md
 
    下面代码示例中的url仅作示意使用，开发者需根据实际情况，确认资源有效性并设置：
 
-   * 如果使用本地资源播放，必须确认资源文件可用，并使用应用沙箱路径访问对应资源，参考[获取应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
-   * 如果通过FilePicker使用用户文件，请参考[选择用户文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file)。
-   * 如果使用网络播放路径，需[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：ohos.permission.INTERNET。
+   * 如果使用本地资源播放，必须确认资源文件可用，并使用应用沙箱路径访问对应资源，参考[获取应用文件路径](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
+   * 如果通过FilePicker使用用户文件，请参考[选择用户文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file)。
+   * 如果使用网络播放路径，需[申请相关权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)：ohos.permission.INTERNET。
    * 如果是DRM资源，需配置drmSchemes字段。
 
    ```
@@ -414,7 +414,7 @@ format: md
 
        方式二：不主动切换投播资源，正常绘制应用投播业务的按钮但不要创建AVCastPicker，用户点击后直接调用prepare和start更换投播资源，本地显示切换为“正在投播的界面”，不需要断开投播重新投播。
      + 情况二：如此时不可以投播，当前视频就在本地播放，隐藏投播业务的按钮显示即可。
-9. 处理音频焦点。请参考[多音频并发处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency)。
+9. 处理音频焦点。请参考[多音频并发处理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency)。
 
    在应用进入投播后，当前应用需要取消注册焦点处理事件，以免被其他应用的焦点申请而影响。
 10. 结束投播。
@@ -436,7 +436,7 @@ format: md
 
 1. 应用进入播放页后，需要调用[getOutputDevicesync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession#getoutputdevicesync10)接口来判断当前是否存在投屏的设备，避免和其他应用冲突。
 
-   通过[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide#开发步骤)第四步进行投播设备判断，如果存在投播设备，表示此时可以进行资源投播；否则表示没有可以投播的设备,或者系统当前虽然在镜像投屏，此时有别的APP在投播，此时应用应在本地播放。
+   通过[开发步骤](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide#开发步骤)第四步进行投播设备判断，如果存在投播设备，表示此时可以进行资源投播；否则表示没有可以投播的设备,或者系统当前虽然在镜像投屏，此时有别的APP在投播，此时应用应在本地播放。
 2. 应用正常投播后，仍然监听设备状态断开等场景，流程同[投播组件开发步骤](#开发步骤)中的内容描述。
 
 ### 附录
@@ -540,7 +540,7 @@ import { http } from '@kit.NetworkKit';
 
 系统投播功能支持用户将手机上的音视频无缝流转到其他设备（如PC/2in1设备、华为智慧屏）上继续播放，实现跨终端自由切换。为简化开发流程，系统提供了标准化的音视频投播解决方案，开发者仅需配置资源信息、监听投播状态并实现播放控制（如播放、暂停等），即可快速集成该功能。
 
-具体可参考[音频投播](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-audio-cast#section122641843162812) 与[视频投播](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-audio-cast#section122641843162812)。
+具体可参考[音频投播](/docs/dev/app-dev/multi-device/bpta-audio-cast#section122641843162812) 与[视频投播](/docs/dev/app-dev/multi-device/bpta-audio-cast#section122641843162812)。
 
 ### 示例代码
 

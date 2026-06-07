@@ -1,6 +1,6 @@
 ---
 title: "方舟字节码生成常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/es2abc-faq
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/es2abc-faq
 format: md
 ---
 
@@ -121,7 +121,7 @@ es2abc在某些情况下会直接异常退出而不产生日志。
 
 ![](./img/38a0166b.png)
 
-由于此类异常与代码结构和运行环境相关，目前无法提供完整列表；如上述情况均无法解释，可结合崩溃日志或使用[GDB](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gdb)/[LLDB](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-lldb)进一步定位。
+由于此类异常与代码结构和运行环境相关，目前无法提供完整列表；如上述情况均无法解释，可结合崩溃日志或使用[GDB](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-gdb)/[LLDB](/docs/dev/ndk-dev/debug-lldb)进一步定位。
 
 **栈溢出场景示例及排查方法**
 

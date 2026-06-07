@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/no-unnecessary-type-constraint"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-unnecessary-type-constraint
+original_url: /docs/tools/coding-debug/ide_no-unnecessary-type-constraint
 format: md
 ---
 

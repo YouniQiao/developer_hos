@@ -1,6 +1,6 @@
 ---
 title: "服务卡片（FormKit）"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit
+original_url: /docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 2. 在HarmonyOS列表，选择您已发布的元服务。
 3. 在左侧导航栏选择“服务分发增长&gt; 服务直达”。
 
-* **[创建服务卡片（FormKit）](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit-create)**
-* **[预览服务卡片（FormKit）](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit-preview)**
-* **[更新服务卡片（FormKit）](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit-update)**
-* **[下架服务卡片（FormKit）](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit-remove)**
+* **[创建服务卡片（FormKit）](/docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit-create)**
+* **[预览服务卡片（FormKit）](/docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit-preview)**
+* **[更新服务卡片（FormKit）](/docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit-update)**
+* **[下架服务卡片（FormKit）](/docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit-remove)**

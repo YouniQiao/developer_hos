@@ -1,7 +1,7 @@
 ---
 title: "功能介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-draw-tools-introduction-0000001399522565
+original_url: /docs/monetize/promotion/bp-functions-draw-tools-introduction-0000001399522565
 format: md
 ---
 

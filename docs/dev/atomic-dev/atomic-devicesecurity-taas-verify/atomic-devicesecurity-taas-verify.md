@@ -1,6 +1,6 @@
 ---
 title: "签名验证"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-taas-verify
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verify
 format: md
 ---
 

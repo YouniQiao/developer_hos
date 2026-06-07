@@ -1,6 +1,6 @@
 ---
 title: "账号"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-account-development
+original_url: /docs/dev/atomic-dev/atomic-account-development/atomic-account-development
 format: md
 ---
 

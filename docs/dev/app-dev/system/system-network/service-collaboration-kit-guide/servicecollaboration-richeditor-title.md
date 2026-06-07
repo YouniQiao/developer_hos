@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "跨设备互通（RichEditor控件）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-richeditor-title
+original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-richeditor-title
 format: md
 ---
 

@@ -1,19 +1,19 @@
 ---
 title: "状态刷新控制"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-state-refresh
+original_url: /docs/quality/state-refresh
 format: md
 ---
 
 
 # 状态刷新控制
 
-在声明式UI编程范式中，UI是应用程序状态的函数，应用程序状态的修改会更新相应的UI界面。ArkUI采用了[MVVM](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-mvvm)模式，其中ViewModel将数据与视图绑定在一起，更新数据的时候直接更新视图。如下图所示：
+在声明式UI编程范式中，UI是应用程序状态的函数，应用程序状态的修改会更新相应的UI界面。ArkUI采用了[MVVM](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-mvvm)模式，其中ViewModel将数据与视图绑定在一起，更新数据的时候直接更新视图。如下图所示：
 
 **图1** ArkUI的MVVM模式
 
 ![](./img/e18213d9.png "点击放大")
 
-ArkUI提供了一系列装饰器实现ViewModel的能力，如[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)、[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)、[@Provide](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)、[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)等。当自定义组件内变量被装饰器装饰时变为状态变量，状态变量的改变会引起UI的渲染刷新。
+ArkUI提供了一系列装饰器实现ViewModel的能力，如[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)、[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)、[@Provide](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)、[LocalStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage)等。当自定义组件内变量被装饰器装饰时变为状态变量，状态变量的改变会引起UI的渲染刷新。
 
 ## 避免不必要的状态变量使用
 

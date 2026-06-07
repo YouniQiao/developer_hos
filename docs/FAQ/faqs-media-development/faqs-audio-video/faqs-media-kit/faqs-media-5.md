@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用video组件播放视频时，如何刷新重新加载视频？比如网络异常导致播放失败等情况"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-5
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-media-kit/faqs-media-5
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: 办公类
 sidebar_label: 办公类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/office-0000002315825496
+original_url: /docs/design/app-design-practices/office
 format: md
 ---
 

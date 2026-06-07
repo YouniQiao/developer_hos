@@ -1,6 +1,6 @@
 ---
 title: "使用Web组件的下载能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-download
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-upload-download/web-download
 format: md
 ---
 

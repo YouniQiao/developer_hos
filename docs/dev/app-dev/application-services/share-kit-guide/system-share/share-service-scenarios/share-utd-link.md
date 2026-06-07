@@ -1,21 +1,21 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分享链接"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-link
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-link
 format: md
 ---
 
 
 ## 分享App Linking直达应用
 
-使用App Linking分享应用，目标设备接收后可直达应用，参见：[使用App Linking实现应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)。
+使用App Linking分享应用，目标设备接收后可直达应用，参见：[使用App Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)。
 
 ![](./img/80630f4c.png)
 
 ### 开发步骤
 
 1. 开通App Linking服务，并完成相关配置，App Linking需经过调试。参见：[调试App Linking](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-applinking-debug-0000001059139667)。
-2. 在应用配置文件（src/main/module.json5）的[skills](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)配置中增加关联配置。参见：[声明应用关联的网站域名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在modulejson5中配置关联的网址域名)。
+2. 在应用配置文件（src/main/module.json5）的[skills](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)配置中增加关联配置。参见：[声明应用关联的网站域名](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在modulejson5中配置关联的网址域名)。
 3. 使用App Linking发起系统分享。
 
    ```
@@ -69,7 +69,7 @@ format: md
      }
    }
    ```
-4. 目标应用处理App Linking。参见：[拉起方实现跳转指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#处理传入的链接)。
+4. 目标应用处理App Linking。参见：[拉起方实现跳转指导](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#处理传入的链接)。
 
    ```
    import { common, OpenLinkOptions } from '@kit.AbilityKit';

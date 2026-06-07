@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开通支付服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-agc
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-agc
 format: md
 ---
 
@@ -28,6 +28,6 @@ format: md
    * **HarmonyOS应用**：“盈利 > 鸿蒙支付服务（可在‘全部功能’中搜索服务并固定到导航栏）> 支付服务（非虚拟类）> 立即开通”。
 
      ![](./img/337fd570.png)
-4. 如涉及商户入网，在服务开通后需要为商户号申请绑定AppID，详细参见[商户号绑定AppID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-binding-appid-to-merc)（如未完成商户入网，可点击“申请支付商户号”先进行商户入网，详细介绍参考[商户入网](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-merc-regist-apply)章节）。
+4. 如涉及商户入网，在服务开通后需要为商户号申请绑定AppID，详细参见[商户号绑定AppID](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-binding-appid-to-merc)（如未完成商户入网，可点击“申请支付商户号”先进行商户入网，详细介绍参考[商户入网](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-merc-regist-apply)章节）。
 
    ![](./img/46317501.png)

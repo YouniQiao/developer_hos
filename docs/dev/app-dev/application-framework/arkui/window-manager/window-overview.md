@@ -1,6 +1,6 @@
 ---
 title: "窗口开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-overview
 format: md
 ---
 
@@ -44,13 +44,13 @@ format: md
 
 ![](./img/44cd5b00.png)
 
-针对窗口模式的适配开发指导，具体可参考[窗口模式最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode)。
+针对窗口模式的适配开发指导，具体可参考[窗口模式最佳实践](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode)。
 
 ## 实现原理
 
 当前窗口的实现和开发与应用开发模型相关联，不同模型下的接口功能略有区别。当前应用开发模型分为FA模型和Stage模型。
 
-两个模型的整体架构和设计思想，详见[应用模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-models)。
+两个模型的整体架构和设计思想，详见[应用模型](/docs/dev/app-dev/application-framework/ability-kit/application-models)。
 
 针对窗口开发，推荐使用Stage模型进行相关开发。
 
@@ -64,7 +64,7 @@ format: md
 
 每个UIAbility实例都会与一个WindowStage类实例绑定，该类起到了应用进程内窗口管理器的作用。它包含一个主窗口，也就是说UIAbility实例通过WindowStage持有了一个主窗口，该主窗口为ArkUI提供了绘制区域，可以加载不同的ArkUI页面。
 
-在Stage模型下，由UIAbility通过WindowStage管理主窗口并维护其生命周期，可以通过[onWindowStageCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagecreate)和[onWindowStageDestroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagedestroy)接收主窗口创建和销毁的通知。详见：[UIAbility生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle)。
+在Stage模型下，由UIAbility通过WindowStage管理主窗口并维护其生命周期，可以通过[onWindowStageCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagecreate)和[onWindowStageDestroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onwindowstagedestroy)接收主窗口创建和销毁的通知。详见：[UIAbility生命周期](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-lifecycle)。
 
 ### 生命周期状态
 

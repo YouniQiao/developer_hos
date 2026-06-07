@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "正地理编码与逆地理编码开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geocode-guidelines
+original_url: /docs/dev/app-dev/application-services/location-kit/geocode-guidelines
 format: md
 ---
 

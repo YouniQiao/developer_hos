@@ -1,7 +1,7 @@
 ---
 title: "优质媒体阶梯分成激励"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/liuliangzhiliangfenchengjiangli-0000001412921257
+original_url: /docs/monetize/monetization/liuliangzhiliangfenchengjiangli-0000001412921257
 format: md
 ---
 

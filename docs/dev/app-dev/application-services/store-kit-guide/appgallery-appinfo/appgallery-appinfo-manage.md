@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过AppGallery Connect动态管理应用图标"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-appinfo-manage
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/appgallery-appinfo/appgallery-appinfo-manage
 format: md
 ---
 
@@ -10,10 +10,10 @@ format: md
 
 ## 申请开通服务
 
-使用图标管理服务之前，请按如下格式向华为运营人员发送邮件申请开通服务。申请审核时间为1-3个工作日，审核结果请关注邮件信息或[互动中心](https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000002276985946)通知。
+使用图标管理服务之前，请按如下格式向华为运营人员发送邮件申请开通服务。申请审核时间为1-3个工作日，审核结果请关注邮件信息或[互动中心](/docs/distribute/agc/agc-help-interaction-center-0000002276985946)通知。
 
 * 请确保申请开通图标管理服务的应用处于正式上架状态，避免服务开通失败。
-* 应用信息和开发者账号信息查询方法参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。
+* 应用信息和开发者账号信息查询方法参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。
 
 **邮箱地址：** agconnect@huawei.com
 
@@ -40,7 +40,7 @@ format: md
 ![](./img/ce89553f.png)
 
 * 只有正式发布的HarmonyOS应用支持管理个性化图标。
-* 在创建个性化图标前，您需要提前准备好需要上传的图标文件，图标文件需要满足应用市场的审核政策要求，详情参见《[应用审核指南](https://developer.huawei.com/consumer/cn/doc/app/50104)》。
+* 在创建个性化图标前，您需要提前准备好需要上传的图标文件，图标文件需要满足应用市场的审核政策要求，详情参见《[应用审核指南](/docs/distribute/app-dist/app-market/x50000/x50104/x50104-overview)》。
 
 ## 创建图标
 

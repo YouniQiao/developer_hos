@@ -1,11 +1,11 @@
 ---
 title: "验证签名"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-taas-verifysignature
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verifysignature
 format: md
 ---
 
 
-如果需要在端侧校验安全地理位置数据签名的有效性，可以使用[Crypto Architecture Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro)，使用方法请参考开发指南中“[使用ECDSA密钥对签名验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-ecdsa-sign-sig-verify)”章节。
+如果需要在端侧校验安全地理位置数据签名的有效性，可以使用[Crypto Architecture Kit](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-architecture-kit-intro)，使用方法请参考开发指南中“[使用ECDSA密钥对签名验签](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-ecdsa-sign-sig-verify)”章节。
 
 ![](./img/76857a0b.png)
 
@@ -56,7 +56,7 @@ const signatureData = base64Helper.decodeSync(secureLocation.signature.toString(
 
 ## 验证签名
 
-结合“[安全地理位置场景](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-taas-securelocation)”中获取到的原始数据和签名结果，验证签名的参考代码（不含异常处理逻辑，由开发者根据业务场景实现）如下：
+结合“[安全地理位置场景](/docs/dev/atomic-dev/atomic-devicesecurity-taas-dev/atomic-devicesecurity-taas-securelocation)”中获取到的原始数据和签名结果，验证签名的参考代码（不含异常处理逻辑，由开发者根据业务场景实现）如下：
 
 1. 从匿名证书链中获取公钥。
 

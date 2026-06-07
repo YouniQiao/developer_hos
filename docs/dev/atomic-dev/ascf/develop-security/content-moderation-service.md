@@ -1,6 +1,6 @@
 ---
 title: "内容风控服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/content-moderation-service
+original_url: /docs/dev/atomic-dev/ascf/develop-security/content-moderation-service
 format: md
 ---
 
@@ -30,11 +30,11 @@ format: md
 
 **开发准备**
 
-内容风控服务的开发方式参见“指南应用服务[Cloud Foundation Kit(云开发服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloud-foundation-kit-guide)”。
+内容风控服务的开发方式参见“指南应用服务[Cloud Foundation Kit(云开发服务)](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide)”。
 
 1. 开通云函数。
 
-   内容风控服务以云函数的方式进行开放，如您是首次使用云函数，请先[申请开通云函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-function)。
+   内容风控服务以云函数的方式进行开放，如您是首次使用云函数，请先[申请开通云函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-function)。
 
    本服务仅在中国区开放，因此“数据处理位置”请选择“中国”。
 2. [启用连接器](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/cloud-function-enable-connector-0000002237083942)。

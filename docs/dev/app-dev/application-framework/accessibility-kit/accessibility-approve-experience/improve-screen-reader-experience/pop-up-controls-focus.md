@@ -1,6 +1,6 @@
 ---
 title: "弹窗类控件走焦的场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pop-up-controls-focus
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/pop-up-controls-focus
 format: md
 ---
 

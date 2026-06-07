@@ -1,23 +1,23 @@
 ---
 title: "ArkWeb抛滑丢帧事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-web-fling-jank-events
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/scroll-arkweb-fling-jank-events/hiappevent-watcher-web-fling-jank-events
 format: md
 ---
 
 
 ## 简介
 
-[ArkWeb](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-component-overview)提供了Web组件，用于在应用程序中显示Web页面内容，为开发者提供了丰富的控制Web页面能力。页面滑动一般分为两个阶段：拖滑和抛滑。拖滑指触摸屏幕时的滑动。抛滑指在手指离开屏幕后，页面仍以一定速度滑动。从API version 23开始，支持订阅ArkWeb抛滑丢帧事件，用户在使用应用时滑动web页面，如果出现抛滑丢帧且卡顿持续时间超过50ms及以上，就会被定义为ArkWeb抛滑丢帧，并生成相关丢帧数据。
+[ArkWeb](/docs/dev/app-dev/application-framework/arkweb/web-component-overview)提供了Web组件，用于在应用程序中显示Web页面内容，为开发者提供了丰富的控制Web页面能力。页面滑动一般分为两个阶段：拖滑和抛滑。拖滑指触摸屏幕时的滑动。抛滑指在手指离开屏幕后，页面仍以一定速度滑动。从API version 23开始，支持订阅ArkWeb抛滑丢帧事件，用户在使用应用时滑动web页面，如果出现抛滑丢帧且卡顿持续时间超过50ms及以上，就会被定义为ArkWeb抛滑丢帧，并生成相关丢帧数据。
 
 本文面向开发者介绍ArkWeb抛滑丢帧事件检测原理，以及各字段的含义和规格。如需了解如何使用HiAppEvent接口订阅ArkWeb抛滑丢帧事件，请参考以下文档。
 
-* [订阅ArkWeb抛滑丢帧事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-web-fling-jank-events-arkts)
+* [订阅ArkWeb抛滑丢帧事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/scroll-arkweb-fling-jank-events/hiappevent-watcher-web-fling-jank-events-arkts)
 
 ![](./img/a2bc0595.png)
 
-ArkWeb抛滑丢帧事件仅提供发生卡顿的Web组件对应的web\_id，最长丢帧时长及其他相关数据，不提供卡顿日志等信息。开发者可以借助web\_id，参考“订阅ArkWeb抛滑丢帧事件（ArkTS）”文件中的示例代码获取到发生丢帧的网页地址，再结合业界成熟的[DevTools工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-debugging-with-devtools)复现并排查根因。
+ArkWeb抛滑丢帧事件仅提供发生卡顿的Web组件对应的web\_id，最长丢帧时长及其他相关数据，不提供卡顿日志等信息。开发者可以借助web\_id，参考“订阅ArkWeb抛滑丢帧事件（ArkTS）”文件中的示例代码获取到发生丢帧的网页地址，再结合业界成熟的[DevTools工具](/docs/dev/app-dev/application-framework/arkweb/web-debugging/web-debugging-with-devtools)复现并排查根因。
 
-从API version 23开始，ArkWeb抛滑丢帧事件支持在[应用分身](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)、元服务及[输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
+从API version 23开始，ArkWeb抛滑丢帧事件支持在[应用分身](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)、元服务及[输入法应用](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
 
 ## 检测原理
 

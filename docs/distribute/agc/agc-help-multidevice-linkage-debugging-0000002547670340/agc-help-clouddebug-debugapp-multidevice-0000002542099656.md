@@ -1,6 +1,6 @@
 ---
 title: "调试应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-debugapp-multidevice-0000002542099656
+original_url: /docs/distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-debugapp-multidevice-0000002542099656
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 #### 前提条件
 
-* 调试应用前必须先[申请调试设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-applyequip-multidevice-0000002578270131)。
+* 调试应用前必须先[申请调试设备](/docs/distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-applyequip-multidevice-0000002578270131)。
 * 在使用云调试服务前，请准备好配置了发布证书且打包时编译模式选择“release”的应用包，且应用软件包的大小须在4GB以内。
 
 #### 上传应用
@@ -21,7 +21,7 @@ format: md
    ![](../img/agc-help-clouddebug-debugapp-multidevice-0000002542099656_1.png "点击放大")
 2. 页面右侧弹出“应用列表”窗口。点击“本地上传”，上传本地待调试的应用release包。上传完成后，应用将自动安装。
 
-   此外，您也可以在调试前进入“我的信息”页签上传应用，具体操作方法请参见[管理应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-manageapp-multidevice-0000002578350145)。这样，应用列表中将可看到之前已上传的应用，鼠标悬停在应用图框上，点击![](../img/agc-help-clouddebug-debugapp-multidevice-0000002542099656_2.png)即可安装应用。
+   此外，您也可以在调试前进入“我的信息”页签上传应用，具体操作方法请参见[管理应用](/docs/distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-manageapp-multidevice-0000002578350145)。这样，应用列表中将可看到之前已上传的应用，鼠标悬停在应用图框上，点击![](../img/agc-help-clouddebug-debugapp-multidevice-0000002542099656_2.png)即可安装应用。
 
    ![](../img/agc-help-clouddebug-debugapp-multidevice-0000002542099656_3.png)
 

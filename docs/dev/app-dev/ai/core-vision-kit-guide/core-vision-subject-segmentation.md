@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "主体分割"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-subject-segmentation
+original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-subject-segmentation
 format: md
 ---
 

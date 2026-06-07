@@ -1,6 +1,6 @@
 ---
 title: "使用硬件熵源生成安全随机数(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-random-number-hardware
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number-hardware
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 使用更安全的熵源，对随机数而言，就意味着 “结果难以被猜测或复现”，是 “真随机性” 的量化体现。
 
-当前硬件熵源通过调用[HUKS](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)接口实现。
+当前硬件熵源通过调用[HUKS](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)接口实现。
 
 开发者可以调用接口，完成以下具体功能：
 

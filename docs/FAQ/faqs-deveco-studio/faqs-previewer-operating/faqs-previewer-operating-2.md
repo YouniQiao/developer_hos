@@ -1,7 +1,7 @@
 ---
 format: md
 title: "预览功能使用过程中，可能无法使用帮助菜单压缩日志按钮收集日志"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-2
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-2
 ---
 
 

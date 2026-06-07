@@ -1,7 +1,7 @@
 ---
 title: "动态内存峰值占用"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-peak-dynamic-memory-usage-0417
+original_url: /docs/tools/coding-debug/ide-peak-dynamic-memory-usage-0417
 format: md
 ---
 

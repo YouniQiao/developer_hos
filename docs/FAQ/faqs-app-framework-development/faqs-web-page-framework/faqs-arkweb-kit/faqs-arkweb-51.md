@@ -1,7 +1,7 @@
 ---
 format: md
 title: "webview是否支持CodeCache"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-51
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-51
 ---
 
 

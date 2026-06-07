@@ -1,6 +1,6 @@
 ---
 title: "常见基本功能问题汇总"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-common-basic
+original_url: /docs/dev/ndk-dev/napi-faq-about-common-basic
 format: md
 ---
 
@@ -32,14 +32,14 @@ extern "C" __attribute__((constructor)) void RegisterEntryModule()
 
 1. 可根据以下文档进行排查：
 
-   [ArkTS侧import xxx from libxxx.so后，使用xxx报错显示undefined/not callable或明确的Error message](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-common-basic#arkts侧报错显示undefined)
+   [ArkTS侧import xxx from libxxx.so后，使用xxx报错显示undefined/not callable或明确的Error message](/docs/dev/ndk-dev/napi-faq-about-common-basic#arkts侧报错显示undefined)
 
-   [模块注册与模块命名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines#模块注册与模块命名)
+   [模块注册与模块命名](/docs/dev/ndk-dev/napi-guidelines#模块注册与模块命名)
 2. 同时也可参考动态加载能力是否可以满足该场景：
 
-   [napi\_load\_module\_with\_info支持的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module-with-info#napi_load_module_with_info支持的场景)
+   [napi\_load\_module\_with\_info支持的场景](/docs/dev/ndk-dev/use-napi-load-module-with-info#napi_load_module_with_info支持的场景)
 
-   [napi\_load\_module支持的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module#napi_load_module支持的场景)
+   [napi\_load\_module支持的场景](/docs/dev/ndk-dev/use-napi-load-module#napi_load_module支持的场景)
 
 ## 在大量需要调用ArkTS方法进行通信的场景中如何保证异步任务的有序性
 
@@ -48,7 +48,7 @@ extern "C" __attribute__((constructor)) void RegisterEntryModule()
 
 可参考线程安全函数来实现，napi\_call\_threadsafe\_function可保证异步任务执行顺序, 需要注意的是这些异步任务会投递到ArkTS线程顺序执行，如果是投递到主线程，异步任务的执行时间过长可能导致应用冻结退出，所以不建议将长耗时的任务通过线程安全函数投递到主线程执行。
 
-[使用Node-API接口进行线程安全开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety)
+[使用Node-API接口进行线程安全开发](/docs/dev/ndk-dev/use-napi-thread-safety)
 
 此外，Node-API中常见的抛任务方法的差异如下：
 
@@ -61,7 +61,7 @@ extern "C" __attribute__((constructor)) void RegisterEntryModule()
 
    napi\_call\_threadsafe\_function\_with\_priority根据指定的入队方式执行。
 
-   [使用Node-API接口从异步线程向ArkTS线程投递指定优先级和入队方式的任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-call-threadsafe-function-with-priority)
+   [使用Node-API接口从异步线程向ArkTS线程投递指定优先级和入队方式的任务](/docs/dev/ndk-dev/use-call-threadsafe-function-with-priority)
 
 ## 是否存在便捷的回调ArkTS的方式
 
@@ -73,13 +73,13 @@ extern "C" __attribute__((constructor)) void RegisterEntryModule()
 
 [Native侧子线程与UI主线程通信](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-native-sub-main-comm)
 
-[使用Node-API接口进行异步任务开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-asynchronous-task)
+[使用Node-API接口进行异步任务开发](/docs/dev/ndk-dev/use-napi-asynchronous-task)
 
 ## 如何在C++代码中回调ArkTS方法
 
 * 参考文档：
 
-[如何在C++调用从ArkTS传递过来的function](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-26)
+[如何在C++调用从ArkTS传递过来的function](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-26)
 
 ## 如何确保数据类型的正确映射与内存管理的安全性
 
@@ -94,9 +94,9 @@ extern "C" __attribute__((constructor)) void RegisterEntryModule()
 
 * 参考文档：
 
-[使用Node-API接口进行object相关开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-object)
+[使用Node-API接口进行object相关开发](/docs/dev/ndk-dev/use-napi-about-object)
 
-[使用Node-API接口进行array相关开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-array)
+[使用Node-API接口进行array相关开发](/docs/dev/ndk-dev/use-napi-about-array)
 
 ## napi\_get\_uv\_event\_loop接口错误码说明
 
@@ -173,10 +173,10 @@ napi_value NapiGenericFailure(napi_env env, napi_callback_info)
 
 1. 使用napi\_threadsafe\_function系列的Node-API接口，这系列接口，相当于在C++线程抛任务回到ArkTS线程执行ArkTS方法
 
-   [使用Node-API接口进行线程安全开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety)
+   [使用Node-API接口进行线程安全开发](/docs/dev/ndk-dev/use-napi-thread-safety)
 2. 在C++线程创建出ArkTS运行环境
 
-   [使用Node-API接口创建ArkTS运行时环境](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-ark-runtime)
+   [使用Node-API接口创建ArkTS运行时环境](/docs/dev/ndk-dev/use-napi-ark-runtime)
 
 ## 是否有不拷贝的napi\_get\_value\_string\_utf8接口或者能力
 
@@ -197,14 +197,14 @@ napi_value NapiGenericFailure(napi_env env, napi_callback_info)
 
 1. napi\_env和ArkTS线程是绑定的，napi\_env不能跨线程使用，否则会导致稳定性问题。可参考文档
 
-   [多线程限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process#多线程限制)。
+   [多线程限制](/docs/dev/ndk-dev/use-napi-process#多线程限制)。
 2. 在使用env调用napi接口时，需要注意，大部分的napi接口只能在env所在的ArkTS线程上调用，不然会出现多线程安全问题。
 
-   可参考该文档的第四点【multi-thread】 [开发者使用napi接口时，跨线程使用napi\_env或napi\_value引发多线程安全问题](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-api#section1219614634615)。
+   可参考该文档的第四点【multi-thread】 [开发者使用napi接口时，跨线程使用napi\_env或napi\_value引发多线程安全问题](/docs/quality/stability-coding-standard-api#section1219614634615)。
 3. 最好不要缓存napi env，否则容易出现多线程安全问题和use-after-free问题。
 
-   可参考该文档的第八点【use-after-free】[开发者使用napi接口时，跨线程使用napi\_env或napi\_value引发多线程安全问题](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-api#section1219614634615)。
-4. [napi\_env禁止缓存的原因是什么](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-73)。
+   可参考该文档的第八点【use-after-free】[开发者使用napi接口时，跨线程使用napi\_env或napi\_value引发多线程安全问题](/docs/quality/stability-coding-standard-api#section1219614634615)。
+4. [napi\_env禁止缓存的原因是什么](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-73)。
 
 ## napi\_call\_threadsafe\_function执行顺序不符合预期
 
@@ -283,7 +283,7 @@ ArkTS侧import xxx from libxxx.so后，使用xxx报错显示undefined/not callab
 
 ## Node-API接口返回值不是napi\_ok时如何排查定位
 
-Node-API接口正常执行后，会返回一个napi\_ok的状态枚举值，若Node-API接口返回值不为napi\_ok，可先参考[Node-API接口返回状态码介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi_status_introduction)。
+Node-API接口正常执行后，会返回一个napi\_ok的状态枚举值，若Node-API接口返回值不为napi\_ok，可先参考[Node-API接口返回状态码介绍](/docs/dev/ndk-dev/napi_status_introduction)。
 
 以下是几个常见场景：
 
@@ -362,7 +362,7 @@ void FinalizeB(napi_env env, void* data, void* hint) {
 
 问题排查：
 
-原因一：napi\_call\_threadsafe\_function函数调用返回值不为napi\_ok。请确认调用napi\_call\_threadsafe\_function相关函数的返回值是否都是napi\_ok，若不是，请根据[Node-API接口返回状态码介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi_status_introduction)排查返回值非napi\_ok的原因。
+原因一：napi\_call\_threadsafe\_function函数调用返回值不为napi\_ok。请确认调用napi\_call\_threadsafe\_function相关函数的返回值是否都是napi\_ok，若不是，请根据[Node-API接口返回状态码介绍](/docs/dev/ndk-dev/napi_status_introduction)排查返回值非napi\_ok的原因。
 
 原因二：env所在的ArkTS线程被阻塞。napi\_call\_threadsafe\_function函数的回调将执行在env所在的ArkTS线程上，若ArkTS线程被阻塞，则线程安全函数回调不会被执行。
 

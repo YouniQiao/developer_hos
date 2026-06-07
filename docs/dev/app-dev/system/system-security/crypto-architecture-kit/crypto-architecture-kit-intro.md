@@ -1,6 +1,6 @@
 ---
 title: "Crypto Architecture Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-architecture-kit-intro
 format: md
 ---
 
@@ -19,13 +19,13 @@ Crypto Architecture Kit屏蔽了第三方密码学算法库实现差异的算法
 
 加解密算法库为开发者提供了以下相关功能，并提供了对应的算法规格说明和开发指导，请开发者参照开发。
 
-* [密钥生成和转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-generation-conversion-overview)
-* [加解密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encryption-decryption-overview)
-* [签名验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sign-sig-verify-overview)
+* [密钥生成和转换](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-overview)
+* [加解密](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encryption-decryption-overview)
+* [签名验签](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview)
 * [密钥协商](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-overview)
-* [消息摘要计算](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-overview)
-* [消息认证码计算](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-mac-overview)
-* [安全随机数生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-random-number)
+* [消息摘要计算](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-overview)
+* [消息认证码计算](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-mac-overview)
+* [安全随机数生成](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number)
 * [密钥派生](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-overview)
 
 ## 基本概念
@@ -53,4 +53,4 @@ Crypto Architecture Kit屏蔽了第三方密码学算法库实现差异的算法
 
 加解密算法库框架仅提供密钥的密码学操作，不提供密钥管理功能。因此，应用需自行保管密钥，适用于临时会话密钥等仅在内存中使用的场景，或自行实现密钥安全存储的场景。
 
-如果业务需要由系统提供密钥管理功能（密钥存储等），请使用[Universal Keystore Kit（密钥管理服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)。
+如果业务需要由系统提供密钥管理功能（密钥存储等），请使用[Universal Keystore Kit（密钥管理服务）](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)。

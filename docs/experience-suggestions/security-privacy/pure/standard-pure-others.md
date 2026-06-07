@@ -1,6 +1,6 @@
 ---
 title: "其他"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-pure-others
+original_url: /docs/experience-suggestions/security-privacy/pure/standard-pure-others
 format: md
 ---
 

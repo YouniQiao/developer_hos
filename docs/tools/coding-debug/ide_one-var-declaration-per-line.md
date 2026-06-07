@@ -1,7 +1,7 @@
 ---
 title: "@hw-stylistic/one-var-declaration-per-line"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_one-var-declaration-per-line
+original_url: /docs/tools/coding-debug/ide_one-var-declaration-per-line
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "前置要求"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_prerequisite-0000001354663501
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_prerequisite-0000001354663501
 format: md
 ---
 

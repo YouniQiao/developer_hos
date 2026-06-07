@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何理解自定义弹窗（CustomDialog）中的gridCount参数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-84
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-84
 ---
 
 

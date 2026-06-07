@@ -1,14 +1,14 @@
 ---
 title: "开通服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-enable-service-0000002271422405
+original_url: /docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-enable-service-0000002271422405
 format: md
 ---
 
 
 #### 前提条件
 
-* 您已经在AppGallery Connect上创建项目，详细操作请参见[创建项目](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048)。
-* 您已经在AppGallery Connect上创建应用，详细操作请参见[创建应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)。
+* 您已经在AppGallery Connect上创建项目，详细操作请参见[创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)。
+* 您已经在AppGallery Connect上创建应用，详细操作请参见[创建应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。
 
 #### 开通认证服务
 
@@ -21,4 +21,4 @@ format: md
 
    ![](../img/agc-help-auth-enable-service-0000002271422405_1.png)
 
-   如需了解数据处理位置更多设置场景和对数据处理位置进行管理，请参见[管理数据处理位置](https://developer.huawei.com/consumer/cn/doc/app/agc-help-data-location-0000002277923065)。
+   如需了解数据处理位置更多设置场景和对数据处理位置进行管理，请参见[管理数据处理位置](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-data-location-0000002277923065)。

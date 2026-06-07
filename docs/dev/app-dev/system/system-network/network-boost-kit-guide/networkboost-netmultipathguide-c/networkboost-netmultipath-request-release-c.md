@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "多网发起和释放(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-request-release-c
+original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-request-release-c
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
 * 主卡和副卡并发需要开启智能切换上网卡开关，并依赖主卡和副卡驻留网络的频点，若不满足并发条件（例如主副卡插入同运营商卡场景），多网发起会失败。
 * 受限于硬件，部分设备不支持双卡场景下的多网并发，开发者可通过错误码进行排查。
-* 如果要使用的传输协议接口不支持指定网络，则新发起的网络无法使用。如[HTTP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request)当前只支持默认网络传输，不支持指定网络，所以无法使用。
+* 如果要使用的传输协议接口不支持指定网络，则新发起的网络无法使用。如[HTTP](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request)当前只支持默认网络传输，不支持指定网络，所以无法使用。
 
 ## 开发前准备
 
@@ -39,7 +39,7 @@ format: md
    #include "NetworkBoostKit/network_boost_handover.h"
    #include <cstdio>
    ```
-2. CMakeLists.txt中添加以下lib，具体请见[C API开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-preparations#c-api开发准备)。
+2. CMakeLists.txt中添加以下lib，具体请见[C API开发准备](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-preparations#c-api开发准备)。
 
    ```
    libnetwork_boost.so

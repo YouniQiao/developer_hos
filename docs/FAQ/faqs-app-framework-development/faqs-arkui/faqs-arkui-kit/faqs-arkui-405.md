@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation路由，如何快速实现RouterMap注册转为wrapBuilder注册"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-405
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-405
 ---
 
 
@@ -11,6 +11,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 当路由需要跳转到指定路由时，路由模块完成对指定路由模块的动态导入，并完成路由跳转。
 
-参考[动态路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-router-to-navigation#动态路由)中的方案一：自定义路由表。
+参考[动态路由](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-router-to-navigation#动态路由)中的方案一：自定义路由表。
 
 Navigation自动生成动态路由示例参考：[自动生成动态路由](https://gitcode.com/HarmonyOS-Cases/cases/blob/master/CommonAppDevelopment/common/routermodule/README_AUTO_GENERATE.md)。

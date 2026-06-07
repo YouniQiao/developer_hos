@@ -1,7 +1,7 @@
 ---
 title: 转场动效
 sidebar_label: 转场动效
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/transition-animation-0000001750078488
+original_url: /docs/design/general-design-basics/animation/transition
 format: md
 ---
 
@@ -112,4 +112,4 @@ format: md
 
 [](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/publicContent/011/111/111/0000000000011111111.20250814201337.75018043226762908678609951315657:20260530175044:2800:84EE01613D77F2729187BFF17DA33268844303E43E9F64DC5457275805D05CED.mp4)
 
-转场动效相关内容的开发者文档，请参阅[转场动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-transition-overview)。
+转场动效相关内容的开发者文档，请参阅[转场动画](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-transition-overview)。

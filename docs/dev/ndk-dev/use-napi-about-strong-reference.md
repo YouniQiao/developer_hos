@@ -1,6 +1,6 @@
 ---
 title: "使用扩展的Node-API接口创建对ArkTS对象的强引用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-strong-reference
+original_url: /docs/dev/ndk-dev/use-napi-about-strong-reference
 format: md
 ---
 

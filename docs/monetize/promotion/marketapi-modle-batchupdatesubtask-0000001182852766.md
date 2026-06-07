@@ -1,7 +1,7 @@
 ---
 title: "BatchUpdateSubTaskAM"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-batchupdatesubtask-0000001182852766
+original_url: /docs/monetize/promotion/marketapi-modle-batchupdatesubtask-0000001182852766
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "构建元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/create-atomic-service
+original_url: /docs/dev/atomic-dev/ascf/use-ide/create-atomic-service
 format: md
 ---
 

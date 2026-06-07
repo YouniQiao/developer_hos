@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设备输入(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-input
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-input
 format: md
 ---
 
 
-在开发相机应用时，需要先[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。
+在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 相机应用可通过调用和控制相机设备，完成预览、拍照和录像等基础操作。
 
@@ -23,7 +23,7 @@ format: md
 
    ![](./img/4f884278.png)
 
-   在相机设备输入之前需要先完成相机管理，详细开发步骤请参考[相机管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-management)。
+   在相机设备输入之前需要先完成相机管理，详细开发步骤请参考[相机管理](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management)。
 2. 通过[cameraManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager)中的[createCameraInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#createcamerainput)方法创建相机输入流。
 
    ```

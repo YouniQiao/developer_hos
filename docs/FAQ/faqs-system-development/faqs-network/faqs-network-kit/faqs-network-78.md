@@ -1,7 +1,7 @@
 ---
 format: md
 title: "HTTP已有连接复用，如何使自定义DNS立即生效"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-78
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-78
 ---
 
 

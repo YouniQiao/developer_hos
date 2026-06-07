@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API实现跨语言交互开发流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process
+original_url: /docs/dev/ndk-dev/use-napi-process
 format: md
 ---
 
@@ -210,10 +210,10 @@ struct Index {
 
 ### 代码调试设备选择
 
-建议开发者优先使用真机进行代码调试，若无真机或者真机无权限则可使用模拟器进行调试，模拟器调试中遇到的问题详见[bm工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#bm工具错误码)
+建议开发者优先使用真机进行代码调试，若无真机或者真机无权限则可使用模拟器进行调试，模拟器调试中遇到的问题详见[bm工具](/docs/dev/app-dev/system/bm-tool#bm工具错误码)
 
 开发者不要使用预览器进行功能调试，预览器的主要功能是调试界面组件，若用于功能调试可能会出现如下报错：
 
 * TypeError: undefined is not callable
 
-部分常见错误用法已增加维测手段覆盖，详见[使用Node-API接口产生的异常日志/崩溃分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-crash)。
+部分常见错误用法已增加维测手段覆盖，详见[使用Node-API接口产生的异常日志/崩溃分析](/docs/dev/ndk-dev/use-napi-about-crash)。

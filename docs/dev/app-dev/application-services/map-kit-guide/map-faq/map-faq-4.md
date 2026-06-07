@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设置地图Logo始终显示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-4
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-4
 format: md
 ---
 

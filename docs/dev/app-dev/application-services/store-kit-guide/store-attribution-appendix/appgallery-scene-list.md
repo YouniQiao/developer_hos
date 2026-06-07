@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "场景值"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-scene-list
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-scene-list
 format: md
 ---
 

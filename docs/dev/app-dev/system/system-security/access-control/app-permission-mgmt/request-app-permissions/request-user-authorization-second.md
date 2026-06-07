@@ -1,11 +1,11 @@
 ---
 title: "再次向用户申请授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization-second
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization-second
 format: md
 ---
 
 
-当应用通过[requestPermissionsFromUser()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissionsfromuser9)拉起弹框[请求用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)时，如果用户拒绝授权，应用将无法再次通过requestPermissionsFromUser()拉起弹框。用户需要在系统设置中手动授权。
+当应用通过[requestPermissionsFromUser()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissionsfromuser9)拉起弹框[请求用户授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)时，如果用户拒绝授权，应用将无法再次通过requestPermissionsFromUser()拉起弹框。用户需要在系统设置中手动授权。
 
 在“设置”应用中的路径如下：
 

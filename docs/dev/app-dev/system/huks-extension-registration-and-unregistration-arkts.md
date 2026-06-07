@@ -1,6 +1,6 @@
 ---
 title: "注册/注销Provider(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-registration-and-unregistration-arkts
+original_url: /docs/dev/app-dev/system/huks-extension-registration-and-unregistration-arkts
 format: md
 ---
 

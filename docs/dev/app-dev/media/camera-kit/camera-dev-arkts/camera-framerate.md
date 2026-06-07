@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "动态调整预览帧率(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-framerate
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-framerate
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 ![](./img/7b6f5b1c.png)
 
-与普通的[预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preview)流程相比，动态调整预览帧率的注意点如图上标识：
+与普通的[预览](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preview)流程相比，动态调整预览帧率的注意点如图上标识：
 
 1. 调用[createSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#createsession11)创建会话（Session）时，需要指定模式为NORMAL\_PHOTO或NORMAL\_VIDEO。
 
@@ -34,7 +34,7 @@ format: md
    * 设置当前帧率
    * 获取当前生效的帧率设置
 
-如何配置会话（Session）、释放资源，请参考[会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management) > [预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preview)，或是[完整流程](#完整流程)示例。
+如何配置会话（Session）、释放资源，请参考[会话管理](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management) > [预览](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preview)，或是[完整流程](#完整流程)示例。
 
 ## 导入依赖
 
@@ -47,7 +47,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 ## 创建Session会话并指定模式
 
-相机使用预览等功能前，均需完成[相机管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-management)和创建相机会话，调用[CameraManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager)的[createSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#createsession11)创建一个会话。
+相机使用预览等功能前，均需完成[相机管理](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management)和创建相机会话，调用[CameraManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager)的[createSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#createsession11)创建一个会话。
 
 创建会话时需指定[SceneMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#scenemode11)为NORMAL\_PHOTO或NORMAL\_VIDEO，创建出的Session处于拍照或录像模式。
 

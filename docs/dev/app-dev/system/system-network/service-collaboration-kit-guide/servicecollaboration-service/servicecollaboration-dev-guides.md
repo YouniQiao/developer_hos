@@ -1,6 +1,6 @@
 ---
 title: "跨设备互通开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-dev-guides
+original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service/servicecollaboration-dev-guides
 format: md
 ---
 
@@ -51,7 +51,7 @@ format: md
    在调用[createCollaborationServiceMenuItems](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-collaborationservice#createcollaborationservicemenuitems)前，需了解：
 
    * 该方法需要在[Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu)组件内调用。
-   * 该方法是自定义构建函数，您在使用前需要先了解[@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)。
+   * 该方法是自定义构建函数，您在使用前需要先了解[@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)。
 3. 传入Array类型的[CollaborationServiceFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-collaborationservice#collaborationservicefilter)枚举值即可使用对应能力，目前支持ALL、TAKE\_PHOTO、SCAN\_DOCUMENT、IMAGE\_PICKER、VIDEO\_PICKER和IMAGE\_VIDEO\_PICKER。
 
    ALL为预留值，匹配跨端拍照、文档扫描和图库选择器，功能将在后续拓展，TAKE\_PHOTO匹配跨设备拍照能力，SCAN\_DOCUMENT匹配跨设备扫描能力，IMAGE\_PICKER匹配跨设备图库能力，VIDEO\_PICKER匹配视频选择器，IMAGE\_VIDEO\_PICKER匹配图片和视频选择器。

@@ -1,7 +1,7 @@
 ---
 title: "网格化-水波纹&lt;MeshImage-SinMotion&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/meshimage-sinmotion-0000001074662024
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/meshimage-0000001074342444/meshimage-sinmotion-0000001074662024
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 动效概述
 
-可实现局部水波荡漾、迎风飘舞等效果。局部水波荡漾、飘舞区域与[局部位移区域](https://developer.huawei.com/consumer/cn/doc/content/meshimage-translation-0000001074502054#section1451516242434)计算方法一致。
+可实现局部水波荡漾、迎风飘舞等效果。局部水波荡漾、飘舞区域与[局部位移区域](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/meshimage-0000001074342444/meshimage-translation-0000001074502054#section1451516242434)计算方法一致。
 
 ## 场景举例
 
@@ -29,7 +29,7 @@ format: md
 
 * <strong>MeshImage</strong> <strong>参数说明</strong>
 
-详见[MeshImage参数说明](https://developer.huawei.com/consumer/cn/doc/content/meshimage-translation-0000001074502054#section8176183645319)。
+详见[MeshImage参数说明](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/meshimage-0000001074342444/meshimage-translation-0000001074502054#section8176183645319)。
 
 * <strong>SinMotion</strong> <strong>参数说明</strong>
 

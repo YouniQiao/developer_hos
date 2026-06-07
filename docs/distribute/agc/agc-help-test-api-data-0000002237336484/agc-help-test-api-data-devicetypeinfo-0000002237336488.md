@@ -1,6 +1,6 @@
 ---
 title: "DeviceTypeInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-devicetypeinfo-0000002237336488
+original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-devicetypeinfo-0000002237336488
 format: md
 ---
 

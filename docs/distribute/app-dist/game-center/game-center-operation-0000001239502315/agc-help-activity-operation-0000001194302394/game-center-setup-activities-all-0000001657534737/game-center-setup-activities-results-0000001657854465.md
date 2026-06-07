@@ -1,7 +1,7 @@
 ---
 title: "查看活动效果"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-results-0000001657854465
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-results-0000001657854465
 format: md
 ---
 

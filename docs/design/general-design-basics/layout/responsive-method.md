@@ -1,7 +1,7 @@
 ---
 title: 响应式布局方法
 sidebar_label: 响应式布局方法
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-responsive-layout-method-0000001795698449
+original_url: /docs/design/general-design-basics/layout/responsive-method
 format: md
 ---
 
@@ -104,4 +104,4 @@ format: md
 
 ### 开发文档
 
-[响应式布局能力](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)
+[响应式布局能力](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)

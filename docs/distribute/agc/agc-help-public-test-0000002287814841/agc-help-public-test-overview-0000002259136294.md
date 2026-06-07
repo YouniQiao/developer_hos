@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-public-test-overview-0000002259136294
+original_url: /docs/distribute/agc/agc-help-public-test-0000002287814841/agc-help-public-test-overview-0000002259136294
 format: md
 ---
 

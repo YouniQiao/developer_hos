@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过延迟链接跳转至应用详情页"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink
+original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink
 format: md
 ---
 
@@ -29,13 +29,13 @@ format: md
 
 ## 前提条件
 
-1. 目标方应用已[配置App Linking应用链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp)。
+1. 目标方应用已[配置App Linking应用链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp)。
 2. 该能力目前仅适用于5.0.3(15)及以上版本的HarmonyOS应用。
 
 ## 约束与限制
 
 * 支持Phone、Tablet设备。并且从6.1.0(23)版本开始，新增支持PC/2in1设备。
-* 只能获取通过App Linking域名校验的应用链接，请参见[在AGC为应用创建关联的网址域名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在agc为应用创建关联的网址域名)。建议在首次启动签署隐私协议后再调用延迟链接接口，确保此时域名校验通过。
+* 只能获取通过App Linking域名校验的应用链接，请参见[在AGC为应用创建关联的网址域名](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在agc为应用创建关联的网址域名)。建议在首次启动签署隐私协议后再调用延迟链接接口，确保此时域名校验通过。
 
 ## 开发步骤
 

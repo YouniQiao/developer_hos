@@ -1,6 +1,6 @@
 ---
 title: "错误码"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-api-errorcode-0000002382718897
+original_url: /docs/distribute/agc/agc-help-beacon-regist-by-api-0000002382718889/agc-help-beacon-api-errorcode-0000002382718897
 format: md
 ---
 

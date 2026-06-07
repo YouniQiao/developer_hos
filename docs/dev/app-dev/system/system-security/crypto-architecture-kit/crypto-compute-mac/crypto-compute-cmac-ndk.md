@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "消息认证码计算CMAC(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-cmac-ndk
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-cmac-ndk
 format: md
 ---
 

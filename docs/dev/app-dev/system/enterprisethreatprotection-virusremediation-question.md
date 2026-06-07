@@ -1,6 +1,6 @@
 ---
 title: "Enterprise Threat Protection Kit常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-question
+original_url: /docs/dev/app-dev/system/enterprisethreatprotection-virusremediation-question
 format: md
 ---
 
@@ -13,5 +13,5 @@ DevEco Studio编译不通过，报错：install failed due to grant request perm
 
 **解决措施**
 
-1. 请检查开发环境配置是否符合[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-prepare)文档中列出的要求。
+1. 请检查开发环境配置是否符合[开发准备](/docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/enterprisethreatprotection-prepare)文档中列出的要求。
 2. 如还未解决，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。

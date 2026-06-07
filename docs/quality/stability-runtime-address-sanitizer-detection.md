@@ -1,6 +1,6 @@
 ---
 title: "地址越界类问题检测方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-runtime-address-sanitizer-detection
+original_url: /docs/quality/stability-runtime-address-sanitizer-detection
 format: md
 ---
 
@@ -13,8 +13,8 @@ format: md
 
 ## 检测原理与使用方法
 
-可参看[地址越界类问题检测](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ram-detection)。
+可参看[地址越界类问题检测](/docs/quality/stability-ram-detection)。
 
 ## 订阅地址越界事件
 
-发生地址越界事件后，可参看[地址越界事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-events)。
+发生地址越界事件后，可参看[地址越界事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events)。

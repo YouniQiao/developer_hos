@@ -1,7 +1,7 @@
 ---
 title: 手势
 sidebar_label: 手势
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touchscreen-0000001928273206
+original_url: /docs/design/hmi/touchscreen
 format: md
 ---
 

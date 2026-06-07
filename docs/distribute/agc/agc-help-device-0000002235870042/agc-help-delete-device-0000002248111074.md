@@ -1,6 +1,6 @@
 ---
 title: "删除设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-delete-device-0000002248111074
+original_url: /docs/distribute/agc/agc-help-device-0000002235870042/agc-help-delete-device-0000002248111074
 format: md
 ---
 
@@ -26,4 +26,4 @@ format: md
    * 如设备在添加后一年内被删除，该设备将置灰显示且不再可用，效果如下图所示，但仍占用此一年的设备名额。设备添加时间满一年后，该已被删除的设备将被自动从列表中清除，清除后该设备不再占用设备名额。如设备在添加一年后被删除，该设备将直接从列表中清除，也不再占用设备名额。
 
      ![](../img/agc-help-delete-device-0000002248111074_3.png)
-   * 如您想重新添加在一年内被删除的、置灰显示的设备，可以通过[添加单个设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-device-0000002283189937#ZH-CN_TOPIC_0000002283189937__li116281013114813)或者[批量导入设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-device-0000002283189937#ZH-CN_TOPIC_0000002283189937__li142073458288)的方式，重新编辑新的设备名称，输入原UDID，即可添加成功。**需要注意的是，设备的注册时间依然以首次添加时间为准。**
+   * 如您想重新添加在一年内被删除的、置灰显示的设备，可以通过[添加单个设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937#ZH-CN_TOPIC_0000002283189937__li116281013114813)或者[批量导入设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937#ZH-CN_TOPIC_0000002283189937__li142073458288)的方式，重新编辑新的设备名称，输入原UDID，即可添加成功。**需要注意的是，设备的注册时间依然以首次添加时间为准。**

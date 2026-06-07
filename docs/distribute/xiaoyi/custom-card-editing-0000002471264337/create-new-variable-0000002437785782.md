@@ -1,7 +1,7 @@
 ---
 title: "编辑变量"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/create-new-variable-0000002437785782
+original_url: /docs/distribute/xiaoyi/custom-card-editing-0000002471264337/create-new-variable-0000002437785782
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 画布中组件可以绑定创建的变量用于预览，真实的值是在卡片模板配置中由插件或工作流输出参数的值决定。
 
-变量的类型有String、Number、Array、Object、Object（聚合链接）和Boolean，Object（聚合链接）的配置方式参见[跳转](https://developer.huawei.com/consumer/cn/doc/service/multi-jump-0000002485633457)。
+变量的类型有String、Number、Array、Object、Object（聚合链接）和Boolean，Object（聚合链接）的配置方式参见[跳转](/docs/distribute/xiaoyi/additional-information-0000002471264341/multi-jump-0000002485633457)。
 
 ![](./img/925e6d91609f.png "点击放大")
 

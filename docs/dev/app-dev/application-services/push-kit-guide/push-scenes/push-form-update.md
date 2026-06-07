@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "推送卡片刷新消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-form-update
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-form-update
 format: md
 ---
 
 
 ## 场景介绍
 
-如今衣食住行娱乐影音应用占据了大多数人的手机，一部手机可以满足日常大多需求，但对需要经常查看或进行简单操作的应用来说，总需要用户点开应用体验较繁琐。针对此种场景，HarmonyOS提供了[Form Kit（卡片开发服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/form-kit)，您可以将应用的重要信息或操作前置到卡片，以达到服务直达、减少体验层级的目的。
+如今衣食住行娱乐影音应用占据了大多数人的手机，一部手机可以满足日常大多需求，但对需要经常查看或进行简单操作的应用来说，总需要用户点开应用体验较繁琐。针对此种场景，HarmonyOS提供了[Form Kit（卡片开发服务）](/docs/dev/app-dev/application-framework/form-kit)，您可以将应用的重要信息或操作前置到卡片，以达到服务直达、减少体验层级的目的。
 
 面对需要实时更新信息的应用卡片，Push Kit向开发者提供了卡片刷新服务。应用通过集成Push Kit后获取Push Token，基于Push Kit的系统级通道，便可以在合适场景向用户即时推送卡片内容，从而提升用户的感知度和活跃度。
 
@@ -39,7 +39,7 @@ format: md
 
 推送卡片刷新消息前，您需先完成本地卡片的开发。
 
-1. 参见[创建一个ArkTS卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)，完成本地服务卡片的创建。
+1. 参见[创建一个ArkTS卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)，完成本地服务卡片的创建。
 2. 在项目模块级别下的**src/main/resources/base/profile/form\_config.json**中配置dataProxyEnabled字段为**true**，开启卡片代理刷新功能。
 
    ```
@@ -105,7 +105,7 @@ format: md
      }
    }
    ```
-4. 卡片页面文件（**下以src/main/ets/widget/pages/WidgetCard.ets为例**）中，创建[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)变量并与[@Entry](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#entry)装饰器绑定，使用[@LocalStorageProp](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#localstorageprop)装饰器创建key-value的变量。
+4. 卡片页面文件（**下以src/main/ets/widget/pages/WidgetCard.ets为例**）中，创建[LocalStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage)变量并与[@Entry](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#entry)装饰器绑定，使用[@LocalStorageProp](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage#localstorageprop)装饰器创建key-value的变量。
 
    本文创建了formId、text和image三个变量，对应的key为**formId**、**text\_key**和**image\_key**，需要注意的是卡片页面布局中image对应的组件是Image图片组件，图片组件传递的变量必须以**memory://** 开头。
 
@@ -160,7 +160,7 @@ format: md
 
 ### 推送卡片刷新消息
 
-1. 参见指导[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
+1. 参见指导[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)。
 2. （可选）建议您将**formId**、**pushToken**等信息上报到应用服务端，用于向应用发送卡片刷新消息。
 
    ```
@@ -254,5 +254,5 @@ format: md
 
      支持图片的格式为PNG、JPG、JPEG、WEBP，图片文件最大为512KB，若超过则图片不展示。
    * require：图片刷新策略控制，“0”表示如果图片下载失败，仅刷新文字；“1”表示如果图片下载失败，则不进行刷新操作。
-   * token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)获取。
+   * token：Push Token，可参见[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)获取。
    * testMessage：（选填）测试消息标识，true表示测试消息。每个项目每天限制发送1000条测试消息，单次推送仅能发送一个Token。详情请参见[testMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#pushoptions)。

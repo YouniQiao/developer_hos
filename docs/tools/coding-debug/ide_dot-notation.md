@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/dot-notation"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_dot-notation
+original_url: /docs/tools/coding-debug/ide_dot-notation
 format: md
 ---
 

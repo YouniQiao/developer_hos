@@ -1,6 +1,6 @@
 ---
 title: "扩展认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-eap
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-eap
 format: md
 ---
 

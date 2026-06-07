@@ -1,6 +1,6 @@
 ---
 title: "自定义绘制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-draw
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-user-defined-draw
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](./img/90dce4a0.png)
 
-* ArkTS的自定义绘制能力和示例请参考[自定义绘制修改器 (DrawModifier)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-drawmodifier)。
+* ArkTS的自定义绘制能力和示例请参考[自定义绘制修改器 (DrawModifier)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-draw/arkts-user-defined-extension-drawmodifier)。
 
 ## 自定义绘制层级
 
@@ -33,7 +33,7 @@ format: md
 
 本示例通过注册内容层绘制事件ARKUI\_NODE\_CUSTOM\_EVENT\_ON\_DRAW在节点内容层绘制一条从左上区域到右下区域的对角线段，效果图如下。
 
-以下场景基于[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)章节，创建前置工程。内容绘制的完整示例请参考[NativeDrawPageSample](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NativeType/NativeDrawPageSample)。
+以下场景基于[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)章节，创建前置工程。内容绘制的完整示例请参考[NativeDrawPageSample](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NativeType/NativeDrawPageSample)。
 
 ![](./img/031371dc.jpg)
 
@@ -113,13 +113,13 @@ format: md
 
 ### 多层级绘制示例
 
-以下示例创建了一个自定义绘制组件，实现自定义矩形绘制、自定义绘制内容前景层和内容背景层，并支持使用[自定义布局容器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-custom-components#自定义布局容器)进行布局排布。完整示例请参考[NativeNodeUtilsSample](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NativeType/NativeNodeUtilsSample)。
+以下示例创建了一个自定义绘制组件，实现自定义矩形绘制、自定义绘制内容前景层和内容背景层，并支持使用[自定义布局容器](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-custom-components#自定义布局容器)进行布局排布。完整示例请参考[NativeNodeUtilsSample](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NativeType/NativeNodeUtilsSample)。
 
 ![](./img/3da7cd59.jpg)
 
 图中深蓝矩形为drawFront内容前景层，浅蓝色矩形为drawContent内容层，白色矩形为drawBehind内容背景层。三层的叠加关系用于验证多层级绘制顺序是否符合预期。
 
-1. 按照[自定义布局容器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-custom-components#自定义布局容器)章节准备前置工程。
+1. 按照[自定义布局容器](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-custom-components#自定义布局容器)章节准备前置工程。
 2. 创建自定义绘制组件封装对象。
 
    ```

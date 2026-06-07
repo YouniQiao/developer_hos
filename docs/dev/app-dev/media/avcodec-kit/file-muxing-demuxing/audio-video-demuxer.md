@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "媒体数据解析"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer
+original_url: /docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 当前支持的数据输入类型有：远程连接(http协议)和文件描述符(fd)。
 
-当前支持的解封装格式请参考[AVCodec支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#媒体数据解析)。
+当前支持的解封装格式请参考[AVCodec支持的格式](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#媒体数据解析)。
 
 **适用场景**：
 
@@ -30,8 +30,8 @@ format: md
 
 ![](./img/636c672b.png)
 
-* 调用解封装能力解析网络播放路径，需要[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：ohos.permission.INTERNET
-* 调用解封装能力解析本地文件，需要[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)：ohos.permission.READ\_MEDIA
+* 调用解封装能力解析网络播放路径，需要[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)：ohos.permission.INTERNET
+* 调用解封装能力解析本地文件，需要[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)：ohos.permission.READ\_MEDIA
 * 如果使用ResourceManager.getRawFd打开HAP资源文件描述符，使用方法请参考[ResourceManager API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getrawfd9)
 
 ### 在 CMake 脚本中链接动态库
@@ -63,7 +63,7 @@ target_link_libraries(sample PUBLIC libnative_media_core.so)
    ```
 2. 创建资源管理实例。
 
-   开发者HAP中使用open获取fd时，filepath需要转换为[沙箱路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)，才能获取沙盒资源。
+   开发者HAP中使用open获取fd时，filepath需要转换为[沙箱路径](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)，才能获取沙盒资源。
 
    ```
    // 创建文件操作符 fd，打开时对文件实例必须有读权限（filePath 为待解封装文件路径，需预置文件，保证路径指向的文件存在）。
@@ -182,7 +182,7 @@ target_link_libraries(sample PUBLIC libnative_media_core.so)
    OH_AVDemuxer_GetMediaKeySystemInfo(demuxer, &mediaKeySystemInfo);
    ```
 
-   在获取、解析DRM信息后，需创建对应DRM解决方案的[MediaKeySystem、MediaKeySession](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-c-dev-guide)，获取DRM许可证等。并根据需要设置音频解密配置(详见[音频解码开发指南开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-decoding#开发步骤)第4步)、设置视频解密配置（详见[视频解码开发指南开发步骤Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)第5步或[Buffer模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#buffer模式)第4步），实现DRM内容解密。
+   在获取、解析DRM信息后，需创建对应DRM解决方案的[MediaKeySystem、MediaKeySession](/docs/dev/app-dev/media/drm-kit/drm-c-dev-guide)，获取DRM许可证等。并根据需要设置音频解密配置(详见[音频解码开发指南开发步骤](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-decoding#开发步骤)第4步)、设置视频解密配置（详见[视频解码开发指南开发步骤Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)第5步或[Buffer模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#buffer模式)第4步），实现DRM内容解密。
 5. 获取文件信息。
 
    ```

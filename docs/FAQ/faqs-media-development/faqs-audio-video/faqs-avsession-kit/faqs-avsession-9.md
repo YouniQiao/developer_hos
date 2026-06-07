@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用内如何进行输出设备的选择"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-9
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-9
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[使用通话设备切换组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-switch-call-devices)
+[使用通话设备切换组件](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/using-switch-call-devices)

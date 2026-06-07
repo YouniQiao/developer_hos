@@ -1,7 +1,7 @@
 ---
 title: "内存分析介绍"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-session-allocations-memory
+original_url: /docs/tools/coding-debug/ide-insight-session-allocations-memory
 format: md
 ---
 

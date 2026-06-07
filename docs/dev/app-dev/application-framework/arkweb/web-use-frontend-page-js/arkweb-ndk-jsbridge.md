@@ -1,13 +1,13 @@
 ---
 title: "应用侧与前端页面的相互调用(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-ndk-jsbridge
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/arkweb-ndk-jsbridge
 format: md
 ---
 
 
 本指导适用于ArkWeb应用侧与前端网页通信场景，开发者可根据应用架构选择使用ArkWeb Native接口完成业务通信机制（以下简称Native JSBridge）。
 
-针对JSBridge进行性能优化可参考[JSBridge优化解决方案](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-develop-optimization#section58781855115017)
+针对JSBridge进行性能优化可参考[JSBridge优化解决方案](/docs/quality/web-develop-optimization#section58781855115017)
 
 ## 适用的应用架构
 

@@ -1,6 +1,6 @@
 ---
 title: "角色与权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-rolepermission-0000002271930352
+original_url: /docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-rolepermission-0000002271930352
 format: md
 ---
 

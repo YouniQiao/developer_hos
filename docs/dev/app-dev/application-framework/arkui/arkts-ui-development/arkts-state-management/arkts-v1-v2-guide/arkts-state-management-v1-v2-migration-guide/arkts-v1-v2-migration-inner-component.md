@@ -1,6 +1,6 @@
 ---
 title: "组件内状态变量迁移"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-inner-component
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-inner-component
 format: md
 ---
 
@@ -9,14 +9,14 @@ format: md
 
 | V1装饰器名 | V2装饰器名 |
 | --- | --- |
-| [@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state) | 无外部初始化：[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)  外部初始化一次：[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)/[@Once](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-once) |
-| [@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop) | [@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param) |
-| [@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link) | [@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)/[@Event](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-event) |
-| [@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink) | [@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)/[@Event](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-event) |
-| [@Provide](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume) | [@Provider](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer) |
-| [@Consume](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume) | [@Consumer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer) |
-| [@Watch](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch) | [@Monitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor) |
-| 无计算属性相关能力，需要重复计算 | [@Computed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-computed) |
+| [@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state) | 无外部初始化：[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)  外部初始化一次：[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)/[@Once](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-once) |
+| [@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop) | [@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param) |
+| [@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link) | [@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)/[@Event](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-event) |
+| [@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink) | [@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)/[@Event](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-event) |
+| [@Provide](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume) | [@Provider](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer) |
+| [@Consume](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume) | [@Consumer](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer) |
+| [@Watch](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch) | [@Monitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor) |
+| 无计算属性相关能力，需要重复计算 | [@Computed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-computed) |
 
 ## 各装饰器迁移示例
 
@@ -670,7 +670,7 @@ V1的@Provide和@Consume与V2的@Provider和@Consumer定位和作用类似，基
 
 * V1中@Provide和@Consume在没有指定alias的情况下，可以直接使用。V2中@Provider和@Consumer是标准装饰器，且参数可选，所以不管有无指定alias后面需要必须跟随“()”。
 * alias和属性名匹配规则：V1中，@Provide和@Consume可以通过alias或属性名匹配；V2中，alias是唯一的匹配key，指定alias后只能通过alias匹配。
-* 本地初始化支持：API version 20以前，@Consume不允许本地初始化，必须依赖父组件；从API version 20开始，@Consume支持本地初始化，当找不到对应的@Provide时使用本地默认值，详见[@Consume装饰的变量支持设置默认值](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume#consume装饰的变量支持设置默认值)；V2中，@Consumer支持本地初始化，当找不到对应的@Provider时使用本地默认值。
+* 本地初始化支持：API version 20以前，@Consume不允许本地初始化，必须依赖父组件；从API version 20开始，@Consume支持本地初始化，当找不到对应的@Provide时使用本地默认值，详见[@Consume装饰的变量支持设置默认值](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume#consume装饰的变量支持设置默认值)；V2中，@Consumer支持本地初始化，当找不到对应的@Provider时使用本地默认值。
 * 从父组件初始化：V1中，@Provide可以直接从父组件初始化；V2中，@Provider不支持外部初始化，需用@Param和@Once接受初始值并赋给@Provider。
 * 重载支持：V1中，@Provide默认不支持重载，需设置 allowOverride；V2中，@Provider默认支持重载，@Consumer会向上查找最近的@Provider。
 
@@ -1216,7 +1216,7 @@ struct Index {
 
 ### 双向绑定由$$迁移!!
 
-状态管理V1中，推荐使用[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)实现系统组件的双向绑定；在状态管理V2中，推荐使用[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding)语法糖统一处理双向绑定。
+状态管理V1中，推荐使用[$$](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-two-way-sync)实现系统组件的双向绑定；在状态管理V2中，推荐使用[!!](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-new-binding)语法糖统一处理双向绑定。
 
 ![](./img/9b2edc18.png)
 

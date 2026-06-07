@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "来电场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/incoming-calls
+original_url: /docs/dev/app-dev/application-services/call-kit-guide/incoming-calls
 format: md
 ---
 

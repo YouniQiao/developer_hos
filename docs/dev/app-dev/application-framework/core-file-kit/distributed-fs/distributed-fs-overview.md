@@ -1,6 +1,6 @@
 ---
 title: "分布式文件系统概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-fs-overview
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/distributed-fs/distributed-fs-overview
 format: md
 ---
 
@@ -22,7 +22,7 @@ hmdfs在分布式软总线动态组网的基础上，为网络上各个设备节
 
   ![](./img/3912ea2c.png)
 
-  [/data/storage/el2/distributedfiles/](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系) 目录下面的文件不能随意删除，详细注意事项请参考[跨设备文件共享和访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-access-across-devices)。
+  [/data/storage/el2/distributedfiles/](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系) 目录下面的文件不能随意删除，详细注意事项请参考[跨设备文件共享和访问](/docs/dev/app-dev/application-framework/core-file-kit/distributed-fs/file-access-across-devices)。
 
   + 缓存管理
     - 设备分布式组网后，hmdfs提供文件的互访能力，但不会主动进行文件数据传输和拷贝。如果应用需要将数据保存到本地，需主动拷贝。

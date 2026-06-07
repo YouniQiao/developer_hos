@@ -1,7 +1,7 @@
 ---
 title: "监测链接的宏参数说明"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-macro-para-0000001454518626
+original_url: /docs/monetize/promotion/marketapi-macro-para-0000001454518626
 format: md
 ---
 
@@ -21,8 +21,8 @@ https://www.example.com?taskId=\_\_AID\_\_&taskName=\_\_AID\_NAME\_\_&appid=\_\_
 
 | 参数 | 说明 |
 | --- | --- |
-| \_\_AID\_\_ | 任务ID。  可从[查询推广任务列表](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-queryadtasklist-0000001135467040)中获取。 |
-| \_\_AID\_NAME\_\_ | 任务名称。  可从[查询推广任务列表](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-queryadtasklist-0000001135467040)中获取。 |
+| \_\_AID\_\_ | 任务ID。  可从[查询推广任务列表](/docs/monetize/promotion/marketapi-queryadtasklist-0000001135467040)中获取。 |
+| \_\_AID\_NAME\_\_ | 任务名称。  可从[查询推广任务列表](/docs/monetize/promotion/marketapi-queryadtasklist-0000001135467040)中获取。 |
 | \_\_APP\_ID\_\_ | 应用ID。 |
 | \_\_APP\_NAME\_\_ | 应用名称。 |
 | \_\_CHANNEL\_NAME\_\_ | 智能分包名称。  若未开启智能分包直接返回空。 |

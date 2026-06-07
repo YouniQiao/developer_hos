@@ -1,6 +1,6 @@
 ---
 title: "地图组件标记点id重复导致功能异常"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-runtime-map-duplicate-marker-id
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-map-duplicate-marker-id
 format: md
 ---
 

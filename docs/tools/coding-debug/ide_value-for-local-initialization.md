@@ -1,7 +1,7 @@
 ---
 title: "@previewer/mandatory-default-value-for-local-initialization"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_value-for-local-initialization
+original_url: /docs/tools/coding-debug/ide_value-for-local-initialization
 format: md
 ---
 

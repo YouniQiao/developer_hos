@@ -1,6 +1,6 @@
 ---
 title: "性能分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-performance-analysis-0000002513339582
+original_url: /docs/dev/game-dev/games-quickgame-tool-performance-analysis-0000002513339582
 format: md
 ---
 

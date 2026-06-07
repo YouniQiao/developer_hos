@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "生态查询服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-erms
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-erms
 format: md
 ---
 
 
 ## 场景介绍
 
-生态查询服务可以为您提供应用/元服务运行信息的查询，当前提供场景值查询和广告验签信息查询。场景值是用来描述用户进入应用和元服务的路径。您可以通过本服务，来查询您的元服务/应用是通过何种场景被打开的（[场景值列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-scene-list#场景值列表)）。当前我们支持元服务的场景值查询，后续我们会继续公布应用场景值的查询。广告验签版本查询只在您的应用涉及广告场景下才会被使用到。您可以通过本查询服务，查询广告验签参数处理逻辑。
+生态查询服务可以为您提供应用/元服务运行信息的查询，当前提供场景值查询和广告验签信息查询。场景值是用来描述用户进入应用和元服务的路径。您可以通过本服务，来查询您的元服务/应用是通过何种场景被打开的（[场景值列表](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-scene-list#场景值列表)）。当前我们支持元服务的场景值查询，后续我们会继续公布应用场景值的查询。广告验签版本查询只在您的应用涉及广告场景下才会被使用到。您可以通过本查询服务，查询广告验签参数处理逻辑。
 
 ## 业务流程
 

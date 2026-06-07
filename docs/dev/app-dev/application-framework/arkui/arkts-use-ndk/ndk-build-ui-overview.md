@@ -1,11 +1,11 @@
 ---
 title: "基于NDK构建UI概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-ui-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-ui-overview
 format: md
 ---
 
 
-ArkUI开发框架提供了一系列[NDK接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview)，能够在应用中使用C和C++代码构建UI界面，这些接口包括UI组件创建、UI树操作、属性设置和事件监听等。面向通用UI界面开发场景，建议使用ArkTS代码和ArkUI声明式开发框架。然而，如果需要实现以下一个或多个目标，那么ArkUI NDK接口就能派上用场：
+ArkUI开发框架提供了一系列[NDK接口](/docs/dev/ndk-dev/ndk-development-overview)，能够在应用中使用C和C++代码构建UI界面，这些接口包括UI组件创建、UI树操作、属性设置和事件监听等。面向通用UI界面开发场景，建议使用ArkTS代码和ArkUI声明式开发框架。然而，如果需要实现以下一个或多个目标，那么ArkUI NDK接口就能派上用场：
 
 * 需要使用UI组件树控制接口来动态创建和挂载UI组件，方便实现自身UI开发框架的系统桥接。
 * 重复使用自己或其他开发者的C或C++UI库。
@@ -47,23 +47,23 @@ ArkUI NDK接口能力主要包括：
 
 | 任务 | 简介 |
 | --- | --- |
-| [NDK开发导读](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview) | 介绍NDK的适用场景与必备基础知识。 |
-| [接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page) | 介绍了如何将NDK接口开发的UI界面挂载到ArkTS主页面上进行渲染显示。 |
-| [添加事件响应](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-add-event-response) | 介绍了如何在Native侧添加事件监听和事件处理逻辑。 |
-| [使用动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-use-animation) | 介绍了如何在Native侧添加动画。 |
-| [构建布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-loading-long-list) | 介绍了如何在Native侧使用容器组件构建布局。 |
-| [构建弹窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-pop-up-window) | 介绍了如何使用弹窗接口构建UI界面进行弹窗显示。 |
-| [构建表单组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-form-components) | 介绍了如何使用NDK接口创建按钮、滑动条、开关、复选框和单选按钮等表单组件。 |
-| [构建自定义组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-custom-components) | 介绍了如何使用NDK接口能力构建自定义组件，实现差异化UI组件。 |
-| [嵌入ArkTS组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embed-arkts-components) | 介绍了如何在Native侧构建带有ArkTS组件的界面。 |
-| [构建渲染节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embed-render-components) | 介绍了如何在Native侧构建渲染节点。 |
-| [通过自绘制接入无障碍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-accessibility-xcomponent) | 介绍了自绘制机制接入的第三方UI框架平台，通过获取AccessibilityProvider如何对接系统无障碍。 |
-| [自定义绘制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-draw) | 介绍了如何使用自定义绘制能力，实现自定义内容的绘制。 |
-| [查询和操作自定义节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-node-query-operate) | 介绍了如何对自定义节点进行查询和操作。 |
-| [通过EmbeddedComponent拉起EmbeddedUIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embedded-component) | 介绍了如何在Native侧通过EmbeddedComponent拉起EmbeddedUIExtensionAbility。主要用于有进程隔离需求的模块化开发场景。 |
-| [使用文本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-styled-string) | 介绍了Text组件与字体引擎如何配套使用。 |
-| [在NDK中保证多实例场景功能正常](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-scope-task) | 介绍了如何在NDK多线程场景中保证接口调用的功能正常。 |
-| [使用多线程NDK接口并行化构建UI页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-on-multi-thread) | 介绍了如何使用NDK进行多线程UI组件创建。 |
+| [NDK开发导读](/docs/dev/ndk-dev/ndk-development-overview) | 介绍NDK的适用场景与必备基础知识。 |
+| [接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page) | 介绍了如何将NDK接口开发的UI界面挂载到ArkTS主页面上进行渲染显示。 |
+| [添加事件响应](/docs/dev/app-dev/application-framework/ndk-add-event-response) | 介绍了如何在Native侧添加事件监听和事件处理逻辑。 |
+| [使用动画](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-use-animation) | 介绍了如何在Native侧添加动画。 |
+| [构建布局](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-loading-long-list) | 介绍了如何在Native侧使用容器组件构建布局。 |
+| [构建弹窗](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-pop-up-window) | 介绍了如何使用弹窗接口构建UI界面进行弹窗显示。 |
+| [构建表单组件](/docs/dev/app-dev/application-framework/ndk-build-form-components) | 介绍了如何使用NDK接口创建按钮、滑动条、开关、复选框和单选按钮等表单组件。 |
+| [构建自定义组件](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-custom-components) | 介绍了如何使用NDK接口能力构建自定义组件，实现差异化UI组件。 |
+| [嵌入ArkTS组件](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embed-arkts-components) | 介绍了如何在Native侧构建带有ArkTS组件的界面。 |
+| [构建渲染节点](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embed-render-components) | 介绍了如何在Native侧构建渲染节点。 |
+| [通过自绘制接入无障碍](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-accessibility-xcomponent) | 介绍了自绘制机制接入的第三方UI框架平台，通过获取AccessibilityProvider如何对接系统无障碍。 |
+| [自定义绘制](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-user-defined-draw) | 介绍了如何使用自定义绘制能力，实现自定义内容的绘制。 |
+| [查询和操作自定义节点](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-node-query-operate) | 介绍了如何对自定义节点进行查询和操作。 |
+| [通过EmbeddedComponent拉起EmbeddedUIExtensionAbility](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embedded-component) | 介绍了如何在Native侧通过EmbeddedComponent拉起EmbeddedUIExtensionAbility。主要用于有进程隔离需求的模块化开发场景。 |
+| [使用文本](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk/ndk-styled-string) | 介绍了Text组件与字体引擎如何配套使用。 |
+| [在NDK中保证多实例场景功能正常](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-scope-task) | 介绍了如何在NDK多线程场景中保证接口调用的功能正常。 |
+| [使用多线程NDK接口并行化构建UI页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-on-multi-thread) | 介绍了如何使用NDK进行多线程UI组件创建。 |
 
 ## 注意事项
 

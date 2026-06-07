@@ -1,6 +1,6 @@
 ---
 title: "内容修改器 (ContentModifier)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-attributes-content-modifier
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-common-attributes-content-modifier
 format: md
 ---
 

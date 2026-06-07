@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用picker管理联系人"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-addcontactviaui
+original_url: /docs/dev/app-dev/application-services/contacts-kit/contacts-addcontactviaui
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "管理团队账号"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129
+original_url: /docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 #### 添加成员账号
 
-账号持有者或其他有“管理用户与访问”权限的成员（详见[角色与权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-rolepermission-0000002271930352)）可以向团队中添加成员，并赋予成员账号相关角色和权限，共同进行业务管理。
+账号持有者或其他有“管理用户与访问”权限的成员（详见[角色与权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-rolepermission-0000002271930352)）可以向团队中添加成员，并赋予成员账号相关角色和权限，共同进行业务管理。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“用户与访问”。
 2. 选择“用户 > 所有用户”，点击右侧“新增”。
@@ -49,7 +49,7 @@ format: md
 4. 自定义“分析与报告”权限。
 
    仅支持对“分析与报告”权限组下的数据权限进行自定义操作，角色预置的其他权限组下的权限皆不可变更。
-   1. 点击“查看权限”，可查看已分配角色具备的基础权限，角色和权限的对应关系请参见[角色与权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-rolepermission-0000002271930352)。
+   1. 点击“查看权限”，可查看已分配角色具备的基础权限，角色和权限的对应关系请参见[角色与权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-rolepermission-0000002271930352)。
    2. 取消勾选或者勾选“分析与报告”下的权限，自定义角色的数据权限。
 
       若角色有预置的“分析与报告”权限，则默认全部勾选。您可以根据角色的实际职能保留或剔除权限，以实现更灵活更清晰的数据权限配置。

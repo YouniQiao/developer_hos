@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设置地图元素压盖顺序"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-display-order
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-display-order
 format: md
 ---
 

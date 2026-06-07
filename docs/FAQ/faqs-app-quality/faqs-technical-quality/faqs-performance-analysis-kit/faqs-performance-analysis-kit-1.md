@@ -1,7 +1,7 @@
 ---
 format: md
 title: "hilog日志如何落盘存储"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-1
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-1
 ---
 
 

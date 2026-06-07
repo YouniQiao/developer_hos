@@ -1,16 +1,16 @@
 ---
 title: "使用Text组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-use-text-component
+original_url: /docs/dev/app-dev/application-framework/ndk-use-text-component
 format: md
 ---
 
 
-[ArkUI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-overview)开发框架在[NDK](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview)接口中提供了Text组件，用于显示文本内容。Text组件支持丰富的样式设置，包括字体、颜色、对齐方式、文字效果等，还支持多种子组件，如[Span](#添加span)、[ImageSpan](#添加imagespan)、[StyledString](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-styled-string)等，用于实现复杂的文本显示效果。
+[ArkUI](/docs/dev/app-dev/application-framework/arkui/arkui-overview)开发框架在[NDK](/docs/dev/ndk-dev/ndk-development-overview)接口中提供了Text组件，用于显示文本内容。Text组件支持丰富的样式设置，包括字体、颜色、对齐方式、文字效果等，还支持多种子组件，如[Span](#添加span)、[ImageSpan](#添加imagespan)、[StyledString](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk/ndk-styled-string)等，用于实现复杂的文本显示效果。
 
 ![](./img/c014ba98.png)
 
 * 本篇示例仅提供核心接口的调用方法，完整的示例工程请参考[native\_node\_sample](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/native_node_sample)。
-* 开发前需要先接入ArkTS页面，具体请参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)。
+* 开发前需要先接入ArkTS页面，具体请参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)。
 
 ## 创建文本组件
 
@@ -406,7 +406,7 @@ void setText6(ArkUI_NodeHandle &text6)
 
 ### 使用StyledString
 
-StyledString提供了更高级的文本排版功能，支持为文本的不同部分设置不同样式，包括字体大小、颜色、占位符等。关于StyledString的详细使用方法，请参考[使用属性字符串](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-styled-string)文档。
+StyledString提供了更高级的文本排版功能，支持为文本的不同部分设置不同样式，包括字体大小、颜色、占位符等。关于StyledString的详细使用方法，请参考[使用属性字符串](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk/ndk-styled-string)文档。
 
 ## 设置高级文本效果
 

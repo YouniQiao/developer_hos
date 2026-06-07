@@ -1,7 +1,7 @@
 ---
 title: "插件参数设置"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/plugin-parameter-setting-0000002493084596
+original_url: /docs/distribute/xiaoyi/plug-in-2-0000002471344133/plugin-parameter-setting-0000002493084596
 format: md
 ---
 
@@ -26,7 +26,7 @@ Push消息通知效果：
 
 ## 执行设置（端插件）
 
-【执行类型】：分为前台执行和后台执行两种类型，在插件配置界面修改，详情参考[端插件配置](https://developer.huawei.com/consumer/cn/doc/service/endpoint-plugin-configuration-0000002437785762)。
+【执行类型】：分为前台执行和后台执行两种类型，在插件配置界面修改，详情参考[端插件配置](/docs/distribute/xiaoyi/end-plug-in-0000002471264313/endpoint-plugin-configuration-0000002437785762)。
 
 * 前台执行：拉起端侧应用到前台页面。
 * 后台执行：后台执行该工具，后续使用该工具的时候，可以绑定卡片把返回的数据以卡片形式呈现出来。

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决依赖的版本冲突问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-43
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-43
 ---
 
 

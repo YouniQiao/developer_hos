@@ -1,7 +1,7 @@
 ---
 title: "投放管理"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-management-trafficking-0000001379958189
+original_url: /docs/monetize/promotion/bpos-delivery-task-management-trafficking-0000001379958189
 format: md
 ---
 

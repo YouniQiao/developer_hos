@@ -1,6 +1,6 @@
 ---
 title: "常驻任务并发场景简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resident-task-overview
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/resident-task/resident-task-overview
 format: md
 ---
 

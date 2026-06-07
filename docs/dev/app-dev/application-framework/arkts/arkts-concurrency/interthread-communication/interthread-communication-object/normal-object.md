@@ -1,6 +1,6 @@
 ---
 title: "普通对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/normal-object
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/normal-object
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](./img/b6a51d26.png)
 
-普通类实例对象跨线程通过拷贝形式传递，只能传递数据，类方法会丢失。使用[@Sendable装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable装饰器)标识为Sendable类后，类实例对象跨线程传递后，可携带类方法。
+普通类实例对象跨线程通过拷贝形式传递，只能传递数据，类方法会丢失。使用[@Sendable装饰器](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable装饰器)标识为Sendable类后，类实例对象跨线程传递后，可携带类方法。
 
 ## 使用示例
 

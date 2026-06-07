@@ -1,6 +1,6 @@
 ---
 title: "如何获取到resources下rawfile 的文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-30
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-30
 format: md
 ---
 

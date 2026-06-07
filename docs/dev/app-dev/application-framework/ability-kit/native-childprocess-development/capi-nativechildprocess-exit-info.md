@@ -1,6 +1,6 @@
 ---
 title: "获取Native子进程退出信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/capi-nativechildprocess-exit-info
+original_url: /docs/dev/app-dev/application-framework/ability-kit/native-childprocess-development/capi-nativechildprocess-exit-info
 format: md
 ---
 

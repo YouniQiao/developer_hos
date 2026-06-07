@@ -1,7 +1,7 @@
 ---
 title: "双折叠应用开发"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-foldable-guide
+original_url: /docs/dev/app-dev/multi-device/bpta-foldable-guide
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ![](./img/b55d07bf.png)
 
-本文聚焦于双折叠应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)”系列文章。
+本文聚焦于双折叠应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)”系列文章。
 
 ## 产品硬件说明
 
@@ -59,8 +59,8 @@ format: md
 ![](./img/a392d849.png)
 
 * 上述双折叠屏幕尺寸参数以Mate X5产品为例展示属性，其它双折叠产品可通过[display](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display)的[getDefaultDisplaySync()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#displaygetdefaultdisplaysync9)方法获取设备屏幕分辨率(px)，再调用[px2vp()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#px2vp12)接口转换为vp值。
-* 悬停态在不同旋转角度下的硬件参数和展开态一致，适配悬停态可参考[折叠屏悬停态](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-folded-hover)。
-* 设备屏幕和窗口方向详细信息可参考[窗口方向](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction)。
+* 悬停态在不同旋转角度下的硬件参数和展开态一致，适配悬停态可参考[折叠屏悬停态](/docs/dev/app-dev/multi-device/bpta-folded-hover)。
+* 设备屏幕和窗口方向详细信息可参考[窗口方向](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction)。
 
 ###相机硬件信息
 
@@ -91,7 +91,7 @@ format: md
 ![](./img/f192cfcf.png)
 
 * 双折叠后置相机安装角度为90°，前置相机安装角度为270°，和折叠状态无关。可通过[CameraDevice](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#cameradevice)接口获取相机安装角度cameraOrientation。
-* 更多相机硬件差异和开发详情可参考[相机硬件差异](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-camera)。
+* 更多相机硬件差异和开发详情可参考[相机硬件差异](/docs/dev/app-dev/multi-device/bpta-multi-device-camera)。
 
 ###设备折叠能力
 
@@ -135,7 +135,7 @@ format: md
 
 ![](./img/787a6c88.png)
 
-小折叠折叠态外屏屏幕较小，外屏的开发与ArtTS卡片开发一致，实现可参考[ArkTS卡片开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui)，需要注意将form\_config.json配置文件中的supportShapes字段设置为“circle”。卡片的设计标准可参考[服务卡片](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-service-widget-0000002087671904)。
+小折叠折叠态外屏屏幕较小，外屏的开发与ArtTS卡片开发一致，实现可参考[ArkTS卡片开发](/docs/dev/app-dev/application-framework/form-kit/arkts-ui)，需要注意将form\_config.json配置文件中的supportShapes字段设置为“circle”。卡片的设计标准可参考[服务卡片](/docs/design/system-features/features/service-widget)。
 
 ## 创新与体验提升
 
@@ -161,13 +161,13 @@ format: md
 
 ###悬停态适配
 
-双折叠展开态时可切换至悬停态。悬停态支持设备平稳放置于桌面，实现免手持体验，常用于视频通话、视频播放、拍照、听歌等不需要频繁交互的场景。这种状态下，应用需要对中间折痕区域进行避让，并对上下两个界面进行悬停态布局适配。悬停态的实现方案可参考[折叠屏悬停态](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-folded-hover)。
+双折叠展开态时可切换至悬停态。悬停态支持设备平稳放置于桌面，实现免手持体验，常用于视频通话、视频播放、拍照、听歌等不需要频繁交互的场景。这种状态下，应用需要对中间折痕区域进行避让，并对上下两个界面进行悬停态布局适配。悬停态的实现方案可参考[折叠屏悬停态](/docs/dev/app-dev/multi-device/bpta-folded-hover)。
 
 ![](./img/5f8589df.png "点击放大")
 
 ###开合适配
 
-开合连续指应用在屏幕形态与窗口状态切换时，保持页面内容连贯，延续任务进度与运行状态。支持用户快速接续切换前的操作，打造流畅的切换体验。例如双折叠设备在折叠态和展开态之间切换时，应用页面内容保持不变、状态无缝接续，保障使用体验不受影响。具体实现方案，可参考[开合连续](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-diff#section16541144511135)章节。
+开合连续指应用在屏幕形态与窗口状态切换时，保持页面内容连贯，延续任务进度与运行状态。支持用户快速接续切换前的操作，打造流畅的切换体验。例如双折叠设备在折叠态和展开态之间切换时，应用页面内容保持不变、状态无缝接续，保障使用体验不受影响。具体实现方案，可参考[开合连续](/docs/dev/app-dev/multi-device/bpta-multi-device-screen-diff#section16541144511135)章节。
 
 ###悬浮组件
 
@@ -177,13 +177,13 @@ format: md
 
 ###视频自适应沉浸
 
-双折叠设备可以切换折叠态和展开态，且窗口模式可以转换分屏、悬浮窗，为避免视频播放画面在形态切换时出现拉伸、裁剪、显示比例错乱等问题，可采用自适应沉浸全屏播放方案，精简界面元素、减少视觉干扰，让用户聚焦视频画面，充分利用大屏开阔视野，有效提升观看体验。具体实现方案，可参考[视频适配不同尺寸屏幕](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-diff#section1452572513130)章节。
+双折叠设备可以切换折叠态和展开态，且窗口模式可以转换分屏、悬浮窗，为避免视频播放画面在形态切换时出现拉伸、裁剪、显示比例错乱等问题，可采用自适应沉浸全屏播放方案，精简界面元素、减少视觉干扰，让用户聚焦视频画面，充分利用大屏开阔视野，有效提升观看体验。具体实现方案，可参考[视频适配不同尺寸屏幕](/docs/dev/app-dev/multi-device/bpta-multi-device-screen-diff#section1452572513130)章节。
 
 ![](./img/8b558be0.gif "点击放大")
 
 ###全景多窗
 
-[全景多窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro#全景多窗)旨在帮助用户高效处理多个任务。通过全景多窗，用户可以突破物理屏幕局限，在同一屏幕内并行运行多款应用，实现应用间快捷切换，提升操作效率。双折叠可依托全景多窗能力，充分利用大屏空间优势，最高支持三个窗口同屏并行运行，助力用户一边浏览资讯、一边编辑内容、一边沟通办公，多任务同步处理、互不冲突，实现办公、娱乐、日常操作一站式协同。
+[全景多窗](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-intro#全景多窗)旨在帮助用户高效处理多个任务。通过全景多窗，用户可以突破物理屏幕局限，在同一屏幕内并行运行多款应用，实现应用间快捷切换，提升操作效率。双折叠可依托全景多窗能力，充分利用大屏空间优势，最高支持三个窗口同屏并行运行，助力用户一边浏览资讯、一边编辑内容、一边沟通办公，多任务同步处理、互不冲突，实现办公、娱乐、日常操作一站式协同。
 
 ![](./img/70c6258a.png "点击放大")
 
@@ -195,10 +195,10 @@ format: md
 
 问题描述：在双折叠展开态启动应用时，应用的启动页面未铺满整个屏幕，出现白屏区域或者启动页面被截断。
 
-解决方案：应用需要[配置增强启动页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page-config#配置增强启动页)，配置后启动页面中的背景、图片和图标等资源能根据窗口大小自适应填充，保证启动页面在不同设备形态上正常显示，配置中各标签的说明可参考[startWindow标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#startwindow标签)。
+解决方案：应用需要[配置增强启动页](/docs/dev/app-dev/application-framework/arkui/window-manager/launch-page/launch-page-config#配置增强启动页)，配置后启动页面中的背景、图片和图标等资源能根据窗口大小自适应填充，保证启动页面在不同设备形态上正常显示，配置中各标签的说明可参考[startWindow标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#startwindow标签)。
 
 **如何实现不同折叠状态下的页面布局**
 
 问题描述：应用页面布局在不同折叠状态下适配方式不明确或适配出现异常。
 
-解决方案：推荐使用断点适配页面布局。依据不同断点对应的UX设计规范，分别开发对应的页面布局。通过[window.on('windowSizeChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onwindowsizechange7)监听页面的断点变化，即可实现不同折叠状态下的页面布局适配，详细开发方案参考[断点](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1532120147301)的开发案例。
+解决方案：推荐使用断点适配页面布局。依据不同断点对应的UX设计规范，分别开发对应的页面布局。通过[window.on('windowSizeChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onwindowsizechange7)监听页面的断点变化，即可实现不同折叠状态下的页面布局适配，详细开发方案参考[断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1532120147301)的开发案例。

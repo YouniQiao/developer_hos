@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现Web和Webview对前端常用框架（如Vue，React）的适配"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-35
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-35
 ---
 
 

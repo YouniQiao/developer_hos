@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "空域AI超分的输出颜色附件是否需要通过OH_NativeBuffer创建"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-4
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-faq/xengine-kit-faq-4
 format: md
 ---
 

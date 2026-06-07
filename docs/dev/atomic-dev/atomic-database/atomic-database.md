@@ -1,6 +1,6 @@
 ---
 title: "数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-database
+original_url: /docs/dev/atomic-dev/atomic-database/atomic-database
 format: md
 ---
 

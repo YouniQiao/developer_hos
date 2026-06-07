@@ -1,11 +1,11 @@
 ---
 title: "使用ASan检测内存错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-asan-detection
+original_url: /docs/quality/stability-asan-detection
 ---
 
 # 使用ASan检测内存错误
 
-ASan的能力概述和检测原理可参看[地址越界检测能力概述](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-overview)以及[ASan检测原理](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-principle#section159561141247)，适用于开发态调试压测场景。
+ASan的能力概述和检测原理可参看[地址越界检测能力概述](/docs/quality/stability-address-sanitizer-overview)以及[ASan检测原理](/docs/quality/stability-address-sanitizer-principle#section159561141247)，适用于开发态调试压测场景。
 
 ## 使用约束
 
@@ -167,11 +167,11 @@ llvm-readelf工具路径为：$&#123;DevEco Studio安装目录&#125;/sdk/default
 
 ## ASan异常检测类型
 
-当前提供案例在[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#debug版本应用)中可产生ASan，[release版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#release版本应用)因为在编译构建期间会进行代码优化，不一定会产生异常。
+当前提供案例在[debug版本应用](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#debug版本应用)中可产生ASan，[release版本应用](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#release版本应用)因为在编译构建期间会进行代码优化，不一定会产生异常。
 
 ![](./img/e5b4d05d.png)
 
-对于[release版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#release版本应用)，本地无工程代码，可以使用AnalyzeStackTrace功能，提供要解析堆栈的so，解析结果为源码地址。
+对于[release版本应用](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#release版本应用)，本地无工程代码，可以使用AnalyzeStackTrace功能，提供要解析堆栈的so，解析结果为源码地址。
 
 | 常见ASan检测异常码 | 说明 | 可能的Crash信号 |
 | --- | --- | --- |
@@ -451,4 +451,4 @@ int DoubleFree() {
 
 ## 日志规格和日志获取方式
 
-请参看[日志获取方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-guidelines#日志获取方式)和[ASan日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-guidelines#asan日志规格)。
+请参看[日志获取方式](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/address-sanitizer-guidelines#日志获取方式)和[ASan日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/address-sanitizer-guidelines#asan日志规格)。

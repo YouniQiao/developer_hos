@@ -1,6 +1,6 @@
 ---
 title: "音频规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification
+original_url: /docs/experience-suggestions/compatibility/system-features/audio-specification
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [监听音频打断事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency) |
+| **说明** | [监听音频打断事件](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency) |
 
 |  |  |
 | --- | --- |
@@ -49,7 +49,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [音频播放概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview) |
+| **说明** | [音频播放概述](/docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview) |
 
 |  |  |
 | --- | --- |
@@ -57,7 +57,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [音频播放概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview) |
+| **说明** | [音频播放概述](/docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview) |
 
 |  |  |
 | --- | --- |
@@ -65,7 +65,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [音频播放概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview) |
+| **说明** | [音频播放概述](/docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview) |
 
 |  |  |
 | --- | --- |
@@ -73,7 +73,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [音频播放概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview) |
+| **说明** | [音频播放概述](/docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview) |
 
 |  |  |
 | --- | --- |
@@ -81,7 +81,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [音频通话开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-call-overview) |
+| **说明** | [音频通话开发概述](/docs/dev/app-dev/media/audio-kit/audio-call/audio-call-overview) |
 
 |  |  |
 | --- | --- |
@@ -89,7 +89,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [响应音频流输出设备变更](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-change) |
+| **说明** | [响应音频流输出设备变更](/docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-change) |
 
 ### 音视频播控服务
 
@@ -99,7 +99,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [设置元数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#设置元数据) |
+| **说明** | [设置元数据](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#设置元数据) |
 
 |  |  |
 | --- | --- |
@@ -107,4 +107,4 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [注册控制命令](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#注册控制命令) |
+| **说明** | [注册控制命令](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#注册控制命令) |

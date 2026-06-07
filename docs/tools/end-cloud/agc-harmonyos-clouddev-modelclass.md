@@ -2,7 +2,7 @@
 
 title: "(可选）一键生成Model Class"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-modelclass
+original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-modelclass
 format: md
 ---
 

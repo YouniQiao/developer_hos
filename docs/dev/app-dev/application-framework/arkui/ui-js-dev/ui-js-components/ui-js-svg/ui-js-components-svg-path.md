@@ -1,6 +1,6 @@
 ---
 title: "绘制路径"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-path
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-svg/ui-js-components-svg-path
 format: md
 ---
 

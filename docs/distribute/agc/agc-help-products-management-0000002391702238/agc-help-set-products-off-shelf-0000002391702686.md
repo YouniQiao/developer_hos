@@ -1,6 +1,6 @@
 ---
 title: "下架/重新上架数字商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-set-products-off-shelf-0000002391702686
+original_url: /docs/distribute/agc/agc-help-products-management-0000002391702238/agc-help-set-products-off-shelf-0000002391702686
 format: md
 ---
 

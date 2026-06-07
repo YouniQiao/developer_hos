@@ -1,6 +1,6 @@
 ---
 title: "管理应用窗口（Stage模型）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage
 format: md
 ---
 
@@ -47,7 +47,7 @@ format: md
 
 ## 设置应用主窗口
 
-在Stage模型下，应用主窗口由UIAbility创建并维护生命周期。在UIAbility的onWindowStageCreate回调中，通过WindowStage获取应用主窗口，即可对其进行属性设置等操作。还可以在应用配置文件中设置应用主窗口的属性，如最大窗口宽度maxWindowWidth等，详见[module.json5配置文件中的abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)。
+在Stage模型下，应用主窗口由UIAbility创建并维护生命周期。在UIAbility的onWindowStageCreate回调中，通过WindowStage获取应用主窗口，即可对其进行属性设置等操作。还可以在应用配置文件中设置应用主窗口的属性，如最大窗口宽度maxWindowWidth等，详见[module.json5配置文件中的abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)。
 
 ### 开发步骤
 
@@ -128,7 +128,7 @@ export default class EntryAbility extends UIAbility {
 
    通过createSubWindow接口创建应用子窗口。
 
-   子窗口创建后默认是[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#沉浸式布局)。
+   子窗口创建后默认是[沉浸式布局](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#沉浸式布局)。
 2. 设置子窗口属性。
 
    子窗口创建成功后，可以改变其大小、位置等，还可以根据应用需要设置窗口背景色、亮度等属性。
@@ -137,7 +137,7 @@ export default class EntryAbility extends UIAbility {
 
    如果没有设置子窗口的大小，调用showWindow后:
 
-   * [自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)状态下，默认子窗口大小为当前物理屏幕的大小。其中，[MateBook Fold折叠电脑](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-mate-book-fold)半折叠态下，默认子窗口大小为竖向展开态的物理屏幕大小。
+   * [自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)状态下，默认子窗口大小为当前物理屏幕的大小。其中，[MateBook Fold折叠电脑](/docs/dev/app-dev/multi-device/bpta-mate-book-fold)半折叠态下，默认子窗口大小为竖向展开态的物理屏幕大小。
    * 非自由窗口状态下，默认子窗口大小为主窗口大小。
 3. 加载显示子窗口的具体内容。
 
@@ -536,9 +536,9 @@ export default class EntryAbility extends UIAbility {
 
 ### 开发步骤
 
-**前提条件：** 创建WindowType.TYPE\_FLOAT即全局悬浮窗类型的窗口，需要申请ohos.permission.SYSTEM\_FLOAT\_WINDOW权限，该权限为受控开放权限，仅符合[指定场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionsystem_float_window)的在2in1设备上的应用可申请该权限。申请方式请参考：[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+**前提条件：** 创建WindowType.TYPE\_FLOAT即全局悬浮窗类型的窗口，需要申请ohos.permission.SYSTEM\_FLOAT\_WINDOW权限，该权限为受控开放权限，仅符合[指定场景](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionsystem_float_window)的在2in1设备上的应用可申请该权限。申请方式请参考：[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。
 
-在其他设备或场景下，请使用画中画功能，使用方式参考：[画中画开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-pipwindow)。
+在其他设备或场景下，请使用画中画功能，使用方式参考：[画中画开发指导](/docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow)。
 
 ![](./img/b35050de.png)
 

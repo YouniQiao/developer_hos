@@ -1,7 +1,7 @@
 ---
 title: "调试获取报表接口"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_get-report-0000001505520645
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_get-report-0000001505520645
 format: md
 ---
 
@@ -38,7 +38,7 @@ format: md
 | timeSwitch | O | integer(32) | 时间维度。  取值范围：   * 1：按天统计 * 2：按小时统计   默认值：1 |
 | startDate | M | `String` | 开始日期。  格式：   * 按天统计：*yyyymmdd* * 按小时统计：*yyyy-mm-dd HH:MM:SS*   示例：   * 按天统计：20230525 * 按小时统计：2023-05-25 00:00:00   **说明：**   * **timeSwitch**字段为**1**时（即按天统计的报表），开始时间和结束时间跨度不超过30天。 * **timeSwitch**字段为**2**时（即按小时统计的报表），开始时间和结束时间跨度不超过7天。 |
 | endDate | M | `String` | 截止日期。  格式逻辑与**startDate**字段一致。 |
-| mediaInfo | M | Iist [ReportMediaInfo](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_if_reportmediainfo-0000001456160032) | 媒体信息。 |
+| mediaInfo | M | Iist [ReportMediaInfo](/docs/monetize/monetization/agd_pro_sdk_if_reportmediainfo-0000001456160032) | 媒体信息。 |
 
 #### 请求示例
 
@@ -73,10 +73,10 @@ client_id: *******
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| rtnCode | M | `Integer` | 返回码。  具体返回码请参见[报表接口错误码](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_errcode-0000001354582769#section414716403407)。 |
+| rtnCode | M | `Integer` | 返回码。  具体返回码请参见[报表接口错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section414716403407)。 |
 | rtnDesc | M | `String` | 返回描述。 |
 | requestId | M | `String` | 请求参数原值返回。 |
-| reportInfos | M | Iist [MediaReportInfo](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_if_mediareportinfo-0000001456000112) | 报表信息。 |
+| reportInfos | M | Iist [MediaReportInfo](/docs/monetize/monetization/agd_pro_sdk_if_mediareportinfo-0000001456000112) | 报表信息。 |
 
 #### 响应示例
 

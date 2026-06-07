@@ -1,7 +1,7 @@
 ---
 title: 通用友好
 sidebar_label: 通用友好
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900422910
+original_url: /docs/design/atomic-service-design/design-principles/universal-friendly
 format: md
 ---
 
@@ -65,4 +65,4 @@ format: md
 
 ③ 及时可控：操作响应无延迟感，操控感舒适高效
 
-详细动效设计指南请参阅：[动效](https://developer.huawei.com/consumer/cn/doc/design-guides/transition-animation-0000001750078488)
+详细动效设计指南请参阅：[动效](/docs/design/general-design-basics/animation/transition)

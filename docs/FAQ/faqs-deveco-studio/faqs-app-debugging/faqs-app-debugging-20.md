@@ -1,7 +1,7 @@
 ---
 format: md
 title: "修改代码后使用Hot Reload不支持情况说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-20
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-20
 ---
 
 

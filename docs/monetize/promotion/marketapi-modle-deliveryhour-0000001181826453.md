@@ -1,7 +1,7 @@
 ---
 title: "DeliveryHour"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-deliveryhour-0000001181826453
+original_url: /docs/monetize/promotion/marketapi-modle-deliveryhour-0000001181826453
 format: md
 ---
 

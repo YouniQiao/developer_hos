@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS的SendableClass对象内存共享的原理和限制是什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-38
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-38
 ---
 
 
@@ -19,4 +19,4 @@ Sendable对象需要满足一定的规格。
 
 **参考链接**
 
-[多线程并发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview)
+[多线程并发概述](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/multi-thread-concurrency-overview)

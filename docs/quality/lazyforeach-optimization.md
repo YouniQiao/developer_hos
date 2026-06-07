@@ -1,6 +1,6 @@
 ---
 title: "懒加载优化性能"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lazyforeach-optimization
+original_url: /docs/quality/lazyforeach-optimization
 ---
 
 # 懒加载优化性能
@@ -13,7 +13,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-l
 
 ### 渲染过程
 
-在声明式描述语句中，有两种方式控制列表、网格等容器类组件的渲染，分别为[循环渲染（ForEach）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)和[数据懒加载（LazyForEach）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)。
+在声明式描述语句中，有两种方式控制列表、网格等容器类组件的渲染，分别为[循环渲染（ForEach）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)和[数据懒加载（LazyForEach）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)。
 
 * 循环渲染
 
@@ -51,7 +51,7 @@ LazyForEach实现了按需加载，针对列表数据量大、列表组件复杂
 
 建议开发者优先使用[Code Linter扫描工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)进行代码检查，重点关注[@performance/hp-arkui-no-stringify-in-lazyforeach-key-generator](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-no-stringify-lazyforeach-key)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
 
-在使用LazyForEach时，我们需要分别实现数据源dataSource、键值生成函数keyGenerator、子组件生成函数itemGenerator。其中，数据源为[IDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach#idatasource)类型，需要开发者实现该接口。keyGenerator是一个函数，用于为每个item生成一个唯一且持久的键值以标识对应的组件，开发者可以通过它自定义键值的生成规则，关于键值生成规则，详情可参考[键值生成规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach#键值生成规则)。LazyForEach的itemGenerator函数会根据键值生成规则为数据源的每个数组项创建组件，组件的创建分为首次渲染和非首次渲染两种情况，详情可参考[组件创建规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach#组件创建规则)。
+在使用LazyForEach时，我们需要分别实现数据源dataSource、键值生成函数keyGenerator、子组件生成函数itemGenerator。其中，数据源为[IDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach#idatasource)类型，需要开发者实现该接口。keyGenerator是一个函数，用于为每个item生成一个唯一且持久的键值以标识对应的组件，开发者可以通过它自定义键值的生成规则，关于键值生成规则，详情可参考[键值生成规则](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach#键值生成规则)。LazyForEach的itemGenerator函数会根据键值生成规则为数据源的每个数组项创建组件，组件的创建分为首次渲染和非首次渲染两种情况，详情可参考[组件创建规则](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach#组件创建规则)。
 
 ![](./img/b9847ff3.png)
 
@@ -63,7 +63,7 @@ LazyForEach作为常见的渲染控制的方式之一，常用的使用场景有
 
 ### 长列表加载
 
-长列表作为应用开发中最常见的开发场景之一，通常会包含成千上万个列表项，在此场景下，直接使用循环渲染ForEach一次性加载所有的列表项，会导致渲染时间过长，影响用户体验。而使用数据懒加载LazyForEach替换循环渲染ForEach，可以按需加载列表项，从而提升列表性能。数据懒加载的示例代码可以参考[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)。
+长列表作为应用开发中最常见的开发场景之一，通常会包含成千上万个列表项，在此场景下，直接使用循环渲染ForEach一次性加载所有的列表项，会导致渲染时间过长，影响用户体验。而使用数据懒加载LazyForEach替换循环渲染ForEach，可以按需加载列表项，从而提升列表性能。数据懒加载的示例代码可以参考[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)。
 
 虽然，按需加载列表项可以优化长列表性能，但在快速滑动长列表的场景下，可能会来不及加载需要显示的列表项，导致出现白块的现象，从而影响用户体验。而在ArkUI中，List容器提供了[cachedCount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#cachedcount)属性，LazyForEach可以结合cachedCount属性一起使用，能够避免白块的现象。cachedCount可以设置列表中ListItem/ListItemGroup的预加载数量，并且只在LazyForEach中生效，即cachedCount只能与LazyForEach一起使用。除了List容器，其他容器Grid、Swiper以及WaterFlow也都包含cachedCount属性。cachedCount的使用方法如下所示。
 
@@ -74,17 +74,17 @@ List() {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/HarmonyOS_Samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/pages/Index.ets#L12-L14">Index.ets</a></div>
 
-此外，HarmonyOS应用框架提供了组件复用能力，可以结合LazyForEach一起使用，进一步优化长列表的性能。组件复用会把组件树上将要移除的组件进行回收，回收的组件会进入到一个回收缓存区。后续创建新组件节点时，会复用缓存区中的节点，节约组件重新创建的时间。关于组件复用的详细原理可以参考[组件复用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-reuse)。针对长列表加载的性能优化，可以参考[优化长列表加载慢丢帧问题](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list)。
+此外，HarmonyOS应用框架提供了组件复用能力，可以结合LazyForEach一起使用，进一步优化长列表的性能。组件复用会把组件树上将要移除的组件进行回收，回收的组件会进入到一个回收缓存区。后续创建新组件节点时，会复用缓存区中的节点，节约组件重新创建的时间。关于组件复用的详细原理可以参考[组件复用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-reuse)。针对长列表加载的性能优化，可以参考[优化长列表加载慢丢帧问题](/docs/quality/best-practices-long-list)。
 
 ### 无限瀑布流
 
-瀑布流的内容呈现方式类似瀑布流一样，从上往下依次排列，每一列的高度不一定相同，整体呈现出瀑布流的视觉效果。在瀑布流中，经常使用LazyForEach实现数据按需加载，同时，结合onReachEnd、onScrollIndex方法实现无限瀑布流，关于瀑布流的优化详情可以参考[优化瀑布流加载慢丢帧问题](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-waterflow-performance-optimization)。
+瀑布流的内容呈现方式类似瀑布流一样，从上往下依次排列，每一列的高度不一定相同，整体呈现出瀑布流的视觉效果。在瀑布流中，经常使用LazyForEach实现数据按需加载，同时，结合onReachEnd、onScrollIndex方法实现无限瀑布流，关于瀑布流的优化详情可以参考[优化瀑布流加载慢丢帧问题](/docs/quality/waterflow-performance-optimization)。
 
 ## 常见失效场景
 
 ### 使用限制
 
-在LazyForEach的使用上，有一些限制条件和限制场景，详细的限制条件请参考[使用限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach#使用限制)，常见的限制场景总结如下：
+在LazyForEach的使用上，有一些限制条件和限制场景，详细的限制条件请参考[使用限制](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach#使用限制)，常见的限制场景总结如下：
 
 * 键值相同导致渲染错乱
 * ListItem过于复杂导致丢帧
@@ -114,14 +114,14 @@ List() {
    })
    ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Lazy_Loading_Optimizes_Performance/entry/src/main/ets/pages/Index.ets#L18-L31">Index.ets</a></div>
-2. 通过Profiler调优工具抓取Trace，可以判断子组件创建的次数。如下图所示，在该帧中出现大量的BuildLazyItem切片，每一次BuildLazyItem对应一次子组件的创建，对比数量可知LazyForEach按需加载失效。关于调优的内容可参考[性能分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-optimization-tool-practice)。
+2. 通过Profiler调优工具抓取Trace，可以判断子组件创建的次数。如下图所示，在该帧中出现大量的BuildLazyItem切片，每一次BuildLazyItem对应一次子组件的创建，对比数量可知LazyForEach按需加载失效。关于调优的内容可参考[性能分析](/docs/quality/optimization-tool-practice)。
 
    ![](./img/cdb4e6d2.png "点击放大")
-3. 通过HiDumper查看组件信息，判断组件的渲染情况。关于HiDumper的内容可参考[HiDumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)。
+3. 通过HiDumper查看组件信息，判断组件的渲染情况。关于HiDumper的内容可参考[HiDumper](/docs/dev/app-dev/system/hidumper)。
 
 ### 键值相同导致渲染错乱
 
-在LazyForEach的键值生成规则中，每个item对应着一个唯一且持久的键值，用于标识对应的组件。当不同的数据项有相同的键值时，框架可能找不到正确的数据项，导致子组件渲染错误。关于键值错误导致渲染错乱的案例，详情可以参考[首次渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach#首次渲染)中的示例。
+在LazyForEach的键值生成规则中，每个item对应着一个唯一且持久的键值，用于标识对应的组件。当不同的数据项有相同的键值时，框架可能找不到正确的数据项，导致子组件渲染错误。关于键值错误导致渲染错乱的案例，详情可以参考[首次渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach#首次渲染)中的示例。
 
 ### ListItem过于复杂导致丢帧
 

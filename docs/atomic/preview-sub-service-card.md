@@ -1,6 +1,6 @@
 ---
 title: "预览子服务卡"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/preview-sub-service-card
+original_url: /docs/dev/atomic-dev/instant-service-items/preview-sub-service-card
 format: md
 ---
 

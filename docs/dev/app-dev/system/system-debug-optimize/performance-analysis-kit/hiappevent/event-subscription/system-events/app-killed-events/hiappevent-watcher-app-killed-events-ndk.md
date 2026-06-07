@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "订阅应用终止事件（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events-ndk
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events-ndk
 format: md
 ---
 
 
 ## 应用终止事件规格说明
 
-请参考[应用终止事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events)。
+请参考[应用终止事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events)。
 
 ## 接口说明
 
@@ -197,7 +197,7 @@ API接口的具体使用说明（参数使用限制、具体取值范围等）�
 
    ![](./img/4a646834.png)
 
-   根据日志报错内容，可查看具体[应用终止事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-killed-events#事件字段说明)。
+   根据日志报错内容，可查看具体[应用终止事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events#事件字段说明)。
 10. 移除事件观察者：
 
     ```

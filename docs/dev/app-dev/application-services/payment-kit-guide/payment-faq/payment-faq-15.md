@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "同一次支付请求接收到多次回调通知，怎么解决？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-15
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-15
 format: md
 ---
 

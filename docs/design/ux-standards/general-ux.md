@@ -1,7 +1,7 @@
 ---
 title: 通用应用 UX 体验标准
 sidebar_label: 通用应用 UX 体验标准
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-general-0000001760708152
+original_url: /docs/design/ux-standards/general-ux
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 手机、折叠屏、平板、电脑、智能穿戴 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[页面返回](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation#页面返回) |
+| 系统能力 | | 请参阅[页面返回](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation#页面返回) |
 
 ## 界面布局
 
@@ -52,7 +52,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 手机、折叠屏、平板、电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[如何完成挖孔屏的适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-274) |
+| 系统能力 | | 请参阅[如何完成挖孔屏的适配](/docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-274) |
 
 ## 人机交互
 
@@ -277,7 +277,7 @@ format: md
 | 标准等级 | | 强烈推荐 |
 | 适用设备类型 | | 手机、折叠屏、平板、电脑、大屏设备、智能穿戴 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[共享元素转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shared-element-transition) |
+| 系统能力 | | 请参阅[共享元素转场](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-shared-element-transition) |
 
 |  |  |  |
 | --- | --- | --- |
@@ -288,7 +288,7 @@ format: md
 | 标准等级 | | 强烈推荐 |
 | 适用设备类型 | | 手机、折叠屏、平板、电脑、大屏设备、智能穿戴 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[共享元素转场-使用 geometryTransition 共享元素转场实现一镜到底动效](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shared-element-transition) |
+| 系统能力 | | 请参阅[共享元素转场-使用 geometryTransition 共享元素转场实现一镜到底动效](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-shared-element-transition) |
 
 2.1.5.1.6 秩序感元素转场
 
@@ -409,13 +409,13 @@ format: md
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 2.2.2 | 通知 |
-| 标准描述 | | 应用通知设计需遵循[通知规范](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217)。  - 为用户提供有价值的通知内容信息。  - 不要重复发送相同内容的通知打扰用户。  - 根据通知内容选择对应的[通知通道](https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/message-classification-0000001149358835#section1076611477914)，不要出于商业目的而采用不匹配的通知通道。  - 根据通知的内容和类型采用对应的[规范布局模板](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217#section375985153712)，如对话类、普通文本类、图片预览类等。  - 不要将通知作为小工具或广告板使用。  - 如需要告知用户正在进行的任务状态，请参阅“[实况窗](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861)”部分。 |
+| 标准描述 | | 应用通知设计需遵循[通知规范](/docs/design/system-features/features/notification)。  - 为用户提供有价值的通知内容信息。  - 不要重复发送相同内容的通知打扰用户。  - 根据通知内容选择对应的[通知通道](https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/message-classification-0000001149358835#section1076611477914)，不要出于商业目的而采用不匹配的通知通道。  - 根据通知的内容和类型采用对应的[规范布局模板](/docs/design/system-features/features/notification#section375985153712)，如对话类、普通文本类、图片预览类等。  - 不要将通知作为小工具或广告板使用。  - 如需要告知用户正在进行的任务状态，请参阅“[实况窗](/docs/design/system-features/features/live-view)”部分。 |
 | 测试方法 | | 检查应用通知内容 |
 | 判定标准 | | 应用通知设计遵循通知规范 |
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 手机、折叠屏、平板、电脑、智慧屏、智能穿戴 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 1.实况窗，请参阅[一多开发实例（地图导航）-实况窗页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-travel-navigation#section168841418408)  2.通知管理，请参阅[@ohos.notificationManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager) |
+| 系统能力 | | 1.实况窗，请参阅[一多开发实例（地图导航）-实况窗页](/docs/dev/app-dev/multi-device/multi-travel-navigation#section168841418408)  2.通知管理，请参阅[@ohos.notificationManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager) |
 
 ## 实况窗
 
@@ -424,13 +424,13 @@ format: md
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 2.2.3 | 实况窗 |
-| 标准描述 | | 实况窗通知样式需符合设计规范，应用需依据实况窗通知的样式模版来进行设计。实况窗样式模板请参阅[实况窗-卡片模板](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861#section116896132810)。 |
+| 标准描述 | | 实况窗通知样式需符合设计规范，应用需依据实况窗通知的样式模版来进行设计。实况窗样式模板请参阅[实况窗-卡片模板](/docs/design/system-features/features/live-view#section116896132810)。 |
 | 测试方法 | | 检查应用实况窗样式。 |
 | 判定标准 | | 实况窗样式符合实况窗样式模板。 |
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 手机、折叠屏、平板、智慧屏、智能穿戴 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[一多开发实例（地图导航）-实况窗页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-travel-navigation#section168841418408) |
+| 系统能力 | | 请参阅[一多开发实例（地图导航）-实况窗页](/docs/dev/app-dev/multi-device/multi-travel-navigation#section168841418408) |
 
 ## 多窗口交互
 
@@ -439,26 +439,26 @@ format: md
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 2.2.4.1 | 悬浮窗适配 |
-| 标准描述 | | 应用支持以悬浮窗模式运行。  - 直板机和折叠屏：应用支持悬浮窗等比缩放调节；游戏、视频播放等沉浸式场景适配支持横向悬浮窗。  - 平板设备：应用支持悬浮窗无极缩放调节；应用支持横向悬浮窗。  适配支持，请参阅[多窗口交互-悬浮窗](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-multi-window-interaction-0000001795392917#section865385641914)。 |
+| 标准描述 | | 应用支持以悬浮窗模式运行。  - 直板机和折叠屏：应用支持悬浮窗等比缩放调节；游戏、视频播放等沉浸式场景适配支持横向悬浮窗。  - 平板设备：应用支持悬浮窗无极缩放调节；应用支持横向悬浮窗。  适配支持，请参阅[多窗口交互-悬浮窗](/docs/design/system-features/features/multi-window#section865385641914)。 |
 | 测试方法 | | 使应用进入悬浮窗模式并调节悬浮窗，检查悬浮窗显示 |
 | 判定标准 | | 应用支持以悬浮窗模式运行，并支持：  - 在直板机和折叠屏支持等比例调节，在平板支持无极缩放调节。  - 在游戏、视频播放等沉浸式场景以及在平板上支持横向悬浮窗。 |
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 手机、折叠屏、平板 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[管理应用窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage) |
+| 系统能力 | | 请参阅[管理应用窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage) |
 
 2.2.4.2 分屏适配
 
 |  |  |  |
 | --- | --- | --- |
 | 标准编号 | 2.2.4.2 | 分屏适配 |
-| 标准描述 | | 应用支持上下分屏和左右分屏。  - 分屏运行时，需确保应用布局显示良好，无元素显示异常问题。  - 应用支持分屏比例调节，比例调节时需确保元素无变形挤压的情况出现。  适配支持，请参阅[多窗口交互-分屏](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-multi-window-interaction-0000001795392917#section45872633319)。 |
+| 标准描述 | | 应用支持上下分屏和左右分屏。  - 分屏运行时，需确保应用布局显示良好，无元素显示异常问题。  - 应用支持分屏比例调节，比例调节时需确保元素无变形挤压的情况出现。  适配支持，请参阅[多窗口交互-分屏](/docs/design/system-features/features/multi-window#section45872633319)。 |
 | 测试方法 | | 使应用分别进入上下分屏和左右分屏模式，调整分屏比例并检查应用显示。 |
 | 判定标准 | | 应用支持上下分屏和左右分屏以及分屏比例调节；  在任何分屏比例下，应用布局显示良好，无元素显示异常问题。 |
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 手机、折叠屏、平板、智慧屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[一多开发实例（购物比价）-商品详情页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section112893356386) |
+| 系统能力 | | 请参阅[一多开发实例（购物比价）-商品详情页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section112893356386) |
 
 ## 深色模式
 
@@ -473,7 +473,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 手机、折叠屏、平板、电脑、智慧屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[应用深浅色适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-dark-light-color-adaptation) |
+| 系统能力 | | 请参阅[应用深浅色适配](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-theme/ui-dark-light-color-adaptation) |
 
 ## 状态栏
 

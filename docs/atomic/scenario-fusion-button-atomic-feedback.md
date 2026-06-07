@@ -1,6 +1,6 @@
 ---
 title: "反馈与投诉Button"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/scenario-fusion-button-atomic-feedback
+original_url: /docs/dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-feedback
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ## 前提条件
 
-参见[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-preparations)。
+参见[开发准备](/docs/dev/app-dev/application-services/scenario-fusion-preparations)。
 
 ## 约束与限制
 

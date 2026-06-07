@@ -1,6 +1,6 @@
 ---
 title: "Navigation页面路由"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-jump
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-jump
 format: md
 ---
 
@@ -11,14 +11,14 @@ format: md
 
 路由相关的几个关键概念：
 
-* 路由表：定义了页面名称和[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)页面的映射，若跳转时传入的页面名称未在路由表里注册，会跳转失败。系统提供了[系统路由表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-cross-package#系统路由表)和[自定义路由表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-cross-package#自定义路由表)两种实现方式。
+* 路由表：定义了页面名称和[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)页面的映射，若跳转时传入的页面名称未在路由表里注册，会跳转失败。系统提供了[系统路由表](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-cross-package#系统路由表)和[自定义路由表](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-cross-package#自定义路由表)两种实现方式。
 * 路由栈：NavDestination页面以栈结构管理，每个Navigation都有自己的路由栈，不可共享。路由栈主要由NavPathStack控制，此外可通过[NavPathStack.getPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#getpathstack19)获取完整路由栈信息。
 * 页面转场：页面跳转动画，Navigation默认提供了页面切换的转场动画，也支持开发者自定义转场动画。
 
 ![](./img/73544d0f.png)
 
 * NavPathStack对象和Navigation需要一一对应，不可复用。
-* NavPathStack主要控制的是[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)页面跳转、删除等，无法直接操作[NavBar导航栏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture#navbar导航栏)，若想跳转到NavBar页面只能通过[clear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#clear10)清空路由栈的方式。
+* NavPathStack主要控制的是[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)页面跳转、删除等，无法直接操作[NavBar导航栏](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-architecture#navbar导航栏)，若想跳转到NavBar页面只能通过[clear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#clear10)清空路由栈的方式。
 * 不建议开发者通过监听生命周期的方式管理自己的路由栈，可通过[NavPathStack.getPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#getpathstack19)查询路由栈。
 * 在应用处于后台状态下，调用NavPathStack的栈操作方法，会在应用再次回到前台状态时触发刷新。
 
@@ -93,7 +93,7 @@ export struct PageOne {
 }
 ```
 
-创建好路由表后，需要将其注册到工程中，在工程配置文件[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中的module字段里配置"routerMap": "$profile:router\_map"。
+创建好路由表后，需要将其注册到工程中，在工程配置文件[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中的module字段里配置"routerMap": "$profile:router\_map"。
 
 ## 路由操作
 
@@ -815,6 +815,6 @@ export struct PageTwo {
      ]
    }
    ```
-2. 工程配置文件[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置\{"routerMap": "$profile:router\_map"\}。
+2. 工程配置文件[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中配置\{"routerMap": "$profile:router\_map"\}。
 
 ![](./img/f961c5ec.gif)

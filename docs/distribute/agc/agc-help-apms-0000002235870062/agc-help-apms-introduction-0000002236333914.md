@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-introduction-0000002236333914
+original_url: /docs/distribute/agc/agc-help-apms-0000002235870062/agc-help-apms-introduction-0000002236333914
 format: md
 ---
 

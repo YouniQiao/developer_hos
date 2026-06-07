@@ -1,6 +1,6 @@
 ---
 title: "应用事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-operate-app-event
+original_url: /docs/quality/stability-operate-app-event
 format: md
 ---
 

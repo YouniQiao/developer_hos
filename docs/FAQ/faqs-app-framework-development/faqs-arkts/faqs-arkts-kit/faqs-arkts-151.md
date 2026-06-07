@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS自定义注解使用场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-151
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-151
 ---
 
 
@@ -11,4 +11,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[编译期自定义修改方舟字节码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/customize-bytecode-during-compilation)
+[编译期自定义修改方舟字节码](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/customize-bytecode-during-compilation)

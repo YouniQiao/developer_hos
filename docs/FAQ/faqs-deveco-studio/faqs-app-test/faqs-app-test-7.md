@@ -1,7 +1,7 @@
 ---
 format: md
 title: "命令行方式执行Instrument Test堆栈路径打印错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-7
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-7
 ---
 
 

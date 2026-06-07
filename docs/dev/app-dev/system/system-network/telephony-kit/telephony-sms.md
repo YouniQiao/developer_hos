@@ -1,6 +1,6 @@
 ---
 title: "短信服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-sms
+original_url: /docs/dev/app-dev/system/system-network/telephony-kit/telephony-sms
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "场景化消息中的请求URL版本问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-8
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-8
 format: md
 ---
 

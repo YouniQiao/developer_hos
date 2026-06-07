@@ -1,7 +1,7 @@
 ---
 title: "跨设备剪贴板常见场景"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distributed-pasteboard
+original_url: /docs/dev/app-dev/multi-device/bpta-distributed-pasteboard
 format: md
 ---
 
@@ -23,18 +23,18 @@ format: md
 
 3. 用户在设备B读取系统剪贴板内容，粘贴来自设备A的数据。
 
-详细的使用限制可参考跨设备剪贴板[约束与限制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distributed-pasteboard-cast#section42331744172619)。
+详细的使用限制可参考跨设备剪贴板[约束与限制](/docs/dev/app-dev/multi-device/bpta-distributed-pasteboard-cast#section42331744172619)。
 
 **关键技术**
 
-在开发跨设备剪贴板的功能时，系统将自动完成跨设备的数据传递，应用可根据实际需求，接入跨设备剪贴板，完成跨设备剪贴板的开发，具体运作机制可参考：跨设备剪贴板[运作机制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distributed-pasteboard-cast#section111721843182510)。
+在开发跨设备剪贴板的功能时，系统将自动完成跨设备的数据传递，应用可根据实际需求，接入跨设备剪贴板，完成跨设备剪贴板的开发，具体运作机制可参考：跨设备剪贴板[运作机制](/docs/dev/app-dev/multi-device/bpta-distributed-pasteboard-cast#section111721843182510)。
 
 ## 开发流程
 
 跨设备剪贴板的开发流程主要包括以下两个步骤：
 
 1. 设备A复制数据，写入剪贴板服务：将需要存入系统剪贴板的数据转换为系统剪贴板可接受的通用格式，调用[SystemPasteboard.setData()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#setdata9)方法，将数据写入系统剪贴板。
-2. 设备B粘贴数据，读取剪贴板内容：可以[使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)获得临时授权直接读取剪贴板数据。或申请系统剪贴板权限[ohos.permission.READ\_PASTEBOARD](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionread_pasteboard)后，使用[@ohos.pasteboard (剪贴板)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#systempasteboard)接口读取剪贴板数据。具体开发步骤请参考[访问剪贴板内容](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines#访问剪贴板内容)。
+2. 设备B粘贴数据，读取剪贴板内容：可以[使用粘贴控件](/docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton)获得临时授权直接读取剪贴板数据。或申请系统剪贴板权限[ohos.permission.READ\_PASTEBOARD](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionread_pasteboard)后，使用[@ohos.pasteboard (剪贴板)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#systempasteboard)接口读取剪贴板数据。具体开发步骤请参考[访问剪贴板内容](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines#访问剪贴板内容)。
 
 下文将通过[粘贴分享直达](#section1146419501282)场景、[多样式复制粘贴](#section91711442235)场景、[进度条接入](#section58295561239)场景，详细介绍跨设备剪贴板开发过程中常见场景的开发实现流程。
 
@@ -60,7 +60,7 @@ await systemPasteboard.setData(pasteData);
 
 **读取剪贴板数据实现跳转**
 
-由于应用读取系统剪贴板的权限[ohos.permission.READ\_PASTEBOARD](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionread_pasteboard)是受限访问的，因此需要先通过AGC平台申请此权限，才能获取系统剪贴板内的数据。具体申请权限的流程可参考[使用ACL的签名配置指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section89479413571)。
+由于应用读取系统剪贴板的权限[ohos.permission.READ\_PASTEBOARD](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionread_pasteboard)是受限访问的，因此需要先通过AGC平台申请此权限，才能获取系统剪贴板内的数据。具体申请权限的流程可参考[使用ACL的签名配置指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section89479413571)。
 
 首先，应用在启动时或从后台进入前台时，在[onPageShow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#onpageshow)生命周期中检查系统剪贴板中是否包含URI类型数据。URI类型数据存在时检查权限ohos.permission.READ\_PASTEBOARD是否已授权。确认权限授权后，使用[getData()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#getdata9)方法获取系统剪贴板内的数据，并使用[getPrimaryUri()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#getprimaryuri7)方法获取单URI类型的数据。校验数据格式正确后，拉起弹窗询问用户是否需要执行跳转。
 
@@ -167,7 +167,7 @@ await systemPasteBoard.setData(pasteData).catch((err: BusinessError) => {
 
 **实现多样式数据读取**
 
-1. 数据写入系统剪贴板后，通过[粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)获得临时授权读取剪贴板数据。直接点击粘贴按钮，使用[getData()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#getdata9)方法，即可直接读取系统剪贴板的内容。
+1. 数据写入系统剪贴板后，通过[粘贴控件](/docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton)获得临时授权读取剪贴板数据。直接点击粘贴按钮，使用[getData()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#getdata9)方法，即可直接读取系统剪贴板的内容。
 
    ```
    PasteButton()
@@ -297,7 +297,7 @@ await systemPasteBoard.setData(pasteData).catch((err: BusinessError) => {
 
 **获取剪贴板的内容和进度**
 
-[使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)获取临时授权后，调用[getDataWithProgress()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#getdatawithprogress15)方法获取剪贴板的内容及进度。params参数用于在应用使用剪贴板提供的文件拷贝功能时提供必要的信息，包括目标路径、文件冲突处理选项、进度条类型等。[ProgressListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#progresslistener15)是用于订阅进度数据变化的函数，可以当前获取数据的进度信息。进度数据状态变量更新后，刷新进度条Progress组件显示。
+[使用粘贴控件](/docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton)获取临时授权后，调用[getDataWithProgress()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#getdatawithprogress15)方法获取剪贴板的内容及进度。params参数用于在应用使用剪贴板提供的文件拷贝功能时提供必要的信息，包括目标路径、文件冲突处理选项、进度条类型等。[ProgressListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#progresslistener15)是用于订阅进度数据变化的函数，可以当前获取数据的进度信息。进度数据状态变量更新后，刷新进度条Progress组件显示。
 
 ```
 PasteButton()

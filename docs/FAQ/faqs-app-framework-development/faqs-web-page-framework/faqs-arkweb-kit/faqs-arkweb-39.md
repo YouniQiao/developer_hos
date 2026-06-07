@@ -1,6 +1,6 @@
 ---
 title: "Web组件如何访问本地的资源文件，并添加查询参数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-39
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-39
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "竖卡（4*3）"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-templates-for-negative-screen-0000002475304140
+original_url: /docs/distribute/agc/agc-help-templates-manage-0000002467901652/agc-help-templates-for-negative-screen-0000002475304140
 format: md
 ---
 

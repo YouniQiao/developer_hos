@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/restrict-plus-operands"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_restrict-plus-operands
+original_url: /docs/tools/coding-debug/ide_restrict-plus-operands
 format: md
 ---
 

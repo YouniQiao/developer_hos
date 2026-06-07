@@ -1,9 +1,9 @@
 ---
 title: "C#"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-sdksecurity-csharp-all-0000002359707082
+original_url: /docs/dev/game-dev/games-gamemme-sdksecurity-csharp-all-0000002359707082
 format: md
 ---
 
 
-* **[C#（Native）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-sdksecurity-csharp-native-0000002393267041)**
-* **[C#（小游戏）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-sdksecurity-csharp-minigame-0000002359547182)**
+* **[C#（Native）](/docs/dev/game-dev/games-gamemme-sdksecurity-csharp-native-0000002393267041)**
+* **[C#（小游戏）](/docs/dev/game-dev/games-gamemme-sdksecurity-csharp-minigame-0000002359547182)**

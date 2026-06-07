@@ -1,6 +1,6 @@
 ---
 title: "ServiceStop"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-servicestop-0000002328805237
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-servicestop-0000002328805237
 format: md
 ---
 

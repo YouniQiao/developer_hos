@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "60180007 服务端通过Authorization Code无法获取到华为账号一键登录手机号如何解决"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-21
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-21
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 **解决措施**
 
-1. 在获取到的匿名手机号和隐私协议在一键登录页面展示时，登录按钮的[LoginWithHuaweiIDButtonParams.loginType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttonparams)属性需设置为LoginType.QUICK\_LOGIN，完整示例代码请参考一键登录[客户端开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#客户端开发)的步骤**3.展示一键登录页面并获取Authorization Code**。
+1. 在获取到的匿名手机号和隐私协议在一键登录页面展示时，登录按钮的[LoginWithHuaweiIDButtonParams.loginType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttonparams)属性需设置为LoginType.QUICK\_LOGIN，完整示例代码请参考一键登录[客户端开发](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#客户端开发)的步骤**3.展示一键登录页面并获取Authorization Code**。
 
    ```
    import { loginComponentManager } from '@kit.AccountKit';
@@ -31,5 +31,5 @@ format: md
    };
    // 将params作为LoginWithHuaweiIDButton组件属性
    ```
-2. 一键登录预取号阶段获取到的Authorization Code不具备用户一键登录数据的授权，因此调用服务器接口报错。请参考一键登录[客户端开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#客户端开发)的步骤**3.展示一键登录页面并获取Authorization Code**及示例代码，获取正确的Authorization Code。
-3. Authorization Code是获取用户信息的临时凭证，不同场景下的Authorization Code获取到的用户数据也不同，因此在接入华为账号一键登录时，请务必按照[华为账号一键登录（获取手机号和UnionID/OpenID）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login)指南流程进行开发。
+2. 一键登录预取号阶段获取到的Authorization Code不具备用户一键登录数据的授权，因此调用服务器接口报错。请参考一键登录[客户端开发](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#客户端开发)的步骤**3.展示一键登录页面并获取Authorization Code**及示例代码，获取正确的Authorization Code。
+3. Authorization Code是获取用户信息的临时凭证，不同场景下的Authorization Code获取到的用户数据也不同，因此在接入华为账号一键登录时，请务必按照[华为账号一键登录（获取手机号和UnionID/OpenID）](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login)指南流程进行开发。

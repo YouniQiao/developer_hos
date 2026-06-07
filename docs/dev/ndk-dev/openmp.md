@@ -1,9 +1,9 @@
 ---
 title: "OpenMP支持"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp
+original_url: /docs/dev/ndk-dev/openmp
 format: md
 ---
 
 
-* **[OpenMP简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp-overview)**
-* **[OpenMP应用构建和运行指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/openmp-guideline)**
+* **[OpenMP简介](/docs/dev/ndk-dev/openmp-overview)**
+* **[OpenMP应用构建和运行指南](/docs/dev/ndk-dev/openmp-guideline)**

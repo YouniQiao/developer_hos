@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "语音识别"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speechrecognizer-guide
+original_url: /docs/dev/app-dev/ai/core-speech-kit-guide/speechrecognizer-guide
 format: md
 ---
 
@@ -149,7 +149,7 @@ format: md
    // 释放识别引擎资源
    asrEngine?.shutdown();
    ```
-10. 需要在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中添加ohos.permission.MICROPHONE权限，确保麦克风使用正常。详细步骤可查看[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)章节。
+10. 需要在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中添加ohos.permission.MICROPHONE权限，确保麦克风使用正常。详细步骤可查看[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)章节。
 
 ```
 // ...

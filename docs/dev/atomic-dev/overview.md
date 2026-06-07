@@ -2,7 +2,7 @@
 title: "原生元服务"
 sidebar_position: 1
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/overview
+original_url: /docs/dev/release-notes/overview
 ---
 
 
@@ -22,7 +22,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/over
 
 元服务基于HarmonyOS SDK（只能使用"[元服务API集](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/development-intro-api)"）开发，支持运行在1+8+N设备上，供用户在合适的场景、合适的设备上便捷使用。
 
-元服务的设计原则及规范，请查看[元服务设计指导](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001938867005)。
+元服务的设计原则及规范，请查看[元服务设计指导](/docs/design/atomic-service-design/overview)。
 
 元服务与传统应用的对比请见下表。
 

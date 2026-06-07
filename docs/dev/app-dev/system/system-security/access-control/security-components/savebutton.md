@@ -1,6 +1,6 @@
 ---
 title: "使用保存控件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/savebutton
+original_url: /docs/dev/app-dev/system/system-security/access-control/security-components/savebutton
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 
   ![](./img/7fdf3b2c.png)
 
-  ohos.permission.CUSTOMIZE\_SAVE\_BUTTON受限开放，仅默认样式无法满足业务场景时可申请，申请方式请参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+  ohos.permission.CUSTOMIZE\_SAVE\_BUTTON受限开放，仅默认样式无法满足业务场景时可申请，申请方式请参考[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。
 
 ## 开发步骤
 
@@ -44,7 +44,7 @@ format: md
 
    当前示例使用默认参数。具体请参见[SaveButton控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-security-components-savebutton)。此外，所有安全控件都继承了[安全控件通用属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-securitycomponent-attributes)，可用于定制样式。
 
-   有关将图片保存到媒体库的详细信息，请参考[保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
+   有关将图片保存到媒体库的详细信息，请参考[保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
 
    ```
    import { photoAccessHelper } from '@kit.MediaLibraryKit';

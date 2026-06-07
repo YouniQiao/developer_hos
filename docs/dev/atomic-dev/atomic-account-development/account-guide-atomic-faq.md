@@ -1,6 +1,6 @@
 ---
 title: "Account Kit常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-faq
+original_url: /docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-faq
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "报错ERROR: unknown option '--serve'"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-toolkit-error-unknown-option-serve
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-error-unknown-option-serve
 format: md
 ---
 
@@ -16,4 +16,4 @@ ASCF ToolKit版本低于最低依赖版本要求。
 
 **解决措施**
 
-请将ASCF ToolKit版本升级至1.0.4以上，方法请参考：[升级已有项目的ASCF Toolkit版本](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-plugin#升级已有项目的ascf-toolkit版本)。
+请将ASCF ToolKit版本升级至1.0.4以上，方法请参考：[升级已有项目的ASCF Toolkit版本](/docs/dev/atomic-dev/ascf/ascf-plugin#升级已有项目的ascf-toolkit版本)。

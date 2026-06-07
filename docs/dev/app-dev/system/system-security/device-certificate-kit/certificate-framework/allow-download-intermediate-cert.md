@@ -1,6 +1,6 @@
 ---
 title: "证书链校验时下载缺失的中间CA证书"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/allow-download-intermediate-cert
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/allow-download-intermediate-cert
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 
 ![](./img/bf569d0e.png)
 
-本开发指导中提供的示例代码需要在配置网络的前提下执行。需要申请ohos.permission.INTERNET权限，配置方式请参见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+本开发指导中提供的示例代码需要在配置网络的前提下执行。需要申请ohos.permission.INTERNET权限，配置方式请参见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ```
 import { cert } from '@kit.DeviceCertificateKit';

@@ -1,6 +1,6 @@
 ---
 title: "快游戏核准（备案）指南概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-introduction-0000001806446261
+original_url: /docs/dev/game-dev/quickgame-filing-introduction-0000001806446261
 has_merged_cells: true
 format: md
 ---
@@ -14,22 +14,22 @@ format: md
 
 | 核准（备案）类型 | | 描述 | 操作指南 |
 | --- | --- | --- | --- |
-| 首次核准（备案） | | 主体信息和快游戏信息均未在任何接入商核准（备案）。 | 华为云核准（备案）系统的操作步骤请参见[首次核准（备案）](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-first-0000001761656100)。 |
-| 新增互联网信息 | | 主体信息已在华为接入商核准（备案）成功，且快游戏信息未在其它任何接入商核准（备案）。 | 华为云核准（备案）系统的操作详情请参见[新增互联网信息](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-addition-0000001808815505)。 |
-| 新增接入 | | 主体信息已在华为接入商核准（备案）成功，且快游戏信息已在其它接入商核准（备案）成功。 | 华为云核准（备案）系统的操作步骤请参见[新增接入](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-admission-0000001817858181)。 |
+| 首次核准（备案） | | 主体信息和快游戏信息均未在任何接入商核准（备案）。 | 华为云核准（备案）系统的操作步骤请参见[首次核准（备案）](/docs/dev/game-dev/quickgame-filing-pc-first-0000001761656100)。 |
+| 新增互联网信息 | | 主体信息已在华为接入商核准（备案）成功，且快游戏信息未在其它任何接入商核准（备案）。 | 华为云核准（备案）系统的操作详情请参见[新增互联网信息](/docs/dev/game-dev/quickgame-filing-pc-addition-0000001808815505)。 |
+| 新增接入 | | 主体信息已在华为接入商核准（备案）成功，且快游戏信息已在其它接入商核准（备案）成功。 | 华为云核准（备案）系统的操作步骤请参见[新增接入](/docs/dev/game-dev/quickgame-filing-pc-admission-0000001817858181)。 |
 | 新增接入（补录） | | 主体信息已在华为接入商核准（备案）成功，且快游戏信息已在华为原核准（备案）系统核准（备案）成功。 |
-| 认领核准（备案） | | 主体信息和快游戏信息均已在华为原核准（备案）系统核准（备案）成功。 | 华为云核准（备案）系统的操作步骤请参见[认领核准（备案）](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-claim-0000001887387029)。 |
-| 转移核准（备案） | | 将主体信息及主体下的快游戏信息全部转移到目标账号下，且同时满足：   * 初始账号没有正在核准（备案）的申请。 * 目标账号没有正在核准（备案）的申请，同时没有已核准（备案）成功的主体信息。 | 华为云核准（备案）系统的操作步骤请参见[转移核准（备案）](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-transfer-0000001802102070)。 |
-| 变更核准（备案） | 变更核准（备案） | 同时变更主体信息和快游戏信息。 | 华为云核准（备案）系统的操作步骤请参见[变更核准（备案）](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-change-0000001761815056#section684319599410)。 |
-| 变更主体 | 变更主体信息。 | 华为云核准（备案）系统的操作步骤请参见[变更主体](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-change-0000001761815056#section10803627193919)。 |
-| 变更互联网信息 | 变更快游戏信息。 | 华为云核准（备案）系统的操作步骤请参见[变更互联网信息](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-change-0000001761815056#section1445983116397)。 |
-| 注销核准（备案） | 注销主体 | 删除主体信息及主体下的互联网信息在工信部的核准（备案）。注销成功后，主体信息及主体下的互联网信息将成为未核准（备案）信息，主办单位不可再对外提供任何互联网信息服务。 | 华为云核准（备案）系统的操作步骤请参见[注销主体](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-terminate-0000001761919188#section142891715161813)。 |
-| 注销互联网信息 | 删除快游戏信息在工信部的核准（备案）。注销成功后，快游戏信息将成为未核准（备案）信息，不可再对外提供互联网信息服务。 | 华为云核准（备案）系统的操作步骤请参见[注销互联网信息](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-terminate-0000001761919188#section112908214187)。 |
-| 取消接入 | | 删除快游戏信息在华为接入商的核准（备案）：   * 若在其它接入商也有核准（备案），快游戏不受影响。 * 若在其它接入商没有核准（备案），快游戏可能会被清理。 | 华为云核准（备案）系统的操作步骤请参见[取消接入](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-cancel-0000001801205680)。 |
+| 认领核准（备案） | | 主体信息和快游戏信息均已在华为原核准（备案）系统核准（备案）成功。 | 华为云核准（备案）系统的操作步骤请参见[认领核准（备案）](/docs/dev/game-dev/quickgame-filing-pc-claim-0000001887387029)。 |
+| 转移核准（备案） | | 将主体信息及主体下的快游戏信息全部转移到目标账号下，且同时满足：   * 初始账号没有正在核准（备案）的申请。 * 目标账号没有正在核准（备案）的申请，同时没有已核准（备案）成功的主体信息。 | 华为云核准（备案）系统的操作步骤请参见[转移核准（备案）](/docs/dev/game-dev/quickgame-filing-pc-transfer-0000001802102070)。 |
+| 变更核准（备案） | 变更核准（备案） | 同时变更主体信息和快游戏信息。 | 华为云核准（备案）系统的操作步骤请参见[变更核准（备案）](/docs/dev/game-dev/quickgame-filing-pc-change-0000001761815056#section684319599410)。 |
+| 变更主体 | 变更主体信息。 | 华为云核准（备案）系统的操作步骤请参见[变更主体](/docs/dev/game-dev/quickgame-filing-pc-change-0000001761815056#section10803627193919)。 |
+| 变更互联网信息 | 变更快游戏信息。 | 华为云核准（备案）系统的操作步骤请参见[变更互联网信息](/docs/dev/game-dev/quickgame-filing-pc-change-0000001761815056#section1445983116397)。 |
+| 注销核准（备案） | 注销主体 | 删除主体信息及主体下的互联网信息在工信部的核准（备案）。注销成功后，主体信息及主体下的互联网信息将成为未核准（备案）信息，主办单位不可再对外提供任何互联网信息服务。 | 华为云核准（备案）系统的操作步骤请参见[注销主体](/docs/dev/game-dev/quickgame-filing-pc-terminate-0000001761919188#section142891715161813)。 |
+| 注销互联网信息 | 删除快游戏信息在工信部的核准（备案）。注销成功后，快游戏信息将成为未核准（备案）信息，不可再对外提供互联网信息服务。 | 华为云核准（备案）系统的操作步骤请参见[注销互联网信息](/docs/dev/game-dev/quickgame-filing-pc-terminate-0000001761919188#section112908214187)。 |
+| 取消接入 | | 删除快游戏信息在华为接入商的核准（备案）：   * 若在其它接入商也有核准（备案），快游戏不受影响。 * 若在其它接入商没有核准（备案），快游戏可能会被清理。 | 华为云核准（备案）系统的操作步骤请参见[取消接入](/docs/dev/game-dev/quickgame-filing-pc-cancel-0000001801205680)。 |
 
 ![](./img/faf61cdd.png)
 
-在华为云App核准（备案）的操作步骤请参见[华为云App核准（备案）](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-system-0000001759525732)。
+在华为云App核准（备案）的操作步骤请参见[华为云App核准（备案）](/docs/dev/game-dev/quickgame-filing-app-system-0000001759525732)。
 
 ## 核准（备案）流程
 
@@ -41,9 +41,9 @@ format: md
 
 | 序号 | 步骤 | 说明 |
 | --- | --- | --- |
-| 1 | [核准（备案）准备](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-cloud-preparation-0000002017567589) | 正式提交核准（备案）申请前，您需要先完成核准（备案）准备工作。 |
-| 2 | 提交核准（备案）申请 | 支持在华为云核准（备案）系统提交核准（备案）申请，具体操作流程请参考[在华为云核准（备案）系统核准（备案）](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-first-0000001761656100)。 |
-| 3 | [工信部核验核准（备案）短信](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-sms-verify-0000001818117885) | 除了转移核准（备案）、认领核准（备案）、取消接入，其它核准（备案）类型请前往工信部网站进行短信核验。 |
+| 1 | [核准（备案）准备](/docs/dev/game-dev/quickgame-filing-cloud-preparation-0000002017567589) | 正式提交核准（备案）申请前，您需要先完成核准（备案）准备工作。 |
+| 2 | 提交核准（备案）申请 | 支持在华为云核准（备案）系统提交核准（备案）申请，具体操作流程请参考[在华为云核准（备案）系统核准（备案）](/docs/dev/game-dev/quickgame-filing-pc-first-0000001761656100)。 |
+| 3 | [工信部核验核准（备案）短信](/docs/dev/game-dev/quickgame-filing-sms-verify-0000001818117885) | 除了转移核准（备案）、认领核准（备案）、取消接入，其它核准（备案）类型请前往工信部网站进行短信核验。 |
 
 ## 相关概念
 

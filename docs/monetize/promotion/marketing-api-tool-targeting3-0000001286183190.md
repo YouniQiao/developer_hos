@@ -1,7 +1,7 @@
 ---
 title: "修改定向包"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-targeting3-0000001286183190
+original_url: /docs/monetize/promotion/marketing-api-tool-targeting3-0000001286183190
 format: md
 ---
 
@@ -34,16 +34,16 @@ format: md
   | network\_type\_struct | Struct2 | 否 | 网络类型定向，值为network\_type定向中的value，可以复选。 |
   | audience\_struct | Struct2 | 否 | 自定义人群定向，值为pre\_define\_audience定向中的id；  pre\_defined\_audience\_struct和not\_pre\_defined\_audience\_struct选择的值不能相同。 |
   | not\_audience\_struct | Struct2 | 否 | 排除自定义人群定向，值为not\_pre\_define\_audience定向中的id  pre\_defined\_audience\_struct和not\_pre\_defined\_audience\_struct选择的值不能相同。 |
-  | current\_custom\_location\_struct | Struct2 | 否 | 自定义地理位置-当前-包含；  商品广告必填地域，地域编码详见[海外地域字典数据](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-targeting7-0000001286343134#ZH-CN_TOPIC_0000001286343134__li1079145116117)。 |
-  | not\_current\_custom\_location\_struct | Struct2 | 否 | 自定义地理位置-当前-排除；  商品广告必填地域，地域编码详见[海外地域字典数据](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-targeting7-0000001286343134#ZH-CN_TOPIC_0000001286343134__li1079145116117)。 |
+  | current\_custom\_location\_struct | Struct2 | 否 | 自定义地理位置-当前-包含；  商品广告必填地域，地域编码详见[海外地域字典数据](/docs/monetize/promotion/marketing-api-tool-targeting7-0000001286343134#ZH-CN_TOPIC_0000001286343134__li1079145116117)。 |
+  | not\_current\_custom\_location\_struct | Struct2 | 否 | 自定义地理位置-当前-排除；  商品广告必填地域，地域编码详见[海外地域字典数据](/docs/monetize/promotion/marketing-api-tool-targeting7-0000001286343134#ZH-CN_TOPIC_0000001286343134__li1079145116117)。 |
   | app\_category\_of\_media\_struct | Struct2 | 否 | 投放媒体类型定向值为media\_app\_category；  value值如果需要选择所有的子节点的话，可以只传入父节点，相关联的父子节点不能同时填入。 |
   | carrier\_struct | Struct2 | 否 | 运营商定向，值为carrier的value（注意取pid非0的value）。 |
   | language\_struct | Struct2 | 否 | 语言定向，值为language的value，商品广告不支持语言定向。 |
   | unlimit\_app\_interest\_struct | Struct2 | 否 | App兴趣，值为app\_interest中的value。 |
   | normal\_app\_interest\_struct | Struct2 | 否 | App兴趣中兴趣的用户，值为app\_interest中的value。 |
   | high\_app\_interest\_struct | Struct2 | 否 | App兴趣高兴趣的用户，值为app\_interest中的value。 |
-  | ai\_target | Struct2 | 否 | 智能扩量如果填值不为空，智能扩量开关ai\_target\_flag必须打开，取值详见[智能扩量](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1559243472919)。 |
-  | ai\_target\_flag | string | 否 | 智能扩量开关：开关打开ai\_target字段如果不填就是默认突破，取值详见[智能扩量开关](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section9173164110290)。 |
+  | ai\_target | Struct2 | 否 | 智能扩量如果填值不为空，智能扩量开关ai\_target\_flag必须打开，取值详见[智能扩量](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1559243472919)。 |
+  | ai\_target\_flag | string | 否 | 智能扩量开关：开关打开ai\_target字段如果不填就是默认突破，取值详见[智能扩量开关](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section9173164110290)。 |
   | app\_category\_of\_media\_struct | Struct2 | 否 | 投放媒体类型定向  value值如果需要选择所有的子节点的话，可以只传入父节点 |
   | not\_app\_category\_of\_media\_struct | Struct2 | 否 | 投放媒体类型排除定向 |
 

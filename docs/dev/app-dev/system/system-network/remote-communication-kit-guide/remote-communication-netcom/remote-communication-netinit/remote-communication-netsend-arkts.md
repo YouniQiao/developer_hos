@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发送网络请求（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netsend-arkts
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netsend-arkts
 format: md
 ---
 

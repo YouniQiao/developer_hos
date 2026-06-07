@@ -1,6 +1,6 @@
 ---
 title: "使用扩展的Node-API接口在异步线程中运行和停止事件循环"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-event-loop
+original_url: /docs/dev/ndk-dev/use-napi-event-loop
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "音频处理哪些场景内置3A算法及AEC、ANC、AGC是否支持独立开关"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-6
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-6
 ---
 
 

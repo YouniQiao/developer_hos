@@ -1,6 +1,6 @@
 ---
 title: "嵌入ArkTS组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embed-arkts-components
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embed-arkts-components
 format: md
 ---
 
@@ -13,9 +13,9 @@ ArkUI在Native侧提供的能力作为ArkTS的子集，部分能力不会在Nati
 
 * 通过OH\_ArkUI\_GetNodeHandleFromNapiValue接口获得的ArkUI\_NodeHandle对象只能作为子组件参数使用，如[addChild](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#addchild)接口的第二个参数，将该对象使用在其他场景下，如[setAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#setattribute)设置属性将不生效并返回错误码。
 * 针对Native侧修改ArkTS组件的场景，需要在Native侧通过Node-API方式构建ArkTS侧的更新数据，再通过ComponentContent的[update](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent#update)接口更新。
-* [构建自定义组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-build-custom-components)时，相关函数如measureNode等无法对ArkTS模块内部的组件进行调用。
+* [构建自定义组件](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-custom-components)时，相关函数如measureNode等无法对ArkTS模块内部的组件进行调用。
 
-以下示例代码在[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)章节基础上引入ArkTS的Refresh组件。
+以下示例代码在[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)章节基础上引入ArkTS的Refresh组件。
 
 **图1** Refresh组件挂载文本列表
 
@@ -816,7 +816,7 @@ ArkUI在Native侧提供的能力作为ArkTS的子集，部分能力不会在Nati
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/NativeType/NdkEmbedArktsComponents/entry/src/main/cpp/UITimer.h#L15-L90" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：UITimer.h</a></div>
 
-7. 使用[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)章节的页面结构，将Refresh组件作为文本列表的父组件。
+7. 使用[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)章节的页面结构，将Refresh组件作为文本列表的父组件。
 
    ```
    // MixedRefreshExample.h

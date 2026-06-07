@@ -1,7 +1,7 @@
 ---
 format: md
 title: "web组件访问过程中的illegal、fraud、risk和warning这4个风险等级区别是什么？是否可以自定义"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-79
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-79
 ---
 
 

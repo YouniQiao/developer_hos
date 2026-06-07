@@ -1,6 +1,6 @@
 ---
 title: "元服务交易评价"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-transaction-rating-0000002338669134
+original_url: /docs/distribute/agc/agc-help-users-operation-0000002338612342/agc-help-transaction-rating-0000002338669134
 format: md
 ---
 

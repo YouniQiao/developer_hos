@@ -1,7 +1,7 @@
 ---
 title: "devicedebug工具"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/devicedebug-tool
+original_url: /docs/tools/cli-tools/devicedebug-tool
 format: md
 ---
 

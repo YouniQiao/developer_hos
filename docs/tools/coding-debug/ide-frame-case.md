@@ -1,7 +1,7 @@
 ---
 title: "案例：使用Frame模板分析应用卡顿问题"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-frame-case
+original_url: /docs/tools/coding-debug/ide-frame-case
 format: md
 ---
 

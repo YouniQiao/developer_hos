@@ -1,7 +1,7 @@
 ---
 title: "首页"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-level1-homepage-0000002466018822
+original_url: /docs/monetize/promotion/fusion-level1-homepage-0000002466018822
 format: md
 ---
 

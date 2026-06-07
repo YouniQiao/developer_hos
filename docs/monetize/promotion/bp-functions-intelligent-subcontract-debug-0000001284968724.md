@@ -1,7 +1,7 @@
 ---
 title: "功能调试"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-debug-0000001284968724
+original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-debug-0000001284968724
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ## 调试步骤
 
-1. 创建智能分包，并设置智能分包渠道号，详情请参考[新建智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)。
+1. 创建智能分包，并设置智能分包渠道号，详情请参考[新建智能分包](/docs/monetize/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)。
 2. 创建搜索任务，创建任务时应注意以下几点：
    - 在“投放控制 &gt; 每日预算”设置中，设置任务预算建议不少于500，且账户预算建议不少于1000。
    - 在“通用投放”设置中，关闭“通用投放开关”。
@@ -22,7 +22,7 @@ format: md
 3. 创建完成并审核通过后，搜索关键词，找到推广位（需与运营进行确认），并下载应用。
 4. 查看报表数据是否统计到了本次下载，来确认本次下载是否为推广量。
 
-   具体请参见[查询任务数据报表](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-inquire-0000001337408053)。
+   具体请参见[查询任务数据报表](/docs/monetize/promotion/bp-functions-intelligent-subcontract-inquire-0000001337408053)。
 5. 覆盖安装测试包。
 
    <strong>adb install -r</strong> *&lt;测试包所在路径&gt;.apk*

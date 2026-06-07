@@ -1,6 +1,6 @@
 ---
 title: "游戏道具商城"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-prop-mall-0000002363562394
+original_url: /docs/dev/game-dev/games-center-prop-mall-0000002363562394
 has_merged_cells: true
 format: md
 ---
@@ -17,7 +17,7 @@ format: md
 ## 前提条件
 
 * 已创建游戏，且软件包类型为“APP（HarmonyOS应用）”，支持设备为“手机”。
-* 您已在商品管理[新增商品](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-create-digital-products-0000002286076724)。
+* 您已在商品管理[新增商品](/docs/dev/game-dev/games-center-create-digital-products-0000002286076724)。
 
 ## 准备道具素材
 
@@ -42,7 +42,7 @@ format: md
    | 类型 | 参数 | 说明 |
    | --- | --- | --- |
    | 基础信息 | 发货方式 | 选择“游戏内发放”。 |
-   | 道具ID | 下拉选择可上架已发布商品，新增商品前往[商品管理台](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-products-manage-0000002286057092)创建。 |
+   | 道具ID | 下拉选择可上架已发布商品，新增商品前往[商品管理台](/docs/dev/game-dev/games-center-products-manage-0000002286057092)创建。 |
    | 道具名称 | 由道具ID搜索而来。 |
    | 道具价格 | 由道具ID搜索而来。 |
    | 折扣信息 | 关联在商品管理台配置的促销信息，下拉选择折扣价格。折扣标签，请输入具体的折扣描述，如“半价”、“85折”，标签将在道具商城面向用户展示，若未输入标签，则默认展示“折后”标签。 |

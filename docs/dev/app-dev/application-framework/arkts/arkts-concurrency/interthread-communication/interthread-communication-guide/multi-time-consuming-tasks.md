@@ -1,6 +1,6 @@
 ---
 title: "使用TaskPool执行多个耗时任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-time-consuming-tasks
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/multi-time-consuming-tasks
 format: md
 ---
 

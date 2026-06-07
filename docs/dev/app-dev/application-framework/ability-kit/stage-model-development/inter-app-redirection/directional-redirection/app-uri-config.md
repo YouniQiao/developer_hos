@@ -1,13 +1,13 @@
 ---
 title: "应用链接说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config
 format: md
 ---
 
 
 ## uris标签说明
 
-当在[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)文件的[skills字段](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)中声明uris时，主要包含如下字段。
+当在[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)文件的[skills字段](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)中声明uris时，主要包含如下字段。
 
 * scheme：协议名称。常见的取值有http、https、file、ftp等，也可以自定义。
 * host：域名或IP地址。例如域名developer.huawei.com或IP地址127.0.0.1。
@@ -53,18 +53,18 @@ format: md
    | 值 | 说明 |
    | --- | --- |
    | AppStorageMgmt | 指示清理应用沙箱目录中缓存数据的功能。使用场景详见[清理应用沙箱缓存数据场景](#清理应用沙箱缓存数据场景)。 |
-   | FileOpen | 指示打开处理文件的功能。使用场景详见[拉起文件处理类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-processing-apps-startup)。 |
-   | Navigation | 指示导航功能。使用场景详见[拉起导航类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-navigation-apps)。 |
-   | RoutePlan | 指示路线规划功能。使用场景详见[拉起导航类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-navigation-apps)。 |
-   | PlaceSearch | 指示地点搜索功能。使用场景详见[拉起导航类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-navigation-apps)。 |
-   | Transfer | 指示转账汇款功能。使用场景详见[拉起金融类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-finance-apps)。 |
-   | CreditCardRepayment | 指示信用卡还款功能。使用场景详见[拉起金融类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-finance-apps)。 |
-   | ComposeMail | 指示撰写邮件功能。使用场景详见[拉起邮件类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-email-apps)。 |
-   | QueryByFlightNo | 指示按航班号查询航班功能。使用场景详见[拉起航班类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-flight-apps)。 |
-   | QueryByLocation | 指示按起降地查询航班功能。使用场景详见[拉起航班类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-flight-apps)。 |
-   | QueryExpress | 指示快递查询功能。使用场景详见[拉起快递类应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-express-apps)。 |
-   | AppNotificationMgmt | 指示应用内通知设置的功能。使用场景详见[应用内通知设置快捷入口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-shortcut-settings)。 |
-   | PrimaryContactMgmt | 从API version 23开始，新增支持该字段。指示社交通讯类应用“重要联系人列表”的设置功能。使用场景详见[优先通知权益申请](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/priority-notification-permission-guidelines)。 |
+   | FileOpen | 指示打开处理文件的功能。使用场景详见[拉起文件处理类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/file-processing-apps-startup)。 |
+   | Navigation | 指示导航功能。使用场景详见[拉起导航类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-navigation-apps)。 |
+   | RoutePlan | 指示路线规划功能。使用场景详见[拉起导航类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-navigation-apps)。 |
+   | PlaceSearch | 指示地点搜索功能。使用场景详见[拉起导航类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-navigation-apps)。 |
+   | Transfer | 指示转账汇款功能。使用场景详见[拉起金融类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-finance-apps)。 |
+   | CreditCardRepayment | 指示信用卡还款功能。使用场景详见[拉起金融类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-finance-apps)。 |
+   | ComposeMail | 指示撰写邮件功能。使用场景详见[拉起邮件类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-email-apps)。 |
+   | QueryByFlightNo | 指示按航班号查询航班功能。使用场景详见[拉起航班类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-flight-apps)。 |
+   | QueryByLocation | 指示按起降地查询航班功能。使用场景详见[拉起航班类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-flight-apps)。 |
+   | QueryExpress | 指示快递查询功能。使用场景详见[拉起快递类应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-express-apps)。 |
+   | AppNotificationMgmt | 指示应用内通知设置的功能。使用场景详见[应用内通知设置快捷入口](/docs/dev/app-dev/application-services/notification-kit/notification-shortcut-settings)。 |
+   | PrimaryContactMgmt | 从API version 23开始，新增支持该字段。指示社交通讯类应用“重要联系人列表”的设置功能。使用场景详见[优先通知权益申请](/docs/dev/app-dev/application-services/notification-kit/priority-notification-permission-guidelines)。 |
 2. 指定类型的应用被拉起时免跳转弹框：正常情况下，拉起指定类型的应用时，都会弹出确认是否打开应用的弹窗。如果您的应用有向其他应用提供登录/分享/支付的功能，可以在应用中声明对应的LinkFeature（取值参见下表）。应用通过上架审核后，当其他应用拉起您的应用时将不再弹窗提示。
 
    ![](./img/e0669687.png)
@@ -83,7 +83,7 @@ format: md
 
 如果开发者实现了自定义数据清理页面，并希望能够在应用详情页提供跳转入口，可以通过配置linkFeature字段进行接入。
 
-1. 在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中，对实现了数据清理功能的Ability添加如下skills配置。
+1. 在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中，对实现了数据清理功能的Ability添加如下skills配置。
 
    其中，linkFeature字段必须配置为AppStorageMgmt，其他字段取值请根据实际情况修改为实际值。
 

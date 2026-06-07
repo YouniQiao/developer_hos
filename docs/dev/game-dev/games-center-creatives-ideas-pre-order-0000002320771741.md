@@ -1,12 +1,12 @@
 ---
 title: "游戏预约魔方创意"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-creatives-ideas-pre-order-0000002320771741
+original_url: /docs/dev/game-dev/games-center-creatives-ideas-pre-order-0000002320771741
 has_merged_cells: true
 format: md
 ---
 
 
-游戏预约魔方创意是为[游戏预约](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-pre-order-applyfor-0000002286057048)提供的在线制作、轻松上手、简单轻量的设计网站。该网站支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计游戏预约的可视化H5落地页。
+游戏预约魔方创意是为[游戏预约](/docs/dev/game-dev/games-center-pre-order-applyfor-0000002286057048)提供的在线制作、轻松上手、简单轻量的设计网站。该网站支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计游戏预约的可视化H5落地页。
 
 ## 编辑器界面
 
@@ -35,7 +35,7 @@ format: md
 | 更换模板 | 您可以重新选择页面模板，请参见[创建H5页面](#section7182346111813)。 |
 | 页面设置 | 您需要设置全局样式，例如页面名称、页面使用组件版本等。 |
 | 保存 | 您可以随时保存页面内容。 |
-| 预览 | 您可以随时[预览页面内容](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-creatives-ideas-0000002286004608#section31105420225)。 |
+| 预览 | 您可以随时[预览页面内容](/docs/dev/game-dev/games-center-creatives-ideas-0000002286004608#section31105420225)。 |
 | 提交审核 | 您可以在完成当前页面后[提交审核](#section7501181420712)。 |
 
 ### 编辑预览区域

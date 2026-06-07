@@ -1,6 +1,6 @@
 ---
 title: "应用程序包术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-glossary
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-glossary
 ---
 
 ## A

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "SharedLibrary能否在配置文件中声明abilities、extensionAbilities标签"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-7
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-7
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **参考链接**
 
-[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)
+[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)

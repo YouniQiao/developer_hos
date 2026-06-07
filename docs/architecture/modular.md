@@ -16,11 +16,11 @@ format: md
 
 ## 应用程序包结构概念
 
-在进行模块化设计时，需要考虑HarmonyOS的应用包结构选型，HarmonyOS的应用包结构用于定义应用的组织方式。通过开发态、编译态、发布态阶段的应用程序包形态，可以了解不同包类型的具体使用场景及规则。详细请参见[Stage模型应用程序包结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-stage)。
+在进行模块化设计时，需要考虑HarmonyOS的应用包结构选型，HarmonyOS的应用包结构用于定义应用的组织方式。通过开发态、编译态、发布态阶段的应用程序包形态，可以了解不同包类型的具体使用场景及规则。详细请参见[Stage模型应用程序包结构](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage)。
 
 ## UIAbility应用组件设计
 
-HarmonyOS应用的业务逻辑需要通过[UIAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-overview)承载，根据业务设备以及业务诉求不同，需要考虑UIAbility组件的选择以及设计。在多设备的背景下，应用的形态不一定是传统移动设备上的单任务单窗口形式，在一些场景下，多任务多窗口的形态可以让用户获得更好的用户体验，提升使用效率。
+HarmonyOS应用的业务逻辑需要通过[UIAbility组件](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-overview)承载，根据业务设备以及业务诉求不同，需要考虑UIAbility组件的选择以及设计。在多设备的背景下，应用的形态不一定是传统移动设备上的单任务单窗口形式，在一些场景下，多任务多窗口的形态可以让用户获得更好的用户体验，提升使用效率。
 
 例如在手机设备上：
 
@@ -42,7 +42,7 @@ HarmonyOS应用的业务逻辑需要通过[UIAbility组件](https://developer.hu
 * 对于单Ability的情况，可以对应单窗口类型应用、通过多实例实现的多任务应用，或通过指定实例实现的多任务应用。例如，普通游戏应用建议采用单HAP来承载UIAbility。
 * 对于多Ability有两种情况：
   + 对于多窗口类型的应用，每个窗口对应不同的功能，通过不同的UIAbility承载。如上述例子中导航/打车应用中，导航功能界面和主页属于不同的功能，并且作为两个任务呈现给用户。可以将该模块作为Feature类型的HAP承载相应的UIAbility组件。
-  + 对于应用的拓展功能，如卡片和分享业务，这些功能不会作为单独的任务和窗口形态运行。由于这些功能相对独立，并且由系统提供的独立[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)承载，从更好地拆分业务的角度考虑，建议通过Feature类型的HAP承载单独的ExtensionAbility组件。
+  + 对于应用的拓展功能，如卡片和分享业务，这些功能不会作为单独的任务和窗口形态运行。由于这些功能相对独立，并且由系统提供的独立[ExtensionAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)承载，从更好地拆分业务的角度考虑，建议通过Feature类型的HAP承载单独的ExtensionAbility组件。
 
 ## 应用模块化选型
 
@@ -84,7 +84,7 @@ HarmonyOS应用的业务逻辑需要通过[UIAbility组件](https://developer.hu
 
 ### 多HAP/HSP引用相同HAR包的影响
 
-在应用开发的过程中，可以使用[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)或[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)的共享包方式将同类的模块进行整合，用于实现多个模块或多个工程间共享ArkUI组件、资源等相关代码。
+在应用开发的过程中，可以使用[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)或[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)的共享包方式将同类的模块进行整合，用于实现多个模块或多个工程间共享ArkUI组件、资源等相关代码。
 
 在多HAP/HSP引用相同HAR包时，由于共享包的动态和静态差异，HAR包中的单例可能失效，影响应用冷启动性能。
 
@@ -103,7 +103,7 @@ HarmonyOS应用的业务逻辑需要通过[UIAbility组件](https://developer.hu
 > **说明**
 >
 > * 在多HAP/HSP引用相同HAR包的情况下，如果HSP包和HAR包均能满足业务需求，建议将HSP包改为HAR包。
-> * 若使用的HSP为[集成态HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/integrated-hsp)，可跳过该优化方案。
+> * 若使用的HSP为[集成态HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/integrated-hsp)，可跳过该优化方案。
 
 > 1. 在被引用 HAR_COMMON 包中写入功能示例。
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用hdc命令安装release HAP包到设备时上报“INSTALL_FAILED_APP_SOURCE_NOT_TRUSTED”错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-51
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-51
 ---
 
 

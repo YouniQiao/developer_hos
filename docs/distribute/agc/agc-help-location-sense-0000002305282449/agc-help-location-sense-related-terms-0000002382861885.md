@@ -1,6 +1,6 @@
 ---
 title: "术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-related-terms-0000002382861885
+original_url: /docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-related-terms-0000002382861885
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "跨模块页面路由"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-inter-module-page-routing
+original_url: /docs/dev/atomic-dev/atomic-navigation-routing/atomic-inter-module-page-routing
 format: md
 ---
 

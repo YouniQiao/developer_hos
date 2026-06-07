@@ -1,6 +1,6 @@
 ---
 title: "接入手写套件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-suite
+original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-suite
 format: md
 ---
 

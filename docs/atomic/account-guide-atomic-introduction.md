@@ -1,6 +1,6 @@
 ---
 title: "Account Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-introduction
+original_url: /docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-introduction
 format: md
 ---
 
@@ -11,9 +11,9 @@ Account Kit（华为账号服务）提供简单、快速、安全的登录功能
 
 ## 能力范围
 
-* [登录](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-silent-login)：提供登录服务，让用户使用华为账号快速登录元服务。
-* [获取华为账号用户信息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-user-info-overview)：获取用户的基本开放信息，如头像昵称、手机号、收货地址、发票抬头、风险等级。
-* [未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-overview-minorsprotection)：获取未成年人模式的开启状态及年龄段信息以进行内容分级，调整未成年人相关设置时可增加家长验证，还可调用接口引导用户开启或关闭未成年人模式。
+* [登录](/docs/dev/atomic-dev/atomic-account-development/account-atomic-silent-login)：提供登录服务，让用户使用华为账号快速登录元服务。
+* [获取华为账号用户信息](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-user-info-overview)：获取用户的基本开放信息，如头像昵称、手机号、收货地址、发票抬头、风险等级。
+* [未成年人模式](/docs/dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-overview-minorsprotection)：获取未成年人模式的开启状态及年龄段信息以进行内容分级，调整未成年人相关设置时可增加家长验证，还可调用接口引导用户开启或关闭未成年人模式。
 
 ## 亮点/特征
 
@@ -26,7 +26,7 @@ Account Kit（华为账号服务）提供简单、快速、安全的登录功能
 
 ## 示例代码
 
-Account Kit提供的[SampleCode示例工程](https://gitcode.com/HarmonyOS_Samples/account-kit-samplecode-clientdemo-for-atomicservice-arkts)体现了Account Kit提供的[登录](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-silent-login)、[获取头像昵称](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-avatar-nickname-overview)、[快速验证手机号](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phonenumber)、[收货地址](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-choose-address)、[发票抬头](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-select-invoice-title)、[未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-overview-minorsprotection)等特性，可参考该工程进行元服务的相关内容开发。
+Account Kit提供的[SampleCode示例工程](https://gitcode.com/HarmonyOS_Samples/account-kit-samplecode-clientdemo-for-atomicservice-arkts)体现了Account Kit提供的[登录](/docs/dev/atomic-dev/atomic-account-development/account-atomic-silent-login)、[获取头像昵称](/docs/dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-overview)、[快速验证手机号](/docs/dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phonenumber)、[收货地址](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-choose-address)、[发票抬头](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-select-invoice-title)、[未成年人模式](/docs/dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-overview-minorsprotection)等特性，可参考该工程进行元服务的相关内容开发。
 
 ## 基本概念
 
@@ -43,16 +43,16 @@ Account Kit提供的[SampleCode示例工程](https://gitcode.com/HarmonyOS_Sampl
 
 | Account Kit提供的能力 | 支持的设备类型 |
 | --- | --- |
-| [获取头像昵称](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-avatar-nickname-overview) | Phone、Tablet、PC/2in1 |
-| [获取手机号](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phone-overview) | Phone、Tablet、PC/2in1 |
-| [获取收货地址](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-choose-address) | Phone、Tablet、PC/2in1 |
-| [获取发票抬头](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-select-invoice-title) | Phone、Tablet、PC/2in1 |
-| [获取风险等级](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-risklevel) | Phone、Tablet、PC/2in1 |
-| [未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-overview-minorsprotection) | Phone、Tablet、PC/2in1、TV |
+| [获取头像昵称](/docs/dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-overview) | Phone、Tablet、PC/2in1 |
+| [获取手机号](/docs/dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone-overview) | Phone、Tablet、PC/2in1 |
+| [获取收货地址](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-choose-address) | Phone、Tablet、PC/2in1 |
+| [获取发票抬头](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-select-invoice-title) | Phone、Tablet、PC/2in1 |
+| [获取风险等级](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-risklevel) | Phone、Tablet、PC/2in1 |
+| [未成年人模式](/docs/dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-overview-minorsprotection) | Phone、Tablet、PC/2in1、TV |
 
 ### 支持的国家/地区
 
-请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-appendix-support-regions)。
+请参见[支持的国家/地区](/docs/dev/app-dev/application-services/account-appendix-support-regions)。
 
 ## 模拟器支持情况
 

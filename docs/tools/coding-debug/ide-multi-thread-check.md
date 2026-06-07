@@ -1,7 +1,7 @@
 ---
 title: "方舟运行时检测"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-multi-thread-check
+original_url: /docs/tools/coding-debug/ide-multi-thread-check
 format: md
 ---
 

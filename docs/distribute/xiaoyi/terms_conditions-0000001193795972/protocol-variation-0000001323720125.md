@@ -1,7 +1,7 @@
 ---
 title: "协议变更点"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/protocol-variation-0000001323720125
+original_url: /docs/distribute/xiaoyi/terms_conditions-0000001193795972/protocol-variation-0000001323720125
 format: md
 ---
 
@@ -58,7 +58,7 @@ format: md
 
 1.平台协议名称更改为小艺开放平台合作协议。
 
-2.协议内容整体按智慧分发维度进行变更，详细变更点请查看[华为智慧分发平台合作协议](https://developer.huawei.com/consumer/cn/doc/service/harmonyos_agreement-0000001238515921)。
+2.协议内容整体按智慧分发维度进行变更，详细变更点请查看[华为智慧分发平台合作协议](/docs/distribute/xiaoyi/terms_conditions-0000001193795972/harmonyos_agreement-0000001238515921)。
 
 **更新时间：****2022****年****4****月****29****日**
 

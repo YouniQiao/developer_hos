@@ -1,7 +1,7 @@
 ---
 format: md
 title: "native如何获取沙箱路径"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-33
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-33
 ---
 
 

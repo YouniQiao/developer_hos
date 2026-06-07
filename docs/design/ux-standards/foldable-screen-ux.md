@@ -1,7 +1,7 @@
 ---
 title: 折叠屏应用 UX 体验标准
 sidebar_label: 折叠屏应用 UX 体验标准
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-foldable-screen-0000001807866557
+original_url: /docs/design/ux-standards/foldable-screen-ux
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 折叠屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout) |
+| 系统能力 | | 请参阅[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout) |
 
 4.2 开合流畅
 
@@ -48,7 +48,7 @@ format: md
 | 标准等级 | | 涉及则必须 |
 | 适用设备类型 | | 折叠屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[一多开发实例（长视频）-视频悬停播放](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#li96815962218) |
+| 系统能力 | | 请参阅[一多开发实例（长视频）-视频悬停播放](/docs/dev/app-dev/multi-device/multi-video-app#li96815962218) |
 
 4.4 折痕避让
 
@@ -61,4 +61,4 @@ format: md
 | 标准等级 | | 涉及则必须 |
 | 适用设备类型 | | 折叠屏 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[一多开发实例（长视频）-视频悬停播放](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#li96815962218) |
+| 系统能力 | | 请参阅[一多开发实例（长视频）-视频悬停播放](/docs/dev/app-dev/multi-device/multi-video-app#li96815962218) |

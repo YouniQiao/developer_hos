@@ -1,6 +1,6 @@
 ---
 title: "广告"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-ad-kit-0000002351933661
+original_url: /docs/dev/game-dev/games-quickgame-runtime-ad-kit-0000002351933661
 format: md
 ---
 
@@ -562,35 +562,35 @@ loadInterstitialVideoAd() {
 
 ### FAQ
 
-* [如何解决原生广告图片展示失败的问题？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section571562019517)
-* [如何获取自测阶段的广告日志？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section1952413341551)
-* [如何获取测试广告位ID?](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section15828350161313)
-* [如何查看并处理广告存在多余请求？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section195241733254)
-* [如何查看曝光日志并处理曝光问题？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section146299201298)
-* [如何解决激励视频广告播放按钮快速多次点击出现多个广告覆盖播放的问题？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section10511102614317)
-* [提交验收前的自检CheckList](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section113931745495)。
+* [如何解决原生广告图片展示失败的问题？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section571562019517)
+* [如何获取自测阶段的广告日志？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section1952413341551)
+* [如何获取测试广告位ID?](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section15828350161313)
+* [如何查看并处理广告存在多余请求？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section195241733254)
+* [如何查看曝光日志并处理曝光问题？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section146299201298)
+* [如何解决激励视频广告播放按钮快速多次点击出现多个广告覆盖播放的问题？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section10511102614317)
+* [提交验收前的自检CheckList](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section113931745495)。
 * [如何获取自测sdk的日志？](https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickapp-faq-0000001129279483#section8113155018122)
 * [广告验收通过了，使用正式广告id的版本也通过审核上架了，为什么还是没有广告？](https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickapp-faq-0000001129279483#section19402350367)
 * [在哪里提交审核广告测试交付件？](https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickapp-faq-0000001129279483#section49626383502)
 * [华为媒体服务平台的结算在哪里？](https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickapp-faq-0000001129279483#section48963171757)
 * [配置广告正式id提审应用市场，驳回原因为：点击广告是空白，如何处理？](https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickapp-faq-0000001129279483#section1316164923815)
-* [快游戏接入广告时，提示\&#123;"errCode":1004,"errMsg":"No suitable advertising."\&#125;，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section1718710169114)
-* [现网的海外快游戏点击广告没有反应，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section335781620111)
-* [海外快游戏请求非个性化广告setNonPersonalizedAd是不是需要传1的参数，还是说可以不调用此接口？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section11514181641110)
-* [原生广告展示时需要展示哪些信息？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section14390654154019)
-* [调用广告时，二级界面使用的原生广告在关闭界面后销毁，重新打开界面会重新创建，但是加载不出来广告，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section1652765444015)
-* [激励视频未播放完成，回到游戏渲染正常。但是完整的播放完激励视频，回到游戏却提示call to OpenGL ES API with no current context，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section46705549402)
-* [调用广告时，返回1003错误，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section148307546404)
-* [调用接口setConsentStatus设置了consentStatus，但是在游戏中获取的值没有变化？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section1966195494014)
-* [如果一个广告多次点击，每次点击都上报的话，是否会出现点击数大于展示量？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section16110195517401)
-* [激励视频的广告是否有判断是否过期的接口？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section1024665594014)
-* [如果鸿蒙App已经接入了广告，那么使用鸿蒙App的正式广告id可以加载广告吗？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section134062551400)
-* [观看激励视频两次后，游戏场景偶现加载node场景节点时出现黑色方块，如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section13535655184014)
-* [激励视频广告如何判断玩家观看完整个视频而不是中途退出？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section184591654141818)
-* [如何分析华为鲸鸿动能 Kit日志？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-ads-0000002458692489#section833865491014)
+* [快游戏接入广告时，提示\&#123;"errCode":1004,"errMsg":"No suitable advertising."\&#125;，如何处理？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section1718710169114)
+* [现网的海外快游戏点击广告没有反应，如何处理？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section335781620111)
+* [海外快游戏请求非个性化广告setNonPersonalizedAd是不是需要传1的参数，还是说可以不调用此接口？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section11514181641110)
+* [原生广告展示时需要展示哪些信息？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section14390654154019)
+* [调用广告时，二级界面使用的原生广告在关闭界面后销毁，重新打开界面会重新创建，但是加载不出来广告，如何处理？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section1652765444015)
+* [激励视频未播放完成，回到游戏渲染正常。但是完整的播放完激励视频，回到游戏却提示call to OpenGL ES API with no current context，如何处理？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section46705549402)
+* [调用广告时，返回1003错误，如何处理？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section148307546404)
+* [调用接口setConsentStatus设置了consentStatus，但是在游戏中获取的值没有变化？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section1966195494014)
+* [如果一个广告多次点击，每次点击都上报的话，是否会出现点击数大于展示量？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section16110195517401)
+* [激励视频的广告是否有判断是否过期的接口？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section1024665594014)
+* [如果鸿蒙App已经接入了广告，那么使用鸿蒙App的正式广告id可以加载广告吗？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section134062551400)
+* [观看激励视频两次后，游戏场景偶现加载node场景节点时出现黑色方块，如何处理？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section13535655184014)
+* [激励视频广告如何判断玩家观看完整个视频而不是中途退出？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section184591654141818)
+* [如何分析华为鲸鸿动能 Kit日志？](/docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489#section833865491014)
 
 ### 案例
 
-* [不同手机上使快游戏的Banner广告始终在手机最下方展示](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-case-0000002318064148#section5905185813510)。
-* [原生广告存在多余请求](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-case-0000002318064148#section11921442194413)。
-* [广告存在多余上报曝光事件](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-case-0000002318064148#section638102114011)。
+* [不同手机上使快游戏的Banner广告始终在手机最下方展示](/docs/dev/game-dev/games-quickgame-case-0000002318064148#section5905185813510)。
+* [原生广告存在多余请求](/docs/dev/game-dev/games-quickgame-case-0000002318064148#section11921442194413)。
+* [广告存在多余上报曝光事件](/docs/dev/game-dev/games-quickgame-case-0000002318064148#section638102114011)。

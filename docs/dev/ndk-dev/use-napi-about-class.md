@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API进行class相关开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-class
+original_url: /docs/dev/ndk-dev/use-napi-about-class
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
 
 ## 使用示例
 
-Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
+Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
 
 ### napi\_new\_instance
 
@@ -91,7 +91,7 @@ hilog.info(0x0000, 'Node-API', 'napi_new_instance %{public}s', JSON.stringify(ob
 
 示例代码可以参考链接：
 
-[Native与ArkTS对象绑定](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-object-wrap)
+[Native与ArkTS对象绑定](/docs/dev/ndk-dev/use-napi-object-wrap)
 
 ### napi\_define\_class
 
@@ -99,7 +99,7 @@ hilog.info(0x0000, 'Node-API', 'napi_new_instance %{public}s', JSON.stringify(ob
 
 示例代码可以参考链接：
 
-[Native与ArkTS对象绑定](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-object-wrap)
+[Native与ArkTS对象绑定](/docs/dev/ndk-dev/use-napi-object-wrap)
 
 ### napi\_wrap
 

@@ -1,7 +1,7 @@
 ---
 title: "edm工具"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/edm-tool
+original_url: /docs/tools/cli-tools/edm-tool
 format: md
 ---
 

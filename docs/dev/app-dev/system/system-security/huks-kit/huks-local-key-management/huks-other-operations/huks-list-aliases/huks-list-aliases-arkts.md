@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "查询密钥别名集(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-list-aliases-arkts
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-list-aliases/huks-list-aliases-arkts
 format: md
 ---
 
@@ -12,7 +12,7 @@ HUKS提供了接口供应用查询密钥别名集。
 
 轻量级智能穿戴不支持查询密钥别名集功能。
 
-从API 23开始支持[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)特性。
+从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。
 
 ## 开发步骤
 

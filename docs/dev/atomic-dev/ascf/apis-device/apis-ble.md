@@ -1,6 +1,6 @@
 ---
 title: "蓝牙-低功耗中心设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-ble
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-ble
 format: md
 ---
 
@@ -18,7 +18,7 @@ has.createBLEConnection(Object object)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -59,7 +59,7 @@ has.closeBLEConnection(Object object)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -100,7 +100,7 @@ has.getConnectedBluetoothDevices(Object object)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -154,7 +154,7 @@ has.onBLEConnectionStateChange(function callback)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -188,7 +188,7 @@ has.offBLEConnectionStateChange(function callback)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -218,7 +218,7 @@ has.getBLEDeviceServices(Object object)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -272,7 +272,7 @@ has.getBLEDeviceCharacteristics(Object object)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -341,7 +341,7 @@ has.readBLECharacteristicValue(Object object)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -388,7 +388,7 @@ has.writeBLECharacteristicValue(Object object)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -442,7 +442,7 @@ has.notifyBLECharacteristicValueChange(Object object)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -492,7 +492,7 @@ has.onBLECharacteristicValueChange(function callback)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -540,7 +540,7 @@ has.offBLECharacteristicValueChange()
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.ACCESS\_BLUETOOTH**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.bluetooth](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.bluetooth](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **示例：**
 

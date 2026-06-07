@@ -1,14 +1,14 @@
 ---
 title: "标准化数据定义"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-definition
+original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition
 format: md
 ---
 
 
-* **[标准化数据定义概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unified-data-definition-overview)**
-* **[标准化数据类型 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-descriptors)**
-* **[标准化数据类型 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-descriptors-c)**
-* **[标准化数据结构 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-structure)**
-* **[标准化数据结构 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-structure-c)**
-* **[基于标准化数据结构的控件 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/components-based-on-uniform-data-structure)**
-* **[UTD预置列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-list)**
+* **[标准化数据定义概述](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/unified-data-definition-overview)**
+* **[标准化数据类型 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-descriptors)**
+* **[标准化数据类型 (C/C++)](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-descriptors-c)**
+* **[标准化数据结构 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-structure)**
+* **[标准化数据结构 (C/C++)](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-structure-c)**
+* **[基于标准化数据结构的控件 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/components-based-on-uniform-data-structure)**
+* **[UTD预置列表](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-list)**

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译报错“Error: open 'xxxlibimage_transcoder_shared.dll' failed”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-181
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-181
 ---
 
 

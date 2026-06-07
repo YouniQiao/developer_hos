@@ -1,6 +1,6 @@
 ---
 title: "签名/验签(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-signing-signature-verification-ndk
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-signing-signature-verification/huks-ukey-signing-signature-verification-ndk
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 * [密钥算法为RSA、摘要算法为SHA384、填充模式为PSS](#rsasha384pss)
 
-具体的场景介绍及支持的算法规格，请参考[签名/验签介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-signing-signature-verification-overview)。
+具体的场景介绍及支持的算法规格，请参考[签名/验签介绍及算法规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-signing-signature-verification/huks-ukey-signing-signature-verification-overview)。
 
 ## 在CMake脚本中链接相关动态库
 
@@ -21,7 +21,7 @@ target_link_libraries(entry PUBLIC libhuks_ndk.z.so libhuks_external_crypto.z.so
 
 **签名**
 
-1. 通过证书管理系统能力提供的[证书选择接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certificatemanagerdialogopenauthorizedialog22)获取[keyUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certreference22)作为resourceId，并作为密钥别名，[打开资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-open-close-resource-ndk#打开资源)后完成PIN码认证。
+1. 通过证书管理系统能力提供的[证书选择接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certificatemanagerdialogopenauthorizedialog22)获取[keyUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certreference22)作为resourceId，并作为密钥别名，[打开资源](/docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-resource-management/huks-open-close-resource-ndk#打开资源)后完成PIN码认证。
 2. 指定待签名的明文数据。
 3. 调用[OH\_Huks\_InitParamSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-param-h#oh_huks_initparamset)指定算法参数配置，并指定KeyClass参数，tag为[OH\_HUKS\_TAG\_KEY\_CLASS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_tag)，值为[OH\_HUKS\_KEY\_CLASS\_EXTENSION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keyclasstype)。
 4. 调用[OH\_Huks\_InitSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-api-h#oh_huks_initsession)初始化密钥会话，并获取会话的句柄handle。
@@ -29,7 +29,7 @@ target_link_libraries(entry PUBLIC libhuks_ndk.z.so libhuks_external_crypto.z.so
 
 **验签**
 
-1. 通过证书管理系统能力提供的[证书选择接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certificatemanagerdialogopenauthorizedialog22)获取[keyUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certreference22)作为resourceId，并作为密钥别名，然后[打开资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-open-close-resource-ndk#打开资源)。
+1. 通过证书管理系统能力提供的[证书选择接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certificatemanagerdialogopenauthorizedialog22)获取[keyUri](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certreference22)作为resourceId，并作为密钥别名，然后[打开资源](/docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-resource-management/huks-open-close-resource-ndk#打开资源)。
 2. 获取待验证的签名。
 3. 调用[OH\_Huks\_InitParamSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-param-h#oh_huks_initparamset)指定算法参数配置，并指定KeyClass参数，tag为[OH\_HUKS\_TAG\_KEY\_CLASS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_tag)，值为[OH\_HUKS\_KEY\_CLASS\_EXTENSION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_keyclasstype)。
 4. 调用[OH\_Huks\_InitSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-api-h#oh_huks_initsession)初始化密钥会话，并获取会话的句柄handle。

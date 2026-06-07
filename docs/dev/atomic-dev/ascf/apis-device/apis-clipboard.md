@@ -1,6 +1,6 @@
 ---
 title: "剪贴板"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-clipboard
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-clipboard
 format: md
 ---
 
@@ -53,9 +53,9 @@ has.getClipboardData(Object object)
 
 需要申请ohos.permission.READ\_PASTEBOARD权限，权限申请步骤：
 
-1. 查看[READ\_PASTEBOARD](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionread_pasteboard)介绍，审视应用是否符合申请该权限的使用场景。
+1. 查看[READ\_PASTEBOARD](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionread_pasteboard)介绍，审视应用是否符合申请该权限的使用场景。
 2. [在AGC侧申请Profile文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)，将用于后续的应用签名信息配置。
-3. 在module.json5配置文件中[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+3. 在module.json5配置文件中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 **起始版本**：1.0.21
 

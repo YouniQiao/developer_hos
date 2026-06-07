@@ -1,7 +1,7 @@
 ---
 title: 操作块
 sidebar_label: 操作块
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/chips-0000001929842624
+original_url: /docs/design/components/control-components/chips
 format: md
 ---
 

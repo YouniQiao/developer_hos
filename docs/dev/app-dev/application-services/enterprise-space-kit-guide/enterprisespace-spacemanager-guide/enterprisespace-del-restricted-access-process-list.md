@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "删除系统服务进程不可访问后台用户数据路径列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-del-restricted-access-process-list
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-del-restricted-access-process-list
 format: md
 ---
 

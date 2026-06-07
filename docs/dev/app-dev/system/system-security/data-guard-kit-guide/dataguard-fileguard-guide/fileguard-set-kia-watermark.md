@@ -1,6 +1,6 @@
 ---
 title: "设置KIA文件水印图片"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-set-kia-watermark
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-kia-watermark
 format: md
 ---
 

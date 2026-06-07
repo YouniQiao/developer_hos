@@ -1,6 +1,6 @@
 ---
 title: "动画曲线概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-curve-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-curve/arkts-curve-overview
 format: md
 ---
 
@@ -9,5 +9,5 @@ format: md
 
 根据动画曲线是否符合物理世界客观规律，可将其分为物理曲线（ArkUI当前提供了多种物理弹簧曲线）和传统曲线两种类型，具体如下。相比于传统曲线，物理曲线产生的运动轨迹更加符合用户认知，有助于创造自然生动的动画效果，建议开发者优先使用物理曲线。
 
-* [传统曲线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-traditional-curve)：基于数学公式，创造形状符合开发者预期的动画曲线，以三阶贝塞尔曲线为代表。
-* [弹簧曲线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-spring-curve)：阻尼弹簧曲线，简称弹簧曲线。
+* [传统曲线](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-curve/arkts-traditional-curve)：基于数学公式，创造形状符合开发者预期的动画曲线，以三阶贝塞尔曲线为代表。
+* [弹簧曲线](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-curve/arkts-spring-curve)：阻尼弹簧曲线，简称弹簧曲线。

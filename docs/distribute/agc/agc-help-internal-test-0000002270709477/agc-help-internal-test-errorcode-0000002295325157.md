@@ -1,6 +1,6 @@
 ---
 title: "错误码"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-internal-test-errorcode-0000002295325157
+original_url: /docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-errorcode-0000002295325157
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 | 10000 | DeepLink格式错误 | 请检查DeepLink格式，确保符合如下规则：   * DeepLink正确格式为：store://enterprise/manifest?url= encodeURIComponent（描述文件下载URL） * 描述文件下载URL使用HTTPS协议。 * 描述文件下载URL以“.json5”结尾。 * 描述文件下载URL的域名与描述文件内deployDomain字段值一致。 错误示例：描述文件下载URL“https://hosta/xxx/xxx.json5”的域名为hosta，而deployDomain字段值为hostb 。  正确示例：描述文件下载URL“https://host/xxx/xxx.json5”的域名为host，而deployDomain字段值为host 。 |
 | 10001 | 描述文件大小超限 | 请检查描述文件大小，确保不超过1MB。 |
 | 10002 | 描述文件下载出错 | 描述文件下载URL网络不可达，请检查描述文件下载URL是否可被正常访问。  您可将描述文件下载URL复制至浏览器中进行下载验证。 |
-| 10003 | 描述文件解析出错 | 请检查描述文件内容格式，确保为JSON格式，具体可参见上文[描述文件内容示例](https://developer.huawei.com/consumer/cn/doc/app/agc-help-internal-test-release-app-0000002260691994#ZH-CN_TOPIC_0000002260691994__li9224131214449)。 |
+| 10003 | 描述文件解析出错 | 请检查描述文件内容格式，确保为JSON格式，具体可参见上文[描述文件内容示例](/docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-release-app-0000002260691994#ZH-CN_TOPIC_0000002260691994__li9224131214449)。 |
 | 10004 | 描述文件存在空值字段 | 请检查描述文件内容，确保所有字段不为空。 |
 | 10005 | bundleName字段值不符合规范 | 请检查bundleName字段值，确保符合如下规范：   * 必须为以点号（.）分隔的字符串，且至少包含三段，每段中仅允许使用英文字母、数字、下划线（\_），如“harmony\_11.huawei.com ”。 首段以英文字母开头，非首段以数字或英文字母开头，每一段以数字或者英文字母结尾，如“harmony99.huawei.11\_com”。  不允许多个点号（.）连续出现，如“harmony..huawei.com ”。 * 长度为7~128个字符，且不可包含敏感词，不能将保留字符作为独立段呈现。以保留字符harmony为例，包名不能为harmony.huawei.com、com.harmony.huawei、com.huawei.harmony。 保留字符包括如下：    + oh   + ohos   + harmony   + harmonyos   + openharmony   + system |
 | 10006 | minAPIVersion和targetAPIVersion字段值不符合规则 | * 请确保字段值格式正确。可使用正则表达式自查：^\\d+\\.\\d+\\.\\d+\\(\\d+\\)$ 错误示例：     ```   "minAPIVersion": "5.0.0.12",   "targetAPIVersion": "5.0.0.12"   ```     正确示例：     ```   "minAPIVersion": "5.0.0(12)",   "targetAPIVersion": "5.0.0(12)"   ```  * 请检查设备SDK版本，确保设备SDK版本大于等于minAPIVersion的值。 |
@@ -30,7 +30,7 @@ format: md
 | 10018 | 加载描述文件出错 | 系统错误，请稍后重试。 |
 | 10019 | 描述文件验签失败 | * 请检查描述文件的签名密钥与安装包的签名密钥，确保二者保持一致。 * 请使用签名工具进行本地验证。 |
 | 10020 | 安装包完整性校验失败 | * 请使用SHA256计算packageHash，并确保packageHash与对应安装包的Hash值一致。 * 若确认packageHash正确，可能是网络问题导致安装包下载不完整。请尝试重试。 |
-| 10021 | 安装包证书校验失败 | * 请检查是否使用了正确的[发布证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-cert-0000002283336729)和[指定设备发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-internaltest-profile-0000002283260129)打包安装包。 * 请确保设备UDID在指定设备发布Profile指定的设备列表内。 |
+| 10021 | 安装包证书校验失败 | * 请检查是否使用了正确的[发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)和[指定设备发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-internaltest-profile-0000002283260129)打包安装包。 * 请确保设备UDID在指定设备发布Profile指定的设备列表内。 |
 | 10022 | 安装包解压出错 | * 请确保安装包为HAP或应用内HSP。 * 请检查设备是否有足够可用的存储空间。 |
 | 10023 | 安装包内文件读取出错 | 请确保安装包为HAP或应用内HSP。 |
 | 10024 | 安装包信息与描述文件信息不一致 | * 请检查描述文件的bundleName值与安装包module.json文件内bundleName值是否一致。 错误示例：    + 描述文件：      ```     "bundleName": "com.huawei.enterprise.demoA"     ```   + module.json：      ```     "bundleName": "com.huawei.enterprise.demoB"     ``` 正确示例：    + 描述文件：      ```     "bundleName": "com.huawei.enterprise.demo"     ```   + module.json：      ```     "bundleName": "com.huawei.enterprise.demo"     ```  * 请检查描述文件的versionCode值与安装包module.json文件内versionCode是否一致。 错误示例：    + 描述文件：      ```     "versionCode": 1000001,     ```   + module.json：      ```     "versionCode": 1000000,     ``` 正确示例：    + 描述文件：      ```     "versionCode": 1000000,     ```   + module.json：      ```     "versionCode": 1000000,     ```  * 请检查描述文件的minAPIVersion值与安装包module.json中minAPIVersion是否一致。 错误示例：    + 描述文件：      ```     "minAPIVersion": 5.0.0(12)     ```   + module.json：      ```     "minAPIVersion": 50000011     ``` 正确示例：    + 描述文件：      ```     "minAPIVersion": 5.0.0(12)     ```   + module.json：      ```     "minAPIVersion": 50000012     ``` |

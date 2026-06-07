@@ -1,6 +1,6 @@
 ---
 title: "系统管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-system-management-0000002483641957
+original_url: /docs/dev/game-dev/pgd-system-management-0000002483641957
 format: md
 ---
 

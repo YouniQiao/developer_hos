@@ -1,6 +1,6 @@
 ---
 title: "应用数据持久化概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-persistence-overview
+original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/app-data-persistence-overview
 format: md
 ---
 

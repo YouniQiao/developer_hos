@@ -1,7 +1,7 @@
 ---
 title: "hdc"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/hdc
+original_url: /docs/tools/cli-tools/hdc
 format: md
 ---
 
@@ -1559,7 +1559,7 @@ hdc命令执行后未输出预期内容，可能涉及以下场景。
 
 ![](./img/note_3.0-zh-cn.png)
 
-更多常见问题处理可见[FAQ](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit)。
+更多常见问题处理可见[FAQ](/docs/FAQ/faqs-performance-analysis-kit)。
 
 ## hdc错误码
 

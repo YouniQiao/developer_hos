@@ -1,6 +1,6 @@
 ---
 title: "支持表冠输入事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-crown-event
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-common-events-crown-event
 format: md
 ---
 

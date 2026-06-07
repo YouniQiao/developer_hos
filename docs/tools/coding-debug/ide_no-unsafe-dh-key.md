@@ -1,7 +1,7 @@
 ---
 title: "@security/no-unsafe-dh-key"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-unsafe-dh-key
+original_url: /docs/tools/coding-debug/ide_no-unsafe-dh-key
 format: md
 ---
 

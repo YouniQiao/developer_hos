@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-credential-overview-0000002381784018
+original_url: /docs/distribute/agc/agc-help-credential-0000002415263317/agc-help-credential-overview-0000002381784018
 format: md
 ---
 

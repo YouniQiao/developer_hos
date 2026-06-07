@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "复杂文本绘制与显示（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-text-arkts
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/complex-text-arkts
 format: md
 ---
 

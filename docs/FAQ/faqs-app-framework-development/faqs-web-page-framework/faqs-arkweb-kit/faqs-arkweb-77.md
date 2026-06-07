@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Web组件的滚动条能否设置隐藏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-77
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-77
 ---
 
 

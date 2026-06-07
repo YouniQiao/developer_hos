@@ -1,6 +1,6 @@
 ---
 title: "管理Cookie及数据存储"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-cookie-and-data-storage-mgmt
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-cookie-and-data-storage-mgmt
 format: md
 ---
 

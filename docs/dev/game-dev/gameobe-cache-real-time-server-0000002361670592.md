@@ -1,6 +1,6 @@
 ---
 title: "缓存读写"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-cache-real-time-server-0000002361670592
+original_url: /docs/dev/game-dev/gameobe-cache-real-time-server-0000002361670592
 format: md
 ---
 

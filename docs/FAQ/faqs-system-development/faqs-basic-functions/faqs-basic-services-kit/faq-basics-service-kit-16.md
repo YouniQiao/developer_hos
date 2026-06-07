@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何持有wakelock锁，防止系统休眠"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-16
+original_url: /docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-16
 ---
 
 

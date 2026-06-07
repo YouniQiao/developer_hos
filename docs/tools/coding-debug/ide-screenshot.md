@@ -1,7 +1,7 @@
 ---
 title: "截屏"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-screenshot
+original_url: /docs/tools/coding-debug/ide-screenshot
 format: md
 ---
 

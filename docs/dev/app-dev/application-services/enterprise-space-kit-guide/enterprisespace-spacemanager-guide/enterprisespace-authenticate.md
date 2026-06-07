@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "企业账号认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-authenticate
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-authenticate
 format: md
 ---
 

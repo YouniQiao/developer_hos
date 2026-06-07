@@ -1,7 +1,7 @@
 ---
 title: "DeviceInfo"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_deviceinfo-0000001294557021
+original_url: /docs/monetize/monetization/agd_pro_api_if_deviceinfo-0000001294557021
 format: md
 ---
 

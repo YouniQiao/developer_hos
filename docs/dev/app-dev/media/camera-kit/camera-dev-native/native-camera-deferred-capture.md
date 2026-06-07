@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分段式拍照(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-deferred-capture
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-deferred-capture
 format: md
 ---
 
@@ -72,7 +72,7 @@ format: md
        libimage_packer.so
    )
    ```
-3. 相机初始化及拍照触发参考[拍照(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-shooting)。
+3. 相机初始化及拍照触发参考[拍照(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting)。
 4. 注册分段式（PhotoAssetAvailable）拍照回调，对比单段式拍照，仅注册的拍照回调接口不同。
 
    ![](./img/bf9fd497.png)
@@ -87,7 +87,7 @@ format: md
 
    * 在会话commitConfig前注册分段式拍照回调。
    * 通过分段式拍照回调，获取媒体库资源mediaAsset。
-   * 通过mediaAsset直接落盘图片或者通过mediaAsset配置策略模式请求图像资源，业务处理后通过buffer保存图片，或显示图片(参考[拍照(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-shooting)步骤5)。
+   * 通过mediaAsset直接落盘图片或者通过mediaAsset配置策略模式请求图像资源，业务处理后通过buffer保存图片，或显示图片(参考[拍照(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting)步骤5)。
    * 使用完后解注册分段式拍照回调函数。
 
    ```

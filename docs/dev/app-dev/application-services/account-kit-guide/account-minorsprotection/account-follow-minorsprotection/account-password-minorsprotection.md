@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用内调整未成年人模式设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-password-minorsprotection
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-password-minorsprotection
 format: md
 ---
 
@@ -35,7 +35,7 @@ format: md
 
 1. [verifyMinorsProtectionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#verifyminorsprotectioncredential)接口需在页面或自定义组件生命周期内调用。接口调用前提是未成年人模式已开启，如果在未开启未成年人模式下调用此接口会返回错误码[1009900002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-error-code#section1009900002-未成年人模式未开启)。
 2. 当未成年人模式开启时，当前设备的开发者调试模式会被禁用，开发者可以进入设置-系统-开发者选项，点击USB调试开关，会校验健康使用设备密码，校验成功后可解除开发者调试模式限制。
-3. 如开发者重新开启USB调试开关后，发现DevEco Studio工具上hilog日志未恢复到断连之前，请执行“hdc shell hilog -G 16M”来扩大hilog日志缓存区，若hilog日志仍无法完全展示，可取出hilog日志本地查看。更多命令请参见[hilog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog)。
+3. 如开发者重新开启USB调试开关后，发现DevEco Studio工具上hilog日志未恢复到断连之前，请执行“hdc shell hilog -G 16M”来扩大hilog日志缓存区，若hilog日志仍无法完全展示，可取出hilog日志本地查看。更多命令请参见[hilog](/docs/dev/app-dev/system/hilog)。
 4. 如开发者需要频繁使用未成年人模式开启状态或者年龄段信息，建议在获取结果后进行缓存，并通过订阅[系统未成年人模式公共事件](#事件说明)来刷新未成年人模式开启状态或者年龄段信息，避免重复调用接口带来的性能损耗。
 5. 当设备处于开机未解锁状态下，开发者调用[getMinorsProtectionInfoSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#getminorsprotectioninfosync)接口时，其返回的minorsProtectionMode字段为false。
 
@@ -56,7 +56,7 @@ format: md
 
 ## 开发前提
 
-请先参考“开发准备”的[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)章节，通过自动签名方式完成签名信息的配置。请注意，该接口无需配置公钥指纹、Client ID，也无需申请账号权限。
+请先参考“开发准备”的[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)章节，通过自动签名方式完成签名信息的配置。请注意，该接口无需配置公钥指纹、Client ID，也无需申请账号权限。
 
 ## 开发步骤
 
@@ -67,7 +67,7 @@ format: md
    import { hilog } from '@kit.PerformanceAnalysisKit';
    import { BusinessError } from '@kit.BasicServicesKit';
    ```
-2. 订阅系统未成年人模式开启或关闭事件、获取未成年人模式的开启状态，以及年龄段信息请参考应用与系统联动切换未成年人模式章节的[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-system-minorsprotection#开发步骤)。
+2. 订阅系统未成年人模式开启或关闭事件、获取未成年人模式的开启状态，以及年龄段信息请参考应用与系统联动切换未成年人模式章节的[开发步骤](/docs/dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-system-minorsprotection#开发步骤)。
 3. 当未成年人模式已开启，用户需要调整应用内未成年人模式设置时调用[verifyMinorsProtectionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#verifyminorsprotectioncredential)方法拉起验证未成年人模式密码页面。验证成功后才允许修改。
 
    ```

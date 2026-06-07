@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自动续期订阅商品，A切换B且立即生效时，新订阅有效期的组成"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-23
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-23
 format: md
 ---
 

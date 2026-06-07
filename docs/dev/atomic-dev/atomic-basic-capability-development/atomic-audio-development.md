@@ -1,6 +1,6 @@
 ---
 title: "音视频"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-audio-development
+original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-audio-development
 format: md
 ---
 

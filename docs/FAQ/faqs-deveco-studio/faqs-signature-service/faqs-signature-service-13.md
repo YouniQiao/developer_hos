@@ -1,7 +1,7 @@
 ---
 format: md
 title: "签名密钥库文件口令错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-13
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-13
 ---
 
 

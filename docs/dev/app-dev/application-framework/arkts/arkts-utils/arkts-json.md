@@ -1,6 +1,6 @@
 ---
 title: "JSON扩展库"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-json
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/arkts-json
 format: md
 ---
 

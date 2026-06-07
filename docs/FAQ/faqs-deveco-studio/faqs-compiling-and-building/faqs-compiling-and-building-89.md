@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何提高代码混淆率"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-89
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-89
 ---
 
 

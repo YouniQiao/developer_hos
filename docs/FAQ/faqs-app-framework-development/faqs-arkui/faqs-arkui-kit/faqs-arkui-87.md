@@ -1,7 +1,7 @@
 ---
 format: md
 title: "TextInput的onSubmit事件如何使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-87
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-87
 ---
 
 

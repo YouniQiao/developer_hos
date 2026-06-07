@@ -1,6 +1,6 @@
 ---
 title: "Native侧如何获取可操作的文件目录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-38
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-38
 format: md
 ---
 

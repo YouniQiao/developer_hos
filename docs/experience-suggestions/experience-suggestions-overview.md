@@ -1,6 +1,6 @@
 ---
 title: "体验建议概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-overview
+original_url: /docs/experience-suggestions/experience-suggestions-overview
 format: md
 ---
 
@@ -12,11 +12,11 @@ format: md
 | 名称 | 简介 |
 | --- | --- |
 | [应用基础功能和兼容性体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-compatibility) | 应用与OS兼容、应用与设备兼容、应用升级兼容、功能体验相关等 |
-| [应用稳定性体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-stability) | 长时间运行故障率（崩溃、冻屏等）、长时间运行内存资源异常 |
+| [应用稳定性体验建议](/docs/experience-suggestions/experience-suggestions-stability) | 长时间运行故障率（崩溃、冻屏等）、长时间运行内存资源异常 |
 | [应用性能体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-experience-suggestions) | 时延、帧率流畅体验和内存占用、CPU占用、线程数等资源占用约束 |
 | [应用功耗体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-power-experience-standards) | 后台任务使用、后台硬件器件资源/软件系统资源占用管控，分布式资源占用等 |
 | [应用安全隐私体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-privacy-experience-standards) | 基础安全、恶意软件、应用安全、隐私合规等 |
-| [应用UX体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-ux) | 设计规范、设计约束的符合性，UX精致体验要求等 |
+| [应用UX体验建议](/docs/experience-suggestions/experience-suggestions-ux) | 设计规范、设计约束的符合性，UX精致体验要求等 |
 
 上述体验建议适用于手机、折叠屏、平板、2in1等多种终端设备各类应用的质量衡量与判断。应用类型涉及：便捷生活、出行导航、购物比价、拍摄美化、社交通讯、实用工具、新闻阅读、学习办公、影音娱乐、游戏、商务办公、金融理财、美食等。
 

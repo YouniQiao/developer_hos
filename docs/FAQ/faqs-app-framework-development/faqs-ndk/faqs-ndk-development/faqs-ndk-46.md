@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native C++模板中，生成的so库的名称在哪里定义，需要与哪些内容保持一致"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-46
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-46
 ---
 
 

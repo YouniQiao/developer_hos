@@ -1,6 +1,6 @@
 ---
 title: "从ArkWeb组件升级为AtomicServiceEnhancedWeb"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/web-upgraded-to-atomicserviceweb
+original_url: /docs/dev/atomic-dev/atomic-web-development/web-upgraded-to-atomicserviceweb
 format: md
 ---
 
@@ -9,7 +9,7 @@ AtomicServiceEnhancedWeb后续将不再支持[registerJavaScriptProxy](https://d
 
 在元服务内，可使用AtomicServiceEnhancedWeb组件显示Web页面，且需要配置业务域名。AtomicServiceEnhancedWeb不需要注入ASCF框架即可运行，请按照AtomicServiceEnhancedWeb相关指南进行配置开发。
 
-请参考：[AtomicServiceEnhancedWeb组件开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-guides/components-atomicserviceenhancedweb)、[AtomicServiceEnhancedWeb组件参考](https://developer.huawei.com/consumer/cn/doc/atomic-guides/components-atomicserviceenhancedweb)、[配置业务域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-business-domain)
+请参考：[AtomicServiceEnhancedWeb组件开发指南](/docs/dev/atomic-dev/atomic-web-development/components-atomicserviceenhancedweb)、[AtomicServiceEnhancedWeb组件参考](/docs/dev/atomic-dev/atomic-web-development/components-atomicserviceenhancedweb)、[配置业务域名](/docs/dev/atomic-dev/atomic-web-development/agc-help-harmonyos-business-domain)
 
 ## 通过src传递参数
 
@@ -252,7 +252,7 @@ has.router.pushPath('LoginPage','xxxxx')
   }
   ```
 
-  [创建路由跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation#创建路由跳转)，route\_map.json添加对应路由。
+  [创建路由跳转](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation#创建路由跳转)，route\_map.json添加对应路由。
 
   ```
   {

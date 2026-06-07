@@ -1,7 +1,7 @@
 ---
 title: "回退版本"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-rolling-back-0000001239365229
+original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-rolling-back-0000001239365229
 format: md
 ---
 
@@ -30,6 +30,6 @@ format: md
 
    ![](./img/1c2654125a3e.png)
 
-   当您的应用从版本2回退到版本1后，如果您想再次对版本1升级，您需要确保您提交的应用签名与版本2的应用签名一致，否则选取软件包时会弹出错误提示框。相关内容参见[软件包签名不一致处理](`https://developer.huawei.com/consumer/cn/doc/app/game-center-upgrade-version-0000001194325288#section15339193186`)。
+   当您的应用从版本2回退到版本1后，如果您想再次对版本1升级，您需要确保您提交的应用签名与版本2的应用签名一致，否则选取软件包时会弹出错误提示框。相关内容参见[软件包签名不一致处理](`/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288#section15339193186`)。
 
    ![](./img/cebf02c651fc.png)

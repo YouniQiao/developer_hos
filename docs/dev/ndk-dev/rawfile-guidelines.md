@@ -1,6 +1,6 @@
 ---
 title: "Rawfile开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawfile-guidelines
+original_url: /docs/dev/ndk-dev/rawfile-guidelines
 format: md
 ---
 
@@ -353,7 +353,7 @@ format: md
 
    通过context.createModuleContext().resourceManager获取应用内跨包resourceManager对象。
 
-   Context的更多使用信息请参考[应用上下文Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage)。
+   Context的更多使用信息请参考[应用上下文Context](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage)。
 3. 调用src/main/cpp/types/libentry/index.d.ts中声明的接口，如getFileList，传入js的资源管理对象以及rawfile文件夹的相对路径。
 
    获取本应用包资源resourceManager对象的示例如下：

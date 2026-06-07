@@ -1,7 +1,7 @@
 ---
 format: md
 title: "SoundPool播放的音频是否支持WMV格式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-4
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-4
 ---
 
 
@@ -11,4 +11,4 @@ SoundPool当前不支持WMV格式，支持的格式有AAC、MPEG(MP3)、FLAC、V
 
 **参考链接**
 
-[音频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-decoding)
+[音频解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-decoding)

@@ -1,7 +1,7 @@
 ---
 title: "场景处理"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_scenario-handle-0000001262378977
+original_url: /docs/monetize/monetization/agd_pro_api_scenario-handle-0000001262378977
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 
 API接口场景下，响应体中存在不同的链接返回，使用逻辑可以参考如下步骤：
 
-1. 为了保证原有的纯APP广告的兼容性，[AdCreative](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_adcreative-0000001294886337)和[AdAppInfo](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_adappinfo-0000001248246048)两个结构体中的adWapUrl和adDeeplink是等价的，建议优先使用AdCreative结构体中的值，可以自行考虑历史版本如何处理。
+1. 为了保证原有的纯APP广告的兼容性，[AdCreative](/docs/monetize/monetization/agd_pro_api_if_adcreative-0000001294886337)和[AdAppInfo](/docs/monetize/monetization/agd_pro_api_if_adappinfo-0000001248246048)两个结构体中的adWapUrl和adDeeplink是等价的，建议优先使用AdCreative结构体中的值，可以自行考虑历史版本如何处理。
 2. 链接的处理优先级：AdCreative.adDeeplink> AdAppInfo.adDeepLink> AdAppInfo.downloadLink> AdAppInfo.clickDeepLink。
 3. 大部分情况下，adDeeplink返回空；因此对于下载类应用，可使用如下处理逻辑：
    1. 用户点击“下载”按钮，使用downloadLink跳转迷你页；

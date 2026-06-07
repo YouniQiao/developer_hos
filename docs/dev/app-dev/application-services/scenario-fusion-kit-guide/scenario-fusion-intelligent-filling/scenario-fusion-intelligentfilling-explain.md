@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "推荐数据源及推荐逻辑说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-explain
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-explain
 format: md
 ---
 

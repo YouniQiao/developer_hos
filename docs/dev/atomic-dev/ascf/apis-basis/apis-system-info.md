@@ -1,6 +1,6 @@
 ---
 title: "系统信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-system-info
+original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-system-info
 format: md
 ---
 

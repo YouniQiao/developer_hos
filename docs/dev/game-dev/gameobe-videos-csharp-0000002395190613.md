@@ -1,6 +1,6 @@
 ---
 title: "开发实战课"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-videos-csharp-0000002395190613
+original_url: /docs/dev/game-dev/gameobe-videos-csharp-0000002395190613
 format: md
 ---
 

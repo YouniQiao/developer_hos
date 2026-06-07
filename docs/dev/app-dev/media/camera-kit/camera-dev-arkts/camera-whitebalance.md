@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "白平衡设置(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-whitebalance
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-whitebalance
 format: md
 ---
 

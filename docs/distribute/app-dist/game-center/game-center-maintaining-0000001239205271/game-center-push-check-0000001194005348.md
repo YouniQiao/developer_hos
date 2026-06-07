@@ -1,7 +1,7 @@
 ---
 title: "催促/加急/撤销审核"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-push-check-0000001194005348
+original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-push-check-0000001194005348
 format: md
 ---
 

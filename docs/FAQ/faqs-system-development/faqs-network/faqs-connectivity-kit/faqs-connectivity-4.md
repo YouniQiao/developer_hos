@@ -1,6 +1,6 @@
 ---
 title: "设备连接Wi-Fi后，如何获取当前设备的IP地址"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-4
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-4
 format: md
 ---
 

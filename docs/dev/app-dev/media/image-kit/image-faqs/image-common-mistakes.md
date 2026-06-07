@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Image Kit常见崩溃报错问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-common-mistakes
+original_url: /docs/dev/app-dev/media/image-kit/image-faqs/image-common-mistakes
 format: md
 ---
 

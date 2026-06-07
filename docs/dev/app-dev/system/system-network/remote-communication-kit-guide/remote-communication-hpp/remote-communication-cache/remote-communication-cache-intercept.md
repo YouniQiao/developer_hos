@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自定义缓存拦截器"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cache-intercept
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache/remote-communication-cache-intercept
 format: md
 ---
 
 
 从6.0.0(20)开始，支持自定义缓存拦截器。
 
-Remote Communication Kit模块提供了[拦截器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-interceptconfig#拦截器工作原理)能力，支持开发者根据业务需求，实现自定义缓存拦截器。通过拦截器机制，开发者能够介入缓存处理流程，包括缓存数据的预处理、加载逻辑定制等，从而精准匹配复杂业务场景对缓存逻辑的差异化需求，提升系统的灵活性与可扩展性。
+Remote Communication Kit模块提供了[拦截器](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-interceptconfig#拦截器工作原理)能力，支持开发者根据业务需求，实现自定义缓存拦截器。通过拦截器机制，开发者能够介入缓存处理流程，包括缓存数据的预处理、加载逻辑定制等，从而精准匹配复杂业务场景对缓存逻辑的差异化需求，提升系统的灵活性与可扩展性。
 
 ## 约束与限制
 

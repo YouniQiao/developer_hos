@@ -1,6 +1,6 @@
 ---
 title: "如何解决应用键盘出现遮挡，输入框被拦截一半"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/ffaqs-arkui-489
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/ffaqs-arkui-489
 format: md
 ---
 

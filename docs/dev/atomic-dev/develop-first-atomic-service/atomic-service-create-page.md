@@ -1,6 +1,6 @@
 ---
 title: "新建元服务卡片"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-create-page
+original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-create-page
 format: md
 ---
 

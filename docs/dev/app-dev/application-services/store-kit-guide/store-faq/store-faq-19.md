@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "数字商品服务器支持证书"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-19
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-19
 format: md
 ---
 

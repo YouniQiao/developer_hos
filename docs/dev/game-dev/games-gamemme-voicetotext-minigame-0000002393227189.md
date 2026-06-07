@@ -1,15 +1,15 @@
 ---
 title: "JS（小游戏）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voicetotext-minigame-0000002393227189
+original_url: /docs/dev/game-dev/games-gamemme-voicetotext-minigame-0000002393227189
 format: md
 ---
 
 
 ## 前提条件
 
-* 您已[开启语音转文本功能](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。
-* 您已[集成游戏多媒体SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-minigame-0000002393266905)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-minigame-0000002393266909#section10640141401010)。
+* 您已[开启语音转文本功能](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。
+* 您已[集成游戏多媒体SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-minigame-0000002393266905)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-minigame-0000002393266909#section10640141401010)。
 * 您已[开通机器学习服务](https://developer.huawei.com/consumer/cn/doc/hiai-Guides/enable-service-0000001050038078)。
 * 您已申请白名单。
 

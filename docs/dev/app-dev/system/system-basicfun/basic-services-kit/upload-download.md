@@ -1,9 +1,9 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "上传下载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/upload-download
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/upload-download
 format: md
 ---
 
 
-* **[应用文件上传下载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-upload-download)**
+* **[应用文件上传下载](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/upload-download/app-file-upload-download)**

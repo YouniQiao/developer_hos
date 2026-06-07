@@ -1,7 +1,7 @@
 ---
 title: "申请客户端ID"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-2-0000001174597583
+original_url: /docs/monetize/promotion/marketing-api-process-2-0000001174597583
 format: md
 ---
 

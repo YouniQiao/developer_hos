@@ -1,6 +1,6 @@
 ---
 title: "适配智慧屏设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-adapt-tv-platform-0000002411169702
+original_url: /docs/dev/game-dev/games-adapt-tv-platform-0000002411169702
 format: md
 ---
 
@@ -30,7 +30,7 @@ format: md
 
 ### 广告服务
 
-若游戏接入[Ads Kit（广告服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-kit-guide)，智慧屏不支持在游戏App中通过广告内容获得广告收益。
+若游戏接入[Ads Kit（广告服务）](/docs/dev/app-dev/application-services/ads-kit-guide)，智慧屏不支持在游戏App中通过广告内容获得广告收益。
 
 ### 三方登录
 
@@ -56,7 +56,7 @@ format: md
 
 可以。
 
-同款游戏的不同支持设备要求使用相同的发布证书。发布证书的具体操作请参见[申请发布证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-cert-0000002283336729)。
+同款游戏的不同支持设备要求使用相同的发布证书。发布证书的具体操作请参见[申请发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)。
 
 ### 智慧屏是否作为新包提审，还是和已上架的鸿蒙游戏在同一个包提审上架？
 

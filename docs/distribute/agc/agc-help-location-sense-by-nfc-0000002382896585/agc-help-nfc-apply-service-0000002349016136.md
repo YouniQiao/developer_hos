@@ -1,6 +1,6 @@
 ---
 title: "创建全网态服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-nfc-apply-service-0000002349016136
+original_url: /docs/distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-nfc-apply-service-0000002349016136
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 | 配置项 | 说明 | |
 | --- | --- | --- |
 | 名称 | 近场服务名称，长度为1~128个字符。 | |
-| 状态 | 服务的状态。   * 草稿：点击“保存”后，服务状态变更为“草稿”。 * 审核中：点击“提交”后，服务状态变更为“审核中”。 * 审核驳回：内容设置不合规，服务申请被平台运营驳回，服务状态变更为“审核驳回”。可参考[图文素材审核细则](https://developer.huawei.com/consumer/cn/doc/app/agc-help-card-design-detail-rules-0000002349181504)修改内容后重新提交服务上线申请。 * 已上线：平台运营审核通过后，服务状态变更为“已上线”。 * 已下线：您自行点击“下线”或者由华为侧强制下线。 | |
+| 状态 | 服务的状态。   * 草稿：点击“保存”后，服务状态变更为“草稿”。 * 审核中：点击“提交”后，服务状态变更为“审核中”。 * 审核驳回：内容设置不合规，服务申请被平台运营驳回，服务状态变更为“审核驳回”。可参考[图文素材审核细则](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-card-design-detail-rules-0000002349181504)修改内容后重新提交服务上线申请。 * 已上线：平台运营审核通过后，服务状态变更为“已上线”。 * 已下线：您自行点击“下线”或者由华为侧强制下线。 | |
 | 消息渠道 | 向用户推送应用/元服务卡片的渠道。**请选择“NFC”**。 | |
 | 开放范围 | 此配置项决定您创建的是测试态近场服务还是全网态近场服务，请保持默认选择“全网”。 | |
 
@@ -66,7 +66,7 @@ format: md
 
    | 闸机设备状态 | 状态说明 | 配置项 | 配置项说明 |
    | --- | --- | --- | --- |
-   | 核验身份成功 | 获取用户身份、验证身份成功，闸机成功开门。 | 页面URL | 输入App Linking应用/元服务链接。链接配置方法请参考[创建应用链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在agc为应用创建关联的网址域 名)/[创建元服务链接](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking#section48651523147)。  不同闸机设备状态的页面URL，须与应用/元服务开发态创建的页面对应。 |
+   | 核验身份成功 | 获取用户身份、验证身份成功，闸机成功开门。 | 页面URL | 输入App Linking应用/元服务链接。链接配置方法请参考[创建应用链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在agc为应用创建关联的网址域 名)/[创建元服务链接](/docs/dev/atomic-dev/atomic-linking/atomic-applinking#section48651523147)。  不同闸机设备状态的页面URL，须与应用/元服务开发态创建的页面对应。 |
    | 无法获取用户身份 | 无法获取用户OpenId/UnionId。 |
    | 核验身份失败 | 获取用户身份、验证身份失败，闸机未成功开门。  包含以下几种情况：  * 已下载和安装应用，但尚未购票 * 未下载和安装应用，且未购票 * 使用非华为账号购票 |
    | 设备故障 | 设备发生故障。 |

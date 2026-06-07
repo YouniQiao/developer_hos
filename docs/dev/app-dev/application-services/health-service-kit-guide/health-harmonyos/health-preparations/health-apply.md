@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "申请运动健康服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply
 format: md
 ---
 
 
-申请运动健康服务前，请先参考[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)，确认开发环境并完成[创建项目](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048)、[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)、[添加公钥指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview#条件必选添加公钥指纹)等基本准备工作，再继续进行以下开发活动。
+申请运动健康服务前，请先参考[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)，确认开发环境并完成[创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)、[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)、[添加公钥指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview#条件必选添加公钥指纹)等基本准备工作，再继续进行以下开发活动。
 
 1. 登录[开发者联盟网站](https://developer.huawei.com/consumer/cn/)，单击进入“管理中心”。
 
@@ -29,7 +29,7 @@ format: md
 
    * 添加运动健康服务时，遵循权限最小化原则。数据访问权限应与业务相符，不可申请超出业务范围或者暂不使用的权限。
    * 在应用或服务发布后，华为会对权限使用情况进行不定期抽查，抽查形式包括但不限于对已发布的应用进行抽样检查、对API调用情况进行监控、派遣专员核查等。您可以通过在申请运动健康服务前签署的合作协议，了解核查标准以及核查后的处理方式。
-   * 数据类型对应的OAuth权限请参见[权限说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description)。
+   * 数据类型对应的OAuth权限请参见[权限说明](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description)。
 
    ![](./img/bfb2f7ff.png)
 
@@ -51,8 +51,8 @@ format: md
      ![](./img/b14641c0.png)
 
      + 首次申请开通测试权限后权限将及时生效，若业务范围发生变动，修改权限并重新提交申请，请修改测试权限1小时后进行测试验证。
-     + 当前审核通过仅以开发测试为目的，测试阶段有用户数量的限制，仅前100位用户可使用您申请应用中的华为运动健康服务。为解除用户数量的限制，请在应用完成开发测试验证后提交验证申请，具体请参见[申请验证获取正式权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-verification)提交验证申请。
-     + 测试权限开通后，请于半年内完成[申请验证获取正式权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-verification)操作，否则平台将关闭您已开通测试权限。
+     + 当前审核通过仅以开发测试为目的，测试阶段有用户数量的限制，仅前100位用户可使用您申请应用中的华为运动健康服务。为解除用户数量的限制，请在应用完成开发测试验证后提交验证申请，具体请参见[申请验证获取正式权限](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-verification)提交验证申请。
+     + 测试权限开通后，请于半年内完成[申请验证获取正式权限](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-verification)操作，否则平台将关闭您已开通测试权限。
 
      ![](./img/7d6ee5c2.png)
 
@@ -79,9 +79,9 @@ format: md
 
 ### 图标使用不规范
 
-要求：图标的使用需遵循[标志使用规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-logo-usage-regulations)。
+要求：图标的使用需遵循[标志使用规范](/docs/dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-logo-usage-regulations)。
 
-解决办法：您提交的申请材料中涉及华为运动健康图标展示的场景，按照[标志使用规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-logo-usage-regulations)中要求的视觉效果进行呈现。
+解决办法：您提交的申请材料中涉及华为运动健康图标展示的场景，按照[标志使用规范](/docs/dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-logo-usage-regulations)中要求的视觉效果进行呈现。
 
 ### 必选内容未填写
 
@@ -100,7 +100,7 @@ format: md
 ![](./img/c2982fda.png)
 
 * 以上企业实缴注册资本数据以[国家企业信用信息公示系统](https://shiming.gsxt.gov.cn/socialuser-use-rllogin.html)中最新年报数据为准。
-* 数据类型开放等级请参见[数据开放总览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-overview)。
+* 数据类型开放等级请参见[数据开放总览](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-overview)。
 
 解决办法：如您的资质不符合以上要求，需要由符合以上企业资质的公司作为保证人并提供《[担保函](https://hihealthbase-drcn.things.hicloud.com/healthkit/fileServer/getFile/protected/docTemplateZh/000/001/044/1000000000000001044.20250714003858.97794800280943716662489602627215%3A20750702004051%3A100005355%3ACBD4513F116D37E1E5BFE212973516547B1FE4DD61C5388E3248AC5086AEC255.docx)》。您需要通过**hihealth@huawei.com**邮箱提供如下文件：
 
@@ -119,7 +119,7 @@ format: md
 
 ### 个人开发者接入资质不符合审核要求
 
-要求：个人开发者应用未上架华为应用市场，或者个人开发者应用非移动应用，暂不开放运动健康服务数据；申请访问开放等级为基础的用户数据，个人开发者不得有个人信用不良记录。开放等级为高阶的用户数据暂不向个人开发者开放。数据开放等级请参见[数据开放总览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-overview)。
+要求：个人开发者应用未上架华为应用市场，或者个人开发者应用非移动应用，暂不开放运动健康服务数据；申请访问开放等级为基础的用户数据，个人开发者不得有个人信用不良记录。开放等级为高阶的用户数据暂不向个人开发者开放。数据开放等级请参见[数据开放总览](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-overview)。
 
 解决办法：将您的移动应用上架至华为应用市场，或重新注册企业开发者账号申请运动健康服务；申请运动健康服务时，仅勾选开放等级为“基础”的用户数据。
 

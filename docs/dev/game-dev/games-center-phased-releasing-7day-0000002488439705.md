@@ -1,6 +1,6 @@
 ---
 title: "分阶段发布（7天内自动更新）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-phased-releasing-7day-0000002488439705
+original_url: /docs/dev/game-dev/games-center-phased-releasing-7day-0000002488439705
 format: md
 ---
 
@@ -14,14 +14,14 @@ format: md
 * 具备7天内按固定百分比覆盖用户的自动更新能力，百分比覆盖进程支持提速直至全网发布。
 * 发布过程中所有用户主动下载均为新版本，旧版本用户也可以通过应用市场搜索下载新版本。
 * 可实现指定用户的版本更新：先暂停分阶段发布，然后把AppGallery详情页链接通过应用内弹窗发给指定用户，引导用户更新到最新版本。
-* 支持通过Publishing API进行分阶段发布的设置，详见[更新分阶段发布](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-phased-release-0000002271000625)。
+* 支持通过Publishing API进行分阶段发布的设置，详见[更新分阶段发布](/docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-phased-release-0000002271000625)。
 * 您可以选择让应用审核通过后立即上架，也可以指定一个特定时间上架（和全网发布指定时间上架一致）。
 
 **注意**：在新分阶段发布版本上架成功后，即覆盖了全网在架包，应用内检查更新的接口需要做适配调整。
 
-* 被百分比覆盖的用户，仍然可以使用[AppGallery Kit的检查更新接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-update)在应用内弹框引导更新，不受影响。
+* 被百分比覆盖的用户，仍然可以使用[AppGallery Kit的检查更新接口](/docs/dev/app-dev/application-services/store-kit-guide/store-update)在应用内弹框引导更新，不受影响。
 
-* 未被百分比覆盖的低版本用户，无法通过AppGallery Kit检查全网在架包的更新，但您可以在应用内弹框，引导这些用户升级到新的分阶段版本，具体操作请参见[应用市场详情页展示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-productview#section729012543213)。
+* 未被百分比覆盖的低版本用户，无法通过AppGallery Kit检查全网在架包的更新，但您可以在应用内弹框，引导这些用户升级到新的分阶段版本，具体操作请参见[应用市场详情页展示](/docs/dev/app-dev/application-services/store-kit-guide/store-productview#section729012543213)。
 
 在当前上架版本为全网发布时，您可以采用分阶段发布（7天内自动更新）的方式进行应用升级。采用此方式发布，您可以按照1%、2%、5%、10%、20%、50%、100%的比例向已在应用市场开启自动更新应用的用户发布更新的版本。通过阶段性的版本更新，您可以快速获取用户对新版本的反馈意见，降低该版本出现问题的风险。
 
@@ -237,6 +237,6 @@ format: md
 若您在发布过程中遇到版本问题，建议采取以下两种方式处理：
 
 * 下架后重新上架：申请将当前问题版本下架，随后提交并上架一个新版本。
-* 发布新分阶段版本：直接点击“升级”，发布一个新的分阶段版本。提交新版本后，您可以申请[审核加急](https://developer.huawei.com/consumer/cn/doc/games-guides/games-push-0000002348323780#section1043320011101)以加快发布流程。
+* 发布新分阶段版本：直接点击“升级”，发布一个新的分阶段版本。提交新版本后，您可以申请[审核加急](/docs/dev/game-dev/games-push-0000002348323780#section1043320011101)以加快发布流程。
 
 从用户体验的角度出发，版本回退无法修复已受影响用户的实际问题，反而可能导致用户本地安装版本与线上版本不一致，引发舆情或误解。因此，我们建议您聚焦于发布新版本，确保所有用户能够升级至最新稳定版，从而从根本上解决问题。

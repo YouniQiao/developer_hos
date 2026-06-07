@@ -1,6 +1,6 @@
 ---
 title: "自动化测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-arkxtest-guidelines
+original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-arkxtest-guidelines
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "文件分享能否使用Want配置打开具体应用，而不是显示选择窗口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-9
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-9
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-l
 
 **参考链接**
 
-[应用文件分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file)
+[应用文件分享](/docs/dev/app-dev/application-framework/core-file-kit/app-file/share-app-file)

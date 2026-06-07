@@ -1,6 +1,6 @@
 ---
 title: "CustInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-custinfo-0000002504067925
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-custinfo-0000002504067925
 format: md
 ---
 

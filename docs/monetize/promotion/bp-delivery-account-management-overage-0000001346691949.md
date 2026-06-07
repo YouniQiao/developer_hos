@@ -1,7 +1,7 @@
 ---
 title: "查看账户余额"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-account-management-overage-0000001346691949
+original_url: /docs/monetize/promotion/bp-delivery-account-management-overage-0000001346691949
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](./img/ce2d54ada6c7.png) 
 
-- 您也可以在开发者联盟网站查看账户余额，具体请参见[如何在开发者联盟网站查看账户余额](https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-check-overage-0000001294207226)。
+- 您也可以在开发者联盟网站查看账户余额，具体请参见[如何在开发者联盟网站查看账户余额](/docs/monetize/promotion/bp-appendix-check-overage-0000001294207226)。
 - 客户投放伙伴主账户在开发者联盟网站所显示的余额为其账户下所有子账户的余额之和，在华为应用市场应用推广平台显示的余额为给子账户转账后剩下的余额。
 
 ![](./img/5e2064f32d81.png "点击放大")

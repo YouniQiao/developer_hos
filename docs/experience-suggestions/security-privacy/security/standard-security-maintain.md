@@ -1,6 +1,6 @@
 ---
 title: "签名安全"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-maintain
+original_url: /docs/experience-suggestions/security-privacy/security/standard-security-maintain
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机，穿戴 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section562055715517) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section562055715517) |
 
 |  |  |
 | --- | --- |
@@ -21,7 +21,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机，穿戴 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section64388132523) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section64388132523) |
 
 |  |  |
 | --- | --- |
@@ -37,4 +37,4 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机，穿戴 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section9566165615525) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section9566165615525) |

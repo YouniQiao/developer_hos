@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概要"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-type-summary
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-data-type-summary
 format: md
 ---
 

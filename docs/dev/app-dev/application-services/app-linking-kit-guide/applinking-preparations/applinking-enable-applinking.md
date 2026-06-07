@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开通App Linking服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-enable-applinking
+original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-preparations/applinking-enable-applinking
 format: md
 ---
 

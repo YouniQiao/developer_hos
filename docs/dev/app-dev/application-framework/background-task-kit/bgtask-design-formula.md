@@ -1,13 +1,13 @@
 ---
 title: "Background Tasks Kit接入规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bgtask-design-formula
+original_url: /docs/dev/app-dev/application-framework/background-task-kit/bgtask-design-formula
 format: md
 ---
 
 
 ## 接入规范
 
-为维护华为通知生态秩序，保障用户合法权益和良好的使用体验，根据现行法律法规及[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/20209)、[《应用审核指南》](https://developer.huawei.com/consumer/cn/doc/50104)、[《元服务审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50129)，特制定本规范。所有发布上架到华为应用市场且使用后台任务的HarmonyOS应用、联运应用及元服务（以下简称应用）应当遵守本规范。
+为维护华为通知生态秩序，保障用户合法权益和良好的使用体验，根据现行法律法规及[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/20209)、[《应用审核指南》](https://developer.huawei.com/consumer/cn/doc/50104)、[《元服务审核指南》](/docs/distribute/app-dist/app-market/x50000/x50129/x50129-overview)，特制定本规范。所有发布上架到华为应用市场且使用后台任务的HarmonyOS应用、联运应用及元服务（以下简称应用）应当遵守本规范。
 
 ### 长时任务基本原则
 
@@ -31,7 +31,7 @@ format: md
 
 | **违规分类及违规行为** | **违规处罚标准** |
 | --- | --- |
-| **违反长时任务指定的使用场景，影响用户体验。**  **违规的[使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task#使用场景)包括：**  · 应用在长时任务类型规定的场景范围外使用。  · 应用执行完规定场景的业务后，未及时取消长时任务。  · 在非用户主动行为触发的场景下，申请长时任务后台运行，用户对应用后台运行无明确的预期。  · 用户主动停止（通过删除长时任务通知、删除AVSession通知等方式）并取消长时任务后，立即再次申请长时任务。  · 在系统检测到应用不合理使用长时任务，并取消/暂停长时任务后，不得立即再次申请长时任务。  · 修改长时任务通知内容。  · 应用通过后台任务恶意“保活”。恶意“保活”，指的是未经过用户允许和非正常业务需要的场景下，应用持续在后台运行。  · 其他影响华为终端用户体验的行为。 | 根据违规产生的负面影响程度，采取对应处罚：  · **严重影响**：立刻在违规场景禁止使用长时任务。应用需在收到违规处罚通知后完成整改，并反馈整改结果。  · **轻微影响**：应用需在收到违规处罚通知的7个自然日内完成整改，并反馈整改结果，否则在违规场景将禁止使用长时任务。  **说明：**  应用提交整改反馈时，请参考[整改承诺声明](#整改承诺声明)。 |
+| **违反长时任务指定的使用场景，影响用户体验。**  **违规的[使用场景](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task#使用场景)包括：**  · 应用在长时任务类型规定的场景范围外使用。  · 应用执行完规定场景的业务后，未及时取消长时任务。  · 在非用户主动行为触发的场景下，申请长时任务后台运行，用户对应用后台运行无明确的预期。  · 用户主动停止（通过删除长时任务通知、删除AVSession通知等方式）并取消长时任务后，立即再次申请长时任务。  · 在系统检测到应用不合理使用长时任务，并取消/暂停长时任务后，不得立即再次申请长时任务。  · 修改长时任务通知内容。  · 应用通过后台任务恶意“保活”。恶意“保活”，指的是未经过用户允许和非正常业务需要的场景下，应用持续在后台运行。  · 其他影响华为终端用户体验的行为。 | 根据违规产生的负面影响程度，采取对应处罚：  · **严重影响**：立刻在违规场景禁止使用长时任务。应用需在收到违规处罚通知后完成整改，并反馈整改结果。  · **轻微影响**：应用需在收到违规处罚通知的7个自然日内完成整改，并反馈整改结果，否则在违规场景将禁止使用长时任务。  **说明：**  应用提交整改反馈时，请参考[整改承诺声明](#整改承诺声明)。 |
 
 ### 整改承诺声明
 

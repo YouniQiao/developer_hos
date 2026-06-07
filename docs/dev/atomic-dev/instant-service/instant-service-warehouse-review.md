@@ -1,6 +1,6 @@
 ---
 title: "元服务货仓审核规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-warehouse-review
+original_url: /docs/dev/atomic-dev/instant-service/instant-service-warehouse-review
 format: md
 ---
 

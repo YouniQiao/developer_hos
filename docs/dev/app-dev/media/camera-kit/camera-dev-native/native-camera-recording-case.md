@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "录像实践(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-recording-case
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-recording-case
 format: md
 ---
 
 
-在开发相机应用时，需要先[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。
+在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
-当前示例提供完整的录像流程及其接口调用顺序的介绍。对于单个流程（如[设备输入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-input)、[会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)、[录像](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-recording)）的介绍请参考具体章节。
+当前示例提供完整的录像流程及其接口调用顺序的介绍。对于单个流程（如[设备输入](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-input)、[会话管理](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)、[录像](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-recording)）的介绍请参考具体章节。
 
 ## 开发流程
 

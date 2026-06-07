@@ -1,7 +1,7 @@
 ---
 title: "工程级build-profile.json5文件"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-build-profile-app
+original_url: /docs/tools/coding-debug/ide-hvigor-build-profile-app
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-preparations
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-preparations
 format: md
 ---
 

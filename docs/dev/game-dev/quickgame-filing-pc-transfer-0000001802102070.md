@@ -1,13 +1,13 @@
 ---
 title: "转移核准（备案）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-transfer-0000001802102070
+original_url: /docs/dev/game-dev/quickgame-filing-pc-transfer-0000001802102070
 format: md
 ---
 
 
 ![](./img/bbd47331.png)
 
-若主账号[开启“账号管理功能”开关](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-account-0000001885962814#ZH-CN_TOPIC_0000001885962814__li1536716016483)，该核准（备案）方式仅限在主账号下操作。
+若主账号[开启“账号管理功能”开关](/docs/dev/game-dev/quickgame-filing-account-0000001885962814#ZH-CN_TOPIC_0000001885962814__li1536716016483)，该核准（备案）方式仅限在主账号下操作。
 
 在华为云核准（备案）系统中将主体及主体下的互联网信息全部转移到目标账号下。操作步骤如下：
 

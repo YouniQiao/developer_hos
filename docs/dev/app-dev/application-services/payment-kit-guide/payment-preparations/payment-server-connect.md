@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "云侧服务准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-server-connect
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-server-connect
 format: md
 ---
 
@@ -49,10 +49,10 @@ Payment Kit服务提供了支付系统相关的一系列API接口。为减少API
 将以下商户相关配置添加到示例代码配置文件src/main/resources/petalpayconfig.properties。
 
 1. 商户号，获取方式请参见[查询商户号信息](https://developer.huawei.com/consumer/cn/doc/pay-docs/hwzf-shanghuhao-0000001725982508)。
-2. 商户私钥，获取途径请参考[准备证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config)。
+2. 商户私钥，获取途径请参考[准备证书](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config)。
 3. 商户私钥签名类型，RSA或SM2。
-4. 商户证书ID，获取方式请参见[上传商户证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config#上传商户证书)。
-5. 鸿蒙支付服务验签公钥，获取方式请参见[下载华为支付证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config#下载华为支付证书)。
+4. 商户证书ID，获取方式请参见[上传商户证书](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config#上传商户证书)。
+5. 鸿蒙支付服务验签公钥，获取方式请参见[下载华为支付证书](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config#下载华为支付证书)。
 6. 鸿蒙支付服务加密公钥（非必选），涉及接口入参敏感字段（接口会做标注）加密时需配置，参见[敏感信息处理](#敏感信息处理)。
 7. 商户号关联的APPID，获取方式请参见[AppID管理及关联](https://developer.huawei.com/consumer/cn/doc/pay-docs/hwzf-appidguanli-0000001757041165)。
 
@@ -220,7 +220,7 @@ public CallBackBaseResponse transactionResultNotify(@RequestBody Object callback
 
 ## 敏感信息处理
 
-为了保证API接口请求通信过程中敏感信息字段（如用户的住址、银行卡号、手机号码等，涉及加密字段会在具体API接口中标注）的机密性，鸿蒙支付服务要求加密上送。 如开发者使用对应业务接口涉及字段加密，请联系华为侧工程师获取对应的SM2加密公钥（合作咨询可[点击此处](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-service-support)）。
+为了保证API接口请求通信过程中敏感信息字段（如用户的住址、银行卡号、手机号码等，涉及加密字段会在具体API接口中标注）的机密性，鸿蒙支付服务要求加密上送。 如开发者使用对应业务接口涉及字段加密，请联系华为侧工程师获取对应的SM2加密公钥（合作咨询可[点击此处](/docs/dev/app-dev/application-services/payment-kit-guide/payment-service-support)）。
 
 **涉及密钥**：
 

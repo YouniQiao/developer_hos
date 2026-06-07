@@ -1,6 +1,6 @@
 ---
 title: "Swiper组件加载丢帧优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-swiper_high_performance_development_guide
+original_url: /docs/quality/swiper_high_performance_development_guide
 ---
 
 
@@ -16,7 +16,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-s
 
 ### 原理介绍
 
-懒加载从提供的数据源按需迭代数据，并在每次迭代过程中创建相应的组件，Swiper采用懒加载进行数据懒加载，在布局时会根据可视区域按需创建Swiper子组件，并在Swiper子组件滑出可视区域外时销毁以降低内存占用。Swiper组件的开发，属于滑动容器加载的一种场景，其LazyForEach懒加载原理可参考：[《长列表加载性能优化-懒加载》](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section182645364229)。
+懒加载从提供的数据源按需迭代数据，并在每次迭代过程中创建相应的组件，Swiper采用懒加载进行数据懒加载，在布局时会根据可视区域按需创建Swiper子组件，并在Swiper子组件滑出可视区域外时销毁以降低内存占用。Swiper组件的开发，属于滑动容器加载的一种场景，其LazyForEach懒加载原理可参考：[《长列表加载性能优化-懒加载》](/docs/quality/best-practices-long-list#section182645364229)。
 
 ### 场景案例
 
@@ -106,7 +106,7 @@ Swiper主页面核心代码如下：
 
 ### 原理介绍
 
-LazyForEach懒加载可以通过设置[cachedCount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#cachedcount8)来指定缓存数量，详细原理参考：[《长列表加载性能优化-缓存列表项》](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section11667144010222)。
+LazyForEach懒加载可以通过设置[cachedCount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#cachedcount8)来指定缓存数量，详细原理参考：[《长列表加载性能优化-缓存列表项》](/docs/quality/best-practices-long-list#section11667144010222)。
 
 ### 使用场景
 
@@ -261,7 +261,7 @@ struct PreloadSwiperItem {
 
 ![](./img/40efbc3e.png)
 
-打点事件说明，当SwiperItem发生预加载时，会先进入[自定义组件生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-lifecycle)回调aboutToAppear，在aboutToAppear回调中使用startTrace开启打点跟踪，随后会进入build渲染组件，build函数执行完成后进入onDidBuild回调，在该回调中使用finishTrace停止打点追踪。分别使用“noPreLoadData”，“preLoadData”标签统计两种场景下的SwiperItem预加载耗时，关于本例中使用性能打点的介绍，请参考[性能打点](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter)。
+打点事件说明，当SwiperItem发生预加载时，会先进入[自定义组件生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-page-custom-components-lifecycle)回调aboutToAppear，在aboutToAppear回调中使用startTrace开启打点跟踪，随后会进入build渲染组件，build函数执行完成后进入onDidBuild回调，在该回调中使用finishTrace停止打点追踪。分别使用“noPreLoadData”，“preLoadData”标签统计两种场景下的SwiperItem预加载耗时，关于本例中使用性能打点的介绍，请参考[性能打点](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter)。
 
 Swiper主页面核心代码：
 
@@ -347,7 +347,7 @@ Swiper主页面核心代码：
 
 在Swiper翻页场景中，子组件频繁创建和销毁。将子组件封装为自定义组件，并使用@Reusable装饰器修饰，以减少ArkUI框架内部反复创建和销毁节点的开销。
 
-详细原理及性能分析参考：[《长列表加载性能优化-组件复用》](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section36781044162218)。
+详细原理及性能分析参考：[《长列表加载性能优化-组件复用》](/docs/quality/best-practices-long-list#section36781044162218)。
 
 ## 总结
 

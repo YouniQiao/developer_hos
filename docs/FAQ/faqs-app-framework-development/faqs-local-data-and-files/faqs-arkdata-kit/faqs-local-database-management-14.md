@@ -1,7 +1,7 @@
 ---
 format: md
 title: "用sqlite开发时，怎么保证数据库同一时间只能支持一个写操作？怎么创建索引"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-14
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-14
 ---
 
 

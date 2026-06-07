@@ -1,6 +1,6 @@
 ---
 title: "管理游戏大事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-big-event-management-0000002285953810
+original_url: /docs/dev/game-dev/games-center-big-event-management-0000002285953810
 format: md
 ---
 

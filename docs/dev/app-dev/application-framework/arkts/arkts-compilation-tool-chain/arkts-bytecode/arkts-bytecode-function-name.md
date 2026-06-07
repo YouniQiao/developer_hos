@@ -1,13 +1,13 @@
 ---
 title: "方舟字节码函数命名规则"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-function-name
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-function-name
 format: md
 ---
 
 
 ## 概述
 
-本文介绍字节码文件中[Method](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format#method)的name\_off字段指向的字符串的命名规则，该命名规则从方舟字节码文件版本12.0.4.0开始生效。
+本文介绍字节码文件中[Method](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-file-format#method)的name\_off字段指向的字符串的命名规则，该命名规则从方舟字节码文件版本12.0.4.0开始生效。
 
 ## 入口函数
 
@@ -55,7 +55,7 @@ format: md
 
 **作用域名称**
 
-源代码中定义作用域时所使用的名称。匿名则为空字符串。为了降低字节码体积，方舟编译器会对较长的作用域名称进行优化，此时作用域名称以@十六进制数字的形式体现。这个数字代表作用域名称的字符串在一个字符串数组中的索引：在字节码文件中源代码对应的[Class](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format#class)中有一个名为scopeNames的[field](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format#field), 这个field的值是指向一个[LiteralArray](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format#literalarray)的偏移，这个LiteralArray存储的是一个字符串数组。十六进制数字就是代表作用域名称在这个数组中的索引。原函数名不进行索引转换。
+源代码中定义作用域时所使用的名称。匿名则为空字符串。为了降低字节码体积，方舟编译器会对较长的作用域名称进行优化，此时作用域名称以@十六进制数字的形式体现。这个数字代表作用域名称的字符串在一个字符串数组中的索引：在字节码文件中源代码对应的[Class](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-file-format#class)中有一个名为scopeNames的[field](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-file-format#field), 这个field的值是指向一个[LiteralArray](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-file-format#literalarray)的偏移，这个LiteralArray存储的是一个字符串数组。十六进制数字就是代表作用域名称在这个数组中的索引。原函数名不进行索引转换。
 
 例子：
 

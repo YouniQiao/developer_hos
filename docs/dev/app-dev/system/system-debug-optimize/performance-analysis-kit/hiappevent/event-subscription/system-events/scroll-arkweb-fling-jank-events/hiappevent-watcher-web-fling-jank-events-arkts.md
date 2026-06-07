@@ -1,6 +1,6 @@
 ---
 title: "订阅ArkWeb抛滑丢帧事件（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-web-fling-jank-events-arkts
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/scroll-arkweb-fling-jank-events/hiappevent-watcher-web-fling-jank-events-arkts
 format: md
 ---
 
@@ -173,7 +173,7 @@ format: md
 
    ![](./img/a9dba93d.png)
 
-   Web组件详细的使用方式请参考[ArkWeb简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-component-overview)文档
+   Web组件详细的使用方式请参考[ArkWeb简介](/docs/dev/app-dev/application-framework/arkweb/web-component-overview)文档
 7. 点击DevEco Studio界面中的运行按钮，运行应用工程。然后在应用界面中点击按钮“ArkWebFlingJank ArkTs”，跳转到网页，等待页面加载完成，滑动页面，当系统检测到故障时触发ArkWeb抛滑丢帧事件。
 8. 每次抛滑过程中发生卡顿50ms及以上场景，可以在Log窗口看到对系统事件数据的处理日志：
 

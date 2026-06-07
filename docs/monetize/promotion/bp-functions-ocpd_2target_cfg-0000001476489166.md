@@ -1,7 +1,7 @@
 ---
 title: "配置oCPD双目标出价"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd_2target_cfg-0000001476489166
+original_url: /docs/monetize/promotion/bp-functions-ocpd_2target_cfg-0000001476489166
 format: md
 ---
 

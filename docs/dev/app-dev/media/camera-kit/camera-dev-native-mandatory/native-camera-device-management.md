@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "相机管理 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-management
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-management
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "坚盾守护模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-secure-shield-mode
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-secure-shield-mode
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 ![](./img/8bf32260.png)
 
 * 如果需要评估调试版本（未上架应用市场）应用的兼容性，先开启开发者选项，然后开启坚盾守护模式。
-* 可以采用Device Security Kit提供的[查询设备安全模式(C/C++)能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-securitymode)，判断坚盾守护模式是否开启。
+* 可以采用Device Security Kit提供的[查询设备安全模式(C/C++)能力](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-securitymode)，判断坚盾守护模式是否开启。
 
 运行应用的相应功能后，可通过以下方式确认是否受影响：
 

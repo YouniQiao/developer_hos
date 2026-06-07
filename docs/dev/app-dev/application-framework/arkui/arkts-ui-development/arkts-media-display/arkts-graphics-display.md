@@ -1,6 +1,6 @@
 ---
 title: "显示图片 (Image)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-graphics-display
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-graphics-display
 format: md
 ---
 
@@ -15,7 +15,7 @@ Image(src: PixelMap | ResourceStr | DrawableDescriptor)
 
 该接口通过图片数据源获取图片，支持本地图片和网络图片的渲染展示。其中，src是图片的数据源，加载方式请参考[加载图片资源](#加载图片资源)。
 
-如果图片加载过程中出现白色块，请参考[Image白块解决方案](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-image-white-lump-solution)。如果图片加载时间过长，请参考[预置图片资源加载优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-texture-compression-improve-performance)。
+如果图片加载过程中出现白色块，请参考[Image白块解决方案](/docs/quality/image-white-lump-solution)。如果图片加载时间过长，请参考[预置图片资源加载优化](/docs/quality/texture-compression-improve-performance)。
 
 ## 加载图片资源
 
@@ -49,7 +49,7 @@ Image支持加载存档图、多媒体像素图和可绘制描述符三种类型
   加载本地图片过程中，如果对图片进行修改或者替换，可能会引起应用崩溃。因此需要覆盖图片文件时，应该先删除该文件再重新创建一个同名文件。
 * 网络资源
 
-  引入网络图片需申请权限ohos.permission.INTERNET，具体申请方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。此时，Image组件的src参数为网络图片的链接。
+  引入网络图片需申请权限ohos.permission.INTERNET，具体申请方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。此时，Image组件的src参数为网络图片的链接。
 
   当前Image组件仅支持加载简单网络图片。
 
@@ -62,7 +62,7 @@ Image支持加载存档图、多媒体像素图和可绘制描述符三种类型
 
   对于复杂情况，推荐使用[ImageKnife](https://gitcode.com/openharmony-tpc/ImageKnife)，该图像库提供了更灵活、可扩展的缓存策略以及完善的生命周期管理能力，更适合复杂业务需求。
 
-  网络图片必须支持RFC 9113标准，否则会导致加载失败。如果下载的网络图片大于10MB或一次下载的网络图片数量较多，建议使用[HTTP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request)工具提前下载，提高图片加载性能，方便应用侧管理数据。
+  网络图片必须支持RFC 9113标准，否则会导致加载失败。如果下载的网络图片大于10MB或一次下载的网络图片数量较多，建议使用[HTTP](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request)工具提前下载，提高图片加载性能，方便应用侧管理数据。
 
   在显示网络图片时，Image组件在机制上会依赖[缓存下载模块](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-request-cachedownload)，开发者可参考[示例3（下载与显示网络gif图片）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#示例3下载与显示网络gif图片)了解具体用法。
 
@@ -198,7 +198,7 @@ Image支持加载存档图、多媒体像素图和可绘制描述符三种类型
 
 ### 多媒体像素图
 
-PixelMap是图片解码后的像素图，具体用法请参考[Image Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-overview)。以下示例将加载的网络图片返回的数据解码成PixelMap格式，再显示在Image组件上。
+PixelMap是图片解码后的像素图，具体用法请参考[Image Kit简介](/docs/dev/app-dev/media/image-kit/image-overview)。以下示例将加载的网络图片返回的数据解码成PixelMap格式，再显示在Image组件上。
 
 ```
 import { http } from '@kit.NetworkKit';

@@ -1,6 +1,6 @@
 ---
 title: "避免硬编码与拼接"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-hard-coding-concatenate
+original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-hard-coding-concatenate
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ## 约束与限制
 
-1. 避免使用硬编码，将需要翻译的字符串提取到资源文件中，与代码分离，然后使用相关的接口加载，具体请参考[提供多语言资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-multilingual-resources)。
+1. 避免使用硬编码，将需要翻译的字符串提取到资源文件中，与代码分离，然后使用相关的接口加载，具体请参考[提供多语言资源](/docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-multilingual-resources)。
 2. 避免字符串直接拼接，若语句存在变化部分（如“打开视频”和“打开浏览器”，变化部分是“视频”和“浏览器”），对应变量应使用占位标识，呈现完整的语句表达。
 
    资源占位符示例：

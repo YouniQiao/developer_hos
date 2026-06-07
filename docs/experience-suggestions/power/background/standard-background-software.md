@@ -1,6 +1,6 @@
 ---
 title: "后台软件资源使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-software
+original_url: /docs/experience-suggestions/power/background/standard-background-software
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [后台上传下载合理使用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-request-use) |
+| 说明 | [后台上传下载合理使用](/docs/quality/reasonable-request-use) |
 
 ### 后台音频播放合理使用
 
@@ -25,7 +25,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [后台音频播放合理使用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-audio-playback-use) |
+| 说明 | [后台音频播放合理使用](/docs/quality/reasonable-audio-playback-use) |
 
 ### 后台定位导航服务合理使用
 
@@ -35,7 +35,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [后台定位导航服务合理使用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-position-navigation-use) |
+| 说明 | [后台定位导航服务合理使用](/docs/quality/reasonable-position-navigation-use) |
 
 ### 后台系统资源合理使用
 
@@ -45,4 +45,4 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [后台系统资源合理使用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-system-use) |
+| 说明 | [后台系统资源合理使用](/docs/quality/reasonable-system-use) |

@@ -1,13 +1,13 @@
 ---
 title: "关闭数字盾服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-disablepwd
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-disablepwd
 format: md
 ---
 
 
 ## 场景介绍
 
-当用户不再使用数字盾时，可以通过密码认证主动发起关闭数字盾的操作；若用户忘记密码或连续密码认证失败次数达到最大限制导致数字盾密码锁定，当应用将在重新激活数字盾时，无需进行密码认证直接关闭最初激活的数字盾，并通过[设置数字盾密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd)重新创建新的数字盾密码。
+当用户不再使用数字盾时，可以通过密码认证主动发起关闭数字盾的操作；若用户忘记密码或连续密码认证失败次数达到最大限制导致数字盾密码锁定，当应用将在重新激活数字盾时，无需进行密码认证直接关闭最初激活的数字盾，并通过[设置数字盾密码](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd)重新创建新的数字盾密码。
 
 ## 约束与限制
 
@@ -48,8 +48,8 @@ format: md
    import { hilog } from '@kit.PerformanceAnalysisKit';
    import { common } from '@kit.AbilityKit';
    ```
-2. 关闭数字盾前，需从服务器获取当前账号在[设置数字盾密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd)时获取的authID。
-3. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts)，初始化签名会话。
+2. 关闭数字盾前，需从服务器获取当前账号在[设置数字盾密码](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd)时获取的authID。
+3. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts)，初始化签名会话。
 4. 调用关闭数字盾服务接口，发起数字盾服务关闭申请。
 
    ```
@@ -77,7 +77,7 @@ format: md
    let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
    const authToken: trustedAuthentication.AuthToken = await DisablePwd(challenge, context);
    ```
-5. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts), 对通过关闭数字盾获取到的authToken数据进行签名，并结束会话。
+5. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts), 对通过关闭数字盾获取到的authToken数据进行签名，并结束会话。
 
 ### 无需密码认证方式关闭数字盾服务
 

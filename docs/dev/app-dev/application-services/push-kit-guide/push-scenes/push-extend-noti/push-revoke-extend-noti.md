@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "撤回语音播报消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-revoke-extend-noti
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-extend-noti/push-revoke-extend-noti
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 
 ## 开发步骤
 
-1. 参考[发送语音播报消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-extend-noti#开发步骤)章节进行消息推送，确保应用可正常收到语音播报消息。
+1. 参考[发送语音播报消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-extend-noti/push-send-extend-noti#开发步骤)章节进行消息推送，确保应用可正常收到语音播报消息。
 2. 应用服务端调用REST API撤回通知消息，消息详情可参见[消息撤回](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-msg-revoke)，请求示例如下：
 
    ```
@@ -49,8 +49,8 @@ format: md
    }
    ```
 
-   * [clientId]：请替换为您应用的Client ID，可参见[指导](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)获取。
+   * [clientId]：请替换为您应用的Client ID，可参见[指导](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)获取。
    * Authorization：JWT格式字符串，可参见[Authorization](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-msg-revoke#request-header)获取。
    * push-type：2，表示语音播报消息场景。
    * notifyId：消息ID，消息的唯一标识，详情请参见[notifyId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-msg-revoke#request-body)。
-   * token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)获取。
+   * token：Push Token，可参见[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)获取。

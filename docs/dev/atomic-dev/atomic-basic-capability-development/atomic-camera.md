@@ -1,6 +1,6 @@
 ---
 title: "相机"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-camera
+original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-camera
 format: md
 ---
 

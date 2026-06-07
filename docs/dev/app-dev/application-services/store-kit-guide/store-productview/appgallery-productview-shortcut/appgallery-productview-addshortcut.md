@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "添加桌面快捷方式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-addshortcut
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-shortcut/appgallery-productview-addshortcut
 format: md
 ---
 
@@ -75,7 +75,7 @@ format: md
 
    ![](./img/0b50cb45.png)
 
-   需提前[创建应用静态快捷方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/typical-scenario-configuration)，且shortcutId、labelResName、iconResName、want参数需要与[shortcuts标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#shortcuts标签)中的配置保持一致。
+   需提前[创建应用静态快捷方式](/docs/dev/app-dev/getting-started/dev-fundamentals/typical-scenario-configuration)，且shortcutId、labelResName、iconResName、want参数需要与[shortcuts标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#shortcuts标签)中的配置保持一致。
 
    若校验参数发生变化，则每次覆盖生成新的tid，否则返回历史tid以及剩余过期时间expired。
 3. 调用[checkPinShortcutPermitted](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagercheckpinshortcutpermitted)接口，将步骤2中的全部参数依次传入接口中，并保存异步返回的结果[CheckShortcutResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#checkshortcutresult)。

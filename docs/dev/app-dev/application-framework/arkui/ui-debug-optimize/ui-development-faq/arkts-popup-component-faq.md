@@ -1,6 +1,6 @@
 ---
 title: "弹窗组件常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-component-faq
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-popup-component-faq
 format: md
 ---
 

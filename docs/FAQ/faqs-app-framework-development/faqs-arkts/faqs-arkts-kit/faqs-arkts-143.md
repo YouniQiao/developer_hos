@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS语言与ArkUI框架、HarmonyOS SDK/API的关系"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-143
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-143
 ---
 
 

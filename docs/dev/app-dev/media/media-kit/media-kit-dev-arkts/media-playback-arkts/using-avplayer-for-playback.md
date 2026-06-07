@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AVPlayer播放音频(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avplayer-for-playback
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-avplayer-for-playback
 format: md
 ---
 
 
-使用[AVPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avplayer)可以实现端到端播放原始媒体资源，本开发指导将以完整播放一首音乐作为示例，向开发者讲解AVPlayer音频播放相关功能。如需播放PCM音频数据，请使用[AudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)。
+使用[AVPlayer](/docs/dev/app-dev/media/media-kit/media-kit-intro#avplayer)可以实现端到端播放原始媒体资源，本开发指导将以完整播放一首音乐作为示例，向开发者讲解AVPlayer音频播放相关功能。如需播放PCM音频数据，请使用[AudioRenderer](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)。
 
 播放的全流程包含：创建AVPlayer，设置播放资源，设置播放参数（音量/倍速/焦点模式），播放控制（播放/暂停/跳转/停止），重置，销毁资源。
 
@@ -22,11 +22,11 @@ format: md
 
 当前指导仅介绍如何实现媒体资源播放，在应用开发过程中，涉及后台播放、播放冲突等情况时，请根据实际需要参考以下说明。
 
-* 若要实现后台播放或熄屏播放，需要接入[AVSession（媒体会话）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene)和[申请长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)，避免播放被系统强制中断。
-* 应用在播放过程中，若播放的媒体数据涉及音频，根据系统音频管理策略（参考[处理音频焦点事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency)），可能会被其他应用打断，建议应用主动监听音频打断事件，根据内容提示做出相应处理，避免出现应用状态与预期效果不一致的问题。
+* 若要实现后台播放或熄屏播放，需要接入[AVSession（媒体会话）](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene)和[申请长时任务](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)，避免播放被系统强制中断。
+* 应用在播放过程中，若播放的媒体数据涉及音频，根据系统音频管理策略（参考[处理音频焦点事件](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency)），可能会被其他应用打断，建议应用主动监听音频打断事件，根据内容提示做出相应处理，避免出现应用状态与预期效果不一致的问题。
 * 面对设备同时连接多个音频输出设备的情况，应用可以通过[on('audioOutputDeviceChangeWithInfo')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer#onaudiooutputdevicechangewithinfo11)监听音频输出设备的变化，做出相应处理。
 * 若要访问在线媒体资源，需要申请 ohos.permission.INTERNET 权限。
-* 若要切换听筒/扬声器，应用可以参考[音频输出设备路由切换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-switcher)。
+* 若要切换听筒/扬声器，应用可以参考[音频输出设备路由切换](/docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-switcher)。
 
 ## 开发步骤及注意事项
 
@@ -93,10 +93,10 @@ format: md
 
    下面代码示例中的url仅作示意使用，开发者需根据实际情况，确认资源有效性并设置：
 
-   * 如果使用本地资源播放，必须确认资源文件可用，并使用应用沙箱路径访问对应资源，参考[获取应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
-   * 如果使用网络播放路径，需[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：ohos.permission.INTERNET。
+   * 如果使用本地资源播放，必须确认资源文件可用，并使用应用沙箱路径访问对应资源，参考[获取应用文件路径](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取应用文件路径)。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
+   * 如果使用网络播放路径，需[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)：ohos.permission.INTERNET。
    * 可以使用ResourceManager.[getRawFd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getrawfd9)打开HAP资源文件描述符。
-   * 需要使用[支持的播放格式与协议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#支持的格式与协议)。
+   * 需要使用[支持的播放格式与协议](/docs/dev/app-dev/media/media-kit/media-kit-intro#支持的格式与协议)。
 
    **示例一：播放网络媒体资源**
 
@@ -120,7 +120,7 @@ format: md
    ```
 4. （可选）设置音频渲染：只允许在initialized状态下，第一次调用prepare()之前设置，以便音频渲染器信息在之后生效。若媒体源包含视频，则usage默认值为STREAM\_USAGE\_MOVIE，否则usage默认值为STREAM\_USAGE\_MUSIC。rendererFlags默认值为0。
 
-   为了确保音频行为符合使用预期，建议根据具体业务场景和实际需求，主动配置[audio.AudioRendererInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#audiorendererinfo8)，为音频选择恰当的流类型[usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-and-sourcetype)。
+   为了确保音频行为符合使用预期，建议根据具体业务场景和实际需求，主动配置[audio.AudioRendererInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-i#audiorendererinfo8)，为音频选择恰当的流类型[usage](/docs/dev/app-dev/media/audio-kit/using-right-streamusage-and-sourcetype)。
 
    ```
    import { audio } from '@kit.AudioKit';

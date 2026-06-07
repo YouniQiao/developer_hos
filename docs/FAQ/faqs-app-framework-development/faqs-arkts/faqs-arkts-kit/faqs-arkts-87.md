@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取对象的类名"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-87
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-87
 ---
 
 

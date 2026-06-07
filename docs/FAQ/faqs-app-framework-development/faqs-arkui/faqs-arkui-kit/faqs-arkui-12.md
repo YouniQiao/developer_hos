@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在Navigation跳转页面时返回传参"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-12
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-12
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用的进程启动过程是怎样的"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-28
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-28
 ---
 
 
@@ -20,4 +20,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[Stage模型开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development-overview)
+[Stage模型开发概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-development-overview)

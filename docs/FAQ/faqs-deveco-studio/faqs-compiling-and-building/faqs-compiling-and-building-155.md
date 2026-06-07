@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译报错“Cannot depend on HAP modules outside of this project”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-155
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-155
 ---
 
 

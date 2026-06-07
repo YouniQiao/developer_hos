@@ -1,6 +1,6 @@
 ---
 title: "华为账号登录管理细则"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-detailedrules
+original_url: /docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-detailedrules
 format: md
 ---
 

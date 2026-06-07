@@ -1,6 +1,6 @@
 ---
 title: "物料准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-touch-material-0000002410432930
+original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-material-0000002410432930
 format: md
 ---
 

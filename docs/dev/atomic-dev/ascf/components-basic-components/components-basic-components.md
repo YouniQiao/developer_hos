@@ -1,11 +1,11 @@
 ---
 title: "基础内容"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-basic-components
+original_url: /docs/dev/atomic-dev/ascf/components-basic-components/components-basic-components
 format: md
 ---
 
 
-* **[icon](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-icon)**
-* **[progress](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-progress)**
-* **[rich-text](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-rich-text)**
-* **[text](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-text)**
+* **[icon](/docs/dev/atomic-dev/ascf/components-basic-components/components-icon)**
+* **[progress](/docs/dev/atomic-dev/ascf/components-basic-components/components-progress)**
+* **[rich-text](/docs/dev/atomic-dev/ascf/components-basic-components/components-rich-text)**
+* **[text](/docs/dev/atomic-dev/ascf/components-basic-components/components-text)**

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在HAP中调用createModuleContext方法获取的Context是什么层级"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-25
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-25
 ---
 
 
@@ -11,4 +11,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **参考链接**
 
-[应用上下文Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage)
+[应用上下文Context](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage)

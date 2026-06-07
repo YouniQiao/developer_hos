@@ -1,7 +1,7 @@
 ---
 title: "意图装饰器生成和小艺智能体创建"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-insight-intent2
+original_url: /docs/tools/ai-assist/ide-insight-intent2
 format: md
 ---
 
@@ -15,8 +15,8 @@ format: md
 ## 使用约束
 
 * 使用API 20及以上版本。
-* 仅支持使用团队账号登录时，添加意图插件。个人加入目标团队方式具体可参考[添加成员](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129#section151241455193313)。
-* 应用在AGC已注册，具体可参考[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506#section1772711713288)。
+* 仅支持使用团队账号登录时，添加意图插件。个人加入目标团队方式具体可参考[添加成员](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#section151241455193313)。
+* 应用在AGC已注册，具体可参考[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section1772711713288)。
 * 生成意图装饰器时使用HarmonyOS Ask智能体。
 
 ## 意图装饰器分类

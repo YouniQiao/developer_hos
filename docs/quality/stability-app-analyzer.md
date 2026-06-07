@@ -1,6 +1,6 @@
 ---
 title: "应用体检"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-analyzer
+original_url: /docs/quality/stability-app-analyzer
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "内容上架流程"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/content-listing-process-0000001364289837
+original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-process-0000001364289837
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 ![](./img/649259b1ff96.png "点击放大")
 
-（2）在皮肤上传界面首先填写皮肤的基础信息，包括皮肤名称、皮肤简介、关键词等。具体填写规范见[（鸿蒙4.3及以下）皮肤规范](https://developer.huawei.com/consumer/cn/doc/content/skin-specification-0000001311370036)或[（鸿蒙5.0及以上）皮肤规范](https://developer.huawei.com/consumer/cn/doc/content/skin2-specification-0000002390750545)。
+（2）在皮肤上传界面首先填写皮肤的基础信息，包括皮肤名称、皮肤简介、关键词等。具体填写规范见[（鸿蒙4.3及以下）皮肤规范](/docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/skin-specification-0000001311370036)或[（鸿蒙5.0及以上）皮肤规范](/docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/skin2-specification-0000002390750545)。
 
 ![](./img/da278ad5f103.png "点击放大")
 

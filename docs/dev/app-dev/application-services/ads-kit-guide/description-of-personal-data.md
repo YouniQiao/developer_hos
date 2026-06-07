@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "鲸鸿动能Ads Kit个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/description-of-personal-data
+original_url: /docs/dev/app-dev/application-services/ads-kit-guide/description-of-personal-data
 format: md
 ---
 

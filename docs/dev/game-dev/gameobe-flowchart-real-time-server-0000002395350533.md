@@ -1,6 +1,6 @@
 ---
 title: "接入流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-flowchart-real-time-server-0000002395350533
+original_url: /docs/dev/game-dev/gameobe-flowchart-real-time-server-0000002395350533
 format: md
 ---
 

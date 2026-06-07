@@ -1,6 +1,6 @@
 ---
 title: "标准化数据类型 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-descriptors-c
+original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-descriptors-c
 format: md
 ---
 

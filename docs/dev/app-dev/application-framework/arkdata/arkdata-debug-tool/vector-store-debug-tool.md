@@ -1,6 +1,6 @@
 ---
 title: "vector-store数据库调试工具指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vector-store-debug-tool
+original_url: /docs/dev/app-dev/application-framework/arkdata/arkdata-debug-tool/vector-store-debug-tool
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ## 环境要求
 
-* 在使用本工具前，开发者需要先获取[hdc工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)，开启[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)，执行hdc shell。
+* 在使用本工具前，开发者需要先获取[hdc工具](/docs/dev/app-dev/system/hdc#环境准备)，开启[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)，执行hdc shell。
 * 此调试工具仅支持调试应用使用，配置调试应用具体可见[配置应用可调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-debug-configurations)。
 * 正常连接设备。
 

@@ -1,6 +1,6 @@
 ---
 title: "资源泄漏类问题检测方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-runtime-leak-detection
+original_url: /docs/quality/stability-runtime-leak-detection
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 概述
 
-资源泄漏类问题的基本概念参考[资源泄漏类问题检测](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-detection)章节，本章节主要描述运行态检测的差异部分。
+资源泄漏类问题的基本概念参考[资源泄漏类问题检测](/docs/quality/stability-leak-detection)章节，本章节主要描述运行态检测的差异部分。
 
 ## 实现原理
 
@@ -27,4 +27,4 @@ format: md
 
 ## 场景
 
-发生资源泄漏后，可以通过HiAppEvent订阅RESOURCE\_OVERLIMIT事件，获取到泄漏相关的维测日志，请参考：[资源泄漏事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events)。
+发生资源泄漏后，可以通过HiAppEvent订阅RESOURCE\_OVERLIMIT事件，获取到泄漏相关的维测日志，请参考：[资源泄漏事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events)。

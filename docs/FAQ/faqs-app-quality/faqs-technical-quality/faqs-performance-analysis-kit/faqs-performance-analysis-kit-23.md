@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取设备的SDK版本、产品版本、设备类型（平板、手机）、build版本等信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-23
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-23
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "合作伙伴分级权益规则"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-bonus-cooperation-0000001309230226
+original_url: /docs/monetize/promotion/bp-bonus-cooperation-0000001309230226
 ---
 import MergeTable from '@site/src/components/MergeTable';
 

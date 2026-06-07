@@ -1,6 +1,6 @@
 ---
 title: "查看检测结果"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-result-0000002304664338
+original_url: /docs/dev/game-dev/games-gamemme-riskcontrol-result-0000002304664338
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-* 您已[开启内容检测](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section17288256144510)功能。
+* 您已[开启内容检测](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section17288256144510)功能。
 * 您已通过自动送检或人工送检方式进行内容送检。
 
 ## 操作步骤

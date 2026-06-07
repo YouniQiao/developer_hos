@@ -1,6 +1,6 @@
 ---
 title: "使用系统Picker"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-picker
+original_url: /docs/dev/app-dev/system/system-security/access-control/use-picker
 format: md
 ---
 
@@ -13,4 +13,4 @@ format: md
 
 由于系统Picker已经获取了对应权限的预授权，开发者使用系统Picker时，无需再次申请权限也可临时受限访问对应的资源。例如，当应用需要读取用户图片时，可通过使用照片Picker，在用户选择所需要的图片资源后，直接返回该图片资源，而不需要授予应用读取图片文件的权限。
 
-当前，系统Picker作为拉起系统资源的一种方式，整合至“拉起系统应用”中，开发者可从“[拉起系统应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup)”获取所有拉起系统资源的方式。
+当前，系统Picker作为拉起系统资源的一种方式，整合至“拉起系统应用”中，开发者可从“[拉起系统应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/system-app-startup)”获取所有拉起系统资源的方式。

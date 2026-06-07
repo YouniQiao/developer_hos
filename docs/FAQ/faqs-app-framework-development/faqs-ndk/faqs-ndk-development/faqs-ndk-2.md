@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在Native侧如何处理ArkTS侧传入的字符串被截断的异常场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-2
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-2
 ---
 
 

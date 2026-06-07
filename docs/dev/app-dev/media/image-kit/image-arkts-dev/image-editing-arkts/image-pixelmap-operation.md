@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用PixelMap完成位图操作"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-pixelmap-operation
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 位图操作相关API的详细介绍请参见[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)。
 
-1. 完成[图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)，获取PixelMap位图对象。
+1. 完成[图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)，获取PixelMap位图对象。
 2. 从PixelMap位图对象中获取信息。
 
    ```
@@ -85,7 +85,7 @@ format: md
 * 该方法仅可实现PixelMap基本内容的复制，不支持复制色域和HDR元数据。如果不需要改变新PixelMap的像素格式，请使用[clone](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap#clone18)或[cloneSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap#clonesync18)。
 * 该方法不支持将新PixelMap转换为下列像素格式：RGBA\_1010102、YCBCR\_P010、YCRCB\_P010、ASTC\_4x4。
 
-1. 完成[图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)，获取PixelMap位图对象。
+1. 完成[图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)，获取PixelMap位图对象。
 2. 参考以下代码对PixelMap进行深拷贝。
 
    ```
@@ -126,7 +126,7 @@ format: md
 
 该方法仅支持以下像素格式的PixelMap：RGBA\_8888、BGRA\_8888、RGBA\_F16。
 
-1. 完成[图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)，获取两张宽度相同且像素格式相同的PixelMap位图对象。
+1. 完成[图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)，获取两张宽度相同且像素格式相同的PixelMap位图对象。
 2. 参考以下代码对两张PixelMap进行拼接。
 
    ```

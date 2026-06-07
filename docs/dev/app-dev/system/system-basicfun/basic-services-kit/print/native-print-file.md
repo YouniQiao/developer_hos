@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文件打印（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-print-file
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/print/native-print-file
 format: md
 ---
 
@@ -14,11 +14,11 @@ format: md
 
 ![](./img/47953a19.png)
 
-使用打印服务，需[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：ohos.permission.PRINT。
+使用打印服务，需[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)：ohos.permission.PRINT。
 
 当不再使用打印服务时，调用OH\_Print\_Release()释放打印客户端资源并取消事件订阅。
 
-c++接口需要在NDK工程中使用，请参考[NDK开发导读](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview)。
+c++接口需要在NDK工程中使用，请参考[NDK开发导读](/docs/dev/ndk-dev/ndk-development-overview)。
 
 ### 步骤1. 引用NDK头文件
 

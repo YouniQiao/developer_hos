@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "引导用户绑卡场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-partner-bindcard
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-partner-bindcard
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
 ## 提供绑卡跳转应用信息
 
-开发者需与华为支付业务侧沟通（合作咨询可[点击此处](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-service-support)）后提供以下应用信息：
+开发者需与华为支付业务侧沟通（合作咨询可[点击此处](/docs/dev/app-dev/application-services/payment-kit-guide/payment-service-support)）后提供以下应用信息：
 
 | 应用信息 | 是否必选 | 说明 |
 | --- | --- | --- |

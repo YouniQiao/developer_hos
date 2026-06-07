@@ -1,6 +1,6 @@
 ---
 title: "Node-API跨语言调用"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-using-napi-interaction-0000002411166425
+original_url: /docs/dev/game-dev/games-universal-using-napi-interaction-0000002411166425
 format: md
 ---
 
@@ -12,4 +12,4 @@ HarmonyOS Node-API是基于Node.js 12.x LTS的[Node-API](https://nodejs.org/docs
 * 系统可以将框架层丰富的模块功能通过Node-API的模块注册机制对外暴露ArkTS/JS的接口，将C/C++的能力开放给应用的ArkTS/JS层。
 * 应用开发者也可以选择将一些对性能、底层系统调用有要求的核心功能用C/C++封装实现，再通过ArkTS/JS接口使用，提高应用本身的执行效率。
 
-了解更多Node-API跨语言调用内容请参见[使用Node-API实现跨语言交互](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-napi-interaction-with-cpp)。更多实践案例请参见[跨语言调用复杂参数传递](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-complex-type-pass)和[Native侧子线程与UI主线程通信](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-native-sub-main-comm)。
+了解更多Node-API跨语言调用内容请参见[使用Node-API实现跨语言交互](/docs/dev/ndk-dev/using-napi-interaction-with-cpp)。更多实践案例请参见[跨语言调用复杂参数传递](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-complex-type-pass)和[Native侧子线程与UI主线程通信](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-native-sub-main-comm)。

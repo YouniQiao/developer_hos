@@ -1,7 +1,7 @@
 ---
 format: md
 title: "onUnhandledException与onException回调分别什么时候触发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-37
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-37
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "账号密码更新"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-update-acc-password
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-update-acc-password
 format: md
 ---
 
@@ -11,9 +11,9 @@ format: md
 
 应用触发修改密码或使用已经保存过的账号手动登录时，均会触发密码更新功能。
 
-登录的布局介绍请参考[账号密码登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-save-acc-password#账号密码登录)，以下仅介绍修改账号密码的标准适配场景。
+登录的布局介绍请参考[账号密码登录](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-save-acc-password#账号密码登录)，以下仅介绍修改账号密码的标准适配场景。
 
-**触发条件及注意事项同[账号密码保存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-save-acc-password)功能。**
+**触发条件及注意事项同[账号密码保存](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-save-acc-password)功能。**
 
 ## 修改账号密码
 

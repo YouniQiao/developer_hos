@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArcSwiper如何适配表冠"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-439
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-439
 ---
 
 

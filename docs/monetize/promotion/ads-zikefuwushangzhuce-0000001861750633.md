@@ -1,7 +1,7 @@
 ---
 title: "子客服务商注册"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-zikefuwushangzhuce-0000001861750633
+original_url: /docs/monetize/promotion/ads-zikefuwushangzhuce-0000001861750633
 format: md
 ---
 

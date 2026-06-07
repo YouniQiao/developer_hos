@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-performance-no-closures"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-performance-no-closures
+original_url: /docs/tools/coding-debug/ide_hp-performance-no-closures
 format: md
 ---
 

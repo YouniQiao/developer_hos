@@ -1,6 +1,6 @@
 ---
 title: "使用签名初始化SDK"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-signature-js-0000002395350417
+original_url: /docs/dev/game-dev/gameobe-signature-js-0000002395350417
 format: md
 ---
 
@@ -9,10 +9,10 @@ format: md
 
 ## 前提条件
 
-* 您已[开通联机对战服务](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-enable-0000002395350369)。
-* 您已[集成联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-js-0000002361670432)。
-* 您已[开启接入安全加固](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-console-servicemanagement-0000002361510560#section1499524456)。
-* 您已[记录下游戏私钥信息](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-console-servicemanagement-0000002361510560#ZH-CN_TOPIC_0000002361510560__li1235121816449)。
+* 您已[开通联机对战服务](/docs/dev/game-dev/gameobe-enable-0000002395350369)。
+* 您已[集成联机对战SDK](/docs/dev/game-dev/gameobe-integratingsdk-js-0000002361670432)。
+* 您已[开启接入安全加固](/docs/dev/game-dev/gameobe-console-servicemanagement-0000002361510560#section1499524456)。
+* 您已[记录下游戏私钥信息](/docs/dev/game-dev/gameobe-console-servicemanagement-0000002361510560#ZH-CN_TOPIC_0000002361510560__li1235121816449)。
 
 ## 签名计算方式
 
@@ -20,7 +20,7 @@ format: md
 
 | 字段名 | 类型 | 含义 |
 | --- | --- | --- |
-| appId | string | 应用ID。  说明：  您可登录AGC控制台，进入“我的项目 \&gt; 项目设置 \&gt; 常规 \&gt; 应用” 获取“APP ID”信息，具体请参见[准备游戏信息](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-gameinformation-0000002361670424)。 |
+| appId | string | 应用ID。  说明：  您可登录AGC控制台，进入“我的项目 \&gt; 项目设置 \&gt; 常规 \&gt; 应用” 获取“APP ID”信息，具体请参见[准备游戏信息](/docs/dev/game-dev/gameobe-gameinformation-0000002361670424)。 |
 | nonce | uint64 | 安全随机数，取值范围8~128字节。 |
 | openId | string | 玩家ID。  说明：  “玩家ID”可以是您的游戏在第三方平台生成的玩家ID，或者是您的自建账号体系生成的玩家ID。 |
 | timestamp | uint64 | 时间戳。 |

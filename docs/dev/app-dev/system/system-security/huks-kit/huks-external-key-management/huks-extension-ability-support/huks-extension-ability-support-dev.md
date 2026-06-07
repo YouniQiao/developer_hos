@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "CryptoExtensionAbility适配开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-ability-support-dev
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-extension-ability-support/huks-extension-ability-support-dev
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
    │   └── cryptoability
    │       └── CryptoAbility.ets
    ```
-3. 开发CryptoExtensionAbility需要配置[ohos.permission.CRYPTO\_EXTENSION\_REGISTER](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissioncrypto_extension_register)权限，该权限属于[受限开放权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions)，请按照[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)指引为应用进行申请。
+3. 开发CryptoExtensionAbility需要配置[ohos.permission.CRYPTO\_EXTENSION\_REGISTER](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissioncrypto_extension_register)权限，该权限属于[受限开放权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions)，请按照[申请受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)指引为应用进行申请。
 
    ```
    // entry/src/main/module.json5

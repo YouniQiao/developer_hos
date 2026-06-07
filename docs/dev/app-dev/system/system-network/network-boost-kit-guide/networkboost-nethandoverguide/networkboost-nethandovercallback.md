@@ -1,6 +1,6 @@
 ---
 title: "连接迁移通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-nethandovercallback
+original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide/networkboost-nethandovercallback
 format: md
 ---
 

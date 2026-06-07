@@ -1,7 +1,7 @@
 ---
 title: "推广统计"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-level1-statistics-0000002499177785
+original_url: /docs/monetize/promotion/fusion-level1-statistics-0000002499177785
 format: md
 ---
 

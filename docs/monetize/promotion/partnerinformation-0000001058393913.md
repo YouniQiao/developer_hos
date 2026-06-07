@@ -1,7 +1,7 @@
 ---
 title: "认证服务商"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/partnerinformation-0000001058393913
+original_url: /docs/monetize/promotion/partnerinformation-0000001058393913
 format: md
 ---
 

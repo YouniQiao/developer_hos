@@ -1,7 +1,7 @@
 ---
 title: "数据备份"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-data-backup
+original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-data-backup
 ---
 
 

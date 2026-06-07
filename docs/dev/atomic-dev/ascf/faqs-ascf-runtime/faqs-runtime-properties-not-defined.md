@@ -1,6 +1,6 @@
 ---
 title: "自定义组件未定义properties属性，传参为空"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-runtime-properties-not-defined
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-properties-not-defined
 format: md
 ---
 

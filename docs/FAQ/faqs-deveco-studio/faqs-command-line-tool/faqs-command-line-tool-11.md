@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决ohpm上传har包异常，报错：The publishId is invalid!"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-11
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-11
 ---
 
 

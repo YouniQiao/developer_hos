@@ -1,7 +1,7 @@
 ---
 title: "鲸鸿动能投放违规管理规范"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-toufanguangliguifang-0000001793450445
+original_url: /docs/monetize/promotion/ads-toufanguangliguifang-0000001793450445
 ---
 import MergeTable from '@site/src/components/MergeTable';
 

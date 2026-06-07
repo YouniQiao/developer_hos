@@ -1,9 +1,9 @@
 ---
 title: "专项测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-service
+original_url: /docs/dev/testing/test-service
 format: md
 ---
 
 
-* **[命令行工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/indev_cmd)**
-* **[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing)**
+* **[命令行工具](/docs/dev/testing/indev_cmd)**
+* **[DevEco Testing](/docs/dev/testing/deveco-testing)**

@@ -1,6 +1,6 @@
 ---
 title: "发布与接收频道消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channelmessage-publish-csharp-native-0000002393266985
+original_url: /docs/dev/game-dev/games-gamemme-channelmessage-publish-csharp-native-0000002393266985
 format: md
 ---
 
@@ -9,10 +9,10 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体基础SDK和实时信令模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
+* 您已[集成游戏多媒体基础SDK和实时信令模块](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
 
-* 您已[订阅频道](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-channel-subscribe-csharp-native-0000002359707022#section1014421318306)。
+* 您已[订阅频道](/docs/dev/game-dev/games-gamemme-channel-subscribe-csharp-native-0000002359707022#section1014421318306)。
 
 ## 发布频道消息
 

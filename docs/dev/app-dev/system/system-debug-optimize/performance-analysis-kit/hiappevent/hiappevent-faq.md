@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "HiAppEvent常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-faq
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-faq
 format: md
 ---
 
@@ -33,7 +33,7 @@ Hilog中出现如下日志：
 
 external\_log日志文件所在目录的空间已达到上限。
 
-external\_log所在的目录为[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)，目录空间受限。log\_over\_limit字段用于判断external\_log日志文件所在目录的空间是否达到上限。如果log\_over\_limit的值为true，表示external\_log日志文件所在目录空间已达到上限，事件包含的日志文件将无法写入。
+external\_log所在的目录为[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)，目录空间受限。log\_over\_limit字段用于判断external\_log日志文件所在目录的空间是否达到上限。如果log\_over\_limit的值为true，表示external\_log日志文件所在目录空间已达到上限，事件包含的日志文件将无法写入。
 
 external\_log是一个字符串数组。例如：
 
@@ -49,7 +49,7 @@ external\_log=["/data/storage/el2/log/hiappevent/APP\_CRASH\_时间戳\_xxxx.log
 
 **可采取的解决措施**：
 
-查看对应的事件介绍章节，确认事件是否包含external\_log：[系统事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/event-subscription-overview#系统事件)。
+查看对应的事件介绍章节，确认事件是否包含external\_log：[系统事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/event-subscription-overview#系统事件)。
 
 **情况三**：
 

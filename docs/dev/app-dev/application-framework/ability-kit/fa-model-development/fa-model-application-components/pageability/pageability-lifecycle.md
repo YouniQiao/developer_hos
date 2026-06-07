@@ -1,6 +1,6 @@
 ---
 title: "PageAbility的生命周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageability-lifecycle
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-lifecycle
 format: md
 ---
 

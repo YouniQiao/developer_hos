@@ -1,7 +1,7 @@
 ---
 title: "查询账户余额"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-querybalance-0000001135626846
+original_url: /docs/monetize/promotion/marketapi-querybalance-0000001135626846
 format: md
 ---
 
@@ -59,7 +59,7 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 说明 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码，参考[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码，参考[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 | totalMoney | M | double | 总共余额。 |
 | lockedMoney | M | double | 锁定余额。 |

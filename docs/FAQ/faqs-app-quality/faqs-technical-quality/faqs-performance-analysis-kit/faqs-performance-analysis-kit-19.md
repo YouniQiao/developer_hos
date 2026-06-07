@@ -1,6 +1,6 @@
 ---
 title: "如何实现crash堆栈抓取、crash回调"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-19
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-19
 format: md
 ---
 

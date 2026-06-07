@@ -1,6 +1,6 @@
 ---
 title: "应用级事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-app-event
+original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-app-event
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 has.onAppShow(function callback)
 
-监听元服务切前台事件。该事件与[App](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app).onShow的回调时机一致。以callback形式返回结果。
+监听元服务切前台事件。该事件与[App](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-app).onShow的回调时机一致。以callback形式返回结果。
 
 **起始版本：** 1.0.0
 
@@ -49,7 +49,7 @@ has.onAppShow((res) =>{
 
 has.onAppHide(function callback)
 
-监听元服务切后台事件。该事件与[App](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app).onHide的回调时机一致。
+监听元服务切后台事件。该事件与[App](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-app).onHide的回调时机一致。
 
 **起始版本：** 1.0.0
 
@@ -71,7 +71,7 @@ has.onAppHide(() => {
 
 has.onPageNotFound(function callback)
 
-监听元服务需要打开的页面不存在事件。该事件与[App](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app).onPageNotFound的回调时机一致。
+监听元服务需要打开的页面不存在事件。该事件与[App](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-app).onPageNotFound的回调时机一致。
 
 **起始版本：** 1.0.0
 
@@ -102,7 +102,7 @@ has.onPageNotFound((res) => {
 
 has.onError(function callback)
 
-监听元服务错误事件。如脚本错误或 API 调用报错等。该事件与[App](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app).onError的回调时机与参数一致。
+监听元服务错误事件。如脚本错误或 API 调用报错等。该事件与[App](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-app).onError的回调时机与参数一致。
 
 **起始版本：** 1.0.0
 

@@ -1,13 +1,13 @@
 ---
 title: "查询和操作自定义节点"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-node-query-operate
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-node-query-operate
 format: md
 ---
 
 
 NDK提供一系列节点查询、遍历、操作能力，通过使用以下接口，开发者可以高效地访问和操控节点。
 
-以下场景基于[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)章节，创建前置工程。
+以下场景基于[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)章节，创建前置工程。
 
 ## 查询节点uniqueId及通过uniqueId获取节点信息
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "视频缩放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/generate-super-resolution-video
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/generate-super-resolution-video
 format: md
 ---
 

@@ -1,14 +1,14 @@
 ---
 title: "在玩服务魔方创意"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-0000001865677220
+original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001865677220
 format: md
 ---
 
 
 # 在玩服务魔方创意
 
-在玩魔方创意是为[在玩服务](https://developer.huawei.com/consumer/cn/doc/app/game-center-playing-operation-0000001870290961)提供的在线制作、轻松上手、简单轻量的设计网站。该网站支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计在玩的可视化H5落地页。
+在玩魔方创意是为[在玩服务](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-playing-operation-0000001870290961)提供的在线制作、轻松上手、简单轻量的设计网站。该网站支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计在玩的可视化H5落地页。
 
 ## 编辑器界面
 
@@ -74,7 +74,7 @@ format: md
 
 ## 提交审核
 
-完成页面所有编辑或修改操作，对页面样式满意后，保存内容，然后需返回原来的[AGC在玩配置](https://developer.huawei.com/consumer/cn/doc/app/game-center-playing-operation-0000001870290961#ZH-CN_TOPIC_0000001870290961__li2237119133517)页面，对在玩头图和H5页面进行提交，最终客户端呈现的tab页样式会是头图+H5页面拼接的效果。
+完成页面所有编辑或修改操作，对页面样式满意后，保存内容，然后需返回原来的[AGC在玩配置](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-playing-operation-0000001870290961#ZH-CN_TOPIC_0000001870290961__li2237119133517)页面，对在玩头图和H5页面进行提交，最终客户端呈现的tab页样式会是头图+H5页面拼接的效果。
 
 ## 结构化内容组件
 

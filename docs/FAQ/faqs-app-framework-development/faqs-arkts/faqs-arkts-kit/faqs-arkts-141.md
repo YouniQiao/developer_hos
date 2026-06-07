@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何定义一个具有任意键的对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-141
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-141
 ---
 
 

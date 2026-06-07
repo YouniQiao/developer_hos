@@ -1,13 +1,13 @@
 ---
 title: "授权持久化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/file-persistpermission
 format: md
 ---
 
 
 ## 场景介绍
 
-应用可以通过Picker[选择文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file)或[保存文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file)获取到临时授权，临时授权在应用退出后或者设备重启后会清除。如果应用重启或者设备重启后需要直接访问之前已访问过的文件，则需要对文件进行持久化授权。
+应用可以通过Picker[选择文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file)或[保存文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file)获取到临时授权，临时授权在应用退出后或者设备重启后会清除。如果应用重启或者设备重启后需要直接访问之前已访问过的文件，则需要对文件进行持久化授权。
 
 ## 通过Picker获取临时授权并进行授权持久化
 
@@ -28,7 +28,7 @@ if (!canIUse('SystemCapability.FileManagement.AppFileService.FolderAuthorization
 
 **需要权限**
 
-ohos.permission.FILE\_ACCESS\_PERSIST，具体参考[访问控制-申请应用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode)。
+ohos.permission.FILE\_ACCESS\_PERSIST，具体参考[访问控制-申请应用权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode)。
 
 **示例：**
 
@@ -81,13 +81,13 @@ export async function persistPermissionExample() {
 4. 应用在卸载时会将之前的授权数据全部清除，重新安装后需要重新授权。
 5. 只能对已获取到的临时权限进行持久化授权操作，否则会报错。
 
-**备注**：C/C++持久化授权接口说明及开发指南具体参考：[OH\_FileShare\_PersistPermission持久化授权接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileshare-guidelines)。
+**备注**：C/C++持久化授权接口说明及开发指南具体参考：[OH\_FileShare\_PersistPermission持久化授权接口](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/native-fileshare-guidelines)。
 
 3.可以通过revokePermission接口（[ohos.fileshare.revokePermission](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-fileshare#filesharerevokepermission11)）对已持久化的文件取消授权，同时更新应用存储的数据以删除最近访问数据。
 
 **需要权限**
 
-ohos.permission.FILE\_ACCESS\_PERSIST，具体参考[访问控制-申请应用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode)。
+ohos.permission.FILE\_ACCESS\_PERSIST，具体参考[访问控制-申请应用权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode)。
 
 **示例：**
 
@@ -136,7 +136,7 @@ export async function revokePermissionExample() {
 2. 只能对已获取到的持久化权限进行取消持久化授权操作，建议按照使用需求去取消对应的持久化权限。
 3. 持久化权限接口(可以使用canIUse接口进行校验能力是否可用)，且需要申请对应的权限。
 
-**备注**：C/C++去持久化授权接口说明及开发指南具体参考：[OH\_FileShare\_RevokePermission去持久化授权接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileshare-guidelines)。
+**备注**：C/C++去持久化授权接口说明及开发指南具体参考：[OH\_FileShare\_RevokePermission去持久化授权接口](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/native-fileshare-guidelines)。
 
 ## 激活已经持久化的权限访问文件或目录
 
@@ -144,7 +144,7 @@ export async function revokePermissionExample() {
 
 **需要权限**
 
-ohos.permission.FILE\_ACCESS\_PERSIST，具体参考[访问控制-申请应用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode)。
+ohos.permission.FILE\_ACCESS\_PERSIST，具体参考[访问控制-申请应用权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode)。
 
 **示例：**
 
@@ -197,7 +197,7 @@ export async function activatePermissionExample() {
 3. 如果激活失败显示未持久化的权限可以按照示例进行持久化。
 4. 持久化权限接口可以使用canIUse接口进行校验能力是否可用，且需要申请对应的权限。
 
-**备注**：C/C++持久化授权激活接口说明及开发指南具体参考：[OH\_FileShare\_ActivatePermission持久化授权激活接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-fileshare-guidelines)。
+**备注**：C/C++持久化授权激活接口说明及开发指南具体参考：[OH\_FileShare\_ActivatePermission持久化授权激活接口](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/native-fileshare-guidelines)。
 
 ## 持久化权限保留配置
 
@@ -205,7 +205,7 @@ export async function activatePermissionExample() {
 
 ### 配置方式
 
-开发者可在应用模块级配置文件[src/main/module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)的module标签中metadata里配置ohos.fileshare.supportPreservePersistentPermission标签，以启用持久化权限保留能力。
+开发者可在应用模块级配置文件[src/main/module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)的module标签中metadata里配置ohos.fileshare.supportPreservePersistentPermission标签，以启用持久化权限保留能力。
 
 **metadata标签配置示例**
 

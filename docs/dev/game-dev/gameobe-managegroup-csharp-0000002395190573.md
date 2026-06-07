@@ -1,6 +1,6 @@
 ---
 title: "管理队伍"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-managegroup-csharp-0000002395190573
+original_url: /docs/dev/game-dev/gameobe-managegroup-csharp-0000002395190573
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-* 您已[初始化联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-csharp-0000002361510612)。
+* 您已[初始化联机对战SDK](/docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612)。
 * 更新队伍信息时，玩家需为队长身份。
 
 ## 查询队伍信息

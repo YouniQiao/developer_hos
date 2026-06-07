@@ -1,7 +1,7 @@
 ---
 title: "查询创意"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-creative2-0000001338379165
+original_url: /docs/monetize/promotion/marketing-api-advertising-creative2-0000001338379165
 format: md
 ---
 
@@ -34,14 +34,14 @@ format: md
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | adgroup\_id | long | 否 | 任务ID。 |
   | creative\_ids | long[] | 否 | 创意ID集合。 |
-  | approved\_status | string | 否 | 创意审核状态，详见[创意审核状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1749811142159)。 |
+  | approved\_status | string | 否 | 创意审核状态，详见[创意审核状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1749811142159)。 |
   | updated\_begin\_time | string | 否 | 创意更新的开始时间，格式:"yyyy-MM-dd HH:mm:ss"。 |
   | updated\_end\_time | string | 否 | 创意更新的结束时间，格式:"yyyy-MM-dd HH:mm:ss"。 |
   | created\_begin\_time | string | 否 | 创意创建的开始日期，格式："yyyy-MM-dd HH:mm:ss"。 |
   | created\_end\_time | string | 否 | 创意创建的结束日期，格式："yyyy-MM-dd HH:mm:ss"。 |
-  | show\_status | string | 否 | 创意展示状态，详见[创意显示状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section870681931619)。 |
+  | show\_status | string | 否 | 创意展示状态，详见[创意显示状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section870681931619)。 |
   | creative\_name | string | 否 | 创意名称。 |
-  | campaign\_type | string | 否 | 计划类型，详见[计划类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)。 |
+  | campaign\_type | string | 否 | 计划类型，详见[计划类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)。 |
 
   - <strong>请求示例</strong>
 
@@ -79,23 +79,23 @@ format: md
     |  |  |  |
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
-    | approved\_status | string | 创意审核状态，详见[创意审核状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1749811142159)。 |
-    | show\_status | string | 创意显示状态，详见[创意显示状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section870681931619)。 |
+    | approved\_status | string | 创意审核状态，详见[创意审核状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1749811142159)。 |
+    | show\_status | string | 创意显示状态，详见[创意显示状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section870681931619)。 |
     | creative\_id | long | 创意ID。 |
     | campaign\_id | string | 推广计划ID。 |
     | adgroup\_id | long | 任务ID。 |
     | creative\_name | string | 创意名称。 |
-    | creative\_size\_type | string | 版位形式，详见[版位形式](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1772223181512)。 |
-    | creative\_size\_sub\_type | string | 版位子形式，详见[版位子样式](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section97194512155)。 |
+    | creative\_size\_type | string | 版位形式，详见[版位形式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1772223181512)。 |
+    | creative\_size\_sub\_type | string | 版位子形式，详见[版位子样式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section97194512155)。 |
     | creative\_size\_id | long | 版位ID。 |
-    | creative\_status | string | 操作状态，详见[计划/任务/创意操作状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section9341472176)。 |
+    | creative\_status | string | 操作状态，详见[计划/任务/创意操作状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section9341472176)。 |
     | approved\_message | string | 审核信息。 |
-    | dyn\_ad\_text\_flag | string | 动态词包标识，详见[动态词包标识](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section2505524161413)。 |
+    | dyn\_ad\_text\_flag | string | 动态词包标识，详见[动态词包标识](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section2505524161413)。 |
     | content\_struct | Struct3 | 创意详情。 |
     | creative\_score | integer | 创意打分字段，打分范围在0-50之间。 |
     | creative\_comment | string | 评分意见。 |
     | created\_time | string | 创意创建的时间，格式如下："yyyy-MM-dd HH:mm:ss"。 |
-    | creative\_mode | string | 创意模式，详见[创意模式](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1049832113283)。 |
+    | creative\_mode | string | 创意模式，详见[创意模式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1049832113283)。 |
 
     content\_struct(Struct3)定义
 
@@ -110,10 +110,10 @@ format: md
     | corporate | Struct5 | 品牌名称。 |
     | landing\_page | Struc6 | 落地页信息。 |
     | deeplink | Struct7 | 应用直达地址。 |
-    | impression\_monitor\_url | Struct8 | 展示监控地址，取值详见[查询分析工具关联关系](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking4-0000001338383009)。 |
-    | click\_monitor\_url | Struct8 | 点击监控地址，取值详见[查询分析工具关联关系](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking4-0000001338383009)。 |
+    | impression\_monitor\_url | Struct8 | 展示监控地址，取值详见[查询分析工具关联关系](/docs/monetize/promotion/marketing-api-tool-tracking4-0000001338383009)。 |
+    | click\_monitor\_url | Struct8 | 点击监控地址，取值详见[查询分析工具关联关系](/docs/monetize/promotion/marketing-api-tool-tracking4-0000001338383009)。 |
     | service\_card\_id | string | 服务卡片ID，仅creative\_size\_sub\_type为SERVICE\_CARD才显示。 |
-    | template | Struct10 | 创意模板ID。  campaign\_type=CAMPAIGN\_TYPE\_SHOPPING，creative\_mode= TEMPLATE\_MODE填写，取值详见[查询商品库动态模板](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa8-0000001338383021)。 |
+    | template | Struct10 | 创意模板ID。  campaign\_type=CAMPAIGN\_TYPE\_SHOPPING，creative\_mode= TEMPLATE\_MODE填写，取值详见[查询商品库动态模板](/docs/monetize/promotion/marketing-api-tool-dpa8-0000001338383021)。 |
 
     images 、icon 、video(Struct4)定义
 
@@ -149,7 +149,7 @@ format: md
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
     | landing\_page | string | 落地页地址。 |
-    | landing\_page\_type | string | 落地页类型，详见[落地页类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section5467205171914)。 |
+    | landing\_page\_type | string | 落地页类型，详见[落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section5467205171914)。 |
 
     deeplink(Struct7)定义
 
@@ -170,7 +170,7 @@ format: md
     |  |  |  |  |
     | --- | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-    | template\_id | long | 是 | 模板ID，通过[查询商品库动态模板](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa8-0000001338383021)接口获取。 |
+    | template\_id | long | 是 | 模板ID，通过[查询商品库动态模板](/docs/monetize/promotion/marketing-api-tool-dpa8-0000001338383021)接口获取。 |
   - <strong>应答示例</strong>
 
     HTTPS/1.1 200 OK

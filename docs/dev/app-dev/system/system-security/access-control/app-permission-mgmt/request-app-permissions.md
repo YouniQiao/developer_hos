@@ -1,14 +1,14 @@
 ---
 title: "申请应用权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-app-permissions
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions
 format: md
 ---
 
 
-* **[选择申请权限的方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode)**
-* **[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)**
-* **[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)**
-* **[再次向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization-second)**
-* **[向用户申请单次授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/one-time-authorization)**
-* **[手动设置授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/open-permission-on-setting)**
-* **[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)**
+* **[选择申请权限的方式](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode)**
+* **[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)**
+* **[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)**
+* **[再次向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization-second)**
+* **[向用户申请单次授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/one-time-authorization)**
+* **[手动设置授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/open-permission-on-setting)**
+* **[申请受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)**

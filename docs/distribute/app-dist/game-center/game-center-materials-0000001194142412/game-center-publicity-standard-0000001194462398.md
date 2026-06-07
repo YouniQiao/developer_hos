@@ -1,7 +1,7 @@
 ---
 title: "宣传素材规范及示例"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-publicity-standard-0000001194462398
+original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-publicity-standard-0000001194462398
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

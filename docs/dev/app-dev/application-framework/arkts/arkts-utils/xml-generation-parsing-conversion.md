@@ -1,11 +1,11 @@
 ---
 title: "XML生成、解析与转换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-generation-parsing-conversion
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion
 format: md
 ---
 
 
-* **[XML概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-overview)**
-* **[XML生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-generation)**
-* **[XML解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-parsing)**
-* **[XML转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-conversion)**
+* **[XML概述](/docs/dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-overview)**
+* **[XML生成](/docs/dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-generation)**
+* **[XML解析](/docs/dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-parsing)**
+* **[XML转换](/docs/dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-conversion)**

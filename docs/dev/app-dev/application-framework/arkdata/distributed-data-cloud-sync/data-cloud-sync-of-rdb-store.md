@@ -1,6 +1,6 @@
 ---
 title: "端云数据同步关系型数据库端侧开发指导 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-cloud-sync-of-rdb-store
+original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-cloud-sync-of-rdb-store
 format: md
 ---
 

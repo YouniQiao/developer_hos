@@ -1,6 +1,6 @@
 ---
 title: "云函数"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-log-cloudfunction-0000002271371765
+original_url: /docs/distribute/agc/agc-help-cloudmonitor-log-0000002271411725/agc-help-cloudmonitor-log-cloudfunction-0000002271371765
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 #### 前提条件
 
-若要查看云函数服务的业务日志或者接入日志，您首先需要[创建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-create-and-config-function)。
+若要查看云函数服务的业务日志或者接入日志，您首先需要[创建函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-create-and-config-function)。
 
 #### 查看云函数业务日志
 

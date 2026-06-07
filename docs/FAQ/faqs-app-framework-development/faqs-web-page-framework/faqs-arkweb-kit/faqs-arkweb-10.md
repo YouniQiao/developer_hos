@@ -1,6 +1,6 @@
 ---
 title: "Web组件中如何通过手势滑动返回上一个Web页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-10
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-10
 format: md
 ---
 

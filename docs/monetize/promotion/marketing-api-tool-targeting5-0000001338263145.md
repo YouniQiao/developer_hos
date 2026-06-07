@@ -1,7 +1,7 @@
 ---
 title: "绑定定向包"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-targeting5-0000001338263145
+original_url: /docs/monetize/promotion/marketing-api-tool-targeting5-0000001338263145
 format: md
 ---
 

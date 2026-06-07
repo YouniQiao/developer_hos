@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "配置签名"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-sign
+original_url: /docs/dev/app-dev/application-services/iap-config-sign
 format: md
 ---
 

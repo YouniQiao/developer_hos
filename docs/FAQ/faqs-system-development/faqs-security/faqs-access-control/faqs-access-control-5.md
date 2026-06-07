@@ -1,7 +1,7 @@
 ---
 format: md
 title: "动态申请权限能否添加描述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-5
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-5
 ---
 
 

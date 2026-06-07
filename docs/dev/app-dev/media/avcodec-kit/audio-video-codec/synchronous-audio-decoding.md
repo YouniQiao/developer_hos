@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "音频解码同步模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-audio-decoding
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-audio-decoding
 format: md
 ---
 
@@ -12,13 +12,13 @@ format: md
 
 具体实现可参考[示例工程](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/BasicFeature/Media/AVCodec)。
 
-支持的解码能力请参考[AVCodec支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#音频解码)。
+支持的解码能力请参考[AVCodec支持的格式](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#音频解码)。
 
 **适用场景**
 
-通常推荐使用异步模式，详细内容请参考[音频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-decoding)。若需要主动请求buffer去送帧，则可以使用同步模式。
+通常推荐使用异步模式，详细内容请参考[音频解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-decoding)。若需要主动请求buffer去送帧，则可以使用同步模式。
 
-将音视频文件解码为PCM码流，通常需要以下步骤：[媒体数据解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer) -> 音频解码。
+将音视频文件解码为PCM码流，通常需要以下步骤：[媒体数据解析](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer) -> 音频解码。
 
 本指南描述音频解码过程：输入音频帧和解码出PCM码流。
 
@@ -85,7 +85,7 @@ target_link_libraries(sample PUBLIC libnative_media_acodec.so)
    ```
 3. （可选）OH\_AudioCodec\_SetDecryptionConfig设置解密配置。
 
-   当获取到DRM信息（参考[音视频解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)开发步骤第4步）后，通过此接口进行解密配置。
+   当获取到DRM信息（参考[音视频解封装](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)开发步骤第4步）后，通过此接口进行解密配置。
 
    DRM相关接口详见[DRM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-drm)。
 
@@ -211,7 +211,7 @@ target_link_libraries(sample PUBLIC libnative_media_acodec.so)
    ```
 7. （可选）调用OH\_AVCencInfo\_SetAVBuffer()，设置cencInfo。
 
-   如果当前播放的节目是DRM加密节目，并且由上层应用进行[媒体数据解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer)，则需要调用OH\_AVCencInfo\_SetAVBuffer()将cencInfo设置给AVBuffer，以实现媒体数据的解密。
+   如果当前播放的节目是DRM加密节目，并且由上层应用进行[媒体数据解析](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer)，则需要调用OH\_AVCencInfo\_SetAVBuffer()将cencInfo设置给AVBuffer，以实现媒体数据的解密。
 
    添加头文件：
 

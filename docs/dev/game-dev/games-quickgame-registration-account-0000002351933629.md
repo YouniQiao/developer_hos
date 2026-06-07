@@ -1,6 +1,6 @@
 ---
 title: "注册开发者账号"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-registration-account-0000002351933629
+original_url: /docs/dev/game-dev/games-quickgame-registration-account-0000002351933629
 format: md
 ---
 

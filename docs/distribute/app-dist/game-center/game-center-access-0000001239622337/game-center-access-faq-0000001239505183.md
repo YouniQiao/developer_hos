@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-access-faq-0000001239505183
+original_url: /docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-access-faq-0000001239505183
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

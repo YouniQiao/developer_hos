@@ -1,6 +1,6 @@
 ---
 title: "查看版本历史记录"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-version-history-0000002382084265
+original_url: /docs/dev/game-dev/games-version-history-0000002382084265
 format: md
 ---
 

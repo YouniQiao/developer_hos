@@ -1,7 +1,7 @@
 ---
 format: md
 title: "TextInput是否能自定义hover效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-133
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-133
 ---
 
 

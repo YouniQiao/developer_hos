@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分段式拍照(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-deferred-capture
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-deferred-capture
 format: md
 ---
 
@@ -130,7 +130,7 @@ format: md
    落盘图片参考媒体库接口：[saveCameraPhoto](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetchangerequest#savecameraphoto12)
 
    请求图片参考媒体库接口：[requestImageData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetmanager#requestimagedata11) 和 [onDataPrepared](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetdatahandler#ondataprepared11)
-4. 拍照时的会话配置及触发拍照的方式，与普通拍照相同，请参考[拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting)的步骤4-5。
+4. 拍照时的会话配置及触发拍照的方式，与普通拍照相同，请参考[拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting)的步骤4-5。
 
 ## 状态监听
 

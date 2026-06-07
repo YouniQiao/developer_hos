@@ -1,7 +1,7 @@
 ---
 title: "接入调试"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_quickapp_commission-0000001411145018
+original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_commission-0000001411145018
 format: md
 ---
 

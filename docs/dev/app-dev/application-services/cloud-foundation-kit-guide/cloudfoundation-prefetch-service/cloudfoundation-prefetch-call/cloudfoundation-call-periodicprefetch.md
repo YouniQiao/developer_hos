@@ -1,18 +1,18 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "调用周期性预加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-periodicprefetch
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-call/cloudfoundation-call-periodicprefetch
 format: md
 ---
 
 
-在项目的EntryAbility.ets文件中导入预加载实现类[PrefetchWrapper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-implementation-class#prefetchwrapper)，并在onCreate中调用PrefetchWrapper的doPeriodicPrefetch方法。方法内部会先调用[registerPrefetchTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-cloudresprefetch#registerprefetchtask)方法注册周期性预加载任务，12小时后将调用[getPrefetchResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-cloudresprefetch#getprefetchresult)获取周期性预加载数据。
+在项目的EntryAbility.ets文件中导入预加载实现类[PrefetchWrapper](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-call/cloudfoundation-prefetch-add-dependency-class/cloudfoundation-prefetch-implementation-class#prefetchwrapper)，并在onCreate中调用PrefetchWrapper的doPeriodicPrefetch方法。方法内部会先调用[registerPrefetchTask](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-cloudresprefetch#registerprefetchtask)方法注册周期性预加载任务，12小时后将调用[getPrefetchResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-cloudresprefetch#getprefetchresult)获取周期性预加载数据。
 
 ![](./img/5943b9c1.png)
 
 * 系统会结合应用活跃情况进行任务清理。应用不活跃后，如果当前时间 – 任务注册时间 > 72小时，则任务将直接从队列移除。移除任务时不立即清理已加载的数据，数据会被定期清理，应用启动时仍然可尝试获取此前已加载的缓存数据，并结合数据时间戳决定是否呈现内容。
 * 获取周期性预加载数据的间隔周期是12小时，如果打开应用的时间间隔低于12小时，可能将无法获取到最新的预加载数据。
-* 由于系统每隔12小时才会拉取一次周期性预加载数据，不方便调试周期性预加载功能，为此，系统提供了[命令行工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-commandtool-debug)，可以实时拉取周期性预加载数据。
+* 由于系统每隔12小时才会拉取一次周期性预加载数据，不方便调试周期性预加载功能，为此，系统提供了[命令行工具](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-debugging/cloudfoundation-commandtool-debug)，可以实时拉取周期性预加载数据。
 
 ```
 import { GlobalContext } from '../common/GlobalContext';

@@ -1,7 +1,7 @@
 ---
 title: "创建知识库"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/create-a-knowledge-base-0000002471344153
+original_url: /docs/distribute/xiaoyi/develop-a-knowledge-base-0000002435989624/create-a-knowledge-base-0000002471344153
 format: md
 ---
 

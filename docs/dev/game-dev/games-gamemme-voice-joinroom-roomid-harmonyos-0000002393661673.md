@@ -1,6 +1,6 @@
 ---
 title: "加入房间"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673
+original_url: /docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673
 format: md
 ---
 
@@ -13,8 +13,8 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体语音SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
+* 您已[集成游戏多媒体语音SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
 * 您已规划语音房间ID。
 
 ## 加入小队语音房间
@@ -74,7 +74,7 @@ format: md
 
 ![](./img/59901889.png)
 
-加入范围语音房间后，您还需要设置语音接收范围，并更新上报自身和其他玩家的位置信息，具体请参见[范围语音](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rangeroom-harmonyos-0000002359901696)。
+加入范围语音房间后，您还需要设置语音接收范围，并更新上报自身和其他玩家的位置信息，具体请参见[范围语音](/docs/dev/game-dev/games-gamemme-rangeroom-harmonyos-0000002359901696)。
 
 1. 调用[GameMediaEngine.joinRangeRoom](https://developer.huawei.com/consumer/cn/doc/games-references/gamemme-gamemediaengine-harmonyos-0000002392643485#section55155121859)方法，使用相同的房间ID即可进入同一范围语音房间。
 

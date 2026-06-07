@@ -1,7 +1,7 @@
 ---
 title: "登录指南"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/platform-introduction-0000002306078829
+original_url: /docs/distribute/app-dist/app-services/growth-platform-0000002271422160/platform-introduction-0000002306078829
 format: md
 ---
 
@@ -34,7 +34,7 @@ format: md
 
 进一步了解应用推广引擎企业认证流程链接：
 
-&lt;https://developer.huawei.com/consumer/cn/doc/ecosystem-Guides/02_01_02_1-0000001411713121&gt;
+&lt;https://developer.huawei.com/consumer/cn/doc/ecosystem-Guides/02_01_02_1-0000001411713121&gt
 
 ## 账户管理
 

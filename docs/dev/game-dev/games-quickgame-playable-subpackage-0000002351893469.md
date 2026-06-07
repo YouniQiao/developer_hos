@@ -1,6 +1,6 @@
 ---
 title: "快游戏试玩"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-playable-subpackage-0000002351893469
+original_url: /docs/dev/game-dev/games-quickgame-playable-subpackage-0000002351893469
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 ## 试玩分包要求
 
 * 试玩分包依托于独立分包的能力，因此试玩分包大小要求**不超过4MB**。
-* 试玩分包内**请勿使用fetch方法**。如果因为引擎框架引入了fetch方法，请[使用XMLHttpRequest进行替换](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-independent-subpackage-0000002351933645#ZH-CN_TOPIC_0000002348453520__zh-cn_topic_0000002076341729_li169488551386)。
+* 试玩分包内**请勿使用fetch方法**。如果因为引擎框架引入了fetch方法，请[使用XMLHttpRequest进行替换](/docs/dev/game-dev/games-quickgame-independent-subpackage-0000002351933645#ZH-CN_TOPIC_0000002348453520__zh-cn_topic_0000002076341729_li169488551386)。
 * 试玩分包的加载时长，要求在包含代码加载时间的情况下，1.5秒内返回首帧。
 * 建议截取游戏内第一关或开发者认为游戏内最具吸引力、上手难度小、性能要求相对较低的玩法作为试玩内容。
 * 建议试玩内容与游戏主玩法尽量一直或者有较强的关联性。
@@ -44,14 +44,14 @@ format: md
 
 ## 开发指导
 
-快游戏试玩依托于快游戏[独立分包](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-independent-subpackage-0000002351933645)的能力，可以独立于主包和其他分包运行，但依旧为快游戏的一部分。快游戏试玩分包和普通的独立分包相比，需要额外添加meta字段，声明当前独立分包为试玩分包。meta字段定义如下：
+快游戏试玩依托于快游戏[独立分包](/docs/dev/game-dev/games-quickgame-independent-subpackage-0000002351933645)的能力，可以独立于主包和其他分包运行，但依旧为快游戏的一部分。快游戏试玩分包和普通的独立分包相比，需要额外添加meta字段，声明当前独立分包为试玩分包。meta字段定义如下：
 
 | 参数 | 类型 | 必填(M)/选填(O) | 说明 |
 | --- | --- | --- | --- |
 | type | string | M | 独立分包类型，目前固定为“playable”。 |
 | playableOrientation | string | O | 试玩分包的横竖屏信息：   * portrait：竖屏。 * landscape：横屏。   默认值为“portrait”。  注意：  当前版本仅支持竖屏。 |
 
-更多独立分包相关信息请参见[独立分包](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-independent-subpackage-0000002351933645)。
+更多独立分包相关信息请参见[独立分包](/docs/dev/game-dev/games-quickgame-independent-subpackage-0000002351933645)。
 
 ### 配置manifest.json
 
@@ -106,7 +106,7 @@ manifest.json文件中试玩分包对应的配置项如下：
 
 ## 运行测试
 
-试玩分包的运行测试需要使用**15.0.2及以上版本**的快游戏开发者工具进行测试，快游戏开发者工具的具体使用方法请参见[快游戏开发者工具调试](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-debug-0000002351933789)和[使用快游戏开发者工具进行试玩调试](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-playable-subpackage-0000002425133926#section151421127437)。
+试玩分包的运行测试需要使用**15.0.2及以上版本**的快游戏开发者工具进行测试，快游戏开发者工具的具体使用方法请参见[快游戏开发者工具调试](/docs/dev/game-dev/games-quickgame-tool-debug-0000002351933789)和[使用快游戏开发者工具进行试玩调试](/docs/dev/game-dev/games-quickgame-faq-playable-subpackage-0000002425133926#section151421127437)。
 
 ## 审核与发布
 
@@ -123,6 +123,6 @@ manifest.json文件中试玩分包对应的配置项如下：
 
 ### FAQ
 
-* [如何使用快游戏开发者工具进行试玩调试？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-playable-subpackage-0000002425133926#section151421127437)
-* [如何制作试玩分包？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-playable-subpackage-0000002425133926#section178539135432)
-* [试玩分包如何合入主包中？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-playable-subpackage-0000002425133926#section48432712436)
+* [如何使用快游戏开发者工具进行试玩调试？](/docs/dev/game-dev/games-quickgame-faq-playable-subpackage-0000002425133926#section151421127437)
+* [如何制作试玩分包？](/docs/dev/game-dev/games-quickgame-faq-playable-subpackage-0000002425133926#section178539135432)
+* [试玩分包如何合入主包中？](/docs/dev/game-dev/games-quickgame-faq-playable-subpackage-0000002425133926#section48432712436)

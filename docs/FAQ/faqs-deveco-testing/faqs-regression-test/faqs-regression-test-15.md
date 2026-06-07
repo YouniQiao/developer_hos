@@ -1,7 +1,7 @@
 ---
 format: md
 title: "创建回归测试任务时，提示“应用解析异常”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-15
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-15
 ---
 
 

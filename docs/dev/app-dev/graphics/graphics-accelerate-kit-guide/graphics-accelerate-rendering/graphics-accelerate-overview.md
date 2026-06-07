@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "业务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-introduction
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-overview
 format: md
 ---
 

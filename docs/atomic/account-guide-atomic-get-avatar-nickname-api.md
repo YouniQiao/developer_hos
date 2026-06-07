@@ -1,6 +1,6 @@
 ---
 title: "通过接口方式获取头像昵称"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-avatar-nickname-api
+original_url: /docs/dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-api
 format: md
 ---
 
@@ -40,11 +40,11 @@ format: md
 
 ## 开发前提
 
-在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-sign-fingerprints)、[配置Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-client-id)。该场景无需申请账号权限。
+在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-sign-fingerprints)、[配置Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)。该场景无需申请账号权限。
 
 ![](./img/c90499fe.png)
 
-若未正确配置公钥指纹，将报错[1001500001 应用指纹证书校验失败](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-faq#section1001500001-应用指纹证书校验失败的可能原因和解决办法)。
+若未正确配置公钥指纹，将报错[1001500001 应用指纹证书校验失败](/docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-faq#section1001500001-应用指纹证书校验失败的可能原因和解决办法)。
 
 ## 开发步骤
 

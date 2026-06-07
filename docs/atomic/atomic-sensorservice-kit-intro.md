@@ -1,6 +1,6 @@
 ---
 title: "Sensor Service Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-sensorservice-kit-intro
+original_url: /docs/dev/atomic-dev/atomic-device-management/atomic-sensorservice-kit-intro
 format: md
 ---
 

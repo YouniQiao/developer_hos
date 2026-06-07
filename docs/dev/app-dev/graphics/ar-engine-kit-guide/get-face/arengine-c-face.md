@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "人脸跟踪（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-face
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-face/arengine-c-face
 format: md
 ---
 
 
 ## 约束与限制
 
-从6.1.0(23)开始，人脸识别与跟踪能力支持部分Phone、部分Tablet设备、TV设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持人脸识别与跟踪特性（[ARENGINE\_FEATURE\_TYPE\_FACE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
+从6.1.0(23)开始，人脸识别与跟踪能力支持部分Phone、部分Tablet设备、TV设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持人脸识别与跟踪特性（[ARENGINE\_FEATURE\_TYPE\_FACE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
 
 ## 接口说明
 
@@ -114,7 +114,7 @@ struct ARFace {
 
 ### 引入AR Engine
 
-开发者可参考AR物体摆放章节的[引入AR Engine](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arworld#引入ar-engine)。
+开发者可参考AR物体摆放章节的[引入AR Engine](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-c-arworld#引入ar-engine)。
 
 ### 创建AR会话并配置为开启人脸跟踪模式
 

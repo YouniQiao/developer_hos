@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "钥匙开通"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey-operation
+original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-carkey/wallet-carkey-operation
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 
 ## 开发步骤
 
-1. 车主APP使用[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号和[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识，车主APP调用[queryPass](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-walletpass#querypass)接口检查当前设备车钥匙的开通情况。
+1. 车主APP使用[创建Wallet Kit服务](/docs/dev/app-dev/application-services/wallet-kit-guide/wallet-preparations)时注册的服务号和[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识，车主APP调用[queryPass](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-walletpass#querypass)接口检查当前设备车钥匙的开通情况。
 
    ```
    import { common } from '@kit.AbilityKit';
@@ -230,7 +230,7 @@ format: md
    | gw.appid | ![](./img/e84e3fd9.png) |
    | gw.appid.secret | [AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)平台申请的Client ID和Client Secret分别填入gw.appid和gw.appid.secret |
    | walletServerBaseUrl | 固定填入服务器基地址：https://wallet-passentrust-drcn.cloud.huawei.com.cn/hmspass |
-   | servicePrivateKey | [创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)步骤5生成的私钥 |
+   | servicePrivateKey | [创建Wallet Kit服务](/docs/dev/app-dev/application-services/wallet-kit-guide/wallet-preparations)步骤5生成的私钥 |
 3. 打开resources/data/StdCarKeyModel.json文件，替换真实的应用数据，详细见[预置模板](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#预置模板)的请求参数。
 
    ![](./img/0c7c64af.png)
@@ -244,7 +244,7 @@ format: md
 
 ## 车主服务器激活卡片
 
-1. 使用 Intellij IDEA打开[钱包服务-服务端卡片激活](https://gitcode.com/harmonyos_samples/wallet-kit-sample-code-severdemo-nfc-java)的示例代码。示例代码和工具下载完成后，解决工程配置等问题后，Constants类中替换SERVER\_PUBLIC\_KEY和SERVER\_SECRET\_KEY为您在[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)步骤5生成的公钥和私钥，直接打开PassesController这个类。
+1. 使用 Intellij IDEA打开[钱包服务-服务端卡片激活](https://gitcode.com/harmonyos_samples/wallet-kit-sample-code-severdemo-nfc-java)的示例代码。示例代码和工具下载完成后，解决工程配置等问题后，Constants类中替换SERVER\_PUBLIC\_KEY和SERVER\_SECRET\_KEY为您在[创建Wallet Kit服务](/docs/dev/app-dev/application-services/wallet-kit-guide/wallet-preparations)步骤5生成的公钥和私钥，直接打开PassesController这个类。
 2. [设备认证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-public#设备认证)对应类中的register方法，通过此方法进行设备认证。
 
    ![](./img/00018eb8.png)

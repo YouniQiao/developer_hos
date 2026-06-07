@@ -1,6 +1,6 @@
 ---
 title: "如何从图库选择图片并上传到服务器"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-22
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-22
 format: md
 ---
 

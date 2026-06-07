@@ -1,7 +1,7 @@
 ---
 title: "查询数据源"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-inquire-data-source-0000001282844469
+original_url: /docs/monetize/promotion/bp-functions-ocpd-inquire-data-source-0000001282844469
 format: md
 ---
 

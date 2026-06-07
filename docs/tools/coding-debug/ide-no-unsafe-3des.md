@@ -1,7 +1,7 @@
 ---
 title: "@security/no-unsafe-3des"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-no-unsafe-3des
+original_url: /docs/tools/coding-debug/ide-no-unsafe-3des
 format: md
 ---
 

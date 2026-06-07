@@ -1,6 +1,6 @@
 ---
 title: "色彩"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-color-effect
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-effects/arkts-color-effect
 format: md
 ---
 

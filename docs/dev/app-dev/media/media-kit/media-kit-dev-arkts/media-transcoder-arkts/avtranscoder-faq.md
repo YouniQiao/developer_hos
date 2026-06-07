@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "转码常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avtranscoder-faq
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/avtranscoder-faq
 format: md
 ---
 
@@ -12,13 +12,13 @@ format: md
 
 ## 转码是否支持HDR转SDR？为什么使用其他系统的设备录制HDR视频转码会失败
 
-当前转码仅支持HDR vivid至SDR视频的转换，其他HDR格式不支持。可以通过OH\_VideoProcessing\_IsColorSpaceConversionSupported接口查询当前设备是否支持，具体可以参考：[VPE支持规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-csc#规格说明)。
+当前转码仅支持HDR vivid至SDR视频的转换，其他HDR格式不支持。可以通过OH\_VideoProcessing\_IsColorSpaceConversionSupported接口查询当前设备是否支持，具体可以参考：[VPE支持规格](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/video-csc#规格说明)。
 
 ## 按照原视频的比例缩放设置目标视频的分辨率，为何仍会报告参数错误
 
 需检查设置的目标视频分辨率是否低于240P，目标视频的宽度和高度不能超过源视频的宽度和高度，并且不能设置为奇数值。
 
-视频分辨率的设置方法可参考：[获取支持的编解码能力-设置正确的视频宽高](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs#设置正确的视频宽高)。
+视频分辨率的设置方法可参考：[获取支持的编解码能力-设置正确的视频宽高](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs#设置正确的视频宽高)。
 
 ## 为什么设置目标分辨率小于源视频分辨率，转码后生成的视频大小反而变大
 
@@ -32,5 +32,5 @@ format: md
 
 1. 需要确认视频与设置的目标视频格式当前转码系统能力是否支持。
 
-   当前转码能力支持情况：[AVTranscoder支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avtranscoder)、[AVCodec支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats)、[VPE支持规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-csc#规格说明)。
+   当前转码能力支持情况：[AVTranscoder支持的格式](/docs/dev/app-dev/media/media-kit/media-kit-intro#avtranscoder)、[AVCodec支持的格式](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats)、[VPE支持规格](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/video-csc#规格说明)。
 2. 应用在收到error事件后，建议发送原视频；应用在收到complete事件后，建议先调用release再对转码后的视频做发送、上云等操作。

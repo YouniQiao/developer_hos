@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "已连接穿戴设备查询"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices
 format: md
 ---
 
 
 ![](./img/d4292fa7.png)
 
-该接口的调用前，需要在开发者联盟申请设备基础信息权限（具体请参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)）。
+该接口的调用前，需要在开发者联盟申请设备基础信息权限（具体请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）。
 
 Wear Engine提供查询用户已连接的穿戴设备列表（即支持Wear Engine能力且与手机侧运动健康App处于连接状态的穿戴设备）的接口。
 

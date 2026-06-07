@@ -1,7 +1,7 @@
 ---
 title: "魔方创意"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-0000001429732169
+original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001429732169
 format: md
 ---
 

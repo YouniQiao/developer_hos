@@ -1,6 +1,6 @@
 ---
 title: "开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-development-guide-0000002332905597
+original_url: /docs/dev/game-dev/games-gpm-development-guide-0000002332905597
 format: md
 ---
 
@@ -13,7 +13,7 @@ HarmonyOS 5.0及以上系统游戏无需集成SDK，用户**必须**在启动游
 
 ![](./img/372aaf2e.png)
 
-若想采集大厅、团战等不同游戏场景下的性能数据，需要集成游戏场景感知功能。场景感知功能通过接口调用的方式快速获取游戏的场景信息，并将信息整合上报至AGC控制台。游戏场景感知的详细介绍请参考[游戏场景感知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-dev)。集成游戏场景感知的开发步骤如下。
+若想采集大厅、团战等不同游戏场景下的性能数据，需要集成游戏场景感知功能。场景感知功能通过接口调用的方式快速获取游戏的场景信息，并将信息整合上报至AGC控制台。游戏场景感知的详细介绍请参考[游戏场景感知](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameperformance-dev)。集成游戏场景感知的开发步骤如下。
 
 1. 在游戏中导入Game Service Kit模块。
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "关闭会话（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netclose-arkts
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netclose-arkts
 format: md
 ---
 

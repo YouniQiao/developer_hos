@@ -1,6 +1,6 @@
 ---
 title: "伪随机数生成器"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-randomnumber-csharp-0000002395350501
+original_url: /docs/dev/game-dev/gameobe-randomnumber-csharp-0000002395350501
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "选择发票抬头Button"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-invoice-title
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-invoice-title
 format: md
 ---
 
@@ -10,11 +10,11 @@ format: md
 
 选择发票抬头Button功能可以帮助开发者调用对应Button组件跳转发票抬头选择页面，供用户完成已保存发票抬头的选择。
 
-运行示例代码单击“选择发票抬头”按钮，拉起选择发票抬头页面可选择已保存发票，也可单击“管理发票抬头”进入新增企业/个人发票抬头页面（完整场景请参考[获取发票抬头](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-select-invoice-title)）。
+运行示例代码单击“选择发票抬头”按钮，拉起选择发票抬头页面可选择已保存发票，也可单击“管理发票抬头”进入新增企业/个人发票抬头页面（完整场景请参考[获取发票抬头](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-select-invoice-title)）。
 
 ## 前提条件
 
-参见[开发前提](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-select-invoice-title#开发前提)。
+参见[开发前提](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-select-invoice-title#开发前提)。
 
 ## 开发步骤
 

@@ -1,7 +1,7 @@
 ---
 title: "平板应用开发"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-pad-guide
+original_url: /docs/dev/app-dev/multi-device/bpta-pad-guide
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ![](./img/0effd5bf.png)
 
-本文聚焦于平板应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)”系列文章。
+本文聚焦于平板应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)”系列文章。
 
 ## 产品硬件说明
 
@@ -101,22 +101,22 @@ MatePad Pro 13.2英寸 2025、MatePad Pro 12.2英寸 2025、MatePad Air 12英寸
 
 ###视频自适应沉浸
 
-平板设备可依托大屏带来的开阔视野提升视频观看体验，同时为避免画面出现拉伸、裁剪、比例异常等问题，建议采用自适应沉浸全屏播放方案，精简界面元素、减少视觉干扰，引导用户聚焦视频内容，提升整体观看体验。具体实现方案，可参考[视频适配不同尺寸屏幕](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-diff#section1452572513130)章节。
+平板设备可依托大屏带来的开阔视野提升视频观看体验，同时为避免画面出现拉伸、裁剪、比例异常等问题，建议采用自适应沉浸全屏播放方案，精简界面元素、减少视觉干扰，引导用户聚焦视频内容，提升整体观看体验。具体实现方案，可参考[视频适配不同尺寸屏幕](/docs/dev/app-dev/multi-device/bpta-multi-device-screen-diff#section1452572513130)章节。
 
 ![](./img/fff07c01.png "点击放大")
 
 ###手写笔适配
 
-平板的交互方式主要为触控屏，常见的操作有点击、双击、长按、拖拽等，应用可根据这些操作进行功能适配，详情可参考[多设备交互](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction)。
+平板的交互方式主要为触控屏，常见的操作有点击、双击、长按、拖拽等，应用可根据这些操作进行功能适配，详情可参考[多设备交互](/docs/dev/app-dev/multi-device/bpta-multi-interaction)。
 
-手写笔作为平板的最佳搭档，支持无感连接与低延迟传输，开盒即用，适用于全局批注、提笔速记及按键遥控等功能场景，实现流畅自然的书写与交互体验。系统提供的[Pen Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-introduction)能力，可助力开发者灵活接入手写套件、全局取色、一笔成形等接口，提升书写交互的扩展性与创作效率。
+手写笔作为平板的最佳搭档，支持无感连接与低延迟传输，开盒即用，适用于全局批注、提笔速记及按键遥控等功能场景，实现流畅自然的书写与交互体验。系统提供的[Pen Kit](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-introduction)能力，可助力开发者灵活接入手写套件、全局取色、一笔成形等接口，提升书写交互的扩展性与创作效率。
 
 ###键鼠适配
 
 除触控屏交互外，平板还支持外接键鼠进行交互，键鼠交互事件的适配应包含：
 
-* 鼠标悬浮效果：平板设备中，应用内可交互UI组件建议适配鼠标悬浮效果。开发方案请参考[交互归一](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section088812013815)进行适配。
-* 键盘快捷键：应用需支持常用快捷键响应，提升用户操作效率。开发方案请参考[交互归一](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section088812013815)进行适配。
+* 鼠标悬浮效果：平板设备中，应用内可交互UI组件建议适配鼠标悬浮效果。开发方案请参考[交互归一](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section088812013815)进行适配。
+* 键盘快捷键：应用需支持常用快捷键响应，提升用户操作效率。开发方案请参考[交互归一](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section088812013815)进行适配。
 
 ![](./img/6c474402.png)
 
@@ -124,15 +124,15 @@ MatePad Pro 13.2英寸 2025、MatePad Pro 12.2英寸 2025、MatePad Air 12英寸
 
 ###焦点导航
 
-平板设备接入键盘与应用程序进行间接交互时，建议将页面中可操作元素设置为可获焦状态，并配置获焦视觉效果，清晰指示当前焦点位置，以保证交互体验。开发方案请参考[焦点事件](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section168661941154220)。
+平板设备接入键盘与应用程序进行间接交互时，建议将页面中可操作元素设置为可获焦状态，并配置获焦视觉效果，清晰指示当前焦点位置，以保证交互体验。开发方案请参考[焦点事件](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section168661941154220)。
 
 ![](./img/c5133a03.png)
 
-通常情况下，平板设备以触控交互为主，可通过[交互归一](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section088812013815)完成基础适配；当外接键鼠时，可额外适配鼠标悬浮效果、键盘快捷键及焦点导航，完善多输入方式的操作体验。
+通常情况下，平板设备以触控交互为主，可通过[交互归一](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section088812013815)完成基础适配；当外接键鼠时，可额外适配鼠标悬浮效果、键盘快捷键及焦点导航，完善多输入方式的操作体验。
 
 ###全景多窗
 
-[全景多窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro#全景多窗)旨在帮助用户高效处理多个任务。通过全景多窗，用户可以突破物理屏幕局限，在同一屏幕内并行运行多款应用，实现应用间快捷切换，提升操作效率。相较于直板机，平板拥有更大的显示视野，具备更强的信息展示与内容承载能力。横屏状态下可依托全景多窗能力，充分利用大屏空间优势，最高支持三个窗口同屏并行运行，助力用户一边浏览资讯、一边编辑内容、一边沟通办公，多任务同步处理、互不冲突，实现办公、娱乐、日常操作一站式协同。
+[全景多窗](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-intro#全景多窗)旨在帮助用户高效处理多个任务。通过全景多窗，用户可以突破物理屏幕局限，在同一屏幕内并行运行多款应用，实现应用间快捷切换，提升操作效率。相较于直板机，平板拥有更大的显示视野，具备更强的信息展示与内容承载能力。横屏状态下可依托全景多窗能力，充分利用大屏空间优势，最高支持三个窗口同屏并行运行，助力用户一边浏览资讯、一边编辑内容、一边沟通办公，多任务同步处理、互不冲突，实现办公、娱乐、日常操作一站式协同。
 
 ## 兼容模式
 
@@ -191,7 +191,7 @@ MatePad Pro 13.2英寸 2025、MatePad Pro 12.2英寸 2025、MatePad Air 12英寸
 
 * 相机显示差异
 
-  建议严格按照规范完成相机适配，保证图像方向与角度正常，避免画面挤压。详情请参考：[Camera Kit（相机服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-kit)。
+  建议严格按照规范完成相机适配，保证图像方向与角度正常，避免画面挤压。详情请参考：[Camera Kit（相机服务）](/docs/dev/app-dev/media/camera-kit)。
 * 接口行为差异：Display尺寸与屏幕方向相关接口存在行为差异，具体如下表所示。
 
   | **差异点** | **差异影响** | **相关场景** |

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开屏广告"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-splash
+original_url: /docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-splash
 format: md
 ---
 
@@ -44,7 +44,7 @@ format: md
 
    若需提升广告推送精准度，可以在请求参数[AdRequestParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adrequestparams)中添加oaid属性。
 
-   如何获取OAID参见[获取OAID信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/oaid-service)。
+   如何获取OAID参见[获取OAID信息](/docs/dev/app-dev/application-services/ads-kit-guide/oaid-service)。
 
    ![](./img/7cfe8cdf.png)
 
@@ -58,7 +58,7 @@ format: md
    | 请求广告参数名 | 类型 | 必填 | 说明 |
    | --- | --- | --- | --- |
    | adType | number | 否 | 请求广告类型，开屏广告类型为1。不填默认为原生广告类型。 |
-   | adId | string | 是 | 广告位ID。  - 如果仅调测广告，可使用测试广告位ID：g3tl51sqih半屏开屏（图片）和r145sz31dp全屏开屏（视频）。  - 如果要接入正式广告，则需要申请正式的广告位ID。可在应用发布前进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)进行申请，具体操作详情请参见[展示位创建](https://developer.huawei.com/consumer/cn/doc/monetize/zhanshiweichuangjian-0000001132700049)。 |
+   | adId | string | 是 | 广告位ID。  - 如果仅调测广告，可使用测试广告位ID：g3tl51sqih半屏开屏（图片）和r145sz31dp全屏开屏（视频）。  - 如果要接入正式广告，则需要申请正式的广告位ID。可在应用发布前进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)进行申请，具体操作详情请参见[展示位创建](/docs/monetize/monetization/zhanshiweichuangjian-0000001132700049)。 |
    | adCount | number | 否 | 广告数量。 |
    | orientation | number | 否 | 媒体请求广告的屏幕方向。1表示竖屏，0表示横屏，不设置则默认为1。当前未上架横屏开屏素材，若设置请求屏幕方向为横屏则不展示开屏广告。如果媒体设置应用固定横屏展示，但该参数未设置或者设置为1，则展示效果会受影响。 |
 

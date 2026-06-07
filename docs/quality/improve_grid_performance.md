@@ -1,6 +1,6 @@
 ---
 title: "Grid组件加载丢帧优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve_grid_performance
+original_url: /docs/quality/improve_grid_performance
 ---
 
 # Grid组件加载丢帧优化
@@ -11,7 +11,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-i
 
 在网格的高频场景中，性能优化是关键，包括加快渲染速度、提升滑动帧率、降低内存占用等，从而显著提升应用流畅度和用户体验。对于希望快速实现的开发者，可使用ScrollComponents库直接创建流畅滑动的网格，该库内置组件复用、懒加载、复用池共享等优化能力，并支持预创建和预加载，大幅减少开发者的性能调优成本，具体实现细节和最佳实践可参考[基于ScrollComponents实现网格](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-grid-based-on-scrollcomponents)。
 
-在实现如下图所示可滚动布局效果时，可能会通过columnStart/columnEnd[设置子组件所占行列数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-grid#设置子组件所占行列数)，实现不规则的布局效果。
+在实现如下图所示可滚动布局效果时，可能会通过columnStart/columnEnd[设置子组件所占行列数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-grid#设置子组件所占行列数)，实现不规则的布局效果。
 
 **图1** columnStart/columnEnd实现不规则网格布局
 ![](./img/09277b91.png)

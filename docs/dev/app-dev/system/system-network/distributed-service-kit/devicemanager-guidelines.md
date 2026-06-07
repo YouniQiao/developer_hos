@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分布式设备管理开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicemanager-guidelines
+original_url: /docs/dev/app-dev/system/system-network/distributed-service-kit/devicemanager-guidelines
 format: md
 ---
 

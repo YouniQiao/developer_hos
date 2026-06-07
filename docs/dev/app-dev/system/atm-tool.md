@@ -1,6 +1,6 @@
 ---
 title: "atm工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/atm-tool
+original_url: /docs/dev/app-dev/system/atm-tool
 format: md
 ---
 
@@ -9,7 +9,7 @@ Access Token Manager (程序访问控制管理工具，简称atm工具)，是用
 
 ## 环境说明
 
-在使用本工具前，开发者需要先获取[hdc工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)，执行hdc shell。
+在使用本工具前，开发者需要先获取[hdc工具](/docs/dev/app-dev/system/hdc)，执行hdc shell。
 
 ## atm工具命令列表
 

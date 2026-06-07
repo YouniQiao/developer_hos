@@ -1,6 +1,6 @@
 ---
 title: "如何通过代码获取Hap包的打包时间"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-70
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-70
 format: md
 ---
 

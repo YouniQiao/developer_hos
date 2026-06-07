@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文本测量（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-measure-c
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/text-measure/text-measure-c
 format: md
 ---
 

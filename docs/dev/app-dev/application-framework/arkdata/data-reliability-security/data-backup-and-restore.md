@@ -1,6 +1,6 @@
 ---
 title: "数据库备份与恢复 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore
+original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-backup-and-restore
 format: md
 ---
 

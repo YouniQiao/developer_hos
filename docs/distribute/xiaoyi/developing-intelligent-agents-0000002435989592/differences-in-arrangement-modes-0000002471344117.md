@@ -1,7 +1,7 @@
 ---
 title: "智能体分类"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/differences-in-arrangement-modes-0000002471344117
+original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/differences-in-arrangement-modes-0000002471344117
 ---
 
 import MergeTable from '@site/src/components/MergeTable';

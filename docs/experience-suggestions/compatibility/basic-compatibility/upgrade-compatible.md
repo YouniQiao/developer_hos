@@ -1,6 +1,6 @@
 ---
 title: "升级兼容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/upgrade-compatible
+original_url: /docs/experience-suggestions/compatibility/basic-compatibility/upgrade-compatible
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "保存媒体库资源"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton
+original_url: /docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton
 format: md
 ---
 
@@ -197,9 +197,9 @@ export struct Scene2 {
 
 **开发步骤**
 
-1. 指定待保存到媒体库的[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)uri（需为应用沙箱路径）。
+1. 指定待保存到媒体库的[应用文件](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)uri（需为应用沙箱路径）。
 2. 指定待保存照片的创建选项，包括文件后缀和照片类型，标题和照片子类型可选。
-3. 调用[showAssetsCreationDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper#showassetscreationdialog12)，基于弹窗授权的方式获取的目标[媒体文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro#媒体文件uri)uri。
+3. 调用[showAssetsCreationDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper#showassetscreationdialog12)，基于弹窗授权的方式获取的目标[媒体文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/user-file-uri-intro#媒体文件uri)uri。
 
    弹框需要显示应用名称，无法直接获取应用名称，依赖于配置项的label和icon，因此调用此接口时请确保module.json5文件中的abilities标签中配置了label和icon项。当传入uri为沙箱路径时，可正常保存图片/视频，但无界面预览。
 4. 将应用沙箱的照片内容写入媒体库的目标URI。

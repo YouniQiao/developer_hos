@@ -1,6 +1,6 @@
 ---
 title: "拦截Web组件发起的网络请求"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-scheme-handler
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-scheme-handler
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ## 网络请求拦截处理 (onInterceptRequest接口)
 
-通过onInterceptRequest接口拦截Web组件发起的网络请求可参考[自定义页面请求响应](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-resource-interception-request-mgmt)。
+通过onInterceptRequest接口拦截Web组件发起的网络请求可参考[自定义页面请求响应](/docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-resource-interception-request-mgmt)。
 
 ## 网络请求拦截处理 (SchemeHandler机制)
 

@@ -1,6 +1,6 @@
 ---
 title: "游戏发布技术支持"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-relesase-support-0000002514786053
+original_url: /docs/dev/game-dev/games-relesase-support-0000002514786053
 format: md
 ---
 

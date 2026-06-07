@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用剪贴板进行复制粘贴"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-pasteboard-to-copy-and-paste
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/use-pasteboard-to-copy-and-paste
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 * 剪贴板内容包含剪贴板系统服务元数据和应用设置的数据，总大小上限默认为128MB，PC/2in1设备可通过系统配置修改上限，有效范围为128MB~2GB。
 * 为保证剪贴板数据的准确性，同一时间只能支持一个复制操作。
-* API version 12及之后，系统为提升用户隐私安全保护能力，剪贴板读取接口增加[权限管控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines)。
+* API version 12及之后，系统为提升用户隐私安全保护能力，剪贴板读取接口增加[权限管控](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines)。
 
 ## 剪贴板接入原理介绍
 

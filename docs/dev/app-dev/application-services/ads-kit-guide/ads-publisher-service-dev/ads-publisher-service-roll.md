@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "贴片广告"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-publisher-service-roll
+original_url: /docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-roll
 format: md
 ---
 
@@ -40,7 +40,7 @@ format: md
 
    若需提升广告推送精准度，可以在请求参数[AdRequestParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adrequestparams)中添加oaid属性。
 
-   如何获取OAID参见[获取OAID信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/oaid-service)。
+   如何获取OAID参见[获取OAID信息](/docs/dev/app-dev/application-services/ads-kit-guide/oaid-service)。
 
    ![](./img/e3bc6ad2.png)
 
@@ -56,7 +56,7 @@ format: md
    | 请求广告参数名 | 类型 | 必填 | 说明 |
    | --- | --- | --- | --- |
    | adType | number | 否 | 请求广告类型，贴片广告类型为60。不填默认为原生广告类型。 |
-   | adId | string | 是 | 广告位ID。  - 如果仅调测广告，可使用测试广告位ID：o2e960bnfz。  - 如果要接入正式广告，则需要申请正式的广告位ID。可在应用发布前进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)进行申请，具体操作详情请参见[展示位创建](https://developer.huawei.com/consumer/cn/doc/monetize/zhanshiweichuangjian-0000001132700049)。 |
+   | adId | string | 是 | 广告位ID。  - 如果仅调测广告，可使用测试广告位ID：o2e960bnfz。  - 如果要接入正式广告，则需要申请正式的广告位ID。可在应用发布前进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)进行申请，具体操作详情请参见[展示位创建](/docs/monetize/monetization/zhanshiweichuangjian-0000001132700049)。 |
    | oaid | string | 否 | 开放匿名设备标识符，用于精准推送广告。不填无法获取到个性化广告。 |
 
    示例代码如下所示：

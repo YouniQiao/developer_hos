@@ -1,7 +1,7 @@
 ---
 format: md
 title: "是否有目录可以通过hdc file send写入可执行程序"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-41
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-41
 ---
 
 

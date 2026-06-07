@@ -1,6 +1,6 @@
 ---
 title: "停止测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apptest-stop-test-0000002258174274
+original_url: /docs/distribute/agc/agc-help-apptest-invite-test-0000002258071220/agc-help-apptest-stop-test-0000002258174274
 format: md
 ---
 

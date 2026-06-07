@@ -1,6 +1,6 @@
 ---
 title: "设备标识使用推荐"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-recommended-use-of-device-id
+original_url: /docs/security/device-id
 format: md
 ---
 
@@ -12,8 +12,8 @@ format: md
 设备标识是用于唯一标识设备的代码或符号，类似于现实生活中的身份证。在移动应用开发中，设备标识对于准确识别设备至关重要，可用于分析用户行为、推送信息和提供个性化服务等场景。为确保用户数据的安全和合规性，建议在开发过程中遵守相关隐私政策和法规，使用用户可重置的设备标识。HarmonyOS提供了三种可重置的设备标识：
 
 * [ODID（开发者匿名设备标识符）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-device-info#常量)：用于识别同一设备上运行的同一个开发者的应用，标识应用身份。
-* [OAID（开放匿名设备标识符）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/oaid-service)：用于广告跟踪，可在保护用户个人数据隐私安全的前提下，向用户提供个性化广告。
-* [AAID（应用匿名标识符）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-aaid)：用于应用的推送，标识应用身份。
+* [OAID（开放匿名设备标识符）](/docs/dev/app-dev/application-services/ads-kit-guide/oaid-service)：用于广告跟踪，可在保护用户个人数据隐私安全的前提下，向用户提供个性化广告。
+* [AAID（应用匿名标识符）](/docs/dev/app-dev/application-services/push-kit-guide/push-get-aaid)：用于应用的推送，标识应用身份。
 
 开发者在选择设备标识时，可以从特性、重置规则和用户授权三个方面进行对比，具体如下：
 
@@ -43,7 +43,7 @@ format: md
 * 同一设备连续尝试多次错误登录密码时，系统锁定该设备，阻止进一步尝试。
 * 在金融等高安全要求的场景中，可以将设备标识与地理位置结合。若地理位置突然发生大幅变化，可暂时冻结账号的敏感操作。
 
-另外，可以使用[应用设备状态检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-develop)标识设备，根据Device Security服务器返回的状态，判断应用是否为设备上的首次安装，或用户是否已获取优惠券等，以支持业务开展新用户营销活动。
+另外，可以使用[应用设备状态检测](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-deviceverify-develop)标识设备，根据Device Security服务器返回的状态，判断应用是否为设备上的首次安装，或用户是否已获取优惠券等，以支持业务开展新用户营销活动。
 
 ### 数据分析与营销
 
@@ -53,7 +53,7 @@ format: md
 
 <strong>推荐方案</strong>
 
-可以通过OAID将采集到的设备和用户行为数据关联。对于特定OAID的设备，可以分析出用户对广告的偏好。例如，如果一个OAID对应的设备用户频繁点击游戏类广告，并在游戏广告落地页有较高的转化率（如下载游戏或进行游戏内付费），则可以将该OAID标记为对游戏广告感兴趣的用户。广告服务平台可以根据用户的广告偏好选择合适的时间和方式进行营销推广，提高营销效果和转化率。HarmonyOS也提供[Ads Kit（广告服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ads-kit-guide)，应用可以在接入广告服务时传入OAID为用户更精准的推送广告。
+可以通过OAID将采集到的设备和用户行为数据关联。对于特定OAID的设备，可以分析出用户对广告的偏好。例如，如果一个OAID对应的设备用户频繁点击游戏类广告，并在游戏广告落地页有较高的转化率（如下载游戏或进行游戏内付费），则可以将该OAID标记为对游戏广告感兴趣的用户。广告服务平台可以根据用户的广告偏好选择合适的时间和方式进行营销推广，提高营销效果和转化率。HarmonyOS也提供[Ads Kit（广告服务）](/docs/dev/app-dev/application-services/ads-kit-guide)，应用可以在接入广告服务时传入OAID为用户更精准的推送广告。
 
 ### 跨应用数据整合
 

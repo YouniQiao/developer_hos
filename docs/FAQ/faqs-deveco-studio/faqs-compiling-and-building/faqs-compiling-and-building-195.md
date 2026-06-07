@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译报错：pnpm安装失败等问题汇总"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-195
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-195
 ---
 
 
@@ -28,7 +28,7 @@ testX is not in the npm registry, or you have no permission to fetch it.
 No authorization header was set for the request.
 * Try the following:
   > Check whether the failed package exists in the npm repository.
-  > More info: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-195
+  > More info: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-195
 ```
 
 **常见原因：**
@@ -54,7 +54,7 @@ The latest release of test is "3.3.0". Published at 2023/12/8
 If you need the full list of all 3 published versions run "$ pnpm view test versions".
 * Try the following:
   > Check whether the version of the failed package exists in the npm repository.
-  > More info: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-195
+  > More info: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-195
 ```
 
 **常见原因：**
@@ -81,7 +81,7 @@ This error happened while installing a direct dependency of xxx.
 * Try the following:
   > Ensure that the npm repository address is accessible.
   > Contact the repository provider or replace the npm repository address.
-  > More info: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-195
+  > More info: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-195
 ```
 
 **常见原因：**
@@ -108,7 +108,7 @@ This error happened while installing a direct dependency of xxx.
 * Try the following:
   > Check whether the offline package has been completely downloaded before the migration.
   > Refer to 'Setting Up the Development Environment Offline': https://developer.huawei.com/consumer/en/doc/harmonyos-guides/ide-no-network
-  > More info: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-195
+  > More info: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-195
 ```
 
 **常见原因：**
@@ -134,7 +134,7 @@ npm ERR! request to https://xxx failed, reason: certificate has expired
 npm ERR! A complete log of this run can be found in: xxx
 * Try the following:
   > Contact the npm repository provider to ensure that the certificate of the repository server is valid, or replace the repository address with a new one.
-  > More info: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-195
+  > More info: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-195
 ```
 
 **常见原因：**
@@ -159,7 +159,7 @@ This error happened while installing a direct dependency of xxx.
 * Try the following:
   > Ensure that the npm repository address is accessible.
   > Contact the repository provider or replace the npm repository address.
-  > More info: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-195
+  > More info: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-195
 ```
 
 **常见原因：**

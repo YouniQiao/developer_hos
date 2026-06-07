@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "事件交互"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-listening
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-interaction/map-listening
 format: md
 ---
 
@@ -82,7 +82,7 @@ this.mapEventManager.on("cameraIdle", callback);
 
 ### 标记点击事件监听
 
-标记是指在地图的指定位置添加标记以标识位置、商家、建筑等。详情请参见[标记](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-marker)。
+标记是指在地图的指定位置添加标记以标识位置、商家、建筑等。详情请参见[标记](/docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-marker)。
 
 ```
 let callback = (marker: map.Marker) => {
@@ -93,7 +93,7 @@ this.mapEventManager.on("markerClick", callback);
 
 ### 我的位置监听
 
-详情请参见[显示我的位置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location)。
+详情请参见[显示我的位置](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-location)。
 
 ```
 let callback = () => {
@@ -104,7 +104,7 @@ this.mapEventManager.on("myLocationButtonClick", callback);
 
 ### 点注释事件监听
 
-点注释是指在地图的指定位置添加点注释以标识位置、商家、建筑等，并可以通过信息窗口展示详细信息。详情请参见[点注释](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-annotation)。
+点注释是指在地图的指定位置添加点注释以标识位置、商家、建筑等，并可以通过信息窗口展示详细信息。详情请参见[点注释](/docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-annotation)。
 
 ```
 let callback = (pointAnnotation: map.PointAnnotation) => {

@@ -1,6 +1,6 @@
 ---
 title: "同应用进程嵌入式组件 (EmbeddedComponent)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-embedded-components
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-ui-cross-process/arkts-embedded-components
 format: md
 ---
 

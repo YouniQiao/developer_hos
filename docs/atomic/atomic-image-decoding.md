@@ -1,6 +1,6 @@
 ---
 title: "图片解码"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-decoding
+original_url: /docs/dev/atomic-dev/atomic-image-development/atomic-image-decoding
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
    ```
 2. 获取图片。
 
-   * 方法一：通过沙箱路径直接获取图片。该方法仅适用于应用沙箱中的图片。具体请参考获取应用文件路径。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
+   * 方法一：通过沙箱路径直接获取图片。该方法仅适用于应用沙箱中的图片。具体请参考获取应用文件路径。应用沙箱的介绍及如何向应用沙箱推送文件，请参考[文件管理](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
 
      ```
      function getFilePath(context: Context): string {

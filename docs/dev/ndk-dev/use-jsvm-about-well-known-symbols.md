@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口进行Well-known symbols相关开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-well-known-symbols
+original_url: /docs/dev/ndk-dev/use-jsvm-about-well-known-symbols
 format: md
 ---
 
@@ -31,7 +31,7 @@ JSVM-API中Well-known symbols相关接口可以通过不同API直接获取对应
 
 ## 使用示例
 
-参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)中的JSVM-API接口开发流程，本文仅展示接口对应的C++代码。
+参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)中的JSVM-API接口开发流程，本文仅展示接口对应的C++代码。
 
 ### 使用接口获取Well-known symbols（以OH\_JSVM\_GetSymbolToStringTag为例）
 

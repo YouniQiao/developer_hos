@@ -1,7 +1,7 @@
 ---
 format: md
 title: "三方SDK定制修改部分源码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-192
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-192
 ---
 
 

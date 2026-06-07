@@ -1,7 +1,7 @@
 ---
 format: md
 title: "并行编译多个大型Hap/Hsp模块可能会导致DevEco Studio闪退"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-193
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-193
 ---
 
 

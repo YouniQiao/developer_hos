@@ -1,7 +1,7 @@
 ---
 format: md
 title: "自定义组件间如何实现从底部滑入滑出的效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-179
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-179
 ---
 
 

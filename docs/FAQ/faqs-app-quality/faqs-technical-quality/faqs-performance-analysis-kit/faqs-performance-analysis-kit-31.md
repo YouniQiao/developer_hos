@@ -1,7 +1,7 @@
 ---
 format: md
 title: "hdc工具导出/导入文件等常用hdc命令有哪些"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-31
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-31
 ---
 
 

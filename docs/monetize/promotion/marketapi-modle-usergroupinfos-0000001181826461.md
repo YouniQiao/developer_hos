@@ -1,7 +1,7 @@
 ---
 title: "UserGroupInfo"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-usergroupinfos-0000001181826461
+original_url: /docs/monetize/promotion/marketapi-modle-usergroupinfos-0000001181826461
 format: md
 ---
 

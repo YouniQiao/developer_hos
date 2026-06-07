@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "距离计算"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-calculate-distance
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-calculation-tool/map-calculate-distance
 format: md
 ---
 

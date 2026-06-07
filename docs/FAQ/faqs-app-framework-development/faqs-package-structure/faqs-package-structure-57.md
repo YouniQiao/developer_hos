@@ -1,7 +1,7 @@
 ---
 format: md
 title: "安装HAP包报“failed to install bundle. install debug type not same”错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-57
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-57
 ---
 
 

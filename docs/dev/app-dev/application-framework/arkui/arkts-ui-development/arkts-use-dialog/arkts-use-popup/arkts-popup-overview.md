@@ -1,6 +1,6 @@
 ---
 title: "气泡提示概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-overview
 format: md
 ---
 
@@ -11,8 +11,8 @@ format: md
 
 | 接口 | 使用场景 |
 | --- | --- |
-| [气泡提示 (Popup)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-popup) | 用于需要给指定的组件提示时，例如点击一个问号图标弹出一段帮助提示等。 |
-| [不依赖UI组件的全局气泡提示 (openPopup)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-and-menu-components-uicontext-popup) | 用于需要在无法直接访问UI组件的场景中给提示时，例如在事件回调中弹出一段帮助提示等。 |
+| [气泡提示 (Popup)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-and-menu-components-popup) | 用于需要给指定的组件提示时，例如点击一个问号图标弹出一段帮助提示等。 |
+| [不依赖UI组件的全局气泡提示 (openPopup)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-and-menu-components-uicontext-popup) | 用于需要在无法直接访问UI组件的场景中给提示时，例如在事件回调中弹出一段帮助提示等。 |
 
 ## 规格约束
 

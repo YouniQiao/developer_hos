@@ -1,7 +1,7 @@
 ---
 format: md
 title: "权限申请被拒绝后，再次申请权限，是否出现申请权限弹窗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-1
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-1
 ---
 
 

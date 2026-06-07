@@ -1,6 +1,6 @@
 ---
 title: "Navigation转场动画"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-animation
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-animation
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ![](./img/b70d4504.png)
 
-* NavDestination的默认转场动画使用[弹簧曲线](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-spring-curve)，其时长与物理曲线参数有关，而且不同设备上的默认动画不同，因此默认转场动画时长不可控，不建议与业务耦合，若需要监听动画结束，建议使用[自定义转场](#自定义转场)。
+* NavDestination的默认转场动画使用[弹簧曲线](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-curve/arkts-spring-curve)，其时长与物理曲线参数有关，而且不同设备上的默认动画不同，因此默认转场动画时长不可控，不建议与业务耦合，若需要监听动画结束，建议使用[自定义转场](#自定义转场)。
 * [Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination#navdestinationmode枚举说明11)类型的NavDestination默认无转场动画；从API version 13开始，Dialog类型的NavDestination默认存在系统转场动画。
 
 默认转场动画支持关闭，有两种方式：

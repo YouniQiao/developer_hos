@@ -1,6 +1,6 @@
 ---
 title: "录音"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-record
+original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-record
 format: md
 ---
 
@@ -52,7 +52,7 @@ has.startRecord(Object object)
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.MICROPHONE**。
-2. 在has.authorize中申请 [scope.record](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表) 授权。
+2. 在has.authorize中申请 [scope.record](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表) 授权。
 
 **参数：**
 
@@ -387,7 +387,7 @@ RecorderManager.start(Object object): void
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.MICROPHONE**。
-2. 在has.authorize中申请 [scope.record](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表) 授权。
+2. 在has.authorize中申请 [scope.record](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表) 授权。
 
 **参数：**
 
@@ -434,7 +434,7 @@ RecorderManager.pause()
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.MICROPHONE**。
-2. 在has.authorize中申请 [scope.record](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表) 授权。
+2. 在has.authorize中申请 [scope.record](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表) 授权。
 
 **示例：**
 
@@ -461,7 +461,7 @@ RecorderManager.resume()
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.MICROPHONE**。
-2. 在has.authorize中申请 [scope.record](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表) 授权。
+2. 在has.authorize中申请 [scope.record](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表) 授权。
 
 **示例：**
 
@@ -489,7 +489,7 @@ RecorderManager.stop()
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.MICROPHONE**。
-2. 在has.authorize中申请 [scope.record](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表) 授权。
+2. 在has.authorize中申请 [scope.record](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表) 授权。
 
 **示例：**
 

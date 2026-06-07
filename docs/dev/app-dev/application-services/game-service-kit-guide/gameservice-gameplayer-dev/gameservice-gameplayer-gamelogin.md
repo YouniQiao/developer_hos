@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "游戏登录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-gamelogin
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin
 format: md
 ---
 
 
-* **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-introduction)**
-* **[网络游戏登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-network)**
-* **[单机游戏登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-single-access)**
-* **[开发后自检](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-check)**
+* **[概述](/docs/dev/app-dev/application-services/gameservice-gameplayer-introduction)**
+* **[网络游戏登录](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network)**
+* **[单机游戏登录](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-single-access)**
+* **[开发后自检](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-check)**

@@ -1,6 +1,6 @@
 ---
 title: "如何在Worker中开启多级子线程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-121
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-121
 format: md
 ---
 

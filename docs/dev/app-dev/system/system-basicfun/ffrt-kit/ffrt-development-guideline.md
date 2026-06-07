@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Function Flow Runtime开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-development-guideline
+original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-development-guideline
 format: md
 ---
 
@@ -31,8 +31,8 @@ FFRT提供开发者队列级和任务级超时维测机制，用来监控用户�
 
 | C++接口 | C接口 | 描述 |
 | --- | --- | --- |
-| [queue\_attr::timeout](https://gitcode.com/openharmony/resourceschedule_ffrt/blob/master/docs/ffrt-api-guideline-cpp.md#set-queue-timeout) | [ffrt\_queue\_attr\_set\_timeout](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-api-guideline-c#ffrt_queue_attr_t) | 设置队列超时时间。 |
-| [queue\_attr::callback](https://gitcode.com/openharmony/resourceschedule_ffrt/blob/master/docs/ffrt-api-guideline-cpp.md#set-queue-callback) | [ffrt\_queue\_attr\_set\_callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-api-guideline-c#ffrt_queue_attr_t) | 设置队列超时回调函数。 |
+| [queue\_attr::timeout](https://gitcode.com/openharmony/resourceschedule_ffrt/blob/master/docs/ffrt-api-guideline-cpp.md#set-queue-timeout) | [ffrt\_queue\_attr\_set\_timeout](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-api-guideline-c#ffrt_queue_attr_t) | 设置队列超时时间。 |
+| [queue\_attr::callback](https://gitcode.com/openharmony/resourceschedule_ffrt/blob/master/docs/ffrt-api-guideline-cpp.md#set-queue-callback) | [ffrt\_queue\_attr\_set\_callback](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-api-guideline-c#ffrt_queue_attr_t) | 设置队列超时回调函数。 |
 
 ### 长耗时任务监测
 

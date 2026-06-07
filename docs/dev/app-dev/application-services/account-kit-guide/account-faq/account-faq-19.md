@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "不同开发者的应用之间如何实现用户数据互通"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-19
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-19
 format: md
 ---
 

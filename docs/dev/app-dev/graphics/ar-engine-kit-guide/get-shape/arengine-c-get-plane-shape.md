@@ -1,18 +1,18 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "识别目标形状（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-plane-shape
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-shape/arengine-c-get-plane-shape
 format: md
 ---
 
 
 ## 约束与限制
 
-从5.0.0(12)开始，识别目标形状能力支持部分Phone、部分Tablet设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持平面语义及物体语义特性（[ARENGINE\_FEATURE\_TYPE\_SEMANTIC](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
+从5.0.0(12)开始，识别目标形状能力支持部分Phone、部分Tablet设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持平面语义及物体语义特性（[ARENGINE\_FEATURE\_TYPE\_SEMANTIC](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
 
 ## 引入AR Engine
 
-开发者可参考管理AR会话章节的[引入AR Engine](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arsession#引入ar-engine)。
+开发者可参考管理AR会话章节的[引入AR Engine](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-c-arsession#引入ar-engine)。
 
 ## 创建AR会话
 

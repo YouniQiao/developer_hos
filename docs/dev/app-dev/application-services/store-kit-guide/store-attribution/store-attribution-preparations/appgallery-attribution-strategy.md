@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理归因策略"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-attribution-strategy
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/appgallery-attribution-strategy
 format: md
 ---
 

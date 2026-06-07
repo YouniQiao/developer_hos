@@ -1,7 +1,7 @@
 ---
 format: md
 title: "UIViewer获取页面时，无法展示页面截图和元素树如何处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-utilities-uiviewer-2
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-utilities/faqs-utilities-uiviewer/faqs-utilities-uiviewer-2
 ---
 
 

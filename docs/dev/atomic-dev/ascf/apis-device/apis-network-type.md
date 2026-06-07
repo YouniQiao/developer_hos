@@ -1,6 +1,6 @@
 ---
 title: "网络"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-network-type
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-network-type
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "典型场景的视频编码配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-configuration-typical-scenarios
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-configuration-typical-scenarios
 format: md
 ---
 
@@ -42,7 +42,7 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
 
 **开发指导**
 
-基础编码流程请参考[视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding)，下面仅针对编码器配置阶段做具体说明。
+基础编码流程请参考[视频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding)，下面仅针对编码器配置阶段做具体说明。
 
 1. 配置编码器参数。
 
@@ -73,7 +73,7 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
 
    如下以低时延视频通话场景为示例，其示例中的变量说明如下：
 
-   videoEnc：视频编码器实例的指针。创建方式可参考[视频编码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding#surface模式)“步骤-2：创建编码器实例对象”。
+   videoEnc：视频编码器实例的指针。创建方式可参考[视频编码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding#surface模式)“步骤-2：创建编码器实例对象”。
 
    ```
    // 1. 创建AVFormat参数实例。
@@ -101,7 +101,7 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
    ```
 2. （可选）在运行过程中动态配置编码器参数。
 
-   详情可参考[视频编码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding#surface模式)“步骤-9：OH\_VideoEncoder\_SetParameter()在运行过程中动态配置编码器参数”。
+   详情可参考[视频编码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding#surface模式)“步骤-9：OH\_VideoEncoder\_SetParameter()在运行过程中动态配置编码器参数”。
 
    ```
    // 1. 创建AVFormat参数实例。
@@ -117,7 +117,7 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
    OH_AVFormat_Destroy(format);
    ```
 
-   如果需要适配网络波动，推荐结合采用[时域可分层视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding-temporal-scalability)配置。
+   如果需要适配网络波动，推荐结合采用[时域可分层视频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-temporal-scalability)配置。
 
 ## 实时流媒体编码
 
@@ -125,7 +125,7 @@ target_link_libraries(sample PUBLIC libnative_media_venc.so)
 
 **开发指导**
 
-基础编码流程请参考[视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding)，下面仅针对编码器配置阶段，对配置实时流媒体编码场景的参数做具体说明。
+基础编码流程请参考[视频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding)，下面仅针对编码器配置阶段，对配置实时流媒体编码场景的参数做具体说明。
 
 娱乐直播场景，典型分辨率的编码参数（以H.265为例）推荐如下：
 
@@ -229,7 +229,7 @@ OH_AVFormat_Destroy(format);
 
 **开发指导**
 
-基础编码流程请参考[视频编码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-encoding)，下面仅针对编码器配置阶段，对配置离线编码场景的编码参数做具体说明。
+基础编码流程请参考[视频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding)，下面仅针对编码器配置阶段，对配置离线编码场景的编码参数做具体说明。
 
 视频编辑场景，典型分辨率的编码参数（以H.265为例）推荐如下：
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Node.js"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-develop-function-nodejs
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-develop-function/cloudfoundation-develop-function-nodejs
 format: md
 ---
 

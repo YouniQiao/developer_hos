@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自动补全地址表单所在地区"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-autocomplete
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-autocomplete
 format: md
 ---
 
@@ -10,9 +10,9 @@ format: md
 
 ![](./img/f9affc60.png)
 
-* 需要在module.json5文件中设置模糊位置权限：[ohos.permission.APPROXIMATELY\_LOCATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionapproximately_location)。
-* 所在地区地址选择器需要[开通地图服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc#开通地图服务)。
-* 需要[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)。
+* 需要在module.json5文件中设置模糊位置权限：[ohos.permission.APPROXIMATELY\_LOCATION](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user#ohospermissionapproximately_location)。
+* 所在地区地址选择器需要[开通地图服务](/docs/dev/app-dev/application-services/map-config-agc#开通地图服务)。
+* 需要[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)。
 
 ## 效果图
 

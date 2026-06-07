@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "测试数字商品服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-sandbox
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-sandbox
 format: md
 ---
 
@@ -73,7 +73,7 @@ format: md
 * IAP扣费成功后的收据信息[PurchaseOrderPayload](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-data-model#purchaseorderpayload)中，会携带值为"SANDBOX"的environment字段，标识此次购买为沙盒测试的记录。
 * 自动续期处理不需要完成真实扣款，IAP会直接返回成功。
 * 订阅在沙盒场景下会自动续期5次(一共6期)，5次之后需要用户主动发起恢复订阅。
-* 在沙盒测试环境下，订阅首期由用户发起后会自动续期五次（累计共六期），后续需用户手动操作以恢复订阅；若同时涉及[促销场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#提供优惠)，系统将优先完成优惠周期内的自动续期，再继续进行六次续期，此场景下总续期次数为优惠周期数与六次续期之和。
+* 在沙盒测试环境下，订阅首期由用户发起后会自动续期五次（累计共六期），后续需用户手动操作以恢复订阅；若同时涉及[促销场景](/docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-subscription-functions#提供优惠)，系统将优先完成优惠周期内的自动续期，再继续进行六次续期，此场景下总续期次数为优惠周期数与六次续期之和。
 * 沙盒测试拉起收银台时，会在收银台展示沙盒测试提示，结果页也有沙盒环境的标志，如下图所示。
 
 ![](./img/c9feb9ea.png)

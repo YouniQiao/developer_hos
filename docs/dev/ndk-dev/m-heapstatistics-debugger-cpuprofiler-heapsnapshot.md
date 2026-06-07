@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口进行JavaScript代码调试调优"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/m-heapstatistics-debugger-cpuprofiler-heapsnapshot
+original_url: /docs/dev/ndk-dev/m-heapstatistics-debugger-cpuprofiler-heapsnapshot
 format: md
 ---
 
@@ -30,7 +30,7 @@ format: md
 
 ## 使用示例
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅展示接口对应的C++代码。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅展示接口对应的C++代码。
 
 ### OH\_JSVM\_GetVM
 
@@ -165,7 +165,7 @@ JSVM API heap usedGlobalHandlesSize: 32
 
 以下接口的示例代码可以参考链接：
 
-[JSVM-API调试&定位](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-debugger-cpuprofiler-heapsnapshot)
+[JSVM-API调试&定位](/docs/dev/ndk-dev/jsvm-debugger-cpuprofiler-heapsnapshot)
 
 ### OH\_JSVM\_StartCpuProfiler
 

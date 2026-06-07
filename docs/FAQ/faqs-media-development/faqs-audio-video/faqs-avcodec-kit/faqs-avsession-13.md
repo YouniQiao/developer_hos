@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何进行视频压缩"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-13
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avsession-13
 ---
 
 
@@ -84,7 +84,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **方案二**
 
-使用AVCodec Kit视频编码功能，将未经压缩的视频数据传输至视频编码器进行编码处理，通过设定所需的编码格式、比特率、帧率等参数，并对编码输出进行控制，从而实现视频文件的压缩目的，编码器参数配置范围请参考：[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)。
+使用AVCodec Kit视频编码功能，将未经压缩的视频数据传输至视频编码器进行编码处理，通过设定所需的编码格式、比特率、帧率等参数，并对编码输出进行控制，从而实现视频文件的压缩目的，编码器参数配置范围请参考：[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)。
 
 ```
 int32_t VideoEncoder::Configure(const SampleInfo &sampleInfo) {
@@ -156,4 +156,4 @@ let aVRecorderConfig: media.AVRecorderConfig = {
 
 ArkTS提供了AVTranscoder接口用于视频转码。视频的码率和分辨率是影响视频画质和文件大小的关键因素，通过AVTranscoder进行视频转码，可以实现节省视频存储空间和提高视频文件的设备兼容性。
 
-AVTranscoder使用方式及常见问题请参考文档：[视频转码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avtranscoder-for-transcodering)。
+AVTranscoder使用方式及常见问题请参考文档：[视频转码](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/using-avtranscoder-for-transcodering)。

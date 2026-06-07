@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API感知JSVM引擎生命周期管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-trigger-gc
+original_url: /docs/dev/ndk-dev/use-jsvm-trigger-gc
 format: md
 ---
 
@@ -24,7 +24,7 @@ JSVM-API提供了OH\_JSVM\_AddHandlerForGC接口，可以在VM中注册回调函
 
 ## 使用示例
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
 
 ### OH\_JSVM\_AddHandlerForGC & OH\_JSVM\_RemoveHandlerForGC
 

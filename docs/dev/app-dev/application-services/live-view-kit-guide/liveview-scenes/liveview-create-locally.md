@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "构建本地实况窗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-create-locally
+original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-scenes/liveview-create-locally
 format: md
 ---
 
@@ -1306,4 +1306,4 @@ export class LiveViewController {
 
 ![](./img/72c89f0f.png)
 
-以上是应用在本地创建、更新和结束实况窗通知的全部流程。此外，应用也可以通过Push Kit实现远程[创建、更新和结束实况窗消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-update-liveview)。
+以上是应用在本地创建、更新和结束实况窗通知的全部流程。此外，应用也可以通过Push Kit实现远程[创建、更新和结束实况窗消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-update-liveview)。

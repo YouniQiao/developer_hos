@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "消息摘要计算介绍及算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-overview
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-overview
 format: md
 ---
 

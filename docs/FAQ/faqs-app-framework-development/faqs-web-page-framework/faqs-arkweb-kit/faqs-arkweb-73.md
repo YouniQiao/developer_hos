@@ -1,6 +1,6 @@
 ---
 title: "如何设置request.agent.Config中saveas参数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-73
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-73
 format: md
 ---
 

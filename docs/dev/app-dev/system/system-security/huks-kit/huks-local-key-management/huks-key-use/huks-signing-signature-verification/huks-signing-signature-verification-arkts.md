@@ -1,6 +1,6 @@
 ---
 title: "签名/验签(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts
 format: md
 ---
 
@@ -15,17 +15,17 @@ format: md
 * 密钥算法为RSA、摘要算法为SHA384、填充模式为PSS，请见开发案例：[RSA2048/SHA384/PSS](#rsa2048sha384pss)
 * [密钥算法为ECC、摘要算法为SHA256、用户认证类型包含TUI PIN、携带认证信息的签名类型](#eccsha256携带认证信息的签名类型)
 
-具体的场景介绍及支持的算法规格，请参考[签名/验签支持的算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-overview#支持的算法)。
+具体的场景介绍及支持的算法规格，请参考[签名/验签支持的算法](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-overview#支持的算法)。
 
 ## 开发步骤
 
 **生成密钥**
 
-1. 指定密钥别名，密钥别名命名规范参考[密钥生成介绍及算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)。
+1. 指定密钥别名，密钥别名命名规范参考[密钥生成介绍及算法规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)。
 2. 初始化密钥属性集。
-3. 调用[generateKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksgeneratekeyitem9)生成密钥，具体请参考[密钥生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)。
+3. 调用[generateKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksgeneratekeyitem9)生成密钥，具体请参考[密钥生成](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)。
 
-除此之外，开发者也可以参考[密钥导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview)，导入已有的密钥。
+除此之外，开发者也可以参考[密钥导入](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview)，导入已有的密钥。
 
 **签名**
 
@@ -46,7 +46,7 @@ format: md
 
 **删除密钥**
 
-当密钥废弃不用时，需要调用[deleteKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksdeletekeyitem9)删除密钥，具体请参考[密钥删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key-arkts)。
+当密钥废弃不用时，需要调用[deleteKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#huksdeletekeyitem9)删除密钥，具体请参考[密钥删除](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-arkts)。
 
 ## 开发案例
 
@@ -1114,7 +1114,7 @@ async function testSignVerify() {
 
 ### ECC/SHA256/携带认证信息的签名类型
 
-前提条件：此功能的示例代码依赖数字盾服务的设置数字盾密码和验证数字盾密码，请参考[数字盾服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-service)的数字盾密码管理和交易信息密码认证。
+前提条件：此功能的示例代码依赖数字盾服务的设置数字盾密码和验证数字盾密码，请参考[数字盾服务](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service)的数字盾密码管理和交易信息密码认证。
 
 ```
 /*

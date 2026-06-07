@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自定义字体"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-font
+original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-font
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 自定义字体文件支持两种存放路径：
 
 * 工程目录resources/rawfile文件夹。
-* [应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)。
+* [应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)。
 
 ## 业务流程
 
@@ -29,7 +29,7 @@ format: md
 
 ## 开发准备
 
-* 进行自定义字体之前，请先确保已经“[构建阅读器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-read-page)”。
+* 进行自定义字体之前，请先确保已经“[构建阅读器](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-read-page)”。
 * 已经准备好字体资源，并放在对应的目录当中。
 
 ## 开发步骤
@@ -48,7 +48,7 @@ format: md
      ```
      let filePath: string = 'fonts/SourceHanSerifCN-VF.ttf';
      ```
-   * 若资源放在[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)下。
+   * 若资源放在[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)下。
 
      ```
      let filePath: string = this.getUIContext().getHostContext()!.filesDir + '/fonts/SourceHanSerifCN-VF.ttf'

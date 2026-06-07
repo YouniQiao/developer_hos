@@ -1,15 +1,15 @@
 ---
 title: "应用声明支持智慧多窗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-support
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-support
 format: md
 ---
 
 
-当应用需要智慧多窗的能力时，可以通过在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中对应标签添加相关字段声明支持。
+当应用需要智慧多窗的能力时，可以通过在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中对应标签添加相关字段声明支持。
 
 ## 声明支持悬浮窗
 
-开发者可以通过在module.json5配置文件中[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)下的**supportWindowMode**属性增加“**floating**”字段或使用缺省值以声明应用支持悬浮窗。
+开发者可以通过在module.json5配置文件中[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)下的**supportWindowMode**属性增加“**floating**”字段或使用缺省值以声明应用支持悬浮窗。
 
 ![](./img/6bd25988.png)
 
@@ -38,7 +38,7 @@ supportWindowMode缺省值为["fullscreen", "split", "floating"]。
 
 ## 声明支持分屏
 
-开发者可以通过在module.json5配置文件中[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)下的**supportWindowMode**属性增加“**split**”字段或使用缺省值以声明应用支持分屏。
+开发者可以通过在module.json5配置文件中[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)下的**supportWindowMode**属性增加“**split**”字段或使用缺省值以声明应用支持分屏。
 
 ![](./img/22745bc7.png)
 

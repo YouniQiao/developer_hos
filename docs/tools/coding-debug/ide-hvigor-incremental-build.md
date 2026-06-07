@@ -1,7 +1,7 @@
 ---
 title: "增量构建"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-incremental-build
+original_url: /docs/tools/coding-debug/ide-hvigor-incremental-build
 format: md
 ---
 

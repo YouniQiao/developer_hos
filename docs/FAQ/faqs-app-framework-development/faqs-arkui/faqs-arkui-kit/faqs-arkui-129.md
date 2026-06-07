@@ -1,6 +1,6 @@
 ---
 title: "UI布局默认是多少vp为基准，以达到不同机器自适应"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-129
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-129
 format: md
 ---
 

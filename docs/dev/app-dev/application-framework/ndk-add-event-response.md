@@ -1,6 +1,6 @@
 ---
 title: "添加事件响应"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-add-event-response
+original_url: /docs/dev/app-dev/application-framework/ndk-add-event-response
 format: md
 ---
 
@@ -55,12 +55,12 @@ NDK接口支持以下两种事件监听方式。
 
 以下文档详细介绍了NDK事件响应的具体实现方法。
 
-* [添加事件监听](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-add-component-events)：监听组件自身状态变化和用户交互事件，如点击事件、焦点事件、布局完成事件、绘制送显事件、深浅色变更事件等。
-* [绑定基础输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-bind-input-events)：处理点击、触摸、鼠标、悬浮、轴事件、按键事件等基础输入事件。
-* [绑定手势事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-bind-gesture-events)：处理点击手势、滑动手势、长按手势、捏合手势、旋转手势等手势交互，支持单一手势和组合手势。
-* [绑定拖拽事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-drag-event)：处理通用拖拽和DragAction主动发起拖拽，支持自定义拖拽预览和跟手图。
+* [添加事件监听](/docs/dev/app-dev/application-framework/ndk-add-component-events)：监听组件自身状态变化和用户交互事件，如点击事件、焦点事件、布局完成事件、绘制送显事件、深浅色变更事件等。
+* [绑定基础输入事件](/docs/dev/app-dev/application-framework/ndk-bind-input-events)：处理点击、触摸、鼠标、悬浮、轴事件、按键事件等基础输入事件。
+* [绑定手势事件](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-bind-gesture-events)：处理点击手势、滑动手势、长按手势、捏合手势、旋转手势等手势交互，支持单一手势和组合手势。
+* [绑定拖拽事件](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-drag-event)：处理通用拖拽和DragAction主动发起拖拽，支持自定义拖拽预览和跟手图。
 
-* **[添加事件监听](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-add-component-events)**
-* **[绑定基础输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-bind-input-events)**
-* **[绑定手势事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-bind-gesture-events)**
-* **[绑定拖拽事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-drag-event)**
+* **[添加事件监听](/docs/dev/app-dev/application-framework/ndk-add-component-events)**
+* **[绑定基础输入事件](/docs/dev/app-dev/application-framework/ndk-bind-input-events)**
+* **[绑定手势事件](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-bind-gesture-events)**
+* **[绑定拖拽事件](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-drag-event)**

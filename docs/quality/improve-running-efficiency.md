@@ -1,6 +1,6 @@
 ---
 title: "运行效率提高"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-running-efficiency
+original_url: /docs/quality/improve-running-efficiency
 ---
 
 # 运行效率提高
@@ -34,7 +34,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-i
 
 ![](./img/e131d6a3.png)
 
-由于import路径展开会跳过中间模块的执行，若业务依赖模块的执行顺序，修改后可能会导致业务异常。具体场景请参阅[import路径展开副作用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-module-side-effects#副作用)。
+由于import路径展开会跳过中间模块的执行，若业务依赖模块的执行顺序，修改后可能会导致业务异常。具体场景请参阅[import路径展开副作用](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-module-side-effects#副作用)。
 
 ### 场景案例
 

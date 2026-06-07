@@ -1,7 +1,7 @@
 ---
 title: "@performance/reasonable-audio-use-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-reasonable-audio-use-check
+original_url: /docs/tools/coding-debug/ide-reasonable-audio-use-check
 format: md
 ---
 

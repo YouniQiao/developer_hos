@@ -1,7 +1,7 @@
 ---
 title: "通过Marketing API创建全域智投广告"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ad-mktchaunjianquanyuguanggao-0000001686929114
+original_url: /docs/monetize/promotion/ad-mktchaunjianquanyuguanggao-0000001686929114
 format: md
 ---
 
@@ -86,7 +86,7 @@ format: md
 
         宽高比3：4（720\*960）需要选择“信息流资讯“或”智能优选”版位。
 
-        若您的图片素材尺寸不满足上述标准图要求，可通过[创建素材](https://developer.huawei.com/consumer/cn/doc/promotion/ads_new_api30-0000001455880057)接口对图片尺寸进行预处理。
+        若您的图片素材尺寸不满足上述标准图要求，可通过[创建素材](/docs/monetize/promotion/ads_new_api30-0000001455880057)接口对图片尺寸进行预处理。
      4. <strong>Video</strong> <strong>：</strong>视频类的支持同比例多尺寸上传，与投放端一致：
         1. 16:9（640\*360&lt;=尺寸&lt;=1920\*1080；1s ~ 120s ；大小&lt;=50 MB）、
         2. 9:16 （720\*1280&lt;=尺寸&lt;=1080\*1920；1s ~ 120s ；大小&lt;=50 MB）

@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-preparations
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations
 format: md
 ---
 
 
-* **[基本准备工作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-basic-preparation)**
-* **[配置商品信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product)**
-* **[配置签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-sign)**
-* **[配置应用身份信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-app-identity-info)**
+* **[基本准备工作](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation)**
+* **[配置商品信息](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-product)**
+* **[配置签名](/docs/dev/app-dev/application-services/iap-config-sign)**
+* **[配置应用身份信息](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-app-identity-info)**

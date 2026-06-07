@@ -1,6 +1,6 @@
 ---
 title: "Webview如何加载带有#路由的链接"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-86
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-86
 format: md
 ---
 

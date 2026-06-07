@@ -1,7 +1,7 @@
 ---
 title: 触控板
 sidebar_label: 触控板
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touchpad-0000002464444730
+original_url: /docs/design/hmi/touchpad
 format: md
 ---
 
@@ -63,4 +63,4 @@ format: md
 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/EDB27DED32B6.png "点击放大") | **截图。**  **单指关节敲击两下**进行截图。 |
 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/6E182506ABAF.png "点击放大") | **录屏。**  **双指关节敲击两下**进行录屏。 |
 
-关于光标和界面对象的悬浮态表现，请参考[光标的交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-cursor-0000001795531205)。
+关于光标和界面对象的悬浮态表现，请参考[光标的交互](/docs/design/hmi/cursor)。

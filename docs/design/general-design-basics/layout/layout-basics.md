@@ -1,7 +1,7 @@
 ---
 title: 布局基础
 sidebar_label: 布局基础
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-layout-basics-0000001795579413
+original_url: /docs/design/general-design-basics/layout/layout-basics
 format: md
 ---
 
@@ -155,7 +155,7 @@ Column 是内容的占位元素，其数量决定了内容的布局复杂度，C
 
 ## 折叠设备
 
-除顶部信号栏与底部导航条以外，需避免将关键信息放置在折叠设备的转轴区（即折痕处），便于悬停态适配，详情请参阅[悬停态](https://developer.huawei.com/consumer/cn/doc/design-guides/foldable-0000002352875141#section183378919119)。
+除顶部信号栏与底部导航条以外，需避免将关键信息放置在折叠设备的转轴区（即折痕处），便于悬停态适配，详情请参阅[悬停态](/docs/design/multi-device-design/folding-screen/foldable#section183378919119)。
 
 ![](../visual-design/img/img_2d517e745634_zh-cn_image_0000002348146349.png "点击放大")
 
@@ -175,7 +175,7 @@ Column 是内容的占位元素，其数量决定了内容的布局复杂度，C
 
 ## 智能穿戴
 
-智能穿戴产品的信息布局需要根据设备为圆表或方表，以及当前应用的实际内容进行设计。避让水平屏幕边缘间距的同时，在不同的界面架构中，需要考量垂直布局额外进行避让，详情请见[间隔参数](https://developer.huawei.com/consumer/cn/doc/design-guides/spacing-parameters-0000002202912577)。
+智能穿戴产品的信息布局需要根据设备为圆表或方表，以及当前应用的实际内容进行设计。避让水平屏幕边缘间距的同时，在不同的界面架构中，需要考量垂直布局额外进行避让，详情请见[间隔参数](/docs/design/multi-device-design/wearable/spacing-parameters)。
 
 ![](../visual-design/img/img_a83e8eceb4c7_zh-cn_image_0000002314150244.png "点击放大")
 

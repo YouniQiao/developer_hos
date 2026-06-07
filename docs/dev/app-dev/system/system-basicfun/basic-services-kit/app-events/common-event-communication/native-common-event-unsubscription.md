@@ -1,6 +1,6 @@
 ---
 title: "取消订阅公共事件（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-common-event-unsubscription
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/native-common-event-unsubscription
 format: md
 ---
 

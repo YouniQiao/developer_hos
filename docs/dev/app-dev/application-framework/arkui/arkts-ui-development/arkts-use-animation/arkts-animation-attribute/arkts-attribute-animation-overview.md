@@ -1,6 +1,6 @@
 ---
 title: "属性动画概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-attribute-animation-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-attribute/arkts-attribute-animation-overview
 format: md
 ---
 
@@ -34,4 +34,4 @@ format: md
 对于可动画属性，系统不仅提供通用属性，还支持自定义可动画属性。
 
 * 系统可动画属性：组件自带的支持改变UI界面的属性接口，如位置、缩放、模糊等。
-* 自定义可动画属性：ArkUI提供[@AnimatableExtend装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animatable-extend)用于自定义可动画属性。开发者可从自定义绘制的内容中抽象出可动画属性，用于控制每帧绘制的内容，如自定义绘制音量图标。通过自定义可动画属性，可以为ArkUI中部分原本不支持动画的属性添加动画。
+* 自定义可动画属性：ArkUI提供[@AnimatableExtend装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-animatable-extend)用于自定义可动画属性。开发者可从自定义绘制的内容中抽象出可动画属性，用于控制每帧绘制的内容，如自定义绘制音量图标。通过自定义可动画属性，可以为ArkUI中部分原本不支持动画的属性添加动画。

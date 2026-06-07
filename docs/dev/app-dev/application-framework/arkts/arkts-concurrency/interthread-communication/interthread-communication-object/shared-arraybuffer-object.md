@@ -1,6 +1,6 @@
 ---
 title: "SharedArrayBuffer对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/shared-arraybuffer-object
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/shared-arraybuffer-object
 format: md
 ---
 

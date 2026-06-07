@@ -1,6 +1,6 @@
 ---
 title: "批量下架商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-batch-delist
+original_url: /docs/dev/atomic-dev/instant-service-offerings/instant-service-offerings-batch-delist
 format: md
 ---
 

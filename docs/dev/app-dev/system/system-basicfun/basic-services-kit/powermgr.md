@@ -1,9 +1,9 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "电源管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/powermgr
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/powermgr
 format: md
 ---
 
 
-* **[运行锁使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/running-dev)**
+* **[运行锁使用指南](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/powermgr/running-dev)**

@@ -1,7 +1,7 @@
 ---
 title: "计划数据"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-data-campaign-0000001128597860
+original_url: /docs/monetize/promotion/marketing-api-data-campaign-0000001128597860
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | --- | --- | --- | --- |
   | advertiser\_id | string | 否 | 广告主ID，经理账户或者服务商账户登录时，则此字段必填；当前操作的华为账号支持多个广告主账户时，此字段必填。 |
-  | time\_granularity | string | 是 | "STAT\_TIME\_GRANULARITY\_DAILY"天粒度，详见[时间粒度](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section482444972216)。 |
+  | time\_granularity | string | 是 | "STAT\_TIME\_GRANULARITY\_DAILY"天粒度，详见[时间粒度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section482444972216)。 |
   | filtering | Struct1 | 否 | 过滤字段。 |
   | page | integer | 否 | 搜索页码  默认值1  取值范围1~10000。 |
   | page\_size | integer | 否 | 每页展示的数据条数  默认值20  取值范围 1~10000。 |
@@ -40,8 +40,8 @@ format: md
   | campaign\_type | integer | 否 | 计划类型：1：展示广告；2：关键词广告；3：推送广告；4：商品类广告。 |
   | index\_screen\_list | List&lt;Struct3&gt; | 否 | 指标筛选。 |
   | dimension\_type | Struct2 | 否 | 维度细分。 |
-  | time\_line | string | 否 | 时间口径，详见[时间口径](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1584012297133)。 |
-  | group\_by | string[] | 否 | 分组，详见[分组维度](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1859510521414)。 |
+  | time\_line | string | 否 | 时间口径，详见[时间口径](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1584012297133)。 |
+  | group\_by | string[] | 否 | 分组，详见[分组维度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1859510521414)。 |
   | target\_country | List | 否 | 国家编码，如["AF", "AE"]  只有time\_granularity= "STAT\_TIME\_GRANULARITY\_SUMMARY"时生效。 |
 
   filtering(Struct1)参数
@@ -50,7 +50,7 @@ format: md
   | --- | --- | --- | --- |
   | campaign\_ids | string[] | 否 | 计划ID。 |
   | campaign\_name | string | 否 | 计划名称。 |
-  | product\_types | string[] | 否 | 推广产品，详见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
+  | product\_types | string[] | 否 | 推广产品，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
 
   dimension\_type(Struct2)参数
 

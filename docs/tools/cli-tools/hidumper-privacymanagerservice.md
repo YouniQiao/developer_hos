@@ -1,7 +1,7 @@
 ---
 title: "PrivacyManagerService"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/hidumper-privacymanagerservice
+original_url: /docs/tools/cli-tools/hidumper-privacymanagerservice
 format: md
 ---
 

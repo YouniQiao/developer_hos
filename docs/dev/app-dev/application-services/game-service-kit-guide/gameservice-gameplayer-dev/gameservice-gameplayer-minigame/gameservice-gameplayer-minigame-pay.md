@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "小游戏支付"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-pay
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-minigame/gameservice-gameplayer-minigame-pay
 format: md
 ---
 
@@ -10,9 +10,9 @@ format: md
 
 ## 前提条件
 
-* 已完成[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-preparation)。
+* 已完成[开发准备](/docs/dev/app-dev/application-services/gameservice-gameplayer-minigame-preparation)。
 * 已开通[商户服务](https://developer.huawei.com/consumer/cn/doc/start/merchant-service-0000001053025967)。
-* 已前往AGC控制台为小游戏[添加数字商品](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-goods-0000002424923350)。
+* 已前往AGC控制台为小游戏[添加数字商品](/docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-goods-0000002424923350)。
 
 ## 业务流程
 
@@ -20,7 +20,7 @@ format: md
 
 1. 玩家在小游戏内购买商品。
 2. 小游戏调用[miniGamePay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#gameplayerminigamepay)向Game Service Kit发起支付请求。
-3. Game Service Kit向IAP Kit发送请求拉起收银台，IAP Kit处理支付请求，详情请参考[接入购买](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-purchase)。
+3. Game Service Kit向IAP Kit发送请求拉起收银台，IAP Kit处理支付请求，详情请参考[接入购买](/docs/dev/app-dev/application-services/iap-integrate-purchase)。
 4. IAP Kit处理完成后向Game Service Kit返回此次商品购买的结果等信息。
 5. Game Service Kit返回此次商品购买的结果等信息，开发者将接收到一个[CreatePurchaseResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-gameplayer#createpurchaseresult)对象，对象内的purchaseData字段包括了此次购买的结果信息。
 

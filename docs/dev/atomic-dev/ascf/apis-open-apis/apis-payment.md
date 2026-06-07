@@ -1,6 +1,6 @@
 ---
 title: "支付"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-payment
+original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-payment
 format: md
 ---
 
@@ -11,7 +11,7 @@ has.requestPayment(Object object)
 
 拉起华为支付或跳转三方支付。
 
-**需要权限：** 开发前需要配置[支付业务规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#section3657513103713)，接入流程详见[接入支付服务](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-payment-access)。
+**需要权限：** 开发前需要配置[支付业务规则](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#section3657513103713)，接入流程详见[接入支付服务](/docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-payment-access)。
 
 **起始版本：** 1.0.0
 
@@ -98,7 +98,7 @@ has.cashierPicker(Object object)
 
 拉起通用收银台。
 
-**需要权限：** 开发前需要配置[支付业务规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#section3657513103713)，接入流程详见[接入支付服务](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-payment-access)。
+**需要权限：** 开发前需要配置[支付业务规则](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#section3657513103713)，接入流程详见[接入支付服务](/docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-payment-access)。
 
 **起始版本：** 1.0.9
 
@@ -149,7 +149,7 @@ has.requestContract(Object object)
 
 调起华为支付签约服务。
 
-**需要权限：** 开发前需要配置[支付业务规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#section3657513103713)，接入流程详见[支付并签约场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign)。
+**需要权限：** 开发前需要配置[支付业务规则](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#section3657513103713)，接入流程详见[支付并签约场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-pay-and-sign)。
 
 **起始版本：** 1.0.10
 
@@ -187,7 +187,7 @@ has.createThirdPayClient(string payMethod, string thirdAppId)：[ThirdPayClient]
 
 构建支付请求客户端。
 
-**需要权限：** 开发前需要配置[支付业务规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#section3657513103713)，接入流程详见[支付并签约场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign)。业务流程详见[混合支付场景基于接口方式拉起](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-mix)。
+**需要权限：** 开发前需要配置[支付业务规则](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#section3657513103713)，接入流程详见[支付并签约场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-pay-and-sign)。业务流程详见[混合支付场景基于接口方式拉起](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-mix)。
 
 **起始版本：** 1.0.17
 
@@ -223,7 +223,7 @@ ThirdPayClient.pay()
 
 该方法提供拉起三方支付方式收银台等功能，调用方法前请确保网络已连接。调用该方法后会拉起三方支付收银台，完成后使用Promise异步返回。商户客户端根据接口[has.requestPayment](#hasrequestpayment)或者[has.cashierPicker](#hascashierpicker)返回结果，按照三方支付平台接入要求构建三方支付信息[payInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#section1240916334438)调用[ThirdPayClient.pay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-third-payment-service#section5214134018367)接口拉起三方支付收银台。
 
-**需要权限：** 开发前需要配置[支付业务规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#section3657513103713)，接入流程详见[支付并签约场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign)，业务流程详见[混合支付场景基于接口方式拉起](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-mix)。
+**需要权限：** 开发前需要配置[支付业务规则](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#section3657513103713)，接入流程详见[支付并签约场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-pay-and-sign)，业务流程详见[混合支付场景基于接口方式拉起](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-mix)。
 
 **起始版本：** 1.0.17
 

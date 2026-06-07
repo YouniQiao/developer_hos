@@ -1,6 +1,6 @@
 ---
 title: "mk转换CMake（可选）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-2dx-mk-convert-cmake-0000002296283530
+original_url: /docs/dev/game-dev/games-2dx-mk-convert-cmake-0000002296283530
 format: md
 ---
 

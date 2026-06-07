@@ -1,7 +1,7 @@
 ---
 title: "ImageInfo"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-model-imageinfo-0000002360425730
+original_url: /docs/monetize/promotion/marketapi-model-imageinfo-0000002360425730
 format: md
 ---
 

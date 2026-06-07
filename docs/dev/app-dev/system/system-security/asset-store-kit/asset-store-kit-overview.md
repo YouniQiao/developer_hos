@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Asset Store Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-store-kit-overview
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-store-kit-overview
 format: md
 ---
 
@@ -17,12 +17,12 @@ Asset Store Kit（关键资产存储服务，简称ASSET）包含了一系列开
 * **基于属主的访问控制：** 所有的关键资产都受属主访问控制保护，业务无需设置。
 
   + 只允许关键资产被其属主（写入该关键资产的业务）访问。
-  + 关键资产属主身份（应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)）由ASSET从系统服务中获取，即使业务身份被仿冒，仿冒者也无法获取到其他业务的数据。
+  + 关键资产属主身份（应用的[appId](/docs/dev/app-dev/getting-started/dev-fundamentals/common-problem-of-application#什么是appid)）由ASSET从系统服务中获取，即使业务身份被仿冒，仿冒者也无法获取到其他业务的数据。
   + 关键资产加/解密时，其属主身份参与了完整性保护，即使关键资产属主身份被篡改，攻击者也无法获取到其他业务的数据。
 * **基于群组的访问控制：**
 
   + 同一开发者开发的多个应用，可配置为同一群组，并在存储关键资产时设置群组共享，以便群组内的多个应用可以互通访问数据。
-  + 关键资产所属的群组信息，由开发者ID和群组ID组成。其中，开发者ID无需配置，群组ID在应用开发期配置，参考[配置文件标签说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)。应用发布时使用开发者私钥签名保证群组ID的完整性。
+  + 关键资产所属的群组信息，由开发者ID和群组ID组成。其中，开发者ID无需配置，群组ID在应用开发期配置，参考[配置文件标签说明](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)。应用发布时使用开发者私钥签名保证群组ID的完整性。
   + 开发者可以为应用配置多个群组，根据关键资产的共享范围，将不同关键资产配置在相应的群组内，从而实现细粒度的群组访问控制。
 * **基于锁屏状态的访问控制：** 分为以下三种保护等级（安全性依次递增），业务可根据实际情况设置任意一种，若不设置，则默认保护等级为“首次解锁后可访问”。
 
@@ -45,7 +45,7 @@ Asset Store Kit（关键资产存储服务，简称ASSET）包含了一系列开
   轻量级智能穿戴设备暂不支持使用本Kit。
 * 基于别名的访问
 
-  关键资产以密文的形式存储在ASSET数据库中，以业务身份（应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)） + 别名作为唯一索引。故业务需要保证每条关键资产的别名唯一。
+  关键资产以密文的形式存储在ASSET数据库中，以业务身份（应用的[appId](/docs/dev/app-dev/getting-started/dev-fundamentals/common-problem-of-application#什么是appid)） + 别名作为唯一索引。故业务需要保证每条关键资产的别名唯一。
 * 批量查询关键资产
 
   批量查询出的关键资产需要通过IPC通道传输给业务，受IPC缓冲区大小限制，建议对查询超过40条关键资产时，进行分批查询，且每次查询数量不超过40条。
@@ -61,7 +61,7 @@ Asset Store Kit（关键资产存储服务，简称ASSET）包含了一系列开
 
   关键资产有且仅有以下删除时机：
 
-  + 业务主动调用remove删除关键资产时，删除符合条件的数据。详见删除关键资产[ArkTS](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-remove)、[C/C++](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-remove)开发指导。
+  + 业务主动调用remove删除关键资产时，删除符合条件的数据。详见删除关键资产[ArkTS](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-remove)、[C/C++](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-remove)开发指导。
   + 应用卸载时，会清除对应的数据。[IS\_PERSISTENT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-asset#tag)属性设置为true的数据将保留。
     - 从API 21开始：清除存储在ASSET中的非群组数据。群组数据仅在群组内所有应用卸载时清除。
     - 在API 20及之前的版本：清除存储在ASSET中的非群组和群组数据。
@@ -76,4 +76,4 @@ Asset Store Kit（关键资产存储服务，简称ASSET）包含了一系列开
 
 ## 与相关Kit的关系
 
-关键资产存储服务仅提供短敏感数据（不超过1KB）的安全存储能力，如业务希望对超长的数据提供保护时，请考虑使用[通用密钥库系统](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)或[加解密算法库框架](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro)保护您的数据。
+关键资产存储服务仅提供短敏感数据（不超过1KB）的安全存储能力，如业务希望对超长的数据提供保护时，请考虑使用[通用密钥库系统](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)或[加解密算法库框架](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-architecture-kit-intro)保护您的数据。

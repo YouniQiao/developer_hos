@@ -1,6 +1,6 @@
 ---
 title: "栅格布局 (GridRow/GridCol)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout/arkts-layout-development-grid-layout
 format: md
 ---
 

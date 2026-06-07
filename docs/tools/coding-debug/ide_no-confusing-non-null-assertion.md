@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/no-confusing-non-null-assertion"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-confusing-non-null-assertion
+original_url: /docs/tools/coding-debug/ide_no-confusing-non-null-assertion
 format: md
 ---
 

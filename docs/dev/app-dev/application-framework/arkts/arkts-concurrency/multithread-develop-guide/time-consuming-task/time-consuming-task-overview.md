@@ -1,6 +1,6 @@
 ---
 title: "耗时任务并发场景简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task-overview
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/time-consuming-task-overview
 format: md
 ---
 

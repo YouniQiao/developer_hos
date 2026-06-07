@@ -1,6 +1,6 @@
 ---
 title: "抓包/调试权限常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/faqs-permissions-debug
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/faqs-permissions-debug
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 **使用说明：**
 
-以[tcpdump工具](https://gitcode.host/OpenHarmonyToolkitsPlaza/tcpdump)为例，使用[二进制签名工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/binary-sign-tool)签名时在module.json文件中配置ohos.permission.kernel.NET\_RAW权限。
+以[tcpdump工具](https://gitcode.host/OpenHarmonyToolkitsPlaza/tcpdump)为例，使用[二进制签名工具](/docs/dev/app-dev/system/binary-sign-tool)签名时在module.json文件中配置ohos.permission.kernel.NET\_RAW权限。
 
 ```
 {
@@ -50,7 +50,7 @@ sudo ./tcpdump
 
 **使用说明：**
 
-以[lldb高性能调试器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-lldb)为例，使用[二进制签名工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/binary-sign-tool)签名时在module.json文件中配置ohos.permission.kernel.DEBUGGER权限。
+以[lldb高性能调试器](/docs/dev/ndk-dev/debug-lldb)为例，使用[二进制签名工具](/docs/dev/app-dev/system/binary-sign-tool)签名时在module.json文件中配置ohos.permission.kernel.DEBUGGER权限。
 
 ```
 {

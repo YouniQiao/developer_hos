@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/semi"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_semi
+original_url: /docs/tools/coding-debug/ide_semi
 format: md
 ---
 

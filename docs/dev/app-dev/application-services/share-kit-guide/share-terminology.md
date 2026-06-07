@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Share Kit术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-terminology
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-terminology
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
 ## Recommendation area推荐区
 
-对接华为分享和[意图框架](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-introduction)，通过算法高效、精准推荐能够处理内容的设备和目标应用用户。
+对接华为分享和[意图框架](/docs/dev/app-dev/ai/intents-kit-guide/intents-introduction)，通过算法高效、精准推荐能够处理内容的设备和目标应用用户。
 
 ## Sharing mode area分享方式区
 
@@ -30,7 +30,7 @@ format: md
 
 2、跳转目标应用提供的ExtensionAbility组件。
 
-应用组件需通过在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置UIAbility组件和ExtensionAbility组件的描述信息，以声明支持分享的能力。
+应用组件需通过在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中配置UIAbility组件和ExtensionAbility组件的描述信息，以声明支持分享的能力。
 
 ## Sharing details page分享详情页
 

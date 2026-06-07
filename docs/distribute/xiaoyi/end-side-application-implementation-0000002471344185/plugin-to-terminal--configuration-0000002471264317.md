@@ -1,7 +1,7 @@
 ---
 title: "插件工具对应在端侧文件配置"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/plugin-to-terminal--configuration-0000002471264317
+original_url: /docs/distribute/xiaoyi/end-side-application-implementation-0000002471344185/plugin-to-terminal--configuration-0000002471264317
 format: md
 ---
 

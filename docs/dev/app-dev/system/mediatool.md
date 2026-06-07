@@ -1,6 +1,6 @@
 ---
 title: "媒体库资源访问工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mediatool
+original_url: /docs/dev/app-dev/system/mediatool
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "申请调试设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-applyequip-0000002254916518
+original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-applyequip-0000002254916518
 format: md
 ---
 
@@ -25,8 +25,8 @@ format: md
 
    ![](../img/agc-help-clouddebug-applyequip-0000002254916518_3.png)
 
-   * 系统按照“优惠时长 ＞ 套餐余额 ＞ 按量付费”的优先顺序扣除调试时间，详见[计费优先级说明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-price-0000002255019568#section14889225364)。
-   * 如果剩余的优惠时长额度不足，您可以点击“[购买套餐包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-price-0000002255019568#section1554613186493)”订购项目付费套餐，或点击“[开通按量计费](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-price-0000002255019568#section12857373426)”根据实际使用量付费。
+   * 系统按照“优惠时长 ＞ 套餐余额 ＞ 按量付费”的优先顺序扣除调试时间，详见[计费优先级说明](/docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-price-0000002255019568#section14889225364)。
+   * 如果剩余的优惠时长额度不足，您可以点击“[购买套餐包](/docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-price-0000002255019568#section1554613186493)”订购项目付费套餐，或点击“[开通按量计费](/docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-price-0000002255019568#section12857373426)”根据实际使用量付费。
 
    ![](../img/agc-help-clouddebug-applyequip-0000002254916518_4.png)
 6. 使用优惠时长进行设备调试时，单次调试时长不得超过20分钟。当20分钟调试时长即将用尽时，系统会弹出如下提示框询问您是否需要延长调试时间。

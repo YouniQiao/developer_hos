@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-countries-faq-0000002425264361
+original_url: /docs/distribute/agc/agc-help-products-management-0000002391702238/agc-help-countries-faq-0000002425264361
 format: md
 ---
 

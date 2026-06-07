@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现同步方式调用数据库接口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-30
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-30
 ---
 
 

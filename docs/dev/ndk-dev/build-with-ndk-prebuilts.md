@@ -1,6 +1,6 @@
 ---
 title: "在NDK工程中使用预构建库"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-prebuilts
+original_url: /docs/dev/ndk-dev/build-with-ndk-prebuilts
 format: md
 ---
 
@@ -9,9 +9,9 @@ format: md
 
 ## 预构建库使用约束
 
-1.确保引入的SO动态库是通过[HarmonyOS NDK 编译工具链](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-overview)编译生成，如何通过[HarmonyOS NDK 编译工具链](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-overview)编译预构建库，请参考[CMake构建三方库适配流程](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-cmake-adapts-to-harmonyos#section1826019653918)。
+1.确保引入的SO动态库是通过[HarmonyOS NDK 编译工具链](/docs/dev/ndk-dev/build-with-ndk-overview)编译生成，如何通过[HarmonyOS NDK 编译工具链](/docs/dev/ndk-dev/build-with-ndk-overview)编译预构建库，请参考[CMake构建三方库适配流程](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-cmake-adapts-to-harmonyos#section1826019653918)。
 
-2.确保引入的SO动态库的依赖库也导入到工程中且通过[HarmonyOS NDK 编译工具链](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-overview)编译生成。
+2.确保引入的SO动态库的依赖库也导入到工程中且通过[HarmonyOS NDK 编译工具链](/docs/dev/ndk-dev/build-with-ndk-overview)编译生成。
 
 ## 直接引入预构建库
 

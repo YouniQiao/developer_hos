@@ -1,6 +1,6 @@
 ---
 title: "后台任务合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-tasks
+original_url: /docs/quality/use-of-background-tasks
 format: md
 ---
 
@@ -19,4 +19,4 @@ format: md
 | 延迟任务 | 实时性不高、可延迟执行的任务，满足条件后放入执行队列，系统统一调度。 | 应用退到后台时挂起，满足条件后系统统一调度拉起应用，创建Extension进程执行任务。单次回调最长运行2分钟，超时不取消，系统终止Extension进程。 | 软件更新、信息收集、数据处理等。 |
 | 代理提醒 | 系统代理应用提醒。 | 应用挂起或进程终止，满足条件后系统代理应用提醒。 | 闹钟、倒计时、日历。 |
 
-具体任务的使用场景、约束和开发步骤可以参考[后台任务开发服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-kit)。
+具体任务的使用场景、约束和开发步骤可以参考[后台任务开发服务](/docs/dev/app-dev/application-framework/background-task-kit)。

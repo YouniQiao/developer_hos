@@ -1,7 +1,7 @@
 ---
 title: "任务创建流程"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-task-creation-0000002466018866
+original_url: /docs/monetize/promotion/fusion-task-creation-0000002466018866
 format: md
 ---
 

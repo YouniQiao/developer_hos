@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如何将码图背景颜色设置成透明色"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-19
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-19
 format: md
 ---
 

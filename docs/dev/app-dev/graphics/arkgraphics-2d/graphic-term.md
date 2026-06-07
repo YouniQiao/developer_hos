@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "图形开发术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-term
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-term
 format: md
 ---
 

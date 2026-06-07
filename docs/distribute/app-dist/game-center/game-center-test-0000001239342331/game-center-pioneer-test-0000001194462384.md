@@ -1,7 +1,7 @@
 ---
 title: "先锋测试"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-pioneer-test-0000001194462384
+original_url: /docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-pioneer-test-0000001194462384
 format: md
 ---
 
@@ -61,13 +61,13 @@ format: md
 
 ### 创建问卷
 
-正式申请先锋测试前，您需要[创建](`https://developer.huawei.com/consumer/cn/doc/app/game-center-questionnaire-0000001194144428#section113061322132311`)“先锋测试”类型的问卷，感兴趣的用户可填写问卷以申请游戏测试的资格。
+正式申请先锋测试前，您需要[创建](`/docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-questionnaire-0000001194144428#section113061322132311`)“先锋测试”类型的问卷，感兴趣的用户可填写问卷以申请游戏测试的资格。
 
 ![](./img/15d2cbf6128d.png)
 
 * “先锋测试”类型的调查问卷无需审核。
 * 建议先锋测试的问卷标题加上游戏ID，可参考[查看应用基本信息](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694`)。
-* 建议问卷创建后，点击[预览](`https://developer.huawei.com/consumer/cn/doc/app/game-center-questionnaire-0000001194144428#section54421040112713`)查看问卷效果。
+* 建议问卷创建后，点击[预览](`/docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-questionnaire-0000001194144428#section54421040112713`)查看问卷效果。
 
 ### 配置应用基本信息
 
@@ -77,7 +77,7 @@ format: md
 
 请决定体验您的游戏是否需要激活码：
 
-* 若需要激活码，您需要[创建“礼包”类型的奖品](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-reservation-0000001657694701#section3160112618266`)，用户持有激活码才能进入游戏。
+* 若需要激活码，您需要[创建“礼包”类型的奖品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701#section3160112618266`)，用户持有激活码才能进入游戏。
 
   ![](./img/2e78147d96e5.png)
 
@@ -103,7 +103,7 @@ format: md
    | 类别 | 参数 | 说明 |
    | --- | --- | --- |
    | 游戏基本信息 | 测试类型 | 请选择“先锋测试”。 |
-   | 测试时间 | 获得测试资格的用户体验游戏的时间段。  说明：  * 若您已申请新游预约，请确保先锋测试结束时间必须早于预约的[首发精确时间](`https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-apk-0000002089114109#ZH-CN_TOPIC_0000002089114109__p108342217437`)。 * 建议单次先锋测试时间7~30天。 * 建议先锋测试的招募结束至测试开始的时间间隔大于1天且小于7天。 * 游戏开始招募后需要修改招募时间或测试时间需[发送更新申请邮件](#section7102135875312)。 |
+   | 测试时间 | 获得测试资格的用户体验游戏的时间段。  说明：  * 若您已申请新游预约，请确保先锋测试结束时间必须早于预约的[首发精确时间](`/docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109#ZH-CN_TOPIC_0000002089114109__p108342217437`)。 * 建议单次先锋测试时间7~30天。 * 建议先锋测试的招募结束至测试开始的时间间隔大于1天且小于7天。 * 游戏开始招募后需要修改招募时间或测试时间需[发送更新申请邮件](#section7102135875312)。 |
    | 是否外显测试开始时间 | 选择是否外显测试开始时间。选择“否”会在华为应用市场、游戏中心的先锋测试详情页的时间处展示：“待定”。 |
    | 是否外显测试结束时间 | 选择是否外显测试结束时间。选择“否”会在华为应用市场、游戏中心的先锋测试详情页的时间处展示：“待定”。 |
    | 是否删档 | 测试结束后，是否清空所有玩家的数据。 |
@@ -111,7 +111,7 @@ format: md
    | 是否集成华为ID | 游戏内是否接入华为账号SDK。 |
    | （可选）创建开通社区申请 | 展示在游戏详情页。社区论坛可宣传游戏相关内容，聚集核心用户。 |
    | 测试发布范围 | 发布范围 | 游戏上架后是否展示在“先锋测试”专题区：  * 公开发布：表示游戏上架后展示在专题区，且搜索可见。 * 非公开发布：表示游戏上架后不展示在专题区，且搜索不可见。获得测试资格的用户可以通过推送消息安装并体验游戏。 说明：  建议面向全部用户招募的测试选择“公开发布”。针对小范围用户的保密测试选择“非公开发布”。 |
-   | 是否匿名厂商 | 请决定是否在先锋测试详情页展示您的企业名称：  * 是：不展示。 * 否：继续展示。 说明：  * 若在先锋测试详情页隐匿您的企业名称，且后续将申请[新游预约](`https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333`)，建议选择[H5页面预约](`https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-apk-0000002089114109#section4655536919`)方式。 * 对于审核通过的先锋测试，仅允许未到招募时间的先锋测试修改当前参数。 |
+   | 是否匿名厂商 | 请决定是否在先锋测试详情页展示您的企业名称：  * 是：不展示。 * 否：继续展示。 说明：  * 若在先锋测试详情页隐匿您的企业名称，且后续将申请[新游预约](`https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333`)，建议选择[H5页面预约](`/docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109#section4655536919`)方式。 * 对于审核通过的先锋测试，仅允许未到招募时间的先锋测试修改当前参数。 |
    | 测试名额 | 获得测试资格的用户数量。请根据实际情况填写。 |
    | 参与测试条件 | 申请测试游戏的要求：  * 勾选“预约游戏”，表示只有预约用户才能参与填写问卷以申请测试资格。 * 未勾选“预约游戏”，表示对游戏感兴趣的用户可以直接填写问卷以申请测试资格。 说明：  只有您创建过[游戏预约](`https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333`)且已审核通过上架后，此处才会出现“预约游戏”选项，勾选该选项后用户可在游戏详情页先预约游戏再填写问卷。 |
    | 使用问卷 | 招募开始后，对游戏感兴趣的用户申请测试资格时填写的问卷：  * 您可以创建新的问卷。 * 您也可以选择已有的问卷。 注意：  用户招募时间开始后，禁止更换调查问卷。 |

@@ -1,6 +1,6 @@
 ---
 title: "字符处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-character-processing
+original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-character-processing
 format: md
 ---
 

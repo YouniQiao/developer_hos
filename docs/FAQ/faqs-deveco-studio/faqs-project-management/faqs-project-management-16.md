@@ -1,7 +1,7 @@
 ---
 format: md
 title: ".h文件中uint8_t无法使用如何解决"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-16
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-16
 ---
 
 

@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "系统调试信息获取"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug
 format: md
 ---
 
 
-* **[HiDebug能力概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines)**
-* **[HiDebug接口使用示例(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines-arkts)**
-* **[HiDebug接口使用示例(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines-ndk)**
+* **[HiDebug能力概述](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines)**
+* **[HiDebug接口使用示例(ArkTS)](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines-arkts)**
+* **[HiDebug接口使用示例(C/C++)](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines-ndk)**

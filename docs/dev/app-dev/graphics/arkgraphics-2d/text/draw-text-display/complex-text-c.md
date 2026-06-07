@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "复杂文本绘制与显示（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-text-c
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/complex-text-c
 format: md
 ---
 
@@ -29,7 +29,7 @@ format: md
 
 ### 开发步骤
 
-画布Canvas对象具体可见[画布的获取与绘制结果的显示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-c)。
+画布Canvas对象具体可见[画布的获取与绘制结果的显示](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-c)。
 
 ```
 // 创建一个 TypographyStyle，创建 TypographyCreate 时需要使用
@@ -660,7 +660,7 @@ OH_Drawing_DestroyTypography(typographyWithoutAutoSpace);
 
 ### 渐变色
 
-**渐变色**是一种在文字设计中广泛应用的视觉效果，通过在文字的不同部分应用不同的颜色，从而创造出从一种颜色平滑过渡到另一种颜色的效果。可以通过着色器实现文字渐变的效果，着色器的更多介绍请参考[着色器效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-drawing-effect-c#着色器效果)。
+**渐变色**是一种在文字设计中广泛应用的视觉效果，通过在文字的不同部分应用不同的颜色，从而创造出从一种颜色平滑过渡到另一种颜色的效果。可以通过着色器实现文字渐变的效果，着色器的更多介绍请参考[着色器效果](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/complex-drawing-effect-c#着色器效果)。
 
 | 接口定义 | 描述 |
 | --- | --- |

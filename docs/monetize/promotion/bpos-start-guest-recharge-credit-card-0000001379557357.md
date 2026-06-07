@@ -1,7 +1,7 @@
 ---
 title: "企业信用卡后付费"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-credit-card-0000001379557357
+original_url: /docs/monetize/promotion/bpos-start-guest-recharge-credit-card-0000001379557357
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 - 只支持注册地为下述国家/地区的账户使用企业信用卡后付费功能：
 
   德国、英国、爱尔兰、以色列、法国、意大利、西班牙、波兰、罗马尼亚、捷克、芬兰、土耳其、乌克兰，新加坡、马来西亚、荷兰、泰国、印度尼西亚、中国香港、菲律宾、沙特阿拉伯、埃及、南非、印度、墨西哥、智利、秘鲁、哥伦比亚。
-- 已完成实名认证的直客广告主可以使用信用卡功能，如果您的账户还未完成实名认证，请参考[实名认证](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-manage-information-0000001328357938#ZH-CN_TOPIC_0000001328357938__d0e16595)。服务商及子客账户无法使用企业信用卡支付功能。
+- 已完成实名认证的直客广告主可以使用信用卡功能，如果您的账户还未完成实名认证，请参考[实名认证](/docs/monetize/promotion/bpos-delivery-task-account-manage-information-0000001328357938#ZH-CN_TOPIC_0000001328357938__d0e16595)。服务商及子客账户无法使用企业信用卡支付功能。
 - 企业信用卡账户名称必须和鲸鸿动能广告账户企业名称一致，且美元币种的账户不支持企业信用卡后付费功能。
 - 如果您开通了华为开发者联盟提供的团队账号或者鲸鸿动能广告平台提供的团队账号功能，使用企业信用卡功能时，请使用账号持有者的华为账号登录并完成操作，不能使用团队成员账号登录。
 
@@ -28,7 +28,7 @@ format: md
 
 1. 在线申请并等待审核。
 
-   请通过[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569)提供以下信息：
+   请通过[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569)提供以下信息：
 
    您的企业名称、广告投放区域、企业信用卡卡号、企业信用卡发卡国、应用ID或者应用包名；
 

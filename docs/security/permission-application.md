@@ -1,6 +1,6 @@
 ---
 title: "应用权限申请"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-permission-application
+original_url: /docs/security/permission-application
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 概述
 
-在HarmonyOS开发中，应用访问如相机、麦克风、位置、图库等系统资源或系统能力时，需通过[系统Picker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-picker)、[安全控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-component-overview)、[授权使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview)等方式来访问，以确保用户隐私安全。在申请权限授权过程中需严格遵循HarmonyOS[应用安全隐私体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-privacy-experience-standards)，同时符合UX体验设计，以提供合理且用户友好的交互体验。本文将从以下五个方面，介绍应用申请权限时的注意事项：
+在HarmonyOS开发中，应用访问如相机、麦克风、位置、图库等系统资源或系统能力时，需通过[系统Picker](/docs/dev/app-dev/system/system-security/access-control/use-picker)、[安全控件](/docs/dev/app-dev/system/system-security/access-control/security-components/security-component-overview)、[授权使用](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview)等方式来访问，以确保用户隐私安全。在申请权限授权过程中需严格遵循HarmonyOS[应用安全隐私体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-privacy-experience-standards)，同时符合UX体验设计，以提供合理且用户友好的交互体验。本文将从以下五个方面，介绍应用申请权限时的注意事项：
 
 * 优先使用系统Picker或者安全控件
 * 权限申请时机
@@ -26,24 +26,24 @@ format: md
 
 系统Picker是拉起系统资源的一种方式，由于系统Picker已经获取了对应权限的预授权，开发者使用系统Picker时，无需再次申请权限也可临时受限访问对应的资源。
 
-使用系统Picker组件拉起系统应用的场景主要有：联系人Picker（Contacts Picker），地图Picker，相机Picker（Camera Picker），扫码Picker，卡证识别Picker，文档扫描Picker，文件Picker，音频Picker和照片Picker（PhotoViewPicker）等，详细可参考[拉起系统应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup)。
+使用系统Picker组件拉起系统应用的场景主要有：联系人Picker（Contacts Picker），地图Picker，相机Picker（Camera Picker），扫码Picker，卡证识别Picker，文档扫描Picker，文件Picker，音频Picker和照片Picker（PhotoViewPicker）等，详细可参考[拉起系统应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/system-app-startup)。
 
 <strong>安全控件</strong>
 
 安全控件是系统提供的一组系统实现的ArkUI组件，应用集成这类组件就可以实现在用户点击后自动授权，而无需弹窗授权。它们可以作为一种“特殊的按钮”融入应用页面，实现用户点击即许可的设计思路。
 
-目前系统提供两类安全控件：[粘贴控件（PasteButton）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)、[保存控件（SaveButton）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/savebutton)。
+目前系统提供两类安全控件：[粘贴控件（PasteButton）](/docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton)、[保存控件（SaveButton）](/docs/dev/app-dev/system/system-security/access-control/security-components/savebutton)。
 
 <strong>使用场景示例</strong>
 
 以下场景优先使用系统Picker或安全控件：
 
 1. 读写媒体库中的图片或视频：
-   * 推荐方案（无需申请权限）：使用[PhotoViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker)读取媒体库的图片与视频；使用安全控件中的保存控件[保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
-   * 申请权限方案：申请受限权限[ohos.permission.READ\_IMAGEVIDEO](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionread_imagevideo)或[ohos.permission.WRITE\_IMAGEVIDEO](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionwrite_imagevideo)读取媒体库的图片与视频。
+   * 推荐方案（无需申请权限）：使用[PhotoViewPicker](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker)读取媒体库的图片与视频；使用安全控件中的保存控件[保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
+   * 申请权限方案：申请受限权限[ohos.permission.READ\_IMAGEVIDEO](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionread_imagevideo)或[ohos.permission.WRITE\_IMAGEVIDEO](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionwrite_imagevideo)读取媒体库的图片与视频。
 2. 拉起系统相机进行拍照和录制：
    * 推荐方案（无需申请权限）：仅是需要拉起系统相机拍摄一张照片、录制一段视频，可直接使用[CameraPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-camerapicker)，无需申请相机权限。
-   * 申请权限方案：开发一个相机应用（或是在应用内开发相机模块）时，需按[相机开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)在开发前做好申请权限的准备。
+   * 申请权限方案：开发一个相机应用（或是在应用内开发相机模块）时，需按[相机开发指导](/docs/dev/app-dev/media/camera-kit/camera-preparation)在开发前做好申请权限的准备。
 
 ## 权限申请时机
 
@@ -65,7 +65,7 @@ format: md
 
 请求应用权限时，增强用户信任并减少拒绝风险的关键在于清晰说明。通过对话框或提示信息，向用户解释为何需要权限，或说明数据如何被使用，即明确声明原因。
 
-在应用开发过程中，首先需要在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)的requestPermissions标签中[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。其中权限使用理由必须按照规范来填写，具体规范可参考官方声明权限中[权限使用理由的文案内容规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#权限使用理由的文案内容规范)章节。
+在应用开发过程中，首先需要在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)的requestPermissions标签中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。其中权限使用理由必须按照规范来填写，具体规范可参考官方声明权限中[权限使用理由的文案内容规范](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#权限使用理由的文案内容规范)章节。
 
 填写权限声明原因时，应遵循以下原则与规范，以增强用户的理解度、提升信任感、降低权限拒绝率并优化整体用户体验：
 
@@ -74,7 +74,7 @@ format: md
 * 简洁性：语言简洁明了，避免冗长复杂描述。
 * 尊重用户：强调信息保密性和安全性，体现应用诚信和责任感。
 
-以下是一些正反例来说明如何按照规范填写权限声明原因了，详细内容可参考指南[reason字段的内容写作规范及建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#reason字段的内容写作规范及建议)。
+以下是一些正反例来说明如何按照规范填写权限声明原因了，详细内容可参考指南[reason字段的内容写作规范及建议](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#reason字段的内容写作规范及建议)。
 
 <strong>正例</strong>
 
@@ -128,7 +128,7 @@ format: md
 系统弹框一般有三种操作，如下图所示。
 
 1. 仅使用期间允许：点击后应用直接获取该权限，且再次调用requestPermissionsFromUser()方法无法拉起该权限设置弹框；
-2. 本次使用允许：点击后将会对应用授予临时的权限，详情请参考[向用户申请单次授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/one-time-authorization)，若临时权限被取消，再次调用requestPermissionsFromUser()方法将会拉起该权限设置弹框；
+2. 本次使用允许：点击后将会对应用授予临时的权限，详情请参考[向用户申请单次授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/one-time-authorization)，若临时权限被取消，再次调用requestPermissionsFromUser()方法将会拉起该权限设置弹框；
 3. 不允许：点击后应用无法获取该权限，且再次调用requestPermissionsFromUser()方法无法拉起该权限设置弹框。
 
    ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/37/v3/cgzArya5Sa6ijipOqU_akw/zh-cn_image_0000002194010128.png?HW-CC-KV=V1&HW-CC-Date=20260529T080700Z&HW-CC-Expire=86400&HW-CC-Sign=9FC263BBADB7C298E1520063BC54D18465A552678861D0E63D86B2EE365F6D72 "点击放大")

@@ -1,6 +1,6 @@
 ---
 title: "隐私测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-privacytest-0000002465035109
+original_url: /docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-privacytest-0000002465035109
 format: md
 ---
 

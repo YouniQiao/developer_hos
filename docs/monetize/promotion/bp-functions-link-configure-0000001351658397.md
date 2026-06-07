@@ -1,7 +1,7 @@
 ---
 title: "配置监测链接"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-configure-0000001351658397
+original_url: /docs/monetize/promotion/bp-functions-link-configure-0000001351658397
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
    ![](./img/5e359847fefa.png) 
 
-   您可以提前完成链接测试，详情请参见[链路测试](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-test-0000001352018577)。
+   您可以提前完成链接测试，详情请参见[链路测试](/docs/monetize/promotion/bp-functions-link-test-0000001352018577)。
 
    监测链接格式：**https://***xxx.xxx.xxx/xxx***?***key1=value1&key2=value2&...*
    - 监测链接必须为https格式（不支持使用IP地址作为监测链接域名），链接中支持大小写字母、数字以及下划线字符；当前仅支持JDK21的证书。
@@ -53,7 +53,7 @@ format: md
 | \_\_GROUP\_NAME\_\_ | 定向包名称。  若非定向任务直接返回空。 |
 | \_\_GROUP\_ID\_\_ | 定向包ID。  若非定向任务直接返回空。 |
 | \_\_OAID\_\_ | 客户端采集上报的OAID信息。  **该参数必选**。 |
-| \_\_ID\_TYPE\_\_ | 唯一标识类型。  **该参数必选**。  取值范围：   - 0：表示系统低版本（安卓10版本以前）IMEI号作为唯一标识，MD5的32位小写加密。   注意：  获取用户设备识别号时，有OAID则回传OAID ，无OAID则回传IMEI（安卓10版本以前）。由于部分设备关闭广告，可能存在无OAID和IMEI的情况。  具体回传机制请参见[回传用户行为数据接口](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-interface-return-0000001238484400)。 |
+| \_\_ID\_TYPE\_\_ | 唯一标识类型。  **该参数必选**。  取值范围：   - 0：表示系统低版本（安卓10版本以前）IMEI号作为唯一标识，MD5的32位小写加密。   注意：  获取用户设备识别号时，有OAID则回传OAID ，无OAID则回传IMEI（安卓10版本以前）。由于部分设备关闭广告，可能存在无OAID和IMEI的情况。  具体回传机制请参见[回传用户行为数据接口](/docs/monetize/promotion/bp-functions-ocpd-interface-return-0000001238484400)。 |
 | \_\_UNIQUE\_ID\_\_ | 设备唯一标识的md5摘要。  **该参数必选。**  32位小写加密。  注意：  仅支持安卓低版本。 |
 | \_\_ACTION\_TYPE\_\_ | 归因类型：   - IMP：对应精准曝光监测链接。 - CLICK：对应点击上报监测链接。 - DOWNLOAD：对应下载上报监测链接。 - INSTALL：对应安装上报监测链接。 - DEEPLINKCLICK：对应打开跳转deeplink上报监测链接。 |
 | \_\_TS\_\_ | 以毫秒为单位时间戳（北京时间），例如：1625714142001。  不同事件TS对应的含义不同：   - 展示曝光：应用市场客户端推广位曝光时间。 - 行为点击：用户点击的时间。具体口径：   - 点击icon   - 图片   - 视频   - 热词   - 安装按钮   - 打开按钮 - 下载完成：应用下载完成时间。 - 安装完成：应用安装完成时间。 - 应用打开：应用点击“打开”按钮的时间。 |

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "适配深、浅色模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-color-mode
+original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-color-mode
 format: md
 ---
 
@@ -18,11 +18,11 @@ format: md
 
 ## 开发准备
 
-在适配深、浅色主题之前，请先确保已经“[构建阅读器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-read-page)”。
+在适配深、浅色主题之前，请先确保已经“[构建阅读器](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-read-page)”。
 
 ## 开发步骤
 
-1. 监听UIAbility的onConfigurationUpdate回调，并通过应用级变量的状态管理[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)保存当前colorMode值。
+1. 监听UIAbility的onConfigurationUpdate回调，并通过应用级变量的状态管理[AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage)保存当前colorMode值。
 
    ```
    import { Configuration, UIAbility } from '@kit.AbilityKit';
@@ -34,7 +34,7 @@ format: md
      }
    }
    ```
-2. 阅读页通过[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)装饰器监听colorMode字段的变化。如果颜色变化，则触发对应主题色的变更。
+2. 阅读页通过[@StorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storagelink)装饰器监听colorMode字段的变化。如果颜色变化，则触发对应主题色的变更。
 
    ```
    import { ConfigurationConstant } from '@kit.AbilityKit';

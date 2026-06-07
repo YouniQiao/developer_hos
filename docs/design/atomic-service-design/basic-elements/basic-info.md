@@ -1,7 +1,7 @@
 ---
 title: 基础信息
 sidebar_label: 基础信息
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900384976
+original_url: /docs/design/atomic-service-design/basic-elements/basic-info
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250624165245.42413357562676371599562381732526:50001231000000:2800:456220EBADCEC1075BECCDBC8E573BD9C1A441611DAF95FA91C9669BF493E4E2.png "点击放大")
 
-为便于开发者快速生成统一的元服务图标样式，我们在 DevEco Studio 提供了[元服务图标生成工具](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-icon-generation)。通过使用该工具，开发者仅需按照要求上传方形资源图，工具会自动裁剪生成完整的元服务图标。
+为便于开发者快速生成统一的元服务图标样式，我们在 DevEco Studio 提供了[元服务图标生成工具](/docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-icon-generation)。通过使用该工具，开发者仅需按照要求上传方形资源图，工具会自动裁剪生成完整的元服务图标。
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250624165246.87353279193350542184058360881847:50001231000000:2800:B5F2B883CB239A0342CD3C76E663BBA295A29516B535824DF72A8295EEEFB3E4.png "点击放大")
 

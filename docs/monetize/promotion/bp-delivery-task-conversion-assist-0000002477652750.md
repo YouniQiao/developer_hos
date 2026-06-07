@@ -1,7 +1,7 @@
 ---
 title: "投放转化助攻任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-conversion-assist-0000002477652750
+original_url: /docs/monetize/promotion/bp-delivery-task-conversion-assist-0000002477652750
 format: md
 ---
 

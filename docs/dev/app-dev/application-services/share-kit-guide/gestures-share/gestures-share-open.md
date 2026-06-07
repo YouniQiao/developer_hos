@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "打开设备侧隔空传送开关"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-open
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/gestures-share/gestures-share-open
 format: md
 ---
 

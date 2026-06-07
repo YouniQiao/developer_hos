@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-display-overview
+original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-name-localization/i18n-display-overview
 format: md
 ---
 
@@ -10,4 +10,4 @@ format: md
 可以通过以下方式进行本地化：
 
 1. [本地化名称](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames)：采用Intl.DisplayNames接口本地化表示语言、地区、脚本、货币、历法和时间字段（如年、月、日等）。
-2. [本地化语言与地区名称](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-language-region-display)：采用i18n.System.getDisplayLanguage和i18n.System.getDisplayCountry接口实现本地化表示语言和地区。
+2. [本地化语言与地区名称](/docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-name-localization/i18n-language-region-display)：采用i18n.System.getDisplayLanguage和i18n.System.getDisplayCountry接口实现本地化表示语言和地区。

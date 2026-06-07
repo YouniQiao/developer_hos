@@ -1,6 +1,6 @@
 ---
 title: "图标小符号 (SymbolGlyph/SymbolSpan)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-symbol
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-common-components-symbol
 format: md
 ---
 
@@ -11,7 +11,7 @@ SymbolGlyph是图标小符号组件，便于使用精美的图标，如渲染多
 
 SymbolGlyph通过$r引用Resource资源来创建，目前仅支持系统预置的Symbol资源名。
 
-相关资源可参考[系统图标](https://developer.huawei.com/consumer/cn/doc/design-guides/system-icons-0000001929854962)。
+相关资源可参考[系统图标](/docs/design/general-design-basics/visual-design/harmonyos-symbol)。
 
 ```
 SymbolGlyph($r('sys.symbol.ohos_folder_badge_plus'))

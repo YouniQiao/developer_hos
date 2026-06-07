@@ -1,6 +1,6 @@
 ---
 title: "选择待发布软件包"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-choose-pkg-0000002278981434
+original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-choose-pkg-0000002278981434
 format: md
 ---
 
@@ -9,10 +9,10 @@ format: md
 
 #### 前提条件
 
-已[上传软件包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-upload-pkg-0000002277983368)，且软件包同时满足如下条件：
+已[上传软件包](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-upload-pkg-0000002277983368)，且软件包同时满足如下条件：
 
 * “使用场景”为“测试和正式上架”。
-* [合法性检测](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-upload-pkg-0000002277983368#section161521438134716)结果为“已达标”。
+* [合法性检测](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-upload-pkg-0000002277983368#section161521438134716)结果为“已达标”。
 
 #### 操作步骤
 
@@ -25,7 +25,7 @@ format: md
 5. 弹出窗口将展示已上传的、通过合法性检测的软件包，选择待发布的软件包，点击“选取”。
 
    ![](../img/agc-help-release-app-choose-pkg-0000002278981434_1.png)
-6. 当您发布软件包的API Level ≥ 11时，可以设置是否对软件包进行加密。加密的影响、效果详细参见[应用加密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-protect)。
+6. 当您发布软件包的API Level ≥ 11时，可以设置是否对软件包进行加密。加密的影响、效果详细参见[应用加密](/docs/dev/app-dev/system/system-security/code-protect)。
    * 加密：用户在客户端安装的软件包为加密的，安全性较高。
    * 不加密：用户在客户端安装的软件包为不加密的，应用的启动速率较快。
 

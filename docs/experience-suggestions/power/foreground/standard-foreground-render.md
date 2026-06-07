@@ -1,6 +1,6 @@
 ---
 title: "前台绘制渲染"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-render
+original_url: /docs/experience-suggestions/power/foreground/standard-foreground-render
 format: md
 ---
 
@@ -35,7 +35,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [动效使用建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-low-power-design-in-dark-mode) |
+| 说明 | [动效使用建议](/docs/quality/low-power-design-in-dark-mode) |
 
 ### 缓存使用建议
 
@@ -45,7 +45,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [缓存使用建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-low-power-design-in-dark-mode) |
+| 说明 | [缓存使用建议](/docs/quality/low-power-design-in-dark-mode) |
 
 ### 视效使用建议
 
@@ -55,7 +55,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [视效使用建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-utilize-hwc-efficiently) |
+| 说明 | [视效使用建议](/docs/quality/utilize-hwc-efficiently) |
 
 ### 脏区使用建议
 
@@ -65,7 +65,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [脏区使用建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-utilize-hwc-efficiently) |
+| 说明 | [脏区使用建议](/docs/quality/utilize-hwc-efficiently) |
 
 ### 合成使用建议
 
@@ -75,4 +75,4 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [合成使用建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-utilize-hwc-efficiently) |
+| 说明 | [合成使用建议](/docs/quality/utilize-hwc-efficiently) |

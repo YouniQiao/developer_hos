@@ -1,6 +1,6 @@
 ---
 title: "CommandQueue延迟执行系统"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-query-commandqueue-0000002450401644
+original_url: /docs/dev/game-dev/pgd-query-commandqueue-0000002450401644
 format: md
 ---
 

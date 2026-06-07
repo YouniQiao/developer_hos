@@ -1,7 +1,7 @@
 ---
 title: "华为服务号介绍"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/huawei_business_touch-0000001054309149
+original_url: /docs/distribute/service-dist/huawei-service-account/huawei_business_touch-0000001054309149
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 围绕服务号主页与服务号会话页两个核心场景，基于智慧助手·今天（负一屏）、智能短信等鸿蒙系统级入口，打通私域经营链路，整合多场景触达、消息留存与数据分析能力，为商家构建私域运营体系，将流量沉淀为存量。
 
-* 服务号主页：作为品牌形象的“门面”，主页是一个高度可定制的经营空间。通过视觉沉浸区等[五个核心模块](https://developer.huawei.com/consumer/cn/doc/service/portal_rules-0000001057117474)，系统化地构建从品牌感知到商业引导的全链路体验。
+* 服务号主页：作为品牌形象的“门面”，主页是一个高度可定制的经营空间。通过视觉沉浸区等[五个核心模块](/docs/distribute/service-dist/huawei-service-account/specification-0000001053205318/portal_rules-0000001057117474)，系统化地构建从品牌感知到商业引导的全链路体验。
 * 服务号会话页：作为与用户沟通的“收件箱”，会话页聚合图文消息、会话消息以及服务菜单，提供服务支持的核心交互场景。
 
 ## 华为服务号核心能力
@@ -28,18 +28,18 @@ format: md
 
 | 主页样式 | 名片模式 | 画廊模式 |
 | --- | --- | --- |
-| 条件 | 服务号创建生效后默认具备 | 需要商家装修，参考[装修服务号主页](https://developer.huawei.com/consumer/cn/doc/service/homepage_decoration-0000002476707102) |
+| 条件 | 服务号创建生效后默认具备 | 需要商家装修，参考[装修服务号主页](/docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/homepage_decoration-0000002476707102) |
 | 示意 | ![](./img/f0485bbe454a.png "点击放大") | ![](./img/f01ce37fa89b.png "点击放大") |
 
 ### 服务号会话页
 
-服务号会话页是用户关注您服务号后，商家与用户进行互动的界面，用户的所有互动行为以及您主动推送的消息，都可在此呈现。您可以通过[配置服务菜单](https://developer.huawei.com/consumer/cn/doc/service/servicer_menu-0000002508947049)提高会话页服务效率。
+服务号会话页是用户关注您服务号后，商家与用户进行互动的界面，用户的所有互动行为以及您主动推送的消息，都可在此呈现。您可以通过[配置服务菜单](/docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/servicer_menu-0000002508947049)提高会话页服务效率。
 
 **图1** 会话页
 ![](./img/c9427086a11f.png "点击放大")
 
 ### 服务号图文消息
 
-服务号图文消息是指由封面图、标题、摘要、正文等内容组成的消息形式。您可以通过群发功能将图文消息推送给关注您服务号的用户，也可以将图文消息详情链接放置在菜单、自动回复或其他推广渠道中，可参考[发布图文消息](https://developer.huawei.com/consumer/cn/doc/service/article-0000002508827071)。
+服务号图文消息是指由封面图、标题、摘要、正文等内容组成的消息形式。您可以通过群发功能将图文消息推送给关注您服务号的用户，也可以将图文消息详情链接放置在菜单、自动回复或其他推广渠道中，可参考[发布图文消息](/docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/article-0000002508827071)。
 
 ![](./img/addfb104d09e.png "点击放大")

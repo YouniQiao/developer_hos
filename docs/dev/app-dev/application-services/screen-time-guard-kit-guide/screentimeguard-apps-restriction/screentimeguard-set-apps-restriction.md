@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设置应用访问限制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-set-apps-restriction
+original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-apps-restriction/screentimeguard-set-apps-restriction
 format: md
 ---
 
@@ -47,7 +47,7 @@ format: md
 
 ## 开发前提
 
-设置应用访问限制需要申请用户授权，请先参考[请求用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-request-user-auth)章节完成用户授权。
+设置应用访问限制需要申请用户授权，请先参考[请求用户授权](/docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-request-user-auth)章节完成用户授权。
 
 ## 开发步骤
 

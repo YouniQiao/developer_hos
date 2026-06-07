@@ -1,13 +1,13 @@
 ---
 title: "Cpp Crash（进程崩溃）检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines
 format: md
 ---
 
 
 ## 简介
 
-进程发生崩溃后，系统首先感知到崩溃，然后抓取崩溃相关的信息，最后生成崩溃日志并上报崩溃事件，为开发者提供详细的维测日志以辅助故障定位。本文分为基本概念、实现原理、约束与限制、日志获取、日志规格五个小节介绍系统提供的CppCrash检测方法。开发者如果想进一步了解如何分析CppCrash问题，请参见[CppCrash类问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-cpp-way)。
+进程发生崩溃后，系统首先感知到崩溃，然后抓取崩溃相关的信息，最后生成崩溃日志并上报崩溃事件，为开发者提供详细的维测日志以辅助故障定位。本文分为基本概念、实现原理、约束与限制、日志获取、日志规格五个小节介绍系统提供的CppCrash检测方法。开发者如果想进一步了解如何分析CppCrash问题，请参见[CppCrash类问题分析方法](/docs/quality/stability-app-crash-cpp-way)。
 
 ## 基本概念
 
@@ -157,7 +157,7 @@ DevEco Studio会收集设备“/data/log/faultlog/faultlogger/”路径下的进
 
 **方式二：通过HiAppEvent接口订阅**
 
-HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-intro)。参考[订阅崩溃事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-arkts)或[订阅崩溃事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events-ndk)完成崩溃事件订阅，并通过事件的[external\_log](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events#事件字段说明)字段读取故障日志文件内容。
+HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-intro)。参考[订阅崩溃事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events-arkts)或[订阅崩溃事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events-ndk)完成崩溃事件订阅，并通过事件的[external\_log](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events#事件字段说明)字段读取故障日志文件内容。
 
 **方式三：通过hdc获取日志，需打开开发者选项**
 
@@ -186,13 +186,13 @@ HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](htt
 | Timestamp | 故障发生时间戳 | 8 | 是 | - |
 | Pid | 进程号 | 8 | 是 | - |
 | Uid | 用户ID | 8 | 是 | - |
-| HiTraceId | HiTraceChain唯一跟踪标识 | 20 | 否 | 仅故障线程开启HiTraceChain功能时提供，详见[HiTraceChain介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-intro)。 |
+| HiTraceId | HiTraceChain唯一跟踪标识 | 20 | 否 | 仅故障线程开启HiTraceChain功能时提供，详见[HiTraceChain介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-intro)。 |
 | Process name | 故障进程名 | 8 | 是 | - |
 | Process life time | 故障进程存活时间 | 8 | 是 | - |
 | Process Memory(kB) | 故障进程内存占用 | 20 | 是 | - |
 | Device Memory(kB) | 整机内存状态 | 20 | 否 | 依赖维测服务进程，若发生故障时维测服务进程停止或设备重启则无此字段，详见[实现原理](#实现原理)。 |
 | Reason | 故障原因 | 8 | 是 | - |
-| LastFatalMessage | Fatal消息 | 8 | 否 | 以下几种情况共用此字段：  解析到不可靠的栈帧地址时输出的提示信息；  因ABORT信号崩溃退出时保存最后一条FATAL级Hilog日志；  系统内部的维测信息；  应用通过[OH\_HiDebug\_SetCrashObj](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines#添加维测信息到崩溃日志中)设置的字符串信息。 |
+| LastFatalMessage | Fatal消息 | 8 | 否 | 以下几种情况共用此字段：  解析到不可靠的栈帧地址时输出的提示信息；  因ABORT信号崩溃退出时保存最后一条FATAL级Hilog日志；  系统内部的维测信息；  应用通过[OH\_HiDebug\_SetCrashObj](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines#添加维测信息到崩溃日志中)设置的字符串信息。 |
 | Fault thread info | 故障线程信息 | 8 | 是 | - |
 | SubmitterStacktrace | 提交者线程栈 | 12 | 否 | 异步线程栈跟踪维测功能默认仅在ARM 64位系统中开启。  对于**API version 22**之前版本，**三方和系统应用**通过libuv和ffrt提交异步任务仅debug版本默认开启。  对于**API version 22**及之后版本，**三方应用**通过libuv提交异步任务debug和release版本均默认开启；**三方和系统应用**通过ffrt提交异步任务仅debug版本默认开启。 |
 | Registers | 故障现场寄存器 | 8 | 是 | - |
@@ -371,7 +371,7 @@ app crash log. <- 应用生成用于拼接的日志
 
 **HiTraceId说明**
 
-HiTraceId：HiTraceChain提供的唯一跟踪标识，参考[HiTraceChain介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-intro)。
+HiTraceId：HiTraceChain提供的唯一跟踪标识，参考[HiTraceChain介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-intro)。
 
 **调用栈帧内容说明**
 
@@ -407,7 +407,7 @@ ARM 64位系统支持抓取CPP和JS之间跨语言的调用栈，因此如果在
 #00 at onPageShow (entry|har1|1.0.0|src/main/ets/pages/Index.ts:7:13)
 ```
 
-详细说明[JS异常代码调用栈格式规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines#异常代码调用栈格式)。
+详细说明[JS异常代码调用栈格式规范](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines#异常代码调用栈格式)。
 
 ### 空指针解引用故障场景日志规格
 
@@ -623,7 +623,7 @@ Tid:29192, Name:OS_FFRT_2_0                 <- 故障线程号，线程名
 
 ### 应用通过HiAppEvent设置崩溃日志配置参数场景日志规格
 
-系统提供了通用的崩溃日志生成功能，但一些应用对崩溃日志打印内容有个性化的需求，因此从**API version 20**开始HiAppEvent的[setEventConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-crash-events#崩溃日志规格自定义参数设置)接口支持设置崩溃日志配置参数。以下是一份DevEco Studio归档在FaultLog的64位系统崩溃日志的核心内容：
+系统提供了通用的崩溃日志生成功能，但一些应用对崩溃日志打印内容有个性化的需求，因此从**API version 20**开始HiAppEvent的[setEventConfig](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events#崩溃日志规格自定义参数设置)接口支持设置崩溃日志配置参数。以下是一份DevEco Studio归档在FaultLog的64位系统崩溃日志的核心内容：
 
 ```
 ...
@@ -713,7 +713,7 @@ Uid:0
 
 ![](./img/6762dcb3.png)
 
-仅在通过Navigation跳转到子页面时才会有页面名，页面名在[系统路由表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-cross-package#系统路由表)中定义。
+仅在通过Navigation跳转到子页面时才会有页面名，页面名在[系统路由表](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-cross-package#系统路由表)中定义。
 
 当应用发生前后台切换时，对应的页面URL为空，但是会将enters foreground、leaves foreground作为特殊的页面名进行填充。
 
@@ -896,7 +896,7 @@ onPageShow (sample|sample|1.0.0|src/main/ets/pages/Index.ts:381:36)
 
 ![](./img/aa372400.png)
 
-此功能只能在[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#debug版本应用)开启。
+此功能只能在[debug版本应用](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#debug版本应用)开启。
 
 SIGPIPE异常退出时关键日志如下所示：
 

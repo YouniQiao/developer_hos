@@ -1,6 +1,6 @@
 ---
 title: "创建自定义组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-creation
+original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-creation
 format: md
 ---
 
@@ -50,7 +50,7 @@ Component({
 });
 ```
 
-在 hxml 文件中编写组件模板，详细内容参见[组件的模板](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-template)。
+在 hxml 文件中编写组件模板，详细内容参见[组件的模板](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-template)。
 
 ```
 <view class="custom">

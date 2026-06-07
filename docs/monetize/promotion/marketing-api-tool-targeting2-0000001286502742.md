@@ -1,7 +1,7 @@
 ---
 title: "查询公共定向包"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-targeting2-0000001286502742
+original_url: /docs/monetize/promotion/marketing-api-tool-targeting2-0000001286502742
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | targeting\_type | string | 否 | 定向包类型，包含应用类、非应用类，详见[定向包类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section14680439191)。 |
+  | targeting\_type | string | 否 | 定向包类型，包含应用类、非应用类，详见[定向包类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section14680439191)。 |
 
   - <strong>请求示例</strong>
 
@@ -78,7 +78,7 @@ format: md
     | targeting\_id | long | 定向包ID。 |
     | targeting\_name | string | 定向包名称。 |
     | targeting\_description | string | 定向包描述。 |
-    | targeting\_type | string | 定向包类型，包含应用类、非应用类，详见[定向包类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section14680439191)。 |
+    | targeting\_type | string | 定向包类型，包含应用类、非应用类，详见[定向包类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section14680439191)。 |
     | gender\_struct | Struct3 | 性别定向，值为gender定向中的value。 |
     | age\_struct | Struct3 | 年龄定向，值为age定向中的value。 |
     | series\_type\_struct | Struct3 | 手机系列定向，值为series\_type定向中的value。 |
@@ -99,8 +99,8 @@ format: md
     | unlimit\_app\_interest\_struct | Struct2 | App兴趣定向，app\_interest中的value。 |
     | normal\_app\_interest\_struct | Struct2 | 中等兴趣App的用户定向app\_interest中的value。 |
     | high\_app\_interest\_struct | Struct2 | 高兴趣App的用户定向。app\_interest中的value。 |
-    | ai\_target | Struct2 | 智能扩量，详见[智能扩量](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1559243472919)。 |
-    | ai\_target\_flag | string | 智能扩量开关，详见[智能扩量开关](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section9173164110290)。 |
+    | ai\_target | Struct2 | 智能扩量，详见[智能扩量](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1559243472919)。 |
+    | ai\_target\_flag | string | 智能扩量开关，详见[智能扩量开关](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section9173164110290)。 |
     | is\_retain\_assistant | boolean | 是否为次留定向包：true为是，false为否。 |
     | app\_category\_of\_media\_struct | Struct3 | 投放媒体类型定向 |
     | not\_app\_category\_of\_media\_struct | Struct3 | 投放媒体类型排除定向 |

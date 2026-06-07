@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Vulkan平台"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-ai-vulkan
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-fg/graphics-accelerate-fg-systempresent/graphics-accelerate-fg-systempresent-vulkan
 format: md
 ---
 

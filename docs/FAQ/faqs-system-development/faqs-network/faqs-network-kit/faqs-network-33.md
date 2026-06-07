@@ -1,7 +1,7 @@
 ---
 format: md
 title: "网络波动情况下，底层系统是否会关闭Socket连接"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-33
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-33
 ---
 
 

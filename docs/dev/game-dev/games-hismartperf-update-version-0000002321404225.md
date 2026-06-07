@@ -1,6 +1,6 @@
 ---
 title: "版本升级"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-update-version-0000002321404225
+original_url: /docs/dev/game-dev/games-hismartperf-update-version-0000002321404225
 format: md
 ---
 

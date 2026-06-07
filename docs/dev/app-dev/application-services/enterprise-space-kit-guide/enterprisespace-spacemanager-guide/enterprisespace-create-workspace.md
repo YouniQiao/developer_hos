@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "创建工作空间"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-create-workspace
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-create-workspace
 format: md
 ---
 

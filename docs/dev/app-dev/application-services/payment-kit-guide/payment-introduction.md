@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Payment Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-introduction
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-introduction
 format: md
 ---
 
@@ -20,27 +20,27 @@ Payment Kit还提供了用户身份验证服务，包括实名信息验证、实
 
   用户在商户的应用/元服务选购完不同的商品后，可以直接在商户的应用/元服务里完成下单和支付。
 
-  接入场景：[商户基础支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-payment-process)、[平台类商户合单支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-partner-combined)、[通用收银台支付相关场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction)。
+  接入场景：[商户基础支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-payment-process)、[平台类商户合单支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-partner-combined)、[通用收银台支付相关场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction)。
 * 免密代扣
 
   用户在商户APP应用/元服务选购完商品或主动点击商户提供的签约选项后，商户的应用/元服务可拉起华为支付签约收银台，用户完成签约后，后续再次购买商品时，商户可以直接发起代扣，减少用户拉起收银台、输入支付密码等相关操作。
 
-  接入场景：[支付并签约场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign)、[签约代扣场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-withhold-process)。
+  接入场景：[支付并签约场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-pay-and-sign)、[签约代扣场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-withhold-process)。
 * 数字人民币支付
 
   用户在商户APP应用/元服务进行话费充值，选好充值金额后发起支付，商户的应用/元服务通过拉起数字人民币收银台完成订单支付以及话费充值的操作。
 
-  接入场景：[数字人民币支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay)。
+  接入场景：[数字人民币支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-digital-cny-pay)。
 * 用户身份验证服务
 
   政务、金融、医疗等类型应用/元服务在用户进行登录、预约等操作时需要核对用户信息，或核对用户是否本人。
 
-  接入场景：[实名信息验证/授权场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-verification)、[人脸核身实人验证场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-real-name-face-verification)。
+  接入场景：[实名信息验证/授权场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-verification)、[人脸核身实人验证场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-face-verification)。
 * 营销服务
 
   针对平台券，营销服务提供领券和选券组件。当元服务集成此组件后，用户可以在组件内查看可参加的平台券活动，在下单时可以选择已经领取的可用平台券。
 
-  接入场景：[领券场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-promotion-claim-coupon)、[选券场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-promotion-select-coupon)。
+  接入场景：[领券场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-platform-coupons/payment-promotion-claim-coupon)、[选券场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-platform-coupons/payment-promotion-select-coupon)。
 
 ## 基本概念
 
@@ -52,7 +52,7 @@ Payment Kit还提供了用户身份验证服务，包括实名信息验证、实
 
 ## 商户模型与支付能力
 
-如接入数字人民币支付场景，需在运营机构或受理服务机构完成商户入网（[参见这里](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay-preparations)）。
+如接入数字人民币支付场景，需在运营机构或受理服务机构完成商户入网（[参见这里](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-digital-cny-pay-preparations)）。
 
 Payment Kit当前提供三种接入商户模型：**商户**（下文统称为直连商户）、**平台类商户**、**服务商**。开发者需要根据实际业务模式选择适用的合作身份。商户模型详细内容请参见[接入模式](https://developer.huawei.com/consumer/cn/doc/pay-docs/hwzf-hezuoshenfen-0000001725918617)。
 
@@ -66,32 +66,32 @@ Payment Kit支持的支付能力如下：
 
 | 支付能力 | 支持的商户 | 接入场景 | 描述 |
 | --- | --- | --- | --- |
-| **基础支付** | 直连商户、平台类商户、服务商 | [商户基础支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-payment-process)  [通用收银台支付相关场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction) | 用户选购商品后，商户通过接入基础支付完成用户订单的创建与支付。 |
-| **合单支付** | 平台类商户 | [平台类商户合单支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-partner-combined) | 通过合单支付，商户可将不同商户的一个或多个订单合并到同一个订单完成支付。 |
-| **支付并签约** | 直连商户、服务商 | [支付并签约场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign) | 用户支付完成后可与商户签订协议，完成后续相关业务自动扣款。 |
-| **签约代扣** | 直连商户、服务商 | [签约代扣场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-withhold-process) | 商户可主动发起与用户签订相关协议，完成相关业务自动扣款（如水电费预缴，自动充值代扣等），简化用户操作流程。 |
-| **数字人民币支付** | 运营机构或受理服务机构入网的商户 | [数字人民币支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay) | 在运营机构或受理服务机构入网的商户可通过接入数字人民币来完成如用户话费充值缴费等相关支付操作。 |
+| **基础支付** | 直连商户、平台类商户、服务商 | [商户基础支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-payment-process)  [通用收银台支付相关场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction) | 用户选购商品后，商户通过接入基础支付完成用户订单的创建与支付。 |
+| **合单支付** | 平台类商户 | [平台类商户合单支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-partner-combined) | 通过合单支付，商户可将不同商户的一个或多个订单合并到同一个订单完成支付。 |
+| **支付并签约** | 直连商户、服务商 | [支付并签约场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-pay-and-sign) | 用户支付完成后可与商户签订协议，完成后续相关业务自动扣款。 |
+| **签约代扣** | 直连商户、服务商 | [签约代扣场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-withhold-process) | 商户可主动发起与用户签订相关协议，完成相关业务自动扣款（如水电费预缴，自动充值代扣等），简化用户操作流程。 |
+| **数字人民币支付** | 运营机构或受理服务机构入网的商户 | [数字人民币支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-digital-cny-pay) | 在运营机构或受理服务机构入网的商户可通过接入数字人民币来完成如用户话费充值缴费等相关支付操作。 |
 
 支付能力之间的差异：
 
 * 基础支付与合单支付主要差异在于基础支付一次支付仅支持支付单个订单，合单支付一次支付可以支持平台类商户多个不同子商户的订单。
 * 基础支付及合单支付不涉及签约、支付并签约及签约代扣涉及用户及商户协议签订场景。
 * 支付并签约与签约代扣差异在于签约时是否需要完成支付操作。
-* 数字人民币支付开发准备与其它支付能力有所差异，完成[数字人民币接入准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay-preparations)即可根据接入场景接入开发。
+* 数字人民币支付开发准备与其它支付能力有所差异，完成[数字人民币接入准备](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-digital-cny-pay-preparations)即可根据接入场景接入开发。
 
 华为支付接入顺序如下：
 
 ![](./img/404175ae.png)
 
-[数字人民币支付](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay)接入顺序如下：
+[数字人民币支付](/docs/dev/app-dev/application-services/payment-kit-guide/payment-digital-cny-pay)接入顺序如下：
 
 ![](./img/2360af8d.png)
 
-通用收银台[混合支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-mix)接入顺序如下：
+通用收银台[混合支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-mix)接入顺序如下：
 
 ![](./img/17f981bc.png)
 
-通用收银台[纯外部支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-external)接入顺序如下：
+通用收银台[纯外部支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-external)接入顺序如下：
 
 ![](./img/afba29e6.png)
 
@@ -103,7 +103,7 @@ Payment Kit支持的支付能力如下：
 
 Payment Kit的能力只支持实物商品和服务（酒店服务、出行服务、充值缴费服务）的支付，暂不支持如电子虚拟人物形象，游戏中的关卡、货币及道具等虚拟商品的支付。
 
-虚拟商品的支付可接入[IAP应用内支付服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-introduction)。
+虚拟商品的支付可接入[IAP应用内支付服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-introduction)。
 
 ### 支持的设备
 

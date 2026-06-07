@@ -1,6 +1,6 @@
 ---
 title: "收货地址"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-shipping-address
+original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-shipping-address
 format: md
 ---
 
@@ -11,7 +11,7 @@ has.chooseAddress(Object object)
 
 获取用户收货地址。唤起用户编辑收货地址系统界面，并在编辑完成后返回用户选择的地址。
 
-**需要权限：** 在调用获取收货地址API前，需完成对应的权限申请，申请方式请参考[获取收货地址](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-choose-address)。
+**需要权限：** 在调用获取收货地址API前，需完成对应的权限申请，申请方式请参考[获取收货地址](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-choose-address)。
 
 **起始版本：** 1.0.0
 

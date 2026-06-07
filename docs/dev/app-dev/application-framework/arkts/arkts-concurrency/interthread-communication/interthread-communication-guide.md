@@ -1,13 +1,13 @@
 ---
 title: "线程间通信场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/interthread-communication-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide
 format: md
 ---
 
 
-* **[使用TaskPool执行独立的耗时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/independent-time-consuming-task)**
-* **[使用TaskPool执行多个耗时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-time-consuming-tasks)**
-* **[TaskPool任务与宿主线程通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-communicates-with-mainthread)**
-* **[Worker和宿主线程的即时消息通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-communicates-with-mainthread)**
-* **[Worker同步调用宿主线程的接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-invoke-mainthread-interface)**
-* **[多级Worker间高性能消息通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-postmessage-sendable)**
+* **[使用TaskPool执行独立的耗时任务](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/independent-time-consuming-task)**
+* **[使用TaskPool执行多个耗时任务](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/multi-time-consuming-tasks)**
+* **[TaskPool任务与宿主线程通信](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/taskpool-communicates-with-mainthread)**
+* **[Worker和宿主线程的即时消息通信](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/worker-communicates-with-mainthread)**
+* **[Worker同步调用宿主线程的接口](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/worker-invoke-mainthread-interface)**
+* **[多级Worker间高性能消息通信](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/worker-postmessage-sendable)**

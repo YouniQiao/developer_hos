@@ -1,7 +1,7 @@
 ---
 format: md
 title: "上传软件包时，提示”No app with the specified package name is found under the team.”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ide-app-release-1
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-ide-app-release/faqs-ide-app-release-1
 ---
 
 

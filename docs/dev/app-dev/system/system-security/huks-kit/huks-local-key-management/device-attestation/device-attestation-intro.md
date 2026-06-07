@@ -1,6 +1,6 @@
 ---
 title: "应用真实性证明简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-intro
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-intro
 format: md
 ---
 

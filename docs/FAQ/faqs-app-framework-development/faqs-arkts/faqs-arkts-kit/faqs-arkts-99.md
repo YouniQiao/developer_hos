@@ -1,6 +1,6 @@
 ---
 title: "如何通过AOP统计方法执行时间"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-99
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-99
 format: md
 ---
 

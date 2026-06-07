@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "录屏常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avscreencapture-faqs
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-faqs
 format: md
 ---
 

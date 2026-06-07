@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "打开应用功能跳转第三方应用失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-2
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions/scenario-fusion-faq-2
 format: md
 ---
 

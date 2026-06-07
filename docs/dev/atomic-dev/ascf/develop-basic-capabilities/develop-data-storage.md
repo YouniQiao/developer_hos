@@ -1,6 +1,6 @@
 ---
 title: "存储数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-data-storage
+original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-data-storage
 format: md
 ---
 
@@ -9,16 +9,16 @@ format: md
 
 | API | 描述 |
 | --- | --- |
-| [has.setStorage](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hassetstorage) | 将数据存储在本地缓存中指定的key中。 |
-| [has.setStorageSync](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hassetstoragesync) | has.setStorage的同步版本。 |
-| [has.getStorage](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasgetstorage) | 获取指定key的缓存。 |
-| [has.getStorageSync](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasgetstoragesync) | has.getStorage的同步版本。 |
-| [has.clearStorage](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasclearstorage) | 清空本地缓存。 |
-| [has.clearStorageSync](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasclearstoragesync) | has.clearStorage的同步版本。 |
-| [has.removeStorage](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasremovestorage) | 删除指定key的缓存。 |
-| [has.removeStorageSync](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasremovestoragesync) | has.removeStorage的同步版本。 |
-| [has.getStorageInfo](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasgetstorageinfo) | 获取缓存的信息。 |
-| [has.getStorageInfoSync](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage#hasgetstorageinfosync) | has.getStorageInfo的同步版本。 |
+| [has.setStorage](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hassetstorage) | 将数据存储在本地缓存中指定的key中。 |
+| [has.setStorageSync](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hassetstoragesync) | has.setStorage的同步版本。 |
+| [has.getStorage](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasgetstorage) | 获取指定key的缓存。 |
+| [has.getStorageSync](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasgetstoragesync) | has.getStorage的同步版本。 |
+| [has.clearStorage](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasclearstorage) | 清空本地缓存。 |
+| [has.clearStorageSync](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasclearstoragesync) | has.clearStorage的同步版本。 |
+| [has.removeStorage](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasremovestorage) | 删除指定key的缓存。 |
+| [has.removeStorageSync](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasremovestoragesync) | has.removeStorage的同步版本。 |
+| [has.getStorageInfo](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasgetstorageinfo) | 获取缓存的信息。 |
+| [has.getStorageInfoSync](/docs/dev/atomic-dev/ascf/apis/apis-data-storage#hasgetstorageinfosync) | has.getStorageInfo的同步版本。 |
 
 **示例：**
 

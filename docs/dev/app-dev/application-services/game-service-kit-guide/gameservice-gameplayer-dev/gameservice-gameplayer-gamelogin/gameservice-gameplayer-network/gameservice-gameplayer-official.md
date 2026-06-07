@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用游戏官方账号登录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-official
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-gameplayer-official
 format: md
 ---
 
@@ -49,7 +49,7 @@ format: md
 
 ## 开发步骤
 
-请先参考华为账号登录的[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-huawei#开发准备)和[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-huawei#开发步骤)完成华为账号登录的接入，再继续接入游戏官方账号登录。
+请先参考华为账号登录的[开发准备](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-gameplayer-huawei#开发准备)和[开发步骤](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-gameplayer-huawei#开发步骤)完成华为账号登录的接入，再继续接入游戏官方账号登录。
 
 ### 接口调用流程图
 

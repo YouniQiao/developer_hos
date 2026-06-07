@@ -1,11 +1,11 @@
 ---
 title: "JS Crash类问题案例"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-jscrash
+original_url: /docs/quality/scenario-stability-jscrash
 ---
 
 # JS Crash类问题案例
 
-本文将基于当前开发者所遇到的高频JS Crash故障进行案例介绍。开发者可阅读[应用崩溃类问题检测方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-runtime-crash-detection)了解系统检测JS Crash问题的原理和机制，阅读[JS Crash类问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-js-way)了解分析JS Crash问题的一般步骤。
+本文将基于当前开发者所遇到的高频JS Crash故障进行案例介绍。开发者可阅读[应用崩溃类问题检测方法](/docs/quality/stability-runtime-crash-detection)了解系统检测JS Crash问题的原理和机制，阅读[JS Crash类问题分析方法](/docs/quality/stability-app-crash-js-way)了解分析JS Crash问题的一般步骤。
 
 ## Cannot read property xxx of undefined类案例
 
@@ -260,7 +260,7 @@ struct Index {
 
 上面的例子是在执行的任务中创建了一个task任务，并且返回。但是这个createTask函数返回值task对象是无法被序列化的，从而导致了任务的执行失败。
 
-目前taskpool只支持的类型参见[序列化支持类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serializable-overview)。
+目前taskpool只支持的类型参见[序列化支持类型](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/serializable-overview)。
 
 ### 修复方法
 
@@ -570,9 +570,9 @@ Cannot get SourceMap info, dump raw stack:
 
    现网：
 
-   首先需要订阅资源泄漏事件，使用说明可参考：[订阅资源泄漏事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events-arkts)。
+   首先需要订阅资源泄漏事件，使用说明可参考：[订阅资源泄漏事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events-arkts)。
 
-   当应用在ArkTS中遇到内存OOM时，系统会自动执行Heapdump，生成Rawheap文件。Rawheap的获取方法可参考：[rawheap-translator工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawheap-translator)。
+   当应用在ArkTS中遇到内存OOM时，系统会自动执行Heapdump，生成Rawheap文件。Rawheap的获取方法可参考：[rawheap-translator工具](/docs/dev/app-dev/system/rawheap-translator)。
 
    本地：
 
@@ -668,11 +668,11 @@ ArkTS应用中出现OOM异常通常是由于内存泄漏、大对象分配、频
 
 ### 相关文档
 
-[资源泄漏事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events)
+[资源泄漏事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events)
 
-[JS内存泄漏问题检测方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-js-memleak-detection)
+[JS内存泄漏问题检测方法](/docs/quality/stability-js-memleak-detection)
 
-[资源泄漏类问题案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-leak)
+[资源泄漏类问题案例](/docs/quality/scenario-stability-leak)
 
 ## Can not get Prototype on non ECMA Object类案例
 

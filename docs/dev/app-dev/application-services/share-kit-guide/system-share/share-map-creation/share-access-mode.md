@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "宿主应用接入模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-access-mode
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-access-mode
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ## 全接模式示例代码
 
-[参考：手机应用发起系统分享开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-mobilephone-app-share#开发步骤)
+[参考：手机应用发起系统分享开发步骤](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-mobilephone-app-share#开发步骤)
 
 ## 半接模式示例代码片段
 

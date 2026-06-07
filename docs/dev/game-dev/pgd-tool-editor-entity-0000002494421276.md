@@ -1,6 +1,6 @@
 ---
 title: "PGD Entity组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-editor-entity-0000002494421276
+original_url: /docs/dev/game-dev/pgd-tool-editor-entity-0000002494421276
 format: md
 ---
 

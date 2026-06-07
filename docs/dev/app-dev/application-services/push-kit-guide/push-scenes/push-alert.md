@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "推送通知消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-alert
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert
 format: md
 ---
 
 
-* **[发送通知消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-alert)**
-* **[撤回通知消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-revoke-alert)**
+* **[发送通知消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-send-alert)**
+* **[撤回通知消息](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-revoke-alert)**

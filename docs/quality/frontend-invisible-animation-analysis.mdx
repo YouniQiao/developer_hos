@@ -1,12 +1,12 @@
 ---
 title: "前台不可见动效问题分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-frontend-invisible-animation-analysis
+original_url: /docs/quality/frontend-invisible-animation-analysis
 ---
 import MergedTable from '@site/src/components/MergedTable';
 
 # 前台不可见动效问题分析
 
-当开发者进行应用[功耗基础质量测试](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-power-basic-quality-test)或提交应用上架审核时，若遇到应用存在不可见动效的问题，可参考以下步骤进行分析。
+当开发者进行应用[功耗基础质量测试](/docs/quality/power-basic-quality-test)或提交应用上架审核时，若遇到应用存在不可见动效的问题，可参考以下步骤进行分析。
 
 ## 异常场景确认
 
@@ -105,7 +105,7 @@ hdc shell "hilog | grep 'Node skip'"
 
 开发者可以根据这一信息搜索[40912,1532]，找到Trace点信息H:MarshRSTransactionData cmdCount: 2, transactionFlag:[40912,1532]，该Trace点在此帧中有2个（cmdCount）绘制指令由应用下发给RS。可以继续通过关键字“H:FlushRenderTask”或“H:CustomNodeUpdate”查看具体的ArkUI节点信息。
 
-该故障类型优化建议，参见[不可见组件低功耗建议](https://developer.huawei.com/consumer/cn/doc/best-practices/low-power-consumption-suggestions)。
+该故障类型优化建议，参见[不可见组件低功耗建议](/docs/quality/low-power-consumption-suggestions)。
 
 ### 冗余动画
 
@@ -174,7 +174,7 @@ hdc shell "hidumper -s WindowManagerService -a '-w %windowId% -default -c'" > ar
 
 3、优化建议
 
-该故障类型的优化建议，请参考[Buffer低功耗优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-buffer-power-optimization)。
+该故障类型的优化建议，请参考[Buffer低功耗优化](/docs/quality/buffer-power-optimization)。
 
 ## 定位根因
 

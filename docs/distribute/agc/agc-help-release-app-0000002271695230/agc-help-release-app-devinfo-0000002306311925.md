@@ -1,6 +1,6 @@
 ---
 title: "配置开发者服务信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-devinfo-0000002306311925
+original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-devinfo-0000002306311925
 format: md
 ---
 

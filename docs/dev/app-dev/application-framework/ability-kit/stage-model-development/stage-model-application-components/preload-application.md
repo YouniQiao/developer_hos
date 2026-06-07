@@ -1,6 +1,6 @@
 ---
 title: "应用预加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preload-application
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/preload-application
 format: md
 ---
 
@@ -35,7 +35,7 @@ format: md
 
 1. 声明应用支持预加载到的阶段。
 
-   以windowStageCreated阶段为例，在[app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)中配置[appPreloadPhase](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)标签。
+   以windowStageCreated阶段为例，在[app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file)中配置[appPreloadPhase](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)标签。
 
    ```
    {
@@ -52,8 +52,8 @@ format: md
    ```
 2. 配置入口UIAbility（新建工程默认已自动配置）。
 
-   1. 以EntryAbility为例，在entry模块的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中，设置mainElement为EntryAbility，且EntryAbility的skills标签下面的entities中添加"entity.system.home"、actions中添加"ohos.want.action.home"。
-   2. 当[app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)中的[appPreloadPhase](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)配置为windowStageCreated时，需要在entry模块的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置EntryAbility的launchType标签为[singleton](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type#singleton启动模式)或[specified](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type#specified启动模式)。
+   1. 以EntryAbility为例，在entry模块的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中，设置mainElement为EntryAbility，且EntryAbility的skills标签下面的entities中添加"entity.system.home"、actions中添加"ohos.want.action.home"。
+   2. 当[app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file)中的[appPreloadPhase](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)配置为windowStageCreated时，需要在entry模块的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中配置EntryAbility的launchType标签为[singleton](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-launch-type#singleton启动模式)或[specified](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-launch-type#specified启动模式)。
 
    ```
    {

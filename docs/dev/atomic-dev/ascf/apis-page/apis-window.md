@@ -1,6 +1,6 @@
 ---
 title: "窗口"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-window
+original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-window
 format: md
 ---
 

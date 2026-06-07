@@ -1,6 +1,6 @@
 ---
 title: "在自绘编辑框中使用输入法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-inputmethod-in-custom-edit-box
+original_url: /docs/dev/app-dev/application-framework/ime-kit/use-inputmethod-in-custom-edit-box
 format: md
 ---
 

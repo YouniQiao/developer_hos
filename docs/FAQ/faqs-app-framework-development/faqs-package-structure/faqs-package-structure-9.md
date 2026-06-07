@@ -1,7 +1,7 @@
 ---
 format: md
 title: "业务模块HAR如何获取宿主HAP的数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-9
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-9
 ---
 
 

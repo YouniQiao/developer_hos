@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "生理周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-menstrualcycle
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-healthsequence/health-menstrualcycle
 format: md
 ---
 

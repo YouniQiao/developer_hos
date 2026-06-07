@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "附录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-appendix
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-appendix
 format: md
 ---
 
 
-* **[如何获取帮助](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-help)**
-* **[标志使用规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-logo-usage-regulations)**
+* **[如何获取帮助](/docs/dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-help)**
+* **[标志使用规范](/docs/dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-logo-usage-regulations)**

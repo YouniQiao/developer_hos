@@ -1,7 +1,7 @@
 ---
 title: 概述
 sidebar_label: 概述
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/wearable-overview-0000002197410498
+original_url: /docs/design/multi-device-design/wearable/overview
 format: md
 ---
 
@@ -29,11 +29,11 @@ format: md
 
 ## 设计应用体验
 
-* **使用系统控件：**利用系统提供的导航栏、按钮及导航点等标准控件，在保证良好基础体验的同时，减少设计和开发的工作量。必要时自定义控件的样式和大小以体现自己的品牌特征。请参阅控件-[概览](https://developer.huawei.com/consumer/cn/doc/design-guides/general_overview-0000001929599380)。
-* **使用合适的应用架构：**根据业务的特点采用合适的架构。例如，单一功能类应用采用页面横向或纵向平铺的平级架构，以确保主要功能在首屏展示。请参阅[应用架构](https://developer.huawei.com/consumer/cn/doc/design-guides/application-architecture-0000002202799801#section4983154519514)。
+* **使用系统控件：**利用系统提供的导航栏、按钮及导航点等标准控件，在保证良好基础体验的同时，减少设计和开发的工作量。必要时自定义控件的样式和大小以体现自己的品牌特征。请参阅控件-[概览](/docs/design/components/overview)。
+* **使用合适的应用架构：**根据业务的特点采用合适的架构。例如，单一功能类应用采用页面横向或纵向平铺的平级架构，以确保主要功能在首屏展示。请参阅[应用架构](/docs/design/multi-device-design/wearable/application-architecture#section4983154519514)。
 * **保证页面正常显示：**合理根据智能穿戴的屏幕形状进行界面设计，确保界面正常显示，不影响用户的使用。
-* **充分利用表冠和按键交互：**除屏幕手势交互外，表冠和按键交互能够帮助用户在需要盲操场景下快速完成特定操作。例如单击表冠快速开始/暂停运动等。请参阅[表冠](https://developer.huawei.com/consumer/cn/doc/design-guides/human-machine-interaction-0000002167648022#section02103311681)。
-* **考虑单手操作：**在特殊情况下，用户不得不单手对穿戴设备进行操作，应用在设计界面时，应考虑将核心功能适配焦点响应，使用户能够单手操作。请参阅[智慧手势](https://developer.huawei.com/consumer/cn/doc/design-guides/human-machine-interaction-0000002167648022#section239618496133)。
+* **充分利用表冠和按键交互：**除屏幕手势交互外，表冠和按键交互能够帮助用户在需要盲操场景下快速完成特定操作。例如单击表冠快速开始/暂停运动等。请参阅[表冠](/docs/design/multi-device-design/wearable/human-machine-interaction#section02103311681)。
+* **考虑单手操作：**在特殊情况下，用户不得不单手对穿戴设备进行操作，应用在设计界面时，应考虑将核心功能适配焦点响应，使用户能够单手操作。请参阅[智慧手势](/docs/design/multi-device-design/wearable/human-machine-interaction#section239618496133)。
 * **跨设备体验连续：**手机与手表在部分关联任务上存在延续性。任务进行时，界面需要实时引导用户移至相应配对设备进行相关操作。在整个任务延续过程中，多端侧状态的同步和显示要尽量保持一致或关联性。例如添加 eSIM 账号时，可通过手表向手机发送指令，打开界面。
 
 ## 支持系统特性
@@ -43,12 +43,12 @@ format: md
 
 ### 系统特性
 
-* [通知](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217)
-* [实况窗](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861)
-* [服务卡片](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-service-widget-0000002087671904)
+* [通知](/docs/design/system-features/features/notification)
+* [实况窗](/docs/design/system-features/features/live-view)
+* [服务卡片](/docs/design/system-features/features/service-widget)
 
 ### 符合HarmonyOS统一设计规范
 
-* **色彩：**智能穿戴根据穿戴设备应用的特殊性，对部分色彩如系统色进行调整适配。请参阅[色彩](https://developer.huawei.com/consumer/cn/doc/design-guides/color-0000001776857164)。
-* **应用图标：**智能穿戴内的应用图标基本遵循HarmonyOS 应用图标的设计规范，但对于具体绘制规格有所不同，如使用圆形图标。请参阅[应用图标](https://developer.huawei.com/consumer/cn/doc/design-guides/application-icon-0000001953444009)。
-* **系统图标：**智能穿戴内的系统图标基本遵循HarmonyOS 系统图标的设计规范，但在穿戴应用设计中，建议更多使用面性图标以提高小屏幕内容的识别度。请参阅[系统图标](https://developer.huawei.com/consumer/cn/doc/design-guides/system-icons-0000001929854962)。
+* **色彩：**智能穿戴根据穿戴设备应用的特殊性，对部分色彩如系统色进行调整适配。请参阅[色彩](/docs/design/general-design-basics/visual-design/color)。
+* **应用图标：**智能穿戴内的应用图标基本遵循HarmonyOS 应用图标的设计规范，但对于具体绘制规格有所不同，如使用圆形图标。请参阅[应用图标](/docs/design/general-design-basics/visual-design/app-icon)。
+* **系统图标：**智能穿戴内的系统图标基本遵循HarmonyOS 系统图标的设计规范，但在穿戴应用设计中，建议更多使用面性图标以提高小屏幕内容的识别度。请参阅[系统图标](/docs/design/general-design-basics/visual-design/harmonyos-symbol)。

@@ -1,6 +1,6 @@
 ---
 title: "Media Kit Dev C"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-dev-c
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

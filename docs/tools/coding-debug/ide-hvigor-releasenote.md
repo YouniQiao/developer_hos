@@ -1,7 +1,7 @@
 ---
 title: "版本说明"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-releasenote
+original_url: /docs/tools/coding-debug/ide-hvigor-releasenote
 format: md
 ---
 

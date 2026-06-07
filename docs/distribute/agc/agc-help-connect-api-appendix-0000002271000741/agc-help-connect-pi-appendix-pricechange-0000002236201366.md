@@ -1,6 +1,6 @@
 ---
 title: "价格换算规则"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-pi-appendix-pricechange-0000002236201366
+original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-pi-appendix-pricechange-0000002236201366
 format: md
 ---
 

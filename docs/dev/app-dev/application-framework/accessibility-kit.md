@@ -1,10 +1,10 @@
 ---
 title: "Accessibility Kit（无障碍服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibility-kit
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit
 format: md
 ---
 
 
-* **[Accessibility Kit 简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibilitykit-overview)**
-* **[提升应用的无障碍体验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibility-approve-experience)**
-* **[测试应用的无障碍功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-app-accessibility)**
+* **[Accessibility Kit 简介](/docs/dev/app-dev/application-framework/accessibility-kit/accessibilitykit-overview)**
+* **[提升应用的无障碍体验](/docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience)**
+* **[测试应用的无障碍功能](/docs/dev/app-dev/application-framework/test-app-accessibility)**

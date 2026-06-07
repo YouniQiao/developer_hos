@@ -1,6 +1,6 @@
 ---
 title: "开启超帧外插模式后运动物体边缘出现严重拖影现象，可能的原因是什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-2
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-rendering-faq/graphics-accelerate-faq-2
 format: md
 ---
 

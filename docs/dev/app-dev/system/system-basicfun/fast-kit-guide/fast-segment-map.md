@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用SegmentMap查询维护区间信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-segment-map
+original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-segment-map
 format: md
 ---
 

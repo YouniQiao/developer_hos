@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Windows X86模拟器使用过程中调整系统屏幕缩放比，模拟器显示异常"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-38
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-38
 ---
 
 

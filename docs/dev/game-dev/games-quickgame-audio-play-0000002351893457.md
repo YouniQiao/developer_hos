@@ -1,6 +1,6 @@
 ---
 title: "音频播放"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-audio-play-0000002351893457
+original_url: /docs/dev/game-dev/games-quickgame-audio-play-0000002351893457
 format: md
 ---
 

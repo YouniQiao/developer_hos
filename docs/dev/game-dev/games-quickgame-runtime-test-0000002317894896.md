@@ -1,6 +1,6 @@
 ---
 title: "测试快游戏"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-test-0000002317894896
+original_url: /docs/dev/game-dev/games-quickgame-runtime-test-0000002317894896
 has_merged_cells: true
 format: md
 ---
@@ -22,7 +22,7 @@ format: md
 | --- | --- | --- | --- |
 | 游戏登录 | 使用成年实名华为账号登录游戏。 | 可以正常登录，并展示华为登录欢迎栏，欢迎栏仅展示一次。 | - |
 | 打开已登录华为账号的快游戏。 | 屏幕顶部自动下拉显示展示欢迎语，之后慢慢消失。 |
-| 支付 | 检查应用内商品展示的价格、币种与实际拉起的华为收银台价格、币种。 | 展示的价格与实际拉起华为收银台的价格和币种保持一致。 | 若游戏需使用沙盒支付功能，请创建测试账号，详情请参见[沙盒测试](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-iap-public-0000002317894840)。 |
+| 支付 | 检查应用内商品展示的价格、币种与实际拉起的华为收银台价格、币种。 | 展示的价格与实际拉起华为收银台的价格和币种保持一致。 | 若游戏需使用沙盒支付功能，请创建测试账号，详情请参见[沙盒测试](/docs/dev/game-dev/games-quickgame-runtime-iap-public-0000002317894840)。 |
 | 检查createPurchaseIntent接口传入的商品ID、商品类型与在AppGallery Connect创建的商品ID、商品类型。 | 接口传入的商品ID、商品类型与AppGallery Connect保持一致。 |
 | 登录华为账号后进行游戏内支付。 | 支付成功，弹出支付成功订单页面，且用户收到已支付商品。 |
 | 支付成功后，在订单页面结束游戏进程（不点击“知道了”），再次进入游戏。 | 商品可以正常到账，没有掉单。 |

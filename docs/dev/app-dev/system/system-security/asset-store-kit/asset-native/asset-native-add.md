@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "新增关键资产(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-add
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-add
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 | ASSET\_TAG\_REQUIRE\_PASSWORD\_SET | 类型为bool。 | 可选 | 是否仅在设置了锁屏密码的情况下，可访问关键资产。为true时，表示仅在用户设置了锁屏密码的情况下，关键资产才允许被访问；为false时，表示无论用户是否设置锁屏密码，关键资产均允许被访问。默认值为false。 |
 | ASSET\_TAG\_AUTH\_TYPE | 类型为uint32\_t，取值范围详见[Asset\_AuthType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-asset-type-h#asset_authtype)。 | 可选 | 访问关键资产所需的用户认证类型，默认值为ASSET\_AUTH\_TYPE\_NONE，即访问关键资产前无需用户认证。 |
 | ASSET\_TAG\_SYNC\_TYPE | 类型为uint32\_t，取值范围详见[Asset\_SyncType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-asset-type-h#asset_synctype)。 | 可选 | 关键资产支持的同步类型，默认值为ASSET\_SYNC\_TYPE\_NEVER，即不允许同步该关键资产。 |
-| ASSET\_TAG\_IS\_PERSISTENT | 类型为bool。 | 可选 | 在应用卸载时是否需要保留关键资产。为true时表示应用卸载后，应用存储的关键资产将被保留；为false时表示应用卸载后，应用存储的关键资产将被删除。默认值为false。  **注意：** 设置此属性时，需[申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)ohos.permission.STORE\_PERSISTENT\_DATA。 |
+| ASSET\_TAG\_IS\_PERSISTENT | 类型为bool。 | 可选 | 在应用卸载时是否需要保留关键资产。为true时表示应用卸载后，应用存储的关键资产将被保留；为false时表示应用卸载后，应用存储的关键资产将被删除。默认值为false。  **注意：** 设置此属性时，需[申请权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)ohos.permission.STORE\_PERSISTENT\_DATA。 |
 | ASSET\_TAG\_DATA\_LABEL\_CRITICAL\_1 | 类型为uint8[]，长度为1-2048字节。 | 可选 | 关键资产附属信息，内容由业务自定义且有完整性保护。  **说明：** API12前长度为1-512字节。 |
 | ASSET\_TAG\_DATA\_LABEL\_CRITICAL\_2 | 类型为uint8[]，长度为1-2048字节。 | 可选 | 关键资产附属信息，内容由业务自定义且有完整性保护。  **说明：** API12前长度为1-512字节。 |
 | ASSET\_TAG\_DATA\_LABEL\_CRITICAL\_3 | 类型为uint8[]，长度为1-2048字节。 | 可选 | 关键资产附属信息，内容由业务自定义且有完整性保护。  **说明：** API12前长度为1-512字节。 |
@@ -56,7 +56,7 @@ format: md
 
 新增密码为demo\_pwd、别名为demo\_alias、附属信息为demo\_label的关键资产。用户首次解锁设备后，该关键资产可被访问。
 
-在指定群组中新增一条关键资产的示例代码详见[新增群组关键资产](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-group-access-control#新增群组关键资产)。
+在指定群组中新增一条关键资产的示例代码详见[新增群组关键资产](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-group-access-control#新增群组关键资产)。
 
 1. 在CMake脚本中链接相关动态库。
 

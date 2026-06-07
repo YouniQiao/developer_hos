@@ -1,6 +1,6 @@
 ---
 title: "QoS 开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/qos-guidelines
+original_url: /docs/dev/app-dev/system/qos-guidelines
 format: md
 ---
 

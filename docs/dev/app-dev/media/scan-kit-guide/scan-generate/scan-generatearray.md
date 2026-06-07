@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过字节数组生成码图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-generatearray
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-generate/scan-generatearray
 format: md
 ---
 

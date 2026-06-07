@@ -1,13 +1,13 @@
 ---
 title: "NDK开发ArkTS侧编码规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-ndk-arkts
+original_url: /docs/quality/stability-coding-standard-ndk-arkts
 ---
 
 # NDK开发ArkTS侧编码规范
 
 ArkTS通过引用编译好的so文件来调用native方法。为避免不规范引用导致的运行时异常和故障排查成本，开发者应按照本文的标准进行引用。
 
-NDK工程创建步骤及目录结构可参考：[创建NDK工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-with-ndk)。
+NDK工程创建步骤及目录结构可参考：[创建NDK工程](/docs/dev/ndk-dev/create-with-ndk)。
 
 ## import本模块的so
 

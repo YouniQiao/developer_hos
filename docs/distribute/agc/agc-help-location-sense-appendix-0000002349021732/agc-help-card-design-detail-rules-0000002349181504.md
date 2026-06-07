@@ -1,6 +1,6 @@
 ---
 title: "图文素材审核细则"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-card-design-detail-rules-0000002349181504
+original_url: /docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-card-design-detail-rules-0000002349181504
 format: md
 ---
 

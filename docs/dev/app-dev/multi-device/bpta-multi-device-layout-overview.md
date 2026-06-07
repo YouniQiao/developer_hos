@@ -1,7 +1,7 @@
 ---
 title: "布局概述"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-layout-overview
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-layout-overview
 format: md
 ---
 
@@ -11,8 +11,8 @@ format: md
 
 | 名称 | 简介 |
 | --- | --- |
-| 自适应布局 | 当外部容器大小发生变化时，元素可以**根据相对关系自动变化**以适应外部容器变化的布局能力。相对关系如占比、固定宽高比、显示优先级等。当前自适应布局能力有7种：[拉伸能力](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout#拉伸能力)、[均分能力](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout#均分能力)、[占比能力](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout#占比能力)、[缩放能力](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout#缩放能力)、[延伸能力](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout#延伸能力)、[隐藏能力](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout#隐藏能力)、[折行能力](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout#折行能力)。自适应布局能力可以实现界面显示随外部容器大小连续变化。 |
-| 响应式布局 | 当外部容器大小发生变化时，元素可以**根据断点、栅格或特定的特征（如屏幕方向、窗口宽高等）自动变化**以适应外部容器变化的布局能力。当前响应式布局能力有3种：[断点](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1532120147301)、[媒体查询](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1950102518311)、[栅格](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1061332817545)。响应式布局可实现界面随外部容器大小的不连续变化，通常在不同特征下界面显示会有较大差异。 |
+| 自适应布局 | 当外部容器大小发生变化时，元素可以**根据相对关系自动变化**以适应外部容器变化的布局能力。相对关系如占比、固定宽高比、显示优先级等。当前自适应布局能力有7种：[拉伸能力](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout#拉伸能力)、[均分能力](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout#均分能力)、[占比能力](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout#占比能力)、[缩放能力](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout#缩放能力)、[延伸能力](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout#延伸能力)、[隐藏能力](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout#隐藏能力)、[折行能力](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout#折行能力)。自适应布局能力可以实现界面显示随外部容器大小连续变化。 |
+| 响应式布局 | 当外部容器大小发生变化时，元素可以**根据断点、栅格或特定的特征（如屏幕方向、窗口宽高等）自动变化**以适应外部容器变化的布局能力。当前响应式布局能力有3种：[断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1532120147301)、[媒体查询](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1950102518311)、[栅格](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1061332817545)。响应式布局可实现界面随外部容器大小的不连续变化，通常在不同特征下界面显示会有较大差异。 |
 
 ![](./img/c1b91dbf.png)
 
@@ -43,4 +43,4 @@ format: md
   | Swiper | 轮播展示子组件的容器。 | 需配合断点使用，通过改变不同断点下的displayCount和indicator等属性，实现不同的布局效果。 |
   | Tabs | 使用页签控制内容切换的容器，每个页签对应一个内容视图。  需配合TabContent子组件使用。 | 需配合断点使用，通过改变不同断点下的vertical和barPosition等属性，实现不同的布局效果。 |
 
-本章节将介绍[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout)和[响应式布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)，同时结合实际，通过典型布局场景以及典型页面场景详细介绍两种布局能力的用法。
+本章节将介绍[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout)和[响应式布局](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)，同时结合实际，通过典型布局场景以及典型页面场景详细介绍两种布局能力的用法。

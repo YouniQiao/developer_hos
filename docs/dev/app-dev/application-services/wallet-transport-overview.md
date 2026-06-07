@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-overview
+original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-app-picker-pages/screentimeguard-app-picker-overview
 format: md
 ---
 

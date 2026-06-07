@@ -1,7 +1,7 @@
 ---
 title: "展示位创建"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/zhanshiweichuangjian-0000001132700049
+original_url: /docs/monetize/monetization/zhanshiweichuangjian-0000001132700049
 format: md
 ---
 

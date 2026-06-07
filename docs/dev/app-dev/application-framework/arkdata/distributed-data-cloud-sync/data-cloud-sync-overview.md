@@ -1,6 +1,6 @@
 ---
 title: "同应用端云数据同步概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-cloud-sync-overview
+original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-cloud-sync-overview
 format: md
 ---
 
@@ -45,6 +45,6 @@ format: md
 
 ## 约束限制
 
-* 端云同步功能依赖云服务，应用需要先完成云侧环境部署，才能使用端云同步功能。具体请见[端云数据同步云侧环境部署指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-sync-with-cloud)。
+* 端云同步功能依赖云服务，应用需要先完成云侧环境部署，才能使用端云同步功能。具体请见[端云数据同步云侧环境部署指导](/docs/dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-sync-with-cloud)。
 * 端云功能依赖网络，未连接网络或网络质量差的状况下，端云同步会失败。
 * 云侧配置更新后，要求端侧退出华为账号再重新登录，以便于获取最新的云侧配置。

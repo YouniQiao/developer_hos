@@ -1,6 +1,6 @@
 ---
 title: "如何修改状态栏字体颜色"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-118
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-118
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "应用集成「集成态hsp」的兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/app-compatibility-share-hsp
+original_url: /docs/design/app-compatibility/app-compatibility-share-hsp
 format: md
 ---
 
@@ -20,4 +20,4 @@ format: md
 
 ![](./img/fef07a9c.png) 
 
-除了上述SDK版本属性的规格， 在将多个hap/hsp打包成app包时，有一些额外的打包校验规则，可以参考[调试工具中的app打包指令](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-tool#app打包指令)。
+除了上述SDK版本属性的规格， 在将多个hap/hsp打包成app包时，有一些额外的打包校验规则，可以参考[调试工具中的app打包指令](/docs/dev/app-dev/system/packing-tool#app打包指令)。

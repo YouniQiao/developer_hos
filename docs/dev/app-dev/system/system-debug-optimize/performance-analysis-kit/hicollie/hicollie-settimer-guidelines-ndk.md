@@ -1,6 +1,6 @@
 ---
 title: "使用HiCollie监控函数执行时间超长问题（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hicollie-settimer-guidelines-ndk
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hicollie/hicollie-settimer-guidelines-ndk
 format: md
 ---
 
@@ -178,4 +178,4 @@ format: md
    .../testTag ... HiCollieTimerNdk CallBack
    ```
 
-   获取故障文件信息相关内容可参考[订阅任务执行超时事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-apphicollie-events-ndk) 订阅获取。
+   获取故障文件信息相关内容可参考[订阅任务执行超时事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-hicollie-events/hiappevent-watcher-apphicollie-events-ndk) 订阅获取。

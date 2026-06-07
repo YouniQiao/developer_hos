@@ -1,7 +1,7 @@
 ---
 format: md
 title: "设备ROM升级至5.0.0.31及以上版本，DevEco Studio连接设备不成功，查询不到设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-38
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-38
 ---
 
 

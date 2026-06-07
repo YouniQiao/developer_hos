@@ -1,7 +1,7 @@
 ---
 title: "使用LLDB调试命令"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-debug-native-lldb
+original_url: /docs/tools/coding-debug/ide-debug-native-lldb
 format: md
 ---
 

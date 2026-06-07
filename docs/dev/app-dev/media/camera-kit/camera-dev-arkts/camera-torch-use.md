@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "手电筒使用(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-torch-use
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-torch-use
 format: md
 ---
 
@@ -57,7 +57,7 @@ format: md
 
    ![](./img/18a9b14d.png)
 
-   在使用[getTorchMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#gettorchmode11)方法前，需要先注册监听手电筒的状态变化，请参考[状态监听](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-torch-use#状态监听)。
+   在使用[getTorchMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#gettorchmode11)方法前，需要先注册监听手电筒的状态变化，请参考[状态监听](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-torch-use#状态监听)。
 
    ```
    function setTorchModeSupported(cameraManager: camera.CameraManager, torchMode: camera.TorchMode) : void {

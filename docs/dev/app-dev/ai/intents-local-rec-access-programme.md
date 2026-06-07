@@ -1,6 +1,6 @@
 ---
 title: "接入方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec-access-programme
+original_url: /docs/dev/app-dev/ai/intents-local-rec-access-programme
 format: md
 ---
 
@@ -13,11 +13,11 @@ format: md
 
 ## 开通近场服务权限
 
-近场服务是华为软硬协同解决方案中的关键能力环节，旨在帮助商家触达更多HarmonyOS用户，并为这些用户提供更精准、更优质的服务。开通近场服务的步骤详情参考：[近场服务-申请开通权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-xiaoyi-create-formalstate-service-0000002349016144)。
+近场服务是华为软硬协同解决方案中的关键能力环节，旨在帮助商家触达更多HarmonyOS用户，并为这些用户提供更精准、更优质的服务。开通近场服务的步骤详情参考：[近场服务-申请开通权限](/docs/distribute/agc/agc-help-poi-apply-formalstate-service-0000002349016132/agc-help-xiaoyi-create-formalstate-service-0000002349016144)。
 
 ## 意图声明
 
-以“搜索旅游攻略”特性为例，开发者首先要注册“查看旅游攻略”（viewTravelGuides），其他意图见[各垂域意图Schema](https://developer.huawei.com/consumer/cn/doc/service/intents-schema-0000001901962713)。
+以“搜索旅游攻略”特性为例，开发者首先要注册“查看旅游攻略”（viewTravelGuides），其他意图见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)。
 
 开发者需要编辑对应的意图配置insight\_intent.json文件实现意图声明。insight\_intent.json文件需要放置在任意一个module下面的指定目录：src/main/resources/base/profile/insight\_intent.json，并且整个工程中只能存在一个insight\_intent.json文件。
 

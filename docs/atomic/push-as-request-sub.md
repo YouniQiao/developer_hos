@@ -1,6 +1,6 @@
 ---
 title: "发起基于账号的订阅请求"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-request-sub
+original_url: /docs/dev/atomic-dev/push-as-subscription/push-as-request-sub
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 一次性订阅消息弹窗中包含以下信息：
 
 * 您的元服务名称，告知用户当前发起订阅的主体。
-* 您想要发送的消息模板的名称，如上图中的“下单成功通知”、“待支付提醒”与“订单发货提醒”，详情见[选用订阅模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-noti#section880418143379)。
+* 您想要发送的消息模板的名称，如上图中的“下单成功通知”、“待支付提醒”与“订单发货提醒”，详情见[选用订阅模板](/docs/dev/atomic-dev/push-as-subscription/push-as-service-noti#section880418143379)。
 * 用户授权订阅按钮。
 
 其中用户授权订阅按钮分为“允许”和“不允许”：
@@ -41,7 +41,7 @@ format: md
 长期订阅消息弹窗中包含以下信息：
 
 * 您的元服务名称，告知用户当前发起订阅的主体。
-* 您想要发送的消息模板的名称，如上图中的“信用卡还款提醒”，详情见[选用订阅模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-noti#section880418143379)。
+* 您想要发送的消息模板的名称，如上图中的“信用卡还款提醒”，详情见[选用订阅模板](/docs/dev/atomic-dev/push-as-subscription/push-as-service-noti#section880418143379)。
 * 用户授权订阅按钮。
 
 其中用户授权订阅按钮分为“允许”和“不允许”：
@@ -51,7 +51,7 @@ format: md
 
 ## 开发指导
 
-1. 开始开发前，请先确保已完成[开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-prepare)中的配置，同时[开通服务通知并选用订阅模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-noti)。
+1. 开始开发前，请先确保已完成[开发准备](/docs/dev/atomic-dev/atomic-push-development/push-as-prepare)中的配置，同时[开通服务通知并选用订阅模板](/docs/dev/atomic-dev/push-as-subscription/push-as-service-noti)。
 2. 元服务调用[serviceNotification.requestSubscribeNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-servicenotification#section11384539111610)()方法发起消息订阅，示例如下：
 
    ```
@@ -120,7 +120,7 @@ format: md
      'BANNED'表示模板已被后台封禁。
 
      详情见[RequestResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-servicenotification#section185441313151716)。
-3. 当用户同意订阅（[ResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-servicenotification#section5698135841715)的值为0），元服务可基于账号推送消息，详情见[推送基于账号的订阅消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-send-sub-noti)。
+3. 当用户同意订阅（[ResultCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-servicenotification#section5698135841715)的值为0），元服务可基于账号推送消息，详情见[推送基于账号的订阅消息](/docs/dev/atomic-dev/push-as-subscription/push-as-send-sub-noti)。
 
 ## 示例代码
 

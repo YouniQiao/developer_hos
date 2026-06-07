@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "按需加载模块是否支持单独上架应用市场或单独更新？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-28
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-28
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "高亮显示PDF文档"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-highlight
+original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-highlight
 format: md
 ---
 

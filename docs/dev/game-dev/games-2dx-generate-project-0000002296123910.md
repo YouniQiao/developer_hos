@@ -1,6 +1,6 @@
 ---
 title: "生成HarmonyOS 5.0及以上工程"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-2dx-generate-project-0000002296123910
+original_url: /docs/dev/game-dev/games-2dx-generate-project-0000002296123910
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "文件定向包支持直客授权代理"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-authorization-0000002002585781
+original_url: /docs/monetize/promotion/bp-functions-target-authorization-0000002002585781
 format: md
 ---
 

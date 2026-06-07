@@ -1,6 +1,6 @@
 ---
 title: "使用Deep Linking实现应用间跳转"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-linking-startup
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/deep-linking-startup
 format: md
 ---
 
@@ -9,13 +9,13 @@ format: md
 
 ## 实现原理
 
-Deep Linking基于隐式Want匹配机制中的uri匹配来查询、拉起目标应用。隐式Want的uri匹配规则详见[uri匹配规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings#uri匹配规则)。
+Deep Linking基于隐式Want匹配机制中的uri匹配来查询、拉起目标应用。隐式Want的uri匹配规则详见[uri匹配规则](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings#uri匹配规则)。
 
 ## 目标应用操作指导
 
 ### 配置module.json5文件
 
-为了能够支持被其他应用访问，目标应用需要在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置[skills标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)。
+为了能够支持被其他应用访问，目标应用需要在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中配置[skills标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)。
 
 ![](./img/3c9c9b66.png)
 
@@ -158,7 +158,7 @@ struct DeepOpenLinkIndex {
 
 ### 使用startAbility实现应用跳转
 
-[startAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startability)接口是将应用链接放入Want中，通过调用[隐式Want匹配](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings#隐式want匹配原理)的方法触发应用跳转。
+[startAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startability)接口是将应用链接放入Want中，通过调用[隐式Want匹配](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings#隐式want匹配原理)的方法触发应用跳转。
 
 示例代码如下：
 

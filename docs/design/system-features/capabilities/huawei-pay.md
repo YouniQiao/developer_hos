@@ -1,7 +1,7 @@
 ---
 title: 华为支付
 sidebar_label: 华为支付
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/huaweipay-0000002054558905
+original_url: /docs/design/system-features/capabilities/huawei-pay
 format: md
 ---
 

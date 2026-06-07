@@ -1,7 +1,7 @@
 ---
 format: md
 title: "http请求的官方示例代码中的extraData是什么类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-9
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-9
 ---
 
 

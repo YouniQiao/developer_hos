@@ -1,7 +1,7 @@
 ---
 title: "智能扩展"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-expansion-0000002032846274
+original_url: /docs/monetize/promotion/bp-functions-target-expansion-0000002032846274
 format: md
 ---
 
@@ -17,4 +17,4 @@ format: md
 | <strong>算法模型数量</strong> | 1个：通用 | 12个：通用、电商、泛娱乐、金融、金融授信、旅游、汽车、视频、地产、短剧、游戏、阅读 |
 | <strong>选择人群</strong> | 一般人群 | 正样本人群：开发者的种子人群，一般指具有转化行为的价值用户。  负样本人群：与种子人群特征相反或相关性不大的人群。 |
 
-智能扩展定向包创建，请查看[在定向管理页中创建定向策略-智能扩展](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-strategy-0000001337229437)
+智能扩展定向包创建，请查看[在定向管理页中创建定向策略-智能扩展](/docs/monetize/promotion/bp-functions-target-strategy-0000001337229437)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用模拟器调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-emulator
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-emulator
 format: md
 ---
 
@@ -23,10 +23,10 @@ format: md
       如日志中查找不到调试凭据，请排查应用是否使用了错误的签名方式。当前Cloud Foundation Kit支持[关联注册应用进行自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section20943184413328)和[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)两种方式，请修改后再重试。
 
       ![](./img/2f9a6af7.png)
-2. 将获取的调试凭据注册到AGC云侧，具体可参见[注册模拟器调试凭据](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-credential-0000002415343501)。
+2. 将获取的调试凭据注册到AGC云侧，具体可参见[注册模拟器调试凭据](/docs/distribute/agc/agc-help-credential-0000002415263317/agc-help-add-credential-0000002415343501)。
 3. 调试凭据注册成功后，您即可使用模拟器调试应用/元服务。关于模拟器使用指导，请参见[使用模拟器运行应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-emulator)。
 
    如调用接口时返回的错误信息提示401签名校验失败或者403鉴权失败，可能原因如下：
 
-   * 调试凭据未注册。请先[注册模拟器调试凭据](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-credential-0000002415343501)。
+   * 调试凭据未注册。请先[注册模拟器调试凭据](/docs/distribute/agc/agc-help-credential-0000002415263317/agc-help-add-credential-0000002415343501)。
    * 注册调试凭据时绑定了错误的应用/元服务。请先删除该调试凭据，重新绑定正确的应用/元服务，等待30分钟后再进行调试。

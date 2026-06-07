@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "数字版权保护(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-arkts-dev-guide
+original_url: /docs/dev/app-dev/media/drm-kit/drm-arkts-dev-guide
 format: md
 ---
 

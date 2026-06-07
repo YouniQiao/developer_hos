@@ -1,6 +1,6 @@
 ---
 title: "组件内状态管理常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq-inner-component
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq/arkts-state-management-faq-inner-component
 format: md
 ---
 
@@ -79,7 +79,7 @@ struct Index {
 
 上面示例的渲染过程为：
 
-1. 创建第一个Text组件，触发this.message改变，[标脏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-glossary#标脏mark-dirty)第一个Text组件。
+1. 创建第一个Text组件，触发this.message改变，[标脏](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-glossary#标脏mark-dirty)第一个Text组件。
 2. 创建第二个Text组件，触发this.message改变，标脏两个Text组件。
 3. 下一帧到来时，刷新脏系统组件。
 4. 刷新第一个Text组件，触发this.message改变，不会标脏自己，仅标脏第二个Text组件。
@@ -154,7 +154,7 @@ struct Test {
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ParadigmStateManagement/entry/src/main/ets/pages/state/StateProblemUnregisterStateCallback.ets#L17-L68" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：StateProblemUnregisterStateCallback.ets</a></div>
 
 
-此外，也可以使用 LocalStorage在[自定义组件外改变状态变量](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage#自定义组件外改变状态变量)。
+此外，也可以使用 LocalStorage在[自定义组件外改变状态变量](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage#自定义组件外改变状态变量)。
 
 ## 使用a.b(this.object)形式调用，不会触发UI刷新
 
@@ -328,7 +328,7 @@ struct ConsumerChild {
 
 以上示例每次点击Button('change to self')，把相同的类实例赋值给一个Class类型的状态变量，会触发刷新并输出this.dataObj.name change: a日志。这是因为当再次赋值list[0]时，dataObjFromList已经是Proxy类型，而list[0]是Object类型，因此判断两者不相等，会触发赋值和刷新。
 
-为了避免这种不必要的赋值和刷新，可以通过用@Observed装饰类，或者使用[UIUtils.getTarget()](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-gettarget)获取原始对象，提前进行新旧值的判断，如果相同则不执行赋值。
+为了避免这种不必要的赋值和刷新，可以通过用@Observed装饰类，或者使用[UIUtils.getTarget()](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-gettarget)获取原始对象，提前进行新旧值的判断，如果相同则不执行赋值。
 
 方法一：增加@Observed
 
@@ -384,7 +384,7 @@ struct ConsumerChild {
 
 以上示例，给对应的类增加了@Observed装饰器后，list[0]已经是Proxy类型了，这样再次赋值时，相同的对象，就不会触发刷新。
 
-方法二：使用[UIUtils.getTarget()](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-gettarget)获取原始对象
+方法二：使用[UIUtils.getTarget()](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-gettarget)获取原始对象
 
 ```
 import { UIUtils } from '@kit.ArkUI';
@@ -474,7 +474,7 @@ struct Index {
 
 以上示例每次点击Button('change to self')，把相同的Array类型常量赋值给一个Array类型的状态变量，都会触发刷新。这是因为当再次赋值list[0]时，dataObjFromList已经是Proxy类型，而list[0]是Array类型。由于类型不相等，会触发赋值和刷新。
 
-为了避免这种不必要的赋值和刷新，可以使用[UIUtils.getTarget()](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-gettarget)获取原始对象提前进行新旧值的判断，当两者相同时不执行赋值。
+为了避免这种不必要的赋值和刷新，可以使用[UIUtils.getTarget()](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-gettarget)获取原始对象提前进行新旧值的判断，当两者相同时不执行赋值。
 
 使用UIUtils.getTarget()方法示例。
 
@@ -514,7 +514,7 @@ struct Index {
 
 ## 子组件无需修改状态变量时，使用@Prop导致不必要的深拷贝
 
-在应用开发中，父组件常向子组件传值。如果子组件不需要修改该状态变量，子组件使用[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)装饰器会增加组件创建时间并影响性能，此时建议改用[@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)。
+在应用开发中，父组件常向子组件传值。如果子组件不需要修改该状态变量，子组件使用[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)装饰器会增加组件创建时间并影响性能，此时建议改用[@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)。
 
 【反例】
 
@@ -823,7 +823,7 @@ struct Index {
 
 在应用开发中，应尽量减少对状态变量的直接赋值，通过临时变量完成数据计算操作。
 
-状态变量发生变化时，ArkUI会查询依赖该状态变量的组件并执行该组件的更新方法，完成组件渲染。通过使用临时变量的计算代替直接操作状态变量，可以使ArkUI仅在最后一次状态变量变更时查询并渲染组件，减少不必要的操作，从而提高应用性能。状态变量行为可参考[@State装饰器：组件内状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)。
+状态变量发生变化时，ArkUI会查询依赖该状态变量的组件并执行该组件的更新方法，完成组件渲染。通过使用临时变量的计算代替直接操作状态变量，可以使ArkUI仅在最后一次状态变量变更时查询并渲染组件，减少不必要的操作，从而提高应用性能。状态变量行为可参考[@State装饰器：组件内状态](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)。
 
 【反例】
 
@@ -870,7 +870,7 @@ struct Index {
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/StateManagement/entry/src/main/ets/pages/CalculationDirectState.ets#L16-L53" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：CalculationDirectState.ets</a></div>
 
 
-直接操作状态变量，三次触发计算函数，运行[耗时](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler#trace调试能力)结果如下：
+直接操作状态变量，三次触发计算函数，运行[耗时](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-inspector-profiler#trace调试能力)结果如下：
 
 ![](./img/2ca2ee49.png)
 
@@ -934,7 +934,7 @@ struct Index {
 
 ## 使用LazyForEach的重建机制刷新UI导致性能下降
 
-开发过程中通常会将[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)和状态变量结合起来使用。
+开发过程中通常会将[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)和状态变量结合起来使用。
 
 ```
 import { hilog } from '@kit.PerformanceAnalysisKit';
@@ -1238,11 +1238,11 @@ struct ChildComponent {
 
 可以观察到UI能够正常刷新，图片没有“闪烁”，且没有输出日志信息，说明没有对Text组件和Image组件进行重建。
 
-这是因为使用自定义组件之后，可以通过@Observed和@ObjectLink配合去直接更改自定义组件内的状态变量实现刷新，而不需要利用LazyForEach进行重建。使用[@Track装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-track)分别装饰StringData类型中的message和imgSrc属性可以使更新范围进一步缩小到指定的Text组件。
+这是因为使用自定义组件之后，可以通过@Observed和@ObjectLink配合去直接更改自定义组件内的状态变量实现刷新，而不需要利用LazyForEach进行重建。使用[@Track装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-data-object-state-management/arkts-track)分别装饰StringData类型中的message和imgSrc属性可以使更新范围进一步缩小到指定的Text组件。
 
 ## ForEach和对象数组结合使用导致UI不刷新
 
-开发过程中经常会使用对象数组和[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)结合起来使用，但是写法不当的话会出现UI不刷新的情况。
+开发过程中经常会使用对象数组和[ForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)结合起来使用，但是写法不当的话会出现UI不刷新的情况。
 
 ```
 import { hilog } from '@kit.PerformanceAnalysisKit';

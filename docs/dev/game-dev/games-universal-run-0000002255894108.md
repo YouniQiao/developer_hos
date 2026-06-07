@@ -1,6 +1,6 @@
 ---
 title: "运行调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-universal-run-0000002255894108
+original_url: /docs/dev/game-dev/games-universal-run-0000002255894108
 format: md
 ---
 

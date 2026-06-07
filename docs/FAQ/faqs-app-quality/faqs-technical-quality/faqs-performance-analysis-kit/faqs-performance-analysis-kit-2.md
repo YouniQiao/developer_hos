@@ -1,7 +1,7 @@
 ---
 format: md
 title: "hilog日志如何设置为只打印当前应用的日志"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-2
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-2
 ---
 
 

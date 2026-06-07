@@ -1,6 +1,6 @@
 ---
 title: "将pixelFormat设置为nv21或者nv12时抛出错误码62980096怎么处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-17
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-17
 format: md
 ---
 

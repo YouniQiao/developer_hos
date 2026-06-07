@@ -1,23 +1,23 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "（可选）特定场景配置操作"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-product-configuration
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-product-configuration
 format: md
 ---
 
 
-如涉及以下场景，需提前完成相关产品的开通或配置操作。如不涉及，请直接跳转[下一章节](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-config-agc)。
+如涉及以下场景，需提前完成相关产品的开通或配置操作。如不涉及，请直接跳转[下一章节](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-agc)。
 
 ## 场景一：产品开通操作
 
-部分支付场景接入涉及产品开通，未开通产品直接接入，商户请求华为支付开放的API接口时可能会导致“商户未找到对应的产品示例”、“不支持的操作”等异常响应。开通产品需商户侧与华为支付侧沟通（合作咨询可[点击此处](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-service-support)）后申请开通对应产品。
+部分支付场景接入涉及产品开通，未开通产品直接接入，商户请求华为支付开放的API接口时可能会导致“商户未找到对应的产品示例”、“不支持的操作”等异常响应。开通产品需商户侧与华为支付侧沟通（合作咨询可[点击此处](/docs/dev/app-dev/application-services/payment-kit-guide/payment-service-support)）后申请开通对应产品。
 
 涉及产品开通的支付场景如下：
 
-* [平台类商户合单支付场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-partner-combined)
-* [支付并签约场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign)
-* [签约代扣场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-withhold-process)
-* [通用收银台支付相关场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction)
+* [平台类商户合单支付场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-partner-combined)
+* [支付并签约场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-pay-and-sign)
+* [签约代扣场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-withhold-process)
+* [通用收银台支付相关场景](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction)
 
 涉及商户：直连商户、服务商、平台类商户
 
@@ -51,7 +51,7 @@ format: md
 
 ## 场景五：涉及账单分账
 
-商户如需对订单进行分账操作，可通过[直连商户预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-prepay)或[平台类商户/服务商预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-agent-prepay)接口中allocationType字段实现，使用该字段前需商户侧与华为支付侧沟通（合作咨询可[点击此处](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-service-support)）后申请开通并配置分账能力。
+商户如需对订单进行分账操作，可通过[直连商户预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-prepay)或[平台类商户/服务商预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-agent-prepay)接口中allocationType字段实现，使用该字段前需商户侧与华为支付侧沟通（合作咨询可[点击此处](/docs/dev/app-dev/application-services/payment-kit-guide/payment-service-support)）后申请开通并配置分账能力。
 
 分账相关操作参见[分账交易管理](https://developer.huawei.com/consumer/cn/doc/pay-docs/hwzf-fenzhangjiaoyi-0000001723142294)。
 

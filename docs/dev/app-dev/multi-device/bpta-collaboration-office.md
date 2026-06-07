@@ -1,7 +1,7 @@
 ---
 title: "办公编辑全场景协同最佳实践"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-collaboration-office
+original_url: /docs/dev/app-dev/multi-device/bpta-collaboration-office
 format: md
 ---
 
@@ -37,14 +37,14 @@ format: md
 | 插入其他设备图文 | 跨设备拖拽 | 1、用户使用两台/多台设备，均打开键鼠穿越，并链接鼠标。  2、拖拽图文到另一台设备的应用窗口。  3、图文正常落入。 |  |
 | 切换设备继续编辑 | 应用接续 | 1、应用在源端设备打开，想切换到对端设备继续编辑。  2、点击对端设备docker栏应用图标。  3、对端设备正常打开文档。 |  |
 | 分享协作 | 碰一碰邀请协同 | 1、用户A打开应用。  2、A的设备和B的设备之间相碰。  3、用户B的设备打开文档。 |  |
-| 分享协作 | 隔空传送邀请协同 | 1、用户A打开应用。  2、用户A做隔空传送手势到用户B的设备，手势见[场景介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-overview#场景介绍)。  3、用户B的设备打开文档。 |  |
+| 分享协作 | 隔空传送邀请协同 | 1、用户A打开应用。  2、用户A做隔空传送手势到用户B的设备，手势见[场景介绍](/docs/dev/app-dev/application-services/gestures-share-overview#场景介绍)。  3、用户B的设备打开文档。 |  |
 
 ###使用限制
 
 |  | 特性 | 设备版本 | 设备类型（垂域常见设备手机、平板、电脑） | 双端登录同一华为账号 | 双端打开WLAN 和蓝牙开关 | 设置配置 | 其他限制 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 插入其他设备图文 | 跨设备互通插入图片 | HarmonyOS NEXT Developer Preview0以上 | * 本端设备：平板或电脑设备。 * 远端设备：具有相机能力的手机或平板设备。 | √ | √（条件允许时，建议双端设备接入同一个局域网，可提升唤醒相机的速度。） | 设置中开启“多设备协同 > **跨设备互通**”功能 | 电脑设备可以调用平板和手机，平板可以调用手机，同类型设备不可调用。 |
-| 碰一碰文件/图片插入 | 手机和pc均6.0及以上，手机nova畅想系列不支持 | * 发起端设备：手机或折叠手机直板态 * 接收端设备：电脑设备 | √ | × | 双端在设置中开启“多设备协同 > 华为分享 > 更多华为分享设置 > **启用华为分享服务**”功能 | * 需要电脑打开应用窗口 * 对碰一碰的角度、手机壳厚度限制见[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-pc-phones-overview#使用约束)。 |
+| 碰一碰文件/图片插入 | 手机和pc均6.0及以上，手机nova畅想系列不支持 | * 发起端设备：手机或折叠手机直板态 * 接收端设备：电脑设备 | √ | × | 双端在设置中开启“多设备协同 > 华为分享 > 更多华为分享设置 > **启用华为分享服务**”功能 | * 需要电脑打开应用窗口 * 对碰一碰的角度、手机壳厚度限制见[使用约束](/docs/dev/app-dev/application-services/knock-share-pc-phones-overview#使用约束)。 |
 | 跨设备剪贴板 | HarmonyOS NEXT Developer Preview0及以上 | 手机、平板、电脑 | √ | √ | 双端在设置中开启“多设备协同 > **跨设备剪贴板**”功能 | / |
 | 跨设备拖拽 | HarmonyOS NEXT Developer Preview0 | 必须有电脑设备接入，或者部分支持PC模式的平板设备接入 | √ | √ | 双端在设置中开启“多设备协同 > **键鼠穿越**”功能 | / |
 | 切换设备继续编辑 | 应用接续 | HarmonyOS NEXT Developer Preview0以上 | 手机、平板、电脑 | √ | √ | 双端在设置中开启“多设备协同 > **接续**”功能 | / |
@@ -68,7 +68,7 @@ format: md
 **开发步骤**
 
 1. web页面同层渲染。
-   1. 在Web页面中标记需要同层渲染的HTML标签，在本案例中，使用object标签进行渲染，也可选择embed标签，可参考[Web网页的同层渲染标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-same-layer#web网页的同层渲染标签)。
+   1. 在Web页面中标记需要同层渲染的HTML标签，在本案例中，使用object标签进行渲染，也可选择embed标签，可参考[Web网页的同层渲染标签](/docs/dev/app-dev/application-framework/arkweb/web-same-layer#web网页的同层渲染标签)。
 
       ```
       <object type="test" id="crossDeviceEmbed" class="crossDevice-btn" title="Cross-Device Share"></object>
@@ -90,7 +90,7 @@ format: md
 
    3. 创建自定义组件，该ArkTS组件将会被渲染进Web页面中。
 
-      创建[Component](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-component)，封装Button按钮，并为按钮增加[onClick()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick12)点击事件以响应用户手势，通过[bindContextMenu()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12)绑定菜单，第一个参数为显隐控制，响应点击事件。
+      创建[Component](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-component)，封装Button按钮，并为按钮增加[onClick()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick12)点击事件以响应用户手势，通过[bindContextMenu()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-menu#bindcontextmenu12)绑定菜单，第一个参数为显隐控制，响应点击事件。
 
       ```
       @Component
@@ -121,7 +121,7 @@ format: md
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/OnlineEditorCollaboration/blob/master/entry/src/main/ets/viewmodel/EditViewModel.ets#L434-L487" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EditViewModel.ets</a></div>
 
 
-      将[Component](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-component)封装为[Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)，以便后续调用。
+      将[Component](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-component)封装为[Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)，以便后续调用。
 
       ```
       /**
@@ -912,7 +912,7 @@ format: md
 
    ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/bf/v3/A7LiXPjRQ0igNE1qswmPVg/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074211Z&HW-CC-Expire=86400&HW-CC-Sign=AD9A0B066720F14CC4C7ADB45C55587A8BB0F6785CB75D5ECEEE5D84AEB7B5D1)
 
-   若应用需要接续的不同设备存在于多个hap打包中，可参考[支持同应用中不同Ability跨端迁移](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section1082952515)进行配置，以支持不同hap包之间的应用接续。
+   若应用需要接续的不同设备存在于多个hap打包中，可参考[支持同应用中不同Ability跨端迁移](/docs/dev/app-dev/multi-device/bpta-continue-cast#section1082952515)进行配置，以支持不同hap包之间的应用接续。
 
    ```
    {
@@ -937,7 +937,7 @@ format: md
 
    ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/cb/v3/wAbbsXpbRrWCTZxM77y9Dg/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074211Z&HW-CC-Expire=86400&HW-CC-Sign=20A81426BF9ECD915C12F2CCD98909FD15497E35551736AB065B50CBF929B5A0)
 
-   若需要接续的数据大于100KB或需要文件接续时，[使用分布式数据对象迁移数据](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-data#section1842122135815)。
+   若需要接续的数据大于100KB或需要文件接续时，[使用分布式数据对象迁移数据](/docs/dev/app-dev/multi-device/bpta-continue-data#section1842122135815)。
 
    ```
    onContinue(wantParam: Record<string, Object>): AbilityConstant.OnContinueResult |
@@ -1036,7 +1036,7 @@ format: md
 
 **开发步骤**
 
-1. 配置App Linking服务。App Linking的配置和使用开发者可以参考[使用App Linking实现应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)。
+1. 配置App Linking服务。App Linking的配置和使用开发者可以参考[使用App Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)。
 
    ```
    {
@@ -1235,9 +1235,9 @@ format: md
    
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/OnlineEditorCollaboration/blob/master/entry/src/main/ets/entryability/EntryAbility.ets#L202-L214" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryAbility.ets</a></div>
 
-5. （对端未安装应用）为提升用户未安装应用时的体验，可配置[通过直达应用市场能力跳转至应用市场下载详情页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag)功能，引导用户下载安装应用。配置完成后，当对端收到源端分享的App Linking链接时，若设备未安装目标应用，系统将直接跳转至应用市场的应用详情页，支持一键下载安装。
+5. （对端未安装应用）为提升用户未安装应用时的体验，可配置[通过直达应用市场能力跳转至应用市场下载详情页](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag)功能，引导用户下载安装应用。配置完成后，当对端收到源端分享的App Linking链接时，若设备未安装目标应用，系统将直接跳转至应用市场的应用详情页，支持一键下载安装。
 
-   同时，需要实现[通过延迟链接跳转至应用详情页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)功能，确保安装后首次启动可直达内容。安装完应用之后，开发者可以在用户首次打开应用时，使用延迟链接，直接跳转到视频播放页面，这一流程不仅优化了用户体验，还有助于提升链接的转化率。
+   同时，需要实现[通过延迟链接跳转至应用详情页](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)功能，确保安装后首次启动可直达内容。安装完应用之后，开发者可以在用户首次打开应用时，使用延迟链接，直接跳转到视频播放页面，这一流程不仅优化了用户体验，还有助于提升链接的转化率。
 
 ###隔空传送邀请协同
 

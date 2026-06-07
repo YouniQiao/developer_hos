@@ -1,6 +1,6 @@
 ---
 title: "GPS资源合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-gps-use
+original_url: /docs/quality/reasonable-gps-use
 ---
 
 # GPS资源合理使用

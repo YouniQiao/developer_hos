@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS是否支持类似Java的共享内存模型进行多线程开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-37
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-37
 ---
 
 
@@ -11,4 +11,4 @@ ArkTS采用Actor并发模型，线程间内存隔离，目前仅支持SharedArra
 
 **参考链接**
 
-[多线程并发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview)
+[多线程并发概述](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/multi-thread-concurrency-overview)

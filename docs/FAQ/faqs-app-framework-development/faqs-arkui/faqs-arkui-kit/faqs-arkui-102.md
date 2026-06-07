@@ -1,7 +1,7 @@
 ---
 format: md
 title: "通过$r访问应用资源是否支持嵌套形式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-102
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-102
 ---
 
 

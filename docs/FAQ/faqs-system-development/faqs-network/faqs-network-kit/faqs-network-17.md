@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Image组件加载网络图片，PixelMap与直接访问url有什么区别"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-17
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-17
 ---
 
 

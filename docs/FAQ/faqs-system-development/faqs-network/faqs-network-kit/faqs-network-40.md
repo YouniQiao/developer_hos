@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在ArkTS中，HTTP请求头中header参数中的key是否区分大小写"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-40
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-40
 ---
 
 

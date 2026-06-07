@@ -1,6 +1,6 @@
 ---
 title: "升级到按量付费档套餐"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-upgrade-plan-0000002242804052
+original_url: /docs/distribute/agc/agc-help-service-price-0000002247180512/agc-help-upgrade-plan-0000002242804052
 format: md
 ---
 
@@ -33,6 +33,6 @@ format: md
 
    ![](../img/agc-help-upgrade-plan-0000002242804052_4.png)
 
-   * 您超额使用的费用将自动从您的账户余额中扣除，请保证您的账户余额充足。为防止您的账户余额不足而导致扣款失败，您可以[设置账户余额不足提醒](https://developer.huawei.com/consumer/cn/doc/app/agc-help-set-balance-notify-0000002247531780)。
-   * 升级到按量付费档套餐后，建议您尽快前往“账户中心 > 费用 > 消费提醒”[设置消费提醒](https://developer.huawei.com/consumer/cn/doc/app/agc-help-set-spending-notify-0000002242112054)，以便您及时了解当前的消费情况，避免意外账单费用。
-   * 升级到按量付费档套餐后，如果您的账户内有优惠券，每月将优先使用优惠券抵扣费用。费用超出优惠券金额时，则需要您付费使用。如需查看账户内的优惠券详情，请参见[管理优惠券](https://developer.huawei.com/consumer/cn/doc/app/agc-help-coupon-0000002242112062)。
+   * 您超额使用的费用将自动从您的账户余额中扣除，请保证您的账户余额充足。为防止您的账户余额不足而导致扣款失败，您可以[设置账户余额不足提醒](/docs/distribute/agc/agc-help-account-0000002270829385/agc-help-set-balance-notify-0000002247531780)。
+   * 升级到按量付费档套餐后，建议您尽快前往“账户中心 > 费用 > 消费提醒”[设置消费提醒](/docs/distribute/agc/agc-help-account-0000002270829385/agc-help-set-spending-notify-0000002242112054)，以便您及时了解当前的消费情况，避免意外账单费用。
+   * 升级到按量付费档套餐后，如果您的账户内有优惠券，每月将优先使用优惠券抵扣费用。费用超出优惠券金额时，则需要您付费使用。如需查看账户内的优惠券详情，请参见[管理优惠券](/docs/distribute/agc/agc-help-account-0000002270829385/agc-help-coupon-0000002242112062)。

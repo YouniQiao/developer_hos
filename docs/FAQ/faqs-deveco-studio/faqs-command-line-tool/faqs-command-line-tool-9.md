@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何查看项目中har版本冲突"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-9
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-9
 ---
 
 

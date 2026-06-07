@@ -1,6 +1,6 @@
 ---
 title: "3D音效"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-spatialsound-harmonyos-0000002393661685
+original_url: /docs/dev/game-dev/games-gamemme-spatialsound-harmonyos-0000002393661685
 format: md
 ---
 
@@ -13,9 +13,9 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体基础SDK、实时语音和3D音效模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_li16904125719267)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
-* 您已[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
+* 您已[集成游戏多媒体基础SDK、实时语音和3D音效模块](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_li16904125719267)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
+* 您已[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
 
 ## 开启/关闭3D音效
 

@@ -1,7 +1,7 @@
 ---
 title: "变量动画&lt;VariableAnimation&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-2d-variableanimation-0000002471395144
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-variableanimation-0000002471395144
 format: md
 ---
 

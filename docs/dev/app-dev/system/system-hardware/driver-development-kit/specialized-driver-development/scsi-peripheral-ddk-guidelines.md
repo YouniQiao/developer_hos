@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发使用SCSI协议的设备驱动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scsi-peripheral-ddk-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/scsi-peripheral-ddk-guidelines
 format: md
 ---
 
@@ -57,7 +57,7 @@ ScsiPeripheralDDK支持SPC（SCSI Primary Commands）、SBC（SCSI Block Command
 
 ## 环境搭建
 
-请参考[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/environmental-preparation)完成开发前的准备工作。
+请参考[环境准备](/docs/dev/app-dev/system/system-hardware/driver-development-kit/environmental-preparation)完成开发前的准备工作。
 
 ## 开发指导
 

@@ -1,7 +1,7 @@
 ---
 title: "新建素材库内容"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-material-library-create-0000001348966060
+original_url: /docs/monetize/promotion/bp-functions-material-library-create-0000001348966060
 format: md
 ---
 

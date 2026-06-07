@@ -1,6 +1,6 @@
 ---
 title: "使用网络防火墙"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-netfirewall
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-netfirewall
 format: md
 ---
 

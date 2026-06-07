@@ -1,6 +1,6 @@
 ---
 title: "C#（Native）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-record-play-audio-msg-csharp-native-0000002359707070
+original_url: /docs/dev/game-dev/games-gamemme-record-play-audio-msg-csharp-native-0000002359707070
 format: md
 ---
 
@@ -11,8 +11,8 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体基础SDK和语音消息模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
+* 您已[集成游戏多媒体基础SDK和语音消息模块](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
 
 ## 录制语音消息
 
@@ -108,7 +108,7 @@ format: md
 
 ## 发送语音消息
 
-语音消息文件上传完成后，会生成一个语音消息文件ID，可通过IM通道发送文件ID给其他玩家来发送语音消息。游戏多媒体SDK的实时信令功能提供了消息发送通道，语音消息也可以通过该通道完成文件ID传递，具体实现请参见[实时信令](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rtm-overview-0000002338719289)。
+语音消息文件上传完成后，会生成一个语音消息文件ID，可通过IM通道发送文件ID给其他玩家来发送语音消息。游戏多媒体SDK的实时信令功能提供了消息发送通道，语音消息也可以通过该通道完成文件ID传递，具体实现请参见[实时信令](/docs/dev/game-dev/games-gamemme-rtm-overview-0000002338719289)。
 
 ## 播放语音消息
 

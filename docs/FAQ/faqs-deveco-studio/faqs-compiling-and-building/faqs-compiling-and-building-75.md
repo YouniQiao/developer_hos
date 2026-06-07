@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决构建流水线提示Couldn't find hvigor/hvigor-wrapper.js的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-75
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-75
 ---
 
 

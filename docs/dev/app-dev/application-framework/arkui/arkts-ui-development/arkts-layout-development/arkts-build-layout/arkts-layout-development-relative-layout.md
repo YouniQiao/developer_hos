@@ -1,6 +1,6 @@
 ---
 title: "相对布局 (RelativeContainer)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-relative-layout
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout/arkts-layout-development-relative-layout
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "设置附带横滑的列表样式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-set-hds-slide-horizon-listitem
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-list-item-card/ui-design-set-hds-slide-horizon-listitem
 format: md
 ---
 

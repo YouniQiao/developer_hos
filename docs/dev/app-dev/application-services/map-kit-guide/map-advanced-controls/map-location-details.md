@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "地点详情展示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-details
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-details
 format: md
 ---
 

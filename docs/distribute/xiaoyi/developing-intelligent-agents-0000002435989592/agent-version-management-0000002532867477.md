@@ -1,7 +1,7 @@
 ---
 title: "智能体版本管理"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/agent-version-management-0000002532867477
+original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/agent-version-management-0000002532867477
 format: md
 ---
 

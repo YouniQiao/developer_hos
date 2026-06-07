@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "游戏因未实现防沉迷提醒提审被拒，应该如何解决"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-8
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-8
 format: md
 ---
 

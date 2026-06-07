@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "深度估计介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-depth-conversion
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-depth/arengine-get-depth-conversion
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "基于三方框架（uni-app，Taro等）编译为ASCF范式"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/compile-ascf-paradigm
+original_url: /docs/dev/atomic-dev/ascf/use-ide/compile-ascf-paradigm
 format: md
 ---
 
@@ -60,7 +60,7 @@ Taro从3.6.38以上以及4.X版本开始支持编译为ASCF元服务。
 
 ![](./img/a3e3cc81.png)
 
-项目初始化完成后，修改Taro项目下config/index.\&#123;js,ts\&#125;配置文件，将 outputRoot: 'dist/ascf' 修改为 outputRoot: process.env.TARO\_ENV === 'ascf' ? 'ascf-project/ascf/ascf\_src' : 'dist'。其中outputRoot是已经创建好的一个ASCF工程路径。 详见[全新创建ASCF工程](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/create-ascf-project)。
+项目初始化完成后，修改Taro项目下config/index.\&#123;js,ts\&#125;配置文件，将 outputRoot: 'dist/ascf' 修改为 outputRoot: process.env.TARO\_ENV === 'ascf' ? 'ascf-project/ascf/ascf\_src' : 'dist'。其中outputRoot是已经创建好的一个ASCF工程路径。 详见[全新创建ASCF工程](/docs/dev/atomic-dev/ascf/use-ide/create-ascf-project)。
 
 如果是已有项目请参考Taro官方示例[编译运行](https://docs.taro.zone/docs/GETTING-STARTED#ascf-元服务)进行转换。
 
@@ -79,11 +79,11 @@ npm run watch:ascf
 
 1. 了解项目代码，熟悉当前项目的页面布局和功能特性，通过代码审查理解接口调用及页面处理流程，并梳理组件和接口清单。
 2. 使用MP-HARMONY条件编译方式，适配编译为元服务。
-3. 仔细阅读[开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-development-guide)，以适配平台相关功能和规范要求，然后编译为（ASCF范式）后，将编译产物dist/build/mp-harmony拷贝到ascf/ascf\_src目录后，参考Hello ASCF工程调试运行。
+3. 仔细阅读[开发指南](/docs/dev/atomic-dev/ascf/ascf-development-guide/ascf-development-guide)，以适配平台相关功能和规范要求，然后编译为（ASCF范式）后，将编译产物dist/build/mp-harmony拷贝到ascf/ascf\_src目录后，参考Hello ASCF工程调试运行。
 
 ## 其他三方框架适配元服务
 
-ASCF框架采用类似小程序的范式，基于[ASCF框架](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/file-structure)即可将三方框架适配支持元服务。如果有需要使用三方框架开发元服务的诉求，可以将诉求反馈给我们，华为运营人员将在1-3个工作日内为开发者安排对接人员。
+ASCF框架采用类似小程序的范式，基于[ASCF框架](/docs/dev/atomic-dev/ascf/framework/file-structure)即可将三方框架适配支持元服务。如果有需要使用三方框架开发元服务的诉求，可以将诉求反馈给我们，华为运营人员将在1-3个工作日内为开发者安排对接人员。
 
 反馈邮箱地址：atomicservice@huawei.com
 

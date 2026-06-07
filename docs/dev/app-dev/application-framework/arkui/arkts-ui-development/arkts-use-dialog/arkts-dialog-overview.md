@@ -1,6 +1,6 @@
 ---
 title: "弹窗概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-dialog-overview
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ![](./img/c78e3bb7.png)
 
-而[Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)、[Popup](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-overview)、[Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-menu-overview)、[OverlayManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-overlaymanager)、[Toast](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-toast)、[bindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sheet-page)以及[bindContentCover](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-contentcover-page)的组件在结合路由、导航使用时存在如下几种显示模式。
+而[Dialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-base-dialog-overview)、[Popup](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-overview)、[Menu](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-menu/arkts-menu-overview)、[OverlayManager](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-create-overlaymanager)、[Toast](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-create-toast)、[bindSheet](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-sheet-page)以及[bindContentCover](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-contentcover-page)的组件在结合路由、导航使用时存在如下几种显示模式。
 
 * 弹窗显示在当前应用窗口最上层，层级高于应用主窗内所有页面（默认行为）。
 
@@ -25,14 +25,14 @@ format: md
 
   ![](./img/a51f59af.png)
 
-  如果Popup或Menu等存在绑定组件的弹窗组件，在页面跳转后因为所绑定的组件不在新页面显示，系统内部会自动关闭对应弹窗组件。但因为弹窗组件显示同时受开发者配置的参数控制，例如当[Popup](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-overview)的show参数设置为显示时，弹窗组件会覆盖在下一个页面上显示。
+  如果Popup或Menu等存在绑定组件的弹窗组件，在页面跳转后因为所绑定的组件不在新页面显示，系统内部会自动关闭对应弹窗组件。但因为弹窗组件显示同时受开发者配置的参数控制，例如当[Popup](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-overview)的show参数设置为显示时，弹窗组件会覆盖在下一个页面上显示。
 * 弹窗显示在当前页面内，层级低于下一跳页面。
 
   当开发者期望弹窗是一个页面内的弹窗，即当路由/导航切换页面时，弹窗会被跳转的页面覆盖，随着页面切回原页面，弹窗仍然正常显示。此时弹窗层级如下图所示：
 
   ![](./img/ed2efda4.png)
 
-  页面级弹窗功能需要结合弹窗组件的页面级能力使用，当前支持页面级能力的有[Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview)和[bindSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sheet-page)。
+  页面级弹窗功能需要结合弹窗组件的页面级能力使用，当前支持页面级能力的有[Dialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-base-dialog-overview)和[bindSheet](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-sheet-page)。
 * 弹窗显示在独立窗口内，窗口层级高于应用所在窗口。
 
   在PC/2in1等设备上，开发者常期望弹窗的显示在应用窗口之外，此时需要借助子窗的能力。例如自定义弹窗可以通过[CustomDialogControllerOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-custom-dialog-box#customdialogcontrolleroptions对象说明)中的showInSubwindow属性控制是否使用子窗功能。基于子窗显示的弹窗效果如下图所示。
@@ -64,12 +64,12 @@ format: md
 
 | 弹窗名称 | 应用场景 |
 | --- | --- |
-| [弹出框（Dialog）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview) | 当需要展示用户当前需要或必须关注的信息内容或操作时，例如二次退出应用等，应优先考虑使用此弹出框。 |
-| [菜单（Menu/openMenu）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-menu-overview) | 当需要给用户提供可执行的操作时，例如长按图标展示操作选项等，应优先考虑使用此弹窗。 |
-| [气泡提示（Popup/openPopup）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-popup-overview) | 当需要给用户提供提示时，例如点击一个问号图标弹出一段帮助提示等，应优先考虑使用此弹窗。 |
-| [绑定模态页面（bindContentCover/bindSheet）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-overview) | 当需要新的界面覆盖在旧的界面上，且旧的界面不消失的一种转场方式时，例如缩略图片点击后查看大图等，应优先考虑使用此弹窗。 |
-| [即时反馈（Toast）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-toast) | 当需要在一个小的窗口中提供用户当前操作的简单反馈时，例如提示文件保存成功等，应优先考虑使用此弹窗。 |
-| [设置浮层（OverlayManager）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-overlaymanager) | 当需要完全自定义内容、行为、样式时，可以使用浮层将UI展示在页面之上，例如音乐/语音播放悬浮球/胶囊等，应优先考虑使用此弹窗。 |
+| [弹出框（Dialog）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-base-dialog-overview) | 当需要展示用户当前需要或必须关注的信息内容或操作时，例如二次退出应用等，应优先考虑使用此弹出框。 |
+| [菜单（Menu/openMenu）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-menu/arkts-menu-overview) | 当需要给用户提供可执行的操作时，例如长按图标展示操作选项等，应优先考虑使用此弹窗。 |
+| [气泡提示（Popup/openPopup）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-overview) | 当需要给用户提供提示时，例如点击一个问号图标弹出一段帮助提示等，应优先考虑使用此弹窗。 |
+| [绑定模态页面（bindContentCover/bindSheet）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-modal-overview) | 当需要新的界面覆盖在旧的界面上，且旧的界面不消失的一种转场方式时，例如缩略图片点击后查看大图等，应优先考虑使用此弹窗。 |
+| [即时反馈（Toast）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-create-toast) | 当需要在一个小的窗口中提供用户当前操作的简单反馈时，例如提示文件保存成功等，应优先考虑使用此弹窗。 |
+| [设置浮层（OverlayManager）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-create-overlaymanager) | 当需要完全自定义内容、行为、样式时，可以使用浮层将UI展示在页面之上，例如音乐/语音播放悬浮球/胶囊等，应优先考虑使用此弹窗。 |
 
 ## 规格约束
 

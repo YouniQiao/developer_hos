@@ -1,6 +1,6 @@
 ---
 title: "IPC Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-overview
+original_url: /docs/dev/app-dev/application-framework/ipc-kit/ipc-rpc-overview
 format: md
 ---
 
@@ -29,7 +29,7 @@ IPC和RPC采用客户端-服务端（Client-Server）模型。在使用时，Cli
 ## 约束与限制
 
 * 单个设备上跨进程通信时，传输的数据量最大为200KB。超过200KB的数据量传输可以使用[匿名共享内存](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#ashmem8)。
-* 不支持在RPC中订阅匿名Stub对象（没有向SAMgr注册的Stub对象）的[死亡通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-remote-state)。
+* 不支持在RPC中订阅匿名Stub对象（没有向SAMgr注册的Stub对象）的[死亡通知](/docs/dev/app-dev/application-framework/ipc-kit/subscribe-remote-state)。
 * 不支持把跨设备的Proxy对象回传到该Proxy对象指向的Stub对象所在的设备。
 * 指向远端设备Stub的Proxy对象不能在本设备内二次跨进程传递。
 

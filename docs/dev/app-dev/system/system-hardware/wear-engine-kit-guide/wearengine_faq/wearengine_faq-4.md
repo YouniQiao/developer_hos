@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "打开HR传感器后，没有立刻上报数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-4
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-4
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Access Token和Refresh Token长度限制要求"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-11
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-11
 format: md
 ---
 

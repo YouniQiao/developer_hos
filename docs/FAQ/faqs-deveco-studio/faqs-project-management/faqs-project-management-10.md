@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何关闭DevEco Studio自动格式化功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-10
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-10
 ---
 
 

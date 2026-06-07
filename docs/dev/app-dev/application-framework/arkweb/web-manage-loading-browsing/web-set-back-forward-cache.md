@@ -1,6 +1,6 @@
 ---
 title: "设置Web组件前进后退缓存"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-set-back-forward-cache
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-set-back-forward-cache
 format: md
 ---
 

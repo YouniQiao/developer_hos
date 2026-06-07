@@ -1,16 +1,16 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-quick-login-overview
+original_url: /docs/dev/app-dev/application-services/account-quick-login-overview
 format: md
 ---
 
 
-Account Kit提供了[华为账号一键登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login)、[华为账号登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-button)、[静默登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-silent-login)等多种登录方式，其中华为账号一键登录**仅支持企业开发者**使用，华为账号登录和静默登录**既支持企业开发者也支持个人开发者**使用，应用可根据实际场景选择使用其中一种或多种方式进行账号登录。
+Account Kit提供了[华为账号一键登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login)、[华为账号登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-button)、[静默登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-silent-login)等多种登录方式，其中华为账号一键登录**仅支持企业开发者**使用，华为账号登录和静默登录**既支持企业开发者也支持个人开发者**使用，应用可根据实际场景选择使用其中一种或多种方式进行账号登录。
 
 ## 基础概念
 
-华为账号用户身份标识包含UnionID和OpenID，具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)，注意OpenID和UnionID严格区分大小写。两者的定义与使用场景：
+华为账号用户身份标识包含UnionID和OpenID，具体格式要求请参考[OpenID和UnionID的格式说明](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-9)，注意OpenID和UnionID严格区分大小写。两者的定义与使用场景：
 
 | 项目/ID类型 | UnionID | OpenID |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 ---
 title: "业务介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/service-introduction-0000001486185666
+original_url: /docs/monetize/promotion/service-introduction-0000001486185666
 format: md
 ---
 

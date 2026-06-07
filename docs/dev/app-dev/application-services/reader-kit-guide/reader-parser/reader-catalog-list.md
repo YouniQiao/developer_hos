@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取目录列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-catalog-list
+original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-parser/reader-catalog-list
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
    import { bookParser } from '@kit.ReaderKit';
    import { hilog } from '@kit.PerformanceAnalysisKit';
    ```
-2. 通过提前导入到[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)中的书籍文件，初始化书籍解析器。
+2. 通过提前导入到[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)中的书籍文件，初始化书籍解析器。
 
    ```
    private defaultHandler: bookParser.BookParserHandler | null = null;

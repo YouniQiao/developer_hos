@@ -1,11 +1,11 @@
 ---
 title: "渲染控制概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-overview
 format: md
 ---
 
 
-ArkUI通过[自定义组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components)的[build()函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#build函数)和[@Builder装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)中的声明式UI描述语句构建相应的UI。在声明式描述语句中开发者除了使用系统组件外，还可以使用渲染控制组件来辅助UI的构建，这些渲染控制组件包括控制组件是否显示的条件渲染组件和基于数组数据快速生成组件的循环渲染组件。
+ArkUI通过[自定义组件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components)的[build()函数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#build函数)和[@Builder装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)中的声明式UI描述语句构建相应的UI。在声明式描述语句中开发者除了使用系统组件外，还可以使用渲染控制组件来辅助UI的构建，这些渲染控制组件包括控制组件是否显示的条件渲染组件和基于数组数据快速生成组件的循环渲染组件。
 
 ## 基本概念
 
@@ -13,8 +13,8 @@ ArkUI通过[自定义组件](https://developer.huawei.com/consumer/cn/doc/harmon
 | --- | --- |
 | 条件渲染 | 根据给定的条件，判断是否渲染指定的UI组件。 |
 | 循环渲染 | 根据给定的数据源，渲染出一系列相似的UI组件。 |
-| 条件渲染组件 | 能够实现条件渲染的语法组件：[if-else](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse)。 |
-| 循环渲染组件 | 能够实现循环渲染的语法组件：[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)、[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)、[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)。 |
+| 条件渲染组件 | 能够实现条件渲染的语法组件：[if-else](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse)。 |
+| 循环渲染组件 | 能够实现循环渲染的语法组件：[ForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)、[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)、[Repeat](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat)。 |
 | 滚动容器组件 | [List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)、[ListItemGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-listitemgroup)、[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)、[Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper)、[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)。 |
 | 预加载区域 | 懒加载模式下紧邻容器组件显示范围的区域。该区域内的子组件会在系统空闲时提前创建并布局。其大小由容器组件的cachedCount属性设定。  以List为例，设置[cachedCount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#cachedcount)属性后，显示区域外上下各会预加载并布局cachedCount行[ListItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-listitem)。cachedCount默认值等于显示区域中节点的数量。 |
 
@@ -30,7 +30,7 @@ ArkUI通过[自定义组件](https://developer.huawei.com/consumer/cn/doc/harmon
 
 应用开发者应该根据实际业务情况选择适合的场景。当明确数据列表长度固定，且长度小于某个值（取决于容器组件区域显示子组件的个数），可以考虑使用全量加载方式。除此之外的其他场景，都推荐使用懒加载方式渲染列表数据。
 
-ArkUI框架为鸿蒙应用开发者提供了[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)组件（全量加载）和[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)组件（懒加载）对列表数据循环渲染。除此之外，[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)组件同时支持两种开发场景，并且默认具备组件复用能力。
+ArkUI框架为鸿蒙应用开发者提供了[ForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)组件（全量加载）和[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)组件（懒加载）对列表数据循环渲染。除此之外，[Repeat](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat)组件同时支持两种开发场景，并且默认具备组件复用能力。
 
 | 组件 | 懒加载能力 | 复用能力 | 推荐使用场景 |
 | --- | --- | --- | --- |
@@ -40,5 +40,5 @@ ArkUI框架为鸿蒙应用开发者提供了[ForEach](https://developer.huawei.c
 
 ## 最佳实践
 
-* [懒加载优化性能-界面渲染性能优化-性能场景优化案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lazyforeach-optimization)
-* [长列表加载丢帧优化-界面渲染性能优化-性能场景优化案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list)
+* [懒加载优化性能-界面渲染性能优化-性能场景优化案例](/docs/quality/lazyforeach-optimization)
+* [长列表加载丢帧优化-界面渲染性能优化-性能场景优化案例](/docs/quality/best-practices-long-list)

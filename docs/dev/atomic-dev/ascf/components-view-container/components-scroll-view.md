@@ -1,6 +1,6 @@
 ---
 title: "scroll-view"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-scroll-view
+original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-scroll-view
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
-| enhanced | boolean | false | 否 | 是否启用scroll-view增强特性，启用后可通过[ScrollViewContext](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-scroll#scrollviewcontext)操作scroll-view。  **起始版本：** 1.0.23 |
+| enhanced | boolean | false | 否 | 是否启用scroll-view增强特性，启用后可通过[ScrollViewContext](/docs/dev/atomic-dev/ascf/apis-page/apis-scroll#scrollviewcontext)操作scroll-view。  **起始版本：** 1.0.23 |
 | scroll-x | boolean | false | 否 | 允许横向滚动。 |
 | scroll-y | boolean | false | 否 | 允许纵向滚动。 |
 | upper-threshold | number|string | 50 | 否 | 距顶部/左边多远时，触发 scrolltoupper 事件。 |

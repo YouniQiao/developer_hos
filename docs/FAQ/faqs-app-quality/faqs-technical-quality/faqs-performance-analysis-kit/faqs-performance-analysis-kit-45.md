@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何通过hdc命令拉起指定的UIAbility"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-45
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-45
 ---
 
 
@@ -23,4 +23,4 @@ hdc shell aa start -a EntryAbility -b com.example.myapplication
 
 **参考链接**
 
-[aa工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool)
+[aa工具](/docs/dev/app-dev/system/aa-tool)

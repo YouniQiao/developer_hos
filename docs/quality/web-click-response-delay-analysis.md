@@ -1,6 +1,6 @@
 ---
 title: "Web点击响应时延分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-click-response-delay-analysis
+original_url: /docs/quality/web-click-response-delay-analysis
 format: md
 ---
 
@@ -64,7 +64,7 @@ format: md
 
 ### 使用Devtools进行分析
 
-参考此链接使用Devtools调试前端页面：[使用Devtools工具调试前端页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-debugging-with-devtools)。
+参考此链接使用Devtools调试前端页面：[使用Devtools工具调试前端页面](/docs/dev/app-dev/application-framework/arkweb/web-debugging/web-debugging-with-devtools)。
 
 抓取的DevTools泳道图如下图所示，本章节分析可能发生的异常区域：
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用“华为账号登录”按钮登录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-button
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-button
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 ![](./img/975c64a5.png)
 
-账号登录按钮的用户体验和UX设计需符合[【华为账号登录】按钮](https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344#section2624430102713)规范，不符合规范的UX设计可能会对应用上架和用户体验带来影响。
+账号登录按钮的用户体验和UX设计需符合[【华为账号登录】按钮](/docs/design/system-features/capabilities/huawei-id#section2624430102713)规范，不符合规范的UX设计可能会对应用上架和用户体验带来影响。
 
 ## 业务流程
 
@@ -59,7 +59,7 @@ format: md
 
 ## 开发前提
 
-在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)、[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。此场景无需申请账号权限。
+在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)、[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。此场景无需申请账号权限。
 
 ## 客户端开发
 
@@ -70,7 +70,7 @@ format: md
    import { BusinessError } from '@kit.BasicServicesKit';
    import { hilog } from '@kit.PerformanceAnalysisKit';
    ```
-2. 调用[LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button#loginwithhuaweiidbutton)组件，展示华为账号登录按钮，用户点击华为账号登录按钮后，应用获取到Authorization Code、ID Token，将数据传给应用服务端，可参考[客户端与服务端交互开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#客户端与服务端交互开发)的开发步骤a和b，完成服务端开发。通过Authorization Code凭证获取用户信息可以有效避免黑客通过数据遍历、身份伪造、重放攻击等手段导致的安全风险。应用可以通过公开的网址获取到华为账号服务器发布的公钥，对签名和ID Token中的必要信息进行验证，以证明其没有被篡改过。解析ID Token可参考[ID Token解析与验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-12#解析与验证)。
+2. 调用[LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button#loginwithhuaweiidbutton)组件，展示华为账号登录按钮，用户点击华为账号登录按钮后，应用获取到Authorization Code、ID Token，将数据传给应用服务端，可参考[客户端与服务端交互开发](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#客户端与服务端交互开发)的开发步骤a和b，完成服务端开发。通过Authorization Code凭证获取用户信息可以有效避免黑客通过数据遍历、身份伪造、重放攻击等手段导致的安全风险。应用可以通过公开的网址获取到华为账号服务器发布的公钥，对签名和ID Token中的必要信息进行验证，以证明其没有被篡改过。解析ID Token可参考[ID Token解析与验证](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-12#解析与验证)。
 
    ```
    @Entry

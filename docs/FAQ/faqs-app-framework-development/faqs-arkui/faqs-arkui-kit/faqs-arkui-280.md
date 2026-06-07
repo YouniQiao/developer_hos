@@ -1,7 +1,7 @@
 ---
 format: md
 title: "禁用Tabs组件边缘滑动回弹效果的方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-280
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-280
 ---
 
 

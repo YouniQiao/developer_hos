@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "视频解码同步模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/synchronous-video-decoding
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-video-decoding
 format: md
 ---
 
@@ -12,9 +12,9 @@ format: md
 
 具体实现可参考[示例工程](https://gitcode.com/openharmony/applications_app_samples/tree/master/code/BasicFeature/Media/AVCodec)。
 
-当前支持的解码能力，请参考[AVCodec支持的格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-support-formats#视频解码)。
+当前支持的解码能力，请参考[AVCodec支持的格式](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#视频解码)。
 
-视频解码的限制约束、支持的能力、状态机调用关系请参考[视频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding)。
+视频解码的限制约束、支持的能力、状态机调用关系请参考[视频解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding)。
 
 ## 适用场景
 
@@ -104,7 +104,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
 
    * 详细可配置选项的说明请参考[媒体数据键值对](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-codecbase#媒体数据键值对)。
    * 参数校验规则请参考[OH\_VideoDecoder\_Configure()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avcodec-videodecoder-h#oh_videodecoder_configure)。
-   * 参数取值范围可以通过能力查询接口获取，具体示例请参考[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)。
+   * 参数取值范围可以通过能力查询接口获取，具体示例请参考[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)。
 
    目前支持的所有格式都必须配置以下选项：视频帧宽度、视频帧高度。
 
@@ -133,7 +133,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
 
    示例中的变量说明如下：
 
-   nativeWindow：获取方式请参考[视频解码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)的“步骤-6：设置surface”。
+   nativeWindow：获取方式请参考[视频解码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)的“步骤-6：设置surface”。
 
    ```
    // 设置surface。
@@ -170,7 +170,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
 
    送入输入队列进行解码，示例中的变量说明如下：
 
-   * size、offset、pts、frameData：输入尺寸、偏移量、时间戳、帧数据等字段信息，获取方式可以参考[媒体数据解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-video-demuxer#开发步骤)“步骤-9：开始解封装，循环获取sample”。
+   * size、offset、pts、frameData：输入尺寸、偏移量、时间戳、帧数据等字段信息，获取方式可以参考[媒体数据解析](/docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer#开发步骤)“步骤-9：开始解封装，循环获取sample”。
    * flags：缓冲区标记的类别，请参考[OH\_AVCodecBufferFlags](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avbuffer-info-h#oh_avcodecbufferflags)。
 
    ```

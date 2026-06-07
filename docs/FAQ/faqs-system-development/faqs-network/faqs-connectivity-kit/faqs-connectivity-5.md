@@ -1,6 +1,6 @@
 ---
 title: "如何获取网络类型：Wi-Fi，3G，4G等"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-5
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-5
 format: md
 ---
 

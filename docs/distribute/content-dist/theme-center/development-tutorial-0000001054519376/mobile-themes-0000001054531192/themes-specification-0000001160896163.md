@@ -1,7 +1,7 @@
 ---
 title: "HarmonyOS 2.0主题设计指导及规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-specification-0000001160896163
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163
 ---
 
 
@@ -38,7 +38,7 @@ import MergeTable from '@site/src/components/MergeTable';
 | 预览图 | preview | 6-20张 | 11-20张 | 3-20张 | 4-20张 |
 | 描述文件 | description.xml | 1个 | 1个 | 1个 | 1个 |
 
-制作完主题后，各位设计师们可以根据[手机主题测试规范](https://developer.huawei.com/consumer/cn/doc/content/theme-test-0000001055661259#section3698921142310)进行自检测试。自检无误后可参考[手机主题内容上传指南](https://developer.huawei.com/consumer/cn/doc/content/themes-upload-0000001055029726#section96731130204020)将主题包上传至联盟。
+制作完主题后，各位设计师们可以根据[手机主题测试规范](https://developer.huawei.com/consumer/cn/doc/content/theme-test-0000001055661259#section3698921142310)进行自检测试。自检无误后可参考[手机主题内容上传指南](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/themes-upload-0000001055029726#section96731130204020)将主题包上传至联盟。
 
 ## 2. 快速入门
 
@@ -768,7 +768,7 @@ description.xml 描述文件是储存主题基本信息的文件。
 
 ## 22. 内容上传指南
 
-[内容上传指南详情请点击查看](https://developer.huawei.com/consumer/cn/doc/content/themes-upload-0000001055029726#section96731130204020)
+[内容上传指南详情请点击查看](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/themes-upload-0000001055029726#section96731130204020)
 
 ## 23. 附件下载
 

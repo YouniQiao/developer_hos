@@ -1,6 +1,6 @@
 ---
 title: "Account Preparations"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-preparations
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-preparations
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

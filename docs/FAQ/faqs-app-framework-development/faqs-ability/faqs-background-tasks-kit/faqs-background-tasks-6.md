@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用运行时进程资源使用规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-6
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-6
 ---
 
 
@@ -16,6 +16,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-b
 
 **参考链接**
 
-[Stage模型开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development-overview)
+[Stage模型开发概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-development-overview)
 
 [Background Tasks Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/background-tasks-api)

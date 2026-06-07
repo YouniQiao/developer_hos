@@ -1,6 +1,6 @@
 ---
 title: "创建API客户端"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-appendix-api-client-0000002304729552
+original_url: /docs/dev/game-dev/games-appendix-api-client-0000002304729552
 format: md
 ---
 

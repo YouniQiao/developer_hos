@@ -1,7 +1,7 @@
 ---
 title: "预览数据模拟"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-previewer-mock
+original_url: /docs/tools/coding-debug/ide-previewer-mock
 format: md
 ---
 

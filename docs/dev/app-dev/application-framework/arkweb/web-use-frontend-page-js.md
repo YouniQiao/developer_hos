@@ -1,12 +1,12 @@
 ---
 title: "在应用中使用前端页面JavaScript"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-use-frontend-page-js
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js
 format: md
 ---
 
 
-* **[应用侧调用前端页面函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-app-frontend-page-function-invoking)**
-* **[前端页面调用应用侧函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-page-app-function-invoking)**
-* **[建立应用侧与前端页面数据通道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-app-page-data-channel)**
-* **[应用侧与前端页面的相互调用(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-ndk-jsbridge)**
-* **[建立应用侧与前端页面数据通道(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-ndk-page-data-channel)**
+* **[应用侧调用前端页面函数](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-app-frontend-page-function-invoking)**
+* **[前端页面调用应用侧函数](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-page-app-function-invoking)**
+* **[建立应用侧与前端页面数据通道](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-app-page-data-channel)**
+* **[应用侧与前端页面的相互调用(C/C++)](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/arkweb-ndk-jsbridge)**
+* **[建立应用侧与前端页面数据通道(C/C++)](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/arkweb-ndk-page-data-channel)**

@@ -1,6 +1,6 @@
 ---
 title: "如何设置沉浸式窗口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-199
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-199
 format: md
 ---
 
@@ -60,4 +60,4 @@ export default class EntryAbility extends UIAbility {
 
 **参考链接**
 
-[体验窗口沉浸式能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-stage#体验窗口沉浸式能力)
+[体验窗口沉浸式能力](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage#体验窗口沉浸式能力)

@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "免密代扣说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-password-free-pay-overview
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-password-free-pay-overview
 format: md
 ---
 
 
 免密代扣包括支付并签约以及签约代扣场景。
 
-开发者接入免密支付前需先申请开通签约代扣产品（即申请**配置免密代扣模板**和获取**协议模板ID**），产品开通参见[产品开通操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-product-configuration#场景一产品开通操作)。
+开发者接入免密支付前需先申请开通签约代扣产品（即申请**配置免密代扣模板**和获取**协议模板ID**），产品开通参见[产品开通操作](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-product-configuration#场景一产品开通操作)。
 
 华为支付以模板维度管理每个代扣扣费服务，主要组成要素如下：
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "更多：若以上FAQ仍不能解决，可通过在线提单反馈"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-purax-4
+original_url: /docs/FAQ/faqs-multi-device-scenario/faq-phone/faqs-purax/faqs-purax-4
 ---
 
 

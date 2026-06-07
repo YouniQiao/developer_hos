@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Payment Kit的退款操作，除了通过接入指导中的退款接口退款，还有财务功能相关平台吗？能从这个平台进行退款？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-23
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-23
 format: md
 ---
 

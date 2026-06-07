@@ -1,7 +1,7 @@
 ---
 format: md
 title: "测试过程中，控件语义识别中的“XXX的项”、“XXX的列”应如何理解"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-exploration-test-2
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-exploratory-test/faqs-app-exploration-test/faqs-app-exploration-test-2
 ---
 
 

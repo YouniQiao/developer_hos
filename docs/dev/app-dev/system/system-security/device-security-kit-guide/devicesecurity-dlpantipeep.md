@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "防窥保护"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-dlpantipeep
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-dlpantipeep
 format: md
 ---
 
@@ -58,7 +58,7 @@ format: md
 
 ![](./img/6a31ca10.png)
 
-* 在开发准备过程中，需要申请权限：ohos.permission.DLP\_GET\_HIDE\_STATUS，用于获取当前应用使用过程中被非机主本人窥视屏幕相关状态信息。申请方式请参考：[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)
+* 在开发准备过程中，需要申请权限：ohos.permission.DLP\_GET\_HIDE\_STATUS，用于获取当前应用使用过程中被非机主本人窥视屏幕相关状态信息。申请方式请参考：[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)
 * 开发者需向用户说明数据使用的目的、方式和范围。
 
 1. 导入防窥保护模块及相关公共模块。

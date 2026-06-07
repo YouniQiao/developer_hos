@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "系统字体的信息获取和使用（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-font-c
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/system-font-c
 format: md
 ---
 
@@ -210,7 +210,7 @@ format: md
 
 禁用系统字体后，请确保注册使用自定义字体，否则文本将无法正常显示。
 
-1. 确保已成功注册自定义字体，用于保证禁用系统字体后文本的正常显示，具体可见[自定义字体的注册和使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/custom-font-c)。
+1. 确保已成功注册自定义字体，用于保证禁用系统字体后文本的正常显示，具体可见[自定义字体的注册和使用](/docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/custom-font-c)。
 2. 在工程的src/main/cpp/CMakeLists.txt文件中添加以下lib。
 
    ```

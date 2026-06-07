@@ -1,6 +1,6 @@
 ---
 title: "后台定位导航服务合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-position-navigation-use
+original_url: /docs/quality/reasonable-position-navigation-use
 ---
 
 # 后台定位导航服务合理使用
@@ -43,4 +43,4 @@ let requestInfo: geoLocationManager.LocationRequest = {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseSoftware/entry/src/main/ets/pages/GpsTwo.ets#L21-L28">GpsTwo.ets</a></div>
 
-有关定位服务开发相关接口的使用，详情可以参考[Location Kit（位置服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-kit)。
+有关定位服务开发相关接口的使用，详情可以参考[Location Kit（位置服务）](/docs/dev/app-dev/application-services/location-kit)。

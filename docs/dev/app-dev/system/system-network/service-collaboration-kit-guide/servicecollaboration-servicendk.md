@@ -1,9 +1,9 @@
 ---
 title: "跨设备互通NDK（C）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-servicendk
+original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-servicendk
 format: md
 ---
 
 
-* **[跨设备互通NDK特性概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-servicendk-description)**
-* **[跨设备互通NDK开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-servicendk-guide)**
+* **[跨设备互通NDK特性概述](/docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-servicendk/servicecollaboration-servicendk-description)**
+* **[跨设备互通NDK开发指导](/docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-servicendk/servicecollaboration-servicendk-guide)**

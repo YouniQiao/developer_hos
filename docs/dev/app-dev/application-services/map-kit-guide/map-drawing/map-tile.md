@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "瓦片图层"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-tile
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-tile
 format: md
 ---
 

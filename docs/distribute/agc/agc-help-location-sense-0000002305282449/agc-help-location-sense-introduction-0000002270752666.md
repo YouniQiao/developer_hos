@@ -1,13 +1,13 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-introduction-0000002270752666
+original_url: /docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-introduction-0000002270752666
 format: md
 ---
 
 
 近场服务旨在通过HarmonyOS手机用户（以下简称用户）的位置，经由小艺建议、花瓣地图等消息渠道精准推荐用户所需的服务，从而帮助开发者提升用户转化率和满意度。
 
-近场服务包含近场管理、近场测试、设备管理、标签服务四个模块，支持开发者管理可触达用户的位置（[POI](https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-related-terms-0000002382861885)）或设备（[信标设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-related-terms-0000002382861885)、[HarmonyOS标签](https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-related-terms-0000002382861885)），以及通过这些位置或设备向用户推荐内容。
+近场服务包含近场管理、近场测试、设备管理、标签服务四个模块，支持开发者管理可触达用户的位置（[POI](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-related-terms-0000002382861885)）或设备（[信标设备](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-related-terms-0000002382861885)、[HarmonyOS标签](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-related-terms-0000002382861885)），以及通过这些位置或设备向用户推荐内容。
 
 目前已有文旅、企业办公、政务、教育、医疗健康以及商业零售等行业的实践案例，例如，文旅行业接入近场服务后，可向用户推荐热门景点、景区购票和文创商品等。当用户携带手机进入POI或信标设备的感应范围时，系统会通过小艺建议入口推荐开发者提供的相关服务；当用户使用手机碰一碰HarmonyOS标签时，可直接访问开发者提供的服务内容，减少查找服务的时间。随着用户位置的变化，近场服务可为用户推荐不同的内容，使开发者能够提供更精准、更便捷、更多样的营销活动。
 

@@ -1,6 +1,6 @@
 ---
 title: "工具下载与使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-releasenotes-tool-0000002317894812
+original_url: /docs/dev/game-dev/games-quickgame-releasenotes-tool-0000002317894812
 has_merged_cells: true
 format: md
 ---
@@ -28,7 +28,7 @@ format: md
 
 ### 工具使用
 
-快游戏开发者工具界面友好、操作简单，具备生成签名证书、调试快游戏、发布快游戏等能力，工具的使用教程请参见[快游戏开发者工具](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-ux-0000002318054804)。
+快游戏开发者工具界面友好、操作简单，具备生成签名证书、调试快游戏、发布快游戏等能力，工具的使用教程请参见[快游戏开发者工具](/docs/dev/game-dev/games-quickgame-tool-ux-0000002318054804)。
 
 ![](./img/a04cf950.png)
 

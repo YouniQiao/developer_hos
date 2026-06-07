@@ -1,6 +1,6 @@
 ---
 title: "注册模拟器调试凭据"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-credential-0000002415343501
+original_url: /docs/distribute/agc/agc-help-credential-0000002415263317/agc-help-add-credential-0000002415343501
 format: md
 ---
 
@@ -14,8 +14,8 @@ format: md
 
 #### 前提条件
 
-* 您已在AGC为应用/元服务创建APP ID，具体操作请分别参见[为HarmonyOS应用创建APP ID](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506#section16423184171915) | [为元服务创建APP ID](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-atomic-service-0000002247795706#section16423184171915)。
-* 您已获取应用/元服务在模拟器中启动时日志中打印的调试凭据。例如，获取Cloud Foundation Kit调试凭据可参考[使用模拟器调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-emulator)。
+* 您已在AGC为应用/元服务创建APP ID，具体操作请分别参见[为HarmonyOS应用创建APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915) | [为元服务创建APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-atomic-service-0000002247795706#section16423184171915)。
+* 您已获取应用/元服务在模拟器中启动时日志中打印的调试凭据。例如，获取Cloud Foundation Kit调试凭据可参考[使用模拟器调试](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-emulator)。
 
 #### 操作步骤
 

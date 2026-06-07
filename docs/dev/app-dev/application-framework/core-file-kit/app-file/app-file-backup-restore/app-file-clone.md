@@ -1,6 +1,6 @@
 ---
 title: "应用克隆适配指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-clone
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-clone
 format: md
 ---
 
@@ -13,4 +13,4 @@ format: md
 
 ## 适配指导
 
-API version 12开始，三方应用接入克隆只需要接入备份恢复能力即可，接入指导： **[应用接入数据备份恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension)**。
+API version 12开始，三方应用接入克隆只需要接入备份恢复能力即可，接入指导： **[应用接入数据备份恢复](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension)**。

@@ -1,11 +1,11 @@
 ---
 title: "Node-API常见问题汇总"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-questions
+original_url: /docs/dev/ndk-dev/napi-questions
 format: md
 ---
 
 
-* **[Node-API常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-faqs)**
-* **[稳定性相关问题汇总](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-stability)**
-* **[内存泄漏相关问题汇总](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-memory-leak)**
-* **[常见基本功能问题汇总](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-common-basic)**
+* **[Node-API常见问题](/docs/dev/ndk-dev/use-napi-faqs)**
+* **[稳定性相关问题汇总](/docs/dev/ndk-dev/napi-faq-about-stability)**
+* **[内存泄漏相关问题汇总](/docs/dev/ndk-dev/napi-faq-about-memory-leak)**
+* **[常见基本功能问题汇总](/docs/dev/ndk-dev/napi-faq-about-common-basic)**

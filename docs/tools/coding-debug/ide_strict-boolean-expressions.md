@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/strict-boolean-expressions"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_strict-boolean-expressions
+original_url: /docs/tools/coding-debug/ide_strict-boolean-expressions
 format: md
 ---
 

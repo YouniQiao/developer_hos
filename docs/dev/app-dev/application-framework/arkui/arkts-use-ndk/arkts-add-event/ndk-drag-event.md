@@ -1,6 +1,6 @@
 ---
 title: "绑定拖拽事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-drag-event
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-drag-event
 format: md
 ---
 

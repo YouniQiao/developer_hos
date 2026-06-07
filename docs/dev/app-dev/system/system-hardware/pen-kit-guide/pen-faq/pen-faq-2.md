@@ -1,6 +1,6 @@
 ---
 title: "Pen Kit手写套件是否支持自定义笔宽？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-2
+original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-2
 format: md
 ---
 

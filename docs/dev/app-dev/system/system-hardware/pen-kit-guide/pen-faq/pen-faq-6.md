@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "集成了Pen Kit手写套件，还需要集成一笔成形吗？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-6
+original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-6
 format: md
 ---
 

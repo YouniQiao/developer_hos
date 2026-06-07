@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在Native侧获取屏幕亮度"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-10
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-10
 ---
 
 

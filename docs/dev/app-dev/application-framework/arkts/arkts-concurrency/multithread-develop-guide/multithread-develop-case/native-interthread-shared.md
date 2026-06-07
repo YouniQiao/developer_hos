@@ -1,6 +1,6 @@
 ---
 title: "C++线程间数据共享场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-interthread-shared
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/native-interthread-shared
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 在C++线程上调用ArkTS能力
 
-使用Node-API接口在C++线程中创建ArkTS运行环境并调用的方法，可以参考[使用Node-API接口创建ArkTS运行时环境](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-ark-runtime)。
+使用Node-API接口在C++线程中创建ArkTS运行环境并调用的方法，可以参考[使用Node-API接口创建ArkTS运行时环境](/docs/dev/ndk-dev/use-napi-ark-runtime)。
 
 核心代码片段如下所示：
 
@@ -85,7 +85,7 @@ static void* CreateEnvAndSendSendable(void*)
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkTS/ArkTsConcurrent/ApplicationMultithreadingDevelopment/NativeInterthreadShared/entry/src/main/cpp/napi_init.cpp#L17-L64" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：napi_init.cpp</a></div>
 
 
-主要步骤包括：创建执行环境、加载模块、查找并调用模块函数（或直接通过Node-API接口创建Sendable对象），最后销毁执行环境。加载模块的详细信息，请参见[使用Node-API接口进行模块加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module-with-info)。查找并调用函数及更多Node-API接口能力，请参见[Node-API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/napi)。
+主要步骤包括：创建执行环境、加载模块、查找并调用模块函数（或直接通过Node-API接口创建Sendable对象），最后销毁执行环境。加载模块的详细信息，请参见[使用Node-API接口进行模块加载](/docs/dev/ndk-dev/use-napi-load-module-with-info)。查找并调用函数及更多Node-API接口能力，请参见[Node-API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/napi)。
 
 ## 在C++线程之间操作Sendable共享对象
 
@@ -282,4 +282,4 @@ struct Index {
 
    ![](./img/0a3bfe08.png)
 
-   操作对象需要符合Sendable对象的规则，具体可见[Sendable使用规则与约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-constraints)。
+   操作对象需要符合Sendable对象的规则，具体可见[Sendable使用规则与约束](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-constraints)。

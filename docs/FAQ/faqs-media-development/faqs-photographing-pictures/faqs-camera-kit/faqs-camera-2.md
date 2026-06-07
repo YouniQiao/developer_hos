@@ -1,6 +1,6 @@
 ---
 title: "如何获取前置摄像头的预览图像"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-2
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-2
 format: md
 ---
 
@@ -67,4 +67,4 @@ struct GetFrontCameraImage {
 
 **参考链接**
 
-[拍照实践(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting-case)
+[拍照实践(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting-case)

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在HSP export类时，ts文件是按.d.ts导出还是.d.ets导出"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-29
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-29
 ---
 
 

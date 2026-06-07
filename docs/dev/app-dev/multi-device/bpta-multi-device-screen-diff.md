@@ -1,7 +1,7 @@
 ---
 title: "多设备适配屏幕差异"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-diff
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-screen-diff
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 多设备适配技术旨在解决跨设备界面一致性问题，如在折叠屏开合、窗口自由调整等场景中保障布局完整性。其核心策略在于通过动态布局调整和响应式设计，消除屏幕尺寸差异导致的截断与留白问题，并确保交互状态切换时的视觉连续性。
 
-本文主要面向中高级开发者。开始之前，建议先了解[一次开发，多端部署](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)、[断点](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1532120147301)等知识点。
+本文主要面向中高级开发者。开始之前，建议先了解[一次开发，多端部署](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)、[断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1532120147301)等知识点。
 
 本文主要内容如下：
 
@@ -22,11 +22,11 @@ format: md
 
 ###页面适配不同尺寸屏幕
 
-页面适配不同尺寸屏幕的本质，是适配不同尺寸的窗口——无论是手机、折叠屏、平板还是电脑，其屏幕差异最终都体现为应用显示窗口宽高、比例的差异。因此，适配的核心应基于窗口属性抽象出响应式能力，通过“[断点](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1532120147301)适配”实现界面随窗口尺寸动态调整，确保在任意窗口规格下均能稳定显示，详情可参考[通过断点刷新UI](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section175001836203617)。通过一次性基于断点的布局适配，即可支持分屏、悬浮窗、自由窗口等多种窗口模式，确保界面在不同形态间平滑、连续地响应变化。效果图如下：
+页面适配不同尺寸屏幕的本质，是适配不同尺寸的窗口——无论是手机、折叠屏、平板还是电脑，其屏幕差异最终都体现为应用显示窗口宽高、比例的差异。因此，适配的核心应基于窗口属性抽象出响应式能力，通过“[断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1532120147301)适配”实现界面随窗口尺寸动态调整，确保在任意窗口规格下均能稳定显示，详情可参考[通过断点刷新UI](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section175001836203617)。通过一次性基于断点的布局适配，即可支持分屏、悬浮窗、自由窗口等多种窗口模式，确保界面在不同形态间平滑、连续地响应变化。效果图如下：
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/19/v3/fTUx-LYKRWKlujmBr92tsQ/zh-cn_image_0000002506596732.gif?HW-CC-KV=V1&HW-CC-Date=20260606T074230Z&HW-CC-Expire=86400&HW-CC-Sign=FC251D96F318DD1181717088FF63ADA9E5AF08F7F0AD2566762BED7689292A21 "点击放大")
 
-开发多设备界面时，不同屏幕类型常用的响应式布局可参考[屏幕类型布局场景](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-layout)，包含[直板机竖屏](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-layout#section1919517165814)、[大屏横屏](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-layout#section6493354468)等常见窗口形态和[小方形屏](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-layout#section1395830175918)等特殊窗口形态的适配。
+开发多设备界面时，不同屏幕类型常用的响应式布局可参考[屏幕类型布局场景](/docs/dev/app-dev/multi-device/bpta-multi-device-screen-layout)，包含[直板机竖屏](/docs/dev/app-dev/multi-device/bpta-multi-device-screen-layout#section1919517165814)、[大屏横屏](/docs/dev/app-dev/multi-device/bpta-multi-device-screen-layout#section6493354468)等常见窗口形态和[小方形屏](/docs/dev/app-dev/multi-device/bpta-multi-device-screen-layout#section1395830175918)等特殊窗口形态的适配。
 
 ###视频适配不同尺寸屏幕
 
@@ -73,9 +73,9 @@ format: md
 
 ###开合连续
 
-开合连续指应用在各种屏幕和窗口状态间切换时页面内容连续，切换之前的任务和相关状态能保存、延续，或能够快速恢复，给用户提供连续的体验。主要标准有页面不发生改变和焦点不发生偏移，具体可参考[开合接续](https://developer.huawei.com/consumer/cn/doc/design-guides/foldable-0000002352875141#section5560057912)。应用页面和功能相关的开合连续能力建议使用断点实现，并通过[window.on('windowSizeChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onwindowsizechange7)接口监听。
+开合连续指应用在各种屏幕和窗口状态间切换时页面内容连续，切换之前的任务和相关状态能保存、延续，或能够快速恢复，给用户提供连续的体验。主要标准有页面不发生改变和焦点不发生偏移，具体可参考[开合接续](/docs/design/multi-device-design/folding-screen/foldable#section5560057912)。应用页面和功能相关的开合连续能力建议使用断点实现，并通过[window.on('windowSizeChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onwindowsizechange7)接口监听。
 
-display提供了折叠状态监听的接口，这些接口建议使用在某些应用功能的适配上，比如[适配设备悬停态](#section1223242181220)、[设置多设备上相机预览画面比例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-camera#section882216138497)，但不能用于页面布局的开合连续适配。
+display提供了折叠状态监听的接口，这些接口建议使用在某些应用功能的适配上，比如[适配设备悬停态](#section1223242181220)、[设置多设备上相机预览画面比例](/docs/dev/app-dev/multi-device/bpta-multi-device-camera#section882216138497)，但不能用于页面布局的开合连续适配。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/9b/v3/MCdbU70nSj6hqE7wNVBViw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074230Z&HW-CC-Expire=86400&HW-CC-Sign=CFCA12375FD3707D708D99A5CB439070CE055EB6F1249E367A515B705BC0EA5B)
 
@@ -116,7 +116,7 @@ private onWindowSizeChange: (windowSize: window.Size) => void = (windowSize: win
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/SmallWindowScene/blob/master/entry/src/main/ets/entryability/EntryAbility.ets#L37-L40" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：EntryAbility.ets</a></div>
 
 
-触发断点变化回调后，需要通过断点更新UI布局实现双折叠开合前后布局连续，具体可参考[通过断点刷新UI](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section175001836203617)。
+触发断点变化回调后，需要通过断点更新UI布局实现双折叠开合前后布局连续，具体可参考[通过断点刷新UI](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section175001836203617)。
 
 **可滑动组件的阅读焦点不偏移**
 
@@ -207,6 +207,6 @@ private onWindowSizeChange: (windowSize: window.Size) => void = (windowSize: win
 
 ###悬停态
 
-折叠屏在悬停态下可平稳放置于桌面，实现免手持体验，适用于视频通话、播放视频、拍照及听歌等无需频繁交互的场景。设计规范可参照[悬停态](https://developer.huawei.com/consumer/cn/doc/design-guides/foldable-0000002352875141#section183378919119)。设备在悬停态时，应用需避开中间折痕区域，并对上下两个界面进行悬停适配，重新布局。悬停状态的实现方案可参考[折叠屏悬停态](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-folded-hover)。
+折叠屏在悬停态下可平稳放置于桌面，实现免手持体验，适用于视频通话、播放视频、拍照及听歌等无需频繁交互的场景。设计规范可参照[悬停态](/docs/design/multi-device-design/folding-screen/foldable#section183378919119)。设备在悬停态时，应用需避开中间折痕区域，并对上下两个界面进行悬停适配，重新布局。悬停状态的实现方案可参考[折叠屏悬停态](/docs/dev/app-dev/multi-device/bpta-folded-hover)。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/f/v3/mSSJ_47qTMa7lOqMT2sJqQ/zh-cn_image_0000002506436912.png?HW-CC-KV=V1&HW-CC-Date=20260606T074230Z&HW-CC-Expire=86400&HW-CC-Sign=52934F1002DF24637FBD778CF9FBF6FC8F952B477B34BA2B719C36B31E4BAF86 "点击放大")

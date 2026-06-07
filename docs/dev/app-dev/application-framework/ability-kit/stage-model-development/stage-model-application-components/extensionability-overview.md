@@ -1,6 +1,6 @@
 ---
 title: "ExtensionAbility组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview
 format: md
 ---
 
@@ -20,21 +20,21 @@ format: md
 
 | ExtensionAbility类型 | 功能描述 | 是否允许三方应用实现 | 是否有独立Extension沙箱 |
 | --- | --- | --- | --- |
-| [FormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability) | 卡片扩展能力，用于提供[服务卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview)的相关能力。 | 是 | 否 |
-| [WorkSchedulerExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-workschedulerextensionability) | 延时任务扩展能力，用于提供[延迟任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/work-scheduler)的相关能力。 | 是 | 否 |
-| [InputMethodExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod-extension-ability) | 输入法扩展能力，用于实现[输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-intro)的开发。 | 是 | 是 |
+| [FormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability) | 卡片扩展能力，用于提供[服务卡片](/docs/dev/app-dev/application-framework/form-kit/formkit-overview)的相关能力。 | 是 | 否 |
+| [WorkSchedulerExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-workschedulerextensionability) | 延时任务扩展能力，用于提供[延迟任务](/docs/dev/app-dev/application-framework/background-task-kit/work-scheduler)的相关能力。 | 是 | 否 |
+| [InputMethodExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod-extension-ability) | 输入法扩展能力，用于实现[输入法应用](/docs/dev/app-dev/application-framework/ime-kit/ime-kit-intro)的开发。 | 是 | 是 |
 | ServiceExtensionAbility | 后台服务扩展能力，提供后台运行并对外提供相应能力。  三方应用可以连接该ExtensionAbility，并进行通信。 | 否 | 否 |
 | [AccessibilityExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-accessibilityextensionability) | 无障碍服务扩展能力，支持访问与操作前台界面。 | 是 | 否 |
 | DataShareExtensionAbility | 数据共享扩展能力，用于对外提供数据读写服务。  三方应用可以连接该ExtensionAbility，进行数据读写。 | 否 | 否 |
-| [BackupExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-backupextensionability) | 数据备份扩展能力，用于提供[备份及恢复应用数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-overview)的能力。 | 是 | 否 |
-| [EnterpriseAdminExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterpriseadminextensionability) | [企业设备管理扩展能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-admin)，提供企业管理时处理管理事件的能力，  比如设备上应用安装事件、锁屏密码输入错误次数过多事件等。 | 是 | 否 |
-| [PrintExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-printextensionability) | 文件[打印扩展能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/printextensionabilityguide)，提供应用打印照片、文档等办公场景。 | 是 | 否 |
+| [BackupExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-backupextensionability) | 数据备份扩展能力，用于提供[备份及恢复应用数据](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-overview)的能力。 | 是 | 否 |
+| [EnterpriseAdminExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterpriseadminextensionability) | [企业设备管理扩展能力](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-admin)，提供企业管理时处理管理事件的能力，  比如设备上应用安装事件、锁屏密码输入错误次数过多事件等。 | 是 | 否 |
+| [PrintExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-printextensionability) | 文件[打印扩展能力](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/print/printextensionabilityguide)，提供应用打印照片、文档等办公场景。 | 是 | 否 |
 | [ShareExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-shareextensionability) | 分享扩展组件，用于提供分享模板服务扩展的能力。 | 是 | 否 |
-| [DriverExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-driverextensionability) | 驱动扩展能力，用于提供[驱动相关扩展框架](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driverextensionability)。 | 是 | 否 |
+| [DriverExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-driverextensionability) | 驱动扩展能力，用于提供[驱动相关扩展框架](/docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/driverextensionability)。 | 是 | 否 |
 | [ActionExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-actionextensionability) | 自定义服务扩展能力，为开发者提供基于UIExtension的自定义操作业务模板。 | 是 | 否 |
 | [AdsServiceExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-adsserviceextensionability) | 广告服务扩展能力，对外提供后台自定义广告业务服务。 | 是 | 否 |
-| [EmbeddedUIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-embeddeduiextensionability) | 嵌入式UI扩展能力，提供[跨进程界面嵌入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/embeddeduiextensionability)的能力。 | 是 | 否 |
-| [FenceExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-fenceextensionability) | 地理围栏扩展能力，用于提供[地理围栏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fenceextensionability)扩展的能力。 | 是 | 否 |
+| [EmbeddedUIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-embeddeduiextensionability) | 嵌入式UI扩展能力，提供[跨进程界面嵌入](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/embeddeduiextensionability)的能力。 | 是 | 否 |
+| [FenceExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-fenceextensionability) | 地理围栏扩展能力，用于提供[地理围栏](/docs/dev/app-dev/application-services/location-kit/geofence/fenceextensionability)扩展的能力。 | 是 | 否 |
 | [DistributedExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedextensionability) | 分布式扩展能力，提供分布式创建、销毁、连接的生命周期回调。 | 是 | 否 |
 | [AppServiceExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appserviceextensionability) | 应用后台服务扩展能力，提供应用后台服务的创建、销毁、连接、断开等生命周期回调。 | 是 | 否 |
 | [SelectionExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-selectioninput-selectionextensionability) | 划词扩展能力，提供系统应用后台服务的连接和断开等生命周期回调。 | 是 | 否 |
@@ -62,7 +62,7 @@ format: md
 通常情况下，应用中（同一Bundle名称）所有同一类型的ExtensionAbility均运行在同一个独立进程。以下为例外场景：
 
 * ServiceExtensionAbility（仅系统应用涉及）、DataShareExtensionAbility（仅系统应用涉及）与所有UIAbility均运行在同一个独立进程（主进程）。
-* UIExtensionAbility以及继承该类型的ExtensionAbility可以通过module.json5配置文件中的[extensionProcessMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)字段，配置进程运行模式。
+* UIExtensionAbility以及继承该类型的ExtensionAbility可以通过module.json5配置文件中的[extensionProcessMode](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)字段，配置进程运行模式。
 
 ## 访问指定类型的ExtensionAbility组件
 
@@ -76,11 +76,11 @@ format: md
 
 ## 实现指定类型的ExtensionAbility组件
 
-以实现卡片[FormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability)为例进行说明。卡片框架提供了FormExtensionAbility基类，开发者通过派生此基类（如MyFormExtensionAbility），实现回调（如创建卡片的onCreate()回调、更新卡片的[onUpdateForm()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability#formextensionabilityonupdateform)回调等）来实现具体卡片功能，具体开发指导见[服务卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/formkit-overview)。
+以实现卡片[FormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability)为例进行说明。卡片框架提供了FormExtensionAbility基类，开发者通过派生此基类（如MyFormExtensionAbility），实现回调（如创建卡片的onCreate()回调、更新卡片的[onUpdateForm()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability#formextensionabilityonupdateform)回调等）来实现具体卡片功能，具体开发指导见[服务卡片](/docs/dev/app-dev/application-framework/form-kit/formkit-overview)。
 
 卡片FormExtensionAbility实现方不用关心使用方何时去请求添加、删除卡片，FormExtensionAbility实例及其所在的[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-extensionability)进程的整个生命周期，都是由卡片管理系统服务FormManagerService进行调度管理。
 
 ![](./img/f5e0ea50.png)
 
-* **[EmbeddedUIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/embeddeduiextensionability)**
-* **[使用AppServiceExtensionAbility组件实现后台服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-service-extension-ability)**
+* **[EmbeddedUIExtensionAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/embeddeduiextensionability)**
+* **[使用AppServiceExtensionAbility组件实现后台服务](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/app-service-extension-ability)**

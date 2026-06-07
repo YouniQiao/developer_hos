@@ -1,7 +1,7 @@
 ---
 title: "卡片规格"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-fa-spec-guide-size-0000002396467028
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-size-0000002396467028
 format: md
 ---
 

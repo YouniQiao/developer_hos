@@ -1,16 +1,16 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "拍照实践(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting-case
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting-case
 format: md
 ---
 
 
-在开发相机应用时，需要先[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。
+在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 当前示例提供完整的拍照流程介绍，方便开发者了解完整的接口调用顺序。
 
-在参考以下示例前，建议开发者查看[相机开发指导(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-management)的具体章节，了解[设备输入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-input)、[会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management)、[拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting)等单个流程。
+在参考以下示例前，建议开发者查看[相机开发指导(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management)的具体章节，了解[设备输入](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-input)、[会话管理](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management)、[拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting)等单个流程。
 
 ## 开发流程
 
@@ -20,9 +20,9 @@ format: md
 
 ## 完整示例
 
-Context获取方式请参考：[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+Context获取方式请参考：[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
-如需要在图库中看到所保存的图片、视频资源，需要将其保存到媒体库，保存方式请参考：[保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
+如需要在图库中看到所保存的图片、视频资源，需要将其保存到媒体库，保存方式请参考：[保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
 
 需要在[photoOutput.on('photoAvailable')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photooutput#onphotoavailable11)接口获取到buffer时，将buffer在安全控件中保存到媒体库。
 

@@ -1,7 +1,7 @@
 ---
 title: "代码实时检查及快速修复"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-realtime-check
+original_url: /docs/tools/coding-debug/ide-realtime-check
 format: md
 ---
 

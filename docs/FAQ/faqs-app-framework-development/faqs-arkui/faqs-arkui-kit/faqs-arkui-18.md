@@ -1,6 +1,6 @@
 ---
 title: "如何解决Web与List的嵌套滑动冲突"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-18
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-18
 format: md
 ---
 

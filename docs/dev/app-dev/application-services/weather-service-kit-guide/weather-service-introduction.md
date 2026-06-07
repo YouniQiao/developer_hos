@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Weather Service Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/weather-service-introduction
+original_url: /docs/dev/app-dev/application-services/weather-service-kit-guide/weather-service-introduction
 format: md
 ---
 

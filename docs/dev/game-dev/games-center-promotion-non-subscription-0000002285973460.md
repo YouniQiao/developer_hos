@@ -1,6 +1,6 @@
 ---
 title: "消耗型/非消耗型/非续期订阅商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-promotion-non-subscription-0000002285973460
+original_url: /docs/dev/game-dev/games-center-promotion-non-subscription-0000002285973460
 format: md
 ---
 

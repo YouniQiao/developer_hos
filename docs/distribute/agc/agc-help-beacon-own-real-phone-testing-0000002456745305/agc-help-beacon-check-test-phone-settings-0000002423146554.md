@@ -1,6 +1,6 @@
 ---
 title: "检查测试手机设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-check-test-phone-settings-0000002423146554
+original_url: /docs/distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-check-test-phone-settings-0000002423146554
 format: md
 ---
 
@@ -12,12 +12,12 @@ format: md
 
      如果您的应用已上架，则进入华为应用市场下载至测试手机并安装应用。
 
-     如果您的应用尚未正式上架，则通过[邀请测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-invite-test-overview-0000002287701773)的方式下载至测试手机并安装应用。
+     如果您的应用尚未正式上架，则通过[邀请测试](/docs/distribute/agc/agc-help-invite-test-0000002270829393/agc-help-invite-test-overview-0000002287701773)的方式下载至测试手机并安装应用。
    * 应用类型是元服务
 
      如果您的元服务已上架华为应用市场，则跳过本步骤。
 
-     如果您的元服务尚未上架华为应用市场，则通过[邀请测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-invite-test-overview-0000002287701773)的方式将未上架的元服务加载至测试手机。
+     如果您的元服务尚未上架华为应用市场，则通过[邀请测试](/docs/distribute/agc/agc-help-invite-test-0000002270829393/agc-help-invite-test-overview-0000002287701773)的方式将未上架的元服务加载至测试手机。
 2. 测试手机登录华为账号，且须确保华为账号绑定的手机号已添加到测试用户列表中。
 
    ![](../img/agc-help-beacon-check-test-phone-settings-0000002423146554_0.png "点击放大")

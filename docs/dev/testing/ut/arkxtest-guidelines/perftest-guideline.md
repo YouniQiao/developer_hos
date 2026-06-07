@@ -1,6 +1,6 @@
 ---
 title: "白盒性能测试框架使用指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perftest-guideline
+original_url: /docs/dev/testing/ut/arkxtest-guidelines/perftest-guideline
 format: md
 ---
 

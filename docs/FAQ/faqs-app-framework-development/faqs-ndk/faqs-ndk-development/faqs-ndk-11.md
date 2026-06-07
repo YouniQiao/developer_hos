@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在Native侧往用户目录写临时文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-11
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-11
 ---
 
 
@@ -53,4 +53,4 @@ napi_value WriteFile::WriteTemporaryFile(napi_env env, napi_callback_info info) 
 }
 ```
 
-用户可访问的目录可参考以下链接：[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)
+用户可访问的目录可参考以下链接：[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)

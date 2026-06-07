@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "权限说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description
 format: md
 ---
 
 
-运动健康数据读写以及运动联动接口调用需要相应的权限，权限申请参考[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-apply)，数据类型对应权限如下：
+运动健康数据读写以及运动联动接口调用需要相应的权限，权限申请参考[申请运动健康服务](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply)，数据类型对应权限如下：
 
 ## Wearable
 

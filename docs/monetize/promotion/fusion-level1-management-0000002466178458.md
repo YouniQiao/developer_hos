@@ -1,7 +1,7 @@
 ---
 title: "账号管理"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-level1-management-0000002466178458
+original_url: /docs/monetize/promotion/fusion-level1-management-0000002466178458
 format: md
 ---
 

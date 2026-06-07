@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "推送实况窗消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-update-liveview
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-update-liveview
 format: md
 ---
 
 
 ## 场景介绍
 
-实况窗是一种帮助用户聚焦正在进行的任务，方便快速查看和即时处理的通知形态。有关实况窗简介、权限申请、开放场景、设计规范等说明，请参见[Live View Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction)。
+实况窗是一种帮助用户聚焦正在进行的任务，方便快速查看和即时处理的通知形态。有关实况窗简介、权限申请、开放场景、设计规范等说明，请参见[Live View Kit简介](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-introduction)。
 
 通过Push Kit发送的实况窗消息支持三种操作类型，分别是：
 
@@ -22,7 +22,7 @@ format: md
 
 推送实况窗消息仅支持Phone、Tablet设备。
 
-有关场景类型的详细说明请参见[支持的范围与场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction#支持的范围与场景)。
+有关场景类型的详细说明请参见[支持的范围与场景](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-introduction#支持的范围与场景)。
 
 根据创建实况窗的方式不同，通过Push Kit发送实况窗消息的流程有所区别。
 
@@ -53,7 +53,7 @@ format: md
 
 ## 开通权益
 
-推送实况窗消息前您需要开通对应的场景权益，可参见[开通实况窗权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-formal-authority)完成权益的申请。
+推送实况窗消息前您需要开通对应的场景权益，可参见[开通实况窗权益](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-formal-authority)完成权益的申请。
 
 ![](./img/f505e633.png)
 
@@ -69,10 +69,10 @@ format: md
 
 ## 开发步骤
 
-1. 参见指导[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
+1. 参见指导[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)。
 2. 根据应用情况选择创建实况窗的方式：
 
-   * 通过Live View Kit创建本地实况窗，详细内容请参见[构建本地实况窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-create-locally)。
+   * 通过Live View Kit创建本地实况窗，详细内容请参见[构建本地实况窗](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-scenes/liveview-create-locally)。
    * 通过Push Kit远程创建实况窗，需满足[创建实况窗约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#创建实况窗约束)。以出行打车场景为例，消息示例如下：
 
      ```
@@ -164,7 +164,7 @@ format: md
      + status：表示实况窗消息状态。operation为0时必填，取值范围根据场景类型而定，详情见[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)，并且需要在[支持携带占位符的字段](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#支持携带占位符的字段)填入至少一次status的占位符\{\{status\}\}，Push Kit将替换占位符\{\{status\}\}为[Status取值范围](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#status取值范围)中对应的值。
      + activityData：填写您项目中的实况窗数据。详情请参见[activityData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#activitydata)。
      + type：实况窗布局类型，有进度可视化类、强调文本类等。创建实况窗时每种event仅可使用特定的布局类型，详情请参见[创建实况窗约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#创建实况窗约束)。
-     + token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)获取。
+     + token：Push Token，可参见[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)获取。
 3. 当用户的服务订单状态发生变化时，开发者可以调用Push Kit服务端开放的REST API服务接口，更新或者结束实况窗。
 
    消息详情可参见[场景化消息API接口功能介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro)。（若开发者更新的实况窗为通过Push Kit远程创建的实况窗，更新时请遵守[创建实况窗约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#创建实况窗约束)）
@@ -255,7 +255,7 @@ format: md
    * version：更新实况窗通知的版本号。详情请参见[version](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#liveviewpayload-实况窗消息)。
    * activityData：填写您项目中的实况窗数据。详情请参见[activityData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#activitydata)。
    * type：实况窗布局类型，有进度可视化类、强调文本类等。详情请参见[type](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notificationdata)。
-   * token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)获取。
+   * token：Push Token，可参见[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)获取。
 
      ![](./img/d1bb1560.png)
 

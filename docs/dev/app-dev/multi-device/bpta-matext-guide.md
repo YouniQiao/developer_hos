@@ -1,7 +1,7 @@
 ---
 title: "三折叠应用开发"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-matext-guide
+original_url: /docs/dev/app-dev/multi-device/bpta-matext-guide
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 
 ![](./img/3265d599.png)
 
-本文聚焦于三折叠应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)”系列文章。
+本文聚焦于三折叠应用的体验提升开发指导。如需多设备开发的基础通用能力指导，请参考“[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)”系列文章。
 
 ## 产品硬件说明
 
@@ -136,8 +136,8 @@ format: md
 
 ![](./img/e311cfb6.png)
 
-* 布局适配应优先基于响应式断点，而非设备折叠状态。统一通过横纵向[断点](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1532120147301)判断页面布局，确保在不同屏幕状态下实现一致的响应式表现。切勿直接以设备折叠状态作为布局判断依据，避免因设备差异导致显示异常（如Pura X的FOLD\_STATUS\_EXPANDED状态对应的是展开态，为直板机布局；而三折叠的FOLD\_STATUS\_EXPANDED状态对应的是双屏态，应为大方形屏布局）。
-* 仅悬停态等特殊场景可针对性优化，此类场景可借助折叠状态实现专属布局设计，效果可参考[典型悬停适配案例](https://developer.huawei.com/consumer/cn/doc/design-guides/foldable-0000002352875141#section12307164615117)。
+* 布局适配应优先基于响应式断点，而非设备折叠状态。统一通过横纵向[断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1532120147301)判断页面布局，确保在不同屏幕状态下实现一致的响应式表现。切勿直接以设备折叠状态作为布局判断依据，避免因设备差异导致显示异常（如Pura X的FOLD\_STATUS\_EXPANDED状态对应的是展开态，为直板机布局；而三折叠的FOLD\_STATUS\_EXPANDED状态对应的是双屏态，应为大方形屏布局）。
+* 仅悬停态等特殊场景可针对性优化，此类场景可借助折叠状态实现专属布局设计，效果可参考[典型悬停适配案例](/docs/design/multi-device-design/folding-screen/foldable#section12307164615117)。
 
 ## 创新与体验提升
 
@@ -163,13 +163,13 @@ format: md
 
 ###悬停态适配
 
-三折叠在双屏态下可切换至悬停态。悬停态支持设备平稳放置于桌面，实现免手持体验，常用于视频通话、视频播放、拍照、听歌等不需要频繁交互的场景。这种状态下，应用需要对中间折痕区域进行避让，并对上下两个界面进行悬停态布局适配。悬停态的实现方案可参考[折叠屏悬停态](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-folded-hover)。
+三折叠在双屏态下可切换至悬停态。悬停态支持设备平稳放置于桌面，实现免手持体验，常用于视频通话、视频播放、拍照、听歌等不需要频繁交互的场景。这种状态下，应用需要对中间折痕区域进行避让，并对上下两个界面进行悬停态布局适配。悬停态的实现方案可参考[折叠屏悬停态](/docs/dev/app-dev/multi-device/bpta-folded-hover)。
 
 ![](./img/bb592829.png "点击放大")
 
 ###开合适配
 
-开合连续指应用在屏幕形态与窗口状态切换时，保持页面内容连贯，延续任务进度与运行状态。支持用户快速接续切换前的操作，打造流畅的切换体验。例如三折叠设备在单屏态、双屏态和三屏态之间切换时，应用页面内容保持不变、状态无缝接续，保障使用体验不受影响。具体实现方案，可参考[开合连续](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-diff#section16541144511135)章节。
+开合连续指应用在屏幕形态与窗口状态切换时，保持页面内容连贯，延续任务进度与运行状态。支持用户快速接续切换前的操作，打造流畅的切换体验。例如三折叠设备在单屏态、双屏态和三屏态之间切换时，应用页面内容保持不变、状态无缝接续，保障使用体验不受影响。具体实现方案，可参考[开合连续](/docs/dev/app-dev/multi-device/bpta-multi-device-screen-diff#section16541144511135)章节。
 
 ###悬浮组件
 
@@ -179,15 +179,15 @@ format: md
 
 ###视频自适应沉浸
 
-三折叠设备具备单屏、双屏、三屏三种形态，为避免视频播放画面在形态切换时出现拉伸、裁剪、显示比例错乱等问题，可采用自适应沉浸全屏播放方案，精简界面元素、减少视觉干扰，让用户聚焦视频画面，充分利用大屏开阔视野，有效提升观看体验。具体实现方案，可参考[视频适配不同尺寸屏幕](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-diff#section1452572513130)章节。
+三折叠设备具备单屏、双屏、三屏三种形态，为避免视频播放画面在形态切换时出现拉伸、裁剪、显示比例错乱等问题，可采用自适应沉浸全屏播放方案，精简界面元素、减少视觉干扰，让用户聚焦视频画面，充分利用大屏开阔视野，有效提升观看体验。具体实现方案，可参考[视频适配不同尺寸屏幕](/docs/dev/app-dev/multi-device/bpta-multi-device-screen-diff#section1452572513130)章节。
 
 ![](./img/89d75bf6.gif "点击放大")
 
 ###手写笔适配
 
-三折叠的交互方式主要为触控屏，常见的操作有点击、双击、长按、拖拽等，应用可根据这些操作进行功能适配，详情可参考[多设备交互](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction)。
+三折叠的交互方式主要为触控屏，常见的操作有点击、双击、长按、拖拽等，应用可根据这些操作进行功能适配，详情可参考[多设备交互](/docs/dev/app-dev/multi-device/bpta-multi-interaction)。
 
-Mate XTs产品搭载手写笔，支持无感连接与低延迟传输，开盒即用，适用于全局批注、提笔速记及按键遥控等功能场景，实现流畅自然的书写与交互体验。系统提供的[Pen Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-introduction)能力，可助力开发者灵活接入手写套件、全局取色、一笔成形等接口，提升书写交互的扩展性与创作效率。
+Mate XTs产品搭载手写笔，支持无感连接与低延迟传输，开盒即用，适用于全局批注、提笔速记及按键遥控等功能场景，实现流畅自然的书写与交互体验。系统提供的[Pen Kit](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-introduction)能力，可助力开发者灵活接入手写套件、全局取色、一笔成形等接口，提升书写交互的扩展性与创作效率。
 
 ![](./img/faa12395.png "点击放大")
 
@@ -195,8 +195,8 @@ Mate XTs产品搭载手写笔，支持无感连接与低延迟传输，开盒即
 
 除触控屏交互外，三折叠还支持外接键鼠进行交互。以Mate XTs产品为例，键鼠交互事件的适配应包含：
 
-* 鼠标悬浮效果：三折叠设备中，应用内可交互UI组件建议适配鼠标悬浮效果。开发方案请参考[交互归一](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section088812013815)进行适配。
-* 键盘快捷键：应用需支持常用快捷键响应，提升用户操作效率。开发方案请参考[交互归一](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section088812013815)进行适配。
+* 鼠标悬浮效果：三折叠设备中，应用内可交互UI组件建议适配鼠标悬浮效果。开发方案请参考[交互归一](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section088812013815)进行适配。
+* 键盘快捷键：应用需支持常用快捷键响应，提升用户操作效率。开发方案请参考[交互归一](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section088812013815)进行适配。
 
 ![](./img/da19622f.png)
 
@@ -204,15 +204,15 @@ Mate XTs产品搭载手写笔，支持无感连接与低延迟传输，开盒即
 
 ###焦点导航
 
-三折叠设备接入键盘与应用程序进行间接交互时，建议将页面中可操作元素设置为可获焦状态，并配置获焦视觉效果，清晰指示当前焦点位置，以保证交互体验。开发方案请参考[焦点事件](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section168661941154220)。
+三折叠设备接入键盘与应用程序进行间接交互时，建议将页面中可操作元素设置为可获焦状态，并配置获焦视觉效果，清晰指示当前焦点位置，以保证交互体验。开发方案请参考[焦点事件](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section168661941154220)。
 
 ![](./img/aab19760.png)
 
-通常情况下，三折叠设备以触控交互为主，可通过[交互归一](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction#section088812013815)完成基础适配；当外接键鼠时，可额外适配鼠标悬浮效果、键盘快捷键及焦点导航，完善多输入方式的操作体验。
+通常情况下，三折叠设备以触控交互为主，可通过[交互归一](/docs/dev/app-dev/multi-device/bpta-multi-interaction#section088812013815)完成基础适配；当外接键鼠时，可额外适配鼠标悬浮效果、键盘快捷键及焦点导航，完善多输入方式的操作体验。
 
 ###全景多窗
 
-[全景多窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro#全景多窗)旨在帮助用户高效处理多个任务。通过全景多窗，用户可以突破物理屏幕局限，在同一屏幕内并行运行多款应用，实现应用间快捷切换，提升操作效率。以Mate XTs产品为例，该产品三屏态横屏状态下拥有更大的显示视野，具备更强的信息展示与内容承载能力。该产品可依托全景多窗能力，充分利用大屏空间优势，最高支持三个窗口同屏并行运行，助力用户一边浏览资讯、一边编辑内容、一边沟通办公，多任务同步处理、互不冲突，实现办公、娱乐、日常操作一站式协同。
+[全景多窗](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-intro#全景多窗)旨在帮助用户高效处理多个任务。通过全景多窗，用户可以突破物理屏幕局限，在同一屏幕内并行运行多款应用，实现应用间快捷切换，提升操作效率。以Mate XTs产品为例，该产品三屏态横屏状态下拥有更大的显示视野，具备更强的信息展示与内容承载能力。该产品可依托全景多窗能力，充分利用大屏空间优势，最高支持三个窗口同屏并行运行，助力用户一边浏览资讯、一边编辑内容、一边沟通办公，多任务同步处理、互不冲突，实现办公、娱乐、日常操作一站式协同。
 
 ![](./img/847f3b48.png "点击放大")
 
@@ -226,7 +226,7 @@ Mate XTs产品搭载手写笔，支持无感连接与低延迟传输，开盒即
 
 可能原因：开发者使用“deviceType === tablet”作为lg断点布局的判断条件，仅适配了平板设备，导致三折叠G态无法匹配正确布局，出现显示异常。
 
-解决方案：UX布局应依据窗口尺寸与窗口形状判断，而非物理设备类型。同一套UX布局需在不同设备的相同尺寸窗口下保持一致：三折叠G态与平板布局保持一致，M态与双折叠展开态布局保持一致，F态与直板机布局保持一致。建议使用断点方案替代设备形态接口，实现统一的UX布局判断逻辑，详细说明可参考[断点](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1532120147301)。
+解决方案：UX布局应依据窗口尺寸与窗口形状判断，而非物理设备类型。同一套UX布局需在不同设备的相同尺寸窗口下保持一致：三折叠G态与平板布局保持一致，M态与双折叠展开态布局保持一致，F态与直板机布局保持一致。建议使用断点方案替代设备形态接口，实现统一的UX布局判断逻辑，详细说明可参考[断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1532120147301)。
 
 ![](./img/7fbb0b6c.png)
 
@@ -241,7 +241,7 @@ Mate XTs产品搭载手写笔，支持无感连接与低延迟传输，开盒即
 
 可能原因：应用未配置增强启动页。
 
-解决方案：应用需要[配置增强启动页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page-config#配置增强启动页)，配置后启动页面中的背景、图片和图标等资源能根据窗口大小自适应填充，保证启动页面在不同设备形态上正常显示，配置中各标签的说明可参考[startWindow标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#startwindow标签)。
+解决方案：应用需要[配置增强启动页](/docs/dev/app-dev/application-framework/arkui/window-manager/launch-page/launch-page-config#配置增强启动页)，配置后启动页面中的背景、图片和图标等资源能根据窗口大小自适应填充，保证启动页面在不同设备形态上正常显示，配置中各标签的说明可参考[startWindow标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#startwindow标签)。
 
 ###异常旋转
 
@@ -251,7 +251,7 @@ Mate XTs产品搭载手写笔，支持无感连接与低延迟传输，开盒即
 
 可能原因：开发者通过判断双折叠设备的折叠状态为FoldStatus.FOLD\_STATUS\_EXPANDED（展开态）时开启旋转支持，其余状态默认竖屏；但三折叠G态对应的折叠状态为FoldStatus.FOLD\_STATUS\_EXPANDED\_WITH\_SECOND\_EXPANDED，与双折叠判定逻辑不匹配，因此无法触发旋转，仅能竖屏显示。
 
-解决方案：应用可使用[跟随桌面的旋转策略](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction#section3434202623320)，通过修改module.json5配置文件中的orientation属性为FOLLOW\_DESKTOP解决该问题。
+解决方案：应用可使用[跟随桌面的旋转策略](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction#section3434202623320)，通过修改module.json5配置文件中的orientation属性为FOLLOW\_DESKTOP解决该问题。
 
 **折叠开合过程导致屏幕显示方向变化**
 

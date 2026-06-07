@@ -1,7 +1,7 @@
 ---
 title: "前台场景内存峰值占用"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-peak-foreground-memory-usage-0418
+original_url: /docs/tools/coding-debug/ide-peak-foreground-memory-usage-0418
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "SDK命令行工具简介"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/command-line-tools-overview
+original_url: /docs/tools/cli-tools/command-line-tools-overview
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "使用须知"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-converter-use-0000002494279248
+original_url: /docs/dev/game-dev/pgd-tool-converter-use-0000002494279248
 format: md
 ---
 

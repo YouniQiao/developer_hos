@@ -1,6 +1,6 @@
 ---
 title: "rawheap-translator工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawheap-translator
+original_url: /docs/dev/app-dev/system/rawheap-translator
 format: md
 ---
 
@@ -132,7 +132,7 @@ MacOS系统中解析示例
 
 ## 文件参考规格
 
-rawheap文件的大小和生成耗时与当前ArkTS堆内存大小及存活对象数量呈强正相关。当ArkTS堆内存占用较大、存活对象数量较多时，生成的rawheap文件会更大，耗时也会更长。开发者可以订阅[资源泄漏事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events)，自定义事件处理逻辑。
+rawheap文件的大小和生成耗时与当前ArkTS堆内存大小及存活对象数量呈强正相关。当ArkTS堆内存占用较大、存活对象数量较多时，生成的rawheap文件会更大，耗时也会更长。开发者可以订阅[资源泄漏事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events)，自定义事件处理逻辑。
 
 从API version 20开始，虚拟机支持两种规格的HeapDump，具体切换操作可参考[设置当前进程转储虚拟机原始堆快照的裁剪级别](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hidebug#hidebugsetjsrawheaptrimlevel20)。
 

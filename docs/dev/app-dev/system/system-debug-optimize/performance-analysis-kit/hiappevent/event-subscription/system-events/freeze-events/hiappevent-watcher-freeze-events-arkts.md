@@ -1,6 +1,6 @@
 ---
 title: "订阅应用冻屏事件（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events-arkts
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events/hiappevent-watcher-freeze-events-arkts
 format: md
 ---
 
@@ -173,7 +173,7 @@ format: md
    HiAppEvent eventInfo.params.process_life_time=18
    HiAppEvent eventInfo.params.external_callback_log=THREAD_BLOCK_3S:log3s THREAD_BLOCK_6S:log6s
    ```
-2. 若应用无法启动或长时间未启动，开发者可以参考[使用FaultLogExtensionAbility订阅事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-log-extension-app-events-arkts)回调重写的函数，进行延迟上报。
+2. 若应用无法启动或长时间未启动，开发者可以参考[使用FaultLogExtensionAbility订阅事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/fault-log-extension-app-events-arkts)回调重写的函数，进行延迟上报。
 
 ## 从Faultlogger接口迁移应用冻屏事件
 
@@ -183,9 +183,9 @@ format: md
 
 在hiAppEvent的hiAppEvent.addWatcher接口中设置事件名称为hiAppEvent.event.APP\_FREEZE、事件领域为hiAppEvent.domain.OS，可以订阅应用冻屏事件。
 
-通过[hiAppEvent.AppEventInfo.params](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events#params字段说明)中exception字段的name子字段可以区分具体是哪种应用冻屏事件。
+通过[hiAppEvent.AppEventInfo.params](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events/hiappevent-watcher-freeze-events#params字段说明)中exception字段的name子字段可以区分具体是哪种应用冻屏事件。
 
-[FaultLogInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-faultlogger#faultloginfo)与[hiAppEvent.AppEventInfo.params](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events#params字段说明)的字段对应关系如下：
+[FaultLogInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-faultlogger#faultloginfo)与[hiAppEvent.AppEventInfo.params](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events/hiappevent-watcher-freeze-events#params字段说明)的字段对应关系如下：
 
 | Faultlogger.FaultLogInfo | hiAppEvent.AppEventInfo.params | 说明 |
 | --- | --- | --- |

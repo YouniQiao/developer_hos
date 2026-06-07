@@ -1,6 +1,6 @@
 ---
 title: "游戏多媒体"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-gamemme-service-0000002317894888
+original_url: /docs/dev/game-dev/games-quickgame-runtime-gamemme-service-0000002317894888
 format: md
 ---
 
@@ -16,8 +16,8 @@ format: md
 * **客户端**将实现点对点消息收发、频道订阅、频道消息收发以及RTM连接状态监听等能力，可用于实现实时通信、全局聊天、游戏通知、指令同步等功能。
 * **服务端**将实现点对点消息以及频道消息发送能力，可用于发送游戏公告、消息通知等游戏使用场景。
 
-详细接入流程请参考[实时信令接入指导](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rtm-connection-minigame-0000002393266949)。
+详细接入流程请参考[实时信令接入指导](/docs/dev/game-dev/games-gamemme-rtm-connection-minigame-0000002393266949)。
 
 ## 语音消息
 
-游戏多媒体SDK提供了录制/播放语音消息、上传/下载语音文件的能力，支持玩家在游戏内录制一段语音消息并将录制文件上传至云端，其他玩家通过云端的录制文件ID下载并播放该语音内容。详细接入流程请参考[语音消息接入指导](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-record-play-audio-msg-minigame-0000002359547158)。
+游戏多媒体SDK提供了录制/播放语音消息、上传/下载语音文件的能力，支持玩家在游戏内录制一段语音消息并将录制文件上传至云端，其他玩家通过云端的录制文件ID下载并播放该语音内容。详细接入流程请参考[语音消息接入指导](/docs/dev/game-dev/games-gamemme-record-play-audio-msg-minigame-0000002359547158)。

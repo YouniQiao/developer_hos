@@ -1,7 +1,7 @@
 ---
 format: md
 title: "网络相关的三方库有哪些"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-34
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-34
 ---
 
 

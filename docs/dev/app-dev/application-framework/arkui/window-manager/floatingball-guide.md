@@ -1,6 +1,6 @@
 ---
 title: "全局闪控球开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/floatingball-guide
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/floatingball-guide
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 ## 约束与限制
 
-* 基于安全考虑，仅允许应用在前台时启动闪控球，并且需要具有[ohos.permission.USE\_FLOAT\_BALL](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionuse_float_ball)权限，具体可见[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+* 基于安全考虑，仅允许应用在前台时启动闪控球，并且需要具有[ohos.permission.USE\_FLOAT\_BALL](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionuse_float_ball)权限，具体可见[申请受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。
 * 当前仅对跨应用的题目搜索、账单记录、商品比价、抢单、翻译场景，以及金融类应用的实时盯盘场景开放此权限。接入后需在以上场景范围内使用，否则将会进行相关处罚与限制。
 * 同一个应用只能启动一个闪控球，同一个设备最多同时存在两个闪控球，在超出闪控球最大个数限制时，打开新的闪控球会替换最早启动的闪控球。
 * 仅支持手机和平板设备。

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如何主动通过手势缩放变焦比"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-14
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-14
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 **解决措施**
 
-通过[组合手势](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-combined-gestures)接口设置变焦比setZoom(zoomValue : number): void。
+通过[组合手势](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-combined-gestures)接口设置变焦比setZoom(zoomValue : number): void。
 
 参考下面示例代码，在手势缩放过程和手势缩放结束的接口中都可以设置变焦比变化：
 

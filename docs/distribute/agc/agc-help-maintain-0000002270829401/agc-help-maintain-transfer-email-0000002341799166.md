@@ -1,6 +1,6 @@
 ---
 title: "应用转移申请邮件模板"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-transfer-email-0000002341799166
+original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-transfer-email-0000002341799166
 format: md
 ---
 
@@ -27,4 +27,4 @@ format: md
 
 ![](../img/agc-help-maintain-transfer-email-0000002341799166_0.png)
 
-Developer ID和APP ID的获取方式可参考[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。
+Developer ID和APP ID的获取方式可参考[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。

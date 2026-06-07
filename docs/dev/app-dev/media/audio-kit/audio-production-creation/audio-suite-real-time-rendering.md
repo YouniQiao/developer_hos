@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "实时渲染(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-real-time-rendering
+original_url: /docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-real-time-rendering
 format: md
 ---
 
@@ -152,7 +152,7 @@ target_link_libraries(sample PUBLIC libohaudio.so libohaudiosuite.so)
    * 离线编辑：OH\_AudioSuite\_PipelineWorkMode::AUDIOSUITE\_PIPELINE\_EDIT\_MODE
 2. 创建[OH\_AudioRendererStruct](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio-oh-audiorendererstruct)实例，并在其AudioRendererOnWriteData()回调函数中调用[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)管线的[OH\_AudioSuiteEngine\_RenderFrame()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audio-suite-engine-h#oh_audiosuiteengine_renderframe)接口来处理数据。
 
-   请参考音频播放完成音频播放功能开发：[使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)。
+   请参考音频播放完成音频播放功能开发：[使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)。
 3. 在播放器的回调函数中，将处理后的数据复制到OH\_AudioRenderer实例的缓冲区中，实现音频播放过程中实时渲染。
 
    ```

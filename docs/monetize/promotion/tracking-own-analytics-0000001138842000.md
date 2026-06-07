@@ -1,7 +1,7 @@
 ---
 title: "自有分析工具"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/tracking-own-analytics-0000001138842000
+original_url: /docs/monetize/promotion/tracking-own-analytics-0000001138842000
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ## 操作步骤
 
-1. 按照鲸鸿动能广告平台的线索转化回传API接口进行集成，并回传转化数据给鲸鸿动能广告平台，API集成指南请参考[API集成指南](https://developer.huawei.com/consumer/cn/doc/promotion/attachments-0000001532611905#ZH-CN_TOPIC_0000001532611905__li631314557261)。
+1. 按照鲸鸿动能广告平台的线索转化回传API接口进行集成，并回传转化数据给鲸鸿动能广告平台，API集成指南请参考[API集成指南](/docs/monetize/promotion/attachments-0000001532611905#ZH-CN_TOPIC_0000001532611905__li631314557261)。
 
    如果您希望统计付费指标的金额，可以在进行转化回传时将转化金额进行回传，鲸鸿动能广告平台会将转化金额进行累加展示在报表的“付费金额”字段。
 
@@ -40,10 +40,10 @@ format: md
    2. 新建事件。
 
       ![](./img/zh-cn_image_0000002313882693_9000a6879192.png)
-      - <strong>事件类别：</strong>指的是您可以跟踪的转化动作，仅支持单选。如果您要添加多个转化动作，您可以创建多个线索跟踪进行跟踪，详情可参考[转化数据](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-shu-0000001139892541#ZH-CN_TOPIC_0000001139892541__table10838115914391)。
+      - <strong>事件类别：</strong>指的是您可以跟踪的转化动作，仅支持单选。如果您要添加多个转化动作，您可以创建多个线索跟踪进行跟踪，详情可参考[转化数据](/docs/monetize/promotion/tracking-shu-0000001139892541#ZH-CN_TOPIC_0000001139892541__table10838115914391)。
       - <strong>事件名称：</strong>设置一个清晰易懂的计划名称，转化名称仅用于转化列表管理且唯一，例如：线索+转化类别，设置完成后转化名称可编辑修改。
       - <strong>点击归因时间范围：</strong>点击归因时间7-30天（默认30天），指的是广告点击发生后，最长可以在多长时间内统计转化次数。初始归因时间为默认值，归因时间支持编辑，提交后不可修改。
-      - <strong>转化价值：</strong>为转化指定价值可以衡量广告的影响力，币种随您广告账户的币种而定，此功能需要申请[通行名单](https://developer.huawei.com/consumer/cn/doc/promotion/addtongxing-0000001128278195)。
+      - <strong>转化价值：</strong>为转化指定价值可以衡量广告的影响力，币种随您广告账户的币种而定，此功能需要申请[通行名单](/docs/monetize/promotion/addtongxing-0000001128278195)。
         - 为每次转化使用相同的价值：如果您要跟踪潜在客户，建议输入每个潜在客户带来的平均价值。例如，如果您仅销售一种价格为 20 元的产品，请将价值指定为 20 元。这样，对于每笔销售，鲸鸿动能广告就会统计 20 元的价值。
         - 为每次转化使用不同的价值：您可以为某一种转化的不同产品指定不同价值。当您使用API回传时，转化事件将会回传不同的转化价值。如果您没有回传不同的转化价值，您可以输入默认价值，系统将以默认价值进行回传。
         - 不为此转化操作指定价值：对于大部分转化，不建议采用此选项，因为指定价值有助于您衡量广告的影响力，如果选择此选项，转化价值始终为0。

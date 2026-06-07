@@ -1,7 +1,7 @@
 ---
 title: "转场操作流畅"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-smooth-for-transition-0414
+original_url: /docs/tools/coding-debug/ide-smooth-for-transition-0414
 format: md
 ---
 

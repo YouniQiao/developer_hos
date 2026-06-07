@@ -1,7 +1,7 @@
 ---
 title: "HAP唯一性校验逻辑"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-verification-rule
+original_url: /docs/tools/coding-debug/ide-hvigor-verification-rule
 format: md
 ---
 

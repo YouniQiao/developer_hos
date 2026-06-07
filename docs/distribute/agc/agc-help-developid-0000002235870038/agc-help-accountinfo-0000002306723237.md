@@ -1,6 +1,6 @@
 ---
 title: "管理开发者账号"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-accountinfo-0000002306723237
+original_url: /docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-accountinfo-0000002306723237
 format: md
 ---
 
@@ -80,7 +80,7 @@ format: md
 
 #### 查看角色和权限
 
-在AppGallery Connect的“用户与访问”模块的“用户 > 个人信息”菜单下，您可以查看您当前账号的角色和权限。作为账号持有者，拥有所有权限，作为团队账号的子账号，角色和权限由账号持有者分配，有关团队账号的具体说明，请参见[管理团队账号](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129)。
+在AppGallery Connect的“用户与访问”模块的“用户 > 个人信息”菜单下，您可以查看您当前账号的角色和权限。作为账号持有者，拥有所有权限，作为团队账号的子账号，角色和权限由账号持有者分配，有关团队账号的具体说明，请参见[管理团队账号](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129)。
 
 ![](../img/agc-help-accountinfo-0000002306723237_16.png)
 

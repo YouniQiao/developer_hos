@@ -1,11 +1,11 @@
 ---
 title: "form"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-form
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-form
 format: md
 ---
 
 
-表单。用于提交组件内的用户输入的[switch](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-switch)、[input](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-input)、[checkbox](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-checkbox)、[slider](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-slider)、[radio](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-radio)、[picker](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker)。
+表单。用于提交组件内的用户输入的[switch](/docs/dev/atomic-dev/ascf/components-form-components/components-switch)、[input](/docs/dev/atomic-dev/ascf/components-form-components/components-input)、[checkbox](/docs/dev/atomic-dev/ascf/components-form-components/components-checkbox)、[slider](/docs/dev/atomic-dev/ascf/components-form-components/components-slider)、[radio](/docs/dev/atomic-dev/ascf/components-form-components/components-radio)、[picker](/docs/dev/atomic-dev/ascf/components-form-components/components-picker)。
 
 当点击form表单中，“form-type”为“submit”的button组件时，会将表单组件中的value值进行提交，需要在表单组件中加上name来作为key。
 

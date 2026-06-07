@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理AR会话（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arsession
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-c-arsession
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 约束与限制
 
-从5.0.0(12)开始，管理AR会话支持部分Phone、部分Tablet设备。并且从6.1.0(23)版本开始，新增支持TV设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持。
+从5.0.0(12)开始，管理AR会话支持部分Phone、部分Tablet设备。并且从6.1.0(23)版本开始，新增支持TV设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持。
 
 ## 引入AR Engine
 

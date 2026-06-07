@@ -1,6 +1,6 @@
 ---
 title: "JSVM-API调试&定位"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-debugger-cpuprofiler-heapsnapshot
+original_url: /docs/dev/ndk-dev/jsvm-debugger-cpuprofiler-heapsnapshot
 format: md
 ---
 
@@ -62,7 +62,7 @@ JSVM，即标准JS引擎，是严格遵守ECMAScript规范的JavaScript代码执
 
 **示例代码**
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
 
 ```
 #include "ark_runtime/jsvm.h"
@@ -218,7 +218,7 @@ CDP 协议可以参考 chrome 的[官方文档](https://chromedevtools.github.io
 
 ### 示例代码
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
 
 ```
 #include "ark_runtime/jsvm.h"

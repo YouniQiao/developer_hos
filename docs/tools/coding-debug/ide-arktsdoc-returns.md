@@ -1,7 +1,7 @@
 ---
 title: "@returns"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-arktsdoc-returns
+original_url: /docs/tools/coding-debug/ide-arktsdoc-returns
 format: md
 ---
 

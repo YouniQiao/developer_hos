@@ -1,6 +1,6 @@
 ---
 title: "窗口"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-window-development
+original_url: /docs/dev/atomic-dev/atomic-window-development/atomic-window-development
 format: md
 ---
 

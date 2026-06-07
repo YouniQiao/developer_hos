@@ -1,6 +1,6 @@
 ---
 title: "准备工作"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-preparations-realtime-server-0000002395190633
+original_url: /docs/dev/game-dev/gameobe-preparations-realtime-server-0000002395190633
 format: md
 ---
 

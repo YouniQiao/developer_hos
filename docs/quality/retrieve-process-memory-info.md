@@ -1,6 +1,6 @@
 ---
 title: "获取进程内存信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-retrieve-process-memory-info
+original_url: /docs/quality/retrieve-process-memory-info
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 ## 通过代码获取应用内存信息
 
-开发者可使用[@ohos.hidebug (Debug调试)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hidebug)接口获取应用进程的内存信息，使用指导详见[获取内存信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidebug-guidelines#获取内存信息)。
+开发者可使用[@ohos.hidebug (Debug调试)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hidebug)接口获取应用进程的内存信息，使用指导详见[获取内存信息](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines#获取内存信息)。
 
 ## 使用onMemoryLevel()监听内存变化
 

@@ -1,6 +1,6 @@
 ---
 title: "Data Augmentation Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-introduction
+original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-introduction
 format: md
 ---
 
@@ -11,9 +11,9 @@ Data Augmentation Kit（数据增强套件）提供知识库、知识检索、RA
 
 Data Augmentation Kit提供以下能力：
 
-* [RAG（检索增强生成）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-augmentation-rag-overview)：提供一种结合检索与生成技术的自然语言处理技术，通过动态从外部知识库中检索相关信息，辅助生成更准确、可靠的文本内容。其核心目标是弥补传统生成模型依赖静态知识的不足，实现“知识实时调用”与“内容灵活生成”的融合。
-* [智慧化数据检索](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-retrieval)：基于多路召回和重排序，提供了一套知识检索框架。在提供基于倒排索引的传统文本检索的同时，也提供了基于向量索引的语义检索能力。
-* [端侧问答模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-localchatmodel)：提供接入端侧模型问答的方法，以及使用鸿蒙AI模型管家对接LLM，对用户问题进行处理的过程，实现数据不出端智能问答的效果。
+* [RAG（检索增强生成）](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-overview)：提供一种结合检索与生成技术的自然语言处理技术，通过动态从外部知识库中检索相关信息，辅助生成更准确、可靠的文本内容。其核心目标是弥补传统生成模型依赖静态知识的不足，实现“知识实时调用”与“内容灵活生成”的融合。
+* [智慧化数据检索](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-retrieval)：基于多路召回和重排序，提供了一套知识检索框架。在提供基于倒排索引的传统文本检索的同时，也提供了基于向量索引的语义检索能力。
+* [端侧问答模型](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-localchatmodel)：提供接入端侧模型问答的方法，以及使用鸿蒙AI模型管家对接LLM，对用户问题进行处理的过程，实现数据不出端智能问答的效果。
 
 ## 优势/亮点
 

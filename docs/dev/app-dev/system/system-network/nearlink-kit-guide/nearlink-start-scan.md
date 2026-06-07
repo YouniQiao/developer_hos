@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发起星闪扫描"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-start-scan
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-start-scan
 format: md
 ---
 

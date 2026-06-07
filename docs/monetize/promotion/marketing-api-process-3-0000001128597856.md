@@ -1,7 +1,7 @@
 ---
 title: "客户端申请Marketing API权限"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-3-0000001128597856
+original_url: /docs/monetize/promotion/marketing-api-process-3-0000001128597856
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
 
 1. <strong>开发者联盟上的华为账号：</strong>在华为开发者联盟[实名认证](https://developer.huawei.com/consumer/cn/doc/start/itrna-0000001076878172)的手机号或者邮箱，如果您是服务商/子客服务商，请填写<strong>服务商</strong>的华为账号。
 2. <strong>开发者联盟上的企业名称：</strong>在开发者联盟实名认证的企业名称，如果您是服务商/子客服务商，请填写<strong>服务商</strong>的企业名称。
-3. <strong>客户端ID：</strong>[客户端ID](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-2-0000001174597583#ZH-CN_TOPIC_0000001174597583__li12921111894610)。
+3. <strong>客户端ID：</strong>[客户端ID](/docs/monetize/promotion/marketing-api-process-2-0000001174597583#ZH-CN_TOPIC_0000001174597583__li12921111894610)。
 4. <strong>访问数据的鲸鸿动能广告账户ID</strong>：
 
    鲸鸿动能广告账户ID获取方式：登录鲸鸿动能广告平台后，复制右上角的账户ID。

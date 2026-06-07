@@ -1,7 +1,7 @@
 ---
 title: 应用图标
 sidebar_label: 应用图标
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/application-icon-0000001953444009
+original_url: /docs/design/general-design-basics/visual-design/app-icon
 format: md
 ---
 

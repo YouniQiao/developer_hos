@@ -1,6 +1,6 @@
 ---
 title: "广告跳转"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ad-redirection
+original_url: /docs/dev/app-dev/application-framework/ad-redirection
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ![](./img/45b07fb4.png)
 
-跳转过程基于[App Linking](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)能力，分为几种情况：
+跳转过程基于[App Linking](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)能力，分为几种情况：
 
 1. 商城应用已安装
 
@@ -38,15 +38,15 @@ format: md
 
 ## 开发步骤
 
-1. [配置App Linking服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/social-sharing-redirection#配置app-linking服务)。
+1. [配置App Linking服务](/docs/dev/app-dev/application-framework/social-sharing-redirection#配置app-linking服务)。
 
-   * 在AGC（AppGallery Connect）后台为商城应用开通[App Linking](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)能力，正确配置商品详情页的深度链接与参数。
+   * 在AGC（AppGallery Connect）后台为商城应用开通[App Linking](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)能力，正确配置商品详情页的深度链接与参数。
    * 确认所有需要被广告载体（如视频应用）跳转的页面均能通过App Linking唯一链接定位。
 2. 开发商品详情Web页面
 
    * 实现商品详情的Web页面，保证当商城应用未安装时，点击跳转链接可以展示同样的商品信息。
    * 在Web页面中，可以提供“打开商城应用”“下载商城应用”等引导按钮，增强用户转化率。
-   * 参考[Web页面开发与部署](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/social-sharing-redirection#web页面开发与部署可选)完成部署与配置。
+   * 参考[Web页面开发与部署](/docs/dev/app-dev/application-framework/social-sharing-redirection#web页面开发与部署可选)完成部署与配置。
 
    ![](./img/11d2ca3b.png)
 
@@ -55,11 +55,11 @@ format: md
    广告载体方（如视频应用）可在回调中自行处理异常，例如手动跳转到商城应用的商品详情Web页面，实现更灵活的跳转控制。
 3. 配置直达应用市场能力（可选）
 
-   * 若目标是让用户优先安装商城应用以获得完整体验，建议在App Linking配置中启用[直达应用市场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag)能力。
+   * 若目标是让用户优先安装商城应用以获得完整体验，建议在App Linking配置中启用[直达应用市场](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag)能力。
    * 用户点击广告，如果商城应用未安装，将直接进入商城应用的应用市场页面，无须经过Web中转。
 4. 实现延迟链接能力
 
-   * 配置并实现[延迟链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)（Deferred Link）功能。
+   * 配置并实现[延迟链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)（Deferred Link）功能。
    * 用户在广告链路中下载安装商城应用后，首次打开应用可自动恢复跳转到指定商品页，保证广告流量完整转化。
 5. 向广告载体方（如视频应用）提供标准App Linking跳转链接
 

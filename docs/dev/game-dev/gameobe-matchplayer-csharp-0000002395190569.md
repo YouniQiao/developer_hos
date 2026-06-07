@@ -1,6 +1,6 @@
 ---
 title: "在线匹配"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-matchplayer-csharp-0000002395190569
+original_url: /docs/dev/game-dev/gameobe-matchplayer-csharp-0000002395190569
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* 您已[初始化联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-csharp-0000002361510612)。
-* 您已在AGC控制台[配置匹配规则](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-ruleconfiguration-0000002361670428)。
+* 您已[初始化联机对战SDK](/docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612)。
+* 您已在AGC控制台[配置匹配规则](/docs/dev/game-dev/gameobe-ruleconfiguration-0000002361670428)。
 
 ## 开发步骤
 
@@ -18,8 +18,8 @@ format: md
 
    ![](./img/b5c146c1.png)
 
-   * 由于在线匹配方式需要和AGC控制台中配置的[匹配规则](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-ruleconfiguration-0000002361670428#section11254127113416)配合使用，因此在线匹配参数中的属性需要与[MatchCode](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-matchplayerconfig-csharp-0000002395196085#ZH-CN_TOPIC_0000002395196085__p87772413116)所属规则中配置的[玩家属性](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-ruleconfiguration-0000002361670428#ZH-CN_TOPIC_0000002361670428__p161123117394)一一对应。
-   * [Client.OnMatch](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-client-csharp-0000002361516112#section10313116544)监听接口同时监听在线匹配和[组队匹配](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-groupmatch-csharp-0000002361670528)的匹配结果，若您的游戏中同时存在在线匹配和组队匹配的场景，只需注册一次即可。
+   * 由于在线匹配方式需要和AGC控制台中配置的[匹配规则](/docs/dev/game-dev/gameobe-ruleconfiguration-0000002361670428#section11254127113416)配合使用，因此在线匹配参数中的属性需要与[MatchCode](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-matchplayerconfig-csharp-0000002395196085#ZH-CN_TOPIC_0000002395196085__p87772413116)所属规则中配置的[玩家属性](/docs/dev/game-dev/gameobe-ruleconfiguration-0000002361670428#ZH-CN_TOPIC_0000002361670428__p161123117394)一一对应。
+   * [Client.OnMatch](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-client-csharp-0000002361516112#section10313116544)监听接口同时监听在线匹配和[组队匹配](/docs/dev/game-dev/gameobe-groupmatch-csharp-0000002361670528)的匹配结果，若您的游戏中同时存在在线匹配和组队匹配的场景，只需注册一次即可。
 
    ```
    Dictionary<string, string> matchParams = new Dictionary<string, string>(); // 自定义匹配参数，最多支持5条

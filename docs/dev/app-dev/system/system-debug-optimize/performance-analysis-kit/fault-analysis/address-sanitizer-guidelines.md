@@ -1,21 +1,21 @@
 ---
 title: "AddrSanitizer（地址越界）检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-guidelines
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/address-sanitizer-guidelines
 format: md
 ---
 
 
 ## 简介
 
-地址越界问题是指访问了不合法的地址，导致程序运行出现异常，通常表现为应用崩溃（Crash），其故障原因为释放后使用（use after free）、重复释放（double-free）、栈溢出（stack-overflow）、堆溢出（heap-overflow）等。由于应用崩溃日志信息有限且非崩溃第一现场，地址越界问题定位较为困难，一般依赖ASan、HWASan、GWP-ASan等检测工具以获取更多内存操作信息。从API13开始推荐[使用HWASan检测工具](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-hwasan-detection)进行地址越界问题的分析。
+地址越界问题是指访问了不合法的地址，导致程序运行出现异常，通常表现为应用崩溃（Crash），其故障原因为释放后使用（use after free）、重复释放（double-free）、栈溢出（stack-overflow）、堆溢出（heap-overflow）等。由于应用崩溃日志信息有限且非崩溃第一现场，地址越界问题定位较为困难，一般依赖ASan、HWASan、GWP-ASan等检测工具以获取更多内存操作信息。从API13开始推荐[使用HWASan检测工具](/docs/quality/stability-hwasan-detection)进行地址越界问题的分析。
 
 ## 常见越界类型与影响
 
-常见地址越界类型和影响可参看[地址越界经典问题类型](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-catagory)。
+常见地址越界类型和影响可参看[地址越界经典问题类型](/docs/quality/stability-address-sanitizer-catagory)。
 
 ## 地址越界检测原理
 
-检测原理和使用方法可参看[地址越界类问题检测](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ram-detection)。
+检测原理和使用方法可参看[地址越界类问题检测](/docs/quality/stability-ram-detection)。
 
 ## 日志获取方式
 
@@ -27,7 +27,7 @@ DevEco Studio会收集设备/data/log/faultlog/faultlogger/路径下的进程崩
 
 **方式二：通过HiAppEvent接口订阅**
 
-HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-intro)。参考[订阅地址越界事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-arkts)或[订阅地址越界事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events-ndk)完成地址越界事件订阅，并通过事件的[external\_log](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events#params字段说明)字段读取故障日志文件内容。
+HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-intro)。参考[订阅地址越界事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events-arkts)或[订阅地址越界事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events-ndk)完成地址越界事件订阅，并通过事件的[external\_log](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events#params字段说明)字段读取故障日志文件内容。
 
 **方式三：通过hdc获取日志，需打开开发者选项**
 
@@ -420,10 +420,10 @@ Use After Free at 0x5b46ddaff0 (0 bytes into a 16-byte allocation at 0x5b46ddaff
 
    * GWP-ASan
 
-     在[GWP-ASan日志](#gwp-asan日志规格)中，故障类型根据原始日志中包含"at"的行提取。可能的故障类型包括Use After Free、Double Free、Invalid (Wild) Free等，详细类型说明可参考[GWP-ASan异常检测类型](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-gwpasan-detection#section73731529454)。
+     在[GWP-ASan日志](#gwp-asan日志规格)中，故障类型根据原始日志中包含"at"的行提取。可能的故障类型包括Use After Free、Double Free、Invalid (Wild) Free等，详细类型说明可参考[GWP-ASan异常检测类型](/docs/quality/stability-gwpasan-detection#section73731529454)。
    * ASan/HWASan/MemDebug
 
-     在[ASan](#asan日志规格)、[HWASan](#hwasan日志规格)和[MemDebug](#memdebug日志规格)日志中，故障原因通过日志中的"Reason"字段提取，提取结果将作为后续聚类依据。详细字段说明可参考[AddrSanitizer日志type字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events)。
+     在[ASan](#asan日志规格)、[HWASan](#hwasan日志规格)和[MemDebug](#memdebug日志规格)日志中，故障原因通过日志中的"Reason"字段提取，提取结果将作为后续聚类依据。详细字段说明可参考[AddrSanitizer日志type字段说明](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events)。
 2. **标准化栈信息**
 
    提取故障类型作为特征后，首先使用正则匹配筛选堆栈内容。然后，为了确保聚类准确性，需要对堆栈信息进行标准化和清洗。主要规则如下：

@@ -1,6 +1,6 @@
 ---
 title: "如何在Navigation页面中实现侧滑事件拦截"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-273
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-273
 format: md
 ---
 

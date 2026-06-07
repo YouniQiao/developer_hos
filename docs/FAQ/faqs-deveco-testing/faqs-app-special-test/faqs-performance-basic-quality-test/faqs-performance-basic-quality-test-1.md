@@ -1,7 +1,7 @@
 ---
 format: md
 title: "报告中为什么会出现未执行检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-basic-quality-test-1
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-performance-basic-quality-test/faqs-performance-basic-quality-test-1
 ---
 
 

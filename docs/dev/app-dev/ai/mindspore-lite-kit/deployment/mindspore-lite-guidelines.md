@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite进行模型推理 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-guidelines
+original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/deployment/mindspore-lite-guidelines
 format: md
 ---
 

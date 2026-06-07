@@ -1,6 +1,6 @@
 ---
 title: "位置"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-location-development
+original_url: /docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-location-development
 format: md
 ---
 
@@ -67,11 +67,11 @@ format: md
 
 如果应用在后台运行时也需要访问设备位置，需要申请ohos.permission.LOCATION\_IN\_BACKGROUND权限或申请LOCATION类型的长时任务，这样应用在切入后台之后，系统可以继续上报位置信息。
 
-应用如需使用后台位置权限，需要在设置界面由用户手动授予，具体授权方式请参考[ohos.permission.LOCATION\_IN\_BACKGROUND的权限说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionlocation_in_background)。
+应用如需使用后台位置权限，需要在设置界面由用户手动授予，具体授权方式请参考[ohos.permission.LOCATION\_IN\_BACKGROUND的权限说明](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user#ohospermissionlocation_in_background)。
 
-长时任务申请可参考[长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)。
+长时任务申请可参考[长时任务](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)。
 
-开发者可以在应用配置文件中声明所需要的权限，具体可参考[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+开发者可以在应用配置文件中声明所需要的权限，具体可参考[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ## 获取设备的位置信息开发指导
 

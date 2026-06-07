@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用市场更新功能抛出不在前台异常"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-4
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-4
 format: md
 ---
 

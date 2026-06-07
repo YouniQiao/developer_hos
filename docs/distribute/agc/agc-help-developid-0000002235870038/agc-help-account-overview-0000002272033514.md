@@ -1,6 +1,6 @@
 ---
 title: "账号与权限概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-account-overview-0000002272033514
+original_url: /docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-account-overview-0000002272033514
 format: md
 ---
 
@@ -35,4 +35,4 @@ AppGallery Connect预置的角色包括：
 * 财务：管理财务信息。拥有查看：应用内付费、付费下载明细、财务报告等财务相关报表的权限。
 * 法务：全团队唯一拥有代签协议权限的角色，可代表账号持有者签订AppGallery Connect协议。
 
-每个角色对应的权限，请参见[角色与权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-rolepermission-0000002271930352)。
+每个角色对应的权限，请参见[角色与权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-rolepermission-0000002271930352)。

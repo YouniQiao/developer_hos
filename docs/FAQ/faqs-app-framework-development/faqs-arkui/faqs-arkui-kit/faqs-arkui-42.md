@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在使用Canvas的场景中，如何主动控制组件刷新UI"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-42
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-42
 ---
 
 

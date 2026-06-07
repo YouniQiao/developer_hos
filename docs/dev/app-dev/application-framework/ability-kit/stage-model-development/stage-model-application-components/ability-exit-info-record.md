@@ -1,6 +1,6 @@
 ---
 title: "获取应用异常退出原因"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-exit-info-record
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/ability-exit-info-record
 format: md
 ---
 

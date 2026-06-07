@@ -1,7 +1,7 @@
 ---
 title: "数字商品服务"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/digital-product-promotion-0000002270335466
+original_url: /docs/distribute/app-dist/app-services/growth-platform-0000002271422160/digital-product-promotion-0000002270335466
 format: md
 ---
 

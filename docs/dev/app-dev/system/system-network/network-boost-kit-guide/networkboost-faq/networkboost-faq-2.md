@@ -1,6 +1,6 @@
 ---
 title: "如果使用多网并发能力超过剩余配额限制，会发生什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-faq-2
+original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-faq/networkboost-faq-2
 format: md
 ---
 

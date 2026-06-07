@@ -1,6 +1,6 @@
 ---
 title: "JSVM-API常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-frequently-questions
+original_url: /docs/dev/ndk-dev/jsvm-frequently-questions
 format: md
 ---
 
@@ -71,7 +71,7 @@ format: md
    在上述示例代码中，JS引擎实例在函数结束前被关闭，因此可以直接使用栈上的param。
 3. Q：OH\_JSVM\_ReferenceRef、OH\_JSVM\_ReferenceUnRef、OH\_JSVM\_CreateReference、OH\_JSVM\_DeleteReference时程序崩溃
 
-   A：检查是否同时有多个线程持有和释放JSVM\_Ref，见[多线程共享引擎实例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-guidelines#多线程共享引擎实例)
+   A：检查是否同时有多个线程持有和释放JSVM\_Ref，见[多线程共享引擎实例](/docs/dev/ndk-dev/jsvm-guidelines#多线程共享引擎实例)
 4. Q：在虚拟机引擎实例中创建JS类型实例崩溃（如OH\_JSVM\_CreateDouble），调用栈如下
 
    ```
@@ -80,10 +80,10 @@ format: md
    #02 pc 00000000015c99b8/system/lib64/ndk/libjsvm.so(v8::internal::HandleScope::Extend(v8::internal::Isolate*)+200)
    ```
 
-   A：检查HandleScope的使用是否正确，参考[生命周期管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-guidelines#生命周期管理)
+   A：检查HandleScope的使用是否正确，参考[生命周期管理](/docs/dev/ndk-dev/jsvm-guidelines#生命周期管理)
 5. Q: 调用JSVM-API时出现 JSVM Fatal Error Message:(openHandleScopes)==(openHandleScopesBefore) 错误
 
-   A: 调用JSVM-API时未遵循其使用规范正确管理HandleScopes生命周期，导致HandleScopes层数发生变化，调用结束后无法通过JSVM系统层检查，则返回该报错。修改请参考[JSVM-API使用规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-guidelines)，优先排查注入回调函数中的JSVM-API调用点。
+   A: 调用JSVM-API时未遵循其使用规范正确管理HandleScopes生命周期，导致HandleScopes层数发生变化，调用结束后无法通过JSVM系统层检查，则返回该报错。修改请参考[JSVM-API使用规范](/docs/dev/ndk-dev/jsvm-guidelines)，优先排查注入回调函数中的JSVM-API调用点。
 6. Q: 在调用JSVM-API时出现如下两种报错：
 
    ```
@@ -116,16 +116,16 @@ format: md
 
    c) 若使用任务队列来进行js任务执行，出现了先抛出destroy env的任务，后抛出普通js任务的情况，此时也可能导致该报错。针对这个情况，可以参考a情况做法，为JSVM实例添加thread\_local\_flag，若任务取出时thread\_local\_flag为true，则队列中剩余的任务需要全部跳过。
 
-   如需获取更详细信息，请参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)
+   如需获取更详细信息，请参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)
 
 ## JSVM-API执行失败类
 
 1. Q：OH\_JSVM\_GetCbInfo无法获取JS函数参数
 
-   A：检查函数传递的参数是否正确，见[获取JS传入参数及其数量](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-guidelines#获取js传入参数及其数量)
+   A：检查函数传递的参数是否正确，见[获取JS传入参数及其数量](/docs/dev/ndk-dev/jsvm-guidelines#获取js传入参数及其数量)
 2. Q：OH\_JSVM\_CreateFunction等函数调用失败，返回值为JSVM\_PENDING\_EXCEPTION
 
    A：JSVM\_PENDING\_EXCEPTION表明当前虚拟机环境中存在未处理的异常，可能是由于本次调用产生的JS异常，也可能是之前调用产生的未被清理的异常。可以通过在函数调用前插入OH\_JSVM\_GetAndClearLastException排查之前是否有未清除的异常。如果为之前的未清理异常，检查是否有JSVM接口调用未处理异常返回值；如果是本次产生的异常，需清理异常，避免影响后续的函数调用。获取并清理异常的函数为OH\_JSVM\_GetAndClearLastException
 3. Q：JS执行时无法找到OH\_JSVM\_DefineClass定义的类
 
-   A：检查是否将定义的类绑定到上下文中，见[上下文绑定对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-guidelines#上下文绑定对象)
+   A：检查是否将定义的类绑定到上下文中，见[上下文绑定对象](/docs/dev/ndk-dev/jsvm-guidelines#上下文绑定对象)

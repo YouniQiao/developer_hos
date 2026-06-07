@@ -1,7 +1,7 @@
 ---
 title: 出行导航类
 sidebar_label: 出行导航类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/travel-and-navigation-0000001957391017
+original_url: /docs/design/app-design-practices/travel-navigation
 format: md
 ---
 
@@ -160,7 +160,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250819105605.95681467909079759649886248218588:50001231000000:2800:8133A998E4C4AF7E745AE34E0BEE37286B9C8E986C1120A0CBE5AA76E7B463A8.png "点击放大")
 
-实况窗的开发指南，请参阅 [Live View Kit。](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/live-view-kit-guide)
+实况窗的开发指南，请参阅 [Live View Kit。](/docs/dev/app-dev/application-services/live-view-kit-guide)
 
 ### 服务卡片
 

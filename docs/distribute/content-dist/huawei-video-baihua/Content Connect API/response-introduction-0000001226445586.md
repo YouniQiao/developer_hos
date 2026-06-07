@@ -1,7 +1,7 @@
 ---
 title: "响应码说明"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/response-introduction-0000001226445586
+original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/response-introduction-0000001226445586
 format: md
 ---
 

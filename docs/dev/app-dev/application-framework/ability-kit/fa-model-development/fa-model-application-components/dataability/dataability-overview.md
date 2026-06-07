@@ -1,6 +1,6 @@
 ---
 title: "DataAbility组件概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-overview
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-overview
 format: md
 ---
 

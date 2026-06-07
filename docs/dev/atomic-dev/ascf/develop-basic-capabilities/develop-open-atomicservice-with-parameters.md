@@ -1,6 +1,6 @@
 ---
 title: "携带参数拉起ASCF元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-open-atomicservice-with-parameters
+original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-open-atomicservice-with-parameters
 format: md
 ---
 
@@ -60,7 +60,7 @@ struct Index {
 
 ## 通过卡片拉起ASCF元服务
 
-参考文档[卡片跳转到应用页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-router)。使用postCardAction接口实现卡片和元服务的交互。参考want传参，postCardAction的params参数对应的就是Want.parameters参数。与通过API拉起ASCF元服务的不同是：通过此方法拉起ASCF元服务，ascfPara只支持JSON格式字符串传入。
+参考文档[卡片跳转到应用页面](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-router)。使用postCardAction接口实现卡片和元服务的交互。参考want传参，postCardAction的params参数对应的就是Want.parameters参数。与通过API拉起ASCF元服务的不同是：通过此方法拉起ASCF元服务，ascfPara只支持JSON格式字符串传入。
 
 **示例：**
 
@@ -90,7 +90,7 @@ struct Index {
 
 ## 通过服务通知订阅消息拉起ASCF元服务
 
-参考文档[推送基于账号的订阅消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-send-sub-noti#section561410563213)。服务端通过配置消息参数clickAction拉起元服务。参考want传参，其中data字段对应的是Want.parameters参数，ascfPara可作为对象或者JSON格式字符串传入。
+参考文档[推送基于账号的订阅消息](/docs/dev/atomic-dev/push-as-subscription/push-as-send-sub-noti#section561410563213)。服务端通过配置消息参数clickAction拉起元服务。参考want传参，其中data字段对应的是Want.parameters参数，ascfPara可作为对象或者JSON格式字符串传入。
 
 **示例：**
 
@@ -126,9 +126,9 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 
 ## 通过appLinking拉起ASCF元服务
 
-参考文档[使用元服务链接跳转元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking)。在AGC平台创建appLinking，传参有2种方式，静态传参和动态传参。
+参考文档[使用元服务链接跳转元服务](/docs/dev/atomic-dev/atomic-linking/atomic-applinking)。在AGC平台创建appLinking，传参有2种方式，静态传参和动态传参。
 
-静态传参参考[获取元服务链接](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-applinking)即可。
+静态传参参考[获取元服务链接](/docs/dev/atomic-dev/ascf/develop-open-capabilities/ascf-applinking)即可。
 
 动态传参ASCF目前尚未适配，需要开发者自行处理。
 
@@ -183,7 +183,7 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 
 使用意图框架拉起ASCF元服务无法携带参数：
 
-参考文档[意图框架服务-位置推荐方案-接入方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-local-rec)。目前只能拉起ASCF元服务首页，无法接收ascfPara参数进行页面跳转。
+参考文档[意图框架服务-位置推荐方案-接入方案](/docs/dev/app-dev/ai/intents-kit-guide/intents-local-rec)。目前只能拉起ASCF元服务首页，无法接收ascfPara参数进行页面跳转。
 
 ASCF目前只在onCreate和onNewWant回调函数中对ascfPara参数进行接收处理。而意图框架的传参需要先在AGC平台中配置POI参数，通过意图实现类InsightIntentExecutorImpl中的onExecuteInUIAbilityForegroundMode回调来获取对应的参数。参考[意图执行基类](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-insightintentexecutor#onexecuteinuiabilityforegroundmode)的生命周期执行顺序，onCreate、onNewWant会早于onExecuteInUIAbilityForegroundMode调用，此时，开发者通过使用onExecuteInUIAbilityForegroundMode回调函数对ascfPara进行参数构建后无法传参给onCreate、onNewWant。
 

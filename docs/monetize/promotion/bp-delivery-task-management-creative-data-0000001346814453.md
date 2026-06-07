@@ -1,7 +1,7 @@
 ---
 title: "查询创意数据报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-creative-data-0000001346814453
+original_url: /docs/monetize/promotion/bp-delivery-task-management-creative-data-0000001346814453
 format: md
 ---
 
@@ -12,6 +12,6 @@ format: md
 
 ![](./img/f3f24175b82b.png) 
 
-具体报表指标含义请参见[报表指标说明](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-index-0000001293894160)。
+具体报表指标含义请参见[报表指标说明](/docs/monetize/promotion/bp-delivery-task-management-index-0000001293894160)。
 
 ![](./img/320a99954511.png "点击放大")

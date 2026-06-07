@@ -1,7 +1,7 @@
 ---
 title: "精品栏目推荐"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/top-quality-category-recommendation-0000001054359347
+original_url: /docs/distribute/content-dist/theme-center/top-quality-category-recommendation-0000001054359347
 ---
 
 import MergeTable from '@site/src/components/MergeTable';

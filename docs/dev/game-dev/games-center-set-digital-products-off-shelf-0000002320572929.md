@@ -1,6 +1,6 @@
 ---
 title: "下架/重新上架数字商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-set-digital-products-off-shelf-0000002320572929
+original_url: /docs/dev/game-dev/games-center-set-digital-products-off-shelf-0000002320572929
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "授信账户"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-credit-0000001379837545
+original_url: /docs/monetize/promotion/bpos-start-guest-recharge-credit-0000001379837545
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 ## 概述
 
 - 授信账户：指的是您（直客）通过向鲸鸿动能广告申请开通授信账户（授信额度存在有效期），并分配一定的授信额度，您进行消耗后，才会产生授信账单，且需要按照“线下充值”的方式进行还款。
-  - <strong>线下充值：</strong>您可以通过银行转账到[指定银行账户](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-recharge-overview-0000001379677849#ZH-CN_TOPIC_0000001379677849__p5014mcpsimp)的方式进行充值，银行转账之后需要您在鲸鸿动能广告界面提交充值申请，审批通过后，还款成功。
+  - <strong>线下充值：</strong>您可以通过银行转账到[指定银行账户](/docs/monetize/promotion/bpos-start-guest-recharge-overview-0000001379677849#ZH-CN_TOPIC_0000001379677849__p5014mcpsimp)的方式进行充值，银行转账之后需要您在鲸鸿动能广告界面提交充值申请，审批通过后，还款成功。
 - 额度到期：如果您的授信额度到期，但并未进行消耗，那么您广告账户中的可用授信额度将清零，无需还款。
 - 还款完成：还款完成后，系统将恢复直客授信账户额度，您点击“![](./img/661d641bd1e3.png "点击放大")”&gt;“![](./img/4c793d03b917.png "点击放大")”，即可在授信账户中查看：授信截止日期、状态、总额度、可用额度。
 

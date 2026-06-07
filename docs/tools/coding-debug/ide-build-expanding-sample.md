@@ -1,7 +1,7 @@
 ---
 title: "API使用示例"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-build-expanding-sample
+original_url: /docs/tools/coding-debug/ide-build-expanding-sample
 format: md
 ---
 

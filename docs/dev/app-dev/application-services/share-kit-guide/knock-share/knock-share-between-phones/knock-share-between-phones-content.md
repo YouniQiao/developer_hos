@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "内容分享"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-content
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-content
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 
 ## 设置分享预览
 
-接入碰一碰分享时，需根据不同的分享数据类型，适配相应的卡片模板。详细参见：[碰一碰分享设计指南](https://developer.huawei.com/consumer/cn/doc/design-guides/onehop-0000002354602581)。
+接入碰一碰分享时，需根据不同的分享数据类型，适配相应的卡片模板。详细参见：[碰一碰分享设计指南](/docs/design/system-features/capabilities/onehop)。
 
 ### 设置配套的卡片样式
 
@@ -115,7 +115,7 @@ export default struct Index {
 
 ## 发送分享数据
 
-通过链接形式指定应用跳转，通常有2种方式：[使用App Linking实现应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)和[使用Deep Linking实现应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-linking-startup)。
+通过链接形式指定应用跳转，通常有2种方式：[使用App Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)和[使用Deep Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/deep-linking-startup)。
 
 指定应用跳转时，utd类型需配置为"general.hyperlink"，确保Share Kit以正确的方式处理链接。
 
@@ -123,10 +123,10 @@ export default struct Index {
 
 使用App Linking进行跳转时，无论应用是否已安装，用户都可以访问到链接对应的内容。
 
-结合[App Linking Kit（应用链接服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-introduction)能力，在指定应用未安装时，可实现直达应用市场等能力，进一步提升用户体验。
+结合[App Linking Kit（应用链接服务）](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-introduction)能力，在指定应用未安装时，可实现直达应用市场等能力，进一步提升用户体验。
 
 * 当应用已安装时，App Linking可直接拉起应用。
-* 当应用未安装时，App Linking的默认行为是通过系统浏览器打开链接对应的网页。通过App Linking Kit的直达应用市场能力，可以实现在应用未安装时直接跳转应用市场。详情参见：[直达应用市场能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag)。配合[延迟链接能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)，即便触发碰一碰分享时应用未安装，待下载启动后仍能获取之前分享的链接，提升了用户体验，也提升了链接转换率。
+* 当应用未安装时，App Linking的默认行为是通过系统浏览器打开链接对应的网页。通过App Linking Kit的直达应用市场能力，可以实现在应用未安装时直接跳转应用市场。详情参见：[直达应用市场能力](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag)。配合[延迟链接能力](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)，即便触发碰一碰分享时应用未安装，待下载启动后仍能获取之前分享的链接，提升了用户体验，也提升了链接转换率。
 
 示例代码：
 

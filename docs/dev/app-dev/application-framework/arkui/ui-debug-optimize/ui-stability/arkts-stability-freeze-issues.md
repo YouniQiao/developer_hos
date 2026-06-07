@@ -1,6 +1,6 @@
 ---
 title: "UI相关应用无响应常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-freeze-issues
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-freeze-issues
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口创建ArkTS运行时环境"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-ark-runtime
+original_url: /docs/dev/ndk-dev/use-napi-ark-runtime
 format: md
 ---
 
@@ -84,7 +84,7 @@ format: md
   ```
 * 功能实现
 
-  新建线程并创建ArkTS基础运行时环境，加载自定义模块请参考[napi\_load\_module\_with\_info](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module-with-info)。
+  新建线程并创建ArkTS基础运行时环境，加载自定义模块请参考[napi\_load\_module\_with\_info](/docs/dev/ndk-dev/use-napi-load-module-with-info)。
 
   ```
   #include "napi/native_api.h"

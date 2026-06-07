@@ -1,7 +1,7 @@
 ---
 title: "关于华为AppGallery Connect与隐私的声明"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agcprivacystatement
+original_url: /docs/distribute/app-dist/app-market/x20240513/AGCPrivacyStatement
 format: md
 ---
 

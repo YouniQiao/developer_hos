@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "配置商品信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-product
 format: md
 ---
 
@@ -10,15 +10,15 @@ format: md
 
 ## 配置消耗型/非消耗型/非续期订阅商品
 
-* 如新增商品，请参见[消耗型/非消耗型/非续期订阅商品](https://developer.huawei.com/consumer/cn/doc/app/non-subscription-0000001959074885)。
-* 如为消耗型/非消耗型/非续期订阅商品设置优惠促销（自定义人群促销），具体操作请参见[设置促销价格](https://developer.huawei.com/consumer/cn/doc/app/promotion-non-subscription-0000001931836332#section1429175616582)。
-* 如需修改商品配置（商品名称、商品价格等），具体操作请参见[修改单个商品-非自动续期订阅商品](https://developer.huawei.com/consumer/cn/doc/app/revise-non-subscription-0000001931836328)。
+* 如新增商品，请参见[消耗型/非消耗型/非续期订阅商品](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/create-digital-products-0000001958955105/new-0000001931836320/non-subscription-0000001959074885)。
+* 如为消耗型/非消耗型/非续期订阅商品设置优惠促销（自定义人群促销），具体操作请参见[设置促销价格](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332#section1429175616582)。
+* 如需修改商品配置（商品名称、商品价格等），具体操作请参见[修改单个商品-非自动续期订阅商品](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/revise-digital-products-0000001959074889/single-0000001931995708/revise-non-subscription-0000001931836328)。
 
 ## 配置自动续期订阅商品
 
-* 如新增商品，请先[新增订阅组](https://developer.huawei.com/consumer/cn/doc/app/non-subscription-0000001958955109#section37862471018)，然后在创建[自动续期订阅商品](https://developer.huawei.com/consumer/cn/doc/app/non-subscription-0000001958955109)时指定商品所在的订阅组。
-* 如为自动续期订阅商品设置促销，包含[推介促销](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#提供优惠)（新用户促销）、[优惠促销](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#提供优惠)（自定义人群促销）和[挽留促销](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#提供优惠)（退订挽留促销，**即将开放**），具体操作请参见[设置促销价格](https://developer.huawei.com/consumer/cn/doc/app/promotion-renewal-0000001959074897#section128611895910)。
-* 如需修改商品配置（商品名称、商品价格等），具体操作请参见[修改单个商品-自动续期订阅商品](https://developer.huawei.com/consumer/cn/doc/app/revise-renewal-0000001959074893)。
+* 如新增商品，请先[新增订阅组](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/create-digital-products-0000001958955105/new-0000001931836320/non-subscription-0000001958955109#section37862471018)，然后在创建[自动续期订阅商品](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/create-digital-products-0000001958955105/new-0000001931836320/non-subscription-0000001958955109)时指定商品所在的订阅组。
+* 如为自动续期订阅商品设置促销，包含[推介促销](/docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-subscription-functions#提供优惠)（新用户促销）、[优惠促销](/docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-subscription-functions#提供优惠)（自定义人群促销）和[挽留促销](/docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-subscription-functions#提供优惠)（退订挽留促销，**即将开放**），具体操作请参见[设置促销价格](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-renewal-0000001959074897#section128611895910)。
+* 如需修改商品配置（商品名称、商品价格等），具体操作请参见[修改单个商品-自动续期订阅商品](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/revise-digital-products-0000001959074889/single-0000001931995708/revise-renewal-0000001959074893)。
 
 ![](./img/1ba67353.png)
 

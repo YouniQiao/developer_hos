@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkui-no-high-freq-log（已下线）"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hp-arkui-no-high-freq-log
+original_url: /docs/tools/coding-debug/ide-hp-arkui-no-high-freq-log
 format: md
 ---
 

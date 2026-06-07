@@ -1,6 +1,6 @@
 ---
 title: "消耗型商品补单流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-redelivering-consumables-0000002351893465
+original_url: /docs/dev/game-dev/games-quickgame-runtime-redelivering-consumables-0000002351893465
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 3. 若接口请求成功时，可以在success回调中查询用户已购但未发货的商品购买信息及其签名数据。
 4. 同时向快游戏返回购买数据及其签名数据。
 5. 快游戏向开发者服务器上报购买数据和签名数据，请求发货。
-6. 您需使用支付公钥[对返回结果验证](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-iap-consumable-0000002317894836#section9450525193515)。若您的游戏对安全性要求比较高，可通过服务端[Order服务购买Token校验](https://developer.huawei.com/consumer/cn/doc/HMSCore-References/api-order-verify-purchase-token-0000001050746113)，向华为支付服务器发起校验请求，进一步确认订单的准确性。
+6. 您需使用支付公钥[对返回结果验证](/docs/dev/game-dev/games-quickgame-runtime-iap-consumable-0000002317894836#section9450525193515)。若您的游戏对安全性要求比较高，可通过服务端[Order服务购买Token校验](https://developer.huawei.com/consumer/cn/doc/HMSCore-References/api-order-verify-purchase-token-0000001050746113)，向华为支付服务器发起校验请求，进一步确认订单的准确性。
 7. 从购买信息[inAppPurchaseData](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-quickgame-runtime-payment-0000002399676809#ZH-CN_TOPIC_0000002399676809__zh-cn_topic_0000001453629405_p13287101932813)中解析出purchaseState字段，当purchaseState=0时表示此次交易成功，应用仅需要对这部分商品进行补发货操作。
 
    ```

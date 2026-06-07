@@ -1,7 +1,7 @@
 ---
 title: "删除预审创意"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/delete-preview-ideas-0000002394079777
+original_url: /docs/monetize/promotion/delete-preview-ideas-0000002394079777
 format: md
 ---
 
@@ -58,7 +58,7 @@ Content-Type: application/json
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| rtnCode | M | Integer | 返回码。具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| rtnCode | M | Integer | 返回码。具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | rtnDesc | M | String | 返回描述。 |
 
 ## 响应示例

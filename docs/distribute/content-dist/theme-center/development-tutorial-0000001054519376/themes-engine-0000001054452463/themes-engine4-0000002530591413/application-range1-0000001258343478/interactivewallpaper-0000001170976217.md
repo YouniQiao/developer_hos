@@ -1,7 +1,7 @@
 ---
 title: "可交互桌面&lt;CommonWallpaper&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/interactivewallpaper-0000001170976217
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/interactivewallpaper-0000001170976217
 format: md
 ---
 
@@ -73,7 +73,7 @@ format: md
 
 ## 使用说明
 
-1. 可交互桌面不支持使用视频&lt;Video&gt;控件，如需在桌面上使用视频资源，请使用[视频桌面&lt;LiveWallpaper&gt;](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-0000001073967005)。
+1. 可交互桌面不支持使用视频&lt;Video&gt;控件，如需在桌面上使用视频资源，请使用[视频桌面&lt;LiveWallpaper&gt;](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/livewallpaper-0000001073967005)。
 2. 配置主题包时，必须要在description.xml中添加以下新增项：HWThemeEngine，示例如下：
 
    ```

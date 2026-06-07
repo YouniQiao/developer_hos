@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何正确获取刘海区域的高度，topRect中的取值是height、top还是height+top"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-236
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-236
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "如何判断是否为主线程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-68
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-68
 format: md
 ---
 

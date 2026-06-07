@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "更新实况窗被频控的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-1
+original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-faq/liveview-faq-1
 format: md
 ---
 

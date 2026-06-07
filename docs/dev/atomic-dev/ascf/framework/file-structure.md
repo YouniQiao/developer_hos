@@ -1,6 +1,6 @@
 ---
 title: "文件结构"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/file-structure
+original_url: /docs/dev/atomic-dev/ascf/framework/file-structure
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 * entry：HarmonyOS工程模块，最终编译成元服务HAP文件。
 * entry/src/main/resources/rawfile/：ascf主包编译后的资源会在此目录生成，**请勿占用。**
 * ascf/ascf\_src：ascf框架源码目录。
-* ascf/ascf\_src/ext.json：元服务三方平台配置文件，支持配置ext属性，通过[has.getExtConfig](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-third-party-platform#hasgetextconfig)或[has.getExtConfigSync](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-third-party-platform#hasgetextconfigsync)获取配置信息。
+* ascf/ascf\_src/ext.json：元服务三方平台配置文件，支持配置ext属性，通过[has.getExtConfig](/docs/dev/atomic-dev/ascf/apis/apis-third-party-platform#hasgetextconfig)或[has.getExtConfigSync](/docs/dev/atomic-dev/ascf/apis/apis-third-party-platform#hasgetextconfigsync)获取配置信息。
 * ascf/ascf\_build：ascf源码编译过程目录，会生成元服务的子包和编译文件，**请勿占用。**
 * 其他文件参照元服务工程信息。
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS中this的常用场景及使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-55
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-55
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "@performance/tabs-on-change-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-tabs-on-change-check
+original_url: /docs/tools/coding-debug/ide-tabs-on-change-check
 format: md
 ---
 

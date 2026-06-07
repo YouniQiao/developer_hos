@@ -1,7 +1,7 @@
 ---
 title: 社交通讯类
 sidebar_label: 社交通讯类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples2-0000001793536901
+original_url: /docs/design/app-design-practices/social-communication
 format: md
 ---
 
@@ -19,7 +19,7 @@ IM 对话场景的多端设计示例：
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260109140402.71303790408587688108049279550168:50001231000000:2800:BD7D4CA007D54574CD04C7C772E9A9FA6C1ABC550AD2AC4762958EB523870D71.png "点击放大")
 
-分栏的开发指南，请参阅[一多开发实例 (即时通讯)。](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-communication-app#section18771832172516)
+分栏的开发指南，请参阅[一多开发实例 (即时通讯)。](/docs/dev/app-dev/multi-device/multi-communication-app#section18771832172516)
 
 ### 应用内分屏
 
@@ -69,7 +69,7 @@ IM 对话时打开文档，提供应用内分屏的示例：
 | --- |
 | 多人通话时取景框可根据设备的物理尺寸进行响应式的布局设计，尽可能提供最大屏占比的舒适布局。  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260109140404.67806403136848947828297096012918:50001231000000:2800:2579DB2DD4C04EB9EC4B2F12AB9F32AFD5ED86809F3FC03840233DB01E1BD166.png "点击放大") |
 |  |
-| 取景框响应式布局的开发指南，请参阅[响应式布局。](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)    更多人的视频通话响应式布局示例：  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260109140404.40894115400059540977807901561692:50001231000000:2800:86367A33B1920C7B2C47E9561C5B0EC8F23A620880698A3C5CBA24073F7C733E.png "点击放大") |
+| 取景框响应式布局的开发指南，请参阅[响应式布局。](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)    更多人的视频通话响应式布局示例：  ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260109140404.40894115400059540977807901561692:50001231000000:2800:86367A33B1920C7B2C47E9561C5B0EC8F23A620880698A3C5CBA24073F7C733E.png "点击放大") |
 |  |
 | 同一设备上取景画面，大小布局和均分布局的示例： |
 | ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260109140404.66539179342794266511817561609304:50001231000000:2800:AE91EE794D788E22D4727B93F1D554ED23C1DE0FCE3EB84442EC87BF38AD4E78.jpg "点击放大") |
@@ -87,7 +87,7 @@ IM 对话时打开文档，提供应用内分屏的示例：
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260109140404.53231864439599217280685905222907:50001231000000:2800:5C991A0F947C089AF1B2B6ACDD520F9D82854DB213740E5FAD0C82E8B798B322.png "点击放大")
 
-本场景的开发指南，请参阅[典型场景布局。](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout)
+本场景的开发指南，请参阅[典型场景布局。](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout)
 
 ## 会议的悬停适配
 
@@ -173,7 +173,7 @@ IM 对话时打开文档，提供应用内分屏的示例：
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260109140406.89840767178873387600328524199950:50001231000000:2800:5B403A0DB9D76D851569B39D56E1BB456EA241189AE5CCB15E97600A9E16F9F2.png "点击放大")
 
-分栏的开发指南，请参阅[一多开发实例 (即时通讯)。](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-communication-app#section133771713132818)
+分栏的开发指南，请参阅[一多开发实例 (即时通讯)。](/docs/dev/app-dev/multi-device/multi-communication-app#section133771713132818)
 
 **单列卡片变瀑布流布局**
 
@@ -189,7 +189,7 @@ IM 对话时打开文档，提供应用内分屏的示例：
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260109140408.90596561517047666437453350101461:50001231000000:2800:950EEB0986A0B6AB08B444AF19389F68593E2F254BF786506F50BEE9B566E1EF.png "点击放大")
 
-自适应能力的开发指南，请参阅[典型场景布局。](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout)
+自适应能力的开发指南，请参阅[典型场景布局。](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout)
 
 折叠屏这种接近 1:1 的方形设备，可提供布局切换按钮，允许用户切换布局样式的示例：
 

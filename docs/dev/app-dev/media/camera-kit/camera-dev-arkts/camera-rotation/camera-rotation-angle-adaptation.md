@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "适配相机旋转角度(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-angle-adaptation
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-angle-adaptation
 format: md
 ---
 
@@ -111,7 +111,7 @@ format: md
 
 **预览流旋转接口适配场景及示例：**
 
-1. 在[会话配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management)过程中调用预览旋转接口，即：使用[commitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#commitconfig11)接口提交相关配置后调用，建议在[Start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#start11)起流前调用。
+1. 在[会话配置](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management)过程中调用预览旋转接口，即：使用[commitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#commitconfig11)接口提交相关配置后调用，建议在[Start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#start11)起流前调用。
 
    ```
    // previewOutput是创建的预览输出
@@ -126,7 +126,7 @@ format: md
      console.error(`initPreviewRotation call failed. error code: ${err.code}`);
    }
    ```
-2. 应用使用相机时，通过监听[Display对象变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#displayonaddremovechange)，感知窗口当前状态，如当前相机窗口发生旋转时，需对预览流进行角度修正。推荐在[会话配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management)中完成调用预览旋转接口后，直接创建监听。
+2. 应用使用相机时，通过监听[Display对象变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#displayonaddremovechange)，感知窗口当前状态，如当前相机窗口发生旋转时，需对预览流进行角度修正。推荐在[会话配置](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management)中完成调用预览旋转接口后，直接创建监听。
 
    ```
    import { display } from '@kit.ArkUI';
@@ -178,7 +178,7 @@ format: md
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/RotationDisplayCamera/camera/src/main/ets/cameramanagers/PhotoManager.ets#L319-L330" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：PhotoManager.ets</a></div>
 
 2. 应用将拍照角度写入[PhotoCaptureSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#photocapturesetting).rotation。
-3. 其余参数的配置及拍照，可参考[拍照开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting)。
+3. 其余参数的配置及拍照，可参考[拍照开发指导](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting)。
 
 ## 录像
 
@@ -210,7 +210,7 @@ format: md
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/RotationDisplayCamera/camera/src/main/ets/cameramanagers/VideoManager.ets#L347-L358" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：VideoManager.ets</a></div>
 
 2. 在[AVRecorder.prepare](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avrecorder#prepare9)后使用[updateRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avrecorder#updaterotation12)设置录像角度。
-3. 其余参数的配置及启动录像，可参考[录像开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-recording)。
+3. 其余参数的配置及启动录像，可参考[录像开发指导](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-recording)。
 
 **录像流旋转接口适配示例代码：**
 
@@ -235,7 +235,7 @@ async getVideoRotationAndUpdate(videoOutput: camera.VideoOutput, deviceDegree: n
 
 当前可通过调用[once(type: SensorId.GRAVITY, callback: Callback\<GravityResponse\>)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor#gravity9-1)获取一次重力传感器在x、y、z三个方向上的数据，计算得出设备旋转角度deviceDegree，示例如下所示。
 
-如果无法获得重力传感器数据，需要申请重力传感器权限ohos.permission.ACCELEROMETER。权限申请请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)，如何获取传感器数据请参考[传感器开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines)。
+如果无法获得重力传感器数据，需要申请重力传感器权限ohos.permission.ACCELEROMETER。权限申请请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)，如何获取传感器数据请参考[传感器开发指导](/docs/dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-guidelines)。
 
 ```
 getRealData(data: sensor.GravityResponse): number {
@@ -312,7 +312,7 @@ async getCurrentDeviceDegree() : Promise<number> {
 
 ## 实现相机无损出图
 
-在部分折叠屏设备上，[不同折叠状态](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-foldable-guide#section152264061715)下的[设备自然方向](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#设备自然方向)会发生改变，导致不同折叠状态下真实的[相机镜头安装角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#相机镜头安装角度)不同。为了屏蔽不同设备间的差异，使得不同折叠状态下的相机镜头安装角度一致，系统会自动调整部分折叠状态下的相机采集图像方向（通过旋转裁切的方式）和相机镜头安装角度，因此会存在视场角（Field of View, FOV）损失，可能会导致相机预览、拍照、录像可见范围降低，因此如果需要实现相机无损出图，可以通过[usePhysicalCameraOrientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-camerainput#usephysicalcameraorientation22)接口来实现相机无损出图。具体方式如下：
+在部分折叠屏设备上，[不同折叠状态](/docs/dev/app-dev/multi-device/bpta-foldable-guide#section152264061715)下的[设备自然方向](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#设备自然方向)会发生改变，导致不同折叠状态下真实的[相机镜头安装角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#相机镜头安装角度)不同。为了屏蔽不同设备间的差异，使得不同折叠状态下的相机镜头安装角度一致，系统会自动调整部分折叠状态下的相机采集图像方向（通过旋转裁切的方式）和相机镜头安装角度，因此会存在视场角（Field of View, FOV）损失，可能会导致相机预览、拍照、录像可见范围降低，因此如果需要实现相机无损出图，可以通过[usePhysicalCameraOrientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-camerainput#usephysicalcameraorientation22)接口来实现相机无损出图。具体方式如下：
 
 设备是否支持无损出图，首先需要确认设备的相机镜头安装角度是否可变，可以通过[isPhysicalCameraOrientationVariable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-camerainput#isphysicalcameraorientationvariable22)接口查询。
 

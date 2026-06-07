@@ -1,7 +1,7 @@
 ---
 title: "公共定义"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/common-definitions-0000001270685745
+original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/common-definitions-0000001270685745
 format: md
 ---
 

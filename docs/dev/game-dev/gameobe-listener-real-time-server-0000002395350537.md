@@ -1,6 +1,6 @@
 ---
 title: "事件监听"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-listener-real-time-server-0000002395350537
+original_url: /docs/dev/game-dev/gameobe-listener-real-time-server-0000002395350537
 format: md
 ---
 

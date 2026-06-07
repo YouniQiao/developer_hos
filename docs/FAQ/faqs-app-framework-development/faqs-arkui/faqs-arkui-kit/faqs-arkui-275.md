@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现窗口、页面和组件的一键置灰功能（灰色模式）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-275
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-275
 ---
 
 

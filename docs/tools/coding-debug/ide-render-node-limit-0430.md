@@ -1,7 +1,7 @@
 ---
 title: "节点数超过500过多"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-render-node-limit-0430
+original_url: /docs/tools/coding-debug/ide-render-node-limit-0430
 format: md
 ---
 

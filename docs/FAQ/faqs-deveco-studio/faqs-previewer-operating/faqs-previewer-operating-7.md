@@ -1,7 +1,7 @@
 ---
 format: md
 title: "DevEco无法执行Previewer，报错“This module is referencing one or more HSPs and cannot be previewed.”怎么处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-previewer-operating-7
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-7
 ---
 
 

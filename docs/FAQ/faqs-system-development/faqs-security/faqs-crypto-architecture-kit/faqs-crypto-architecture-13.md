@@ -1,6 +1,6 @@
 ---
 title: "如何实现RSA的公钥PK加密一段文字"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-13
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-13
 format: md
 ---
 
@@ -141,4 +141,4 @@ struct EncryptedText {
 
 **参考链接：**
 
-[RSA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec#rsa)
+[RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-asym-encrypt-decrypt-spec#rsa)

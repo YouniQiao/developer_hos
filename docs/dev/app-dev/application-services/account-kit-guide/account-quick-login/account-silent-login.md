@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "静默登录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-silent-login
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-silent-login
 format: md
 ---
 
@@ -42,7 +42,7 @@ format: md
 
 ## 开发前提
 
-在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)、[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。此场景无需申请账号权限。
+在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)、[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。此场景无需申请账号权限。
 
 ## 客户端开发
 
@@ -64,7 +64,7 @@ format: md
    // 建议使用generateRandomUUID生成state，可用于一致性比对，防止跨站攻击
    loginRequest.state = util.generateRandomUUID();
    ```
-3. 调用[AuthenticationController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationcontroller)对象的[executeRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#executerequest-1)方法执行登录请求，并处理登录结果，获取到Authorization Code及ID Token。之后将Authorization Code传给应用服务端处理，可参考[客户端与服务端交互开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#客户端与服务端交互开发)的开发步骤a和b。应用可以通过公开的网址获取到华为账号服务器发布的公钥，对签名和ID Token中的必要信息进行验证，以证明其没有被篡改过。解析ID Token可参考[ID Token解析与验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-12#解析与验证)。
+3. 调用[AuthenticationController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationcontroller)对象的[executeRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#executerequest-1)方法执行登录请求，并处理登录结果，获取到Authorization Code及ID Token。之后将Authorization Code传给应用服务端处理，可参考[客户端与服务端交互开发](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#客户端与服务端交互开发)的开发步骤a和b。应用可以通过公开的网址获取到华为账号服务器发布的公钥，对签名和ID Token中的必要信息进行验证，以证明其没有被篡改过。解析ID Token可参考[ID Token解析与验证](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-12#解析与验证)。
 
    ```
    // 执行登录请求

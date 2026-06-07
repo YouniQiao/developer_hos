@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-associate-android-app-overview-0000002351878886
+original_url: /docs/distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-associate-android-app-overview-0000002351878886
 format: md
 ---
 
@@ -21,9 +21,9 @@ format: md
   | 仅支持平板+PC/2in1 | 支持设备包含平板 |
   | 仅支持手机+PC/2in1 | 支持设备包含手机 |
   | 仅支持手机+平板+PC/2in1 | 支持设备包含手机 |
-* 游戏上架前需前往AGC控制台[配置APP ID映射关系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-huawei#配置app-id映射关 系)。
+* 游戏上架前需前往AGC控制台[配置APP ID映射关系](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-gameplayer-huawei#配置app-id映射关 系)。
 
 您可以在以下两种情况下进行关联：
 
-* [发布HarmonyOS应用时关联](https://developer.huawei.com/consumer/cn/doc/app/agc-help-associate-in-release-0000002385759281)：在首次发布或者升级HarmonyOS版本（之前未关联过Android应用）时，AppGallery Connect将自动匹配您名下是否存在可关联的Android应用，如果存在，将弹窗引导您进行关联。
-* [在应用系列中进行关联](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manage-app-series-0000002352038686)：如果发布时未进行关联，HarmonyOS应用已全网状态，且需要关联的Android应用也是全网状态，则可以通过管理应用系列实现。
+* [发布HarmonyOS应用时关联](/docs/distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-associate-in-release-0000002385759281)：在首次发布或者升级HarmonyOS版本（之前未关联过Android应用）时，AppGallery Connect将自动匹配您名下是否存在可关联的Android应用，如果存在，将弹窗引导您进行关联。
+* [在应用系列中进行关联](/docs/distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-manage-app-series-0000002352038686)：如果发布时未进行关联，HarmonyOS应用已全网状态，且需要关联的Android应用也是全网状态，则可以通过管理应用系列实现。

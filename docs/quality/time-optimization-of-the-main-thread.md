@@ -1,6 +1,6 @@
 ---
 title: "主线程耗时操作优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-time-optimization-of-the-main-thread
+original_url: /docs/quality/time-optimization-of-the-main-thread
 format: md
 ---
 
@@ -386,7 +386,7 @@ struct PositiveOfOnScroll {
 
 ![](./img/a8345a1e.png)
 
-本案例在onWillScroll事件回调的开始开启打点追踪，在事件回调结束前停止性能打点追踪，用以测试有无耗时操作的性能差异。关于本例中使用性能打点的介绍，请参考[@ohos.hiTraceMeter (性能打点)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter)。案例中关于帧率检测，丢帧分析，请参考[帧率问题分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-zhenlv)。
+本案例在onWillScroll事件回调的开始开启打点追踪，在事件回调结束前停止性能打点追踪，用以测试有无耗时操作的性能差异。关于本例中使用性能打点的介绍，请参考[@ohos.hiTraceMeter (性能打点)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracemeter)。案例中关于帧率检测，丢帧分析，请参考[帧率问题分析](/docs/quality/zhenlv)。
 
 由于本章节各场景的帧率数据统计以及分析步骤与方式大体一致，下文将不再对各场景的帧率进行重复统计分析。
 
@@ -1216,7 +1216,7 @@ export class Item {
 }
 ```
 
-关于@Sendable装饰器的详细介绍以及使用限制，请参考[Sendable对象简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)。
+关于@Sendable装饰器的详细介绍以及使用限制，请参考[Sendable对象简介](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)。
 
 上述示例代码中在TaskWorker线程返回的Item对象上使用了@Sendable，系统会使用共享内存的方式处理使用了@Sendable的类，从而降低反序列化的开销，抓取Trace图如下：
 

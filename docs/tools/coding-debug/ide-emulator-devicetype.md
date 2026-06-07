@@ -1,7 +1,7 @@
 ---
 title: "设备支持类型"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-emulator-devicetype
+original_url: /docs/tools/coding-debug/ide-emulator-devicetype
 format: md
 ---
 

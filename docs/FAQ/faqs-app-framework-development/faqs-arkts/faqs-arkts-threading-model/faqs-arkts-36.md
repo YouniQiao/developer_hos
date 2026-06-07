@@ -1,6 +1,6 @@
 ---
 title: "ArkTS中Worker线程、TaskPool线程如何与宿主线程通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-36
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-36
 format: md
 ---
 

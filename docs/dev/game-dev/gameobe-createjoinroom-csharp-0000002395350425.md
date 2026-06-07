@@ -1,6 +1,6 @@
 ---
 title: "创建房间"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-createjoinroom-csharp-0000002395350425
+original_url: /docs/dev/game-dev/gameobe-createjoinroom-csharp-0000002395350425
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已[初始化联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-csharp-0000002361510612)。
+您已[初始化联机对战SDK](/docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612)。
 
 ## 开发步骤
 
@@ -17,7 +17,7 @@ format: md
 
    ![](./img/bf6a2e06.png)
 
-   房主成功创建房间，则默认自动加入了该房间，并会生成一个房间ID和一个房间短码。房主可将该房间ID或房间短码信息分享给其他玩家，其他玩家可凭借此信息[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-joinroom-csharp-0000002361510616)。
+   房主成功创建房间，则默认自动加入了该房间，并会生成一个房间ID和一个房间短码。房主可将该房间ID或房间短码信息分享给其他玩家，其他玩家可凭借此信息[加入房间](/docs/dev/game-dev/gameobe-joinroom-csharp-0000002361510616)。
 
    ```
    CreateRoomConfig createRoomConfig = new CreateRoomConfig();

@@ -1,6 +1,6 @@
 ---
 title: "元服务开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-development
+original_url: /docs/dev/atomic-dev/atomic-service-development/atomic-service-development
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用0x八位颜色设置渐变透明度为什么与#八位资源颜色值不同"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-245
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-245
 ---
 
 

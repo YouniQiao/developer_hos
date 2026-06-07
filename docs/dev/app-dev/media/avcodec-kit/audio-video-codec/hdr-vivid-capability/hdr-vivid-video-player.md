@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "HDR Vivid视频播放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdr-vivid-video-player
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-player
 format: md
 ---
 
@@ -246,16 +246,16 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    }
    ```
 
-   具体可参考：[视频解码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)中的“步骤-3：调用OH\_VideoDecoder\_RegisterCallback()设置回调函数”。
+   具体可参考：[视频解码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)中的“步骤-3：调用OH\_VideoDecoder\_RegisterCallback()设置回调函数”。
 3. 配置解码器。
 
-   具体可参考：[视频解码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)中的“步骤-5：调用OH\_VideoDecoder\_Configure()配置解码器”。
+   具体可参考：[视频解码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)中的“步骤-5：调用OH\_VideoDecoder\_Configure()配置解码器”。
 4. 设置surface。
 
-   具体可参考：[视频解码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)中的“步骤-6：设置surface”。
+   具体可参考：[视频解码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)中的“步骤-6：设置surface”。
 5. 调用OH\_VideoDecoder\_Start()启动解码器。
 
-   具体可参考：[视频解码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)中的“步骤-8：调用OH\_VideoDecoder\_Start()启动解码器”。
+   具体可参考：[视频解码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)中的“步骤-8：调用OH\_VideoDecoder\_Start()启动解码器”。
 
 **Buffer模式**
 
@@ -291,13 +291,13 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    }
    ```
 
-   具体可参考：[视频解码Buffer模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#buffer模式)中的“步骤-3：调用OH\_VideoDecoder\_RegisterCallback()设置回调函数”。
+   具体可参考：[视频解码Buffer模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#buffer模式)中的“步骤-3：调用OH\_VideoDecoder\_RegisterCallback()设置回调函数”。
 3. 配置解码器。
 
-   具体可参考：[视频解码Buffer模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#buffer模式)中的“步骤-5：调用OH\_VideoDecoder\_Configure()配置解码器”。
+   具体可参考：[视频解码Buffer模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#buffer模式)中的“步骤-5：调用OH\_VideoDecoder\_Configure()配置解码器”。
 4. 调用OH\_VideoDecoder\_Start()启动解码器。
 
-   具体可参考：[视频解码Buffer模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#buffer模式)中的“步骤-7：调用OH\_VideoDecoder\_Start()启动解码器”。
+   具体可参考：[视频解码Buffer模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#buffer模式)中的“步骤-7：调用OH\_VideoDecoder\_Start()启动解码器”。
 5. 获取元数据。
 
    在 CMake 脚本中链接动态库。
@@ -396,4 +396,4 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    }
    ```
 
-   后续步骤具体可参考：[视频解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding)。
+   后续步骤具体可参考：[视频解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding)。

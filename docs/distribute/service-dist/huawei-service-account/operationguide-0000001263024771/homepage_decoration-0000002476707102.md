@@ -1,7 +1,7 @@
 ---
 title: "装修服务号主页"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/homepage_decoration-0000002476707102
+original_url: /docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/homepage_decoration-0000002476707102
 format: md
 ---
 

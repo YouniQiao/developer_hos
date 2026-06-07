@@ -1,7 +1,7 @@
 ---
 title: "查看账户信息"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-account-management-check-0000001293889870
+original_url: /docs/monetize/promotion/bp-delivery-account-management-check-0000001293889870
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
   推广账户绑定的华为账号标识，是开发者联盟通用的开发者ID。
 - <strong>团队管理</strong>
 
-  可邀请其他华为账号共同管理本账户，详见[文档介绍](https://developer.huawei.com/consumer/cn/doc/promotion/mix-tool-0000002466178422)。
+  可邀请其他华为账号共同管理本账户，详见[文档介绍](/docs/monetize/promotion/mix-tool-0000002466178422)。
 - <strong>切换账号</strong>
 
   当前华为账号绑定登录多个账户，通过此入口切换。

@@ -1,7 +1,7 @@
 ---
 title: "A2A基础配置"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/a2a-basic-configuration-0000002437785686
+original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/a2a-basic-configuration-0000002437785686
 format: md
 ---
 
@@ -32,6 +32,6 @@ Header：使用HTTP请求Header域传递参数方式认证；
 
 Query：使用Query传递参数方式认证。该认证方式可能存在安全风险，建议使用其他认证方式。
 
-认证方式可参考[创建插件](https://developer.huawei.com/consumer/cn/doc/service/create-plugin-0000002471264325)认证方式部分。
+认证方式可参考[创建插件](/docs/distribute/xiaoyi/cloud-plug-in-0000002471344189/create-plugin-0000002471264325)认证方式部分。
 
 ![](./img/07bde3b9596f.png)

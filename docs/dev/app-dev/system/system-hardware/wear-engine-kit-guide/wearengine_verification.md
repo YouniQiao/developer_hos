@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "调测验证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_verification
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_verification
 format: md
 ---
 

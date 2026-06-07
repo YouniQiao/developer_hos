@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ohpm-repo使用mysqlDB插件连mysql时，报错“decrypt data failed. error: Unsupported state or unable to authenticate data”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-4
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-4
 ---
 
 

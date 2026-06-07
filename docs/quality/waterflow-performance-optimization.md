@@ -1,6 +1,6 @@
 ---
 title: "瀑布流加载丢帧优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-waterflow-performance-optimization
+original_url: /docs/quality/waterflow-performance-optimization
 ---
 
 
@@ -50,13 +50,13 @@ build() {
 
 示例代码使用LazyForEach进行数据懒加载，WaterFlow布局按需创建FlowItem组件，并在FlowItem滑出可视区域时回收，以降低内存占用。
 
-瀑布流的开发，也属于长列表加载的一种场景，其LazyForEach懒加载原理及性能分析可参考：[懒加载](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section182645364229)
+瀑布流的开发，也属于长列表加载的一种场景，其LazyForEach懒加载原理及性能分析可参考：[懒加载](/docs/quality/best-practices-long-list#section182645364229)
 
 ## 缓存数据项
 
 通过设置cachedCount参数，可以指定LazyForEach懒加载组件的缓存数量。设置cachedCount后，除了屏幕内显示的Item组件外，还会预先缓存屏幕可视区外指定数量的数据。当一个屏幕的数据加载完成后，再次向下滑动时，会先加载上一次请求的数据，加载完成后，再加载本次请求的数据。
 
-详细原理及性能分析参考：[缓存列表项](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section11667144010222)
+详细原理及性能分析参考：[缓存列表项](/docs/quality/best-practices-long-list#section11667144010222)
 
 ## 组件复用
 
@@ -64,7 +64,7 @@ build() {
 
 @Reusable装饰器实现的组件复用仅限于父组件内。 若要支持全局范围的组件复用，可以使用全局组件复用池的第三方库。
 
-组件复用详细原理及性能分析参考：[组件复用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list#section36781044162218)
+组件复用详细原理及性能分析参考：[组件复用](/docs/quality/best-practices-long-list#section36781044162218)
 
 全局组件复用池三方库：[nodepool](https://ohpm.openharmony.cn/#/cn/detail/@hadss%2Fnodepool)
 
@@ -182,8 +182,8 @@ getTitleHeight(title: string) {
 
 | 技术名称 | 适用场景 | 参考文章 |
 | --- | --- | --- |
-| 懒加载 | 适用于瀑布流场景，解决一次性加载并渲染大量数据造成的性能瓶颈。 | [长列表加载性能优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list)、  [使用懒加载优化性能](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lazyforeach-optimization)、  [数据懒加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach) |
-| 缓存列表项 | 适用于加载列表项数据请求耗时的场景。比如，瀑布流列表中含有短视频、高清图片等数据量比较大的资源。 | [长列表加载性能优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list) |
+| 懒加载 | 适用于瀑布流场景，解决一次性加载并渲染大量数据造成的性能瓶颈。 | [长列表加载性能优化](/docs/quality/best-practices-long-list)、  [使用懒加载优化性能](/docs/quality/lazyforeach-optimization)、  [数据懒加载](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach) |
+| 缓存列表项 | 适用于加载列表项数据请求耗时的场景。比如，瀑布流列表中含有短视频、高清图片等数据量比较大的资源。 | [长列表加载性能优化](/docs/quality/best-practices-long-list) |
 | 组件复用 | 适用于瀑布流中存在大量结构相同的组件频繁创建与销毁导致性能瓶颈的场景。 | [组件复用最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-reuse) |
 | 固定宽高 | 适用于瀑布流页面组件高度不一的场景。 | [利用布局边界减少布局计算](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-layout-performance#section151587885316) |
 | 布局优化 | 错误的布局方式可能会导致组件树和嵌套层数过多，在创建和布局绘制阶段产生较大的性能开销，所以可以通过布局优化提升性能。 | [合理使用布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-layout-performance) |

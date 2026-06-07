@@ -1,7 +1,7 @@
 ---
 format: md
 title: "过长文字如何滚动显示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-138
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-138
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "功能介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/introduction-to-creative-pre-review-functions-0000001927006793
+original_url: /docs/monetize/promotion/introduction-to-creative-pre-review-functions-0000001927006793
 format: md
 ---
 

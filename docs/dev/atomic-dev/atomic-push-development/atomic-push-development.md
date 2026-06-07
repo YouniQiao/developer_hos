@@ -1,6 +1,6 @@
 ---
 title: "推送"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-push-development
+original_url: /docs/dev/atomic-dev/atomic-push-development/atomic-push-development
 format: md
 ---
 

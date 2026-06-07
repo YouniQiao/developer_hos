@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何监听文件或文件目录的变化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-media-library-1
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-media-library-kit/faqs-media-library-1
 ---
 
 

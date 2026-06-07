@@ -1,6 +1,6 @@
 ---
 title: "如何判断使用的是移动蜂窝网络"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-45
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-45
 format: md
 ---
 

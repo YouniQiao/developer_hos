@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分享时提示“您选择的文件不支持分享”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq-3
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-3
 format: md
 ---
 
@@ -19,5 +19,5 @@ Share Kit无法访问应用提供的文件URI路径，可能的原因：
 
 **处理步骤：**
 
-1. 排查文件URI格式是否正确，文件URI的格式请参考：[文件URI规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file#文件uri规范)。
+1. 排查文件URI格式是否正确，文件URI的格式请参考：[文件URI规范](/docs/dev/app-dev/application-framework/core-file-kit/app-file/share-app-file#文件uri规范)。
 2. 排查分享过程中，文件是否真实存在并且拥有文件的访问权限，可使用[fileIo.stat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileiostat)尝试访问文件，并通过比较文件创建时间和分享发起时间确认文件存在。

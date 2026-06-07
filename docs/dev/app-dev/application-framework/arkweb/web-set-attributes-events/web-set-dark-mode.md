@@ -1,6 +1,6 @@
 ---
 title: "Web深色模式适配"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-set-dark-mode
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-set-dark-mode
 format: md
 ---
 

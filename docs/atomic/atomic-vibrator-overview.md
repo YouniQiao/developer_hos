@@ -1,6 +1,6 @@
 ---
 title: "振动开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-vibrator-overview
+original_url: /docs/dev/atomic-dev/atomic-vibrator/atomic-vibrator-overview
 format: md
 ---
 

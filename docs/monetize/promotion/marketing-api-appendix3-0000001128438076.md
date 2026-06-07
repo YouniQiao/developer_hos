@@ -1,7 +1,7 @@
 ---
 title: "错误码"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix3-0000001128438076
+original_url: /docs/monetize/promotion/marketing-api-appendix3-0000001128438076
 format: md
 ---
 

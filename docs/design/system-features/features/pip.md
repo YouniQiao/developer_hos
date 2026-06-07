@@ -1,7 +1,7 @@
 ---
 title: 画中画
 sidebar_label: 画中画
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/pip-0000001927422624
+original_url: /docs/design/system-features/features/pip
 format: md
 ---
 

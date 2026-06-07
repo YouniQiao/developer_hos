@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native如何创建子线程，有什么约束，与主线程如何通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-68
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-68
 ---
 
 

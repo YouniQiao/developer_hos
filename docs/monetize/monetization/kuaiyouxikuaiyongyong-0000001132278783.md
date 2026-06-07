@@ -1,7 +1,7 @@
 ---
 title: "快应用/快游戏"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/kuaiyouxikuaiyongyong-0000001132278783
+original_url: /docs/monetize/monetization/kuaiyouxikuaiyongyong-0000001132278783
 format: md
 ---
 

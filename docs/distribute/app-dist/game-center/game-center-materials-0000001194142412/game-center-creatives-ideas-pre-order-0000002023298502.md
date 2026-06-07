@@ -1,7 +1,7 @@
 ---
 title: "游戏预约魔方创意"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-pre-order-0000002023298502
+original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-pre-order-0000002023298502
 format: md
 ---
 
@@ -37,7 +37,7 @@ format: md
 | 更换模板 | 您可以重新选择页面模板，请参见[创建H5页面](#section7182346111813)。 |
 | 页面设置 | 您需要设置全局样式，例如页面名称、页面使用组件版本等。 |
 | 保存 | 您可以随时保存页面内容。 |
-| 预览 | 您可以随时[预览页面内容](https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-0000001429732169#section31105420225)。 |
+| 预览 | 您可以随时[预览页面内容](/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001429732169#section31105420225)。 |
 | 提交审核 | 您可以在完成当前页面后[提交审核](#section7501181420712)。 |
 
 ###编辑预览区域

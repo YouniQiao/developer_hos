@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Tabs组件，TabContent页面加载耗时，预加载未生效，怎么解决"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-452
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-452
 ---
 
 

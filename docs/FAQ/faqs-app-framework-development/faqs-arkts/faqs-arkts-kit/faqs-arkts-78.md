@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在ArkTS中实现自定义装饰器能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-78
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-78
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkui-reduce-pangesture-distance"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hp-arkui-reduce-ges-distance
+original_url: /docs/tools/coding-debug/ide-hp-arkui-reduce-ges-distance
 format: md
 ---
 

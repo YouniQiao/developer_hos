@@ -1,7 +1,7 @@
 ---
 format: md
 title: "怎样在编译配置中设置excludes文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-57
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-57
 ---
 
 

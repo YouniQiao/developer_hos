@@ -1,6 +1,6 @@
 ---
 title: "默认界面扫码"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-default-mode
+original_url: /docs/dev/atomic-dev/atomic-code-scan-development/atomic-scan-default-mode
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "下载工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-download-0000002321404201
+original_url: /docs/dev/game-dev/games-hismartperf-download-0000002321404201
 format: md
 ---
 

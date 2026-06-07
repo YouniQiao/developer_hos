@@ -1,7 +1,7 @@
 ---
 title: 智慧屏应用 UX 体验标准
 sidebar_label: 智慧屏应用 UX 体验标准
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-vision-0000002360813381
+original_url: /docs/design/ux-standards/vision-ux
 format: md
 ---
 

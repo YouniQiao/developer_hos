@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-introduction
+original_url: /docs/dev/app-dev/ai/intents-event-rec-introduction
 format: md
 ---
 

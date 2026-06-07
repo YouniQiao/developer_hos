@@ -1,6 +1,6 @@
 ---
 title: "配置匹配规则"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-ruleconfiguration-0000002361670428
+original_url: /docs/dev/game-dev/gameobe-ruleconfiguration-0000002361670428
 has_merged_cells: true
 format: md
 ---
@@ -23,7 +23,7 @@ format: md
 
 ### 前提条件
 
-您已[开通联机对战服务](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-enable-0000002395350369)。
+您已[开通联机对战服务](/docs/dev/game-dev/gameobe-enable-0000002395350369)。
 
 ### 配置步骤
 
@@ -47,7 +47,7 @@ format: md
    | 整体超时时间（秒） | 必填 | 玩家匹配过程的整体超时时间，取值范围为[5,300]。  说明：  整体超时时间应不低于玩家组队匹配中的“[放宽条件的匹配时长](#ZH-CN_TOPIC_0000002361670428__p121193153914)”和队伍组房匹配中的“[放宽条件的匹配时长](#ZH-CN_TOPIC_0000002361670428__p16613405351)”之和。 |
    | 机器人填充 | 选填 | 在玩家匹配不足的情况下自动填充机器人，可有效避免匹配超时而导致匹配失败的问题，默认为“关闭”状态。 |
    | 备注 | 选填 | 匹配规则的相关备注信息。 |
-6. 选择对应的匹配规则类型及配置模式，并配置队伍信息。此处以“普通模式”配置匹配规则为例展开说明，如需了解“脚本模式”内容，请参见[脚本模式详解](https://developer.huawei.com/consumer/cn/doc/games-guides/script-mode-0000002395190665)。
+6. 选择对应的匹配规则类型及配置模式，并配置队伍信息。此处以“普通模式”配置匹配规则为例展开说明，如需了解“脚本模式”内容，请参见[脚本模式详解](/docs/dev/game-dev/script-mode-0000002395190665)。
 
    ![](./img/7116599d.png)
 

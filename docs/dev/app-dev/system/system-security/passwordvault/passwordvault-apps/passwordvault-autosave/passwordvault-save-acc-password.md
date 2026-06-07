@@ -1,6 +1,6 @@
 ---
 title: "账号密码保存"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-save-acc-password
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-save-acc-password
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 1. **已设置锁屏密码**，并且开启密码保险箱中“自动填充和保存”开关。
 2. 界面中TextInput输入框组件的enableAutoFill属性的值应为true（默认为true）。
-3. 密码保险箱的自动保存功能只适用于用户名和密码保存场景，在界面中必须同时存在用户名和密码的TextInput输入框组件。具体类型请参考[输入框类型说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation#约束与限制)。
+3. 密码保险箱的自动保存功能只适用于用户名和密码保存场景，在界面中必须同时存在用户名和密码的TextInput输入框组件。具体类型请参考[输入框类型说明](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-quick-adaptation#约束与限制)。
 
    用户名输入框应设置type属性为InputType.USER\_NAME。
 
@@ -30,7 +30,7 @@ format: md
    InputType.NEW\_PASSWORD表示新密码输入框，适用于注册界面和修改密码界面的新密码。
 4. 用户名和密码输入框中需要输入内容，不能为空也不能超长。用户名长度不能超过128字符，密码长度不能超过256字符。
 5. 页面跳转时触发保存功能。
-6. 在只有type为InputType.USER\_NAME和InputType.Password的两个TextInput组件时，如果使用[账号密码填充-修改密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-acc-password#修改密码)自动填充了用户名和密码并没有修改，则不会触发保存和更新功能。
+6. 在只有type为InputType.USER\_NAME和InputType.Password的两个TextInput组件时，如果使用[账号密码填充-修改密码](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-acc-password#修改密码)自动填充了用户名和密码并没有修改，则不会触发保存和更新功能。
 
 ## 账号密码登录
 

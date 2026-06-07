@@ -1,7 +1,7 @@
 ---
 format: md
 title: "对象中函数的this如何指向外层"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-139
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-139
 ---
 
 

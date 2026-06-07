@@ -1,7 +1,7 @@
 ---
 format: md
 title: "用户更新app后是否还会弹出权限申请弹窗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-access-control-2
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-2
 ---
 
 

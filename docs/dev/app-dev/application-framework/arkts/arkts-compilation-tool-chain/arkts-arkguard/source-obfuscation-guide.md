@@ -1,6 +1,6 @@
 ---
 title: "ArkGuard混淆开启指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide
 format: md
 ---
 
@@ -63,7 +63,7 @@ format: md
   2. 在DevEco Studio 5.0.3.600及更高版本中，新建工程的默认设置为关闭源码混淆。若需开启混淆，需将模块的build-profile.json5文件中的ruleOptions.enable字段设置为true。同时，混淆规则配置文件 obfuscation-rules.txt 默认启用了以下四项推荐的混淆选项：-enable-property-obfuscation、-enable-toplevel-obfuscation、-enable-filename-obfuscation和-enable-export-obfuscation。开发者可以根据需要进一步修改混淆配置。
 * 配置混淆保留选项
 
-  开启混淆后，代码中的方法、属性或路径被混淆。但是在程序运行时，如果访问未混淆的方法、属性或路径，可能导致功能不可用。因此需要根据不同的场景配置保留选项。关于保留选项的排查场景和配置方法，参考[保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。
+  开启混淆后，代码中的方法、属性或路径被混淆。但是在程序运行时，如果访问未混淆的方法、属性或路径，可能导致功能不可用。因此需要根据不同的场景配置保留选项。关于保留选项的排查场景和配置方法，参考[保留选项](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#保留选项)。
 
   排查场景和配置字段时，推荐使用[混淆助手配置保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation#section19439175917123)，快速识别需要配置的保留选项和白名单字段。
 * 指定release编译
@@ -104,10 +104,10 @@ format: md
 
   ![](./img/66e52eca.png)
 
-  如果在consumer-rules.txt文件中配置了[混淆选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆选项)，可能会对依赖了HAR或HSP的主模块产生影响。因此，建议仅在该文件中配置[保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。
+  如果在consumer-rules.txt文件中配置了[混淆选项](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#混淆选项)，可能会对依赖了HAR或HSP的主模块产生影响。因此，建议仅在该文件中配置[保留选项](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#保留选项)。
 * obfuscation.txt
 
-  不同于以上两种开发者可自行修改的配置文件，obfuscation.txt是在编译构建HAR或HSP时根据consumer-rules.txt和依赖模块的混淆规则文件自动生成的文件，它作为一种编译产物存在于发布的HAR或HSP包中。在其他应用依赖该发布包时，会合并其中的混淆规则应用于当前编译流程。obfuscation.txt内容的生成及合并逻辑请参考[混淆规则合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)。
+  不同于以上两种开发者可自行修改的配置文件，obfuscation.txt是在编译构建HAR或HSP时根据consumer-rules.txt和依赖模块的混淆规则文件自动生成的文件，它作为一种编译产物存在于发布的HAR或HSP包中。在其他应用依赖该发布包时，会合并其中的混淆规则应用于当前编译流程。obfuscation.txt内容的生成及合并逻辑请参考[混淆规则合并策略](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#混淆规则合并策略)。
 
   ![](./img/d8f5d9c6.png)
 
@@ -158,7 +158,7 @@ format: md
 
    2. 若代码中使用点语法访问未在ArkTS/TS/JS代码中定义的字段，比如访问native实现的so库，字段固定的json文件与数据库等场景：
 
-      1. 若在代码中引用so库的api，如import testNapi from 'library.so';testNapi.foo();需要使用-keep-property-name foo保留属性名称，详见[选项说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#section-keep-property-name)。
+      1. 若在代码中引用so库的api，如import testNapi from 'library.so';testNapi.foo();需要使用-keep-property-name foo保留属性名称，详见[选项说明](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#section-keep-property-name)。
       2. 若在代码中使用json文件中的字段，需要使用-keep-property-name保留json文件中的字段名称。
       3. 若在代码中使用数据库相关的字段，需要使用-keep-property-name保留数据库中的字段名称。
    3. 若构建HAR模块并发布给其他模块使用的场景，要在HAR模块中的consumer-rules.txt文件中将不能被二次混淆的属性使用-keep-property-name保留。consumer-rules.txt文件在构建HAR时会生成obfuscation.txt文件。此HAR被其它模块依赖时，DevEco Studio会解析obfuscation.txt文件，读取文件中的白名单。
@@ -170,7 +170,7 @@ format: md
    4. 验证应用功能以及模块被依赖时的接口调用功能，排查遗漏的场景。若应用出现功能异常，依据混淆后的报错栈从对应的[中间产物](#查看混淆效果)中找到报错行的代码，排查需要配置的白名单并进行保留。
 4. 待上述选项应用适配成功后，开启-enable-filename-obfuscation选项。此选项开启后，以下场景需要适配：
    1. 若代码中有动态import语句，如const path = './filePath'; import(path)，会出现文件引用失败的情况，需要使用-keep-file-name filePath来保留这个文件名。
-   2. 若应用中有描述路由表信息的[routerMap配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#routermap标签)，其中的pageSourceFile字段标记页面在模块的路径，需要使用-keep-file-name来保留这个路径。
+   2. 若应用中有描述路由表信息的[routerMap配置](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#routermap标签)，其中的pageSourceFile字段标记页面在模块的路径，需要使用-keep-file-name来保留这个路径。
    3. 若代码中有传入ohmUrl进行页面跳转，如router.pushUrl(\{url: '@bundle:com.example.routerPage/Library/Index'\})，使用-keep-file-name来保留这个路径。
    4. 验证应用功能，排查遗漏的场景。若应用出现功能异常，且报错栈中的路径为混淆后的路径，可以在模块中的build/default/[...]/release/obfuscation/nameCache.json文件中查询到原始路径，进而找到源码文件。另外，[插件hstack](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-hstack)支持自动还原混淆后的报错堆栈。在定位到需要保留的路径后，使用-keep-file-name来保留此路径。
 

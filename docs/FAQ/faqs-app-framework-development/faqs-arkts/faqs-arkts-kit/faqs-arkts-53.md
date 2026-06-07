@@ -1,6 +1,6 @@
 ---
 title: ".ets文件和.ts文件的区别及如何互相调用文件中定义的方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-53
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-53
 format: md
 ---
 

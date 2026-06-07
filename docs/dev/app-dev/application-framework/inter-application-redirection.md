@@ -1,6 +1,6 @@
 ---
 title: "应用间跳转实践概览"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inter-application-redirection
+original_url: /docs/dev/app-dev/application-framework/inter-application-redirection
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
 
 ![](./img/caebf016.png)
 
-通过系统分享面板，将包含App Linking的链接分享给好友，实现一键直达原内容。详细请参见[社交分享跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/social-sharing-redirection)。
+通过系统分享面板，将包含App Linking的链接分享给好友，实现一键直达原内容。详细请参见[社交分享跳转](/docs/dev/app-dev/application-framework/social-sharing-redirection)。
 
 ### 广告跳转
 
@@ -49,7 +49,7 @@ format: md
 
 ![](./img/a3961b8f.png)
 
-通过App Linking实现从广告链接到应用特定页面的精准跳转，提高营销转化率。详细请参见[广告跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ad-redirection)。
+通过App Linking实现从广告链接到应用特定页面的精准跳转，提高营销转化率。详细请参见[广告跳转](/docs/dev/app-dev/application-framework/ad-redirection)。
 
 ### 特殊文本识别跳转
 
@@ -63,7 +63,7 @@ format: md
 
 ![](./img/d20f0c9f.png)
 
-通过系统的文本识别能力，识别其中的特殊文本，从而实现从文本到功能的直接跳转。详细请参见[特殊文本识别跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/special-text-recognition-redirection)。
+通过系统的文本识别能力，识别其中的特殊文本，从而实现从文本到功能的直接跳转。详细请参见[特殊文本识别跳转](/docs/dev/app-dev/application-framework/special-text-recognition-redirection)。
 
 ## 技术实现方案
 
@@ -73,15 +73,15 @@ format: md
 
 **应用链接（App Linking和Deep Linking）**
 
-* [App Linking](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)：通过域名校验和HTTPS协议，实现更安全可靠的跳转。当目标方未安装时，可以打开Web网页内容，为用户提供更好的体验。
-* [Deep Linking](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-linking-startup)：实现相对简单，但存在被恶意仿冒的风险。当目标方未安装时，用户体验往往不佳，容易遇到报错情况。
+* [App Linking](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)：通过域名校验和HTTPS协议，实现更安全可靠的跳转。当目标方未安装时，可以打开Web网页内容，为用户提供更好的体验。
+* [Deep Linking](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/deep-linking-startup)：实现相对简单，但存在被恶意仿冒的风险。当目标方未安装时，用户体验往往不佳，容易遇到报错情况。
 
 相较于Deep Linking，App Linking有如下优势：
 
 * 安全性：通过端云安全鉴权和域名校验，确保只有合法应用被拉起。
 * 直达体验：无需二次确认，直接跳转到应用内指定页面。
-* [直达应用市场](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-direct-to-ag)：未安装应用时可跳转至应用市场应用详情页。
-* [延迟链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-deferredlink)：支持应用安装后恢复之前的跳转意图。
+* [直达应用市场](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag)：未安装应用时可跳转至应用市场应用详情页。
+* [延迟链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink)：支持应用安装后恢复之前的跳转意图。
 
 ![](./img/abae8ca3.png)
 
@@ -89,10 +89,10 @@ format: md
 
 **系统应用跳转**
 
-系统提供了一些能力和接口，在确保访问安全的前提下，可以让开发者快捷地实现系统应用跳转，例如跳转设置、应用市场、钱包、电话、日历、联系人等系统应用。详细请参见[拉起系统应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup)。
+系统提供了一些能力和接口，在确保访问安全的前提下，可以让开发者快捷地实现系统应用跳转，例如跳转设置、应用市场、钱包、电话、日历、联系人等系统应用。详细请参见[拉起系统应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/system-app-startup)。
 
 ### 拉起指定类型应用
 
 在某些场景下，开发者希望基于用户意图而非特定应用实现功能，例如使用任意一款支持的地图应用导航。
 
-在该场景下开发者并不指定某个具体应用，而是以用户意图的角度，由系统查询出当前设备内符合条件的所有应用，由用户自行选择在哪个应用中执行后续逻辑。实际的业务场景例如用户A给用户B分享了一个地理位置，用户B点击该消息后，系统会查询出设备内已安装的所有地图导航类的应用，由用户自行选择在哪个应用中执行后续操作。详细请参见[拉起指定类型应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-intent-panel)。
+在该场景下开发者并不指定某个具体应用，而是以用户意图的角度，由系统查询出当前设备内符合条件的所有应用，由用户自行选择在哪个应用中执行后续逻辑。实际的业务场景例如用户A给用户B分享了一个地理位置，用户B点击该消息后，系统会查询出设备内已安装的所有地图导航类的应用，由用户自行选择在哪个应用中执行后续操作。详细请参见[拉起指定类型应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-intent-panel)。

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "商户侧没有传营销信息，支付回调里面为什么会有营销信息？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-17
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-17
 format: md
 ---
 

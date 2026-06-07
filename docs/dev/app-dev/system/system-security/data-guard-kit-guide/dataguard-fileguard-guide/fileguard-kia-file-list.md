@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设置KIA文件列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-kia-file-list
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-kia-file-list
 format: md
 ---
 

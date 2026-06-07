@@ -1,6 +1,6 @@
 ---
 title: "业务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-overview-0000002338546393
+original_url: /docs/dev/game-dev/games-gamemme-overview-0000002338546393
 has_merged_cells: true
 format: md
 ---
@@ -14,16 +14,16 @@ format: md
 
 | 主要功能 | 功能描述 | SDK类型 |
 | --- | --- | --- |
-| [实时语音](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-0000002338511701) | 支持实时语音通话，提供房间及语音管理等相关能力。 | HarmonyOS 5.0及以上丨C#（Native） |
+| [实时语音](/docs/dev/game-dev/games-gamemme-voice-0000002338511701) | 支持实时语音通话，提供房间及语音管理等相关能力。 | HarmonyOS 5.0及以上丨C#（Native） |
 | 支持范围语音，可与一定距离内的玩家进行实时语音通话。 | HarmonyOS 5.0及以上丨C#（Native） |
 | 支持3D音效，可针对声音进行方位和距离衰减的效果渲染。 | HarmonyOS 5.0及以上丨C#（Native） |
 | 支持语音变声，可对实时语音进行变声处理。 | HarmonyOS 5.0及以上丨C#（Native） |
-| [RTM](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rtm-0000002338391909) | 支持文本消息和二进制消息收发传递，可用于实现实时通信、全局聊天、游戏通知、指令同步等功能。 | HarmonyOS 5.0及以上丨C#（Native）丨C#（小游戏）丨REST API |
-| [语音消息](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-audio-msg-0000002359706922) | 支持语音消息的录制与播放。 | HarmonyOS 5.0及以上丨JS（小游戏）丨C#（Native）丨C#（小游戏） |
+| [RTM](/docs/dev/game-dev/games-gamemme-rtm-0000002338391909) | 支持文本消息和二进制消息收发传递，可用于实现实时通信、全局聊天、游戏通知、指令同步等功能。 | HarmonyOS 5.0及以上丨C#（Native）丨C#（小游戏）丨REST API |
+| [语音消息](/docs/dev/game-dev/games-gamemme-audio-msg-0000002359706922) | 支持语音消息的录制与播放。 | HarmonyOS 5.0及以上丨JS（小游戏）丨C#（Native）丨C#（小游戏） |
 | 支持录制与播放带有变声效果的语音消息。 | HarmonyOS 5.0及以上丨C#（Native） |
-| [效果音播放](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-local-audio-clip-0000002359547026) | 支持效果音播放，可用于实现简短音效的播放与音量系数管理等能力。 | HarmonyOS 5.0及以上丨C#（Native） |
-| [语音转文本](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voicetotext-0000002359706930) | 支持语音转录成文本，可用于语音输入等使用场景。 | HarmonyOS 5.0及以上丨JS（小游戏） | C#（Native） | C#（小游戏） |
-| [内容送检](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-riskcontrol-inspection-analysis-0000002338391913) | 提供了内容检测能力，同时支持人工复审，以保证内容风控的准确性。 | HarmonyOS 5.0及以上丨JS（小游戏）丨C#（Native）丨C#（小游戏） |
+| [效果音播放](/docs/dev/game-dev/games-gamemme-local-audio-clip-0000002359547026) | 支持效果音播放，可用于实现简短音效的播放与音量系数管理等能力。 | HarmonyOS 5.0及以上丨C#（Native） |
+| [语音转文本](/docs/dev/game-dev/games-gamemme-voicetotext-0000002359706930) | 支持语音转录成文本，可用于语音输入等使用场景。 | HarmonyOS 5.0及以上丨JS（小游戏） | C#（Native） | C#（小游戏） |
+| [内容送检](/docs/dev/game-dev/games-gamemme-riskcontrol-inspection-analysis-0000002338391913) | 提供了内容检测能力，同时支持人工复审，以保证内容风控的准确性。 | HarmonyOS 5.0及以上丨JS（小游戏）丨C#（Native）丨C#（小游戏） |
 
 ## 工作原理
 
@@ -35,9 +35,9 @@ format: md
 
 | 序号 | 步骤 | 详情 |
 | --- | --- | --- |
-| 1 | 开通服务 | 首次使用游戏多媒体服务时，您需要在AGC控制台上[开通服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enable-0000002338511697)。 |
-| 2 | 配置服务（可选） | 如需使用[语音转文本](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)、[安全加固](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section92517364165)、[内容检测](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section17288256144510)等功能，您需要在AGC控制台上打开相关功能的开关，部分功能还需要进行参数配置。 |
-| 3 | 集成SDK | 使用游戏多媒体服务相关功能，必须集成游戏多媒体SDK，具体请参见[HarmonyOS 5.0及以上](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332)丨[JS（小游戏）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-minigame-0000002393266905)丨[C#（Native）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057)丨[C#（小游戏）](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-minigame-0000002359706946)。 |
+| 1 | 开通服务 | 首次使用游戏多媒体服务时，您需要在AGC控制台上[开通服务](/docs/dev/game-dev/games-gamemme-enable-0000002338511697)。 |
+| 2 | 配置服务（可选） | 如需使用[语音转文本](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)、[安全加固](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section92517364165)、[内容检测](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section17288256144510)等功能，您需要在AGC控制台上打开相关功能的开关，部分功能还需要进行参数配置。 |
+| 3 | 集成SDK | 使用游戏多媒体服务相关功能，必须集成游戏多媒体SDK，具体请参见[HarmonyOS 5.0及以上](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332)丨[JS（小游戏）](/docs/dev/game-dev/games-gamemme-integratingsdk-minigame-0000002393266905)丨[C#（Native）](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057)丨[C#（小游戏）](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-minigame-0000002359706946)。 |
 | 4 | 功能开发 | 调用游戏多媒体服务SDK的API，开发实时语音、实时信令（RTM）、语音消息等相关功能。 |
 
 ## 接入流程与耗时

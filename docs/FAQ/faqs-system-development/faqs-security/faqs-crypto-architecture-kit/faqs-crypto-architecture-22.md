@@ -1,6 +1,6 @@
 ---
 title: "HMAC加密报错：Error message:convertSymKey key failed!"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-22
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-22
 format: md
 ---
 
@@ -45,4 +45,4 @@ struct HMACFailed {
 
 **参考链接**
 
-[HMAC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-key-generation-conversion-spec#hmac)
+[HMAC](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-sym-key-generation-conversion-spec#hmac)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "端侧GNSS围栏开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-guidelines
+original_url: /docs/dev/app-dev/application-services/location-kit/geofence/geofence-guidelines
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 
 ## 开发步骤
 
-1. 使用地理围栏功能，需要有权限ohos.permission.APPROXIMATELY\_LOCATION，位置权限申请的方法和步骤见[申请位置权限开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-permission-guidelines)。
+1. 使用地理围栏功能，需要有权限ohos.permission.APPROXIMATELY\_LOCATION，位置权限申请的方法和步骤见[申请位置权限开发指导](/docs/dev/app-dev/application-services/location-kit/location-preparation/location-permission-guidelines)。
 2. 导入geoLocationManager模块、wantAgent模块和BusinessError模块。
 
    ```

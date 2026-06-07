@@ -1,6 +1,6 @@
 ---
 title: "单选框 (Radio)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-radio-button
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-radio-button
 format: md
 ---
 

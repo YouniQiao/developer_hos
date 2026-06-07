@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "安全相机(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-secure-photo
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-secure-photo
 format: md
 ---
 
@@ -11,13 +11,13 @@ format: md
 应用具体使用步骤如下：
 
 * 通过Camera Kit打开安全摄像头，成功打开安全摄像头后，Camera Kit会返回给应用一个**安全摄像头序列号**。
-* 通过[Device Security Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-introduction)来创建证明密钥（安全摄像头序列号会作为入参）、初始化证明会话。Device Security Kit初始化证明会话完成后会返回给应用**匿名证书链**。
+* 通过[Device Security Kit](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-introduction)来创建证明密钥（安全摄像头序列号会作为入参）、初始化证明会话。Device Security Kit初始化证明会话完成后会返回给应用**匿名证书链**。
 * 通过Camera Kit配置安全相机输入输出流，重点是配置**安全数据流**，注册安全数据流每帧安全图像回调监听。
 * 解析安全数据流每帧安全图像，在服务器侧完成安全图像的签名验证。
 
 ![](./img/44561064.png)
 
-当前文档主要说明通过Camera Kit完成的步骤，证明会话相关步骤需通过Device Security Kit完成，具体可参考[可信应用服务-安全摄像头](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera)。
+当前文档主要说明通过Camera Kit完成的步骤，证明会话相关步骤需通过Device Security Kit完成，具体可参考[可信应用服务-安全摄像头](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securecamera)。
 
 ![](./img/f56d0285.png)
 
@@ -78,7 +78,7 @@ format: md
 
    安全相机需要创建两路输出流：
 
-   * 一路是普通的预览流，用于界面显示，普通预览流的创建流程请参考[预览开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preview)。
+   * 一路是普通的预览流，用于界面显示，普通预览流的创建流程请参考[预览开发指导](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preview)。
    * 一路是安全数据流，用于安全服务校验，安全数据流需要通过[image.createImageReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagecreateimagereceiver11)创建图像接收类[ImageReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagereceiver)，再通过其[getReceivingSurfaceId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagereceiver#getreceivingsurfaceid9)方法获取surfaceId。
 
      ![](./img/59a9593f.png)
@@ -113,7 +113,7 @@ format: md
      const seqId: bigint = await cameraInput.open(true);
    }
    ```
-6. 使用Device Security Kit的能力，创建证明密钥、打开证明会话。请参考Device Security Kit（设备安全服务）的开发指导：[可信应用服务-安全摄像头](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera)。
+6. 使用Device Security Kit的能力，创建证明密钥、打开证明会话。请参考Device Security Kit（设备安全服务）的开发指导：[可信应用服务-安全摄像头](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securecamera)。
 7. 创建安全相机会话，配流启流。
 
    创建安全相机模式的会话，将输入流、输出流加入会话，需要将安全数据流通过[SecureSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-securesession)的[addSecureOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-securesession#addsecureoutput12)方法标记成安全输出。
@@ -160,5 +160,5 @@ format: md
 
    解析安全数据流每帧安全图像，在服务器侧完成安全图像的签名验证。
 
-   如果有在端侧验证图像数据或地理位置数据签名的需求，可参考[验证签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-verifysignature)中与安全图像相关的部分。
+   如果有在端侧验证图像数据或地理位置数据签名的需求，可参考[验证签名](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-verify/devicesecurity-taas-verifysignature)中与安全图像相关的部分。
 9. 释放安全相机，使用[Session](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session)的[release](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#release11-1)方法。

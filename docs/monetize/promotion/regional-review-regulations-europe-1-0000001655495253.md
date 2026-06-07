@@ -1,7 +1,7 @@
 ---
 title: "区域审核规范（欧洲）"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/regional-review-regulations-europe-1-0000001655495253
+original_url: /docs/monetize/promotion/regional-review-regulations-europe-1-0000001655495253
 format: md
 ---
 

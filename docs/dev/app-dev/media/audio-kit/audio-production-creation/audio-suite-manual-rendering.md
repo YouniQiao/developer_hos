@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "离线编辑(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-suite-manual-rendering
+original_url: /docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-manual-rendering
 format: md
 ---
 

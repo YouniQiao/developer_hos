@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-advanced-target-overview-0000001379677865
+original_url: /docs/monetize/promotion/bpos-functions-advanced-target-overview-0000001379677865
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/53ea65e49103.png) 
 
-若[基础人群定向](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-base-target-0000001328677542)无法满足您的定向需求，您可以申请[特性通行名单](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/addtongxing-0000001128278195)，使用人群管理，可支持拓展人群、交并差等更多定制人群功能。
+若[基础人群定向](/docs/monetize/promotion/bpos-functions-base-target-0000001328677542)无法满足您的定向需求，您可以申请[特性通行名单](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/addtongxing-0000001128278195)，使用人群管理，可支持拓展人群、交并差等更多定制人群功能。
 
 仅支持直客与子客使用人群管理功能。
 
@@ -24,12 +24,12 @@ format: md
 ## 受众人群的状态
 
 - 就绪：表示您的受众人群此时可以用于广告投放。
-- 准备中：表示您的受众人群正在运算中，请耐心等待，如果您的受众人群超过24小时未能计算完成，请提供账户ID、人群ID，[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
-- 错误：表示您的受众人群运算错误，请提供账户ID、人群ID，[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
+- 准备中：表示您的受众人群正在运算中，请耐心等待，如果您的受众人群超过24小时未能计算完成，请提供账户ID、人群ID，[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
+- 错误：表示您的受众人群运算错误，请提供账户ID、人群ID，[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
 
 ## 受众人群计算时间
 
-受众人群计算时间受您受众人群的数据的影响，如果您的受众人群超过24小时未能计算完成，请提供账户ID、人群ID，[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
+受众人群计算时间受您受众人群的数据的影响，如果您的受众人群超过24小时未能计算完成，请提供账户ID、人群ID，[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
 
 ## 如何使用受众人群
 

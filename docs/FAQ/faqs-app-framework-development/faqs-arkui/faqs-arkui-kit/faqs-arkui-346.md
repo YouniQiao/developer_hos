@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用Canvas如何实现部分区域镂空的效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-346
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-346
 ---
 
 

@@ -1,11 +1,11 @@
 ---
 title: "元服务程序包基础知识"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-package-basics
+original_url: /docs/dev/atomic-dev/atomic-service/atomic-service-package-basics
 format: md
 ---
 
 
-元服务的程序包结构与传统[应用程序包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-structure-stage)相同，也是以App Pack（.app）形式发布到应用市场。
+元服务的程序包结构与传统[应用程序包](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage)相同，也是以App Pack（.app）形式发布到应用市场。
 
 但元服务相对于需要安装的应用形态更加轻量、便捷，其程序包也具备一些独有特征，如免安装、分包、预加载、老化。
 
@@ -17,13 +17,13 @@ format: md
 
 ## 分包
 
-HarmonyOS每个应用程序包（.app）可以包含多个包文件（以.hap为后缀的HAP或以.hsp为后缀的HSP）。元服务在此基础上，进一步限制每个HAP或HSP（含其依赖的所有共享包）的大小，以实现快速启动体验，元服务的这种多包开发方案称为“分包”。具体可参考[分包](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-subcontract)。
+HarmonyOS每个应用程序包（.app）可以包含多个包文件（以.hap为后缀的HAP或以.hsp为后缀的HSP）。元服务在此基础上，进一步限制每个HAP或HSP（含其依赖的所有共享包）的大小，以实现快速启动体验，元服务的这种多包开发方案称为“分包”。具体可参考[分包](/docs/dev/atomic-dev/atomic-subpackage-loading/atomic-subcontract)。
 
 ## 预加载
 
 开发者可以通过配置预加载，由系统自动下载和安装可能需要的分包模块，从而提升进入后续模块的速度。
 
-对于配置了预加载的分包模块，当点击进入该模块并完成页面加载后，将触发关联模块的预加载。具体可参考[预加载](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-preparing-for-loading)。
+对于配置了预加载的分包模块，当点击进入该模块并完成页面加载后，将触发关联模块的预加载。具体可参考[预加载](/docs/dev/atomic-dev/atomic-subpackage-loading/atomic-preparing-for-loading)。
 
 ## 老化
 
@@ -38,4 +38,4 @@ HarmonyOS每个应用程序包（.app）可以包含多个包文件（以.hap为
 
 ## 元服务程序包更新机制
 
-开发者发布新版本的元服务之后，系统将提供多个时机检查是否有新版本要更新，不同时机触发的升级机制不同，请参考[元服务更新](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-update)。
+开发者发布新版本的元服务之后，系统将提供多个时机检查是否有新版本要更新，不同时机触发的升级机制不同，请参考[元服务更新](/docs/dev/atomic-dev/atomic-service-framework-development/atomic-service-update)。

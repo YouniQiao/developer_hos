@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-overview-0000001328677546
+original_url: /docs/monetize/promotion/bpos-functions-tripartite-attribution-overview-0000001328677546
 format: md
 ---
 
@@ -11,10 +11,10 @@ format: md
 
 | 三方监测平台 | 监测目标 | OAID归因支持的SDK版本 | Referrer归因支持的SDK版本 | 是否支持回传 |
 | --- | --- | --- | --- | --- |
-| [AppsFlyer](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-appsflyer-0000001328357950) | 效果 | 支持5.4.0以上版本 | 支持6.2.3以上版本 | 是 |
-| [Adjust](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-adjust-0000001379677869) | 效果 | 支持4.2.2以上版本 | 支持4.28.6以上版本 | 是 |
-| [Kochava](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565) | 效果 | 支持3.8.0及以上版本 | / | 是 |
-| [Sizmek](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-sizmek-0000001328517630) | 品牌 | 支持 | / | 否 |
+| [AppsFlyer](/docs/monetize/promotion/bpos-functions-tripartite-attribution-appsflyer-0000001328357950) | 效果 | 支持5.4.0以上版本 | 支持6.2.3以上版本 | 是 |
+| [Adjust](/docs/monetize/promotion/bpos-functions-tripartite-attribution-adjust-0000001379677869) | 效果 | 支持4.2.2以上版本 | 支持4.28.6以上版本 | 是 |
+| [Kochava](/docs/monetize/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565) | 效果 | 支持3.8.0及以上版本 | / | 是 |
+| [Sizmek](/docs/monetize/promotion/bpos-functions-tripartite-attribution-sizmek-0000001328517630) | 品牌 | 支持 | / | 否 |
 
 ## 曝光、点击数据监测流程
 
@@ -26,10 +26,10 @@ format: md
 
    | 三方监测平台 | 是否需要设置监测链接 | 监测链接获取指导 |
    | --- | --- | --- |
-   | [AppsFlyer](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-appsflyer-0000001328357950) | 是 | [AppsFlyer操作指导](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250123103532.30674602736164625628094935370383:50001231000000:2800:5E4F8B257E4094F9706B73A48A5AB3CE260B0F47BF06D3349D9635AA1898DAD1.pdf?needInitFileName=true) |
-   | [Adjust](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-adjust-0000001379677869) | 是 | [Adjust操作指导](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250123103532.67403481110935646905789581129201:50001231000000:2800:416F3B0BAF620F7DA21B1FC6D0463424AE6DB85D34493220A085B45F0EE083AD.pdf?needInitFileName=true) |
-   | [Kochava](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565) | 否 | / |
-   | [Sizmek](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-sizmek-0000001328517630) | 是 | [Sizmek](https://advertising.amazon.com/en-us/solutions/products/sizmek-ad-suite?ref_=a20m_us_hnav_lng_en_us)官网 |
+   | [AppsFlyer](/docs/monetize/promotion/bpos-functions-tripartite-attribution-appsflyer-0000001328357950) | 是 | [AppsFlyer操作指导](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250123103532.30674602736164625628094935370383:50001231000000:2800:5E4F8B257E4094F9706B73A48A5AB3CE260B0F47BF06D3349D9635AA1898DAD1.pdf?needInitFileName=true) |
+   | [Adjust](/docs/monetize/promotion/bpos-functions-tripartite-attribution-adjust-0000001379677869) | 是 | [Adjust操作指导](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250123103532.67403481110935646905789581129201:50001231000000:2800:416F3B0BAF620F7DA21B1FC6D0463424AE6DB85D34493220A085B45F0EE083AD.pdf?needInitFileName=true) |
+   | [Kochava](/docs/monetize/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565) | 否 | / |
+   | [Sizmek](/docs/monetize/promotion/bpos-functions-tripartite-attribution-sizmek-0000001328517630) | 是 | [Sizmek](https://advertising.amazon.com/en-us/solutions/products/sizmek-ad-suite?ref_=a20m_us_hnav_lng_en_us)官网 |
 
    ![](./img/097bfb5737ce.png) 
 

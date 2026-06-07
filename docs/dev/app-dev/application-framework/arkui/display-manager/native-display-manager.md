@@ -1,6 +1,6 @@
 ---
 title: "使用OH_DisplayManager实现屏幕基础信息查询和状态监听 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-display-manager
+original_url: /docs/dev/app-dev/application-framework/arkui/display-manager/native-display-manager
 format: md
 ---
 

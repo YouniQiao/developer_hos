@@ -1,6 +1,6 @@
 ---
 title: "应用内状态变量迁移"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-application
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-application
 format: md
 ---
 
@@ -9,11 +9,11 @@ format: md
 
 | V1装饰器名称/场景 | 迁移方案 |
 | --- | --- |
-| [LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage) | [@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace) [@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace) |
-| [AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage) | [AppStorageV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-appstoragev2) |
-| [Environment](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-environment) | 通过[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#uiabilitycontext-1)的config属性获取系统环境变量 |
-| [PersistentStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage) | [PersistenceV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-persistencev2) |
-| 存量迁移场景 | @ObservedV2、@Trace、[@Monitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor) |
+| [LocalStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage) | [@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace) [@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace) |
+| [AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage) | [AppStorageV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-application-state/arkts-new-appstoragev2) |
+| [Environment](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-environment) | 通过[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#uiabilitycontext-1)的config属性获取系统环境变量 |
+| [PersistentStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-persiststorage) | [PersistenceV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-application-state/arkts-new-persistencev2) |
+| 存量迁移场景 | @ObservedV2、@Trace、[@Monitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor) |
 
 ## LocalStorage->@ObservedV2/@Trace
 
@@ -790,7 +790,7 @@ struct NavigationContentMsgStack {
 
 为了解决不同Ability之间数据的共享，LocalStorage支持跨Ability存取数据。
 
-对于该场景，V2可结合@ObservedV2+@Trace创建可观测的全局单例对象，定义Map类型存储不同Ability页面的数据，从而实现不同Ability之间数据共享。启动Ability可以参考[specified启动模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type#specified启动模式)。
+对于该场景，V2可结合@ObservedV2+@Trace创建可观测的全局单例对象，定义Map类型存储不同Ability页面的数据，从而实现不同Ability之间数据共享。启动Ability可以参考[specified启动模式](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-launch-type#specified启动模式)。
 
 **主页面**
 
@@ -1410,7 +1410,7 @@ V1中PersistentStorage提供了持久化UI数据的能力，而V2则提供了更
 对于PersistenceV2：
 
 * 与PersistenceV2关联的@ObservedV2对象，其@Trace属性的变化，会触发整个关联对象的自动持久化。
-* 开发者也可以调用[PersistenceV2.save()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#save)和[PersistenceV2.globalConnect()](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-persistencev2#使用globalconnect存储数据)来手动触发持久化写入和读取。
+* 开发者也可以调用[PersistenceV2.save()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#save)和[PersistenceV2.globalConnect()](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-application-state/arkts-new-persistencev2#使用globalconnect存储数据)来手动触发持久化写入和读取。
 
 V1:
 

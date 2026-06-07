@@ -1,6 +1,6 @@
 ---
 title: "使用HTTP全局拦截器 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-httpinterceptor-guidelines
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/native-httpinterceptor-guidelines
 format: md
 ---
 

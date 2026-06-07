@@ -1,6 +1,6 @@
 ---
 title: "上传软件包"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-upload-pkg-0000002277983368
+original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-upload-pkg-0000002277983368
 format: md
 ---
 

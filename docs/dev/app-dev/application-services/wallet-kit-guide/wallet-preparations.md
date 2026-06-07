@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "创建Wallet Kit服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations
+original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-preparations
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
    | Wallet Kit服务参数名称 | 参数值 |
    | --- | --- |
-   | 服务类型 | 分为卡、票、券、钥匙等，暂时只支持车钥匙，交通卡服务接入请参考[接入交通卡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-transport-overview)。 |
+   | 服务类型 | 分为卡、票、券、钥匙等，暂时只支持车钥匙，交通卡服务接入请参考[接入交通卡](/docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-app-picker-pages/screentimeguard-app-picker-overview)。 |
    | 服务项目 | 服务项目依赖所选择的服务类型，不同的服务类型，有不同的服务项目。例如当服务类型选择“卡”时，对应的服务项目有：“会员卡”、“礼品卡”等。 |
    | 服务名称 | Wallet Kit首页列表展示该开发者所有创建的服务时，服务名称用于区分不同的服务。 |
    | 服务号 | 用于Wallet Kit服务器区分不同的服务且保证唯一性。 |

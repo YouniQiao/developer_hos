@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理Spatial Recon会话"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spatial-recon-c-spatial-recon-session
+original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-c-spatial-recon-session
 format: md
 ---
 

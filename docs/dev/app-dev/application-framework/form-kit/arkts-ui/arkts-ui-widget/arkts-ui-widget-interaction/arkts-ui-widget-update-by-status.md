@@ -1,6 +1,6 @@
 ---
 title: "根据卡片状态刷新不同内容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-update-by-status
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction/arkts-ui-widget-update-by-status
 format: md
 ---
 

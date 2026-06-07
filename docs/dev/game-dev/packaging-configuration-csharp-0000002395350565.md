@@ -1,6 +1,6 @@
 ---
 title: "打包配置（C#）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/packaging-configuration-csharp-0000002395350565
+original_url: /docs/dev/game-dev/packaging-configuration-csharp-0000002395350565
 format: md
 ---
 

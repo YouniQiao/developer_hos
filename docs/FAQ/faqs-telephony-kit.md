@@ -1,9 +1,9 @@
 ---
 format: md
 title: "蜂窝通信（Telephony）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-telephony-kit
+original_url: /docs/FAQ/faqs-telephony-kit
 ---
 
 
-* **[如何判断蜂窝信号强度](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-telephony-1)**
-* **[如何发送短信](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-telephony-2)**
+* **[如何判断蜂窝信号强度](/docs/FAQ/faqs-system-development/faqs-network/faqs-telephony-kit/faqs-telephony-1)**
+* **[如何发送短信](/docs/FAQ/faqs-system-development/faqs-network/faqs-telephony-kit/faqs-telephony-2)**

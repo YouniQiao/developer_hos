@@ -1,6 +1,6 @@
 ---
 title: "旋转屏动画"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rotation-transition-animation
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-rotation-transition-animation
 format: md
 ---
 

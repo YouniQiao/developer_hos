@@ -1,6 +1,6 @@
 ---
 title: "Web组件渲染模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-render-mode
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-render-layout/web-render-mode
 format: md
 ---
 

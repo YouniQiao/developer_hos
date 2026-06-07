@@ -1,14 +1,14 @@
 ---
 title: "本地密钥管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-local-key-management
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management
 format: md
 ---
 
 
-* **[本地密钥管理基础概念](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-concepts)**
-* **[密钥生成/导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-import)**
-* **[密钥使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-use)**
-* **[密钥删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key)**
-* **[密钥证明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-attestation)**
-* **[应用真实性证明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation)**
-* **[其他操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-other-operations)**
+* **[本地密钥管理基础概念](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-concepts)**
+* **[密钥生成/导入](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import)**
+* **[密钥使用](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use)**
+* **[密钥删除](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key)**
+* **[密钥证明](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation)**
+* **[应用真实性证明](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation)**
+* **[其他操作](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations)**

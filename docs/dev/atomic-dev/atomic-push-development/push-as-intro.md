@@ -1,6 +1,6 @@
 ---
 title: "Push Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-intro
+original_url: /docs/dev/atomic-dev/atomic-push-development/push-as-intro
 format: md
 ---
 

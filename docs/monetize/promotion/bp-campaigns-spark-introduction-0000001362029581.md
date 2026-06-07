@@ -1,7 +1,7 @@
 ---
 title: "星火计划2026活动介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-campaigns-spark-introduction-0000001362029581
+original_url: /docs/monetize/promotion/bp-campaigns-spark-introduction-0000001362029581
 format: md
 ---
 

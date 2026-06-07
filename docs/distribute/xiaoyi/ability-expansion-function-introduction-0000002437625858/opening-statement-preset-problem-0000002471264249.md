@@ -1,7 +1,7 @@
 ---
 title: "开场对话&预置问题"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/opening-statement-preset-problem-0000002471264249
+original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/opening-statement-preset-problem-0000002471264249
 format: md
 ---
 

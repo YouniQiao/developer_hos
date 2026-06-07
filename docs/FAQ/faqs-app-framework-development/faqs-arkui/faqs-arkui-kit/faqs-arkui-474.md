@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Tabs导航页签栏如何根据Tabbar数均匀设置宽度"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-474
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-474
 ---
 
 

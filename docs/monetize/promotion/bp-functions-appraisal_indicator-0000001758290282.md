@@ -1,7 +1,7 @@
 ---
 title: "考核指标"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-appraisal_indicator-0000001758290282
+original_url: /docs/monetize/promotion/bp-functions-appraisal_indicator-0000001758290282
 format: md
 ---
 

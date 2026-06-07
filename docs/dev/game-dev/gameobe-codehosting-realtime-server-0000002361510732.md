@@ -1,6 +1,6 @@
 ---
 title: "托管代码到实时服务器"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-codehosting-realtime-server-0000002361510732
+original_url: /docs/dev/game-dev/gameobe-codehosting-realtime-server-0000002361510732
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "各类型奖品创建流程"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/prize-creating-process-0000001130926232
+original_url: /docs/monetize/promotion/prize-creating-process-0000001130926232
 format: md
 ---
 

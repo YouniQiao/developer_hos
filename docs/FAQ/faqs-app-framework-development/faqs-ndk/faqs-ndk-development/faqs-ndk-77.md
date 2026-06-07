@@ -1,6 +1,6 @@
 ---
 title: "如何在ArkTS侧管理Native侧的C++对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-77
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-77
 format: md
 ---
 

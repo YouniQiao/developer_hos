@@ -1,6 +1,6 @@
 ---
 title: "托管网页中的媒体播放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-takeovers-web-media
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-multimedia/app-takeovers-web-media
 format: md
 ---
 
@@ -142,7 +142,7 @@ function shouldHandle(mediaInfo: webview.MediaInfo) {
 
 应用接管网页媒体后，应用需要将本地播放器组件及视频画面绘制到ArkWeb内核提供的Surface上。ArkWeb内核再将Surface与网页进行合成并显示。
 
-该流程与[同层渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-same-layer)绘制一致。
+该流程与[同层渲染](/docs/dev/app-dev/application-framework/arkweb/web-same-layer)绘制一致。
 
 1. 在应用启动阶段，应用应保存[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)，以便后续的同层渲染绘制流程能够使用该UIContext。
 
@@ -246,7 +246,7 @@ function shouldHandle(mediaInfo: webview.MediaInfo) {
    }
    ```
 
-动态创建组件并绘制到Surface上的详细介绍见[同层渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-same-layer)。
+动态创建组件并绘制到Surface上的详细介绍见[同层渲染](/docs/dev/app-dev/application-framework/arkweb/web-same-layer)。
 
 ### 执行ArkWeb内核发送给本地播放器的播控命令
 
@@ -468,7 +468,7 @@ function getCurrentReadyState() {
 
 ## 完整示例
 
-* 涉及网页媒体播放，需在配置文件中配置网络访问权限。添加方法请参考[在配置文件中声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#在配置文件中声明权限)。
+* 涉及网页媒体播放，需在配置文件中配置网络访问权限。添加方法请参考[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。
 
   ```
   // src/main/module.json5
@@ -506,7 +506,7 @@ function getCurrentReadyState() {
     // ... 其他需要重写的方法 ...
   }
   ```
-* 应用侧代码，视频托管使用示例。通过[AVPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avplayer)托管Web媒体的播放。
+* 应用侧代码，视频托管使用示例。通过[AVPlayer](/docs/dev/app-dev/media/media-kit/media-kit-intro#avplayer)托管Web媒体的播放。
 
   ```
   // Index.ets
@@ -1253,7 +1253,7 @@ function getCurrentReadyState() {
     }
   }
   ```
-* 前端页面示例。通过[AVPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avplayer)托管Web媒体的播放，支持的媒体资源可以参考AVPlayer[支持的格式与协议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#支持的格式与协议)。
+* 前端页面示例。通过[AVPlayer](/docs/dev/app-dev/media/media-kit/media-kit-intro#avplayer)托管Web媒体的播放，支持的媒体资源可以参考AVPlayer[支持的格式与协议](/docs/dev/app-dev/media/media-kit/media-kit-intro#支持的格式与协议)。
 
   ```
   <!-- main.html -->

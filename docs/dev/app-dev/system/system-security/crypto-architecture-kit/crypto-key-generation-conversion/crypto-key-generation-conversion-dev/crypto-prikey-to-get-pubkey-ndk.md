@@ -1,6 +1,6 @@
 ---
 title: "使用私钥对象获取公钥对象(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-prikey-to-get-pubkey-ndk
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-prikey-to-get-pubkey-ndk
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 target_link_libraries(entry PUBLIC libohcrypto.so)
 ```
 
-对应的算法规格请查看[非对称密钥生成和转换规格：RSA](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-key-generation-conversion-spec#rsa)。
+对应的算法规格请查看[非对称密钥生成和转换规格：RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-asym-key-generation-conversion-spec#rsa)。
 
 ## 开发步骤
 

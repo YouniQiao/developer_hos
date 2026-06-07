@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何通过判断函数入参类型实现不同代码逻辑"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-105
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-105
 ---
 
 

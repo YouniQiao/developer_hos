@@ -1,7 +1,7 @@
 ---
 title: "包权限管理"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-package-permission-management
+original_url: /docs/tools/ohpm/repo/ide-package-permission-management
 ---
 
 

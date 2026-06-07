@@ -1,6 +1,6 @@
 ---
 title: "如何对公钥和私钥进行加解密"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-20
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-20
 format: md
 ---
 

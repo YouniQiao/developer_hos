@@ -1,6 +1,6 @@
 ---
 title: "视频场景Wi-Fi加载低功耗建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-wifi
+original_url: /docs/quality/video-wifi
 format: md
 ---
 

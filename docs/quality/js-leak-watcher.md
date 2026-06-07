@@ -1,6 +1,6 @@
 ---
 title: "JsLeakWatcher开发实践"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-js-leak-watcher
+original_url: /docs/quality/js-leak-watcher
 ---
 
 # JsLeakWatcher开发实践
@@ -41,7 +41,7 @@ ArkTS对象内存泄漏，通常会带来以下影响：
 
    常见原因包括：
 
-   1. **Native层强引用该对象**：在Node-API中对ArkTS对象创建了持久化强引用。（Node-API介绍参考[Node-API简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-introduction)；创建和销毁强引用方式参考[napi\_create\_reference、napi\_delete\_reference](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-life-cycle#napi_create_referencenapi_delete_reference)）。
+   1. **Native层强引用该对象**：在Node-API中对ArkTS对象创建了持久化强引用。（Node-API介绍参考[Node-API简介](/docs/dev/ndk-dev/napi-introduction)；创建和销毁强引用方式参考[napi\_create\_reference、napi\_delete\_reference](/docs/dev/ndk-dev/use-napi-life-cycle#napi_create_referencenapi_delete_reference)）。
    2. **闭包捕获：**内部函数持有对外部作用域ArkTS对象的引用，即使外部作用域已退出。
    3. **全局或模块级缓存**：使用Map、Array缓存长期持有ArkTS对象。
 
@@ -60,7 +60,7 @@ ArkTS对象内存泄漏，通常会带来以下影响：
 
 | 文件类型 | 介绍 |
 | --- | --- |
-| rawheap | 记录了抓快照时所有无法被回收的ArkTS对象信息，包括泄漏对象和GC\_ROOT可达对象。快照内容包括ArkTS对象的[节点属性与引用链](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-js-memleak-detection#section20115162052715)，包括对象类型、涉及的代码行等。 |
+| rawheap | 记录了抓快照时所有无法被回收的ArkTS对象信息，包括泄漏对象和GC\_ROOT可达对象。快照内容包括ArkTS对象的[节点属性与引用链](/docs/quality/stability-js-memleak-detection#section20115162052715)，包括对象类型、涉及的代码行等。 |
 | jsleaklist | 统计无法回收的ArkTS泄漏对象，导入到IDE可以和rawheap中的ArkTS对象进行匹配，查看ArkTS对象中的各属性。 |
 
 ## 场景案例
@@ -100,7 +100,7 @@ ArkTS对象内存泄漏，通常会带来以下影响：
 
    文件名中的时间戳表示从1970年1月1日00:00:00 UTC（格林尼治时间）到当前时间的毫秒数，是全球统一的时间基准。
 
-   日志打印文件路径为应用沙箱路径，若需将真实物理路径的文件导出至本地，可参考：[应用沙箱路径和真实物理路径的对应关系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)。
+   日志打印文件路径为应用沙箱路径，若需将真实物理路径的文件导出至本地，可参考：[应用沙箱路径和真实物理路径的对应关系](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)。
 4. **JsLeakWatcher检测功能关闭**
 
    若抓取到需要的维测数据，不再需要使用JsLeakWatcher持续生成泄漏文件，可以调用如下接口将JsLeakWatcher维测功能关闭。

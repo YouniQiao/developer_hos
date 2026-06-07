@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在Native侧集成三方库Curl，并进行HTTP数据请求"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-31
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-31
 ---
 
 
@@ -90,6 +90,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
 **参考链接**
 
-[使用命令行CMake构建NDK工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-cmake)
+[使用命令行CMake构建NDK工程](/docs/dev/ndk-dev/build-with-ndk-cmake)
 
 [使用lycium工具快速编译三方库](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lycium-adapts-to-harmonyos)

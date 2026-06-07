@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "请求自绘制内容绘制帧率"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-xcomponent
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-xcomponent
 format: md
 ---
 
 
-对于基于[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-xcomponent-guidelines)进行Native开发的业务，可以请求独立的绘制帧率进行内容开发，如游戏、自绘制UI框架对接等场景。
+对于基于[XComponent](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/napi-xcomponent-guidelines)进行Native开发的业务，可以请求独立的绘制帧率进行内容开发，如游戏、自绘制UI框架对接等场景。
 
 ## 接口说明
 
@@ -22,7 +22,7 @@ format: md
 
 ![](./img/c98f3b10.png)
 
-本范例是通过Drawing在Native侧实现图形的绘制，并将其呈现在NativeWindow上，具体可参考[使用Drawing实现图形绘制与显示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphic-drawing-overview)。
+本范例是通过Drawing在Native侧实现图形的绘制，并将其呈现在NativeWindow上，具体可参考[使用Drawing实现图形绘制与显示](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/graphic-drawing-overview)。
 
 1. 添加开发依赖。
 

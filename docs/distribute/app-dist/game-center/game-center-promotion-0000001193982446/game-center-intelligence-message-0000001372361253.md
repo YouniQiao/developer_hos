@@ -1,7 +1,7 @@
 ---
 title: "智能信息"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-intelligence-message-0000001372361253
+original_url: /docs/distribute/app-dist/game-center/game-center-promotion-0000001193982446/game-center-intelligence-message-0000001372361253
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

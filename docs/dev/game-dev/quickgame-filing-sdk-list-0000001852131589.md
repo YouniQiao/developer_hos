@@ -1,6 +1,6 @@
 ---
 title: "第三方SDK列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-sdk-list-0000001852131589
+original_url: /docs/dev/game-dev/quickgame-filing-sdk-list-0000001852131589
 format: md
 ---
 

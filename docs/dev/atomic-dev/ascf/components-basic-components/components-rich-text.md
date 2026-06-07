@@ -1,6 +1,6 @@
 ---
 title: "rich-text"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-rich-text
+original_url: /docs/dev/atomic-dev/ascf/components-basic-components/components-rich-text
 format: md
 ---
 

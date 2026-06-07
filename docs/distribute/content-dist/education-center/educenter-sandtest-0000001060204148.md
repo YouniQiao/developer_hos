@@ -1,7 +1,7 @@
 ---
 title: "沙盒测试"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/educenter-sandtest-0000001060204148
+original_url: /docs/distribute/content-dist/education-center/educenter-sandtest-0000001060204148
 format: md
 ---
 

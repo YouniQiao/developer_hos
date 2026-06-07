@@ -1,7 +1,7 @@
 ---
 title: 电商购物类
 sidebar_label: 电商购物类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples5-0000001930419478
+original_url: /docs/design/app-design-practices/ecommerce
 format: md
 ---
 
@@ -42,7 +42,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/ECDF4F40D8F4.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例（购物比价）-首页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section1976644133811)。
+本场景的开发指南，请参阅[一多开发实例（购物比价）-首页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section1976644133811)。
 
 ### 商品分类
 
@@ -50,7 +50,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/3326117C1015.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例 (购物比价)-商品分类页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section1048762514385)。
+本场景的开发指南，请参阅[一多开发实例 (购物比价)-商品分类页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section1048762514385)。
 
 ### 商品搜索
 
@@ -76,7 +76,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/DA2222EA898E.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例 (购物比价)-商品详情页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section112893356386)。
+本场景的开发指南，请参阅[一多开发实例 (购物比价)-商品详情页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section112893356386)。
 
 平板上挪移布局显示商品详情时，查看下一层级内容时，建议使用以下两种范式。
 
@@ -88,7 +88,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/8A329D1938B9.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例 (购物比价)-商品详情侧边面板页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section8305102524814)。
+本场景的开发指南，请参阅[一多开发实例 (购物比价)-商品详情侧边面板页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section8305102524814)。
 
 ### 分屏购物比价
 
@@ -126,7 +126,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/047955A2244A.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例 (购物比价)-购物车页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section49871612174810)。
+本场景的开发指南，请参阅[一多开发实例 (购物比价)-购物车页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section49871612174810)。
 
 |  |
 | --- |
@@ -139,7 +139,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/6C567BCC8402.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例 (购物比价)-商品支付页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section1965713469388)。
+本场景的开发指南，请参阅[一多开发实例 (购物比价)-商品支付页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section1965713469388)。
 
 ### 直播购物
 
@@ -155,7 +155,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/D1FBA78B5BE5.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例 (购物比价)-直播间页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section838561613490)。
+本场景的开发指南，请参阅[一多开发实例 (购物比价)-直播间页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section838561613490)。
 
 ## 边看边买
 
@@ -177,4 +177,4 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/42B47FADF97B.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例 (购物比价)-直播侧边面板页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section972591693910)。
+本场景的开发指南，请参阅[一多开发实例 (购物比价)-直播侧边面板页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section972591693910)。

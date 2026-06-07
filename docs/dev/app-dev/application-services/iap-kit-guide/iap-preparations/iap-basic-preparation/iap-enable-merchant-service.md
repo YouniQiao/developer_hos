@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开通商户服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-merchant-service
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service
 format: md
 ---
 

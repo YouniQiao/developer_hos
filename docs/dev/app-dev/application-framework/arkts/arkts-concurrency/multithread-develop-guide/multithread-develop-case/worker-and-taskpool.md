@@ -1,6 +1,6 @@
 ---
 title: "Worker常驻线程通过TaskPool进行多任务并发处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-and-taskpool
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/worker-and-taskpool
 format: md
 ---
 

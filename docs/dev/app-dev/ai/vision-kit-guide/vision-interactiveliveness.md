@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "人脸活体检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-interactiveliveness
+original_url: /docs/dev/app-dev/ai/vision-kit-guide/vision-interactiveliveness
 format: md
 ---
 
@@ -52,7 +52,7 @@ format: md
    import { BusinessError } from '@kit.BasicServicesKit';
    import { hilog } from '@kit.PerformanceAnalysisKit';
    ```
-2. 在module.json5文件中添加CAMERA权限，其中reason，abilities标签必填，配置方式参见[requestPermissions标签说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#在配置文件中声明权限)。
+2. 在module.json5文件中添加CAMERA权限，其中reason，abilities标签必填，配置方式参见[requestPermissions标签说明](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。
 
    ```
    "requestPermissions":[

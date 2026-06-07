@@ -1,6 +1,6 @@
 ---
 title: "StorageInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-storageinfo-0000002295005350
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-storageinfo-0000002295005350
 format: md
 ---
 
@@ -12,5 +12,5 @@ format: md
 | isCrossBorder | O | boolean | 是否跨境。  取值范围：   * true：表示跨境 * false：表示未跨境 |
 | crossBorderReason | O | String(500) | 跨境处理原因。 |
 | crossBorderReceiveName | O | String(100) | 跨境接收方名称/姓名。 |
-| crossBorderDeclarations | O | `List&lt;[SceneItem](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-sceneitem-0000002294845634)>` | 跨境收集的信息。  数组长度不超过200。 |
+| crossBorderDeclarations | O | `List&lt;[SceneItem](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-sceneitem-0000002294845634)>` | 跨境收集的信息。  数组长度不超过200。 |
 | crossBorderCountry | O | String(100) | 跨境之后存储的国家/地区。 |

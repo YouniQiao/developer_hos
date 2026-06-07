@@ -1,6 +1,6 @@
 ---
 title: "当应用发生故障时，如何获取系统日志"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-16
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-16
 format: md
 ---
 

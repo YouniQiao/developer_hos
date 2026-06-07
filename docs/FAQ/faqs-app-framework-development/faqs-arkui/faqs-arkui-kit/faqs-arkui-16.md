@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现软键盘弹出后，整体布局不变"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-16
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-16
 ---
 
 

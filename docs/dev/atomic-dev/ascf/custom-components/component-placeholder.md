@@ -1,11 +1,11 @@
 ---
 title: "占位组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/component-placeholder
+original_url: /docs/dev/atomic-dev/ascf/custom-components/component-placeholder
 format: md
 ---
 
 
-在使用[分包异步化](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/asynchronous-subcontracting)或[用时注入](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/on-demand-render-time-injection#用时注入)特性时，自定义组件所引用的其他自定义组件在最初渲染时可能不可用。为了不阻塞渲染过程，不可用的自定义组件需使用**占位组件（Component placeholder）** 。基础库将用占位组件替换不可用组件进行渲染，当该组件可用时再将其替换回来。
+在使用[分包异步化](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/asynchronous-subcontracting)或[用时注入](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/on-demand-render-time-injection#用时注入)特性时，自定义组件所引用的其他自定义组件在最初渲染时可能不可用。为了不阻塞渲染过程，不可用的自定义组件需使用**占位组件（Component placeholder）** 。基础库将用占位组件替换不可用组件进行渲染，当该组件可用时再将其替换回来。
 
 自定义组件的占位组件可以是另一个自定义组件或一个内置组件。
 

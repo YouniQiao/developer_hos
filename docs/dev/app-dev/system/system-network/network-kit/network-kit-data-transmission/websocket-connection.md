@@ -1,6 +1,6 @@
 ---
 title: "使用WebSocket访问网络"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/websocket-connection
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/websocket-connection
 format: md
 ---
 

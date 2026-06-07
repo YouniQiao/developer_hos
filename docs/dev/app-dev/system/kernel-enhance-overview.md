@@ -1,6 +1,6 @@
 ---
 title: "Kernel Enhance Kit 简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/kernel-enhance-overview
+original_url: /docs/dev/app-dev/system/kernel-enhance-overview
 format: md
 ---
 
@@ -81,6 +81,6 @@ Purgeable Memory 在系统压力较大时优先回收，可以有效缓解内存
 
 ## 相关文档
 
-* [QoS 开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/qos-guidelines)
-* [Purgeable 内存开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/purgeable-memory-guidelines)
-* [格物开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gewu-ndk-api-guidelines)
+* [QoS 开发指导](/docs/dev/app-dev/system/qos-guidelines)
+* [Purgeable 内存开发指导](/docs/dev/app-dev/system/purgeable-memory-guidelines)
+* [格物开发指导](/docs/dev/app-dev/system/gewu-ndk-api-guidelines)

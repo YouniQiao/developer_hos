@@ -1,7 +1,7 @@
 ---
 title: 子标题
 sidebar_label: 子标题
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/subheader-0000001929816012
+original_url: /docs/design/components/view-components/subheader
 format: md
 ---
 

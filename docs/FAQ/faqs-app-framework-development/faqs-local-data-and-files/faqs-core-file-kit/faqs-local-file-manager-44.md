@@ -1,6 +1,6 @@
 ---
 title: "如何读取指定文件内容，并转为具体对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-44
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-44
 format: md
 ---
 

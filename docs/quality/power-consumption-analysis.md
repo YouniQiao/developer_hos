@@ -1,11 +1,11 @@
 ---
 title: "应用功耗检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-power-consumption-analysis
+original_url: /docs/quality/power-consumption-analysis
 format: md
 ---
 
 
 # 应用功耗检测
 
-* **[开发态功耗检测](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-power-consumption-develop-analysis)**
-* **[运行态功耗检测](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-power-consumption-runtime-analysis)**
+* **[开发态功耗检测](/docs/quality/power-consumption-develop-analysis)**
+* **[运行态功耗检测](/docs/quality/power-consumption-runtime-analysis)**

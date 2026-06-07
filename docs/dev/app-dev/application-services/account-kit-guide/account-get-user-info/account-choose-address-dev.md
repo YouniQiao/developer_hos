@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取收货地址"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-choose-address-dev
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-choose-address-dev
 format: md
 ---
 
 
 ## 场景介绍
 
-当应用需要获取用户收货地址时，可使用Account Kit提供的获取收货地址的能力，引导用户添加或选择已有的收货地址，并最终获取用户的收货地址。以下对Account Kit提供的获取收货地址能力进行介绍，获取收货地址功能还可使用场景化控件[选择收货地址Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-ship-to)进行实现。
+当应用需要获取用户收货地址时，可使用Account Kit提供的获取收货地址的能力，引导用户添加或选择已有的收货地址，并最终获取用户的收货地址。以下对Account Kit提供的获取收货地址能力进行介绍，获取收货地址功能还可使用场景化控件[选择收货地址Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-ship-to)进行实现。
 
 ![](./img/996f2301.png "点击放大")
 
@@ -42,13 +42,13 @@ format: md
 
 在进行代码开发前，请先确认以下准备工作是否完成：
 
-1、是否完成[申请账号权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions)，未申请通过调用获取收货地址API，将返回[1008100005 应用未申请对应permissions权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-error-code#section1008100005-应用未申请对应permissions权限)错误码，无法获取收货地址。
+1、是否完成[申请账号权限](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-config-permissions)，未申请通过调用获取收货地址API，将返回[1008100005 应用未申请对应permissions权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-error-code#section1008100005-应用未申请对应permissions权限)错误码，无法获取收货地址。
 
 ![](./img/dbfdd212.png)
 
-如果在权限申请前已完成“配置签名和指纹”，则需要重新[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)，并重新[手动配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+如果在权限申请前已完成“配置签名和指纹”，则需要重新[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)，并重新[手动配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
 
-2、是否完成[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)、[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)，未配置调用获取收货地址API，将返回 [1008100004 应用指纹证书校验失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-error-code#section1008100004-应用指纹证书校验失败)错误码，无法获取收货地址。
+2、是否完成[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)、[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)，未配置调用获取收货地址API，将返回 [1008100004 应用指纹证书校验失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-error-code#section1008100004-应用指纹证书校验失败)错误码，无法获取收货地址。
 
 ## 开发步骤
 

@@ -1,6 +1,6 @@
 ---
 title: "组件嵌套优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-component-nesting-optimization
+original_url: /docs/quality/component-nesting-optimization
 ---
 
 # 组件嵌套优化
@@ -27,7 +27,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-c
 
 如上图所示，自定义组件创建完成之后，在build函数执行之前，将先执行aboutToAppear()生命周期回调函数。执行完build函数后，还会有一些事件监听函数，例如可以使用onPageShow监听页面显示事件，onPageHide函数可以监听页面隐藏事件。最终在自定义组件析构销毁前执行aboutToDisappear函数。
 
-具体的页面和自定义组件生命周期可以参考[自定义组件生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-lifecycle)。
+具体的页面和自定义组件生命周期可以参考[自定义组件生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-page-custom-components-lifecycle)。
 
 ### 组件过度嵌套对性能的影响
 
@@ -54,7 +54,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-c
 1. 自定义构建函数（@Builder）更轻量，其作为UI元素抽象的方法，实现和调用相较于自定义组件比较简洁。
 2. 在自定义组件中，可以定义成员函数/变量、自定义组件生命周期等。自定义构建函数（@Builder）不支持定义状态变量和自定义生命周期。
 3. 在自定义组件中，可直接通过状态变量的改变，来驱动UI的刷新。而自定义构建函数（@Builder）默认的按值参数传递方式不支持动态改变组件，当传递的参数为状态变量时，状态变量的改变不会引起@Builder方法内的UI刷新，要实现UI动态刷新需要按引用传递参数。
-4. 在自定义组件中要实现插槽功能，需要使用@Builder和@BuilderParam实现。具体实现可参考：[@BuilderParam装饰器：引用@Builder函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builderparam)。
+4. 在自定义组件中要实现插槽功能，需要使用@Builder和@BuilderParam实现。具体实现可参考：[@BuilderParam装饰器：引用@Builder函数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builderparam)。
 5. 自定义构建函数（@Builder）中使用了自定义组件，那么该方法每次被调用时，对应的自定义组件均会重新创建。
 
 整体上，自定义组件在实际应用开发场景中更加通用、灵活。自定义构建函数（@Builder）由于不支持定义变量和生命周期等限制，在使用场景上灵活性受限，多用在插槽或系统提供的组件/方法里面属性传值类型为Builder类型场景中。
@@ -93,7 +93,7 @@ export function example1(){
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/ArkUI/Component_Nesting_Optimization/entry/src/main/ets/segment/segment1.ets#L14-L20">segment1.ets</a></div>
 
-具体可以参考[优先使用@Builder方法代替自定义组件](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization#section18773182614502)。
+具体可以参考[优先使用@Builder方法代替自定义组件](/docs/quality/ui-component-performance-optimization#section18773182614502)。
 
 ### 减少自定义组件产生多余节点
 
@@ -422,7 +422,7 @@ struct ColorMetricsExample {
 
 ## 实践数据对比
 
-关于实践数据对比部分，具体可以参考[布局优化指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-layout-performance)和[UI组件性能优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization)的数据对比部分。
+关于实践数据对比部分，具体可以参考[布局优化指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-layout-performance)和[UI组件性能优化](/docs/quality/ui-component-performance-optimization)的数据对比部分。
 
 ## 示例代码
 

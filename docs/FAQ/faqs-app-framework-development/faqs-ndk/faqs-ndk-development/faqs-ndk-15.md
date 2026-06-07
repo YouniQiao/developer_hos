@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何将Native侧的函数封装到类中导出到ArkTS侧使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-15
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-15
 ---
 
 

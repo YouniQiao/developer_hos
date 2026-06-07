@@ -1,24 +1,24 @@
 ---
 title: "API"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis
+original_url: /docs/dev/atomic-dev/ascf/apis/apis
 format: md
 ---
 
 
-* **[基础](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-basis)**
-* **[路由](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-router)**
-* **[跳转](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-navigate)**
-* **[桥接](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-nativebridge)**
-* **[界面](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-page)**
-* **[网络](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-network)**
-* **[数据缓存](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-data-storage)**
-* **[媒体](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-media)**
-* **[文件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-file)**
-* **[位置](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-location)**
-* **[画布](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-canvas)**
-* **[开放接口](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-open-apis)**
-* **[设备](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-device)**
-* **[三方平台](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-third-party-platform)**
-* **[HXML](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-hxml)**
-* **[推送服务](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-push-service)**
-* **[AI](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-ai)**
+* **[基础](/docs/dev/atomic-dev/ascf/apis-basis/apis-basis)**
+* **[路由](/docs/dev/atomic-dev/ascf/apis/apis-router)**
+* **[跳转](/docs/dev/atomic-dev/ascf/apis/apis-navigate)**
+* **[桥接](/docs/dev/atomic-dev/ascf/apis/apis-nativebridge)**
+* **[界面](/docs/dev/atomic-dev/ascf/apis-page/apis-page)**
+* **[网络](/docs/dev/atomic-dev/ascf/apis-network/apis-network)**
+* **[数据缓存](/docs/dev/atomic-dev/ascf/apis/apis-data-storage)**
+* **[媒体](/docs/dev/atomic-dev/ascf/apis-media/apis-media)**
+* **[文件](/docs/dev/atomic-dev/ascf/apis/apis-file)**
+* **[位置](/docs/dev/atomic-dev/ascf/apis/apis-location)**
+* **[画布](/docs/dev/atomic-dev/ascf/apis/apis-canvas)**
+* **[开放接口](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-open-apis)**
+* **[设备](/docs/dev/atomic-dev/ascf/apis-device/apis-device)**
+* **[三方平台](/docs/dev/atomic-dev/ascf/apis/apis-third-party-platform)**
+* **[HXML](/docs/dev/atomic-dev/ascf/apis/apis-hxml)**
+* **[推送服务](/docs/dev/atomic-dev/ascf/apis/apis-push-service)**
+* **[AI](/docs/dev/atomic-dev/ascf/apis-ai/apis-ai)**

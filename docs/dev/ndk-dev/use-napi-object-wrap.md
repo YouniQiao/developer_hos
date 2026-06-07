@@ -1,6 +1,6 @@
 ---
 title: "Native与ArkTS对象绑定"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-object-wrap
+original_url: /docs/dev/ndk-dev/use-napi-object-wrap
 format: md
 ---
 

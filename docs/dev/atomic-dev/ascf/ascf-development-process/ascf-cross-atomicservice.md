@@ -1,6 +1,6 @@
 ---
 title: "开发兼容模式元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-cross-atomicservice
+original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/ascf-cross-atomicservice
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/7d0d07b7.png)
 
-* 由于兼容模式下的元服务采用独立spk（Service package）包格式，所以需要使用1.0.6版本及以上的[安装命令行工具](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/run-ascf-cli#安装命令行工具)，或者[通过ASCF开发助手进行开发](#通过ascf开发助手进行开发)、编译、构建和打包。
+* 由于兼容模式下的元服务采用独立spk（Service package）包格式，所以需要使用1.0.6版本及以上的[安装命令行工具](/docs/dev/atomic-dev/ascf/ascf-development-process/run-ascf-cli#安装命令行工具)，或者[通过ASCF开发助手进行开发](#通过ascf开发助手进行开发)、编译、构建和打包。
 * 当前仅支持服务商通过三方管理平台接入开发。详细指导参考[服务商开发元服务兼容模式](https://developer.huawei.com/consumer/cn/doc/SPPartnerCenter-develop-Guides/ht-guide-0000002372887705)。
 * 由于在部分系统版本中仅支持ES6语法，暂不支持ES2020语法，如果在开发兼容模式元服务中使用了不支持的语法，可能会导致在EMUI10及以下版本无法打开。
 
@@ -59,7 +59,7 @@ format: md
 * ascf/ascf\_src：ascf框架源码目录。
 * ascf/ascf\_build：ascf源码编译过程目录，会生成元服务的子包和编译文件，**请勿占用。**
 
-可参考[ASCF框架代码结构](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/file-structure#ascf框架代码结构)进行配置，具体配置参数请参考：[ASCF参数配置](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/config)。
+可参考[ASCF框架代码结构](/docs/dev/atomic-dev/ascf/framework/file-structure#ascf框架代码结构)进行配置，具体配置参数请参考：[ASCF参数配置](/docs/dev/atomic-dev/ascf/config/config)。
 
 ### 导入ASCF项目
 
@@ -83,7 +83,7 @@ format: md
 
 ## 开发指导
 
-元服务兼容版功能与ASCF的功能基本一致，请参考[ASCF框架开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-development-guide)。差异点请参考接口能力差异做适配。
+元服务兼容版功能与ASCF的功能基本一致，请参考[ASCF框架开发指南](/docs/dev/atomic-dev/ascf/ascf-development-guide/ascf-development-guide)。差异点请参考接口能力差异做适配。
 
 在开发过程中，ASCF开发助手支持以下特性，能够帮助开发者更便捷、高效地开发元服务。
 
@@ -212,7 +212,7 @@ hdc shell aa start -a MpEntryAbility -b com.enjoy.now.hmos --ps ascfPackageName 
 ascf debugger start
 ```
 
-更多命令参考：[命令行指令选项](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/run-ascf-cli#命令行指令选项)。
+更多命令参考：[命令行指令选项](/docs/dev/atomic-dev/ascf/ascf-development-process/run-ascf-cli#命令行指令选项)。
 
 ## 查看日志
 
@@ -251,7 +251,7 @@ ASCF开发助手支持选择调试/编译模式编译构建打包。正式发布
 
 ![](./img/8688540f.png)
 
-在正式上架发布以前，需要完成元服务备案，提交备案信息并通过审核才允许正式上架，具体请参考[元服务备案指导](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing)。
+在正式上架发布以前，需要完成元服务备案，提交备案信息并通过审核才允许正式上架，具体请参考[元服务备案指导](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing)。
 
 ## 与ASCF元服务的差异说明
 

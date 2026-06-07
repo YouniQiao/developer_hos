@@ -1,7 +1,7 @@
 ---
 title: "新建智能分包"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-0000001337248557
+original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-create-0000001337248557
 format: md
 ---
 

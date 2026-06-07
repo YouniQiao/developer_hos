@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用合适的音频流类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-and-sourcetype
+original_url: /docs/dev/app-dev/media/audio-kit/using-right-streamusage-and-sourcetype
 format: md
 ---
 
 
-[音频流](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-kit-intro#音频流介绍)类型是定义音频数据播放和录制方式的关键属性。对于播放流，其类型由[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)确定；对于录制流，则由[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)决定。音频流类型对音量控制、音频焦点管理以及输入/输出设备的选择具有决定性影响。
+[音频流](/docs/dev/app-dev/media/audio-kit/audio-kit-intro#音频流介绍)类型是定义音频数据播放和录制方式的关键属性。对于播放流，其类型由[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)确定；对于录制流，则由[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)决定。音频流类型对音量控制、音频焦点管理以及输入/输出设备的选择具有决定性影响。
 
 为了确保音频行为符合预期并提供优质的用户体验，应用开发者应根据具体业务场景和实际需求，为音频选择恰当的流类型。
 
@@ -20,7 +20,7 @@ format: md
 
 | 音频流使用类型（StreamUsage） | 适用场景 |
 | --- | --- |
-| STREAM\_USAGE\_MUSIC | 适用于播放音乐，同样适用于其他媒体场景，如[使用SoundPool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-soundpool-for-playback)播放简短音效等。 |
+| STREAM\_USAGE\_MUSIC | 适用于播放音乐，同样适用于其他媒体场景，如[使用SoundPool](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-soundpool-for-playback)播放简短音效等。 |
 | STREAM\_USAGE\_MOVIE | 适用于播放短视频、电影、电视剧等各类视频内容。 |
 | STREAM\_USAGE\_AUDIOBOOK | 适用于播放有声读物、新闻、播客等。 |
 | STREAM\_USAGE\_GAME | 适用于游戏内配乐、配音，后台音乐不会被打断；游戏内语音，建议使用STREAM\_USAGE\_VOICE\_COMMUNICATION。 |
@@ -67,7 +67,7 @@ format: md
 
 音频流类型在音频焦点管理中扮演着关键角色，不同类型的音频流具有不同的默认优先级和处理方式。
 
-当应用启动音频播放或录制时，系统会根据音频流类型自动申请焦点，这可能会中断其他音频或降低其音量。音频焦点的具体介绍可参考[音频焦点介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency)。
+当应用启动音频播放或录制时，系统会根据音频流类型自动申请焦点，这可能会中断其他音频或降低其音量。音频焦点的具体介绍可参考[音频焦点介绍](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency)。
 
 此处仅说明常见的音频流类型影响音频焦点的表现，其他类型可参考[系统默认焦点策略表](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-audio-focus-management#section17923135513547)。
 
@@ -87,7 +87,7 @@ format: md
 * 语音通话（VoiceCommunication）类型音频流的默认输入设备为麦克风，默认输出设备为听筒。
 * 闹铃（Alarm）类型音频流的默认输出设备为扬声器‌。若先连接蓝牙耳机，再开始播放Alarm音频，则扬声器和蓝牙耳机会同时播放。
 
-若默认的输入/输出设备不符合使用诉求，应用也可以调用相关接口主动修改。应用[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)时，可以调用[setDefaultOutputDevice](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#setdefaultoutputdevice12)接口，设置默认发声设备。
+若默认的输入/输出设备不符合使用诉求，应用也可以调用相关接口主动修改。应用[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)时，可以调用[setDefaultOutputDevice](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#setdefaultoutputdevice12)接口，设置默认发声设备。
 
 ## 设置音频流类型
 
@@ -95,15 +95,15 @@ format: md
 
 常见的设置播放音频流类型的方法有：
 
-* **[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)**：
+* **[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)**：
 
   可以在调用[createAudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-f#audiocreateaudiorenderer8)以获取音频渲染器时，传入对应的[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)。
 
   createAudioRenderer的参数options类型为AudioRendererOptions，包含AudioRendererInfo渲染器信息，使用AudioRendererInfo.usage可指定StreamUsage音频流类型。
-* **[推荐使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)**：
+* **[推荐使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)**：
 
   可以在调用[OH\_AudioStreamBuilder\_SetRendererInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setrendererinfo)接口时，传入对应的[OH\_AudioStream\_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage)指定音频流类型。
-* **[使用AVPlayer播放音频(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avplayer-for-playback)**：
+* **[使用AVPlayer播放音频(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-avplayer-for-playback)**：
 
   可以通过设置AVPlayer的[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer#属性)audioRendererInfo来实现。AVPlayer.audioRendererInfo的类型为audio.AudioRendererInfo。使用AudioRendererInfo.usage可指定[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)音频流类型。
 
@@ -112,24 +112,24 @@ format: md
   在设置AVPlayer的audioRendererInfo属性时，只允许在initialized状态下设置。
 
   如果应用未主动设置该属性，AVPlayer将进行默认处理。当媒体源包含视频时，usage的默认值为STREAM\_USAGE\_MOVIE；否则，usage的默认值为STREAM\_USAGE\_MUSIC。
-* **[使用AVPlayer播放音频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-playback)**：
+* **[使用AVPlayer播放音频(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-avplayer-for-playback)**：
 
   可以在调用[OH\_AVPlayer\_SetAudioRendererInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-h#oh_avplayer_setaudiorendererinfo)接口时，传入对应的[OH\_AudioStream\_Usage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_usage)指定音频流类型。
-* **[使用SoundPool播放短音频(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-soundpool-for-playback)**：
+* **[使用SoundPool播放短音频(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-soundpool-for-playback)**：
 
   可以在调用[createSoundPool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-f#mediacreatesoundpool10)接口时，传入对应的[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)指定音频流类型。
 
 常见的设置录制音频流类型的方法有：
 
-* **[使用AudioCapturer开发音频录制功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiocapturer-for-recording)**：
+* **[使用AudioCapturer开发音频录制功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-audiocapturer-for-recording)**：
 
   可以在调用[createAudioCapturer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-f#audiocreateaudiocapturer8)接口时，传入对应的[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)。
 
   createAudioCapturer的参数options类型为AudioCapturerOptions，包含AudioCapturerInfo采集器信息，使用AudioCapturerInfo.source可指定SourceType音源类型。
-* **[推荐使用OHAudio开发音频录制功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording)**：
+* **[推荐使用OHAudio开发音频录制功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording)**：
 
   可以在调用[OH\_AudioStreamBuilder\_SetCapturerInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostreambuilder-h#oh_audiostreambuilder_setcapturerinfo)接口时，传入对应的[OH\_AudioStream\_SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-audiostream-base-h#oh_audiostream_sourcetype)指定音源类型。
-* **[使用AVRecorder录制音频(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avrecorder-for-recording)**：
+* **[使用AVRecorder录制音频(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-recording-arkts/using-avrecorder-for-recording)**：
 
   可以在调用[AVRecorder.prepare](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avrecorder#prepare9-1)接口时，传入对应的[AudioSourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-e#audiosourcetype9)。
 

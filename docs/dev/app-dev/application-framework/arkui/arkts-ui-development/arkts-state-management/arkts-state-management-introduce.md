@@ -1,6 +1,6 @@
 ---
 title: "状态管理原理介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-introduce
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-introduce
 format: md
 ---
 
@@ -78,7 +78,7 @@ UI渲染的流程主要有以下几个步骤：
 2. 刷新脏节点：刷新标脏的自定义组件和系统组件。
 3. 布局：根据标脏局部刷新组件树，触发子树上节点的尺寸测量和位置确认。
 
-同样以上述示例代码为例，使用DevEco Studio的[Profiler工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler#状态管理profiler调优能力)，点击Button1，抓取状态变量的变化打点，trace如下图所示：
+同样以上述示例代码为例，使用DevEco Studio的[Profiler工具](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-inspector-profiler#状态管理profiler调优能力)，点击Button1，抓取状态变量的变化打点，trace如下图所示：
 
 ![](./img/e091e1a8.png)
 
@@ -98,4 +98,4 @@ UI渲染的流程主要有以下几个步骤：
 
 状态管理循环执行两大步骤：收集依赖和触发更新。收集状态变量与组件之间的依赖关系。当状态变量发生变化时，执行标脏，刷新对应的UI，同时更新依赖关系。
 
-相比状态管理V1，状态管理V2在状态变量变化时，会异步标脏组件，这两者的更新差异详细可参考[状态管理V1和V2更新机制差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-update-difference)文档。
+相比状态管理V1，状态管理V2在状态变量变化时，会异步标脏组件，这两者的更新差异详细可参考[状态管理V1和V2更新机制差异](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-update-difference)文档。

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "运动跟踪介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-get-pose-conversion
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-pose/arengine-get-pose-conversion
 format: md
 ---
 

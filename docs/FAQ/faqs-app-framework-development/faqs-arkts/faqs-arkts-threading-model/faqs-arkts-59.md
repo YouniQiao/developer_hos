@@ -1,7 +1,7 @@
 ---
 format: md
 title: "TaskPool后台I/O任务池，应用能否自行做管控？是否有方法开放管理机制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-59
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-59
 ---
 
 

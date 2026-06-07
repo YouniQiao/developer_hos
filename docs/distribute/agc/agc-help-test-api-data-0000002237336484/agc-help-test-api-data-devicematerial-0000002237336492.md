@@ -1,6 +1,6 @@
 ---
 title: "DeviceMaterial"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-test-api-data-devicematerial-0000002237336492
+original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-devicematerial-0000002237336492
 format: md
 ---
 

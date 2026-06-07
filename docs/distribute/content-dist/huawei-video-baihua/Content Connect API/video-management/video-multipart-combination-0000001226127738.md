@@ -1,7 +1,7 @@
 ---
 title: "视频分段上传合并"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/video-multipart-combination-0000001226127738
+original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-combination-0000001226127738
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "服务与支持"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-service-support
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-service-support
 format: md
 ---
 

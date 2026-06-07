@@ -1,7 +1,7 @@
 ---
 format: md
 title: "对象反序列化时number类型丢失精度如何解决"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-129
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-129
 ---
 
 

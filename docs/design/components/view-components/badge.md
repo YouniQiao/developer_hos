@@ -1,7 +1,7 @@
 ---
 title: 新事件标记
 sidebar_label: 新事件标记
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/badge-0000001929816016
+original_url: /docs/design/components/view-components/badge
 format: md
 ---
 

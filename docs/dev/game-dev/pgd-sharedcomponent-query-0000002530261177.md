@@ -1,6 +1,6 @@
 ---
 title: "SharedComponent查询"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-sharedcomponent-query-0000002530261177
+original_url: /docs/dev/game-dev/pgd-sharedcomponent-query-0000002530261177
 format: md
 ---
 

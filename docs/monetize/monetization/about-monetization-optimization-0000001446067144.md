@@ -1,7 +1,7 @@
 ---
 title: "优化提升篇"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/about-monetization-optimization-0000001446067144
+original_url: /docs/monetize/monetization/about-monetization-optimization-0000001446067144
 format: md
 ---
 

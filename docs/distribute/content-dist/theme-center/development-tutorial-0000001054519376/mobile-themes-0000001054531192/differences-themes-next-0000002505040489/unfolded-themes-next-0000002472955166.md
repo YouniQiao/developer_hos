@@ -1,7 +1,7 @@
 ---
 title: "两折叠主题设计指导及规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/unfolded-themes-next-0000002472955166
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/unfolded-themes-next-0000002472955166
 ---
 
 
@@ -45,7 +45,7 @@ import MergeTable from '@site/src/components/MergeTable';
 />
 
 
-制作完主题后，各位创作者们可以根据[主题测试审核规范](https://developer.huawei.com/consumer/cn/doc/content/harmonyos5-theme-test-0000002318301165)进行自检测试。自检无误后可参考[内容上传指南](https://developer.huawei.com/consumer/cn/doc/content/uploadguide-0000001054359939)将主题包上传至主题联盟。
+制作完主题后，各位创作者们可以根据[主题测试审核规范](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/harmonyos5-theme-test-0000002318301165)进行自检测试。自检无误后可参考[内容上传指南](https://developer.huawei.com/consumer/cn/doc/content/uploadguide-0000001054359939)将主题包上传至主题联盟。
 
 ## 2. 折叠屏与直板机主题规范差异点
 

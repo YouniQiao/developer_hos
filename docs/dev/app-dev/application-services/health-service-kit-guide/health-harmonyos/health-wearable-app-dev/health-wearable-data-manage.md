@@ -1,6 +1,6 @@
 ---
 title: "Health Wearable Data Manage"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-data-manage
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

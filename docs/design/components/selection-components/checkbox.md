@@ -1,7 +1,7 @@
 ---
 title: 勾选
 sidebar_label: 勾选
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/checkbox-0000001957012561
+original_url: /docs/design/components/selection-components/checkbox
 format: md
 ---
 

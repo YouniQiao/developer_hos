@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "收益分析和报告"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-data-analysis
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-data-analysis
 format: md
 ---
 

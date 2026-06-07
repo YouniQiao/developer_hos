@@ -1,7 +1,7 @@
 ---
 title: "创建预审创意"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/create-preview-ideas-0000002360599810
+original_url: /docs/monetize/promotion/create-preview-ideas-0000002360599810
 format: md
 ---
 
@@ -43,7 +43,7 @@ format: md
 | <strong>参数</strong> | <strong>必</strong> <strong>选</strong> <strong>(M)/</strong> <strong>可</strong> <strong>选</strong> <strong>(O)</strong> | <strong>类型</strong> | <strong>描述</strong> |
 | --- | --- | --- | --- |
 | customerId | O | String | 授权合作伙伴投放时必须携带，该字段请使用<strong>投放操作</strong> <strong>账户</strong>登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)后在“我的账号信息”中查看到的“华为账号”。 |
-| creativeTemplateInfo | M | [CreativeTemplateInfo](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-model-creativetemplateinfo-0000002394065589) | 创建预审创意请求体。 |
+| creativeTemplateInfo | M | [CreativeTemplateInfo](/docs/monetize/promotion/marketapi-model-creativetemplateinfo-0000002394065589) | 创建预审创意请求体。 |
 
 ## 请求示例
 
@@ -83,7 +83,7 @@ Content-Type: application/json
 
 | <strong>参数</strong> | <strong>必</strong> <strong>选</strong> <strong>(M)/</strong> <strong>可</strong> <strong>选</strong> <strong>(O)</strong> | <strong>类型</strong> | <strong>描述</strong> |
 | --- | --- | --- | --- |
-| rtnCode | M | Integer | 返回码。具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| rtnCode | M | Integer | 返回码。具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | rtnDesc | M | String | 返回描述。 |
 | creativeIds | O | List&lt;Long&gt; | 创建的预审创意Id |
 

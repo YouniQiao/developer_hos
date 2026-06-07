@@ -1,6 +1,6 @@
 ---
 title: "滚动"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-scroll
+original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-scroll
 format: md
 ---
 
@@ -49,7 +49,7 @@ has.pageScrollTo({
 
 ## ScrollViewContext
 
-ScrollViewContext实例，可通过[has.createSelectorQuery](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-hxml#hascreateselectorquery)的[NodesRef.node](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-hxml#nodesrefnode)方法获取。仅在[scroll-view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-scroll-view)组件开启enhanced属性后生效。
+ScrollViewContext实例，可通过[has.createSelectorQuery](/docs/dev/atomic-dev/ascf/apis/apis-hxml#hascreateselectorquery)的[NodesRef.node](/docs/dev/atomic-dev/ascf/apis/apis-hxml#nodesrefnode)方法获取。仅在[scroll-view](/docs/dev/atomic-dev/ascf/components-view-container/components-scroll-view)组件开启enhanced属性后生效。
 
 **起始版本：** 1.0.23
 

@@ -1,6 +1,6 @@
 ---
 title: "音乐播放场景低功耗规则"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-music-playback-scenarios
+original_url: /docs/quality/music-playback-scenarios
 ---
 
 # 音乐播放场景低功耗规则
@@ -9,7 +9,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-m
 
 * 音乐类应用静音时关闭音效处理算法。
 * 音乐类应用播放时设置正确应用类型，走系统低功耗方案。
-* 音乐类应用在后台播放时无需设置播放状态，通过接入[AVSession Kit（音视频播控服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-kit)，设置资源的时长、播放状态（暂停、播放）、播放位置、倍速即可，不需要应用实时更新播放进度。
+* 音乐类应用在后台播放时无需设置播放状态，通过接入[AVSession Kit（音视频播控服务）](/docs/dev/app-dev/media/avsession-kit)，设置资源的时长、播放状态（暂停、播放）、播放位置、倍速即可，不需要应用实时更新播放进度。
 
 ## 开发步骤
 

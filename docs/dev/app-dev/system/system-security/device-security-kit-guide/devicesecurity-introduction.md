@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Device Security Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-introduction
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-introduction
 format: md
 ---
 
@@ -31,7 +31,7 @@ Device Security Kit（设备安全服务）提供应用设备状态检测（Devi
 
 ## 与其他Kit的关系
 
-[数字盾服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-service)联合[Universal Keystore Kit（密钥管理服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-kit)、[User Authentication Kit（用户认证服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-authentication-kit)共同为金融应用数字盾开发提供可信UI、可信认证、可信签名能力。
+[数字盾服务](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service)联合[Universal Keystore Kit（密钥管理服务）](/docs/dev/app-dev/system/system-security/huks-kit)、[User Authentication Kit（用户认证服务）](/docs/dev/app-dev/system/system-security/user-authentication-kit)共同为金融应用数字盾开发提供可信UI、可信认证、可信签名能力。
 
 业务关联如图所示：
 
@@ -43,10 +43,10 @@ Device Security Kit（设备安全服务）提供应用设备状态检测（Devi
 
 | 场景 | 国家/地区 |
 | --- | --- |
-| 应用设备状态检测 | 请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-appendix-region)。 |
+| 应用设备状态检测 | 请参见[支持的国家/地区](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-appendix/devicesecurity-appendix-region)。 |
 | 安全检测-系统完整性检测 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
 | 安全检测-URL检测 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
-| 安全检测-本地系统完整性检测 | 请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-appendix-region)。 |
+| 安全检测-本地系统完整性检测 | 请参见[支持的国家/地区](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-appendix/devicesecurity-appendix-region)。 |
 | 安全检测-系统完整性增强检测 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
 | 可信应用服务 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
 | 数字盾服务 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |

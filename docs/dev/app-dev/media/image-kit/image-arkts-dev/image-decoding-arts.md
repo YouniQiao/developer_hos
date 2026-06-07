@@ -1,6 +1,6 @@
 ---
 title: "Image Decoding Arts"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding-arts
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

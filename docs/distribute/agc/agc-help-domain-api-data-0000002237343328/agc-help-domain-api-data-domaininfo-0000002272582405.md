@@ -1,6 +1,6 @@
 ---
 title: "DomainInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-domain-api-data-domaininfo-0000002272582405
+original_url: /docs/distribute/agc/agc-help-domain-api-data-0000002237343328/agc-help-domain-api-data-domaininfo-0000002272582405
 format: md
 ---
 

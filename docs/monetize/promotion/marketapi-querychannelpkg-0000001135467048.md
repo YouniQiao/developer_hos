@@ -1,7 +1,7 @@
 ---
 title: "查询分包列表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-querychannelpkg-0000001135467048
+original_url: /docs/monetize/promotion/marketapi-querychannelpkg-0000001135467048
 format: md
 ---
 
@@ -65,10 +65,10 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 | totalCount | M | String | 总数。  最大长度32。 |
-| list | O | List&lt;[ChannelPkgInfo](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-channelpkginfo-0000001135626854)&gt; | 智能分包列表。 |
+| list | O | List&lt;[ChannelPkgInfo](/docs/monetize/promotion/marketapi-modle-channelpkginfo-0000001135626854)&gt; | 智能分包列表。 |
 
 ## 响应示例
 

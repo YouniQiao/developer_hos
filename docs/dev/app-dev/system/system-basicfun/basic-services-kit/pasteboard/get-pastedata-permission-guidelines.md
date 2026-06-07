@@ -1,6 +1,6 @@
 ---
 title: "申请访问剪贴板权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-pastedata-permission-guidelines
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines
 format: md
 ---
 
@@ -32,7 +32,7 @@ API version 12及之后，系统为提升用户隐私安全保护能力，剪贴
 
 * 使用安全控件
 
-  [使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)访问剪贴板内容的应用，可以无需申请权限。
+  [使用粘贴控件](/docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton)访问剪贴板内容的应用，可以无需申请权限。
 
   已经使用了安全控件的应用无需做任何适配就可以访问剪贴板内容。
 * 申请ohos.permission.READ\_PASTEBOARD权限
@@ -41,10 +41,10 @@ API version 12及之后，系统为提升用户隐私安全保护能力，剪贴
 
   权限申请步骤：
 
-1. 查看[READ\_PASTEBOARD](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionread_pasteboard)介绍，审视应用是否符合申请该权限的使用场景。
+1. 查看[READ\_PASTEBOARD](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionread_pasteboard)介绍，审视应用是否符合申请该权限的使用场景。
 2. [在AGC侧申请Profile文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)，将用于后续的应用签名信息配置。
-3. 在module.json5配置文件中[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-4. 通过弹窗向[用户申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+3. 在module.json5配置文件中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+4. 通过弹窗向[用户申请权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ## 剪贴板弹窗适配优化
 

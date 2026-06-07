@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过Server API配置数字商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-product-server
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-config-product/store-iap-product-server
 format: md
 ---
 

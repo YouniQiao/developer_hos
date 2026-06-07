@@ -1,6 +1,6 @@
 ---
 title: "使用鸿蒙电脑版DevEco Studio ASCF助手开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-bitfun
+original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/ascf-bitfun
 format: md
 ---
 
@@ -39,7 +39,7 @@ ASCF开发助手推出了适配鸿蒙电脑版DevEco Studio的版本，旨在为
    ![](./img/c2f441db.png "点击放大")
 2. 按提示配置项目信息并创建项目。
 
-   参考[ASCF助手配置项目信息](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant#新建项目)。
+   参考[ASCF助手配置项目信息](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant#新建项目)。
 3. 签名。
 
    构建元服务需要先配置好签名，可以使用自动签名或手动方式完成签名，详情请参见[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
@@ -50,7 +50,7 @@ ASCF开发助手推出了适配鸿蒙电脑版DevEco Studio的版本，旨在为
 
 ### 导入ASCF项目
 
-参考[导入ASCF项目](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant#导入ascf项目)。
+参考[导入ASCF项目](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant#导入ascf项目)。
 
 ## 转换小程序项目为ASCF项目
 
@@ -70,7 +70,7 @@ ASCF开发助手推出了适配鸿蒙电脑版DevEco Studio的版本，旨在为
   通过在目录文件下右键，选择一键创建页面，即可快速生成页面所需的文件。
 * 一键生成元服务图标。
 
-  详细请参考[元服务图标生成工具](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant#元服务图标生成工具)。
+  详细请参考[元服务图标生成工具](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant#元服务图标生成工具)。
 
 ## 编译元服务
 
@@ -88,15 +88,15 @@ ASCF开发助手推出了适配鸿蒙电脑版DevEco Studio的版本，旨在为
 
 ## 功能按钮介绍
 
-同[功能按钮介绍](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant#功能按钮介绍)。
+同[功能按钮介绍](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant#功能按钮介绍)。
 
 ## 元服务图标生成工具
 
-同[元服务图标生成工具](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant#元服务图标生成工具)。
+同[元服务图标生成工具](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant#元服务图标生成工具)。
 
 ## 开发者主页
 
-同[开发者主页](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant#开发者主页)。
+同[开发者主页](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant#开发者主页)。
 
 ## 鸿蒙电脑版DevEco Studio顶部搜索框命令
 
@@ -106,11 +106,11 @@ ASCF开发助手推出了适配鸿蒙电脑版DevEco Studio的版本，旨在为
 
 ### 插件内置命令
 
-同[ASCF插件内置命令](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant#插件内置命令)。
+同[ASCF插件内置命令](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant#插件内置命令)。
 
 ## 插件配置
 
-可通过点击左上角图标![](./img/45a68b19.png "点击放大")选择“设置” -&gt; 在搜索设置中输入ascf，可设置ASCF助手插件的行为。插件配置同[ASCF插件配置](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant#插件配置)。
+可通过点击左上角图标![](./img/45a68b19.png "点击放大")选择“设置” -&gt; 在搜索设置中输入ascf，可设置ASCF助手插件的行为。插件配置同[ASCF插件配置](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant#插件配置)。
 
 ![](./img/fecc841c.jpeg)
 

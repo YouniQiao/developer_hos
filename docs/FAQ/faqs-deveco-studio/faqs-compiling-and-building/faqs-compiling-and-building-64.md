@@ -1,6 +1,6 @@
 ---
 title: "如何写har包的编译脚本"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-64
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-64
 format: md
 ---
 

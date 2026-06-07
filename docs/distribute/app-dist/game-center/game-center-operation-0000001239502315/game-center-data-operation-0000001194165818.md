@@ -1,7 +1,7 @@
 ---
 title: "数据运营"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-data-operation-0000001194165818
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-data-operation-0000001194165818
 ---
 import MergeTable from "@site/src/components/MergeTable";
 
@@ -32,4 +32,4 @@ import MergeTable from "@site/src/components/MergeTable";
   ]}
 />
 
-| [分发分析](https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-usage-0000002236492392) | 使用情况：通过“下载安装”、“新增与留存”和“用户分析”衡量用户安装及持续使用应用的情况。 |
+| [分发分析](/docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-usage-0000002236492392) | 使用情况：通过“下载安装”、“新增与留存”和“用户分析”衡量用户安装及持续使用应用的情况。 |

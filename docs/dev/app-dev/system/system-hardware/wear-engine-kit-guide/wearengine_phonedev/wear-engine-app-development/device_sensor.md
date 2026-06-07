@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "穿戴设备传感器获取"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device_sensor
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/device_sensor
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 手机侧应用可以通过Wear Engine获取穿戴设备上的传感器信息，并通过打开、关闭命令控制获取传感器数据。
 
-使用传感器相关接口前，需要向手机侧用户申请获取对应权限的授权（参见[请求用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request_user_authorization)），否则接口将调用失败。
+使用传感器相关接口前，需要向手机侧用户申请获取对应权限的授权（参见[请求用户授权](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/request_user_authorization)），否则接口将调用失败。
 
 | 传感器类型 | 申请权限 |
 | --- | --- |
@@ -28,12 +28,12 @@ format: md
 
 ![](./img/aa0c3fbb.png)
 
-该接口的调用需要在开发者联盟申请运动传感器权限或人体传感器（受限开放，请参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)）权限并获得用户授权。
+该接口的调用需要在开发者联盟申请运动传感器权限或人体传感器（受限开放，请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）权限并获得用户授权。
 
 手机侧应用可以获取穿戴设备上传感器列表，并获得这些传感器的名称、ID、上报周期等参数。
 
-1. 参见[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)章节，获取已连接设备列表。
-2. 参见[目标设备选择](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
+1. 参见[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)章节，获取已连接设备列表。
+2. 参见[目标设备选择](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
 3. 调用[wearEngine](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api)中的[getSensorClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#wearenginegetsensorclient)方法，获取[SensorClient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#sensorclient)对象。
 4. 调用[getSensorList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#getsensorlist)方法，获取指定连接设备的传感器列表。
 
@@ -53,12 +53,12 @@ format: md
 
 ![](./img/abdfbe0a.png)
 
-该接口的调用需要在开发者联盟申请运动传感器权限或人体传感器权限（受限开放，请参考[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)）并获得用户授权。
+该接口的调用需要在开发者联盟申请运动传感器权限或人体传感器权限（受限开放，请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）并获得用户授权。
 
 手机侧通过[getSensorList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#getsensorlist)方法获取传感器列表后可以通过[subscribeSensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#subscribesensor)方法订阅指定传感器数据上报。通过[unsubscribeSensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#unsubscribesensor)方法可取消订阅指定传感器的数据上报。
 
-1. 参见[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)章节，获取已连接设备列表。
-2. 参见[目标设备选择](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
+1. 参见[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)章节，获取已连接设备列表。
+2. 参见[目标设备选择](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/we-device-selection)章节，从已连接设备列表中选定需要通信的设备。
 3. 参见上一小节[获取穿戴设备的传感器列表](#获取穿戴设备的传感器列表)，获取设备的传感器列表信息。
 4. 核对传感器列表中是否存在目标传感器。
 5. 订阅或取消订阅传感器数据上报。

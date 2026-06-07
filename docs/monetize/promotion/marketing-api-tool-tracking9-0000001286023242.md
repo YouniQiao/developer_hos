@@ -1,7 +1,7 @@
 ---
 title: "查询关联关系分析密钥"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-tracking9-0000001286023242
+original_url: /docs/monetize/promotion/marketing-api-tool-tracking9-0000001286023242
 format: md
 ---
 

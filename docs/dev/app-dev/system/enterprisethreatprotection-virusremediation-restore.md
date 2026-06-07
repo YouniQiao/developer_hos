@@ -1,6 +1,6 @@
 ---
 title: "文件隔离恢复"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-restore
+original_url: /docs/dev/app-dev/system/enterprisethreatprotection-virusremediation-restore
 format: md
 ---
 

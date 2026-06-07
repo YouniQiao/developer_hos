@@ -1,6 +1,6 @@
 ---
 title: "配置发布国家或地区"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-area-0000002313510997
+original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-area-0000002313510997
 format: md
 ---
 
@@ -20,4 +20,4 @@ format: md
    * 选择“特定国家或地区”：应用仅在所选国家或地区发布。如您勾选下方的“新国家或区域”，华为应用市场会对未来新增的国家或地区自动发布您的应用。
 
    ![](../img/agc-help-release-app-area-0000002313510997_1.png)
-5. 当您选择了“所有国家或地区”，或者“特定国家或地区”中选择了非中国大陆的国家或地区，则需要勾选“同意应用数据出境声明”，否则将导致您应用无法提交审核。声明的具体内容，请参见[个人信息出境授权声明](https://developer.huawei.com/consumer/cn/doc/app/20250303)。
+5. 当您选择了“所有国家或地区”，或者“特定国家或地区”中选择了非中国大陆的国家或地区，则需要勾选“同意应用数据出境声明”，否则将导致您应用无法提交审核。声明的具体内容，请参见[个人信息出境授权声明](/docs/distribute/app-dist/app-market/x20240513/x20250303)。

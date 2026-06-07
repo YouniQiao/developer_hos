@@ -1,7 +1,7 @@
 ---
 title: "编排-模型选择&角色指令"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/difference-in-page-layout-0000002471264245
+original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/difference-in-page-layout-0000002471264245
 format: md
 ---
 

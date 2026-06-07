@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/no-loop-func"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-loop-func
+original_url: /docs/tools/coding-debug/ide_no-loop-func
 format: md
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: "使用HTTP协议进行网络通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcom
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom
 format: md
 ---
 
 
-* **[发起HTTP请求，获取响应](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netinit)**
-* **[实现HTTP请求定制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customhttp)**
-* **[文件上传下载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-filetransfer)**
-* **[实现流式请求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-streamreq)**
+* **[发起HTTP请求，获取响应](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit)**
+* **[实现HTTP请求定制](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp)**
+* **[文件上传下载](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-filetransfer)**
+* **[实现流式请求](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-streamreq)**

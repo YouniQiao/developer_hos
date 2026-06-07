@@ -1,7 +1,7 @@
 ---
 title: "智能体数字商品支付服务配置"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/service-configuration-0000002537721283
+original_url: /docs/distribute/xiaoyi/digital-product-payment-0000002537601305/service-configuration-0000002537721283
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 目前“智能体数字商品支付服务”在内测阶段，仅企业开发者可用，企业开发者在使用前请通过商务或提[华为开发者联盟工单](https://developer.huawei.com/consumer/cn/support/feedback/#/)联系小艺商业化运营人员申请开通。
 
-开通“智能体数字商品支付服务”的权限后，需要先配置[【账号绑定设置】](https://developer.huawei.com/consumer/cn/doc/service/account-binding-0000002471344141)模块。
+开通“智能体数字商品支付服务”的权限后，需要先配置[【账号绑定设置】](/docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/account-binding-0000002471344141)模块。
 
 在智能体（仅**A2A模式**和**工作流模式**支持付费智能体）编排界面下可以看到【付费智能体】模块，打开付费开关即成为付费智能体，根据文档后续的指导完成相关配置后即可支持用户在付费后使用智能体相关付费功能。
 
@@ -22,7 +22,7 @@ format: md
 
 ## 2.【接入华为账号授权登录】
 
-华为账号授权登录是用户付费后权益发放的基础载体，请根据“[华为账号授权登录](https://developer.huawei.com/consumer/cn/doc/service/account-binding-0000002471344141)”指导完成，在支付场景下开发者服务器需要返回标识开发者侧用户唯一标识符的cpUserId。
+华为账号授权登录是用户付费后权益发放的基础载体，请根据“[华为账号授权登录](/docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/account-binding-0000002471344141)”指导完成，在支付场景下开发者服务器需要返回标识开发者侧用户唯一标识符的cpUserId。
 
 ## 3.【在智能体中集成收费功能】
 
@@ -42,7 +42,7 @@ format: md
 
 **字段含义：**
 
-agentid：从[系统变量](https://developer.huawei.com/consumer/cn/doc/service/variable-0000002437625886#section177616814473)中获取agent\_instance\_id的值，运行时Agent的唯一标识，真机测试与上架运行时的智能体是不同的实例，具有不同的id。账号绑定、支付等场景，在superlink中填写智能体id时，需要从系统变量获取agent\_instance\_id来适配真机测试等场景。
+agentid：从[系统变量](/docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/variable-0000002437625886#section177616814473)中获取agent\_instance\_id的值，运行时Agent的唯一标识，真机测试与上架运行时的智能体是不同的实例，具有不同的id。账号绑定、支付等场景，在superlink中填写智能体id时，需要从系统变量获取agent\_instance\_id来适配真机测试等场景。
 
 transBuffer：透传字段，通知开发者发货时会透传给开发者服务。用于开发者存放业务自定义非敏感字段（如触发场景等，金额、账号等相关信息不要存放在该字段）， 如无必要可以不填。
 
@@ -62,9 +62,9 @@ transBuffer：透传字段，通知开发者发货时会透传给开发者服务
 
 ## 4.【配置订单通知接口&权益查询接口**】**
 
-**[订单通知接口](https://developer.huawei.com/consumer/cn/doc/service/order-notification-0000002537601307)：**当用户付费/申请退费后，为了向用户发放/撤销权益，需要开发者实现一个订单通知接口。华为侧在收到用户付费或当用户申请退费后通过该接口通知开发者服务器为对应的用户发放或撤销权益。
+**[订单通知接口](/docs/distribute/xiaoyi/interaction-interface-0000002505801554/order-notification-0000002537601307)：**当用户付费/申请退费后，为了向用户发放/撤销权益，需要开发者实现一个订单通知接口。华为侧在收到用户付费或当用户申请退费后通过该接口通知开发者服务器为对应的用户发放或撤销权益。
 
-**[权益查询接口](https://developer.huawei.com/consumer/cn/doc/service/privilege-query-0000002537721285)：**在收到用户付款成功的通知后，根据用户购买的商品为用户发放对应的权益，为了让用户可以随时感知权益发放情况，开发者需要实现一个权益查询的接口，主要为用户展示购买的权益名称、剩余数量、购买时间、到期时间等权益信息，如下图所示。
+**[权益查询接口](/docs/distribute/xiaoyi/interaction-interface-0000002505801554/privilege-query-0000002537721285)：**在收到用户付款成功的通知后，根据用户购买的商品为用户发放对应的权益，为了让用户可以随时感知权益发放情况，开发者需要实现一个权益查询的接口，主要为用户展示购买的权益名称、剩余数量、购买时间、到期时间等权益信息，如下图所示。
 
 ![](./img/f0c03adf5e09.png "点击放大")
 
@@ -126,7 +126,7 @@ transBuffer：透传字段，通知开发者发货时会透传给开发者服务
 
 ## 7.【完成收费自测】
 
-开发者配置商品后在非上架状态，可以通过真机测试完成付费流程的调测，购买不会产生真实费用，仅验证订阅流程，步骤详情参考[数字商品支付服务收费调测](https://developer.huawei.com/consumer/cn/doc/service/service-debug-0000002513652200)。
+开发者配置商品后在非上架状态，可以通过真机测试完成付费流程的调测，购买不会产生真实费用，仅验证订阅流程，步骤详情参考[数字商品支付服务收费调测](/docs/distribute/xiaoyi/digital-product-payment-0000002537601305/service-debug-0000002513652200)。
 
 ![](./img/bf2eb7f9a963.png "点击放大")
 

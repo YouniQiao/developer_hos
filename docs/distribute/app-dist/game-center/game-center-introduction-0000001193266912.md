@@ -1,7 +1,7 @@
 ---
 title: "游戏中心介绍"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-introduction-0000001193266912
+original_url: /docs/distribute/app-dist/game-center/game-center-introduction-0000001193266912
 format: md
 ---
 

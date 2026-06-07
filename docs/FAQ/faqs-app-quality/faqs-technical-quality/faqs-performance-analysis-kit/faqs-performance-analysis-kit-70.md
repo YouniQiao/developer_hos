@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Macbook(ARM芯片)HDC无法连接设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-70
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-70
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "充值及开票"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guest-recharge-0000001346454833
+original_url: /docs/monetize/promotion/bp-start-guest-recharge-0000001346454833
 format: md
 ---
 

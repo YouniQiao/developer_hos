@@ -1,7 +1,7 @@
 ---
 title: "窗口方向"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-window-direction
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 
 ## 前置约束与限制
 
-在阅读本文前，建议开发者先了解[窗口管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-manager)、[窗口旋转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-rotation)、[屏幕管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/display-manager)、[一次开发，多端部署](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)、[组件导航（Navigation）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)等相关知识。
+在阅读本文前，建议开发者先了解[窗口管理](/docs/dev/app-dev/application-framework/arkui/window-manager)、[窗口旋转](/docs/dev/app-dev/application-framework/arkui/window-manager/window-rotation)、[屏幕管理](/docs/dev/app-dev/application-framework/arkui/display-manager)、[一次开发，多端部署](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)、[组件导航（Navigation）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)等相关知识。
 
 横竖屏切换功能可实现应用内既支持竖屏显示也支持横屏显示的效果。对于应用内不同页面显示方向不同的情况，需在应用逻辑中动态修改窗口方向以实现该效果。例如，在直板机上具备视频播放功能的应用中，首页内容是采用竖屏方式，而全屏播放页则采用横屏方式展示。
 
@@ -445,7 +445,7 @@ format: md
 
 该字段用于配置应用启动时的窗口显示状态。若应用需以默认的横屏或竖屏方式启动，应在字段中进行相应配置。
 
-其支持的参数可以参考module.json5配置项中[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)下orientation的[orientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#orientation9)枚举值。
+其支持的参数可以参考module.json5配置项中[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)下orientation的[orientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-e#orientation9)枚举值。
 
 ```
 {
@@ -548,7 +548,7 @@ NavDestination组件提供[preferredOrientation](https://developer.huawei.com/co
 
 ###应用子窗口的旋转
 
-在应用旋转场景中，应用主窗的尺寸由系统控制，而应用子窗的尺寸和位置由应用控制。因此，建议应用开发者在有应用子窗的旋转场景中，同步调整应用子窗的尺寸和位置，避免因旋转过程中应用子窗的尺寸和位置保持不变而导致如下图所示的应用子窗显示截断问题（直板机默认的旋转策略为UNSPECIFIED，旋转锁定按钮关闭的情况下不允许应用旋转，可以通过module.json5配置文件中abilities标签的"orientation"字段（参考[abilities对象的内部结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure#abilities对象的内部结构)）配置应用的旋转策略为AUTO\_ROTATION，使应用跟随设备方向旋转）。
+在应用旋转场景中，应用主窗的尺寸由系统控制，而应用子窗的尺寸和位置由应用控制。因此，建议应用开发者在有应用子窗的旋转场景中，同步调整应用子窗的尺寸和位置，避免因旋转过程中应用子窗的尺寸和位置保持不变而导致如下图所示的应用子窗显示截断问题（直板机默认的旋转策略为UNSPECIFIED，旋转锁定按钮关闭的情况下不允许应用旋转，可以通过module.json5配置文件中abilities标签的"orientation"字段（参考[abilities对象的内部结构](/docs/dev/app-dev/getting-started/dev-fundamentals/module-structure#abilities对象的内部结构)）配置应用的旋转策略为AUTO\_ROTATION，使应用跟随设备方向旋转）。
 
 | 旋转前竖屏显示 | 旋转后横屏显示（调整前） |
 | --- | --- |
@@ -730,7 +730,7 @@ aboutToDisappear(): void {
 
 ###实现响应式旋转策略
 
-在设备切换形态时，有时应用对于相同页面希望采用不同的旋转策略，这时需要通过监听设备的窗口尺寸变化配合系统断点实现响应式旋转策略，至于断点与设备的映射关系，请先了解”[响应式布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)“。
+在设备切换形态时，有时应用对于相同页面希望采用不同的旋转策略，这时需要通过监听设备的窗口尺寸变化配合系统断点实现响应式旋转策略，至于断点与设备的映射关系，请先了解”[响应式布局](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)“。
 
 1.在应用EntryAbility的onWindowStageCreate生命周期中，通过on('windowSizeChange')方法监听窗口尺寸变化，在其回调中通过getWindowWidthBreakpoint()及getWindowHeightBreakpoint()实时获取并存储横竖断点变化信息，配合各个页面实现响应式旋转策略。
 

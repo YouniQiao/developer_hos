@@ -1,15 +1,15 @@
 ---
 title: "选择用户文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file
 format: md
 ---
 
 
-用户需要分享文件、保存图片、视频等用户文件时，开发者可以通过系统预置的[文件选择器（FilePicker）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker)，实现该能力。通过Picker访问相关文件，将拉起对应的应用，引导用户完成界面操作，接口本身无需申请权限。Picker选择文件或文件夹获取到的URI只具有**临时读写权限**，获取持久化权限需要通过[FilePicker设置永久授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission#通过picker获取临时授权并进行授权持久化)方式获取。
+用户需要分享文件、保存图片、视频等用户文件时，开发者可以通过系统预置的[文件选择器（FilePicker）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker)，实现该能力。通过Picker访问相关文件，将拉起对应的应用，引导用户完成界面操作，接口本身无需申请权限。Picker选择文件或文件夹获取到的URI只具有**临时读写权限**，获取持久化权限需要通过[FilePicker设置永久授权](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/file-persistpermission#通过picker获取临时授权并进行授权持久化)方式获取。
 
 根据用户文件的常见类型，选择器（FilePicker）分别提供以下选项：
 
-* [PhotoViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#photoviewpickerdeprecated)：适用于图片或视频类型文件的选择与保存（该接口在后续版本不再演进）。请使用PhotoAccessHelper的[PhotoViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoviewpicker)来选择图片文件。请使用[安全控件保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
+* [PhotoViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#photoviewpickerdeprecated)：适用于图片或视频类型文件的选择与保存（该接口在后续版本不再演进）。请使用PhotoAccessHelper的[PhotoViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoviewpicker)来选择图片文件。请使用[安全控件保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
 * [DocumentViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#documentviewpicker)：适用于文件类型文件的选择与保存。DocumentViewPicker对接的选择资源来自于FilePicker，负责文件类型的资源管理，文件类型不区分后缀，比如浏览器下载的图片、文档等，都属于文件类型。
 * [AudioViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#audioviewpicker)：适用于音频类型文件的选择与保存。AudioViewPicker目前对接的选择资源来自于AudioPicker。
 
@@ -74,7 +74,7 @@ format: md
    ![](./img/907d3ca3.png)
 
    1. 使用Picker获取的[select()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#select-3)返回的URI权限是临时只读权限，待退出应用后台后，获取的临时权限就会失效。
-   2. 如果想要获取持久化权限，请参考[文件持久化授权访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission#通过picker获取临时授权并进行授权持久化)。
+   2. 如果想要获取持久化权限，请参考[文件持久化授权访问](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/file-persistpermission#通过picker获取临时授权并进行授权持久化)。
    3. 开发者可以根据结果集中URI做进一步的处理。建议定义一个全局变量保存URI。
    4. 如有获取元数据需求，可以通过[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)和[文件URI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fileuri)根据URI获取部分文件属性信息，比如文件大小、访问时间、修改时间、文件名、文件路径等。
 4. 待界面从FilePicker返回后，使用[fileIo.openSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileioopensync)接口通过URI打开这个文件得到文件描述符（fd）。
@@ -141,8 +141,8 @@ format: md
    ![](./img/78a0b098.png)
 
    1. 使用Picker获取的[select()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker#select-3)返回的URI权限是临时只读权限，待退出应用后台后，获取的临时权限就会失效。
-   2. 如果想要获取持久化权限，请参考[文件持久化授权访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-persistpermission#通过picker获取临时授权并进行授权持久化)。
-   3. 开发者可以根据结果集中的URI做读取文件数据操作。建议定义一个全局变量保存URI。例如通过[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)模块的接口根据URI拿到音频资源的文件描述符（fd），再配合媒体服务实现音频播放的开发，具体请参考[音频播放开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview)。
+   2. 如果想要获取持久化权限，请参考[文件持久化授权访问](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/file-persistpermission#通过picker获取临时授权并进行授权持久化)。
+   3. 开发者可以根据结果集中的URI做读取文件数据操作。建议定义一个全局变量保存URI。例如通过[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)模块的接口根据URI拿到音频资源的文件描述符（fd），再配合媒体服务实现音频播放的开发，具体请参考[音频播放开发指导](/docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview)。
 4. 待界面从AudioPicker返回后，可以使用[fileIo.openSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileioopensync)接口通过URI打开这个文件得到文件描述符（fd）。
 
    ```

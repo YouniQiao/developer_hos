@@ -1,6 +1,6 @@
 ---
 title: "使用ASCF助手开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-assistant
+original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant
 format: md
 ---
 
@@ -151,7 +151,7 @@ ASCF助手1.0.8及以上版本，支持HarmonyOS 4及以下设备上投屏功能
 * 选择编译环境：调试，分包，在ascf\ascf\_src目录添加ascf.config.json文件并配置&#123; "disableSubpackages": false &#125;，产物为ascf\build\name-default.zip；
 * 选择编译环境：发布，产物为build\outputs\default\name-default-signed.app。
 
-在HarmonyOS 4及以下系统设备上，需要[下载安装快应用加载器](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-quickapp-loader-manual-installation)调试运行元服务，可使用adb命令在快应用加载器上运行上述产物。
+在HarmonyOS 4及以下系统设备上，需要[下载安装快应用加载器](/docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-quickapp-loader-manual-installation)调试运行元服务，可使用adb命令在快应用加载器上运行上述产物。
 
 通过服务器的方式：在上述产物目录下启动服务器，$\&#123;appid\&#125;替换为自己的appid，$\&#123;app\&#125;替换为产物名。
 
@@ -245,7 +245,7 @@ HarmonyOS 4及以下设备默认会查询运行中的元服务的进程，查看
 
 ![](./img/0ab1d3ca.png "点击放大")
 
-详细请参考[ASCF助手调试](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/debug-ascf-code#ascf助手调试)。
+详细请参考[ASCF助手调试](/docs/dev/atomic-dev/ascf/ascf-development-process/debug-ascf-code#ascf助手调试)。
 
 ## 元服务图标生成工具
 
@@ -253,7 +253,7 @@ HarmonyOS 4及以下设备默认会查询运行中的元服务的进程，查看
 
 **IDE工具**
 
-和DevEco Studio中[生成元服务图标](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-icon-generation)的方式类似，在ASCF助手中开发也可以直接生成元服务图标。
+和DevEco Studio中[生成元服务图标](/docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-icon-generation)的方式类似，在ASCF助手中开发也可以直接生成元服务图标。
 
 ![](./img/eade9c32.png)
 
@@ -262,7 +262,7 @@ ASCF助手1.0.5及以上版本支持使用元服务图标生成工具。
 1. 在安装ASCF助手并打开ASCF项目之后，在项目中右键任意文件夹，点击“生成元服务图标”即可打开元服务图标生成工具，如下图所示。
 
    ![](./img/1c309051.png "点击放大")
-2. 打开元服务图标生成工具之后，按照提示，点击选择一张图片。图片具体格式参考：[元服务图标设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900384976)。
+2. 打开元服务图标生成工具之后，按照提示，点击选择一张图片。图片具体格式参考：[元服务图标设计规范](/docs/design/atomic-service-design/basic-elements/basic-info)。
 
    ![](./img/a73a081c.png "点击放大")
 3. 选择外圈颜色，点击按钮即可生成元服务图标。
@@ -350,7 +350,7 @@ ASCF助手1.0.5及以上版本支持使用元服务图标生成工具。
 
    ![](./img/df419891.png)
 
-   修改、申请权限弹窗中的申请原因和调用时机都不是必填项，具体使用参考：[声明权限-申请应用权限-应用权限管控-程序访问控制-安全-系统 - 华为HarmonyOS开发者](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)
+   修改、申请权限弹窗中的申请原因和调用时机都不是必填项，具体使用参考：[声明权限-申请应用权限-应用权限管控-程序访问控制-安全-系统 - 华为HarmonyOS开发者](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)
 
    ![](./img/185b05cf.png "点击放大")
 
@@ -383,10 +383,10 @@ ASCF助手1.0.5及以上版本支持使用元服务图标生成工具。
 
 1. 元服务域名管理
 
-   点击“编辑域名”按钮，会在浏览器跳转打开华为开发者官网[配置服务器域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)指南页面，方便查看配置指南文档。
+   点击“编辑域名”按钮，会在浏览器跳转打开华为开发者官网[配置服务器域名](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)指南页面，方便查看配置指南文档。
 2. 开发能力
 
-   点击“前往配置”按钮，会在浏览器跳转打开华为开发者官网[为HarmonyOS应用开启华为开放能力](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506#section1817619495251)指南页面，方便查看配置指南文档。
+   点击“前往配置”按钮，会在浏览器跳转打开华为开发者官网[为HarmonyOS应用开启华为开放能力](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section1817619495251)指南页面，方便查看配置指南文档。
 
 **资源中心**
 

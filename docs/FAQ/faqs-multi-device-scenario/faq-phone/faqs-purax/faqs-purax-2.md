@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Pura X外屏展示申请前，需要做什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-purax-2
+original_url: /docs/FAQ/faqs-multi-device-scenario/faq-phone/faqs-purax/faqs-purax-2
 ---
 
 

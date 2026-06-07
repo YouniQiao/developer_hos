@@ -1,6 +1,6 @@
 ---
 title: "实现请求暂停、恢复与断点续传"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-pauseresume
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-filetransfer/remote-communication-pauseresume
 format: md
 ---
 

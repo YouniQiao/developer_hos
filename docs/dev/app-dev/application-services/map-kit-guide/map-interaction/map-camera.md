@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "更改地图位置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-camera
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-interaction/map-camera
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 
 ### 相机移动
 
-1. 初始化地图并获取[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)地图操作类对象。[显示地图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-presenting)章节中有详细讲解。
+1. 初始化地图并获取[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)地图操作类对象。[显示地图](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-presenting)章节中有详细讲解。
 2. 导入模块。
 
    ```

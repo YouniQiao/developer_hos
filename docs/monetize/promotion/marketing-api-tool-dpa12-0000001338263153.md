@@ -1,7 +1,7 @@
 ---
 title: "批量下架商品"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa12-0000001338263153
+original_url: /docs/monetize/promotion/marketing-api-tool-dpa12-0000001338263153
 format: md
 ---
 

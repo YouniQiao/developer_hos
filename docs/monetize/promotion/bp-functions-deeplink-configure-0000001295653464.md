@@ -1,7 +1,7 @@
 ---
 title: "配置延迟Deeplink"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-configure-0000001295653464
+original_url: /docs/monetize/promotion/bp-functions-deeplink-configure-0000001295653464
 format: md
 ---
 

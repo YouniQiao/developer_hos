@@ -1,6 +1,6 @@
 ---
 title: "几何图形绘制概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shape-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-shape-overview
 format: md
 ---
 
@@ -11,8 +11,8 @@ format: md
 
 | 绘制方式 | 使用场景 |
 | --- | --- |
-| [绘制几何图形 (Shape)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-geometric-shape-drawing) | 用于创建指定形状的组件，在页面上直接绘制出几何图形。 |
-| [形状裁剪 (clipShape)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-clip-shape) | 用于将组件裁剪为指定的几何图形。 |
+| [绘制几何图形 (Shape)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-geometric-shape-drawing) | 用于创建指定形状的组件，在页面上直接绘制出几何图形。 |
+| [形状裁剪 (clipShape)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-clip-shape) | 用于将组件裁剪为指定的几何图形。 |
 
 ## 约束限制
 

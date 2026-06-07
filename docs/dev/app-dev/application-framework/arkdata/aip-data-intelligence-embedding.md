@@ -1,6 +1,6 @@
 ---
 title: "应用数据向量化 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aip-data-intelligence-embedding
+original_url: /docs/dev/app-dev/application-framework/arkdata/aip-data-intelligence-embedding
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用XComponent组件显示相机的预览输出流时，如何获取相机的帧数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-1
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-1
 ---
 
 
@@ -12,4 +12,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 
 **参考链接**
 
-[双路预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview)
+[双路预览](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview)

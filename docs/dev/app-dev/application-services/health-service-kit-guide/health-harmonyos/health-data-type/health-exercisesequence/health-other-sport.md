@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "其他运动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-other-sport
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-other-sport
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "后台上传下载合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-request-use
+original_url: /docs/quality/reasonable-request-use
 ---
 
 # 后台上传下载合理使用
@@ -73,4 +73,4 @@ import { common } from '@kit.AbilityKit';
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseSoftware/entry/src/main/ets/pages/Download.ets#L21-L49">Download.ets</a></div>
 
-有关上传下载相关接口的使用，详情可以参考[应用文件上传下载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-upload-download)。
+有关上传下载相关接口的使用，详情可以参考[应用文件上传下载](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/upload-download/app-file-upload-download)。

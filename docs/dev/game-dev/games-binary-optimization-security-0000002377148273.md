@@ -1,6 +1,6 @@
 ---
 title: "隐私声明"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-security-0000002377148273
+original_url: /docs/dev/game-dev/games-binary-optimization-security-0000002377148273
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "自动续期订阅商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-promotion-renewal-0000002286076744
+original_url: /docs/dev/game-dev/games-center-promotion-renewal-0000002286076744
 format: md
 ---
 

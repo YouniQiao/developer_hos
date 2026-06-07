@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Natural Language Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/natural-language-introduction
+original_url: /docs/dev/app-dev/ai/natural-language-kit-guide/natural-language-introduction
 format: md
 ---
 

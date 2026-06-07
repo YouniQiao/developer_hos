@@ -1,6 +1,6 @@
 ---
 title: "自定义组件节点 (FrameNode)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-framenode
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-framenode
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](./img/9c58daf5.png)
 
-上述转换过程需要依赖额外的数据驱动，绑定至[Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)中，较为复杂且性能欠佳。这类框架通常依赖于ArkUI的布局、事件处理、基础的节点操作和自定义能力。大部分组件通过自定义实现，但需结合使用部分系统组件以实现混合显示，如下图示例既使用了[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)的自定义方法进行绘制，又使用了系统组件[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)及其子组件[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)，通过[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode)的方式将其挂载到根节点的FrameNode上混合显示。
+上述转换过程需要依赖额外的数据驱动，绑定至[Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)中，较为复杂且性能欠佳。这类框架通常依赖于ArkUI的布局、事件处理、基础的节点操作和自定义能力。大部分组件通过自定义实现，但需结合使用部分系统组件以实现混合显示，如下图示例既使用了[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)的自定义方法进行绘制，又使用了系统组件[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)及其子组件[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text)，通过[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode)的方式将其挂载到根节点的FrameNode上混合显示。
 
 ![](./img/32c4b965.png)
 
@@ -1294,7 +1294,7 @@ struct Index {
 
 ![](./img/19db78e9.png)
 
-在调用dispose方法后，FrameNode对象不再对应任何实际的FrameNode节点。此时，若尝试调用以下查询接口：[getMeasuredSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getmeasuredsize12)、[getLayoutPosition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getlayoutposition12)、[getUserConfigBorderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuserconfigborderwidth12)、[getUserConfigPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuserconfigpadding12)、[getUserConfigMargin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuserconfigmargin12)、[getUserConfigSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuserconfigsize12)，将导致应用程序触发[jscrash](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-guide#jscrash)。
+在调用dispose方法后，FrameNode对象不再对应任何实际的FrameNode节点。此时，若尝试调用以下查询接口：[getMeasuredSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getmeasuredsize12)、[getLayoutPosition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getlayoutposition12)、[getUserConfigBorderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuserconfigborderwidth12)、[getUserConfigPadding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuserconfigpadding12)、[getUserConfigMargin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuserconfigmargin12)、[getUserConfigSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuserconfigsize12)，将导致应用程序触发[jscrash](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-guide#jscrash)。
 
 通过[getUniqueId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getuniqueid12)可以判断当前FrameNode是否对应一个实体FrameNode节点。当UniqueId大于0时表示该对象对应一个实体FrameNode节点。
 

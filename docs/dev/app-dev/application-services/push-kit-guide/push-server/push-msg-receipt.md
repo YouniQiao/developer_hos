@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "（可选）开发消息回执"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-server/push-msg-receipt
 format: md
 ---
 
@@ -162,8 +162,8 @@ format: md
 
 通过回执状态码定位问题之前，请优先检查[消息推送接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-struct)URL（https://push-api.cloud.huawei.com/**v3**/**[projectId]**/messages:send）是否正确：
 
-* 请使用v3版本的推送接口URL，不要使用v1或v2版本的推送接口URL，详情请参见[场景化消息中的请求URL版本问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-8)。
-* 请检查推送接口地址中的projectId，确保与您当前应用所属的项目保持一致，若不一致请更新推送接口URL中的projectId，并重新[生成鉴权令牌](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-jwt-token)，应用重新[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)，再进行消息推送。
+* 请使用v3版本的推送接口URL，不要使用v1或v2版本的推送接口URL，详情请参见[场景化消息中的请求URL版本问题](/docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-8)。
+* 请检查推送接口地址中的projectId，确保与您当前应用所属的项目保持一致，若不一致请更新推送接口URL中的projectId，并重新[生成鉴权令牌](/docs/dev/app-dev/application-services/push-kit-guide/push-server/push-jwt-token)，应用重新[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)，再进行消息推送。
 
 您可以基于接收到的消息回执码进行数据统计和分析，回执状态码如下表所示：
 
@@ -178,7 +178,7 @@ format: md
 | 15 | 离线用户消息管控 | 1. 设置了离线用户消息覆盖（服务端API中的collapseKey）功能，消息被覆盖掉了，未下发到设备。  2. 离线消息最多缓存120条，超过后旧消息被新消息覆盖。 |
 | 22 | 目标用户不匹配 | 下发消息时Push Token归属的用户与当前终端设备上的本地用户不匹配。请排查Push Token是否是当前本地用户下申请的。  **说明：**  如您在进入隐私空间前的本地用户为用户A，点击进入隐私空间后，系统会将本地用户切换为用户B，如果此刻您使用归属用户A下的Push Token推送消息，则会返回该回执状态码。 |
 | 27 | 应用进程不在，后台消息被缓存 | 在终端设备上目标应用进程不存在导致后台消息被缓存。 |
-| 31 | 目标应用中不存在指向的页面 | 请参见[点击消息动作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-alert#点击消息动作)检查应用skills标签配置和消息请求体中的clickAction字段。 |
+| 31 | 目标应用中不存在指向的页面 | 请参见[点击消息动作](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-send-alert#点击消息动作)检查应用skills标签配置和消息请求体中的clickAction字段。 |
 | 51 | 终端设备处于开机未解锁状态 | 用户重启终端设备后，点亮屏幕未解锁。 |
 | 102 | 消息频控丢弃 | 系统会根据现网使用场景和流量进行管控，不合理的使用场景系统会进行频控。 |
 | 144 | profileId不存在 | 发送下行消息时请检查场景化消息payload中的[profileId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)字段。 |

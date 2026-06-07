@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取分享结果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-share-completed
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-share-completed
 format: md
 ---
 

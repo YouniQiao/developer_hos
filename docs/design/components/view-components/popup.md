@@ -1,7 +1,7 @@
 ---
 title: 气泡提示
 sidebar_label: 气泡提示
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/popup-0000001956975269
+original_url: /docs/design/components/view-components/popup
 format: md
 ---
 

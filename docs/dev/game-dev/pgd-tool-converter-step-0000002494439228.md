@@ -1,6 +1,6 @@
 ---
 title: "基本转换步骤"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-tool-converter-step-0000002494439228
+original_url: /docs/dev/game-dev/pgd-tool-converter-step-0000002494439228
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "企业服务信息来去电页面显示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-sersvice-display
+original_url: /docs/dev/app-dev/application-services/callservice-enterprise-sersvice-display
 format: md
 ---
 
@@ -42,11 +42,11 @@ format: md
 
 ## 替换调试Profile
 
-当企业服务信息展示能力申请成功后，需要重新[申请Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)。并且在DevEco Studio中替换新申请的调试Profile。
+当企业服务信息展示能力申请成功后，需要重新[申请Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)。并且在DevEco Studio中替换新申请的调试Profile。
 
 ![](./img/341244d7.png)
 
-在应用正式发布前，需要替换成[发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)。
+在应用正式发布前，需要替换成[发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)。
 
 ## 开发步骤
 
@@ -88,7 +88,7 @@ format: md
      }
    }
    ```
-2. 在应用配置文件module.json5中注册extensionAbilities，具体详见[module.json5配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)。
+2. 在应用配置文件module.json5中注册extensionAbilities，具体详见[module.json5配置](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)。
 
    配置文件示例：
 
@@ -106,4 +106,4 @@ format: md
 
    * type标签需设为"callerInfoQuery"，表示该拓展类型为CallerInfoQueryExtensionAbility。
    * srcEntry标签表示上述ExtensionAbility组件所对应的代码路径。
-3. 在调试设备上，前往“电话”，点击右上角的“更多”图标，前往“设置”>“陌生号码和信息识别”，或者通过[应用跳转陌生号码和信息识别页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-app-redirection)，打开对应陌生号码信息识别功能开关，再根据需要打开企业服务信息展示对应企业的开关，进行调试。
+3. 在调试设备上，前往“电话”，点击右上角的“更多”图标，前往“设置”>“陌生号码和信息识别”，或者通过[应用跳转陌生号码和信息识别页面](/docs/dev/app-dev/application-services/callservice-enterprise-app-redirection)，打开对应陌生号码信息识别功能开关，再根据需要打开企业服务信息展示对应企业的开关，进行调试。

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何查询后台任务中短时任务/长时任务/延迟任务/后台代理提醒相关的系统日志"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-9
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-9
 ---
 
 

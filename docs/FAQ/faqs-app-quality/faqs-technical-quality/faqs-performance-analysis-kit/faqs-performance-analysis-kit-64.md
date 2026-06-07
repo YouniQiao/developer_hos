@@ -1,7 +1,7 @@
 ---
 format: md
 title: "解决hdc执行返回command not found"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-64
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-64
 ---
 
 
@@ -21,18 +21,18 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **解决措施**
 
-1. 请参考hdc[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)正确下载应用后配置完成。
+1. 请参考hdc[环境准备](/docs/dev/app-dev/system/hdc#环境准备)正确下载应用后配置完成。
 
 2. 配置环境变量后未刷新
 
 2.1 Windows：配置环境变量前已打开的终端窗口不生效配置，需要打开新的窗口后生效。
 
-2.2 Linux/MacOS：参考hdc[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)编辑完成配置文件后，未完成最后一步source命令执行生效配置；如果仅需在当前终端窗口生效，可仅执行export命令后在当前窗口生效配置。
+2.2 Linux/MacOS：参考hdc[环境准备](/docs/dev/app-dev/system/hdc#环境准备)编辑完成配置文件后，未完成最后一步source命令执行生效配置；如果仅需在当前终端窗口生效，可仅执行export命令后在当前窗口生效配置。
 
 3. 检查hdc路径配置。
 
 3.1 Windows：打开终端窗口执行where hdc查询，如果显示多条路径，需要在系统环境变量修改PATH的值，移除多余的hdc路径。
 
-3.2 Linux/macOS：打开终端窗口执行which hdc查询，如果显示多条路径，参考hdc[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)中的配置文件，修改配置文件中PATH的变量值，移除多余的hdc路径。
+3.2 Linux/macOS：打开终端窗口执行which hdc查询，如果显示多条路径，参考hdc[环境准备](/docs/dev/app-dev/system/hdc#环境准备)中的配置文件，修改配置文件中PATH的变量值，移除多余的hdc路径。
 
-4. 请参考[hdc命令列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#hdc命令列表)检查命令是否正确。
+4. 请参考[hdc命令列表](/docs/dev/app-dev/system/hdc#hdc命令列表)检查命令是否正确。

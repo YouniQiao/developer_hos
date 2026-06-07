@@ -1,6 +1,6 @@
 ---
 title: "应用和元服务可复用设计"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/app-atomic-service-reusable
+original_url: /docs/dev/atomic-dev/app-atomic-service-reusable/app-atomic-service-reusable
 format: md
 ---
 
@@ -15,5 +15,5 @@ format: md
 
 * 运行态可复用设计：在开发阶段，应用不需要实现和元服务相同的功能，也不需要将元服务的功能代码复用到应用中。只需要在应用的界面中增加运行元服务的功能入口，通过系统提供的嵌入式运行元服务的能力，将元服务的功能页面嵌入到应用中完成对元服务的功能复用。
 
-* **[开发态可复用设计](https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-develop-state)**
-* **[运行态可复用设计](https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-runtime-state)**
+* **[开发态可复用设计](/docs/dev/atomic-dev/reusable-develop-state/reusable-develop-state)**
+* **[运行态可复用设计](/docs/dev/atomic-dev/reusable-runtime-state/reusable-runtime-state)**

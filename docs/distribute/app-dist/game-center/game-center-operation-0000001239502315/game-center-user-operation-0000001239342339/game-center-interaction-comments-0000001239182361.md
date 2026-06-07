@@ -1,7 +1,7 @@
 ---
 title: "互动评论"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-interaction-comments-0000001239182361
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-interaction-comments-0000001239182361
 format: md
 ---
 

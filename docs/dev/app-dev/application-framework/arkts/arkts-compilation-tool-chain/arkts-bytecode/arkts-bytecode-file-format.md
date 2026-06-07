@@ -1,6 +1,6 @@
 ---
 title: "方舟字节码文件格式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-file-format
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-file-format
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "鼠标光标开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pointerstyle-guidelines
+original_url: /docs/dev/app-dev/system/system-basicfun/input-kit/pointerstyle-guidelines
 format: md
 ---
 

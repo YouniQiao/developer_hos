@@ -1,11 +1,11 @@
 ---
 title: "耗时任务并发场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task
 format: md
 ---
 
 
-* **[耗时任务并发场景简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/time-consuming-task-overview)**
-* **[CPU密集型任务开发指导 (TaskPool和Worker)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cpu-intensive-task-development)**
-* **[I/O密集型任务开发指导 (TaskPool)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/io-intensive-task-development)**
-* **[同步任务开发指导 (TaskPool和Worker)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sync-task-development)**
+* **[耗时任务并发场景简介](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/time-consuming-task-overview)**
+* **[CPU密集型任务开发指导 (TaskPool和Worker)](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/cpu-intensive-task-development)**
+* **[I/O密集型任务开发指导 (TaskPool)](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/io-intensive-task-development)**
+* **[同步任务开发指导 (TaskPool和Worker)](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/sync-task-development)**

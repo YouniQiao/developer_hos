@@ -1,6 +1,6 @@
 ---
 title: "初始化SDK"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-csharp-0000002361510612
+original_url: /docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* 您已[开通联机对战服务](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-enable-0000002395350369)。
-* 您已[集成联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-csharp-0000002395350421)。
+* 您已[开通联机对战服务](/docs/dev/game-dev/gameobe-enable-0000002395350369)。
+* 您已[集成联机对战SDK](/docs/dev/game-dev/gameobe-integratingsdk-csharp-0000002395350421)。
 
 ## 开发步骤
 
@@ -62,8 +62,8 @@ format: md
 
    ![](./img/13cd2343.png)
 
-   * 为了提升服务的安全性，初始化SDK时，您还可以通过在您的服务器中计算出签名的方式进行安全加固，增强数据防篡改能力，具体请参见[使用签名初始化SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-signature-csharp-0000002361510692)。
-   * 鉴权时传入“ClientSecret”或“AccessToken”其一即可。基于安全考虑，当您有自己的游戏服务器时，推荐您使用AccessToken。如果同时传入，将使用传入的AccessToken作为最终AGC接入凭证。“AccessToken”主要是通过在您的服务器中编写一段调用获取Token接口的代码进行获取，具体请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/games-guides/obtaintoken-0000002361510748)。
+   * 为了提升服务的安全性，初始化SDK时，您还可以通过在您的服务器中计算出签名的方式进行安全加固，增强数据防篡改能力，具体请参见[使用签名初始化SDK](/docs/dev/game-dev/gameobe-signature-csharp-0000002361510692)。
+   * 鉴权时传入“ClientSecret”或“AccessToken”其一即可。基于安全考虑，当您有自己的游戏服务器时，推荐您使用AccessToken。如果同时传入，将使用传入的AccessToken作为最终AGC接入凭证。“AccessToken”主要是通过在您的服务器中编写一段调用获取Token接口的代码进行获取，具体请参见[获取Token](/docs/dev/game-dev/obtaintoken-0000002361510748)。
 
    ```
    ClientConfig clientConfig = new ClientConfig(){

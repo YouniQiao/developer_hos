@@ -1,7 +1,7 @@
 ---
 format: md
 title: "打印超过1000行的日志内容时，DevEco Studio控制台如何设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-8
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-8
 ---
 
 

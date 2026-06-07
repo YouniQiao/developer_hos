@@ -1,6 +1,6 @@
 ---
 title: "@Watch装饰器：状态变量更改通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 @Watch提供了状态变量的监听能力，@Watch仅能监听到可以观察到的变化。
 
-在阅读本文档前，建议开发者对状态管理基本观察能力有基本的了解。建议提前阅读：[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)。
+在阅读本文档前，建议开发者对状态管理基本观察能力有基本的了解。建议提前阅读：[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)。
 
 ![](./img/3fbfb6dd.png)
 
@@ -27,7 +27,7 @@ format: md
 | --- | --- |
 | 装饰器参数 | 必填。常量字符串，字符串需要有引号。是(string) => void自定义成员函数的方法的引用。 |
 | 可装饰的自定义组件变量 | 可监听所有装饰器装饰的状态变量。不允许监听常规变量。 |
-| 装饰器的顺序 | 装饰器顺序不影响实际功能，开发者可以根据自己的需要决定装饰器顺序的先后。建议[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)、[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)、[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)等装饰器在@Watch装饰器之前，以保持整体风格的一致。 |
+| 装饰器的顺序 | 装饰器顺序不影响实际功能，开发者可以根据自己的需要决定装饰器顺序的先后。建议[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)、[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)、[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)等装饰器在@Watch装饰器之前，以保持整体风格的一致。 |
 | @Watch触发时机 | 使用@Watch来监听状态变量变化时，回调触发时间是变量真正变化、被赋值的时间。详细示例请参考使用场景中的[@Watch的触发时机](#watch的触发时机)。 |
 
 ## 语法说明
@@ -38,7 +38,7 @@ format: md
 
 ## 观察变化和行为表现
 
-1. 当观察到状态变量的变化（包括双向绑定的[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)和[LocalStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中对应的key发生的变化）的时候，对应的@Watch的回调方法将被触发；
+1. 当观察到状态变量的变化（包括双向绑定的[AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage)和[LocalStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage)中对应的key发生的变化）的时候，对应的@Watch的回调方法将被触发；
 2. @Watch方法在自定义组件的属性变更之后同步执行；
 3. 如果在@Watch的方法里改变了其他的状态变量，也会引起状态变更和@Watch的执行；
 4. 在第一次初始化的时候，@Watch装饰的方法不会被调用，即认为初始化不是状态变量的改变。只有在后续状态改变时，才会调用@Watch回调方法。
@@ -225,7 +225,7 @@ struct BasketModifier {
 
 ### @Watch的触发时机
 
-为了展示@Watch回调触发时间是根据状态变量真正变化的时间，本示例在子组件中同时使用@Link和[@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)装饰器，分别观察不同的状态对象。通过在父组件中更改状态变量并观察@Watch回调的先后顺序，来表明@Watch触发的时机与赋值、同步的关系。
+为了展示@Watch回调触发时间是根据状态变量真正变化的时间，本示例在子组件中同时使用@Link和[@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)装饰器，分别观察不同的状态对象。通过在父组件中更改状态变量并观察@Watch回调的先后顺序，来表明@Watch触发的时机与赋值、同步的关系。
 
 ```
 import { hilog } from '@kit.PerformanceAnalysisKit';

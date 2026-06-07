@@ -1,11 +1,11 @@
 ---
 format: md
 title: "跳转页面如何实现页面级别的透明效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-285
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-285
 ---
 
 
-推荐使用的是Navigation跳转方式，可以将NavDestination设置mode为NavDestinationMode.DIALOG弹窗类型，此时整个NavDestination页面默认透明显示，具体可以参考：[页面显示类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navdestination#页面显示类型)中的弹窗类型。示例代码如下：
+推荐使用的是Navigation跳转方式，可以将NavDestination设置mode为NavDestinationMode.DIALOG弹窗类型，此时整个NavDestination页面默认透明显示，具体可以参考：[页面显示类型](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-navdestination#页面显示类型)中的弹窗类型。示例代码如下：
 
 ```
 @Component

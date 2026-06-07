@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何跨HSP包调用rawfile目录下的文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-63
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-63
 ---
 
 
@@ -11,4 +11,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **参考资料**
 
-[导出HSP中的资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp#导出hsp中的资源)。
+[导出HSP中的资源](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp#导出hsp中的资源)。

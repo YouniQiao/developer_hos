@@ -1,6 +1,6 @@
 ---
 title: "创建全网态服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-petalmap-create-formalstate-service-0000002373994560
+original_url: /docs/distribute/agc/agc-help-location-sense-by-poi-petalmap-0000002373994556/agc-help-petalmap-create-formalstate-service-0000002373994560
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 | 配置项 | 说明 | |
 | --- | --- | --- |
 | 名称 | 近场服务名称，长度为1~128个字符。 | |
-| 状态 | 服务的状态。   * 草稿：点击“保存”后，服务状态变更为“草稿”。 * 审核中：点击“提交”后，服务状态变更为“审核中”。 * 审核驳回：内容设置不合规，服务申请被平台运营驳回，服务状态变更为“审核驳回”。可参考[图文素材审核细则](https://developer.huawei.com/consumer/cn/doc/app/agc-help-card-design-detail-rules-0000002349181504)修改内容后重新提交服务上线申请。 * 已上线：平台运营审核通过后，服务状态变更为“已上线”。 * 已下线：您自行点击“下线”或者由华为侧强制下线。 | |
+| 状态 | 服务的状态。   * 草稿：点击“保存”后，服务状态变更为“草稿”。 * 审核中：点击“提交”后，服务状态变更为“审核中”。 * 审核驳回：内容设置不合规，服务申请被平台运营驳回，服务状态变更为“审核驳回”。可参考[图文素材审核细则](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-card-design-detail-rules-0000002349181504)修改内容后重新提交服务上线申请。 * 已上线：平台运营审核通过后，服务状态变更为“已上线”。 * 已下线：您自行点击“下线”或者由华为侧强制下线。 | |
 | 消息渠道 | 向用户推送应用/元服务卡片的渠道。**请选择“花瓣地图”**。 | |
 | 开放范围 | 此配置项决定您创建的是测试态近场服务还是全网态近场服务，请保持默认选择“全网”。 | |
 

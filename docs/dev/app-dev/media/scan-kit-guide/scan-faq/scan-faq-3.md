@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Scan Kit无法识别多个码图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-3
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-3
 format: md
 ---
 

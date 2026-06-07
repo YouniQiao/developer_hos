@@ -1,13 +1,13 @@
 ---
 title: "@Type装饰器：标记类属性的类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-type
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-type
 format: md
 ---
 
 
 为了实现序列化类时不丢失属性的复杂类型，开发者可以使用@Type装饰器装饰类属性。
 
-@Type的目的是标记类属性，配合PersistenceV2使用，防止序列化时类丢失。在阅读本文档前，建议提前阅读：[PersistenceV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-persistencev2)。
+@Type的目的是标记类属性，配合PersistenceV2使用，防止序列化时类丢失。在阅读本文档前，建议提前阅读：[PersistenceV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-application-state/arkts-new-persistencev2)。
 
 ![](./img/06dc2d54.png)
 
@@ -28,7 +28,7 @@ format: md
 
 ## 使用限制
 
-1. 只能用在[@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)装饰的类中，不能用在自定义组件中。
+1. 只能用在[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)装饰的类中，不能用在自定义组件中。
 
    ```
    class Sample {

@@ -1,6 +1,6 @@
 ---
 title: "UI组件性能优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization
+original_url: /docs/quality/ui-component-performance-optimization
 ---
 import MergedTable from '@site/src/components/MergedTable';
 
@@ -22,7 +22,7 @@ import MergedTable from '@site/src/components/MergedTable';
 * 避免在自定义组件的生命周期内执行高耗时操作：自定义组件创建后在渲染前会调用其生命周期回调函数，若函数中包含高耗时操作将阻塞UI渲染，将增加主线程负担。
 * 按需注册组件属性：后端在创建FrameNode节点树时，对于组件上注册的每个属性也会保存在FrameNode节点上，包括渲染类属性集合（如颜色）和布局类属性集合（如长宽，对齐方式）。在FrameNode执行布局包装任务和渲染包装任务时，属性集合将作为输入参与。因此，在应用开发中应按需注册组件属性，避免设置冗余属性。
 * 使用@Builder函数代替自定义组件：前端定义的每一个自定义组件都会在后端FrameNode节点树上创建一对一的CustomNode类型的节点。CustomNode类作为FrameNode的子类，用于处理自定义组件相关业务逻辑。当在页面上大量使用自定义组件时，会成倍增加FrameNode节点树上CustomNode类型的节点数量，增加页面创建和渲染时长。因此，在满足业务需求的前提下，可以优先使用@Builder函数代替自定义组件。
-* 合理使用布局容器组件：ArkUI提供了一系列布局容器组件用于开发者快速搭建页面，具体可参考[构建布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-build-layout)。不同的业务场景应选择合适的布局容器组件，并合理使用该组件的特性功能可以有效缩短页面布局时长。
+* 合理使用布局容器组件：ArkUI提供了一系列布局容器组件用于开发者快速搭建页面，具体可参考[构建布局](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout)。不同的业务场景应选择合适的布局容器组件，并合理使用该组件的特性功能可以有效缩短页面布局时长。
 
 ## 避免在自定义组件的生命周期内执行高耗时操作
 
@@ -451,7 +451,7 @@ struct Avatar {
 
 ![](./img/87ef3aca.png)
 
-@Builder装饰器严格禁止在其内部定义状态变量[状态变量](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-glossary#状态变量state-variables)或使用[生命周期函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle)，必须通过参数传递或者访问所属组件的状态变量完成数据交互。
+@Builder装饰器严格禁止在其内部定义状态变量[状态变量](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-glossary#状态变量state-variables)或使用[生命周期函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle)，必须通过参数传递或者访问所属组件的状态变量完成数据交互。
 
 当组件仅作展示，无需使用@Component自定义组件的内部状态变量、生命周期函数时，可以创建一个@Builder函数代替创建@Component自定义组件。
 

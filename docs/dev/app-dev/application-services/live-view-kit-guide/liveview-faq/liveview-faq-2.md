@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "三方开发框架接入的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-2
+original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-faq/liveview-faq-2
 format: md
 ---
 

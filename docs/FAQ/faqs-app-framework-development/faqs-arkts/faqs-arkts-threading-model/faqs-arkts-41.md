@@ -1,7 +1,7 @@
 ---
 format: md
 title: "对于多线程操作首选项和数据库是不是线程安全的？还是每一个线程独立的"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-41
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-41
 ---
 
 

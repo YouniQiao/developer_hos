@@ -1,7 +1,7 @@
 ---
 format: md
 title: "创建任务后报错提示“测试套中用例数量不为1，请检查后使用回归测试插件生成新的测试套！”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-13
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-13
 ---
 
 

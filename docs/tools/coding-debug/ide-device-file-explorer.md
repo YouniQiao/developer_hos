@@ -1,7 +1,7 @@
 ---
 title: "访问设备文件"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-device-file-explorer
+original_url: /docs/tools/coding-debug/ide-device-file-explorer
 format: md
 ---
 

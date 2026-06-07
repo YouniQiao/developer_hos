@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取可滚动组件的当前滚动偏移量"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-90
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-90
 ---
 
 

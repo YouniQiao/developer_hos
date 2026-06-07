@@ -1,7 +1,7 @@
 ---
 title: "ArkTS API兼容性保护"
 displayed_sidebar: appCompatibilitySidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/arkts-api-compatibility-warning-elim
+original_url: /docs/design/app-compatibility/arkts-api-compatibility-warning-elim
 format: md
 ---
 

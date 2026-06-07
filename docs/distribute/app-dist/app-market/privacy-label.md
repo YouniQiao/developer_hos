@@ -1,7 +1,7 @@
 ---
 title: "AppGallery隐私标签介绍"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/privacy-label
+original_url: /docs/distribute/app-dist/app-market/privacy-label
 format: md
 ---
 

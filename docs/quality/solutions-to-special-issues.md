@@ -1,11 +1,11 @@
 ---
 title: "专项问题解决方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-solutions-to-special-issues
+original_url: /docs/quality/solutions-to-special-issues
 format: md
 ---
 
 
 # 专项问题解决方案
 
-* **[应用闪屏解决方案](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-screen-flicker-solution)**
-* **[Image白块解决方案](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-image-white-lump-solution)**
+* **[应用闪屏解决方案](/docs/quality/screen-flicker-solution)**
+* **[Image白块解决方案](/docs/quality/image-white-lump-solution)**

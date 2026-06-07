@@ -1,6 +1,6 @@
 ---
 title: "激励与扶持政策咨询"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-policy-support-0000002482666080
+original_url: /docs/dev/game-dev/games-policy-support-0000002482666080
 format: md
 ---
 

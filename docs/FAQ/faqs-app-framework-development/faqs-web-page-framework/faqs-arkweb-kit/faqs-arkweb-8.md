@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决Web组件加载的HTML页面内检测网络状态失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-8
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-8
 ---
 
 
@@ -15,4 +15,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[ohos.permission.GET\_NETWORK\_INFO](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all#ohospermissionget_network_info)
+[ohos.permission.GET\_NETWORK\_INFO](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all#ohospermissionget_network_info)

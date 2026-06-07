@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何用hdc命令将本地文件发送至远端设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-17
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-17
 ---
 
 
@@ -21,4 +21,4 @@ hdc file send E:\example.txt /data/local/tmp/example.txt
 
 **参考链接**
 
-[hdc-文件相关命令](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#文件传输)
+[hdc-文件相关命令](/docs/dev/app-dev/system/hdc#文件传输)

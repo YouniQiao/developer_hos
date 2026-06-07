@@ -1,6 +1,6 @@
 ---
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_personal_data
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-personal-data
 format: md
 ---
 

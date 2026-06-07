@@ -1,11 +1,11 @@
 ---
 title: "movable-area"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-area
+original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-movable-area
 format: md
 ---
 
 
-[movable-view](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-movable-view)的可移动区域。
+[movable-view](/docs/dev/atomic-dev/ascf/components-view-container/components-movable-view)的可移动区域。
 
 **起始版本：** 1.0.0
 

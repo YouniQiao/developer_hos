@@ -1,7 +1,7 @@
 ---
 title: "天气数据刷新命令&lt;RefreshWeatherCommand&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/refreshweathercommand-0000001194207227
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/refreshweathercommand-0000001194207227
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 功能概述
 
-RefreshWeatherCommand主要在需要手动刷新[天气变量](https://developer.huawei.com/consumer/cn/doc/content/weather-0000001079515110)的值时使用。
+RefreshWeatherCommand主要在需要手动刷新[天气变量](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/data-open1-0000001694307045/weather-0000001079515110)的值时使用。
 
 ## 应用示例
 

@@ -1,7 +1,7 @@
 ---
 title: "游戏中心服务推广"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-service-promotion-0000001790247249
+original_url: /docs/distribute/app-dist/game-center/game-center-promotion-0000001193982446/game-center-service-promotion-0000001790247249
 format: md
 ---
 
@@ -108,7 +108,7 @@ format: md
 
 |  |  |
 | --- | --- |
-| [服务介绍链接：AGC-活动管理](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-reservation-0000001657694701`) | [服务介绍链接：AGC-奖品管理](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-reservation-0000001657694701#section3160112618266`) |
+| [服务介绍链接：AGC-活动管理](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-reservation-0000001657694701`) | [服务介绍链接：AGC-奖品管理](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701#section3160112618266`) |
 
 ![](./img/fbcf77035196.png)
 

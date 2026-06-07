@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用系统预置CA证书校验证书链"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/verify-certchain-by-systemca
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/verify-certchain-by-systemca
 format: md
 ---
 

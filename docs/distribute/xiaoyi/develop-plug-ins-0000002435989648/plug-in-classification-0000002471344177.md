@@ -1,7 +1,7 @@
 ---
 title: "插件分类"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/plug-in-classification-0000002471344177
+original_url: /docs/distribute/xiaoyi/develop-plug-ins-0000002435989648/plug-in-classification-0000002471344177
 format: md
 ---
 

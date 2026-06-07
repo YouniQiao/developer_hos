@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "融合短距服务开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fusion-connectivity-overview
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity/fusion-connectivity-overview
 format: md
 ---
 

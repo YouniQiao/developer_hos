@@ -1,6 +1,6 @@
 ---
 title: "如何查询应用包的名称、供应商、版本号、版本文本、安装时间、更新时间等信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-52
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-52
 format: md
 ---
 

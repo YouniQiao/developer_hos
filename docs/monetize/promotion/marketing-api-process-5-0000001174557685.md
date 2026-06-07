@@ -1,7 +1,7 @@
 ---
 title: "调用业务接口"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-process-5-0000001174557685
+original_url: /docs/monetize/promotion/marketing-api-process-5-0000001174557685
 format: md
 ---
 

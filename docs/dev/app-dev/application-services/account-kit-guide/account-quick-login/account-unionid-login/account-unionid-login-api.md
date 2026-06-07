@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用自定义按钮登录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-api
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-api
 format: md
 ---
 
 
 ## 场景介绍
 
-应用应遵照[【华为账号登录】按钮](https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344#section2624430102713)使用规则，在登录页面嵌入自定义华为账号登录按钮。当用户点击该按钮后，应用调用华为账号登录API获取Authorization Code，并通过服务端交互获取用户的UnionID、OpenID以完成登录。
+应用应遵照[【华为账号登录】按钮](/docs/design/system-features/capabilities/huawei-id#section2624430102713)使用规则，在登录页面嵌入自定义华为账号登录按钮。当用户点击该按钮后，应用调用华为账号登录API获取Authorization Code，并通过服务端交互获取用户的UnionID、OpenID以完成登录。
 
 ## 约束与限制
 
@@ -47,11 +47,11 @@ format: md
 
 ## 开发前提
 
-在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)、[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。此场景无需申请账号权限。
+在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)、[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。此场景无需申请账号权限。
 
 ## 客户端开发
 
-1. 根据[【华为账号登录】按钮](https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344#section2624430102713)规范开发自定义登录图标按钮，参考如下步骤在点击事件中完成华为账号登录API调用。
+1. 根据[【华为账号登录】按钮](/docs/design/system-features/capabilities/huawei-id#section2624430102713)规范开发自定义登录图标按钮，参考如下步骤在点击事件中完成华为账号登录API调用。
 2. 导入[authentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication)模块及相关公共模块。
 
    ```
@@ -70,7 +70,7 @@ format: md
    // 建议使用generateRandomUUID生成state，可用于一致性比对，防止跨站攻击
    loginRequest.state = util.generateRandomUUID();
    ```
-4. 调用[AuthenticationController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationcontroller)对象的[executeRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#executerequest-1)方法执行登录请求，并处理登录结果，获取到Authorization Code及ID Token。之后将Authorization Code传给应用服务端处理，可参考[客户端与服务端交互开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#客户端与服务端交互开发)的开发步骤a和b。通过code凭证获取用户信息可以有效避免黑客通过数据遍历、身份伪造、重放攻击等手段导致的安全风险。应用可以通过公开的网址获取到华为账号服务器发布的公钥，对签名和ID Token中的必要信息进行验证，以证明其没有被篡改过。解析ID Token可参考[ID Token解析与验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-12#解析与验证)。
+4. 调用[AuthenticationController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authenticationcontroller)对象的[executeRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#executerequest-1)方法执行登录请求，并处理登录结果，获取到Authorization Code及ID Token。之后将Authorization Code传给应用服务端处理，可参考[客户端与服务端交互开发](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#客户端与服务端交互开发)的开发步骤a和b。通过code凭证获取用户信息可以有效避免黑客通过数据遍历、身份伪造、重放攻击等手段导致的安全风险。应用可以通过公开的网址获取到华为账号服务器发布的公钥，对签名和ID Token中的必要信息进行验证，以证明其没有被篡改过。解析ID Token可参考[ID Token解析与验证](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-12#解析与验证)。
 
    ```
    // 执行登录请求

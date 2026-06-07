@@ -1,7 +1,7 @@
 ---
 title: "规则体检"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-app-analyzer-rules
+original_url: /docs/tools/coding-debug/ide-app-analyzer-rules
 format: md
 ---
 

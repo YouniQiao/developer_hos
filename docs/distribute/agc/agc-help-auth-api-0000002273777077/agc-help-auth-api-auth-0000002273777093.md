@@ -1,6 +1,6 @@
 ---
 title: "Auth"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-auth-0000002273777093
+original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-auth-0000002273777093
 format: md
 ---
 
@@ -16,14 +16,14 @@ AGC认证服务接口，使用auth获取服务。
 |  | [getToken](#section20898933164912)(refresh?: boolean, region?: string)  获取AGC网关的AccessToken。 |
 | void | [setClientId](#section1494313210247)(clientId: string)  设置clientId。 |
 | void | [setClientSecret](#section7386153813500)(clientSecret: string)  设置clientSecret。 |
-|  | [requestVerifyCode](#section9850751813)(verifyCodeParam: [VerifyCodeParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-verifycodeparam-0000002238777832))  申请验证码。 |
-|  | [createUser](#section19861514132515)(credentialInfo: [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689))  创建账户。 |
-| `Promise&lt;void>` | [resetPassword](#section184671244192916)(credentialInfo: [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689))  重置密码。 |
-|  | [signIn](#section136957141012)(signInParam: [SignInParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-signinparam-0000002273777089))  登录接口，通过第三方认证来登录AGC平台。 |
+|  | [requestVerifyCode](#section9850751813)(verifyCodeParam: [VerifyCodeParam](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-verifycodeparam-0000002238777832))  申请验证码。 |
+|  | [createUser](#section19861514132515)(credentialInfo: [CredentialInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-credentialinfo-0000002273621689))  创建账户。 |
+| `Promise&lt;void>` | [resetPassword](#section184671244192916)(credentialInfo: [CredentialInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-credentialinfo-0000002273621689))  重置密码。 |
+|  | [signIn](#section136957141012)(signInParam: [SignInParam](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinparam-0000002273777089))  登录接口，通过第三方认证来登录AGC平台。 |
 |  | [signInAnonymously](#section1394015509369)()  匿名登录。 |
 | `Promise&lt;void>` | [deleteUser](#section197703751114)()  在AGConnect服务器侧删除当前用户信息，并清除缓存信息。 |
 | `Promise&lt;void>` | [signOut](#section4122193119119)()  登出接口。 |
-| `Promise&lt;[AuthUser](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-authuser-0000002273781645) | null>` | [getCurrentUser](#section87068861218)()  获取当前登录的用户信息。 |
+| `Promise&lt;[AuthUser](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-authuser-0000002273781645) | null>` | [getCurrentUser](#section87068861218)()  获取当前登录的用户信息。 |
 | [cloudCommon.AuthProvider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-cloudcommon#authprovider) | [getAuthProvider](#section2307357121210)()  获取当前登录用户的authProvider，作为Cloud Foundation Kit的CloudCommon.init方法的入参。 |
 
 #### [h2]Methods
@@ -63,7 +63,7 @@ onCreate(want, launchParam) {
 
 | Name | Type | Description |
 | --- | --- | --- |
-| region | string | 存储地，入参使用[Region](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-region-0000002273621693)里的枚举值。 |
+| region | string | 存储地，入参使用[Region](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-region-0000002273621693)里的枚举值。 |
 
 **Return**
 
@@ -152,13 +152,13 @@ auth.setClientSecret("your clientSecret");
 
 | Method |
 | --- |
-| requestVerifyCode(verifyCodeParam: [VerifyCodeParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-verifycodeparam-0000002238777832)):   申请验证码。 |
+| requestVerifyCode(verifyCodeParam: [VerifyCodeParam](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-verifycodeparam-0000002238777832)):   申请验证码。 |
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| verifyCodeParam | [VerifyCodeParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-verifycodeparam-0000002238777832) | 申请验证码的相关参数类。 |
+| verifyCodeParam | [VerifyCodeParam](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-verifycodeparam-0000002238777832) | 申请验证码的相关参数类。 |
 
 **Return**
 
@@ -209,13 +209,13 @@ auth.requestVerifyCode({
 
 | Method |
 | --- |
-| createUser(credentialInfo: [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689)):   创建账户。 |
+| createUser(credentialInfo: [CredentialInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-credentialinfo-0000002273621689)):   创建账户。 |
 
 **Parameter****s**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| credentialInfo | [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689) | 凭证信息。编译器会根据其中kind自动推断类型，例如其内部kind填为：'phone'，则类型被推断为“PhoneCredentialInfo”。 |
+| credentialInfo | [CredentialInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-credentialinfo-0000002273621689) | 凭证信息。编译器会根据其中kind自动推断类型，例如其内部kind填为：'phone'，则类型被推断为“PhoneCredentialInfo”。 |
 
 **Return**
 
@@ -258,13 +258,13 @@ auth.createUser({
 
 | Method |
 | --- |
-| resetPassword(credentialInfo: [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689)): Promise&lt;void>  重置密码。 |
+| resetPassword(credentialInfo: [CredentialInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-credentialinfo-0000002273621689)): Promise&lt;void>  重置密码。 |
 
 **Parameter****s**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| credentialInfo | [CredentialInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-credentialinfo-0000002273621689) | 凭证信息。编译器会根据其中kind自动推断类型，例如其内部kind填为：'phone'，则类型被推断为“PhoneCredentialInfo”。 |
+| credentialInfo | [CredentialInfo](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-credentialinfo-0000002273621689) | 凭证信息。编译器会根据其中kind自动推断类型，例如其内部kind填为：'phone'，则类型被推断为“PhoneCredentialInfo”。 |
 
 **Return**
 
@@ -298,13 +298,13 @@ auth.resetPassword({
 
 | Method |
 | --- |
-| signIn(signInParam: [SignInParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-signinparam-0000002273777089)):  登录接口，通过第三方认证来登录AGC平台。 |
+| signIn(signInParam: [SignInParam](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinparam-0000002273777089)):  登录接口，通过第三方认证来登录AGC平台。 |
 
 **Parameters**
 
 | Name | Type | Parameter desc |
 | --- | --- | --- |
-| signInParam | [SignInParam](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-signinparam-0000002273777089) | 登录操作的参数类。 |
+| signInParam | [SignInParam](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinparam-0000002273777089) | 登录操作的参数类。 |
 
 **Return**
 
@@ -425,13 +425,13 @@ auth.signOut().then(() => {
 
 | Method |
 | --- |
-| getCurrentUser():`Promise&lt;[AuthUser](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-authuser-0000002273781645) | null>`  获取当前登录的用户信息，如果未登录则返回null。 |
+| getCurrentUser():`Promise&lt;[AuthUser](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-authuser-0000002273781645) | null>`  获取当前登录的用户信息，如果未登录则返回null。 |
 
 **Return**
 
 | Type | Description |
 | --- | --- |
-| `Promise&lt;[AuthUser](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-authuser-0000002273781645) | null>` | 用户信息的Promise对象。 |
+| `Promise&lt;[AuthUser](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-authuser-0000002273781645) | null>` | 用户信息的Promise对象。 |
 
 **Sample Code**
 

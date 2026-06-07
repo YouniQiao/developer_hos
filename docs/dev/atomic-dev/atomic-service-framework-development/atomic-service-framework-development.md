@@ -1,6 +1,6 @@
 ---
 title: "元服务框架开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-framework-development
+original_url: /docs/dev/atomic-dev/atomic-service-framework-development/atomic-service-framework-development
 format: md
 ---
 

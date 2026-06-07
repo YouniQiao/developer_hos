@@ -1,13 +1,13 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "数据类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-type
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type
 format: md
 ---
 
 
-* **[概要](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-data-type-summary)**
-* **[权限说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-permission-description)**
-* **[采样数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-samplepoint)**
-* **[锻炼记录数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-exercisesequence)**
-* **[健康记录数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-healthsequence)**
+* **[概要](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-data-type-summary)**
+* **[权限说明](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description)**
+* **[采样数据](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint)**
+* **[锻炼记录数据](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence)**
+* **[健康记录数据](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-healthsequence)**

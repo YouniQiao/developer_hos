@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "业务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-introduction
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-assetdownload-introduction
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 
 ![](./img/fcac1f86.png)
 
-需要与[dataTransfer类型的长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)协同使用。
+需要与[dataTransfer类型的长时任务](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)协同使用。
 
 应用前台下载资源包的过程中，将游戏切至后台，资源包下载任务不中断。用户下拉通知栏，实时查看资源包下载进度。
 
@@ -51,10 +51,10 @@ format: md
 
 | 序号 | 步骤 | 说明 |
 | --- | --- | --- |
-| 1 | [开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-prepare) | 开发者需提前做好相关准备工作。 |
-| 2 | 开发资源包后台下载功能：  - [系统后台下载资源包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-system)  - [应用前台下载资源包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-fore)  - [系统后台切应用前台接续下载资源包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-fore) | 开发者可以在游戏工程中接入资源包系统后台下载、应用前台下载、系统后台切应用前台接续下载功能。 |
-| 3 | 发布资源包下载任务：  1. [进入申请页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-release#进入申请页面)  2. [创建下载任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-release#创建下载任务)  3. [提交下载任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-release#提交下载任务)  4. [测试下载功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-release#测试下载功能)  5. [发布下载任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-release#发布下载任务) | 开发者需前往AppGallery Connect创建并发布下载资源包任务。建议开发者在正式发布资源包下载任务前，先在本地测试是否可以成功下载资源包。 |
-| 4 | [查看资源包分发数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-data) | 资源包下载任务正式发布后，开发者可以前往AppGallery Connect查看资源包分发情况。 |
+| 1 | [开发准备](/docs/dev/app-dev/graphics/graphics-accelerate-assetdownload-prepare) | 开发者需提前做好相关准备工作。 |
+| 2 | 开发资源包后台下载功能：  - [系统后台下载资源包](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-back/graphics-accelerate-assetdownload-back-system)  - [应用前台下载资源包](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-fore)  - [系统后台切应用前台接续下载资源包](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-back-fore) | 开发者可以在游戏工程中接入资源包系统后台下载、应用前台下载、系统后台切应用前台接续下载功能。 |
+| 3 | 发布资源包下载任务：  1. [进入申请页面](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-release#进入申请页面)  2. [创建下载任务](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-release#创建下载任务)  3. [提交下载任务](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-release#提交下载任务)  4. [测试下载功能](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-release#测试下载功能)  5. [发布下载任务](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-release#发布下载任务) | 开发者需前往AppGallery Connect创建并发布下载资源包任务。建议开发者在正式发布资源包下载任务前，先在本地测试是否可以成功下载资源包。 |
+| 4 | [查看资源包分发数据](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-data) | 资源包下载任务正式发布后，开发者可以前往AppGallery Connect查看资源包分发情况。 |
 
 ## 基本概念
 

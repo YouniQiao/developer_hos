@@ -1,7 +1,7 @@
 ---
 title: "测试（先锋测试）"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-big-event-pioneer-test-0000002523247654
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-big-event-all-0000001745923785/game-center-big-event-pioneer-test-0000002523247654
 format: md
 ---
 

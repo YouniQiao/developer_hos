@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ohpm ERROR: JSON5: invalid end of input at 1:1"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-5
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-5
 ---
 
 

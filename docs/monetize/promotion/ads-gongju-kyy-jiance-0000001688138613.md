@@ -1,7 +1,7 @@
 ---
 title: "专属监测工具跟踪"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-gongju-kyy-jiance-0000001688138613
+original_url: /docs/monetize/promotion/ads-gongju-kyy-jiance-0000001688138613
 format: md
 ---
 
@@ -146,6 +146,6 @@ format: md
 
 ## 数据回传
 
-为验证端到端数据链路，建议广告主在正式投放之前都进行试投放（搭配[智能跟踪](https://developer.huawei.com/consumer/cn/doc/promotion/ads_gongju08-0000001469108293#section8351192033415)与[自动激活](https://developer.huawei.com/consumer/cn/doc/promotion/ads_gongju08-0000001469108293#section8351192033415)），确保数据回传无误。
+为验证端到端数据链路，建议广告主在正式投放之前都进行试投放（搭配[智能跟踪](/docs/monetize/promotion/ads_gongju08-0000001469108293#section8351192033415)与[自动激活](/docs/monetize/promotion/ads_gongju08-0000001469108293#section8351192033415)），确保数据回传无误。
 
 请参考[鲸鸿动能转化跟踪接口对接说明(中国大陆)v2.1.6](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260529160256.26168173196407750164587369980807:20260531101413:2800:1738823982CB7B609769F666EDBC33E1A4194EDFD368DC156EB7E2F28B14C74C.pdf?needInitFileName=true)

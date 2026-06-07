@@ -1,6 +1,6 @@
 ---
 title: "开发第一个元服务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-start-overview
+original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-start-overview
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 * 带有一张2\*2的具备简单动画效果的服务卡片，图标采用工程默认，作为元服务入口。
 
-  如果不创建元服务卡片，可通过负一屏的元服务图标作为元服务入口。图片样式规范请参考[元服务设计基础信息-图标](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900384976#section158386422413)。
+  如果不创建元服务卡片，可通过负一屏的元服务图标作为元服务入口。图片样式规范请参考[元服务设计基础信息-图标](/docs/design/atomic-service-design/basic-elements/basic-info#section158386422413)。
 
   卡片效果如下图所示。
 

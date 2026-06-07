@@ -1,7 +1,7 @@
 ---
 title: "@hw-stylistic/object-property-newline"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_object-property-newline
+original_url: /docs/tools/coding-debug/ide_object-property-newline
 format: md
 ---
 

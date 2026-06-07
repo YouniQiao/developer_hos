@@ -1,6 +1,6 @@
 ---
 title: "变更核准（备案）"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-change
+original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-change
 format: md
 ---
 

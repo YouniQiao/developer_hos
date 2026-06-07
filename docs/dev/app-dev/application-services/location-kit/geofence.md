@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "地理围栏开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence
+original_url: /docs/dev/app-dev/application-services/location-kit/geofence
 format: md
 ---
 
 
-* **[地理围栏简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-intro)**
-* **[端侧GNSS围栏开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-guidelines)**
-* **[云侧围栏开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fenceextensionability)**
+* **[地理围栏简介](/docs/dev/app-dev/application-services/location-kit/geofence/geofence-intro)**
+* **[端侧GNSS围栏开发指导](/docs/dev/app-dev/application-services/location-kit/geofence/geofence-guidelines)**
+* **[云侧围栏开发指导](/docs/dev/app-dev/application-services/location-kit/geofence/fenceextensionability)**

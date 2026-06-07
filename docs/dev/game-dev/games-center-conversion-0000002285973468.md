@@ -1,6 +1,6 @@
 ---
 title: "用户支付价格（含税）换算原则"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-conversion-0000002285973468
+original_url: /docs/dev/game-dev/games-center-conversion-0000002285973468
 format: md
 ---
 
@@ -20,4 +20,4 @@ format: md
 ![](./img/a9a52f47.png)
 
 * 税额计算过程中，不会进行美化/更正处理，仅采用“四舍五入”方法保留两位小数。
-* 计算出的用户支付价格（含税）如含有小数，则还会进行币种的美化/更正处理，具体请参考[币种美化/更正规则](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-correct-0000002286076752#ZH-CN_TOPIC_0000002382054037)。
+* 计算出的用户支付价格（含税）如含有小数，则还会进行币种的美化/更正处理，具体请参考[币种美化/更正规则](/docs/dev/game-dev/games-center-correct-0000002286076752#ZH-CN_TOPIC_0000002382054037)。

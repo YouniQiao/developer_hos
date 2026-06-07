@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "关于实况窗模板使用的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-faq-4
+original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-faq/liveview-faq-4
 format: md
 ---
 

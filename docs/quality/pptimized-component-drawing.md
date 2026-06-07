@@ -1,6 +1,6 @@
 ---
 title: "组件绘制优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-pptimized-component-drawing
+original_url: /docs/quality/pptimized-component-drawing
 format: md
 ---
 
@@ -15,11 +15,11 @@ format: md
 
 ![](./img/2a4e939a.png "点击放大")
 
-自定义组件生命周期如上图所示。创建完成后，在执行build函数前，将先调用aboutToAppear()生命周期回调函数。此时若执行耗时操作，将阻塞UI渲染，增加UI主线程负担。因此，应避免在自定义组件的生命周期内执行高耗时操作。具体原理可参考[自定义组件生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-page-custom-components-lifecycle)。具体优化案例请参阅[避免在自定义组件的生命周期内执行高耗时操作](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization#section18755173594714)。
+自定义组件生命周期如上图所示。创建完成后，在执行build函数前，将先调用aboutToAppear()生命周期回调函数。此时若执行耗时操作，将阻塞UI渲染，增加UI主线程负担。因此，应避免在自定义组件的生命周期内执行高耗时操作。具体原理可参考[自定义组件生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-page-custom-components-lifecycle)。具体优化案例请参阅[避免在自定义组件的生命周期内执行高耗时操作](/docs/quality/ui-component-performance-optimization#section18755173594714)。
 
 ## 按需注册组件属性
 
-在开发应用UI界面时，为每个组件设置属性，进行UI样式和行为逻辑处理。如果单个组件设置多个属性且该组件在应用中频繁使用，单个属性的设置将显著影响应用性能。具体优化案例请参阅[按需注册组件属性](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-component-performance-optimization#section14178121175019)。
+在开发应用UI界面时，为每个组件设置属性，进行UI样式和行为逻辑处理。如果单个组件设置多个属性且该组件在应用中频繁使用，单个属性的设置将显著影响应用性能。具体优化案例请参阅[按需注册组件属性](/docs/quality/ui-component-performance-optimization#section14178121175019)。
 
 ## 减少布局计算
 

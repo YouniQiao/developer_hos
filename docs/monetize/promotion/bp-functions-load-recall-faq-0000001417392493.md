@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-faq-0000001417392493
+original_url: /docs/monetize/promotion/bp-functions-load-recall-faq-0000001417392493
 format: md
 ---
 

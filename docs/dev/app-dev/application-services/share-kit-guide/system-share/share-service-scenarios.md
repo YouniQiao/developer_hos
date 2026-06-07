@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "常见分享场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-service-scenarios
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios
 format: md
 ---
 
 
-* **[分享链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-link)**
-* **[分享图片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-image)**
-* **[分享视频](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-video)**
-* **[分享文本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-utd-text)**
+* **[分享链接](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-link)**
+* **[分享图片](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-image)**
+* **[分享视频](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-video)**
+* **[分享文本](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-text)**

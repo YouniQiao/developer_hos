@@ -1,6 +1,6 @@
 ---
 title: "ServiceAbility组件配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-configuration
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/serviceability-configuration
 format: md
 ---
 
@@ -14,4 +14,4 @@ format: md
 | type | 表示Ability的类型。取值为"service"时表示该Ability是基于Service模板开发的Ability。 | 字符串 | 否 |
 | backgroundModes | 表示后台服务的类型，可以为一个服务配置多个后台服务类型。该标签仅适用于service类型的Ability。取值范围如下：  dataTransfer：通过网络/对端设备进行数据下载、备份、分享、传输等业务。  audioPlayback：音频输出业务。  audioRecording：音频输入业务。  pictureInPicture：画中画、小窗口播放视频业务。  voip：音视频电话、VOIP业务。  location：定位、导航业务。  bluetoothInteraction：蓝牙扫描、连接、传输业务。  wifiInteraction：WLAN扫描、连接、传输业务。  screenFetch：录屏、截屏业务。  multiDeviceConnection：多设备互联业务。 | 字符串数组 | 可缺省，缺省值为空。 |
 
-ServiceAbility支持的配置项及详细说明详见[module对象内部结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-structure)。
+ServiceAbility支持的配置项及详细说明详见[module对象内部结构](/docs/dev/app-dev/getting-started/dev-fundamentals/module-structure)。

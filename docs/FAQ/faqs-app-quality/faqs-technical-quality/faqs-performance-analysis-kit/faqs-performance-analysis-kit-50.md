@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在HarmonyOS PC/2in1设备上查看MAC地址"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-50
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-50
 ---
 
 

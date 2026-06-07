@@ -1,6 +1,6 @@
 ---
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-prepare
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-prepare
 format: md
 ---
 

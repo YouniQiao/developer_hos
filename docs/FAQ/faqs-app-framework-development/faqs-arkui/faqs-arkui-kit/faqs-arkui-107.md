@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何根据组件内容大小修改浮动窗口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-107
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-107
 ---
 
 

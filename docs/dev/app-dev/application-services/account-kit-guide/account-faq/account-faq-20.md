@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "401 参数检查失败的可能原因和解决办法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-20
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-20
 format: md
 ---
 
@@ -24,5 +24,5 @@ format: md
 **解决措施**
 
 1. 请检查必选参数是否传入，传入的参数类型是否错误，以及传入的参数是否符合规格约束。
-2. 检查module type为entry的模块下module.json5中的client\_id配置的值是否正确，请参考[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
-3. 请使用手动签名方式配置签名，请参考[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)。
+2. 检查module type为entry的模块下module.json5中的client\_id配置的值是否正确，请参考[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。
+3. 请使用手动签名方式配置签名，请参考[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)。

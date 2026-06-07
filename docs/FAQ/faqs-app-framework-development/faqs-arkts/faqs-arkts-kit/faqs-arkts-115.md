@@ -1,6 +1,6 @@
 ---
 title: "如何获取对象的所有方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-115
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-115
 format: md
 ---
 

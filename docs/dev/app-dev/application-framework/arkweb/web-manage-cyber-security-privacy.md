@@ -1,11 +1,11 @@
 ---
 title: "管理Web组件的网络安全与隐私"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-manage-cyber-security-privacy
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy
 format: md
 ---
 
 
-* **[解决Web组件本地资源跨域问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-cross-origin)**
-* **[使用智能防跟踪功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-intelligent-tracking-prevention)**
-* **[使用Web组件的广告过滤功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-adsblock)**
-* **[坚盾守护模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-secure-shield-mode)**
+* **[解决Web组件本地资源跨域问题](/docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-cross-origin)**
+* **[使用智能防跟踪功能](/docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-intelligent-tracking-prevention)**
+* **[使用Web组件的广告过滤功能](/docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-adsblock)**
+* **[坚盾守护模式](/docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-secure-shield-mode)**

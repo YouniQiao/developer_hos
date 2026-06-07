@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "实现音频输入设备路由切换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-input-device-switcher
+original_url: /docs/dev/app-dev/media/audio-kit/audio-device/audio-input-device-switcher
 format: md
 ---
 

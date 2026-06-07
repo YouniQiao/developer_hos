@@ -1,7 +1,7 @@
 ---
 title: "更新商品库"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa5-0000001286023250
+original_url: /docs/monetize/promotion/marketing-api-tool-dpa5-0000001286023250
 format: md
 ---
 
@@ -34,15 +34,15 @@ format: md
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | upload\_method | string | 是 | 商品库数据上传方式，详见[商品库数据上传方式](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section18930165402817)。 |
-  | update\_type | string | 否 | 商品库数据更新方式，详见[商品库数据更新方式](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1391137298)。  当upload\_method = ADS\_API时非必填，其他场景必填。 |
+  | upload\_method | string | 是 | 商品库数据上传方式，详见[商品库数据上传方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section18930165402817)。 |
+  | update\_type | string | 否 | 商品库数据更新方式，详见[商品库数据更新方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1391137298)。  当upload\_method = ADS\_API时非必填，其他场景必填。 |
 
   store\_update\_policy(Struct2)定义
 
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | xml\_update\_url\_type | string | 是 | 定时拉取方式获取xml数据的url地址类型, 详见[url地址类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section48424918293)。 |
+  | xml\_update\_url\_type | string | 是 | 定时拉取方式获取xml数据的url地址类型, 详见[url地址类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section48424918293)。 |
   | xml\_update\_url | string | 是 | 定时拉取方式获取xml数据的url地址。 |
   | auth\_name | string | 否 | 用户名。 |
   | auth\_password | string | 否 | 密码。 |

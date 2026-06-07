@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何设置相机焦距"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-3
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-3
 ---
 
 

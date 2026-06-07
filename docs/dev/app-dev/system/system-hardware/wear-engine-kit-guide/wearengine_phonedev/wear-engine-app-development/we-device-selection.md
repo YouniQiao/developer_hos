@@ -1,6 +1,6 @@
 ---
 title: "目标设备选择"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-device-selection
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/we-device-selection
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 获取到的设备[Device](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#device)类中，包含有[DeviceCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#devicecategory)字段，表明了当前设备的类型，可根据设备的类型挑选目标设备。
 
-1. 参见[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)章节，获取已连接设备列表。
+1. 参见[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)章节，获取已连接设备列表。
 2. 从已连接设备列表中根据设备类型选定需要通信的设备。
 
    ```
@@ -36,11 +36,11 @@ format: md
 
 ## 选择支持某种能力集的设备
 
-获取到的设备中包含了查询能力集的方法，可参考[穿戴设备信息查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_device_info)章节。
+获取到的设备中包含了查询能力集的方法，可参考[穿戴设备信息查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_device_info)章节。
 
 ### 根据设备支持的WearEngine能力集挑选目标设备
 
-1. 参见[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)章节，获取已连接设备列表。
+1. 参见[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)章节，获取已连接设备列表。
 2. 从已连接设备列表中根据WearEngine能力集选定需要通信的设备。
 
    ```
@@ -67,7 +67,7 @@ format: md
 
 ### 根据设备支持的Device能力集挑选目标设备
 
-1. 参见[已连接穿戴设备查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/query_connected_devices)章节，获取已连接设备列表。
+1. 参见[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)章节，获取已连接设备列表。
 2. 从已连接设备列表中根据Device能力集选定需要通信的设备。
 
    ```

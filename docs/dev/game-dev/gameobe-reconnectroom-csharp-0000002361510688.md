@@ -1,6 +1,6 @@
 ---
 title: "掉线重连"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-reconnectroom-csharp-0000002361510688
+original_url: /docs/dev/game-dev/gameobe-reconnectroom-csharp-0000002361510688
 format: md
 ---
 
@@ -43,11 +43,11 @@ format: md
    });
    ```
 2. 当前玩家存在已加入的房间或队伍时，可调用相关方法，重新连接服务器并进入房间/队伍。
-   * 当前玩家存在已加入的房间时，可通过调用[Client.JoinRoom](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-client-csharp-0000002361516112#section13774175719619)方法，在[允许掉线重连时间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section172221948194413)内重新连接服务器并进入房间。
+   * 当前玩家存在已加入的房间时，可通过调用[Client.JoinRoom](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-client-csharp-0000002361516112#section13774175719619)方法，在[允许掉线重连时间](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section172221948194413)内重新连接服务器并进入房间。
 
      ![](./img/b8f6d2b5.png)
 
-     当房主超过[允许掉线重连的时间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section172221948194413)未重新回到房间，房主权限将会被房间内的其他玩家接管。
+     当房主超过[允许掉线重连的时间](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section172221948194413)未重新回到房间，房主权限将会被房间内的其他玩家接管。
 
      ```
      public void JoinRoomCallback(JoinRoomBaseResponse res)
@@ -161,11 +161,11 @@ format: md
    	// 重连逻辑
    }
    ```
-2. 当玩家发生掉线状况后，可通过调用[Room.Reconnect](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-room-csharp-0000002395196057#section7567415154414)方法，在[允许掉线重连时间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section172221948194413)内重新连接至服务器。
+2. 当玩家发生掉线状况后，可通过调用[Room.Reconnect](https://developer.huawei.com/consumer/cn/doc/games-references/gameobe-room-csharp-0000002395196057#section7567415154414)方法，在[允许掉线重连时间](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section172221948194413)内重新连接至服务器。
 
    ![](./img/318b0218.png)
 
-   当房主超过[允许掉线重连的时间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-policy-configuration-0000002395190469#section172221948194413)未重新回到房间，房主权限将会被房间内的其他玩家接管。
+   当房主超过[允许掉线重连的时间](/docs/dev/game-dev/gameobe-policy-configuration-0000002395190469#section172221948194413)未重新回到房间，房主权限将会被房间内的其他玩家接管。
 
    ```
    Room room = Global.Room; // 通过Global类的Room属性获取Room对象

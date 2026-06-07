@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取发票抬头"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-select-invoice-title
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-select-invoice-title
 format: md
 ---
 
 
 ## 场景介绍
 
-当应用需要获取用户发票抬头时，可使用Account Kit提供的发票助手能力，打开发票抬头选择页面，帮助用户快速选择或管理发票抬头。以下对Account Kit提供的发票助手能力进行介绍，获取发票抬头功能还可使用场景化控件[选择发票抬头Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-invoice-title)进行实现。
+当应用需要获取用户发票抬头时，可使用Account Kit提供的发票助手能力，打开发票抬头选择页面，帮助用户快速选择或管理发票抬头。以下对Account Kit提供的发票助手能力进行介绍，获取发票抬头功能还可使用场景化控件[选择发票抬头Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-invoice-title)进行实现。
 
 ![](./img/9fae7c59.png "点击放大")
 
@@ -39,7 +39,7 @@ Wearable、TV设备暂不支持使用获取发票抬头功能。
 
 ## 开发前提
 
-在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)、[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。此场景无需申请账号权限。
+在进行代码开发前，请确保已按照“开发准备”章节中的指导完成[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)、[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。此场景无需申请账号权限。
 
 ## 开发步骤
 

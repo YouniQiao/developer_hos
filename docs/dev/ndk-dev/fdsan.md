@@ -1,6 +1,6 @@
 ---
 title: "fdsan使用指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fdsan
+original_url: /docs/dev/ndk-dev/fdsan
 format: md
 ---
 

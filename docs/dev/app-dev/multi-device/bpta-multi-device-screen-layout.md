@@ -1,7 +1,7 @@
 ---
 title: "屏幕类型布局场景"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-screen-layout
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-screen-layout
 format: md
 ---
 
@@ -37,12 +37,12 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/c3/v3/NSG1bMWZQMKbT94mw7ocvw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074019Z&HW-CC-Expire=86400&HW-CC-Sign=6693D010A00F30F02879BFDAAB5B1F2D30B9B29BB1269559D56199759BD3F2CA)
 
-* 根据屏幕形态区分不同场景下的布局，均基于断点结合响应式布局与自适应布局实现，详情可参考[断点](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section1532120147301)。
-* 同一设备由于横竖屏旋转的场景，会产生横向和纵向两种屏幕形态，旋转适配案例可参考[窗口方向](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction)。
+* 根据屏幕形态区分不同场景下的布局，均基于断点结合响应式布局与自适应布局实现，详情可参考[断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1532120147301)。
+* 同一设备由于横竖屏旋转的场景，会产生横向和纵向两种屏幕形态，旋转适配案例可参考[窗口方向](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction)。
 
 ## 超大屏横屏
 
-超大屏横屏设备横向分辨率通常超过1440vp，具备更强的多任务处理能力，可同时展示多个应用或复杂布局，提升工作效率。典型设备应用开发参考[电脑应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-pc-guide)等。适用于文档处理、数据分析、编程开发、内容创作等生产力场景。
+超大屏横屏设备横向分辨率通常超过1440vp，具备更强的多任务处理能力，可同时展示多个应用或复杂布局，提升工作效率。典型设备应用开发参考[电脑应用开发](/docs/dev/app-dev/multi-device/bpta-pc-guide)等。适用于文档处理、数据分析、编程开发、内容创作等生产力场景。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/77/v3/TcuzzgdHT9GVrqrOIWDHGw/zh-cn_image_0000002321148150.png?HW-CC-KV=V1&HW-CC-Date=20260606T074019Z&HW-CC-Expire=86400&HW-CC-Sign=BB6DF632E17219D5CE46241944DEA9CA4E0525679D825412BA4CFFA284FA4147 "点击放大")
 
@@ -56,7 +56,7 @@ format: md
 
 超大屏横屏设备独具大尺寸屏幕的优势，开发应用时建议采用响应式布局，以实时适应窗口尺寸变化，确保内容展示的最佳布局。在布局设计中，建议设置导航栏以提升可用性，并结合重复布局和多栏布局，充分利用屏幕空间，提升信息密度与用户的操作效率。
 
-本章节提供针对超大屏横屏设备典型布局场景的开发指导。更多UX设计标准与规范，请参考[电脑应用UX体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-2in1-0000001777895636)、[电脑](https://developer.huawei.com/consumer/cn/doc/design-guides/2in1-0000001777531700)。
+本章节提供针对超大屏横屏设备典型布局场景的开发指导。更多UX设计标准与规范，请参考[电脑应用UX体验标准](/docs/design/ux-standards/2in1-ux)、[电脑](https://developer.huawei.com/consumer/cn/doc/design-guides/2in1-0000001777531700)。
 
 * 导航栏
 
@@ -97,7 +97,7 @@ format: md
 
 ## 大屏横屏
 
-大屏横屏的特点主要表现为横向分辨率超过840vp，提供更宽广的显示视野和更强的信息承载能力，支持同时展示多个应用界面或复杂内容布局，显著提升多任务处理效率。典型设备有[Pad](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-pad-guide)、[三折叠](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-matext-guide)三屏态等。
+大屏横屏的特点主要表现为横向分辨率超过840vp，提供更宽广的显示视野和更强的信息承载能力，支持同时展示多个应用界面或复杂内容布局，显著提升多任务处理效率。典型设备有[Pad](/docs/dev/app-dev/multi-device/bpta-pad-guide)、[三折叠](/docs/dev/app-dev/multi-device/bpta-matext-guide)三屏态等。
 
 这类屏幕拥有高分辨率，还具备出色的显示细腻度和广阔的可视区域，适合展示更加丰富和多层次的内容。在学习、娱乐或办公等多种应用场景中，这些屏幕能为用户提供更清晰的文字、更完整的界面布局以及更流畅的视觉体验，从而有效提升信息获取效率和使用舒适度，增强工作与学习的专注力及完成效率。
 
@@ -120,7 +120,7 @@ format: md
 
 在大屏横屏布局设计中，为了简化操作流程并支持多层次信息架构，通常会设置导航栏以提高应用的可用性。充分利用大屏优势展示更多信息时，常采用重复元素布局来增加内容展示量。对于插图和文字结合的场景，小屏上采用上下排列的内容，在大屏上则多使用左右布局，使页面更加美观。此外，利用大屏的优势，可以通过侧边栏显示更多资讯。鉴于大屏横向空间充裕，在进行页面分栏布局时，为了提升视觉效果和丰富内容，应考虑使用多栏布局方案。
 
-本章节提供针对大屏横屏设备典型布局场景的开发指导。更多UX设计标准与规范，请参考[大屏应用UX体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-large-screen-0000001807707561)、[平板](https://developer.huawei.com/consumer/cn/doc/design-guides/pad-0000001823654157)。
+本章节提供针对大屏横屏设备典型布局场景的开发指导。更多UX设计标准与规范，请参考[大屏应用UX体验标准](/docs/design/ux-standards/large-screen-ux)、[平板](/docs/design/multi-device-design/pad)。
 
 * 导航栏
 
@@ -215,7 +215,7 @@ format: md
 
 ###布局设计与实现
 
-在大屏竖屏布局设计中，由于屏幕高度显著增加，用户在浏览内容时，对操作效率和视觉节奏的要求也相应提高。因此，在导航栏与重复布局设计上，需结合竖屏的展示特性进行有针对性的优化。在大屏竖屏设备中，导航栏通常位于顶部或底部，便于用户快速识别和操作。大屏竖屏提供了充足的高度空间，可以利用重复布局来展示结构相似但内容不同的信息模块。大屏竖屏的布局设计可参考[大屏应用 UX 体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-large-screen-0000001807707561)。
+在大屏竖屏布局设计中，由于屏幕高度显著增加，用户在浏览内容时，对操作效率和视觉节奏的要求也相应提高。因此，在导航栏与重复布局设计上，需结合竖屏的展示特性进行有针对性的优化。在大屏竖屏设备中，导航栏通常位于顶部或底部，便于用户快速识别和操作。大屏竖屏提供了充足的高度空间，可以利用重复布局来展示结构相似但内容不同的信息模块。大屏竖屏的布局设计可参考[大屏应用 UX 体验标准](/docs/design/ux-standards/large-screen-ux)。
 
 * 导航栏
 
@@ -266,8 +266,8 @@ format: md
 
 | 横纵断点 | 设备 |
 | --- | --- |
-| 横向断点md，纵向断点md | [双折叠](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-foldable-guide)：Mate X系列（展开态） |
-| [三折叠](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-matext-guide)：Mate XT系列（双屏M态） |
+| 横向断点md，纵向断点md | [双折叠](/docs/dev/app-dev/multi-device/bpta-foldable-guide)：Mate X系列（展开态） |
+| [三折叠](/docs/dev/app-dev/multi-device/bpta-matext-guide)：Mate XT系列（双屏M态） |
 
 ###布局设计与实现
 
@@ -450,7 +450,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/07/v3/mCpyipaXTFiGTDYzOYPaiw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074019Z&HW-CC-Expire=86400&HW-CC-Sign=16A83BD7708F33EDAE98EE996FBC3150A46283D0510D081B41C4CB17D23B7FA3)
 
-直板机横屏的页面设计实现可参考[多设备长视频界面](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app)。
+直板机横屏的页面设计实现可参考[多设备长视频界面](/docs/dev/app-dev/multi-device/multi-video-app)。
 
 ## 小方形屏
 
@@ -487,7 +487,7 @@ format: md
 
   ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/ed/v3/XMBCWedhQaiNCIaR8xpwOA/zh-cn_image_0000002445121925.gif?HW-CC-KV=V1&HW-CC-Date=20260606T074019Z&HW-CC-Expire=86400&HW-CC-Sign=64A04D8DBC37C330A65A1B3F2EE535AB83FCA1584C52B7E376015DC02748D7D4 "点击放大")
 
-  实现原理：使用Stack组件控制页面内容显示层级，背景图片上下沉浸，且互相不影响交互事件。[Z序控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-stack-layout#z序控制)从下到上分别是背景图片（视频）区、底部页签区、短视频描述区、侧边控件区、顶部页签区。顶部和底部页签设置内边距padding为topAvoidHeight或bottomAvoidHeight，避让系统规避区。侧边控件区使用Scroll组件自动控制滑动，使用[Blank组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-blank)和[displayPriority属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-layout-constraints#displaypriority)控制侧边控件区上下两侧的留白，容器高度足够时上下留白，容器高度不足时自动隐藏。
+  实现原理：使用Stack组件控制页面内容显示层级，背景图片上下沉浸，且互相不影响交互事件。[Z序控制](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout/arkts-layout-development-stack-layout#z序控制)从下到上分别是背景图片（视频）区、底部页签区、短视频描述区、侧边控件区、顶部页签区。顶部和底部页签设置内边距padding为topAvoidHeight或bottomAvoidHeight，避让系统规避区。侧边控件区使用Scroll组件自动控制滑动，使用[Blank组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-blank)和[displayPriority属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-layout-constraints#displaypriority)控制侧边控件区上下两侧的留白，容器高度足够时上下留白，容器高度不足时自动隐藏。
 
   ```
   Stack({ alignContent: Alignment.BottomEnd }) {
@@ -797,7 +797,7 @@ format: md
 
 由于手表等圆形屏幕设备在屏幕形态和使用场景上的独特性，其交互方式和界面设计与普通设备有显著区别。为了确保用户体验的连贯性和功能的全面适配，建议在开发过程中专门为圆形屏幕设备进行界面和逻辑设计，并独立创建一个 HAP（HarmonyOS Ability Package）包进行发布和安装。
 
-在开发穿戴应用时，需要将工程中module.json5的deviceTypes改为wearable，以确保应用能够在穿戴设备上正确部署和运行。可参考[穿戴服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wear-engine-kit-guide)了解能力介绍。
+在开发穿戴应用时，需要将工程中module.json5的deviceTypes改为wearable，以确保应用能够在穿戴设备上正确部署和运行。可参考[穿戴服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide)了解能力介绍。
 
 ###布局设计与实现
 
@@ -813,7 +813,7 @@ format: md
 
 垂直切屏，拓展了手表上下信息承载的空间，增强了信息展示的连贯性。
 
-ArkUI为圆形屏幕提供了部分弧形组件，建议开发者优先使用这些适配组件进行智能手表界面的开发。关于智能手表设备的开发指南，可以参考[智能穿戴应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smartwatch)。
+ArkUI为圆形屏幕提供了部分弧形组件，建议开发者优先使用这些适配组件进行智能手表界面的开发。关于智能手表设备的开发指南，可以参考[智能穿戴应用开发](/docs/dev/app-dev/multi-device/bpta-smartwatch)。
 
 | 组件名 | 备注 |
 | --- | --- |

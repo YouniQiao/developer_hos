@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在ArkTS的主线程中使用await会阻塞主线程吗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-43
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-43
 ---
 
 

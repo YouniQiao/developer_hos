@@ -1,6 +1,6 @@
 ---
 title: "使用列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-loading-long-list
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-loading-long-list
 format: md
 ---
 
@@ -9,11 +9,11 @@ ArkUI开发框架在NDK接口提供了列表组件，使用列表可以轻松高
 
 ## 创建列表
 
-参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)章节实现列表创建。
+参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)章节实现列表创建。
 
 ## 监听滚动事件
 
-参考[添加事件监听](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-add-component-events)章节实现列表滚动事件监听。
+参考[添加事件监听](/docs/dev/app-dev/application-framework/ndk-add-component-events)章节实现列表滚动事件监听。
 
 ## 使用懒加载
 

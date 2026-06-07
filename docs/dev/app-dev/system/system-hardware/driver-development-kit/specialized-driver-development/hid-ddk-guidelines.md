@@ -1,6 +1,6 @@
 ---
 title: "开发适用HID协议的设备驱动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hid-ddk-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/hid-ddk-guidelines
 format: md
 ---
 

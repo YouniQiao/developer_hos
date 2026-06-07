@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何通过C接口使用网络相关功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-66
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-66
 ---
 
 
@@ -15,4 +15,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
 [Netstack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-netstack)
 
-[使用WebSocket访问网络(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-websocket-guidelines)
+[使用WebSocket访问网络(C/C++)](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/native-websocket-guidelines)

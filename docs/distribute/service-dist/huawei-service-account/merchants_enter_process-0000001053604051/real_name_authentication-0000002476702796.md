@@ -1,7 +1,7 @@
 ---
 title: "步骤2 实名认证"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/real_name_authentication-0000002476702796
+original_url: /docs/distribute/service-dist/huawei-service-account/merchants_enter_process-0000001053604051/real_name_authentication-0000002476702796
 format: md
 ---
 

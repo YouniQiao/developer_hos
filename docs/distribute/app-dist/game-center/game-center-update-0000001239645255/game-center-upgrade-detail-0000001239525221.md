@@ -1,7 +1,7 @@
 ---
 title: "更新在架应用详情"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-upgrade-detail-0000001239525221
+original_url: /docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-detail-0000001239525221
 format: md
 ---
 
@@ -46,7 +46,7 @@ format: md
 
    ![](./img/e86269418a51.png)
 
-   此处务必选择在架软件包，如果选择上传与在架不同的软件包，即使versionCode没有变化也不支持同版本升级，必须[升级应用版本](`https://developer.huawei.com/consumer/cn/doc/app/game-center-upgrade-version-0000001194325288#section166011045192419`)。
+   此处务必选择在架软件包，如果选择上传与在架不同的软件包，即使versionCode没有变化也不支持同版本升级，必须[升级应用版本](`/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288#section166011045192419`)。
 
    ![](./img/6b6338dcd27d.png "点击放大")
 

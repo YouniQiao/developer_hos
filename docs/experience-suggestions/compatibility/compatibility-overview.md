@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/compatibility-overview
+original_url: /docs/experience-suggestions/compatibility/compatibility-overview
 format: md
 ---
 

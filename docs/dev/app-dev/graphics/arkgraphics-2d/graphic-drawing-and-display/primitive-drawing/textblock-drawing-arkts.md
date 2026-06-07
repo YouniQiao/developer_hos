@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "字块绘制（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/textblock-drawing-arkts
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/textblock-drawing-arkts
 format: md
 ---
 
@@ -10,15 +10,15 @@ format: md
 
 字块（TextBlob）是指文本的集合。无论是单个的文字还是大块的文本，都可以通过字块来绘制。
 
-除了基本的字块绘制之外，还可以给文字添加各种绘制效果。常见的字块绘制场景包括[文字描边](#文字描边)、[文字渐变](#文字渐变)等，更多效果请见[绘制效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drawing-effect-overview)。
+除了基本的字块绘制之外，还可以给文字添加各种绘制效果。常见的字块绘制场景包括[文字描边](#文字描边)、[文字渐变](#文字渐变)等，更多效果请见[绘制效果](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/drawing-effect-overview)。
 
-本节不涉及文本测量和布局排版相关内容，如需在开发中处理此类文本绘制需求，可参考[文本开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-overview)，该文档系统讲解了排版策略与相关使用指导。
+本节不涉及文本测量和布局排版相关内容，如需在开发中处理此类文本绘制需求，可参考[文本开发概述](/docs/dev/app-dev/graphics/arkgraphics-2d/text/text-overview)，该文档系统讲解了排版策略与相关使用指导。
 
 ## 基本字块绘制
 
 Canvas通过drawTextBlob()来绘制字块。函数接受三个参数：TextBlob字块对象，以及文字基线左端点的x坐标和y坐标。
 
-画布Canvas对象具体可见[画布的获取与绘制结果的显示（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-arkts)。
+画布Canvas对象具体可见[画布的获取与绘制结果的显示（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-arkts)。
 
 字块对象可以通过多种方式创建得到，详细的字块创建方式和接口使用请参考[TextBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-graphics-drawing-textblob)。
 
@@ -54,7 +54,7 @@ canvas.drawTextBlob(textBlob, VALUE_200, VALUE_300);
 
 ## 文字描边
 
-基于基本的字块绘制，还可以通过画笔实现文字描边效果，描边效果的更多介绍请参考[描边效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-drawing-effect-arkts#描边效果)。
+基于基本的字块绘制，还可以通过画笔实现文字描边效果，描边效果的更多介绍请参考[描边效果](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/basic-drawing-effect-arkts#描边效果)。
 
 以下以英文文字描边和中文文字描边给出示例和指导。
 
@@ -139,7 +139,7 @@ canvas.detachBrush();
 
 ## 文字渐变
 
-基于基本字块绘制，还可以通过着色器实现文字渐变的效果，着色器的更多介绍请参考[着色器效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-drawing-effect-arkts#着色器效果)。
+基于基本字块绘制，还可以通过着色器实现文字渐变的效果，着色器的更多介绍请参考[着色器效果](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/complex-drawing-effect-arkts#着色器效果)。
 
 以下为文字添加了线性渐变着色器效果的简要示例和示意图：
 
@@ -175,7 +175,7 @@ canvas.detachBrush();
 
 ## 主题字体
 
-主题字体，特指系统**主题应用**中能使用的字体，属于一种特殊的自定义字体。如需涉及文本测量和布局排版相关内容，可参考[使用主题字体（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme-font-arkts)。
+主题字体，特指系统**主题应用**中能使用的字体，属于一种特殊的自定义字体。如需涉及文本测量和布局排版相关内容，可参考[使用主题字体（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/theme-font-arkts)。
 
 设置跟随主题字体的示例代码和效果图如下：
 
@@ -202,7 +202,7 @@ canvas.drawTextBlob(textBlob, VALUE_200, VALUE_300);
 
 ![](./img/cb383899.png)
 
-需要在应用入口文件（默认工程中为EntryAbility.ets）中复写onConfigurationUpdate函数，以响应切换主题字体的操作，确保切换后页面能够及时刷新并生效。具体实现可参考[使用主题字体（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme-font-arkts)。
+需要在应用入口文件（默认工程中为EntryAbility.ets）中复写onConfigurationUpdate函数，以响应切换主题字体的操作，确保切换后页面能够及时刷新并生效。具体实现可参考[使用主题字体（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/theme-font-arkts)。
 
 ## 单字绘制
 

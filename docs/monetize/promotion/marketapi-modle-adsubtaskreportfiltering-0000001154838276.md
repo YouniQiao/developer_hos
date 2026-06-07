@@ -1,7 +1,7 @@
 ---
 title: "AdSubTaskReportFiltering"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-adsubtaskreportfiltering-0000001154838276
+original_url: /docs/monetize/promotion/marketapi-modle-adsubtaskreportfiltering-0000001154838276
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "音频资源合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-audio-use
+original_url: /docs/quality/reasonable-audio-use
 ---
 
 # 音频资源合理使用
@@ -131,7 +131,7 @@ const SoundPool = async () => {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/music/AvPlayer.ets#L6-L78">AvPlayer.ets</a></div>
 
-有关音频播放开发相关接口的使用，详情可以参考[音频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback)。
+有关音频播放开发相关接口的使用，详情可以参考[音频播放](/docs/dev/app-dev/media/audio-kit/audio-playback)。
 
 ### 录音场景
 
@@ -163,4 +163,4 @@ export default class EntryAbility extends UIAbility {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/music/Recording.ets#L7-L57">Recording.ets</a></div>
 
-有关音频录制开发相关接口的使用，详情可以参考[音频录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-recording)。
+有关音频录制开发相关接口的使用，详情可以参考[音频录制](/docs/dev/app-dev/media/audio-kit/audio-recording)。

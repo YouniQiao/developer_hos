@@ -1,6 +1,6 @@
 ---
 title: "自助测试和自助分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-self
+original_url: /docs/dev/atomic-dev/push-as-subscription/push-as-service-self
 format: md
 ---
 

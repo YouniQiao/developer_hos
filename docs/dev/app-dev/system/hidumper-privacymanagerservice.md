@@ -1,15 +1,15 @@
 ---
 title: "PrivacyManagerService"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper-privacymanagerservice
+original_url: /docs/dev/app-dev/system/hidumper-privacymanagerservice
 format: md
 ---
 
 
-PrivacyManagerService是访问控制基于[hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)增强开发的命令行能力，可显示访问控制基础信息，获取敏感权限使用记录。
+PrivacyManagerService是访问控制基于[hidumper](/docs/dev/app-dev/system/hidumper)增强开发的命令行能力，可显示访问控制基础信息，获取敏感权限使用记录。
 
 ## 环境准备
 
-根据hidumper工具指导，完成[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#环境要求)。
+根据hidumper工具指导，完成[环境准备](/docs/dev/app-dev/system/hidumper#环境要求)。
 
 ## 获取帮助信息
 
@@ -39,7 +39,7 @@ Usage:
 hidumper -s PrivacyManagerService -a '-t <tokenId>'
 ```
 
-命令所需的tokenId可以通过[atm-tool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/atm-tool#查询命令)进行查询。
+命令所需的tokenId可以通过[atm-tool](/docs/dev/app-dev/system/atm-tool#查询命令)进行查询。
 
 **使用样例：**
 

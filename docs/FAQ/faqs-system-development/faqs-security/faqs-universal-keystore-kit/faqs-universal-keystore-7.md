@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取HarmonyOS签名证书的公钥信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-universal-keystore-7
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-universal-keystore-kit/faqs-universal-keystore-7
 ---
 
 

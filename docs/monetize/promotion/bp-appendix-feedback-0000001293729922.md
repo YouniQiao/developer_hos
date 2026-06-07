@@ -1,7 +1,7 @@
 ---
 title: "问题反馈"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-feedback-0000001293729922
+original_url: /docs/monetize/promotion/bp-appendix-feedback-0000001293729922
 format: md
 ---
 

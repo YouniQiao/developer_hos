@@ -1,7 +1,7 @@
 ---
 title: "自由流转概述"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-hopping
+original_url: /docs/dev/app-dev/multi-device/bpta-hopping
 format: md
 ---
 
@@ -49,11 +49,11 @@ format: md
 
 |  | 特性 | 特性介绍 | 开发参考 |
 | --- | --- | --- | --- |
-| 跨端迁移 | 应用接续 | 指当用户在一个设备上操作某个应用时，可以在另一个设备的同一个应用中快速切换，并无缝衔接上一个设备的应用体验。 | 可参考[应用接续概述](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast)。 |
-| 多端协同 | 跨设备拖拽 | 跨端拖拽提供跨设备的键鼠共享能力，支持在平板或2in1类型的任意两台设备之间拖拽文件、文本。 | 跨设备拖拽功能只需接入拖拽即可实现，可参考[统一拖拽](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-unified-drag-and-drop)实现，效果如[跨设备拖拽](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distribute-drag-cast)。 |
-| 跨设备剪贴板 | 当用户拥有多台设备时，可以通过跨设备剪贴板的功能，在A设备的应用上复制一段文本，粘贴到B设备的应用中，高效地完成多设备间的内容共享。 | 跨设备剪贴板功能只需接入剪贴板即可实现，可参考[跨设备剪贴板](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distributed-pasteboard-cast)实现。 |
-| 跨设备互通 | 跨设备互通提供跨设备的相机、扫描、图库访问能力，平板或2in1设备可以调用手机的相机、扫描、图库等功能。 | 可参考[跨设备互通特性简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-service-overview)实现。 |
-| 投屏 | 可在系统镜像投屏后，获取投屏设备信息，实现扩展屏模式的投播，实现双屏协作的能力。 | 可参考[扩展屏投播开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-extended-screen)实现。 |
-| 投播 | 使用媒体播控，可以简单高效地将音频投放到其他HarmonyOS设备上播放，如在手机上播放的音频，可以投到2in1设备上继续播放。 | 若实现音乐类投播可参考[音频投播](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-audio-cast)实践实现，视频类投播参考[视频投播](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-vdeocast)实践实现。 |
-| 隔空传送 | Share Kit新推出隔空传送分享，支持用户通过“一抓一放”实现跨端传输。 | 可以参考[隔空传送快速分享](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-gesture-share)实现。 |
-| 碰一碰分享 | Share Kit推出碰一碰分享，支持用户通过碰一碰发起跨端分享，可实现传输图片、共享Wi-Fi等。 | 若实现笔记、购物信息、长视频短视频一碰分享，或碰一碰游戏组队，可参考[碰一碰链接分享](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-knock-video-share)实现，若实现一碰发送/接收文件，可参考[碰一碰文件分享](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-knock-file-share)。 |
+| 跨端迁移 | 应用接续 | 指当用户在一个设备上操作某个应用时，可以在另一个设备的同一个应用中快速切换，并无缝衔接上一个设备的应用体验。 | 可参考[应用接续概述](/docs/dev/app-dev/multi-device/bpta-continue-cast)。 |
+| 多端协同 | 跨设备拖拽 | 跨端拖拽提供跨设备的键鼠共享能力，支持在平板或2in1类型的任意两台设备之间拖拽文件、文本。 | 跨设备拖拽功能只需接入拖拽即可实现，可参考[统一拖拽](/docs/dev/app-dev/multi-device/bpta-unified-drag-and-drop)实现，效果如[跨设备拖拽](/docs/dev/app-dev/multi-device/bpta-distribute-drag-cast)。 |
+| 跨设备剪贴板 | 当用户拥有多台设备时，可以通过跨设备剪贴板的功能，在A设备的应用上复制一段文本，粘贴到B设备的应用中，高效地完成多设备间的内容共享。 | 跨设备剪贴板功能只需接入剪贴板即可实现，可参考[跨设备剪贴板](/docs/dev/app-dev/multi-device/bpta-distributed-pasteboard-cast)实现。 |
+| 跨设备互通 | 跨设备互通提供跨设备的相机、扫描、图库访问能力，平板或2in1设备可以调用手机的相机、扫描、图库等功能。 | 可参考[跨设备互通特性简介](/docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service/servicecollaboration-service-overview)实现。 |
+| 投屏 | 可在系统镜像投屏后，获取投屏设备信息，实现扩展屏模式的投播，实现双屏协作的能力。 | 可参考[扩展屏投播开发指导](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/avsession-extended-screen)实现。 |
+| 投播 | 使用媒体播控，可以简单高效地将音频投放到其他HarmonyOS设备上播放，如在手机上播放的音频，可以投到2in1设备上继续播放。 | 若实现音乐类投播可参考[音频投播](/docs/dev/app-dev/multi-device/bpta-audio-cast)实践实现，视频类投播参考[视频投播](/docs/dev/app-dev/multi-device/bpta-vdeocast)实践实现。 |
+| 隔空传送 | Share Kit新推出隔空传送分享，支持用户通过“一抓一放”实现跨端传输。 | 可以参考[隔空传送快速分享](/docs/dev/app-dev/multi-device/bpta-application-gesture-share)实现。 |
+| 碰一碰分享 | Share Kit推出碰一碰分享，支持用户通过碰一碰发起跨端分享，可实现传输图片、共享Wi-Fi等。 | 若实现笔记、购物信息、长视频短视频一碰分享，或碰一碰游戏组队，可参考[碰一碰链接分享](/docs/dev/app-dev/multi-device/bpta-application-knock-video-share)实现，若实现一碰发送/接收文件，可参考[碰一碰文件分享](/docs/dev/app-dev/multi-device/bpta-application-knock-file-share)。 |

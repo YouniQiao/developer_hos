@@ -1,6 +1,6 @@
 ---
 title: "删除指定路径下的文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-delete-file
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-delete-file
 format: md
 ---
 

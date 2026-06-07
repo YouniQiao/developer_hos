@@ -1,7 +1,7 @@
 ---
 format: md
 title: "debug包功能正常，release包开启混淆后应用功能运行异常，页面白屏，崩溃"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-187
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-187
 ---
 
 

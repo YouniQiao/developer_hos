@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设备输入(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-input
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-input
 format: md
 ---
 
 
-在开发相机应用时，需要先[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。
+在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 相机应用通过调用和控制相机设备，完成预览、拍照和录像等基础操作。
 
@@ -116,7 +116,7 @@ format: md
 
    ![](./img/fbf09430.png)
 
-   在相机设备输入之前需要先完成相机管理，详细开发步骤请参考[相机管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-management)。
+   在相机设备输入之前需要先完成相机管理，详细开发步骤请参考[相机管理](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-management)。
 4. 通过[OH\_CameraManager\_GetSupportedSceneModes()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-manager-h#oh_cameramanager_getsupportedscenemodes)方法，获取当前相机设备支持的模式列表，列表中存储了相机设备支持的所有模式[Camera\_SceneMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#camera_scenemode)。
 
    ```
@@ -138,7 +138,7 @@ format: md
        return false;
    }
    ```
-5. 通过[OH\_CameraManager\_GetSupportedCameraOutputCapabilityWithSceneMode()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-manager-h#oh_cameramanager_getsupportedcameraoutputcapabilitywithscenemode)方法，获取当前设备在当前模式下支持的所有输出流，如预览流、拍照流等。输出流在[Camera\_OutputCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-outputcapability)中的各个profile字段中。根据相机设备指定模式[Camera\_SceneMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#camera_scenemode)的不同，需要向Session中添加对应类型的输出流，请参考会话管理[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management#开发步骤)中的第6步。
+5. 通过[OH\_CameraManager\_GetSupportedCameraOutputCapabilityWithSceneMode()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-manager-h#oh_cameramanager_getsupportedcameraoutputcapabilitywithscenemode)方法，获取当前设备在当前模式下支持的所有输出流，如预览流、拍照流等。输出流在[Camera\_OutputCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-camera-camera-outputcapability)中的各个profile字段中。根据相机设备指定模式[Camera\_SceneMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-h#camera_scenemode)的不同，需要向Session中添加对应类型的输出流，请参考会话管理[开发步骤](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management#开发步骤)中的第6步。
 
    ```
    Camera_OutputCapability* GetSupportedCameraOutputCapability(Camera_Manager* cameraManager, Camera_Device &camera)

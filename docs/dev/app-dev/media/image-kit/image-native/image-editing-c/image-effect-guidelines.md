@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用ImageEffect编辑图片"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-effect-guidelines
+original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-effect-guidelines
 format: md
 ---
 
@@ -72,7 +72,7 @@ target_link_libraries(entry PUBLIC
 
    **场景一：设置OH\_PixelmapNative输入类型。**
 
-   OH\_PixelmapNative的具体使用方法请参考[Pixelmap开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-pixelmap-operation-native)。
+   OH\_PixelmapNative的具体使用方法请参考[Pixelmap开发指导](/docs/dev/app-dev/media/image-kit/image-native-js-objects/image-pixelmap-operation-native)。
 
    ```
    // 设置输入的Pixelmap。
@@ -92,7 +92,7 @@ target_link_libraries(entry PUBLIC
 
    **场景二：设置OH\_NativeBuffer输入类型。**
 
-   OH\_NativeBuffer的具体使用方法请参考[NativeBuffer开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-buffer-guidelines)。
+   OH\_NativeBuffer的具体使用方法请参考[NativeBuffer开发指导](/docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-buffer-guidelines)。
 
    ```
    // 设置输入的NativeBuffer。
@@ -155,7 +155,7 @@ target_link_libraries(entry PUBLIC
 
    NativeWindow模块的具体使用方法请参考[OHNativeWindow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativewindow)。
 
-   Camera的具体使用方法请参考[Camera预览参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-preview)。
+   Camera的具体使用方法请参考[Camera预览参考](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview)。
 
    (1) 在xxx.ets中添加一个XComponent组件。
 

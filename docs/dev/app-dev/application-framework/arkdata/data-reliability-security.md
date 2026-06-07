@@ -1,15 +1,15 @@
 ---
 title: "数据可靠性与安全性"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security
+original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security
 format: md
 ---
 
 
-* **[数据可靠性与安全性概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-reliability-security-overview)**
-* **[数据库备份与恢复 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore)**
-* **[数据库备份与恢复 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-backup-and-restore)**
-* **[数据库加密 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-encryption)**
-* **[数据库加密 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-data-encryption)**
-* **[基于设备分类和数据分级的访问控制 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control-by-device-and-data-level)**
-* **[基于设备分类和数据分级的访问控制 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-access-control-by-device-and-data-level)**
-* **[E类加密数据库的使用 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/encrypted-estore-guidelines)**
+* **[数据可靠性与安全性概述](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-reliability-security-overview)**
+* **[数据库备份与恢复 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-backup-and-restore)**
+* **[数据库备份与恢复 (C/C++)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/native-backup-and-restore)**
+* **[数据库加密 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-encryption)**
+* **[数据库加密 (C/C++)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/native-data-encryption)**
+* **[基于设备分类和数据分级的访问控制 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/access-control-by-device-and-data-level)**
+* **[基于设备分类和数据分级的访问控制 (C/C++)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/native-access-control-by-device-and-data-level)**
+* **[E类加密数据库的使用 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/encrypted-estore-guidelines)**

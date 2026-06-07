@@ -1,7 +1,7 @@
 ---
 title: "竞价结果查询"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-bidstatus-0000001181826433
+original_url: /docs/monetize/promotion/marketapi-bidstatus-0000001181826433
 format: md
 ---
 
@@ -62,9 +62,9 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
-| bidDetails | O | List&lt;[BidDetail](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-biddetail-0000001181826449)&gt; | 竞价详情。 |
+| bidDetails | O | List&lt;[BidDetail](/docs/monetize/promotion/marketapi-modle-biddetail-0000001181826449)&gt; | 竞价详情。 |
 
 ## 响应示例
 

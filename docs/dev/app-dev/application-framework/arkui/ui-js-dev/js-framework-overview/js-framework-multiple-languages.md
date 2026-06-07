@@ -1,6 +1,6 @@
 ---
 title: "多语言支持"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-multiple-languages
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-multiple-languages
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 定义资源文件
 
-资源文件用于存放应用在多种语言场景下的资源内容，开发框架使用JSON文件保存资源定义。在[文件组织](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-file)中指定的i18n文件夹内放置语言资源文件，语言资源文件的命名是由语言、文字、国家或地区的限定词通过中划线连接组成，其中文字和国家或地区可以省略，如zh-Hant-HK（中国香港地区使用的繁体中文）、zh-CN（中国使用的简体中文）、zh（中文）。命名规则如下：
+资源文件用于存放应用在多种语言场景下的资源内容，开发框架使用JSON文件保存资源定义。在[文件组织](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-file)中指定的i18n文件夹内放置语言资源文件，语言资源文件的命名是由语言、文字、国家或地区的限定词通过中划线连接组成，其中文字和国家或地区可以省略，如zh-Hant-HK（中国香港地区使用的繁体中文）、zh-CN（中国使用的简体中文）、zh（中文）。命名规则如下：
 
 ```
 language[-script-region].json

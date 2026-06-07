@@ -1,6 +1,6 @@
 ---
 title: "启动本地PageAbility"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-local-pageability
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/start-local-pageability
 format: md
 ---
 
@@ -14,7 +14,7 @@ PageAbility相关的能力通过featureAbility提供，启动本地Ability通过
 | startAbility(parameter: StartAbilityParameter) | 启动Ability。 |
 | startAbilityForResult(parameter: StartAbilityParameter) | 启动Ability，并在该Ability被销毁时返回执行结果。 |
 
-如下示例通过startAbility显式启动PageAbility。启动Ability的参数包含want，关于want的说明详见[对象间信息传递载体Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/want-fa)，相应的，隐式启动与显式启动也不在此赘述。
+如下示例通过startAbility显式启动PageAbility。启动Ability的参数包含want，关于want的说明详见[对象间信息传递载体Want](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/want-fa)，相应的，隐式启动与显式启动也不在此赘述。
 
 ```
 import featureAbility from '@ohos.ability.featureAbility';

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "ContentType使用场景说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-appendix
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-appendix
 format: md
 ---
 
@@ -40,7 +40,7 @@ format: md
 
 ![](./img/6c70b6ab.png)
 
-* ID\_CARD\_NUMBER目前只支持身份证号的推荐、填充，不支持其他类型的证件，可参考[动态修改ContentType值](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-amend)动态配置输入框的ContentType。
+* ID\_CARD\_NUMBER目前只支持身份证号的推荐、填充，不支持其他类型的证件，可参考[动态修改ContentType值](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-amend)动态配置输入框的ContentType。
 * 请在收集使用用户敏感个人信息的表单界面告知目的以及必要性。
 
 护照信息

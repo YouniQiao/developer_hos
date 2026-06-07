@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/joint-operation-faq-0000002024211370
+original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/joint-operation-game-0000002024369570/joint-operation-faq-0000002024211370
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Graphics Accelerate Launchacceleration Service"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launchacceleration-service
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-launchacceleration-service
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

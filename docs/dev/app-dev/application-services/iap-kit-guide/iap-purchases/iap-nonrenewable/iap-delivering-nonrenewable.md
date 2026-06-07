@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "权益发放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-nonrenewable
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-nonrenewable/iap-delivering-nonrenewable
 format: md
 ---
 
@@ -45,7 +45,7 @@ format: md
 
    ![](./img/c5f440b5.png)
 
-   如果开发者在[发起购买](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-nonrenewable#发起购买)时支持非续期订阅商品的批量购买，则需要在发货时校验下单的商品数量和[PurchaseOrderPayload](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-data-model#purchaseorderpayload).quantity是否一致，避免造成漏发、多发的情况。
+   如果开发者在[发起购买](/docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-nonrenewable/iap-integrate-nonrenewable#发起购买)时支持非续期订阅商品的批量购买，则需要在发货时校验下单的商品数量和[PurchaseOrderPayload](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-data-model#purchaseorderpayload).quantity是否一致，避免造成漏发、多发的情况。
 4. 发货成功后，应用需调用[finishPurchase](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iapfinishpurchase)接口确认发货，以此通知IAP服务器更新商品的发货状态，完成购买流程。
 
    发起请求时，需在请求参数[FinishPurchaseParameter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#finishpurchaseparameter)中携带[PurchaseOrderPayload](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-data-model#purchaseorderpayload)中的productType、purchaseToken、purchaseOrderId。
@@ -54,7 +54,7 @@ format: md
 
    ![](./img/482469b6.png)
 
-   JWSUtil为自定义类，可参见[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-dev-guide#示例代码)。
+   JWSUtil为自定义类，可参见[示例代码](/docs/dev/app-dev/application-services/iap-dev-guide#示例代码)。
 
    ```
    import { iap } from '@kit.IAPKit';

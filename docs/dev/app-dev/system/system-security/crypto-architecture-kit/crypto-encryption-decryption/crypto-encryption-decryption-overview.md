@@ -1,6 +1,6 @@
 ---
 title: "加解密介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-encryption-decryption-overview
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encryption-decryption-overview
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "图片如何添加渐变模糊"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-55
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-55
 ---
 
 

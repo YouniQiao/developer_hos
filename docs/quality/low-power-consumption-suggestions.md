@@ -1,6 +1,6 @@
 ---
 title: "不可见组件低功耗建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/low-power-consumption-suggestions
+original_url: /docs/quality/low-power-consumption-suggestions
 ---
 
 # 不可见组件低功耗建议
@@ -16,14 +16,14 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/low-po
 * 未被遮挡：组件本身没有被兄弟节点遮挡，且父组件没有被其他父组件遮挡
 * visible：开发者并未主动设置visibility为Hidden
 
-在开发层级复杂、组件结构较深的应用页面时，组件的显示与隐藏往往受到多种因素的影响，在HarmonyOS中已对一些常见的不可见组件刷新问题进行兜底，例如组件在应用切后台（[onBackground](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle#onbackground)()）、组件析构（[aboutToDisappear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttodisappear)()）等生命周期事件中，会终止组件的各种行为来保证功耗。但在另一些情况下，当组件已经实际不在屏幕上显示后，组件仍可能继续产生绘制任务，并引发不同程度的刷新问题和冗余绘制问题，以下是一些依赖三方参与适配的场景：
+在开发层级复杂、组件结构较深的应用页面时，组件的显示与隐藏往往受到多种因素的影响，在HarmonyOS中已对一些常见的不可见组件刷新问题进行兜底，例如组件在应用切后台（[onBackground](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-lifecycle#onbackground)()）、组件析构（[aboutToDisappear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttodisappear)()）等生命周期事件中，会终止组件的各种行为来保证功耗。但在另一些情况下，当组件已经实际不在屏幕上显示后，组件仍可能继续产生绘制任务，并引发不同程度的刷新问题和冗余绘制问题，以下是一些依赖三方参与适配的场景：
 
 * 开发者使用ImageAnimator、Canvas、XComponent、Video等组件，由于这些组件的绘制效果通常由开发者所配置的控制器来控制，当系统感知到该组件并非可见时，三方实现的自定义控制器以及与该组件相关自定义绘制进程任务无法被系统兜底停止。
 * 一个正常的动效组件不可见后，但仍挂载在组件树上，组件并未被析构。例如一个长列表滚动场景，当一个动效组件短暂被划出屏幕外时，该组件仍有在下一个时机重新绘制刷新的可能，需要继承被划出前的构建状态与播放进度。此情况下，系统不会抑制组件的刷新行为。
 * 组件本身位于屏幕范围内，但由于页面特殊结构，被另一级页面或组件完全遮蔽了，考虑到用户实际的操作需求，以及上层组件可能存在透明度、模糊效果等因素，系统不会终止被遮挡组件的行为，依赖三方开发者感知这种遮蔽事件，来控制被遮挡组件停止刷新。
 * 动效组件如Video、Web等组件，在已经卸载ArkUI树后，依然在执行解码、web render等业务导致Buffer持续空转。一方面开发者需确保组件在离线状态下构建时，渲染控制器为不播放，另一方面需要开发者确保当组件卸载时，停止正在执行的渲染控制器。
 
-为了帮助开发者定位到存在空跑问题的组件，在当前系统中已经开放了[不可见动效的自检工具](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-frontend-invisible-animation-analysis)。本文将着重介绍Vsync冗余信号、UI刷新问题以及Buffer自绘制三类问题中的UI刷新问题。开发者可进一步通过[布局分析（ArkUI Inspector）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector)较为直观且方便的查看ArkUI组件树结构以及关键的变量信息，勾选打开第四项，Show Hidden Components，可以使得开发者找到更多隐藏但未被析构的组件。
+为了帮助开发者定位到存在空跑问题的组件，在当前系统中已经开放了[不可见动效的自检工具](/docs/quality/frontend-invisible-animation-analysis)。本文将着重介绍Vsync冗余信号、UI刷新问题以及Buffer自绘制三类问题中的UI刷新问题。开发者可进一步通过[布局分析（ArkUI Inspector）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector)较为直观且方便的查看ArkUI组件树结构以及关键的变量信息，勾选打开第四项，Show Hidden Components，可以使得开发者找到更多隐藏但未被析构的组件。
 
 ![](./img/ae878299.png)
 
@@ -203,7 +203,7 @@ Refresh是一种较为特殊的页面结构，许多开发者会通过[自定义
 
 当ArkUI组件处于离线节点状态时，仍可继续执行部分组件行为，但涉及组件刷新、Animation等行为将被终止。然而，诸如解码、自绘制渲染等行为无法由系统中断。此外，组件离线后，其可见性将无法定义。因此，如果开发者完全依赖不可见回调来控制动画，需考虑在离线节点情况下将动画的初始状态设置为不播放。以下是一些常见的离线节点应用场景：
 
-1. [if/else条件渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse)：开发者可控制组件卸载、挂载ArkUI树，由开发者主动控制
+1. [if/else条件渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse)：开发者可控制组件卸载、挂载ArkUI树，由开发者主动控制
 2. 预加载、懒加载：开发者可以使用预加载、懒加载特性提前加载组件，优化浏览时的时延表现，但需要对提前加载的组件进行状态管控
 
 ### if/else
@@ -212,7 +212,7 @@ Refresh是一种较为特殊的页面结构，许多开发者会通过[自定义
 
 ### 懒加载
 
-[懒加载](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-lazyforeach-optimization)广泛用于List、Waterflow、Grid等列表结构，通过懒加载挂载显示的组件们无需一次性全量构建，而是在一定可视范围内动态按需构建组件，搭配组件复用优化方法，浏览时延表现会更好，功耗也收益显著。但开发者需谨慎处理离线动效组件的动画状态控制，预防通过懒加载生成的离线组件产生额外负载。如下图，在一个使用了LazyForEach实现懒加载的列表结构中，当CacheCount不为0时，意味着除了当前的ListItem外，还会额外离线创建一些ListItem用于加载。这些离线加载的列表项不会显示在ArkUI Inspector中，但会在需要显示时挂载上树。
+[懒加载](/docs/quality/lazyforeach-optimization)广泛用于List、Waterflow、Grid等列表结构，通过懒加载挂载显示的组件们无需一次性全量构建，而是在一定可视范围内动态按需构建组件，搭配组件复用优化方法，浏览时延表现会更好，功耗也收益显著。但开发者需谨慎处理离线动效组件的动画状态控制，预防通过懒加载生成的离线组件产生额外负载。如下图，在一个使用了LazyForEach实现懒加载的列表结构中，当CacheCount不为0时，意味着除了当前的ListItem外，还会额外离线创建一些ListItem用于加载。这些离线加载的列表项不会显示在ArkUI Inspector中，但会在需要显示时挂载上树。
 
 ![](./img/c89f72b7.png "点击放大")
 
@@ -228,7 +228,7 @@ Refresh是一种较为特殊的页面结构，许多开发者会通过[自定义
 
 ### 预加载
 
-[资源提前加载](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-preloading-resources)对性能收益显著，但开发者同样需要确保预加载内容不造成功耗问题。多数情况下，开发者同样可以给组件添加可见性回调管控动效和渲染业务。对于Web、地图等首帧渲染时延要求较高的场景，开发者可以监听组件完成首帧渲染的时机，在组件完成首帧渲染后立刻停止渲染，确保不产生功耗问题。如果仍有自渲染业务空跑，开发者可参考[Buffer低功耗优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-buffer-power-optimization)进行定位和优化。
+[资源提前加载](/docs/quality/preloading-resources)对性能收益显著，但开发者同样需要确保预加载内容不造成功耗问题。多数情况下，开发者同样可以给组件添加可见性回调管控动效和渲染业务。对于Web、地图等首帧渲染时延要求较高的场景，开发者可以监听组件完成首帧渲染的时机，在组件完成首帧渲染后立刻停止渲染，确保不产生功耗问题。如果仍有自渲染业务空跑，开发者可参考[Buffer低功耗优化](/docs/quality/buffer-power-optimization)进行定位和优化。
 
 ## 总结
 

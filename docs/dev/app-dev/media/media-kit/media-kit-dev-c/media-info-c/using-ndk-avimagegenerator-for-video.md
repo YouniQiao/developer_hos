@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AVImageGenerator获取视频帧(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avimagegenerator-for-video
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-info-c/using-ndk-avimagegenerator-for-video
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "个人信息收集清单"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-collection-checklist-0000001852051633
+original_url: /docs/dev/game-dev/quickgame-filing-collection-checklist-0000001852051633
 format: md
 ---
 
@@ -15,6 +15,6 @@ format: md
 
 | 业务场景 | 收集目的 | 个人信息类型 | 收集方式 | 个人信息字段 |
 | --- | --- | --- | --- | --- |
-| 应用的功能描述 | - | 个人数据类型 | 用户输入、App收集、第三方共享等。 | 和[隐私声明](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-statement-0000001805212868#section86435913914)表述保持一致。 |
+| 应用的功能描述 | - | 个人数据类型 | 用户输入、App收集、第三方共享等。 | 和[隐私声明](/docs/dev/game-dev/quickgame-filing-statement-0000001805212868#section86435913914)表述保持一致。 |
 | 移动互联网应用程序核准（备案） | 提交电信主管部门，履行核准（备案）手续。 | 商业联系信息 | 用户输入 | 公司联系人信息（姓名、邮箱、电话号码、**身份证件**）。 |
 | 移动互联网应用程序核准（备案） | 提交电信主管部门，履行核准（备案）手续。 | 商业联系信息 | 用户输入 | 法定代表人信息（姓名、**身份证件**、电话号码、邮箱、联系地址、**人脸照片、人脸视频**）。 |

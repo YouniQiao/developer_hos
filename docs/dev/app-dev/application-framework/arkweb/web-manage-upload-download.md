@@ -1,9 +1,9 @@
 ---
 title: "管理网页文件上传与下载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-manage-upload-download
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-upload-download
 format: md
 ---
 
 
-* **[使用Web组件上传文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-file-upload)**
-* **[使用Web组件的下载能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-download)**
+* **[使用Web组件上传文件](/docs/dev/app-dev/application-framework/arkweb/web-manage-upload-download/web-file-upload)**
+* **[使用Web组件的下载能力](/docs/dev/app-dev/application-framework/arkweb/web-manage-upload-download/web-download)**

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "aboutToReuse使用入参params刷新UI崩溃"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-476
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-476
 ---
 
 

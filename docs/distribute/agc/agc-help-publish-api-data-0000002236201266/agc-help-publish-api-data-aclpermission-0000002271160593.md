@@ -1,6 +1,6 @@
 ---
 title: "ACLPermission"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-aclpermission-0000002271160593
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-aclpermission-0000002271160593
 format: md
 ---
 

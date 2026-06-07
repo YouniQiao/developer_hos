@@ -1,6 +1,6 @@
 ---
 title: "自定义控件播报状态的场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/accessibilitystatedescription
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/accessibilitystatedescription
 format: md
 ---
 

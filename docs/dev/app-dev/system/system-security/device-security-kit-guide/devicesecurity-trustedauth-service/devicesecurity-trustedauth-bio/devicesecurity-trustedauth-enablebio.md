@@ -1,6 +1,6 @@
 ---
 title: "开通生物特征认证能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-enablebio
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-bio/devicesecurity-trustedauth-enablebio
 format: md
 ---
 
@@ -8,12 +8,12 @@ format: md
 ## 场景介绍
 
 1. 本功能在API 24之前版本仅支持Phone；API24及之后版本，新增支持具备TUI能力的PC/2in1、具备TUI能力的Tablet。可通过接口[checkConfirmUITextFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#checkconfirmuitextformat)查询设备是否具备TUI能力。不支持的设备在调用数字盾服务相关业务接口时，返回错误码1019100016。
-2. 人脸认证功能需设备具备**3D人脸识别能力**，可通过调用[查询支持的认证能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-authentication-capabilities)确认设备是否支持3D人脸识别。当前仅支持绑定一个指纹或人脸用于支付认证。
+2. 人脸认证功能需设备具备**3D人脸识别能力**，可通过调用[查询支持的认证能力](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-supported-authentication-capabilities)确认设备是否支持3D人脸识别。当前仅支持绑定一个指纹或人脸用于支付认证。
 3. 本功能需应用服务器端完成接口接入，以配合端云协同认证流程。
 
 ## 约束与限制
 
-本功能在API24之前版本仅在手机设备支持。对于API24及之后版本，本功能在手机设备、部分PC/2in1、部分Tablet设备支持。人脸认证功能仅支持具备**3D人脸识别能力**的设备，目前仅支持绑定一个指纹/人脸用于支付认证，且需应用服务器端同步接入配合端云协同认证。通过用户认证服务提供的接口[查询支持的认证能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-authentication-capabilities)，可确认设备是否支持3D人脸。
+本功能在API24之前版本仅在手机设备支持。对于API24及之后版本，本功能在手机设备、部分PC/2in1、部分Tablet设备支持。人脸认证功能仅支持具备**3D人脸识别能力**的设备，目前仅支持绑定一个指纹/人脸用于支付认证，且需应用服务器端同步接入配合端云协同认证。通过用户认证服务提供的接口[查询支持的认证能力](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-supported-authentication-capabilities)，可确认设备是否支持3D人脸。
 
 ## 业务流程
 
@@ -49,7 +49,7 @@ format: md
    import { common } from '@kit.AbilityKit';
    ```
 2. 通过用户认证服务提供的接口[查询设备是否已录入相关凭证](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthgetenrolledstate12)。
-3. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts)，初始化签名会话。
+3. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts)，初始化签名会话。
 4. 调用数字盾密码认证接口[trustedAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api#trustedauthentication)发起生物特征认证前的密码认证申请。
 
    ```
@@ -76,7 +76,7 @@ format: md
    let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
    const authToken: trustedAuthentication.AuthToken = await PwdVerify(challenge, context);
    ```
-5. 通过用户认证服务提供的接口，拉起生物特征认证控件并[发起认证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-authentication)。
+5. 通过用户认证服务提供的接口，拉起生物特征认证控件并[发起认证](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/start-authentication)。
 6. 当订阅的生物认证结果获取到后，将数字盾密码认证结果和生物特征认证结果统一整合，发起生物特征绑定请求。
 
    ```
@@ -87,5 +87,5 @@ format: md
      let authToken = newBioAuthToken.authToken as Uint8Array;
    });
    ```
-7. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts), 对返回生物特征绑定对应的authToken数据进行签名，并结束会话。
+7. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts), 对返回生物特征绑定对应的authToken数据进行签名，并结束会话。
 8. 应用可将签名获取的生物特征进行验签校验，并将生物特征credential信息与账号信息在服务器端绑定。

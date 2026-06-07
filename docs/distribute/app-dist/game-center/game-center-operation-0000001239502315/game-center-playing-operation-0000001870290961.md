@@ -1,7 +1,7 @@
 ---
 title: "在玩服务管理"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-playing-operation-0000001870290961
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-playing-operation-0000001870290961
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 ## 前提条件
 
 * 您已成功[创建游戏](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717)，支持设备为“手机”。
-* 使用[内容场景管理](#section66591944194716)功能需已[开通游戏版块](https://developer.huawei.com/consumer/cn/doc/app/game-center-community-operation-0000001194305462)。
+* 使用[内容场景管理](#section66591944194716)功能需已[开通游戏版块](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)。
 
 ## 在玩页面搭建流程
 
@@ -138,7 +138,7 @@ format: md
    | 参数 | | 说明 |
    | --- | --- | --- |
    | 头图素材 | | 头图素材要求如下：  * 格式：JPG、JPEG、PNG * 尺寸：宽高比16:9，建议1280\*720px * 大小：200KB以内 * 图片需要做蒙层处理，蒙层占卡片1/2高，与卡片底对齐，由上至下100%不透明至0%不透明，示例及蒙层处理方式见下文 * 最多可上传1张图片 说明：  该素材可能会被其他资源位关联使用。 |
-   | 在玩服务内容区域 | | 点击“前往创建”进入魔方创意页面。  说明：  前往编辑并保存编辑页后，需要返回到当前页完成提交，否则修改不生效。具体魔方创意操作请参见[在玩服务魔方创意](https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-0000001865677220)。 |
+   | 在玩服务内容区域 | | 点击“前往创建”进入魔方创意页面。  说明：  前往编辑并保存编辑页后，需要返回到当前页完成提交，否则修改不生效。具体魔方创意操作请参见[在玩服务魔方创意](/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001865677220)。 |
 
    头图示例：
 
@@ -258,6 +258,6 @@ format: md
 
 ## 魔方创意
 
-在玩编辑页面点击“前往创建”会打开魔方创意页面，魔方创意指导手册请参见[在玩服务魔方创意](https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-0000001865677220)。
+在玩编辑页面点击“前往创建”会打开魔方创意页面，魔方创意指导手册请参见[在玩服务魔方创意](/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001865677220)。
 
 ![](./img/dac82c42df29.png)

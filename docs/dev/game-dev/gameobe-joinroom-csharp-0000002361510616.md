@@ -1,6 +1,6 @@
 ---
 title: "加入房间"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-joinroom-csharp-0000002361510616
+original_url: /docs/dev/game-dev/gameobe-joinroom-csharp-0000002361510616
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* 您已[初始化联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-csharp-0000002361510612)。
-* 玩家[已获取房间ID或房间短码](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-createjoinroom-csharp-0000002395350425#ZH-CN_TOPIC_0000002395350425__p178449471034)。
+* 您已[初始化联机对战SDK](/docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612)。
+* 玩家[已获取房间ID或房间短码](/docs/dev/game-dev/gameobe-createjoinroom-csharp-0000002395350425#ZH-CN_TOPIC_0000002395350425__p178449471034)。
 
 ## 开发步骤
 
@@ -18,7 +18,7 @@ format: md
 
    ![](./img/33de9827.png)
 
-   房主[创建房间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-createjoinroom-csharp-0000002395350425)成功后，会生成一个房间ID和一个房间短码，其他玩家可凭借此房间ID或房间短码加入房间。
+   房主[创建房间](/docs/dev/game-dev/gameobe-createjoinroom-csharp-0000002395350425)成功后，会生成一个房间ID和一个房间短码，其他玩家可凭借此房间ID或房间短码加入房间。
 
    * 根据房间ID加入房间。
 

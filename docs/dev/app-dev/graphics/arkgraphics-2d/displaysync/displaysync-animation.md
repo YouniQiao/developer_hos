@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "请求动画绘制帧率"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaysync-animation
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-animation
 format: md
 ---
 

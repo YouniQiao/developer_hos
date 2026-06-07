@@ -1,7 +1,7 @@
 ---
 format: md
 title: "打开工程，反复执行“Updating indexes”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-17
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-17
 ---
 
 

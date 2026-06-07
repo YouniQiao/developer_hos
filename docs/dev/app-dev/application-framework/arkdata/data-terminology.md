@@ -1,6 +1,6 @@
 ---
 title: "ArkData术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-terminology
+original_url: /docs/dev/app-dev/application-framework/arkdata/data-terminology
 format: md
 ---
 

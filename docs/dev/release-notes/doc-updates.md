@@ -1,7 +1,7 @@
 ---
 title: "文档变更说明"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/doc-updates
+original_url: /docs/dev/release-notes/doc-updates
 ---
 
 

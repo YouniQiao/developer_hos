@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "简单文本绘制与显示（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/simple-text-c
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/simple-text-c
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
 ## 开发步骤
 
-1. 创建Canvas画布对象，画布Canvas对象创建方法具体可见[画布的获取与绘制结果的显示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canvas-get-result-draw-c)。
+1. 创建Canvas画布对象，画布Canvas对象创建方法具体可见[画布的获取与绘制结果的显示](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-c)。
 2. 初始化段落样式，设置文本对齐方式为居中对齐。
 
    ```

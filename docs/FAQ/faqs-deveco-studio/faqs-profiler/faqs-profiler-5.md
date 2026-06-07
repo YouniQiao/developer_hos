@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Profiler录制Allocation没有Native信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-5
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-5
 ---
 
 

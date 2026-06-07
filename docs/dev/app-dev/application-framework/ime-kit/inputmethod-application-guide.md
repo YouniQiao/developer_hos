@@ -1,6 +1,6 @@
 ---
 title: "实现一个输入法应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide
+original_url: /docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide
 format: md
 ---
 
@@ -950,7 +950,7 @@ format: md
      ]
    }
    ```
-6. 在工程Module对应的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中注册InputMethodExtensionAbility，type标签需要设置为“inputMethod”，srcEntry标签表示当前InputMethodExtensionAbility组件所对应的代码路径。
+6. 在工程Module对应的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中注册InputMethodExtensionAbility，type标签需要设置为“inputMethod”，srcEntry标签表示当前InputMethodExtensionAbility组件所对应的代码路径。
 
    ```
    "extensionAbilities": [

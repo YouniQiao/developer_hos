@@ -1,13 +1,13 @@
 ---
 title: "消息摘要计算SHA3-256(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-sha3-ndk
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-dev/crypto-generate-message-digest-sha3-ndk
 format: md
 ---
 
 
 从API version 22开始，算法库支持使用该算法进行摘要计算操作。
 
-对应的算法规格请查看[消息摘要计算算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-message-digest-overview#支持的算法与规格)。
+对应的算法规格请查看[消息摘要计算算法规格](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-overview#支持的算法与规格)。
 
 ## 在CMake脚本中链接相关动态库
 

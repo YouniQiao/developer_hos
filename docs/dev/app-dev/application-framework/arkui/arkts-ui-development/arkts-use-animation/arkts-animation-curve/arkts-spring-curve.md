@@ -1,6 +1,6 @@
 ---
 title: "弹簧曲线"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-spring-curve
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-curve/arkts-spring-curve
 format: md
 ---
 
@@ -38,7 +38,7 @@ ArkUI提供了四种阻尼弹簧曲线接口。
   function springCurve(velocity: number, mass: number, stiffness: number, damping: number): ICurve;
   ```
 
-关于弹簧曲线完整的使用示例和参考效果如下，开发者也可参考[动画衔接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-animation-smoothing)，掌握使用responsiveSpringMotion和springMotion进行手势和动画之间的衔接。
+关于弹簧曲线完整的使用示例和参考效果如下，开发者也可参考[动画衔接](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-smoothing)，掌握使用responsiveSpringMotion和springMotion进行手势和动画之间的衔接。
 
 弹簧曲线的示例代码和效果如下。
 

@@ -1,7 +1,7 @@
 ---
 title: "@hw-stylistic/quotes"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-quotes-stylistic
+original_url: /docs/tools/coding-debug/ide-quotes-stylistic
 format: md
 ---
 

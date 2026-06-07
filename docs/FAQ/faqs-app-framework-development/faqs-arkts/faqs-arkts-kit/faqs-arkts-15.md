@@ -1,6 +1,6 @@
 ---
 title: "ArkTS中有类似Java中的System.arraycopy数组复制的方法吗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-15
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-15
 format: md
 ---
 

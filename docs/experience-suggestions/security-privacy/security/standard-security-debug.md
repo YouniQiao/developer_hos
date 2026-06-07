@@ -1,6 +1,6 @@
 ---
 title: "WebView安全"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-debug
+original_url: /docs/experience-suggestions/security-privacy/security/standard-security-debug
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section1113104054110) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section1113104054110) |
 
 |  |  |
 | --- | --- |
@@ -21,7 +21,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section4947114114317) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section4947114114317) |
 
 |  |  |
 | --- | --- |
@@ -29,7 +29,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机，穿戴 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section1256314434316) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section1256314434316) |
 
 |  |  |
 | --- | --- |
@@ -37,4 +37,4 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机，穿戴 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | 实现方案参考[最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-harmony-application-security#section12671987440) |
+| 说明 | 实现方案参考[最佳实践](/docs/security/security-encode#section12671987440) |

@@ -1,6 +1,6 @@
 ---
 title: "自定义绘制修改器 (DrawModifier)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-drawmodifier
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-draw/arkts-user-defined-extension-drawmodifier
 format: md
 ---
 
@@ -28,7 +28,7 @@ declare class DrawModifier {
 }
 ```
 
-DrawModifier可设置遮罩层前景（[drawOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawoverlay23)）、前景（[drawForeground](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawforeground20)）、内容前景（[drawFront](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawfront)）、内容（[drawContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawcontent)）和内容背景（[drawBehind](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawbehind)）的绘制方法，开发者需要重载这些方法，并通过[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-drawing-customization-on-canvas)的接口进行自定义绘制。自定义绘制层级图如下所示。
+DrawModifier可设置遮罩层前景（[drawOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawoverlay23)）、前景（[drawForeground](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawforeground20)）、内容前景（[drawFront](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawfront)）、内容（[drawContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawcontent)）和内容背景（[drawBehind](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-draw-modifier#drawbehind)）的绘制方法，开发者需要重载这些方法，并通过[Canvas](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-draw/arkts-drawing-customization-on-canvas)的接口进行自定义绘制。自定义绘制层级图如下所示。
 
 ![](./img/8bbe5cbd.png)
 
@@ -40,7 +40,7 @@ DrawModifier还提供主动触发重绘的方法[invalidate](https://developer.h
 * drawContent方法会替换组件原本的内容绘制函数。
 * drawForeground方法从API version 20开始支持。
 * drawOverlay方法从API version 23开始支持。
-* NDK的自定义绘制能力和示例请参考[自定义绘制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-draw)。
+* NDK的自定义绘制能力和示例请参考[自定义绘制](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-user-defined-draw)。
 
 ## 通过drawFront、drawContent、drawBehind进行自定义绘制
 

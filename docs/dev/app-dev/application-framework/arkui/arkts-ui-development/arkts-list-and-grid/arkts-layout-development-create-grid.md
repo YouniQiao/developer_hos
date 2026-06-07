@@ -1,6 +1,6 @@
 ---
 title: "创建网格 (Grid/GridItem)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-grid
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-grid
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 网格布局是由“行”和“列”分割的单元格所组成，通过指定“项目”所在的单元格做出各种各样的布局。网格布局具有较强的页面均分能力，子组件占比控制能力，是一种重要自适应布局，其使用场景有九宫格图片展示、日历、计算器等。
 
-ArkUI提供了[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)容器组件和子组件[GridItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-griditem)，用于构建网格布局。Grid用于设置网格布局相关参数，GridItem定义子组件相关特征。Grid组件支持使用[条件渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse)、[循环渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)、[懒加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)等方式生成子组件。
+ArkUI提供了[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)容器组件和子组件[GridItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-griditem)，用于构建网格布局。Grid用于设置网格布局相关参数，GridItem定义子组件相关特征。Grid组件支持使用[条件渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse)、[循环渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)、[懒加载](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)等方式生成子组件。
 
 ![](./img/fc66878e.png)
 
@@ -406,15 +406,15 @@ Column({ space: 5 }){
 ![](./img/a8192d24.png)
 
 * 滚动条组件[ScrollBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-scrollbar)，还可配合其他可滚动组件使用，如[ArcList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclist)、[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)、[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)、[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)。
-* 在圆形屏幕设备上，[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)可以与弧形滚动条组件[ArcScrollBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-arcscrollbar)配合使用为网格添加弧形外置滚动条，使用方式可参考[创建弧形列表 (ArcList)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-arclist)的[添加外置滚动条ArcScrollBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-arclist#添加外置滚动条arcscrollbar)章节。
+* 在圆形屏幕设备上，[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)可以与弧形滚动条组件[ArcScrollBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-arcscrollbar)配合使用为网格添加弧形外置滚动条，使用方式可参考[创建弧形列表 (ArcList)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-arclist)的[添加外置滚动条ArcScrollBar](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-arclist#添加外置滚动条arcscrollbar)章节。
 
 ## 性能优化
 
-与[长列表的处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-list#长列表的处理)类似，[循环渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)适用于数据量较小的布局场景，当构建具有大量网格项的可滚动网格布局时，推荐使用[数据懒加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)方式实现按需迭代加载数据，从而提升网格性能。
+与[长列表的处理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-list#长列表的处理)类似，[循环渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)适用于数据量较小的布局场景，当构建具有大量网格项的可滚动网格布局时，推荐使用[数据懒加载](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)方式实现按需迭代加载数据，从而提升网格性能。
 
-关于按需加载优化的具体实现可参考[数据懒加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)章节中的示例。
+关于按需加载优化的具体实现可参考[数据懒加载](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)章节中的示例。
 
-当使用懒加载方式渲染网格时，为了更好的滚动体验，减少滑动时出现白块，Grid组件中也可通过[cachedCount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#cachedcount)属性设置GridItem的预加载数量，只在懒加载[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)中生效。
+当使用懒加载方式渲染网格时，为了更好的滚动体验，减少滑动时出现白块，Grid组件中也可通过[cachedCount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid#cachedcount)属性设置GridItem的预加载数量，只在懒加载[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)中生效。
 
 设置预加载数量后，会在Grid显示区域前后各缓存cachedCount\*列数个GridItem，超出显示和缓存范围的GridItem会被释放。
 

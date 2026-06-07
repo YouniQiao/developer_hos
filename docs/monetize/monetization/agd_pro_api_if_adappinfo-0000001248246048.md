@@ -1,7 +1,7 @@
 ---
 title: "AdAppInfo"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_adappinfo-0000001248246048
+original_url: /docs/monetize/monetization/agd_pro_api_if_adappinfo-0000001248246048
 format: md
 ---
 
@@ -28,11 +28,11 @@ format: md
 | stars | O | `String` | 应用评分 |
 | releaseDate | O | `String` | 发布日期。  精确到天  格式：*YYYY-MM-DD* |
 | memo | O | `String` | 内容介绍。 |
-| downloadLink | O | `String` | 下载应用的DeepLink地址。  仅请求中“downloadType = 2”时返回。未集成SDK的媒体可通过此链接来下载应用，下载体验由请求广告时的intallType指定。  协议头为“hiapplink://”。  不同地址的使用场景和优先级，详见[场景处理](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_scenario-handle-0000001262378977)章节。  新版本情况下，该字段支持优先返回自定义落地页的跳转地址，自定义落地可有效提升转化率，如需使用自定义落地页，请联系华为运营。 |
-| downloadParam | O | [DownloadParam](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_downloadparam-0000001294566329) | 用于调用AGD SDK下载应用的参数。  仅请求中“downloadType = 1”时返回。下载体验由SDK传参的intallType指定。  **当前仅面向华为内部媒体开放使用**。  说明：  通过SDK下载时该参数必填，且必须原值透传，否则影响鉴权以及打点计费。 |
+| downloadLink | O | `String` | 下载应用的DeepLink地址。  仅请求中“downloadType = 2”时返回。未集成SDK的媒体可通过此链接来下载应用，下载体验由请求广告时的intallType指定。  协议头为“hiapplink://”。  不同地址的使用场景和优先级，详见[场景处理](/docs/monetize/monetization/agd_pro_api_scenario-handle-0000001262378977)章节。  新版本情况下，该字段支持优先返回自定义落地页的跳转地址，自定义落地可有效提升转化率，如需使用自定义落地页，请联系华为运营。 |
+| downloadParam | O | [DownloadParam](/docs/monetize/monetization/agd_pro_api_if_downloadparam-0000001294566329) | 用于调用AGD SDK下载应用的参数。  仅请求中“downloadType = 1”时返回。下载体验由SDK传参的intallType指定。  **当前仅面向华为内部媒体开放使用**。  说明：  通过SDK下载时该参数必填，且必须原值透传，否则影响鉴权以及打点计费。 |
 | adWapUrl | O | `String` | 广告主指定的点击H5跳转地址。  长度最大为1024。 |
 | adDeepLink | O | `String` | 广告主指定的点击DeepLink跳转地址。  长度最大为1024。 |
 | clickWapUrl | O | `String` | 应用详情页的H5地址。  长度最大为1024。 |
 | clickDeepLink | O | `String` | 应用在AG内的标准详情页DeepLink地址。  协议头为“hiapp://”。  长度最大为1024。  新版本情况下，该字段支持优先返回自定义落地页的跳转地址，自定义落地可有效提升转化率，如需使用自定义落地页，请联系华为运营。 |
 | privacyUrl | O | `String` | 隐私政策。 |
-| permission | O | [AppPermission](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_apppermission-0000001437888421) | 应用权限。 |
+| permission | O | [AppPermission](/docs/monetize/monetization/agd_pro_api_if_apppermission-0000001437888421) | 应用权限。 |

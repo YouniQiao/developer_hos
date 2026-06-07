@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/no-extra-parens"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-extra-parens
+original_url: /docs/tools/coding-debug/ide_no-extra-parens
 format: md
 ---
 

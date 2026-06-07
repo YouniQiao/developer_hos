@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "新增存储区"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-add-zone
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-zone
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 前提条件
 
-已[开通云数据库服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-enable-database)。
+已[开通云数据库服务](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-database)。
 
 ## 操作步骤
 

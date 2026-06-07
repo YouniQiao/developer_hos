@@ -1,6 +1,6 @@
 ---
 title: "hdc"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc
+original_url: /docs/dev/app-dev/system/hdc
 format: md
 ---
 
@@ -168,27 +168,27 @@ hdc支持和其他调试工具配套使用，工具列表如下：
 
 | 命令 | 说明 |
 | --- | --- |
-| [aa](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool) | 应用调试工具 |
-| [anm](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/anm-tool) | 通知管理工具 |
-| [atm](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/atm-tool) | 程序访问控制管理工具 |
-| [bm](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool) | 包管理工具 |
-| [cem](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cem-tool) | 公共事件管理工具 |
-| [devicedebug](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicedebug-tool) | 调试应用发送信号工具 |
-| [edm](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/edm-tool) | 企业设备管理工具 |
-| [hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper) | 系统信息导出工具 |
-| [hilog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog) | 日志管理工具 |
-| [hiperf](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiperf) | 性能分析工具 |
-| [hitrace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitrace) | 系统打点及采集工具 |
-| [mediatool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mediatool) | 媒体资源库工具 |
-| [param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/param-tool) | 操作系统参数管理工具 |
-| [power-shell](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-shell) | 设备电源状态转换工具 |
-| [rawheap-translator](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawheap-translator) | rawheap文件解析工具 |
-| [uinput](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uinput) | 模拟操作工具 |
-| [arkdata](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkdata-debug-tool) | arkdata数据库调试工具 |
-| [sqlite](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sqlite-database-debug-tool) | SQLite调试工具指导 |
-| [wukong](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wukong-guidelines) | wukong稳定性工具 |
-| [UItest](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uitest-guidelines) | UI测试框架 |
-| [HiSmartPerf Device daemon](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/smartperf-guidelines#hismartperf-device-daemon端) | HiSmartPerf Device-daemon端工具命令 |
+| [aa](/docs/dev/app-dev/system/aa-tool) | 应用调试工具 |
+| [anm](/docs/dev/app-dev/system/anm-tool) | 通知管理工具 |
+| [atm](/docs/dev/app-dev/system/atm-tool) | 程序访问控制管理工具 |
+| [bm](/docs/dev/app-dev/system/bm-tool) | 包管理工具 |
+| [cem](/docs/dev/app-dev/system/cem-tool) | 公共事件管理工具 |
+| [devicedebug](/docs/dev/app-dev/system/devicedebug-tool) | 调试应用发送信号工具 |
+| [edm](/docs/dev/app-dev/system/edm-tool) | 企业设备管理工具 |
+| [hidumper](/docs/dev/app-dev/system/hidumper) | 系统信息导出工具 |
+| [hilog](/docs/dev/app-dev/system/hilog) | 日志管理工具 |
+| [hiperf](/docs/dev/app-dev/system/hiperf) | 性能分析工具 |
+| [hitrace](/docs/dev/app-dev/system/hitrace) | 系统打点及采集工具 |
+| [mediatool](/docs/dev/app-dev/system/mediatool) | 媒体资源库工具 |
+| [param](/docs/dev/app-dev/system/param-tool) | 操作系统参数管理工具 |
+| [power-shell](/docs/dev/app-dev/system/power-shell) | 设备电源状态转换工具 |
+| [rawheap-translator](/docs/dev/app-dev/system/rawheap-translator) | rawheap文件解析工具 |
+| [uinput](/docs/dev/app-dev/system/uinput) | 模拟操作工具 |
+| [arkdata](/docs/dev/app-dev/application-framework/arkdata/arkdata-debug-tool) | arkdata数据库调试工具 |
+| [sqlite](/docs/dev/app-dev/application-framework/arkdata/sqlite-database-debug-tool) | SQLite调试工具指导 |
+| [wukong](/docs/dev/testing/test-service/wukong-guidelines) | wukong稳定性工具 |
+| [UItest](/docs/dev/testing/ut/arkxtest-guidelines/uitest-guidelines) | UI测试框架 |
+| [HiSmartPerf Device daemon](/docs/dev/testing/test-service/smartperf-guidelines#hismartperf-device-daemon端) | HiSmartPerf Device-daemon端工具命令 |
 
 ### 获取帮助
 
@@ -576,7 +576,7 @@ hdc shell [-b bundlename] [command]
 | 参数 | 说明 |
 | --- | --- |
 | -b bundlename | 3.1.0e版本新增参数。指定可调试应用包名，在可调试应用数据目录内，以非交互式模式执行命令。  [命令行方式访问应用沙箱](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer#section48216711204)。  此参数当前仅支持以非交互式模式执行命令，不支持缺省command参数执行命令进入交互式shell会话。  未配置此参数时，默认执行路径为系统根目录。 |
-| command | 需要在设备上执行的单次命令，不同类型或版本的系统支持的command命令有所差异，可以通过hdc shell ls /system/bin查阅支持的命令列表。当前大多数命令都是由[toybox](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/toybox)提供，可通过 hdc shell toybox --help 获取命令帮助。  缺省该参数，hdc将会启动一个交互式的shell会话，开发者可以在命令提示符下输入命令，比如 ls、cd、pwd 等。 |
+| command | 需要在设备上执行的单次命令，不同类型或版本的系统支持的command命令有所差异，可以通过hdc shell ls /system/bin查阅支持的命令列表。当前大多数命令都是由[toybox](/docs/dev/app-dev/system/toybox)提供，可通过 hdc shell toybox --help 获取命令帮助。  缺省该参数，hdc将会启动一个交互式的shell会话，开发者可以在命令提示符下输入命令，比如 ls、cd、pwd 等。 |
 
 ![](./img/8cc42ccf.png)
 
@@ -626,7 +626,7 @@ $ hdc shell -b com.example.myapplication ls data/storage/el2/base/
 
 ### 安装应用文件
 
-应用安装功能在设备端集成bm模块[安装命令（install）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#安装命令install)，简化了安装流程，开发者可以在电脑端直接执行命令完成应用安装。命令格式如下：
+应用安装功能在设备端集成bm模块[安装命令（install）](/docs/dev/app-dev/system/bm-tool#安装命令install)，简化了安装流程，开发者可以在电脑端直接执行命令完成应用安装。命令格式如下：
 
 ```
 hdc install [-cwd path|-r|-s|-w waitingTime|-u userId|-p|-g|-h] src
@@ -636,15 +636,15 @@ hdc install [-cwd path|-r|-s|-w waitingTime|-u userId|-p|-g|-h] src
 
 | 参数名 | 说明 |
 | --- | --- |
-| src | 应用安装包的文件路径。支持安装[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)、应用内[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)。从API version 22开始，支持安装[APP包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-glossary#app)。 |
+| src | 应用安装包的文件路径。支持安装[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)、应用内[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)。从API version 22开始，支持安装[APP包](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-glossary#app)。 |
 | -cwd | 修改工作目录。  用于在应用安装时，切换src到指定path。例如，初始安装应用为test.hap，所在目录为C:\，实际安装应用文件路径为C:\test.hap；如果使用-cwd "D:\"，实际安装应用文件路径为D:\test.hap。 |
 | -r | 可选参数，覆盖安装一个HAP/HSP。默认缺省，缺省时表示覆盖安装。 |
 | -s | 安装应用HSP时为必选参数，其他场景为可选参数。用于指定待安装应用间HSP的路径。指定目录的时候，每个路径目录下只能存在一个HSP。 |
 | -w | 可选参数，安装HAP时指定bm工具等待时间，最短的等待时长为180s，最长的等待时长为600s，默认缺省为180s。 |
-| -u | 可选参数，指定[用户](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#userid)，默认在当前活跃用户下安装应用。 |
+| -u | 可选参数，指定[用户](/docs/dev/app-dev/system/bm-tool#userid)，默认在当前活跃用户下安装应用。 |
 | -p | 可选参数，指定待安装的HAP/HSP路径，多HAP/HSP应用可指定多HAP/HSP所在文件夹路径。从API version 22开始，支持指定待安装的APP路径，也可指定只存在一个APP的文件夹路径。 |
-| -g | 可选参数，安装调试包时支持[用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#user_grant用户授权)和[手动设置授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#manual_settings手动设置授权)。  仅对[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#debug版本应用)生效，debug应用更新为release应用时取消授予的用户授权和手动设置授权。  **说明**：从API version 24开始，支持该参数。 |
-| -h | 可选参数，显示bm模块[安装命令（install）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#安装命令install)帮助信息。 |
+| -g | 可选参数，安装调试包时支持[用户授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#user_grant用户授权)和[手动设置授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#manual_settings手动设置授权)。  仅对[debug版本应用](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#debug版本应用)生效，debug应用更新为release应用时取消授予的用户授权和手动设置授权。  **说明**：从API version 24开始，支持该参数。 |
+| -h | 可选参数，显示bm模块[安装命令（install）](/docs/dev/app-dev/system/bm-tool#安装命令install)帮助信息。 |
 
 **返回信息**：
 
@@ -703,7 +703,7 @@ AppMod finish
 
 ### 卸载应用
 
-应用卸载功能在设备端集成bm模块[卸载命令（uninstall）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#卸载命令uninstall)，简化了卸载流程，开发者可以在电脑端直接执行命令完成应用卸载。命令格式如下：
+应用卸载功能在设备端集成bm模块[卸载命令（uninstall）](/docs/dev/app-dev/system/bm-tool#卸载命令uninstall)，简化了卸载流程，开发者可以在电脑端直接执行命令完成应用卸载。命令格式如下：
 
 ```
 hdc uninstall [-n|-k|-s|-h] bundlename
@@ -717,7 +717,7 @@ hdc uninstall [-n|-k|-s|-h] bundlename
 | -n | 可选参数，指定Bundle名称卸载应用。 |
 | -k | 可选参数，卸载应用时保存应用数据。默认卸载应用时不保存应用数据。 |
 | -s | 根据场景判断，卸载应用间HSP时必选参数，其他场景为可选参数。卸载指定的共享库。 |
-| -h | 可选参数，bm模块[卸载命令（uninstall）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#卸载命令uninstall)帮助信息。 |
+| -h | 可选参数，bm模块[卸载命令（uninstall）](/docs/dev/app-dev/system/bm-tool#卸载命令uninstall)帮助信息。 |
 
 **返回信息**：
 
@@ -770,7 +770,7 @@ hdc file send [-a|-sync|-z|-m|-cwd path|-b bundlename] SOURCE DEST
 | 参数名 | 说明 |
 | --- | --- |
 | SOURCE | 本地待传输的文件路径。 |
-| DEST | 远程目标文件路径。  从API version 21开始，媒体库文件支持通过hdc进行部分操作（低版本使用会提示[Fail]Error opening file: ...）。  媒体库文件路径：/mnt/data/\<uid\>/media\_fuse/Photo/目录及其子目录，\<uid\>为当前用户的id。  通过hdc对媒体库操作指导参见[mediatool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mediatool#hdc命令)。 |
+| DEST | 远程目标文件路径。  从API version 21开始，媒体库文件支持通过hdc进行部分操作（低版本使用会提示[Fail]Error opening file: ...）。  媒体库文件路径：/mnt/data/\<uid\>/media\_fuse/Photo/目录及其子目录，\<uid\>为当前用户的id。  通过hdc对媒体库操作指导参见[mediatool](/docs/dev/app-dev/system/mediatool#hdc命令)。 |
 | -a | 保留文件修改时间戳。 |
 | -sync | 只传输文件mtime有更新的文件。  mtime（modified timestamp）：修改后的时间戳。 |
 | -z | 通过LZ4格式压缩传输，此功能未开放，请勿使用。 |
@@ -815,7 +815,7 @@ hdc file recv [-a|-sync|-z|-m|-cwd path|-b bundlename] DEST SOURCE
 | 参数名 | 说明 |
 | --- | --- |
 | SOURCE | 本地待接收的文件路径。 |
-| DEST | 远程待传输的文件路径。  从API version 21开始，媒体库文件支持通过hdc进行部分操作（低版本使用会提示[Fail]Error opening file: ...）。  媒体库文件路径：/mnt/data/\<uid\>/media\_fuse/Photo/目录及其子目录，\<uid\>为当前用户的id。  媒体库操作更多信息参见[mediatool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mediatool#hdc命令)。 |
+| DEST | 远程待传输的文件路径。  从API version 21开始，媒体库文件支持通过hdc进行部分操作（低版本使用会提示[Fail]Error opening file: ...）。  媒体库文件路径：/mnt/data/\<uid\>/media\_fuse/Photo/目录及其子目录，\<uid\>为当前用户的id。  媒体库操作更多信息参见[mediatool](/docs/dev/app-dev/system/mediatool#hdc命令)。 |
 | -a | 保留文件修改时间戳。 |
 | -sync | 只传输文件mtime有更新的文件。  mtime（modified timestamp）：修改后的时间戳。 |
 | -z | 通过LZ4格式压缩传输，此功能未开放，请勿使用。 |
@@ -1826,7 +1826,7 @@ hdc命令执行后未输出预期内容，可能涉及以下场景。
 
 ![](./img/3c301ce1.png)
 
-更多常见问题处理可见[FAQ](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit)。
+更多常见问题处理可见[FAQ](/docs/FAQ/faqs-performance-analysis-kit)。
 
 ## hdc错误码
 
@@ -2193,7 +2193,7 @@ Invalid bundle name: bundlename.
      hdc shell aa start -b com.example.myapplication -a EntryAbility
      ```
 
-     更多详细用法请参考[aa命令介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool)。
+     更多详细用法请参考[aa命令介绍](/docs/dev/app-dev/system/aa-tool)。
 
 ### E003002 命令行指定的参数不支持交互模式
 

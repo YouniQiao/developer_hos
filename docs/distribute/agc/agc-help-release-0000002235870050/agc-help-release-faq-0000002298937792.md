@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-faq-0000002298937792
+original_url: /docs/distribute/agc/agc-help-release-0000002235870050/agc-help-release-faq-0000002298937792
 format: md
 ---
 
@@ -28,7 +28,7 @@ format: md
 
 #### 如果不使用应用加密能力，还能采取什么手段来保护我的代码资产？
 
-使能混淆能力、使能三方安全加固能力等，可以参考：[应用资产保护设计](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-asset-protection-design#section24320461547)。
+使能混淆能力、使能三方安全加固能力等，可以参考：[应用资产保护设计](/docs/security/asset-protection#section24320461547)。
 
 #### 应用加密会对我的应用包产生什么影响？
 

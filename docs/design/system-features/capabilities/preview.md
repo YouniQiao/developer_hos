@@ -1,7 +1,7 @@
 ---
 title: 预览
 sidebar_label: 预览
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/preview-0000001957112409
+original_url: /docs/design/system-features/capabilities/preview
 format: md
 ---
 

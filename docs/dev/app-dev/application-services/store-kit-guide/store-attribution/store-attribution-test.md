@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接入调试功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-test
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-test
 format: md
 ---
 

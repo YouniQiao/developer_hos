@@ -1,7 +1,7 @@
 ---
 title: "工作流版本管理"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/workflow-version-management-0000002503518822
+original_url: /docs/distribute/xiaoyi/development-workflow-0000002435989628/workflow-version-management-0000002503518822
 format: md
 ---
 

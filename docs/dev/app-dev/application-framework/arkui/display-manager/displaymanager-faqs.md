@@ -1,6 +1,6 @@
 ---
 title: "屏幕开发常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaymanager-faqs
+original_url: /docs/dev/app-dev/application-framework/arkui/display-manager/displaymanager-faqs
 format: md
 ---
 
@@ -21,11 +21,11 @@ format: md
    on('foldDisplayModeChange')接口用于实时监听设备显示状态的变化，因此会返回包括5在内的所有实际显示模式值。当监听到值为5时，可以判断设备已进入全展开状态。
 3. 调用getFoldDisplayMode()接口不返回5的原因
 
-   为了降低多设备适配的开发成本，不与设备形态绑定，因此getFoldDisplayMode()接口不返回5，开发者需要通过统一的断点管理机制来适配不同显示状态，采用“[一次开发，多端部署](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)”方案进行开发，简化布局适配的开发流程。
+   为了降低多设备适配的开发成本，不与设备形态绑定，因此getFoldDisplayMode()接口不返回5，开发者需要通过统一的断点管理机制来适配不同显示状态，采用“[一次开发，多端部署](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)”方案进行开发，简化布局适配的开发流程。
 
 **开发建议**
 
-虽然通过监听事件可以获取到FoldDisplayMode为5并进行特定处理，但为了更好的开发效率和兼容性，建议使用“[一次开发，多端部署](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)”方案进行UI布局适配，其中三折叠应用开发可见[三折叠应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-matext-guide)。这样不仅能减少重复开发工作，还能确保应用在多种设备上的一致性和稳定性。
+虽然通过监听事件可以获取到FoldDisplayMode为5并进行特定处理，但为了更好的开发效率和兼容性，建议使用“[一次开发，多端部署](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)”方案进行UI布局适配，其中三折叠应用开发可见[三折叠应用开发](/docs/dev/app-dev/multi-device/bpta-matext-guide)。这样不仅能减少重复开发工作，还能确保应用在多种设备上的一致性和稳定性。
 
 ## 折叠PC中，如何获取悬停态时下半屏幕的Display对象
 

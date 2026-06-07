@@ -1,6 +1,6 @@
 ---
 title: "USB服务开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usbhost-overview
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-dev/usbhost-overview
 format: md
 ---
 

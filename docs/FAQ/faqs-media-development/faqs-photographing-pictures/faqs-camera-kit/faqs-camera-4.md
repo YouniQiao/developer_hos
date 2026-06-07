@@ -1,6 +1,6 @@
 ---
 title: "如何检测当前相机服务的状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-4
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-4
 format: md
 ---
 

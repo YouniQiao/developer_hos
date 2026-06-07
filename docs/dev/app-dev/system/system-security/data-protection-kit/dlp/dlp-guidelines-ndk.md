@@ -1,6 +1,6 @@
 ---
 title: "数据防泄漏服务开发指导(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dlp-guidelines-ndk
+original_url: /docs/dev/app-dev/system/system-security/data-protection-kit/dlp/dlp-guidelines-ndk
 format: md
 ---
 

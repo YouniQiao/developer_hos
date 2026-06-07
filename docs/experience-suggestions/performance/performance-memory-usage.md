@@ -1,6 +1,6 @@
 ---
 title: "内存占用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-memory-usage
+original_url: /docs/experience-suggestions/performance/performance-memory-usage
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "海量点图层"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-mass-point
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-mass-point
 format: md
 ---
 

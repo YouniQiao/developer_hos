@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-preparations
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-preparations
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 申请权限
 
-开发者需要根据实际场景申请对应权限，请保证符合[权限使用的基本原则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限使用的基本原则)。然后参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)声明对应权限。
+开发者需要根据实际场景申请对应权限，请保证符合[权限使用的基本原则](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限使用的基本原则)。然后参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)声明对应权限。
 
 | 权限 | 使用场景 |
 | --- | --- |

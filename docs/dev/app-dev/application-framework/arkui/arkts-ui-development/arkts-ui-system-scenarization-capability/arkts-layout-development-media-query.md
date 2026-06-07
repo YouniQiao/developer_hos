@@ -1,6 +1,6 @@
 ---
 title: "媒体查询 (@ohos.mediaquery)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-media-query
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-layout-development-media-query
 format: md
 ---
 

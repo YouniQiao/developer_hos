@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "显示我的位置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-location
 format: md
 ---
 
@@ -33,7 +33,7 @@ format: md
 
 1. 在启用“我的位置”功能前，开发者应确保应用已申请并获得用户定位权限，以便正确显示用户当前位置。
 
-   申请ohos.permission.LOCATION和ohos.permission.APPROXIMATELY\_LOCATION权限，您需要在module.json5配置文件中声明所需要的权限，具体可参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+   申请ohos.permission.LOCATION和ohos.permission.APPROXIMATELY\_LOCATION权限，您需要在module.json5配置文件中声明所需要的权限，具体可参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
    ```
    {

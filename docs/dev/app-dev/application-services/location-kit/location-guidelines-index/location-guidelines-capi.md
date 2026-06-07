@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取设备的位置信息开发指导(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-guidelines-capi
+original_url: /docs/dev/app-dev/application-services/location-kit/location-guidelines-index/location-guidelines-capi
 format: md
 ---
 
@@ -31,7 +31,7 @@ format: md
 1. 新建一个Native C++工程。
 
    ![](./img/ffbdeb8b.png)
-2. 获取设备的位置信息，需要有位置权限，位置权限申请的方法和步骤见[申请位置权限开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-permission-guidelines)。
+2. 获取设备的位置信息，需要有位置权限，位置权限申请的方法和步骤见[申请位置权限开发指导](/docs/dev/app-dev/application-services/location-kit/location-preparation/location-permission-guidelines)。
 3. CMakeLists.txt文件中引入动态依赖库。
 
    ```

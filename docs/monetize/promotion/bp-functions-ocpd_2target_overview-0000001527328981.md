@@ -1,7 +1,7 @@
 ---
 title: "功能介绍"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd_2target_overview-0000001527328981
+original_url: /docs/monetize/promotion/bp-functions-ocpd_2target_overview-0000001527328981
 format: md
 ---
 

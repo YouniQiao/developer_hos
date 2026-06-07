@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS是否支持多继承"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-95
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-95
 ---
 
 

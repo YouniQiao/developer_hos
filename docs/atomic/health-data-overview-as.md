@@ -1,6 +1,6 @@
 ---
 title: "数据开放总览"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-data-overview-as
+original_url: /docs/dev/atomic-dev/health-harmonyos-as/health-data-overview-as
 format: md
 ---
 
@@ -13,8 +13,8 @@ format: md
 
 | 分类明细 | 数据子类 | 数据项 | 开放等级 | 数据及时性 | 支持读 | 支持写 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 采样数据 | [日常活动](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-daily-activities-as) | 步数、热量、距离等日常活动数据 | ![](./img/c3e0c628.png) | 小时级 | Y | N |
+| 采样数据 | [日常活动](/docs/dev/atomic-dev/health-samplepoint-as/health-daily-activities-as) | 步数、热量、距离等日常活动数据 | ![](./img/c3e0c628.png) | 小时级 | Y | N |
 
 ![](./img/dc22b871.png)
 
-相关数据类型对应权限参考[权限说明](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-permission-description-as)。
+相关数据类型对应权限参考[权限说明](/docs/dev/atomic-dev/health-data-type-as/health-permission-description-as)。

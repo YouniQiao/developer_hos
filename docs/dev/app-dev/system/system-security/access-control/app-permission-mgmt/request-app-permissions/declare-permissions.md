@@ -1,6 +1,6 @@
 ---
 title: "声明权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions
 format: md
 ---
 
@@ -9,23 +9,23 @@ format: md
 
 ## 在配置文件中声明权限
 
-应用必须在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)的requestPermissions标签中声明权限。
+应用必须在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)的requestPermissions标签中声明权限。
 
 | 属性 | 含义 | 数据类型 | 取值范围 |
 | --- | --- | --- | --- |
-| name | 需要使用的权限名称。 | 字符串 | **必填**，需为系统已定义的权限，取值范围请参考[应用权限列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permissions)。 |
-| reason | 申请权限的原因。 | 字符串 | **可选填写**，该字段用于应用上架校验，申请user\_grant/manual\_settings权限时必填并需多语种适配。  格式为$string: \*\*\*。string资源引用需要在string.json文件配置标签"name": "reason"，配置样例可参考[资源文件示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源文件示例)。  reason填写内容可参考[权限使用理由的文案内容规范](#权限使用理由的文案内容规范)。 |
+| name | 需要使用的权限名称。 | 字符串 | **必填**，需为系统已定义的权限，取值范围请参考[应用权限列表](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions)。 |
+| reason | 申请权限的原因。 | 字符串 | **可选填写**，该字段用于应用上架校验，申请user\_grant/manual\_settings权限时必填并需多语种适配。  格式为$string: \*\*\*。string资源引用需要在string.json文件配置标签"name": "reason"，配置样例可参考[资源文件示例](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源文件示例)。  reason填写内容可参考[权限使用理由的文案内容规范](#权限使用理由的文案内容规范)。 |
 | usedScene | 权限使用的场景，该字段用于应用上架校验。包括abilities和when两个子项。  - abilities：使用权限的UIAbility或者ExtensionAbility组件的名称。  - when：调用时机。 | 对象 | **申请user\_grant/manual\_settings权限时，usedScene必填，其他情况下选填。**  - abilities：可以配置为多个UIAbility或者ExtensionAbility名称的字符串数组。  - when：配置此字段，只能填入固定值**inuse**（使用时）或**always**（始终），不能为空。 |
 
 ![](./img/8c18025b.png)
 
-在多HAP场景下，已在[entry](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)模块中声明的权限，无需在[feature](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)模块中重复添加，权限将在整个应用中生效。
+在多HAP场景下，已在[entry](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)模块中声明的权限，无需在[feature](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)模块中重复添加，权限将在整个应用中生效。
 
-同理，在[feature](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)模块中已声明的权限，在[entry](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)模块也无需重复添加。
+同理，在[feature](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)模块中已声明的权限，在[entry](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)模块也无需重复添加。
 
 ## 声明样例
 
-在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)的requestPermissions标签中声明权限。
+在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)的requestPermissions标签中声明权限。
 
 ![](./img/7a0e84c1.png)
 
@@ -74,7 +74,7 @@ format: md
 
 当申请user\_grant/manual\_settings权限时，字段reason（申请权限的原因）必填。开发者需在应用配置文件中配置每个需要的权限。
 
-但在实际向用户弹窗申请授权时，user\_grant权限将会以[权限组](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限组和子权限)的形式向用户申请。当前支持的权限组请查看[应用权限组列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-group-list)。
+但在实际向用户弹窗申请授权时，user\_grant权限将会以[权限组](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限组和子权限)的形式向用户申请。当前支持的权限组请查看[应用权限组列表](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-group-list)。
 
 ### reason字段的内容写作规范及建议
 

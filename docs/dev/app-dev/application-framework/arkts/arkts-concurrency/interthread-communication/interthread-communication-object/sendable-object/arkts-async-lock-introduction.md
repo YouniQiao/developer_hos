@@ -1,6 +1,6 @@
 ---
 title: "异步锁"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-async-lock-introduction
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-async-lock-introduction
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ## 使用示例
 
-为了防止[@Sendable共享对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)在不同线程中修改共享变量导致的竞争问题，可以使用异步锁保护数据。示例如下：
+为了防止[@Sendable共享对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)在不同线程中修改共享变量导致的竞争问题，可以使用异步锁保护数据。示例如下：
 
 ```
 import { ArkTSUtils, taskpool } from '@kit.ArkTS';

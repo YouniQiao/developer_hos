@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "拍照(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 拍照是相机的重要功能之一，拍照模块基于相机复杂的逻辑，为了保证用户拍出的照片质量，在中间步骤可以设置分辨率、闪光灯、焦距、照片质量及旋转角度等信息。
 
-目前相机开发有两种相机拍照方案，分别是相机[分段式拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-deferred-capture)和相机单段式拍照（**本文将以单段式拍照为基础进行说明**）。
+目前相机开发有两种相机拍照方案，分别是相机[分段式拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-deferred-capture)和相机单段式拍照（**本文将以单段式拍照为基础进行说明**）。
 
 * 分段式拍照是指相机拍照既可以输出低质量图用作缩略图，提升用户感知拍照速度，也可以使用高质量图保证最后的成图质量达到系统相机的水平。满足了图像处理算法的需求的同时，又不会阻塞前台的拍照速度，构筑相机性能竞争力，提升用户体验。
 * 单段式拍照是指在拍照过程中通过多帧融合以及多个底层算法处理之后返回一张高质量图片，所以Shot2See（用户点击拍照控件到在缩略图显示区域显示缩略图的过程）完成时延较长。此外，单段式拍照支持通过[高性能拍照](#高性能拍照)功能调整[画质优先策略](#画质优先策略)，以加快出图速度或提升图片质量。
@@ -49,9 +49,9 @@ format: md
    ```
 3. 设置拍照[on('photoAvailable')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photooutput#onphotoavailable11)的回调，并将拍照的buffer保存为图片。
 
-   Context获取方式请参考：[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+   Context获取方式请参考：[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
-   如需要在图库中看到所保存的图片、视频资源，需要将其保存到媒体库，保存方式请参考：[保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
+   如需要在图库中看到所保存的图片、视频资源，需要将其保存到媒体库，保存方式请参考：[保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
 
    需要在[photoOutput.on('photoAvailable')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photooutput#onphotoavailable11)接口获取到buffer时，将buffer在安全控件中保存到媒体库。
 
@@ -215,11 +215,11 @@ format: md
 
 ### 开发步骤
 
-高性能拍照相关接口需要在[会话管理(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management)流程的使能步骤中进行调用。
+高性能拍照相关接口需要在[会话管理(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management)流程的使能步骤中进行调用。
 
 具体调用时机如下：
 
-* 在[会话管理(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management)流程的使能步骤中的[commitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#commitconfig11)结束之后进行调用。
+* 在[会话管理(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management)流程的使能步骤中的[commitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#commitconfig11)结束之后进行调用。
 
   ```
   async function startSession(photoSession: camera.PhotoSession, cameraInput: camera.CameraInput, previewOutput: camera.PreviewOutput, photoOutput: camera.PhotoOutput): Promise<void> {
@@ -299,7 +299,7 @@ format: md
     }
   }
   ```
-* 在[会话管理(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management)流程的使能步骤中的[commitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#commitconfig11)之前调用。
+* 在[会话管理(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management)流程的使能步骤中的[commitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#commitconfig11)之前调用。
 
   ```
   async function startSession(photoSession: camera.PhotoSession, cameraInput: camera.CameraInput, previewOutput: camera.PreviewOutput, photoOutput: camera.PhotoOutput): Promise<void> {

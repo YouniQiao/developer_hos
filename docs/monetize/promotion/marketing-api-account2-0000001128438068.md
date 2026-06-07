@@ -1,7 +1,7 @@
 ---
 title: "获取用户信息"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-account2-0000001128438068
+original_url: /docs/monetize/promotion/marketing-api-account2-0000001128438068
 format: md
 ---
 

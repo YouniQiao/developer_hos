@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何监听窗口大小的变化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-197
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-197
 ---
 
 

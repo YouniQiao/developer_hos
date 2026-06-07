@@ -1,6 +1,6 @@
 ---
 title: "ArkTS侧如何接收Native侧的键值对进行修改并返回到Native侧"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-41
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-41
 format: md
 ---
 

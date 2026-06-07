@@ -1,7 +1,7 @@
 ---
 format: md
 title: "运行工程到本地模拟器，提示“Failed to get the device apiVersion”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-5
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-5
 ---
 
 

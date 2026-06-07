@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation
+original_url: /docs/dev/app-dev/media/photoaccesshelper-preparation
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 获取相册管理模块实例
 
-应用需要通过上下文[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage)和接口[getPhotoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-f#photoaccesshelpergetphotoaccesshelper)，获取相册管理模块实例，用于访问和修改相册中的媒体数据信息，如图片和视频。
+应用需要通过上下文[Context](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage)和接口[getPhotoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-f#photoaccesshelpergetphotoaccesshelper)，获取相册管理模块实例，用于访问和修改相册中的媒体数据信息，如图片和视频。
 
 **开发步骤**
 
@@ -47,7 +47,7 @@ struct Index {
 
 ## 申请相册管理模块功能相关权限
 
-相册管理模块的读写操作需要相应权限，在申请权限前，请保证符合[权限使用的基本原则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限使用的基本原则)。涉及的权限如下表。
+相册管理模块的读写操作需要相应权限，在申请权限前，请保证符合[权限使用的基本原则](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限使用的基本原则)。涉及的权限如下表。
 
 | 权限名 | 说明 | 授权方式 |
 | --- | --- | --- |
@@ -55,11 +55,11 @@ struct Index {
 | ohos.permission.WRITE\_IMAGEVIDEO | 允许应用读写媒体库的图片和视频媒体文件信息。 | user\_grant |
 | ohos.permission.MEDIA\_LOCATION | 允许应用访问用户媒体文件中的地理位置信息。 | user\_grant |
 
-以上权限的授权方式均为user\_grant（用户授权），即开发者在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中配置对应的权限后，需要使用接口[abilityAccessCtrl.requestPermissionsFromUser](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissionsfromuser9)去校验当前用户是否已授权。如果已授权，应用可以直接访问和修改目标对象；否则需要弹框向用户申请授权。
+以上权限的授权方式均为user\_grant（用户授权），即开发者在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中配置对应的权限后，需要使用接口[abilityAccessCtrl.requestPermissionsFromUser](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissionsfromuser9)去校验当前用户是否已授权。如果已授权，应用可以直接访问和修改目标对象；否则需要弹框向用户申请授权。
 
 **开发步骤**
 
-上述权限ohos.permission.READ\_IMAGEVIDEO和ohos.permission.WRITE\_IMAGEVIDEO为受控权限，通常是不允许三方应用申请的。如果有特殊场景需要使用，请提供相关申请材料到AppGallery Connect申请相应权限证书。申请前请参考[受限开放权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions)，确保应用符合可申请的场景。然后再参考[申请受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)，完成受限开放权限的申请。
+上述权限ohos.permission.READ\_IMAGEVIDEO和ohos.permission.WRITE\_IMAGEVIDEO为受控权限，通常是不允许三方应用申请的。如果有特殊场景需要使用，请提供相关申请材料到AppGallery Connect申请相应权限证书。申请前请参考[受限开放权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions)，确保应用符合可申请的场景。然后再参考[申请受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)，完成受限开放权限的申请。
 
 ![](./img/eaa24aba.png)
 

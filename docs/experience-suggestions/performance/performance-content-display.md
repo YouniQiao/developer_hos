@@ -1,6 +1,6 @@
 ---
 title: "内容显示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-content-display
+original_url: /docs/experience-suggestions/performance/performance-content-display
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，智慧屏，车机 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
 
 ### 应用内转场白屏时延
 
@@ -25,4 +25,4 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，智慧屏，车机 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |

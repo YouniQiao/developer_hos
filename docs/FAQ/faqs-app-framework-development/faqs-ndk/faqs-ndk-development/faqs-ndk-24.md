@@ -1,6 +1,6 @@
 ---
 title: "如何在Native侧获取APP版本信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-24
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-24
 format: md
 ---
 
@@ -43,7 +43,7 @@ struct Index {
 
 ArkTS侧传递数据到Native侧可参考链接：
 
-[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)
+[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)
 
 获取模块相关信息参考链接：
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS侧与Native侧如何进行map数据交互"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-6
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-6
 ---
 
 

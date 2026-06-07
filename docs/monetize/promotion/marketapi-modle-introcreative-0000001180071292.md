@@ -1,7 +1,7 @@
 ---
 title: "IntroCreative"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-introcreative-0000001180071292
+original_url: /docs/monetize/promotion/marketapi-modle-introcreative-0000001180071292
 format: md
 ---
 

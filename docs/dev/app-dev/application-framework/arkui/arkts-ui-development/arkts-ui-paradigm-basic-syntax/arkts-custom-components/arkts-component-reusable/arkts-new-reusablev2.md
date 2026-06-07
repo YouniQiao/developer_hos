@@ -1,13 +1,13 @@
 ---
 title: "@ReusableV2装饰器：V2组件复用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-new-reusablev2
 format: md
 ---
 
 
-为了降低反复创建销毁自定义组件带来的性能开销，开发者可以使用@ReusableV2装饰[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)装饰的自定义组件，达成组件复用的效果。
+为了降低反复创建销毁自定义组件带来的性能开销，开发者可以使用@ReusableV2装饰[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)装饰的自定义组件，达成组件复用的效果。
 
-在阅读本文前，建议提前阅读：[@Reusable装饰器：V1组件复用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable)。
+在阅读本文前，建议提前阅读：[@Reusable装饰器：V1组件复用](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable)。
 
 ![](./img/458ac0cd.png)
 
@@ -22,8 +22,8 @@ format: md
 * @ReusableV2仅能装饰V2的自定义组件，即@ComponentV2装饰的自定义组件。并且仅能将@ReusableV2装饰的自定义组件作为V2自定义组件的子组件使用。
 * @ReusableV2同样提供了[aboutToRecycle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttorecycle10)和[aboutToReuse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoreuse18)的生命周期，在组件被回收时调用aboutToRecycle，在组件被复用时调用aboutToReuse，但与@Reusable不同的是，aboutToReuse没有入参。
 * 在回收阶段，会递归地调用所有子组件的aboutToRecycle回调（即使子组件未被标记可复用）；在复用阶段，会递归地调用所有子组件的aboutToReuse回调（即使子组件未被标记可复用）。
-* @ReusableV2装饰的自定义组件会在被回收期间保持冻结状态，即无法触发UI刷新、无法触发[@Monitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor)回调，与[freezeWhenInactive](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-custom-components-freezev2)标记位不同的是，在解除冻结状态后，不会触发延后的刷新。
-* @ReusableV2装饰的自定义组件会在复用时自动重置组件内状态变量的值、重新计算组件内[@Computed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-computed)以及与之相关的@Monitor。不建议开发者在aboutToRecycle中更改组件内状态变量，详见[复用前的组件内状态变量重置](#复用前的组件内状态变量重置)。
+* @ReusableV2装饰的自定义组件会在被回收期间保持冻结状态，即无法触发UI刷新、无法触发[@Monitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor)回调，与[freezeWhenInactive](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-freeze/arkts-custom-components-freezev2)标记位不同的是，在解除冻结状态后，不会触发延后的刷新。
+* @ReusableV2装饰的自定义组件会在复用时自动重置组件内状态变量的值、重新计算组件内[@Computed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-computed)以及与之相关的@Monitor。不建议开发者在aboutToRecycle中更改组件内状态变量，详见[复用前的组件内状态变量重置](#复用前的组件内状态变量重置)。
 * V1和V2的复用组件可在一定规则下混用，详见[使用限制](#使用限制)第二点。
 * 不建议开发者嵌套滥用@ReusableV2装饰器，这可能会导致复用效率降低以及内存开销变大。
 
@@ -121,7 +121,7 @@ struct ReusableV2Component {
 
   | 描述 | 对应组件类型 |
   | --- | --- |
-  | V1普通组件 | [@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)装饰的struct。 |
+  | V1普通组件 | [@Component](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#component)装饰的struct。 |
   | V2普通组件 | @ComponentV2装饰的struct。 |
   | V1复用组件 | @Reusable@Component装饰的struct。 |
   | V2复用组件 | @ReusableV2@ComponentV2装饰的struct。 |
@@ -404,11 +404,11 @@ struct ReusableV2Component {
 
 | 装饰器 | 重置方法 |
 | --- | --- |
-| [@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local) | 直接使用定义时的初始值重新赋值。 |
-| [@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param) | 如果有外部传入则使用外部传入值重新赋值，否则用本地初始值重新赋值。注意：@Once装饰的变量同样会被重置初始化一次。 |
-| [@Event](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-event) | 如果有外部传入则使用外部传入值重新赋值，否则用本地初始值重新赋值。如果本地没有初始值，则生成默认的空实现。 |
-| [@Provider](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer) | 直接使用定义时的初始值重新赋值。 |
-| [@Consumer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer) | 如果有对应的@Provider则直接使用@Provider对应的值，否则使用本地初始值重新赋值。 |
+| [@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local) | 直接使用定义时的初始值重新赋值。 |
+| [@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param) | 如果有外部传入则使用外部传入值重新赋值，否则用本地初始值重新赋值。注意：@Once装饰的变量同样会被重置初始化一次。 |
+| [@Event](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-event) | 如果有外部传入则使用外部传入值重新赋值，否则用本地初始值重新赋值。如果本地没有初始值，则生成默认的空实现。 |
+| [@Provider](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer) | 直接使用定义时的初始值重新赋值。 |
+| [@Consumer](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer) | 如果有对应的@Provider则直接使用@Provider对应的值，否则使用本地初始值重新赋值。 |
 | @Computed | 使用当前最新的值重新计算一次，如果使用到的变量还未被重置，将会使用重置前的值，因此推荐开发者将@Computed定义在所使用的变量之后。 |
 | @Monitor | 在上述所有变量重置完成之后触发。重置过程中产生的变量变化不会触发@Monitor回调，仅更新IMonitorValue中的before值。重置过程中不产生变化的赋值不会触发@Monitor的重置。 |
 | 常量 | 包括readonly的常量，不重置。 |
@@ -664,7 +664,7 @@ struct ReusableV2Component {
 
 由于冻结机制的存在，在aboutToRecycle中赋值不会被@Monitor观察到。而在经历完变量重置后，变量又会被赋予新的值，因此对于组件内状态变量来说，在aboutToRecycle中赋值不会有明显的效果；而常量（例如上面的noDecoInfo）由于冻结机制的存在，在aboutToRecycle中更改age也不会被观察到，并且因为不会被重置，所以相关的@Monitor也不会被重置，即这里的age值本身未被重置，也就不会重置与之绑定的@Monitor。最终表现出来的现象即：第二步回调的@Monitor中，monitor.value()?.before得到的值为31，而非age的初始值30。
 
-针对这一现象，推荐开发者在复用的场景减少使用类似的常量对象包含[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)属性的写法，以确保复用场景的功能符合预期。
+针对这一现象，推荐开发者在复用的场景减少使用类似的常量对象包含[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)属性的写法，以确保复用场景的功能符合预期。
 
 ## 使用场景
 
@@ -727,7 +727,7 @@ struct ReusableV2Component {
 
 ### 在Repeat组件中使用
 
-[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)组件懒加载场景中，将会优先使用Repeat组件的缓存池，正常滑动场景、更新场景不涉及组件的回收与复用。当Repeat的缓存池需要扩充时将会向自定义组件要求新的子组件，此时如果复用池中有可复用的节点，将会进行复用。
+[Repeat](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat)组件懒加载场景中，将会优先使用Repeat组件的缓存池，正常滑动场景、更新场景不涉及组件的回收与复用。当Repeat的缓存池需要扩充时将会向自定义组件要求新的子组件，此时如果复用池中有可复用的节点，将会进行复用。
 
 通过配置Repeat组件[VirtualScrollOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-repeat#virtualscrolloptions)的reusable属性为false，可以关闭Repeat组件自身的复用能力。此时，滑动场景、更新场景均会触发@ReusableV2的回收与复用。
 

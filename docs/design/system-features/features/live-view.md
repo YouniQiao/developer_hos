@@ -1,7 +1,7 @@
 ---
 title: 实况窗
 sidebar_label: 实况窗
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861
+original_url: /docs/design/system-features/features/live-view
 format: md
 ---
 

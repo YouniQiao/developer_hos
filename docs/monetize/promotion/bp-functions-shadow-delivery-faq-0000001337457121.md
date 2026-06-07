@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-shadow-delivery-faq-0000001337457121
+original_url: /docs/monetize/promotion/bp-functions-shadow-delivery-faq-0000001337457121
 format: md
 ---
 

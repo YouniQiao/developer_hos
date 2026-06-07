@@ -1,6 +1,6 @@
 ---
 title: "访问DataAbility"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-dataability
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/access-dataability
 format: md
 ---
 

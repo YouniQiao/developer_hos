@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如何处理误分类问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-3
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-3
 format: md
 ---
 
@@ -12,4 +12,4 @@ format: md
 
 ## 如何处理通知消息类别误分类
 
-应用在不违反[通知违规处罚标准](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-punishment-standards)的前提下推送消息，可按要求[申请通知消息自分类权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请通知消息自分类权益)。
+应用在不违反[通知违规处罚标准](/docs/dev/app-dev/application-services/push-kit-guide/push-appendix/push-punishment-standards)的前提下推送消息，可按要求[申请通知消息自分类权益](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#申请通知消息自分类权益)。

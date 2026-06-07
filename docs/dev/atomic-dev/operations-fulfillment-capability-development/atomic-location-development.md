@@ -1,6 +1,6 @@
 ---
 title: "位置"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-location-development
+original_url: /docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-location-development
 format: md
 ---
 

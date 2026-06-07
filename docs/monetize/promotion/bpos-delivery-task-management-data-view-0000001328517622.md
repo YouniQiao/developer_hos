@@ -1,7 +1,7 @@
 ---
 title: "数据查看"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-management-data-view-0000001328517622
+original_url: /docs/monetize/promotion/bpos-delivery-task-management-data-view-0000001328517622
 format: md
 ---
 
@@ -90,6 +90,6 @@ format: md
 
 ## 查看转化回传数据
 
-完成应用跟踪或线索跟踪后，回传的转化数据可以在鲸鸿动能广告广告平台查看，进入“推广”或“报表”菜单下的相关页面，选择“自定义列”，选择您跟踪的[转化指标](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-functions-tripartite-attribution-data-0000001379958197#ZH-CN_TOPIC_0000001379958197__p4119mcpsimp)进行查看。
+完成应用跟踪或线索跟踪后，回传的转化数据可以在鲸鸿动能广告广告平台查看，进入“推广”或“报表”菜单下的相关页面，选择“自定义列”，选择您跟踪的[转化指标](/docs/monetize/promotion/bpos-functions-tripartite-attribution-data-0000001379958197#ZH-CN_TOPIC_0000001379958197__p4119mcpsimp)进行查看。
 
 如果您在广告平台没有看到相应的转化数据，您需要检查应用跟踪或者线索跟踪回传配置是否正确。

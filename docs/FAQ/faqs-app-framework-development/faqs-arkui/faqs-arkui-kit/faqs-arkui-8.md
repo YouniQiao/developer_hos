@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何给UI组件设置不同情况下的属性"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-8
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-8
 ---
 
 
@@ -36,4 +36,4 @@ struct TestHeightPage {
 
 **参考链接**
 
-[if/else：条件渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse)
+[if/else：条件渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse)

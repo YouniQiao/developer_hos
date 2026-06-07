@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "纯外部支付场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-external
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-external
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 | 步骤 | 说明 |
 | --- | --- |
 | 商户入网（非必选） | **三方支付商户入网（非必选）**  由于三方支付为直接连接第三方支付平台完成支付，故可能涉及需要开发者在第三方支付平台注册、创建商户（建议开发者用新申请的商户号与现有商户号做区分）。 |
-| [产品开通与配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#产品开通与配置) | 申请开通三方支付及完成相关支付模式配置。 |
+| [产品开通与配置](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#产品开通与配置) | 申请开通三方支付及完成相关支付模式配置。 |
 | 通用收银台接入 | 根据纯外部支付场景[开发步骤](#开发步骤)完成通用收银台支付接入。 |
 
 ## 业务流程
@@ -134,4 +134,4 @@ struct Index {
 
 ### 拉起三方支付收银台（端侧开发）
 
-根据[产品开通与配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-common-pay-introduction#产品开通与配置)中的所配置的支付方式，参考[拉起三方支付收银台](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment-url)进行三方支付收银台拉起处理。
+根据[产品开通与配置](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction#产品开通与配置)中的所配置的支付方式，参考[拉起三方支付收银台](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment/payment-launch-third-party-payment-url)进行三方支付收银台拉起处理。

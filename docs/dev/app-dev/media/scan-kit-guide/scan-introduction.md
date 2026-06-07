@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Scan Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-introduction
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-introduction
 format: md
 ---
 

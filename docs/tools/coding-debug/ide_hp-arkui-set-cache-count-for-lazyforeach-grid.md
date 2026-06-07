@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkui-set-cache-count-for-lazyforeach-grid"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui-set-cache-count-for-lazyforeach-grid
+original_url: /docs/tools/coding-debug/ide_hp-arkui-set-cache-count-for-lazyforeach-grid
 format: md
 ---
 

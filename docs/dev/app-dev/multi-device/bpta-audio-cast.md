@@ -1,7 +1,7 @@
 ---
 title: "音频投播"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-audio-cast
+original_url: /docs/dev/app-dev/multi-device/bpta-audio-cast
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/43/v3/v34HHkiURsiDPLruOCsE5w/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074209Z&HW-CC-Expire=86400&HW-CC-Sign=581D41EDF76A3061BBA96D9A1DF1E2E39AD65A83A688BDA5BA74EF2C89CC1CA0)
 
-支持投播的设备规格和使用限制参见[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide#约束与限制)。
+支持投播的设备规格和使用限制参见[约束与限制](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide#约束与限制)。
 
 ## 用户体验
 
@@ -31,7 +31,7 @@ format: md
 
 **用户体验路径**
 
-本文案例提供本端播放和音频投播两种播放模式，体验路径和交互流程图如下。在投播模式下，可以通过本端的播放界面或播控中心对远端的音频进行播放控制，如播放、暂停、播放进度跳转、上一首/下一首切换和点击切换音频。应用接入音频投播时，可根据实际需求参考本文实现相关功能，并按照[应用接入播控自检表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-checklist)完成基础功能验证，确保应用基础体验。
+本文案例提供本端播放和音频投播两种播放模式，体验路径和交互流程图如下。在投播模式下，可以通过本端的播放界面或播控中心对远端的音频进行播放控制，如播放、暂停、播放进度跳转、上一首/下一首切换和点击切换音频。应用接入音频投播时，可根据实际需求参考本文实现相关功能，并按照[应用接入播控自检表](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/playback-control-access-checklist)完成基础功能验证，确保应用基础体验。
 
 **表1** 音频投播体验路径和交互流程
 
@@ -52,7 +52,7 @@ format: md
 | **投播组件（[AVCastPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avcastpicker)）** | 可嵌入应用UI界面的系统级投播组件。用户点击该组件后，系统将执行设备发现、连接和认证等流程，应用仅需通过接口获取投播中的相关回调信息。 |
 | **投播控制器（[AVCastController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avcastcontroller)）** | 在投播建立后，由应用发起的用于控制远端播放的接口，包括播放、暂停、上一首/下一首切换和播放进度跳转等能力。 |
 
-投播功能的实现基于AVSession媒体会话和AVCastController投播控制器的协同工作，系统通过AVSession建立设备连接，由AVCastController向Cast+服务发送控制指令。开发者需要聚焦两个核心环节——通过AVSession实现监听设备连接，以及使用AVCastController控制远端播放并同步状态，详见[运作机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-overview#运作机制)。
+投播功能的实现基于AVSession媒体会话和AVCastController投播控制器的协同工作，系统通过AVSession建立设备连接，由AVCastController向Cast+服务发送控制指令。开发者需要聚焦两个核心环节——通过AVSession实现监听设备连接，以及使用AVCastController控制远端播放并同步状态，详见[运作机制](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-overview#运作机制)。
 
 **图6** 音视频投播运作机制示意图
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d4/v3/qH7n1OtISG2GqweIFO6GQw/zh-cn_image_0000002422054660.png?HW-CC-KV=V1&HW-CC-Date=20260606T074209Z&HW-CC-Expire=86400&HW-CC-Sign=BEA8691D9ABC05DEB939D95D5E1A5E2161D5A3FD8A349066BC2D4F5D9075D18A "点击放大")
@@ -65,14 +65,14 @@ format: md
 * 媒体会话控制器：将本端播放的音频接入播控中心，用于本应用发起投播、结束投播、与播控中心的播放状态同步。
 * 音频投播控制器：控制远端设备音频资源的播放、暂停、上一首/下一首切换和播放进度等。
 
-实现音频投播功能，建议参考如下流程接入，其中本端音频的播放和控制可参考[使用AVPlayer播放音频](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avplayer-for-playback)、[使用AudioRenderer开发音频播放功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)等方案根据功能诉求自行实现，本文将从接入播控中心开始进行详细介绍。
+实现音频投播功能，建议参考如下流程接入，其中本端音频的播放和控制可参考[使用AVPlayer播放音频](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-avplayer-for-playback)、[使用AudioRenderer开发音频播放功能](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)等方案根据功能诉求自行实现，本文将从接入播控中心开始进行详细介绍。
 
 **图7** 接入音频投播流程图
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/a8/v3/hMerGqDIQjuA_T4-apo2Eg/zh-cn_image_0000002455573521.png?HW-CC-KV=V1&HW-CC-Date=20260606T074209Z&HW-CC-Expire=86400&HW-CC-Sign=9CC2C0BE51F2CCFB04DDC356A271BFB803153FE11D873ECF686B387067AB0EE6 "点击放大")
 
 ## 接入播控中心
 
-[音视频播控服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-overview)用于统一管理系统中所有音视频行为，开发者须接入播控中心才能实现投播功能。播控中心不仅能控制本端设备的播放，还能控制远端设备的播放。
+[音视频播控服务](/docs/dev/app-dev/media/avsession-kit/avsession-overview)用于统一管理系统中所有音视频行为，开发者须接入播控中心才能实现投播功能。播控中心不仅能控制本端设备的播放，还能控制远端设备的播放。
 
 **图8** 播控中心控制音频播放
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/e6/v3/atDq56kGR8aN4-Jvr7cnFg/zh-cn_image_0000002455453641.gif?HW-CC-KV=V1&HW-CC-Date=20260606T074209Z&HW-CC-Expire=86400&HW-CC-Sign=2062A8D1A73AEF52BC2102219437F0CE0802818E9A3E62283DA88DF0547DD7E1 "点击放大")
@@ -378,7 +378,7 @@ public async setPlayModel(mode: number) {
 
 **开发步骤**
 
-开发者可以使用[@Track](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-track)装饰器管理这些经常被改变的状态变量，以便在远端播放状态变化时，实时响应并自动刷新本端音频状态。以下为获取远端已播放时长并同步给本端的示例代码：
+开发者可以使用[@Track](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-data-object-state-management/arkts-track)装饰器管理这些经常被改变的状态变量，以便在远端播放状态变化时，实时响应并自动刷新本端音频状态。以下为获取远端已播放时长并同步给本端的示例代码：
 
 ```
 export class AudioCastController implements Controller {

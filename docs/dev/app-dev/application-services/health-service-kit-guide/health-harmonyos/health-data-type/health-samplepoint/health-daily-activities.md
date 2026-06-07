@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "日常活动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-daily-activities
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-daily-activities
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
   ![](./img/a043d7e3.png)
 
-  Wearable设备暂不支持该数据类型。读取实时日常活动数据使用[读取实时三环数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-three-ring-read)接口。
+  Wearable设备暂不支持该数据类型。读取实时日常活动数据使用[读取实时三环数据](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage/health-three-ring-read)接口。
 
 ## OAuth权限
 

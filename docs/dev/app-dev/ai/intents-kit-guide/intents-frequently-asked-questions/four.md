@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "功能一步达场景是否有云侧动态声明词条的方案？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/four
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-frequently-asked-questions/four
 format: md
 ---
 

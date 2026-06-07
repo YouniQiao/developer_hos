@@ -1,6 +1,6 @@
 ---
 title: "批量添加商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-import-0000002320646001
+original_url: /docs/dev/game-dev/games-center-import-0000002320646001
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
    ![](./img/18b79f55.png)
 
-   “商品模板”中支持填写的国家/地区、语言、币种等商品信息，具体可参见[国家/地区、语言、币种列表](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-countries-overview-0000002320771745#ZH-CN_TOPIC_0000002382173741)。
+   “商品模板”中支持填写的国家/地区、语言、币种等商品信息，具体可参见[国家/地区、语言、币种列表](/docs/dev/game-dev/games-center-countries-overview-0000002320771745#ZH-CN_TOPIC_0000002382173741)。
 
    ![](./img/6fc3b921.png)
 5. 在下载的模板中，resource ID 必须输入上传应用内截图后生成的素材ID，您可以点击“批量操作”下拉选项中的“查看素材”，点击“批量上传”，批量上传应用内截图，并点击“确认上传”。
@@ -63,7 +63,7 @@ format: md
    您需满足以下条件才能进行商品同步：
 
    * 已将此应用的鸿蒙版本和安卓版本关联在同一应用系列里，应用系列操作详见[应用系列操作指南](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manage-app-series-0000001773503840)。
-   * 已创建商品审核通过并生效，提交商品审核操作详见[提交数字商品审核](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-submit-digital-products-for-review-0000002320572925#ZH-CN_TOPIC_0000002348293880)。
+   * 已创建商品审核通过并生效，提交商品审核操作详见[提交数字商品审核](/docs/dev/game-dev/games-center-submit-digital-products-for-review-0000002320572925#ZH-CN_TOPIC_0000002348293880)。
 2. 选择关联应用并点击确定。
 
    ![](./img/771f222f.png)

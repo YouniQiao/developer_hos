@@ -1,6 +1,6 @@
 ---
 title: "卡片跳转到应用页面（router事件）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-router
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-router
 format: md
 ---
 

@@ -1,15 +1,15 @@
 ---
 title: "验证匿名证书链"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-taas-verifycertchain
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verifycertchain
 format: md
 ---
 
 
-为防止第三方伪造数据，端侧和云侧在对数据进行验签之前，必须先验证匿名证书链的正确性。端侧对匿名证书链的校验处理接口，请参考“[证书链校验器对象的创建和校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-cerchainvalidator-object)”。云侧对匿名证书链的校验处理接口，请参考“[设备真实性证明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation)”的服务器端开发章节。
+为防止第三方伪造数据，端侧和云侧在对数据进行验签之前，必须先验证匿名证书链的正确性。端侧对匿名证书链的校验处理接口，请参考“[证书链校验器对象的创建和校验](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-cerchainvalidator-object)”。云侧对匿名证书链的校验处理接口，请参考“[设备真实性证明](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation)”的服务器端开发章节。
 
 初始化证明会话时返回的匿名证书链包含三级证书，验证步骤如下：
 
-1. 使用[Universal Keystore Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)官网提供的根CA证书对匿名证书链的合法性进行校验。（[根CA证书下载地址](https://pki.consumer.huawei.com/ca/cer/Huawei_CBG_ECC_Device_Attestation_Root_CA.cer)）
+1. 使用[Universal Keystore Kit](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)官网提供的根CA证书对匿名证书链的合法性进行校验。（[根CA证书下载地址](https://pki.consumer.huawei.com/ca/cer/Huawei_CBG_ECC_Device_Attestation_Root_CA.cer)）
 
    ![](./img/ab514268.png)
 

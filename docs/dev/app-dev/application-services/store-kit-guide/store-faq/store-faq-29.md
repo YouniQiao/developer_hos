@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "按需加载场景中，应用在加载指定模块后重启，还是已加载状态吗？是否需要重新发起按需加载请求？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-29
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-29
 format: md
 ---
 

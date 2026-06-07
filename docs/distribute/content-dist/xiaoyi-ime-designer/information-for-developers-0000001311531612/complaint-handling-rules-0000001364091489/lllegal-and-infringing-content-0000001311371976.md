@@ -1,7 +1,7 @@
 ---
 title: "违规及侵权内容"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/lllegal-and-infringing-content-0000001311371976
+original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/lllegal-and-infringing-content-0000001311371976
 ---
 
 # 违规及侵权内容

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "初始化全局应用上下文"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-initialize-context
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-initialize-context
 format: md
 ---
 

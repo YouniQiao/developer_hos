@@ -1,7 +1,7 @@
 ---
 title: "华为服务(香港)有限公司的子数据处理者"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/hksubprocessor
+original_url: /docs/distribute/app-dist/app-market/x20240513/hksubprocessor
 format: md
 ---
 

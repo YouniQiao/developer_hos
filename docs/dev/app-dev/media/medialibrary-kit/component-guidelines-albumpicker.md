@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AlbumPicker组件访问相册列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-albumpicker
+original_url: /docs/dev/app-dev/media/medialibrary-kit/component-guidelines-albumpicker
 format: md
 ---
 
 
 开发者可以在布局中嵌入AlbumPickerComponent组件，通过此组件，应用无需申请权限，即可访问公共目录中的相册列表。
 
-需配合[使用PhotoPicker组件访问图片/视频](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-guidelines-photoviewpicker)一起使用，用户通过AlbumPickerComponent组件选择对应相册并通知PhotoPickerComponent组件刷新成对应相册的图片和视频。
+需配合[使用PhotoPicker组件访问图片/视频](/docs/dev/app-dev/media/medialibrary-kit/component-guidelines-photoviewpicker)一起使用，用户通过AlbumPickerComponent组件选择对应相册并通知PhotoPickerComponent组件刷新成对应相册的图片和视频。
 
 界面效果如图所示。
 

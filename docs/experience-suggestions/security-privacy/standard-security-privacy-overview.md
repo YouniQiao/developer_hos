@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-security-privacy-overview
+original_url: /docs/experience-suggestions/security-privacy/standard-security-privacy-overview
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "智能体广告"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/agent-advertisement-0000002520493294
+original_url: /docs/distribute/xiaoyi/audit-specifications-0000002469548113/agent-advertisement-0000002520493294
 format: md
 ---
 

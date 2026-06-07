@@ -1,6 +1,6 @@
 ---
 title: "页面切换日志"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pageswitch-log
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection/pageswitch-log
 format: md
 ---
 
@@ -26,7 +26,7 @@ page_switch-com.example.myapplication-1-1-20260509142812417.log
 
 进程名：进程名中包含:、/、- 字符时，对应字符统一替换为 \_。
 
-实例索引：多个进程共用沙箱场景（例如[多实例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multiinstance)或[ExtensionAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)）会出现日志写冲突，所以页面切换日志会为每个进程创建一组日志文件，使用实例索引用于标识不同进程。取值范围：[1, 10]。
+实例索引：多个进程共用沙箱场景（例如[多实例](/docs/dev/app-dev/getting-started/dev-fundamentals/multiinstance)或[ExtensionAbility组件](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)）会出现日志写冲突，所以页面切换日志会为每个进程创建一组日志文件，使用实例索引用于标识不同进程。取值范围：[1, 10]。
 
 文件索引：同一进程名及实例索引下最多保留 2 个文件。取值范围：[1, 2]。
 

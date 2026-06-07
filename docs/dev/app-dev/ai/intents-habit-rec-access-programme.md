@@ -1,6 +1,6 @@
 ---
 title: "接入方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-habit-rec-access-programme
+original_url: /docs/dev/app-dev/ai/intents-habit-rec-access-programme
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ## 意图注册
 
-以歌曲续听推荐特性为例，首先要注册播放歌曲意图（PlayMusic），其他意图见[各垂域意图Schema](https://developer.huawei.com/consumer/cn/doc/service/intents-schema-0000001901962713)。
+以歌曲续听推荐特性为例，首先要注册播放歌曲意图（PlayMusic），其他意图见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)。
 
 开发者需要编辑对应的意图配置insight\_intent.json文件实现意图声明。insight\_intent.json文件需要放置在任意一个module下面的指定目录：src/main/resources/base/profile/insight\_intent.json，并且整个工程中只能存在一个insight\_intent.json文件。
 
@@ -51,7 +51,7 @@ format: md
 
 ## 端侧意图共享
 
-构建意图对象，并且调用[shareIntent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/intents-arkts-api-insightintent#shareintent-1)，实现意图共享。可同时构建多个PlayMusic或PlayMusicList的意图对象。PlayMusic的意图共享字段定义见[各垂域意图Schema](https://developer.huawei.com/consumer/cn/doc/service/intents-schema-0000001901962713)定义，完整的意图共享示例如下所示，该示例构建了一个PlayMusic意图，并进行了shareIntent调用。
+构建意图对象，并且调用[shareIntent()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/intents-arkts-api-insightintent#shareintent-1)，实现意图共享。可同时构建多个PlayMusic或PlayMusicList的意图对象。PlayMusic的意图共享字段定义见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)定义，完整的意图共享示例如下所示，该示例构建了一个PlayMusic意图，并进行了shareIntent调用。
 
 ```
 import { insightIntent } from '@kit.IntentsKit';
@@ -122,7 +122,7 @@ struct Index {
 
 ### 意图执行组件为uiAbility的意图调用
 
-如上文意图注册，当开发者注册的意图承载的运行组件为uiAbility时，开发者需要自己实现InsightIntentExecutor，并在对应回调实现打开落地页（点击推荐卡片跳转的界面）的能力，PlayMusic的意图调用字段定义见[各垂域意图Schema](https://developer.huawei.com/consumer/cn/doc/service/intents-schema-0000001901962713)。
+如上文意图注册，当开发者注册的意图承载的运行组件为uiAbility时，开发者需要自己实现InsightIntentExecutor，并在对应回调实现打开落地页（点击推荐卡片跳转的界面）的能力，PlayMusic的意图调用字段定义见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)。
 
 步骤如下：
 

@@ -1,7 +1,7 @@
 ---
 title: "查询日预算和次日预算"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-dailybudget-query-0000001192788600
+original_url: /docs/monetize/promotion/marketapi-dailybudget-query-0000001192788600
 format: md
 ---
 
@@ -63,9 +63,9 @@ Content-type: application/json
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| rtnCode | M | Integer | 返回码，参考[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| rtnCode | M | Integer | 返回码，参考[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | rtnDesc | M | String | 返回描述。 |
-| message | M | [AccountDailyBudget](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-accountdailybudget-0000001195432366) | 账户日预算详情。 |
+| message | M | [AccountDailyBudget](/docs/monetize/promotion/marketapi-modle-accountdailybudget-0000001195432366) | 账户日预算详情。 |
 
 ## 响应示例
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用ImagePacker完成图片编码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-encoding-arts/image-encoding
 format: md
 ---
 
@@ -61,7 +61,7 @@ format: md
 
    ![](./img/ebc58c8e.png)
 
-   在进行编码前，需要先获取imageSource或pixelMap，可参考[使用ImageSource完成图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)。
+   在进行编码前，需要先获取imageSource或pixelMap，可参考[使用ImageSource完成图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)。
 
    * 定义copyData，获取编码后的文件流，方便后续保存为图片或者用于解码显示。
 
@@ -169,7 +169,7 @@ format: md
 
 4. 将图片保存进图库。
 
-将图片编码到ArrayBuffer或文件后，可使用[Media Library Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview)的相关接口[保存媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)保存进图库。
+将图片编码到ArrayBuffer或文件后，可使用[Media Library Kit](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview)的相关接口[保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)保存进图库。
 
 ## 示例代码
 

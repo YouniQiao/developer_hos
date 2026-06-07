@@ -1,6 +1,6 @@
 ---
 title: "客户端应用开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-client-guidelines
+original_url: /docs/dev/app-dev/application-framework/content-embed-kit/content-embed-client-guidelines
 format: md
 ---
 
@@ -19,7 +19,7 @@ OE客户端应用指嵌入其它文档的应用，通过调用[OE框架层接口
 
 ## 约束限制
 
-在使用接口前，需先确认设备具备SystemCapability.ContentEmbed.ObjectEditor系统能力，判断方式请参阅[查询指定的系统能力是否被支持](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/init#caniuse)。并申请ohos.permission.CONNECT\_OBJECTEDITOR\_EXTENSION权限，配置方式请参阅[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+在使用接口前，需先确认设备具备SystemCapability.ContentEmbed.ObjectEditor系统能力，判断方式请参阅[查询指定的系统能力是否被支持](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/init#caniuse)。并申请ohos.permission.CONNECT\_OBJECTEDITOR\_EXTENSION权限，配置方式请参阅[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ## 接口说明
 
@@ -29,15 +29,15 @@ OE客户端应用指嵌入其它文档的应用，通过调用[OE框架层接口
 
 | 接口名称 | 功能描述 |
 | --- | --- |
-| OH\_ContentEmbed\_CreateDocumentByFile | 通过被嵌入文档路径创建[OE文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oe文档)。 |
-| OH\_ContentEmbed\_CreateDocumentByOEId | 通过[OEID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oeid)创建OE文档。 |
-| OH\_ContentEmbed\_LoadDocumentFromFile | 通过已存在的[OE格式文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oe格式文件)加载OE文档。 |
-| OH\_ContentEmbed\_CreateExtensionProxy | 创建[客户端OE对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#客户端oe对象)。 |
+| OH\_ContentEmbed\_CreateDocumentByFile | 通过被嵌入文档路径创建[OE文档](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oe文档)。 |
+| OH\_ContentEmbed\_CreateDocumentByOEId | 通过[OEID](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oeid)创建OE文档。 |
+| OH\_ContentEmbed\_LoadDocumentFromFile | 通过已存在的[OE格式文件](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oe格式文件)加载OE文档。 |
+| OH\_ContentEmbed\_CreateExtensionProxy | 创建[客户端OE对象](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#客户端oe对象)。 |
 | OH\_ContentEmbed\_DestroyExtensionProxy | 销毁客户端OE对象，释放相关资源。 |
 | OH\_ContentEmbed\_Proxy\_RegisterOnUpdateFunc | 向客户端OE对象注册OE文档更新时的回调函数。 |
 | OH\_ContentEmbed\_Proxy\_RegisterOnErrorFunc | 向客户端OE对象注册OE文档触发错误时的回调函数。 |
 | OH\_ContentEmbed\_Proxy\_RegisterOnEditingFinishedFunc | 向客户端OE对象注册OE文档编辑完成时的回调函数。 |
-| OH\_ContentEmbed\_Proxy\_RegisterOnExtensionStoppedFunc | 向客户端OE对象注册[OE Extension](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oe-extension)停止时的回调函数。 |
+| OH\_ContentEmbed\_Proxy\_RegisterOnExtensionStoppedFunc | 向客户端OE对象注册[OE Extension](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oe-extension)停止时的回调函数。 |
 | OH\_ContentEmbed\_Proxy\_StartWork | 客户端通过客户端OE对象与Object Editor服务跨进程通信，启动OE Extension组件，并创建服务端OE对象。 |
 | OH\_ContentEmbed\_Proxy\_StopWork | 客户端通过客户端OE对象与Object Editor服务跨进程通信，销毁服务端OE对象，释放资源。 |
 | OH\_ContentEmbed\_Proxy\_GetSnapshot | 从客户端OE对象获取当前OE文档的快照图像，用于预览或缩略图显示。 |
@@ -217,7 +217,7 @@ void QueryFormatByOEid(const std::string &oeid, const std::string &locale)
        ContentEmbed_ErrorCode ret = OH_ContentEmbed_CreateDocumentByFile(filePath.c_str(), filePath.size(), isLinking, &ceDocument);
    }
    ```
-3. 基于[OE格式文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oe格式文件)加载OE文档，当OE格式文件为数据流存储时需先落盘至本地再使用此接口。
+3. 基于[OE格式文件](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oe格式文件)加载OE文档，当OE格式文件为数据流存储时需先落盘至本地再使用此接口。
 
    ```
    void LoadDocumentFromFile(std::string oeFormatFilePath)

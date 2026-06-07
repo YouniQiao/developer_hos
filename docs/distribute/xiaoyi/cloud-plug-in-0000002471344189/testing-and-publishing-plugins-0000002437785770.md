@@ -1,7 +1,7 @@
 ---
 title: "测试并发布插件"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/testing-and-publishing-plugins-0000002437785770
+original_url: /docs/distribute/xiaoyi/cloud-plug-in-0000002471344189/testing-and-publishing-plugins-0000002437785770
 format: md
 ---
 

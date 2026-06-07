@@ -1,7 +1,7 @@
 ---
 title: "删除/还原应用内商品"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-deleting-product-0000001193982456
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deleting-product-0000001193982456
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ![](./img/57181bae503a.png)
 
-待删除的商品应处于失效状态，否则无法删除该商品，商品的失效操作具体请参考[失效商品](`https://developer.huawei.com/consumer/cn/doc/app/game-center-deactivating-product-0000001239622347#section1851819158336`)。
+待删除的商品应处于失效状态，否则无法删除该商品，商品的失效操作具体请参考[失效商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347#section1851819158336`)。
 
 1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
 2. 在应用列表中点击需要删除的商品的应用。

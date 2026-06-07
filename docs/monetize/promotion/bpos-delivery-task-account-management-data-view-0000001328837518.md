@@ -1,7 +1,7 @@
 ---
 title: "数据查看"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-management-data-view-0000001328837518
+original_url: /docs/monetize/promotion/bpos-delivery-task-account-management-data-view-0000001328837518
 format: md
 ---
 

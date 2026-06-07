@@ -1,6 +1,6 @@
 ---
 title: "如何针对UI组件属性做API版本兼容性判断"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-449
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-449
 format: md
 ---
 
@@ -47,4 +47,4 @@ class MyListModifier implements AttributeModifier<ListAttribute> {
 
 **参考链接**
 
-[AttributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-modifier#attributemodifier)
+[AttributeModifier](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-modifier#attributemodifier)

@@ -1,21 +1,21 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "密钥使用介绍及通用流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-use-overview
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-key-use-overview
 format: md
 ---
 
 
 为了实现对数据机密性、完整性等保护，可使用生成/导入的密钥，对数据进行密钥操作，比如：
 
-* [加密/解密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-overview)。
-* [签名/验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-overview)。
-* [密钥协商](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-overview)。
-* [密钥派生](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-derivation-overview)。
+* [加密/解密](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-encryption-decryption/huks-encryption-decryption-overview)。
+* [签名/验签](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-overview)。
+* [密钥协商](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-overview)。
+* [密钥派生](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview)。
 
-本章节提供了以上常用密钥操作的示例，这部分示例均没有设置二次身份访问控制，如设置了密钥访问控制请参考[用户身份认证访问控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-identity-authentication-overview)。
+本章节提供了以上常用密钥操作的示例，这部分示例均没有设置二次身份访问控制，如设置了密钥访问控制请参考[用户身份认证访问控制](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-identity-authentication/huks-identity-authentication-overview)。
 
-从API 23开始支持[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)特性。
+从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。
 
 ## 通用开发流程
 

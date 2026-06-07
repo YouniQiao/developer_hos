@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "视频可变帧率"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-variable-refreshrate
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-variable-refreshrate
 format: md
 ---
 
@@ -25,13 +25,13 @@ format: md
 
 ## 开发步骤
 
-基础解码功能请参考[视频解码开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding)，下面仅针对于基础视频解码过程中存在的区别做具体说明。
+基础解码功能请参考[视频解码开发指南](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding)，下面仅针对于基础视频解码过程中存在的区别做具体说明。
 
 1. 解码器配置阶段，添加视频可变帧率使能开关。
 
    示例中的变量说明如下：
 
-   • videoDec：视频解码器实例的指针。创建方式参考[Surface模式下创建解码器实例对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)。
+   • videoDec：视频解码器实例的指针。创建方式参考[Surface模式下创建解码器实例对象](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)。
 
    ```
    OH_AVFormat *format = OH_AVFormat_Create();

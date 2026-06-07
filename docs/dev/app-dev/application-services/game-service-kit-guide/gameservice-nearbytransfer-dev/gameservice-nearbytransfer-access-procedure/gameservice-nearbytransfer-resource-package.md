@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "传输资源包"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-resource-package
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-nearbytransfer-dev/gameservice-nearbytransfer-access-procedure/gameservice-nearbytransfer-resource-package
 format: md
 ---
 
@@ -93,7 +93,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 ### 申请权限
 
-申请ohos.permission.DISTRIBUTED\_DATASYNC权限用于设备发现，详情可参考[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+申请ohos.permission.DISTRIBUTED\_DATASYNC权限用于设备发现，详情可参考[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ```
 let atManager = abilityAccessCtrl.createAtManager();

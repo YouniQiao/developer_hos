@@ -1,7 +1,7 @@
 ---
 format: md
 title: "相机预览切后台再回来画面不正确"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-8
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-8
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 
 **参考链接**
 
-[相机启动恢复实践(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-background-recovery)
+[相机启动恢复实践(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-background-recovery)

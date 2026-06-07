@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用主题字体（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme-font-arkts
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/theme-font-arkts
 format: md
 ---
 

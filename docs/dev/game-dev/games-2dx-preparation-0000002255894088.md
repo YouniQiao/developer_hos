@@ -1,6 +1,6 @@
 ---
 title: "适配准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-2dx-preparation-0000002255894088
+original_url: /docs/dev/game-dev/games-2dx-preparation-0000002255894088
 format: md
 ---
 
@@ -44,7 +44,7 @@ ArkTS是HarmonyOS 5.0及以上的游戏开发的官方高级语言，其中ArkUI
 
 ### 了解Stage模型
 
-了解Stage模型可以帮助开发者更好地理解应用程序的架构和设计，有助于开发者对不同阶段的应用程序包形态有更加清晰的认知，提升HarmonyOS 5.0及以上的开发效率和性能。Stage模型更多介绍请参见[Stage模型开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development)。
+了解Stage模型可以帮助开发者更好地理解应用程序的架构和设计，有助于开发者对不同阶段的应用程序包形态有更加清晰的认知，提升HarmonyOS 5.0及以上的开发效率和性能。Stage模型更多介绍请参见[Stage模型开发指导](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development)。
 
 ## AGC控制台准备
 
@@ -54,7 +54,7 @@ ArkTS是HarmonyOS 5.0及以上的游戏开发的官方高级语言，其中ArkUI
 
 ### 创建项目及在项目上添加游戏
 
-前往AGC控制台创建游戏类应用，具体操作请参见[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)。其中：
+前往AGC控制台创建游戏类应用，具体操作请参见[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。其中：
 
 * “应用类型”：选择“HarmonyOS应用”。
 * “应用分类”：选择“游戏”。

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "是否支持开发者自行管理线程数量"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-69
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-69
 ---
 
 

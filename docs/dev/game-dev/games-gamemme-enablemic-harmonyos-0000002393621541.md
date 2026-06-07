@@ -1,6 +1,6 @@
 ---
 title: "设置麦克风状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enablemic-harmonyos-0000002393621541
+original_url: /docs/dev/game-dev/games-gamemme-enablemic-harmonyos-0000002393621541
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ## 前提条件
 
-您已[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
+您已[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
 
 ## 开发步骤
 

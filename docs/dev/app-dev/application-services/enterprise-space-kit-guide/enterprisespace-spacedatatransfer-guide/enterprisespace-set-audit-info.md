@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设置审批信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-set-audit-info
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacedatatransfer-guide/enterprisespace-set-audit-info
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "语音变声"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voiceconversion-csharp-0000002393227101
+original_url: /docs/dev/game-dev/games-gamemme-voiceconversion-csharp-0000002393227101
 format: md
 ---
 
@@ -9,10 +9,10 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体基础SDK、实时语音和变声模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
-* 您已[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073)。
-* 如需测试变声效果，需[开启麦克风](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enablemic-csharp-0000002359706970)。
+* 您已[集成游戏多媒体基础SDK、实时语音和变声模块](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
+* 您已[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073)。
+* 如需测试变声效果，需[开启麦克风](/docs/dev/game-dev/games-gamemme-enablemic-csharp-0000002359706970)。
 
 ## 开发步骤
 

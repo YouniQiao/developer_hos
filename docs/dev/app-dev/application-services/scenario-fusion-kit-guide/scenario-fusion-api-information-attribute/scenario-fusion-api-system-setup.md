@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过API获取系统设置属性"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-api-system-setup
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-information-attribute/scenario-fusion-api-system-setup
 format: md
 ---
 

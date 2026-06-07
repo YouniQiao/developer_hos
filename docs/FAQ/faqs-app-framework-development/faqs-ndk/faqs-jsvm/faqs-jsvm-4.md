@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何自排查OOM(v8::FatalProcessOutOfMemory)错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-4
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-4
 ---
 
 

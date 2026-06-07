@@ -1,7 +1,7 @@
 ---
 title: "基于Dockerfile部署ohpm-repo私仓"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-dockerfile
+original_url: /docs/tools/ohpm/repo/ide-ohpm-dockerfile
 ---
 
 

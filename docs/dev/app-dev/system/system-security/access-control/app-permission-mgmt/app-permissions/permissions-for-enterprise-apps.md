@@ -1,6 +1,6 @@
 ---
 title: "企业类应用可用权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-enterprise-apps
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-enterprise-apps
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 * 分发类型分别为enterprise\_normal（企业普通应用）和enterprise\_mdm（MDM应用）。
 * 不会上架华为应用市场。
 
-企业类应用可参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)，申请以下权限。
+企业类应用可参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)，申请以下权限。
 
 ![](./img/f3b423bf.png)
 

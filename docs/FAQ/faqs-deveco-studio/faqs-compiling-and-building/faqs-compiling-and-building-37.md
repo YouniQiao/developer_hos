@@ -1,7 +1,7 @@
 ---
 format: md
 title: "构建报错“ERROR: Task xxx was not found in the project xxx”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-37
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-37
 ---
 
 

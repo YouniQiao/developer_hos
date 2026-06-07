@@ -1,6 +1,6 @@
 ---
 title: "下拉刷新"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-pull-down-refresh
+original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-pull-down-refresh
 format: md
 ---
 

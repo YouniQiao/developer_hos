@@ -1,6 +1,6 @@
 ---
 title: "组件生命周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-lifecycle
+original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-lifecycle
 format: md
 ---
 

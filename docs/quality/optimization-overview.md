@@ -1,6 +1,6 @@
 ---
 title: "性能分析简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-optimization-overview
+original_url: /docs/quality/optimization-overview
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 本文将介绍调优方法和常用工具，帮助开发者分析和解决应用程序性能问题，提升用户体验，确保应用程序高效稳定运行。
 
-在日常开发中，需要关注的指标有完成时延、点击响应时延、滑动响应时延等，具体需要关注的指标可以参考[《性能体验设计》](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smooth-application-design)。
+在日常开发中，需要关注的指标有完成时延、点击响应时延、滑动响应时延等，具体需要关注的指标可以参考[《性能体验设计》](/docs/quality/smooth-application-design)。
 
 ## 调优分析步骤
 
@@ -45,7 +45,7 @@ format: md
 * [ArkWeb分析工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-arkweb)：DevEco Profiler提供ArkWeb分析模板，可以结合ArkWeb执行流程的关键trace点来定位问题发生的阶段。
 * [Network分析工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-network)：DevEco Profiler提供Network模板，帮助用户在应用运行过程中查看http协议栈网络信息，包括请求分段耗时以及请求具体内容，方便对网络问题进行调优。
 
-其他常见的性能调优工具，包括[HiDumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)、[SmartPerf](https://gitcode.com/openharmony-sig/smartperf)。
+其他常见的性能调优工具，包括[HiDumper](/docs/dev/app-dev/system/hidumper)、[SmartPerf](https://gitcode.com/openharmony-sig/smartperf)。
 
 * 性能优化工具HiDumper：HiDumper是为开发和测试人员提供的系统信息获取工具，帮助分析和定位问题。在应用开发过程中，可以使用HiDumper命令行工具获取UI界面组件树信息，配合ArkUI Inspector等图形化工具定位布局性能问题。此外，还可以使用该命令行工具获取内存和CPU使用情况等系统数据，评估应用性能。
 * 性能功耗调优工具SmartPerf：SmartPerf是一款用于深入挖掘和细粒度展示数据的性能功耗调优工具。它可以采集CPU调度、频点、进程线程时间片、堆内存、帧率等数据，并通过泳道图清晰地呈现给开发者。同时，SmartPerf通过GUI以可视化的方式进行分析。目前，该工具为开发者提供了五个分析模板：帧率分析、CPU/线程调度分析、应用启动分析、TaskPool分析和动效分析。
@@ -213,7 +213,7 @@ Vsync信号刷新时的Trace泳道图如下所示。
 
 ### 添加自定义Trace信息
 
-开发者可以根据业务需求，使用HiTraceMeter进行自定义Trace打点跟踪，具体使用细节可参考[《使用HiTraceMeter跟踪性能（ArkTS/JS）》](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-guidelines-arkts)和[《使用HiTraceMeter跟踪性能（C/C++）》](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-guidelines-ndk)。
+开发者可以根据业务需求，使用HiTraceMeter进行自定义Trace打点跟踪，具体使用细节可参考[《使用HiTraceMeter跟踪性能（ArkTS/JS）》](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-guidelines-arkts)和[《使用HiTraceMeter跟踪性能（C/C++）》](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-guidelines-ndk)。
 
 添加自定义Trace后，可在SmartPerf-Host调试工具上查看。自定义Trace将以独立泳道的形式呈现在对应进程下。下图展示了两条泳道，使用了startTrace和finishTrace方法，表示程序运行过程中指定标签从调用startTrace到调用finishTrace的耗时统计。图中记录了CUSTOM\_TRACE\_TAG\_1和CUSTOM\_TRACE\_TAG\_2两个标签的耗时统计。
 

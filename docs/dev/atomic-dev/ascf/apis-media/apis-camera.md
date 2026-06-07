@@ -1,6 +1,6 @@
 ---
 title: "相机"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-camera
+original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-camera
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 has.createCameraContext(): CameraContext
 
-创建[camera](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-camera)上下文CameraContext对象。
+创建[camera](/docs/dev/atomic-dev/ascf/components-media-components/components-camera)上下文CameraContext对象。
 
 **起始版本：** 1.0.4
 
@@ -40,7 +40,7 @@ CameraContext.startRecord(Object object)
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.CAMERA**、**ohos.permission.MICROPHONE**。
-2. 需要用户授权 **[scope.camera](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)** 权限，录像场景还需授权 **[scope.record](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)** 权限。
+2. 需要用户授权 **[scope.camera](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)** 权限，录像场景还需授权 **[scope.record](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)** 权限。
 
 **参数：**
 
@@ -135,7 +135,7 @@ CameraContext.takePhoto(Object object)
 **需要权限：**
 
 1. 在module.json5中声明ohos.permission.CAMERA、ohos.permission.MICROPHONE。
-2. 需要用户授权 **[scope.camera](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)** 权限，录像场景还需授权 **[scope.record](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)** 权限。
+2. 需要用户授权 **[scope.camera](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)** 权限，录像场景还需授权 **[scope.record](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)** 权限。
 
 **参数：**
 

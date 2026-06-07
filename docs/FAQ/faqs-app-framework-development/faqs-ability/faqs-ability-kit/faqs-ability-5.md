@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何主动退出当前应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-5
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-5
 ---
 
 

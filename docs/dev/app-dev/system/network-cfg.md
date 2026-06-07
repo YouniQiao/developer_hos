@@ -1,6 +1,6 @@
 ---
 title: "network-cfg工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-cfg
+original_url: /docs/dev/app-dev/system/network-cfg
 format: md
 ---
 
@@ -13,7 +13,7 @@ network-cfg工具从API version 20开始支持。
 
 ## 环境要求
 
-在使用本工具前，开发者需要先获取[hdc工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)，执行hdc shell。
+在使用本工具前，开发者需要先获取[hdc工具](/docs/dev/app-dev/system/hdc)，执行hdc shell。
 
 ## network-cfg命令工具列表
 

@@ -1,6 +1,6 @@
 ---
 title: "动画帧"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-animate-frame
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-js/ui-js-interpolator-animation/ui-js-animate-frame
 format: md
 ---
 

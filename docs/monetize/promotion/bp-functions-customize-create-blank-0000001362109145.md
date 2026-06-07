@@ -1,7 +1,7 @@
 ---
 title: "使用空白规则创建"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-create-blank-0000001362109145
+original_url: /docs/monetize/promotion/bp-functions-customize-create-blank-0000001362109145
 format: md
 ---
 
@@ -23,8 +23,8 @@ format: md
 
    ![](./img/f78bef03ff30.png) 
 
-   - 如果需要在指定日期进行自动放量调整，则请选择“放量模板”来创建自定义投放规则，具体请参见[使用放量模板创建](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-create-template-0000001309390054)。
-   - 如果需要在指定日期进行自动调整日预算，则请选择“日预算自动调整模板”来创建自定义投放规则，具体请参见[使用日预算自动调整模板创建](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-customize-create-daily-budget-0000001309230222)。
+   - 如果需要在指定日期进行自动放量调整，则请选择“放量模板”来创建自定义投放规则，具体请参见[使用放量模板创建](/docs/monetize/promotion/bp-functions-customize-create-template-0000001309390054)。
+   - 如果需要在指定日期进行自动调整日预算，则请选择“日预算自动调整模板”来创建自定义投放规则，具体请参见[使用日预算自动调整模板创建](/docs/monetize/promotion/bp-functions-customize-create-daily-budget-0000001309230222)。
 
    ![](./img/31da64df06a7.png "点击放大")
 

@@ -1,7 +1,7 @@
 ---
 title: "鲸鸿动能服务商管理制度"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-jinhondongnfuwushanguanlizhidu-0000001861670477
+original_url: /docs/monetize/promotion/ads-jinhondongnfuwushanguanlizhidu-0000001861670477
 format: md
 ---
 

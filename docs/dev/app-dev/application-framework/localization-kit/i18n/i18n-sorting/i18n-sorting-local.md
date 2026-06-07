@@ -1,6 +1,6 @@
 ---
 title: "本地习惯排序"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-sorting-local
+original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-sorting/i18n-sorting-local
 format: md
 ---
 

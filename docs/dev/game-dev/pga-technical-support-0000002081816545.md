@@ -1,6 +1,6 @@
 ---
 title: "PGA技术支持"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pga-technical-support-0000002081816545
+original_url: /docs/dev/game-dev/pga-technical-support-0000002081816545
 format: md
 ---
 

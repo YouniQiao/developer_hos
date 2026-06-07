@@ -1,7 +1,7 @@
 ---
 format: md
 title: "napi_module结构体字段描述解析"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-37
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-37
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何将Web组件加载的HTML页面转化并保存为PDF文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-95
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-95
 ---
 
 

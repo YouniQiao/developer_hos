@@ -1,13 +1,13 @@
 ---
 title: "资源分类与访问"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access
+original_url: /docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access
 ---
 
 ## 功能介绍
 
 在应用开发中，常需使用字符串、颜色、字体、间距和图标等资源。为了让应用在不同设备（如手机、平板、车机）和配置（如语言、屏幕密度、颜色模式）下都能提供最佳体验，系统支持通过资源动态匹配机制，自动为各类场景选取最合适的资源。本文档将介绍资源类型与组织方式，并提供资源开发指导。
 
-根据来源差异，资源可分为系统资源和应用资源。系统资源是系统提供的资源，开发者可以通过[主题图标库](https://developer.huawei.com/consumer/cn/doc/design-guides/system-icons-0000001929854962)、[系统色彩全量表](https://developer.huawei.com/consumer/cn/doc/design-guides/color-0000001776857164#section17672143841113)、[字体](https://developer.huawei.com/consumer/cn/doc/design-guides/font-0000001828772001#section107781129418)获取系统图标、颜色、字体等资源信息。其中symbol图标还可通过[SymbolGlyph](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-symbolglyph)对图标颜色等进一步设置。应用资源是开发者在应用中自定义的资源，可以利用资源文件管理资源在不同的设备或配置中的表现。
+根据来源差异，资源可分为系统资源和应用资源。系统资源是系统提供的资源，开发者可以通过[主题图标库](/docs/design/general-design-basics/visual-design/harmonyos-symbol)、[系统色彩全量表](/docs/design/general-design-basics/visual-design/color#section17672143841113)、[字体](/docs/design/general-design-basics/visual-design/font#section107781129418)获取系统图标、颜色、字体等资源信息。其中symbol图标还可通过[SymbolGlyph](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-symbolglyph)对图标颜色等进一步设置。应用资源是开发者在应用中自定义的资源，可以利用资源文件管理资源在不同的设备或配置中的表现。
 
 ## 资源分类
 
@@ -294,8 +294,8 @@ string资源配置attr属性示例如下，其中string1字符串被标记为不
   ![](./img/51c9530c.png)
 
   + 若string.json中使用多个占位符的情况，例如资源值value中存在%1$s和%2$d两个占位符，需要通过$r('app.string.label', 'aaa', 444)形式访问。其中label为资源名称name，'aaa'和444用来替代占位符。
-  + 针对同一个资源，$r获取的资源信息Resource对象中的资源ID在应用重新编译时会发生变化，并非固定值，不建议缓存资源ID。如果确实需要缓存资源ID，需要对资源ID进行固定，具体请参考[固定资源ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restool#固定资源id)。
-  + rawfile的native访问方式请参考[Rawfile开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawfile-guidelines)。
+  + 针对同一个资源，$r获取的资源信息Resource对象中的资源ID在应用重新编译时会发生变化，并非固定值，不建议缓存资源ID。如果确实需要缓存资源ID，需要对资源ID进行固定，具体请参考[固定资源ID](/docs/dev/app-dev/system/restool#固定资源id)。
+  + rawfile的native访问方式请参考[Rawfile开发指导](/docs/dev/ndk-dev/rawfile-guidelines)。
 
   [资源文件示例](#资源文件示例)中显示了.json文件内容，包含color.json、string.json和plural.json，访问应用资源时需先了解.json文件的使用规范。访问示例如下：
 
@@ -345,7 +345,7 @@ string资源配置attr属性示例如下，其中string1字符串被标记为不
 
 ![](./img/581f8faa.png)
 
-若在HAR模块访问HAR自身资源时，在API version 22及之前版本，中间码HAR、字节码HAR通过资源ID相关接口访问资源时，因ID无效会抛出异常；从API version 23开始，若将[compatibleSdkVersion](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section45865492619)配置为23及以上，则在当前Module的[AbilityStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilitystage)的onCreate()回调执行后，中间码HAR、字节码HAR通过资源ID相关接口可以正常访问资源。
+若在HAR模块访问HAR自身资源时，在API version 22及之前版本，中间码HAR、字节码HAR通过资源ID相关接口访问资源时，因ID无效会抛出异常；从API version 23开始，若将[compatibleSdkVersion](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section45865492619)配置为23及以上，则在当前Module的[AbilityStage](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/abilitystage)的onCreate()回调执行后，中间码HAR、字节码HAR通过资源ID相关接口可以正常访问资源。
 
 ### 访问跨HAP/HSP包资源
 
@@ -511,7 +511,7 @@ Image($r('sys.media.ohos_app_icon'))
 * 如果限定词目录中包含移动国家码和移动网络码、语言、文字、横竖屏、设备类型、颜色模式限定词，则对应限定词的取值必须与当前的设备状态完全一致，该目录才能够参与设备的资源匹配。例如，限定词目录zh\_CN-car-ldpi不能参与en\_US设备的资源匹配。
 * 如果存在多个屏幕密度限定词目录，则优先向上匹配最接近的屏幕密度限定词目录，否则向下匹配最为接近的屏幕密度限定词目录。例如，假设存在限定词目录xldpi和xxldpi，设备屏幕密度为xxldpi，则会匹配xxldpi限定词目录。
 
-关于应用界面加载资源的更多规则，请参考[国际化和本地化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-l10n)文档。
+关于应用界面加载资源的更多规则，请参考[国际化和本地化](/docs/dev/app-dev/application-framework/localization-kit/i18n-l10n)文档。
 
 ### 获取指定配置的资源
 

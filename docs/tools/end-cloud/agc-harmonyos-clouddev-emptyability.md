@@ -2,7 +2,7 @@
 
 title: "通用云开发模板"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-emptyability
+original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-emptyability
 format: md
 ---
 

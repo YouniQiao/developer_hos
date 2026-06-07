@@ -1,7 +1,7 @@
 ---
 title: "动态壁纸设计指导及规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-specifications-0000001055029722
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/livewallpaper-0000001054851128/livewallpaper-specifications-0000001055029722
 ---
 
 
@@ -17,9 +17,9 @@ import MergeTable from '@site/src/components/MergeTable';
 
 步骤一：使用设计相关软件进行制图。
 
-步骤二：根据“[动态壁纸测试规范](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-test-0000001057818928#section209567011516)”自检自查。
+步骤二：根据“[动态壁纸测试规范](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/livewallpaper-test-0000001057818928#section209567011516)”自检自查。
 
-步骤三：根据“[动态壁纸上传指南](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-upload-0000001055068451#section12967112911314)”上传到开发者联盟主题中心。
+步骤三：根据“[动态壁纸上传指南](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/livewallpaper-upload-0000001055068451#section12967112911314)”上传到开发者联盟主题中心。
 
 ## 3. 动态壁纸制作规范
 

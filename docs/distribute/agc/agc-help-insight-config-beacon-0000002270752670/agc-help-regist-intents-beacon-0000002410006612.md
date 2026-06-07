@@ -1,6 +1,6 @@
 ---
 title: "意图注册"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-regist-intents-beacon-0000002410006612
+original_url: /docs/distribute/agc/agc-help-insight-config-beacon-0000002270752670/agc-help-regist-intents-beacon-0000002410006612
 format: md
 ---
 

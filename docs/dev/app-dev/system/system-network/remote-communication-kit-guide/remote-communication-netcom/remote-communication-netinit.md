@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发起HTTP请求，获取响应"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netinit
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit
 format: md
 ---
 
 
-* **[发送网络请求（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netsend-arkts)**
-* **[取消网络请求（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcancle-arkts)**
-* **[关闭会话（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netclose-arkts)**
-* **[发送网络请求（C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netsend-c)**
-* **[取消网络请求（C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netcancle-c)**
-* **[关闭会话（C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netclose-c)**
+* **[发送网络请求（ArkTS）](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netsend-arkts)**
+* **[取消网络请求（ArkTS）](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netcancle-arkts)**
+* **[关闭会话（ArkTS）](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netclose-arkts)**
+* **[发送网络请求（C++）](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netsend-c)**
+* **[取消网络请求（C++）](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netcancle-c)**
+* **[关闭会话（C++）](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netclose-c)**

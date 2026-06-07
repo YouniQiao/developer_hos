@@ -1,7 +1,7 @@
 ---
 title: "堆栈可视化"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-debug-native-parallel-stacks
+original_url: /docs/tools/coding-debug/ide-debug-native-parallel-stacks
 format: md
 ---
 

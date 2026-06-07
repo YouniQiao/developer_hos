@@ -1,6 +1,6 @@
 ---
 title: "ContractObligationMode"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-contractobligationmode-0000002328924941
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-contractobligationmode-0000002328924941
 format: md
 ---
 
@@ -9,4 +9,4 @@ format: md
 | --- | --- | --- | --- |
 | serviceType | O | String(500) | 产品功能。 |
 | personalCollectReason | O | String(500) | 个人信息采集用途。 |
-| serviceTypeInfos | O | `List&lt;[ServiceTypeInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-servicetypeinfo-0000002328805213)>` | 产品提供的功能。  数组长度不超过100。 |
+| serviceTypeInfos | O | `List&lt;[ServiceTypeInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-servicetypeinfo-0000002328805213)>` | 产品提供的功能。  数组长度不超过100。 |

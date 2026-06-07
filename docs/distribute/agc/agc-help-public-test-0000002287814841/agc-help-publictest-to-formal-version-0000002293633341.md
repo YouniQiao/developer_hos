@@ -1,6 +1,6 @@
 ---
 title: "测试版本转正式版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publictest-to-formal-version-0000002293633341
+original_url: /docs/distribute/agc/agc-help-public-test-0000002287814841/agc-help-publictest-to-formal-version-0000002293633341
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-introduction-0000002254916514
+original_url: /docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-introduction-0000002254916514
 format: md
 ---
 

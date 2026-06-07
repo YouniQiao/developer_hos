@@ -1,6 +1,6 @@
 ---
 title: "更多样例"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkitvectorcalculation-binocularinstructions
+original_url: /docs/dev/app-dev/ai/cannkitvectorcalculation-binocularinstructions
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "1001502003 输入参数值无效的可能原因和解决办法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-22
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-22
 format: md
 ---
 
@@ -23,8 +23,8 @@ format: md
 
    ![](./img/cd09e0e8.png)
 
-   * 若Client ID和APP ID不同：请检查module type为entry的模块下module.json5中的client\_id是否配置或配置的值是否正确，参考[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
+   * 若Client ID和APP ID不同：请检查module type为entry的模块下module.json5中的client\_id是否配置或配置的值是否正确，参考[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。
    * 若Client ID和APP ID相同：可无需配置Client ID。
-2. 请在AppGallery Connect中重新申请Profile文件并重新进行签名。在调试阶段，请参考[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)，完成Profile申请并重新手动签名；在发布阶段，请参考[申请发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)，完成Profile申请并重新手动签名。
+2. 请在AppGallery Connect中重新申请Profile文件并重新进行签名。在调试阶段，请参考[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)，完成Profile申请并重新手动签名；在发布阶段，请参考[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)，完成Profile申请并重新手动签名。
 3. 需要通过授权API（[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)）获取到匿名手机号，将其作为参数调用一键登录接口。
 4. 检查[authentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication)相关接口参数。

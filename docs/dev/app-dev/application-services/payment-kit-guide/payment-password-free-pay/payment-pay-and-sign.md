@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "支付并签约场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-pay-and-sign
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-pay-and-sign
 format: md
 ---
 
@@ -55,13 +55,13 @@ format: md
 1. 按照商户模型调用[直连商户预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-pas-prepay)或[服务商预下单](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-partner-pas-prepay)接口获取预支付ID（prepayId）。
 
    为保证支付订单的安全性和可靠性需要对请求body和请求头PayMercAuth对象内的入参排序拼接进行签名，可参考[签名规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-rest-overview#签名规则)。
-2. 构建订单信息参数[orderStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#orderstr)返回给客户端，业务接口请求示例代码可参考[业务接口请求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-server-connect#业务接口请求)。
+2. 构建订单信息参数[orderStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#orderstr)返回给客户端，业务接口请求示例代码可参考[业务接口请求](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-server-connect#业务接口请求)。
 
 ### 拉起华为支付收银台（端侧开发）
 
 使用[orderStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#orderstr)调用[requestPayment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-paymentservice#requestpayment)接口拉起Payment Kit支付收银台。
 
-支付并签约拉起支付收银台与商户基础支付场景处理逻辑一致，可参见[这里](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-payment-process#拉起华为支付收银台端侧开发)。
+支付并签约拉起支付收银台与商户基础支付场景处理逻辑一致，可参见[这里](/docs/dev/app-dev/application-services/payment-kit-guide/payment-payment-process#拉起华为支付收银台端侧开发)。
 
 ### 支付并签约结果处理（服务器开发）
 
@@ -76,7 +76,7 @@ format: md
 
 1. 需直接使用通知的完整内容进行验签。
 2. 验签前需要对返回数据进行排序拼接，sign字段是签名值，排序拼接后的待验签内容需要排除sign字段。
-3. 验签公钥使用[华为支付证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config#华为支付证书)。
+3. 验签公钥使用[华为支付证书](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config#华为支付证书)。
 
 ## 延伸和拓展
 

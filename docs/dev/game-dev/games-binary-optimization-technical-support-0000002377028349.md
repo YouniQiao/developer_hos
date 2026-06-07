@@ -1,6 +1,6 @@
 ---
 title: "二进制优化服务技术支持"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-technical-support-0000002377028349
+original_url: /docs/dev/game-dev/games-binary-optimization-technical-support-0000002377028349
 format: md
 ---
 

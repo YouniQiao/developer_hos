@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "相机旋转"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-native
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation
 format: md
 ---
 
 
-* **[适配相机旋转角度(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-angle-adaptation-native)**
-* **[相机旋转角度的术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term-native)**
+* **[适配相机旋转角度(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/camera-rotation-native/camera-rotation-angle-adaptation-native)**
+* **[相机旋转角度的术语](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term)**

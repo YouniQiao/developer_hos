@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "启动策略"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-start-guard-strategy
+original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-start-guard-strategy
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 3. 若开发者没有权限或用户未授权，则抛出相应错误码。若开发者有权限且用户已授权，则解析参数中传入的策略名称，判断策略是否存在。
 4. 若策略不存在，则抛出相应错误码；若存在，则查询该策略是否正在执行。
 5. 若查询的策略未执行，则正常启动策略，并记录启动状态；否则，抛出策略已在执行中的错误码。
-6. 策略启动后，系统时间被设置为不可修改，若管控发起应用在[请求用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-request-user-auth#接口说明)时没有设置应用配置信息或应用配置为不可卸载，会被设置为不可卸载。
+6. 策略启动后，系统时间被设置为不可修改，若管控发起应用在[请求用户授权](/docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-request-user-auth#接口说明)时没有设置应用配置信息或应用配置为不可卸载，会被设置为不可卸载。
 7. 当到了管控生效的时间，管控开始生效，拉起extension进程，执行TimeGuardExtensionAbility的onStart回调。
 
 ## 接口说明
@@ -39,7 +39,7 @@ format: md
 
 ## 开发前提
 
-启动管控策略需要申请用户授权，请先参考[请求用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-request-user-auth)章节完成用户授权。
+启动管控策略需要申请用户授权，请先参考[请求用户授权](/docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-request-user-auth)章节完成用户授权。
 
 ## 启动管控策略
 

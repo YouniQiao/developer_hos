@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何判断当前应用程序是Debug包还是Release包"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-61
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-61
 ---
 
 

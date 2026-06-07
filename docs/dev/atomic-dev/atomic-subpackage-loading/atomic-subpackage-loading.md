@@ -1,6 +1,6 @@
 ---
 title: "分包加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-subpackage-loading
+original_url: /docs/dev/atomic-dev/atomic-subpackage-loading/atomic-subpackage-loading
 format: md
 ---
 

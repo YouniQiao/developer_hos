@@ -1,6 +1,6 @@
 ---
 title: "使用WebSocket访问网络(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-websocket-guidelines
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/native-websocket-guidelines
 format: md
 ---
 

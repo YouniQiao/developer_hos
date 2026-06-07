@@ -1,6 +1,6 @@
 ---
 title: "Intents Search Rec Access Programme"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-search-rec-access-programme
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-event-rec/intents-event-rec-access-programme
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

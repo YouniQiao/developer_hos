@@ -1,6 +1,6 @@
 ---
 title: "分包异步化"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/asynchronous-subcontracting
+original_url: /docs/dev/atomic-dev/ascf/develop-subpackage-loading/asynchronous-subcontracting
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ![](./img/0e69e80a.png)
 
-开启[预加载](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-preloading)可能会影响通用分包的加载时长，**建议使用分包异步化时不配置[预加载](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-preloading)** 。
+开启[预加载](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-preloading)可能会影响通用分包的加载时长，**建议使用分包异步化时不配置[预加载](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-preloading)** 。
 
 ## 通用分包介绍
 
@@ -99,7 +99,7 @@ format: md
 
 在这个配置中，custom-button 自定义组件是跨分包引用组件， custom-button 在渲染时会使用内置组件 view 作为替代；在页面主要元素渲染完成后会下载 packageB 分包，占位组件就会被替换为对应的跨分包组件。
 
-可以使用[has.onLazyLoadError](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-app-event#hasonlazyloaderror)监听加载事件。
+可以使用[has.onLazyLoadError](/docs/dev/atomic-dev/ascf/apis-basis/apis-app-event#hasonlazyloaderror)监听加载事件。
 
 ## 引用通用分包的 JS
 

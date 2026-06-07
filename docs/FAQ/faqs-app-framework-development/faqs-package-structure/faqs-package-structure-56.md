@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用免安装的限制、字段解释以及如何自测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-56
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-56
 ---
 
 
@@ -12,4 +12,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **参考链接**
 
-[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)
+[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)

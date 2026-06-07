@@ -1,6 +1,6 @@
 ---
 title: "基于标准化数据结构的控件 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/components-based-on-uniform-data-structure
+original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/components-based-on-uniform-data-structure
 format: md
 ---
 

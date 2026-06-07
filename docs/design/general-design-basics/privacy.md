@@ -1,7 +1,7 @@
 ---
 title: 隐私
 sidebar_label: 隐私
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/privacy-0000001929972682
+original_url: /docs/design/general-design-basics/privacy
 format: md
 ---
 
@@ -25,13 +25,13 @@ format: md
 
 ### 按钮式授权控件
 
-按钮式授权控件是系统预置的临时授权能力，无需弹框授权，可通过用户主动触发临时获取用户数据。应用开发者仅需要像使用 Button 等组件那样集成到应用自己的页面即可。有关开发指南，请参阅 [按钮式控件开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-component-overview)
+按钮式授权控件是系统预置的临时授权能力，无需弹框授权，可通过用户主动触发临时获取用户数据。应用开发者仅需要像使用 Button 等组件那样集成到应用自己的页面即可。有关开发指南，请参阅 [按钮式控件开发指导](/docs/dev/app-dev/system/system-security/access-control/security-components/security-component-overview)
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619214101.16662885454319963359837582463340:50001231000000:2800:6AF82A485591A7BFAC55F49720F7C3AA277CB8286B1C39EAEC5C3B99EF5F6D98.png "点击放大")
 
 ### 选择式授权控件
 
-选择式授权控件是系统预置的临时数据选择能力。应用可通过这类控件临时获取图库、文件、相机、联系人等用户数据，无需弹框授权。有关开发指南，请参阅 [选择器控件开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup)
+选择式授权控件是系统预置的临时数据选择能力。应用可通过这类控件临时获取图库、文件、相机、联系人等用户数据，无需弹框授权。有关开发指南，请参阅 [选择器控件开发指导](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/system-app-startup)
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250619214101.25197673212552680869279042332306:50001231000000:2800:847F7DE8E2C2CDD5921C69E5F8E192D6B9FE5585D1508466477E9A34C7B607B8.png "点击放大")
 
@@ -62,7 +62,7 @@ format: md
 | 用于提供手机扫码和部分网页需要的上传图片功能 | 用于提供拍摄输入服务 |
 | 用于使用户外运动、穿戴设备天气推送、家庭空间成员内位置查看等 | 用于获取您的位置信息 |
 
-有关开发指南，请参阅 [应用权限使用理由开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#权限使用理由的文案内容规范)
+有关开发指南，请参阅 [应用权限使用理由开发指导](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#权限使用理由的文案内容规范)
 
 ## 用户不同意授权
 

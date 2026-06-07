@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在ArkTS侧如何引用Native侧使用napi_create_buffer接口构造的对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-58
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-58
 ---
 
 

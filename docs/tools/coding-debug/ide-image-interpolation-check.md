@@ -1,7 +1,7 @@
 ---
 title: "@correctness/image-interpolation-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-image-interpolation-check
+original_url: /docs/tools/coding-debug/ide-image-interpolation-check
 format: md
 ---
 

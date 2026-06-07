@@ -1,6 +1,6 @@
 ---
 title: "地址流转至车机"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-address-hop
+original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-implement-navi-hop/car-address-hop
 format: md
 ---
 
@@ -35,7 +35,7 @@ value是一个Json格式的字符串，具体属性说明如下：
 
 1. 能力配置。
 
-   碰一碰地址流转场景下，metadata的name取值为carHopCapability，value取值应为**carHopAddress**，具体配置请参考[配置能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-preparations#配置能力)。示例代码如下所示：
+   碰一碰地址流转场景下，metadata的name取值为carHopCapability，value取值应为**carHopAddress**，具体配置请参考[配置能力](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare#配置能力)。示例代码如下所示：
 
    ```
    "metadata": [

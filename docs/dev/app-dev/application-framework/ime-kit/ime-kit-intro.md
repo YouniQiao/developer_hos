@@ -1,6 +1,6 @@
 ---
 title: "IME Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ime-kit-intro
+original_url: /docs/dev/app-dev/application-framework/ime-kit/ime-kit-intro
 format: md
 ---
 

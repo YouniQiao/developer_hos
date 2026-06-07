@@ -1,13 +1,13 @@
 ---
 title: "其他问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-others
+original_url: /docs/dev/atomic-dev/ascf/faqs-others/faqs-others
 format: md
 ---
 
 
-* **[在AGC上传ASCF元服务app包不通过返回错误码9](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-others-agc-upload-errorcode9)**
-* **[转换为ASCF框架后运行白屏或异常](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-others-running-abnormally)**
-* **[启用热重载功能修改js/json文件不生效](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-others-hot-reload)**
-* **[使用云调试安装包失败](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-others-cloud-debugging)**
-* **[uni-App转换ASCF常见问题](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-uniapp-ascf)**
-* **[button组件width和实际不一致问题](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-button-width-problem)**
+* **[在AGC上传ASCF元服务app包不通过返回错误码9](/docs/dev/atomic-dev/ascf/faqs-others/faqs-others-agc-upload-errorcode9)**
+* **[转换为ASCF框架后运行白屏或异常](/docs/dev/atomic-dev/ascf/faqs-others/faqs-others-running-abnormally)**
+* **[启用热重载功能修改js/json文件不生效](/docs/dev/atomic-dev/ascf/faqs-others/faqs-others-hot-reload)**
+* **[使用云调试安装包失败](/docs/dev/atomic-dev/ascf/faqs-others/faqs-others-cloud-debugging)**
+* **[uni-App转换ASCF常见问题](/docs/dev/atomic-dev/ascf/faqs-others/faqs-uniapp-ascf)**
+* **[button组件width和实际不一致问题](/docs/dev/atomic-dev/ascf/faqs-others/faqs-button-width-problem)**

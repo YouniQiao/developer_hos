@@ -1,7 +1,7 @@
 ---
 format: md
 title: "发布ohpm提示错误：The version field: 12.5.0.0-20-dev in the oh-package.json5 file does not satisfy the semver specification"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-8
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-8
 ---
 
 

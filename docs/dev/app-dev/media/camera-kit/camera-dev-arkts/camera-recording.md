@@ -1,16 +1,16 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "录像(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-recording
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-recording
 format: md
 ---
 
 
-在开发相机应用时，需要先[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。
+在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 相机应用可通过调用和控制相机设备，完成预览、拍照和录像等基础操作。
 
-录像也是相机应用的最重要功能之一，录像是循环帧的捕获。对于录像的自定义配置，开发者可以参考[拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting)中的步骤4，设置分辨率、闪光灯、焦距、照片质量及旋转角度等信息。
+录像也是相机应用的最重要功能之一，录像是循环帧的捕获。对于录像的自定义配置，开发者可以参考[拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting)中的步骤4，设置分辨率、闪光灯、焦距、照片质量及旋转角度等信息。
 
 ## 开发步骤
 

@@ -2,7 +2,7 @@
 
 title: "同步云端代码至本地（可选）"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-sync
+original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-sync
 format: md
 ---
 

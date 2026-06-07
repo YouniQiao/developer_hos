@@ -1,7 +1,7 @@
 ---
 title: "变量：全局变量&lt;GlobalVariable&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-base-globalvar-0000002471235030
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-globalvar-0000002471235030
 format: md
 ---
 
@@ -124,7 +124,7 @@ format: md
 | src.state | 数值 | src对应的视频状态。  0——IDLE，闲置状态（透明视频不支持）  1——INITIALIZED，资源初始化  2——PREPARED，已准备状态  3——PLAYING，正在播放状态  4——PAUSED，暂停状态（透明视频不支持）  5——COMPLETED，播放至结尾状态  6——STOPPED，停止状态（透明视频不支持）  7——RELEASED，销毁状态 |
 | src.currentTime | 数值 | src对应的视频的播放进度，单位ms（透明视频不支持） |
 
-更多信息请参考：&lt;https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-t#avplayerstate9&gt;
+更多信息请参考：&lt;https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-t#avplayerstate9&gt
 
 <strong>锁屏灭屏时间</strong>
 

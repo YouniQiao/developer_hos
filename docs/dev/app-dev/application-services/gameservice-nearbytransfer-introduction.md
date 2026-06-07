@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-introduction
+original_url: /docs/dev/app-dev/application-services/gameservice-nearbytransfer-introduction
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "批量修改子任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-subtask-batchrevisemanage-0000001218535368
+original_url: /docs/monetize/promotion/marketapi-subtask-batchrevisemanage-0000001218535368
 format: md
 ---
 
@@ -42,7 +42,7 @@ format: md
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| subTasks | M | List&lt;[BatchUpdateSubTaskAM](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-batchupdatesubtask-0000001182852766#ZH-CN_TOPIC_0000001741282936__zh-cn_topic_0000001176165925_table134188155317)&gt; | 子任务 |
+| subTasks | M | List&lt;[BatchUpdateSubTaskAM](/docs/monetize/promotion/marketapi-modle-batchupdatesubtask-0000001182852766#ZH-CN_TOPIC_0000001741282936__zh-cn_topic_0000001176165925_table134188155317)&gt; | 子任务 |
 | customerId | O | String | 授权合作伙伴投放时必须携带，该字段请使用<strong>投放操作账户</strong>登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)后在“我的账号信息”中查看到的“华为账号”。  长度范围1~64。 |
 
 ## 请求示例
@@ -68,7 +68,7 @@ Content-Type: application/json
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码，参考[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码，参考[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 
 ## 响应示例

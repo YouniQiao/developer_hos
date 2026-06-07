@@ -1,6 +1,6 @@
 ---
 title: "元服务生态运营规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-ecosystem-operations
+original_url: /docs/dev/atomic-dev/atomic-service-specifications/atomic-service-ecosystem-operations
 format: md
 ---
 

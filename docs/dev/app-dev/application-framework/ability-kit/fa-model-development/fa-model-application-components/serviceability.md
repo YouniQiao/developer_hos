@@ -1,13 +1,13 @@
 ---
 title: "ServiceAbility组件开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability
 format: md
 ---
 
 
-* **[ServiceAbility组件概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-overview)**
-* **[ServiceAbility组件配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-configuration)**
-* **[ServiceAbility的生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-lifecycle)**
-* **[创建ServiceAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-serviceability)**
-* **[启动ServiceAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-serviceability)**
-* **[连接ServiceAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connect-serviceability)**
+* **[ServiceAbility组件概述](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/serviceability-overview)**
+* **[ServiceAbility组件配置](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/serviceability-configuration)**
+* **[ServiceAbility的生命周期](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/serviceability-lifecycle)**
+* **[创建ServiceAbility](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/create-serviceability)**
+* **[启动ServiceAbility](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/start-serviceability)**
+* **[连接ServiceAbility](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/connect-serviceability)**

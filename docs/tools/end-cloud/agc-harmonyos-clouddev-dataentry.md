@@ -2,7 +2,7 @@
 
 title: "添加数据条目"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-dataentry
+original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-dataentry
 format: md
 ---
 

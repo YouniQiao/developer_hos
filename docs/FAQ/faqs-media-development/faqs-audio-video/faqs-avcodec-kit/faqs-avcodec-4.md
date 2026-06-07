@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取系统支持的编解码能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avcodec-4
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avcodec-4
 ---
 
 
@@ -25,4 +25,4 @@ OH_AVCapability *capability = OH_AVCodec_GetCapabilityByCategory(OH_AVCODEC_MIME
 
 **参考链接**
 
-[获取支持的编解码能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-supported-codecs)
+[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)

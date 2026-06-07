@@ -1,6 +1,6 @@
 ---
 title: "GPU counter"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-gpu-counter-0000002286844730
+original_url: /docs/dev/game-dev/games-hismartperf-gpu-counter-0000002286844730
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "分析应用的近场数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-location-sense-0000002511677079
+original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-location-sense-0000002511677079
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
    ![](../img/agc-help-anaiyze-app-location-sense-0000002511677079_0.png)
 
-   目前近场服务处于灰度开放阶段，使用服务之前，请先发送邮件[申请开通近场服务权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-apply-permission-0000002382902149#section1337155051819)。
+   目前近场服务处于灰度开放阶段，使用服务之前，请先发送邮件[申请开通近场服务权限](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-apply-permission-0000002382902149#section1337155051819)。
 
 #### [h2]核心指标
 

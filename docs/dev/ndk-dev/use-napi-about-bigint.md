@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口操作bigint类型值"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-bigint
+original_url: /docs/dev/ndk-dev/use-napi-about-bigint
 format: md
 ---
 
@@ -30,7 +30,7 @@ BigInt是ArkTS中用于表示任意精度整数的数据类型，它能够处理
 
 ## 使用示例
 
-Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
+Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
 
 本文cpp部分代码所需引用的头文件如下：
 

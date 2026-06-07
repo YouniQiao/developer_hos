@@ -1,6 +1,6 @@
 ---
 title: "订阅主线程超时事件（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-arkts
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events-arkts
 format: md
 ---
 
@@ -193,7 +193,7 @@ format: md
 
    ![](./img/50b17986.png)
 
-   启动主线程超时检测抓取trace的功能的前提是开发者使用[nolog版本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#nolog版本)并且关闭开发者模式。
+   启动主线程超时检测抓取trace的功能的前提是开发者使用[nolog版本](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#nolog版本)并且关闭开发者模式。
 
    ```
      @Entry

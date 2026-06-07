@@ -1,6 +1,6 @@
 ---
 title: "取消接入"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-cancel
+original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-cancel
 format: md
 ---
 

@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "快速验证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phonenumber
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-phone/account-get-phonenumber
 format: md
 ---
 
 
 ## 场景介绍
 
-当应用对获取的手机号时效性要求不高时，可使用Account Kit提供的手机号授权与快速验证能力，向用户发起手机号授权申请，经用户同意授权后，获取到手机号并为用户提供相应服务。以下对Account Kit提供的手机号授权与快速验证能力进行介绍，快速验证手机号功能还可使用场景化控件[快速验证手机号Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-getphonenumber)进行实现。
+当应用对获取的手机号时效性要求不高时，可使用Account Kit提供的手机号授权与快速验证能力，向用户发起手机号授权申请，经用户同意授权后，获取到手机号并为用户提供相应服务。以下对Account Kit提供的手机号授权与快速验证能力进行介绍，快速验证手机号功能还可使用场景化控件[快速验证手机号Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber)进行实现。
 
 ![](./img/9bc811c6.png)
 
@@ -48,10 +48,10 @@ format: md
 
 ## 开发前提
 
-1、在进行代码开发前，请先确认您已完成[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions)工作。
+1、在进行代码开发前，请先确认您已完成[开发准备](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-config-permissions)工作。
 
-* 若未配置签名和指纹，将报错[1001500001 应用指纹证书校验失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-1)。
-* 若未完成“获取您的手机号”权限申请，将报错[1001502014 应用未申请scopes或permissions权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-2)。
+* 若未配置签名和指纹，将报错[1001500001 应用指纹证书校验失败](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-1)。
+* 若未完成“获取您的手机号”权限申请，将报错[1001502014 应用未申请scopes或permissions权限](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-2)。
 
 2、设备需要登录华为账号，若未登录则拉起登录页面。
 

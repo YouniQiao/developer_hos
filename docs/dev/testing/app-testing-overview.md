@@ -1,6 +1,6 @@
 ---
 title: "HarmonyOS 开发者测试服务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-testing-overview
+original_url: /docs/dev/testing/app-testing-overview
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ## 单元测试
 
-HarmonyOS 的[单元测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ut)基于测试框架执行。框架由核心模块和扩展模块组成：核心模块提供测试运行所需的基础接口和执行逻辑，并通过插件化机制向外提供接入能力和运行时上下文；扩展模块在核心能力之上补充常用功能，例如用例超时、筛选、数据驱动和压力测试等，并以插件形式接入核心模块。
+HarmonyOS 的[单元测试](/docs/dev/testing/ut)基于测试框架执行。框架由核心模块和扩展模块组成：核心模块提供测试运行所需的基础接口和执行逻辑，并通过插件化机制向外提供接入能力和运行时上下文；扩展模块在核心能力之上补充常用功能，例如用例超时、筛选、数据驱动和压力测试等，并以插件形式接入核心模块。
 
 ## 应用与元服务体检
 
@@ -25,7 +25,7 @@ HarmonyOS 的[单元测试](https://developer.huawei.com/consumer/cn/doc/harmony
 
 ## 专项测试
 
-[专项测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/test-service)包括兼容性、稳定性、安全、性能、功耗、UX等，开发者可以结合各维度的应用质量建议，通过提供的多种专项测试工具来保障应用质量。如果需要对指定代码段进行性能测试，开发者可以使用 DevEco Studio [白盒性能测试框架](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perftest-guideline)。
+[专项测试](/docs/dev/testing/test-service)包括兼容性、稳定性、安全、性能、功耗、UX等，开发者可以结合各维度的应用质量建议，通过提供的多种专项测试工具来保障应用质量。如果需要对指定代码段进行性能测试，开发者可以使用 DevEco Studio [白盒性能测试框架](/docs/dev/testing/ut/arkxtest-guidelines/perftest-guideline)。
 
 ## 上架预检测试
 
@@ -33,9 +33,9 @@ HarmonyOS 的[单元测试](https://developer.huawei.com/consumer/cn/doc/harmony
 
 开发者可以根据实际情况，自主选择两种上架预检测试方法：
 
-如果开发者希望在本地开展上架预检测试，可以下载[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/publish-testing)在本地进行测试。
+如果开发者希望在本地开展上架预检测试，可以下载[DevEco Testing](/docs/dev/testing/publish-testing)在本地进行测试。
 
-如果开发者希望在云端开展测试，可以上传应用包至 [AGC云测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-introduction-0000002255036400)，使用云端设备进行测试。
+如果开发者希望在云端开展测试，可以上传应用包至 [AGC云测试](/docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-introduction-0000002255036400)，使用云端设备进行测试。
 
 ## 用户测试
 

@@ -1,6 +1,6 @@
 ---
 title: "弹出框焦点策略"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-focusable
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-dialog-focusable
 format: md
 ---
 
@@ -11,7 +11,7 @@ ArkUI的弹出框焦点策略可以设定是否中断用户当前操作，并聚
 
 ## 使用约束
 
-[openCustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-custom-dialog)和[CustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-custom-dialog)支持通过focusable参数来管理弹出框是否获取焦点。
+[openCustomDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-uicontext-custom-dialog)和[CustomDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-common-components-custom-dialog)支持通过focusable参数来管理弹出框是否获取焦点。
 
 ![](./img/693bb46c.png)
 

@@ -1,7 +1,7 @@
 ---
 title: "申请开通"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-rta-apply-0000001486467693
+original_url: /docs/monetize/promotion/bp-functions-rta-apply-0000001486467693
 format: md
 ---
 

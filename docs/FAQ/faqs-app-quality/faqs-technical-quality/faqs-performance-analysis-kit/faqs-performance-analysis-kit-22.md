@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取设备的CPU信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-22
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-22
 ---
 
 

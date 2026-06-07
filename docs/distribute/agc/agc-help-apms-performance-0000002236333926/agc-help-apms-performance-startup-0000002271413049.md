@@ -1,6 +1,6 @@
 ---
 title: "启动分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apms-performance-startup-0000002271413049
+original_url: /docs/distribute/agc/agc-help-apms-performance-0000002236333926/agc-help-apms-performance-startup-0000002271413049
 format: md
 ---
 

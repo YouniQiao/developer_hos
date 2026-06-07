@@ -1,6 +1,6 @@
 ---
 title: "打包快游戏"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-packing-0000002351893525
+original_url: /docs/dev/game-dev/games-quickgame-runtime-packing-0000002351893525
 format: md
 ---
 
@@ -72,4 +72,4 @@ format: md
 
 ### 案例
 
-[快游戏加载资源场景，运行时卡屏报错](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-case-0000002318064148#section397430191311)
+[快游戏加载资源场景，运行时卡屏报错](/docs/dev/game-dev/games-quickgame-case-0000002318064148#section397430191311)

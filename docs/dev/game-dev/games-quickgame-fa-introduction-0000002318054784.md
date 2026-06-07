@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-fa-introduction-0000002318054784
+original_url: /docs/dev/game-dev/games-quickgame-fa-introduction-0000002318054784
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "分析native内存"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-native-memory-analysis
+original_url: /docs/quality/native-memory-analysis
 format: md
 ---
 
@@ -27,7 +27,7 @@ DevEco Studio Profiler插件的Allocation模板可以帮助用户分析堆内存
 ![](./img/7db0350d.png)
 
 1. **谨慎同时录制ArkTS Allocation****：**由于Native Allocation和ArkTS Allocation同时录制会出现性能问题，建议在录制Native Allocation之前在第四步过滤选项中设置过滤ArkTS Allocation。
-2. **无法录制非[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#debug版本应用)：**当前规格仅支持抓取debug版本应用的native栈。如果抓取非debug版本应用，则获取不到栈信息。
+2. **无法录制非[debug版本应用](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#debug版本应用)：**当前规格仅支持抓取debug版本应用的native栈。如果抓取非debug版本应用，则获取不到栈信息。
 3. **留意录制按钮旁边的小火箭：**选中后，调优时进程会重启。如果需要录制进程从启动开始分配native内存情况，可以在点击录制按钮前选中小火箭。
 
 **DevEco Studio Profiler插件Allocation模板抓栈功能配置属性说明**
@@ -87,7 +87,7 @@ DevEco Studio Profiler插件的Allocation模板可以帮助用户分析堆内存
 
 ## 常见问题:
 
-问题：为什么抓非[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#debug版本应用)抓不到数据？
+问题：为什么抓非[debug版本应用](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#debug版本应用)抓不到数据？
 
 解答: 由于安全限制，profiler不支持抓非debug版本应用。
 

@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Scenario Fusion Kit常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-frequently-asked-questions
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions
 format: md
 ---
 
 
-* **[单击快速验证手机号按钮，无法拉起页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-1)**
-* **[打开应用功能跳转第三方应用失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-2)**
-* **[剪贴板粘贴框遮挡智能填充选择框](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-faq-3)**
+* **[单击快速验证手机号按钮，无法拉起页面](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions/scenario-fusion-faq-1)**
+* **[打开应用功能跳转第三方应用失败](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions/scenario-fusion-faq-2)**
+* **[剪贴板粘贴框遮挡智能填充选择框](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions/scenario-fusion-faq-3)**

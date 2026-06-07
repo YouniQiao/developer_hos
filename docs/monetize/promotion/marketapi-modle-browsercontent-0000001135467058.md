@@ -1,7 +1,7 @@
 ---
 title: "BrowserContent"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-browsercontent-0000001135467058
+original_url: /docs/monetize/promotion/marketapi-modle-browsercontent-0000001135467058
 format: md
 ---
 

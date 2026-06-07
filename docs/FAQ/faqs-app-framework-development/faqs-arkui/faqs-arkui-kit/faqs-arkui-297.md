@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何进行截屏并获取截屏内容"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-297
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-297
 ---
 
 

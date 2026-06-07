@@ -1,7 +1,7 @@
 ---
 title: "查询账户消耗明细"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-balancedetail-0000001181826443
+original_url: /docs/monetize/promotion/marketapi-balancedetail-0000001181826443
 format: md
 ---
 
@@ -74,7 +74,7 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码，参考[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码，参考[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 | totalMoney | M | double | 总消耗。  总消耗=现金消耗+赠送金消耗+置换金消耗+耀星券消耗 |
 | cashCostMoney | M | double | 现金消耗金额。 |
@@ -82,7 +82,7 @@ client_id:***
 | exchangeCostMoney | M | double | 置换金消耗金额。 |
 | starCouponCostMoney | M | double | 耀星券消耗金额。 |
 | currency | M | String | 币种。 |
-| spentDetails | O | List&lt;[SpentDetail](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-spentdetail-0000001135626862)&gt; | 消耗明细。 |
+| spentDetails | O | List&lt;[SpentDetail](/docs/monetize/promotion/marketapi-modle-spentdetail-0000001135626862)&gt; | 消耗明细。 |
 | totalCount | M | Integer | 记录数。 |
 
 ## 响应示例

@@ -1,6 +1,6 @@
 ---
 title: "使用Neon指令扩展"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/neon-guide
+original_url: /docs/dev/ndk-dev/neon-guide
 format: md
 ---
 

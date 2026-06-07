@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "修改数字盾密码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-modifypwd
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-modifypwd
 format: md
 ---
 
@@ -51,8 +51,8 @@ format: md
    import { hilog } from '@kit.PerformanceAnalysisKit';
    import { common } from '@kit.AbilityKit';
    ```
-2. 修改密码前，需从服务器获取当前账号在[设置数字盾密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd)时获取的authID。
-3. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts)，初始化签名会话。
+2. 修改密码前，需从服务器获取当前账号在[设置数字盾密码](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd)时获取的authID。
+3. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts)，初始化签名会话。
 4. 调用数字盾服务修改密码接口，发起数字盾密码修改申请。
 
    ```
@@ -86,4 +86,4 @@ format: md
    let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
    const authToken: trustedAuthentication.AuthToken = await ModifyPwd(challenge, context);
    ```
-5. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts), 对通过修改密码获取到的authToken数据进行签名，并结束会话。
+5. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts), 对通过修改密码获取到的authToken数据进行签名，并结束会话。

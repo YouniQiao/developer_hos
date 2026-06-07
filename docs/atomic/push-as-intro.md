@@ -1,6 +1,6 @@
 ---
 title: "Push Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-intro
+original_url: /docs/dev/atomic-dev/atomic-push-development/push-as-intro
 format: md
 ---
 
@@ -19,7 +19,7 @@ Push Kit通过提供系统级长连接，即使元服务进程不在也能实时
 
 ![](./img/5a723e1c.png "点击放大")
 
-有关各场景的详细说明请参见[通知提示场景](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-notification-0000001793074217#section162699204401)。
+有关各场景的详细说明请参见[通知提示场景](/docs/design/system-features/features/notification#section162699204401)。
 
 ![](./img/036bff0a.png)
 
@@ -31,8 +31,8 @@ Push Kit支持元服务推送以下消息类型：
 
 | 消息类型 | 说明 |
 | --- | --- |
-| [基于账号的服务通知订阅消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-subscription) | 当登录华为账号的用户同意订阅消息后，元服务可基于服务通知模板向用户发送订阅消息。当前仅支持一次性订阅模板。  适用场景：适用于外卖取餐、物流订单、活动提醒等各类服务通知场景，实际支持场景以服务通知提供的模板类型为准。 |
-| [基于账号的服务动态消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-timeline) | 通过服务动态消息，开发者可以基于订单向用户推送关键节点的动态消息，及时提醒用户订单进度。  适用场景：外卖自取、外卖配送、酒店民宿入住、航班出行等场景。 |
+| [基于账号的服务通知订阅消息](/docs/dev/atomic-dev/push-as-subscription/push-as-subscription) | 当登录华为账号的用户同意订阅消息后，元服务可基于服务通知模板向用户发送订阅消息。当前仅支持一次性订阅模板。  适用场景：适用于外卖取餐、物流订单、活动提醒等各类服务通知场景，实际支持场景以服务通知提供的模板类型为准。 |
+| [基于账号的服务动态消息](/docs/dev/atomic-dev/atomic-push-development/push-as-timeline) | 通过服务动态消息，开发者可以基于订单向用户推送关键节点的动态消息，及时提醒用户订单进度。  适用场景：外卖自取、外卖配送、酒店民宿入住、航班出行等场景。 |
 
 ## 约束和限制
 
@@ -69,4 +69,4 @@ Push Kit致力于提供安全可靠的系统级消息发送通道，保障消息
 
 ### 支持的国家/地区
 
-Push Kit当前[支持的设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-kit-introduction#section193391236104017)中Wearable设备支持的国家请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-country)，其他设备仅支持中国境内（不包含中国香港、中国澳门、中国台湾）。
+Push Kit当前[支持的设备](/docs/dev/app-dev/application-services/push-kit-guide/push-kit-introduction#section193391236104017)中Wearable设备支持的国家请参见[支持的国家/地区](/docs/dev/app-dev/application-services/push-country)，其他设备仅支持中国境内（不包含中国香港、中国澳门、中国台湾）。

@@ -1,11 +1,11 @@
 ---
 format: md
 title: "解码后数据帧送显的两种方式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-7
+original_url: /docs/FAQ/faqs-graphic-development/faqs-arkgraphics2d-kit/faqs-arkgraphics-2d-7
 ---
 
 
-方式一：使用 [NativeImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-image-guidelines) 和 [XComponent surface 模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)。步骤如下：
+方式一：使用 [NativeImage](/docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-image-guidelines) 和 [XComponent surface 模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)。步骤如下：
 
 1. 将 NativeImage 对应的 NativeWindow 与解码器绑定（surface 模式）。
 2. 获取解码器输出的纹理。

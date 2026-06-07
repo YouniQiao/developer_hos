@@ -1,6 +1,6 @@
 ---
 title: "配置发布国家或地区"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-area-0000002399129161
+original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-area-0000002399129161
 format: md
 ---
 
@@ -19,4 +19,4 @@ format: md
    * 选择“特定国家或地区”：表示游戏仅发布在所选的国家或地区。若勾选“新国家或区域”，游戏将自动发布到未来新增的国家或地区。
 
    ![](../img/agc-help-release-game-area-0000002399129161_1.png)
-4. 若您选择了“所有国家或地区”，或者“特定国家或地区”中包含非中国大陆的国家或地区，则要求同意“个人信息出境授权声明”，否则可能导致您的游戏无法提交审核。个人信息出境授权声明的详情请参见[个人信息出境授权声明](https://developer.huawei.com/consumer/cn/doc/app/20250303)。
+4. 若您选择了“所有国家或地区”，或者“特定国家或地区”中包含非中国大陆的国家或地区，则要求同意“个人信息出境授权声明”，否则可能导致您的游戏无法提交审核。个人信息出境授权声明的详情请参见[个人信息出境授权声明](/docs/distribute/app-dist/app-market/x20240513/x20250303)。

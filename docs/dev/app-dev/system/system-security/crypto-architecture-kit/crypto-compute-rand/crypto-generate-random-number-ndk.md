@@ -1,6 +1,6 @@
 ---
 title: "安全随机数生成(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-generate-random-number-ndk
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number-ndk
 format: md
 ---
 

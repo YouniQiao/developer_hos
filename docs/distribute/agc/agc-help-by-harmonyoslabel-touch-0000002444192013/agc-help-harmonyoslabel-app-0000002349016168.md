@@ -1,14 +1,14 @@
 ---
 title: "创建标签"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-app-0000002349016168
+original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-harmonyoslabel-app-0000002349016168
 format: md
 ---
 
 
 #### 前提条件
 
-1. 您已开通[近场服务权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-apply-permission-0000002382902149#section1337155051819)。
-2. 您的应用/元服务已成功[创建应用链接](https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-touch-createlink-0000002410592802#section82191942376)/[创建元服务链接](https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-touch-createlink-0000002410592802#section8416539123614)。
+1. 您已开通[近场服务权限](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-apply-permission-0000002382902149#section1337155051819)。
+2. 您的应用/元服务已成功[创建应用链接](/docs/distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-createlink-0000002410592802#section82191942376)/[创建元服务链接](/docs/distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-createlink-0000002410592802#section8416539123614)。
 
 #### 创建应用标签
 
@@ -27,7 +27,7 @@ format: md
    | 模块 | 配置项 | 填写说明 |
    | --- | --- | --- |
    | 基本信息 | 标签名称 | 填写应用标签的名称，长度为0~128个字符。 |
-   | 选择链接名称 | * 您可以选择在App Linking中已成功发布且关联本应用的应用链接。如果链接数量较多，您可以输入关键词进行模糊筛选。 * 如果您还没有成功发布应用链接，可点击页面的“去创建”跳转至“App Linking > 应用链接”页面，[创建应用链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp#在agc为应用创建关联的网址域 名)。 |
+   | 选择链接名称 | * 您可以选择在App Linking中已成功发布且关联本应用的应用链接。如果链接数量较多，您可以输入关键词进行模糊筛选。 * 如果您还没有成功发布应用链接，可点击页面的“去创建”跳转至“App Linking > 应用链接”页面，[创建应用链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在agc为应用创建关联的网址域 名)。 |
    | 域名 | 当您选中具体的应用链接名称后，系统会自动显示该链接的域名。 |
    | 服务路径 | 如果您需要实现碰一碰该标签，打开应用内指定页面，可以在此输入自定义域名路径，长度为0~256个字符。  例如：/path1/path2/path3 |
    | 自定义参数 | 如果您需要实现碰一碰该标签，打开应用内指定页面，可以在此输入自定义参数，长度为0~256个字符。  需要按key=value的键值对形式输入，多个键值对之间以“&”分隔。  例如：key1=value1&key2=value2&key3=value3 |
@@ -62,8 +62,8 @@ format: md
    | 模块 | 配置项 | 填写说明 |
    | --- | --- | --- |
    | 基本信息 | 标签名称 | 填写元服务标签的名称，长度为0~128个字符。 |
-   | 选择链接名称 | * 您可以选择在App Linking中已生效且关联本元服务的元服务链接。如果链接数量较多，您可以输入关键词进行模糊筛选。 * 如果您还没有成功发布元服务链接，可点击页面的“去创建”跳转至“基础服务 > 元服务链接”页面，[创建元服务链接](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking#section48651523147)。 |
-   | 自定义参数 | 当您选中具体的元服务链接名称后，系统会自动显示您在创建元服务链接时[设置的自定义参数](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking#section125451919568)。  以key=value的键值对形式展示，多个键值对之间以“&”分隔。  例如：key1=value1&key2=value2&key3=value3 |
+   | 选择链接名称 | * 您可以选择在App Linking中已生效且关联本元服务的元服务链接。如果链接数量较多，您可以输入关键词进行模糊筛选。 * 如果您还没有成功发布元服务链接，可点击页面的“去创建”跳转至“基础服务 > 元服务链接”页面，[创建元服务链接](/docs/dev/atomic-dev/atomic-linking/atomic-applinking#section48651523147)。 |
+   | 自定义参数 | 当您选中具体的元服务链接名称后，系统会自动显示您在创建元服务链接时[设置的自定义参数](/docs/dev/atomic-dev/atomic-linking/atomic-applinking#section125451919568)。  以key=value的键值对形式展示，多个键值对之间以“&”分隔。  例如：key1=value1&key2=value2&key3=value3 |
    | 跳转链接预览 | * 您可以点击![](../img/agc-help-harmonyoslabel-app-0000002349016168_9.png)，复制跳转链接。 * 新增元服务标签成功后，元服务链接的有效期将变更为长期有效。 |
    | 标签类型 | 请选择“碰一碰”类型。 |
    | 服务卡片信息 | Logo | 选择作为卡片Logo的图片。  图片为JPG/JPEG/PNG格式，小于100KB，长宽比1:1（推荐尺寸为200\*200）。 |

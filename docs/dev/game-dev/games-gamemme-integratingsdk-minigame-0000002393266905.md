@@ -1,6 +1,6 @@
 ---
 title: "JS（小游戏）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-minigame-0000002393266905
+original_url: /docs/dev/game-dev/games-gamemme-integratingsdk-minigame-0000002393266905
 has_merged_cells: true
 format: md
 ---

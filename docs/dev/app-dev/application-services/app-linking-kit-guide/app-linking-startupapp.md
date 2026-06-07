@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过App Linking应用链接拉起指定应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startupapp
+original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 ![](./img/af1b29ba.png)
 
-该能力目前仅适用于5.0.0(12)及以上版本的HarmonyOS应用，如果开发的是元服务，请参考[使用元服务链接跳转元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-applinking)。
+该能力目前仅适用于5.0.0(12)及以上版本的HarmonyOS应用，如果开发的是元服务，请参考[使用元服务链接跳转元服务](/docs/dev/atomic-dev/atomic-linking/atomic-applinking)。
 
 ## 原理机制
 
@@ -27,13 +27,13 @@ format: md
 
 ## 前提条件
 
-已[开通App Linking服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-enable-applinking)。
+已[开通App Linking服务](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-preparations/applinking-enable-applinking)。
 
 ## 开发流程
 
 | 角色 | 操作步骤 |
 | --- | --- |
-| 云端开发 | [开通App Linking服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-enable-applinking)。 |
+| 云端开发 | [开通App Linking服务](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-preparations/applinking-enable-applinking)。 |
 | 云端开发 | [建立域名与应用关联关系](#建立域名与应用关联关系)。 |
 | 云端开发 | [在AGC为应用创建关联的网址域名](#在agc为应用创建关联的网址域名)。 |
 | 客户端开发 | [在module.json5中配置关联的网址域名](#在modulejson5中配置关联的网址域名)。 |
@@ -72,7 +72,7 @@ format: md
 
    | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
    | --- | --- | --- | --- |
-   | appIdentifier | M | String | 填写创建应用时生成的APP ID，获取方式请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 |
+   | appIdentifier | M | String | 填写创建应用时生成的APP ID，获取方式请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 |
    | index | O | Integer | 当App Linking匹配到多个应用时，若希望直接拉起某个指定应用，可以使用index来设置应用跳转的优先级。  index取值范围为[-100,100]，可以重复，不可以为空值，值越大表示优先级越高。  - 如果App Linking匹配到多个应用，但是都未配置index字段，系统会拉起所有匹配的应用，并弹出对话框询问用户选择拉起哪个应用。  - 如果App Linking匹配到多个应用，并且部分或全部配置了index字段，系统会拉起index值最大的应用。当有多个应用的index值最大时，系统会同时拉起这些应用，并弹出对话框询问用户选择拉起哪个应用。  **起始版本：** 6.1.0(23) |
 2. 将applinking.json配置文件放在域名服务器的固定目录下：`https://domain.name/.well-known/applinking.json`。例如：开发者的服务器域名为`www.example.com`，则必须将applinking.json文件放在如下位置：
 
@@ -114,11 +114,11 @@ format: md
 
 ### 在module.json5中配置关联的网址域名
 
-在应用的[module.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中进行如下配置，以声明应用关联的域名地址，并开启域名校验开关。当URL符合module.json5中配置的host和路径规则时，可拉起开发者的App。
+在应用的[module.json5文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中进行如下配置，以声明应用关联的域名地址，并开启域名校验开关。当URL符合module.json5中配置的host和路径规则时，可拉起开发者的App。
 
 * "entities"列表中必须包含"entity.system.browsable"。
 * "actions"列表中必须包含"ohos.want.action.viewData"。
-* "uris"列表中必须包含"scheme"为"https"且"host"为域名地址的元素，可选属性包含"path"、"pathStartWith"和"pathRegex"，具体请参见“[uris标签说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config#uris标签说明)”。
+* "uris"列表中必须包含"scheme"为"https"且"host"为域名地址的元素，可选属性包含"path"、"pathStartWith"和"pathRegex"，具体请参见“[uris标签说明](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config#uris标签说明)”。
 * "domainVerify"设置为true，表示开启域名校验开关。
 
 ![](./img/0a30b9ae.png)
@@ -214,7 +214,7 @@ export default class EntryAbility extends UIAbility {
 }
 ```
 
-若要根据链接参数启动UIAbility的指定页面组件，请参考“[启动UIAbility的指定页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction#启动uiability的指定页面)”。
+若要根据链接参数启动UIAbility的指定页面组件，请参考“[启动UIAbility的指定页面](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-intra-device-interaction#启动uiability的指定页面)”。
 
 ## 验证应用被拉起效果
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "超分和自适应VRS特性是否可以同时使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-faq-2
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-faq/xengine-kit-faq-2
 format: md
 ---
 

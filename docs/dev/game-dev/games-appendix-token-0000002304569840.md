@@ -1,6 +1,6 @@
 ---
 title: "获取Token（项目级）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-appendix-token-0000002304569840
+original_url: /docs/dev/game-dev/games-appendix-token-0000002304569840
 format: md
 ---
 
@@ -24,8 +24,8 @@ format: md
 
 | 参数名称 | 必选(M)/可选(O) | 数据类型 | 参数说明 |
 | --- | --- | --- | --- |
-| client\_id | M | String(256) | 客户端ID，具体获取请参见[准备游戏信息](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-gameinformation-0000002304472612)。 |
-| client\_secret | M | String(2048) | 客户端密钥，具体获取请参见[准备游戏信息](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-gameinformation-0000002304472612)。 |
+| client\_id | M | String(256) | 客户端ID，具体获取请参见[准备游戏信息](/docs/dev/game-dev/games-gamemme-gameinformation-0000002304472612)。 |
+| client\_secret | M | String(2048) | 客户端密钥，具体获取请参见[准备游戏信息](/docs/dev/game-dev/games-gamemme-gameinformation-0000002304472612)。 |
 | grant\_type | M | String(256) | 固定传入“client\_credentials”。 |
 
 ## 请求示例

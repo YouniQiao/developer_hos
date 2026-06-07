@@ -1,6 +1,6 @@
 ---
 title: "如何通过谓词查询方式获取数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-17
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-17
 format: md
 ---
 

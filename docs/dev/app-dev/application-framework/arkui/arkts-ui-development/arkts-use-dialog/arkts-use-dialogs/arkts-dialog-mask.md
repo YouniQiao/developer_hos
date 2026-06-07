@@ -1,6 +1,6 @@
 ---
 title: "弹出框蒙层控制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-mask
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-dialog-mask
 format: md
 ---
 
@@ -13,11 +13,11 @@ ArkUI提供多种弹出框，不同类型的弹出框具备不同的蒙层定制
 
 | 接口&组件 | autoCancel | maskRect | isModal | immersiveMode |
 | --- | --- | --- | --- | --- |
-| [openCustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-custom-dialog) | 支持 | 支持 | 支持 | 支持 |
+| [openCustomDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-uicontext-custom-dialog) | 支持 | 支持 | 支持 | 支持 |
 | [openCustomDialogWithController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#opencustomdialogwithcontroller18) | 支持 | 支持 | 支持 | 支持 |
 | [presentCustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#presentcustomdialog18) | 支持 | 支持 | 支持 | 支持 |
 | [updateCustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#updatecustomdialog12) | 支持 | 不支持 | 不支持 | 不支持 |
-| [CustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-custom-dialog) | 支持 | 支持 | 支持 | 支持 |
+| [CustomDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-common-components-custom-dialog) | 支持 | 支持 | 支持 | 支持 |
 | [showDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#showdialog) | 不支持 | 支持 | 支持 | 支持 |
 | [showAlertDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#showalertdialog) | 支持 | 支持 | 支持 | 支持 |
 | [showActionSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#showactionsheet) | 支持 | 支持 | 支持 | 支持 |
@@ -36,11 +36,11 @@ ArkUI提供多种弹出框，不同类型的弹出框具备不同的蒙层定制
 
 | 接口&组件 | maskColor | transition | maskTransition |
 | --- | --- | --- | --- |
-| [openCustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-custom-dialog) | 支持 | 支持 | 支持 |
+| [openCustomDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-uicontext-custom-dialog) | 支持 | 支持 | 支持 |
 | [openCustomDialogWithController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#opencustomdialogwithcontroller18) | 支持 | 支持 | 支持 |
 | [presentCustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#presentcustomdialog18) | 支持 | 支持 | 支持 |
 | [updateCustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#updatecustomdialog12) | 支持 | 不支持 | 不支持 |
-| [CustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-custom-dialog) | 支持 | 不支持（可由openAnimation和closeAnimation替代） | 不支持 |
+| [CustomDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-common-components-custom-dialog) | 支持 | 不支持（可由openAnimation和closeAnimation替代） | 不支持 |
 | [showDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#showdialog) | 不支持 | 不支持 | 不支持 |
 | [showAlertDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#showalertdialog) | 不支持 | 支持 | 不支持 |
 | [showActionSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#showactionsheet) | 不支持 | 支持 | 不支持 |
@@ -276,7 +276,7 @@ Button('openCustomDialog maskTransition')
 
 ![](./img/9a505a0d.gif)
 
-[CustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-custom-dialog)虽然不支持transition接口，但与之对应的openAnimation和closeAnimation接口在动画的打开和关闭时可进行定制，示例代码如下：
+[CustomDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-common-components-custom-dialog)虽然不支持transition接口，但与之对应的openAnimation和closeAnimation接口在动画的打开和关闭时可进行定制，示例代码如下：
 
 ```
 // xxx.ets

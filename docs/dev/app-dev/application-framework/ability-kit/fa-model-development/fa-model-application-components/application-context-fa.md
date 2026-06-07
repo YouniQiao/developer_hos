@@ -1,11 +1,11 @@
 ---
 title: "FA模型的Context"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-fa
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/application-context-fa
 format: md
 ---
 
 
-[FA模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#fa模型)下只有一个Context。Context中的所有功能都是通过方法来提供的，它提供了一些featureAbility中不存在的方法，相当于featureAbility的一个扩展和补全。
+[FA模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#fa模型)下只有一个Context。Context中的所有功能都是通过方法来提供的，它提供了一些featureAbility中不存在的方法，相当于featureAbility的一个扩展和补全。
 
 ## 接口说明
 

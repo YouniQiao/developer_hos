@@ -1,6 +1,6 @@
 ---
 title: "如何在webview中使用H5中的alert"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-46
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-46
 format: md
 ---
 

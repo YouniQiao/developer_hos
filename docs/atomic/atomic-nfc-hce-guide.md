@@ -1,6 +1,6 @@
 ---
 title: "HCE卡模拟开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-nfc-hce-guide
+original_url: /docs/dev/atomic-dev/atomic-nfc/atomic-nfc-hce-guide
 format: md
 ---
 

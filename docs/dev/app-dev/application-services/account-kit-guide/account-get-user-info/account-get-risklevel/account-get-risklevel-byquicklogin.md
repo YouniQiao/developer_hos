@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过华为账号一键登录获取用户风险等级"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-byquicklogin
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-risklevel/account-get-risklevel-byquicklogin
 format: md
 ---
 
 
 ## 场景介绍
 
-应用登录风控场景，可以通过[华为账号一键登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login)获取用户风险等级，对恶意账号进行风控，提升应用的安全等级。
+应用登录风控场景，可以通过[华为账号一键登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login)获取用户风险等级，对恶意账号进行风控，提升应用的安全等级。
 
 ## 约束与限制
 
@@ -20,7 +20,7 @@ format: md
 
 ![](./img/f939d078.png)
 
-1. 参考[华为账号一键登录业务流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#业务流程)，确保系统账号已登录，匿名手机号获取成功，且用户首次使用华为账号登录应用。（如用户非首次使用华为账号登录，可通过[华为账号其他方式登录获取用户风险等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-on-demand-acquisition)来查询华为账号的风险等级）
+1. 参考[华为账号一键登录业务流程](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#业务流程)，确保系统账号已登录，匿名手机号获取成功，且用户首次使用华为账号登录应用。（如用户非首次使用华为账号登录，可通过[华为账号其他方式登录获取用户风险等级](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-risklevel/account-get-risklevel-on-demand-acquisition)来查询华为账号的风险等级）
 2. 调用[LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button)组件，在[LoginWithHuaweiIDButtonParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttonparams)参数中设置风险等级字段标识riskLevel，拉起应用登录页。
 3. 用户同意协议后，点击华为账号一键登录按钮，应用可以通过[HuaweiIDCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#huaweiidcredential)获取到Authorization Code等数据。
 4. 将获取的Authorization Code数据传给应用服务端，应用服务端通过调用[获取用户风险等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-getuserrisklevel)接口查询当前登录用户的华为账号风险等级。
@@ -28,7 +28,7 @@ format: md
 
 ## 接口说明
 
-一键登录接口遵循[华为账号一键登录接口说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#接口说明)，当应用需要获取用户风险等级时，在[LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button)组件参数[LoginWithHuaweiIDButtonParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttonparams)中传入riskLevel字段，通过一键登录返回Authorization Code查询用户的风险等级。
+一键登录接口遵循[华为账号一键登录接口说明](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#接口说明)，当应用需要获取用户风险等级时，在[LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button)组件参数[LoginWithHuaweiIDButtonParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttonparams)中传入riskLevel字段，通过一键登录返回Authorization Code查询用户的风险等级。
 
 | 接口名 | 描述 |
 | --- | --- |
@@ -36,10 +36,10 @@ format: md
 
 ## 开发前提
 
-1. 在进行代码开发前，请确认已完成[一键登录开发前提](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#开发前提)工作。
+1. 在进行代码开发前，请确认已完成[一键登录开发前提](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#开发前提)工作。
 2. 应用在使用获取风险等级能力之前，需要完成对应的scope权限申请。
 
-   scope权限申请审批未完成或未通过，将报错[1001502014 应用未申请scopes或permissions权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-2)。当前可通过发送邮件至accountkit@huawei.com进行申请。
+   scope权限申请审批未完成或未通过，将报错[1001502014 应用未申请scopes或permissions权限](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-2)。当前可通过发送邮件至accountkit@huawei.com进行申请。
 
    请提供如下信息进行申请，我们会在1-2个工作日内回复申请结果，请您留意邮箱消息。
 
@@ -65,8 +65,8 @@ format: md
 
 ## 客户端开发
 
-1. 一键登录前置流程（获取系统账号登录状态，获取系统账号匿名手机号）请参考[一键登录开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#用户首次登录应用-1)中的导入模块及获取匿名手机号，确保系统账号已登录，匿名手机号获取成功，且用户首次通过华为账号登录该应用。
-2. 参考[一键登录开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login#用户首次登录应用-1)中展示一键登录页面并获取Authorization Code的示例代码，在[LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button)组件参数params中设置riskLevel标识为true，其余示例代码保持不变，拉起应用登录页。
+1. 一键登录前置流程（获取系统账号登录状态，获取系统账号匿名手机号）请参考[一键登录开发流程](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#用户首次登录应用-1)中的导入模块及获取匿名手机号，确保系统账号已登录，匿名手机号获取成功，且用户首次通过华为账号登录该应用。
+2. 参考[一键登录开发流程](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login#用户首次登录应用-1)中展示一键登录页面并获取Authorization Code的示例代码，在[LoginWithHuaweiIDButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button)组件参数params中设置riskLevel标识为true，其余示例代码保持不变，拉起应用登录页。
 
    ```
    LoginWithHuaweiIDButton({

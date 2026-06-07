@@ -1,7 +1,7 @@
 ---
 title: "使用图片自适应衍生功能"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-draw-tools-derivative-0000001348803252
+original_url: /docs/monetize/promotion/bp-functions-draw-tools-derivative-0000001348803252
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 3. 在“图片自适应衍生”页签下，点击“上传”并按照内容规格要求上传图片。
 
    ![](./img/zh-cn_image_0000002556108085_861eb0337345.png "点击放大")
-4. 在“图片适配”区域，选择“适配类型”并点击“生成资源”。完成后，您可以查看、下载或将其保存至[素材库](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-material-library-introduction-0000001399645709)。图片适配类型支持多选。
+4. 在“图片适配”区域，选择“适配类型”并点击“生成资源”。完成后，您可以查看、下载或将其保存至[素材库](/docs/monetize/promotion/bp-functions-material-library-introduction-0000001399645709)。图片适配类型支持多选。
 
    ![](./img/caution_3.0-zh-cn_1f012d5a5efc.png) 
 

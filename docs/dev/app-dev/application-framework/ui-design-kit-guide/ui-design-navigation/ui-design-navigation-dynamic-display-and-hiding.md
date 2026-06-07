@@ -1,6 +1,6 @@
 ---
 title: "标题栏动态显隐"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-navigation-dynamic-display-and-hiding
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-dynamic-display-and-hiding
 format: md
 ---
 

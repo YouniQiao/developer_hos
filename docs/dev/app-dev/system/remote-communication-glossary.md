@@ -1,6 +1,6 @@
 ---
 title: "Remote Communication Kit术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-glossary
+original_url: /docs/dev/app-dev/system/remote-communication-glossary
 format: md
 ---
 

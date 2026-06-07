@@ -1,8 +1,8 @@
 ---
 format: md
 title: "图形开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-graphic-development
+original_url: /docs/FAQ/faqs-graphic-development
 ---
 
 
-* **[2D图形（ArkGraphics 2D）](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics2d-kit)**
+* **[2D图形（ArkGraphics 2D）](/docs/FAQ/faqs-arkgraphics2d-kit)**

@@ -2,7 +2,7 @@
 
 title: "创建HarmonyOS应用工程"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-create-appproject
+original_url: /docs/tools/end-cloud/agc-harmonyos-create-appproject
 format: md
 ---
 

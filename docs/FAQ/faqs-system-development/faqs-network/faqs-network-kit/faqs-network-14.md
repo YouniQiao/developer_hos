@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Socket连接报错，错误码88"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-14
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-14
 ---
 
 

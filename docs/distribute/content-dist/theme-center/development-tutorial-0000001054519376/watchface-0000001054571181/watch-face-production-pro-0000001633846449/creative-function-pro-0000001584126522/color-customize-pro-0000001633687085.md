@@ -1,7 +1,7 @@
 ---
 title: "颜色自定义"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/color-customize-pro-0000001633687085
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/color-customize-pro-0000001633687085
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 ![](./img/d382d2b8e9c3.png)
 
-“颜色自定义”与[“样式自定义”](https://developer.huawei.com/consumer/cn/doc/content/style-customize-pro-0000001583807170)互斥，只能选择其中一种进行制作。例如：当制作了“颜色自定义”后，再切换到“样式自定义”，会提示“暂未达到使用该功能条件”。反之亦然。
+“颜色自定义”与[“样式自定义”](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/style-customize-pro-0000001583807170)互斥，只能选择其中一种进行制作。例如：当制作了“颜色自定义”后，再切换到“样式自定义”，会提示“暂未达到使用该功能条件”。反之亦然。
 
 ![](./img/48ce1152bd4d.png "点击放大")
 
@@ -83,4 +83,4 @@ format: md
 
    466\*466分辨率“Watch系列+GT系列”图层添加限制：背景最多可添加 8个图层，时间最多可添加8个图层、日期最多可添加8个，控件最多可添加8个。（特殊场景：控件自定义选项图层最多可添加8个）。
 
-经过以上步骤，颜色自定义表盘制作完成，后续按照常规步骤，[导出表盘](https://developer.huawei.com/consumer/cn/doc/content/watch-face-production-pro-0000001583647406#section1783463344019)即可。
+经过以上步骤，颜色自定义表盘制作完成，后续按照常规步骤，[导出表盘](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/watch-face-production-pro-0000001583647406#section1783463344019)即可。

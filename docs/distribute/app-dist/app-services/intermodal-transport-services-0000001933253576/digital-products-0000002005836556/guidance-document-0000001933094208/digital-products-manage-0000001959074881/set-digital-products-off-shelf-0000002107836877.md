@@ -1,7 +1,7 @@
 ---
 title: "下架/重新上架数字商品"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/set-digital-products-off-shelf-0000002107836877
+original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-digital-products-off-shelf-0000002107836877
 format: md
 ---
 

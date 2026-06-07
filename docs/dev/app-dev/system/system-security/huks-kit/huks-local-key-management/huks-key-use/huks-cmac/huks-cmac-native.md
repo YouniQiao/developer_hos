@@ -1,6 +1,6 @@
 ---
 title: "CMAC(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-cmac-native
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-cmac/huks-cmac-native
 format: md
 ---
 
@@ -18,7 +18,7 @@ CMAC是基于对称密钥分组加密算法的消息认证码（Cipher-based Mes
 1. 获取生成密钥算法参数配置。
 2. 调用[OH\_Huks\_GenerateKeyItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-api-h#oh_huks_generatekeyitem)生成密钥，支持的规格是128比特长度的密钥。
 
-除此之外，开发者也可以参考[密钥导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview#支持的算法)的规格介绍，导入已有的密钥。
+除此之外，开发者也可以参考[密钥导入](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview#支持的算法)的规格介绍，导入已有的密钥。
 
 **执行CMAC**
 

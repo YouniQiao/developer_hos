@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-invite-test-faq-0000002363660365
+original_url: /docs/distribute/agc/agc-help-invite-test-0000002270829393/agc-help-invite-test-faq-0000002363660365
 format: md
 ---
 

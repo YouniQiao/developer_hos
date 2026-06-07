@@ -1,7 +1,7 @@
 ---
 title: 概述
 sidebar_label: 概述
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001938867005
+original_url: /docs/design/atomic-service-design/overview
 format: md
 ---
 

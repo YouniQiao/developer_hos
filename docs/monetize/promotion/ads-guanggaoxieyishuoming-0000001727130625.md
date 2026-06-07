@@ -1,7 +1,7 @@
 ---
 title: "鲸鸿动能平台协议"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-guanggaoxieyishuoming-0000001727130625
+original_url: /docs/monetize/promotion/ads-guanggaoxieyishuoming-0000001727130625
 format: md
 ---
 

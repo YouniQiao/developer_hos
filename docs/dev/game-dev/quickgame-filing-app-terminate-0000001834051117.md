@@ -1,6 +1,6 @@
 ---
 title: "注销核准（备案）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-app-terminate-0000001834051117
+original_url: /docs/dev/game-dev/quickgame-filing-app-terminate-0000001834051117
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 2. 验证负责人的手机/邮箱，并选择注销原因后点击“提交初审”，在弹出的“确定要注销主体”窗口点击“确认”。
 
    ![](./img/1a958c4c.png)
-3. 提交申请后，华为平台将自动审核您的申请。您需前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-sms-verify-0000001818117885)。
+3. 提交申请后，华为平台将自动审核您的申请。您需前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](/docs/dev/game-dev/quickgame-filing-sms-verify-0000001818117885)。
 
 ## 注销互联网信息
 
@@ -27,4 +27,4 @@ format: md
 2. 验证负责人的手机/邮箱，选择注销原因后点击“提交初审”，在弹出的“确定要注销互联网信息”窗口点击“确认”。
 
    ![](./img/cc413a81.png)
-3. 提交申请后，华为平台将自动审核您的申请。您需前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-sms-verify-0000001818117885)。
+3. 提交申请后，华为平台将自动审核您的申请。您需前往工信部网站核验短信验证码，详情请参见[工信部核验核准（备案）短信](/docs/dev/game-dev/quickgame-filing-sms-verify-0000001818117885)。

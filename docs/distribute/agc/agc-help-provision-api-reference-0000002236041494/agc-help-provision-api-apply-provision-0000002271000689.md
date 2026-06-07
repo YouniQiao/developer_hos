@@ -1,6 +1,6 @@
 ---
 title: "申请Profile"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-apply-provision-0000002271000689
+original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-apply-provision-0000002271000689
 format: md
 ---
 
@@ -24,27 +24,27 @@ format: md
 
 ![](../img/agc-help-provision-api-apply-provision-0000002271000689_0.png)
 
-本接口支持使用Service Account方式、API客户端方式和OAuth客户端方式，区别请参见[获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661)。
+本接口支持使用Service Account方式、API客户端方式和OAuth客户端方式，区别请参见[获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661)。
 
 **Service Account****方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{JWT}`*”。JWT为[通过Service Account方式获取授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section104621343151212)中获取的鉴权令牌。 |
 
 **API客户端方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
-| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section103mcpsimp)。 |
+| Authorization | M | String | 认证信息，格式为“Authorization: Bearer *\\$`{access\_token}`*”。access\_token为[获取Token](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section09831133141712)中获取的access\_token。 |
 
 **OAuth客户端方式：**
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | teamId | M | String(64) | 开发者所在团队的团队ID。 |
-| oauth2Token | M | String | 认证信息，传入[获取用户授权码](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section949717114392)中获取的Access Token。 |
+| oauth2Token | M | String | 认证信息，传入[获取用户授权码](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section949717114392)中获取的Access Token。 |
 
 #### [h2]Body
 
@@ -54,8 +54,8 @@ format: md
 | provisionType | M | Integer(32) | Profile类型。  取值范围：   * 1：调试 * 2：发布 * 3：In-house发布 * 6：指定设备发布 |
 | certId | M | String(32) | 证书ID。 |
 | appId | M | String(20) | 应用ID。 |
-| deviceIdList | O | `List&lt;String(32)>` | 调试/测试设备ID列表。  可通过[查询设备列表](https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-query-device-0000002236201306)接口获取。  数组长度不超过4000。 |
-| aclPermissionList | O | `List&lt;String(256)>` | 受限ACL权限列表。  数组长度不超过1000。  说明：  仅支持**受限ACL权限**已审核通过的应用使用，申请方式可参见[申请受限ACL权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-applyacl-0000002502198721)。 |
+| deviceIdList | O | `List&lt;String(32)>` | 调试/测试设备ID列表。  可通过[查询设备列表](/docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-query-device-0000002236201306)接口获取。  数组长度不超过4000。 |
+| aclPermissionList | O | `List&lt;String(256)>` | 受限ACL权限列表。  数组长度不超过1000。  说明：  仅支持**受限ACL权限**已审核通过的应用使用，申请方式可参见[申请受限ACL权限](/docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-applyacl-0000002502198721)。 |
 
 #### 请求样例
 
@@ -83,8 +83,8 @@ Authorization: Bearer ******
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-connectret-0000002271000693) | 包含返回码及描述信息的结果。 |
-| provisionInfo | O | [ProvisionInfo](https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-provisioninfo-0000002236041514) | Profile信息。 |
+| ret | M | [ConnectRet](/docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-connectret-0000002271000693) | 包含返回码及描述信息的结果。 |
+| provisionInfo | O | [ProvisionInfo](/docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-provisioninfo-0000002236041514) | Profile信息。 |
 
 #### 响应示例
 

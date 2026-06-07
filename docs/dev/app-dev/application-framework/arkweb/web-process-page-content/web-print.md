@@ -1,13 +1,13 @@
 ---
 title: "使用Web组件打印前端页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-print
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-print
 format: md
 ---
 
 
 Web组件打印HTML页面时可通过W3C标准协议接口和应用接口两种方式实现。
 
-使用打印功能前，请在module.json5中配置相关权限，添加方法请参考[在配置文件中声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#在配置文件中声明权限)。
+使用打印功能前，请在module.json5中配置相关权限，添加方法请参考[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。
 
 ```
 "requestPermissions":[

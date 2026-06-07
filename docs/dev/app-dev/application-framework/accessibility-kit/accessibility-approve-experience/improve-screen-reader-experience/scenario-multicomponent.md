@@ -1,6 +1,6 @@
 ---
 title: "组合场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-multicomponent
+original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-multicomponent
 format: md
 ---
 

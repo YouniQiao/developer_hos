@@ -1,7 +1,7 @@
 ---
 title: "创建卸载召回任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-create-0000001366712640
+original_url: /docs/monetize/promotion/bp-functions-load-recall-create-0000001366712640
 format: md
 ---
 
@@ -31,21 +31,21 @@ format: md
 
    ![](./img/c78eb200484f.png) 
 
-   具体任务设置项请参考[推荐任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-recommend-0000001337110797)或[搜索任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-search-0000001280324781)。如果选择oCPD计费类型，则请参考[oCPD任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-create-ocpd-0000001282723545)。
+   具体任务设置项请参考[推荐任务](/docs/monetize/promotion/bp-delivery-task-recommend-0000001337110797)或[搜索任务](/docs/monetize/promotion/bp-delivery-task-search-0000001280324781)。如果选择oCPD计费类型，则请参考[oCPD任务](/docs/monetize/promotion/bp-functions-ocpx-create-ocpd-0000001282723545)。
 
    ![](./img/c110c16a1ad8.png)
 5. 配置归因监测。
 
    ![](./img/d2903a045e87.png) 
 
-   具体任务设置项的配置请参见[智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)或[监测链接](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-configure-0000001351658397)。
+   具体任务设置项的配置请参见[智能分包](/docs/monetize/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)或[监测链接](/docs/monetize/promotion/bp-functions-link-configure-0000001351658397)。
 
    ![](./img/844961320070.png)
 6. 配置定向召回的历史卸载用户人群。
 
    ![](./img/00d165a2f161.png) 
 
-   具体任务设置项的配置请参见[人群定向任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-create-0000001337388933)。
+   具体任务设置项的配置请参见[人群定向任务](/docs/monetize/promotion/bp-functions-target-create-0000001337388933)。
 
    ![](./img/8ebb90bab0b6.png)
 7. 配置召回创意。
@@ -53,7 +53,7 @@ format: md
    ![](./img/de7cb15dbae1.png) 
 
    - 如果一个卸载召回任务需要配置多个创意，可以点击<strong>创意1x</strong>后的“添加”来配置。
-   - 具体创意素材制作规范请参见[素材规范](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-specification-0000001417712349)。
+   - 具体创意素材制作规范请参见[素材规范](/docs/monetize/promotion/bp-functions-load-recall-specification-0000001417712349)。
 
    ![](./img/b0f76ab93a44.png "点击放大")
 

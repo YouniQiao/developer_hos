@@ -1,7 +1,7 @@
 ---
 title: 智能座舱
 sidebar_label: 智能座舱
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/smart-cockpit-0000002045925712
+original_url: /docs/design/multi-device-design/smart-cockpit
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 
 ## 保证基础体验
 
-在应用/服务设计中，需要关注到设计在多种屏幕中的使用体验，遵守一些基础体验要求，如果不满足这些基础要求，则会极大损害用户的使用体验。例如，如果界面元素的响应热区太小会导致用户很难操作成功，从而无法完成要操作的任务。具体要求请参阅[应用 UX 体验标准](https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001760867048)。
+在应用/服务设计中，需要关注到设计在多种屏幕中的使用体验，遵守一些基础体验要求，如果不满足这些基础要求，则会极大损害用户的使用体验。例如，如果界面元素的响应热区太小会导致用户很难操作成功，从而无法完成要操作的任务。具体要求请参阅[应用 UX 体验标准](/docs/design/ux-standards/overview)。
 
 ## 保证驾驶安全
 
@@ -53,7 +53,7 @@ format: md
 
 方向盘可能会遮挡一部分屏幕，应用和服务在设计时应避免将关键信息、重要操作放在这个区域，以保证页面正常显示，不影响用户的使用。
 
-支持更多交互方式：在驾驶场景下，利用多模态交互能有效提升交互的效率，带来更好体验。例如，语音、手势、方向盘、旋钮、硬按键、遥控板。关于更多交互方式，请参阅[人机交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-overview-0000001795410269)。
+支持更多交互方式：在驾驶场景下，利用多模态交互能有效提升交互的效率，带来更好体验。例如，语音、手势、方向盘、旋钮、硬按键、遥控板。关于更多交互方式，请参阅[人机交互](/docs/design/hmi/overview)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250819105551.82983975271690852049687017821119:50001231000000:2800:FDDE60E6692D0D5C0C4ADFDC1A92549A74B535C1E62EE7549569378789A8E8DA.png "点击放大")
 

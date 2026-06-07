@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "录像(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-recording
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-recording
 format: md
 ---
 
 
-录像也是相机应用的最重要功能之一，录像是循环帧的捕获。对于录像的流畅度，开发者可以参考[拍照参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-shooting)中的步骤5，设置分辨率、闪光灯、焦距、照片质量及旋转角度等信息。
+录像也是相机应用的最重要功能之一，录像是循环帧的捕获。对于录像的流畅度，开发者可以参考[拍照参考](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting)中的步骤5，设置分辨率、闪光灯、焦距、照片质量及旋转角度等信息。
 
 ## 开发步骤
 

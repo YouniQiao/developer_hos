@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设备升级继承媒体文件访问权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-request-photouris-permission
+original_url: /docs/dev/app-dev/media/medialibrary-kit/medialibrary-request-photouris-permission
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 此处仅展示如何调用Media Library Kit的接口[requestPhotoUrisReadPermission()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper#requestphotourisreadpermission14)，输入需要继承访问权限的媒体文件uri，拉起授权界面。
 
-调用Scenario Fusion Kit的接口[convertFileUris](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-fileuriresult#convertfileuris)，获取转换后的HarmonyOS 5.0可访问的uri，请参考[公共目录文件URI继承](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-precautions#公共目录文件uri继承)。
+调用Scenario Fusion Kit的接口[convertFileUris](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-fileuriresult#convertfileuris)，获取转换后的HarmonyOS 5.0可访问的uri，请参考[公共目录文件URI继承](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/code-precautions#公共目录文件uri继承)。
 
 1. 导入相关接口模块文件。
 

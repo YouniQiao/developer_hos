@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "高尔夫"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-golf
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-golf
 format: md
 ---
 

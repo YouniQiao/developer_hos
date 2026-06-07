@@ -1,6 +1,6 @@
 ---
 title: "libuv使用规范及案例"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-libuv
+original_url: /docs/quality/stability-coding-standard-libuv
 ---
 
 # libuv使用规范及案例
@@ -234,7 +234,7 @@ Tid:44250, Name:crasher_cpp
 
 uv\_run->uv\_\_run\_closing\_handles->uv\_\_finish\_close->uv\_\_queue\_remove
 
-uv\_\_queue\_remove表示将某结点从事件循环队列上摘除。现在崩溃在这个函数上面，又是空指针解引用。这种情况下，开发者只需要参考[使用ASan检测内存错误](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-asan-detection)这篇文档，开启ASan后复现，即可将具体崩溃栈获取到。通过解栈定位到具体代码行。在本例中，出错代码如下：
+uv\_\_queue\_remove表示将某结点从事件循环队列上摘除。现在崩溃在这个函数上面，又是空指针解引用。这种情况下，开发者只需要参考[使用ASan检测内存错误](/docs/quality/stability-asan-detection)这篇文档，开启ASan后复现，即可将具体崩溃栈获取到。通过解栈定位到具体代码行。在本例中，出错代码如下：
 
 ```
 class NapiTaskRunner : public AbstractTaskRunner {

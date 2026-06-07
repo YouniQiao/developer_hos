@@ -1,7 +1,7 @@
 ---
 title: "使用限制"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_restriction-0000001237824085
+original_url: /docs/monetize/monetization/agd_pro_sdk_restriction-0000001237824085
 format: md
 ---
 

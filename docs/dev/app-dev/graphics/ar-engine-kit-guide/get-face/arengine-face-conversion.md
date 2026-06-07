@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "人脸识别与跟踪介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-face-conversion
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-face/arengine-face-conversion
 format: md
 ---
 
@@ -16,4 +16,4 @@ AR Engine提供了64种包含眼睛、眉毛、眼球、嘴巴、舌头等主要
 
 ![](./img/01a83255.png)
 
-本功能仅提供能力，接入该功能不构成对产品的质量保证或任何承诺，详见[AR Engine人脸跟踪功能技术局限性及免责声明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-appendix#ar-engine人脸跟踪功能技术局限性及免责声明)。
+本功能仅提供能力，接入该功能不构成对产品的质量保证或任何承诺，详见[AR Engine人脸跟踪功能技术局限性及免责声明](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-appendix#ar-engine人脸跟踪功能技术局限性及免责声明)。

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "折线"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-polyline
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-polyline
 format: md
 ---
 

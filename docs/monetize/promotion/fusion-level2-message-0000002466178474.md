@@ -1,7 +1,7 @@
 ---
 title: "消息设置"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-level2-message-0000002466178474
+original_url: /docs/monetize/promotion/fusion-level2-message-0000002466178474
 format: md
 ---
 

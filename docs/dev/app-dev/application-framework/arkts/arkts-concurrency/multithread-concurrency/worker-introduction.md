@@ -1,6 +1,6 @@
 ---
 title: "Worker简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction
 format: md
 ---
 
@@ -129,7 +129,7 @@ const workerInstance4: worker.ThreadWorker = new worker.ThreadWorker('../../work
 
 ![](./img/f68715bd.png)
 
-* 当开发者加载entry、[feature](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)及hsp包的Worker线程文件时，不建议采用写法三，推荐使用写法一，此写法无需拼接路径，可实现Worker的快速创建。
+* 当开发者加载entry、[feature](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)及hsp包的Worker线程文件时，不建议采用写法三，推荐使用写法一，此写法无需拼接路径，可实现Worker的快速创建。
 * Worker线程文件的路径后缀（.ets/.ts）可以省略。
 * 跨源码HSP/HAR的场景下，需在创建Worker的模块包对应的oh-package.json5文件中，配置所需HSP/HAR包的依赖项，详见[引用共享包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-har-import)。
 * 当feature模块需加载其他模块的Worker线程文件时，应先完成对feature模块的调用。
@@ -146,7 +146,7 @@ const workerInstance4: worker.ThreadWorker = new worker.ThreadWorker('../../work
 
 以entry模块加载源码har包的Worker线程文件为例，具体步骤如下：
 
-1. 创建HAR详情参考[开发静态共享包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)。
+1. 创建HAR详情参考[开发静态共享包](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)。
 2. 在HAR中创建Worker线程文件相关内容。
 
    ```
@@ -257,10 +257,10 @@ const workerFA3: worker.ThreadWorker = new worker.ThreadWorker('ThreadFile/worke
 
 * 不同线程中上下文对象是不同的，因此Worker线程只能使用线程安全的库，例如UI相关的非线程安全库不能在Worker子线程中使用。
 * 单次序列化传输的数据量大小限制为16MB。
-* 不支持在Worker工作线程中使用[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)。
+* 不支持在Worker工作线程中使用[AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage)。
 * 在Worker文件中禁止使用export语法导出任何内容，否则会导致jscrash问题。
-* 应用挂起后，该应用的Worker线程会[暂停运行](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview)。
-* 除上述注意事项外，使用Worker时还需注意[并发注意事项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview#并发注意事项)。
+* 应用挂起后，该应用的Worker线程会[暂停运行](/docs/dev/app-dev/application-framework/background-task-kit/background-task-overview)。
+* 除上述注意事项外，使用Worker时还需注意[并发注意事项](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/multi-thread-concurrency-overview#并发注意事项)。
 
 ## Worker基本用法示例
 

@@ -1,9 +1,9 @@
 ---
 title: "自动保存"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autosave
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave
 format: md
 ---
 
 
-* **[账号密码保存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-save-acc-password)**
-* **[账号密码更新](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-update-acc-password)**
+* **[账号密码保存](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-save-acc-password)**
+* **[账号密码更新](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-update-acc-password)**

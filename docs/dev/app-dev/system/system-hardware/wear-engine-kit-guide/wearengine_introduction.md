@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Wear Engine Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_introduction
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_introduction
 format: md
 ---
 
 
-* **[业务简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/we-business_introduction)**
-* **[场景介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scene_introduction)**
+* **[业务简介](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_introduction/we-business_introduction)**
+* **[场景介绍](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_introduction/scene_introduction)**

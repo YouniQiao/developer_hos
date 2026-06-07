@@ -1,13 +1,13 @@
 ---
 title: "UI稳定性故障分析概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-stability-guide
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-guide
 format: md
 ---
 
 
 本文档将简单介绍稳定性故障的概念与分类，并提供各类稳定性问题的参考帮助，用于指导应用开发者充分利用系统提供的调试能力和工具定位各类稳定性问题。
 
-应用稳定性问题主要包括应用崩溃、应用无响应、应用资源泄漏等问题。性能问题不属于稳定性范畴，要了解性能相关内容可以参考[UI性能优化概览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-performance-overview)。
+应用稳定性问题主要包括应用崩溃、应用无响应、应用资源泄漏等问题。性能问题不属于稳定性范畴，要了解性能相关内容可以参考[UI性能优化概览](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-performance-overview)。
 
 ## 应用崩溃
 
@@ -22,32 +22,32 @@ format: md
 
 ### jscrash
 
-发生jscrash问题后，系统的FaultLogger模块会收集问题有关的各种故障信息，可参考[日志获取](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines#日志获取)了解如何获取日志。
+发生jscrash问题后，系统的FaultLogger模块会收集问题有关的各种故障信息，可参考[日志获取](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines#日志获取)了解如何获取日志。
 
 以下是一些关于jscrash问题的参考帮助：
 
-* [JS Crash（进程崩溃）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jscrash-guidelines)
+* [JS Crash（进程崩溃）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines)
 
 ### cppcrash
 
-发生cppcrash问题后，系统的FaultLogger模块会收集问题有关的各种故障信息，可参考[日志获取](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines#日志获取)了解如何获取日志。
+发生cppcrash问题后，系统的FaultLogger模块会收集问题有关的各种故障信息，可参考[日志获取](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines#日志获取)了解如何获取日志。
 
 以下是一些关于cppcrash问题的参考帮助：
 
-* [Cpp Crash（进程崩溃）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cppcrash-guidelines)
-* [AddrSanitizer（地址越界）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-guidelines)
+* [Cpp Crash（进程崩溃）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines)
+* [AddrSanitizer（地址越界）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/address-sanitizer-guidelines)
 
 ## 应用无响应
 
 应用无响应问题也被称为AppFreeze问题，以下是一些关于AppFreeze问题的参考帮助：
 
-* [AppFreeze（应用冻屏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)
-* [任务超时检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines)
+* [AppFreeze（应用冻屏）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines)
+* [任务超时检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines)
 
 ## 应用资源泄漏
 
 以下是一些关于应用资源泄漏问题的参考帮助：
 
-* [资源泄漏事件介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events)
-* [订阅资源泄漏事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events-arkts)
-* [订阅资源泄漏事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-resourceleak-events-ndk)
+* [资源泄漏事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events)
+* [订阅资源泄漏事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events-arkts)
+* [订阅资源泄漏事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events/hiappevent-watcher-resourceleak-events-ndk)

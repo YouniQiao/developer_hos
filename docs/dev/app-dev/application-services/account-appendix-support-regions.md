@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "支持的国家/地区"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-appendix-support-regions
+original_url: /docs/dev/app-dev/application-services/account-appendix-support-regions
 format: md
 ---
 

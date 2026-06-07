@@ -1,7 +1,7 @@
 ---
 format: md
 title: "点击文本输入框，如何屏蔽系统默认键盘弹起行为"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-176
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-176
 ---
 
 

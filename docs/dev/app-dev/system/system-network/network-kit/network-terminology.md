@@ -1,6 +1,6 @@
 ---
 title: "Network Kit术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-terminology
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-terminology
 format: md
 ---
 

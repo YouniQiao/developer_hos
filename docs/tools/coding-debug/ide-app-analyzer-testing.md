@@ -1,7 +1,7 @@
 ---
 title: "导入DevEco Testing的检测报告进行诊断"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-app-analyzer-testing
+original_url: /docs/tools/coding-debug/ide-app-analyzer-testing
 format: md
 ---
 

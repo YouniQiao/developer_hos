@@ -1,6 +1,6 @@
 ---
 title: "注册/注销Provider(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-extension-registration-and-unregistration-ndk
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-provider-management/huks-extension-registration-and-unregistration-ndk
 format: md
 ---
 

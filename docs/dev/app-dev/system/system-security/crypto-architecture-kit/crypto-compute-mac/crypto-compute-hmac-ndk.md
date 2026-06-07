@@ -1,6 +1,6 @@
 ---
 title: "消息认证码计算HMAC(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-compute-hmac-ndk
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-hmac-ndk
 format: md
 ---
 

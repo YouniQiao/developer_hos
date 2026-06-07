@@ -1,7 +1,7 @@
 ---
 format: md
 title: "混淆后的映射文件具体在哪个路径下"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-114
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-114
 ---
 
 
@@ -20,4 +20,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接：**
 
-[ArkGuard混淆原理及功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)
+[ArkGuard混淆原理及功能](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation)

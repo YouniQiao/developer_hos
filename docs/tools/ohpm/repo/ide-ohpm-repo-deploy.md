@@ -1,7 +1,7 @@
 ---
 title: "ohpm-repo deploy"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-deploy
+original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-deploy
 ---
 
 

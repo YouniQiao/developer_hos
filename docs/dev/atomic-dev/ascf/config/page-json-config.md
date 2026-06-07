@@ -1,6 +1,6 @@
 ---
 title: "页面json配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/page-json-config
+original_url: /docs/dev/atomic-dev/ascf/config/page-json-config
 format: md
 ---
 

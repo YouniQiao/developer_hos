@@ -1,6 +1,6 @@
 ---
 title: "如何对大文件进行SM4加密"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-11
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-11
 format: md
 ---
 

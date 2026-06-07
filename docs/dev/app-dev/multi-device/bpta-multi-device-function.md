@@ -1,7 +1,7 @@
 ---
 title: "多设备功能开发"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-function
+original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-function
 format: md
 ---
 

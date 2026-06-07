@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/prefer-reduce-type-parameter"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_prefer-reduce-type-parameter
+original_url: /docs/tools/coding-debug/ide_prefer-reduce-type-parameter
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "实时竞价"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/metaservice-ads-real-time-bidding
+original_url: /docs/dev/atomic-dev/atomic-ads-publisher-service-dev/metaservice-ads-real-time-bidding
 format: md
 ---
 
@@ -77,7 +77,7 @@ const adRequestParams: advertising.AdRequestParams = {
 
 ![](./img/22725c34.png)
 
-回传竞价结果，需要申请使用Internet网络权限[ohos.permission.INTERNET](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all#ohospermissioninternet)。详细申请权限流程请参考[开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/development-preparation)。
+回传竞价结果，需要申请使用Internet网络权限[ohos.permission.INTERNET](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all#ohospermissioninternet)。详细申请权限流程请参考[开发准备](/docs/dev/atomic-dev/ads-kit-atomicservice/development-preparation)。
 
 | 名称 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |

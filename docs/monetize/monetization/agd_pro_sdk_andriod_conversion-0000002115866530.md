@@ -1,7 +1,7 @@
 ---
 title: "查看后端转化"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_conversion-0000002115866530
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_conversion-0000002115866530
 format: md
 ---
 

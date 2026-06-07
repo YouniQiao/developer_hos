@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-marketing_api-faq-0000001435753217
+original_url: /docs/monetize/promotion/bp-functions-marketing_api-faq-0000001435753217
 format: md
 ---
 

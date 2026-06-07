@@ -1,7 +1,7 @@
 ---
 title: "查询账户充值记录"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-finance2-0000001286213492
+original_url: /docs/monetize/promotion/marketing-api-finance2-0000001286213492
 format: md
 ---
 
@@ -29,10 +29,10 @@ format: md
   | end\_date | string | 否 | 付款结束时间yyyy-MM-dd，时间跨度最大一年。 |
   | page | integer | 是 | 搜索页码，取值范围1~200。 |
   | page\_size | integer | 是 | 一页展示数据数量，取值范围10~50。 |
-  | recharge\_type | string | 是 | 充值类型，详见[充值类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section49461613103310)。 |
-  | recharge\_status | string | 是 | 充值状态，详见[充值状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section2356202223315)。 |
-  | receipt\_status | string | 是 | 发票状态，详见[发票状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1771132983314)。 |
-  | recharge\_usage | string | 否 | 充值用途。不填默认查全部充值用途  详见[充值用途](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section8687552165920) |
+  | recharge\_type | string | 是 | 充值类型，详见[充值类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section49461613103310)。 |
+  | recharge\_status | string | 是 | 充值状态，详见[充值状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section2356202223315)。 |
+  | receipt\_status | string | 是 | 发票状态，详见[发票状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1771132983314)。 |
+  | recharge\_usage | string | 否 | 充值用途。不填默认查全部充值用途  详见[充值用途](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section8687552165920) |
 
   - <strong>请求示例</strong>
 
@@ -77,13 +77,13 @@ format: md
     | currency | string | 币种。 |
     | created\_time | string | 订单创建时间，yyyy-MM-dd HH:mm:ss。 |
     | pay\_time | string | 订单支付时间，yyyy-MM-dd HH:mm:ss。 |
-    | recharge\_type | string | 充值类型，详见[充值类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section49461613103310)。 |
-    | recharge\_status | string | 充值状态，详见[充值状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section2356202223315)。 |
-    | receipt\_status | string | 发票状态，详见[发票状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1771132983314)。 |
+    | recharge\_type | string | 充值类型，详见[充值类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section49461613103310)。 |
+    | recharge\_status | string | 充值状态，详见[充值状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section2356202223315)。 |
+    | receipt\_status | string | 发票状态，详见[发票状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1771132983314)。 |
     | remark | string | 描述信息。 |
-    | sign\_party | string | 签约主体  详见[签约主体](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section2048145892417) |
-    | account\_type | string | 账户类型标识  详见[资金账户类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section8668656173214) |
-    | media\_type | string | 适用媒体范围  详见[虚拟账户类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section16548154953218) |
+    | sign\_party | string | 签约主体  详见[签约主体](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section2048145892417) |
+    | account\_type | string | 账户类型标识  详见[资金账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section8668656173214) |
+    | media\_type | string | 适用媒体范围  详见[虚拟账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section16548154953218) |
   - <strong>应答示例</strong>
 
     HTTPS/1.1 200 OK

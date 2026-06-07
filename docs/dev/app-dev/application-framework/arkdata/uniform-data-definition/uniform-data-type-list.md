@@ -1,6 +1,6 @@
 ---
 title: "UTD预置列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-list
+original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-list
 format: md
 ---
 

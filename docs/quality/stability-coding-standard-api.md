@@ -1,6 +1,6 @@
 ---
 title: "易错API的使用规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-api
+original_url: /docs/quality/stability-coding-standard-api
 format: 'md'
 ---
 
@@ -108,7 +108,7 @@ sessionController.off('playbackStateChange', this.playStateCallback);
 
 **【文档链接】**
 
-[投播组件开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-playback-guide)
+[投播组件开发指导](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide)
 
 **【典型案例】**
 
@@ -147,7 +147,7 @@ this.castController?.prepare(playItem, () => {
 
 **【文档链接】**
 
-[基础播控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/basic-playback-control)
+[基础播控](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control)
 
 **【典型案例】**
 
@@ -410,9 +410,9 @@ async function onBackground(): Promise<void> {
 
 **【文档链接】**
 
-[使用OHAudio开发音频录制功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording)
+[使用OHAudio开发音频录制功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording)
 
-[使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)
+[使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)
 
 2、使用OHAudio的应用仅注册部分回调，可能导致野指针崩溃。
 
@@ -430,9 +430,9 @@ async function onBackground(): Promise<void> {
 
 **【文档链接】**
 
-[使用OHAudio开发音频录制功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-recording)
+[使用OHAudio开发音频录制功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording)
 
-[使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)
+[使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)
 
 3、OnWriteData回调排查
 
@@ -463,7 +463,7 @@ async function onBackground(): Promise<void> {
 
 **【文档链接】**
 
-[使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)
+[使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)
 
 4、防止Offload流卡顿的自排查步骤
 
@@ -1071,7 +1071,7 @@ getInspectorByKey接口可能存在组件不存在场景，返回的是空字符
 
 **【文档链接】**
 
-[if/else：条件渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse)
+[if/else：条件渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse)
 
 **【典型案例】**
 
@@ -1626,7 +1626,7 @@ napi\_create\_arraybuffer、napi\_create\_sendable\_arraybuffer、napi\_get\_arr
 
 **【文档链接】**
 
-[防止重复释放获取的buffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines#防止重复释放获取的buffer)
+[防止重复释放获取的buffer](/docs/dev/ndk-dev/napi-guidelines#防止重复释放获取的buffer)
 
 **【典型案例】**
 
@@ -1660,7 +1660,7 @@ napi\_create\_arraybuffer、napi\_create\_sendable\_arraybuffer、napi\_get\_arr
 
 **【文档链接】**
 
-[异步任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines#异步任务)
+[异步任务](/docs/dev/ndk-dev/napi-guidelines#异步任务)
 
 **【最佳实践】**
 

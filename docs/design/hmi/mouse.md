@@ -1,7 +1,7 @@
 ---
 title: 鼠标
 sidebar_label: 鼠标
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-mouse-0000001930021626
+original_url: /docs/design/hmi/mouse
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 | **操作** | **预期行为** |
 | --- | --- |
-| **移动** | 移动光标，光标在不同元素界面上呈现和表达悬浮态样式，请参阅[光标交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-cursor-0000001795531205) |
+| **移动** | 移动光标，光标在不同元素界面上呈现和表达悬浮态样式，请参阅[光标交互](/docs/design/hmi/cursor) |
 | **悬浮** | 将光标移动到某个元素上，悬浮可以预览到更多信息或功能 |
 | **左键点击** | 选择或启动一个项目的主功能 (如点击按钮启动应用或执行命令) |
 | **右键点击** | 展示上下文菜单 (对应于触屏上长按) |
@@ -37,6 +37,6 @@ format: md
 
 尽量通过滚轮来控制页面的滑动和切换，而非左键按下后沿一定方向移动鼠标 (这对用户来说是一个效率低下且难以控制的行为)。
 
-关于更加详细的具体场景下触摸交互和鼠标交互的对应和转换关系，请参阅[交互事件归一](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-interaction-events-0000001795531217)。
+关于更加详细的具体场景下触摸交互和鼠标交互的对应和转换关系，请参阅[交互事件归一](/docs/design/hmi/interaction-events)。
 
-关于光标和界面对象的悬浮态表现，请参阅[光标交互](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-cursor-0000001795531205)。
+关于光标和界面对象的悬浮态表现，请参阅[光标交互](/docs/design/hmi/cursor)。

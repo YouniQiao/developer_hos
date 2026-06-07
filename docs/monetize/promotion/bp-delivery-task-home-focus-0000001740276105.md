@@ -1,7 +1,7 @@
 ---
 title: "投放首页焦点图任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-home-focus-0000001740276105
+original_url: /docs/monetize/promotion/bp-delivery-task-home-focus-0000001740276105
 format: md
 ---
 
@@ -52,7 +52,7 @@ format: md
 
    ![](./img/caution_3.0-zh-cn_8121a634026a.png) 
 
-   - 支持在场景投放模块设置[oCPD转化目标](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-introduction-0000001282639525)，需要填写“子任务名称”和“出价”任务设置项。场景投放模块配置的“出价”即为针对这一条件子任务设置的单独出价，该子任务以此出价参与竞价及计费。
+   - 支持在场景投放模块设置[oCPD转化目标](/docs/monetize/promotion/bp-functions-ocpx-introduction-0000001282639525)，需要填写“子任务名称”和“出价”任务设置项。场景投放模块配置的“出价”即为针对这一条件子任务设置的单独出价，该子任务以此出价参与竞价及计费。
    - 不同类型的投放任务对应子任务数的上限是不同的。具体子任务数的上限，请查看“新建”下的界面提示。
 
    ![](./img/zh-cn_image_0000002567830618_f0f5f953bc5f.png "点击放大")
@@ -64,7 +64,7 @@ format: md
 
    ![](./img/zh-cn_image_0000002598430389_c12a714cd555.png "点击放大")
 
-   具体任务设置项的配置请参见[智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940)或[监测链接](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-configure-0000001351658397)。
+   具体任务设置项的配置请参见[智能分包](/docs/monetize/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940)或[监测链接](/docs/monetize/promotion/bp-functions-link-configure-0000001351658397)。
 7. 在“推广创意”设置模块，配置相关任务设置项。
 
    ![](./img/caution_3.0-zh-cn_da08cb1339b2.png) 

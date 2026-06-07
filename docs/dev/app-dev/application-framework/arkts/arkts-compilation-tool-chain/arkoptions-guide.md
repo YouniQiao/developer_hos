@@ -1,6 +1,6 @@
 ---
 title: "在build-profile.json5中配置arkOptions"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkoptions-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkoptions-guide
 format: md
 ---
 
@@ -156,7 +156,7 @@ arkOptions中transformLib字段示例：
 }
 ```
 
-修改方舟字节码能力可参考[编译期自定义修改方舟字节码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/customize-bytecode-during-compilation)。
+修改方舟字节码能力可参考[编译期自定义修改方舟字节码](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/customize-bytecode-during-compilation)。
 
 ### 注意事项
 

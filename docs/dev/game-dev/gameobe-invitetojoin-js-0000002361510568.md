@@ -1,11 +1,11 @@
 ---
 title: "加入指定房间"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-invitetojoin-js-0000002361510568
+original_url: /docs/dev/game-dev/gameobe-invitetojoin-js-0000002361510568
 format: md
 ---
 
 
-* **[接口调用流程](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-flowchart-createandjoinroom-js-0000002395190481)**
-* **[创建房间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-createjoinroom-js-0000002361670436)**
-* **[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-joinroom-js-0000002395350381)**
-* **[获取可加入房间列表](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-getavailablerooms-js-0000002361510572)**
+* **[接口调用流程](/docs/dev/game-dev/gameobe-flowchart-createandjoinroom-js-0000002395190481)**
+* **[创建房间](/docs/dev/game-dev/gameobe-createjoinroom-js-0000002361670436)**
+* **[加入房间](/docs/dev/game-dev/gameobe-joinroom-js-0000002395350381)**
+* **[获取可加入房间列表](/docs/dev/game-dev/gameobe-getavailablerooms-js-0000002361510572)**

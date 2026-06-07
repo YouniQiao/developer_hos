@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "出行路线规划"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-navi-routes
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-navi/map-navi-routes
 format: md
 ---
 

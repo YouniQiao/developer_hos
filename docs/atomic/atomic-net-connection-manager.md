@@ -1,6 +1,6 @@
 ---
 title: "网络连接管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-net-connection-manager
+original_url: /docs/dev/atomic-dev/atomic-network-development/atomic-net-connection-manager
 format: md
 ---
 
@@ -57,7 +57,7 @@ format: md
 
 1. 声明接口调用所需要的权限：ohos.permission.GET\_NETWORK\_INFO。
 
-   此权限级别为normal，在申请权限前，请保证符合[权限使用的基本原则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限使用的基本原则)。然后参考[配置文件权限声明指导文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)声明对应权限。
+   此权限级别为normal，在申请权限前，请保证符合[权限使用的基本原则](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限使用的基本原则)。然后参考[配置文件权限声明指导文档](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)声明对应权限。
 2. 从@ohos.net.connection中导入connection命名空间。
 3. 调用createNetConnection方法，指定网络能力、网络类型和超时时间（可选，如不传入代表默认网络；创建不同于默认网络时可通过指定这些参数完成），创建一个NetConnection对象。
 4. 调用该对象的on()方法，传入type和callback，订阅相应事件。
@@ -111,7 +111,7 @@ conn.unregister((err: BusinessError, data: void) => {
 
 1. 声明接口调用所需要的权限：ohos.permission.GET\_NETWORK\_INFO。
 
-   此权限级别为normal，在申请权限前，请保证符合[权限使用的基本原则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限使用的基本原则)。然后参考[配置文件权限声明指导文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)声明对应权限。
+   此权限级别为normal，在申请权限前，请保证符合[权限使用的基本原则](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限使用的基本原则)。然后参考[配置文件权限声明指导文档](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)声明对应权限。
 2. 从@ohos.net.connection中导入connection命名空间。
 3. 通过调用getDefaultNet方法，获取默认的数据网络(NetHandle)；或者通过调用getAllNets方法，获取所有处于连接状态的网络列表(Array\&lt;NetHandle\&gt;)。
 4. 调用getNetCapabilities方法，获取NetHandle对应网络的能力信息。能力信息包含了网络类型(蜂窝网络、Wi-Fi网络、以太网网络等)、网络具体能力等网络信息。

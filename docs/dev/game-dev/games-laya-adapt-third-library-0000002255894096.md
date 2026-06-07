@@ -1,6 +1,6 @@
 ---
 title: "三方库适配"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-laya-adapt-third-library-0000002255894096
+original_url: /docs/dev/game-dev/games-laya-adapt-third-library-0000002255894096
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
   DevEco Studio使用CMake构建工具，您可参考[CMake相关语法](https://cmake.org/cmake/help/latest/index.html)自行完成源码的集成。
 * 库文件集成方式
 
-  HarmonyOS 5.0及以上系统的三方库编译使用OHOS NDK进行编译，具体请参见[OHOS NDK使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview)，其中包括编译CMake构建的库、编译非CMake构建的库和编译有依赖的库相关指导。
+  HarmonyOS 5.0及以上系统的三方库编译使用OHOS NDK进行编译，具体请参见[OHOS NDK使用指导](/docs/dev/ndk-dev/ndk-development-overview)，其中包括编译CMake构建的库、编译非CMake构建的库和编译有依赖的库相关指导。
 
   游戏工程编译完成后，将编译好的三方库文件复制到游戏工程对应目录即可。
 

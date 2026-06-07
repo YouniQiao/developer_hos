@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Worker和TaskPool的线程数量是否有限制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-28
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-28
 ---
 
 
@@ -13,4 +13,4 @@ Worker的线程个数最多为64个。如果超出此限制，创建将失败。
 
 **参考链接**
 
-[TaskPool和Worker的对比 (TaskPool和Worker)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-vs-worker)
+[TaskPool和Worker的对比 (TaskPool和Worker)](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-vs-worker)

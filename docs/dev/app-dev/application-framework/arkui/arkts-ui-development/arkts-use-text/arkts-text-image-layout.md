@@ -1,6 +1,6 @@
 ---
 title: "图文混排"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-text-image-layout
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-text-image-layout
 format: md
 ---
 

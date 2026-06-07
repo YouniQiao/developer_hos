@@ -1,6 +1,6 @@
 ---
 title: "在使用UIAbilityContext时报401“The context must be a valid Context”的Context类型错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-76
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-76
 format: md
 ---
 
@@ -20,4 +20,4 @@ export default class EntryAbility extends UIAbility {
 
 **参考链接**
 
-[应用上下文Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage)
+[应用上下文Context](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage)

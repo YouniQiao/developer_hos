@@ -1,6 +1,6 @@
 ---
 title: "应用后台运行"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-back-task-implement
+original_url: /docs/quality/back-task-implement
 ---
 
 # 应用后台运行
@@ -13,15 +13,15 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-b
 
 当前系统将对切换至后台的应用程序所使用的资源进行严格管控，具体措施包括挂起和终止进程。如果不进行后台处理，可能会导致应用程序功能异常。请参考官网指南和最佳实践文档，了解具体的限制条件和建议。
 
-* [后台硬件资源使用建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-hardware)、[后台硬件资源最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-hardware-resources)：后台进程CPU负载约束（长时任务、短时任务）；应用退到后台无长时任务时使用蓝牙、网络资源、麦克风或者扬声器、GPS资源；退到后台禁止使用传感器。
-* [后台软件资源使用建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-background-software)、[后台软件资源最佳实践](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-use-of-background-software-resources)：后台合理使用上传下载、使用音频服务、使用定位导航服务、使用系统资源。
-* [Background Tasks Kit简介（后台任务开发服务指南）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview)：后台任务的功能介绍、资源使用约束、后台任务类型。
+* [后台硬件资源使用建议](/docs/experience-suggestions/power/background/standard-background-hardware)、[后台硬件资源最佳实践](/docs/quality/use-of-background-hardware-resources)：后台进程CPU负载约束（长时任务、短时任务）；应用退到后台无长时任务时使用蓝牙、网络资源、麦克风或者扬声器、GPS资源；退到后台禁止使用传感器。
+* [后台软件资源使用建议](/docs/experience-suggestions/power/background/standard-background-software)、[后台软件资源最佳实践](/docs/quality/use-of-background-software-resources)：后台合理使用上传下载、使用音频服务、使用定位导航服务、使用系统资源。
+* [Background Tasks Kit简介（后台任务开发服务指南）](/docs/dev/app-dev/application-framework/background-task-kit/background-task-overview)：后台任务的功能介绍、资源使用约束、后台任务类型。
 
 ## 实现原理
 
 ### 后台任务类型
 
-标准系统支持规范内受约束的后台任务，包括短时任务、长时任务、延迟任务、代理提醒。开发者可以根据如下介绍，选择合适的[后台任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/background-task-overview#后台任务类型)，以满足应用退至后台后继续运行的需求。
+标准系统支持规范内受约束的后台任务，包括短时任务、长时任务、延迟任务、代理提醒。开发者可以根据如下介绍，选择合适的[后台任务](/docs/dev/app-dev/application-framework/background-task-kit/background-task-overview#后台任务类型)，以满足应用退至后台后继续运行的需求。
 
 ![](./img/0483be5b.png "点击放大")
 
@@ -98,7 +98,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-b
    }
    ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BackTaskImplement/blob/master/entry/src/main/ets/viewModel/ShortTermTaskModel.ets#L28-L52">ShortTermTaskModel.ets</a></div>
-4. 在小文件下载、缓存、信息发送等场景中，应用退至后台时，可使用backgroundTaskManager.requestSuspendDelay()接口，后台应用申请短时任务。短时任务的申请和使用过程中的约束与限制请参考[指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transient-task#约束与限制)。
+4. 在小文件下载、缓存、信息发送等场景中，应用退至后台时，可使用backgroundTaskManager.requestSuspendDelay()接口，后台应用申请短时任务。短时任务的申请和使用过程中的约束与限制请参考[指南](/docs/dev/app-dev/application-framework/background-task-kit/transient-task#约束与限制)。
 
    ```
    /**

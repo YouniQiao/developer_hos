@@ -1,6 +1,6 @@
 ---
 title: "InfoDelete"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-infodelete-0000002294845690
+original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-infodelete-0000002294845690
 format: md
 ---
 

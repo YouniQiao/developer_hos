@@ -1,19 +1,19 @@
 ---
 title: "地址越界类问题分析方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-illegal-way
+original_url: /docs/quality/stability-address-illegal-way
 ---
 
 # 地址越界类问题分析方法
 
 ## 概述
 
-地址越界问题是指访问了不合法的地址，导致程序运行出现异常，通常表现为应用崩溃（crash），其故障原因为释放后使用（use after free）、重复释放（double-free）、栈溢出（stack-overflow）、堆溢出（heap-overflow）等。由于应用崩溃（crash）日志信息有限且非崩溃第一现场，地址越界问题定位较为困难，一般依赖ASan、HWASan、GWP-ASan等检测工具以获取更多内存操作信息。从API13开始推荐使用HWASan检测工具进行地址越界问题的分析，具体参考[使用HWASan检测内存错误](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-hwasan-detection)。
+地址越界问题是指访问了不合法的地址，导致程序运行出现异常，通常表现为应用崩溃（crash），其故障原因为释放后使用（use after free）、重复释放（double-free）、栈溢出（stack-overflow）、堆溢出（heap-overflow）等。由于应用崩溃（crash）日志信息有限且非崩溃第一现场，地址越界问题定位较为困难，一般依赖ASan、HWASan、GWP-ASan等检测工具以获取更多内存操作信息。从API13开始推荐使用HWASan检测工具进行地址越界问题的分析，具体参考[使用HWASan检测内存错误](/docs/quality/stability-hwasan-detection)。
 
 本文主要介绍地址越界问题检测能力、地址越界问题定位分析思路。
 
 ## 检测能力
 
-目前系统提供了ASan、HWASan、GWP-ASan等检测工具，支撑应用解决地址越界问题，相关介绍、检测问题类型均在[《使用ASan检测内存错误》](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-asan-detection)、[《使用GWP-ASan检测内存错误》](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-gwpasan-detection)已有讲解，不再赘述。
+目前系统提供了ASan、HWASan、GWP-ASan等检测工具，支撑应用解决地址越界问题，相关介绍、检测问题类型均在[《使用ASan检测内存错误》](/docs/quality/stability-asan-detection)、[《使用GWP-ASan检测内存错误》](/docs/quality/stability-gwpasan-detection)已有讲解，不再赘述。
 
 ## 分析定位思路
 
@@ -29,7 +29,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-s
 
 **第一步：****问题类型分析**
 
-识别cppcrash问题的类型，是否为地址越界导致，一般需要提供汇编（C++隐藏太多细节，建议查看汇编）、内存的分析，代码中此内存的生命周期。具体详细案例可参看[地址越界类问题案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-address-sanitizer)。
+识别cppcrash问题的类型，是否为地址越界导致，一般需要提供汇编（C++隐藏太多细节，建议查看汇编）、内存的分析，代码中此内存的生命周期。具体详细案例可参看[地址越界类问题案例](/docs/quality/scenario-stability-address-sanitizer)。
 
 **第二步：****场景分析**
 
@@ -91,11 +91,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-s
 
 **第五步：****应用天网部署**
 
-明确应用进程中已经有哪些so插桩，有条件插桩的应用侧so都应该部署插桩。由于踩内存产生的crash调用栈存在很多随机性，而且反复复现编译很浪费时间，因此建议插桩越全越好，进程加载的so可基于crash文件的maps数据段确定，尽量都用HWASan编译。并且so链接时如果有静态库，静态库本身最好也用HWASan编译。插桩方法可见[配置HWASan](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-hwasan-detection#section10791454125320)，继而基于上文部署的用例进行压测。
+明确应用进程中已经有哪些so插桩，有条件插桩的应用侧so都应该部署插桩。由于踩内存产生的crash调用栈存在很多随机性，而且反复复现编译很浪费时间，因此建议插桩越全越好，进程加载的so可基于crash文件的maps数据段确定，尽量都用HWASan编译。并且so链接时如果有静态库，静态库本身最好也用HWASan编译。插桩方法可见[配置HWASan](/docs/quality/stability-hwasan-detection#section10791454125320)，继而基于上文部署的用例进行压测。
 
 ![](./img/47c40949.png)
 
-应用天网版本：应用开启地址越界检测能力后编译的版本，具体参考[地址越界检测能力概述](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-overview)。
+应用天网版本：应用开启地址越界检测能力后编译的版本，具体参考[地址越界检测能力概述](/docs/quality/stability-address-sanitizer-overview)。
 
 **第六步：日志分析**
 
@@ -103,11 +103,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-s
 
 ### 地址越界问题类型
 
-常见地址问题类型可参见[地址越界事件介绍-type字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-address-sanitizer-events#type字段说明)
+常见地址问题类型可参见[地址越界事件介绍-type字段说明](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events#type字段说明)
 
 ### 地址越界问题的日志分析
 
-对于地址越界问题的日志分析，由于日志落盘与cppcrash日志相似，具体参考[CppCrash类问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-cpp-way)，详细的步骤为：
+对于地址越界问题的日志分析，由于日志落盘与cppcrash日志相似，具体参考[CppCrash类问题分析方法](/docs/quality/stability-app-crash-cpp-way)，详细的步骤为：
 
 1. 获取HWASan检测工具，检测并获取地址越界问题日志。
 2. 获取符号表，定位行号（use栈、free栈）。
@@ -183,6 +183,6 @@ SUMMARY: HWAddressSanitizer: tag-mismatch (/data/local/tmp/test.out+0x1ad0)
 ==27137==End Hwasan report
 ```
 
-对应的日志结构如下，以#0栈为例，可使用反编译工具[llvm-addr2line](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-crash-cpp-way#section14952241528)，输入地址的偏移0x1ad0，即可解析出对应的源代码行号。
+对应的日志结构如下，以#0栈为例，可使用反编译工具[llvm-addr2line](/docs/quality/stability-app-crash-cpp-way#section14952241528)，输入地址的偏移0x1ad0，即可解析出对应的源代码行号。
 
 ![](./img/972b7be9.png)

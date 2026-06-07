@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "手机与手机碰一碰分享"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones
 format: md
 ---
 
 
-* **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-overview)**
-* **[内容分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-content)**
-* **[邀请组队](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-group)**
+* **[概述](/docs/dev/app-dev/application-services/knock-share-between-phones-overview)**
+* **[内容分享](/docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-content)**
+* **[邀请组队](/docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-group)**

@@ -1,6 +1,6 @@
 ---
 title: "使用Web组件的智能分词能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-data-detector
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-data-detector
 format: md
 ---
 
@@ -118,7 +118,7 @@ controller: this.webController
 
 ![](./img/d8310800.gif)
 
-通过[bindSelectionMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#bindselectionmenu13)绑定的[自定义菜单](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-menu#自定义菜单)与分词长按预览菜单互不影响。长按被高亮的分词超链接不会弹出自定义超链接菜单，长按普通超链接也不会弹出分词预览菜单。
+通过[bindSelectionMenu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#bindselectionmenu13)绑定的[自定义菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#自定义菜单)与分词长按预览菜单互不影响。长按被高亮的分词超链接不会弹出自定义超链接菜单，长按普通超链接也不会弹出分词预览菜单。
 
 ## 文本选择菜单扩展
 

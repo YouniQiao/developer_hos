@@ -1,6 +1,6 @@
 ---
 title: "代理提醒(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agent-powered-reminder
+original_url: /docs/dev/app-dev/application-framework/background-task-kit/agent-powered-reminder
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 * **管控限制**：
 
 1. 手机、平板、PC/2in1设备存在管控，智慧屏、智能穿戴设备无管控限制。
-2. 管控后可通过日历Calendar Kit替代代理提醒，实现相应的提醒功能，具体请参考[开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-overview)；或者参考[代理提醒开放能力申请](#代理提醒开放能力申请)向华为侧申请代理提醒权限，申请通过后会开通权益，即可正常调用代理提醒接口。
+2. 管控后可通过日历Calendar Kit替代代理提醒，实现相应的提醒功能，具体请参考[开发指南](/docs/dev/app-dev/application-services/calendar-kit/calendarmanager-overview)；或者参考[代理提醒开放能力申请](#代理提醒开放能力申请)向华为侧申请代理提醒权限，申请通过后会开通权益，即可正常调用代理提醒接口。
 
 * **应用限制**：
 
@@ -49,7 +49,7 @@ format: md
 
 ## 与相关Kit的关系
 
-* 当到达设置的提醒时间点后，代理提醒使用Notification Kit发布通知，通知会显示在通知中心，通知样式请参考[Notification Kit通知样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-overview#通知样式)中的文本类型。
+* 当到达设置的提醒时间点后，代理提醒使用Notification Kit发布通知，通知会显示在通知中心，通知样式请参考[Notification Kit通知样式](/docs/dev/app-dev/application-services/notification-kit/notification-overview#通知样式)中的文本类型。
 
 ## 模拟器支持情况
 
@@ -75,7 +75,7 @@ format: md
 ### 代理提醒开放能力申请
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“开发与服务”。
-2. 在项目列表中找到您的项目，在项目下的应用列表中选择需要申请代理提醒的应用。如果无对应应用，请先[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)。
+2. 在项目列表中找到您的项目，在项目下的应用列表中选择需要申请代理提醒的应用。如果无对应应用，请先[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。
 3. 进入“项目设置”->“开放能力管理”页面，点击“代理提醒”卡片对应的“申请”按钮。
 
    ![](./img/92cc4ddd.png)
@@ -92,11 +92,11 @@ format: md
 
 ### 申请权限
 
-申请ohos.permission.PUBLISH\_AGENT\_REMINDER权限，配置方式请参阅[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+申请ohos.permission.PUBLISH\_AGENT\_REMINDER权限，配置方式请参阅[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ### 请求通知授权
 
-[请求通知授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-enable)。获得用户授权后，才能使用代理提醒功能。
+[请求通知授权](/docs/dev/app-dev/application-services/notification-kit/notification-enable)。获得用户授权后，才能使用代理提醒功能。
 
 ### 功能开发
 

@@ -1,6 +1,6 @@
 ---
 title: "查询与回放对战录像"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-queryrecord-csharp-0000002361670560
+original_url: /docs/dev/game-dev/gameobe-queryrecord-csharp-0000002361670560
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已[开启录像保存](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-framesync-management-0000002395350373#section17164254104)功能。
+您已[开启录像保存](/docs/dev/game-dev/gameobe-framesync-management-0000002395350373#section17164254104)功能。
 
 ## 开发步骤
 

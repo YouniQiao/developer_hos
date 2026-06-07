@@ -1,6 +1,6 @@
 ---
 title: "多客户端订阅场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-subscribe-arkts
 format: md
 ---
 

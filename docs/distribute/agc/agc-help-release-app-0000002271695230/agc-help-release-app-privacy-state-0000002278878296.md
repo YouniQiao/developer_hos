@@ -1,6 +1,6 @@
 ---
 title: "配置隐私声明"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-privacy-state-0000002278878296
+original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-privacy-state-0000002278878296
 format: md
 ---
 
@@ -18,6 +18,6 @@ format: md
      ![](../img/agc-help-release-app-privacy-state-0000002278878296_0.png)
    * 如果还没有描述隐私政策的网站，可以采用“隐私托管”方式。仅发布地区包含中国大陆区域、且分发设备为手机、平板或PC/2in1的HarmonyOS应用支持使用隐私托管。
 
-     使用AGC的隐私声明托管服务，先基于标准化模板生成自己的隐私政策和用户协议，然后在此选择创建的内容。详细内容参见[配置隐私政策（HarmonyOS应用）](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-app-0000002282162168)和[配置用户协议](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-user-agreement-0000002282265450)。
+     使用AGC的隐私声明托管服务，先基于标准化模板生成自己的隐私政策和用户协议，然后在此选择创建的内容。详细内容参见[配置隐私政策（HarmonyOS应用）](/docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-app-0000002282162168)和[配置用户协议](/docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-user-agreement-0000002282265450)。
 
      ![](../img/agc-help-release-app-privacy-state-0000002278878296_1.png)

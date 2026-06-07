@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-user-info-overview
+original_url: /docs/dev/app-dev/application-services/account-get-user-info-overview
 format: md
 ---
 
@@ -10,9 +10,9 @@ format: md
 
 **典型场景：**
 
-1. 应用需要完善用户头像昵称信息，参见[获取头像昵称](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-avatar-nickname)。
-2. 应用提供的服务依赖用户收货地址，需要获取用户收货地址，参见[获取收货地址](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-choose-address-dev)。
-3. 应用提供的服务依赖用户发票抬头信息，需要获取用户发票抬头，参见[获取发票抬头](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-select-invoice-title)。
-4. 应用提供的服务依赖用户风险等级信息，需要获取用户风险等级，参见[获取风险等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-risklevel-introduction)。
-5. 应用提供的服务依赖用户手机号，需要获取用户手机号，参见[获取手机号](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phone-overview)。
-6. 应用提供的服务依赖用户实名年龄段，需要获取用户实名年龄段信息，参见[获取实名年龄段标识](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-realname-age)。
+1. 应用需要完善用户头像昵称信息，参见[获取头像昵称](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-avatar-nickname)。
+2. 应用提供的服务依赖用户收货地址，需要获取用户收货地址，参见[获取收货地址](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-choose-address-dev)。
+3. 应用提供的服务依赖用户发票抬头信息，需要获取用户发票抬头，参见[获取发票抬头](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-select-invoice-title)。
+4. 应用提供的服务依赖用户风险等级信息，需要获取用户风险等级，参见[获取风险等级](/docs/dev/app-dev/application-services/account-get-risklevel-introduction)。
+5. 应用提供的服务依赖用户手机号，需要获取用户手机号，参见[获取手机号](/docs/dev/app-dev/application-services/account-get-phone-overview)。
+6. 应用提供的服务依赖用户实名年龄段，需要获取用户实名年龄段信息，参见[获取实名年龄段标识](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-realname-age)。

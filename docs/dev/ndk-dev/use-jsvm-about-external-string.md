@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口提供Latin1/UTF16格式字符串相关开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-external-string
+original_url: /docs/dev/ndk-dev/use-jsvm-about-external-string
 format: md
 ---
 
@@ -22,7 +22,7 @@ JSVM-API中新增创建和使用外部字符串的接口。
 
 ## 使用示例
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅对接口对应C++相关代码进行展示。
 
 ### 使用接口判断是否是Number Object
 

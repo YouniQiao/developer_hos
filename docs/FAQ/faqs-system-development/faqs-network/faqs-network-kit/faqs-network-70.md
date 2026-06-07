@@ -1,6 +1,6 @@
 ---
 title: "connection如何获取网卡链路地址、DNS地址等信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-70
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-70
 format: md
 ---
 

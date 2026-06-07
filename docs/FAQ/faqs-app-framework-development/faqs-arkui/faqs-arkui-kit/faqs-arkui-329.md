@@ -1,7 +1,7 @@
 ---
 format: md
 title: "LocalStorage频繁读写复杂对象时性能变差的原因是什么？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-329
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-329
 ---
 
 

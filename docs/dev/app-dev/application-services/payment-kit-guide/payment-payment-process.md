@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "商户基础支付场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-payment-process
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-payment-process
 format: md
 ---
 
@@ -179,7 +179,7 @@ struct Index {
 
 1. 需直接使用通知的完整内容进行验签。
 2. 验签前需要对返回数据进行排序拼接，sign字段是签名值，排序拼接后的待验签内容需要排除sign字段。
-3. 验签公钥使用[华为支付证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config#华为支付证书)。
+3. 验签公钥使用[华为支付证书](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config#华为支付证书)。
 
 ## 延伸和拓展
 

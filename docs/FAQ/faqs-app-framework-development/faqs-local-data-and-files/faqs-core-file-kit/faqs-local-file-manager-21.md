@@ -1,7 +1,7 @@
 ---
 format: md
 title: "通过fileIo.openSync获得的fd，传递到C侧调close后，ArkTS侧fileIo.closeSync是不是不用调了"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-21
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-21
 ---
 
 

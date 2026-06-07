@@ -1,6 +1,6 @@
 ---
 title: "畅游"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-cloud-game-0000002507525472
+original_url: /docs/dev/game-dev/games-center-cloud-game-0000002507525472
 format: md
 ---
 

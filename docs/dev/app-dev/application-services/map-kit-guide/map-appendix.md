@@ -1,6 +1,6 @@
 ---
 title: "Map Appendix"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-appendix
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-appendix
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

@@ -1,13 +1,13 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "修改阅读设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting
+original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting
 format: md
 ---
 
 
-* **[自定义字体](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-font)**
-* **[自定义页面背景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-background)**
-* **[修改翻页方式、字体大小及行间距](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-other)**
-* **[适配深、浅色模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-color-mode)**
-* **[监听文本缩放因子变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-scaled-density)**
+* **[自定义字体](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-font)**
+* **[自定义页面背景](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-background)**
+* **[修改翻页方式、字体大小及行间距](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-other)**
+* **[适配深、浅色模式](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-color-mode)**
+* **[监听文本缩放因子变化](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-scaled-density)**

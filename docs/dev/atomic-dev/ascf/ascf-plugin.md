@@ -1,6 +1,6 @@
 ---
 title: "获取ASCF插件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-plugin
+original_url: /docs/dev/atomic-dev/ascf/ascf-plugin
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
    请直接安装下载的zip文件，不要解压后安装。MacOS用户如果使用Safari浏览器下载，请关闭自动解压缩功能。
 
-ASCF框架版本发布的新增特性及变更说明请查阅[版本变更说明](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-note-ascf-runtime)。
+ASCF框架版本发布的新增特性及变更说明请查阅[版本变更说明](/docs/dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-runtime)。
 
 ### 自动升级ASCF Plugin
 
@@ -57,7 +57,7 @@ ASCF Plugin新版本发布后，支持自动检查版本并提示升级，请确
 | HarmonyOS | HarmonyOS 4及以下 | HMSCore 6.11.0.300及以上 | 1.0.15及以上 | 16.0.1及以上 |
 | HarmonyOS | HarmonyOS 5.0及以上 | ASCF 1.0.0及以上 | 1.0.0及以上 | 不涉及 |
 
-在HarmonyOS 4及以下设备中需要使用快应用加载器调试运行。使用ASCF开发助手运行会自动安装快应用加载器，也可以[手动下载快应用加载器](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-quickapp-loader-manual-installation)安装。
+在HarmonyOS 4及以下设备中需要使用快应用加载器调试运行。使用ASCF开发助手运行会自动安装快应用加载器，也可以[手动下载快应用加载器](/docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-quickapp-loader-manual-installation)安装。
 
 使用华为快应用加载器调试快应用的方法参见[华为快应用加载器使用指导](https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickapp-loader-user-guide-0000001115925960)。
 

@@ -1,7 +1,7 @@
 ---
 title: "测试验证及上线"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/ceshiyanzhengjishangxian-0000001085219714
+original_url: /docs/monetize/monetization/ceshiyanzhengjishangxian-0000001085219714
 format: md
 ---
 
@@ -20,8 +20,8 @@ format: md
    | --- | --- | --- |
    | APK | ![](./img/ceshiyanzhengjishangxian-0000001085219714_0.png "点击放大") | [下载](https://h5hosting.dbankcdn.com/cch5/pps-jssdk/app/HuaweiSdk-Helper-release.apk) |
 3. 极速开屏无需自测，直接提交鲸鸿动能测试验收，但需填写信息表。
-4. 请务必检查确认关于用户隐私声明的要求，媒体需以自身的名义发布用户隐私声明，禁止以华为或鲸鸿动能等名义发布用户隐私声明，详情参考《业务规范》- [《隐私声明》](https://developer.huawei.com/consumer/cn/doc/monetize/yinsishengming-0000001085219712)的要求；
-5. 各广告位规则：请参照《业务规范》-[《广告规范》](https://developer.huawei.com/consumer/cn/doc/monetize/guanggaoguifan-0000001132278781)；
+4. 请务必检查确认关于用户隐私声明的要求，媒体需以自身的名义发布用户隐私声明，禁止以华为或鲸鸿动能等名义发布用户隐私声明，详情参考《业务规范》- [《隐私声明》](/docs/monetize/monetization/yinsishengming-0000001085219712)的要求；
+5. 各广告位规则：请参照《业务规范》-[《广告规范》](/docs/monetize/monetization/guanggaoguifan-0000001132278781)；
 6. 自测完成后，填写《APK广告位信息表》和《RPK广告位信息表》，其中涉及广告位信息和转测自检项，保证清晰描述广告位调用逻辑，转测自检项全部通过。
 
 #### 2. 鲸鸿动能验收

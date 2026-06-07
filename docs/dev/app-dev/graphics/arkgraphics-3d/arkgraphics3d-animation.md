@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "ArkGraphics 3D场景动画控制以及管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-animation
+original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-animation
 format: md
 ---
 

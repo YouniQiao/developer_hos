@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用流转对账号有什么要求"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-89
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-89
 ---
 
 

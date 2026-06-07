@@ -1,6 +1,6 @@
 ---
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-description-of-personal-data
+original_url: /docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-description-of-personal-data
 format: md
 ---
 

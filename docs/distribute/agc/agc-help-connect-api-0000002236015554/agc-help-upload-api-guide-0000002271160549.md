@@ -1,6 +1,6 @@
 ---
 title: "Upload Management API指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-guide-0000002271160549
+original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-upload-api-guide-0000002271160549
 format: md
 ---
 
@@ -11,10 +11,10 @@ format: md
 
 1. 获取上传文件地址
 
-   在上传文件前，调用[获取上传文件地址](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-url-0000002236201294)接口获取文件上传的地址。
+   在上传文件前，调用[获取上传文件地址](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-upload-url-0000002236201294)接口获取文件上传的地址。
 2. 上传文件
 
-   调用[上传文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-upload-file-0000002271160621)接口将文件上传到华为文件服务器。
+   调用[上传文件](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-upload-file-0000002271160621)接口将文件上传到华为文件服务器。
 
 ![](../img/agc-help-upload-api-guide-0000002271160549_0.png)
 
@@ -22,7 +22,7 @@ format: md
 
 **分片上传文件的具体流程如下：**
 
-1. 调用[分片上传初始化](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-obbfile-init-0000002271000677)接口进行初始化。
-2. 使用**objectId**和**nspUploadId**调用[获取分片上传地址](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-obbfile-uploadurl-0000002236041490)接口获取上传地址。
-3. 调用[上传分片实体](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-obbfile-upload-0000002236201298)接口上传分片到已获取的上传地址。
-4. 上传完所有分片后，调用[合并分片](https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-obbfile-compose-0000002271160625)接口合并所有分片。
+1. 调用[分片上传初始化](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-init-0000002271000677)接口进行初始化。
+2. 使用**objectId**和**nspUploadId**调用[获取分片上传地址](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-uploadurl-0000002236041490)接口获取上传地址。
+3. 调用[上传分片实体](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-upload-0000002236201298)接口上传分片到已获取的上传地址。
+4. 上传完所有分片后，调用[合并分片](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-compose-0000002271160625)接口合并所有分片。

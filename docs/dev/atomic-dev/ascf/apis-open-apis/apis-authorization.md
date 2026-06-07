@@ -1,6 +1,6 @@
 ---
 title: "授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization
+original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization
 format: md
 ---
 
@@ -19,14 +19,14 @@ has.authorize(Object object)
 
 | 参数 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
-| scope | string | 是 | 需要获取权限的 scope，详见“[scope 列表](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)”。 |
+| scope | string | 是 | 需要获取权限的 scope，详见“[scope 列表](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)”。 |
 | success | function | 否 | 接口调用成功的回调函数。 |
 | fail | function | 否 | 接口调用失败的回调函数。 |
 | complete | function | 否 | 接口调用结束的回调函数（调用成功、失败都会执行）。 |
 
 ![](./img/a16da36d.png)
 
-在申请权限时，需要在项目的配置文件中，逐个声明需要的权限，否则将无法获取授权。配置方式请参见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+在申请权限时，需要在项目的配置文件中，逐个声明需要的权限，否则将无法获取授权。配置方式请参见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 **示例：**
 

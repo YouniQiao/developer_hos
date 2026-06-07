@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "网络游戏登录概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-network-introduction
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-network-introduction
 format: md
 ---
 
@@ -53,4 +53,4 @@ format: md
 
 ### 非首次登录
 
-用户非首次启动游戏时，游戏会沿用之前的登录账号。涉及切换账号再登录等特殊场景的接入方式请参见[游戏内切换账号](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-official#游戏内切换账号)。
+用户非首次启动游戏时，游戏会沿用之前的登录账号。涉及切换账号再登录等特殊场景的接入方式请参见[游戏内切换账号](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-gameplayer-official#游戏内切换账号)。

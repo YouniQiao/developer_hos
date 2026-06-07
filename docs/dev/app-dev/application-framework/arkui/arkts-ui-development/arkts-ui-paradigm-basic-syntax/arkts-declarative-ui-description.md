@@ -1,6 +1,6 @@
 ---
 title: "声明式UI描述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-declarative-ui-description
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-declarative-ui-description
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "NativeVSync开发指导 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-vsync-guidelines
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-vsync-guidelines
 format: md
 ---
 

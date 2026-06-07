@@ -1,7 +1,7 @@
 ---
 format: md
 title: "调用notificationManager.publish发布通知失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-notification-kit-8
+original_url: /docs/FAQ/faqs-app-service-development/faqs-notification-kit/faqs-notification-kit-8
 ---
 
 

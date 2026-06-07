@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "微距能力设置(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-macro
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-macro
 format: md
 ---
 

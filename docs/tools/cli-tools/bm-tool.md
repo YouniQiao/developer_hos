@@ -1,7 +1,7 @@
 ---
 title: "bm工具"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/bm-tool
+original_url: /docs/tools/cli-tools/bm-tool
 format: md
 ---
 
@@ -68,7 +68,7 @@ bm install [-h] [-p filePath] [-r] [-w waitingTime] [-s hspDirPath] [-u userId] 
 | -w | 可选参数，安装HAP时指定bm工具等待时间，最小的等待时长为180s，最大的等待时长为600s, 默认缺省为180s。 |
 | -u | 可选参数，指定[用户](#userid)，默认在当前活跃用户下安装应用。仅支持在当前活跃用户或0用户下安装。  <strong>说明：</strong>  如果当前活跃用户是100，使用命令bm install -p /data/local/tmp/ohos.app.hap -u 102安装时，只会在当前活跃用户100下安装应用。 |
 | -d | 可选参数，允许应用降级安装，即设备已安装较高版本的应用，也可以覆盖安装较低版本的应用。仅支持签名证书分发类型为app\_gallery或者签名证书类型为debug的三方应用降级安装。从API version 23开始支持。 |
-| -g | 可选参数，安装签名证书类型为debug的应用时自动授予[user\_grant](./app-permission-mgmt-overview.md#user_grant用户授权)和[manual\_settings](./app-permission-mgmt-overview.md#manual_settings手动设置授权)权限。  仅对[开发者模式](./ide-developer-mode.md#section530763213432)下的签名证书类型为debug的应用生效。可以通过[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中的type字段查看签名证书类型。  签名证书类型为debug的应用更新为签名证书类型为release的应用时取消已授予的[user\_grant](./app-permission-mgmt-overview.md#user_grant用户授权)和[manual\_settings](./app-permission-mgmt-overview.md#manual_settings手动设置授权)权限。从API version 24开始支持。 |
+| -g | 可选参数，安装签名证书类型为debug的应用时自动授予[user\_grant](./app-permission-mgmt-overview.md#user_grant用户授权)和[manual\_settings](./app-permission-mgmt-overview.md#manual_settings手动设置授权)权限。  仅对[开发者模式](./ide-developer-mode.md#section530763213432)下的签名证书类型为debug的应用生效。可以通过[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的type字段查看签名证书类型。  签名证书类型为debug的应用更新为签名证书类型为release的应用时取消已授予的[user\_grant](./app-permission-mgmt-overview.md#user_grant用户授权)和[manual\_settings](./app-permission-mgmt-overview.md#manual_settings手动设置授权)权限。从API version 24开始支持。 |
 
 示例：
 
@@ -1586,7 +1586,7 @@ error: Failed to install the HAP because an enterprise normal/MDM bundle cannot 
 
 <strong>可能原因</strong>
 
-当前设备不允许安装[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中如下两种类型的应用：enterprise\_mdm（企业MDM应用）、enterprise\_normal（普通企业应用）。Profile签名文件类型的取值及含义请参考[ApplicationInfo.appDistributionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)。
+当前设备不允许安装[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中如下两种类型的应用：enterprise\_mdm（企业MDM应用）、enterprise\_normal（普通企业应用）。Profile签名文件类型的取值及含义请参考[ApplicationInfo.appDistributionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo#applicationinfo-1)。
 
 <strong>处理步骤</strong>
 
@@ -1600,15 +1600,15 @@ error: Release bundle can not be installed.
 
 <strong>错误描述</strong>
 
-禁止通过bm命令安装[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中的类型为app\_gallery并且签名证书类型为release的应用。
+禁止通过bm命令安装[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的类型为app\_gallery并且签名证书类型为release的应用。
 
 <strong>可能原因</strong>
 
-安装应用[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中的类型为app\_gallery并且签名证书类型为release。
+安装应用[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的类型为app\_gallery并且签名证书类型为release。
 
 <strong>处理步骤</strong>
 
-1. 使用[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中的类型非app\_gallery的文件对应用重新签名。
+1. 使用[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的类型非app\_gallery的文件对应用重新签名。
 2. 使用debug类型证书对应用重新签名。
 
 ### 9568403 安装加密校验失败
@@ -1788,15 +1788,15 @@ error: bundle cannot be installed because the appId is not same with preinstalle
 
 <strong>可能原因</strong>
 
-虽然已卸载预置应用，但在安装新应用之前，系统仍会先安装预置应用包，随后再安装新应用包。这是因为预置应用的安装签名信息中的密钥和[APP ID](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506#section16423184171915)，与新安装的应用对应信息不一致。
+虽然已卸载预置应用，但在安装新应用之前，系统仍会先安装预置应用包，随后再安装新应用包。这是因为预置应用的安装签名信息中的密钥和[APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915)，与新安装的应用对应信息不一致。
 
 <strong>处理步骤</strong>
 
 方法一：重新签名。
 
-通过重新签名，确保应用签名信息中的[密钥](./ide-signing.md#section462703710326)和[APP ID](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506#section16423184171915)至少有一项与预置应用保持一致。
+通过重新签名，确保应用签名信息中的[密钥](./ide-signing.md#section462703710326)和[APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915)至少有一项与预置应用保持一致。
 
-如果直接使用DevEco Studio自动签名，由于生成的签名信息均为随机值，与预置应用不匹配，将导致应用安装失败。因此，您需要用之前[申请发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)的账号，重新[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)或直接使用发布Profile对应用重新签名，完成签名后，重新安装应用。
+如果直接使用DevEco Studio自动签名，由于生成的签名信息均为随机值，与预置应用不匹配，将导致应用安装失败。因此，您需要用之前[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)的账号，重新[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)或直接使用发布Profile对应用重新签名，完成签名后，重新安装应用。
 
 方法二：更换bundleName。
 
@@ -1836,7 +1836,7 @@ error: os\_integration Bundle is not allowed to install for shell.
 
 <strong>处理步骤</strong>
 
-检查应用是否为预置的release版本。如果是，需要替换应用的[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)的类型，重新签名并安装。
+检查应用是否为预置的release版本。如果是，需要替换应用的[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)的类型，重新签名并安装。
 
 ### 9568278 安装包的版本号不一致
 
@@ -1866,7 +1866,7 @@ error: Failed to install the HAP or HSP because the app distribution type is not
 
 <strong>可能原因</strong>
 
-该[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中的类型被限制，禁止安装到当前设备中。
+该[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的类型被限制，禁止安装到当前设备中。
 
 <strong>处理步骤</strong>
 
@@ -1884,11 +1884,11 @@ error: Failed to install the HAP because the device is unauthorized, make sure t
 
 <strong>可能原因</strong>
 
-该应用的[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)为调试类型，且未配置当前设备的UDID。
+该应用的[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)为调试类型，且未配置当前设备的UDID。
 
 <strong>处理步骤</strong>
 
-方式一：根据[指导](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)将当前设备添加到调试类型证书或使用[发布类型证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)重新签名。
+方式一：根据[指导](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)将当前设备添加到调试类型证书或使用[发布类型证书](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)重新签名。
 
 方式二：重新[自动签名](./ide-signing.md#section18815157237)。
 
@@ -1944,7 +1944,7 @@ error: Check pluginDistributionID between plugin and host application failed.
 
 <strong>处理步骤</strong>
 
-重新配置应用或者插件[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中的 pluginDistributionIDs。配置格式如下：
+重新配置应用或者插件[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的 pluginDistributionIDs。配置格式如下：
 
 ```
 "app-services-capabilities":&#123;
@@ -2262,7 +2262,7 @@ error: Failed to install the plugin because the plugin id failed to be parsed.
 
 <strong>处理步骤</strong>
 
-参考如下格式，重新配置插件[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中的"app-services-capabilities"字段。
+参考如下格式，重新配置插件[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的"app-services-capabilities"字段。
 
 ```
 "app-services-capabilities":&#123;
@@ -2320,7 +2320,7 @@ error: install failed due to U1Enabled can not change.
 
 <strong>可能原因</strong>
 
-应用[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中allowed-acls字段的U1Enabled配置发生变更，例如：
+应用[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中allowed-acls字段的U1Enabled配置发生变更，例如：
 
 1. 已安装应用在allowed-acls中配置了U1Enabled，待安装应用在allowed-acls中没有配置U1Enabled。
 2. 已安装应用在allowed-acls中没有配置U1Enabled，待安装应用在allowed-acls中配置了U1Enabled。
@@ -2343,7 +2343,7 @@ error: Install failed due to the U1Enabled is not same in all haps.
 
 <strong>可能原因</strong>
 
-多HAP包签名时使用的[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)不一致导致签名信息中allowed-acls的U1Enabled配置不一致。
+多HAP包签名时使用的[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)不一致导致签名信息中allowed-acls的U1Enabled配置不一致。
 
 <strong>处理步骤</strong>
 
@@ -2460,7 +2460,7 @@ error: Failed to install because the bundle must be debug type.
 
 <strong>可能原因</strong>
 
-[开发者模式](./ide-developer-mode.md#section530763213432)下使用[-g参数](#安装命令install)授权签名证书类型为非debug的应用。可以通过[Profile签名文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-overview-0000002283260125)中的type字段来查看签名证书类型。
+[开发者模式](./ide-developer-mode.md#section530763213432)下使用[-g参数](#安装命令install)授权签名证书类型为非debug的应用。可以通过[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的type字段来查看签名证书类型。
 
 <strong>处理步骤</strong>
 

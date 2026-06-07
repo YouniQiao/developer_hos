@@ -1,16 +1,16 @@
 ---
 title: "手动设置授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/open-permission-on-setting
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/open-permission-on-setting
 format: md
 ---
 
 
-当应用需要访问用户的隐私信息或使用敏感系统能力时，如拦截键盘输入事件，应向用户申请授权。这些权限属于[manual\_settings](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#manual_settings手动设置授权)权限。
+当应用需要访问用户的隐私信息或使用敏感系统能力时，如拦截键盘输入事件，应向用户申请授权。这些权限属于[manual\_settings](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#manual_settings手动设置授权)权限。
 
 当应用申请manual\_settings权限时，需完成以下步骤：
 
-1. 在AppGallery Connect（AGC）申请Profile文件并在Profile内添加ACL权限。申请Profile的操作需在AGC完成，详细步骤请参阅[申请发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)。
-2. 在module.json5配置文件中[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+1. 在AppGallery Connect（AGC）申请Profile文件并在Profile内添加ACL权限。申请Profile的操作需在AGC完成，详细步骤请参阅[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)。
+2. 在module.json5配置文件中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 3. 运行应用时，用户触发访问目标对象时应检查用户的授权结果，若未授权，引导用户跳转到系统应用“设置”中进行授权。
 4. 检查用户的授权结果，确认用户已授权后，再进行下一步操作。
 
@@ -20,7 +20,7 @@ format: md
 
 以申请拦截键盘输入事件权限为例进行说明，目前该权限仅在PC/2in1设备上生效。
 
-1. 申请ohos.permission.HOOK\_KEY\_EVENT权限，配置方式请参见[申请发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)与[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+1. 申请ohos.permission.HOOK\_KEY\_EVENT权限，配置方式请参见[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)与[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 2. 校验当前是否已经授权。
 
    在进行权限申请之前，需要先检查当前应用程序是否已经被授予权限。可以通过调用[checkAccessToken()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#checkaccesstoken9)方法来校验当前是否已经授权。如果已经授权，则可以直接访问目标操作，否则需要进行下一步操作，即引导用户跳转到系统应用“设置”中进行授权。

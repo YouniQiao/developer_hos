@@ -1,7 +1,7 @@
 ---
 title: "折叠屏主题设计指导及规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/foldable-display-themes-0000001102979830
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-0000001103278304/foldable-display-themes-0000001102979830
 ---
 
 
@@ -107,11 +107,11 @@ import MergeTable from '@site/src/components/MergeTable';
 | 展开态竖屏锁屏 | 2480\_2200\_manifest.xml | screenWidth="2200" |
 | 展开态横屏锁屏 | 2200\_2480\_manifest.xml | screenWidth="2480" |
 
-<strong>动态锁屏</strong> <strong>[&lt;Video&gt;标签](https://developer.huawei.com/consumer/cn/doc/content/video-0000001073497817)脚本规范</strong>
+<strong>动态锁屏</strong> <strong>[&lt;Video&gt;标签](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/video-0000001073497817)脚本规范</strong>
 
-折叠屏主题在锁屏脚本中使用[&lt;Video&gt;标签](https://developer.huawei.com/consumer/cn/doc/content/video-0000001073497817)时，有以下3点需特别注意：
+折叠屏主题在锁屏脚本中使用[&lt;Video&gt;标签](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/view-0000001073865717/video-0000001073497817)时，有以下3点需特别注意：
 
-1. 4个manifest.xml使用同一个视频资源，视频资源具有特殊的要求，与折叠屏动态壁纸的视频资源要求一致，具体请参考[折叠屏动态壁纸的视频说明](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-specifications-0000001055029722#section042019417499)。
+1. 4个manifest.xml使用同一个视频资源，视频资源具有特殊的要求，与折叠屏动态壁纸的视频资源要求一致，具体请参考[折叠屏动态壁纸的视频说明](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/livewallpaper-0000001054851128/livewallpaper-specifications-0000001055029722#section042019417499)。
 2. 为了保证折叠屏锁屏上亮屏时不闪底图：
    1. 默认锁屏和折叠态锁屏的manifest.xml文件中，&lt;Video&gt;标签的defaultBitmap参数为必填项，建议使用视频第301帧的图片。
    2. 展开态竖屏锁屏和展开态横屏锁屏的manifest.xml文件中，&lt;Video&gt;标签的defaultBigBitmap参数为必填项，建议使用视频首帧的图片。
@@ -151,16 +151,16 @@ import MergeTable from '@site/src/components/MergeTable';
 
 wallpaper文件夹下有1个manifest.xml文件和1个视频资源。
 
-manifest.xml文件的具体写法参见[视频桌面&lt;LiveWallpaper&gt;](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-0000001073967005)
+manifest.xml文件的具体写法参见[视频桌面&lt;LiveWallpaper&gt;](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/livewallpaper-0000001073967005)
 
 ![](./img/9cb3defe61c4.png "点击放大")
 
-<strong>[视频桌面&lt;LiveWallpaper&gt;](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-0000001073967005)</strong> <strong>脚本规范</strong>
+<strong>[视频桌面&lt;LiveWallpaper&gt;](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/livewallpaper-0000001073967005)</strong> <strong>脚本规范</strong>
 
-折叠屏主题在桌面脚本中使用[视频桌面&lt;LiveWallpaper&gt;](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-0000001073967005)时，有以下2点需特别注意：
+折叠屏主题在桌面脚本中使用[视频桌面&lt;LiveWallpaper&gt;](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/livewallpaper-0000001073967005)时，有以下2点需特别注意：
 
-1. 视频资源具有特殊的要求，与折叠屏动态壁纸的视频资源要求一致，具体请参考[折叠屏动态壁纸的视频说明](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-specifications-0000001055029722#section042019417499)。
-2. 如果需要左右滑动桌面时，切换播放所设置的视频区间，则[视频桌面&lt;LiveWallpaper&gt;](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-0000001073967005)的timeSequences参数，在设置的时候需注意：
+1. 视频资源具有特殊的要求，与折叠屏动态壁纸的视频资源要求一致，具体请参考[折叠屏动态壁纸的视频说明](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/livewallpaper-0000001054851128/livewallpaper-specifications-0000001055029722#section042019417499)。
+2. 如果需要左右滑动桌面时，切换播放所设置的视频区间，则[视频桌面&lt;LiveWallpaper&gt;](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/livewallpaper-0000001073967005)的timeSequences参数，在设置的时候需注意：
 
    由于折叠屏从展开到折叠的过程中，视频播放是联动的效果：展开状态播放视频的第1-300帧，折叠状态播放视频的第300-600帧，因此在视频桌面中，展开状态视频和折叠状态视频两段分开计算，设计的时间区间要在每段视频的帧数内，即timeSequences的值要在每段视频的帧数内。
 
@@ -180,7 +180,7 @@ manifest.xml文件的具体写法参见[视频桌面&lt;LiveWallpaper&gt;](https
 
 wallpaper文件夹下有4个manifest.xml文件和素材资源。
 
-设计师可在manifest.xml文件中调用素材资源，使用脚本编写各式各样的动态效果，支持实现的动效详情和具体脚本写法参见[可交互桌面&lt;InteractiveWallpaper&gt;](https://developer.huawei.com/consumer/cn/doc/content/interactivewallpaper-0000001170976217)。
+设计师可在manifest.xml文件中调用素材资源，使用脚本编写各式各样的动态效果，支持实现的动效详情和具体脚本写法参见[可交互桌面&lt;InteractiveWallpaper&gt;](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/interactivewallpaper-0000001170976217)。
 
 ![](./img/ea3769148192.png "点击放大")
 
@@ -190,7 +190,7 @@ wallpaper文件夹下有4个manifest.xml文件和素材资源。
 
 ## 4. 图标（icons）
 
-折叠屏主题图标规范与手机主题完全一致，请见：[5. 图标（icons）](https://developer.huawei.com/consumer/cn/doc/content/themes-specification-0000001160896163#section13726122401413)
+折叠屏主题图标规范与手机主题完全一致，请见：[5. 图标（icons）](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163#section13726122401413)
 
 ## 5. 桌面模块（com.huawei.android.launcher）
 
@@ -200,7 +200,7 @@ wallpaper文件夹下有4个manifest.xml文件和素材资源。
 
 ### 5.1 桌面模块切图
 
-折叠屏主题桌面模块切图与手机主题完全一致，请见：[7. 桌面（com.huawei.android.launcher）](https://developer.huawei.com/consumer/cn/doc/content/themes-specification-0000001160896163#section18981348135618)
+折叠屏主题桌面模块切图与手机主题完全一致，请见：[7. 桌面（com.huawei.android.launcher）](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163#section18981348135618)
 
 ### 5.2 桌面模块结构
 
@@ -225,7 +225,7 @@ description.xml 描述文件是储存主题基本信息的文件。
 
 ## 7. 预览图（preview）
 
-折叠屏主题预览图规范与手机主题完全一致，请见：[17. 预览图（preview）](https://developer.huawei.com/consumer/cn/doc/content/themes-specification-0000001160896163#section116488412243)
+折叠屏主题预览图规范与手机主题完全一致，请见：[17. 预览图（preview）](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163#section116488412243)
 
 ## 8. 手机转折叠屏主题转换指导
 

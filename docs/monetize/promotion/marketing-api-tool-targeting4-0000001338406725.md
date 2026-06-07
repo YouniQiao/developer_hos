@@ -1,7 +1,7 @@
 ---
 title: "删除定向包"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-targeting4-0000001338406725
+original_url: /docs/monetize/promotion/marketing-api-tool-targeting4-0000001338406725
 format: md
 ---
 

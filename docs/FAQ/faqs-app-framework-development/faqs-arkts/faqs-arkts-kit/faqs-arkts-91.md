@@ -1,6 +1,6 @@
 ---
 title: "Uint8Array类型和String以及hex如何互相转换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-91
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-91
 format: md
 ---
 

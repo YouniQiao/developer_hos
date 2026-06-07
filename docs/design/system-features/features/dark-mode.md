@@ -1,7 +1,7 @@
 ---
 title: 深色模式
 sidebar_label: 深色模式
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/dark-mode-0000001823255497
+original_url: /docs/design/system-features/features/dark-mode
 format: md
 ---
 

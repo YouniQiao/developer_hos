@@ -1,7 +1,7 @@
 ---
 title: "参数说明"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-app-param-0000002217355041
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-app-0000002111387918/game-center-setup-activities-app-param-0000002217355041
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

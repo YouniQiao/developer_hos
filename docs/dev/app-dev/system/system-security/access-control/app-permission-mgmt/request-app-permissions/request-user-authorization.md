@@ -1,6 +1,6 @@
 ---
 title: "向用户申请授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 1. 在配置文件中，声明应用需要请求的权限。
 2. 将应用中需要申请权限的目标对象与对应权限关联，确保用户明确哪些操作需授予应用指定权限。
 
-   以上两步请参考章节[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)完成。
+   以上两步请参考章节[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)完成。
 3. 运行应用时，用户触发访问目标对象时应调用接口，精准触发动态授权弹框。接口内部会检查当前用户是否已授权所需权限，若未授权，将拉起动态授权弹框请求用户授权。
 4. 检查用户的授权结果，确认用户已授权后，再进行下一步操作。
 
@@ -21,7 +21,7 @@ format: md
 ## 约束与限制
 
 * user\_grant权限授权要基于用户可知可控的原则，需要应用在运行时主动调用系统动态申请权限的接口，系统弹框由用户授权，用户结合应用运行场景的上下文，识别出应用申请相应敏感权限的合理性，从而做出正确的选择。
-* 系统不鼓励频繁弹窗打扰用户。如果用户拒绝授权，将无法再次弹窗，应用需引导用户在系统设置中手动授予权限。或是调用[requestPermissionOnSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization-second)，拉起权限设置弹窗，引导用户授权。
+* 系统不鼓励频繁弹窗打扰用户。如果用户拒绝授权，将无法再次弹窗，应用需引导用户在系统设置中手动授予权限。或是调用[requestPermissionOnSetting](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization-second)，拉起权限设置弹窗，引导用户授权。
 * 系统权限弹窗不可被遮挡。
 
   系统权限弹窗不可被其他组件或控件遮挡，弹窗信息需完整展示，便于用户识别并完成授权。
@@ -45,7 +45,7 @@ format: md
 
 ![](./img/c8d68cac.png)
 
-1. 申请ohos.permission.LOCATION、ohos.permission.APPROXIMATELY\_LOCATION权限，配置方式请参见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+1. 申请ohos.permission.LOCATION、ohos.permission.APPROXIMATELY\_LOCATION权限，配置方式请参见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 2. 校验当前是否已经授权。
 
    在进行权限申请之前，需要先检查当前应用程序是否已经被授予权限。可以通过调用[checkAccessToken()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#checkaccesstoken9)方法来校验当前是否已经授权。如果已经授权，则可以直接访问目标操作，否则需要进行下一步操作，即向用户申请授权。

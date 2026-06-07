@@ -1,7 +1,7 @@
 ---
 title: "流量质量评级"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/liuliangzhiliangpingji-0000001171199454
+original_url: /docs/monetize/monetization/liuliangzhiliangpingji-0000001171199454
 format: md
 ---
 

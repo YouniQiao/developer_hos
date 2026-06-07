@@ -1,6 +1,6 @@
 ---
 title: "ASCF Plugin"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/release-note-ascf-plugin
+original_url: /docs/dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-plugin
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 该版本新增和增强特性如下所示：
 
-1. 新增[使用ASCF调试器](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/debug-ascf-code)功能，支持DevEco Studio内开启调试。
+1. 新增[使用ASCF调试器](/docs/dev/atomic-dev/ascf/ascf-development-process/debug-ascf-code)功能，支持DevEco Studio内开启调试。
 2. 优化热重载体验，识别设备连接状态。
 
 ## 1.0.4.303

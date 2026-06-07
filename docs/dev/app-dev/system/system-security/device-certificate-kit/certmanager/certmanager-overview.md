@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "证书管理概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-overview
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-overview
 format: md
 ---
 
@@ -42,6 +42,6 @@ format: md
 
 证书管理为开发者提供了以下相关功能的开发指导，请开发者参照开发。
 
-* [应用证书凭据开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-private-credential-guidelines)
-* [CA证书开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanager-ca-certs-guidelines)
-* [证书管理对话框开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certmanagerdialog-guidelines)
+* [应用证书凭据开发指导](/docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-private-credential-guidelines)
+* [CA证书开发指导](/docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-ca-certs-guidelines)
+* [证书管理对话框开发指导](/docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanagerdialog-guidelines)

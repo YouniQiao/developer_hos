@@ -1,7 +1,7 @@
 ---
 title: 三折叠
 sidebar_label: 三折叠
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/trifold-0000002352915021
+original_url: /docs/design/multi-device-design/folding-screen/trifold
 format: md
 ---
 
@@ -35,7 +35,7 @@ format: md
 
 **跟手弹框**
 
-为了减少用户操作路径过长的情况，在双屏态和三屏态可通过跟手弹窗进行展示，弹出框的弹出位置离手更近，以便用户能够快速操作。跟手弹框详细规格，请参阅[弹出框比例与界面布局](https://developer.huawei.com/consumer/cn/doc/design-guides/dialog-0000001957012569#section5639104752013)。
+为了减少用户操作路径过长的情况，在双屏态和三屏态可通过跟手弹窗进行展示，弹出框的弹出位置离手更近，以便用户能够快速操作。跟手弹框详细规格，请参阅[弹出框比例与界面布局](/docs/design/components/container-components/dialog#section5639104752013)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110160055.32899014405917281467450104955873:50001231000000:2800:4FB92C19A36560C0F29ECF12307B673C93031E2DD6A3A45155DC5159903C1A46.png "点击放大")
 
@@ -43,7 +43,7 @@ format: md
 
 在单屏态，半模态窗口通常从屏幕底部弹出；在双屏态，建议窗口居中显示；而在三屏态，可以考虑跟手半模态窗口或者居中半模态窗口显示，具体根据业务需要选择。
 
-跟手半模态详细规格，请参阅[半模态比例与显示布局](https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet-0000001956852753)。
+跟手半模态详细规格，请参阅[半模态比例与显示布局](/docs/design/components/container-components/bind-sheet)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110160056.18921722243724569168174068908358:50001231000000:2800:B0D3691B47D8B6AC4431FC5657435206420D797F6B6C2684356EF25E6FBFBC40.png "点击放大")
 
@@ -73,13 +73,13 @@ format: md
 
 ## 两分栏
 
-分栏布局可以帮助用户在宽屏设备上更高效地处理任务。三折叠设备分栏布局在折叠展开过程中保持分栏样式，分栏后两侧窗口分别基于栅格进行窗口内的布局。三屏态屏幕较宽，建议统一按照屏幕宽度减掉侧边导航后再计算内容区域的宽度。详情请参阅[分栏规范](https://developer.huawei.com/consumer/cn/doc/design-guides/design-responsive-layout-structure-0000001748539684#section194871434192212)。
+分栏布局可以帮助用户在宽屏设备上更高效地处理任务。三折叠设备分栏布局在折叠展开过程中保持分栏样式，分栏后两侧窗口分别基于栅格进行窗口内的布局。三屏态屏幕较宽，建议统一按照屏幕宽度减掉侧边导航后再计算内容区域的宽度。详情请参阅[分栏规范](/docs/design/general-design-basics/layout/responsive-structure#section194871434192212)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110160056.73219728568719929482276061379637:50001231000000:2800:4CF2ABD4C8A261A5BA386EA49AA946BF2AB7C5D1A9DE477ACDCB0F5B4E19A8BD.png "点击放大")
 
 ## 三分栏
 
-三屏态下可支持三分栏布局，原来父子关系的层级页面可拆分后平行显示，使侧边导航抽屉完全展开，充分利用屏幕空间。在双屏态和单屏态下，导航抽屉收起至导航按钮，点击后展开为悬浮导航面板。详情请参阅[响应式应用架构](https://developer.huawei.com/consumer/cn/doc/design-guides/design-responsive-layout-structure-0000001748539684)。
+三屏态下可支持三分栏布局，原来父子关系的层级页面可拆分后平行显示，使侧边导航抽屉完全展开，充分利用屏幕空间。在双屏态和单屏态下，导航抽屉收起至导航按钮，点击后展开为悬浮导航面板。详情请参阅[响应式应用架构](/docs/design/general-design-basics/layout/responsive-structure)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110160056.10741764325471244321335897236944:50001231000000:2800:9662593FABFEB4744BF5F3C580776C830EEA59D039BCCB1C69E0443D1B765348.png "点击放大")
 
@@ -103,7 +103,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110160056.54689329986382317856617628885286:50001231000000:2800:330134CD7F525FCD3C760A9CF5D6711B5EF0279FF9357F6119F8FEA73BDE3A6C.png "点击放大")
 
-详情请参阅[响应式布局方法](https://developer.huawei.com/consumer/cn/doc/design-guides/design-responsive-layout-method-0000001795698449)。
+详情请参阅[响应式布局方法](/docs/design/general-design-basics/layout/responsive-method)。
 
 ### 价值场景
 
@@ -119,7 +119,7 @@ format: md
 
 **新闻阅读类**
 
-当用户阅读新闻详情时，为确保沉浸式阅读体验，默认全屏图文显示。同时允许用户手动切换布局，将评论区挪移到右侧，实现边看边评的效果。详情请参阅[应用设计最佳实践-新闻阅读类](https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples4-0000001746657290)。
+当用户阅读新闻详情时，为确保沉浸式阅读体验，默认全屏图文显示。同时允许用户手动切换布局，将评论区挪移到右侧，实现边看边评的效果。详情请参阅[应用设计最佳实践-新闻阅读类](/docs/design/app-design-practices/news-reading)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110160057.42589258875376775354927064703262:50001231000000:2800:EEB4749E2C0B5CA43DD3C6929394B1A35CFE1A7A18AA8E5E8ED7E63290F17989.png "点击放大")
 
@@ -133,6 +133,6 @@ format: md
 
 **自由多窗**
 
-三折叠设备在三屏态时可开启自由多窗模式，支持同时开启多个应用窗口，允许用户自由调整尺寸、位置及堆叠层级，实现高效的多任务操作。应用窗口可在最小档位与全屏之间无极调节。详情请参阅[平板自由窗口](https://developer.huawei.com/consumer/cn/doc/design-guides/pad-0000001823654157#section1768267204717)。
+三折叠设备在三屏态时可开启自由多窗模式，支持同时开启多个应用窗口，允许用户自由调整尺寸、位置及堆叠层级，实现高效的多任务操作。应用窗口可在最小档位与全屏之间无极调节。详情请参阅[平板自由窗口](/docs/design/multi-device-design/pad#section1768267204717)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251110160057.24746334805846106472269024029051:50001231000000:2800:DD9346911DA58365167656A3FB36345D3096742A23FE8262C9B1E0D32914B57B.png "点击放大")

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何使用DevEco Studio进行C/C++代码断点调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-26
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-26
 ---
 
 

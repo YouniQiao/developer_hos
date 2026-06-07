@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "阅读进度通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-progress
+original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-interaction/reader-progress
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ## 开发准备
 
-在进行阅读进度通知监听之前，请先确保已经“[构建阅读器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-read-page)”。
+在进行阅读进度通知监听之前，请先确保已经“[构建阅读器](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-read-page)”。
 
 ## 开发步骤
 

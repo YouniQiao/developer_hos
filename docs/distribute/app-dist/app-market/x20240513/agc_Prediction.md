@@ -1,7 +1,7 @@
 ---
 title: "华为预测服务协议"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc_prediction
+original_url: /docs/distribute/app-dist/app-market/x20240513/agc_Prediction
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用通过对象字面量初始化class实例导致编译失败的原因和修改方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-148
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-148
 ---
 
 

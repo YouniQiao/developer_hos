@@ -1,6 +1,6 @@
 ---
 title: "提供翻译场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-translation-scene
+original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-translation-scene
 format: md
 ---
 

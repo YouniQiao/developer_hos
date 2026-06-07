@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-faq-0000001295973262
+original_url: /docs/monetize/promotion/bp-functions-deeplink-faq-0000001295973262
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 
 ## 查询延迟Deeplink方式有哪些，查询时效是多久？
 
-有[客户端查询](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-inquire-client-0000001348653289)和[API接口查询](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-inquire-api-0000001296132894)两种查询方式，查询时效均是7天。
+有[客户端查询](/docs/monetize/promotion/bp-functions-deeplink-inquire-client-0000001348653289)和[API接口查询](/docs/monetize/promotion/bp-functions-deeplink-inquire-api-0000001296132894)两种查询方式，查询时效均是7天。
 
 ## 调试延迟Deeplink功能时，除核心配置校验外，还需关注哪些关键事项？
 

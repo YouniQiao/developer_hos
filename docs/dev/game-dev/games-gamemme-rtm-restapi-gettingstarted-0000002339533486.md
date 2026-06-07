@@ -1,6 +1,6 @@
 ---
 title: "使用入门"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rtm-restapi-gettingstarted-0000002339533486
+original_url: /docs/dev/game-dev/games-gamemme-rtm-restapi-gettingstarted-0000002339533486
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 创建API客户端
 
-API客户端是AppGallery Connect用于管理用户访问AppGallery Connect API的身份凭据，您可以给不同角色创建不同的API客户端，使不同角色可以访问对应权限的AppGallery Connect API。在访问某个API前，必须创建有权访问该API的API客户端。具体请参见[创建API客户端](https://developer.huawei.com/consumer/cn/doc/games-guides/games-appendix-api-client-0000002304729552)。
+API客户端是AppGallery Connect用于管理用户访问AppGallery Connect API的身份凭据，您可以给不同角色创建不同的API客户端，使不同角色可以访问对应权限的AppGallery Connect API。在访问某个API前，必须创建有权访问该API的API客户端。具体请参见[创建API客户端](/docs/dev/game-dev/games-appendix-api-client-0000002304729552)。
 
 ## 获取访问API的Token
 

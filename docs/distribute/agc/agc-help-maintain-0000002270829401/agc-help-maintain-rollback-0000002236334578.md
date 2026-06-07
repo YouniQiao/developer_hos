@@ -1,6 +1,6 @@
 ---
 title: "回退版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-rollback-0000002236334578
+original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-rollback-0000002236334578
 format: md
 ---
 
@@ -27,6 +27,6 @@ format: md
 
    ![](../img/agc-help-maintain-rollback-0000002236334578_2.png)
 
-   当您的应用从版本2回退到版本1后，如果您想再次对版本1升级，您需要确保您提交的应用签名与版本2的应用签名一致，否则选取软件包时会弹出错误提示框。相关内容请参见[软件包签名不一致如何处理](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-upgrade-0000002236494386#section17520173352618)。
+   当您的应用从版本2回退到版本1后，如果您想再次对版本1升级，您需要确保您提交的应用签名与版本2的应用签名一致，否则选取软件包时会弹出错误提示框。相关内容请参见[软件包签名不一致如何处理](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-upgrade-0000002236494386#section17520173352618)。
 
    ![](../img/agc-help-maintain-rollback-0000002236334578_3.png)

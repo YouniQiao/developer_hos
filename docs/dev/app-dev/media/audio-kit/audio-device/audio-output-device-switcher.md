@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "实现音频输出设备路由切换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-switcher
+original_url: /docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-switcher
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 ### 外接设备路由切换
 
-应用可[使用通话设备切换组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-switch-call-devices)进行通话类应用外接输出设备路由切换。
+应用可[使用通话设备切换组件](/docs/dev/app-dev/media/avsession-kit/distributed-avsession/using-switch-call-devices)进行通话类应用外接输出设备路由切换。
 
 ### 内置听筒和扬声器路由切换
 

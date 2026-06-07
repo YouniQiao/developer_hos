@@ -1,6 +1,6 @@
 ---
 title: "如何实现汉字转拼音"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-localization-11
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-11
 format: md
 ---
 

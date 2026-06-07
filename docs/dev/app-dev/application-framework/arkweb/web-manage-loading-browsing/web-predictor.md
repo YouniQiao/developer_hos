@@ -1,13 +1,13 @@
 ---
 title: "加速Web页面的访问"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-predictor
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-predictor
 format: md
 ---
 
 
 当Web页面加载缓慢时，可以使用预连接、预加载和预获取POST请求的能力加速Web页面的访问。
 
-针对Web页面加载性能优化的详细内容请参考[Web页面加载优化性能指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-develop-optimization#section128761465256)。
+针对Web页面加载性能优化的详细内容请参考[Web页面加载优化性能指导](/docs/quality/web-develop-optimization#section128761465256)。
 
 ## 预解析和预连接
 
@@ -219,7 +219,7 @@ export default class EntryAbility extends UIAbility {
 
 推荐配合动态组件使用，使用离线的Web组件用于生成字节码缓存，并在适当的时机加载业务用Web组件使用这些字节码缓存。下方是代码示例：
 
-1. 首先，在EntryAbility中将[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)存到[localStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中。
+1. 首先，在EntryAbility中将[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)存到[localStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage)中。
 
    ```
    // EntryAbility.ets
@@ -449,7 +449,7 @@ export default class EntryAbility extends UIAbility {
 
 推荐配合动态组件使用，使用离线的Web组件用于将资源注入到内核的内存缓存中，并在适当的时机加载业务用Web组件使用这些资源。下方是代码示例：
 
-1. 首先，在EntryAbility中将[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)存到[localStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-localstorage)中。
+1. 首先，在EntryAbility中将[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)存到[localStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-localstorage)中。
 
    ```
    // EntryAbility.ets

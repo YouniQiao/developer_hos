@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voicetotext-overview-0000002394130049
+original_url: /docs/dev/game-dev/games-gamemme-voicetotext-overview-0000002394130049
 format: md
 ---
 

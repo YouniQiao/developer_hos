@@ -1,6 +1,6 @@
 ---
 title: "构建发布工程"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-creator-release-0000002290527377
+original_url: /docs/dev/game-dev/games-creator-release-0000002290527377
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 1. 在Cocos Creator 2.4.15顶部菜单选择“项目 &gt; 构建发布”，在弹出的“构建发布”窗口填写配置项后，其中：
    * “发布平台”请选择“HarmonyOS Next”。
-   * “应用名称ID”请填写游戏包名。获取方式请参见[获取游戏包名](https://developer.huawei.com/consumer/cn/doc/games-guides/games-creator-preparation-0000002290527373#section177836993213)。
+   * “应用名称ID”请填写游戏包名。获取方式请参见[获取游戏包名](/docs/dev/game-dev/games-creator-preparation-0000002290527373#section177836993213)。
    * “js引擎”请选择“JSVM”。
 
    完成后点击“构建”，构建发布工程。

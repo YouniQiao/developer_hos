@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "任务执行类场景方案（配置文件接入方式）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-configuration
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-configuration
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 ## 意图声明
 
-以“搜索旅游攻略”特性为例，开发者首先要注册“查看旅游攻略”（viewTravelGuides），其他意图见[各垂域意图Schema](https://developer.huawei.com/consumer/cn/doc/service/intents-schema-0000001901962713)。
+以“搜索旅游攻略”特性为例，开发者首先要注册“查看旅游攻略”（viewTravelGuides），其他意图见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)。
 
 开发者需要编辑对应的意图配置insight\_intent.json文件实现意图注册。insight\_intent.json文件需要放置在module下面的指定目录：src/main/resources/base/profile/insight\_intent.json，并且整个工程中只能存在一个insight\_intent.json文件。
 

@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通用查询(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-query-ndk
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-general-operation/huks-ukey-general-query-ndk
 format: md
 ---
 
 
-从API 22开始，huksExternalCrypto提供通用查询功能接口。从Ukey获取通用属性信息，完成属性查询操作。具体的场景介绍请参考[获取属性介绍及规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-general-query-overview)。
+从API 22开始，huksExternalCrypto提供通用查询功能接口。从Ukey获取通用属性信息，完成属性查询操作。具体的场景介绍请参考[获取属性介绍及规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-general-operation/huks-ukey-general-query-overview)。
 
 ## 在CMake脚本中链接相关动态库
 

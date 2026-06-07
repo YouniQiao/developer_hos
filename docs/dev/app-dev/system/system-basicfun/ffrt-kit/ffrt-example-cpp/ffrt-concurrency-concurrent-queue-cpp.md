@@ -1,6 +1,6 @@
 ---
 title: "Function Flow Runtime并发队列(C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-concurrent-queue-cpp
+original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-concurrent-queue-cpp
 format: md
 ---
 
@@ -126,7 +126,7 @@ int ConcurrentQueueCppExec()
 
 ![](./img/5951c737.png)
 
-* 如何使用FFRT C++ API详见：[FFRT C++接口三方库使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-development-guideline#using-ffrt-c-api-1)。
+* 如何使用FFRT C++ API详见：[FFRT C++接口三方库使用指导](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-development-guideline#using-ffrt-c-api-1)。
 * 使用FFRT C接口或C++接口时，都可以通过FFRT C++接口三方库简化头文件包含，即使用#include "ffrt/ffrt.h"头文件包含语句。
 
 ## 约束限制

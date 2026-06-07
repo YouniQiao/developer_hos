@@ -1,7 +1,7 @@
 ---
 title: "获取文件上传凭证"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-asset5-0000001338581865
+original_url: /docs/monetize/promotion/marketing-api-tool-asset5-0000001338581865
 format: md
 ---
 

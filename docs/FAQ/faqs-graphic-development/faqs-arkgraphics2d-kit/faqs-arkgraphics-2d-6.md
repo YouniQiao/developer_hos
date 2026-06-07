@@ -1,7 +1,7 @@
 ---
 format: md
 title: "EGL绘制是否支持多线程？如何在多线程的场景下同时操作一块buffer进行图形绘制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkgraphics-2d-6
+original_url: /docs/FAQ/faqs-graphic-development/faqs-arkgraphics2d-kit/faqs-arkgraphics-2d-6
 ---
 
 

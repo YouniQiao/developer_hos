@@ -1,6 +1,6 @@
 ---
 title: "HiLog打印规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-log-standard-hilog
+original_url: /docs/quality/stability-log-standard-hilog
 format: md
 ---
 

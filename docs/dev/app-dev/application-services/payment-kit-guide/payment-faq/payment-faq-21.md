@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "请求接口加签验证中，如果请求头“PayMercAuth”中bodySign字段为空值，会做验签吗？还是会先校验字段？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-21
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-21
 format: md
 ---
 

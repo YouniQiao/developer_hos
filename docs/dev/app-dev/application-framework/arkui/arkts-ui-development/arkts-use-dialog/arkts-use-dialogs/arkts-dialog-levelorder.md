@@ -1,6 +1,6 @@
 ---
 title: "弹出框层级管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-levelorder
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-dialog-levelorder
 format: md
 ---
 
@@ -11,7 +11,7 @@ ArkUI的弹出框节点默认直接挂载在根节点上，会根据层级从小
 
 ## 使用约束
 
-目前[openCustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-custom-dialog)、[CustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-custom-dialog)、[AlertDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fixes-style-dialog#警告弹窗-alertdialog)、[ActionSheet](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fixes-style-dialog#列表选择弹窗-actionsheet)、[showDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fixes-style-dialog#对话框-showdialog)支持通过levelOrder参数来管理弹出框的层次。
+目前[openCustomDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-uicontext-custom-dialog)、[CustomDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-common-components-custom-dialog)、[AlertDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-fixes-style-dialog#警告弹窗-alertdialog)、[ActionSheet](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-fixes-style-dialog#列表选择弹窗-actionsheet)、[showDialog](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-fixes-style-dialog#对话框-showdialog)支持通过levelOrder参数来管理弹出框的层次。
 
 ![](./img/accf7a49.png)
 

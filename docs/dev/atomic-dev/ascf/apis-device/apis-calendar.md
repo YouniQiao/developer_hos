@@ -1,6 +1,6 @@
 ---
 title: "日历"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-calendar
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-calendar
 format: md
 ---
 
@@ -16,7 +16,7 @@ has.addPhoneCalendar(Object object)
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.READ\_CALENDAR**和**ohos.permission.WRITE\_CALENDAR**。
-2. 在has.authorize中申请[scope.addPhoneCalendar](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)授权。
+2. 在has.authorize中申请[scope.addPhoneCalendar](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)授权。
 
 **参数：**
 
@@ -66,7 +66,7 @@ has.addPhoneRepeatCalendar(Object object)
 **需要权限：**
 
 1. 在module.json5中声明**ohos.permission.READ\_CALENDAR**和**ohos.permission.WRITE\_CALENDAR**。
-2. 在has.authorize中申请[scope.addPhoneCalendar](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)授权。
+2. 在has.authorize中申请[scope.addPhoneCalendar](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)授权。
 
 **参数：**
 

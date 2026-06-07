@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "扩展屏投播开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-extended-screen
+original_url: /docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/avsession-extended-screen
 format: md
 ---
 

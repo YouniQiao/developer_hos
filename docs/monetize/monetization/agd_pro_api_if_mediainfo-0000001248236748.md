@@ -1,7 +1,7 @@
 ---
 title: "MediaInfo"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_mediainfo-0000001248236748
+original_url: /docs/monetize/monetization/agd_pro_api_if_mediainfo-0000001248236748
 format: md
 ---
 

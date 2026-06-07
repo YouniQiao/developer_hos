@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-overview-minorsprotection
+original_url: /docs/dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-overview-minorsprotection
 format: md
 ---
 
@@ -52,14 +52,14 @@ format: md
 
 | 场景名称 | 场景介绍 | 子场景名称 | 实现方案思路 |
 | --- | --- | --- | --- |
-| [元服务与系统联动切换未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-system-atomic-minorsprotection) | 元服务与系统未成年人模式进行联动切换未成年人模式。 | 获取系统未成年人模式开启状态。 | 通过[查询系统未成年人模式开启状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#getminorsprotectioninfosync)或[订阅未成年人模式公共事件](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-system-atomic-minorsprotection#事件说明)来获取系统未成年人模式开启状态，元服务的未成年人模式状态需和系统未成年人模式的状态保持一致。 |
-| [元服务内开启未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-turn-on-minorsprotection) | 在元服务内开启系统未成年人模式。 | 引导用户开启系统未成年人模式。 | 调用系统未成年人模式的开启接口[leadToTurnOnMinorsMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#leadtoturnonminorsmode)，拉起系统未成年人模式开启流程。系统未成年人模式开启后，元服务需跟随同步开启。 |
-| [关闭元服务的未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomicself-turn-off-minorsprotection) | 元服务可单独关闭元服务的未成年人模式。 | 用户操作关闭元服务的未成年人模式。 | 调用家长身份验证接口[verifyMinorsProtectionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#verifyminorsprotectioncredential)，验证通过后，可关闭元服务的未成年人模式，同时需要记录单独关闭的标记为true，表明当前用户操作单独关闭元服务的未成年人模式。 |
-| [关闭元服务的未成年人模式（查询或订阅方式）](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomicself-turn-off-minorsprotection) | 元服务可单独关闭元服务的未成年人模式。 | 查询或订阅到未成年人模式已开启/关闭。 | 当查询或订阅到未成年人模式已开启，如单独关闭的标记为true，则元服务不开启未成年人模式，否则需要开启未成年人模式。  当查询或订阅到未成年人模式已关闭，需设置单独关闭的标记为false，且关闭元服务的未成年人模式。 |
-| [关闭系统的未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-system-turn-off-atomic-minorsprotection) | 在元服务内关闭系统未成年人模式。 | 引导用户关闭系统未成年人模式。 | 调用系统未成年人模式的关闭接口[leadToTurnOffMinorsMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#leadtoturnoffminorsmode)，拉起系统的未成年人模式关闭流程，系统未成年人模式关闭后，元服务需跟随同步关闭。 |
-| [元服务内调整未成年人模式设置](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-password-atomic-minorsprotection) | 用户调整内容偏好、使用时长等设置，验证家长身份。 | 拉起验证未成年人模式密码页面，验证家长身份。 | 调用家长身份验证接口[verifyMinorsProtectionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#verifyminorsprotectioncredential)，拉起验证未成年人模式密码页面。 |
+| [元服务与系统联动切换未成年人模式](/docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-system-atomic-minorsprotection) | 元服务与系统未成年人模式进行联动切换未成年人模式。 | 获取系统未成年人模式开启状态。 | 通过[查询系统未成年人模式开启状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#getminorsprotectioninfosync)或[订阅未成年人模式公共事件](/docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-system-atomic-minorsprotection#事件说明)来获取系统未成年人模式开启状态，元服务的未成年人模式状态需和系统未成年人模式的状态保持一致。 |
+| [元服务内开启未成年人模式](/docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-atomic-turn-on-minorsprotection) | 在元服务内开启系统未成年人模式。 | 引导用户开启系统未成年人模式。 | 调用系统未成年人模式的开启接口[leadToTurnOnMinorsMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#leadtoturnonminorsmode)，拉起系统未成年人模式开启流程。系统未成年人模式开启后，元服务需跟随同步开启。 |
+| [关闭元服务的未成年人模式](/docs/dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-atomicself-turn-off-minorsprotection) | 元服务可单独关闭元服务的未成年人模式。 | 用户操作关闭元服务的未成年人模式。 | 调用家长身份验证接口[verifyMinorsProtectionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#verifyminorsprotectioncredential)，验证通过后，可关闭元服务的未成年人模式，同时需要记录单独关闭的标记为true，表明当前用户操作单独关闭元服务的未成年人模式。 |
+| [关闭元服务的未成年人模式（查询或订阅方式）](/docs/dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-atomicself-turn-off-minorsprotection) | 元服务可单独关闭元服务的未成年人模式。 | 查询或订阅到未成年人模式已开启/关闭。 | 当查询或订阅到未成年人模式已开启，如单独关闭的标记为true，则元服务不开启未成年人模式，否则需要开启未成年人模式。  当查询或订阅到未成年人模式已关闭，需设置单独关闭的标记为false，且关闭元服务的未成年人模式。 |
+| [关闭系统的未成年人模式](/docs/dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-system-turn-off-atomic-minorsprotection) | 在元服务内关闭系统未成年人模式。 | 引导用户关闭系统未成年人模式。 | 调用系统未成年人模式的关闭接口[leadToTurnOffMinorsMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#leadtoturnoffminorsmode)，拉起系统的未成年人模式关闭流程，系统未成年人模式关闭后，元服务需跟随同步关闭。 |
+| [元服务内调整未成年人模式设置](/docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-password-atomic-minorsprotection) | 用户调整内容偏好、使用时长等设置，验证家长身份。 | 拉起验证未成年人模式密码页面，验证家长身份。 | 调用家长身份验证接口[verifyMinorsProtectionCredential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#verifyminorsprotectioncredential)，拉起验证未成年人模式密码页面。 |
 
-建议开发者组合使用[元服务与系统联动切换未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-system-atomic-minorsprotection)、[元服务内开启未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-turn-on-minorsprotection)、[关闭元服务的未成年人模式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomicself-turn-off-minorsprotection)章节，构建元服务的未成年人模式。
+建议开发者组合使用[元服务与系统联动切换未成年人模式](/docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-system-atomic-minorsprotection)、[元服务内开启未成年人模式](/docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-atomic-turn-on-minorsprotection)、[关闭元服务的未成年人模式](/docs/dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-atomicself-turn-off-minorsprotection)章节，构建元服务的未成年人模式。
 
 未成年人模式详细接入体验可参考Account Kit提供的[SampleCode示例工程](https://gitcode.com/HarmonyOS_Samples/account-kit-samplecode-clientdemo-for-atomicservice-arkts)。
 

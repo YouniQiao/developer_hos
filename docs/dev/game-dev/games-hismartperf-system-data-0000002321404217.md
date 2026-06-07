@@ -1,6 +1,6 @@
 ---
 title: "系统数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-system-data-0000002321404217
+original_url: /docs/dev/game-dev/games-hismartperf-system-data-0000002321404217
 format: md
 ---
 

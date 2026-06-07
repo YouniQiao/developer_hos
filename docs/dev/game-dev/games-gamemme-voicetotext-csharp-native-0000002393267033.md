@@ -1,15 +1,15 @@
 ---
 title: "C#（Native）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voicetotext-csharp-native-0000002393267033
+original_url: /docs/dev/game-dev/games-gamemme-voicetotext-csharp-native-0000002393267033
 format: md
 ---
 
 
 ## 前提条件
 
-* 您已[开启语音转文本功能](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。
-* 您已[集成游戏多媒体基础SDK和语音消息模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
+* 您已[开启语音转文本功能](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。
+* 您已[集成游戏多媒体基础SDK和语音消息模块](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
 * 您已[开通机器学习服务](https://developer.huawei.com/consumer/cn/doc/hiai-Guides/enable-service-0000001050038078)。
 
 ## 开发步骤

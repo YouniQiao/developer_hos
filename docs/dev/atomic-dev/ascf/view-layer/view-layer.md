@@ -1,9 +1,9 @@
 ---
 title: "视图层"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/view-layer
+original_url: /docs/dev/atomic-dev/ascf/view-layer/view-layer
 format: md
 ---
 
 
-* **[hxml](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/view-layer-hxml)**
-* **[CSS](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/view-layer-css)**
+* **[hxml](/docs/dev/atomic-dev/ascf/view-layer/view-layer-hxml)**
+* **[CSS](/docs/dev/atomic-dev/ascf/view-layer/view-layer-css)**

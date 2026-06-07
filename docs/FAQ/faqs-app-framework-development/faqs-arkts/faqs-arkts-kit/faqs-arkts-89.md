@@ -1,6 +1,6 @@
 ---
 title: "如何将JSON对象转换成HashMap"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-89
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-89
 format: md
 ---
 

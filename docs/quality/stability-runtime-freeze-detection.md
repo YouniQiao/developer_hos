@@ -1,6 +1,6 @@
 ---
 title: "应用冻屏类问题检测方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-runtime-freeze-detection
+original_url: /docs/quality/stability-runtime-freeze-detection
 format: md
 ---
 
@@ -13,8 +13,8 @@ format: md
 
 ## 实现原理
 
-可参看[AppFreeze（应用冻屏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)。
+可参看[AppFreeze（应用冻屏）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines)。
 
 ## 订阅应用冻屏事件
 
-可参看[应用冻屏事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/freeze-events)。
+可参看[应用冻屏事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events)。

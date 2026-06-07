@@ -1,6 +1,6 @@
 ---
 title: "在自绘编辑框中使用输入法开发指导 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-inputmethod-in-custom-edit-box-ndk
+original_url: /docs/dev/app-dev/application-framework/ime-kit/use-inputmethod-in-custom-edit-box-ndk
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "swiper-item"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-swiper-item
+original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-swiper-item
 format: md
 ---
 

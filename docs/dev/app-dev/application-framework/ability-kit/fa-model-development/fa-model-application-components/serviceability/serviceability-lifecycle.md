@@ -1,6 +1,6 @@
 ---
 title: "ServiceAbility的生命周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serviceability-lifecycle
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/serviceability-lifecycle
 format: md
 ---
 

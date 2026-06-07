@@ -1,7 +1,7 @@
 ---
 format: md
 title: "UIAbility在onBackground执行耗时操作时是否会影响另外一个UIAbility的onForeground"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-26
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-26
 ---
 
 

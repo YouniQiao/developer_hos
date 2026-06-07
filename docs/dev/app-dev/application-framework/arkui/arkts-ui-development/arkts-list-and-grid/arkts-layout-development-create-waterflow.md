@@ -1,6 +1,6 @@
 ---
 title: "创建瀑布流（WaterFlow）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-waterflow
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-waterflow
 format: md
 ---
 

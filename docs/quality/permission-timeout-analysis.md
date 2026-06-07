@@ -1,6 +1,6 @@
 ---
 title: "分析任务执行超时问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-permission-timeout-analysis
+original_url: /docs/quality/permission-timeout-analysis
 format: md
 ---
 
@@ -9,18 +9,18 @@ format: md
 
 在应用开发过程中，开发者希望某段业务逻辑能在预期时间内完成执行。如果该业务逻辑的执行时间超过了预期，即被视为任务超时。
 
-任务超时检测包括主线程超时检测和任务执行超时检测，这两种检测均可通过HiCollie实现，以自定义时长对选定的业务逻辑进行主动监控。对于主线程超时，也可以选择使用默认时长进行检测。详情请参阅：[HiCollie使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hicollie)。
+任务超时检测包括主线程超时检测和任务执行超时检测，这两种检测均可通过HiCollie实现，以自定义时长对选定的业务逻辑进行主动监控。对于主线程超时，也可以选择使用默认时长进行检测。详情请参阅：[HiCollie使用指导](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hicollie)。
 
-任务执行超时检测的原理、日志获取方式及规格，请参阅：[任务超时检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines)。
+任务执行超时检测的原理、日志获取方式及规格，请参阅：[任务超时检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines)。
 
 ## 分析思路
 
 1. 主线程超时
 
-   [主线程超时检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines#主线程超时检测)实际利用多次采样堆栈，并聚类的原理来提供最终堆栈。分析此类问题时，开发者只需关注与业务逻辑相关的堆栈（命中次数最高者），并进行优化即可。
+   [主线程超时检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines#主线程超时检测)实际利用多次采样堆栈，并聚类的原理来提供最终堆栈。分析此类问题时，开发者只需关注与业务逻辑相关的堆栈（命中次数最高者），并进行优化即可。
 2. 任务执行超时
 
-   由于任务执行超时分析方法与应用冻屏分析方法一致，可参考[应用冻屏（AppFreeze）问题排查方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-way)。
+   由于任务执行超时分析方法与应用冻屏分析方法一致，可参考[应用冻屏（AppFreeze）问题排查方法](/docs/quality/stability-app-freeze-way)。
 
 ## 分析步骤
 
@@ -47,4 +47,4 @@ format: md
    ```
 
    如上述示例所示，通过订阅相关事件获取日志信息后，按照#xx前的数字排查，排除系统侧堆栈之后，查找与业务逻辑相关的堆栈，数字越高表示采样栈命中次数越高，需要优化的可能性越大。如上述案例所示，需要分析#22业务执行耗时逻辑是否合理。
-2. 任务执行超时分析步骤同[应用冻屏（AppFreeze）定位步骤与思路](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-way#section1950514261110)。
+2. 任务执行超时分析步骤同[应用冻屏（AppFreeze）定位步骤与思路](/docs/quality/stability-app-freeze-way#section1950514261110)。

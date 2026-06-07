@@ -1,6 +1,6 @@
 ---
 title: "Configure构建工程配置HarmonyOS编译工具链"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/toolchain-configure-build-project
+original_url: /docs/dev/ndk-dev/toolchain-configure-build-project
 format: md
 ---
 
@@ -22,7 +22,7 @@ Configure工具的主要作用：
 
 ## 环境准备
 
-1. Linux编译环境及HarmonyOS SDK下载请参考：[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/toolchain-cmake-build-project#环境准备)。
+1. Linux编译环境及HarmonyOS SDK下载请参考：[环境准备](/docs/dev/ndk-dev/toolchain-cmake-build-project#环境准备)。
 2. 获取三方库源码（“/mnt/e/configure”中configure表示创建的文件夹名称，用于存放三方库源码文件，开发者可自行选择创建与否）。
 
    ```

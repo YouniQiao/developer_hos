@@ -1,6 +1,6 @@
 ---
 title: "配置隐私声明"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-privacy-state-0000002401219281
+original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-privacy-state-0000002401219281
 format: md
 ---
 
@@ -28,8 +28,8 @@ format: md
 
 #### [h2]前提条件
 
-* 已参考[配置隐私政策（HarmonyOS应用）](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-app-0000002282162168)，生成游戏的隐私政策。
-* 已参考[配置用户协议](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-user-agreement-0000002282265450)，生成游戏的用户协议。
+* 已参考[配置隐私政策（HarmonyOS应用）](/docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-app-0000002282162168)，生成游戏的隐私政策。
+* 已参考[配置用户协议](/docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-user-agreement-0000002282265450)，生成游戏的用户协议。
 
 #### [h2]操作步骤
 

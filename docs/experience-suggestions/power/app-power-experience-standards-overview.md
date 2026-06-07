@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-power-experience-standards-overview
+original_url: /docs/experience-suggestions/power/app-power-experience-standards-overview
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "移除工作空间"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-remove-workspace
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-remove-workspace
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "MindSpore Lite Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-kit-introduction
+original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-kit-introduction
 format: md
 ---
 
@@ -39,7 +39,7 @@ MindSpore Lite开发流程分为两个阶段：
 
 * 模型转换
 
-  MindSpore Lite使用.ms格式模型进行推理。对于第三方框架模型，比如 TensorFlow、TensorFlow Lite、Caffe、ONNX等，可以使用MindSpore Lite提供的模型转换工具转换为.ms模型，使用方法可参考[推理模型转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-lite-converter-guidelines)。
+  MindSpore Lite使用.ms格式模型进行推理。对于第三方框架模型，比如 TensorFlow、TensorFlow Lite、Caffe、ONNX等，可以使用MindSpore Lite提供的模型转换工具转换为.ms模型，使用方法可参考[推理模型转换](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-converter-guidelines)。
 * 模型部署
 
   调用MindSpore Lite运行时接口，实现模型推理/训练，大致步骤如下：
@@ -53,8 +53,8 @@ MindSpore Lite开发流程分为两个阶段：
 
 MindSpore Lite已作为系统部件在HarmonyOS标准系统内置，基于MindSpore Lite开发AI应用的开发方式有：
 
-* 方式一：[使用MindSpore Lite ArkTS API开发AI应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-js)。开发者直接在UI代码中调用 MindSpore Lite ArkTS API 加载模型并进行AI模型推理，此方式可快速验证效果。
-* 方式二：[使用MindSpore Lite Native API开发AI应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-guidelines-based-native)。开发者将算法模型和调用 MindSpore Lite Native API 的代码封装成动态库，并通过N-API封装成ArkTS接口，供UI调用。
+* 方式一：[使用MindSpore Lite ArkTS API开发AI应用](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-js)。开发者直接在UI代码中调用 MindSpore Lite ArkTS API 加载模型并进行AI模型推理，此方式可快速验证效果。
+* 方式二：[使用MindSpore Lite Native API开发AI应用](/docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-native)。开发者将算法模型和调用 MindSpore Lite Native API 的代码封装成动态库，并通过N-API封装成ArkTS接口，供UI调用。
 
 ## 模拟器支持情况
 
@@ -68,7 +68,7 @@ MindSpore Lite已作为系统部件在HarmonyOS标准系统内置，基于MindSp
 HarmonyOS AI开放层次由上层到底层分别为：
 
 * MindSpore Lite Kit：HarmonyOS内置的轻量化AI引擎，提供统一推理接口和多后端硬件加速能力，使能手机、PC/2in1、TV等全场景智能应用。
-* [Neural Network Runtime Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/neural-network-runtime-kit-introduction)：面向AI领域的跨芯片推理计算运行时，作为中间桥梁连通上层AI推理框架和底层加速芯片，实现AI模型的跨芯片推理计算。
+* [Neural Network Runtime Kit](/docs/dev/app-dev/ai/neural-network-runtime-kit/neural-network-runtime-kit-introduction)：面向AI领域的跨芯片推理计算运行时，作为中间桥梁连通上层AI推理框架和底层加速芯片，实现AI模型的跨芯片推理计算。
 * [CANN Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cannkit-introduction)：海思AI硬件统一开放计算架构，支持 Ascend C NPU自定义编程、端云协同复用。擅长偏重载AI计算、需深度优化性能功耗场景。
 
 Neural Network Runtime Kit可支持系统内置的MindSpore Lite推理框架（MindSpore Lite Kit），MindSpore Lite Kit作为已开放了配置NNRt的Native接口。

@@ -1,6 +1,6 @@
 ---
 title: "异步等待"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-condition-variable-introduction
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-condition-variable-introduction
 format: md
 ---
 
@@ -15,7 +15,7 @@ ArkTS语言支持异步操作，现已增加异步任务的等待和唤醒功能
 
 ## 使用示例
 
-[Sendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)共享对象在不同线程控制异步任务等待和唤醒的示例如下：
+[Sendable](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)共享对象在不同线程控制异步任务等待和唤醒的示例如下：
 
 ```
 import { ArkTSUtils, taskpool } from '@kit.ArkTS';

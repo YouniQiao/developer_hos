@@ -1,6 +1,6 @@
 ---
 title: "开放权限（系统授权）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all
+original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 申请方式
 
-以下权限的授权方式均为[system\_grant](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#system_grant系统授权)，申请方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+以下权限的授权方式均为[system\_grant](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#system_grant系统授权)，申请方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ## ohos.permission.USE\_BLUETOOTH
 

@@ -1,7 +1,7 @@
 ---
 title: "问题反馈"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-level1-feedback-0000002466018826
+original_url: /docs/monetize/promotion/fusion-level1-feedback-0000002466018826
 format: md
 ---
 

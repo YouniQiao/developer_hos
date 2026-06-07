@@ -1,6 +1,6 @@
 ---
 title: "Device Certificate Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit-intro
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/device-certificate-kit-intro
 format: md
 ---
 
@@ -27,7 +27,7 @@ Device Certificate Kit（设备证书服务）面向应用开发者，提供了[
 
 ### 与相关Kit的关系
 
-证书算法库的功能使用时，涉及公钥的生成和获取，这部分依赖[Crypto Architecture Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro)加解密算法框架服务的能力。
+证书算法库的功能使用时，涉及公钥的生成和获取，这部分依赖[Crypto Architecture Kit](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-architecture-kit-intro)加解密算法框架服务的能力。
 
 ## 证书管理
 
@@ -49,7 +49,7 @@ Device Certificate Kit（设备证书服务）面向应用开发者，提供了[
 
 ### 与相关Kit的关系
 
-证书管理的功能使用时，涉及凭据的安装和使用，这部分依赖[Universal Keystore Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)密钥管理服务的能力。
+证书管理的功能使用时，涉及凭据的安装和使用，这部分依赖[Universal Keystore Kit](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)密钥管理服务的能力。
 
 ## 约束与限制
 

@@ -1,21 +1,21 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AVPlayer播放流媒体(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/streaming-media-playback-development-guide
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/streaming-media-playback-development-guide
 format: md
 ---
 
 
-本开发指导将介绍如何使用[AVPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avplayer)开发流媒体直播和点播功能。示例展示如何完整播放流媒体视频，实现端到端的流媒体资源播放。
+本开发指导将介绍如何使用[AVPlayer](/docs/dev/app-dev/media/media-kit/media-kit-intro#avplayer)开发流媒体直播和点播功能。示例展示如何完整播放流媒体视频，实现端到端的流媒体资源播放。
 
-本指导仅介绍流媒体播放功能。本地音视频播放等其他场景，请参考[视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback)。
+本指导仅介绍流媒体播放功能。本地音视频播放等其他场景，请参考[视频播放](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback)。
 
 ## 流媒体支持的格式
 
 | 流媒体协议类型 | 典型链接 | 网络点播 | 网络直播 | 内容保护 |
 | --- | --- | --- | --- | --- |
-| HLS | https://xxxx/index.m3u8 | 支持 | 支持 | 支持，详见[DRM Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-overview)。 |
-| DASH | https://xxxx.mpd | 支持 | - | 支持，详见[DRM Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-overview)。 |
+| HLS | https://xxxx/index.m3u8 | 支持 | 支持 | 支持，详见[DRM Kit](/docs/dev/app-dev/media/drm-kit/drm-overview)。 |
+| DASH | https://xxxx.mpd | 支持 | - | 支持，详见[DRM Kit](/docs/dev/app-dev/media/drm-kit/drm-overview)。 |
 | HTTP/HTTPS | https://xxxx.mp4 | 支持 | - | - |
 | HTTP-FLV | https://xxxx.flv | 支持 | 支持 | - |
 
@@ -37,13 +37,13 @@ format: md
    | volumeChange | 监听setVolume()请求完成情况。  当使用setVolume()调节播放音量后，如果setVolume操作成功，将上报该事件。 |
    | bufferingUpdate | 监听网络播放缓冲信息，上报缓冲百分比以及缓存播放进度。 |
    | audioInterrupt | 监听音频焦点切换信息，搭配属性audioInterruptMode使用。  如果当前设备存在多个音频正在播放，音频焦点被切换（即播放其他媒体如通话等）时将上报该事件，应用可以及时处理。 |
-3. 设置资源：[使用AVPlayer设置播放URL](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-url-setting-method)，使AVPlayer进入initialized状态。
+3. 设置资源：[使用AVPlayer设置播放URL](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/playback-url-setting-method)，使AVPlayer进入initialized状态。
 
    ![](./img/407c422f.png)
 
    下面代码示例中的url仅作示意，开发者需根据实际情况确认资源有效性并设置。
 
-   * 使用网络播放路径，需[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：ohos.permission.INTERNET。
+   * 使用网络播放路径，需[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)：ohos.permission.INTERNET。
    * 使用支持的播放格式和协议。
 4. 设置窗口：获取并设置SurfaceID属性，用于配置显示画面。
 

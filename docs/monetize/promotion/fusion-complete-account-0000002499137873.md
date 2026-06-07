@@ -1,7 +1,7 @@
 ---
 title: "进入认证中心完成开户"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-complete-account-0000002499137873
+original_url: /docs/monetize/promotion/fusion-complete-account-0000002499137873
 format: md
 ---
 

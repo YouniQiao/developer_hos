@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-faq-0000002255036920
+original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-faq-0000002255036920
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 
 云测试支持预置条件功能，您可以预置账号和密码的控件路径，并输入账号和密码，在云测试的兼容性测试、性能测试等单项测试中使用该预置条件，则可实现使用账号登录应用进行遍历。
 
-详情可参见[预置条件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-presetcontent-0000002254933880)。
+详情可参见[预置条件](/docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-presetcontent-0000002254933880)。
 
 #### [h2]在云测试上提交的测试任务，为什么出现很多执行失败的结果？
 
@@ -55,16 +55,16 @@ format: md
 
    当前账号可能不属于目标软件包所属的应用账号，因此没有操作权限。您可以尝试以下方法后重试：
 
-   1. 联系该应用的管理员，将您的账号添加为团队成员。操作方法可参考[添加成员账号](https://developer.huawei.com/consumer/cn/doc/app/agc-help-manageaccount-0000002306610129#section151241455193313)。
+   1. 联系该应用的管理员，将您的账号添加为团队成员。操作方法可参考[添加成员账号](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#section151241455193313)。
    2. 切换到有权限的账号进行测试。
 2. 在对应用软件包进行隐私测试之前，您需要先配置应用或元服务的隐私声明和隐私标签信息。请按照以下步骤操作后重试：
    1. 进入“应用上架/元服务上架 > 版本信息 > 新版本 - 准备提交”页面，在“软件版本”区域选取在云测试创建测试任务页面上传的应用软件包。
 
       ![](../img/agc-help-cloudtest-faq-0000002255036920_1.png "点击放大")
-   2. 在“隐私声明”区域，根据实际情况配置隐私内容。配置方法可参考[配置隐私声明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-privacy-state-0000002278878296)。
+   2. 在“隐私声明”区域，根据实际情况配置隐私内容。配置方法可参考[配置隐私声明](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-privacy-state-0000002278878296)。
 
       ![](../img/agc-help-cloudtest-faq-0000002255036920_2.png "点击放大")
-   3. 如果您的应用类型是元服务，可跳过本步骤。如果是HarmonyOS应用，且涉及用户信息收集，请继续在“隐私标签信息录入”区域配置隐私标签信息。配置方法可参考[配置隐私标签信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-privacy-tag-0000002316420993)。
+   3. 如果您的应用类型是元服务，可跳过本步骤。如果是HarmonyOS应用，且涉及用户信息收集，请继续在“隐私标签信息录入”区域配置隐私标签信息。配置方法可参考[配置隐私标签信息](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-privacy-tag-0000002316420993)。
 
       ![](../img/agc-help-cloudtest-faq-0000002255036920_3.png)
    4. 配置完成后，点击页面右上角的“保存”。
@@ -107,7 +107,7 @@ format: md
 
 请执行以下步骤解决：
 
-1. 申请[发布证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-cert-0000002283336729)和[发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)。
+1. 申请[发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)和[发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)。
 2. 打开DevEco Studio，重新[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)（选择步骤1中申请的发布证书和发布Profile文件）
 3. 使用Release模式[编译构建应用包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section1992513343374)。
 

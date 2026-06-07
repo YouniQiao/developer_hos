@@ -1,6 +1,6 @@
 ---
 title: "优化跳转至新Web组件过程中的页面闪烁现象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-router-flash-optimization
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-render-layout/web-router-flash-optimization
 format: md
 ---
 

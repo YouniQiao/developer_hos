@@ -1,6 +1,6 @@
 ---
 title: "扩展外设驱动开发术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terms
+original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/terms
 format: md
 ---
 

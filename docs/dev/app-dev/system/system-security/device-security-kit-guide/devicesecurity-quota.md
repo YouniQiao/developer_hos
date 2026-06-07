@@ -1,6 +1,6 @@
 ---
 title: "服务配额"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-quota
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-quota
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在HSP/HAR包中支持导出C/C++的Native方法吗？如果不支持，替代方案是什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-70
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-70
 ---
 
 
@@ -9,6 +9,6 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
 **参考链接**
 
-HAR：[导出native方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package#导出native方法)
+HAR：[导出native方法](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package#导出native方法)
 
-HSP：[导出native方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp#导出native方法)
+HSP：[导出native方法](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp#导出native方法)

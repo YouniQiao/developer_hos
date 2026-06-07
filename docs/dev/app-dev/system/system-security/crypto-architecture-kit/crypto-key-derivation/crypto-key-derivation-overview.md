@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "密钥派生介绍及算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-derivation-overview
+original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview
 format: md
 ---
 
@@ -14,17 +14,17 @@ format: md
 * 轻量级智能穿戴不支持密钥派生功能。
 * 使用现有密钥别名作为派生结果密钥别名会把现有密钥覆盖。
 
-从API 23开始支持[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)特性。
+从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。
 
 ## 支持的算法
 
 以下为密钥派生支持的规格说明。
 
-派生密钥是业务基于三段式得到密钥会话结果，业务可决定派生密钥是否由HUKS管理（即密钥不出[TEE](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-concepts#可信执行环境tee)）亦或是业务独立管理。
+派生密钥是业务基于三段式得到密钥会话结果，业务可决定派生密钥是否由HUKS管理（即密钥不出[TEE](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-concepts#可信执行环境tee)）亦或是业务独立管理。
 
 ![](./img/a74d5163.png)
 
-PBKDF2/HKDF仅支持HUKS托管密钥的派生，不支持直接基于非HUKS托管的密钥进行派生，如：用户的口令，密钥托管参考[密钥导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview)。
+PBKDF2/HKDF仅支持HUKS托管密钥的派生，不支持直接基于非HUKS托管的密钥进行派生，如：用户的口令，密钥托管参考[密钥导入](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview)。
 
 | 算法/摘要 | 派生密钥的算法/长度 | 派生结果密钥可用算法/长度 | API级别 |
 | --- | --- | --- | --- |

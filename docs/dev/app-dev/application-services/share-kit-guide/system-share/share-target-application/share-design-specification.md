@@ -1,16 +1,16 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "目标应用设计规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-design-specification
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-design-specification
 format: md
 ---
 
 
-本章节主要介绍目标应用接入系统分享面板时，所涉及的设计规范要求。具体参见：[设计指南-分享方式区](https://developer.huawei.com/consumer/cn/doc/design-guides/share-0000001957076313#section132401520173711)
+本章节主要介绍目标应用接入系统分享面板时，所涉及的设计规范要求。具体参见：[设计指南-分享方式区](/docs/design/system-features/capabilities/share#section132401520173711)
 
 ## 应用名称和图标规范
 
-当应用实现了用于接收分享内容的[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)或者[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability)后，可在配置文件（src/main/module.json5）的[skills](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)配置中注册。并配置actions为ohos.want.action.sendData。
+当应用实现了用于接收分享内容的[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)或者[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability)后，可在配置文件（src/main/module.json5）的[skills](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)配置中注册。并配置actions为ohos.want.action.sendData。
 
 当分享内容类型为应用所支持的类型时，应用图标将出现在分享面板的分享方式区内。
 

@@ -1,6 +1,6 @@
 ---
 title: "群组密钥介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview
 format: md
 ---
 
@@ -18,17 +18,17 @@ format: md
 
 | 支持的本地密钥操作 | API级别 | 说明 |
 | --- | --- | --- |
-| [密钥生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview) | 23+ | 支持生成群组密钥。 |
-| [密钥导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview) | 23+ | 支持导入群组密钥。 |
-| [加密/解密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-encryption-decryption-overview) | 23+ | 支持使用群组密钥进行加密/解密。 |
-| [签名/验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-overview) | 23+ | 支持使用群组密钥进行签名/验签。 |
-| [密钥协商](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-overview) | 23+ | 支持使用群组密钥进行密钥协商。 |
-| [密钥派生](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-derivation-overview) | 23+ | 支持使用群组密钥进行密钥派生。 |
-| [访问控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-identity-authentication-overview) | 23+ | 支持使用群组密钥进行二次访问控制。 |
-| [HMAC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-hmac-overview) | 23+ | 支持使用群组密钥进行HMAC。 |
-| [密钥删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key-arkts) | 23+ | 支持删除群组密钥。 |
-| [密钥证明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-attestation-overview) | 23+ | 支持群组密钥的合法性证明。 |
-| [查询密钥是否存在](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-check-key-arkts) | 23+ | 支持查询群组密钥是否存在。 |
-| [获取密钥属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-obtain-key-properties-arkts) | 23+ | 支持查询群组密钥的属性。支持获取DeveloperID和GroupID信息。 |
-| [密钥导出](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-export-key-arkts) | 23+ | 支持导出群组密钥。 |
-| [查询密钥别名集](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-list-aliases-arkts) | 23+ | 支持查询群组密钥别名集。 |
+| [密钥生成](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview) | 23+ | 支持生成群组密钥。 |
+| [密钥导入](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview) | 23+ | 支持导入群组密钥。 |
+| [加密/解密](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-encryption-decryption/huks-encryption-decryption-overview) | 23+ | 支持使用群组密钥进行加密/解密。 |
+| [签名/验签](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-overview) | 23+ | 支持使用群组密钥进行签名/验签。 |
+| [密钥协商](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-overview) | 23+ | 支持使用群组密钥进行密钥协商。 |
+| [密钥派生](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview) | 23+ | 支持使用群组密钥进行密钥派生。 |
+| [访问控制](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-identity-authentication/huks-identity-authentication-overview) | 23+ | 支持使用群组密钥进行二次访问控制。 |
+| [HMAC](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-hmac/huks-hmac-overview) | 23+ | 支持使用群组密钥进行HMAC。 |
+| [密钥删除](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-arkts) | 23+ | 支持删除群组密钥。 |
+| [密钥证明](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-attestation-overview) | 23+ | 支持群组密钥的合法性证明。 |
+| [查询密钥是否存在](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-check-key/huks-check-key-arkts) | 23+ | 支持查询群组密钥是否存在。 |
+| [获取密钥属性](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-obtain-key-properties/huks-obtain-key-properties-arkts) | 23+ | 支持查询群组密钥的属性。支持获取DeveloperID和GroupID信息。 |
+| [密钥导出](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-export-key/huks-export-key-arkts) | 23+ | 支持导出群组密钥。 |
+| [查询密钥别名集](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-list-aliases/huks-list-aliases-arkts) | 23+ | 支持查询群组密钥别名集。 |

@@ -1,11 +1,11 @@
 ---
 title: "设置分布式文件数据等级"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/set-security-label
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/distributed-fs/set-security-label
 format: md
 ---
 
 
-不同设备本身的安全能力差异较大，一些小的嵌入式设备安全能力远弱于平板等设备类型。用户或者应用不同的文件数据有不同安全诉求，例如个人的健康信息和银行卡信息等不期望被弱设备读取。因此，HarmonyOS提供一套完整的数据分级、设备分级标准，并针对不同设备制定不同的数据流转策略，具体规则请参见[数据、设备安全分级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control-by-device-and-data-level)。
+不同设备本身的安全能力差异较大，一些小的嵌入式设备安全能力远弱于平板等设备类型。用户或者应用不同的文件数据有不同安全诉求，例如个人的健康信息和银行卡信息等不期望被弱设备读取。因此，HarmonyOS提供一套完整的数据分级、设备分级标准，并针对不同设备制定不同的数据流转策略，具体规则请参见[数据、设备安全分级](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/access-control-by-device-and-data-level)。
 
 ## 接口说明
 
@@ -25,7 +25,7 @@ API详细介绍请参见[ohos.file.securityLabel](https://developer.huawei.com/c
 
 ## 开发示例
 
-获取通用文件沙箱路径，并设置数据等级标签。示例中的context的获取方式请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+获取通用文件沙箱路径，并设置数据等级标签。示例中的context的获取方式请参见[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
 ```
 import { securityLabel } from '@kit.CoreFileKit';

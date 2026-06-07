@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkui-image-async-load"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui-image-async-load
+original_url: /docs/tools/coding-debug/ide_hp-arkui-image-async-load
 format: md
 ---
 

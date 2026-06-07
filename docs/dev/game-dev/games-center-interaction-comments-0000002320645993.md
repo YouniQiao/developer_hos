@@ -1,6 +1,6 @@
 ---
 title: "互动评论"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-interaction-comments-0000002320645993
+original_url: /docs/dev/game-dev/games-center-interaction-comments-0000002320645993
 format: md
 ---
 
@@ -93,15 +93,15 @@ format: md
 
 ### 恶意差评怎么办？
 
-关于恶意评论，可通过[互动中心](https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000002276985946)或通过developer@huawei.com(应用类)，game.business@huawei.com(游戏类)邮箱申请，如果被判定为恶意评论则可以屏蔽。
+关于恶意评论，可通过[互动中心](/docs/distribute/agc/agc-help-interaction-center-0000002276985946)或通过developer@huawei.com(应用类)，game.business@huawei.com(游戏类)邮箱申请，如果被判定为恶意评论则可以屏蔽。
 
 ### 申请删除恶意差评
 
-您好，如应用被恶意差评，请提供评论截图含用户昵称及时间，您的应用名称及APPID及申请删除的理由，通过[互动中心](https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000002276985946)或邮件反馈至developer@huawei.com(应用类)，game.business@huawei.com(游戏类)。
+您好，如应用被恶意差评，请提供评论截图含用户昵称及时间，您的应用名称及APPID及申请删除的理由，通过[互动中心](/docs/distribute/agc/agc-help-interaction-center-0000002276985946)或邮件反馈至developer@huawei.com(应用类)，game.business@huawei.com(游戏类)。
 
 ### 如何申请评论置顶（精彩评论）？
 
-您好，请提供APPID+需要置顶的评论截图（最多3条，且为一个月内的评论）通过[互动中心](https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000002276985946)或发邮件到developer@huawei.com(应用类)，game.business@huawei.com(游戏类)申请。
+您好，请提供APPID+需要置顶的评论截图（最多3条，且为一个月内的评论）通过[互动中心](/docs/distribute/agc/agc-help-interaction-center-0000002276985946)或发邮件到developer@huawei.com(应用类)，game.business@huawei.com(游戏类)申请。
 
 ### 评论里“热门”、“精彩”以及“最新”的排序逻辑是什么呢？
 

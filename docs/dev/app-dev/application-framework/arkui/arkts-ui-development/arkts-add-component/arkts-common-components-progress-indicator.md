@@ -1,6 +1,6 @@
 ---
 title: "进度条 (Progress)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-progress-indicator
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/arkts-common-components-progress-indicator
 format: md
 ---
 

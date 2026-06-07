@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "功能一步达场景方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-one-step
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-one-step
 format: md
 ---
 

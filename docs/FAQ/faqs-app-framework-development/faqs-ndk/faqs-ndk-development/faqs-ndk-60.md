@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在CMakeLists文件中如何获取模块版本信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-60
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-60
 ---
 
 

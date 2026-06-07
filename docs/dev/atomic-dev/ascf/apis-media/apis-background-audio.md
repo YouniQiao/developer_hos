@@ -1,6 +1,6 @@
 ---
 title: "背景音频"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-background-audio
+original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-background-audio
 format: md
 ---
 
@@ -31,7 +31,7 @@ has.playBackgroundAudio(Object object)
     ]
   }
   ```
-* 在[app.json](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/appjson-global-config)中配置**requiredBackgroundModes**属性。
+* 在[app.json](/docs/dev/atomic-dev/ascf/config/appjson-global-config)中配置**requiredBackgroundModes**属性。
 
   ```
   "requiredBackgroundModes": ["audio"]
@@ -307,7 +307,7 @@ has.getBackgroundAudioManager(): BackgroundAudioManager
     ]
   }
   ```
-* 在[app.json](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/appjson-global-config)中配置**requiredBackgroundModes**属性。
+* 在[app.json](/docs/dev/atomic-dev/ascf/config/appjson-global-config)中配置**requiredBackgroundModes**属性。
 
   ```
   "requiredBackgroundModes": ["audio"]

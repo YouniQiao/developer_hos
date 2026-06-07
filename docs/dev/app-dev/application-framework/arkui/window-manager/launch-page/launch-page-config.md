@@ -1,13 +1,13 @@
 ---
 title: "配置应用启动页"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page-config
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/launch-page/launch-page-config
 format: md
 ---
 
 
 ## 启动页的分类和实现方式
 
-启动页分为简易启动页和增强启动页，开发者通过在module.json5配置文件中的[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)配置启动页资源，涉及的对应字段及含义如下表所示。
+启动页分为简易启动页和增强启动页，开发者通过在module.json5配置文件中的[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)配置启动页资源，涉及的对应字段及含义如下表所示。
 
 | 字段 | 类型 | 是否可缺省 | 含义 |
 | --- | --- | --- | --- |
@@ -17,7 +17,7 @@ format: md
 
 ## 配置简易启动页
 
-简易启动页是每个UIAbility都必须配置的能力，开发者通过配置module.json5文件中的[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)的startWindowIcon和startWindowBackground字段，实现简易启动页的配置。
+简易启动页是每个UIAbility都必须配置的能力，开发者通过配置module.json5文件中的[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)的startWindowIcon和startWindowBackground字段，实现简易启动页的配置。
 
 ![](./img/fa4d8ae1.png)
 

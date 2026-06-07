@@ -1,15 +1,15 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Game Service Kit（游戏服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-service-kit-guide
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide
 format: md
 ---
 
 
-* **[Game Service Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-introduction)**
-* **[基础游戏服务（必选）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-dev)**
-* **[游戏场景感知（可选）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameperformance-dev)**
-* **[游戏近场快传（可选）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-dev)**
-* **[个人数据处理说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-personal-data-processing)**
-* **[Game Service Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq)**
-* **[附录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-appendix)**
+* **[Game Service Kit简介](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-introduction)**
+* **[基础游戏服务（必选）](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev)**
+* **[游戏场景感知（可选）](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameperformance-dev)**
+* **[游戏近场快传（可选）](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-nearbytransfer-dev)**
+* **[个人数据处理说明](/docs/dev/app-dev/application-services/gameservice-personal-data-processing)**
+* **[Game Service Kit常见问题](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-faq)**
+* **[附录](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-appendix)**

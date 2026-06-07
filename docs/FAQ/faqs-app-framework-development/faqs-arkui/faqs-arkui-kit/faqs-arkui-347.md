@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决Text组件文本为中文、数字、英文混合时显示省略号截断异常的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-347
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-347
 ---
 
 

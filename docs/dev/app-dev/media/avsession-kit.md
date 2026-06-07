@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AVSession Kit（音视频播控服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-kit
+original_url: /docs/dev/app-dev/media/avsession-kit
 format: md
 ---
 
 
-* **[AVSession Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-overview)**
-* **[本地媒体会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/local-avsession)**
-* **[分布式媒体会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-avsession)**
-* **[应用接入播控自检](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/playback-control-access-selfcheck)**
-* **[播控推荐服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-recommendation)**
-* **[音频模板](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/music-template)**
+* **[AVSession Kit简介](/docs/dev/app-dev/media/avsession-kit/avsession-overview)**
+* **[本地媒体会话](/docs/dev/app-dev/media/avsession-kit/local-avsession)**
+* **[分布式媒体会话](/docs/dev/app-dev/media/avsession-kit/distributed-avsession)**
+* **[应用接入播控自检](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck)**
+* **[播控推荐服务](/docs/dev/app-dev/media/avsession-kit/avsession-recommendation)**
+* **[音频模板](/docs/dev/app-dev/media/avsession-kit/music-template)**

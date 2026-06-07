@@ -1,6 +1,6 @@
 ---
 title: "批量修改商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-revise-0000002286076740
+original_url: /docs/dev/game-dev/games-center-revise-0000002286076740
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
    ![](./img/a539356e.png)
 
-   请按照规范批量修改商品信息，否则会在上传时报错，具体错误信息可参见[常见错误说明](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-mistakes-0000002320646013#ZH-CN_TOPIC_0000002382054161)。
+   请按照规范批量修改商品信息，否则会在上传时报错，具体错误信息可参见[常见错误说明](/docs/dev/game-dev/games-center-mistakes-0000002320646013#ZH-CN_TOPIC_0000002382054161)。
 
    * 方法一：
 

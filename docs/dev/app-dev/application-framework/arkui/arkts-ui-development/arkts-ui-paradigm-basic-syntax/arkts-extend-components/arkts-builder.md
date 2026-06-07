@@ -1,6 +1,6 @@
 ---
 title: "@Builder装饰器：自定义构建函数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder
 format: md
 ---
 
@@ -9,11 +9,11 @@ ArkUI提供轻量的UI元素复用机制@Builder，其内部UI结构固定，仅
 
 @Builder装饰的函数也称为“自定义构建函数”。
 
-在阅读本文档前，建议提前阅读：[基本语法概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-basic-syntax-overview)、[声明式UI描述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-declarative-ui-description)、[自定义组件-创建自定义组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components)。
+在阅读本文档前，建议提前阅读：[基本语法概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-basic-syntax-overview)、[声明式UI描述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-declarative-ui-description)、[自定义组件-创建自定义组件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components)。
 
-@Builder装饰器和[@Component装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)在功能和使用方式上的主要差异：
+@Builder装饰器和[@Component装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#component)在功能和使用方式上的主要差异：
 
-1. @Builder装饰器用于封装可复用的UI结构，通过提取重复的布局代码提高开发效率。该装饰器严格禁止在其内部定义[状态变量](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-glossary#状态变量state-variables)或使用[自定义组件的生命周期函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle)，必须通过参数传递或者访问所属组件的状态变量完成数据交互。
+1. @Builder装饰器用于封装可复用的UI结构，通过提取重复的布局代码提高开发效率。该装饰器严格禁止在其内部定义[状态变量](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-glossary#状态变量state-variables)或使用[自定义组件的生命周期函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle)，必须通过参数传递或者访问所属组件的状态变量完成数据交互。
 2. 在ArkUI框架中，@Component装饰器作为封装复杂UI组件的核心机制，允许开发者通过组合多个基础组件来构建可复用的复合界面。该装饰器不仅支持内部状态变量的定义，还能完整管理组件的生命周期。
 
 ![](./img/108453b4.png)
@@ -109,7 +109,7 @@ struct BuilderSample {
 
 * @Builder装饰的函数参数类型不允许为undefined、null和返回undefined、null的表达式。
 * 在@Builder装饰的函数内部，不允许改变参数值。
-* @Builder内UI语法遵循[UI语法规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#build函数实现规则)。
+* @Builder内UI语法遵循[UI语法规则](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#build函数实现规则)。
 * 按回调传递和按引用传递时，支持@Builder函数内UI组件刷新。按引用传递只在传入一个参数且该参数直接传入对象字面量时生效，有多个参数时不支持@Builder函数内UI组件刷新。
 * 使用引用传递时，在@Builder函数中不能修改参数的属性，但使用UIUtils.makeBinding并传入写回调时，我们可以在@Builder函数内修改属性，并同步到调用@Builder的组件中。
 
@@ -683,7 +683,7 @@ struct ParentExample {
 
 ### @Builder函数联合V2装饰器
 
-由[@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)和[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)装饰的类对象实例具备深度观测属性变化的能力。在@ComponentV2装饰的自定义组件中，当调用全局Builder或局部Builder且使用值传递的方式传递参数时，修改@Trace装饰的对象属性可以触发UI刷新。
+由[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)和[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)装饰的类对象实例具备深度观测属性变化的能力。在@ComponentV2装饰的自定义组件中，当调用全局Builder或局部Builder且使用值传递的方式传递参数时，修改@Trace装饰的对象属性可以触发UI刷新。
 
 ```
 @ObservedV2
@@ -785,7 +785,7 @@ struct ParentPage {
 
 ![](./img/0d39905e.gif)
 
-当通过引用传递方式向@Builder传递参数时，若参数为[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)装饰的对象，对该对象进行整体赋值会触发@Builder中UI刷新。
+当通过引用传递方式向@Builder传递参数时，若参数为[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)装饰的对象，对该对象进行整体赋值会触发@Builder中UI刷新。
 
 ```
 class LocalInfo {
@@ -1263,7 +1263,7 @@ struct Parent3 {
 
 【反例】
 
-在[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)装饰的自定义组件中，使用简单数据类型不可以触发UI的刷新。
+在[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)装饰的自定义组件中，使用简单数据类型不可以触发UI的刷新。
 
 ```
 @ObservedV2
@@ -1930,7 +1930,7 @@ struct ParentMod2 {
 
 ### 在@Watch函数中执行@Builder函数
 
-在[@Watch](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch)函数中执行@Builder函数，会导致UI刷新异常。
+在[@Watch](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch)函数中执行@Builder函数，会导致UI刷新异常。
 
 【反例】
 

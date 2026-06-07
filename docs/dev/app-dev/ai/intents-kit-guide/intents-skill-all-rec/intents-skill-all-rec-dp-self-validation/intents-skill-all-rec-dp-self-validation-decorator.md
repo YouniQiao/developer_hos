@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "装饰器接入方式自测试方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-dp-self-validation-decorator
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-dp-self-validation/intents-skill-all-rec-dp-self-validation-decorator
 format: md
 ---
 

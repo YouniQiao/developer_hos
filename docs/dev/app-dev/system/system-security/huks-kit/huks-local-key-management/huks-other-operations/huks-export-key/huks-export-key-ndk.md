@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "密钥导出(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-export-key-ndk
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-export-key/huks-export-key-ndk
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 轻量级智能穿戴仅支持RSA公钥导出。
 
-从API 23开始支持[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)特性。
+从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。
 
 ## 在CMake脚本中链接相关动态库
 
@@ -28,7 +28,7 @@ target_link_libraries(entry PUBLIC libhuks_ndk.z.so)
    * paramSetIn：预留参数，暂不需要处理，传空即可。
    * key：用于放置导出的公钥，为[OH\_Huks\_Blob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hukstypeapi-oh-huks-blob)类型对象，需要业务提前申请好内存，需申请足够容纳获取到的密钥属性集的内存大小。
 2. 调用接口[OH\_Huks\_GetKeyItemParamSet](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-api-h#oh_huks_getkeyitemparamset)，传入上述参数。
-3. 返回值为成功码/错误码，导出公钥以标准的X.509规范的DER格式封装在参数key中，具体请参考[公钥材料格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-concepts#公钥材料格式)。
+3. 返回值为成功码/错误码，导出公钥以标准的X.509规范的DER格式封装在参数key中，具体请参考[公钥材料格式](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-concepts#公钥材料格式)。
 
 ```
 #include "huks/native_huks_api.h"

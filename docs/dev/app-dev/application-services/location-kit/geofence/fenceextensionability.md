@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "云侧围栏开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fenceextensionability
+original_url: /docs/dev/app-dev/application-services/location-kit/geofence/fenceextensionability
 format: md
 ---
 
@@ -114,7 +114,7 @@ format: md
      }
    }
    ```
-4. 在工程Module对应的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)中注册FenceExtensionAbility，type标签需要设置为fence，srcEntry标签表示当前FenceExtensionAbility组件所对应的代码路径。
+4. 在工程Module对应的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)中注册FenceExtensionAbility，type标签需要设置为fence，srcEntry标签表示当前FenceExtensionAbility组件所对应的代码路径。
 
    ```
    {

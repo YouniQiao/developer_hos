@@ -1,6 +1,6 @@
 ---
 title: "版本更新说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-releasenotes-0000002321517285
+original_url: /docs/dev/game-dev/games-hismartperf-releasenotes-0000002321517285
 has_merged_cells: true
 format: md
 ---

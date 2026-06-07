@@ -1,7 +1,7 @@
 ---
 format: md
 title: "工程中存在多处-Wunused-command-line-argument告警，影响查看有效日志"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-21
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-21
 ---
 
 

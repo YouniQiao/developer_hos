@@ -1,7 +1,7 @@
 ---
 title: "跨语言代码编辑"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-cross-language-code-editing
+original_url: /docs/tools/coding-debug/ide-cross-language-code-editing
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation组件，页面切换时，两个页面的生命周期时序关系是什么"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-465
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-465
 ---
 
 

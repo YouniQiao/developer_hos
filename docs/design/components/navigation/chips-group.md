@@ -1,7 +1,7 @@
 ---
 title: 子页签
 sidebar_label: 子页签
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/chipsgroup-0000001929788350
+original_url: /docs/design/components/navigation/chips-group
 format: md
 ---
 

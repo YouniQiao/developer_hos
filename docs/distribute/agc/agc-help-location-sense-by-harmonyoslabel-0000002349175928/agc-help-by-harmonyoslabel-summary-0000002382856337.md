@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-by-harmonyoslabel-summary-0000002382856337
+original_url: /docs/distribute/agc/agc-help-location-sense-by-harmonyoslabel-0000002349175928/agc-help-by-harmonyoslabel-summary-0000002382856337
 format: md
 ---
 

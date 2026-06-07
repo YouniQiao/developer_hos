@@ -1,6 +1,6 @@
 ---
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-preparations
+original_url: /docs/dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-preparations
 format: md
 ---
 

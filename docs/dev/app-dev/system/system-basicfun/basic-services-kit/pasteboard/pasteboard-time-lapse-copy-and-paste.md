@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用剪贴板进行延迟复制粘贴"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pasteboard-time-lapse-copy-and-paste
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/pasteboard-time-lapse-copy-and-paste
 format: md
 ---
 

@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文本绘制与显示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/draw-text-display
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display
 format: md
 ---
 
 
-* **[简单文本绘制与显示（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/simple-text-arkts)**
-* **[复杂文本绘制与显示（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-text-arkts)**
-* **[自定义文本绘制与显示（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-custom-arkts)**
-* **[简单文本绘制与显示（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/simple-text-c)**
-* **[复杂文本绘制与显示（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/complex-text-c)**
-* **[自定义文本绘制与显示（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/text-custom-c)**
+* **[简单文本绘制与显示（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/simple-text-arkts)**
+* **[复杂文本绘制与显示（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/complex-text-arkts)**
+* **[自定义文本绘制与显示（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/text-custom-arkts)**
+* **[简单文本绘制与显示（C/C++）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/simple-text-c)**
+* **[复杂文本绘制与显示（C/C++）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/complex-text-c)**
+* **[自定义文本绘制与显示（C/C++）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/text-custom-c)**

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成位图操作"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pixelmap-c
+original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/pixelmap-c
 format: md
 ---
 

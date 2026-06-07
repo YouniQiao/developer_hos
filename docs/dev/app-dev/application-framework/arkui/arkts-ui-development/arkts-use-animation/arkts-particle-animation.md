@@ -1,6 +1,6 @@
 ---
 title: "粒子动画"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-particle-animation
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-particle-animation
 format: md
 ---
 

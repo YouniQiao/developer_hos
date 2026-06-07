@@ -1,6 +1,6 @@
 ---
 title: "在Web组件的H5页面中，如何使用a标签实现打开各种页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-41
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-41
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "快捷指令"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/quick-instructions-0000002471344125
+original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/quick-instructions-0000002471344125
 ---
 
 import MergeTable from '@site/src/components/MergeTable';

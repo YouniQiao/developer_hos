@@ -1,6 +1,6 @@
 ---
 title: "视频场景图层低功耗建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-layer
+original_url: /docs/quality/video-layer
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "HXML"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-hxml
+original_url: /docs/dev/atomic-dev/ascf/apis/apis-hxml
 format: md
 ---
 

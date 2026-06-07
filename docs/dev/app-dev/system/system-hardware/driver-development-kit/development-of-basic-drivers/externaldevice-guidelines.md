@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发带UI界面基础驱动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/externaldevice-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/externaldevice-guidelines
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ## 环境搭建
 
-请参考[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/environmental-preparation)完成开发前的准备工作。
+请参考[环境准备](/docs/dev/app-dev/system/system-hardware/driver-development-kit/environmental-preparation)完成开发前的准备工作。
 
 ## 接口说明
 
@@ -165,7 +165,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/DriverDevelopmentKit/DriverDemo/entry/src/main/ets/pages/Index.ets#L74-L105" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
-7. 渲染UI界面，更多UI界面开发请参考[UI开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-development)。
+7. 渲染UI界面，更多UI界面开发请参考[UI开发](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development)。
 
    ```
    build() {
@@ -189,7 +189,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/DriverDevelopmentKit/DriverDemo/entry/src/main/ets/pages/Index.ets#L107-L123" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Index.ets</a></div>
 
-8. 接下来请参考[开发无UI界面基础驱动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/driverextensionability)，进行对应驱动的示例代码开发。
+8. 接下来请参考[开发无UI界面基础驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/driverextensionability)，进行对应驱动的示例代码开发。
 
 ## 应用签名
 
@@ -199,11 +199,11 @@ format: md
 
 * ohos.permission.ACCESS\_EXTENSIONAL\_DEVICE\_DRIVER
 
-  在module.json5配置文件的requestPermissions标签中[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)后，即可获得授权。
+  在module.json5配置文件的requestPermissions标签中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)后，即可获得授权。
 * ohos.permission.ACCESS\_DDK\_DRIVERS
 
-  1. 在module.json5配置文件的requestPermissions标签中[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-  2. HarmonyAppProvision配置文件中，修改acls字段，跨级别申请权限，可参考[申请使用受限权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions-in-acl)。
+  1. 在module.json5配置文件的requestPermissions标签中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+  2. HarmonyAppProvision配置文件中，修改acls字段，跨级别申请权限，可参考[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。
   3. 在[AGC网站](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)菜单“证书、APP ID和Profile”->“Profile”中申请profile文件时，申请权限选择受限权限“ohos.permission.ACCESS\_DDK\_DRIVERS”，在该权限的输入框内填写你客户端需要连接的服务端的bundleName，多个服务端的bundleName以逗号分隔。
 
 完成权限配置后，可参考[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)对应用进行签名。

@@ -1,6 +1,6 @@
 ---
 title: "告警通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-alarm-notice-0000002240103334
+original_url: /docs/distribute/agc/agc-help-cloudmonitor-alarm-0000002236492408/agc-help-cloudmonitor-alarm-notice-0000002240103334
 format: md
 ---
 

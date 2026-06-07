@@ -1,7 +1,7 @@
 ---
 title: "引擎概述"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-overview-0000001054588463
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-overview-0000001054588463
 ---
 
 
@@ -21,9 +21,9 @@ import MergeTable from '@site/src/components/MergeTable';
 
 动态引擎支持应用于：
 
-* [锁屏](https://developer.huawei.com/consumer/cn/doc/content/unlock-application-0000001305921217)
-* 桌面（[视频桌面](https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-0000001073967005)+[可交互桌面](https://developer.huawei.com/consumer/cn/doc/content/interactivewallpaper-0000001170976217)）
-* [桌面万象小组件](https://developer.huawei.com/consumer/cn/doc/content/widget-0000001245999755)
+* [锁屏](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/unlock-application-0000001305921217)
+* 桌面（[视频桌面](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/livewallpaper-0000001073967005)+[可交互桌面](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/interactivewallpaper-0000001170976217)）
+* [桌面万象小组件](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/widget-0000001245999755)
 
 ## 引擎能力与应用位置
 
@@ -113,7 +113,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
 ## 通用属性
 
-通用属性为视图组件共有的一系列属性，提供了默认的属性和设置，如果在支持通用属性的视图组件中存在与通用属性相同的属性名，以视图组件的说明为准。支持通用属性的组件标签见[通用属性支持列表。](https://developer.huawei.com/consumer/cn/doc/content/themes-engine-common-attribute-0000001054789799)
+通用属性为视图组件共有的一系列属性，提供了默认的属性和设置，如果在支持通用属性的视图组件中存在与通用属性相同的属性名，以视图组件的说明为准。支持通用属性的组件标签见[通用属性支持列表。](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/themes-engine-common-attribute-0000001054789799)
 
 | 参 数 | 类 型 | 选 项 | 注 释 |
 | --- | --- | --- | --- |

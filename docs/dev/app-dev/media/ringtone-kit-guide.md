@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Ringtone Kit（铃声服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-kit-guide
+original_url: /docs/dev/app-dev/media/ringtone-kit-guide
 format: md
 ---
 
 
-* **[Ringtone Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-introduction)**
-* **[设置铃声](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ringtone-preparations)**
+* **[Ringtone Kit简介](/docs/dev/app-dev/media/ringtone-kit-guide/ringtone-introduction)**
+* **[设置铃声](/docs/dev/app-dev/media/ringtone-kit-guide/ringtone-preparations)**

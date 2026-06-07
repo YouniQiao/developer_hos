@@ -1,7 +1,7 @@
 ---
 format: md
 title: "从HAP的拆包中，如何区分是HAR和HSP"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-23
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-23
 ---
 
 
@@ -9,4 +9,4 @@ HAP包拆包只能在module.json文件的dependencies字段看到引用的HSP模
 
 **参考链接**
 
-[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)、[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)、[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)
+[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)、[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)、[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "微距能力设置(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-macro
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-macro
 format: md
 ---
 

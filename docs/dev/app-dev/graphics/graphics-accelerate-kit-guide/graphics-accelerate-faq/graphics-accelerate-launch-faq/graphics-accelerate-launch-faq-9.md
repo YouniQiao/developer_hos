@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "游戏秒级启动场景中闪屏播放与游戏音频恢复不同步，应该如何解决"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-9
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-9
 format: md
 ---
 

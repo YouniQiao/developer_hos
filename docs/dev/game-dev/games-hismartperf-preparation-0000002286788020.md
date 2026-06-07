@@ -1,6 +1,6 @@
 ---
 title: "准备工作"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-preparation-0000002286788020
+original_url: /docs/dev/game-dev/games-hismartperf-preparation-0000002286788020
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## （可选）创建项目和应用
 
-若仅在本地查看测试报告，您无需创建项目和应用。若将本地报告上传至AGC控制台，您需[创建项目](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048)并[在项目下添加应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)。
+若仅在本地查看测试报告，您无需创建项目和应用。若将本地报告上传至AGC控制台，您需[创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)并[在项目下添加应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。
 
 ![](./img/623b98c8.png)
 
@@ -21,7 +21,7 @@ format: md
 
 ### Windows版
 
-1. [下载工具](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-download-0000002321404201)至电脑后，解压缩并双击**HiSmartPerf-Editor.exe**文件。
+1. [下载工具](/docs/dev/game-dev/games-hismartperf-download-0000002321404201)至电脑后，解压缩并双击**HiSmartPerf-Editor.exe**文件。
 2. 点击“下一步”正式进入安装过程。
 
    ![](./img/e7998cd5.png)
@@ -45,7 +45,7 @@ format: md
 
 ### Mac版
 
-1. [下载工具](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-download-0000002321404201)至电脑后，双击**HiSmartPerf-Editor.dmg**文件。
+1. [下载工具](/docs/dev/game-dev/games-hismartperf-download-0000002321404201)至电脑后，双击**HiSmartPerf-Editor.dmg**文件。
 2. 将HiSmartPerf-Editor拖动到右边文件夹处。
 
    ![](./img/5ce26291.png)
@@ -91,8 +91,8 @@ format: md
 
 Kirin系列芯片手机上的采集程序若长时间连接不上测试工具，可能是GPU Counter初始化异常导致的，建议重启手机后再尝试连接。
 
-1. 打开HiSmartPerf-Editor，并准备合适的手机设备，优先推荐[适配机型](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-adapt-phone-0000002321404233)。
-2. 参考[手机设备如何成功连接电脑](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-faq-0000002286844742#section935516916145)连接工具和手机。
+1. 打开HiSmartPerf-Editor，并准备合适的手机设备，优先推荐[适配机型](/docs/dev/game-dev/games-hismartperf-adapt-phone-0000002321404233)。
+2. 参考[手机设备如何成功连接电脑](/docs/dev/game-dev/games-hismartperf-faq-0000002286844742#section935516916145)连接工具和手机。
 3. 工具和手机成功连接后，手机设备将会自动安装**HiSmartPerf**应用，且工具将会默认使用 ![](./img/8efd2791.png)（**USB**）连接方式。
 
    ![](./img/d197e18a.png)

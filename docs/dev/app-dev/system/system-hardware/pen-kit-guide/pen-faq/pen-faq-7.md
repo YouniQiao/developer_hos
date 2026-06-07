@@ -1,6 +1,6 @@
 ---
 title: "Pen Kit报点预测功能能够调整预测的程度吗？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-faq-7
+original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-7
 format: md
 ---
 

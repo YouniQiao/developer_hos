@@ -1,6 +1,6 @@
 ---
 title: "并行化性能优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-concurrent-optimization
+original_url: /docs/quality/concurrent-optimization
 ---
 
 # 并行化性能优化
@@ -9,7 +9,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-c
 
 目前，多数应用存在性能优化的诉求，而并行化改造是一项有效的性能优化措施。并行化改造通过合理设计和重构，使原本在主线程中串行执行的任务能够并行执行，从而提升应用性能和处理效率。多个头部应用均已进行针对性的并行化改造，显著提升了性能。
 
-目前并行化改造的主要实现方案有两种：一是使用[TaskPool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool)或[Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-worker)创建子线程，将耗时逻辑迁移至子线程执行；二是使用[Sendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)加速数据传递，避免跨线程间的数据拷贝耗时。
+目前并行化改造的主要实现方案有两种：一是使用[TaskPool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool)或[Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-worker)创建子线程，将耗时逻辑迁移至子线程执行；二是使用[Sendable](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)加速数据传递，避免跨线程间的数据拷贝耗时。
 
 本文将通过实际场景介绍并行化改造的过程和思路，为开发者提供性能优化方法。
 
@@ -17,11 +17,11 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-c
 
 相关使用说明与注意事项：
 
-1. [TaskPool注意事项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-introduction#taskpool注意事项)
-2. [Worker简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)
-3. [并发支持的可序列化数据类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serializable-overview)
-4. [Sendable使用约束和限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-constraints#sendable类必须继承自sendable类)
-5. [Sendable支持的数据类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable支持的数据类型)
+1. [TaskPool注意事项](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction#taskpool注意事项)
+2. [Worker简介](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction)
+3. [并发支持的可序列化数据类型](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/serializable-overview)
+4. [Sendable使用约束和限制](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-constraints#sendable类必须继承自sendable类)
+5. [Sendable支持的数据类型](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable支持的数据类型)
 
 ## 数据解析与传递并行化
 

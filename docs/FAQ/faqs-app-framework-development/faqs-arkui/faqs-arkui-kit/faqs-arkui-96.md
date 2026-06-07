@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何将背景颜色设置为透明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-96
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-96
 ---
 
 

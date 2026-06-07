@@ -1,6 +1,6 @@
 ---
 title: "视频播放 (Video)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-video-player
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-common-components-video-player
 format: md
 ---
 
@@ -52,7 +52,7 @@ Video组件支持加载本地视频和网络视频。具体的数据源配置请
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/VideoPlayer/entry/src/main/ets/pages/LocalVideo.ets#L16-L37" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：LocalVideo.ets</a></div>
 
-* [Data Ability](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataability-overview)提供的视频路径带有dataability://前缀，使用时确保对应视频资源存在。
+* [Data Ability](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-overview)提供的视频路径带有dataability://前缀，使用时确保对应视频资源存在。
 
   ```
   // xxx.ets
@@ -111,7 +111,7 @@ export struct Sandbox {
 
 ### 加载网络视频
 
-加载网络视频时，需要申请ohos.permission.INTERNET权限，具体申请方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。此时，Video的src属性为网络视频的链接。
+加载网络视频时，需要申请ohos.permission.INTERNET权限，具体申请方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。此时，Video的src属性为网络视频的链接。
 
 ```
 // xxx.ets
@@ -311,7 +311,7 @@ Video控制器主要用于控制视频的状态，包括播放、暂停、停止
 
 ## 其他说明
 
-Video组件已经封装好了视频播放的基础能力，开发者无需进行视频实例的创建，视频信息的设置获取，只需要设置数据源以及基础信息即可播放视频，相对扩展能力较弱。如果开发者想自定义视频播放，请使用[AVPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro#avplayer)，下面是一个使用AVPlayer进行播放视频的简单示例，如果需要更详细信息或更复杂功能请参考[视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback)。
+Video组件已经封装好了视频播放的基础能力，开发者无需进行视频实例的创建，视频信息的设置获取，只需要设置数据源以及基础信息即可播放视频，相对扩展能力较弱。如果开发者想自定义视频播放，请使用[AVPlayer](/docs/dev/app-dev/media/media-kit/media-kit-intro#avplayer)，下面是一个使用AVPlayer进行播放视频的简单示例，如果需要更详细信息或更复杂功能请参考[视频播放](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback)。
 
 ```
 // xxx.ets

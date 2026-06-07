@@ -1,7 +1,7 @@
 ---
 format: md
 title: "数据管理如何保证数据安全"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-40
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-40
 ---
 
 
@@ -13,8 +13,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-l
 
 数据管理通过备份恢复、加密存储、分级访问控制三项核心技术保障数据可靠性和安全性。
 
-[数据库备份与恢复 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore)：重要业务数据丢失等异常场景，可以通过备份恢复数据库，保证关键数据不丢失。
+[数据库备份与恢复 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-backup-and-restore)：重要业务数据丢失等异常场景，可以通过备份恢复数据库，保证关键数据不丢失。
 
-[数据库加密 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-encryption)：当数据库中存储如认证凭据、财务数据等高敏感信息时，可对数据库进行加密，提高数据库安全性。
+[数据库加密 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-encryption)：当数据库中存储如认证凭据、财务数据等高敏感信息时，可对数据库进行加密，提高数据库安全性。
 
-[基于设备分类和数据分级的访问控制 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control-by-device-and-data-level)：数据跨设备同步时，数据管理基于数据安全标签和设备安全等级进行访问控制，保证数据安全。
+[基于设备分类和数据分级的访问控制 (ArkTS)](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/access-control-by-device-and-data-level)：数据跨设备同步时，数据管理基于数据安全标签和设备安全等级进行访问控制，保证数据安全。

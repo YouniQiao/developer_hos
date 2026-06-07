@@ -1,6 +1,6 @@
 ---
 title: "预加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-preloading
+original_url: /docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-preloading
 format: md
 ---
 

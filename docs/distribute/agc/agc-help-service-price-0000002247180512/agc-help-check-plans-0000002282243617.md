@@ -1,6 +1,6 @@
 ---
 title: "查看服务套餐详情"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-check-plans-0000002282243617
+original_url: /docs/distribute/agc/agc-help-service-price-0000002247180512/agc-help-check-plans-0000002282243617
 format: md
 ---
 

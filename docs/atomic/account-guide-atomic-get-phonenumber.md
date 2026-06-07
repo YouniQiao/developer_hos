@@ -1,13 +1,13 @@
 ---
 title: "快速验证"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phonenumber
+original_url: /docs/dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phonenumber
 format: md
 ---
 
 
 ## 场景介绍
 
-当元服务对获取的手机号时效性要求不高时，可调用Scenario Fusion Kit的[快速验证手机号Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-getphonenumber)，向用户发起手机号授权申请，Button组件实现了Account Kit手机号授权与快速验证功能。经用户同意后，元服务可获取手机号，为用户提供相应服务。
+当元服务对获取的手机号时效性要求不高时，可调用Scenario Fusion Kit的[快速验证手机号Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber)，向用户发起手机号授权申请，Button组件实现了Account Kit手机号授权与快速验证功能。经用户同意后，元服务可获取手机号，为用户提供相应服务。
 
 ![](./img/71f562d4.png)
 
@@ -27,10 +27,10 @@ format: md
 
 ## 开发前提
 
-1、在进行代码开发前，请先确认您已完成[开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-permissions)工作。
+1、在进行代码开发前，请先确认您已完成[开发准备](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-permissions)工作。
 
-* 若未配置签名和指纹，将报错[1001500001 应用指纹证书校验失败](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-faq#section1001500001-应用指纹证书校验失败的可能原因和解决办法)。
-* 若未完成“获取您的手机号”权限申请，将报错[1001502014 应用未申请scopes或permissions权限](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-faq#section1001502014-应用未申请scopes或permissions权限的可能原因和解决方法)。
+* 若未配置签名和指纹，将报错[1001500001 应用指纹证书校验失败](/docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-faq#section1001500001-应用指纹证书校验失败的可能原因和解决办法)。
+* 若未完成“获取您的手机号”权限申请，将报错[1001502014 应用未申请scopes或permissions权限](/docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-faq#section1001502014-应用未申请scopes或permissions权限的可能原因和解决方法)。
 
 2、设备需要登录华为账号，若未登录则拉起登录页面。
 
@@ -38,7 +38,7 @@ format: md
 
 ### 客户端开发
 
-客户端开发参见Scenario Fusion Kit的[快速验证手机号Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-getphonenumber)。
+客户端开发参见Scenario Fusion Kit的[快速验证手机号Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber)。
 
 ### 服务端开发
 

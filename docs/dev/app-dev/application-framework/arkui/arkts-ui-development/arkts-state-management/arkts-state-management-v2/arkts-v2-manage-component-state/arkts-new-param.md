@@ -1,13 +1,13 @@
 ---
 title: "@Param：组件外部输入"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param
 format: md
 ---
 
 
 为了增强子组件接受外部参数输入的能力，开发者可以使用@Param装饰器。
 
-@Param不仅可以接受组件外部输入，还可以接受@Local的同步变化。在阅读本文档前，建议提前阅读：[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)。
+@Param不仅可以接受组件外部输入，还可以接受@Local的同步变化。在阅读本文档前，建议提前阅读：[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)。
 
 ![](./img/71a5c49d.png)
 
@@ -31,7 +31,7 @@ format: md
 
 ## 状态管理V1版本接受外部传入的装饰器的局限性
 
-状态管理V1存在多种可接受外部传入的装饰器，常用的有[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)、[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)、[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)、[@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)。这些装饰器使用有限制且不易区分，不当使用会导致性能问题。
+状态管理V1存在多种可接受外部传入的装饰器，常用的有[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)、[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)、[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)、[@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)。这些装饰器使用有限制且不易区分，不当使用会导致性能问题。
 
 ```
 @Observed
@@ -105,10 +105,10 @@ struct Child {
 | @Param变量装饰器 | 说明 |
 | --- | --- |
 | 装饰器参数 | 无。 |
-| 能否本地修改 | 否。若需要修改值，可使用@Param搭配[@Once](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-once)修改子组件的本地值。或通过[@Event](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-event)装饰器，修改@Param数据源的值。 |
+| 能否本地修改 | 否。若需要修改值，可使用@Param搭配[@Once](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-once)修改子组件的本地值。或通过[@Event](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-event)装饰器，修改@Param数据源的值。 |
 | 同步类型 | 由父到子单向同步。 |
 | 允许装饰的变量类型 | Object、class、string、number、boolean、enum等基本类型以及Array、Date、Map、Set等内嵌类型。支持null、undefined以及联合类型。 |
-| 被装饰变量的初始值 | 允许本地初始化，若不在本地初始化，则需要和[@Require](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-require)装饰器一起使用，要求必须从外部传入初始化。 |
+| 被装饰变量的初始值 | 允许本地初始化，若不在本地初始化，则需要和[@Require](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-require)装饰器一起使用，要求必须从外部传入初始化。 |
 
 ## 变量传递
 
@@ -174,7 +174,7 @@ struct Child {
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/ParadigmStateManagement/entry/src/main/ets/pages/param/ParamObserveChangeVariable.ets#L30-L74" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：ParamObserveChangeVariable.ets</a></div>
 
-* 当装饰的变量类型为类对象时，仅可以观察到对类对象整体赋值的变化，无法直接观察到对类成员属性赋值的变化，对类成员属性的观察依赖[@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)和[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)装饰器，也可以使用[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)将该对象变为可观察对象。
+* 当装饰的变量类型为类对象时，仅可以观察到对类对象整体赋值的变化，无法直接观察到对类成员属性赋值的变化，对类成员属性的观察依赖[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)和[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)装饰器，也可以使用[makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)将该对象变为可观察对象。
 
   ```
   class RawObject {
@@ -409,7 +409,7 @@ struct Child {
 
 @Param装饰器存在以下使用限制：
 
-* @Param装饰器只能在[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)装饰器的自定义组件中使用。
+* @Param装饰器只能在[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)装饰器的自定义组件中使用。
 
   ```
   @ComponentV2

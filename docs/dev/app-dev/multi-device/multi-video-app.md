@@ -1,7 +1,7 @@
 ---
 title: "多设备长视频界面"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app
+original_url: /docs/dev/app-dev/multi-device/multi-video-app
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ![](./img/a3135208.png)
 
-阅读本文前，建议开发者先了解[ArkUI（方舟UI框架）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui)和[一次开发，多端部署概览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-overview)相关知识。
+阅读本文前，建议开发者先了解[ArkUI（方舟UI框架）](/docs/dev/app-dev/application-framework/arkui)和[一次开发，多端部署概览](/docs/dev/app-dev/multi-device/bpta-multi-device-overview)相关知识。
 
 下文将从UX设计、工程管理、页面开发三个方面，系统介绍长视频应用在实际开发中的最佳实践，为开发者提供可借鉴的实现思路。
 
@@ -27,7 +27,7 @@ format: md
 
 ## UX设计
 
-长视频应用的UX设计可参考影音娱乐类多设备响应式设计指南的[长视频](https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples1-0000001957369849#section10309114311327)章节，设计参考图如下所示。
+长视频应用的UX设计可参考影音娱乐类多设备响应式设计指南的[长视频](/docs/design/app-design-practices/media-entertainment#section10309114311327)章节，设计参考图如下所示。
 
 ![](./img/95ddd162.png "点击放大")
 
@@ -37,13 +37,13 @@ format: md
 
 ###创建工程
 
-开发者可先参考[多设备工程部署与发布](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-ide)相关内容，掌握分层架构工程的创建与配置方法，并完成分层架构模板工程的搭建。后续再结合长视频应用的实际开发需求进行针对性调整，使工程架构与业务场景保持一致。
+开发者可先参考[多设备工程部署与发布](/docs/dev/app-dev/multi-device/bpta-multi-device-ide)相关内容，掌握分层架构工程的创建与配置方法，并完成分层架构模板工程的搭建。后续再结合长视频应用的实际开发需求进行针对性调整，使工程架构与业务场景保持一致。
 
 ###工程结构
 
 长视频应用基于推荐的分层架构，按products、features、common三个层级组织代码工程。各层级设计如下：
 
-* products层：长视频应用需要适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板、电脑和智慧屏。由于智慧屏和电脑的界面布局与其他设备差异较大，因此在products层分别创建名称为“tv”和“pc”的HAP包，作为智慧屏和电脑的应用入口。直板机、双折叠（Mate X系列）、三折叠、阔折叠和平板的界面整体布局相似，部分差异可以通过“一多”的[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout)和[响应式布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout)进行适配，因此在products层创建名称为“default”的HAP包作为这类设备统一的应用入口。
+* products层：长视频应用需要适配的设备包括直板机、双折叠（Mate X系列）、三折叠、阔折叠、平板、电脑和智慧屏。由于智慧屏和电脑的界面布局与其他设备差异较大，因此在products层分别创建名称为“tv”和“pc”的HAP包，作为智慧屏和电脑的应用入口。直板机、双折叠（Mate X系列）、三折叠、阔折叠和平板的界面整体布局相似，部分差异可以通过“一多”的[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout)和[响应式布局](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout)进行适配，因此在products层创建名称为“default”的HAP包作为这类设备统一的应用入口。
 * features层：长视频应用主要包含推荐（multivideorecommended）、搜索（multivideosearch）和视频详情（multivideodetail）三个核心业务模块。在features层为三个业务模块分别创建对应的HAR包，供products层按需引用。各业务模块相对独立，互不依赖，便于后续工程的维护与迭代。
 * common层：为实现代码复用、减少冗余，在common层创建一个基础（multivideobase）能力HAR包，统一封装公共常量、媒体播放工具以及窗口管理工具等多模块共用的基础能力，便于上层模块直接调用。
 
@@ -112,13 +112,13 @@ format: md
 
 * 窗口模式
 
-  长视频应用在移动端设备上支持全屏、分屏、悬浮窗和自由窗口四种模式，具体实现可参考[窗口模式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode)。其中，分屏与悬浮窗模式无需特殊设计，可直接通过系统能力进入。应用内监听窗口尺寸变化，[通过断点刷新UI](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配各类窗口模式下的布局。
+  长视频应用在移动端设备上支持全屏、分屏、悬浮窗和自由窗口四种模式，具体实现可参考[窗口模式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode)。其中，分屏与悬浮窗模式无需特殊设计，可直接通过系统能力进入。应用内监听窗口尺寸变化，[通过断点刷新UI](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配各类窗口模式下的布局。
 * 窗口方向
 
-  应用内可通过[window.setPreferredOrientation()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setpreferredorientation9)设置窗口显示方向，具体说明可参考[窗口方向](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction)。在长视频应用中，仅在视频详情页进行全屏播放切换时，执行特定的窗口方向设置，相关实现逻辑可参考[视频详情页 & 全屏播放页案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-direction#section0224819173914)。除该场景外，应用统一采用[跟随桌面的旋转模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-rotation#其他方向类型)，建议在HAP包的module.json5文件中[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)下配置orientation属性为follow\_desktop。
+  应用内可通过[window.setPreferredOrientation()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setpreferredorientation9)设置窗口显示方向，具体说明可参考[窗口方向](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction)。在长视频应用中，仅在视频详情页进行全屏播放切换时，执行特定的窗口方向设置，相关实现逻辑可参考[视频详情页 & 全屏播放页案例](/docs/dev/app-dev/multi-device/bpta-multi-device-window-direction#section0224819173914)。除该场景外，应用统一采用[跟随桌面的旋转模式](/docs/dev/app-dev/application-framework/arkui/window-manager/window-rotation#其他方向类型)，建议在HAP包的module.json5文件中[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)下配置orientation属性为follow\_desktop。
 * 窗口沉浸式
 
-  根据UX设计规范，需要在多种窗口模式（全屏、分屏、悬浮窗）下实现沉浸式效果，具体实现可参考[窗口沉浸式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive)。在全屏、分屏和悬浮窗模式下，均可通过[window.setWindowLayoutFullscreen()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)实现沉浸式，并配合动态安全区避让，确保显示效果完整。
+  根据UX设计规范，需要在多种窗口模式（全屏、分屏、悬浮窗）下实现沉浸式效果，具体实现可参考[窗口沉浸式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive)。在全屏、分屏和悬浮窗模式下，均可通过[window.setWindowLayoutFullscreen()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)实现沉浸式，并配合动态安全区避让，确保显示效果完整。
 
 ###推荐页
 
@@ -156,7 +156,7 @@ format: md
 
 **交互开发**
 
-为提升长视频应用推荐页的用户浏览体验，需结合用户潜在使用场景进行交互开发。用户在浏览过程中，通常会有快速预览视频内容、动态调整热播视频数量的需求。因此，在满足[多设备交互](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction)开发基础操作适配的基础上，额外实现了两项交互功能：[热播视频区域长按预览](#li202846476502)和[热播视频区域缩放控制](#li16567125118)。
+为提升长视频应用推荐页的用户浏览体验，需结合用户潜在使用场景进行交互开发。用户在浏览过程中，通常会有快速预览视频内容、动态调整热播视频数量的需求。因此，在满足[多设备交互](/docs/dev/app-dev/multi-device/bpta-multi-interaction)开发基础操作适配的基础上，额外实现了两项交互功能：[热播视频区域长按预览](#li202846476502)和[热播视频区域缩放控制](#li16567125118)。
 
 * 热播视频区域长按预览
 
@@ -258,17 +258,17 @@ format: md
 
 ![](./img/6de82876.png)
 
-更多悬停态页面的开发方式，请参考[折叠屏悬停态](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-folded-hover)。
+更多悬停态页面的开发方式，请参考[折叠屏悬停态](/docs/dev/app-dev/multi-device/bpta-folded-hover)。
 
 **交互开发**
 
-长视频应用的全屏播放页面，主要为用户提供沉浸式视频观看体验。因此，在满足[多设备交互](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-interaction)开发基础操作适配的基础上，实现了[视频播放控制](#li12864112272313)的交互开发。
+长视频应用的全屏播放页面，主要为用户提供沉浸式视频观看体验。因此，在满足[多设备交互](/docs/dev/app-dev/multi-device/bpta-multi-interaction)开发基础操作适配的基础上，实现了[视频播放控制](#li12864112272313)的交互开发。
 
 * 视频播放控制
 
   长视频应用移动端实现了手机和平板设备的适配，支持的输入设备包括触控屏、手写笔、鼠标和键盘。需根据上述输入设备的不同交互方式，适配相应事件处理机制。
 
-  以实现播放/暂停控制为例，对于触控屏、手写笔和鼠标，统一在视频播放区域的播放/暂停控件上监听[onClick()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick12)点击事件，实现播放和暂停控制。对于键盘，则通过监听空格键的[onKeyEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-keyboard#onkeyevent--onkeypreime)事件，实现播放和暂停控制。视频播放控制的具体交互逻辑，可查看[示例代码](#section18854194463114)。
+  以实现播放/暂停控制为例，对于触控屏、手写笔和鼠标，统一在视频播放区域的播放/暂停控件上监听[onClick()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick12)点击事件，实现播放和暂停控制。对于键盘，则通过监听空格键的[onKeyEvent](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-keyboard#onkeyevent--onkeypreime)事件，实现播放和暂停控制。视频播放控制的具体交互逻辑，可查看[示例代码](#section18854194463114)。
 
 ## 电脑端页面
 
@@ -278,10 +278,10 @@ format: md
 
 * 窗口模式
 
-  长视频应用在电脑端上支持全屏和自由窗口两种模式，具体实现可参考[窗口模式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-mode)。应用内监听窗口尺寸变化，[通过断点刷新UI](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配全屏和自由窗口模式下的布局。
+  长视频应用在电脑端上支持全屏和自由窗口两种模式，具体实现可参考[窗口模式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-mode)。应用内监听窗口尺寸变化，[通过断点刷新UI](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section175001836203617)，即可自动适配全屏和自由窗口模式下的布局。
 * 窗口沉浸式
 
-  根据UX设计规范，需要实现全屏和自由窗口下的沉浸式效果，具体实现可参考[窗口沉浸式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive)。全屏模式下，通过[window.setWindowLayoutFullscreen()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)实现沉浸式。自由窗口模式下，通过[window.setWindowDecorVisible(false)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)隐藏标题栏，仅保留右上角三键，使页面内容延伸至标题栏区域，实现沉浸式显示效果。
+  根据UX设计规范，需要实现全屏和自由窗口下的沉浸式效果，具体实现可参考[窗口沉浸式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive)。全屏模式下，通过[window.setWindowLayoutFullscreen()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)实现沉浸式。自由窗口模式下，通过[window.setWindowDecorVisible(false)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowdecorvisible11)隐藏标题栏，仅保留右上角三键，使页面内容延伸至标题栏区域，实现沉浸式显示效果。
 
 ###推荐页
 
@@ -401,7 +401,7 @@ format: md
 
   长视频应用适配了电脑设备，需支持的输入设备包括触控屏、鼠标、触控板和键盘。需根据不同输入设备的交互方式，适配相应事件处理机制。
 
-  以实现播放/暂停控制为例，对于触控屏、鼠标和触摸板，统一在视频播放区域的播放/暂停控件上监听[onClick()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick12)点击事件来进行播放和暂停控制。对于键盘，则监听空格键的[onKeyEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-keyboard#onkeyevent--onkeypreime)事件来进行播放和暂停控制。视频播放控制的具体交互逻辑，可查看[示例代码](#section18854194463114)。
+  以实现播放/暂停控制为例，对于触控屏、鼠标和触摸板，统一在视频播放区域的播放/暂停控件上监听[onClick()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick12)点击事件来进行播放和暂停控制。对于键盘，则监听空格键的[onKeyEvent](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-keyboard#onkeyevent--onkeypreime)事件来进行播放和暂停控制。视频播放控制的具体交互逻辑，可查看[示例代码](#section18854194463114)。
 
 ## 智慧屏端页面
 
@@ -484,7 +484,7 @@ format: md
 
   长视频应用适配了智慧屏设备，需支持的输入设备包括灵犀指向遥控、灵犀悬浮触控、走焦类遥控、键盘和鼠标。需根据不同输入设备的交互方式，适配相应事件处理机制。
 
-  以实现播放/暂停控制为例，对于灵犀指向遥控、灵犀悬浮触控和鼠标，统一在视频播放区域监听[onClick()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick12)点击事件来进行播放和暂停控制。对于灵犀指向遥控和走焦类遥控，监听确定键的[onKeyEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-keyboard#onkeyevent--onkeypreime)事件来进行播放和暂停控制。对于键盘，则监听空格键的[onKeyEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-keyboard#onkeyevent--onkeypreime)事件来进行播放和暂停控制。视频播放控制的具体交互逻辑，可查看[示例代码](#section18854194463114)。
+  以实现播放/暂停控制为例，对于灵犀指向遥控、灵犀悬浮触控和鼠标，统一在视频播放区域监听[onClick()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick12)点击事件来进行播放和暂停控制。对于灵犀指向遥控和走焦类遥控，监听确定键的[onKeyEvent](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-keyboard#onkeyevent--onkeypreime)事件来进行播放和暂停控制。对于键盘，则监听空格键的[onKeyEvent](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-keyboard#onkeyevent--onkeypreime)事件来进行播放和暂停控制。视频播放控制的具体交互逻辑，可查看[示例代码](#section18854194463114)。
 
 ## 示例代码
 

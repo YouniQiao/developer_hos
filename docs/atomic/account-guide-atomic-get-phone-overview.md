@@ -1,17 +1,17 @@
 ---
 title: "获取手机号概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phone-overview
+original_url: /docs/dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone-overview
 format: md
 ---
 
 
 当元服务需要获取用户手机号时，可通过调用Scenario Fusion Kit提供的Button组件，引导用户完成手机号授权。
 
-Scenario Fusion Kit通过提供[快速验证手机号Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-getphonenumber)实现了Account Kit快速验证手机号授权功能：
+Scenario Fusion Kit通过提供[快速验证手机号Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber)实现了Account Kit快速验证手机号授权功能：
 
 | 场景 | 说明 |
 | --- | --- |
-| [快速验证](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phonenumber) | 对用户选择的华为账号绑定的手机号或者新增的手机号进行验证，**不保证是实时验证**，**仅首次需要用户授权**。 |
+| [快速验证](/docs/dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phonenumber) | 对用户选择的华为账号绑定的手机号或者新增的手机号进行验证，**不保证是实时验证**，**仅首次需要用户授权**。 |
 
 ## 约束与限制
 

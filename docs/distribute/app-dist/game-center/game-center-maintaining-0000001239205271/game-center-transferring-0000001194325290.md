@@ -1,7 +1,7 @@
 ---
 title: "游戏转移"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-transferring-0000001194325290
+original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-transferring-0000001194325290
 ---
 import MergeTable from "@site/src/components/MergeTable";
 
@@ -31,7 +31,7 @@ import MergeTable from "@site/src/components/MergeTable";
 
 1. 点击下载《[应用转移申请表](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251217151646.46555365559361399914173331020424%3A50001231000000%3A2800%3AC17BA52AFBB42CCA98C85803AF1CB81FF2A10F18B32E42F69BB8309C8BAAE5F2.zip?needInitFileName=true)》，填写并加盖公章。
 2. 点击下载《[应用转移自检表](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyManage/011/111/111/0000000000011111111.20200826165231.79484583230835794465114135085292%3A50520513005445%3A2800%3A70B63E60A9C0CFCC2D59FE164E67D41C5B9AB1AEDBD12C9EEBF7A129A9F869DB.xlsx?needInitFileName=true)》，参考《应用转移自检表》自检转出应用的服务及推广任务状态。
-3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)应用信息页面点击“应用转移”，填写转移信息并上传《应用转移申请表》盖章扫描件、转入方版权和版号资质，提交转移申请。具体资质审核要求，请见《[版权、版号资质审核](https://developer.huawei.com/consumer/cn/doc/app/80301)》。
+3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)应用信息页面点击“应用转移”，填写转移信息并上传《应用转移申请表》盖章扫描件、转入方版权和版号资质，提交转移申请。具体资质审核要求，请见《[版权、版号资质审核](/docs/distribute/app-dist/app-market/x50000/x80301)》。
 4. 在[华为开发者联盟官网](https://developer.huawei.com/consumer/cn/)，鼠标置于右上角头像处，在下拉框内点击“我的工单”查看转移申请结果并告知转入方开发者。
 
 转入方开发者：
@@ -60,7 +60,7 @@ import MergeTable from "@site/src/components/MergeTable";
 
 1. 点击下载《[应用转移申请表](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251217151646.92415901982206893685802349397756%3A50001231000000%3A2800%3A37CBB14222C99D92CA0B005747B73C77BABA225AA362254FCD5B41E8DD25110C.zip?needInitFileName=true)》，填写并加盖公章。
 2. 点击下载《[应用转移自检表](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyManage/011/111/111/0000000000011111111.20200826165231.79484583230835794465114135085292%3A50520513005445%3A2800%3A70B63E60A9C0CFCC2D59FE164E67D41C5B9AB1AEDBD12C9EEBF7A129A9F869DB.xlsx?needInitFileName=true)》，参考《应用转移自检表》自检转出应用的服务及推广任务状态。
-3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)应用信息页面点击“应用转移”，填写转移信息并上传《应用转移申请表》盖章扫描件、转入方版权和版号资质，提交转移申请。具体资质审核要求，请参见《[版权、版号资质审核](https://developer.huawei.com/consumer/cn/doc/app/80301)》。
+3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)应用信息页面点击“应用转移”，填写转移信息并上传《应用转移申请表》盖章扫描件、转入方版权和版号资质，提交转移申请。具体资质审核要求，请参见《[版权、版号资质审核](/docs/distribute/app-dist/app-market/x50000/x80301)》。
 4. 在[华为开发者联盟官网](https://developer.huawei.com/consumer/cn/)，鼠标置于右上角头像处，在下拉框内点击“我的工单”查看转移申请结果并告知转入方开发者。
 
 转入方开发者：
@@ -86,7 +86,7 @@ import MergeTable from "@site/src/components/MergeTable";
 
 1. 点击下载《[应用转移申请表](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251217151646.20588817363739056328799781458712%3A50001231000000%3A2800%3A366BA79D4B257E591CEBBBB90B949609D1568B27DC8C93B4E00C2616AF8E60EC.zip?needInitFileName=true)》，填写并加盖公章。
 2. 点击下载《[应用转移自检表](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyManage/011/111/111/0000000000011111111.20200826165231.79484583230835794465114135085292%3A50520513005445%3A2800%3A70B63E60A9C0CFCC2D59FE164E67D41C5B9AB1AEDBD12C9EEBF7A129A9F869DB.xlsx?needInitFileName=true)》，参考《应用转移自检表》自检转出应用的服务及推广任务状态。
-3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)应用信息页面点击“应用转移”，填写转移信息并上传《应用转移申请表》盖章扫描件、转入方版权和版号资质，提交转移申请。具体资质审核要求，请见《[版权、版号资质审核](https://developer.huawei.com/consumer/cn/doc/app/80301)》。
+3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)应用信息页面点击“应用转移”，填写转移信息并上传《应用转移申请表》盖章扫描件、转入方版权和版号资质，提交转移申请。具体资质审核要求，请见《[版权、版号资质审核](/docs/distribute/app-dist/app-market/x50000/x80301)》。
 4. 在[华为开发者联盟官网](https://developer.huawei.com/consumer/cn/)，鼠标置于右上角头像处，在下拉框内点击“我的工单”查看转移申请结果并告知转入方开发者。
 
 转入方开发者：
@@ -133,7 +133,7 @@ import MergeTable from "@site/src/components/MergeTable";
 
    问题描述：填写转移原因
 
-   上传附件：请上传《应用转移申请表》扫描件、转入方版权和版号资质。具体资质审核要求，请见《[版权、版号资质审核](https://developer.huawei.com/consumer/cn/doc/app/80301)》。
+   上传附件：请上传《应用转移申请表》扫描件、转入方版权和版号资质。具体资质审核要求，请见《[版权、版号资质审核](/docs/distribute/app-dist/app-market/x50000/x80301)》。
 
    ![](./img/e300c0eb1792.png)
 6. 提交申请后，工作人员将会在3个工作日内处理您的转移申请并回复处理结果。您可以在[华为开发者联盟官网](https://developer.huawei.com/consumer/cn/)，鼠标置于右上角头像处，下拉框内点击“我的工单”，选择应用转移的服务单号查看转移进度。

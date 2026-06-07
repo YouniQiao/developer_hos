@@ -1,6 +1,6 @@
 ---
 title: "图片区域解码与下采样(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-region-and-downsampling
+original_url: /docs/dev/app-dev/media/image-region-and-downsampling
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
 ### 开发步骤
 
-1. 参考[使用ImageSource完成图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)创建ImageSource实例。
+1. 参考[使用ImageSource完成图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)创建ImageSource实例。
 2. 设置desiredRegion参数执行区域解码。
 
    ```
@@ -71,7 +71,7 @@ format: md
 
 ### 开发步骤
 
-1. 参考[使用ImageSource完成图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)创建ImageSource实例。
+1. 参考[使用ImageSource完成图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)创建ImageSource实例。
 2. 设置desiredSize参数执行下采样解码。
 
    ```
@@ -113,7 +113,7 @@ format: md
 
 ### 开发步骤
 
-1. 参考[使用ImageSource完成图片解码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-decoding)创建ImageSource实例。
+1. 参考[使用ImageSource完成图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)创建ImageSource实例。
 2. 同时设置desiredRegion、desiredSize和cropAndScaleStrategy参数。
 
    ```

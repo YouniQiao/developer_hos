@@ -1,6 +1,6 @@
 ---
 title: "预约调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-appointequip-0000002255019572
+original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-appointequip-0000002255019572
 format: md
 ---
 
@@ -24,7 +24,7 @@ format: md
 
    ![](../img/agc-help-clouddebug-appointequip-0000002255019572_1.png "点击放大")
 
-   HarmonyOS 5及以上机型为每个开发者账号提供每天360分钟的免费额度。为防止免费额度用尽无法在预约的时段进行调试，您可以[订购付费套餐包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-price-0000002255019568#section1554613186493)，并确保套餐内的剩余时长不少于15分钟，或[升级付费档](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-price-0000002255019568#section12857373426)，并确保账户余额大于15元。如果余额不足，请为您的账户[充值](https://developer.huawei.com/consumer/cn/doc/app/agc-help-topup-0000002277191065)。
+   HarmonyOS 5及以上机型为每个开发者账号提供每天360分钟的免费额度。为防止免费额度用尽无法在预约的时段进行调试，您可以[订购付费套餐包](/docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-price-0000002255019568#section1554613186493)，并确保套餐内的剩余时长不少于15分钟，或[升级付费档](/docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-price-0000002255019568#section12857373426)，并确保账户余额大于15元。如果余额不足，请为您的账户[充值](/docs/distribute/agc/agc-help-account-0000002270829385/agc-help-topup-0000002277191065)。
 
    ![](../img/agc-help-clouddebug-appointequip-0000002255019572_2.png)
 
@@ -43,6 +43,6 @@ format: md
 
    您可以点击“购买套餐包”订购项目付费套餐或点击“开通按量计费”根据实际使用量付费。
 
-   您可参考[调试应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-debugapp-0000002289629821)完成后续调试步骤。
+   您可参考[调试应用](/docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-debugapp-0000002289629821)完成后续调试步骤。
 
    ![](../img/agc-help-clouddebug-appointequip-0000002255019572_6.png)

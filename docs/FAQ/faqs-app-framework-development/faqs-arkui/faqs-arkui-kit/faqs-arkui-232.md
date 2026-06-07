@@ -1,7 +1,7 @@
 ---
 format: md
 title: "自定义组件在外部设置属性方法和在build方法内部设置有什么区别"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-232
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-232
 ---
 
 

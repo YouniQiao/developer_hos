@@ -1,6 +1,6 @@
 ---
 title: "应用冻屏类问题优化建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-app-freeze-opt
+original_url: /docs/quality/stability-app-freeze-opt
 ---
 
 # 应用冻屏类问题优化建议

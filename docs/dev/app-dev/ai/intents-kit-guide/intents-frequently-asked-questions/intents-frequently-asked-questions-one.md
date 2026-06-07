@@ -1,6 +1,6 @@
 ---
 title: "intentName报错Intent 'xxxxxx' is not included in domain 'xxxxxx'. Select an intent from the list of suggestions.如何解决？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-frequently-asked-questions-one
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-frequently-asked-questions/intents-frequently-asked-questions-one
 format: md
 ---
 

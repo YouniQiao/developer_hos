@@ -1,7 +1,7 @@
 ---
 title: "素材制作规范"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-specification-0000001417712349
+original_url: /docs/monetize/promotion/bp-functions-load-recall-specification-0000001417712349
 format: md
 ---
 

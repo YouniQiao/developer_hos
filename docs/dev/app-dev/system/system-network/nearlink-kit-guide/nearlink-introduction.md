@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "NearLink Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-introduction
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-introduction
 format: md
 ---
 

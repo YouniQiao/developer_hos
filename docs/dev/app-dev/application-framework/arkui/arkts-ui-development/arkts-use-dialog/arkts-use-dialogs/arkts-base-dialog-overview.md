@@ -1,6 +1,6 @@
 ---
 title: "弹出框概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-base-dialog-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-base-dialog-overview
 format: md
 ---
 
@@ -14,18 +14,18 @@ format: md
 
 | 名称 | 描述 |
 | --- | --- |
-| [不依赖UI组件的全局自定义弹出框 (openCustomDialog)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-uicontext-custom-dialog) | 当用户需要在自定义弹出框内动态更新弹出框属性时使用。 |
-| [基础自定义弹出框 (CustomDialog)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-custom-dialog) | 当用户需要自定义弹出框内的组件和内容时使用。 |
-| [警告弹窗 (AlertDialog)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fixes-style-dialog#警告弹窗-alertdialog) | 固定样式，通常用来展示用户当前需要或必须关注的信息或操作。如用户操作一个敏感行为时响应一个二次确认的弹出框。 |
-| [列表选择弹窗 (ActionSheet)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fixes-style-dialog#列表选择弹窗-actionsheet) | 固定样式，当用户需要关注或确认的信息存在列表选择时使用。 |
-| [选择器弹窗 (PickerDialog)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fixes-style-dialog#选择器弹窗-pickerdialog) | 固定样式，当用户需要在弹出框内选择日期、时间和文本时使用。 |
-| [对话框 (showDialog)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fixes-style-dialog#对话框-showdialog) | 固定样式，当用户需要处理弹出框响应后的异步返回结果时调用。 |
-| [操作菜单 (showActionMenu)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fixes-style-dialog#操作菜单-showactionmenu) | 固定样式，当用户需要处理操作菜单响应后的异步返回结果时调用。 |
-| [页面级弹出框](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-embedded-dialog) | 页面级弹出框，当用户期望弹出框跟随导航页面切换时使用。 |
-| [弹出框层级管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-levelorder) | 从API version 18开始，可以通过设置[levelOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)参数来管理弹出框的显示顺序。 |
-| [弹出框控制器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-controller) | 从API version 18开始，可设置controller参数以绑定[DialogController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#dialogcontroller18)控制器，通过控制器可以对弹出框进行操作。 |
-| [弹出框焦点策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-focusable) | 从API version 19开始，可以通过设置[focusable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)参数来管理弹出框是否获取焦点。 |
-| [弹出框蒙层控制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dialog-mask) | 开发者可以通过设置maskColor、maskRect等参数来对弹出框蒙层进行定制。 |
+| [不依赖UI组件的全局自定义弹出框 (openCustomDialog)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-uicontext-custom-dialog) | 当用户需要在自定义弹出框内动态更新弹出框属性时使用。 |
+| [基础自定义弹出框 (CustomDialog)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-common-components-custom-dialog) | 当用户需要自定义弹出框内的组件和内容时使用。 |
+| [警告弹窗 (AlertDialog)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-fixes-style-dialog#警告弹窗-alertdialog) | 固定样式，通常用来展示用户当前需要或必须关注的信息或操作。如用户操作一个敏感行为时响应一个二次确认的弹出框。 |
+| [列表选择弹窗 (ActionSheet)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-fixes-style-dialog#列表选择弹窗-actionsheet) | 固定样式，当用户需要关注或确认的信息存在列表选择时使用。 |
+| [选择器弹窗 (PickerDialog)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-fixes-style-dialog#选择器弹窗-pickerdialog) | 固定样式，当用户需要在弹出框内选择日期、时间和文本时使用。 |
+| [对话框 (showDialog)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-fixes-style-dialog#对话框-showdialog) | 固定样式，当用户需要处理弹出框响应后的异步返回结果时调用。 |
+| [操作菜单 (showActionMenu)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-fixes-style-dialog#操作菜单-showactionmenu) | 固定样式，当用户需要处理操作菜单响应后的异步返回结果时调用。 |
+| [页面级弹出框](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-embedded-dialog) | 页面级弹出框，当用户期望弹出框跟随导航页面切换时使用。 |
+| [弹出框层级管理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-dialog-levelorder) | 从API version 18开始，可以通过设置[levelOrder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)参数来管理弹出框的显示顺序。 |
+| [弹出框控制器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-dialog-controller) | 从API version 18开始，可设置controller参数以绑定[DialogController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#dialogcontroller18)控制器，通过控制器可以对弹出框进行操作。 |
+| [弹出框焦点策略](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-dialog-focusable) | 从API version 19开始，可以通过设置[focusable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-promptaction#basedialogoptions11)参数来管理弹出框是否获取焦点。 |
+| [弹出框蒙层控制](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-dialog-mask) | 开发者可以通过设置maskColor、maskRect等参数来对弹出框蒙层进行定制。 |
 
 ## 规格约束
 

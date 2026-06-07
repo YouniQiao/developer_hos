@@ -1,7 +1,7 @@
 ---
 title: "百变卡片&lt;Widget&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-engine-next-fa-0000002471234980
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-fa-0000002471234980
 format: md
 ---
 

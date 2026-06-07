@@ -1,7 +1,7 @@
 ---
 format: md
 title: "DevEco Studio在登录授权时无法弹出浏览器窗口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-7
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-7
 ---
 
 

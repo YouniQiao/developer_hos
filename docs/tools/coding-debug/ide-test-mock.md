@@ -1,7 +1,7 @@
 ---
 title: "Mock能力"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-test-mock
+original_url: /docs/tools/coding-debug/ide-test-mock
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "企业联系人信息来去电页面显示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-contact-display
+original_url: /docs/dev/app-dev/application-services/call-kit-guide/callservice-enterprise-contact-display
 format: md
 ---
 
@@ -46,7 +46,7 @@ format: md
 
 ## 开发步骤
 
-1. 在工程内创建一个[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)类型的自定义组件并继承[CallerInfoQueryExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-callerinfoquery-extension-ability#callerinfoqueryextensionability)，完成onQueryCallerInfo方法的复写。
+1. 在工程内创建一个[ExtensionAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)类型的自定义组件并继承[CallerInfoQueryExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/callservicekit-callerinfoquery-extension-ability#callerinfoqueryextensionability)，完成onQueryCallerInfo方法的复写。
 
    说明：
 
@@ -79,7 +79,7 @@ format: md
      }
    }
    ```
-2. 在应用配置文件module.json5中注册extensionAbilities，具体详见[module.json5配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)。
+2. 在应用配置文件module.json5中注册extensionAbilities，具体详见[module.json5配置](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)。
 
    配置文件示例：
 
@@ -97,4 +97,4 @@ format: md
 
    * type标签需设为"callerInfoQuery"，表示该拓展类型为CallerInfoQueryExtensionAbility。
    * srcEntry标签表示上述ExtensionAbility组件所对应的代码路径。
-3. 在调试设备上，前往“电话”，点击右上角的“更多”图标，前往“设置”>“陌生号码和信息识别”，或者通过[应用跳转陌生号码和信息识别页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/callservice-enterprise-app-redirection)，打开对应企业应用的号码识别功能开关，进行调试。
+3. 在调试设备上，前往“电话”，点击右上角的“更多”图标，前往“设置”>“陌生号码和信息识别”，或者通过[应用跳转陌生号码和信息识别页面](/docs/dev/app-dev/application-services/callservice-enterprise-app-redirection)，打开对应企业应用的号码识别功能开关，进行调试。

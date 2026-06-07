@@ -1,6 +1,6 @@
 ---
 title: "Function Flow Runtime并发范式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-paradigm
+original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-concurrency-paradigm
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ![](./img/5b569def.png)
 
-串行队列并发范式开发样例可以参考[串行队列(C)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-serial-queue-c)/[串行队列(C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-serial-queue-cpp)
+串行队列并发范式开发样例可以参考[串行队列(C)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-c/ffrt-concurrency-serial-queue-c)/[串行队列(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-serial-queue-cpp)
 
 ## 并发队列（Concurrent Queue）
 
@@ -32,7 +32,7 @@ format: md
 
 ![](./img/a20ab22a.png)
 
-并发队列并发范式开发样例可以参考[并发队列(C)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-concurrent-queue-c)/[并发队列(C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-concurrent-queue-cpp)
+并发队列并发范式开发样例可以参考[并发队列(C)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-c/ffrt-concurrency-concurrent-queue-c)/[并发队列(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-concurrent-queue-cpp)
 
 ## 图依赖并发（Task Graph）
 
@@ -45,7 +45,7 @@ format: md
 
 ![](./img/9ac68ded.png)
 
-图依赖并发范式开发样例可以参考[图依赖并发(C)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-graph-c)/[图依赖并发(C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-graph-cpp)
+图依赖并发范式开发样例可以参考[图依赖并发(C)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-c/ffrt-concurrency-graph-c)/[图依赖并发(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-graph-cpp)
 
 ## 任务伙伴（Job Partner）
 
@@ -66,4 +66,4 @@ format: md
    * ratio 表示任务数和worker数的比例。
    * max 表示最大worker数。
 
-协作并发范式开发样例可以参考[任务伙伴(C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-job-partner-cpp)
+协作并发范式开发样例可以参考[任务伙伴(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-job-partner-cpp)

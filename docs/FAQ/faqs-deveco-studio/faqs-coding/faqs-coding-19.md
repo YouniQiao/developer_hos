@@ -1,7 +1,7 @@
 ---
 format: md
 title: "为什么ArkTS API接口注释中@since版本看起来比接口实际引入时间更晚"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-19
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-19
 ---
 
 

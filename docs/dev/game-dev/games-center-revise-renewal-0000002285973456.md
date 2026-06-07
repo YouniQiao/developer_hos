@@ -1,6 +1,6 @@
 ---
 title: "自动续期订阅商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-revise-renewal-0000002285973456
+original_url: /docs/dev/game-dev/games-center-revise-renewal-0000002285973456
 format: md
 ---
 
@@ -59,7 +59,7 @@ format: md
 
    * 商品促销价格
 
-   您还可根据您的促销策略设置商品促销价，详情请参见[设置促销价格](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-promotion-renewal-0000002286076744#ZH-CN_TOPIC_0000002382173973)。
+   您还可根据您的促销策略设置商品促销价，详情请参见[设置促销价格](/docs/dev/game-dev/games-center-promotion-renewal-0000002286076744#ZH-CN_TOPIC_0000002382173973)。
 9. 完成修改后，点击“保存”或“提交审核”。
 
 ![](./img/2a10dbb1.png)

@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkui-load-on-demand"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_hp-arkui-load-on-demand
+original_url: /docs/tools/coding-debug/ide_hp-arkui-load-on-demand
 format: md
 ---
 

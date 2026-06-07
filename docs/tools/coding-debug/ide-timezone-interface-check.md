@@ -1,7 +1,7 @@
 ---
 title: "@performance/timezone-interface-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-timezone-interface-check
+original_url: /docs/tools/coding-debug/ide-timezone-interface-check
 format: md
 ---
 

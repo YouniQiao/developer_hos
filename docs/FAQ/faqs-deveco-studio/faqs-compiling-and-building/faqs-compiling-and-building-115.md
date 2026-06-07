@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译报错“java.io.IOException: DerValue.getOID, not an OID 49”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-115
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-115
 ---
 
 

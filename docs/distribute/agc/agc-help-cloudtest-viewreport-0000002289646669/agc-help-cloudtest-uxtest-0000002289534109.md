@@ -1,6 +1,6 @@
 ---
 title: "UX测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-uxtest-0000002289534109
+original_url: /docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-uxtest-0000002289534109
 format: md
 ---
 
@@ -25,7 +25,7 @@ format: md
 
    vp是屏幕密度相关像素，根据屏幕像素密度转换为屏幕物理像素。fp是字体像素，与vp类似适用屏幕密度变化，随系统字体大小设置而变化。
 
-   关于像素单位vp、fp的详细说明请参考[布局基础](https://developer.huawei.com/consumer/cn/doc/design-guides/design-layout-basics-0000001795579413#section197873139478)，px和vp单位的换算方法请参考[像素单位转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#vp2px12)。
+   关于像素单位vp、fp的详细说明请参考[布局基础](/docs/design/general-design-basics/layout/layout-basics#section197873139478)，px和vp单位的换算方法请参考[像素单位转换](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#vp2px12)。
 
    | 类别 | **检测项** | **说明** |
    | --- | --- | --- |

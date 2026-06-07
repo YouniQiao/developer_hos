@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "实现一个划词扩展能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/selection-services-application-guide
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/selectioninput/selection-services-application-guide
 format: md
 ---
 

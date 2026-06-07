@@ -1,7 +1,7 @@
 ---
 format: md
 title: "内存占用率过高导致DevEco Studio无法正常运行"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-3
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-3
 ---
 
 

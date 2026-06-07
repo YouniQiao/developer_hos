@@ -1,7 +1,7 @@
 ---
 title: "智慧调优"
 displayed_sidebar: aiAssistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ai-profiler
+original_url: /docs/tools/ai-assist/ide-ai-profiler
 format: md
 ---
 

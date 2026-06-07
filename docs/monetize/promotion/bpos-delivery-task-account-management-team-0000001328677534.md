@@ -1,7 +1,7 @@
 ---
 title: "团队管理"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-delivery-task-account-management-team-0000001328677534
+original_url: /docs/monetize/promotion/bpos-delivery-task-account-management-team-0000001328677534
 format: md
 ---
 
@@ -90,7 +90,7 @@ format: md
    团队成员加入团队后，不支持修改角色权限。
 4. <strong>添加团队成员，成员收不到邀请邮件，如何处理？</strong>
 
-   邮件可能被屏蔽，请通过邮件垃圾箱查找；若仍然无法获取，请通过[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)处理。
+   邮件可能被屏蔽，请通过邮件垃圾箱查找；若仍然无法获取，请通过[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)处理。
 5. <strong>被邀请的成员在收到邀请后，使用华为账号登录鲸鸿动能广告，却被提示要补充公司信息？</strong>
 
    请确认在接收到邀请后，点击邀请中的链接并确认接收了团队账号邀请，只有在成功接收团队账号邀请之后才可以使用邀请的华为账号登录鲸鸿动能广告。

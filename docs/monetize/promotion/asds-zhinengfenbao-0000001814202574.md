@@ -1,7 +1,7 @@
 ---
 title: "智能分包跟踪"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/asds-zhinengfenbao-0000001814202574
+original_url: /docs/monetize/promotion/asds-zhinengfenbao-0000001814202574
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "侧边栏菜单样式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-side-menu
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-side-menu
 format: md
 ---
 

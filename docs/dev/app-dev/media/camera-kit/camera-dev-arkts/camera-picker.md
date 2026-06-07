@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过系统相机拍照和录像(CameraPicker)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-picker
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-picker
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "拉起系统应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/system-app-startup
 format: md
 ---
 
@@ -34,7 +34,7 @@ format: md
 
 * **权限设置：** 当应用通过[requestPermissionsFromUser()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissionsfromuser9)接口拉起权限申请弹框时，如果用户拒绝授权，将无法使用该接口再次拉起弹框，需要调用[requestPermissionOnSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-abilityaccessctrl#requestpermissiononsetting12)接口拉起权限设置弹窗。
 
-  [二次向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization-second)介绍了如何拉起权限设置弹窗。该文档中的示例代码同样适用于[应用权限组列表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-group-list)中的所有权限，只需将对应的权限名进行替换即可。以下为开发者经常用到的一些场景。
+  [二次向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization-second)介绍了如何拉起权限设置弹窗。该文档中的示例代码同样适用于[应用权限组列表](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-group-list)中的所有权限，只需将对应的权限名进行替换即可。以下为开发者经常用到的一些场景。
 
   + 拉起位置权限设置弹窗
   + 拉起相机权限设置弹窗
@@ -47,45 +47,45 @@ format: md
 
 ### 应用市场
 
-[AppGallery Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-introduction)支持通过[loadProduct()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerloadproduct)接口、App Linking等多种方式拉起应用详情页。详见[应用详情页展示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-loadproduct)。
+[AppGallery Kit](/docs/dev/app-dev/application-services/store-kit-guide/store-introduction)支持通过[loadProduct()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerloadproduct)接口、App Linking等多种方式拉起应用详情页。详见[应用详情页展示](/docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-loadproduct)。
 
 ### 钱包
 
-[Payment Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-introduction)提供了[requestPayment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-paymentservice#requestpayment)接口，可以实现单次支付、支付并签约。
+[Payment Kit](/docs/dev/app-dev/application-services/payment-kit-guide/payment-introduction)提供了[requestPayment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-paymentservice#requestpayment)接口，可以实现单次支付、支付并签约。
 
 ### 电话
 
-[Telephony Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/telephony-overview)提供[makeCall()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-call#callmakecall7)接口，支持跳转到拨号界面，并显示待拨出的号码。
+[Telephony Kit](/docs/dev/app-dev/system/system-network/telephony-kit/telephony-overview)提供[makeCall()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-call#callmakecall7)接口，支持跳转到拨号界面，并显示待拨出的号码。
 
 ### 日历
 
-[Calendar Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-overview)提供[addEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#addevent)接口，用于创建日程。
+[Calendar Kit](/docs/dev/app-dev/application-services/calendar-kit/calendarmanager-overview)提供[addEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#addevent)接口，用于创建日程。
 
 ### 联系人
 
-[Contacts Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-intro)提供联系人Picker（Contacts Picker），用于拉起联系人应用，读取联系人数据。详见[选择联系人](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-intro#使用picker选择联系人)。
+[Contacts Kit](/docs/dev/app-dev/application-services/contacts-kit/contacts-intro)提供联系人Picker（Contacts Picker），用于拉起联系人应用，读取联系人数据。详见[选择联系人](/docs/dev/app-dev/application-services/contacts-kit/contacts-intro#使用picker选择联系人)。
 
 ### 地图
 
-[Map Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-introduction)提供了地图Picker，支持[地点详情展示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-details)、[地点选取](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-selecting)、[区划选择](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-division)。
+[Map Kit](/docs/dev/app-dev/application-services/map-kit-guide/map-introduction)提供了地图Picker，支持[地点详情展示](/docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-details)、[地点选取](/docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-selecting)、[区划选择](/docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-division)。
 
 ### 相机
 
-* [拍照录像](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-picker)：[Camera Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-overview)提供了相机Picker，用于拍照、录像。
-* [扫码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-scanbarcode) ：[Scan Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-introduction)提供了扫码Picker，支持调用相机，实现默认界面扫码。
-* [卡证识别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-cardrecognition)：[Vision Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-introduction)提供了卡证识别Picker，支持调用相机，识别各类证件并提取卡证信息。
-* [文档扫描](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-documentscanner) ：[Vision Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-introduction)提供了文档扫描Picker，支持调用相机，拍摄文档并转化为高清扫描件。
+* [拍照录像](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-picker)：[Camera Kit](/docs/dev/app-dev/media/camera-kit/camera-overview)提供了相机Picker，用于拍照、录像。
+* [扫码](/docs/dev/app-dev/media/scan-kit-guide/scan-scanbarcode) ：[Scan Kit](/docs/dev/app-dev/media/scan-kit-guide/scan-introduction)提供了扫码Picker，支持调用相机，实现默认界面扫码。
+* [卡证识别](/docs/dev/app-dev/ai/vision-kit-guide/vision-cardrecognition)：[Vision Kit](/docs/dev/app-dev/ai/vision-kit-guide/vision-introduction)提供了卡证识别Picker，支持调用相机，识别各类证件并提取卡证信息。
+* [文档扫描](/docs/dev/app-dev/ai/vision-kit-guide/vision-documentscanner) ：[Vision Kit](/docs/dev/app-dev/ai/vision-kit-guide/vision-introduction)提供了文档扫描Picker，支持调用相机，拍摄文档并转化为高清扫描件。
 
 ### 文件管理
 
-[Core File Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-file-kit-intro)提供了文件Picker和音频Picker。
+[Core File Kit](/docs/dev/app-dev/application-framework/core-file-kit/core-file-kit-intro)提供了文件Picker和音频Picker。
 
-* 文件Picker（DocumentViewPicker）：用于访问、保存公共目录中文档类文件。详见[选择文档类文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file#选择文档类文件)、[保存文档类文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file#保存文档类文件)。
-* 音频Picker（AudioViewPicker）：用于访问、保存公共目录的音频文件。详见[选择音频类文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file#选择音频类文件)、[保存音频类文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file#保存音频类文件)。
+* 文件Picker（DocumentViewPicker）：用于访问、保存公共目录中文档类文件。详见[选择文档类文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file#选择文档类文件)、[保存文档类文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file#保存文档类文件)。
+* 音频Picker（AudioViewPicker）：用于访问、保存公共目录的音频文件。详见[选择音频类文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file#选择音频类文件)、[保存音频类文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file#保存音频类文件)。
 
 ### 图库（媒体库）
 
-[Media Library Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview)提供了照片Picker（PhotoViewPicker），用于访问、保存公共目录的图片或视频文件。详见[选择媒体库资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker) 、[创建媒体资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-savebutton)。
+[Media Library Kit](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview)提供了照片Picker（PhotoViewPicker），用于访问、保存公共目录的图片或视频文件。详见[选择媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker) 、[创建媒体资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)。
 
 ## 示例代码
 

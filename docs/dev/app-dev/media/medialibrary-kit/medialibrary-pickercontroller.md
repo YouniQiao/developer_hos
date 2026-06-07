@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用PickerController将编辑后的图片替换原图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/medialibrary-pickercontroller
+original_url: /docs/dev/app-dev/media/medialibrary-kit/medialibrary-pickercontroller
 format: md
 ---
 

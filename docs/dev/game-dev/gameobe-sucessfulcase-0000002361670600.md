@@ -1,6 +1,6 @@
 ---
 title: "成功案例"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sucessfulcase-0000002361670600
+original_url: /docs/dev/game-dev/gameobe-sucessfulcase-0000002361670600
 format: md
 ---
 

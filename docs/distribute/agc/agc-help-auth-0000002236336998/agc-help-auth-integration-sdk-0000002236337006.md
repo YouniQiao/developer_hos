@@ -1,6 +1,6 @@
 ---
 title: "集成SDK"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-integration-sdk-0000002236337006
+original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-integration-sdk-0000002236337006
 format: md
 ---
 
@@ -17,9 +17,9 @@ md5值：53d14451f0cb3d97a049a6ebc8e84297
 
 开发者：华为软件技术有限公司
 
-隐私政策：[SDK隐私政策](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-sdksecurity-0000002236496854)
+隐私政策：[SDK隐私政策](/docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-sdksecurity-0000002236496854)
 
-合规指引：[SDK合规使用指南](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-personal-data-0000002236337034)
+合规指引：[SDK合规使用指南](/docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-personal-data-0000002236337034)
 
 #### 前提条件
 
@@ -30,7 +30,7 @@ md5值：53d14451f0cb3d97a049a6ebc8e84297
 
 #### 添加应用配置文件
 
-1. [获取“agconnect-services.json”文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-obtain-files-0000002236343310#section99771326132714)。
+1. [获取“agconnect-services.json”文件](/docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-obtain-files-0000002236343310#section99771326132714)。
 2. 将“agconnect-services.json”文件拷贝到DevEco Studio项目的“AppScope/resources/rawfile”目录下。
 
    ![](../img/agc-help-auth-integration-sdk-0000002236337006_0.png)

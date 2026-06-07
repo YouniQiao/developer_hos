@@ -1,7 +1,7 @@
 ---
 title: "入驻指导"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/settlement-guidance-0000001056348857
+original_url: /docs/distribute/content-dist/theme-center/beginner-guide-0000001054200638/settlement-guidance-0000001056348857
 ---
 
 import MergeTable from '@site/src/components/MergeTable';
@@ -110,18 +110,18 @@ import MergeTable from '@site/src/components/MergeTable';
 
 ## 3. 开发
 
-学习开发设计规范，下载[开发工具](https://developer.huawei.com/consumer/cn/doc/content/themes-design-tools-0000001054531194)，详见[开发教程](https://developer.huawei.com/consumer/cn/doc/content/themes-specification-0000001160896163)。
+学习开发设计规范，下载[开发工具](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-tools-0000001104440212/themes-design-tools-0000001054531194)，详见[开发教程](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163)。
 
 ## 4. 上传
 
-详见内容上架-&gt;[内容上架流程](https://developer.huawei.com/consumer/cn/doc/content/content-listing-0000001054519978)、[内容上传指南](https://developer.huawei.com/consumer/cn/doc/content/themes-upload-0000001055029726)。
+详见内容上架-&gt;[内容上架流程](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-listing-0000001054519978)、[内容上传指南](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/themes-upload-0000001055029726)。
 
 ## 5. 审核
 
-详见内容上架-&gt;[审核规范](https://developer.huawei.com/consumer/cn/doc/content/content-pricing-specifications-0000001096951357)。
+详见内容上架-&gt;[审核规范](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-pricing-specifications-0000001096951357)。
 
 ## 6. 结算
 
-详见新手指南-&gt;[结算流程](https://developer.huawei.com/consumer/cn/doc/content/checkout-process-0000001055868899)。
+详见新手指南-&gt;[结算流程](/docs/distribute/content-dist/theme-center/beginner-guide-0000001054200638/checkout-process-0000001055868899)。
 
 -&gt;[设计师入驻常见FAQ](https://developer.huawei.com/consumer/cn/doc/distribution/content/faq-0000001055159128)

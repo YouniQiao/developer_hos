@@ -1,6 +1,6 @@
 ---
 title: "更新商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-update
+original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-update
 format: md
 ---
 
@@ -57,9 +57,9 @@ format: md
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | Content-Type | 是 | String | 取值为：application/json;charset=UTF-8 |
-| Authorization | 是 | String | 通过[接口访问凭证](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-access-credentials)获取的鉴权令牌。  Bearer后面拼接空格，再拼接获取的鉴权信息。 |
-| client\_id | 否 | String | 服务商接入场景必传。  API客户端ID。  创建第三方平台成功后系统自动分配的客户端ID，可在第三方管理平台“开发管理资料 \&gt; 开发配置 \&gt; 开发资料设置”页面中获取，详情请参见[接口访问凭证](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-access-credentials)。 |
-| appId | 是 | String(64) | 在创建应用后，由华为开发者联盟为应用分配的唯一标识。参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)中的应用-APP ID。 |
+| Authorization | 是 | String | 通过[接口访问凭证](/docs/dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials)获取的鉴权令牌。  Bearer后面拼接空格，再拼接获取的鉴权信息。 |
+| client\_id | 否 | String | 服务商接入场景必传。  API客户端ID。  创建第三方平台成功后系统自动分配的客户端ID，可在第三方管理平台“开发管理资料 \&gt; 开发配置 \&gt; 开发资料设置”页面中获取，详情请参见[接口访问凭证](/docs/dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials)。 |
+| appId | 是 | String(64) | 在创建应用后，由华为开发者联盟为应用分配的唯一标识。参数取值详见[查看应用基本信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)中的应用-APP ID。 |
 | x-traceid | 否 | String(100) | 请求链路追踪ID，用于标识一次完整的调用链路，便于进行日志追踪和问题定位。 |
 
 ### **Request Body**
@@ -72,12 +72,12 @@ format: md
 | mchProductId | 是 | String(128) | 商家侧商品ID。 |
 | productName | 否 | String(30) | 商品名称。  字符类型，最少不低于3个字符，最长不超过30个字符。商品名称不宜过长，影响用户视觉体验。  注：1.商品名称只允许汉字、数字、英文字母、特殊字符集；特殊字符集为：`·~～!@#$%^&()！@#￥%……&\*（）-\_——=+[]\【】、&#123;&#125; \|｜;'；’:"： ‘“”,./，。、\&lt;\&gt;?《》？\u00A0\u0020\u3000  2.商品名称不得仅为数字、字母、特殊字符集或上述三种的组合。  元服务提供多种卡片规范，建议商品字数按照对应卡片规范，避免展示信息重叠。 |
 | subtitle | 否 | String(50) | 商品副标题。  最多不超过50个字符，展示在卡片中，用于增量描述商品信息。 |
-| categoryCode | 是 | String(32) | 类目编码，参见[元服务标签](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-apptype-0000002271160689#section06007445916)中标签ID |
+| categoryCode | 是 | String(32) | 类目编码，参见[元服务标签](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-apptype-0000002271160689#section06007445916)中标签ID |
 | productTypeId | 否 | Integer | 商品类型。  1-普通商品  2-票务  3-数字商品 |
 | launchOptions | 是 | LaunchOptions | 商品直达链接参数。 |
 | saleStatus | 是 | Integer | 商家侧商品售卖状态。  1-在售  2-售罄  注意：SPU售罄时，SKU不能是在售状态。 |
 | salePrice | 否 | Integer | 商品起始售价，单位：分。  最大值1000000000 |
-| attrs | 是 | JSONObject | 商品属性。  详见[商品属性说明](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-attributes)章节，根据商品所属类目填入相应属性。 |
+| attrs | 是 | JSONObject | 商品属性。  详见[商品属性说明](/docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-attributes)章节，根据商品所属类目填入相应属性。 |
 | images | 是 | List\&lt;ProductImage\&gt; | 商品图片列表。 |
 | skus | 否 | List\&lt;ProductSKU\&gt; | 商品SKU列表。 |
 | skusToDelete | 否 | List\&lt;SkuIdInfo\&gt; | 要删除的skuId列表。 |

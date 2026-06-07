@@ -1,7 +1,7 @@
 ---
 title: 下拉按钮
 sidebar_label: 下拉按钮
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/select-0000001957001873
+original_url: /docs/design/components/control-components/select
 format: md
 ---
 

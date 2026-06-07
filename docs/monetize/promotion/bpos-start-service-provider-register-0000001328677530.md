@@ -1,7 +1,7 @@
 ---
 title: "服务商账户注册"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-service-provider-register-0000001328677530
+original_url: /docs/monetize/promotion/bpos-start-service-provider-register-0000001328677530
 format: md
 ---
 
@@ -56,7 +56,7 @@ format: md
 
 4. 选择认证方式。
 
-   您完成华为账号注册之后，需要进行实名认证，认证方式可选“[对公银行打款认证](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-register-0000001328677526#section3669mcpsimp)”或“[企业资料人工审核认证](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-start-guest-register-0000001328677526#section3608mcpsimp)”，建议您优先选择“<strong>企业资料人工审核认证</strong>”方式。认证方式提交后不可修改。
+   您完成华为账号注册之后，需要进行实名认证，认证方式可选“[对公银行打款认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#section3669mcpsimp)”或“[企业资料人工审核认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#section3608mcpsimp)”，建议您优先选择“<strong>企业资料人工审核认证</strong>”方式。认证方式提交后不可修改。
 5. 提交审核<strong>。</strong>
 
    认证通过后华为会给您联系人邮箱发送邮件通知；一般3-5个工作日审核完成。
@@ -130,7 +130,7 @@ format: md
 ![](./img/14f89b13ee61.png)
 
 - <strong>已销户</strong>：指的是子客服务商/子客注销华为账号。如果子客服务商下仍然绑定了子客，但是子客服务商已经注销账户，则子客服务商下的子客只能继续使用自己账户中余额，无法继续增加余额。
-- <strong>停用</strong>：一般由华为进行判定并操作，如果子客服务商/子客账户被停用，请[在线提单](https://developer.huawei.com/consumer/cn/doc/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
+- <strong>停用</strong>：一般由华为进行判定并操作，如果子客服务商/子客账户被停用，请[在线提单](/docs/monetize/promotion/bpos-contact-0000001379837569#ZH-CN_TOPIC_0000001379837569__p5642mcpsimp)联系我们。
 - <strong>授权过期</strong>：指的是子客服务商/子客授权函过期。您可以进行“编辑”、“进入账户”等操作。
   - <strong>编辑</strong>：您可以修改子客服务商/子客的授权时间。
   - <strong>进入账户</strong>：您可以进入子客服务商/子客账户。

@@ -1,7 +1,7 @@
 ---
 title: "应用程序包安装卸载与更新"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-install
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-install
 ---
 
-* **[应用安装卸载与更新开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-install-uninstall)**
-* **[应用安装与更新一致性校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/install-and-update-consistency-verification)**
+* **[应用安装卸载与更新开发指导](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-install-uninstall)**
+* **[应用安装与更新一致性校验](/docs/dev/app-dev/getting-started/dev-fundamentals/install-and-update-consistency-verification)**

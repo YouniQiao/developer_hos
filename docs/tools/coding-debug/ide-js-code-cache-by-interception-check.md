@@ -1,7 +1,7 @@
 ---
 title: "@performance/js-code-cache-by-interception-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-js-code-cache-by-interception-check
+original_url: /docs/tools/coding-debug/ide-js-code-cache-by-interception-check
 format: md
 ---
 

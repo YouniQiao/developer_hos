@@ -1,6 +1,6 @@
 ---
 title: "preferences数据库调试工具指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preferences-debug-tool
+original_url: /docs/dev/app-dev/application-framework/arkdata/arkdata-debug-tool/preferences-debug-tool
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 为了提升开发者的工作效率，数据库调试工具支持开发者查看设备中的preference\_kv数据库和preference\_xml数据库内容。
 
-其中，preference\_kv数据库对应的首选项存储模式为[GSKV存储模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-preferences#gskv存储)；preference\_xml数据库对应的首选项存储模式为[XML存储模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-preferences#xml存储)。
+其中，preference\_kv数据库对应的首选项存储模式为[GSKV存储模式](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-preferences#gskv存储)；preference\_xml数据库对应的首选项存储模式为[XML存储模式](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-preferences#xml存储)。
 
 ![](./img/47def3cd.png)
 
@@ -17,7 +17,7 @@ format: md
 
 ## 环境要求
 
-* 在使用本工具前，开发者需要先获取[hdc工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)，开启[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)，执行hdc shell。
+* 在使用本工具前，开发者需要先获取[hdc工具](/docs/dev/app-dev/system/hdc#环境准备)，开启[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)，执行hdc shell。
 * 此调试工具仅支持调试应用使用，配置调试应用具体可见[配置应用可调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-debug-configurations)。
 * 正常连接设备。
 

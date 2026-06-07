@@ -1,6 +1,6 @@
 ---
 title: "（可选）安全配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-security-configuration-0000002271502509
+original_url: /docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-security-configuration-0000002271502509
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "使用云调试安装包失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-others-cloud-debugging
+original_url: /docs/dev/atomic-dev/ascf/faqs-others/faqs-others-cloud-debugging
 format: md
 ---
 

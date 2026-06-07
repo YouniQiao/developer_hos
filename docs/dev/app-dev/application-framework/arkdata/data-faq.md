@@ -1,6 +1,6 @@
 ---
 title: "ArkData常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-faq
+original_url: /docs/dev/app-dev/application-framework/arkdata/data-faq
 format: md
 ---
 
@@ -39,7 +39,7 @@ format: md
 
 以下错误码可参考：[关系型数据库错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-data-rdb)。
 
-获取hilog系统日志的方法可参考：[hilog日志查看](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog#hilog日志查看)。
+获取hilog系统日志的方法可参考：[hilog日志查看](/docs/dev/app-dev/system/hilog#hilog日志查看)。
 
 以下可搜索的日志在不同版本上可能存在差异。
 

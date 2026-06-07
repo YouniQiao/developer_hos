@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: ".shader资源文件格式要求"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics3d-shader-resource
+original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-shader-resource
 format: md
 ---
 

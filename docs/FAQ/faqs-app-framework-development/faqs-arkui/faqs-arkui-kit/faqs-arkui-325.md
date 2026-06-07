@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何控制CustomDialog显示层级"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-325
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-325
 ---
 
 

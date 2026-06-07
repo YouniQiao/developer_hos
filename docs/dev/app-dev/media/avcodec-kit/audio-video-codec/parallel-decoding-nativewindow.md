@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "创建视频解码器和NativeWindow初始化并行"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/parallel-decoding-nativewindow
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/parallel-decoding-nativewindow
 format: md
 ---
 
@@ -99,14 +99,14 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    在此示例中，回调函数的实现仅仅是将buffer取出来并释放，开发者可以根据业务需求自行拓展。
 5. 配置解码器。
 
-   具体开发指导请参考[视频解码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)“步骤-5：调用OH\_VideoDecoder\_Configure()配置解码器”。
+   具体开发指导请参考[视频解码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)“步骤-5：调用OH\_VideoDecoder\_Configure()配置解码器”。
 6. 设置surface。
 
    在应用业务真正的surface消费端创建成功之前，可以先使用上面临时创建的消费端连接解码器。
 
    示例中的变量说明如下：
 
-   * videoDec：视频解码器实例的指针。创建方式可参考[视频解码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)“步骤-2：创建解码器实例对象”。
+   * videoDec：视频解码器实例的指针。创建方式可参考[视频解码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)“步骤-2：创建解码器实例对象”。
 
    ```
    ret = OH_VideoDecoder_SetSurface(videoDec, nativeImageWindow);
@@ -116,7 +116,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    ```
 7. 启动解码器。
 
-   具体开发指导请参考[视频解码Surface模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-decoding#surface模式)“步骤-8：调用OH\_VideoDecoder\_Start()启动解码器”。
+   具体开发指导请参考[视频解码Surface模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding#surface模式)“步骤-8：调用OH\_VideoDecoder\_Start()启动解码器”。
 8. 设置surface。
 
    在应用业务真正的surface消费端创建成功后，可以调用OH\_VideoDecoder\_SetSurface接口，将解码输出重定向到新的surface上。
@@ -124,7 +124,7 @@ target_link_libraries(sample PUBLIC libnative_media_vdec.so)
    本例中的nativeWindow，有两种方式获取：
 
    1. 如果解码后直接显示，则从XComponent组件获取，获取方式请参考 [XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)；
-   2. 如果解码后接OpenGL后处理，则从NativeImage获取，获取方式请参考 [NativeImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-image-guidelines)。
+   2. 如果解码后接OpenGL后处理，则从NativeImage获取，获取方式请参考 [NativeImage](/docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-image-guidelines)。
 
    ```
    ret = OH_VideoDecoder_SetSurface(videoDec, nativeWindow);

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "签名校验是否可以都在服务端执行？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-8
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-15
 format: md
 ---
 

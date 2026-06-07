@@ -1,6 +1,6 @@
 ---
 title: "IPC跨进程通信中是否支持异步返回数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ipc-1
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ipc-kit/faqs-ipc-1
 format: md
 ---
 
@@ -34,4 +34,4 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 **参考链接**
 
-[IPC与RPC通信开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ipc-rpc-development-guideline)
+[IPC与RPC通信开发指导](/docs/dev/app-dev/application-framework/ipc-kit/ipc-rpc-development-guideline)

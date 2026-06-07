@@ -1,6 +1,6 @@
 ---
 title: "出现/消失转场"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-enter-exit-transition
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-enter-exit-transition
 format: md
 ---
 

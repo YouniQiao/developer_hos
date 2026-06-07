@@ -1,6 +1,6 @@
 ---
 title: "推送基于账号的订阅消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-send-sub-noti
+original_url: /docs/dev/atomic-dev/push-as-subscription/push-as-send-sub-noti
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 若订阅模板类型为“一次性订阅”，推送消息数量受控于元服务发起订阅请求并获得用户授权的次数。每次发送订阅消息都需要获取用户授权。当用户勾选 “总是保持以上选择” 之后，下次订阅调用[serviceNotification.requestSubscribeNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-servicenotification#section11384539111610)()不会再向用户弹窗，保持之前的选择。
 
-若订阅模板类型为“长期性订阅”，推送消息数量将在服务通知的模板详情页说明，元服务可在模板限制的订阅周期及频次内多次下发通知，而无需用户再次进行订阅操作，详情见[选用订阅模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-noti#section880418143379)。
+若订阅模板类型为“长期性订阅”，推送消息数量将在服务通知的模板详情页说明，元服务可在模板限制的订阅周期及频次内多次下发通知，而无需用户再次进行订阅操作，详情见[选用订阅模板](/docs/dev/atomic-dev/push-as-subscription/push-as-service-noti#section880418143379)。
 
 ## 开发指导
 
@@ -44,15 +44,15 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 * Authorization：JWT格式字符串，可参见[Authorization](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-struct#section20573634202313)获取。
 * msgId：消息id，唯一确定一条消息，由元服务自行设置。
 * appId：元服务的APP ID，登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“APP与元服务”，在HarmonyOS页签下点击对应元服务，左侧导航栏选择“应用信息 &gt; 基本信息”，在该页面获取。
-* toOpenId：接收者（用户）账号登录的openID。使用从端侧上报的openID，或请求华为账号服务器[获取用户信息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-atomic-silent-login)。可参考元服务[账号使用规范](https://developer.huawei.com/consumer/cn/doc/design-guides/accounts-0000001967444380)进行华为账号登录的设计和接入。
-* templateId：订阅消息对应的模板ID，与发起订阅请求时用户授权订阅的entityId相同，详情见[开发指导](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-request-sub#section2982164213594)。
+* toOpenId：接收者（用户）账号登录的openID。使用从端侧上报的openID，或请求华为账号服务器[获取用户信息](/docs/dev/atomic-dev/atomic-account-development/account-atomic-silent-login)。可参考元服务[账号使用规范](/docs/design/atomic-service-design/best-practices/accounts)进行华为账号登录的设计和接入。
+* templateId：订阅消息对应的模板ID，与发起订阅请求时用户授权订阅的entityId相同，详情见[开发指导](/docs/dev/atomic-dev/push-as-subscription/push-as-request-sub#section2982164213594)。
 * templateParams：订阅消息模板中的占位符需要被替换的变量值。
 
   以“上门取件通知”模板为例：
 
   ![](./img/090047e9.png "点击放大")
 
-  templateParams中的参数项为元服务领用的模板中的配置参数。具体可配置项请见[选用订阅模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-noti#section880418143379)。
+  templateParams中的参数项为元服务领用的模板中的配置参数。具体可配置项请见[选用订阅模板](/docs/dev/atomic-dev/push-as-subscription/push-as-service-noti#section880418143379)。
 
   ![](./img/c440ac6c.png)
 
@@ -92,7 +92,7 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 
    * actionType：点击消息的动作，0表示点击消息后默认进入首页。
 
-     支持通过指定 data 参数跳转至该元服务内指定页面，详情请见**[调用方UIAbility指定启动页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction#调用方uiability指定启动页面)**。
+     支持通过指定 data 参数跳转至该元服务内指定页面，详情请见**[调用方UIAbility指定启动页面](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-intra-device-interaction#调用方uiability指定启动页面)**。
    * data：点击消息时携带的JSON格式的数据，必须是key-value格式，最大长度1024字节。示例：\&#123;"key1": "value1", "key2": "value2"\&#125;
 2. data数据获取：点击消息首次进入元服务页面时，需在[onCreate()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)方法中获取消息data数据；当元服务进程存在时，需在[onNewWant()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onnewwant)方法中获取消息data数据。
 
@@ -130,8 +130,8 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 
    ![](./img/b9a13378.png)
 
-   onNewWant()方法仅在单例（[singleton](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type#singleton启动模式)）模式下可用。
-3. 对于ascf框架开发的元服务，可通过clickAction中的data传入启动参数，内容需为&#123; ascfPara: [key: string]: Object &#125;结构，详情请见[want参数解析](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-want-parameter-parsing)。
+   onNewWant()方法仅在单例（[singleton](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-launch-type#singleton启动模式)）模式下可用。
+3. 对于ascf框架开发的元服务，可通过clickAction中的data传入启动参数，内容需为&#123; ascfPara: [key: string]: Object &#125;结构，详情请见[want参数解析](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-want-parameter-parsing)。
 
    示例如下：
 
@@ -181,4 +181,4 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 
 ## 示例代码
 
-可参考[服务端示例代码](https://gitee.com/harmonyos_samples/Push-kit-service-notification-sample-code-java)进行开发接入，同时还可通过[自助测试](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-self)能力模拟服务器推送基于账号的订阅消息，并生成请求参数报文用于构造发送请求。
+可参考[服务端示例代码](https://gitee.com/harmonyos_samples/Push-kit-service-notification-sample-code-java)进行开发接入，同时还可通过[自助测试](/docs/dev/atomic-dev/push-as-subscription/push-as-service-self)能力模拟服务器推送基于账号的订阅消息，并生成请求参数报文用于构造发送请求。

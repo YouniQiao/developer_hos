@@ -1,6 +1,6 @@
 ---
 title: "分析应用使用情况"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-usage-0000002236492392
+original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-usage-0000002236492392
 format: md
 ---
 
@@ -111,7 +111,7 @@ format: md
   | 累计用户数 | 从统计起始时间到当前时间点，所有访问APP的去重用户数。 |
   | 新增用户数 | 统计日当日，访问APP的去重新增用户数。 |
   | 新增用户数占比（累计用户数） | 统计日新用户数/统计日累计用户数。 |
-  | 活跃用户数 | 统计日当日，访问APP的去重用户数。  说明：  关于活跃的定义，请参见FAQ“[活跃的判定标准是什么？](https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-faq-0000002334224101#section12621333152712)”。 |
+  | 活跃用户数 | 统计日当日，访问APP的去重用户数。  说明：  关于活跃的定义，请参见FAQ“[活跃的判定标准是什么？](/docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-faq-0000002334224101#section12621333152712)”。 |
   | 前台活跃用户数 | 统计日当日，进入APP页面的去重用户数。  说明：  前台活跃指用户进入了APP页面。 |
   | 活跃率 | 统计日活跃用户数/统计日累计用户数。 |
   | 新增用户数占比（活跃用户） | 统计日新增用户数/统计日活跃用户数。 |
@@ -124,7 +124,7 @@ format: md
   | 累计设备数 | 从统计起始时间到当前时间点，所有访问APP的去重设备数。 |
   | 新增设备数 | 统计日当日，访问APP的去重新增设备数。 |
   | 新增设备数占比（累计设备数） | 统计日新设备数/统计日累计设备数。 |
-  | 活跃设备数 | 统计日当日，访问APP的去重设备数。  说明：  关于活跃的定义，请参见FAQ“[活跃的判定标准是什么？](https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-faq-0000002334224101#section12621333152712)”。 |
+  | 活跃设备数 | 统计日当日，访问APP的去重设备数。  说明：  关于活跃的定义，请参见FAQ“[活跃的判定标准是什么？](/docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-faq-0000002334224101#section12621333152712)”。 |
   | 前台活跃设备数 | 统计日当日，进入APP页面的去重设备数。  说明：  前台活跃指用户进入了APP页面。 |
   | 活跃率 | 统计日活跃设备数/统计日累计设备数。 |
   | 新增设备数占比（活跃设备） | 统计日新增设备数/统计日活跃设备数。 |

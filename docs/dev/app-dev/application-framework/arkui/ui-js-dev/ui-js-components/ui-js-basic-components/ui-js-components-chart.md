@@ -1,6 +1,6 @@
 ---
 title: "chart开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-chart
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-chart
 format: md
 ---
 

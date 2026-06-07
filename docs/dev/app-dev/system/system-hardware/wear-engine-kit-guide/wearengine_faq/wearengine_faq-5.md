@@ -1,6 +1,6 @@
 ---
 title: "HR传感器数据中，存在数值为0或255的异常情况"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-5
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-5
 format: md
 ---
 

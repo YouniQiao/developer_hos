@@ -1,6 +1,6 @@
 ---
 title: "前台资源使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-resource
+original_url: /docs/experience-suggestions/power/foreground/standard-foreground-resource
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [视频场景编解码低功耗规则](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-codec)  [视频场景弹幕绘制低功耗规则](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-barrage) |
+| 说明 | [视频场景编解码低功耗规则](/docs/quality/video-codec)  [视频场景弹幕绘制低功耗规则](/docs/quality/video-barrage) |
 
 ### 视频场景推荐建议
 
@@ -25,7 +25,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [视频场景图层低功耗建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-layer)  [视频场景Wi-Fi加载低功耗建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-wifi)  [视频场景ROM低功耗建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-video-rom) |
+| 说明 | [视频场景图层低功耗建议](/docs/quality/video-layer)  [视频场景Wi-Fi加载低功耗建议](/docs/quality/video-wifi)  [视频场景ROM低功耗建议](/docs/quality/video-rom) |
 
 ### 音乐播放场景强制建议
 
@@ -35,7 +35,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [音乐播放场景低功耗规则](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-music-playback-scenarios) |
+| 说明 | [音乐播放场景低功耗规则](/docs/quality/music-playback-scenarios) |
 
 ### 导航定位场景强制建议
 
@@ -45,7 +45,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [导航定位场景低功耗规则](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-navigation-scenarios) |
+| 说明 | [导航定位场景低功耗规则](/docs/quality/navigation-scenarios) |
 
 ### 导航定位场景推荐建议
 
@@ -55,7 +55,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [导航定位场景低功耗规则](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-navigation-scenarios) |
+| 说明 | [导航定位场景低功耗规则](/docs/quality/navigation-scenarios) |
 
 ### 网络资源建议
 
@@ -65,7 +65,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [网络资源低功耗建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-network-resources) |
+| 说明 | [网络资源低功耗建议](/docs/quality/network-resources) |
 
 ### 静态场景强制建议
 
@@ -75,7 +75,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [静态场景低功耗规则](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-static-scenarios) |
+| 说明 | [静态场景低功耗规则](/docs/quality/static-scenarios) |
 
 ### 静态场景推荐建议
 
@@ -85,7 +85,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [静态场景低功耗规则](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-static-scenarios) |
+| 说明 | [静态场景低功耗规则](/docs/quality/static-scenarios) |
 
 ### 深色模式建议
 
@@ -95,7 +95,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机、折叠屏、平板 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [省电和深色模式下低功耗设计](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-low-power-design-in-dark-mode) |
+| 说明 | [省电和深色模式下低功耗设计](/docs/quality/low-power-design-in-dark-mode) |
 
 ### 视频通话场景建议
 

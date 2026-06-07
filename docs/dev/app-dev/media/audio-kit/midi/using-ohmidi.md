@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用OH_MIDI进行MIDI开发(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohmidi
+original_url: /docs/dev/app-dev/media/audio-kit/midi/using-ohmidi
 format: md
 ---
 
@@ -923,9 +923,9 @@ static void OnMIDIReceived(void *userData, const OH_MIDIEvent *events, size_t ev
 
 ## 相关参考
 
-* [OH\_MIDI开发概述(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/midi-overview)
+* [OH\_MIDI开发概述(C/C++)](/docs/dev/app-dev/media/audio-kit/midi/midi-overview)
 * [OHMIDI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohmidi)API参考
 * [native\_midi.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-midi-h)
 * [native\_midi\_base.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-midi-base-h)
 * [通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)说明
-* 蓝牙BLE开发指南：[查找设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ble-development-guide)
+* 蓝牙BLE开发指南：[查找设备](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/ble-development-guide)

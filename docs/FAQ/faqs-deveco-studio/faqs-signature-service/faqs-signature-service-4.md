@@ -1,7 +1,7 @@
 ---
 format: md
 title: "浏览器点击“允许”按钮后，出现登录客户端失败提示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-4
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-4
 ---
 
 

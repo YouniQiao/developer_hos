@@ -1,9 +1,9 @@
 ---
 title: "应用程序包概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-overview
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-overview
 ---
 
-在基于[Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-configuration-file-overview-stage)开发应用之前，开发者需要了解应用的设计机制、应用程序包结构等基础知识。
+在基于[Stage模型](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-stage)开发应用之前，开发者需要了解应用的设计机制、应用程序包结构等基础知识。
 
 ## 应用与应用程序包
 
@@ -37,8 +37,8 @@ Module按照使用场景可以分为两种类型：
 
   | 共享包类型 | 编译和运行方式 | 发布和引用方式 |
   | --- | --- | --- |
-  | HAR | HAR中的代码和资源跟随使用方编译，如果有多个使用方，它们的编译产物中会存在多份相同拷贝。  注意：[构建HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package#构建)时，建议开启混淆能力，保护代码资产。 | HAR除了支持应用内引用，还可以独立打包发布到[OHPM中心仓](https://ohpm.openharmony.cn/#/cn/home)或者[OHPM私仓](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo)，供其他应用引用。 |
-  | HSP | HSP中的代码和资源可以独立编译，运行时在一个进程中代码也只会存在一份。 | HSP一般随应用进行打包，当前支持应用内和[集成态HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/integrated-hsp)。应用内HSP只支持应用内引用，集成态HSP支持发布到OHPM私仓和跨应用引用。  **说明：**  集成态HSP只是应用内HSP的中间形态，只能参与编译构建过程，无法单独安装。在构建和发布OHPM私仓的过程中，集成态HSP不与特定的应用包名耦合。使用时，工具链支持自动将集成态HSP的包名替换成宿主应用包名，并且会重新签名生成一个新的HSP包，作为宿主应用的安装包，这个新的HSP也属于宿主应用HAP的应用内HSP。 |
+  | HAR | HAR中的代码和资源跟随使用方编译，如果有多个使用方，它们的编译产物中会存在多份相同拷贝。  注意：[构建HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package#构建)时，建议开启混淆能力，保护代码资产。 | HAR除了支持应用内引用，还可以独立打包发布到[OHPM中心仓](https://ohpm.openharmony.cn/#/cn/home)或者[OHPM私仓](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo)，供其他应用引用。 |
+  | HSP | HSP中的代码和资源可以独立编译，运行时在一个进程中代码也只会存在一份。 | HSP一般随应用进行打包，当前支持应用内和[集成态HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/integrated-hsp)。应用内HSP只支持应用内引用，集成态HSP支持发布到OHPM私仓和跨应用引用。  **说明：**  集成态HSP只是应用内HSP的中间形态，只能参与编译构建过程，无法单独安装。在构建和发布OHPM私仓的过程中，集成态HSP不与特定的应用包名耦合。使用时，工具链支持自动将集成态HSP的包名替换成宿主应用包名，并且会重新签名生成一个新的HSP包，作为宿主应用的安装包，这个新的HSP也属于宿主应用HAP的应用内HSP。 |
 
   **图1** HAR和HSP在APP包中的形态示意图
 
@@ -50,19 +50,19 @@ HAP、HAR、HSP三者的功能和使用场景总结对比如下：
 
 | Module类型 | 包类型 | 说明 |
 | --- | --- | --- |
-| Ability | [HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package) | 应用的功能模块，可以独立安装和运行。 |
-| Static Library | [HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package) | 静态共享包，编译态复用。  - 支持应用内共享，也可以作为二方库（SDK）、三方库（SDK）发布后供其他应用使用。  - 作为二方库（SDK），发布到[OHPM私仓](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo)，供公司内部其他应用使用。  - 作为三方库（SDK），发布到[OHPM中心仓](https://ohpm.openharmony.cn/#/cn/home)，供其他应用使用。  - 多包（HAP/HSP）同时引用相同的HAR时，会造成多包间代码和资源的重复拷贝，从而导致应用包增大。  - 注意：[构建HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package#构建)时，建议开启混淆能力，保护代码资产。 |
-| Shared Library | [HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp) | 动态共享包，运行时复用。  - 当多包（HAP/HSP）同时依赖同一个共享包时，使用HSP替代HAR，可以避免HAR造成的多包间代码和资源的重复拷贝，从而减小应用包大小。 |
+| Ability | [HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package) | 应用的功能模块，可以独立安装和运行。 |
+| Static Library | [HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package) | 静态共享包，编译态复用。  - 支持应用内共享，也可以作为二方库（SDK）、三方库（SDK）发布后供其他应用使用。  - 作为二方库（SDK），发布到[OHPM私仓](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-repo)，供公司内部其他应用使用。  - 作为三方库（SDK），发布到[OHPM中心仓](https://ohpm.openharmony.cn/#/cn/home)，供其他应用使用。  - 多包（HAP/HSP）同时引用相同的HAR时，会造成多包间代码和资源的重复拷贝，从而导致应用包增大。  - 注意：[构建HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package#构建)时，建议开启混淆能力，保护代码资产。 |
+| Shared Library | [HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp) | 动态共享包，运行时复用。  - 当多包（HAP/HSP）同时依赖同一个共享包时，使用HSP替代HAR，可以避免HAR造成的多包间代码和资源的重复拷贝，从而减小应用包大小。 |
 
 HAP、HSP、HAR支持的规格对比如下，其中“√”表示是，“×”表示否。
 
-开发者可以根据具体的应用需求，选择相应类型的包进行开发。在后续的章节中还会针对如何使用[HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package)、[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)、[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)分别展开详细介绍。
+开发者可以根据具体的应用需求，选择相应类型的包进行开发。在后续的章节中还会针对如何使用[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)、[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)、[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)分别展开详细介绍。
 
 | 规格 | HAP | HAR | HSP |
 | --- | --- | --- | --- |
-| 支持在配置文件中声明[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-overview)组件 | √ | √ | √ |
-| 支持在配置文件中声明[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)组件 | √ | √ | √ |
-| 支持在配置文件中声明[pages](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#pages标签)页面 | √ | × | √ |
+| 支持在配置文件中声明[UIAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-overview)组件 | √ | √ | √ |
+| 支持在配置文件中声明[ExtensionAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)组件 | √ | √ | √ |
+| 支持在配置文件中声明[pages](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#pages标签)页面 | √ | × | √ |
 | 支持包含资源文件与.so文件 | √ | √ | √ |
 | 支持依赖其他HAR文件 | √ | √ | √ |
 | 支持依赖其他HSP文件 | √ | √ | √ |
@@ -70,6 +70,6 @@ HAP、HSP、HAR支持的规格对比如下，其中“√”表示是，“×”
 
 ![](./img/7e910dfe.png)
 
-* 如果HAR支持声明pages页面，那么当HAR被打包到HAP或HSP中时，其内部声明的pages页面可能会与HAP/HSP中的pages页面存在相对路径上的重复，这将导致无法根据相对路径识别特定的路由页面。因此，HAR不支持在配置文件中声明pages页面，但可以包含pages页面，并通过[Navigation跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-jump#路由操作)的方式进行跳转。
+* 如果HAR支持声明pages页面，那么当HAR被打包到HAP或HSP中时，其内部声明的pages页面可能会与HAP/HSP中的pages页面存在相对路径上的重复，这将导致无法根据相对路径识别特定的路由页面。因此，HAR不支持在配置文件中声明pages页面，但可以包含pages页面，并通过[Navigation跳转](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-jump#路由操作)的方式进行跳转。
 * 由于HSP仅支持应用内共享，如果HAR依赖了HSP，则该HAR文件仅支持应用内共享，不支持发布到二方仓或三方仓供其他应用使用，否则会导致编译失败。
-* HAR和HSP均不支持循环依赖，也不支持依赖传递，详情说明可以参考[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package#约束限制)或者[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp#约束限制)中约束限制说明。
+* HAR和HSP均不支持循环依赖，也不支持依赖传递，详情说明可以参考[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package#约束限制)或者[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp#约束限制)中约束限制说明。

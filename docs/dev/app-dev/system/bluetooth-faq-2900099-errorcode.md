@@ -1,6 +1,6 @@
 ---
 title: "蓝牙接口调用报错2900099"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bluetooth-faq-2900099-errorcode
+original_url: /docs/dev/app-dev/system/bluetooth-faq-2900099-errorcode
 format: md
 ---
 
@@ -46,7 +46,7 @@ format: md
 
 ## 修改建议
 
-参考[连接和传输数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gatt-development-guide)开发指导。
+参考[连接和传输数据](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/gatt-development-guide)开发指导。
 
 ## 相关问题
 

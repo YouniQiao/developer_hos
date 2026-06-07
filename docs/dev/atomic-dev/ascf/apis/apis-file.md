@@ -1,6 +1,6 @@
 ---
 title: "文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-file
+original_url: /docs/dev/atomic-dev/ascf/apis/apis-file
 format: md
 ---
 
@@ -19,7 +19,7 @@ has.openDocument(Object object)
 
 | 参数 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
-| filePath | string | 是 | 文件路径（本地路径），可通过[has.downloadFile](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-download#hasdownloadfile)获取。 |
+| filePath | string | 是 | 文件路径（本地路径），可通过[has.downloadFile](/docs/dev/atomic-dev/ascf/apis-network/apis-download#hasdownloadfile)获取。 |
 | fileType | string | 否 | 文件类型，指定文件类型打开文件。 |
 | success | function | 否 | 接口调用成功的回调函数。 |
 | fail | function | 否 | 接口调用失败的回调函数。 |

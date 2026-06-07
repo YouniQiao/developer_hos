@@ -1,8 +1,8 @@
 ---
 title: "资源管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-management
+original_url: /docs/dev/ndk-dev/resource-management
 format: md
 ---
 
 
-* **[Rawfile开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/rawfile-guidelines)**
+* **[Rawfile开发指导](/docs/dev/ndk-dev/rawfile-guidelines)**

@@ -1,9 +1,9 @@
 ---
 title: "基础通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-connectivity
+original_url: /docs/dev/atomic-dev/atomic-connectivity/atomic-connectivity
 format: md
 ---
 
 
-* **[蓝牙](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-bluetooth)**
-* **[NFC](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-nfc)**
+* **[蓝牙](/docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth)**
+* **[NFC](/docs/dev/atomic-dev/atomic-nfc/atomic-nfc)**

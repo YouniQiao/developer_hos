@@ -1,6 +1,6 @@
 ---
 title: "毕昇编译器"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bisheng-compiler
+original_url: /docs/dev/ndk-dev/bisheng-compiler
 format: md
 ---
 

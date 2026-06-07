@@ -1,22 +1,22 @@
 ---
 title: "快游戏调试"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-debug-quickgame-0000002544859545
+original_url: /docs/dev/game-dev/games-quickgame-tool-debug-quickgame-0000002544859545
 format: md
 ---
 
 
 ## 前提条件
 
-* 已[获取APP ID](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-account-kit-0000002317894820#section1148753814717)。
+* 已[获取APP ID](/docs/dev/game-dev/games-quickgame-enable-account-kit-0000002317894820#section1148753814717)。
 * 准备Android 6.0及以上版本的手机设备，同时要求：
   + 设备上已安装最新版本的花瓣轻游客户端，并使用已实名认证的华为账号登录花瓣轻游。
-  + 设备已成功连接电脑，具体操作可参考[华为手机如何成功连接电脑](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-developer-mode-0000002351904357)。
+  + 设备已成功连接电脑，具体操作可参考[华为手机如何成功连接电脑](/docs/dev/game-dev/games-quickgame-developer-mode-0000002351904357)。
 
 ## 调试步骤
 
 ![](./img/88fba5e0.png)
 
-若运行/调试出现问题，您可以通过工具的本地日志进行定位，工具日志的具体位置请参见[如何查看工具详细的报错日志](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-developer-tool-0000002425133930#section134141449185220)。
+若运行/调试出现问题，您可以通过工具的本地日志进行定位，工具日志的具体位置请参见[如何查看工具详细的报错日志](/docs/dev/game-dev/games-quickgame-faq-developer-tool-0000002425133930#section134141449185220)。
 
 1. 打开快游戏开发者工具，与登录花瓣轻游戏相同的华为账号登录快游戏开发者工具。
 
@@ -32,7 +32,7 @@ format: md
    项目路径中不允许包含中文字符。
 
    ![](./img/51ad4dff.png)
-3. 若项目没有签名文件，在工具菜单栏选择“工具 &gt; 生成证书”，生成证书文件的具体步骤请参见[生成签名证书](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-sign-0000002351893601)。
+3. 若项目没有签名文件，在工具菜单栏选择“工具 &gt; 生成证书”，生成证书文件的具体步骤请参见[生成签名证书](/docs/dev/game-dev/games-quickgame-tool-sign-0000002351893601)。
 
    ![](./img/377ea432.png)
 4. 确保手机已成功连接后，点击“开始运行”。
@@ -51,7 +51,7 @@ format: md
    ![](./img/37ea7c77.png)
 
    * 工具支持分离/融合调试窗口，为了方便您调试代码，建议您分离工具与调试窗口。若要重新融合调试窗口与工具，需要重新点击“开始调试”。
-   * 若adb端口被占用，或者adb版本不兼容工具自带的adb命令时，请参见[如何使用工具自带的adb](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-developer-tool-0000002425133930#section65941620195111)。
+   * 若adb端口被占用，或者adb版本不兼容工具自带的adb命令时，请参见[如何使用工具自带的adb](/docs/dev/game-dev/games-quickgame-faq-developer-tool-0000002425133930#section65941620195111)。
    * 若运行快游戏时正常，但调试快游戏时出现**黑屏**，这是因为花瓣轻游版本与工具版本不匹配。您需要先卸载手机上的花瓣轻游，再点击工具的“开始调试”，待手机上自动安装工具内置的花瓣轻游后即可解决该问题。
 7. 点击“停止”结束调试快游戏。
 

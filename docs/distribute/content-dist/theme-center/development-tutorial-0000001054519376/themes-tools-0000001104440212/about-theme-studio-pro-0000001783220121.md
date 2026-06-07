@@ -1,7 +1,7 @@
 ---
 title: "Theme Studio Pro版本更新说明"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/about-theme-studio-pro-0000001783220121
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-tools-0000001104440212/about-theme-studio-pro-0000001783220121
 format: md
 ---
 
@@ -109,4 +109,4 @@ format: md
 * 支持高级功能制作：景深、颜色自定义、样式自定义。
 * 支持元素栏，图层栏、属性栏、高级功能栏的拖拽和吸附。
 * 支持背景单图上传裁剪功能，可上传超出规范的图片，通过裁剪功能生成符合规范的图片。
-* 支持[快捷键](https://developer.huawei.com/consumer/cn/doc/content/accessibility-pro-0000001583647410#section16163482563)使用。
+* 支持[快捷键](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/accessibility-pro-0000001583647410#section16163482563)使用。

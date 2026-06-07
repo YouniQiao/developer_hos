@@ -1,6 +1,6 @@
 ---
 title: "ArkTS待机屏保卡片开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-ui-standby-form-development
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkui-ui-standby-form-development
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 1. 待机屏保卡片只支持 2\*2尺寸的卡片。
 2. 待机屏保卡片不推荐展示用户个人隐私敏感数据。
-3. 待机屏保卡片有明确的UX设计规范。具体请参考设计指南中的[待机屏保](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-service-widget-0000002087671904#section966618274556)。
+3. 待机屏保卡片有明确的UX设计规范。具体请参考设计指南中的[待机屏保](/docs/design/system-features/features/service-widget#section966618274556)。
 
 ## 开启方式
 
@@ -59,7 +59,7 @@ format: md
 
 待机屏保卡片会展示在设备的待机屏保界面，开发者需申请上架开放能力，用以保护数据隐私安全。
 
-因此在应用调试或发布时，必须使用[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)，并在手动签名[申请Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)过程中[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)，创建应用时参考如下指导为应用接入开放能力。
+因此在应用调试或发布时，必须使用[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)，并在手动签名[申请Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)过程中[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，创建应用时参考如下指导为应用接入开放能力。
 
 1. 登录AppGallery Connect，选择“开发与服务”。
 
@@ -87,10 +87,10 @@ format: md
 
 下面给出示例，实现待机屏保卡片展示。
 
-1. [创建卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)。
+1. [创建卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)。
 2. 配置卡片在待机屏保界面展示。
 
-   如果卡片不需要展示在待机屏保界面，配置isSupported字段为false;如果卡片已适配待机屏保卡片UX规范，配置isAdapted字段为true，系统会把卡片布局组件中backgroundImage移除；如果卡片涉及隐私敏感信息，需要配置isPrivacySensitive字段为true，用户将卡片添加到待机屏保界面则会有蒙版覆盖。具体参考[配置文件字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#配置文件字段说明)。
+   如果卡片不需要展示在待机屏保界面，配置isSupported字段为false;如果卡片已适配待机屏保卡片UX规范，配置isAdapted字段为true，系统会把卡片布局组件中backgroundImage移除；如果卡片涉及隐私敏感信息，需要配置isPrivacySensitive字段为true，用户将卡片添加到待机屏保界面则会有蒙版覆盖。具体参考[配置文件字段说明](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#配置文件字段说明)。
 
 ```
   // entry/src/main/resources/base/profile/form_config.json

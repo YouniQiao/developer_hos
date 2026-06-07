@@ -1,6 +1,6 @@
 ---
 title: "人脸活体检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-ai-face-liveness-detection
+original_url: /docs/dev/atomic-dev/ascf/apis-ai/apis-ai-face-liveness-detection
 format: md
 ---
 
@@ -16,7 +16,7 @@ has.startLivenessDetection(Object object)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.CAMERA**。
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请 **[scope.camera](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)** 权限。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请 **[scope.camera](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)** 权限。
 
 **约束限制：**
 

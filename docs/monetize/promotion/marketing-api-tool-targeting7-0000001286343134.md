@@ -1,7 +1,7 @@
 ---
 title: "查询定向字典"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-targeting7-0000001286343134
+original_url: /docs/monetize/promotion/marketing-api-tool-targeting7-0000001286343134
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 您通过本接口可以查询定向字典。
 
-- 其中定向包中的地域定向通过[海外地域字典数据](https://developer.huawei.com/consumer/cn/doc/promotion/attachments-0000001532611905#ZH-CN_TOPIC_0000001532611905__li66991118709)提供。
+- 其中定向包中的地域定向通过[海外地域字典数据](/docs/monetize/promotion/attachments-0000001532611905#ZH-CN_TOPIC_0000001532611905__li66991118709)提供。
 - <strong>请求地址</strong>：请根据您的就近区域进行选择
 
   亚非拉：https://ads-dra.cloud.huawei.com/ads/v1/tools/dictionary/query
@@ -24,7 +24,7 @@ format: md
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
-  | targeting\_list | string[] | 是 | 用户查询哪些定向包集合，详见[定向包集合](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix5-0000001338486113#section1755261710100)。 |
+  | targeting\_list | string[] | 是 | 用户查询哪些定向包集合，详见[定向包集合](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#section1755261710100)。 |
   | language | string | 否 | 语言码，支持zh\_CN,en\_US,ru\_RU三种。 |
 
   - <strong>请求示例</strong>

@@ -1,6 +1,6 @@
 ---
 title: "使用AVPlayer播放流媒体(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-streaming
+original_url: /docs/dev/app-dev/media/using-ndk-avplayer-for-streaming
 format: md
 ---
 
@@ -19,11 +19,11 @@ format: md
 
 ## 开发建议
 
-当前指导仅介绍如何实现流媒体资源播放，如需播放本地资源，请参考[使用AVPlayer播放视频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-video-playback)。如果在应用开发过程中涉及后台播放、播放冲突等情况，请根据实际需要参考以下说明。
+当前指导仅介绍如何实现流媒体资源播放，如需播放本地资源，请参考[使用AVPlayer播放视频(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-avplayer-for-video-playback)。如果在应用开发过程中涉及后台播放、播放冲突等情况，请根据实际需要参考以下说明。
 
-避免播放被系统强制中断。此功能仅适用于ArkTS API，如需使用此功能请参考[使用AVPlayer播放视频(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/video-playback)。
+避免播放被系统强制中断。此功能仅适用于ArkTS API，如需使用此功能请参考[使用AVPlayer播放视频(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback)。
 
-* 应用在播放过程中，若播放的媒体数据涉及音频，根据系统音频管理策略（参考[处理音频焦点变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#处理音频焦点变化)事件），会存在被其他应用打断的情况，建议通过[OH\_AVPlayer\_SetOnInfoCallback()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-h#oh_avplayer_setoninfocallback)主动监听音频打断事件[AVPlayerOnInfoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-base-h#avplayeroninfotype).AV\_INFO\_TYPE\_INTERRUPT\_EVENT，根据具体内容提示，做出相应的处理，避免出现应用状态与预期效果不一致的问题。
+* 应用在播放过程中，若播放的媒体数据涉及音频，根据系统音频管理策略（参考[处理音频焦点变化](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#处理音频焦点变化)事件），会存在被其他应用打断的情况，建议通过[OH\_AVPlayer\_SetOnInfoCallback()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-h#oh_avplayer_setoninfocallback)主动监听音频打断事件[AVPlayerOnInfoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-base-h#avplayeroninfotype).AV\_INFO\_TYPE\_INTERRUPT\_EVENT，根据具体内容提示，做出相应的处理，避免出现应用状态与预期效果不一致的问题。
 * 面对设备同时连接多个音频输出设备的情况，建议通过[OH\_AVPlayer\_SetOnInfoCallback()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-h#oh_avplayer_setoninfocallback)主动监听音频输出设备变更事件[AVPlayerOnInfoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-base-h#avplayeroninfotype).AV\_INFO\_TYPE\_AUDIO\_OUTPUT\_DEVICE\_CHANGE，并做出相应处理。
 * 应用在播放过程中，系统内部会因为网络数据下载失败、媒体服务异常终止等发生异常。建议通过[OH\_AVPlayer\_SetOnErrorCallback()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-avplayer-h#oh_avplayer_setonerrorcallback)接口设置错误监听回调函数，根据不同错误类型，做出相应处理，避免出现播放异常。
 

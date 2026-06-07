@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "删除文件到回收站"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/filemanagerservice-deletetotrash
+original_url: /docs/dev/app-dev/application-services/file-manager-service-kit-guide/filemanagerservice-deletetotrash
 format: md
 ---
 

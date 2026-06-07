@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "申请账号权限"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-config-permissions
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-config-permissions
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 ![](./img/6922a3b4.png)
 
-华为账号一键登录、获取您的手机号、获取收货地址权限，仅支持企业开发者申请，不支持个人开发者申请。个人开发者可使用[华为账号登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login-button)或[静默登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-silent-login)实现登录。
+华为账号一键登录、获取您的手机号、获取收货地址权限，仅支持企业开发者申请，不支持个人开发者申请。个人开发者可使用[华为账号登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-button)或[静默登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-silent-login)实现登录。
 
 **表1** 账号权限说明
 

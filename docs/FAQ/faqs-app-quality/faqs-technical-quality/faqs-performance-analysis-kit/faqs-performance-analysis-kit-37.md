@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决单个设备连接设备管理器多出三个设备并无法识别的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-37
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-37
 ---
 
 
@@ -15,4 +15,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **解决措施**
 
-1. 参考解决[设备无法识别问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-32)的重装驱动方法，使用Zadig安装WinUSB设备。
+1. 参考解决[设备无法识别问题](/docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-performance-analysis-kit-32)的重装驱动方法，使用Zadig安装WinUSB设备。

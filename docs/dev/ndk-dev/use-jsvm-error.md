@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口进行错误处理开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-error
+original_url: /docs/dev/ndk-dev/use-jsvm-error
 format: md
 ---
 
@@ -35,7 +35,7 @@ format: md
 
 ## 使用示例
 
-JSVM-API接口开发流程可参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅展示接口对应的C++相关代码。
+JSVM-API接口开发流程可参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅展示接口对应的C++相关代码。
 
 ### OH\_JSVM\_Throw
 

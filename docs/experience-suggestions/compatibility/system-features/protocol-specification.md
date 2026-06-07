@@ -1,6 +1,6 @@
 ---
 title: "协议规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/protocol-specification
+original_url: /docs/experience-suggestions/compatibility/system-features/protocol-specification
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [网络连接能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit-network-management) |
+| **说明** | [网络连接能力](/docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management) |
 
 |  |  |
 | --- | --- |
@@ -23,7 +23,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [数据传输能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit-data-transmission) |
+| **说明** | [数据传输能力](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission) |
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [网络质量评估](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback)、[弱网感知判决](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-qoscallback) |
+| **说明** | [网络质量评估](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-qoscallback)、[弱网感知判决](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-qoscallback) |
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [应用传输体验反馈](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-appreportqoe) |
+| **说明** | [应用传输体验反馈](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-appreportqoe) |
 
 ### 短距通信体验
 
@@ -49,7 +49,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [HCE卡模拟开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc-hce-guide) |
+| **说明** | [HCE卡模拟开发指南](/docs/dev/app-dev/system/system-network/connectivity-kit/nfc/nfc-hce-guide) |
 
 |  |  |
 | --- | --- |
@@ -57,7 +57,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [获取设备的位置信息开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-guidelines) |
+| **说明** | [获取设备的位置信息开发指导](/docs/dev/app-dev/application-services/location-kit/location-guidelines-index/location-guidelines) |
 
 |  |  |
 | --- | --- |
@@ -65,7 +65,7 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [地理围栏开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/geofence-guidelines) |
+| **说明** | [地理围栏开发指导](/docs/dev/app-dev/application-services/location-kit/geofence/geofence-guidelines) |
 
 |  |  |
 | --- | --- |
@@ -105,4 +105,4 @@ format: md
 | **类型** | 建议 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [广播与扫描开发指导](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-bluetooth-advertising) |
+| **说明** | [广播与扫描开发指导](/docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-advertising) |

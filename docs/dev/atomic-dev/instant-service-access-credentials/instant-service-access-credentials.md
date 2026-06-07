@@ -1,6 +1,6 @@
 ---
 title: "配置接口访问凭证"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-access-credentials
+original_url: /docs/dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "更新关键资产(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-update
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-update
 format: md
 ---
 
@@ -60,9 +60,9 @@ format: md
 
 жң¬жЁЎеқ—жҸҗдҫӣдәҶејӮжӯҘе’ҢеҗҢжӯҘдёӨеҘ—жҺҘеҸЈпјҢд»ҘдёӢдёәејӮжӯҘжҺҘеҸЈзҡ„дҪҝз”ЁзӨәдҫӢпјҢеҗҢжӯҘжҺҘеҸЈиҜҰи§Ғ[@ohos.security.asset (е…ій”®иө„дә§еӯҳеӮЁжңҚеҠЎ)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-asset)гҖӮ
 
-еңЁжҢҮе®ҡзҫӨз»„дёӯжӣҙж–°дёҖжқЎе…ій”®иө„дә§зҡ„дҪҝз”ЁзӨәдҫӢиҜҰи§Ғ[жӣҙж–°зҫӨз»„е…ій”®иө„дә§](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-group-access-control#жӣҙж–°зҫӨз»„е…ій”®иө„дә§)гҖӮ
+еңЁжҢҮе®ҡзҫӨз»„дёӯжӣҙж–°дёҖжқЎе…ій”®иө„дә§зҡ„дҪҝз”ЁзӨәдҫӢиҜҰи§Ғ[жӣҙж–°зҫӨз»„е…ій”®иө„дә§](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-group-access-control#жӣҙж–°зҫӨз»„е…ій”®иө„дә§)гҖӮ
 
-еңЁжӣҙж–°еүҚпјҢйңҖзЎ®дҝқе·Іжңүе…ій”®иө„дә§пјҢеҸҜеҸӮиҖғ[жҢҮеҚ—ж–ҮжЎЈ](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-add)ж–°еўһе…ій”®иө„дә§пјҢеҗҰеҲҷе°ҶжҠӣеҮәNOT\_FOUNDй”ҷиҜҜпјҲй”ҷиҜҜз Ғ24000002пјүгҖӮ
+еңЁжӣҙж–°еүҚпјҢйңҖзЎ®дҝқе·Іжңүе…ій”®иө„дә§пјҢеҸҜеҸӮиҖғ[жҢҮеҚ—ж–ҮжЎЈ](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-add)ж–°еўһе…ій”®иө„дә§пјҢеҗҰеҲҷе°ҶжҠӣеҮәNOT\_FOUNDй”ҷиҜҜпјҲй”ҷиҜҜз Ғ24000002пјүгҖӮ
 
 жӣҙж–°еҲ«еҗҚжҳҜdemo\_aliasзҡ„е…ій”®иө„дә§пјҢе°Ҷе…ій”®иө„дә§жҳҺж–Үжӣҙж–°дёәdemo\_pwd\_newпјҢйҷ„еұһеұһжҖ§жӣҙж–°жҲҗdemo\_label\_newгҖӮ
 

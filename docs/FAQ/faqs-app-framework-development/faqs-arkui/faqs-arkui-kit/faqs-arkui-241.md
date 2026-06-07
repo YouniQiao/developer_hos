@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何让Grid组件在高度不确定的情况下，实现自适应高度"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-241
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-241
 ---
 
 

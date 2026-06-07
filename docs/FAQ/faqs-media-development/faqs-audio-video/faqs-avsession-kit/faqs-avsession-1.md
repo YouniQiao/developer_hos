@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何响应播控中心的播放模式切换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-1
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-1
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[循环模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#循环模式)
+[循环模式](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#循环模式)

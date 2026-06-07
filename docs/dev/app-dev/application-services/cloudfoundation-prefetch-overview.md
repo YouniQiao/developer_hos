@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-prefetch-overview
+original_url: /docs/dev/app-dev/application-services/cloudfoundation-prefetch-overview
 format: md
 ---
 

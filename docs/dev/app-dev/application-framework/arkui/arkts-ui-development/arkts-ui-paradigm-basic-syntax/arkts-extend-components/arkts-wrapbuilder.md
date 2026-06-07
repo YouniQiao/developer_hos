@@ -1,13 +1,13 @@
 ---
 title: "wrapBuilder：封装全局@Builder"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-wrapbuilder
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-wrapbuilder
 format: md
 ---
 
 
 当在一个struct内使用多个全局@Builder函数实现UI的不同效果时，代码维护将变得非常困难，且页面不够整洁。此时，可以使用[wrapBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-wrapbuilder)封装全局@Builder。
 
-在阅读本文档前，建议阅读：[@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)。
+在阅读本文档前，建议阅读：[@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)。
 
 ![](./img/9c75b2c9.png)
 
@@ -15,7 +15,7 @@ format: md
 
 从API version 12开始，wrapBuilder支持在元服务中使用。
 
-从API version 22开始，推荐开发者使用[mutableBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-mutablebuilder)，支持二次赋值后刷新UI。
+从API version 22开始，推荐开发者使用[mutableBuilder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-mutablebuilder)，支持二次赋值后刷新UI。
 
 当@Builder方法赋值给变量或者数组后，在UI方法中无法使用。
 
@@ -35,7 +35,7 @@ function testBuilder() {
 
 在上述代码中，builderArr是一个由@Builder方法组成的数组。在ForEach循环中取每个@Builder方法时，会出现@Builder方法在UI方法中无法使用的问题。
 
-为了解决这一问题，引入wrapBuilder作为全局@Builder封装函数。wrapBuilder返回WrappedBuilder对象，用于[全局@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#全局自定义构建函数)的赋值和传递。
+为了解决这一问题，引入wrapBuilder作为全局@Builder封装函数。wrapBuilder返回WrappedBuilder对象，用于[全局@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder#全局自定义构建函数)的赋值和传递。
 
 ## 接口说明
 
@@ -68,7 +68,7 @@ let builderArr: WrappedBuilder<[string, number]>[] = [wrapBuilder(MyBuilder)]; /
 
 ## 限制条件
 
-1. wrapBuilder方法只能传入[全局@Builder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#全局自定义构建函数)方法。
+1. wrapBuilder方法只能传入[全局@Builder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder#全局自定义构建函数)方法。
 2. WrappedBuilder对象的builder属性方法仅限在struct内部使用。
 
 ## @Builder方法赋值给变量

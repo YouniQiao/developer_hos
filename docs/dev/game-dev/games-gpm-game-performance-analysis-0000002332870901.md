@@ -1,6 +1,6 @@
 ---
 title: "游戏性能分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-game-performance-analysis-0000002332870901
+original_url: /docs/dev/game-dev/games-gpm-game-performance-analysis-0000002332870901
 has_merged_cells: true
 format: md
 ---

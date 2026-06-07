@@ -1,7 +1,7 @@
 ---
 title: "跨设备剪贴板"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distributed-pasteboard-cast
+original_url: /docs/dev/app-dev/multi-device/bpta-distributed-pasteboard-cast
 format: md
 ---
 

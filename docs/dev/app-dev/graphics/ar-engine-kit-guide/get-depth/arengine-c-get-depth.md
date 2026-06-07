@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取深度图（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-depth
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-depth/arengine-c-get-depth
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 约束与限制
 
-从5.0.5(17)开始，获取深度估计信息能力支持部分Phone、部分Tablet设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持深度估计特性（[ARENGINE\_FEATURE\_TYPE\_DEPTH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
+从5.0.5(17)开始，获取深度估计信息能力支持部分Phone、部分Tablet设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持深度估计特性（[ARENGINE\_FEATURE\_TYPE\_DEPTH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
 
 ## 接口说明
 
@@ -38,7 +38,7 @@ format: md
 
 ### 声明Native接口
 
-开发者可参考AR物体摆放章节的[声明Native接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arworld#声明native接口)。
+开发者可参考AR物体摆放章节的[声明Native接口](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-c-arworld#声明native接口)。
 
 ### 创建UI界面
 
@@ -180,11 +180,11 @@ struct ARDepthRender {
 }
 ```
 
-配置路由进行页面间跳转，页面路由配置详细可查看[组件导航(Navigation) (推荐)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)。
+配置路由进行页面间跳转，页面路由配置详细可查看[组件导航(Navigation) (推荐)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)。
 
 ### 引入AR Engine
 
-开发者可参考AR物体摆放章节的[引入AR Engine](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arworld#引入ar-engine)。
+开发者可参考AR物体摆放章节的[引入AR Engine](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-c-arworld#引入ar-engine)。
 
 ### 创建AR会话
 

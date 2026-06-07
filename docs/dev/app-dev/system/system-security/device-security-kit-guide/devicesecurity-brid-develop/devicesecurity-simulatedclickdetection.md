@@ -1,6 +1,6 @@
 ---
 title: "模拟点击检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-simulatedclickdetection
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-brid-develop/devicesecurity-simulatedclickdetection
 format: md
 ---
 

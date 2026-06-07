@@ -1,6 +1,6 @@
 ---
 title: "通用规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/general-specifications
+original_url: /docs/experience-suggestions/compatibility/system-features/general-specifications
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [应用程序包基础知识](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-overview) |
+| **说明** | [应用程序包基础知识](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-overview) |
 
 |  |  |
 | --- | --- |
@@ -21,7 +21,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [应用程序包开发与使用-HAP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hap-package) |
+| **说明** | [应用程序包开发与使用-HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package) |
 
 |  |  |
 | --- | --- |
@@ -29,7 +29,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [应用配置文件（Stage模型）-app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file) |
+| **说明** | [应用配置文件（Stage模型）-app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file) |
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [应用配置文件（Stage模型）-app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file) |
+| **说明** | [应用配置文件（Stage模型）-app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file) |
 
 |  |  |
 | --- | --- |
@@ -45,7 +45,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [应用配置文件（Stage模型）-app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file) |
+| **说明** | [应用配置文件（Stage模型）-app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file) |
 
 |  |  |
 | --- | --- |
@@ -53,7 +53,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions) |
+| **说明** | [声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions) |
 
 |  |  |
 | --- | --- |
@@ -61,7 +61,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [应用配置文件（Stage模型）-module.json5配置文件-deviceTypes标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file) |
+| **说明** | [应用配置文件（Stage模型）-module.json5配置文件-deviceTypes标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file) |
 
 |  |  |
 | --- | --- |
@@ -69,7 +69,7 @@ format: md
 | **类型** | 规则 |
 | **适用设备** | 通用 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [应用配置文件（Stage模型）-app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file) |
+| **说明** | [应用配置文件（Stage模型）-app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file) |
 
 |  |  |
 | --- | --- |

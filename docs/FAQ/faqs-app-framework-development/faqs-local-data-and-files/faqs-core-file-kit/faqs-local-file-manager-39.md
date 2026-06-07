@@ -1,7 +1,7 @@
 ---
 format: md
 title: "fileIo.write返回的长度和本身content长度不一致"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-39
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-39
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何导出手机的文件, 例如外部存储的文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-18
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-18
 ---
 
 

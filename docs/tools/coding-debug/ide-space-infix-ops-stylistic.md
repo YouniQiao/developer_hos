@@ -1,7 +1,7 @@
 ---
 title: "@hw-stylistic/space-infix-ops"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-space-infix-ops-stylistic
+original_url: /docs/tools/coding-debug/ide-space-infix-ops-stylistic
 format: md
 ---
 

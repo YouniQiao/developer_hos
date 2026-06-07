@@ -1,6 +1,6 @@
 ---
 title: "上架预检"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/publish-testing
+original_url: /docs/dev/testing/publish-testing
 format: md
 ---
 

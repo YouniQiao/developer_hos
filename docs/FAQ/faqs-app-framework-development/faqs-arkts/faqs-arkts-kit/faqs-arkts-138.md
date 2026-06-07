@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS如何定义callback函数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-138
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-138
 ---
 
 

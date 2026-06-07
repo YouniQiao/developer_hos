@@ -1,6 +1,6 @@
 ---
 title: "如何获取状态栏和导航栏高度"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-202
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-202
 format: md
 ---
 

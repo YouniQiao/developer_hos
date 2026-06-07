@@ -1,7 +1,7 @@
 ---
 title: "NegativeKeyWordDetail"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-negativekeyworddetail-0000001135626858
+original_url: /docs/monetize/promotion/marketapi-modle-negativekeyworddetail-0000001135626858
 format: md
 ---
 

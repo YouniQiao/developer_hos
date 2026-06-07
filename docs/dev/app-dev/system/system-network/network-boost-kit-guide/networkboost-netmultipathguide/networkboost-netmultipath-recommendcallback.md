@@ -1,6 +1,6 @@
 ---
 title: "多网建议监听"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/networkboost-netmultipath-recommendcallback
+original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-recommendcallback
 format: md
 ---
 

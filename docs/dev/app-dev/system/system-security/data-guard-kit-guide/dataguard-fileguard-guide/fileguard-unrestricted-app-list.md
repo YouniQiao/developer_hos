@@ -1,6 +1,6 @@
 ---
 title: "添加、删除和获取放通应用列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-unrestricted-app-list
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-unrestricted-app-list
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-faq-0000001936442685
+original_url: /docs/monetize/promotion/bp-appendix-material-rule-faq-0000001936442685
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "短时任务(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transient-task
+original_url: /docs/dev/app-dev/application-framework/background-task-kit/transient-task
 format: md
 ---
 

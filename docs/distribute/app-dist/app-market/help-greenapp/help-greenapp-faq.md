@@ -1,7 +1,7 @@
 ---
 title: "绿色应用检测认证FAQ"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/help-greenapp-faq
+original_url: /docs/distribute/app-dist/app-market/help-greenapp/help-greenapp-faq
 format: md
 ---
 

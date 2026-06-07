@@ -1,6 +1,6 @@
 ---
 title: "使用HTTP访问网络"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ![](./img/b20c46af.png)
 
-HTTP模块提供了标准的HTTP网络服务能力，Remote Communication Kit（远场通信服务）提供了场景化的网络服务能力，详见[Remote Communication Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-introduction)，应用可根据自己的需要选择使用。
+HTTP模块提供了标准的HTTP网络服务能力，Remote Communication Kit（远场通信服务）提供了场景化的网络服务能力，详见[Remote Communication Kit简介](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-introduction)，应用可根据自己的需要选择使用。
 
 当前HTTP请求支持的场景如下，以下功能对应的选项可以在HTTP请求的[HttpRequestOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http#httprequestoptions)中进行设置：
 
@@ -44,7 +44,7 @@ HTTP模块提供了标准的HTTP网络服务能力，Remote Communication Kit（
 
 ![](./img/7e6b2315.png)
 
-在本文档的示例中，通过this.context来获取UIAbilityContext，其中this代表继承自UIAbility的UIAbility实例。如需在页面中使用UIAbilityContext提供的能力，请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+在本文档的示例中，通过this.context来获取UIAbilityContext，其中this代表继承自UIAbility的UIAbility实例。如需在页面中使用UIAbilityContext提供的能力，请参见[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
 完整示例代码见：[Http\_case](https://gitcode.com/openharmony/applications_app_samples/tree/master/code/DocsSample/NetWork_Kit/NetWorkKit_Datatransmission/HTTP_case)
 
@@ -674,7 +674,7 @@ struct Index {
 
 **配置参考**
 
-1. 配置应用信任证书（具体配置方法可参考[网络连接安全配置](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-network-ca-security#section5454123841911)）。
+1. 配置应用信任证书（具体配置方法可参考[网络连接安全配置](/docs/security/network-ca-security#section5454123841911)）。
 2. 配置请求级CA证书：
    * 通过[httprequestoptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-http#httprequestoptions)的caPath和caData字段配置HTTPS请求CA证书。
    * 通过[websocketrequestoptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-websocket#websocketrequestoptions)的caPath字段配置WebSocket请求CA证书。
@@ -733,7 +733,7 @@ openssl dgst -sha256 -binary www.example.com.pubkey.der | openssl base64
 
 **JSON配置文件示例**
 
-预置应用级证书的配置例子如下（具体配置路径可参考[网络连接安全配置](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-network-ca-security#section5454123841911)）：
+预置应用级证书的配置例子如下（具体配置路径可参考[网络连接安全配置](/docs/security/network-ca-security#section5454123841911)）：
 
 ```
 {
@@ -841,7 +841,7 @@ openssl dgst -sha256 -binary www.example.com.pubkey.der | openssl base64
 
 ### 配置不信任用户安装的CA证书
 
-系统默认信任系统预置的CA证书和用户安装的CA证书，可配置不信任用户安装的CA证书提升安全性。配置不信任用户安装的CA证书可以在src/main/resources/base/profile/network\_config.json进行配置，更多网络连接安全相关的配置可以参考[网络连接安全配置](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-network-ca-security#section5454123841911)。
+系统默认信任系统预置的CA证书和用户安装的CA证书，可配置不信任用户安装的CA证书提升安全性。配置不信任用户安装的CA证书可以在src/main/resources/base/profile/network\_config.json进行配置，更多网络连接安全相关的配置可以参考[网络连接安全配置](/docs/security/network-ca-security#section5454123841911)。
 
 ```
 {
@@ -855,7 +855,7 @@ openssl dgst -sha256 -binary www.example.com.pubkey.der | openssl base64
 
 ### 明文HTTP访问权限配置说明
 
-该配置用于控制HTTP请求是否允许以明文形式传输。以下为明文HTTP访问权限的配置示例（含应用、组件及域名级配置），以及各字段的详细含义说明。更多网络连接安全相关的配置可以参考[网络连接安全配置](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-network-ca-security#section5454123841911)。
+该配置用于控制HTTP请求是否允许以明文形式传输。以下为明文HTTP访问权限的配置示例（含应用、组件及域名级配置），以及各字段的详细含义说明。更多网络连接安全相关的配置可以参考[网络连接安全配置](/docs/security/network-ca-security#section5454123841911)。
 
 ![](./img/d4d3fafc.png)
 

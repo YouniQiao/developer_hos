@@ -1,6 +1,6 @@
 ---
 title: "editor"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-editor
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-editor
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 编辑器导出内容支持带标签的html和纯文本的text，编辑器内部采用delta格式进行存储。通过setContents接口设置内容时，解析插入的html可能会由于一些非法标签导致解析错误，建议开发者在ASCF元服务内使用时，通过delta进行插入。
 
-相关API：[EditorContext](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-rich-text)
+相关API：[EditorContext](/docs/dev/atomic-dev/ascf/apis-media/apis-rich-text)
 
 **起始版本：** 1.0.17
 
@@ -19,7 +19,7 @@ format: md
 | --- | --- | --- | --- | --- |
 | read-only | boolean | false | 否 | 设置编辑器为只读 |
 | placeholder | string | - | 否 | 编辑器内容为空时占位符。 |
-| enable-formats | Array.&lt;string&gt; | 所有格式 | 否 | 编辑器允许的名单内的格式。  例如enable-formats=['bold','italic']，只有这两种格式会生效。如果enable-formats属性不设置，所有支持的格式都生效。支持的格式：参考[EditorContext.format](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-rich-text#editorcontextformat)支持的类型 |
+| enable-formats | Array.&lt;string&gt; | 所有格式 | 否 | 编辑器允许的名单内的格式。  例如enable-formats=['bold','italic']，只有这两种格式会生效。如果enable-formats属性不设置，所有支持的格式都生效。支持的格式：参考[EditorContext.format](/docs/dev/atomic-dev/ascf/apis-media/apis-rich-text#editorcontextformat)支持的类型 |
 | enterkeyhint | string | enter | 否 | 点击编辑器拉起输入法后，输入法键盘右下角文字类型，有效值如下（不同机型不同输入法对该属性支持程度不一致）：  send：输入法键盘的右下角文字为“发送”。  search：输入法键盘的右下角文字为“搜索”。  next：输入法键盘的右下角文字为“下一步”。  previous：输入法键盘的右下角文字为“上一步“。  go：输入法键盘的右下角文字为“开始”。  done：输入法键盘的右下角文字为“完成”。  enter：输入法键盘的右下角文字为“换行”。 |
 | confirm-hold | boolean | true | 否 | 点击键盘回车键时是否保持键盘不收起 |
 | bindready | eventhandle | - | 否 | 编辑器初始化完成时触发。 |

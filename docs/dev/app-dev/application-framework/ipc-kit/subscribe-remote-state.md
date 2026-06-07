@@ -1,6 +1,6 @@
 ---
 title: "远端状态订阅开发实例"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-remote-state
+original_url: /docs/dev/app-dev/application-framework/ipc-kit/subscribe-remote-state
 format: md
 ---
 
@@ -166,7 +166,7 @@ class MyDeathRecipient implements rpc.DeathRecipient {
 let deathRecipient = new MyDeathRecipient();
 ```
 
-获取[允许多设备协同的权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissiondistributed_datasync)，在组网的情况下获取到对端的设备ID（组网场景下对应设备的唯一网络标识符，可以使用distributedDeviceManager获取目标设备的NetworkId）后连接服务，获取代理对象并注册死亡监听。当代理对象与服务端的通信结束后，在断开连接时，移除死亡监听。
+获取[允许多设备协同的权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user#ohospermissiondistributed_datasync)，在组网的情况下获取到对端的设备ID（组网场景下对应设备的唯一网络标识符，可以使用distributedDeviceManager获取目标设备的NetworkId）后连接服务，获取代理对象并注册死亡监听。当代理对象与服务端的通信结束后，在断开连接时，移除死亡监听。
 
 ```
 // 获取权限

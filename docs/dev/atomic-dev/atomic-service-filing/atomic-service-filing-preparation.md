@@ -1,6 +1,6 @@
 ---
 title: "核准（备案）准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-filing-preparation
+original_url: /docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-preparation
 format: md
 ---
 

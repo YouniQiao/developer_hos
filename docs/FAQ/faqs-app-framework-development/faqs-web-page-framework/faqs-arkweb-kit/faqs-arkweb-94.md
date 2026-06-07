@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Web页面切换软键盘意外弹出"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-94
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-94
 ---
 
 
@@ -15,4 +15,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[Web组件焦点管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-focus)
+[Web组件焦点管理](/docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-focus)

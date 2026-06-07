@@ -1,7 +1,7 @@
 ---
 title: "违规及侵权处理措施"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/violation-and-infringement-pandling-process-0000001364211453
+original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-pandling-process-0000001364211453
 format: md
 ---
 

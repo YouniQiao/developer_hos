@@ -1,10 +1,10 @@
 ---
 title: "语法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax
 format: md
 ---
 
 
-* **[HML语法参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-hml)**
-* **[CSS语法参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-css)**
-* **[JS语法参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-js)**
+* **[HML语法参考](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax/js-framework-syntax-hml)**
+* **[CSS语法参考](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax/js-framework-syntax-css)**
+* **[JS语法参考](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax/js-framework-syntax-js)**

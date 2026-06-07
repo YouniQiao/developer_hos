@@ -1,7 +1,7 @@
 ---
 title: "智慧分发SDK合规使用指南"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/compliance-guidelines-0000002485548586
+original_url: /docs/distribute/xiaoyi/terms_conditions-0000001193795972/compliance-guidelines-0000002485548586
 format: md
 ---
 

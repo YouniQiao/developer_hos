@@ -1,6 +1,6 @@
 ---
 title: "canvas"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-canvas
+original_url: /docs/dev/atomic-dev/ascf/components-canvas-components/components-canvas
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 **起始版本：** 1.0.0
 
-**关联文档：** [has.createCanvasContext](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-canvas#hascreatecanvascontext)
+**关联文档：** [has.createCanvasContext](/docs/dev/atomic-dev/ascf/apis/apis-canvas#hascreatecanvascontext)
 
 ## 约束与限制
 

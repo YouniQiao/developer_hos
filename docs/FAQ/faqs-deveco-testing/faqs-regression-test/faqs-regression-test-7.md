@@ -1,7 +1,7 @@
 ---
 format: md
 title: "生成回归测试包时报错提示“xxx.json中py_file字段为空，请检查该文件是否填写正确!”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-7
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-7
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "码图生成"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-generate
+original_url: /docs/dev/atomic-dev/atomic-scan-generate/atomic-scan-generate
 format: md
 ---
 

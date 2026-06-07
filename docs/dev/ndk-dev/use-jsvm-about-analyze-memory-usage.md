@@ -1,6 +1,6 @@
 ---
 title: "使用DevTools进行网页内存分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-analyze-memory-usage
+original_url: /docs/dev/ndk-dev/use-jsvm-about-analyze-memory-usage
 format: md
 ---
 

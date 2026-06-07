@@ -1,6 +1,6 @@
 ---
 title: "设置无主按钮的组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-actionbar-without-master-button
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-actionbar/ui-design-actionbar-without-master-button
 format: md
 ---
 

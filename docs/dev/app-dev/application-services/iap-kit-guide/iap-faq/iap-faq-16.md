@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "在沙盒环境进行测试，但是实际需要真实支付是为什么？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-16
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-16
 format: md
 ---
 

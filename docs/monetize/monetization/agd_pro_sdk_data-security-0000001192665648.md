@@ -1,7 +1,7 @@
 ---
 title: "SDK隐私声明"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_data-security-0000001192665648
+original_url: /docs/monetize/monetization/agd_pro_sdk_data-security-0000001192665648
 format: md
 ---
 

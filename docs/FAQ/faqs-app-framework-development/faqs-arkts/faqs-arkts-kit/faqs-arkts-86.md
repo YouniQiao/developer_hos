@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何将Map转换为JSON字符串"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-86
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-86
 ---
 
 

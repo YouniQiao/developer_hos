@@ -1,7 +1,7 @@
 ---
 format: md
 title: "三方应用如何选择音频流类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-10
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-10
 ---
 
 
@@ -15,4 +15,4 @@ WebView策略：目前不支持主动设置流类型，由WebView根据是否有
 
 **参考链接**
 
-[使用合适的音频流类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-right-streamusage-and-sourcetype)
+[使用合适的音频流类型](/docs/dev/app-dev/media/audio-kit/using-right-streamusage-and-sourcetype)

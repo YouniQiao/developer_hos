@@ -1,6 +1,6 @@
 ---
 title: "如何判断组件遮挡情况，并主动隐藏被遮挡的组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-485
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-485
 format: md
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: "资源泄漏类问题案例"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-stability-leak
+original_url: /docs/quality/scenario-stability-leak
 ---
 
 # 资源泄漏类问题案例
 
-本文按照[资源泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way)的流程展开，以实际案例的形式指导开发者如何从泄漏维测日志出发，分析、定位具体泄漏点。开发者可阅读[资源泄漏检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines)了解系统检测资源泄漏问题的机制与日志规格。
+本文按照[资源泄漏分析方法](/docs/quality/stability-leak-way)的流程展开，以实际案例的形式指导开发者如何从泄漏维测日志出发，分析、定位具体泄漏点。开发者可阅读[资源泄漏检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines)了解系统检测资源泄漏问题的机制与日志规格。
 
 ## 内存泄漏-JS内存泄漏类案例
 
@@ -25,7 +25,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-s
 
 ### 分析思路
 
-详见[JS泄漏问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section1183695881312)。
+详见[JS泄漏问题分析方法](/docs/quality/stability-leak-way#section1183695881312)。
 
 ### 分析步骤
 
@@ -72,7 +72,7 @@ void DemoCase(int length)
 
 ### 分析思路
 
-详见[Native泄漏问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section1658571616574)。
+详见[Native泄漏问题分析方法](/docs/quality/stability-leak-way#section1658571616574)。
 
 ### 分析步骤
 
@@ -82,7 +82,7 @@ void DemoCase(int length)
 2. 分析smaps日志，发现本例当前应用jemalloc大小2.6GB（Pss 1.5GB + SwapPss 1.1GB），占总内存的90%+，因此怀疑堆内存泄漏。
 
    ![](./img/5eae06b2.png)
-3. 按照[资源泄漏类问题分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way)基于NMD和profiler继续分析：
+3. 按照[资源泄漏类问题分析方法](/docs/quality/stability-leak-way)基于NMD和profiler继续分析：
 
    观察NMD信息发现，size=12582912字节的内存块占用最多（allocated值最大），优先怀疑该内存块。
 
@@ -112,7 +112,7 @@ void DemoCase(int length)
 
 ### 分析思路
 
-详见[ION泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section5493141412410)。
+详见[ION泄漏分析方法](/docs/quality/stability-leak-way#section5493141412410)。
 
 ### 分析步骤
 
@@ -134,7 +134,7 @@ void DemoCase(int length)
 
 ### 建议与总结
 
-详见[ashmem/ION泄漏问题优化建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-opt#section12687113513352)。
+详见[ashmem/ION泄漏问题优化建议](/docs/quality/stability-leak-opt#section12687113513352)。
 
 ## 句柄泄漏-文件句柄泄漏案例
 
@@ -148,7 +148,7 @@ void DemoCase(int length)
 
 ### 分析思路
 
-详见[句柄泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section9594173320417)。
+详见[句柄泄漏分析方法](/docs/quality/stability-leak-way#section9594173320417)。
 
 ### 分析步骤
 
@@ -219,7 +219,7 @@ END
 
 ### 建议与总结
 
-详见[句柄泄漏问题优化建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-opt#section7375193133214)。
+详见[句柄泄漏问题优化建议](/docs/quality/stability-leak-opt#section7375193133214)。
 
 ## 线程泄漏案例
 
@@ -233,7 +233,7 @@ END
 
 ### 分析思路
 
-详见[线程泄漏分析方法](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-way#section282262074411)。
+详见[线程泄漏分析方法](/docs/quality/stability-leak-way#section282262074411)。
 
 ### 分析步骤
 
@@ -271,4 +271,4 @@ Top 10 Thread Name:
 
 ### 建议与总结
 
-详见[线程泄漏问题优化建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-leak-opt#section10137113593613)。
+详见[线程泄漏问题优化建议](/docs/quality/stability-leak-opt#section10137113593613)。

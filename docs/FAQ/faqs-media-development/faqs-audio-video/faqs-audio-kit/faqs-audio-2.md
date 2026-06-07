@@ -1,7 +1,7 @@
 ---
 format: md
 title: "创建多个视频组件无法播放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-2
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-2
 ---
 
 

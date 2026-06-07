@@ -1,6 +1,6 @@
 ---
 title: "高负载场景分帧渲染"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-dispose-highly-loaded-component-render
+original_url: /docs/quality/dispose-highly-loaded-component-render
 ---
 
 # 高负载场景分帧渲染
@@ -23,8 +23,8 @@ original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-d
 
 在高负载场景下使用分帧渲染的关键操作是把数据拆分到每一帧中加载，但这个过程中加载新的数据时可能会将已有数据再次绘制，因此需要搭配合理的页面布局来避免重绘。可以通过if或ForEach两种方法来实现布局，两种方法的更新机制如下：
 
-* [if更新机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse#更新机制)是根据状态判断条件，如果分支没有变化，不会对条件渲染语句进行更新。
-* [ForEach非首次渲染](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach#非首次渲染)会检查新生成的键值是否在上次渲染中已经存在。如果键值不存在，则会创建一个新的组件；如果键值存在，则不会创建新的组件，而是直接渲染该键值所对应的组件。
+* [if更新机制](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse#更新机制)是根据状态判断条件，如果分支没有变化，不会对条件渲染语句进行更新。
+* [ForEach非首次渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach#非首次渲染)会检查新生成的键值是否在上次渲染中已经存在。如果键值不存在，则会创建一个新的组件；如果键值存在，则不会创建新的组件，而是直接渲染该键值所对应的组件。
 
 因此在分帧逐步加载数据时使用上述两种方法不会引起重绘。并且在页面布局时可以给分帧渲染的外部容器组件设置宽高，这样组件本身不会触发重新进行Measure的过程，对组件的宽高不会重新测算，避免因外部容器大小改变引起重绘，详情可参考[合理使用布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-layout-performance)。
 
@@ -344,7 +344,7 @@ aboutToReuse(params: Record<string, Object>): void {
 | 渲染帧率 | 113fps | 120fps |
 | 丢帧率 | 5.8% | 0% |
 
-在使用displaySync时不建议将ExpectedFrameRateRange中的expected、min、max都设置为120，否则会干扰系统的可变帧率机制运行，产生不必要的负载，进而影响到整机的性能和功耗，详情请参考[场景策略建议](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ltpo-description#section12516101118180)。
+在使用displaySync时不建议将ExpectedFrameRateRange中的expected、min、max都设置为120，否则会干扰系统的可变帧率机制运行，产生不必要的负载，进而影响到整机的性能和功耗，详情请参考[场景策略建议](/docs/quality/ltpo-description#section12516101118180)。
 
 ## 总结
 

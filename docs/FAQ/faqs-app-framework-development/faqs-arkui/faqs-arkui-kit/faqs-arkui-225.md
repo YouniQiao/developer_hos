@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Canvas绘制内容如何动态更新"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-225
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-225
 ---
 
 
@@ -47,4 +47,4 @@ struct CanvasContentUpdate {
 
 参考链接
 
-[使用画布绘制自定义图形 (Canvas)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-drawing-customization-on-canvas)
+[使用画布绘制自定义图形 (Canvas)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-draw/arkts-drawing-customization-on-canvas)

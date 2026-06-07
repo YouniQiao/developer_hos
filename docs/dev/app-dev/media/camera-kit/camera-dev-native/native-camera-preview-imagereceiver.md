@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "预览流二次处理(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-preview-imagereceiver
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview-imagereceiver
 format: md
 ---
 
@@ -54,7 +54,7 @@ format: md
        libnative_buffer.so
    )
    ```
-3. 初始化图片接收器[ImageReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-receiver-c)实例，获取SurfaceId。
+3. 初始化图片接收器[ImageReceiver](/docs/dev/app-dev/media/image-kit/image-native/image-receiving-c/image-receiver-c)实例，获取SurfaceId。
 
    通过image的OH\_ImageReceiverNative\_Create方法创建OH\_ImageReceiverNative实例，再通过实例的OH\_ImageReceiverNative\_GetReceivingSurfaceId方法获取SurfaceId。
 
@@ -110,8 +110,8 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/NDKPreviewImageSample/entry/src/main/cpp/napi_init.cpp#L177-L223" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：napi_init.cpp</a></div>
 
-4. 通过上一步获取到的SurfaceId创建预览流（在创建预览流之前需要将SurfaceId类型转成char \*），参考[预览(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-preview)步骤4。
-5. 创建会话，使能会话，参考[会话管理(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)。
+4. 通过上一步获取到的SurfaceId创建预览流（在创建预览流之前需要将SurfaceId类型转成char \*），参考[预览(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview)步骤4。
+5. 创建会话，使能会话，参考[会话管理(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)。
 6. 注册ImageReceiver图片接收器的回调，监听获取每帧上报图像内容。
 
    ```

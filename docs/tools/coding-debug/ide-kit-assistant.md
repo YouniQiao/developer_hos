@@ -1,7 +1,7 @@
 ---
 title: "快速插入场景化代码片段"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-kit-assistant
+original_url: /docs/tools/coding-debug/ide-kit-assistant
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "运行调试元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-running-debugging
+original_url: /docs/dev/atomic-dev/atomic-running-debugging/atomic-running-debugging
 format: md
 ---
 

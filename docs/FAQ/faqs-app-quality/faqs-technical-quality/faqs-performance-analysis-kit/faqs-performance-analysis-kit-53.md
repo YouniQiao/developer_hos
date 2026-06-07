@@ -1,7 +1,7 @@
 ---
 format: md
 title: "是否支持通过HDC命令安装.app文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-53
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-53
 ---
 
 

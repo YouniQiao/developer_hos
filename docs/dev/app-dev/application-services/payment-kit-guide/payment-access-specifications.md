@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接入规范学习"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-access-specifications
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-access-specifications
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 1. 涉及支付公司名称，请统一使用：**花瓣支付（深圳）有限公司**。
 2. 涉及支付方式说明（如涉及根据系统语言环境做国际化，也请对该支付方式说明一并做处理），请统一使用：**华为支付（中文）**、**Huawei Pay（英文）**。
-3. 华为支付提供了支付图标设计规范，以此保证用户在使用华为支付时拥有一致的支付视觉体验，有关设计规范请参阅[华为支付设计规范](https://developer.huawei.com/consumer/cn/doc/design-guides/huaweipay-0000002054558905)。
+3. 华为支付提供了支付图标设计规范，以此保证用户在使用华为支付时拥有一致的支付视觉体验，有关设计规范请参阅[华为支付设计规范](/docs/design/system-features/capabilities/huawei-pay)。
 4. 华为支付logo资源可[在此下载](https://developer.huawei.com/consumer/cn/design/resource/)。
 
 ## 支付体验要求

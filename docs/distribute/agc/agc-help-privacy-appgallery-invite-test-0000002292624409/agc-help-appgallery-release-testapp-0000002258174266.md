@@ -1,6 +1,6 @@
 ---
 title: "创建并发布测试版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-appgallery-release-testapp-0000002258174266
+original_url: /docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-release-testapp-0000002258174266
 format: md
 ---
 
@@ -44,7 +44,7 @@ format: md
 
    | 参数 | 说明 |
    | --- | --- |
-   | 发布版本 | 点击“版本选取”，选择您之前在“软件包管理”菜单上传的软件包，点击“选取”。一个测试版本只允许选取一个软件包。具体操作可参考[选择待发布软件包](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-choose-pkg-0000002278981434)。 |
+   | 发布版本 | 点击“版本选取”，选择您之前在“软件包管理”菜单上传的软件包，点击“选取”。一个测试版本只允许选取一个软件包。具体操作可参考[选择待发布软件包](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-choose-pkg-0000002278981434)。 |
    | 版本描述 | 创建测试版本时自定义的版本描述，支持修改。不超过30个字符。 |
 5. 配置测试信息。
 
@@ -55,7 +55,7 @@ format: md
    | 参数 | 说明 |
    | --- | --- |
    | 语言 | 默认显示创建应用时设置的默认语言。如需为当前应用添加其他语言，点击“管理语言列表”，在“语言选择”弹窗中勾选语言，点击“确认”。 |
-   | 应用图标 | 上传应用图标，各设备类型的图标规范请参见[素材规范](https://developer.huawei.com/consumer/cn/doc/app/agc-help-app-visual-asset-spec-0000002277607976)。 |
+   | 应用图标 | 上传应用图标，各设备类型的图标规范请参见[素材规范](/docs/distribute/agc/agc-help-appendix-0000002312305161/agc-help-app-visual-asset-spec-0000002277607976)。 |
    | 应用名称 | 创建应用时填写的名称，支持更改。 |
    | 应用介绍 | 简单描述该应用的功能、产品定位等，不超过8000字符。 |
    | 测试说明 | 介绍此测试版本的功能和特性，不超过1000字符。  可在此预留您的联系方式，用于收集用户测试过程中发现的相关问题。 |

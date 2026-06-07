@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-preparations
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-preparations
 format: md
 ---
 
 
-* **[学习Push Kit接入规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-specification)**
-* **[开通推送服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-config-setting)**
-* **[申请推送场景化消息权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right)**
-* **[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)**
+* **[学习Push Kit接入规范](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-specification)**
+* **[开通推送服务](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-config-setting)**
+* **[申请推送场景化消息权益](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right)**
+* **[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)**

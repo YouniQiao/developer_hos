@@ -1,6 +1,6 @@
 ---
 title: "查看免费配额的使用情况"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-check-quota-0000002278002937
+original_url: /docs/distribute/agc/agc-help-service-price-0000002247180512/agc-help-check-quota-0000002278002937
 format: md
 ---
 

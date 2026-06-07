@@ -1,6 +1,6 @@
 ---
 title: "更新应用信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-update-0000002271413697
+original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-update-0000002271413697
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
 
    ![](../img/agc-help-maintain-update-0000002271413697_3.png)
 
-   此处务必选择在架软件包，如果选择上传与在架不同的软件包，即使versionCode没有变化也不支持同版本升级，必须[升级应用版本](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-upgrade-0000002236494386#section166011045192419)。
+   此处务必选择在架软件包，如果选择上传与在架不同的软件包，即使versionCode没有变化也不支持同版本升级，必须[升级应用版本](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-upgrade-0000002236494386#section166011045192419)。
 
    ![](../img/agc-help-maintain-update-0000002271413697_4.png "点击放大")
 

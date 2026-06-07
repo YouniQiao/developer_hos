@@ -1,6 +1,6 @@
 ---
 title: "如何使用ErrorManager捕获异常"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-60
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-60
 format: md
 ---
 

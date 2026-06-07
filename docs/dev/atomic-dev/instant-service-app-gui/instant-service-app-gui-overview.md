@@ -1,6 +1,6 @@
 ---
 title: "概览"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-gui-overview
+original_url: /docs/dev/atomic-dev/instant-service-app-gui/instant-service-app-gui-overview
 format: md
 ---
 

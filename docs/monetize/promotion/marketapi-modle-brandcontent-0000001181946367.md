@@ -1,7 +1,7 @@
 ---
 title: "BrandContent"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-brandcontent-0000001181946367
+original_url: /docs/monetize/promotion/marketapi-modle-brandcontent-0000001181946367
 format: md
 ---
 

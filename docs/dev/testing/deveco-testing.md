@@ -1,14 +1,14 @@
 ---
 title: "DevEco Testing"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing
+original_url: /docs/dev/testing/deveco-testing
 format: md
 ---
 
 
-* **[快速上手](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/get-familiar)**
-* **[专项测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing)**
-* **[上架预检](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/publish-testing)**
-* **[探索测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/exploratory-testing)**
-* **[回归测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/regression-test)**
-* **[实用工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/tool)**
-* **[常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/faq)**
+* **[快速上手](/docs/dev/testing/get-familiar)**
+* **[专项测试](/docs/dev/testing/specialized-testing)**
+* **[上架预检](/docs/dev/testing/publish-testing)**
+* **[探索测试](/docs/dev/testing/exploratory-testing)**
+* **[回归测试](/docs/dev/testing/regression-test)**
+* **[实用工具](/docs/dev/testing/tool)**
+* **[常见问题](/docs/dev/testing/faq)**

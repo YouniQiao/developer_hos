@@ -1,7 +1,7 @@
 ---
 title: "常见接续最佳实践"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-continue-progess
+original_url: /docs/dev/app-dev/multi-device/bpta-application-continue-progess
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ## 实现原理
 
-接续过程底层依赖分布式框架和软总线，开发者只需要启用接续、保存数据和恢复数据，具体运作机制可参考：[运作机制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-continue-cast#section1218874218264)。
+接续过程底层依赖分布式框架和软总线，开发者只需要启用接续、保存数据和恢复数据，具体运作机制可参考：[运作机制](/docs/dev/app-dev/multi-device/bpta-continue-cast#section1218874218264)。
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/f4/v3/yP8kAGQDQGKp6uhkQRjvpw/zh-cn_image_0000002314661150.png?HW-CC-KV=V1&HW-CC-Date=20260606T074202Z&HW-CC-Expire=86400&HW-CC-Sign=0BBF2944BDE6D784F4DF8292FBF9A8993EF4283DA16398485DBAB30432E8F9F2 "点击放大")
 

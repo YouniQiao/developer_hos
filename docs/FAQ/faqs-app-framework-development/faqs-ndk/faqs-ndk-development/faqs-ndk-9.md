@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何修改代码工程所支持的C++语言版本"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-9
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-9
 ---
 
 

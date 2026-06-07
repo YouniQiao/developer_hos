@@ -1,6 +1,6 @@
 ---
 title: "如何反馈位置信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-position-info-feedback-0000002349181500
+original_url: /docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-position-info-feedback-0000002349181500
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
 
   ![](../img/agc-help-position-info-feedback-0000002349181500_2.png)
 
-  请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)获取Developer ID和APP ID。
+  请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)获取Developer ID和APP ID。
 * **邮件内容**
 
   需包含以下信息，反馈模板：[线下反馈模板.xlsx](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260427153122.29341366844388876812446070753209%3A20260531165522%3A2800%3AB78C1DA8257E27DC6575809870D8C0C5179A4B415EB53D90E2C6B37DFF098F18.xlsx?needInitFileName=true)。

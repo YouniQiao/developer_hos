@@ -1,7 +1,7 @@
 ---
 format: md
 title: "有无api判断web组件是否与controller绑定"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-81
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-81
 ---
 
 

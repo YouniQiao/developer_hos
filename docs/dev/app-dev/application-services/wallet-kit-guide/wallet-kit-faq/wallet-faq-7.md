@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "用户领取了同一商户的多张卡券，但是打开华为钱包后只显示一张卡券"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-faq-7
+original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq/wallet-faq-7
 format: md
 ---
 

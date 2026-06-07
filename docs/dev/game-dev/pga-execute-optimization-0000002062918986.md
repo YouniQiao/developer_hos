@@ -1,6 +1,6 @@
 ---
 title: "执行PGA优化"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pga-execute-optimization-0000002062918986
+original_url: /docs/dev/game-dev/pga-execute-optimization-0000002062918986
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "E类加密数据库的使用 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/encrypted-estore-guidelines
+original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/encrypted-estore-guidelines
 format: md
 ---
 

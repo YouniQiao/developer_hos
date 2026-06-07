@@ -1,7 +1,7 @@
 ---
 title: "监测链接跟踪"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads_gongjujiance_yy-0000001458784668
+original_url: /docs/monetize/promotion/ads_gongjujiance_yy-0000001458784668
 format: md
 ---
 

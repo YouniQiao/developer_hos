@@ -1,6 +1,6 @@
 ---
 title: "配置应用内商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-goods-0000002367699526
+original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-goods-0000002367699526
 format: md
 ---
 
@@ -20,12 +20,12 @@ format: md
 
 ![](../img/agc-help-release-game-goods-0000002367699526_0.png)
 
-* 若在已通过审核的数字商品类型下追加新的数字商品，可以单独在商品管理页面提交审核，具体操作请参见[提交已生效类型的数字商品](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-effective-digital-products-for-review-0000002320646005)。
+* 若在已通过审核的数字商品类型下追加新的数字商品，可以单独在商品管理页面提交审核，具体操作请参见[提交已生效类型的数字商品](/docs/dev/game-dev/games-center-effective-digital-products-for-review-0000002320646005)。
 * 若有多个商品共用计费点的情况（按档位计费），需要进行备注。
 
 #### 前提条件
 
-已根据[创建数字商品](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-create-digital-products-0000002286076724)，提前追加新类型的数字商品，且数字商品状态为“待审核”。
+已根据[创建数字商品](/docs/dev/game-dev/games-center-create-digital-products-0000002286076724)，提前追加新类型的数字商品，且数字商品状态为“待审核”。
 
 #### 操作步骤
 

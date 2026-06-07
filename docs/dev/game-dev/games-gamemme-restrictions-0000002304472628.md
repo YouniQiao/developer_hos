@@ -1,6 +1,6 @@
 ---
 title: "使用限制"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-restrictions-0000002304472628
+original_url: /docs/dev/game-dev/games-gamemme-restrictions-0000002304472628
 format: md
 ---
 

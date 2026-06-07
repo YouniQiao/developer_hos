@@ -1,6 +1,6 @@
 ---
 title: "使用Web组件的广告过滤功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-adsblock
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-adsblock
 format: md
 ---
 

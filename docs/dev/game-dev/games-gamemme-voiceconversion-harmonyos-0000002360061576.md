@@ -1,6 +1,6 @@
 ---
 title: "语音变声"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voiceconversion-harmonyos-0000002360061576
+original_url: /docs/dev/game-dev/games-gamemme-voiceconversion-harmonyos-0000002360061576
 format: md
 ---
 
@@ -9,11 +9,11 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体基础SDK、实时语音和变声模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_li16904125719267)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
-* 您已[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
+* 您已[集成游戏多媒体基础SDK、实时语音和变声模块](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_li16904125719267)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-harmonyos-0000002304472616#section1093713161034)。
+* 您已[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)。
 
-* 如需测试变声效果，需[开启麦克风](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enablemic-harmonyos-0000002393621541)。
+* 如需测试变声效果，需[开启麦克风](/docs/dev/game-dev/games-gamemme-enablemic-harmonyos-0000002393621541)。
 
 ## 开发步骤
 

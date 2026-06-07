@@ -1,6 +1,6 @@
 ---
 title: "应用退后台禁止使用传感器问题分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-background-sensors-baned-analysis
+original_url: /docs/quality/background-sensors-baned-analysis
 format: md
 ---
 
@@ -18,8 +18,8 @@ format: md
 ### 应用开发调试阶段自检
 
 1. 环境准备：本地配置好日志抓取和日志解析工具
-   * hilogtool：https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool
-   * hilog：https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog
+   * hilogtool：/docs/dev/app-dev/system/hilog-tool
+   * hilog：/docs/dev/app-dev/system/hilog
 2. 判断应用内所有界面退后台后，是否存在传感器没有关闭的行为
    * 方法一：通过DevEco 软件日志栏中实时过滤：(bundleName).\*open the sensor|(bundleName).\*close the sensor
 

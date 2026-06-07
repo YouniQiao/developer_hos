@@ -1,6 +1,6 @@
 ---
 title: "应用布局适配智慧多窗"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-layout-adapt
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-layout-adapt
 format: md
 ---
 

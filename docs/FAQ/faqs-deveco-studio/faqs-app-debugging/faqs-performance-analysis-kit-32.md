@@ -1,7 +1,7 @@
 ---
 format: md
 title: "真机设备连接后，执行“hdc list targets”命令结果为“[Empty]”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-32
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-performance-analysis-kit-32
 ---
 
 

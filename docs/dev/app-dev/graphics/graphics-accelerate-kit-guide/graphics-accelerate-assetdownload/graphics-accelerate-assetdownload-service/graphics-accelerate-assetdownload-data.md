@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "查看资源包分发数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-data
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-data
 format: md
 ---
 

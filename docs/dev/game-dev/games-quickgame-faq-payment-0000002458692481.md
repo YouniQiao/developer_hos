@@ -1,6 +1,6 @@
 ---
 title: "支付"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-payment-0000002458692481
+original_url: /docs/dev/game-dev/games-quickgame-faq-payment-0000002458692481
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ### 快游戏的支付是否可以使用快应用的支付3.0接口？
 
-请参见[应用内支付服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-iap-consumable-0000002317894836)。
+请参见[应用内支付服务](/docs/dev/game-dev/games-quickgame-runtime-iap-consumable-0000002317894836)。
 
 ## 支付报错或失败
 
@@ -200,7 +200,7 @@ public class PayVerify {
 
 ### 快游戏支付是否支持沙盒测试？
 
-支持。请参见[沙盒测试](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-iap-public-0000002317894840)。
+支持。请参见[沙盒测试](/docs/dev/game-dev/games-quickgame-runtime-iap-public-0000002317894840)。
 
 ### 有笔订单华为方查询是超时的，但游戏侧确认已经成功进账，该如何处理？
 

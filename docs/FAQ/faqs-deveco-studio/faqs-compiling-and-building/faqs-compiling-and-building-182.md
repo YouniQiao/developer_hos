@@ -1,6 +1,6 @@
 ---
 title: "推包调试报错“Error message:cannot find record '&XXX/src/main/ets/YYY&x.y.z', please check the request path.'ZZZ.abc'.”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-182
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-182
 format: md
 ---
 
@@ -33,7 +33,7 @@ format: md
 
 **场景三**
 
-将HSP包转成HAR包后，未删除"packageType"，导致按字节码进行打包的时候未解析其相关依赖，请参考[HSP转HAR指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hsp-to-har#hsp转har的操作步骤)。
+将HSP包转成HAR包后，未删除"packageType"，导致按字节码进行打包的时候未解析其相关依赖，请参考[HSP转HAR指导](/docs/dev/app-dev/getting-started/dev-fundamentals/hsp-to-har#hsp转har的操作步骤)。
 
 **解决措施**
 

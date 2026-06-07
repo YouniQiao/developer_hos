@@ -1,7 +1,7 @@
 ---
 title: "内容信息规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/content-information-test-0000001057563280
+original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/content-information-test-0000001057563280
 format: md
 ---
 

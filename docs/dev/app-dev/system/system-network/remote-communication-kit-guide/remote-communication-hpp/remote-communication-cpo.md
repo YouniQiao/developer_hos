@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过配置Configuration优化传输性能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-cpo
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cpo
 format: md
 ---
 
@@ -57,7 +57,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 ## DNS阶段
 
-应用可[定制DNS](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-customdnsconfig)请求规则，如定制DNS服务器、重写DNS解析函数，从而获取最佳的DNS性能体验。
+应用可[定制DNS](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customdnsconfig)请求规则，如定制DNS服务器、重写DNS解析函数，从而获取最佳的DNS性能体验。
 
 ```
 // 定制DNS解析函数
@@ -160,7 +160,7 @@ for (let i = 0; i < 1024; ++i) {
 
 ## HTTP响应阶段
 
-获取响应各阶段耗时动态判断网络质量，动态调整请求（请求不同质量的资源、降低资源缓存数量）。更详细的示例请移步[HTTP请求过程中各时间点详解](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-tpms#http请求过程中各时间点详解)。
+获取响应各阶段耗时动态判断网络质量，动态调整请求（请求不同质量的资源、降低资源缓存数量）。更详细的示例请移步[HTTP请求过程中各时间点详解](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-tpms#http请求过程中各时间点详解)。
 
 ```
 // 获取各个阶段的耗时信息

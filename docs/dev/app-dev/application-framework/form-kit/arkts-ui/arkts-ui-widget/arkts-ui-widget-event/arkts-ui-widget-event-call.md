@@ -1,6 +1,6 @@
 ---
 title: "卡片拉起应用UIAbility到后台（call事件）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-call
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-call
 format: md
 ---
 
@@ -164,7 +164,7 @@ format: md
 
 4. 配置后台运行权限
 
-   call事件存在约束限制，卡片提供方应用需要在module.json5下添加后台运行权限([ohos.permission.KEEP\_BACKGROUND\_RUNNING](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all#ohospermissionkeep_background_running))。
+   call事件存在约束限制，卡片提供方应用需要在module.json5下添加后台运行权限([ohos.permission.KEEP\_BACKGROUND\_RUNNING](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all#ohospermissionkeep_background_running))。
 
    ```
    //src/main/module.json5

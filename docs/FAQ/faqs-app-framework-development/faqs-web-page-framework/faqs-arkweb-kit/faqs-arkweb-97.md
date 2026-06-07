@@ -1,6 +1,6 @@
 ---
 title: "返回的html里包含数学公式，怎么合理渲染到页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-97
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-97
 format: md
 ---
 

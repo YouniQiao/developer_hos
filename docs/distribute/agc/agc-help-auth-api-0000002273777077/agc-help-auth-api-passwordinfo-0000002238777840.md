@@ -1,6 +1,6 @@
 ---
 title: "PasswordInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-passwordinfo-0000002238777840
+original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-passwordinfo-0000002238777840
 format: md
 ---
 
@@ -13,4 +13,4 @@ format: md
 | --- | --- | --- |
 | password | string | 新的密码。 |
 | verifyCode | string | 验证码。申请验证码时VerifyCodeAction需使用VerifyCodeAction.RESET\_PASSWORD方式。 |
-| providerType | [ProviderType](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-api-providertype-0000002273781649) | 渠道类型，'email' 、 'phone' 、 'hwid' 或 'selfBuild'。 |
+| providerType | [ProviderType](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-providertype-0000002273781649) | 渠道类型，'email' 、 'phone' 、 'hwid' 或 'selfBuild'。 |

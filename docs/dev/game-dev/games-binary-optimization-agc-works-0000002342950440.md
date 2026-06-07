@@ -1,6 +1,6 @@
 ---
 title: "AGC控制台准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-agc-works-0000002342950440
+original_url: /docs/dev/game-dev/games-binary-optimization-agc-works-0000002342950440
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 创建项目和应用
 
-若尚未在AppGallery Connect创建项目和应用，请参考[创建项目](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048)和[创建应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)。
+若尚未在AppGallery Connect创建项目和应用，请参考[创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)和[创建应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。
 
 * “支持设备”选择“手机”。
 * “应用分类”选择“游戏”。

@@ -1,7 +1,7 @@
 ---
 title: "新建物理分包任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-physical-subcontract-create-0000001340959821
+original_url: /docs/monetize/promotion/bp-functions-physical-subcontract-create-0000001340959821
 format: md
 ---
 
@@ -9,11 +9,11 @@ format: md
 
 ## 前提条件
 
-已完成[管理渠道包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-physical-subcontract-manage-0000001288400496)。
+已完成[管理渠道包](/docs/monetize/promotion/bp-functions-physical-subcontract-manage-0000001288400496)。
 
 ## 操作步骤
 
-1. 登录[华为应用市场应用推广平台](https://developer.huawei.com/consumer/cn/service/apcs/app/home.html)，参见[推荐](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-recommend-0000001337110797)进行创建或修改推广任务，在任务中“归因监测-物理分包”中选择该任务投放的包体，即选择默认主包之外的渠道包。
+1. 登录[华为应用市场应用推广平台](https://developer.huawei.com/consumer/cn/service/apcs/app/home.html)，参见[推荐](/docs/monetize/promotion/bp-delivery-task-recommend-0000001337110797)进行创建或修改推广任务，在任务中“归因监测-物理分包”中选择该任务投放的包体，即选择默认主包之外的渠道包。
 
    ![](./img/c4162a34983e.png) 
 

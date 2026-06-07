@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何查询应用堆内存的已分配内存大小和堆内存的空闲内存大小"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-15
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-15
 ---
 
 
@@ -32,4 +32,4 @@ hidumper --mem pid
 
 [hidebug.getNativeHeapAllocatedSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hidebug#hidebuggetnativeheapallocatedsize)
 
-[hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)
+[hidumper](/docs/dev/app-dev/system/hidumper)

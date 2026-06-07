@@ -1,7 +1,7 @@
 ---
 title: "查询创意关联信息列表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-creative-associated1-0000001128438072
+original_url: /docs/monetize/promotion/marketing-api-creative-associated1-0000001128438072
 format: md
 ---
 
@@ -74,7 +74,7 @@ format: md
   | campaign\_id | string | 是 | 计划ID。 |
   | campaign\_name | string | 是 | 计划名称。 |
   | package\_name | string | 否 | 应用包名。 |
-  | creative\_status | string | 是 | 创意操作状态，详见[计划/任务/创意操作状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section9341472176)。 |
+  | creative\_status | string | 是 | 创意操作状态，详见[计划/任务/创意操作状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section9341472176)。 |
   | store\_app\_id | string | 否 | 应用市场ID。 |
 - <strong>应答示例</strong>
 

@@ -1,6 +1,6 @@
 ---
 title: "多个Cookie如何进行批量设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-25
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-25
 format: md
 ---
 

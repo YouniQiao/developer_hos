@@ -1,6 +1,6 @@
 ---
 title: "创建房间"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-createjoinroom-js-0000002361670436
+original_url: /docs/dev/game-dev/gameobe-createjoinroom-js-0000002361670436
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已[初始化联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-js-0000002395350377)。
+您已[初始化联机对战SDK](/docs/dev/game-dev/gameobe-initializing-js-0000002395350377)。
 
 ## 开发步骤
 
@@ -17,7 +17,7 @@ format: md
 
    ![](./img/5e1a1b59.png)
 
-   房主成功创建房间，则默认自动加入了该房间，并会生成一个房间ID和一个房间短码。房主可将该房间ID或房间短码信息分享给其他玩家，其他玩家可凭借此房间ID或房间短码[加入指定房间](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-joinroom-js-0000002395350381)。
+   房主成功创建房间，则默认自动加入了该房间，并会生成一个房间ID和一个房间短码。房主可将该房间ID或房间短码信息分享给其他玩家，其他玩家可凭借此房间ID或房间短码[加入指定房间](/docs/dev/game-dev/gameobe-joinroom-js-0000002395350381)。
 
    ```
    global.client.createRoom(

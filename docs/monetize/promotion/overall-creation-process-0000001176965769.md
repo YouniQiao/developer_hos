@@ -1,7 +1,7 @@
 ---
 title: "整体创建流程"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/overall-creation-process-0000001176965769
+original_url: /docs/monetize/promotion/overall-creation-process-0000001176965769
 format: md
 ---
 

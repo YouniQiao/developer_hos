@@ -1,6 +1,6 @@
 ---
 title: "PGD/OOP混合模式概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-hybrid-overview-0000002498501230
+original_url: /docs/dev/game-dev/pgd-hybrid-overview-0000002498501230
 format: md
 ---
 

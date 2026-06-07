@@ -1,24 +1,24 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用端开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/attestation-signature-verification-apps
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines/device-attestation-apps
 format: md
 ---
 
 
 ## 接口说明
 
-接口能力由[Universal Keystore Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)提供，涉及的功能指导请参考：
+接口能力由[Universal Keystore Kit](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)提供，涉及的功能指导请参考：
 
-* [Universal Keystore Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)
-* [查询密钥是否存在(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-check-key-arkts)
-* [查询密钥是否存在(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-check-key-ndk)
-* [生成密钥(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-arkts)
-* [生成密钥(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-ndk)
-* [匿名密钥证明(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-anon-attestation-arkts)
-* [匿名密钥证明(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-anon-attestation-ndk)
-* [签名/验签(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts)
-* [签名/验签(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-ndk)
+* [Universal Keystore Kit简介](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)
+* [查询密钥是否存在(ArkTS)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-check-key/huks-check-key-arkts)
+* [查询密钥是否存在(C/C++)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-check-key/huks-check-key-ndk)
+* [生成密钥(ArkTS)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-arkts)
+* [生成密钥(C/C++)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-ndk)
+* [匿名密钥证明(ArkTS)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-anon-attestation-arkts)
+* [匿名密钥证明(C/C++)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-anon-attestation-ndk)
+* [签名/验签(ArkTS)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts)
+* [签名/验签(C/C++)](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-ndk)
 
 ## 使用前提
 

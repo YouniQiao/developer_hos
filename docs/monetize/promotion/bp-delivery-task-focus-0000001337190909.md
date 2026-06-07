@@ -1,7 +1,7 @@
 ---
 title: "投放焦点展台任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-focus-0000001337190909
+original_url: /docs/monetize/promotion/bp-delivery-task-focus-0000001337190909
 format: md
 ---
 

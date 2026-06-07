@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "配置空间互传单双通策略"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-policy-push
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacedatatransfer-guide/enterprisespace-policy-push
 format: md
 ---
 

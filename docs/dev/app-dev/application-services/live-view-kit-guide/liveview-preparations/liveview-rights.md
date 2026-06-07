@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开通实况窗服务权益"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-rights
+original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-rights
 format: md
 ---
 

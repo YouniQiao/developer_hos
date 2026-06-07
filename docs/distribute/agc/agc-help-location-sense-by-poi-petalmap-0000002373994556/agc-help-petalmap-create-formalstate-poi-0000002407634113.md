@@ -1,6 +1,6 @@
 ---
 title: "创建全网态POI"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-petalmap-create-formalstate-poi-0000002407634113
+original_url: /docs/distribute/agc/agc-help-location-sense-by-poi-petalmap-0000002373994556/agc-help-petalmap-create-formalstate-poi-0000002407634113
 format: md
 ---
 
@@ -25,13 +25,13 @@ format: md
 
    ![](../img/agc-help-petalmap-create-formalstate-poi-0000002407634113_4.png "点击放大")
 6. 如果新建POI出现问题，请参考如下方法解决。
-   * 未查询到想要的位置信息时，请参考[如何反馈位置信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-position-info-feedback-0000002349181500)反馈。
+   * 未查询到想要的位置信息时，请参考[如何反馈位置信息](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-position-info-feedback-0000002349181500)反馈。
 
      ![](../img/agc-help-petalmap-create-formalstate-poi-0000002407634113_5.png)
-   * POI被其他应用占用时，请参考[申请使用已发布的POI](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-publish-poi-0000002382902157)反馈。
+   * POI被其他应用占用时，请参考[申请使用已发布的POI](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-apply-publish-poi-0000002382902157)反馈。
 
      ![](../img/agc-help-petalmap-create-formalstate-poi-0000002407634113_6.png)
-   * 提示POI位置信息非法时，请参考[邮件模板](https://developer.huawei.com/consumer/cn/doc/app/agc-help-position-info-feedback-0000002349181500#section6548195854110)反馈。
+   * 提示POI位置信息非法时，请参考[邮件模板](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-position-info-feedback-0000002349181500#section6548195854110)反馈。
 
      ![](../img/agc-help-petalmap-create-formalstate-poi-0000002407634113_7.png "点击放大")
 
@@ -65,8 +65,8 @@ format: md
    | 地理坐标系 | 是 | 下拉选择坐标系，支持的坐标系包括：  * GCJ-02：默认值。 * BD-09 * WGS-84 说明：  如果选择了BD-09或WGS-84，导入POI时系统将统一转换为GCJ-02坐标。 | |
    | 经度 | 是 | 需精确到小数点后6位，长度不超过128个字符。 | |
    | 纬度 | 是 | 需精确到小数点后6位，长度不超过128个字符。 | |
-   | 一级分类 | 否 | 通常按照行业来划分，例如饮食、购物、休闲中心等，详情请查询[POI一级分类](https://developer.huawei.com/consumer/cn/doc/app/agc-help-poi-classification-query-0000002395746324)。 | |
-   | 二级分类 | 否 | 一级分类下细化出的功能分类，例如饮食分类下包括餐厅、饮品店等，详情请查询[POI二级分类](https://developer.huawei.com/consumer/cn/doc/app/agc-help-poi-classification-query-0000002395746324)。 | |
+   | 一级分类 | 否 | 通常按照行业来划分，例如饮食、购物、休闲中心等，详情请查询[POI一级分类](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-poi-classification-query-0000002395746324)。 | |
+   | 二级分类 | 否 | 一级分类下细化出的功能分类，例如饮食分类下包括餐厅、饮品店等，详情请查询[POI二级分类](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-poi-classification-query-0000002395746324)。 | |
 4. 本地模板文件编辑完成后，返回“导入”窗口，点击“![](../img/agc-help-petalmap-create-formalstate-poi-0000002407634113_12.png) 选择文件”选择编辑完成的模板文件，然后点击“上传”。
 
    ![](../img/agc-help-petalmap-create-formalstate-poi-0000002407634113_13.png)

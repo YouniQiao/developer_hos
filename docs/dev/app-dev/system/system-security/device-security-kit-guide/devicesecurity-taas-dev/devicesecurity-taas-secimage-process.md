@@ -1,17 +1,17 @@
 ---
 title: "安全图像压缩、裁剪场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-secimage-process
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-secimage-process
 format: md
 ---
 
 
 ## 场景介绍
 
-在安全图像支持压缩、裁剪场景中，通过创建证明密钥、打开证明会话的方式，对从[安全摄像头](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera)获取的图像数据进行压缩、裁剪处理并重新签名，降低安全摄像头的原始图像大小，同时也能确保图像数据的真实性和完整性。
+在安全图像支持压缩、裁剪场景中，通过创建证明密钥、打开证明会话的方式，对从[安全摄像头](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securecamera)获取的图像数据进行压缩、裁剪处理并重新签名，降低安全摄像头的原始图像大小，同时也能确保图像数据的真实性和完整性。
 
 ## 约束与限制
 
-该特性需要设备支持安全摄像头功能，其支持的设备范围与安全摄像头场景保持一致。开发者可以参考安全摄像头场景的[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera#约束与限制)，判断设备是否支持安全摄像头。
+该特性需要设备支持安全摄像头功能，其支持的设备范围与安全摄像头场景保持一致。开发者可以参考安全摄像头场景的[约束与限制](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securecamera#约束与限制)，判断设备是否支持安全摄像头。
 
 ## 业务流程
 
@@ -31,7 +31,7 @@ format: md
 
 ## 开发步骤
 
-1. 参考[安全摄像头开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera)，获取安全图像。
+1. 参考[安全摄像头开发指导](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securecamera)，获取安全图像。
 2. 创建证明密钥和初始化证明会话。
 
    ![](./img/3e53a72f.png)

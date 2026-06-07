@@ -1,6 +1,6 @@
 ---
 title: "范围语音"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-rangeroom-csharp-0000002393266941
+original_url: /docs/dev/game-dev/games-gamemme-rangeroom-csharp-0000002393266941
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 ![](./img/f6b2022a.png)
 
 * 在语音接收范围内，声音可达，超出则无法接收到。
-* 为了增强音频的沉浸感，打造更加真实的声音效果，建议您将范围语音配合着[3D音效](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-spatialsound-csharp-0000002359547082)一起使用。
+* 为了增强音频的沉浸感，打造更加真实的声音效果，建议您将范围语音配合着[3D音效](/docs/dev/game-dev/games-gamemme-spatialsound-csharp-0000002359547082)一起使用。
 
 ## 接口调用流程
 
@@ -22,12 +22,12 @@ format: md
 
 ## 前提条件
 
-* 您已[集成游戏多媒体基础SDK和实时语音模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
+* 您已[集成游戏多媒体基础SDK和实时语音模块](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-csharp-native-0000002393227065#section10640141401010)。
 
 ## 加入范围语音房间
 
-实现范围语音前，需先加入范围语音房间，具体请参见[加入房间](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073#section4450837143111)。
+实现范围语音前，需先加入范围语音房间，具体请参见[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073#section4450837143111)。
 
 ## 设置语音接收范围
 

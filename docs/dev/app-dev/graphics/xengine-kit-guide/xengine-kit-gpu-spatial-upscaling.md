@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "空域GPU超分"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-gpu-spatial-upscaling
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-gpu-spatial-upscaling
 format: md
 ---
 

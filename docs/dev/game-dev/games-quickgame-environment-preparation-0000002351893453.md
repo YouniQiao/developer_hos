@@ -1,6 +1,6 @@
 ---
 title: "开发环境准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-environment-preparation-0000002351893453
+original_url: /docs/dev/game-dev/games-quickgame-environment-preparation-0000002351893453
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 
 ### 运行/调试工具
 
-请前往[下载快游戏开发者工具](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-releasenotes-tool-0000002317894812#section1301631582)，工具的使用指导请参见[快游戏开发者工具](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-tool-releasenotes-0000002317894960)。
+请前往[下载快游戏开发者工具](/docs/dev/game-dev/games-quickgame-releasenotes-tool-0000002317894812#section1301631582)，工具的使用指导请参见[快游戏开发者工具](/docs/dev/game-dev/games-quickgame-tool-releasenotes-0000002317894960)。
 
 ## 准备素材
 
@@ -71,4 +71,4 @@ format: md
 
 ### Egret
 
-使用快应用IDE生成证书指纹，详情请参见[生成并配置证书指纹](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-certificate-fingerprint-0000002541510397)。
+使用快应用IDE生成证书指纹，详情请参见[生成并配置证书指纹](/docs/dev/game-dev/games-quickgame-certificate-fingerprint-0000002541510397)。

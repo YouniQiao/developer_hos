@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ohpm-repo私有化后删除上传包及审核上传包步骤"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-command-line-tool-2
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-2
 ---
 
 

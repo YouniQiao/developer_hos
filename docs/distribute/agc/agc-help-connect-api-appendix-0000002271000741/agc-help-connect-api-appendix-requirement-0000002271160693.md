@@ -1,6 +1,6 @@
 ---
 title: "应用文件要求"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-requirement-0000002271160693
+original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-requirement-0000002271160693
 format: md
 ---
 

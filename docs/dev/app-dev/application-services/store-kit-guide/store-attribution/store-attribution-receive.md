@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "归因结果回传"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-receive
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-receive
 format: md
 ---
 

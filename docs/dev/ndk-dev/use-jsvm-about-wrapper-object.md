@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口进行Wrapper object相关开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-wrapper-object
+original_url: /docs/dev/ndk-dev/use-jsvm-about-wrapper-object
 format: md
 ---
 
@@ -25,7 +25,7 @@ JSVM-API中，装箱类型(Wrapper object)判断相关接口支持通过不同AP
 
 ## 使用示例
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅展示接口对应的C++代码。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅展示接口对应的C++代码。
 
 ### 使用接口判断是否是Number Object
 

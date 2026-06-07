@@ -1,6 +1,6 @@
 ---
 title: "Wi-Fi扫描开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-development-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/wlan/scan-development-guide
 format: md
 ---
 

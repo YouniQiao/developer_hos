@@ -1,6 +1,6 @@
 ---
 title: "如何实现http长连接"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-48
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-48
 format: md
 ---
 

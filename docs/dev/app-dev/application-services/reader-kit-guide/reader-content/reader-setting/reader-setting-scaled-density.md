@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "监听文本缩放因子变化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-scaled-density
+original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-scaled-density
 format: md
 ---
 
 
-在[智慧多窗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-intro)等场景时，文本缩放因子[Display.scaledDensity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)属性会发生变化。如果文本缩放因子的值与当前值不符，开发者需要更新[ReaderSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#readersetting)的scaledDensity属性，触发ReaderComponentController组件控制器的setPageConfig接口重新进行页面排版。
+在[智慧多窗](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-intro)等场景时，文本缩放因子[Display.scaledDensity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)属性会发生变化。如果文本缩放因子的值与当前值不符，开发者需要更新[ReaderSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#readersetting)的scaledDensity属性，触发ReaderComponentController组件控制器的setPageConfig接口重新进行页面排版。
 
 ## 接口说明
 
@@ -18,7 +18,7 @@ format: md
 
 ## 开发准备
 
-在监听文本缩放因子变化之前，请先确保已经'[构建阅读器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-read-page)'。
+在监听文本缩放因子变化之前，请先确保已经'[构建阅读器](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-read-page)'。
 
 ## 开发步骤
 
@@ -30,7 +30,7 @@ format: md
    ```
 2. 通过[display.on](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#displayonaddremovechange)接口监听文本缩放因子的变化。
 
-   在监听接口中比对系统值与当前值是否一致，如果不一致则通过应用级变量的状态管理[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)将isDensityChange值设为true，并退出阅读页。
+   在监听接口中比对系统值与当前值是否一致，如果不一致则通过应用级变量的状态管理[AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage)将isDensityChange值设为true，并退出阅读页。
 
    ```
    @Entry
@@ -69,11 +69,11 @@ format: md
      }
    }
    ```
-3. 在阅读页的上级页面通过[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)装饰器监听isDensityChange字段的变化。
+3. 在阅读页的上级页面通过[@StorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storagelink)装饰器监听isDensityChange字段的变化。
 
    当退出阅读页时，会触发上级Index页面的onPageShow生命周期回调。若检测到isDensityChange字段值变更，将执行重新进入阅读页的方法。
 
-   开发者可参考[阅读进度通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-progress)章节保存阅读进度，在进阅读页时将保存的进度信息传入到阅读页，在阅读页通过[startPlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#startplay)接口继续阅读。
+   开发者可参考[阅读进度通知](/docs/dev/app-dev/application-services/reader-kit-guide/reader-interaction/reader-progress)章节保存阅读进度，在进阅读页时将保存的进度信息传入到阅读页，在阅读页通过[startPlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#startplay)接口继续阅读。
 
    ```
    import { hilog } from '@kit.PerformanceAnalysisKit';

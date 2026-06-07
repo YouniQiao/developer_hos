@@ -1,6 +1,6 @@
 ---
 title: "并发能力使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-concurrency-capability
+original_url: /docs/quality/concurrency-capability
 format: md
 ---
 
@@ -15,8 +15,8 @@ format: md
 
 ## 使用异步能力
 
-Promise和async/await提供[异步并发能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/async-concurrency-overview)，是标准的JS异步语法。异步代码会被挂起并在之后继续执行，同一时间只有一段代码执行，适用于单次I/O任务的场景开发，例如一次网络请求、一次文件读写等操作。无需另外启动线程执行。可以把耗时操作的执行从同步执行改为异步或者延后执行，比如使用setTimeOut执行耗时操作实现[缩短加载绘制首页阶段耗时](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization#section46001212168)。
+Promise和async/await提供[异步并发能力](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/async-concurrency-overview)，是标准的JS异步语法。异步代码会被挂起并在之后继续执行，同一时间只有一段代码执行，适用于单次I/O任务的场景开发，例如一次网络请求、一次文件读写等操作。无需另外启动线程执行。可以把耗时操作的执行从同步执行改为异步或者延后执行，比如使用setTimeOut执行耗时操作实现[缩短加载绘制首页阶段耗时](/docs/quality/application-cold-start-optimization#section46001212168)。
 
 ## 多线程间通信
 
-对象/方法在跨线程传递时均会涉及到其序列化和反序列化的过程。当对象本身较大且结构复杂时，序列化/反序列化的耗时就会增加，从而影响应用运行的整体性能。使用异步能力[Sendable对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)可以实现数据在多线程间的引用传递，具体使用场景请参阅[Sendable使用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-guide)与[案例分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-threads-serialization-timeout-analysis#section219918501333)。
+对象/方法在跨线程传递时均会涉及到其序列化和反序列化的过程。当对象本身较大且结构复杂时，序列化/反序列化的耗时就会增加，从而影响应用运行的整体性能。使用异步能力[Sendable对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)可以实现数据在多线程间的引用传递，具体使用场景请参阅[Sendable使用场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-guide)与[案例分析](/docs/quality/threads-serialization-timeout-analysis#section219918501333)。

@@ -1,7 +1,7 @@
 ---
 title: "新功能速递"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/adsxinggongnengsudi-0000001780141116
+original_url: /docs/monetize/promotion/adsxinggongnengsudi-0000001780141116
 format: md
 ---
 
@@ -124,7 +124,7 @@ format: md
 
 - 操作指引：
 
-创建微信小程序广告的具体流程，[请参考鲸鸿动能帮助中心文档，并依次进入推广 &gt; 鲸鸿动能广告（中国大陆地区） &gt; 创建竞价广告 &gt; 微信小程序广告](https://developer.huawei.com/consumer/cn/doc/promotion/ad-ads-wxxcxgg-0000001734471021)
+创建微信小程序广告的具体流程，[请参考鲸鸿动能帮助中心文档，并依次进入推广 &gt; 鲸鸿动能广告（中国大陆地区） &gt; 创建竞价广告 &gt; 微信小程序广告](/docs/monetize/promotion/ad-ads-wxxcxgg-0000001734471021)
 
 <strong>【功能入口】</strong>
 

@@ -1,6 +1,6 @@
 ---
 title: "hiprofiler"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiprofiler
+original_url: /docs/dev/app-dev/system/hiprofiler
 format: md
 ---
 
@@ -15,7 +15,7 @@ Hiprofiler工具对标业界调优工具，并提供更多能力，比如[跨语
 
 ## 环境要求
 
-* 根据hdc命令行工具指导，完成[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)。
+* 根据hdc命令行工具指导，完成[环境准备](/docs/dev/app-dev/system/hdc#环境准备)。
 * 确保设备已正常连接，并执行hdc shell。
 
 ## 架构简介
@@ -136,7 +136,7 @@ hdc shell "bm dump -n com.example.myapplication | grep appProvisionType"
 
 ![](./img/874438dc.png)
 
-[应用加密](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/code-protect)后只能回native栈，不能回JS栈。
+[应用加密](/docs/dev/app-dev/system/system-security/code-protect)后只能回native栈，不能回JS栈。
 
 **参数介绍**
 
@@ -780,7 +780,7 @@ CONFIG
 
 ### 抓取指定进程GlobalHandle对象的调用栈
 
-从API version 23开始支持抓取指定进程创建[napi\_ref](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-life-cycle#napi_ref)的调用栈，不会抓取创建弱引用的调用栈。
+从API version 23开始支持抓取指定进程创建[napi\_ref](/docs/dev/ndk-dev/use-napi-life-cycle#napi_ref)的调用栈，不会抓取创建弱引用的调用栈。
 
 ```
 $ hiprofiler_cmd \

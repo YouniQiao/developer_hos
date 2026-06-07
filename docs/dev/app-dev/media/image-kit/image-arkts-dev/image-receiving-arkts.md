@@ -1,6 +1,6 @@
 ---
 title: "Image Receiving Arkts"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-receiving-arkts
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-receiving-arkts
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

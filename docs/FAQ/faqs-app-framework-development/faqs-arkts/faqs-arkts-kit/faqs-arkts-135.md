@@ -1,6 +1,6 @@
 ---
 title: "模块间循环依赖导致运行时未初始化异常问题定位"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-135
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-135
 format: md
 ---
 

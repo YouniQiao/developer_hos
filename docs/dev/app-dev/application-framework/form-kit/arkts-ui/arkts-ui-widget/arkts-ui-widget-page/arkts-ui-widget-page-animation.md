@@ -1,6 +1,6 @@
 ---
 title: "ArkTS卡片为组件添加动效"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-page-animation
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-page/arkts-ui-widget-page-animation
 format: md
 ---
 

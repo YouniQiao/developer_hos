@@ -1,6 +1,6 @@
 ---
 title: "容器类对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/container-object
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/container-object
 format: md
 ---
 
@@ -9,15 +9,15 @@ format: md
 
 支持序列化的容器类对象和支持的初始版本可以参考[容器类对象支持情况](#容器类对象支持情况)。
 
-容器类对象中的成员必须是序列化支持的类型，序列化支持类型可以参考[线程间通信对象概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/serializable-overview)中的相关对象。
+容器类对象中的成员必须是序列化支持的类型，序列化支持类型可以参考[线程间通信对象概述](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/serializable-overview)中的相关对象。
 
 ![](./img/326703b4.png)
 
-* 容器类对象跨线程传递时，只能传递数据，自定义方法会丢失。如果需要自定义方法，则需要使用[@Sendable装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable装饰器)标识为Sendable function后，自定义方法可以跨线程传递。
+* 容器类对象跨线程传递时，只能传递数据，自定义方法会丢失。如果需要自定义方法，则需要使用[@Sendable装饰器](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable装饰器)标识为Sendable function后，自定义方法可以跨线程传递。
 
 ## 容器类对象支持情况
 
-以下仅针对容器类对象，普通对象（Array、Map、Set等）的支持情况请参考[普通对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/normal-object)。
+以下仅针对容器类对象，普通对象（Array、Map、Set等）的支持情况请参考[普通对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/normal-object)。
 
 | 容器类名称 | 支持版本 |
 | --- | --- |

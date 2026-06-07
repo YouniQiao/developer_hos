@@ -1,7 +1,7 @@
 ---
 title: "使用UBSan检测未定义行为"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ubsan
+original_url: /docs/tools/coding-debug/ide-ubsan
 format: md
 ---
 

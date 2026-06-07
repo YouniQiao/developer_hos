@@ -1,6 +1,6 @@
 ---
 title: "获取位置信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-location-retrieval
+original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-location-retrieval
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 
   访问设备的位置信息，需申请权限并获取用户授权。
 
-  开发者可以在应用配置文件中声明所需要的权限，具体可参考[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization)。
+  开发者可以在应用配置文件中声明所需要的权限，具体可参考[向用户申请授权](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization)。
 
   ```
   has.authorize({

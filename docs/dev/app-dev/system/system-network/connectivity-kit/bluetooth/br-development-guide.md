@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "蓝牙设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-development-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/br-development-guide
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 ### 申请蓝牙权限
 
-需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，具体操作请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)和[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，具体操作请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)和[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ### 导入所需API模块
 

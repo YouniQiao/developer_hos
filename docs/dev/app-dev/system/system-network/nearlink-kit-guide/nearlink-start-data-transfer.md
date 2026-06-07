@@ -1,6 +1,6 @@
 ---
 title: "使用星闪传输数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nearlink-start-data-transfer
+original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-start-data-transfer
 format: md
 ---
 

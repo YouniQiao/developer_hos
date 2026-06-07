@@ -1,6 +1,6 @@
 ---
 title: "商家直接接入鉴权方式"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-merchant-authentication
+original_url: /docs/dev/atomic-dev/instant-service-access-credentials/instant-service-merchant-authentication
 format: md
 ---
 
@@ -100,7 +100,7 @@ BRNss*****7az5oU7-Zp5g9X2WJVXXX
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| Authorization | 是 | String | 通过[接口访问凭证](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-access-credentials)获取的鉴权令牌。  Bearer后面拼接空格，再拼接获取的鉴权信息（JWT Token）。 |
+| Authorization | 是 | String | 通过[接口访问凭证](/docs/dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials)获取的鉴权令牌。  Bearer后面拼接空格，再拼接获取的鉴权信息（JWT Token）。 |
 | appId | 是 | String(64) | 在创建应用后，由华为开发者联盟为应用分配的唯一标识。参数取值详见[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-appinfo-0000001100014694)中的应用-APP ID。 |
 
 **示例**

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "删除数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-delete
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-delete
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ## 前提条件
 
-已[初始化数据库访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-initialize)。
+已[初始化数据库访问](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-initialize)。
 
 ## 删除数据
 

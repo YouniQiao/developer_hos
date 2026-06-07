@@ -1,7 +1,7 @@
 ---
 format: md
 title: "TextInput组件包含英文和汉字时，如何设置全选"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-122
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-122
 ---
 
 

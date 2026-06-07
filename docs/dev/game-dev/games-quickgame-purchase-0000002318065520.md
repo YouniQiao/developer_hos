@@ -1,6 +1,6 @@
 ---
 title: "华为快游戏外部买量指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-purchase-0000002318065520
+original_url: /docs/dev/game-dev/games-quickgame-purchase-0000002318065520
 format: md
 ---
 

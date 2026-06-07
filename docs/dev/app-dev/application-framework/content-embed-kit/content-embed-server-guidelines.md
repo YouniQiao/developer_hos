@@ -1,6 +1,6 @@
 ---
 title: "服务端应用开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-server-guidelines
+original_url: /docs/dev/app-dev/application-framework/content-embed-kit/content-embed-server-guidelines
 format: md
 ---
 
@@ -13,7 +13,7 @@ OE服务端应用使用[OE Extension框架](https://developer.huawei.com/consume
 
 ## 约束限制
 
-在使用接口前，需先确认设备具备SystemCapability.ContentEmbed.ObjectEditor系统能力，判断方式请参阅[查询指定的系统能力是否被支持](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/init#caniuse)。并申请ohos.permission.REGISTER\_OBJECTEDITOR\_EXTENSION权限，配置方式请参阅[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+在使用接口前，需先确认设备具备SystemCapability.ContentEmbed.ObjectEditor系统能力，判断方式请参阅[查询指定的系统能力是否被支持](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/init#caniuse)。并申请ohos.permission.REGISTER\_OBJECTEDITOR\_EXTENSION权限，配置方式请参阅[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
 ## 接口说明
 
@@ -23,14 +23,14 @@ OE服务端应用使用[OE Extension框架](https://developer.huawei.com/consume
 
 | 接口名称 | 功能描述 |
 | --- | --- |
-| OH\_ContentEmbed\_Extension\_GetExtensionInstance | 从ExtensionAbility基类实例中获取对应的[OE Extension](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oe-extension)实例。 |
+| OH\_ContentEmbed\_Extension\_GetExtensionInstance | 从ExtensionAbility基类实例中获取对应的[OE Extension](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oe-extension)实例。 |
 | OH\_ContentEmbed\_Extension\_GetContentEmbedContext | 从OE Extension实例中获取其对应的OE Extension上下文对象。 |
 | OH\_ContentEmbed\_Extension\_GetContext | 从OE Extension上下文中获取AbilityRuntime上下文。 |
 | OH\_ContentEmbed\_Extension\_RegisterOnCreateFunc | 注册OE Extension实例创建时的生命周期函数。 |
 | OH\_ContentEmbed\_Extension\_RegisterOnDestroyFunc | 注册OE Extension实例销毁时的生命周期函数。 |
-| OH\_ContentEmbed\_Extension\_RegisterOnObjectAttachFunc | 注册[客户端OE对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#客户端oe对象)连接时的回调函数。 |
+| OH\_ContentEmbed\_Extension\_RegisterOnObjectAttachFunc | 注册[客户端OE对象](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#客户端oe对象)连接时的回调函数。 |
 | OH\_ContentEmbed\_Extension\_RegisterOnObjectDetachFunc | 取消注册客户端OE对象连接时的回调函数。 |
-| OH\_ContentEmbed\_Extension\_RegisterOnWriteToDataStreamFunc | 注册[服务端OE对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#服务端oe对象)写入[OE文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/content-embed-kit-terminology#oe文档)数据流时的回调函数。 |
+| OH\_ContentEmbed\_Extension\_RegisterOnWriteToDataStreamFunc | 注册[服务端OE对象](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#服务端oe对象)写入[OE文档](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oe文档)数据流时的回调函数。 |
 | OH\_ContentEmbed\_Extension\_RegisterOnGetSnapshotFunc | 注册客户端OE对象请求获取OE文档快照时的回调函数。 |
 | OH\_ContentEmbed\_Extension\_RegisterOnDoEditFunc | 注册客户端OE对象请求编辑OE文档时的回调函数。 |
 | OH\_ContentEmbed\_Extension\_RegisterOnGetEditStatusFunc | 注册客户端OE对象请求OE文档编辑状态时的回调函数。 |
@@ -74,7 +74,7 @@ OE服务端应用使用[OE Extension框架](https://developer.huawei.com/consume
 * srcEntry：Extension组件的入口库文件路径。
 * type：必须设置为"contentEmbed"。
 * exported：必须设置为true，表示对外暴露。
-* [metadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#metadata标签)：元数据信息"metadata"新增一个"name"为"content\_embed\_config"的数据项，"resource"为OE Extension配置文件的资源索引。
+* [metadata](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#metadata标签)：元数据信息"metadata"新增一个"name"为"content\_embed\_config"的数据项，"resource"为OE Extension配置文件的资源索引。
 
 开发者需要新增一个二级配置json文件，用于配置OE Extension信息。例如将"resource"配置成"$profile:content\_embed\_config"，表示指向resources/base/profile/content\_embed\_config.json配置文件。json文件示例如下：
 

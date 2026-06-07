@@ -1,6 +1,6 @@
 ---
 title: "支持单复数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/l10n-singular-plural
+original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-singular-plural
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用LPP播放器播放视频 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-lpp-for-playback
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-lpp-for-playback
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ![](./img/eab3c388.png)
 
-LowPowerPlayer播放器不支持纯视频和纯音频播放。纯音频低功耗播放请参考[低功耗音频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-saving-for-playback)。
+LowPowerPlayer播放器不支持纯视频和纯音频播放。纯音频低功耗播放请参考[低功耗音频播放](/docs/dev/app-dev/media/audio-kit/audio-playback/power-saving-for-playback)。
 
 播放流程包含：创建解封装器、创建播放器、设置回调监听函数、配置播放参数、播放控制（播放/暂停/继续/倍速/音量/停止/重置）、销毁播放器实例。
 
@@ -34,8 +34,8 @@ LowPowerPlayer播放器不支持纯视频和纯音频播放。纯音频低功耗
 
 当前指导仅介绍如何实现媒体资源播放，在应用开发过程中会涉及后台播放、播放冲突等情况，请根据实际需要参考以下说明。
 
-* 由于硬件差异，LPP播放器能力仅在部分手机上支持。从API version 21开始，建议通过[OH\_LowPowerAVSink\_GetCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-avsink-base-h#oh_lowpoweravsink_getcapability)查询LPP播放器能力是否支持。如果不支持，使用[AVCodec](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avcodec-kit-intro)能力实现播放。
-* 当应用在播放过程中时，播放的媒体数据涉及音频，根据系统音频管理策略（参考[处理音频焦点变化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#处理音频焦点变化)事件）可知这会被其他应用打断，建议通过[OH\_LowPowerAudioSinkCallback\_SetInterruptListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-audio-sink-h#oh_lowpoweraudiosinkcallback_setinterruptlistener)主动监听音频打断事件，根据其回调参数提示做出相应的处理，避免出现应用状态与预期效果不一致的问题。
+* 由于硬件差异，LPP播放器能力仅在部分手机上支持。从API version 21开始，建议通过[OH\_LowPowerAVSink\_GetCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-avsink-base-h#oh_lowpoweravsink_getcapability)查询LPP播放器能力是否支持。如果不支持，使用[AVCodec](/docs/dev/app-dev/media/avcodec-kit/avcodec-kit-intro)能力实现播放。
+* 当应用在播放过程中时，播放的媒体数据涉及音频，根据系统音频管理策略（参考[处理音频焦点变化](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#处理音频焦点变化)事件）可知这会被其他应用打断，建议通过[OH\_LowPowerAudioSinkCallback\_SetInterruptListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-audio-sink-h#oh_lowpoweraudiosinkcallback_setinterruptlistener)主动监听音频打断事件，根据其回调参数提示做出相应的处理，避免出现应用状态与预期效果不一致的问题。
 * 当设备同时连接多个音频输出设备时，建议通过[OH\_LowPowerAudioSinkCallback\_SetDeviceChangeListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-audio-sink-h#oh_lowpoweraudiosinkcallback_setdevicechangelistener)主动监听音频输出设备改变事件，并做出相应处理。
 * 当应用在执行过程中，可能出现系统内部异常。如网络异常、内存不足、媒体服务死亡不可用等，建议通过 [OH\_LowPowerAudioSinkCallback\_SetErrorListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-audio-sink-h#oh_lowpoweraudiosinkcallback_seterrorlistener)或[OH\_LowPowerVideoSinkCallback\_SetErrorListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-video-sink-h#oh_lowpowervideosinkcallback_seterrorlistener)对应接口设置错误监听回调函数，根据不同错误类型和错误信息，做出相应处理，避免出现播放异常。
 * 在播放过程中，播放器需要的数据要通过 [OH\_AVDemuxer\_ReadSampleBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avdemuxer-h#oh_avdemuxer_readsamplebuffer)接口获取指定轨道的buffer，并通过 [OH\_AVSamplesBuffer\_AppendOneBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-avsink-base-h#oh_avsamplesbuffer_appendonebuffer)进行多个buffer的封装，然后再通过 [OH\_LowPowerAudioSink\_ReturnSamples](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-audio-sink-h#oh_lowpoweraudiosink_returnsamples)或[OH\_LowPowerVideoSink\_ReturnSamples](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-video-sink-h#oh_lowpowervideosink_returnsamples)通知播放器进行消费，当播放器需要数据时，会触发通过 [OH\_LowPowerAudioSinkCallback\_SetDataNeededListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-audio-sink-h#oh_lowpoweraudiosinkcallback_setdataneededlistener)或[OH\_LowPowerVideoSinkCallback\_SetDataNeededListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-lowpower-video-sink-h#oh_lowpowervideosinkcallback_setdataneededlistener)接口注册的回调函数。

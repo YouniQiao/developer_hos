@@ -1,7 +1,7 @@
 ---
 title: "C API兼容性保护"
 displayed_sidebar: appCompatibilitySidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/c-api-compatibility-warning-elim
+original_url: /docs/design/app-compatibility/c-api-compatibility-warning-elim
 format: md
 ---
 

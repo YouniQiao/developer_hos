@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文档扫描"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-documentscanner
+original_url: /docs/dev/app-dev/ai/vision-kit-guide/vision-documentscanner
 format: md
 ---
 

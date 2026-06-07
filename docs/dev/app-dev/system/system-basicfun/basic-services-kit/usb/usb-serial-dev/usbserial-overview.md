@@ -1,6 +1,6 @@
 ---
 title: "USB串口通信服务开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usbserial-overview
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev/usbserial-overview
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 USB串口通信服务主要提供USB Host设备转串口协议通信的功能，它提供获取遵循USB Host转串口标准协议的已连接的端口列表，同时提供打开端口、关闭端口、设置参数、获取参数、读取数据、写入数据和设备权限管理这些基本功能。
 
-USB串口通信服务，配置管理请参考[USB串口配置管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usbserial-configuration)，通信管理请参考[USB串口通信管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usbserial-communication)。
+USB串口通信服务，配置管理请参考[USB串口配置管理](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev/usbserial-configuration)，通信管理请参考[USB串口通信管理](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev/usbserial-communication)。
 
 ### 基本概念
 

@@ -1,7 +1,7 @@
 ---
 title: "动态壁纸"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/livewallpaper-test-0000001057818928
+original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/livewallpaper-test-0000001057818928
 ---
 
 # 动态壁纸

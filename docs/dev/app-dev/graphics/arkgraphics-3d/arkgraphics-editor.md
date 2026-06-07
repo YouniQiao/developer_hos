@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "ArkGraphics Editor插件及编辑器的下载与安装"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkgraphics-editor
+original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics-editor
 format: md
 ---
 

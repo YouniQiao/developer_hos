@@ -1,6 +1,6 @@
 ---
 title: "应用内状态管理和其他常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq-application-and-others
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq/arkts-state-management-faq-application-and-others
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ### 懒加载包含装饰器的文件
 
-状态管理装饰器仅限于在UI线程使用，不允许在未加载ArkUI框架的[并发线程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-thread-concurrency-overview)中使用。由于并发线程未加载完整的ArkUI框架逻辑，因此框架中定义的状态管理装饰器也不会被加载到并发线程中。若在并发线程中使用状态管理装饰器，将出现ReferenceError: xxx is not defined。在如下示例中，尽管并发线程并未实际使用[@Observed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)装饰的类，但仍会打印ReferenceError: Observed is not defined的报错信息。这是因为并发线程在逐层解析文件依赖时，最终会加载到定义@Observed装饰器的Observed.ets文件，从而触发该错误。
+状态管理装饰器仅限于在UI线程使用，不允许在未加载ArkUI框架的[并发线程](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/multi-thread-concurrency-overview)中使用。由于并发线程未加载完整的ArkUI框架逻辑，因此框架中定义的状态管理装饰器也不会被加载到并发线程中。若在并发线程中使用状态管理装饰器，将出现ReferenceError: xxx is not defined。在如下示例中，尽管并发线程并未实际使用[@Observed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)装饰的类，但仍会打印ReferenceError: Observed is not defined的报错信息。这是因为并发线程在逐层解析文件依赖时，最终会加载到定义@Observed装饰器的Observed.ets文件，从而触发该错误。
 
 【反例】
 
@@ -134,7 +134,7 @@ export class Person {
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/StateManagementFAQApplication/entry/src/main/ets/pages/LazyImportObservedNeg.ets#L16-L32" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：LazyImportObservedNeg.ets</a></div>
 
 
-可以使用[lazy import](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-lazy-import)懒加载包含装饰器的文件，子线程则不会加载到对应文件。
+可以使用[lazy import](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-lazy-import)懒加载包含装饰器的文件，子线程则不会加载到对应文件。
 
 【正例】
 

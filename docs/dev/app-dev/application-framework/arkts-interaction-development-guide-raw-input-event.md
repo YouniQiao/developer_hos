@@ -1,6 +1,6 @@
 ---
 title: "输入设备与事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-raw-input-event
+original_url: /docs/dev/app-dev/application-framework/arkts-interaction-development-guide-raw-input-event
 format: md
 ---
 
@@ -16,21 +16,21 @@ format: md
 
 建议直接使用手势系统来处理交互，可不关注基础事件之间的区别。
 
-[支持触屏输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-touch-screen)：触屏设备及对其产生的触摸事件。
+[支持触屏输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-touch-screen)：触屏设备及对其产生的触摸事件。
 
-[支持鼠标输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-mouse)：鼠标设备及如何处理其产生的事件。
+[支持鼠标输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-mouse)：鼠标设备及如何处理其产生的事件。
 
-[支持触控板输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-touchpad)：触控板设备及如何处理其产生的事件。
+[支持触控板输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-touchpad)：触控板设备及如何处理其产生的事件。
 
-[支持键盘输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-keyboard)：键盘类设备及如何处理其产生的事件。
+[支持键盘输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-keyboard)：键盘类设备及如何处理其产生的事件。
 
-[支持游戏手柄输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-gamepad)：游戏手柄设备及如何处理其产生的事件。
+[支持游戏手柄输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-gamepad)：游戏手柄设备及如何处理其产生的事件。
 
-[支持表冠输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-crown-event)：旋转表冠及其如何处理其产生的事件。
+[支持表冠输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-common-events-crown-event)：旋转表冠及其如何处理其产生的事件。
 
-* **[支持触屏输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-touch-screen)**
-* **[支持鼠标输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-mouse)**
-* **[支持触控板输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-touchpad)**
-* **[支持键盘输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-keyboard)**
-* **[支持游戏手柄输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-gamepad)**
-* **[支持表冠输入事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-crown-event)**
+* **[支持触屏输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-touch-screen)**
+* **[支持鼠标输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-mouse)**
+* **[支持触控板输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-touchpad)**
+* **[支持键盘输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-keyboard)**
+* **[支持游戏手柄输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-gamepad)**
+* **[支持表冠输入事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-common-events-crown-event)**

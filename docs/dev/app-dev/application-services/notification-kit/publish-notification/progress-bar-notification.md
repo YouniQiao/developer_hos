@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发布进度条类型通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/progress-bar-notification
+original_url: /docs/dev/app-dev/application-services/notification-kit/publish-notification/progress-bar-notification
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何查询应用当前CPU占用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-14
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-14
 ---
 
 
@@ -29,4 +29,4 @@ let cpuUsage: number = hidebug.getCpuUsage();
 
 [hidebug.getCpuUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hidebug#hidebuggetcpuusage9)
 
-[hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)
+[hidumper](/docs/dev/app-dev/system/hidumper)

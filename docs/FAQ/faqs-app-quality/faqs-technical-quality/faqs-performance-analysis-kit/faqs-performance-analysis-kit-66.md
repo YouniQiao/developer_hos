@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在docker或者wsl系统中，无USB设备节点，hdc执行后无返回信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-66
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-66
 ---
 
 
@@ -39,4 +39,4 @@ docker run -it --device=/dev/bus/usb/001 image_name
 docker run -it --privileged image_name
 ```
 
-2. 请参考[hdc版本配套表](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#hdc版本配套表)更新到API15（3.1.0e）或更高版本。
+2. 请参考[hdc版本配套表](/docs/dev/app-dev/system/hdc#hdc版本配套表)更新到API15（3.1.0e）或更高版本。

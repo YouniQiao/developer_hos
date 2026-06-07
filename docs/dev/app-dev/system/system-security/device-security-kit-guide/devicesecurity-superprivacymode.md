@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "超级隐私模式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-superprivacymode
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-superprivacymode
 format: md
 ---
 
 
-* **[查询当前状态场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-getsuperprivacymode)**
-* **[订阅状态改变事件场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-subscribe-superprivacymode)**
+* **[查询当前状态场景](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-superprivacymode/devicesecurity-getsuperprivacymode)**
+* **[订阅状态改变事件场景](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-superprivacymode/devicesecurity-subscribe-superprivacymode)**

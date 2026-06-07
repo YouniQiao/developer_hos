@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS实现多Worker实例"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-103
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-103
 ---
 
 

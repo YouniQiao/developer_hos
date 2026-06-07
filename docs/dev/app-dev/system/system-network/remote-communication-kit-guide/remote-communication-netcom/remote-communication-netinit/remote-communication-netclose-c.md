@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "关闭会话（C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-netclose-c
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netclose-c
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
    #include <stdio.h>
    #include <unistd.h>
    ```
-2. CMakeLists.txt中添加以下lib。（具体请见[C API开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-preparations#c-api开发准备)）。
+2. CMakeLists.txt中添加以下lib。（具体请见[C API开发准备](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-preparations#c-api开发准备)）。
 
    ```
    librcp_c.so

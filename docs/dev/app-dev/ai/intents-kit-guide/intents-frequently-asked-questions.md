@@ -1,6 +1,6 @@
 ---
 title: "Intents Frequently Asked Questions"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-frequently-asked-questions
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-frequently-asked-questions
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

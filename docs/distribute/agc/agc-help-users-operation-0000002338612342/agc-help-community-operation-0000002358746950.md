@@ -1,6 +1,6 @@
 ---
 title: "社区管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-community-operation-0000002358746950
+original_url: /docs/distribute/agc/agc-help-users-operation-0000002338612342/agc-help-community-operation-0000002358746950
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 #### [h2]前提条件
 
-* 在开通社区版块前，您必须先[创建游戏](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)。
+* 在开通社区版块前，您必须先[创建游戏](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。
 * 社区版块的名称和图标影响审核结果，请在开通社区版块前修改，图标要求为216\*216px的png图片。
 * 目前开通社区版块仅支持在架版本或预约审核通过的游戏。
 
@@ -198,7 +198,7 @@ format: md
 
 #### 社区维护要求
 
-社区活跃度的提高，缺不了开发者的配合与努力。所以我们要求开发者对版块内容、活动、用户和版面维护负责，并且按照以下规则和建议进行论坛维护。具体内容请参见[社区维护要求](https://developer.huawei.com/consumer/cn/doc/app/game-center-community-operation-0000001194305462#section4451941112616)。
+社区活跃度的提高，缺不了开发者的配合与努力。所以我们要求开发者对版块内容、活动、用户和版面维护负责，并且按照以下规则和建议进行论坛维护。具体内容请参见[社区维护要求](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462#section4451941112616)。
 
 #### 游戏内嵌社区
 

@@ -1,6 +1,6 @@
 ---
 title: "ArkUI术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary
+original_url: /docs/dev/app-dev/application-framework/arkui/arkui-glossary
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过聚合链接按指定方式跳转至应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-cross-platform
+original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-cross-platform
 format: md
 ---
 
@@ -16,13 +16,13 @@ format: md
 
 ## 前提条件
 
-已[开通App Linking服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-enable-applinking)。
+已[开通App Linking服务](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-preparations/applinking-enable-applinking)。
 
 ## 开发流程
 
 | 角色 | 操作步骤 |
 | --- | --- |
-| 云端开发 | [开通App Linking服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/applinking-enable-applinking)。 |
+| 云端开发 | [开通App Linking服务](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-preparations/applinking-enable-applinking)。 |
 | 云端开发 | 先在AGC[申请链接前缀](#申请链接前缀)并[添加网址允许清单](#添加网址允许清单)，然后[创建聚合链接](#创建聚合链接)。 |
 | 客户端开发 | [在module.json5中配置聚合链接](#在modulejson5中配置聚合链接)。 |
 | 客户端开发 | [处理拉起方应用传入的链接](#处理拉起方应用传入的链接)。 |
@@ -163,11 +163,11 @@ format: md
 
 ### 在module.json5中配置聚合链接
 
-在HarmonyOS应用的[module.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中进行如下配置，用于接收聚合链接，以获取聚合链接中传递的数据。
+在HarmonyOS应用的[module.json5文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中进行如下配置，用于接收聚合链接，以获取聚合链接中传递的数据。
 
 * "entities"列表中必须包含"entity.system.browsable"。
 * "actions"列表中必须包含"ohos.want.action.viewData"。
-* "uris"列表中必须包含"scheme"为"https"且"host"为域名地址的元素，可选属性包含"path"、"pathStartWith"和"pathRegex"，具体请参见“[uris标签说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config#uris标签说明)”。
+* "uris"列表中必须包含"scheme"为"https"且"host"为域名地址的元素，可选属性包含"path"、"pathStartWith"和"pathRegex"，具体请参见“[uris标签说明](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config#uris标签说明)”。
 * "domainVerify"设置为true，表示开启域名校验开关。
 
 ![](./img/7c85603e.png)
@@ -259,7 +259,7 @@ export default class EntryAbility extends UIAbility {
 }
 ```
 
-若要根据链接参数启动UIAbility的指定页面组件，请参考“[启动UIAbility的指定页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction#启动uiability的指定页面)”。
+若要根据链接参数启动UIAbility的指定页面组件，请参考“[启动UIAbility的指定页面](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-intra-device-interaction#启动uiability的指定页面)”。
 
 ## 验证应用被拉起效果
 

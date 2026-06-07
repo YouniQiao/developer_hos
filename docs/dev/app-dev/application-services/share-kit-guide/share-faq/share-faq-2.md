@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分享数据类型不支持"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-faq-2
+original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-2
 format: md
 ---
 
@@ -19,4 +19,4 @@ format: md
 **处理步骤：**
 
 1. 修改分享的内容，符合规范要求。
-2. 通用类型可通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)的方式，提供数据类型信息加入预置类型；或可通过自定义类型的方式注册utd类型，参考：[应用自定义数据类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-type-descriptors#应用自定义数据类型)。
+2. 通用类型可通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)的方式，提供数据类型信息加入预置类型；或可通过自定义类型的方式注册utd类型，参考：[应用自定义数据类型](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-descriptors#应用自定义数据类型)。

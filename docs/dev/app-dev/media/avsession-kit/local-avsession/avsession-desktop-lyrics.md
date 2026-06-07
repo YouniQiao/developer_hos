@@ -1,6 +1,6 @@
 ---
 title: "应用接入歌词组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-desktop-lyrics
+original_url: /docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-desktop-lyrics
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 ## 具体步骤
 
 1. 调用[isDesktopLyricSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-f#avsessionisdesktoplyricsupported23)接口判断系统/设备是否支持歌词组件能力，返回true时表示支持歌词组件能力。
-2. 创建[AVSession实例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#创建不同类型的会话)，通过[设置元数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#设置元数据)填入LRC格式的歌词数据，包含时间标签及对应的歌词文本。不符合LRC格式的歌词数据，系统可能存在解析异常导致无法展示歌词内容。
+2. 创建[AVSession实例](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#创建不同类型的会话)，通过[设置元数据](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#设置元数据)填入LRC格式的歌词数据，包含时间标签及对应的歌词文本。不符合LRC格式的歌词数据，系统可能存在解析异常导致无法展示歌词内容。
 3. 调用[enableDesktopLyric](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession#enabledesktoplyric23)接口进行使能，需传入参数true打开歌词组件。
 4. 歌词组件使能打开后默认是隐藏（不显示），应用可以通过接口主动显示/隐藏歌词组件，具体接口如下：
 

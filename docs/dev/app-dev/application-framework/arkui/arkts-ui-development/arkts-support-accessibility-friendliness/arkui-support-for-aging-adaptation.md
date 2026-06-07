@@ -1,6 +1,6 @@
 ---
 title: "支持适老化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-support-for-aging-adaptation
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-support-accessibility-friendliness/arkui-support-for-aging-adaptation
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
 
    当前默认应用不跟随系统字体的变化。如需跟随系统字体变化，并设置最大跟随变化的倍数，请按以下步骤操作：
 
-   * [app.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file)适配。
+   * [app.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file)适配。
 
      通过配置"configuration": "$profile:configuration"，指向base/profile/configuration.json文件；
 
@@ -107,7 +107,7 @@ format: md
 
 * 适老化规则
 
-  由于在系统字体大于1倍时，组件并没有默认放大，需要通过配置[configuration标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#configuration标签)，实现组件放大的适老化功能。
+  由于在系统字体大于1倍时，组件并没有默认放大，需要通过配置[configuration标签](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#configuration标签)，实现组件放大的适老化功能。
 * 如何开启适老化
 
   进入手机设置，点击辅助功能，开启关怀模式。

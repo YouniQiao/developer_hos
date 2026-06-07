@@ -1,6 +1,6 @@
 ---
 title: "测试流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-apptest-invite-test-guide-0000002258174270
+original_url: /docs/distribute/agc/agc-help-apptest-invite-test-0000002258071220/agc-help-apptest-invite-test-guide-0000002258174270
 format: md
 ---
 
@@ -21,7 +21,7 @@ AppTest邀请测试-内部测试群组、公开链接能力暂不支持API对接
 * 您可以选择将当前最新在架版本的应用介绍截图展示给测试人员，视觉效果更好，提升用户测试意愿。
 * 您可以使用公开链接邀请测试用户，无需拼接邀请码，使用更加方便。
 * 您可以将测试版本分发给相应的内部群组，发布后立即上架，高效迭代验证您的应用新版本。
-* 您可以将[付费下载应用](https://developer.huawei.com/consumer/cn/doc/app/digital-moneyproducts-0000002217376126)的邀请测试版本分发至AppTest客户端，以供用户测试。
+* 您可以将[付费下载应用](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-moneyproducts-0000002217376126)的邀请测试版本分发至AppTest客户端，以供用户测试。
 * 您可以查看和管理用户提交的问题与建议，帮助您及时发现应用问题，持续改进服务质量并提升用户体验。
 * 若您为企业开发者，首个构建版本需要经过全面审核，后续的构建版本通常只需经过基本审核。构建版本通过审核后即可开始测试。（目前仅面向部分开发者开放）
 
@@ -31,11 +31,11 @@ AppTest邀请测试能力开通后，应用的AppGallery Connect页面将由AppG
 
 您可以最多创建300个外部测试群组，100个内部测试群组，所有群组的测试用户累计去重总数不超过10000个。当测试任务开始后，邀请范围内的所有测试用户都会收到通知。如果您在邀请测试任务开始后又调整了测试用户范围，新增用户无法收到测试通知，您可以将公开链接分享给该用户，使其参与测试。
 
-**第二步：[创建并发布测试版本](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apptest-release-testapp-0000002292711385)**
+**第二步：[创建并发布测试版本](/docs/distribute/agc/agc-help-apptest-invite-test-0000002258071220/agc-help-apptest-release-testapp-0000002292711385)**
 
 您需要将测试版本发布至AppTest客户端。测试版本正式上架后，测试用户即可安装AppTest客户端，获取应用进行测试体验。
 
-**第三步：[邀请用户参与测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apptest-invite-testuser-0000002258071224)**
+**第三步：[邀请用户参与测试](/docs/distribute/agc/agc-help-apptest-invite-test-0000002258071220/agc-help-apptest-invite-testuser-0000002258071224)**
 
 测试版本上架、且到达测试时间后，测试用户将收到邮件通知，可以通过点击其中的链接接受邀请，获取应用体验；未加入测试群组的用户也可以通过获取的公开链接参与测试。
 
@@ -43,6 +43,6 @@ AppTest邀请测试能力开通后，应用的AppGallery Connect页面将由AppG
 
 您可在AGC控制台查看和管理用户在测试过程中反馈的体验问题，进而针对问题进行优化，持续改进服务质量并提升用户体验。
 
-**第五步：（可选）[停止测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apptest-stop-test-0000002258174274)**
+**第五步：（可选）[停止测试](/docs/distribute/agc/agc-help-apptest-invite-test-0000002258071220/agc-help-apptest-stop-test-0000002258174274)**
 
 若您发现测试版本有问题，需要提前结束测试，您可以停止测试。停止后，新用户将无法安装测试版本，已参与测试的用户仍可以继续测试，直至安装时间超过90天。

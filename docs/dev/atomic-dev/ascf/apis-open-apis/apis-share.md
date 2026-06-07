@@ -1,6 +1,6 @@
 ---
 title: "分享"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-share
+original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-share
 format: md
 ---
 

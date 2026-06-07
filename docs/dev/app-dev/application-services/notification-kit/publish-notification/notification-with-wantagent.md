@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "为通知添加行为意图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-with-wantagent
+original_url: /docs/dev/app-dev/application-services/notification-kit/publish-notification/notification-with-wantagent
 format: md
 ---
 
@@ -72,7 +72,7 @@ format: md
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Notification-Kit/Notification/entry/src/main/ets/filemanager/AddWantAgent.ets#L91-L111" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：AddWantAgent.ets</a></div>
 
 
-   场景二：创建发布[公共事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-event-overview)的WantAgent的[WantAgentInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-wantagent-wantagentinfo)信息。
+   场景二：创建发布[公共事件](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-overview)的WantAgent的[WantAgentInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-wantagent-wantagentinfo)信息。
 
    ```
    let wantAgentObj: WantAgent | null = null; // 用于保存创建成功的WantAgent对象，后续使用其完成触发的动作。

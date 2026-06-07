@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "查询数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-query
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-query
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 
 ## 前提条件
 
-已[初始化数据库访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-initialize)。
+已[初始化数据库访问](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-initialize)。
 
 ## 简单查询
 

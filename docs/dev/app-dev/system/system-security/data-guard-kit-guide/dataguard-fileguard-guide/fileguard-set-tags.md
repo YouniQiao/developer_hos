@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "设置文件属性标签"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-set-tags
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-tags
 format: md
 ---
 

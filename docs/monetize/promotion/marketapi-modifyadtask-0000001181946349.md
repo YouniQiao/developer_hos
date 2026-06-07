@@ -1,7 +1,7 @@
 ---
 title: "修改投放任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modifyadtask-0000001181946349
+original_url: /docs/monetize/promotion/marketapi-modifyadtask-0000001181946349
 format: md
 ---
 
@@ -50,7 +50,7 @@ format: md
 | budget | O | Double | 每日预算，限制每天的花费。每天消耗超过本预算后，系统将会停止推广，第二天再推广。  请填写整数，最低为100￥，最高为10，000，000￥（允许为0，代表不限制日预算）。  修改后的日预算金额，不能低于当前已消费金额的105%，以整数为单位向上取整。 |
 | startDate | O | String | 投放开始日期。  格式为：YYYY-MM-DD |
 | endDate | O | String | 投放结束日期。  格式为：YYYY-MM-DD  说明：  不设置的场景下表示会一直投放。 |
-| deliveryHours | O | List&lt;[DeliveryHour](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-deliveryhour-0000001181826453)&gt; | 投放时段。  允许为空数组。 |
+| deliveryHours | O | List&lt;[DeliveryHour](/docs/monetize/promotion/marketapi-modle-deliveryhour-0000001181826453)&gt; | 投放时段。  允许为空数组。 |
 | conversionBehavior | O | String | 归因目标。  格式为数字，1代表激活，7代表注册。 |
 | regions | O | String | 投放区域，使用ISO国家码。  中国默认CN。多个区域用逗号分隔。 |
 | negativeRegions | O | String | 反向投放区域，使用ISO国家码。  中国默认CN。多个区域用逗号分隔。 |
@@ -64,18 +64,18 @@ format: md
 | deliverySwitch | O | Integer | 通投任务开关。  取值范围：   - 0：关 - 1：开   默认值：0 |
 | deliveryPrice | O | Double | 通投出价。  取值范围：[2,1000]  单位：元 |
 | <strong>归因监控</strong> | | | |
-| impAdMonitorReportUrl | O | String | 精准曝光上报监控链接。  格式如下，其中key需要您自定义，value为应用推广支持的宏参数，取值请参见[宏参数列表](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-macro-para-0000001454518626)。   ``` https://xxx.xxx.xxx/xxx?key1=value1&key2=value2 ``` |
+| impAdMonitorReportUrl | O | String | 精准曝光上报监控链接。  格式如下，其中key需要您自定义，value为应用推广支持的宏参数，取值请参见[宏参数列表](/docs/monetize/promotion/marketapi-macro-para-0000001454518626)。   ``` https://xxx.xxx.xxx/xxx?key1=value1&key2=value2 ``` |
 | clickAdMonitorReportUrl | O | String | 点击上报监控链接。  格式和样例参考[impAdMonitorReportUrl](#ZH-CN_TOPIC_0000001741123596__zh-cn_topic_0000001091866348_p826816421818)参数。 |
 | installAdMonitorReportUrl | O | String | 安装上报监控链接。  格式和样例参考[impAdMonitorReportUrl](#ZH-CN_TOPIC_0000001741123596__zh-cn_topic_0000001091866348_p826816421818)参数。 |
 | downloadAdMonitorReportUrl | O | String | 下载上报监控链接。  格式和样例参考[impAdMonitorReportUrl](#ZH-CN_TOPIC_0000001741123596__zh-cn_topic_0000001091866348_p826816421818)参数。 |
 | deeplinkClickAdMonitorReportUrl | O | String | 大卡点击上报监控链接  格式和样例参考[impAdMonitorReportUrl](#ZH-CN_TOPIC_0000001741123596__zh-cn_topic_0000001091866348_p826816421818)参数。 |
 | <strong>素材绑定</strong> | | | |
-| searchBrandContent | O | [SearchBrandContent](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-searchbrandcontent-0000001135626860) | 搜索大卡使用。 |
-| browserContent | O | [BrowserContent](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-browsercontent-0000001135467058) | 信息流使用。 |
-| brandContent | O | [BrandContent](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-brandcontent-0000001181946367) | 品牌/字词推荐CPT任务。 |
-| cpdVideoContent | O | [CpdVideoContent](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-cpdvideocontent-0000001135467060) | 视频流类型任务使用。 |
+| searchBrandContent | O | [SearchBrandContent](/docs/monetize/promotion/marketapi-modle-searchbrandcontent-0000001135626860) | 搜索大卡使用。 |
+| browserContent | O | [BrowserContent](/docs/monetize/promotion/marketapi-modle-browsercontent-0000001135467058) | 信息流使用。 |
+| brandContent | O | [BrandContent](/docs/monetize/promotion/marketapi-modle-brandcontent-0000001181946367) | 品牌/字词推荐CPT任务。 |
+| cpdVideoContent | O | [CpdVideoContent](/docs/monetize/promotion/marketapi-modle-cpdvideocontent-0000001135467060) | 视频流类型任务使用。 |
 | <strong>子任务</strong> | | | |
-| subTasks | O | List&lt;[SubTaskDetail](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-subtaskdetail-0000001181826459)&gt; | 子任务。 |
+| subTasks | O | List&lt;[SubTaskDetail](/docs/monetize/promotion/marketapi-modle-subtaskdetail-0000001181826459)&gt; | 子任务。 |
 | physChannelPkgId | O | String | 物理渠道包ID。 |
 | installExp | O | Integer | 是否支持应用秒开。  取值范围：   - 0：不支持秒开/关闭秒开 - 1：开启秒开 |
 
@@ -97,7 +97,7 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 
 ## 响应示例

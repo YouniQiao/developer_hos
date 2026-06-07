@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "访问和管理动态照片资源"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-movingphoto
+original_url: /docs/dev/app-dev/media/medialibrary-kit/movingphoto/photoaccesshelper-movingphoto
 format: md
 ---
 
@@ -12,10 +12,10 @@ format: md
 
 * [使用安全控件保存动态照片资源](#保存动态照片资源)
 * [获取动态照片对象（MovingPhoto）](#获取动态照片对象)
-* [使用MovingPhotoView播放动态照片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/movingphotoview-guidelines)
+* [使用MovingPhotoView播放动态照片](/docs/dev/app-dev/media/medialibrary-kit/movingphoto/movingphotoview-guidelines)
 * [读取动态照片资源](#读取动态照片资源)
 
-拍摄动态照片的能力由Camera Kit提供，可参考[动态照片拍摄(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-moving-photo)。
+拍摄动态照片的能力由Camera Kit提供，可参考[动态照片拍摄(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-moving-photo)。
 
 ## 保存动态照片资源
 
@@ -32,7 +32,7 @@ format: md
 3. 调用[MediaAssetChangeRequest.createAssetRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetchangerequest#createassetrequest11)接口新建一个创建资产的变更请求，指定待创建资产的子类型为动态照片。
 4. 调用[MediaAssetChangeRequest.addResource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetchangerequest#addresource11)接口指定动态照片的图片和视频内容，动态照片的视频时长不能超过10s。
 
-   以下示例以从应用沙箱的[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)fileUri指定动态照片的图片和视频内容为例。
+   以下示例以从应用沙箱的[应用文件](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)fileUri指定动态照片的图片和视频内容为例。
 
    开发者可根据实际情况，通过ArrayBuffer的方式指定资源内容，参考[MediaAssetChangeRequest.addResource(type: ResourceType, data: ArrayBuffer)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetchangerequest#addresource11-1)。
 5. 调用[PhotoAccessHelper.applyChanges](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper#applychanges11)接口提交创建资产的变更请求。
@@ -113,13 +113,13 @@ export struct Scene1 {
 ## 获取动态照片对象
 
 * 应用可以通过Picker的方式获取用户媒体库里的动态照片对象，后续可用于在应用内播放动态照片，或是读取动态照片资源进行其他操作（如上传到应用共享给他人浏览等）。
-* 应用也可以通过传入应用沙箱的[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access)图片和视频fileUri的方式构造应用本地的动态照片对象。
+* 应用也可以通过传入应用沙箱的[应用文件](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)图片和视频fileUri的方式构造应用本地的动态照片对象。
 
-获取到动态照片对象后，如需播放动态照片请参考[使用MovingPhotoView播放动态照片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/movingphotoview-guidelines)。
+获取到动态照片对象后，如需播放动态照片请参考[使用MovingPhotoView播放动态照片](/docs/dev/app-dev/media/medialibrary-kit/movingphoto/movingphotoview-guidelines)。
 
 ### 获取媒体库动态照片对象
 
-1. 通过Picker选择动态照片的[媒体文件URI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro#媒体文件uri)。
+1. 通过Picker选择动态照片的[媒体文件URI](/docs/dev/app-dev/application-framework/core-file-kit/user-files/user-file-uri-intro#媒体文件uri)。
 2. 调用[PhotoAccessHelper.getAssets](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper#getassets-1)和[FetchResult.getFirstObject](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-fetchresult#getfirstobject-1)接口获取URI对应的PhotoAsset资产。
 3. 调用[MediaAssetManager.requestMovingPhoto](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetmanager#requestmovingphoto12)获取PhotoAsset对应的动态照片对象（MovingPhoto）。
 

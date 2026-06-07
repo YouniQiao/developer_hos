@@ -1,7 +1,7 @@
 ---
 title: 响应式应用架构
 sidebar_label: 响应式应用架构
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-responsive-layout-structure-0000001748539684
+original_url: /docs/design/general-design-basics/layout/responsive-structure
 format: md
 ---
 

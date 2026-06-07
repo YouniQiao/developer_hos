@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AppGallery Connect商品管理页面，商品价格编辑界面的默认价格表示什么意思？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-4
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-11
 format: md
 ---
 

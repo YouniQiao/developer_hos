@@ -1,7 +1,7 @@
 ---
 title: "换算规则描述"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-conversion-rule-description-0000001239182363
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363
 format: md
 ---
 
@@ -46,4 +46,4 @@ format: md
 
   ![](./img/1d683a833e4b.png)
 
-  如需查看特殊币种要求的国家或地区，请参见[特殊币种要求国家/地区](`https://developer.huawei.com/consumer/cn/doc/app/game-center-creating-product-0000001239502323#ZH-CN_TOPIC_0000001239502323__zh-cn_topic_0000001064472502_p4835122835815`)。
+  如需查看特殊币种要求的国家或地区，请参见[特殊币种要求国家/地区](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323#ZH-CN_TOPIC_0000001239502323__zh-cn_topic_0000001064472502_p4835122835815`)。

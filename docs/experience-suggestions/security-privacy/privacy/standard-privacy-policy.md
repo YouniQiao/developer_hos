@@ -1,6 +1,6 @@
 ---
 title: "通知"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-policy
+original_url: /docs/experience-suggestions/security-privacy/privacy/standard-privacy-policy
 format: md
 ---
 

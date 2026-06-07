@@ -1,6 +1,6 @@
 ---
 title: "手势事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-event
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-ui-event
 format: md
 ---
 

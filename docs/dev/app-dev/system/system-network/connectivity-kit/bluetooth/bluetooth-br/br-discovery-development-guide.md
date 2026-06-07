@@ -1,6 +1,6 @@
 ---
 title: "查找设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-discovery-development-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-discovery-development-guide
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ### 申请蓝牙权限
 
-需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，具体操作请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)和[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，具体操作请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)和[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ### 导入所需API模块
 
@@ -64,7 +64,7 @@ try {
 
 **2. 发起设备扫描**
 
-应用发起扫描后，整个扫描过程大约持续12s。应用可以对扫描到的蓝牙设备发起配对、连接和传输数据流程。具体操作请参考[配对与连接设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-pair-device-development-guide)、[连接和传输数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spp-development-guide)。
+应用发起扫描后，整个扫描过程大约持续12s。应用可以对扫描到的蓝牙设备发起配对、连接和传输数据流程。具体操作请参考[配对与连接设备](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-pair-device-development-guide)、[连接和传输数据](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/spp-development-guide)。
 
 ```
 try {
@@ -126,7 +126,7 @@ try {
 
 ### 查找已配对设备信息
 
-在发起扫描设备前，可以查找该设备是否是已配对的设备，以减少扫描设备的流程。也可以对已配对设备发起连接和传输数据流程，具体操作请参考[配对与连接设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/br-pair-device-development-guide)和[传输数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/spp-development-guide)。
+在发起扫描设备前，可以查找该设备是否是已配对的设备，以减少扫描设备的流程。也可以对已配对设备发起连接和传输数据流程，具体操作请参考[配对与连接设备](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-pair-device-development-guide)和[传输数据](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/spp-development-guide)。
 
 ```
 try {

@@ -1,6 +1,6 @@
 ---
 title: "查询关键资产(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-query
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-query
 format: md
 ---
 
@@ -52,13 +52,13 @@ format: md
 
 ![](./img/e4b2f7c9.png)
 
-在查询前，需确保已有关键资产，可参考[指南文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-add)新增关键资产，否则将抛出NOT\_FOUND错误（错误码24000002）。
+在查询前，需确保已有关键资产，可参考[指南文档](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-add)新增关键资产，否则将抛出NOT\_FOUND错误（错误码24000002）。
 
 ### 查询单条关键资产明文
 
 查询别名是demo\_alias的关键资产明文。
 
-在指定群组中查询一条关键资产明文的示例代码详见[查询单条群组关键资产明文](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-group-access-control#查询单条群组关键资产明文)。
+在指定群组中查询一条关键资产明文的示例代码详见[查询单条群组关键资产明文](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-group-access-control#查询单条群组关键资产明文)。
 
 1. 在CMake脚本中链接相关动态库。
 
@@ -116,7 +116,7 @@ format: md
 
 查询别名是demo\_alias的关键资产属性。
 
-在指定群组中查询一条关键资产属性的示例代码详见[查询单条群组关键资产属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-group-access-control#查询单条群组关键资产属性)。
+在指定群组中查询一条关键资产属性的示例代码详见[查询单条群组关键资产属性](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-group-access-control#查询单条群组关键资产属性)。
 
 1. 在CMake脚本中链接相关动态库。
 

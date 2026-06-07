@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Deveco Studio中Cmake编译选项的优先级说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-196
+original_url: /docs/FAQ/faqs-compiling-and-building-196
 ---
 
 

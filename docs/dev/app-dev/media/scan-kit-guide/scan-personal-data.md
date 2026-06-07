@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-personal-data
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-personal-data
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/space-before-function-paren"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_space-before-function-paren
+original_url: /docs/tools/coding-debug/ide_space-before-function-paren
 format: md
 ---
 

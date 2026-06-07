@@ -1,10 +1,10 @@
 ---
 title: "绑定模态页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bind-modal
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal
 format: md
 ---
 
 
-* **[绑定模态页面概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-modal-overview)**
-* **[绑定半模态页面（bindSheet）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sheet-page)**
-* **[绑定全模态页面（bindContentCover）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-contentcover-page)**
+* **[绑定模态页面概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-modal-overview)**
+* **[绑定半模态页面（bindSheet）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-sheet-page)**
+* **[绑定全模态页面（bindContentCover）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-bind-modal/arkts-contentcover-page)**

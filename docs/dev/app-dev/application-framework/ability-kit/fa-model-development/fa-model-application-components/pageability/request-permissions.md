@@ -1,6 +1,6 @@
 ---
 title: "申请授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-permissions
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/request-permissions
 format: md
 ---
 
@@ -13,5 +13,5 @@ format: md
 
 例如申请访问日历权限：
 
-1. 需要申请ohos.permission.DISTRIBUTED\_DATASYNC权限，配置方式请参见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-2. 同时需要在应用首次启动时弹窗向用户申请授权，使用方式请参见[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+1. 需要申请ohos.permission.DISTRIBUTED\_DATASYNC权限，配置方式请参见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+2. 同时需要在应用首次启动时弹窗向用户申请授权，使用方式请参见[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。

@@ -1,6 +1,6 @@
 ---
 title: "流式传输"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-syncstreamreq
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-streamreq/remote-communication-syncstreamreq
 format: md
 ---
 

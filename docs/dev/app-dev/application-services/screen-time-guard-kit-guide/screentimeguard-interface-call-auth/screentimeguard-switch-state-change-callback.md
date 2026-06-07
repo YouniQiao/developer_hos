@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "健康使用设备授权列表页中应用授权开关打开/关闭时触发回调"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-switch-state-change-callback
+original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-switch-state-change-callback
 format: md
 ---
 

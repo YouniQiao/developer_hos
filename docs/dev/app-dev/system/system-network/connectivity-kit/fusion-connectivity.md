@@ -1,9 +1,9 @@
 ---
 title: "融合短距"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fusion-connectivity
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity
 format: md
 ---
 
 
-* **[融合短距服务开发概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fusion-connectivity-overview)**
-* **[伙伴设备与HarmonyOS设备互通的开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/partneragent-life-application-guide)**
+* **[融合短距服务开发概述](/docs/dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity/fusion-connectivity-overview)**
+* **[伙伴设备与HarmonyOS设备互通的开发指南](/docs/dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity/partneragent-life-application-guide)**

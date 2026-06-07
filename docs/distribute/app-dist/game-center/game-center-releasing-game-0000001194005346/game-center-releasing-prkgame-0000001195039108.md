@@ -1,7 +1,7 @@
 ---
 title: "RPK游戏上架"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-releasing-prkgame-0000001195039108
+original_url: /docs/distribute/app-dist/game-center/game-center-releasing-game-0000001194005346/game-center-releasing-prkgame-0000001195039108
 format: md
 ---
 

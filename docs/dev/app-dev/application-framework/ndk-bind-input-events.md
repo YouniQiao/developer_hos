@@ -1,13 +1,13 @@
 ---
 title: "绑定基础输入事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-bind-input-events
+original_url: /docs/dev/app-dev/application-framework/ndk-bind-input-events
 format: md
 ---
 
 
 NDK接口提供了监听和处理基础输入事件的能力，可绑定点击事件（[NODE\_ON\_CLICK\_EVENT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)）、触摸事件（[NODE\_TOUCH\_EVENT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)）、鼠标事件（[NODE\_ON\_MOUSE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)）、悬浮事件（[NODE\_ON\_HOVER\_EVENT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)）、轴事件（[NODE\_ON\_AXIS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)）、按键事件（[NODE\_ON\_KEY\_EVENT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)），然后通过事件接收器中的回调函数获取事件的详细信息。
 
-以下示例均需基于[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)章节，详细代码请参考[完整示例](#完整示例)。
+以下示例均需基于[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)章节，详细代码请参考[完整示例](#完整示例)。
 
 ## 点击事件
 

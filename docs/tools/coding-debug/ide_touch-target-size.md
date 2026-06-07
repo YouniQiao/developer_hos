@@ -1,7 +1,7 @@
 ---
 title: "@cross-device-app-dev/touch-target-size"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_touch-target-size
+original_url: /docs/tools/coding-debug/ide_touch-target-size
 format: md
 ---
 

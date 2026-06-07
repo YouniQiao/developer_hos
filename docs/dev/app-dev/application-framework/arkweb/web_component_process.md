@@ -1,6 +1,6 @@
 ---
 title: "ArkWeb进程"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web_component_process
+original_url: /docs/dev/app-dev/application-framework/arkweb/web_component_process
 format: md
 ---
 

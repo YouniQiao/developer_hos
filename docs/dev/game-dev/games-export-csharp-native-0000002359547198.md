@@ -1,6 +1,6 @@
 ---
 title: "C#（Native）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-export-csharp-native-0000002359547198
+original_url: /docs/dev/game-dev/games-export-csharp-native-0000002359547198
 format: md
 ---
 
@@ -18,8 +18,8 @@ GMME SDK 支持IL2CPP编译。
    | mmesdk\_audio\_msg.har | 游戏多媒体服务语音消息模块，实现语音消息、语音变声功能时集成。 |
    | mmesdk\_voice.har | 游戏多媒体服务实时语音模块，实现实时语音、效果音播放、3D音效和语音变声功能时集成。 |
    | mmesdk\_rtm.har | 游戏多媒体服务实时信令模块，实现实时信令功能时集成。 |
-   | mmesdk\_spatial\_sound.har | 游戏多媒体服务3D音效模块，实现3D音效功能时集成。  注意：  实现3D音效功能时还需集成[游戏多媒体服务实时语音模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_p9472183931311)。 |
-   | mmesdk\_voice\_conversion.har | 游戏多媒体服务语音变声模块，实现语音变声功能时集成。  注意：  实现语音变声功能时还需集成[游戏多媒体服务实时语音模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_p9472183931311)**或**[游戏多媒体服务语音消息模块](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_p1447123912134)。 |
+   | mmesdk\_spatial\_sound.har | 游戏多媒体服务3D音效模块，实现3D音效功能时集成。  注意：  实现3D音效功能时还需集成[游戏多媒体服务实时语音模块](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_p9472183931311)。 |
+   | mmesdk\_voice\_conversion.har | 游戏多媒体服务语音变声模块，实现语音变声功能时集成。  注意：  实现语音变声功能时还需集成[游戏多媒体服务实时语音模块](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_p9472183931311)**或**[游戏多媒体服务语音消息模块](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_p1447123912134)。 |
 3. 在Module的**oh-package.json5**中引用游戏多媒体SDK包。
 
    ![](./img/62ed4b30.png)

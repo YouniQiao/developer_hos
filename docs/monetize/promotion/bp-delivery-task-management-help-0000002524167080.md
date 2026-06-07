@@ -1,7 +1,7 @@
 ---
 title: "查询转化助攻报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-help-0000002524167080
+original_url: /docs/monetize/promotion/bp-delivery-task-management-help-0000002524167080
 format: md
 ---
 
@@ -13,6 +13,6 @@ format: md
 ![](./img/b77362b24f4f.png) 
 
 - 转化助攻能力定向开放，请联系运营评估开通权限。
-- 转化助攻投放指引参考：[投放转化助攻任务](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-conversion-assist-0000002477652750)，具体报表指标含义请参见[报表指标说明](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-index-0000001293894160)。
+- 转化助攻投放指引参考：[投放转化助攻任务](/docs/monetize/promotion/bp-delivery-task-conversion-assist-0000002477652750)，具体报表指标含义请参见[报表指标说明](/docs/monetize/promotion/bp-delivery-task-management-index-0000001293894160)。
 
 ![](./img/95f579864f23.png "点击放大")

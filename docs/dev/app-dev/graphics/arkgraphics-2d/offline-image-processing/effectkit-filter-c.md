@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "添加图像效果（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/effectkit-filter-c
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/offline-image-processing/effectkit-filter-c
 format: md
 ---
 

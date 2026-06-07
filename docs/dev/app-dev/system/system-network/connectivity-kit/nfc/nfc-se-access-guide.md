@@ -1,6 +1,6 @@
 ---
 title: "安全单元访问开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc-se-access-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/nfc/nfc-se-access-guide
 format: md
 ---
 
@@ -39,7 +39,7 @@ format: md
 
 ![](./img/59b94a0f.png)
 
-* 从API version 9之后的应用开发新增支持[Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ability-terminology#stage模型)，作为目前主推并长期演进的模型。
+* 从API version 9之后的应用开发新增支持[Stage模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#stage模型)，作为目前主推并长期演进的模型。
 * 由于SE的安全级别较高，必须将构建模式设置为release进行打包，否则应用将无法正常运行。
 
 ```

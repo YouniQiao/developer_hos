@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "朗读控件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-textreader-guide
+original_url: /docs/dev/app-dev/ai/speech-kit-guide/speech-textreader-guide
 format: md
 ---
 
@@ -213,7 +213,7 @@ format: md
      }
    }
    ```
-9. （可选）若要配置长时任务，需要在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中添加ohos.permission.KEEP\_BACKGROUND\_RUNNING权限，并且加入backgroundModes选项，然后在readerParam中将keepBackgroundRunning配置为true，确保朗读控件后台播报正常。
+9. （可选）若要配置长时任务，需要在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中添加ohos.permission.KEEP\_BACKGROUND\_RUNNING权限，并且加入backgroundModes选项，然后在readerParam中将keepBackgroundRunning配置为true，确保朗读控件后台播报正常。
 
    ```
    // module.json5
@@ -251,7 +251,7 @@ format: md
      }
    }
    ```
-10. （可选）若要在控件使用功能时切换音色，需要在[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)中添加ohos.permission.INTERNET和ohos.permission.GET\_NETWORK\_INFO权限，确保朗读控件可以正常切换音色。
+10. （可选）若要在控件使用功能时切换音色，需要在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中添加ohos.permission.INTERNET和ohos.permission.GET\_NETWORK\_INFO权限，确保朗读控件可以正常切换音色。
 
 ```
 {

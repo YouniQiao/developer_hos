@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "高性能GPU排序"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-high-performance-gpu-sorting
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-maleoon-api/xengine-kit-high-performance-gpu-sorting
 format: md
 ---
 

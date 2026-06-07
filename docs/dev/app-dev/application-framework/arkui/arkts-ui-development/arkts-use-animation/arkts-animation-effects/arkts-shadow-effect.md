@@ -1,6 +1,6 @@
 ---
 title: "阴影"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-shadow-effect
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-effects/arkts-shadow-effect
 format: md
 ---
 

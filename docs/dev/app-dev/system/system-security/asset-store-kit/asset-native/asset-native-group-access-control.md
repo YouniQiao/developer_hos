@@ -1,16 +1,16 @@
 ---
 title: "管理群组关键资产(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-group-access-control
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-group-access-control
 format: md
 ---
 
 
 以下为管理群组关键资产使用示例，请先查看开发指导：
 
-* [新增关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-add)
-* [删除关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-remove)
-* [更新关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-update)
-* [查询关键资产(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-native-query)
+* [新增关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-add)
+* [删除关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-remove)
+* [更新关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-update)
+* [查询关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-query)
 
 ## 前置条件
 

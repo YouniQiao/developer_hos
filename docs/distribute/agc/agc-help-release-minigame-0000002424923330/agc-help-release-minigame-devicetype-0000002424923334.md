@@ -1,6 +1,6 @@
 ---
 title: "选择设备类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-devicetype-0000002424923334
+original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-devicetype-0000002424923334
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在游戏列表选择待上架的小游戏。左侧导航栏选择“应用上架 > 应用信息”，右侧页面进入“基本信息”区域。
 
    ![](../img/agc-help-release-minigame-devicetype-0000002424923334_0.png)
-2. 请根据小游戏软件包module.json5配置文件中[deviceTypes标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#devicetypes标 签)的枚举值勾选对应的设备类型。
+2. 请根据小游戏软件包module.json5配置文件中[deviceTypes标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#devicetypes标 签)的枚举值勾选对应的设备类型。
 
    ![](../img/agc-help-release-minigame-devicetype-0000002424923334_1.png)
 

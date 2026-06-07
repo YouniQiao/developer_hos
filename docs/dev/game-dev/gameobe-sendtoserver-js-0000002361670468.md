@@ -1,6 +1,6 @@
 ---
 title: "发送服务端消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-sendtoserver-js-0000002361670468
+original_url: /docs/dev/game-dev/gameobe-sendtoserver-js-0000002361670468
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 ## 前提条件
 
 * 玩家已进入房间。
-* 您已[开通实时服务器托管服务并上传代码](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-realtime-server-0000002361510716)。
+* 您已[开通实时服务器托管服务并上传代码](/docs/dev/game-dev/gameobe-realtime-server-0000002361510716)。
 
 ## 开发步骤
 

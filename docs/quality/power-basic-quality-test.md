@@ -1,13 +1,13 @@
 ---
 title: "功耗基础质量测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-power-basic-quality-test
+original_url: /docs/quality/power-basic-quality-test
 format: md
 ---
 
 
 # 功耗基础质量测试
 
-功耗基础质量测试的适用场景：保障HarmonyOS应用功耗质量和体验满足商用要求，识别应用存在的明显功耗异常，应用上架时，应用市场也会进行功耗基础质量测试，避免应用上架后出现因高耗电导致设备快速发热、续航缩短的严重问题。常用的工具有DevEco Studio开发工具中Tools->AppAnalyzer、[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing)，开发者也可以在上架前进行基础质量测试，提高应用上架的效率。
+功耗基础质量测试的适用场景：保障HarmonyOS应用功耗质量和体验满足商用要求，识别应用存在的明显功耗异常，应用上架时，应用市场也会进行功耗基础质量测试，避免应用上架后出现因高耗电导致设备快速发热、续航缩短的严重问题。常用的工具有DevEco Studio开发工具中Tools->AppAnalyzer、[DevEco Testing](/docs/dev/testing/deveco-testing)，开发者也可以在上架前进行基础质量测试，提高应用上架的效率。
 
 在应用开发过程中，由于未及时释放资源或接口不合理的使用等因素，常常会出现如下典型的功耗问题。
 

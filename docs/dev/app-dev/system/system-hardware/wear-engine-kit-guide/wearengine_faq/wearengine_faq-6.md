@@ -1,6 +1,6 @@
 ---
 title: "手机和轻量级智能穿戴设备通信，提示错误码206"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_faq-6
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-6
 format: md
 ---
 

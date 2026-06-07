@@ -1,7 +1,7 @@
 ---
 title: "SearchAdTaskStatistic"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-searchadtaskstatistic-0000001135467064
+original_url: /docs/monetize/promotion/marketapi-modle-searchadtaskstatistic-0000001135467064
 format: md
 ---
 

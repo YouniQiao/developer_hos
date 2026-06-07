@@ -1,7 +1,7 @@
 ---
 format: md
 title: "数据库查询失败 14800007"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-15
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-15
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "准备证书"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-certificates-config
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config
 format: md
 ---
 

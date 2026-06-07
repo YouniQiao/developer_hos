@@ -1,6 +1,6 @@
 ---
 title: "如何使用iconfont"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-216
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-216
 format: md
 ---
 

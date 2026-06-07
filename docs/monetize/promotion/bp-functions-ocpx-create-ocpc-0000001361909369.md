@@ -1,7 +1,7 @@
 ---
 title: "创建oCPC任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-create-ocpc-0000001361909369
+original_url: /docs/monetize/promotion/bp-functions-ocpx-create-ocpc-0000001361909369
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-连续[回传转化数据](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpx-return-0000001282520037)等于或大于两天，且每天回传量超过10，已开通oCPC白名单。
+连续[回传转化数据](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037)等于或大于两天，且每天回传量超过10，已开通oCPC白名单。
 
 ## 操作步骤
 

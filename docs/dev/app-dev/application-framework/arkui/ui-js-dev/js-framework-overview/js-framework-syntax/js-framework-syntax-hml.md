@@ -1,6 +1,6 @@
 ---
 title: "HML语法参考"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/js-framework-syntax-hml
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax/js-framework-syntax-hml
 format: md
 ---
 

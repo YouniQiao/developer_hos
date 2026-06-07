@@ -1,6 +1,6 @@
 ---
 title: "报错error: Failed to install the HAP or HSP because the dependent module does not exist."
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-toolkit-install-hsp-faild
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-install-hsp-faild
 format: md
 ---
 

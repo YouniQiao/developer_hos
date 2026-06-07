@@ -1,7 +1,7 @@
 ---
 title: "restoolе·Ҙе…·"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/restool
+original_url: /docs/tools/cli-tools/restool
 format: md
 ---
 

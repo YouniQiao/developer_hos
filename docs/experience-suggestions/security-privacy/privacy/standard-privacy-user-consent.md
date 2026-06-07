@@ -1,6 +1,6 @@
 ---
 title: "选择和同意"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-privacy-user-consent
+original_url: /docs/experience-suggestions/security-privacy/privacy/standard-privacy-user-consent
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 | 类型 | 规则 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机，穿戴 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization) |
+| 说明 | [向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization) |
 
 |  |  |
 | --- | --- |

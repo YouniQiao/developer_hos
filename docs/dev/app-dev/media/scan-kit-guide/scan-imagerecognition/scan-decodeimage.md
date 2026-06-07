@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "识别图像数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-decodeimage
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-imagerecognition/scan-decodeimage
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 ![](./img/63e7671d.png)
 
 1. 用户向应用发起识码请求。
-2. 应用通过调用[Camera Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-overview)启动相机，获取预览流数据。
+2. 应用通过调用[Camera Kit](/docs/dev/app-dev/media/camera-kit/camera-overview)启动相机，获取预览流数据。
 3. 应用通过调用Scan Kit的decodeImage接口识别码图。
 4. Scan Kit通过回调返回识别结果。
 5. 应用向用户返回扫码结果。
@@ -49,8 +49,8 @@ format: md
    import { image } from '@kit.ImageKit';
    import { hilog } from '@kit.PerformanceAnalysisKit';
    ```
-2. 使用Camera Kit启动相机能力，实现双路预览功能，具体实现详见[双路预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview)。
-3. 通过ImageReceiver实时获取预览图像数据，详见[双路预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview)，调用detectBarcode.decodeImage接口解析图像数据。请在识别完成后再释放图像数据。
+2. 使用Camera Kit启动相机能力，实现双路预览功能，具体实现详见[双路预览](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview)。
+3. 通过ImageReceiver实时获取预览图像数据，详见[双路预览](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview)，调用detectBarcode.decodeImage接口解析图像数据。请在识别完成后再释放图像数据。
 
    ```
    // 从ImageReceiver获取imgComponent: image.Component，预览流设置的宽高: width, height

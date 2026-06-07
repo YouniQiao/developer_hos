@@ -1,13 +1,13 @@
 ---
 title: "@ObservedV2装饰器和@Trace装饰器：类属性变化观测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace
 format: md
 ---
 
 
 为了增强状态管理框架对类对象中属性的观测能力，开发者可以使用@ObservedV2装饰器和@Trace装饰器装饰类以及类中的属性。
 
-@ObservedV2和@Trace提供了对嵌套类对象属性变化直接观测的能力，是状态管理V2中相对核心的能力之一。在阅读本文档前，建议提前阅读：[状态管理概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview)来了解状态管理V2整体的能力架构。
+@ObservedV2和@Trace提供了对嵌套类对象属性变化直接观测的能力，是状态管理V2中相对核心的能力之一。在阅读本文档前，建议提前阅读：[状态管理概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview)来了解状态管理V2整体的能力架构。
 
 ![](./img/b3adb46d.png)
 
@@ -80,7 +80,7 @@ struct Index {
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkUISample/arktsobservedv2andtrace/entry/src/main/ets/pages/overview/Limitations.ets#L15-L57" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：Limitations.ets</a></div>
 
 
-在上述代码中，点击Text组件增加age的值时，不会触发UI刷新。原因在于现有的状态管理框架无法观测到嵌套类中属性age的值变化。V1版本的解决方案是使用[@ObjectLink装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)与自定义组件来实现观测。
+在上述代码中，点击Text组件增加age的值时，不会触发UI刷新。原因在于现有的状态管理框架无法观测到嵌套类中属性age的值变化。V1版本的解决方案是使用[@ObjectLink装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)与自定义组件来实现观测。
 
 ```
 @Observed
@@ -330,7 +330,7 @@ struct Comp {
 }
 ```
 
-* @ObservedV2、@Trace不能与[@Observed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)、[@Track](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-track)混合使用。
+* @ObservedV2、@Trace不能与[@Observed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)、[@Track](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-data-object-state-management/arkts-track)混合使用。
 
 ```
 @Observed
@@ -344,7 +344,7 @@ class Person {
 }
 ```
 
-* 使用@ObservedV2与@Trace装饰的类不能和[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)等V1的装饰器混合使用，编译时报错。
+* 使用@ObservedV2与@Trace装饰的类不能和[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)等V1的装饰器混合使用，编译时报错。
 
 ```
 // 以@State装饰器为例
@@ -447,7 +447,7 @@ struct Index {
 
 在下面的嵌套类场景中，Pencil类是Son类中最里层的类，Pencil类被@ObservedV2装饰且属性length被@Trace装饰，此时length的变化能够被观测到。
 
-@Trace装饰器与现有状态管理框架的[@Track](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-track)与[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)装饰器的能力不同，@Track使class具有属性级更新的能力，但并不具备深度观测的能力；而@State只能观测到对象本身以及第一层的变化，对于多层嵌套场景只能通过封装自定义组件，搭配[@Observed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)和[@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)来实现观测。
+@Trace装饰器与现有状态管理框架的[@Track](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-data-object-state-management/arkts-track)与[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)装饰器的能力不同，@Track使class具有属性级更新的能力，但并不具备深度观测的能力；而@State只能观测到对象本身以及第一层的变化，对于多层嵌套场景只能通过封装自定义组件，搭配[@Observed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)和[@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)来实现观测。
 
 * 点击Button('change length')，length是被@Trace装饰的属性，它的变化可以触发关联的UI组件，即UINode (1)的刷新，并输出"id: 1 renderTimes: x"的日志，其中x根据点击次数依次增长。
 * 自定义组件Page中的son是常规变量，因此点击Button('assign Son')并不会观测到变化。
@@ -1013,7 +1013,7 @@ let isInfoByTransformed: boolean = transformedInfo instanceof Info; // true
 若为多层对象嵌套场景，需要进行额外处理，包括：
 
 * 去除序列化结果中的\_\_ob\_前缀，否则内层对象无法被正确转换。
-* 使用class-transformer库中提供的@Type装饰器（为与状态管理V2的[@Type装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-type)区分，示例中重命名为TypeFromLibrary）标记里层对象的类型。
+* 使用class-transformer库中提供的@Type装饰器（为与状态管理V2的[@Type装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-type)区分，示例中重命名为TypeFromLibrary）标记里层对象的类型。
 
 使用三方库的@Type装饰器需要安装[reflect-metadata](https://gitcode.com/openharmony-tpc/openharmony_tpc_samples/tree/master/reflect-metadata)。
 

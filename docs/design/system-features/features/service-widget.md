@@ -1,7 +1,7 @@
 ---
 title: 服务卡片
 sidebar_label: 服务卡片
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-service-widget-0000002087671904
+original_url: /docs/design/system-features/features/service-widget
 format: md
 ---
 

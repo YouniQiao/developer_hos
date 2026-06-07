@@ -1,7 +1,7 @@
 ---
 title: "atm工具"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/atm-tool
+original_url: /docs/tools/cli-tools/atm-tool
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "加密"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-crypto
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-crypto
 format: md
 ---
 

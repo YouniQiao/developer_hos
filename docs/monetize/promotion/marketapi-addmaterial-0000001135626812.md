@@ -1,7 +1,7 @@
 ---
 title: "新增素材"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-addmaterial-0000001135626812
+original_url: /docs/monetize/promotion/marketapi-addmaterial-0000001135626812
 format: md
 ---
 
@@ -44,8 +44,8 @@ format: md
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
 | fileType | M | String | 素材类型。具体枚举值如下   - PIC ：图片素材 - VIDEO：视频素材 - ATTACHMENT：资质文件 |
-| fileName | M | String | 文件名称，从[文件上传](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-fileupload-0000001135467022)中获取上传的本地真实文件名称。 |
-| fileSignature | M | String | 文件SHA256值(用于服务端校验)，从[文件上传](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-fileupload-0000001135467022)中获取文件sha256值。 |
+| fileName | M | String | 文件名称，从[文件上传](/docs/monetize/promotion/marketapi-fileupload-0000001135467022)中获取上传的本地真实文件名称。 |
+| fileSignature | M | String | 文件SHA256值(用于服务端校验)，从[文件上传](/docs/monetize/promotion/marketapi-fileupload-0000001135467022)中获取文件sha256值。 |
 | customerId | O | String | 授权合作伙伴投放时必须携带，该字段请使用<strong>投放操作账户</strong>登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)后在“我的账号信息”中查看到的“华为账号”。 |
 
 ## 请求示例
@@ -68,7 +68,7 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 | Id | O | Long | 素材ID。 |
 

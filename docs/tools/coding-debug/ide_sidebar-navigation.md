@@ -1,7 +1,7 @@
 ---
 title: "@cross-device-app-dev/sidebar-navigation"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_sidebar-navigation
+original_url: /docs/tools/coding-debug/ide_sidebar-navigation
 format: md
 ---
 

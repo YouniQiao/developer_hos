@@ -1,7 +1,7 @@
 ---
 title: "ocpx赔付天报表查询"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-ocpxpeifutianbaobiaochaxun-0000001879933938
+original_url: /docs/monetize/promotion/ads-ocpxpeifutianbaobiaochaxun-0000001879933938
 format: md
 ---
 
@@ -36,9 +36,9 @@ ocpx\_event\_types (OcpxEventType)参数：
 
 | 参数名称 | 类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- |
-| shallow\_event\_type | string | 否 | [浅层转化目标](https://developer.huawei.com/consumer/cn/doc/promotion/ads_api73-0000001058884698#section895919210500) |
-| deep\_event\_type | string | 否 | [深层转化目标](https://developer.huawei.com/consumer/cn/doc/promotion/ads_api73-0000001058884698#section19717184085911) |
-| deep\_optimize\_type | integer | 否 | [深度优化类型](https://developer.huawei.com/consumer/cn/doc/promotion/ads_api73-0000001058884698#section161959511115)，1-双出价；2-双阶段；3-单目标加强点 |
+| shallow\_event\_type | string | 否 | [浅层转化目标](/docs/monetize/promotion/ads_api73-0000001058884698#section895919210500) |
+| deep\_event\_type | string | 否 | [深层转化目标](/docs/monetize/promotion/ads_api73-0000001058884698#section19717184085911) |
+| deep\_optimize\_type | integer | 否 | [深度优化类型](/docs/monetize/promotion/ads_api73-0000001058884698#section161959511115)，1-双出价；2-双阶段；3-单目标加强点 |
 
 <strong>请求示例</strong>
 

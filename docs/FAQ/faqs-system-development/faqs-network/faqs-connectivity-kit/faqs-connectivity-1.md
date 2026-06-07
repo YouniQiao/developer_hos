@@ -1,6 +1,6 @@
 ---
 title: "三方应用如何获取蓝牙MAC地址"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-connectivity-1
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-1
 format: md
 ---
 

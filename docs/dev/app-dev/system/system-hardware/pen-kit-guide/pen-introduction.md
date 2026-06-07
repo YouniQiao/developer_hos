@@ -1,6 +1,6 @@
 ---
 title: "Pen Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pen-introduction
+original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-introduction
 format: md
 ---
 

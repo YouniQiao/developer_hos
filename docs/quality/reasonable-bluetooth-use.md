@@ -1,6 +1,6 @@
 ---
 title: "蓝牙资源合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-bluetooth-use
+original_url: /docs/quality/reasonable-bluetooth-use
 ---
 
 # 蓝牙资源合理使用
@@ -47,4 +47,4 @@ export default class EntryAbility extends UIAbility {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Bluetooth.ets#L6-L45">Bluetooth.ets</a></div>
 
-有关蓝牙相关接口的使用，详情可以参考[查找设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ble-development-guide)。
+有关蓝牙相关接口的使用，详情可以参考[查找设备](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/ble-development-guide)。

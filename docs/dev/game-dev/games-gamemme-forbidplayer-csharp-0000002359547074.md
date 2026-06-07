@@ -1,6 +1,6 @@
 ---
 title: "禁言其他玩家"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-forbidplayer-csharp-0000002359547074
+original_url: /docs/dev/game-dev/games-gamemme-forbidplayer-csharp-0000002359547074
 format: md
 ---
 

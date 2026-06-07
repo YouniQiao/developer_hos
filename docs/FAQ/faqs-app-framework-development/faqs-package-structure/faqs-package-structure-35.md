@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何将多工程的HAP打包成一个App"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-35
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-35
 ---
 
 

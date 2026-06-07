@@ -1,7 +1,7 @@
 ---
 title: 列表
 sidebar_label: 列表
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/list-0000001929853910
+original_url: /docs/design/components/container-components/list
 format: md
 ---
 
@@ -48,7 +48,7 @@ format: md
 
 **信息层次**
 
-根据信息的重要性，使用不同的字体大小、颜色和粗细来区分。详细可以参考[视觉](https://developer.huawei.com/consumer/cn/doc/design-guides/color-0000001776857164)规范中对于文本色的使用，分别使用一级文本、二级文本和三级文本来对内容做段落的区分。
+根据信息的重要性，使用不同的字体大小、颜色和粗细来区分。详细可以参考[视觉](/docs/design/general-design-basics/visual-design/color)规范中对于文本色的使用，分别使用一级文本、二级文本和三级文本来对内容做段落的区分。
 
 次要信息可使用较小的字体或灰色字体，同时，如果应用中的列表有明确的分类规格，可以使用[子标题](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-subheader)来对列表内容进行分组，这样是有效的对界面布局进行划分，提高用户的阅读效率和界面信息展示的密集程度。
 

@@ -1,6 +1,6 @@
 ---
 title: "业务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-interact-card-overview-0000002351893581
+original_url: /docs/dev/game-dev/games-quickgame-interact-card-overview-0000002351893581
 has_merged_cells: true
 format: md
 ---

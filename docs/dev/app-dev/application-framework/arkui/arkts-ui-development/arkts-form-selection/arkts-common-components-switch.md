@@ -1,6 +1,6 @@
 ---
 title: "切换按钮 (Toggle)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-components-switch
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-switch
 format: md
 ---
 

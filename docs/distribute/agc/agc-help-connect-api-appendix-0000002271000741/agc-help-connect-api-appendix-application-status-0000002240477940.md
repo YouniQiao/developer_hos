@@ -1,6 +1,6 @@
 ---
 title: "应用状态说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-application-status-0000002240477940
+original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-application-status-0000002240477940
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "如何在Native侧调用ArkTS侧异步方法，并获取异步计算结果到Native侧"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-32
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-32
 format: md
 ---
 

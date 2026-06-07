@@ -1,6 +1,6 @@
 ---
 title: "hdc工具配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-tool-config-0000002343110256
+original_url: /docs/dev/game-dev/games-binary-optimization-tool-config-0000002343110256
 format: md
 ---
 

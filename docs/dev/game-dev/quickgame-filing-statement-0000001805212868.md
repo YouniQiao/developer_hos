@@ -1,13 +1,13 @@
 ---
 title: "关于华为快应用核准（备案）服务与隐私的声明"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-statement-0000001805212868
+original_url: /docs/dev/game-dev/quickgame-filing-statement-0000001805212868
 format: md
 ---
 
 
 华为快应用核准（备案）服务是由华为软件技术有限公司（以下简称“我们”或“华为”）为您提供的代为履行快应用、快游戏的移动互联网应用程序核准（备案）（简称“核准（备案）”）手续的服务。华为非常重视您的个人信息和隐私保护，我们将会按照法律要求和业界成熟的安全标准，为您的个人信息提供相应的安全保护措施。如您是企业用户，在您向我们提供与第三方（如公司联系人、法定代表人等关联个人）有关的个人信息前，请您务必保证相关第三方个人信息主体知晓本声明，如需获得第三方个人信息主体授权或同意的，请确保获得其相应授权或同意。
 
-您可以通过访问**[个人信息收集清单](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-collection-checklist-0000001852051633)**快速了解华为快应用核准（备案）服务收集、使用个人信息的目的、方式、范围。
+您可以通过访问**[个人信息收集清单](/docs/dev/game-dev/quickgame-filing-collection-checklist-0000001852051633)**快速了解华为快应用核准（备案）服务收集、使用个人信息的目的、方式、范围。
 
 ## 我们如何收集和使用您的个人信息
 
@@ -54,7 +54,7 @@ format: md
 
 ## 第三方SDK
 
-为了向您提供部分功能/服务，例如视频活体检测等，我们集成了合作伙伴的软件工具开发包（简称“SDK”）或其他类似的应用程序。更多详情请查阅[第三方SDK列表](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-sdk-list-0000001852131589)，集中展示并动态更新嵌入的所有SDK名称、功能、目的、处理个人信息的规则（SDK清单）。
+为了向您提供部分功能/服务，例如视频活体检测等，我们集成了合作伙伴的软件工具开发包（简称“SDK”）或其他类似的应用程序。更多详情请查阅[第三方SDK列表](/docs/dev/game-dev/quickgame-filing-sdk-list-0000001852131589)，集中展示并动态更新嵌入的所有SDK名称、功能、目的、处理个人信息的规则（SDK清单）。
 
 ## 管理您的个人信息
 
@@ -65,10 +65,10 @@ format: md
   您可以在您的电脑或移动设备浏览器上用华为云账号登录[华为云核准（备案）服务](https://beian.huaweicloud.com/)，然后点击“登录备案系统”，来获取华为存储的与您的华为云账号相关的个人信息。
 * 信息更正
 
-  当您需要更新您的个人信息，请用华为云账号登录[华为云核准（备案）服务](https://beian.huaweicloud.com/)，通过“[变更核准（备案）](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-change-0000001761815056)”修改。
+  当您需要更新您的个人信息，请用华为云账号登录[华为云核准（备案）服务](https://beian.huaweicloud.com/)，通过“[变更核准（备案）](/docs/dev/game-dev/quickgame-filing-pc-change-0000001761815056)”修改。
 * 信息删除
 
-  当您需要删除您的个人信息，请用华为云账号登录[华为云核准（备案）服务](https://beian.huaweicloud.com/)，通过“[注销主体](https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-pc-terminate-0000001761919188#section142891715161813)”删除。
+  当您需要删除您的个人信息，请用华为云账号登录[华为云核准（备案）服务](https://beian.huaweicloud.com/)，通过“[注销主体](/docs/dev/game-dev/quickgame-filing-pc-terminate-0000001761919188#section142891715161813)”删除。
 
 如您对您的数据主体权利有进一步要求或存在任何疑问、意见或建议，可通过本声明中“[如何联系我们](#section89732554817)”章节中所述方式与我们取得联系，并行使您的相关权利。
 

@@ -1,7 +1,7 @@
 ---
 title: "构建系统生命周期"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-life-cycle
+original_url: /docs/tools/coding-debug/ide-hvigor-life-cycle
 format: md
 ---
 

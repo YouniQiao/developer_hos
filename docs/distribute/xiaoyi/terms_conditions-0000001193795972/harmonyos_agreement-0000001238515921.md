@@ -1,14 +1,14 @@
 ---
 title: "小艺开放平台合作协议"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/harmonyos_agreement-0000001238515921
+original_url: /docs/distribute/xiaoyi/terms_conditions-0000001193795972/harmonyos_agreement-0000001238515921
 format: md
 ---
 
 
 # 小艺开放平台合作协议
 
-**点击查看：****[协议变更点](https://developer.huawei.com/consumer/cn/doc/service/protocol-variation-0000001323720125)**
+**点击查看：****[协议变更点](/docs/distribute/xiaoyi/terms_conditions-0000001193795972/protocol-variation-0000001323720125)**
 
 **最后更新日期：2025年10月20日**
 
@@ -80,7 +80,7 @@ format: md
 
 ## **3. 您的权利与义务**
 
-3.1 您通过小艺开放平台发布的智慧服务应满足小艺开放平台的注册和审核要求，具体要求请参见小艺开放平台官网（[https://developer.huawei.com/consumer/cn/celia](https://developer.huawei.com/consumer/cn/doc/service/harmonyos_agreement-0000001238515921)）。华为有权对注册和审核要求实时进行修订，请您在注册智慧服务时以最新要求为准。您有义务按照小艺开放平台的要求对注册的智慧服务进行必要的解释与批注（包括但不限于注册的服务名称、简介、分类等）。若您未经华为许可擅自通过自有或第三方渠道对您的产品进行编辑、修改或更新，造成华为及最终用户损失的，您应予以赔偿，同时华为有权单方面终止本协议。尽管存在前述规定，华为发布您的产品不能免除您对您的产品应负的责任，您应对您的产品全权负责并承担所有相关的责任，包括但不限于您的产品违反适用法律法规、侵权等产生的责任。
+3.1 您通过小艺开放平台发布的智慧服务应满足小艺开放平台的注册和审核要求，具体要求请参见小艺开放平台官网（[https://developer.huawei.com/consumer/cn/celia](/docs/distribute/xiaoyi/terms_conditions-0000001193795972/harmonyos_agreement-0000001238515921)）。华为有权对注册和审核要求实时进行修订，请您在注册智慧服务时以最新要求为准。您有义务按照小艺开放平台的要求对注册的智慧服务进行必要的解释与批注（包括但不限于注册的服务名称、简介、分类等）。若您未经华为许可擅自通过自有或第三方渠道对您的产品进行编辑、修改或更新，造成华为及最终用户损失的，您应予以赔偿，同时华为有权单方面终止本协议。尽管存在前述规定，华为发布您的产品不能免除您对您的产品应负的责任，您应对您的产品全权负责并承担所有相关的责任，包括但不限于您的产品违反适用法律法规、侵权等产生的责任。
 
 3.2 如果您将产品注册至小艺开放平台，即视为您授权华为向最终用户展示、提供和/或许可使用您的产品。
 

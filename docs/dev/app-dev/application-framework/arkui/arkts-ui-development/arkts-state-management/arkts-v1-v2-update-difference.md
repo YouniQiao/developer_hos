@@ -1,6 +1,6 @@
 ---
 title: "状态管理V1和V2更新机制差异"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-update-difference
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-update-difference
 format: md
 ---
 
@@ -28,7 +28,7 @@ format: md
 * 对于V1，具有一层观察能力，可观察第一层对象属性的变化、第一层数据项的变化；
 * 对于V2，具有深度观察能力，能观察到嵌套对象属性或数组项变化；
 
-下面举例说明状态变量在[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)或[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)中的修改，触发UI刷新时，V1和V2的差异。
+下面举例说明状态变量在[@Component](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#component)或[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)中的修改，触发UI刷新时，V1和V2的差异。
 
 ```
 // 如下示例代码以@ObservedV2为例，如果是V1，则对应的是@Observed和@Track。
@@ -96,7 +96,7 @@ Button('Change state variable')
 
 ## V1的@Watch和V2的@Monitor差异
 
-V1的@Watch和V2的@Monitor详细差异参考[@Watch与@Monitor的对比](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor#monitor与watch对比)。下面通过例子介绍两者差异。
+V1的@Watch和V2的@Monitor详细差异参考[@Watch与@Monitor的对比](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor#monitor与watch对比)。下面通过例子介绍两者差异。
 
 ### @Watch同步执行
 
@@ -162,7 +162,7 @@ Button('Change state variable')
 
 V2状态管理相比V1状态管理，新增异步执行@Computed，@Monitor和节点标脏步骤：
 
-步骤1：事件触发修改V2状态变量， 抛[Promise](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/async-concurrency-overview#promise)异步任务；
+步骤1：事件触发修改V2状态变量， 抛[Promise](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/async-concurrency-overview#promise)异步任务；
 
 步骤2：执行事件中其他剩余逻辑，如修改其他变量。等待事件逻辑执行完成后（如onClick事件），执行Promise回调；
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "注册企业账号"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-config-agc
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-config-agc
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "开发者群组使用细则"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-developer-group-0000002552942120
+original_url: /docs/dev/game-dev/games-developer-group-0000002552942120
 format: md
 ---
 
@@ -31,4 +31,4 @@ format: md
 
 **五、操作指导**
 
-请参见[关联账号组](https://developer.huawei.com/consumer/cn/doc/games-guides/games-associated-group-0000002552782474)。
+请参见[关联账号组](/docs/dev/game-dev/games-associated-group-0000002552782474)。

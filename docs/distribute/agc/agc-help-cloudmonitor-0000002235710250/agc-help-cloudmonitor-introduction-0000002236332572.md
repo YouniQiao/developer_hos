@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-introduction-0000002236332572
+original_url: /docs/distribute/agc/agc-help-cloudmonitor-0000002235710250/agc-help-cloudmonitor-introduction-0000002236332572
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "获取目标应用的URL信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtaining-target-app-url-info
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/obtaining-target-app-url-info
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 开发者在使用[UIAbilityContext.openLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#openlink12)接口拉起目标应用时，需要传入目标应用的URL信息。本章节主要介绍如何获取目标应用的URL信息。
 
-假设目标应用的UIAbility的[module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)配置信息如下：
+假设目标应用的UIAbility的[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)配置信息如下：
 
 ```
 {
@@ -37,11 +37,11 @@ format: md
 
 ## 环境要求
 
-开发者需要先获取[hdc工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
+开发者需要先获取[hdc工具](/docs/dev/app-dev/system/hdc)。
 
 ## 操作步骤
 
-1. 使用[bm工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool)获取目标应用的bundleName。
+1. 使用[bm工具](/docs/dev/app-dev/system/bm-tool)获取目标应用的bundleName。
 
    1. 获取当前设备上所有已安装应用的bundleName，保存结果。
 
@@ -54,7 +54,7 @@ format: md
       新增的bundleName即为目标应用包名，本例中假设为com.example.myapplication。
 2. 根据bundleName获取目标应用的Mission ID。
 
-   1. 使用[aa工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool)，获取目标应用的abilityName。
+   1. 使用[aa工具](/docs/dev/app-dev/system/aa-tool)，获取目标应用的abilityName。
 
       ```
       hdc shell "aa dump -l | grep com.example.myapplication"

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "PDF缩略图转换为图片"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-pdfview-page2img
+original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-page2img
 format: md
 ---
 

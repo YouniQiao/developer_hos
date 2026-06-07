@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "修改翻页方式、字体大小及行间距"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-setting-other
+original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-other
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 ## 开发准备
 
-在修改翻页方式、字体大小及行间距之前，请先确保已经“[构建阅读器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/reader-read-page)”。
+在修改翻页方式、字体大小及行间距之前，请先确保已经“[构建阅读器](/docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-read-page)”。
 
 ## 开发步骤
 

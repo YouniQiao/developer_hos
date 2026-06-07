@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "系统后台切应用前台接续下载资源包"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-back-fore
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-back-fore
 format: md
 ---
 

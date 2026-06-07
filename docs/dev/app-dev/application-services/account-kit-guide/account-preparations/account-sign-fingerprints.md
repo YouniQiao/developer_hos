@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "配置签名和指纹"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints
 format: md
 ---
 

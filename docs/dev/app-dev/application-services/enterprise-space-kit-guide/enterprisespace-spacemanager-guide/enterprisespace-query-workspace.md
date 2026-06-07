@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "查询工作空间"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-query-workspace
+original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-query-workspace
 format: md
 ---
 

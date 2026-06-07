@@ -1,6 +1,6 @@
 ---
 title: "@Provider装饰器和@Consumer装饰器：跨组件层级双向同步"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 @Provider和@Consumer属于状态管理V2装饰器，所以只能在@ComponentV2中才能使用，在@Component中使用会编译报错。
 
-@Provider和@Consumer提供了跨组件层级数据双向同步的能力。在阅读本文档前，建议提前阅读：[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)。常见问题请参考[组件内状态变量常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-faq-inner-component)。
+@Provider和@Consumer提供了跨组件层级数据双向同步的能力。在阅读本文档前，建议提前阅读：[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)。常见问题请参考[组件内状态变量常见问题](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq/arkts-state-management-faq-inner-component)。
 
 ![](./img/0bd8acd5.png)
 
@@ -38,7 +38,7 @@ format: md
 
 ## @Provider和@Consumer vs @Provide和@Consume能力对比
 
-在状态管理V1版本中，提供跨组件层级双向的装饰器为[@Provide和@Consume](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)，当前文档介绍的是状态管理V2装饰器@Provider和@Consumer。虽然两者名字和功能类似，但在特性上还存在一些差异。
+在状态管理V1版本中，提供跨组件层级双向的装饰器为[@Provide和@Consume](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)，当前文档介绍的是状态管理V2装饰器@Provider和@Consumer。虽然两者名字和功能类似，但在特性上还存在一些差异。
 
 如果开发者不了解状态管理V1中的@Provide和@Consume，可以直接跳过本节。
 
@@ -46,7 +46,7 @@ format: md
 | --- | --- | --- |
 | @Consume(r) | 必须本地初始化，当找不到@Provider时使用本地默认值。 | API version 20以前，@Consume禁止本地初始化，当找不到对应@Provide的时候，会抛出异常；从API version 20开始，@Consume支持设置默认值，如果没有设置默认值，且找不到对应@Provide时，会抛出异常。 |
 | 支持类型 | 支持function。 | 不支持function。 |
-| 观察能力 | 仅能观察自身赋值变化，如果要观察嵌套场景，配合[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)一起使用。 | 观察第一层变化，如果要观察嵌套场景，配合[@Observed和@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)一起使用。 |
+| 观察能力 | 仅能观察自身赋值变化，如果要观察嵌套场景，配合[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)一起使用。 | 观察第一层变化，如果要观察嵌套场景，配合[@Observed和@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)一起使用。 |
 | alias和属性名 | alias是唯一匹配的key，缺省时默认属性名为alias。 | alias和属性名都为key，优先匹配alias，匹配不到可以匹配属性名。 |
 | @Provide(r) 从父组件初始化 | 不允许。 | 允许。 |
 | @Provide(r)支持重载 | 默认开启，即@Provider可以重名，@Consumer向上查找最近的@Provider。 | 默认关闭，即在组件树上不允许有同名@Provide。如果需要重载，则需要配置allowOverride。 |
@@ -568,8 +568,8 @@ struct Child {
 
 ### @Provider和@Consumer装饰复杂类型，配合@Trace一起使用
 
-1. @Provider和@Consumer只能观察到数据本身的变化。如果需要观察其装饰的复杂数据类型的属性变化，可以配合@Trace一起使用，也可以使用[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-makeobserved)将非可观察数据变为可观察数据。
-2. 装饰内置类型：Array、Map、Set、Date时，可以观察到某些API的变化，观察能力同[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace#观察变化)。
+1. @Provider和@Consumer只能观察到数据本身的变化。如果需要观察其装饰的复杂数据类型的属性变化，可以配合@Trace一起使用，也可以使用[makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)将非可观察数据变为可观察数据。
+2. 装饰内置类型：Array、Map、Set、Date时，可以观察到某些API的变化，观察能力同[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace#观察变化)。
 
 ```
 @ObservedV2
@@ -748,7 +748,7 @@ struct Child {
 
 下面给出一个示例，实现如下功能：
 
-1. BuilderNode通过[全局自定义构建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder#全局自定义构建函数)构建组件树，组件树的根[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)节点可通过[getFrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#getframenode)获取，该节点可直接由[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)返回并挂载于[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)节点下。
+1. BuilderNode通过[全局自定义构建函数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder#全局自定义构建函数)构建组件树，组件树的根[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)节点可通过[getFrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#getframenode)获取，该节点可直接由[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)返回并挂载于[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)节点下。
 2. 挂载到自定义组件节点树时，BuilderNode会通过addBuilderNode方法挂载在自定义组件下，此时BuilderNode节点下的@Consumer会向上查找@Provider，根据key的匹配规则找到最近的@Provider后，会和@Provider建立双向同步关系。如果找不到配对的@Provider，则@Consumer仍使用默认值。
 3. 建立双向同步的关系后，如果@Provider装饰变量的值和@Consumer的默认值不同，则会回调@Consumer的@Monitor方法，以及与@Consumer有同步关系的变量的@Monitor方法，例如：@Consumer通知其子组件中的@Param触发@Monitor方法。
 4. BuilderNode从组件树卸载后，@Consumer会再次试图查找对应的@Provider，如果发现从组件树卸载后无法再找到之前配对的@Provider，则断开和@Provider的双向同步关系，@Consumer装饰的变量恢复成默认值。

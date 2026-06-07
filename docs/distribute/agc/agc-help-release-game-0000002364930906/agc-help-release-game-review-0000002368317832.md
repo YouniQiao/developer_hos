@@ -1,6 +1,6 @@
 ---
 title: "配置应用审核信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-review-0000002368317832
+original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-review-0000002368317832
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 #### 前提条件
 
-已根据[准备游戏信息和素材](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-prepare-0000002406557837#section1266325574712)准备应用审核信息的自测文件。
+已根据[准备游戏信息和素材](/docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-prepare-0000002406557837#section1266325574712)准备应用审核信息的自测文件。
 
 #### 操作步骤
 

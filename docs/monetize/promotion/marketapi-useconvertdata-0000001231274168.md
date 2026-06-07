@@ -1,7 +1,7 @@
 ---
 title: "使用转化行为数据创建人群定向"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-useconvertdata-0000001231274168
+original_url: /docs/monetize/promotion/marketapi-useconvertdata-0000001231274168
 format: md
 ---
 
@@ -39,7 +39,7 @@ format: md
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
 | groupName | M | String(64) | 标签分组名称。 |
-| condition | M | String | 标签条件，标签条件可为单个标签；标签条件为多个标签时，多个标签枚举值之间用逗号分隔，格式参考请求示例，取值请参考[Condition](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-condition-0000001181946369)。  说明：  后续标签可能会发生变动，请关注[接口更新说明](https://developer.huawei.com/consumer/cn/doc/promotion/market-changing-history-0000001195355715)。 |
+| condition | M | String | 标签条件，标签条件可为单个标签；标签条件为多个标签时，多个标签枚举值之间用逗号分隔，格式参考请求示例，取值请参考[Condition](/docs/monetize/promotion/marketapi-modle-condition-0000001181946369)。  说明：  后续标签可能会发生变动，请关注[接口更新说明](/docs/monetize/promotion/market-changing-history-0000001195355715)。 |
 | customerId | O | String | 授权合作伙伴投放时必须携带，该字段请使用<strong>投放操作账户</strong>登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)后在“我的账号信息”中查看到的“华为账号”。 |
 | groupId | M | String | 创建时此字段可填空。 |
 
@@ -64,7 +64,7 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 | groupId | O | String | 新建人群定向后的groupId。 |
 

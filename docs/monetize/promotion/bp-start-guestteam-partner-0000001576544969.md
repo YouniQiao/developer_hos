@@ -1,7 +1,7 @@
 ---
 title: "直客协作者账户"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-guestteam-partner-0000001576544969
+original_url: /docs/monetize/promotion/bp-start-guestteam-partner-0000001576544969
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 
    ![](./img/b8815700b2f0.png "点击放大")
 
-协作者账户可以查看本账户的投放数据，查看操作与直客账户相同，具体请参见[查询整体数据报表](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-overall-data-0000001294054000)。
+协作者账户可以查看本账户的投放数据，查看操作与直客账户相同，具体请参见[查询整体数据报表](/docs/monetize/promotion/bp-delivery-task-management-overall-data-0000001294054000)。
 
 ## 卸载召回解决方案任务投放说明
 
@@ -62,7 +62,7 @@ format: md
 
 ![](./img/d431f7956833.png) 
 
-- 详细的管理定向策略操作，请参考[创建定向包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-target-strategy-0000001337229437)。
+- 详细的管理定向策略操作，请参考[创建定向包](/docs/monetize/promotion/bp-functions-target-strategy-0000001337229437)。
 - 协作者可以自行新建定向包，并且其他协作者能看到并使用。
 
 ### 智能分包管理
@@ -71,7 +71,7 @@ format: md
 
 ![](./img/53e4c16dfb63.png) 
 
-- 详细的智能分包管理操作，请参考[新建智能分包](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)。
+- 详细的智能分包管理操作，请参考[新建智能分包](/docs/monetize/promotion/bp-functions-intelligent-subcontract-create-0000001337248557)。
 - 协作者可自行新建智能分包，并且其他协作者能看到并使用。
 
 ![](./img/ff68eac721e8.png "点击放大")

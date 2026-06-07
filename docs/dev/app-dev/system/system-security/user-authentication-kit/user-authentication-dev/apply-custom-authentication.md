@@ -1,6 +1,6 @@
 ---
 title: "切换自定义认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apply-custom-authentication
+original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/apply-custom-authentication
 format: md
 ---
 
@@ -33,7 +33,7 @@ format: md
 
 ## 开发示例
 
-针对需要切换自定义认证方式的场景，发起认证请求的方式请参考[发起认证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-authentication)，但传入的widgetParam必须包含navigationButtonText字段。
+针对需要切换自定义认证方式的场景，发起认证请求的方式请参考[发起认证](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/start-authentication)，但传入的widgetParam必须包含navigationButtonText字段。
 
 当前示例仅展示如何配置界面和选择切换到自定义认证界面。具体拉起的页面及对应页面的实现，请开发者自行实现，代码插入位置可参考注释提示。
 

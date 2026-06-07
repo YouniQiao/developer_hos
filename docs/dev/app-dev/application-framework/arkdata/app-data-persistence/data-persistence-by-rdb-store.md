@@ -1,6 +1,6 @@
 ---
 title: "通过关系型数据库实现数据持久化 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-rdb-store
+original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-rdb-store
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 关系型数据库基于SQLite组件，适用于存储包含复杂关系数据的场景，比如一个班级的学生信息，需要包括姓名、学号、各科成绩等，又或者公司的雇员信息，需要包括姓名、工号、职位等，由于数据之间有较强的对应关系，复杂程度比键值型数据更高，此时需要使用关系型数据库来持久化保存数据。
 
-大数据量场景下查询数据可能会导致耗时长甚至应用卡死，如有相关操作可参考文档[批量数据写数据库场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/batch-database-operations-guide)，且有建议如下：
+大数据量场景下查询数据可能会导致耗时长甚至应用卡死，如有相关操作可参考文档[批量数据写数据库场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/batch-database-operations-guide)，且有建议如下：
 
 * 单次查询数据量不超过5000条。
 * 在[TaskPool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool)中查询。
@@ -31,7 +31,7 @@ format: md
 
 ## 约束限制
 
-* 系统默认日志方式是[WAL](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-terminology#wal模式)（Write Ahead Log）模式，系统默认落盘方式是[FULL模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-terminology#full模式)。
+* 系统默认日志方式是[WAL](/docs/dev/app-dev/application-framework/arkdata/data-terminology#wal模式)（Write Ahead Log）模式，系统默认落盘方式是[FULL模式](/docs/dev/app-dev/application-framework/arkdata/data-terminology#full模式)。
 * 数据库中常驻有4个读连接和1个写连接。读连接会动态扩充，无可用读连接时，会创建新的读连接执行读操作。写连接不会动态扩充，无可用写连接时，会等待连接释放后执行写操作。
 * 为保证数据的准确性，数据库同一时间只能支持一个写操作。
 * 当应用被卸载完成后，设备上的相关数据库文件及临时文件会被自动清除。
@@ -59,7 +59,7 @@ format: md
 
 因Stage模型、FA模型的差异，个别示例代码提供了在两种模型下的对应示例；示例代码未区分模型或没有对应注释说明时默认在两种模型下均适用。
 
-关系型数据库操作或者存储过程中，有可能会因为各种原因发生非预期的数据库异常情况（抛出14800011），此时需要对数据库进行重建并恢复数据，以保障正常的应用开发，具体可见[关系型数据库异常重建](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore#关系型数据库异常重建)。
+关系型数据库操作或者存储过程中，有可能会因为各种原因发生非预期的数据库异常情况（抛出14800011），此时需要对数据库进行重建并恢复数据，以保障正常的应用开发，具体可见[关系型数据库异常重建](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-backup-and-restore#关系型数据库异常重建)。
 
 1. 使用关系型数据库实现数据持久化，需要获取一个RdbStore，其中包括建库、建表、升降级等操作。推荐使用事务接口保证数据库升级流程原子性。
 
@@ -474,7 +474,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datapersistence/RdbDataPersistence.ets#L242-L297" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：RdbDataPersistence.ets</a></div>
 
-6. 在同路径下备份数据库。关系型数据库支持手动备份和自动备份（仅系统应用可用）两种方式，具体可见[关系型数据库备份](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore#关系型数据库备份)。
+6. 在同路径下备份数据库。关系型数据库支持手动备份和自动备份（仅系统应用可用）两种方式，具体可见[关系型数据库备份](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-backup-and-restore#关系型数据库备份)。
 
    此处以手动备份为例：
 
@@ -496,7 +496,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/ArkData/RelationalStore/DataSyncAndPersistence/entry/src/main/ets/pages/datapersistence/RdbDataPersistence.ets#L299-L311" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：RdbDataPersistence.ets</a></div>
 
-7. 从备份数据库中恢复数据。关系型数据库支持两种方式：恢复手动备份数据和恢复自动备份数据（仅系统应用可用），具体可见[关系型数据库数据恢复](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-backup-and-restore#关系型数据库数据恢复)。
+7. 从备份数据库中恢复数据。关系型数据库支持两种方式：恢复手动备份数据和恢复自动备份数据（仅系统应用可用），具体可见[关系型数据库数据恢复](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-backup-and-restore#关系型数据库数据恢复)。
 
    此处以调用[restore](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbstore#restore)接口恢复手动备份数据为例：
 

@@ -1,7 +1,7 @@
 ---
 title: "知识库节点"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/knowledge-base-node-0000002437625918
+original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/knowledge-base-node-0000002437625918
 format: md
 ---
 

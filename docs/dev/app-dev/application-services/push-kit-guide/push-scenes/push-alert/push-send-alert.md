@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发送通知消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-alert
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-send-alert
 format: md
 ---
 
@@ -18,12 +18,12 @@ format: md
 
 Push Kit根据消息内容，将通知消息分类为**服务与通讯**、**资讯营销**两大类别，开放通知消息自分类权益。
 
-两种类型的通知消息在**提醒方式、消息展示位置、推送数量**上皆存在差异。更多说明与权益申请详情参见[申请通知消息自分类权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请通知消息自分类权益)。
+两种类型的通知消息在**提醒方式、消息展示位置、推送数量**上皆存在差异。更多说明与权益申请详情参见[申请通知消息自分类权益](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#申请通知消息自分类权益)。
 
 ![](./img/3dd7b8c3.png)
 
 * **若您未申请通知消息自分类权益，则推送的通知消息默认为资讯营销类（[category](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)取值为MARKETING）消息**；若您仅需发送资讯营销类消息，则无需申请通知消息自分类权益。
-* 资讯营销类消息每天可发送消息数量根据应用类型分为**2条**或**5条**，详情请参见[通知消息推送数量管理规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#通知消息推送数量管理规则)。若您发送通知消息被频控，请尝试发送测试消息或申请自分类权益，详情请参见[消息频控](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-msg-freq-control)。
+* 资讯营销类消息每天可发送消息数量根据应用类型分为**2条**或**5条**，详情请参见[通知消息推送数量管理规则](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#通知消息推送数量管理规则)。若您发送通知消息被频控，请尝试发送测试消息或申请自分类权益，详情请参见[消息频控](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-msg-freq-control)。
 
 ## 频控规则
 
@@ -31,11 +31,11 @@ Push Kit根据消息内容，将通知消息分类为**服务与通讯**、**资
 
 **正式发布阶段**，单设备单应用下每日推送消息总条数受[设备消息频控](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-msg-freq-control#设备消息频控)限制，系统会根据现网使用场景和流量进行管控，不合理的使用场景系统会进行频控。
 
-服务通讯类消息与资讯营销类消息存在不同的频控策略，详情请参见[通知消息推送数量管理规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#通知消息推送数量管理规则)。
+服务通讯类消息与资讯营销类消息存在不同的频控策略，详情请参见[通知消息推送数量管理规则](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#通知消息推送数量管理规则)。
 
 ## 开发步骤
 
-1. 参见指导[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
+1. 参见指导[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)。
 2. 为确保应用可正常收到消息，应用发送通知前需调用[requestEnableNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#notificationmanagerrequestenablenotification10-1)()方法弹出提醒，告知用户需要允许接收通知消息。示例代码如下：
 
    ```
@@ -65,11 +65,11 @@ Push Kit根据消息内容，将通知消息分类为**服务与通讯**、**资
    }
    ```
 3. 为确保点击消息可以正常跳转应用页面，在应用项目中完成skills标签配置，详情请参见[点击消息动作](#点击消息动作)。
-4. 应用服务端调用Push Kit服务端的REST API推送通知消息。若未[开通权益](#开通权益)，或开通的权益类型与[调用REST API推送场景化消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-scenes-send)时，请求体中携带的[category](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)字段值不一致，消息将会默认归为**资讯营销类消息**，则会受到“单个应用每日每设备推送数量为2条或5条”的[频控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#通知消息推送数量管理规则)限制。
+4. 应用服务端调用Push Kit服务端的REST API推送通知消息。若未[开通权益](#开通权益)，或开通的权益类型与[调用REST API推送场景化消息](/docs/dev/app-dev/application-services/push-kit-guide/push-server/push-scenes-send)时，请求体中携带的[category](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)字段值不一致，消息将会默认归为**资讯营销类消息**，则会受到“单个应用每日每设备推送数量为2条或5条”的[频控](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#通知消息推送数量管理规则)限制。
 
    ![](./img/d545bd3e.png)
 
-   * 本示例仅包含REST API中部分消息字段，关于服务端开发的更多详情请参见[端云调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-server-intro)。
+   * 本示例仅包含REST API中部分消息字段，关于服务端开发的更多详情请参见[端云调试](/docs/dev/app-dev/application-services/push-kit-guide/push-server/push-server-intro)。
    * 请使用V3版本的请求URL（https://push-api.cloud.huawei.com/v3/[projectId]/messages:send）进行消息推送。
 
      请求URL版本为V3（https://push-api.cloud.huawei.com/v3/[projectId]/messages:send）时，仅支持给HarmonyOS Next/5.x及之后的系统版本推送通知；版本为V2（https://push-api.cloud.huawei.com/v2/[projectId]/messages:send）时，仅支持给HarmonyOS 3.x/4.x的系统版本推送通知。
@@ -115,18 +115,18 @@ Push Kit根据消息内容，将通知消息分类为**服务与通讯**、**资
    * push-type：0表示Alert消息，此处为通知消息场景。
    * category：表示通知消息自分类的类别，MARKETING为资讯营销类消息，更多类别可参见[category](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)获取。
    * actionType：0表示[点击消息进入应用首页](#点击消息进入应用首页)，1表示[点击消息后进入应用内页](#点击消息进入应用内页)。
-   * token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)获取。
+   * token：Push Token，可参见[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)获取。
    * testMessage：（选填）测试消息标识，true表示测试消息。每个项目每天限制发送1000条测试消息，单次推送可发送Token数不超过10个。详情请参见[testMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#pushoptions)。
    * ttl：（选填）消息缓存时间，详见[ttl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#pushoptions)。
    * notifyId：（选填）自定义消息标识字段。不携带或者设置-1时，Push Kit自动为每条消息生成一个唯一标识；不同的通知消息可以拥有相同的notifyId，实现新消息覆盖旧消息功能。仅支持数字，范围 [0, 2147483647]，若要**用于消息撤回则必填**。详情请参见[notifyId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)。
    * foregroundShow：（选填）通知消息是否在应用在前台时候展示。true表示应用在前后台都展示。false表示应用只在后台展示，应用在前台时，通知栏消息将不会展示。默认为true。foregroundShow为true时，[receiveMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicereceivemessage)不会被触发，无法获取消息数据。
-5. 发送消息推送请求，请求响应请参见[响应参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-response)。请求发送成功后，可检查设备是否收到通知消息，如果设备未收到通知消息，请参见[常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-2)进行排查。
+5. 发送消息推送请求，请求响应请参见[响应参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-response)。请求发送成功后，可检查设备是否收到通知消息，如果设备未收到通知消息，请参见[常见问题](/docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-2)进行排查。
 
 ## 点击消息动作
 
 ### 点击消息进入应用首页
 
-1. 检查项目模块级别下的**src/main/module.json5**中的[skills标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)配置，其中用于标识**应用首页**的skill（即配置了"entity.system.home"和"ohos.want.action.home"的skill）中**不要配置uris，否则消息会接收不到**。
+1. 检查项目模块级别下的**src/main/module.json5**中的[skills标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)配置，其中用于标识**应用首页**的skill（即配置了"entity.system.home"和"ohos.want.action.home"的skill）中**不要配置uris，否则消息会接收不到**。
 
    ![](./img/3d0dc6ef.png)
 
@@ -207,9 +207,9 @@ Push Kit根据消息内容，将通知消息分类为**服务与通讯**、**资
 
 ### 点击消息进入应用内页
 
-1. 在您的项目模块级别下的**src/main/module.json5** 中设置目标Ability中[skills标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)的actions或uris值，两种方式如下：
+1. 在您的项目模块级别下的**src/main/module.json5** 中设置目标Ability中[skills标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)的actions或uris值，两种方式如下：
 
-   方式一：在[skills标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)中新增一个**独立的skill对象**，配置**actions参数**用于点击消息进入应用内页，示例如下：
+   方式一：在[skills标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)中新增一个**独立的skill对象**，配置**actions参数**用于点击消息进入应用内页，示例如下：
 
    ```
    {
@@ -235,7 +235,7 @@ Push Kit根据消息内容，将通知消息分类为**服务与通讯**、**资
    }
    ```
 
-   方式二：在[skills标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)中新增一个**独立的skill对象**，配置**uris参数**用于点击消息进入应用内页（**必须同时配置actions参数和uris参数，actions参数为空**），示例如下：
+   方式二：在[skills标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)中新增一个**独立的skill对象**，配置**uris参数**用于点击消息进入应用内页（**必须同时配置actions参数和uris参数，actions参数为空**），示例如下：
 
    ```
    {
@@ -309,7 +309,7 @@ Push Kit根据消息内容，将通知消息分类为**服务与通讯**、**资
 
    * actionType：点击消息动作，1表示点击消息后进入应用内页。当本字段设置为1时，uri和action至少填写一个，若都填写优先寻找与action匹配的应用页面。若action和uri都未匹配到应用页面，则点击消息后会进入应用首页。
    * action：表示能够接收[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-ability-want)的action值的集合，取值可以自定义。
-   * uri：表示与[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-ability-want)中uris相匹配的集合，uris规则请参见[skills标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)。
+   * uri：表示与[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-ability-want)中uris相匹配的集合，uris规则请参见[skills标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)。
 
    ![](./img/07be8d0a.png)
 
@@ -345,7 +345,7 @@ Push Kit根据消息内容，将通知消息分类为**服务与通讯**、**资
    ```
 
    data：点击消息时携带的JSON格式的数据。
-2. 在待跳转页面（以TestAbility为例）中的[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)()方法中覆盖重写如下代码（[冷启动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction#目标uiability冷启动)时进入该生命周期回调）：
+2. 在待跳转页面（以TestAbility为例）中的[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)()方法中覆盖重写如下代码（[冷启动](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-intra-device-interaction#目标uiability冷启动)时进入该生命周期回调）：
 
    ```
    // 文件路径: src/main/ets/abilities/TestAbility.ets
@@ -363,7 +363,7 @@ Push Kit根据消息内容，将通知消息分类为**服务与通讯**、**资
    }
    ```
 
-   [onNewWant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onnewwant)()方法中覆盖重写如下代码（[热启动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction#目标uiability热启动)时进入该生命周期回调）：
+   [onNewWant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onnewwant)()方法中覆盖重写如下代码（[热启动](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-intra-device-interaction#目标uiability热启动)时进入该生命周期回调）：
 
    ```
    // 文件路径: src/main/ets/abilities/TestAbility.ets
@@ -589,8 +589,8 @@ Push Kit支持华为账号和应用账号两种账号类型：
 
 若在账号登出时未做[unbindAppProfileId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushserviceunbindappprofileid-1)()解绑，或者在账号切换时未做[bindAppProfileId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicebindappprofileid-1)()重新绑定，则会导致应用依然能接收到原账号的通知消息。
 
-1. 参见指导[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
-2. 为确保应用可正常收到通知消息，建议应用发送通知前调用[requestEnableNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#notificationmanagerrequestenablenotification10-1)()方法弹出提醒，告知用户需要允许接收通知消息。详情请参见Notification Kit-[请求通知授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-enable)。
+1. 参见指导[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)。
+2. 为确保应用可正常收到通知消息，建议应用发送通知前调用[requestEnableNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#notificationmanagerrequestenablenotification10-1)()方法弹出提醒，告知用户需要允许接收通知消息。详情请参见Notification Kit-[请求通知授权](/docs/dev/app-dev/application-services/notification-kit/notification-enable)。
 3. 为待绑定的账号生成一个非空唯一的profileId（不建议使用真实的账号id，推荐使用账号id自行生成对应的匿名标识，能与该账号id建立唯一映射关系即可，生成算法无限制），调用[bindAppProfileId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicebindappprofileid-1)()方法，添加当前设备上该用户与应用的关系，代码示例：
 
    ```
@@ -645,7 +645,7 @@ Push Kit支持华为账号和应用账号两种账号类型：
    * Authorization：JWT格式字符串，可参见[Authorization](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-struct#request-header)获取。
    * push-type：0表示通知消息场景。
    * actionType：0表示点击消息打开应用首页。
-   * token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)获取。
+   * token：Push Token，可参见[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)获取。
    * profileId：应用内账号id匿名标识。详情请参见[profileId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)。
 
    消息发送成功后，Push Kit会先校验绑定账号时的[AppProfileType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushcommon#appprofiletype)（华为账号或应用账号）：

@@ -1,6 +1,6 @@
 ---
 title: "页面路由 (@ohos.router)(不推荐)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-routing
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/4422da41.png)
 
-[组件导航 (Navigation)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-architecture)具有更强的功能和自定义能力，推荐使用该组件作为应用的路由框架。Navigation和Router的差异可参考[Router切换Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-router-to-navigation)指导。
+[组件导航 (Navigation)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-architecture)具有更强的功能和自定义能力，推荐使用该组件作为应用的路由框架。Navigation和Router的差异可参考[Router切换Navigation](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-router-to-navigation)指导。
 
 ## 页面跳转
 
@@ -26,7 +26,7 @@ Router模块提供了两种跳转模式，分别是[pushUrl](https://developer.h
 
 ![](./img/2400f8b4.png)
 
-* 创建新页面时，请参考[构建第二个页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-with-ets-stage#构建第二个页面)配置第二个页面的路由。
+* 创建新页面时，请参考[构建第二个页面](/docs/dev/app-dev/getting-started/quick-start/start-with-ets-stage#构建第二个页面)配置第二个页面的路由。
 * 页面栈的最大容量为32个页面。如果超过这个限制，可以调用[clear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#clear)方法清空历史页面栈，释放内存空间。
 
 同时，Router模块提供了两种实例模式，分别是Standard和Single。这两种模式决定了目标url是否会对应多个实例。
@@ -262,7 +262,7 @@ private age: number = this.params.info.age; // 获取age属性的值
 
 ![](./img/c74e1ec0.gif)
 
-直接使用router可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取绑定实例的router。
+直接使用router可能导致[UI上下文不明确](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取绑定实例的router。
 
 可以使用以下几种方式返回页面：
 
@@ -349,7 +349,7 @@ this.getUIContext().getRouter().back();
 
 ![](./img/a52fa2da.png)
 
-直接使用router可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取绑定实例的router。
+直接使用router可能导致[UI上下文不明确](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取绑定实例的router。
 
 ```
 @Entry
@@ -376,11 +376,11 @@ struct Home {
 
 当使用back方法返回到指定页面时，原栈顶页面（包括）到指定页面（不包括）之间的所有页面栈都将从栈中弹出并销毁。
 
-另外，如果使用back方法返回到原来的页面，原页面不会被重复创建，因此使用[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)声明的变量不会重复声明，也不会触发页面的[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)生命周期回调。如果需要在原页面中使用返回页面传递的自定义参数，可以在需要的位置进行参数解析。例如，在onPageShow生命周期回调中进行参数解析。
+另外，如果使用back方法返回到原来的页面，原页面不会被重复创建，因此使用[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)声明的变量不会重复声明，也不会触发页面的[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)生命周期回调。如果需要在原页面中使用返回页面传递的自定义参数，可以在需要的位置进行参数解析。例如，在onPageShow生命周期回调中进行参数解析。
 
 ## 生命周期
 
-[router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-router)页面生命周期，即被[@Entry](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#entry)装饰的组件生命周期，提供以下生命周期接口，其中onPageShow和onPageHide的生命周期时序图可参考Router切换Navigation中的[生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-router-to-navigation#生命周期)：
+[router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-router)页面生命周期，即被[@Entry](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#entry)装饰的组件生命周期，提供以下生命周期接口，其中onPageShow和onPageHide的生命周期时序图可参考Router切换Navigation中的[生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-router-to-navigation#生命周期)：
 
 * [onPageShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#onpageshow)：页面每次显示时触发一次，包括路由过程、应用进入前台等场景。
 * [onPageHide](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#onpagehide)：页面每次隐藏时触发一次，包括路由过程、应用进入后台等场景。
@@ -497,7 +497,7 @@ router自定义转场可以通过[pageTransition](https://developer.huawei.com/c
 
 为了实现这个功能，可以使用页面路由Router模块提供的两个方法：[showAlertBeforeBackPage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#showalertbeforebackpage)和[back](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#back)来实现这个功能。
 
-直接使用router可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取绑定实例的router。
+直接使用router可能导致[UI上下文不明确](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取绑定实例的router。
 
 如果想要在目标界面开启页面返回询问框，需要在调用[back](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#back)方法之前，通过调用[showAlertBeforeBackPage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#showalertbeforebackpage)方法设置返回询问框的信息。例如，在支付页面中定义一个返回按钮的点击事件处理函数：
 
@@ -548,7 +548,7 @@ message：string类型，表示询问框的内容。
 
 自定义询问框的方式，可以使用弹窗[showDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#showdialog-1)或者自定义弹窗实现。这样可以让应用界面与系统默认询问框有所区别，提高应用的用户体验度。本文以弹窗为例，介绍如何实现自定义询问框。
 
-直接使用router可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取绑定实例的router。
+直接使用router可能导致[UI上下文不明确](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-global-interface#ui上下文不明确)的问题，建议使用getUIContext()获取[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)实例，并使用[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取绑定实例的router。
 
 在事件回调中，调用弹窗的[showDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#showdialog-1)方法：
 
@@ -609,13 +609,13 @@ onBackClick() {
 
 ## 命名路由
 
-在开发中为了跳转到共享包[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)或者[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)中的页面（即共享包中路由跳转），可以使用[pushNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute)来实现。
+在开发中为了跳转到共享包[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)或者[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)中的页面（即共享包中路由跳转），可以使用[pushNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute)来实现。
 
 **图4** 命名路由跳转
 
 ![](./img/121830fe.gif)
 
-在想要跳转到的共享包[HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)或者[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)页面里，给[@Entry](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#entry)修饰的自定义组件EntryOptions命名：
+在想要跳转到的共享包[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)或者[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)页面里，给[@Entry](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#entry)修饰的自定义组件EntryOptions命名：
 
 ```
 // library/src/main/ets/pages/Index.ets

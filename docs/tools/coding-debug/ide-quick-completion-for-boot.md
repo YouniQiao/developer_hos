@@ -1,7 +1,7 @@
 ---
 title: "启动加载完成快"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-quick-completion-for-boot
+original_url: /docs/tools/coding-debug/ide-quick-completion-for-boot
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "使用配置文件开发意图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/insight-intent-config-development
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-config-development
 format: md
 ---
 
@@ -183,9 +183,9 @@ export default class ExtensionExecutor extends InsightIntentExecutor {
 | domain | 表示意图垂域名称，用于将意图按具体领域分类（例如：视频、音乐、游戏）。 | 字符串 | 否 |
 | intentVersion | 表示意图版本号。当意图能力演进时，可通过版本号进行区分和管理。支持用点分隔开的三段数据序列，例如"1.0.1"。 | 字符串 | 否 |
 | srcEntry | 表示意图执行文件相对路径。取值为长度不超过127字节的字符串。 | 字符串 | 否 |
-| uiAbility | 表示意图绑定的UIAbility组件信息。包含"ability"字段和"executeMode"字段。  - ability：必选字段，表示UIAbility组件名称，取值与module.json5配置文件[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)的"name"字段保持一致。  - executeMode：必选字段，表示执行模式，取值范围是"foreground"和"background"。  - 取值为"foreground"，表示支持在UIAbility组件前台启动时执行意图逻辑。  - 取值为"background"，表示支持在UIAbility组件后台启动时执行意图逻辑。 | 对象 | 是 |
-| uiExtension | 表示意图绑定的UIExtensionAbility组件信息。仅包含"ability"必选字段，表示UIExtensionAbility组件名称，取值与module.json5配置文件[extensionAbilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)的"name"字段保持一致。 | 对象 | 是 |
-| form | 表示意图绑定的卡片信息。包含"ability"字段和"formName"字段。  - ability：必选字段，表示FormExtensionAbility组件名称，取值与module.json5配置文件[extensionAbilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签) 的"name"字段保持一致。  - formName：必选字段，表示卡片名称，取值与[卡片配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#卡片配置)的"name"字段保持一致。 | 对象 | 是 |
+| uiAbility | 表示意图绑定的UIAbility组件信息。包含"ability"字段和"executeMode"字段。  - ability：必选字段，表示UIAbility组件名称，取值与module.json5配置文件[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)的"name"字段保持一致。  - executeMode：必选字段，表示执行模式，取值范围是"foreground"和"background"。  - 取值为"foreground"，表示支持在UIAbility组件前台启动时执行意图逻辑。  - 取值为"background"，表示支持在UIAbility组件后台启动时执行意图逻辑。 | 对象 | 是 |
+| uiExtension | 表示意图绑定的UIExtensionAbility组件信息。仅包含"ability"必选字段，表示UIExtensionAbility组件名称，取值与module.json5配置文件[extensionAbilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)的"name"字段保持一致。 | 对象 | 是 |
+| form | 表示意图绑定的卡片信息。包含"ability"字段和"formName"字段。  - ability：必选字段，表示FormExtensionAbility组件名称，取值与module.json5配置文件[extensionAbilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签) 的"name"字段保持一致。  - formName：必选字段，表示卡片名称，取值与[卡片配置](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#卡片配置)的"name"字段保持一致。 | 对象 | 是 |
 | displayName | 表示意图显示名称。 | 字符串 | 是 |
 | displayDescription | 表示意图显示描述。 | 字符串 | 是 |
 | icon | 表示意图图标。支持网络资源和本地资源。 | 字符串 | 是 |

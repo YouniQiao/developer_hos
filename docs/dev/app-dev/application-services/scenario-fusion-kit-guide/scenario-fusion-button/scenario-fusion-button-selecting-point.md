@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "地图选点Button"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-button-selecting-point
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-selecting-point
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 ## 前提条件
 
-参见[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)。
+参见[开发准备](/docs/dev/app-dev/application-services/map-config-agc)。
 
 ## 开发步骤
 

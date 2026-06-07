@@ -1,7 +1,7 @@
 ---
 title: "@performance/lazyforeach-args-check（已下线）"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-lazyforeach-args-check
+original_url: /docs/tools/coding-debug/ide-lazyforeach-args-check
 format: md
 ---
 

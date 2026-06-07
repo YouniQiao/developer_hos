@@ -1,7 +1,7 @@
 ---
 title: "客户投放伙伴体系升级对应关系"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/fusion-relationship-0000002499137833
+original_url: /docs/monetize/promotion/fusion-relationship-0000002499137833
 format: md
 ---
 

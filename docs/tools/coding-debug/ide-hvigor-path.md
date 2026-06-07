@@ -1,7 +1,7 @@
 ---
 title: "自定义.hvigor目录路径"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-path
+original_url: /docs/tools/coding-debug/ide-hvigor-path
 format: md
 ---
 

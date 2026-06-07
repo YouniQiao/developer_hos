@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "写入数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-upsert
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-upsert
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 ## 前提条件
 
-已[初始化数据库访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-database-initialize)。
+已[初始化数据库访问](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-initialize)。
 
 ## 写入数据
 

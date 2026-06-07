@@ -1,6 +1,6 @@
 ---
 title: "错误码"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-report-api-errorcode-0000002271160685
+original_url: /docs/distribute/agc/agc-help-report-api-reference-0000002236201354/agc-help-report-api-errorcode-0000002271160685
 format: md
 ---
 

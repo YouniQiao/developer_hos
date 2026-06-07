@@ -1,7 +1,7 @@
 ---
 title: "创建lookalike人群定向"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-createlookalike-0000001210922474
+original_url: /docs/monetize/promotion/marketapi-createlookalike-0000001210922474
 format: md
 ---
 
@@ -41,7 +41,7 @@ format: md
 | groupName | M | String | 定向包名称。  最大长度50。 |
 | extendedMagnitude | M | Integer | 扩展推广人群量级。  单位：万 |
 | customerId | O | String | 授权合作伙伴投放时必须携带，该字段请使用<strong>投放操作账户</strong>登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)后在“我的账号信息”中查看到的“华为账号”。 |
-| groupId | M | String | 定向包ID，由[新增标签定向](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-addtag-0000001181826407#section21761435152419)时返回。 |
+| groupId | M | String | 定向包ID，由[新增标签定向](/docs/monetize/promotion/marketapi-addtag-0000001181826407#section21761435152419)时返回。 |
 
 ## 请求示例
 
@@ -63,7 +63,7 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 | groupId | O | String | 新建人群定向后的groupId。 |
 

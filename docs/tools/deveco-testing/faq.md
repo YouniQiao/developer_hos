@@ -1,7 +1,7 @@
 ---
 title: "常见问题"
 displayed_sidebar: devecoTestingSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/faq
+original_url: /docs/tools/deveco-testing/faq
 format: md
 ---
 
@@ -51,4 +51,4 @@ A7：如当前电脑仅有C盘，需要在客户端将数据目录设置为 C:\U
 
 ![](./img/zh-cn_image_0000002577447826.png)
 
-更多问题详见[FAQ](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing)
+更多问题详见[FAQ](/docs/FAQ/faqs-deveco-testing)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "商户入网和获取商户号"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-merc-regist-apply
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-merc-regist-apply
 format: md
 ---
 

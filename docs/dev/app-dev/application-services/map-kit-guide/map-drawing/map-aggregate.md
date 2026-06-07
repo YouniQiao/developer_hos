@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "点聚合"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-aggregate
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-aggregate
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "音频播放流管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-stream-management
+original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-stream-management
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ## 读取或监听应用内音频流状态变化
 
-参考[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)或[audio.createAudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-f#audiocreateaudiorenderer8)，先完成AudioRenderer的创建，再通过以下两种方法查看音频流状态的变化。
+参考[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)或[audio.createAudioRenderer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-f#audiocreateaudiorenderer8)，先完成AudioRenderer的创建，再通过以下两种方法查看音频流状态的变化。
 
 * 方法1：直接查看AudioRenderer的[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiorenderer#属性)state：
 
@@ -120,7 +120,7 @@ format: md
 
    ![](./img/9ebe6230.png)
 
-   对所有音频流状态进行监听的应用需要[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)ohos.permission.USE\_BLUETOOTH，否则无法获得实际的设备名称和设备地址信息，查询到的设备名称和设备地址（蓝牙设备的相关属性）将为空字符串。
+   对所有音频流状态进行监听的应用需要[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)ohos.permission.USE\_BLUETOOTH，否则无法获得实际的设备名称和设备地址信息，查询到的设备名称和设备地址（蓝牙设备的相关属性）将为空字符串。
 
    ```
    import { audio } from '@kit.AudioKit';

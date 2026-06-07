@@ -1,6 +1,6 @@
 ---
 title: "分析应用销售和订阅情况"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-sale-0000002271411713
+original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-sale-0000002271411713
 format: md
 ---
 
@@ -258,7 +258,7 @@ format: md
 
 ![](../img/agc-help-anaiyze-app-sale-0000002271411713_48.png)
 
-只有集成[华为账号服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-introduction)和[应用内支付服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-introduction)的应用才会上报“应用内付费”报表数据。
+只有集成[华为账号服务](/docs/dev/app-dev/application-services/account-kit-guide/account-introduction)和[应用内支付服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-introduction)的应用才会上报“应用内付费”报表数据。
 
 1. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)首页，点击“分析”。
 2. 从列表中选择您的应用，点击“运营分析 > 应用内付费”。

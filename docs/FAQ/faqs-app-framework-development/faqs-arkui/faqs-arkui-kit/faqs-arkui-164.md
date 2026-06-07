@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取router.back传递的参数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-164
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-164
 ---
 
 
@@ -26,4 +26,4 @@ const age: number = params.info.age // Get the value of the age property
 
 **参考链接**
 
-[页面跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing#页面跳转)
+[页面跳转](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-routing#页面跳转)

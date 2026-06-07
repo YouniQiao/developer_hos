@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用处于后台时应用内如何接收消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-9
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-9
 format: md
 ---
 

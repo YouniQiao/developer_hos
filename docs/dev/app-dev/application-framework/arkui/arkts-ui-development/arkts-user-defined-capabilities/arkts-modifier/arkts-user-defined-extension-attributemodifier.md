@@ -1,13 +1,13 @@
 ---
 title: "属性修改器 (AttributeModifier)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-extension-attributemodifier
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-extension-attributemodifier
 format: md
 ---
 
 
 ## 概述
 
-声明式语法引入了[@Styles](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-style)和[@Extend](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-extend)两个装饰器，可以解决复用相同自定义样式的问题，但是存在以下受限场景：
+声明式语法引入了[@Styles](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-style)和[@Extend](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-extend)两个装饰器，可以解决复用相同自定义样式的问题，但是存在以下受限场景：
 
 * @Styles和@Extend均是编译期处理，不支持跨文件的导出复用。
 * @Styles仅能支持通用属性、事件，不支持组件特有的属性。

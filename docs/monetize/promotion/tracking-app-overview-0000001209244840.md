@@ -1,7 +1,7 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/tracking-app-overview-0000001209244840
+original_url: /docs/monetize/promotion/tracking-app-overview-0000001209244840
 format: md
 ---
 
@@ -13,10 +13,10 @@ format: md
 
    | 转化跟踪平台 |
    | --- |
-   | [华为分析跟踪](https://developer.huawei.com/consumer/cn/doc/promotion/ha-0000001151036374) |
-   | [三方监测](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-overview-0000001170938773) |
-   | [自有分析工具](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-zi-0000001092895300) |
-   | [HMS跟踪](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-hms-0000001093214902) |
+   | [华为分析跟踪](/docs/monetize/promotion/ha-0000001151036374) |
+   | [三方监测](/docs/monetize/promotion/tracking-overview-0000001170938773) |
+   | [自有分析工具](/docs/monetize/promotion/tracking-zi-0000001092895300) |
+   | [HMS跟踪](/docs/monetize/promotion/tracking-hms-0000001093214902) |
 2. 在鲸鸿动能广告平台创建资产并添加关联。
 
    需要为您希望跟踪的每一个应用使用指定的监测工具新建资产。
@@ -32,7 +32,7 @@ format: md
 
       分析工具提供商：选择应用分析提供商，例如：AppsFlyer、Adjust等。
 
-      曝光/点击监测链接：仅三方监测跟踪平台的部分分析工具提供商需要填写，具体请参考在[三方监测平台获取曝光和点击监测链接](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-overview-0000001170938773)。
+      曝光/点击监测链接：仅三方监测跟踪平台的部分分析工具提供商需要填写，具体请参考在[三方监测平台获取曝光和点击监测链接](/docs/monetize/promotion/tracking-overview-0000001170938773)。
       - 曝光监测链接：用于监测曝光数据。
       - 点击监测链接：用于监测点击数据。
 
@@ -45,15 +45,15 @@ format: md
 
    | 转化跟踪平台 | 是否需要将秘钥填入到转化跟踪平台 |
    | --- | --- |
-   | [华为分析](https://developer.huawei.com/consumer/cn/doc/promotion/ha-0000001151036374) | 否 |
-   | [AppsFlyer](https://developer.huawei.com/consumer/cn/doc/promotion/appsflyer-0000001122291488) | 否 |
-   | [Adjust](https://developer.huawei.com/consumer/cn/doc/promotion/adjust-0000001121931660) | 是 |
-   | [Sizmek](https://developer.huawei.com/consumer/cn/doc/promotion/sizmek-0000001168691457) | 否 |
-   | [Kochava](https://developer.huawei.com/consumer/cn/doc/promotion/kochava-0000001168891345) | 是 |
-   | [Tenjin](https://developer.huawei.com/consumer/cn/doc/promotion/tenjin-0000001197115949) | 是 |
-   | [Airbridge](https://developer.huawei.com/consumer/cn/doc/promotion/airbridge-0000001197036041) | 是 |
-   | [Branch](https://developer.huawei.com/consumer/cn/doc/promotion/branch-0000001272007784) | 否 |
-   | [自有分析工具](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-zi-0000001092895300) | 是 |
+   | [华为分析](/docs/monetize/promotion/ha-0000001151036374) | 否 |
+   | [AppsFlyer](/docs/monetize/promotion/appsflyer-0000001122291488) | 否 |
+   | [Adjust](/docs/monetize/promotion/adjust-0000001121931660) | 是 |
+   | [Sizmek](/docs/monetize/promotion/sizmek-0000001168691457) | 否 |
+   | [Kochava](/docs/monetize/promotion/kochava-0000001168891345) | 是 |
+   | [Tenjin](/docs/monetize/promotion/tenjin-0000001197115949) | 是 |
+   | [Airbridge](/docs/monetize/promotion/airbridge-0000001197036041) | 是 |
+   | [Branch](/docs/monetize/promotion/branch-0000001272007784) | 否 |
+   | [自有分析工具](/docs/monetize/promotion/tracking-zi-0000001092895300) | 是 |
 
    如果您希望统计付费事件的金额，可以在<strong>转化跟踪</strong>平台将转化金额进行回传，鲸鸿动能广告平台会将转化金额进行累加展示在报表的“付费金额”字段。
 
@@ -101,7 +101,7 @@ format: md
 
    ![](./img/zh-cn_image_0000002279298482_1b406a2c492c.png)
 
-   - <strong>事件类别：</strong>指的是您可以跟踪的转化事件，详情可参考[事件概览](https://developer.huawei.com/consumer/cn/doc/promotion/tracking-gaishu-0000001139892539#section74190476225)。
+   - <strong>事件类别：</strong>指的是您可以跟踪的转化事件，详情可参考[事件概览](/docs/monetize/promotion/tracking-gaishu-0000001139892539#section74190476225)。
    - <strong>事件名称：</strong>仅用于事件列表的管理，且转化名称不可重复。建议设置一个清晰易懂的名称，例如：应用+事件类别。设置完成后可编辑修改。
 
 ## 应用测试

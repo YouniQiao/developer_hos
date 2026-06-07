@@ -1,7 +1,7 @@
 ---
 format: md
 title: "模拟器时间与系统时间不一致"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-7
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-7
 ---
 
 

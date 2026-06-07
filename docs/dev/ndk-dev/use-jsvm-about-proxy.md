@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API提供的proxy接口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-proxy
+original_url: /docs/dev/ndk-dev/use-jsvm-about-proxy
 format: md
 ---
 
@@ -19,7 +19,7 @@ JSVM-API 提供了创建 Proxy、判断 JSVM\_Value 是否为 Proxy 类型和获
 
 ## 使用示例
 
-JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅展示接口对应的C++相关代码。
+JSVM-API接口开发流程参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅展示接口对应的C++相关代码。
 
 cpp 部分代码
 

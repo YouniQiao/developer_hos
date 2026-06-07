@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "权益发放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-products
+original_url: /docs/dev/app-dev/application-services/iap-delivering-products
 format: md
 ---
 
 
 ## 场景介绍
 
-应用在收到用户购买消耗型/非消耗型商品成功的结果后，需要发放相关权益，并在权益发放后，向IAP Kit确认发货，完成购买流程，具体实现请参见[接入购买](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-purchase)。此外，还需要补充如下处理，确保权益发放：
+应用在收到用户购买消耗型/非消耗型商品成功的结果后，需要发放相关权益，并在权益发放后，向IAP Kit确认发货，完成购买流程，具体实现请参见[接入购买](/docs/dev/app-dev/application-services/iap-integrate-purchase)。此外，还需要补充如下处理，确保权益发放：
 
 * 若应用提供消耗型商品，需要按照[确保权益发放](#确保权益发放)处理消耗型商品的权益发放。
 * 若应用提供非消耗型商品，且为单机应用，则需要按照[单机应用权益发放（非消耗型商品）](#单机应用权益发放非消耗型商品)处理非消耗型商品的权益发放。其他场景需要按照[确保权益发放](#确保权益发放)处理非消耗型商品的权益发放。
@@ -52,7 +52,7 @@ format: md
 
    ![](./img/d7ac34f4.png)
 
-   如果开发者在[发起购买](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-integrate-purchase#发起购买)时支持消耗型商品的批量购买，则需要在发货时校验下单的商品数量和[PurchaseOrderPayload](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-data-model#purchaseorderpayload).quantity是否一致，避免造成漏发、多发的情况。
+   如果开发者在[发起购买](/docs/dev/app-dev/application-services/iap-integrate-purchase#发起购买)时支持消耗型商品的批量购买，则需要在发货时校验下单的商品数量和[PurchaseOrderPayload](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-data-model#purchaseorderpayload).quantity是否一致，避免造成漏发、多发的情况。
 4. 发货成功后，应用需调用[finishPurchase](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iapfinishpurchase)接口确认发货，以此通知IAP服务器更新商品的发货状态，完成购买流程。
 
    发起请求时，需在请求参数[FinishPurchaseParameter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#finishpurchaseparameter)中携带[PurchaseOrderPayload](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-data-model#purchaseorderpayload)中的productType、purchaseToken、purchaseOrderId。
@@ -61,7 +61,7 @@ format: md
 
    ![](./img/18866a5b.png)
 
-   JWSUtil为自定义类，可参见[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-dev-guide#示例代码)。
+   JWSUtil为自定义类，可参见[示例代码](/docs/dev/app-dev/application-services/iap-dev-guide#示例代码)。
 
    ```
    import { iap } from '@kit.IAPKit';
@@ -152,7 +152,7 @@ format: md
 
    ![](./img/a67cddfe.png)
 
-   JWSUtil为自定义类，可参见[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-dev-guide#示例代码)。
+   JWSUtil为自定义类，可参见[示例代码](/docs/dev/app-dev/application-services/iap-dev-guide#示例代码)。
 
 ```
 import { iap } from '@kit.IAPKit';

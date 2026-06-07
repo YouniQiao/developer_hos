@@ -1,6 +1,6 @@
 ---
 title: "如何使用TaskPool在子线程调用对象成员函数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-120
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-120
 format: md
 ---
 

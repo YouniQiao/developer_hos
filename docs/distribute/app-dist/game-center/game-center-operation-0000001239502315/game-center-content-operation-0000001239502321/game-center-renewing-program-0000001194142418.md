@@ -1,7 +1,7 @@
 ---
 title: "《重磅更新》栏目"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-renewing-program-0000001194142418
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-renewing-program-0000001194142418
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

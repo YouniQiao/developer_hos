@@ -1,7 +1,7 @@
 ---
 format: md
 title: "YUV数据相关格式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-22
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-22
 ---
 
 

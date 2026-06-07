@@ -1,13 +1,13 @@
 ---
 title: "PersistentStorage：持久化存储UI状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-persiststorage
 format: md
 ---
 
 
 PersistentStorage是应用程序中的可选单例对象。此对象的作用是持久化存储选定的AppStorage属性，以确保这些属性在应用程序重新启动时的值与应用程序关闭时的值相同。
 
-PersistentStorage提供状态变量持久化的能力，但是需要注意，其持久化和读回UI的能力都需要依赖AppStorage。在阅读本文档前，建议提前阅读：[AppStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage)，[PersistentStorage API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management#persistentstorage)。
+PersistentStorage提供状态变量持久化的能力，但是需要注意，其持久化和读回UI的能力都需要依赖AppStorage。在阅读本文档前，建议提前阅读：[AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage)，[PersistentStorage API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management#persistentstorage)。
 
 ## 概述
 
@@ -17,7 +17,7 @@ PersistentStorage的存储路径为module级别，即哪个module调用了Persis
 
 PersistentStorage的存储路径在应用第一个ability启动时就已确定，为该ability所属的module。如果一个ability调用了PersistentStorage，并且该ability能被不同的module拉起，那么ability存在多少种启动方式，就会有多少份数据副本。
 
-PersistentStorage功能上耦合了AppStorage，并且数据在不同module中使用也会有问题，因此推荐开发者使用[PersistenceV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-persistencev2)的globalConnect接口替换掉PersistentStorage的persistProp接口。PersistentStorage向PersistenceV2迁移的方案见[PersistentStorage->PersistenceV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-application#persistentstorage-persistencev2)。
+PersistentStorage功能上耦合了AppStorage，并且数据在不同module中使用也会有问题，因此推荐开发者使用[PersistenceV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-application-state/arkts-new-persistencev2)的globalConnect接口替换掉PersistentStorage的persistProp接口。PersistentStorage向PersistenceV2迁移的方案见[PersistentStorage->PersistenceV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-application#persistentstorage-persistencev2)。
 
 ## 限制条件
 

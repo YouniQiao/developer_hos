@@ -1,6 +1,6 @@
 ---
 title: "网络资源合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-network-use
+original_url: /docs/quality/reasonable-network-use
 ---
 
 # 网络资源合理使用
@@ -36,7 +36,7 @@ export default class EntryAbility extends UIAbility {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Https.ets#L7-L25">Https.ets</a></div>
 
-有关HTTP数据请求相关接口的使用，详情可以参考[使用HTTP访问网络](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/http-request)。
+有关HTTP数据请求相关接口的使用，详情可以参考[使用HTTP访问网络](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request)。
 
 ### Socket连接
 
@@ -66,7 +66,7 @@ export default class EntryAbility extends UIAbility {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Socket.ets#L7-L28">Socket.ets</a></div>
 
-有关网络Socket相关接口的使用，详情可以参考[使用Socket访问网络](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/socket-connection)。
+有关网络Socket相关接口的使用，详情可以参考[使用Socket访问网络](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/socket-connection)。
 
 ### WebSocket连接
 
@@ -102,4 +102,4 @@ export default class EntryAbility extends UIAbility {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/WebSocket.ets#L7-L37">WebSocket.ets</a></div>
 
-有关网络WebSocket相关接口的使用，详情可以参考[使用WebSocket访问网络](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/websocket-connection)。
+有关网络WebSocket相关接口的使用，详情可以参考[使用WebSocket访问网络](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/websocket-connection)。

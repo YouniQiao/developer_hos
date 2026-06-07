@@ -1,20 +1,20 @@
 ---
 title: "ArkTS运行时概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-runtime-overview
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-overview
 format: md
 ---
 
 
-ArkTS运行时是HarmonyOS上应用的默认语言运行时，支持ArkTS、TS和JS语言的字节码及相关标准库。它提供解释器、AOT和JIT高效执行方式，并通过[Node-API](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-introduction)实现完善的跨语言调用接口，支持多语言混合开发。
+ArkTS运行时是HarmonyOS上应用的默认语言运行时，支持ArkTS、TS和JS语言的字节码及相关标准库。它提供解释器、AOT和JIT高效执行方式，并通过[Node-API](/docs/dev/ndk-dev/napi-introduction)实现完善的跨语言调用接口，支持多语言混合开发。
 
 ArkTS Runtime主要由四个子系统组成：
 
 * **Core Subsystem**：主要由与语言无关的基础运行库组成，其中包括承载字节码的File组件、支持Debugger的Tooling组件以及负责适配系统调用的Base库组件等。
-* **Execution Subsystem**：包含执行方舟字节码的解释器、快速路径内联缓存以及[文件模块化管理运行](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-principle)。
+* **Execution Subsystem**：包含执行方舟字节码的解释器、快速路径内联缓存以及[文件模块化管理运行](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/module-principle)。
 * **Compiler Subsystem**：包含Stub编译器、基于IR的编译优化框架、AOT静态编译器以及JIT动态编译器（实验中）。
 * **Runtime Subsystem**：包含以下ArkTS/TS/JS运行相关的模块。
 
-  + 内存管理：对象分配器与[垃圾回收器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gc-introduction)（并发标记和部分内存压缩的CMS-GC和Partial-Compressing-GC）。
+  + 内存管理：对象分配器与[垃圾回收器](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/gc-introduction)（并发标记和部分内存压缩的CMS-GC和Partial-Compressing-GC）。
   + 分析工具：DFX工具、CPU和heap的profiling工具。
   + 并发管理：Actor并发模型中的方舟字节码文件管理器。
   + 标准库：ECMAScript规范定义的标准库、高效的container容器库与对象模型。

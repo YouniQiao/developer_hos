@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "小游戏登录（必选）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-login
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-minigame/gameservice-gameplayer-minigame-login
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 前提条件
 
-已完成[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-gameplayer-minigame-preparation)。
+已完成[开发准备](/docs/dev/app-dev/application-services/gameservice-gameplayer-minigame-preparation)。
 
 ## 业务流程
 

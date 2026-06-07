@@ -1,6 +1,6 @@
 ---
 title: "应用文件分享"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-app-file
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/share-app-file
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 通过拉起文件处理类应用进行文件分享(startAbility)
 
-基于[文件选择器(startAbility)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/file-processing-apps-startup)的分享方式，应用可分享单个文件，通过[ohos.app.ability.wantConstant的wantConstant.Flags接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantconstant#flags)以只读或读写权限授权给其他应用。被分享应用可通过[fileIo.open](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileioopen)打开URI，并进行读写操作。
+基于[文件选择器(startAbility)](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/file-processing-apps-startup)的分享方式，应用可分享单个文件，通过[ohos.app.ability.wantConstant的wantConstant.Flags接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantconstant#flags)以只读或读写权限授权给其他应用。被分享应用可通过[fileIo.open](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileioopen)打开URI，并进行读写操作。
 
 ## 应用可分享目录
 

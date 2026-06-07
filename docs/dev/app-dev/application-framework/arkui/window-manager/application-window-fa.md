@@ -1,6 +1,6 @@
 ---
 title: "管理应用窗口（FA模型）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-window-fa
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/application-window-fa
 format: md
 ---
 
@@ -61,7 +61,7 @@ format: md
 
    * 可以通过window.createWindow接口创建子窗口。
 
-     非[自由窗口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#自由窗口)状态下，子窗口创建后默认是[沉浸式布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#沉浸式布局)。
+     非[自由窗口](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#自由窗口)状态下，子窗口创建后默认是[沉浸式布局](/docs/dev/app-dev/application-framework/arkui/window-manager/window-terminology#沉浸式布局)。
 
      自由窗口状态下，子窗口参数[decorEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#configuration9)为false时，子窗口创建后为沉浸式布局；子窗口参数decorEnabled为true，子窗口创建后为非沉浸式布局。
    * 也可以通过window.findWindow接口来查找已经创建的窗口从而得到子窗口。

@@ -1,6 +1,6 @@
 ---
 title: "批量变更商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-offerings-batch-update
+original_url: /docs/dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-update
 format: md
 ---
 

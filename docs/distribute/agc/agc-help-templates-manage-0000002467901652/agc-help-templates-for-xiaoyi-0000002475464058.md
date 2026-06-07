@@ -1,6 +1,6 @@
 ---
 title: "小卡（2*2）"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-templates-for-xiaoyi-0000002475464058
+original_url: /docs/distribute/agc/agc-help-templates-manage-0000002467901652/agc-help-templates-for-xiaoyi-0000002475464058
 format: md
 ---
 

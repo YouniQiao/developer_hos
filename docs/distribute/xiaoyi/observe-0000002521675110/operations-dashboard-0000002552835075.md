@@ -1,7 +1,7 @@
 ---
 title: "运营看板"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/operations-dashboard-0000002552835075
+original_url: /docs/distribute/xiaoyi/observe-0000002521675110/operations-dashboard-0000002552835075
 format: md
 ---
 

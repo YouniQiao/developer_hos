@@ -1,7 +1,7 @@
 ---
 title: "@performance/hp-arkui-remove-redundant-state-var"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hp-arkui-remove-redundant-state-var
+original_url: /docs/tools/coding-debug/ide-hp-arkui-remove-redundant-state-var
 format: md
 ---
 

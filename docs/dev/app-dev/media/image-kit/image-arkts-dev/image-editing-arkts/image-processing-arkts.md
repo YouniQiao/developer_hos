@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用VideoProcessingEngine完成图片超分"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-processing-arkts
+original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-processing-arkts
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
    * 图片为SDR（Standard dynamic range）图片。
    * 图片的像素格式为RGBA、BGRA、NV12、NV21，输出格式与输入格式一致。
-   * 处理的PixelMap对象需为[DMA内存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type#内存类型介绍)。
+   * 处理的PixelMap对象需为[DMA内存](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-allocator-type#内存类型介绍)。
 2. 本模块提供4个质量档位的算法，处理效果逐渐变优，但性能也会逐渐下降。
 
    | 质量档位 | 输入分辨率要求  （单位：像素） | 输出分辨率要求  （单位：像素） | 说明 |

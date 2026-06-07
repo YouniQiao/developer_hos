@@ -1,6 +1,6 @@
 ---
 title: "管理服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-nfc-manage-service-0000002382896617
+original_url: /docs/distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-nfc-manage-service-0000002382896617
 format: md
 ---
 

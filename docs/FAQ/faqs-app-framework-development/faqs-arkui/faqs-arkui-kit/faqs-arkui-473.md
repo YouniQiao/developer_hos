@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Tabs如何实现预加载特定的TabContent页"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-473
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-473
 ---
 
 

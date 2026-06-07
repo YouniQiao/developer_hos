@@ -1,6 +1,6 @@
 ---
 title: "如何跳转到系统文件管理App界面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ability-116
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-116
 format: md
 ---
 

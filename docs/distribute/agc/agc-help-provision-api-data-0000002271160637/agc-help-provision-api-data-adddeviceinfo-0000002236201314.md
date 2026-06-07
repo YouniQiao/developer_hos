@@ -1,6 +1,6 @@
 ---
 title: "AddDeviceInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-adddeviceinfo-0000002236201314
+original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-adddeviceinfo-0000002236201314
 format: md
 ---
 

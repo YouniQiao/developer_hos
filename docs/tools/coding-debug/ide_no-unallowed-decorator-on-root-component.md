@@ -1,7 +1,7 @@
 ---
 title: "@previewer/no-unallowed-decorator-on-root-component"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-unallowed-decorator-on-root-component
+original_url: /docs/tools/coding-debug/ide_no-unallowed-decorator-on-root-component
 format: md
 ---
 

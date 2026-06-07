@@ -1,7 +1,7 @@
 ---
 format: md
 title: "sign包和unsign包产物之间是否有差异"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-68
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-68
 ---
 
 

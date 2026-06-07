@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用Picker选择媒体库资源"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker
+original_url: /docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker
 format: md
 ---
 
@@ -81,7 +81,7 @@ photoSelectOptions.isPhotoTakingSupported = true;
 
 ## 指定URI读取文件数据
 
-1. 待界面从图库返回后，再通过一个类似按钮的组件去调用其他函数，使用[fileIo.openSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileioopensync)接口，通过[媒体文件uri](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro#媒体文件uri)打开这个文件得到fd。这里需要注意接口权限参数是fileIo.OpenMode.READ\_ONLY。
+1. 待界面从图库返回后，再通过一个类似按钮的组件去调用其他函数，使用[fileIo.openSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileioopensync)接口，通过[媒体文件uri](/docs/dev/app-dev/application-framework/core-file-kit/user-files/user-file-uri-intro#媒体文件uri)打开这个文件得到fd。这里需要注意接口权限参数是fileIo.OpenMode.READ\_ONLY。
 
    ```
    try {
@@ -119,7 +119,7 @@ photoSelectOptions.isPhotoTakingSupported = true;
 
 ## 指定URI获取图片或视频资源
 
-媒体库支持Picker选择[媒体文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro#媒体文件uri)URI后，根据指定URI获取图片或视频资源，下面以查询指定URI为'file://media/Photo/1/IMG\_datetime\_0001/displayName.jpg'为例。
+媒体库支持Picker选择[媒体文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/user-file-uri-intro#媒体文件uri)URI后，根据指定URI获取图片或视频资源，下面以查询指定URI为'file://media/Photo/1/IMG\_datetime\_0001/displayName.jpg'为例。
 
 1. 定义媒体资源处理器[MediaAssetDataHandler](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-mediaassetdatahandler)，系统在资源准备就绪时向应用回调onDataPrepared。
 
@@ -154,7 +154,7 @@ photoSelectOptions.isPhotoTakingSupported = true;
 
    ![](./img/9de2da82.png)
 
-   出于对用户隐私安全的保护，对媒体资源EXIF中的地理位置和拍摄参数信息做了去隐私化处理。如果需要获取被去隐私化的EXIF信息，需要[申请相册管理模块权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.MEDIA\_LOCATION'。
+   出于对用户隐私安全的保护，对媒体资源EXIF中的地理位置和拍摄参数信息做了去隐私化处理。如果需要获取被去隐私化的EXIF信息，需要[申请相册管理模块权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.MEDIA\_LOCATION'。
 
    ```
    static async getMediaResourceByUri(uri: string, context: common.Context, callback?: MediaDataHandlerCallback)

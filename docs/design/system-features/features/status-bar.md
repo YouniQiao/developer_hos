@@ -1,7 +1,7 @@
 ---
 title: 状态栏
 sidebar_label: 状态栏
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/status-bar-0000001776775568
+original_url: /docs/design/system-features/features/status-bar
 format: md
 ---
 

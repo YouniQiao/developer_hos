@@ -1,6 +1,6 @@
 ---
 title: "FilePartInfo"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-upload-api-data-filepartinfo-0000002237498540
+original_url: /docs/distribute/agc/agc-help-upload-api-data-0000002272457913/agc-help-upload-api-data-filepartinfo-0000002237498540
 format: md
 ---
 

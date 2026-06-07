@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "默认界面扫码/自定义界面扫码体验设计"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-16
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-16
 format: md
 ---
 

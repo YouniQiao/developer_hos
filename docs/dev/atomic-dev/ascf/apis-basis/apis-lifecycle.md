@@ -1,6 +1,6 @@
 ---
 title: "生命周期"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-lifecycle
+original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-lifecycle
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 has.getLaunchOptionsSync(): Object
 
-иҺ·еҸ–е…ғжңҚеҠЎеҗҜеҠЁж—¶зҡ„еҸӮж•°гҖӮдёҺ[Appе®ҡд№үзҡ„еӣһи°ғеҸӮж•°](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app)дёҖиҮҙгҖӮ
+иҺ·еҸ–е…ғжңҚеҠЎеҗҜеҠЁж—¶зҡ„еҸӮж•°гҖӮдёҺ[Appе®ҡд№үзҡ„еӣһи°ғеҸӮж•°](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-app)дёҖиҮҙгҖӮ
 
 **иө·е§ӢзүҲжң¬пјҡ** 1.0.0
 
@@ -42,7 +42,7 @@ console.info(launchOptions.path);
 
 has.getEnterOptionsSync(): Object
 
-иҺ·еҸ–е…ғжңҚеҠЎеҗҜеҠЁж—¶зҡ„еҸӮж•°гҖӮеҰӮжһңеҪ“еүҚжҳҜеҶ·еҗҜеҠЁпјҢеҲҷиҝ”еӣһеҖјдёҺ[App](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app).onLaunchзҡ„еӣһи°ғеҸӮж•°дёҖиҮҙпјӣеҰӮжһңеҪ“еүҚжҳҜзғӯеҗҜеҠЁпјҢеҲҷиҝ”еӣһеҖјдёҺ[App](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app).onShowдёҖиҮҙгҖӮ
+иҺ·еҸ–е…ғжңҚеҠЎеҗҜеҠЁж—¶зҡ„еҸӮж•°гҖӮеҰӮжһңеҪ“еүҚжҳҜеҶ·еҗҜеҠЁпјҢеҲҷиҝ”еӣһеҖјдёҺ[App](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-app).onLaunchзҡ„еӣһи°ғеҸӮж•°дёҖиҮҙпјӣеҰӮжһңеҪ“еүҚжҳҜзғӯеҗҜеҠЁпјҢеҲҷиҝ”еӣһеҖјдёҺ[App](/docs/dev/atomic-dev/ascf/logical-layer/logical-layer-app).onShowдёҖиҮҙгҖӮ
 
 **иө·е§ӢзүҲжң¬пјҡ** 1.0.4
 

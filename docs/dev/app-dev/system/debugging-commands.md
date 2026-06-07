@@ -1,31 +1,31 @@
 ---
 title: "调试命令"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debugging-commands
+original_url: /docs/dev/app-dev/system/debugging-commands
 format: md
 ---
 
 
-* **[SDK命令行工具简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/command-line-tools-overview)**
-* **[hdc](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)**
-* **[aa工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool)**
-* **[bm工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool)**
-* **[打包拆包工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-unpacking)**
-* **[扫描工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-check-tool)**
-* **[cem工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cem-tool)**
-* **[anm工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/anm-tool)**
-* **[edm工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/edm-tool)**
-* **[restool工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restool)**
-* **[param工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/param-tool)**
-* **[power-shell工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-shell)**
-* **[atm工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/atm-tool)**
-* **[network-cfg工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-cfg)**
-* **[hilog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog)**
-* **[hilogtool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool)**
-* **[hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper-tool)**
-* **[hitrace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitrace)**
-* **[hiperf](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiperf)**
-* **[hiprofiler](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiprofiler)**
-* **[uinput](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uinput)**
-* **[命令行工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/command-line-utilities)**
-* **[netcopilot工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-netcopilot)**
-* **[二进制签名工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/binary-sign-tool)**
+* **[SDK命令行工具简介](/docs/dev/app-dev/system/command-line-tools-overview)**
+* **[hdc](/docs/dev/app-dev/system/hdc)**
+* **[aa工具](/docs/dev/app-dev/system/aa-tool)**
+* **[bm工具](/docs/dev/app-dev/system/bm-tool)**
+* **[打包拆包工具](/docs/dev/app-dev/system/packing-unpacking)**
+* **[扫描工具](/docs/dev/app-dev/system/app-check-tool)**
+* **[cem工具](/docs/dev/app-dev/system/cem-tool)**
+* **[anm工具](/docs/dev/app-dev/system/anm-tool)**
+* **[edm工具](/docs/dev/app-dev/system/edm-tool)**
+* **[restool工具](/docs/dev/app-dev/system/restool)**
+* **[param工具](/docs/dev/app-dev/system/param-tool)**
+* **[power-shell工具](/docs/dev/app-dev/system/power-shell)**
+* **[atm工具](/docs/dev/app-dev/system/atm-tool)**
+* **[network-cfg工具](/docs/dev/app-dev/system/network-cfg)**
+* **[hilog](/docs/dev/app-dev/system/hilog)**
+* **[hilogtool](/docs/dev/app-dev/system/hilog-tool)**
+* **[hidumper](/docs/dev/app-dev/system/hidumper-tool)**
+* **[hitrace](/docs/dev/app-dev/system/hitrace)**
+* **[hiperf](/docs/dev/app-dev/system/hiperf)**
+* **[hiprofiler](/docs/dev/app-dev/system/hiprofiler)**
+* **[uinput](/docs/dev/app-dev/system/uinput)**
+* **[命令行工具](/docs/dev/app-dev/system/command-line-utilities)**
+* **[netcopilot工具](/docs/dev/app-dev/system/network-netcopilot)**
+* **[二进制签名工具](/docs/dev/app-dev/system/binary-sign-tool)**

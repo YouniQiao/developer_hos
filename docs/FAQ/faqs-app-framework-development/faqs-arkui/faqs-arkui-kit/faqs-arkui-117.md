@@ -1,7 +1,7 @@
 ---
 format: md
 title: "文本组件是否支持分段设置字体样式"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-117
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-117
 ---
 
 

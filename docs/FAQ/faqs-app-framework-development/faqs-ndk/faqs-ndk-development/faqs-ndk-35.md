@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native侧如何使用hilog打印出日志信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-35
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-35
 ---
 
 
@@ -36,4 +36,4 @@ OH_LOG_ERROR(LOG_APP, "Pure a:%{public}d b:%{private}d.", a, b);
 
 **参考链接：**
 
-[使用HiLog打印日志(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-guidelines-ndk)
+[使用HiLog打印日志(C/C++)](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hilog-dev/hilog-guidelines-ndk)

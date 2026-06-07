@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Game Controller Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/game-controller-introduction
+original_url: /docs/dev/app-dev/application-services/game-controller-kit/game-controller-introduction
 format: md
 ---
 

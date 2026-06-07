@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "按需加载场景中，用户在加载指定模块后是否可以卸载，然后重新发起请求？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-30
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-30
 format: md
 ---
 

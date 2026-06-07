@@ -1,7 +1,7 @@
 ---
 format: md
 title: "无线调试手表时，hdc list targets查询设备信息返回unauthorized"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-67
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-67
 ---
 
 

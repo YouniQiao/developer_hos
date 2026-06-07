@@ -1,6 +1,6 @@
 ---
 title: "场景动效类型互动卡片开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-development
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-sceneanimation/arkts-ui-liveform-sceneanimation-development
 format: md
 ---
 
@@ -214,7 +214,7 @@ format: md
 
 3. 互动卡片LiveFormExtensionAbility配置
 
-   在module.json5配置文件中[extensionAbilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)下配置LiveFormExtensionAbility。
+   在module.json5配置文件中[extensionAbilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)下配置LiveFormExtensionAbility。
 
    ```
    // entry/src/main/module.json5
@@ -252,7 +252,7 @@ format: md
 
 1. 非激活态卡片页面实现
 
-   非激活态卡片页面开发同普通卡片开发流程完全一致，在widgetCard.ets中完成。widgetCard.ets文件在卡片创建时自动生成，卡片创建流程可以参考[创建ArkTS卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)。在非激活态卡片页面实现点击卡片时，发起卡片动效请求。
+   非激活态卡片页面开发同普通卡片开发流程完全一致，在widgetCard.ets中完成。widgetCard.ets文件在卡片创建时自动生成，卡片创建流程可以参考[创建ArkTS卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)。在非激活态卡片页面实现点击卡片时，发起卡片动效请求。
 
    ```
    // entry/src/main/ets/widget/pages/WidgetCard.ets
@@ -335,7 +335,7 @@ format: md
 
 1. 触发互动卡片动效
 
-   互动卡片通过调用[formProvider.requestOverflow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider#formproviderrequestoverflow20)接口触发动效，调用时需要明确：（1）动效申请范围。（2）动效持续时间。（3）是否使用系统提供的默认切换动效。具体可参考[formInfo.OverflowInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-forminfo#overflowinfo20)。其中，互动卡片可以通过调用[formProvider.getFormRect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider#formprovidergetformrect20)接口获取卡片尺寸和在窗口内的位置信息。卡片提供方以此计算动效申请范围，单位为vp。计算规则具体请参考[互动卡片请求参数约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-sceneanimation-overview#请求参数约束)。
+   互动卡片通过调用[formProvider.requestOverflow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider#formproviderrequestoverflow20)接口触发动效，调用时需要明确：（1）动效申请范围。（2）动效持续时间。（3）是否使用系统提供的默认切换动效。具体可参考[formInfo.OverflowInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-forminfo#overflowinfo20)。其中，互动卡片可以通过调用[formProvider.getFormRect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider#formprovidergetformrect20)接口获取卡片尺寸和在窗口内的位置信息。卡片提供方以此计算动效申请范围，单位为vp。计算规则具体请参考[互动卡片请求参数约束](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-sceneanimation/arkts-ui-liveform-sceneanimation-overview#请求参数约束)。
 
    ```
    // entry/src/main/ets/entryformability/EntryFormAbility.ets

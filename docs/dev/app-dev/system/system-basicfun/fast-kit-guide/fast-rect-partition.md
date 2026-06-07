@@ -1,6 +1,6 @@
 ---
 title: "使用RectPartition求解矩形划分"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fast-rect-partition
+original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-rect-partition
 format: md
 ---
 

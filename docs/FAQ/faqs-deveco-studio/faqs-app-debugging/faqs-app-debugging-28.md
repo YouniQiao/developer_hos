@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何将设备中的截屏图片导出到本地"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-28
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-28
 ---
 
 

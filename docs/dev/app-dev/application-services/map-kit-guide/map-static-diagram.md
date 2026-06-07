@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "静态图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-static-diagram
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-static-diagram
 format: md
 ---
 

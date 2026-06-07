@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "挑战值签名"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-signature
 format: md
 ---
 
 
 ## 背景
 
-挑战值是一个32字节的随机数，用于防止签名重放攻击。在企业恢复密钥提供[更新企业公钥证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-update)和[删除企业恢复密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-delete)场景下，均会使用挑战值来确保签名是企业对当前操作进行授权。签名使用ECC算法，是企业利用企业证书对应的私钥，对挑战值进行签名的。接口传入的挑战值签名必须是只包含原始ECDSA签名值的64字节内容，不能包含任何格式前缀。
+挑战值是一个32字节的随机数，用于防止签名重放攻击。在企业恢复密钥提供[更新企业公钥证书](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-update)和[删除企业恢复密钥](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-delete)场景下，均会使用挑战值来确保签名是企业对当前操作进行授权。签名使用ECC算法，是企业利用企业证书对应的私钥，对挑战值进行签名的。接口传入的挑战值签名必须是只包含原始ECDSA签名值的64字节内容，不能包含任何格式前缀。
 
 ## 自定义签名工具类SignUtil生成挑战值的签名
 

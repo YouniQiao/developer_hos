@@ -1,6 +1,6 @@
 ---
 title: "配置隐私政策（元服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-atomic-0000002317135133
+original_url: /docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-atomic-0000002317135133
 format: md
 ---
 
@@ -38,8 +38,8 @@ format: md
 
 本模块需要声明如下信息：
 
-* [收集用户数据说明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-app-0000002282162168#ZH-CN_TOPIC_0000002282162168__p67117382531)
-* [个性化推荐说明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-app-0000002282162168#ZH-CN_TOPIC_0000002282162168__p727051052414)：仅当向用户推送个性化推荐内容时，才需要声明。
+* [收集用户数据说明](/docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-app-0000002282162168#ZH-CN_TOPIC_0000002282162168__p67117382531)
+* [个性化推荐说明](/docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-app-0000002282162168#ZH-CN_TOPIC_0000002282162168__p727051052414)：仅当向用户推送个性化推荐内容时，才需要声明。
 * [广告和营销说明](#ZH-CN_TOPIC_0000002317135133__p124613182316)：仅当元服务中存在广告或者营销内容时，才需要声明。
 
 **【收集用户数据说明】**

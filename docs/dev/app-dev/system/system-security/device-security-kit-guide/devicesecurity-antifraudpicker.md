@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "反诈选择器"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-antifraudpicker
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-antifraudpicker
 format: md
 ---
 
 
-* **[获取诈骗消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-selectfraudmessage)**
-* **[获取诈骗通话记录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-selectfraudcalllog)**
-* **[获取诈骗应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-selectfraudapp)**
+* **[获取诈骗消息](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-antifraudpicker/devicesecurity-selectfraudmessage)**
+* **[获取诈骗通话记录](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-antifraudpicker/devicesecurity-selectfraudcalllog)**
+* **[获取诈骗应用](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-antifraudpicker/devicesecurity-selectfraudapp)**

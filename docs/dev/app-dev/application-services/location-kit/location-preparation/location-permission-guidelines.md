@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "申请位置权限开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/location-permission-guidelines
+original_url: /docs/dev/app-dev/application-services/location-kit/location-preparation/location-permission-guidelines
 format: md
 ---
 
@@ -20,7 +20,7 @@ Location Kit接口对权限的要求参见API参考：[@ohos.geoLocationManager 
 
 ## 开发步骤
 
-1. 开发者可以在应用配置文件中声明所需要的权限并向用户申请授权，具体可参考[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+1. 开发者可以在应用配置文件中声明所需要的权限并向用户申请授权，具体可参考[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 2. 当APP运行在前台，且访问设备位置信息时，申请位置权限的方式如下：
 
 | 申请位置权限的方式 | 是否允许申请 | 申请成功后获取的位置的精确度 |
@@ -32,7 +32,7 @@ Location Kit接口对权限的要求参见API参考：[@ohos.geoLocationManager 
 
 如果应用在后台运行时也需要访问设备位置，除了按照步骤2申请权限外，还需要申请LOCATION类型的长时任务。
 
-长时任务申请可参考：[长时任务介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)。
+长时任务申请可参考：[长时任务介绍](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)。
 
 ## 示例代码
 

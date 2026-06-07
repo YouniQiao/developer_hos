@@ -1,6 +1,6 @@
 ---
 title: "安全摄像头场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-taas-securecamera
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securecamera
 format: md
 ---
 
@@ -65,7 +65,7 @@ function getSecureCameraDevice(cameraManager: camera.CameraManager): camera.Came
    import { trustedAppService } from '@kit.DeviceSecurityKit';
    import { BusinessError } from '@kit.BasicServicesKit';
    ```
-2. 参考[安全相机开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-secure-photo)，初始化安全相机。
+2. 参考[安全相机开发指导](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-secure-photo)，初始化安全相机。
 
    开发者需要完成：
 
@@ -124,7 +124,7 @@ function getSecureCameraDevice(cameraManager: camera.CameraManager): camera.Came
      console.error(`Failed to initialize attest context, message:${error.message}, code:${error.code}`);
    }
    ```
-4. 参考[安全相机开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-secure-photo)，完成安全相机会话的创建，配置输入、输出流，启动预览流和安全数据流。
+4. 参考[安全相机开发指导](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-secure-photo)，完成安全相机会话的创建，配置输入、输出流，启动预览流和安全数据流。
 5. 结束证明会话。
 
    ```

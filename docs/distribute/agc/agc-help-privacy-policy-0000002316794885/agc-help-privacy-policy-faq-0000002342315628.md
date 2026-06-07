@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-faq-0000002342315628
+original_url: /docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-faq-0000002342315628
 format: md
 ---
 
@@ -29,13 +29,13 @@ format: md
 
 * 使用标准化隐私声明托管服务后，用户首次打开应用或元服务，系统会自动弹出标准化的隐私弹窗，显性提示用户阅读并同意隐私政策和用户协议，只有当用户在弹窗中点击“同意”按钮，才会允许应用或元服务进入首页，否则会自动退出应用或元服务。在应用和元服务的代码中，无需设置“首次启动时打开隐私弹窗”的代码。
 
-* 如果需要在HarmonyOS应用内（如“设置”、“关于我们”等页面）展示隐私声明入口，可以在客户端代码中调用[隐私管理服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-privacy)接口，查询托管的隐私声明链接，以保持应用内的隐私声明和隐私弹窗中的隐私声明一致。
+* 如果需要在HarmonyOS应用内（如“设置”、“关于我们”等页面）展示隐私声明入口，可以在客户端代码中调用[隐私管理服务](/docs/dev/app-dev/application-services/store-kit-guide/store-privacy)接口，查询托管的隐私声明链接，以保持应用内的隐私声明和隐私弹窗中的隐私声明一致。
 
 * 在元服务的“服务面板-设置”页面中，系统提供了标准的隐私声明查看入口，元服务内无需再提供隐私声明查看入口。
 
 #### 如何调用标准化隐私声明托管服务API？
 
-请参考[隐私管理服务-接口说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-privacy#接口说 明)。
+请参考[隐私管理服务-接口说明](/docs/dev/app-dev/application-services/store-kit-guide/store-privacy#接口说 明)。
 
 #### 除标准化隐私声明，是否支持自定义提供《用户协议》？如何提示用户阅读并获得同意？
 

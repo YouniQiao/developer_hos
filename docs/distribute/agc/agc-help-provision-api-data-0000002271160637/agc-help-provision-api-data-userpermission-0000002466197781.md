@@ -1,6 +1,6 @@
 ---
 title: "UserPermission"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-provision-api-data-userpermission-0000002466197781
+original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-userpermission-0000002466197781
 format: md
 ---
 

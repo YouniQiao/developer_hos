@@ -1,6 +1,6 @@
 ---
 title: "数据分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-analyticaldata-0000002304632340
+original_url: /docs/dev/game-dev/games-gamemme-console-analyticaldata-0000002304632340
 format: md
 ---
 
@@ -9,8 +9,8 @@ format: md
 
 ## 前提条件
 
-* 您的应用已[集成游戏多媒体SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-0000002359706914)。
-* 您已[开通游戏多媒体服务](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-enable-0000002338511697)。
+* 您的应用已[集成游戏多媒体SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-0000002359706914)。
+* 您已[开通游戏多媒体服务](/docs/dev/game-dev/games-gamemme-enable-0000002338511697)。
 
 ## 业务用量
 

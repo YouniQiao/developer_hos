@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "交易信息密码认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-verifybypwd
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-verifybypwd
 format: md
 ---
 
@@ -100,8 +100,8 @@ PC场景数字盾规格说明如下：
    import { common } from '@kit.AbilityKit';
    import { util } from '@kit.ArkTS';
    ```
-2. 发起交易认证前，需从服务器获取当前账号在[设置数字盾密码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd)时获取的authID。
-3. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts)，初始化签名会话。
+2. 发起交易认证前，需从服务器获取当前账号在[设置数字盾密码](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd)时获取的authID。
+3. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts)，初始化签名会话。
 
    ![](./img/022feb42.png)
 
@@ -158,7 +158,7 @@ PC场景数字盾规格说明如下：
    let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
    const authToken: trustedAuthentication.AuthToken = await ContentVerifyByPwd(challenge, context);
    ```
-5. 参考密钥管理服务提供的[针对携带认证信息的签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts#eccsha256携带认证信息的签名类型), 对交易信息authToken数据进行签名验证，并结束会话。
+5. 参考密钥管理服务提供的[针对携带认证信息的签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts#eccsha256携带认证信息的签名类型), 对交易信息authToken数据进行签名验证，并结束会话。
 
    ![](./img/b19595ce.png)
 
@@ -184,4 +184,4 @@ PC场景数字盾规格说明如下：
    let str = "用户：王xx\n账号：95588180804408xxxx\n交易金额：1000000000";
    const utf8Bytes = new Uint8Array(encodeUtf8(str));
    ```
-6. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts), 对签名数据进行验签操作，验签通过后可完成对应账户的转账扣款。
+6. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts), 对签名数据进行验签操作，验签通过后可完成对应账户的转账扣款。

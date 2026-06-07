@@ -1,7 +1,7 @@
 ---
 title: 阔折叠
 sidebar_label: 阔折叠
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/flip-0000002321233974
+original_url: /docs/design/multi-device-design/folding-screen/flip
 format: md
 ---
 
@@ -129,7 +129,7 @@ format: md
 
 范式一：全部隐藏
 
-滑动或点击应用内容区，同时隐藏顶部和底部的控件，以帮助用户更加专注于页面内容，避免受到非必要元素的干扰，提升浏览沉浸感。此范式适用于新闻阅读、浏览器、资讯详情页等场景。本场景的开发指南，请参阅[滑动沉浸式浏览](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-purax-guide#section28531824202114)。
+滑动或点击应用内容区，同时隐藏顶部和底部的控件，以帮助用户更加专注于页面内容，避免受到非必要元素的干扰，提升浏览沉浸感。此范式适用于新闻阅读、浏览器、资讯详情页等场景。本场景的开发指南，请参阅[滑动沉浸式浏览](/docs/dev/app-dev/multi-device/bpta-purax-guide#section28531824202114)。
 
 |  |  |  |
 | --- | --- | --- |
@@ -185,7 +185,7 @@ format: md
 
 外屏弹出框需在屏幕内完整显示，包括弹框主体及弹框主体外的交互对象 (按钮等)，弹出框在外屏显示的最大高度不超过屏幕高度的 90% 。
 
-本场景的开发指南，请参阅[弹出框适配](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-purax-guide)。
+本场景的开发指南，请参阅[弹出框适配](/docs/dev/app-dev/multi-device/bpta-purax-guide)。
 
 ![](../../general-design-basics/visual-design/img/img_e244c8c80f02_zh-cn_image_0000002357735057.png "点击放大")
 

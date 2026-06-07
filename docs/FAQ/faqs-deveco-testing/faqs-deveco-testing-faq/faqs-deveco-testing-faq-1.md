@@ -1,7 +1,7 @@
 ---
 format: md
 title: "针对 HarmonyOS 应用测试，DevEco Testing提供了哪些配套测试能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing-faq-1
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-1
 ---
 
 

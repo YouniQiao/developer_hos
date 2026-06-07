@@ -1,6 +1,6 @@
 ---
 title: "参数说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-setup-activities-param-0000002392401425
+original_url: /docs/distribute/agc/agc-help-setup-activities-0000002358750666/agc-help-setup-activities-param-0000002392401425
 format: md
 ---
 

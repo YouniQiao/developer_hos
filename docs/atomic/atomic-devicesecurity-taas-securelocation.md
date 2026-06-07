@@ -1,6 +1,6 @@
 ---
 title: "安全地理位置场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-taas-securelocation
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-taas-dev/atomic-devicesecurity-taas-securelocation
 format: md
 ---
 
@@ -56,7 +56,7 @@ try {
 
 ## 开发步骤
 
-1. 申请位置权限，权限名称为“[ohos.permission.APPROXIMATELY\_LOCATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionapproximately_location)”和“[ohos.permission.LOCATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionlocation)”，具体请参考[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+1. 申请位置权限，权限名称为“[ohos.permission.APPROXIMATELY\_LOCATION](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user#ohospermissionapproximately_location)”和“[ohos.permission.LOCATION](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user#ohospermissionlocation)”，具体请参考[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 2. 导入可信应用服务模块。
 
    ```

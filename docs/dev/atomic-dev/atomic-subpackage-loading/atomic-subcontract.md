@@ -1,6 +1,6 @@
 ---
 title: "分包"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-subcontract
+original_url: /docs/dev/atomic-dev/atomic-subpackage-loading/atomic-subcontract
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "服务管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-console-servicemanagement-0000002361510560
+original_url: /docs/dev/game-dev/gameobe-console-servicemanagement-0000002361510560
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已[开通联机对战服务](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-enable-0000002395350369)。
+您已[开通联机对战服务](/docs/dev/game-dev/gameobe-enable-0000002395350369)。
 
 ## 操作步骤
 
@@ -25,7 +25,7 @@ format: md
 
    ![](./img/2de229f5.png)
 
-   开启接入安全加固功能后，您还需要生成签名用于初始化SDK完成接入鉴权，具体请参见[使用签名初始化SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-signature-js-0000002395350417)。
+   开启接入安全加固功能后，您还需要生成签名用于初始化SDK完成接入鉴权，具体请参见[使用签名初始化SDK](/docs/dev/game-dev/gameobe-signature-js-0000002395350417)。
 
    ![](./img/12e494e3.png)
 2. 在弹出的提示框中，点击“确定”。

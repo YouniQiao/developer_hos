@@ -1,6 +1,6 @@
 ---
 title: "使用Web组件管理网页缩放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-scale-zoom
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-scale-zoom
 format: md
 ---
 

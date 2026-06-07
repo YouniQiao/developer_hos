@@ -1,6 +1,6 @@
 ---
 title: "创建轮播 (Swiper)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-create-looping
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-layout-development-create-looping
 format: md
 ---
 
@@ -768,7 +768,7 @@ export struct SwiperIgnoreComponentSize {
 
 maintainVisibleContentPosition为true时，显示区域上方或前方插入或删除数据时可见内容位置不变。
 
-关于数据[LazyForEach：数据懒加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)的具体使用，可参考数据懒加载章节中的示例。
+关于数据[LazyForEach：数据懒加载](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)的具体使用，可参考数据懒加载章节中的示例。
 
 ```
 // xxx.ets

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用主题字体（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme-font-c
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/theme-font-c
 format: md
 ---
 
@@ -34,9 +34,9 @@ format: md
 ## 开发步骤
 
 1. 请确保在设备系统**主题应用**中，能成功应用一项主题字体。
-2. 在应用入口文件（默认工程中为EntryAbility.ets）中重写onConfigurationUpdate函数，以响应fontId变更，适配主题字体的切换和页面刷新，重写方式可参考[主题字变更事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme-font-arkts#开发步骤)。
+2. 在应用入口文件（默认工程中为EntryAbility.ets）中重写onConfigurationUpdate函数，以响应fontId变更，适配主题字体的切换和页面刷新，重写方式可参考[主题字变更事件](/docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/theme-font-arkts#开发步骤)。
 
-   系统配置信息（即示例中的newConfig）变化时，会自动触发onConfigurationUpdate函数。应用可从系统发送的配置信息获取fontId，通过判断是否与应用本地保存的fontId一致来识别主题字的切换。若不一致则刷新本地fontId，并调用C++代码刷新排版结果。从ArkTS到C++的调用通路需应用根据实际情况选取调用方式，本示例不作推荐。跨语言调用可参考[Node-API简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-introduction)。
+   系统配置信息（即示例中的newConfig）变化时，会自动触发onConfigurationUpdate函数。应用可从系统发送的配置信息获取fontId，通过判断是否与应用本地保存的fontId一致来识别主题字的切换。若不一致则刷新本地fontId，并调用C++代码刷新排版结果。从ArkTS到C++的调用通路需应用根据实际情况选取调用方式，本示例不作推荐。跨语言调用可参考[Node-API简介](/docs/dev/ndk-dev/napi-introduction)。
 3. 导入C++侧依赖，本步骤及之后均为主题字体在C++侧的使用
 
    在工程的src/main/cpp/CMakeLists.txt文件中添加以下lib。

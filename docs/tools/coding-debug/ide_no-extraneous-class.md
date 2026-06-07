@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/no-extraneous-class"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-extraneous-class
+original_url: /docs/tools/coding-debug/ide_no-extraneous-class
 format: md
 ---
 

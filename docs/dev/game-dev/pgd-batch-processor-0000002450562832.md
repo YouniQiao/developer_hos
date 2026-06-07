@@ -1,6 +1,6 @@
 ---
 title: "BatchProcessor实体修改批处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-batch-processor-0000002450562832
+original_url: /docs/dev/game-dev/pgd-batch-processor-0000002450562832
 format: md
 ---
 

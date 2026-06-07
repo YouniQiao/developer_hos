@@ -1,6 +1,6 @@
 ---
 title: "使用ImageSource获取RAW数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-raw-data
+original_url: /docs/dev/app-dev/media/image-raw-data
 format: md
 ---
 
@@ -32,7 +32,7 @@ format: md
 
 2. 获取图片。
 
-   * 方法一：通过沙箱路径直接获取，此方法**仅适用**于应用沙箱中的图片。获取方式请参考[获取应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)。
+   * 方法一：通过沙箱路径直接获取，此方法**仅适用**于应用沙箱中的图片。获取方式请参考[获取应用文件路径](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取应用文件路径)。
 
      ```
      function getFilePath(context: Context, fileName: string): string {

@@ -1,7 +1,7 @@
 ---
 title: 安全可靠
 sidebar_label: 安全可靠
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900584166
+original_url: /docs/design/atomic-service-design/design-principles/secure
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250624165303.83204612431364100806381638475708:50001231000000:2800:32AAE847F389BE5D441901F04CD0009D5831439CBE3392E9C0EF8B0C0D585CAE.png "点击放大")
 
-2）规避风险：帮助用户规避风险，准确认识风险以及后果。在获取用户的个人数据时，可以通过调用系统提供的场景化组件来规避不可控的数据获取，如[使用安全控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/security-component-overview)（位置、剪贴板、保存）、[使用系统选择器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-picker)（图库、文件、联系人、扫一扫、相机等）。
+2）规避风险：帮助用户规避风险，准确认识风险以及后果。在获取用户的个人数据时，可以通过调用系统提供的场景化组件来规避不可控的数据获取，如[使用安全控件](/docs/dev/app-dev/system/system-security/access-control/security-components/security-component-overview)（位置、剪贴板、保存）、[使用系统选择器](/docs/dev/app-dev/system/system-security/access-control/use-picker)（图库、文件、联系人、扫一扫、相机等）。
 
 安全控件
 

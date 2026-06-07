@@ -1,7 +1,7 @@
 ---
 format: md
 title: "编译时DevEco Studio提示Signing material error"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-44
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-44
 ---
 
 

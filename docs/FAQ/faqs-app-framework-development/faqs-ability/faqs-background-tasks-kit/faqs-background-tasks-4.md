@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何申请多个长时任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-background-tasks-4
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-4
 ---
 
 
@@ -15,4 +15,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-b
 
 **参考链接**
 
-[长时任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)
+[长时任务](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)

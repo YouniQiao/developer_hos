@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何监听Navigation页面栈变化"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-414
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-414
 ---
 
 

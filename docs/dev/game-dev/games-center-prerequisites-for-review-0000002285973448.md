@@ -1,10 +1,10 @@
 ---
 title: "前提条件"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-prerequisites-for-review-0000002285973448
+original_url: /docs/dev/game-dev/games-center-prerequisites-for-review-0000002285973448
 format: md
 ---
 
 
-* 您已在商品管理[新增商品](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-create-digital-products-0000002286076724#ZH-CN_TOPIC_0000002382174001)。
+* 您已在商品管理[新增商品](/docs/dev/game-dev/games-center-create-digital-products-0000002286076724#ZH-CN_TOPIC_0000002382174001)。
 * 推荐您使用Google Chrome浏览器访问商品管理服务，最低版本为62.0.3202.62。
-* 推荐您在提交数字商品审核前使用沙盒测试进行调测。您可以通过设置沙盒测试账户，来模拟真实环境下数字商品的交易过程，在测试期间发现问题可以及时进行修复，这样确保了在商品上架生效以后可以提供给用户稳定流畅的商品购买体验。整个沙盒测试过程不会产生任何费用。详细操作请参见[沙盒测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-sandbox)。
+* 推荐您在提交数字商品审核前使用沙盒测试进行调测。您可以通过设置沙盒测试账户，来模拟真实环境下数字商品的交易过程，在测试期间发现问题可以及时进行修复，这样确保了在商品上架生效以后可以提供给用户稳定流畅的商品购买体验。整个沙盒测试过程不会产生任何费用。详细操作请参见[沙盒测试](/docs/dev/app-dev/application-services/iap-kit-guide/iap-sandbox)。

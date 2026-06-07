@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "发送语音播报消息"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-extend-noti
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-extend-noti/push-send-extend-noti
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ## 开通权益
 
-推送语音播报消息需要申请推送语音播报消息权益，请参见[申请推送语音播报消息权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请推送语音播报消息权益)。
+推送语音播报消息需要申请推送语音播报消息权益，请参见[申请推送语音播报消息权益](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#申请推送语音播报消息权益)。
 
 ## 频控规则
 
@@ -29,8 +29,8 @@ format: md
 
 ## 开发步骤
 
-1. 参见指导[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
-2. 为确保应用可正常收到消息，建议应用发送通知前调用[requestEnableNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#notificationmanagerrequestenablenotification10-1)()方法弹出提醒，告知用户需要允许接收通知消息。详情请参见Notification Kit-[请求通知授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-enable)。
+1. 参见指导[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)。
+2. 为确保应用可正常收到消息，建议应用发送通知前调用[requestEnableNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#notificationmanagerrequestenablenotification10-1)()方法弹出提醒，告知用户需要允许接收通知消息。详情请参见Notification Kit-[请求通知授权](/docs/dev/app-dev/application-services/notification-kit/notification-enable)。
 3. 应用服务端调用REST API推送消息，消息详情可参见[场景化消息API接口功能介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro)，请求示例如下：
 
    ```
@@ -71,7 +71,7 @@ format: md
    * push-type：2，表示语音播报场景。
    * category：消息自分类类别，当前支持设置为PLAY\_VOICE。
    * actionType：0表示点击消息打开应用首页。
-   * token：Push Token，可参见[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)获取。
+   * token：Push Token，可参见[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)获取。
    * extraData：语音播报场景可携带的额外数据，字符串类型。详情参见[ExtensionPayload 语音播报消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#extensionpayload-语音播报消息)。extraData数据获取请参考[示例代码](https://gitcode.com/HarmonyOS_Samples/push-kit-sample-code-clientdemo-arkts/blob/master/entry/src/main/ets/entryability/RemoteNotificationExtAbility.ets)。
    * testMessage：（选填）测试消息标识，true表示测试消息。每个项目每天限制发送1000条测试消息，单次推送可发送Token数不超过10个。详情请参见[testMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#pushoptions)。
    * ttl：（选填）消息缓存时间，详见[ttl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#pushoptions)。
@@ -180,9 +180,9 @@ format: md
 
      您可参考以下3种Kit能力实现语音播报：
 
-     + 文本转语音 [Core Speech Kit（基础语音服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/texttospeech-guide)。
-     + 媒体服务 [Media Kit（媒体服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-kit-intro)。
-     + 音频播放 [Audio Kit（音频服务）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview)。
+     + 文本转语音 [Core Speech Kit（基础语音服务）](/docs/dev/app-dev/ai/core-speech-kit-guide/texttospeech-guide)。
+     + 媒体服务 [Media Kit（媒体服务）](/docs/dev/app-dev/media/media-kit/media-kit-intro)。
+     + 音频播放 [Audio Kit（音频服务）](/docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview)。
 5. 应用服务端调用REST API推送消息后，若应用进程在前台，通知栏将不会弹出通知提醒。实现步骤如下：
 
    在项目模块的**src/main/module.json5**文件的abilities模块中（以PushMessageAbility为例）配置skills标签的actions属性内容为**action.ohos.push.listener**（有且只能有一个ability定义该action，**若同时添加uris参数，则uris内容需为空**）：

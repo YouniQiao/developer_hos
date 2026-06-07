@@ -1,7 +1,7 @@
 ---
 title: "查看Cpp Crash（进程崩溃）日志"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-faultlog-cppcrash
+original_url: /docs/tools/coding-debug/ide-faultlog-cppcrash
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Function Flow Runtime C API"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-api-guideline-c
+original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-api-guideline-c
 format: md
 ---
 

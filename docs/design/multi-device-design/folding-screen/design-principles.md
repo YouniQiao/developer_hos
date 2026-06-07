@@ -1,7 +1,7 @@
 ---
 title: 设计原则
 sidebar_label: 设计原则
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-principles-0000001957023989
+original_url: /docs/design/multi-device-design/folding-screen/design-principles
 format: md
 ---
 

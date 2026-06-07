@@ -1,7 +1,7 @@
 ---
 title: 即时操作
 sidebar_label: 即时操作
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/component_snackbar-0000002340726169
+original_url: /docs/design/components/view-components/snackbar
 format: md
 ---
 

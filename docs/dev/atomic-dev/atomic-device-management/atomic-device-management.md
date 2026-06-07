@@ -1,6 +1,6 @@
 ---
 title: "设备管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-device-management
+original_url: /docs/dev/atomic-dev/atomic-device-management/atomic-device-management
 format: md
 ---
 

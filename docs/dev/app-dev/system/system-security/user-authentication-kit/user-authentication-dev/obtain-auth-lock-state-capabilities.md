@@ -1,6 +1,6 @@
 ---
 title: "查询指定认证类型的认证冻结状态"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/obtain-auth-lock-state-capabilities
+original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-auth-lock-state-capabilities
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ## 开发步骤
 
-1. [申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/prerequisites#申请权限)：ohos.permission.ACCESS\_BIOMETRIC。
+1. [申请权限](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/prerequisites#申请权限)：ohos.permission.ACCESS\_BIOMETRIC。
 2. 指定认证类型（[UserAuthType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthtype8)），并调用[getAuthLockState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#userauthgetauthlockstate22)接口查询指定认证类型的认证冻结状态。
 
 以查询PIN认证类型的认证冻结状态为例：

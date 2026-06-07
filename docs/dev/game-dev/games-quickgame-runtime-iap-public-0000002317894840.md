@@ -1,6 +1,6 @@
 ---
 title: "沙盒测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-iap-public-0000002317894840
+original_url: /docs/dev/game-dev/games-quickgame-runtime-iap-public-0000002317894840
 format: md
 ---
 
@@ -47,7 +47,7 @@ qg.isSandboxActivated({
 
 ### FAQ
 
-[文档中只描述需要对游戏时长做防沉迷处理，那么未成年人支付如何处理？](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-faq-payment-0000002458692481#section14202162622019)
+[文档中只描述需要对游戏时长做防沉迷处理，那么未成年人支付如何处理？](/docs/dev/game-dev/games-quickgame-faq-payment-0000002458692481#section14202162622019)
 
 ### 案例
 

@@ -1,6 +1,6 @@
 ---
 title: "形状裁剪（clipShape）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-clip-shape
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-clip-shape
 format: md
 ---
 

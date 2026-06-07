@@ -1,7 +1,7 @@
 ---
 title: "广告账户管理"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ad_account_management-0000002530543790
+original_url: /docs/monetize/promotion/bp-functions-ad_account_management-0000002530543790
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 
    ![](./img/caution_3.0-zh-cn_648e7c7d1a9f.png) 
 
-   客户投放子账户（子客服务商）、投放操作账户（子客账户），其账户信息入口中的华为账号为账户持有人，支持更改。持有人信息更改，操作需由上一层管理账户进行修改（客户投放伙伴主账户/客户投放伙伴子账户），持有人绑定管理详见：[客户投放伙伴主账户（一级服务商）](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-customer-partner-master-0000001293695534)、[客户投放伙伴子账户（子客服务商）](https://developer.huawei.com/consumer/cn/doc/promotion/bp-start-customer-partner-sub-account-0000001346575385)。
+   客户投放子账户（子客服务商）、投放操作账户（子客账户），其账户信息入口中的华为账号为账户持有人，支持更改。持有人信息更改，操作需由上一层管理账户进行修改（客户投放伙伴主账户/客户投放伙伴子账户），持有人绑定管理详见：[客户投放伙伴主账户（一级服务商）](/docs/monetize/promotion/bp-start-customer-partner-master-0000001293695534)、[客户投放伙伴子账户（子客服务商）](/docs/monetize/promotion/bp-start-customer-partner-sub-account-0000001346575385)。
 
    ![](./img/zh-cn_image_0000002530444656_dbc07f46d4eb.png "点击放大")
 

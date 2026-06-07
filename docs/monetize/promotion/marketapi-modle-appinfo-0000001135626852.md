@@ -1,7 +1,7 @@
 ---
 title: "AppInfo"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-appinfo-0000001135626852
+original_url: /docs/monetize/promotion/marketapi-modle-appinfo-0000001135626852
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Device Security Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-introduction
+original_url: /docs/dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-introduction
 format: md
 ---
 

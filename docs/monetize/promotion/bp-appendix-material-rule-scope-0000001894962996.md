@@ -1,7 +1,7 @@
 ---
 title: "审核范围"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-scope-0000001894962996
+original_url: /docs/monetize/promotion/bp-appendix-material-rule-scope-0000001894962996
 format: md
 ---
 

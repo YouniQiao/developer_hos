@@ -1,6 +1,6 @@
 ---
 title: "电话"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-telephony
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-telephony
 format: md
 ---
 

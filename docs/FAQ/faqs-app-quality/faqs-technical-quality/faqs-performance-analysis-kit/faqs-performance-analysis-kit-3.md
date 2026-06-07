@@ -1,7 +1,7 @@
 ---
 format: md
 title: "hilog日志出现乱码原因是什么，如何解决"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-3
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-3
 ---
 
 

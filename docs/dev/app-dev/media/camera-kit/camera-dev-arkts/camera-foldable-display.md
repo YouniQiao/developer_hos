@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "适配不同折叠状态的摄像头变更(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-foldable-display
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-foldable-display
 format: md
 ---
 
@@ -16,9 +16,9 @@ format: md
 
 详细的API说明请参考[@ohos.multimedia.camera (相机管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera)。
 
-Context获取方式请参考：[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+Context获取方式请参考：[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
-在开发相机应用时，需要先申请相机相关权限，请参考[申请相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preparation)。
+在开发相机应用时，需要先申请相机相关权限，请参考[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 ## 创建XComponent
 
@@ -149,7 +149,7 @@ function hasCameraAt(cameraManager: camera.CameraManager, cameraPosition: camera
 
 ## 摄像头切换逻辑
 
-在监听到折叠状态发生变化时通过设置被[@StorageLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-appstorage#storagelink)修饰的foldStatus变量改变，触发reloadXComponent方法重新加载XComponent组件，从而实现相机的切换逻辑。
+在监听到折叠状态发生变化时通过设置被[@StorageLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage#storagelink)修饰的foldStatus变量改变，触发reloadXComponent方法重新加载XComponent组件，从而实现相机的切换逻辑。
 
 ## 完整示例
 

@@ -1,6 +1,6 @@
 ---
 title: "防沉迷"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-anti-indulgence-0000002318054660
+original_url: /docs/dev/game-dev/games-quickgame-anti-indulgence-0000002318054660
 format: md
 ---
 

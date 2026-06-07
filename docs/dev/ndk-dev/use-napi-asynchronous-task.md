@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口进行异步任务开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-asynchronous-task
+original_url: /docs/dev/ndk-dev/use-napi-asynchronous-task
 format: md
 ---
 
@@ -269,7 +269,7 @@ napi\_queue\_async\_work接口使用uv\_queue\_work能力，并管理回调中na
 
 * 由于napi\_queue\_async\_work接口本身会创建一个C++子线程，因此native侧代码可以直接复用上面使用callback方式的代码，以下展示ArkTS侧使用上的差异。
 
-### 基于[Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/worker-introduction)实现的C++子线程与ArkTS子线程交互场景
+### 基于[Worker](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction)实现的C++子线程与ArkTS子线程交互场景
 
 * DevEco Studio支持一键生成Worker，在对应的\&#123;moduleName\&#125;目录下任意位置，点击鼠标右键 &gt; New &gt; Worker，即可自动生成Worker的模板文件及配置信息。本文以创建 "Worker" 为例。
 
@@ -325,7 +325,7 @@ napi\_queue\_async\_work接口使用uv\_queue\_work能力，并管理回调中na
    result is 579
    ```
 
-### 基于[Taskpool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-introduction)实现的C++子线程与ArkTS子线程交互场景
+### 基于[Taskpool](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction)实现的C++子线程与ArkTS子线程交互场景
 
 1. ArkTS线程代码。
 
@@ -369,4 +369,4 @@ napi\_queue\_async\_work接口使用uv\_queue\_work能力，并管理回调中na
 * 调用napi\_cancel\_async\_work接口，无论底层uv是否失败都会返回napi\_ok。若因为底层uv导致取消任务失败，complete callback中的status会传入对应错误值，请在complete callback中对status进行处理。
 * NAPI的异步工作项（napi\_async\_work）建议单次使用。napi\_queue\_async\_work后，该napi\_async\_work需在complete回调执行时或执行后，通过napi\_delete\_async\_work完成释放。同一个napi\_async\_work只允许释放一次，重复释放会导致未定义行为。
 * napi\_async\_work的execute\_cb运行在一个独立的工作线程中，该线程从uv线程池中取出。不同工作线程之间互不影响。execute\_cb函数中的业务逻辑是在工作线程中执行的，而非原始的ArkTS线程，因此不能使用入参env构造napi\_value(入参env是原始ArkTS线程的env)。
-* 在任务的执行时序上，napi\_async\_work仅保证complete\_cb在execute\_cb之后执行。不同napi\_async\_work的execute\_cb在各自的工作线程上运行，因此无法保证不同execute\_cb的执行顺序。如果任务执行需要顺序，建议使用napi\_threadsafe\_function系列接口，这些接口是保序的。具体使用方法可参考[链接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-thread-safety)。
+* 在任务的执行时序上，napi\_async\_work仅保证complete\_cb在execute\_cb之后执行。不同napi\_async\_work的execute\_cb在各自的工作线程上运行，因此无法保证不同execute\_cb的执行顺序。如果任务执行需要顺序，建议使用napi\_threadsafe\_function系列接口，这些接口是保序的。具体使用方法可参考[链接](/docs/dev/ndk-dev/use-napi-thread-safety)。

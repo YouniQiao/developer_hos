@@ -1,6 +1,6 @@
 ---
 title: "事件对象"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-event-object
+original_url: /docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-object
 format: md
 ---
 

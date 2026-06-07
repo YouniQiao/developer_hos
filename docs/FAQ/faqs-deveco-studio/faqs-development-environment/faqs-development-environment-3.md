@@ -1,7 +1,7 @@
 ---
 format: md
 title: "导入Sample时，提示SSL证书校验错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-3
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-3
 ---
 
 

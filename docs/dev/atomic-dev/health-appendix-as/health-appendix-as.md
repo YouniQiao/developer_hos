@@ -1,6 +1,6 @@
 ---
 title: "附录"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-appendix-as
+original_url: /docs/dev/atomic-dev/health-appendix-as/health-appendix-as
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "申请年龄分级"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-post-app-age-rating-0000002236201262
+original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-post-app-age-rating-0000002236201262
 format: md
 ---
 
@@ -30,13 +30,13 @@ format: md
 
 ![](../img/agc-help-publish-api-post-app-age-rating-0000002236201262_1.png)
 
-本接口请使用API客户端认证方式，请参见[API客户端方式获取服务端授权](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section1679462873111)获取**客户端ID**和**access\_token**。
+本接口请使用API客户端认证方式，请参见[API客户端方式获取服务端授权](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section1679462873111)获取**客户端ID**和**access\_token**。
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | client\_id | M | String | 客户端ID。 |
 | Authorization | M | String | 认证信息。  格式：Authorization: Bearer *\\$`{access\_token}`* |
-| appId | M | String(32) | 应用ID。  获取方法参考[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 |
+| appId | M | String(32) | 应用ID。  获取方法参考[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 |
 
 #### [h2]Query
 
@@ -101,7 +101,7 @@ appId: 1******57
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-data-connectret-0000002271160589) | 包含返回码及描述信息的结果。 |
+| ret | M | [ConnectRet](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-connectret-0000002271160589) | 包含返回码及描述信息的结果。 |
 | ratingResult | O | Integer(32) | 年龄分级结果。  取值范围：   * -1：拒绝评级 * 1：年满3周岁 * 2：中国区年满8周岁，其他区域年满7周岁 * 3：年满12周岁 * 4：年满16周岁 * 5：年满18周岁 |
 | rejectReason | O | `List&lt;String(32)>` | 拒绝评级的原因，返回不满足系统要求的**问卷分类ID**集合。  数组长度不超过50。  请根据该参数返回的ID找到对应的问卷分类，然后修改内容。  ID对应的问卷分类如下：   * 389265604458119891：暴力内容 * 389265604458119892：令人恐惧的内容 * 389265604458119893：性相关的内容 * 389265604458119894：不良语言 * 389265604458119895：受管制物品与活动 * 389265604458119896：模拟赌博、真实赌博或法定货币支付。 * 389265604458119897：法律与道德 * 389265604458119898：用户间交互 * 389265604458119899：用户信息收集 * 389265604458119900：其他 * 389265604458119901：金融类 |
 | prohibitedCountry | O | `List&lt;String(5)>` | 评级成功时存在禁止发布的国家区域的国家码集合。  数组长度不超过300。 |

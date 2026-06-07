@@ -1,6 +1,6 @@
 ---
 title: "加密导出导入密钥介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-wrap-key-overview
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-wrap-key/huks-wrap-key-overview
 format: md
 ---
 
@@ -14,4 +14,4 @@ format: md
 * 仅在手机、平板、PC/2in1、智能穿戴上支持加密导出导入密钥功能。
 * 需要加密导出的密钥，必须在生成时就指定为允许加密导出。
 * 加密导出的密钥，只能在同一台设备上的同一应用导入。
-* 支持加密导出导入[群组密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-group-key-overview)。当导出时为普通密钥，导入时指定为群组密钥时，需要认证TUI PIN，其他情况可以直接导入。
+* 支持加密导出导入[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)。当导出时为普通密钥，导入时指定为群组密钥时，需要认证TUI PIN，其他情况可以直接导入。

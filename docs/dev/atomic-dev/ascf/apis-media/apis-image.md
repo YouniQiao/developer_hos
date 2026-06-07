@@ -1,6 +1,6 @@
 ---
 title: "图片"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-image
+original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-image
 format: md
 ---
 
@@ -47,7 +47,7 @@ has.previewImage(Object object)
 
 在新页面中预览图片，预览的过程中用户可以进行保存图片等操作。
 
-**注意事项**：在调用此接口时如果需要支持保存网络资源，需要先完成[配置服务器域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)。
+**注意事项**：在调用此接口时如果需要支持保存网络资源，需要先完成[配置服务器域名](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。
 
 **起始版本：** 1.0.0
 
@@ -93,7 +93,7 @@ has.getImageInfo(Object object)
 
 **起始版本：** 1.0.0
 
-**注意事项**：在调用此接口时如果使用网络资源，需要先完成[配置服务器域名](https://developer.huawei.com/consumer/cn/doc/atomic-guides/agc-help-harmonyos-server-domain)。
+**注意事项**：在调用此接口时如果使用网络资源，需要先完成[配置服务器域名](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。
 
 **参数：**
 
@@ -218,7 +218,7 @@ has.chooseFile(Object object)
 
 | 属性 | 类型 | 描述 |
 | --- | --- | --- |
-| path | string | 所选文件的文件路径。  **注意：**  此路径为系统媒体库原始路径，应用无法直接读写，如需操作文件，请先调用[FileSystemManager.copyFile](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-file#filesystemmanagercopyfile)或[FileSystemManager.copyFileSync](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-file#filesystemmanagercopyfilesync)接口将文件拷贝到沙箱再进行使用。 |
+| path | string | 所选文件的文件路径。  **注意：**  此路径为系统媒体库原始路径，应用无法直接读写，如需操作文件，请先调用[FileSystemManager.copyFile](/docs/dev/atomic-dev/ascf/apis/apis-file#filesystemmanagercopyfile)或[FileSystemManager.copyFileSync](/docs/dev/atomic-dev/ascf/apis/apis-file#filesystemmanagercopyfilesync)接口将文件拷贝到沙箱再进行使用。 |
 | name | string | 所选文件的文件名称。 |
 | size | number | 所选文件的文件大小，单位：B。 |
 

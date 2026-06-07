@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文件隔离删除"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-remove
+original_url: /docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-remove
 format: md
 ---
 

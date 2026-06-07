@@ -1,13 +1,13 @@
 ---
 title: "分阶段发布"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-phased-release-0000002271493785
+original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-phased-release-0000002271493785
 format: md
 ---
 
 
 ![](../img/agc-help-maintain-phased-release-0000002271493785_0.png)
 
-本文档所述功能即将下线，当前页面仅作历史存档。新功能请参考[《分阶段发布（7天内自动更新）》](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-phased-release-7day-0000002279615726)。
+本文档所述功能即将下线，当前页面仅作历史存档。新功能请参考[《分阶段发布（7天内自动更新）》](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-phased-release-7day-0000002279615726)。
 
 在当前上架版本为全网发布时，您可以采用分阶段发布的方式进行应用升级。采用分阶段发布，您可以先向一定比例的用户发布更新的版本，然后再逐步提升用户比例，最终实现全网发布。通过小范围的版本更新，您可以快速获取用户对新版本的反馈意见，降低全网发布后版本出现问题的风险。
 

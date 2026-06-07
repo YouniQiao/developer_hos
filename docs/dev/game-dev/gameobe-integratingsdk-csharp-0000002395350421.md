@@ -1,6 +1,6 @@
 ---
 title: "集成SDK"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-integratingsdk-csharp-0000002395350421
+original_url: /docs/dev/game-dev/gameobe-integratingsdk-csharp-0000002395350421
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/c55695a7.png)
 
-如果帧同步过程中使用UDP协议，您需要在Unity导出的Android Studio工程（UDP协议当前仅支持Android平台）中进行相关[打包配置](https://developer.huawei.com/consumer/cn/doc/games-guides/packaging-configuration-csharp-0000002395350565)。
+如果帧同步过程中使用UDP协议，您需要在Unity导出的Android Studio工程（UDP协议当前仅支持Android平台）中进行相关[打包配置](/docs/dev/game-dev/packaging-configuration-csharp-0000002395350565)。
 
 ## 开发环境
 
@@ -31,4 +31,4 @@ format: md
 
      ![](./img/24c06c73.png)
 
-     如果帧同步过程中不使用[UDP协议](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-introduction-0000002361670416#ZH-CN_TOPIC_0000002361670416__p152691445434)，你还可以将对应平台文件夹中的rtsacontrol.dll和RtsaDllExport.dll（Android是libRtsaDllExport.so和librtsaControl.so）文件删除，以保持包体最小。
+     如果帧同步过程中不使用[UDP协议](/docs/dev/game-dev/gameobe-introduction-0000002361670416#ZH-CN_TOPIC_0000002361670416__p152691445434)，你还可以将对应平台文件夹中的rtsacontrol.dll和RtsaDllExport.dll（Android是libRtsaDllExport.so和librtsaControl.so）文件删除，以保持包体最小。

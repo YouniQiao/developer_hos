@@ -1,6 +1,6 @@
 ---
 title: "ArkTS卡片编辑概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-event-formeditextensionability-overview
+original_url: /docs/dev/app-dev/application-framework/arkts-ui-widget-event-formeditextensionability-overview
 format: md
 ---
 
@@ -17,12 +17,12 @@ ArkTS卡片提供卡片页面编辑能力，支持实现用户自定义卡片内
 
 ![](./img/8329f936.png)
 
-1. 长按卡片弹出菜单，此时桌面通过[formConfigAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#配置文件字段说明)字段判断卡片是否支持卡片编辑能力来决定是否显示编辑按钮。
+1. 长按卡片弹出菜单，此时桌面通过[formConfigAbility](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#配置文件字段说明)字段判断卡片是否支持卡片编辑能力来决定是否显示编辑按钮。
 2. 点击“编辑”菜单项，桌面通过formConfigAbility中的字段拉起对应的页面，进入一级编辑页。一级编辑页的编辑区域有限，用于比较简单的编辑布局。
    * 预览区：灰色区域为预览区，用于呈现卡片编辑后的效果。预览区的布局是由桌面决定的。
    * 编辑区：白色区域为编辑区，为应用自定义布局区域，用来实现卡片编辑的布局。卡片编辑区的布局由应用继承[FormEditExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formeditextensionability)后绘制而成，可用于简单的编辑布局。
-   * FormEditDemo：该字段为卡片宿主应用的应用名称，通过[app.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)配置文件中的label字段配置。
-   * widget：该字段为卡片名称，通过卡片form\_config.json配置文件中的[name](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#配置文件字段说明)字段配置。
+   * FormEditDemo：该字段为卡片宿主应用的应用名称，通过[app.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)配置文件中的label字段配置。
+   * widget：该字段为卡片名称，通过卡片form\_config.json配置文件中的[name](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#配置文件字段说明)字段配置。
    * “完成”按钮：编辑完成之后，点击按钮可退出半模态卡片编辑页面。
 3. 在卡片编辑区，点击“切换到：上海”按钮后，卡片提供方可以通过[updateForm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider#formproviderupdateform)接口更新卡片信息，并在预览区显示。
 4. 在卡片编辑区，点击“进入二级编辑页”按钮，此时卡片通过FormEditExtensionContext提供的[startSecondPage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-formeditextensioncontext#startsecondpage)方法，将卡片提供方的二级编辑页信息传递给桌面，桌面拉起对应页面，即进入二级编辑页。二级编辑页主要有用于实现复杂的编辑布局，是否需要二级编辑页请开发者根据实际需求添加。
@@ -30,8 +30,8 @@ ArkTS卡片提供卡片页面编辑能力，支持实现用户自定义卡片内
 
 ### 开发步骤
 
-1. [创建卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)。
-2. 新增EntryFormEditAbility文件，用于实现[FormEditExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formeditextensionability)的半模态编辑组件，并在form\_config.json文件中配置[formConfigAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#配置文件字段说明)字段。
+1. [创建卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)。
+2. 新增EntryFormEditAbility文件，用于实现[FormEditExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formeditextensionability)的半模态编辑组件，并在form\_config.json文件中配置[formConfigAbility](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#配置文件字段说明)字段。
 
    * 半模态一级编辑页Ability的实现。
 
@@ -411,7 +411,7 @@ ArkTS卡片提供卡片页面编辑能力，支持实现用户自定义卡片内
    ```
 4. 卡片信息持久化。每次进入卡片编辑页，预览卡片都需要与被编辑卡片保持一致，所以需要持久化卡片信息。
 
-   * 新增PreferencesUtil文件，主要是来封装[Preferences](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-preferences)首选项，供业务做持久化数据使用。
+   * 新增PreferencesUtil文件，主要是来封装[Preferences](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-preferences)首选项，供业务做持久化数据使用。
 
    ```
    // entry/src/main/ets/common/PreferencesUtil.ets
@@ -635,7 +635,7 @@ ArkTS卡片提供卡片页面编辑能力，支持实现用户自定义卡片内
 
 ![](./img/86921d03.png)
 
-1. 长按卡片弹出菜单。桌面通过[formConfigAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#配置文件字段说明)字段判断卡片是否支持卡片编辑能力来决定是否显示编辑按钮。
+1. 长按卡片弹出菜单。桌面通过[formConfigAbility](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#配置文件字段说明)字段判断卡片是否支持卡片编辑能力来决定是否显示编辑按钮。
 2. 点击“编辑”菜单项进入全屏编辑页。桌面通过formConfigAbility字段的信息拉起卡片编辑页。
 3. 点击“切换到：上海”按钮编辑卡片内容。提供方通过[updateForm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider#formproviderupdateform)接口去更新编辑卡片的信息。
 
@@ -643,8 +643,8 @@ ArkTS卡片提供卡片页面编辑能力，支持实现用户自定义卡片内
 
 下面给出示例，实现如下功能：长按卡片弹出编辑菜单，点击“编辑”菜单项进入全屏编辑页，修改卡片内容。
 
-1. [创建卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)。
-2. 开发者需要新增EntryEditAbility.ets文件，继承[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)组件，实现[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)和[onNewWant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onnewwant)回调函数。卡片使用方会通过[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)的parameters字段把被编辑的卡片ID带进来。并且需要在form\_config.json文件中配置[formConfigAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#配置文件字段说明)字段。
+1. [创建卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)。
+2. 开发者需要新增EntryEditAbility.ets文件，继承[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)组件，实现[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)和[onNewWant](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#onnewwant)回调函数。卡片使用方会通过[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)的parameters字段把被编辑的卡片ID带进来。并且需要在form\_config.json文件中配置[formConfigAbility](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#配置文件字段说明)字段。
 
    * 实现编辑页面的Ability。
 
@@ -894,7 +894,7 @@ ArkTS卡片提供卡片页面编辑能力，支持实现用户自定义卡片内
      }
    }
    ```
-4. 新增PreferencesUtil文件，主要是来封装[Preferences](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-persistence-by-preferences)首选项，供业务做持久化数据使用。
+4. 新增PreferencesUtil文件，主要是来封装[Preferences](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-preferences)首选项，供业务做持久化数据使用。
 
    ```
    // entry/src/main/ets/common/PreferencesUtil.ets

@@ -1,6 +1,6 @@
 ---
 title: "使用typeNode实现画中画功能开发（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pipwindow-typenode
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-typenode
 format: md
 ---
 

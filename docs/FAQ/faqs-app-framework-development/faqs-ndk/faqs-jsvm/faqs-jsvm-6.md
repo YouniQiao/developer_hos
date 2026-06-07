@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决Finalizer方法中执行JS代码崩溃问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-jsvm-6
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-6
 ---
 
 

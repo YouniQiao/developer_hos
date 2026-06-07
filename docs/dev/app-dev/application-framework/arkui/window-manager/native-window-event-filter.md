@@ -1,6 +1,6 @@
 ---
 title: "使用WindowManager管理多模输入事件（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-window-event-filter
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/native-window-event-filter
 format: md
 ---
 

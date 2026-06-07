@@ -1,6 +1,6 @@
 ---
 title: "ArkTS卡片使用画布组件绘制自定义图形"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-page-custom-drawing
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-page/arkts-ui-widget-page-custom-drawing
 format: md
 ---
 

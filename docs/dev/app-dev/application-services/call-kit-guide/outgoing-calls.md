@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "去电场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/outgoing-calls
+original_url: /docs/dev/app-dev/application-services/call-kit-guide/outgoing-calls
 format: md
 ---
 
@@ -108,10 +108,10 @@ format: md
    ```
 5. 去电场景，用户也可以拉起通知中心面板，在实况窗通知上执行静音或解除静音。
 
-   开发方法与来电场景相同，详见[来电场景：静音与解除静音](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/incoming-calls#开发步骤)。
+   开发方法与来电场景相同，详见[来电场景：静音与解除静音](/docs/dev/app-dev/application-services/call-kit-guide/incoming-calls#开发步骤)。
 6. 去电场景，用户也可以拉起通知中心面板，在实况窗通知上点击挂断。
 
-   开发方式与来电场景相同，详见[来电场景：用户点击挂断](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/incoming-calls#开发步骤)。
+   开发方式与来电场景相同，详见[来电场景：用户点击挂断](/docs/dev/app-dev/application-services/call-kit-guide/incoming-calls#开发步骤)。
 7. 通话结束后，可以解除voipCallUiEvent事件。
 
    示例代码如下：

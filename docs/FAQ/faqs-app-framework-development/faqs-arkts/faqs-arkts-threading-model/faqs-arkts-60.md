@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决应用需要避免创建过多线程，并发处理任务数量受限，无法充分发挥设备性能的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-60
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-60
 ---
 
 
@@ -13,4 +13,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-a
 
 **参考链接**
 
-[TaskPool和Worker的对比 (TaskPool和Worker)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/taskpool-vs-worker)
+[TaskPool和Worker的对比 (TaskPool和Worker)](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-vs-worker)

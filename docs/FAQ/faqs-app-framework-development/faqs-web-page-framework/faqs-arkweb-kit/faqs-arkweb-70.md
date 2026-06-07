@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Web组件加载发生错误对应错误码如何获取"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-70
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-70
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "上传指定文件至云侧"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-upload-file
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-upload-file
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 ## 前提条件
 
-已[初始化存储实例](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-storage-initialize-bucket)。
+已[初始化存储实例](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-initialize-bucket)。
 
 ## 操作步骤
 

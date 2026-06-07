@@ -1,6 +1,6 @@
 ---
 title: "Web帧率问题分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-frame-rate-performance-analysis
+original_url: /docs/quality/web-frame-rate-performance-analysis
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 
 ![](./img/0fccb4d8.png "点击放大")
 
-ArkWeb子泳道聚合了Web相关线程的trace信息，通过分析Web渲染过程关键函数的trace点，可以分析出每一帧的执行流程，图为[异步渲染模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-render-mode#异步渲染模式默认)下ArkWeb滑动过程中的渲染流程图，其聚合的Web线程信息如下：
+ArkWeb子泳道聚合了Web相关线程的trace信息，通过分析Web渲染过程关键函数的trace点，可以分析出每一帧的执行流程，图为[异步渲染模式](/docs/dev/app-dev/application-framework/arkweb/web-render-layout/web-render-mode#异步渲染模式默认)下ArkWeb滑动过程中的渲染流程图，其聚合的Web线程信息如下：
 
 * H:RosenWeb：用于记录准备提交给Render Service进行统一渲染的数据量。
 * Compositor：合成线程，负责图层CPU指令合成，承载动态效果。

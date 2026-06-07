@@ -1,6 +1,6 @@
 ---
 title: "业务介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-introduction-0000002255036400
+original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-introduction-0000002255036400
 format: md
 ---
 
@@ -16,12 +16,12 @@ format: md
 
 | **主要功能** | 使用平台/工具 | **功能描述** |
 | --- | --- | --- |
-| [兼容性测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-compatibilitytest-0000002289534101) | AGC、DevEco Studio | 兼容性测试为您提供大量的手机、折叠屏和热门平板设备，全自动化验证应用在不同类型设备上的首次安装、再次安装、卸载和启动中的异常问题，检测应用的崩溃、无响应、闪退、运行错误、账号异常、黑白屏、无法回退等兼容性方面的问题。 |
-| [稳定性测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-stabilitytest-0000002254933876) | AGC、DevEco Studio | 长时间遍历测试及随机测试应用在手机、折叠屏和平板上的内存泄漏、内存越界、冻屏、崩溃等稳定性问题。 |
-| [性能测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-performancetest-0000002289647209) | AGC、DevEco Studio | 提供手机应用性能测试服务，在真机上完成应用性能数据如时延、CPU、内存、耗电量、流量等关键指标采集，深入分析应用性能薄弱点。 |
-| [功耗测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-powerconsumptiontest-0000002255036916) | AGC、DevEco Studio | 提供手机、折叠屏应用功耗测试服务，检测影响应用功耗的各项关键指标。 |
-| [UX测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-uxtest-0000002289534109) | AGC、DevEco Studio | 提供手机、折叠屏和平板应用UX测试服务，可检测问题类别包括基础体验、系统特性适配、视觉风格、动效、大屏体验等。 |
-| [隐私测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudtest-privacytest-0000002465035109) | AGC | 提供手机应用隐私测试服务，在真机上完成应用隐私合规如隐私政策的选择和同意、隐私保护能力、隐私通知、向第三方披露和收集等方面的检测，规范应用全生命周期的隐私行为。 |
+| [兼容性测试](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-compatibilitytest-0000002289534101) | AGC、DevEco Studio | 兼容性测试为您提供大量的手机、折叠屏和热门平板设备，全自动化验证应用在不同类型设备上的首次安装、再次安装、卸载和启动中的异常问题，检测应用的崩溃、无响应、闪退、运行错误、账号异常、黑白屏、无法回退等兼容性方面的问题。 |
+| [稳定性测试](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-stabilitytest-0000002254933876) | AGC、DevEco Studio | 长时间遍历测试及随机测试应用在手机、折叠屏和平板上的内存泄漏、内存越界、冻屏、崩溃等稳定性问题。 |
+| [性能测试](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) | AGC、DevEco Studio | 提供手机应用性能测试服务，在真机上完成应用性能数据如时延、CPU、内存、耗电量、流量等关键指标采集，深入分析应用性能薄弱点。 |
+| [功耗测试](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-powerconsumptiontest-0000002255036916) | AGC、DevEco Studio | 提供手机、折叠屏应用功耗测试服务，检测影响应用功耗的各项关键指标。 |
+| [UX测试](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-uxtest-0000002289534109) | AGC、DevEco Studio | 提供手机、折叠屏和平板应用UX测试服务，可检测问题类别包括基础体验、系统特性适配、视觉风格、动效、大屏体验等。 |
+| [隐私测试](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-privacytest-0000002465035109) | AGC | 提供手机应用隐私测试服务，在真机上完成应用隐私合规如隐私政策的选择和同意、隐私保护能力、隐私通知、向第三方披露和收集等方面的检测，规范应用全生命周期的隐私行为。 |
 
 #### 工作原理
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现List的折叠动画效果"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-348
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-348
 ---
 
 

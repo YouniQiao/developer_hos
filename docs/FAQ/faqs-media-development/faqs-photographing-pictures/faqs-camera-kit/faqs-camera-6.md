@@ -1,6 +1,6 @@
 ---
 title: "如何读取相机的预览图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-6
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-6
 format: md
 ---
 
@@ -158,6 +158,6 @@ function onImageArrival(receiver: image.ImageReceiver): void {
 
 **参考链接**
 
-[双路预览(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-dual-channel-preview)
+[双路预览(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview)
 
 [@ohos.multimedia.image (图片处理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-image)

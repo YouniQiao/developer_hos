@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "相机启动恢复实践(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-background-recovery
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-background-recovery
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 * 当相机应用从后台切换至前台时，相机状态回调会返回相机不可用状态，表示当前相机设备被打开，处于忙碌状态。
 * 相机应用从后台切换至前台时，需要重启相机设备的预览流、拍照流以及相机会话管理。
 
-在参考以下示例前，建议开发者查看[相机开发指导(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-management)的具体章节，了解[相机管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-management)、[设备输入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-input)、[会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management)等单个操作。
+在参考以下示例前，建议开发者查看[相机开发指导(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management)的具体章节，了解[相机管理](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management)、[设备输入](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-input)、[会话管理](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management)等单个操作。
 
 ## 开发流程
 
@@ -24,7 +24,7 @@ format: md
 
 ## 完整示例
 
-Context获取方式请参考：[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+Context获取方式请参考：[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
 相机应用从后台切换至前台启动恢复需要在页面生命周期回调函数onPageShow中调用，重新初始化相机设备。
 

@@ -1,6 +1,6 @@
 ---
 title: "基于设备分类和数据分级的访问控制 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-access-control-by-device-and-data-level
+original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/native-access-control-by-device-and-data-level
 format: md
 ---
 

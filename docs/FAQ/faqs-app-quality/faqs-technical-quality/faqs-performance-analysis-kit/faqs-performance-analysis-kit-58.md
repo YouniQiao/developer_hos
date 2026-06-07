@@ -1,6 +1,6 @@
 ---
 title: "使用HiLog打印日志是否有长度限制"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-58
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-58
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "server启动失败，进程意外退出"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-coding-17
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-17
 ---
 
 

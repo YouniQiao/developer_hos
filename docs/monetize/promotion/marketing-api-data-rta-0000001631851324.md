@@ -1,7 +1,7 @@
 ---
 title: "通过RTA实验ID查询"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-data-rta-0000001631851324
+original_url: /docs/monetize/promotion/marketing-api-data-rta-0000001631851324
 format: md
 ---
 

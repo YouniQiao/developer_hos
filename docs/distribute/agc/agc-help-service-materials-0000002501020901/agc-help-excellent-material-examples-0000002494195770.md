@@ -1,6 +1,6 @@
 ---
 title: "优秀素材示例"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-excellent-material-examples-0000002494195770
+original_url: /docs/distribute/agc/agc-help-service-materials-0000002501020901/agc-help-excellent-material-examples-0000002494195770
 format: md
 ---
 

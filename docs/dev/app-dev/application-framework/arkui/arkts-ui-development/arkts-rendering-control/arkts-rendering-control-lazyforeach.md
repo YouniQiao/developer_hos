@@ -1,6 +1,6 @@
 ---
 title: "LazyForEach：数据懒加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach
 format: md
 ---
 
@@ -15,23 +15,23 @@ format: md
 
 ![](./img/fc138e68.png)
 
-在大量子组件的场景下，LazyForEach与缓存列表项、动态预加载、组件复用等方法配合使用，可以进一步提升滑动帧率并降低应用内存占用。最佳实践请参考[长列表加载丢帧优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-best-practices-long-list)。
+在大量子组件的场景下，LazyForEach与缓存列表项、动态预加载、组件复用等方法配合使用，可以进一步提升滑动帧率并降低应用内存占用。最佳实践请参考[长列表加载丢帧优化](/docs/quality/best-practices-long-list)。
 
-[Repeat](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-rendering-control-repeat)组件也提供了循环渲染能力。相较于LazyForEach，Repeat基于状态管理监听数据源变化，使用更加便利。同时，Repeat具有子组件复用能力，UI渲染效率更高。建议开发者优先使用Repeat。开发者也可参考[循环渲染迁移](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-rendering-control-repeat)，将现有的LazyForEach组件迁移至Repeat组件。
+[Repeat](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat)组件也提供了循环渲染能力。相较于LazyForEach，Repeat基于状态管理监听数据源变化，使用更加便利。同时，Repeat具有子组件复用能力，UI渲染效率更高。建议开发者优先使用Repeat。开发者也可参考[循环渲染迁移](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-rendering-control-repeat)，将现有的LazyForEach组件迁移至Repeat组件。
 
 ## 使用限制
 
 * LazyForEach必须在容器组件内使用，仅有[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)、[ListItemGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-listitemgroup)、[Grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-grid)、[Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper)以及[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)组件支持数据懒加载（可配置cachedCount属性，即只加载可视部分以及其前后少量数据用于缓冲），其他组件仍然是一次性加载所有的数据。支持数据懒加载的父组件根据自身及子组件的高度或宽度计算可视区域内需布局的子节点数量，高度或宽度的缺失会导致部分场景[懒加载失效](#子组件尺寸缺失导致懒加载失效)。
 * LazyForEach依赖生成的键值判断是否刷新子组件，键值不变则不触发刷新。
-* 容器组件内只能包含一个LazyForEach。以List为例，不建议同时包含[ListItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-listitem)、[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)、LazyForEach，不建议同时包含多个LazyForEach。
+* 容器组件内只能包含一个LazyForEach。以List为例，不建议同时包含[ListItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-listitem)、[ForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)、LazyForEach，不建议同时包含多个LazyForEach。
 * LazyForEach在每次迭代中，必须创建且只允许创建一个子组件；即LazyForEach的子组件生成函数有且只有一个根组件。
 * 生成的子组件必须是允许包含在LazyForEach父容器组件中的子组件。
-* 允许LazyForEach包含在[if/else](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-ifelse)条件渲染语句中，也允许LazyForEach中出现if/else条件渲染语句。
+* 允许LazyForEach包含在[if/else](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse)条件渲染语句中，也允许LazyForEach中出现if/else条件渲染语句。
 * 键值生成器必须针对每个数据生成唯一的值，如果键值相同，将导致键值相同的UI组件渲染出现问题。
 * LazyForEach必须使用一个数据变化监听器DataChangeListener对象进行更新（具体参数使用参考[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach)），重新赋值第一个参数dataSource会导致异常；dataSource使用状态变量时，状态变量改变不会触发LazyForEach的UI刷新。
 * 为了高性能渲染，使用DataChangeListener对象的onDataChange方法更新UI时，需要生成不同于原来的键值来触发组件刷新。
-* LazyForEach和[@Reusable装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable)一起使用能触发节点复用。使用方法：将@Reusable装饰在LazyForEach列表的组件上，见[列表滚动配合LazyForEach使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable#列表滚动配合lazyforeach使用)。
-* LazyForEach和[@ReusableV2装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2)一起使用能触发节点复用。详见@ReusableV2装饰器指南文档中的[在LazyForEach组件中使用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2#在lazyforeach组件中使用)。
+* LazyForEach和[@Reusable装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable)一起使用能触发节点复用。使用方法：将@Reusable装饰在LazyForEach列表的组件上，见[列表滚动配合LazyForEach使用](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable#列表滚动配合lazyforeach使用)。
+* LazyForEach和[@ReusableV2装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-new-reusablev2)一起使用能触发节点复用。详见@ReusableV2装饰器指南文档中的[在LazyForEach组件中使用](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-new-reusablev2#在lazyforeach组件中使用)。
 * LazyForEach的子节点在离开可视区域和预加载区域时，不会立即被析构或回收，LazyForEach会在空闲时析构或回收这些节点。
 
 ## 基础特性
@@ -826,7 +826,7 @@ struct PreciselyModifyingDataTwo {
 
 ### 使用状态管理V1修改数据子属性
 
-若仅靠LazyForEach的刷新机制，当item变化时若想更新子组件，需要将原来的子组件全部销毁再重新构建，在子组件结构较为复杂的情况下，靠改变键值去刷新渲染性能较低。因此状态管理V1提供了[@Observed装饰器和@ObjectLink装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)机制进行深度观测，可以做到仅刷新使用了该属性的组件，提高渲染性能。开发者可根据其自身业务特点选择使用哪种刷新方式。
+若仅靠LazyForEach的刷新机制，当item变化时若想更新子组件，需要将原来的子组件全部销毁再重新构建，在子组件结构较为复杂的情况下，靠改变键值去刷新渲染性能较低。因此状态管理V1提供了[@Observed装饰器和@ObjectLink装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)机制进行深度观测，可以做到仅刷新使用了该属性的组件，提高渲染性能。开发者可根据其自身业务特点选择使用哪种刷新方式。
 
 GenericBasicDataSource代码见文档末尾BasicDataSource示例代码: [泛型数组的BasicDataSource代码](#泛型数组的basicdatasource代码)。
 
@@ -912,7 +912,7 @@ struct ChangingDataSubpropertiesChildComponent {
 
 ### 使用状态管理V2修改数据子属性
 
-状态管理V2提供[@ObservedV2装饰器和@Trace装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)，用于实现属性的深度观测。使用[@Local装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)和[@Param装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)，可以管理子组件的刷新，仅刷新使用了对应属性的组件。
+状态管理V2提供[@ObservedV2装饰器和@Trace装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)，用于实现属性的深度观测。使用[@Local装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)和[@Param装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)，可以管理子组件的刷新，仅刷新使用了对应属性的组件。
 
 **嵌套类属性变化观测**
 
@@ -1661,7 +1661,7 @@ struct ChildComponent {
 
 ![](./img/27d8045e.gif)
 
-@ObjectLink装饰的成员变量仅能监听到其子属性的变化，无法监听深层嵌套属性，因此，只能通过修改子属性来通知组件重新渲染。具体请查看[@ObjectLink装饰器与@Observed装饰器的详细使用方法和限制条件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)。
+@ObjectLink装饰的成员变量仅能监听到其子属性的变化，无法监听深层嵌套属性，因此，只能通过修改子属性来通知组件重新渲染。具体请查看[@ObjectLink装饰器与@Observed装饰器的详细使用方法和限制条件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)。
 
 修复代码如下。
 
@@ -1918,7 +1918,7 @@ struct ScreenFlickeringInList {
 
 ### 组件复用渲染异常
 
-[@Reusable装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable)与[@ComponentV2装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)混用会导致组件渲染异常。
+[@Reusable装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-component-reusable/arkts-reusable)与[@ComponentV2装饰器](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)混用会导致组件渲染异常。
 
 GenericBasicDataSource代码见文档末尾BasicDataSource示例代码: [泛型数组的BasicDataSource代码](#泛型数组的basicdatasource代码)。
 
@@ -2005,7 +2005,7 @@ struct ChildComponent {
 
 反例中，在@ComponentV2装饰的组件MyComponent中，LazyForEach列表使用了@Reusable装饰的组件ChildComponent，导致组件渲染失败。从日志中可以看到，组件触发了onAppear，但没有触发aboutToAppear。
 
-将@ComponentV2修改为[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)可以修复渲染异常。修复后，当滑动事件触发组件节点下树时，对应的可复用组件ChildComponent会被加入复用缓存，而非被销毁，并触发aboutToRecycle事件，打印日志信息。当列表滑动，出现新节点时，会将可复用的组件从复用缓存中重新加入到节点树，触发aboutToReuse刷新组件数据，并打印日志信息。
+将@ComponentV2修改为[@Component](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#component)可以修复渲染异常。修复后，当滑动事件触发组件节点下树时，对应的可复用组件ChildComponent会被加入复用缓存，而非被销毁，并触发aboutToRecycle事件，打印日志信息。当列表滑动，出现新节点时，会将可复用的组件从复用缓存中重新加入到节点树，触发aboutToReuse刷新组件数据，并打印日志信息。
 
 ### 键值不合理导致组件不刷新
 

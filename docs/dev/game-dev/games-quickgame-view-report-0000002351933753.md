@@ -1,6 +1,6 @@
 ---
 title: "报表分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-view-report-0000002351933753
+original_url: /docs/dev/game-dev/games-quickgame-view-report-0000002351933753
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "动态调整预览帧率(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-setframerate-native
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/camera-setframerate-native
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 ![](./img/803621ee.png)
 
-与普通的[预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-preview)流程相比，动态调整预览帧率的注意点如图上标识：
+与普通的[预览](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview)流程相比，动态调整预览帧率的注意点如图上标识：
 
 1. 调用[OH\_CameraManager\_CreateCaptureSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-manager-h#oh_cameramanager_createcapturesession)创建会话（Session）时，需要指定模式为NORMAL\_PHOTO或NORMAL\_VIDEO。
 
@@ -34,7 +34,7 @@ format: md
    * 设置当前帧率
    * 获取当前生效的帧率设置
 
-如何配置会话（Session）、释放资源，请参考[会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management) > [预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-preview)。
+如何配置会话（Session）、释放资源，请参考[会话管理](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management) > [预览](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview)。
 
 ## 导入模块
 

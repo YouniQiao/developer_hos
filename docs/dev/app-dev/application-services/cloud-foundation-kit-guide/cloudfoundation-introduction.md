@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Cloud Foundation Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-introduction
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-introduction
 format: md
 ---
 
@@ -76,7 +76,7 @@ Cloud Foundation Kit能根据业务访问量快速自动扩容，规避业务高
 
 ### 支持的国家/地区
 
-请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-supported-regions)。
+请参见[支持的国家/地区](/docs/dev/app-dev/application-services/cloudfoundation-supported-regions)。
 
 ### 支持的签名方式
 
@@ -87,7 +87,7 @@ Cloud Foundation Kit能根据业务访问量快速自动扩容，规避业务高
 从6.0.0(20) Beta5版本开始，本Kit支持模拟器，但与真机存在部分能力差异，具体差异如下：
 
 * 通用差异：请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)。
-* 仅云函数、云数据库、云存储服务支持模拟器。关于如何使用模拟器调试，请参见[使用模拟器调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-emulator)。
+* 仅云函数、云数据库、云存储服务支持模拟器。关于如何使用模拟器调试，请参见[使用模拟器调试](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-emulator)。
 
 ## 计费说明
 

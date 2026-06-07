@@ -1,6 +1,6 @@
 ---
 title: "场景化视觉"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-vision-development
+original_url: /docs/dev/atomic-dev/atomic-ai-development/atomic-vision-development
 format: md
 ---
 

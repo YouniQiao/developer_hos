@@ -1,6 +1,6 @@
 ---
 title: "状态管理V1和V2混用指导（API version 19及之后）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-mixusage
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/v1v2-mixing/arkts-v1-v2-mixusage
 format: md
 ---
 
@@ -15,9 +15,9 @@ format: md
 
 ## 限制条件
 
-1. V1装饰器不能和[@ObservedV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)一起使用。因为@ObservedV2/@Trace有自己独立的观察能力，不仅可以在[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)中使用，也可以独立在[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)中使用，状态管理框架不希望其观察能力和V1的观察能力混合使用，所以依旧维持禁止现状。
+1. V1装饰器不能和[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)一起使用。因为@ObservedV2/@Trace有自己独立的观察能力，不仅可以在[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)中使用，也可以独立在[@Component](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#component)中使用，状态管理框架不希望其观察能力和V1的观察能力混合使用，所以依旧维持禁止现状。
 2. V2->V1，V1不支持用装饰器接收@ObservedV2装饰的class，否则编译报错。
-3. V1中[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)遵循其原本初始化规则，只能被V1状态变量初始化，详情见[@Link初始化规则示意图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link#变量的传递访问规则说明)。因为V1中[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)仅能和V1状态变量建立双向同步关系，而V2中如果想实现双向同步，可以使用@Param、@Event，具体例子见[@Link -> @Param/@Event迁移场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-v1-v2-migration-inner-component#link---paramevent)。
+3. V1中[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)遵循其原本初始化规则，只能被V1状态变量初始化，详情见[@Link初始化规则示意图](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link#变量的传递访问规则说明)。因为V1中[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)仅能和V1状态变量建立双向同步关系，而V2中如果想实现双向同步，可以使用@Param、@Event，具体例子见[@Link -> @Param/@Event迁移场景](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-inner-component#link---paramevent)。
 
 ## 新增接口
 
@@ -38,7 +38,7 @@ format: md
 
 **限制条件**
 
-* 不支持[collections类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections)和[@Sendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)装饰的class。
+* 不支持[collections类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections)和[@Sendable](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)装饰的class。
 * 不支持非object类型。
 * 不支持undefined、null。
 * 不支持@ObservedV2、[makeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#makeobserved)的返回值和V2装饰器装饰的built-in类型的变量（Array、Map、Set和Date）。
@@ -54,7 +54,7 @@ format: md
 **接口说明**
 
 * 该接口主要应用于V1->V2的场景，V1的状态变量调用该接口后，传递到@ComponentV2中，则可以在V2中观察到变化，从而实现数据的联动刷新。
-* enableV2Compatibility只能作用于V1的状态变量。V1状态变量为V1装饰器装饰的变量，即@Observed装饰的变量，或[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)、[@Prop](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-prop)、[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)、[@Provide](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)、[@Consume](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)和[@ObjectLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)（@ObjectLink需是@Observed装饰的实例或者makeV1Observed的返回值）装饰的变量。否则，将返回入参自身。
+* enableV2Compatibility只能作用于V1的状态变量。V1状态变量为V1装饰器装饰的变量，即@Observed装饰的变量，或[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)、[@Prop](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-prop)、[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)、[@Provide](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)、[@Consume](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)和[@ObjectLink](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)（@ObjectLink需是@Observed装饰的实例或者makeV1Observed的返回值）装饰的变量。否则，将返回入参自身。
 * enableV2Compatibility会递归遍历class的所有属性，Array/Set/Map的所有子项，直到遇到非V1状态变量的数据，则停止当前分支的遍历。
 
 **限制条件**
@@ -101,7 +101,7 @@ format: md
   arr.push(UIUtils.makeV1Observed(new ArrayItem())); // 新增数据是V1的状态变量，默认在V2中可观察
   ```
 * 对于built-in类型，如Array、Map、Set和Date，V1和V2都可以观察自身赋值和其API的调用所带来的变化。虽然开发者在不调用UIUtils.enableV2Compatibility时，也可以在一些简单场景下实现数据刷新，但是会带来双重代理导致性能较差的问题，所以建议开发者使用UIUtils.enableV2Compatibility(UIUtils.makeV1Observed())，具体例子见[传递内置类型（V1->V2）](#传递内置类型v1-v2)、[传递内置类型（V2->V1）](#传递内置类型v2-v1)。
-* 对于有[@Track](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-track)装饰属性的类，非@Track装饰的属性在@ComponentV2中使用不会崩溃，在@Component中使用仍会崩溃。具体例子见[传递class类型（V1->V2）](#传递class类型v1-v2)、[传递class类型（V2->V1）](#传递class类型v2-v1)。
+* 对于有[@Track](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-data-object-state-management/arkts-track)装饰属性的类，非@Track装饰的属性在@ComponentV2中使用不会崩溃，在@Component中使用仍会崩溃。具体例子见[传递class类型（V1->V2）](#传递class类型v1-v2)、[传递class类型（V2->V1）](#传递class类型v2-v1)。
 
 开发者在使用这两个接口混用V1V2时，可遵循下图逻辑。
 

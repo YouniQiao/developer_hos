@@ -1,6 +1,6 @@
 ---
 title: "批量数据写数据库场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/batch-database-operations-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/batch-database-operations-guide
 format: md
 ---
 

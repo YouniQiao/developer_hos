@@ -1,6 +1,6 @@
 ---
 title: "取消匹配"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-matchgroup-js-0000002395190497
+original_url: /docs/dev/game-dev/gameobe-matchgroup-js-0000002395190497
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ## 前提条件
 
-玩家已发起[在线匹配](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-matchplayer-js-0000002361510576)或[组队匹配](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-matchgroup-js-0000002361510588)。
+玩家已发起[在线匹配](/docs/dev/game-dev/gameobe-matchplayer-js-0000002361510576)或[组队匹配](/docs/dev/game-dev/gameobe-matchgroup-js-0000002361510588)。
 
 ## 开发步骤
 

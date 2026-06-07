@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "数字信封密钥(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-import-envelop-key-ndk
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-import-envelop-key-ndk
 format: md
 ---
 
 
-从API 23开始支持[数字信封](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview#数字信封导入)特性。
+从API 23开始支持[数字信封](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview#数字信封导入)特性。
 
-以数字信封导入RSA密钥和AES密钥为例。具体的场景介绍及支持的算法规格，请参考[密钥导入支持的算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview#支持的算法)，其中**数字信封导入密钥不支持DSA算法**。
+以数字信封导入RSA密钥和AES密钥为例。具体的场景介绍及支持的算法规格，请参考[密钥导入支持的算法](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview#支持的算法)，其中**数字信封导入密钥不支持DSA算法**。
 
 使用数字信封导入密钥需要使用[OH\_HUKS\_TAG\_UNWRAP\_ALGORITHM\_SUITE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_tag)，该标签值为[OH\_HUKS\_UNWRAP\_SUITE\_SM2\_SM4\_ECB\_NOPADDING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-type-h#oh_huks_algsuite)。
 

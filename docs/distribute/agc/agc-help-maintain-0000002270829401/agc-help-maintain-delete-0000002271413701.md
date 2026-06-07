@@ -1,6 +1,6 @@
 ---
 title: "删除应用/元服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-delete-0000002271413701
+original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-delete-0000002271413701
 format: md
 ---
 
@@ -15,9 +15,9 @@ format: md
 
 若需要删除处于“已上架”、“正在审核”或“下架处理中”状态的应用，请按照如下引导进行操作：
 
-* 对于“已上架”状态的应用，您可[提交下架申请](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-remove-0000002274058145#section516715913203)，并可根据审批进度进行[催审](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-remove-0000002274058145#section1431432482017)，应用下架成功变为“已下架”状态后再删除应用。
-* 对于“正在审核”状态的应用，您可提交[撤销审核](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-push-0000002312626049#section18227759939)申请，审核通过变为“已撤销上架”状态后再删除应用。
-* 对于“下架处理中”状态的应用，您可进行[催审](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-remove-0000002274058145#section1431432482017)，审核通过变为“已下架”状态后再删除应用。
+* 对于“已上架”状态的应用，您可[提交下架申请](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-remove-0000002274058145#section516715913203)，并可根据审批进度进行[催审](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-remove-0000002274058145#section1431432482017)，应用下架成功变为“已下架”状态后再删除应用。
+* 对于“正在审核”状态的应用，您可提交[撤销审核](/docs/distribute/agc/agc-help-release-0000002235870050/agc-help-release-push-0000002312626049#section18227759939)申请，审核通过变为“已撤销上架”状态后再删除应用。
+* 对于“下架处理中”状态的应用，您可进行[催审](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-remove-0000002274058145#section1431432482017)，审核通过变为“已下架”状态后再删除应用。
 
 #### 操作步骤
 
@@ -53,7 +53,7 @@ format: md
         + 内容：按照样例格式，详细说明下删除应用的原因。
 
         ![](../img/agc-help-maintain-delete-0000002271413701_5.png "点击放大")
-     2. 申诉工单提交后，您可进入[互动中心](https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000002276985946)查看工单处理进展，华为运营人员审核后会进行答复。
+     2. 申诉工单提交后，您可进入[互动中心](/docs/distribute/agc/agc-help-interaction-center-0000002276985946)查看工单处理进展，华为运营人员审核后会进行答复。
         + 如果审核未通过，请根据工单回复结论进行相应处理。
         + 如果审核通过，您便可重新执行步骤[3](#ZH-CN_TOPIC_0000002271413701__zh-cn_topic_0000001146716617_li1033752255115)删除应用。
    * 删除应用前，应用尚未全网上架，也不存在正在发布的测试版本

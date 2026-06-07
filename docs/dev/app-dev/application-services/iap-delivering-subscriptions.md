@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "权益发放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-delivering-subscriptions
+original_url: /docs/dev/app-dev/application-services/iap-delivering-subscriptions
 format: md
 ---
 
@@ -66,7 +66,7 @@ format: md
 
    ![](./img/8d30d00f.png)
 
-   JWSUtil为自定义类，可参见[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-dev-guide#示例代码)。
+   JWSUtil为自定义类，可参见[示例代码](/docs/dev/app-dev/application-services/iap-dev-guide#示例代码)。
 
 ```
 import { iap } from '@kit.IAPKit';
@@ -199,7 +199,7 @@ struct Index {
 
    ![](./img/e9faa49a.png)
 
-   JWSUtil为自定义类，可参见[示例代码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-dev-guide#示例代码)。
+   JWSUtil为自定义类，可参见[示例代码](/docs/dev/app-dev/application-services/iap-dev-guide#示例代码)。
 
 ```
 import { iap } from '@kit.IAPKit';

@@ -1,14 +1,14 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "日历服务实践案例"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-practice-developer
+original_url: /docs/dev/app-dev/application-services/calendar-kit/calendarmanager-practice-developer
 format: md
 ---
 
 
 ## 场景介绍
 
-通过日历服务，开发者可将带有时间属性的事件作为日程写入，并支持通过“[一键服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendar-service)”功能快速跳转，帮助用户快速直达对应服务，并完成各类信息的归一化管理。各典型场景选择适用的模板，并按照模板格式填写各个字段信息，确保用户体验完整、一致。
+通过日历服务，开发者可将带有时间属性的事件作为日程写入，并支持通过“[一键服务](/docs/dev/app-dev/application-services/calendar-kit/calendar-service)”功能快速跳转，帮助用户快速直达对应服务，并完成各类信息的归一化管理。各典型场景选择适用的模板，并按照模板格式填写各个字段信息，确保用户体验完整、一致。
 
 写入日历的日程可通过通知中心、桌面卡片以及日历应用内部等多种入口向用户展示。
 
@@ -22,10 +22,10 @@ format: md
 
 ## 开发准备
 
-请参考日程管理前三步的[开发步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/calendarmanager-calendar-developer#开发步骤)：
+请参考日程管理前三步的[开发步骤](/docs/dev/app-dev/application-services/calendar-kit/calendarmanager-calendar-developer#开发步骤)：
 
 1. 导入相关依赖。
-2. 申请权限。使用Calendar Kit时，需要在module.json5中声明申请读写日历日程所需的权限：ohos.permission.READ\_CALENDAR和ohos.permission.WRITE\_CALENDAR。具体指导可见[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+2. 申请权限。使用Calendar Kit时，需要在module.json5中声明申请读写日历日程所需的权限：ohos.permission.READ\_CALENDAR和ohos.permission.WRITE\_CALENDAR。具体指导可见[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 3. 根据上下文获取日程管理器对象calendarMgr，用于对日历账户进行相关管理操作。推荐在EntryAbility.ets文件中进行操作。
 
 ## 一键服务典型场景

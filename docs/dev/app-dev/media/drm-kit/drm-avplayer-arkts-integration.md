@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "基于AVPlayer播放DRM节目(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-avplayer-arkts-integration
+original_url: /docs/dev/app-dev/media/drm-kit/drm-avplayer-arkts-integration
 format: md
 ---
 

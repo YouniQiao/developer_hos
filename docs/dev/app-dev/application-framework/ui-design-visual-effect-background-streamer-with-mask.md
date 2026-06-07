@@ -1,6 +1,6 @@
 ---
 title: "自带背景的双边流光"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-background-streamer-with-mask
+original_url: /docs/dev/app-dev/application-framework/ui-design-visual-effect-background-streamer-with-mask
 format: md
 ---
 

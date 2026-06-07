@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过地图应用实现导航等能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-petalmaps
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-petalmaps
 format: md
 ---
 
@@ -44,7 +44,7 @@ format: md
 
 在国内站点，中国大陆使用GCJ02坐标系，中国台湾使用WGS84坐标系。
 
-在海外站点，统一使用WGS84坐标系。坐标系转换参考：[坐标纠偏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-convert-coordinate)。
+在海外站点，统一使用WGS84坐标系。坐标系转换参考：[坐标纠偏](/docs/dev/app-dev/application-services/map-kit-guide/map-calculation-tool/map-convert-coordinate)。
 
 ## 开发步骤
 

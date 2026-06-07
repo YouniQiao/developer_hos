@@ -1,17 +1,17 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Scan Kit（统一扫码服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-kit-guide
+original_url: /docs/dev/app-dev/media/scan-kit-guide
 format: md
 ---
 
 
-* **[Scan Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-introduction)**
-* **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-config-agc)**
-* **[接入“扫码直达”服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-directservice)**
-* **[默认界面扫码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-scanbarcode)**
-* **[自定义界面扫码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-customscan)**
-* **[图像识码](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-imagerecognition)**
-* **[码图生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-generate)**
-* **[Scan Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq)**
-* **[个人数据处理说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-personal-data)**
+* **[Scan Kit简介](/docs/dev/app-dev/media/scan-kit-guide/scan-introduction)**
+* **[开发准备](/docs/dev/app-dev/media/scan-kit-guide/scan-config-agc)**
+* **[接入“扫码直达”服务](/docs/dev/app-dev/media/scan-kit-guide/scan-directservice)**
+* **[默认界面扫码](/docs/dev/app-dev/media/scan-kit-guide/scan-scanbarcode)**
+* **[自定义界面扫码](/docs/dev/app-dev/media/scan-kit-guide/scan-customscan)**
+* **[图像识码](/docs/dev/app-dev/media/scan-kit-guide/scan-imagerecognition)**
+* **[码图生成](/docs/dev/app-dev/media/scan-kit-guide/scan-generate)**
+* **[Scan Kit常见问题](/docs/dev/app-dev/media/scan-kit-guide/scan-faq)**
+* **[个人数据处理说明](/docs/dev/app-dev/media/scan-kit-guide/scan-personal-data)**

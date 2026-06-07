@@ -1,6 +1,6 @@
 ---
 title: "如何存储公钥"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-crypto-architecture-26
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-26
 format: md
 ---
 

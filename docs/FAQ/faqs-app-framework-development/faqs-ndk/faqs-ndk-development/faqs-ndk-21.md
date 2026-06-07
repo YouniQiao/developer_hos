@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在ArkTS侧引用其他三方so库"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-21
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-21
 ---
 
 

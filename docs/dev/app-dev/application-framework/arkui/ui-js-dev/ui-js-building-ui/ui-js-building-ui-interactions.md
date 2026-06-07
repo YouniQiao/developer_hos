@@ -1,6 +1,6 @@
 ---
 title: "添加交互"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-interactions
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-ui-interactions
 format: md
 ---
 

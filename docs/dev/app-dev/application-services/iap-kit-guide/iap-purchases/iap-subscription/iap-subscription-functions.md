@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自动续期订阅说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-subscription-functions
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 
 ### 续费周期
 
-当前自动续期订阅商品的续费周期可选值有1周、30天、31天、1个月、2个月、3个月、6个月和12个月，具体配置方法请参见[配置自动续期订阅商品](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product#配置自动续期订阅商品)。
+当前自动续期订阅商品的续费周期可选值有1周、30天、31天、1个月、2个月、3个月、6个月和12个月，具体配置方法请参见[配置自动续期订阅商品](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-product#配置自动续期订阅商品)。
 
 ### 保留期
 
@@ -49,7 +49,7 @@ format: md
 | --- | --- |
 | **取消订阅** | 对已购自动续期订阅商品进行取消操作。取消成功，则订阅将不会进行下一周期的续费，但不影响当期订阅的使用。  **说明：** 此场景下开发者服务器会收到[AUTO\_RENEW\_DISABLED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications#notificationsubtype)的[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。 |
 | **恢复订阅** | 对于处于到期、已到期的订阅，用户可以恢复订阅，以再次享受订阅对应的服务。  **说明：** 此场景下开发者服务器会收到[AUTO\_RENEW\_ENABLED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications#notificationsubtype)或者[RESTORE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications#notificationsubtype)的[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。 |
-| **切换订阅** | 对已购自动续期订阅商品，进行同一个订阅组不同自动续期订阅商品的切换操作，有如下两种切换效果：  - 立即生效的切换订阅（原订阅无[保留期](#保留期)）：用户原订阅的剩余金额将折算成新订阅的天数，延长新订阅的有效期。目前这种切换效果的触发场景为：  1. 订阅升级：新订阅的订阅等级高于原订阅  2. 新订阅与原订阅的订阅等级相同，且原订阅的续费周期和新订阅的续费周期相同  **说明：**  此场景下开发者服务器会收到[UPGRADE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications#notificationsubtype)的[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。  订阅折算计算过程可参考IAP kit常见问题-[自动续期订阅商品，A切换B且立即生效时，新订阅有效期的组成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-23)。  - 下周期生效的切换订阅：原订阅设置为将到期状态，新订阅为待生效状态，新订阅会在原订阅的失效日期开始扣费并生效。目前这种切换效果的触发场景为：  1. 订阅降级：新订阅的订阅等级低于原订阅  2. 新订阅与原订阅的订阅等级相同，且原订阅的续费周期和新订阅的续费周期不同  **说明：** 此场景下开发者服务器会收到[DOWNGRADE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications#notificationsubtype)的[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。 |
+| **切换订阅** | 对已购自动续期订阅商品，进行同一个订阅组不同自动续期订阅商品的切换操作，有如下两种切换效果：  - 立即生效的切换订阅（原订阅无[保留期](#保留期)）：用户原订阅的剩余金额将折算成新订阅的天数，延长新订阅的有效期。目前这种切换效果的触发场景为：  1. 订阅升级：新订阅的订阅等级高于原订阅  2. 新订阅与原订阅的订阅等级相同，且原订阅的续费周期和新订阅的续费周期相同  **说明：**  此场景下开发者服务器会收到[UPGRADE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications#notificationsubtype)的[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。  订阅折算计算过程可参考IAP kit常见问题-[自动续期订阅商品，A切换B且立即生效时，新订阅有效期的组成](/docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-23)。  - 下周期生效的切换订阅：原订阅设置为将到期状态，新订阅为待生效状态，新订阅会在原订阅的失效日期开始扣费并生效。目前这种切换效果的触发场景为：  1. 订阅降级：新订阅的订阅等级低于原订阅  2. 新订阅与原订阅的订阅等级相同，且原订阅的续费周期和新订阅的续费周期不同  **说明：** 此场景下开发者服务器会收到[DOWNGRADE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications#notificationsubtype)的[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。 |
 
 具体订阅状态的变化如下：
 
@@ -119,7 +119,7 @@ format: md
 * **按周期扣费：** 设置一个低于商品原价的价格，让用户在购买初期每个周期以低价享受商品权益。
 * **提前支付：** 设置一个一次性支付特定时限的价格，让用户购买后在该特定的优惠期内以低价享受商品权益，优惠期结束后按商品原价续订。
 
-具体配置方法请参见[配置商品信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product)。
+具体配置方法请参见[配置商品信息](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-product)。
 
 ![](./img/9f13be08.png)
 
@@ -145,12 +145,12 @@ format: md
 
 在处理自动续期订阅商品的下架时，需要考虑对用户的影响。
 
-* 允许存量用户续期，防止新用户订阅：开发者可以通过商品管理[下架商品](https://developer.huawei.com/consumer/cn/doc/app/set-digital-products-off-shelf-0000002107836877)来防止新用户订阅，开发者仍需对存量用户提供订阅权益。
-* 新/存量用户均不可用：开发者可以通过提前在商品管理中[删除数字商品](https://developer.huawei.com/consumer/cn/doc/app/delete-0000001959074905)来防止新用户订阅以及存量用户续期。建议删除数字商品一段时间后再正式停止提供订阅权益，该时间需与其续费周期一致，保障存量用户体验到完整时限的商品服务。例如，对于周期为1个月的自动续期订阅商品，应该提前1个月将该商品删除，确保新用户在此期间无法订阅，且存量用户在停止提供订阅权益之前体验到完整时限权益，不会自动续期（自动购买下一期服务）。
+* 允许存量用户续期，防止新用户订阅：开发者可以通过商品管理[下架商品](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-digital-products-off-shelf-0000002107836877)来防止新用户订阅，开发者仍需对存量用户提供订阅权益。
+* 新/存量用户均不可用：开发者可以通过提前在商品管理中[删除数字商品](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/restore-0000001931995720/delete-0000001959074905)来防止新用户订阅以及存量用户续期。建议删除数字商品一段时间后再正式停止提供订阅权益，该时间需与其续费周期一致，保障存量用户体验到完整时限的商品服务。例如，对于周期为1个月的自动续期订阅商品，应该提前1个月将该商品删除，确保新用户在此期间无法订阅，且存量用户在停止提供订阅权益之前体验到完整时限权益，不会自动续期（自动购买下一期服务）。
 
 ## 接收订阅关键事件的通知
 
-如果开发者提前配置了[通知接收地址](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-set-necessary-parameters#配置订单订阅通知接收地址)，用户购买自动续期订阅商品后，IAP服务器会在订阅场景的某些关键事件发生时调用此接口通知配置的服务器，具体请参见[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。主要涉及的场景如下：
+如果开发者提前配置了[通知接收地址](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-set-necessary-parameters#配置订单订阅通知接收地址)，用户购买自动续期订阅商品后，IAP服务器会在订阅场景的某些关键事件发生时调用此接口通知配置的服务器，具体请参见[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。主要涉及的场景如下：
 
 * 用户第一次订阅成功。
 * 已过期的订阅自动续期成功。

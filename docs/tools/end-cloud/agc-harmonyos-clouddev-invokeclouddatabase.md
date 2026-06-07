@@ -2,7 +2,7 @@
 
 title: "在端侧访问云数据库"
 displayed_sidebar: cloudDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/agc-harmonyos-clouddev-invokeclouddatabase
+original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-invokeclouddatabase
 format: md
 ---
 

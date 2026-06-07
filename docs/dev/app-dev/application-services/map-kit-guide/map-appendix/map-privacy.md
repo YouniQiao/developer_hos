@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "地图数据版权声明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-privacy
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-appendix/map-privacy
 format: md
 ---
 

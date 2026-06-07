@@ -1,6 +1,6 @@
 ---
 title: "延迟加载 (lazy import)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-lazy-import
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-lazy-import
 format: md
 ---
 
@@ -123,7 +123,7 @@ main executed
 
 ## lazy-import与动态加载的区别
 
-lazy-import与[动态加载](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import)都可以延后特定文件的执行时间，帮助设备分摊性能消耗，缓解特定时段的性能压力。
+lazy-import与[动态加载](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-dynamic-import)都可以延后特定文件的执行时间，帮助设备分摊性能消耗，缓解特定时段的性能压力。
 
 | 区别项 | 动态加载 | lazy-import |
 | --- | --- | --- |
@@ -152,7 +152,7 @@ lazy-import 相较于动态加载的优势：
 
 * 延迟加载共享模块或依赖路径内包含共享模块。
 
-  延迟加载对于共享模块依旧生效，使用限制参考[共享模块](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable-module)开发指导。
+  延迟加载对于共享模块依旧生效，使用限制参考[共享模块](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable-module)开发指导。
 
 ### 错误示例
 
@@ -306,7 +306,7 @@ ReferenceError: module environment is undefined
 
 ### 注意事项
 
-* 不依赖该模块执行的副作用（如初始化全局变量，挂载globalThis等）。可参考：[模块加载副作用及优化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-module-side-effects)。
+* 不依赖该模块执行的副作用（如初始化全局变量，挂载globalThis等）。可参考：[模块加载副作用及优化](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-module-side-effects)。
 * 使用导出对象时，触发延迟加载的耗时可能导致对应特性的功能劣化。由于lazy-import的后续加载是同步加载，可能在某些场景阻塞任务执行（比如在点击业务时触发了懒加载，那么运行时会执行冷启动未加载的文件，增加执行耗时，存在掉帧风险），是否使用延迟加载仍需要开发者自行评估。
 * 使用lazy特性可能导致模块未执行，从而引发bug。
 * 已经被动态加载的文件同时使用lazy-import时，这些文件会执行lazy标识，在动态加载的then逻辑中同步加载。
@@ -321,7 +321,7 @@ ReferenceError: module environment is undefined
 
 ### 检测步骤
 
-1. 打开工具：获取[hdc](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)工具，连接设备，在终端直接输入下方命令执行。
+1. 打开工具：获取[hdc](/docs/dev/app-dev/system/hdc)工具，连接设备，在终端直接输入下方命令执行。
 
    ```
    hdc shell param set persist.ark.properties 0x200105c

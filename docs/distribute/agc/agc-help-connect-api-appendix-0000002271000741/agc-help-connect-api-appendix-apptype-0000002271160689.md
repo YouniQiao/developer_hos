@@ -1,6 +1,6 @@
 ---
 title: "应用游戏分类"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-apptype-0000002271160689
+original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-apptype-0000002271160689
 format: md
 ---
 
@@ -285,7 +285,7 @@ format: md
 
 为了提升HarmonyOS游戏推荐的精准度，同时保障HarmonyOS用户快速查找游戏的便捷体验，我们计划于2026年3月1日优化HarmonyOS游戏的分类体系。
 
-从2026年3月1日至2026年5月31日，请调用[更新应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-publish-api-appinfo-update-0000002236201246)接口，并根据[新分类](#section616842551913)修改harmonyChildType、kindMainTag和kindSubTags参数。如果未能在2026年6月1日前完成参数更新，可能会导致接口调用异常。
+从2026年3月1日至2026年5月31日，请调用[更新应用基本信息](/docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-appinfo-update-0000002236201246)接口，并根据[新分类](#section616842551913)修改harmonyChildType、kindMainTag和kindSubTags参数。如果未能在2026年6月1日前完成参数更新，可能会导致接口调用异常。
 
 #### [h2]新分类
 

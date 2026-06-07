@@ -1,7 +1,7 @@
 ---
 title: "分析召回效果"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-load-recall-analyze-0000001367032312
+original_url: /docs/monetize/promotion/bp-functions-load-recall-analyze-0000001367032312
 format: md
 ---
 

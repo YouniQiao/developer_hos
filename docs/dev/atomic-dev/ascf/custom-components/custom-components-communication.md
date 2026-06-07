@@ -1,19 +1,19 @@
 ---
 title: "组件之间通信"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-communication
+original_url: /docs/dev/atomic-dev/ascf/custom-components/custom-components-communication
 format: md
 ---
 
 
 组件间的基本通信方式有三种:
 
-* 定义子组件properties：用于父组件向子组件的指定属性设置数据。具体在[Component](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-component#properties)章节中介绍。
+* 定义子组件properties：用于父组件向子组件的指定属性设置数据。具体在[Component](/docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-component#properties)章节中介绍。
 * 定义事件：用于子组件向父组件传递数据。
 * 如果以上方式不足以满足需要，父组件还可以通过this.selectComponent方法获取子组件实例对象，这样就可以直接访问组件的任意数据和方法。
 
 ## 监听事件
 
-自定义组件可以触发任意的事件，父组件可以监听这些事件。监听自定义组件事件的方法与监听基础组件事件的方法是一致的。关于事件的基本概念和用法，参见[事件系统](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-events)。
+自定义组件可以触发任意的事件，父组件可以监听这些事件。监听自定义组件事件的方法与监听基础组件事件的方法是一致的。关于事件的基本概念和用法，参见[事件系统](/docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-events)。
 
 示例代码如下：
 
@@ -63,13 +63,13 @@ Component({
 | composed | Boolean | 否 | false | 事件是否可以穿越组件边界，为false时，事件将只能在引用组件的节点树上触发，不进入其他任何组件内部。 |
 | capturePhase | Boolean | 否 | false | 事件是否拥有捕获阶段。 |
 
-关于冒泡和捕获阶段的概念，请阅读[事件系统](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-events)章节中的相关说明。
+关于冒泡和捕获阶段的概念，请阅读[事件系统](/docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-events)章节中的相关说明。
 
 ## 获取组件实例
 
 父组件里可以通过调用 this.selectComponent ，获取子组件的实例对象，调用时需要传入一个匹配选择器 selector，如：this.selectComponent(".my-cust-component")。
 
-selector详细语法可查看[selector语法](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-hxml#selectorqueryselect)参考文档。（this.selectComponent暂不支持跨自定义组件的后代选择器语法）
+selector详细语法可查看[selector语法](/docs/dev/atomic-dev/ascf/apis/apis-hxml#selectorqueryselect)参考文档。（this.selectComponent暂不支持跨自定义组件的后代选择器语法）
 
 示例代码如下：
 

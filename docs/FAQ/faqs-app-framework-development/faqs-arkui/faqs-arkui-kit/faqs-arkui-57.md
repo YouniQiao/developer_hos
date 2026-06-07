@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何获取Text组件中文字的宽度"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-57
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-57
 ---
 
 

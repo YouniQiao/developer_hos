@@ -1,7 +1,7 @@
 ---
 title: "选择创意优选"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-creative-prefer-choose-0000001402986645
+original_url: /docs/monetize/promotion/bp-functions-creative-prefer-choose-0000001402986645
 format: md
 ---
 

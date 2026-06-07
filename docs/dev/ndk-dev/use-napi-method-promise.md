@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API调用返回值为promise的ArkTS方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-method-promise
+original_url: /docs/dev/ndk-dev/use-napi-method-promise
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 使用C++通过NAPI调用返回Promise的ArkTS方法。
 
-处理[Promise](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-promise)对象：将Promise与C++回调绑定，处理异步结果。
+处理[Promise](/docs/dev/ndk-dev/use-napi-about-promise)对象：将Promise与C++回调绑定，处理异步结果。
 
 转换数据类型：在回调中将JavaScript结果转换为c++可用的数据。
 

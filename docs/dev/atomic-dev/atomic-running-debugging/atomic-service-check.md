@@ -1,6 +1,6 @@
 ---
 title: "元服务上架审核预检"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-check
+original_url: /docs/dev/atomic-dev/atomic-running-debugging/atomic-service-check
 format: md
 ---
 

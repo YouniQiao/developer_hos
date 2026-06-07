@@ -1,13 +1,13 @@
 ---
 title: "@SyncMonitor装饰器：状态变量修改同步监听"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-syncmonitor
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-syncmonitor
 format: md
 ---
 
 
 为了增强状态管理框架对状态变量变化的监听能力，开发者可以使用@SyncMonitor装饰器对状态变量进行监听。
 
-@SyncMonitor提供了对V2状态变量的同步监听。在阅读本文档前，建议提前阅读：[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)，[@ObservedV2和@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)，[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)，[@Monitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-monitor)。
+@SyncMonitor提供了对V2状态变量的同步监听。在阅读本文档前，建议提前阅读：[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)，[@ObservedV2和@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)，[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)，[@Monitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-monitor)。
 
 ![](./img/18434937.png)
 
@@ -19,11 +19,11 @@ format: md
 
 @SyncMonitor装饰器用于同步监听状态变量修改，使得状态变量具有深度监听的能力：
 
-* @SyncMonitor装饰器支持在@ComponentV2装饰的自定义组件中使用，未被状态变量装饰器[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)、[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)、[@Provider](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer)、[@Consumer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-provider-and-consumer)、[@Computed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-computed)装饰的变量无法被@SyncMonitor监听到变化。
+* @SyncMonitor装饰器支持在@ComponentV2装饰的自定义组件中使用，未被状态变量装饰器[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)、[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)、[@Provider](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer)、[@Consumer](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer)、[@Computed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-computed)装饰的变量无法被@SyncMonitor监听到变化。
 
 ## 装饰器使用规则说明
 
-* @SyncMonitor装饰器支持在类中与[@ObservedV2、@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)配合使用，不允许在未被@ObservedV2装饰的类中使用@SyncMonitor装饰器。未被@Trace装饰的属性无法被@SyncMonitor监听到变化。当观测的属性变化时，@SyncMonitor装饰器定义的回调方法将被调用。判断属性是否变化使用的是严格相等（===），当严格相等判断的结果是false（即不相等）的情况下，就会立即触发@SyncMonitor的回调。同一事件内，当被观察的属性多次改变时，回调函数将在每次属性改变时被调用。
+* @SyncMonitor装饰器支持在类中与[@ObservedV2、@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)配合使用，不允许在未被@ObservedV2装饰的类中使用@SyncMonitor装饰器。未被@Trace装饰的属性无法被@SyncMonitor监听到变化。当观测的属性变化时，@SyncMonitor装饰器定义的回调方法将被调用。判断属性是否变化使用的是严格相等（===），当严格相等判断的结果是false（即不相等）的情况下，就会立即触发@SyncMonitor的回调。同一事件内，当被观察的属性多次改变时，回调函数将在每次属性改变时被调用。
 * 单个@SyncMonitor装饰器能够同时监听多个属性的变化，当这些属性在一次事件中共同变化时，只会触发一次@SyncMonitor的回调方法。 当@SyncMonitor监听整个数组时，更改数组的某一项不会被监听到。
 * 在继承类场景中，可以在父子类中对同一个属性分别定义@SyncMonitor进行监听，当属性变化时，父子组件中定义的@SyncMonitor回调均会被调用。
 * @SyncMonitor装饰器具有深度监听的能力，能够监听嵌套类、多维数组、对象数组中指定项的变化。对于嵌套类、对象数组中成员属性变化的监听要求该类被@ObservedV2装饰且该属性被@Trace装饰。
@@ -32,7 +32,7 @@ format: md
 
 ### 比较@Monitor，@SyncMonitor和@Watch
 
-与[@Watch](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch)装饰器类似，开发者必须自己定义回调函数。不同之处在于，@Watch使用函数名作为参数，而@SyncMonitor直接装饰回调函数。带有通配符监听路径的@SyncMonitor监听范围与@Watch一致。@Watch和@SyncMonitor装饰的函数都同步执行。下表比较@Monitor、@SyncMonitor和@Watch的用法和功能。
+与[@Watch](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch)装饰器类似，开发者必须自己定义回调函数。不同之处在于，@Watch使用函数名作为参数，而@SyncMonitor直接装饰回调函数。带有通配符监听路径的@SyncMonitor监听范围与@Watch一致。@Watch和@SyncMonitor装饰的函数都同步执行。下表比较@Monitor、@SyncMonitor和@Watch的用法和功能。
 
 | 类别 | @Watch | @Monitor | @SyncMonitor |
 | --- | --- | --- | --- |
@@ -45,9 +45,9 @@ format: md
 | 通配符支持 | 否 | 否 | 是 |
 | 回调调用时机 | 立即（同步） | 状态变更函数结束后（异步），多次变更，只触发一次。 | 立即（同步） |
 
-[addMonitor和clearMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-addmonitor-clearmonitor)API允许在应用程序执行期间动态添加和清除监听器。当isSynchronous设置为true，addMonitor类似于@SyncMonitor，当设置为false，addMonitor类似于@Monitor功能。
+[addMonitor和clearMonitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor)API允许在应用程序执行期间动态添加和清除监听器。当isSynchronous设置为true，addMonitor类似于@SyncMonitor，当设置为false，addMonitor类似于@Monitor功能。
 
-@Monitor和@SyncMonitor分别是@ComponentV2和@ObservedV2类的成员函数装饰器，属于V2状态管理的一部分。@Watch是[@Component](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#component)中使用的变量装饰器，属于V1状态管理的一部分。
+@Monitor和@SyncMonitor分别是@ComponentV2和@ObservedV2类的成员函数装饰器，属于V2状态管理的一部分。@Watch是[@Component](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#component)中使用的变量装饰器，属于V1状态管理的一部分。
 
 @Monitor装饰的函数会异步执行，在事件处理程序执行结束后执行。@SyncMonitor和@Watch函数在观察到的状态变量改变后，回调函数会立即同步执行。
 
@@ -1917,7 +1917,7 @@ struct Index {
 
 ### 监听变量从可访问变为不可访问和从不可访问变为可访问
 
-@Monitor仅会保存变量可访问时的值，当状态变量变为不可访问的状态时，并不会记录其值的变化。从API version 20开始，如果需要监听可访问到不可访问和不可访问到可访问的状态变化，可以使用[addMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-addmonitor-clearmonitor#监听变量从可访问到不访问和从不可访问到可访问)。
+@Monitor仅会保存变量可访问时的值，当状态变量变为不可访问的状态时，并不会记录其值的变化。从API version 20开始，如果需要监听可访问到不可访问和不可访问到可访问的状态变化，可以使用[addMonitor](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor#监听变量从可访问到不访问和从不可访问到可访问)。
 
 @SyncMonitor可以监听变量从可访问变为不可访问或从不可访问变为可访问的变化。在下面的例子中，点击三个Button，均会触发onChange的回调。
 

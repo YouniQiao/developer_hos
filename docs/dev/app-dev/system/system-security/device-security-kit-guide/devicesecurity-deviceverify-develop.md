@@ -1,6 +1,6 @@
 ---
 title: "应用设备状态检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-develop
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-deviceverify-develop
 format: md
 ---
 
@@ -60,7 +60,7 @@ format: md
 
 ![](./img/0c38f30a.png)
 
-请确保已打开[“应用设备状态检测”开关](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice)并[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)。
+请确保已打开[“应用设备状态检测”开关](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare/devicesecurity-deviceverify-activateservice)并[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)。
 
 1. 导入Device Security Kit模块及相关公共模块。
 
@@ -94,7 +94,7 @@ format: md
 
 ### 服务端开发
 
-1. 获取凭证Token，详情请参见[基于服务账号生成鉴权令牌](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-token)。
+1. 获取凭证Token，详情请参见[基于服务账号生成鉴权令牌](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare/devicesecurity-deviceverify-token)。
 2. 可分别调用checkDeviceToken、getDeviceStatus、setDeviceStatus、delDeviceStatus接口，实现deviceToken验证、查询设备标记状态、更新设备标记状态及删除设备标记状态功能。更多接口信息请参见[REST API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-deviceverify-api)。
 
    样例代码：

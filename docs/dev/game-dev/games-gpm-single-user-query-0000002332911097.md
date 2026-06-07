@@ -1,6 +1,6 @@
 ---
 title: "单用户查询"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-single-user-query-0000002332911097
+original_url: /docs/dev/game-dev/games-gpm-single-user-query-0000002332911097
 format: md
 ---
 

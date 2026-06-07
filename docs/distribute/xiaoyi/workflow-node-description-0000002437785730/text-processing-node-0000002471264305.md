@@ -1,7 +1,7 @@
 ---
 title: "文本处理节点"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/text-processing-node-0000002471264305
+original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/text-processing-node-0000002471264305
 format: md
 ---
 

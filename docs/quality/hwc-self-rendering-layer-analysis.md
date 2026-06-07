@@ -1,6 +1,6 @@
 ---
 title: "自渲染图层未使用硬件合成问题分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-hwc-self-rendering-layer-analysis
+original_url: /docs/quality/hwc-self-rendering-layer-analysis
 format: md
 ---
 
@@ -9,13 +9,13 @@ format: md
 
 ## 自渲染图层使用硬件合成介绍
 
-自渲染通常用于实现复杂的视觉效果、高性能的图形处理或特定的交互需求，这些需求无法通过标准控件或组件完全满足。[应用自渲染内容](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-utilize-hwc-efficiently#section17455334154818)可以包含开发者自定义绘制的内容，如视频帧、Web页面、复杂的动画效果等。自渲染图层通常与其他标准控件或图层一起使用，形成多图层叠加的界面。
+自渲染通常用于实现复杂的视觉效果、高性能的图形处理或特定的交互需求，这些需求无法通过标准控件或组件完全满足。[应用自渲染内容](/docs/quality/utilize-hwc-efficiently#section17455334154818)可以包含开发者自定义绘制的内容，如视频帧、Web页面、复杂的动画效果等。自渲染图层通常与其他标准控件或图层一起使用，形成多图层叠加的界面。
 
-对于HarmonyOS应用开发中的多图层叠加渲染送显场景，除了使用GPU这种通用计算单元外，HarmonyOS系统还提供了[Hardware Composer](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-utilize-hwc-efficiently#li10223152812152)（下文简称HWC）专用硬件合成单元。与GPU相比，HWC在图层叠加场景中具有更高的处理效率和更低的能耗。需要注意的是，并非所有包含自渲染图层的叠加场景都能使用HWC，它需要满足一定条件才能充分发挥其硬件能力，降低系统CPU/GPU开销，减少发热和卡顿现象。
+对于HarmonyOS应用开发中的多图层叠加渲染送显场景，除了使用GPU这种通用计算单元外，HarmonyOS系统还提供了[Hardware Composer](/docs/quality/utilize-hwc-efficiently#li10223152812152)（下文简称HWC）专用硬件合成单元。与GPU相比，HWC在图层叠加场景中具有更高的处理效率和更低的能耗。需要注意的是，并非所有包含自渲染图层的叠加场景都能使用HWC，它需要满足一定条件才能充分发挥其硬件能力，降低系统CPU/GPU开销，减少发热和卡顿现象。
 
 ## 问题定位流程
 
-对于能够使用HWC进行多图层叠加渲染送显的场景，如果未满足HWC的使用条件，则会使用GPU合成，此时达不到功耗最优，可能影响用户体验。在HarmonyOS应用开发过程中，开发者可以使用[DevEco Profiler](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-low-power-design-in-dark-mode#section239515015451)工具分析多图层叠加渲染送显方式。以视频播放场景为例，使用Profiler分析自渲染图层叠加方式的方法如下:
+对于能够使用HWC进行多图层叠加渲染送显的场景，如果未满足HWC的使用条件，则会使用GPU合成，此时达不到功耗最优，可能影响用户体验。在HarmonyOS应用开发过程中，开发者可以使用[DevEco Profiler](/docs/quality/low-power-design-in-dark-mode#section239515015451)工具分析多图层叠加渲染送显方式。以视频播放场景为例，使用Profiler分析自渲染图层叠加方式的方法如下:
 
 ### Profiler工具抓取trace（推荐）：
 
@@ -65,7 +65,7 @@ format: md
 
 ![](./img/59745612.png "点击放大")
 
-如果自渲染图层设置了透明度，使用GPU合成，为了达到更优的性能功耗，在非必要的情况下，建议开发者去除自渲染图层的透明度。示例见：[避免UI控件上方自渲染图层设置透明度修改指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-utilize-hwc-efficiently#section1547428193417)。
+如果自渲染图层设置了透明度，使用GPU合成，为了达到更优的性能功耗，在非必要的情况下，建议开发者去除自渲染图层的透明度。示例见：[避免UI控件上方自渲染图层设置透明度修改指导](/docs/quality/utilize-hwc-efficiently#section1547428193417)。
 
 ### ArkUI控件模糊与自渲染图层存在交叠
 
@@ -73,4 +73,4 @@ format: md
 
 ![](./img/ac8e4cbe.png "点击放大")
 
-因此，建议开发者合理评估UI界面的视效需求，通过移除模糊等高阶视效或调整控件位置等方式，避免非必要高阶视效控件与自渲染图层交叠。去除UI控件的模糊效果后使能HWC合成，从而优化场景功耗。示例见：[在视频区域上方合理使用模糊控件修改指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-utilize-hwc-efficiently#section137998513411)。
+因此，建议开发者合理评估UI界面的视效需求，通过移除模糊等高阶视效或调整控件位置等方式，避免非必要高阶视效控件与自渲染图层交叠。去除UI控件的模糊效果后使能HWC合成，从而优化场景功耗。示例见：[在视频区域上方合理使用模糊控件修改指导](/docs/quality/utilize-hwc-efficiently#section137998513411)。

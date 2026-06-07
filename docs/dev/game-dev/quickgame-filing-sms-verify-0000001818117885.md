@@ -1,6 +1,6 @@
 ---
 title: "工信部核验核准（备案）短信"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-sms-verify-0000001818117885
+original_url: /docs/dev/game-dev/quickgame-filing-sms-verify-0000001818117885
 has_merged_cells: true
 format: md
 ---

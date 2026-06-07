@@ -1,6 +1,6 @@
 ---
 title: "创建DataAbility"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-dataability
+original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/create-dataability
 format: md
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "嵌入式组件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-cross-process
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-ui-cross-process
 format: md
 ---
 
 
-* **[全屏启动元服务组件（FullScreenLaunchComponent）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-fullscreencomponent)**
-* **[同应用进程嵌入式组件 (EmbeddedComponent)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-embedded-components)**
+* **[全屏启动元服务组件（FullScreenLaunchComponent）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-ui-cross-process/arkts-fullscreencomponent)**
+* **[同应用进程嵌入式组件 (EmbeddedComponent)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-ui-cross-process/arkts-embedded-components)**

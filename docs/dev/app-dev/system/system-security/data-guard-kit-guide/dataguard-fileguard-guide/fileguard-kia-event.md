@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "订阅或取消订阅KIA文件拷贝、重命名和压缩事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-kia-event
+original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-kia-event
 format: md
 ---
 

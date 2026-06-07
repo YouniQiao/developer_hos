@@ -1,13 +1,13 @@
 ---
 title: "Web组件在不同的窗口间迁移"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-component-migrate
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-component-migrate
 format: md
 ---
 
 
 Web组件能够实现在不同窗口的组件树上进行挂载或移除操作，这一能力使得开发者可以将同一个Web组件在不同窗口间迁移。例如，将浏览器的Tab页拖出成独立窗口，或拖入浏览器的另一个窗口。
 
-Web组件在不同窗口间迁移，是基于[自定义节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-node)能力实现的。实现的基本原理是：通过[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-buildernode)，开发者可创建Web组件的离线节点，并结合[自定义占位节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-place-holder)控制Web节点的挂载与移除。当从一个窗口上移除Web节点，并挂载到另一个窗口中，即完成Web组件在窗口间的迁移。
+Web组件在不同窗口间迁移，是基于[自定义节点](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-node)能力实现的。实现的基本原理是：通过[BuilderNode](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-buildernode)，开发者可创建Web组件的离线节点，并结合[自定义占位节点](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-place-holder)控制Web节点的挂载与移除。当从一个窗口上移除Web节点，并挂载到另一个窗口中，即完成Web组件在窗口间的迁移。
 
 在以下示例中，主窗Ability启动时，通过命令式的方式创建了一个Web组件。开发者可以利用common.ets中提供的方法和类，实现Web组件的挂载和移除。Index.ets则提供了一种挂载和移除Web组件的实现方法。通过这种方式，开发者能够实现Web组件在不同窗口中页面的挂载与移除，即实现了Web组件在不同窗口间的迁移。下图是展示了这一迁移过程的示意图。
 

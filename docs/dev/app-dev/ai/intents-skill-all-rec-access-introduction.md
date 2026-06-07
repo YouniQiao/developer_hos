@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-skill-all-rec-access-introduction
+original_url: /docs/dev/app-dev/ai/intents-skill-all-rec-access-introduction
 format: md
 ---
 

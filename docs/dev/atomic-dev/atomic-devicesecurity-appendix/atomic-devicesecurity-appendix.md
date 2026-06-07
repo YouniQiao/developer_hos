@@ -1,6 +1,6 @@
 ---
 title: "附录"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-devicesecurity-appendix
+original_url: /docs/dev/atomic-dev/atomic-devicesecurity-appendix/atomic-devicesecurity-appendix
 format: md
 ---
 

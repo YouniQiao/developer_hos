@@ -1,7 +1,7 @@
 ---
 title: "查询整体数据报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-overall-data-0000001294054000
+original_url: /docs/monetize/promotion/bp-delivery-task-management-overall-data-0000001294054000
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
    ![](./img/389226d21107.png) 
 
-   具体报表指标含义请参见[报表指标说明](https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-index-0000001293894160)。
+   具体报表指标含义请参见[报表指标说明](/docs/monetize/promotion/bp-delivery-task-management-index-0000001293894160)。
 
    ![](./img/baaf6f88dccd.png "点击放大")
 3. 您可以点击“自定义列”，自定义筛选字段。查询和导出的字段名保持一致。

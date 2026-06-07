@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "网站链接免责声明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-website-disclaimer
+original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-website-disclaimer
 format: md
 ---
 

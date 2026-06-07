@@ -1,6 +1,6 @@
 ---
 title: "工具配置"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pga-tools-preparation-0000002089781453
+original_url: /docs/dev/game-dev/pga-tools-preparation-0000002089781453
 format: md
 ---
 
@@ -26,7 +26,7 @@ format: md
 1. 点击“Jobs &gt; PGA &gt; PGA Settings”，进入“PGA AOT Settings”页面。
 
    ![](./img/d89ba419.png)
-2. 点击“Activate”，在“Activate Window”中输入从AGC控制台获取的**APP ID**、**Client ID**、**Client Secret**，具体获取方式请参见[获取游戏信息](https://developer.huawei.com/consumer/cn/doc/games-guides/pga-agc-preparation-0000002053782502#section95331129879)。点击“Activate”鉴权。
+2. 点击“Activate”，在“Activate Window”中输入从AGC控制台获取的**APP ID**、**Client ID**、**Client Secret**，具体获取方式请参见[获取游戏信息](/docs/dev/game-dev/pga-agc-preparation-0000002053782502#section95331129879)。点击“Activate”鉴权。
 
    ![](./img/aa8ef29e.png)
 3. 鉴权成功后会出现“PGA is enabled.”和当前license有效期的提示。
@@ -56,7 +56,7 @@ format: md
    ![](./img/f69629b1.png)
 
    该放置路径为默认路径，若想自定义此处的路径，可通过[自定义设置com.huawei.pga包](#section2415145114120)进行修改。
-2. 打开clientInputFile.bin文件，在文件内按照**appId**、**clientId**、**clientSecret**的顺序设置JSON数组，填写从AGC控制台获取的值，具体获取方式可参见[获取游戏信息](https://developer.huawei.com/consumer/cn/doc/games-guides/pga-agc-preparation-0000002053782502#section95331129879)。对应的clientInputFile.bin文件具体内容如下：
+2. 打开clientInputFile.bin文件，在文件内按照**appId**、**clientId**、**clientSecret**的顺序设置JSON数组，填写从AGC控制台获取的值，具体获取方式可参见[获取游戏信息](/docs/dev/game-dev/pga-agc-preparation-0000002053782502#section95331129879)。对应的clientInputFile.bin文件具体内容如下：
 
    ```
    {

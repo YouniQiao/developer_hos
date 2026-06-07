@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "会话管理(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-session-management
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management
 format: md
 ---
 
@@ -61,7 +61,7 @@ format: md
 
    在调用[addOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#addoutput11)添加相机的输出流前，可通过[canAddOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#canaddoutput11)判断当前相机输出流是否可以添加到session中。
 
-   相机输入流cameraInput创建流程请参考[设备输入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-input)，相机预览输出流previewOutput和拍照输出流photoOutput创建流程请分别参考[预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preview)和[拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-shooting)。
+   相机输入流cameraInput创建流程请参考[设备输入](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-input)，相机预览输出流previewOutput和拍照输出流photoOutput创建流程请分别参考[预览](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preview)和[拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-shooting)。
 
    ```
    async function startSession(videoSession: camera.VideoSession, cameraInput: camera.CameraInput, previewOutput: camera.PreviewOutput, photoOutput: camera.PhotoOutput): Promise<void> {

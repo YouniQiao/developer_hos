@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/no-this-alias"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-this-alias
+original_url: /docs/tools/coding-debug/ide_no-this-alias
 format: md
 ---
 

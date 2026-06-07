@@ -1,6 +1,6 @@
 ---
 title: "button"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-button
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-button
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 | plain | boolean | false | 否 | 是否镂空。 |
 | disabled | boolean | false | 否 | 是否禁用。 |
 | loading | boolean | false | 否 | 文字前是否带 loading 图标。 |
-| form-type | string | - | 否 | 用于 [form](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-form) 组件，点击分别会触发组件的 submit/reset 事件  - submit：表单提交  - reset：重置表单 |
+| form-type | string | - | 否 | 用于 [form](/docs/dev/atomic-dev/ascf/components-form-components/components-form) 组件，点击分别会触发组件的 submit/reset 事件  - submit：表单提交  - reset：重置表单 |
 | open-type | string | - | 否 | 元服务开放的能力，有效值详见[open-type属性合法值](#open-type属性合法值)。 |
 | hover-class | string | button-hover | 否 | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果。 |
 | hover-stop-propagation | boolean | false | 否 | 是否阻止本节点的祖先节点出现点击态。 |
@@ -28,9 +28,9 @@ format: md
 | app-module-name | string | - | 否 | open-type=launchApp时有效，表示待启动Ability所属的模块名称。  **起始版本：** 1.0.6 |
 | app-ability-name | string | - | 否 | open-type=launchApp时有效，表示待启动Ability名称。  **起始版本：** 1.0.6 |
 | app-parameters | Object | - | 否 | open-type=launchApp时有效，表示启动Ability时的自定义参数。  **起始版本：** 1.0.6 |
-| activity-type | string | - | 否 | open-type=liveActivity时有效，表示子场景ID，当open-type=liveActivity时，该参数必填。取值参考[服务动态场景模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-timeline#section442012142311)。  **起始版本：** 1.0.20 |
+| activity-type | string | - | 否 | open-type=liveActivity时有效，表示子场景ID，当open-type=liveActivity时，该参数必填。取值参考[服务动态场景模板](/docs/dev/atomic-dev/atomic-push-development/push-as-timeline#section442012142311)。  **起始版本：** 1.0.20 |
 | bindgetphonenumber | eventhandle | - | 否 | 获取用户手机号的回调，open-type="getPhoneNumber"时有效。 |
-| bindopensetting | eventhandle | - | 否 | 打开授权设置页面后的回调，open-type="openSetting"时有效，回调数据与[has.openSetting](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-setting#hasopensetting)返回的一致。 |
+| bindopensetting | eventhandle | - | 否 | 打开授权设置页面后的回调，open-type="openSetting"时有效，回调数据与[has.openSetting](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-setting#hasopensetting)返回的一致。 |
 | bindlaunchapp | eventhandle | - | 否 | 打开应用成功时的回调，open-type="launchApp"时有效。  **起始版本：** 1.0.6 |
 | bindcreateliveactivity | eventhandle | - | 否 | 获取服务动态授权码的回调，open-type="liveActivity"时有效，event.detail = &#123; code &#125;。  **起始版本：** 1.0.20 |
 | bindgetphonenumberandrisklevel | eventhandle | - | 否 | 获取手机号和风险等级的回调，open-type="getPhoneNumberAndRiskLevel"时有效，event.detail = &#123; code &#125;。  **起始版本：** 1.0.20 |
@@ -44,12 +44,12 @@ format: md
 | openSetting | 打开授权设置页面。 |
 | launchApp | 打开应用，可以通过app-bundle-name，app-module-name，app-ability-name，app-parameters属性打开指定应用。当前只支持打开系统应用，或者在元服务跳转三方应用的场景下只能打开同系列开发者的应用，否则会遭到系统生态管控拦截，提示应用无法打开。  **起始版本：** 1.0.6 |
 | share | 触发用户分享，用户点击按钮后触发Page.onShareAppMessage事件，只支持分享首页。  **起始版本：** 1.0.16  **依赖关系：** HarmonyOS SDK版本≥6.0.0(20) 且ROM版本 ≥ 6.0.0。 |
-| liveActivity | 获取服务动态授权码，用于[推送服务动态](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-push-info#推送服务动态)。当open-type等于该值时，必须同时指定activity-type属性。  **起始版本：** 1.0.20  **依赖关系：** HarmonyOS SDK版本≥6.0.0(20) 且ROM版本 ≥ 6.0.0。 |
+| liveActivity | 获取服务动态授权码，用于[推送服务动态](/docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-push-info#推送服务动态)。当open-type等于该值时，必须同时指定activity-type属性。  **起始版本：** 1.0.20  **依赖关系：** HarmonyOS SDK版本≥6.0.0(20) 且ROM版本 ≥ 6.0.0。 |
 | getPhoneNumberAndRiskLevel | 获取手机号和风险等级。  **起始版本：** 1.0.20  **依赖关系：** HarmonyOS SDK版本≥6.0.2(22) 且ROM版本 ≥ 6.0.2。 |
 
 ![](./img/db23ae30.png)
 
-button存在max-width默认样式，值为448px，若button组件宽度需要超过448px，可设置max-width为none或把值设足够大覆盖默认样式。详见[button组件width和实际不一致问题](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-button-width-problem)
+button存在max-width默认样式，值为448px，若button组件宽度需要超过448px，可设置max-width为none或把值设足够大覆盖默认样式。详见[button组件width和实际不一致问题](/docs/dev/atomic-dev/ascf/faqs-others/faqs-button-width-problem)
 
 ### 错误码信息
 

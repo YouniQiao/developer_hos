@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "如何获取帮助"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-help
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-help
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-faq-0000002349181496
+original_url: /docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-faq-0000002349181496
 format: md
 ---
 
@@ -17,4 +17,4 @@ format: md
 
 | 邮箱地址 | 邮件标题 | 邮件内容 |
 | --- | --- | --- |
-| agconnect@huawei.com | 位置推特性未发布问题 | 需包含以下信息：   * **应用名称** * **APP ID**：获取方法请参见[查看应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)。 * **意图名称** * **页面问题截图**。示例如下： ![](../img/agc-help-location-sense-faq-0000002349181496_0.png) |
+| agconnect@huawei.com | 位置推特性未发布问题 | 需包含以下信息：   * **应用名称** * **APP ID**：获取方法请参见[查看应用信息](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)。 * **意图名称** * **页面问题截图**。示例如下： ![](../img/agc-help-location-sense-faq-0000002349181496_0.png) |

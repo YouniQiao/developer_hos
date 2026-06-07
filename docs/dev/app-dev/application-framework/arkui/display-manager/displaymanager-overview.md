@@ -1,6 +1,6 @@
 ---
 title: "屏幕管理简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/displaymanager-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/display-manager/displaymanager-overview
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 * 可监听屏幕发生的各种事件变化，包括屏幕旋转变化、屏幕分辨率变化、屏幕刷新率变化、折叠状态变化等。
 * 提供虚拟屏的创建和使用，此部分能力仅对系统应用开放。
 
-针对屏幕属性相关信息的查询和监听，可见[使用OH\_DisplayManager实现屏幕基础信息查询和状态监听 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-display-manager)和[使用Display实现屏幕属性查询及状态监听 (ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screenproperty-guideline)。
+针对屏幕属性相关信息的查询和监听，可见[使用OH\_DisplayManager实现屏幕基础信息查询和状态监听 (C/C++)](/docs/dev/app-dev/application-framework/arkui/display-manager/native-display-manager)和[使用Display实现屏幕属性查询及状态监听 (ArkTS)](/docs/dev/app-dev/application-framework/arkui/display-manager/screenproperty-guideline)。
 
 ## 约束和限制
 

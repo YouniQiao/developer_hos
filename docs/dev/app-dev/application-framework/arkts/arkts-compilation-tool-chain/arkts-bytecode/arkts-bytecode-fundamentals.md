@@ -1,6 +1,6 @@
 ---
 title: "方舟字节码基本原理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-bytecode-fundamentals
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-fundamentals
 format: md
 ---
 
@@ -292,7 +292,7 @@ function foo(): void {
 
 **共享词法环境**
 
-共享词法环境是一类特殊的词法环境。与一般词法环境的区别在于，共享词法环境中的每个词法变量都是[sendable对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)。方舟编译器通过共享词法环境实现词法变量在多线程中共享。
+共享词法环境是一类特殊的词法环境。与一般词法环境的区别在于，共享词法环境中的每个词法变量都是[sendable对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)。方舟编译器通过共享词法环境实现词法变量在多线程中共享。
 
 示例代码：
 
@@ -722,15 +722,15 @@ function foo3(a: number, b: number): void {}
 | 0x06fc | (deprecated) | - | - | （弃用的操作码） |
 | 0x06fd | PREF\_IMM16\_V8 | wide.supercallthisrange +AAAA, vBB | A：参数数量  B, ..., B + A - 1：参数 | 以B, ..., B + A - 1作为参数, 调用super函数，并将结果存放到acc中。  当A的值是0时，B是**undefined**。  此指令仅出现在非箭头函数中。 |
 | 0x06fe | PREF\_V8\_V8 | throw.undefinedifhole vAA, vBB | A：对象  B：对象名称 | 如果A的值是**hole**，则抛出异常：B的值是**undefined**。 |
-| 0x07fb | PREF\_IMM16\_ID16\_ID16\_IMM16\_V8 | callruntime.definesendableclass RRRR, @AAAA, @BBBB, +CCCC, vDD | R：方舟运行时内部使用的16位保留数字  A：[sendable class](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable-class)的构造函数的method id  B：literal id  C：方法A的形参数量  D：父类 | 使用索引B对应的字面量数组和父类D，创建一个A类的对象，并将其存放到acc中。 |
+| 0x07fb | PREF\_IMM16\_ID16\_ID16\_IMM16\_V8 | callruntime.definesendableclass RRRR, @AAAA, @BBBB, +CCCC, vDD | R：方舟运行时内部使用的16位保留数字  A：[sendable class](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable-class)的构造函数的method id  B：literal id  C：方法A的形参数量  D：父类 | 使用索引B对应的字面量数组和父类D，创建一个A类的对象，并将其存放到acc中。 |
 | 0x07fc | (deprecated) | - | - | （弃用的操作码） |
 | 0x07fd | PREF\_IMM16\_V8 | wide.supercallarrowrange +AAAA, vBB | 默认入参：acc：类对象  A：参数数量  B, ..., B + A - 1:参数 | 以B, ..., B + A - 1作为参数，调用acc中所存类的父类的构造函数，并将结果存放到acc中。  如果A的值为0，则B为**undefined**。  此指令仅出现在箭头函数中。 |
 | 0x07fe | PREF\_IMM8 | throw.ifsupernotcorrectcall +AA | 默认入参：acc：对象  A：错误种类 | 如果super没有被正确调用，抛出错误。 |
-| 0x08fb | PREF\_IMM16 | callruntime.ldsendableclass +AAAA | A：词法环境层级 | 将A个层次外的词法环境的[sendable class](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable-class)存放到acc中。 |
+| 0x08fb | PREF\_IMM16 | callruntime.ldsendableclass +AAAA | A：词法环境层级 | 将A个层次外的词法环境的[sendable class](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable-class)存放到acc中。 |
 | 0x08fc | (deprecated) | - | - | （弃用的操作码） |
 | 0x08fd | PREF\_IMM32 | wide.ldobjbyindex +AAAAAAAA | 默认入参：acc：对象  A：属性键值 | 加载acc中所存对象的键值为A的属性，并将其存放到acc中。 |
 | 0x08fe | PREF\_IMM16 | throw.ifsupernotcorrectcall +AAAA | 默认入参：acc：对象  A：错误种类 | 如果super没有被正确调用，抛出错误。 |
-| 0x09fb | PREF\_IMM8 | callruntime.ldsendableexternalmodulevar +AA | A：槽位号 | 将槽位号为A的外部模块变量存放到acc中。此指令仅出现在sendable class和[sendable function](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable-function)中。 |
+| 0x09fb | PREF\_IMM8 | callruntime.ldsendableexternalmodulevar +AA | A：槽位号 | 将槽位号为A的外部模块变量存放到acc中。此指令仅出现在sendable class和[sendable function](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable-function)中。 |
 | 0x09fc | (deprecated) | - | - | （弃用的操作码） |
 | 0x09fd | PREF\_V8\_IMM32 | wide.stobjbyindex vAA, +BBBBBBBB | 默认入参：acc：值  A：对象  B：属性键值 | 将acc中的值存放到对象A的键值为B的属性上。 |
 | 0x09fe | PREF\_ID16 | throw.undefinedifholewithname @AAAA | 默认入参：acc：对象  A：string id | 如果acc中的值是**hole**，则抛出异常：A的值是**undefined**。 |
@@ -765,7 +765,7 @@ function foo3(a: number, b: number): void {}
 | 0x13fc | (deprecated) | - | - | （弃用的操作码） |
 | 0x13fd | PREF\_IMM16 | wide.stpatchvar +AAAA | 默认入参：acc：值  A：补丁变量槽位号 | 将acc中的值存放进槽位号为A的补丁变量中。  此指令仅出现在补丁模式编译场景下。 |
 | 0x14fb | PREF\_IMM8 | callruntime.isfalse +RR | 默认入参：acc：操作数  R：方舟运行时内部使用的8位保留数字 | 计算acc == false，并将计算结果存放到acc中。 |
-| 0x15fb | PREF\_IMM8 | callruntime.ldlazymodulevar +AA | A：槽位号 | 将槽位号为A的外部模块变量存放到acc中。此指令仅适用于通过[lazy import](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-lazy-import)导入的模块变量。 |
+| 0x15fb | PREF\_IMM8 | callruntime.ldlazymodulevar +AA | A：槽位号 | 将槽位号为A的外部模块变量存放到acc中。此指令仅适用于通过[lazy import](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-lazy-import)导入的模块变量。 |
 | 0x16fb | PREF\_IMM16 | callruntime.wideldlazymodulevar +AAAA | A：槽位号 | 将槽位号为A的外部模块变量存放到acc中。此指令仅适用于通过lazy import导入的模块变量。 |
 | 0x17fb | PREF\_IMM8 | callruntime.ldlazysendablemodulevar +AA | A：槽位号 | 将槽位号为A的外部模块变量存放到acc中。此指令仅适用于通过lazy import导入的模块变量且仅出现在sendable class和sendable function中。 |
 | 0x18fb | PREF\_IMM16 | callruntime.wideldlazysendablemodulevar +AAAA | A：槽位号 | 将槽位号为A的外部模块变量存放到acc中。此指令仅适用于通过lazy import导入的模块变量且仅出现在sendable class和sendable function中。 |

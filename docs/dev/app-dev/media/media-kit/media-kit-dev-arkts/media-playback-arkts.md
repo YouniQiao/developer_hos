@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "播放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-playback-c
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts
 format: md
 ---
 
 
-* **[使用AVPlayer播放音频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-playback)**
-* **[使用AVPlayer播放视频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-video-playback)**
-* **[使用AVPlayer播放流媒体(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-streaming)**
-* **[使用LPP播放器播放视频 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-lpp-for-playback)**
+* **[使用AVPlayer播放音频(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-avplayer-for-playback)**
+* **[使用AVPlayer播放视频(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-avplayer-for-video-playback)**
+* **[使用AVPlayer播放流媒体(C/C++)](/docs/dev/app-dev/media/using-ndk-avplayer-for-streaming)**
+* **[使用LPP播放器播放视频 (C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-lpp-for-playback)**

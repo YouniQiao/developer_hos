@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "识别本地图片"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-detectbarcode
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-imagerecognition/scan-detectbarcode
 format: md
 ---
 
@@ -52,7 +52,7 @@ format: md
    ```
 2. 调用detectBarcode.decode接口解析码图。
 
-   * 通过Promise回调函数得到扫码结果，InputImage对象中uri参数推荐通过[picker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker)方式获取。
+   * 通过Promise回调函数得到扫码结果，InputImage对象中uri参数推荐通过[picker](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker)方式获取。
 
      ```
      @Entry
@@ -110,7 +110,7 @@ format: md
        }
      }
      ```
-   * 通过Callback回调函数得到扫码结果，InputImage对象中uri参数推荐通过[picker](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker)方式获取。
+   * 通过Callback回调函数得到扫码结果，InputImage对象中uri参数推荐通过[picker](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker)方式获取。
 
      ```
      @Entry

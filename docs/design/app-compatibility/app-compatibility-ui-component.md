@@ -1,7 +1,7 @@
 ---
 title: "UI自定义组件兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/app-compatibility-ui-component
+original_url: /docs/design/app-compatibility/app-compatibility-ui-component
 format: md
 ---
 

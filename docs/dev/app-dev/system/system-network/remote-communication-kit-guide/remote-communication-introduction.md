@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Remote Communication Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/remote-communication-introduction
+original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-introduction
 format: md
 ---
 

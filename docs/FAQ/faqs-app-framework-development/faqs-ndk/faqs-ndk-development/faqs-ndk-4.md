@@ -1,6 +1,6 @@
 ---
 title: "ArkTS侧与Native侧分别如何动态加载SO库"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-4
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-4
 format: md
 ---
 

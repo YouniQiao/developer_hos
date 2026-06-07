@@ -1,6 +1,6 @@
 ---
 title: "Web和应用的跳转与拉起"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/navigating-between-web-and-apps
+original_url: /docs/dev/app-dev/application-framework/navigating-between-web-and-apps
 format: md
 ---
 
@@ -28,7 +28,7 @@ format: md
 
 ### ArkTS页面跳转ArkWeb页面
 
-在HarmonyOS应用开发中，会有Web页面和ArkTS页面互相之间进行跳转的场景，例如列表页用了ArkTS进行开发，而详情页设计上只有简单的内容展示并没有复杂的逻辑操作，于是使用了Web开发并使用了ArkTS中的Web组件进行了加载，在这种场景下，从列表页跳转到详情页就是从ArkTS页面跳转到Web页面，在这种场景下，开发者只需要在ArkTS页面对应的事件回调函数中使用路由栈提供的跳转功能即可实现。关于Navigation组件的使用开发者可以参考：[组件导航（Navigation）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)。
+在HarmonyOS应用开发中，会有Web页面和ArkTS页面互相之间进行跳转的场景，例如列表页用了ArkTS进行开发，而详情页设计上只有简单的内容展示并没有复杂的逻辑操作，于是使用了Web开发并使用了ArkTS中的Web组件进行了加载，在这种场景下，从列表页跳转到详情页就是从ArkTS页面跳转到Web页面，在这种场景下，开发者只需要在ArkTS页面对应的事件回调函数中使用路由栈提供的跳转功能即可实现。关于Navigation组件的使用开发者可以参考：[组件导航（Navigation）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)。
 
 ```
 NavDestination() {
@@ -84,12 +84,12 @@ NavDestination() {
 
 开发者在HarmonyOS应用内使用了Web页面做了部分页面的实现，同时出于推广，或者需要在其他应用内处理一些逻辑等目的，需要拉起其他的指定应用，例如跳转到支付应用进行支付，在这些场景下，就需要用到指定应用跳转的相关知识，首先在实现方案上，指定应用跳转建议使用如下两种方案：
 
-1. 使用[Deep Linking](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-linking-startup)实现应用拉起。
-2. 使用[App Linking](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)实现应用拉起。
+1. 使用[Deep Linking](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/deep-linking-startup)实现应用拉起。
+2. 使用[App Linking](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)实现应用拉起。
 
 方案1：使用Deep Linking。
 
-1. 在目标方配置module.json5文件，保证entities中包含entity.system.browsable、actions中包含ohos.want.action.viewData，最后再配置uris，用户可以自定义scheme，host，port以及path。具体含义可以参考：[uris标签说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签)。
+1. 在目标方配置module.json5文件，保证entities中包含entity.system.browsable、actions中包含ohos.want.action.viewData，最后再配置uris，用户可以自定义scheme，host，port以及path。具体含义可以参考：[uris标签说明](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)。
 
    ```
    {
@@ -123,7 +123,7 @@ NavDestination() {
      }
    }
    ```
-2. 在调用方的module.json5文件中配置[querySchemes](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#配置文件标签)，标识允许当前应用进行跳转查询的URL schemes。
+2. 在调用方的module.json5文件中配置[querySchemes](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#配置文件标签)，标识允许当前应用进行跳转查询的URL schemes。
 
    ```
    "querySchemes": [
@@ -135,7 +135,7 @@ NavDestination() {
    ```
    const link: string = "appScheme://www.test.com:80/path1";
    ```
-4. 通过[canOpenLink()](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/canopenlink)接口判断link是否可以打开，如不能打开链接开发者可以自定义响应逻辑，此处直接返回。
+4. 通过[canOpenLink()](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/canopenlink)接口判断link是否可以打开，如不能打开链接开发者可以自定义响应逻辑，此处直接返回。
 
    ```
    if (!bundleManager.canOpenLink(link)) {
@@ -179,7 +179,7 @@ NavDestination() {
    }
    ```
 
-方案2：当开发者希望无论应用是否已安装，用户都可以访问到链接对应的内容，当应用安装时优先打开应用去呈现内容；当应用未安装时，则打开浏览器呈现Web版的内容，就可以使用App Linking的方式，App Linking配置可以参考：[使用App Linking实现应用间跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)，以下为在ArkWeb页面中使用App Linking进行跳转的操作步骤。
+方案2：当开发者希望无论应用是否已安装，用户都可以访问到链接对应的内容，当应用安装时优先打开应用去呈现内容；当应用未安装时，则打开浏览器呈现Web版的内容，就可以使用App Linking的方式，App Linking配置可以参考：[使用App Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)，以下为在ArkWeb页面中使用App Linking进行跳转的操作步骤。
 
 1. 在HTML文件中直接使用a标签的href配置为要跳转应用详情的App Linking地址（需要应用已上架到应用市场），此处以华为应用市场中的华为商城为例。
 
@@ -197,7 +197,7 @@ NavDestination() {
 4. 若开发者不希望触发App Linking应用跳转逻辑，而是在应用内以ArkWeb继续浏览，可以在onLoadIntercept()回调中拦截对应的App Linking地址，并手动通过loadUrl()的方式加载网页内容，需注意获取到的链接地址末尾会被自动添加“/”。
 5. 无法在浏览器地址栏输入App Linking或Deep Linking打开应用，只能通过网页内的跳转代码实现（a标签、window.open()、window.location.href等）。
 6. 目前HarmonyOS设备上华为浏览器对上述两种链接地址做了支持。
-7. App Linking跳转失败时，默认配置下将会打开开发者自定义的网页版应用提供给用户进行浏览，通常此时网页内会嵌入按钮实现“在应用市场下载”，目前HarmonyOS设备的跳转逻辑与其他品类设备并不一致，所以需要开发者通过区分UA标识来判断是否为HarmonyOS设备，从而定制HarmonyOS设备上的跳转体验，实现上开发者可以参考[通过UserAgent识别HarmonyOS设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-default-useragent#如何通过user-agent来识别harmonyos操作系统中不同设备)。
+7. App Linking跳转失败时，默认配置下将会打开开发者自定义的网页版应用提供给用户进行浏览，通常此时网页内会嵌入按钮实现“在应用市场下载”，目前HarmonyOS设备的跳转逻辑与其他品类设备并不一致，所以需要开发者通过区分UA标识来判断是否为HarmonyOS设备，从而定制HarmonyOS设备上的跳转体验，实现上开发者可以参考[通过UserAgent识别HarmonyOS设备](/docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-default-useragent#如何通过user-agent来识别harmonyos操作系统中不同设备)。
 
 **图 1** Web页面打开效果图
 
@@ -207,7 +207,7 @@ NavDestination() {
 
 ## ArkWeb页面指定类型跳转
 
-在某些场景下，系统存在多个同类的应用，希望由用户按个人偏好自行选择在哪个应用中进行处理，例如用户收到了一个地址，而系统内有多个导航软件，希望让用户自行选择偏好的软件进行导航。实现上开发者可以参考：[拉起指定类型的应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/start-intent-panel)。以下参考代码以调用方拉起地图导航类应用为例。
+在某些场景下，系统存在多个同类的应用，希望由用户按个人偏好自行选择在哪个应用中进行处理，例如用户收到了一个地址，而系统内有多个导航软件，希望让用户自行选择偏好的软件进行导航。实现上开发者可以参考：[拉起指定类型的应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-intent-panel)。以下参考代码以调用方拉起地图导航类应用为例。
 
 1. 在HTML页面中使用a标签规定拉起指定应用的字符串。
 
@@ -305,4 +305,4 @@ NavDestination() {
    .navDestination(this.PageMap)
    ```
 
-更多拉起系统应用的方式，开发者可以参考：[拉起系统应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-app-startup)。
+更多拉起系统应用的方式，开发者可以参考：[拉起系统应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/system-app-startup)。

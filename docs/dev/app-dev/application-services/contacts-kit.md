@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Contacts Kit（联系人服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-kit
+original_url: /docs/dev/app-dev/application-services/contacts-kit
 format: md
 ---
 
 
-* **[Contacts Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-intro)**
-* **[使用picker管理联系人](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/contacts-addcontactviaui)**
+* **[Contacts Kit简介](/docs/dev/app-dev/application-services/contacts-kit/contacts-intro)**
+* **[使用picker管理联系人](/docs/dev/app-dev/application-services/contacts-kit/contacts-addcontactviaui)**

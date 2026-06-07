@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite实现语音识别（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mindspore-asr-based-native
+original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-asr-based-native
 format: md
 ---
 

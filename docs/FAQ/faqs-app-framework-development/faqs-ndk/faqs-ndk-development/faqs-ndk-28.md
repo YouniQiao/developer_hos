@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ArkTS的对象数据与Native的对象数据如何绑定，相互持有对象数据时内存如何管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-28
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-28
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
 **参考链接**
 
-[Native与ArkTS对象绑定](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-object-wrap)
+[Native与ArkTS对象绑定](/docs/dev/ndk-dev/use-napi-object-wrap)

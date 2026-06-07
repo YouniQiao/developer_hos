@@ -1,6 +1,6 @@
 ---
 title: "交互基础机制说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-interaction-basic-principles
 format: md
 ---
 
@@ -191,7 +191,7 @@ format: md
 
 ## 安全组件
 
-ArkUI包含的安全组件有：[使用粘贴控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pastebutton)、[使用保存控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/savebutton)等。
+ArkUI包含的安全组件有：[使用粘贴控件](/docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton)、[使用保存控件](/docs/dev/app-dev/system/system-security/access-control/security-components/savebutton)等。
 
 安全组件当前对触摸测试影响：如果有组件的[z序](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-z-order)比安全组件的z序靠前，且遮盖安全组件，则安全组件事件直接返回到父节点继续触摸测试。
 

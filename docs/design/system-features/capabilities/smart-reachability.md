@@ -1,7 +1,7 @@
 ---
 title: 智感握姿
 sidebar_label: 智感握姿
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/smart-reachability-0000002556657823
+original_url: /docs/design/system-features/capabilities/smart-reachability
 format: md
 ---
 
@@ -61,4 +61,4 @@ format: md
 
 [](https://contentcenter-videovali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_300_3/68/v3/v1oENavFRl6vQaWEh56aCg/zh-cn_attachment_0000002534302600.mp4)
 
-智感握姿开发文档请参阅：[获取用户动作开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/motion-guidelines)
+智感握姿开发文档请参阅：[获取用户动作开发指导](/docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/motion-guidelines)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发适用USB协议的设备驱动"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-ddk-guidelines
+original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/usb-ddk-guidelines
 format: md
 ---
 
@@ -39,7 +39,7 @@ UsbDdk（USB Driver Development Kit）是为开发者提供的USB驱动程序开
 
 ## 环境搭建
 
-请参考[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/environmental-preparation)完成开发前的准备工作。
+请参考[环境准备](/docs/dev/app-dev/system/system-hardware/driver-development-kit/environmental-preparation)完成开发前的准备工作。
 
 ## 开发指导
 

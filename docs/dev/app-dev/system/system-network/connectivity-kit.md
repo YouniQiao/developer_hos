@@ -1,13 +1,13 @@
 ---
 title: "Connectivity Kit（短距通信服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit
 format: md
 ---
 
 
-* **[Connectivity Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit-intro)**
-* **[蓝牙](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bluetooth)**
-* **[NFC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/nfc)**
-* **[WLAN](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wlan)**
-* **[融合短距](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fusion-connectivity)**
-* **[Connectivity Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology)**
+* **[Connectivity Kit简介](/docs/dev/app-dev/system/system-network/connectivity-kit/connectivity-kit-intro)**
+* **[蓝牙](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth)**
+* **[NFC](/docs/dev/app-dev/system/system-network/connectivity-kit/nfc)**
+* **[WLAN](/docs/dev/app-dev/system/system-network/connectivity-kit/wlan)**
+* **[融合短距](/docs/dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity)**
+* **[Connectivity Kit术语](/docs/dev/app-dev/system/system-network/connectivity-kit/terminology)**

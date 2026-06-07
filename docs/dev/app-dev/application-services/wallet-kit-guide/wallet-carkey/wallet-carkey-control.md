@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "车控"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-carkey-control
+original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-carkey/wallet-carkey-control
 format: md
 ---
 
@@ -19,7 +19,7 @@ format: md
 
 ## 开发步骤
 
-1. 车主APP使用[创建Wallet Kit服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wallet-preparations)时注册的服务号和[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识，通过[queryICCEConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-walletpass#queryicceconnectionstate)判断车钥匙的蓝牙链路状态。
+1. 车主APP使用[创建Wallet Kit服务](/docs/dev/app-dev/application-services/wallet-kit-guide/wallet-preparations)时注册的服务号和[申请钥匙卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-rest-api-carkey#申请钥匙卡片)时定义的卡券唯一标识，通过[queryICCEConnectionState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-walletpass#queryicceconnectionstate)判断车钥匙的蓝牙链路状态。
 
    ```
    import { common } from '@kit.AbilityKit';

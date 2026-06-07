@@ -1,7 +1,7 @@
 ---
 title: "命令：场景感知跳转命令&lt;ScenarioIntentCommand&gt;"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/scenario_intentcommand-0000002550844196
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/scenario_intentcommand-0000002550844196
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 功能概述
 
-配合[场景感知数据开放&lt;Scenarios&gt;](https://developer.huawei.com/consumer/cn/doc/content/scenarios-0000002581443929)标签使用，配置Scenarios标签后，若需要基于Scenarios推荐的场景结果，实现应用或元服务跳转功能，则需要配套使用此标签。
+配合[场景感知数据开放&lt;Scenarios&gt;](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/scenarios-0000002581443929)标签使用，配置Scenarios标签后，若需要基于Scenarios推荐的场景结果，实现应用或元服务跳转功能，则需要配套使用此标签。
 
 ## 支持范围
 
@@ -48,4 +48,4 @@ format: md
 
 ## 应用示例
 
-参考[场景感知数据开放&lt;Scenarios&gt;](https://developer.huawei.com/consumer/cn/doc/content/scenarios-0000002581443929)中的应用示例。
+参考[场景感知数据开放&lt;Scenarios&gt;](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/scenarios-0000002581443929)中的应用示例。

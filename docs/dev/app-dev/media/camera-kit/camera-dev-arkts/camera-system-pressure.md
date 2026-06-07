@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "压力管控(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-system-pressure
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-system-pressure
 format: md
 ---
 

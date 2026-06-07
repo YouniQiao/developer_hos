@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "多摄同开(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-concurrent-open
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-concurrent-open
 format: md
 ---
 

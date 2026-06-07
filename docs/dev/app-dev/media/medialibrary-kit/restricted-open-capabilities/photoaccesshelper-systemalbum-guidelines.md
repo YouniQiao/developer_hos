@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "系统相册资源使用指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-systemalbum-guidelines
+original_url: /docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-systemalbum-guidelines
 format: md
 ---
 
@@ -10,9 +10,9 @@ photoAccessHelper提供对收藏夹、视频相册、截屏和录屏相册的相
 
 ![](./img/ecaab905.png)
 
-在进行功能开发前，请查阅[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation)，了解如何获取相册管理模块实例及申请相关权限。
+在进行功能开发前，请查阅[开发准备](/docs/dev/app-dev/media/photoaccesshelper-preparation)，了解如何获取相册管理模块实例及申请相关权限。
 
-文档中使用到PhotoAccessHelper的地方，默认使用[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation)中获取的对象，如未添加此段代码提示PhotoAccessHelper未定义的错误请自行添加。
+文档中使用到PhotoAccessHelper的地方，默认使用[开发准备](/docs/dev/app-dev/media/photoaccesshelper-preparation)中获取的对象，如未添加此段代码提示PhotoAccessHelper未定义的错误请自行添加。
 
 为了保证应用的运行效率，大部分photoAccessHelper的接口调用都是异步的。以下异步调用的API示例均采用Promise函数，更多方式可以查阅[模块描述](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper)。
 
@@ -29,7 +29,7 @@ photoAccessHelper提供对收藏夹、视频相册、截屏和录屏相册的相
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
 
 **开发步骤**
 
@@ -67,7 +67,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
 
 下面以获取收藏夹中的一张图片为例。
 
@@ -126,7 +126,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
 
 **开发步骤**
 
@@ -164,7 +164,7 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 **前提条件**
 
 * 获取相册管理模块photoAccessHelper实例。
-* [申请相册管理模块功能相关权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
+* [申请相册管理模块功能相关权限](/docs/dev/app-dev/media/photoaccesshelper-preparation#申请相册管理模块功能相关权限)'ohos.permission.READ\_IMAGEVIDEO'。
 
 下面以获取视频相册中的一个视频为例。
 

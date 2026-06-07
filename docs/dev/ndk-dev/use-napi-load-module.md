@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API接口在主线程中进行模块加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module
+original_url: /docs/dev/ndk-dev/use-napi-load-module
 format: md
 ---
 
@@ -28,7 +28,7 @@ napi_status napi_load_module(napi_env env, const char* path, napi_value* result)
 * 禁止在线程安全函数的回调函数当中进行文件路径的加载。
 * 在信号函数中调用不安全，直接调用可能导致栈溢出。
 
-建议使用[napi\_load\_module\_with\_info](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-load-module-with-info)来进行模块加载，该接口支持了更多的场景。
+建议使用[napi\_load\_module\_with\_info](/docs/dev/ndk-dev/use-napi-load-module-with-info)来进行模块加载，该接口支持了更多的场景。
 
 ## napi\_load\_module支持的场景
 

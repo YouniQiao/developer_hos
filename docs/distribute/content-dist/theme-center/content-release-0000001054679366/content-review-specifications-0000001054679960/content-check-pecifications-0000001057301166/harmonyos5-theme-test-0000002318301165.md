@@ -1,7 +1,7 @@
 ---
 title: "主题测试审核规范"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/harmonyos5-theme-test-0000002318301165
+original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/harmonyos5-theme-test-0000002318301165
 ---
 
 # 主题测试审核规范
@@ -60,8 +60,8 @@ import MergeTable from '@site/src/components/MergeTable';
     [null, null, '一键优化图标静态和动态效果正常，与桌面其他图标样式保持一致；桌面双指捏合，一键优化widget预览图与实际效果保持一致。', '4.X及以下版本'],
     [null, null, '小艺APP（我的 &gt; 设置 &gt; 应用服务管理）内的图标需正常显示，严禁出现透明图标。', '5.0及以上版本'],
     [null, '品牌规范检查', '禁止恶意篡改或贬损第三方应用图标（例如修改图标名称、形象等）。', '所有版本'],
-    [null, { text: '适配要求', rowspan: 2, colspan: 1 }, '必做官方图标74个： https://developer.huawei.com/consumer/cn/doc/content/themes-specification-0000001160896163#section76911948171612', '4.X及以下版本'],
-    [null, null, '必做官方图标39个，三方应用图标54个： https://developer.huawei.com/consumer/cn/doc/content/themes-specification-next6-0000002531251229#section1799014137283', '5.0及以上版本'],
+    [null, { text: '适配要求', rowspan: 2, colspan: 1 }, '必做官方图标74个： /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163#section76911948171612', '4.X及以下版本'],
+    [null, null, '必做官方图标39个，三方应用图标54个： /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-next6-0000002531251229#section1799014137283', '5.0及以上版本'],
     [{ text: '系统换肤', rowspan: 33, colspan: 1 }, '控制中心', '页面排序、按钮和文字都应清晰显示，亮度进度条特殊色显示正常。', '所有版本'],
     [null, '通知中心', '时间日期、通知卡片信息显示清晰。', '所有版本'],
     [null, { text: '耳机弹窗换肤', rowspan: 3, colspan: 1 }, '耳机弹窗视觉效果需与预览图完全一致。', '所有版本'],

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "图片色彩空间转换"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-csc
+original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/image-csc
 format: md
 ---
 
@@ -69,7 +69,7 @@ format: md
 
 **内存规格：**
 
-处理的PixelMap对象需为[DMA内存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-allocator-type-c#内存类型介绍)。
+处理的PixelMap对象需为[DMA内存](/docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-allocator-type-c#内存类型介绍)。
 
 ## 开发指导
 

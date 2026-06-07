@@ -1,7 +1,7 @@
 ---
 title: "调试"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/use-real-machine-testing-0000002437625890
+original_url: /docs/distribute/xiaoyi/real-machine-testing-0000002471344145/use-real-machine-testing-0000002437625890
 format: md
 ---
 

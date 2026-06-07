@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现录音监听"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-audio-5
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-5
 ---
 
 

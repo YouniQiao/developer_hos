@@ -1,6 +1,6 @@
 ---
 title: "自定义节点常见问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-node-faq
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-user-defined-node-faq
 format: md
 ---
 
@@ -16,16 +16,16 @@ format: md
 **可能原因**
 
 * 自定义组件存在父节点且父节点未销毁。
-* 自定义组件由[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-buildernode)创建，该前端对象既未被回收，也未解除对后端自定义组件的引用。BuilderNode创建时，默认持有后端节点的强引用。
+* 自定义组件由[BuilderNode](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-buildernode)创建，该前端对象既未被回收，也未解除对后端自定义组件的引用。BuilderNode创建时，默认持有后端节点的强引用。
 * 通过调用[OH\_ArkUI\_GetNodeHandleFromNapiValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnodehandlefromnapivalue)方法，可以获取BuilderNode或ComponentContent对象中的root节点，此操作会使后端节点的引用计数加一。
 * 在[NodeContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontent)中，通过[addFrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontent#addframenode12)方法增加了对被添加的FrameNode对象节点的引用关系。然而，该NodeContent对象未被回收，且未通过[removeFrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontent#removeframenode12)接口删除所增加的引用关系。
 
 **解决措施**
 
 * 将需要释放的自定义组件从父节点上移除，排除父节点对自定义组件生命周期的影响。
-* 自定义组件由[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-buildernode)创建时，调用[dispose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#dispose12)接口，立即释放前端BuilderNode对象对于后端节点的强引用。
+* 自定义组件由[BuilderNode](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-buildernode)创建时，调用[dispose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#dispose12)接口，立即释放前端BuilderNode对象对于后端节点的强引用。
 * 对于使用OH\_ArkUI\_GetNodeHandleFromNapiValue获取BuilderNode或ComponentContent对象的root节点，调用[disposeNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#disposenode)减少OH\_ArkUI\_GetNodeHandleFromNapiValue增加的引用计数。
-* 未调用dispose时，当前端的BuilderNode对象在[GC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gc-introduction)中被回收会释放对后端根节点的引用。调试阶段可使用[hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)指令触发GC或[查询堆内存](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper#查询虚拟机堆内存)来分析引用关系。
+* 未调用dispose时，当前端的BuilderNode对象在[GC](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/gc-introduction)中被回收会释放对后端根节点的引用。调试阶段可使用[hidumper](/docs/dev/app-dev/system/hidumper)指令触发GC或[查询堆内存](/docs/dev/app-dev/system/hidumper#查询虚拟机堆内存)来分析引用关系。
 
 **示例代码**
 
@@ -274,11 +274,11 @@ export struct pageThreeTmp {
 
 **问题现象**
 
-使用[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-buildernode)创建自定义组件节点时，有可能出现前后端（ArkTS UI层与Native UI引擎层）之间的循环引用，使得自定义节点无法被销毁，进而引发内存泄漏。
+使用[BuilderNode](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-buildernode)创建自定义组件节点时，有可能出现前后端（ArkTS UI层与Native UI引擎层）之间的循环引用，使得自定义节点无法被销毁，进而引发内存泄漏。
 
 **可能原因**
 
-* 使用[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-user-defined-arktsnode-buildernode)创建自定义节点，创建的前端BuilderNode对象默认持有后端节点的强引用，而后端节点可能通过某些路径（如事件回调、全局缓存）反过来引用前端BuilderNode对象，因此形成了前后端循环引用，前端对象无法被回收，后端节点也因为被前端对象持有强引用而无法释放，导致内存泄漏。
+* 使用[BuilderNode](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-buildernode)创建自定义节点，创建的前端BuilderNode对象默认持有后端节点的强引用，而后端节点可能通过某些路径（如事件回调、全局缓存）反过来引用前端BuilderNode对象，因此形成了前后端循环引用，前端对象无法被回收，后端节点也因为被前端对象持有强引用而无法释放，导致内存泄漏。
 * BuilderNode会持有[build](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#build)函数传递的参数对象，如果传递给BuilderNode的参数对象也引用了BuilderNode对象，会产生前端对象的循环引用。从API version 24版本开始，该循环引用会被自动释放。
 
 **解决措施**

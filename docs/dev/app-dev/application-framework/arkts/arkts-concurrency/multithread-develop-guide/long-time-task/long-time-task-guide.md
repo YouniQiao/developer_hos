@@ -1,6 +1,6 @@
 ---
 title: "长时任务开发指导 (TaskPool)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/long-time-task-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/long-time-task/long-time-task-guide
 format: md
 ---
 

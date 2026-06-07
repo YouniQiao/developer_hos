@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自定义界面扫码黑屏现象"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-9
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-9
 format: md
 ---
 
@@ -12,5 +12,5 @@ format: md
 
 **解决措施**
 
-* 权限校验错误码：201，没有申请相机权限，[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
-* 参考ArkTS API错误码[1000500001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-error-code#section1000500001-内部错误)：如首次未调用customScan.[init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#customscaninit)初始化，直接调用customScan.[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#customscanstart-1)启动扫码相机流，请参考自定义界面扫码的[业务流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-customscan#业务流程)。
+* 权限校验错误码：201，没有申请相机权限，[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
+* 参考ArkTS API错误码[1000500001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-error-code#section1000500001-内部错误)：如首次未调用customScan.[init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#customscaninit)初始化，直接调用customScan.[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#customscanstart-1)启动扫码相机流，请参考自定义界面扫码的[业务流程](/docs/dev/app-dev/media/scan-kit-guide/scan-customscan#业务流程)。

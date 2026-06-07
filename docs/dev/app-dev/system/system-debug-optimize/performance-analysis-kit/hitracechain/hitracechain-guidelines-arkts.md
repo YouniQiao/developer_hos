@@ -1,6 +1,6 @@
 ---
 title: "使用HiTraceChain打点（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-guidelines-arkts
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-guidelines-arkts
 format: md
 ---
 
@@ -24,11 +24,11 @@ format: md
 
 ## 开发步骤
 
-HiTraceChain在ArkTS中的使用方法参考以下示例，开发者可参考[约束与限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracechain-intro#约束与限制)，了解常见的支持与不支持HiTraceChain自动传递的机制。
+HiTraceChain在ArkTS中的使用方法参考以下示例，开发者可参考[约束与限制](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-intro#约束与限制)，了解常见的支持与不支持HiTraceChain自动传递的机制。
 
 ### async/await和promise/then异步任务中使用HiTraceChain
 
-async/await和promise/then异步任务支持HiTraceChain自动传递，示例结合[事件订阅（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-app-events-arkts)和[使用HiTraceMeter跟踪性能（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hitracemeter-guidelines-arkts)，说明分布式跟踪在ArkTS中的使用方法。
+async/await和promise/then异步任务支持HiTraceChain自动传递，示例结合[事件订阅（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/hiappevent-watcher-app-events-arkts)和[使用HiTraceMeter跟踪性能（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-guidelines-arkts)，说明分布式跟踪在ArkTS中的使用方法。
 
 1. 在DevEco Studio中新建工程，选择“Empty Ability”，SDK版本选择19及以上（示例工程使用的HiTraceMeter接口从API version 19开始支持），工程的目录结构如下：
 

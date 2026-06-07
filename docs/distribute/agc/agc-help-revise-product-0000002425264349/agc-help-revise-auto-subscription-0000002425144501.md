@@ -1,6 +1,6 @@
 ---
 title: "自动续期订阅商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-revise-auto-subscription-0000002425144501
+original_url: /docs/distribute/agc/agc-help-revise-product-0000002425264349/agc-help-revise-auto-subscription-0000002425144501
 format: md
 ---
 
@@ -59,7 +59,7 @@ format: md
 
    * 商品促销价格
 
-   您还可根据您的促销策略设置商品促销价，详情请参见[设置促销价格](https://developer.huawei.com/consumer/cn/doc/app/agc-help-promotion-auto-subscription-0000002425144505#ZH-CN_TOPIC_0000002425144505)。
+   您还可根据您的促销策略设置商品促销价，详情请参见[设置促销价格](/docs/distribute/agc/agc-help-set-promot-price-0000002391542818/agc-help-promotion-auto-subscription-0000002425144505#ZH-CN_TOPIC_0000002425144505)。
 9. 完成修改后，点击“保存”或“提交审核”。
 
 ![](../img/agc-help-revise-auto-subscription-0000002425144501_11.png)

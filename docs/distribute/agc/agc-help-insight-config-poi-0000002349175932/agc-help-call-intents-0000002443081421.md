@@ -1,13 +1,13 @@
 ---
 title: "意图调用"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-call-intents-0000002443081421
+original_url: /docs/distribute/agc/agc-help-insight-config-poi-0000002349175932/agc-help-call-intents-0000002443081421
 format: md
 ---
 
 
 您需要实现InsightIntentExecutor，并在对应回调中实现打开落地页（即点击小艺建议卡片跳转的界面）的能力。
 
-下文以“旅游”垂域下的“查看旅游攻略”意图场景为例，意图调用字段定义请参考[查看意图Schema](https://developer.huawei.com/consumer/cn/doc/app/agc-help-confirm-intent-name-0000002442961545#section1557310291856)附件中的旅游垂类Schema。
+下文以“旅游”垂域下的“查看旅游攻略”意图场景为例，意图调用字段定义请参考[查看意图Schema](/docs/distribute/agc/agc-help-insight-config-poi-0000002349175932/agc-help-confirm-intent-name-0000002442961545#section1557310291856)附件中的旅游垂类Schema。
 
 操作步骤如下：
 
@@ -84,4 +84,4 @@ format: md
      }
    }
    ```
-4. 意图开发完成后，[发布HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-0000002271695230)/[发布元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-0000002327731065)。若您已发布过版本，可参考[升级版本](https://developer.huawei.com/consumer/cn/doc/app/agc-help-maintain-upgrade-0000002236494386)对您的HarmonyOS应用/元服务进行升级。
+4. 意图开发完成后，[发布HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-0000002271695230)/[发布元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-0000002327731065)。若您已发布过版本，可参考[升级版本](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-upgrade-0000002236494386)对您的HarmonyOS应用/元服务进行升级。

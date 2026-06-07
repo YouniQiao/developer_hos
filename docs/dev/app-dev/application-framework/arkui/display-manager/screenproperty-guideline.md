@@ -1,6 +1,6 @@
 ---
 title: "使用Display实现屏幕属性查询及状态监听 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screenproperty-guideline
+original_url: /docs/dev/app-dev/application-framework/arkui/display-manager/screenproperty-guideline
 format: md
 ---
 

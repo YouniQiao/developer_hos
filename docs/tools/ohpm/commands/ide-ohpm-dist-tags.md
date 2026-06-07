@@ -1,7 +1,7 @@
 ---
 title: "ohpm dist-tags"
 displayed_sidebar: ohpmSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-dist-tags
+original_url: /docs/tools/ohpm/commands/ide-ohpm-dist-tags
 format: md
 ---
 

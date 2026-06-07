@@ -1,6 +1,6 @@
 ---
 title: "基于设备分类和数据分级的访问控制 (ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control-by-device-and-data-level
+original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/access-control-by-device-and-data-level
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Preview Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-introduction
+original_url: /docs/dev/app-dev/application-services/preview-kit-guide/preview-introduction
 format: md
 ---
 
@@ -13,8 +13,8 @@ Preview Kit（文件预览服务）为应用提供便捷的文件快速预览和
   通过Preview Kit，用户可以对用户文件（包括图片、视频、音频、文本、html等）进行内容查看。同时用户还可以通过点击右上角的“使用其他应用打开”的按钮跳转到具体的应用进行展示，从而进行其他操作，如图片的旋转、放大等。
 
   目前，Preview Kit实现Office的预览能力，主要是借助WPS的能力实现的，预览界面会有WPS提供的技术支持，并展示WPS的入口，统一按照文件预览的风格进行页面布局。
-* Preview Kit还提供了文件打开加速功能，通常用户打开一个较大文件通常要花费几秒甚至十几秒，文件打开加速服务提供了预加载机制提前加载文件，缩短用户打开文件时间，给用户提供流畅顺滑的爽感体验。详见[文件打开加速功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-openfileboost)。
-* Preview Kit还提供了通用文件缓存加速功能，通常用户打开或浏览一个文件时，应用需要对文件中的图片、视频等内容进行解码，花费较长时间，通用文件缓存加速功能提供了缓存机制将解码数据缓存到磁盘中，后续用户再次打开或浏览该文件，应用无需执行解码流程，可直接从磁盘中获取缓存的解码数据，省去耗时的解码时间，缩短用户打开或浏览文件的时间，给用户提供极致流畅的体验。详见[通用文件缓存加速功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filecacheboost)。
+* Preview Kit还提供了文件打开加速功能，通常用户打开一个较大文件通常要花费几秒甚至十几秒，文件打开加速服务提供了预加载机制提前加载文件，缩短用户打开文件时间，给用户提供流畅顺滑的爽感体验。详见[文件打开加速功能](/docs/dev/app-dev/application-services/preview-kit-guide/preview-openfileboost)。
+* Preview Kit还提供了通用文件缓存加速功能，通常用户打开或浏览一个文件时，应用需要对文件中的图片、视频等内容进行解码，花费较长时间，通用文件缓存加速功能提供了缓存机制将解码数据缓存到磁盘中，后续用户再次打开或浏览该文件，应用无需执行解码流程，可直接从磁盘中获取缓存的解码数据，省去耗时的解码时间，缩短用户打开或浏览文件的时间，给用户提供极致流畅的体验。详见[通用文件缓存加速功能](/docs/dev/app-dev/application-services/preview-kit-guide/preview-filecacheboost)。
 
 ## 文件预览场景介绍
 

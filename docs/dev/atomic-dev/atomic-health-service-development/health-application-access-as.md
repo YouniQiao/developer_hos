@@ -1,6 +1,6 @@
 ---
 title: "接入流程"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-application-access-as
+original_url: /docs/dev/atomic-dev/atomic-health-service-development/health-application-access-as
 format: md
 ---
 

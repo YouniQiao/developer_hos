@@ -1,8 +1,8 @@
 ---
 title: "WebGL"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-webgl
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-webgl
 format: md
 ---
 
 
-* **[使用WebGL绘制图形](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/webgl-2d-guidelines)**
+* **[使用WebGL绘制图形](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-webgl/webgl-2d-guidelines)**

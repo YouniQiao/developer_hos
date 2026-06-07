@@ -1,7 +1,7 @@
 ---
 title: "智能穿戴导航协同"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smartwatchnavigation
+original_url: /docs/dev/app-dev/multi-device/bpta-smartwatchnavigation
 format: md
 ---
 
@@ -61,7 +61,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d3/v3/4QCAdZF4TfqlDLyEE79xeg/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074247Z&HW-CC-Expire=86400&HW-CC-Sign=59BB9E7F439A31710EAD98750C11D5B110B030D6D91049FB4C0EDFEFCADFA981)
 
-沉浸式地图展示，开发者可参考[窗口沉浸式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive)。
+沉浸式地图展示，开发者可参考[窗口沉浸式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive)。
 
 操作按钮的拉起，开发者可以参考[半模态转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition)。
 
@@ -74,7 +74,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/a5/v3/vnEyI1f2S6inzkJXaEcmWg/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074247Z&HW-CC-Expire=86400&HW-CC-Sign=DA72D323410D12E0174FB20B1B9C6BF15D9CDA314E85DE259C38AC04D4B0C4BC)
 
-智能穿戴设备界面开发具体可参考[智能穿戴应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smartwatch)。
+智能穿戴设备界面开发具体可参考[智能穿戴应用开发](/docs/dev/app-dev/multi-device/bpta-smartwatch)。
 
 ## 功能开发
 
@@ -82,7 +82,7 @@ format: md
 
 ###地图操作
 
-地图操作主要涉及地图展示以及地图绘制两个功能，地图展示能力开发者可以参考[显示地图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-presenting)。
+地图操作主要涉及地图展示以及地图绘制两个功能，地图展示能力开发者可以参考[显示地图](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-presenting)。
 
 智能穿戴设备协同导航的地图绘制功能通过[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)实现，具体包含以下核心操作：
 
@@ -265,7 +265,7 @@ format: md
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/5a/v3/f999Hw46R9y5PMfUMNXtWA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074247Z&HW-CC-Expire=86400&HW-CC-Sign=058256777EF637A51C518939FD75DAB9CF8F80E43BD37C63C4F82ABACFC8993F)
 
-地图实现依赖Map Kit能力，使用前首先需要申请Map服务，详情请参考Map Kit[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)。
+地图实现依赖Map Kit能力，使用前首先需要申请Map服务，详情请参考Map Kit[开发准备](/docs/dev/app-dev/application-services/map-config-agc)。
 
 ###互联通信
 
@@ -319,7 +319,7 @@ private onMsgCallback: Callback<wearEngine.P2pMessage> = (data: wearEngine.P2pMe
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/11/v3/KCt_xt6vQeOEPxhY4YBbwA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074247Z&HW-CC-Expire=86400&HW-CC-Sign=7E236CB3C48DA7DDCAB55556E2BD319C8BB124013FE9651186279E5E07FA9C5C)
 
-手机手表互联通信的具体实现，详情可参考[智能穿戴应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smartwatch)与[应用间消息通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/p2p_communication)。
+手机手表互联通信的具体实现，详情可参考[智能穿戴应用开发](/docs/dev/app-dev/multi-device/bpta-smartwatch)与[应用间消息通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/p2p_communication)。
 
 ###消息通知
 
@@ -362,7 +362,7 @@ notifyMessage() {
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/b8/v3/g5M6iiGeTYCr4CFQw1Uryw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074247Z&HW-CC-Expire=86400&HW-CC-Sign=BF3B44280478A75A63DABE28D507EF4C66532A4CDBAAF2D21DF5D977BBE0AD1F)
 
-消息通知依赖wearengine服务，详情可参考[智能穿戴应用开发](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smartwatch)与[穿戴设备模板化通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device_notification)。
+消息通知依赖wearengine服务，详情可参考[智能穿戴应用开发](/docs/dev/app-dev/multi-device/bpta-smartwatch)与[穿戴设备模板化通知](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/device_notification)。
 
 ###振感提示
 
@@ -404,7 +404,7 @@ export class VibratorUtil {
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/a9/v3/skZHqsqCTo2L_udcCP7_Wg/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074247Z&HW-CC-Expire=86400&HW-CC-Sign=95F7473B74C628DF4EE199E1D106F97E85843FD5C8B28B28AC1E0E7F9588E3BE)
 
-使用振动需要进行权限申请，详情可参考[振动开发指导(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vibrator-guidelines)。
+使用振动需要进行权限申请，详情可参考[振动开发指导(ArkTS)](/docs/dev/app-dev/system/system-hardware/sensor-service-kit/vibrator/vibrator-guidelines)。
 
 ## 示例代码
 

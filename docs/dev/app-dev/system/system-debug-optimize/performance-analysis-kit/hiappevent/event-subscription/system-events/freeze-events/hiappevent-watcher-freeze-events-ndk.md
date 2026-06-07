@@ -1,6 +1,6 @@
 ---
 title: "订阅应用冻屏事件（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-freeze-events-ndk
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events/hiappevent-watcher-freeze-events-ndk
 format: md
 ---
 
@@ -308,7 +308,7 @@ format: md
    HiAppEvent eventInfo.params.process_life_time=18
    HiAppEvent eventInfo.params.external_callback_log=THREAD_BLOCK_3S:log3s THREAD_BLOCK_6S:log6s
    ```
-2. 若应用无法启动或长时间未启动，开发者可以参考[使用FaultLogExtensionAbility订阅事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-log-extension-app-events-arkts)回调重写的函数，进行延迟上报。
+2. 若应用无法启动或长时间未启动，开发者可以参考[使用FaultLogExtensionAbility订阅事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/fault-log-extension-app-events-arkts)回调重写的函数，进行延迟上报。
 
 ### 移除并销毁事件观察者
 

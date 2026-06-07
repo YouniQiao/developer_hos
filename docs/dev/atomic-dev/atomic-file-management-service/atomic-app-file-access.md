@@ -1,6 +1,6 @@
 ---
 title: "访问应用文件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-app-file-access
+original_url: /docs/dev/atomic-dev/atomic-file-management-service/atomic-app-file-access
 format: md
 ---
 

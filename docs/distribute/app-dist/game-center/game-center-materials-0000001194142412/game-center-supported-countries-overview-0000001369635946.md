@@ -1,7 +1,7 @@
 ---
 title: "商品管理国家/地区、语言、币种列表"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-supported-countries-overview-0000001369635946
+original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-supported-countries-overview-0000001369635946
 format: md
 ---
 

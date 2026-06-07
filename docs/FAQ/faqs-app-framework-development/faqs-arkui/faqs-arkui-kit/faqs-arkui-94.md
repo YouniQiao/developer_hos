@@ -1,7 +1,7 @@
 ---
 format: md
 title: "TimePicker组件中文本的颜色和大小是否可以自定义"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-94
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-94
 ---
 
 

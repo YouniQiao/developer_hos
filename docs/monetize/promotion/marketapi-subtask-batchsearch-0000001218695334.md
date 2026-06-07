@@ -1,7 +1,7 @@
 ---
 title: "批量查询子任务"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-subtask-batchsearch-0000001218695334
+original_url: /docs/monetize/promotion/marketapi-subtask-batchsearch-0000001218695334
 format: md
 ---
 
@@ -80,10 +80,10 @@ Content-Type: application/json
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| code | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| code | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | msg | M | String | 返回描述。 |
 | totalCount | O | Integer | 总数。  最大长度64。 |
-| subTaskDetail | O | List&lt;[SubTaskDetailExt](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-subtaskdetailext-0000001182370048#ZH-CN_TOPIC_0000001741123784__table181165012410)&gt; | 失败任务原因说明。 |
+| subTaskDetail | O | List&lt;[SubTaskDetailExt](/docs/monetize/promotion/marketapi-modle-subtaskdetailext-0000001182370048#ZH-CN_TOPIC_0000001741123784__table181165012410)&gt; | 失败任务原因说明。 |
 
 ## 响应示例
 

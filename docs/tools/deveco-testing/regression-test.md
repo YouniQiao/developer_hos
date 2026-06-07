@@ -1,7 +1,7 @@
 ---
 title: "回归测试"
 displayed_sidebar: devecoTestingSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/regression-test
+original_url: /docs/tools/deveco-testing/regression-test
 format: md
 ---
 

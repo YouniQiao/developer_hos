@@ -1,6 +1,6 @@
 ---
 title: "日常活动"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-daily-activities-as
+original_url: /docs/dev/atomic-dev/health-samplepoint-as/health-daily-activities-as
 format: md
 ---
 

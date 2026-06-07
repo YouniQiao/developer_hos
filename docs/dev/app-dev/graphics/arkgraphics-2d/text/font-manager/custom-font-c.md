@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自定义字体的注册和使用（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/custom-font-c
+original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/custom-font-c
 format: md
 ---
 

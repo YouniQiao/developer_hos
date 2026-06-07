@@ -1,7 +1,7 @@
 ---
 format: md
 title: "导入Sample时，提示连接Gitee超时"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-2
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-2
 ---
 
 

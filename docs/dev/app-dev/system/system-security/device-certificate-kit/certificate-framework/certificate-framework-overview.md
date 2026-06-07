@@ -1,6 +1,6 @@
 ---
 title: "证书算法库框架概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/certificate-framework-overview
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/certificate-framework-overview
 format: md
 ---
 
@@ -51,27 +51,27 @@ format: md
 
 ## 约束与限制
 
-依赖加解密算法库框架的基础算法能力的部分，算法库框架不支持多线程并发操作，详情请参考[加解密算法框架](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-architecture-kit-intro#约束与限制)。
+依赖加解密算法库框架的基础算法能力的部分，算法库框架不支持多线程并发操作，详情请参考[加解密算法框架](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-architecture-kit-intro#约束与限制)。
 
 ## 开发总览
 
 证书算法库框架为开发者提供了以下相关功能的开发指导，请开发者参照开发。在开发前，请先查阅[证书规格](#证书规格)。
 
-* [证书对象的创建、解析和校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-verify-cert-object)
-* [证书扩展信息对象的创建、解析和校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-verify-certextension-object)
-* [证书吊销列表对象的创建、解析和校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-verify-crl-object)
-* [证书链校验器对象的创建和校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-cerchainvalidator-object)
-* [证书集合及证书吊销列表集合对象的创建和获取](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-get-cert-crl-object)
-* [证书链对象的创建和校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-certchain-object)
-* [证书链校验时从p12文件构造TrustAnchor对象数组](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-trustanchor-from-p12)
-* [使用系统预置CA证书校验证书链](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/verify-certchain-by-systemca)
-* [证书CMS签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-cms-sign-object)
-* [证书CMS封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-cms-enveloped-object)
-* [证书CMS验签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-cms-verify-object)
-* [证书CMS解封装](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-cms-decapsulation-object)
-* [证书PKCS12的创建和解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-parse-pkcs12)
-* [证书链在线校验证书吊销状态](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-cerchainvalidator-revocation-object)
-* [证书链校验时下载缺失的中间CA证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/allow-download-intermediate-cert)
+* [证书对象的创建、解析和校验](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-cert-object)
+* [证书扩展信息对象的创建、解析和校验](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-certextension-object)
+* [证书吊销列表对象的创建、解析和校验](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-crl-object)
+* [证书链校验器对象的创建和校验](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-cerchainvalidator-object)
+* [证书集合及证书吊销列表集合对象的创建和获取](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-get-cert-crl-object)
+* [证书链对象的创建和校验](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-certchain-object)
+* [证书链校验时从p12文件构造TrustAnchor对象数组](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-trustanchor-from-p12)
+* [使用系统预置CA证书校验证书链](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/verify-certchain-by-systemca)
+* [证书CMS签名](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-cms-sign-object)
+* [证书CMS封装](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-cms-enveloped-object)
+* [证书CMS验签](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-cms-verify-object)
+* [证书CMS解封装](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-cms-decapsulation-object)
+* [证书PKCS12的创建和解析](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-pkcs12)
+* [证书链在线校验证书吊销状态](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-cerchainvalidator-revocation-object)
+* [证书链校验时下载缺失的中间CA证书](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/allow-download-intermediate-cert)
 
 证书算法库框架主要提供了以下类，开发者可以查阅对应API参考，了解以下接口：
 

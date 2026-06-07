@@ -1,7 +1,7 @@
 ---
 title: "华为定位服务协议"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/locationkit
+original_url: /docs/distribute/app-dist/app-market/x20240513/Locationkit
 format: md
 ---
 

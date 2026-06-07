@@ -1,6 +1,6 @@
 ---
 title: "app.json配置pages字段重复报错"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-appjson-pages-change
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-appjson-pages-change
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Weex框架+H5接入智能填充"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-weex
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-weex
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
 * 设备智能填充开关必须处于打开状态，请前往“设置 > 隐私和安全 > 智能填充”页面开启开关。
 * 设备已连接互联网并且登录华为账号。
-* 该应用需已接入[智能填充服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-to-smart-fill#申请接入智能填充服务)。
+* 该应用需已接入[智能填充服务](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-to-smart-fill#申请接入智能填充服务)。
 
 ## 开发准备
 
@@ -26,7 +26,7 @@ format: md
 
 ## 示例代码
 
-在Weex的form表单中给input输入框（form表单的子节点）配置[autocomplete](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-mappingrelationship#h5-autocomplete和harmonyos的contenttype的映射关系)属性以实现智能填充，代码中action需要配置表单提交接口链接，当form表单提交后，页面导航发生变化时，满足历史表单输入保存的条件时会触发对应弹窗。代码如下：
+在Weex的form表单中给input输入框（form表单的子节点）配置[autocomplete](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-mappingrelationship#h5-autocomplete和harmonyos的contenttype的映射关系)属性以实现智能填充，代码中action需要配置表单提交接口链接，当form表单提交后，页面导航发生变化时，满足历史表单输入保存的条件时会触发对应弹窗。代码如下：
 
 ```
 <template>

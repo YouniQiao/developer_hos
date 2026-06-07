@@ -1,6 +1,6 @@
 ---
 title: "Wi-Fi"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-wifi
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-wifi
 format: md
 ---
 
@@ -76,7 +76,7 @@ has.onWifiConnected(function callback)
 **需要权限：**
 
 1. 在module.json5文件中声明**ohos.permission.GET\_WIFI\_INFO**、**ohos.permission.SET\_WIFI\_INFO**、**ohos.permission.LOCATION**、**ohos.permission.APPROXIMATELY\_LOCATION。**
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.userLocation](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.userLocation](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -197,7 +197,7 @@ has.getWifiList(Object object)
 **需要权限**：
 
 1. 在module.json5文件中声明**ohos.permission.GET\_WIFI\_INFO**、**ohos.permission.SET\_WIFI\_INFO**、**ohos.permission.LOCATION**、**ohos.permission.APPROXIMATELY\_LOCATION。**
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.userLocation](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.userLocation](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -236,7 +236,7 @@ has.getConnectedWifi(Object object)
 **需要权限**：
 
 1. 在module.json5文件中声明**ohos.permission.GET\_WIFI\_INFO**、**ohos.permission.SET\_WIFI\_INFO**、**ohos.permission.LOCATION**、**ohos.permission.APPROXIMATELY\_LOCATION。**
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.userLocation](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.userLocation](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 
@@ -282,7 +282,7 @@ has.connectWifi(Object object)
 **需要权限**：
 
 1. 在module.json5文件中声明**ohos.permission.GET\_WIFI\_INFO**、**ohos.permission.SET\_WIFI\_INFO**、**ohos.permission.LOCATION**、**ohos.permission.APPROXIMATELY\_LOCATION。**
-2. 使用[has.authorize()](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-authorization#hasauthorize)中申请[scope.userLocation](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-authorization#scope-列表)。
+2. 使用[has.authorize()](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization#hasauthorize)中申请[scope.userLocation](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization#scope-列表)。
 
 **参数：**
 

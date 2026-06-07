@@ -1,6 +1,6 @@
 ---
 title: "执行二进制插桩"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-gather-0000002342950452
+original_url: /docs/dev/game-dev/games-binary-optimization-gather-0000002342950452
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 ## 前提条件
 
-已[准备原始so文件](https://developer.huawei.com/consumer/cn/doc/games-guides/gams-binary-optimization-files-0000002377028341#section10129192418372)。
+已[准备原始so文件](/docs/dev/game-dev/gams-binary-optimization-files-0000002377028341#section10129192418372)。
 
 ## 开发步骤
 

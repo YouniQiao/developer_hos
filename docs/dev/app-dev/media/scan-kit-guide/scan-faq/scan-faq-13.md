@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "H5场景如何接入扫码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scan-faq-13
+original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-13
 format: md
 ---
 
@@ -12,4 +12,4 @@ Scan Kit没有提供H5的方案接入扫码。
 
 **解决措施**
 
-开发者可参考[前端页面调用应用侧函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-page-app-function-invoking)方式调用扫码接口，实现网页扫码功能。
+开发者可参考[前端页面调用应用侧函数](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-page-app-function-invoking)方式调用扫码接口，实现网页扫码功能。

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "取消用户授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-revoke-user-auth
+original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-revoke-user-auth
 format: md
 ---
 

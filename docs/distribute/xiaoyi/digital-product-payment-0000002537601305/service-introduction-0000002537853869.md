@@ -1,7 +1,7 @@
 ---
 title: "智能体数字商品支付服务介绍"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/service-introduction-0000002537853869
+original_url: /docs/distribute/xiaoyi/digital-product-payment-0000002537601305/service-introduction-0000002537853869
 format: md
 ---
 
@@ -20,6 +20,6 @@ format: md
 
 ## 3. 以下示例是A2A模式下数字商品支付流程图
 
-图中交互接口可参考[发起会话](https://developer.huawei.com/consumer/cn/doc/service/message-stream-0000002505761434)、[订单通知接口](https://developer.huawei.com/consumer/cn/doc/service/order-notification-0000002537601307)、[权益查询接口](https://developer.huawei.com/consumer/cn/doc/service/privilege-query-0000002537721285)。
+图中交互接口可参考[发起会话](/docs/distribute/xiaoyi/agent2agent-definition-0000002500439093/message-stream-0000002505761434)、[订单通知接口](/docs/distribute/xiaoyi/interaction-interface-0000002505801554/order-notification-0000002537601307)、[权益查询接口](/docs/distribute/xiaoyi/interaction-interface-0000002505801554/privilege-query-0000002537721285)。
 
 ![](./img/83c051c8488d.png)

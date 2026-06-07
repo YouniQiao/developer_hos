@@ -1,7 +1,7 @@
 ---
 title: "《CG鉴赏家》栏目"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-cg-program-0000001239622345
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-cg-program-0000001239622345
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用模型"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-application-model
+original_url: /docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-application-model
 format: md
 ---
 
@@ -12,11 +12,11 @@ format: md
 
 ## Admin组件的基础概念
 
-[企业设备管理扩展组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#企业设备管理扩展能力)，是[MDM应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#mdm应用设备管理应用)的必备组件。开发MDM应用时，需要定义一个[EnterpriseAdminExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterpriseadminextensionability)类型的[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-extensionability)组件用于激活MDM应用，该组件被激活后将作为独立的后台进程存在。
+[企业设备管理扩展组件](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#企业设备管理扩展能力)，是[MDM应用](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#mdm应用设备管理应用)的必备组件。开发MDM应用时，需要定义一个[EnterpriseAdminExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterpriseadminextensionability)类型的[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-extensionability)组件用于激活MDM应用，该组件被激活后将作为独立的后台进程存在。
 
 ### 进程模型
 
-MDM应用进程模型继承于普通应用[进程模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage#进程模型-1)，在普通应用模型基础上MDM应用会多一个独立的EnterpriseAdmin进程，MDM应用的Admin组件被激活后，EnterpriseAdmin进程会被创建，EnterpriseAdmin进程作为设备管理应用的后台进程，用于接收MDM应用的激活、取消激活等事件的回调。EnterpriseAdmin进程的生命周期不受到主进程的影响，由系统管理其生命周期。Admin组件的激活方式不同，EnterpriseAdmin进程的生命周期的[管理方式](#admin组件激活规格的差异)也不同。
+MDM应用进程模型继承于普通应用[进程模型](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/process-model-stage#进程模型-1)，在普通应用模型基础上MDM应用会多一个独立的EnterpriseAdmin进程，MDM应用的Admin组件被激活后，EnterpriseAdmin进程会被创建，EnterpriseAdmin进程作为设备管理应用的后台进程，用于接收MDM应用的激活、取消激活等事件的回调。EnterpriseAdmin进程的生命周期不受到主进程的影响，由系统管理其生命周期。Admin组件的激活方式不同，EnterpriseAdmin进程的生命周期的[管理方式](#admin组件激活规格的差异)也不同。
 
 **图1** MDM应用进程模型
 
@@ -24,7 +24,7 @@ MDM应用进程模型继承于普通应用[进程模型](https://developer.huawe
 
 ### EnterpriseAdmin进程的生命周期
 
-Admin组件被激活后有独立的进程，支持系统状态变更回调。与应用的主进程分属不同的进程，进程的启停由[EDM](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#edm)服务管理，应用处于后台时Admin进程也可以运行。
+Admin组件被激活后有独立的进程，支持系统状态变更回调。与应用的主进程分属不同的进程，进程的启停由[EDM](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#edm)服务管理，应用处于后台时Admin进程也可以运行。
 
 **图2** MDM应用处于前台并且已经激活时
 
@@ -62,7 +62,7 @@ Admin组件有不同的激活方式，可以通过不同的接口，例如[admin
 
 ![](./img/868d8756.png)
 
-1.BDA与其他[admin角色](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/mdm-kit-term#admin角色)不能同时存在。
+1.BDA与其他[admin角色](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#admin角色)不能同时存在。
 
 2.SDA和DA同时存在的数量加起来最多10个。SDA具备管理其他DA应用的能力（激活/去激活），而DA仅能对设备进行管控，无法管理其他DA应用。当MDM应用激活为SDA时，具备管控其他DA的能力，可以通过调用[adminManager.enableDeviceAdmin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#adminmanagerenabledeviceadmin23)接口激活其他DA应用，或调用[adminManager.disableDeviceAdmin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-adminmanager#adminmanagerdisabledeviceadmin23)接口去激活其他DA应用。
 
@@ -72,7 +72,7 @@ MDM应用的Admin组件需经企业授权方可生效。具体而言，企业需
 
 ### 管控接口权限校验机制
 
-MDM管控接口使用[ACL授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限机制中的基本概念)进行访问权限校验，同时会校验Admin组件的激活状态与激活类型。MDM应用调用MDM管控接口时须同时具备上述三个条件，否则调用会报错[9200001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager#section9200001-应用没有激活成设备管理器)、[201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section201-权限校验失败)或[9200002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager#section9200002-设备管理器权限不够)。
+MDM管控接口使用[ACL授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限机制中的基本概念)进行访问权限校验，同时会校验Admin组件的激活状态与激活类型。MDM应用调用MDM管控接口时须同时具备上述三个条件，否则调用会报错[9200001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager#section9200001-应用没有激活成设备管理器)、[201](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section201-权限校验失败)或[9200002](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprisedevicemanager#section9200002-设备管理器权限不够)。
 
 **图6** EDM服务校验逻辑
 

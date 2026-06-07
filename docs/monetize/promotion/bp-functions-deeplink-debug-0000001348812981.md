@@ -1,7 +1,7 @@
 ---
 title: "功能调试"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-debug-0000001348812981
+original_url: /docs/monetize/promotion/bp-functions-deeplink-debug-0000001348812981
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-- 您已集成延迟Deeplink[客户端查询代码](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-inquire-client-0000001348653289)或[API接口查询代码](https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-deeplink-inquire-api-0000001296132894)。
+- 您已集成延迟Deeplink[客户端查询代码](/docs/monetize/promotion/bp-functions-deeplink-inquire-client-0000001348653289)或[API接口查询代码](/docs/monetize/promotion/bp-functions-deeplink-inquire-api-0000001296132894)。
 
 ## 操作步骤
 

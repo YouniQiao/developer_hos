@@ -1,13 +1,13 @@
 ---
 title: "Core File Kit（文件基础服务）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-file-kit
+original_url: /docs/dev/app-dev/application-framework/core-file-kit
 format: md
 ---
 
 
-* **[Core File Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-file-kit-intro)**
-* **[应用文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file)**
-* **[用户文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-files)**
-* **[分布式文件系统](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/distributed-fs)**
-* **[端云文件协同](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloud-sync-file)**
-* **[文件基础服务开发实践](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/development-practices-file-management)**
+* **[Core File Kit简介](/docs/dev/app-dev/application-framework/core-file-kit/core-file-kit-intro)**
+* **[应用文件](/docs/dev/app-dev/application-framework/core-file-kit/app-file)**
+* **[用户文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files)**
+* **[分布式文件系统](/docs/dev/app-dev/application-framework/core-file-kit/distributed-fs)**
+* **[端云文件协同](/docs/dev/app-dev/application-framework/core-file-kit/cloud-sync-file)**
+* **[文件基础服务开发实践](/docs/dev/app-dev/application-framework/core-file-kit/development-practices-file-management)**

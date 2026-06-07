@@ -1,7 +1,7 @@
 ---
 title: "配置文件概述"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-configuration-file-overview
+original_url: /docs/tools/coding-debug/ide-hvigor-configuration-file-overview
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-assetdownload-prepare
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-assetdownload-prepare
 format: md
 ---
 

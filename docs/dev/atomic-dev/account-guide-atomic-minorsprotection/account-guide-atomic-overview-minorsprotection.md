@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-overview-minorsprotection
+original_url: /docs/dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-overview-minorsprotection
 format: md
 ---
 

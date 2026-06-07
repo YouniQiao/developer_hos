@@ -1,7 +1,7 @@
 ---
 title: "配置关联元服务"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/association_service-0000002508947051
+original_url: /docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/association_service-0000002508947051
 format: md
 ---
 

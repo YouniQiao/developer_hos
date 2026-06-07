@@ -1,6 +1,6 @@
 ---
 title: "准备游戏信息"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-gameinformation-0000002304472612
+original_url: /docs/dev/game-dev/games-gamemme-gameinformation-0000002304472612
 format: md
 ---
 
@@ -19,4 +19,4 @@ format: md
    | Client ID | 客户端ID，集成项目级SDK鉴权时的唯一标识。 |
    | Client Secret | 客户端密钥，集成项目级SDK鉴权时的密钥。 |
    | APP ID | 应用ID。 |
-   | API密钥（凭据） | API密钥，用于访问机器学习服务，仅实现[语音转文本](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voicetotext-harmonyos-0000002338511705)功能时需要。 |
+   | API密钥（凭据） | API密钥，用于访问机器学习服务，仅实现[语音转文本](/docs/dev/game-dev/games-gamemme-voicetotext-harmonyos-0000002338511705)功能时需要。 |

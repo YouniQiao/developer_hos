@@ -1,7 +1,7 @@
 ---
 format: md
 title: "是否支持获取编译阶段的ets文件的AST语法树"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-147
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-147
 ---
 
 

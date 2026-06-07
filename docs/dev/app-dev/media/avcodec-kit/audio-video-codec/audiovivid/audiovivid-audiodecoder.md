@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Audio Vivid解码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audiovivid-audiodecoder
+original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-audiodecoder
 format: md
 ---
 

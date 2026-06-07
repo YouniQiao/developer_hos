@@ -1,13 +1,13 @@
 ---
 title: "应用接入数据备份恢复"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-backup-extension
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension
 format: md
 ---
 
 
 应用接入数据备份恢复需要通过BackupExtensionAbility实现。
 
-BackupExtensionAbility是[Stage模型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/stage-model-development-overview)中扩展组件[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)的派生类。开发者可以通过修改配置文件定制备份恢复框架的行为，包括是否允许备份恢复，备份哪些文件等。
+BackupExtensionAbility是[Stage模型](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-development-overview)中扩展组件[ExtensionAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)的派生类。开发者可以通过修改配置文件定制备份恢复框架的行为，包括是否允许备份恢复，备份哪些文件等。
 
 ## 接口说明
 

@@ -1,6 +1,6 @@
 ---
 title: "GN构建工程配置HarmonyOS编译工具链"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/toolchain-gn-build-project
+original_url: /docs/dev/ndk-dev/toolchain-gn-build-project
 ---
 
 ## 概述

@@ -1,7 +1,7 @@
 ---
 title: "查询任务创意规格"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-creative-queryspecifications-0000001225162261
+original_url: /docs/monetize/promotion/marketapi-creative-queryspecifications-0000001225162261
 format: md
 ---
 
@@ -62,12 +62,12 @@ client_id:***
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| rtnCode | M | Integer | 返回码。  具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-returncode-0000001135626866)。 |
+| rtnCode | M | Integer | 返回码。  具体请参见[错误码](/docs/monetize/promotion/marketapi-returncode-0000001135626866)。 |
 | rtnDesc | M | String | 返回描述。 |
 | creativeMaxNums | O | Integer | 创意最大数量限制。 |
 | supportOpenCreative | O | String | 支持打开的创意。 |
 | supportIntroductionCreative | O | String | 支持的介绍创意，多个创意间用逗号分隔。 |
-| taskSupportCreativeFormatList | O | List&lt;[CreativeFormat](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-creativeformat-0000001182814432)&gt; | 任务支持的创意规格列表。 |
+| taskSupportCreativeFormatList | O | List&lt;[CreativeFormat](/docs/monetize/promotion/marketapi-modle-creativeformat-0000001182814432)&gt; | 任务支持的创意规格列表。 |
 
 ## 响应示例
 

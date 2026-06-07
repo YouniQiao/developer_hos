@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用SoundPlayer开发系统音效播放功能"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-soundplayer-for-playback
+original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/using-soundplayer-for-playback
 format: md
 ---
 

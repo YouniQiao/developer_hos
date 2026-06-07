@@ -1,7 +1,7 @@
 ---
 format: md
 title: "测试报告中，所有规则检测均异常，异常原因提示“arklayout存储失败”，该如何处理？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ux-publish-test-4
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-publish-test/faqs-ux-publish-test/faqs-ux-publish-test-4
 ---
 
 

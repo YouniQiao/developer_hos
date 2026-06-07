@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "应用内通知设置快捷入口开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-shortcut-settings
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-shortcut-settings
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 ## 开发准备
 
-详情请参考[应用链接说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config)，其中[linkFeature](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-uri-config#linkfeature标签说明)使用AppNotificationMgmt即可。
+详情请参考[应用链接说明](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config)，其中[linkFeature](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config#linkfeature标签说明)使用AppNotificationMgmt即可。
 
 ## 功能验证
 

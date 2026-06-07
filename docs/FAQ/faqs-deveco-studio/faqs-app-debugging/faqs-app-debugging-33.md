@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决Network单元测试用例crash问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-33
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-33
 ---
 
 

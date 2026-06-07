@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "地图截图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-screenshots
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-interaction/map-screenshots
 format: md
 ---
 

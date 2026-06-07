@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "动态轨迹"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-dyntrajectories
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-dyntrajectories
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "默认界面扫码"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-default-mode
+original_url: /docs/dev/atomic-dev/atomic-code-scan-development/atomic-scan-default-mode
 format: md
 ---
 
@@ -64,7 +64,7 @@ format: md
 
 ![](./img/634040f3.png)
 
-startScanForResult接口需要在页面和组件的生命周期内调用。若需要设置扫码页面为全屏或沉浸式，请参见[开发应用沉浸式效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-develop-apply-immersive-effects)。
+startScanForResult接口需要在页面和组件的生命周期内调用。若需要设置扫码页面为全屏或沉浸式，请参见[开发应用沉浸式效果](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-develop-apply-immersive-effects)。
 
 ## 开发步骤
 

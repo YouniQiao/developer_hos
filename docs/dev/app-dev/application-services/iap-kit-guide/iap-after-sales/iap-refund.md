@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "退款"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-refund
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-after-sales/iap-refund
 format: md
 ---
 

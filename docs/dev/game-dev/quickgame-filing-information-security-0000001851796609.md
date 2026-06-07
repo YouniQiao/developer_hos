@@ -1,6 +1,6 @@
 ---
 title: "信息安全管理承诺书"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/quickgame-filing-information-security-0000001851796609
+original_url: /docs/dev/game-dev/quickgame-filing-information-security-0000001851796609
 format: md
 ---
 

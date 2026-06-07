@@ -1,6 +1,6 @@
 ---
 title: "使用TSan检测线程问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-tsan-detection
+original_url: /docs/quality/stability-tsan-detection
 ---
 
 

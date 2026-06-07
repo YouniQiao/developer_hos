@@ -1,6 +1,6 @@
 ---
 title: "生成元服务图标"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-icon-generation
+original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-icon-generation
 format: md
 ---
 

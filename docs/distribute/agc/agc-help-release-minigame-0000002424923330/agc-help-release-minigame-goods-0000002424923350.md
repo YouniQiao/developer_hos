@@ -1,6 +1,6 @@
 ---
 title: "添加数字商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-minigame-goods-0000002424923350
+original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-goods-0000002424923350
 format: md
 ---
 
@@ -13,12 +13,12 @@ format: md
 
 ![](../img/agc-help-release-minigame-goods-0000002424923350_0.png)
 
-* 若在已通过审核的商品类型下追加新的数字商品，可以单独在商品管理页面提交审核，具体操作请参见[提交已生效类型的数字商品](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-effective-digital-products-for-review-0000002320646005)。
+* 若在已通过审核的商品类型下追加新的数字商品，可以单独在商品管理页面提交审核，具体操作请参见[提交已生效类型的数字商品](/docs/dev/game-dev/games-center-effective-digital-products-for-review-0000002320646005)。
 * 若有多个商品共用计费点的情况（按档位计费），需要进行备注。
 
 #### 前提条件
 
-已根据[数字商品](https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-products-manage-0000002286057092)，提前追加创建新类型的数字商品，且商品状态为“待审核”。
+已根据[数字商品](/docs/dev/game-dev/games-center-products-manage-0000002286057092)，提前追加创建新类型的数字商品，且商品状态为“待审核”。
 
 #### 操作步骤
 

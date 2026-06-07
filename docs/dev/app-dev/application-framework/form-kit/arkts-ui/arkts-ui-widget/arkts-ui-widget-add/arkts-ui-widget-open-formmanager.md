@@ -1,6 +1,6 @@
 ---
 title: "应用内拉起卡片管理加桌"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-open-formmanager
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-add/arkts-ui-widget-open-formmanager
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 下面给出示例，实现如下功能：在应用内点击“添加卡片到桌面”按钮，拉起卡片管理页面。用户可在卡片管理页面，点击“添加至桌面”按钮，此时在桌面即可看到新添加的卡片。
 
-1. [创建卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)。
+1. [创建卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)。
 2. 通过[openFormManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formprovider#formprovideropenformmanager18)方法在应用内添加拉起卡片管理页面入口。
 
    ```

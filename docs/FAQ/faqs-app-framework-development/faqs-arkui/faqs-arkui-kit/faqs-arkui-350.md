@@ -1,6 +1,6 @@
 ---
 title: "bindPopup适配Web组件长按菜单功能，设置offset控制弹窗的偏移"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-350
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-350
 format: md
 ---
 

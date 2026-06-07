@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Navigation组件NavPathStack removeByName默认会有底部滑入滑出的动画，如何关闭动画"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-438
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-438
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "接入联调测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-joint-commission-test
+original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-joint-commission-test
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 ## 添加调测设备
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，点击“开发与服务”，在项目列表中找到开发者的项目，通过“增长 > 推送服务 > 配置”导航到“配置”页签。
-2. 选择开发者的应用，点击实况窗-调测设备管理，根据[Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)添加调测设备后即可进行接入调测。
+2. 选择开发者的应用，点击实况窗-调测设备管理，根据[Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)添加调测设备后即可进行接入调测。
 
    ![](./img/f60ed95c.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "批量添加商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-goods-0000002391704474
+original_url: /docs/distribute/agc/agc-help-create-0000002391542814/agc-help-create-goods-0000002391704474
 format: md
 ---
 
@@ -14,7 +14,7 @@ format: md
 
    ![](../img/agc-help-create-goods-0000002391704474_1.png)
 
-   “商品模板”中支持填写的国家/地区、语言、币种等商品信息，具体可参见[国家/地区、语言、币种列表](https://developer.huawei.com/consumer/cn/doc/app/agc-help-countries-overview-0000002425262573#ZH-CN_TOPIC_0000002425262573)。
+   “商品模板”中支持填写的国家/地区、语言、币种等商品信息，具体可参见[国家/地区、语言、币种列表](/docs/distribute/agc/agc-help-products-management-0000002391702238/agc-help-countries-overview-0000002425262573#ZH-CN_TOPIC_0000002425262573)。
 
    ![](../img/agc-help-create-goods-0000002391704474_2.png)
 5. 在下载的模板中，resource ID 必须输入上传应用内截图后生成的素材ID，您可以点击“批量操作”下拉选项中的“查看素材”，点击“批量上传”，批量上传应用内截图，并点击“确认上传”。

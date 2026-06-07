@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用打包成.app时其中的HAP包没有签名"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-51
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-51
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/consistent-type-imports"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_consistent-type-imports
+original_url: /docs/tools/coding-debug/ide_consistent-type-imports
 format: md
 ---
 

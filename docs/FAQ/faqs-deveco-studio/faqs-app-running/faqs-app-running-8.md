@@ -1,7 +1,7 @@
 ---
 format: md
 title: "模拟器启动后，设备无法识别"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-8
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-8
 ---
 
 

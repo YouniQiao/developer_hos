@@ -1,6 +1,6 @@
 ---
 title: "aa工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool
+original_url: /docs/dev/app-dev/system/aa-tool
 format: md
 ---
 
@@ -9,7 +9,7 @@ Ability assistant（Ability助手，简称为aa），是用于启动应用和启
 
 ## 环境要求
 
-在使用本工具前，开发者需要先获取[hdc工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)，执行hdc shell。
+在使用本工具前，开发者需要先获取[hdc工具](/docs/dev/app-dev/system/hdc#环境准备)，执行hdc shell。
 
 本文中命令介绍均基于交互式命令环境。如果直接执行hdc shell [aa命令]，则需要采用""来包裹aa命令，确保命令中的传参能被正确识别。示例如下：
 
@@ -120,7 +120,7 @@ aa start [-d <deviceId>] [-U <URI>] [-t <type>] [-A <action>] [-e <entity>] [-c]
 
 ![](./img/a8c15dd4.png)
 
-本例中仅介绍了部分字段的使用。关于Ability匹配的详细规则参考[显式Want与隐式Want匹配规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/explicit-implicit-want-mappings)。
+本例中仅介绍了部分字段的使用。关于Ability匹配的详细规则参考[显式Want与隐式Want匹配规则](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings)。
 
 * **目标应用**：修改module.json5配置，为目标Ability配置uris。
 
@@ -232,7 +232,7 @@ aa dump -a
 
 ![](./img/04f0c969.png)
 
-aa dump命令从API version 7开始支持，从API version 9废弃，替换命令为[hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper) -s AbilityManagerService。
+aa dump命令从API version 7开始支持，从API version 9废弃，替换命令为[hidumper](/docs/dev/app-dev/system/hidumper) -s AbilityManagerService。
 
 **打印命令参数列表**
 
@@ -323,7 +323,7 @@ aa test -b <bundleName> [-m <module-name>] [-p <package-name>] [-s class <test-c
 
 ![](./img/b05f0d94.png)
 
-关于class、level、size、testType等参数的详细说明请参见[命令行执行测试脚本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unittest-guidelines#命令行执行测试脚本)。
+关于class、level、size、testType等参数的详细说明请参见[命令行执行测试脚本](/docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines#命令行执行测试脚本)。
 
 **启动测试框架命令参数列表**
 
@@ -577,7 +577,7 @@ Failed to verify the visibility of the target ability.
 
 **可能原因**
 
-当目标应用在module.json5配置文件中的[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)/[extensionAbilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#extensionabilities标签)中的exported字段配置为false时，表示对应UIAbility组件/ExtensionAbility组件不可以被其他应用调用，也无法被aa工具命令拉起。
+当目标应用在module.json5配置文件中的[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)/[extensionAbilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)中的exported字段配置为false时，表示对应UIAbility组件/ExtensionAbility组件不可以被其他应用调用，也无法被aa工具命令拉起。
 
 **处理步骤**
 
@@ -897,15 +897,15 @@ The target application is under control.
 * 目标应用是系统预装应用，并且使用本地编译的版本进行覆盖安装。
 * 目标应用开发证书过期，拉起时被系统管控拦截，此时会有系统弹框提示“应用已过期”。
 * 目标应用刚完成应用克隆，处于数据恢复中，此时会有系统弹框提示“数据恢复中，请稍后再试”。
-* [创建试用调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-acl-0000002394212138#section1443958124819)的5天有效期已过期，导致应用拉起时被系统管控拦截。
+* [创建试用调试Profile](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138#section1443958124819)的5天有效期已过期，导致应用拉起时被系统管控拦截。
 
 **处理步骤**
 
 * 针对可能原因1，建议卸载该应用。
 * 针对可能原因2，需要先卸载该应用，再使用本地编译的版本进行安装。
-* 针对可能原因3，需要[更换证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-faq-0000002329508280#section11365113515519)。
+* 针对可能原因3，需要[更换证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-faq-0000002329508280#section11365113515519)。
 * 针对可能原因4，需要等待数据恢复完成后再尝试启动。
-* 针对可能原因5，需要重新[创建试用调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apply-acl-0000002394212138#section1443958124819)。
+* 针对可能原因5，需要重新[创建试用调试Profile](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138#section1443958124819)。
 
 ### 10106106 目标应用被EDM管控
 

@@ -1,6 +1,6 @@
 ---
 title: "宣传素材规范及示例"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-publicity-standard-0000002286115530
+original_url: /docs/dev/game-dev/games-center-publicity-standard-0000002286115530
 has_merged_cells: true
 format: md
 ---

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "系统多线程模型是什么样的"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-32
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-32
 ---
 
 

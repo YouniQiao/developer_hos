@@ -1,6 +1,6 @@
 ---
 title: "标准化数据结构 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uniform-data-structure-c
+original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-structure-c
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 针对[UTD](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-utd-h)标准化数据类型中的部分常见类型，为了方便业务使用，提供了标准化数据结构。例如，系统定义的桌面图标类型（标准化数据类型标识为'OH\_UdsAppItem'）明确定义了相关描述信息。
 
-某些业务场景下应用可以直接使用我们具体定义的UTD标准化数据结构，例如跨应用拖拽场景。拖出方应用可以按照标准化数据结构将拖拽数据写入[绑定拖拽事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-drag-event)，拖入方应用从拖拽事件中读取拖拽数据并按照标准化数据结构进行数据的解析。这使得不同应用间的数据交互遵从相同的标准定义，有效减少了跨应用数据交互的开发工作量。
+某些业务场景下应用可以直接使用我们具体定义的UTD标准化数据结构，例如跨应用拖拽场景。拖出方应用可以按照标准化数据结构将拖拽数据写入[绑定拖拽事件](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-drag-event)，拖入方应用从拖拽事件中读取拖拽数据并按照标准化数据结构进行数据的解析。这使得不同应用间的数据交互遵从相同的标准定义，有效减少了跨应用数据交互的开发工作量。
 
 ## 基本概念
 

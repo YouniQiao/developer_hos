@@ -1,7 +1,7 @@
 ---
 format: md
 title: "是否支持获取用户手机上所有的App列表"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-6
+original_url: /docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-6
 ---
 
 

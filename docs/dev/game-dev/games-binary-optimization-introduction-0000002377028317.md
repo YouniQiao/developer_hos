@@ -1,6 +1,6 @@
 ---
 title: "业务概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-introduction-0000002377028317
+original_url: /docs/dev/game-dev/games-binary-optimization-introduction-0000002377028317
 format: md
 ---
 
@@ -17,20 +17,20 @@ format: md
 
   | 步骤 | 操作 | 说明 |
   | --- | --- | --- |
-  | 1 | [准备工作](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-agc-works-0000002342950440) | 为了保证优化工作的顺利开展，您需要提前做好准备工作。 |
-  | 2 | [执行二进制插桩](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-gather-0000002342950452) | 通过接口调用的方式，在未加壳的so文件中插入代码段，以此收集程序运行时的动态信息。 |
-  | 3 | [选择游戏场景](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-select-scene-0000002377148269) | 二进制优化可以针对易造成手机发热、性能要求高的游戏场景进行优化。为了获得更好的优化收益，您需要选择典型的、易卡顿的游戏场景，例如打斗、团战、闯关。 |
-  | 4 | [采集profile数据](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-profile-0000002377028345) | profile数据是二进制优化的输入数据，主要作为优化时判断程序运行热点代码的依据，对二进制优化的影响较大。您可以在游戏运行时使用工具包中的trigger采集profile数据。 |
-  | 5 | [执行二进制优化](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-execution-0000002343110260) | 通过接口调用的方式，对so文件执行二进制优化操作。 |
-  | 6 | [测试及验证收益](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-test-verification-0000002342950456) | + 测试优化后游戏场景的功耗、性能；测试游戏整体的稳定性、安全性、兼容性。 + 使用开源性能工具抓取整个游戏优化前、后的数据指标，量化优化产生的效果，例如[HiSmartPerf-Editor](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/smartperf-tool-editor-0000002081118460)。 |
+  | 1 | [准备工作](/docs/dev/game-dev/games-binary-optimization-agc-works-0000002342950440) | 为了保证优化工作的顺利开展，您需要提前做好准备工作。 |
+  | 2 | [执行二进制插桩](/docs/dev/game-dev/games-binary-optimization-gather-0000002342950452) | 通过接口调用的方式，在未加壳的so文件中插入代码段，以此收集程序运行时的动态信息。 |
+  | 3 | [选择游戏场景](/docs/dev/game-dev/games-binary-optimization-select-scene-0000002377148269) | 二进制优化可以针对易造成手机发热、性能要求高的游戏场景进行优化。为了获得更好的优化收益，您需要选择典型的、易卡顿的游戏场景，例如打斗、团战、闯关。 |
+  | 4 | [采集profile数据](/docs/dev/game-dev/games-binary-optimization-profile-0000002377028345) | profile数据是二进制优化的输入数据，主要作为优化时判断程序运行热点代码的依据，对二进制优化的影响较大。您可以在游戏运行时使用工具包中的trigger采集profile数据。 |
+  | 5 | [执行二进制优化](/docs/dev/game-dev/games-binary-optimization-execution-0000002343110260) | 通过接口调用的方式，对so文件执行二进制优化操作。 |
+  | 6 | [测试及验证收益](/docs/dev/game-dev/games-binary-optimization-test-verification-0000002342950456) | + 测试优化后游戏场景的功耗、性能；测试游戏整体的稳定性、安全性、兼容性。 + 使用开源性能工具抓取整个游戏优化前、后的数据指标，量化优化产生的效果，例如[HiSmartPerf-Editor](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/smartperf-tool-editor-0000002081118460)。 |
 
 * 本次游戏版本较上次版本的改动较小（已进行过首次或大版本变动的优化）
 
   | 步骤 | 操作 | 说明 |
   | --- | --- | --- |
-  | 1 | [准备工作](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-agc-works-0000002342950440) | 为了保证优化工作的顺利开展，您需要提前做好准备工作。 |
-  | 2 | [执行二进制优化](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-execution-0000002343110260) | 使用最近的大版本profile文件，通过接口调用的方式，对so文件执行二进制优化操作。 |
-  | 3 | [测试及验证收益](https://developer.huawei.com/consumer/cn/doc/games-guides/games-binary-optimization-test-verification-0000002342950456) | + 测试优化后游戏场景的功耗、性能；测试游戏整体的稳定性、安全性、兼容性。 + 使用开源性能工具抓取整个游戏优化前、后的数据指标，量化优化产生的效果，例如[HiSmartPerf-Editor](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/smartperf-tool-editor-0000002081118460)。 |
+  | 1 | [准备工作](/docs/dev/game-dev/games-binary-optimization-agc-works-0000002342950440) | 为了保证优化工作的顺利开展，您需要提前做好准备工作。 |
+  | 2 | [执行二进制优化](/docs/dev/game-dev/games-binary-optimization-execution-0000002343110260) | 使用最近的大版本profile文件，通过接口调用的方式，对so文件执行二进制优化操作。 |
+  | 3 | [测试及验证收益](/docs/dev/game-dev/games-binary-optimization-test-verification-0000002342950456) | + 测试优化后游戏场景的功耗、性能；测试游戏整体的稳定性、安全性、兼容性。 + 使用开源性能工具抓取整个游戏优化前、后的数据指标，量化优化产生的效果，例如[HiSmartPerf-Editor](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/smartperf-tool-editor-0000002081118460)。 |
 
 ## 相关概念
 

@@ -1,6 +1,6 @@
 ---
 title: "使用Web组件保存前端页面为PDF"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-createpdf
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-createpdf
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ## 需要权限
 
-若涉及网络文档获取，需在module.json5中配置网络访问权限。具体添加方法请参考[在配置文件中声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions#在配置文件中声明权限)。
+若涉及网络文档获取，需在module.json5中配置网络访问权限。具体添加方法请参考[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。
 
 ```
 "requestPermissions": [

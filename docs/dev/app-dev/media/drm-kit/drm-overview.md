@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "DRM Kit 简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/drm-overview
+original_url: /docs/dev/app-dev/media/drm-kit/drm-overview
 format: md
 ---
 

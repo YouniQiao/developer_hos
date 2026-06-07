@@ -1,6 +1,6 @@
 ---
 title: "textarea"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-textarea
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-textarea
 format: md
 ---
 

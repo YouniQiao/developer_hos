@@ -1,6 +1,6 @@
 ---
 title: "状态变量改变不触发组件刷新问题常用定位方法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/troubleshooting-state-manage
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq/troubleshooting-state-manage
 format: md
 ---
 
@@ -17,7 +17,7 @@ format: md
 * 收集依赖：收集状态变量关联组件ID。
 * 触发更新：标记需要更新的节点，触发需要更新的节点的更新。
 
-这部分的原理在本篇文档中仅做简要说明，详情见[状态管理原理介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-introduce)。基于上面的状态变量触发UI刷新的流程，在定位不刷新问题时，可以分为以下五步来定位。
+这部分的原理在本篇文档中仅做简要说明，详情见[状态管理原理介绍](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-introduce)。基于上面的状态变量触发UI刷新的流程，在定位不刷新问题时，可以分为以下五步来定位。
 
 ### 第一步：状态变量收集依赖
 
@@ -25,8 +25,8 @@ format: md
 
 检查状态变量是否收集到组件的ID可通过以下工具：
 
-* 使用DevEco Studio的ArkUI Inspector。具体使用方法见[状态管理Inspector调试能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler#状态管理inspector调试能力)。
-* 使用[hidumper](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hidumper)工具。具体使用方法见[状态管理hidumper能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler#状态管理hidumper能力)。
+* 使用DevEco Studio的ArkUI Inspector。具体使用方法见[状态管理Inspector调试能力](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-inspector-profiler#状态管理inspector调试能力)。
+* 使用[hidumper](/docs/dev/app-dev/system/hidumper)工具。具体使用方法见[状态管理hidumper能力](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-inspector-profiler#状态管理hidumper能力)。
 
 ### 第二步：状态变量发生改变
 
@@ -63,13 +63,13 @@ message set after Welcome
 
 **状态管理V1**
 
-在状态管理V1中，若开发者确认赋值前后值已发生变化却未能触发UI刷新，应检查当前赋值操作是否可被观察（从API version 23开始，开发者可以使用[canBeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-canbeobserved)接口来判断对象是否可被观察）。示例如下。
+在状态管理V1中，若开发者确认赋值前后值已发生变化却未能触发UI刷新，应检查当前赋值操作是否可被观察（从API version 23开始，开发者可以使用[canBeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-canbeobserved)接口来判断对象是否可被观察）。示例如下。
 
 在下面的示例中，开发者对this.inner.value的赋值无法触发Text(`Child: inner value: ${this.inner.value}`)组件的刷新，在遇到这个问题时，应该从以下方面排查当前赋值操作是否是可被观察。
 
-* [@Watch](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-watch)的监听函数是否执行。
-* 如果状态变量为复杂类型且需要观察其属性的赋值变化，开发者还可以通过[getTarget](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-gettarget)来判断当前变量是否可观察。
-* 使用DevEco Studio的Profiler工具观察此次赋值是否有状态变量变化的上报，具体使用方法见[状态管理profiler调优能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler#状态管理profiler调优能力)。
+* [@Watch](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch)的监听函数是否执行。
+* 如果状态变量为复杂类型且需要观察其属性的赋值变化，开发者还可以通过[getTarget](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-gettarget)来判断当前变量是否可观察。
+* 使用DevEco Studio的Profiler工具观察此次赋值是否有状态变量变化的上报，具体使用方法见[状态管理profiler调优能力](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-inspector-profiler#状态管理profiler调优能力)。
 
 ```
 import { UIUtils } from '@kit.ArkUI';
@@ -127,7 +127,7 @@ struct Child {
 }
 ```
 
-在上面的示例中，Inner没有被[@Observed](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-observed-and-objectlink)装饰，所以其属性value的赋值无法被观察：
+在上面的示例中，Inner没有被[@Observed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)装饰，所以其属性value的赋值无法被观察：
 
 * @Watch('onChange')函数没有执行。
 * 日志提示inner is not observed object。
@@ -135,7 +135,7 @@ struct Child {
 
   ![](./img/973b30bf.png)
 
-需要注意，并非所有的类对象都需要被@Observed装饰。[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)装饰器会默认对复杂对象包装第一层代理，而对嵌套对象，则需要在内层对象的类声明上增加@Observed装饰。
+需要注意，并非所有的类对象都需要被@Observed装饰。[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)装饰器会默认对复杂对象包装第一层代理，而对嵌套对象，则需要在内层对象的类声明上增加@Observed装饰。
 
 正确示例：
 
@@ -206,8 +206,8 @@ struct Child {
 
   与状态管理V1不同，在状态管理V2观察普通类时，框架不会为其实例创建代理对象，因此无法通过getTarget来判断其是否为代理对象。开发者可以通过以下方式判断：
 
-  + 通过检查要观察的属性是否是[@Trace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-observedv2-and-trace)装饰。
-  + 观察ArkUI State泳道是否有状态变量变化信息上报，具体使用方法见[状态管理profiler调优能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler#状态管理profiler调优能力)。
+  + 通过检查要观察的属性是否是[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)装饰。
+  + 观察ArkUI State泳道是否有状态变量变化信息上报，具体使用方法见[状态管理profiler调优能力](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-inspector-profiler#状态管理profiler调优能力)。
 * 内置类型（Built-in Types）：
 
   在状态管理V2中，Array、Map、Set会包装代理对象，开发者可以通过调用getTarget来判断当前类型是否为代理数据。
@@ -269,14 +269,14 @@ struct Index {
 
 状态管理V1存在下面两类同步方式：
 
-* 同步对象(sync peer)：如@State和[@Link](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-link)、[@Provide](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)和[@Consume](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-provide-and-consume)。开发者可以通过DevEco Studio的ArkUI Inspector来查看数据源和同步对象之间是否存在同步关系，具体见[状态管理Inspector调试能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-inspector-profiler#状态管理inspector调试能力)。
+* 同步对象(sync peer)：如@State和[@Link](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-link)、[@Provide](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)和[@Consume](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-provide-and-consume)。开发者可以通过DevEco Studio的ArkUI Inspector来查看数据源和同步对象之间是否存在同步关系，具体见[状态管理Inspector调试能力](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-inspector-profiler#状态管理inspector调试能力)。
 * 依赖其所属组件的更新函数：如@State通知@Prop变化、@State通知@ObjectLink变化。开发者可以使用断点调试工具，或者[getHash接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#utilgethash12)来判断数据源和同步对象是否为同一个对象的引用(hashcode并不固定，以开发者自己打印的为准)。
 
 **状态管理V2**
 
-状态管理V2没有同步对象(sync peer)的概念。[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)和[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)的同步方式是依赖@Param组件所属组件的更新函数。
+状态管理V2没有同步对象(sync peer)的概念。[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)和[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)的同步方式是依赖@Param组件所属组件的更新函数。
 
-这类问题中，常见的场景是和[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach)和[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-lazyforeach)联用导致数据源和其同步对象断链。如以下示例。
+这类问题中，常见的场景是和[ForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)和[LazyForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach)联用导致数据源和其同步对象断链。如以下示例。
 
 ```
 import { UIUtils } from '@kit.ArkUI';

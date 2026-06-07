@@ -1,7 +1,7 @@
 ---
 title: "ohpm-repo export_pkgPermission"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-repo-export-pkgpermission
+original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-export-pkgpermission
 ---
 
 

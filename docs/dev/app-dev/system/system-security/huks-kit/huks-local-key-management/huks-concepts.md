@@ -1,6 +1,6 @@
 ---
 title: "本地密钥管理基础概念"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-concepts
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-concepts
 format: md
 ---
 

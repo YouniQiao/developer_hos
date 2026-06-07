@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "显示地图"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-presenting
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-presenting
 format: md
 ---
 
@@ -104,7 +104,7 @@ format: md
    ```
 3. 运行您刚完成的工程就可以在您的APP中看到地图了，运行后的效果如下图所示。
 
-   如果没有成功加载地图，请参见[地图不显示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-faq-1)。
+   如果没有成功加载地图，请参见[地图不显示](/docs/dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-1)。
 
    ![](./img/1fcd0a90.jpg "点击放大")
 
@@ -136,12 +136,12 @@ format: md
 | indoorMapEnabled | 是否开启室内图，默认值：false。 |
 | scaleUnit | 地图比例尺公英制单位，默认值：[ScaleUnit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#scaleunit).METRIC\_UNIT（公制单位）。 |
 
-1. 设置mapType，[切换地图类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-type)章节中有详细讲解。
+1. 设置mapType，[切换地图类型](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-type)章节中有详细讲解。
 2. 设置myLocationControlsEnabled，展示我的位置按钮。
 
    在mapOptions中设置myLocationControlsEnabled属性为true，可展示我的位置按钮![](./img/800af5b6.png)，显示效果如下图所示。
 
-   也可通过调用[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)对象的方法展示我的位置按钮，详情见[显示我的位置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location)章节。
+   也可通过调用[MapComponentController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapcomponentcontroller)对象的方法展示我的位置按钮，详情见[显示我的位置](/docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-location)章节。
 
    ```
    this.mapOptions = {

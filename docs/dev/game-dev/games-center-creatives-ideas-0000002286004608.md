@@ -1,6 +1,6 @@
 ---
 title: "魔方创意"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-center-creatives-ideas-0000002286004608
+original_url: /docs/dev/game-dev/games-center-creatives-ideas-0000002286004608
 format: md
 ---
 

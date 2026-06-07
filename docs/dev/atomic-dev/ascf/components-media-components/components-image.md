@@ -1,6 +1,6 @@
 ---
 title: "image"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-image
+original_url: /docs/dev/atomic-dev/ascf/components-media-components/components-image
 format: md
 ---
 

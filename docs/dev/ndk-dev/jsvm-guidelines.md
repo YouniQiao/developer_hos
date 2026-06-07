@@ -1,6 +1,6 @@
 ---
 title: "JSVM-API使用规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-guidelines
+original_url: /docs/dev/ndk-dev/jsvm-guidelines
 format: md
 ---
 

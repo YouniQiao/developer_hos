@@ -1,6 +1,6 @@
 ---
 title: "单层图标处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-normal-process
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-icon-process/ui-design-normal-process
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 从5.0.0(12)版本开始， Hds支持单层图标处理能力。
 
-适用于图标为单层资源，且图标展示风格要与华为HarmonyOS Design System设计风格一致的应用场景，典型应用场景可参考分层图标[场景介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-layered-process#场景介绍)。
+适用于图标为单层资源，且图标展示风格要与华为HarmonyOS Design System设计风格一致的应用场景，典型应用场景可参考分层图标[场景介绍](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-icon-process/ui-design-layered-process#场景介绍)。
 
 ## 约束条件
 

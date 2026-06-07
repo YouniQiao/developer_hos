@@ -1,7 +1,7 @@
 ---
 title: "对接激励场景解决方案"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_connect-incentive-scenario-0000001599894408
+original_url: /docs/monetize/monetization/agd_pro_api_connect-incentive-scenario-0000001599894408
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 #### 修改展示位开启激励发放
 
-登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，修改展示位配置，开启激励发放功能，具体请参见[开启激励发放](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_creat-media-display-position-0000001246432546#ZH-CN_TOPIC_0000001246432546__li13789310300)。
+登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，修改展示位配置，开启激励发放功能，具体请参见[开启激励发放](/docs/monetize/monetization/agd_pro_api_creat-media-display-position-0000001246432546#ZH-CN_TOPIC_0000001246432546__li13789310300)。
 
 #### 重新请求广告并下载
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Beacon（蓝牙信标设备）方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-beacon-scheme
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-local-rec/intents-local-rec-dp-self-validation/intents-beacon-scheme
 format: md
 ---
 

@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "音频焦点和音频会话管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session
+original_url: /docs/dev/app-dev/media/audio-kit/audio-session
 format: md
 ---
 
 
-* **[音频焦点介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency)**
-* **[音频会话管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-session-management)**
-* **[使用OHAudio开发音频会话功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-session)**
+* **[音频焦点介绍](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency)**
+* **[音频会话管理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management)**
+* **[使用OHAudio开发音频会话功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-session/using-ohaudio-for-session)**

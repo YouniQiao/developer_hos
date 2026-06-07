@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Text组件设置maxLines后如何确定文本是否被隐藏"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-156
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-156
 ---
 
 

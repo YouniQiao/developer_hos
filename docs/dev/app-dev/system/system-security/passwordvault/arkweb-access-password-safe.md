@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "网页接入密码保险箱"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-access-password-safe
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/arkweb-access-password-safe
 format: md
 ---
 

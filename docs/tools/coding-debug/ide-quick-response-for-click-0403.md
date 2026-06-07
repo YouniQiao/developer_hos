@@ -1,7 +1,7 @@
 ---
 title: "点击操作响应快"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-quick-response-for-click-0403
+original_url: /docs/tools/coding-debug/ide-quick-response-for-click-0403
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "使用Web组件的手势与应用交互"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-gesture
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-gesture
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## ArkWeb手势识别
 
-ArkWeb接收ArkUI的[触摸事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-touch-screen#触摸事件)，并识别出手势（触摸事件的分发策略详见[交互基础机制说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles)）。ArkWeb手势符合W3C标准：Touch Events、UI Events、Pointer Events。
+ArkWeb接收ArkUI的[触摸事件](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-touch-screen#触摸事件)，并识别出手势（触摸事件的分发策略详见[交互基础机制说明](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-interaction-basic-principles)）。ArkWeb手势符合W3C标准：Touch Events、UI Events、Pointer Events。
 
 常见事件识别说明：
 
@@ -28,7 +28,7 @@ ArkWeb接收ArkUI的[触摸事件](https://developer.huawei.com/consumer/cn/doc/
 
 ## ArkWeb手势与ArkUI手势
 
-ArkUI提供了[手势绑定](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-binding)，Web组件有独立的手势识别，因此需要区分两种手势：
+ArkUI提供了[手势绑定](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-binding)，Web组件有独立的手势识别，因此需要区分两种手势：
 
 * ArkWeb手势：Web组件接收触摸事件自动生成的手势，这些手势作用于网页上。
 * ArkUI手势：Web组件作为通用组件会接收ArkUI手势，ArkUI手势并不直接作用于网页，而作用于Web组件上。
@@ -36,7 +36,7 @@ ArkUI提供了[手势绑定](https://developer.huawei.com/consumer/cn/doc/harmon
 以缩放为例说明两种手势的区别：
 
 * 在Web上使用双指捏合时，Web组件中的内容将会缩放。这是由于ArkWeb识别了Pinch事件并将其作用于网页上。
-* 使用三指捏合，Web组件本身会进行缩放。这是因为ArkWeb接收到ArkUI识别出的[PinchGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-single-gesture#捏合手势pinchgesture)，执行绑定的回调函数。同时，ArkWeb支持scale方法，能够调整Web组件的缩放比例。
+* 使用三指捏合，Web组件本身会进行缩放。这是因为ArkWeb接收到ArkUI识别出的[PinchGesture](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-single-gesture#捏合手势pinchgesture)，执行绑定的回调函数。同时，ArkWeb支持scale方法，能够调整Web组件的缩放比例。
 
 ![](./img/31383881.png)
 
@@ -91,19 +91,19 @@ struct Index {
 
 * ArkUI手势
 
-  ArkWeb会消费部分ArkUI手势，例如[滑动手势](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-single-gesture#滑动手势pangesture)，若希望自行处理这些手势而非由ArkWeb消费，可以参考ArkUI的[手势冲突处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-gesture-judge)，具体示例也可以参考[示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-customize-judge#示例)。
+  ArkWeb会消费部分ArkUI手势，例如[滑动手势](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-single-gesture#滑动手势pangesture)，若希望自行处理这些手势而非由ArkWeb消费，可以参考ArkUI的[手势冲突处理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-gesture-judge)，具体示例也可以参考[示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-customize-judge#示例)。
 * ArkWeb手势
 
   ArkWeb手势的生成需要Web组件接收触摸事件，有两种拦截方案：
 
-  1. 完全禁止触摸事件发送给Web组件，详见[触摸测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#触摸测试)。
+  1. 完全禁止触摸事件发送给Web组件，详见[触摸测试](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-interaction-basic-principles#触摸测试)。
   2. 发送TouchCancel触摸事件给Web组件，CAPI接口介绍详见[OH\_ArkUI\_TouchRecognizer\_CancelTouch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-gesture-h#函数)，具体示例请参考[NdkGestureSetting](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NdkGestureSetting)。
 
 ## 常见问题
 
 ### 如何禁用缩放手势
 
-Web组件提供了接口[zoomAccess](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#zoomaccess)，控制是否可以缩放。网页上有user-scalable属性也会影响缩放。详见[使用Web组件管理网页缩放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-scale-zoom)。
+Web组件提供了接口[zoomAccess](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#zoomaccess)，控制是否可以缩放。网页上有user-scalable属性也会影响缩放。详见[使用Web组件管理网页缩放](/docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-scale-zoom)。
 
 ### Web组件中如何通过手势滑动返回上一个Web页面
 

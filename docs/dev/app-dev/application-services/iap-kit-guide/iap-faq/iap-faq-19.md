@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "purchaseToken和purchaseOrderId这两个参数的最大长度是多少？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-19
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-19
 format: md
 ---
 

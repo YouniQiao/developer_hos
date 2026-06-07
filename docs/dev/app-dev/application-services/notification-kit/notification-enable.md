@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "请求通知授权"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-enable
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-enable
 format: md
 ---
 

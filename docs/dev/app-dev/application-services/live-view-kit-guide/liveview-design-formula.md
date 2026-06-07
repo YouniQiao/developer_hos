@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "实况窗设计规范"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-design-formula
+original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-design-formula
 format: md
 ---
 
 
-应用发送的实况窗需遵循实况窗设计规范，不符合设计规范的方案将不被予以开通正式权限。同时若应用实况窗上线后出现违反实况窗设计规范的行为，将被视为[违规](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/liveview-introduction#违规处罚)。
+应用发送的实况窗需遵循实况窗设计规范，不符合设计规范的方案将不被予以开通正式权限。同时若应用实况窗上线后出现违反实况窗设计规范的行为，将被视为[违规](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-introduction#违规处罚)。
 
 ![](./img/30a02d11.png)
 
@@ -18,16 +18,16 @@ format: md
 
 ## 设计原则
 
-实况窗旨在为用户提供最精简、最便捷、最清晰的通知内容、交互以及视觉效果，其设计需遵循[实况窗设计原则](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861#section1181711415233)。
+实况窗旨在为用户提供最精简、最便捷、最清晰的通知内容、交互以及视觉效果，其设计需遵循[实况窗设计原则](/docs/design/system-features/features/live-view#section1181711415233)。
 
 ## 模板规范
 
 实况窗支持卡片态和胶囊态通知形式，显示更可视化、更精简的内容，方便用户聚焦重要信息。应用在设计实况窗卡片态和胶囊态时，需满足以下规范（推荐使用规范中场景指定的模板，若推荐方式不满足开发者的业务需要，可结合具体业务，采用更加合适的模板）。
 
-* [卡片模板](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861#section1598402815257)
-* [胶囊模板](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861#section198971755122812)
-* [锁屏模板](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861#section168294023217)
-* [文本超长显示规则](https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-live-view-0000001955186861#section938445193413)
+* [卡片模板](/docs/design/system-features/features/live-view#section1598402815257)
+* [胶囊模板](/docs/design/system-features/features/live-view#section198971755122812)
+* [锁屏模板](/docs/design/system-features/features/live-view#section168294023217)
+* [文本超长显示规则](/docs/design/system-features/features/live-view#section938445193413)
 
 ## 场景节点设计要求
 

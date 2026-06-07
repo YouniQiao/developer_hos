@@ -1,6 +1,6 @@
 ---
 title: "wukong稳定性工具使用指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wukong-guidelines
+original_url: /docs/dev/testing/test-service/wukong-guidelines
 format: md
 ---
 
@@ -31,7 +31,7 @@ wukong部件架构图以及部件内子模块职责如下所述。
 ## 约束与限制
 
 1. wukong测试工具在API 9版本开始预置使用。
-2. 所有命令执行前需完成[hdc环境配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)，并进入shell模式。
+2. 所有命令执行前需完成[hdc环境配置](/docs/dev/app-dev/system/hdc)，并进入shell模式。
 
 ## 功能特性及命令说明
 

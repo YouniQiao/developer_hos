@@ -1,7 +1,7 @@
 ---
 title: 光标交互
 sidebar_label: 光标交互
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-cursor-0000001795531205
+original_url: /docs/design/hmi/cursor
 format: md
 ---
 

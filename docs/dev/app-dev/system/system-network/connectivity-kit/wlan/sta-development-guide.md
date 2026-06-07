@@ -1,6 +1,6 @@
 ---
 title: "STA模式开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sta-development-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/wlan/sta-development-guide
 format: md
 ---
 

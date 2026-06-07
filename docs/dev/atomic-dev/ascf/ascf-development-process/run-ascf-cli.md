@@ -1,6 +1,6 @@
 ---
 title: "使用ASCF命令行工具"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/run-ascf-cli
+original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/run-ascf-cli
 format: md
 ---
 
@@ -29,7 +29,7 @@ ascf -h
 ascf convert -h
 ```
 
-通过“-i”填入小程序的文件目录，以及通过“-o”填入转换后的文件输出目录。转换后请参考[开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/ascf-development-guide#适配平台功能和要求)适配平台相关功能和规范要求。
+通过“-i”填入小程序的文件目录，以及通过“-o”填入转换后的文件输出目录。转换后请参考[开发指南](/docs/dev/atomic-dev/ascf/ascf-development-guide/ascf-development-guide#适配平台功能和要求)适配平台相关功能和规范要求。
 
 ```
 ascf convert -i .\path\to\miniprogram -o .path\to\atomicservice-project

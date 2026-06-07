@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Health Service Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-service-kit-ability
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-service-kit-ability
 format: md
 ---
 

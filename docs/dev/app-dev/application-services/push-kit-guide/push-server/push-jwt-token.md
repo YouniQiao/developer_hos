@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "基于服务账号生成鉴权令牌"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-jwt-token
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-server/push-jwt-token
 format: md
 ---
 

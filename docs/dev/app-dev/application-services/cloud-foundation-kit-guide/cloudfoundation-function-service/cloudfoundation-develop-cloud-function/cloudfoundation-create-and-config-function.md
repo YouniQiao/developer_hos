@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "创建函数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-create-and-config-function
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-create-and-config-function
 format: md
 ---
 
@@ -76,8 +76,8 @@ format: md
 | --- | --- |
 | 运行环境 | 函数容器的运行环境。请选择nodejs 20.x/latest，其中latest表示使用最新版本。 |
 | 内存配置 | 函数容器所占有的内存大小，单位为MB，取值范围：500，1000，2000，4000。 |
-| 代码输入类型 | 包括“在线编辑”与“\*.zip文件”两种方式，默认值为“在线编辑”。  选择“\*.zip文件”方式部署云函数时，入口方法文件的编写方法请参见[入口方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-develop-function-nodejs#入口方法)。 |
-| 函数入口 | 包括入口文件名称和入口方法名称，通过“.”连接。例如handler.myHandler，其中handler为入口文件名称，myHandler为入口方法名称。  nodejs运行环境下入口文件必须放置在函数部署包的根目录下，具体请参见[准备函数部署包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-develop-function-nodejs#准备函数部署包)。 |
+| 代码输入类型 | 包括“在线编辑”与“\*.zip文件”两种方式，默认值为“在线编辑”。  选择“\*.zip文件”方式部署云函数时，入口方法文件的编写方法请参见[入口方法](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-develop-function/cloudfoundation-develop-function-nodejs#入口方法)。 |
+| 函数入口 | 包括入口文件名称和入口方法名称，通过“.”连接。例如handler.myHandler，其中handler为入口文件名称，myHandler为入口方法名称。  nodejs运行环境下入口文件必须放置在函数部署包的根目录下，具体请参见[准备函数部署包](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-develop-function/cloudfoundation-develop-function-nodejs#准备函数部署包)。 |
 | 代码文件 | 用于在线编辑函数代码或上传函数部署包。  - “代码输入类型”配置项选择“在线编辑”时，可在创建函数界面集成的WebIDE区域在线编辑函数代码。WebIDE的详细使用方法见下文。  - “代码输入类型”配置项选择“\*.zip文件”时，点击![](./img/532b8551.png)即可上传函数部署包，也可直接拖曳zip文件至虚线框内。 |
 
 **WebIDE**

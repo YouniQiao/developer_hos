@@ -1,6 +1,6 @@
 ---
 title: "hilog"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog
+original_url: /docs/dev/app-dev/system/hilog
 format: md
 ---
 
@@ -9,7 +9,7 @@ HiLog日志系统，提供给系统框架、服务、以及应用，用于打印
 
 ## 环境要求
 
-* 根据hdc命令行工具指导，完成[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)。
+* 根据hdc命令行工具指导，完成[环境准备](/docs/dev/app-dev/system/hdc#环境准备)。
 * 确保设备已正常连接，并执行hdc shell。
 
 ## hilog概述
@@ -29,7 +29,7 @@ HiLog日志系统，提供给系统框架、服务、以及应用，用于打印
 
 * [log版本](#查看log版本信息)：hilog日志默认开启落盘，不同产品之间落盘数量可能存在差异，具体可以使用[查看和设置落盘任务](#查看和设置落盘任务)命令进行查询。
 * [nolog版本](#查看log版本信息)：hilog日志默认不落盘，需要手动开启落盘，参考[查看和设置落盘任务](#查看和设置落盘任务)；设备打开开发者模式后自动开启落盘。
-* 日志保存位置：设备data/log/hilog目录下，可以导出日志进行查看。导出及解析工具参考：[hilogtool](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool)。
+* 日志保存位置：设备data/log/hilog目录下，可以导出日志进行查看。导出及解析工具参考：[hilogtool](/docs/dev/app-dev/system/hilog-tool)。
 
 ### hilog日志格式说明
 

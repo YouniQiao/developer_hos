@@ -1,6 +1,6 @@
 ---
 title: "Connectivity Kit术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/terminology
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/terminology
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "广播开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-bluetooth-advertising
+original_url: /docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-advertising
 format: md
 ---
 

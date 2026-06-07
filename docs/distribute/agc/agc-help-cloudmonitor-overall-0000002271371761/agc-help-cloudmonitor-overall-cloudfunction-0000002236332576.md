@@ -1,6 +1,6 @@
 ---
 title: "云函数"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-cloudmonitor-overall-cloudfunction-0000002236332576
+original_url: /docs/distribute/agc/agc-help-cloudmonitor-overall-0000002271371761/agc-help-cloudmonitor-overall-cloudfunction-0000002236332576
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 #### 前提条件
 
-您已[创建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-create-and-config-function)。
+您已[创建函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-create-and-config-function)。
 
 #### 查看函数
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "测试任务执行时，避免PC进入睡眠状态，如何设置"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-deveco-testing-faq-3
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-3
 ---
 
 

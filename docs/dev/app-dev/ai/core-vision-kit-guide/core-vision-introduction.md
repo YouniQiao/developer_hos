@@ -1,25 +1,25 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Core Vision Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction
+original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-introduction
 format: md
 ---
 
 
 Core Vision Kit（基础视觉服务）提供了机器视觉相关的基础能力，例如通用文字识别（即OCR，Optical Character Recognition，也称为光学字符识别）、人脸检测、人脸比对以及主体分割等能力。
 
-开发者可以结合[Vision Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vision-introduction)的UI控件能力（例如：人脸活体检测），提升应用的智能化、便捷化交互体验。
+开发者可以结合[Vision Kit](/docs/dev/app-dev/ai/vision-kit-guide/vision-introduction)的UI控件能力（例如：人脸活体检测），提升应用的智能化、便捷化交互体验。
 
 ## 场景介绍
 
 Core Vision Kit可应用于各种场景，提升用户体验和应用效率。以下是一些典型的应用场景：
 
-* [通用文字识别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-text-recognition)：可用于扫描和识别文档、名片、票据等印刷品中的文字内容，方便用户快速录入和存储信息。
-* [人脸检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-face-detector)：应用于相册管理、照片美化等功能中，也可以用于自动检测和定位照片中的人脸。
-* [人脸比对](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-face-comparator)：常用于人脸认证、考勤打卡、门禁系统等需要验证用户身份的场景。
-* [主体分割](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-subject-segmentation)：可以检测出图片中区别于背景的前景物体或区域（即“显著主体”），并将其从背景中分离出来，适用于需要识别和提取图像主要信息的场景，广泛运用于前景目标检测和前景主体分离的场景。
-* [多目标识别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-object-detection)：帮助开发者从图片中识别常见的目标对象（动物、植物、建筑物、人、人脸、文本、表格等）并给出位置信息。通常用于端到端业务场景的前置检测功能，根据检测结果完成后续功能业务的入口提示，比如视觉搜索，文本检测。
-* [骨骼点检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-skeleton-detection)：人体骨骼关键点检测，主要检测人体的一些关键点，通过关键点描述人体骨骼信息。具体应用主要集中在智能视频监控，病人监护系统，人机交互，虚拟现实，人体动画，智能家居，智能安防，运动员辅助训练等等。
+* [通用文字识别](/docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-text-recognition)：可用于扫描和识别文档、名片、票据等印刷品中的文字内容，方便用户快速录入和存储信息。
+* [人脸检测](/docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-face-detector)：应用于相册管理、照片美化等功能中，也可以用于自动检测和定位照片中的人脸。
+* [人脸比对](/docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-face-comparator)：常用于人脸认证、考勤打卡、门禁系统等需要验证用户身份的场景。
+* [主体分割](/docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-subject-segmentation)：可以检测出图片中区别于背景的前景物体或区域（即“显著主体”），并将其从背景中分离出来，适用于需要识别和提取图像主要信息的场景，广泛运用于前景目标检测和前景主体分离的场景。
+* [多目标识别](/docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-object-detection)：帮助开发者从图片中识别常见的目标对象（动物、植物、建筑物、人、人脸、文本、表格等）并给出位置信息。通常用于端到端业务场景的前置检测功能，根据检测结果完成后续功能业务的入口提示，比如视觉搜索，文本检测。
+* [骨骼点检测](/docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-skeleton-detection)：人体骨骼关键点检测，主要检测人体的一些关键点，通过关键点描述人体骨骼信息。具体应用主要集中在智能视频监控，病人监护系统，人机交互，虚拟现实，人体动画，智能家居，智能安防，运动员辅助训练等等。
 
 ## 约束与限制
 

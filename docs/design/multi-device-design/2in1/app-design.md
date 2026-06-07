@@ -1,7 +1,7 @@
 ---
 title: 应用设计
 sidebar_label: 应用设计
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/app-design-0000002353509845
+original_url: /docs/design/multi-device-design/2in1/app-design
 format: md
 ---
 
@@ -74,13 +74,13 @@ format: md
 
 * 应用使用侧边导航栏时，可提供抽屉按钮，方便用户进行收起和展开，提供用户更灵活的任务操作区域。
 * 为了清晰指引窗口收起后的界面层级，可在收起的 B 栏呈现标题栏，其内容与 A 栏中所属列表的名称保持一致。
-* 应用也可直接拖拽分栏边缘，对布局进行切换，请参阅“[断点系统](https://developer.huawei.com/consumer/cn/doc/design-guides/design-layout-basics-0000001795579413#section525952492)”。
+* 应用也可直接拖拽分栏边缘，对布局进行切换，请参阅“[断点系统](/docs/design/general-design-basics/layout/layout-basics#section525952492)”。
 
 [](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/publicContent/011/111/111/0000000000011111111.20250701110431.95505127470542377249721169830189:20260530175004:2800:1219ECFF160E9A6695D7A6A94A17073592C2B425FD61C6836A9EC236873A9161.mp4)
 
 ### 使用多态控件
 
-电脑控件与手机控件为同一个控件，是对手机控件的继承和新增，针对键鼠与触控场景进行补充与改造，以满足多设备需求。例如，在电脑上，可考虑利用光标悬停态增加控件说明。具体控件使用，请参阅“[控件](https://developer.huawei.com/consumer/cn/doc/design-guides/general_overview-0000001929599380)”章节里对电脑控件的差异化介绍。
+电脑控件与手机控件为同一个控件，是对手机控件的继承和新增，针对键鼠与触控场景进行补充与改造，以满足多设备需求。例如，在电脑上，可考虑利用光标悬停态增加控件说明。具体控件使用，请参阅“[控件](/docs/design/components/overview)”章节里对电脑控件的差异化介绍。
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250701110431.41257752544890841645619588038677:50001231000000:2800:6B44A598B21BBE92F374E1ED96A5226A7C69371F1BBD07A940CCBEBB71D20CB8.png "点击放大")
 

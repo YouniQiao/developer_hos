@@ -1,7 +1,7 @@
 ---
 title: "接入激励视频广告"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_sdk-motivate-video-0000001347454382
+original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-motivate-video-0000001347454382
 format: md
 ---
 
@@ -92,7 +92,7 @@ adsContext.loadRewardVideoAd(adSlot, new RewardLoadListener() {
 });
 ```
 
-加载失败错误码，具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_errcode-0000001354582769#section198514419559)。
+加载失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section198514419559)。
 
 #### 配置相关事件监听
 
@@ -142,7 +142,7 @@ adsContext.loadRewardVideoAd(adSlot, new RewardLoadListener() {
    });
    ```
 
-   展示失败错误码，具体请参见[错误码](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk_andriod_errcode-0000001354582769#section43513273549)。
+   展示失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section43513273549)。
 
    **RewardInfo激励信息具体说明如下表所示。**
 

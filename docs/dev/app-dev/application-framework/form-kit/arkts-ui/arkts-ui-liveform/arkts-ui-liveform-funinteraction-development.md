@@ -1,6 +1,6 @@
 ---
 title: "趣味交互类型互动卡片开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-liveform-funinteraction-development
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-funinteraction-development
 format: md
 ---
 
@@ -46,4 +46,4 @@ format: md
 
 游戏内容具体开发可参考[互动卡片小游戏开发指导](https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickgame-interact-card-dev-0000002045919412)。
 
-端侧卡片配置开发可参考[趣味交互类型互动卡片配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#funinteractionparams标签)。
+端侧卡片配置开发可参考[趣味交互类型互动卡片配置](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#funinteractionparams标签)。

@@ -1,6 +1,6 @@
 ---
 title: "设置应用内主题换肤"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/theme_skinning
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-theme/theme_skinning
 format: md
 ---
 

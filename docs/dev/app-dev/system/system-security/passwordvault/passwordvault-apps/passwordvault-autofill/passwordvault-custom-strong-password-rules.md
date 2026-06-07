@@ -1,6 +1,6 @@
 ---
 title: "为应用添加自动生成高强度密码的建议"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-custom-strong-password-rules
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-custom-strong-password-rules
 format: md
 ---
 

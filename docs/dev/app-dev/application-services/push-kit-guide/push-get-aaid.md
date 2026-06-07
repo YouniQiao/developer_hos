@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取AAID"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-aaid
+original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-get-aaid
 format: md
 ---
 

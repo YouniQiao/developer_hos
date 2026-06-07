@@ -1,6 +1,6 @@
 ---
 title: "App"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/logical-layer-app
+original_url: /docs/dev/atomic-dev/ascf/logical-layer/logical-layer-app
 format: md
 ---
 

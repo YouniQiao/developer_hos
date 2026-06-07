@@ -1,6 +1,6 @@
 ---
 title: "图片编码"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-encoding
+original_url: /docs/dev/atomic-dev/atomic-image-development/atomic-image-encoding
 format: md
 ---
 

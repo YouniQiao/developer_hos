@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-overview-0000002358873576
+original_url: /docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-overview-0000002358873576
 format: md
 ---
 
@@ -13,9 +13,9 @@ format: md
 
 | 游戏大事件类型 | 简介 | 操作指南 |
 | --- | --- | --- |
-| 大版本更新 | 已上架游戏的重要更新版本，如上线新玩法、新地图等。 | [大版本更新操作指导](https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-version-update-0000002392515473#ZH-CN_TOPIC_0000002392515473) |
-| 首发 | 游戏首次面向用户公开正式运营。 | [首发操作指导](https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-first-applyfor-0000002358875580#ZH-CN_TOPIC_0000002358875580) |
-| 首曝 | 游戏首次向玩家发布PV、实机视频等内容。 | [首曝操作指导](https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-first-exposure-0000002392555597#ZH-CN_TOPIC_0000002392555597) |
-| 定档 | 游戏确定正式上线档期。 | [定档操作指导](https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-scheduling-0000002359035472#ZH-CN_TOPIC_0000002359035472) |
-| 特别活动 | 游戏内的亮点活动。 | [特别活动操作指导](https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-special-events-0000002392515481#ZH-CN_TOPIC_0000002392515481) |
-| 测试 | 游戏在华为平台开启测试。 | [测试操作指导](https://developer.huawei.com/consumer/cn/doc/app/agc-help-big-event-special-test-0000002358875584#ZH-CN_TOPIC_0000002358875584) |
+| 大版本更新 | 已上架游戏的重要更新版本，如上线新玩法、新地图等。 | [大版本更新操作指导](/docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-version-update-0000002392515473#ZH-CN_TOPIC_0000002392515473) |
+| 首发 | 游戏首次面向用户公开正式运营。 | [首发操作指导](/docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-first-applyfor-0000002358875580#ZH-CN_TOPIC_0000002358875580) |
+| 首曝 | 游戏首次向玩家发布PV、实机视频等内容。 | [首曝操作指导](/docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-first-exposure-0000002392555597#ZH-CN_TOPIC_0000002392555597) |
+| 定档 | 游戏确定正式上线档期。 | [定档操作指导](/docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-scheduling-0000002359035472#ZH-CN_TOPIC_0000002359035472) |
+| 特别活动 | 游戏内的亮点活动。 | [特别活动操作指导](/docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-special-events-0000002392515481#ZH-CN_TOPIC_0000002392515481) |
+| 测试 | 游戏在华为平台开启测试。 | [测试操作指导](/docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-special-test-0000002358875584#ZH-CN_TOPIC_0000002358875584) |

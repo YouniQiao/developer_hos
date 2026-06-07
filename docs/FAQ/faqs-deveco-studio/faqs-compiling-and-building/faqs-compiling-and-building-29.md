@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Target AOT编译，AP文件生成失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-29
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-29
 ---
 
 

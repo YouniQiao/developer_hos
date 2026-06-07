@@ -1,7 +1,7 @@
 ---
 format: md
 title: "新建工程/模块无法加载ets目录下的资源"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-191
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-191
 ---
 
 

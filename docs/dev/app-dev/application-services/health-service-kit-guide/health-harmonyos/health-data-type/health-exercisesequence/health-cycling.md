@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "骑行"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-cycling
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-cycling
 format: md
 ---
 

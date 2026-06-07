@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文件预览"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-filepreview
+original_url: /docs/dev/app-dev/application-services/preview-kit-guide/preview-filepreview
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 * 当前Preview Kit仅支持跳出应用进行文件的预览，暂不支持应用内预览。
 * Office类型文档预览借助WPS提供的能力来实现，在预览文档类型文件时会存在“WPS提供技术支持”、“使用WPS Office打开”等相关字样。
 * 当前Preview Kit暂不支持安全定制能力，包括禁止截录屏、屏蔽其他应用打开入口、屏蔽分享入口等安全预览能力。
-* 当前Preview Kit需要调用方存在对应uri的转授权能力，从而让预览获得该文件的访问权限来正常读取文件，具体问题可以参考[Preview Kit常见问题2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/preview-faq-2)。
+* 当前Preview Kit需要调用方存在对应uri的转授权能力，从而让预览获得该文件的访问权限来正常读取文件，具体问题可以参考[Preview Kit常见问题2](/docs/dev/app-dev/application-services/preview-kit-guide/preview-faq/preview-faq-2)。
 
 ## 接口说明
 

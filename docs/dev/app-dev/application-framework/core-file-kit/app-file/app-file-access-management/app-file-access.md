@@ -1,6 +1,6 @@
 ---
 title: "应用文件访问(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-file-access
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access
 format: md
 ---
 
@@ -43,7 +43,7 @@ format: md
 
 ## 开发示例
 
-在对应用文件开始访问前，开发者需要[获取应用文件路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#获取应用文件路径)。以从UIAbilityContext获取HAP级别的文件路径为例进行说明，UIAbilityContext的获取方式请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+在对应用文件开始访问前，开发者需要[获取应用文件路径](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage#获取应用文件路径)。以从UIAbilityContext获取HAP级别的文件路径为例进行说明，UIAbilityContext的获取方式请参见[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
 下面介绍几种常用操作示例。
 

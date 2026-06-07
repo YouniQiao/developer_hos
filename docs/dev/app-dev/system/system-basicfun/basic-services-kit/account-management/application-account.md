@@ -1,8 +1,8 @@
 ---
 title: "应用账号"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-account
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/account-management/application-account
 format: md
 ---
 
 
-* **[管理应用账号](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/manage-application-account)**
+* **[管理应用账号](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/account-management/application-account/manage-application-account)**

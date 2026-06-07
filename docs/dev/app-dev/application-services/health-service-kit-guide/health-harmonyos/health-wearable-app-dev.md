@@ -1,10 +1,10 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Wearable应用开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-app-dev
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-wearable-app-dev
 format: md
 ---
 
 
-* **[管理用户授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-add-permissions)**
-* **[管理运动健康数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-wearable-data-manage)**
+* **[管理用户授权](/docs/dev/app-dev/application-services/health-wearable-add-permissions)**
+* **[管理运动健康数据](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage)**

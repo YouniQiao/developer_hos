@@ -1,6 +1,6 @@
 ---
 title: "自动续期订阅商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-auto-subscription-0000002425144493
+original_url: /docs/distribute/agc/agc-help-create-product-0000002425264341/agc-help-create-auto-subscription-0000002425144493
 format: md
 ---
 
@@ -106,7 +106,7 @@ format: md
    | 排序规则 | 国家/地区的排序规则。  * 按字母A-Z顺序排序 * 按地理区域分组排序 |
    | 置顶国家/地区 | 置顶汇率换算国家/地区，方便您查看或编辑商品价格，可选。  * 当国家/地区按字母A-Z顺序排序时，您可以在下拉选项中选择您要置顶的国家/地区。 * 当国家/地区按地理区域分组排序时，您可以在下拉选项中选择您要置顶的区域。 |
 
-   特殊币种要求国家/地区详见[商品管理国家/地区、语言、币种表](https://developer.huawei.com/consumer/cn/doc/app/agc-help-countries-overview-0000002425262573#ZH-CN_TOPIC_0000002425262573)。
+   特殊币种要求国家/地区详见[商品管理国家/地区、语言、币种表](/docs/distribute/agc/agc-help-products-management-0000002391702238/agc-help-countries-overview-0000002425262573#ZH-CN_TOPIC_0000002425262573)。
 8. 添加审核信息
 
    审核信息包括应用内截图、应用内路径与备注信息，有助于审核人员审核数字商品。此信息仅用于审核，不会在 AppGallery 中显示。

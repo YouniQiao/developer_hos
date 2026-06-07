@@ -1,6 +1,6 @@
 ---
 title: "动态加载"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-dynamic-import
 format: md
 ---
 

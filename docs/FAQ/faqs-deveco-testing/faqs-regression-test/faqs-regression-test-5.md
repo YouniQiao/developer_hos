@@ -1,7 +1,7 @@
 ---
 format: md
 title: "生成回归测试包时报错提示“dist/testsuite文件夹为临时目录，请确保该文件夹为空”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-5
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-5
 ---
 
 

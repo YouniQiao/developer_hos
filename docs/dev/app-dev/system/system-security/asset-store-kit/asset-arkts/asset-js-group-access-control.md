@@ -1,17 +1,17 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理群组关键资产(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-group-access-control
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-group-access-control
 format: md
 ---
 
 
 以下为管理群组关键资产使用示例，请先查看开发指导：
 
-* [新增关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-add)
-* [删除关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-remove)
-* [更新关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-update)
-* [查询关键资产(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-query)
+* [新增关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-add)
+* [删除关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-remove)
+* [更新关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-update)
+* [查询关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query)
 
 ## 前置条件
 

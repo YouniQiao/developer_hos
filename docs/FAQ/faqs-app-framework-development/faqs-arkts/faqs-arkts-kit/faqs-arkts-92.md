@@ -1,6 +1,6 @@
 ---
 title: "如何进行base64编码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-92
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-92
 format: md
 ---
 

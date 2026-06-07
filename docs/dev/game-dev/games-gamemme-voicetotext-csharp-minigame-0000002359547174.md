@@ -1,15 +1,15 @@
 ---
 title: "C#（小游戏）"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-voicetotext-csharp-minigame-0000002359547174
+original_url: /docs/dev/game-dev/games-gamemme-voicetotext-csharp-minigame-0000002359547174
 format: md
 ---
 
 
 ## 前提条件
 
-* 您已[开启语音转文本功能](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。
-* 您已[集成游戏多媒体SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-integratingsdk-csharp-minigame-0000002359706946)。
-* 您已[创建游戏多媒体实例](https://developer.huawei.com/consumer/cn/doc/games-guides/games-gamemme-engine-csharp-minigame-0000002359706954#section10640141401010)。
+* 您已[开启语音转文本功能](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。
+* 您已[集成游戏多媒体SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-minigame-0000002359706946)。
+* 您已[创建游戏多媒体实例](/docs/dev/game-dev/games-gamemme-engine-csharp-minigame-0000002359706954#section10640141401010)。
 * 您已[开通机器学习服务](https://developer.huawei.com/consumer/cn/doc/hiai-Guides/enable-service-0000001050038078)。
 * 您已申请白名单。
 

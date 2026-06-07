@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "获取检测平面的二维顶点数组时报错：“plane is nullptr!”，返回错误码：401"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-faq-1
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-faq-1
 format: md
 ---
 

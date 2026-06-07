@@ -1,6 +1,6 @@
 ---
 title: "Media Playback C"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-playback-c
+original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

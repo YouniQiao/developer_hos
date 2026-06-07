@@ -1,6 +1,6 @@
 ---
 title: "组件导航和页面路由概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-introduction
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-introduction
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
 1. 接口上显式区分标题栏、内容区和工具栏，实现更加灵活的管理和UX动效能力；
 2. 显式提供路由容器概念，由开发者决定路由容器的位置，支持在全模态、半模态、弹窗中显示；
 3. 整合UX设计和一次开发多端部署能力，默认提供统一的标题显示、页面切换和单双栏适配能力；
-4. 基于通用[UIBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builder)能力，由开发者决定页面别名和页面UI对应关系，提供更加灵活的页面配置能力；
+4. 基于通用[UIBuilder](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder)能力，由开发者决定页面别名和页面UI对应关系，提供更加灵活的页面配置能力；
 5. 基于组件属性动效和共享元素动效能力，将页面切换动效转换为组件属性动效实现，提供更加丰富和灵活的切换动效；
 6. 开放了页面栈对象，开发者可以继承，能更好的管理页面显示。
 

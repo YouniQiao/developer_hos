@@ -1,6 +1,6 @@
 ---
 title: "跨设备互通NDK特性概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/servicecollaboration-servicendk-description
+original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-servicendk/servicecollaboration-servicendk-description
 format: md
 ---
 

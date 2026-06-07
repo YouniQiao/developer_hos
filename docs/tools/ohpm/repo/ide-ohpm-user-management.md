@@ -1,7 +1,7 @@
 ---
 title: "用户管理"
 format: md
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-ohpm-user-management
+original_url: /docs/tools/ohpm/repo/ide-ohpm-user-management
 ---
 
 

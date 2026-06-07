@@ -1,18 +1,18 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "密钥协商(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-arkts
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-key-agreement/huks-key-agreement-arkts
 format: md
 ---
 
 
-以X25519，DH和ECDH三个协商密钥类型为例，在密钥由HUKS管理的情况下，完成密钥协商。具体的场景介绍及支持的算法规格，请参考[密钥协商支持的算法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-agreement-overview#支持的算法)。
+以X25519，DH和ECDH三个协商密钥类型为例，在密钥由HUKS管理的情况下，完成密钥协商。具体的场景介绍及支持的算法规格，请参考[密钥协商支持的算法](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-overview#支持的算法)。
 
 ## 开发步骤
 
 **生成密钥**
 
-设备A、设备B各自生成一个非对称密钥，具体请参考[密钥生成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-overview)或[密钥导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-import-overview)。
+设备A、设备B各自生成一个非对称密钥，具体请参考[密钥生成](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview)或[密钥导入](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview)。
 
 密钥生成时，可指定参数[HUKS\_TAG\_DERIVED\_AGREED\_KEY\_STORAGE\_FLAG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-huks#hukstag)（可选），用于标识基于该密钥协商出的密钥是否由HUKS管理。
 
@@ -22,7 +22,7 @@ format: md
 
 **导出密钥**
 
-设备A、B导出非对称密钥对的公钥材料，具体请参考[密钥导出](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-export-key-arkts)。
+设备A、B导出非对称密钥对的公钥材料，具体请参考[密钥导出](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-export-key/huks-export-key-arkts)。
 
 **密钥协商**
 
@@ -42,7 +42,7 @@ format: md
 
 **删除密钥**
 
-当密钥废弃不用时，设备A、B均需要删除密钥，具体请参考[密钥删除](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-delete-key-arkts)。
+当密钥废弃不用时，设备A、B均需要删除密钥，具体请参考[密钥删除](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-arkts)。
 
 ## 开发案例
 

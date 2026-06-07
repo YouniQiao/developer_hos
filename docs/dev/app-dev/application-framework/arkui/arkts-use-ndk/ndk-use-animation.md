@@ -1,13 +1,13 @@
 ---
 title: "使用动画"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-use-animation
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-use-animation
 format: md
 ---
 
 
 ## 使用属性动画
 
-[ArkUI](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-overview)开发框架在[NDK](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-development-overview)接口主要提供属性动画，实现组件出现/消失转场。同时，可以通过Node-API桥接[ArkTS](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-overview)侧帧动画能力，实现Native侧的动画效果。
+[ArkUI](/docs/dev/app-dev/application-framework/arkui/arkui-overview)开发框架在[NDK](/docs/dev/ndk-dev/ndk-development-overview)接口主要提供属性动画，实现组件出现/消失转场。同时，可以通过Node-API桥接[ArkTS](/docs/dev/app-dev/application-framework/arkts/arkts-overview)侧帧动画能力，实现Native侧的动画效果。
 
 ![](./img/0b558c97.png)
 
@@ -151,7 +151,7 @@ format: md
 
 组件内转场通过NODE\_XX\_TRANSITION属性（XX包括：OPACITY、TRANSLATE、SCALE、ROTATE、MOVE）配置转场参数，在组件插入和删除时显示过渡动效（通过[NODE\_TRANSFORM\_CENTER](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeattributetype)属性设置NODE\_SCALE\_TRANSITION和NODE\_ROTATE\_ROTATE动效的中心点坐标）。主要用于容器组件中子组件插入和删除时，提升用户体验。
 
-1. 创建可交互界面，界面中包含Button，点击可以控制转场节点的添加和移除。其中 ArkUI\_NodeContentHandle 类型节点的获取与使用可参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)。
+1. 创建可交互界面，界面中包含Button，点击可以控制转场节点的添加和移除。其中 ArkUI\_NodeContentHandle 类型节点的获取与使用可参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)。
 
    ```
    constexpr int32_t BUTTON_CLICK_ID = 1;
@@ -286,7 +286,7 @@ format: md
 
 [keyframeAnimateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativeanimateapi-1#keyframeanimateto)接口来指定若干个关键帧状态，实现分段的动画。同属性动画，布局类改变宽高的动画，内容都是直接到终点状态。
 
-该示例主要演示如何通过[keyframeAnimateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativeanimateapi-1#keyframeanimateto)来设置关键帧动画，NDK接口开发的UI界面挂载到ArkTS主页面的完整流程可参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)。
+该示例主要演示如何通过[keyframeAnimateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativeanimateapi-1#keyframeanimateto)来设置关键帧动画，NDK接口开发的UI界面挂载到ArkTS主页面的完整流程可参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)。
 
 ```
 // ArkUIColumnNode为工程内封装的node类型

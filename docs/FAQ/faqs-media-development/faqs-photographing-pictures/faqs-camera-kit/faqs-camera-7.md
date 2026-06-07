@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何保证相机在全屏预览时不变形"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-camera-7
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-7
 ---
 
 
@@ -9,4 +9,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-c
 
 **参考链接**
 
-[预览(ArkTS)-相机开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-preview)
+[预览(ArkTS)-相机开发指导](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preview)

@@ -1,7 +1,7 @@
 ---
 title: "MaterialFormat"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-materialformat-0000001227735035
+original_url: /docs/monetize/promotion/marketapi-modle-materialformat-0000001227735035
 format: md
 ---
 

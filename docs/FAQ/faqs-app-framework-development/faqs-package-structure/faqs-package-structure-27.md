@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现在不使用UIAbility的情况下，能够模块化管理代码，并且各个模块之间可以相互路由跳转"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-package-structure-27
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-27
 ---
 
 
@@ -17,4 +17,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
 
 **参考链接**
 
-[HSP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)
+[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "分词"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/natural-language-getwordsegmentation
+original_url: /docs/dev/app-dev/ai/natural-language-kit-guide/natural-language-getwordsegmentation
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "相机管理(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-device-management
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management
 format: md
 ---
 
@@ -21,7 +21,7 @@ format: md
    ```
 2. 通过[getCameraManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-f#cameragetcameramanager)方法，获取cameraManager对象。
 
-   Context获取方式请参考：[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+   Context获取方式请参考：[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
    ```
    function getCameraManager(context: common.BaseContext): camera.CameraManager | undefined {

@@ -1,7 +1,7 @@
 ---
 title: 折叠电脑
 sidebar_label: 折叠电脑
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/foldable-pc-0000002322600098
+original_url: /docs/design/multi-device-design/2in1/foldable-pc
 format: md
 ---
 

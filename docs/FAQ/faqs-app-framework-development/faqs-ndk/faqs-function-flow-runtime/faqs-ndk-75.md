@@ -1,7 +1,7 @@
 ---
 format: md
 title: "Native侧的napi_env是否支持延迟调用或者异步调用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-75
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-75
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "传输安装包"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-installation-package
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-nearbytransfer-dev/gameservice-nearbytransfer-access-procedure/gameservice-nearbytransfer-installation-package
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
 ![](./img/3539bfaa.png)
 
-1. 发送端设备打开游戏后与接收端设备通过[碰一碰](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-overview)或[隔空传送](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-overview)触发安装包传输。
+1. 发送端设备打开游戏后与接收端设备通过[碰一碰](/docs/dev/app-dev/application-services/knock-share-between-phones-overview)或[隔空传送](/docs/dev/app-dev/application-services/gestures-share-overview)触发安装包传输。
 2. 发送端调用[create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransfercreate)创建安装包传输任务。
 3. 创建成功后，游戏客户端调[onRemoteInstallationInfoNotify](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferonremoteinstallationinfonotify)注册远程安装信息事件监听。
 4. 游戏应用获取到安装游戏所需要的linkingForInstallation地址。
@@ -34,7 +34,7 @@ format: md
      6. 接收端游戏服务自动关闭。
    * 接收端已安装游戏
 
-     发送端调用[destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdestroy)销毁服务，并确认是否进行资源包传输。若确认进行资源包传输，则发送端创建资源包传输任务，详情请参见[传输资源包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-resource-package)。接收端打开已安装的游戏。
+     发送端调用[destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdestroy)销毁服务，并确认是否进行资源包传输。若确认进行资源包传输，则发送端创建资源包传输任务，详情请参见[传输资源包](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-nearbytransfer-dev/gameservice-nearbytransfer-access-procedure/gameservice-nearbytransfer-resource-package)。接收端打开已安装的游戏。
 
    ![](./img/600358e2.png)
 
@@ -166,7 +166,7 @@ onPageHide(): void {
 
 ### 发送端销毁服务
 
-接收端完成安装包的接收后，发送端调用[destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdestroy)接口销毁服务。若服务销毁后再次使用近场快传服务，需重新[创建游戏近场快传服务并注册相关回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-nearbytransfer-resource-package#创建游戏近场快传服务并注册相关回调)。
+接收端完成安装包的接收后，发送端调用[destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-nearbytransfer#gamenearbytransferdestroy)接口销毁服务。若服务销毁后再次使用近场快传服务，需重新[创建游戏近场快传服务并注册相关回调](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-nearbytransfer-dev/gameservice-nearbytransfer-access-procedure/gameservice-nearbytransfer-resource-package#创建游戏近场快传服务并注册相关回调)。
 
 ```
 public destroy(): void {

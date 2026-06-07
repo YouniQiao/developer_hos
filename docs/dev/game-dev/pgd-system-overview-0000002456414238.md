@@ -1,6 +1,6 @@
 ---
 title: "System概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/pgd-system-overview-0000002456414238
+original_url: /docs/dev/game-dev/pgd-system-overview-0000002456414238
 format: md
 ---
 

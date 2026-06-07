@@ -1,7 +1,7 @@
 ---
 format: md
 title: "打包报错提示“hap-sign-tool:error:invalid CEN header (bad signature)”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-signature-service-10
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-10
 ---
 
 

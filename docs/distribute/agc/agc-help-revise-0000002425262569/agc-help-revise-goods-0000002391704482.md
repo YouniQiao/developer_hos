@@ -1,6 +1,6 @@
 ---
 title: "批量修改商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-revise-goods-0000002391704482
+original_url: /docs/distribute/agc/agc-help-revise-0000002425262569/agc-help-revise-goods-0000002391704482
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
    ![](../img/agc-help-revise-goods-0000002391704482_0.png)
 
-   请按照规范批量修改商品信息，否则会在上传时报错，具体错误信息可参见[常见错误说明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-mistakes-0000002425264353#ZH-CN_TOPIC_0000002425264353)。
+   请按照规范批量修改商品信息，否则会在上传时报错，具体错误信息可参见[常见错误说明](/docs/distribute/agc/agc-help-revise-0000002425262569/agc-help-mistakes-0000002425264353#ZH-CN_TOPIC_0000002425264353)。
 
    * 方法一：
 

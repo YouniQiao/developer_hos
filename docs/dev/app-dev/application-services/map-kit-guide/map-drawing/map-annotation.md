@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "点注释"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-annotation
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-annotation
 format: md
 ---
 

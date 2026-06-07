@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何控制编译过程的cpu使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-60
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-60
 ---
 
 

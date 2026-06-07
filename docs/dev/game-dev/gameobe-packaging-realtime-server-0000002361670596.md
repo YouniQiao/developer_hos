@@ -1,6 +1,6 @@
 ---
 title: "编译打包"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-packaging-realtime-server-0000002361670596
+original_url: /docs/dev/game-dev/gameobe-packaging-realtime-server-0000002361670596
 format: md
 ---
 

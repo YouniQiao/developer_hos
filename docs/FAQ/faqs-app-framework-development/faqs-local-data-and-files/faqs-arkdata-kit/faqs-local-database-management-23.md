@@ -1,7 +1,7 @@
 ---
 format: md
 title: "关系型数据库RDB支持哪些搜索能力"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-database-management-23
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-23
 ---
 
 

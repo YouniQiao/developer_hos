@@ -1,6 +1,6 @@
 ---
 title: "语言类型"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-appendix-langtype-0000002236041558
+original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-langtype-0000002236041558
 format: md
 ---
 

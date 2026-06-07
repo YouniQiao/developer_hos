@@ -1,6 +1,6 @@
 ---
 title: "提交审核"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-submit-0000002286180890
+original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-submit-0000002286180890
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
    如果软件包中支持的设备类型范围大于配置支持设备时选择的设备范围，并且软件包支持PC/2in1设备而配置设备未勾选PC/2in1设备时，将提示您修改配置的支持设备。
 
-   * 如需修改，点击“确认”前往应用信息页面[修改支持设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-devicetype-0000002271592112)。
+   * 如需修改，点击“确认”前往应用信息页面[修改支持设备](/docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-devicetype-0000002271592112)。
    * 如不需要修改，点击“忽略”即可，不会影响应用的审核。
 
    ![](../img/agc-help-release-app-submit-0000002286180890_0.png)

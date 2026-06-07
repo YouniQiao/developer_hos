@@ -1,7 +1,7 @@
 ---
 format: md
 title: "为什么本地的报告文件夹下，稳定性问题的数量比DevEco Testing前端展示的报告问题数量多"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-stability-basic-quality-test-4
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-stability-basic-quality-test/faqs-stability-basic-quality-test-4
 ---
 
 

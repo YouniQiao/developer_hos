@@ -1,6 +1,6 @@
 ---
 title: "使用嵌入式用户身份认证控件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-auth-icon
+original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/user-auth-icon
 format: md
 ---
 

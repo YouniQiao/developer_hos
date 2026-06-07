@@ -1,6 +1,6 @@
 ---
 title: "响应事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/hjs-responding-event
+original_url: /docs/dev/atomic-dev/ascf/hjs/hjs-responding-event
 format: md
 ---
 

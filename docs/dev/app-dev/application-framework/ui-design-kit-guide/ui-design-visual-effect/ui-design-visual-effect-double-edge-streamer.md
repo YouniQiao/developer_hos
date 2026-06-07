@@ -1,6 +1,6 @@
 ---
 title: "双边边缘流光"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-design-visual-effect-double-edge-streamer
+original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-visual-effect/ui-design-visual-effect-double-edge-streamer
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "组件启动规则（Stage模型）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/component-startup-rules
+original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/component-startup-rules
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
 
 * **跨应用启动组件，需校验目标组件是否可以被其他应用调用。**
 
-  若目标组件exported字段配置为true，表示可以被其他应用调用；若目标组件exported字段配置为false，表示不可以被其他应用调用，还需进一步校验ohos.permission.START\_INVISIBLE\_ABILITY权限（该权限仅系统应用可申请）。组件exported字段说明可参考[abilities标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#abilities标签)。
+  若目标组件exported字段配置为true，表示可以被其他应用调用；若目标组件exported字段配置为false，表示不可以被其他应用调用，还需进一步校验ohos.permission.START\_INVISIBLE\_ABILITY权限（该权限仅系统应用可申请）。组件exported字段说明可参考[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)。
 * **位于后台的UIAbility应用，启动组件需校验BACKGROUND权限ohos.permission.START\_ABILITIES\_FROM\_BACKGROUND（该权限仅系统应用可申请）。**
 
   ![](./img/00f17a39.png)

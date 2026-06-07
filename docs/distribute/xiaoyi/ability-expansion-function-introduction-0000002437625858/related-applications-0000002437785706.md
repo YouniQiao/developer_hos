@@ -1,7 +1,7 @@
 ---
 title: "关联应用"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/related-applications-0000002437785706
+original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/related-applications-0000002437785706
 format: md
 ---
 
@@ -30,7 +30,7 @@ format: md
 
 **1、注册鸿蒙应用：**
 
-AppGallery创建鸿蒙应用请参考：[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)、[创建鸿蒙应用指导](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506)。
+AppGallery创建鸿蒙应用请参考：[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)、[创建鸿蒙应用指导](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。
 
 **2、配置签名**
 
@@ -46,11 +46,11 @@ AppGallery创建鸿蒙应用请参考：[应用开发准备](https://developer.h
 
 **4、应用APP集成AgentKit能力****：**
 
-AgentKit能力实现请参考：[通过Function组件拉起智能体指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/harmony-agent-framework-kit-guide)、[通过Function组件拉起智能体API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/harmony-agent-framework-api)。
+AgentKit能力实现请参考：[通过Function组件拉起智能体指南](/docs/dev/app-dev/ai/harmony-agent-framework-kit-guide)、[通过Function组件拉起智能体API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/harmony-agent-framework-api)。
 
 ## 调试及发布
 
-开发工作完成后，开发者可将智能体发布真机测试进行能力调试。发布真机测试请参考[真机测试](https://developer.huawei.com/consumer/cn/doc/service/list-of-user-groups-for-real-machine-testing-0000002471264273)章节。调试完成后即可发布智能体。
+开发工作完成后，开发者可将智能体发布真机测试进行能力调试。发布真机测试请参考[真机测试](/docs/distribute/xiaoyi/real-machine-testing-0000002471344145/list-of-user-groups-for-real-machine-testing-0000002471264273)章节。调试完成后即可发布智能体。
 
 调试步骤：
 

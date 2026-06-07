@@ -1,7 +1,7 @@
 ---
 title: "编辑商品组"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-shopping-group2-0000001338379169
+original_url: /docs/monetize/promotion/marketing-api-advertising-shopping-group2-0000001338379169
 format: md
 ---
 
@@ -31,10 +31,10 @@ format: md
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | dimension\_type | string | 是 | 商品分组的细分依据，详见[查询商品库筛选条件取值](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa2-0000001338502485)。 |
-  | dimension\_value | string | 是 | 商品分组的细分依据取值，详见[查询商品库筛选条件取值](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa2-0000001338502485)。 |
+  | dimension\_type | string | 是 | 商品分组的细分依据，详见[查询商品库筛选条件取值](/docs/monetize/promotion/marketing-api-tool-dpa2-0000001338502485)。 |
+  | dimension\_value | string | 是 | 商品分组的细分依据取值，详见[查询商品库筛选条件取值](/docs/monetize/promotion/marketing-api-tool-dpa2-0000001338502485)。 |
   | price | float | 否 | 商品分组的出价。 |
-  | status | string | 否 | 商品分组状态，详见[商品分组状态](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section7332135573017)，ACTIVE（默认值）。 |
+  | status | string | 否 | 商品分组状态，详见[商品分组状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section7332135573017)，ACTIVE（默认值）。 |
   | child\_item\_groups | Struct1[] | 否 | 商品分组节点的下级节点。 |
 
   - <strong>请求示例</strong>

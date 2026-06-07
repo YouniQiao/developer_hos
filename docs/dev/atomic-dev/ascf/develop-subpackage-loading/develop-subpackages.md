@@ -1,6 +1,6 @@
 ---
 title: "分包"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/develop-subpackages
+original_url: /docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackages
 format: md
 ---
 

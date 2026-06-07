@@ -1,6 +1,6 @@
 ---
 title: "内存泄漏相关问题汇总"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-faq-about-memory-leak
+original_url: /docs/dev/ndk-dev/napi-faq-about-memory-leak
 format: md
 ---
 
@@ -24,13 +24,13 @@ napi\_create\_reference这个接口内部实现会new一个C++对象，因此，
 
 需先了解Node-API生命周期机制，相关材料如下：
 
-[使用Node-API接口进行生命周期相关开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-life-cycle)
+[使用Node-API接口进行生命周期相关开发](/docs/dev/ndk-dev/use-napi-life-cycle)
 
 使用Node-API时导致内存泄漏的常见原因：
 
-1. napi\_value不在napi\_handle\_scope管理中，导致napi\_value持有的ArkTS对象无法释放，该问题常见于[直接使用uv\_queue\_work的场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-guidelines#异步任务)中。解决方法是添加napi\_open\_handle\_scope和napi\_close\_handle\_scope接口。
+1. napi\_value不在napi\_handle\_scope管理中，导致napi\_value持有的ArkTS对象无法释放，该问题常见于[直接使用uv\_queue\_work的场景](/docs/dev/ndk-dev/napi-guidelines#异步任务)中。解决方法是添加napi\_open\_handle\_scope和napi\_close\_handle\_scope接口。
 
-   此类泄漏可通过snapshot分析定位原因，泄漏的ArkTS对象distance为1，即不知道被谁持有，这种情况下一般就是被native（napi\_value是个指针，指向native持有者）持有了，且napi\_value不在napi\_handle\_scope范围内，可参考[易错API的使用规范](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-coding-standard-api#section1219614634615)。
+   此类泄漏可通过snapshot分析定位原因，泄漏的ArkTS对象distance为1，即不知道被谁持有，这种情况下一般就是被native（napi\_value是个指针，指向native持有者）持有了，且napi\_value不在napi\_handle\_scope范围内，可参考[易错API的使用规范](/docs/quality/stability-coding-standard-api#section1219614634615)。
 2. 使用 napi\_create\_reference 为 ArkTS 对象创建了强引用（initial\_refcount 参数大于 0），且一直未删除，导致 ArkTS 对象无法被回收。napi\_create\_reference 接口内部会创建一个 C++ 对象，因此这种泄漏通常表现为ArkTS对象与Native对象的双重泄漏。可以使用 Allocation 工具捕获Native对象泄漏栈，检查是否存在 napi\_create\_reference 相关的栈帧。
 
    [基础内存分析：Allocation分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations)

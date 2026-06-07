@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何识别双击手势时忽视单击手势"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-306
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-306
 ---
 
 
@@ -36,4 +36,4 @@ struct TapGestureExample {
 
 **参考链接**
 
-[互斥识别](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-gesture-events-combined-gestures#互斥识别)
+[互斥识别](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-combined-gestures#互斥识别)

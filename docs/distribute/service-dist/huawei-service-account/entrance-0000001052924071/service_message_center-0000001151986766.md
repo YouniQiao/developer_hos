@@ -1,7 +1,7 @@
 ---
 title: "服务消息中心"
 displayed_sidebar: serviceDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/service_message_center-0000001151986766
+original_url: /docs/distribute/service-dist/huawei-service-account/entrance-0000001052924071/service_message_center-0000001151986766
 format: md
 ---
 

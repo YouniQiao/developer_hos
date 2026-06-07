@@ -1,6 +1,6 @@
 ---
 title: "密钥管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-huks-guidelines
+original_url: /docs/dev/atomic-dev/atomic-security-development/atomic-huks-guidelines
 format: md
 ---
 

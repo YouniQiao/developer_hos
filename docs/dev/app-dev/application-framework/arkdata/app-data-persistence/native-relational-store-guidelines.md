@@ -1,6 +1,6 @@
 ---
 title: "通过关系型数据库实现数据持久化 (C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-relational-store-guidelines
+original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/native-relational-store-guidelines
 format: md
 ---
 

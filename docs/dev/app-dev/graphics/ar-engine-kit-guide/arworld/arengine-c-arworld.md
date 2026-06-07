@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "物体摆放（C/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arworld
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-c-arworld
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 约束与限制
 
-从5.0.0(12)开始，物体摆放能力支持部分Phone、Tablet设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持运动跟踪及平面识别特性（[ARENGINE\_FEATURE\_TYPE\_SLAM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
+从5.0.0(12)开始，物体摆放能力支持部分Phone、Tablet设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持运动跟踪及平面识别特性（[ARENGINE\_FEATURE\_TYPE\_SLAM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_featuretype)）。
 
 ## 接口说明
 
@@ -187,11 +187,11 @@ struct ARWorld {
 
 ### 引入AR Engine
 
-开发者可参考管理AR会话章节的[引入AR Engine](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arsession#引入ar-engine)。
+开发者可参考管理AR会话章节的[引入AR Engine](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-c-arsession#引入ar-engine)。
 
 ### 创建AR场景
 
-1. 调用[HMS\_AREngine\_ARSession\_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_arsession_create)函数创建[AREngine\_ARSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_arsession)会话。您可以参考[管理AR会话](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-arsession)创建ARSession。
+1. 调用[HMS\_AREngine\_ARSession\_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_arsession_create)函数创建[AREngine\_ARSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#arengine_arsession)会话。您可以参考[管理AR会话](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-c-arsession)创建ARSession。
 2. 配置AR会话及预览尺寸。
 
    ```
@@ -250,8 +250,8 @@ struct ARWorld {
 
    ![](./img/a9186ce1.png)
 
-   这里直接获取相机的视图矩阵和相机的投影矩阵，是为了便于渲染。获取相机运动中的位姿变化，还可以调用[HMS\_AREngine\_ARCamera\_GetPose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_arcamera_getpose)函数配合[HMS\_AREngine\_ARPose\_GetPoseRaw](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_arpose_getposeraw)函数进行获取。详细可参考[获取设备当前位姿](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-pose#获取设备当前位姿)。
-3. 调用[HMS\_AREngine\_ARSession\_GetAllTrackables](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_arsession_getalltrackables)函数获取平面列表。详细可参考[检测环境中的平面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-c-get-plane)章节。
+   这里直接获取相机的视图矩阵和相机的投影矩阵，是为了便于渲染。获取相机运动中的位姿变化，还可以调用[HMS\_AREngine\_ARCamera\_GetPose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_arcamera_getpose)函数配合[HMS\_AREngine\_ARPose\_GetPoseRaw](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_arpose_getposeraw)函数进行获取。详细可参考[获取设备当前位姿](/docs/dev/app-dev/graphics/ar-engine-kit-guide/get-pose/arengine-c-get-pose#获取设备当前位姿)。
+3. 调用[HMS\_AREngine\_ARSession\_GetAllTrackables](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_arsession_getalltrackables)函数获取平面列表。详细可参考[检测环境中的平面](/docs/dev/app-dev/graphics/ar-engine-kit-guide/get-plane/arengine-c-get-plane)章节。
 
    ```
    // 获取当前检测到的平面列表。

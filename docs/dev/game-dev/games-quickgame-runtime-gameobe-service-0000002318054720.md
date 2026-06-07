@@ -1,6 +1,6 @@
 ---
 title: "联机对战"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-gameobe-service-0000002318054720
+original_url: /docs/dev/game-dev/games-quickgame-runtime-gameobe-service-0000002318054720
 format: md
 ---
 
@@ -11,4 +11,4 @@ format: md
 
 ## 接入指引
 
-请参考[联机对战接入指导](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-flowchart-overview-js-0000002395190477)完成联机对战服务的接入工作。
+请参考[联机对战接入指导](/docs/dev/game-dev/gameobe-flowchart-overview-js-0000002395190477)完成联机对战服务的接入工作。

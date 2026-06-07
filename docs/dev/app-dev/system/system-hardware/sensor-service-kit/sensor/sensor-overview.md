@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "传感器开发概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-overview
+original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-overview
 format: md
 ---
 

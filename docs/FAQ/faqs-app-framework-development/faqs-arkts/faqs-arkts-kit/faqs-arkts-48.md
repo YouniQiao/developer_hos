@@ -1,7 +1,7 @@
 ---
 format: md
 title: "以libstd为例，C++的标准库放在哪里了，有没有打到hap包中"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-48
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-48
 ---
 
 

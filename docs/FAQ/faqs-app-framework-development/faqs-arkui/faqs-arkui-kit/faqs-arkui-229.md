@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用BuilderParam在父组件调用this的方法报错：Error message: undefined is not callable"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-229
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-229
 ---
 
 
@@ -65,4 +65,4 @@ Child({
 
 **参考链接**
 
-[@BuilderParam装饰器：引用@Builder函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-builderparam)
+[@BuilderParam装饰器：引用@Builder函数](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builderparam)

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用AudioHaptic开发音振协同播放功能(ArkTs)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiohaptic-for-playback
+original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/using-audiohaptic-for-playback
 format: md
 ---
 
@@ -16,8 +16,8 @@ AudioHaptic提供音频与振动协同播放及管理的方法，适用于需要
 
 如果应用创建的AudioHapticPlayer需要触发振动，则需要校验应用是否拥有该权限：ohos.permission.VIBRATE。
 
-1. [声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
-2. [向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+1. [声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
+2. [向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ### 开发步骤及注意事项
 

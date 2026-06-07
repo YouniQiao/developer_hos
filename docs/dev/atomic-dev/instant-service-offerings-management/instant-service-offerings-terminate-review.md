@@ -1,6 +1,6 @@
 ---
 title: "撤回商品审核"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-terminate-review
+original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-terminate-review
 format: md
 ---
 

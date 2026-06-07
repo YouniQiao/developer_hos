@@ -1,6 +1,6 @@
 ---
 title: "XML生成"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xml-generation
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-generation
 format: md
 ---
 

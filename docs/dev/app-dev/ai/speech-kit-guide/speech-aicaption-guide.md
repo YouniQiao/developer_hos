@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AI字幕控件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/speech-aicaption-guide
+original_url: /docs/dev/app-dev/ai/speech-kit-guide/speech-aicaption-guide
 format: md
 ---
 

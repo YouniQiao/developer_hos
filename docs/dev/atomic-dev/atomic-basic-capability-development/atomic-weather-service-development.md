@@ -1,6 +1,6 @@
 ---
 title: "天气"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-weather-service-development
+original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-weather-service-development
 format: md
 ---
 

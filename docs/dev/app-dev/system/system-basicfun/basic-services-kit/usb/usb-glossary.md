@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "USB服务开发术语"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/usb-glossary
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-glossary
 format: md
 ---
 

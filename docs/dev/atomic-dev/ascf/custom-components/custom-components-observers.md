@@ -1,6 +1,6 @@
 ---
 title: "数据监听器observers"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/custom-components-observers
+original_url: /docs/dev/atomic-dev/ascf/custom-components/custom-components-observers
 format: md
 ---
 

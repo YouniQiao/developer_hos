@@ -1,6 +1,6 @@
 ---
 title: "设置消费提醒"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-set-spending-notify-0000002242112054
+original_url: /docs/distribute/agc/agc-help-account-0000002270829385/agc-help-set-spending-notify-0000002242112054
 format: md
 ---
 

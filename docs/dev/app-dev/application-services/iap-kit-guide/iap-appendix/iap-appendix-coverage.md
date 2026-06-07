@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "华为IAP范围覆盖"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-appendix-coverage
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-appendix/iap-appendix-coverage
 format: md
 ---
 

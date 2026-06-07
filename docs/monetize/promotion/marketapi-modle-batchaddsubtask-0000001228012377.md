@@ -1,7 +1,7 @@
 ---
 title: "BatchAddSubTaskAM"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-batchaddsubtask-0000001228012377
+original_url: /docs/monetize/promotion/marketapi-modle-batchaddsubtask-0000001228012377
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开票"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-invoicing
+original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-after-sales/iap-invoicing
 format: md
 ---
 

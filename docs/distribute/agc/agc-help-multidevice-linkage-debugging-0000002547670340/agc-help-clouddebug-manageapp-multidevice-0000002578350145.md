@@ -1,6 +1,6 @@
 ---
 title: "管理应用"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-clouddebug-manageapp-multidevice-0000002578350145
+original_url: /docs/distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-manageapp-multidevice-0000002578350145
 format: md
 ---
 

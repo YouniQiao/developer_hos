@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-personal-data-processing
+original_url: /docs/dev/app-dev/application-services/health-personal-data-processing
 format: md
 ---
 
@@ -32,4 +32,4 @@ format: md
 
 **如何导出最终用户的数据**
 
-开发者通过华为运动健康服务API，可以通过数据访问接口获取用户数据，为用户提供数据导出服务，具体方法见[healthStore.readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddata)，详细使用请参见[运动健康采样数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-samplepoint-manage)开发指导。
+开发者通过华为运动健康服务API，可以通过数据访问接口获取用户数据，为用户提供数据导出服务，具体方法见[healthStore.readData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddata)，详细使用请参见[运动健康采样数据](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage/health-samplepoint-manage)开发指导。

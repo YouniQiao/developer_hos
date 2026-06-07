@@ -1,6 +1,6 @@
 ---
 title: "传感器资源合理使用"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-reasonable-sensor-use
+original_url: /docs/quality/reasonable-sensor-use
 ---
 
 # 传感器资源合理使用
@@ -48,4 +48,4 @@ export default class EntryAbility extends UIAbility {
 ```
 <div class="source-link-wrapper"><a class="source-link" href="https://gitcode.com/harmonyos_samples/BestPracticeSnippets/blob/master/BptaUseResources/entry/src/main/ets/pages/Sensor.ets#L6-L37">Sensor.ets</a></div>
 
-有关传感器开发相关接口的使用，详情可以参考[传感器开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines)。
+有关传感器开发相关接口的使用，详情可以参考[传感器开发指导](/docs/dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-guidelines)。

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "响应输出设备变更时合理暂停"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-output-device-change
+original_url: /docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-change
 format: md
 ---
 

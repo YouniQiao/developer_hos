@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "使用音频模板"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-avsession-avmusictemplate
+original_url: /docs/dev/app-dev/media/avsession-kit/music-template/using-avsession-avmusictemplate
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "屏幕"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-screen
+original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-screen
 format: md
 ---
 

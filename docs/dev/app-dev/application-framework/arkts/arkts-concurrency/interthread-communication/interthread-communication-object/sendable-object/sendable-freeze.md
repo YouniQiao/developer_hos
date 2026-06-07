@@ -1,6 +1,6 @@
 ---
 title: "Sendable对象冻结"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-freeze
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-freeze
 format: md
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: "组件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-building-ui-component
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-ui-component
 format: md
 ---
 
 
 组件（Component）是构建页面的核心，每个组件通过对数据和方法的简单封装，实现独立的可视、可交互功能单元。组件之间相互独立，随取随用，也可以在需求相同的地方重复使用。
 
-开发者还可以通过组件间合理的搭配定义满足业务需求的新组件，减少开发量，自定义组件的开发方法请参见[自定义组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-custom-components)。
+开发者还可以通过组件间合理的搭配定义满足业务需求的新组件，减少开发量，自定义组件的开发方法请参见[自定义组件](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-custom-components)。
 
 ## 组件分类
 

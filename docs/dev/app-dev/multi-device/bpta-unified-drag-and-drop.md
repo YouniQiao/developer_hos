@@ -1,7 +1,7 @@
 ---
 title: "统一拖拽"
 displayed_sidebar: appDevSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-unified-drag-and-drop
+original_url: /docs/dev/app-dev/multi-device/bpta-unified-drag-and-drop
 format: md
 ---
 
@@ -40,7 +40,7 @@ format: md
 
 ## 开发流程
 
-[拖拽的流程](https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scenes-drag-0000001795410277#section1417334354817)可以分为三部分：发起拖拽、拖拽中和释放拖拽。其中，拖出方通过[draggable()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#draggable)和[onDragStart()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)等接口处理拖出数据，拖入方通过[allowDrop()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#allowdrop)和[onDrop()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondrop)等接口处理拖入数据，拖拽数据使用UDMF统一数据对象[UnifiedData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-unifieddatachannel#unifieddata)进行封装。
+[拖拽的流程](/docs/design/hmi/scenes/drag#section1417334354817)可以分为三部分：发起拖拽、拖拽中和释放拖拽。其中，拖出方通过[draggable()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#draggable)和[onDragStart()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)等接口处理拖出数据，拖入方通过[allowDrop()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-drag-drop#allowdrop)和[onDrop()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondrop)等接口处理拖入数据，拖拽数据使用UDMF统一数据对象[UnifiedData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-unifieddatachannel#unifieddata)进行封装。
 
 **表1** 拖拽流程展示
 
@@ -77,7 +77,7 @@ RichEditor({ controller: this.sourceController })
 
 ###拖拽中
 
-通过标准手势发起拖拽后，系统会默认将组件本身的截图作为[拖拽背板图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-drag-event#拖拽背板图)。如果想自定义拖拽背板图，需要在组件的[onDragStart()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)回调中设置[DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo)，传入自定义背板图。此外，可以在拖拽目标组件上注册[onDragMove()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragmove)监听，并在回调函数中实时获取拖拽过程中的信息，如拖拽点的坐标等。以Image组件为例，示例代码如下：
+通过标准手势发起拖拽后，系统会默认将组件本身的截图作为[拖拽背板图](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-drag-event#拖拽背板图)。如果想自定义拖拽背板图，需要在组件的[onDragStart()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragstart)回调中设置[DragItemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#dragiteminfo)，传入自定义背板图。此外，可以在拖拽目标组件上注册[onDragMove()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-drag-drop#ondragmove)监听，并在回调函数中实时获取拖拽过程中的信息，如拖拽点的坐标等。以Image组件为例，示例代码如下：
 
 自定义拖拽背板图
 
@@ -305,7 +305,7 @@ Column() {
 
 ## 自定义拖拽背板图
 
-[拖拽背板图](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-drag-event#拖拽背板图)用于在拖拽过程中展示用户拖动的数据，可以自定义拖拽背板图。
+[拖拽背板图](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-drag-event#拖拽背板图)用于在拖拽过程中展示用户拖动的数据，可以自定义拖拽背板图。
 
 **运行效果**
 
@@ -822,7 +822,7 @@ Column() {
 
 ## 图文混排拖拽
 
-此场景涉及拖拽图片与文字混合的内容。对于轻量级的图文混排内容，可以通过向[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#接口)组件中添加[Span](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span#接口)和[ImageSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-imagespan#接口)子组件来实现。此外，使用[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor#接口)组件也可构建图文混排内容。如何选择适合的图文混排组件，请参考[如何选择图文混排方案](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-23)。
+此场景涉及拖拽图片与文字混合的内容。对于轻量级的图文混排内容，可以通过向[Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#接口)组件中添加[Span](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-span#接口)和[ImageSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-imagespan#接口)子组件来实现。此外，使用[RichEditor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richeditor#接口)组件也可构建图文混排内容。如何选择适合的图文混排组件，请参考[如何选择图文混排方案](/docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-23)。
 
 在某些情况下，不同的接收方对同一内容支持的格式各不相同。此时，开发者可以自定义图文混排的拖拽内容，设置UDMF多Entry形式的拖拽数据，以适应不同的接收方。
 
@@ -1257,7 +1257,7 @@ async receiveDragData(event: DragEvent) {
 
 **使用说明**
 
-需要应用[声明支持分屏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/multi-window-support#声明支持分屏)，并根据需求自定义拖拽响应。
+需要应用[声明支持分屏](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-support#声明支持分屏)，并根据需求自定义拖拽响应。
 
 **运行效果如下图所示**
 
@@ -1270,7 +1270,7 @@ async receiveDragData(event: DragEvent) {
 
 **使用说明**
 
-需要满足跨设备拖拽开发指导中的[约束与限制](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-distribute-drag-cast#section990465462314)，并根据需求自定义拖拽响应。
+需要满足跨设备拖拽开发指导中的[约束与限制](/docs/dev/app-dev/multi-device/bpta-distribute-drag-cast#section990465462314)，并根据需求自定义拖拽响应。
 
 **结果展示**
 
@@ -1283,7 +1283,7 @@ async receiveDragData(event: DragEvent) {
 
 **使用限制**
 
-应用本身预置的[资源文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access#资源组目录)（即应用在安装前的HAP包中已经存在的资源文件）不支持拖入小艺和中转站。
+应用本身预置的[资源文件](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源组目录)（即应用在安装前的HAP包中已经存在的资源文件）不支持拖入小艺和中转站。
 
 **运行效果如下图所示**
 
@@ -1297,7 +1297,7 @@ async receiveDragData(event: DragEvent) {
 
 ###模拟器无法识别AI拖拽内容
 
-模拟器不支持[textRecognition](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-text-recognition)接口的调用，建议使用真机进行调试，详细请参见基础视觉服务[模拟器支持情况](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/core-vision-introduction#模拟器支持情况)。
+模拟器不支持[textRecognition](/docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-text-recognition)接口的调用，建议使用真机进行调试，详细请参见基础视觉服务[模拟器支持情况](/docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-introduction#模拟器支持情况)。
 
 ###拖拽的触发手势长按浮起与长按手势之间存在冲突
 

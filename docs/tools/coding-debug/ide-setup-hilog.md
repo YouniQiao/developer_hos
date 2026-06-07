@@ -1,7 +1,7 @@
 ---
 title: "日志分析"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-setup-hilog
+original_url: /docs/tools/coding-debug/ide-setup-hilog
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "生成回归测试包时报错提示“当前项目根目录下不存在setup-regression.py文件”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-regression-test-2
+original_url: /docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-2
 ---
 
 

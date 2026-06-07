@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "阻止系统闲时进入睡眠开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/runninglock-dev
+original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/powermgr/running-dev/runninglock-dev
 format: md
 ---
 
@@ -22,7 +22,7 @@ format: md
   RunningLockType.BACKGROUND\_USER\_IDLE类型的运行锁，所需SDK版本为API version 23及以上才可使用。
 * HDC配置：
 
-  HDC（HarmonyOS Device Connector）是为开发人员提供的用于调试的命令行工具，通过该工具可以在Windows/Linux/Mac系统上与真实设备或者模拟器进行交互，详细参考[HDC配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
+  HDC（HarmonyOS Device Connector）是为开发人员提供的用于调试的命令行工具，通过该工具可以在Windows/Linux/Mac系统上与真实设备或者模拟器进行交互，详细参考[HDC配置](/docs/dev/app-dev/system/hdc)。
 
 ### 搭建环境
 
@@ -56,7 +56,7 @@ format: md
 
 使用RunningLockType.BACKGROUND\_USER\_IDLE运行锁，开发示例如下：
 
-1. 申请使用运行锁所需的权限：ohos.permission.RUNNING\_LOCK。申请流程请参考：[申请应用权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/determine-application-mode)。
+1. 申请使用运行锁所需的权限：ohos.permission.RUNNING\_LOCK。申请流程请参考：[申请应用权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode)。
 2. 导入模块。
 
    ```

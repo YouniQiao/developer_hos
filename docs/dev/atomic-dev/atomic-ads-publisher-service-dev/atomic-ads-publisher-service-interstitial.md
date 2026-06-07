@@ -1,6 +1,6 @@
 ---
 title: "插屏广告"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-ads-publisher-service-interstitial
+original_url: /docs/dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-interstitial
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "picker"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/components-picker
+original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-picker
 format: md
 ---
 

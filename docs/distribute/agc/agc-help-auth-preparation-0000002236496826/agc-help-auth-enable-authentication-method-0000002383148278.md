@@ -1,6 +1,6 @@
 ---
 title: "启用认证方式"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-enable-authentication-method-0000002383148278
+original_url: /docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-enable-authentication-method-0000002383148278
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](../img/agc-help-auth-enable-authentication-method-0000002383148278_0.png)
 
-* 当前平台支持的认证方式请参见[主要功能](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-introduction-0000002271496181#section1910774920157)。
+* 当前平台支持的认证方式请参见[主要功能](/docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-introduction-0000002271496181#section1910774920157)。
 * 当您的应用需要支持多数据处理位置时，请在“数据处理位置”选择其他存储地后再分别进行配置。
 
 ![](../img/agc-help-auth-enable-authentication-method-0000002383148278_1.png)
@@ -34,7 +34,7 @@ format: md
 
   “短信请求接收地址”选择“云函数”，系统将自动同步当前项目中已存在的云函数供您选择。配置完成后，点击“确定”。
 
-  + 如果尚未创建云函数，您可以点击“去创建”，进入云函数服务界面[创建函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-create-and-config-function)。创建完成后，再返回此处进行设置。
+  + 如果尚未创建云函数，您可以点击“去创建”，进入云函数服务界面[创建函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-create-and-config-function)。创建完成后，再返回此处进行设置。
   + 如果云函数数量较多，您可以通过输入关键词来模糊筛选云函数名称。
 
   云函数代码可参考如下示例实现（以Node.js语言为例）：
@@ -409,4 +409,4 @@ format: md
 | 认证方式 | 获取信息 | 获取方式 |
 | --- | --- | --- |
 | 华为账号 | Client ID和Client Secret | 您可以登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，在“开发与服务 > 项目设置”页面，顶端切换到要查询的应用后，在“应用”区域即可找到应用的“OAuth 2.0客户端ID”信息。  ![](../img/agc-help-auth-enable-authentication-method-0000002383148278_12.png) |
-| 自有账号 | 签名公钥 | [获取JWT](https://developer.huawei.com/consumer/cn/doc/app/agc-help-auth-login-self-0000002271496193#section16952720551) |
+| 自有账号 | 签名公钥 | [获取JWT](/docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-self-0000002271496193#section16952720551) |

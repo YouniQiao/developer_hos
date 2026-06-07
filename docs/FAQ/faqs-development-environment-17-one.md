@@ -1,7 +1,7 @@
 ---
 format: md
 title: "环境中配置使用JDK25，打包失败报错，错误码：00303153 Configuration Error"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-17-one
+original_url: /docs/FAQ/faqs-development-environment-17-one
 ---
 
 

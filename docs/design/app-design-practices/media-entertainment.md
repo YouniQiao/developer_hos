@@ -1,7 +1,7 @@
 ---
 title: 影音娱乐类
 sidebar_label: 影音娱乐类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples1-0000001957369849
+original_url: /docs/design/app-design-practices/media-entertainment
 format: md
 ---
 
@@ -34,7 +34,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8FB7A4EF2F14.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例(长视频)-首页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#section109591922155720)。
+本场景的开发指南，请参阅[一多开发实例(长视频)-首页](/docs/dev/app-dev/multi-device/multi-video-app#section109591922155720)。
 
 ## 可缩放宫格卡片
 
@@ -42,7 +42,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/75F63F8024DE.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例(长视频)-首页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#section109591922155720)。
+本场景的开发指南，请参阅[一多开发实例(长视频)-首页](/docs/dev/app-dev/multi-device/multi-video-app#section109591922155720)。
 
 ## 长按播放预览
 
@@ -50,7 +50,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/A4FA313FD70A.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例(长视频)-首页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#section109591922155720)。
+本场景的开发指南，请参阅[一多开发实例(长视频)-首页](/docs/dev/app-dev/multi-device/multi-video-app#section109591922155720)。
 
 ## 浅层级搜索
 
@@ -60,7 +60,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/BABFBF3508AF.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例(长视频)-搜索页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#section1932711221013)。
+本场景的开发指南，请参阅[一多开发实例(长视频)-搜索页](/docs/dev/app-dev/multi-device/multi-video-app#section1932711221013)。
 
 ## 边看边评
 
@@ -68,7 +68,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/5C934F3D1B43.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例(长视频)-视频详情页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#section9259381113)。
+本场景的开发指南，请参阅[一多开发实例(长视频)-视频详情页](/docs/dev/app-dev/multi-device/multi-video-app#section9259381113)。
 
 ## 沉浸全屏播放
 
@@ -92,7 +92,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/CB521AADA1BA.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例(长视频)-全屏播放页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-video-app#section2899145416113)。
+本场景的开发指南，请参阅[一多开发实例(长视频)-全屏播放页](/docs/dev/app-dev/multi-device/multi-video-app#section2899145416113)。
 
 ### 短视频
 
@@ -116,7 +116,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/A2609EF3C14A.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例(短视频)](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-short-video-app#section093743919159)[-](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-short-video-app#section093743919159)[评论页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-short-video-app#section093743919159)。
+本场景的开发指南，请参阅[一多开发实例(短视频)](/docs/dev/app-dev/multi-device/multi-short-video-app#section093743919159)[-](/docs/dev/app-dev/multi-device/multi-short-video-app#section093743919159)[评论页](/docs/dev/app-dev/multi-device/multi-short-video-app#section093743919159)。
 
 ## 侧边面板个人详情
 
@@ -128,7 +128,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/033C7AA87923.png "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例(短视频)](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-short-video-app#section1911216483325)[-](https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples1-0000001957369849)[个人作品页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-short-video-app#section1911216483325)。
+本场景的开发指南，请参阅[一多开发实例(短视频)](/docs/dev/app-dev/multi-device/multi-short-video-app#section1911216483325)[-](/docs/design/app-design-practices/media-entertainment)[个人作品页](/docs/dev/app-dev/multi-device/multi-short-video-app#section1911216483325)。
 
 ## 侧边面板快捷手势
 

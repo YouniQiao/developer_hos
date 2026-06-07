@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-internal-test-faq-0000002295372101
+original_url: /docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-faq-0000002295372101
 format: md
 ---
 

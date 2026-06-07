@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何做到连续投播"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-avsession-6
+original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-6
 ---
 
 

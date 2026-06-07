@@ -1,6 +1,6 @@
 ---
 title: "Web组件使用rawFile加载离线html时,如何在url后拼接参数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkweb-45
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-45
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "分析应用质量"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-anaiyze-app-quality-0000002271371753
+original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-quality-0000002271371753
 format: md
 ---
 

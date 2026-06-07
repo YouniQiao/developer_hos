@@ -1,6 +1,6 @@
 ---
 title: "常见问题与异常处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-data-migration-faqs
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-faqs
 format: md
 ---
 
@@ -75,4 +75,4 @@ format: md
 
 **解决方法**
 
-请参考[开发者自验证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/adaptation-process#开发者自验证)下“迁移调试”工具获取方式，申请最新版迁移调试工具。
+请参考[开发者自验证](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/adaptation-process#开发者自验证)下“迁移调试”工具获取方式，申请最新版迁移调试工具。

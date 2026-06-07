@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "订阅时长按照自然月计算时，2月份是28天还是29天？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-25
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-25
 format: md
 ---
 

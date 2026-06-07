@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通过Function组件拉起智能体"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-function
+original_url: /docs/dev/app-dev/ai/harmony-agent-framework-kit-guide/hmaf-function
 format: md
 ---
 
@@ -20,8 +20,8 @@ format: md
 
 ## 开发前准备
 
-* 创建智能体，具体请参见[快速创建智能体](https://developer.huawei.com/consumer/cn/doc/service/quick-start-0000002469548009)。
-* 关联应用，具体请参见[关联应用](https://developer.huawei.com/consumer/cn/doc/service/related-applications-0000002437785706)。
+* 创建智能体，具体请参见[快速创建智能体](/docs/distribute/xiaoyi/developer-guide-0000002469667881/quick-start-0000002469548009)。
+* 关联应用，具体请参见[关联应用](/docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/related-applications-0000002437785706)。
 * 确保已在终端设备上登录华为账号，并且处于联网状态。
 
 ## 开发步骤
@@ -68,7 +68,7 @@ format: md
        }
      }
    ```
-3. 构建一个简单配置的页面，在页面中引入FunctionComponent组件，并传入对应的参数。其中agentId、onError是必填参数。其他可选参数可参见[FunctionComponent（功能组件）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/hmaf-function-component)。Function组件布局可参考[组件布局](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development)。
+3. 构建一个简单配置的页面，在页面中引入FunctionComponent组件，并传入对应的参数。其中agentId、onError是必填参数。其他可选参数可参见[FunctionComponent（功能组件）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/hmaf-function-component)。Function组件布局可参考[组件布局](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development)。
 
    ```
    @Entry

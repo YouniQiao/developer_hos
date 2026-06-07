@@ -1,6 +1,6 @@
 ---
 title: "创建测试态服务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-create-teststate-service-0000002456705197
+original_url: /docs/distribute/agc/agc-help-beacon-apply-teststate-service-0000002456705193/agc-help-beacon-create-teststate-service-0000002456705197
 format: md
 ---
 
@@ -61,7 +61,7 @@ format: md
 
 为了确保输入内容的正确性和合规性，防止出现涉黄、涉政、涉暴等敏感信息，近场服务已接入风控系统。在配置或查看近场服务内容时，如果页面提示“输入内容可能存在风险”或“输入内容不合规”，建议您修改为合规内容，以避免服务申请被驳回。
 
-当前支持2\*2格式的图文版、双按钮版、单按钮版模板卡片和预置卡片。其中，预置卡片权限需单独申请，请参考[预置卡片权限](https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-apply-permission-0000002382902149#section562916152116)发送申请邮件。请根据您的实际使用场景选择合适的卡片类型。
+当前支持2\*2格式的图文版、双按钮版、单按钮版模板卡片和预置卡片。其中，预置卡片权限需单独申请，请参考[预置卡片权限](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-apply-permission-0000002382902149#section562916152116)发送申请邮件。请根据您的实际使用场景选择合适的卡片类型。
 
 * 模板卡片-图文版（适合信息量少，有1个跳转热区的卡片）
 
@@ -75,7 +75,7 @@ format: md
   | 主标题 | 对关键内容的简要说明，会在卡片上加粗显示。不超过10个字符，建议控制在9个字符以内。 |
   | 副标题 | 对关键内容的阐述。不超过26个字符，建议控制在11个字符以内。 |
   | 意图名称 | 下拉框选择您已在应用程序包中定义的意图名称。  **若您切换了应用程序包，需重新选择意图名称****。** |
-  | 跳转参数 | 可选，[意图调用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-call-intents-0000002443081421)时定义的意图参数，通过该参数可跳转指定页面，不超过128个字符。  需要按key=value的键值对形式输入，多个键值对之间以“&”分隔，填写样例：parameterA=valueA&parameterB=valueB。  点击卡片任意区域将跳转指定页面。 |
+  | 跳转参数 | 可选，[意图调用](/docs/distribute/agc/agc-help-insight-config-poi-0000002349175932/agc-help-call-intents-0000002443081421)时定义的意图参数，通过该参数可跳转指定页面，不超过128个字符。  需要按key=value的键值对形式输入，多个键值对之间以“&”分隔，填写样例：parameterA=valueA&parameterB=valueB。  点击卡片任意区域将跳转指定页面。 |
 * 模板卡片-双按钮版（适合有2个跳转热区的卡片）
 
   ![](../img/agc-help-beacon-create-teststate-service-0000002456705197_8.png)

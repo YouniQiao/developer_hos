@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "开发者使用Account Kit的登录能力的管理细则"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-detailedrules
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-detailedrules
 format: md
 ---
 
 
-为了保护用户隐私信息，确保用户获得良好的登录体验，根据[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/app/20209)、[《应用审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50104)、[《元服务审核指南》](https://developer.huawei.com/consumer/cn/doc/app/50129)等相关协议条款及现行法律法规，平台制定了华为账号登录管理细则，使用华为账号登录的应用请遵照执行，具体要求如下：
+为了保护用户隐私信息，确保用户获得良好的登录体验，根据[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](/docs/distribute/app-dist/app-market/x20240513/x20209)、[《应用审核指南》](/docs/distribute/app-dist/app-market/x50000/x50104/x50104-overview)、[《元服务审核指南》](/docs/distribute/app-dist/app-market/x50000/x50129/x50129-overview)等相关协议条款及现行法律法规，平台制定了华为账号登录管理细则，使用华为账号登录的应用请遵照执行，具体要求如下：
 
 ## 上架审核要求
 
@@ -18,7 +18,7 @@ format: md
 
 ## 登录规范
 
-华为账号提供登录设计规范，保障HarmonyOS应用拥有简单易用、高效一致、快速安全的登录体验。帮助用户使用已有的华为账号登录所有的应用。有关设计规范，请参阅[华为账号开放登录](https://developer.huawei.com/consumer/cn/doc/design-guides/id-0000001880001344)。
+华为账号提供登录设计规范，保障HarmonyOS应用拥有简单易用、高效一致、快速安全的登录体验。帮助用户使用已有的华为账号登录所有的应用。有关设计规范，请参阅[华为账号开放登录](/docs/design/system-features/capabilities/huawei-id)。
 
 ## 附则
 

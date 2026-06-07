@@ -1,6 +1,6 @@
 ---
 title: "栅格布局"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-grid
+original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-components-grid
 format: md
 ---
 

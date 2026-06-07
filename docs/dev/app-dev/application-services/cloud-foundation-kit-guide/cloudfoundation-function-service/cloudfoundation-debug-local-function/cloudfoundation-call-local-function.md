@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "调用本地云函数"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-call-local-function
+original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-debug-local-function/cloudfoundation-call-local-function
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ## 设置“设备端口”到“主机端口”的映射
 
-调用本地云函数之前，请按照以下示例设置“设备端口”到“主机端口”的映射。详情请参见[创建反向端口转发任务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#创建反向端口转发任务)。
+调用本地云函数之前，请按照以下示例设置“设备端口”到“主机端口”的映射。详情请参见[创建反向端口转发任务](/docs/dev/app-dev/system/hdc#创建反向端口转发任务)。
 
 ```
 hdc rport tcp:18090 tcp:18090

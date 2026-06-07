@@ -1,6 +1,6 @@
 ---
 title: "概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-service-materials-overview-0000002467741988
+original_url: /docs/distribute/agc/agc-help-service-materials-0000002501020901/agc-help-service-materials-overview-0000002467741988
 format: md
 ---
 
@@ -14,11 +14,11 @@ format: md
 
 服务素材包含以下两个模块：
 
-* [素材管理](https://developer.huawei.com/consumer/cn/doc/app/agc-help-materials-manage-0000002500940929)：支持上传宽\*高为600\*600px、600\*800px、442\*248px、1200\*600px四种尺寸的主题图，并可设置素材模板的主标题、副标题、按钮名称、关联的POI位置、跳转页面等信息。
+* [素材管理](/docs/distribute/agc/agc-help-service-materials-0000002501020901/agc-help-materials-manage-0000002500940929)：支持上传宽\*高为600\*600px、600\*800px、442\*248px、1200\*600px四种尺寸的主题图，并可设置素材模板的主标题、副标题、按钮名称、关联的POI位置、跳转页面等信息。
 * 模板管理：支持使用已添加的素材构建不同尺寸的模板卡片，分别为竖卡（4\*3）、小卡（2\*2）、微卡（1\*2）、中卡（2\*4）。您可以根据模板卡片的展示渠道，在对应尺寸区域新增并提交模板。模板尺寸和展示渠道的对应关系如下：
-  + [4\*3类型](https://developer.huawei.com/consumer/cn/doc/app/agc-help-templates-for-negative-screen-0000002475304140)：在负一屏探索流渠道展示。
+  + [4\*3类型](/docs/distribute/agc/agc-help-templates-manage-0000002467901652/agc-help-templates-for-negative-screen-0000002475304140)：在负一屏探索流渠道展示。
   + 1\*2类型：在花瓣地图、手表等渠道展示。
-  + [2\*2类型](https://developer.huawei.com/consumer/cn/doc/app/agc-help-templates-for-xiaoyi-0000002475464058)：在小艺建议渠道展示。
+  + [2\*2类型](/docs/distribute/agc/agc-help-templates-manage-0000002467901652/agc-help-templates-for-xiaoyi-0000002475464058)：在小艺建议渠道展示。
   + 2\*4类型：在锁屏渠道展示。
 
   如果构建的模板卡片数量较多，您可以对模板卡片进行搜索、筛选、批量下线或批量删除等操作。

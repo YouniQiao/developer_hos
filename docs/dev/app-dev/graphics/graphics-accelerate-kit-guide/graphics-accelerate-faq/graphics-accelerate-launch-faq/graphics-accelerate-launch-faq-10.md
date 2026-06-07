@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "游戏接入秒级启动后无法热更应该如何处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-launch-faq-10
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-10
 format: md
 ---
 
@@ -11,4 +11,4 @@ format: md
 **解决方案**：可类比游戏长时间挂后台，再切回前台场景。
 
 1. 若游戏存在游戏内热更检测逻辑，可在游戏中特定事件或定期检测远端热更资源更新，若存在更新则弹出模态窗口提示用户有热更资源，强制玩家退出。
-2. 秒级启动会创建新的[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability)，其生命周期也会全量执行，开发者可在[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)或者其它生命周期阶段执行资源更新检测逻辑，当检测到存在热更新资源时，可主动取消秒级启动流程。玩家当次退出后，系统不再制作内存镜像，游戏下一次启动将以冷启动方式运行，从而执行完整的资源更新流程。
+2. 秒级启动会创建新的[UIAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability)，其生命周期也会全量执行，开发者可在[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)或者其它生命周期阶段执行资源更新检测逻辑，当检测到存在热更新资源时，可主动取消秒级启动流程。玩家当次退出后，系统不再制作内存镜像，游戏下一次启动将以冷启动方式运行，从而执行完整的资源更新流程。

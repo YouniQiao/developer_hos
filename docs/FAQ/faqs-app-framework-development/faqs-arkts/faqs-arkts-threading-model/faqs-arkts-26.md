@@ -1,6 +1,6 @@
 ---
 title: "如何设置Task优先级"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-26
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-26
 format: md
 ---
 

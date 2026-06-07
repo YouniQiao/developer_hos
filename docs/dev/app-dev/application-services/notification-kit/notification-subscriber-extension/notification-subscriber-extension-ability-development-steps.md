@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "通知订阅扩展能力开发步骤"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/notification-subscriber-extension-ability-development-steps
+original_url: /docs/dev/app-dev/application-services/notification-kit/notification-subscriber-extension/notification-subscriber-extension-ability-development-steps
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
 ## 前提条件
 
-申请[ohos.permission.SUBSCRIBE\_NOTIFICATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionsubscribe_notification)权限。
+申请[ohos.permission.SUBSCRIBE\_NOTIFICATION](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionsubscribe_notification)权限。
 
 ## 开发步骤
 
@@ -51,7 +51,7 @@ format: md
      // ...
    }
    ```
-3. 使用[蓝牙模块](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/connectivity-kit-intro#蓝牙简介)接口与穿戴设备配对（蓝牙处于配对状态）并获取地址，然后通过[subscribe](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationextensionsubscription#notificationextensionsubscriptionsubscribe)/[unsubscribe](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationextensionsubscription#notificationextensionsubscriptionunsubscribe)接口订阅或取消订阅通知。
+3. 使用[蓝牙模块](/docs/dev/app-dev/system/system-network/connectivity-kit/connectivity-kit-intro#蓝牙简介)接口与穿戴设备配对（蓝牙处于配对状态）并获取地址，然后通过[subscribe](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationextensionsubscription#notificationextensionsubscriptionsubscribe)/[unsubscribe](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationextensionsubscription#notificationextensionsubscriptionunsubscribe)接口订阅或取消订阅通知。
 4. 实现[NotificationSubscriberExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability)后，还需要在合适的时机调用[openSubscriptionSettings](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationextensionsubscription#notificationextensionsubscriptionopensubscriptionsettings)接口，打开通知扩展订阅设置页面，引导用户授予获取本机通知的权限，该页面以半模态弹窗显示。建议在设备管理页面提供一个通知授权的按钮，用户点击按钮则调用[openSubscriptionSettings](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationextensionsubscription#notificationextensionsubscriptionopensubscriptionsettings)接口。
 5. 在应用的module.json5文件中配置extensionAbilities。
 
@@ -82,7 +82,7 @@ format: md
 8. 用户收到消息后，假如蓝牙连接是无效的，则建立蓝牙连接。
 9. 假如蓝牙连接已经存在，则直接使用这个连接发送消息。
 10. 如果使用该连接发送消息失败，则重新建立连接，如果连接能建立成功则发送消息。
-11. 需要申请权限[ohos.permission.ACCESS\_BLUETOOTH](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all-user#ohospermissionaccess_bluetooth)。如何配置和申请权限，具体操作请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)和[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+11. 需要申请权限[ohos.permission.ACCESS\_BLUETOOTH](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user#ohospermissionaccess_bluetooth)。如何配置和申请权限，具体操作请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)和[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
     ```
     import { hilog } from '@kit.PerformanceAnalysisKit';

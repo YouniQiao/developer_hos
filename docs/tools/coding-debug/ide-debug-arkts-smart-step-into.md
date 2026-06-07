@@ -1,7 +1,7 @@
 ---
 title: "智能步入"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-debug-arkts-smart-step-into
+original_url: /docs/tools/coding-debug/ide-debug-arkts-smart-step-into
 format: md
 ---
 

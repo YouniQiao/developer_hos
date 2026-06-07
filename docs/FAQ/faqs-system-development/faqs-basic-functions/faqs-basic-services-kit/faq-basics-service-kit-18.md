@@ -1,7 +1,7 @@
 ---
 format: md
 title: "应用使用API如何在不同系统版本设备上做兼容性保护判断（ArkTS/C++）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faq-basics-service-kit-18
+original_url: /docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-18
 ---
 
 

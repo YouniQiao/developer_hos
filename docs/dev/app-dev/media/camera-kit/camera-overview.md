@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Camera Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-overview
+original_url: /docs/dev/app-dev/media/camera-kit/camera-overview
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "错误码说明"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_if_error-code-0000001263223153
+original_url: /docs/monetize/monetization/agd_pro_api_if_error-code-0000001263223153
 format: md
 ---
 
@@ -23,7 +23,7 @@ format: md
 | 1010 | INVALID\_STYLE\_TYPE | 非法样式类型 style type。 |
 | 1011 | CALL\_CODE\_NOT\_ZERO | 调用其他服务返回状态码非0。 |
 | 1012 | PARAMETER\_IS\_INVALID | 参数校验异常。 |
-| **1013** | DEVICE\_NO\_PERMISSION | 媒体无权访问。  **如果使用测试状态的展示位调试，需要在接入测试中配置设备的OAID，否则会上报此错误码。**  具体配置请参见[接入测试](https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_api_commission-0000001411154350#section16922317523)。 |
+| **1013** | DEVICE\_NO\_PERMISSION | 媒体无权访问。  **如果使用测试状态的展示位调试，需要在接入测试中配置设备的OAID，否则会上报此错误码。**  具体配置请参见[接入测试](/docs/monetize/monetization/agd_pro_api_commission-0000001411154350#section16922317523)。 |
 | 1016 | INTERNAL\_RESOURCE\_CONFIG\_ERROR | 内部资源配置错误，请联系华为方应用市场运营，检查并且确认配置。 |
 | 2001 | REPEAT\_CREATE\_BLOCK\_RULE | 重复创建规则名称。 |
 | 3001 | APP\_NOT\_FOUND | AppInfo未能找到。 |

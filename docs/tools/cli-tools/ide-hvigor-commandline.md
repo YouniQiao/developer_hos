@@ -1,7 +1,7 @@
 ---
 title: "命令行构建工具（hvigorw）"
 displayed_sidebar: cliToolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-commandline
+original_url: /docs/tools/cli-tools/ide-hvigor-commandline
 format: md
 ---
 

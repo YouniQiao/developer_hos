@@ -1,6 +1,6 @@
 ---
 title: "分享报告"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-share-0000002286844726
+original_url: /docs/dev/game-dev/games-hismartperf-share-0000002286844726
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ![](./img/5d4067a5.png)
 
-报告必须[上传](https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-cloudview-0000002321404213#section1365144213172)后才能分享。
+报告必须[上传](/docs/dev/game-dev/games-hismartperf-cloudview-0000002321404213#section1365144213172)后才能分享。
 
 1. 在数据报告列表中，选择对应的测试报告，点击分享。
    * 本地分享

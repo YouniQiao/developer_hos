@@ -1,6 +1,6 @@
 ---
 title: "高性能JSON解析"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-high-performance-json-parsing
+original_url: /docs/quality/high-performance-json-parsing
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 * 类型支持：涵盖系统基本类型、常见容器类型（Array、Map、Set）、嵌套类型、泛型、多态和联合类型；
 * 装饰器支持：可通过@Serializable装饰器标记需序列化的类，并利用@SerialName(覆盖属性的名称)、@Required(指定必填属性)、@Transient(忽略属性)装饰器完成属性的定制化配置；
-* 系统能力兼容：支持与[Sendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)和[状态管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview)协同混用；
+* 系统能力兼容：支持与[Sendable](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)和[状态管理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview)协同混用；
 * 大JSON文件读取优化：提供JsonNode懒加载机制与JsonPointer局部访问能力，支持直接读取ArrayBuffer，提升文件解析及反序列化为JSON对象的效率。
 
 本文将围绕JSON序列化和反序列化的典型场景，以TurboTransJSON框架为核心，介绍其使用要点及性能优势。

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "自动签名时提示“The signature does not take effect or has expired. It may be the current system time is inaccurate, please calibrate the system time and sign again”错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-development-environment-14
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-14
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "系统适配技术支持"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-adapt-support-0000002514906059
+original_url: /docs/dev/game-dev/games-adapt-support-0000002514906059
 format: md
 ---
 

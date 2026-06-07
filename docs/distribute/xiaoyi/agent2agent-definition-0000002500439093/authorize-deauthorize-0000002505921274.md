@@ -1,7 +1,7 @@
 ---
 title: "授权登录/解授权"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/authorize-deauthorize-0000002505921274
+original_url: /docs/distribute/xiaoyi/agent2agent-definition-0000002500439093/authorize-deauthorize-0000002505921274
 format: md
 ---
 

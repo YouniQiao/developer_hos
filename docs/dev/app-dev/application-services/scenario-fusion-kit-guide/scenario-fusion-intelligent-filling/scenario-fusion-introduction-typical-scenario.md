@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "典型场景展示"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-typical-scenario
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-typical-scenario
 format: md
 ---
 

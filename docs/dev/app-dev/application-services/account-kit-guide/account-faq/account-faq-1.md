@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "1001500001 应用指纹证书校验失败的可能原因和解决办法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-1
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-1
 format: md
 ---
 
@@ -21,10 +21,10 @@ format: md
 
 **解决措施**
 
-1. 检查module type为entry的模块下的module.json5配置文件中的Client ID是否正确，请参考[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
+1. 检查module type为entry的模块下的module.json5配置文件中的Client ID是否正确，请参考[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。
 
    ![](./img/029a8609.png)
-2. 检查AppGallery Connect上是否正确配置应用的指纹证书，详情请见[添加公钥指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-fingerprint-0000002278002933#section7398154810570)。
+2. 检查AppGallery Connect上是否正确配置应用的指纹证书，详情请见[添加公钥指纹](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-fingerprint-0000002278002933#section7398154810570)。
 
    ![](./img/ee089260.png)
 3. 证书更换后，重新配置更换后的证书指纹。
@@ -38,4 +38,4 @@ format: md
    **图2** 修改后
 
    ![](./img/5d17a858.png)
-6. 请使用手动签名方式进行签名，详情请参考[配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)章节。
+6. 请使用手动签名方式进行签名，详情请参考[配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)章节。

@@ -1,6 +1,6 @@
 ---
 title: "场景介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scene_introduction
+original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_introduction/scene_introduction
 format: md
 ---
 

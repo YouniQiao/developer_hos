@@ -1,8 +1,8 @@
 ---
 format: md
 title: "输入法开发（IME）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ime-kit
+original_url: /docs/FAQ/faqs-ime-kit
 ---
 
 
-* **[光标跟随相关接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ime-1)**
+* **[光标跟随相关接口](/docs/FAQ/faqs-app-framework-development/faqs-input-method-framework/faqs-ime-kit/faqs-ime-1)**

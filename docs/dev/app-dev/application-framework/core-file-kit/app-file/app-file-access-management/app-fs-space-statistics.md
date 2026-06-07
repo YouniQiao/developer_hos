@@ -1,6 +1,6 @@
 ---
 title: "应用及文件系统空间统计"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-fs-space-statistics
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-fs-space-statistics
 format: md
 ---
 
@@ -35,8 +35,8 @@ API的详细介绍请参见[ohos.file.statvfs](https://developer.huawei.com/cons
 | BundleStats属性 | 含义 | 统计路径 |
 | --- | --- | --- |
 | appSize | 应用安装文件大小（单位为Byte） | 应用安装文件保存在以下目录：  /data/storage/el1/bundle |
-| cacheSize | 应用缓存文件大小（单位为Byte） | 应用的缓存文件保存在以下目录：  /data/storage/$\{el1-el5\}/base/cache  /data/storage/$\{el1-el5\}/base/haps/$\{moduleName\}/cache  **说明**：$\{el1-el5\}指的是[el1，el2，el3，el4，el5目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用文件目录与应用文件路径)。$\{moduleName\}是模块名。 |
-| dataSize | 应用文件存储大小（除应用安装文件）（单位为Byte） | 应用文件通常由本地文件、分布式文件、数据库文件等部分组成。  本地文件保存在以下目录（注意缓存文件目录为以下目录的子目录）：  /data/storage/$\{el1-el5\}/base  分布式文件保存在以下目录：  /data/storage/el2/distributedfiles  数据库文件保存在以下目录：  /data/storage/$\{el1-el5\}/database  **说明**：$\{el1-el5\}指的是[el1，el2，el3，el4，el5目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用文件目录与应用文件路径)。 |
+| cacheSize | 应用缓存文件大小（单位为Byte） | 应用的缓存文件保存在以下目录：  /data/storage/$\{el1-el5\}/base/cache  /data/storage/$\{el1-el5\}/base/haps/$\{moduleName\}/cache  **说明**：$\{el1-el5\}指的是[el1，el2，el3，el4，el5目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用文件目录与应用文件路径)。$\{moduleName\}是模块名。 |
+| dataSize | 应用文件存储大小（除应用安装文件）（单位为Byte） | 应用文件通常由本地文件、分布式文件、数据库文件等部分组成。  本地文件保存在以下目录（注意缓存文件目录为以下目录的子目录）：  /data/storage/$\{el1-el5\}/base  分布式文件保存在以下目录：  /data/storage/el2/distributedfiles  数据库文件保存在以下目录：  /data/storage/$\{el1-el5\}/database  **说明**：$\{el1-el5\}指的是[el1，el2，el3，el4，el5目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用文件目录与应用文件路径)。 |
 
 ## 开发示例
 

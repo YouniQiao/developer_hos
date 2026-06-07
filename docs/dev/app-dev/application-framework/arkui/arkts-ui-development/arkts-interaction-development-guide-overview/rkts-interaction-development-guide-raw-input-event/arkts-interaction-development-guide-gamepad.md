@@ -1,6 +1,6 @@
 ---
 title: "支持游戏手柄输入事件"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-gamepad
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-gamepad
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 ## 处理按键输入
 
-游戏手柄的按键输入会被上报为按键事件，其具体处理机制可参考[按键事件数据流](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-development-guide-keyboard#按键事件数据流)。
+游戏手柄的按键输入会被上报为按键事件，其具体处理机制可参考[按键事件数据流](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-keyboard#按键事件数据流)。
 
 为响应手柄的按键操作，开发者需要为组件绑定[onKeyEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-key#onkeyevent)接口回调。当组件处于获焦状态时，手柄的按键操作会触发此回调，进而处理按键输入的相应逻辑。相关示例如下：
 

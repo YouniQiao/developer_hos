@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "文本转语音"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/texttospeech-guide
+original_url: /docs/dev/app-dev/ai/core-speech-kit-guide/texttospeech-guide
 format: md
 ---
 

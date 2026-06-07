@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理AR会话（ArkTS）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-arsession
+original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-arsession
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 ## 约束与限制
 
-从5.1.0(18)开始，管理AR会话支持部分Phone、部分Tablet设备。并且从6.1.0(23)版本开始，新增支持TV设备。请参考[硬件要求](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#硬件要求)判断设备是否支持。
+从5.1.0(18)开始，管理AR会话支持部分Phone、部分Tablet设备。并且从6.1.0(23)版本开始，新增支持TV设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持。
 
 ## 接口说明
 
@@ -48,9 +48,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 通过[ARViewContext.init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arviewcontroller#arviewcontextinit)方法初始化一个AR会话及场景。
 
-在此之前请确保已获取相机权限，否则将不会加载AR场景，具体指导请参考[前置准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#前置准备)或者[申请权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#申请权限)。
+在此之前请确保已获取相机权限，否则将不会加载AR场景，具体指导请参考[前置准备](/docs/dev/app-dev/graphics/arengine-preparations#前置准备)或者[申请权限](/docs/dev/app-dev/graphics/arengine-preparations#申请权限)。
 
-AR会话及场景创建好后使用[组件导航（Navigation）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)组件及[ARView](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-component-arview#arview)组件在设备上显示AR场景，关于[组件导航（Navigation）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navigation)具体指导可参考[前置准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arengine-preparations#前置准备)。
+AR会话及场景创建好后使用[组件导航（Navigation）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)组件及[ARView](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-component-arview#arview)组件在设备上显示AR场景，关于[组件导航（Navigation）](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation)具体指导可参考[前置准备](/docs/dev/app-dev/graphics/arengine-preparations#前置准备)。
 
 ```
 @Builder
@@ -210,4 +210,4 @@ private stopARView(): void {
 
 ![](./img/51577f9e.png)
 
-组件生命周期的方法，除[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)、[aboutToDisappear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttodisappear)、[onPageShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#onpageshow)、[onPageHide](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#onpagehide)外，还可以使用[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的[页面生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-navigation-navdestination#页面生命周期)所示方法，开发者可根据需要进行选择。
+组件生命周期的方法，除[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)、[aboutToDisappear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttodisappear)、[onPageShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#onpageshow)、[onPageHide](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#onpagehide)外，还可以使用[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)的[页面生命周期](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-navdestination#页面生命周期)所示方法，开发者可根据需要进行选择。

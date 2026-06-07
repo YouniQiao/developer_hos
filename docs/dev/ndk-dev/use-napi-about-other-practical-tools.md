@@ -1,6 +1,6 @@
 ---
 title: "使用Node-API其他实用接口"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-other-practical-tools
+original_url: /docs/dev/ndk-dev/use-napi-about-other-practical-tools
 format: md
 ---
 
@@ -26,7 +26,7 @@ Node-API接口提供了一些实用接口，可以帮助开发者更好地进行
 
 ## 使用示例
 
-Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
+Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程](/docs/dev/ndk-dev/use-napi-process)，本文仅对接口对应C++及ArkTS相关代码进行展示。
 
 ### node\_api\_get\_module\_file\_name
 

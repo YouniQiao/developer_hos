@@ -1,13 +1,13 @@
 ---
 title: "概述"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/settlement-overview-0000001176952305
+original_url: /docs/monetize/promotion/settlement-overview-0000001176952305
 ---
 import MergeTable from '@site/src/components/MergeTable';
 
 # 概述
 
-本章节为直客财务结算，服务商财务结算请参考[服务商财务管理](https://developer.huawei.com/consumer/cn/doc/promotion/finance-0000001058604140)。
+本章节为直客财务结算，服务商财务结算请参考[服务商财务管理](/docs/monetize/promotion/finance-0000001058604140)。
 
 ## 术语介绍
 
@@ -40,8 +40,8 @@ import MergeTable from '@site/src/components/MergeTable';
 
 广告账户注册后，需要进行现金账户充值后才能进行广告投放，您可以选择的支付方式如下：
 
-- **[线下充值](https://developer.huawei.com/consumer/cn/doc/promotion/charge-0000001052064326)：**您可以通过银行转账到[指定银行账户](#ZH-CN_TOPIC_0000001176952305__table169021827151913)的方式进行充值，银行转账之后需要您在鲸鸿动能广告平台提交充值申请，审批通过后充值进现金账户余额，投放广告时从账户余额中进行扣费。
-- **[线上充值](https://developer.huawei.com/consumer/cn/doc/promotion/online-top-up-0000001148173308)**：您可以通过线上充值的方式在广告投放之前先充值，金额将会充值到现金账户余额。
+- **[线下充值](/docs/monetize/promotion/charge-0000001052064326)：**您可以通过银行转账到[指定银行账户](#ZH-CN_TOPIC_0000001176952305__table169021827151913)的方式进行充值，银行转账之后需要您在鲸鸿动能广告平台提交充值申请，审批通过后充值进现金账户余额，投放广告时从账户余额中进行扣费。
+- **[线上充值](/docs/monetize/promotion/online-top-up-0000001148173308)**：您可以通过线上充值的方式在广告投放之前先充值，金额将会充值到现金账户余额。
 
 注：来自俄罗斯地区的企业主体，请通过以下链接中的Petal Ads Certified Partner进行广告充值：
 

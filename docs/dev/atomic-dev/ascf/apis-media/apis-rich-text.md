@@ -1,6 +1,6 @@
 ---
 title: "富文本"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-rich-text
+original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-rich-text
 format: md
 ---
 

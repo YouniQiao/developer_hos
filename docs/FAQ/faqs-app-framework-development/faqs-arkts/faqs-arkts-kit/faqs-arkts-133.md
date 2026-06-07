@@ -1,7 +1,7 @@
 ---
 format: md
 title: "对于网络请求这类I/O密集型任务是否需要使用多线程进行处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-133
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-133
 ---
 
 

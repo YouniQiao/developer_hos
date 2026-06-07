@@ -1,6 +1,6 @@
 ---
 title: "功耗分析"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-gpm-power-consumption-analysis-0000002298973088
+original_url: /docs/dev/game-dev/games-gpm-power-consumption-analysis-0000002298973088
 format: md
 ---
 

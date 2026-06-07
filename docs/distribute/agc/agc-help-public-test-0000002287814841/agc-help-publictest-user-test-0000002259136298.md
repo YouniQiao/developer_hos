@@ -1,6 +1,6 @@
 ---
 title: "用户参与测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-publictest-user-test-0000002259136298
+original_url: /docs/distribute/agc/agc-help-public-test-0000002287814841/agc-help-publictest-user-test-0000002259136298
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何在编译过程中添加自定义任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-58
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-58
 ---
 
 

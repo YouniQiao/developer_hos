@@ -1,6 +1,6 @@
 ---
 title: "用户文件URI介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/user-file-uri-intro
+original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/user-file-uri-intro
 format: md
 ---
 
@@ -39,7 +39,7 @@ URI类型可以归纳为文档类URI和媒体文件URI两类
 
 ### 文档类URI的使用方式
 
-应用使用此类URI可通过[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)进行进一步处理。示例代码参见picker中的[选择文档类文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/select-user-file#选择文档类文件)和[保存文档类文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/save-user-file#保存文档类文件)。
+应用使用此类URI可通过[文件管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)进行进一步处理。示例代码参见picker中的[选择文档类文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file#选择文档类文件)和[保存文档类文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file#保存文档类文件)。
 
 ## 媒体文件URI
 
@@ -78,7 +78,7 @@ URI类型可以归纳为文档类URI和媒体文件URI两类
 
 ### 媒体文件URI的使用方式
 
-normal等级的应用使用此类URI可以通过[photoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper)模块进行进一步处理。示例代码参见媒体资源使用指导中的[指定URI获取图片或视频资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-photoviewpicker#指定uri获取图片或视频资源)。此接口需要申请相册管理模块读权限（[ohos.permission.READ\_IMAGEVIDEO](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/photoaccesshelper-overview#能力范围)），在使用中需要注意应用是否有此权限。
+normal等级的应用使用此类URI可以通过[photoAccessHelper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper)模块进行进一步处理。示例代码参见媒体资源使用指导中的[指定URI获取图片或视频资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker#指定uri获取图片或视频资源)。此接口需要申请相册管理模块读权限（[ohos.permission.READ\_IMAGEVIDEO](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview#能力范围)），在使用中需要注意应用是否有此权限。
 
 若normal等级的应用不想申请权限也可以通过临时授权的方式使用PhotoAccessHelper的[PhotoViewPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoviewpicker)得到的URI使用[photoAccessHelper.getAssets](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper#getassets)接口获取对应URI的PhotoAsset对象。通过此方式获取的PhotoAsset对象可调用[getThumbnail](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset#getthumbnail)方法获取缩略图，并通过[get](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset#get)接口方法读取[PhotoKeys](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#photokeys)中的部分信息。
 

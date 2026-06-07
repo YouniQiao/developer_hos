@@ -1,6 +1,6 @@
 ---
 title: "创建弧形轮播 (ArcSwiper)（圆形屏幕推荐使用）"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-arcswiper
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-layout-development-arcswiper
 format: md
 ---
 

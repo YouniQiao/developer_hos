@@ -1,7 +1,7 @@
 ---
 title: "离线部署模拟器"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-emulator-no-network
+original_url: /docs/tools/coding-debug/ide-emulator-no-network
 format: md
 ---
 

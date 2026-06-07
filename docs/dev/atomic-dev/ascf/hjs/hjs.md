@@ -1,6 +1,6 @@
 ---
 title: "hjs"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/hjs
+original_url: /docs/dev/atomic-dev/ascf/hjs/hjs
 format: md
 ---
 
@@ -40,4 +40,4 @@ Page({
 });
 ```
 
-* **[响应事件](https://developer.huawei.com/consumer/cn/doc/atomic-ascf/hjs-responding-event)**
+* **[响应事件](/docs/dev/atomic-dev/ascf/hjs/hjs-responding-event)**

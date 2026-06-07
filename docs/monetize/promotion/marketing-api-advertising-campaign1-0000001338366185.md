@@ -1,7 +1,7 @@
 ---
 title: "创建计划"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-advertising-campaign1-0000001338366185
+original_url: /docs/monetize/promotion/marketing-api-advertising-campaign1-0000001338366185
 format: md
 ---
 
@@ -24,9 +24,9 @@ format: md
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
   | campaign\_name | string | 是 | 计划名称。  不能使用“^”,“|”，换行符；  最大长度不得超过100；  计划名称不得重复。 |
-  | product\_type | string | 是 | 推广产品，详见[推广产品类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
-  | daily\_budget | integer | 是 | 当日预算。  整数位数长度不得超9位；  如果日预算不限制，则设置为999999999，最小限额约束见[创建限额约束](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix5-0000001338486113#section730115421086)。 |
-  | campaign\_type | string | 否 | 计划类型，详见[计划类型](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)。  默认是CAMPAIGN\_TYPE\_DISPLAY。 |
+  | product\_type | string | 是 | 推广产品，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
+  | daily\_budget | integer | 是 | 当日预算。  整数位数长度不得超9位；  如果日预算不限制，则设置为999999999，最小限额约束见[创建限额约束](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#section730115421086)。 |
+  | campaign\_type | string | 否 | 计划类型，详见[计划类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)。  默认是CAMPAIGN\_TYPE\_DISPLAY。 |
   | sync\_flow\_resource\_searchad | string | 否 | 同时同步投放搜索广告网络。  YES：展示广告网络同时投放到搜索广告网络。  NO：只投放展示广告网络。  计划类型是展示广告或者商品广告时，同时投放受角色和白名单控制。 |
 
   - <strong>请求示例</strong>

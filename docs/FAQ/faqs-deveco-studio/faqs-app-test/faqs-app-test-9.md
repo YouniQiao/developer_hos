@@ -1,7 +1,7 @@
 ---
 format: md
 title: "ohosTest测试文件引用了启动页的导出方法，测试时报错“Load Page Failed: pages/Index”"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-test-9
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-9
 ---
 
 

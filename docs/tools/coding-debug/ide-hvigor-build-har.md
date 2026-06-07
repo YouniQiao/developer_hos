@@ -1,7 +1,7 @@
 ---
 title: "构建HAR"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-hvigor-build-har
+original_url: /docs/tools/coding-debug/ide-hvigor-build-har
 format: md
 ---
 

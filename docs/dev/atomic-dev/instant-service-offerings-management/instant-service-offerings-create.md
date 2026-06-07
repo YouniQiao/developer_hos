@@ -1,6 +1,6 @@
 ---
 title: "创建商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-create
+original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-create
 format: md
 ---
 

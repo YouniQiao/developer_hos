@@ -1,7 +1,7 @@
 ---
 title: "查询任务数据报表"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-ocpd-inquire-task-0000001238164548
+original_url: /docs/monetize/promotion/bp-functions-ocpd-inquire-task-0000001238164548
 format: md
 ---
 

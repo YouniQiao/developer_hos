@@ -1,6 +1,6 @@
 ---
 title: "创建服务卡片（FormKit）"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit-create
+original_url: /docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit-create
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/no-invalid-void-type"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-invalid-void-type
+original_url: /docs/tools/coding-debug/ide_no-invalid-void-type
 format: md
 ---
 

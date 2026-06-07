@@ -1,7 +1,7 @@
 ---
 title: "批量添加商品"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-tool-dpa9-0000001338502489
+original_url: /docs/monetize/promotion/marketing-api-tool-dpa9-0000001338502489
 format: md
 ---
 
@@ -155,7 +155,7 @@ format: md
   | dspredeeplinksku\_url | string | 否 | DeepLink-热卖SKU页。 |
   | taxs | string[] | 否 | 税率, 包含以下子属性：  1、国家/地区码（可选）：遵循ISO 3166标准。  2、地区（可选）：地区名或邮编。  3、税率（必选）：百分比形式，例如29表示29%。  4、运费税（可选）：标识是否收取运费税，取值为yes、no、y或n。  多个值：["US:CA:5:y","US:LA:7:n"]；  属性有空值：["US::5:y"]。 |
   | shipping | string[] | 否 | 运费,其为一个list，对应各个地区不同的运费。  包含 4 个子属性：  1、国家/地区（可选）：ISO 3166 国家/地区代码；  2、送货区域(可选):region [地区] /postal\_​code [邮政编码] / location\_​id [地理位置 ID] /location\_group\_name [地理位置组名称]（可选属性）；  3、服务（可选）：服务级别或送货速度；  4、价格（必需）：固定运费，包含增值；  取值示例：  "US:CA:Overnight:16.00 USD"，多个值和空值类似taxs。 |
-  | product\_condition | string | 否 | 商品使用情况，详见[商品使用情况](https://developer.huawei.com/consumer/cn/doc/promotion/marketing-api-appendix1-0000001174597591#section44071308341)。 |
+  | product\_condition | string | 否 | 商品使用情况，详见[商品使用情况](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section44071308341)。 |
   | release\_country | string[] | 否 | 商品投放或销售国家列表，取值示例：["US", "CN"]。 |
 
   - <strong>请求示例</strong>

@@ -1,13 +1,13 @@
 ---
 title: "@Event装饰器：规范组件输出"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-event
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-event
 format: md
 ---
 
 
 为了实现子组件向父组件要求更新@Param装饰变量的能力，开发者可以使用@Event装饰器。使用@Event装饰回调方法是一种规范，表明子组件需要传入更新数据源的回调。
 
-@Event主要配合@Param实现数据的双向同步。在阅读本文档前，建议提前阅读：[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)。
+@Event主要配合@Param实现数据的双向同步。在阅读本文档前，建议提前阅读：[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)。
 
 ![](./img/48409ceb.png)
 
@@ -19,7 +19,7 @@ format: md
 
 ## 概述
 
-由于@Param装饰的变量在本地无法更改，使用@Event装饰器装饰回调方法并调用，可以实现更新数据源的变量，再通过[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)的同步机制，将修改同步回@Param装饰的变量，以此达到主动更新@Param装饰变量的效果。
+由于@Param装饰的变量在本地无法更改，使用@Event装饰器装饰回调方法并调用，可以实现更新数据源的变量，再通过[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)的同步机制，将修改同步回@Param装饰的变量，以此达到主动更新@Param装饰变量的效果。
 
 @Event用于装饰组件对外输出的方法：
 
@@ -39,7 +39,7 @@ format: md
 
 ## 限制条件
 
-* @Event只能用在[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)装饰的自定义组件中。当装饰非方法类型的变量时，不会有任何作用。
+* @Event只能用在[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2)装饰的自定义组件中。当装饰非方法类型的变量时，不会有任何作用。
 
   ```
   @ComponentV2

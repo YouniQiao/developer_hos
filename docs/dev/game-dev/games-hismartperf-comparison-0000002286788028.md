@@ -1,6 +1,6 @@
 ---
 title: "数据对比"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-hismartperf-comparison-0000002286788028
+original_url: /docs/dev/game-dev/games-hismartperf-comparison-0000002286788028
 format: md
 ---
 

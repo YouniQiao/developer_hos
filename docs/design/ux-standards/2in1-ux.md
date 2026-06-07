@@ -1,7 +1,7 @@
 ---
 title: 电脑应用 UX 体验标准
 sidebar_label: 电脑应用 UX 体验标准
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-2in1-0000001777895636
+original_url: /docs/design/ux-standards/2in1-ux
 format: md
 ---
 
@@ -37,7 +37,7 @@ format: md
 | 标准等级 | | 必须 |
 | 适用设备类型 | | 电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[多设备窗口形态-窗口沉浸式](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-window-immersive) |
+| 系统能力 | | 请参阅[多设备窗口形态-窗口沉浸式](/docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive) |
 
 5.1.3 支持窗口尺寸调节
 
@@ -50,7 +50,7 @@ format: md
 | 标准等级 | | 推荐 |
 | 适用设备类型 | | 电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[自适应布局](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout) |
+| 系统能力 | | 请参阅[自适应布局](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout) |
 
 5.1.4 支持分屏和比例调节
 
@@ -63,7 +63,7 @@ format: md
 | 标准等级 | | 推荐 |
 | 适用设备类型 | | 电脑 |
 | 需考虑的特殊事项 | | 无 |
-| 系统能力 | | 请参阅[一多开发实例（购物比价）-商品详情页](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-shopping-price-comparison#section112893356386) |
+| 系统能力 | | 请参阅[一多开发实例（购物比价）-商品详情页](/docs/dev/app-dev/multi-device/multi-shopping-price-comparison#section112893356386) |
 
 5.1.5 窗口内容状态保持
 

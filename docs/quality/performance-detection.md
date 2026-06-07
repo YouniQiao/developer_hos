@@ -1,6 +1,6 @@
 ---
 title: "开发态性能检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-performance-detection
+original_url: /docs/quality/performance-detection
 format: md
 ---
 
@@ -106,7 +106,7 @@ format: md
 
 ## Testing测试报告导入体检工具分析
 
-[DevEco Testing](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deveco-testing)为开发者提供了稳定性、性能、应用基础质量等专项测试服务。通过DevEco Testing进行场景化性能测试，可检测出应用相关场景的性能问题，生成测试报告。为进一步分析定位应用问题，可将Testing测试报告导入至体检工具AppAnalyzer，从而对应用进行本地测试体检与优化。
+[DevEco Testing](/docs/dev/testing/deveco-testing)为开发者提供了稳定性、性能、应用基础质量等专项测试服务。通过DevEco Testing进行场景化性能测试，可检测出应用相关场景的性能问题，生成测试报告。为进一步分析定位应用问题，可将Testing测试报告导入至体检工具AppAnalyzer，从而对应用进行本地测试体检与优化。
 
 **图1** Testing测试报告导入体检工具分析流程
 
@@ -116,7 +116,7 @@ Testing测试报告导入体检工具分析的过程主要包括以下步骤。
 
 1. **DevEco Testing测试**
 
-   使用DevEco Testing进行场景化性能测试，支持编写测试脚本和自定义测试场景对应用性能进行评估。具体使用方法和指导请见：[场景化性能测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing#section8642101711299)。
+   使用DevEco Testing进行场景化性能测试，支持编写测试脚本和自定义测试场景对应用性能进行评估。具体使用方法和指导请见：[场景化性能测试](/docs/dev/testing/specialized-testing#section8642101711299)。
 
    ![](./img/4851e84b.png "点击放大")
 

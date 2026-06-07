@@ -1,6 +1,6 @@
 ---
 title: "背板透明卡片开发指导"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-transparent-backplate-form-development
+original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-transparent-backplate-form/arkts-ui-transparent-backplate-form-development
 format: md
 ---
 
@@ -48,10 +48,10 @@ format: md
 
 下面给出示例，实现背板透明卡片功能。
 
-1. [创建卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-creation)。
+1. [创建卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)。
 2. 配置背板透明卡片。
 
-   在form\_config.json配置文件中，背板透明卡片必须配置transparencyEnabled字段为true。具体参考[配置文件字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#配置文件字段说明)。
+   在form\_config.json配置文件中，背板透明卡片必须配置transparencyEnabled字段为true。具体参考[配置文件字段说明](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#配置文件字段说明)。
 
    ```
    // entry/src/main/resources/base/profile/form_config.json

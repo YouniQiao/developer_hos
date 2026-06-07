@@ -1,6 +1,6 @@
 ---
 title: "ArkWeb组件安全开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-arkweb-component-security
+original_url: /docs/security/arkweb-security
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 
 ### 目标
 
-本文旨在指导应用开发者在Hybrid混合应用开发模式下安全地使用ArkWeb组件。Hybrid混合开发指，开发者通过Web H5技术构建可动态加载与渲染的页面（如商品推广、隐私政策等），并通过应用内置的ArkWeb组件进行展示。同时，开发者可依托[JSBridge](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkweb-ndk-jsbridge)的能力，让Web页面能够方便地使用应用原生功能，例如获取地理位置、调用摄像头甚至移动支付等功能。
+本文旨在指导应用开发者在Hybrid混合应用开发模式下安全地使用ArkWeb组件。Hybrid混合开发指，开发者通过Web H5技术构建可动态加载与渲染的页面（如商品推广、隐私政策等），并通过应用内置的ArkWeb组件进行展示。同时，开发者可依托[JSBridge](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/arkweb-ndk-jsbridge)的能力，让Web页面能够方便地使用应用原生功能，例如获取地理位置、调用摄像头甚至移动支付等功能。
 
 该模式在提升开发灵活性与Web交互能力的同时，也使大量敏感能力暴露至Web侧，显著扩大攻击面。此外，诸如跨站脚本攻击、身份混淆、明文数据传输等常见Web漏洞，会进一步削弱混合应用的整体安全性，增加了恶意代码注入、权限滥用、敏感信息泄露等高危风险的发生概率。
 
@@ -459,7 +459,7 @@ try {
 
 通过JavaScriptProxy接口注册的方法能被攻击者利用，导致加载恶意内容、执行恶意代码、滥用敏感资源等风险。
 
-参考文档：[如何建立应用侧与H5侧的交互通道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-page-app-function-invoking#如何建立应用侧与h5侧的交互通道)
+参考文档：[如何建立应用侧与H5侧的交互通道](/docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-page-app-function-invoking#如何建立应用侧与h5侧的交互通道)
 
 ### 注册JavaScriptProxy接口时遵循最小必要原则
 

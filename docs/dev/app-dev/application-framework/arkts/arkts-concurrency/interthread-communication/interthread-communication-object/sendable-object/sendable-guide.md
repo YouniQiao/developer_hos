@@ -1,6 +1,6 @@
 ---
 title: "Sendable使用场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-guide
 format: md
 ---
 
@@ -114,7 +114,7 @@ export class Test {
 
 ## 跨并发实例传递带方法的class实例对象
 
-在序列化传输实例对象时，会丢失方法。因此，若需调用实例方法，应使用引用传递。处理数据时，若需解析数据，可使用[ASON工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ason-parsing-generation)。
+在序列化传输实例对象时，会丢失方法。因此，若需调用实例方法，应使用引用传递。处理数据时，若需解析数据，可使用[ASON工具](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/ason-parsing-generation)。
 
 **示例：**
 

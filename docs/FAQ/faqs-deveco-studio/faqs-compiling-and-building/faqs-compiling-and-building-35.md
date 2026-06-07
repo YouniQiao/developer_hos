@@ -1,7 +1,7 @@
 ---
 format: md
 title: "更新Hvigor版本时，配置了依赖却在build init时报未找到此依赖"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-35
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-35
 ---
 
 

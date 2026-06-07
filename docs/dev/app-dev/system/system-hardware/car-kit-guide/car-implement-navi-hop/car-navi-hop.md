@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "导航流转至车机"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-navi-hop
+original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-implement-navi-hop/car-navi-hop
 format: md
 ---
 
@@ -48,7 +48,7 @@ SmartMobilityEvent事件名（eventName）取值如下：
 
 1. 能力配置。
 
-   请参考[配置能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/car-preparations#配置能力)进行配置。导航流转至车机场景下，metadata的name取值为carHopCapability。对应的value值根据不同的使用场景取值如下：
+   请参考[配置能力](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare#配置能力)进行配置。导航流转至车机场景下，metadata的name取值为carHopCapability。对应的value值根据不同的使用场景取值如下：
 
    * 碰一碰导航流转场景下，value取值为**carHopNavi**。
    * 上车导航自动流转场景下，value取值为**getOnCarNavi**。

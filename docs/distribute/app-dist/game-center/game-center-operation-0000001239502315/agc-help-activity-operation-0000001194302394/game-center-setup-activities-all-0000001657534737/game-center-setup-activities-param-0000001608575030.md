@@ -1,7 +1,7 @@
 ---
 title: "参数说明"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-param-0000001608575030
+original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-param-0000001608575030
 ---
 import MergeTable from "@site/src/components/MergeTable";
 
@@ -20,7 +20,7 @@ import MergeTable from "@site/src/components/MergeTable";
 | --- | --- |
 | 奖品名称 | 华为优惠券名称。建议格式为“金额+优惠券”，例如“5元优惠券”，要求1~100个字符。 |
 | 奖品描述 | 华为优惠券的领取说明和使用要求。要求1~2000个字符。   * “满减券”示例：当前华为优惠券需单笔消费达到指定金额可抵现。每笔订单限用1张，且不支持与其他券叠加使用。有效期为\*天，逾期将失效，您可进入“我的 > 优惠券”查询优惠券详情。 * “无门槛券”示例：华为优惠券可在指定应用中抵现，有效期为\*天，逾期将失效，您可进入“我的 > 优惠券”查询优惠券详情。 |
-| 华为优惠券成本结算 | 活动结算模式。若活动奖品中包含“华为优惠券”时，请提前规划活动的结算模式：   * 收入抵减模式：在每月的结算日，联运分成收入将扣减上月用户实际使用优惠券的金额。 * 充值预购模式：在每月的结算日，账户下的冻结金额将扣减上月实际使用优惠券的金额，您需要提前[冻结预留金额](https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-faq-0000001608894534#section51418272517)。 |
+| 华为优惠券成本结算 | 活动结算模式。若活动奖品中包含“华为优惠券”时，请提前规划活动的结算模式：   * 收入抵减模式：在每月的结算日，联运分成收入将扣减上月用户实际使用优惠券的金额。 * 充值预购模式：在每月的结算日，账户下的冻结金额将扣减上月实际使用优惠券的金额，您需要提前[冻结预留金额](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-faq-0000001608894534#section51418272517)。 |
 
 礼包奖品需准备如下素材内容：
 

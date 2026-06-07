@@ -1,6 +1,6 @@
 ---
 title: "在新窗口中打开页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-open-in-new-window
+original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-open-in-new-window
 format: md
 ---
 

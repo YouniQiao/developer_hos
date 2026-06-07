@@ -1,7 +1,7 @@
 ---
 title: 分享
 sidebar_label: 分享
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/share-0000001957076313
+original_url: /docs/design/system-features/capabilities/share
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 ### 分享一致性
 
 * 应用需通过“分享”图标或“分享”选项调用最新的分享控件。使用分享图标请参阅[图标库](https://developer.huawei.com/consumer/cn/design/harmonyos-symbol/)
-* 关于分享的开发适配指南，请参阅[Share Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/share-introduction)
+* 关于分享的开发适配指南，请参阅[Share Kit](/docs/dev/app-dev/application-services/share-kit-guide/share-introduction)
 
 |  |  |
 | --- | --- |
@@ -68,7 +68,7 @@ format: md
 
 1. 点击 (子) 分享方式会跳转至“分享详情”页面，也可返回至分享面板。其中“分享详情”页面为分享接收的应用开发。
 2. 应用可在“分享详情”页面展示精简、必要的分享详细内容，如进一步选择要分享的目标联系人、目标文件夹等。合理规划内容布局，当内容较少时推荐在顶部显示。不展示和分享无关的应用其他内容。
-3. 关于“分享详情”页面的开发指南，请参阅[半模态面板](https://developer.huawei.com/consumer/cn/doc/design-guides/bindsheet-0000001956852753)![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260107114730.50326755694989287768330355749341:50001231000000:2800:94DF8203E2AFC8C49189CFE850296325BF9FECF5CBA9A289D4114E80F12E424D.png "点击放大")
+3. 关于“分享详情”页面的开发指南，请参阅[半模态面板](/docs/design/components/container-components/bind-sheet)![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260107114730.50326755694989287768330355749341:50001231000000:2800:94DF8203E2AFC8C49189CFE850296325BF9FECF5CBA9A289D4114E80F12E424D.png "点击放大")
 
 ## 选择分享方式
 

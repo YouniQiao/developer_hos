@@ -1,7 +1,7 @@
 ---
 title: "管理推广计划"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-delivery-task-management-plan-0000002555166973
+original_url: /docs/monetize/promotion/bp-delivery-task-management-plan-0000002555166973
 format: md
 ---
 

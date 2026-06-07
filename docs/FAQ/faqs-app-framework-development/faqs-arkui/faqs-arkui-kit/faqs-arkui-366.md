@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何实现通过侧滑手势关闭打开的悬浮框"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkui-366
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-366
 ---
 
 

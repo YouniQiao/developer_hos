@@ -1,7 +1,7 @@
 ---
 title: "准备工作"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-preparation-work-0000001194305246
+original_url: /docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-preparation-work-0000001194305246
 format: md
 ---
 

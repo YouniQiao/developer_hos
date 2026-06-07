@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "POI方案"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-poi-scheme
+original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-local-rec/intents-local-rec-dp-self-validation/intents-poi-scheme
 format: md
 ---
 

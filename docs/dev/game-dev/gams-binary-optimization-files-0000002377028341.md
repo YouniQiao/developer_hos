@@ -1,6 +1,6 @@
 ---
 title: "文件准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gams-binary-optimization-files-0000002377028341
+original_url: /docs/dev/game-dev/gams-binary-optimization-files-0000002377028341
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 format: md
 title: "环境诊断、创建工程/模块界面全部显示空白"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-project-management-3
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-3
 ---
 
 

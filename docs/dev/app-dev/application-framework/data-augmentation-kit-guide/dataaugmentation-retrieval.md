@@ -1,6 +1,6 @@
 ---
 title: "智慧化数据检索-ArkTS"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/dataaugmentation-retrieval
+original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-retrieval
 format: md
 ---
 

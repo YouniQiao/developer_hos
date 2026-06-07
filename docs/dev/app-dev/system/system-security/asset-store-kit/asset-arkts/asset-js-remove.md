@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "删除关键资产(ArkTS)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-remove
+original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-remove
 format: md
 ---
 
@@ -45,9 +45,9 @@ format: md
 
 本模块提供了异步和同步两套接口，以下为异步接口的使用示例，同步接口详见[@ohos.security.asset (关键资产存储服务)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-asset)。
 
-在指定群组中删除一条关键资产的使用示例详见[删除群组关键资产](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-group-access-control#删除群组关键资产)。
+在指定群组中删除一条关键资产的使用示例详见[删除群组关键资产](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-group-access-control#删除群组关键资产)。
 
-在删除前，需确保已有关键资产，可参考[指南文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/asset-js-add)新增关键资产，否则将抛出NOT\_FOUND错误（错误码24000002）。
+在删除前，需确保已有关键资产，可参考[指南文档](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-add)新增关键资产，否则将抛出NOT\_FOUND错误（错误码24000002）。
 
 删除一条别名是demo\_alias的关键资产。
 

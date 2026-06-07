@@ -1,7 +1,7 @@
 ---
 format: md
 title: "多种网络同时连接时如何优先使用wifi网络"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-72
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-72
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "云开发"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-cloud-foundation-development
+original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-cloud-foundation-development
 format: md
 ---
 

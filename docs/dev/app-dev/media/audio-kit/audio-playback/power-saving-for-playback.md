@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "低功耗音频播放"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/power-saving-for-playback
+original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/power-saving-for-playback
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 
 ## 开发指导
 
-低功耗音频渲染器与普通音频渲染器接口无差异，但需关注应用数据周期与播放进度。音频渲染器使用请参考[使用AudioRenderer开发音频播放功能(ArkTs)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback)和[推荐使用OHAudio开发音频播放功能(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback)。
+低功耗音频渲染器与普通音频渲染器接口无差异，但需关注应用数据周期与播放进度。音频渲染器使用请参考[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)和[推荐使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)。
 
 **数据周期示意图**
 
@@ -36,9 +36,9 @@ format: md
 2. 低功耗渲染器缓存：亮屏场景下，最大1000ms；熄屏场景下，最大10000ms。缓存数据消费完时会唤醒主处理器，触发应用传送数据，传送数据的周期与缓存大小保持一致。
 
    * 应用在感知周期内未请求数据属于正常现象，无需停流。系统会自行判断长时间未收到数据的情况并停流；当应用重新发送数据时，系统将恢复流状态。
-   * 熄屏场景下，数据写满缓存后主处理器进入休眠，应用会进入挂起状态。若应用需要后台播放或熄屏播放，请参考[后台播放开发须知](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-overview#后台播放开发须知)。
+   * 熄屏场景下，数据写满缓存后主处理器进入休眠，应用会进入挂起状态。若应用需要后台播放或熄屏播放，请参考[后台播放开发须知](/docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview#后台播放开发须知)。
    * 低功耗渲染器每次请求数据长度与普通渲染器相同，通过高请求频率来填满缓存。预计每1ms请求1次，实际时长受应用和硬件影响。若应用无法快速提供数据，会降级到普通渲染器周期。如果普通渲染器周期无法保证数据及时性，需应用优化数据处理。
-   * 当应用数据不足一次回调长度时，不允许填空数据以避免播放卡顿（到达EOS时除外）。建议等待数据充足或返回错误码。具体参考[AudioRenderer音频数据回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-audiorenderer-for-playback#开发步骤及注意事项)和[OHAudio音频数据回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ohaudio-for-playback#开发步骤)。
+   * 当应用数据不足一次回调长度时，不允许填空数据以避免播放卡顿（到达EOS时除外）。建议等待数据充足或返回错误码。具体参考[AudioRenderer音频数据回调](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback#开发步骤及注意事项)和[OHAudio音频数据回调](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback#开发步骤)。
 3. 低功耗渲染器和低时延渲染器不支持并发，采用先到先得原则，即先启动的生效，后启动的降级为普通渲染器。具体示例如下：
 
    * 先启低功耗渲染器A，再启低功耗渲染器B，则B降级普通渲染器。

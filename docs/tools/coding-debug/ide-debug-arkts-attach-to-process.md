@@ -1,7 +1,7 @@
 ---
 title: "等待调试"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-debug-arkts-attach-to-process
+original_url: /docs/tools/coding-debug/ide-debug-arkts-attach-to-process
 format: md
 ---
 

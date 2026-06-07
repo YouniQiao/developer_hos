@@ -1,6 +1,6 @@
 ---
 title: "下发测试任务"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-beacon-distribute-testing-tasks-0000002423306406
+original_url: /docs/distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-distribute-testing-tasks-0000002423306406
 format: md
 ---
 

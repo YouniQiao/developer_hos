@@ -1,7 +1,7 @@
 ---
 title: "搜索广告投放指南"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/ads-chaunjiansousuoguangaozhiyin-0000001773394785
+original_url: /docs/monetize/promotion/ads-chaunjiansousuoguangaozhiyin-0000001773394785
 format: md
 ---
 

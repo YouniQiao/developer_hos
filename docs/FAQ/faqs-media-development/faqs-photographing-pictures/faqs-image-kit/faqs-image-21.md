@@ -1,6 +1,6 @@
 ---
 title: "如何保存网络图片到相册"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-image-21
+original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-21
 format: md
 ---
 
@@ -110,6 +110,6 @@ struct SaveImage {
 
 **参考链接**
 
-[使用保存控件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/savebutton)
+[使用保存控件](/docs/dev/app-dev/system/system-security/access-control/security-components/savebutton)
 
-[存档图类型数据源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-graphics-display#存档图类型数据源)
+[存档图类型数据源](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-graphics-display#存档图类型数据源)

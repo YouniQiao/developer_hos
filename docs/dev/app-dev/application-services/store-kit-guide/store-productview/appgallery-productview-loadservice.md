@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "添加元服务卡片至桌面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-loadservice
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-loadservice
 format: md
 ---
 

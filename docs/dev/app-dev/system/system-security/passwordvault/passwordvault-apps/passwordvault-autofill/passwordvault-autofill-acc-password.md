@@ -1,6 +1,6 @@
 ---
 title: "账号密码填充"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-autofill-acc-password
+original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-acc-password
 format: md
 ---
 
@@ -12,7 +12,7 @@ format: md
 * **已设置锁屏密码**并且开启密码保险箱中“自动填充和保存”开关。
 * 界面中必须同时存在type为InputType.USER\_NAME（表示用户名输入框）和InputType.Password（表示普通密码输入框）的TextInput输入框组件。
 
-  具体类型请参考[输入框类型说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/passwordvault-quick-adaptation#约束与限制)。
+  具体类型请参考[输入框类型说明](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-quick-adaptation#约束与限制)。
 * TextInput组件的enableAutoFill属性的值为true（默认true）。
 * 密码保险箱中已保存过当前应用的用户名和密码。
 * 用户在界面中首次点击用户名输入框或密码输入框时触发自动填充弹窗。

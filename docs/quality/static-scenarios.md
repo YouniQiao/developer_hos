@@ -1,6 +1,6 @@
 ---
 title: "静态场景低功耗规则"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-static-scenarios
+original_url: /docs/quality/static-scenarios
 ---
 
 

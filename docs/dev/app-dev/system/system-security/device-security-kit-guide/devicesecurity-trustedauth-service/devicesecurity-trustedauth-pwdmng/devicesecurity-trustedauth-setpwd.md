@@ -1,6 +1,6 @@
 ---
 title: "设置数字盾密码"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-trustedauth-setpwd
+original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd
 format: md
 ---
 
@@ -64,7 +64,7 @@ format: md
     }
     let supportFlag:boolean = await isSupportTUI();
    ```
-3. 参考密钥管理服务提供的[密钥生成开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-key-generation-arkts)，使用指定的会话密钥别名及指定密钥属性集合完成密钥生成。
+3. 参考密钥管理服务提供的[密钥生成开发指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-arkts)，使用指定的会话密钥别名及指定密钥属性集合完成密钥生成。
 
    ![](./img/ae743c9c.png)
 
@@ -105,7 +105,7 @@ format: md
      value: huks.HuksChallengeType.HUKS_CHALLENGE_TYPE_NORMAL
    }];
    ```
-4. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts)，初始化签名会话。
+4. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts)，初始化签名会话。
 5. 调用设置密码接口，发起数字盾密码创建申请。
 
    ```
@@ -140,4 +140,4 @@ format: md
    let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
    let authInfo: trustedAuthentication.AuthInfo = await SetPwd(challenge, context);
    ```
-6. 参考密钥管理服务提供的[签名/验签指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-signing-signature-verification-arkts), 对通过密码设置获取到的authToken数据进行签名，并结束会话。
+6. 参考密钥管理服务提供的[签名/验签指导](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-arkts), 对通过密码设置获取到的authToken数据进行签名，并结束会话。

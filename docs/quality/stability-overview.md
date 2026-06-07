@@ -1,6 +1,6 @@
 ---
 title: "稳定性概览"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-overview
+original_url: /docs/quality/stability-overview
 format: md
 ---
 

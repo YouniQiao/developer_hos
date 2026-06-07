@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "管理网络"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-kit-network-management
+original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management
 format: md
 ---
 
 
-* **[统计网络流量消耗](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-statistics)**
-* **[使用网络防火墙](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-netfirewall)**
-* **[扩展认证](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/net-eap)**
+* **[统计网络流量消耗](/docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-statistics)**
+* **[使用网络防火墙](/docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-netfirewall)**
+* **[扩展认证](/docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-eap)**

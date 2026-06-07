@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "游戏如何实现不展示官方账号登录？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-faq-3
+original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-faq/gameservice-faq-unlogin/gameservice-faq-3
 format: md
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: "!!语法：双向绑定"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-new-binding
 format: md
 ---
 
 
-在状态管理V1中，推荐使用[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)实现系统组件的双向绑定。
+在状态管理V1中，推荐使用[$$](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-two-way-sync)实现系统组件的双向绑定。
 
 在状态管理V2中，推荐使用!!语法糖统一处理双向绑定。
 
@@ -15,7 +15,7 @@ format: md
 
 ## 概述
 
-!!双向绑定语法，是一个语法糖方便开发者实现数据双向绑定，用于初始化子组件的[@Param](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-param)和[@Event](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-event)。其中@Event方法名需要声明为“$”+ @Param属性名，详见[使用场景](#使用场景)。
+!!双向绑定语法，是一个语法糖方便开发者实现数据双向绑定，用于初始化子组件的[@Param](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-param)和[@Event](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-event)。其中@Event方法名需要声明为“$”+ @Param属性名，详见[使用场景](#使用场景)。
 
 * 如果使用了!!双向绑定语法，表明父组件的变化会同步给子组件，子组件的变化也会同步给父组件。
 * 父组件未使用!!时，变化是单向的。
@@ -202,7 +202,7 @@ struct BindMenuInterface {
 
 **使用规则**
 
-* 当前!!双向绑定支持基础类型变量，当该变量使用[@State](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state)等状态管理V1装饰器装饰，或者[@Local](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-local)等状态管理V2装饰器装饰时，变量值的变化会触发UI刷新。
+* 当前!!双向绑定支持基础类型变量，当该变量使用[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)等状态管理V1装饰器装饰，或者[@Local](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-local)等状态管理V2装饰器装饰时，变量值的变化会触发UI刷新。
 
   | 属性 | 支持的参数 | 起始API版本 |
   | --- | --- | --- |

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "省市区选择器Input"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-input-zone-selectors
+original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-input/scenario-fusion-input-zone-selectors
 format: md
 ---
 
@@ -18,7 +18,7 @@ format: md
 
 ## 前提条件
 
-参见[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-config-agc)。
+参见[开发准备](/docs/dev/app-dev/application-services/map-config-agc)。
 
 ## 开发步骤
 
@@ -94,6 +94,6 @@ format: md
    * controller参数必须对应填写"new functionalInputComponentManager.FunctionalInputController().onSelectDistrict"。
    * 可从返回结果中自行处理结果回填至组件中。
    * 组件支持显示两种类型的图标：symbol和image，"icon"设置为symbol资源时，请使用"[iconSymbolModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-functionalinputcomponentmanager#functionalinputparams)"进行图标事件、样式的设置；设置为image资源时，请使用"[iconImgModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-functionalinputcomponentmanager#functionalinputparams)"进行图标事件、样式的设置。
-   * functionalInput支持[智能填充](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-introduction-to-smart-fill)，对应支持的[ContentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/scenario-fusion-intelligentfilling-appendix)为"ADDRESS\_CITY\_AND\_STATE"。
+   * functionalInput支持[智能填充](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-to-smart-fill)，对应支持的[ContentType](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-appendix)为"ADDRESS\_CITY\_AND\_STATE"。
 
    其他参数请参考：[FunctionalInput（Input组件）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-functionalinput)。

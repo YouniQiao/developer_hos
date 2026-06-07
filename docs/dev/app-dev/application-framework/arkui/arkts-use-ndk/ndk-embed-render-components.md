@@ -1,6 +1,6 @@
 ---
 title: "构建渲染节点"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-embed-render-components
+original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embed-render-components
 format: md
 ---
 
@@ -15,7 +15,7 @@ format: md
 
 以下示例创建了一个渲染节点，并进行了基础的节点挂载和属性设置操作。
 
-1. 按照[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)创建前置工程。
+1. 按照[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)创建前置工程。
 2. 创建渲染节点能力对象。
 
    ```
@@ -148,7 +148,7 @@ format: md
 
 以下示例创建了一个渲染节点，调用自定义绘制能力并附加动画功能。
 
-1. 按照[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)创建前置工程。
+1. 按照[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)创建前置工程。
 2. 创建渲染节点能力对象。
 
    ```
@@ -334,7 +334,7 @@ format: md
 2. 子节点是ArkTS侧创建的命令式节点。
 3. 子节点是BuilderNode下的根节点。
 
-子节点被接纳为附属节点后，不允许再作为常规子节点挂载至其他节点，否则会抛出相应的错误码。但允许该子节点被其他父节点再次接纳，此时该子节点将会成为其他父节点的新附属节点。被接纳的子节点不是其父节点的真实子节点，不在子组件查询接口的查询范围，也不支持像常规子节点那样被操作，同时不接受父节点的测量布局和事件传递，仅接收父节点的[生命周期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-lifecycle#概述)传递。
+子节点被接纳为附属节点后，不允许再作为常规子节点挂载至其他节点，否则会抛出相应的错误码。但允许该子节点被其他父节点再次接纳，此时该子节点将会成为其他父节点的新附属节点。被接纳的子节点不是其父节点的真实子节点，不在子组件查询接口的查询范围，也不支持像常规子节点那样被操作，同时不接受父节点的测量布局和事件传递，仅接收父节点的[生命周期](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-lifecycle#概述)传递。
 
 ### 获取附属节点的渲染节点
 
@@ -356,7 +356,7 @@ format: md
 
 ### 创建并接纳Web组件以实现混排挂载
 
-在进行如下代码开发前，请参考[接入ArkTS页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ndk-access-the-arkts-page)，创建前置工程。
+在进行如下代码开发前，请参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)，创建前置工程。
 
 完整示例请参考[native\_render\_node\_sample](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NativeRenderNodeSample)。
 

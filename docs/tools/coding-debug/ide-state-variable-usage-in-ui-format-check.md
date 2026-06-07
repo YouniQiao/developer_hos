@@ -1,7 +1,7 @@
 ---
 title: "@performance/state-variable-usage-in-ui-format-check"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-state-variable-usage-in-ui-format-check
+original_url: /docs/tools/coding-debug/ide-state-variable-usage-in-ui-format-check
 format: md
 ---
 

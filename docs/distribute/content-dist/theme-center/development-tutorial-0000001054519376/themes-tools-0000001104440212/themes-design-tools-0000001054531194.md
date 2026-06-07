@@ -1,7 +1,7 @@
 ---
 title: "制作工具下载"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/themes-design-tools-0000001054531194
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-tools-0000001104440212/themes-design-tools-0000001054531194
 format: md
 ---
 
@@ -20,7 +20,7 @@ format: md
 
 1. 支持466\*466和408\*480分辨率表盘制作。
 2. 请使用Chrome浏览器95以上版本访问。
-3. 如何申请<strong>“主题认证设计师-表盘权限”</strong>？详见[入驻指导](https://developer.huawei.com/consumer/cn/doc/content/settlement-guidance-0000001056348857)。
+3. 如何申请<strong>“主题认证设计师-表盘权限”</strong>？详见[入驻指导](/docs/distribute/content-dist/theme-center/beginner-guide-0000001054200638/settlement-guidance-0000001056348857)。
 
 ## Theme Studio
 

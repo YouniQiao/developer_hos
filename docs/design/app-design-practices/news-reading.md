@@ -1,7 +1,7 @@
 ---
 title: 新闻阅读类
 sidebar_label: 新闻阅读类
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/responsive-design-examples4-0000001746657290
+original_url: /docs/design/app-design-practices/news-reading
 format: md
 ---
 
@@ -19,13 +19,13 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250903172822.36290437751048557929273395356591:50001231000000:2800:29F6EBAE3654E0826185079FD212663D241405B86F7DD39C09A63441B74C6677.jpg "点击放大")
 
-本场景的开发指南，请查阅[一多开发实例（新闻阅读类）- 首页推荐](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-news-read#section14315171817575)。
+本场景的开发指南，请查阅[一多开发实例（新闻阅读类）- 首页推荐](/docs/dev/app-dev/multi-device/multi-news-read#section14315171817575)。
 
 **顶部文字要闻：**采用挪移布局，将下方的新闻挪到右侧，在折叠屏、平板上依次递增一列 (折叠屏 2 列，平板 3 列)。
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250903172822.45247591523221827844207332304488:50001231000000:2800:0D7D1FACAB904EB58C43CBFD264BB5545B42E82244EB145AC7DD892190D553B1.jpg "点击放大")
 
-挪移布局的开发指南，请参阅[典型布局场景。](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout)
+挪移布局的开发指南，请参阅[典型布局场景。](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout)
 
 **新闻大图卡片：**
 
@@ -35,7 +35,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250903172823.94498857333834714208221302037171:50001231000000:2800:DE34DD079E2484A23351EDA706A5DF7C4E27D923A610A05E7526661C70E90911.jpg "点击放大")
 
-延伸布局的开发指南，请参阅[自适应布局。](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-adaptive-layout)
+延伸布局的开发指南，请参阅[自适应布局。](/docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout)
 
 **上文下图：**在折叠屏上保持原有布局，在平板及更宽的设备上重复布局。
 
@@ -45,7 +45,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250903172823.04308725313992209277933163387671:50001231000000:2800:3A13CB1495DC86306344F3D48584E94CFE594BB115162685EBD6BA530C658920.jpg "点击放大")
 
-重复布局的开发指南，请参阅[典型布局场景](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-multi-device-page-layout)。
+重复布局的开发指南，请参阅[典型布局场景](/docs/dev/app-dev/multi-device/bpta-multi-device-page-layout)。
 
 **竖向视频卡片：**手机上的左图右文卡片，在折叠屏和平板上显示更多列该卡片内容。
 
@@ -71,7 +71,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250903172824.54000822797916290631514608546364:50001231000000:2800:E62D2A02C469FF75C4780DF2251A70814F9482729BBCE147407897D857BF47DC.jpg "点击放大")
 
-本场景的开发指南，请查阅[一多开发实例（新闻阅读类）- 精选发现](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-news-read#section195858247711)。
+本场景的开发指南，请查阅[一多开发实例（新闻阅读类）- 精选发现](/docs/dev/app-dev/multi-device/multi-news-read#section195858247711)。
 
 **列表变宫格**
 
@@ -85,7 +85,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250903172824.26373651888606039564407564907892:50001231000000:2800:C9343A7B12DCF308DE0FAAC6EFD6D71099D98C4AE80F748516805D174EFBFE8F.jpg "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例 (新闻阅读)-刷新闻](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-news-read#section16811756205811)。
+本场景的开发指南，请参阅[一多开发实例 (新闻阅读)-刷新闻](/docs/dev/app-dev/multi-device/multi-news-read#section16811756205811)。
 
 ## 新闻详情页
 
@@ -109,7 +109,7 @@ format: md
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250903172825.14447518748125176856089356468937:50001231000000:2800:52E980B61F5F2477894F28129EF5078E212154BEA1B75CA1B7C49304E46BCC75.jpg "点击放大")
 
-本场景的开发指南，请参阅[一多开发实例（新闻阅读类）- 新闻详情](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-news-read#section14945393581)。
+本场景的开发指南，请参阅[一多开发实例（新闻阅读类）- 新闻详情](/docs/dev/app-dev/multi-device/multi-news-read#section14945393581)。
 
 **沉浸浏览**
 

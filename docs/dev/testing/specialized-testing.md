@@ -1,6 +1,6 @@
 ---
 title: "专项测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing
+original_url: /docs/dev/testing/specialized-testing
 format: md
 ---
 
@@ -233,7 +233,7 @@ format: md
 
 更多测试服务详情，请前往DevEco Testing客户端->专项测试->性能基础质量测试->任务创建页->测试指南中查询。
 
-更多应用性能优化建议及问题定位，请查阅：[应用性能体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-experience-suggestions) 及 [最佳实践-性能-性能场景优化案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-performance-optimization)。
+更多应用性能优化建议及问题定位，请查阅：[应用性能体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-experience-suggestions) 及 [最佳实践-性能-性能场景优化案例](/docs/quality/scenario-performance-optimization)。
 
 ## 场景化性能测试
 
@@ -241,7 +241,7 @@ format: md
 
 场景化性能测试服务提供了一套包含自动化脚本执行和性能指标分析的解决方案，涵盖响应时延、完成时延、卡顿、音视频和黑白块五大类性能指标的检测。
 
-应用的设计、开发及测试过程中推荐参考[应用性能体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-overview)。
+应用的设计、开发及测试过程中推荐参考[应用性能体验建议](/docs/experience-suggestions/performance/performance-overview)。
 
 **服务使用场景**
 
@@ -253,7 +253,7 @@ format: md
 
 **脚本写作**
 
-请参考[自定义性能脚本测试（基于Python)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hypium-perf-python-guidelines)。
+请参考[自定义性能脚本测试（基于Python)](/docs/dev/testing/ut/hypium-perf-python-guidelines)。
 
 **任务创建：**
 
@@ -420,7 +420,7 @@ OH\_XXXX：代表用例名称，由脚本进行指定。
 
 更多场景化性能测试报告解读及常见问题，请前往DevEco Testing客户端->专项测试->场景化性能测试->任务创建页->测试指南中查询。
 
-更多应用性能优化建议及问题定位，请查阅：[应用性能体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-experience-suggestions) 及 [最佳实践-性能-性能场景优化案例](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-scenario-performance-optimization)。
+更多应用性能优化建议及问题定位，请查阅：[应用性能体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-experience-suggestions) 及 [最佳实践-性能-性能场景优化案例](/docs/quality/scenario-performance-optimization)。
 
 ## 稳定性基础质量测试
 
@@ -444,7 +444,7 @@ OH\_XXXX：代表用例名称，由脚本进行指定。
 
 是否开启多线程检测：打开后，系统支持检测应用多线程安全问题（例如：多个线程并发写入操作）。
 
-是否开启[MemDebug](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-hwasan-detection#section10791454125320)模式：打开开关以后，会打开被测应用的内存越界检测开关，可以辅助发现和定位内存越界类问题。
+是否开启[MemDebug](/docs/quality/stability-hwasan-detection#section10791454125320)模式：打开开关以后，会打开被测应用的内存越界检测开关，可以辅助发现和定位内存越界类问题。
 
 ![](./img/9a060646.png)
 
@@ -500,7 +500,7 @@ OH\_XXXX：代表用例名称，由脚本进行指定。
 
 更多测试服务详情，请前往DevEco Testing客户端->专项测试->稳定性基础质量测试->任务创建页->测试指南中查询。
 
-更多应用稳定性体验优化建议及问题定位，请查阅：[应用稳定性体验建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/experience-suggestions-stability) 及 [CppCrash故障定位指导](https://developer.huawei.com/consumer/cn/doc/architecture-guides/common-v1_26-ts_c25-0000002324993158)
+更多应用稳定性体验优化建议及问题定位，请查阅：[应用稳定性体验建议](/docs/experience-suggestions/experience-suggestions-stability) 及 [CppCrash故障定位指导](https://developer.huawei.com/consumer/cn/doc/architecture-guides/common-v1_26-ts_c25-0000002324993158)
 
 ## 性能指标监控测试
 

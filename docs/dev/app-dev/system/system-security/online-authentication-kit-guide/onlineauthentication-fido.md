@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "FIDO免密身份认证"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/onlineauthentication-fido
+original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-fido
 format: md
 ---
 

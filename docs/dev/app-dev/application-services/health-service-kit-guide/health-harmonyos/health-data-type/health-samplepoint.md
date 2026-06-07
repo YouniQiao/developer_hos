@@ -1,18 +1,18 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "采样数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-samplepoint
+original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint
 format: md
 ---
 
 
-* **[日常活动](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-daily-activities)**
-* **[心率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-heart-rate)**
-* **[血氧](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-blood-oxygen)**
-* **[压力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-pressure)**
-* **[体温](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-body-temperature)**
-* **[血压](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-blood-pressure)**
-* **[体重](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-weight)**
-* **[身高](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-height)**
-* **[情绪](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-emotion)**
-* **[心率变异性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-heart-rate-variability)**
+* **[日常活动](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-daily-activities)**
+* **[心率](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-heart-rate)**
+* **[血氧](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-blood-oxygen)**
+* **[压力](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-pressure)**
+* **[体温](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-body-temperature)**
+* **[血压](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-blood-pressure)**
+* **[体重](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-weight)**
+* **[身高](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-height)**
+* **[情绪](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-emotion)**
+* **[心率变异性](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/ide-heart-rate-variability)**

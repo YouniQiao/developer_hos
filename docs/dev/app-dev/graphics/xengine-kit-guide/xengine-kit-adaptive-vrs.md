@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "自适应VRS"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/xengine-kit-adaptive-vrs
+original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-adaptive-vrs
 format: md
 ---
 

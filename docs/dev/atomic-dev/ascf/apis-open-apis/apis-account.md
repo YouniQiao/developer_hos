@@ -1,6 +1,6 @@
 ---
 title: "账号"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/apis-account
+original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-account
 format: md
 ---
 
@@ -13,8 +13,8 @@ has.login(Object object)
 
 开发准备
 
-1. [配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)。
-2. [配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
+1. [配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)。
+2. [配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。
 
 **起始版本：** 1.0.0
 
@@ -61,9 +61,9 @@ has.getUserRiskLevel(Object object)
 
 开发准备
 
-1. [配置签名和指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-sign-fingerprints)。
-2. [配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
-3. 元服务在使用获取风险等级能力之前，需要完成对应的[scope权限申请](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-risklevel#section5875154219491)。
+1. [配置签名和指纹](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints)。
+2. [配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。
+3. 元服务在使用获取风险等级能力之前，需要完成对应的[scope权限申请](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-risklevel#section5875154219491)。
 
 **起始版本：** 1.0.20
 
@@ -83,7 +83,7 @@ has.getUserRiskLevel(Object object)
 
 | 参数 | 类型 | 描述 |
 | --- | --- | --- |
-| code | string | 授权码。可以使用code获取用户的风险等级信息，具体可参考[服务端开发](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-risklevel#section15191194015326)。 |
+| code | string | 授权码。可以使用code获取用户的风险等级信息，具体可参考[服务端开发](/docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-risklevel#section15191194015326)。 |
 
 **示例：**
 

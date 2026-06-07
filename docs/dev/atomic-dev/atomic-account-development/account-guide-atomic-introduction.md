@@ -1,6 +1,6 @@
 ---
 title: "Account Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-introduction
+original_url: /docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-introduction
 format: md
 ---
 

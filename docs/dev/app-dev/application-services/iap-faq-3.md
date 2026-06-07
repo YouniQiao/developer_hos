@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AppGallery Connect获取的IAP公钥最大长度是多少？便于用户存储设置的最大长度是多少？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-faq-3
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-10
 format: md
 ---
 

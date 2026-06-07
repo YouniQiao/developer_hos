@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "签名/验签介绍及算法规格"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-ukey-signing-signature-verification-overview
+original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-signing-signature-verification/huks-ukey-signing-signature-verification-overview
 format: md
 ---
 

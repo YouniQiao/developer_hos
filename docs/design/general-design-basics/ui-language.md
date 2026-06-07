@@ -1,7 +1,7 @@
 ---
 title: 界面用语
 sidebar_label: 界面用语
-original_url: https://developer.huawei.com/consumer/cn/doc/design-guides/design-ui-language-0000001795698453
+original_url: /docs/design/general-design-basics/ui-language
 format: md
 ---
 

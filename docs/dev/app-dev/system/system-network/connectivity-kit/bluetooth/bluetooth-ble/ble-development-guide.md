@@ -1,6 +1,6 @@
 ---
 title: "查找设备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ble-development-guide
+original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/ble-development-guide
 format: md
 ---
 
@@ -13,7 +13,7 @@ format: md
 
 ### 申请蓝牙权限
 
-需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)和[向用户申请授权](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/request-user-authorization)。
+需要申请权限ohos.permission.ACCESS\_BLUETOOTH。如何配置和申请权限，请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)和[向用户申请授权](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization)。
 
 ### 导入所需API模块
 
@@ -69,7 +69,7 @@ try {
 
 通过BLE扫描周边其他设备发出的BLE广播，可以发现或者查找到应用需要的目标设备，适用于查找设备场景。
 
-若本机设备扫描到可连接的BLE广播，则可以和该设备进行通用属性协议（Generic Attribute Profile，GATT）的连接和数据传输，此时本机设备角色也被称为GATT客户端。具体操作请参考[连接和传输数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gatt-development-guide)。
+若本机设备扫描到可连接的BLE广播，则可以和该设备进行通用属性协议（Generic Attribute Profile，GATT）的连接和数据传输，此时本机设备角色也被称为GATT客户端。具体操作请参考[连接和传输数据](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/gatt-development-guide)。
 
 * 推荐使用API version 15开始支持的扫描方式，该方式支持应用发起和管理多路扫描。可通过[createBleScanner](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-ble#blecreateblescanner15)创建扫描实例[BleScanner](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-ble#blescanner15)，并调用[startScan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-ble#startscan15)。
 
@@ -178,7 +178,7 @@ try {
 
 本机设备发送BLE广播后，可以实现被其他设备发现的功能。
 
-若本机设备发送的是可连接广播，则可以接受其他设备发起的通用属性协议（Generic Attribute Profile，GATT）连接，此时本机设备角色也被称为GATT服务端。具体操作请参考[连接和传输数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gatt-development-guide)。
+若本机设备发送的是可连接广播，则可以接受其他设备发起的通用属性协议（Generic Attribute Profile，GATT）连接，此时本机设备角色也被称为GATT服务端。具体操作请参考[连接和传输数据](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/gatt-development-guide)。
 
 推荐使用API version 11及以后开始支持的广播操作方式。
 

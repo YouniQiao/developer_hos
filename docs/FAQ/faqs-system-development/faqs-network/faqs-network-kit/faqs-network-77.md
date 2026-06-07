@@ -1,7 +1,7 @@
 ---
 format: md
 title: "为什么在设置自定义DNS后，HTTP请求还是会走本地DNS缓存"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-77
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-77
 ---
 
 

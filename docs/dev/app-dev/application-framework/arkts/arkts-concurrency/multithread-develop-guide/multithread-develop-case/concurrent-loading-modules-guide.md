@@ -1,13 +1,13 @@
 ---
 title: "业务模块并发加载场景"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/concurrent-loading-modules-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/concurrent-loading-modules-guide
 format: md
 ---
 
 
 在应用启动时，多个业务模块需要加载，例如地图应用中的定位、打车、导航等模块。如果全部在UI主线程初始化，会严重影响应用冷启动时间。此时，应在不同子线程中并行加载这些模块，以降低启动耗时。
 
-通过使用ArkTS提供的TaskPool能力，可以将不同的业务初始化任务移到子线程中。业务模块可通过下沉C++实现为[NativeBinding对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transferabled-object)或在ArkTS层定义为[Sendable对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable)，从而将初始化的模块返回给UI主线程调用，实现如下。
+通过使用ArkTS提供的TaskPool能力，可以将不同的业务初始化任务移到子线程中。业务模块可通过下沉C++实现为[NativeBinding对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/transferabled-object)或在ArkTS层定义为[Sendable对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)，从而将初始化的模块返回给UI主线程调用，实现如下。
 
 1. 各业务功能（SDK）模块定义（这里以使用Sendable对象为例）。
 

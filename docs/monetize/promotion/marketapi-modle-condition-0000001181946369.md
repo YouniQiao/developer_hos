@@ -1,7 +1,7 @@
 ---
 title: "Condition"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-modle-condition-0000001181946369
+original_url: /docs/monetize/promotion/marketapi-modle-condition-0000001181946369
 format: md
 ---
 

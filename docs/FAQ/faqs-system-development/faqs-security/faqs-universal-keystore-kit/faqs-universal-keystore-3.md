@@ -1,7 +1,7 @@
 ---
 format: md
 title: "并发场景下AES加密失败"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-universal-keystore-3
+original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-universal-keystore-kit/faqs-universal-keystore-3
 ---
 
 

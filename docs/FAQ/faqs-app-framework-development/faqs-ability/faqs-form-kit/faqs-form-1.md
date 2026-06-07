@@ -1,7 +1,7 @@
 ---
 format: md
 title: "点击服务卡片如何跳转至指定的页面"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-form-1
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-form-kit/faqs-form-1
 ---
 
 
@@ -12,4 +12,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-f
 
 **参考链接**
 
-[启动UIAbility的指定页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction#启动uiability的指定页面)
+[启动UIAbility的指定页面](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-intra-device-interaction#启动uiability的指定页面)

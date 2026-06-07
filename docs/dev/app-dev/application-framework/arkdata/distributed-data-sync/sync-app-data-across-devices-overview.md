@@ -1,6 +1,6 @@
 ---
 title: "同应用跨设备数据同步概述"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sync-app-data-across-devices-overview
+original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-sync/sync-app-data-across-devices-overview
 format: md
 ---
 
@@ -11,7 +11,7 @@ format: md
 
 例如：当设备1上的应用A在分布式数据库中增、删、改数据后，设备2上的应用A也可以获取到该数据库变化。可在分布式图库、备忘录、联系人、文件管理器等场景中使用。
 
-不同应用间订阅数据库变化通知，请参考[跨应用数据共享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/data-share-overview)实现。
+不同应用间订阅数据库变化通知，请参考[跨应用数据共享](/docs/dev/app-dev/application-framework/arkdata/cross-app-data-share/data-share-overview)实现。
 
 根据跨设备同步数据生命周期的不同，可以分为：
 
@@ -32,4 +32,4 @@ format: md
 
 ## 跨设备同步访问控制机制
 
-数据跨设备同步时，数据管理基于设备等级和数据安全标签进行访问控制，具体可见[跨设备同步访问控制机制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control-by-device-and-data-level#跨设备同步访问控制机制)。
+数据跨设备同步时，数据管理基于设备等级和数据安全标签进行访问控制，具体可见[跨设备同步访问控制机制](/docs/dev/app-dev/application-framework/arkdata/data-reliability-security/access-control-by-device-and-data-level#跨设备同步访问控制机制)。

@@ -1,26 +1,26 @@
 ---
 title: "主线程超时事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events
 format: md
 ---
 
 
 ## 简介
 
-当应用的主线程执行耗时任务时，开发者会感知到应用卡顿，但卡顿时间未达到系统设定的[应用冻屏](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)时间限制，因此不会生成故障日志。为了更好地定位和分析问题，开发者可以查看[主线程超时事件检测原理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines#检测原理)，根据生成的[主线程超时事件日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines#日志规格)，分析主线程任务的执行情况。
+当应用的主线程执行耗时任务时，开发者会感知到应用卡顿，但卡顿时间未达到系统设定的[应用冻屏](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines)时间限制，因此不会生成故障日志。为了更好地定位和分析问题，开发者可以查看[主线程超时事件检测原理](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines#检测原理)，根据生成的[主线程超时事件日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines#日志规格)，分析主线程任务的执行情况。
 
 本文面向开发者介绍主线程超时检测原理，以及各字段的含义和规格。如需了解如何使用HiAppEvent接口订阅主线程超时事件，请参考以下文档。目前提供ArkTS和C/C++两种接口，按需选择。
 
-* [订阅主线程超时事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-arkts)。
-* [订阅主线程超时事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-ndk)。
+* [订阅主线程超时事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events-arkts)。
+* [订阅主线程超时事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events-ndk)。
 
 ![](./img/5a8be96d.png)
 
-主线程超时事件支持在[应用分身](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)场景下使用 HiAppEvent 进行订阅，支持在元服务场景下使用HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
+主线程超时事件支持在[应用分身](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)场景下使用 HiAppEvent 进行订阅，支持在元服务场景下使用HiAppEvent 进行订阅，从 API version 22 开始支持在[输入法应用](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)场景下使用 HiAppEvent 进行订阅。
 
 ## 检测原理
 
-详见[主线程超时检测原理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines#主线程超时检测)。
+详见[主线程超时检测原理](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines#主线程超时检测)。
 
 ![](./img/ad70f11d.png)
 

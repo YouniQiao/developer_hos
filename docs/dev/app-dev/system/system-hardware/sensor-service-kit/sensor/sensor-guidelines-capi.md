@@ -1,6 +1,6 @@
 ---
 title: "传感器开发指导(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sensor-guidelines-capi
+original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-guidelines-capi
 format: md
 ---
 
@@ -47,7 +47,7 @@ format: md
 1. 新建一个Native C++工程。
 
    ![](./img/5b210fce.png)
-2. 配置加速度传感器权限，具体配置方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)。
+2. 配置加速度传感器权限，具体配置方式请参考[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
 
    ```
    "requestPermissions": [

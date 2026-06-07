@@ -1,15 +1,15 @@
 ---
 title: "故障检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-analysis
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis
 format: md
 ---
 
 
-* **[简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fault-detection-overview)**
-* **[崩溃检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crash-detection)**
-* **[AddrSanitizer（地址越界）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/address-sanitizer-guidelines)**
-* **[AppFreeze（应用冻屏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)**
-* **[Resource Leak（资源泄漏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-leak-guidelines)**
-* **[任务超时检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines)**
-* **[App Killed（应用终止）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appkilled-guidelines)**
-* **[通用日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/general-log)**
+* **[简介](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/fault-detection-overview)**
+* **[崩溃检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection)**
+* **[AddrSanitizer（地址越界）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/address-sanitizer-guidelines)**
+* **[AppFreeze（应用冻屏）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines)**
+* **[Resource Leak（资源泄漏）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines)**
+* **[任务超时检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines)**
+* **[App Killed（应用终止）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appkilled-guidelines)**
+* **[通用日志](/docs/dev/app-dev/system/general-log)**

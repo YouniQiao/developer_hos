@@ -1,7 +1,7 @@
 ---
 title: "金融"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-appendix-material-rule-finance-0000001895426068
+original_url: /docs/monetize/promotion/bp-appendix-material-rule-finance-0000001895426068
 format: md
 ---
 

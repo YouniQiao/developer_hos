@@ -1,6 +1,6 @@
 ---
 title: "has.login接口运行报错"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-runtime-login-error
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-login-error
 format: md
 ---
 
@@ -23,6 +23,6 @@ errCode：11000101
 **解决措施**
 
 1. 使用手动签名。
-2. 检查module type为entry的模块下module.json5中的client\_id是否配置或配置的值是否正确，请参考[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
+2. 检查module type为entry的模块下module.json5中的client\_id是否配置或配置的值是否正确，请参考[配置Client ID](/docs/dev/app-dev/application-services/account-client-id)。
 3. 检查AGC上应用的指纹证书，详情请见[添加公钥指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview#section1726913517284)。
 4. 更新app.json5中的versionCode使本地缓存失效后再进行重试。

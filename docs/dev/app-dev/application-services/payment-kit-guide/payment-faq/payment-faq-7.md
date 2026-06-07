@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "同一用户重复签约，会生成多笔签约吗？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-faq-7
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-7
 format: md
 ---
 

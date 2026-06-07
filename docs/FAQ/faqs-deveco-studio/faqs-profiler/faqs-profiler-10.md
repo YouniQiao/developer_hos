@@ -1,7 +1,7 @@
 ---
 format: md
 title: "如何解决体检工具诊断结果代码行跳转不准确的问题"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-10
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-10
 ---
 
 

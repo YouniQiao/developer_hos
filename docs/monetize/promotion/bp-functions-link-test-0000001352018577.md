@@ -1,7 +1,7 @@
 ---
 title: "链路测试"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-link-test-0000001352018577
+original_url: /docs/monetize/promotion/bp-functions-link-test-0000001352018577
 format: md
 ---
 

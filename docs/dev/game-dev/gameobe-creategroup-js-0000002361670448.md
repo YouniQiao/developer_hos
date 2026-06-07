@@ -1,6 +1,6 @@
 ---
 title: "创建队伍"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-creategroup-js-0000002361670448
+original_url: /docs/dev/game-dev/gameobe-creategroup-js-0000002361670448
 format: md
 ---
 
@@ -9,7 +9,7 @@ format: md
 
 ## 前提条件
 
-您已[初始化联机对战SDK](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-initializing-js-0000002395350377)。
+您已[初始化联机对战SDK](/docs/dev/game-dev/gameobe-initializing-js-0000002395350377)。
 
 ## 开发步骤
 
@@ -17,7 +17,7 @@ format: md
 
    ![](./img/448e29f4.png)
 
-   队长成功创建队伍后，会生成一个队伍ID，可将该队伍ID信息分享给其他好友玩家，其他好友玩家可凭借此队伍ID[加入该队伍](https://developer.huawei.com/consumer/cn/doc/games-guides/gameobe-joingroup-js-0000002395350389)中。
+   队长成功创建队伍后，会生成一个队伍ID，可将该队伍ID信息分享给其他好友玩家，其他好友玩家可凭借此队伍ID[加入该队伍](/docs/dev/game-dev/gameobe-joingroup-js-0000002395350389)中。
 
    ```
    // 创建队伍方法参数

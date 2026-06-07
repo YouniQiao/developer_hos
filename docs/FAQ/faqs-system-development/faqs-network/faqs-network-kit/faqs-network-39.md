@@ -1,7 +1,7 @@
 ---
 format: md
 title: "按照Axios三方库的下载安装步骤安装Axios，报错404如何解决"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-network-39
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-39
 ---
 
 

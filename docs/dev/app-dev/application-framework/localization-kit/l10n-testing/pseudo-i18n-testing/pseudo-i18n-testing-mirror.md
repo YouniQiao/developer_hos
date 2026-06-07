@@ -1,6 +1,6 @@
 ---
 title: "界面镜像伪本地化测试"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pseudo-i18n-testing-mirror
+original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n-testing/pseudo-i18n-testing/pseudo-i18n-testing-mirror
 format: md
 ---
 
@@ -20,5 +20,5 @@ format: md
 
 ## 测试事项
 
-1. 检查界面布局、文字方向和控制逻辑是否符合从右至左的阅读习惯。具体要点见[界面镜像](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/i18n-ui-design#界面镜像)章节。
+1. 检查界面布局、文字方向和控制逻辑是否符合从右至左的阅读习惯。具体要点见[界面镜像](/docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-ui-design#界面镜像)章节。
 2. 检查相关功能是否异常无法使用。

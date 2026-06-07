@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "支付界面是否仅有一种UI设计？是否存在其他支付界面方案？"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-16
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-16
 format: md
 ---
 

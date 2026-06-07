@@ -1,7 +1,7 @@
 ---
 format: md
 title: "在Native侧如何集成三方SO库"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-ndk-5
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-5
 ---
 
 
@@ -11,7 +11,7 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-n
 
    有关如何编译so库，请参考以下链接：
 
-   [使用命令行CMake构建NDK工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/build-with-ndk-cmake)
+   [使用命令行CMake构建NDK工程](/docs/dev/ndk-dev/build-with-ndk-cmake)
 2. 系统集成SO库
    * 方式一：直接集成
    * 方式二：通过dlopen集成

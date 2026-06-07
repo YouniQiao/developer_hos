@@ -1,7 +1,7 @@
 ---
 title: "滑动过程流畅"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-smooth-for-swipe-0413
+original_url: /docs/tools/coding-debug/ide-smooth-for-swipe-0413
 format: md
 ---
 

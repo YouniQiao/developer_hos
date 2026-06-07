@@ -1,7 +1,7 @@
 ---
 title: "CreativeTemplateInfo"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-model-creativetemplateinfo-0000002394065589
+original_url: /docs/monetize/promotion/marketapi-model-creativetemplateinfo-0000002394065589
 format: md
 ---
 
@@ -16,7 +16,7 @@ format: md
 | attachmentId | O | String | 资质文件ID,使用新增素材接口上传资质文件获取资质文件ID。涉及资质证明时必传。 |
 | summary | O | String | 缩略文案，如果创意只有一个文案，则这里为空，填写slogan。 |
 | slogan | O | String | 详情文案 |
-| images | O | List&lt;[ImageInfo](https://developer.huawei.com/consumer/cn/doc/promotion/marketapi-model-imageinfo-0000002360425730)&gt; | 图片素材 |
+| images | O | List&lt;[ImageInfo](/docs/monetize/promotion/marketapi-model-imageinfo-0000002360425730)&gt; | 图片素材 |
 | video | O | VideoInfo | 视频素材 |
 | openCreative | O | OpenCreative | 打开创意 |
 | intention | O | String | 召回意图，创建卸载召回单图、卸载召回GIF、卸载召回视频创意时使用。 |

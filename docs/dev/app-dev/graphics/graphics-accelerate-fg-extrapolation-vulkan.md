@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Vulkan平台"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-fg-extrapolation-vulkan
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-fg-extrapolation-vulkan
 format: md
 ---
 

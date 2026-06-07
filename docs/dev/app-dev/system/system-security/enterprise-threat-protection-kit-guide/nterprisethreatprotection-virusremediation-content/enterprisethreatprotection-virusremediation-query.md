@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "隔离查询"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisethreatprotection-virusremediation-query
+original_url: /docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-query
 format: md
 ---
 

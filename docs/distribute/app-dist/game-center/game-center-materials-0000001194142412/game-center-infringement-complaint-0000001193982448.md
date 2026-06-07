@@ -1,7 +1,7 @@
 ---
 title: "游戏侵权投诉方案"
 displayed_sidebar: appDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/app/game-center-infringement-complaint-0000001193982448
+original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-infringement-complaint-0000001193982448
 format: md
 ---
 

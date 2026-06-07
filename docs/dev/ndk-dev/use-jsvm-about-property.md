@@ -1,6 +1,6 @@
 ---
 title: "使用JSVM-API接口设置JavaScript对象的属性"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-about-property
+original_url: /docs/dev/ndk-dev/use-jsvm-about-property
 format: md
 ---
 
@@ -36,7 +36,7 @@ format: md
 
 ## 使用示例
 
-参考[使用JSVM-API实现JS与C/C++语言交互开发流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-jsvm-process)，本文仅展示接口对应的C++代码。
+参考[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)，本文仅展示接口对应的C++代码。
 
 ### OH\_JSVM\_GetPropertyNames
 

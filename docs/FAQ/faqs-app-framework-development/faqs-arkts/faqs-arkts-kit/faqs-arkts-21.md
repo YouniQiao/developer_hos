@@ -1,7 +1,7 @@
 ---
 format: md
 title: "使用NAPI扩展TS接口时，常用属性和实现接口的基本用法"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-arkts-21
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-21
 ---
 
 

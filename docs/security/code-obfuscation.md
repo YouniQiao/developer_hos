@@ -1,6 +1,6 @@
 ---
 title: "应用代码混淆"
-original_url: https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-app-code-ob
+original_url: /docs/security/code-obfuscation
 format: md
 ---
 
@@ -106,7 +106,7 @@ DevEco Studio混淆现有选项及功能描述如下：
 | -keep | 保留指定相对路径中的所有名称（例如变量名、类名、属性名等） |
 | 通配符 | 名称类和路径类的保留选项支持通配符 |
 
-混淆选项具体的使用方法和样例代码可以参考[代码混淆](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)。
+混淆选项具体的使用方法和样例代码可以参考[代码混淆](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation)。
 
 <strong>混淆优化建议</strong>
 
@@ -117,7 +117,7 @@ DevEco Studio混淆现有选项及功能描述如下：
 
 ### 混淆规则合并策略
 
-在编译一个模块时，生效的混淆规则是当前编译模块混淆规则和依赖模块混淆规则的合并结果。具体规则请参考：[混淆规则合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)。
+在编译一个模块时，生效的混淆规则是当前编译模块混淆规则和依赖模块混淆规则的合并结果。具体规则请参考：[混淆规则合并策略](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#混淆规则合并策略)。
 
 ## 查看混淆结果
 
@@ -137,7 +137,7 @@ DevEco Studio混淆现有选项及功能描述如下：
 
 ### 函数调用栈还原
 
-经过混淆的应用程序中代码名称会发生更改，因此报错栈与源码不完全一致，crash时打印的报错栈会难以理解，如何处理请参考[报错栈还原](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-guide#报错栈还原)。
+经过混淆的应用程序中代码名称会发生更改，因此报错栈与源码不完全一致，crash时打印的报错栈会难以理解，如何处理请参考[报错栈还原](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide#报错栈还原)。
 
 ### 反混淆工具hstack
 
@@ -145,7 +145,7 @@ hstack需要将Node.js配置到环境变量中，详细使用说明请参考[堆
 
 ### 常见报错案例
 
-请参考[ArkGuard混淆常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-questions)。
+请参考[ArkGuard混淆常见问题](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-questions)。
 
 ## 使用第三方加固
 

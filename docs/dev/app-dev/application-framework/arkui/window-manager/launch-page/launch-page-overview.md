@@ -1,6 +1,6 @@
 ---
 title: "应用启动页简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/launch-page-overview
+original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/launch-page/launch-page-overview
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "读取实时三环数据"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-three-ring-read-as
+original_url: /docs/dev/atomic-dev/health-app-dev-as/health-three-ring-read-as
 format: md
 ---
 

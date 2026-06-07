@@ -1,6 +1,6 @@
 ---
 title: "hsp依赖检查错误"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-ascf/faqs-hsp-dependency-check-error
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-hsp-dependency-check-error
 format: md
 ---
 

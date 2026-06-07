@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "证书链对象的创建和校验"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-verify-certchain-object
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-certchain-object
 format: md
 ---
 

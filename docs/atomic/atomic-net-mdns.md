@@ -1,6 +1,6 @@
 ---
 title: "MDNS管理"
-original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-net-mdns
+original_url: /docs/dev/atomic-dev/atomic-network-development/atomic-net-mdns
 format: md
 ---
 
@@ -24,7 +24,7 @@ MDNS管理的典型场景有：
 
 ![](./img/11c6678d.png)
 
-在本文档的示例中，通过this.context来获取UIAbilityContext，其中this代表继承自UIAbility的UIAbility实例。如需在页面中使用UIAbilityContext提供的能力，请参见[获取UIAbility的上下文信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-usage#获取uiability的上下文信息)。
+在本文档的示例中，通过this.context来获取UIAbilityContext，其中this代表继承自UIAbility的UIAbility实例。如需在页面中使用UIAbilityContext提供的能力，请参见[获取UIAbility的上下文信息](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage#获取uiability的上下文信息)。
 
 ## 管理本地服务
 

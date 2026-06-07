@@ -1,13 +1,13 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "登录"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-quick-login
+original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login
 format: md
 ---
 
 
-* **[概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-quick-login-overview)**
-* **[华为账号一键登录（获取手机号和UnionID/OpenID）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-phone-unionid-login)**
-* **[华为账号登录（获取UnionID/OpenID）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-unionid-login)**
-* **[静默登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-silent-login)**
-* **[订阅华为账号的登录/登出事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-login-state)**
+* **[概述](/docs/dev/app-dev/application-services/account-quick-login-overview)**
+* **[华为账号一键登录（获取手机号和UnionID/OpenID）](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login)**
+* **[华为账号登录（获取UnionID/OpenID）](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login)**
+* **[静默登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-silent-login)**
+* **[订阅华为账号的登录/登出事件](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-login-state)**

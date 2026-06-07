@@ -1,7 +1,7 @@
 ---
 title: "权限与能力列表说明"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/permission-introduction-0000001270805933
+original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/access-guide/permission-introduction-0000001270805933
 ---
 
 # 权限与能力列表说明

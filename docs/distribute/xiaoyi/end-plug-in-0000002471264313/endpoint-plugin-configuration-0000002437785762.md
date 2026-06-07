@@ -1,7 +1,7 @@
 ---
 title: "端插件配置"
 displayed_sidebar: xiaoyiSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/service/endpoint-plugin-configuration-0000002437785762
+original_url: /docs/distribute/xiaoyi/end-plug-in-0000002471264313/endpoint-plugin-configuration-0000002437785762
 format: md
 ---
 
@@ -24,19 +24,19 @@ format: md
 
 选择前台执行时，配置工具选择实现方式有三种：标准实现、Applink实现、Deeplink实现。
 
-① 标准实现：[插件工具的对应代码实现](https://developer.huawei.com/consumer/cn/doc/service/corresponding-code-implementation-of-plug-in-tools-0000002437625938)
+① 标准实现：[插件工具的对应代码实现](/docs/distribute/xiaoyi/end-side-application-implementation-0000002471344185/corresponding-code-implementation-of-plug-in-tools-0000002437625938)
 
 ![](./img/63ee90ac9dc9.png "点击放大")
 
 ② Applink实现：已经实现了Applink的应用可以直接配置成端插件使用，Applink携带的参数要以端插件入参的形式呈现，需要配置支持app的最小版本号，长短链接最少填一个。
 
-实现参照：[参考文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-linking-startup)
+实现参照：[参考文档](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)
 
 ![](./img/20509dac9bda.png "点击放大")
 
 ③ Deeplink实现：已经实现了Deeplink的应用可以直接配置成端插件使用，Deeplink携带的参数要以端插件入参的形式呈现，需要配置支持的app最小版本号，跳转链接必填。
 
-实现参照：[参考文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-linking-startup)
+实现参照：[参考文档](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/deep-linking-startup)
 
 ![](./img/a28ab05b055e.png "点击放大")
 

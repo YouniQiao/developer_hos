@@ -1,7 +1,7 @@
 ---
 format: md
 title: "cd到SDK下toolchains目录，执行hdc list targets，错误提示command not found: hdc"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-performance-analysis-kit-71
+original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-71
 ---
 
 
@@ -33,4 +33,4 @@ original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-p
    ```
 2. PATH环境变量默认不会将当前目录（./）添加到列表中，需手动添加
    * 显式指定当前目录，执行hdc命令前添加“./”。
-   * 添加HDC文件所在目录的绝对路径到PATH环境变量，具体可参考hdc[环境准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc#环境准备)章节操作。
+   * 添加HDC文件所在目录的绝对路径到PATH环境变量，具体可参考hdc[环境准备](/docs/dev/app-dev/system/hdc#环境准备)章节操作。

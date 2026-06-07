@@ -1,6 +1,6 @@
 ---
 title: "ArkGuard字节码混淆开启指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-guide
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-guide
 format: md
 ---
 
@@ -49,7 +49,7 @@ format: md
 
   ![](./img/1fe3c6b3.png)
 
-  为保证声明与字节码中的实现一致，在使用方模块开启混淆时，ArkGuard**不会对HAR包内的abc再次执行名称混淆**；字节码混淆仅在**构建该HAR模块**时执行一次。应用代码中对HAR接口的引用仍可能按使用方规则参与处理，需结合导出名收集、consumer-rules等保证正确性，详见[HAP包混淆建议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation-practice#hap包混淆建议)。
+  为保证声明与字节码中的实现一致，在使用方模块开启混淆时，ArkGuard**不会对HAR包内的abc再次执行名称混淆**；字节码混淆仅在**构建该HAR模块**时执行一次。应用代码中对HAR接口的引用仍可能按使用方规则参与处理，需结合导出名收集、consumer-rules等保证正确性，详见[HAP包混淆建议](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-practice#hap包混淆建议)。
 * 配置混淆规则
 
   打开字节码混淆开关，仅开启默认混淆功能，默认混淆范围为非顶层作用域的函数、类。如需开启更多混淆功能，请在files字段指定的混淆配置文件obfuscation-rules.txt中进行选项配置。需要注意的是，**初始模板中的默认选项随DevEco Studio版本及新建工程所用模板而变化**，应以模块内实际的obfuscation-rules.txt内容为准。
@@ -114,7 +114,7 @@ format: md
 
 * obfuscation.txt
 
-  不同于以上两种开发者可自行修改的配置文件，obfuscation.txt是在编译构建HAR或HSP时根据consumer-rules.txt和依赖模块的混淆规则文件自动生成的文件，它作为一种编译产物存在于发布的HAR或HSP包中，用于在其他应用使用该发布包时应用相应的混淆规则。obfuscation.txt内容的生成逻辑请参考[混淆规则合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bytecode-obfuscation#混淆规则合并策略)。
+  不同于以上两种开发者可自行修改的配置文件，obfuscation.txt是在编译构建HAR或HSP时根据consumer-rules.txt和依赖模块的混淆规则文件自动生成的文件，它作为一种编译产物存在于发布的HAR或HSP包中，用于在其他应用使用该发布包时应用相应的混淆规则。obfuscation.txt内容的生成逻辑请参考[混淆规则合并策略](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation#混淆规则合并策略)。
 
   ![](./img/eab8f1b6.png)
 
@@ -179,7 +179,7 @@ format: md
 4. 待上述选项应用适配成功后，开启-enable-filename-obfuscation选项。此选项开启后以下场景需要适配：
 
    1. 若代码中有动态import语句，如const path = './filePath'; import (path)，会出现文件引用失败的情况，需要使用-keep-file-name，filePath来保留这个文件名。
-   2. 若应用中有描述路由表信息的[routerMap配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#routermap标签)，其中的pageSourceFile字段标记页面在模块的路径，需要使用-keep-file-name来保留这个路径。
+   2. 若应用中有描述路由表信息的[routerMap配置](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#routermap标签)，其中的pageSourceFile字段标记页面在模块的路径，需要使用-keep-file-name来保留这个路径。
    3. 若代码中有传入ohmUrl进行页面跳转，如router.pushUrl(\{url: '@bundle:com.example.routerPage/Library/Index'\})，使用-keep-file-name来保留这个路径。
    4. 验证应用功能，排查遗漏的场景。若应用出现功能异常，且报错栈中的路径为混淆后的路径，可以在模块中的build/default/[...]/release/obfuscation/nameCache.json文件中查询到原始路径，进而找到源码文件。另外，[插件hstack](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-hstack)支持自动还原混淆后的报错栈。在定位到需要保留的路径后，使用-keep-file-name来保留此路径。
 

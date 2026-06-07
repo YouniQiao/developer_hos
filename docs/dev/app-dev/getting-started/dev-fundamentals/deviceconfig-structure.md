@@ -1,6 +1,6 @@
 ---
 title: "deviceConfig内部结构"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deviceconfig-structure
+original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/deviceconfig-structure
 ---
 
 deviceConfig 包含设备上的应用配置信息，支持 default、tv、car、wearable 等属性。

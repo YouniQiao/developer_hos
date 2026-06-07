@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "证书链校验时从p12文件构造TrustAnchor对象数组"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/create-trustanchor-from-p12
+original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-trustanchor-from-p12
 format: md
 ---
 

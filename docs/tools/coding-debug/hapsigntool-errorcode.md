@@ -1,7 +1,7 @@
 ---
 title: "签名工具错误码"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/hapsigntool-errorcode
+original_url: /docs/tools/coding-debug/hapsigntool-errorcode
 format: md
 ---
 

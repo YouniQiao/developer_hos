@@ -1,7 +1,7 @@
 ---
 title: "配置应用一句话简介"
 displayed_sidebar: promotionSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/promotion/bp-functions-one-sentence-introduction-config-0000001341821568
+original_url: /docs/monetize/promotion/bp-functions-one-sentence-introduction-config-0000001341821568
 format: md
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "rcp模块发起请求时如何设置超时时间"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-remote-communication-1
+original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-remote-communication/faqs-remote-communication-1
 format: md
 ---
 

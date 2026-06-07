@@ -1,7 +1,7 @@
 ---
 title: "业务总则"
 displayed_sidebar: monetizationSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/monetize/agd_pro_sdk-rule-total-0000001597142081
+original_url: /docs/monetize/monetization/agd_pro_sdk-rule-total-0000001597142081
 format: md
 ---
 

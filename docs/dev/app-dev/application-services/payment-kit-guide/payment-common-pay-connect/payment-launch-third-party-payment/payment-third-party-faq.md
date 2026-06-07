@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "三方支付问题处理"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-third-party-faq
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment/payment-third-party-faq
 format: md
 ---
 
@@ -10,4 +10,4 @@ format: md
 
 支付完成需回调页面可参见[这里](https://pay.weixin.qq.com/doc/v2/merchant/4011936869)。
 
-目前deeplink拉起微信支付时，支付成功后可能停留在微信支付界面，无法自动返回应用。可通过[基于接口拉起方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-launch-third-party-payment-sdk)拉起三方支付收银台，支持微信支付成功后自动关闭并返回应用。
+目前deeplink拉起微信支付时，支付成功后可能停留在微信支付界面，无法自动返回应用。可通过[基于接口拉起方式](/docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment/payment-launch-third-party-payment-sdk)拉起三方支付收银台，支持微信支付成功后自动关闭并返回应用。

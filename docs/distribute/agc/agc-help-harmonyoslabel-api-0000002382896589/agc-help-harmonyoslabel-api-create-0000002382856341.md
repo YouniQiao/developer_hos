@@ -1,6 +1,6 @@
 ---
 title: "创建HarmonyOS标签"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-create-0000002382856341
+original_url: /docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-create-0000002382856341
 format: md
 ---
 
@@ -28,24 +28,24 @@ format: md
 
 ![](../img/agc-help-harmonyoslabel-api-create-0000002382856341_0.png)
 
-жң¬жҺҘеҸЈж”ҜжҢҒдҪҝз”ЁService Accountж–№ејҸе’ҢAPIе®ўжҲ·з«Ҝж–№ејҸпјҢдәҢиҖ…еҢәеҲ«иҜ·еҸӮи§Ғ[иҺ·еҸ–жңҚеҠЎз«ҜAPIжҺҲжқғ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-authorize-0000002553919617)гҖӮ
+жң¬жҺҘеҸЈж”ҜжҢҒдҪҝз”ЁService Accountж–№ејҸе’ҢAPIе®ўжҲ·з«Ҝж–№ејҸпјҢдәҢиҖ…еҢәеҲ«иҜ·еҸӮи§Ғ[иҺ·еҸ–жңҚеҠЎз«ҜAPIжҺҲжқғ](/docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-authorize-0000002553919617)гҖӮ
 
 **Service Account****ж–№ејҸпјҡ**
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
-| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{JWT}`*вҖқгҖӮJWTдёә[йҖҡиҝҮService Accountж–№ејҸиҺ·еҸ–жҺҲжқғ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-authorize-0000002553919617#section104621343151212)дёӯиҺ·еҸ–зҡ„йүҙжқғд»ӨзүҢгҖӮ |
-| appId | M | Integer(64) | еә”з”ЁIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)гҖӮ |
-| productId | M | String | йЎ№зӣ®IDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)гҖӮ |
+| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{JWT}`*вҖқгҖӮJWTдёә[йҖҡиҝҮService Accountж–№ејҸиҺ·еҸ–жҺҲжқғ](/docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-authorize-0000002553919617#section104621343151212)дёӯиҺ·еҸ–зҡ„йүҙжқғд»ӨзүҢгҖӮ |
+| appId | M | Integer(64) | еә”з”ЁIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)гҖӮ |
+| productId | M | String | йЎ№зӣ®IDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)гҖӮ |
 
 **APIе®ўжҲ·з«Ҝж–№ејҸпјҡ**
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
-| client\_id | M | String | е®ўжҲ·з«ҜIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[еҲӣе»әAPIе®ўжҲ·з«Ҝ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-authorize-0000002553919617#section14162113625516)гҖӮ |
-| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{access\_token}`*вҖқгҖӮaccess\_tokenдёә[иҺ·еҸ–Token](https://developer.huawei.com/consumer/cn/doc/app/agc-help-connect-api-obtain-server-auth-0000002271134661#section12242154616187)дёӯиҺ·еҸ–зҡ„access\_tokenгҖӮ |
-| appId | M | Integer(64) | еә”з”ЁIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)гҖӮ |
-| productId | M | String | йЎ№зӣ®IDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](https://developer.huawei.com/consumer/cn/doc/app/agc-help-view-app-info-0000002282674569)гҖӮ |
+| client\_id | M | String | е®ўжҲ·з«ҜIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[еҲӣе»әAPIе®ўжҲ·з«Ҝ](/docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-authorize-0000002553919617#section14162113625516)гҖӮ |
+| Authorization | M | String | и®ӨиҜҒдҝЎжҒҜпјҢж јејҸдёәвҖңAuthorization: Bearer *\\$`{access\_token}`*вҖқгҖӮaccess\_tokenдёә[иҺ·еҸ–Token](/docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661#section12242154616187)дёӯиҺ·еҸ–зҡ„access\_tokenгҖӮ |
+| appId | M | Integer(64) | еә”з”ЁIDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)гҖӮ |
+| productId | M | String | йЎ№зӣ®IDпјҢиҺ·еҸ–ж–№жі•еҸӮиҖғ[жҹҘзңӢеә”з”ЁдҝЎжҒҜ](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569)гҖӮ |
 
 #### [h2]Body
 
@@ -58,7 +58,7 @@ format: md
 | customParameters | O | String | иҮӘе®ҡд№үеҸӮж•°пјҢзӨәдҫӢпјҡkey1=value1&key2=value2 |
 | servicePath | O | String | жңҚеҠЎи·Ҝеҫ„пјҢзӨәдҫӢпјҡ/path1/path2  еҝ…йЎ»д»ҘвҖң/вҖқејҖеӨҙпјҢз»“е°ҫдёҚе…Ғи®ёжңүвҖң/вҖқгҖӮ |
 | codeType | M | Integer | HarmonyOSж Үзӯҫзұ»еһӢгҖӮ  еҸ–еҖјиҢғеӣҙпјҡ   * 1пјҡзў°жү«еҗҲдёҖ * 2пјҡзў°дёҖзў° * 3пјҡжү«дёҖжү« |
-| airtouchConfig | O | [AirtouchConfig](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-airtouchconfig-0000002349016176) | AirTouchй…ҚзҪ®дҝЎжҒҜгҖӮ  иҜҙжҳҺпјҡ  codeTypeеҸ–еҖјдёә1пјҲзў°жү«еҗҲдёҖпјүжҲ–иҖ…2пјҲзў°дёҖзў°пјүж—¶пјҢжӯӨеҸӮж•°еҝ…еЎ«гҖӮ |
+| airtouchConfig | O | [AirtouchConfig](/docs/distribute/agc/agc-help-harmonyoslabel-api-data-model-0000002349175964/agc-help-harmonyoslabel-api-airtouchconfig-0000002349016176) | AirTouchй…ҚзҪ®дҝЎжҒҜгҖӮ  иҜҙжҳҺпјҡ  codeTypeеҸ–еҖјдёә1пјҲзў°жү«еҗҲдёҖпјүжҲ–иҖ…2пјҲзў°дёҖзў°пјүж—¶пјҢжӯӨеҸӮж•°еҝ…еЎ«гҖӮ |
 
 #### иҜ·жұӮзӨәдҫӢ
 
@@ -82,7 +82,7 @@ productid: *******
 
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
-| ret | M | [ConnectRet](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyoslabel-api-connectret-0000002382896625) | еҢ…еҗ«иҝ”еӣһз ҒеҸҠжҸҸиҝ°дҝЎжҒҜзҡ„з»“жһңгҖӮ |
+| ret | M | [ConnectRet](/docs/distribute/agc/agc-help-harmonyoslabel-api-data-model-0000002349175964/agc-help-harmonyoslabel-api-connectret-0000002382896625) | еҢ…еҗ«иҝ”еӣһз ҒеҸҠжҸҸиҝ°дҝЎжҒҜзҡ„з»“жһңгҖӮ |
 
 #### е“Қеә”зӨәдҫӢ
 

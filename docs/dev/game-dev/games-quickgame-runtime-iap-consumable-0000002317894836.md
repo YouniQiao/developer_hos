@@ -1,6 +1,6 @@
 ---
 title: "消耗型商品"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-iap-consumable-0000002317894836
+original_url: /docs/dev/game-dev/games-quickgame-runtime-iap-consumable-0000002317894836
 format: md
 ---
 
@@ -9,11 +9,11 @@ format: md
 
 ## 前提条件
 
-* 已[注册开发者账号](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-registration-account-0000002351933629)。
-* 已[创建项目和快游戏](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-create-quickgame-0000002317894816)。
-* 已[打开游戏服务API开关](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li1450624175912)、[打开应用内支付服务API开关](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li59494019315)。
-* 已[获取APP ID](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-account-kit-0000002317894820#section1148753814717)、[获取支付公钥](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-account-kit-0000002317894820#section8652102314545)。
-* 已前往AGC控制台[创建游戏内商品](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-gameobe-kit-0000002351933633)。
+* 已[注册开发者账号](/docs/dev/game-dev/games-quickgame-registration-account-0000002351933629)。
+* 已[创建项目和快游戏](/docs/dev/game-dev/games-quickgame-create-quickgame-0000002317894816)。
+* 已[打开游戏服务API开关](/docs/dev/game-dev/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li1450624175912)、[打开应用内支付服务API开关](/docs/dev/game-dev/games-quickgame-enable-game-kit-0000002351893445#ZH-CN_TOPIC_0000002382054097__zh-cn_topic_0000001113292730_li59494019315)。
+* 已[获取APP ID](/docs/dev/game-dev/games-quickgame-enable-account-kit-0000002317894820#section1148753814717)、[获取支付公钥](/docs/dev/game-dev/games-quickgame-enable-account-kit-0000002317894820#section8652102314545)。
+* 已前往AGC控制台[创建游戏内商品](/docs/dev/game-dev/games-quickgame-enable-gameobe-kit-0000002351933633)。
 
 ## 业务流程
 
@@ -92,7 +92,7 @@ qg.isEnvReady({
 
 ![](./img/9334d73c.png)
 
-若用户购买商品后返回“支付失败（-1）”或“已拥有该商品（60051)”时，您需要检查是否存在掉单情况，详情请参见[消耗型商品补单流程](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-runtime-redelivering-consumables-0000002351893465)。
+若用户购买商品后返回“支付失败（-1）”或“已拥有该商品（60051)”时，您需要检查是否存在掉单情况，详情请参见[消耗型商品补单流程](/docs/dev/game-dev/games-quickgame-runtime-redelivering-consumables-0000002351893465)。
 
 构建请求参数purchaseIntentReq，指定**priceType**为0，发起[qg.createPurchaseIntent](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-quickgame-runtime-payment-0000002399676809#section416683091)请求，页面跳转至收银台购买支付在AGC控制台配置的消耗型商品，同时设置success和fail回调函数请求结果：
 
@@ -170,7 +170,7 @@ public static boolean doCheck(String content, String sign, String publicKey) {
 
 ## （可选）对服务端返回结果验证
 
-玩家触发[V2版本关键事件](https://developer.huawei.com/consumer/cn/doc/HMSCore-References/api-notifications-about-subscription-events-v2-0000001385268541#section3341022479)后，若想接收华为应用内支付服务器关键事件的通知，请在AGC控制台[配置回调地址](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-iap-kit-0000002318054648#section18765154225513)和[选择签名算法](https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-iap-kit-0000002318054648#section17361339155314)。接收关键事件的接口调用流程如下：
+玩家触发[V2版本关键事件](https://developer.huawei.com/consumer/cn/doc/HMSCore-References/api-notifications-about-subscription-events-v2-0000001385268541#section3341022479)后，若想接收华为应用内支付服务器关键事件的通知，请在AGC控制台[配置回调地址](/docs/dev/game-dev/games-quickgame-enable-iap-kit-0000002318054648#section18765154225513)和[选择签名算法](/docs/dev/game-dev/games-quickgame-enable-iap-kit-0000002318054648#section17361339155314)。接收关键事件的接口调用流程如下：
 
 1. 关键事件发生时，华为应用内支付服务器将自动调用[关键事件通知V2版本](https://developer.huawei.com/consumer/cn/doc/HMSCore-References/api-notifications-about-subscription-events-v2-0000001385268541#section1943932814710)接口，返回字段中包括**purchaseToken**和**productId**。
 2. 信息接收后，您的服务器需立即发送**200**响应，否则该消息会重复发送。

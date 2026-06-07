@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "滑动丢帧事件介绍"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-scroll-jank-event
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/frame-drops-event-during-scrolling/hiappevent-watcher-scroll-jank-event
 format: md
 ---
 
@@ -12,15 +12,15 @@ format: md
 
 如何使用HiAppEvent提供订阅滑动丢帧事件的接口可参见以下文档：
 
-* [订阅滑动丢帧事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-scroll-jank-arkts)
+* [订阅滑动丢帧事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/frame-drops-event-during-scrolling/hiappevent-watcher-scroll-jank-arkts)
 
 ![](./img/0ab63eaf.png)
 
-滑动丢帧事件支持在[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。不支持在[应用分身场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-clone)或[输入法应用场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/inputmethod-application-guide)下使用HiAppEvent进行订阅。
+滑动丢帧事件支持在[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
 
 ## 事件检测原理
 
-具体检测原理可参见[滑动事件检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/perf-detection#滑动事件检测)章节。
+具体检测原理可参见[滑动事件检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection#滑动事件检测)章节。
 
 ## 事件params属性描述
 

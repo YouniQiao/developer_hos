@@ -1,6 +1,6 @@
 ---
 title: "哪些特征的Buffer适合使能ABR"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/graphics-accelerate-faq-3
+original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-rendering-faq/graphics-accelerate-faq-3
 format: md
 ---
 

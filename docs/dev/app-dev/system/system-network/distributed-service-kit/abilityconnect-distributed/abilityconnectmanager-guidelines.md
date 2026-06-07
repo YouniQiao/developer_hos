@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "跨设备连接UIAbility开发指南"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/abilityconnectmanager-guidelines
+original_url: /docs/dev/app-dev/system/system-network/distributed-service-kit/abilityconnect-distributed/abilityconnectmanager-guidelines
 format: md
 ---
 
@@ -24,10 +24,10 @@ format: md
   DMS（Distributedsched Management Service）是分布式组件管理框架，提供分布式组件的管理能力。
 * **UIAbility**
 
-  [UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-overview)描述应用程序的界面交互能力，负责管理应用界面的生命周期、用户交互以及界面渲染等任务。
+  [UIAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-overview)描述应用程序的界面交互能力，负责管理应用界面的生命周期、用户交互以及界面渲染等任务。
 * **字节流**
 
-  字节流是数据类型为[ArrayBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arraybuffer-object)类型的数据。可以被用于存储二进制数据，例如图像或音频数据。
+  字节流是数据类型为[ArrayBuffer](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/arraybuffer-object)类型的数据。可以被用于存储二进制数据，例如图像或音频数据。
 
 ### 实现原理
 
@@ -48,14 +48,14 @@ format: md
 
 ### 环境要求
 
-可登录华为账号的设备A和设备B，设备间需要组网成功（设备组网通过调用[Device Manager](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicemanager-guidelines)的接口实现）。
+可登录华为账号的设备A和设备B，设备间需要组网成功（设备组网通过调用[Device Manager](/docs/dev/app-dev/system/system-network/distributed-service-kit/devicemanager-guidelines)的接口实现）。
 
 ### 搭建环境
 
 1. 在PC上安装[DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)，要求版本在4.1及以上。
 2. 将public-SDK更新到API 18或以上。
 3. 用USB线缆将任意一台调试设备（设备A或者设备B）连接到PC。
-4. 打开设备A和设备B的Wi-Fi和蓝牙。如果登录同一个华为账号，则设备间会进行自组网；非同账号环境下，需先通过[设备发现](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicemanager-guidelines#设备发现开发指导)和[设备绑定](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicemanager-guidelines#设备绑定开发指导)建立可信关系以完成组网。
+4. 打开设备A和设备B的Wi-Fi和蓝牙。如果登录同一个华为账号，则设备间会进行自组网；非同账号环境下，需先通过[设备发现](/docs/dev/app-dev/system/system-network/distributed-service-kit/devicemanager-guidelines#设备发现开发指导)和[设备绑定](/docs/dev/app-dev/system/system-network/distributed-service-kit/devicemanager-guidelines#设备绑定开发指导)建立可信关系以完成组网。
 
 ### 检验环境是否搭建成功
 
@@ -102,7 +102,7 @@ import {abilityConnectionManager, distributedDeviceManager } from '@kit.Distribu
 
 **发现设备**
 
-设备A上的应用，需要发现并选择设备B的[networkId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#devicebasicinfo)来作为协同接口的入参。可调用分布式设备管理模块接口，进行对端设备的发现和选择，详情可参考[设备信息查询开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicemanager-guidelines#设备信息查询开发指导)。
+设备A上的应用，需要发现并选择设备B的[networkId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributeddevicemanager#devicebasicinfo)来作为协同接口的入参。可调用分布式设备管理模块接口，进行对端设备的发现和选择，详情可参考[设备信息查询开发指导](/docs/dev/app-dev/system/system-network/distributed-service-kit/devicemanager-guidelines#设备信息查询开发指导)。
 
 **应用间创建会话并进行连接**
 
@@ -339,4 +339,4 @@ abilityConnectionManager.destroyAbilityConnectionSession(this.sessionId);
 
 **解决措施**
 
-应用申请[长时任务(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/continuous-task)，消除此限制。
+应用申请[长时任务(ArkTS)](/docs/dev/app-dev/application-framework/background-task-kit/continuous-task)，消除此限制。

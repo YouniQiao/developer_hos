@@ -1,7 +1,7 @@
 ---
 title: "@typescript-eslint/no-empty-interface"
 displayed_sidebar: toolsSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide_no-empty-interface
+original_url: /docs/tools/coding-debug/ide_no-empty-interface
 format: md
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "预览视频"
 displayed_sidebar: contentDistSidebar
-original_url: https://developer.huawei.com/consumer/cn/doc/content/watch-face-preview-video-pro-0000001583966590
+original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watch-face-preview-video-pro-0000001583966590
 ---
 
 # 预览视频

@@ -1,12 +1,12 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "Function Flow Runtime开发样例(C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-example-cpp
+original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp
 format: md
 ---
 
 
-* **[Function Flow Runtime串行队列(C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-serial-queue-cpp)**
-* **[Function Flow Runtime并发队列(C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-concurrent-queue-cpp)**
-* **[Function Flow Runtime图依赖并发(C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-graph-cpp)**
-* **[Function Flow Runtime任务伙伴(C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ffrt-concurrency-job-partner-cpp)**
+* **[Function Flow Runtime串行队列(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-serial-queue-cpp)**
+* **[Function Flow Runtime并发队列(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-concurrent-queue-cpp)**
+* **[Function Flow Runtime图依赖并发(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-graph-cpp)**
+* **[Function Flow Runtime任务伙伴(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-job-partner-cpp)**

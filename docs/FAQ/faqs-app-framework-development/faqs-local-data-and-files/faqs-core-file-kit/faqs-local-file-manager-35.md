@@ -1,6 +1,6 @@
 ---
 title: "如何将数据持续写入文件内"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-local-file-manager-35
+original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-35
 format: md
 ---
 

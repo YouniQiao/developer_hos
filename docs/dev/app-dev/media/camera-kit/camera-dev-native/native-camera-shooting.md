@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "拍照(C/C++)"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-shooting
+original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting
 format: md
 ---
 
@@ -10,7 +10,7 @@ format: md
 
 拍照是相机的重要功能之一，拍照模块基于相机复杂的逻辑，为了保证用户拍出的照片质量，在中间步骤可以设置分辨率、闪光灯、焦距、照片质量及旋转角度等信息。
 
-目前相机开发有两种相机拍照方案，分别是相机[分段式拍照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-deferred-capture)和相机单段式拍照（**本文将以单段式拍照为基础进行说明**）。
+目前相机开发有两种相机拍照方案，分别是相机[分段式拍照](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-deferred-capture)和相机单段式拍照（**本文将以单段式拍照为基础进行说明**）。
 
 * 分段式拍照是指相机拍照既可以输出低质量图用作缩略图，提升用户感知拍照速度，也可以使用高质量图保证最后的成图质量达到系统相机的水平。满足了图像处理算法的需求的同时，又不会阻塞前台的拍照速度，构筑相机性能竞争力，提升用户体验。
 * 单段式拍照是指在拍照过程中通过多帧融合以及多个底层算法处理之后返回一张高质量图片，所以Shot2See（用户点击拍照控件到在缩略图显示区域显示缩略图的过程）完成时延较长。此外，单段式拍照支持通过[高性能拍照](#高性能拍照)功能调整[画质优先策略](#画质优先策略)，以加快出图速度或提升图片质量。
@@ -82,7 +82,7 @@ format: md
        libohfileuri.so
    )
    ```
-3. 创建并打开相机设备，参考 [设备输入(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-device-input)步骤3-5。
+3. 创建并打开相机设备，参考 [设备输入(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-input)步骤3-5。
 4. 选择设备支持的输出流能力，创建拍照输出流。
 
    通过[OH\_CameraManager\_CreatePhotoOutputWithoutSurface()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-camera-manager-h#oh_cameramanager_createphotooutputwithoutsurface)方法创建拍照输出流。
@@ -114,7 +114,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/NDKPhotoVideoSample/entry/src/main/cpp/camera_manager.cpp#L475-L498" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：camera_manager.cpp</a></div>
 
-5. 注册单段式(PhotoAvailable)拍照回调，若应用希望快速得到回图，推荐使用[分段式拍照回调(PhotoAssetAvailable)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-deferred-capture)。
+5. 注册单段式(PhotoAvailable)拍照回调，若应用希望快速得到回图，推荐使用[分段式拍照回调(PhotoAssetAvailable)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-deferred-capture)。
 
    ![](./img/79d12d9f.png)
 
@@ -355,7 +355,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/Media/Camera/NDKPhotoVideoSample/entry/src/main/cpp/main.cpp#L610-L661" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：main.cpp</a></div>
 
-6. 创建拍照类型会话，参考[会话管理(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)，开启会话，准备拍照。
+6. 创建拍照类型会话，参考[会话管理(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)，开启会话，准备拍照。
 7. 配置拍照参数（可选）。
 
    配置相机的参数可以调整拍照的一些功能，包括闪光灯、变焦、焦距等。
@@ -535,11 +535,11 @@ format: md
 
 ### 开发步骤
 
-高性能拍照相关接口需要在[会话管理(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)流程的使能步骤中进行调用。
+高性能拍照相关接口需要在[会话管理(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)流程的使能步骤中进行调用。
 
 具体调用时机如下：
 
-* 在[会话管理(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)流程中的使能步骤中的[OH\_CaptureSession\_CommitConfig()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_commitconfig)结束之后进行调用。
+* 在[会话管理(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)流程中的使能步骤中的[OH\_CaptureSession\_CommitConfig()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_commitconfig)结束之后进行调用。
 
   ```
   Camera_ErrorCode StartSession(Camera_CaptureSession* captureSession, Camera_Input* cameraInput,
@@ -598,7 +598,7 @@ format: md
     }
   }
   ```
-* 在[会话管理(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/native-camera-session-management)流程中的使能步骤中的[OH\_CaptureSession\_CommitConfig()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_commitconfig)之前调用。
+* 在[会话管理(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management)流程中的使能步骤中的[OH\_CaptureSession\_CommitConfig()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-capture-session-h#oh_capturesession_commitconfig)之前调用。
 
   ```
   Camera_ErrorCode StartSession(Camera_CaptureSession* captureSession, Camera_Input* cameraInput,

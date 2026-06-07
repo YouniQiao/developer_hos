@@ -1,6 +1,6 @@
 ---
 title: "前提条件"
-original_url: https://developer.huawei.com/consumer/cn/doc/app/agc-help-restore-pre-0000002391704486
+original_url: /docs/distribute/agc/agc-help-restore-0000002425142689/agc-help-restore-pre-0000002391704486
 format: md
 ---
 

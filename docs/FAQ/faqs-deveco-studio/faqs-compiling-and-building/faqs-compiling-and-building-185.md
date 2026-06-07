@@ -1,7 +1,7 @@
 ---
 format: md
 title: "升级react-native-openharmony编译出错"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-185
+original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-185
 ---
 
 

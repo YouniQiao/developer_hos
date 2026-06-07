@@ -1,6 +1,6 @@
 ---
 title: "C/C++内存错误检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-asan
+original_url: /docs/dev/ndk-dev/debug-asan
 format: md
 ---
 

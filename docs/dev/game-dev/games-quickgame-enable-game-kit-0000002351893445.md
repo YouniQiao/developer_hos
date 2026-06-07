@@ -1,6 +1,6 @@
 ---
 title: "打开API开关"
-original_url: https://developer.huawei.com/consumer/cn/doc/games-guides/games-quickgame-enable-game-kit-0000002351893445
+original_url: /docs/dev/game-dev/games-quickgame-enable-game-kit-0000002351893445
 format: md
 ---
 

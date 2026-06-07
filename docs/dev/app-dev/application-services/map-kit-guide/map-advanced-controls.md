@@ -1,11 +1,11 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "地图Picker"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-advanced-controls
+original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls
 format: md
 ---
 
 
-* **[地点详情展示](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-details)**
-* **[地点选取](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-selecting)**
-* **[区划选择](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-location-division)**
+* **[地点详情展示](/docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-details)**
+* **[地点选取](/docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-selecting)**
+* **[区划选择](/docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-division)**

@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "AppGallery Kit简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-introduction
+original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-introduction
 format: md
 ---
 
@@ -10,23 +10,23 @@ AppGallery Kit（应用市场服务）提供应用市场业务的对外开放能
 
 使用AppGallery Kit为您的应用和应用内数字商品提供以下功能和服务：
 
-**[数字商品服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-iap-introduction)**：指华为为开发者的数字商品的管理、交易、售后提供的平台能力和服务，助力您实现数字商品交易和结算。
+**[数字商品服务](/docs/dev/app-dev/application-services/store-iap-introduction)**：指华为为开发者的数字商品的管理、交易、售后提供的平台能力和服务，助力您实现数字商品交易和结算。
 
-**[应用市场推荐](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-productview-loadservice)**：用户可直达应用市场详情页或卡片加桌页面，有效提高应用曝光率。同时提供应用内快捷方式，为用户快速访问应用功能与内容提供便捷途径。
+**[应用市场推荐](/docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-loadservice)**：用户可直达应用市场详情页或卡片加桌页面，有效提高应用曝光率。同时提供应用内快捷方式，为用户快速访问应用功能与内容提供便捷途径。
 
-**[产品特性按需分发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-moduleinstall_arkts)**：实现应用多子业务独立演进，能够提供动态分发和资源拆分，帮助提高分发效率。
+**[产品特性按需分发](/docs/dev/app-dev/application-services/store-kit-guide/store-moduleinstall/store-moduleinstall_arkts)**：实现应用多子业务独立演进，能够提供动态分发和资源拆分，帮助提高分发效率。
 
-**[生态查询服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-erms)**：您可查询您的元服务/应用是通过何种场景被打开的，您还可基于场景值，做更多的业务设计和拓展。
+**[生态查询服务](/docs/dev/app-dev/application-services/store-kit-guide/store-erms)**：您可查询您的元服务/应用是通过何种场景被打开的，您还可基于场景值，做更多的业务设计和拓展。
 
-**[应用市场更新功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-update)**：您可以通过本服务查询应用是否有可更新的版本。当存在可更新版本时，可为用户在应用内显示更新提醒。
+**[应用市场更新功能](/docs/dev/app-dev/application-services/store-kit-guide/store-update)**：您可以通过本服务查询应用是否有可更新的版本。当存在可更新版本时，可为用户在应用内显示更新提醒。
 
-**[应用归因服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-introduction)**：您可通过本服务判断用户下载应用和使用应用的原因，借助归因数据分析营销效果，评估多渠道商业价值和优化商业策略。
+**[应用归因服务](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-introduction)**：您可通过本服务判断用户下载应用和使用应用的原因，借助归因数据分析营销效果，评估多渠道商业价值和优化商业策略。
 
-**[隐私管理服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-privacy)**：为用户提供统一隐私弹框，您可通过本服务查询隐私链接、隐私签署状态、撤销用户已同意签署的隐私协议记录。
+**[隐私管理服务](/docs/dev/app-dev/application-services/store-kit-guide/store-privacy)**：为用户提供统一隐私弹框，您可通过本服务查询隐私链接、隐私签署状态、撤销用户已同意签署的隐私协议记录。
 
-**[图标管理服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-appinfo-manage)**：您可以通过本服务管理动态图标，包括查询可选动态图标、切换动态图标、恢复默认图标。
+**[图标管理服务](/docs/dev/app-dev/application-services/store-kit-guide/appgallery-appinfo/appgallery-appinfo-manage)**：您可以通过本服务管理动态图标，包括查询可选动态图标、切换动态图标、恢复默认图标。
 
-**[应用评论服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-comment)**：您可以通过本服务对应用进行评论，在应用内拉起应用评分弹窗。
+**[应用评论服务](/docs/dev/app-dev/application-services/store-kit-guide/appgallery-comment)**：您可以通过本服务对应用进行评论，在应用内拉起应用评分弹窗。
 
 ## 约束和限制
 
@@ -34,7 +34,7 @@ AppGallery Kit（应用市场服务）提供应用市场业务的对外开放能
 
 | 能力 | 支持设备 |
 | --- | --- |
-| 数字商品服务 | [支持的设备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-introduction#支持的设备)。 |
+| 数字商品服务 | [支持的设备](/docs/dev/app-dev/application-services/iap-kit-guide/iap-introduction#支持的设备)。 |
 | 应用市场推荐 | 支持Phone、PC/2in1、Tablet、TV。 |
 | 产品特性按需分发 | 支持Phone、PC/2in1、Tablet、TV。 |
 | 生态查询服务 | 支持Phone、PC/2in1、Tablet、TV。 |

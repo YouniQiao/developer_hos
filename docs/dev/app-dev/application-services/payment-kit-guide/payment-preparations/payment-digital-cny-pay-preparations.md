@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: appDevSidebar
 title: "（可选）数字人民币接入准备"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/payment-digital-cny-pay-preparations
+original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-digital-cny-pay-preparations
 format: md
 ---
 

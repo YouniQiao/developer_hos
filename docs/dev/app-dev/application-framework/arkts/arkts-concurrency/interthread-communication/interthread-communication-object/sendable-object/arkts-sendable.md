@@ -1,11 +1,11 @@
 ---
 title: "Sendable对象简介"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable
+original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable
 format: md
 ---
 
 
-在传统JS引擎中，要优化对象的并发通信开销，唯一的方法是将实现下沉到Native侧，通过[Transferable对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/transferabled-object)的转移或共享来降低开销。然而，开发者仍有大量对象并发通信的需求，这个问题在业界JS引擎中尚未解决。
+在传统JS引擎中，要优化对象的并发通信开销，唯一的方法是将实现下沉到Native侧，通过[Transferable对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/transferabled-object)的转移或共享来降低开销。然而，开发者仍有大量对象并发通信的需求，这个问题在业界JS引擎中尚未解决。
 
 ArkTS提供了Sendable对象类型，它是一种可在ArkTS并发实例间安全共享和传递的数据类型，它支持引用传递来减少通信成本。
 
@@ -15,9 +15,9 @@ Sendable对象可共享，跨线程前后指向同一个JS对象。如果Sendabl
 
 与其它ArkTS数据对象不同，符合Sendable协议的数据对象在运行时应为类型固定的对象。
 
-当多个并发实例尝试同时更新Sendable数据时，会发生数据竞争，例如[ArkTS共享容器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-collections-introduction)的多线程操作。因此，ArkTS提供[异步锁](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-async-lock-introduction)机制来避免不同并发实例间的数据竞争，并提供了[异步等待](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-condition-variable-introduction)机制来控制多线程处理数据的时序。同时，还可以通过[对象冻结接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-freeze)将对象冻结为只读，从而避免数据竞争。
+当多个并发实例尝试同时更新Sendable数据时，会发生数据竞争，例如[ArkTS共享容器](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-collections-introduction)的多线程操作。因此，ArkTS提供[异步锁](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-async-lock-introduction)机制来避免不同并发实例间的数据竞争，并提供了[异步等待](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-condition-variable-introduction)机制来控制多线程处理数据的时序。同时，还可以通过[对象冻结接口](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-freeze)将对象冻结为只读，从而避免数据竞争。
 
-Sendable对象提供了并发实例间高效的通信能力，即引用传递，适用于开发者自定义大对象需要线程间通信的场景，例如子线程读取数据库数据并返回给宿主线程，具体代码实现可参考[跨并发实例传输大数据场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-guide#跨并发实例传输大数据场景)。
+Sendable对象提供了并发实例间高效的通信能力，即引用传递，适用于开发者自定义大对象需要线程间通信的场景，例如子线程读取数据库数据并返回给宿主线程，具体代码实现可参考[跨并发实例传输大数据场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-guide#跨并发实例传输大数据场景)。
 
 ## 基础概念
 
@@ -39,8 +39,8 @@ Sendable协议定义了ArkTS的可共享对象体系及其规格约束。符合S
 
 Sendable class需同时满足以下两个规则：
 
-1. 针对API version 22以前的工程，当且仅当被标注了[@Sendable装饰器](#sendable装饰器)。从API version 22开始，Sendable class除了必须标注@Sendable装饰器之外，开发者可根据需要在Sendable class上叠加使用其他自定义装饰器，具体操作可参考[在Sendable class上叠加其他自定义装饰器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-constraints#支持在sendable-class上叠加自定义装饰器)。
-2. 需满足Sendable约束，详情可查[Sendable使用规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-constraints)。
+1. 针对API version 22以前的工程，当且仅当被标注了[@Sendable装饰器](#sendable装饰器)。从API version 22开始，Sendable class除了必须标注@Sendable装饰器之外，开发者可根据需要在Sendable class上叠加使用其他自定义装饰器，具体操作可参考[在Sendable class上叠加其他自定义装饰器](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-constraints#支持在sendable-class上叠加自定义装饰器)。
+2. 需满足Sendable约束，详情可查[Sendable使用规则](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-constraints)。
 
 ### Sendable function
 
@@ -53,22 +53,22 @@ Sendable class需同时满足以下两个规则：
 Sendable function需同时满足以下两个规则：
 
 1. 当且仅当被标注了[@Sendable装饰器](#sendable装饰器)。
-2. 需满足Sendable约束，具体可参考[Sendable使用规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-constraints)。
+2. 需满足Sendable约束，具体可参考[Sendable使用规则](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-constraints)。
 
 ### Sendable interface
 
 Sendable interface需同时满足以下两个规则：
 
 1. 当且仅当是[ISendable](#isendable)或者继承了ISendable。
-2. 需满足Sendable约束，具体可参考[Sendable使用规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sendable-constraints)。
+2. 需满足Sendable约束，具体可参考[Sendable使用规则](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-constraints)。
 
 ### Sendable支持的数据类型
 
 * ArkTS基本数据类型：boolean、number、string、bigint、null、undefined。
 * ArkTS数据类型：const enum（常量枚举）。
-* ArkTS语言标准库中定义的[容器类型数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-collections-introduction)（须显式引入[@arkts.collections](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections)）。
-* ArkTS语言标准库中定义的[异步锁对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-async-lock-introduction)（须显式引入[@arkts.utils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils)）。
-* ArkTS语言标准库中定义的[异步等待对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-condition-variable-introduction)（须显式引入[@arkts.utils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils)）。
+* ArkTS语言标准库中定义的[容器类型数据](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-collections-introduction)（须显式引入[@arkts.collections](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections)）。
+* ArkTS语言标准库中定义的[异步锁对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-async-lock-introduction)（须显式引入[@arkts.utils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils)）。
+* ArkTS语言标准库中定义的[异步等待对象](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-condition-variable-introduction)（须显式引入[@arkts.utils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils)）。
 * ArkTS语言标准库中定义的[SendableLruCache](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils-sendablelrucache)对象（须显式引入[@arkts.utils](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-utils)）。
 * 继承了[ISendable](#isendable)的interface。
 * 标注了[@Sendable装饰器](#sendable装饰器)的class。
@@ -81,7 +81,7 @@ Sendable interface需同时满足以下两个规则：
   + [资源管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sendable-resource-manager)
   + [Sendable上下文管理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-sendablecontextmanager)
 * 元素均为Sendable类型的union type数据。
-* 开发者自定义的Native Sendable对象。ArkTS支持开发者自定义Native Sendable对象，详情参见[自定义Native Sendable对象的多线程操作场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/napi-define-sendable-object)。
+* 开发者自定义的Native Sendable对象。ArkTS支持开发者自定义Native Sendable对象，详情参见[自定义Native Sendable对象的多线程操作场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/napi-define-sendable-object)。
 
 ![](./img/e386f8d5.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "任务超时检测"
-original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/apptask-timeout-guidelines
+original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines
 format: md
 ---
 
@@ -9,11 +9,11 @@ format: md
 
 开发者在开发应用时，某一段业务逻辑期望执行一定时间，如果该业务逻辑执行时长超过预期时间，即为任务超时。
 
-任务超时检测主要包括主线程超时检测和任务执行超时检测，二者均可使用HiCollie实现自定义时长来对开发者选择的业务逻辑进行主动检测，主线程超时也可采用默认时长进行检测。详见：[HiCollie使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hicollie-guidelines-ndk)。
+任务超时检测主要包括主线程超时检测和任务执行超时检测，二者均可使用HiCollie实现自定义时长来对开发者选择的业务逻辑进行主动检测，主线程超时也可采用默认时长进行检测。详见：[HiCollie使用指导](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hicollie/hicollie-guidelines-ndk)。
 
 ![](./img/ef1679fd.png)
 
-[AppFreeze（应用冻屏）检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)相比任务超时检测，主要是由系统侧提供检测周期性检测逻辑，无需开发者感知和适配。
+[AppFreeze（应用冻屏）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines)相比任务超时检测，主要是由系统侧提供检测周期性检测逻辑，无需开发者感知和适配。
 
 ## 主线程超时检测
 
@@ -26,7 +26,7 @@ format: md
 | 采集流程 | 触发条件 | 采集日志格式 | 前提条件与限制 |
 | --- | --- | --- | --- |
 | 堆栈采集 | 150ms < 主线程处理时长 < 450ms | 文件名格式：MAIN\_THREAD\_JANK\_秒级时间\_进程PID.txt。  例如：MAIN\_THREAD\_JANK\_20240613211739\_40986.txt。 | - **应用启动10s内不进行检测。**  - **关闭[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section0736139111917)：应用在一个生命周期内，一天最多触发一次主线程超时事件堆栈采集流程。**  - **启用[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)：应用在一个生命周期内，一小时最多触发一次主线程超时事件采集堆栈采集流程。** |
-| trace采集 | 主线程处理时长 > 450ms | 文件名格式：MAIN\_THREAD\_JANK\_unix时间戳\_进程PID.trace。  例如：MAIN\_THREAD\_JANK\_1762064185461\_40986.trace。 | - 触发trace采集的前提：**开发者使用[nolog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-analysis-kit-terminology#nolog版本)版本，并且关闭[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)**。  - **应用一天内，最多触发一次主线程超时事件trace采集流程。** |
+| trace采集 | 主线程处理时长 > 450ms | 文件名格式：MAIN\_THREAD\_JANK\_unix时间戳\_进程PID.trace。  例如：MAIN\_THREAD\_JANK\_1762064185461\_40986.trace。 | - 触发trace采集的前提：**开发者使用[nolog](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#nolog版本)版本，并且关闭[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)**。  - **应用一天内，最多触发一次主线程超时事件trace采集流程。** |
 
 ![](./img/e88e75e7.png)
 
@@ -67,7 +67,7 @@ format: md
 
 **通过HiAppEvent接口订阅**
 
-HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-intro)。参考[订阅主线程超时事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-arkts)或[订阅主线程超时事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events-ndk)完成主线程超时事件订阅，并通过事件的[external\_log](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events#事件字段说明)字段读取故障日志文件名。
+HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-intro)。参考[订阅主线程超时事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events-arkts)或[订阅主线程超时事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events-ndk)完成主线程超时事件订阅，并通过事件的[external\_log](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events#事件字段说明)字段读取故障日志文件名。
 
 ### 日志规格
 
@@ -163,8 +163,8 @@ HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](htt
 
    开发者可通过自定义参数接口设置采集次数：
 
-   * [setEventConfig接口参数设置说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events#seteventconfig接口参数设置说明)中的report\_times\_per\_app参数，取值范围为[1, 3]。
-   * [configEventPolicy接口参数设置说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-mainthreadjank-events#configeventpolicy接口参数设置说明)中的reportTimesPerApp参数，取值范围为[1, 3]。
+   * [setEventConfig接口参数设置说明](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events#seteventconfig接口参数设置说明)中的report\_times\_per\_app参数，取值范围为[1, 3]。
+   * [configEventPolicy接口参数设置说明](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/main-thread-jank-events/hiappevent-watcher-mainthreadjank-events#configeventpolicy接口参数设置说明)中的reportTimesPerApp参数，取值范围为[1, 3]。
 
 ## 任务执行超时检测
 
@@ -184,8 +184,8 @@ HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](htt
 
 **通过HiAppEvent接口订阅**
 
-HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-intro)。参考[订阅任务执行超时事件（ArkTS）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-apphicollie-events-arkts)或[订阅任务执行超时事件（C/C++）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-apphicollie-events-ndk)完成任务执行超时事件订阅，并通过事件的[external\_log](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hiappevent-watcher-apphicollie-events#事件字段说明)字段读取故障日志文件名。
+HiAppEvent给开发者提供了故障订阅接口，详见[HiAppEvent介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-intro)。参考[订阅任务执行超时事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-hicollie-events/hiappevent-watcher-apphicollie-events-arkts)或[订阅任务执行超时事件（C/C++）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-hicollie-events/hiappevent-watcher-apphicollie-events-ndk)完成任务执行超时事件订阅，并通过事件的[external\_log](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-hicollie-events/hiappevent-watcher-apphicollie-events#事件字段说明)字段读取故障日志文件名。
 
 ### 日志规格
 
-任务执行超时事件日志规格与应用冻屏日志相同，可详见[应用冻屏日志规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines#日志规格)。
+任务执行超时事件日志规格与应用冻屏日志相同，可详见[应用冻屏日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines#日志规格)。
