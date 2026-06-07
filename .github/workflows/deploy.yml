@@ -31,7 +31,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Ensure swap (16GB safety net)
         run: |
@@ -134,11 +134,13 @@ jobs:
           fi
         timeout-minutes: 360
         env:
-          NODE_OPTIONS: '--max-old-space-size=8192 --max-semi-space-size=64 --v8-pool-size=8'
+          NODE_OPTIONS: '--max-old-space-size=8192'
           GENERATE_SOURCEMAP: 'false'
           UV_THREADPOOL_SIZE: '12'
           DOCUSAURUS_SSG_WORKER_THREADS: '1'
           DOCUSAURUS_SSG_CONCURRENCY: '1'
+          HTTP_PROXY: ''
+          HTTPS_PROXY: ''
 
       - name: Save build caches (on success)
         if: success()
