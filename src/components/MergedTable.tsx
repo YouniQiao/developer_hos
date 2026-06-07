@@ -1,35 +1,18 @@
 import React from 'react';
 
 interface CellData {
-  text?: string;
-  content?: string;
-  rowSpan?: number;
+  content: string;
   rowspan?: number;
   colspan?: number;
 }
 
 interface MergedTableProps {
-  headers: string[];
-  rows: (string | CellData)[][];
+  headers: CellData[][];
+  rows: CellData[][];
   caption?: string;
 }
 
 export default function MergedTable({ headers, rows, caption }: MergedTableProps): JSX.Element {
-  function getText(cell: string | CellData): string {
-    if (typeof cell === 'string') return cell;
-    return cell.content || cell.text || '';
-  }
-
-  function getRowSpan(cell: string | CellData): number {
-    if (typeof cell === 'string') return 1;
-    return cell.rowSpan || cell.rowspan || 1;
-  }
-
-  function getColSpan(cell: string | CellData): number {
-    if (typeof cell === 'string') return 1;
-    return cell.colspan || 1;
-  }
-
   return (
     <div style={{ overflowX: 'auto', margin: '16px 0' }}>
       <table style={{
@@ -48,45 +31,49 @@ export default function MergedTable({ headers, rows, caption }: MergedTableProps
             {caption}
           </caption>
         )}
-        {headers && headers.length > 0 && (
+        {headers.length > 0 && (
           <thead>
-            <tr>
-              {headers.map((h, i) => (
-                <th
-                  key={`h-${i}`}
-                  style={{
-                    border: '1px solid #dfe2e5',
-                    padding: '8px 12px',
-                    backgroundColor: '#f6f8fa',
-                    fontWeight: 600,
-                    textAlign: 'left',
-                    verticalAlign: 'top',
-                  }}
-                >
-                  {h}
-                </th>
-              ))}
-            </tr>
+            {headers.map((row, i) => (
+              <tr key={`h-${i}`}>
+                {row.map((cell, j) => {
+                  if (!cell || Object.keys(cell).length === 0) return null;
+                  return (
+                    <th
+                      key={`h-${i}-${j}`}
+                      rowSpan={cell.rowspan || 1}
+                      colSpan={cell.colspan || 1}
+                      style={{
+                        border: '1px solid #dfe2e5',
+                        padding: '8px 12px',
+                        backgroundColor: '#f6f8fa',
+                        fontWeight: 600,
+                        textAlign: 'left',
+                        verticalAlign: 'top',
+                      }}
+                      dangerouslySetInnerHTML={{ __html: cell.content }}
+                    />
+                  );
+                })}
+              </tr>
+            ))}
           </thead>
         )}
         <tbody>
           {rows.map((row, i) => (
             <tr key={`r-${i}`}>
               {row.map((cell, j) => {
-                if (cell === null || cell === undefined || (typeof cell === 'object' && Object.keys(cell).length === 0)) {
-                  return null;
-                }
+                if (!cell || Object.keys(cell).length === 0) return null;
                 return (
                   <td
                     key={`r-${i}-${j}`}
-                    rowSpan={getRowSpan(cell)}
-                    colSpan={getColSpan(cell)}
+                    rowSpan={cell.rowspan || 1}
+                    colSpan={cell.colspan || 1}
                     style={{
                       border: '1px solid #dfe2e5',
                       padding: '8px 12px',
                       verticalAlign: 'top',
                     }}
-                    dangerouslySetInnerHTML={{ __html: getText(cell) }}
+                    dangerouslySetInnerHTML={{ __html: cell.content }}
                   />
                 );
               })}

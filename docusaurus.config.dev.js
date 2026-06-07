@@ -30,7 +30,7 @@ const config = {
 
   onBrokenLinks: 'warn',
   markdown: {
-    format: 'detect',
+    format: 'md',
     hooks: {
       onBrokenMarkdownLinks: 'warn',
       onBrokenMarkdownImages: 'warn',
