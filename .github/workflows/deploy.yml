@@ -12,12 +12,12 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: [self-hosted, linux, x64]
+    timeout-minutes: 360
     env:
       HTTP_PROXY: 'http://127.0.0.1:7890'
       HTTPS_PROXY: 'http://127.0.0.1:7890'
-      CACHE_DIR: ${{ github.workspace }}/../_docusaurus_cache
     steps:
-      - name: Fast checkout (self-hosted, incremental)
+      - name: Checkout
         run: |
           rm -f .git/shallow.lock .git/index.lock 2>/dev/null
           if [ -d .git ]; then
@@ -32,117 +32,16 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Ensure swap (16GB safety net)
-        run: |
-          if [ $(free -m | awk '/^Swap:/{print $2}') -lt 14336 ]; then
-            echo "📦 创建 16GB swap..."
-            swapoff /swapfile 2>/dev/null || true; rm -f /swapfile
-            fallocate -l 16G /swapfile
-            chmod 600 /swapfile
-            mkswap /swapfile
-            swapon /swapfile
-            echo "✅ swap 已启用: $(free -h | grep Swap)"
-          else
-            echo "✅ swap 已足够 (≥14GB), 跳过"
-          fi
-
-      - name: Setup zram (16GB compressed RAM swap)
-        run: |
-          if ! swapon --show | grep -q zram; then
-            echo "📦 启用 16GB zram (内存压缩)..."
-            modprobe zram
-            echo 16G > /sys/block/zram0/disksize
-            mkswap /dev/zram0
-            swapon -p 100 /dev/zram0
-          fi
-          echo "✅ swap 状态:"
-          swapon --show
-
-      - name: Restore build caches
-        run: |
-          mkdir -p "$CACHE_DIR"
-          # Force clean build: stale cache from old code causes issues
-          rm -rf .docusaurus
-          echo "🧹 清理旧 .docusaurus 缓存，强制干净构建"
-
       - name: Install deps
-        run: |
-          if [ -d node_modules ] && cmp -s package-lock.json /tmp/hos-lockfile 2>/dev/null; then
-            echo "✅ node_modules up to date, skipped"
-            if [ -d "$CACHE_DIR/bundler-cache" ] && [ ! -d node_modules/.cache/webpack ]; then
-              mkdir -p node_modules/.cache
-              cp -r "$CACHE_DIR/bundler-cache"/* node_modules/.cache/
-              echo "♻️  bundler cache restored"
-            fi
-          else
-            echo "📦 Installing dependencies..."
-            npm ci
-            cp package-lock.json /tmp/hos-lockfile
-            if [ -d "$CACHE_DIR/bundler-cache" ]; then
-              mkdir -p node_modules/.cache
-              cp -r "$CACHE_DIR/bundler-cache"/* node_modules/.cache/
-              echo "♻️  bundler cache restored after npm ci"
-            fi
-          fi
+        run: npm ci
 
-      - name: Tune system for build
-        run: |
-          sysctl -w vm.swappiness=100
-          sysctl -w vm.vfs_cache_pressure=50
-
-      - name: Build (skip if fresh AND source unchanged)
-        run: |
-          CURRENT_SHA=$(git rev-parse HEAD)
-          if [ -f build/.build-success ] && [ -f build/.build-commit ] && \
-             [ "$(cat build/.build-commit)" = "$CURRENT_SHA" ] && \
-             [ $(find build/.build-success -mmin -180) ]; then
-            echo "✅ build/ 新鲜且源码未变 (${CURRENT_SHA:0:7})，跳过构建"
-          else
-            echo "🔨 开始全量构建 (${CURRENT_SHA:0:7})..."
-            rm -rf build/
-            ulimit -S -n 65536
-            nice -n -15 npx docusaurus build --no-minify
-            echo "$CURRENT_SHA" > build/.build-commit
-            touch build/.build-success
-          fi
-        timeout-minutes: 360
+      - name: Build
+        run: npx docusaurus build --no-minify
         env:
-          NODE_OPTIONS: '--max-old-space-size=16384 --max-semi-space-size=64 --v8-pool-size=8'
-          GENERATE_SOURCEMAP: 'false'
-          UV_THREADPOOL_SIZE: '12'
-          DOCUSAURUS_SSG_WORKER_THREADS: '4'
-          DOCUSAURUS_SSG_CONCURRENCY: '2'
-
-      - name: Save build caches
-        if: success()
-        run: |
-          mkdir -p "$CACHE_DIR"
-          if [ -d .docusaurus ]; then
-            rm -rf "$CACHE_DIR/.docusaurus"
-            cp -r .docusaurus "$CACHE_DIR/.docusaurus"
-            echo "💾 .docusaurus cache saved ($(du -sh .docusaurus | cut -f1))"
-          fi
-          if [ -d node_modules/.cache ]; then
-            rm -rf "$CACHE_DIR/bundler-cache"
-            cp -r node_modules/.cache "$CACHE_DIR/bundler-cache"
-            echo "💾 bundler cache saved ($(du -sh node_modules/.cache | cut -f1))"
-          fi
-
-      - name: Sync to preview site
-        if: success()
-        run: |
-          echo "📦 同步构建产物到预览站..."
-          rm -rf /var/www/preview/
-          mkdir -p /var/www/preview/
-          cp -r build/* /var/www/preview/
-          echo "✅ 预览站已更新: http://$(hostname -I | awk '{print $1}')"
+          NODE_OPTIONS: '--max-old-space-size=16384'
 
       - name: Deploy to Netlify
         run: |
-          if [ ! -f build/.build-success ]; then
-            echo "❌ 构建产物不完整，跳过部署"
-            exit 1
-          fi
           if ! command -v netlify &> /dev/null; then
             npm install -g netlify-cli
           fi
